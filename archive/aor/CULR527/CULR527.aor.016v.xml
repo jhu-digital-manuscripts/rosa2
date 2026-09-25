@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.016v.tif" pagination="[16[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Illud quod significat nomen, notius est apud nos, quàm illud quod significat diffinitio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nome[n]. diff[initi]o.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Name. Definition.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Circulus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Circulus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Circle.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nomen est quod a sensu comprehenditur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Diffinitio
+                        Qui p[otes]t nome[n] sensu co[m]prehe[n]di, cu[m] sit quid ra[ti]o[n]e, et vniversale?
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Definition. What name can be comprehended by perception, when it is [comprehended] by reason and general application?
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Magis vniversale
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                More universal.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cognitio autem uniuersalis est, rem cognoscere per suas causas: cognitio verò particularis, ut Aristoteles affirmat, est cognoscere eam per sensum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Cognitio vniversalis et particularis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Universal and particular Inquiry.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ad circunferentiam sunt aequales" type="straight"/>
+        <underline language="LA" method="pen" text="distinctum &amp; determinatum per elementa" type="straight"/>
+        <underline language="LA" method="pen" text="constituitur" type="straight"/>
+        <underline language="LA" method="pen" text="Cognitio autem uniuersalis est, rem cognoscere per suas causas: cognitio" type="straight"/>
+        <underline language="LA" method="pen" text="eam per sensum" type="straight"/> 
+        <underline language="LA" method="pen" text="Et Ptolomaeus asserit, nullam maiorem esse utilitatem &amp; excellentiam humanam quàm secretorum naturae humanae uniuersalis noscere ueritatem" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/> 
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.056r.tif" pagination="97" reader="John Dee" signature="i.j."/>    
+    <annotation>
+        
+        <marginalia anchor_text="Ba, id est, venit, Bel" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ba Bel</marginalia_text>
+                    <location name="Babylon"/>
+                </position>
+            </language>
+            <translation>Babel.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="antequam diuidamur in vniuersas terras" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Antequam diuidamur in vniveras terras</marginalia_text>
+                </position>
+            </language>
+            <translation>Before it was divided into whole lands.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pyramides" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pyramides</marginalia_text>
+                </position>
+            </language>
+            <translation>Pyramids.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="dicatur Ba" type="straight"/>
+        <underline language="LA" method="pen" text="venit, Bel" type="straight"/>
+        <underline language="LA" method="pen" text="antequam diuidamur in vniuersas" type="straight"/>
+        <underline language="LA" method="pen" text="piorum &amp; pauperum sudore &amp; sanguine. Hanc" type="straight"/>
+        <underline language="LA" method="pen" text="statuas" type="straight"/>
+        <underline language="LA" method="pen" text="Colossos" type="straight"/>
+        <underline language="LA" method="pen" text="palatia" type="straight"/>
+        <underline language="LA" method="pen" text="obtinuêre pyramides" type="straight"/>
+        <underline language="LA" method="pen" text="iustissimo casu obliteratis ta[n]tae vanitatis autoribus" type="straight"/>
+        <underline language="LA" method="pen" text="inquit Dominus, quia spiritus vobis subiiciuntur" type="straight"/>
+        
+    </annotation>
+</transcription>

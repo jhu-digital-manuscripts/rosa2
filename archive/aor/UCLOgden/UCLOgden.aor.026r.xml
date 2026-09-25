@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.026r.tif" pagination="35" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="diametrum" hand="Italian" method="pencil" other_reader="unknown modern reader">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Diametru[m] quid
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                What is the diameter?
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hexagona illa sunt potiora" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Qu[a]e exagona sunt potiora
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Which hexagons are preferable?
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        to
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                [Fif]th.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="A' signo ad aliud signum, septimum quod fuerit, hoc est, diametrum. Sed haec semper maligna radiatio est, ac minax" type="dotted"/>
+        <underline language="LA" method="pen" text="Dextrum est, quod ab eo signo, à quo incipimus, retro est: sinistrum uero, quod ante, utputa ♈" type="straight"/>
+        <underline language="LA" method="pen" text="Nam quodcunque retro fuerit, quadratum dextrum est, ut ♈ ♑" type="straight"/>
+        <underline language="LA" method="pen" text="haec minax est radiatio, &amp; malitiosa potestate" type="straight"/>
+        <underline language="LA" method="pen" text="quod retro fuerit, dextru[m] est, &amp; sinistrum, quod" type="straight"/>
+        <underline language="LA" method="pen" text="sed Hexagona illa sunt" type="straight"/>
+        <underline language="LA" method="pen" text="radiationis societate coniungi" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+           
+    </annotation>
+</transcription>

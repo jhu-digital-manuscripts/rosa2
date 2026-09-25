@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.102r.tif" pagination="189" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="vigesimumquintum Decembris" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dece[m]bris 25</marginalia_text>
+                </position>
+            </language>
+            <translation>December 25th.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="de natali die Domini conueniebat, quemadmodum neque conuenit hodie" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Non convenit hodie de Natali Die Chr[ist]i</marginalia_text>
+                    <person name="Jesus Christ"/>
+                </position>
+            </language>
+            <translation>It is not agreed today about the birth date of Christ.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex iis quae nota[n]tur à Clemente, libro primo Stromatum, rem istam variè iactatam fuisse constat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cleme[n]tis in hac re valde su[n]t confusa Testimonia.</marginalia_text>
+                    <person name="Clement of Alexandria"/>
+                </position>
+            </language>
+            <translation>The evidence of Clement is very much confused regarding this matter.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>25 Dece[m]bris</marginalia_text>
+                </position>
+            </language>
+            <translation>December 25th.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sciuisse existimabantur" type="straight"/>
+        <underline language="LA" method="pen" text="vigesimumquintum Decembris" type="straight"/>
+        <underline language="LA" method="pen" text="natali die Domini" type="double"/>
+        <underline language="LA" method="pen" text="quemadmodum neque conuenit hodie" type="straight"/>
+        <underline language="LA" method="pen" text="dominus incarnatus mense Ianuario" type="straight"/>  
+        <underline language="LA" method="pen" text="nati Domini" type="double"/>
+        <underline language="LA" method="pen" text="Pachon" type="straight"/>
+        <underline language="LA" method="pen" text="Maius" type="double"/>
+        <underline language="LA" method="pen" text="Pharmuthi Aprilis" type="double"/>
+        <underline language="LA" method="pen" text="natali" type="straight"/>
+        <underline language="LA" method="pen" text="propemodum anno quadragesimosecundo" type="straight"/>
+        <underline language="LA" method="pen" text="esse octauo Calendas" type="straight"/>
+        <underline language="LA" method="pen" text="primum" type="straight"/>
+        <underline language="LA" method="pen" text="natum hyberno" type="straight"/>
+        <underline language="LA" method="pen" text="Aprilis co[n]ceptus Christus creditur, quo &amp; passus" type="straight"/>
+        <underline language="LA" method="pen" text="creditur octauo Calendas Ianuarias" type="straight"/>
+        <underline language="LA" method="pen" text="Decembris. Chrysostomus" type="straight"/>
+        <underline language="LA" method="pen" text="potissimùm fluxit, &amp; confirmatus est hic" type="straight"/>
+        <underline language="LA" method="pen" text="error" type="triple"/>
+        <underline language="LA" method="pen" text="octauo Calendas Apriles" type="straight"/>
+        <underline language="LA" method="pen" text="concludit, Duo aequinoctia duas habere co[n]ceptiones, Ioannis" type="straight"/>
+        <underline language="LA" method="pen" text="Solstitia similiter habere duas natiuitates" type="straight"/>
+        <underline language="LA" method="pen" text="octauo Calend. Ianuarij" type="straight"/>
+        <underline language="LA" method="pen" text="contulerunt in octauum" type="straight"/>
+        <underline language="LA" method="pen" text="vigesimoquinto die Decembris" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- die collato -->
+        <mark method="pen" name="circumflex" place="intext"/>
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+        
+        <errata amendedtext="Ianuario" copytext="Ianuario" language="LA"/>
+        <errata amendedtext="segundo" copytext="septimo" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

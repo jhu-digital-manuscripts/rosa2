@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.090v.tif" pagination="164" reader="John Dee" signature="[o 4[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Signu[m] inter mediu[m] in notandum.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A sign to be noted throughout the mediums.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="conuenit, quod effectum habent hexagona in uiribus, si tropicis uel duplicibus signis diuidantur.              In efficacia uero tunc existunt, quotiens solidum signum in tali radiatione interuenit" type="straight"/>
+        
+        <symbol name="Asterisk" place="left_margin"/>
+        
+    </annotation>
+</transcription>

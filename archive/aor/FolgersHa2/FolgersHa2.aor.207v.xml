@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.207v.tif" pagination="238" reader="Harvey" signature="[P7v]"/>	<!-- ABO 212left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Primus, ultimusq[ue] ingenij valor, Expedire.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>To be expedient, the first and last valor of the character.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Spiritus Entelechia[e], Super omnes spiritus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The spirit of actualization is above all spirits.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Ptolema[e]i apodixes, et pha[e]nomena,
+						tam in alijs, quàm in Astronomia.
+					</marginalia_text>
+					<person name="Ptolemy"/>
+				</position>
+			</language>
+			<translation>The proofs and phenomena of Ptolemy, both in other [fields], as in astronomy.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Nota.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Note.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Paucissimi Politici absoluti: vel natura, vel
+						arte, vel praxi.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Very few politicians are complete: either in nature, art, or praxis.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Prima, vltimaq[ue] ingenij foelicitas; verba, res; artes, actiones; omnia expedire: statimq[ue]
+						assequi facillimè, qua[e] alij difficulter acquirunt. Nec quicq[uam] putare arduum, quod est
+					</marginalia_text>
+					<emphasis method="pen" text="Prima, vltimaq[ue]" type="straight"/>
+					<emphasis method="pen" text="verba, res" type="straight"/>
+					<emphasis method="pen" text="artes, actiones; omnia expedire" type="straight"/>
+					<emphasis method="pen" text="statimq[ue] assequi facillimè" type="straight"/>
+					<emphasis method="pen" text="difficulter acquirunt" type="straight"/>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						cognitu[m] multis;
+						factu[m] no[n] paucis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The first and last good fortunes of the character: to be prompt in all words, matters, arts, and actions.
+			and immediately to pursue most easily that which others obtain with difficulty.
+			Nor to seek any challenge, which is known by many, but which is not done by the few.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Scriptura, Pythagora[e], et Socrati Mater Obliuionis, et Imperitia[e]. Socratis
+						pa[e]dia, agrapha. Lycurgo omnia rheta, mnemonica, practica, empirica.
+					</marginalia_text>
+					<person name="Pythagoras"/>
+					<person name="Socrates"/>
+					<person name="Lycurgus of Sparta"/>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						Spartam nactus,
+						hanc orna energetic[ω]s.
+					</marginalia_text>
+					<location name="Sparta"/>
+				</position>
+			</language>
+			<translation>Scripture, the mother of oblivion and ignorance for Pythagoras and Scorates. Socrates' doctrine is unwritten.
+				All sayings, reminders, practical, and empirical things by Lycurgus [are unwritten]. After obtaining Sparta, prepare this thing. 
+			</translation>
+				
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="osseruar le leggi diuine" type="straight"/>
+		<underline language="IT" method="pen" text="il ventre" type="straight"/>
+		<underline language="IT" method="pen" text="i poueretti &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="religiosi, i quali" type="straight"/>
+		<underline language="IT" method="pen" text="che mangiar le" type="straight"/>
+		<underline language="IT" method="pen" text="fatiche d'altri" type="straight"/>
+		<underline language="IT" method="pen" text="che ci fusser sempre de poueri" type="straight"/>
+		<underline language="IT" method="pen" text="amate voi stessi, viuete" type="straight"/>
+		<underline language="IT" method="pen" text="sempre d'accordo in pace" type="straight"/>
+		<underline language="LA" method="pen" text="Concordia paruae res crescunt" type="straight"/>
+		<underline language="IT" method="pen" text="huomini perfetti" type="straight"/>
+		<underline language="IT" method="pen" text="gouerno della Republica" type="straight"/>
+		<underline language="IT" method="pen" text="il numero" type="straight"/>
+		<underline language="IT" method="pen" text="atti al goueruo della" type="straight"/>
+		<underline language="IT" method="pen" text="picciolissimo" type="straight"/>
+		<underline language="IT" method="pen" text="prerogatiue d'ingegno &amp; d'animo, le" type="straight"/>
+		<underline language="IT" method="pen" text="danno impedimento l'vne all'altre" type="straight"/>
+		<underline language="IT" method="pen" text="d'ingegno acuto" type="straight"/>
+		<underline language="IT" method="pen" text="apprensiuo, ritenente" type="straight"/>
+		<underline language="IT" method="pen" text="sottile" type="straight"/>
+		<underline language="IT" method="pen" text="di alterigia &amp; leggierezza" type="straight"/>
+		<underline language="IT" method="pen" text="corrompe la grauità" type="straight"/>
+		<underline language="IT" method="pen" text="la maturità" type="straight"/>
+		<underline language="IT" method="pen" text="la costanza, virtù necessarie" type="straight"/>
+		<underline language="IT" method="pen" text="nell'huomo perfetto" type="straight"/>
+		<underline language="IT" method="pen" text="queste virtù parimente" type="straight"/>
+		<underline language="IT" method="pen" text="impediscono" type="straight"/>
+		<underline language="IT" method="pen" text="l'acutezza, la viuacità, &amp; la" type="straight"/>
+		<underline language="IT" method="pen" text="tardità" type="straight"/>
+		<underline language="IT" method="pen" text="pigritia" type="straight"/>
+		
+		<symbol name="SS" place="head"/>
+		<symbol name="Sun" place="head"/>
+		
+		<symbol name="SS" place="intext"/>
+		
+		<symbol name="Opposite_planets" place="tail"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--di-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--pa-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--re-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--ani-->
+		
+		<mark method="pen" name="vertical_bar" place="intext"/> <!--crescunt-->
+		<mark method="pen" name="vertical_bar" place="intext"/> <!--paucis-->
+		<mark method="pen" name="dot" place="intext"/> <!--Socrate, che-->
+		<mark method="pen" name="dot" place="intext"/> <!--picciolissimo, perche-->
+		<mark method="pen" name="plus_sign" place="intext"/>
+		<mark method="pen" name="hash" place="intext"/>
+		<mark method="pen" name="dot" place="intext"/> <!--all'altre, come-->
+		<mark method="pen" name="plus_sign" place="intext"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="alterigia"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="costanza"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="nell'huomo perfetto"/>
+		<mark language="IT" method="pen" name="hash" place="intext" text="impediscono"/>
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="viuacità"/> 
+		
+    </annotation>
+</transcription>

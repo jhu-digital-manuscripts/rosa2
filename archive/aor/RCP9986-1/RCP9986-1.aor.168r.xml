@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.168r.tif" pagination="169" reader="John Dee" signature="Y.j."/>   
+    <annotation>
+        
+        <marginalia anchor_text="valeas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>valitudo.</marginalia_text>
+                </position>
+            </language>
+            <translation>Wellbeing.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="valeas animo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Animi morbus Amor ]</marginalia_text>
+                </position>
+            </language>
+            <translation>Sickness of the mind, love. ]</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="amor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Amor.</marginalia_text>
+                </position>
+            </language>
+            <translation>Love.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Esse, sed vt valeas, multa dolenda feres" type="straight"/>
+        <underline language="LA" method="pen" text="Vt corpus redimas, ferrum patieris, &amp; ignes" type="straight"/>
+        <underline language="LA" method="pen" text="Vt valeas animo, quicquam tolerare negabis" type="straight"/>
+        <underline language="LA" method="pen" text="At pretium pars haec corpore maius habet" type="straight"/>
+        <underline language="LA" method="pen" text="Et labor est vnus tempora prima pati" type="straight"/>
+        <underline language="LA" method="pen" text="cingula" type="straight"/>
+        <underline language="LA" method="pen" text="vires, sit'q[ue] sine igne cinis. Qui nisi firmata properabis mente reverti, Inferet arma tibi saeua rebellis amor" type="straight"/>
+        <underline language="LA" method="pen" text="Quicquid eras, fueris, sitiens, auidúsq[ue] redibis" type="straight"/>
+        <underline language="LA" method="pen" text="Et spatium damno cesserit omne tuo" type="straight"/>
+        
+        <mark method="pen" name="scribble" place="right_margin"/> <!-- FSF: new sign? -->
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        
+    </annotation>
+</transcription>

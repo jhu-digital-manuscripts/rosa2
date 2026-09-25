@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.016r.tif" pagination="16" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia hand="Italian" id="BLC.120.b.4:c_120_b_4_(2)_f016r:m0001" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        p[r]ima linea seque[n]tis pagin[a]e 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>First line on the next page.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Adumá" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Nota quod dicat Adumá, tantu[m], no[n] adiecta particula illa Voarch[adumia]: videtur ergo in hac Ca[e]me[n]tatione nullo vti Auro:
+                        no[n] eni[m] nu[n]c de co[m]posito op[er]e maximo loquitur [deleted - lib] licet in hoc capite faciat maxi[m]e: cu[m] [h]uius fuerit in hoc
+                        capite scopus pra[e]cipuus: vt ex titulo apparet.
+                    </marginalia_text>
+                    <person name="Aduma"/>
+                    <book title="Voarchadumia"/>
+                </position>
+            </language>
+            <translation>Note what Aduma says, only that particular was not aimed at Voarchadumia: therefore it seemed in this [caementatione? cementing?] 
+                no use for gold: for [nunc? now] he speaks about the most ordered work it allows him to do it extensively in this chapter: when this was 
+                the particular aim in this chapter: so it appears from the title.</translation> <!-- DO: Translation needs to be checked -->
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>☉ - ½
+                        ☿ - ½
+                        [Hieroglyphic_Monad] - ½
+                    </marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                    <symbol_in_text name="Mercury"/>
+                    <symbol_in_text name="Hieroglyphic_Monad"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline id="BLC.120.b.4:c_120_b_4_(2)_f016r:u0001" language="LA" method="pen" text="infra" type="straight"/>
+        <underline language="LA" method="pen" text="Salis" type="straight"/>
+        <underline language="LA" method="pen" text="Argillae deustae" type="straight"/>
+        <underline language="LA" method="pen" text="Adumá" type="straight"/>
+        <underline language="LA" method="pen" text="fixatione" type="double"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!--triti ana-->
+        
+        <physical_link>
+            
+            <marginal_annotation idref="BLC.120.b.4:c_120_b_4_(2)_f016r:m0001"/>
+            
+            <marginal_annotation idref="BLC.120.b.4:c_120_b_4_(2)_f016r:u0001"/>
+            
+            <relation from="BLC.120.b.4:c_120_b_4_(2)_f016r:m0001" to="BLC.120.b.4:c_120_b_4_(2)_f016r:u0001" type="directed"/>
+            
+        </physical_link>
+        
+    </annotation>
+</transcription>

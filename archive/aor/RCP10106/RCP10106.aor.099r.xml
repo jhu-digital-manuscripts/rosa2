@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.099r.tif" pagination="197" reader="John Dee" signature="n 3"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Quod quidem natum ab ostenatione declamatoria" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Exursionis origo &amp; inituim</marginalia_text>
+                </position>
+            </language>
+            <translation>The origin and beginning of digression.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="excursus ille, uel quasi finis narrationis, uel quasi initium probationis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Excursus finis narr[ationis] &amp; initui[m] co[n]firma.</marginalia_text>
+                </position>
+            </language>
+            <translation>The end of narrative digression and the beginning of proof.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="autem fateor hoc expatiandi genus, non modò narrationi, sed etiam quaestionibus uel uniuersis, uel              interim singulis opportunè posse subiungi cum res postulant, aut certe permittit: atq[ue] eo uel maxime illustrari ornari'q[ue] orationem: sed si cohaeret, &amp; sequitur,              non si per uim cuneatur, &amp; quae natura iuncta erant, distrahit. Nihil" type="straight"/>
+        
+    </annotation>
+</transcription>

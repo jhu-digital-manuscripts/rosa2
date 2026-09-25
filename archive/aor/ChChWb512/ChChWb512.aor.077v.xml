@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.077v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="chorea[m] gigantu[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Chorea Gigantu[m].
+                    </marginalia_text>
+                    <location name="Stonehenge"/>
+                </position>
+            </language>
+            <translation>The Giant's Dance.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Coenobiu[m] Ambrij" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Coenobiu[m] Ambrij
+                    </marginalia_text>
+                    <location name="Ambrius"/>
+                </position>
+            </language>
+            <translation>The convent of Ambrius.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Vtheris Sepultura.
+                    </marginalia_text>
+                    <person name="Uther"/>
+                </position>
+            </language>
+            <translation>The burial of Uther.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Monarchia totius Albionis
+                    </marginalia_text>
+                    <location name="England"/>
+                </position>
+            </language>
+            <translation>The monarchy of the whole of Albion.</translation>
+            <!-- NBW: Here, as with Dee's references to "British," I think it's best to leave some ambiguity - by "Albion" he likely means more than just "England," at least "England, Scotland and Wales" -->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Coenobiu[m] Ambrii: &amp; intra" type="straight"/>
+        <underline language="LA" method="pen" text="Aureliu[m] Ambrosiu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="tota[m] parte[m] i[n]sul[a]e q[uae] a flumine Hu[m]bri vsq[ue] ad mare Catenesiu[m] exte[n]dit[ur]" type="straight"/>
+        <underline language="LA" method="pen" text="q[ui]ndecim annor[um] iuuenis inaudite" type="straight"/>
+        <underline language="LA" method="pen" text="statuit Saxones inquietare vt eorum opibus q[uae] sibi famulabat[ur] ditaret familia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="rectitudo cu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="toti[us] insulae" type="double"/>
+        <underline language="LA" method="pen" text="monarchia[m] debuerat" type="straight"/>
+        <underline language="LA" method="pen" text="flumen Duglas" type="double"/>
+    
+    </annotation>
+</transcription>

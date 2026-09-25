@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.081v.tif" pagination="162" reader="John Dee" signature="[l[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="statum, &amp; continens, &amp; iudicationum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Status Iudicatio continens ide[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>The basis of the judgement is closer to the same.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tame[n] Hermagoras" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>hermagora[s] ta[n]ta at Qui[n]tilian[us].</marginalia_text> <!-- M.B. Not sure if the 'ta' contraction is ta[nta]?? --> <!-- FSF: possibly ta[men] -->
+                    <person name="Hermagoras of Temnos"/>
+                    <person name="Quintilian"/>
+                </position>
+            </language>
+            <translation>Hermagoras Quintilian</translation>
+        </marginalia>
+        
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

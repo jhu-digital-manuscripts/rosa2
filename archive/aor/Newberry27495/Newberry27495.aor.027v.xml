@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.027v.tif" reader="Harvey" signature="[Ei[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Decorum, fundamentu[m] Aulica[e] Ciuilitatis</marginalia_text>
+                    <emphasis method="pen" text="Decorum" type="straight"/>
+                </position>
+            </language>
+            <translation>Decorum, the foundation of princely graciousness.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Galateo, et Guazzo, maestri della Ciuil conuersatione, e cortigiani complementi.</marginalia_text>
+                    <person name="Giovanni della Casa"/>
+                    <person name="Stefano Guazzo"/>
+                </position>
+            </language>
+            <translation>Galateo and Guazzo, masters of civil conversation, and complete courtiers.</translation> 
+        </marginalia>
+        
+        <underline language="EN" method="chalk" text="It sufficeth that as a good souldyer cann speake his mind to an armourer of what facion, of what" type="straight"/>
+        <underline language="EN" method="pen" text="good souldyer" type="straight"/>
+        <underline language="EN" method="chalk" text="goodnesse he will haue his harners" type="straight"/>
+        <underline language="EN" method="pen" text="armourer of" type="straight"/>
+        <underline language="EN" method="pen" text="to make" type="straight"/>
+        <underline language="EN" method="pen" text="Courtyer ought" type="straight"/>
+        <underline language="EN" method="pen" text="how" type="straight"/>
+        <underline language="EN" method="pen" text="Grace" type="straight"/>
+        <underline language="EN" method="chalk" text="Grace is not to be learned" type="straight"/>
+        <underline language="EN" method="pen" text="to begin betimes" type="straight"/>
+        <underline language="EN" method="pen" text="of cunning men" type="straight"/>
+        <underline language="EN" method="pen" text="that Aristotel" type="straight"/>
+        <underline language="EN" method="pen" text="should instruct Alexander" type="straight"/>
+        <underline language="EN" method="pen" text="grace" type="straight"/>
+        <underline language="EN" method="chalk" text="Sir Galiazzo Sanfeuerino" type="straight"/>
+        <underline language="EN" method="pen" text="M. of the horse to the" type="straight"/>
+        <underline language="EN" method="pen" text="doth all exercises of the body" type="straight"/>
+        <underline language="EN" method="chalk" text="doth all exercises of" type="straight"/>
+        <underline language="EN" method="pen" text="to learne of cunning men" type="straight"/>
+        <underline language="EN" method="pen" text="continually excellent men about him, and" type="straight"/>
+        <underline language="EN" method="pen" text="chuse the best" type="straight"/>
+        <underline language="EN" method="pen" text="weapons" type="straight"/>
+        <underline language="EN" method="pen" text="his guide oure M. Peter Mount" type="straight"/>
+        <underline language="EN" method="pen" text="the true &amp; only maister of al artificiall force &amp; sleight" type="straight"/>
+        <underline language="EN" method="pen" text="in ridyng" type="straight"/>
+        <underline language="EN" method="pen" text="iustyng" type="straight"/>
+        <underline language="EN" method="pen" text="perfectest that hath ben knowen" type="straight"/>
+        <underline language="EN" method="pen" text="practysing" type="straight"/>
+        
+        <underline language="EN" method="pen" text="Grace" type="straight"/>
+        <underline language="EN" method="pen" text="be like his maister" type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        <symbol language="EN" name="SS" place="left_margin" text="continually excellent men about him, and"/> 
+        
+        <symbol name="SS" place="right_margin"/>
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark method="pen" name="dot" place="left_margin"/>
+        <mark method="pen" name="dot" place="left_margin"/>
+        <mark method="pen" name="dot" place="left_margin"/>
+        <mark method="pen" name="dot" place="left_margin"/>
+        <mark method="pen" name="dot" place="left_margin"/>
+        
+        <mark method="chalk" name="X_sign" place="right_margin"/> <!--faded-->
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="chalk" name="X_sign" place="right_margin"/> <!--faded-->
+        <mark method="chalk" name="X_sign" place="right_margin"/> <!--faded-->
+        
+        <mark method="pen" name="dot" place="intext"/> <!--harners, and-->
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

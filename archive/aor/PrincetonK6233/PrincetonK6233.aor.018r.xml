@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd"> 
+
+<page filename="PrincetonK6233.018r.tif" pagination="[3]" reader="Harvey" signature="a2r"/>
+    <annotation>
+        
+        <marginalia anchor_text="In Iurisprudentia autem tria in uniuersum tractantur.              1. Res seu Ivs ipsum. 2. Verba: in tit. de uerb. signif. 3. Axiomata seu Regulae: in tit.             de reg. iur." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        } Res. Verba. Regula[e].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                } Things. Words. Rules.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Meum Principiu[m], et Finis; à duobus pra[e]gnantissimis Titulis; De     
+                        Verboru[m] Significatione; et de Regulis Juris. Quo verborum, rerumq[ue]
+                        forensium fundamento solidè iacto: co[e]tera omnia, expedita, et prompta.
+                        Imò habitis Juris Romani Judicijq[ue], Logici Principiis; facile erit de 
+                        omnibus Mundi Legibus judicare.
+                    </marginalia_text>
+                    <book title="De verborum significatu"/>
+                    <book title="De regulis iuris"/>
+                    <emphasis method="pen" text="Principiu[m]" type="straight"/>
+                    <emphasis method="pen" text="Finis" type="straight"/>
+                    <emphasis method="pen" text="Verboru[m]" type="straight"/>
+                    <emphasis method="pen" text="de Regulis Juris" type="straight"/>
+                    <emphasis method="pen" text="fundamento" type="straight"/>
+                    <emphasis method="pen" text="Juris Romani" type="straight"/>
+                    <emphasis method="pen" text="Judicijq[ue] Logici" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                My foundation and goal come from two pregnant titles: 'De verborum significatione' and
+                'De regulis iuris', in which all other things are obtained and produced on a solidly 
+                founded basis of words and public matters. With Roman law and its judgements established 
+                at root by the principles of logic, it will be easy to judge the laws of the whole world.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Iurisprudentia" type="straight"/>
+        <underline language="LA" method="pen" text="Iustitiam" type="straight"/>
+        <underline language="LA" method="pen" text="[a]equum ab iniquo" type="straight"/>
+        <underline language="LA" method="pen" text="metu poenarum" type="straight"/> 
+        <underline language="LA" method="pen" text="praemiorum quoq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="In iurisprudentia autem" type="straight"/>
+        <underline language="LA" method="pen" text="Res seu Ivs" type="straight"/>
+        <underline language="LA" method="pen" text="Verba" type="straight"/>
+        <underline language="LA" method="pen" text="Axiomata seu Regulae" type="straight"/>
+        <underline language="LA" method="pen" text="à iustitia appellatu[m]" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        <symbol name="SS" place="right_margin"/>
+        <symbol name="Sun" place="intext"/>
+        
+        <mark method="pen" name="dot" place="head"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- affectantes. In -->
+        <mark method="pen" name="comma" place="intext"/> <!-- autem tria -->
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- Iu-ri -->
+
+    </annotation>
+</transcription>

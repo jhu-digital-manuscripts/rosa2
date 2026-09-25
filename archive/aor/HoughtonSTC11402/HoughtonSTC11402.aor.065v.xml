@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.065v.tif" reader="Harvey" signature="[Hii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Politicè.</marginalia_text>
+                </position>
+            </language>
+            <translation>Politically.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>( Alexanders Pollicy to keepe [the] Thracians fro[m] Rebellion.</marginalia_text>
+                </position>
+            </language>
+            <translation>Politically.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Conon, L. I. Polya[e]ni.</marginalia_text>
+                    <person name="Conon"/>
+                    <book title="Stratagems"/>
+                </position>
+            </language>
+            <translation>Conon, in book 1 of Polyaenus' 'Stratagems'.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Scitè</marginalia_text>
+                </position>
+            </language>
+            <translation>Knowingly.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="wolde rebel" type="straight"/>
+        <underline language="EN" method="pen" text="for honor" type="straight"/>
+        <underline language="EN" method="pen" text="the kinges" type="straight"/>
+        <underline language="EN" method="pen" text="the gouernours" type="straight"/>
+        <underline language="EN" method="pen" text="all suche as seemed" type="straight"/>
+        <underline language="EN" method="pen" text="for theyr lybertie lost" type="straight"/>
+        <underline language="EN" method="pen" text="mean" type="straight"/>
+        <underline language="EN" method="pen" text="men theyr" type="straight"/>
+        <underline language="EN" method="pen" text="the nobles" type="straight"/>
+        <underline language="EN" method="pen" text="his benefites" type="straight"/>
+        <underline language="EN" method="pen" text="commons goo about" type="straight"/>
+        <underline language="EN" method="pen" text="Antipater" type="straight"/>
+        <underline language="EN" method="pen" text="Alexander was" type="straight"/>
+        <underline language="EN" method="pen" text="to inuade and trouble his empire" type="straight"/>
+        <underline language="EN" method="pen" text="dyssemblynge as thoughe" type="straight"/>
+        <underline language="EN" method="pen" text="gaue them thankes" type="straight"/>
+        <underline language="EN" method="pen" text="were assembled to ayde Alexander, agaynst the Lacedemoniens" type="straight"/>
+        <underline language="EN" method="pen" text="certifie the kynge thereof" type="straight"/>
+        <underline language="EN" method="pen" text="their helpe as than" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="chalk" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="for honor"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="the kinges"/>
+        
+    </annotation>
+</transcription>

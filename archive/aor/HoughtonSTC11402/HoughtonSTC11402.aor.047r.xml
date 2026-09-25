@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.047r.tif" reader="Harvey" signature="[Eviii[r]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>( greatist brag in</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>greatist want.</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vt s[upr]a, eode[m] c.</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0101" text="s[upr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>As above, in the same chapter.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Valerius Leuinus; Pirrhus; he had slayne kynge Pirrhus" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Leuinus made his Enemyes beleeue, he had slayne [their] kynge Pyrrhus.</marginalia_text>
+                    <person name="Publius Valerius Laevinus"/>
+                    <person name="Pyrrhus of Epirus"/>
+                    <emphasis method="pen" text="he had slayne [their] kynge Pyrrhus" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="Castus and" type="straight"/>
+        <underline language="EN" method="pen" text="Canimocus, capitaynes" type="straight"/>
+        <underline language="EN" method="pen" text="frenche men" type="straight"/>
+        <underline language="EN" method="pen" text="behynde the hylle" type="straight"/>
+        <underline language="EN" method="pen" text="xii. cohortes, with C. Promptinus" type="straight"/>
+        <underline language="EN" method="pen" text="makyng" type="straight"/>
+        <underline language="EN" method="pen" text="shoute and" type="straight"/>
+        <underline language="EN" method="pen" text="soo sharpely set on" type="straight"/>
+        <underline language="EN" method="pen" text="the cry of his" type="straight"/>
+        <underline language="EN" method="pen" text="disclose the smal nombre" type="straight"/>
+        <underline language="EN" method="pen" text="kepers, and all" type="straight"/>
+        <underline language="EN" method="pen" text="make noyse and crye" type="straight"/>
+        <underline language="EN" method="pen" text="multitude, he feared" type="straight"/>
+        <underline language="EN" method="pen" text="kylde a rascall" type="straight"/>
+        <underline language="EN" method="pen" text="souldiour" type="straight"/>
+        <underline language="EN" method="pen" text="sworde al" type="straight"/> 
+        <underline language="EN" method="pen" text="had slayne kynge Pirrhus" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="tail" text="had slayne kynge Pirrhus"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!--men, sente-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="behynde the hylle"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="disclose the smal nombre"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>       
+        
+    </annotation>
+</transcription>

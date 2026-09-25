@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.266r.tif" pagination="515" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia anchor_text="Annibal" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text> 
+                        Annibal ipse pro Pace. Auctor iam, nimis authenticus.
+                    </marginalia_text>
+                <person name="Hannibal"/>
+                </position>
+            </language>
+            <translation>
+                Hannibal himself was in favour of peace. By now an unduly authoritative authority.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="lapideo imbri" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text> 
+                        lapideus imber.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A shower of stones.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="per priores" type="straight"/>
+        <underline language="LA" method="pen" text="restituere[n]tur" type="straight"/>
+        <underline language="LA" method="pen" text="aliter nec inducias" type="straight"/>
+        <underline language="LA" method="pen" text="spem pacis ullam" type="straight"/>
+        <underline language="LA" method="pen" text="Has co[n]ditiones" type="straight"/>
+        <underline language="LA" method="pen" text="legati cum" type="straight"/>
+        <underline language="LA" method="pen" text="Gisgo ad dissuadendam pacem" type="straight"/>
+        <underline language="LA" method="pen" text="inquieta eadem" type="straight"/>
+        <underline language="LA" method="pen" text="imbelli" type="straight"/>
+        <underline language="LA" method="pen" text="indignatus Annibal dici ea in tali" type="straight"/>
+        <underline language="LA" method="pen" text="arreptu[m] Gisgone[m] manu sua ex superiore loco" type="straight"/>
+        <underline language="LA" method="pen" text="insueta liber[a]e ciuitati" type="straight"/>
+        <underline language="LA" method="pen" text="fremitu[m] populi" type="straight"/>
+        <underline language="LA" method="pen" text="perturbatus militaris uir urbana" type="straight"/>
+        <underline language="LA" method="pen" text="Noue[m], inquit" type="straight"/>
+        <underline language="LA" method="pen" text="sextum &amp; tricesimu[m] annu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="militares artes" type="straight"/>
+        <underline language="LA" method="pen" text="fortuna nunc priuata" type="straight"/>
+        <underline language="LA" method="pen" text="nunc publica" type="straight"/>
+        <underline language="LA" method="pen" text="probè uideor" type="straight"/>
+        <underline language="LA" method="pen" text="ac fori iura, leges, mores" type="straight"/>
+        <underline language="LA" method="pen" text="Excusata imprudentia" type="straight"/>
+        <underline language="LA" method="pen" text="de pace" type="straight"/>
+        <underline language="LA" method="pen" text="nec iniqua" type="straight"/>
+        <underline language="LA" method="pen" text="necessaria esset" type="straight"/>
+        <underline language="LA" method="pen" text="Annibale[m] ex acie" type="straight"/>
+        <underline language="LA" method="pen" text="rege[m] Antiochum extemplò" type="straight"/>
+        <underline language="LA" method="pen" text="ante omnia" type="straight"/>
+        <underline language="LA" method="pen" text="Scipioni, ut Annibal sibi traderetur" type="straight"/>
+        <underline language="LA" method="pen" text="Annibalem in Africa non esse" type="straight"/>
+        <underline language="LA" method="pen" text="lapidib[us] pluit" type="straight"/>
+        
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="LA" method="pen" name="equal_sign" place="left_margin" text="ad rege[m] Antionchum extemplò"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!-- au -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- ciuita -->
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark method="pen" name="apostrophe" place="intext"/> <!-- esse -->
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="co[n]ditiones"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- ederent, &-->
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="Gisgo"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- imbelli, indignatus-->
+        <mark method="pen" name="apostrophe" place="intext"/> <!--tempore-->
+        <mark method="pen" name="dot" place="intext"/> <!--audiriq[ue], arreptu[m]-->
+        <mark method="pen" name="dot" place="intext"/> <!-- mouisset, perturbatus-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="militaris"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="militares"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- docuit, probe-->
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--Carthaginienses. Sunt-->
+        <mark method="pen" name="dot" place="intext"/> <!-- peruenisse, inde-->
+        <mark method="pen" name="dot" place="intext"/> <!-- traderetur, responsum-->
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- esse. Posteaqua[m] -->
+        
+    </annotation>
+</transcription>

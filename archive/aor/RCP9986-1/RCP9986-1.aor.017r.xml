@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.017r.tif" pagination="18" reader="John Dee" signature="C.ij."/>  
+    
+    <annotation>
+        
+        <marginalia anchor_text="Maeandri" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Meander.</marginalia_text>
+                    <location name="Buyuk Menderes River"/>
+                </position>
+            </language>
+            <translation>The river Meander.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Moereat, &amp; leges sentiat ipsa suas" type="straight"/>
+        <underline language="LA" method="pen" text="expes" type="straight"/>
+        <underline language="LA" method="pen" text="Viuite deuoto nuptáq[ue], vírq[ue] toro" type="straight"/>
+        <underline language="LA" method="pen" text="vdis abiectus" type="straight"/>
+        <underline language="LA" method="pen" text="Sed meriti famam, corpúsq[ue], animúmq[ue] pudicum Cum male perdiderim, perdere verba leue est" type="straight"/>
+        <underline language="LA" method="pen" text="Atq[ue] ijdem venti vela, fidémq[ue] ferent" type="straight"/>
+        <underline language="LA" method="pen" text="Facta fugis, fugienda petis" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="scribble" place="right_margin"/> <!-- FSF: possibly a real mark or symbol? -->
+        
+    </annotation>
+</transcription>

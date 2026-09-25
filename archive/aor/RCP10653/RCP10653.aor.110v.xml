@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.110v.tif" pagination="212" reader="John Dee" signature="[S iiij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="regem superbum interemit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        A[E]thelfridus occis[us] rex Northu[m]b 
+                    </marginalia_text>
+                    <person name="Aethelfrith"/>
+                </position>
+            </language>
+            <translation>
+                Death of Aethelfridus, King of Northumbria.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="septe[m]decim annis exulauerat" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ex 13 [17 deleted] a[n]nis exuli 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Since 13 years in exile.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Christianus effectus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Edvvinus factus Christianus
+                    </marginalia_text>
+                    <person name="Edwin of Northumbria"/> 
+                </position>
+            </language>
+            <translation>
+                Edwin was made Christian.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="audacter quidem sed inordinatè in hostes" type="straight"/>
+        <underline language="LA" method="pen" text="regem superbum interemit" type="straight"/>
+        <underline language="LA" method="pen" text="septe[m]decim annis" type="straight"/>
+        <underline language="LA" method="pen" text="Deirorum &amp; Berniciorum" type="straight"/>
+        <underline language="LA" method="pen" text="ditione recepit" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+        <numeral language="LA" place="intext" text="septe[m]decim">13</numeral>
+        
+    </annotation>
+</transcription>

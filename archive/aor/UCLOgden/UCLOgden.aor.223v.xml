@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.223v.tif" reader="John Dee" signature="[Q3[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>[...] diurna</marginalia_text>  <!-- Unsure-->
+                </position>
+            </language>
+            <translation>Daily [...].</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nativitas diurna.</marginalia_text>
+                </position>
+            </language>
+            <translation>Daily birth.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in ordine partes Signorum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pars fortuna[e].</marginalia_text>
+                </position>
+            </language>
+            <translation>Part of Fortune.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Perpetuas neq[ue] enim sedes, eadem'q[ue] per omnis Sidera nascentis retinent, sed tempora" type="straight"/>
+        <underline language="LA" method="pen" text="A Sole ad Lunam numerabis in ordine partes Signorum, ortiuo totidem de cardine duces" type="straight"/>
+        
+    </annotation>
+</transcription>

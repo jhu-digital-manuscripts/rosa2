@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.065r.tif" pagination="58" reader="John Dee" signature="P ij"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>At secundu[m] vera[m] Anni qua[n]titatem talis est hora qua[m] ascripsi. Vnde 
+                    omnes eventus magis sunt clari qua[m] ex hac no[n] vera revolutionis figura. Lic[e]t planetar[um] erga se e[a]edem manent co[n]figuratio[n]es.
+                    J d. Suppona[m] planetaru[m] loca talia fuisse: lic[e]t in veritate discrepaverint.</marginalia_text>
+                    <person name="John Dee"/>
+                </position>
+            </language>
+            <translation>But according to the true quantity of the year, such is the hour which I inserted. Hence all events are more clear than
+            from this uncorrect figure of a revolution. Although the configurations of the planets remain similar towards themselves. John Dee.
+            I might suppose that such have been the locations of the planets: although in truth they varied.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vide infra fo 240</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:499" text="240"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See below, folio 240.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vide tua[m] ☾a[m] [=monam] a ♄ p[..]sa[m] ex 10a et ip[s]e in opposito loco ♂ radicis.</marginalia_text> <!-- FSF: I can't figure this one out either -->
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Saturn"/>
+                    <symbol_in_text name="Mars"/>
+                </position>
+            </language>
+            <translation>See your moon from Saturn [...] from the tenth and itself in the opposite place to Mars' rays.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="statum &amp; famam" type="straight"/>
+        <underline language="LA" method="pen" text="dimissus sum ab officio legendi Papiae" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        
+        <errata amendedtext="[deleted]" copytext="1545. die 24 Septembris, hor. 1. minu. 36. ante meridiem" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="13. [Virgo]" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="26. [Scorpio]" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="[Saturn] 8.33" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="[Jupiter] 25.37" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="26. [Sagittarus]" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="[North node] 0.35" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="26.[Capricom]" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="26.[Aquarius]" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="26.[Pisces]" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="26.[Aries]" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="26.[Taurus]" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="[Moon] 29.8" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="26.[Gemini]" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="26.[Cancer]" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="[Venus] 24. 40." language="LA"/>
+        <errata amendedtext="[deleted]" copytext="26.[Leo]" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="[Mars] 23.20." language="LA"/>
+        <errata amendedtext="[deleted]" copytext="26.[Virgo]" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="[Sun] 10.41." language="LA"/>
+        <errata amendedtext="[deleted]" copytext="[Mercury] 24.39." language="LA"/>
+        <errata amendedtext="[deleted]" copytext="26.[Libra]" language="LA"/>
+        
+        <errata amendedtext="[deleted]" copytext="Mars est dominus ascendentis" language="LA"/>
+        
+        <table place="intext" type="astrological_chart">
+            <tr>
+                <th/>
+                <th label="House"/>
+                <th label="Position"/>
+                <th label="Added information"/>
+            </tr>
+            <tr>
+                <td>Aquarius</td>
+                <td>1</td>
+                <td>26⁰</td>
+            </tr>
+            <tr>
+                <td>Pisces</td>
+                <td>2</td>
+                <td>26⁰</td>
+            </tr>
+            <tr>
+                <td>Aries</td>
+                <td>3</td>
+                <td>26⁰</td>
+            </tr>
+            <tr>
+                <td>Taurus</td>
+                <td>4</td>
+                <td>26⁰</td>
+            </tr>
+            <tr>
+                <td>Moon</td>
+                <td>4</td>
+                <td>:1</td>
+                <td>Gemini</td>
+            </tr>
+            <tr>
+                <td>Gemini</td>
+                <td>5</td>
+                <td>26⁰</td>
+            </tr>
+            <tr>
+                <td>Cancer</td>
+                <td>6</td>
+                <td>26⁰</td>
+            </tr>
+            <tr>
+                <td>Venus</td>
+                <td>6</td>
+                <td>25⁰</td>
+                <td>Leo</td>
+            </tr>
+            <tr>
+                <td>Leo</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Mars</td>
+                <td>7</td>
+                <td>23[⁰].40.[']</td>
+                <td>Virgo</td>
+            </tr>
+            <tr>
+                <td>Virgo</td>
+                <td>8</td>
+                <td>26⁰</td>
+            </tr>
+            <tr>
+                <td>Sun</td>
+                <td>8</td>
+                <td>10.[⁰].41.[']</td>
+                <td>Virgo</td>
+            </tr>
+            <tr>
+                <td>Mercury</td>
+                <td>8</td>
+                <td>24:[⁰]38.[']</td>
+                <td>Virgo</td>
+            </tr>
+            <tr>
+                <td>Libra</td>
+                <td>9</td>
+                <td>26⁰</td>
+            </tr>
+            <tr>
+                <td>Scorpio</td>
+                <td>10</td>
+                <td>26⁰</td>
+            </tr>
+            <tr>
+                <td>Saturn</td>
+                <td>10</td>
+                <td>8:[⁰]33.[']</td>
+                <td>Scorpio</td>
+            </tr>
+            <tr>
+                <td>Jupiter</td>
+                <td>10</td>
+                <td>25[⁰] 38.[']</td>
+                <td>Sagittarius</td>
+            </tr>
+            <tr>
+                <td>Scorpio</td>
+                <td>11</td>
+                <td>26⁰</td>
+            </tr>
+            <tr>
+                <td>North Node</td>
+                <td>10</td>
+                <td>0[⁰] 33.[']</td>
+                <td>Capricom</td>
+            </tr>
+            <tr>
+                <td>Capricom</td>
+                <td>12</td>
+                <td>26⁰</td>
+            </tr>
+            <text hand="English_secretary" language="LA">hor. 3. m[inutae] 16. a meridie ♂ 0. 30. Supposito anno 365 D[ies] 5 H[orae] 55 M[inutae] 22 S[ecunda]</text> 
+            <symbol_in_text name="Mars"/>
+            <translation>3 hours, 16 minutes from noon. [Midheaven] Mars 0.30. With the supposed year: 35 days, 5 hours, 55 minutes, 22 seconds.</translation>
+        </table>
+        
+    </annotation>
+</transcription>

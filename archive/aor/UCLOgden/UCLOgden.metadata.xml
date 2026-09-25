@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+  <license>
+    <url>http://creativecommons.org/licenses/by/4.0/</url>
+    <logo>https://i.creativecommons.org/l/by/4.0/88x31.png</logo>
+  </license>
+  <totalPages>246</totalPages>
+  <dates>
+    <startDate>1533</startDate>
+    <endDate>1533</endDate>
+  </dates>
+  <texts>
+    <text id="1">
+      <language>la</language>
+      <title>Iulii Firmici Materni Iunioris siculi V.C. ad Mavortium Lollianum Astronomicon Lib. VIII. per Nicolaum Prucknerum astrologum nuper ab innumeris mendis vindicati.</title>
+      <textId>maternus</textId>
+      <pages end="246v" start="1r">246</pages>
+    </text>
+  </texts>
+  <bibliographies>
+    <bibliography lang="en">
+      <title>Iulii Firmici Materni Iunioris siculi V.C. ad Mavortium Lollianum Astronomicon Lib. VIII. per Nicolaum Prucknerum astrologum nuper ab innumeris mendis vindicati.</title>
+      <commonName>Julius Firmicus Maternus, Astronomicon (Basel, 1533)</commonName>
+      <dateLabel>1533</dateLabel>
+      <currentLocation>University College London Library</currentLocation>
+      <repository>University College London Library</repository>
+      <shelfmark>OGDEN A QUARTO 9</shelfmark>
+      <author>
+        <name>Maternus, Julius Firmicus</name>
+        <id>http://www.isni.org/isni/0000000080904210</id>
+      </author>
+      <reader>
+        <name>John Dee</name>
+        <id>http://www.isni.org/isni/0000000122785193</id>
+      </reader>
+      <website>https://archaeologyofreading.org/bibliography/Dee-corpus/Maternus</website>
+      <note></note>
+    </bibliography>
+  </bibliographies>
+</book>

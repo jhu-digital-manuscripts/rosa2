@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.186v.tif" pagination="196" reader="Harvey" signature="[N2v]"/>	<!-- ABO 191left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Catonis versus adamantini, et profundi. Quâ flumen placidum est,
+						forsan latet altiùs vnda. Et, Tuta magè est puppis,
+						modito qua[e] flumine fertut.
+					</marginalia_text>
+					<person name="Dionysius Cato"/>
+					<book title="Distichs of Cato"/>
+				</position>
+			</language>
+			<translation>The verse of the incorruptible and profound Cato. "Perchance the quiet rivers too deep run." 
+				And, "safest the ships which smallest waters ply." [trans. Wayland Johnson Chase, 1922]</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Et, Fistula dulce canit, volucrem dum decipit auceps.
+						Et, Ne sis ventosus, dum vis vrbanus haberi.
+						Et, Quod potes, id tenta: nam littus caarpere remis
+						Tutius est multò, quàm velis tendere in altum.
+						Et, Vulnera dum sanas, dolor est Medicina doloris.
+						Et, Vitandum ducas, inimicum nomen amici.
+					</marginalia_text>
+					<person name="Dionysius Cato"/>
+					<book title="Distichs of Cato"/>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Et, Fronte capillata, post est Occasio calua.
+						Et, Cognita iudicio constant; incognita Casu.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>And, "Sweet sounds the fowler's pipe to lure the prey". 
+				And, "Lest thus thou fail to be what thou wouldst witty seem". 
+				And, "Begin what thou to finish canst not fail. Safer near shore than on the deep to sail". 
+				And, "To cure the hurt thy grief will well suffice".
+				And, "Lest false to thee, thy fame and goods he spend."
+				And, "Behind Time's bald, his forehead's thick with hair". And, "ried friends are sure, untried may not be so." [trans. Wayland Johnson Chase, 1922]
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( discretamente. )	
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Discreetly.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Cum Venere, et Baccho Lis est, et iuncta Voluptas: Quod lautum est, animo complectere,
+						sed fuge Litem. Sic in rebus omnibus, excerpendum est, quod inest boni: fugiendu[m], quod
+						adha[e]ret Mali.
+					</marginalia_text>
+					<X-ref book_title="Distichs of Cato" language="LA" person="Dionysius Cato" text="Cum Venere, et Baccho Lis est, et iuncta Voluptas: Quod lautum est, animo complectere, sed fuge Litem."/>
+				</position>
+			</language>
+			<translation>"With love and wine pleasure and strife are knit; Cleave to the good in these; the bad omit." [trans. Wayland Johnson Chase, 1922]
+			Thus in all matters, one must select what belongs to good things: one must avoid what is involved in bad things.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Eutrapelus voluit esse candidissima mundi anima: nulli odiosus: cuiq[ue] indulgens, quotiès vlla
+						gratificandi occasio; sine suo damno. Etiam cum propria res contra ageretur, valdè dulcis:
+						vtcunq[ue] in fine, et in effectu suus. Pars beneficij est, quod petitur, benè neges.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+					<X-ref book_title="Sententiae" language="LA" person="Publilius Syrus" text="Pars beneficij est, quod petitur, benè neges"/>
+				</position>
+			</language>
+			<translation>Eutrapelus wished to be the most polished mind of the world; annoying to no one and pleasant to everyone, as often as any occasion for gratifying; without his condemnation.
+				Even if he would act against his own person, [he would be] truly delightful: as far as it is his in goal and effect. "To refuse gracefully is to confer a favour" [trans. Stone, 2005].</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="della mutatione delle cose" type="straight"/>
+		<underline language="IT" method="pen" text="nelle felicità, à non vi leuar troppo in superbia" type="straight"/>
+		<underline language="IT" method="pen" text="la mattina, quel che ne apporti la sera" type="straight"/>
+		<underline language="IT" method="pen" text="fia veramente huomo" type="straight"/>
+		<underline language="IT" method="pen" text="nelle prosperità" type="straight"/>
+		<underline language="IT" method="pen" text="auuersità no[n] sia impatie[n]te" type="straight"/>
+		<underline language="IT" method="pen" text="giudicare" type="straight"/>
+		<underline language="IT" method="pen" text="fra i suoi amici" type="straight"/>
+		<underline language="IT" method="pen" text="bene fra gl'inimici" type="straight"/>
+		<underline language="IT" method="pen" text="come gli amici" type="straight"/>
+		<underline language="IT" method="pen" text="inimici" type="straight"/>
+		<underline language="IT" method="pen" text="faccia amico" type="straight"/>
+		<underline language="IT" method="pen" text="vita humana" type="straight"/>
+		<underline language="IT" method="pen" text="senza molestia" type="straight"/>
+		<underline language="IT" method="pen" text="vita humana senza molestia" type="straight"/>
+		<underline language="IT" method="pen" text="genti, senza molestia" type="straight"/>
+		<underline language="IT" method="pen" text="gli occhi entrare" type="straight"/>
+		<underline language="IT" method="pen" text="con donne" type="straight"/>
+		<underline language="IT" method="pen" text="gli occhi à" type="straight"/>
+		
+		<symbol name="SS" place="left_margin"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--esem-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--quan-->
+		<mark language="IT" method="pen" name="plus_sign" place="right_margin" text="la mattina, quel che ne apporti la sera"/>
+		<mark method="pen" name="bracket" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!--giudica-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--conuer-->
+		
+		<mark method="pen" name="comma" place="intext"/> <!--insolente et-->
+		<mark method="pen" name="dot" place="intext"/> <!--nimico, cosi-->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="genti, senza molestia"/>
+
+    </annotation>
+</transcription>

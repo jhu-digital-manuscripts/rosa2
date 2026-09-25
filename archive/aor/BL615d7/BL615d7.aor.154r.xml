@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.154r.tif" pagination="154" reader="John Dee" signature="Vij"/>    
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>The abundance of goats</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="che amazzar capre, &amp; salarle, per mandarle poi in Portogallo." hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Great store of Gotes</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="erano moltiplicate di otto capre" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>8 goats the first stock </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="andar le più picciole" type="straight"/>
+        <underline language="IT" method="pen" text="che habbiano altro essercitio, nè altro cibo" type="straight"/>
+        <underline language="IT" method="pen" text="secca, e sterile, senza alberi, nè acqua" type="straight"/>
+        <underline language="IT" method="pen" text="amazzar capre, &amp; salarle" type="straight"/>
+        <underline language="IT" method="pen" text="in Portogallo" type="straight"/>
+        <underline language="IT" method="pen" text="quattro mila" type="straight"/>
+        <underline language="IT" method="pen" text="erano moltiplicate di otto capre" type="straight"/>
+        <underline language="IT" method="pen" text="Roderico" type="straight"/>
+        <underline language="IT" method="pen" text="che di quella carne, o pesce" type="straight"/>
+        <underline language="IT" method="pen" text="di Sa[n]tiago" type="straight"/>
+        <underline language="IT" method="pen" text="dell'Isole di Capo Verde" type="straight"/>
+       
+       <mark method="pen" name="quotation_mark" place="right_margin"/>
+       
+    </annotation>
+</transcription>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.064v.tif" reader="Harvey" signature="[Hi[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Etiam Virescit Vulnere Virtus.</marginalia_text>
+                    <X-ref book_title="Unknown" language="LA" person="Aulus Furius Antias" text="Etiam Virescit Vulnere Virtus"/> <!--JG: Quote from the poet Aulus Furius Antias, whose writing only have survived when cited in other works -->
+                </position>
+            </language>
+            <translation>"Indeed, courage grows strong at a wound."</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>The Turk, most expert in warr, burnith his slayne</marginalia_text>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>men.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="The Turk, most expert in warr, burnith his slayne men" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>{ hoc stratagema plenius A Comite Purl. demo[n]stratu[m]. l. I. obs. II6. et 164.</marginalia_text>
+                    <person name="Jacopo di Porcia"/>
+                    <book title="The preceptes of warre"/>
+                </position>
+            </language>
+            <translation>This stratagem is abundantly demonstrated by Jacopo di Porcia. Book 1, observations 116 and 164.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A greate ouersight in Kyng Philipp of Maced. in his warres w[i]th [the] Romanes; in neglecting this: w[hi]ch 
+                        afterwarde himself did acknowledge.</marginalia_text>
+                    <person name="Philip V of Macedon"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="at mydnight" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A most noble Valiant Nighteswork.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="at mydnight" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Worthy Industry in Cato,</marginalia_text>
+                    <person name="Cato the Elder"/> 
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>i[nfr]a, l.3.c.I. in Conon, l.4. Exemplo Vltimo, tanq[uam] Epilogo memorabili.</marginalia_text>
+                    <person name="Conon"/>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0147" text="l.3.c.I."/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0226" text="l.4."/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Worthy Industry in Cato, [see] below, book 3, chapter 1. In Conon, in the last example of book 4, just as in the memorable epilogue.</translation> <!--JG: Reference to Frontinus, image _226-->
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>See, what great matters may be dispatchid in</marginalia_text>
+                </position>
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>on[e] night, by Industry, &amp; Pollicy.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>On such Act, worth A Thowsand other.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="founde a greatter number" type="straight"/>
+        <underline language="EN" method="pen" text="theirs slayn" type="straight"/>
+        <underline language="EN" method="pen" text="than of the Romayns" type="straight"/>
+        <underline language="EN" method="pen" text="T. Martius a Romain" type="straight"/>
+        <underline language="EN" method="pen" text="the deathe" type="straight"/>
+        <underline language="EN" method="pen" text="two Scipions" type="straight"/>
+        <underline language="EN" method="pen" text="that two hostes of the Penians" type="straight"/>
+        <underline language="EN" method="pen" text="to set vpon the host, that laye" type="straight"/>
+        <underline language="EN" method="pen" text="at mydnight" type="straight"/>
+        <underline language="EN" method="pen" text="out of order" type="straight"/>
+        <underline language="EN" method="pen" text="as a messanger to beare" type="straight"/>
+        <underline language="EN" method="pen" text="tydinges of the miserable mischaunce" type="straight"/>
+        <underline language="EN" method="pen" text="to rest them" type="straight"/>
+        <underline language="EN" method="pen" text="same nyght with al hast" type="straight"/>
+        <underline language="EN" method="pen" text="preuentynge the same of the thing" type="straight"/>
+        <underline language="EN" method="pen" text="inuaded the other army" type="straight"/>
+        <underline language="EN" method="pen" text="thus twise" type="straight"/>
+        <underline language="EN" method="pen" text="one nyght enioying" type="straight"/>
+        <underline language="EN" method="pen" text="restored Spayne agayne" type="straight"/>  
+        
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="Mars" place="left_margin"/>
+        <symbol name="Mercury" place="left_margin"/> 
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="A great ouersight in Kyng Philipp of Maced. in his warres w[i]th [the] Romanes; in neglecting this: w[hi]ch afterwarde himself did acknowledge."/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="X_sign" place="left_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="head"/> <!--below marginal note, 164-->
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="founde a greatter number"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="than of the Romayns"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Martius"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--asonder, he-->
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--them, leauynge-->
+        <mark method="pen" name="bracket" place="intext"/> <!--mischaunce. and-->
+        <mark method="pen" name="dot" place="intext"/> <!--them, the-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="same nyght"/>   
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="al hast"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="inuaded the other army"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="thus twise"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="one nyght"/>
+        
+    </annotation>
+</transcription>

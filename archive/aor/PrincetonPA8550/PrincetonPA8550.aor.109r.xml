@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA8550.109r.tif" pagination="217" reader="Harvey" signature="Ovr"/>
+    <annotation>
+        
+        <marginalia anchor_text="κλεπτηκὴν" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        κλεπτικὴν.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Thievery.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="modo mihi adumbrasse" type="straight"/>
+        <underline language="LA" method="pen" text="Adumbratae" type="straight"/>
+        <underline language="LA" method="pen" text="Respublicae" type="straight"/>
+        <underline language="LA" method="pen" text="Philosophoru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="coloribus expressisse" type="straight"/>
+        <underline language="LA" method="pen" text="co[m]muni consuetudine, &amp; ciuilibus" type="straight"/>
+        <underline language="LA" method="pen" text="ciuitatem sibi somniat" type="straight"/>
+        <underline language="LA" method="pen" text="mulieres etiam militare iubet" type="straight"/>
+        <underline language="LA" method="pen" text="oppida moenibus cingenda" type="straight"/>
+        <underline language="LA" method="pen" text="argutijs" type="straight"/>
+        <underline language="LA" method="pen" text="ex iustitia κλεπτηκὴν." type="straight"/> 
+        <underline language="LA" method="pen" text="partim Geometricis" type="straight"/>
+        <underline language="LA" method="pen" text="Arithmeticis" type="straight"/>
+        <underline language="LA" method="pen" text="ingenij petitur his" type="straight"/>
+        <underline language="LA" method="pen" text="Absoluta[m] uerò" type="straight"/>
+        <underline language="LA" method="pen" text="his legibus, qua[e] non in" type="straight"/>
+        <underline language="LA" method="pen" text="curia, in foro, ut bonis profugium" type="straight"/>
+        <underline language="LA" method="pen" text="aduersum improbos teli uice essent" type="straight"/>
+        <underline language="LA" method="pen" text="nisi proximè repra[e]sentent" type="straight"/>
+        <underline language="LA" method="pen" text="instituêre, ita &amp; leges" type="straight"/>
+        <underline language="LA" method="pen" text="captu remotiores" type="straight"/>
+        <underline language="LA" method="pen" text="qui Respub[licam]" type="straight"/>
+        <underline language="LA" method="pen" text="hoc genere disputationem" type="straight"/>
+        
+        <mark method="pen" name="horizontal_bar" place="head"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- parergis, ad rem -->
+        <mark method="pen" name="diacritic" place="intext"/> <!-- aduersum -->
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+    </annotation>
+</transcription>

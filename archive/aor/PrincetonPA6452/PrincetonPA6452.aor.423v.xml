@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.423v.tif" reader="Harvey" signature="[AAA1 v]"/>
+    <annotation>
+
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        Liuij Epitomen L. Florus contraxit: et alterum habemus Flori opusculum de Romana historia: quo nihil potest fingi in illo genere uel 
+                        acutius, uel lepidius. Censura acerrimi Critici, l. 5. de trad. discipl. Res populi Romani vt scitè a L. Floro traduntur, non 
+                        minùs gentis historiam complectuntur, sed orbis vniuersi, et totius generis humani. Idem ibidem, tam grauiter, quàm breuiter. 
+                        Vnus Florus, instar Eutropij, et Justini: Aurelij Victoris, et Æmilij Probi.
+                    </marginalia_text>
+                <person name="Florus"/>
+                <person name="Flavius Eutropius"/>
+                <person name="Justin"/>
+                <person name="Aurelius Victor"/>
+                <person name="Aemilius Probus"/>
+                <book title="Epitome de T. Livio Bellorum omnium annorum DCC Libri duo"/>
+                <book title="De gestis Romanorum libri IIII"/> <!--JG: Not entirely sure-->
+                <book title="De disciplinis libri XX"/>
+                <book title="Ab Urbe Condita"/>
+                </position>
+            </language>
+            <translation>
+                "Lucius Florus compiled an Epitome of Livy; we also have another small work about Roman history by Florus. And in this genre nothing can be 
+                composed that is more astute or entertaining.” The assessment of the most penetrating critic [Juan Luis Vives] in bk. 5 of 'De trandendis 
+                disciplinis'. The affairs of the Roman people, as skilfully handed down by Lucius Florus, cover not only the history of a nation, but of the 
+                complete world, and the entire human race. In that very text the same person [writes] equally impressively as concisely. Florus alone is equal
+                to Eutropius and Justin, to Aurelius Victor and Aemilius Probus.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="FLORI" type="straight"/>
+        <underline language="LA" method="pen" text="RELIQVAS" type="straight"/>
+        <underline language="LA" method="pen" text="QVAE DESIDERANTVR" type="straight"/>
+        <underline language="LA" method="pen" text="EPITOME" type="straight"/>
+        <underline language="LA" method="pen" text="LIBRI XLVI" type="straight"/>
+        <underline language="LA" method="pen" text="LIBRI XLVII" type="straight"/>
+        <underline language="LA" method="pen" text="Semina tertij belli Punici referuntur" type="straight"/>
+        <underline language="LA" method="pen" text="M. Porcius Cato suasit" type="straight"/>
+        <underline language="LA" method="pen" text="Carthaginensibus" type="straight"/>
+        <underline language="LA" method="pen" text="exercitum" type="straight"/>
+        <underline language="LA" method="pen" text="specie contra Masanissam regem" type="straight"/>
+        <underline language="LA" method="pen" text="reuera contra Romanos" type="straight"/>
+        <underline language="LA" method="pen" text="legatos mitti Carthaginem" type="straight"/>
+        <underline language="LA" method="pen" text="specularentur, quid ageretur" type="straight"/>
+        <underline language="LA" method="pen" text="contra foedus exercitum" type="straight"/>
+        <underline language="LA" method="pen" text="ita bellum aduersus" type="straight"/>
+        <underline language="LA" method="pen" text="legatis, quo minus uiolarentur, fugam explicuerit" type="straight"/>
+        
+        <symbol name="SS" place="head"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="head" text="RELIQVAS"/>
+        <mark method="pen" name="equal_sign" place="head"/>
+        
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.478v.tif" reader="Harvey" signature="[H6v]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Romae numerantur aetates quinq[ue]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text> 
+                        Roma[e] quinq[ue] a[e]tates.
+                    </marginalia_text>
+                    <location name="Rome"/>
+                </position>
+            </language>
+            <translation>
+                The five ages of Rome.
+            </translation>
+        </marginalia>
+       
+        <marginalia anchor_text="Imperatoribus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text> 
+                        Roma sub primis Imperatoribus florebat, pollebatq[ue] maximè: pra[e]sertim sub Augusto, et Traiano potentissima.
+                    </marginalia_text>
+                    <person name="Augustus"/>
+                    <person name="Trajan"/> 
+                    <location name="Rome"/>
+                </position>
+            </language>
+            <translation>
+                Rome flourished and was particularly strong under the first Emperors: especially under Augustus and Trajan it was extremely powerful.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pontificibus Romanis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text> 
+                        decrepita a[e]tas sub Pontificibus: quam Florus ignorauit in quatuor a[e]tatibus populi Romani. s[upr]a in compendio historia[e] 
+                        Romana[e]: quasi synopsi totius Liuij.
+                    </marginalia_text>
+                <person name="Florus"/>
+                <person name="Livy"/>
+                    <internal_ref>
+                        <target ref="PrincetonPA6452:00000868" text="s[upr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                The decrepit age under the priests: the one of the four ages of the Roman people with which Florus was unfamiliar: [see] above in his 
+                abridgement of Roman history, practically a summary of entire Livy.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        Obseruationes erudita[e], prudentes, politica[e], seria[e], valdeq[ue] memorabiles. pra[e]sertim Polyhistori, philologo, politico, 
+                        iurisconsulto.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Learned, judicious, political, earnest and very noteworthy observations, especially for the polyhistor, philologist, politician and jurist.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ARGVMENTVM LIBRI PRIMI" type="straight"/>
+        <underline language="LA" method="pen" text="totius historiae Romanae" type="straight"/>
+        <underline language="LA" method="pen" text="regibus Albanis atq[ue] Romanis" type="straight"/>
+        <underline language="LA" method="pen" text="historiae sunt omnino necessariae, nedum utiles, ad" type="straight"/>
+        <underline language="LA" method="pen" text="reliquum corpus totum historiae Romanae cognoscendum" type="straight"/>
+        <underline language="LA" method="pen" text="quasi caput eius corporis &amp; principium" type="straight"/>
+        <underline language="LA" method="pen" text="breuiter Florus complectitur" type="straight"/>
+        <underline language="LA" method="pen" text="prima epitome" type="straight"/>
+        <underline language="LA" method="pen" text="in primo" type="straight"/>
+        <underline language="LA" method="pen" text="primus hic Liuij liber" type="straight"/>
+        <underline language="LA" method="pen" text="secundo ab" type="straight"/>
+        <underline language="LA" method="pen" text="indicis" type="straight"/>
+        <underline language="LA" method="pen" text="certissimi magistri aut" type="straight"/>
+        <underline language="LA" method="pen" text="intelligendum alias Romanorum historias" type="straight"/>
+        <underline language="LA" method="pen" text="duobus libris fundamenta regni &amp; imperij Romani, omnium pulcherrimi, quasi iaciuntur" type="straight"/>
+        <underline language="LA" method="pen" text="sine cognitione" type="straight"/>
+        <underline language="LA" method="pen" text="planè imparatus sis atq[ue] ineptus" type="straight"/>
+        <underline language="LA" method="pen" text="omnia illa quae ab historicis, uel ab oratoribus" type="straight"/>
+        <underline language="LA" method="pen" text="poetis" type="straight"/>
+        <underline language="LA" method="pen" text="Romana repub. eiusq[ue] uiris et uiribus" type="straight"/>
+        <underline language="LA" method="pen" text="Romanis legibus et" type="straight"/>
+        <underline language="LA" method="pen" text="de iure &amp; magistratibus Romanis unquam sunt" type="straight"/>
+        <underline language="LA" method="pen" text="ingressum patefaciunt hi duo libri" type="straight"/>
+        <underline language="LA" method="pen" text="diligentissimeq[ue] perlegi utrunq[ue] conuenit" type="straight"/>
+        <underline language="LA" method="pen" text="aetates quinq[ue] à prima" type="straight"/>
+        <underline language="LA" method="pen" text="distinctam Romanam historiam" type="straight"/>
+        <underline language="LA" method="pen" text="Prima ergo aetas fuit sub regibus" type="straight"/>
+        <underline language="LA" method="pen" text="pueritia urbis" type="straight"/>
+        <underline language="LA" method="pen" text="reges septem" type="straight"/>
+        <underline language="LA" method="pen" text="monarchiam" type="straight"/>
+        <underline language="LA" method="pen" text="sub consulari potestate" type="straight"/>
+        <underline language="LA" method="pen" text="Aristocratia" type="straight"/>
+        <underline language="LA" method="pen" text="annos quadringentos" type="straight"/>
+        <underline language="LA" method="pen" text="quasi iuuentus &amp; uiridior" type="straight"/>
+        <underline language="LA" method="pen" text="optimos quosq[ue] principes" type="straight"/>
+        <underline language="LA" method="pen" text="genere uirtutum atq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="Caesaribus, Imperatoribus" type="straight"/>
+        <underline language="LA" method="pen" text="Monarchia legitima" type="straight"/>
+        <underline language="LA" method="pen" text="usque in Valentinianum" type="straight"/>
+        <underline language="LA" method="pen" text="nos quingentos &amp; quatuor" type="straight"/>
+        <underline language="LA" method="pen" text="uirilis aetas imperij Romani" type="straight"/>
+        <underline language="LA" method="pen" text="imperatores magis tyrannicè praefuerunt" type="straight"/>
+        <underline language="LA" method="pen" text="aetas fuit sub tyrannis &amp; barbaris" type="straight"/>
+        <underline language="LA" method="pen" text="Italiam miserrimè uexarunt" type="straight"/>
+        <underline language="LA" method="pen" text="usque in Carolum magnum" type="straight"/>
+        <underline language="LA" method="pen" text="quasi senectus" type="straight"/>
+        <underline language="LA" method="pen" text="qua uires eius propè" type="straight"/>
+        <underline language="LA" method="pen" text="Roma spolium barbarorum omnium" type="straight"/>
+        <underline language="LA" method="pen" text="adèo urbis terrarum praeda" type="straight"/>
+        <underline language="LA" method="pen" text="denique prouincias ditiones" type="straight"/>
+        <underline language="LA" method="pen" text="barbaris sibi ereptas, amisit" type="straight"/>
+        <underline language="LA" method="pen" text="acta" type="straight"/>
+        <underline language="LA" method="pen" text="quasi decrepita &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="Pontificibus Romanis" type="straight"/>
+        <underline language="LA" method="pen" text="Caesaribus Germanis hactenus" type="straight"/>
+        <underline language="LA" method="pen" text="circiter septingentos" type="straight"/>
+        <underline language="LA" method="pen" text="imperio libertateque, nedum prouincijs" type="straight"/>
+        <underline language="LA" method="pen" text="urbs Roma est" type="straight"/>
+        <underline language="LA" method="pen" text="interim sit aliud, quàm multorum" type="straight"/>
+        <underline language="LA" method="pen" text="mancipium" type="straight"/>
+        <underline language="LA" method="pen" text="bis mille ducentos nonagintasex" type="straight"/>
+        <underline language="LA" method="pen" text="ab Vrbe condita in hunc" type="straight"/>
+        <underline language="LA" method="pen" text="Primae aetatis res gestae" type="straight"/>
+        <underline language="LA" method="pen" text="primo libro" type="straight"/>
+        <underline language="LA" method="pen" text="Secundam aetatem quoque totam" type="straight"/>
+        <underline language="LA" method="pen" text="centum &amp; decem libris" type="straight"/>
+        <underline language="LA" method="pen" text="tertiae aetatis initia" type="straight"/>
+        <underline language="LA" method="pen" text="triginta libris" type="straight"/>
+        <underline language="LA" method="pen" text="maxima pars Liuianae" type="straight"/>
+        <underline language="LA" method="pen" text="magis ignauia perijt" type="straight"/>
+        <underline language="LA" method="pen" text="nihil" type="straight"/>
+        <underline language="LA" method="pen" text="nudos indices habeamus" type="straight"/>
+        <underline language="LA" method="pen" text="Flori" type="straight"/>
+        <underline language="LA" method="pen" text="Eutropij" type="straight"/>
+        <underline language="LA" method="pen" text="Orosij Epitomas" type="straight"/>
+        <underline language="LA" method="pen" text="Plutarchi uitas utcunque" type="straight"/>
+        <underline language="LA" method="pen" text="quartam" type="straight"/>
+        <underline language="LA" method="pen" text="quintam aetatem" type="straight"/>
+        <underline language="LA" method="pen" text="ueteres" type="straight"/>
+        <underline language="LA" method="pen" text="recentiores historici" type="straight"/>
+        <underline language="LA" method="pen" text="plurima scitu dignissima" type="straight"/>
+        <underline language="LA" method="pen" text="tametsi non ita copiosi" type="straight"/>
+        <underline language="LA" method="pen" text="Totum" type="straight"/>
+        <underline language="LA" method="pen" text="corpus historiae Romanae" type="straight"/>
+        <underline language="LA" method="pen" text="non ab uno aliquo" type="straight"/>
+        <underline language="LA" method="pen" text="Antonius Sabellicus" type="straight"/>
+        <underline language="LA" method="pen" text="Romana in suas" type="straight"/>
+        <underline language="LA" method="pen" text="Latinoru[m] princeps iudicari debet" type="straight"/>
+        <underline language="LA" method="pen" text="res omnes à populo" type="straight"/>
+        <underline language="LA" method="pen" text="pace belloq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="septingentis sexaginta" type="straight"/>
+        <underline language="LA" method="pen" text="copioso simul et fluenti, inuictoq[ue] stilo" type="straight"/>
+        <underline language="LA" method="pen" text="Romae habitus in maximo precio" type="straight"/>
+        <underline language="LA" method="pen" text="Octauio Caesare" type="straight"/>
+        <underline language="LA" method="pen" text="in magna fuit gratia" type="straight"/>
+        <underline language="LA" method="pen" text="eum" type="straight"/>
+        <underline language="LA" method="pen" text="Pompeianu[m] uocare soleret" type="straight"/>
+        <underline language="LA" method="pen" text="liberius paulo" type="straight"/>
+        <underline language="LA" method="pen" text="ciuilia bella Caesaru[m] descripserat" type="straight"/>
+        <underline language="LA" method="pen" text="Tiberius au[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="suspectum &amp; inuisum habuerit Liuiu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="eius autoritatem reueritus, nihil grauius in eu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Suetonio" type="straight"/>
+        <underline language="LA" method="pen" text="Liuij hortatu" type="straight"/>
+        <underline language="LA" method="pen" text="Caius postea imperator" type="straight"/>
+        <underline language="LA" method="pen" text="eo sic edoctus" type="straight"/>
+        <underline language="LA" method="pen" text="ex Fabio" type="straight"/>
+        <underline language="LA" method="pen" text="Seneca" type="straight"/>
+        <underline language="LA" method="pen" text="Liuiu[m] docendi opera[m] nobilibus" type="straight"/>
+        <underline language="LA" method="pen" text="Romanis impendisse liberalem" type="straight"/>
+        <underline language="LA" method="pen" text="Tiberij" type="straight"/>
+        <underline language="LA" method="pen" text="die eodem et anno" type="straight"/>
+        <underline language="LA" method="pen" text="Ouidius poeta" type="straight"/>
+        <underline language="LA" method="pen" text="mortem obierit in exilio" type="straight"/>
+        <underline language="LA" method="pen" text="apud Scythas" type="straight"/>
+        <underline language="LA" method="pen" text="meliorem sui partem" type="straight"/>
+        <underline language="LA" method="pen" text="Liuius ipse suis scriptis monumentisq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="FLORO" type="straight"/>
+        <underline language="LA" method="pen" text="Florus aetate sua" type="straight"/>
+        <underline language="LA" method="pen" text="Liuij singulos" type="straight"/>
+        <underline language="LA" method="pen" text="sua Epitome, indice quasi breui" type="straight"/>
+        <underline language="LA" method="pen" text="legentis memoria[m] et attentionem" type="straight"/>
+        <underline language="LA" method="pen" text="lector statim" type="straight"/>
+        <underline language="LA" method="pen" text="ex uno quoq[ue] libro sibi esset" type="straight"/>
+        <underline language="LA" method="pen" text="non inutilis usus huiusmodi" type="straight"/>
+        <underline language="LA" method="pen" text="in his tantu[m] immoretur, omissis" type="straight"/>
+        <underline language="LA" method="pen" text="ignauiae diuerticula et desidiae" type="straight"/>
+        <underline language="LA" method="pen" text="Florus" type="straight"/>
+        <underline language="LA" method="pen" text="de bellis Romanoru[m] ualde utiles" type="straight"/>
+        <underline language="LA" method="pen" text="increme[n]ta et accessiones" type="straight"/>
+        <underline language="LA" method="pen" text="imperij" type="straight"/>
+        <underline language="LA" method="pen" text="paulatim prouinciae, ditio[n]es, et terrae à" type="straight"/>
+        <underline language="LA" method="pen" text="in Caesaru[m] tempora" type="straight"/>
+        <underline language="LA" method="pen" text="talia increme[n]ta" type="straight"/>
+        <underline language="LA" method="pen" text="fortuna tertiae aetatis uariauerit" type="straight"/>
+        <underline language="LA" method="pen" text="uincias aliquot nouas" type="straight"/>
+        <underline language="LA" method="pen" text="Germanijs" type="straight"/>
+        <underline language="LA" method="pen" text="Hispania" type="straight"/>
+        <underline language="LA" method="pen" text="Dacia, et ad" type="straight"/>
+        <underline language="LA" method="pen" text="amiseru[n]t etia[m] multas" type="straight"/>
+        <underline language="LA" method="pen" text="antea possessas terras" type="straight"/>
+        <underline language="LA" method="pen" text="historijs quartae aetatis, actae sub tyra[n]nis" type="straight"/>
+        <underline language="LA" method="pen" text="decreme[n]ta et ruinas adeò eiusdem Romani" type="straight"/>
+        <underline language="LA" method="pen" text="prouincias et terras eius" type="straight"/>
+        <underline language="LA" method="pen" text="atq[ue] tyranni" type="straight"/>
+        <underline language="LA" method="pen" text="tandem solu[m] urbis nomenq[ue] Romae" type="straight"/>
+        <underline language="LA" method="pen" text="quinta[m] sub" type="straight"/>
+        <underline language="LA" method="pen" text="pontificibus Romanis Italiae" type="straight"/>
+        <underline language="LA" method="pen" text="uicissitudo, ut minima" type="straight"/>
+        <underline language="LA" method="pen" text="maxima quaeq[ue] decrescant" type="straight"/>
+        <underline language="LA" method="pen" text="Tolluntur in altum" type="straight"/>
+        <underline language="LA" method="pen" text="lapsu grauiore" type="straight"/>
+        <underline language="LA" method="pen" text="potissimum Liuij scripta legi" type="straight"/>
+        <underline language="LA" method="pen" text="intelligere" type="straight"/>
+        <underline language="LA" method="pen" text="imitari" type="straight"/>
+        <underline language="LA" method="pen" text="dilige[n]s obseruatio" type="straight"/>
+        <underline language="LA" method="pen" text="imitatio" type="straight"/>
+        <underline language="LA" method="pen" text="scribendo" type="straight"/>
+        <underline language="LA" method="pen" text="inuentionem" type="straight"/>
+        <underline language="LA" method="pen" text="discernere genus" type="straight"/>
+        <underline language="LA" method="pen" text="in Liuio" type="straight"/>
+        <underline language="LA" method="pen" text="nisi obseruata" type="straight"/>
+        <underline language="LA" method="pen" text="nihil imitaberis in specie" type="straight"/>
+        <underline language="LA" method="pen" text="Liuij oratio ut copiosa et grauis" type="straight"/>
+        <underline language="LA" method="pen" text="mirè inter se longiore" type="straight"/>
+        <underline language="LA" method="pen" text="creberrimisq[ue] ambitibus" type="straight"/>
+        <underline language="LA" method="pen" text="historica periodus" type="straight"/>
+        <underline language="LA" method="pen" text="et membris ita" type="straight"/>
+        <underline language="LA" method="pen" text="plures complectatur" type="straight"/>
+
+        <symbol language="LA" name="SS" place="head" text="ARGVMENTVM LIBRI PRIMI"/>     
+        
+        <symbol name="Sun" place="left_margin"/>
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="SS" place="left_margin"/>
+        
+        <symbol name="SS" place="intext"/>
+        <symbol name="SS" place="intext"/>
+        <symbol name="SS" place="intext"/>
+        <symbol name="SS" place="intext"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="head" text="totius hostiriae Romanae"/>
+        
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!-- ciui -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- mor -->
+        <mark language="LA" method="pen" name="plus_sign" place="right_margin" text="FLORO"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- li -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- li -->
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- se -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- de -->
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- Hispa -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- an -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- ty -->
+        <mark method="pen" name="dot" place="right_margin"/> <!-- crescant -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- inuen -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- obser -->
+        
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Romanis legibus"/>
+        <mark method="pen" name="dash" place="intext"/> <!-- mo -->
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="dash" place="intext"/> <!-- fie -->
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--conuenit. In-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="distinctam Romanam historiam"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="regibus"/>
+        <mark language="LA" method="pen" name="quotation_mark" place="intext" text="pueritia"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="monarchiam"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="Aristocratia"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="iuuentus"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- Romani, -->
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="Caesaribus"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="uirilis aetas imperij"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark language="LA" method="pen" name="quotation_mark" place="intext" text="senectus"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Roma spolium barbarorum omnium"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="prouincias"/>
+        <mark method="pen" name="quotation_mark" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark language="LA" method="pen" name="quotation_mark" place="intext" text="decrepita"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Pontificibus Romanis"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Caesaribus Germanis hactenus"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- triginta, -->
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="mancipium"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Primae aetatis"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Secundam aetatem"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="tertiae aetatis"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="maxima pars Liuianae"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- perijt, -->
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="nudos indices habemus"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Flori"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Eutropij"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Orosij"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Plutarchi"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="quartam"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="quintam aetatem"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Totum"/>
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/> <!--Latinoru[m] princeps-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="fluenti"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="inuictoq[ue]"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="liberius paulo"/>
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="Liuiu[m] docendi opera[m]"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Florus aetate"/>
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/> <!--ret-->
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="straight_quotation_mark" place="intext" text="non inutilis usus huiusmodi"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Florus"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="talia increme[n]ta"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- obseruare, -->
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="straight_quotation_mark" place="intext"/>
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- superfuit, -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="quinta[m]"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="minima"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark language="LA" method="pen" name="quotation_mark" place="intext" text="quaeq[ue] decrescant"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="obseruatio"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="imitatio"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="in Liuio"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Liuij oratio ut copiosa et grauis"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="longiore"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="historicas periodos"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="historica periodus"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        
+        <numeral language="LA" place="left_margin" text="Prima ergo aetas fuit sub regibus">1.</numeral>
+        <numeral language="LA" place="left_margin" text="sub consulari potestate">2.</numeral>
+        <numeral language="LA" place="left_margin" text="Caesaribus, Imperatoribus">3.</numeral>
+        <numeral language="LA" place="left_margin" text="aetas fuit sub tyrannis &amp; barbaris">4.</numeral>
+        <numeral language="LA" place="left_margin" text="Pontificibus Romanis">5.</numeral>
+        
+    </annotation>
+</transcription>

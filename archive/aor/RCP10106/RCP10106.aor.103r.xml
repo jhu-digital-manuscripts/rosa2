@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.103r.tif" pagination="205" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Quintus Hortensius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Q[uintus] Hortensius</marginalia_text>
+                    <person name="Quintus Hortensius"/>
+                </position>
+            </language>
+            <translation>Quintus Hortensius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Diuisio, &amp; simplex propositio, quoties utiliter adhiberi potest, primùm debet esse aperta atq[ue] lucida" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Divisionis vitia</marginalia_text>
+                </position>
+            </language>
+            <translation>Vices of division.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Partitio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Partitio</marginalia_text>
+                </position>
+            </language>
+            <translation>Partition.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="&amp; quae natura singularia sunt, secant: nec tam plura faciunt" type="straight"/>
+        <underline language="LA" method="pen" text="Obtinendum etiam ne quid in ea desit, ne quid supersit." type="straight"/>
+        <underline language="LA" method="pen" text="quo conueniat, quid de quo ambigatur. In eo quod co[n]uenit, quid aduersarius fateatur, quid nos. In eo de quo              ambigitur, quae dicturi simus, quae nostrae propositiones, quae partis diuersae. Turpißimum uerò, non eodem ordine exequi, quo quicque proposueris" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

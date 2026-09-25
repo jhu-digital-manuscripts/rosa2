@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.019r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Kambro" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        καμβροι
+                    </marginalia_text>
+                    <person name="Kamber"/>
+                </position>
+            </language>
+            <translation>Kamber.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hu[n]nor[um]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Hunni
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Huns.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="regis Germani[a]e fuerat filia ; Estrildis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Estrildis filia regis Germani[a]e
+                    </marginalia_text>
+                    <person name="Estrildis"/>
+                </position>
+            </language>
+            <translation>Estrildis, daughter of the king of Germany.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="per Tyrrhena littora" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Veru[m] est quod antiquitas ab Italia ad fretu[m] herculij vsq[ue], Mare ultimis [?], dicebatur Tyrrheniu[m] et fieri poterat quod prope Mastitia[m], versus pyrreneas mo[n]tes primò appreh[???] 
+                        et in d[e] primo cu[m] giga[n]tib[us] co[n]gressi, er[???] ???? ulteriora littora progressi a bruto ta[n]de[m] post 4a[m] generat[i]one[m] inve[n]ti fueru[n]t [etc.]
+                    </marginalia_text> <!--Transcription incomplete.// NBW: "antiquitas" doesn't make sense here, appears from sense to be a geographic entity-->
+                </position>
+            </language>
+            <translation> It is true that the [?] from Italy out to the Pillars of Hercules, in the far sea, had been called Tyrrhenian, and it could have been that he landed near Mastitia[?], opposite the Pyrenees, and there first came into contact with the giants, and [??] they moved to the opposite shore, where they were then found by Brutus after 4 generations etc.</translation>
+            <!-- NBW: Translation still needs work, but Dee is talking about Corineus and his followers departure from Troy here-->    
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="applicuit Hu[m]ber rex Hu[n]nor[um] i[n] Albania[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ge[n]te[m] patri[a]e" type="straight"/>        
+        <underline language="LA" method="pen" text="regis Germani[a]e fuerat" type="straight"/>
+        <underline language="LA" method="pen" text="illi Estrildis" type="straight"/>
+        <underline language="LA" method="pen" text="cuiusda[m] Barbar[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="per Tyrrhena littora" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="tail"/>
+        <mark method="pen" name="vertical_bar" place="tail"/>
+        
+    </annotation>
+</transcription>

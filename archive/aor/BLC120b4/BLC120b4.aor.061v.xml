@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.061v.tif" pagination="61[v]" reader="John Dee" signature="[P[v]]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        at alibi dicit 1000 10000 &amp;c   
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+               But elsewhere he says: 1000, 10000, etc.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Vnica[e]:charatti Vnica[e]  
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Twelfths. Carats. Twelfths. <!-- DO: Not sure how to translate this either. 'Unciae' is 'twelfths' or 'of the tweflth' and all I can find for 'charatti' is that 'charattus' might be 'carat'. --> <!-- JG: charattus is also known as siliqua, see: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1686184/-->
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Vna Vncia co[n]tinet charattos 144:   
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>One twelfth contains 144 carats.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Qua[n]titate[m] vtriusq[ue] Metalli hîc co[m]mixti semper supponit esse Marcam, id est, vncias octo: scilicet charattos 1152. 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                He supposes that quantity of both metals mixed here always is a mark [=a measure of weight], that is, 8/12, which is, naturally, 1152 carats. 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="supra .C. partes: supra. D. partes" type="straight"/>
+        <underline language="LA" method="pen" text=".7.1008" type="straight"/>
+        <underline language="LA" method="pen" text=".6.864" type="straight"/>
+        <underline language="LA" method="pen" text=".5.720" type="straight"/>
+        <underline language="LA" method="pen" text=".4.576" type="straight"/>
+        <underline language="LA" method="pen" text=".3.432" type="straight"/>
+        <underline language="LA" method="pen" text=".2.288" type="straight"/>
+        <underline language="LA" method="pen" text=".1.144.7" type="straight"/>
+        
+    </annotation>
+</transcription>

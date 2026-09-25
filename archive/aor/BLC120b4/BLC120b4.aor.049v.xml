@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.049v.tif" pagination="49[v]" reader="John Dee" signature="[M[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Alteratio" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Trituratio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Threshing.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="maiori Luce &amp; minori" type="straight"/>
+        <underline language="LA" method="pen" text="Iterumq[ue]" type="triple"/> 
+        <underline language="LA" method="pen" text="Propterea omnia necessaria recola[n]tur quousq[ue] totum perficiatur" type="straight"/> 
+        <underline language="LA" method="pen" text="Aequatum" type="straight"/>
+        <underline language="LA" method="pen" text="Alteratio" type="straight"/>
+        
+        
+        
+    </annotation>
+</transcription>

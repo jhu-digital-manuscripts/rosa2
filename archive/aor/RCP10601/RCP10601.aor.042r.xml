@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.042r.tif" pagination="83" reader="John Dee" signature="f 2"/>
+    <annotation>
+        
+        <marginalia anchor_text="Zohare[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Zohar</marginalia_text>
+                    <book title="Zohar"/>
+                </position>
+            </language>
+            <translation>The Zohar.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quartus Ezrae liber" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>4[us] liber Ezdra[e]</marginalia_text>     <!-- DO: 'Ezdra[e]' or 'Esdra[e]'? -->
+                    <book title="2 Esdras"/> 
+                </position>
+            </language>
+            <translation>4 Esdras.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in Daniele consecratum est eloquium Chaldaicum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Lingua Chaldaïca in Daniele co[n]secrata.</marginalia_text>
+                    <book title="Book of Daniel"/>
+                </position>
+            </language>
+            <translation>The Chaldean language consecrated in Daniel.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="est legis Mosaicae appendix praestantißima" type="straight"/>
+        <underline language="LA" method="pen" text="Christo cognoscerent quàm totum genus Iudaicu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Zohare[m]" type="double"/>
+        <underline language="LA" method="pen" text="quartus Ezrae liber" type="straight"/>
+        <underline language="LA" method="pen" text="habebat" type="straight"/>
+        <underline language="LA" method="pen" text="eloquium Chaldaicum" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+    </annotation>
+</transcription>

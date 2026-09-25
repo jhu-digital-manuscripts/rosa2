@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.298r.tif" pagination="291" reader="John Dee" signature="ddd iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="in secundo contradicentium medicorum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Libro secundo co[n]tradice[n]tiu[m]</marginalia_text>
+                    <book title="Contradicentium Medicorum Libri Duo"/>
+                </position>
+            </language>
+            <translation>[Cardano's] 'Contradicentium Medicorum Libri Duo'</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="libro de supernis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Libro de sup[e]rnis</marginalia_text>
+                </position>
+            </language>
+            <translation>In the book 'On celestial things'.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Syrigatus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Syrigatus</marginalia_text>
+                    <person name="Antonius Sirigatus"/>
+                </position>
+            </language>
+            <translation>Antonius Sirigatus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="matutino, ut Syrigatus" type="straight"/> 
+        
+        <errata amendedtext="tum" copytext="tamen" language="LA"/>
+        
+    </annotation>
+</transcription>

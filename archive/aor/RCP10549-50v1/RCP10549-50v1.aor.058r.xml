@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.058r.tif" pagination="95" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia anchor_text="in ore, atque oculis prouinciae gesta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        in ore atq[ue] oculis gesta
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                'Done in full view' [Loeb 221, 381].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tangebuatur tame[n] animi dolore necessario" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        tangi a[nim]i dolore necessario
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To be touched by necessary pain of the soul.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cupiditate iste illa sua nota, atque apud omnes peruulgata" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        cupiditas nota peruugata]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Notorious and known cupidity.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="oppidum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        oppidu[m] claru[m] ornatu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A famous and adorned town.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" id="RCP10549-50v1:0123:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        himera
+                    </marginalia_text>
+                    <location name="Himera"/>
+                </position>
+            </language>
+            <translation>
+                Himera.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="muliebre[m] figura[m], habitúmque" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        muliebris figura habitus]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Feminine figure, female clothes.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quam iste no[n] modo" type="straight"/>
+        <underline language="LA" method="pen" text="in ore, atque oculis prouinciae" type="straight"/>
+        <underline language="LA" method="pen" text="non tam suae delectationis causa, quàm ad inuitationes aduentúsque" type="straight"/>
+        <underline language="LA" method="pen" text="veruntamen dolorem suum nemini impartiebat" type="straight"/>
+        <underline language="LA" method="pen" text="muliebre[m] figura[m], habitúmque formata" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">4</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">5</numeral>
+        <numeral place="right_margin">18</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.158r.tif" pagination="139" reader="Harvey" signature="[I6r]"/>	<!-- ABO 162right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Angelus lucis: quicquid in alijs omnibus tenebraru[m].
+						Nihil inamabile, aut ignobile vllo modo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The angel of light: whatever shadows there are in everything else. Nothing disagreeable or obscure in any way.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Semper magis ingenuus: magis candid[u]s:
+						magis alacer, et festiuus:
+						quicquid oppositionum in mundo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Always more noble, more bright, more eager and witty: whatever opposition there is in the world.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Non ego servus mala[e] Fortuna[e]:
+						sed dominus bona[e] Virtutis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>I am not a slave to bad fortune, but a master of good virtue.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Salue festa dies; quotidianum gallicinium: quicquid
+						malitia[e], aut peruersitatis in Mundo. Meus sum: no[n] aliorum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Welcome to the festive days; a daily last watch of the night: whatever bad or evil there is in the world. I am myself, not of others.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Qualis mensis Julius, et Sol in Leone; talis ipse Julius Augusti
+						pater, et actor meus. Alij ferè omnes, pueri, aut foemina[e]: solus ferè vir.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>However excellent the month of July, and the sun in the lion; such is Julius himself, the father of August and my actor. Generally all others are boys or women: generally the sole man.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="a conditione, che voi non" type="straight"/>
+		<underline language="IT" method="pen" text="che l'huomo prenda due" type="straight"/>
+		<underline language="IT" method="pen" text="vna moglie sola serua à due" type="straight"/>
+		<underline language="IT" method="pen" text="con altre matrone" type="straight"/>
+		<underline language="IT" method="pen" text="al Senato si" type="straight"/>
+		<underline language="IT" method="pen" text="miserabilemente" type="straight"/>
+		<underline language="IT" method="pen" text="vna donna à due mariti serua" type="straight"/>
+		<underline language="IT" method="pen" text="Il senato" type="straight"/>
+		<underline language="IT" method="pen" text="nouità, &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="riferì modestamente" type="straight"/>
+		<underline language="IT" method="pen" text="al concistoro, della grande" type="straight"/>
+		<underline language="IT" method="pen" text="egli il segreto della Republica" type="straight"/>
+		<underline language="IT" method="pen" text="escogitata quella burla" type="straight"/>
+		<underline language="IT" method="pen" text="Senatori leuate le risa" type="straight"/>
+		<underline language="IT" method="pen" text="'ingegno del faciullo" type="straight"/>
+		<underline language="IT" method="pen" text="che i figliuoli giouani no[n] potessero" type="straight"/>
+		<underline language="IT" method="pen" text="saluo quel giouanetto de' Papirij" type="straight"/>
+		<underline language="IT" method="pen" text="quella età puerile" type="straight"/>
+		<underline language="IT" method="pen" text="prude[n]za virile" type="straight"/>
+		<underline language="IT" method="pen" text="Papirio Pretestato" type="straight"/>
+		
+		<symbol name="Sun" place="right_margin"/>
+		<symbol name="JC" place="right_margin"/>
+		<symbol language="IT" name="Sun" place="right_margin" text="quella età puerile"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- tan -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- parlia -->
+		<mark method="pen" name="dash" place="right_margin"/> <!--  attroni-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--  potes-->
+		
+		<mark method="pen" name="dot" place="intext"/> <!-- mariti, ma --> 
+
+	</annotation>
+</transcription>

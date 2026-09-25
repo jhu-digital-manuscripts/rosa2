@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.019r.tif" reader="John Dee" signature="[Eiiij]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="werme" hand="Italian" method="pen"> <!--FSF:  by a stroke -->
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Balmei pipirimi Calor unde</marginalia_text>
+                </position>
+            </language>
+            <translation>Pepper baths, hence the heat.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="centrum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Centrum Thermaru[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>The centre of the baths.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="vitriolischen mineralien; Veneris Solis vnnd Saturni; Alabasterstein" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vitriolum ♀☉♄♂ Alabastru[m]</marginalia_text>
+                    <marginalia_symbol name="Venus"/>
+                    <marginalia_symbol name="Sun"/>
+                    <marginalia_symbol name="Saturn"/>
+                    <marginalia_symbol name="Mars"/>
+                </position>
+            </language>
+            <translation>Vitriol. Venus. Sun. Saturn. Mars. Alabaster.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="seyne kreft" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Virtutes hui[us]</marginalia_text>
+                </position>
+            </language>
+            <translation>Its properties.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="podagrischen mucilagines" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Podagra</marginalia_text>
+                </position>
+            </language>
+            <translation>Gout.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="viscositates paralisis" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Paralysis</marginalia_text>
+                </position>
+            </language>
+            <translation>Paralysis.</translation>
+        </marginalia>
+
+        <marginalia anchor_text="colicam" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>colica.</marginalia_text>
+                </position>
+            </language>
+            <translation>Colic.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="contractis" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>contractio</marginalia_text>
+                </position>
+            </language>
+            <translation>Contraction.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="leprosischen" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lepra</marginalia_text>
+                </position>
+            </language>
+            <translation>Leprosy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ölschenckel" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vlcera maligna</marginalia_text>
+                </position>
+            </language>
+            <translation>Malign ulcer.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Praeparatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Preparation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="menstruum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>menstruum</marginalia_text>
+                </position>
+            </language>
+            <translation>Menstruation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="viscositates paralisis" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Them that haue long lyve sick and begyn to amend</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="viscositates paralisis" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>The bath co[m]pounded of vitriol</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>ex tribus p[ri]mis ♀☉♄♂</marginalia_text>
+                    <marginalia_symbol name="Venus"/>
+                    <marginalia_symbol name="Sun"/>
+                    <marginalia_symbol name="Saturn"/>
+                    <marginalia_symbol name="Mars"/>
+                </position>
+            </language>
+            <translation>The bath co[m]pounded of vitriol from the three primes.</translation> 
+        </marginalia>        
+        
+        <underline language="DE" method="pen" text="werme" type="double"/>
+        <underline language="DE" method="pen" text="auß der separation" type="straight"/>
+        <underline language="DE" method="pen" text="composito" type="straight"/>
+        <underline language="DE" method="pen" text="dreyen" type="double"/>
+        <underline language="DE" method="pen" text="vitriolischen liquores" type="double"/>
+        <underline language="DE" method="pen" text="selbigen ärtz" type="straight"/>
+        <underline language="DE" method="pen" text="durch die eysen ärtz" type="straight"/>
+        <underline language="DE" method="pen" text="Alabasterstein" type="straight"/>
+        <underline language="DE" method="pen" text="vierdten" type="double"/>
+        <underline language="DE" method="pen" text="theil der globel nimpt es seyn centrum" type="straight"/>
+        <underline language="DE" method="pen" text="podagrischen mucilagines" type="straight"/>
+        <underline language="LA" method="pen" text="viscositates paralisis" type="straight"/>
+        <underline language="DE" method="pen" text="kleinen schlag" type="straight"/>
+        <underline language="DE" method="pen" text="gäder vn[nd] neruam zewesserig worden" type="straight"/>
+        <underline language="LA" method="pen" text="consumptiones" type="straight"/>
+        <underline language="DE" method="pen" text="bringt widerum[m]" type="straight"/>
+        <underline language="DE" method="pen" text="es den contractis gůtt ist" type="straight"/>
+        <underline language="DE" method="pen" text="den leprosischen" type="straight"/>
+        <underline language="DE" method="pen" text="ein grosse dürre" type="double"/>
+        <underline language="DE" method="pen" text="beschlossne haut" type="straight"/>
+        <underline language="DE" method="pen" text="ölschenckel" type="straight"/>
+        <underline language="DE" method="pen" text="wenn sy vormals darzů bereyt sind mit den mundificationibus reinigungen" type="straight"/>
+        <underline language="DE" method="pen" text="stelts" type="straight"/>
+        <underline language="DE" method="pen" text="prouocierts" type="straight"/>
+        <underline language="DE" method="pen" text="in langen kranckheyten gelegen sind" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing anchor_text="in langen kranckheyten gelegen sind" book_orientation="0" method="pen" place="tail" type="manicule"/>
+        
+    </annotation>
+</transcription>

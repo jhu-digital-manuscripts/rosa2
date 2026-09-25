@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.280v.tif" pagination="540" reader="John Dee" signature="[lll.vi.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="languidiore" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>languidius</marginalia_text>
+                </position>
+            </language>
+            <translation>Weaklier.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="quicquid dixi, ad vnam fummam referri volo." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>quicquid dixi ad vna[m] fummam referri volo.</marginalia_text>
+                </position>
+            </language>
+            <translation>'Every word I have spoken I would have referred to one single head' [Loeb 252, 485].</translation>
+        </marginalia> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>nota</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>à maiori</marginalia_text>
+                </position>
+            </language>
+            <translation>From the greater.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="preces" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pr[a]eces</marginalia_text>
+                </position>
+            </language>
+            <translation>Prayers.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="co[n]sensum conspirantem &amp; penè co[n]flatum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>co[n]sensus co[n]spirans conflatus</marginalia_text>
+                </position>
+            </language>
+            <translation>United and composed consensus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="enim amentis cum aciem videres, pacem cogitare" type="straight"/>
+        <underline language="LA" method="pen" text="ne haec quidem colligo" type="straight"/>
+        <underline language="LA" method="pen" text="causas apud te rogantium gatiores esse, quàm preces: neque" type="straight"/>
+        <underline language="LA" method="pen" text="preces: ab iísque te moueri maxime, quorum iustissimum dolore[m]" type="straight"/>
+        <underline language="LA" method="pen" text="lachrymae, moueat pietas, moueat germanitas, valeat tua vox illa quae vicit" type="straight"/>
+        <underline language="LA" method="pen" text="omnes, aduersarios putare, nisi qui nobiscu[m] essent: te, omnes" type="straight"/>
+        <underline language="LA" method="pen" text="Co[n]serua igitur" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]sensum conspirantem &amp; penè co[n]flatum" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">4.13</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">18</numeral>
+        
+        <drawing anchor_text="enim amentis cum aciem videres, pacem cogitare" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

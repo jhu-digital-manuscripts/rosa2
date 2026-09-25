@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL531k6.027r.tif" pagination="[27r]" reader="John Dee" signature="[G3]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Differentia ad 6 horas: est Mi.10.28.44 <!--JG: Still not sure about 'Mi', since what Dee records in hours - minutes - seconds, like the data in the table-->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The difference to six hours is in minutes 10.28.44</translation> 
+        </marginalia>
+        
+        <numeral id="BLC.122.bb.35:531_k_6_(3)_f027r:n0001" place="intext">47.</numeral>
+        
+        <physical_link>
+            <marginal_annotation idref="BLC.122.bb.35:531_k_6_(3)_f027r:n0001"/> <!--JG: Link can't be established completely-->
+        </physical_link>
+        
+    </annotation>
+</transcription>

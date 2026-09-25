@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.129r.tif" pagination="81" reader="Harvey" signature="F[r]"/>	<!-- ABO 133right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						{ Stile, or speach, all in the veine of finest Sentences; or deepest
+						Maxims;
+						or pithiest Apothegs; or sharpest Epigrams; or
+					</marginalia_text>
+					<emphasis method="pen" text="Stile, or speach, all in the veine of finest" type="straight"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						wittitest descants; or sweetest iests.
+					</marginalia_text>
+					<emphasis method="pen" text="iests." type="straight"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Mens cuiusq[ue], is est quiq[ue].
+						Sed Mens quotidiè animata; 
+						et magis magisq[ue] habituata.
+					</marginalia_text>
+					<X-ref book_title="De re publica" language="LA" person="Cicero" text="Mens cuiusq[ue], is est quiq[ue]"/>
+					<emphasis method="pen" text="habituata" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				"The mind is the man". 
+				But the mind is daily animated, and grows more and more accustomed.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Nihil planè vulgare:
+						sed uel Materia, uel forma, uel aliq[u]o colore rarum,
+						aut lautu[m]. Vt ne Proa[e]resius quide[m]
+					</marginalia_text>
+					<person name="Prohaeresius"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Suprà, aut Apollonius: et longè infrà,
+						omnes Ciceronis, et Demosthenis: Aristotelis, et Platonis;
+						Taciti, et Seneca[e] imitatores.
+						Aut multò, quàm alij vlli, meliùs: aut quorsum tot studia,
+						singulares
+					</marginalia_text>
+					<person name="Apollonius of Tyana"/>
+					<person name="Cicero"/>
+					<person name="Demosthenes"/>
+					<person name="Aristotle"/>
+					<person name="Plato"/>
+					<person name="Tacitus"/>
+					<person name="Seneca"/>
+					<emphasis method="pen" text="quàm alij vlli, meliùs" type="straight"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						obseruationes, exquisita arcana?
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Nothing is entirely common, but everything is rare or rich in either form, matter, or some color.
+				Just as not even Prohaeresius above, or Apollonius; and far below are all the imitators of Cicero,
+				Demosthenes, Aristotle, Plato, and Seneca.
+				Either be much better than any of the others, or what is the point of all these studies, 
+				singular observations, and exquisite mysteries?			
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Aut nunc, aut nunq[uam] iaciendum aureum Fortuna[e] fundamentu[m]:
+						tam facultatum, quàm reputationis causa.
+					</marginalia_text>
+					<emphasis method="pen" text="nunc" type="straight"/>
+					<emphasis method="pen" text="nunq[uam]" type="straight"/>
+					<emphasis method="pen" text="iaciendum aurem Fortuna[e]" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Either do it now, or you will never  build the golden foundation of Fortune.
+				it is the origin of both ability and reputation.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Veritatis oratio est expedita. È Senariis camerarij.
+					</marginalia_text>
+					<emphasis method="pen" text="Veritatis oratio" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The oration of truth is set free. From the [??]. <!--JG: Don't get 'senariis camerarii'-->
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="ma ella tanto piu noia" type="straight"/>
+		<underline language="IT" method="pen" text="Madonna" type="straight"/>
+		<underline language="IT" method="pen" text="in su quel letto, ta[n]to" type="straight"/>
+		<underline language="IT" method="pen" text="che alto non desiaua, tutta" type="straight"/>
+		<underline language="IT" method="pen" text="voglio vedere" type="straight"/>
+		<underline language="IT" method="pen" text="passò il segno" type="straight"/>
+		<underline language="IT" method="pen" text="gettatala sopra del letto" type="straight"/>
+		<underline language="IT" method="pen" text="la conobbe, &amp; riconobbe molto" type="straight"/>
+		<underline language="IT" method="pen" text="vn figliuolino del" type="straight"/>
+		<underline language="IT" method="pen" text="di quattro ò" type="straight"/>
+		<underline language="IT" method="pen" text="non passate quel segno" type="straight"/>
+		<underline language="IT" method="pen" text="ha fatto à mia madre, che il volle" type="straight"/>
+		<underline language="IT" method="pen" text="gettatala in sul letto" type="straight"/>
+		<underline language="IT" method="pen" text="saltatole addosso," type="straight"/>
+		<underline language="IT" method="pen" text="premuta piu di" type="straight"/>
+		<underline language="IT" method="pen" text="Accorta, &amp; rimordente" type="straight"/>
+		<underline language="IT" method="pen" text="giouanetto Greco" type="straight"/>
+		<underline language="IT" method="pen" text="Ottauiano Imperadore" type="straight"/>
+		<underline language="IT" method="pen" text="gli occhi verso" type="straight"/>
+		<underline language="IT" method="pen" text="fattoselo Cesare venire" type="straight"/>
+		
+		<symbol name="Sun" place="left_margin"/>
+		
+		<mark method="pen" name="circumflex" place="left_margin"/>
+		<mark method="pen" name="circumflex" place="left_margin"/>
+		<mark method="pen" name="circumflex" place="left_margin"/>
+		<mark method="pen" name="circumflex" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- con -->
+		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- molto be- -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- pres -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- passa -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Im -->
+		
+		<mark method="pen" name="quotation_mark" place="intext"/>
+		
+    </annotation>
+</transcription>

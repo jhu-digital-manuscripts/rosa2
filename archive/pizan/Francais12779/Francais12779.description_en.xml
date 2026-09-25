@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+   <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+   
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <title>Poetic Works by Christine de Pizan</title>
+         
+         </titleStmt>
+         
+         <publicationStmt>
+            
+            <distributor>MSEL</distributor>
+         
+         </publicationStmt>
+         
+         <notesStmt>
+            
+            <note rend="IDENTIFICATION">
+               
+               <p> Français 12779, Bibliothèque nationale de France, Paris. Paris, ca. 1402-1403.</p>
+            
+            </note>
+            
+            <note rend="BASIC INFORMATION">
+               
+               <p>Parchment, 326 x 251 mm, 174 folios.</p>
+            
+            </note>
+            
+            <note rend="MATERIAL">
+               
+               <p>Thick <material>parchment</material>, buffed and yellowish, with large holes at the beginning (ff. <locus from="1" to="6">1-6</locus>) and smaller ones in other parts of the manuscript. There is an indication of repairs being done on the manuscript with mismatched pieces of parchment of a lighter color. The folios <locus>104</locus> and <locus>105</locus> were probably damaged during the removal of a folio between folios 106-107. </p>
+                              
+            </note>
+            
+            <note rend="QUIRES">
+               
+               <list>
+                  
+                  <head>Collation:</head>
+                  
+                  <item n="I">
+                     
+                     <locus from="1" to="2">1-2</locus>
+                  
+                  </item>
+                  
+                  <item n="II">
+                     
+                     <locus from="3" to="8">3-8</locus>
+                  
+                  </item>
+                  
+                  <item n="III">
+                     
+                     <locus from="9" to="16">9-16</locus>
+                  
+                  </item>
+                  
+                  <item n="IV">
+                     
+                     <locus from="17" to="21">17-21</locus>, <locus>21 bis</locus>, <locus from="22" to="23">22-23</locus>
+                  
+                  </item>
+                  
+                  <item n="V">
+                     
+                     <locus from="24" to="31">24-31</locus>
+                  
+                  </item>
+                  
+                  <item n="VI">
+                     
+                     <locus from="32" to="34">32-34</locus>, <locus from="37" to="39">37-39</locus>
+                  
+                  </item>    
+                  
+                  
+                  <item n="VII">
+                     
+                     <locus from="40" to="47">40-47</locus>
+                     
+                  </item> 
+                  
+                  <item n="VIII">
+                     
+                     <locus>48</locus>, <locus from="50" to="55">50-55</locus>
+                     
+                  </item> 
+                  
+                  
+                  <item n="IX">
+                     
+                     <locus from="56" to="63">56-63</locus>
+                     
+                  </item> 
+                  
+                  <item n="X">
+                     
+                     <locus from="64" to="71">64-71</locus>
+                     
+                  </item> 
+                  
+                  <item n="XI">
+                     
+                     <locus from="72" to="79">72-79</locus>
+                     
+                  </item> 
+                  
+                  <item n="XII">
+                     
+                     <locus from="80" to="87">80-87</locus>
+                     
+                  </item> 
+                  
+                  <item n="XIII">
+                     
+                     <locus from="88" to="95">88-95</locus>
+                     
+                  </item> 
+                  
+                  <item n="XIV">
+                     
+                     <locus from="96" to="103">96-103</locus>                     
+                  </item> 
+                  
+                  
+                  <item n="XV">
+                     
+                     <locus from="104" to="108">104-108</locus>
+                     
+                  </item> 
+                  
+                  <item n="XVI">
+                     
+                     <locus from="109" to="114">109-114</locus>
+                     
+                  </item> 
+                  
+                  
+                  <item n="XVII">
+                     
+                     <locus from="115" to="122">115-122</locus>
+                     
+                  </item> 
+                  
+                  
+                  <item n="XVIII">
+                     
+                     <locus from="123" to="130">123-130</locus>
+                     
+                  </item> 
+                  
+                  <item n="XIX">
+                     
+                     <locus from="131" to="138">131-138</locus>
+                     
+                  </item>  
+                  
+                  <item n="XX">
+                     
+                     <locus from="139" to="146">139-146</locus>
+                     
+                  </item> 
+                  
+                  
+                  <item n="XXI">
+                     
+                     <locus from="147" to="154">147-154</locus>
+                     
+                  </item> 
+                  
+                  
+                  <item n="XXII">
+                     
+                     <locus from="155" to="156">155-156</locus>
+                     
+                  </item> 
+                  
+                  
+                  <item n="XXIII">
+                     
+                     <locus from="157" to="164">157-164</locus>
+                     
+                  </item> 
+                  
+                  
+                  <item n="XXIV">
+                     
+                     <locus from="165" to="172">165-172</locus>
+                     
+                  </item> 
+                  
+                  
+                  <item n="XV">
+                     
+                     <locus from="173" to="174">173-174</locus>
+                     
+                  </item>  
+               </list>
+                               
+                              
+     
+               
+               <p>(III, paper) + 174 + (III, paper). Two types of foliations: each gathering contains a Roman numeral at the top center of the folio; after the second gathering, in the 19th century, Arabic numerals were added when it was rebound. </p>
+                  
+            </note>
+            
+            <note rend="LAYOUT">
+               
+               <p>Visible light gray ruling marks, probably done with lead pencils. There is also visible pricking (between 4 to 8 pricks). They were done with different instruments due to some pricks being larger than others, and some being triangular. The <hi rend="italics">mise-en-page</hi> for the texts in verse has 2 columns with 32 lines each. Each column measures around 44 mm.The <hi rend="italics">mise-en-page</hi> for the <hi rend="italics">Dit de la pastoure</hi> has 2 columns with 32 lines each. Each column measures around 48mm. The <hi rend="italics">mise-en-page</hi> for the texts in prose has 2 columns with 32 lines each. Each column measures around 50 mm.</p>
+            
+            </note>
+            
+            <note rend="SCRIPT">
+               
+               <p>The text is written in brown ink (ff. <locus from="1" to="25">1-25</locus> and <locus from="157" to="174">157-174</locus>) and dark brown ink (ff. <locus from="26" to="156">26-156</locus>), with bright red ink being used for the rubrics.  There seems to be a main scribal hand for the text characterized by its exuberance. The text has been written using a quick bookish cursive script. The script was obviously done in haste. There are minor signs of punctuation. The scribe uses commas and periods. There are few corrections in the text, mostly done by the scribe by scratching the parchment.</p>
+            </note>
+            
+            <note rend="DECORATION">
+               
+               <p>There are numerous bright red or dark blue initials over pen-flourished backgrounds in either dark blue or red respectively. This color scheme appears to be very regular and it alternates over the whole manuscript. There are also eleven large pen-flourished initials in bright red or dark blue. These initials are prologued downwards by festoons with half <hi rend="italics">fleur-de-lys</hi> of the same color than the initial framing the text. In two instances, the decoration of the initial is extended upwards to frame a miniature.</p>   
+               <p> There are nine miniatures probably done by the hand of the Master <hi rend="italics">de la Pastoure</hi> (ff. <locus>1</locus>r, <locus>77</locus>v, <locus>90</locus>r, <locus>106</locus>v, <locus>107</locus>v, <locus>108</locus>r, <locus>149</locus>v, <locus>154</locus>r, <locus>157</locus>r), with minor interventions by the Master of Jeanne Ravenelle in ff. <locus>77</locus>v and <locus from="106" to="108">106v-108r</locus>. All the miniatures are framed with gold leaf over a black border. At least five miniatures are missing from the original manuscript, three from the  <hi rend="italics">Epîstre Óthea</hi> (between the ff. <locus from="106" to="107">106-107</locus> and <locus from="108" to="109">108-109</locus>), one from the  <hi rend="italics">Debat de deux amans</hi> (f. <locus>49</locus>) and one from the  <hi rend="italics">Oroison Nostre Seigneur</hi> (between the ff. <locus from="156" to="157">156-157</locus>). </p>
+           <p>Miniatures:</p> 
+            <list>
+               <item> Fol. <locus>1</locus>r, Christine writing.</item>
+               <item> Fol. <locus>77</locus>v, Christine and the Seneschal of Hainaut. </item>
+               <item> Fol. <locus>90</locus>r, Trip to Poissy. </item>
+               <item> Fol. <locus>106</locus>v, Christine presenting her manuscript to Louis d'Orléans.</item>
+               <item> Fol. <locus>107</locus>v, The Clock of Temperance. </item>
+               <item> Fol. <locus>108</locus>r, Hercules in the Underworld. </item>
+               <item> Fol. <locus>149</locus>v, Christine teaching her son. </item> 
+               <item> Fol. <locus>154</locus>r, Christine presents her manuscript to the Virgin. </item>
+               <item> Fol. <locus>157</locus>r, Country Scene. </item>
+            </list>
+             
+            </note>
+            
+                   
+            <note rend="BINDING">
+               
+               <p>The manuscript was rebound in the 19th century with a marble calfskin framed with gold festoons. The initials of Louis Philippe appear in the spine with seven groups of five horizontal threads of gold. In addition, the spine contains two inscriptions over black calfskin: “COLLECTION MOUCHET” and “POÉSIES DE CHRISTINE DE PISAN.” The folios were not cut down to fit the binding. </p>
+            </note>
+            
+            <note rend="HISTORY">
+               
+               <p>Most of the manuscript seems to have been written in 1402, except for the <hi rend="italics">Dit de la pastoure</hi>, which was dated to May 1403. The part of the debate of the Rose is identical to the one in the library of Chantilly, Ms. 492, completed on June 23, 1402, which, of course, does not include the letter sent by Christine to Pierre Col on October 2, 1402. In addition, just like in Chantilly 492, this manuscript does not contain in <hi rend="italics">Autres Balades</hi> the texts written after 1402 (a praise for the court of Burgundy in 1403 and the lament over the death of Philip the Bold, which occurred on April 27, 1404).</p>
+               <p>Provenance: Hagar (?) whose signature and motto (?) (15th c.) <hi rend="italics">Y doth myer</hi> (?), written in large red letters filling the entire column of f. <locus>77</locus>r; Lacurne de Sainte-Palaye; the Cabinet des Chartes (ca. 1763); the marquis of Paulmy (?); G.-J. Mouchet, who collaborated with Lacurne de Sainte-Palaye in the <hi rend="italics">Glossarie d l'ancien langage françois</hi>. The manuscript was acquired by the imperial or royal library after the death of Mouchet, sometime in 1807; in f. <locus>1</locus> there is a repository number  “Mouchet nº 6”, and in ff. <locus>1</locus>r and <locus>174</locus>v, there is a stamp type 21 bis, which can be dated between 1815 and 1830. It was subsequently taken from the collection of Mouchet and added to the funds of <hi rend="italics">Supplément français</hi> with the repository number S-F 6259 in f. 1r. </p> 
+            </note>
+            
+            <note rend="TEXT">
+               
+               <p>Contains her poetic works in the following order: </p>
+               <list>
+                  <item><hi rend="italics">Cent balades</hi> (ff.  <locus from="1" to="21">1-21</locus></item>
+                  <item><hi rend="italics">Virelays plusieurs </hi> (ff.  <locus from="21" to="24">21bis-24</locus></item>
+                  <item><hi rend="italics">Balade retrogade  </hi>(f.  <locus>24</locus>v)</item>
+                  <item><hi rend="italics"> Balade a rimes reprises</hi> (ff. <locus from="24" to="25">24v-25r</locus>)</item>
+                  <item><hi rend="italics"> Balade a responses </hi> (f. <locus>25</locus>v)</item>
+                  <item><hi rend="italics"> Autres Balades</hi> (ff. <locus from="25" to="32">25v-32v</locus>)</item>
+                  <item> <hi rend="italics">Complainte amoureuses</hi> (ff.  <locus from="33" to="34">33v-34r</locus>)</item> 
+                  <item><hi rend="italics"> Lay leonime</hi> (f. <locus>37</locus>r)</item>
+                  <item><hi rend="italics"> Lay</hi> (ff.  <locus from="37" to="39">37r-39r</locus>)</item>
+                  <item><hi rend="italics"> Rondiaulx</hi> (ff.  <locus from="39" to="45">39v-45v</locus>)</item>
+                  <item> <hi rend="italics">Gieux a vendre</hi> (ff. <locus from="45" to="48">45v-48v</locus>)</item>
+                  <item><hi rend="italics">Debat des deux amans</hi> (ff. <locus from="50" to="65">50r-65r</locus>)</item>
+                  <item> <hi rend="italics">Epistre au dieu d'Amours</hi> (ff.  <locus from="65" to="71">65v-71v</locus>)</item>
+                  <item><hi rend="italics"> Dit de la rose</hi> (ff. <locus from="72" to="77">72r-77r</locus>)</item>
+                  <item> <hi rend="italics">Dit des iii. Jugemens </hi>(ff. <locus from="77" to="89">77v-89v</locus>)</item>
+                  <item><hi rend="italics"> Dit de Poissy</hi>(ff. <locus from="90" to="106">90r-106r</locus>)</item> 
+                  <item> <hi rend="italics">Epîstre d'Óthea</hi> (ff. <locus from="106" to="141">106v-141r</locus>)</item>
+                  <item> <hi rend="italics">Epîstres sur le roman de la rose</hi> (ff. <locus from="141" to="149">141v-149r</locus>)</item>
+                  <item> <hi rend="italics">Diz moraulx </hi> (ff. <locus from="149" to="153">149v-153r</locus>)</item>
+                  <item> <hi rend="italics">Oroison de Nostre Dame </hi> (ff. <locus from="154" to="155">154r-155v</locus>)</item>
+                  <item> <hi rend="italics">XV Joyes de Nostre Dame</hi> (f. <locus>156</locus>)</item>
+                  <item> <hi rend="italics">Oroison Nostre Seigneur</hi> (the two folios missing between 156 and 157 had this text)</item>
+                  <item> <hi rend="italics">Dit de la pastoure  </hi> (ff. <locus from="157" to="174">157r-174v</locus>)</item>
+               </list> 
+            </note>
+            
+            <note rend="AUTHOR">
+              
+               <p>
+*The information given here comes from direct observation and from Ouy, Gilbert, Christine Reno and Inès Villela-Petit.<hi rend="italics"> Album Christine de Pizan </hi>. Turnhout: Brepols, 2012. </p>
+<p> Description by Mónica Ann Walker Vadillo</p>
+            
+            </note>
+         
+         </notesStmt>
+         
+         <sourceDesc>
+            
+            <bibl>
+               
+               <note type="format">manuscript</note>
+               
+               <note type="commonName">Français 12778</note>
+               
+               <title>Poetic Works of Christine de Pizan</title>
+
+               
+               <extent>
+                  
+                  <measure quantity="174" unit="folios">174 folios</measure>
+                  
+                  <dimensions>
+                     
+                     <height unit="mm">326</height>
+                     
+                     <width unit="mm">251</width>
+                  
+                  </dimensions>
+               
+               </extent>
+               
+               <note type="illustrations">9</note>
+               
+               
+               
+               
+               
+               <note type="material">parchment</note>
+               
+               <pubPlace>Paris, France</pubPlace>
+     
+               <date notAfter="1500" notBefore="1400">15th century</date>
+            
+            </bibl>
+            
+            <msDesc>
+               
+               <msIdentifier>
+                  
+                  <settlement>Paris</settlement>
+                  
+                  <repository>Bibliothèque nationale de France</repository>
+                  
+                  <idno>Français 12778</idno>
+               
+               </msIdentifier>
+            
+               <msContents>
+                  <msItem n="1">
+                     <locus from="1r" to="174v">1r-174v</locus>
+                     <title>Poetic Works by Christine de Pizan</title>
+                     <note type="textid">Poetic Works by Christine de Pizan</note>
+                     <note type="folios">174</note>
+                     <note type="illustrations">9</note>
+                     <note type="linesPerColumn">32</note>
+                     <note type="leavesPerGathering">2, 3, 4, 7, 8</note>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         
+         </sourceDesc>
+      
+      </fileDesc>
+   
+   </teiHeader>
+   
+   <text>
+      
+      <body>
+         
+         <div> </div>
+      
+      </body>
+   
+   </text>
+
+</TEI>

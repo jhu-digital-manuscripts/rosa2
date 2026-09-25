@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.144v.tif" pagination="28" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="fabricare &amp; architectari" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>fabricare architectari.</marginalia_text>
+                </position>
+            </language>
+            <translation>To shape, to construct.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="magnitudine modica" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Magnitudo locor[um]</marginalia_text>
+                </position>
+            </language>
+            <translation>The size of the places.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Interualla locoru[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Spacia inter locos.</marginalia_text>
+                </position>
+            </language>
+            <translation>The spaces between the places.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="duplices similitudines esse debe[n]t: vnae rerum, alterae verboru[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Similitudinu[m] distinctio</marginalia_text>
+                </position>
+            </language>
+            <translation>The distinction of likenesses.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="fabricare &amp; architectari" type="straight"/>
+        <underline language="LA" method="pen" text="nam siquas res in vita videmus paruas, vsitatas, quotidianas, eas meminisse no[n] solemus: propterea quòd" type="straight"/>
+        
+    </annotation>
+</transcription>

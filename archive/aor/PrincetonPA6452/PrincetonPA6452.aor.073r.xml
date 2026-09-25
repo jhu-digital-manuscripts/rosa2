@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.073r.tif" pagination="129" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>peremptorie, and fatal men.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="intemperie coeli raptim mutatione in contrarium facta" type="straight"/>
+        <underline language="LA" method="pen" text="grauis pestilensq[ue] omnibus animalibus aestas" type="straight"/>
+        <underline language="LA" method="pen" text="cuius insanabili pernicie" type="straight"/>
+        <underline language="LA" method="pen" text="libri Sibyllini ex" type="straight"/>
+        <underline language="LA" method="pen" text="dumuiri sacris faciundis" type="straight"/>
+        <underline language="LA" method="pen" text="lectisternio tunc primùm in urbe" type="straight"/>
+        <underline language="LA" method="pen" text="Apolline[m] Latonamq[ue] &amp; Dianam, Herculem, Mercurium" type="straight"/>
+        <underline language="LA" method="pen" text="Neptunu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="tota uis in populationibus" type="straight"/>
+        <underline language="LA" method="pen" text="summi imperatores" type="straight"/>
+        <underline language="LA" method="pen" text="Potitus" type="straight"/>
+        <underline language="LA" method="pen" text="Camillus à" type="straight"/>
+        <underline language="LA" method="pen" text="praedas ingentes" type="straight"/>
+        <underline language="LA" method="pen" text="nulla incolumi relicta" type="straight"/>
+        <underline language="LA" method="pen" text="cui ferro" type="straight"/>
+        <underline language="LA" method="pen" text="igni noceri" type="straight"/>
+        <underline language="LA" method="pen" text="commercio sermonu[m]" type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--du-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--nu[n]-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--ho-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--ser-->
+        
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="comma" place="intext"/> <!--Apolline[m]-->
+        <mark method="pen" name="dot" place="intext"/> <!--Dianam, Herculem-->
+        <mark method="pen" name="plus_sign" place="intext"/>
+        
+        
+    </annotation>
+</transcription>

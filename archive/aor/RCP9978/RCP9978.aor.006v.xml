@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.006v.tif" reader="John Dee" signature="[B ij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="virtutes; formales" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>virtutes formales.</marginalia_text>
+                </position>
+            </language>
+            <translation>Virtues, models.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Strutio camelus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Struthio camelus.</marginalia_text>
+                </position>
+            </language>
+            <translation>The common ostrich.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="aspectus &amp; figuras" type="straight"/>
+        <underline language="LA" method="pen" text="Nullum enim magicum opus ferunt" type="straight"/>
+        <underline language="LA" method="pen" text="esse res naturales" type="straight"/>
+        <underline language="LA" method="pen" text="dicantur Elementales" type="straight"/>
+        <underline language="LA" method="pen" text="eas Qualitates primas" type="straight"/>
+        <underline language="LA" method="pen" text="fugare Daemones, ut Adamas" type="straight"/>
+        <underline language="LA" method="pen" text="formales, ideo" type="straight"/>
+        <underline language="LA" method="pen" text="exigua materia plurimum possunt" type="straight"/>
+        <underline language="LA" method="pen" text="Strutio camelus" type="straight"/>
+        <underline language="LA" method="pen" text="Sic Echineis" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

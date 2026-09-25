@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.006r.tif" reader="Harvey" signature="[a6r]"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text> Sir Thomas Smithes Discourse,</marginalia_text>
+                    <person name="Thomas Smith"/>
+                    <book title="A Discourse of the Commonweal"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>De Numismatis.</marginalia_text>
+                    <!-- JE: I'm a bit confused by this. It looks like it should be the title of the discourse referred to,
+                    or another work, but I can't find anything appropriate! --> <!--JG: Can't find anything either. Leave open atm.-->
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Pygmaeos longitudine ternos" type="straight"/>
+        <underline language="LA" method="pen" text="pedes duos" type="straight"/>
+        <underline language="LA" method="pen" text="certiora haec omnia" type="straight"/>
+        <underline language="LA" method="pen" text="Romani pedis ueram mensura[m] adijciemus" type="straight"/>
+        <underline language="LA" method="pen" text="in papyro" type="straight"/>
+        <underline language="LA" method="pen" text="in solida materia fieri" type="straight"/>
+        <underline language="LA" method="pen" text="IVGERVM" type="straight"/>
+        <underline language="LA" method="pen" text="ORBIS TERRARVM SVMma" type="straight"/>
+        <underline language="LA" method="pen" text="partes treis distribuerunt" type="straight"/>
+        <underline language="LA" method="pen" text="Asiam" type="straight"/>
+        <underline language="LA" method="pen" text="Africam" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Europam" type="straight"/>
+        <underline language="LA" method="pen" text="Europa minima" type="straight"/>
+        <underline language="LA" method="pen" text="cultissima &amp; celebratissima" type="straight"/>
+        <underline language="LA" method="pen" text="parteis in prouincias" type="straight"/>
+        <underline language="LA" method="pen" text="prouincias in regiones" type="straight"/>
+        <underline language="LA" method="pen" text="regiones in loca" type="straight"/>
+        <underline language="LA" method="pen" text="loca in territoria" type="straight"/>
+        <underline language="LA" method="pen" text="haec in" type="straight"/>
+        <underline language="LA" method="pen" text="agros in" type="straight"/>
+        <underline language="LA" method="pen" text="centurias" type="straight"/>
+        <underline language="LA" method="pen" text="iugera in" type="straight"/>
+        <underline language="LA" method="pen" text="climata in" type="straight"/>
+        <underline language="LA" method="pen" text="actus in" type="straight"/>
+        <underline language="LA" method="pen" text="perticas" type="straight"/>
+        <underline language="LA" method="pen" text="decempedas in passus" type="straight"/>
+        <underline language="LA" method="pen" text="in gradus" type="straight"/>
+        <underline language="LA" method="pen" text="cubitos" type="straight"/>
+        <underline language="LA" method="pen" text="in pedes" type="straight"/>
+        <underline language="LA" method="pen" text="palmos" type="straight"/>
+        <underline language="LA" method="pen" text="uncias" type="straight"/>
+        <underline language="LA" method="pen" text="digitos" type="straight"/>
+        <underline language="LA" method="pen" text="locis" type="straight"/>
+        <underline language="LA" method="pen" text="sunt viae" type="straight"/>
+        <underline language="LA" method="pen" text="NVMORVM" type="straight"/>
+        <underline language="LA" method="pen" text="PECVNIARVM veterum aestimatione" type="straight"/>
+        <underline language="LA" method="pen" text="nostri temporis precia" type="straight"/>
+        <underline language="LA" method="pen" text="rationem huius" type="straight"/>
+        <underline language="LA" method="pen" text="As, siue libella, sunt" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Romani pedis ueram mensura[m] adijciemus"/>
+        <mark method="pen" name="equal_sign" place="intext"/> <!-- diuisione -->
+        <mark method="pen" name="dot" place="intext"/> <!--  Asia, minor -->
+        <mark method="pen" name="dot" place="intext"/> <!-- prouincias, prouincias -->
+        <mark method="pen" name="dot" place="intext"/> <!-- regiones, regiones -->
+        <mark method="pen" name="dot" place="intext"/> <!-- loca, loca -->
+        <mark method="pen" name="dot" place="intext"/> <!-- territoria, haec -->
+        <mark method="pen" name="dot" place="intext"/> <!-- agros, agros -->
+        <mark method="pen" name="dot" place="intext"/> <!-- centurias, centurias -->
+        <mark method="pen" name="dot" place="intext"/> <!-- iugera, iugera -->
+        <mark method="pen" name="dot" place="intext"/> <!-- climata, climata -->
+        <mark method="pen" name="horizontal_bar" place="intext"/> <!--appelarunt.-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="NVMORVM"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- Romanis, deinde-->
+        <mark method="pen" name="hash" place="intext"/> <!-- de -->
+        <mark method="pen" name="hash" place="intext"/> <!--veterum -->
+        
+        
+    </annotation>
+</transcription>

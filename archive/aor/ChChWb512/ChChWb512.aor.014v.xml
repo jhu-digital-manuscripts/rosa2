@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.014v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Gerionem augurem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Gerion Augur.
+                    </marginalia_text>
+                    <person name="Gerion"/>
+                </position>
+            </language>
+            <translation>Gerion, the augur.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" internal_ref="WB5-12_0036_006v_u0001">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        quasi nunc no[n] ibi esset Gygantes et tam[en] post Gygantvm pagana introductur
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>As of now there are no giants and yet after the giant civilians were introduced.</translation>
+            <!-- NBW: check translation (sense of quasi)/transcription - pagana doesn't seem to follow from minims --> <!--JG: I don't read pagana either, not sure what it says though-->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quandam ciuitatem desertam in qua" type="straight"/>
+        <underline language="LA" method="pen" text="imago deae" type="straight"/>
+        <underline language="LA" method="pen" text="Gerionem augurem" type="straight"/>
+        <underline language="LA" method="pen" text="duodecim maiores" type="straight"/>
+        <underline language="LA" method="pen" text="diis Ioui" type="straight"/>
+        <underline language="LA" method="pen" text="Mercurio" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Dian[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="ceruae candidae" type="straight"/>
+        <underline language="LA" method="pen" text="supra pellem ceruae" type="straight"/>
+        <underline language="LA" method="pen" text="habitata gygantibus" type="straight"/>
+        <underline id="WB5-12_0036_006v_u0001" language="LA" method="pen" text="Nunc deserta" type="straight"/>
+        
+        <mark method="pen" name="equal_sign" place="right_margin"/>
+        <!-- NBW: functioning as a hyphen for the word dulcio=re-->
+    </annotation>
+</transcription>

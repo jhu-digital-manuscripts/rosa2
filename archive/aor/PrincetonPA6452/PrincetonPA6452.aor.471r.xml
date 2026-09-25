@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.471r.tif" reader="Harvey" signature="[G5r]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Tanta in illis erat exercitatio, tanta fiducia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text> 
+                        Romani non tam numero pugnabant, quàm pondere.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The Romans fought not so much by means of quantity as by means of substance.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text> 
+                        Acies typica {	
+                        Romanorum.
+                        Antiochi.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                An exemplary battle line {	
+                of the Romans.
+                of Antiochus.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Id tamen certum est, nusquam" type="straight"/>
+        <underline language="LA" method="pen" text="paruum numerum milliaribus legionum adiectum" type="straight"/>
+        <underline language="LA" method="pen" text="oculis subijciuntur picturae" type="straight"/>
+        <underline language="LA" method="pen" text="pugnae typum saltem" type="straight"/>
+        <underline language="LA" method="pen" text="depingerem" type="straight"/>
+        <underline language="LA" method="pen" text="Romanorum quidem acie non tantum negocij est, atq[ue] in altera" type="straight"/>
+        <underline language="LA" method="pen" text="ea simplex, &amp; unius" type="straight"/>
+        <underline language="LA" method="pen" text="formae" type="straight"/>
+        <underline language="LA" method="pen" text="Romani tertiam iam orbis" type="straight"/>
+        <underline language="LA" method="pen" text="in alterum uelut mundum concederent" type="straight"/>
+        <underline language="LA" method="pen" text="tamen habuisse eos ultra quatuor legiones: ut" type="straight"/>
+        <underline language="LA" method="pen" text="singulos COSS" type="straight"/>
+        <underline language="LA" method="pen" text="amplius quaàm binas duxisse legiones" type="straight"/>
+        <underline language="LA" method="pen" text="in illis erat exercitatio, tanta fiducia" type="straight"/>
+        <underline language="LA" method="pen" text="bello duae legiones crederentur posse sufficere" type="straight"/>
+        <underline language="LA" method="pen" text="Sociorum auxilia uel aequabant" type="straight"/>
+        <underline language="LA" method="pen" text="plura" type="straight"/>
+        
+        <symbol language="LA" name="SS" place="right_margin" text="Romani tertiam iam orbis"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!-- Ger -->
+        <mark language="LA" method="pen" name="quotation_mark" place="right_margin" text="oculis subijciuntur picturae"/>
+        
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--Caesar. Quoniam-->
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- bellaturi, -->
+        <mark method="pen" name="dot" place="intext"/> <!-- Sociorum -->
+        
+    </annotation>
+</transcription>

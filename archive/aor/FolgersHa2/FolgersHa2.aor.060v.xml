@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.060v.tif" pagination="440" reader="Harvey"/>	<!-- ABO 65left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.060v_0001" marginalia_continues_to="Ha2.061r_0001" marginalia_to_transcription="Ha2.061r.xml">
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						The onlie Entelechist in the World: &amp; [p. 441: The first Euschemonist per Totum.]
+							<!-- Continues onto facing page, head, Ha2.061r -->
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>[p. 440: The first Euschemonist all together.]</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						ridicolo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Ridiculous.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( All dispatched
+						with careles care, &amp; painles paine. )
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						} Republicetta.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Little Republic.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Simplex dia[e]ta vincit Composit[am].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A simple diet beats a complex one.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Euscopi domus, nidus Pho[e]nicis.
+						plenus aromatis Orientis.
+					</marginalia_text>
+					<person name="Euscopus"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The house of Euscopus is the Phoenix's nest,
+				full of oriental perfumes.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Hoc age, sed tanq[uam] aliud agens: et singula ironicè. Alterum solida[e] Prudentia[e] est:
+						alterum subtilis dexteritatis. Nihil familiarius: sed nihil profundius. Aliorum
+						grauissima, tuis ludicris Leuiora.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+					<emphasis method="chalk" type="straight"/>
+					<emphasis method="chalk" type="straight"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Do this thing, but as if you were doing somethin else: and do singular matters ironically. The first belongs to a solid Prudence:
+				the latter to a subtle skillfullness. Nothing more familiarly, but nothing more profoundly. Things heavier for other people
+				are lighter sources of fun for you.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						None such to discouer discouerers: to coosen cooseners: to connicatch catchers: prise risers.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+				
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="procurasse licentia dal Gouernatore" type="straight"/>
+		<underline language="IT" method="pen" text="un branco di castroni" type="straight"/>
+		<underline language="IT" method="pen" text="in forma consueta" type="straight"/>
+		<underline language="IT" method="pen" text="presentò all'ordinario" type="straight"/>
+		<underline language="IT" method="pen" text="esso senza" type="straight"/>
+		<underline language="IT" method="pen" text="guardarla punto, l'inserì" type="straight"/>
+		<underline language="IT" method="pen" text="fra l'altre dell'armi" type="straight"/>
+		<underline language="IT" method="pen" text="non punto piu diligente in ueder" type="straight"/>
+		<underline language="IT" method="pen" text="SENZA IL PVGNALE" type="straight"/>
+		<underline language="IT" method="pen" text="auertita, fu mandata all'amico" type="straight"/>
+		<underline language="IT" method="pen" text="prorotto in molte risa, scrisse" type="straight"/>
+		<underline language="IT" method="pen" text="una lettera queste" type="straight"/>
+		<underline language="IT" method="pen" text="molti ringratiamenti di tanta accortezza" type="straight"/>
+		<underline language="IT" method="pen" text="se daua licentia" type="straight"/>
+		<underline language="IT" method="pen" text="miei castroni di portare il pugnale" type="straight"/>
+		<underline language="IT" method="pen" text="stato andaua in ruina per man di castroni" type="straight"/>
+		<underline language="IT" method="pen" text="San Marino" type="straight"/>
+		<underline language="IT" method="pen" text="profession di libertà &amp; di uiuere a Republica" type="straight"/>
+		<underline language="IT" method="pen" text="io non ardisco" type="straight"/>
+		<underline language="IT" method="pen" text="riputation di Republica" type="straight"/>
+		<underline language="IT" method="pen" text="all'Illustrissima Republica di Vinetia, solo splendor d'Italia" type="straight"/>
+		<underline language="IT" method="pen" text="come sorella carissima" type="straight"/>
+		<underline language="IT" method="pen" text="Republica di San Marino" type="straight"/>
+		<underline language="IT" method="pen" text="Raffael da Vrbino" type="straight"/>
+		<underline language="IT" method="pen" text="pittore eccellentissimo" type="straight"/>
+		<underline language="IT" method="pen" text="singolare" type="straight"/>
+		
+		<!-- Symbols -->
+		<symbol name="SS" place="head"/>
+		<symbol name="Sun" place="head"/>
+		<symbol name="JC" place="intext"/>
+		<symbol language="IT" name="SS" place="left_margin" text="all'Illustrissima Republica di Vinetia, solo splendor d'Italia"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark language="IT" method="pen" name="plus_sign" place="right_margin" text="un branco di castroni"/> 
+		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- portare il pu -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ardi -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- riputa -->
+		
+	    	<!-- Head/Intext/Tail -->
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="un branco di castroni"/>
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- punto, l'in -->
+		<mark method="pen" name="equal_sign" place="intext"/> <!-- dell'armi -->
+	    <mark method="pen" name="dot" place="intext"/> <!-- ministro, la -->
+		<mark method="pen" name="vertical_bar" place="intext"/> <!-- LE. Torno' -->
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="libertà"/>
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- Republica -->
+		<mark method="pen" name="vertical_bar" place="intext"/> <!-- uera; & -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Republica"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- talia, & -->
+		<mark method="pen" name="comma" place="intext"/> <!-- golare, dipigneua -->
+
+    </annotation>
+</transcription>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.097r.tif" pagination="90" reader="John Dee" signature="Z ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="quadrato Solis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>D[omi]n[u]s asce[n]de[n]tis</marginalia_text>
+                </position>
+            </language>
+            <translation>Lord of the ascendant.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="oriretur filia, &amp; ita orta est, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="quadrato Solis" type="straight"/>
+        <underline language="LA" method="pen" text="morbus in uirtute uitali, &amp; quia est in capite, significat febrem uentuosam, &amp; quia est in Cancro significat damnum pectori &amp; pulmoni maxime, quia Sol" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; si fuisset in alia domo non opposita" type="straight"/>
+        <underline language="LA" method="pen" text="ipsi respiciebant Solem de quadrato" type="straight"/>
+        
+    </annotation>
+</transcription>

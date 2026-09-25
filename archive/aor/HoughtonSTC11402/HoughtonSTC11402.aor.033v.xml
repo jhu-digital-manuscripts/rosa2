@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.033v.tif" reader="Harvey" signature="[Dii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Superstition.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="erthe quake" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>An Earthgwake.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="confounded with a sodeyne erthe quake" type="straight"/>
+        <underline language="EN" method="pen" text="inuade theyr ennemyes" type="straight"/>
+        <underline language="EN" method="pen" text="superstitiousely amased" type="straight"/>
+        <underline language="EN" method="pen" text="Sertorius" type="straight"/>
+        <underline language="EN" method="pen" text="outesyde of his horsemens" type="straight"/>
+        <underline language="EN" method="pen" text="tergates" type="straight"/>
+        <underline language="EN" method="pen" text="horses breastes" type="straight"/>
+        <underline language="EN" method="pen" text="wonderfulle prodigie" type="straight"/>
+        <underline language="EN" method="pen" text="blouddye" type="straight"/>
+        <underline language="EN" method="pen" text="token of victorie" type="straight"/>
+        <underline language="EN" method="pen" text="shieldes and horses" type="straight"/>
+        <underline language="EN" method="pen" text="banner clothe" type="straight"/>
+        <underline language="EN" method="pen" text="was blowen" type="straight"/>
+        <underline language="EN" method="pen" text="by a great wynde" type="straight"/>
+        <underline language="EN" method="pen" text="to a graue" type="straight"/>
+        <underline language="EN" method="pen" text="ben buried" type="straight"/>
+        <underline language="EN" method="pen" text="the deathe of the" type="straight"/>
+        <underline language="EN" method="pen" text="sepulchers be adorned with funerals" type="straight"/>
+        
+        <mark method="pen" name="horizontal_bar" place="head"/>
+        
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="confounded with a sodeyne erthe quake"/>
+        <mark method="pen" name="dot" place="intext"/> <!--quake, comforted-->
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--blouddye, he-->
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--sayd, be-->
+        
+    </annotation>
+</transcription>

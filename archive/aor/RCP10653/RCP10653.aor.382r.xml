@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.382r.tif" pagination="313" reader="John Dee" signature="Dddd"/>
+    <annotation>
+        
+        <marginalia anchor_text="in Angliam cum fortitudine magna militu[m], tàm alienorum, quos secum aduxit de Gallia" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ayds from fra[n]ce agaynst Wales.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Monasterij Becce[n]sis co[n]flagratio.  
+                    </marginalia_text>
+                    <location name="Bec Abbey"/>
+                </position>
+            </language>
+            <translation>
+                Conflagratio of the Bec Abbey.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Eadvvardus filius regis .H." type="straight"/>
+        <underline language="LA" method="pen" text="de Gallia validissimos" type="straight"/>
+        <underline language="LA" method="pen" text="mouit contra VVallenses" type="straight"/>
+        <underline language="LA" method="pen" text="sicut rebellione[m] eoru[m] per hoc adiuta[m] virtute[m] Eadvvardi &amp; suoru[m] impedita[m] fore, credentu[m] est. Sed" type="straight"/>
+        <underline language="LA" method="pen" text="cecidit in cineres" type="straight"/>
+        
+    </annotation>
+</transcription>

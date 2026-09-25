@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.225v.tif" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sub polis.</marginalia_text>  
+                </position>
+            </language>
+            <translation>Under the pole.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>equa[..]re</marginalia_text>  
+                </position>
+            </language>
+            <translation/>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Stantis erit coeli species, laterum'q[ue] meatus Turbinis in morem recta uertigine currit" type="straight"/>
+        
+    </annotation>
+</transcription>

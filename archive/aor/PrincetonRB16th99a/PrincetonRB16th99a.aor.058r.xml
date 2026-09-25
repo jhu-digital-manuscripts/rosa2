@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonRB16th99a.058r.tif" pagination="58[r]" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia anchor_text="hath penie in pouch" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Oeconomica Xenophotis, Aristotelis, aliorum.</marginalia_text>
+                    <person name="Xenophon"/>
+                    <person name="Aristotle"/>
+                    <book title="Oeconomicus"/>
+                    <book title="Economics"/>
+                </position>
+            </language>
+            <translation>'The Economy' of Xenophon, Aristotle, and of others.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="husbandrie lurketh" type="straight"/>
+        <underline language="EN" method="pen" text="husbandrie worketh" type="straight"/>
+        <underline language="EN" method="pen" text="spendeth vp all" type="straight"/>
+        <underline language="EN" method="pen" text="husbandrie" type="straight"/>
+        <underline language="EN" method="pen" text="shift with a small" type="straight"/>
+        <underline language="EN" method="pen" text="to make shift" type="straight"/>
+        <underline language="EN" method="pen" text="husbandry drowseth" type="straight"/>
+        <underline language="EN" method="pen" text="fortune so auke" type="straight"/>
+        <underline language="EN" method="pen" text="husbandrie rowseth" type="straight"/>
+        <underline language="EN" method="pen" text="as a hauke" type="straight"/>
+        <underline language="EN" method="pen" text="husbandrie lieth" type="straight"/>
+        <underline language="EN" method="pen" text="husbandrie spieth" type="straight"/>
+        <underline language="EN" method="pen" text="profit to" type="straight"/>
+        <underline language="EN" method="pen" text="husbandrie" type="straight"/>
+        <underline language="EN" method="pen" text="hath welth to keep touch" type="straight"/>
+        <underline language="EN" method="pen" text="hath penie in pouch" type="straight"/>
+        <underline language="EN" method="pen" text="a tode with" type="straight"/>
+        <underline language="EN" method="pen" text="countrie enclosed" type="straight"/>
+        <underline language="EN" method="pen" text="nothing the wealth it doth" type="straight"/>
+        <underline language="EN" method="pen" text="swineherd that" type="straight"/>
+        <underline language="EN" method="pen" text="neatherd with" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="a tode with"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="fortune so auke"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="as a hauke"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="hath penie in pouch"/>
+        
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="country enclosed"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="swineherd"/>
+        
+    </annotation>
+</transcription>

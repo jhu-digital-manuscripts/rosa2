@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.036v.tif" pagination="56" reader="John Dee" signature="[e 4[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="biothanatos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Biothanati.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Those who died of violence. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="temporum dominus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ♂ temporu[m] dominus.
+                    </marginalia_text>
+                    <symbol_in_text name="Mars"/>
+                </position>
+            </language>
+            <translation>
+                Mars, the lord over time. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="qualitate signorum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Qualitas Signorum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The quality of signs.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="biothanatos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Biothanati
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Those who died of violence. 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="biothanatum, nunq[uam] enim ♂ domum suam euertit, sed tunc" type="straight"/>    
+        <underline language="LA" method="pen" text="occasu per diem" type="straight"/>    
+        <underline language="LA" method="pen" text="misera facit proscriptione" type="straight"/>    
+        <underline language="LA" method="pen" text="extinctis oculis" type="straight"/>    
+        <underline language="LA" method="pen" text="biothanatos" type="straight"/>    
+        <underline language="LA" method="pen" text="crudeli necis atrocitate depereant" type="straight"/>    
+        <underline language="LA" method="pen" text="sicut apopletici" type="straight"/>    
+        <underline language="LA" method="pen" text="Mars non euertit domu[m] suam" type="straight"/>
+        
+    </annotation>
+</transcription>

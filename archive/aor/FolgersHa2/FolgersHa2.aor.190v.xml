@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.190v.tif" pagination="204" reader="Harvey" signature="[N6v]"/>	<!-- ABO 195left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Semper pueri, qui imparati, cum res vocat.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>It are always boys who are unprepared when the matter calls.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Facile est, ipsis artibus excellere:
+						discursib[us] infinitum:
+						illud vtile: hoc futile.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>It is easy to excel in the arts themselves: unending in discourses: the former is useful, the latter is futile.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Sat habet, qui se habet.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>He who has himself, has enough.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Nihil volenti difficile: pra[e]sertim illuminato ordine, et viuidâ industriâ procedenti
+						indomitè. Quomodò excedens virtus domat omnia: et Labor omnia vincit; non quiuis,
+						sed improbus, id est, importunus, et cedere nescius. Quò impeditior, eò expeditior.						
+					</marginalia_text>
+					<X-ref book_title="Georgics" language="LA" person="Virgil" text="Labor omnia vincit"/>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						Omnes in Ca[e]sare manes.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Nothing is difficult for the man who wishes: especially one with an illuminated method and a vigorous industriousness in proceeding unconquerably.
+				Just as excellent virtue dominates everything: and labor conquers everything;
+				not just anyone, but an indomitable man, that is, an ungovernable man, who also does not know how to yield.
+				The more inaccessible, the more unencumbered.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Romanus, semper paratus ad instans Negocium, cum Virtute in manu.
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						Quorsu[m]
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="tail">
+					<marginalia_text>
+						Ars,
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						nisi
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="tail">
+					<marginalia_text>
+						plus possit?
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A Roman, always ready for immediate activity, with virtue in hand. Why art, unless it can do more?</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="il fior della giouentù" type="straight"/>
+		<underline language="IT" method="pen" text="stupefatto di tanta iniquità di quel pedante" type="straight"/>
+		<underline language="IT" method="pen" text="il tradimento" type="straight"/>
+		<underline language="IT" method="pen" text="vn tratto egregio:" type="straight"/>
+		<underline language="IT" method="pen" text="diede in preda" type="straight"/>
+		<underline language="IT" method="pen" text="nobilissimi fanciulli, commettendo" type="straight"/>
+		<underline language="IT" method="pen" text="frustandolo per il camino con verghe" type="straight"/>
+		<underline language="IT" method="pen" text="giustitia di Camillo, diedero" type="straight"/>
+		<underline language="LA" method="pen" text="Iustitiam omniu[m]" type="straight"/>
+		<underline language="LA" method="pen" text="virtutu[m] Reginam" type="straight"/>
+		<underline language="IT" method="pen" text="Luce, per rimettere" type="straight"/>
+		<underline language="IT" method="pen" text="diritto camino" type="straight"/>
+		<underline language="IT" method="pen" text="sua cecità" type="straight"/>
+		<underline language="IT" method="pen" text="sieno le salme" type="straight"/>
+		<underline language="IT" method="pen" text="attioni del ben dire &amp; del ben' operare" type="straight"/>
+		<underline language="IT" method="pen" text="maluaggie cogitationi" type="straight"/>
+		<underline language="IT" method="pen" text="pessime operationi" type="straight"/>
+		
+		<symbol language="LA" name="SS" place="tail" text="Romanus, semper paratus ad instans Negocium, cum Virtute in manu. Quorsu[m] Ars nisi plus possit? "/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--sfaccia-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--tradi-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--pre-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--at-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--virtuo-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--sie-->
+		
+		<errata amendedtext="inconsideratamente" copytext=".nconsideratamente" language="IT"/>
+
+    </annotation>
+</transcription>

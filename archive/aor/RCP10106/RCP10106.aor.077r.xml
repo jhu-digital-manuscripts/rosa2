@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.077r.tif" pagination="153" reader="John Dee" signature="k 5"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Catilina" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Catilina.</marginalia_text>
+                    <person name="Lucius Sergius Catilina"/>
+                </position>
+            </language>
+            <translation>Catilina.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Atreus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Atreus.</marginalia_text>
+                    <person name="Atreus"/>
+                </position>
+            </language>
+            <translation>Atreus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="C. Caesari" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>C[aius] Ca[e]sar</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <translation>Julius Caesar.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="persona suadentis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Persona suade[n]tis</marginalia_text>
+                </position>
+            </language>
+            <translation>The advisor.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="libertas est, in alijs lice[n]tia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>libertas. lice[n]tia</marginalia_text>
+                </position>
+            </language>
+            <translation>Liberty and licence.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="est quisquam tam malus, ut uideri uelit." type="straight"/>
+        
+    </annotation>
+</transcription>

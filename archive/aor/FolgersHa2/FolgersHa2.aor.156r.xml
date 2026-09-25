@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.156r.tif" pagination="135" reader="Harvey" signature="I4[r]"/>	<!-- ABO 160right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Apollonius maluit secreta discere, quàm docere cognita:
+						et voluit potiùs operare miracula, quàm scribere 
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						volumina.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Apollonius preferred to learn secrets rather than to teach known things. And he wanted to work miracles, rather than to write books.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Hodiè uix creditur veris
+						Miraculis: nedum Simulatis. Iam valent sola,
+						qua[e] Sunt pro certo efficacissima, et potentiss[im]a.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Today I hardly have trust in true miracles, still less in feigned ones. Now only those [miracles] which for certain are most efficient and powerful prevail.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						il [quarto] di Guazzo.	
+					</marginalia_text>
+					<person name="Stefano Guazzo"/>
+				</position>
+			</language>
+			<translation>Book 4 of Guazzo.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Peritissimi est artificis, et subtilissimi in hodierno
+						Mundo pragmatici, seipsu[m]
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						seriò examinare, quid possit potentius, quàm alij:
+						aut saltem quid sciat profundius.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>It belongs to the most skilled actor and the most subtle pragmatist in today's world to examine themselves seriously, what can be done more powerful than others:
+			or at least what can be known more profoundly.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Da mihi selectissima omnium librorum, et in hodierno
+						Mundo potentissima. Ca[e]tera curent Ociosa.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Give me the most select things out of all the books and the most powerful in today's world. Let the rest be regarded as idle things.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Omnia nihil, pra[e]ter propria Microcosmi negocia. Sufficit
+						cuiq[ue] diei suum Mnemosynon. Et mea Necessaria, meus Panis Quotidianus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>All things are nothing before the proper affairs of the microcosm. The reminder of this is enough for every day. And my necessities, my daily bread.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="sopra i tetti" type="straight"/>
+		<underline language="IT" method="pen" text="ricco" type="straight"/>
+		<underline language="IT" method="pen" text="le preeminenze" type="straight"/>
+		<underline language="IT" method="pen" text="il pauone" type="straight"/>
+		<underline language="IT" method="pen" text="pauone è" type="straight"/>
+		<underline language="IT" method="pen" text="belle piume" type="straight"/>
+		<underline language="IT" method="pen" text="il ricco è pieno" type="straight"/>
+		<underline language="IT" method="pen" text="l'animo brutto" type="straight"/>
+		<underline language="IT" method="pen" text="ogni vanità" type="straight"/>
+		<underline language="IT" method="pen" text="La parola dell'huomo" type="straight"/>
+		<underline language="IT" method="pen" text="la parola è l'imagine" type="straight"/>
+		<underline language="IT" method="pen" text="de" type="straight"/>
+		<underline language="IT" method="pen" text="nello speccio" type="straight"/>
+		<underline language="IT" method="pen" text="nell'oratione" type="straight"/>
+		<underline language="IT" method="pen" text="forma dell'animo" type="straight"/>
+		<underline language="IT" method="pen" text="parola" type="straight"/>
+		<underline language="IT" method="pen" text="vuoi, ch'io ti conosca" type="straight"/>
+		<underline language="IT" method="pen" text="La ragione cedere" type="straight"/>
+		<underline language="IT" method="pen" text="forza" type="straight"/>
+		<underline language="IT" method="pen" text="L'AQVILA preponendosi" type="straight"/>
+		<underline language="IT" method="pen" text="Pauone, parendogli" type="straight"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- cor -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- allu -->
+		
+		<mark method="pen" name="dot" place="intext"/> <!-- pauone, conciosia -->
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="ogni vanità"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- huomo, & -->
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- animo, Et -->
+	
+    </annotation>
+</transcription>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.108r.tif" pagination="201" reader="John Dee"/> 
+    <annotation>
+         
+        <marginalia anchor_text="scilicet quùm Sol Capricornum ingreditur, anni Iuliani principium est" hand="Italian">
+            <language ident="LA">
+               <position book_orientation="0" place="right_margin">
+                   <marginalia_text>Iuliani anni Initiu[m] a solis Introitu in ♑</marginalia_text> 
+               </position>
+            </language>
+            <translation>The start of the Julian year from the sun's entrance into Capricorn.</translation>   
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Solstitiorum et Æquinoctioru[m] ratio.</marginalia_text>
+                </position>
+            </language>
+            <translation>The reasoning behind solstices and equinoxes.</translation>  
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Bruma noui prima est, veterîsque nouissima solis, Principium capiunt, Phoebus &amp; annus idem" type="straight"/> 
+        <underline language="LA" method="pen" text="quùm Sol Capricornum ingreditur" type="straight"/>
+        <underline language="LA" method="pen" text="Decembris" type="straight"/>
+        <underline language="LA" method="pen" text="repetere à Columella &amp; Plinio" type="straight"/>
+        <underline language="LA" method="pen" text="octaua parte" type="straight"/>
+        <underline language="LA" method="pen" text="octauam partem" type="straight"/>
+        <underline language="LA" method="pen" text="octauum Calendas Iannuarias" type="straight"/>
+        <underline language="LA" method="pen" text="fiunt in octauis partibus" type="straight"/>
+        <underline language="LA" method="pen" text="ab 8. Calend. Iannuarij" type="straight"/>
+        <underline language="LA" method="pen" text="Nec me fallit Hipparchi ratio, qui" type="straight"/>
+        <underline language="LA" method="pen" text="non octauis, sed primis signorum partibus" type="straight"/>
+        <underline language="LA" method="pen" text="confici" type="double"/>
+        <underline language="LA" method="pen" text="in octauis signorum partibus, temporum" type="straight"/>
+        <underline language="LA" method="pen" text="explicatur à Stoflerino" type="straight"/>
+        <underline language="LA" method="pen" text="Brumam appellant" type="straight"/>
+        <underline language="LA" method="pen" text="ad vndecimum Decembris" type="straight"/>
+        <underline language="LA" method="pen" text="aut primo Ianuarij" type="double"/>
+        
+        <errata amendedtext="fastos" copytext="fastus" language="LA"/>
+        
+    </annotation>
+</transcription>

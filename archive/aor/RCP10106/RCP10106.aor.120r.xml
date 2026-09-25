@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.120r.tif" pagination="239" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="inductio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Inductio</marginalia_text>
+                </position>
+            </language>
+            <translation>Induction.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in testium interrogatione ualet plurimum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sup[ra]</marginalia_text>
+                </position>
+            </language>
+            <translation>See above.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Similitudo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Similtudo</marginalia_text>
+                </position>
+            </language>
+            <translation>Simile.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="exemplum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Exemplu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>Example.</translation>
+        </marginalia>
+
+        <marginalia anchor_text="Simile" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Simile</marginalia_text>
+                </position>
+            </language>
+            <translation>Similar.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Dißimile" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dißimile</marginalia_text>
+                </position>
+            </language>
+            <translation>Disimilar.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Contrarium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Contrariu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Contrary.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Dionysium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dionysius.</marginalia_text>
+                    <person name="Dionysius I of Syracuse"/>
+                </position>
+            </language>
+            <translation>Dionysius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pisistratu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pisistratus.</marginalia_text>
+                    <person name="Pisistratus"/>
+                </position>
+            </language>
+            <translation>Peisistratos.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="exempla interim tota similia, ut hocproximum, sic interum ex maioribus ad minora, ex minoribus ad maiora" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Exemplu[m] a maiore et minore.</marginalia_text>
+                </position>
+            </language>
+            <translation>An example from greater to lesser.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in testium interrogatione ualet plurimum" type="straight"/>
+        <underline language="LA" method="pen" text="Et probandorum, &amp; culpandorum ex his" type="straight"/>
+        <underline language="LA" method="pen" text="hoc proximum, sic interum ex maioribus ad minora, ex minoribus ad maiora ducuntur: Si" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

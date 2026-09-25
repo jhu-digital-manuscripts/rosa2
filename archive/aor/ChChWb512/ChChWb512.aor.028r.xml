@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.028r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Gabius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Fabius.
+                    </marginalia_text>
+                    <person name="Fabius"/> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="co[n]sules Rom[a]e, Gabius &amp; Porsena" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Co[n]sules. Ro[mae] Gabius - Porsenna - Fabius consul erat, vt Orosi[us] habet: qui Gallos Roma[m] versus ruentes, exercitu excepit. [etc.] 
+                    </marginalia_text>
+                    <person name="Gabius"/> 
+                    <person name="Porsenna"/> 
+                    <person name="Fabius"/>
+                    <location name="Rome"/>
+                    <emphasis method="pen" text="Gabius" type="dotted"/>
+                    <emphasis method="pen" text="Fabius" type="dotted"/>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        φαθιος
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Consuls of Rome, Gabius, Porsenna. Fabius was the counsel, as Orosius has it, who led an army (lit, went out with an army) against the Gauls sacking Rome. Fabius.</translation>
+        </marginalia> 
+            <!-- NBW: interesting to note - Dee's transliteration of "Fabius" into Greek suggests that "Gabius" came from a scribe mistaking the theta for a G.-->
+        
+        <underline language="LA" method="pen" text="Gabius" type="double"/>
+        <underline language="LA" method="pen" text="Porsena" type="straight"/>
+        
+    </annotation>
+</transcription>

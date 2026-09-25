@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.169r.tif" pagination="337" reader="John Dee" signature="y"/> 
+    <annotation>
+        
+        <marginalia anchor_text="poenite[n]tia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Po[e]nitentia</marginalia_text>
+                </position>
+            </language>
+            <translation>Repentance.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Extrà" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Extrà.</marginalia_text>
+                </position>
+            </language>
+            <translation>External.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="centumuiri" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Centumviri</marginalia_text>
+                </position>
+            </language>
+            <translation>Centumviral court.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="praemijs" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pra[e]mia</marginalia_text>
+                </position>
+            </language>
+            <translation>Rewards.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="rem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Res.</marginalia_text>
+                </position>
+            </language>
+            <translation>Thing.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="personam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Persona</marginalia_text>
+                </position>
+            </language>
+            <translation>Person.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="locum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Locus</marginalia_text>
+                </position>
+            </language>
+            <translation>Place.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quomodo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quomodo</marginalia_text>
+                </position>
+            </language>
+            <translation>How?</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tempore" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tempus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Time.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Habetur in meritis gratia, periculum quoqu[ue] ac difficultas. Similiter" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <drawing anchor_text="Pra[e]mia" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

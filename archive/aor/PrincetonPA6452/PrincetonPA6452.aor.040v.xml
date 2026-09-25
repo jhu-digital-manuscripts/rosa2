@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.040v.tif" pagination="64" reader="Harvey"/>
+    <annotation>
+       <marginalia hand="Italian">
+           <language ident="LA">
+               <position book_orientation="0" place="tail">
+                   <marginalia_text>Vndè multi statim pra[e]clari ciues: vrbs citò florens: at Resp[ublica] nimis turbulenta; satis vexata; interdum miserè afflicta. 
+                       Quòd si politico illo fundamento nixi, curias, leges, magistratus, mores, ca[e]tera gubernandi vincula, Reip[ublicae] qualitati, statusq[ue] arcanis 
+                       conformassent; haud dubiè multò certiùs, stabiliusq[ue] rem Romanam tenuissent. Pro qua animaduersione, liberales mihi gratias egit 
+                       Philippus Sidneius, insignis Aulicus: ingenueq[ue] fatebatur, se nihil tanti momenti vel in historijs, vel in Politicis legisse. 
+                       Videre se passim Romanos, in populari Rep: nimis Senatorios; in Senatoria nimis populares; in regia non satis regios; ciues potiùs, quàm subditos.
+                       Si Reipublica[e] statui fuissent conformes; minimè se dubitare, quin firmissimam in gentem, populumq[ue] mundi tam foelicissimum euasissent, 
+                       quàm potentissimum. Qua[e] nostra summa erat horum trium librorum observatio. Nec ego deinceps in reliquis mutaui sententiam.
+                   </marginalia_text> <!-- Continued from page 00000085, tail, '...Unde' -->
+                   <person name="Philip Sidney"/>
+               </position>
+           </language>
+           <translation>Which from the start made for many excellent citizens, a rapidly blossoming city, but a Republic that was unduly troublesome, 
+               rather disturbed and occasionally dreadfully disordered. Yet if they had relied on that political basis and adapted their curias, laws, offices, 
+               customs and other bonds of government to the nature of the Republic and the secret principles of the state, they would undoubtedly 
+               have held the Roman state much more securely and strongly. And for this consideration Philip Sidney, the prominent courtier, thanked me generously, 
+               and he openly acknowledged that he had never read anything of such importance either in historical or political works. 
+               That he had observed far and wide Romans who were too much senatorial in a popularist Republic and ones who were too much popularist in a 
+               Senatorial Republic, ones who were not royalist enough in a monarchy, citizens rather than subjects. And that he had no doubts whatsoever that if 
+               they had adapted themselves to the constitution of the State, that they would have come out as the strongest nation, the most successful and 
+               powerful people in the world. And this was our most important observation about these three books. And for the rest I have not changed 
+               my opinion since.</translation>
+       </marginalia>
+        
+        <underline language="LA" method="pen" text="bouem locuta[m]" type="straight"/>
+        <underline language="LA" method="pen" text="anno fides non fuerat" type="straight"/>
+        <underline language="LA" method="pen" text="carne pluit" type="straight"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!-- futu -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- cru -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- pa -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- prae -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- impe -->
+        
+    </annotation>
+</transcription>

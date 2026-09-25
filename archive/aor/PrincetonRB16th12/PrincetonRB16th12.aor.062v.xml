@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonRB16th12.062v.tif" reader="Harvey" signature="[Q.iij.v]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        A rauillous, &amp; sophistical defense.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="cauillously defendit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Nota.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Note.
+            </translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="deliuerit according" type="straight"/>
+        <underline language="EN" method="pen" text="protestis" type="straight"/>
+        <underline language="EN" method="pen" text="Quhilk instrument and protestatioun" type="straight"/>
+        <underline language="EN" method="pen" text="after the reentry of the sayd" type="straight"/>
+        <underline language="EN" method="pen" text="the pronunciatioun of thayr deliueraunce" type="straight"/>
+        <underline language="EN" method="pen" text="actis and instrumentis" type="curved"/>
+        <underline language="EN" method="pen" text="protesteth" type="curved"/>
+        <underline language="LA" method="pen" text="Extractum" type="straight"/>
+        <underline language="LA" method="pen" text="libro Actorum Adiornalis" type="straight"/>
+        <underline language="LA" method="pen" text="clericum" type="straight"/>
+        <underline language="LA" method="pen" text="eiusdem generalem" type="straight"/>
+        <underline language="EN" method="pen" text="tyme protestatioun" type="straight"/>
+        <underline language="EN" method="pen" text="Chanceller of the sayd Assise" type="straight"/>
+        <underline language="EN" method="pen" text="said dittay or enditement" type="straight"/>
+        <underline language="EN" method="pen" text="in this point" type="straight"/>
+        <underline language="EN" method="pen" text="vz." type="straight"/>
+        <underline language="EN" method="pen" text="their." type="straight"/>
+        <underline language="EN" method="pen" text="ther." type="straight"/>
+        <underline language="EN" method="pen" text="acquitall that" type="straight"/>
+        <underline language="EN" method="pen" text="cauillously defendit" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="actis and instrumentis"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="protestis"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Quhilk instrument and protestatioun"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="after the reentry of the sayd"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Extractum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="libro Actorum Adiornalis"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="tyme protestatioun"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- Assise -->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="enditement"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="in this point"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="their."/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="ther."/>
+        <mark method="pen" name="colon" place="intext"/> <!--Februarie for-->
+        <mark method="pen" name="semicolon" place="intext"/> <!--midnight, whiche-->
+        <mark method="pen" name="dot" place="intext"/> <!-- day -->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="acquitall that"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="cauillously defendit"/>
+
+    </annotation>
+</transcription>

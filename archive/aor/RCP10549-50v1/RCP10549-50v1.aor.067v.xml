@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.067v.tif" pagination="114" reader="John Dee" signature="[hh.i.[v]]"/>
+    <annotation> 
+        
+        <marginalia anchor_text="Taurominitana &amp; Mamertina [...] Ce[n]turipina, Halesina, Segestana, Halicyensis, Panormitana" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Sicili[a]e Ciuitates [ Taurominitana Mamertina Ce[n]turipina Halesina Segestana Halicyensis Panormitana
+                    </marginalia_text>
+                    <location name="Taormina"/>
+                    <location name="Galati Mamertino"/>
+                    <location name="Centuripe"/>
+                    <location name="Halaesa"/>
+                    <location name="Segesta"/>
+                    <location name="Halyciae"/>
+                    <location name="Palermo"/>
+                </position>
+            </language>
+            <translation>
+                Cities of Sicily: Taormina, Galati Mamertino, Centuripe, Halaesa, Segesta, Halyciae, Palermo.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="no[n] modo, sed ne" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        no[n] modo, sed ne
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Nont only, but even.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="muneris illius functio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        muneris functio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Discharge of duty.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="conuellere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        co[n]vellere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To batter.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cuia res" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        cuia res
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Whose matter?
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="diem praefiniri" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        die[m] p[rae]finiri
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To determine a date.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        rede[m]ptor
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Contractor.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="certam diem obseruares" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        die[m] certa[m] observare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To keep a fixed date.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="custodiis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Custodia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Protection.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Scripta lex ita diligenter est, vt eum scripisse appareat qui alia vectigalia non haberet: ita acute, vt Siculu[m]: ita seuere, vt tyrannu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Scripta lex diligenter acute seuere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A law written diligently, acurately, strictly.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="eorum animos no[n] modo lege noua, sed ne nomine quidem legis nouo commoueri" type="straight"/>
+        <underline language="LA" method="pen" text="conditionem amicitiae, ius" type="straight"/>
+        <underline language="LA" method="pen" text="reprehendo &amp; accuso, cur in re tam veteri, tam vsitata quicquam noui feceris. Ingenio" type="straight"/>
+        <underline language="LA" method="pen" text="tot homines sapientissimos, qui illa[m] prouinciam ante te tenuerunt, prudentia, co[n]silióque vicisti? Est" type="straight"/>
+        <underline language="LA" method="pen" text="tu homo minimi co[n]silii, nullius authoritatis, iniussu Populi" type="straight"/>
+        <underline language="LA" method="pen" text="neque in segetibus, neque in areis, neque in horreis, neque" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">15</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refNum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://bibnum.bnf.fr/ns/refNum http://bibnum.bnf.fr/ns/refNum.xsd http://bibnum.bnf.fr/ns/detailsOperation http://bibnum.bnf.fr/ns/detailsOperation.xsd" xmlns="http://bibnum.bnf.fr/ns/refNum">
+<document identifiant="08448958">
+<bibliographie><genre>LOT</genre>
+<titre>« Le Livre des trois vertus à l&apos;ensaignement des dames», de «CHRISTINE » [DE PISAN].</titre>
+<description>Français 452 ---</description>
+<dateEdition>XV e siècle</dateEdition>
+<nombrePages>sans objet</nombrePages>
+<reference  type="CODEBARREPROVENANCE">BAM13037</reference>
+<reference  type="NOTICEBIBLIOGRAPHIQUE">ark:/12148/cc50727z</reference>
+<reference  type="COTEORIGINAL">Français 452</reference>
+<reference  type="COTEOBJETREPRODUIT">Français 452</reference>
+<reference  type="SOURCE">BnF</reference></bibliographie>
+<production>
+<dateNumerisation>2011-08-12</dateNumerisation>
+<nombreVueObjets>200</nombreVueObjets>
+<nombreImages>200</nombreImages>
+<identifiantSupport ordre="1">110</identifiantSupport>
+<historique>
+<traitement ordre="1">
+<agentOperation>AZENTIS</agentOperation>
+<operation ordre="1" type="numerisation">
+<entree type="PRODUCT" date="2011-08-12T00:11:46Z">
+<detailsOperation xmlns="http://bibnum.bnf.fr/ns/detailsOperation">
+<agent type="SOCIETE" role="NUMERISATIONPATRIMOINE">Azentis</agent>
+<outil type="NUMERISEUR"> 
+<nom>C1</nom>
+</outil>
+</detailsOperation>
+<detailsOperation xmlns="http://bibnum.bnf.fr/ns/detailsOperation">
+<agent type="SOCIETE" role="NUMERISATIONPATRIMOINE">Azentis</agent>
+<outil type="LOGICIELTRAITEMENTDIMAGE">
+<nom>AZENTIS TAG</nom>
+<origine>AZENTIS</origine>
+<version>2.0</version>
+</outil>
+</detailsOperation>
+</entree>
+<resultat type="PRODUCT" date="2011-08-18T15:34:24Z"/>
+</operation>
+</traitement>
+</historique>
+</production>
+<structure>
+<commentaire type="PRODUCT" date="2011-08-12T00:11:46Z">120°</commentaire>
+<commentaire type="PRODUCT" date="2011-08-12T00:11:46Z">Avec vitre : effet bombé persistant</commentaire>
+<commentaire date="2011-08-12T00:11:46Z" type="USAGER">transparence, report d’encre sur tout ou partie du document</commentaire>
+<commentaire date="2011-08-12T00:11:46Z" type="USAGER">feuillet fragile non remis à plat (plis, effets gondolés, etc)</commentaire>
+<vueObjet ordre="1" numeroPage="plat supérieur" typePagination="F" typePage="N"><image nomImage="T0000001" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="4176,5444" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="2" numeroPage="contreplat sup." typePagination="F" typePage="N"><image nomImage="T0000002" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="4227,5537" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="3" numeroPage="page de garde recto" typePagination="F" typePage="N"><image nomImage="T0000003" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="4058,5387" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="4" numeroPage="page de garde verso" typePagination="F" typePage="N"><image nomImage="T0000004" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="4010,5364" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="5" numeroPage="0" typePagination="N" typePage="N"><image nomImage="T0000005" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3920,5327" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="6" numeroPage="0" typePagination="N" typePage="N"><image nomImage="T0000006" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3836,5301" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="7" numeroPage="1r" typePagination="F" typePage="N"><image nomImage="T0000007" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3920,5354" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="8" numeroPage="1v" typePagination="F" typePage="N"><image nomImage="T0000008" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3902,5351" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="9" numeroPage="2r" typePagination="F" typePage="N"><image nomImage="T0000009" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3920,5354" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="10" numeroPage="2v" typePagination="F" typePage="N"><image nomImage="T0000010" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3902,5342" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="11" numeroPage="3r" typePagination="F" typePage="N"><image nomImage="T0000011" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3936,5337" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="12" numeroPage="3v" typePagination="F" typePage="N"><image nomImage="T0000012" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3902,5342" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="13" numeroPage="4r" typePagination="F" typePage="N"><image nomImage="T0000013" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3936,5351" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="14" numeroPage="4v" typePagination="F" typePage="N"><image nomImage="T0000014" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3902,5342" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="15" numeroPage="5r" typePagination="F" typePage="N"><image nomImage="T0000015" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3936,5351" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="16" numeroPage="5v" typePagination="F" typePage="N"><image nomImage="T0000016" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3902,5341" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="17" numeroPage="6r" typePagination="F" typePage="N"><image nomImage="T0000017" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3951,5351" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="18" numeroPage="6v" typePagination="F" typePage="N"><image nomImage="T0000018" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3902,5324" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="19" numeroPage="7r" typePagination="F" typePage="N"><image nomImage="T0000019" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3951,5351" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="20" numeroPage="7v" typePagination="F" typePage="N"><image nomImage="T0000020" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3902,5324" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="21" numeroPage="8r" typePagination="F" typePage="N"><image nomImage="T0000021" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3951,5351" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="22" numeroPage="8v" typePagination="F" typePage="N"><image nomImage="T0000022" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3882,5342" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="23" numeroPage="9r" typePagination="F" typePage="N"><image nomImage="T0000023" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3951,5351" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="24" numeroPage="9v" typePagination="F" typePage="N"><image nomImage="T0000024" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3845,5338" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="25" numeroPage="10r" typePagination="F" typePage="N"><image nomImage="T0000025" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3951,5351" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="26" numeroPage="10v" typePagination="F" typePage="N"><image nomImage="T0000026" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3845,5338" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="27" numeroPage="11r" typePagination="F" typePage="N"><image nomImage="T0000027" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3951,5351" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="28" numeroPage="11v" typePagination="F" typePage="N"><image nomImage="T0000028" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3845,5338" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="29" numeroPage="12r" typePagination="F" typePage="N"><image nomImage="T0000029" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3951,5351" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="30" numeroPage="12v" typePagination="F" typePage="N"><image nomImage="T0000030" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3860,5338" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="31" numeroPage="13r" typePagination="F" typePage="N"><image nomImage="T0000031" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3966,5380" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="32" numeroPage="13v" typePagination="F" typePage="N"><image nomImage="T0000032" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3860,5338" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="33" numeroPage="14r" typePagination="F" typePage="N"><image nomImage="T0000033" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3966,5372" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="34" numeroPage="14v" typePagination="F" typePage="N"><image nomImage="T0000034" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3860,5338" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="35" numeroPage="15r" typePagination="F" typePage="N"><image nomImage="T0000035" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3966,5372" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="36" numeroPage="15v" typePagination="F" typePage="N"><image nomImage="T0000036" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3862,5374" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="37" numeroPage="16r" typePagination="F" typePage="N"><image nomImage="T0000037" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3966,5372" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="38" numeroPage="16v" typePagination="F" typePage="N"><image nomImage="T0000038" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3862,5374" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="39" numeroPage="17r" typePagination="F" typePage="N"><image nomImage="T0000039" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3952,5372" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="40" numeroPage="17v" typePagination="F" typePage="N"><image nomImage="T0000040" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3862,5374" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="41" numeroPage="18r" typePagination="F" typePage="N"><image nomImage="T0000041" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3961,5372" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="42" numeroPage="18v" typePagination="F" typePage="N"><image nomImage="T0000042" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3862,5374" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="43" numeroPage="19r" typePagination="F" typePage="N"><image nomImage="T0000043" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3961,5372" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="44" numeroPage="19v" typePagination="F" typePage="N"><image nomImage="T0000044" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3853,5351" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="45" numeroPage="20r" typePagination="F" typePage="N"><image nomImage="T0000045" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3961,5355" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="46" numeroPage="20v" typePagination="F" typePage="N"><image nomImage="T0000046" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3853,5351" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="47" numeroPage="21r" typePagination="F" typePage="N"><image nomImage="T0000047" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3961,5355" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="48" numeroPage="21v" typePagination="F" typePage="N"><image nomImage="T0000048" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3893,5351" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="49" numeroPage="22r" typePagination="F" typePage="N"><image nomImage="T0000049" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3961,5355" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="50" numeroPage="22v" typePagination="F" typePage="N"><image nomImage="T0000050" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3862,5343" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="51" numeroPage="23r" typePagination="F" typePage="N"><image nomImage="T0000051" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3944,5386" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="52" numeroPage="23v" typePagination="F" typePage="N"><image nomImage="T0000052" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3855,5343" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="53" numeroPage="24r" typePagination="F" typePage="N"><image nomImage="T0000053" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3944,5386" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="54" numeroPage="24v" typePagination="F" typePage="N"><image nomImage="T0000054" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3792,5332" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="55" numeroPage="25r" typePagination="F" typePage="N"><image nomImage="T0000055" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3912,5386" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="56" numeroPage="25v" typePagination="F" typePage="N"><image nomImage="T0000056" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3775,5332" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="57" numeroPage="26r" typePagination="F" typePage="N"><image nomImage="T0000057" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3928,5386" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="58" numeroPage="26v" typePagination="F" typePage="N"><image nomImage="T0000058" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3775,5332" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="59" numeroPage="27r" typePagination="F" typePage="N"><image nomImage="T0000059" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3904,5386" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="60" numeroPage="27v" typePagination="F" typePage="N"><image nomImage="T0000060" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3775,5347" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="61" numeroPage="28r" typePagination="F" typePage="N"><image nomImage="T0000061" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3904,5386" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="62" numeroPage="28v" typePagination="F" typePage="N"><image nomImage="T0000062" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3791,5347" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="63" numeroPage="29r" typePagination="F" typePage="N"><image nomImage="T0000063" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3904,5386" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="64" numeroPage="29v" typePagination="F" typePage="N"><image nomImage="T0000064" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3791,5347" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="65" numeroPage="30r" typePagination="F" typePage="N"><image nomImage="T0000065" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3881,5393" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="66" numeroPage="30v" typePagination="F" typePage="N"><image nomImage="T0000066" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3776,5338" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="67" numeroPage="31r" typePagination="F" typePage="N"><image nomImage="T0000067" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3928,5409" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="68" numeroPage="31v" typePagination="F" typePage="N"><image nomImage="T0000068" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3776,5348" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="69" numeroPage="32r" typePagination="F" typePage="N"><image nomImage="T0000069" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3904,5393" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="70" numeroPage="32v" typePagination="F" typePage="N"><image nomImage="T0000070" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3784,5348" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="71" numeroPage="33r" typePagination="F" typePage="N"><image nomImage="T0000071" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3840,5400" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="72" numeroPage="33v" typePagination="F" typePage="N"><image nomImage="T0000072" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3784,5339" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="73" numeroPage="34r" typePagination="F" typePage="N"><image nomImage="T0000073" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3849,5400" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="74" numeroPage="34v" typePagination="F" typePage="N"><image nomImage="T0000074" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3771,5339" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="75" numeroPage="35r" typePagination="F" typePage="N"><image nomImage="T0000075" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3839,5409" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="76" numeroPage="35v" typePagination="F" typePage="N"><image nomImage="T0000076" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3771,5324" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="77" numeroPage="36r" typePagination="F" typePage="N"><image nomImage="T0000077" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3839,5409" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="78" numeroPage="36v" typePagination="F" typePage="N"><image nomImage="T0000078" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3790,5324" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="79" numeroPage="37r" typePagination="F" typePage="N"><image nomImage="T0000079" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3839,5409" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="80" numeroPage="37v" typePagination="F" typePage="N"><image nomImage="T0000080" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3790,5345" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="81" numeroPage="38r" typePagination="F" typePage="N"><image nomImage="T0000081" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3824,5409" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="82" numeroPage="38v" typePagination="F" typePage="N"><image nomImage="T0000082" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3790,5345" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="83" numeroPage="39r" typePagination="F" typePage="N"><image nomImage="T0000083" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3824,5409" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="84" numeroPage="39v" typePagination="F" typePage="N"><image nomImage="T0000084" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3790,5345" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="85" numeroPage="40r" typePagination="F" typePage="N"><image nomImage="T0000085" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3824,5409" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="86" numeroPage="40v" typePagination="F" typePage="N"><image nomImage="T0000086" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3749,5373" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="87" numeroPage="41r" typePagination="F" typePage="N"><image nomImage="T0000087" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3824,5400" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="88" numeroPage="41v" typePagination="F" typePage="N"><image nomImage="T0000088" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3750,5338" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="89" numeroPage="42r" typePagination="F" typePage="N"><image nomImage="T0000089" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3840,5384" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="90" numeroPage="42v" typePagination="F" typePage="N"><image nomImage="T0000090" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3764,5294" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="91" numeroPage="43r" typePagination="F" typePage="N"><image nomImage="T0000091" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3848,5384" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="92" numeroPage="43v" typePagination="F" typePage="N"><image nomImage="T0000092" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3776,5304" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="93" numeroPage="44r" typePagination="F" typePage="N"><image nomImage="T0000093" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3848,5406" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="94" numeroPage="44v" typePagination="F" typePage="N"><image nomImage="T0000094" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3695,5330" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="95" numeroPage="45r" typePagination="F" typePage="N"><image nomImage="T0000095" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3848,5406" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="96" numeroPage="45v" typePagination="F" typePage="N"><image nomImage="T0000096" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3783,5330" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="97" numeroPage="46r" typePagination="F" typePage="N"><image nomImage="T0000097" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3831,5406" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="98" numeroPage="46v" typePagination="F" typePage="N"><image nomImage="T0000098" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3817,5315" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="99" numeroPage="47r" typePagination="F" typePage="N"><image nomImage="T0000099" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3849,5406" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="100" numeroPage="47v" typePagination="F" typePage="N"><image nomImage="T0000100" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3787,5315" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="101" numeroPage="48r" typePagination="F" typePage="N"><image nomImage="T0000101" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3832,5384" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="102" numeroPage="48v" typePagination="F" typePage="N"><image nomImage="T0000102" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3787,5339" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="103" numeroPage="49r" typePagination="F" typePage="N"><image nomImage="T0000103" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3852,5387" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="104" numeroPage="49v" typePagination="F" typePage="N"><image nomImage="T0000104" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3787,5339" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="105" numeroPage="50r" typePagination="F" typePage="N"><image nomImage="T0000105" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3847,5396" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="106" numeroPage="50v" typePagination="F" typePage="N"><image nomImage="T0000106" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3787,5339" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="107" numeroPage="51r" typePagination="F" typePage="N"><image nomImage="T0000107" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3853,5372" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="108" numeroPage="51v" typePagination="F" typePage="N"><image nomImage="T0000108" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3787,5339" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="109" numeroPage="52r" typePagination="F" typePage="N"><image nomImage="T0000109" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3843,5375" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="110" numeroPage="52v" typePagination="F" typePage="N"><image nomImage="T0000110" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3787,5339" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="111" numeroPage="53r" typePagination="F" typePage="N"><image nomImage="T0000111" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3820,5375" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="112" numeroPage="53v" typePagination="F" typePage="N"><image nomImage="T0000112" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3787,5339" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="113" numeroPage="54r" typePagination="F" typePage="N"><image nomImage="T0000113" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3855,5366" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="114" numeroPage="54v" typePagination="F" typePage="N"><image nomImage="T0000114" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3787,5339" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="115" numeroPage="55r" typePagination="F" typePage="N"><image nomImage="T0000115" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3838,5345" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="116" numeroPage="55v" typePagination="F" typePage="N"><image nomImage="T0000116" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3816,5339" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="117" numeroPage="56r" typePagination="F" typePage="N"><image nomImage="T0000117" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3815,5353" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="118" numeroPage="56v" typePagination="F" typePage="N"><image nomImage="T0000118" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3842,5367" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="119" numeroPage="57r" typePagination="F" typePage="N"><image nomImage="T0000119" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3839,5345" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="120" numeroPage="57v" typePagination="F" typePage="N"><image nomImage="T0000120" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3841,5356" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="121" numeroPage="58r" typePagination="F" typePage="N"><image nomImage="T0000121" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3863,5345" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="122" numeroPage="58v" typePagination="F" typePage="N"><image nomImage="T0000122" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3841,5356" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="123" numeroPage="59r" typePagination="F" typePage="N"><image nomImage="T0000123" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3848,5345" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="124" numeroPage="59v" typePagination="F" typePage="N"><image nomImage="T0000124" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3841,5351" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="125" numeroPage="60r" typePagination="F" typePage="N"><image nomImage="T0000125" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3848,5345" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="126" numeroPage="60v" typePagination="F" typePage="N"><image nomImage="T0000126" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3841,5356" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="127" numeroPage="61r" typePagination="F" typePage="N"><image nomImage="T0000127" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3848,5344" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="128" numeroPage="61v" typePagination="F" typePage="N"><image nomImage="T0000128" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3841,5356" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="129" numeroPage="62r" typePagination="F" typePage="N"><image nomImage="T0000129" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3848,5328" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="130" numeroPage="62v" typePagination="F" typePage="N"><image nomImage="T0000130" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3841,5356" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="131" numeroPage="63r" typePagination="F" typePage="N"><image nomImage="T0000131" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3848,5328" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="132" numeroPage="63v" typePagination="F" typePage="N"><image nomImage="T0000132" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3841,5356" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="133" numeroPage="64r" typePagination="F" typePage="N"><image nomImage="T0000133" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3842,5328" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="134" numeroPage="64v" typePagination="F" typePage="N"><image nomImage="T0000134" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3841,5356" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="135" numeroPage="65r" typePagination="F" typePage="N"><image nomImage="T0000135" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3864,5321" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="136" numeroPage="65v" typePagination="F" typePage="N"><image nomImage="T0000136" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3876,5356" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="137" numeroPage="66r" typePagination="F" typePage="N"><image nomImage="T0000137" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3864,5321" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="138" numeroPage="66v" typePagination="F" typePage="N"><image nomImage="T0000138" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3893,5356" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="139" numeroPage="67r" typePagination="F" typePage="N"><image nomImage="T0000139" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3904,5321" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="140" numeroPage="67v" typePagination="F" typePage="N"><image nomImage="T0000140" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3893,5338" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="141" numeroPage="68r" typePagination="F" typePage="N"><image nomImage="T0000141" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3904,5321" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="142" numeroPage="68v" typePagination="F" typePage="N"><image nomImage="T0000142" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3893,5338" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="143" numeroPage="69r" typePagination="F" typePage="N"><image nomImage="T0000143" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3896,5321" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="144" numeroPage="69v" typePagination="F" typePage="N"><image nomImage="T0000144" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3912,5339" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="145" numeroPage="70r" typePagination="F" typePage="N"><image nomImage="T0000145" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3896,5320" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="146" numeroPage="70v" typePagination="F" typePage="N"><image nomImage="T0000146" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3912,5339" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="147" numeroPage="71r" typePagination="F" typePage="N"><image nomImage="T0000147" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3870,5320" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="148" numeroPage="71v" typePagination="F" typePage="N"><image nomImage="T0000148" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3912,5339" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="149" numeroPage="72r" typePagination="F" typePage="N"><image nomImage="T0000149" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3870,5304" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="150" numeroPage="72v" typePagination="F" typePage="N"><image nomImage="T0000150" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3912,5339" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="151" numeroPage="73r" typePagination="F" typePage="N"><image nomImage="T0000151" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3890,5336" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="152" numeroPage="73v" typePagination="F" typePage="N"><image nomImage="T0000152" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3912,5358" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="153" numeroPage="74r" typePagination="F" typePage="N"><image nomImage="T0000153" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3913,5336" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="154" numeroPage="74v" typePagination="F" typePage="N"><image nomImage="T0000154" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3957,5358" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="155" numeroPage="75r" typePagination="F" typePage="N"><image nomImage="T0000155" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3918,5339" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="156" numeroPage="75v" typePagination="F" typePage="N"><image nomImage="T0000156" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3957,5358" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="157" numeroPage="76r" typePagination="F" typePage="N"><image nomImage="T0000157" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3931,5326" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="158" numeroPage="76v" typePagination="F" typePage="N"><image nomImage="T0000158" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3980,5358" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="159" numeroPage="77r" typePagination="F" typePage="N"><image nomImage="T0000159" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3904,5326" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="160" numeroPage="77v" typePagination="F" typePage="N"><image nomImage="T0000160" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3974,5358" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="161" numeroPage="78r" typePagination="F" typePage="N"><image nomImage="T0000161" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3904,5326" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="162" numeroPage="78v" typePagination="F" typePage="N"><image nomImage="T0000162" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3974,5358" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="163" numeroPage="79r" typePagination="F" typePage="N"><image nomImage="T0000163" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3904,5288" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="164" numeroPage="79v" typePagination="F" typePage="N"><image nomImage="T0000164" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3974,5358" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="165" numeroPage="80r" typePagination="F" typePage="N"><image nomImage="T0000165" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3905,5304" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="166" numeroPage="80v" typePagination="F" typePage="N"><image nomImage="T0000166" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3940,5358" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="167" numeroPage="81r" typePagination="F" typePage="N"><image nomImage="T0000167" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3926,5290" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="168" numeroPage="81v" typePagination="F" typePage="N"><image nomImage="T0000168" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3974,5345" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="169" numeroPage="82r" typePagination="F" typePage="N"><image nomImage="T0000169" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3926,5290" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="170" numeroPage="82v" typePagination="F" typePage="N"><image nomImage="T0000170" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3974,5345" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="171" numeroPage="83r" typePagination="F" typePage="N"><image nomImage="T0000171" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3928,5290" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="172" numeroPage="83v" typePagination="F" typePage="N"><image nomImage="T0000172" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3974,5345" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="173" numeroPage="84r" typePagination="F" typePage="N"><image nomImage="T0000173" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3928,5290" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="174" numeroPage="84v" typePagination="F" typePage="N"><image nomImage="T0000174" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3974,5345" profondeur="24" codeResolution="T" resolution="0400,0400">
+<commentaire date="2011-08-17T09:32:54Z" type="USAGER">lisibilité altérée liée à l’instabilité des encres</commentaire>
+</image>
+</vueObjet>
+<vueObjet ordre="175" numeroPage="85r" typePagination="F" typePage="N"><image nomImage="T0000175" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3928,5290" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="176" numeroPage="85v" typePagination="F" typePage="N"><image nomImage="T0000176" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3974,5345" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="177" numeroPage="86r" typePagination="F" typePage="N"><image nomImage="T0000177" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3911,5290" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="178" numeroPage="86v" typePagination="F" typePage="N"><image nomImage="T0000178" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3974,5345" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="179" numeroPage="87r" typePagination="F" typePage="N"><image nomImage="T0000179" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3912,5290" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="180" numeroPage="87v" typePagination="F" typePage="N"><image nomImage="T0000180" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3974,5345" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="181" numeroPage="88r" typePagination="F" typePage="N"><image nomImage="T0000181" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3928,5290" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="182" numeroPage="88v" typePagination="F" typePage="N"><image nomImage="T0000182" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3974,5345" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="183" numeroPage="89r" typePagination="F" typePage="N"><image nomImage="T0000183" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3912,5294" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="184" numeroPage="89v" typePagination="F" typePage="N"><image nomImage="T0000184" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3974,5345" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="185" numeroPage="90r" typePagination="F" typePage="N"><image nomImage="T0000185" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3928,5290" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="186" numeroPage="90v" typePagination="F" typePage="N"><image nomImage="T0000186" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3974,5345" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="187" numeroPage="91r" typePagination="F" typePage="N"><image nomImage="T0000187" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3928,5306" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="188" numeroPage="91v" typePagination="F" typePage="N"><image nomImage="T0000188" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="4005,5342" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="189" numeroPage="92r" typePagination="F" typePage="N"><image nomImage="T0000189" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3896,5306" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="190" numeroPage="92v" typePagination="F" typePage="N"><image nomImage="T0000190" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3962,5342" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="191" numeroPage="93r" typePagination="F" typePage="N"><image nomImage="T0000191" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3928,5311" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="192" numeroPage="93v" typePagination="F" typePage="N"><image nomImage="T0000192" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="3994,5342" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="193" numeroPage="page de garde recto" typePagination="F" typePage="N"><image nomImage="T0000193" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="4032,5350" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="194" numeroPage="page de garde verso" typePagination="F" typePage="N"><image nomImage="T0000194" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="4016,5360" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="195" numeroPage="contreplat inf." typePagination="F" typePage="N"><image nomImage="T0000195" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="4249,5540" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="196" numeroPage="plat inférieur." typePagination="F" typePage="N"><image nomImage="T0000196" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="4176,5444" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="197" numeroPage="dos" typePagination="F" typePage="N"><image nomImage="T0000197" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="832,5432" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="198" numeroPage="tranche supérieure" typePagination="F" typePage="N"><image nomImage="T0000198" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="882,4207" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="199" numeroPage="gouttière" typePagination="F" typePage="N"><image nomImage="T0000199" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="904,5424" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+<vueObjet ordre="200" numeroPage="tranche inférieure" typePagination="F" typePage="N"><image nomImage="T0000200" typeFichier="TIF" traitement="MANU" cadrage="vueObjet" supportOrigine="PAPIER REL CO" dimension="914,4216" profondeur="24" codeResolution="T" resolution="0400,0400"/>
+</vueObjet>
+</structure>
+</document>
+</refNum>
+

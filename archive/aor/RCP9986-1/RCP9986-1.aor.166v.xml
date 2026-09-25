@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.166v.tif" pagination="[167v]" reader="John Dee"/>   
+    <annotation>
+        
+        <marginalia anchor_text="Ocia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ocia</marginalia_text>
+                </position>
+            </language>
+            <translation>Idleness.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Negotiu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>Business.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="amor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Amor</marginalia_text>
+                </position>
+            </language>
+            <translation>Love.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="desidiosus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Desidia</marginalia_text>
+                </position>
+            </language>
+            <translation>Inactivity.</translation>
+        </marginalia>        
+        
+        <underline language="LA" method="pen" text="Ocia si tollas, periere cupidinis arcus, Contemptae'q[ue] iacent, &amp; sine luce faces" type="straight"/>
+        <underline language="LA" method="pen" text="Tam Venus ocia amat" type="straight"/>
+        <underline language="LA" method="pen" text="Cedit amor rebus, res age, tutus eris" type="straight"/>
+        <underline language="LA" method="pen" text="Eripiunt omnes animo sine vulnere" type="straight"/>
+        <underline language="LA" method="pen" text="Affluit incautis insidiosus amor" type="straight"/>
+        <underline language="LA" method="pen" text="Da vacuae menti, quo teneatur, opus" type="straight"/>
+        <underline language="LA" method="pen" text="Uince cupidineas" type="straight"/>
+        <underline language="LA" method="pen" text="Quaeritur, aegisthus qua re sit factus adulter" type="straight"/>
+        <underline language="LA" method="pen" text="In promptu causa est, desidiosus erat" type="straight"/>
+        <underline language="LA" method="pen" text="Quod potuit, fecit. ne nil ageretur, amauit" type="straight"/>
+        
+        <!-- FSF: there is also a taurus -->
+         
+    </annotation>
+</transcription>

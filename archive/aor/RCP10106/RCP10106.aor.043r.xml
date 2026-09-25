@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.043r.tif" pagination="85" reader="John Dee" signature="f 3"/>
+    <annotation>
+        
+        <marginalia anchor_text="declamandi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Declamatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Declamation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="natura bonum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Bonu[m] natura</marginalia_text>
+                </position>
+            </language>
+            <translation>The good thing in nature.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Et declamatio in quantu[m] maxime potest, imitetur eas actiones" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Declamationum Materia[e] qualis</marginalia_text>
+                </position>
+            </language>
+            <translation>The substances of such deliveries.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sponsiones" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sponsiones</marginalia_text>
+                </position>
+            </language>
+            <translation>Wagers.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quae quide[m] ut ex omnibus nouißime inue[n]ta, ita &amp; multo est utilißima" type="straight"/>
+        <underline language="LA" method="pen" text="Sed eo quod natura bonum est, bene" type="straight"/>
+        <underline language="LA" method="pen" text="Sed certe sint grandia &amp; tumida, no[n]" type="straight"/>
+        <underline language="LA" method="pen" text="sanguinis detractione" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

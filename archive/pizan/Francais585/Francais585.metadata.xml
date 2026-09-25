@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>4</illustrations>
+    <totalPages>281</totalPages>
+    <dimensions units="">
+        <width>-1</width>
+        <height>-1</height>
+    </dimensions>
+    <dates>
+        <startDate>1401</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="De la chose de chevalerie en fais d'armes, composé par Vegece, tres souverain clerc et experte en drois e loix de Frontin et pluiseurs aultres">
+            <language>fr</language>
+            <title>De la chose de chevalerie en fais d'armes, composé par Vegece, tres souverain clerc et experte en drois e loix de Frontin et pluiseurs aultres</title>
+            <textId/>
+            <pages end="123r" start="1r">123</pages>
+            <illustrations>4</illustrations>
+            <linesPerColumn>33</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Christine de Pizan</title>
+            <commonName>Français 585</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>vellum</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 585</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Christine de Pizan</title>
+            <commonName>Français 585</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscript</type>
+            <material>vellum</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 585</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

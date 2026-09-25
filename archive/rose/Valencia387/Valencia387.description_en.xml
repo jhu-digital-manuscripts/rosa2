@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tei-c.org/ns/1.0" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscript</note>
+          <note type="commonName">BH Ms. 387</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="190" unit="folios">190</measure>
+            <dimensions>
+              <height unit="mm">390</height>
+              <width unit="mm">285</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">174</note>
+          <note type="material">Parchment</note>
+          <pubPlace>France</pubPlace>
+          <date notBefore="1300" notAfter="1400">14th century</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Valencia, Spain</settlement>
+            <repository>Universitat de València, Biblioteca Històrica</repository>
+            <idno>BH Ms. 387</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="148v">1r-148v</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">148</note>
+              <note type="illustrations">162</note>
+              <note type="linesPerColumn">42</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+            <msItem n="2">
+              <locus from="149r" to="176v">149r-176v</locus>
+              <title>Testament de Jean de Meun</title>
+              <note type="textid">testament</note>
+              <note type="folios">27</note>
+              <note type="illustrations">8</note>
+              <note type="linesPerColumn">42</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">1</note>
+            </msItem>
+            <msItem n="3">
+              <locus from="177r" to="178v">177r-178v</locus>
+              <title>Codicille de Jean de Meun</title>
+              <note type="textid">codicille</note>
+              <note type="folios">148</note>
+              <note type="illustrations">2</note>
+              <note type="linesPerColumn">42</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="4">
+              <locus from="179r" to="190v">179r-190v</locus>
+              <title>Articles de la Foy</title>
+              <note type="textid">articles</note>
+              <note type="folios">11</note>
+              <note type="illustrations">2</note>
+              <note type="linesPerColumn">42</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

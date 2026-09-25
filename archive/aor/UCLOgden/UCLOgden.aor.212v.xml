@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.212v.tif" reader="John Dee" signature="[O 4[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Astrorum vires</marginalia_text>
+                </position>
+            </language>
+            <translation>The strengths of stars.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Dispensata manent mundo, dominum'q[ue] sequuntur. Hic igitur deus, &amp; ratio, quae cuncta gubernat. Ducit an aethereis terrena animalia signis." type="straight"/>
+        <underline language="LA" method="pen" text="Ad lunae motum uariant animalia corpus" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; sidus sidere constat" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

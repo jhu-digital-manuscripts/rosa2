@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.298r.tif" pagination="109" reader="John Dee" signature="O.ij."/>
+    
+    
+    <annotation>
+        
+        <marginalia anchor_text="Rogero de mortuo mari" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Rogerus de morte</marginalia_text>
+                    <person name="Roger de Mortimer"/>
+                </position>
+            </language>
+            <translation>Roger de Mortimer.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Edwardum iuuenem; 27. diem Ianuarij" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ed[wardus] 3. Ianuarij 27.</marginalia_text>
+                    <person name="Edward III of England"/>
+                </position>
+            </language>
+            <translation>Edward III, 27 January.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Rogero de mortuo mari, sine" type="straight"/>
+        <underline language="LA" method="pen" text="nihil pene regina gessit" type="straight"/>
+        <underline language="LA" method="pen" text="dominoq[ue] Rogero de mortuo mari" type="straight"/>
+        <underline language="LA" method="pen" text="ad regem degentem apud Kenelworth, qui nunciarent electionem filij sui" type="straight"/>
+        <underline language="LA" method="pen" text="Edwardum iuuenem, quatuordecim annos" type="straight"/>
+        
+        
+        
+    </annotation>
+    
+</transcription>

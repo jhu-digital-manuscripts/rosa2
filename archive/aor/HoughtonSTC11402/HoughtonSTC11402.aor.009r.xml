@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.009r.tif" reader="Harvey" signature="Aii[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Secretum meum mihi.</marginalia_text>
+                </position>
+            </language>
+            <translation>I have my secret.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Two may keep Counsel, when one is away.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="90" place="left_margin">
+                    <marginalia_text>Cato repented him nothing somuch, as that euer he committed any Secret to a wooman.
+                    And for that point, there is no difference betwixt a wooman, &amp; an effeminate man.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Periandri Inventu[m]. Vide Aristotle L.[5]. Polit. c.8.II.</marginalia_text>
+                    <person name="Periander"/>
+                    <book title="Politics"/>
+                </position>
+            </language>
+            <translation>The discovery of Periander. Look at Aristotle's Politics, book 4, chapter 8, 2.</translation> <!--JG: How to 'translate' the II after chapter 8? As section?-->
+        </marginalia>       
+        
+        <marginalia anchor_text="a lyttell rodde strake of the heades of the hyest poppies" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Eminentiora papaueru[m] Capita.</marginalia_text>
+                </position>
+            </language>
+            <translation>The more eminent heads of poppies.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="C. Cesar" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ca[e]sar</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="C. Cesaer" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Coma, et Cingulu[m], ante feselleru[n]t Ciceronem.</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Previously, the hair and belt deceived Cicero.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Stratagematicè</marginalia_text>
+                </position>
+            </language>
+            <translation>Strategically.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mercurij fistula, ad Argu[m] sopiendu[m].</marginalia_text>
+                    <person name="Mercury"/>
+                    <person name="Argus"/>
+                </position>
+            </language>
+            <translation>The pipe of Mercury, for causing Argus to fall asleep.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Londo[n], take heede of [the] French.</marginalia_text>
+                    <location name="London"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Principalem Metropolim seguunt[u]r prouincie[s] accessorie[s]</marginalia_text> <!--JG: Unsure abt last word...-->
+                </position>
+            </language>
+            <translation>The adjunct provinces are influenced by the principal city.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Stulti est, alteri porrigere funem. Vnde tibi paret laqueum.
+                   In talibus, Mihi Crede, Credendum nemini.
+                    Ca[e]sarianarum Literarum bona, magnaq[ue] pars.</marginalia_text> 
+                </position>
+            </language>
+            <translation>It is of foolish people, to extend the line to another. Whence the trap is clear to you.
+            In such kinds, believe me, no one should believe. The good and great part of the Caesarian letters.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Digibo compesce labellum.</marginalia_text>
+                    <X-ref book_title="Satires" language="LA" person="Juvenal" text="Digibo compesce labellum."/>
+                </position>
+            </language>
+            <translation>"Close your lips with your finger."</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="by chaunce in his gardein" type="straight"/>
+        <underline language="EN" method="pen" text="lytell rodde" type="straight"/>
+        <underline language="EN" method="pen" text="strake of the heades of the hyest poppies" type="straight"/>
+        <underline language="EN" method="pen" text="chiefe of the citie were so" type="straight"/>
+        <underline language="EN" method="pen" text="mistrustinge" type="straight"/>
+        <underline language="EN" method="pen" text="as thoughe" type="straight"/>
+        <underline language="EN" method="pen" text="hadde bene sure of" type="straight"/>
+        <underline language="EN" method="pen" text="there, in beholdynge" type="straight"/>
+        <underline language="EN" method="pen" text="pleasures" type="straight"/> 
+        <underline language="EN" method="pen" text="of theyr Cytie Alexandria" type="straight"/>
+        <underline language="EN" method="pen" text="selfe to bankettynge and feastynge, as one taken" type="straight"/>
+        <underline language="EN" method="pen" text="maners and lyfe" type="straight"/>
+        <underline language="EN" method="pen" text="he prepared" type="straight"/>
+        <underline language="EN" method="pen" text="conueyed in to the citie a garrizon" type="straight"/>
+        
+        <symbol name="SS" place="head"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="hash" place="left_margin" text="conueyed in to the citie a garrizon"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark language="EN" method="pen" name="hash" place="right_margin" text="of theyr Cytie Alexandria"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!--poppies, the-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="mistrustinge"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="made as thoughe"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="hadde bene sure of"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--pleasures, fallynge-->
+        <mark method="pen" name="bracket" place="intext"/>
+        
+    </annotation>
+</transcription>

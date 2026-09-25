@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.053r.tif" pagination="85" reader="John Dee" signature="ff.iii."/>
+    <annotation> 
+        
+        <marginalia anchor_text="spoliationes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        spoliatio.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Plundering.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Siciliam tetigit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Sicilia[m] tangere.
+                    </marginalia_text>
+                    <location name="Sicily"/>
+                </position>
+            </language>
+            <translation>
+                To land in Sicily.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vestísque stragulae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vestis stragula.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Tapestry.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ad fretum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        fretu[m].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Strait.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vt est consuetudo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vt est co[n]duetudo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                As is the custom.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Ego hoc quod intelligo Iudices, sic confirmo" type="straight"/>
+        <underline language="LA" method="pen" text="iuris, libertatis, rerum, fortunarúmque suarum salutem, in istius damnatione consistere" type="straight"/>
+        <underline language="LA" method="pen" text="rudis erat, &amp; tiro" type="straight"/>
+        <underline language="LA" method="pen" text="certissimu[m] accipite argume[n]tum" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">15</numeral>
+        <numeral place="right_margin">10</numeral>
+        
+        
+    </annotation>
+</transcription>

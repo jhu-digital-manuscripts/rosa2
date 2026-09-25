@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.075r.tif" pagination="75" reader="John Dee" signature="Kiij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="horae sextae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Nota de hora sexta.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Note the sixth hour.
+            </translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="antarctici: qua[n]quam per illam probetur, quòd toto in uniuerso, existens sol" type="straight"/>
+        <underline language="LA" method="pen" text="quandoquidem extra AEquatorem necesse est quòd leste per alteram similem lineam              procedat, quae alteram quadraturam faciat, ut illa linea horae sextae faciebat, &amp; per tales angulos quos talis linea facit" type="straight"/>
+
+    </annotation>
+</transcription>

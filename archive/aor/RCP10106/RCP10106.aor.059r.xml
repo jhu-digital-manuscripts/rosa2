@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.059r.tif" pagination="117" reader="John Dee" signature="h 3"/>
+    <annotation> 
+        
+        <marginalia anchor_text="materia M. Cato ille Censorius: pòst M. Antonius inchoa uit. Nam hoc solum opus eius, atq[ue] idipsum imperfectum manet. Secuti minus celebres, quorum memoriam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Romani Scriptores</marginalia_text>
+                </position>
+            </language>
+            <translation>Roman writers.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="M. Cato ille Censorius: pòst M. Antonius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cato ce[n]sorius. M. Antonius</marginalia_text>
+                    <person name="Cato the Elder"/>
+                    <person name="Marcus Antonius Gnipho"/>
+                </position>
+            </language>
+            <translation>Cato, the Censor. M[arcus] Antonius </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="M. Tullius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>M: Tulleus</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>M. Tullius</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cornificius, aliqua Stertinius, nonnihil pater Gallio, accuratius uerò priores Gallione Celsus, &amp; Lenas, &amp; aetatis nostrae Virginius,              Plinius, Rustilius." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cornificius Stertinius Gallio. Celsus. Lenas. Virginius. Plinius. Rutilius.</marginalia_text>
+                    <person name="Quintus Cornificius"/>
+                    <person name="Stertinius"/>
+                    <person name="Lucius Junius Gallio"/>
+                    <person name="Aulus Cornelius Celsus"/>
+                    <person name="Gaius Popillius Laenas"/>
+                    <person name="Flavius Virginius"/>
+                    <person name="Pliny the Elder"/>
+                    <person name="Publius Rutilius Lupus"/>
+                </position>
+            </language>
+            <translation>Cornificius, Stertinius, Gallio, Celsus, Laenas, Virginius, Pliny, Rustilius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="natura" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Natura</marginalia_text>
+                </position>
+            </language>
+            <translation>Nature.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sed parco nominibus uiuentium" type="straight"/>
+        <underline language="LA" method="pen" text="Neq[ue] enim me cuiusqua[m] sectae, uelut quadam superstitione imbutus, addixi, &amp; electuris, quae uolent facienda" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

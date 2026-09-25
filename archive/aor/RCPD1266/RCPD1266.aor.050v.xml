@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.050v.tif" pagination="86" reader="John Dee" signature="[h.j.[v]]"/> 
+    <annotation>
+         
+       <marginalia anchor_text="regio Chus" hand="Italian">
+           <language ident="LA">
+               <position book_orientation="0" place="left_margin">
+                   <marginalia_text>Regio Chus.</marginalia_text>
+                   <location name="Cush"/>
+               </position>
+           </language>
+           <translation>The Cush region.</translation>
+       </marginalia> 
+        
+        <marginalia anchor_text="fluuium Sihor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sihor Flu[uium].</marginalia_text>
+                    <location name="Nile"/>
+                </position>
+            </language>
+            <translation>The river Sihor.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="Chusaeorum" type="straight"/>
+        <underline language="LA" method="pen" text="Chusaei" type="straight"/>
+        <underline language="LA" method="pen" text="decies ce[n]tena millia" type="straight"/>
+        <underline language="LA" method="pen" text="Ita regio Chus, quam Solis" type="straight"/>
+        <underline language="LA" method="pen" text="Latini Æthiopiam" type="straight"/>
+        <underline language="LA" method="pen" text="Gerara &amp; Palesthinam specta[n]s Arabia est Ægypto contermina. &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="Zara Chusaeum" type="straight"/>
+        <underline language="LA" method="pen" text="malè redditam, Æthiopiam" type="double"/>
+        <underline language="LA" method="pen" text="Arabia Ægyptiae orae praetenta" type="straight"/>
+        <underline language="LA" method="pen" text="Sihor" type="straight"/>
+        <underline language="LA" method="pen" text="per Gehon apud Ieremiam" type="straight"/>
+        <underline language="LA" method="pen" text="γηὼν" type="straight"/>
+        <underline language="LA" method="pen" text="aquam turbidam" type="straight"/>
+        <underline language="LA" method="pen" text="A Sihor fluuio, quà spectat Ægyptum" type="straight"/>
+        <underline language="LA" method="pen" text="id est, à Sihor flumine, quod Palesthinae" type="straight"/>
+        <underline language="LA" method="pen" text="finitur Gazae limitibus, quos Sihor fluuius definit, vt ex istis" type="straight"/>
+            
+    </annotation>
+</transcription>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.075r.tif" pagination="68" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="De morbis nati" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>vide fo. 277.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:573" text="277"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See folio 277.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="De morbis nati" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Vt in fo. 164.v.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:348" text="164.v"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>As in folio 164 verso.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="possideat" type="straight"/>
+        <underline language="LA" method="pen" text="damnare" type="straight"/>
+        <underline language="LA" method="pen" text="habet ossa &amp; ligamenta" type="straight"/>
+        <underline language="LA" method="pen" text="dentes" type="straight"/>
+        <underline language="LA" method="pen" text="Mars neruos" type="straight"/>
+        <underline language="LA" method="pen" text="medullam" type="straight"/>
+        <underline language="LA" method="pen" text="humidum" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; semen" type="straight"/>
+        <underline language="LA" method="pen" text="hecticos" type="double"/>
+        <underline language="LA" method="pen" text="neruosa omnia damnat" type="straight"/>
+        <underline language="LA" method="pen" text="corru[m]pit humores" type="straight"/>
+        <underline language="LA" method="pen" text="Venus genitalia membra utriusq[ue] sexus possidet, &amp; gulam" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note rend="IDENTIFICATION">
+          <p>Paris, Bibliothèque nationale de France, nouv. acq. fr. 9252</p>
+        </note>
+        <note rend="CONTENTS">
+          <p>Fragment of a <hi rend="italics">Roman de la Rose</hi> (ff. 1-40)</p>
+        </note>
+        <note rend="MATERIAL">
+          <p>Parchment</p>
+        </note>
+        <note rend="ORIGIN">
+          <p>France</p>
+        </note>
+        <note rend="DATE">
+          <p>1st half of the 14th century</p>
+        </note>
+        <note rend="SCRIPT">
+          <p>Gothic, written in 3 columns of 50 lines</p>
+        </note>
+        <note rend="DECORATION">
+          <p>123 single-column miniatures in colors and gold, now heavily oxidized (ff. 1r (x2), 1v (x2), 2r, 3v (x2), 4v (x3), 5r (x2), 5v (x2), 6r (x2), 6v (x2), 7r (x2), 7v (x2), 8r (x2), 8v, 9v, 10r (x2), 10v, 11v, 12v (x2), 14r, 14v (x3), 15r (x2), 15v (x5), 16v (x2), 17v (x3), 18r, 18v (x2), 19r (x3), 20v, 21v (x2), 22r (x2), 22v (x2), 23v, 24v (x3), 24v (x2), 25r, 25v, 26r (x2), 26v, 27r (x4), 27v (x3), 28v (x3), 29r, 29v (x2), 30r, 30v (x2), 31v (x2), 32v (x6), 33r, 33v (x2), 34r (x3), 34v (x2), 35r (x2), 35v, 36r (x2), 36v, 37r, 37v (x2), 38r (x3), 38v, 39r, 39v, 40r (x3). Champie initials throughout.</p>
+        </note>
+        <note rend="DIMENSIONS">
+          <p>388 x 265 (this measurement is from Langlois)</p>
+        </note>
+        <note rend="FOLIATION">
+          <p>ff. iv + 40 + iv</p>
+        </note>
+        <note rend="BINDING">
+          <p>French, 19th century</p>
+        </note>
+        <note rend="NOTES">
+          <p>The poem begins on f. <locus>1r</locus> at Lecoy 1834 and ends on f. <locus>117r</locus> Lecoy 11920. On f. <locus>29r</locus>, a pointing hand is drawn beside Lecoy 9120 and the words "Cave M. de N." have been written beside it.</p>
+        </note>
+        <note rend="SELECT BIBLIOGRAPHY">
+          <p>1. Langlois, <hi rend="italics">Les manuscrits</hi>, pp. 72-73
+               </p>
+        </note>
+        <note rend="N.B.">
+          <p>This description has been compiled using the site's images and various published sources. If you have corrections or additional information on the manuscript, please do contact us.</p>
+        </note>
+        <note>
+          <p>Description by Beatrice Radden Keefe</p>
+        </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl><note type="format">manuscript</note><note type="commonName">NAF 9252</note><title>Roman de la Rose</title><extent><measure quantity="40" unit="folios">40</measure><dimensions><height unit="mm">388</height><width unit="mm">265</width></dimensions></extent><note type="illustrations">123</note>
+               
+               
+               -
+               
+               <note type="material">parchment</note>
+               
+               <pubPlace>France</pubPlace>
+               
+               <date notAfter="1400" notBefore="1300">14th century</date>
+            
+            </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Paris</settlement>
+            <repository>Bibliothèque nationale de France</repository>
+            <idno>nouv. acq. fr. 9252</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="40v">1r-40v</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">40</note>
+              <note type="illustrations">123</note>
+              <note type="linesPerColumn">50</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

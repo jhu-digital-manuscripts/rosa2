@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.041r.tif" pagination="41" reader="John Dee" signature="L"/> 
+    <annotation>
+        
+        <marginalia anchor_text="vielerley farbe[n]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Colores</marginalia_text>
+                </position>
+            </language>
+            <translation>Colours.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="schaum als dann so wirffts den schaum auff in die höhe der wirdt gleich wie ein Gewülck vnd ist aber nicht ein Gewülcke" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Spuma. quasi nubes no[n] tame[n] nubes.</marginalia_text>
+                </position>
+            </language>
+            <translation>Foam. Like clouds, yet not clouds.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Roth komt vo[m] Sulphur vnd Mercurio, das plawe praun gelbe vom Saltz" hand="Italian">
+            <language ident="DE">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Rothe. ☿ Blawe praun gelbe } ▢</marginalia_text>
+                    <symbol_in_text name="Mercury"/>
+                    <symbol_in_text name="Salt"/>
+                </position>
+            </language>
+            <translation>Red [comes from] mecury. Blue, brown, [and] yellow [come from] salt.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="ein schaum" type="straight"/>
+        <underline language="DE" method="pen" text="wirffts den schaum auff in die" type="straight"/>
+        <underline language="DE" method="pen" text="gleich wie ein Gewülck vnd " type="double"/>
+        <underline language="DE" method="pen" text="ein schaum" type="straight"/>
+        <underline language="DE" method="pen" text="dunst mit vielerley farbe[n]" type="double"/>
+        <underline language="DE" method="pen" text="plawe" type="straight"/>
+        <underline language="DE" method="pen" text="praun" type="straight"/>
+        <underline language="DE" method="pen" text="gelbe" type="straight"/>
+        <underline language="DE" method="pen" text="nun in dem Morge[n]" type="straight"/>
+        <underline language="DE" method="pen" text="farben mögen vor der Sonnen schein" type="straight"/>
+        <underline language="DE" method="pen" text="der Mon" type="straight"/>
+        <underline language="DE" method="pen" text="andere Sternen" type="straight"/>
+        <underline language="DE" method="pen" text="solche farben noch" type="straight"/>
+        <underline language="DE" method="pen" text="baß haben" type="straight"/>
+        <underline language="DE" method="pen" text="Euaporation jren" type="straight"/>
+        <underline language="DE" method="pen" text="schaum" type="double"/>
+        <underline language="DE" method="pen" text="die andern" type="straight"/>
+        <underline language="DE" method="pen" text="zubereitu[n]g hernach" type="straight"/>
+        <underline language="DE" method="pen" text="das Gewülck" type="straight"/>
+        <underline language="DE" method="pen" text="der Windt" type="straight"/>
+        <underline language="DE" method="pen" text="der Regen" type="straight"/>
+        <underline language="DE" method="pen" text="widerwertigen Planeten" type="straight"/>
+        <underline language="DE" method="pen" text="Mondt" type="straight"/>
+        <underline language="DE" method="pen" text="Windtsternen" type="straight"/>
+        
+        <symbol name="Mercury" place="right_margin"/>
+        
+    </annotation>
+</transcription>

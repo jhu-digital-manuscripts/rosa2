@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.003r.tif" reader="John Dee" signature="A iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="ad apparentiam imaginamenta porrigere, quorum nec mox appareat vestigium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Appare[n]tia no[n] existe[n]ti[um]</marginalia_text>   
+                </position>
+            </language>
+            <translation>The appearance of things which do not exist.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="numinum aduocatione, vti solitos Magos, per huiuscemodi consensum reru[m] tradit: Ex quo liquet Magiae alter[a]e partis artis infamia, quod numinis appellatione praetenta" hand="English_secretary" id="RCP9978:013:m0001">
+            <!-- FSF: I think this is English secretary -->
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Numinum appellatio. aduocatio p[er] aptas Ilices.</marginalia_text>    
+                </position>
+            </language>
+            <translation>The name of the divine will. Counsel through suitable holm oaks.</translation>  
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Quae fascinati imaginamur pr[a]eter imaginamenta, nullam habent actionis &amp; essentiae veritatem" type="straight"/>
+        <underline language="LA" method="pen" text="non facere simpliciter, sed vsq[ue] ad apparentiam" type="straight"/>
+        <underline language="LA" method="pen" text="Epoden" type="straight"/>
+        <underline language="LA" method="pen" text="multo grauius est" type="straight"/>
+        <underline id="RCP9978:013:u0001" language="LA" method="pen" text="etiam numinum aduovatione, vti solitos Magos, per huiuscemodi consensum reru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="numinis appellatione praetenta" type="straight"/>
+        
+        <physical_link>
+            <marginal_annotation idref="RCP9978:013:m0001"/>
+            <marginal_annotation idref="RCP9978:013:u0001"/>
+            <relation from="RCP9978:013:m0001" to="RCP9978:013:u0001" type="directed"/> 
+        </physical_link>
+          
+    </annotation>
+</transcription>

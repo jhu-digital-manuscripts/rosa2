@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.113r.tif" pagination="cix[r]" reader="Harvey" signature="Eei[r]"/>
+    <annotation>
+    	<!-- Marginalia -->
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					Romana[e] Virtutis singulare Exemplum, Ca[e]saris Militia: 
+    				</marginalia_text>
+    				<person name="Julius Caesar"/>
+    				<emphasis method="pen" text="Ca[e]saris Militia" type="straight"/>
+    			</position>
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					huic polemica[e] Arti, necessariò adiungenda; 
+    					Cum Strategematis Frontini, et Polya[e]ni; 
+    					Ca[e]tera omnia Militaria Documenta; Ipsa Exercitatio, 
+    					et Consuetudo Bellica, efficacissimè 
+    					supplebit; Hodierna[e] Experientia[e] uiuis 
+    					Instructionibus, Validisq[ue] Exemplis, strenuè assuefacta.
+    				</marginalia_text>
+    				<person name="Frontinus"/>
+    				<person name="Polyaenus"/>
+    				<book title="Stratagems"/> 
+    				<book title="The stratagems"/>
+    				<emphasis method="pen" text="Ipsa Exercitatio" type="straight"/>
+    			</position>
+    		</language>
+    		<translation>
+    			The warfare of Caesar is the single example of Roman virtue: 
+    			it is necessary to add it to this Art of War, along with the Stratagems
+    			of Frontinus and Polyaenus. 
+    			This very exercise, and military practice, will most easily complete
+    			all other military documents, actively adapted to the living instructions
+    			and powerful examples of today's experience.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="tail">
+    				<marginalia_text>
+    					{
+    					Owr Inglish militar Discipline, 
+    					Under General Norris, jn [the] Dialogus, 
+    					intitu[l]id, The Castle of Pollicy: 
+    					Under [the] Earle of Leicester, In his 
+    					owne Lawes, &amp; Ordinances. 
+    					The Spanish Discipline, under [the] Duke d'Alva, 
+    					&amp; [the] Prince of Parma, [the] best Discipline now in Esse, 
+    					newly discoursid by Sir Roger Williams.
+    				</marginalia_text>
+    				<person name="John Norris"/>
+    				<person name="Robert Dudley"/>
+    				<person name="Fernando Álvarez de Toledo"/>
+    				<person name="Alexander Farnese"/>
+    				<person name="Roger Williams"/>
+    				<book title="The castle, or picture of policy"/>
+    				<book title="Laws and Ordinances"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="tail">
+    				<marginalia_text>
+    					Virtus, et Fortuna humana, multis Experimentis coiuncta; 
+    					in Bello Potens. Olaus Magnus. 
+    					Ca[e]sar omnem Foelicitatem, Fortunamq[ue] ipsam tribuit, duabus 
+    					potentissimis Artibus, Scientia[e], et Virtuti: quarum omnis 
+    					Laus in Actione. Parùm sepulta[e] distat Inertia[e], 
+    					Celata Virtus.
+    				</marginalia_text>
+    				<person name="Olaus Magnus"/>
+    				<person name="Julius Caesar"/>
+    			</position>
+    		</language>
+    		<translation>
+    			Virtue, and human fortune, are connected in many experiences, 
+    			powerful in war. Olaus Magnus. 
+    			Caesar assigned every felicity and fortune itself to the two 
+    			most powerful skills: knowledge and virtue: all glory in action comes
+    			from these. Hidden virtue differs too little from burried ignorance.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="tail">
+    				<marginalia_text>
+    					Mie principal Autors for Warr, after much reading, &amp; long 
+    					consideration: Ca[e]sar, &amp; Vegetius: Machiauel, &amp; Gandino: 
+    					Ranzouius, &amp; Tetti: with owr Sutcliff, Sir Roger Williams, 
+    					&amp; Digges Stratioticos: all sharp, &amp; sound masters of Warr. 
+    					For [the] Art, Vegetius, Machiauel, &amp; Sutcliff: for Stratagems, 
+    					Gandino, &amp; Ranzouius: for Fortification, Pyrotechnic, &amp; 
+    					engins, Tetti, &amp; Digges: for [the] old Roman most Worthie 
+    					Discipline &amp; Action, Ca[e]sar: for [the] now Spanish, &amp; 
+    					Inglish excellent Discipline &amp; Action, Sir Ro[ger] Williams. 
+    					Autors enowgh; with [the] most cunning, &amp; Ualorous practis 
+    					in Esse.
+    				</marginalia_text>
+    				<person name="Julius Caesar"/>
+    				<person name="Vegetius"/>
+    				<person name="Machiavelli"/>
+    				<person name="Marcantonio Gandino"/>
+    				<person name="Heinrich Rantzau"/>
+    				<person name="Carlo Tetti"/>
+    				<person name="Matthew Sutcliffe"/>
+    				<person name="Roger Williams"/>
+    				<person name="Leonard Digges"/>
+    				<book title="Stratioticos"/>   <!-- Digges -->
+    				<book title="De re Militari"/> <!-- Vegetius -->
+    				<book title="Art of War"/> <!-- Machiavelli -->
+    				<book title="The Practice, Proceedings, and Lawes of Armes"/> <!-- Sutcliffe --> 
+    				<book title="Stratagemata"/> <!-- Gandino -->
+    				<book title="Commentarius Bellicus"/> <!-- Rantzau -->
+    				<book title="Trattato delle fortificazioni"/> <!-- Tetti -->
+    				<book title="De bello civili"/> <!-- Caesar -->
+    				<book title="A Brief Discourse of War"/> <!-- Williams -->
+    			</position>
+    		</language>
+    	</marginalia>
+    	
+    	<!-- Underlines -->
+	<underline language="EN" method="pen" text="state, as suffiseth" type="straight"/>
+    	<underline language="EN" method="pen" text="moste shorte time, to haue shewed" type="straight"/>
+    	<underline language="EN" method="pen" text="muche the aunciente orders auaile" type="straight"/>
+    	<underline language="EN" method="pen" text="increased it with glory" type="straight"/>
+    	<underline language="EN" method="pen" text="loste it without shame" type="straight"/>
+    	
+    	<!-- Symbols -->
+    	<symbol name="Mercury" place="left_margin"/>
+    	<symbol language="EN" name="SS" place="left_margin" text="Owr Inglish militar Discipline, Under General Norris, jn [the] Dialogus, intitu[l]id, The Castle of Pollicy: Under [the] Earle of Leicester, In his owne Lawes, &amp; Ordinances. The Spanish Discipline, under [the] Duke d'Alva,  &amp; [the] Prince of Parma, [the] best Discipline now in Esse, newly discoursid by Sir Roger Williams."/>
+    	
+    	<symbol name="SS" place="right_margin"/>
+    	
+
+    	<!-- Marks -->
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="increased it with glory"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="right_margin" text="increased it with glory"/>
+    	
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="state, as suffiseth"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="moste shorte time"/>    	
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="loste it without shame"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- Florence, translated -->
+    </annotation>
+</transcription>

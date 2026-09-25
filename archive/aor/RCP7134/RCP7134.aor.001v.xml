@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.001v.tif" pagination="title page verso" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Vltimo dece[m]bris nocte inte 9 et 12</marginalia_text> 
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>at Marlingborowgh</marginalia_text> <!-- FSF: I think this is an old spelling of Marlborough - marlingborowgh; according to wikipedia, in 1611, it was recorded as Marlinges boroe, see https://en.wikipedia.org/wiki/Marlborough,_Wiltshire -->
+                    <location name="Marlborough"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>nata puella anno 1552.</marginalia_text> 
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>She hath a great cha[p] toth on the left [side] of her mowth one the vpper jaw.</marginalia_text>
+                </position>
+            </language>
+            <translation>In the last night of december between 9 and twelve at Marlborough a girl was born in the year 1552. She hath a great [chak] toth on the left stier of her mowth and on the vpper jaw.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Die philippi et Jacobi anno 1530 nata Johanna soror Mri Perti mane hora .3.</marginalia_text> <!--JG: Unknown people-->
+                </position>
+            </language>
+            <translation>On the day of Philip and Jacob in the year 1530, Johanna, the sister of minister [Perti?] was born, at three in the morning.</translation> 
+            <!-- FSF: I am not sure how time was given in the sixteenth century, but if they followed the Roman time, on 3 May (Sts Philip and James day), the third hour would be roughly between 9 and 7; but I don't know what timing they'd follow, if modern hours would apply already -->
+            <!--JG: I reckon the Roman time keeping (https://en.wikipedia.org/wiki/Roman_timekeeping) in general was not in use anymore, although we do find references to the Calends etc-->
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        1553. Ver. 10 Martij hor.17. 2/5 [cateti] <!--JG: or 2/5?--> 
+                        <!-- FSF: I think it is 2/5; the 3 in 1553 above looks very different; not sure about cateti, though; it looks as if there is an s squeezed in between the a and t; but it is not a long s, but a short terminal one, so I might be wrong -->
+                        Ver. 1554 [undecimo] martij [undecima] hora. m[inutae] 19 [secunda] 20 ibidem.
+                    </marginalia_text> 
+                </position>
+            </language>
+            <translation>Spring 1553, 10th of March, 17 hours, 2/5 [???]. Spring 1554, 11th of March, 11th hour, 19 minutes, 20 seconds. Likewise.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" other_reader="modern hand">
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>59 D40/2</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+    </annotation>
+</transcription>

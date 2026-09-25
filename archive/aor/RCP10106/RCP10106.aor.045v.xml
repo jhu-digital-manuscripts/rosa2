@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.045v.tif" pagination="90" reader="John Dee" signature="[f 5[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="mutantur pleraque causis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Mutationu[m] cauß[a]e.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Reasons for changes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="consilium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Consilium</marginalia_text>
+                </position>
+            </language>
+            <translation>Advice.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="prooemium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Proemiu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Prelude.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="narratio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Narratio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Narrative.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Res duas in omni actu spectet orator" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Res Dua[e] oratori animadu[er]tendae</marginalia_text>
+                </position>
+            </language>
+            <translation>Two things orators should observe.</translation>
+        </marginalia>
+        
+       <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

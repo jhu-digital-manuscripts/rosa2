@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.267r.tif" pagination="513" reader="John Dee" signature="IzIzIz.i."/>
+    <annotation>
+        
+        <marginalia anchor_text="M. Drusus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        M Drusus
+                    </marginalia_text>
+                    <person name="Marcus Livius Drusus"/>
+                </position>
+            </language>
+            <translation>
+                Marcus Livius Drusus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="luctum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mortis luctus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The lament over death.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="perinde quasi" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        perinde quasi
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                As if.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="alta quada[m] me[n]te praeditus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        alta me[n]te p[rae]ditus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Gifted with a profound mind.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        docume[n]tu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Instruction.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quantas tragoedias excitat?" type="straight"/>
+        <underline language="LA" method="pen" text="quae cruentata antea caede honesti atque innocentis viri silebatur" type="straight"/>
+        <underline language="LA" method="pen" text="aute[m]" type="straight"/>
+        <underline language="LA" method="pen" text="perinde quasi exitus rerum, non hominum consilia legibus vindicentur" type="straight"/>
+        <underline language="LA" method="pen" text="luget Senatus, moeret Equester ordo, tota ciuitas confecta senio est, squallent municipia, afflictantur coloniae:              agri denique ipsi tam beneficum, tam salutarem, tam mansuetu[m] ciuem desyderant" type="straight"/>
+        <underline language="LA" method="pen" text="delegit è florentissimis ordinibus ipsa lumina" type="straight"/>
+        <underline language="LA" method="pen" text="propterea quòd consuetudines victus non possunt esse cum multis" type="straight"/>
+        <underline language="LA" method="pen" text="nisi iustitia[m], grauitate[m], humanitatem fide[m]. tulit vt" type="straight"/>
+        <underline language="LA" method="pen" text="resistere &amp; leuitati multitudinis, &amp; perditoru[m] temeritati" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">8</numeral>
+        
+        <drawing anchor_text="perinde quasi exitus rerum, non hominum consilia legibus vindicentur" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

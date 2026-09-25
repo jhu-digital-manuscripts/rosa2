@@ -1,0 +1,12 @@
+/* Digital Library of Medieval Manuscripts: slate and rose over ivory. */
+
+:root {
+  --rosa-header-bg: #1f2933;
+  --rosa-header-fg: #e6ecf3;
+  --rosa-header-muted: rgba(230, 236, 243, 0.68);
+  --rosa-title-color: #c4d2e3;
+  --rosa-accent: #9b2c3a;
+  --rosa-page-bg: #f3f2ef;
+  --rosa-banner-fallback: #2c3a47;
+  --rosa-banner-height: 64px;
+}

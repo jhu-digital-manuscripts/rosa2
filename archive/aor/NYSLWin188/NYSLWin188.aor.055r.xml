@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.055r.tif" pagination="55" reader="John Dee" signature="Oiij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Teufel" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Diabolus</marginalia_text>
+                </position>
+            </language>
+            <translation>The devil.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Teufel" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>fol. 54.</marginalia_text>
+                    <internal_ref>
+                        <target ref="NYSLWin188:00000121" text="54"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Folio 54.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="menschen besitzt vnd macht jn" type="straight"/>
+        <underline language="DE" method="pen" text="das viech" type="straight"/>
+        <underline language="DE" method="pen" text="auch zubesitzen" type="double"/>
+        <underline language="DE" method="pen" text="wohin jn lustet vnd Gott verhenges" type="straight"/>
+        <underline language="DE" method="pen" text="das er die seinen nemen mit einer vngestümmigkeit in das ewige fewer" type="straight"/>
+        <underline language="DE" method="pen" text="ein zerknirst Ror nicht zerbrechen ein glüenden putzen nicht außläschen" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.041v.tif" pagination="68" reader="John Dee" signature="[f.iiij.[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Albinus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Albinus.</marginalia_text>
+                    <person name="Albinus"/>
+                </position>
+             </language>
+            <translation>Albinus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="mundo prius ignotam &amp; inauditam, fuisse praefinitam à Deo in gloriam nostram ante ipsa secula. Ita" type="straight"/>
+        <underline language="LA" method="pen" text="ventus" type="double"/>
+        <underline language="LA" method="pen" text="sermo" type="straight"/>
+        <underline language="LA" method="pen" text="vocauisse" type="straight"/>
+        <underline language="LA" method="pen" text="Albinus" type="straight"/>
+        <underline language="LA" method="pen" text="appellauit" type="straight"/>
+        <underline language="LA" method="pen" text="appellari" type="double"/>
+        <underline language="LA" method="pen" text="fecit" type="straight"/>
+        <underline language="LA" method="pen" text="istas aspectabiles" type="double"/>
+        
+    </annotation>
+</transcription>

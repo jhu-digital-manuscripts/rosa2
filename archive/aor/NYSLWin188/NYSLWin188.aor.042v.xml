@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.042v.tif" pagination="[42[v]]" reader="John Dee" signature="[Lij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Sonnen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sol.</marginalia_text>
+                </position>
+            </language>
+            <translation>Sun.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="etwan nach dem Landt" hand="Italian">
+            <language ident="DE">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Etwan nach dem Landt.</marginalia_text>
+                </position>
+            </language>
+            <translation>Something according to the country.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cristallen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Chrystallus</marginalia_text>
+                </position>
+            </language>
+            <translation>Crystal.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Geist der Coagulation" hand="Italian" id="NYSLWin188:00000098:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Spiritus coagulationis tum in stellis tum in inserorib[us] humiditatibus</marginalia_text>
+                </position>
+            </language>
+            <translation>The spirit of the coagulation [is] both in the stars and in planted lower things.</translation> <!--JG: Unsure abt 'nserorib[us] humiditatibus'-->
+        </marginalia>
+        
+        <marginalia anchor_text="Glaueischen" hand="Italian">
+            <language ident="DE">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Glacieschen</marginalia_text> <!-- FSF: I think this should be transcribed like in the text, Glaueischen; the dot for the i just seems to have moved a bit; otherwise, I would transcribe it as on the following page, glacierschen -->
+                </position>
+            </language>
+            <translation/> <!--JG: No idea-->
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="die hitze ist in der Sonnen" type="straight"/>
+        <underline language="DE" method="pen" text="Landt" type="double"/>
+        <underline language="DE" method="pen" text="Sonnen mag nit allen Schnee schmeltzen" type="straight"/>
+        <underline language="DE" method="pen" text="der kälten ist" type="straight"/>
+        <underline language="DE" method="pen" text="Cristallen" type="straight"/>
+        <underline language="DE" method="pen" text="gesteinen" type="straight"/>
+        <underline language="DE" method="pen" text="die Materia" type="double"/>
+        <underline id="NYSLWin188:00000098:u0001" language="DE" method="pen" text="sie" type="double"/>
+        <underline language="DE" method="pen" text="in jnen selbst" type="straight"/>
+        <underline language="DE" method="pen" text="de[n] Geist der Coagulation haben" type="straight"/>
+        <underline language="DE" method="pen" text="so werde[n] sie" type="straight"/>
+        <underline id="NYSLWin188:00000098:u0002" language="DE" method="pen" text="vnd Glaueischen" type="straight"/>
+        
+        <physical_link>
+            <marginal_annotation idref="NYSLWin188:00000098:m0001"/>
+            <marginal_annotation idref="NYSLWin188:00000098:u0001"/>
+            <marginal_annotation idref="NYSLWin188:00000098:u0002"/>
+            
+            <relation from="NYSLWin188:00000098:m0001" to="NYSLWin188:00000098:u0001" type="directed"/>
+            <relation from="NYSLWin188:00000098:m0001" to="NYSLWin188:00000098:u0002" type="directed"/>
+                
+        </physical_link>
+        
+    </annotation>
+</transcription>

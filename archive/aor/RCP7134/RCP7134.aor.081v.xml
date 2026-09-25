@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.081v.tif" pagination="[74v]" reader="John Dee" signature="[T ij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ad bonu[m] igitur Astrologu[m] faciet co[n]stitutio h[a]ec. asce[n]de[n]s ♐, ♃ et ☿ co[n]uncti Nona dom[us] ♑ et ☉ cum ♀ in nona</marginalia_text>
+                    <symbol_in_text name="Sagittarius"/>
+                    <symbol_in_text name="Capricorn"/>
+                    <symbol_in_text name="Jupiter"/>
+                    <symbol_in_text name="Mercury"/>
+                    <symbol_in_text name="Sun"/>
+                    <symbol_in_text name="Venus"/>
+                </position>
+            </language>
+            <translation>Therefore this consitution will make for a good astrologer. Sagitarius ascending, Jupiter and Mercury joined in the ninth house; Capricorn and the Sun when Venus [is] in the ninth [house]. </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Saturnus &amp; Venus" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ingeniu[m] bonu[m] fit ex co[n]iunxtione ♄:♀.</marginalia_text>  
+                    <symbol_in_text name="Saturn"/>
+                    <symbol_in_text name="Venus"/>
+                </position>
+            </language>
+            <translation>A good disposition occurs from the conjunction of Saturn and Venus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="si uel Luna uel dominus ascendentis in eis fuerint" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>At luna pra[e]cipuè cu[m] domina ascendentis fuerit.</marginalia_text>
+                </position>
+            </language>
+            <translation>But particularly the moon as it was the lady was in the ascendants.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Sagittario" type="straight"/>
+        <underline language="LA" method="pen" text="uel Piscibus" type="straight"/>
+        <underline language="LA" method="pen" text="uel Mercurio" type="straight"/>
+        <underline language="LA" method="pen" text="Aries si ascendat" type="straight"/>
+        <underline language="LA" method="pen" text="Gemini fraudulentum, &amp; disciplinarum amatorem" type="straight"/>
+        <underline language="LA" method="pen" text="Virgo deditum disciplinis, rapacem crudelem" type="straight"/>
+        <underline language="LA" method="pen" text="Saturnus &amp; Venus" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]temporem disciplinaru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Ariete. signa enim aequinoctia, ad linguas, fixa ad disciplinas sunt aptiora" type="straight"/>
+        <underline language="LA" method="pen" text="libenter arma tractantes" type="straight"/>
+        <underline language="LA" method="pen" text="faciunt, si uel Luna uel dominus ascendentis in eis fuerint" type="straight"/>
+        
+        <errata amendedtext="aequinoctialia" copytext="aequinoctia" language="LA"/> 
+        
+    </annotation>
+</transcription>

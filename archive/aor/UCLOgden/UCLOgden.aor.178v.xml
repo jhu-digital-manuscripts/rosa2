@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.178v.tif" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="[minuitur] malitia infortunarum, cum in aliqua dignitatum suarum fuerit, &amp; econuerso" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Infortuna[e] malitia minuitur in dignitati existe[n]tis.</marginalia_text>
+                </position>
+            </language>
+            <translation>The wickedness of misfortunes is diminished in dignity of existence.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="recipiet" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Receptio</marginalia_text>
+                </position>
+            </language>
+            <translation>Reception.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="peregrinis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Peregrinus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Foreign.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Algebuthar.</marginalia_text> 
+                </position>
+            </language>
+            <translation>A separator.</translation> <!-- M.B. Not certain this is a Romanization of an Arabic astrological term 'jārbakhtār' see: https://books.google.co.uk/books?id=28NZAAAAcAAJ&pg=PA438&dq=Algebuthar&hl=en&sa=X&ved=0ahUKEwio9tawifjWAhUF5xoKHQTABek4HhDoAQgnMAA#v=onepage&q=Algebuthar&f=false  -->
+        </marginalia>
+        
+        <marginalia anchor_text="reuolutio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Reuolutio</marginalia_text>
+                </position>
+            </language>
+            <translation>Revolution.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Reuolutionis Mundi.</marginalia_text>
+                </position>
+            </language>
+            <translation>The revolution of the world.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="malitia infortunarum, cum in aliqua dignitatum suarum fuerit, &amp; econuerso." type="straight"/>
+        <underline language="LA" method="pen" text="impedimentum, cum fuerit in locis peregrinis" type="straight"/>
+        <underline language="LA" method="pen" text="Omnis res quae festinanter fit, &amp; festina[n]ter destruitur &amp; quae reitera[n]t, est in significatione Martis" type="straight"/>
+        <underline language="LA" method="pen" text="Ea quae accidunt in hoc seculo, sciuntur &amp; inuestigantur ex magna fortitudine superioris significatoris, &amp; ex sua eleuatione, &amp; si ea non fuerit, exquiritur à planeta" type="straight"/>
+        <underline language="LA" method="pen" text="iuerint omnes alii planetae" type="straight"/>
+        <underline language="LA" method="pen" text="unicuiq[ue] gradui da annu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Cum aliquis planera dominabitur alicui anno, ex annis mundi, in ipso gradu" type="straight"/>
+        <underline language="LA" method="pen" text="exaltionis apparebit eius significatio, &amp; eleuabitur rex in regione illa, &amp; in climate" type="straight"/>
+        <underline language="LA" method="pen" text="quo ab ipso significabitur" type="straight"/>
+        <underline language="LA" method="pen" text="Cum fuerit utrunque luminarium in eodem gradu, suae exaltionis in suo dominio, liberum ab infortuniis erit natus totius mundi rex,              &amp; semen eius haereditabit" type="straight"/>
+        <underline language="LA" method="pen" text="eius, obtinebit' q[ue] multo tempore" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <errata amendedtext="asce[n]detis" copytext="ascensionis" language="LA"/>
+        <errata amendedtext="vel" copytext="&amp;" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

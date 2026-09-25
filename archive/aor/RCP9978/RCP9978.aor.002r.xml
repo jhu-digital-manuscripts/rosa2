@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.002r.tif" reader="John Dee" signature="A ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Magiae compendio" hand="English_secretary" id="RCP9978:011:m0001">
+            <!-- FSF: I think this is English secretary -->
+          <language ident="LA">
+              <position book_orientation="0" place="head">
+                  <marginalia_text>Magia[e] Compendiu[m].</marginalia_text>
+              </position>
+          </language>
+          <translation>A compendium of magic.</translation>
+      </marginalia>
+        
+        <marginalia anchor_text="Magiam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Magia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Magic.</translation>
+        </marginalia>
+        
+        <underline id="RCP9978:011:u0001" language="LA" method="pen" text="hoc Magiae compendio" type="straight"/>
+        <underline language="LA" method="pen" text="praeclaram esse Philosophiae naturalis partem, vt ex sequentib[us]" type="straight"/>
+        <underline language="LA" method="pen" text="scilicet Magiam esse Philosophiae naturalis absolutam consumationem atque perfectissimam summam'q[ue] scientiam" type="straight"/>
+        <underline language="LA" method="pen" text="Alteram non fere aliud esse, praeter Philosophiae naturalis actiuam portionem, monumentis prodiderunt" type="straight"/>
+        
+        <physical_link>
+            <marginal_annotation idref="RCP9978:011:m0001"/>
+            <marginal_annotation idref="RCP9978:011:u0001"/>
+            <relation from="RCP9978:011:m0001" to="RCP9978:011:u0001" type="directed"/> 
+        </physical_link>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.014r.tif" pagination="14" reader="John Dee" signature="Dij"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ex fructibus eoru[m] cognoscetis eos</marginalia_text>
+                </position>
+            </language>
+            <translation>Having become acquainted with them from their fruits. </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Stral" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Fulmen.</marginalia_text>
+                </position>
+            </language>
+            <translation>Lightning.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Dann auß den Früchten werden sie erkent" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ex fructibus eoru[m] cognoscetis eos.</marginalia_text>
+                </position>
+            </language>
+            <translation>Having become acquainted with them from their fruits. </translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="vnd ist doch ein Corpus, dann seine Frucht seindt Corpora" type="straight"/>
+        <underline language="DE" method="pen" text="Corpus ist da wirdt keins geboren" type="straight"/>
+        <underline language="DE" method="pen" text="ist da wirdt es geboren" type="straight"/>
+        <underline language="DE" method="pen" text="holtz ist gegen dem Stral" type="straight"/>
+        <underline language="DE" method="pen" text="Stein gegen Daw" type="straight"/>
+        <underline language="DE" method="pen" text="Subtilitet vnd Operation" type="straight"/>
+        <underline language="DE" method="pen" text="auß den Früchten werden sie erkent" type="straight"/>
+        <underline language="DE" method="pen" text="auß wem" type="straight"/>
+        <underline language="DE" method="pen" text="vn[d] was dasselbige ist auß dem sie kommen seindt" type="straight"/>
+        <underline language="DE" method="pen" text="Vnd beim früchten gehet die Philosophia" type="straight"/>
+        <underline language="DE" method="pen" text="Mutter sondern beim Kinde" type="straight"/>
+        
+        <mark language="DE" method="pen" name="vertical_bar" place="left_margin" text="Dann auß den früchten werden sie erkent auß wem sie seindt vn[d] was dasselbige ist auß dem sie kommen seindt "/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="intext"/> <!-- FSF: should the text in the bracket be captured -->
+        <mark method="pen" name="bracket" place="intext"/>
+        
+    </annotation>
+</transcription>

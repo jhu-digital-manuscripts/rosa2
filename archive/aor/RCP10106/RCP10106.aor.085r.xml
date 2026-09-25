@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.085r.tif" pagination="169" reader="John Dee" signature="l 5"/> 
+    <annotation>
+        
+        <marginalia anchor_text="miseratio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Miseratio</marginalia_text>
+                </position>
+            </language>
+            <translation>Pity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="prooemiu[m] ab epilogo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Prooemiu[m] &amp; Epilogus</marginalia_text>
+                </position>
+            </language>
+            <translation>Prelude and epilogue.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="exitum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Exitus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Conclusion.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="duci prooemia solent" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vnde prooemia ducuntur.</marginalia_text>
+                </position>
+            </language>
+            <translation>Where the preludes are guided.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Caelio: Locus, unde pro Deiotaro: Habitus, unde pro Milone" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Cicero In { Ca[e]lio Deiotaro Milone Verrem</marginalia_text>
+                    <person name="Cicero"/>
+                    <book title="Pro Caelio"/>
+                    <book title="Pro rege Deiotaro"/>
+                    <book title="Pro Milone"/>
+                    <book title="In Verrem"/>
+                </position>
+            </language>
+            <translation>Cicero: Pro Caelio, Pro Deiotaro, Pro Milone, In Verrem.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Demosthenis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Demosthenes</marginalia_text>
+                    <person name="Demosthenes"/>
+                </position>
+            </language>
+            <translation>Demosthenes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Fiducia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>fiducia</marginalia_text>
+                </position>
+            </language>
+            <translation>Confidence.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quae plerunq[ue] attentu[m] quoqu[ue] iudicem faciunt, si res agi uidetur noua, magna, atrox, pertinens ad exemplum, praecipuè " hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Qu[a]e atte[n]tione[m] parant.</marginalia_text>
+                </position>
+            </language>
+            <translation>They get attention.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ex causa est" type="straight"/>
+        <underline language="LA" method="pen" text="prooemiu[m] ab epilogo credam, quòd in hoc praeterita, in illo futura dicantur" type="straight"/>
+        <underline language="LA" method="pen" text="tempus" type="straight"/>
+        <underline language="LA" method="pen" text="Locus" type="straight"/>
+        <underline language="LA" method="pen" text="Habitus" type="straight"/>
+        <underline language="LA" method="pen" text="Opinio" type="straight"/>
+        <underline language="LA" method="pen" text="Fiducia ipsa solet opinione arroga[n]tiae laborare" type="straight"/>
+        <underline language="LA" method="pen" text="optare, abominari, rogare, solicitum agere" type="straight"/>
+        <underline language="LA" method="pen" text="noua, magna, atrox, pertinens ad exemplum, praecipuè tamen" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+
+    </annotation>
+</transcription>

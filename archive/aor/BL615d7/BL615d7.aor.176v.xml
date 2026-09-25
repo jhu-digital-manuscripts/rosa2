@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.176v.tif" pagination="[176v]" reader="John Dee"/>    
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nota</marginalia_text>
+                </position>
+            </language> 
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="MCCCCXCVIII" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>1498.</marginalia_text>
+                </position>
+            </language> 
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="&amp; che ogni" type="straight"/>
+        <underline language="IT" method="pen" text="veniuano molti a congiungersi" type="straight"/>
+        <underline language="IT" method="pen" text="fingendosi l' vno zoppo" type="straight"/>
+        <underline language="IT" method="pen" text="LXX" type="double"/>
+        <underline language="IT" method="pen" text="XL" type="straight"/>
+        <underline language="IT" method="pen" text="che, per assecurar le loro vite, si erano partiti dal Prefetto, il" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

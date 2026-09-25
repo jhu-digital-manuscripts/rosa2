@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.057v.tif" pagination="434" reader="Harvey"/>	<!-- ABO 62left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.057v_0001" marginalia_continues_to="Ha2.058r_0001" marginalia_to_transcription="Ha2.058r.xml">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Entelechia primùm rhetorica, Logica, mathematica, [p. 435: philosophica: tum medica, iuridica, theologica.]
+							<!-- Continues onto facing page, head, Ha2.058r.xml -->
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Actualization first, then rhetoric, logic, mathematics [p. 435: philosphical: then medical, juridical, theological.]
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						s[upr]a /
+					</marginalia_text>
+					<internal_ref text="s[upr]a">
+						<target ref="FolgersHa2:Ha2.013v" text="[403]"/> <!--bisticcio-->
+						<target ref="FolgersHa2:Ha2.013v" text="[404]"/>
+					</internal_ref>
+				</position>
+			</language>
+			<translation>
+				[See] above.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						paradossi dell'vnico.
+					</marginalia_text>
+					<person name="Bernardo Accolti"/>
+				</position>
+			</language>
+			<translation>
+				Bernardo Accolti's paradoxes.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						( I. Motti nelle parole.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="EN">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						descants. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				( 1. Witty remarks based on words. Descants. )
+			</translation>
+		</marginalia>
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.057v_0002" marginalia_continues_to="Ha2.058r_0002" marginalia_to_transcription="Ha2.058r.xml">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Polemica, arcana in omni genere Secretoru[m], [p. 435: tandem etiam thaumaturgica, et panerga.]
+							<!-- Continues onto facing page, tail, Ha2.058r.xml -->
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Polemics, hidden in every sort of secret, [p. 435: and finally thaumaturgical, and panerga.]
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Dulci narratore nihil dulcius. Alij facundi, dicebat
+						Carolus V. sed meus Consiliarius, dulcior.
+					</marginalia_text>
+					<person name="Charles V"/>
+					<emphasis method="pen" text="Dulci narratore" type="straight"/>
+					<emphasis method="pen" text="Consiliarius, dulcior" type="straight"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Nothing is more pleasant than a pleasant narrator. Charles V used to say, "Others are eloquent,
+				but my adviser is more pleasant."
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Domus Vesta[e]. (
+						) focus perennis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The house of Vesta. The everlasting altar.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Motti gramatichi, et retorichi.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Grammatical and rhetorical witticisms.
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="MOTTI" type="straight"/>
+		<underline language="IT" method="pen" text="pochi motti" type="straight"/>
+		<underline language="IT" method="pen" text="donati molti," type="straight"/>
+		<underline language="IT" method="pen" text="molti altri, ch'egli nel suo" type="straight"/>
+		<underline language="IT" method="pen" text="riferiti ad altre" type="straight"/>
+		<underline language="IT" method="pen" text="hà di me fatto honoreuol" type="straight"/>
+		<underline language="IT" method="pen" text="questi pochi motti" type="straight"/>
+		<underline language="IT" method="pen" text="breue discorso" type="straight"/>
+		<underline language="IT" method="pen" text="riputato freddo" type="straight"/>
+		<underline language="IT" method="pen" text="sia senza arte" type="straight"/>
+		<underline language="IT" method="pen" text="qualche color d'essa" type="straight"/>
+		<underline language="IT" method="pen" text="I MOTTI son breui &amp; piaceuoli" type="straight"/>
+		<underline language="IT" method="pen" text="parlare urbano" type="straight"/>
+		<underline language="IT" method="pen" text="di passo in passo" type="straight"/>
+		<underline language="IT" method="pen" text="saporitissime" type="straight"/>
+		<underline language="IT" method="pen" text="granella di sale" type="straight"/>
+		<underline language="IT" method="pen" text="all'improuiso" type="straight"/>
+		<underline language="IT" method="pen" text="risposta" type="straight"/>
+		<underline language="IT" method="pen" text="tassar qualche" type="straight"/>
+		<underline language="IT" method="pen" text="parole" type="straight"/>
+		<underline language="IT" method="pen" text="cose" type="straight"/>
+		<underline language="IT" method="pen" text="nelle parole" type="straight"/>
+		<underline language="IT" method="pen" text="molti capi" type="straight"/>
+		<underline language="IT" method="pen" text="parole dubbiose" type="straight"/>
+		<underline language="IT" method="pen" text="o bicshizzo" type="straight"/>
+		<underline language="IT" method="pen" text="bisticcio" type="straight"/>
+		<underline language="IT" method="pen" text="cambiando lettere" type="straight"/>
+		<underline language="IT" method="pen" text="mutation de' casi" type="straight"/>
+		<underline language="IT" method="pen" text="il finger nomi" type="straight"/>
+		<underline language="IT" method="pen" text="rispondendo alle parole" type="straight"/>
+		<underline language="IT" method="pen" text="altro che quel che s'aspetta inganando la nostra" type="straight"/>
+		<underline language="IT" method="pen" text="gliantitheti, cioè" type="straight"/>
+		<underline language="IT" method="pen" text="il tacer quel che s'intende" type="straight"/>
+		<underline language="IT" method="pen" text="l'allegoria" type="straight"/>
+		<underline language="IT" method="pen" text="l'enimma" type="straight"/>
+		<underline language="IT" method="pen" text="prouerbi" type="straight"/>
+		<underline language="IT" method="pen" text="l'ironia" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="consiston nelle parole" type="straight"/>		
+		
+		<!-- Symbols -->
+		<symbol name="SS" place="head"/>
+		<symbol name="SS" place="left_margin"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- hono -->
+		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- piace- -->
+		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- di sa -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- sa -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- han -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- bicshiz -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- qua -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- dubi -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- l'al -->
+		
+	    	<!-- Left margin -->
+	    <mark method="pen" name="vertical_bar" place="left_margin"/> 
+		<mark method="pen" name="bracket" place="left_margin"/> <!-- o ... no  -->
+		<mark method="pen" name="circumflex" place="left_margin"/> <!-- o cambiando -->
+		<mark method="pen" name="circumflex" place="left_margin"/> <!-- mutation -->
+		<mark method="pen" name="circumflex" place="left_margin"/> <!-- diminution -->
+		<mark method="pen" name="circumflex" place="left_margin"/> <!-- alle parole -->
+		<mark method="pen" name="plus_sign" place="left_margin"/> <!-- che s'aspetta -->
+		<mark method="pen" name="circumflex" place="left_margin"/> <!-- theti -->
+		<mark method="pen" name="circumflex" place="left_margin"/> <!-- tar -->
+		<mark method="pen" name="circumflex" place="left_margin"/> <!-- legoria -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark method="pen" name="bracket" place="head"/> <!-- MOTTI -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="pochi motti"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="molti"/>
+		<mark method="pen" name="comma" place="intext"/> <!-- persone se -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="hà di me fatto honoreuol"/> 
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="questi pochi motti"/>
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="breue discorso"/>
+	    <mark method="pen" name="dot" place="intext"/> <!-- discorso, accioche -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- riputato freddo -->
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark -->
+		<mark method="pen" name="vertical_bar" place="intext"/> <!-- d'esse. I MOTTI -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="MOTTI"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="breui"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="urbano"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="saporitissime"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="all'improuiso"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- sposta, o -->
+		<mark method="pen" name="vertical_bar" place="intext"/> <!-- corpo: & -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="paroe"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="cose"/>
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="parole"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="bisticcio"/>
+		
+		<!-- Numerals -->
+		<numeral place="left_margin">I.</numeral>
+		<numeral language="IT" place="intext" text="nelle parole">I.</numeral>
+
+    </annotation>
+</transcription>

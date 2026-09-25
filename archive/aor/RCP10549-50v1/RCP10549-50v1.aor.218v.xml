@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.218v.tif" pagination="416" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Similitudo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Similarity.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nobilitati" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nobilitas.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Nobility.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tusculano" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Tusculanum
+                    </marginalia_text>
+                    <location name="Tusculum"/>
+                </position>
+            </language>
+            <translation>
+                From Tusculum.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="oculorum coniectum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        oculor[um] co[n]iectus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Focused with the eyes.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="solidam &amp; robustam &amp; assiduam frequentia[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        freque[n]tia solida robusta assidua. ]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Attendence, compact, robust, indefatigable.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="expertus in nobis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        expertus in nobis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Tested by us.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vicinitas" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        vicinitas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Vicinity.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Sed vide ne haec ipsa, quae despicis, huic suffragata sint. sic" type="straight"/>
+        <underline language="LA" method="pen" text="nobilitati" type="straight"/>
+        <underline language="LA" method="pen" text="multi sunt qui nobilitatem" type="straight"/>
+        <underline language="LA" method="pen" text="etenim ad caput &amp; ad fontem vtriusque generis veniamus" type="straight"/>
+        <underline language="LA" method="pen" text="mirandum in modum" type="straight"/>
+        <underline language="LA" method="pen" text="quorum honoribus agri propè dicam ipsi, montésque fauerunt" type="straight"/>
+        <underline language="LA" method="pen" text="etiam si nolis, erit tamen tibi fortasse de nobis aliquid, &amp; de" type="straight"/>
+        <underline language="LA" method="pen" text="vt nulla tota Italia frequentior dici" type="straight"/>
+        <underline language="LA" method="pen" text="quam quidem nunc" type="straight"/>
+        <underline language="LA" method="pen" text="dico expertus in nobis" type="straight"/>
+        <underline language="LA" method="pen" text="laudanda est, vel etiam amanda vicinitas retinens veterem illum officii morem, non infuscata maleuolentia, non assueta mendaciis, non fucata, non fallax,              non erudita artificio simulatio[nis]" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">11</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">11</numeral>
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing anchor_text="Vicinitas" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

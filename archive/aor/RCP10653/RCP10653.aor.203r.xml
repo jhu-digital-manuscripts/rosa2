@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.203r.tif" pagination="397" reader="John Dee" signature="Ll"/>
+    <annotation>
+        
+        <marginalia anchor_text="cum Vthredo Comite" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Vthredus Comes
+                    </marginalia_text>
+                    <person name="Uhtred the Bold"/>
+                </position>
+            </language>
+            <translation>
+                Earl Uhtred the Bold.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Turketillus, Comites Northanhumbrarum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Turketillus Comes
+                    </marginalia_text>
+                    <person name="Thurkill"/>
+                </position>
+            </language>
+            <translation>
+                Earl Thurkill.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Egricum Comitem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Egricus Comes
+                    </marginalia_text> 
+                    <person name="Eric, Earl of Northumberland"/>
+                </position>
+            </language>
+            <translation>
+                Earl Eric.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cnutonem in regem elegerunt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Cnuto eligitur Rex Angl[iae]
+                    </marginalia_text>
+                    <person name="Cnut the Great"/>
+                </position>
+            </language>
+            <translation>
+                Cnut the Great is elected King of England. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pontis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Pons Lond[inii].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                London Bridge.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quem Eadmundus" type="double"/>
+        <underline language="LA" method="pen" text="ipse à gente propria hostibus" type="double"/>
+        <underline language="LA" method="pen" text="Vthredo Comite" type="double"/>
+        <underline language="LA" method="pen" text="contra Danos cum" type="double"/>
+        <underline language="LA" method="pen" text="Vthredo Comite" type="double"/>
+        <underline language="LA" method="pen" text="Turebrando" type="double"/>
+        <underline language="LA" method="pen" text="viro Danico" type="straight"/>
+        <underline language="LA" method="pen" text="Vthredo" type="straight"/>
+        <underline language="LA" method="pen" text="Cnutonem" type="double"/>
+        <underline language="LA" method="pen" text="Soli ciues London, &amp; pars nobiliu[m], qui tunc te[m]poris ibide[m] p[er]manebant" type="straight"/>
+        <underline language="LA" method="pen" text="Eadmundum filium regis" type="straight"/>
+        <underline language="LA" method="pen" text="Ferreum latus" type="straight"/>
+        <underline language="LA" method="pen" text="in rege[m] vnanimiter exclamaueru[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="Quibus auditis" type="straight"/>
+        <underline language="LA" method="pen" text="magna pars populi totius regni" type="straight"/>
+        <underline language="LA" method="pen" text="illi se voluntariè" type="straight"/>
+        <underline language="LA" method="pen" text="scrobem profundam" type="straight"/>
+        <underline language="LA" method="pen" text="partem pontis" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; coronatione Eadmundi filij eius" type="straight"/>
+        
+        <errata amendedtext="ibidem" copytext="ibidem" language="LA"/>
+        
+    </annotation>
+</transcription>

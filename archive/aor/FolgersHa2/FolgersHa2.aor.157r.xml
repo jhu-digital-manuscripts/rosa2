@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.157r.tif" pagination="137" reader="Harvey" signature="[I5r]"/>	<!-- ABO 161right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Magis, magisq[ue] quotidiè.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="IT">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Piu oltre.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>More and more daily. Much further.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Comede Solem: et Hoc age.
+						Tu semper Perge: et latrent Canes. Sperne omnes
+						nugas, et iurgia.
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Fa[e]minaru[m], aut pueroru[m] acta.
+						Pugna ranaru[m], 
+						( et Muriu[m].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Devour the sun, and do this. You, always, go on: and the dogs may bark. Despise all trifles and quarrels. The deeds of women and boys. A fight of frogs and mice.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						There be dogg-daies enowgh, thowgh I make none.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Semper paratus. Diuina fluunt sua sponte: nusq[uam] ha[e]rent.
+						Eudromus et in conuersando hominum dulcissimus: et in
+						negociando virorum acerrimus. Semper idem.
+					</marginalia_text>
+					<person name="Eudromus"/>
+				</position>
+			</language>
+			<translation>Always prepared. Divine things emanate from their source: they never hesitate.
+			In conversing Eudromus is the most pleasant man, and in doing business he is the most keen of men. Always the same.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Vir viro quid pra[e]stet, nobilissimum Mundi Certamen.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A man who excells over man, the most noble contest of the world.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Angelus Furius: in aliorum conuersatione
+						semper angelus: in suis expeditionibus semper furius.
+					</marginalia_text>
+					<person name="Angelus Furius"/>
+				</position>
+			</language>
+			<translation>Angelus Furius, always an angel in the conversation of others. Always Furius in his expeditions.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="non come" type="straight"/>
+		<underline language="IT" method="pen" text="veramente" type="straight"/>
+		<underline language="IT" method="pen" text="Il vino douersi" type="straight"/>
+		<underline language="IT" method="pen" text="bere moderatamente" type="straight"/>
+		<underline language="IT" method="pen" text="che la vite" type="straight"/>
+		<underline language="IT" method="pen" text="di piacere" type="straight"/>
+		<underline language="IT" method="pen" text="secondo d'ebrietà" type="straight"/>
+		<underline language="IT" method="pen" text="di molestia" type="straight"/>
+		<underline language="IT" method="pen" text="il vino" type="straight"/>
+		<underline language="IT" method="pen" text="parlare" type="straight"/>
+		<underline language="IT" method="pen" text="star cheto" type="straight"/>
+		<underline language="IT" method="pen" text="dall'imbriacarsi" type="straight"/>
+		<underline language="IT" method="pen" text="sozze maniere de gli" type="straight"/>
+		<underline language="IT" method="pen" text="La gelosia partorire" type="straight"/>
+		<underline language="IT" method="pen" text="cattiui effetti" type="straight"/>
+		<underline language="IT" method="pen" text="Parigino, già" type="straight"/>
+		<underline language="IT" method="pen" text="saggia giouane" type="straight"/>
+		<underline language="IT" method="pen" text="geloso," type="straight"/>
+		<underline language="IT" method="pen" text="tutto la seguitaua" type="straight"/>
+		<underline language="IT" method="pen" text="gra[n] torto" type="straight"/>
+		<underline language="IT" method="pen" text="no[n] ostante ta[n]te guardie" type="straight"/>
+		<underline language="IT" method="pen" text="chel ch'ei meritaua" type="straight"/>
+		<underline language="IT" method="pen" text="no[n] gli hauria mai fatto" type="straight"/>
+		<underline language="IT" method="pen" text="stato huomo ragioneuole" type="straight"/>
+		<underline language="IT" method="pen" text="posto l'occhio addosso" type="straight"/>
+		<underline language="IT" method="pen" text="sua fidata camariera, à co[m]piacere" type="straight"/>
+		<underline language="IT" method="pen" text="la saggia giouane" type="straight"/>
+		<underline language="IT" method="pen" text="prendere la sera occasione d'hauer" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="ANACARSIDE filosofo, diceua che la vite porta tre     grappoli, il primo di piacere, il secondo d'ebrietà, &amp; il terzo di molestia."/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="plus_sign" place="left_margin"/>
+		
+		<mark method="pen" name="apostrophe" place="right_margin"/> <!-- cheto -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- huo -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ta[n] -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- rice -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- infastidi -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- giu -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ra -->
+		<mark method="pen" name="dot" place="right_margin"/> <!-- marito -->
+		
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- below 'moderatamente' -->
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- molestia. Et -->
+		<mark language="IT" method="pen" name="equal_sign" place="right_margin" text="parlare"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!-- parlare, & -->
+		<mark language="IT" method="pen" name="plus_sign" place="right_margin" text="star cheto"/>
+		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- effetti. -->
+		
+	</annotation>
+</transcription>

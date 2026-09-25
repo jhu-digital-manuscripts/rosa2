@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.149r.tif" pagination="121" reader="Harvey" signature="[H5r]"/>	<!-- ABO 153right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Piouano.
+					</marginalia_text>
+					<person name="Pievano Arlotto"/>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						vbi Thesaurus, ibi Cor.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Pievano Arlotto. Where there's treasure, there's a heart.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Stringe, stringe: Rhetorum
+						) Logice subtilissime:
+						Logicorum Rhetor acutiss[im]us.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Draw tight, draw tight: the most subtle logics of the rhetoricians:
+				the most acute rhetorician of the logicians. <!-- CG: I have no idea what to do with this. --> <!--JG: We'll ask a specialist-->
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Liberè in papam.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Freely against the pope.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Polytechni scopus semper practicus, et
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="EL">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						θαυματοποιητικός. <!-- Possible neologism, although verb form θαυματοποιέω exists.  -->
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						tam efficacissimus, qua[m] expeditissimus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The goal of the poly-technical man is always practice and wonder-making, both most effective and most expedient.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Meritis perpendite Causam.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Weigh the cause by its merits.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Sola scientia[e], et Virtutis a[e]mulatio generosissima.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Only the most generous emulation of science and virtue.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						The first Rationist, Euscopus. The first Entelechist,
+						Eudromus. Both peerles for bothe.
+					</marginalia_text>
+					<person name="Euscopus"/>
+					<person name="Eudromus"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="viene in potestà di gente" type="straight"/>
+		<underline language="IT" method="pen" text="chi liberato se n'esce" type="straight"/>
+		<underline language="IT" method="pen" text="Galeotto" type="straight"/>
+		<underline language="IT" method="pen" text="datemi vna limosina" type="straight"/>
+		<underline language="IT" method="pen" text="vscito dalle mani de' Catelani" type="straight"/>
+		<underline language="IT" method="pen" text="che tu la dessi à mè" type="straight"/>
+		<underline language="IT" method="pen" text="vi son 'entratato" type="straight"/>
+		<underline language="IT" method="pen" text="Papa Calisto era Catelano" type="straight"/>
+		<underline language="IT" method="pen" text="donare, à certi" type="straight"/>
+		<underline language="IT" method="pen" text="vno" type="straight"/>
+		<underline language="IT" method="pen" text="prestarne due" type="straight"/>
+		<underline language="IT" method="pen" text="due staia di grano" type="straight"/>
+		<underline language="IT" method="pen" text="vno in" type="straight"/>
+		<underline language="IT" method="pen" text="vno staio per" type="straight"/>
+		<underline language="IT" method="pen" text="non harrebbe" type="straight"/>
+		<underline language="IT" method="pen" text="mai rihauuto" type="straight"/>
+		<underline language="IT" method="pen" text="non rende" type="straight"/>
+		<underline language="IT" method="pen" text="di nuouo in presto" type="straight"/>
+		<underline language="IT" method="pen" text="presto tre staia" type="straight"/>
+		<underline language="IT" method="pen" text="sù di sopra nel" type="straight"/>
+		<underline language="IT" method="pen" text="non vi trouò grano, nè" type="straight"/>
+		<underline language="IT" method="pen" text="non vi hai tu riportato quello ch'io" type="straight"/>
+		<underline language="IT" method="pen" text="ve l'hauesti riportato" type="straight"/>
+		<underline language="IT" method="pen" text="harresti trouato" type="straight"/>
+		<underline language="IT" method="pen" text="rese, al Piouano" type="straight"/>
+		<underline language="IT" method="pen" text="che gli douea" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Catela -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- care -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- har -->
+		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- non hi hai tu -->
+		
+		<mark method="pen" name="comma" place="intext"/> <!-- vno che -->
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="mai rihauuto"/>
+
+    </annotation>
+</transcription>

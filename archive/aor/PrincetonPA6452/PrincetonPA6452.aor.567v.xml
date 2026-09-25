@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.567v.tif" reader="Harvey" signature="[Z5v]"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Gabrielis Harueij, et amicorum.</marginalia_text>
+                    <person name="Gabriel Harvey"/>
+                </position>
+            </language>
+            <translation>Of Gabriel Harvey and his friends.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Sola virtus, vtramq[ue] paginam facit.</marginalia_text>
+                    <emphasis method="pen" text="Sola virtus" type="straight"/>
+                </position>
+            </language>
+            <translation>Only virtue fills both sides of the account.</translation>
+        </marginalia>
+        
+    </annotation>
+</transcription>

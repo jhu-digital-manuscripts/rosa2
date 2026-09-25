@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonPE1137.004v.tif" pagination="[3v]" reader="Harvey" signature="[a.iii.v]"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="Obstinatulo meo" type="straight"/>
+        <underline language="LA" method="pen" text="quem à sacro fonte suscepi" type="straight"/>
+        <underline language="LA" method="pen" text="disiunctim benè" type="straight"/>
+        <underline language="LA" method="pen" text="coniunctim malè vestitus" type="straight"/>
+        <underline language="LA" method="pen" text="pertinax mulus" type="straight"/>
+        <underline language="LA" method="pen" text="viginti sunt plus minus anni" type="straight"/>
+        <underline language="LA" method="pen" text="me ingredi in bibliothecam tuam" type="straight"/>
+        <underline language="LA" method="pen" text="cu[m] nescio quo libro fueras occupatus" type="straight"/>
+        <underline language="LA" method="pen" text="vt corrigeres apud nos pronu[n]tiationem Graecam" type="straight"/>
+        <underline language="LA" method="pen" text="reperi in aduersario quodam observationes quasdam manu tua scriptas de scriptione" type="straight"/>
+        <underline language="LA" method="pen" text="scriptione nostrae" type="straight"/>
+        <underline language="LA" method="pen" text="nostrae linguae" type="straight"/>
+        <underline language="LA" method="pen" text="de ineptiis nostrae scripturae" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; de vi ac potestate literarum" type="straight"/>
+        <underline language="LA" method="pen" text="diversitatéque scribendi" type="straight"/>
+        
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark language="LA" method="pen" name="plus_sign" place="right_margin" text="viginti sunt plus minus anni"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="me ingredi in bibliothecam tuam"/>
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="cu[m] nescio quo libro fueras occupatus"/>
+        <mark method="pen" name="dot" place="right_margin"/> <!-- Graecam, reperi -->
+        <mark method="pen" name="dot" place="right_margin"/> <!-- memoria, & -->
+        
+    </annotation>
+</transcription>

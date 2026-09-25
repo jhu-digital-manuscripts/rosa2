@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.392r.tif" pagination="235" reader="John Dee" signature="[Pp.vi.]"/>   
+    <annotation>
+        
+        <marginalia anchor_text="articulatim diuidit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        articulalim diuidere.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To dismantle them into its parts.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Neptunum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Neptunus
+                    </marginalia_text>
+                    <person name="Neptune"/>
+                </position>
+            </language>
+            <translation>
+                Neptune.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="doerúmne prouide[n]tia mundus regatur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        An deoru[m] prouide[n]tia mundus regatur
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Whether the world is ruled by providence of gods.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Medea" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mede[a]e facinus
+                    </marginalia_text>
+                    <person name="Medea"/>
+                </position>
+            </language>
+            <translation>
+                Crimes of Medea.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Atreus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Atreus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Atreus.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vellus aure[m].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Golden fleece.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ratio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Reason.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Comparatio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Comparison.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="tradidit repagula" type="straight"/>
+        <underline language="LA" method="pen" text="articulatim diuidit" type="straight"/>
+        <underline language="LA" method="pen" text="moeror tardaret sequi" type="straight"/>
+        <underline language="LA" method="pen" text="acerbum cor contundam" type="straight"/>
+        <underline language="LA" method="pen" text="illexe" type="straight"/>
+        <underline language="LA" method="pen" text="satius fuerit nullam omnino nobis à diis immortalibus datam esse rationem, quàm tanta[m] cum pernicie datam. Vt" type="straight"/>
+        <underline language="LA" method="pen" text="aegrotis quia prodest raro, nocet saepissime,melius est non" type="straight"/>
+        
+        <mark language="LA" method="pen" name="tripunctus" place="right_margin" text="Ratio"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

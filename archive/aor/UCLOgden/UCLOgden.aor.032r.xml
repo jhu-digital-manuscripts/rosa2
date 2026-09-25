@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.032r.tif" pagination="47" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Sed ne te hominum fabulosa co[m]menta decipiant, &amp; ne quis putet à prudentissimis uiris genituram istam, sine causa esse compositam, omnia à nobis debe[n]t specialiter             explicai, ut secreti istius prudentissima ratio, omnibus diligentissimis expositionibus intimetur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        fabulosa ho[m]i[nu]m co[m]me[n]ta. nisi prudens subsit r[ati]o continuere debet
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Fabulous fiction of people. If the prudent is not near, reason ought to be continue.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tricentorum millium annoru[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Anni 300000
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                300000 years.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="redintegratio, per ἐκωύροσιμ, aut per κατακλυσμομ spatio perficiatur. His enim duobus generibus, ἀποκατάσασις fieri co[n]sueuit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mundi redintegratio q[ua]si duplex.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The restoration of the world seems twofold.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        R[ati]o ob qua[m] Petosyris et Necepso mundi genitura[m] fuerunt tale.
+                    </marginalia_text>
+                    <person name="Petosiris"/>
+                    <person name="Nekauba"/>
+                    <book title="Petosiris to Nechepso"/>
+                </position>
+            </language>
+            <translation>
+                The reason why Petosiris and Nechepso have these constellations this way.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Post ♂, dominandi ♀ tempus accepit, ut per gradus crescens hominum disciplina, etiam prudentiae ornamenta conciperet" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        At ♀ prude[n]ti[a]e repugnat tame[n]
+                    </marginalia_text>
+                    <symbol_in_text name="Venus"/>
+                </position>
+            </language>
+            <translation>
+                But Venus is opposed to prudence. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quae probant hominn[n] ad imitationem mu[n]di, &amp; similitudine[m] esse formatum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Homine[m] ad imitatione[m] mundi et similitudine[m] esse formatu[m] probat
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                It proves that man was modelled in imitation and similarity of the world.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Sed ne te hominum fabulosa co[m]menta decipiant" type="straight"/>
+        <underline language="LA" method="pen" text="prudentissimis uiris genituram" type="straight"/>
+        <underline language="LA" method="pen" text="ut secreti" type="double"/>
+        <underline language="LA" method="pen" text="Non fuit ista genitura mundi, nec enim" type="straight"/>
+        <underline language="LA" method="pen" text="mundus certum diem" type="straight"/>
+        <underline language="LA" method="pen" text="nec eò usq[ue] se intentio potuit humanae fragilitatis extendere, ut originem mundi, facili posset ratione conciptere, aut explicare, praesertim" type="straight"/>
+        <underline language="LA" method="pen" text="redintegratio" type="straight"/>
+        <underline language="EL" method="pen" text="ἐκπύροσιμ" type="straight"/> 
+        <underline language="EL" method="pen" text="κατακλυσμομ" type="straight"/> 
+        <underline language="LA" method="pen" text="sed ut esset, quod mathematici in genituris hominum, sequerentur" type="straight"/>
+        <underline language="LA" method="pen" text="quasi" type="triple"/>
+        <underline language="LA" method="pen" text="genituram" type="straight"/>
+        <underline language="LA" method="pen" text="explicare co[m]menta" type="straight"/>
+        <underline colour="red" language="LA" method="pen" text="mundi inculta fuit, &amp; horrida, &amp; agresti conuersatione effera, &amp; quia rudes homines, prima &amp; incognita sibi uestigia lucis ingressos" type="dotted"/> 
+        <underline language="LA" method="pen" text="etiam prudentiae ornamenta conciperet" type="straight"/>
+        <underline language="LA" method="pen" text="♀ esse" type="straight"/>
+        <underline language="LA" method="pen" text="se nouissimo ☾ coniungit" type="straight"/>
+        <underline colour="red" language="LA" method="pen" text="Ἀποκατάσασιμ uero per ἐκωύροσιμ &amp; per" type="dotted"/> 
+        <underline colour="red" language="LA" method="pen" text="κατακλυσμὸμ fieri" type="straight"/> 
+        <underline language="LA" method="pen" text="corporis completo uitae cursu, simili ratione dissoluitur" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark colour="red" method="pen" name="bracket" place="right_margin"/> 
+        <mark colour="red" method="pen" name="bracket" place="right_margin"/> 
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <errata amendedtext="hominen[n]" copytext="hominn[n]" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" colour="red" method="pen" place="right_margin" type="florilegium"/> 
+
+    </annotation>
+</transcription>

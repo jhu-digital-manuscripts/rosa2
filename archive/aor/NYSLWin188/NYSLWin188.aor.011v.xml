@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.011v.tif" pagination="[11[v]]" reader="John Dee" signature="[Ciij[v]]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian" id="NYSLWin188:00000036:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Coralloru[m] Tinctura</marginalia_text>
+                </position>
+            </language>
+            <translation>The tint of corals.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dann die Rötte ist ein reines Corpus in dem alle krafft ligt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Virtutes reru[m] in spiritibus suis solum.</marginalia_text>
+                </position>
+            </language>
+            <translation>The virtues of the things [are] only in their spirits.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Stral" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Fulmen</marginalia_text>
+                </position>
+            </language>
+            <translation>Lightning.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ein außgezogenes wesen von allen Corporibus gescheiden" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Essentia separata a corpore</marginalia_text>
+                </position>
+            </language>
+            <translation>The essence separated from the body.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sein Spiritus so gar vber andere veheme[n]tia vber andere alle" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Spiritus Coeli est maxima veheme[n]tia.</marginalia_text>
+                </position>
+            </language>
+            <translation>The spirit of heaven is the utmost vigorous.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="von seinem Element" type="straight"/>
+        <underline id="NYSLWin188:00000036:u0001" language="DE" method="pen" text="jre Rötte ist darzu gut" type="double"/>
+        <underline language="DE" method="pen" text="ein reines Corpus" type="triple"/>
+        <underline language="DE" method="pen" text="krafft ligt" type="triple"/>
+        <underline language="DE" method="pen" text="Stral" type="double"/>
+        <underline language="DE" method="pen" text="außgezogenes wesen von allen Corporibus" type="double"/>
+        <underline language="DE" method="pen" text="gescheiden allein in sein eigen leib" type="straight"/>
+        <underline language="DE" method="pen" text="reiniste vnd purgireste" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- wesen von-->
+        <mark method="pen" name="comma" place="intext"/> <!-- gescheiden allein-->
+        
+        <physical_link>
+            <marginal_annotation idref="NYSLWin188:00000036:m0001"/>
+            <marginal_annotation idref="NYSLWin188:00000036:u0001"/>
+            
+            <relation from="NYSLWin188:00000036:m0001" to="NYSLWin188:00000036:u0001" type="directed"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

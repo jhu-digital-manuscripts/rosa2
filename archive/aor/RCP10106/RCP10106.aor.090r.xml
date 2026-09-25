@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.090r.tif" pagination="179" reader="John Dee" signature="m 2"/> 
+    <annotation>
+        
+        <marginalia anchor_text="reus ambitus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Reus ambitus</marginalia_text>
+                </position>
+            </language>
+            <translation>Guilty of bribery.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ciceronis pro Cluentio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ci[ceronis] pro Cluentio</marginalia_text>
+                    <person name="Cicero"/>
+                    <book title="Pro Cluentio"/>
+                </position>
+            </language>
+            <translation>Cicero's Pro Cluentio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in Verrem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In Verrem</marginalia_text>
+                    <book title="In Verrem"/>
+                </position>
+            </language>
+            <translation>In Verrem.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Rabirio Posthumo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Rabirio.</marginalia_text>
+                    <book title="Pro Rabirio Posthumo"/>
+                </position>
+            </language>
+            <translation>Pro Rabirio Posthumo.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="iter Verris" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Verris Iter.</marginalia_text>
+                    <person name="Verres"/>
+                </position>
+            </language>
+            <translation>Verres’ journey.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ficta interim narratio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Narratio ficta</marginalia_text>
+                </position>
+            </language>
+            <translation>A fictitious narrative.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Roscio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Roscio</marginalia_text>
+                    <book title="Pro Roscio Amerino"/>
+                </position>
+            </language>
+            <translation>Pro Roscio Amerino.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Cluentia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>P[ro] Clue[n]tio.</marginalia_text>
+                    <book title="Pro Cluentio"/>
+                </position>
+            </language>
+            <translation>Pro Cluentio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in Verrem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In verrem</marginalia_text>
+                    <book title="In Verrem"/>
+                </position>
+            </language>
+            <translation>In Verrem.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="narratio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Narratio</marginalia_text>
+                </position>
+            </language>
+            <translation>Narrative.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="hòc etia[m] plures eiusmodi narrationes habere poterunt, quò plura crimina" type="straight"/>
+        <underline language="LA" method="pen" text="sed non ipsius causae narrationes" type="straight"/>
+        <underline language="LA" method="pen" text="Vel excutiendi" type="straight"/>
+        <underline language="LA" method="pen" text="Vel augendi" type="straight"/>
+        <underline language="LA" method="pen" text="Ficta interim" type="straight"/>
+        <underline language="LA" method="pen" text="uel ad soluendos" type="straight"/>
+        <underline language="LA" method="pen" text="Interdum per" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <mark method="pen" name="scribble" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

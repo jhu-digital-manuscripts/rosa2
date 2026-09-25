@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.031r.tif" pagination="61" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Sabbathiu[m] Sagam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sabbathius Saga</marginalia_text>   
+                </position>
+            </language>
+            <translation>The Witches' Sabbath.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Haitonus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Haitonus</marginalia_text>
+                    <person name="Haitonus"/>
+                </position>
+            </language>
+            <translation>Haitonus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sollicitari ad defectionem" type="straight"/>
+        <underline language="LA" method="pen" text="futuromniscius" type="straight"/>
+        <underline language="LA" method="pen" text="Haloen" type="straight"/>
+        <underline language="LA" method="pen" text="Haitonus" type="straight"/>
+        
+        <errata amendedtext="numina" copytext="nomina" language="LA"/>
+        
+    </annotation>
+</transcription>

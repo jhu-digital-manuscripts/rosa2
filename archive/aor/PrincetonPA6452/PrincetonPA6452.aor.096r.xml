@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.096r.tif" pagination="175" reader="Harvey" signature="P4[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        egregia monomachia: vndè Manlius, Torquatus.
+                    </marginalia_text>
+                    <person name="Marcus Manlius Capitolinus"/>
+                    <emphasis method="pen" text="monomachia" type="straight"/>
+                    <emphasis method="pen" text="Torquatus" type="straight"/>
+                </position>
+            </language>
+            <translation>An excellent duel, from which Manlius became ‘Torquatus’ [i.e.: wearing a collar, taken as spoil from his victim].
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Comparanda cum validissimis duelli exemplis s[upr]a, i[nfr]a. Eccè eodem isto libro Valerius, quasi diuino augurio Coruinus.
+                    </marginalia_text>
+                    <person name="Marcus Valerius Corvus"/>
+                    <internal_ref>
+                        <target ref="PrincetonPA6452:00000035" text="s[upr]a"/>
+                        <target ref="PrincetonPA6452:00000205" text="i[nfr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>This should be compared with the most vigorous examples of a duel, [see] above, below. 
+                See in that same book Valerius, by divine augury as it were ‘Corvinus’ [‘of a raven’].
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Hispano cingitur gladio" type="straight"/>
+        <underline language="LA" method="pen" text="aduersus Gallum stolidè l[a]etum, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="linguam etiam" type="straight"/>
+        <underline language="LA" method="pen" text="duo in medio armati" type="straight"/>
+        <underline language="LA" method="pen" text="speculati magis" type="straight"/>
+        <underline language="LA" method="pen" text="corpus alteri magnitudine" type="straight"/>
+        <underline language="LA" method="pen" text="media in" type="straight"/>
+        <underline language="LA" method="pen" text="militaris statura, modicaq[ue] in armis habilibus magis quàm decoris" type="straight"/>
+        <underline language="LA" method="pen" text="armorumq[ue] agitatio uana" type="straight"/>
+        <underline language="LA" method="pen" text="pectus animorum irae que tacitae" type="straight"/>
+        <underline language="LA" method="pen" text="omnem ferociam in discrimen ipsum certaminis" type="straight"/>
+        <underline language="LA" method="pen" text="tot circa" type="straight"/>
+        <underline language="LA" method="pen" text="animis spe metuq[ue] pendentib[us]" type="straight"/>
+        <underline language="LA" method="pen" text="Gallus uelut moles supernè" type="straight"/>
+        <underline language="LA" method="pen" text="Romanus mucrone" type="straight"/>
+        <underline language="LA" method="pen" text="scutum scuto imu[m] perculisset" type="straight"/>
+        <underline language="LA" method="pen" text="infinuasset se inter corpus, arma" type="straight"/>
+        <underline language="LA" method="pen" text="alteroq[ue] subinde ictu uentrem atque inguina hausit" type="straight"/>
+        <underline language="LA" method="pen" text="spacium ingens ruentem" type="straight"/>
+        <underline language="LA" method="pen" text="uno torque" type="straight"/>
+        <underline language="LA" method="pen" text="respersum cruore, collo cincudedit suo" type="straight"/>
+        <underline language="LA" method="pen" text="Defixerat pauor cum" type="straight"/>
+        <underline language="LA" method="pen" text="Romani alacres ab" type="straight"/>
+        <underline language="LA" method="pen" text="inter carminum propemodum" type="straight"/>
+        <underline language="LA" method="pen" text="Torquati cognomen" type="straight"/>
+        <underline language="LA" method="pen" text="familiaeq[ue] honori fuit" type="straight"/>
+        <underline language="LA" method="pen" text="coronam auream" type="straight"/>
+        <underline language="LA" method="pen" text="Petilius Balbus Cos." type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+    </annotation>
+</transcription>

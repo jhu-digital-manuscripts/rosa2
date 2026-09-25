@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+   <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+   
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <title>Le livre des fais et bonnes meurs du sage roy Charles Ve</title>
+         
+         </titleStmt>
+         
+         <publicationStmt>
+            
+            <distributor>MSEL</distributor>
+         
+         </publicationStmt>
+         
+         <notesStmt>
+            
+            <note rend="IDENTIFICATION">
+               
+               <p>Français 5025, Bibliothéque national de France, Paris. Paris, 1404-1405. </p>
+            
+            </note>
+            
+            <note rend="BASIC INFORMATION">
+               
+               <p>Parchment, 286 x 210 mm, 100 folios.</p>
+            
+            </note>
+            
+            <note rend="MATERIAL">
+               
+               <p> The yellowed <material>parchment</material> has a number of imperfections with holes, stains, irregular margins and and stitches. The <hi rend="italics">vis-à-vis</hi> rule is respected throughout the manuscript.</p>
+                  
+            </note>
+            
+            <note rend="QUIRES">
+               
+               <list>
+                  
+                  <head>Collation:</head>
+                  
+                  <item n="I">
+                     
+                     <locus>1</locus>
+                  
+                  </item>
+                  
+                  <item n="II">
+                     
+                     <locus from="2" to="9">2-9</locus>
+                  
+                  </item>
+                  
+                  <item n="III">
+                     
+                     <locus from="10" to="17">10-17</locus>
+                  
+                  </item>
+                  
+                  <item n="IV">
+                     
+                     <locus from="18" to="25">18-25</locus>
+                  
+                  </item>
+                  
+                  <item n="V">
+                     
+                     <locus from="26" to="27">26-27</locus>
+                     
+                  </item>
+                  
+                  <item n="VI">
+                     
+                     <locus from="28" to="35">28-35</locus>
+                     
+                  </item>
+                  
+                  <item n="VII">
+                     
+                     <locus from="36" to="43">36-43</locus>
+                     
+                  </item>
+                  
+                  <item n="VIII">
+                     
+                     <locus from="44" to="51">44-51</locus>
+                     
+                  </item>
+                  
+                  <item n="IX">
+                     
+                     <locus from="52" to="56">52-56</locus>, <locus>56bis</locus>, <locus from="57" to="58">57-58</locus>
+                     
+                  </item>
+                  
+                  <item n="X">
+                     
+                     <locus from="59" to="66">59-66</locus>
+                     
+                  </item>
+                  
+                  <item n="XI">
+                     
+                     <locus from="67" to="74">67-74</locus>
+                     
+                  </item>
+                  
+                  <item n="XII">
+                     
+                     <locus from="75" to="82">75-82</locus>                
+                  </item>
+                  
+                  <item n="XIII">
+                     
+                     <locus from="83" to="90">83-90</locus>
+                     
+                  </item>
+                  
+                  <item n="XIV">
+                     
+                     <locus from="91" to="98">91-98</locus>
+                     
+                  </item>
+                  
+                  <item n="XV">
+                     
+                     <locus from="99" to="garde inf.">99-garde inf.</locus>
+                     
+                  </item>
+                                              
+               </list>
+                
+               <p>(III, paper) + II (parchment) + 100 + I (parchment) + (III, paper). Modern foliation in ink on the top right corner is accurate and it goes from 1 to 99, with 56 being followed by 56bis. </p>
+            
+            </note>
+            
+            <note rend="LAYOUT">
+               
+               <p>There are thin light grey ruling marks on the folios. There is evidence of pricking in all the folios done with a triangular awl. There are two columns with 33 (sometimes 32) lines up to folio <locus>58</locus>, afterwards the columns have mostly 34 lines..</p>
+            
+            </note>
+            
+            <note rend="SCRIPT">
+               
+               <p>The text is written in dark brown ink and most of the rubics are bright red, while some are orange red. The text seems to have been the result of one scribal hand in a semicursive minuscule script that progressively became more exuberant. Punctuation marks are also used, especially the period and rarely the colon. There are numerous corrections done by the hand of the scribe.</p>
+            
+            </note>
+            
+            <note rend="DECORATION">
+               
+               <p>The ornamental decoration of the manuscript was made by one artist whose style was described as "aux brims de fantaisie". There are three large foliated initials in folios <locus>2</locus>, <locus>28</locus> and <locus>59</locus>, an S, C and O respectively in blue and pink over a gold leave background (vignette), which stand independently from the border. The text in folio <locus>2</locus> is fully framed by a foliate bar border in alternating blue and red with multiple gold leaf "sperm", while folios <locus>28</locus> and <locus>59</locus> are only partially framed by a foliate border with gold leaf "sperm". There are many smaller initials in gold leaf over a red or blue background.</p>
+                                                             
+            </note>
+            
+            <note rend="BINDING">
+               
+               <p> The manuscript has been binded in red moroccan leather with the royal coat of arms from the 18th century. On the spine one can read the title  <hi rend="italics">"HISTOIR/DV ROY/CHARL V/PAR CHRISTIN/DE/PIZAN"</hi>.</p>
+            </note>
+            
+            <note rend="HISTORY">
+               
+               <p>The manuscript can be dated to 1404-1405. This manuscript is contemporary to BnF 10153, de Modène, BE, αN.8.7. and Vat., rg., lat. 920. Similar corrections all over these four manuscript indicate that they were produced in series.</p>
+               <p>Provenance: Nicolas de Neufville, Lord of Villeroy (1542-1617), whose signature appear in folio <locus>1</locus>. The Cardinal Mazarin (1602-1661). In 1668, through the exchange between Colbert and the Collège des Quatre-Nations (Collège Mazarine), when most of the manuscripts of the cardinal entered the royal library. An old shelfmark appears on folio <locus>1</locus>, 9668 (Regius).</p>
+                  
+            </note>
+            
+            <note rend="TEXT">
+               
+               <p>It only contains <hi rend="italics">Le livre des fais et bonnes meurs du sage roy Charles V</hi>.</p>
+               
+               
+            
+            </note>
+            
+            <note rend="AUTHOR">
+              
+               <p>
+*The information given here comes from direct observation and from Ouy, Gilbert, Christine Reno and Inès Villela-Petit.<hi rend="italics"> Album Christine de Pizan </hi>. Turnhout: Brepols, 2012. </p>
+<p> Description by Mónica Ann Walker Vadillo</p>
+            
+            </note>
+         
+         </notesStmt>
+         
+         <sourceDesc>
+            
+            <bibl>
+               
+               <note type="format">manuscript</note>
+               
+               <note type="commonName">Français 5025</note>
+               
+               <title>Le livre des fais et bonnes meurs du sage roy Charles V</title>
+
+               
+               <extent>
+                  
+                  <measure quantity="100" unit="folios">100 folios</measure>
+                  
+                  <dimensions>
+                     
+                     <height unit="mm">286</height>
+                     
+                     <width unit="mm">210</width>
+                  
+                  </dimensions>
+               
+               </extent>
+               
+               <note type="illustrations">0</note>
+                        
+               
+               
+               
+               <note type="material">parchment</note>
+               
+               <pubPlace>Paris, France</pubPlace>
+     
+               <date notAfter="1500" notBefore="1400">15th century</date>
+            
+            </bibl>
+            
+            <msDesc>
+               
+               <msIdentifier>
+                  
+                  <settlement>Paris</settlement>
+                  
+                  <repository>Bibliothèque nationale de France</repository>
+                  
+                  <idno>Français 5025</idno>
+               
+               </msIdentifier>
+            
+               <msContents>
+                  <msItem n="1">
+                     <locus from="1r" to="100v">1r-100v</locus>
+                     <title>Le livre des fais et bonnes meurs du sage roy Charles V</title>
+                     <note type="textid">Le livre des fais et bonnes meurs du sage roy Charles V</note>
+                     <note type="folios">100</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">33</note>
+                     <note type="leavesPerGathering">8</note>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         
+         </sourceDesc>
+      
+      </fileDesc>
+   
+   </teiHeader>
+   
+   <text>
+      
+      <body>
+         
+         <div> </div>
+      
+      </body>
+   
+   </text>
+
+</TEI>

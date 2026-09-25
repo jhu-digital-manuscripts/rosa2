@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.016r.tif" reader="Harvey" signature="B[i[r]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="he vsed this polycie, ofte tymes to range out his hooste towarde the ryuer, and to recule ageyne to his campe, at lengthe his ennemye beinge perswaded" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cauendu[m], à Consuetudine suspiciosa. Vt i[nfr]a.</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0148" text="i[nfr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>One must be on one's guard against suspicious practice. As below.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="the see" type="straight"/>
+        <underline language="EN" method="pen" text="moche colder" type="straight"/>
+        <underline language="EN" method="pen" text="therfore no manne" type="straight"/>
+        <underline language="EN" method="pen" text="suspectynge hym, he pycked out all the" type="straight"/>
+        <underline language="EN" method="pen" text="warmed with wyne and oyle" type="straight"/>
+        <underline language="EN" method="pen" text="swymme so farre" type="straight"/>
+        <underline language="EN" method="pen" text="past the rockes" type="straight"/>
+        <underline language="EN" method="pen" text="so vnwares to set vpon, and" type="straight"/>
+        <underline language="EN" method="pen" text="ofte tymes" type="straight"/>
+        <underline language="EN" method="pen" text="range out his hooste towarde the" type="straight"/>
+        <underline language="EN" method="pen" text="to recule ageyne to his campe" type="straight"/>
+        <underline language="EN" method="pen" text="do so stylle" type="straight"/>
+        <underline language="EN" method="pen" text="sodaynly rushed" type="straight"/>
+        <underline language="EN" method="pen" text="Inde, to passe" type="straight"/>
+        <underline language="EN" method="pen" text="range oute busyly" type="straight"/>
+        <underline language="EN" method="pen" text="towarde the water," type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="suspectynge hym, he pycked out all the"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="warmed"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="oyle"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="vnwares"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="ofte tymes"/>
+        <mark method="pen" name="comma" place="intext"/> <!--fence, on-->
+        
+    </annotation>
+</transcription>

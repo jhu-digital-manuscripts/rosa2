@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.200v.tif" pagination="392" reader="John Dee" signature="[Kk iiij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Palingo" hand="Italian">  
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Palingus. the name of that family yet remayneth 1576  
+                    </marginalia_text> 
+                    <person name="Pallig"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Gunnildis, sororis Suani regis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Gunildis soror Regis suani.
+                    </marginalia_text>
+                    <person name="Gunhilde"/>
+                    <person name="Sweyn Forkbeard"/>
+                </position>
+            </language>
+            <translation>
+                Gunhilde, the sister of King Sweyn Forkbeard.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Eadrico" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Edricus.
+                    </marginalia_text>
+                    <person name="Eadric Streona"/>
+                </position>
+            </language>
+            <translation>
+                Eadric Streona.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Gunnildis, sororis Suani" type="straight"/>
+        <underline language="LA" method="pen" text="praefata Palingo Comiti" type="straight"/>
+        <underline language="LA" method="pen" text="pacis" type="straight"/>
+        <underline language="LA" method="pen" text="inter Anglos &amp; Danos" type="double"/>
+        <underline language="LA" method="pen" text="Eadrico Duci nequissimo" type="straight"/>
+        <underline language="LA" method="pen" text="qui &amp; illam nouissimè decapitari" type="straight"/>
+        <underline language="LA" method="pen" text="ad exteras regiones" type="triple"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- paucos in -->
+        <mark method="pen" name="comma" place="intext"/> <!-- Palingo Comiti --> 
+        
+    </annotation>
+</transcription>

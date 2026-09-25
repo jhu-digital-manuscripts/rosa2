@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.150r.tif" pagination="291" reader="John Dee" signature="Bb ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Offaeleia" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Offa[e] Leia
+                    </marginalia_text>
+                    <person name="Offa of Mercia"/>
+                    <emphasis method="pen" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                The lioness of Offa of Mercia.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Offaeleia" type="straight"/>
+        <underline language="LA" method="pen" text="viuente ei corregnauerat annis .viij. Egfridus" type="straight"/>
+        
+    </annotation>
+</transcription>

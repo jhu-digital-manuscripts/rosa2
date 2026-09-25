@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.110r.tif" pagination="43" reader="Harvey" signature="[C6r]"/>	<!-- ABO 114right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Patience, &amp; longanimitie, the vertu of vertues.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						In Ethicis, quanta inania. In Physicis, nihil
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						vacuum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				How many empty spaces there are in Ethics. In Physics, there is no void.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Semper dulcis animus: et ingenium semper Lautum; sed acre.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The mind is always sweet, and disposition always elegant, but keen.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Vanoru[m] plena sunt omnia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				All things are full of emptiness.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Asperius nihil est humili, cum surgit in altum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Nothing is more unrefined than the base man when he rises high.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Non curat Hippoclides. Contemnit
+					</marginalia_text>
+					<X-ref book_title="The Histories" language="LA" person="Herodotus" text="Non curat Hippoclides"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Axiophilus, omnia ad oppositum.
+					</marginalia_text>
+					<person name="Axiophilus"/>
+				</position>
+			</language>
+			<translation>
+				'Hippocleides doesn't care'. Axiophilus disdains, contrary to all things.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Placent apophthegmata, gnoma[e], epigrammata: sed si vnus
+						Liber eligendus, malim facetias: nisi cu[m] opus stratagematis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Aphorisms, sayings, and epigrams are pleasing, but if one book must be chosen,
+				I prefer jokes, if not a work of stratagems.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Vulcanus, igneus Deus: Æolus, äereus: Neptunus, aqueus: Pluto, terreus. Deus deoru[m] vnus.
+						Phocyon, Demosthenis securis: vt Diogenes, Platonis.
+					</marginalia_text>
+					<person name="Vulcan"/>
+					<person name="Aeolus"/>
+					<person name="Neptune"/>
+					<person name="Pluto"/>
+					<person name="Phocion"/>
+					<person name="Diogenes of Sinope"/>
+					<person name="Plato"/>
+					<X-ref book_title="Parallel Lives" language="LA" person="Plutarch" text="Demosthenis securis"/> 
+				</position>
+			</language>
+			<translation>
+				Vulcan, a fiery god; Aeolus, an airy one; Neptune, a watery one; Pluto, an earthy one. Only one God of gods.
+				Phocyon was the chopper of Demosthenes; just as Diogenes was the chopper of Plato.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						Diogenes, in sermone salsissimus: in
+					</marginalia_text>
+					<person name="Diogenes of Sinope"/>
+				</position>
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						vita patientissimus. Magis magnanimus, quàm Alexander: magis laboriosus,
+						quàm Hercules: gemina illius professio. Viri error, quòd in tantillis subiectis, tantus artifex.
+					</marginalia_text>
+					<person name="Alexander the Great"/>
+					<person name="Hercules"/>
+				</position>
+			</language>
+			<translation>
+				Diogenes was most witty in speech, most patient in life, more magnanimous than Alexander, more industrious than Hercules.
+				This was his double promise. The error of man lies in so much artistry in such small subjects.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="sale ad alto grado, spesso" type="straight"/>
+		<underline language="IT" method="pen" text="se medesimo" type="straight"/>
+		<underline language="IT" method="pen" text="non riconoscere" type="straight"/>
+		<underline language="IT" method="pen" text="gli Albizi andaua per" type="straight"/>
+		<underline language="IT" method="pen" text="Cardinalato era" type="straight"/>
+		<underline language="IT" method="pen" text="il Cardinale" type="straight"/>
+		<underline language="IT" method="pen" text="fingendo di non conoscerlo, glì" type="straight"/>
+		<underline language="IT" method="pen" text="Benedetto" type="straight"/>
+		<underline language="IT" method="pen" text="sdegnatosi, mutò subito" type="straight"/>
+		<underline language="IT" method="pen" text="à condolermi" type="straight"/>
+		<underline language="IT" method="pen" text="vero cecità, che vi" type="straight"/>
+		<underline language="IT" method="pen" text="tanto il vedere, l'udire" type="straight"/>
+		<underline language="IT" method="pen" text="altri sensi, che non" type="straight"/>
+		<underline language="IT" method="pen" text="voi non conoscete pur voi stessi" type="straight"/>
+		<underline language="IT" method="pen" text="Stoltitia di Principe" type="straight"/>
+		<underline language="IT" method="pen" text="sdegno di" type="straight"/>
+		<underline language="IT" method="pen" text="infedeltà di amico" type="straight"/>
+		<underline language="IT" method="pen" text="CANDAVLO Re di Lidia" type="straight"/>
+		<underline language="IT" method="pen" text="vna moglie" type="straight"/>
+		<underline language="IT" method="pen" text="della cui bellezza" type="straight"/>
+		<underline language="IT" method="pen" text="ognuno scoprire i secreti, che egli" type="straight"/>
+		<underline language="IT" method="pen" text="à Ligo suo amicissimo" type="straight"/>
+		<underline language="IT" method="pen" text="cosa si bella, s'accese" type="straight"/>
+		
+		<symbol name="Sun" place="right_margin"/>
+		
+		<symbol language="LA" name="SS" place="intext" text="Diogenes, in sermone salsissimus: in vita patientissimus. Magis magnanimus, quàm Alexander: magis laboriosus,    quàm Hercules: gemina illius professio. Viri error, quòd in tantillis subiectis, tantus artifex."/>
+		
+		<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- above marginal note 'semper dulcis' -->
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- gon -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Benedet -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Mon -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- inconti -->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="voi non conoscete pur voi stessi"/> 
+		
+    </annotation>
+</transcription>

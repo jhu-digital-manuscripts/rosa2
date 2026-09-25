@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.200r.tif" pagination="391" reader="John Dee" signature="Ll.iij."/>
+    <annotation>
+        
+        <marginalia anchor_text="Thomas Benforde filius Ducis Lancastriae, &amp; dictae Catherinae (nam sic censuit Dux cognominari filios eiusdem C. quos sibi genuerat) creatus est comes de Somerset" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tho[mas] Beaforde creatus comes Somer[set].</marginalia_text>
+                    <person name="Thomas Beaufort, 1st Duke of Exeter"/>
+                    <location name="Somerset"/>
+                </position>
+            </language>
+            <translation>Thomas Beaufort was created the Earl of Somerset.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quo dux Lancastri[a]e legitimari fecit sobolem quam " type="straight"/>
+        <underline language="LA" method="pen" text="susceperat de Catherina Svvynforde" type="straight"/>
+        <underline language="LA" method="pen" text="Item Thomas Benforde" type="straight"/>
+        <underline language="LA" method="pen" text="censuit Dux cognominari filios eiusdem C. quos sibi genuerat" type="straight"/>
+        <underline language="LA" method="pen" text="est comes de Somerset" type="straight"/>
+        
+        <errata amendedtext="Beaforde" copytext="Benforde" language="LA"/>
+        
+    </annotation>
+</transcription>

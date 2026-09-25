@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.189v.tif" pagination="202" reader="Harvey" signature="[N5v]"/>	<!-- ABO 194left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Omnia Roma[e] venalia. Pecunia[e] obediunt omnia.
+					</marginalia_text>
+					<location name="Rome"/>
+				</position>
+			</language>
+			<translation>Everything for sale in Rome. Everything obeys money.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Liberè in presbyteros.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Freely against priests.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						/ Habent spiritus, sed
+						non Eutrapeli: artes, sed non Chrysotechni:
+						() praxes, sed non panurgi: multa rara,
+						Sed non vnici.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+					<person name="Chrysotechnus"/>
+					<person name="Panurge"/>
+				</position>
+			</language>
+			<translation>They have spirit, but not that of Eutrapelus: they have arts, but not that of Chrysotechnus: they have practices, but not that of Panurgus: they have many rare things, but not that of .</translation>
+		</marginalia>
+		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.189v_0001" marginalia_continues_to="Ha2.190r_0001" marginalia_to_transcription="Ha2.190r.xml">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Qui in summis nauigat, in nummis anchorat. = [p. 203: = Magnoru[m] negociatoru[m] axioma chrematisticum.]
+						<!-- Continues onto facing page, tail, Ha2.190r -->
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>He who navigates in the highest spheres, anchors in money. [p. 203: The money-making axiom of the greatest business.] </translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Qualis est familiaris spiritus, talem expedit esse rem familiarem. Ad vsus vita[e]
+						necessarios: ad opes, et gratificandi facultatem: ad magnificos apparatus vita[e]q[ue]
+						cultus, cum elegantia, et Copia: ad perfruendas voluptates. Quantu[m] quisq[ue]
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						sua nummoru[m] seruat in arca,
+						Tantu[m] habet et fidei.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				It is advantageous that one's fortune be such as one's spirit. For the necessary uses in life; for wealth and for the power to bestow favors;
+				for the magnificent preparations and maintenance of life, with elegance and abundance; for enjoying pleasures. 
+				Everyone has much faith as they have saved in their chest of money.
+				</translation> 
+		</marginalia>
+		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.189v_0002" marginalia_continues_from="Ha2.190r_0001" marginalia_from_transcription="Ha2.190r.xml">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						<!-- Continued from facing page, left margin, Ha2.190r -->
+						Industria[e] quotidiè assuefactum, rebus dexterrimè administrandis
+						accommodatissimum: postremò maximè omnium indefatigabile.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>accustomed to daily industriousness; most suitable for conducting matters most skillfully; finally, out of everyone particularly indefatigable.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="che i preti" type="straight"/>
+		<underline language="IT" method="pen" text="crudel canaglia" type="straight"/>
+		<underline language="IT" method="pen" text="Le donne" type="straight"/>
+		<underline language="IT" method="pen" text="fatti egregij" type="straight"/>
+		<underline language="IT" method="pen" text="Imperadore Corrado" type="straight"/>
+		<underline language="IT" method="pen" text="Ghibellino" type="straight"/>
+		<underline language="IT" method="pen" text="Guelfo Duca" type="straight"/>
+		<underline language="IT" method="pen" text="le parti de' Ghibellini" type="straight"/>
+		<underline language="IT" method="pen" text="de' Guelfi" type="straight"/>
+		<underline language="IT" method="pen" text="Paolo Emilio" type="straight"/>
+		<underline language="IT" method="pen" text="meno egregio" type="straight"/>
+		<underline language="IT" method="pen" text="tagliare à pezzi tutti gli huomini" type="straight"/>
+		<underline language="IT" method="pen" text="donne" type="straight"/>
+		<underline language="IT" method="pen" text="ch'esse addosso portar" type="straight"/>
+		<underline language="IT" method="pen" text="magnanime donne, aiutate" type="straight"/>
+		<underline language="IT" method="pen" text="peso glihuomini" type="straight"/>
+		<underline language="IT" method="pen" text="gratia il Duca suo auuersario" type="straight"/>
+		<underline language="IT" method="pen" text="Questo nel nostro" type="straight"/>
+		<underline language="IT" method="pen" text="huomini" type="straight"/>
+		<underline language="IT" method="pen" text="cambieuolmente" type="straight"/>
+		<underline language="IT" method="pen" text="si distruggono" type="straight"/>
+		<underline language="IT" method="pen" text="Vipere, è tale" type="straight"/>
+		<underline language="IT" method="pen" text="schiaccia il capo, per" type="straight"/>
+		<underline language="IT" method="pen" text="dolcezza, al marito" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="quello ch'esse addosso portar potessero" type="straight"/>
+		<underline language="IT" method="chalk" text="Là onde quelle magnanime donne" type="straight"/>
+		<underline language="IT" method="chalk" text="portarne seco di peso glihuomini" type="straight"/>
+		<underline language="IT" method="chalk" text="Augusto non solamente non si" type="straight"/>
+		
+		<symbol name="JC" place="intext"/>
+		
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="La caritade, &amp; quindi auuien che i preti Sono sì ingordi, &amp; sì crudel canaglia "/>
+		
+		<mark language="IT" method="pen" name="plus_sign" place="right_margin" text="crudel canaglia"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!--Bauie-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--conces-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--grandis-->
+		
+		<mark method="pen" name="dot" place="intext"/> <!--caritade, &-->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Ghibellini"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Guelfi"/>
+
+    </annotation>
+</transcription>

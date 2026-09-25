@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.048r.tif" pagination="40" reader="John Dee"/>    
+    <annotation>
+        
+        <marginalia anchor_text="apparue mostra di terra" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Terra</marginalia_text>
+                </position>
+            </language>
+            <translation>Land.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="gratia di trenta scudi all' anno concessa in vita a colui, che prima hauesse veduto terra" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note reward to the first skryer of land.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="messa penna a colui, che dicesse di vederla" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note agayn, [??] / </marginalia_text> <!-- DO: can't work out the last two words, possibly 'price' from context? --> <!--KS: Hmm...-->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pencil" other_reader="Unknown">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>48</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="come Rabo di" type="straight"/>
+        <underline language="IT" method="pen" text="Coccale" type="straight"/>
+        <underline language="IT" method="pen" text="apparue mostra di terra" type="straight"/>
+        <underline language="IT" method="pen" text="farsene auttore" type="straight"/>
+        <underline language="IT" method="pen" text="gratia di trenta scudi all' anno concessa in vita a colui, che prima hauesse veduto terra" type="straight"/>
+        <underline language="IT" method="pen" text="messa penna a colui, che dicesse di vederla" type="straight"/>
+        <underline language="IT" method="pen" text="in termine di tre" type="straight"/>
+        <underline language="IT" method="pen" text="in segno di terra" type="straight"/>
+        <underline language="IT" method="pen" text="à mancare" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- DO: comma at 'anno concessa' --> 
+        
+    </annotation>
+</transcription>

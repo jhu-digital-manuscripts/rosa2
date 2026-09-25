@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonRB16th99a.014r.tif" pagination="14[r]" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>The good husbands Almanack.</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Twelue moonthes, much Worth.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Who goeth a borrowing, goeth a sorrowing." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>i[nfr]a.</marginalia_text>
+                    <internal_ref>
+                        <target ref="PrincetonRB16th99a:00000036" text="i[nfr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>[See] below.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="Septembers abstract" type="straight"/>
+        
+        <underline language="EN" method="pen" text="Now enter John" type="straight"/>
+        <underline language="EN" method="pen" text="champion vseth" type="straight"/>
+        <underline language="EN" method="pen" text="woodland refuseth" type="straight"/>
+        <underline language="EN" method="pen" text="reuiue" type="straight"/>
+        <underline language="EN" method="pen" text="thriuing, to thriue" type="straight"/>
+        <underline language="EN" method="pen" text="tits, and such" type="straight"/>
+        <underline language="EN" method="pen" text="gaineth much" type="straight"/>
+        <underline language="EN" method="pen" text="Horse strong, and light" type="straight"/>
+        <underline language="EN" method="pen" text="charges quite" type="straight"/>
+        <underline language="EN" method="pen" text="Light head, and purse" type="straight"/>
+        <underline language="EN" method="pen" text="what lightnes wurse" type="straight"/>
+        <underline language="EN" method="pen" text="goeth a borrowing" type="straight"/>
+        <underline language="EN" method="pen" text="a sorrowing" type="straight"/>
+        <underline language="EN" method="pen" text="lends, (but" type="straight"/>
+        <underline language="EN" method="pen" text="working tooles" type="straight"/>
+        <underline language="EN" method="pen" text="Grant soile hir lust" type="straight"/>
+        <underline language="EN" method="pen" text="Cleane rie that" type="straight"/>
+        <underline language="EN" method="pen" text="better crop mowes" type="straight"/>
+        <underline language="EN" method="pen" text="corne sowen in" type="straight"/>
+        <underline language="EN" method="pen" text="thick, nor too thin" type="straight"/>
+        <underline language="EN" method="pen" text="want of séede" type="straight"/>
+        <underline language="EN" method="pen" text="yéeldeth wéede" type="straight"/>
+        
+        <underline language="EN" method="pen" text="With sling, or bowe" type="straight"/>
+        <underline language="EN" method="pen" text="kéepe corne from Crowe" type="straight"/>
+        <underline language="EN" method="pen" text="Trench hedge and sorrow" type="straight"/>
+        <underline language="EN" method="pen" text="water may thorow" type="straight"/>
+        <underline language="EN" method="pen" text="Déepe dike saues" type="straight"/>
+        <underline language="EN" method="pen" text="from drouers, and such" type="straight"/>
+        <underline language="EN" method="pen" text="Sell webster thy wull" type="straight"/>
+        <underline language="EN" method="pen" text="For feare of drabs" type="straight"/>
+        <underline language="EN" method="pen" text="gather thy crabs" type="straight"/>
+        <underline language="EN" method="pen" text="Pluck fruite to last" type="straight"/>
+        <underline language="EN" method="pen" text="when Mihell is past" type="straight"/>
+        <underline language="EN" method="pen" text="fruit brused will rot" type="straight"/>
+        <underline language="EN" method="pen" text="Light ladder, and long," type="straight"/>
+        <underline language="EN" method="pen" text="Driue hiue" type="straight"/>
+        <underline language="EN" method="pen" text="for waxe, and for honie" type="straight"/>
+        <underline language="EN" method="pen" text="Good dwelling giue bée" type="straight"/>
+        <underline language="EN" method="pen" text="or hence goes shée" type="straight"/>
+        <underline language="EN" method="pen" text="Put bore in stie" type="straight"/>
+        
+        <symbol name="SS" place="head"/>
+        
+        <symbol name="Sun" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="Septembers abstract"/>
+        <mark language="EN" method="pen" name="bracket" place="head" text="Septembers abstract. Chap. 14."/>
+        
+        <mark method="chalk" name="horizontal_bar" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="fruit brused will rot"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="or hence goes shée"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="champion vseth"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="tits, and such"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="charges quite"/>
+        <mark language="EN" method="pen" name="bracket" place="intext" text="Light head, and purse, what lightnes wurse?"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="a sorrowing"/>
+        <mark language="EN" method="pen" name="bracket" place="intext" text="Few lends, (but fooles) their working tooles"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="kéepe corne from Crowe"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="that water may thorow"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="when Mihell is past"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="or hence goes shée"/>
+        
+    </annotation>
+</transcription>

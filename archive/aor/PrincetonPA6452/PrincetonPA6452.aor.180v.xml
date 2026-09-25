@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.180v.tif" pagination="344" reader="Harvey" signature="[ff4v]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Capuam Annibali Cannas fuisse" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Capua, Annibali Canna[e]. s[upr]a, 331.
+                    </marginalia_text>
+                    <person name="Hannibal"/>
+                    <location name="Capua"/>
+                    <location name="Cannae"/>
+                    <internal_ref>
+                        <target ref="PrincetonPA6452:00000353" text="331"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Capua, Hannibal's Cannae.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quos collaudatos Marcellus in subsidijs" type="straight"/>
+        <underline language="LA" method="pen" text="Pr[a]elium erat anceps" type="straight"/>
+        <underline language="LA" method="pen" text="summa ui &amp; duces hortabantur" type="straight"/>
+        <underline language="LA" method="pen" text="milites pugnabant" type="straight"/>
+        <underline language="LA" method="pen" text="Marcellus" type="straight"/>
+        <underline language="LA" method="pen" text="pugnent, marcere Campana luxuria, uino, scortis, omnibusq[ue] lustris" type="straight"/>
+        <underline language="LA" method="pen" text="abisse illam uim, uigoremq[ue]. dilapsa" type="straight"/>
+        <underline language="LA" method="pen" text="esse robora corporu[m], animoru[m]q[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="Pyren[a]ei, Alpiumq[ue] superata sint iuga" type="straight"/>
+        <underline language="LA" method="pen" text="reliquias illoru[m] uirorum, uix arma" type="straight"/>
+        <underline language="LA" method="pen" text="Capuam Annibali Canna fuisse. ibi" type="straight"/>
+        <underline language="LA" method="pen" text="uirtutem bellica[m]" type="straight"/>
+        <underline language="LA" method="pen" text="militarem disciplinam" type="straight"/>
+        <underline language="LA" method="pen" text="Marcellus suorum militum animos erigeret" type="straight"/>
+        <underline language="LA" method="pen" text="Annibal multo grauioribus" type="straight"/>
+        <underline language="LA" method="pen" text="Arma signaq[ue] eadem se aiebat" type="straight"/>
+        <underline language="LA" method="pen" text="Trebiam" type="straight"/>
+        <underline language="LA" method="pen" text="Thrasymenumq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="ad Cannas uiderit" type="straight"/>
+        <underline language="LA" method="pen" text="militem alium profectò" type="straight"/>
+        <underline language="LA" method="pen" text="hyberna Capuam duxisse" type="straight"/>
+        <underline language="LA" method="pen" text="inde eduxisse" type="straight"/>
+        <underline language="LA" method="pen" text="Marcellus" type="straight"/>
+        <underline language="LA" method="pen" text="tyrone milite, ac Nolanis" type="straight"/>
+        
+        <symbol language="LA" name="SS" place="left_margin" text="pugnent, marcere Campana luxuria, uino, scortis, omnibusq[ue] lustris"/>
+        
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--No-->
+        <mark method="pen" name="plus_sign" place="right_margin"/> 
+        <mark method="pen" name="plus_sign" place="right_margin"/> 
+        <mark method="pen" name="equal_sign" place="right_margin"/> 
+        <mark method="pen" name="dash" place="right_margin"/> <!--mem-->
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="abisse illam uim, uigoremq[ue]"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="Capuam"/>
+        
+    </annotation>
+</transcription>

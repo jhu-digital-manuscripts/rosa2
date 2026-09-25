@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC122bb35.frontmatter.flyleaf.018v.tif" reader="John Dee" signature="[evi[v]]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Euclides, στοιχειωτὴς, dictus</marginalia_text>
+                    <person name="Euclid"/>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>στοιχειωτὴς</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>dictus</marginalia_text>
+                </position>
+            </language>
+            <translation>Euclid is called teacher of the elements.</translation>
+        </marginalia>
+        
+        <underline language="EL" method="pen" text="ςοιχειωτὴς" type="straight"/>
+        
+    </annotation>
+</transcription>

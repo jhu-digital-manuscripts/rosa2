@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.036r.tif" pagination="71" reader="John Dee" signature="e 4"/>
+    <annotation>
+        
+        <marginalia anchor_text="arida prorus, neq[ue] ieiuna." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Historia arida aut jeiuina.</marginalia_text>
+                </position>
+            </language>
+            <translation>History, dry or meager.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="inopia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Inopia</marginalia_text>
+                </position>
+            </language>
+            <translation>Poverty.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sterilia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Or[ati]o[n]is sterilitas</marginalia_text>
+                </position>
+            </language>
+            <translation>Sterility of the speech.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Materiam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Or[ati]o[n]is materia</marginalia_text>
+                </position>
+            </language>
+            <translation>Substance of the speech.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Comparatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Comparison.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quotidianum sermone[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sermo quotidian[us]</marginalia_text>
+                </position>
+            </language>
+            <translation>Daily speech.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nudas atq[ue] inornatas indicare" type="straight"/>
+        <underline language="LA" method="pen" text="peius tamen illud quod ex inopia, quàm quod ex copita, uenit" type="straight"/>
+        <underline language="LA" method="pen" text="Facile remediu[m] est" type="straight"/>
+        <underline language="LA" method="pen" text="Sit modò unde excidi poßit, &amp; quod excalpi: Erit" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

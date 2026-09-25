@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.439v.tif" pagination="330" reader="John Dee" signature="[Xx.v.[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="SITI dicuntur ii, qui conditi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Conditi dicuntur siti</marginalia_text>
+                </position>
+            </language>
+            <translation>Those constructed are said to be built. </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="humati" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Humatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Burying.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="HOMINEM MORTUUM, inquit lex in XII. IN VRBE NE SEPELITO NEVE VRITO" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Homine[m] mortuu[m] in vrbe ne sepelito, neue virto</marginalia_text>
+                </position>
+            </language>
+            <translation>The dead shall not be buried or burned inside the city.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Publicolae, vt Tuberto" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Publicola Tubertus.</marginalia_text>
+                    <person name="Publius Valerius Publicola"/>
+                    <person name="Publius Postumius Tubertus"/>
+                </position>
+            </language>
+            <translation>Publius Valerius Publicola and Publius Postumius Tubertus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aedem Honoris" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ædes Honoris</marginalia_text>
+                </position>
+            </language>
+            <translation>The shrine of honour.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="locum publicum no[n] potuisse priuata religione obligari" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Locus publicus p[ri]uata religione obligari no[n] p[otes]t</marginalia_text>
+                </position>
+            </language>
+            <translation>A public place cannot be obliged by personal devotion.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="AElius, L. Acilius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sex. A[E]lius L[ucius] Acilius</marginalia_text>
+                    <person name="Sextus Aelius Paetus Catus"/>
+                    <person name="Lucius Acilius"/>
+                </position>
+            </language>
+            <translation>Sextus Aelius Paetus Catus and Lucius Acilius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="LESSVM" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Lessum.</marginalia_text>
+                </position>
+            </language>
+            <translation>Lamentation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vnctura" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vnctura.</marginalia_text>
+                </position>
+            </language>
+            <translation>Anointing.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="coronam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Corana.</marginalia_text>
+                </position>
+            </language>
+            <translation>Crown.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="sepilere &amp; vrere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sepilire Vrere.</marginalia_text>
+                </position>
+            </language>
+            <translation>To bury and to cremate.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="circumpotatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>circumpotatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Passing around a drinking cup.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="respersio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>respersio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Sprinkling.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="SITI dicuntur" type="straight"/>
+        <underline language="LA" method="pen" text="humus iniecta contegeret" type="straight"/>
+        <underline language="LA" method="pen" text="in os iniecta gleba est, locus" type="straight"/>
+        <underline language="LA" method="pen" text="vrbe sepeliri" type="straight"/>
+        <underline language="LA" method="pen" text="lugubrem" type="straight"/>
+        <underline language="LA" method="pen" text="circumpotatio" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        
+        <drawing anchor_text="coronam" book_orientation="0" method="pen" place="left_margin" type="crown"/>
+        
+    </annotation>
+</transcription>

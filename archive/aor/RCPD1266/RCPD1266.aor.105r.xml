@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.105r.tif" pagination="195" reader="John Dee" signature="r.ij."/>
+    <annotation>
+        
+        
+        <marginalia anchor_text="Epiphaniorum dies" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Epiphanioru[m] dies</marginalia_text>
+                </position>
+            </language>
+            <translation>The day of Epiphanies.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ad natiuitatem Domini &amp; eius Baptismum relatam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Duplex festum</marginalia_text>
+                </position>
+            </language>
+            <translation>A double festival.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="naturalem annum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Annus Naturalis</marginalia_text>
+                </position>
+            </language>
+            <translation>A natural year.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="mense igitur septimo sistendus" type="straight"/>
+        <underline language="LA" method="pen" text="decimoquinto die" type="straight"/>
+        <underline language="LA" method="pen" text="baptizati Domini tempus" type="straight"/>
+        <underline language="LA" method="pen" text="mensem septimum" type="straight"/>
+        <underline language="LA" method="pen" text="Baptizatur ergo Dominus, non eo die aut mense" type="straight"/>
+        <underline language="LA" method="pen" text="In quo videre licet, veritati sic appositas, aut potius comparatas cum veritate legis vmbras" type="straight"/>
+        <underline language="LA" method="pen" text="vt quò ceremoniae ipsae pertinerent, ex repr[a]esentatis rebus" type="straight"/>
+        <!-- FSF: I think Baptismi is also underlined -->
+        <underline language="LA" method="pen" text="de eiusdem" type="straight"/>
+        <underline language="LA" method="pen" text="intelligere eodem mense natu[m] fuisse Dominum" type="straight"/>
+        <underline language="LA" method="pen" text="baptizatus fuerit" type="straight"/>
+        <underline language="LA" method="pen" text="Epiphaniorum dies habuit nati Domini &amp; baptizati" type="straight"/>
+        <underline language="LA" method="pen" text="ad natiuitatem Domini &amp; eius Baptismum" type="straight"/>
+        <underline language="LA" method="pen" text="qui est Tisri Hebraeis" type="straight"/>
+        <underline language="LA" method="pen" text="Israelitica naturalem annum incipit" type="straight"/>
+        <underline language="LA" method="pen" text="anni initio" type="double"/>
+        <underline language="LA" method="pen" text="ad anni sui initiu[m]" type="grid"/>
+        <underline language="LA" method="pen" text="annum à suo" type="straight"/>
+        <underline language="LA" method="pen" text="quia naturalis" type="straight"/>
+        <underline language="LA" method="pen" text="mundi conditi" type="double"/>
+        <underline language="LA" method="pen" text="nati mundi &amp; renati" type="double"/>
+        <underline language="LA" method="pen" text="eadem &amp; paria esse" type="straight"/>
+        <underline language="LA" method="pen" text="enim Ecclesia annos suos à Septembri mense" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark method="pen" name="comma" place="intext"/>  <!-- dies habuit -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- fuit postea -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- missa atque -->
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.009v.tif" reader="John Dee" signature="[Biij[v]]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">  <!-- DO: You can anchor 'o[mn]es ... eq[ua]les' -->
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        O[mn]es anguli semicirculoru[m] su[n]t a[e]q[ua]les. quare et o[mn]es anguli co[n]tinge[n]tia[e] ergo no[n] possu[n]t p[er] angulos co[n]tinge[n]tia[e] diuidi vt quide[m] putabant.  <!-- DO: It looks like 'quida[m]', in which case, 'as some thought'? -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                All angles of semicircles are equal. And hence all angles are connected, therefore cannot be divided by the angles of those connected [angles] as indeed they thought.  <!-- DO: Not sure how to translate 'contingentiae' either. Maybe 'angles of proximity'? -->
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">   <!-- DO: Anchor 'affirmat[u]m'? -->
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Affirmatio. vniversaliter
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Universal affirmation.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="demo[n]strat[i]o[n]ib[us] euclidisticis) no[n] ex signis s[ed] ex c[aus]a" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Euclidis Demo[n]stratio[n]es no[n] a signis sed ex causa tame[n] no[n] su[n]t omnes tales
+                    </marginalia_text>
+                    <person name="Euclid"/>
+                </position>
+            </language>
+            <translation>
+                Euclid's demonstrations are not by signs, but by cause however not all are such.  
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        ex
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                From.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="v[niversa]l[ite]r" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vniversaliter
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Universally.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sequit[ur] q[uo]d ex p[ri]ncipio est petet" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        petitio p[ri]ncipij
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A petition of principle.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="p[ro]pter quid" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        p[ro]pter quid
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Because of which.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="o[mn]es anguli semicirc[u]lor[um] sunt eq[ua]les" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        O[mn]es anguli semicirculor[um] su[n]t a[e]q[ua]les
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                All angles of semicircles are equal. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Alia[m] tibi summe speculatione[m] q[uo]modo sup[er] a[e]q[ua]les circu[m]fere[n]tias, 
+                        vt a[e] K b et L a anguli a[e]quali <!-- the last letter really has disappeared in the gutter--> sicut l b a [et] K a b p[er] 27 tertij
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+             [..] for you another speculation how above the equal circumferences, as [ae] K b and La, equal angles, just as l b a [and] K a b through 27 of the third.                <!-- JG: no clue -->
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="signo" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Signu[m] vniversale
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A universal sign.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="no[n] ex signis s[ed] ex c[aus]a" type="straight"/> 
+        <underline language="LA" method="pen" text="opinio[n]e achimedis" type="straight"/>
+        <underline language="LA" method="pen" text="om[n]ino hoc e[st] v[niversa]l[ite]r" type="straight"/>
+        <underline language="LA" method="pen" text="esse eq[ua]les" type="straight"/>
+        <underline language="LA" method="pen" text="angulu[m] incisio[n]is" type="straight"/>
+        <underline language="LA" method="pen" text="ex p[ri]ncipio est petet" type="straight"/>
+        <underline language="LA" method="pen" text="manifestu[m] q[ue]m in o[mn]i silogismo oportet v[niversa]l[ite]r esse. Q[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="p[ro]pter q[ui]d" type="straight"/>
+        <underline language="LA" method="pen" text="esse a priori" type="straight"/>
+        <underline language="LA" method="pen" text="p[re]supposit[ur]" type="straight"/>
+        <underline language="LA" method="pen" text="eande[m] est impossibile. q[ua]re o[mn]es anguli semicirc[u]lor[um] sunt eq[ua]les" type="straight"/>
+        <underline language="LA" method="pen" text="q[uo]d equi arcus equas ang[u]los forma[n]t seu" type="straight"/>
+        <underline language="LA" method="pen" text="co[mmun]e sine signo v[niversa]l[ite]r non fit silogismus" type="straight"/>
+        
+        <mark method="pen" name="circumflex" place="intext"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- om[n]ino hoc -->
+        <mark method="pen" name="comma" place="intext"/> <!-- eiusde[m] cu[m] -->       
+        <mark method="pen" name="comma" place="intext"/> <!-- linea[m] idem -->   
+        <mark method="pen" name="comma" place="intext"/> <!-- eq[ua]les c[on]cludit[ur] -->
+        <mark method="pen" name="comma" place="intext"/> <!-- co[n]tra q[ua]re --> 
+        
+        <numeral place="intext">3</numeral>
+        
+        <errata amendedtext="equos" copytext="equas" language="LA"/>
+        <errata amendedtext="ce[n]tra" copytext="co[n]tra" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="geometric_diagram"/>
+        
+    </annotation>
+</transcription>

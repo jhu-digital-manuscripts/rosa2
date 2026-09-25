@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.146r.tif" pagination="291" reader="John Dee" signature="t 2"/> 
+    <annotation>
+        
+        <marginalia anchor_text="apologis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Apologi.</marginalia_text>
+                </position>
+            </language>
+            <translation>Fables</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="altercatione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Altercatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Dispute.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="loci plures, ex quibus dicta ridicula" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dictoru[m] ridicu[lorum] loci</marginalia_text>
+                </position>
+            </language>
+            <translation>Ridiculous sayings from many areas. </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ex amphibolia</marginalia_text>
+                </position>
+            </language>
+            <translation>From double entendre.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="scurrile Ciceronis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Scurrile Cicer[onis]</marginalia_text>
+                </position>
+            </language>
+            <translation>The scurrilous [remark] of Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Miloni" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Milone</marginalia_text>
+                    <book title="Pro Milone"/>
+                </position>
+            </language>
+            <translation>Pro Milone.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Bouillas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Bouilla[e]</marginalia_text>
+                    <location name="Bovillae"/>
+                </position>
+            </language>
+            <translation>Bovillae.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nero</marginalia_text>
+                    <person name="Tiberius"/>
+                </position>
+            </language>
+            <translation>Nero.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ma[n]ciparet" type="straight"/>
+        <underline language="LA" method="pen" text="repercutiendo" type="straight"/>
+        <underline language="LA" method="pen" text="sed quia raro bellè respondeant, nisi cum prosus rebus ipsis adiuuantur" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

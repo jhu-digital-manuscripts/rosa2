@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.118v.tif" pagination="228" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Oidvvald[us] fili[us] Osvvaldi regis, quem regina Eanfleda" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Rex Oiwaldus f[ilius] oswaldi regis et Eanfleda[e] R[eginae]  
+                    </marginalia_text>
+                    <person name="Œthelwald of Deira"/>
+                    <person name="Oswald of Northumbria"/>
+                    <person name="Eanflæd"/>
+                </position>
+            </language>
+            <translation>
+                Œthelwald of Deira, son of King Oswald and Eanflæd.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Oidvvald[us]" type="straight"/>
+        
+    </annotation>
+</transcription>

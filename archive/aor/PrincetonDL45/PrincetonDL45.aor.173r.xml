@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonDL45.173r.tif" pagination="345" reader="Harvey" signature="GG[ir]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        jmperium, atq[ue] regimen affectantes.
+                        Veteratoriè.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Desiring authority and control. 
+                Cunningly.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="causidici" type="straight"/>
+        <underline language="LA" method="pen" text="iudices" type="straight"/>
+        <underline language="LA" method="pen" text="per solitudines" type="straight"/>
+        <underline language="LA" method="pen" text="conformem legem inueniunt" type="straight"/>
+        <underline language="LA" method="pen" text="in aquis iustitiam exerceant" type="straight"/>
+        <underline language="LA" method="pen" text="pessimis artibus" type="straight"/>
+        <underline language="LA" method="pen" text="Videntes viri" type="straight"/>
+        <underline language="LA" method="pen" text="infinita mendacia conflant" type="straight"/>
+        <underline language="LA" method="pen" text="simulantes se" type="straight"/>
+        <underline language="LA" method="pen" text="tumultuarios" type="straight"/>
+        <underline language="LA" method="pen" text="verso clypeo" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/> <!-- fictis additis lachyrmis -->
+        <mark method="pen" name="bracket" place="intext"/>
+        
+    </annotation>
+</transcription>

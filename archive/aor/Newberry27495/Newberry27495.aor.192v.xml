@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.192v.tif" reader="Harvey" signature="[Zz.ii.[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Regard of Circu[m]stauncis: with respectiue
+                    </marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Consideration, &amp; discretion.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        A politique Counselour.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="270" place="intext">
+                    <marginalia_text>
+                        The court of ciuil courtesie
+                    </marginalia_text>
+                    <book title="The court of civill courtesie"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="270" place="left_margin">
+                    <marginalia_text>
+                        (ad unguem)
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="270" place="left_margin">
+                    <marginalia_text>
+                        Mr Gorings Familiar Spirit: with certen courtlie interteinments of his owne; especially at meeting &amp; parting.
+                    </marginalia_text>
+                    <person name="George Goring"/>
+                </position>
+            </language>
+            <translation>
+                'The court of ciuil courtesie' (by heart), Master Gorings Familiar Spirit: with certen courtlie interteinments of his owne; especially at meeting &amp; parting.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Acta loquant.
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        He must neuer
+                    </marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        be
+                    </marginalia_text>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        to seeke in [the]
+                    </marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Rules of
+                    </marginalia_text>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        [the] Ciuil Law:
+                    </marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        or [the] militar Rules,
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Machiauel
+                    </marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        della guerra.
+                    </marginalia_text>
+                    <person name="Machiavelli"/>
+                    <book title="Art of War"/>
+                </position>
+            </language>
+            <translation>
+                Actions speak. He must neuer be to seeke in the rules of the civil law: or the militar rules, Machiavelli's 'The art of war'.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Vt Aulicum; sic alium quemq[ue] professorem, decet esse peritissimum sua[e] in primis professionis.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                For the courtier, just as for every professor, it is necessary to be most skilled in the principle parts of one's profession. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        [..]e leuels. <!--JG: No clue what the first word is-->
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Vt ameris, amabilis esto.
+                        An fortuna in nostra potestate?
+                    </marginalia_text>
+                    <X-ref book_title="Ars amatoria" language="LA" person="Ovid" text=" Vt ameris, amabilis esto"/> <!--2: 107-->
+                </position>
+            </language>
+            <translation>
+                "Be lovely, so that you may be loved." Whether fortune is in our power?
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        An vt Ars causa Virtutis; sic virtus, Fortuna[e]? Fortuna, Foelicitatis?
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Whether, as art is the cause of virtue, thus virtue is the cause of fortune? Whether fortune is the cause of hapiness? 
+            </translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="to presse" type="straight"/>
+        <underline language="EN" method="pen" text="what" type="straight"/>
+        <underline language="EN" method="pen" text="that he doeth" type="straight"/>
+        <underline language="EN" method="pen" text="or speaketh" type="straight"/>
+        <underline language="EN" method="pen" text="presence of whom" type="straight"/>
+        <underline language="EN" method="pen" text="what time" type="straight"/>
+        <underline language="EN" method="pen" text="why" type="straight"/>
+        <underline language="EN" method="pen" text="his profession" type="straight"/>
+        <underline language="EN" method="pen" text="the ende, and the meanes" type="straight"/>
+        <underline language="EN" method="pen" text="FINAL END OF A" type="straight"/>
+        <underline language="EN" method="pen" text="tende" type="straight"/>
+        <underline language="EN" method="pen" text="An Instructer and Teacer of his Prince" type="straight"/>
+        <underline language="EN" method="pen" text="inclininge him to vertuous practises" type="straight"/>
+        <underline language="EN" method="pen" text="francke" type="straight"/>
+        <underline language="EN" method="pen" text="and free with" type="straight"/>
+        <underline language="EN" method="pen" text="once in fauour" type="straight"/>
+        <underline language="EN" method="pen" text="touching his honour and estimation" type="straight"/>
+        <underline language="EN" method="pen" text="minde to folow vertue" type="straight"/>
+        <underline language="EN" method="pen" text="to shut his eares against flatterers" type="straight"/>
+        <underline language="EN" method="pen" text="self leekinge and all ignorance" type="straight"/>
+        <underline language="EN" method="pen" text="His conuersation with women to be alwayes" type="straight"/>
+        <underline language="EN" method="pen" text="meeke" type="straight"/>
+        <underline language="EN" method="pen" text="lowlie" type="straight"/>
+        <underline language="EN" method="pen" text="seruiceable" type="straight"/>
+        <underline language="EN" method="pen" text="meerie" type="straight"/>
+        <underline language="EN" method="pen" text="iestes, nippes" type="straight"/>
+        <underline language="EN" method="pen" text="frumpes" type="straight"/>
+        <underline language="EN" method="pen" text="loue towarde women" type="straight"/>
+        <underline language="EN" method="pen" text="and godlye" type="straight"/>
+        <underline language="EN" method="pen" text="with reason" type="straight"/>
+        <underline language="EN" method="pen" text="the beawtue of" type="straight"/>
+        <underline language="EN" method="pen" text="minde, then" type="straight"/>
+        <underline language="EN" method="pen" text="of the bodie" type="straight"/>
+        <underline language="EN" method="pen" text="withdrawe his maistresse" type="straight"/>
+        <underline language="EN" method="pen" text="from his felowlouer" type="straight"/>
+        <underline language="EN" method="pen" text="reuilinge or" type="straight"/>
+        <underline language="EN" method="pen" text="vertuous deedes" type="straight"/>
+        <underline language="EN" method="pen" text="deseruing more then he" type="straight"/>
+
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="hash" place="left_margin" text="An Instructer and Teacher of his Prince"/>
+        <mark language="EN" method="pen" name="hash" place="left_margin" text="touching his honour and estimation"/>
+        <mark language="EN" method="pen" name="quotation_mark" place="left_margin" text="to shut his eares against flatterers"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="bracket" place="right_margin" text="To consyder well what it is that he doeth or speaketh, where, in presence of whom, what              time, why, his age, his profession, the ende, and the meanes."/>
+        <mark language="EN" method="pen" name="quotation_mark" place="right_margin" text="His conuersation with women to be alwayes"/>
+        <mark method="chalk" name="vertical_bar" place="right_margin"/> <!-- above marginal note -->
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="vertuous deedes"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="what"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- is, that -->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="doeth"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- doeth, or -->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="speaketh"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- speaketh -->
+        <mark method="pen" name="dot" place="intext"/> <!-- why, his -->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="his profession"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- profession, the -->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="ende"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="meanes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="be francke"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="once in fauour"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="touching his honour and estimation"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- estimation, alwayes -->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="His conuersation with women to be alwayes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="gentle"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- meerie, not -->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="vertuous deedes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="deseruing more then"/>
+
+    </annotation>
+</transcription>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.223r.tif" pagination="437" reader="John Dee" signature="Oo iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="ficta fuga" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ficta fuga
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A fictitious flight.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Rolla[n]di cantus
+                    </marginalia_text>
+                    <book title="The Song of Roland"/>
+                </position>
+            </language>
+            <translation>
+                The Song of Roland.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ad arma" type="straight"/>
+        <underline language="LA" method="pen" text="versa sunt aliqua penes nos" type="straight"/>
+        <underline language="LA" method="pen" text="Ducatus mei in regnu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Rolla[n]di cantu" type="double"/>
+        <underline language="LA" method="pen" text="vt ficta fuga" type="straight"/> 
+        <underline language="LA" method="pen" text="Parthorum" type="straight"/>
+        <underline language="LA" method="pen" text="quasi araena sine calce" type="straight"/>
+        
+    </annotation>
+</transcription>

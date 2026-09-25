@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.110v.tif" pagination="220" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Cicero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cicero</marginalia_text>
+                </position>
+            </language>
+            <translation>Cicero</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἀπόδειξις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ἀπόδειξις</marginalia_text>
+                </position>
+            </language>
+            <translation>Proof.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Caecilius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ca[e]cilius</marginalia_text>
+                    <person name="Caecilius of Calacte"/>
+                </position>
+            </language>
+            <translation>Caecilius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="natura est omnium argume[n]toru[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Argume[n]tum</marginalia_text>
+                </position>
+            </language>
+            <translation>Argument.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="πίστεις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>πίστεις</marginalia_text>
+                </position>
+            </language>
+            <translation>Rhetorical proof.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Paedianus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pa[e]dianus</marginalia_text>
+                    <person name="Asconius Pedianus"/>
+                </position>
+            </language>
+            <translation>Pedianus.</translation>
+        </marginalia>
+        
+        <numeral place="left_margin">1</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">5</numeral>
+        <numeral place="left_margin">6</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

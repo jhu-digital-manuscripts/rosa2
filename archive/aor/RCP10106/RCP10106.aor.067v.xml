@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.067v.tif" pagination="134" reader="John Dee" signature="[i 3[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Cicero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cicero</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Fuerunt qui facerent quinque" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Status [quinqueplex].</marginalia_text>
+                </position>
+            </language>
+            <translation>Fivefold bases.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ad aliquid" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ad aliquid</marginalia_text>
+                </position>
+            </language>
+            <translation>For some.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sex status" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sex status</marginalia_text>
+                </position>
+            </language>
+            <translation>Six bases.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hermagora" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hermagoras</marginalia_text>
+                    <person name="Hermagoras of Temnos"/>
+                </position>
+            </language>
+            <translation>Hermagoras.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Alijs septem esse placuit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Septe[m] status.</marginalia_text>
+                </position>
+            </language>
+            <translation>Seven bases.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Alij persuenerunt usq[ue] ad octo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Octo status</marginalia_text>
+                </position>
+            </language>
+            <translation>Eight bases.</translation>
+        </marginalia>
+ 
+        <underline language="LA" method="pen" text="sit. Hermagoras solum quatuor " type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

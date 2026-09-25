@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.300r.tif" pagination="579" reader="John Dee" signature="ooo.ii."/>
+    <annotation>
+        
+        <marginalia anchor_text="Ioue enim tonante" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ioue tonante</marginalia_text>
+                    <person name="Jupiter"/>
+                </position>
+            </language>
+            <translation>With Jupiter thundering.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="biennii" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>bienniu[m] sexenniu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>A two year period. A six year period.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="tonitrua" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>tonitruu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Thunder.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="septies millies" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>septies millies</marginalia_text>
+                </position>
+            </language>
+            <translation>Seven million times.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="alauda" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>alauda</marginalia_text>
+                </position>
+            </language>
+            <translation>The Larks.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="Phaedri philosophi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ph[a]edrus philosophus</marginalia_text>
+                    <person name="Phaedrus the Epicurean"/>
+                </position>
+            </language>
+            <translation>Unbridled impetuosity.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="ferre no[n] potuisse tanta[m] vim te[m]pestatis, imbris ac turbinu[m], mirum" type="straight"/>
+        <underline language="LA" method="pen" text="primùm omnes fori aditus ita septi, vt etiam si nemo obstaret armatus, tamen nisi septis reuulsis introiri in forum nullo modo" type="straight"/>
+        <underline language="LA" method="pen" text="imago nulla liberae" type="straight"/>
+        <underline language="LA" method="pen" text="Antesignanos &amp; manipulares &amp; alaudas iudeces se co[n]stituisse dicebat" type="straight"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="primùm omnes fori aditus ita septi, vt etiam si nemo obstaret armatus, tamen nisi septis reuulsis introiri in forum nullo modo"/>
+        
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">12</numeral>
+        
+    </annotation>
+</transcription>

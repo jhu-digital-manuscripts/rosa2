@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.099r.tif" pagination="183" reader="John Dee" signature="q.ij."/>
+    <annotation>
+        
+        <marginalia anchor_text="anno Domini 1566" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A[nn]o 1566.</marginalia_text> 
+                </position>
+            </language>
+            <translation>In the year 1566.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Dominicae passionis" type="straight"/>
+        <underline language="LA" method="pen" text="triginta semper &amp; tribus annis minorem" type="straight"/>
+        <underline language="LA" method="pen" text="668. triginta tres anni" type="straight"/>
+        <underline language="LA" method="pen" text="astrologi Ecclesiastici" type="straight"/>
+        <underline language="LA" method="pen" text="tamen praecidit annos praecedentes" type="straight"/>
+        <underline language="LA" method="pen" text="est à nostris erratum, quum eosdem annos, &amp; à nato Domino, &amp; ab eodem passo dixerint" type="straight"/> 
+        <underline language="LA" method="pen" text="annotarint" type="straight"/>
+        <underline language="LA" method="pen" text="Nam" type="straight"/>
+        <underline language="LA" method="pen" text="qua putant" type="double"/>
+        <underline language="LA" method="pen" text="Cicero, non tam coeli, quàm caelati argenti rationem habent, &amp; virtutem post nummos quaerendam censent" type="straight"/>
+        <underline language="LA" method="pen" text="Domini 1566" type="straight"/>
+        <underline language="LA" method="pen" text="à Calendis Ianuarij" type="straight"/>
+        <underline language="LA" method="pen" text="illa Paschae" type="straight"/>
+        <underline language="LA" method="pen" text="natiuitatis Domini confusione priore" type="straight"/>
+        <underline language="LA" method="pen" text="ab eius natiuitate" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- erratum quum -->
+        
+    </annotation>
+</transcription>

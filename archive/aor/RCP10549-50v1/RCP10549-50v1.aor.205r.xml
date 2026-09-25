@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.205r.tif" pagination="389" reader="John Dee" signature="bbb.iii."/>
+    <annotation>
+        
+        <marginalia anchor_text="dominatu" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        dominatus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                By tyranny.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="temere, turbulente" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        temere turbule[n]te
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Rashly, violently.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sententia verior, grauior, vtilior, melior" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Se[n]tentia verior grauior vtilior melior
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A policy, more just, more dignified, more beneficial and better.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in tanta vbertate improboru[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        in tanta vbertate imp[ro]bor[um]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                In such abundance of traitors.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="exul" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        EXVL
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Exile.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Sententia verior, grauior, vtilior, melior Reipublicae nulla" type="straight"/>
+        <underline language="LA" method="pen" text="notato, similis à Republica labes in posterum dimouebatur" type="straight"/>
+        <underline language="LA" method="pen" text="in tanta vberate improboru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Erat hoc verum" type="straight"/>
+        <underline language="LA" method="pen" text="tu etiam perniciosa pestis" type="straight"/>
+        <underline language="LA" method="pen" text="cum tantis sceleribus esses, &amp; factis notatus, vt omnem locum, quo adisses, exilii similimu[m]" type="straight"/>
+        
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        
+    </annotation>
+</transcription>

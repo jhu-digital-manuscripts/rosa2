@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.040r.tif" reader="Harvey" signature="E[ir]"/>
+    <annotation>
+        
+        <marginalia anchor_text="wynde, the duste, and contrarye sonne" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>wynde, dust, su[n]</marginalia_text>
+                    <emphasis method="pen" text="wynde" type="straight"/>
+                    <emphasis method="pen" text="dust" type="straight"/>
+                    <emphasis method="pen" text="su[n]" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="came behynde on theyr backes vnwares" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>à tergo, strategamaticè.</marginalia_text>
+                </position>
+            </language>
+            <translation>From the back, strategically.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Thre hundred" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Trecenti Lacones.</marginalia_text>
+                </position>
+            </language>
+            <translation>300 Spartans.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="chose his grounde" type="straight"/>
+        <underline language="EN" method="pen" text="and ordred his aray" type="straight"/>
+        <underline language="EN" method="pen" text="wynde" type="straight"/>
+        <underline language="EN" method="pen" text="the duste" type="straight"/>
+        <underline language="EN" method="pen" text="and contrarye sonne" type="straight"/>
+        <underline language="EN" method="pen" text="horsemen to race" type="straight"/>
+        <underline language="EN" method="pen" text="greate duste" type="straight"/>
+        <underline language="EN" method="pen" text="the horsemen" type="straight"/>
+        <underline language="EN" method="pen" text="the fote men from" type="straight"/>
+        <underline language="EN" method="pen" text="Thre hundred" type="straight"/>
+        <underline language="EN" method="pen" text="innumerable multitude" type="straight"/>
+        <underline language="EN" method="pen" text="the straites" type="straight"/>
+        <underline language="EN" method="pen" text="the hill" type="straight"/>
+        <underline language="EN" method="pen" text="like nomber of men mete" type="straight"/>
+        <underline language="EN" method="pen" text="equall in nombre" type="straight"/>
+        <underline language="EN" method="pen" text="beinge moche more valyaunt" type="straight"/>
+        <underline language="EN" method="pen" text="slewe a great nombre" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--strai-->
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="like nomber of men mete"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="vnwares"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Thre hundred"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="innumerable"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="the straites"/>
+        
+        <numeral language="EN" place="left_margin" text="chose his grounde">3.</numeral>
+        
+    </annotation>
+</transcription>

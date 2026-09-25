@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.042r.insert.tif" origin="added" reader="John Dee" status="fixed"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        &amp; bene coaptetis consanguineu[m] consanguineis, &amp; primu[m] sono [etc]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                And relationships well joined together through a blood line, and first through sound. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                       Item Notetis quod Argentum nostru[m], Calcinatio, Incineratio, Mela[n]cholia, 
+                       Nigredo, Nox, Putrefactio, Pra[e]gnatio, &amp; Sputum
+                       idem significant. Sed quid remanet corruptu[m] post putrefactione[m]?
+                       Respondemus, Substantia forma[e], qua[e] ante putrefactione[m] 
+                       erat in potentia rei, introducta ex proportione Elementoru[m] <!-- FSF: running over onto the next page -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Also note what our quicksilver, calcination, incineration, melancholy, blackness, night, putrefaction, universal fertility and spittle also signify.
+                But whay remains corupted after the putrefaction?
+                We will respond: the substance of the form, which before the putrefaction was in the potential of the thing, introduced from the proportion of elements [...].
+            </translation>
+        </marginalia>
+        
+    </annotation>
+</transcription>

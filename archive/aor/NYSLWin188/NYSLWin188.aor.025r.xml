@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.025r.tif" pagination="25" reader="John Dee" signature="G"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Vulcanus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vulcanus</marginalia_text>
+                    <person name="Vulcan"/>
+                </position>
+            </language>
+            <translation>Vulcan.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristotelische Philosophey" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aristotelica fantasmata</marginalia_text>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>Aristotelean appearances.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Dieser Vulcanus ist kein Geist ist auch nicht ein Person: In dem theilet er sich von[n] den Saganis. Sondern es ist ein Arbeiter &amp; gar nichts mehr thut dann der Natur warten" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vulcanus no[n] est ex Saganis vnus.</marginalia_text>
+                    <person name="Vulcan"/>
+                </position>
+            </language>
+            <translation>Vulcan is not one of the Sagani.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sondern ist ein Arbeiter" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Vulcani officium</marginalia_text>
+                    <person name="Vulcan"/>
+                </position>
+            </language>
+            <translation>The duty of Vulcan.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="seim sahmen in die Vltimam materiam" type="straight"/>
+        <underline language="DE" method="pen" text="der Geist geistet" type="double"/>
+        <underline language="LA" method="pen" text="Prima materia" type="straight"/>
+        <underline language="DE" method="pen" text="alles das so jm Gott befolen zumachen" type="straight"/>
+        <underline language="DE" method="pen" text="Componiert" type="straight"/>
+        <underline language="DE" method="pen" text="dispensiert" type="straight"/>
+        <underline language="DE" method="pen" text="vnd ordiniert" type="straight"/>
+        <underline language="DE" method="pen" text="Regen" type="straight"/>
+        <underline language="DE" method="pen" text="Schnee" type="straight"/>
+        <underline language="DE" method="pen" text="Reiff" type="straight"/>
+        <underline language="DE" method="pen" text="Hagel" type="straight"/>
+        <underline language="DE" method="pen" text="Stral" type="straight"/>
+        <underline language="DE" method="pen" text="ist kein Geist" type="straight"/>
+        <underline language="DE" method="pen" text="ein Person" type="straight"/>
+        <underline language="DE" method="pen" text="sich vo[n] den Saganis" type="straight"/>
+        <underline language="DE" method="pen" text="ein Arbeiter" type="straight"/>
+        <underline language="DE" method="pen" text="thut dann der Natur warten" type="straight"/>
+        <underline language="DE" method="pen" text="vnd das auß jr zubringen das in jr ist vnd" type="straight"/>
+        <underline language="DE" method="pen" text="das Gott in sie gethan hat zubrengen in Vltimam materiam" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

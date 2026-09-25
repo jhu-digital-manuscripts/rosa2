@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.130v.tif" pagination="260" reader="John Dee" signature="[r 2[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="imperfectus syllogismus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Imperfectus syllogismus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Imperfect syllogism.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Milone" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Milone.</marginalia_text>
+                    <book title="Pro Milone"/>
+                </position>
+            </language>
+            <translation>Pro Milone.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ibidem</marginalia_text>
+                </position>
+            </language>
+            <translation>In the same place.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Optimum autem uidetur enthymematis genus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Optimu[m] enthymematis genus</marginalia_text>
+                </position>
+            </language>
+            <translation>The best kind of enthymeme.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Demosthenis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Demosthenes.</marginalia_text>
+                    <person name="Demosthenes"/>
+                </position>
+            </language>
+            <translation>Demosthenes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Epichirematos &amp; quatuor, &amp; quinq[ue] &amp; sex etiam factae sunt partes à quibsudam: Cicero maxime quinq[ue] defendit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cicero 5 facit enthymematis p[ar]tes</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero divides the enthymeme into five parts.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="complexione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Complexio</marginalia_text>
+                </position>
+            </language>
+            <translation>Conclusion.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nam confirmatio primae ac secundae partis &amp; exornatio, eisdem cedere possunt, quibus subijciuntur." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quintilian[us] tantu[m] facit 3</marginalia_text>
+                    <person name="Quintilian"/>
+                </position>
+            </language>
+            <translation>Quintilian only makes three.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sumamus autem ex Cicerone quinq[ue] partium exe[m]olum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cicero ad here[n]nium.</marginalia_text>
+                    <person name="Cicero"/>
+                    <book title="Rhetorica ad Herennium"/>
+                </position>
+            </language>
+            <translation>Cicero's ad Herennium.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Habet enim rationem propositionem'q[ue] non habet conclusionem" type="straight"/>
+        <underline language="LA" method="pen" text="Optimum autem uidetur enthymematis genus, cùm proposito dißimili, uel co[n]trario, ratio subiungitur, quale" type="straight"/>
+        <underline language="LA" method="pen" text="quinq[ue] defendit, ut sit propositio, deinde ratio eius, tum aßumptio, &amp; eius probatio, quinta complexio" type="straight"/>
+        <underline language="LA" method="pen" text="probetur, tertium adijci potest uelut ex co[n]sensu duoru[m] antecedentium" type="straight"/>
+        
+    </annotation>
+</transcription>

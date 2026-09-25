@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.091v.tif" pagination="182" reader="John Dee" signature="[m 3[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Theodorei" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Theodorei.</marginalia_text>
+                    <person name="Theodorus of Gadara"/>
+                </position>
+            </language>
+            <translation>Of Theodorus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Narratio est aut tota pro nobis, aut tota pro aduersarijs, aut mixta pro utrisq[ue]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nota</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Erit autem narratio aperta atq[ue] dilucida" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Qua r[ati]o[n]e narratio aperta &amp; dilucida fiet.</marginalia_text>
+                </position>
+            </language>
+            <translation>With reason a narrative will become clear and lucid.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Si erit tota pro nobis" type="straight"/>
+        <underline language="LA" method="pen" text="Sunt enim plurima uera quidem, sed parum credibilia, sicut falsa quoque frequenter uerisimilia." type="straight"/>
+        <underline language="LA" method="pen" text="custodiendus, &amp; credibilia esse oportet omnia, quae dicu[n]tur" type="straight"/>
+        <underline language="LA" method="pen" text="in reliquis laborabimus. Erit" type="straight"/>
+        <underline language="LA" method="pen" text="concusserint: rem indicare sermonis | quotidiani, &amp; in quencunq[ue] etiam indoctoru[m] cadentis existimant: cùm interim (quod tanqua[m]" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">.1.</numeral>
+        
+    </annotation>
+</transcription>

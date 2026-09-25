@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.151r.tif" pagination="301" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ἀποφθεγματικόν</marginalia_text>
+                </position>
+            </language>
+            <translation>Apophthegms.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pollione Asinio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pollio Asinius</marginalia_text>
+                    <person name="Gaius Asinius Pollio"/>
+                </position>
+            </language>
+            <translation>Asinius Pollio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Marsus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Marsus.</marginalia_text>
+                    <person name="Domitius Marsus"/>
+                </position>
+            </language>
+            <translation>Marsus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Stomachus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>stomachus.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Stomach.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="altercationis praecepta poterant uideri tunc inchoa[n]da, cùm omnia, quae ad continuam oratione[m] pertinent, peregissem: nam est usus eius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vsus altercatio[n]is</marginalia_text> 
+                </position>
+            </language>
+            <translation>The use of alteraction.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="inte[n]tio[n]e" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Altercatio constat in inte[n]tione depulsio[n]e</marginalia_text> 
+                </position>
+            </language>
+            <translation>Altecation consists of intention and rebuttal.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="serijs, iocisq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="stomacho" type="straight"/>
+        
+        <mark method="pen" name="scribble" place="left_margin"/> 
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.035r.tif" pagination="55" reader="John Dee" signature="e.iiij."/>
+    <annotation>
+          
+        <marginalia anchor_text="Ianus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ianus quis.</marginalia_text>
+                    <person name="Janus"/>
+                </position>
+            </language>
+            <translation>Who other than Janus.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="Poetae autem, quos omnis sapientiae magistros, stulti &amp; insani homines praedicant" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Poetaru[m] ineptia[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>The follies of poets.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="vt Ianus fortasse sit filiorum Iapeti siue Iaphet quartus, qui Genes. 10. vocatur" type="straight"/>
+        <underline language="LA" method="pen" text="stulti &amp; insani" type="straight"/>
+        <underline language="LA" method="pen" text="sexto, superstitionum omnium, &amp; mendaciorum praecones &amp; antistites fuerunt" type="straight"/>
+        <underline language="LA" method="pen" text="Homerus &amp; Hesiodus" type="straight"/>
+        <underline language="LA" method="pen" text="Hesiodus &amp; Homerus" type="straight"/>
+        <underline language="LA" method="pen" text="Sunt ergo magna cautione talium scripta euoluenda" type="straight"/>
+        <underline language="LA" method="pen" text="cùm mendaciorum plena sint" type="straight"/>
+        <underline language="LA" method="pen" text="faciens: Viri quid haec facitis" type="straight"/>
+        <underline language="LA" method="pen" text="nos mortales sumus, similes vobis homines, annuntiantes vobis, ab his vanis conuerti ad Deum viuum" type="straight"/>
+        <underline language="LA" method="pen" text="fecit coelum" type="straight"/>
+        <underline language="LA" method="pen" text="terram" type="straight"/>
+        <underline language="LA" method="pen" text="mare" type="straight"/>
+        <underline language="LA" method="pen" text="omnia quae in iis sunt" type="straight"/>
+        
+    </annotation>
+</transcription>

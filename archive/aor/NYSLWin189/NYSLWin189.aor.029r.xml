@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.029r.tif" reader="John Dee" signature="Hij"/> 
+    <annotation>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Try our salt witches in England</marginalia_text>
+                <location name="England"/>
+                </position>
+            </language> 
+        </marginalia>
+        
+        <marginalia anchor_text="podagrae vund paralysis hinweg nimpt auch all hydropisen" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Podraga, paralysis, hydropsis, hyposarcha</marginalia_text> 
+                </position>
+            </language>
+            <translation>Gout, paralysis, hydropsy, and 'hyposarcha'.</translation> <!--JG: Need to find good translation of hyposarcha, is related to hydropsy but word seems to appear mainly in Paracelcian writings-->
+        </marginalia>
+
+            <marginalia anchor_text="vnnd artzeten werden die Beder so gar mißbraucht" hand="Italian" method="pen"> 
+                <language ident="DE">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Abysus Thermaru[m]</marginalia_text>
+                </position>
+            </language>
+                <translation>The abyss of baths.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="sicher" type="double"/>
+        <underline language="DE" method="pen" text="offen" type="straight"/>
+        <underline language="DE" method="pen" text="blaten" type="double"/>
+        <underline language="DE" method="pen" text="flüß podagrae" type="double"/> 
+        <underline language="DE" method="pen" text="im anfang derselbigen" type="double"/>
+        <underline language="DE" method="pen" text="geäder streckt" type="double"/> 
+        <underline language="DE" method="pen" text="die gleitch" type="straight"/> 
+        <underline language="DE" method="pen" text="von flüssen oder liquoribus kumpt verzerts" type="double"/> 
+        <underline language="DE" method="pen" text="hinweg" type="straight"/>
+        <underline language="DE" method="pen" text="das weiter ohn alle" type="straight"/>   
+        <underline language="DE" method="pen" text="dans vil selgamer " type="double"/>
+        <underline language="DE" method="pen" text="vnnd artzeten werden die beder so gar mißbraucht" type="straight"/> 
+        
+        <drawing anchor_text="hinweg" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing anchor_text="an im selbs nicht" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.057v.tif" pagination="98" reader="John Dee" signature="[i[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Platicam partilemq[ue] supputationem partis fortuna hoc loco videas 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                You should see the general and partial computation of the part by fortune in this place.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="locum fortunae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Locus fortuna[e].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The place of fortune.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex apotelesmatis proferetur, quotiescunq[ue] singula loca partili" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Ex partili locoru[m] r[ati]o[n]e singula apotetesmata veriora proferantur
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                From the partial reason of place the single and very true influence of the stars will be brought forward. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ad sphaerae barbaricae interpretatione[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Spha[e]ra barbarica.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Barbaric spheres.
+            </translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Abraam &amp; prudentissimus Archilles" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Abraam Achilles
+                    </marginalia_text>
+                    <person name="Abraham"/>
+                    <person name="Achilles"/>
+                </position>
+            </language>
+            <translation>
+                Abraham Achilles.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Quid ex fortuna[e] loco cognosci potest.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                What can be understood from a place of fortune.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Quo modo locus fortuna[e] tractandus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                How a place of fortune is to be treated.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        haru[m] o[mn]ium partu[m] d[omin]us
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The lord over all these parts.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Sed haec platica supputatio est" type="straight"/>
+        <underline language="LA" method="pen" text="tunc enim ueri definitio, ex apotelesmatis proferetur, quotiescunq[ue] singula loca partili fuerint ratione collecta" type="straight"/>
+        <underline language="LA" method="pen" text="Locus igitur fortunae" type="straight"/>
+        <underline language="LA" method="pen" text="partiliter ista ratione colligitur" type="straight"/>
+        <underline language="LA" method="pen" text="uitae qualitas" type="straight"/>
+        <underline language="LA" method="pen" text="patrimonii substantia" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; felicitatis" type="straight"/>
+        <underline language="LA" method="pen" text="ut Abraam dicit" type="straight"/>
+        <underline language="LA" method="pen" text="signi dominus" type="straight"/>
+        <underline language="LA" method="pen" text="partis huius" type="straight"/>
+        <underline language="LA" method="pen" text="cardinaliter" type="straight"/>
+        <underline language="LA" method="pen" text="quoru[m] est domicilio" type="straight"/>
+        <underline language="LA" method="pen" text="Si uero ambo bene ceciderint, &amp; dominus ipsius signi, in quo est dominus fortunae,              &amp; dominus partis illius, in qua ultima pars fuerit inuenta, &amp; in bonis signis constitutae" type="straight"/>
+        
+        <mark colour="red" method="pen" name="bracket" place="left_margin"/>
+        <mark colour="red" method="pen" name="bracket" place="left_margin"/> 
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral language="LA" place="intext" text="dominus">1</numeral>
+        <numeral language="LA" place="intext" text="huius">2</numeral>
+        <numeral language="LA" place="intext" text="quo">3</numeral>
+        <numeral language="LA" place="intext" text="locis">4</numeral>
+        <numeral language="LA" place="intext" text="an">5</numeral>
+        <numeral language="LA" place="intext" text="nocturna">6</numeral>
+        
+        <errata amendedtext="uero" copytext="ueruo" language="LA"/>
+        
+    </annotation>
+</transcription>

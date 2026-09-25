@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>11</illustrations>
+    <totalPages>136</totalPages>
+    <dimensions units="mm">
+        <width>175</width>
+        <height>250</height>
+    </dimensions>
+    <dates>
+        <startDate>1300</startDate>
+        <endDate>1325</endDate>
+    </dates>
+    <texts>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="136r" start="1r">136</pages>
+            <illustrations>11</illustrations>
+            <linesPerColumn>40</linesPerColumn>
+            <leavesPerGathering>8</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Rauner Codex 3206</commonName>
+            <dateLabel>14th century</dateLabel>
+            <type>manuscript</type>
+            <material>parchment</material>
+            <origin>France</origin>
+            <currentLocation>Hanover, NH</currentLocation>
+            <repository>Dartmouth College Library</repository>
+            <shelfmark>Rauner Codex MS 3206</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Rauner Codex 3206</commonName>
+            <dateLabel>14e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Hanover, NH</currentLocation>
+            <repository>Dartmouth College Library</repository>
+            <shelfmark>Rauner Codex MS 3206</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

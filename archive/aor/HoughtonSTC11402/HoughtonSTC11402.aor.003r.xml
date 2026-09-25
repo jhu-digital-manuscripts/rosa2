@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.003r.tif" reader="Harvey" signature="Aiiii[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Vanè affectat in vllo genere principatum, qui non illam Cyri excellentem Regulam diligentissimè obseruat: 
+                        Suos omnes excellerr[..] et plus merendo, quàm <!--JG: Unsure. Should it be excelleret or excellere? But after 'exceller' there seems to be a line, as if part of the word is omitted..-->
+                    </marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>alij, dignior videri. Alia omnis gloria, inanis: illa solida qua[m] singularis excellentia,
+                    summaq[ue] merita acquirunt.</marginalia_text>
+                </position>
+            </language>
+            <translation>The ruler who does not oberserve this excellent rule of Cyri most diligently, vainly desires in any way, that they themselves are preeminent, and by 
+                deserving more, to seem more worthy than others. All other glory is empty; they obtain that lasting (glory), which is the singular superiority and the highest merit.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>whether bitter { Pollicye or Manhood.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Graecu[m] Chabria[e] Apophthegma.</marginalia_text>
+                    <person name="Chabrias"/>
+                </position>
+            </language>
+            <translation>The apoththegm of Chabrias, the Greek.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Skilful, &amp; aduantegeous Conduct, acheuit &amp; Victory. 
+                    The time, place, &amp; order, with braue encouragement,
+                    perfourme great matters:</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>vt i[nfr[a, in pla[e]risq[ue].</marginalia_text>
+                </position>
+            </language>
+            <translation>as below, in very many.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="a courtayne drawen betweene my weake eies" type="straight"/>
+        <underline language="EN" method="pen" text="the resplendent beames of your most clere maiestie, folow" type="straight"/>
+        <underline language="EN" method="pen" text="rude translation" type="straight"/>
+        <underline language="EN" method="pen" text="borne" type="straight"/>
+        <underline language="EN" method="pen" text="and brought" type="straight"/>
+        <underline language="EN" method="pen" text="in good wylles howse" type="straight"/>
+        <underline language="EN" method="pen" text="Polycy of mynde" type="straight"/>
+        <underline language="EN" method="pen" text="Strength" type="straight"/>
+        <underline language="EN" method="pen" text="the Capitayne" type="straight"/>
+        <underline language="EN" method="pen" text="an armie" type="straight"/>
+        <underline language="EN" method="pen" text="Capitayn" type="straight"/>
+        <underline language="EN" method="pen" text="a lyon" type="straight"/>
+        <underline language="EN" method="pen" text="fearefull dere" type="straight"/>
+        <underline language="EN" method="pen" text="a dere the capitayne" type="straight"/>
+        <underline language="EN" method="pen" text="host lyons" type="straight"/>
+        <underline language="EN" method="pen" text="Aiax" type="straight"/>
+        <underline language="EN" method="pen" text="Ulysses" type="straight"/>
+        <underline language="EN" method="pen" text="Aiax was" type="straight"/>
+        
+        <symbol language="EN" name="SS" place="left_margin" text="the Capitayne"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="a courtyane drawen betweene my weake eies"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/> <!--curved-->
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="a courtyane drawen betweene my weake eies"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>  <!--curved-->
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="the Capitayne"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--lyons. Aiax-->
+        
+    </annotation>
+</transcription>

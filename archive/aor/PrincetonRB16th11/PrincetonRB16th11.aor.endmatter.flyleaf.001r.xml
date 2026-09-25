@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonRB16th11.endmatter.flyleaf.001r.tif" pagination="end page" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia date="1577" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        G Buchanan
+                        august. 1577.
+                    </marginalia_text>
+                    <person name="George Buchanan"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <mark language="EN" method="pen" name="horizontal_bar" place="intext" text="G Buchanan"/>
+        
+    </annotation>
+</transcription>

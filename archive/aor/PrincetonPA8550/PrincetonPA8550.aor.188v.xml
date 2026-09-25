@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA8550.188v.tif" pagination="376" reader="Harvey" signature="[aiiijv]"/>
+    <annotation>
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Arithmetica facilis.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation> Easy mathematics. </translation>
+        </marginalia>
+        
+        <underline language="LA" method="chalk" text="mediocriter in Arithmetica exercitati" type="straight"/>
+        <underline language="LA" method="chalk" text="scholis tradi solent" type="straight"/>
+        <underline language="LA" method="chalk" text="quotidianum usum conferuntur" type="straight"/>
+        <underline language="LA" method="pen" text="admodum" type="straight"/>
+        <underline language="LA" method="chalk" text="natura ipsa mentis humanae" type="straight"/>
+        <underline language="LA" method="chalk" text="perspicua sunt" type="straight"/>
+        <underline language="LA" method="pen" text="diuisionis" type="straight"/>
+        <underline language="LA" method="pen" text="diligentiae" type="straight"/>
+        <underline language="LA" method="chalk" text="causae citò" type="straight"/>
+        <underline language="LA" method="pen" text="ab attentis" type="straight"/>
+        <underline language="LA" method="pen" text="haec ars" type="straight"/>
+        <underline language="LA" method="pen" text="aliae" type="straight"/>
+        <underline language="LA" method="pen" text="Manum esse causam" type="straight"/>
+        <underline language="LA" method="pen" text="sapientiae" type="straight"/>
+        <underline language="LA" method="chalk" text="exercitatione, &amp; experientia" type="straight"/>
+        <underline language="LA" method="chalk" text="memineritis nulla[m]" type="straight"/>
+        <underline language="LA" method="chalk" text="styli exercitium" type="straight"/>
+        
+        <mark method="chalk" name="plus_sign" place="left_margin"/>
+        <mark method="chalk" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="X_sign" place="left_margin"/>
+        <mark method="chalk" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- oritur. -->
+
+    </annotation>
+</transcription>

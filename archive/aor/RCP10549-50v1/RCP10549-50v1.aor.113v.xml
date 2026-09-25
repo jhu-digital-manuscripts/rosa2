@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.113v.tif" pagination="206" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="specula Populi Rom. ac propugnaculum istis ipsis nationibus oppositum &amp; obiectum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        propugnaculu[m] [ specula oppositum obiectu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Bulwark, watchtower, barrier of defence [Loeb 252, 319].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="equitatus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        equitatus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Cavalry.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="inernem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        inernis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Unarmed.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        petitio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Petition.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="crimen optimis hominibus delegare" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        crime[n] delegare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To shift imputations.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="magnis saepe erant bellis superati, vt" type="straight"/>
+        <underline language="LA" method="pen" text="neque propter iracundia[m], fide[m]: neque propter infidelitate[m], honore[m] habere debetis" type="straight"/>
+        <underline language="LA" method="pen" text="Dubitabitis etia[m] diutius Iudices, quin illud quod initio vobis proposui, verissimu[m] sit, aliud per hoc iudiciu[m] nihil agi, nisi vt M. Fo[n]teio oppresso testimoniis" type="straight"/>
+        <underline language="LA" method="pen" text="si hoc crimen optimis hominibus" type="straight"/>
+        <underline language="LA" method="pen" text="in alios transferamus, sed vti doceamus, eos isti munitioni praefuisse qui facile officiu[m] suu[m] &amp; praestare &amp; probare possunt, taménne vos omnia" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+        <numeral place="left_margin">22</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">13</numeral>
+        
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note rend="IDENTIFICATION">
+          <p>Cod. poet. et phil. 2º 6, Wurttembergische Landesbibliothek, Stuttgart, French, 1416</p>
+        </note>
+        <note rend="BASIC INFORMATION">
+          <p>Parchment, 335 x 240 mm, 197+VIII</p>
+        </note>
+        <note rend="MATERIAL">
+          <p><material>Vellum</material> in good condition. f. I paper added by the bookbinder in the 20th century (see BINDING), f.II-IIIr old paper from the 18th cent. with note by librarian Joseph Uriot on f. IIr., f. IIIv old parchment glued to paper, f. IV-V new parchment (possibly added by the bookbinder?), f. VI-<locus>197v</locus>, old parchment, f. <locus>198r</locus> old parchment with torn edges glued to paper, f. <locus>198v</locus> paper. The first few pages are dirtier than the rest which is of excellent quality, but in the digital images the vellum comes out whiter than it is in reality. F. 1 has been mended at the bottom of the page in the place which bears the stamp of the library: Bibliothec[a] P[ublica] R[egia] Stuttg[artensis]. This particular stamp was used between ca. 1864 and 1900. Maybe the mark of a former possessor had been cut out.</p>
+        </note>
+        <note rend="CATCHWORDS AND MISSING FOLIOS">
+          <p><locus>8v</locus>b de la</p>
+          <p><locus>16v</locus>b Ces ors</p>
+          <p><locus>24v</locus>b A dangier</p>
+          <p><locus>32v</locus>b Se tu</p>
+          <p><locus>40v</locus>b De quel</p>
+          <p><locus>48v</locus>b Onq</p>
+          <p><locus>56v</locus>b Ainsi</p>
+          <p><locus>64v</locus>b Ne vous</p>
+          <p><locus>72v</locus>b Vous</p>
+          <p><locus>80v</locus>b En</p>
+          <p><locus>88v</locus>b Que a – the first words of f. <locus>89r</locus>a do not take up the catchword: vous ay ie pour ce retenu; last verse on <locus>88v</locus>b : Car li semblans si fort ouvroit (Lecoy 12093) ; catchword « que la », cf. Lecoy 12094 : « que la fausseté li coroit ; », first verse on <locus>89r</locus>a : Vous ai ie pour ce retenu (Lecoy 12222), lacuna of <locus>130v</locus>., i.e. one folio (normally <locus>144v</locus>.) which probably has contained one or several rubrics and an illumination.</p>
+          <p><locus>95v</locus>b Dessus la</p>
+          <p><locus>103v</locus>b par</p>
+          <p><locus>110v</locus>b pitie ; one folio missing after f. <locus>108</locus>, last verse on f. <locus>108v</locus>b is 15040, first verse on f. <locus>109v</locus>a v. 15170, 130 verses missing; a folio with a miniature has been lost.</p>
+          <p><locus>118v</locus>b Et les freres</p>
+          <p><locus>126v</locus>b Qui leu</p>
+          <p><locus>134v</locus>b Du filz</p>
+          <p><locus>142v</locus>b Et quant</p>
+          <p><locus>150v</locus>b Car riens</p>
+          <p><locus>156</locus> Se tu</p>
+          <p><locus>164</locus> Quant</p>
+          <p><locus>172</locus> Tout</p>
+          <p><locus>180</locus> Luxure</p>
+          <p><locus>193v</locus> Du vije Du vije</p>
+        </note>
+        <note rend="QUIRES">
+          <list>
+            <head>Collation</head>
+            <item n="I">
+              <locus from="1" to="8">1-8</locus>
+            </item>
+            <item n="II">
+              <locus from="9" to="16">9-16</locus>
+            </item>
+            <item n="III">
+              <locus from="17" to="24">17-24</locus>
+            </item>
+            <item n="IV">
+              <locus from="25" to="32">25-32</locus>
+            </item>
+            <item n="V">
+              <locus from="33" to="40">33-40</locus>
+            </item>
+            <item n="VI">
+              <locus from="41" to="48">41-48</locus>
+            </item>
+            <item n="VII">
+              <locus from="49" to="56">49-56</locus>
+            </item>
+            <item n="VIII">
+              <locus from="57" to="64">57-64</locus>
+            </item>
+            <item n="IX">
+              <locus from="65" to="72">65-72</locus>
+            </item>
+            <item n="X">
+              <locus from="73" to="80">73-80</locus>
+            </item>
+            <item n="XI">
+              <locus from="81" to="84">81-84</locus>
+            </item>
+            <item n="XII">
+              <locus from="85" to="92">85-92 (IV-1)</locus>
+            </item>
+            <item n="XIII">
+              <locus from="96" to="103">96-103</locus>
+            </item>
+            <item n="XIV">
+              <locus from="104" to="110">104-110 (IV-1)</locus>
+            </item>
+            <item n="XV">
+              <locus from="111" to="118">111-118</locus>
+            </item>
+            <item n="XVI">
+              <locus from="119" to="126">119-126</locus>
+            </item>
+            <item n="XVII">
+              <locus from="127" to="134">127-134</locus>
+            </item>
+            <item n="XVIII">
+              <locus from="135" to="142">135-142</locus>
+            </item>
+            <item n="XIX">
+              <locus from="143" to="150">143-150</locus>
+            </item>
+            <item n="XX">
+              <locus from="151" to="156">151-156</locus>
+            </item>
+            <item n="XXI">
+              <locus from="157" to="164">157-164</locus>
+            </item>
+            <item n="XXII">
+              <locus from="165" to="172">165-172</locus>
+            </item>
+            <item n="XXIII">
+              <locus from="173" to="180">173-180</locus>
+            </item>
+            <item n="XXIV">
+              <locus from="181" to="187">181-187 (IV-1)</locus>
+            </item>
+            <item n="XXV">
+              <locus from="188" to="193">188-193</locus>
+            </item>
+            <item n="XXVI">
+              <locus from="193" to="197">193-197 (III-2)</locus>
+            </item>
+          </list>
+          <p> All quires except for XXV have catchwords and are mostly quaternios, with the exception of XX, XXV and XXVI which are ternios, after f. <locus>88</locus> and f. <locus>108</locus> there is missing a folio with a miniature. </p>
+          <p>The identification of the quires has been checked against Peter Burkhart’s; Dr. Burkhart is preparing a comprehensive catalogue of the illuminated gothic manuscripts of the Württembergische Staatsbibliothek.</p>
+        </note>
+        <note rend="LAYOUT">
+          <p>Ruled in red ink for two columns on f.<locus>1r</locus>-<locus>155r</locus> (Roman de la Rose) and f. <locus>187r</locus>-<locus>196v</locus> (Codicile and Petit Codicile) and for one single column on f. <locus>156r</locus>-<locus>186v</locus> (Testament and contents of the Codicile)</p>
+          <p>No prickings visible.</p>
+          <p>Double columns ruled for 36 lines with a text block of 210-219 mm x 154-157 mm; each column 68-70 mm in width. Each column has three vertical lines on the left and one vertical line on the right, with the vertical lines on the left spaced 6-2mm apart. </p>
+        </note>
+        <note rend="SCRIPT">
+          <p>The work of one scribe; bastarda script in brown ink.</p>
+        </note>
+        <note rend="DECORATION">
+          <p>Rubrics for miniatures, changes in speaker, textual divisions in red.</p>
+          <p>Large initials of more than two lines mark the beginnings of the different texts contained in the manuscript:
+               </p>
+          <p>On <locus>1r</locus>a, one six-line initial. On the left, blue M on golden background, with the lobes of the M infilled with red and blue leaves, and decorated with a column and vine ending in golden leaves or flowers of different colors (blue, green and two shades of red).</p>
+          <p>On <locus>156r</locus>, one seven-line initial. On the left, blue L on golden background, infilled with red and blue leaves, and decorated with a column and vine ending in golden leaves and red or blue flowers.</p>
+          <p>On <locus>187r</locus>a, one five-line initial. On the left, red O on golden background, infilled with red leaves, and decorated with a column and vine ending in golden leaves and red or blue flowers.</p>
+          <p>On <locus>196r</locus>b, one three-line initial. On the right, blue D on golden background, infilled with red and blue leaves, and decorated with vine ending in golden leaves and red or blue flowers.</p>
+          <p>The smaller 2-line initials in gold with a blue frame and a red filling or vice versa mark the subdivisions of the text in the Roman de la Rose (f. <locus>1r</locus>-<locus>155r</locus>); these subdivisions are made according to narrative or discoursive units. The first small initial on 1rb has a blue frame and a red filling, the second one a red frame and a blue filling, and so on. The red and blue areas are highlighted and decorated with white penwork and the initials end in golden vine on the left margin of the column.</p>
+          <p>In the Testament part (<locus>156r</locus>-<locus>186r</locus>) there is a 2-line initial at the beginning of each quatrain of the text, in the Codicile part (<locus>186v</locus>-<locus>196r</locus>) at the beginning of each douzain, in the part containing the Petit Codicile (<locus>196r</locus>-<locus>196v</locus>) at the beginning of each huitain. Thus the decoration enhances the metrical structure of these texts, not the content as it does in the Roman de la Rose section.</p>
+        </note>
+        <note rend="MINIATURES AND MAIN RUBRICS">
+          <p>The miniatures are cast in golden frames. Sometimes the figures are set in a landscape, sometimes elements of a landscape are combined with a tesselated chessboard background. For the attribution to the Master of the Berry Apocalypse, the style and the datation (ca. 1416), see Meiss 1974, p. 369f.</p>
+          <p>1) <locus>1r</locus>a: Cy commence le rommans de la Rose – Two miniatures (70x78mm and 70x76mm [hight x length]); on the left the sleeping dreamer in his bed, on the outside of the house a rose on a trellis, on the right the lover in a landscape accompanied by a hound and four little rabbits; another trellis with roses in the background. At the bottom of the front wall of the house there is a partially wiped out coat of arms which seems to be identical to the one to be seen in the presentation miniature of the Testament on f. <locus>156r</locus> and of the Codicil on f. <locus>187r</locus>a (argent, three bars sable, over all a lion rampant gules). Peter Burkhart has identified it as the arms of the Verjuys family of Brussels, cf. Jan van Helmont, Dictionnaire de Renesse, Leuven 1992, p. 920 under the rubric “sur trois fasces”; illustration in Johannes B. Rietstap, Armorial général, vol. 6, 1926, plate XCVI.</p>
+          <p>2) <locus>2r</locus>a Hayne (58x67mm; 10 lines, v. 139 Lecoy); the allegories on the wall of the garden are presented with a landscape and not the wall of the garden as backdrop. Hatred is set against a blue sky and wears a red garment with grey lining, she is holding a distaff.</p>
+          <p>3) <locus>2r</locus>b Vilennie (57x69 mm, 10 lines, v. 156); the text confuses Felonnie and Vilonnie: „Appelle estoit vilennie / .I. ymage qui de felonnie [hypermetrical verse] / Auoit nom qui yert deuers destre“. A male figure in grey on the left watches a female personification lifting her pink dress on the right.</p>
+          <p>4) <locus>2v</locus>a Couuoitise (53x70 mm, 9 lines, v. 169); a woman in pink dress in front of an open chest.</p>
+          <p>5) <locus>2v</locus>b Auarice (52x67 mm, 9 lines, v. 195); an old woman in grey dress and pink coif sitting on the green lawn and looking at a cloth rack from which a pink dress hangs.</p>
+          <p>6) <locus>3r</locus>a Envie (52x68mm, 9 lines, v. 235); on the left Envy in a grey dress wringing her hands and looking downwards, not at the wealthy man on the right. The man is clad in a pink garment, holding an open casket in his right hand and a precious vessel made from ivory in his left hand.
+</p>
+          <p>
+7) <locus>3v</locus>a Tristece. (65x72mm, 11 lines, v. 291); female figure in a torn grey dress standing between three single trees and a group of three trees, pulling out her hair in sign of despair.
+</p>
+          <p>
+8) <locus>4r</locus>a Viellece (72x68mm, 12 lines, v. 339); old woman in pink dress and grey coiff, bent in an angle of 90 degrees and walking with two sticks.
+</p>
+          <p>
+9) <locus>4v</locus>a Ypocrisie (63x70mm, 11 lines, v. 405); female figure in a nun’s habit reading a book; the text calls the personification “Papelardie” and not “Ypocrisie” like the rubric does, but the adjective “ypocrite” is used in v. 408.
+</p>
+          <p>
+10) <locus>4v</locus>b Pourete (62x69mm, 11 lines v. 439); a sitting naked female figure only covered with a cape. 
+</p>
+          <p>
+11) <locus>5v</locus>b Cy parle oiseuse. (50x68mm, 9 lines, v. 581); on the left the lover in a grey dress talking with Oiseuse clad in a pink dress, wearing a wreath, holding a mirror in her left hand, and emerging from the fortress-like entrance gate of the garden; one turret of the gate breaks through the frame of the miniature, which does not occur anywhere else in this manuscript. Her left hand points to herself and to the entrance to the garden.
+</p>
+          <p>
+12) <locus>11v</locus>b, Cy deuise de la fontaine narcisus (v. 1437); the miniature at the top of the following page (12ra, 64x68mm, 11 lines) shows Narciss clad in a pink dress and kneeling in front of the fountain where we see the reflection of his face; the miniature is followed by v. 1445.
+</p>
+          <p>
+13) <locus>13v</locus>b, Cy deuise comment le dieu damours naura lamant des saiettes (rubric on 13va, v. 1679, the miniature follows on 13vb before v. 1683, 65x 68mm, 11 lines); the God of Love without wings and clad in a pink dress is holding his bow and has shot an arrow into the Lover’s right eye.
+</p>
+          <p>
+14) <locus>15r</locus>a, 65x68mm, 12 lines, Cy endroit raconte lacteur comment li dieux damours vint a lamant pour le prendre (v. 1879); the miniature at the bottom of column a is followed by the rubric. On the left the winged God of Love in a pink dress talking to the Lover in a grey dress on the right. 
+</p>
+          <p>
+15) <locus>15v</locus>b, 63x68mm, 11 lines, Cy deuint laucteur homs au dieu damours et lui fist hommage (V. 1953); the Lover kisses the winged God of Love.
+</p>
+          <p>
+16) <locus>22v</locus>a, 61x70mm, 11 lines. The Lover, Bel Acueil as a handsome, fashionable youngster wearing a pink doublet and a grey hose, behind him bearded and hooded Danger in a brown dress threatens him with his club (V. 2921); there is no rubric introducing the miniature, only one before v. 2908: Cy parle dangier.
+</p>
+          <p>
+17) <locus>23r</locus>a, 57x69 mm, lines, 10 lines, Raison parle a lamant. (v. 2982); the Lover on the left and Reason on the right talking to each other. She wears a pink dress and her long hair is loose. The Lover has folded his arms and Reason is gesticulating.
+</p>
+          <p>
+18) <locus>28r</locus>a, 71x69 mm, 12 lines, the rubric is at the bottom of 27vb: Comment paour et honte vindrent a dangier et lesueillerent. (v. 3651); on the left Fear und Shame pointing to Danger on the right. He is lying down in the grass and sleeping with his club next to him. The wall of the garden is to be seen in the background.
+</p>
+          <p>
+19) <locus>30v</locus>b, 71x 68 mm, 12 lines, Comment ialousie a fait metre bel accueil en prison et li amans y est venus. (4029); this miniature marks the closure of the first part of the text, but the rubric does not allude to the change of authorship. On the left the Lover clad in a pink dress is looking up to Bel Acueil imprisoned in a tower and looking out of the window.
+</p>
+          <p>
+20) <locus>53r</locus>b, 75x69 mm, 15 lines, Comment lamant vint a Amis (V. 7201); on the left the Lover in a pink dress, on the right Friend in a grey dress.
+</p>
+          <p>
+21) <locus>68v</locus>a, 71x71 mm, 12 lines, (v. 9331); the jealous husband is beating up his kneeling wife in presence of two witnesses; the man on the right tries to hold him back, while the violent husband is pulling his wife’s hair and lifting his stick.
+</p>
+          <p>
+22) <locus>76v</locus>a, 72x72 mm, 12 lines, Comment li dieux damours parle a sa gent (v. 10463); on the left two female figures and one male one. On the left Contrainte Abstinence is leading Faussemblant by his hand, on the right the winged God of love with two faces of his vassals behind him.
+</p>
+          <p>
+23) <locus>77r</locus>a, 70x72mm, 11 lines, this miniature does not have a rubric, on the left the Lover clad in grey and praying to the God of Love accompanied by two men from his entourage (v. 10545). 
+</p>
+          <p>
+24) <locus>89v</locus>b, 66x67 mm, 11 lines, this miniature does not have a rubric, (v. 1233r); Male Bouche’s confession to Faussemblant. Faussemblant is sitting on the left and holding Male Bouche’s head; Male Bouche is kneeling before him, putting his hands in Faussemblant’s lap and poking his tongue out.
+</p>
+          <p>
+25) <locus>107r</locus>a, 63x68mm, 11 lines, this miniature does not have a rubric (v. 14797) and illustrates the Lover’s unsuccessful try of getting close to Bel Acueil. On the left the Lover clad in a pink dress, in the center Danger lifting his club and turning his back to the observer, on the right side the Old Woman and a second female figure behind her.
+</p>
+          <p>
+26) <locus>109v</locus>a, 72x70, 12 lines, Comment franchise vint a dangier parler et comment dangier veult ferir franchise du baston (v. 15273), the rubric is at the bottom of column 109va, the miniature at the top of column 109vb; battle scene between Franchise and Dangier. She is raising her sword and he hits her shield with his club.
+</p>
+          <p>
+27) <locus>116v</locus>b, 72x69, 12 lines Genyus (v. 16265); Genius dressed as a priest and lifting his left arm as if teaching on the left, Nature in an attitude of contrition on the right.
+</p>
+          <p>
+28) <locus>119v</locus>b ,67x70, 11 lines, this miniature does not have a rubric (v. 16699); Genius is sitting on a pew-like chair in green, Nature is kneeling in front of him, folding her hands and not touching him.
+</p>
+          <p>
+29) <locus>147v</locus>b, 68 x71mm, 11 lines, this miniature does not have a rubric, (v. 20695); the siege of the castle: The miniature is dominated by Venus armed with a barbed club and a shield in the center and in front of Jealousy’s castle; the knights of the God of Love in full armor on the left, Shame and Fear behind the merlons of the castle and shaking their fists at Venus and her army. 
+Final rubric: Cy fine le Rommans de la Rose / ou lart damours et toute enclose. (159ra)
+</p>
+          <p>
+30) <locus>156r</locus>, 89x162 mm, 15 lines, Cy commence le testament maistre Jehan de Meun. The Incipit is the only rubric of this text. The large opening miniature occupies the whole width of the page. On the left it shows the author sitting in front of a cicular lectern with an open book, praying and looking up into the sky where he is contemplating the Holy Trinity in the form of three bearded men with glorioles, raising their right hands in a blessing gesture and holding a golden globe in their left hands. 
+<locus>186r</locus>a Explicit le testament maistre jehan de meun – not a rubric, written in the same ink and with the same initial as the first verses of each stanza.
+<locus>186</locus>v Cy apres commence le codicile demaistre Jehan de meun et est le derren/ier liure quil fist auant son trespassement – table of contents of the Codicil
+</p>
+          <p>
+31) <locus>187r</locus>, 82x88mm and 82x77 mm, 14 lines, Cy apres commence le codicile maistre jehan de meun et est le derrenier livre quil fist auant son trespassement. The opening miniature is divided in two parts corresponding to the two columns of the text. The left compartment shows the author sitting in front of a polygonal lectern adorned with the same coat of arms to be found on f. 1ra and f. 156r. The right compartment is taken by a representation of the Trinity in the form of the See of Grace on a flaming red background and surrounded by clouds set against a tesselated chessboard.
+</p>
+          <p>
+32) <locus>190r</locus>a Le quart article est de la descendue nostre seigneur ihesuscrist ou limbe; the miniature follows at the top of the next page, 190va, 72x72mm, 12 lines (v. 708, Méon). Christ armed with a cross liberates four naked people from Limbo; the the Mouth of Hell is represented as the open jaws of a wolf.
+</p>
+          <p>
+33) <locus>192r</locus>a, 70x72mm, 12 lines, Le .vj.e article est de lascension nostre seigneur ihesucrist (v. 1056); Mary and the disciples are kneeling, praying and witnessing the Ascension of Christ whose feet are still visible.
+</p>
+          <p>
+34) <locus>194r</locus>a, 70x72 mm, 12 lines, Le .vij.e article est de la venue nostreseigneur ihesuscrist au jugement (v. 1320). On Judgement Day Christ is sitting in the center, an angel on the left is holding the Column of Flagellation, an angel on the right the Cross.
+</p>
+          <p>
+35) <locus>196r</locus>a, 70x77 mm, 12 lines, Explicit le codicile de maistre / Jehan de meun. Cy apres commence son petit codicile. The rubrics are at the bottom of column 196ra, the miniature is at the top of the following column 196rb. The opening miniature of the Small Codicil shows the author sitting on a chair covered with a baldaquin, he is looking at a friar on the right, two dogs are running from the right side to the author. These dogs highlight the importance of the intention of well-doing alluded to in v. 42 (ed. Buzzatti Gallerati): “De mes deux chiens l’exemple”.
+<locus>196v</locus>a Explicit le petit codicile de maistre iehan demeun
+</p>
+        </note>
+        <note rend="BINDING">
+          <p>Modern Binding (20th cent., before 1963) by Ernst Riethmüller, Stuttgart; the Riethmüller firm, which still is active, used the oval stamp on the end paper till 1963. The old binding has not been conserved.</p>
+          <p>Binding 347 mm in height, 255 mm from center of spine to fore edge. </p>
+        </note>
+        <note rend="HISTORY">
+          <p>There are two inscriptions from the 15th century concerning former owners: “Qui hunc librum invenit, Felix de Bri[e?]” (f. IIIv) and “Ce livre est Clement Doriet…” (f. 197r) 
+                  Dr.  Burkhart has been kind enough to supply this information; the second inscription is only legible under ultraviolet light; both possessors have not been identified.
+               </p>
+          <p>The manuscript belonged to the Public Library of Carl Eugen (1728-1793), the 12th Duke of Württemberg (1737-1793) who founded the library on the 11th of February of 1765. The low shelfmark suggests that the manuscript probably was in the library right from the beginning. But it is unclear whether it already belonged to the House of Württemberg before 1765, was acquired by Carl Eugen, a great collector of books, or by Joseph Uriot (1713-1788) – actor, free mason, collector in his own right (he sold his collection to Carl Eugen) and librarian to Carl Eugen. There is a short note in Uriot’s handwriting on f.IIr:</p>
+          <p>“Roman de la Rose en vers françois, par Jean de Meun, dit Clopinet, a cause qu’il étoit boiteux. Ce Roman écrit sur velin vers la fin du XIVe siècle en lettres gotiques, en petit, in folio, est orné par plusieurs figures en miniature, et par des lettres initiales peintes en or, et en couleurs.</p>
+          <p>C’est sans contredit le plus ancien ouvrage, que la Poesie françoise a produit. Il est joint à ce Roman un autre manuscrit sur velin, qui est le Testament, et le Codicille de Jesus Christ, écrit au même tems, et qui est egalement de la plus grande beauté. »</p>
+          <p>f. VIr « Le Roman de la Rose contient 155 feuilles ou 309 pages ». [18th century script]</p>
+          <p>f. 197v. « je suys qui suys […?] suys » [15th century script]</p>
+          <p>f. 198v « Je suys qui suys […?] suys » [15th century script]</p>
+        </note>
+        <note rend="NOTES">
+          <p>N.B. The following handwritten corrections of the printed catalogue by Irtenkauf and Krekler are to be found in the copy available for consultation in the manuscript reading room of the Württembergische Staatsbibliothek:</p>
+          <p>53rb „der Freund erteilt…“ instead of „Raison erteilt“</p>
+          <p>
+                  68 va „der Ehemann schlägt seine Frau“ instead of „der Tod der Richterstochter“</p>
+          <p>186v „Inhaltsübersicht zu 187ra-196ra“ instead of „Inhaltsübersicht zu 187ra-196vb“</p>
+          <p>1975. 1985 „Ie suys qui suys ….? suys” instead of “Yesnys qui suis bonum. suis.“
+               </p>
+        </note>
+        <note>
+              Description by Max Grosse.
+            </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscript</note>
+          <note type="commonName">Cod. poet. et phil. 2º 6</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="204" unit="folios">204 folios</measure>
+            <dimensions>
+              <height unit="mm">335</height>
+              <width unit="mm">240</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">36</note>
+          <note type="material">parchment</note>
+          <pubPlace>France</pubPlace>
+          <date notAfter="1416" notBefore="1416">1416</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Stuttgart</settlement>
+            <repository>Württembergische Landesbibliothek</repository>
+            <idno>Cod. poet. et phil. 2º 6</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="155r">1r-155r</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">155</note>
+              <note type="illustrations">29</note>
+              <note type="linesPerColumn">36</note>
+              <note type="leavesPerGathering">8</note>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+            <msItem n="2">
+              <locus from="156r" to="186r">156r-186r</locus>
+              <title>Le Testament Maistre Jehan de Meun</title>
+              <note type="textid">testament</note>
+              <note type="folios">30</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">36</note>
+              <note type="leavesPerGathering">8</note>
+              <note type="columnsPerFolio">1</note>
+            </msItem>
+            <msItem n="3">
+              <locus from="186v" to="196r">186v-196r</locus>
+              <title>Le codicile Maistre Jehan de Meun</title>
+              <note type="textid">codicille</note>
+              <note type="folios">10</note>
+              <note type="illustrations">5</note>
+              <note type="linesPerColumn">36</note>
+              <note type="leavesPerGathering">8</note>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="4">
+              <locus from="196r" to="196v">196r-196v</locus>
+              <title>Petit codicile</title>
+              <note type="textid">petitcodicille</note>
+              <note type="folios">1</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">36</note>
+              <note type="leavesPerGathering">8</note>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

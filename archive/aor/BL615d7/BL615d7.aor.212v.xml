@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.212v.tif" pagination="[212v]" reader="John Dee" signature="[Ddiiii[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="l'acque seguono quiui il corso de' venti" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nota de ventis et aqua cursu.</marginalia_text>
+                </position>
+            </language>
+            <translation>Note the course of the wind and the water.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Tiburoni tol" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tiburoni fish</marginalia_text>
+                </position>
+            </language>
+            <translation>Bonnethead shark (Sphyrna tiburo)</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="tira l'acqua in su fino alle nubi" type="straight"/>
+        <underline language="IT" method="pen" text="più großa, che vna botte, torcendola a guisa di turbine" type="straight"/>
+        <underline language="IT" method="pen" text="che le correnti di quella Costa si conformauano co' temporali, &amp; che allhora andauano col" type="straight"/>
+        <underline language="IT" method="pen" text="verso Leuante" type="straight"/>
+        <underline language="IT" method="pen" text="regnauano i Leuanti" type="straight"/>
+        <underline language="IT" method="pen" text="correuano all'Occidente" type="straight"/>
+        <underline language="IT" method="pen" text="l'acque seguono quiui il corso de' venti, che più soffiano." type="straight"/>
+        <underline language="IT" method="pen" text="Tiburoni a'" type="straight"/>
+        <underline language="IT" method="pen" text="augurij" type="straight"/>
+        <underline language="IT" method="pen" text="e lo tagliano," type="straight"/>
+        
+    </annotation>
+</transcription>

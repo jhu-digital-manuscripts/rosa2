@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.029v.tif" pagination="42" reader="Harvey"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Media via neutri parti gratiosa. s[upr]a, i[nfr]a sa[e]piùs.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>A middle way that is not attractive to either party. Frequently above and below.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Mouebant consulem" type="straight"/>
+        <underline language="LA" method="pen" text="tergiuersari res cogebat" type="straight"/>
+        <underline language="LA" method="pen" text="omnis factio nobiliu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="medium se gerendo, nec plebis uitauit odium" type="straight"/>
+        <underline language="LA" method="pen" text="apud patres gratia[m] inijt" type="straight"/>
+        <underline language="LA" method="pen" text="Patres mollem consulem" type="straight"/>
+        <underline language="LA" method="pen" text="plebs fallacem" type="straight"/>
+        <underline language="LA" method="pen" text="aequasse eum Appij odiu[m]" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--pa-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--ap-->
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="medium"/>
+        
+    </annotation>
+</transcription>

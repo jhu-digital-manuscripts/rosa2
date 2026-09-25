@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.065r.tif" reader="Harvey" signature="Hii[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Great marches, &amp; suddain surprizes, sumtime of woonderfull valour.</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Vt i[nfr]a, c.I.l.3.</marginalia_text>
+                    <internal_ref text="i[nfr]a">
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0146" text="c.I.l.3."/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>As below, chapter 1, book 3.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>An Exploit, comparable with any on Act of Ca[e]sar, or Alexander.</marginalia_text>
+                    <person name="Julius Caesar"/>
+                    <person name="Alexander the Great"/>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A braue, &amp; most famous Victory, worthy a[e]ternal honour.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="citie" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>He might haue kept</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>[th]e Citty still, as Lord therof.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="preparyd games of exercise a good" type="straight"/>
+        <underline language="EN" method="pen" text="parte of the multitude" type="straight"/>
+        <underline language="EN" method="pen" text="assembled, to se the syghtes" type="straight"/>
+        <underline language="EN" method="pen" text="shut the gates" type="straight"/>
+        <underline language="EN" method="pen" text="had receyued hostages" type="straight"/>
+        <underline language="EN" method="pen" text="Whan Cn. Pompeius" type="straight"/>
+        <underline language="EN" method="pen" text="syck and diseased" type="straight"/>
+        <underline language="EN" method="pen" text="diseased, to be refreshed among" type="straight"/>
+        <underline language="EN" method="pen" text="thither his moste valiaunte" type="straight"/>
+        <underline language="EN" method="pen" text="men of armes, as" type="straight"/>
+        <underline language="EN" method="pen" text="though they" type="straight"/>
+        <underline language="EN" method="pen" text="ben sycke and dyseased" type="straight"/>
+        <underline language="EN" method="pen" text="the citie" type="straight"/>
+        <underline language="EN" method="pen" text="kepte it" type="straight"/>
+        
+        <symbol name="SS" place="head"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="ben sycke and dyseased"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--assem-->
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--aide, preparyd-->
+        <mark method="pen" name="dot" place="intext"/> <!--syghtes, he-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="hostages"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        
+    </annotation>
+</transcription>

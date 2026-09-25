@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.076v.tif" reader="Harvey" signature="[Iv[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Is not Ingland ouerlauish, in ayding [the] Low Cuntryes, &amp; France?</marginalia_text>
+                    <location name="England"/>
+                    <location name="Netherlands"/>
+                    <location name="France"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Polymechania.</marginalia_text>
+                </position>
+            </language>
+            <translation>Polymechanics.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="power to Catana" type="straight"/>
+        <underline language="EN" method="pen" text="leaue theyr owne citie" type="straight"/>
+        <underline language="EN" method="pen" text="being destitute" type="straight"/>
+        <underline language="EN" method="pen" text="he sore" type="straight"/>
+        <underline language="EN" method="pen" text="tournynge awaye the" type="straight"/>
+        <underline language="EN" method="pen" text="thyrste" type="straight"/>
+        <underline language="EN" method="pen" text="lacke of water" type="straight"/>
+        <underline language="EN" method="pen" text="by vndermyning the welles" type="straight"/>
+        <underline language="EN" method="pen" text="and kepyng them" type="straight"/>
+        <underline language="EN" method="pen" text="with artyllery from the ryuer" type="straight"/>
+        <underline language="EN" method="pen" text="lowe place" type="straight"/>
+        <underline language="EN" method="pen" text="brought the ryuer aboue them" type="straight"/>
+        <underline language="EN" method="pen" text="troubled with" type="straight"/>
+        <underline language="EN" method="pen" text="sodeyne ouerflowynge of the" type="straight"/>
+        <underline language="EN" method="pen" text="he slewe" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="by vndermyning the welles"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="brought the ryuer aboue them"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="lowe place"/>
+        
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="tournynge"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="vndermyning"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="with artyllery from the ryuer"/>
+        
+    </annotation>
+</transcription>

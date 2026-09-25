@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.001v.insert.tif" pagination="[inserted]" reader="John Dee"/>
+    <annotation>
+        
+        <!--  Note the second 'marginalia' is on a slip of a paper and the same image without the RCP slip is captured on to 006. 
+        Marked as remaining issue as I am not sure whether we need to capture inserted slip?-->
+        
+        <marginalia hand="Italian" other_reader="Unknown">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        D136/16
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" other_reader="Unknown">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        20b
+                        D 136/16
+                        10106
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+    </annotation>
+</transcription>

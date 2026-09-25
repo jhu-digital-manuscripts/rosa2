@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.293v.tif" pagination="566" reader="John Dee" signature="[nnn.iii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="risum posset continere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>risum continere</marginalia_text>
+                </position>
+            </language>
+            <translation>To contain laughter.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="gynaeceo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Gyno[e]ceu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Women's apartment.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="suo Marte" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>suo marte.</marginalia_text>
+                </position>
+            </language>
+            <translation>With his force of arms.</translation>
+        </marginalia> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Lex</marginalia_text> 
+                </position>
+            </language>
+            <translation>Law.</translation>
+        </marginalia> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>sup[r]a 95</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP10549-50v1:0123" text="95"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See above, 95.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="auaritia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Auaritia</marginalia_text>
+                </position>
+            </language>
+            <translation>Avarice.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="risus hominu[m] &amp; querelas moueret" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>risu[m] mouere</marginalia_text>
+                </position>
+            </language>
+            <translation>To provoke laughter.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="co[n]tumeliis onerasti" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>co[n]tumelijs onerare</marginalia_text>
+                </position>
+            </language>
+            <translation>To burned with affronts.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="suo Marte" type="straight"/>
+        <underline language="LA" method="pen" text="ea Turammos interfectis, ii, quibis erepta essent, recuperare[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="Quid ego de co[m]mentariis" type="straight"/>
+        <underline language="LA" method="pen" text="fulmen sinitru[m]" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">13</numeral>
+        
+        <drawing anchor_text="Lex" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="Auaritia" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

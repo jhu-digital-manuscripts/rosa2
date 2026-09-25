@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.162v.tif" pagination="64" reader="John Dee"/>   
+    <annotation>
+        
+        <marginalia anchor_text="Na[m] &amp; tu mulier optimum virum mauis habere, &amp; tu Xenophon vxorem habere lectissimam maxime vis. Quare nisi hoc perfeceritis, vt neque vir melio, neq[ue] foemina lectior in terris sit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>melior lectior optim[us]. lectiss[us].</marginalia_text>
+                </position>
+            </language>
+            <translation>Better, finer, the best, the finest.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="confuse &amp; permiste dispersimus: pòst discrete &amp; electe in genus quodque causae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>discrete electe X co[n]fuse p[er]miste. disperse 76</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP10549-50v1:0346:u0001" text="76"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Separately, individually - at random, jointly, in a dispersed manner. [Page] 76.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="OMNIS igitur argumentatio, aut per inductionem tractanda est, aut per ratiocinationem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>O[mn]is argume[n]tatio aut inductio aut raciotinatio est.</marginalia_text>
+                </position>
+            </language>
+            <translation>All argumentation is either by induction or deduction.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Inductio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Inductio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Induction.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Socrates" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Socrates.</marginalia_text>
+                    <person name="Socrates"/>
+                </position>
+            </language>
+            <translation>Socrates.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="praecipiendu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pra[e]ceptiones qua[e]dam</marginalia_text>
+                </position>
+            </language>
+            <translation>Certain preconceptions.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Extremum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Extremu[m]. vel conclusio.</marginalia_text>
+                </position>
+            </language>
+            <translation>The end, or conclusion.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="taciturnitas imitatur confessione[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Taciturnitas imitatur confeßionem.</marginalia_text>
+                </position>
+            </language>
+            <translation>Silence resembles a confession.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="rogatione[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>rogatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Questioning.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="confuse &amp; permiste" type="straight"/>
+        <underline language="LA" method="pen" text="pòst discrete &amp; electe" type="straight"/>
+        <underline language="LA" method="pen" text="Inductio, est" type="straight"/>
+        <underline language="LA" method="pen" text="caeteru[m] ornamentu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="optimum" type="straight"/>
+        <underline language="LA" method="pen" text="habere lectissimam" type="straight"/>
+        <underline language="LA" method="pen" text="neque vir melior" type="straight"/>
+        <underline language="LA" method="pen" text="foemina lectior" type="straight"/>
+        <underline language="LA" method="pen" text="Hoc modo sermonis" type="double"/>
+        <underline language="LA" method="pen" text="plurimu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="rogatione[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Quare ratione rogationis imprudens" type="straight"/>
+        <underline language="LA" method="pen" text="aut quoniam taciturnitas imitatur confessione[m]" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">.1.</numeral>
+        <numeral place="left_margin">.2.</numeral>
+        <numeral place="left_margin">.3.</numeral>
+        
+        <drawing anchor_text="melior lectior optim[us] lectiss[us]" book_orientation="0" method="pen" place="head" type="florilegium"/>
+        <drawing anchor_text="discrete electe X co[n]fuse p[er]miste. disperse 76" book_orientation="0" method="pen" place="head" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+        
+    </annotation>
+</transcription>

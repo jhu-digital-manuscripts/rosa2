@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.131r.tif" pagination="124" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="caput draconis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>☊ directio.</marginalia_text>
+                </position>
+            </language>
+            <translation>The direction of the North node.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ascende[n]s" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ascendens</marginalia_text>
+                </position>
+            </language>
+            <translation>Ascending.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="cum sit caput" type="straight"/>
+        <underline language="LA" method="pen" text="stella potens" type="straight"/>
+        <underline language="LA" method="pen" text="sed radij" type="straight"/>
+        <underline language="LA" method="pen" text="auxiliatus sum cu[m] calidis" type="straight"/>
+        
+    </annotation>
+</transcription>

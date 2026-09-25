@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.034r.tif" pagination="51" reader="John Dee" signature="e 2"/>
+    <annotation>
+        
+        <marginalia anchor_text="δυοδεκατημόριον" hand="Italian"> 
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        δυοδεκατημόριον  
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Twelfth part.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="primo nasci" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Primogenitus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Firstborn.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Semper autem Iupiter, in cardinibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ♃ in Cardinibus
+                    </marginalia_text>
+                    <symbol_in_text name="Jupiter"/>
+                </position>
+            </language>
+            <translation>
+                Jupiter in the cardinals.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ☍ ☉ &amp; ♃ 
+                    </marginalia_text>
+                    <symbol_in_text name="Opposite_planets"/>
+                    <symbol_in_text name="Sun"/>
+                    <symbol_in_text name="Jupiter"/>
+                </position>
+            </language>
+            <translation>
+                Opposition between the Sun and Jupiter.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="omnem ♄ inuenias" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; pro mensura geniturae" type="straight"/>
+        <underline language="LA" method="pen" text="faciet primum nasci" type="straight"/>
+        <underline language="LA" method="pen" text="Semper autem Iupiter, in cardinibus geniturae collocatus, aut primos nasci faciet, aut fratres eius" type="straight"/>
+        <underline language="LA" method="pen" text="crescens ☾, quacunq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="extraneas haereditates decernit" type="straight"/>
+        <underline language="LA" method="pen" text="nec bonus est, nec malus" type="straight"/>
+        <underline language="LA" method="pen" text="iumentorum amatores atq[ue] cultores" type="straight"/>
+        <underline language="LA" method="pen" text="signorum, thesauros" type="straight"/>
+        <underline language="LA" method="pen" text="Semper enim sic positus ♃, usq[ue] ad mortem felicem decernit senectute[m]" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; rursus postea colliget" type="straight"/>
+        
+        <symbol name="Trine" place="right_margin"/>
+        
+        <errata amendedtext="♃" copytext="♄" language="LA"/>
+        
+    </annotation>
+</transcription>

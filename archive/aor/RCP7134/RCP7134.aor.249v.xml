@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.249v.tif" pagination="[242v]" reader="John Dee" signature="[PP ij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Partes Signiferi et tempora retrogradationis planetaru[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>The parts of the standard bearer and the times of the retrogradation of the planets.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Luna in octauo loco" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>in revolutio[n]e</marginalia_text>
+                </position>
+            </language>
+            <translation>In the revolution.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="homines inclinant" type="straight"/>
+        <underline language="LA" method="pen" text="loco" type="straight"/>
+        
+    </annotation>
+</transcription>

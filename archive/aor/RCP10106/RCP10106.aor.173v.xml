@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.173v.tif" pagination="346" reader="John Dee" signature="[y 5[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Sed quia respo[n]deri potest, non est scriptum, ut bis praecipitetur damnata, aut quandocunq[ue] rapta optet, aut tyrannicida duo praemia accipiat, nihil              de uomere cautum, nihil de ouibus, ex eo quod manifestum, colligitur quod dubium est." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Solutio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Explantion.</translation>
+        </marginalia>
+         
+        <marginalia anchor_text="Simile autem &amp; maius est, &amp; par, &amp; minus." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Simile maius par minus</marginalia_text>
+                </position>
+            </language>
+            <translation>Similar includes greater, equal and less.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ὁμωνυμία" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ὁμωνυμία</marginalia_text>
+                </position>
+            </language>
+            <translation>Homonymy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ineptae sanè cauillationes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Inepta[e] Cavillatio[n]es</marginalia_text>
+                </position>
+            </language>
+            <translation>Inept banter.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Sed quia respo[n]deri potest, non" type="straight"/>
+        <underline language="LA" method="pen" text="quibusdam nullum uideatur esse uerbum, quod no[n] plura significet, genera admodum pauca" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">1</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">1</numeral>
+        <numeral language="LA" place="left_margin" text="Alterum ">2</numeral>
+        <numeral language="LA" place="left_margin" text="Tertia">3</numeral>
+        <numeral place="left_margin"> </numeral>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        
+    </annotation>
+</transcription>

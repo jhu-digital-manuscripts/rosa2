@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.170r.tif" pagination="323" reader="Harvey"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Claudius Marcellus praetor" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Valorous &amp; puissant</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Marcellus. the present hope of dismaied Roome. A worthie man at a maine brunt.</marginalia_text>
+                    <person name="Marcus Claudius Marcellus"/>
+                    <location name="Rome"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Claudius Marcellus praetor Annibalis" type="straight"/>
+        <underline language="LA" method="pen" text="primusq[ue] omnium tot" type="straight"/>
+        <underline language="LA" method="pen" text="cladibus fessis Romanis meliorem spem belli dedit" type="straight"/>
+        
+        <symbol language="LA" name="SS" place="intext" text="ualorous &amp; puissant Marcellus. the present hope of dismaied Roome.              A worthie man at a maine brunt."/>
+        
+        <mark method="pen" name="plus_sign" place="intext"/>
+        
+    </annotation>
+</transcription>

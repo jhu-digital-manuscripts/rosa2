@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.071v.tif" reader="Harvey" signature="[Hviii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A counterfecyt fray.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>An odd mad deuise.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Comicotragoedia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Tragicomedy.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>i[nfr]a, c.9. L. Cornelius.</marginalia_text>
+                    <person name="Lucius Cornelius Scipio Asiaticus"/>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0166" text="c.9"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>[See] below, chapter 9, book. Cornelius.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>How easely might S[i]r Humfry Gilbert, or Captain Forbusher, or Captain Drake, 
+                        haue gained sum lyke opportunity?</marginalia_text>
+                    <person name="Humphrey Gilbert"/>
+                    <person name="Francis Drake"/>
+                    <person name="Martin Frobisher"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="hauen of the Siciniens" type="straight"/>
+        <underline language="EN" method="pen" text="mighty gret shyppe with men of armes" type="straight"/>
+        <underline language="EN" method="pen" text="face of marchandise to" type="straight"/>
+        <underline language="EN" method="pen" text="small company of men" type="straight"/>
+        <underline language="EN" method="pen" text="the shyppe vnarmed" type="straight"/>
+        <underline language="EN" method="pen" text="forthe" type="straight"/>
+        <underline language="EN" method="pen" text="fayned to picke a quarell" type="straight"/>
+        <underline language="EN" method="pen" text="make a great fray" type="straight"/>
+        <underline language="EN" method="pen" text="apeace the fraye" type="straight"/>
+        <underline language="EN" method="pen" text="both their hauen" type="straight"/>
+        <underline language="EN" method="pen" text="and the citie" type="straight"/>
+        <underline language="EN" method="pen" text="puttynge on the cloke and hatte of hym" type="straight"/>
+        <underline language="EN" method="pen" text="arayde lyke a Macedonian" type="straight"/>
+        <underline language="EN" method="pen" text="for Carmades, into the Samnites" type="straight"/>
+        <underline language="EN" method="pen" text="enmies to treason" type="straight"/>
+        <underline language="EN" method="pen" text="Syracusa[n]s" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="apeace the fraye"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="puttynge on the cloke and hatte of hym"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="face of marchandise to"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="and the citie"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

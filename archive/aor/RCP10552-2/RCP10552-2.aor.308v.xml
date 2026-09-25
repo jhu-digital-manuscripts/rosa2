@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.308v.tif" pagination="130" reader="John Dee"/>
+    
+    
+    <annotation>
+        
+        <marginalia anchor_text="Ioh. dux Lancastriae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Io[hann]es Dux La[n]castria[e]</marginalia_text>
+                    <person name="John of Gaunt"/>
+                </position>
+            </language>
+            <translation>John, Duke of Lancaster.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="Dominus Ioh. dux" type="straight"/>
+        <underline language="LA" method="pen" text="Chaundos miles" type="straight"/>
+        <underline language="LA" method="pen" text="Rob. Knoll" type="straight"/>
+        <underline language="LA" method="pen" text="fuga 7. millibus" type="straight"/>
+        <underline language="LA" method="pen" text="comes de Dena" type="straight"/>
+        <underline language="LA" method="pen" text="verò de Nazar" type="double"/>
+        <underline language="LA" method="pen" text="praelium tertio die Aprilis" type="straight"/>
+        <underline language="LA" method="pen" text="in vigilia dominicae" type="straight"/>
+        <underline language="LA" method="pen" text="Petronem" type="straight"/>
+        <underline language="LA" method="pen" text="dolosè faciens" type="straight"/> 
+        <underline language="LA" method="pen" text="Edwardus princeps intoxicatus" type="straight"/>
+        <underline language="LA" method="pen" text="vsque ad finem vitae fuit priuatus" type="straight"/>
+        
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- intoxicatus sanitate -->
+                
+        <errata amendedtext="inguine" copytext="inquine" language="LA"/>
+        
+    </annotation>
+    
+</transcription>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.138v.tif" pagination="276" reader="John Dee" signature="[s 2[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Caßius dicenti adulescentulo: Quid me toruo uultu intueris Seuere? No[n] mehercules, inquit, faciebam, sed sic scripsiti: Ecce: &amp; quàm              potuit truculentißime eum aspexit." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Locus preclarus</marginalia_text>
+                </position>
+            </language>
+            <translation>Famous passage.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Illus praecipue admonendum, ne quis nisi summis ingenij uiribus ad mouendas lachrymas aggredi audeat." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>obseruandu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>A thing to be observed.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nihil habet ista res mediu[m], sed aut lachrymas meretur, aut risum." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>nullum mediu[m] inter lachrymas &amp; risum</marginalia_text>
+                </position>
+            </language>
+            <translation>There is not any middle ground between tears and laughter.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Neq[ue] illum, qui, cùm esset cruentus gladius eius ab asccusatore prolatus, quo is homine[m] probabat occisum, subitò ex subsellijs              ut territus fugit, &amp; capite ex parte uelato cum ad agentem ex turba prospexisset, interrogauit, an iam ille cum gladio receßisset." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Lepidiss[us] locus</marginalia_text>
+                    <person name="Marcus Aemilius Lepidus"/>
+                </position>
+            </language>
+            <translation>Lepidus passage.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Na[m] &amp; uultus, &amp; uox, &amp; ipsa illa excitati rei facies, ludibrio etia[m] plerunq[ue] sunt hominibus, quos non permouerunt.              Quare" type="straight"/>
+        <underline language="LA" method="pen" text="Non autem co[m]mouere tantum miserationem, sed etiam discutere, epilogi est proprium, cum oratione continua, quae moros lachrymis" type="straight"/>
+        <underline language="LA" method="pen" text="esse mimica" type="straight"/>
+        <underline language="LA" method="pen" text="talos proiecit in medium, quos illi diripere coeperunt" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+      
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

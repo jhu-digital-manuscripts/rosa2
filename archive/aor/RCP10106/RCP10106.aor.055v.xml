@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.055v.tif" pagination="110" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Zeno" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Zeno</marginalia_text>
+                    <person name="Zeno of Elea"/>
+                </position>
+            </language>
+            <translation>Zeno.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Miloniano" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro milone.</marginalia_text>
+                    <person name="Titus Annius Milo"/>
+                </position>
+            </language>
+            <translation>For Milo.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Crassus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Crassus</marginalia_text>
+                    <person name="Marcus Licinius Crassus"/>
+                </position>
+            </language>
+            <translation>Crassus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cicero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cicero</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Gorgias" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Gorgias.</marginalia_text>
+                    <person name="Gorgias"/>
+                </position>
+            </language>
+            <translation>Gorgias.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dicatur oratio: non materia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Oratio quid</marginalia_text>
+                </position>
+            </language>
+            <translation>What speech?</translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="Est enim eloquentia una de summis uirtutibus" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">.1.</numeral>
+        
+    </annotation>
+</transcription>

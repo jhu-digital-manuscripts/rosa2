@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.178v.tif" pagination="180" reader="Harvey" signature="[M2v]"/>	<!-- ABO 183left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Speculatoris egregium Caput, de Aduocatoru[m] disputuatione Cautelis.
+					</marginalia_text>
+					<person name="Guillaume Durand"/>
+				</position>
+			</language>
+			<translation>The extraordinary head of the Speculator, regarding the argument of the lawyers with cautions.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Videtur ex Fortio tralatum.	
+					</marginalia_text>
+					<person name="Joachim Fortius Ringelberg"/>
+				</position>
+			</language>
+			<translation>It seems to be carried over from Fortius.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Cunning Contracts, &amp; bargains,
+						in D[octor] Wilsons discourse of vsuri[e].
+					</marginalia_text>
+					<person name="Thomas Wilson"/>
+					<book title="A discourse upon usurie"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Eccè tria pra[e]gnantissima, et subtilissima Capita, in artis Notariatus tomo [primo]
+						De pa[c]tis, uel contractibus in fraudem factis. De contractibus vsurarijs, et
+						usuris. De pa[e]nis in contractibus appositis, et Interesse.						
+					</marginalia_text>
+					<book title="Ars notariatus"/>
+				</position>
+			</language>
+			<translation>Behold, three most pregnant and subtle headings, in the arts of the public notary, volume one,  concerning settlements or contracts made in fraud.
+			Concerning contracts pertaining to usurers and usury. Concerning the penalties in opposing contracts and interest.</translation> 
+		</marginalia>
+		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.178v_0001" marginalia_continues_from="Ha2.179r_0001" marginalia_from_transcription="Ha2.179r.xml">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						<!-- Continued from facing page, left margin, Ha2.179r --> [p. 181: Vnus liber, pragmaticè prudens, et efficax, plus valet, quàm Centum
+						vulgariter docti: nec tantùm possunt mille scholastica opera quantu[m]]
+						Vnum solidè pragmaticum. In paucis libris, plurimu[m] scientia[e]: in multis,
+						minimum. Quod petis, intus habes: exceptis Necessarijs;
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						paucissimis Singularibus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>[p. 181: One book that is pragmatically prudent and efficient, is worth more than a hundred commonly taught: nor can thousand scholastic works be so great as] one complete pragmatic book. In a few books, there are many things of science: in many books, there is a minimum of it.
+			What you strive for, you have within: with the necessary things taken out; with the fewest singular things.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="ella fia all'opposito del Sole" type="straight"/>
+		<underline language="IT" method="pen" text="alla coda del dragone" type="straight"/>
+		<underline language="IT" method="pen" text="per tanto spatio" type="straight"/>
+		<underline language="IT" method="pen" text="vscirà de" type="straight"/>
+		<underline language="IT" method="pen" text="splendore" type="straight"/>
+		<underline language="IT" method="pen" text="gran freddo nelle" type="straight"/>
+		<underline language="IT" method="pen" text="gran caldo &amp; siccità" type="straight"/>
+		<underline language="IT" method="pen" text="mar Tirreno &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="intorno al mar'Oceano" type="straight"/>
+		<underline language="IT" method="pen" text="tante stelle in cielo" type="straight"/>
+		<underline language="IT" method="pen" text="potrebbe mai contare" type="straight"/>
+		<underline language="IT" method="pen" text="de la iracondia" type="straight"/>
+		<underline language="IT" method="pen" text="perturbatione" type="straight"/>
+		<underline language="IT" method="pen" text="causa di quistioni" type="straight"/>
+		<underline language="IT" method="pen" text="iattura dell'honore" type="straight"/>
+		<underline language="IT" method="pen" text="fummo che adombra" type="straight"/>
+		<underline language="IT" method="pen" text="cosi l'ira offusca" type="straight"/>
+		<underline language="IT" method="pen" text="la ragione" type="straight"/>
+		<underline language="IT" method="pen" text="Chilone" type="straight"/>
+		<underline language="IT" method="pen" text="vincere sopra tutte le cose" type="straight"/>
+		<underline language="IT" method="pen" text="voglia inimico nuoce" type="straight"/>
+		<underline language="IT" method="pen" text="fortezza vincer quella" type="straight"/>
+		<underline language="IT" method="pen" text="l'inimico" type="straight"/>
+		<underline language="IT" method="pen" text="Ira è" type="straight"/>
+		<underline language="IT" method="pen" text="à morte" type="straight"/>
+		
+		<mark method="pen" name="plus_sign" place="left_margin"/> <!-- piu fortezza -->
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- pertur -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- cau -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- adom -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- mo -->
+		
+		<mark method="pen" name="dot" place="intext"/> <!-- piedi, cosi -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="la ragione"/>
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- ottenere. Chilone -->
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- l'iminico. Onde -->
+
+    </annotation>
+</transcription>

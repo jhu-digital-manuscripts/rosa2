@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.081r.tif" pagination="161" reader="John Dee" signature="l"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Firmamentum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>firmamentum</marginalia_text>
+                </position>
+            </language>
+            <translation>The firmament.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quaestio qualitatis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Questio qualitatis</marginalia_text>
+                </position>
+            </language>
+            <translation>The question of quality.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="secum etiam Cicero dissentit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cicero secu[m] dissentit</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero disagrees with him.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Qui bona paterna a consumpserit, ne co[n]cionetur: in opera" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

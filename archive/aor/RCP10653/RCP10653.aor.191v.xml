@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.191v.tif" pagination="374" reader="John Dee" signature="[Ij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="ibidem cum gloria &amp; honorè regaliter consecratur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Coronatio Edgari. q[uasi] 
+                        <!-- FSF: there is some other scribble , possibly 'ahe' -->  
+                        <!-- DO: It looks like 'asi' or 'ase' to me... Possibly 'q[u]asi' though I'm not sure how this would fit in. There's a kind of comma/mark after this note (going onto the top of the printed 'Ead-') which might be part of this? -->
+                        <!-- FSF: I do thikn it is a comma, but I am not sure if it is part of this note -->
+                        <!-- NBW: The sense of the passage is that the crown didn't make Edgar king, but that he wore it and did the things that one would expect at a coronation, hence the 'quasi'?-->
+                    </marginalia_text>
+                    <person name="Edgar I of England"/>
+                </position>
+            </language>
+            <translation>
+                The apparent coronation of Edgar I of England. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ordgarus Dux Deuoniae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Dux Deuonia[e]
+                    </marginalia_text>
+                    <person name="Ordgar of Devon"/>
+                </position>
+            </language>
+            <translation>
+                Ordgar, duke of Devon.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Eadmundus filius regis" type="straight"/>
+        <underline language="LA" method="pen" text="Aelfegus Dux Southamtoniae" type="straight"/>
+        <underline language="LA" method="pen" text="Ordgarus Dux Deuoniae" type="straight"/>
+        <underline language="LA" method="pen" text="socer" type="double"/>
+        <underline language="LA" method="pen" text="regis" type="straight"/>
+        <underline language="LA" method="pen" text="Osvvaldus" type="double"/>
+        <underline language="LA" method="pen" text=".xxx." type="straight"/>
+        <underline language="LA" method="pen" text="honorè regaliter" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

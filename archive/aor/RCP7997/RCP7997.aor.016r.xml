@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.016r.tif" reader="John Dee" signature="[Ciiij]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="vniuersalitas sumenda ex p[ar]te reru[m] et no[n] ex p[ar]te signoru[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Vniuersalitas ex parte reru[m] et no[n] ex p[ar]te signor[um]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Universality is from a part of things and not from a part of signs. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="figura vniuersalit[er] sumpta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        figura universaliter su[m]pta
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A figure is universally assumed.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Numerus ang[ulorum] rectoru[m] in polygonijs figuris co[n]te[n]tor[um] 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The number of right angles enclosed in polygonal shapes.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="prius v[niuersa]le inest o[mn]i triangulo et p[er] posterius i[d est] per particularisatione[m] et resolutionem cuilibet figure" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Prius inest tria[n]gulo est posterius alijs polygonijs
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                What is in front in a triangle is behind in other polygons.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tres errores" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Tres modi errandi circa vniuersale
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Three ways to err about the universal.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="vniuersalitas sumenda ex p[ar]te reru[m] et no[n] ex p[ar]te signoru[m] vt" type="straight"/>
+        <underline language="LA" method="pen" text="subiectu[m] subiciat[ur] vniuersalit[er] p[re]dicato q[ui]d est de o[mn]i p[er] se dicere s[e]c[un]d[u]m q[uod] ip[su]m et tu[n]c v[niuersa]le est q[ua]n[do] p[ro]pria passio inest             subiecto s[e]c[un]d[u]m q[uod] ip[su]m et omnino eq[ua]tur subiecto. Cu[m]" type="straight"/> 
+        <underline language="LA" method="pen" text="aut[em] figura vniuersalit[er] sumpta q[uo]libet sup[er]ficies plana" type="straight"/>
+        <underline language="LA" method="pen" text="Unde patet q[uod] quelibet figura polligonia habet om[n]es angulos bis tot rectis equales in quot nu[m]ero triangulos ipsa resoluat[ur]" type="straight"/>
+        <underline language="LA" method="pen" text="tria[n]gulo p[er] se vniuersalit[er]" type="straight"/>
+        <underline language="LA" method="pen" text="quare p[er] prius v[niversa]le inest o[mn]i triangulo et p[er] posterius i[d est] per particularisatione[m] et resolutionem cuilibet figure sc[ilicet] s[e]c[un]d[u]m q[uod]             ipsa resoluit[ur] in triangulos" type="straight"/>
+        <underline language="LA" method="pen" text="esse de om[n]i et p[er] se s[e]c[un]d[u]m q[uod] ip[su]m et" type="straight"/>
+        <underline language="LA" method="pen" text="linear[um] palellaru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="p[ri]mo co[n]uenit" type="straight"/>
+        
+        <numeral place="left_margin">1</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">.3.</numeral>
+        
+    </annotation>
+</transcription>

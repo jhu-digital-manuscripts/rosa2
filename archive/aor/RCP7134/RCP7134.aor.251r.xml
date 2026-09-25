@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.251r.tif" pagination="244" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="uenenum significant" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Veneni significatores.</marginalia_text>
+                </position>
+            </language>
+            <translation>The signifiers of poison.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Superiores planetae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hoc inprimis nota de planetarum superioru[m] passionibus</marginalia_text>
+                </position>
+            </language>
+            <translation>In the first place note this regarding the passions of the superior planets.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Luna in Solis opposito" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ego habui in ☉ opposito</marginalia_text>
+                </position>
+            </language>
+            <translation>I had the Sun in opposition:</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Luna in Solis opposito" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>adeo q[uod] semp[e]r dum sint retrogradi pertinaces faciu[n]t.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Indeed, because they are always made to retrograde while they are obstinate.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Saturni &amp; Veneris" type="straight"/>
+        <underline language="LA" method="pen" text="Lunae &amp; Saturni, quaru[m] non est exemplum" type="straight"/>
+        <underline language="LA" method="pen" text="Veneris &amp; Mercurij" type="straight"/>
+        <underline language="LA" method="pen" text="Saturni &amp; Martis" type="straight"/>
+        <underline language="LA" method="pen" text="Mercurij &amp; Saturni" type="straight"/>
+        <underline language="LA" method="pen" text="Solis &amp; Martis" type="straight"/>
+        <underline language="LA" method="pen" text="iterum luminariu[m] oppositio" type="straight"/>
+        <underline language="LA" method="pen" text="uterq[ue] nullo" type="straight"/>
+        <underline language="LA" method="pen" text="uenenum significant" type="straight"/>
+        <underline language="LA" method="pen" text="cu[m] primu[m] è radijs" type="straight"/>
+        <underline language="LA" method="pen" text="cu[m] radios" type="straight"/>
+        <underline language="LA" method="pen" text="cum in imo" type="straight"/>
+        <underline language="LA" method="pen" text="circuli parui retrogadantes" type="straight"/>
+        <underline language="LA" method="pen" text="post oppositione[m]" type="straight"/>
+        <underline language="LA" method="pen" text="radijs Solis orientales" type="straight"/>
+        <underline language="LA" method="pen" text="at cum" type="straight"/>
+        <underline language="LA" method="pen" text="retrogradari" type="straight"/>
+        <underline language="LA" method="pen" text="retrogradantur, ad Solis" type="straight"/>
+        <underline language="LA" method="pen" text="cum uero" type="straight"/>
+        <underline language="LA" method="pen" text="Luna in Solis opposito, perpetuas declarat contentiones, clara'q[ue] facta" type="straight"/>
+        <underline language="LA" method="pen" text="matutini extiterint, uel orientales uespertini" type="straight"/>
+        <underline language="LA" method="pen" text="possunt enim sed non perficiu[n]t" type="double"/>
+        
+        <symbol language="LA" name="Venus" place="right_margin" text="Veneris"/> 
+        <symbol language="LA" name="Mercury" place="right_margin" text="Mercurij"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <numeral language="LA" place="intext" text="cu[m] primu[m]">1</numeral>
+        <numeral language="LA" place="intext" text="cu[]m radios">2</numeral>
+        <numeral place="intext">3</numeral>
+        <numeral place="intext">4</numeral>
+        <numeral language="LA" place="intext" text="circuli parui retrogradantes">5</numeral>
+        <numeral language="LA" place="intext" text="post oppositione[m]">6</numeral>
+        
+        <numeral language="LA" place="intext" text="radijs Solis orientalis">1</numeral>
+        <numeral language="LA" place="intext" text="at cum">2</numeral>
+        <numeral language="LA" place="intext" text="retrogradari">3</numeral>
+        <numeral language="LA" place="intext" text="festinant">4</numeral>
+        <numeral language="LA" place="intext" text="retrogradantur">5</numeral>
+        <numeral language="LA" place="intext" text="cum uero">6</numeral>
+        
+    </annotation>
+</transcription>

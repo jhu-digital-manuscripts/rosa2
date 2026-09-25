@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.148v.tif" pagination="296" reader="John Dee" signature="[i 4[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Caßius Seuerus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cassius seuerus</marginalia_text> 
+                    <person name="Cassius Severus"/>
+                </position>
+            </language>
+            <translation>Cassius Severus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tracallus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tracallus.</marginalia_text>
+                    <person name="Publius Galerius Trachalus"/>
+                </position>
+            </language>
+            <translation>Trachalus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Caßius Seuerus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cassius Seuerus.</marginalia_text>
+                    <person name="Cassius Severus"/> 
+                </position>
+            </language>
+            <translation>Cassius Severus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Diuus Augstus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Diuus Augustus.</marginalia_text> 
+                    <person name="Augustus"/>
+                </position>
+            </language>
+            <translation>The divine Augustus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mendacium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Mendaciu[m].</marginalia_text> 
+                </position>
+            </language>
+            <translation>A lie.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="humiliori liberè aduersus se loquenti, Colaphum, inquit, tibi ducam, &amp; formulam scribam, quòd caput durum habeas. Hic" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

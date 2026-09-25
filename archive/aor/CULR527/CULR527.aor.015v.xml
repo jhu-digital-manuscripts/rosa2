@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.015v.tif" pagination="[15[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="causa formali" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        formalis c[aus]a Mathemat.1
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The formal case of mathematics 1. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Metaph..2
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Metaphysics 2.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Physica.3
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Physics 3.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="cognitionem causarum per effectum, uel effectus" type="straight"/>
+        <underline language="LA" method="pen" text="causam" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]siderant de causa formali tantùm, scilicet" type="straight"/>
+        <underline language="LA" method="pen" text="motore" type="straight"/>
+        <underline language="LA" method="pen" text="forma" type="straight"/>
+        <underline language="LA" method="pen" text="fine" type="straight"/> 
+        <underline language="LA" method="pen" text="non bene poterunt mathematici sine talibus cognitionibus probare quicquam" type="straight"/>
+        <underline language="LA" method="pen" text="in aliarum omnium substantia, est ultima. sed" type="straight"/>
+        <underline language="LA" method="pen" text="causis notis" type="straight"/>
+        <underline language="LA" method="pen" text="mathematica illud particulariter probauerit" type="straight"/>
+        <underline language="LA" method="pen" text="procedere debet per fines ad principium: quod est à demonstratione formali &amp; mathematica" type="straight"/>
+
+        <mark method="pen" name="plus_sign" place="left_margin"/> 
+        
+    </annotation>
+</transcription>

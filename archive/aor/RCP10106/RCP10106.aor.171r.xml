@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.171r.tif" pagination="341" reader="John Dee" signature="y 3"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Thrasybulo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Thrasibulus.</marginalia_text>
+                    <person name="Thrasybulus"/>
+                </position>
+            </language>
+            <translation>Thrasybulus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Praeturae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pra[e]tura</marginalia_text>
+                </position>
+            </language>
+            <translation>Praetorship.</translation>
+        </marginalia>
+       
+        <marginalia anchor_text="quaestionibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Qua[e]stio actio[n]is</marginalia_text>
+                </position>
+            </language>
+            <translation>Process of inquiry.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sponsionibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>sponsio</marginalia_text>
+                </position>
+            </language>
+            <translation>Agreement.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="lex" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lex.</marginalia_text>
+                </position>
+            </language>
+            <translation>Law.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quaestio est, aut in scripto, aut in uolu[n]tate. In scripto, aut apertum est, aut obscurum, aut amiguum." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Qua[e]stio aut est scriptio in voluntate. aut {aperto obscuro a[m]biguo </marginalia_text>
+                </position>
+            </language>
+            <translation>A question which either in writing, either clear, obscure,  ambiguous, or free choice.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="lex omnis aut tribuit, aut adimit, aut punit, aut iubet, aut uetat, aut permittit. Lite[m]" type="straight"/>
+        <underline language="LA" method="pen" text="idem de uoce" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/> <!-- FSF: I am not sure if this is a manicule or an expression of Dee being in a good mood; seriously, I don't know what it is -->
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

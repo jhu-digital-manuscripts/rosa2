@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.154v.tif" pagination="300" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="ab initio mundi quadrimillesimus septingintesimus, octogesimus octauus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        A[nn]o D[omi]ni 829: su[n]t ab initio mundi 4788. Ergo ab initio ad Chr[istu]m statuit annos 3959. quod no[n] procul a vero abest.
+                    </marginalia_text>  
+                    <person name="Jesus Christ"/>
+                </position>
+            </language>
+            <translation>
+                In the year 829 there are 4788 [years] from the beginning of the world. Therefore 3959 years stand between the beginning and Christ, which is really not far from the truth. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="annus magnus, qui est annorum quingentorum triginta duorum" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Nota de Anno magno. 532.    <!-- DO: I don't know if the box needs to be captured? -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Take note of the great year 532.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="VVallenses" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Wallenses.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The Welsh.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="initio mundi quadrimillesimus septingintesimus, octogesimus" type="straight"/>
+        <underline language="LA" method="pen" text="finitur nonus annus magnus ab initio" type="straight"/>
+        <underline language="LA" method="pen" text="annorum quingentorum" type="straight"/>
+        <underline language="LA" method="pen" text="ducens in Wallia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Wallenses" type="straight"/>
+        <underline language="LA" method="pen" text="suis, suae" type="straight"/>
+        <underline language="LA" method="pen" text="spontanea voluntate" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="head"/> 
+        <mark method="pen" name="tripunctus" place="left_margin"/> 
+        
+        <errata amendedtext="ditioni" copytext="ditione" language="LA"/>
+        
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="UclCastiglione1541.018r.tif" pagination="VI[r]" reader="Harvey" signature="Biiir"/>
+    <annotation>
+        <marginalia anchor_text="tutti habbiano qualche macchia" hand="Italian"> 
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Tutti habbiamo qualche macchia.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                We all have some kind of stain.    
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        II. Secondo giuoco proposto da M[.] Cesare, di qua[le] sorte di paz[zia] 
+                        l'huomo douerebbe impazzi[re]      
+                    </marginalia_text>
+                    <person name="Cesare Gonzaga"/>
+                </position>
+            </language>
+            <translation>
+                II. The second game proposed by Messer Cesare: by what sorts of madness 
+                a man would have to go mad.
+            </translation>
+        </marginalia>
+        <marginalia anchor_text="ciascun conosce facilmente l'error del compagno et non il suo" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ciascun conosce l'errore del compagno, no[n] il suo.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Everyone recognises a companion's mistake, but not his own.
+            </translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="che tutti habbiano" type="straight"/>
+        <underline language="IT" method="pen" text="ciascun conosce facilmente l'error del compagno et non il suo" type="straight"/>
+        
+        <mark language="IT" method="pen" name="plus_sign" place="left_margin" text="che tutti habbiano"/>
+        <mark language="IT" method="pen" name="plus_sign" place="left_margin" text="ciascun conosce facilmente              l'error del compagno et non il suo"/>
+    </annotation>
+</transcription>

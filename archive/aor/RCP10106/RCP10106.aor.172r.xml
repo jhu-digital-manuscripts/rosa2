@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.172r.tif" pagination="343" reader="John Dee" signature="y 4"/> 
+    <annotation>
+        
+        <marginalia anchor_text="pro Cecinna" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Cecinna.</marginalia_text>
+                    <book title="Pro Caecina"/>
+                </position>
+            </language>
+            <translation>Pro Caecina.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="anulo ferro" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Anulus ferre[us]</marginalia_text>
+                </position>
+            </language>
+            <translation>Iron ring.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uoluntate nitetur, scriptu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Voluntas &amp; scriptum</marginalia_text>
+                </position>
+            </language>
+            <translation>Intention and writing.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Antinomia" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Αντινόμια</marginalia_text> <!-- for ἀντινομία -->
+                </position>
+            </language>
+            <translation>Antinomy.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nisi noxium ferrum" type="straight"/>
+        
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">3</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

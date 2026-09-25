@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.081v.tif" reader="Harvey" signature="[**v]"/>	<!-- ABO 86left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Nullus perfectus, aut excellens habitus sine
+						quotidiana Exercitatione.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				No habit is perfect or excellent without daily exercise.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Assuetudo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Habit.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Puer est, qui nondùm didicit viuere.)
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A boy is he who has not yet learned to live.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Stultus est, qui non sapit sine libris.)
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A fool is he who has no sense without books.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Vnus, plus quàm mille.
+						Continua articulorum,
+						) sensuumq[ue] agitatio, diuina Eudoxi 
+						philosophia. Sudat
+						nobilissima
+						Industria: nec cessat unq[uam].
+					</marginalia_text>
+					<person name="Eudoxus"/>
+				</position>
+			</language>
+			<translation>
+				One rather than a thousand.
+				The continual exercise of the joints and senses: 
+				this is the divine philosophy of Eudoxus. 
+				The most renowned industriousness sweats, and it never stops.
+			</translation>			
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Bona corporis, animi, fortuna[e] quotidiè
+						augenda viro serio: alitèr Nugatori.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The goods of the body, mind, and fortune must be increased daily
+				by the earnest man; otherwise, they belong to a mere braggart.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Cum Fortuna, et foeminis impetuosè: cum Virtute, et Viris respectiuè.
+						Foemina[e], omnium horarum homines: nunq[uam] imparata[e].
+					</marginalia_text>
+					<emphasis method="chalk" text="foeminis impetuosè" type="straight"/>
+					<emphasis method="chalk" text="Viris respectiuè;" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Aggressively with Fortune and women; carefully with Virtue and Men; Women are people of all seasons, they are never unprepared.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						{ Philosophus non est,
+						qui non est polytechnus, polyda[e]dalus, polymechanus, polytropus, polychrestus; et omninò panergus. 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				He who is not polytechnus, polydaedalus, polymechanus, polytropus, polychrestus, and entirely panergus is not a philosopher. <!-- CG: Well, here are all those untranslatable neologisms. --> <!--JG: Yep, leave them for the time being-->
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Fortunam habet ad manum, qui Seipsum habet ad unguem; id est, corpus, et animu[m] suu[m]. 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				He who knows himself by heart (that is, he who knows his body and mind) keeps fortune at hand.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="guadngno certo" type="straight"/>
+		<underline language="IT" method="pen" text="l'incerto" type="straight"/>
+		<underline language="IT" method="pen" text="superstitioni" type="straight"/>
+		<underline language="IT" method="pen" text="Punture impertinenti" type="straight"/>
+		<underline language="IT" method="pen" text="ritorcersi" type="straight"/>
+		<underline language="IT" method="pen" text="pungitori" type="straight"/>
+		<underline language="IT" method="pen" text="maturamente" type="straight"/>
+		<underline language="IT" method="pen" text="subitaneo" type="straight"/>
+		<underline language="IT" method="pen" text="pronti, &amp; presentanei occorrimenti" type="straight"/>
+		<underline language="IT" method="pen" text="errori de' Principi" type="straight"/>
+		<underline language="IT" method="pen" text="La vanagloria" type="straight"/>
+		<underline language="IT" method="pen" text="pazzia" type="straight"/>
+		<underline language="IT" method="pen" text="sotto specie d'accordo" type="straight"/>
+		<underline language="IT" method="pen" text="della sue" type="straight"/>
+		<underline language="IT" method="chalk" text="dell'altrui professione" type="straight"/>
+		<underline language="IT" method="pen" text="il suo officio" type="straight"/>
+		<underline language="IT" method="pen" text="conseruare intera" type="straight"/>
+		<underline language="IT" method="pen" text="vigorosa la lor popolatione" type="straight"/>
+		<underline language="IT" method="pen" text="vie inescogitabili à luce vengono" type="straight"/>
+		<underline language="IT" method="chalk" text="à luce vengono" type="straight"/>
+		<underline language="IT" method="pen" text="Vn'audace auuedime[n]to" type="straight"/>
+		<underline language="IT" method="pen" text="altrui di gran perigli" type="straight"/>
+		<underline language="IT" method="pen" text="Vitup[er]abil' esser la munifice[n]tia" type="straight"/>
+		<underline language="IT" method="pen" text="La prouidenza" type="straight"/>
+		<underline language="IT" method="pen" text="La rigidezza" type="straight"/>
+		<underline language="IT" method="pen" text="inutili, &amp; dapochi i seruidori" type="straight"/>
+		
+		<symbol name="JC" place="left_margin"/>
+		<symbol name="SS" place="left_margin"/>
+		
+		<mark method="pen" name="plus_sign" place="left_margin"/> <!-- Vitup[er]abil'esser -->
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--mercan-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--in-->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="pungitori"/>
+		<mark method="pen" name="dot" place="intext"/> <!--pensato, per-->
+		<mark method="pen" name="dot" place="intext"/> <!--sempliei, &-->
+		<mark method="pen" name="dot" place="intext"/> <!--grandissimi, &-->
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="inutili, &amp; dapochi i seruidori"/>
+		
+    </annotation>
+</transcription>

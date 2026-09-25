@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.321r.tif" pagination="621" reader="John Dee" signature="[qqq.vii.]"/>
+    <annotation>
+        
+        <marginalia anchor_text="vbi terrarum sit" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vbi terraru[m] sit. pugio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Where on earth he may be. Root.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="verba dedimus, decaepimus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>verba dare decipere.</marginalia_text>
+                </position>
+            </language>
+            <translation>To give words; to deceit.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Nihil disputo de iure belli: magis facilis disputatio est, quàm" type="straight"/>
+        
+        <numeral language="LA" place="right_margin">21</numeral>
+        <numeral language="LA" place="right_margin">10</numeral>
+        <numeral language="LA" place="right_margin">21</numeral>
+        
+    </annotation>
+</transcription>

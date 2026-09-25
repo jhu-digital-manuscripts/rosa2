@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.069v.tif" pagination="118" reader="John Dee" signature="[hh.iii.[v]]"/>
+    <annotation> 
+        
+        <marginalia anchor_text="irrupisse" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        irru[m]pere iniq[ui]tates
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To break up inequalities.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="importunitate[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        importunitas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Relentlessness.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="post hominu[m] memoriam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        post ho[m]i[nu]m memoria[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                After the memory of men.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sui quaestus causa irrupisse conuinca[m]" type="straight"/>
+        <underline language="LA" method="pen" text="si prius illud propugnaculu[m], quo contra omnes meos impetus vsuru[m] se putat, ex defensione eius deiecero" type="straight"/>
+        <underline language="LA" method="pen" text="sed nouis edictis tuis, nefariísque institutis exigeres &amp; eriperes" type="straight"/>
+        <underline language="LA" method="pen" text="vnqua[m] post hominu[m] memoriam fecit" type="straight"/>
+        <underline language="LA" method="pen" text="no[n] de istius prauitate, &amp; iniuriis deplorare &amp; co[n]queri" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">10</numeral>
+        
+    </annotation>
+</transcription>

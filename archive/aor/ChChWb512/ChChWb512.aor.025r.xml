@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.025r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Ternouanto p[ro]pe te[m]plu[m] Co[n]cordi[a]e" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        I[ohn]. D[ee]. No[n]du[m] talem templum, sed vbi post Templu[m] co[n]cordia[e] erat.
+                    </marginalia_text> <!--Transcription incomplete: a faded word above marginal note.-->
+                </position>
+            </language>
+            <translation> There was not yet such a temple, but where the temple of Concord was afterwards.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Belinus ; primogenitus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Belinus primogenitus.
+                    </marginalia_text>
+                    <person name="Belinus"/>
+                </position>
+            </language>
+            <translation>Belinus firstborn.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cathenesiam" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        [id est] vsq[ue] ad caput Insula[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation> That is, up to the top of the island.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Chenulfo duci Maurorum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Chenulfus Dux Mauroru[m]
+                    </marginalia_text>
+                    <person name="Chenulfus"/>
+                </position>
+            </language>
+            <translation>Chenulfus, leader of the Flemings.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Elfu[n]gii Norgnege[n]siu[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Elfungus Rex Norwege[n]siu[m]
+                    </marginalia_text>
+                    <person name="Elsingius"/>
+                </position>
+            </language>
+            <translation>Elsingius, king of Norway.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        [deleted quasi] Cum[?] ia[m] p[er] Lustrata [?] insula et om[ni]b[us] [deleted] a Tauteneso [deleted] [?]vt vsq[ue] co[n]sideratis, illi alteri Brenno extremo Insul[a]e nome[n] adidit
+                        ta[m]q[uam summo capiti, et vocauit Chatinesium.
+                    </marginalia_text> <!--Transcription and translation incomplete.--> <!--JG: I think it's 'Cum', 'p[e]rlustrata'-->
+                    <location name="Totness"/>
+                    <location name="Caithness"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        [Catanasa % scortu[m] libidinosa - deleted]
+                    </marginalia_text>
+                    <location name="Caithness"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        [deleted Catanesus, vel potius Catanesi]
+                    </marginalia_text>
+                    <location name="Caithness"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        [deleted Catanesus [id est] capud] insula[e]
+                    </marginalia_text>
+                    <location name="Caithness"/>
+                </position>
+            </language>
+            <translation>Islands.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Chatinesus
+                    </marginalia_text>
+                    <location name="Caithness"/>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        χατινΗσος
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        % Insula Desiderij, vel Insula desiderata[e]. 
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Χατις:
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                       desidera est.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Caithness. Caithness, that is the island of Desiderius, or the desired island. Χατις: is desired.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Ternouanto" type="straight"/>
+        <underline language="LA" method="pen" text="te[m]plu[m] Co[n]cordi[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="e[ni]m primogenitus" type="straight"/>
+        <underline language="LA" method="pen" text="Cathenesiam" type="straight"/>
+        <underline language="LA" method="pen" text="totie[n]s Chenulfo" type="straight"/>
+        <underline language="LA" method="pen" text="Elfu[n]gu Norgnege[n]siu[m]" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+  <license>
+    <url>http://creativecommons.org/licenses/by/4.0/</url>
+    <logo>https://i.creativecommons.org/l/by/4.0/88x31.png</logo>
+  </license>
+  <totalPages>632</totalPages>
+  <dates>
+    <startDate>1547</startDate>
+    <endDate>1547</endDate>
+  </dates>
+  <texts>
+    <text id="1">
+      <language></language>
+      <title>Hieronymi Cardani medici Mediolanensis, Libelli quinq[ue] : quorum duo priores, iam denuo sunt emendati, duo sequentes iam primum in lucem editi, &amp; quintus magna parte auctus est. I. De suppleme[n]to almanach. II. De restitutione temporu[m] &amp; motuum coelestium. III. De iudicijs genituraru[m]. IIII. De reuolutionibus. V. De exemplis centum geniturarum. Additis insuper tabulis ascensionu[m] rectaru[m] &amp; obliquaru[m] eclipticae &amp; stellaru[m] &amp; radiorum, usq[ue] ad latitudinem octo partium. Eiusdem, antea non edita, aphorismorum astronomicorum segmenta VII. opusculum incomparabile...</title>
+      <textId>cardano</textId>
+      <pages end="316v" start="1r">632</pages>
+    </text>
+  </texts>
+  <bibliographies>
+    <bibliography lang="en">
+      <title>Hieronymi Cardani medici Mediolanensis, Libelli quinq[ue] : quorum duo priores, iam denuo sunt emendati, duo sequentes iam primum in lucem editi, &amp; quintus magna parte auctus est. I. De suppleme[n]to almanach. II. De restitutione temporu[m] &amp; motuum coelestium. III. De iudicijs genituraru[m]. IIII. De reuolutionibus. V. De exemplis centum geniturarum. Additis insuper tabulis ascensionu[m] rectaru[m] &amp; obliquaru[m] eclipticae &amp; stellaru[m] &amp; radiorum, usq[ue] ad latitudinem octo partium. Eiusdem, antea non edita, aphorismorum astronomicorum segmenta VII. opusculum incomparabile...</title>
+      <commonName>Gerolamo Cardano, Libelli Quinque (Nuremberg, 1547)</commonName>
+      <dateLabel>1547</dateLabel>
+      <origin>Nuremberg</origin>
+      <currentLocation>London, England</currentLocation>
+      <repository>Royal College of Physicians Library</repository>
+      <shelfmark>7134 D1/46-b-7</shelfmark>
+      <author>
+        <name>Cardano, Giralomo</name>
+        <id>http://www.isni.org/isni/0000000081052996</id>
+      </author>
+      <reader>
+        <name>John Dee</name>
+        <id>http://www.isni.org/isni/0000000122785193</id>
+      </reader>
+      <website>https://archaeologyofreading.org/bibliography/Dee-corpus/Cardano</website>
+      <note>Record: http://rcp.soutron.net/Portal/Default/RecordView/Index/33525</note>
+      <note>Publication Statement: Norimbergae : apud Iohan. Petreium, 1547</note>
+      <note>Provenance: Copy 7134: Roberts and Watson note that it is one of Dee's two copies. 'His name seems to have been erased from the titlepage but his notes and underlinings occur throughout, including important biographical notes'.</note>
+    </bibliography>
+  </bibliographies>
+</book>

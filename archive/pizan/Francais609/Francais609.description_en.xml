@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+   <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+   
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <title>Le livre de la cité des dames</title>
+         
+         </titleStmt>
+         
+         <publicationStmt>
+            
+            <distributor>MSEL</distributor>
+         
+         </publicationStmt>
+         
+         <notesStmt>
+            
+            <note rend="IDENTIFICATION">
+               
+               <p>Français 609, Bibliothéque national de France, Paris. Paris, 1401-1500. </p>
+            
+            </note>
+            
+            <note rend="BASIC INFORMATION">
+               
+               <p>Vellum, 304 x 225 mm, 152 folios.</p>
+            
+            </note>
+            
+            <note rend="MATERIAL">
+               
+               <p>
+                  Yellowed <material> vellum</material> with many imperfections. There is a hole on f. <locus>27</locus>v; other folios are wrinkled and there are stiches on fol. <locus>20</locus>. The parchment has not been evenly cut, leaving certain quires larger than others.</p> 
+            </note>
+            
+            <note rend="QUIRES">
+               
+               <list>
+                  
+                  <head>Collation:</head>
+                  
+                  <item n="I">
+                     
+                     <locus from="1" to="16">1-16</locus>
+                  
+                  </item>
+                  
+                  <item n="II">
+                     
+                     <locus from="17" to="24">17-24</locus>
+                  
+                  </item>
+                  
+                  <item n="III">
+                     
+                     <locus from="25" to="30">25-30</locus>
+                  
+                  </item>
+                  
+                  <item n="IV">
+                     
+                     <locus from="31" to="46">31-46</locus>
+                  
+                  </item>
+                  
+                  <item n="V">
+                     
+                     <locus from="47" to="62">47-62</locus>
+                  
+                  </item>
+                  
+                  <item n="VI">
+                     
+                     <locus from="63" to="70">63-70</locus>
+                  
+                  </item>    
+                  <item n="VII">
+                     
+                     <locus from="71" to="86">71-86</locus>
+                     
+                  </item>     
+                  <item n="VIII">
+                     
+                     <locus from="87" to="94">87-94</locus>
+                     
+                  </item>    
+                  <item n="IX">
+                     
+                     <locus from="95" to="102">95-102</locus>
+                     
+                  </item>    
+                  <item n="X">
+                     
+                     <locus from="103" to="110">103-110</locus>
+                     
+                  </item>    
+                  
+                  <item n="XI">
+                     
+                     <locus from="111" to="118">111-118</locus>
+                     
+                  </item>    
+                  <item n="XII">
+                     
+                     <locus from="119" to="124">119-124</locus>
+                     
+                  </item>    
+                  
+                  <item n="XIII">
+                     
+                     <locus from="125" to="132">125-132</locus>
+                     
+                  </item>    
+                  <item n="XIV">
+                     
+                     <locus from="133" to="148">133-148</locus>
+                     
+                  </item>  
+                  
+                  <item n="XV">
+                     
+                     <locus from="149" to="152">149-152</locus>
+                     
+                  </item>    
+                                    
+               </list>
+                               
+                      
+     
+               
+               <p>(IV, paper) + 152 + (IV, paper). Modern foliation in ink, top right, is accurate.</p>
+            
+            </note>
+            
+            <note rend="LAYOUT">
+               
+               <p>There are visible red ruling marks on the folios.  There is evidence of pricking on the right side, and in he first quire there is a hole in the center, between the two text columns. There are two columns with 33 lines each. The text block is rather even, and each column is 60 mm wide. </p>
+
+            
+            </note>
+            
+            <note rend="SCRIPT">
+               
+               <p>The text is written in dark brown ink, with red ink used for the rubrics. There seems to be just one main scribal hand for the text, the rubrics and the initials written in a miniscule semi-cursive script. There are numerous fillers in either red or blue. </p>
+            
+            </note>
+            
+            <note rend="DECORATION">
+               
+               <p> There are many different types of decorated initials. There are pen-flourished initials with gold leaf in red and black ink flourishes alternating with other pen-flourished initials with blue and black ink flourishes.A number of initials have cadels (fols. <locus>9</locus>, <locus>16</locus>, some of them with decorative heads (fols. <locus>74</locus>, <locus>79</locus>, <locus>98</locus>, <locus>108</locus>, <locus>110</locus>, <locus>118</locus>). </p>   
+               <p> There are four miniatures in this manuscript. All the miniatures have a gold leaf frame outlined in black. There are foliated initials accompanying the miniatures. The foliate initials are blue in a gold leaf background with foliates on red and blue inside. Extra foliate extenders spring from the left top and bottom of the initial with red, blue and green flowers and gold leaf foliates framing, on the one hand, the miniature above, and, on the other, the text below.</p>
+               <p>Miniatures:</p>
+               <list>
+                  <item> Fol. <locus>2</locus>, Christine in her study. </item>
+                  <item> Fol. <locus>10</locus>, The Ladies walking in the country. </item>
+                  <item> Fol. <locus>59</locus>, Two ladies in the country with a castle in the background. </item>
+                  <item> Fol. <locus>128</locus>, Temperance and a lady in the country with a castle in the backround.</item>
+                                    
+               </list>
+                    
+                    
+                    
+            </note> 
+            
+            <note rend="BINDING">
+
+               <p>The binding is done on light brown morocco leather with flower strings embossed on the borders. The spine, bound in red, contains six nerves with the title "LA CITÉ DES DAMES" on the second section. The other five are decorated with an N surmounted by a crown and surrounded by eight stars, and flanked by two laurel wreaths. At the bottom there is a band of inverted fleur-de-lys, surrounded by four smaller <hi rend="italics">fleur-de-lys</hi>. </p>
+            
+            </note>
+            
+            <note rend="HISTORY">
+               
+               <p>The manuscript can be dated to the fifteenth century.</p>
+               
+               <p>Provenance: (?)</p>
+             </note>
+
+            <note rend="TEXT">
+               
+               <p>Contains only <hi rend="italics">Le livre de la cité des dames</hi>.</p>
+            
+            </note>
+            
+            <note rend="AUTHOR">
+            
+<p>The information given here comes from direct observation and Gallica. </p>
+<p> Description by Mónica Ann Walker Vadillo</p>
+            
+            </note>
+         
+         </notesStmt>
+         
+         <sourceDesc>
+            
+            <bibl>
+               
+               <note type="format">manuscript</note>
+               
+               <note type="commonName">Français 609</note>
+               
+               <title>Le livre de La cité des dames </title>
+               
+               <extent>
+                  
+                  <measure quantity="152" unit="folios">152 folios</measure>
+                  
+                  <dimensions>
+                     
+                     <height unit="mm">304</height>
+                     
+                     <width unit="mm">225</width>
+                  
+                  </dimensions>
+               
+               </extent>
+               
+               <note type="illustrations">4</note>
+               
+               
+               
+               
+               
+               <note type="material">vellum</note>
+               
+               <pubPlace>Paris, France</pubPlace>
+     
+               <date notAfter="1500" notBefore="1400">15th century</date>
+            
+            </bibl>
+            
+            <msDesc>
+               
+               <msIdentifier>
+                  
+                  <settlement>Paris</settlement>
+                  
+                  <repository>Bibliothèque nationale de France</repository>
+                  
+                  <idno>Français 609</idno>
+               
+               </msIdentifier>
+            
+               <msContents>
+                  <msItem n="1">
+                     <locus from="1r" to="152v">1r-152v</locus>
+                     <title>Le livre de la cité des dames</title>
+                     <note type="textid">Le livre de la cité des dames</note>
+                     <note type="folios">152</note>
+                     <note type="illustrations">4</note>
+                     <note type="linesPerColumn">33</note>
+                     <note type="leavesPerGathering">6, 8</note>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         
+         </sourceDesc>
+      
+      </fileDesc>
+   
+   </teiHeader>
+   
+   <text>
+      
+      <body>
+         
+         <div> </div>
+      
+      </body>
+   
+   </text>
+
+</TEI>

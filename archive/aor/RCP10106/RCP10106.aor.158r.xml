@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.158r.tif" pagination="315" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="natura[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Natura.</marginalia_text>
+                </position>
+            </language>
+            <translation>Nature.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="co[m]munem omniu[m] lege[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lex com[m]unis</marginalia_text>
+                </position>
+            </language>
+            <translation>Common law.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sed lex erat, omnes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>lex, omniu[m] Rex</marginalia_text>
+                </position>
+            </language>
+            <translation>The law is the king of all.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="num infirmari in aliqua parte lex poßit." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vide[n]du[m] lex infirmari in aliqua parte poßit an non</marginalia_text> 
+                </position>
+            </language>
+            <translation>Whether the law must be seen to be invalidated in some respect or not.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="uoluntate" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Voluntas</marginalia_text>
+                </position>
+            </language>
+            <translation>Will.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="legis laudatio" type="straight"/>
+        <underline language="LA" method="pen" text="uerbis an uoluntate sit standum" type="straight"/>
+        
+    </annotation>
+</transcription>

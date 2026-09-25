@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.203v.tif" pagination="406" reader="John Dee" signature="[C 3[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="iudex" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Iudex.</marginalia_text>
+                </position>
+            </language>
+            <translation>Judge.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="eloquentia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Eloquentia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Eloquence.</translation>
+        </marginalia>
+                
+        <marginalia anchor_text="έμφασιν" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Emphasis.</marginalia_text>
+                </position>
+            </language>
+            <translation>Emphasis.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Ma quo modo iudex doceri potest, si desit illustris explanatio, propositio, permißio, finitio, seiunctio, expositio, sententiae              siue rationis apta conclusio, praemunitio, similitudo, exemplum, digestio, dsitributio, interpellatio, interpellantis, coêrtio, contentio, purgatio, laesio?" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; uelut agitante corpus spiritu caret. Quae" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

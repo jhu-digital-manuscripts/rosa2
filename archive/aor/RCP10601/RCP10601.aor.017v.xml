@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.017v.tif" pagination="34" reader="John Dee" signature="[c[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Dis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dis</marginalia_text>
+                    <person name="Dis"/>
+                </position>
+            </language>
+            <translation>Dis.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="literarum Ieroglyficarum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hieroglyphica litera[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Hieroglyphic letters.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Athlas seu Italus, qui et Iapetus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Athlas Italus Iapetus } idem</marginalia_text>
+                    <person name="Japheth"/>
+                </position>
+            </language>
+            <translation>Atlas, Italus, Japheth } the same.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Dis" type="straight"/>
+        <underline language="LA" method="pen" text="sacrosanctae Geometricae &amp; absconditae" type="straight"/>
+        <underline language="LA" method="pen" text="literarum Ieroglyficarum" type="straight"/>
+        <underline language="LA" method="pen" text="ut Athlas seu Italus, qui et Iapetus" type="straight"/>
+
+    </annotation>
+</transcription>

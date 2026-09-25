@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.161r.tif" pagination="321" reader="John Dee" signature="x"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Defensor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Defensor.</marginalia_text>
+                </position>
+            </language>
+            <translation>The defendant.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="exemplis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Exempla.</marginalia_text>
+                </position>
+            </language>
+            <translation>Examples/</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἀντικατηγορία" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ἀντικατηγορία</marginalia_text>
+                </position>
+            </language>
+            <translation>Countercharge.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Celsus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Celsus.</marginalia_text>
+                    <person name="Aulus Cornelius Celsus"/>
+                </position>
+            </language>
+            <translation>Aulus Cornelius Celsus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Apollodôrus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Apollodôrus.</marginalia_text>
+                    <person name="Apollodorus of Pergamon"/>
+                </position>
+            </language>
+            <translation>Apollodorus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="consilium cogitur" type="straight"/>
+        <underline language="LA" method="pen" text="Primùm, quia natura" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

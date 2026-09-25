@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.158v.tif" pagination="308" reader="John Dee" signature="[Cc iiij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Natus A[nn]o 841.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Born in 841.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Bures" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        St Edmonds Bury
+                    </marginalia_text>
+                    <location name="Bury St Edmunds"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Iudetham" type="straight"/>
+        <underline language="LA" method="pen" text="Francorum" type="straight"/>
+        <underline language="LA" method="pen" text="reginam iuxta regem sedere" type="straight"/>
+        <underline language="LA" method="pen" text="reginam, sed regis" type="straight"/>
+        <underline language="LA" method="pen" text="quos accusare non potuit, potu" type="straight"/>
+        <underline language="LA" method="pen" text="venenifero necare co[n]sueuit" type="straight"/>
+        <underline language="LA" method="pen" text=".Dccclv." type="straight"/>
+        <underline language="LA" method="pen" text="natiuitate sua .xiij. die" type="straight"/>
+        <underline language="LA" method="pen" text="qu[a]e Bures" type="straight"/>
+        <underline language="LA" method="pen" text="Lothario rege Francorum" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

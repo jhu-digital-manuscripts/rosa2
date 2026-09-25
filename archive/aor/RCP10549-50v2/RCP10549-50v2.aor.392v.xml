@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.392v.tif" pagination="236" reader="John Dee" signature="[Pp.vi.[v]]"/>   
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Ratio an vtiliter ho[min]ib[us] a Deo data sit.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Whether reason is profitably given from god to man 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="multi eorum beneficio peruerse vtere[n]tur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Multi beneficio Deorum peruerse vtuntur.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                'The gods have not made the best provision for us' [LCL 258:354-55].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Multi enim &amp; quu[m] obesse vellent, profuerunt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Multi cu[m] obesse vellent profuerunt, et contra.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Many have done well as they hurt, and against.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="omnis opinio ratio est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        omnis opinio, r[ati]o est
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Every belief is reasoning.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Medea modo &amp; Atreus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Medea. Atreus
+                    </marginalia_text>
+                    <person name="Medea"/>
+                    <person name="Atreus"/>
+                </position>
+            </language>
+            <translation>
+                Medea, Atreus.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Terentius
+                    </marginalia_text>
+                    <person name="Terence"/>
+                </position>
+            </language>
+            <translation>
+                Terence.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Statius
+                    </marginalia_text>
+                    <person name="Statius Caecilius"/>
+                </position>
+            </language>
+            <translation>
+                Statius Caecilius.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Phormio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Phormio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Phormio.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Q. Sosius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Q Sosius
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Quintus Sosius <!-- FSF: not sure who that is -->
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="L. Alenus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Lucius Alenus
+                    </marginalia_text>
+                    <person name="Lucius Alenus"/>
+                </position>
+            </language>
+            <translation>
+                Lucius Alenus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="machinam ... fallacias, Praestigias" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Soli
+                        machin[a]e 
+                        fallacie 
+                        pr[a]estigi[a]e.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                For the sun, for the machine, for the deceit, for delusion.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="tam munifice &amp; tam" type="straight"/>
+        <underline language="LA" method="pen" text="Non idcirco non" type="straight"/>
+        <underline language="LA" method="pen" text="peruerse vtere[n]tur" type="straight"/>
+        <underline language="LA" method="pen" text="vomicam eius" type="straight"/>
+        <underline language="LA" method="pen" text="inita subjuctáque ratione" type="straight"/>
+        <underline language="LA" method="pen" text="machinam commoliar" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">12</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+   
+    </annotation>
+</transcription>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>0</illustrations>
+    <totalPages>94</totalPages>
+    <dimensions units="mm">
+        <width>210</width>
+        <height>280</height>
+    </dimensions>
+    <dates>
+        <startDate>1400</startDate>
+        <endDate>1450</endDate>
+    </dates>
+    <texts>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="94v" start="1r">94</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>38</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Royal 19 A XVIII</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>Parchment</material>
+            <origin>Paris, France</origin>
+            <currentLocation>London</currentLocation>
+            <repository>British Library</repository>
+            <shelfmark>Royal MS 19 A XVIII</shelfmark>
+	    <website>http://searcharchives.bl.uk/IAMS_VU2:IAMS040-002107588</website>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Royal 19 A XVIII</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>Parchemin</material>
+            <origin>Paris, France</origin>
+            <currentLocation>London</currentLocation>
+            <repository>British Library</repository>
+            <shelfmark>Royal MS 19 A XVIII</shelfmark>
+	    <website>http://searcharchives.bl.uk/IAMS_VU2:IAMS040-002107588</website>
+        </bibliography>
+    </bibliographies>
+</book>

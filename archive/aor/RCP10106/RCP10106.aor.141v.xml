@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.141v.tif" pagination="282" reader="John Dee" signature="[s 5[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="sed aut qui non est, aut maiorem quàm est, faciat affectum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nota.</marginalia_text>
+                </position>
+            </language>
+            <translation>Note</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="δείνωσις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>δείνωσις</marginalia_text>
+                </position>
+            </language>
+            <translation>Exaggeration.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Demosthenes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Demosthenes.</marginalia_text>
+                    <person name="Demosthenes"/>
+                </position>
+            </language>
+            <translation>Demosthenes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ratio nova et ab ip[s]o Qui[n]tiliano ex cogita affectus movendi.</marginalia_text>
+                    <person name="Quintilian"/>
+                </position>
+            </language>
+            <translation>A new reason devised by Quintilian himself of moving the emotions.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>[Nihil dat qui c]</marginalia_text> <!-- M.B. Note is smudged out, not sure of 'quic'--> <!-- FSF: I am not sure if c  belongs to the qui, I think this are two words -->
+                </position>
+            </language>
+            <translation>Nothing[...]</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in manu: in infamia plus poenae dicimus, quàm in morte" type="straight"/>
+        <underline language="LA" method="pen" text="sed aut qui non est, aut maiorem quàm est, faciat affectum" type="straight"/>
+        <underline language="LA" method="pen" text="rebus indignis, asperis, inuidiosis adde[n]s uim oratio" type="straight"/>
+        <underline language="LA" method="pen" text="experimento meo, ac natura ipsa duce accepi" type="straight"/>
+        <underline language="LA" method="pen" text="uerisimilia esse uolemus, simus ipsi similes corum qui uere patiuntur, affectibus: &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="Nec incendit nisi ignis, nec madescimus nisi humore, nec res ulla dat alteri colorem, quem ipsa non habet" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">.1.</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

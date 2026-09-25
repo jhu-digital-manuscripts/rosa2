@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.180v.tif" pagination="184" reader="Harvey" signature="[M4v]"/>	<!-- ABO 185left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						( Non est in titulis, aut in diuitijs,
+						sed in ipso viro; quod auget pra[e]stantis
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						hominis dignitatem.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>It is not in titles, nor in riches, but in man himself; that which increases dignity of an excellent man.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						/ The King to Scotus, then of
+						of Oxford. Art
+						thou that great scholler? What difference is between
+						thee, &amp; an Asse? Scotus his answer.
+						Euen now but the bredth of this Table. Which was between
+						Him, &amp; the King. Bold, &amp; dangerous.
+					</marginalia_text>
+					<person name="Duns Scotus"/>
+					<location name="Oxford"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Energeticè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Energetically.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Quicquid deterius, qua[e]q[ue] dies Melior.
+						Virum decent omnia decora.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Whatever is worse, every day is better. All proprieties adorn a man.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Opus tantùm opibus, et facultatibus,
+						sine quibus deficit agendi facultas.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>One must have works and faculties, without which one would lack the faculty of doing.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Fides actuosa, et miraculosa: aut sola, no[n] Solitaria. Vt Scipio, nunq[uam] minùs sola, quà[m] cu[m] Sola.  <!-- CG: Originally 'Seipso', though I think this reading is correct. Also originally missing 'cu[m]'. --> 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>An active and miraculous faith: or alone, but not solitary. Just as Scipio is never less alone, than when alone.</translation> 
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Cum non legis, aut agis; aut necessariò dormis; viuidè, ambula.
+						Idq[ue] ad sudorem, hoc est, ad virilem agilitatem, et
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						pulchritudinem.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>When you are not reading or doing, or necessarily sleeping, walk lively. And [do] this for sweat; this is for virile agility and excellence.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Synopsis quatuor virtutum, et Viua Ethica[e] Idea; Martinij Jul:
+					</marginalia_text>
+					<person name="Petrus Martinius"/>
+					<person name="Julian"/>
+				</position>
+			</language>
+			<translation>The synopsis of four virtues, and the living idea of actualization; in Martinius' edition of Julian</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="hauere spesi certi danari" type="straight"/>
+		<underline language="IT" method="pen" text="si strangolò" type="straight"/>
+		<underline language="IT" method="pen" text="lasciò d'impiccarsi" type="straight"/>
+		<underline language="IT" method="pen" text="non spender sei quattrini in vn pezzo" type="straight"/>
+		<underline language="IT" method="pen" text="morte à miglior" type="straight"/>
+		<underline language="IT" method="pen" text="lasciò herede di" type="straight"/>
+		<underline language="IT" method="pen" text="sè medesimo" type="straight"/>
+		<underline language="IT" method="pen" text="auaritia è Metropoli della pazzia" type="straight"/>
+		<underline language="IT" method="pen" text="Risposta accorta" type="straight"/>
+		<underline language="IT" method="pen" text="domanda impertinente" type="straight"/>
+		<underline language="IT" method="pen" text="Sabbato non" type="straight"/>
+		<underline language="IT" method="pen" text="danari non" type="straight"/>
+		<underline language="IT" method="pen" text="humane operationi" type="straight"/>
+		<underline language="IT" method="pen" text="di riso" type="straight"/>
+		<underline language="IT" method="pen" text="pianto" type="straight"/>
+		<underline language="IT" method="pen" text="HERACLITO" type="straight"/>
+		<underline language="IT" method="pen" text="Democrito" type="straight"/>
+		<underline language="IT" method="pen" text="le pazzie" type="straight"/>
+		<underline language="IT" method="pen" text="sempre rideua" type="straight"/>
+		<underline language="IT" method="pen" text="sempre piangeua" type="straight"/>
+		<underline language="IT" method="pen" text="Alciato dimostrare" type="straight"/>
+		<underline language="IT" method="pen" text="di male in peggio" type="straight"/>
+		
+		<symbol name="Sun" place="left_margin"/>
+		
+		<symbol language="IT" name="SS" place="intext" text="Risposta accorta"/> <!-- CG: AB recorded this as a quotation mark, but it looks more like either a straight quote or an SS symbol. What do you think, Jaap? -->
+		
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Sabbato mille ducati, gli harrebbe tolti, rispose: Sabbato non è     &amp; i danari non ci sono."/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Lu -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Her -->
+		<mark language="IT" method="pen" name="quotation_mark" place="right_margin" text="domanda impertinente"/>
+		
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- medesimo. Dinarco -->
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- mercato. Et -->
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- medesimo. Onde -->
+
+		
+    </annotation>
+</transcription>

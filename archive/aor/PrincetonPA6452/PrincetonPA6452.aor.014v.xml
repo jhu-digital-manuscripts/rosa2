@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.014v.tif" pagination="12" reader="Harvey"/> 
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>3. Tulli historia regia.</marginalia_text>
+                    <person name="Tullus Hostilius"/>
+                </position>
+            </language>
+            <translation>3. The royal history of Tullus.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Tullus, alter Romulus: eoq[ue] aptior Romano regno, ad maiora aspiranti.</marginalia_text>
+                    <person name="Tullus Hostilius"/>
+                    <person name="Romulus"/>
+                </position>
+            </language>
+            <translation>Tullus is another Romulus, and therefore highly suited for a Roman rule that aims very high.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Principatus viros declarat. Vt circa id tempus Pittacus, vnus sapientum vt etiam s[upr]a, i[nfr]a.
+                    </marginalia_text>
+                    <person name="Pittacus of Mytilene"/>
+                </position>
+            </language>
+            <translation>The principate reveals men. Such as Pittacus around this time, one of the wise men, like also above and below.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Prudens, et fortis Albani Oratio: ad regem Tullu[m]. Mixtè etiam temperans, et iusta. Vt Livij potius, qua[m] Albani videatur oratio. Aut salte[m] Romano stylo limata: vt multae Barbaroru[m] conciones i[infr]a. 
+                        Sufficiat, semel initio observasse. Liuius semper est Liuius: quicunq[ue] erant Oratores. 
+                    </marginalia_text>
+                    <person name="Tullus Hostilius"/>
+                    <person name="Livy"/>
+                </position>
+            </language>
+            <translation>Albanus’ intelligent and strong speech to king Tullus, in a varied way both restrained and correct, so that it rather seems to be Livy's speech than that of Albanus. Or at least it is polished in the Roman style, 
+                like in many speeches of the Barbarians below. It may suffice to pay attention once in the beginning. Livy always remains Livy, whoever the orators were.</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Foederum ratio.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The principle of treaties.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="foecialis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>f[o]ecialis.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>the fetial priest.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>s[upr]a, in regno Anci.
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="PrincetonPA6452:00000023" text="s[upr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See above in Ancus’s reign.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pater patratus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>paterpatratus.
+                    </marginalia_text>
+                    <emphasis method="pen" text="paterpatratus" type="straight"/>
+                </position>
+            </language>
+            <translation>The felitial's spokesman.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>King at arms, or king
+                    </marginalia_text>
+                </position>
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        of heralds. Now no preist, but an officer of court, quali fide for that royall seruice.
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Ius feciale: à Sigonio non satis expressum; à Bodino pleniùs tractatum, et rei gerenda[e] efficacius, libro 5. de Republica. Vbi de foederibus, politicè, et pragmaticè. Legatis Tractatus singularis.
+                        Feciales dicti, à faciendo, quòd belli, pacisq[ue] facienda[e] apud eos ius esset. Festus.
+                    </marginalia_text>
+                    <person name="Carlo Sigonio"/>
+                    <person name="Jean Bodin"/>
+                    <person name="Sextus Pompeius Festus"/>
+                    <book title="De verborum significatu"/>
+                    <book title="De Republica"/>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Herald Lawe, or Legate Lawe.</marginalia_text>
+                </position>
+            </language>
+            <translation>The fetial law: Sigonius does not adequately describe this; Bodin discusses it in more detail and treats its task more effectively in his De republica, book 5, where he writes about treaties from a 
+                political and pragmatic perspective - a remarkable treatise for diplomats. The ‘fetial’ priests are called that way from ‘faciendus’, since it was their authority to make war or peace. Festus.
+                Herald Lawe, or Legate Lawe.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="inuitos" type="straight"/>
+        <underline language="LA" method="pen" text="minus placeat Tullo" type="straight"/>
+        <underline language="LA" method="pen" text="imperio subigi: res repetitum se uenisse" type="straight"/>
+        <underline language="LA" method="pen" text="reddantur, bellum" type="straight"/>
+        <underline language="LA" method="pen" text="regem Romanum deos facere" type="straight"/>
+        <underline language="LA" method="pen" text="res repetentes legatos aspernatus dimiserit" type="straight"/>
+        <underline language="LA" method="pen" text="utrinque summa" type="straight"/>
+        <underline language="LA" method="pen" text="ciuli simillimum bello" type="straight"/>
+        <underline language="LA" method="pen" text="propè inter parentes natosq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="Troianam utranque" type="straight"/>
+        <underline language="LA" method="pen" text="duo populi in unum" type="straight"/>
+        <underline language="LA" method="pen" text="tametsi uana afferebantur, suos" type="straight"/>
+        <underline language="LA" method="pen" text="Iniurias &amp; non redditas res ex foedere" type="straight"/>
+        <underline language="LA" method="pen" text="si uera potius quàm dictu speciosa" type="straight"/>
+        <underline language="LA" method="pen" text="cupido imperij duos cognatos uicinosq[ue] populos" type="straight"/>
+        <underline language="LA" method="pen" text="rectè, an perperam, interpretor" type="straight"/>
+        <underline language="LA" method="pen" text="deliberatio, qui bellum" type="straight"/>
+        <underline language="LA" method="pen" text="Albani gerendo bello" type="straight"/>
+        <underline language="LA" method="pen" text="Hetrusca res, quanta circa nos teq[ue] maximè sit" type="straight"/>
+        <underline language="LA" method="pen" text="multum illi terra, plurimum" type="straight"/>
+        <underline language="LA" method="pen" text="dabis, has duas acies" type="straight"/>
+        <underline language="LA" method="pen" text="fessos confectosq[ue] simul uictorem ac uictum aggrediantur" type="straight"/>
+        <underline language="LA" method="pen" text="libertate certa" type="straight"/>
+        <underline language="LA" method="pen" text="dubiam imperij seruitij que aleam imus" type="straight"/>
+        <underline language="LA" method="pen" text="utri utris imperent, sine" type="straight"/>
+        <underline language="LA" method="pen" text="magna clade, sine multo sanguine" type="straight"/>
+        <underline language="LA" method="pen" text="tum indole" type="straight"/>
+        <underline language="LA" method="pen" text="spe uictoriae ferocior erat" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; fortuna ipsa" type="straight"/>
+        <underline language="LA" method="pen" text="tergemini fratres" type="straight"/>
+        <underline language="LA" method="pen" text="Horatios, Curatios" type="straight"/>
+        <underline language="LA" method="pen" text="nec" type="straight"/>
+        <underline language="LA" method="pen" text="res antiqua alia est nobilior" type="straight"/>
+        <underline language="LA" method="pen" text="utrius populi Horatij, utrius Curiatij" type="straight"/>
+        <underline language="LA" method="pen" text="Romanos Horatios" type="straight"/>
+        <underline language="LA" method="pen" text="tergeminis agunt" type="straight"/>
+        <underline language="LA" method="pen" text="pro sua quisq[ue] patria dimicent ferro" type="straight"/>
+        <underline language="LA" method="pen" text="imperium fore" type="straight"/>
+        <underline language="LA" method="pen" text="uictoria fuerit" type="straight"/>
+        <underline language="LA" method="pen" text="foedus ictum inter" type="straight"/>
+        <underline language="LA" method="pen" text="his legibus" type="straight"/>
+        <underline language="LA" method="pen" text="Foedera" type="straight"/>
+        <underline language="LA" method="pen" text="legibus" type="straight"/>
+        <underline language="LA" method="pen" text="eodem modo" type="straight"/>
+        <underline language="LA" method="pen" text="ullius uetustior foederis memoria" type="straight"/>
+        <underline language="LA" method="pen" text="foecialis" type="straight"/>
+        <underline language="LA" method="pen" text="foedus ferire" type="straight"/>
+        <underline language="LA" method="pen" text="me tu regiu[m] nuncium populi" type="straight"/>
+        <underline language="LA" method="pen" text="sine fraude mea, populiq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="Foecialis" type="straight"/>
+        <underline language="LA" method="pen" text="pater patratus ad iusiurandum" type="straight"/>
+        
+        <symbol name="JC" place="left_margin"/>
+        
+        <symbol name="JC" place="right_margin"/>
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--utran-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--foe-->
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--indo-->
+        <mark method="pen" name="equal_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="straight_quotation_mark" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--iusiuran-->
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="me"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--materiam Forte-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="tergemini"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="foedus"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="foedera"/>
+        <mark method="pen" name="straight_quotation_mark" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="uetustior"/>
+        <mark method="pen" name="apostrophe" place="intext"/> <!--comitesq[ue]-->
+        
+    </annotation>
+</transcription>

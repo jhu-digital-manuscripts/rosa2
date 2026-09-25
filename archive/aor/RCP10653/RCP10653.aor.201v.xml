@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.201v.tif" pagination="394" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Eadricus quoque, regis Aethelredi consanguineus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Eadricus Streona[e], Consanguinens Regis Æthelredi. vt sup[ra] pag. 386
+                    </marginalia_text>
+                    <person name="Eadric Streona"/>
+                    <person name="Aethelred II"/>
+                    <internal_ref>
+                        <target ref="RCP10653:410" text="386"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                Eadric Streona, the relative of King Æthelred II as above on page 386.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Eadricus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Eadricus
+                    </marginalia_text>
+                    <person name="Eadric Streona"/>
+                </position>
+            </language>
+            <translation>
+                Eadric Streona.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="rex Aethelredus mense Ianuario in Normanniam transiens" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Æthelredus R. in Normaniam transfretauit
+                    </marginalia_text>
+                    <person name="Aethelred II"/>
+                    <location name="Normandy"/>
+                </position>
+            </language>
+            <translation>
+                Æthelred II crossed through into Normandy.  
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Suanum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Suanus Tyra[n]nus.
+                    </marginalia_text>
+                    <person name="Sweyn Forkbeard"/>
+                </position>
+            </language>
+            <translation>
+                The tyrant Sweyn Forkbeard.
+            </translation>
+        </marginalia>
+         
+        <marginalia anchor_text="vitam flagitiosam terminauit" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Suanus moritur.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Sweyn Forkbeard dies.  
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="inde reginam suam" type="straight"/>
+        <underline language="LA" method="pen" text="Normanniam" type="straight"/>
+        <underline language="LA" method="pen" text="Ducem Richardum fratrem suum, cum filijs" type="straight"/>
+        <underline language="LA" method="pen" text="Aelfredo &amp; Eadvvardo, &amp; eoru[m] magistris Aelfhuno" type="straight"/>
+        <underline language="LA" method="pen" text="Mideshamensi Aelfsio" type="straight"/>
+        <underline language="LA" method="pen" text="Eadricus" type="straight"/>
+        <underline language="LA" method="pen" text="regis Aethelredi" type="straight"/>
+        <underline language="LA" method="pen" text="militib[us] septies viginti" type="straight"/>
+        <underline language="LA" method="pen" text="Aethelredus cum classe sua in insula Vecta" type="straight"/>
+        <underline language="LA" method="pen" text="audierit, reginam" type="double"/>
+        <underline language="LA" method="pen" text="continuò secuturus" type="double"/>
+        <underline language="LA" method="pen" text="Suanus tyrannus" type="triple"/>
+        <underline language="LA" method="pen" text="euidenter apparet Suanum naturalem non esse dominum" type="straight"/>
+        <underline language="LA" method="pen" text="tyrannum" type="straight"/>
+        <underline language="LA" method="pen" text="incertum quo mortis genere, vitam flagitiosam terminauit" type="straight"/>
+        <underline language="LA" method="pen" text="burgo" type="straight"/>
+        <underline language="LA" method="pen" text="nationes Cnutonem" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

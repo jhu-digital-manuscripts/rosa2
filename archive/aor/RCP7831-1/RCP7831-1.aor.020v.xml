@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="RCP7831-1.020v.tif" pagination="30" reader="Dee" signature="[Diij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="mela[n]cholicos fuisse omnes qui ingenio floruerunt" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[in]geniosissimi Mela[n]chol[ici]</marginalia_text> <!--JG: Not entirely sure about 'ingeniosissimi'-->
+                </position>
+            </language>
+            <translation>The melancholics [are] the cleverest.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="senio ante tempus" type="straight"/>
+        <underline language="LA" method="pen" text="modò sui iuris fuerit" type="straight"/>
+        <underline language="LA" method="pen" text="Nam ut ex uenenis arte te[m]peratis, citra noxa[m] magna aliqua[n]do commoda proueniu[n]t, ita de sideris" type="straight"/>
+        <underline language="LA" method="pen" text="mela[n]cholicos fuisse omnes qui ingenio floruerunt, uel in philosophia" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

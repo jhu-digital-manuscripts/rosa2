@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.111v.tif" pagination="222" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Genus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Genus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Birth.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Natio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Natio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Nation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Patria.</marginalia_text>
+                </position>
+            </language>
+            <translation>Country.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sexus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sexus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Sex.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aetas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A[e]tas</marginalia_text>
+                </position>
+            </language>
+            <translation>Age.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Educatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Educatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Upbringing.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="plerunq[ue] tamen no[n] semper" type="straight"/>
+        <underline language="LA" method="pen" text="mari, aut scarum ducas: ita non omne argumentum" type="straight"/>
+        <underline language="LA" method="pen" text="uenit, ideo'q[ue] non pasßim quaerendum est" type="straight"/>
+        
+        <numeral place="left_margin">.1.</numeral>
+        <numeral place="left_margin">.2.</numeral>
+        <numeral place="left_margin">.3.</numeral>
+        <numeral place="left_margin">.4.</numeral>
+        <numeral place="left_margin">.5.</numeral>
+        <numeral place="left_margin">.6.</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

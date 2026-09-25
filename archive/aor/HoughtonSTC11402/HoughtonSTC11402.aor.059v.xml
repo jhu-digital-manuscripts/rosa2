@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.059v.tif" reader="Harvey" signature="[Giiii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Pyrrhi Ep. Regis, Pr[a]eceptu[m] Militare; duobus nixum</marginalia_text>
+                    <person name="Pyrrhus of Epirus"/>
+                    <emphasis method="pen" text="duobus" type="straight"/>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Argumentis.</marginalia_text>
+                    <emphasis method="pen" text="Argumentis" type="straight"/>
+                </position>
+            </language>
+            <translation>Pyrrhus, king of Epirus. The military precept depends on two reasons.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="howe to dissemble aduersities" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Comes Purl. l.I.obs[eruat]. 34.</marginalia_text>
+                    <person name="Jacopo di Porcia"/>
+                    <book title="The preceptes of warre"/>
+                </position>
+            </language>
+            <translation>Jacopo di Porcia, book 1, observation 34.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Impedimentum pro occasione.</marginalia_text>
+                </position>
+            </language>
+            <translation>An impediment for the occasion.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>He plaieth [the] wiseman, that turnith all to the best.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="leste necessitie" type="straight"/>
+        <underline language="EN" method="pen" text="hym to play" type="straight"/>
+        <underline language="EN" method="pen" text="hath the vpper" type="straight"/>
+        <underline language="EN" method="pen" text="not pursue hym vnto deathe" type="straight"/>
+        <underline language="EN" method="pen" text="Tullus Hostilius" type="straight"/>
+        <underline language="EN" method="pen" text="Albanians" type="straight"/>
+        <underline language="EN" method="pen" text="forsakynge the" type="straight"/>
+        <underline language="EN" method="pen" text="Albanians had so done" type="straight"/>
+        <underline language="EN" method="pen" text="by his commaundemente" type="straight"/>
+        <underline language="EN" method="pen" text="inclose his enemyes" type="straight"/>
+        <underline language="EN" method="pen" text="Veientes" type="straight"/>
+        <underline language="EN" method="pen" text="great feare" type="straight"/>
+        <underline language="EN" method="pen" text="Romaynes" type="straight"/>
+        <underline language="EN" method="pen" text="comforte" type="straight"/>
+        <underline language="EN" method="pen" text="by wysedome" type="straight"/>
+        <underline language="EN" method="pen" text="Lucius Sylla" type="straight"/>
+        <underline language="EN" method="pen" text="lieutenant fleinge" type="straight"/>
+        <underline language="EN" method="pen" text="in the settinge" type="straight"/>
+        <underline language="EN" method="pen" text="commaunded him" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="hath the vpper"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--wil-->
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="Albanians had so done"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="commaunded him"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--battayle, sayde-->
+        
+        <mark language="EN" method="pen" name="plus_sign" place="tail" text="commaunded him"/>
+        
+        <numeral language="EN" place="intext" text="leste necessitie">I.</numeral>
+        <numeral place="intext">2.</numeral>
+        
+    </annotation>
+</transcription>

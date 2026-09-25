@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.067v.tif" pagination="[60v]" reader="John Dee" signature="[Piiij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="praestat: si bene omnes fuerint collocati. hoc enim in omnibus suppositum esse uolo" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>hypothesis.</marginalia_text>
+                </position>
+            </language>
+            <translation>Hypothesis.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="industriam pro mulieribus" type="straight"/>
+        <underline language="LA" method="pen" text="eitam inutilibus" type="straight"/>
+        <underline language="LA" method="pen" text="exercitatione latrocinio" type="straight"/>
+        <underline language="LA" method="pen" text="praestat: si bene omnes fuerint collocati. hoc enim in omnibus suppositum esse uolo" type="straight"/>
+        <underline language="LA" method="pen" text="Lunam cum Mercurio ac Ioue mutuo sibi blandientibus" type="straight"/>
+        
+        <symbol language="LA" name="Mercury" place="left_margin" text="Mercurius"/>
+        
+    </annotation>
+</transcription>

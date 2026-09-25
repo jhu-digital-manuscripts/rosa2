@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.101r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Gaulia[e]
+                    </marginalia_text>
+                    <location name="Wales"/>
+                </position>
+            </language>
+            <translation>Wales.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Armonicanam Brita[n]nia[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Armoricana Brytania.
+                    </marginalia_text>
+                    <location name="Armorica"/>
+                    <location name="Brittany"/>
+                </position>
+            </language>
+            <translation>Armorican Britain.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="librum de exulatione eorum transtulero" hand="English_secretary" id="Wb5-12_0209_093r:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Liber de Britonu[m] exilio transferendus</marginalia_text>
+                </position>
+            </language>
+            <translation>The book concerning the banishment of the Britons.</translation>
+            <!-- NBW This doesn't mention that the book is itself a translation (which Geoffrey claims to have authored) - was that intentional?--> <!--JG: Which book is this? Should be tagged by making use of the book tag and added to book spreadsheet if it doesn't exist already-->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Secesserunt itaq[ue] Britonum reliquiae in occide[n]tales regni partes, Cornubiam videlicet" type="straight"/>
+        <underline language="LA" method="pen" text="Gaulias. Vnde" type="straight"/>
+        <underline language="LA" method="pen" text="Gaulias" type="straight"/>
+        <underline language="LA" method="pen" text="Armonicanam Brita[n]nia[m]" type="straight"/>
+        <underline id="Wb5-12_0209_093r:u0001" language="LA" method="pen" text="librum de exulatione" type="straight"/>
+        <underline language="LA" method="pen" text="transtulero" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <physical_link>
+            <marginal_annotation idref="Wb5-12_0209_093r:m0001"/>
+            <marginal_annotation idref="Wb5-12_0209_093r:u0001"/>
+            <relation from="Wb5-12_0209_093r:m0001" to="Wb5-12_0209_093r:u0001" type="directed"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

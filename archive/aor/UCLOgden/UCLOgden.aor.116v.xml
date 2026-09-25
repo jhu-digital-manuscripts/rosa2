@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.116v.tif" pagination="216" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Necepso" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Necepso Rex a[e]gypti pag. 107
+                    </marginalia_text>
+                    <person name="Nekauba"/>
+                    <internal_ref>
+                        <target ref="UCLOgden:130:m0001" text="107"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                Nekauba, King of Egypt, page 107.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Graece Aratus, poëta disertissimus, Latine uero C[a]esar, &amp; decus eloquentiae Tullius" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Aratus Ca[e]sar Tullius
+                    </marginalia_text>
+                    <person name="Aratus"/>
+                    <person name="Claudius Caesar Germanicus"/>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>
+                Aratus Caesar Cicero.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Orion" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Orion.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Orion.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Auriga" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Auriga.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Auriga.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Salmoneus &amp; Bellerophontes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Salmoneus et Bellerophontes
+                    </marginalia_text>
+                    <person name="Salmoneus"/>
+                    <person name="Bellerophon"/>
+                </position>
+            </language>
+            <translation>
+                Salmoneus and Bellerophon.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hoedus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Hoedus 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Hoedus.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Petosyris, &amp; Necepso" type="straight"/>
+        <underline language="LA" method="pen" text="alter imperii gubernacula" type="straight"/>
+        <underline language="LA" method="pen" text="uideantur non aliqua astrologiae scientia" type="straight"/>
+        <underline language="LA" method="pen" text="sed poëtica potius elati licentia" type="straight"/>
+        <underline language="LA" method="pen" text="sermonis studia protulisse" type="straight"/>
+        <underline language="LA" method="pen" text="quae stellae tunc decernant, si in matutino ortu constitutae, horosc. habuerint uel occasum" type="straight"/>
+        <underline language="LA" method="pen" text="Orion" type="straight"/>
+        <underline language="LA" method="pen" text="Auriga" type="straight"/>
+        <underline language="LA" method="pen" text="Salmoneus" type="straight"/>
+        <underline language="LA" method="pen" text="Bellerophontes, à priscis auctoribus" type="straight"/>
+        <underline language="LA" method="pen" text="Hoedus" type="straight"/>
+        
+        <mark method="pen" name="slash" place="left_margin"/>
+        <mark method="pen" name="slash" place="left_margin"/>
+        <mark method="pen" name="slash" place="left_margin"/>
+        
+    </annotation>
+</transcription>

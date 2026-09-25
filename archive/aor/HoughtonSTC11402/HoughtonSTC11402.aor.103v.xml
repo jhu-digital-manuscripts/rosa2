@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.103v.tif" reader="Harvey" signature="[Mviii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Consilia vulpina, seu Annibalis ingenium. Quales ex professo techna[e],</marginalia_text>
+                    <person name="Hannibal"/>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>s[upr]a, l.2.c.5.</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0118" text="l.2.c.5."/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Cunning policy, or Hannibal's trick. How excellent from the profession of a cunning trick. [See] above, book 2, chapter 5.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Breuis Ars infinitè fallendi. Vt etia[m] s[upr]a, l.3.c.9.</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0164" text="l.3.c.9."/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>The short art of deceiving infinitely. As also above, book 3, chapter 9.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A Schoole, or</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Mint of Stratagems.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+            
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ca[e]sars greate Rule.</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>De bello ciuili. L. I. Consilio potiùs, quàm gladio.</marginalia_text>
+                    <book title="De bello civili"/>
+                </position>
+            </language>
+            <translation>Ca[e]sars greate Rule. 'The civil war', book 1. Rather by consultation than by sword.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="a brode chyppyng axe" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A brode chippinge Axe.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Industry.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Matter for Pescenninus Niger, to upbraid him of his youth, idely &amp; vnmanfully spent..</marginalia_text>
+                    <person name="Pescennius Niger"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Apophthegs, Deuizes.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="Diuus Augustus" type="straight"/>
+        <underline language="EN" method="pen" text="vnable vnto warre" type="straight"/>
+        <underline language="EN" method="pen" text="pouertie thruste" type="straight"/>
+        <underline language="EN" method="pen" text="him a certayne" type="straight"/>
+        <underline language="EN" method="pen" text="dyuers counsels" type="straight"/>
+        <underline language="EN" method="pen" text="CEsar" type="straight"/>
+        <underline language="EN" method="pen" text="many physitions" type="straight"/>
+        <underline language="EN" method="pen" text="subdue theym with famyne" type="straight"/>
+        <underline language="EN" method="pen" text="rather than" type="straight"/>
+        <underline language="EN" method="pen" text="with force" type="straight"/>
+        <underline language="EN" method="pen" text="with a brode chyppyng axe, [that] is to say" type="straight"/>
+        <underline language="EN" method="pen" text="with diligent labor" type="straight"/>
+        <underline language="EN" method="pen" text="be aged and auncient" type="straight"/>
+        <underline language="EN" method="pen" text="maners" type="straight"/>
+        <underline language="EN" method="pen" text="sage and sober" type="straight"/>
+        <underline language="EN" method="pen" text="counsayle was" type="straight"/>
+        <underline language="EN" method="pen" text="Scypio" type="straight"/>
+        <underline language="EN" method="pen" text="a sory" type="straight"/>
+        <underline language="EN" method="pen" text="fyghter" type="straight"/>
+        <underline language="EN" method="pen" text="be a worthy capitayne" type="straight"/>
+        
+        <symbol language="LA" name="SS" place="head" text="Consilia vulpina, seu Annibalis ingenium. Quales ex professo techna[e], s[upr]a, l.2.c.5."/>
+        <symbol language="LA" name="SS" place="head" text="A Schoole, or Mint of Stratagems."/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="fyghter"/>
+        
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="subdue theym with famyne"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="with force"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="with a brode chyppyng axe"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="with diligent labor"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="counsayle was"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="be a worthy capitayne"/>
+        <mark method="pen" name="X_sign" place="intext"/>
+        
+    </annotation>
+</transcription>

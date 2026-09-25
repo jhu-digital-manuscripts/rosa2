@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.060r.tif" pagination="119" reader="John Dee" signature="h 4"/>
+    <annotation> 
+        
+        <marginalia anchor_text="Cicero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cicero</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in partitionibus oratorijs" hand="Italian">
+        <language ident="LA">
+            <position book_orientation="0" place="right_margin">
+                <marginalia_text>In partionibus oratorijs</marginalia_text>
+                <book title="De Partitionbus Oratoriae"/>
+            </position>
+        </language>
+        <translation>In oratorical subdivisions.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in Oratore" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In Oratore.</marginalia_text>
+                    <book title="De Oratore"/>
+                </position>
+            </language>
+            <translation>In De Oratore.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dispositio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dispoistio</marginalia_text>
+                </position>
+            </language>
+            <translation>Arrangement.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Dion" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dion</marginalia_text>
+                    <person name="Dio Chrysostom"/>
+                </position>
+            </language>
+            <translation>Dion.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Theoderi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Theodorei</marginalia_text>
+                    <person name="Theodorus of Gadara"/>
+                </position>
+            </language>
+            <translation>Of Theodorus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hermagoras" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hermagoras</marginalia_text>
+                    <person name="Hermagoras of Temnos"/>
+                </position>
+            </language>
+            <translation>Hermagoras of Temnos.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="hac opinone non pauci, ut has non rhetorices partes esse existimarent, sed opera oratoris" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>h[a]ec s[unt] me[m]bra no[n] partes sed oratoris opera</marginalia_text>
+                </position>
+            </language>
+            <translation>These are members not parts, but works of the orator.</translation> 
+        </marginalia>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

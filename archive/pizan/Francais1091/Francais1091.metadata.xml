@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>0</illustrations>
+    <totalPages>220</totalPages>
+    <dimensions units="">
+        <width>-1</width>
+        <height>-1</height>
+    </dimensions>
+    <dates>
+        <startDate>1401</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="SENESQUE. De.IIII. Vertus, translatées de latin en françoys par maistre LAURENS DE PREMIERFAIT">
+            <language>fr</language>
+            <title>SENESQUE. De.IIII. Vertus, translatées de latin en françoys par maistre LAURENS DE PREMIERFAIT</title>
+            <textId/>
+            <pages end="47v" start="1r">47</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>31</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="Le Livre des.III. vertus à l'enseignement des dames et de toutes fames et de tous estas », ou Livre de prudence [par CHRISTINE DE PISAN ]">
+            <language>fr</language>
+            <title>Le Livre des.III. vertus à l'enseignement des dames et de toutes fames et de tous estas », ou Livre de prudence [par CHRISTINE DE PISAN ]</title>
+            <textId/>
+            <pages end="101r" start="48r">53</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>31</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Christine de Pizan</title>
+            <commonName>Français 1091</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>paper</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 1091</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Christine de Pizan</title>
+            <commonName>Français 1091</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscript</type>
+            <material>paper</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 1091</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.283r.tif" pagination="545" reader="John Dee" signature="mmmm.i."/>
+    <annotation>
+        
+        <marginalia anchor_text="laudis habet in Rege" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Regi[a]e Laudes</marginalia_text>
+                </position>
+            </language>
+            <translation>Royal praises.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="frugalitate[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>frugalitas</marginalia_text>
+                </position>
+            </language>
+            <translation>Frugality.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="equis vteretur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vti equis</marginalia_text>
+                </position>
+            </language>
+            <translation>To use horses.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="co[m]milito" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>co[m]milito</marginalia_text>
+                </position>
+            </language>
+            <translation>Comrade.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="equitaret" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>equitare</marginalia_text>
+                </position>
+            </language>
+            <translation>To ride.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="serui" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Seruus</marginalia_text>
+                </position>
+            </language>
+            <translation>Slave.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Contentio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Contention.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="inhumanitas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>inhumanitas</marginalia_text>
+                </position>
+            </language>
+            <translation>Churlishness.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="non deponendoru[m], sed abiiciendorum" type="straight"/>
+        <underline language="LA" method="pen" text="fit in dominatu seruitus, in seruitute dominatus." type="straight"/>
+        <underline language="LA" method="pen" text="tamen ille inimico seruum remisit: tu ab auo abduxisti" type="straight"/>
+        <underline language="LA" method="pen" text="incorruptu[m] audire noluit: tu corrupisti. ille adiutore[m] seruum contra dominu[m]" type="straight"/>
+        
+        <mark method="pen" name="tripunctus_with_tail" place="right_margin"/> 
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">21</numeral>
+
+        <drawing anchor_text="Regi[a]e Laudes" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="frugalitas" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="Seruus" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

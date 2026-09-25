@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.112v.tif" pagination="48" reader="Harvey" signature="[C8v]"/>	<!-- ABO 117left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						{ The towre takes plotters, that woold take the towre.
+						No man, that is no man at trialls howre.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Semper uiuu[m].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Always alive.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						| Pro se quisq[ue]: et contra alios quisq[ue]:
+						nec Hercules contra duos, aut tres a[e]quales. Quid
+						vnus contra Mundum, plenum auaritia[e], et superbia[e]?
+						At vnus potest, quod mille non possunt: et
+						Labor omnia vincit: et Domat omnia Virtus: et
+						Prudentia sibi serua reddit omnia: 
+						et Ca[e]sar regit omnia terris.
+							<!-- Repeating phrases found in Ha2.098r -->
+					</marginalia_text>
+					<person name="Hercules"/>
+					<X-ref book_title="Georgics" language="LA" person="Virgil" text="Labor omnia vincit"/>
+				</position>
+			</language>
+			<translation>
+				Everyone for himself, and against all others.
+				and Hercules not against two or three equals.
+				What is one against the world full of greed and arrogance?
+				But one man can do what a thousand cannot, and 'work overcomes
+				all things', and Virtue conquers all things. 
+				And Prudence restores all things to herself, 
+				and Caesar reigns over all things of the earth.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						/ Vir non est, qui non est Semper vir.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Whoever is not always a man is not a man.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Nondum vir est, qui non est semper alacer, industrius, absolutus.
+						S. Bonifacius: S. Victor: S. Perpetuus.
+					</marginalia_text>
+					<person name="St. Boniface"/>
+					<person name="St. Victor"/>
+					<person name="St. Perpetuus"/>
+				</position>
+			</language>
+			<translation>
+				Whoever is not always eager, industrious, and complete is not yet a man.
+				St. Boniface, St. Victor, St. Perpetuus.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						i[nfr]a, 95.
+					</marginalia_text>
+					<internal_ref>
+						<target ref="FolgersHa2:Ha2.136r" text="95"/>
+					</internal_ref>
+				</position>
+			</language>
+			<translation>
+				[See] below, pg. 95.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Nec heri, nec hodiè, nec cras: sed sempter alacer, industrius, absolutus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Neither yesterday, today, or tomorrow, but always eager, industrious, and complete.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Perge crescere: aut perge decrescere. Quotidiè maior crescentiùs.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Proceed to grow: or proceed to diminish. Daily a greater growing.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Maniera notabile, da conoscer" type="straight"/>
+		<underline language="IT" method="pen" text="qualità" type="straight"/>
+		<underline language="IT" method="pen" text="il Palingenio" type="straight"/>
+		<underline language="IT" method="pen" text="suoi amici" type="straight"/>
+		<underline language="IT" method="pen" text="Iddio fa gli huomini" type="straight"/>
+		<underline language="IT" method="pen" text="s'appaiano" type="straight"/>
+		<underline language="LA" method="pen" text="pares cum" type="straight"/>
+		<underline language="LA" method="pen" text="mores dispares, disparia studia" type="straight"/>
+		<underline language="IT" method="pen" text="huomini forti" type="straight"/>
+		<underline language="IT" method="pen" text="incredibil constanza" type="straight"/>
+		<underline language="IT" method="pen" text="martiri" type="straight"/>
+		<underline language="IT" method="pen" text="di Giuliano Imperadore" type="straight"/>
+		<underline language="IT" method="pen" text="arrostiti per" type="straight"/>
+		<underline language="IT" method="pen" text="Macedonio" type="straight"/>
+		<underline language="IT" method="pen" text="ridendo" type="straight"/>
+		<underline language="IT" method="pen" text="oh la se tu pigli" type="straight"/>
+		<underline language="IT" method="pen" text="dall'altro lato" type="straight"/>
+		<underline language="IT" method="pen" text="troui cotti, &amp; stagionati" type="straight"/>
+		<underline language="IT" method="pen" text="professori del futuro" type="straight"/>
+		<underline language="IT" method="pen" text="il presente" type="straight"/>
+		<underline language="IT" method="pen" text="è in Cielo" type="straight"/>
+		<underline language="IT" method="pen" text="innanzi a' piedi" type="straight"/>
+		
+		<symbol name="Sun" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- di -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- mori -->
+		
+    </annotation>
+</transcription>

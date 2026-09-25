@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.038v.tif" reader="Harvey" signature="[Dvii[v]]"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Quatuor ad victoriam consequendam potentissimi Loci communes:</marginalia_text>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>{ Vires: Locus: Ordo: Exhortatio. Quorum diligens obseruatio, plurimùm valet in pra[e]lijs.</marginalia_text>
+                </position>
+            </language>
+            <translation>Four most powerful common places for achieving victory: Strength, place, order, and exhortation. 
+                The diligent observance of which is worth a great deal in battles.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>vide 2.libros Macchabaeoru[m].</marginalia_text>
+                    <book title="Maccabees"/>
+                </position>
+            </language>
+            <translation>See the two books of Maccabees.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="FR">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>A lieu é temps.</marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>A notable posy.</marginalia_text>
+                </position>
+            </language>
+            <translation>At the right place and time. A notable posy.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="in the wane of the moone" type="straight"/>
+        <underline language="EN" method="pen" text="superstitious obseruynge" type="straight"/>
+        <underline language="EN" method="pen" text="Vespasian the" type="straight"/>
+        <underline language="EN" method="pen" text="on the saboth" type="straight"/>
+        <underline language="EN" method="pen" text="Jewes" type="straight"/>
+        <underline language="EN" method="pen" text="a place" type="straight"/>
+        <underline language="EN" method="chalk" text="a place to" type="straight"/>
+        <underline language="EN" method="pen" text="Pyrhus armye" type="straight"/>
+        <underline language="EN" method="pen" text="in strayte places" type="straight"/>
+        <underline language="EN" method="pen" text="a hygh place" type="straight"/>
+        <underline language="EN" method="pen" text="the violent decours" type="straight"/>
+        <underline language="EN" method="chalk" text="with the violent" type="straight"/>
+        <underline language="EN" method="pen" text="and descendynge" type="straight"/>
+        <underline language="EN" method="chalk" text="descendynge" type="straight"/>
+        <underline language="EN" method="pen" text="C. Cesar" type="straight"/>
+        <underline language="EN" method="pen" text="Pharnaces" type="straight"/>
+        
+        <symbol language="LA" name="SS" place="head" text="Quatuor ad victoriam consequendam potentissimi Loci communes: { Vires: Locus: Ordo: Exhortatio. Quorum diligens obseruatio, plurimùm valet in pra[e]lijs."/>
+        
+        <mark language="EN" method="pen" name="apostrophe" place="left_margin" text="a hygh place"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="the violent decours"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="in the wane of the moone"/>
+        
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark method="pen" name="apostrophe" place="intext"/> <!--place, and-->
+        
+    </annotation>
+</transcription>

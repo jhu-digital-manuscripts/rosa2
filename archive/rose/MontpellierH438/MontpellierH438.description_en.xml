@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscript</note>
+          <note type="commonName">Montpellier H 438</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="153" unit="folios">153</measure>
+            <dimensions>
+              <height unit="mm">202</height>
+              <width unit="mm">138</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">0</note>
+          <note type="material">parchment</note>
+          <pubPlace>France</pubPlace>
+          <date notAfter="1340" notBefore="1320">14th century</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Montpellier, France</settlement>
+            <repository>Bibliothèque interuniversitaire de Montpellier</repository>
+            <idno>H 438</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="110r">1r-110r</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">153</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">48</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+            <msItem n="2">
+              <locus from="111r" to="139v">111r-139v</locus>
+              <title>Il Fiore</title>
+              <note type="textid">fiore</note>
+              <note type="folios">29</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">30</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

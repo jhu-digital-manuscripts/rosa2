@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.128v.tif" pagination="246" reader="John Dee" signature="[X.iij.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Dux multorum sibi conciliauit gratiam &amp; partem infamiae suae antiquae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ducis Infamia antiqua.</marginalia_text>
+                    <person name="John of Gaunt"/>
+                </position>
+            </language>
+            <translation>The bad old repute of the Duke.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="conscientia stimulabat" type="straight"/>
+        <underline language="LA" method="pen" text="multorum" type="straight"/>
+        <underline language="LA" method="pen" text="conciliauit gratiam" type="straight"/>
+        <underline language="LA" method="pen" text="partem" type="straight"/>
+        <underline language="LA" method="pen" text="infamiae suae" type="double"/>
+        <underline language="LA" method="pen" text="antiquae" type="straight"/>
+        <underline language="LA" method="pen" text="supprimemus ad cautelam" type="straight"/>
+        <underline language="LA" method="pen" text="quòd" type="straight"/>
+        <underline language="LA" method="pen" text="causa in qua" type="double"/>
+        <underline language="LA" method="pen" text="pugnaturus erat vera fuit, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="erat conscius vllius artis magicae, per quam de aduersario posset reportare" type="straight"/>
+        <underline language="LA" method="pen" text="se herbam aut lapidem" type="straight"/>
+        <underline language="LA" method="pen" text="experimenti genus" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.027r.tif" reader="Harvey" signature="[Civ[r]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="kinges tresure" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>The Treasurys, &amp; magasins of princes, &amp; states, cunningly discoouerid; subiect to</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>such sudden surprizes.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota.</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>[the] Exchequ[e]r.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Jasonis aurru[m] Vellus.</marginalia_text>
+                    <person name="Jason"/>
+                </position>
+            </language>
+            <translation>The golden fleece of Jason.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="fayned" type="straight"/>
+        <underline language="EN" method="pen" text="into Caria" type="straight"/>
+        <underline language="EN" method="pen" text="hylles" type="straight"/>
+        <underline language="EN" method="pen" text="horsemen" type="straight"/>
+        <underline language="EN" method="pen" text="bragge and polycie" type="straight"/>
+        <underline language="EN" method="pen" text="entyced Tysaphernes into Caria" type="straight"/>
+        <underline language="EN" method="pen" text="he brake" type="straight"/>
+        <underline language="EN" method="pen" text="into Lidia" type="straight"/>
+        <underline language="EN" method="pen" text="heed of the kyngedom" type="straight"/>
+        <underline language="EN" method="pen" text="those" type="straight"/>
+        <underline language="EN" method="pen" text="the kinges tresure" type="straight"/>
+        <underline language="EN" method="pen" text="grudged agaynste" type="straight"/>
+        <underline language="EN" method="pen" text="flee theyr hostes" type="straight"/>
+        <underline language="EN" method="pen" text="away their goodes" type="straight"/>
+        <underline language="EN" method="pen" text="shulde lye there stylle all the wynter" type="straight"/>
+        <underline language="EN" method="pen" text="tyme and occasion serued, punyshed" type="straight"/>
+        <underline language="EN" method="chalk" text="tyme and occasion serued, punyshed" type="straight"/>
+        <underline language="EN" method="pen" text="causers" type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="tyme and occasion serued, punyshed"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="EN" method="pen" name="X_sign" place="right_margin" text="shulde lye"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="hylles"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="horsemen"/>
+        <mark method="pen" name="dot" place="intext"/> <!--Caria, which-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="into Lidia"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="the kinges tresure"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--goodes, he-->
+        
+    </annotation>
+</transcription>

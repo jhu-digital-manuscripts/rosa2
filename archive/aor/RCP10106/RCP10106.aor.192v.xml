@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.192v.tif" pagination="384" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="nimia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nimia</marginalia_text>
+                </position>
+            </language>
+            <translation>Excessive.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Duae sunt diuersae opiniones, aliorum sente[n]tias" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dua[e] de se[n]te[n]tijs opiniones.</marginalia_text>
+                </position>
+            </language>
+            <translation>Two schools of thought.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="concisam quoque orationem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Oratio concisa</marginalia_text>
+                </position>
+            </language>
+            <translation>Fragmented speech.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="soluta ferè oratio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Or[ati]o soluta.</marginalia_text>
+                </position>
+            </language>
+            <translation>Free speech.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="color ipse dicendi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dicendi color</marginalia_text>
+                </position>
+            </language>
+            <translation>The tone of speech</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Densitas earu[m] obstat inuicem" type="straight"/>
+        <underline language="LA" method="pen" text="circu[m]litum est" type="straight"/>
+        <underline language="LA" method="pen" text="clauus purpurae" type="straight"/>
+        <underline language="LA" method="pen" text="multas necesse est dicere leues, frigidas, ineptas." type="straight"/>
+        
+    </annotation>
+</transcription>

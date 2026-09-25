@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.244r.tif" pagination="227" reader="John Dee" signature="p.ii."/>   
+    <annotation>
+        
+        <marginalia anchor_text="verba compone, &amp; quasi coagmenta" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>verba co[m]pone et coagme[n]ta.</marginalia_text>
+                </position>
+            </language>
+            <translation>Words composed and joined together.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Ornati orationem Graeci puta[n]t, si verboru[m] immutationibus vtantur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gra[e]ci que[m] putaba[n]t or[ati]o[n]is ornatum esse.</marginalia_text>
+                </position>
+            </language>
+            <translation>Whom the Greeks thought to be accomplished in their speech.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="antiquitas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Antiquitas.</marginalia_text>
+                </position>
+            </language>
+            <translation>Antiquity.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Canachi signa" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Canachi signa</marginalia_text>
+                    <person name="Canachus"/>
+                </position>
+            </language>
+            <translation>The figures of Canachus.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Calamidis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Calamides.</marginalia_text>
+                    <person name="Calamis"/>           <!-- DO: There are two sculptors by this name; not sure which one this refers to  https://en.wikipedia.org/wiki/Calamis -->
+                </position>
+            </language>
+            <translation>Calamis.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Myronis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Myron.</marginalia_text>
+                    <person name="Myron of Eleutherae"/>
+                </position>
+            </language>
+            <translation>Myron of Eleutherae.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Polycleti" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Polycletus.</marginalia_text>
+                    <person name="Polykleitos"/>
+                </position>
+            </language>
+            <translation>Polykleitos.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Zeuxim, &amp; Polygnotu[m], &amp; Timantem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Zeuxis. Polygnotus
+                        Timantes.
+                    </marginalia_text>
+                    <person name="Zeuxis"/>
+                    <person name="Polygnotus"/>
+                    <person name="Timanthes"/>
+                </position>
+            </language>
+            <translation>Zeuxis. Polygnotus. Timanthes.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="quatuor coloribus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quatuor Colores.</marginalia_text>
+                </position>
+            </language>
+            <translation>Four colours.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Nihil est enim simul &amp; inuentum &amp; perfectu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nihil est simul inventum &amp; perfectum.</marginalia_text>
+                </position>
+            </language>
+            <translation>Nothing is invented and perfected at the same time.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="poetae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Poeta[e].</marginalia_text>
+                </position>
+            </language>
+            <translation>Poets.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Liuianae fabulae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Liuian[a]e fabula[e].</marginalia_text>
+                    <person name="Livy"/>
+                </position>
+            </language>
+            <translation>The plays of Livy.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Accius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Accius</marginalia_text>
+                    <person name="Lucius Accius"/>
+                </position>
+            </language>
+            <translation>Lucius Accius.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="error Accii" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Accij error.</marginalia_text>
+                    <person name="Lucius Accius"/>
+                </position>
+            </language>
+            <translation>The error of Lucius Accius.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Scipionem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Scipio</marginalia_text>
+                    <person name="Scipio Africanus"/>
+                </position>
+            </language>
+            <translation>Scipio.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Paulo" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Paulus.</marginalia_text>
+                    <person name="Lucius Aemilius Paullus Macedonicus"/>
+                </position>
+            </language>
+            <translation>Lucius Aemilius Paullus Macedonicus.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Sex. AElius" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Sex. Ælius.
+                    </marginalia_text>
+                    <person name="Sextus Aelius Paetus Catus"/>
+                </position>
+            </language>
+            <translation>Sextus Aelius.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="C. Sulpitius Gallus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        C. Sulpitius Gallus.
+                    </marginalia_text>
+                    <person name="Gaius Sulpicius Gallus"/>
+                </position>
+            </language>
+            <translation>Gaius Sulpicius Gallus.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="carmina, quae multis seclis ante sua[m] aetate[m] in epulis esse cantitata" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                       Carmina cantitata
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Songs sung repeatedly.</translation>
+        </marginalia>
+        
+         
+        <marginalia anchor_text="Attico assigna" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                       attico assigna
+                    </marginalia_text>
+                    <person name="Titus Pomponius Atticus"/>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>blame atticus</marginalia_text>
+                </position>
+            </language>
+            <translation>Blame Titus Pomponius Atticus.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Numeróque eodem fuit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        numeroq[ue] eode[m] fuit
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>He was of the same number.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="quaedam horridiora verba" type="straight"/>
+        <underline language="LA" method="pen" text="compone, &amp; quasi coagmenta" type="straight"/>
+        <underline language="LA" method="pen" text="si verboru[m] immutationibus vtantur" type="straight"/>
+        <underline language="LA" method="pen" text="genere &amp; creber &amp; distinctus Cato" type="straight"/>
+        <underline language="LA" method="pen" text="nostroru[m] temporu[m] rationem" type="straight"/>
+        <underline language="LA" method="pen" text="maiore honore in omnibus artibus, quàm in hac vna dicendi, versatur antiquitas" type="straight"/>
+        <underline language="LA" method="pen" text="plus quàm quatuor coloribus, formas &amp; lineamenta" type="straight"/>
+        <underline language="LA" method="pen" text="Nihil est enim simul &amp; inuentum &amp; perfectu[m]. Nec" type="straight"/>
+        <underline language="LA" method="pen" text="habet: nam &amp; Odyssea Latina est. Sic" type="straight"/>
+        <underline language="LA" method="pen" text="Attico assigna" type="straight"/>
+        <underline language="LA" method="pen" text="quasi notatione temporu[m], &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="cantitata" type="straight"/>
+        <underline language="LA" method="pen" text="qui à Naeuio vel sumpsisti multa, si fateris: vel si negas, surripuisti. Cum" type="straight"/>
+        <underline language="LA" method="pen" text="Numeróque eodem" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <drawing anchor_text="maiore honore in omnibus artibus, quàm in hac vna dicendi, versatur antiquitas" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

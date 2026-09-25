@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.067r.tif" pagination="133" reader="John Dee" signature="i 3"/>
+    <annotation>
+        
+        <marginalia anchor_text="quorum nomina apertiora sunt, quàm it docenda sint. Idem Patrocles sentit. Tres fecit &amp; M. Antonius, his quidem uerbis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Status [triplex] [quadruplex].</marginalia_text>
+                </position>
+            </language>
+            <translation>Threefold and fourfold bases.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Patrocles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Patrocles</marginalia_text>
+                    <person name="Patrocles"/>
+                </position>
+            </language>
+            <translation>Patrocles.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="M. Antonius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>M Antonius</marginalia_text>
+                    <person name="Mark Antony"/>
+                </position>
+            </language>
+            <translation>Marcus Antonius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tres fecit et M. Antonius his quidem verbis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Status triplex</marginalia_text> <!-- M.B. Captured the symbol next to 'status triplex' as a bracket not sure if that is correct though. -->
+                    <!-- FSF: I am not sure if this is a bracket or a nine --> 
+                </position>
+            </language>
+            <translation>Threefold bases.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Athenaeus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Athena[e]us.</marginalia_text>
+                    <person name="Athenaeus of Naucratis"/>
+                </position>
+            </language>
+            <translation>Athenaeus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quattuor fecit Athenaeus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Status [quadruplex]</marginalia_text> 
+                </position>
+            </language>
+            <translation>Fourfold bases.</translation>
+        </marginalia>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        
+    </annotation>
+</transcription>

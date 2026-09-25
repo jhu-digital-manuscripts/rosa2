@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.207r.tif" pagination="413" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="declamatores" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Declamatores</marginalia_text>
+                </position>
+            </language>
+            <translation>Declaimers.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Seneca" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Seneca</marginalia_text>
+                    <person name="Seneca"/>
+                </position>
+            </language>
+            <translation>Seneca.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="τοπογραφία" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>τοπογραφία.</marginalia_text>
+                </position>
+            </language>
+            <translation>Topography.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Εἰρωνεία" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Εἰρωνεία</marginalia_text>
+                </position>
+            </language>
+            <translation>Irony.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="εἰρωνεία quae est schema, ab illa quae " hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Differe[n]tia inter</marginalia_text>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>εἰρωνειαν</marginalia_text> 
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>tropum &amp; schema.</marginalia_text>
+                </position>
+            </language>
+            <translation>The different shape between the irony and form of tropes.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="uoluntatis fictio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Voluntatis fictio</marginalia_text>
+                </position>
+            </language>
+            <translation>An attitude of pretence.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uita Socratis. Nam ideo dictus ε[ἴ]ρων." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Socratis vita</marginalia_text>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>εἴρων</marginalia_text> 
+                </position>
+            </language>
+            <translation>Socrates' life, modest.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἀλλΗγορίαυ" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Allegoria</marginalia_text>
+                </position>
+            </language>
+            <translation>Allegory.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἀπόφασις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ἀπόφασις</marginalia_text>
+                </position>
+            </language>
+            <translation>Denial.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nec mehercules sine" type="straight"/>
+        <underline language="LA" method="pen" text="Duc, sequor" type="straight"/>
+        <underline language="LA" method="pen" text="narrari res" type="straight"/>
+        <underline language="EL" method="pen" text="Εἰρωνείαν" type="straight"/>
+        <underline language="LA" method="pen" text="inueni qui dißimulationem uocarent, quo" type="straight"/>
+        <underline language="LA" method="pen" text="in utroq[ue] enim contrarium ei quod dicitur intelligendum est: Species" type="straight"/>
+        <underline language="LA" method="pen" text="uoluntatis" type="straight"/>
+        <underline language="EL" method="pen" text="ε[ἴ]ρων" type="straight"/> <!-- M.B. Note captured ligature as ε[ἴ]. See: https://en.wikipedia.org/wiki/Epsilon#/media/File:Greek_minuscule_Epsilon_with_ligatures.svg  -->
+        <underline language="LA" method="pen" text="id est, agens imperitum, &amp; admirator aliorum tanquam sapientium: ut" type="straight"/>
+        
+        <numeral place="right_margin">1</numeral>
+        <numeral place="right_margin">2</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

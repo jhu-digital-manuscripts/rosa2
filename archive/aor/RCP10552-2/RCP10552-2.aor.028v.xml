@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.028v.tif" pagination="46" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="VVallici non defuissent" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Wallensiu[m] auxiliu[m] [quate; deleted] hic defuit</marginalia_text>
+                </position>
+            </language>
+            <translation>The Welsh reinforcement was lacking here.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Fuissetqué dies iste Scotis exitialis, si Anglicis VVallici non defuissent, quibus innatum est vt inermes loca paludosa pertranseant,              &amp; colles agiliter occupent &amp; ascendant." type="straight"/>
+        <underline language="LA" method="pen" text="eorum carentes" type="straight"/>
+        <underline language="LA" method="pen" text="nimis po[n]derosè fuissent armati" type="double"/>
+        <underline language="LA" method="pen" text="Romae omnia" type="straight"/>
+        <underline language="LA" method="pen" text="Romae omnia venalia." type="straight"/>
+        
+        <drawing anchor_text="Romae omnia venalia." book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

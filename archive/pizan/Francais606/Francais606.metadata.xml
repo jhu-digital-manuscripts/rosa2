@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>101</illustrations>
+    <totalPages>47</totalPages>
+    <dimensions units="mm">
+        <width>262</width>
+        <height>348</height>
+    </dimensions>
+    <dates>
+        <startDate>1400</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="L'epitre othea">
+            <language>fr</language>
+            <title>L'Epitre Othea</title>
+            <textId/>
+            <pages end="47v" start="1r">47</pages>
+            <illustrations>101</illustrations>
+            <linesPerColumn>40</linesPerColumn>
+            <leavesPerGathering>8</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>L'Epitre Othea (Manuscrit du Duc, Vol. II)</title>
+            <commonName>Français 606</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material> parchment</material>
+            <origin>Paris, France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>Français 606</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>L'Epitre Othea (Manuscrit du Duc, Vol. II)</title>
+            <commonName>Français 606</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>Parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Paris, France</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>Français 606</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

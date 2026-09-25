@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.086r.tif" reader="Harvey" signature="[**6r]"/>	<!-- ABO 90right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Tria omnium odiosissima, pra[e]sertim serio viro:
+						Ignorantia; Ignauia; et
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Melancholia. Tres turpissima[e] bestia[e].)
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Three things are most hateful of all, especially to a serious man:
+				ignorance, slothfulness, and melancholy. Three repulsive beasts.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Alij occupatissimi: hic pra[e]occupantiss[imi].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Others are mostly seized, he mostly seizes upon.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Sola virorum generositas, Scientia; 
+						industria; alacritas.)
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Knowledge is the only generosity of men. Industriousness. Quickness.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Viuida, Solidaq[ue] nobilitas.)
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Lively and lasting nobility.
+			</translation>
+		</marginalia>
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.086r_0001" marginalia_continues_from="Ha2.085v_0001" marginalia_from_transcription="Ha2.085v.xml">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						[[**5v]: Cromuellus, Henrico 8.
+						et Cecilius sub 
+						) Elizabeta regina, maximi:
+						nec arte, nec virtute,
+						nec ullo valore magni:
+						sed competenti literaru[m], rerumq[ue]
+						scientia; industria,] solertia, fide;
+						regio fauore, diuina, humanaq[ue] fortuna gratiosi;
+						in primisq[ue] honorati.
+						<!-- Continued from facing page, in text, Ha2.085v -->
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				[[**5v]: Great were Cromwell under Henry VIII, and Robert Cecil under Queen Elizabeth.
+				There is no art, virtue, or any valor of a great man, but being competent
+				in letters and the knowledge of things; through industriousness,] skill and faith.
+				They are beloved by favor both kingly and divine, and by human fortune,
+				and they are honored among the first.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Nihil omnium rerum sordidius ignoranti:
+						ignauo: tristi.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Of all things nothing is more base than an ignorant man, a lazy man, a sad man.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Malo corporis, animiq[ue], nobilitatem, quàm fortuna[e]. 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				I prefer nobility of body and mind to that of fortune.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						{ nemo omniu[m], satis
+						robustus, aut durus: ne celer quidem, aut diligens satis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				No one is ever robust or hard enough: nor indeed swift or careful enough.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Viuida Ironia statim explodat quamcunq[ue] subrepentem Melancholiam: qua[e] tum
+						toleranda Solummodò, cum vir vult esse bestia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A lively irony immediately drives off any sort of grovelling melancholy,
+				which should only be supported when a man wants to be a beast.				
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>s[upr]a.</marginalia_text>
+					<internal_ref>
+						<target ref="FolgersHa2:Ha2.086v" text="s[upr]a"/> <!--tolerar-->
+					</internal_ref>
+				</position>
+			</language>
+			<translation>[See] above.</translation>
+		</marginalia>
+		
+		
+		<underline language="IT" method="pen" text="tolerar costantemente qual si voglia accidente" type="straight"/>
+		<underline language="IT" method="pen" text="Gli vsurari" type="straight"/>
+		<underline language="IT" method="pen" text="calunniatori" type="straight"/>
+		<underline language="IT" method="pen" text="Anchore ferme &amp; stabili, della" type="straight"/>
+		<underline language="IT" method="pen" text="la magnanimità" type="straight"/>
+		<underline language="IT" method="pen" text="alli danari, &amp; alle" type="straight"/>
+		<underline language="IT" method="pen" text="La pouertà no[n] dar molestia" type="straight"/>
+		<underline language="IT" method="pen" text="Gli errori causati" type="straight"/>
+		<underline language="IT" method="pen" text="schernire siano i pronostichi, &amp; le p[er]dittioni" type="straight"/>
+		<underline language="IT" method="pen" text="dall'Astrologia" type="straight"/>
+		<underline language="IT" method="pen" text="vitio della iracondia" type="straight"/>
+		<underline language="IT" method="pen" text="fraudolenti" type="straight"/>
+		<underline language="IT" method="pen" text="malitiosi" type="straight"/>
+		<underline language="IT" method="pen" text="altrui à suo danno" type="straight"/>
+		<underline language="IT" method="pen" text="qualche astutia, o àccorgimento" type="straight"/>
+		<underline language="IT" method="pen" text="trar talhora" type="straight"/>
+		<underline language="IT" method="pen" text="vista de' medici" type="straight"/>
+		<underline language="IT" method="pen" text="malati" type="straight"/>
+		
+		<symbol language="IT" name="Bisected_circle" place="intext" text="solertia, fide; regio fauore, diuina, humanaq[ue] fortuna gratiosi; in primisq[ue] honorati."/>
+		
+		<symbol name="SS" place="right_margin"/>
+		<symbol name="SS" place="right_margin"/>
+		
+		<symbol name="Bisected_circle" place="intext"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--vi-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--figliuo-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--magna-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--cau-->
+		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- beneath 'vult' -->
+		<mark method="pen" name="dash" place="right_margin"/> <!--p[er]dittio-->
+		<mark method="pen" name="plus_sign" place="right_margin"/>
+		<mark language="IT" method="pen" name="equal_sign" place="right_margin" text="vitio della iracondia"/>
+		<mark method="pen" name="quotation_mark" place="right_margin"/>
+		<mark method="pen" name="plus_sign" place="right_margin"/>
+		
+		<mark method="pen" name="dot" place="intext"/> <!--contenti, si-->
+
+    </annotation>
+</transcription>

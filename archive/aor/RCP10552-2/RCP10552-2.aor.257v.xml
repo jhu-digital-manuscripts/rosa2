@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.257v.tif" pagination="30" reader="John Dee" signature="[D.iij.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Alam in coniugem" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ala, filia Gulielmi qua[m] in co[n]iugem Haraldus accepturus erat.</marginalia_text>
+                    <person name="Adeliza"/>
+                    <person name="William the Conqueror"/>
+                    <person name="Harold Godwinson"/>
+                </position>
+            </language>
+            <translation>Adeliza, daughter of William, whom Harold was to marry.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Clitone" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Clito.</marginalia_text>
+                    <person name="Edgar Aetheling"/>
+                </position>
+            </language>
+            <translation>Aetheling.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ciuitatem Excestriam sibi rebellem obsedit &amp; infregit" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Excestria[e] expugnatio.</marginalia_text>
+                    <location name="Exeter"/>
+                </position>
+            </language>
+            <translation>The attack on Exeter.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sorore[m] tuam" type="straight"/>
+        <underline language="LA" method="pen" text="meam Alam in coniugem" type="straight"/>
+        <underline language="LA" method="pen" text="iurauit Haraldus se" type="straight"/>
+        <underline language="LA" method="pen" text="cuncta" type="double"/>
+        <underline language="LA" method="pen" text="mulierem extraneam inconsultis principibus" type="straight"/>
+        <underline language="LA" method="pen" text="nec debere" type="straight"/>
+        <underline language="LA" method="pen" text="sine grandi iniuria posse adducere nouerit" type="straight"/>
+        <underline language="LA" method="pen" text="filiam suam vxorem duceret" type="straight"/>
+        <underline language="LA" method="pen" text="Archiepiscopum Stigandum" type="straight"/>
+        <underline language="LA" method="pen" text="Gulielmum filium Osberni quem Herefordiae" type="straight"/>
+        <underline language="LA" method="pen" text="Abathiam de Bello" type="straight"/>
+        <underline language="LA" method="pen" text="Ciuitatem Excestriam" type="straight"/>
+        <underline language="LA" method="pen" text="Aldredo Eboracensi" type="straight"/>
+        <underline language="LA" method="pen" text="principes Northanhumbrorum" type="double"/>
+        <underline language="LA" method="pen" text="Clitone Edgaro" type="straight"/>
+        <underline language="LA" method="pen" text="monasteria totius Angliae perscrutari" type="straight"/>
+        <underline language="LA" method="pen" text="ditiores Angli in eis deposuerant" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/>  <!-- Osberni, quem -->
+        <mark method="pen" name="bracket" place="intext"/>  <!-- constituerat, custodes -->
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark method="pen" name="tripunctus" place="tail"/>
+
+        <graph book_orientation="0" method="pen" place="left_margin" type="genealogical_tree">
+            <node id="n1" person="Osbern the Steward">Osbernus</node>
+            <node id="n2" person="William FitzOsbern">Gulielmus Comes Heref[ordiae]</node>
+            <node id="n3" person="Roger de Breteuil">Rogerus</node>
+            <node id="n4" person="Emma de Breteuil">filia</node>
+            <link from="n1" relationship="has_child" to="n2"/>
+            <link from="n2" relationship="has_child" to="n3"/>
+            <link from="n2" relationship="has_child" to="n4"/>
+        </graph>
+        
+    </annotation>
+</transcription>

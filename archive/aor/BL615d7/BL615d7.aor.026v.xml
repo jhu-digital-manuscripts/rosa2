@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.026v.tif" pagination="[26v]" reader="John Dee" signature="[Dij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Casiteridi, &amp; hora noi chiamiam de gli Astori" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In[su]l[ae] Casiterides % Astores.</marginalia_text>
+                    <location name="Cassiterides"/>
+                    <location name="Azores"/>
+                </position>
+            </language>
+            <translation>The Cassiterides [are the] Azores islands.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="giornate di mare lontane dalla" type="straight"/>
+        <underline language="IT" method="pen" text="città; che" type="straight"/>
+        <underline language="IT" method="pen" text="Casiteridi" type="straight"/>
+        <underline language="IT" method="pen" text="Astori" type="straight"/>
+        <underline language="IT" method="pen" text="molto tempo secreta per cagion dello" type="straight"/>
+        <underline language="IT" method="pen" text="Isole de gli Astori" type="straight"/>
+        
+        <mark method="pen" name="est_mark" place="intext"/> <!--JG: in marginal note-->
+        
+        
+    </annotation>
+</transcription>

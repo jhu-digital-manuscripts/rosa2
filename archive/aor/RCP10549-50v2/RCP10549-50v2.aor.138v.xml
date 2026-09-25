@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.138v.tif" pagination="16" reader="John Dee"/>  
+    <annotation>
+        
+        <marginalia anchor_text="cognitio vitiosarum argumentationu[m] duplicem vtilitate[m] asseret" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quorsum vtilis vitiosaru[m] argumentationu[m] cognitio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Why an examination of defective argumentation is useful.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Expositio vitiosa" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Expositio vitiosa.</marginalia_text>
+                </position>
+            </language>
+            <translation>A defective exposition.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="falsa enumeratione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>falsa enumeratio.</marginalia_text>
+                </position>
+            </language>
+            <translation>A false enumeration.</translation>
+        </marginalia>
+        
+        <numeral place="left_margin">.1.</numeral>
+        <numeral place="left_margin">.2.</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">5</numeral>
+        
+    </annotation>
+</transcription>

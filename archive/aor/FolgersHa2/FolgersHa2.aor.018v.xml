@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+	<page filename="FolgersHa2.018v.tif" pagination="360" reader="Harvey"/>	<!-- ABO 023left -->
+	
+    	<annotation>		<!-- The page numers seem to be out of order due to an error in the printing, hence the pagination is strange. The previous file was page 355. --> 
+    				<!-- There's no problem with the order of the text, just a misnumbering. -->
+    				<!--  Pages 356 and 357 seem to be missing. -->
+    				<!-- 354, 355, 360, 361, 358, 359, 364, 365, 362, 363, 368, 369, 366, 367, 372, 369, 370, 371, and then regular order -->
+    		
+            	<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+            			<position book_orientation="0" place="head">
+                    				<marginalia_text>
+                    					non facilè litigandum cum amicis.
+                      			</marginalia_text>
+            			</position>
+        			</language>
+        			<translation>		
+        				Quarreling with friends is not easy. 
+        			</translation>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						( i[nfr]a, 365. /
+    					</marginalia_text>
+    					<internal_ref>
+    						<target ref="FolgersHa2:Ha2.021r" text="365"/>
+    					</internal_ref>
+    				</position>
+    			</language>
+    			<translation>
+    				[See] below, 365.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						Tam pra[e]cisè, quàm concisè.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				As precise, as it is concise.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						Apophthegmata magis honesta, quàm pragmatica.
+    						( In dictis, factisq[ue] scrupolosa perfectio. )
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Aphorisms are more honest than pragmatic.
+    				( In words and in deeds is a scrupulous perfection. )
+    			</translation>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="EN">
+    				<position book_orientation="90" place="left_margin">
+    					<marginalia_text>
+    						Euer speak owt of [the] brest of reason concentred: with the tounge of
+    						Eloquence refined: the hart of vigour sublimed: &amp; the witt of 
+    						Prudence vnited: allwais enforced to the strictest point of possibilitie.
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="270" place="right_margin">
+    					<marginalia_text>
+    						Eutrapelus, cuiusq[ue] exemplar: nullius simia. nâ Julij quidem.
+    					</marginalia_text>
+    					<person name="Eutrapelus"/>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Eutrapelus, and whose copy: an ape of no one: indeed, [na?] of July. <!--JG: Extremely unsure-->
+    			</translation>
+    		</marginalia>
+        
+	    	<!-- Underlines -->
+	        
+    		<underline language="IT" method="pen" text="la tassa" type="straight"/>
+    		<underline language="IT" method="pen" text="all'arbitrio mio" type="straight"/>
+    		<underline language="IT" method="pen" text="di nuouo" type="straight"/>
+    		<underline language="IT" method="pen" text="a quella me ne" type="straight"/>
+    		<underline language="IT" method="pen" text="poi poco discretamente" type="straight"/>
+    		<underline language="IT" method="pen" text="da mercanti" type="straight"/>
+    		<underline language="IT" method="pen" text="trapassaua i termini dell'" type="straight"/>
+    		<underline language="IT" method="pen" text="allegramente" type="straight"/>
+    		<underline language="IT" method="pen" text="allhora ripreso" type="straight"/>
+    		<underline language="IT" method="pen" text="ingiusta, e a se stesso dannosa" type="straight"/>
+    		<underline language="IT" method="pen" text="riportata fauoreuole" type="straight"/>
+    		<underline language="IT" method="pen" text="l'obligo della creanza" type="straight"/>
+    		<underline language="IT" method="pen" text="a far parole altercatorie" type="straight"/>
+    		<underline language="IT" method="pen" text="a piatire" type="straight"/>
+    		<underline language="IT" method="pen" text="con" type="straight"/>
+    		<underline language="IT" method="pen" text="stimati amici" type="straight"/>
+    		<underline language="IT" method="pen" text="conto d'hospitalita" type="straight"/>
+    		<underline language="IT" method="pen" text="litiga[n]do per" type="straight"/>
+    		<underline language="IT" method="pen" text="le sante ragioni dell'hospitio" type="straight"/>
+    		<underline language="IT" method="pen" text="cortese" type="straight"/>
+    		<underline language="IT" method="pen" text="beneficio" type="straight"/>
+    		<underline language="IT" method="pen" text="una pensione a" type="straight"/>
+    		<underline language="IT" method="pen" text="pigliare moglie" type="straight"/>
+    		<underline language="IT" method="pen" text="estinguesse la pe[n]sione" type="straight"/>
+    		<underline language="IT" method="pen" text="desiderio di maritarsi" type="straight"/>
+    		<underline language="IT" method="pen" text="uolerla estinguere" type="straight"/>
+    		<underline language="IT" method="pen" text="di guadagnarla tosto per" type="straight"/>
+    		<underline language="IT" method="pen" text="Al cui fondamento il" type="straight"/>
+    		<underline language="IT" method="pen" text="auttorità di trasferire la pensione" type="straight"/>
+    		<underline language="IT" method="pen" text="trasferita in persona d'un suo" type="straight"/>
+    		
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	    	<symbol name="JC" place="head"/> 
+    		<symbol name="JC" place="left_margin"/>
+    		<symbol name="JC" place="intext"/>
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark method="pen" name="dash" place="right_margin"/> <!-- seco -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- fat -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- trapas -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- ripre -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- ritroua -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- siura -->
+    		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- a far paro -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- paro -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- hauen -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- Plato -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- mari -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- al -->
+    		
+	    	<!-- Left margin -->
+	    	<mark method="pen" name="plus_sign" place="left_margin"/> <!-- saua i termini  -->
+    		<mark method="pen" name="quotation_mark" place="left_margin"/> <!--  le altercatorie -->
+    		
+	    	<!-- Intext -->
+	    	<mark method="pen" name="dot" place="intext"/> <!-- honesto, fu -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- presenti, parendo -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- sentenza, rispose -->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="sante"/>
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="pensione"/>
+    		
+
+    </annotation>
+</transcription>

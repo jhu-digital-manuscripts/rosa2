@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.012v.tif" pagination="viii[v]" reader="Harvey" signature="[Biv[v]]"/> 
+    <annotation>
+
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					Nota. Contrà ambitiosam popularitatem.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Note. Against the ambitious courting of popular favor.
+    		</translation>
+    	</marginalia>
+
+	<underline language="EN" method="pen" text="priuileges" type="straight"/>
+    	<underline language="EN" method="pen" text="co[n]strayned against their willes, to serue in the" type="straight"/>
+    	<underline language="EN" method="pen" text="as it was" type="straight"/>
+    	<underline language="EN" method="pen" text="vntill the comming of Graccus" type="straight"/>
+    	<underline language="EN" method="pen" text="would take this exercise for" type="straight"/>
+    	<underline language="EN" method="pen" text="studye of warre, be" type="straight"/>
+    	<underline language="EN" method="pen" text="peace for exercise" type="straight"/>
+    	<underline language="EN" method="pen" text="in the time of warre" type="straight"/>
+    	<underline language="EN" method="pen" text="necessitie and for glorie" type="straight"/>
+    	<underline language="EN" method="pen" text="only the common" type="straight"/>
+    	<underline language="EN" method="pen" text="it for an arte" type="straight"/>
+    	<underline language="EN" method="pen" text="touching a common wealth" type="straight"/>
+    	<underline language="EN" method="pen" text="concerning Kings" type="straight"/>
+    	<underline language="EN" method="pen" text="Kinge woulde haue" type="straight"/>
+    	<underline language="EN" method="pen" text="take suche exercise" type="straight"/>
+    	<underline language="EN" method="pen" text="A kingdome well" type="straight"/>
+    	<underline language="EN" method="pen" text="are the destruction" type="straight"/>
+    	<underline language="EN" method="pen" text="king, and altogether ministers of tirannye" type="straight"/>
+
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="untill the comming of Graccus"/>
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="peace for exercise"/>
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="king, and altogether ministers of tirannye"/>
+    	
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="Graccus"/>
+    	<mark method="pen" name="dot" place="intext"/> <!--exercise, and-->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="common"/>
+    	<mark method="pen" name="dot" place="intext"/> <!--dyd, and-->
+    	<mark method="pen" name="dot" place="intext"/> <!--men, for-->
+
+    </annotation>
+</transcription>

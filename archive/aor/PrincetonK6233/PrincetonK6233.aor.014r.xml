@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonK6233.014r.tif" reader="Harvey" signature="[β6r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Noua docendi Juris Methodus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The new method of teaching law.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sint ambulare" type="straight"/>
+        <underline language="LA" method="pen" text="in protasi" type="straight"/>
+        <underline language="LA" method="pen" text="antiqua docendi iuris ratio" type="straight"/>
+        <underline language="LA" method="pen" text="antiquae eruditionis monimenta" type="straight"/>
+        <underline language="LA" method="pen" text="Antapodosi" type="straight"/>
+        <underline language="LA" method="pen" text="suam &amp; nouam docendi methodum" type="straight"/>
+        <underline language="LA" method="pen" text="Institutiones" type="straight"/>
+        <underline language="LA" method="pen" text="primam legum partem" type="straight"/>
+        <underline language="LA" method="pen" text="Iustinianei noui" type="straight"/>
+        <underline language="LA" method="pen" text="De iudicijs" type="straight"/>
+        <underline language="LA" method="pen" text="Pandectarij" type="straight"/>
+        <underline language="LA" method="pen" text="Praetorij" type="straight"/>
+        <underline language="LA" method="pen" text="Edictales" type="straight"/>
+        <underline language="LA" method="pen" text="Libros 8 de rebus" type="straight"/>
+        <underline language="LA" method="pen" text="Papinianistae" type="straight"/>
+        <underline language="LA" method="pen" text="Lytae" type="straight"/>
+        <underline language="LA" method="pen" text="singulares 14 qui" type="straight"/>
+        <underline language="LA" method="pen" text="cum Codicis libris" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Authen" type="straight"/>
+        <underline language="LA" method="pen" text="Prolytae" type="straight"/>
+               
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="antiqua docendi iuris ratio"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="suam &amp; nouam docendi methodum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="suam &amp; nouam docendi methodum"/>
+        <mark language="LA" method="pen" name="bracket" place="intext" text="Instituiones &amp; primam legum partem, quae Graeco vocabulo πρῶτον appellatur. Cuius anni auditores, Iustinianei noui nuncupa[n]di sunt.             De iudicijs libros 7 &amp; 4 singulares. Et tum dicuntur Pandectarij seu Praetorij seu Edictales.             Libros 8 de rebus creditis &amp; 3 singulares: dicuntrq[ue] Papinianistae.             Libros singulares decem: dicu[n]turq[ue] Lytae.             Libros singulares 14 qui supersunt, cum Codicis libris XII &amp; Authen. Vocanturq[ue] Prolytae."/>
+        <mark method="pen" name="comma" place="intext"/> <!-- Institutiones & -->
+        <mark method="pen" name="dash" place="intext"/> <!-- par-tem -->
+        <mark language="LA" method="pen" name="apostrophe" place="intext" text="Iustinianei noui"/>
+        <mark language="LA" method="pen" name="apostrophe" place="intext" text="Iustinianei noui"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- 7 & -->
+        <mark language="LA" method="pen" name="apostrophe" place="intext" text="Pandectarij"/>
+        <mark language="LA" method="pen" name="apostrophe" place="intext" text="Pandectarij"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- Pandectarij seu -->
+        <mark method="pen" name="comma" place="intext"/> <!-- Praetorij seu -->
+        <mark language="LA" method="pen" name="apostrophe" place="intext" text="Edicatales"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- creditis & -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- singu-lares -->   
+        <mark language="LA" method="pen" name="apostrophe" place="intext" text="Papinianistae"/>
+        <mark language="LA" method="pen" name="apostrophe" place="intext" text="Papinianistae"/>
+        <mark language="LA" method="pen" name="apostrophe" place="intext" text="Lytae"/>
+        <mark language="LA" method="pen" name="apostrophe" place="intext" text="Lytae"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- sunt, cum -->
+        <mark method="pen" name="comma" place="intext"/> <!-- XII &  -->
+        <mark language="LA" method="pen" name="apostrophe" place="intext" text="Prolytae"/>
+        <mark language="LA" method="pen" name="apostrophe" place="intext" text="Prolytae"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

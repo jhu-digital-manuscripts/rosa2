@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.255v.tif" pagination="26" reader="John Dee" signature="[D.j.[v]]"/> 
+    <annotation>
+         
+        <marginalia anchor_text="Haraldus no[n] diu post viuens obijt in morte[m]" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Haraldus moritur.</marginalia_text>
+                    <person name="Harold Harefoot"/>
+                </position>
+            </language>
+            <translation>Harold dies.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hardecnutus" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hardecnutus. Rex.</marginalia_text>
+                    <person name="Harthacnut"/>
+                </position>
+            </language>
+            <translation>King Hathacnut.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Edwardu[m] a Norma[n]nia reuocauit" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Edwardus accersitus</marginalia_text>
+                    <person name="Edward the Confessor"/>
+                </position>
+            </language>
+            <translation>Edward sent for.</translation>
+        </marginalia>
+
+        <marginalia anchor_text="Widone[m]" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Guido.</marginalia_text>
+                    <person name="Guy of Burgundy"/>
+                </position>
+            </language>
+            <translation>Guy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Widone[m] vi[delicet] Burgundione[m] filiu[m] comitis Rainaldi" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Wido Burgund[ionem] filius Comitis Rainald[i]</marginalia_text>  <!-- DO: Not sure what the ending of 'Burgund.' should be? --> <!-- FSF: Burgund[iae] as the genitive? not sure either -->
+                    <person name="Guy of Burgundy"/>
+                    <person name="Reginald I, Count of Burgundy"/>
+                </position>
+            </language>
+            <translation>Guy of Burgundy, son of Count Reginald.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nigellum Constantinensem praeside[m]" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nigellus pra[e]ses Consta[n]t[inensis]</marginalia_text>
+                    <person name="Nigel II of Saint Sauveur"/>   
+                </position>
+            </language>
+            <translation>Nigel, ruler of Coutances.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Henricum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Henricus</marginalia_text>
+                    <person name="Henry I of France"/>
+                </position>
+            </language>
+            <translation>Henry.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Valesdunas" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Wallesdunn</marginalia_text>
+                    <location name="Val-es-Dunes"/>
+                </position>
+            </language>
+            <translation>Val-es-Dunes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Oxunensem comitatum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Comitatus oxunensis</marginalia_text>
+                    <location name="Exmes"/>
+                </position>
+            </language>
+            <translation>The county of Exmes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fluuius Olne" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Olne fl[uvius]</marginalia_text>
+                </position>
+            </language>
+            <translation>The river Orne.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Wido" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Guido</marginalia_text>
+                    <person name="Guy of Burgundy"/>
+                </position>
+            </language>
+            <translation>Guy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Briocum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Briocum</marginalia_text>
+                    <location name="Saint-Brieuc"/>
+                </position>
+            </language>
+            <translation>Saint-Brieuc.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Risle" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Risle fl[uvius]</marginalia_text>
+                </position>
+            </language>
+            <translation>The river Risle.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vbiquè castellis euersis" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Castella vbiq[ue] euersa.</marginalia_text>
+                </position>
+            </language>
+            <translation>The castles overturned on all sides.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Comes Goisfridus cognomento Martellus" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Goisfridus Martell[us] Com[es] Andega[norum]</marginalia_text>
+                    <person name="Geoffrey IV, Count of Anjou"/>
+                </position>
+            </language>
+            <translation>Geoffrey Martel, Count of Anjou.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Comitemq[ue] Theobaldu[m]" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Theobaldus Comes.</marginalia_text>
+                    <person name="Theobald II, Count of Champagne"/> 
+                </position>
+            </language>
+            <translation>Count Theobald.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Danifrontis castrum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Castrum Danisfo[n]tis</marginalia_text>  <!-- DO: Not completely sure if it's the right place, seems the most plausible -->
+                    <location name="Domfront"/>
+                </position>
+            </language>
+            <translation>Domfront Castle.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="protinus firmissimis castellis cinxit" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nota Castelloru[m] dispositionem.</marginalia_text>
+                </position>
+            </language>
+            <translation>Note the arrangement of the castles.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aleucium castrum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aleucium Castrum.</marginalia_text>   
+                    <location name="Alencon"/>                           <!-- DO: Again, not completely sure -->
+                </position>
+            </language>
+            <translation>Alencon Castle.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="medio intempestae" type="straight"/>
+        <underline language="LA" method="pen" text="illum Haraldo regi apud" type="straight"/>
+        <underline language="LA" method="pen" text="insulam ibiq[ue] oculis priuari" type="straight"/>
+        <underline language="LA" method="pen" text="Emma matre" type="straight"/>
+        <underline language="LA" method="pen" text="duobus" type="straight"/>
+        <underline language="LA" method="pen" text="Widone[m] vi[delicet] Burgundione[m] filiu[m] comitis Rainaldi" type="straight"/>
+        <underline language="LA" method="pen" text="castru[m] Brioci" type="straight"/>
+        <underline language="LA" method="pen" text="Nigellum Constantinensem" type="straight"/>
+        <underline language="LA" method="pen" text="Oxunensem" type="straight"/>
+        <underline language="LA" method="pen" text="Valesdunas" type="straight"/>
+        <underline language="LA" method="pen" text="fluuius Olne" type="straight"/>
+        <underline language="LA" method="pen" text="praelio Briocum" type="straight"/>
+        <underline language="LA" method="pen" text="vocatur Risle" type="straight"/>
+        <underline language="LA" method="pen" text="castello Brioci" type="straight"/>
+        <underline language="LA" method="pen" text="vbiquè castellis euersis" type="straight"/>
+        <underline language="LA" method="pen" text="Comes Goiffridus cognomento Martellus" type="straight"/>
+        <underline language="LA" method="pen" text="Comitemq[ue] Theobaldu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="vrbem Turonicam" type="straight"/>
+        <underline language="LA" method="pen" text="Danifrontis" type="straight"/>
+        <underline language="LA" method="pen" text="firmissimis castellis cinxit" type="straight"/>
+        <underline language="LA" method="pen" text="obstrusis aditibus egrediendi" type="straight"/>
+        <underline language="LA" method="pen" text="nunciantes Aleucium castrum" type="straight"/>
+        <underline language="LA" method="pen" text="Aleucium" type="straight"/>
+        <underline language="LA" method="pen" text="manibus pedibusq[ue] priuari" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- cibo medio -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- vidit mox -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- Burgundione[m] filiu[m] -->
+        <mark method="pen" name="bracket" place="intext"/>  <!-- morte[m]. Cui -->
+           
+    </annotation>
+</transcription>

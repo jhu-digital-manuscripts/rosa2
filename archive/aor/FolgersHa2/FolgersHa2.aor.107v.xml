@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.107v.tif" pagination="38" reader="Harvey" signature="[C3v]"/>	<!-- ABO 112left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Plus vitalium, animaliumq[ue] spirituum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				More of the spirits of lively and animate creatures.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						An howre enowghe for a good frend: halfe an howr,
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						too much for a good fellow.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Animus est entelechia. Ingenium, 
+						( quinta essentia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Mind is actualization. Genius, the fifth essence.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Nihil sublimatu[m] (
+						satis, aut rectificatum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Nothing is ever elevated or rectified enough.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Oratio, quasi serena animi lux.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Speech is as if a serene light of the soul. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Nullus Oratorum adhuc, aut Poetaru[m] Axiophilo satisfecit. Qui esse voluit non
+						modò ratione, arte, virtute plenior: sed etiam rotundior, fluentior, penetrantior:
+						sed vita, spirituq[ue] animosior. Vt nihil viuidius, aut valentius.
+					</marginalia_text>
+					<person name="Axiophilus"/>
+				</position>
+			</language>
+			<translation>
+				No orator or poet has yet satisfied Axiophilus. He wanted not only to be fuller of reason, art, and virtue, 
+				but also more well-rounded, more fluent, more penetrating. But he is stronger in life or spirit. Just as nothing is more lively or powerful. 			
+			</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						The best Orators, or Poets haue sumthing harsh, or cowld. All woold be
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						illuminate, current, &amp; full of life.
+						As vigorous, as the spirit of Wine;
+						or the most soueraine Aqua Vita[e].
+						No Cordiall, so mightily cordiall.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="vm certe porco, ilquale trouato" type="straight"/>
+		<underline language="IT" method="pen" text="&amp; versò l'olio, talche" type="straight"/>
+		<underline language="IT" method="pen" text="altra volta ti ristorerò" type="straight"/>
+		<underline language="IT" method="pen" text="Nella auuersità distinguersi" type="straight"/>
+		<underline language="IT" method="pen" text="veri amici" type="straight"/>
+		<underline language="IT" method="pen" text="da' finti" type="straight"/>
+		<underline language="IT" method="pen" text="le Rondini" type="straight"/>
+		<underline language="IT" method="pen" text="pariscono la State" type="straight"/>
+		<underline language="IT" method="pen" text="Verno spariscono" type="straight"/>
+		<underline language="IT" method="pen" text="sententiosamente" type="straight"/>
+		<underline language="LA" method="pen" text="certus in re incerta cernitur" type="straight"/>
+		<underline language="IT" method="pen" text="Ouidio parimente" type="straight"/>
+		<underline language="LA" method="pen" text="fortuna perit, nullus amicus erit" type="straight"/>
+		<underline language="IT" method="pen" text="Ariosto garbatamente" type="straight"/>
+		<underline language="IT" method="pen" text="felice in sù la ruota siede" type="straight"/>
+		<underline language="IT" method="pen" text="cangia in tristo" type="straight"/>
+		<underline language="IT" method="pen" text="lieto stato" type="straight"/>
+		<underline language="IT" method="pen" text="turba adulatrice il piede" type="straight"/>
+		<underline language="IT" method="pen" text="che di cuor ama riman" type="straight"/>
+		<underline language="IT" method="pen" text="il suo Signor dopo la morte" type="straight"/>
+		
+		<symbol name="JC" place="intext"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--tur-->
+		<mark language="IT" method="pen" name="plus_sign" place="right_margin" text="che di cuor ama riman"/>
+
+    </annotation>
+</transcription>

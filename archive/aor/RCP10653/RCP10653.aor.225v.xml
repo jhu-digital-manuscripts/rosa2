@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.225v.tif" pagination="2" reader="John Dee" signature="[Aaa[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Eadricus, cognomento Siluaticus" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        The name of Wilde
+                    </marginalia_text>
+                    <person name="Eadric the Wild"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Out of Roger Hoveden 
+                    </marginalia_text>
+                    <person name="Roger of Howden"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Bleothino videlicet &amp; Rivvathlo" hand="Italian">
+            <language ident="EN">                  
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Blethin Rivallon
+                    </marginalia_text>
+                    <person name="Bleddyn ap Cynfyn"/>
+                    <person name="Rhiwallon ap Cynfyn"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Siluaticus" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Wilde
+                    </marginalia_text>
+                    <person name="Eadric the Wild"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Hoveden hath Lucgee 
+                    </marginalia_text>
+                    <person name="Roger of Howden"/>
+                    <emphasis method="pen" text="Lucgee" type="triple"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Anglorum" type="straight"/>
+        <underline language="LA" method="pen" text="haeres legitimus" type="double"/>
+        <underline language="LA" method="pen" text="vbi natus fuerat" type="straight"/>
+        <underline language="LA" method="pen" text="regum Angliae nobilitas" type="straight"/>
+        <underline language="LA" method="pen" text="per Norma[n]nos expulsa" type="triple"/>
+        <underline language="LA" method="pen" text="Eadricus, cognomento" type="straight"/>
+        <underline language="LA" method="pen" text="fratris Eadrici" type="straight"/>
+        <underline language="LA" method="pen" text="Scrobbi" type="double"/>
+        <underline language="LA" method="pen" text="regibus" type="double"/>
+        <underline language="LA" method="pen" text="Bleothino" type="double"/>
+        <underline language="LA" method="pen" text="Rivvathlo" type="double"/>
+        <underline language="LA" method="pen" text="Vagae" type="triple"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- proprijs per -->
+        <mark method="pen" name="bracket" place="intext"/> <!-- terra[m] quia -->
+        <mark method="pen" name="bracket" place="intext"/> <!-- dedignabatur, Herefordenses -->
+        <mark language="LA" method="pen" name="circumflex" place="intext" text="castellni"/>
+        <mark language="LA" method="pen" name="circumflex" place="intext" text="Mar[a]e"/>
+        
+        <errata amendedtext="excitit" copytext="excitat" language="LA"/>
+        <errata amendedtext="castellani" copytext="castellni" language="LA"/>
+        <errata amendedtext="Mari[a]e" copytext="Mar[a]e" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

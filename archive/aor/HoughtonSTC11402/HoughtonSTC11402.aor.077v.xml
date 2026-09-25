@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.077v.tif" reader="Harvey" signature="[Ivi[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Sophisticè, et veteratoriè.</marginalia_text>
+                </position>
+            </language>
+            <translation>Sophistically and cunningly.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="wolde vndermyne" type="straight"/>
+        <underline language="EN" method="pen" text="ben ouerwhelmed" type="straight"/>
+        <underline language="EN" method="pen" text="Pelopidas" type="straight"/>
+        <underline language="EN" method="pen" text="conquere two townes" type="straight"/>
+        <underline language="EN" method="pen" text="moued one" type="straight"/>
+        <underline language="EN" method="pen" text="iiii.knyghtes shulde" type="straight"/>
+        <underline language="EN" method="pen" text="from the other army" type="straight"/>
+        <underline language="EN" method="pen" text="with garlandes" type="straight"/>
+        <underline language="EN" method="pen" text="their hedes" type="straight"/>
+        <underline language="EN" method="pen" text="a notable mery chere" type="straight"/>
+        <underline language="EN" method="pen" text="this dissimulation" type="straight"/>
+        <underline language="EN" method="pen" text="a wodde" type="straight"/>
+        <underline language="EN" method="pen" text="be set on fire" type="straight"/>
+        <underline language="EN" method="pen" text="certayne prisoners in" type="straight"/>
+        <underline language="EN" method="pen" text="mens apparayle" type="straight"/>
+        <underline language="EN" method="pen" text="halfe ouercome" type="straight"/>
+        <underline language="EN" method="pen" text="Cyrus" type="straight"/>
+        <underline language="EN" method="pen" text="Cresus" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="wolde vndermyne"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="iiii.knyghtes shulde"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="a wodde"/>
+        
+        <numeral language="EN" place="intext" text="iiii.knyghtes shulde">1.</numeral>
+        <numeral language="EN" place="intext" text="a wodde">2.</numeral>
+        <numeral language="EN" place="intext" text="certayne prisoners in">3.</numeral>
+        
+    </annotation>
+</transcription>

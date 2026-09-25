@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.306v.tif" pagination="592" reader="John Dee" signature="[ooo.viii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="militia[m] subterfugissent" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>militia[m] subterfugere</marginalia_text>
+                </position>
+            </language>
+            <translation>To avoid the militia.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="collaudarimus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>collaudarimus</marginalia_text>
+                </position>
+            </language>
+            <translation>We praised.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="ex quibus oriu[n]tur bella ciuilia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vnde oriunt[ur] bella Ciuilia.</marginalia_text>
+                </position>
+            </language>
+            <translation>From where did the civil war arise.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="in sororis viro" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>in sororis viro</marginalia_text>
+                </position>
+            </language>
+            <translation>In the sister's husband.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="tumultus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tumultus quid</marginalia_text>
+                </position>
+            </language>
+            <translation>What tumult.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="in discordia autem pax ciuilis esse vllo pacto" type="straight"/>
+        <underline language="LA" method="pen" text="collaudarimus" type="straight"/>
+        <underline language="LA" method="pen" text="spe praesentis pacis, perpetuam pace[m] amittatis" type="straight"/>
+        <underline language="LA" method="pen" text="erecti, excitati, parati, armati animis" type="straight"/>
+        <underline language="LA" method="pen" text="qui verbi atrocitate dempta, oratione fuit" type="straight"/>
+        <underline language="LA" method="pen" text="potest enim esse bellu[m] sine" type="straight"/>
+        
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">11</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+        <drawing anchor_text="potest enim esse bellu[m] sine" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

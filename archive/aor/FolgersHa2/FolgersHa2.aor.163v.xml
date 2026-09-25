@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.163v.tif" pagination="150" reader="Harvey" signature="[K3v]"/>	<!-- ABO 168left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Mie fower general bookes
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						ad unguem;
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						and fowre vniuersal Elements
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						in Esse:
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						for all kind of Witt, &amp; valour.
+						Domenichi, &amp; Gandino: Top &amp; top gallant, Oh-ho.
+					</marginalia_text>
+					<person name="Lodovico Domenichi"/>
+					<person name="Marcantonio Gandino"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						With Arcadia, and Rabelais.
+						Flaunt-aflaunt:
+					</marginalia_text>
+					<person name="Francois Rabelais"/>
+					<book title="The Countess of Pembroke's Arcadia"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						/ Ô braue.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Nihil suprà
+						pra[e]ter generosissimum mundi auctorem, Fortium: cum Tacito,
+						propter pragmaticam subtilitatem:
+						Juliani Ca[e]saribus, propter summam
+						magnitudinem: [Eutropio deleted] Eunapio, propter exquisitam perfectionem.
+					</marginalia_text>
+					<person name="Joachim Fortius Ringelberg"/>
+					<person name="Tacitus"/>
+					<person name="Julian"/>
+					<person name="Eunapius"/>
+					<book title="Caesars"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Bartasij Epinicion,
+						propter viuida[m] stili,
+						actionisq[ue] picturam.
+					</marginalia_text>
+					<person name="Guillaume Du Bartas"/>
+					<book title="A canticle of the victorie"/>
+				</position>
+			</language>
+			<translation>Mie fower general bookes by heart; and fowre vniuersal Elements in being: for all kind of Witt, &amp; valour. Domenichi, &amp; Gandino: Top &amp; top gallant, Oh-ho.
+				With Arcadia, and Rabelais. Flaunt-aflaunt: oh braue. Nothings moves beyond Joachim Fortius Ringelberg, the most generous actor of the world: with Tacitus, on account of the
+			exact pragmatism: with Julian's Caesars, on account of the highest magnitude: with Eunapius, on account of the exquisite perfection. Du Bartas' Epinicion, on account of the lively picture
+			of style and action.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Excellentissima mundi Exemplaria; pra[e]sertim hodierni.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The most excellent exemplars of the world; especially of today's world.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Pla[e]riq[ue] libelli vna vice deuorandi: vt bolus purgatorius; vnius, aut duaru[m] unciaru[m] buccella.						
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The majority of little books must be devoured in one moment, as a single dose of cleansing medication; a small mouthful of one or two ounces.</translation> 
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Viuitur ingenio: sed 
+						acri. Nihil frigidum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>One lives by the intellect, but a keen one. Nothing lifeless.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Prudentia, ars viuendi, et vincendi: sed fortis. Valet vir, sed prudens.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Prudence, the art of living and excelling: but stong. A man is strong, but prudent. </translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Natura" type="straight"/>
+		<underline language="IT" method="pen" text="non produce" type="straight"/>
+		<underline language="IT" method="pen" text="alcuna superflua" type="straight"/>
+		<underline language="IT" method="pen" text="del popolo" type="straight"/>
+		<underline language="IT" method="pen" text="facondia, &amp; la" type="straight"/>
+		<underline language="IT" method="pen" text="del Principe" type="straight"/>
+		<underline language="IT" method="pen" text="Carlo quinto Imperadore" type="straight"/>
+		<underline language="IT" method="pen" text="esercito in Francia" type="straight"/>
+		<underline language="IT" method="pen" text="vltimatamente Soisson" type="straight"/>
+		<underline language="IT" method="pen" text="real città di Parigi" type="straight"/>
+		<underline language="IT" method="pen" text="il loro Re gli fusse" type="straight"/>
+		<underline language="IT" method="pen" text="tumultuauano" type="straight"/>
+		<underline language="IT" method="pen" text="la plebe faceua" type="straight"/>
+		<underline language="IT" method="pen" text="volersi ammutinare" type="straight"/>
+		<underline language="IT" method="pen" text="Re Francesco fi" type="straight"/>
+		<underline language="IT" method="pen" text="bonissimo ordine per la sicutà" type="straight"/>
+		<underline language="IT" method="pen" text="molto spauento" type="straight"/>
+		<underline language="IT" method="pen" text="notabili parole" type="straight"/>
+		<underline language="IT" method="pen" text="ò Parigini" type="straight"/>
+		<underline language="IT" method="pen" text="voi no[n] habbiate paura" type="straight"/>
+		<underline language="IT" method="pen" text="voi no[n] habbiate danno" type="straight"/>
+		<underline language="IT" method="pen" text="valentame[n]te morire, che viuer vilme[n]te" type="straight"/>
+		<underline language="IT" method="pen" text="abbadona[n]doui" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<symbol name="SS" place="left_margin"/>
+		
+		<symbol name="Mercury" place="intext"/>
+		
+		<mark method="pen" name="plus_sign" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Fran -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ha -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Parigi -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- sgombraua -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- dicen -->
+		<mark method="pen" name="dash" place="right_margin"/> <!--  hab-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--  va-->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="del Principe"/>
+
+    </annotation>
+</transcription>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.407v.tif" pagination="364" reader="John Dee" signature="[Hhhh ij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Iohannes Breton, episcopus Herefordensis, qui admodum peritus in iuribus Anglicanis, librum de eis conscripsit, qui vocatur le Bretoun" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Briton, qui libru[m] de legibus Anglia[e] scripsit, fuit Episcopus Herefordensis.
+                    </marginalia_text>
+                    <person name="John de Breton"/>
+                    <book title="Britton"/>
+                </position>
+            </language>
+            <translation>
+                John de Breton, who wrote the book on the laws of England, was bishop of Hereford.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="qui Leolinum, principem" type="straight"/>
+        <underline language="LA" method="pen" text="ad se nolentem accedere, citari" type="straight"/>
+        <underline language="LA" method="pen" text="Obijt hoc anno Iohannes Bretoun, episcopus Herefordensis, qui admodum peritus in iuribus Anglicanis, librum de eis conscripsit, qui vocatur le Bretoun" type="straight"/>
+
+    </annotation>
+</transcription>

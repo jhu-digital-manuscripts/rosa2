@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+   <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+   
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <title>Works by Christine de Pizan (Manuscrit du Duc, Vol. IV).</title>
+         
+         </titleStmt>
+         
+         <publicationStmt>
+            
+            <distributor>MSEL</distributor>
+         
+         </publicationStmt>
+         
+         <notesStmt>
+            
+            <note rend="IDENTIFICATION">
+               
+               <p>Français 605, Bibliothèque national de France, Paris. Paris, 1407-1408. </p>
+            
+            </note>
+            
+            <note rend="BASIC INFORMATION">
+               
+               <p>Parchment, 348 x 252 mm, 22 folios.</p>
+            
+            </note>
+            
+            <note rend="MATERIAL">
+               
+               <p>
+                  <material> Parchment</material> of a dark ivory color presents some defects, irregulatiries and a cut.</p>
+            
+            </note>
+            
+            <note rend="QUIRES">
+               
+               <list>
+                  
+                  <head>Collation:</head>
+                  
+                  <item n="I">
+                     
+                     <locus from="1" to="4">1-4</locus>
+                  
+                  </item>
+                  
+                  <item n="II">
+                     
+                     <locus from="5" to="12">5-12</locus>
+                  
+                  </item>
+                  
+                  <item n="III">
+                     
+                     <locus from="13" to="22">13-22</locus>
+                  
+                  </item>
+                  
+                  </list>
+                  
+               <p> I + (II) + 22 + I + (II). Modern foliation in dark brown ink, top center, is accurate. The <hi rend="italics">vis-à-vis</hi> rule is respected.</p>
+            
+            </note>
+            
+            <note rend="LAYOUT">
+               
+               <p>The ruling was done with a hard lead pencil, which left ridges and reddish brown marks. There is some evidence of pricking (4 eliptical pricks on the first quire and in ff. <locus>5</locus> and <locus>6</locus>, with some traces towards the end of the manuscript). The text is written in two columns with 40 (sometimes 41 or 42) lines each. The text block is rather even. </p>
+
+            
+            </note>
+            
+            <note rend="SCRIPT">
+               
+               <p>The text is written in brown ink in ff. <locus>1</locus> and <locus from="8" to="22">8-22</locus>, dark brown ink in ff. <locus from ="1" to="6">1-6</locus>, and light brown ink in ff.<locus>7</locus> and <locus>22</locus>. The rubrics are written in orange red ink by one scribe (Hand P), and in bright red by another one (Hand R). There seems to be two main scribal hands for the text, ff. <locus from="1" to="6">1-6</locus> by Hand P, and <locus from="7" to="22">7-22</locus> by Hand R. Both of them use a semi-cursive minuscule script. </p>
+             
+            </note>
+            
+            <note rend="DECORATION">
+               
+               <p> </p>
+               
+               <p> In folio <locus>1</locus>, at the beginning of the <hi rend="italics">Epistre a la royne</hi>, there is a foliated initial T in blue embedded within a gold leaf background (vignette) with gold leaf foliated extenders on the left partially framing the text. On folio <locus>5</locus>, at the beggining of <hi rend="italics">Livre de prudence</hi>, there is another foliated initial P in blue embedded within a gold leaf background (vignette) with gold leaf foliated extenders and gold leaf "sperm" that frame the two columns in the middle.  </p>
+               
+               <p>There are many small gold leaft initials at the beginning of each text over alternating backgrounds in either blue or pink. </p>
+
+<p>This manuscript contains around 101 miniatures. Those in folios 1-37, 50, 53-88, 91-93, 98-100, were created by the Master of L'Épître Othéa and his workshop; those in 38-49, 51-52, 90, 94-97, were created by the Master of Saffron; and those in folios 89 and 101 by the Master of Egerton. All the miniatures have a gold leaf framed outlined in black, with gold leaf foliate extenders coming out of the frame with various types of gold leaf “sperm”, radiating crosslets and spiral decorations. The final illumination presents an exception: its gold leaf frame is doubled inside with another in pink and blue. With two exceptions, the gods and goddesses are depicted in the nude.  </p>
+                          
+            </note>
+            
+            <note rend="BINDING">
+               
+               <p>The binding is done red morocco leather with the royal coat of arms and three gold fillets. The spine contains six nerves with the title "L'EPIST OTHEA", and six big fleur-de-lys, surrounded by four smaller fleur-de-lys on an angle. Gilded with traces of carving.</p>
+            
+            </note>
+            
+            <note rend="HISTORY">
+               
+               <p>The manuscript can be dated to 1406 to 1408. It is the second part of the works by Christine de Pizan acquired by Jean de Berry in 1408. It was probably meant for Louis d'Orléans, for work on the manuscript had already began upon his death on November 23, 1407. </p>
+               
+               <p>Provenance: Jean de Berry; his daughter, Marie de Berry, duchess of Bourbon; the Bourbon family. François I seized the property of Charles de Bourbon in 1523. The price 191 is written in the back of the front cover. Other prices appear in folio 1: “ <hi rend="italics"> six cents septante deux</hi>” (Rigault): “408” (Dupuy); “7089” (Regius). There is another inscription from the 16th century on the front cover, probably from the hand of one of the librarians of the Bourbon family, that reads: “ <hi rend="italics">En ce livre a cent voir hystories et .xlvj. Feulletz escriptz et fut rendu par frere </hi> (name scratched, unreadable UV) <hi rend="italics"> le .vj. Jour de avril mild v et dix.</hi>” Another inscription from the 16th century is located on the back cover that reads: “ <hi rend="italics">Leo rugiens et ursus exuriens princes impurs super populum pauperem; dux indigens pridentia multos opprimit per calumpniam</hi>.” Also in the front cover there is a note from the 17th century regarding the content of the manuscript and, below, two drawings. There is one word written on the last miniature, “ <hi rend="italics">Sachet</hi>” (?) that by the script it appears to have been written in the late 15th or early 16th century.</p>             
+              
+            </note>
+            
+            <note rend="TEXT">
+               
+               <p>Contains only <hi rend="italics">L'Epistre Othea</hi>.</p>
+            
+            </note>
+            
+            <note rend="AUTHOR">
+              
+               <p>
+*The information given here comes from direct observation and from Ouy, Gilbert, Christine Reno and Inès Villela-Petit.<hi rend="italics"> Album Christine de Pizan </hi>. Turnhout: Brepols, 2012. </p>
+<p> Description by Mónica Ann Walker Vadillo</p>
+            
+            </note>
+         
+         </notesStmt>
+         
+         <sourceDesc>
+            
+            <bibl>
+               
+               <note type="format">manuscript</note>
+               
+               <note type="commonName">Français 605</note>
+               
+               <title>L'Epitre Othea</title>
+
+               
+               <extent>
+                  
+                  <measure quantity="22" unit="folios">22 folios</measure>
+                  
+                  <dimensions>
+                     
+                     <height unit="mm">348</height>
+                     
+                     <width unit="mm">252</width>
+                  
+                  </dimensions>
+               
+               </extent>
+               
+               <note type="illustrations">0</note>
+               
+               
+               
+               
+               
+               <note type="material">parchment</note>
+               
+               <pubPlace>Paris, France</pubPlace>
+     
+               <date notAfter="1500" notBefore="1400">15th century</date>
+            
+            </bibl>
+            
+            <msDesc>
+               
+               <msIdentifier>
+                  
+                  <settlement>Paris</settlement>
+                  
+                  <repository>Bibliothèque nationale de France</repository>
+                  
+                  <idno>Français 605</idno>
+               
+               </msIdentifier>
+            
+               <msContents>
+                  <msItem n="1">
+                     <locus from="1r" to="47v">1r-22v</locus>
+                     <title>L'Epitre Othea</title>
+                     <note type="textid">L'Epitre othea</note>
+                     <note type="folios">22</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">40</note>
+                     <note type="leavesPerGathering">8</note>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         
+         </sourceDesc>
+      
+      </fileDesc>
+   
+   </teiHeader>
+   
+   <text>
+      
+      <body>
+         
+         <div> </div>
+      
+      </body>
+   
+   </text>
+
+</TEI>

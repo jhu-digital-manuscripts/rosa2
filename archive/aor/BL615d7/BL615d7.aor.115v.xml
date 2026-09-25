@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.115v.tif" pagination="[115v]" reader="John Dee" signature="[Piij[v]]"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="Euangelista, Isola" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Eua[n]gelista. Insula</marginalia_text>
+                    <location name="Isla de la Juventud"/>
+                </position>
+            </language>
+            <translation>Evangelista Island.</translation>
+        </marginalia>
+        
+        
+        <underline language="IT" method="pen" text="difficilissima per l'innumerabile moltitudine" type="straight"/>
+        <underline language="IT" method="pen" text="Isolette, &amp; secche" type="straight"/>
+        <underline language="IT" method="pen" text="accostò all'Euangelista" type="straight"/>
+        <underline language="IT" method="pen" text="da XXX" type="straight"/>
+        <underline language="IT" method="pen" text="lontana DCC leghe" type="straight"/>
+        <underline language="IT" method="pen" text="principio della Domenica" type="straight"/>
+        <underline language="IT" method="pen" text="del Mezo dì" type="straight"/>
+        <underline language="IT" method="pen" text="lo trouò chiuso" type="straight"/>
+        <underline language="IT" method="pen" text="vedendosi quasi d'ogni intorno aßediata" type="straight"/>
+        <underline language="IT" method="pen" text="senza vettouaglie" type="straight"/>
+        <underline language="IT" method="pen" text="che li costringeua a ritornarsi a dietro per doue erano venuti" type="straight"/>
+        
+        <drawing anchor_text="chiuso" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        
+    </annotation>
+    
+</transcription>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.058r.tif" pagination="99" reader="John Dee" signature="i 2"/>
+    <annotation>
+        
+        <marginalia anchor_text="tribus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Tres
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Three.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="δυοδεκατημόριον" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        δυοδεκατημόριον
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Twelfth part. <!-- M.B. https://en.wikipedia.org/wiki/Dodecatemoria-->
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        De Parte fortuna[e].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                On the part of fortune.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Abraam" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Abraam
+                    </marginalia_text>
+                    <person name="Abraham"/>
+                </position>
+            </language>
+            <translation>
+                Abraham.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Da[e]monis localis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Of the local demon.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Nota hoc q[uam] dicat multa[m] referre num eius co[n]ditionis sit genitura: na[m] supra vbiq[ue] hac re co[n]siderata magnu[m] fuisse [descri..e[m] Iudicij videbis <!--JG: Not sure about quam, fuisse and word before Iudicij-->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Note here how he says to return many things if the geniture is of that condition: for see above, wherever you will see that there was a great [...] with this matter considered. <!--JG: Unsure-->
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ueterum sententiis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        veterum sententia[e]. 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The judgements of the old.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="collocati, facient imperatores, sed" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]ditionis suae secuta potestatem" type="straight"/>
+        <underline language="LA" method="pen" text="Abraam" type="straight"/>
+        <underline language="LA" method="pen" text="Hic locus uocatur" type="straight"/>
+        <underline language="LA" method="pen" text="actus" type="double"/>
+        <underline language="LA" method="pen" text="&amp;" type="straight"/>
+        <underline language="LA" method="pen" text="animae substa[n]tia" type="double"/>
+        <underline language="LA" method="pen" text="nam ex eo omnis actus, om[n]ísq[ue] substantiae augmenta quaerente, inuenimus, ostenditur quoq[ue], qualis sit circa uiru[m], mulieris affectus. Sed" type="straight"/>
+        <underline language="LA" method="pen" text="quibus" type="straight"/>
+        <underline language="LA" method="pen" text="uel in quibus" type="straight"/>
+        <underline language="LA" method="pen" text="eius conditionis fuerit" type="straight"/>
+        <underline language="LA" method="pen" text="naturae suae qualitate decernit" type="straight"/>
+        <underline language="LA" method="pen" text="qui latitudinis ☾ d[omi]n[u]s fuisset inuentus" type="straight"/>
+        
+        <symbol name="Locus_Fortunae" place="right_margin"/> <!-- M.B. This is the 'locus fortunae' symbol. See https://books.google.co.uk/books?id=e1Hf5KWksWMC&pg=PR6&dq=locus+fortunae+symbol&hl=en&sa=X&redir_esc=y#v=onepage&q=locus%20fortunae%20symbol&f=false -->
+        
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="intext"/> <!-- numerum Si -->
+        
+        <numeral language="LA" place="intext" text="quibus">.1.</numeral>
+        <numeral language="LA" place="intext" text="in quibus">2</numeral>
+        <numeral language="LA" place="intext" text="domiciliis">3</numeral>
+        <numeral language="LA" place="intext" text="conditionis">4</numeral>
+        <numeral language="LA" place="intext" text="pulsatus">5</numeral>
+        <numeral language="LA" place="intext" text="beneuolarum">6</numeral>
+        <numeral place="right_margin">1.</numeral>
+        <numeral place="right_margin">2.</numeral>
+        <numeral place="right_margin">3.</numeral>
+        <numeral place="right_margin">4.</numeral>
+        
+        <errata amendedtext="[deleted]" copytext="diligentiam" language="LA"/>
+        
+    </annotation>
+</transcription>

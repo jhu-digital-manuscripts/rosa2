@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.116r.tif" pagination="231" reader="John Dee" signature="p 4"/>
+    <annotation>
+        
+        <marginalia anchor_text="deficit omne, quod nascitur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Deficit o[mn]e quod nascitur</marginalia_text>
+                </position>
+            </language>
+            <translation>Everything that is born decays.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Oppio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro oppio</marginalia_text>
+                    <book title="Pro Oppio"/>
+                </position>
+            </language>
+            <translation>Pro Oppio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Temporis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Temporis.</marginalia_text>
+                </position>
+            </language>
+            <translation>Of time.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in Verrem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In Verrem</marginalia_text>
+                    <book title="In Verrem"/>
+                </position>
+            </language>
+            <translation>In Verrem.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἐκ τῶν πρòς ἄλληλα" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ἐκ τῶν πρòς ἄλληλα</marginalia_text>
+                </position>
+            </language>
+            <translation>From those which confirms one another.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Domitij Afri" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Domitius Afer.</marginalia_text>
+                    <person name="Domitius Afer"/>
+                </position>
+            </language>
+            <translation>Domitius Afer.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="a causis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A causis</marginalia_text>
+                </position>
+            </language>
+            <translation>From causes.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Causaru[m] partitio</marginalia_text>
+                </position>
+            </language>
+            <translation>Parition of causes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="exercitatio plerunque robustum corpus facit, sed non quisquis est robustus, exercitatus: nec quisquis exercitatus, robustus est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Contradictio</marginalia_text>
+                </position>
+            </language>
+            <translation>Contradiction.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quae utique faciunt talia, talia sunt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Qua[e] faciu[n]t talia talia sunt.</marginalia_text>
+                </position>
+            </language>
+            <translation>What is made this way, is that way.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Est inuicem consequens, quod ex diuersis idem ostendit" type="straight"/>
+        <underline language="LA" method="pen" text="Nam corpus in lumine utique umbram facit" type="straight"/>
+        <underline language="LA" method="pen" text="Quae utique faciunt talia, talia sunt: Si" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="pin" place="right_margin"/>
+        <mark language="LA" method="pen" name="pin" place="tail" text="Qua[e] faciu[n]t talia talia sunt."/>
+        
+    </annotation>
+</transcription>

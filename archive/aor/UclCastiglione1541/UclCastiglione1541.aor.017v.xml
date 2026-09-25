@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="UclCastiglione1541.017v.tif" pagination="[Vv]" reader="Harvey" signature="[Biiv]"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        un
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                a
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        I. Primo giuoco proposto dal S. Gaspar, di qual virtu uorrebbe chi ama,
+                        che l'amata fosse adorna, e quale vitio in lei si trouasse.
+                    </marginalia_text>
+                    <person name="Gaspare Pallavicino"/>
+                </position>
+            </language>
+            <translation>
+                I. The first game proposed by Signor Gaspare: what virtue the lover would prefer his
+                beloved to be adorned with; and what vice he would have in her.
+            </translation>
+        </marginalia>
+        
+        <mark method="chalk" name="horizontal_bar" place="left_margin"/>
+
+    </annotation>  
+</transcription>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.021r.tif" reader="John Dee" signature="F"/>
+    <annotation>
+        
+        <marginalia anchor_text="Mose" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Moses</marginalia_text>
+                    <person name="Moses"/>
+                </position>
+            </language>
+            <translation>Moses.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Britannia" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Britannia</marginalia_text>     <!-- DO: Not sure if this is referring to Britain or Brittany? --> <!-- FSF: I think it is Britain; see https://www.jstor.org/stable/pdf/30079033.pdf -->
+                    <location name="Britain"/>
+                </position>
+            </language>
+            <translation>Britain.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Plato, ad hanc discendam nauigauere" type="straight"/>
+        <underline language="LA" method="pen" text="Dardani in sepulchrum" type="straight"/>
+        <underline language="LA" method="pen" text="ut ij qui caetera in viro illo probant, haec eius opera esse inficientur, sed" type="straight"/>
+        <underline language="LA" method="pen" text="Hipocrate" type="straight"/>
+        <underline language="LA" method="pen" text="hanc Democrito" type="straight"/>
+        <underline language="LA" method="pen" text="CCC" type="straight"/>
+        <underline language="LA" method="pen" text="alia Magices factio, a Mose, &amp; Iamne" type="straight"/>
+        <underline language="LA" method="pen" text="Secundus Osthanes" type="straight"/>
+        <underline language="LA" method="pen" text="peruecta? Britannua hodie'q[ue] eam attonite celebrat tantis ceremonijs, vt dedisse Persis uideri possit. Adeo" type="straight"/>
+        <underline language="LA" method="pen" text="discordi &amp; sibi ignoto" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.090r.tif" pagination="83" reader="John Dee" signature="X iij"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin"> 
+                    <marginalia_text>Alia est hominis vltima a[e]tas, alia senilis.</marginalia_text> 
+                </position>
+            </language>
+            <translation>One is the greatest age of man, the other of the elderly.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="per reuolutione[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>De revolutione et eius virtute.</marginalia_text> 
+                </position>
+            </language>
+            <translation>On a revolution and its character.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Respondemus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Responsum.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Reply.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="cum per aeternos motus sit connexio, merito potuit quis dicere, in genitura quaecunq[ue] uentura sint, perfecte contineri" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Absolutu[m] respo[n]sum secunda[e] qu[a]estio[n]i.</marginalia_text> 
+                </position>
+            </language>
+            <translation>The perfect response to the second question.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Respondemus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Natiuitatis non debent absoluta dari Judicia, revolutionibus aut directionibus non consideratis.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Perfect judgements of a nativity ought not to be given without the consideration of the revolutions and directions.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="praeuenitur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>moritur</marginalia_text>
+                </position>
+            </language>
+            <translation>It dies.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vero</marginalia_text>
+                </position>
+            </language>
+            <translation>Certainly.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quod etiam in euentibus naturalibus contingit" type="straight"/>
+        <underline language="LA" method="pen" text="Significata quide[m] frustrari no[n] est inconueniens, inconuenit autem causas, quae ordine naturali constitutae sunt." type="straight"/>
+        <underline language="LA" method="pen" text="significatu[m] in genitura sit constitutu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Respondemus, in genere quidem esse necessarium, in specie aut[em] nequaq[uam]" type="straight"/>
+        <underline language="LA" method="pen" text="cu[m] cuilibet" type="straight"/>
+        <underline language="LA" method="pen" text="no[n] inconuenit" type="straight"/>
+        <underline language="LA" method="pen" text="no[n] in" type="straight"/>
+        <underline language="LA" method="pen" text="cum per aeternos motus sit connexio, merito potuit quis dicere, in genitura quaecunq[ue] uentura sint, perfecte contineri" type="straight"/> 
+        <underline language="LA" method="pen" text="reuolutione" type="straight"/>
+        <underline language="LA" method="pen" text="uel directione" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/> 
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="section_sign" place="intext"/> <!--JG: In front of 'Secundum'--> 
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <numeral language="LA" place="intext" text="reuolutione">1</numeral>
+        <numeral language="LA" place="intext" text="directione">2</numeral>
+        
+        <errata amendedtext="in" copytext="n" language="LA"/>
+        <errata amendedtext="cuius et" copytext="cuiusue" language="LA"/>  
+        <errata amendedtext="[deleted]" copytext="quidem" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+                
+        <!--JG: Seems that there's some activity in the gutter, need to have a look at orginal though-->
+        
+    </annotation>
+</transcription>

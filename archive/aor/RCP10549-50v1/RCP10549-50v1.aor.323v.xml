@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.323v.tif" pagination="626" reader="John Dee" signature="[rrr.i.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="ouante[m] &amp; propè triumphante[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ovans Triumphans.</marginalia_text>
+                </position>
+            </language>
+            <translation>Rejoicing in triumph.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="triu[m]phus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Triumphus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Triumph.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dictum Crassi.</marginalia_text>
+                    <person name="Marcus Licinius Crassus"/>
+                </position>
+            </language>
+            <translation>Crassus' dictum.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="grauius siquis attulerit nomen, libenter assentiar: hoc vulgari" type="straight"/>
+        <underline language="LA" method="pen" text="male enim mecu[m] ageretur, si paru[m] vobis essem, sine defensione" type="straight"/>
+        <underline language="LA" method="pen" text="vti excellentiu[m] ciuiu[m] virtute[m] imitatione digna[m], non inuidia putare[n]t" type="straight"/>
+        
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">10.</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">5</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

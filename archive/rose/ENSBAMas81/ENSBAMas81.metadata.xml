@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>14</illustrations>
+    <totalPages>157</totalPages>
+    <dimensions units="">
+        <width>-1</width>
+        <height>-1</height>
+    </dimensions>
+    <dates>
+        <startDate>1400</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="157v" start="1r">157</pages>
+            <illustrations>14</illustrations>
+            <linesPerColumn>34</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>ENSBA Mas 81</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>parchment</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Ecole nationale supérieure des Beaux-Arts</repository>
+            <shelfmark>Mas 81</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>ENSBA Mas 81</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Ecole nationale supérieure des Beaux-Arts</repository>
+            <shelfmark>Mas 81</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

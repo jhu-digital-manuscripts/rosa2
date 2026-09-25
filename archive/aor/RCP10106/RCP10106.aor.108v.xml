@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.108v.tif" pagination="216" reader="John Dee" signature="[o 4[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="horrida &amp; confragosa" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Argume[n]ta | horrida confragosa</marginalia_text>
+                </position>
+            </language>
+            <translation>Argument: rough and broken.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Lotophagos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Lotophagi</marginalia_text>
+                </position>
+            </language>
+            <translation>Lotus eater.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quaestio est, quae non sit aut in re, aut in persona" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Qua[e]stio in re p[er]sona</marginalia_text>
+                </position>
+            </language>
+            <translation>The question based on things or on persons.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Probationum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Probationu[m] Diuisio.</marginalia_text>
+                </position>
+            </language>
+            <translation>The division of proofs.</translation>
+        </marginalia>
+       
+        <underline language="LA" method="pen" text="Nec ulla res probari nisi ex alia potest" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>    
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.142v.tif" pagination="[142[v]]" reader="John Dee"/>    
+    <annotation>
+        
+        <marginalia anchor_text="Giouanni" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Giovan Matteo</marginalia_text> 
+                    <person name="Giovanni Matteo"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Guaicauanù" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Guaiacauanu</marginalia_text> 
+                    <person name="Guacanagarix"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Giouanni di Agiada" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Giouanni di Agiada</marginalia_text>
+                    <person name="Giovanni de Agiada"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Fortezza è detta la Concettione" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>The fort of concepcion</marginalia_text> 
+                    <location name="The Fort of Conception"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Garionex" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Garionex</marginalia_text> 
+                    <person name="Garionex"/> <!-- MB. Cacique name therefore not modernised/translated. -->
+                </position>
+            </language>
+        </marginalia> 
+        
+        <underline language="IT" method="pen" text="era il Guaicauanù" type="straight"/>
+        <underline language="IT" method="pen" text="chiamò Giouanni" type="straight"/>
+        <underline language="IT" method="pen" text="alla Isabella" type="straight"/>
+        <underline language="IT" method="pen" text="alla Maddalena" type="straight"/>
+        <underline language="IT" method="pen" text="Giouanni di Agiada" type="straight"/>
+        <underline language="IT" method="pen" text="di vna Fortezza" type="straight"/>
+        <underline language="IT" method="pen" text="che ci desse da mangiar di quello, che era nella Fortezza" type="straight"/>
+        <underline language="IT" method="pen" text="la Concettione" type="straight"/>
+        <underline language="IT" method="pen" text="Garionex" type="straight"/>
+        <underline language="IT" method="pen" text="quasi due anni" type="double"/>
+        <underline language="IT" method="pen" text="Nel principio" type="double"/>
+        
+    </annotation>
+</transcription>

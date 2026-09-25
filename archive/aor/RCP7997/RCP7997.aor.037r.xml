@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.037r.tif" reader="John Dee" signature="Gi"/> 
+    <annotation>
+        
+        <marginalia anchor_text="r[ati]one sup[er]antis [et] sup[er]ati" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        r[ati]o[n]e sup[er]a[n]tis et sup[er]ati.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                For the reasons of the overcoming and the overcome.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="via resolutio[n]is [et] c[om]posit[i]o[n]is" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Co[m]positio Resolutio.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Composition. Resolution.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="q[uod] differu[n]t sol. lux. dies. lume[n]. sple[n]dor. claritas. [et] color" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Sol. lux. dies sple[n]dor claritas color.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Sun. Light. Day. Splendour. Clarity. Colour.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Quot modis quid p[otes]t notius iudicari  
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                In how many modes whatever quite well-known a thing can be assessed? 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="r[ati]one sup[er]antis [et] sup[er]ati referu[n]t[ur]" type="straight"/>
+        <underline language="LA" method="pen" text="noci[us] est via resolutio[n]is" type="straight"/>
+        <underline language="LA" method="pen" text="s[ed] via co[m]positionis ip[su]m" type="straight"/>
+        <underline language="LA" method="pen" text="hijs paru[m] est mathematici disserere" type="straight"/>
+        <underline language="LA" method="pen" text="q[uod] differu[n]t sol. lux" type="straight"/>
+        <underline language="LA" method="pen" text="dies" type="straight"/>
+        <underline language="LA" method="pen" text="lume[n]" type="straight"/>
+        <underline language="LA" method="pen" text="splendor" type="straight"/>
+        <underline language="LA" method="pen" text="claritas" type="straight"/>
+        <underline language="LA" method="pen" text="[et] color Sol e[st]" type="straight"/>
+        <underline language="LA" method="pen" text="luce[m]. lux est" type="straight"/>
+        <underline language="LA" method="pen" text="dies est" type="straight"/>
+        <underline language="LA" method="pen" text="S[ed] sple[n]dor" type="straight"/>
+        <underline language="LA" method="pen" text="claritas" type="straight"/>
+        <underline language="LA" method="pen" text="color est" type="straight"/>
+        <underline language="LA" method="pen" text="[et] sensato in n[ume]ra s[e]c[un]da p[ar]te laci[us] tractabimus" type="straight"/>
+        <underline language="LA" method="pen" text="de hijs par[um] e[st] mathe" type="straight"/>
+        
+        <numeral place="left_margin">2</numeral>
+        
+        <errata amendedtext="q[uam]" copytext="tq[uam]" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="sid erat ione" language="LA"/>
+
+    </annotation>
+</transcription>

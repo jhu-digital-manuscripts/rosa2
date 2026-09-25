@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.008r.tif" pagination="8" reader="John Dee"/> 
+    <annotation>
+        <marginalia anchor_text="MDI" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>1501</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="quaranta anni" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>40 annos</marginalia_text>
+                </position>
+            </language>
+            <translation>40 years.</translation>
+            
+        </marginalia>
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Navigasse a[e]quora [...] tunc fuit 54 Annor[um]</marginalia_text> 
+                </position>
+            </language>
+            <translation>To have sailed [across] the seas then took 54 years.</translation>
+        </marginalia> 
+        
+        <underline language="IT" method="pen" text="MDI" type="straight"/>
+        <underline language="IT" method="pen" text="Rè Catolici" type="straight"/>
+        <underline language="IT" method="pen" text="quaranta anni, che" type="straight"/>
+            
+    </annotation>
+</transcription>

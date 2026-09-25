@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.093v.tif" pagination="[86v]" reader="John Dee" signature="[Y ij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Igitur ☌ ♄ et ♂ in ♒ no[n] ta[n]tu[m] nocet.</marginalia_text>
+                    <symbol_in_text name="Conjunction"/>
+                    <symbol_in_text name="Saturn"/>
+                    <symbol_in_text name="Mars"/>
+                    <symbol_in_text name="Aquarius"/>
+                </position>
+            </language>
+            <translation>Therefore the conjunction of Saturn and Mars in Aquarius does not only harm.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vide Albumasaris Introductionis lib 7. capite 4. de ☌ ♄ ♂ ☉ cu[m] ♄
+                    vel ♂ [etc].</marginalia_text>
+                    <symbol_in_text name="Conjunction"/>
+                    <symbol_in_text name="Saturn"/>
+                    <symbol_in_text name="Mars"/>
+                    <symbol_in_text name="Sun"/>
+                    <person name="Albumasar"/>
+                    <book title="Introductorium in astronomiam"/>
+                </position>
+            </language>
+            <translation>See book 7, chapter 4 of Albumasar's 'Introductorium' regarding the conjuncition of Saturn, Mars, and the Sun, with Saturn or Mars, et cetera.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quantu[m] ☌ a △ viribus differat.</marginalia_text>
+                    <symbol_in_text name="Conjunction"/>
+                    <symbol_in_text name="Trine"/>
+                </position>
+            </language>
+            <translation>How much a conjuction differs from a trine for men.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Omnes ergo bonorum aspectus boni, malorum mali, Sed diligenter animaduertere oportet, qui planetae boni sint, qui mali, est tamen trinus &amp; sextilis melior, qu&amp;m quadratus uel oppositus" hand="English_secretary" id="RCP7134:192:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>O[mn]es aspectus bonoru[m], no[n] simpliciter; sed eo modo quo mox ante dixit: attame[n] ordine[m] viriu[m] co[n]sidera.</marginalia_text>
+                </position>
+            </language>
+            <translation>All aspects of good [things] [are] not [to be paid attention to] in a straightforward manner, but in that manner which soon he said before:
+                nevertheless examine the order of large bodies.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fortuna" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Na[m] fortuna nocebit et adiuvabit te infortuna, in hoc casu</marginalia_text>
+                </position>
+            </language>
+            <translation>For fortune will kill and infortune will help you, in this case.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="certum est enim quòd nocet" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Si nocet, proportione viriu[m] rei nocentis considerata qua[n]tu[m] nocet, scies</marginalia_text> 
+                </position>
+            </language>
+            <translation>You will know how much it harms, if it harms, with the proportion of large bodies considered for the matter of harm.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ptolemaeus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>hic author vtitur ☾a ad tot vel plura significata:</marginalia_text>
+                </position>
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>na[m] in fo 26 pro vita / vxorib[us] sive co[n]cubinis / pro itinere / sororib[us] anim[a]e qualitate / matre ita et fo. 59. pro corpore [..] <!--JG: Not sure about the 'thingy' after corpore, check original. Checked, is scribble of some sort--> 
+                    et in eo loco vide q[uam] multa significata singulis planetis tribuit, si hoc facere est absurdum [etc].</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:069" text="26"/>
+                        <target ref="RCP7134:137" text="59"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>This author uses the moon for all or many signifiers: for in folio 26 for life; for women or concubines; for travel; for sisters; for the quality of
+                the soul; for the mother; thus even folio 59, for the body [..] and in that place see how he attributes many signifiers of each planet, if to do this is absurd.
+          </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="excepto quòd sit ex recipientibus" type="straight"/>
+        <underline language="LA" method="pen" text="tunc enim est in forma coniunctionis receptae" type="straight"/>
+        <underline language="LA" method="pen" text="Omnes ergo bonorum aspectus boni, malorum mali, Sed diligenter animaduertere oportet, qui planetae boni sint, qui mali, est tamen trinus &amp; sextilis melior, qu&amp;m quadratus uel oppositus" type="straight"/>
+        <underline language="LA" method="pen" text="ne te decipiat" type="straight"/>
+        <underline language="LA" method="pen" text="quadratus &amp; oppositio" type="straight"/>
+        <underline language="LA" method="pen" text="augent malitiam supra corpus, quando sunt malae radiationes" type="straight"/>
+        <underline language="LA" method="pen" text="minuut bonum ratione contrarietatis" type="straight"/>
+        <underline language="LA" method="pen" text="certum est enim quòd nocet" type="straight"/>
+        <underline language="LA" method="pen" text="paucae stellae fixae" type="straight"/>
+        <underline language="LA" method="pen" text="dedit uni significatori" type="straight"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="left_margin" text="Omnes ergo bonorum aspectus boni, malorum mali, Sed diligenter animaduertere oportet, qui planetae boni sint, qui mali, est tamen trinus &amp; sextilis melior, qu&amp;m quadratus uel oppositus"/>
+        <mark language="LA" method="pen" name="bracket" place="left_margin" text="quadratus &amp; oppositio augent malitiam supra corpus, quando sunt malae radiationes: &amp; minuut bonum ratio contrarietatis "/>
+        <mark method="pen" name="tripunctus" place="left_margin"/> 
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="section_sign" place="intext"/>
+        <mark method="pen" name="comma" place="intext"/> <!--iuuantium uiuat-->
+        <mark method="pen" name="tripunctus" place="intext"/>
+        <mark method="pen" name="comma" place="intext"/> <!--accidens praeualet-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Ptolemaeus"/>
+        
+        <errata amendedtext="Secundo" copytext="secundi" language="LA"/>
+        <errata amendedtext="quòd" copytext="quod" language="LA"/>
+        <errata amendedtext=";" copytext="." language="LA"/>
+        <errata amendedtext="significator" copytext="dispositor" language="LA"/>
+        <errata amendedtext="novam" copytext="nonam" language="LA"/>
+        <errata amendedtext="confusionem" copytext="fusionem" language="LA"/>
+        
+    </annotation>
+</transcription>

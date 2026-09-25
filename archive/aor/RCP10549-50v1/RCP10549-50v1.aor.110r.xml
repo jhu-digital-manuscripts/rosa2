@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.110r.tif" pagination="199" reader="John Dee" signature="nn.iiii."/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ἐδεικώθησαν 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To be shown. <!--JG: passive form of δείκνυμι, ‘to show’, which does not make sense in the context; Dee is transcribing the wrong reading of this edition, corrected by other editors to ἐδικαιώθησαν, ‘sentence was passed on them’-->
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Roma
+                    </marginalia_text>
+                    <location name="Rome"/>
+                </position>
+            </language>
+            <translation>
+                Rome.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="implicatum seueritate iudicu[m], circunretitum frequentia" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Implicatu[m] seueritate iudicu[m] circu[n]retitus fr[a]eque[n]tia 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Implicated by the strictness of the judges and entangled by the frequency [of those gathering] [Loeb 293, 633].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex his laqueis se exueris" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ex his laqueis se exuere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To strip oneself from these nets.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ciuilis enim dissensionis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ciuilis disse[n]tio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Civil strife.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mortem acerba[m], crudelémque proponeret" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        proponere morte[m] acerba[m] crudele
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To propose a harsh and cruel death.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Puteoli" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Puteoli
+                    </marginalia_text>
+                    <location name="Pozzuoli"/>
+                </position>
+            </language>
+            <translation>
+                Pozzuoli.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="L. Herennius" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        L herenius
+                    </marginalia_text>
+                    <person name="Lucius Herennius"/>
+                </position>
+            </language>
+            <translation>
+                Lucius Herennius.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="circunretitum" type="straight"/>
+        <underline language="LA" method="pen" text="Cui si etiam id quod defendit, velim concedere: tamen illa ipsa defensio non minus esse ei perniciosa, quàm mea vera accusatio debeat. quid" type="straight"/>
+        <underline language="LA" method="pen" text="supplici no[n] illa dextera inuicta &amp; fidem porrexit, &amp; spem salutis ostendit" type="straight"/>
+        <underline language="LA" method="pen" text="Malo, malo mehercules id, quod tu defe[n]dis, his iudicibus, Populóque Ro. quàm" type="straight"/>
+        <underline language="LA" method="pen" text="id, quod ego insimulo, probari" type="straight"/>
+        <underline language="LA" method="pen" text="Hîc vide quàm me sis vsurus" type="straight"/>
+        <underline language="LA" method="pen" text="Graniu[m] testem produxero" type="straight"/>
+        <underline language="LA" method="pen" text="refellito si poteris" type="straight"/>
+        <underline language="LA" method="pen" text="meum testem deseram, tibi fauebo, te inquam adiuuabo: ostendito" type="straight"/>
+        <underline language="LA" method="pen" text="nihil est quod te malim probare: nullum enim facinus, quod" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">16</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">13</numeral>
+        
+    </annotation>
+</transcription>

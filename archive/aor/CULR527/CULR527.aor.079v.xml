@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.079v.tif" pagination="[79[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Et inuentio &amp; subtilitas huius magna est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Subtilis Inventio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A delicate invention.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="maior erit qui per quaecunq[ue] duo loca globi" type="straight"/>
+        <underline language="LA" method="pen" text="Et haec est utilitas eundi per circulum maiorem: quae est, minus iter ambulare. Sed" type="straight"/>
+        <underline language="LA" method="pen" text="Et inuentio &amp; subtilitas huius magna est: &amp; in" type="straight"/>
+        <underline language="LA" method="pen" text="Et procedunt semper acum cogentes, &amp; illam inclinant ut eundem" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+
+    </annotation>
+</transcription>

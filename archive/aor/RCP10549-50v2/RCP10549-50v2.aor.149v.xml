@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.149v.tif" pagination="38" reader="John Dee" signature="[c.iii.[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="co[n]sumptione operae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>consumptio oper[a]e</marginalia_text>
+                </position>
+            </language>
+            <translation>The exertion of labour.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Annominatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Annominatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Paronomasia.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Alexander" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Alexander</marginalia_text>
+                    <person name="Alexander the Great"/>
+                </position>
+            </language>
+            <translation>Alexander the Great.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="auditor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Auditus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Heard.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Subiectio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Subiectio</marginalia_text>
+                </position>
+            </language>
+            <translation>Hypophora.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Varie hîc vnum nomen in co[m]mutatione casuu[m] volutatu[m] est" type="straight"/>
+        <underline language="LA" method="pen" text="Quare quae sunt ampla &amp; pulchra, diu placere possunt: quae lepida &amp; co[n]cinna, cito satietate afficiunt auriu[m] sensum fastidiosissimum. Quo" type="straight"/>
+        <underline language="LA" method="pen" text="co[m]mode luminibus distinctis illustrabimus" type="straight"/>
+        <underline language="LA" method="pen" text="grandi sponsione" type="straight"/>
+        
+        <mark language="LA" method="pen" name="w_mark" place="head" text="consumptio oper[a]e"/>
+        
+        <mark method="pen" name="w_mark" place="left_margin"/>
+        
+        <numeral place="left_margin">.1.</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">5</numeral>
+        <numeral place="left_margin">6</numeral>
+        <numeral place="left_margin">7</numeral>
+        <numeral place="left_margin">8</numeral>
+        <numeral place="left_margin">1</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">3</numeral>
+        
+        <drawing anchor_text="Quare quae sunt ampla &amp; pulchra, diu placere possunt: quae lepida &amp; co[n]cinna, cito satietate afficiunt auriu[m] sensum fastidiosissimum. Quo" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

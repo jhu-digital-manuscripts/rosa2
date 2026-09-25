@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.090r.tif" pagination="90" reader="John Dee"/> 
+    <annotation>
+         
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        sinus rectos
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A right-angled curve.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="acus hydrographiam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Acus hydropgraphiu[m] forma... <!-- FSF: to be checked -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                <!-- FSF: to be added -->
+            </translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="lineas esse rectas fingere" type="straight"/>
+        <underline language="LA" method="pen" text="paruam quantitatem" type="double"/>
+        <underline language="LA" method="pen" text="Quia autem in hac arte nihil noui potes" type="straight"/>
+        <underline language="LA" method="pen" text="Impossibile nempe est, per" type="straight"/>
+        <underline language="LA" method="pen" text="lineas perpendiculares" type="straight"/>
+        <underline language="LA" method="pen" text="hydrographias uerificari" type="straight"/>
+        <underline language="LA" method="pen" text="sed solum per operationem, quam in nauigatione acus operatur" type="straight"/>
+        <underline language="LA" method="pen" text="acus" type="double"/>
+        <underline language="LA" method="pen" text="hydrographiam fecit &amp; composuit" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- nauigatione acus -->
+        
+    </annotation>
+</transcription>

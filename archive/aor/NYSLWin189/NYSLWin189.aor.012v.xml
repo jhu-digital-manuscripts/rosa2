@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.012v.tif" reader="John Dee" signature="[D[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="salnitriert" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sal nitrum</marginalia_text>
+                </position>
+            </language>
+            <translation>Salt of nitre.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="gestalt das die salia so von den leutten oder viech gond in die erden" type="straight"/>
+        <underline language="DE" method="pen" text="salnitriert" type="straight"/>
+        <underline language="DE" method="pen" text="auß schlahen" type="straight"/>
+        
+    </annotation>
+</transcription>

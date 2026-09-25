@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+  <license>
+    <url>http://creativecommons.org/licenses/by/4.0/</url>
+    <logo>https://i.creativecommons.org/l/by/4.0/88x31.png</logo>
+  </license>
+  <totalPages>366</totalPages>
+  <dates>
+    <startDate>1575</startDate>
+    <endDate>1575</endDate>
+  </dates>
+  <texts>
+    <text id="1">
+      <language>la</language>
+      <title>Chronicum</title>
+      <textId>chronicum</textId>
+      <pages end="001r" start="183v">366</pages>
+    </text>
+  </texts>
+  <bibliographies>
+    <bibliography lang="en">
+      <title>Chronicum</title>
+      <commonName>Mattheus Beroaldus, Chronicum (Geneva, 1575)</commonName>
+      <dateLabel>1575</dateLabel>
+      <origin>Geneva</origin>
+      <currentLocation>London, England</currentLocation>
+      <repository>Royal College of Physicians Library</repository>
+      <shelfmark>D126.6, 17e (D1/17-e-8)</shelfmark>
+      <author>
+        <name>Beroaldus, Mattheus</name>
+        <id></id>
+      </author>
+      <reader>
+        <name>John Dee</name>
+        <id>http://www.isni.org/isni/0000000122785193</id>
+      </reader>
+      <website>https://archaeologyofreading.org/bibliography/Dee-corpus/Beroaldus</website>
+      <note>Publication statement: [Geneva] : apud Anton Chuppinum, M. D. LXXV.</note>
+      <note>Pagination: [12], 267, [85] pages</note>
+      <note>Provenance: Copy 10640: Roberts and Watson note that 'it bears only Saunder's name but there are underlinings and notes by Dee, and by Saunder on pp. 31-2 and 43'. Copy 10640: former shelf-mark on spine and upper flyleaf: 'V-19'.</note>
+      <note>Printer's device on title page.Errata on last leaf.Copy 10640: Dorchester No. D126/6</note>
+    </bibliography>
+  </bibliographies>
+</book>

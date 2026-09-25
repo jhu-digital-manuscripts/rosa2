@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.240v.tif" pagination="[233v]" reader="John Dee" signature="[NN[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Luna" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Domina non[a]e</marginalia_text>
+                </position>
+            </language>
+            <translation>Lady of the ninth [house].</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Luna" type="straight"/>
+        
+        <errata amendedtext="[Mercury]" copytext="Iouis" language="LA"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.285v.tif" pagination="84" reader="John Dee" signature="[L.j.[v]"/>
+    
+    
+    <annotation>
+        
+        <marginalia anchor_text="Radulphum de moynhermer" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Radulphus de monhermer. A⁰ 1297.</marginalia_text>
+                    <person name="Ralph de Monthermer"/>
+                </position>
+            </language>
+            <translation>Ralph de Monthermer. In the year 1297.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="Radulphum de moynhermer militem" type="straight"/>
+        <underline language="LA" method="pen" text="quem filia sua Iohanna Comitissa Glouerniae clam maritum acceperat" type="straight"/>
+        <underline language="LA" method="pen" text="grauem patris" type="straight"/>
+        <underline language="LA" method="pen" text="de castro" type="double"/>
+        <underline language="LA" method="pen" text="Bristoliae fecit" type="straight"/>
+        <underline language="LA" method="pen" text="omnes terras spectantes" type="straight"/>
+        <underline language="LA" method="pen" text="comitatum Glouerniae" type="straight"/>
+        <underline language="LA" method="pen" text="imponens eisdem seruicium quinquaginta" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        
+    </annotation>
+    
+</transcription>

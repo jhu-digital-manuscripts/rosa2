@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.147r.tif" reader="Harvey" signature="Mm.i.[r]"/>
+    <annotation>
+
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        s[upr]a.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                [See] above.
+            </translation>
+        </marginalia>
+        
+        <underline language="EN" method="chalk" text="whan he can talke with her, to swearing, to blaspheminge" type="straight"/>
+        <underline language="EN" method="chalk" text="that haue greater thirst of blood the the verie Tygres." type="straight"/>
+        <underline language="EN" method="chalk" text="noted with a thousande eyes" type="straight"/>
+        <underline language="EN" method="pen" text="be any pleasures" type="straight"/>
+        <underline language="EN" method="pen" text="are ghessed and iudged of all" type="straight"/>
+        <underline language="EN" method="pen" text="determineth aduisedlye" type="straight"/>
+        <underline language="EN" method="pen" text="beegine they to make" type="straight"/>
+        <underline language="EN" method="pen" text="loue him hartely" type="straight"/>
+        <underline language="EN" method="pen" text="and do him al pleasures" type="straight"/>
+        <underline language="EN" method="pen" text="that feruent desire" type="straight"/>
+        <underline language="EN" method="pen" text="frute of loue shoulde withall" type="straight"/>
+        <underline language="EN" method="chalk" text="he ken them the lesse thanke" type="straight"/>
+        <underline language="EN" method="pen" text="thignes contrarily" type="straight"/>
+        <underline language="EN" method="pen" text="already knowe[n] abrode" type="straight"/>
+        <underline language="EN" method="chalk" text="so mortified with those bitter passions" type="straight"/>
+        <underline language="EN" method="pen" text="speakinge yll of women" type="straight"/>
+        <underline language="EN" method="pen" text="wel hit them home, [that] it" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="EN" method="pen" name="straight_quotation_mark" place="right_margin" text="determineth aduisedlye"/>
+        <mark language="EN" method="pen" name="equal_sign" place="right_margin" text="beegine they to make"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="frute of loue shoulde withall"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/> <!-- red chalk, starts at 'goith' and extends down through seven further lines of text -->
+        <mark method="pen" name="dot" place="intext"/> <!-- them, & --> 
+        <mark method="pen" name="dot" place="intext"/> <!-- backe, then -->
+        <mark method="pen" name="dot" place="intext"/> <!-- it, and -->
+        <mark method="pen" name="dot" place="intext"/> <!-- pleasure, because -->
+        <mark method="pen" name="dot" place="intext"/> <!-- women, but -->
+        
+    </annotation>
+</transcription>

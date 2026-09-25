@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.108r.tif" pagination="ciiii[r]" reader="Harvey"/>
+    <annotation>
+    	<!-- Marginalia -->
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					Martis alea: Mercurij basis. 
+    				</marginalia_text>
+    				<person name="Mars"/>
+    				<person name="Mercury"/>
+    				<emphasis method="pen" text="Mercurij basis" type="straight"/>
+    			</position>
+    		</language>
+    		<translation>
+    			The risk of Mars: the foundation of Mercury. 
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					Stratagematicè. Dulce bellu[m] inexpertis:
+    				</marginalia_text>
+    			</position>
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					expertus metuit.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Strategical. War is sweet to the inexperienced: the experienced fears it.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					stratagematicè.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Strategical.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					s[upr]a, 61.v. 	
+    				</marginalia_text>
+    				<internal_ref>
+    					<target ref="PrincetonU101:00000136" text="61.v."/>
+    				</internal_ref>
+    			</position>
+    		</language>
+    		<translation>
+    			Above, 61v.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					Exercitatio, et Ordo.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Training and order.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					s[upr]a, [the] 2.
+    				</marginalia_text>
+    				<internal_ref>
+    					<target ref="PrincetonU101:00000054" text="2."/>
+    				</internal_ref>
+    			</position>
+    		</language>
+    		<translation>
+    			Above, the second book.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					Peritia: Venetoru[m] Polemica.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Experience: war of the Venetians.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					Vires.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Men.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					addid to Veg.
+    				</marginalia_text>
+    				<person name="Vegetius"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					ffff. flamma: fames: ferru[m]: sed omniu[m] pote[n]tissima,
+    				</marginalia_text>
+    			</position>
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					fictio opportuna.
+    				</marginalia_text>
+    				<emphasis method="pen" text="fictio" type="straight"/>
+    			</position>
+    		</language>
+    		<translation>
+    			ffff. Flame, hunger, iron, but the most powerful of all is an opportune feigning.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					Ordo.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Order.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					Vires.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Men.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					Exercitus modus, ex hostiu[m] numero metiendus;
+    				</marginalia_text>
+    			</position>
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					salte[m] proportione
+    				</marginalia_text>
+    			</position>
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					geometrica.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			The size of the army should be judged by the number of enemies; 
+    			at least according to geometrical analogy.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					Locus.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Place.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					Vires.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Men.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					addid to Vegetius.
+    				</marginalia_text>
+    				<person name="Vegetius"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					skirmisshes pra[e]cursory, or experimental.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					Ordo.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Order.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					Apparatus.
+    					Vires.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Preparation.
+    			Men.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="tail">
+    				<marginalia_text>
+    					Any extreme defect of necessary prouision,
+    					very perillous: &amp; immediatly to be remedid by all possible
+    					Industry, &amp; Pollicy.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	
+    	<!-- Underlines -->
+	<underline language="EN" method="pen" text="yron: in the victory of which" type="straight"/>
+    	<underline language="EN" method="pen" text="fortune may" type="straight"/>
+    	<underline language="EN" method="pen" text="then valiantnesse" type="straight"/>
+    	<underline language="EN" method="pen" text="No purpose is better" type="straight"/>
+    	<underline language="EN" method="pen" text="which is hidde" type="straight"/>
+    	<underline language="EN" method="pen" text="vntill thou haue executed" type="straight"/>
+    	<underline language="EN" method="pen" text="howe to vnderstande occasion" type="straight"/>
+    	<underline language="EN" method="pen" text="to take it" type="straight"/>
+    	<underline language="EN" method="pen" text="then any other thing" type="straight"/>
+    	<underline language="EN" method="pen" text="Nature breedeth fewe" type="straight"/>
+    	<underline language="EN" method="pen" text="industrie and" type="straight"/>
+    	<underline language="EN" method="pen" text="exercise maketh" type="straight"/>
+    	<underline language="EN" method="pen" text="Discipline maye" type="straight"/>
+    	<underline language="EN" method="pen" text="then furie" type="straight"/>
+    	<underline language="EN" method="pen" text="departe from the enemies" type="straight"/>
+    	<underline language="EN" method="pen" text="serue thee" type="straight"/>
+    	<underline language="EN" method="pen" text="bee faithfull, they shalbe" type="straight"/>
+    	<underline language="EN" method="pen" text="alwaies great gaines" type="straight"/>
+    	<underline language="EN" method="pen" text="the power of" type="straight"/>
+    	<underline language="EN" method="pen" text="are more deminished with" type="straight"/>
+    	<underline language="EN" method="pen" text="runne awaye, then of those that be slayne" type="straight"/>
+    	<underline language="EN" method="pen" text="a fugiue, be to newe friends suspected" type="straight"/>
+    	<underline language="EN" method="pen" text="olde odious" type="straight"/>
+    	<underline language="EN" method="pen" text="reserue behinde" type="straight"/>
+    	<underline language="EN" method="pen" text="first front ayde ynoughe" type="straight"/>
+    	<underline language="EN" method="pen" text="the front bigger to disperse the" type="straight"/>
+    	<underline language="EN" method="pen" text="difficultlye ouercome, whiche can" type="straight"/>
+    	<underline language="EN" method="pen" text="valiauntenesse of the" type="straight"/>
+    	<underline language="EN" method="pen" text="then the multitude" type="straight"/>
+    	<underline language="EN" method="pen" text="the situation helpeth" type="straight"/>
+    	<underline language="EN" method="pen" text="valiantnesse" type="straight"/>
+    	<underline language="EN" method="pen" text="Newe and sudden thinges, make" type="straight"/>
+    	<underline language="EN" method="pen" text="armyes afrayde" type="straight"/>
+    	<underline language="EN" method="pen" text="Slowe and accustomed thinges" type="straight"/>
+    	<underline language="EN" method="pen" text="be litle regarded" type="straight"/>
+    	<underline language="EN" method="pen" text="to practise &amp; to know" type="straight"/>
+    	<underline language="EN" method="pen" text="with small fightes a newe enemye" type="straight"/>
+    	<underline language="EN" method="pen" text="the fielde" type="straight"/>
+    	<underline language="EN" method="pen" text="with disorder followeth" type="straight"/>
+    	<underline language="EN" method="pen" text="no other, then to become of a" type="straight"/>
+    	<underline language="EN" method="pen" text="conquerour" type="straight"/>
+    	<underline language="EN" method="pen" text="loser" type="straight"/>
+    	<underline language="EN" method="pen" text="prepareth not necessarye victualles" type="straight"/>
+    	<underline language="EN" method="pen" text="vpon, is" type="straight"/>
+    	    	
+    	<!-- Symbols -->
+    	<symbol name="SS" place="head"/>
+
+    	<!-- Marks -->
+    	<mark method="pen" name="plus_sign" place="left_margin"/>
+    	<mark method="pen" name="plus_sign" place="left_margin"/>
+    	<mark method="pen" name="plus_sign" place="left_margin"/>
+    	<mark method="pen" name="dash" place="left_margin"/>
+    	<mark method="pen" name="plus_sign" place="left_margin"/>
+    	<mark language="EN" method="pen" name="double_vertical_bar" place="left_margin" text="of a fugiue, be to newe friends suspected"/>
+    	
+    	<mark language="EN" method="pen" name="straight_quotation_mark" place="right_margin" text="to practice &amp; to know"/>
+    	
+    	<mark method="pen" name="plus_sign" place="head"/>
+    	<mark method="pen" name="plus_sign" place="intext"/> <!-- which, forune -->
+    	<mark language="EN" method="pen" name="straight_quotation_mark" place="intext" text="fortune"/>
+    	<mark method="pen" name="comma" place="intext"/> <!-- more then -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="valiantnesse"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="vntill thou haue executed"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="vnderstande occasion"/>
+    	<mark language="EN" method="pen" name="straight_quotation_mark" place="intext" text="occasion"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="to take it"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="then any other thing"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- men, the -->
+    	<mark method="pen" name="plus_sign" place="intext"/>
+    	<mark method="pen" name="plus_sign" place="intext"/>
+    	<mark method="pen" name="plus_sign" place="intext"/>
+    	<mark method="pen" name="plus_sign" place="intext"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- thee, when -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="faithfull"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- slayne, although -->
+    	<mark method="pen" name="bracket" place="intext"/>
+    	<mark method="pen" name="comma" place="intext"/> <!-- fugiue be -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="friends suspected"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="a fugiue"/>
+    	
+    	<mark method="pen" name="comma" place="intext"/> <!-- front ayde -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="ayde"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="owne power"/>
+    	<mark method="pen" name="comma" place="intext"/> <!-- power and -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="same of the enemie"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="valiauntenesse"/>
+    	<mark method="pen" name="plus_sign" place="intext"/> <!-- the multitude -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="Newe and sudden thinges"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="Slowe and accustomed thinges"/>
+    	<mark method="pen" name="straight_quotation_mark" place="intext"/> <!-- Therefore -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="small fightes a newe enemye"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- broken, will -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="not necessarye victualles"/>
+    	
+    	<!-- Errata -->
+    	<errata amendedtext="fugitiue" copytext="fugiue" language="EN"/>
+    	
+    </annotation>
+</transcription>

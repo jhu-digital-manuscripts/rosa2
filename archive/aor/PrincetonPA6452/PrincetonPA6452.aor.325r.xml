@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.325r.tif" pagination="633" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia anchor_text="duae Punicae naues" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text> 
+                        Naumachia.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Naval battle.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="de statu belli" type="straight"/>
+        <underline language="LA" method="pen" text="classis Romana esset" type="straight"/>
+        <underline language="LA" method="pen" text="circa Thermopylarum" type="straight"/>
+        <underline language="LA" method="pen" text="protinus nauigare Peloponnesum" type="straight"/>
+        <underline language="LA" method="pen" text="Antiochum" type="straight"/>
+        <underline language="LA" method="pen" text="nauales" type="straight"/>
+        <underline language="LA" method="pen" text="Liuius" type="straight"/>
+        <underline language="LA" method="pen" text="una &amp; LXXX rostratis nauibus, multis" type="straight"/>
+        <underline language="LA" method="pen" text="faciendum ne periculu[m] naualis certaminis foret." type="straight"/>
+        <underline language="LA" method="pen" text="Polyxenidas negabat cessandum" type="straight"/>
+        <underline language="LA" method="pen" text="utiq[ue] prius confligendu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="quàm classis Eumenis, &amp; Rhodi[a]e naues co[n]iungerentur Romanis." type="straight"/>
+        <underline language="LA" method="pen" text="numero non fermè" type="straight"/>
+        <underline language="LA" method="pen" text="caeteris omnibus superiores" type="straight"/>
+        <underline language="LA" method="pen" text="celeritate nauium" type="straight"/>
+        <underline language="LA" method="pen" text="uarietate auxilioum" type="straight"/>
+        <underline language="LA" method="pen" text="Romanas naues" type="straight"/>
+        <underline language="LA" method="pen" text="immobiles esse, tum" type="straight"/>
+        <underline language="LA" method="pen" text="oneratas commeatu" type="straight"/>
+        <underline language="LA" method="pen" text="suas autem" type="straight"/>
+        <underline language="LA" method="pen" text="omnia circa se relinquentes" type="straight"/>
+        <underline language="LA" method="pen" text="nihil praeter milite[m] atq[ue] arma" type="straight"/>
+        <underline language="LA" method="pen" text="notitiam maris terrarumq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="uentorum" type="straight"/>
+        <underline language="LA" method="pen" text="ignaros turbatura" type="straight"/>
+        <underline language="LA" method="pen" text="autor consilij" type="straight"/>
+        <underline language="LA" method="pen" text="qui &amp; re consiliu[m] executurus" type="straight"/>
+        <underline language="LA" method="pen" text="appropinquare iam Romana[m] classem rex" type="straight"/>
+        <underline language="LA" method="pen" text="non interfuturus nauali certamini" type="straight"/>
+        <underline language="LA" method="pen" text="Magnesia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ad terrestres copias co[m]parandas" type="straight"/>
+        <underline language="LA" method="pen" text="Romanos parantes instuentesq[ue] se ad nauale certamen" type="straight"/>
+        <underline language="LA" method="pen" text="lenita paulum uis uenti est, ad Corycu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Polyxenidas" type="straight"/>
+        <underline language="LA" method="pen" text="occasione pugnandi laetus" type="straight"/>
+        <underline language="LA" method="pen" text="aequa fronte ad pugna[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Romanus" type="straight"/>
+        <underline language="LA" method="pen" text="uela contrahit, malosq[ue] inclinat, &amp; simul armamenta compone[n]s" type="straight"/>
+        <underline language="LA" method="pen" text="opperitur insequentes" type="straight"/>
+        <underline language="LA" method="pen" text="aequaret l[a]euu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="dolonibus erectis" type="straight"/>
+        <underline language="LA" method="pen" text="sequebantur, aduersus dextrum" type="straight"/>
+        <underline language="LA" method="pen" text="ut demendis armamentis tumultuari primùm coeptum" type="straight"/>
+        <underline language="LA" method="pen" text="maxima celeritate" type="straight"/>
+        <underline language="LA" method="pen" text="duae Punicae naues antecedebant Romanam classem" type="straight"/>
+        <underline language="LA" method="pen" text="obuiae tres fuerunt regiae naues" type="straight"/>
+        <underline language="LA" method="pen" text="in numero" type="straight"/>
+        <underline language="LA" method="pen" text="impari" type="straight"/>
+        <underline language="LA" method="pen" text="du[a]e regiae unam" type="straight"/>
+        <underline language="LA" method="pen" text="primùm ab utroq[ue] latere remos detergunt" type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!-- Ther -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- uen -->
+        <mark method="pen" name="triple_dash" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- au -->
+        <mark method="pen" name="equal_sign" place="right_margin"/>
+        
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark method="pen" name="circumflex" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- esse, tum -->
+        <mark method="pen" name="dot" place="intext"/> <!-- habituras, multu[m]-->
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="uentorum"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="dot" place="intext" text="profecti"/>
+        
+        <errata amendedtext="auxiliorum" copytext="auxilioum" language="LA"/>
+        
+    </annotation>
+</transcription>

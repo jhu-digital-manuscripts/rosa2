@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.090r.tif" reader="Harvey" signature="Liii[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>A perfit Reformation of Militar Discipline, a necessary pra[e]paratiue to all Worthy Proceding,
+                    &amp; Victory itses.</marginalia_text> <!--JG: Unsure abt last word, one would expect 'itself'-->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Nemo se, nisi turpiter gerit, in eo, quod nescit. In Scientia, cum Virtute, omnis dignitas, et</marginalia_text> 
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>fa[e]licitas.</marginalia_text>
+                </position>
+            </language>
+            <translation>Nobody, unless one conducts oneself shamelessly, in that which he does not know. All dignity and happiness in knowledge, with virtue. 
+                <!--JG: Doesn't really makes sense to me. Unsure abt translation, Chris please check-->
+                <!-- CG: I'm actually unsure about this phrase. It seems either like it's missing a verb (or it's implied) or Harvey's quoting someone.
+                I found 'nihil se in eo' as a phrase from Cicero's In Varrem, but I don't think that's related; it's also an indirect statement in Cicero which gives 'se' some grammatical sense.
+                My only other thought is that 'in eo quod' might be something like 'in those matters which he doesn't understand.'-->
+                <!--JG: Ok, thanks. I'll ask Tony or another specialist!-->
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Huc Cyri pa[e]dia, tota Venatoria, Equestris, et Militaris: Mores veteru[m] Gallorum; ea Laconica pa[e]dagogia.</marginalia_text>
+                    <book title="Cyropaedia"/>
+                    <location name="Lacedaemonia"/>
+                    <emphasis method="pen" text="Mores veteru[m]" type="straight"/>
+                </position>
+            </language>
+            <translation>Here the Cyropaedia, all things of a hunter, of knights, and of soldiers. The customs of the ancient Gauls; that Laconian pedagogy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Of discipline of warre" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>De Disciplina Militarj.</marginalia_text>
+                </position>
+            </language>
+            <translation>On military discipline.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        παιδεια.
+                        πολεμικὴ.
+                    </marginalia_text>
+                    <emphasis method="chalk" text="παιδεια" type="straight"/>
+                    <emphasis method="chalk" text="πολεμικὴ" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                Education. 
+                Military.
+            </translation>
+        </marginalia>
+ 
+        <marginalia anchor_text="Of discipline of warre" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Exercitationis nobilissimus Pra[e]co, Vegetius: sicut etiam Ramus, in [M]il. Ca[e]s.</marginalia_text>
+                    <person name="Vegetius"/>
+                    <person name="Petrus Ramus"/>
+                    <book title="De re Militari"/>
+                    <book title="Liber de Caesaris Militia"/>
+                </position>
+            </language>
+            <translation>Vegetius, the most noble crier of discipline. Ramus likewise, in 'Liber de Caesaris Militia'.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Ca[e]saris polemica Ambulatjo. Assuetudo, et Zelus operantur Miracula: peritissima[e] Disciplina[e] 
+                    Instructionibus directa.</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <translation>Caesar's military stroll. Habit and fervor perform miracles: directed at the formations of the most experienced discipline.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="redressed" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>reformid.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="by moche redynge" type="straight"/>
+        <underline language="EN" method="pen" text="the stratagemes and polycies of" type="straight"/>
+        <underline language="EN" method="pen" text="with no small diligence" type="straight"/>
+        <underline language="EN" method="pen" text="descriued with" type="straight"/>
+        <underline language="EN" method="pen" text="exaumples of stratagemes or sleightes" type="straight"/>
+        <underline language="EN" method="pen" text="stratagemes them selfes" type="straight"/>
+        <underline language="EN" method="pen" text="worthy feates" type="straight"/>
+        <underline language="EN" method="pen" text="of dyuers matters" type="straight"/>
+        <underline language="EN" method="pen" text="be omitted for lacke of" type="straight"/>
+        <underline language="EN" method="pen" text="thinges remaynynge" type="straight"/>
+        <underline language="EN" method="pen" text="order in their" type="straight"/>
+        <underline language="EN" method="pen" text="Of discipline of warre. Cap.I." type="straight"/>
+        <underline language="EN" method="pen" text="PVBILIVS SCIpio at" type="straight"/>
+        <underline language="EN" method="pen" text="redressed" type="straight"/>
+        <underline language="EN" method="pen" text="corrupted with [the] slouthe and idelnes of the capytaynes" type="straight"/>
+        <underline language="EN" method="pen" text="dismyssynge" type="straight"/>
+        <underline language="EN" method="pen" text="slaues" type="straight"/>
+        <underline language="EN" method="pen" text="souldiours by dayly exercise, to do theyr" type="straight"/>
+        <underline language="EN" method="pen" text="duetie" type="straight"/>
+        
+        <symbol language="EN" name="SS" place="head" text="A perfit Reformation of Militar Discipline, a necessary pra[e]paratiue to all Worthy Proceding,             &amp; Victory itses."/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="by moche redynge"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="exaumples of stratagemes or sleightes"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/> <!--extends into intext-->
+        <mark method="pen" name="horizontal_bar" place="right_margin"/> 
+        <mark method="pen" name="horizontal_bar" place="right_margin"/> 
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="corrupted with [the] slouthe and idelnes of the capytaynes"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/> 
+        
+        <mark language="LA" method="pen" name="quotation_mark" place="tail" text="Ca[e]saris polemica Ambulatjo. Assuetudo, et Zelus operantur Miracula: peritissima[e] Disciplina[e]              Instructionibus directa."/>
+        <mark method="pen" name="horizontal_bar" place="tail"/>
+        
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="exaumples"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="worthy feates"/>
+        <mark method="pen" name="dot" place="intext"/> <!--matters, leste-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="order in their"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="corrupted"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="slouthe"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="idelnes of the capytaynes"/>
+        <mark method="pen" name="bracket" place="intext"/> <!--hym, dismyssynge-->
+        <mark method="pen" name="bracket" place="intext"/> <!--drudges, brynging-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="dayly"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="exercise"/>
+        
+        
+    </annotation>
+</transcription>

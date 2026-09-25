@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.037v.tif" pagination="58" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia anchor_text="patiar" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        pati sinere committere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To suffer, to allow, to bring together.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in obliuionem diuturnitatis adducta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        in obliuio[n]em diuturniatis aduci
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To be led into the oblivion of long duration.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ad audendu[m] projectus; ne hoc reliqui qui fecit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ad aude[n]du[m] proiectus hoc reliq[ui] facere 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                'Daring the worst' [Loeb 221, 123]. To make this to be abandoned.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="accusatio nostra in obliuionem diuturnitatis" type="straight"/>
+        <underline language="LA" method="pen" text="vbi id iterrogando, argumentis atque oratione firmauero" type="straight"/>
+        <underline language="LA" method="pen" text="fore arbitrabatur, qui tam nefariis criminibus, tam multis testibus" type="straight"/>
+        <underline language="LA" method="pen" text="Est idem Verres qui fuit semper: vt ad" type="straight"/>
+        
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+    </annotation>
+</transcription>

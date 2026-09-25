@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.189v.tif" pagination="362" reader="Harvey" signature="[hh1v]"/> 
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Vnius hominis immensa vis: sed profundi mathematici, et subtilissimi mechanicj.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The huge power of one man, yet a profound mathematician and really fastidious engineer.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Archimedes; inuentor ac machinator bellicorum tormentoru[m], operumq[ue]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Archimedis geometrica industria, et mechanica tormenta, tam horrifica, quùm miranda.
+                    </marginalia_text>
+                    <person name="Archimedes"/>
+                </position>
+            </language>
+            <translation>The geometrical industry of Archmedes, and the technical torture tools, equally terrifying and wonderful.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Vnus artifex instar mille bellatorum: nec mille bellatores instar vnius artificis. 
+                        Tanti valet peritissima Mechanica, in primisq[ue] Mechanopoetica.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>One craftsman is equal to a thousand fighters, and a thousand fighters are not up to one single craftsman. 
+                So much more superior is the very clever art of engineering, especially mechanical engineering.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="habuisset tanto impetu coepta" type="straight"/>
+        <underline language="LA" method="pen" text="nisi unus" type="straight"/>
+        <underline language="LA" method="pen" text="Archimedes" type="straight"/>
+        <underline language="LA" method="pen" text="unicus spectator coeli fiderumq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="mirabilior tamen inuentor ac machinator bellicorum tormentoru[m], operum" type="straight"/>
+        <underline language="LA" method="pen" text="perleui momento ludificaretur" type="straight"/>
+        <underline language="LA" method="pen" text="omni genere tormentorum instruxit" type="straight"/>
+        <underline language="LA" method="pen" text="caeteris nauibus sagittarij funditoresq[ue]. &amp; uelites etiam, quorum telum inhabile ad remittendu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="uix quenquam sine uulnere" type="straight"/>
+        <underline language="LA" method="pen" text="turres co[n]tabulatas" type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--tormen-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--quinquere-->
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="nisi unus"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="unicus"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="bellicorum tormentoru[m]"/>
+        <mark method="pen" name="comma" place="intext"/> <!--que quibus-->
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="perleui"/>
+        
+    </annotation>
+</transcription>

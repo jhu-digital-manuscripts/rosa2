@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.032v.tif" pagination="48" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia anchor_text="princepts in age[n]do" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        pinceps in age[n]do
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                'Chief charge' [Loeb 221, 43].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Allienus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Alliemus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Alienus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ad meas capsas admisero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ad meas capsas admisero
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                I grant access to my cupboards.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="te praeterit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        te p[rae]terit
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                It passes you.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="iniuriae sint impunitae atque inultae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        impunita invlta}iniuria
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Unrestrained [and] and unpunished injustice.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mulier ante hunc Quaestore[m] copiosa planè &amp; locuples" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        mulier copiosa locuples.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A woman, wealthy and rich in land.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="In hoc spes tuae sunt omnes" type="straight"/>
+        <underline language="LA" method="pen" text="dice[n]do" type="straight"/>
+        <underline language="LA" method="pen" text="vt ad quae dixerint, certo" type="straight"/>
+        <underline language="LA" method="pen" text="enuncies, sed etiam ne" type="straight"/>
+        <underline language="LA" method="pen" text="sed de isto custode" type="straight"/>
+        <underline language="LA" method="pen" text="etenim fides mea custodem repudiat, diligentia" type="straight"/>
+        <underline language="LA" method="pen" text="hoc te praeterit" type="straight"/>
+        <underline language="LA" method="pen" text="copiosa planè &amp; locuples" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">10.11</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">10</numeral> <!--JG: Unsure-->
+        <numeral place="left_margin">22.19</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">7</numeral>
+        <numeral place="left_margin">19</numeral>
+        <numeral place="left_margin">15</numeral>
+        <numeral place="left_margin">7</numeral>
+        <numeral place="left_margin">4</numeral>
+        
+    </annotation>
+</transcription>

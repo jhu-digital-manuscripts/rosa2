@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.167v.tif" pagination="314" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="libertas" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        libertas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Freedom.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ocio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Ocium
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Leisure.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        sup[ra] 313
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP10549-50v1:0341" text="313"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                [See] above 313.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="confirmo vobis, nullum posthac malum" type="straight"/>
+        <underline language="LA" method="pen" text="expectatione" type="straight"/>
+        <underline language="LA" method="pen" text="Omnis ingenuorum adest multitudo, etiam tenuissimorum" type="straight"/>
+        <underline language="LA" method="pen" text="libertas ea, quae" type="straight"/>
+        <underline language="LA" method="pen" text="vniuersum" type="straight"/>
+        <underline language="LA" method="pen" text="instrumentum, omnis" type="straight"/>
+        <underline language="LA" method="pen" text="quaestus, frequentia" type="straight"/>
+        <underline language="LA" method="pen" text="hodierno die primùm" type="straight"/>
+        <underline language="LA" method="pen" text="die prouidendum" type="straight"/>
+        <underline language="LA" method="pen" text="mihi studio penè praecurritis" type="straight"/>
+        <underline language="LA" method="pen" text="iudico turpem &amp; infirmam, contemptam &amp; abiectam. quod si aliquando alicuius" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="scribble" place="left_margin"/>
+        
+        <numeral place="left_margin">15</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">8</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+        
+    </annotation>
+</transcription>

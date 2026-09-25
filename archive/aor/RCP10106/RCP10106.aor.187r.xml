@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.187r.tif" pagination="373" reader="John Dee" signature="A 3"/> 
+    <annotation>
+        
+        <marginalia anchor_text="morbis membra praecidu[n]t: ita turpes ac perniciosos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Membra morbis abalienata et p[er]niciosi.</marginalia_text>
+                </position>
+            </language>
+            <translation>The wicked are like limbs which disease has alienated [from the body].</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Archia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Archia Po[eta].</marginalia_text> 
+                    <book title="Pro Archia"/>
+                </position>
+            </language>
+            <translation>Pro Archia Poeta.</translation>
+        </marginalia>
+      
+        <marginalia anchor_text="parabola" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Parabola.</marginalia_text>
+                </position>
+            </language>
+            <translation>A comparison.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἀνταπόδοσις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ἀνταπόδοσις</marginalia_text>
+                </position>
+            </language>
+            <translation>Correspondence in a simile.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Georgicon" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vergilius.</marginalia_text>
+                    <person name="Virgil"/>
+                </position>
+            </language>
+            <translation>Virgil.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vergilium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vergilius.</marginalia_text>
+                    <person name="Virgil"/>
+                </position>
+            </language>
+            <translation>Virgil.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Muraena" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Murena.</marginalia_text>
+                    <book title="Pro Murena"/>
+                </position>
+            </language>
+            <translation>Pro Murena.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="est, quae me iuuene ubiq[ue] cantari solebant" type="straight"/>
+        <underline language="LA" method="pen" text="omni autem parabola aut praecedit similitudo, &amp; res sequitur: aut praecedit res, &amp; similtudo sequitur" type="straight"/>
+        <underline language="LA" method="pen" text="sic nos uidemus, qui oratores euadere non potuerunt, eos ad iuris studium deuenire." type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

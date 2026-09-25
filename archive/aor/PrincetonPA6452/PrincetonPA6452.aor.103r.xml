@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.103r.tif" pagination="189" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia anchor_text="Decius" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>braue Decius. a resolved &amp; redouted mind.</marginalia_text>
+                    <person name="Publius Decius Mus I"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="una est salus, erumpere hinc, atq[ue] abire" type="straight"/>
+        <underline language="LA" method="pen" text="loca Deciu[m] sunt. Iam" type="straight"/>
+        <underline language="LA" method="pen" text="Decius" type="straight"/>
+        <underline language="LA" method="pen" text="torpidos somno insuper pauore exanimat" type="straight"/>
+        <underline language="LA" method="pen" text="Macti uirtute," type="straight"/>
+        <underline language="LA" method="pen" text="milites Romani" type="straight"/>
+        <underline language="LA" method="pen" text="omnia secula laudibus ferent" type="straight"/>
+        <underline language="LA" method="pen" text="conspiciendam tantam uirtutem" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; tessera data" type="straight"/>
+        <underline language="LA" method="pen" text="incolumes reuerti" type="straight"/>
+        <underline language="LA" method="pen" text="pro se quisq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="seruatores suos uocant" type="straight"/>
+        <underline language="LA" method="pen" text="Deciu[m] in coelum ferunt" type="straight"/>
+        <underline language="LA" method="pen" text="Decij castrensis triu[m]phus fuit" type="straight"/>
+        <underline language="LA" method="pen" text="coniectis in eum omnium oculis, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="honore tribunum consuli aequantibus" type="straight"/>
+        <underline language="LA" method="pen" text="meritas Decij laudes, interfante" type="straight"/>
+        <underline language="LA" method="pen" text="dum occasio in manibus esset," type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--exani-->
+        <mark method="pen" name="apostrophe" place="right_margin"/> <!--quisq[ue]-->
+        
+    </annotation>
+</transcription>

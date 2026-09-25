@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.068r.tif" pagination="135" reader="John Dee" signature="i 4"/>
+    <annotation>
+        
+        <marginalia anchor_text="Cicero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cicero</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ciceronis Rhetorico" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Rhetorica Tullij</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero's rhetoric.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cicero quidem his pulcherrimos illos de Oratore substituit, ideoq[ue] culpari tamquam falsa praecipiat, non potest" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cicero excusatur</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero's excuse.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristotelem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aristoteles</marginalia_text>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>Aristotle.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Albutius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Albutius</marginalia_text>
+                    <person name="Gaius Albucius Silus"/>
+                </position>
+            </language>
+            <translation>Albucius.</translation>
+        </marginalia>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

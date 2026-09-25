@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.098r.tif" pagination="19" reader="Harvey" signature="B2[r]"/>	<!-- ABO 102right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Idem quotidiè: Sola perfectionis ratio.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Again, only a daily method for perfection. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						dextrè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Skillfully.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Quisq[ue] validus
+						ad reddendum sese ignavum: sed quis non
+						ignavus ad reddendu[m] sese validum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Anyone strong can give himself something weak,
+				but only he who is not weak can give himself something strong.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						) magis adhuc proficiens.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Until now more effective.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						( Assueta ualent, et habituata. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Customs and habits have strength.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						( Non Libri, sed opera.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Not books, but works.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Tantum scio, quantum recordor; et habeo semper paratum ad pra[e]sentem vsum.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="IT">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Il pensare non importa, ma il fare. Dal ditto al fatto, vi è un gran tratto.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="90" place="tail">
+					<marginalia_text>
+						Sed
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						Prudentia sibi serua reddit omnia ait gra[e]cus Comicus:
+						et Labor
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Omnia vincit improbus; è Ca[e]saris disciplina prodijt.
+					</marginalia_text>
+					<person name="Julius Caesar"/>
+					<X-ref book_title="Georgics" language="LA" person="Virgil" text="Labor omnia vincit improbus"/>
+				</position>
+			</language>
+			<translation>
+				I know as much as I remember. And I always have it ready for immediate use.
+				Thinking doesn't matter, but doing. There is a great distance from word to deed.
+				But as the Greek comic says, the maid Prudence restores all things to herself,
+				and "steady work overcomes all things". This came from the training of Caesar.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Pla[e]riq[ue] validi, non sua virtute, sed aliorum ignauia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Many are powerful, not by their own virtue, but by the idleness of others.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Podestà" type="straight"/>
+		<underline language="IT" method="pen" text="giuocato il mio" type="straight"/>
+		<underline language="IT" method="pen" text="giouacato il suo" type="straight"/>
+		<underline language="IT" method="pen" text="menzogne tornare" type="straight"/>
+		<underline language="IT" method="pen" text="Bertuccia" type="straight"/>
+		<underline language="IT" method="pen" text="presala in sul dorso, la portaua" type="straight"/>
+		<underline language="IT" method="pen" text="s'ella era d' Athene" type="straight"/>
+		<underline language="IT" method="pen" text="parentadi che" type="straight"/>
+		<underline language="IT" method="pen" text="s'ella" type="straight"/>
+		<underline language="IT" method="pen" text="del Pireo" type="straight"/>
+		<underline language="IT" method="pen" text="d'vn'huomo" type="straight"/>
+		<underline language="IT" method="pen" text="suo amico stretto" type="straight"/>
+		<underline language="IT" method="pen" text="fatte bugie" type="straight"/>
+		<underline language="IT" method="pen" text="la tuffò sotto l'acqua" type="straight"/>
+		<underline language="IT" method="pen" text="inaspettate risposte" type="straight"/>
+		<underline language="IT" method="pen" text="qual vino" type="straight"/>
+		<underline language="IT" method="pen" text="ripose di quel d'altri" type="straight"/>
+		
+		<symbol name="JC" place="intext"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--promon-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--qua-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--ve-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--fanciul-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--amoreuo-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--buo-->
+		<mark language="IT" method="pen" name="plus_sign" place="right_margin" text="ripose di quel d'altri"/>
+		
+		<mark method="pen" name="dot" place="intext"/> <!--mio, che-->
+		<mark method="pen" name="dot" place="intext"/> <!--stretto, on-->
+		<mark method="pen" name="dot" place="intext"/> <!--altri, quando-->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- lascio' affogare -->
+
+    </annotation>
+</transcription>

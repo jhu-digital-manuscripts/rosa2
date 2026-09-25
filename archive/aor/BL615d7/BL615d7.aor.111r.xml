@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.111r.tif" pagination="111" reader="John Dee"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="vno Indiano molto giouane" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note of this yong man</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="forma ad vn ferro di cauallo" type="straight"/>
+        <underline language="IT" method="pen" text="hauere" type="double"/>
+        <underline language="IT" method="pen" text="a' XIIII di Maggio deliberò" type="straight"/>
+        <underline language="IT" method="pen" text="tornare all'Isola di Cuba" type="straight"/>
+        <underline language="IT" method="pen" text="nauigato cinquecento, ò seicente leghe di quella, &amp;" type="straight"/>  <!-- MB. Underlined,'d&igrave; da' is not captured  -->
+        <underline language="IT" method="pen" text="Indiano molto giouane" type="straight"/>
+        <underline language="IT" method="pen" text="di voler venire in Castiglia ; &amp;" type="straight"/>
+        <underline language="IT" method="pen" text="marauigliatosi lo Ammiraglio, commandò, ch'ei fosse" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <drawing anchor_text="In questo porto, simile di forma ad vn ferro di cauallo" book_orientation="0" method="pen" place="right_margin" type="map"/>
+        
+    </annotation>
+</transcription>

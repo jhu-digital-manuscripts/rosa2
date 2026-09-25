@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.015r.tif" reader="John Dee" signature="[Diiij]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="auß den früchten" hand="Italian" id="NYSLWin189:00000041:m0001"> 
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Ex fructibus eorum cognoscetis eos</marginalia_text> <!--JG: 'cognoscetis'-->
+                    <book title="Gospel of Matthew"/>
+                </position>
+            </language>
+            <translation> You shall know them by their fruits.</translation> <!-- Corrected the first part of this translation. Most likely a reference to Matthew 7:20 or adapted from it-->
+        </marginalia>
+        
+        <marginalia anchor_text="geist deß quecksilbers" hand="Italian"> <!-- FSF: connected with a stroke -->
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Nota. Quid si hunc Mercurium vocemus succu[m] ex tribus primis ut vbiq[ue] supra no[m]inauit?</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>At ☿ij spiritus co[n]tra[...] declaratus et ▢ spiritus</marginalia_text> <!-- FSF: to be checked and completed --> <!-- NBW: That remaining unknown word might be "contraram? -->
+                    <symbol_in_text name="Mercury"/>
+                    <symbol_in_text name="Salt"/>
+                </position>
+            </language>
+            <translation>Note. What, if we call this Mercury, a spirit from the tree primal parts, as he called [it] everywhere above? While the spirit of Mercury declares [...].</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mercurio Solis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mercurius ☉15♀15☿ij</marginalia_text>
+                    <symbol_in_text name="Mercury"/>
+                    <symbol_in_text name="Sun"/>
+                    <symbol_in_text name="Venus"/>
+                </position>
+            </language>
+            <translation>Mercury Sun 15 Venus 15 Mercury 2.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="spiritibus salis" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>spiritus salia[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>The spirits of salt.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="eysen zů kupffer" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Thermaru[m] Nocumenta</marginalia_text> 
+                </position>
+            </language>
+            <translation>Nuisance of the baths.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="concordantz" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Concordantia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Concordance.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="auß den früchten" type="straight"/>
+        <underline language="DE" method="pen" text="auß der wirckung so sy in den kranckheyten" type="double"/>
+        <underline language="DE" method="pen" text="verbringen" type="curved"/>
+        <underline language="DE" method="pen" text="bringed" type="straight"/>
+        <underline language="DE" method="pen" text="nemmen" type="straight"/>
+        <underline language="DE" method="pen" text="nemmen" type="straight"/>
+        <underline language="DE" method="pen" text="heilend die löcher vnnd" type="double"/>
+        <underline id="NYSLWin189:00000041:u0001" language="DE" method="pen" text="geist deß quecksilbers" type="straight"/>
+        <underline language="DE" method="pen" text="heilend" type="straight"/>
+        <underline language="LA" method="pen" text="spiritibus" type="double"/>
+        <underline language="DE" method="pen" text="widerspyl" type="straight"/>
+        <underline language="DE" method="pen" text="die in der concordantz" type="straight"/>
+        <underline language="DE" method="pen" text="species der mineralia" type="straight"/>
+        <underline language="DE" method="pen" text="mancherley tugenden der wasser sind" type="straight"/>
+        <underline language="DE" method="pen" text="ein Artzet sol aller mineralium krafft vnnd eygenschafft erkennen als dan[n] so weißt er was" type="straight"/>
+        <underline language="DE" method="pen" text="predominiert" type="double"/>
+
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+
+        <errata amendedtext="nemmen" copytext="bringend" language="DE"/>
+
+        <physical_link>
+            <marginal_annotation idref="NYSLWin189:00000041:m0001"/>
+            <marginal_annotation idref="NYSLWin189:00000041:u0001"/>
+            
+            <relation from="NYSLWin189:00000041:m0001" to="NYSLWin189:00000041:u0001" type="directed"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

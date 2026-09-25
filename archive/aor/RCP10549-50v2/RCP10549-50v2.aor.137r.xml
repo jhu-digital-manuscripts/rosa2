@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.137r.tif" pagination="13" reader="John Dee"/>  
+    <annotation>
+        
+        <marginalia anchor_text="pagunt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>pago</marginalia_text>
+                </position>
+            </language>
+            <translation>I agree upon.</translation>        <!-- DO: Not sure about translation NBW: Looks like both Dee and Caplan are translating this verb as if it's "pa[n]go" - maybe a different spelling-->
+        </marginalia>
+        
+        
+        <marginalia anchor_text="infantissimi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>infa[n]tissimi.</marginalia_text>
+                </position>
+            </language>
+            <translation>Very inarticulate.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Cu[m] diffinitione vtemur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Si ex diffinitio[n]e.</marginalia_text>
+                </position>
+            </language>
+            <translation>If out of definition.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Maiestate[m] is minuit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quis maiestate[m] minuit.</marginalia_text>
+                </position>
+            </language>
+            <translation>One who diminishes majesty.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Quaeritur in translationibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Si ex translatio[n]e.</marginalia_text>
+                </position>
+            </language>
+            <translation>If out of transference.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="In causa rationali primum quaeretur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Si ex ratiocinatio[n]e.</marginalia_text>
+                </position>
+            </language>
+            <translation>If out of reasoning.</translation>
+        </marginalia>
+        
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sup[ra] fo. 8.42</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP10549-50v2:0278" text="8.42"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Above, folio 8, [section] 42.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="ABSOLVTA iuridiciali constitutione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Iuridicialis co[n]stitutio Absoluta</marginalia_text>
+                </position>
+            </language>
+            <translation>The absolute juridicial type.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Constat igitur ex his partibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ex quibus partibus ius co[n]stat</marginalia_text>
+                </position>
+            </language>
+            <translation>The parts which comprise the law.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Natura" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ius Natura.</marginalia_text>
+                </position>
+            </language>
+            <translation>Natural law.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Lege" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lege.</marginalia_text>
+                </position>
+            </language>
+            <translation>By statute.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Consuetudine" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Consuetudine</marginalia_text>
+                </position>
+            </language>
+            <translation>By custom.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Iudicatum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Iudicatu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>Judgement.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="M. Drusus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>M. Drusus.</marginalia_text>
+                    <person name="Marcus Livius Drusus"/>   <!-- DO: Think it's him but could be his father of the same name -->
+                </position>
+            </language>
+            <translation>Marcus Drusus.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="S. Iulius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Se. Iulius.</marginalia_text>  
+                    <person name="Sextus Julius Caesar"/>         
+                </position>
+            </language>
+            <translation>Sextus Julius Caesar.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="C. Caelius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>C Coelius</marginalia_text> 
+                    <person name="Gaius Coelius Caldus"/>
+                </position>
+            </language>
+            <translation>Gaius Coelius Caldus.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="P. Mutius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>P Mutius.</marginalia_text>
+                    <person name="Publius Mucius Scaevola"/>
+                </position>
+            </language>
+            <translation>Publius Mucius Scaevola.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Ex aequo &amp; bono" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ex a[e]quo &amp; bono.</marginalia_text>
+                </position>
+            </language>
+            <translation>Out of fairness and goodness.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Ex pacto" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ex pacto.</marginalia_text>
+                </position>
+            </language>
+            <translation>Out of agreement.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Pacta sunt, quae legibus obseruanda sunt, hoc modo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pacta qu[a]e 2</marginalia_text>
+                </position>
+            </language>
+            <translation>Agreements, which are of two types.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Cum ex co[m]paratione quaeretur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Si ex co[m]paratio[n]e</marginalia_text>
+                </position>
+            </language>
+            <translation>If out of comparison.</translation>
+        </marginalia>
+        
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>sup[ra] 8.27</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP10549-50v2:0278" text="8.27"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Above, folio 8, [section] 27.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="dum caute &amp; expedite loqui volunt, infantissimi reperiuntur" type="straight"/>
+        <underline language="LA" method="pen" text="metuunt in dicendo nequid ambiguum dicant, nomen suum pronuntiare no[n] possunt" type="straight"/>
+        <underline language="LA" method="pen" text="huius infantiae garrulam disciplina[m] co[n]te[m]neremus" type="straight"/>
+        <underline language="LA" method="pen" text="de causa dissimiliter iudicatae proferri, cum id vsu venerit, iudicem cu[m] iudice, tempus cum tempore, numeru[m] cum numero iudiciorum proferemus" type="straight"/>
+        <underline language="LA" method="pen" text="Rem vbi pagunt, oratione pagu[n]t" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="head"/>
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">.1.</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">.1.</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">1</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">1</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3</numeral>
+        
+        <drawing anchor_text="pago" book_orientation="0" method="pen" place="head" type="florilegium"/>
+        <drawing anchor_text="pagunt" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

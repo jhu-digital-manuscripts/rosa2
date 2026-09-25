@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.endmatter.flyleaf.001v.tif" reader="Harvey"/>
+    <annotation>
+                
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Aulica[e] gratia[e] pulcherrimus habitus, è generali, et speciali Decoro; pra[e]sertim Ciuilis Rhetorica[e], et Ethica[e]. Rhetorica[e], vt dulcis Elocutio, cum 
+                        amabili Vultu. Ethica[e], vt generosa conformatio Fortitudinis, et Prudentia[e], cum Temperantia, et Iustitia. Ars, et Virtus, magna Scientia[e], Potentia[e]q[ue] 
+                        Coniunctio. Sed Ars, et Virtus perfecta, et inuicta.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+            The most beautiful demeanor of the princely grace, from general and special decorum; especially of civil rhetoric and ethics. Of rhetoric, as sweet elocution with an amiable expression. Of ethics, as
+            the generous conformation of fortitude and prudence with temperance and justice. Art and virtue, the great conjunction of science and power. But art and virtue are perfect and invincible.
+            </translation>
+        </marginalia>
+        
+        <marginalia date="1580." hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Aboue al things, it importeth a Courtier, to be gracefull &amp; louelie in countenance, &amp; behauiour; fine &amp; discreet in discourse, &amp; interteinment; 
+                        skilfull &amp; expert in letters, &amp; Armes; active &amp; gallant in euerie Courtlie Exercise; nimble &amp; speedie of boddie &amp; mind; resolute, industrious, 
+                        &amp; valorous in action; as profound &amp; inuincible in execution, as is possible: &amp; withall euer generously bould, wittily pleasant, &amp; full of life in all 
+                        his sayings, &amp; doings. His apparrel must be like himself, cumlie &amp; handsom; fine &amp; clenlie to auoid contempt, but not gorgeous or statelie to incurr 
+                        enuie, or suspicion of pride, vanitie, selflooue, or other imperfection. Both inside, &amp; outside, must be a faire paterne of worthie, fine &amp; Loouelie Vertu.
+                        GH. 1580.
+                    </marginalia_text>
+                    <person name="Gabriel Harvey"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="but praise" type="straight"/>
+        <underline language="EN" method="pen" text="exhortacion in this your doinges" type="straight"/>
+        <underline language="EN" method="pen" text="1557." type="straight"/>
+        <underline language="EN" method="pen" text="Ioan Cheek" type="straight"/>
+        
+        <symbol name="Sun" place="left_margin"/>
+          
+        <mark language="EN" method="pen" name="plus_sign" place="tail" text="countenance"/> <!-- Above 'countenance' in second line of marginal note. -->
+        <mark method="pen" name="vertical_bar" place="tail"/> <!-- to the right of marginal note, alongside 'clenlie to' -->
+        
+    </annotation>
+</transcription>

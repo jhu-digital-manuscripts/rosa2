@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.063v.tif" pagination="[63[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="viechischen verstandt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Brutalis intellectus in multis coeli animalibus Salamandrinis.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>A beastly intelligence in many drakes, animals of the sky. </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="seltzame Salamandra" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Salamandra[e] vera[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Real drakes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text=" ein weiten kreiß zufliegen oder zu schiessen nemlich auff erlich hundert meil" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        flying firedrakes ar quick creatures
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="Spinnen vom Lufft" type="double"/>
+        <underline language="DE" method="pen" text="also ohne Samen" type="straight"/>
+        <underline language="DE" method="pen" text="der Thieren" type="straight"/>
+        <underline language="DE" method="pen" text="Tracken" type="straight"/>
+        <underline language="DE" method="pen" text="viechischen verstandt" type="double"/>
+        <underline language="DE" method="pen" text="viel seltzame Salamandra in jm" type="straight"/>
+        <underline language="DE" method="pen" text="Salamander, werden auss dem fewer geboren das ist auss der putrificatio" type="straight"/>
+        <underline language="DE" method="pen" text="des brennenden schweffels" type="triple"/>
+        <underline language="DE" method="pen" text="viech vn[d] Thier Olympi seindt verstendig wie das viech im Wasser vn[d] Erden vnd Lufft" type="straight"/>
+        <underline language="DE" method="pen" text="solche[n] viehische[n] verstand" type="straight"/>
+        <underline language="DE" method="pen" text="Ir leben" type="straight"/>
+        <underline language="DE" method="pen" text="ist nicht lang" type="double"/>
+        <underline language="DE" method="pen" text="aber weil sie leben so haben sie ein weiten schuß vnd ein weiten kreiß zu fliegen oder zu schiessen nemlich auff erlich" type="straight"/>
+        <underline language="DE" method="pen" text="hundert meil" type="double"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="scribble" place="tail"/>
+    
+    </annotation>
+</transcription>

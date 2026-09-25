@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.022v.tif" pagination="[22v]" reader="John Dee" signature="[Cvi [v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="capo di Chiara" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cap[e] Clere</marginalia_text>
+                    <location name="Chiari"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="quaranta anni auanti" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>40 yeres</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ergo, A[nn]o 1452.</marginalia_text>
+                </position>
+            </language>
+            <translation>40 years, therefore the year 1452.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="terra di Bacalaos" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Terra di Bacalaos</marginalia_text>
+                    <location name="Bacalao"/>
+                </position>
+            </language>
+            <translation>The land of Bacalao.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Femaldolmos" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Femaldolmus</marginalia_text>
+                    <person name="Femaldolmos"/>
+                </position>
+            </language>
+            <translation>Femaldolmos.</translation> 
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="por Nordeste" type="straight"/>
+        <underline language="IT" method="pen" text="il capo di Chiara in Irlanda" type="straight"/>
+        <underline language="IT" method="pen" text="trouarono grandissimi venti Ponenti, &amp; il mar non turbarsi" type="straight"/>
+        <underline language="IT" method="pen" text="per alcuna terra" type="straight"/>
+        <underline language="IT" method="pen" text="all' Isola" type="straight"/>
+        <underline language="IT" method="pen" text="paura del verno" type="straight"/>
+        <underline language="IT" method="pen" text="si scoprissero le nostre Indie" type="straight"/>
+        <underline language="IT" method="pen" text="in un suo viaggio, fatto in Irlanda" type="straight"/>
+        <underline language="IT" method="pen" text="di Tartaria" type="double"/>
+        <underline language="IT" method="pen" text="terra di Bacalaos" type="straight"/>
+        <underline language="IT" method="pen" text="al Noroeste" type="double"/>
+        <underline language="IT" method="pen" text="l'Occidente d'Irlanda" type="double"/>
+        <underline language="IT" method="pen" text="Femaldolmos" type="straight"/>
+        <underline language="IT" method="pen" text="ne gli scritti del padre mio" type="straight"/>
+        <underline language="IT" method="pen" text="cosa vengono" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/>
+        
+        <drawing anchor_text="cosa vengono" book_orientation="0" method="pen" place="tail" type="manicule"/>
+           
+    </annotation>
+</transcription>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.208v.tif" pagination="408" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Bederichesworth" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Bedericia Lalando
+                    </marginalia_text>
+                    <location name="Bury St Edmunds"/>
+                </position>
+            </language>
+            <translation>
+                Bury St Edmunds in Leland. 
+            </translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="Bederichesworth" type="straight"/>
+        <underline language="LA" method="pen" text="Et eis canonica &amp; imperiali censura depositis" type="straight"/>
+        <underline language="LA" method="pen" text="Scotos" type="straight"/>
+        <underline language="LA" method="pen" text="Malcolmum" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonRB16th99a.008v.tif" pagination="[8v]" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Mnemosyna Oeconomica. Pla[e]raque axiozela.</marginalia_text>
+                </position>
+            </language>
+            <translation>Economic reminders. Very many are worthwhile.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Lessons more worth then fashions.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="GOD sendeth" type="straight"/>
+        <underline language="EN" method="pen" text="both mouth" type="straight"/>
+        <underline language="EN" method="pen" text="the meat" type="straight"/>
+        <underline language="EN" method="pen" text="&amp; lay for to liue" type="straight"/>
+        <underline language="EN" method="pen" text="As bud by appearing" type="straight"/>
+        <underline language="EN" method="pen" text="betokneth the" type="straight"/>
+        <underline language="EN" method="pen" text="and leafe by her falling" type="straight"/>
+        <underline language="EN" method="pen" text="youth bids vs labour, to get as we" type="straight"/>
+        <underline language="EN" method="pen" text="age is a burden, to" type="straight"/>
+        <underline language="EN" method="pen" text="A competent liuing" type="straight"/>
+        <underline language="EN" method="pen" text="let loue come with somewhat, the better to hold" type="straight"/>
+        <underline language="EN" method="pen" text="doe louelie agree" type="straight"/>
+        <underline language="EN" method="pen" text="there foyson" type="straight"/>
+        <underline language="EN" method="pen" text="if wisedome" type="straight"/>
+        <underline language="EN" method="pen" text="for loue may not alway, be plaieng with douse" type="straight"/>
+        
+        <symbol name="SS" place="intext"/>
+        <symbol name="Sun" place="intext"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="let loue come with somewhat, the better to hold"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="A competent liuing"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="As bud by appearing"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="leafe by her falling"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="youth bids vs labour, to get as we"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="A competent liuing"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.013r.tif" pagination="13" reader="John Dee" signature="D"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Solchs Caput" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Recapitulatio huius capitis.</marginalia_text>
+                </position>
+            </language>
+            <translation>A summing up of this chapter.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sul. Merc. Sal." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>&#128781; ☿. Sal.</marginalia_text>
+                    <symbol_in_text name="Sulfur"/>
+                    <symbol_in_text name="Mercury"/>
+                </position>
+            </language>
+            <translation>Sulfur. Mercury. Salt.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Auff solches nu floget weiter hernach" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Seque[n]tiu[m] argume[n]t[um].</marginalia_text>
+                </position>
+            </language>
+            <translation>The argument of the following [parts].</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="Caosische arth ist" type="double"/>
+        <underline language="DE" method="pen" text="Circkel hat kein obertheil noch vndertheil" type="straight"/>
+        <underline language="DE" method="pen" text="alles vnden vnd oben" type="double"/>
+        <underline language="DE" method="pen" text="sechs Paragraphis" type="double"/>
+        <underline language="DE" method="pen" text="worauß sie seindt" type="straight"/>
+        <underline language="DE" method="pen" text="drey Species seind Prima" type="straight"/>
+        <underline language="DE" method="pen" text="mögent gefunden" type="straight"/>
+        <underline language="DE" method="pen" text="dreien Officia" type="straight"/>
+        <underline language="DE" method="pen" text="den Sternen" type="straight"/>
+        
+    </annotation>
+</transcription>

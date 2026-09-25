@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.109v.tif" reader="Harvey" signature="[Nvi[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>In pra[e]liis, quatuor communes respectus: Virium, Loci, Ordinis, Cohortationis.</marginalia_text>
+                </position>
+            </language>
+            <translation>In battles, there are four respected common[places]: that of strength, place, order, and encouragement.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Diuers other notable Rules, &amp; Cautels, in Olaus Magn[us]: notid in my Common
+                    Places</marginalia_text>
+                    <book title="De statu regentium et officiorum ac exercitio militari"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Regularu[m] Juris.</marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Most of owr Generals Lawes, &amp; Ordinances, for [the] Low Cuntry;
+                    necessary Cautels in this kind. Especially such, as import general security, or special
+                    seruices.</marginalia_text>
+                    <location name="Netherlands"/>
+                </position>
+            </language>
+            <translation>Diuers other notable Rules, &amp; Cautels, in Olaus Magn[us]: notid in my Common
+                Places of judicial rules. Most of owr Generals Lawes, &amp; Ordinances, for [the] Low Cuntry; 
+                necessary Cautels in this kind. Especially such, as import general security, or special 
+                seruices.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Regula regularu[m]:</marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>to seek, &amp; enforce all possible aduantage.</marginalia_text>
+                </position>
+            </language>
+            <translation>The rule of rules: to seek, &amp; enforce all possible aduantage.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Machiauels Rules, in the end della guerra.</marginalia_text>
+                    <person name="Machiavelli"/>
+                    <book title="Art of War"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Multa paucis.</marginalia_text>
+                </position>
+            </language>
+            <translation>Machiauels Rules, in the end of 'The art of war'. Much in a few words.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>probatu[m] est.</marginalia_text>
+                </position>
+            </language>
+            <translation>It is approved.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="inualyons" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>superuentions,</marginalia_text> <!--JG: Unsure. Chris, please check.-->
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="whiche we iudge profytable for vs" type="straight"/>
+        <underline language="EN" method="pen" text="thou folowest that that he" type="straight"/>
+        <underline language="EN" method="pen" text="faynest thou dyddest" type="straight"/>
+        <underline language="EN" method="pen" text="thy profite" type="straight"/>
+        <underline language="EN" method="pen" text="moste laboureth" type="straight"/>
+        <underline language="EN" method="pen" text="exerciseth his" type="straight"/>
+        <underline language="EN" method="pen" text="souldiours in trauayles" type="straight"/>
+        <underline language="EN" method="pen" text="susteyne leaste perylle" type="straight"/>
+        <underline language="EN" method="pen" text="range out in the front" type="straight"/>
+        <underline language="EN" method="pen" text="a souldiour" type="straight"/>
+        <underline language="EN" method="pen" text="haste had none open profe" type="straight"/>
+        <underline language="EN" method="pen" text="with neede, with sodeyne inualyons, or with terror" type="straight"/>
+        <underline language="EN" method="pen" text="fyghtyng in playne" type="straight"/>
+        <underline language="EN" method="pen" text="fortune" type="straight"/>
+        <underline language="EN" method="pen" text="vertue" type="straight"/>
+        <underline language="EN" method="pen" text="aduersarie knoweth nothynge" type="straight"/>
+        <underline language="EN" method="pen" text="they be done in dede" type="straight"/>
+        <underline language="EN" method="pen" text="Occasion or sodeyne happe in battayle" type="straight"/>
+        <underline language="EN" method="pen" text="than vertue or" type="straight"/>
+        
+        <symbol language="LA" name="SS" place="head" text="In pra[e]liis, quatuor communes respectus: Virium, Loci, Ordinis, Cohortationis."/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="faynest thou dyddest"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="range out in the front"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="Occasion or sodeyne happe in battayle"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="moste laboureth"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="exerciseth his"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="range out in the front"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="front"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="haste had none open profe"/>
+        <mark language="EN" method="pen" name="X_sign" place="intext" text="haste had none open profe"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="neede"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="sodeyne inualyons"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="terror"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="fyghtyng"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="they be done in dede"/>
+        <mark method="pen" name="X_sign" place="head"/>
+        <mark method="pen" name="X_sign" place="head"/>
+        <mark method="pen" name="X_sign" place="head"/>
+        <mark method="pen" name="X_sign" place="head"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Occasion"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="sodeyne"/>
+        <mark language="EN" method="pen" name="circumflex" place="intext" text="than vertue or"/>
+        
+    </annotation>
+</transcription>

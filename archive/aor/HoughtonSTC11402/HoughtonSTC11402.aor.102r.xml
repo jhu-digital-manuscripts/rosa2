@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.102r.tif" reader="Harvey" signature="[Mvii[r]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Resolute &amp; obstinate minds, like [the] Romans, </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>s[upr]a, l.3.c.18.</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0187" text="l.3.c.18."/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Resolute &amp; obstinate minds, like [the] Romans, [see] above, book 3, chapter 18.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Miraculous constancy.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="a mouse was solde for a hundreth pence" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A mouse soulde for C. D.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Constancy in Assieges,</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>vt s[upr]a.</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0187" text="s[upr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Constancy in Assieges, as above.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="of seruitude" type="straight"/>
+        <underline language="EN" method="pen" text="felle" type="straight"/>
+        <underline language="EN" method="pen" text="the stomblyng of" type="straight"/>
+        <underline language="EN" method="pen" text="he had recouered" type="straight"/>
+        <underline language="EN" method="pen" text="his sworde was slypt out" type="straight"/>
+        <underline language="EN" method="pen" text="retourned backe vppon his" type="straight"/>
+        <underline language="EN" method="pen" text="his sword recouered" type="straight"/>
+        <underline language="EN" method="pen" text="gatte ageyne vnto" type="straight"/>
+        <underline language="EN" method="pen" text="The Peteliniens" type="straight"/>
+        <underline language="EN" method="pen" text="nede of vyttayles" type="straight"/>
+        <underline language="EN" method="pen" text="out their fathers, mothers, &amp; their chylderne" type="straight"/>
+        <underline language="EN" method="pen" text="prolonged their owne lyfe with" type="straight"/>
+        <underline language="EN" method="pen" text="beastes hydes" type="straight"/>
+        <underline language="EN" method="pen" text="moysted and" type="straight"/>
+        <underline language="EN" method="pen" text="with leaues of the" type="straight"/>
+        <underline language="EN" method="pen" text="kynde of beastes" type="straight"/>
+        <underline language="EN" method="pen" text="a .xi. monthes" type="straight"/>
+        <underline language="EN" method="pen" text="Casiliniens" type="straight"/>
+        <underline language="EN" method="pen" text="a mouse was solde for a hundreth pence" type="straight"/>
+        <underline language="EN" method="pen" text="one famysshed" type="straight"/>
+        <underline language="EN" method="pen" text="solde" type="straight"/>
+        <underline language="EN" method="pen" text="other lyued" type="straight"/>
+        <underline language="EN" method="pen" text="layde syege vnto" type="straight"/>
+        
+        <symbol language="EN" name="SS" place="head" text="Resolute &amp; obstinate minds, like [the] Romans, s[upr]a, l.3.c.18."/>
+        
+        <mark method="pen" name="vertical_bar" place="head"/>
+        <mark method="pen" name="vertical_bar" place="head"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="retourned backe vppon his"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark method="pen" name="vertical_bar" place="tail"/>
+        <mark method="pen" name="vertical_bar" place="tail"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!--felle through-->
+        <mark method="pen" name="dot" place="intext"/> <!--scabarde, fearynge-->
+        <mark method="pen" name="comma" place="intext"/> <!--and his-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="his sword recouered"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="nede of vyttayles"/>
+        <mark method="pen" name="dot" place="intext"/> <!--chylderne, prolonged-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="beastes hydes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="with leaues of the"/>
+        <mark method="pen" name="dot" place="intext"/> <!--beastes, so-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="a mouse was solde for a hundreth pence"/>
+        
+    </annotation>
+</transcription>

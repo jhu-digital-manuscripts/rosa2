@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.065r.insert.tif" origin="added" reader="John Dee" status="fixed"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Si minerali eligere maluerit, no[n] absq[ue] 472.304:272: et
+                        224, sortietur optatum. Itaq[ue] qui habet aures audiendi, audiat
+                        Quonia[m] ip[su]m Arcanum maximu[m] o[mn]ibus benemerentibus notum fieri
+                        a[e]quum censuimus. Quicquid eni[m] antiqui Philosophi involutum
+                        tenebris et noctis caligine tradiderunt, iam aperte revelavimus.
+                        Si quis igitur ad perfectione[m] inventionis tam admirabilis
+                        Thesauri omnium maximi pervenerit, per illud maximu[m] Dei
+                        nome[n], mortalibus ineffabile ip[su]m obsecramus, atq[ue] eum obtestamur
+                        et constringimus, vt illum sincera[e] mentis probitate inviolabiliter
+                        custodiat: ne filioru[m] sapientu[m] panem canibus proijciat.
+                        Notaru[m] pra[e]dictaru[m] Ostensio <!-- FSF: table -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                If he preferred to choose from minerals, the chosen is obtained by a lot of 472, 304 or 272.
+                Consequently, one with ears to hear, shall hear. 
+                Because we suppose that the greatest secret itself is made known impartially to everyone well-deserving.
+                For whatever the old philosophers delivered, wrapped in the haziness of the shadow and night, we have revealed it by now openly. 
+                If therefore anyone reached perfection of this so admirable an invention of the thessaurus, the greatest of all,
+                we pray to that greatest name of God, which itself may be uttered by mortals, and we implore him and draw together,
+                so that his name imperishably protects us by his probity of the sincere sense, lest he throws away the bread of these wise sons to the dogs.
+                Overview of the aforementioned.
+            </translation>
+        </marginalia>
+        
+        <calculation book_orientation="0" method="pen" place="full_page" type="arithmetic">
+            19 + 5 + 17 + 17 + 1 = 58
+            59 x 8 = 472.
+        </calculation>
+        
+        <calculation book_orientation="0" method="pen" place="full_page" type="arithmetic">
+            1 + 16 + 20 + 1 = 38
+            38 x 8 = 304
+        </calculation>
+        
+        <calculation book_orientation="0" method="pen" place="full_page" type="arithmetic">
+            9 + 7 + 13 + 5 = 34
+            34 x 8 = 272
+        </calculation>
+        
+        <calculation book_orientation="0" method="pen" place="full_page" type="arithmetic">
+            1 + 5 + 17 + 5 = 28
+            28 x 8 = 224
+        </calculation>
+        
+        <table place="full_page" type="standard_table">
+            <tr>
+                <td>T</td>
+                <td>19</td>
+                <td>A</td>
+                <td>1</td>
+                <td>I</td>
+                <td>9</td>
+                <td>A</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>E</td>
+                <td>5</td>
+                <td>Q</td>
+                <td>16</td>
+                <td>G</td>
+                <td>7</td>
+                <td>E</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>R</td>
+                <td>17</td>
+                <td>V</td>
+                <td>20</td>
+                <td>N</td>
+                <td>13</td>
+                <td>R</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>R</td>
+                <td>17</td>
+                <td>A</td>
+                <td>1</td>
+                <td>E</td>
+                <td>5</td>
+                <td>E</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>1</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td/>
+                <td>59</td>
+                <td/>
+                <td>38</td>
+                <td/>
+                <td>34</td>
+                <td/>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td/>
+                <td>8</td>
+                <td/>
+                <td>8</td>
+                <td/>
+                <td>8</td>
+                <td/>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td/>
+                <td>472</td>
+                <td/>
+                <td>304</td>
+                <td/>
+                <td>272</td>
+                <td/>
+                <td>224</td>
+            </tr>
+            <text hand="Italian" language="LA">TERRA AQVA IGNE AERE</text>
+            <translation>Earth, water, fire, air.</translation>
+        </table>
+        
+    </annotation>
+</transcription>

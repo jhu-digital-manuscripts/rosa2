@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.303r.tif" pagination="969" reader="John Dee" signature="[ooo.vi.]"/> <!--JG: wrong page number-->
+    <annotation>
+        
+        <marginalia anchor_text="virtutis esse quàm aetatis cursum celeriorem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Virtutis qua[m] a[e]tatis cursus est celerior</marginalia_text>
+                </position>
+            </language>
+            <translation>The speed of virtue is faster than age.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="patri dico" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>patri dico.</marginalia_text>
+                </position>
+            </language>
+            <translation>I say to the fater.</translation>
+        </marginalia> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>à maiori</marginalia_text>
+                </position>
+            </language>
+            <translation>From the greater.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="obligare fidem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>obligare fide[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>To oblige faith.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="magistratus petere, capere, gerere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>petere capere gerere magistratu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>To reach towards, seize, and govern the magistracy.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="intemperantius" type="straight"/>
+        <underline language="LA" method="pen" text="patri" type="straight"/>
+        <underline language="LA" method="pen" text="promitto, recipio, spondeo Patres" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">15</numeral>
+        <numeral place="right_margin">12.21</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">13.8</numeral>
+        
+        <drawing anchor_text="Virtutis qua[m] a[e]tate cursus est celerior" book_orientation="0" method="pen" place="head" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

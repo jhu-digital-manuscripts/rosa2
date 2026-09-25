@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.104v.tif" pagination="194" reader="John Dee" signature="[r.j.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="intelligimus Christum Dominum annos egisse in terris trigintaduos cum dimidio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Chr[ist]i in terris conversatio</marginalia_text>
+                    <person name="Jesus Christ"/>
+                </position>
+            </language>
+            <translation>The way of life of Christ in the lands.</translation>
+        </marginalia>
+            
+        
+        <underline language="LA" method="pen" text="is paruo labore, &amp; minimo negotio id" type="straight"/>
+        <underline language="LA" method="pen" text="dimidio septuagesimae hebdomadis" type="straight"/>
+        <underline language="LA" method="pen" text="expleuisse dimidia vltima hebdomade exposita à Daniele" type="straight"/>
+        <underline language="LA" method="pen" text="autem " type="straight"/>
+        <underline language="LA" method="pen" text="annos &amp; dimidium" type="double"/>
+        <underline language="LA" method="pen" text="dum aetatis annum trigesimum ingreditur" type="straight"/>
+        <underline language="LA" method="pen" text="annorum 30. Sic" type="straight"/>
+        <underline language="LA" method="pen" text="annos egisse in terris trigintaduos cum dimidio" type="straight"/>
+        <underline language="LA" method="pen" text="dimidio septuagesimae hebdomadis expleto, quo Danielis terminantur hebdomades" type="straight"/>
+        <underline language="LA" method="pen" text="quo" type="straight"/>
+        <underline language="LA" method="pen" text="crucifixus est" type="double"/>
+        <underline language="LA" method="pen" text="decimusquartus" type="straight"/>
+        <underline language="LA" method="pen" text="ingrederetur trigesimum" type="straight"/>
+        <underline language="LA" method="pen" text="Dum autem emittit in cruce spiritum Christus Dominus, compleuerat annum trigesimumsecundum &amp; alterum dimidiatum annum" type="straight"/>
+        <underline language="LA" method="pen" text="sex me[n]ses cum" type="double"/>
+        <underline language="LA" method="pen" text="decimoquarto die mensis septimi proximè" type="straight"/>
+        <underline language="LA" method="pen" text="trigesimum secundum confectum" type="straight"/>
+        <underline language="LA" method="pen" text="annum dimidium" type="straight"/>
+        
+        <numeral language="LA" place="right_margin" text="trigintaduos cum dimidio">32 1/2</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

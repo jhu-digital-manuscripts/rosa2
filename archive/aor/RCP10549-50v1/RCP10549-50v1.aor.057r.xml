@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.057r.tif" pagination="93" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia anchor_text="Sopater" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Sopater
+                    </marginalia_text>
+                    <person name="Sopater of Halicya"/>
+                </position>
+            </language>
+            <translation>
+                Sopater of Halicya.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="transactor, &amp; adminster" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        transactor administer}
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Agent and assistant.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nisi ad nutum" type="straight"/>
+        <underline language="LA" method="pen" text="ex multis similibus ea sumam, quae maxime improbitate excellere videbuntur" type="straight"/>
+        <underline language="LA" method="pen" text="nihil erat in causa, quod" type="straight"/>
+        <underline language="LA" method="pen" text="expositis suis difficultatibus" type="straight"/>
+        <underline language="LA" method="pen" text="Posteaquam ad causam dicendam ventum est, tum" type="straight"/>
+        <underline language="LA" method="pen" text="illo die non peroratur" type="straight"/>
+        <underline language="LA" method="pen" text="consilii frequentia, &amp; dignitate" type="straight"/>
+        
+        <numeral place="right_margin">15</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">10</numeral>
+        
+    </annotation>
+</transcription>

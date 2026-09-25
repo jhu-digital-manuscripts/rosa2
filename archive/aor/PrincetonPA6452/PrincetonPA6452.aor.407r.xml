@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.407r.tif" pagination="797" reader="Harvey" signature="xxx 3 [r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text> 
+                        Tandem etiam rex Eumenes claudicat, aut vacillat, uel nescio quo pacto fluctuat. nusq[uam] tuta fides.
+                    </marginalia_text>
+                <person name="Eumenes II"/> 
+                <X-ref book_title="Aeneid" language="LA" person="Virgil" text="nusquam tuta fides"/>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text> 
+                        Courtlie briberies may do much.
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Secretum regiaru[m] largitionu[m].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                In the end even king Eumenes falls short, or wavers, or somehow hesitates. "Faith is nowhere safe". 
+                Courtlie briberies may do much. The secret of royal bribes.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text> 
+                        Aulica Regum Practica: occulta arcana, sed non satis profunda Romanis scrutinijs.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The practices of kings at court: hidden secrets, but not deep enough for Roman examinations.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        Rex Eumenes in Persei bello medius fuit animo; neq[ue] Fratris initijs, neq[ue] sua[e] respondit consuetudini. Quin Rhodij quoq[ue], 
+                        fidelissimi antèa Romanis; tum dubia fide, speculati fortunam, proniores Regis partibus fuisse visi sunt. Paterculus, initio ferè l. 
+                        I. Mundi fides. s[upr]a, i[nfr]a.
+                    </marginalia_text>
+                <person name="Eumenes II"/>
+                <person name="Marcus Velleius Paterculus"/>
+                <book title="Roman History"/>
+                    <internal_ref text="s[upr]a">
+                        <target ref="PrincetonPA6452:00000773" text="[751]"/>
+                        <target ref="PrincetonPA6452:00000776" text="[754]"/>
+                        <target ref="PrincetonPA6452:00000777" text="[755]"/>
+                    </internal_ref>
+                    <internal_ref text="i[nfr]a">
+                        <target ref="PrincetonPA6452:00001006" text="[M3v]"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                “In the war of Perseus King Eumenes maintained a neutral attitude, neither following the initiative of his brother nor his own established 
+                custom.” “Even the Rhodians, who in the past had been most loyal to the Romans, were now wavering in their fidelity, and, watching his success,
+                seemed inclined to join the king’s side.” Velleius Paterculus, approximately in the beginning of bk. 1 
+                [Roman history 1.9.2; trans. F. W. Shipley]. Faith of the world. [See] above, below.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ocium urbanum" type="straight"/>
+        <underline language="LA" method="pen" text="è terra ne gubernauerit" type="straight"/>
+        <underline language="LA" method="pen" text="Sermonu[m] satis ipsa" type="straight"/>
+        <underline language="LA" method="pen" text="loquacitatem suam contineat" type="straight"/>
+        <underline language="LA" method="pen" text="castrensibus co[n]silijs co[n]tentos futuros" type="straight"/>
+        <underline language="LA" method="pen" text="ad Eumene[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ad Antiochum co[m]munia mandata, quae subijcere conditio" type="straight"/>
+        <underline language="LA" method="pen" text="inimica" type="straight"/>
+        <underline language="LA" method="pen" text="liberam ciuitatem" type="straight"/>
+        <underline language="LA" method="pen" text="regem" type="straight"/>
+        <underline language="LA" method="pen" text="regu[m] uiribus" type="straight"/>
+        <underline language="LA" method="pen" text="reges oppugnare" type="straight"/>
+        <underline language="LA" method="pen" text="Attalo adiutore" type="straight"/>
+        <underline language="LA" method="pen" text="Eumene" type="straight"/>
+        <underline language="LA" method="pen" text="etiam Philippo" type="straight"/>
+        <underline language="LA" method="pen" text="Antiochu[m] oppugnatu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="nunc &amp; Eumenen" type="straight"/>
+        <underline language="LA" method="pen" text="Prusiam armatos esse" type="straight"/>
+        <underline language="LA" method="pen" text="Macedoniae regnum" type="straight"/>
+        <underline language="LA" method="pen" text="proximam Asiam esse" type="straight"/>
+        <underline language="LA" method="pen" text="sub specie liberandatum ciuitatum" type="straight"/>
+        <underline language="LA" method="pen" text="de Syriam" type="straight"/>
+        <underline language="LA" method="pen" text="Prusiam" type="straight"/>
+        <underline language="LA" method="pen" text="Eumeni honore praeferri" type="straight"/>
+        <underline language="LA" method="pen" text="iam Antiochum" type="straight"/>
+        <underline language="LA" method="pen" text="ad pacem secum facienda[m] co[m]pelleret Romanos" type="straight"/>
+        <underline language="LA" method="pen" text="communes duceret omnium regum hostes" type="straight"/>
+        <underline language="LA" method="pen" text="Ad Antiochum" type="straight"/>
+        <underline language="LA" method="pen" text="ad Eumenen" type="straight"/>
+        <underline language="LA" method="pen" text="speciem captiuorum redimendorum" type="straight"/>
+        <underline language="LA" method="pen" text="uerum occultiora quaedam agebantur" type="straight"/>
+        <underline language="LA" method="pen" text="praesentia inuisum quidem" type="straight"/>
+        <underline language="LA" method="pen" text="suspectum Romanis Eumenen" type="straight"/>
+        <underline language="LA" method="pen" text="Proditor enim ac propè hostis habitus" type="straight"/>
+        <underline language="LA" method="pen" text="inter se duo reges" type="straight"/>
+        <underline language="LA" method="pen" text="fraude &amp; auaritia certant." type="straight"/>
+        <underline language="LA" method="pen" text="Cydas erat" type="straight"/>
+        <underline language="LA" method="pen" text="intimis Eumenis" type="straight"/>
+        <underline language="LA" method="pen" text="ad eundem Eumeneniam antè legationibus functus" type="straight"/>
+        <underline language="LA" method="pen" text="Quae colloquia occulta &amp; legationes infames quidem erant" type="straight"/>
+        <underline language="LA" method="pen" text="sed quid actum" type="straight"/>
+        <underline language="LA" method="pen" text="reges conuenisset, ignorabatur" type="straight"/>
+        <underline language="LA" method="pen" text="Eumenes neq[ue] fauit" type="straight"/>
+        <underline language="LA" method="pen" text="Persei" type="straight"/>
+        <underline language="LA" method="pen" text="bello eum inuadere" type="straight"/>
+        <underline language="LA" method="pen" text="ipsorum odijs inter se accensae" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="X_sign" place="left_margin"/>
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="right_margin" text="ad Eumene[m]"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- fo -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- col -->
+        
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- sciat. Ab-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="liberam ciuitatem"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="regem"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="sub specie liberandatum ciuitatum"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Eumenen"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Proditor"/>
+        <mark language="LA" method="pen" name="straight_quotation_mark" place="intext" text="auaritia"/>
+        
+    </annotation>
+</transcription>

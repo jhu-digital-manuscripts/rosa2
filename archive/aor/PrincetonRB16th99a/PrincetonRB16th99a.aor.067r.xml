@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonRB16th99a.067r.tif" pagination="67[r]" reader="Harvey" signature="S.j."/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Huc Virgilij Moretum, Scitum opusculum.</marginalia_text>
+                    <person name="Virgil"/>
+                    <book title="Moretum"/>
+                </position>
+            </language>
+            <translation>Here [add] Virgil's Moretum, a known little work.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="trickly" type="straight"/>
+        <underline language="EN" method="pen" text="comely and wise, is" type="straight"/>
+        <underline language="EN" method="pen" text="looke to their labour, that eateth hir biefe" type="straight"/>
+        <underline language="EN" method="pen" text="Both out, not allow" type="straight"/>
+        <underline language="EN" method="pen" text="seruants do loiter" type="straight"/>
+        <underline language="EN" method="pen" text="and reason their" type="straight"/>
+        <underline language="EN" method="pen" text="tend on hir profit, as cat on the mouse" type="straight"/>
+        <underline language="EN" method="pen" text="and be stirrers about" type="straight"/>
+        <underline language="EN" method="pen" text="speedeth their winnings, the yeere thorow out" type="straight"/>
+        <underline language="EN" method="pen" text="Though home be but homely, yet" type="straight"/>
+        <underline language="EN" method="pen" text="that home hath no fellow, to such" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="looke to their labour, that eateth hir biefe"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="tend on hir profit, as cat on the mouse"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="speedeth their winnings, the yeere thorow out"/>
+        
+    </annotation>
+</transcription>

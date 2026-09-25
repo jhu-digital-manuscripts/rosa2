@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.053v.tif" pagination="92" reader="John Dee" signature="[h.iiij.[v]]"/> 
+    <annotation>
+       
+        <marginalia anchor_text="Septuaginta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>LXX.</marginalia_text>
+                </position>
+            </language>
+            <translation>70.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="autem Graeci Septuaginta interpretum codices" type="straight"/>
+        <underline language="LA" method="pen" text="Quindecim cubitis altior fuit aqua" type="straight"/>
+        <underline language="LA" method="pen" text="temporum plenitudinem" type="straight"/>
+        <underline language="LA" method="pen" text="diuinorum plenam" type="straight"/>
+        <underline language="LA" method="pen" text="Christo domino, facto homine exhibitionem, &amp; complementum eorum quae pro salute nostra perferenda erant Iesu" type="straight"/>
+        
+    </annotation>
+</transcription>

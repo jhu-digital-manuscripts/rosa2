@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.201r.tif" pagination="393" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Pons Lo[n]d[inii]
+                    </marginalia_text>
+                    <location name="London"/>
+                </position>
+            </language>
+            <translation>
+                London Bridge.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Almarus Comes Deuoniensis
+                    </marginalia_text>
+                    <person name="Almarus, Earl of Devon"/>
+                </position>
+            </language>
+            <translation>
+                Almarus, Earl of Devon.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="stratae publica[e]" type="straight"/>
+        <underline language="LA" method="pen" text="quicquid masculini sexus ad manus veniret, iugularent" type="straight"/>
+        <underline language="LA" method="pen" text="foeminas ad suam explenduam libidinem reseruarent" type="straight"/>
+        <underline language="LA" method="pen" text="suorum in Thamesi flumine" type="straight"/>
+        <underline language="LA" method="pen" text="nec pontem, nec vadum" type="double"/>
+        <underline language="LA" method="pen" text="Aethelredus" type="double"/>
+        <underline language="LA" method="pen" text="spem Suano" type="double"/>
+        <underline language="LA" method="pen" text="Comes Deuoniensis Almarus" type="straight"/>
+        <underline language="LA" method="pen" text="igitur pro velle" type="double"/>
+        <underline language="LA" method="pen" text="rege[m] se iussit Anglorum" type="double"/>
+        <underline language="LA" method="pen" text="Aethelredus" type="triple"/>
+        <underline language="LA" method="pen" text="inertia torpens" type="triple"/>
+        <underline language="LA" method="pen" text="iniustè exhaeredauerat" type="triple"/>
+        
+        <graph book_orientation="0" method="pen" place="right_margin" type="genealogical_tree">
+            <node id="n1" person="Sweyn Forkbeard">Suanus R</node>
+            <node anchor_text="Cnutoni" id="n2" person="Cnut the Great">Cnuto</node>
+            <link from="n1" relationship="has_child" to="n2"/> 
+        </graph>
+        
+    </annotation>
+</transcription>

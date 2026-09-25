@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.118v.tif" pagination="220" reader="John Dee" signature="[t 2[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="styx" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        styx
+                    </marginalia_text>
+                    <location name="Styx"/>
+                </position>
+            </language>
+            <translation>
+                Styx.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="oritur Spica" type="straight"/>
+        <underline language="LA" method="pen" text="oritur ♐. In" type="straight"/>
+        <underline language="LA" method="pen" text="styx esse" type="straight"/>
+        <underline language="LA" method="pen" text="Hoedus oritur" type="straight"/>
+        <underline language="LA" method="pen" text="oritur Ara" type="straight"/>
+        <underline language="LA" method="pen" text="prophetae neocori, ac" type="straight"/>
+        <underline language="LA" method="pen" text="Spica" type="straight"/>
+        <underline language="LA" method="pen" text="Sagittarius" type="straight"/>
+        <underline language="LA" method="pen" text="Hoedus" type="straight"/>
+        <underline language="LA" method="pen" text="Ara" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

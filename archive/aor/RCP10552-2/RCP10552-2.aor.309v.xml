@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.309v.tif" pagination="132" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Ioh. duce Lancastriae, &amp; Edmundo comite Cantebrigi[a]e" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Io[hann]es Dux La[n]c[astriae] Edm[undus] Co[mes] Ca[n]tab[rigiae]</marginalia_text>
+                    <person name="John of Gaunt"/>
+                    <person name="Edmund of Langley, 1st Duke of York"/>
+                </position>
+            </language>
+            <translation>John, Duke of Lancaster. Edmund, Earl of Cambridge.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Edmundo comite Cantebrigi[a]e" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>post Duce Ebor[aci]</marginalia_text>  
+                    <person name="Edmund of Langley"/>
+                </position>
+            </language>
+            <translation>Later Duke of York.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ioh. dux Lancastri[a]e, &amp; frater eius Edm. comes Cantebrigia[e]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Io[hann]es Dux La[n]cast[riae] Edm[undus] Comes Ca[n]t[ebrigiae]</marginalia_text>
+                    <person name="John of Gaunt"/>
+                    <person name="Edmund of Langley"/>
+                </position>
+            </language>
+            <translation>John, Duke of Lancaster. Edmund, Earl of Cambridge.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dux se regem castellae nominauit &amp; scripsit" hand="Italian" id="RCP10552-2:628:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Io[hann]es Dux La[n]c[astriae] se scripsit Rege[m] Castella[e].</marginalia_text>
+                    <person name="John of Gaunt"/>
+                    <location name="Castile"/>
+                </position>
+            </language>
+            <translation>John, Duke of Lancaster, declared himself King of Castile.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Cum coniuge proinde &amp; Richardo filio suo" type="straight"/>
+        <underline language="LA" method="pen" text="nam Edw. senior filius tunc obierat" type="straight"/>
+        <underline language="LA" method="pen" text="Ioh. duce Lancastriae, &amp; Edmundo comite Cantebrigi[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="50000. libraru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="dux Lancastri[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="Edm. comes Cantebrigiae" type="straight"/>
+        <underline language="LA" method="pen" text="ducentes secum duas filias Petronis, quondam" type="straight"/>
+        <underline language="LA" method="pen" text="ex post in coniuges" type="straight"/>
+        <underline language="LA" method="pen" text="dux quidem seniorem" type="straight"/>
+        <underline language="LA" method="pen" text="comes iuniorem" type="straight"/>
+        <underline id="RCP10552-2:628:u0001" language="LA" method="pen" text="ab eo tempore dux se regem castellae nominauit &amp; scripsit" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+        <graph book_orientation="0" method="pen" place="head" type="genealogical_tree">
+            <node id="n1" person="John of Gaunt">Io[hann]es Dux Lanc[astriae]</node>
+            <node id="n2" person="Constance of Castile, Duchess of Lancaster">Constantia</node>
+            <node id="n3" person="Edmund of Langley">Edm[undus] Co[mes] Ca[n]t[ebrigi[a]e</node>
+            <node id="n4" person="Isabella of Castile, Duchess of York">Isabella</node>
+            <link from="n1" relationship="has_sibling" to="n3"/>
+            <link from="n1" relationship="has_spouse" to="n2"/>
+            <link from="n2" relationship="has_spouse" to="n1"/>
+            <link from="n3" relationship="has_spouse" to="n4"/>
+            <link from="n4" relationship="has_spouse" to="n3"/>
+        </graph>
+        
+        <physical_link>
+            <marginal_annotation idref="RCP10552-2:628:m0001"/>
+            <marginal_annotation idref="RCP10552-2:628:u0001"/>
+            <relation from="RCP10552-2:628:m0001" to="RCP10552-2:628:u0001" type="directed"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

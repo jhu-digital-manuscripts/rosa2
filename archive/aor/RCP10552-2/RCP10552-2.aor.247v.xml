@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.247v.tif" pagination="12" reader="John Dee"/> <!-- MB. Add signature [B.ij.[v]]  -->
+    <annotation>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>cap. 40.</marginalia_text>
+                </position>
+            </language>
+            <translation/> <!-- MB. Translation missing? -->
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="FR">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>En Normandie, doultre sayne sont Aurenches et et Aurenchin. Constanches et Constantin, Bayeux et Bessyn. Lisieux et Leeuin. Eureux, Caa[e]n Faloise, et plusieurs aultres bonnes villes fortresses et Chasteaux.</marginalia_text>
+                    <location name="Normandy"/>
+                    <location name="Avranches"/>
+                    <location name="Coutances"/>
+                    <location name="Bayeux"/>
+                    <location name="Lisieux"/>
+                    <location name="Evreux"/>
+                    <location name="Caen"/>
+                    <location name="Falaise"/>
+                </position>
+            </language>
+            <translation>In Normandy on the Seine there are Avranches and [?], Coutances and [?], Bayeux and Besin. Lisieux and [?]. Evreux, Caen, Falaise, and many other towns, fortresses and castles.</translation> <!-- DO: I don't know what the second word in each pairing is. Possibly referring to the people of each place or an alternative name? -->
+            <!--NBW: I think these are additional places-->
+        </marginalia>
+        
+        <marginalia anchor_text="Bernardo Dano; Bernardus Siluanectensis" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nota istos duos Bernardos</marginalia_text>
+                    <person name="Bernard the Dane"/>
+                    <person name="Bernard of Senlis"/>
+                </position>
+            </language>
+            <translation>Note those two Bernards.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Bernardus Siluanectensis Richardum nepote[m] suum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Rich[ardus] Nepos Bernardi</marginalia_text>
+                    <person name="Richard I of Normandy"/>
+                    <person name="Bernard, Count of Senlis"/>
+                </position>
+            </language>
+            <translation>Richard, the nephew of Bernard.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="viginti millibus bellatorum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Milites 20000</marginalia_text>
+                </position>
+            </language>
+            <translation>20000 soldiers.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Rodulphum cognomento Tortam" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Rodulphus Torta. homo iniquissimus.</marginalia_text>
+                    <person name="Rodolf Torta"/>
+                </position>
+            </language>
+            <translation>Rodolf Torta, a very unfair man.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Haraldo regi Danorum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Haraldus Rex Danoru[m]</marginalia_text>
+                    <person name="Harald Bluetooth"/>
+                </position>
+            </language>
+            <translation>Harald, King of the Danes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="maritima littora" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ad littora Salma[e] Carbonis, qua Dina rapide in mare fluit</marginalia_text>
+                    <location name="Cabourg"/>
+                </position>
+            </language>
+            <translation>To the shores of Cabourg where the Dives quickly flows into the sea.</translation>  <!-- DO: Not sure about the location and river name - this is the closest I could find that made sense. -->
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Astutia magna.</marginalia_text>
+                </position>
+            </language>
+            <translation>Great cunning.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" id="RCP10552-2:504:m0001" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>apud vadu[m] quod d[icitu]r Herlwin a Varraville</marginalia_text>  <!-- NBW: this is more likely a place name that Dee is trying to work out than a person, as below-->
+                    <location name="Varraville"/>
+                </position>
+            </language>
+            <translation>At the ford which is called Herluin, near Varraville.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Lekherlewyn" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>forte Bekherlewyn</marginalia_text>  <!-- DO: 'Bekherlewyn' would make sense but looks like there might be another letter in there --> <!-- NBW: it's a hyphen most likely. -->
+                </position>
+            </language>
+            <translation>More likely, Bekherlewyn.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Herlewinum monasteriolo Comitem; Lambertus" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text> [ Herlewinus Comes monasterioli interfectus Lambertus</marginalia_text>
+                    <person name="Herluin, Count of Montreuil"/>
+                    <person name="Lambert"/>
+                </position>
+            </language>
+            <translation>[ Herluin, Count of the Montreuil killed, Lambertus.</translation>
+        </marginalia>
+       
+        <marginalia anchor_text="decem &amp; octo satrapas cum innumeris alijs truncatos gladiis igniuomo transmittu[n]t orco" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>18 satrapa[e] fra[n]ci occisi</marginalia_text>
+                </position>
+            </language>
+            <translation>18 Frankish governors killed.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="militis" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Dani</marginalia_text>
+                </position>
+            </language>
+            <translation>Danish.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Gereberga Francorum Regina" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Gereberga Regina.</marginalia_text>
+                    <person name="Gerberga of Saxony"/>
+                </position>
+            </language>
+            <translation>Queen Gerberga.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Henricum sc[ilicet] Regem Transrenanum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Henricus Rex Transrhenanus</marginalia_text>
+                    <person name="Henry the Fowler"/>
+                </position>
+            </language>
+            <translation>Henry, King of the trans-Rhine region.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Will[ia]mus Gemetrie[n]si apud vadu[m] Herlwini</marginalia_text>
+                    <person name="Herluin, Count of Montreuil"/>
+                    <emphasis method="pen" text="apud vadu[m] Herlwini" type="straight"/>
+                </position>
+            </language>
+            <translation>William [?] at the ford of Herluin.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ca[e]saris Burgum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Cesaris burgum [est] Cherburg</marginalia_text>
+                    <location name="Cherbourg"/>
+                </position>
+            </language>
+            <translation>Cesaris burgum [is] Cherbourg.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Bernardo Dano" type="straight"/>
+        <underline language="LA" method="pen" text="caepimus esse regales" type="straight"/>
+        <underline language="LA" method="pen" text="militauimus Duci" type="straight"/>
+        <underline language="LA" method="pen" text="Bernardus Siluanectensis" type="straight"/>
+        <underline language="LA" method="pen" text="Richardum nepote[m]" type="straight"/>
+        <underline language="LA" method="pen" text="viginti millibus bellatorum" type="straight"/>
+        <underline language="LA" method="pen" text="exire a Normannorum" type="straight"/>
+        <underline language="LA" method="pen" text="Rodulphum cognomento Tortam" type="straight"/>
+        <underline language="LA" method="pen" text="à fundamentis diruens" type="straight"/>
+        <underline language="LA" method="pen" text="ad reparandam" type="straight"/>
+        <underline language="LA" method="pen" text="ciuitatem" type="straight"/>
+        <underline language="LA" method="pen" text="Haraldo" type="straight"/>
+        <underline id="RCP10552-2:504:u0001" language="LA" method="pen" text="Caesaris Burgum" type="straight"/>
+        <underline language="LA" method="pen" text="direptionibus Normanniam concuteret" type="straight"/>
+        <underline language="LA" method="pen" text="Ludowicus eius colloquium" type="straight"/>
+        <underline language="LA" method="pen" text="amici sui" type="straight"/>
+        <underline language="LA" method="pen" text="Lekherlewyn" type="straight"/>
+        <underline language="LA" method="pen" text="decernenti mortem Ducis toto animo suo" type="straight"/>
+        <underline language="LA" method="pen" text="Herlewinum monasterioli" type="straight"/>
+        <underline language="LA" method="pen" text="profodit" type="straight"/>
+        <underline language="LA" method="pen" text="Lambertus eius frater" type="straight"/>
+        <underline language="LA" method="pen" text="decem &amp; octo satrapas cum innumeris alijs truncatos gladiis igniuomo transmittu[n]t orco" type="straight"/>
+        <underline language="LA" method="pen" text="militis" type="curved"/>
+        <underline language="LA" method="pen" text="Rex igitur ab insula sublatus, Bernardi iussu apud Rhotomagu[m] arctatur sub custodia veheme[n]ti" type="straight"/>
+        <underline language="LA" method="pen" text="suu[m] Henricum sc[ilicet] Regem" type="straight"/>
+        <underline language="LA" method="pen" text="iure hoc illi" type="triple"/>
+        
+        <mark method="pen" name="box" place="left_margin"/> 
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- magnus exacerbatus -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- terrestri ipse -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- Ducis vindicare -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- ambo die -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- lapsus in -->
+        <mark method="pen" name="est_mark" place="right_margin"/>  <!-- DO: Not sure if these are est marks or something else --> 
+        <mark method="pen" name="est_mark" place="tail"/>
+        
+        <errata amendedtext="[deleted]" copytext="Lekherlewyn" language="LA"/>
+        
+        <physical_link>
+            <marginal_annotation idref="RCP10552-2:504:m0001"/>
+            <marginal_annotation idref="RCP10552-2:504:u0001"/>
+            <relation from="RCP10552-2:504:m0001" to="RCP10552-2:504:u0001" type="undirected"/>
+        </physical_link>        
+        
+    </annotation>
+</transcription>

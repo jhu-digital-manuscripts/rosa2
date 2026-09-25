@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.039v.tif" pagination="62" reader="John Dee" signature="[f[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="dabit ex igne &amp; ferro artem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ☉ ♂ vt arte[m] significa[n]t 
+                    </marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                    <symbol_in_text name="Mars"/>
+                </position>
+            </language>
+            <translation>
+                As the sun and Mars indicate skill.
+            </translation>
+        </marginalia>
+                
+        <marginalia anchor_text="nondum soluta" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        oppositio no[n]du[m] soluta. 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A not yet open opposition.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="caput malitiosis humoribus onerant" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Caput malis humoribus oner[a]tum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The head burdened by bad humours.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        secundu[m] differe[n]tias signor[um]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                According to the differences of signs.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cantationibus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        cantationes.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Incantations.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fabricatores deorum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        fabricatores deorum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The makers of the gods. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="remotus à patria morietur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Mors extra patriam
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The death outside of the fatherland.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="dabit ex igne &amp; ferro artem" type="straight"/>
+        <underline language="LA" method="pen" text="nondum soluta coniunctione, sed" type="straight"/>
+        <underline language="LA" method="pen" text="facient caducos, &amp; lunaticos" type="straight"/>
+        <underline language="LA" method="pen" text="alienos humores" type="straight"/>
+        <underline language="LA" method="pen" text="amputant corporis, sed haec secundum differentias signorum" type="straight"/>
+        <underline language="LA" method="pen" text="tales erunt, ut mederi, &amp; curati possint" type="straight"/>
+        <underline language="LA" method="pen" text="aut cantationibus compescet" type="straight"/>
+        <underline language="LA" method="pen" text="biothanata morte" type="straight"/>
+        <underline language="LA" method="pen" text="fabricatores deorum" type="straight"/>
+        <underline language="LA" method="pen" text="sed &amp; ipsis, &amp; patri eius uarias uitae mutationes, multiplicésq[ue]  decernit" type="straight"/>
+        <underline language="LA" method="pen" text="remotus à patria morietur" type="straight"/>
+        <underline language="LA" method="pen" text="diurna genitura" type="straight"/>
+        
+    </annotation>
+</transcription>

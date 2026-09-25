@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="RCP7831-1.011r.tif" pagination="11" reader="Dee" signature="Bij[r]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Physicorvm communis est sente[n]tia" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Contra co[mmun]em physic[orum] sententiam ponenti[um] quintam essentia[m] repugnat</marginalia_text>
+                </position>
+            </language>
+            <translation>He fights against the common opinion of natural philosophers applying the quintessence.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="essentia" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Essentia quinta.</marginalia_text>
+                </position>
+            </language>
+            <translation>Quintessence.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ex co[n]cretiore suoru[m] orbiu[m] pare co[n]sta[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="natura" type="straight"/>
+        <underline language="LA" method="pen" text="essentia" type="straight"/>
+        <underline language="LA" method="pen" text="quanta[m] nu[n]cupara" type="straight"/>
+        <underline language="LA" method="pen" text="Qua[m]qua[m] dime[n]sione[m] recipere" type="straight"/>
+        <underline language="LA" method="pen" text="co[m]motio" type="straight"/>
+        <underline language="LA" method="pen" text="ut" type="double"/>
+        <underline language="LA" method="pen" text="suos orbes motu peculiari, &amp; diuinitus insito progredi" type="straight"/>
+        <underline language="LA" method="pen" text="non uiolenter, ut multi" type="straight"/>
+        <underline language="LA" method="pen" text="sed naturaliter" type="straight"/>
+        
+    </annotation>
+</transcription>

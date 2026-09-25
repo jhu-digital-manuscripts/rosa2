@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.310r.tif" pagination="599" reader="John Dee" signature="ppp.iiii."/>
+    <annotation>
+        
+        <marginalia anchor_text="sepulchra; statua[e]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Statua[e] Sepulchra.</marginalia_text>
+                </position>
+            </language>
+            <translation>Statues. Tomb.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="quaque versus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>quaque u[e]rsus</marginalia_text> 
+                </position>
+            </language>
+            <translation>To wherever.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="nostri statuas multis decreuerunt, sepulchra paucis" type="straight"/>
+        <underline language="LA" method="pen" text="te[m]pore, graui, periculóque morbo affectus, authoritate[m]" type="straight"/>
+        <underline language="LA" method="pen" text="quaque versus" type="straight"/>
+        <underline language="LA" method="pen" text="quaque versus designet" type="straight"/>
+        <underline language="LA" method="pen" text="Neminem alterius, qui suae co[n]sideret, virtuti inuidere. Itaque" type="straight"/>
+        <underline language="LA" method="pen" text="quas enim partes ipse mihi sumpsera[m], eas" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">8</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">11</numeral>
+        
+        <drawing anchor_text="quaque u[e]rsus" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

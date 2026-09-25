@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>0</illustrations>
+    <totalPages>84</totalPages>
+    <dimensions units="">
+        <width>-1</width>
+        <height>-1</height>
+    </dimensions>
+    <dates>
+        <startDate>1200</startDate>
+        <endDate>1400</endDate>
+    </dates>
+    <texts>
+        <text id="">
+            <language>fr</language>
+            <title>Fragments de manuscrits français</title>
+            <textId/>
+            <pages end="84v" start="1r">84</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>38</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>NAF 934</commonName>
+            <dateLabel>13th-14th century</dateLabel>
+            <type>manuscript</type>
+            <material>parchment</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>nouv. acq. fr. 934</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>NAF 934</commonName>
+            <dateLabel>13th-14th siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>nouv. acq. fr. 934</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

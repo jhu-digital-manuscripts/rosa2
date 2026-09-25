@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.029r.tif" pagination="41" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia anchor_text="deliberandum &amp; co[n]coquendum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        delibera[n]du[m] co[n]coquendu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To be deliberated and considered well.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="periurum &amp; me[n]dacem? qui mentiri solet, peierare consueuit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mendax. Periurus. peierare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A liar, perjured, to comit perjury, 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ductum &amp; conflatum me[n]dacium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ductu[m] co[n]statu[m] } me[n]daciu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A prolonged and refined lie.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nihil" type="straight"/>
+        <underline language="LA" method="pen" text="retribuam" type="straight"/>
+        <underline language="LA" method="pen" text="seuerissima senectus" type="straight"/>
+        <underline language="LA" method="pen" text="Cluuius? Ipsa mihi veritas" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/> <!--JG: Four plus signs forming a cross-->
+        
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">7</numeral>
+        <numeral place="right_margin">11</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">8</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

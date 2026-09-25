@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.086r.tif" pagination="171" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="admirabili" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Admirabile</marginalia_text>
+                </position>
+            </language>
+            <translation>Admirabile.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="consilium ex propria" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Consiliu[m] utile.</marginalia_text>
+                </position>
+            </language>
+            <translation>Useful advice.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Rabirio Posthumo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Rabirio posthumo.</marginalia_text>
+                    <book title="Pro Rabirio Posthumo"/>
+                </position>
+            </language>
+            <translation>Pro Rabirio Posthumo.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="In ancipiti maxime beneuolum iudicem, in obscuro docilem, in humili attentum parare debemus." type="straight"/>
+        <underline language="LA" method="pen" text="quae esse in turpi genere causae non poßit" type="straight"/>
+        <underline language="LA" method="pen" text="Aut si facie ipsa quoq[ue] premitur, uel inuidia consistentis ex diuerso patroni, aut patris, uel miserabilis senis, caeci, infantis" type="straight"/>
+        <underline language="LA" method="pen" text="Vt ab ijs quae laedu[n]t, ad eo quae prosunt, refugiamus" type="straight"/>
+        <underline language="LA" method="pen" text="Ideo'q[ue] agere aduocato, quàm litigatori facilius: quia &amp; laudat sine arroga[n]tiae crimine, &amp; aliquando              utilier etia[m] reprehendere potest." type="straight"/>
+        <underline language="LA" method="pen" text="Ideo'q[ue] primu[m] hoc intueamur. litigatoris an aduocati persona sit utendu[m], quoties utruq[ue] fieri potest. Nam" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

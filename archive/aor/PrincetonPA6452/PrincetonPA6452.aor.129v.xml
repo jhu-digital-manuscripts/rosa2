@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.129v.tif" pagination="242" reader="Harvey" signature="[X1v]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="ut Maximi cognome[n]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Fabius, vndè Maximus.</marginalia_text>
+                    <person name="Quintus Fabius Maximus Rullianus"/>
+                </position>
+            </language>
+            <translation>Fabius, why he was called ‘Maximus’.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Fabius, Decius, Papyrius Cursor, excellentissimi viri. Appius Claudius, magnus senator, et illustris pragmaticus.
+                    </marginalia_text>
+                    <person name="Quintus Fabius Maximus Rullianus"/>
+                    <person name="Publius Decius Mus I"/>
+                    <person name="Lucius Papirius Cursor"/>
+                    <person name="Appius Claudius Caecus"/>
+                </position>
+            </language>
+            <translation>Fabius, Decius, and Papyrius Cursor were truly eminent men. Appius Claudius, a great senator and distinguished pragmatic.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="humilib[us] per omnes tribus" type="straight"/>
+        <underline language="LA" method="pen" text="foru[m] &amp; campu[m] corrupit" type="straight"/>
+        <underline language="LA" method="pen" text="in duas partes discessit" type="straight"/>
+        <underline language="LA" method="pen" text="integer populus" type="straight"/>
+        <underline language="LA" method="pen" text="fore[n]sis factio" type="straight"/>
+        <underline language="LA" method="pen" text="Fabius" type="straight"/>
+        <underline language="LA" method="pen" text="Decius censores facti" type="straight"/>
+        <underline language="LA" method="pen" text="Fabius simul co[n]cordi[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="simul ne humillimorum in manu comitia" type="straight"/>
+        <underline language="LA" method="pen" text="forensem turbam excretam" type="straight"/>
+        <underline language="LA" method="pen" text="in quatuor tribus coniecit" type="straight"/>
+        <underline language="LA" method="pen" text="urbanasq[ue] eas appellauit" type="straight"/>
+        <underline language="LA" method="pen" text="ut Maximi cognome[n]" type="straight"/>
+        <underline language="LA" method="pen" text="quod tot uictorijs no[n] pepererat, hac ordinum temperatione páreret" type="straight"/>
+        
+        <underline language="LA" method="pen" text="Coloniae deductae" type="straight"/>
+        <underline language="LA" method="pen" text="deditionem accepti" type="straight"/>
+        <underline language="LA" method="pen" text="Lex de prouocatione ad populum" type="straight"/>
+        <underline language="LA" method="pen" text="tunc primùm lata est" type="straight"/>
+        <underline language="LA" method="pen" text="Duae tribus" type="straight"/>
+        <underline language="LA" method="pen" text="Samnitibus bellum indictum" type="straight"/>
+        <underline language="LA" method="pen" text="P. Decio" type="straight"/>
+        <underline language="LA" method="pen" text="Fabio ducibus" type="straight"/>
+        <underline language="LA" method="pen" text="P. Decius" type="straight"/>
+        <underline language="LA" method="pen" text="exemplum patris, deuouit se pro exercitu" type="straight"/>
+        <underline language="LA" method="pen" text="morte sua uictoriam eius pugnae" type="straight"/>
+        <underline language="LA" method="pen" text="Papyrius Cursor" type="straight"/>
+        <underline language="LA" method="pen" text="iureriurando astrictus suo, quo maiore constantia uirtutis in" type="straight"/>
+        <underline language="LA" method="pen" text="fudit" type="straight"/>
+        <underline language="LA" method="pen" text="ducenta sexaginta duo millia, &amp; trecenta" type="straight"/>
+        
+        <underline language="LA" method="pen" text="classis Gr[a]ecoru[m] Cleonymo duce Laced[a]emonio" type="straight"/>
+        <underline language="LA" method="pen" text="Aemylius missus, pr[a]elio uno fugatu[m] co[m]pulit in naues" type="straight"/>
+        
+        <symbol language="LA" name="Mars" place="left_margin" text="Samnitibus bellum"/>
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--fore[n]-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--Quin-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--no-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--uete-->
+        
+        <mark method="pen" name="apostrophe" place="head"/> <!--deponerent-->
+        <mark method="pen" name="dot" place="intext"/> <!--tenebat, donec-->
+        <mark method="pen" name="apostrophe" place="intext"/> <!--appellauit-->
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="ut Maximi cognome[n]"/>
+        <mark method="pen" name="circumflex" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="populum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="deuouit"/>
+        
+        <errata amendedtext="animis" copytext="aimis" language="LA"/>
+        
+    </annotation>
+</transcription>

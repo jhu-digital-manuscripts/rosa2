@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.247r.tif" pagination="240" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Directiones significatoru[m], in suis proprijs significatis.</marginalia_text>
+                </position>
+            </language>
+            <translation>The directions of the signifiers, in their own indications.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Debes aliter ha[e]c co[n]siderare q[uam] hic unde proponuntur / quonia[m] / si directio pessimia et mortifera
+                    venere[m] feriret, an nu[n]c, soror, filia[e] vxor [etc] pessimè se habebunt? imo potius [Alma[n]te] significatoru[m] o[mn]i[u]m <!--JG: V unsure abt 'Almante' Ablative of Almansor, going together w/ potius?-->
+                    super vna re directiones istas recipiet. vide igitur sup[ra] fo 26. et 84.v. et 86.v. in fine. Intelligit, pro tempore considerandos esse 
+                    horu[m] locoru[m] dispositiones et dominos.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:070" text="26"/>
+                        <target ref="RCP7134:188" text="84.v"/>
+                        <target ref="RCP7134:192" text="86.v"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>You ought to consider these things differently than they are proposed here, since if the most calimitous and deadly direction would
+                Venus, whether now the sister, daughters and wife, et cetera, will handle themselves badly? Indeed, rather than [Almansor] he will guarantee those directions of all signifiers concerning
+                one matter. See therefore above, folio 26 and 84 verso and 86 verso in the end. He understands, that for the time the dispositions and lords of these houses must be considered.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Contra supputant alij a Saturno inchoantes deinde a ♃ &amp;c</marginalia_text>
+                    <symbol_in_text name="Jupiter"/>
+                </position>
+            </language>
+            <translation>Others compute against the things beginning from Saturn, then from Jupiter.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aliqua r[ati]o de significatis domorum.</marginalia_text>
+                </position>
+            </language>
+            <translation>Another argument regarding the signifiers of the houses.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in Aereis" type="straight"/>
+        <underline language="LA" method="pen" text="ratio[n]e industriae" type="straight"/>
+        <underline language="LA" method="pen" text="sorores" type="straight"/> 
+        <underline language="LA" method="pen" text="statu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="famam" type="straight"/>
+        <underline language="LA" method="pen" text="quod non proprium est" type="straight"/>
+        <underline language="LA" method="pen" text="Consistentia Lunae in primo" type="straight"/>
+        <underline language="LA" method="pen" text="Mercurij in secundo" type="straight"/>
+        <underline language="LA" method="pen" text="Quia uero difficilie fuit hoc scire" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!--in qua-->
+        <mark method="pen" name="comma" place="intext"/> <!--apparet inspicimus-->
+        <mark method="pen" name="tripunctus" place="intext"/> <!-- non-->
+        
+        <errata amendedtext="propriae" copytext="proprie" language="LA"/>
+        
+    </annotation>
+</transcription>

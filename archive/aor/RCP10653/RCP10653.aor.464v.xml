@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.464v.tif" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Herbertus Comes
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>pag. 302 for the Name of Herbert</marginalia_text> 
+                    <internal_ref>
+                        <target ref="RCP10653:326:u0001" text="302"/>
+                    </internal_ref>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Homagium regis Scotiae" type="straight"/>
+        
+    </annotation>
+</transcription>

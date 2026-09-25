@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.279r.tif" pagination="537" reader="John Dee" signature="[lll.v.]"/>
+    <annotation>
+        
+        <marginalia anchor_text="quod si est criminosum, necessitatis crimen est, non volu[ntatis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Si Criminosum est, Necessitatis Crime[n] est, no[n] voluntatis</marginalia_text>
+                </position>
+            </language>
+            <translation>'If this is indictable, it is his necessity that you must indict, not his inclination' [Loeb 252, 463].</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vticam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vtica</marginalia_text>
+                    <location name="Utica"/>
+                </position>
+            </language>
+            <translation>Utica.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="imperiu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Imperium</marginalia_text>
+                </position>
+            </language>
+            <translation>Authority.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="concordissimis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>concordiss[imus]</marginalia_text>
+                </position>
+            </language>
+            <translation>Most agreeing.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nullo se implicari negocio" type="straight"/>
+        <underline language="LA" method="pen" text="quod si est criminosum, necessitatis crimen is, non volu[n]tatis" type="double"/>
+        <underline language="LA" method="pen" text="signum alienae à te voluntatis" type="straight"/>
+        <underline language="LA" method="pen" text="quae tua mens, oculi, manus, ardor animi" type="straight"/>
+        <underline language="LA" method="pen" text="Nimis vrgeo" type="straight"/>
+        <underline language="LA" method="pen" text="Caesar, tuae" type="straight"/>
+        <underline language="LA" method="pen" text="Arguis fatente[m]: no[n] est satis. accusas eum, qui causam habet" type="straight"/>
+        <underline language="LA" method="pen" text="no[n] modo mirabilia sunt, sed prodigiis similia, quae dicam" type="straight"/>
+        <underline language="LA" method="pen" text="externi isti mores, vsque ad sanguinem" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">19</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">13</numeral>
+        
+        <drawing anchor_text="Vtica" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="Imperium" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

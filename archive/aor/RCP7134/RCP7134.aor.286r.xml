@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.286r.tif" pagination="279" reader="John Dee" signature="aaa iij"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota in hoc et seque[n]ti aphorismo quod in asce[n]de[n]te debet potestatem habere planeta aliquis qui ex parte nati aliquid perpetrabit //</marginalia_text>
+                </position>
+            </language>
+            <translation>Note in this and the next aphorism that the planet in the ascendant ought to have the power over others who will accomplish something from the part of the birth.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ad 7a[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>To the seventh.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="uxorem uel inimicum" type="straight"/>
+        <underline language="LA" method="pen" text="potestatem" type="straight"/>
+        <underline language="LA" method="pen" text="ascendenti" type="straight"/>
+        <underline language="LA" method="pen" text="uxorem aut inimicorum mortes denunciant" type="straight"/>
+        <underline language="LA" method="pen" text="uel ob proprietate[m]" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="ascendenti"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

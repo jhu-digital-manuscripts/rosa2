@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.164v.tif" pagination="68" reader="John Dee" signature="[e.ii.[v]]"/>  
+    <annotation>
+        
+        <marginalia anchor_text="distinctione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>distinctio</marginalia_text>
+                </position>
+            </language>
+            <translation>A distinction.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="complexionum genera" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Complexionu[m] genera.</marginalia_text>
+                </position>
+            </language>
+            <translation>The types of conclusion.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="argumentatio nomine vno res duas significat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Argume[n]tatio multip[lex]</marginalia_text>  
+                </position>
+            </language>
+            <translation>Complex argumentation.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="similitudo est satietatis mater" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Similitudo satietatis mater.</marginalia_text>
+                </position>
+            </language>
+            <translation>Similarity, the mother of surfeit.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Nobis aute[m] videtur &amp; omnis ratiocinatio concludenda esse, &amp; illud vitium" type="straight"/>
+        <underline language="LA" method="pen" text="Nam &amp; argumentatio nomine vno res duas significat, ideo quòd" type="straight"/>
+        <underline language="LA" method="pen" text="atque hac distinctione alia quoque, quae videbuntur officere huic partitioni, propulsabimus, siqui aut assumptionem aliquando" type="straight"/>
+        <underline language="LA" method="pen" text="posse putent, aut" type="straight"/>
+        <underline language="LA" method="pen" text="Nam omnibus in rebus similitudo" type="straight"/>
+        <underline language="LA" method="pen" text="quòd quibus ex locis aliqua res confirmari potest, iisde[m] potest ex locis infirmari" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">.1.</numeral>
+        <numeral place="left_margin">.2.</numeral>
+        <numeral place="left_margin">.3</numeral>
+        <numeral place="left_margin">4</numeral>
+        
+        <drawing anchor_text="distinctio" book_orientation="0" method="pen" place="head" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="Nam omnibus in rebus similitudo" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        
+    </annotation>
+</transcription>

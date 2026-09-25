@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.183v.tif" pagination="[183[v]" reader="John Dee"/>    
+    <annotation>
+        
+        <marginalia anchor_text="porto di Zua" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Porto du Zua</marginalia_text>
+                    <location name="Zua"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="uenia" type="straight"/>
+        <underline language="IT" method="pen" text="porto di Zua" type="straight"/>
+        <underline language="IT" method="pen" text="La prima" type="straight"/>
+        <underline language="IT" method="pen" text="la seconda" type="straight"/>
+        
+        <numeral language="IT" place="left_margin" text="prima">1</numeral>
+        <numeral language="IT" place="left_margin" text="seconda">2</numeral>
+        <numeral language="IT" place="left_margin" text="terza">3</numeral>
+        
+    </annotation>
+</transcription>

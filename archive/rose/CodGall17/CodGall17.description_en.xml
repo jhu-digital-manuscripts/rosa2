@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note rend="IDENTIFICATION">
+          <p>Bayerische Staatsbibliothek, Cod. gall. 17. Parisian, mid-14th century.</p>
+        </note>
+        <note rend="BASIC INFORMATION">
+          <p>Parchment, 287 x 203 mm, 2+138 folios</p>
+        </note>
+        <note rend="MATERIAL">
+          <p><material>Parchment</material>in sound condition, but with wrinkling and minor soiling and damage. Folios 70, 71, and 126 each have a hole where a two-line initial has been cut out.</p>
+        </note>
+        <note rend="QUIRES">
+          <list>
+            <head>Collation</head>
+            <item n="I">
+              <locus from="1" to="8">1-8</locus>
+            </item>
+            <item n="II">
+              <locus from="9" to="16">9-16</locus>
+            </item>
+            <item n="III">
+              <locus from="17" to="24">17-24</locus>
+            </item>
+            <item n="IV">
+              <locus from="25" to="32">25-32</locus>
+            </item>
+            <item n="V">
+              <locus from="33" to="40">33-40</locus>
+            </item>
+            <item n="VI">
+              <locus from="41" to="48">41-48</locus>
+            </item>
+            <item n="VII">
+              <locus from="49" to="56">49-56</locus>
+            </item>
+            <item n="VIII">
+              <locus from="57" to="64">57-64</locus>
+            </item>
+            <item n="IX">
+              <locus from="65" to="72">65-72</locus>
+            </item>
+            <item n="X">
+              <locus from="73" to="80">73-80</locus>
+            </item>
+            <item n="XI">
+              <locus from="81" to="88">81-88</locus>
+            </item>
+            <item n="XII">
+              <locus from="89" to="96">89-96</locus>
+            </item>
+            <item n="XIII">
+              <locus from="97" to="104">97-104</locus>
+            </item>
+            <item n="XIV">
+              <locus from="105" to="112">105-112</locus>
+            </item>
+            <item n="XV">
+              <locus from="113" to="120">113-120</locus>
+            </item>
+            <item n="XVI">
+              <locus from="121" to="128">121-128</locus>
+            </item>
+            <item n="XVII">
+              <locus from="129" to="136">129-136</locus>
+            </item>
+            <item n="XVIII">
+              <locus from="137" to="138">137-138</locus>
+            </item>
+          </list>
+          <p>ii+2+138+ii</p>
+          <p>Quires II-IV are numbered as follows: IIus (<locus>16v</locus>), IIIus (<locus>24v</locus>), and IIIIus (<locus>32v</locus>). All quires except for XII (i.e., fol. <locus>96v</locus>) have catchwords, some of which are boxed. Signatures survive on the lower right rectos of some quires, but most have been lost to cropping. Most appear to have been in the format ai-aiiii. Some signatures, e.g., those on the bottom of <locus>18r</locus> and <locus>20r</locus> are in red ink, although there are also remnants of other signatures in dark ink (e.g., <locus>43r</locus>, where viii indicates the third leaf of the fifth quire). The foliation is consistent, but begins counting 1 as the title page (which was added later) and 2 as the first folio of Roman de la Rose. This is not inaccurate per se, but makes for odd collations and thus has been emended here so that fol. 1 is the first leaf of quire I. The foliator mistakenly wrote 57 for folio 77 (in his numbering system; it is fol. <locus>76r</locus> here), but his count did not get off due to this. On the recto of the second leaf in the bifolium that precedes the manuscript (i.e., that which foliator designated as 1r), is written the following in a calligraphic script: LE / ROMAN / de / LA ROSE . / Ecrit / en mil quatre cent / sept</p>
+        </note>
+        <note rend="LAYOUT">
+          <p>Ruled in lead for two columns. No prickings survive. Some slight variations in layout, but similar throughout. Columns ruled for 40-41 lines with a text block of 211-214 mm x 155-157 mm; each column 71-72 mm in width. Each column has three vertical lines on the left and one vertical line on the right, with the vertical lines on the left spaced 4-5mm apart. The scribe is sometimes irregular about placement of first letter of each line – e.g., on <locus>48r</locus> the first letter is at times on the middle of the three vertical lines on left, and at times in the left compartment formed by these three lines.</p>
+        </note>
+        <note rend="SCRIPT">
+          <p>Probably the work of one scribe; textualis script in brown ink. There are numerous corrections throughout, including missing words and/or lines added in margins (e.g., <locus>28v</locus>, <locus>60r</locus>), the use of a and b to indicate lines copied out of order (e.g., <locus>48r</locus>), strikethrough, subpunction, and overwriting (e.g., <locus>73r</locus>), and erasure (e.g., <locus>87r</locus>). Some ascenders on top lines are adorned with heads (e.g., <locus>17v</locus>, <locus>21v</locus>, <locus>47r</locus>).</p>
+        </note>
+        <note rend="DECORATION">
+          <p>Rubrics for miniatures, changes in speaker, textual divisions in red. Guidewords for rubricator and guideletters for artist of 2-line initials survive. On <locus>1r</locus>, two four-line initials. On left, blue M on red background, with the lobes of the M infilled with goldleaf and decorated with red vine ending in red or blue leaves. Red and blue areas highlighted and decorated with white penwork.  On right, the letter A, similarly decorated, but with red letter on blue background. This same decoration scheme – a red letter on blue background or vice versa, infilled with gold vines/leaves – is used as well for 2-letter initials accompanying miniatures. Initials on <locus>1r</locus> as well as 2-line initials accompanying miniatures are further decorated with columns, vines, and leaves in red, blue, and gold with white highlighting that extend to the left the length of the text block (i.e., in left margin if initial is in left column, or intercolumnar if initial is in right column). Elsewhere, numerous 2-line initials in red, blue, and gold with white penwork. There are no formal borders, but vines extending from a decorated initial on 1r span the bottom margin of the folio and are decorated with two birds. 17 miniatures. On <locus>1r</locus>, a double miniature spanning both columns, approximately 17 lines in height. Elsewhere, miniatures span one column and are 10-11 lines in height.</p>
+        </note>
+        <note rend="BINDING">
+          <p>Binding 295 mm in height, 230 mm from center of spine to fore edge. Probably French, 18th century. Bound in brown leather, likely faux calf. Rectangular boards, five raised bands, remnants of head and tail bands in blue and white, but these now badly deteriorated. Front and back covers decorated simply with single blind-tooled filet around outer edge. Spine divided into six compartments. In first, a white rectangular paper label reading Cod. gall. 17. (Cod. gall pre-printed, and 17 handwritten beneath in black ink). In second compartment, LE ROMAN / DE / LA ROSE stamped in gold on red morocco background; this is framed with gold line. At top and bottom, outside of the gold line, an additional serrated/toothed gold line. On left and right edges of this frame, an additional dotted line runs vertically. Other compartments outlined simply with a blind-tooled line around edges of compartment. Top, bottom, and fore edges decorated with gold roll, although this is now scuffed away.  Turn-ins decoarated with gold roll. Green bookmark. Gilt edges. In front, marbled pastedowns (red, blue, white, green, orange/yellow), with one half glued to binding and the other a flyleaf glued to a plain piece of paper, which is followed by one additional paper flyleaf. This is mirrored in the back. In the front, two additional parchment leaves (a bifolium) have been added, one of which contains a calligraphic title page for the poem. Binding is unstable, with the front cover nearly detached.</p>
+        </note>
+        <note rend="HISTORY">
+          <p>The manuscript was formerly in the collection of the Mannheimer Hofbibliothek (Bibliotheca Palatina), the contents of which were transferred to Munich in 1803/04 and afterwards became part of the collection of the state library. The former shelfmark is recorded on the verso of front flyleaf i: Ex. Bibl. Palatina Mannh. No X. 1626. </p>
+          <p>A number of other markings found throughout the manuscript point to its use and classification within the Beyerische Staatsbibliothek. On the recto of the first parchment leaf (i.e., the added bifolium), is an oval stamp in black ink reading BIBLIOTHECA REGIA MONACENSIS, a stamp formerly used by the Bayerische Staatsbibliothek. This stamp is also found of verso of the next leaf and on 138v. On the verso of front flyleaf i is Cod. c. pict. 59, written in black ink and, to the right of this, Cod. gall. 17, written in blue ink. The first inscription classifies the manuscript as an illuminated manuscript, i.e., Codices cum picturis, while the latter classifies it as part of the library’s collection of French-language manuscripts, i.e., Codices gallici. On the verso of front flyleaf ii, written in pencil, is Cat. impr 4 pag 2, a reference to the Catalogus Codicum Manu Scriptorum Bibliothecae Regiae Monacensis, which contains a description of the manuscript in volume 4 on page 2.</p>
+          <p>
+                  On 73r, an early user has written a note regarding Faus Semblant’s lengthy interpolation, which is found in many manuscript copies (see Langlois, Les manuscrits du Roman de la Rose, pp. 426-30 for a discussion of the interpolation). In his brief description of the manuscript, Langlois transcribes the note and proposes a reconstruction of the words lost when a binder cropped the manuscript:
+               </p>
+          <p>
+            <hi rend="italics">En face du premier vers de l’interpolation qui suit le v. 11222, en marge : « Nota que tou[te] ceste partie fa[ult] en pluseurs l[ivres] jusques a F[aus] Semblent d[es] » (fin du XIVe ou XVe siècle).</hi>
+          </p>
+        </note>
+        <note rend="TEXT">
+          <p><hi rend="italics">Roman de la Rose</hi>, fols. <locus from="1" to="138">1-138</locus></p>
+        </note>
+        <note rend="BIBLIOGRAPHY">
+          <p>Langlois, Ernest. <hi rend="italics">Les Manuscrits du Roman de la Rose: Description et Classement.</hi> Lille: Tallandier, 1910. p. 163.
+            </p>
+          <p><hi rend="italics">Catalogus Codicum Manu Scriptorum Bibliothecae Regiae Monacensis.</hi> Wiesbaden: Otto 
+               Harrassowitz, 1895. Reprinted 1971. vol. IV, p. 2.
+               
+            </p>
+        </note>
+        <note>
+              Description by Timothy L. Stinson.
+            </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscript</note>
+          <note type="commonName">Cod.gall. 17</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="138" unit="folios">138 folios</measure>
+            <dimensions>
+              <height unit="mm">287</height>
+              <width unit="mm">203</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">82</note>
+          <note type="material">parchment</note>
+          <pubPlace>France</pubPlace>
+          <date notAfter="1375" notBefore="1325">14th century</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Munich</settlement>
+            <repository>Bayerische Staatsbibliothek</repository>
+            <idno>Cod. gall. 17</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="157r">1r-138r</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">138</note>
+              <note type="illustrations">82</note>
+              <note type="linesPerColumn">40</note>
+              <note type="leavesPerGathering">8</note>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

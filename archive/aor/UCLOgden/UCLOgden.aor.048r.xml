@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.048r.tif" pagination="79" reader="John Dee" signature="g 4"/>
+    <annotation>
+        
+        <marginalia anchor_text="hi uxorem difficile consequentur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Qui difficile uxorem co[n]sequentur.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                He who with difficulty seeks for a wife.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Qua[n]tum refert 8m vel matutinu[m] vel vespertinu[m] in hoc loco?
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                How much does either the eighth morning or eighth evening matter in this place?
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="naucleri" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Naucleri.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Skippers.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="metallorum praepositos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Metallor[um] prepositi.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Those in command of metals.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="apocos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Apocopi
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Apocopes.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="spathici, aut colobici" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Spathici. Colobici
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Mutilated. <!-- FSF: not sure about spathici; seems to be related to spatula -->
+                <!-- M.B. See: https://books.google.co.uk/books?id=IRJuwgs5dbAC&pg=PA814&dq=%22spathici%22&hl=en&sa=X&ved=0ahUKEwjZ4ru09dbVAhXGIcAKHfs8BwUQ6AEIZjAJ#v=onepage&q=%22spathici%22&f=false -->
+                <!-- FSF: it remains unclear to me -->
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mortem repentinam" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mors repe[n]tina
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A sudden death.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="difficile consequentur, Nam erunt libidinosi" type="straight"/>
+        <underline language="LA" method="pen" text="naucleri" type="straight"/>
+        <underline language="LA" method="pen" text="uel organarios" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; usq[ue] ad ultimum uitae te[m]pus infames. Si" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; apocopos" type="straight"/>
+        <underline language="LA" method="pen" text="habebunt mortem repentinam" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; omnia scientes perficiet, rerum" type="straight"/>
+        <underline language="LA" method="pen" text="fascinantes mulieres dabunt" type="straight"/>
+        <underline language="LA" method="pen" text="artus laruari" type="straight"/>
+        <underline language="LA" method="pen" text="aut enim meretrices, aut publicas, aut scaenicas, aut infames uxores" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

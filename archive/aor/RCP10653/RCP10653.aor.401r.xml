@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.401r.tif" pagination="351" reader="John Dee" signature="Gggg ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Eadvvardus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Edwardus.
+                    </marginalia_text>
+                    <person name="Edward I, King of England"/>
+                </position>
+            </language>
+            <translation>
+                Edward I, King of England.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Huius primogenitus Eadvvardus" type="straight"/>
+        <underline language="LA" method="pen" text="Saluatoris suum milite[m] perire" type="straight"/>
+        <underline language="LA" method="pen" text="Thomas de Clare, qui secu[m] captiuos" type="straight"/>
+        
+        <mark method="pen" name="circumflex" place="intext"/>
+        
+        <errata amendedtext="[deleted]" copytext="fuerat" language="LA"/>
+        <errata amendedtext="Mcclxxij." copytext="Mcclxij." language="LA"/>
+        
+    </annotation>
+</transcription>

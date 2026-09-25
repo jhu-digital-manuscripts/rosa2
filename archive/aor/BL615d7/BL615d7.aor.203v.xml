@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.203v.tif" pagination="[203v]" reader="John Dee" signature="[Cciij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Capo di Gratie a Dio" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Capo di Gratie a Dio</marginalia_text> 
+                    <location name="Cape Gratia Dios"/>
+                </position>
+            </language>
+            <translation>Cape Gratia Dios</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="di cosi buon" type="straight"/>
+        <underline language="IT" method="pen" text="era netta" type="double"/>
+        <underline language="IT" method="pen" text="per meza" type="double"/>
+        <underline language="IT" method="pen" text="terra v'erano" type="straight"/>
+        <underline language="IT" method="pen" text="acqua due" type="double"/>
+        <underline language="IT" method="pen" text="volgeua al Mezo" type="straight"/>
+        <underline language="IT" method="pen" text="Capo di Gratie" type="straight"/>
+        <underline language="IT" method="pen" text="pericolose secche" type="double"/>
+        <underline language="IT" method="pen" text="ad vn fiume" type="straight"/>
+        <underline language="IT" method="pen" text="che annegò l'vna" type="straight"/>
+        
+        <mark language="IT" method="pen" name="bracket" place="left_margin"/>
+        
+        <drawing anchor_text="terra v'erano" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

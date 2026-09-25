@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.263v.tif" pagination="40" reader="John Dee" signature="[F.j.[v]]"/>   
+    <annotation>
+        
+        <marginalia anchor_text="Huberti comitis de Moriana" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hubertus Comes de Moriana.</marginalia_text>
+                    <person name="Hubert, Count of Maurienne"/>
+                </position>
+            </language>
+            <translation>Hubert, Count of Maurienne.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hugo de Gornai" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hugo de Gornai</marginalia_text>
+                    <person name="Hugh IV de Gournay"/>
+                </position>
+            </language>
+            <translation>Hugh de Gournay.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Gulielmus Camerarius, de Tankeruilla" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Gulielmus Camerarius de Tankervilla</marginalia_text>
+                    <person name="William de Tancarville"/>
+                </position>
+            </language>
+            <translation>William, Chamberlain of Tancarville.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Iohanni filio suo" type="straight"/>
+        <underline language="LA" method="pen" text="sine terra" type="double"/>
+        <underline language="LA" method="pen" text="septenni filiam primogenitam" type="double"/>
+        <underline language="LA" method="pen" text="Huberti comitis de Moriana" type="straight"/>
+        <underline language="LA" method="pen" text="Hubertus comes de Moriana" type="straight"/>
+        <underline language="LA" method="pen" text="rex filius regis" type="straight"/>
+        <underline language="LA" method="pen" text="Comes S. Ægidij" type="straight"/>
+        <underline language="LA" method="pen" text="Gisorciu[m], quod filio suo regi, rex Francoru[m] Lodowicus cum filia sua Margareta nomine" type="straight"/>
+        <underline language="LA" method="pen" text="Hugo de Gornai" type="straight"/>
+        <underline language="LA" method="pen" text="tam pater qua[m] filius" type="grid"/>
+        <underline language="LA" method="pen" text="Camerarius de Tankeruilla fecit similiter" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- cognomento sine -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- Tankeruilla fecit -->
+        
+        
+    </annotation>
+</transcription>

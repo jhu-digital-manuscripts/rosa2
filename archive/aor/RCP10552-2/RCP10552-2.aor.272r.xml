@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.272r.tif" pagination="57" reader="John Dee" signature="H.ij."/>
+    
+    
+    <annotation>
+        
+            
+        <marginalia anchor_text="Gilbertus de Clare" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gilbertus de Clare</marginalia_text>
+                    <person name="Gilbert de Clare, 5th Earl of Gloucester"/>
+                </position>
+            </language>
+            <translation>Gilbert de Clare.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="Thomas Comes de Perticis" type="straight"/>
+        <underline language="LA" method="pen" text="de complicibus Lodowici" type="straight"/>
+        <underline language="LA" method="pen" text="Gilbertus de Clare vir inclytus" type="straight"/>
+        <underline language="LA" method="pen" text="cepit Gulielmus Mareschalli" type="straight"/>
+        <underline language="LA" method="pen" text="Isabellam filiam suam" type="triple"/>
+        <underline language="LA" method="pen" text="Gulielmus de fortibus" type="straight"/>
+        
+        
+        <graph book_orientation="0" method="pen" place="right_margin" type="genealogical_tree">
+            
+            <node id="n1" person="William Marshal, 1st Earl of Pembroke">Gulielmus Mariscal</node>
+            <node id="n2" person="Isabel Marshal">Isabella</node>
+            <node id="n3" person="Gilbert de Clare, 5th Earl of Gloucester">Gilbertus de Clare</node>
+            
+            <link from="n1" relationship="has_child" to="n2"/>
+            <link from="n2" relationship="has_spouse" to="n3"/>
+            <link from="n3" relationship="has_spouse" to="n2"/>
+            
+        </graph>
+        
+        
+    </annotation>
+    
+    
+</transcription>

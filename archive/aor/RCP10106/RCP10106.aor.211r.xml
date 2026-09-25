@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.211r.tif" pagination="421" reader="John Dee" signature="D 3"/> 
+    <annotation>
+        
+        <marginalia anchor_text="obliqua figura" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>obliqua figura</marginalia_text>
+                </position>
+            </language>
+            <translation>An oblique figure.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="latens &amp; illa significatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Latens significatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Tacit signal.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Graecos schemata" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gra[e]coru[m] schemata</marginalia_text>
+                </position>
+            </language>
+            <translation>The figures of the Greeks.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="allegoriae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Allegoria.</marginalia_text>
+                </position>
+            </language>
+            <translation>Allegory.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quo modo contra figuras responderi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quom[od]o co[n]tra figuras repondendu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>The response to how figures are to be countered.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="tamen, &amp; obliqua figura in patrem plus facit quàm" type="straight"/>
+        <underline language="LA" method="pen" text="Vt aute[m] nemo co[n]tra id, quod uult, dicit, ita potest aliquid melius uelle, quàm dicit. Quo" type="straight"/>
+        <underline language="LA" method="pen" text="latens &amp; illa significatio, qua cùm ius asperius" type="straight"/>
+        <underline language="LA" method="pen" text="exorato raptae patre suum non exorat, agit cum eo dementiae" type="straight"/>
+        <underline language="LA" method="pen" text="deponere[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="relinquerent" type="straight"/>
+        <underline language="LA" method="pen" text="uictorijs utendum esse. Totum autem allegoriae simie est, aliud dicere, aliud intelligi uelle. Quaesitum" type="straight"/>
+        <underline language="LA" method="pen" text="oporteat, &amp; quidam semper ex diuerso aperiendas putauerunt, sicut latentia uitia rescinduntur" type="straight"/>
+        <underline language="LA" method="pen" text="dilui obiecta no[n] possunt" type="straight"/>
+        
+        <mark method="pen" name="scribble" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

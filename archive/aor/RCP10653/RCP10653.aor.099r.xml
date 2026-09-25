@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.099r.tif" pagination="189" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="apud Vectam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Vecta subiugata
+                    </marginalia_text>
+                    <location name="Isle of Wight"/>
+                </position>
+            </language>
+            <translation>
+                The Isle of Wight was subjugated.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Lotho sororio Arthuri regnum assignauerat Norvvegensium. Erat enim nepos Sichelini" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Lothus nepos sichelini regis Norwegia[e]: sororius Arthuri.
+                    </marginalia_text>
+                    <person name="Sichelm, King of Norway"/>
+                    <person name="Loth"/>
+                    <person name="King Arthur"/>
+                </position>
+            </language>
+            <translation>
+                Loth, the nephew of Sichelm, King of Norway, Arthur's brother-in-law.
+            </translation>  
+        </marginalia>                                                                                       
+        
+        <marginalia anchor_text="VValuuanus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Walwanus.
+                    </marginalia_text>
+                    <person name="Gawain"/>
+                </position>
+            </language>
+            <translation>
+                Gawain.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="illam sibi subdiderunt" type="straight"/>
+        <underline language="LA" method="pen" text="clarè loque[n]do" type="straight"/>
+        <underline language="LA" method="pen" text="primus" type="double"/>
+        <underline language="LA" method="pen" text="parato nauigio" type="straight"/>
+        <underline language="LA" method="pen" text="Norvvegiam adiuit" type="double"/>
+        <underline language="LA" method="pen" text="Sichelinum" type="straight"/>
+        <underline language="LA" method="pen" text="qui moriens Lotho sororio Arthuri regnum assignauerat Norvvegensium" type="straight"/>
+        <underline language="LA" method="pen" text="Erat enim nepos" type="straight"/>
+        <underline language="LA" method="pen" text="VValuuanus filius predicti Lothi" type="straight"/>
+        <underline language="LA" method="pen" text="Ta[n]dem cum Arthurus Lothu[m], subactis Norvvigensibus, in regnu[m] sublimasset" type="straight"/>
+        <underline language="LA" method="pen" text="Britanniam cum gaudio remeauit, Gallicanas" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

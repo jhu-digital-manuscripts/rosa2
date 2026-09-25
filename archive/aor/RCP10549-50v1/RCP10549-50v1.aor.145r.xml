@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.145r.tif" pagination="269" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="apud Carthaginem nouam [...] veterem Carthaginem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Carthago [ noua vetus
+                    </marginalia_text>
+                    <location name="Cartagena"/>
+                    <location name="Carthage"/>
+                </position>
+            </language>
+            <translation>
+                Cartagena, Cathage.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="infulis imperii venditis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        infulis imperij venditis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                By selling the jewels of the Empire.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="propè hasta praeconis insectari" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        propè hasta pr[a]econis insectari
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Almost to make an atack with a crier's spear.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Videte nunc proximo capite, vt impurus" type="straight"/>
+        <underline language="LA" method="pen" text="est quod indagaris, inueneris, ex tenebris erueris, quanqua[m]" type="straight"/>
+        <underline language="LA" method="pen" text="qui armis &amp; virtute pepererunt" type="straight"/>
+        <underline language="LA" method="pen" text="nunc quoad fecerit iter apertius quàm" type="straight"/>
+        <underline language="LA" method="pen" text="infulis imperii" type="straight"/>
+        
+        <numeral place="right_margin">4</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">12</numeral>
+        
+        
+    </annotation>
+</transcription>

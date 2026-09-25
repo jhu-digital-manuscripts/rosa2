@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.220v.tif" pagination="[213v]" reader="John Dee" signature="[HH[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Oportet diuidere ascendentem in uno die coeli quantitatem; per motum Lunae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Diuide ascende[n]te[m] in toto anno coeli qua[n]titate[m] p[er] ☉ motu[m] in anno</marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                </position>
+            </language>
+            <translation>Divide the ascending quantity of the sky in a whole year through the motion of the Sun in a year.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vide quibus delectetur homo, &amp; habebis Planetam praedominantem qualitatibus animi" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ex ho[min]is studio voluntario, q[ui]s planeta ei pr[ae]sit</marginalia_text> 
+                </position>
+            </language>
+            <translation>From the voluntury studio of men, which place may be in charge of him.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Eade[m] r[ati]o et in ☉ haberi / et alijs planetis potest</marginalia_text> 
+                    <symbol_in_text name="Sun"/>
+                </position>
+            </language>
+            <translation>The same argument can be held even for the Sun and other planets.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>☉ occasu. At vera est hor. 20. m[inutae] 44 a ☉ occasu.</marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                </position>
+            </language>
+            <translation>At sunset. And the true hour is 20, minute 44, from sunset.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ascendentem in uno die" type="straight"/>
+        <underline language="LA" method="pen" text="per motum Lunae in uno" type="straight"/>
+        
+        <errata amendedtext="5" copytext="4" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="meridie" language="LA"/>
+        <errata amendedtext="16" copytext="10" language="LA"/>
+        
+    </annotation>
+</transcription>

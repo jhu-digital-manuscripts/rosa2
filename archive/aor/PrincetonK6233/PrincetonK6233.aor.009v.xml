@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonK6233.009v.tif" reader="Harvey" signature="[β1v]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Veterum sigla, et nota[e].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Abbreviations for old things, and notes.
+            </translation>
+        </marginalia>
+        
+        <underline language="EL" method="pen" text="ὁλογραμμάτων" type="straight"/> 
+        <underline language="LA" method="pen" text="per literarum compendiamos" type="straight"/>
+        <underline language="LA" method="pen" text="autore" type="straight"/>
+        <underline language="LA" method="pen" text="potissimum Mecoenate" type="straight"/>
+        <underline language="LA" method="pen" text="quasdam literaru[m] notas" type="straight"/>
+        <underline language="LA" method="pen" text="celerrimè" type="straight"/>
+        <underline language="LA" method="pen" text="easq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="publicasse" type="straight"/>
+        <underline language="LA" method="pen" text="Notae" type="straight"/>
+        <underline language="LA" method="pen" text="literae" type="straight"/>
+        <underline language="LA" method="pen" text="compendia quaeda[m] dictionum" type="straight"/>
+        <underline language="EL" method="pen" text="σημεῖα" type="straight"/>
+        <underline language="EL" method="pen" text="μικροῖς καὶ βραχέσι τύποις" type="straight"/> 
+        <underline language="EL" method="pen" text="πολλῶν γραμμάτων δύναμιν ἔχοντα" type="straight"/>
+        <underline language="LA" method="pen" text="sigla" type="straight"/>
+        <underline language="LA" method="pen" text="verò notis maximè" type="straight"/>
+        <underline language="LA" method="pen" text="notis" type="straight"/>
+        
+        <mark method="chalk" name="horizontal_bar" place="left_margin"/>
+        <mark method="chalk" name="horizontal_bar" place="left_margin"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="per literarum compendiamos"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Mecoenate"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="quasdam literaru[m] notas"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="celerrimè"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Notae"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="literae"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="compendia quaeda[m] dictionum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="sigla"/>
+        
+    </annotation>
+</transcription>

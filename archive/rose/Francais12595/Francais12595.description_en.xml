@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note rend="IDENTIFICATION">
+          <p>fr. 12595, Bibliothéque nationale de France, Paris. French, 15th c.</p>
+        </note>
+        <note rend="BASIC INFORMATION">
+          <p>Parchment, 323 x 235 mm, 202 folios (numbered to 203, but one leaf missing after fol. 30)</p>
+        </note>
+        <note rend="MATERIAL">
+          <p><material>Parchment</material>, sound condition throughout. Repaired corner at fol. 171, some water damage and subsequent wrinkling from fol. 171 to the end.</p>
+        </note>
+        <note rend="QUIRES">
+          <list>
+            <head>Collation</head>
+            <item n="I">
+              <locus from="1" to="8">1-8</locus>
+            </item>
+            <item n="II">
+              <locus from="9" to="16">9-16</locus>
+            </item>
+            <item n="III">
+              <locus from="17" to="24">17-24</locus>
+            </item>
+            <item n="IV">
+              <locus from="25" to="32">25-32</locus>
+            </item>
+            <item n="V">
+              <locus from="33" to="40">33-40</locus>
+            </item>
+            <item n="VI">
+              <locus from="41" to="48">41-48</locus>
+            </item>
+            <item n="VII">
+              <locus from="49" to="56">49-56</locus>
+            </item>
+            <item n="VIII">
+              <locus from="57" to="64">57-64</locus>
+            </item>
+            <item n="IX">
+              <locus from="65" to="72">65-72</locus>
+            </item>
+            <item n="X">
+              <locus from="73" to="80">73-80</locus>
+            </item>
+            <item n="XI">
+              <locus from="81" to="84">81-84</locus>
+            </item>
+            <item n="XII">
+              <locus from="85" to="92">85-92</locus>
+            </item>
+            <item n="XIII">
+              <locus from="93" to="100">93-100</locus>
+            </item>
+            <item n="XIV">
+              <locus from="101" to="108">101-108</locus>
+            </item>
+            <item n="XV">
+              <locus from="109" to="116">109-116</locus>
+            </item>
+            <item n="XVI">
+              <locus from="117" to="124">117-124</locus>
+            </item>
+            <item n="XVII">
+              <locus from="125" to="132">125-132</locus>
+            </item>
+            <item n="XVIII">
+              <locus from="133" to="140">133-140</locus>
+            </item>
+            <item n="XIX">
+              <locus from="141" to="148">141-148</locus>
+            </item>
+            <item n="XX">
+              <locus from="149" to="156">149-156</locus>
+            </item>
+            <item n="XXI">
+              <locus from="157" to="164">157-164</locus>
+            </item>
+            <item n="XXII">
+              <locus from="165" to="172">165-172</locus>
+            </item>
+            <item n="XXIII">
+              <locus from="173" to="180">173-180</locus>
+            </item>
+            <item n="XXIV">
+              <locus from="181" to="188">181-188</locus>
+            </item>
+            <item n="XXV">
+              <locus from="189" to="196">189-196</locus>
+            </item>
+            <item n="XXVI">
+              <locus from="197" to="202">197-202</locus>
+            </item>
+            <item>
+              <locus>203</locus>
+            </item>
+          </list>
+          <p>Quire IV is a gathering of 7 due to leaf missing after fol. 30</p>
+          <p>Quire XI is a gathering of four.</p>
+          <p>Quire XXVI: The original makeup of this gathering is difficult to discern; it was perhaps a quarternio with final leaves trimmed away.</p>
+          <p>Folio 201-202 numbered later in black ink, arabic numerals</p>
+          <p>ii+202+ii: No quire marks or signatures. Catchwords at center of lower margins. Foliation at top center in red in roman numerals that appear to be contemporary with manuscript; foliation is accurate throughout, but leaf 30 is missing.</p>
+          <p>Folio 203 is an added singleton (really a former pastedown) numbered later yet in blue ink.</p>
+        </note>
+        <note rend="LAYOUT">
+          <p>Ruled in lead for two columns. Prickings for vertical through lines survive along bottom and top edges throughout; those for horizontal lines usually cropped away, but some survive – see, e.g. fols. <locus from="46" to="47">46-47</locus>. Ruled with six vertical and two horizontal through lines; vertical lines define each side of the two text blocks, with an additional line in each column to set off first letter from the rest of the line. Horizontal lines define top and bottom of text block. Text block measures 220 x 159 mm, each column 70 mm wide. 37 lines each per column.</p>
+        </note>
+        <note rend="SCRIPT">
+          <p>One scribe throughout, using cursiva formata script (single compartment a and f and s extend below line, but no loops on ascenders). No display scripts. Ornamented ascenders along top margin throughout, and also within text block when space is left in the line(s) above – see e.g. <locus>9v</locus>, where both types are visible. Corrections very sparse – examples include inserted line in margin <locus>11v</locus>, <locus>115r</locus>; erasure at <locus>109v</locus>, and marginal a, b on <locus>126r</locus> to show proper order of lines. Ink stints vary from brown to a very dark, almost black.</p>
+        </note>
+        <note rend="DECORATION">
+          <p>Rubrics accompany miniatures, and rubrication also marks changes in speakers and textual divisions. Foliation is also by rubricator. A few guidewords for rubricators survive, e.g. <locus>21r</locus>, <locus>44v</locus>, <locus from="76v" to="77r">76v-77r</locus>; guideletters for initials also survive, e.g. <locus>11v</locus>, <locus from="14v" to="15r">14v-15r</locus>. An 8-line opening initial, blue on red background, with delicate white penwork on both the letter and the background. Background surrounded by gold frame; letter infilled with goldleaf background and elaborate vinework – a pale red and white vine with blue and red three-lobed leaves, all embellished with white. Numerous two-line initials throughout, alternating gold with blue penwork and blue with red penwork. In addition, numerous 1-line paraphs in same scheme of red/blue or gold/blue. U-shaped border on 1r. Each of the three sides of the border features a different design. On the left, a straight red/white line with a blue vine curling around it and red leaves coming directly off of it, and gold leaf filling in the interstices between vine and straight line. On the bottom, red, blue, and green designs in the shape of shields extend between two dragons’ mouths. Shield designs contain a void area in the center partly filled with gold leaf. On the right, green, red, and blue leaf designs with gold buds. Another design, featuring green, red, and blue leaves on intertwined vines, with some gold in void area, separates the two columns. Blue and red vines extend into all four margins and feature red, blue, and gold leaves. Although the top has no frame per se, it is mostly covered by vines extending from left and right. Margins also have green vines with small flowers, now somewhat faded, and a number of birds and butterflies. 82 miniatures; of these, 1 large (half page) and 79 small (12-line, one column) miniatures in Rose, and 1 large each at beginning of <hi rend="italics">Le Testament</hi> and <hi rend="italics">Le Codicille</hi>.</p>
+          <p>Decoration of <hi rend="italics">Le Testament</hi>: An 8-line opening initial featuring a pink letter with red designs and white penwork. Letter surrounded by gold frame and, on all sides except left, a blue bar with white penwork. Background of gold leaf infilled with blue/white vine and red leaves decorated with white. Other initials are 1 line in height and alternate blue with red penwork and gold with blue penwork. Border is U-shaped frame, thin blue/white and red/white lines on the inside of this frame. On the outside, alternating blue bar w/ white penwork, gold leaf bars with toothed/crenellated design, and red bars w/ white penwork. On top, right, and bottom, red/white and blue/white vines extend, with gold, blue, and red leaves, the latter two also featuring white highlighting. In the left margin, simple black ink vines with gold leaves. A dragon is in the right margin. Decorartion of <hi rend="italics">Le Codicille</hi> virtually identical to that of <hi rend="italics">Le Testament</hi>, with an additional dragon in lower margin.</p>
+        </note>
+        <note rend="BINDING">
+          <p>France, early 19th-c., 339 mm in height, 268 mm from center of spine to fore edge. Tan sheepskin over rectangular pasteboards. Six raised bands on spine; headband and tailband of pink and white thread. Gilt and gauffered edges, although both now barely visible. Both front and back covers feature simple frame of three gold-tooled fillets that intersect one another at corners. In the center of both the front and back covers, the coat of arms of Napoleon stamped in gold. In compartments 1, 3, 4, 5, 6 of spine, a gold-tooled design featuring an N at the center with a laurel(?) branch on either side and a crown above. These compartments are framed with one gold-tooled vertical line on either side, and two horizontal lines each at top and bottom. Each corner features 4 or 5 diagonal gold-tooled lines spaced 3-4 mm apart to fill in space around the central design. Compartment 2 features a red leather title label with the following stamped in gold: ROMAN / DE / LA ROSE. This compartment also features one gold line on sides and two at top and bottom (text does not quite fit, with the L of LA falling outside of border. Bottom compartment larger than others, and its decoration now obscured by the white paper BNF shelfmark label reading FR / 12595. A similar BNF label is found on the front pastedown. Marbled pastedowns/flyleaf front and back (light pastel colors); two paper flyleaves each in front and back. Flyleaves have the watermark M. PERRIER. A note on flyleaf 1r reads: <hi rend="italics">reliure restaureé</hi> en 1972.</p>
+        </note>
+        <note rend="HISTORY">
+          <p>The binding contains the coat of arms of Napoleon. On the verso of <locus>flyleaf 1</locus>, “188” is written in pencil. On recto of <locus>flyleaf 2</locus>, written in blue ink: <hi rend="italics">français</hi> 12595 and <hi rend="italics">reliure restoreé</hi> en 1972. On fol. <locus>201</locus>, now erased: <hi rend="italics">Ce livre est au duc de Berry. Jehan</hi> (this is currently very difficult to see, so Langlois’s transcription was consulted). On <locus>157r</locus>, an inscription, presumably an ex libris, now erased and illegible.</p>
+          <p>Langlois (p. 48) provides the following footnote concerning the manuscript’s provenance:</p>
+          <p>
+            <hi rend="italics">Des quatre mss. du Roman de la Rose qui figurent dans les inventaires des livres du duc de Berry, il y en a trois que leur contenu et l’incipit du 2e feuillet empêchent d’identifier avec celui-ci. La mention du 4e, dans l’inventaire de 1402, est très vague: (Un livre du Romant de la Rose) (L. Delisle, Cabinet des Manuscrits, III. p.192; Recherches sur la librairie de Charles V, 2e  partie, p. 267); et il ne réapparaît pas dans les inventaires ultérieurs, parce qu’il avait été donné à Guillaume de Lode. Il est donc impossible de dire si ce ms. est le même que celui de la B. N. fr. 12595; mais peut-être dans le ex-libris que je n’ai pas pu lire retrouverait-on le nom Guillaune de Lode.</hi>
+          </p>
+        </note>
+        <note rend="TEXT">
+          <p><locus from="1r" to="157r">1r-157r</locus>, <hi rend="italics">Roman de la Rose</hi><lb/><locus from="158r" to="187r">158r-187r</locus>, <hi rend="italics">Le Testament</hi><lb/><locus>188</locus> blank<lb/>
+                  
+                  <locus from="189r" to="200r">189r-200rb</locus>, <hi rend="italics">Le Codicille</hi>
+                  <lb/>
+                  
+                  <locus from="200r" to="200v">200rb-200v</locus>, “Ci apres sensuit vn beau petit dittie . . .”<lb/>
+                  (note that Langlois has foliation incorrect and lists texts out of order)                                    
+               </p>
+        </note>
+        <note>
+              Description by Timothy L. Stinson.
+            </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscript</note>
+          <note type="commonName">Français 12595</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="202" unit="folios">202 folios</measure>
+            <dimensions>
+              <height unit="mm">323</height>
+              <width unit="mm">235</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">82</note>
+          <note type="material">parchment</note>
+          <pubPlace>France</pubPlace>
+          <date notAfter="1500" notBefore="1400">15th century</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Paris</settlement>
+            <repository>Bibliothèque nationale de France</repository>
+            <idno>fr. 12595</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="157r">1r-157r</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">157</note>
+              <note type="illustrations">80</note>
+              <note type="linesPerColumn">37</note>
+              <note type="leavesPerGathering">8</note>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+            <msItem n="2">
+              <locus from="158r" to="187r">158r-187r</locus>
+              <title>Testament</title>
+              <note type="textid">testament</note>
+              <note type="folios">30</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">37</note>
+              <note type="leavesPerGathering">8</note>
+              <note type="columnsPerFolio">1</note>
+            </msItem>
+            <msItem n="3">
+              <locus from="189r" to="200r">189r-200r</locus>
+              <title>Codicille</title>
+              <note type="textid">codicille</note>
+              <note type="folios">12</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">37</note>
+              <note type="leavesPerGathering">8</note>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

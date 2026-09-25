@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.168r.tif" pagination="161" reader="John Dee" signature="ss"/>
+    <annotation>
+        
+        <marginalia anchor_text="Mercurius in corde Solis fuit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>☿ in corde ☉</marginalia_text>
+                    <symbol_in_text name="Mercury"/>
+                    <symbol_in_text name="Sun"/>
+                </position>
+            </language>
+            <translation>Mercury in the heart of the Sun.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tum etiam à Saturno morte[m] proculdubio publica[m] &amp; ex igne decernit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>nulla illa causa est, cur ex igne</marginalia_text>
+                </position>
+            </language>
+            <translation>This is no cause why from fire.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Mercurius in corde Solis fuit" type="straight"/>
+        <underline language="LA" method="pen" text="tum etiam à Saturno morte[m] proculdubio publica[m] &amp; ex igne decernit" type="straight"/>
+        
+    </annotation>
+</transcription>

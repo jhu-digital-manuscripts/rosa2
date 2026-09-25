@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.057r.tif" pagination="113" reader="John Dee" signature="h"/>
+    <annotation> 
+        
+        <marginalia anchor_text="omnia credo posse ferè casu aliquo uenire in officium oratoris" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>O[mn]ia cadu[n]t in officiu[m] oratoris</marginalia_text>
+                </position>
+            </language>
+            <translation>All fall under the duty of the orator.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Gorgias" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gorgias.</marginalia_text>
+                    <person name="Gorgias"/>
+                </position>
+            </language>
+            <translation>Gorgias.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hermagoras" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hermagoras.</marginalia_text>
+                    <person name="Hermagoras of Temnos"/>
+                </position>
+            </language>
+            <translation>Hermagoras.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristoteles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ARISTOTELES</marginalia_text>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>Aristotle.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Instrumentu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Instrumentum</marginalia_text>
+                </position>
+            </language>
+            <translation>Instrument.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="imperitus deligabit" type="straight"/>
+        <underline language="LA" method="pen" text="E quidem omnia credo posse ferè casu aliquo uenire in officium oratoris: quod si no[n] accidet, no[n] eru[n]t ei subiecta.              Ita sic quoq[ue]" type="straight"/>
+        
+    </annotation>
+</transcription>

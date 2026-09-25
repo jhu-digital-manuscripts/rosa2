@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.176v.tif" pagination="332" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        à co[n]trario
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                On the contrary.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        à minore
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Inferred.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="salutem nostram, quae spe exigua, extremáque pendet" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        salus spe exigua est extrema pendet.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The safety lies in the small hope and applies to the ends.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Catilina[m] occidi[t] flacc[us] 
+                    </marginalia_text>
+                    <person name="Lucius Sergius Catilina"/>
+                    <person name="Lucius Valerius Flaccus"/>
+                </position>
+            </language>
+            <translation>
+                Flaccus killed Catilina.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        à maiore
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Generally.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="co[n]iugibus, liberis vestris, vastitatem à templis, delubris, vrbe, Italia depellebam, sperabam Iudices, honoris potius L. Flacci me adiutorem futurum, quàm miseriariu[m] deprecatorem" type="straight"/>
+        <underline language="LA" method="pen" text="beneficii huius obtrectator, aut virtutis hostis, aut laudis inuidus extitisset, existabam" type="straight"/>
+        <underline language="LA" method="pen" text="sapientissimorum" type="straight"/>
+        <underline language="LA" method="pen" text="Sed quoniam Iudices, multa nos &amp; in nostris rebus, &amp; in Repub. fefellerunt, ferimus ea quae sunt ferenda. tantum à vobis petimus, vt omnia Reipub. subsidia, totum statum ciuitatis, omnem memoriam temporum praeteritorum, salutem praesentium, spem reliquorum, in vestra potestate, in vestris sententiis, in hoc vno iudicio positam esse &amp; defixam putetis. Si vnquam Respub. consilium, grauitatem, sapientiam, prouidentiam iudicum implorauit, hoc tempore, hoc inquam tempore implorat" type="straight"/>
+        <underline language="LA" method="pen" text="Omnia alia perfugia bonorum, praesidia innocentum, subsidia Reipub. consilia, auxilia, iura ceciderunt. quem enim alium appellem, quem obtester, quem implorum?" type="straight"/>
+        <underline language="LA" method="pen" text="Qua[m]obrem nisi hoc loco, nisi apud vos Iudices, non authoritatem, quae amissa est, sed salutem nostram, quae spe exigua, extremáque pendet, tenuerimus" type="straight"/>
+        <underline language="LA" method="pen" text="Damnatus est is, qui Catilinam signa patriae infere[n]tem interemit" type="straight"/>
+        <underline language="LA" method="pen" text="Socii consiliorum, ministri comitésque vexantur. quid authores, quid duces, quid principes sibi expectent?" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">8</numeral>
+        
+    </annotation>
+</transcription>

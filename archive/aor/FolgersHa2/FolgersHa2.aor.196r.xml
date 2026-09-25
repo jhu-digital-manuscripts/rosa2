@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.196r.tif" pagination="215" reader="Harvey" signature="O4r"/>	<!-- ABO 200right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						felicità dell'Eutrapelo: Semper Vnico.	
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>The happiness of Eutrapelus: always unique.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Euerie goose with him is a swan.) 
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						vel Panurgus: vel Outis.
+					</marginalia_text>
+					<person name="Panurge"/>
+					<person name="Outis"/>
+				</position>
+			</language>
+			<translation>Either Panurge [cunning], or Outis [no one].</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Autopa[e]dia, et idiopraxiia Marci Antonini occulta proprietas.
+					</marginalia_text>
+					<person name="Mark Antony"/>
+				</position>
+			</language>
+			<translation>Doctrines and individual advancement, the hidden qualities of Marc Anthony.</translation> <!--JG: Unsure, esp. about 'Autopa[e]dia' and 'idiopraxiia'--><!-- CG: Neologisms. Unsure about this. -->
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						{ Nihil nobilius, aut coelestius: per se autem pra[e]stat
+						actio: tempore, et loco id, quod tractatur.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Nothing is more noble or more divine: but that action excels through itself: that what is pulled by time and place.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Aut legendum, aut agendum: uel etiam currendum, uel cantillandum, aiebat Eutrapelus;
+						qui quotidiè ipse legebat, agebat; currebat, cantillabat. Ha[e]c enim asserebat et animi
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						entelechia[e] esse aptissima; et Ca[e]li harmonia[e] consonantiss[im]a.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>It either must be read or done: or it must even be hastened or sung, said Eutrapelus; he who daily read, acted, hastened and sung himself.
+			For he asserted that these things are most apt both for the mind and for actualisation; and [that these things are] most agreeable to divine harmony.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Lege efficacissima: age vtilissima: celerrimè curre: suauissimè cantilla.
+						Ha[e]c omnia in suo genere Optima Maxima: et id semper ca[e]terorur[m] Optimu[m] Max[imum] quod agitur.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Read the most effective things: do the most useful things; run most quickly; sing most sweetly. All these things are the greatest in their kind:
+			and what is done is always the best and greatest of the remaining things.</translation> <!--JG: Don't get last part-->
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="da mangiare" type="straight"/>
+		<underline language="IT" method="pen" text="pecora" type="straight"/>
+		<underline language="IT" method="pen" text="veramente pecora" type="straight"/>
+		<underline language="IT" method="pen" text="volendogli" type="straight"/>
+		<underline language="IT" method="pen" text="dar bere" type="straight"/>		
+		<underline language="IT" method="pen" text="non volendo" type="straight"/>
+		<underline language="IT" method="pen" text="anche da mangiare" type="straight"/>
+		<underline language="IT" method="pen" text="L'agricoltura" type="straight"/>
+		<underline language="IT" method="pen" text="è l'agricoltura" type="straight"/>
+		<underline language="IT" method="pen" text="Cincinnato arando" type="straight"/>
+		<underline language="IT" method="pen" text="Dittatore di Roma" type="straight"/>
+		<underline language="IT" method="pen" text="attorno attorno delle sue cultiuationi" type="straight"/>
+		<underline language="IT" method="pen" text="perderò io il frutto di quest' anno" type="straight"/>
+		<underline language="IT" method="pen" text="piu quello stimasse" type="straight"/>
+		<underline language="IT" method="pen" text="dignatà della Dittatura" type="straight"/>
+		<underline language="IT" method="pen" text="troppo fortunati contadini" type="straight"/>
+		<underline language="IT" method="pen" text="conosceste i ben de' vostri" type="straight"/>
+		<underline language="IT" method="pen" text="La hipocrisia" type="straight"/>
+		<underline language="IT" method="pen" text="male" type="straight"/>
+		<underline language="IT" method="pen" text="tenere ascosa" type="straight"/>
+		<underline language="IT" method="pen" text="Vedoua ricca" type="straight"/>
+		<underline language="IT" method="pen" text="trouar marito" type="straight"/>
+		<underline language="IT" method="pen" text="mi diletti de' piaceri amorosi" type="straight"/>
+		<underline language="IT" method="pen" text="cerco consorte," type="straight"/>
+		<underline language="IT" method="pen" text="tanti miei beni" type="straight"/>
+		<underline language="IT" method="pen" text="bisogno di buon custode" type="straight"/>
+		<underline language="IT" method="pen" text="hipocresia di quella do[n]na" type="straight"/>
+		<underline language="IT" method="pen" text="cercarne vn'à suo" type="straight"/>
+		<underline language="IT" method="pen" text="vn marito che fia appunto" type="straight"/>
+		<underline language="IT" method="pen" text="huomo sauio &amp; nato" type="straight"/>
+		<underline language="IT" method="pen" text="propriamente per le facende, inoltre" type="straight"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--an-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--cul-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--frut-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--al-->
+		<mark language="IT" method="pen" name="plus_sign" place="right_margin" text="cerco consorte"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!--pro-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--propria-->
+		
+		<mark method="pen" name="quotation_mark" place="intext"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/>
+		<mark method="pen" name="apostrophe" place="intext"/> <!--Dittatura Et-->
+		
+    </annotation>
+</transcription>

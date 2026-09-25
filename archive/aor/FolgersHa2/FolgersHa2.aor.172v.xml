@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.172v.tif" pagination="168" reader="Harvey" signature="[L4v]"/>	<!-- ABO 177left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						A cordial minde, a souerain preseruatiue
+						of Witt, &amp; strength.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Machiauellus gratias agat Ca[e]sari Borgia[e],
+						eiusq[ue] patri Alexandro Sexto: qui tum
+						vulpinandi artem tradebant Roma[e].
+					</marginalia_text>
+					<person name="Machiavelli"/>
+					<person name="Cesare Borgia"/>
+					<person name="Pope Alexander VI"/>
+					<location name="Rome"/>
+				</position>
+			</language>
+			<translation>Machiavelli thanks Cesare Borgia and his father Alexander VI: who then handed over the art of using trickery to Rome.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Ironia, a present restoratiue at
+						all oppositions, or afflictions.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						The most Cordial spirit in the world: &amp; the most radical resolution
+						of all men. But teuer with an amiable candour, as gratious as
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						maybe.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian"> 
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Mundus regitur vel perito, et profundo: vel callido, et subtili.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The world is guided either by a skilled or profound person: or by a cunning or subtle one.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="e' puo essere Silo" type="straight"/>
+		<underline language="IT" method="pen" text="e' puo anche" type="straight"/>
+		<underline language="IT" method="pen" text="può anche essere, che tu" type="straight"/>
+		<underline language="IT" method="pen" text="riso sì" type="straight"/>
+		<underline language="IT" method="pen" text="falso testimone, rimase" type="straight"/>
+		<underline language="IT" method="pen" text="altri suoi" type="straight"/>
+		<underline language="IT" method="pen" text="pretiosa l'amicitia" type="straight"/>
+		<underline language="IT" method="pen" text="l'amico" type="straight"/>
+		<underline language="IT" method="pen" text="piu frutto" type="straight"/>
+		<underline language="IT" method="pen" text="piu piacere" type="straight"/>
+		<underline language="IT" method="pen" text="acquisto dell'amicitia" type="straight"/>
+		<underline language="IT" method="pen" text="fusse amico" type="straight"/>
+		<underline language="IT" method="pen" text="vn'anima in due corpi" type="straight"/>
+		<underline language="IT" method="pen" text="Pianamente" type="straight"/>
+		<underline language="IT" method="pen" text="douersi risoluere" type="straight"/>
+		<underline language="IT" method="pen" text="Magno fusse morto" type="straight"/>
+		<underline language="IT" method="pen" text="leuati si caldamente" type="straight"/>
+		<underline language="IT" method="pen" text="Focione huomo" type="straight"/>
+		<underline language="IT" method="pen" text="in quelle nuoue gran fondamento" type="straight"/>
+		<underline language="IT" method="pen" text="aspettate altre nouelle" type="straight"/>
+		<underline language="IT" method="pen" text="è hoggimorto" type="straight"/>
+		<underline language="IT" method="pen" text="sarà morto anche domani" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<mark method="pen" name="vertical_bar" place="left_margin"/> <!-- Alongside 'Quanto' -->
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- co -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- an -->
+		<mark language="IT" method="pen" name="plus_sign" place="right_margin" text="pretiosa l'amicitia"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ope -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Aristo -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Ales -->
+		
+    </annotation>
+</transcription>

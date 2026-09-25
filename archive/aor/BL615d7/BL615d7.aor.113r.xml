@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.113r.tif" pagination="113" reader="John Dee" signature="P"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="infinite le Isole" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Infinite Iles</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>rownd abowt th[e] world he ment.</marginalia_text>   
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="ne riposato in letto dal giorno" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>How little the Admirall cam in his bed.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="LXXI" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>71 Iles</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="erano infinite le Isole;" type="straight"/>
+        <underline language="IT" method="pen" text="gli hami" type="straight"/>
+        <underline language="IT" method="pen" text="se non per l'Oriente : quantunque" type="straight"/>
+        <underline language="IT" method="pen" text="s'era dispogliato" type="straight"/>
+        <underline language="IT" method="pen" text="partita di Spagna" type="straight"/>
+        <underline language="IT" method="pen" text="a' XIX di Maggio" type="straight"/>
+        <underline language="IT" method="pen" text="scriueua" type="straight"/>
+        <underline language="IT" method="pen" text="che VIII" type="straight"/>
+        <underline language="IT" method="pen" text="innumerabile" type="straight"/>
+        <underline language="IT" method="pen" text="quantità d'Isole" type="double"/>
+        <underline language="IT" method="pen" text="LXXI oltre a" type="straight"/>
+        <underline language="IT" method="pen" text="l'Ouessudoeste" type="straight"/>
+        <underline language="IT" method="pen" text="o secche" type="double"/>
+        <underline language="IT" method="pen" text="vna gran nebbia" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/>  <!-- Maggio, nel -->
+        
+        <mark method="pen" name="bracket" place="intext"/> <!-- scriueua, fuor -->
+        
+        
+        
+        
+    </annotation>
+    
+</transcription>

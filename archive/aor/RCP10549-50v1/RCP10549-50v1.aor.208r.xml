@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.208r.tif" pagination="395" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="nihil ab iis, quod sit iniustum ac inhonestum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        nihil iniustum aut inhonestu[m] à deo est petendum.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Nothing unjust or dishonest is ought to be asked for by a god.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="domus vniuscuiusque ciuium" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Domus Ciuium.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The house of the citizens.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tanagraea quaedam meretrix" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Tanagraea meretrix
+                    </marginalia_text>
+                    <location name="Tanagra"/>
+                </position>
+            </language>
+            <translation>
+                A courtesan from Tanagra.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="libertatis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        LIBERTAS
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Freedom.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Nec est vlla erga deos pietas, nisi honesta de numine eoru[m], ac mente opinio: cum expeti nihil ab iis, quod sit iniustum ac inhonestum, arbitrere" type="straight"/>
+        <underline language="LA" method="pen" text="hominis sceleratissimi nefarium latrocinium immigrare voluisse" type="straight"/>
+        <underline language="LA" method="pen" text="Quid est sanctius, quid omni religione munitius, quàm domus vniuscuiusque ciuium? Hîc arae sunt, hîc foci, hîc dii penates, hîc sacrae religionis cerimoniae contine[n]tur: hoc perfugium est ira ita sanctum omnibus, vt inde abripi neminem fas sit" type="straight"/>
+        <underline language="LA" method="pen" text="nobis &amp; sancta esse voluerunt, ea iste non solum co[n]tra religione[m] labefactauit, sed etiam ipsius religionis nomine" type="straight"/>
+        <underline language="LA" method="pen" text="pedissequis conculcari" type="straight"/>
+        <underline language="LA" method="pen" text="crudelissimi dominatus" type="straight"/>
+        <underline language="LA" method="pen" text="interuersa" type="grid"/>
+
+        <symbol name="Asterisk" place="right_margin"/>
+        
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">11</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">21</numeral>
+        
+        <drawing anchor_text="Domus Ciuium" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

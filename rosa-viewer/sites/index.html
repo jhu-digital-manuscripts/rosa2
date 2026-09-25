@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Choose a rosa-viewer site" />
+    <title>Rosa Viewer Sites</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #26221f;
+        --muted: #6b645c;
+        --paper: #f4f0e8;
+        --card: #fffdf8;
+      }
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 32px 16px;
+        box-sizing: border-box;
+        background: var(--paper);
+        color: var(--ink);
+        font-family:
+          system-ui,
+          -apple-system,
+          'Segoe UI',
+          Roboto,
+          'Helvetica Neue',
+          Arial,
+          sans-serif;
+      }
+      h1 {
+        font-family: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+        font-weight: 400;
+        font-size: 1.6rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        margin: 0 0 8px;
+      }
+      p.lede {
+        margin: 0 0 32px;
+        color: var(--muted);
+      }
+      .sites {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+        width: 100%;
+        max-width: 720px;
+      }
+      .site {
+        display: block;
+        background: var(--card);
+        border-radius: 10px;
+        border-top: 6px solid var(--accent);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+        padding: 22px 24px 24px;
+        color: inherit;
+        text-decoration: none;
+        transition:
+          transform 0.15s ease,
+          box-shadow 0.15s ease;
+      }
+      .site:hover,
+      .site:focus-visible {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+      }
+      .site h2 {
+        margin: 0 0 6px;
+        font-family: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+        font-weight: 400;
+        font-size: 1.25rem;
+        color: var(--accent);
+      }
+      .site p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.95rem;
+        line-height: 1.5;
+      }
+      .aor {
+        --accent: #8a2b21;
+      }
+      .dlmm {
+        --accent: #9b2c3a;
+      }
+      footer {
+        margin-top: 40px;
+        font-size: 0.8rem;
+        color: var(--muted);
+      }
+      footer code {
+        font-size: 0.85em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Rosa Viewer</h1>
+    <p class="lede">Choose a site.</p>
+    <nav class="sites" aria-label="Sites">
+      <a class="site aor" href="./aor/">
+        <h2>The Archaeology of Reading</h2>
+        <p>Early modern printed books annotated by readers such as Gabriel Harvey and John Dee.</p>
+      </a>
+      <a class="site dlmm" href="./dlmm/">
+        <h2>Digital Library of Medieval Manuscripts</h2>
+        <p>Manuscripts of the Roman de la Rose and the works of Christine de Pizan.</p>
+      </a>
+    </nav>
+    <footer>Built from <code>rosa-viewer/sites/</code>.</footer>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.059v.tif" pagination="102" reader="John Dee" signature="[i 3[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Vespertina autem mulieribus opitulatur, matutina uero uiris, &amp; ex causa in forme numerum ♀ esse dixerunt" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ♀ vespertina Matut.
+                    </marginalia_text>
+                    <symbol_in_text name="Venus"/>
+                </position>
+            </language>
+            <translation>
+                Venus, evening and morning.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Paria, sed debilia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Equal, but weak.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="facit circa naturalia" type="straight"/>
+        <underline language="LA" method="pen" text="à deficiente ☾ dominium" type="straight"/>
+        <underline language="LA" method="pen" text="fuerítq[ue] diurna genitura, decernit" type="straight"/>
+        <underline language="LA" method="pen" text="noctem ad ♄ minuta, per diem uero ad ♂ feratur plena" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+    </annotation>
+</transcription>

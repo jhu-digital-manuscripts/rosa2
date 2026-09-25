@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>4</illustrations>
+    <totalPages>424</totalPages>
+    <dimensions units="">
+        <width>-1</width>
+        <height>-1</height>
+    </dimensions>
+    <dates>
+        <startDate>1401</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="Livre de la cité des dames">
+            <language>fr</language>
+            <title>Livre de la cité des dames</title>
+            <textId/>
+            <pages end="43r" start="1r">43</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>40</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="Le Livre des trois vertus à l'enseignement des dames">
+            <language>fr</language>
+            <title>Le Livre des trois vertus à l'enseignement des dames</title>
+            <textId/>
+            <pages end="207v" start="44r">163</pages>
+            <illustrations>3</illustrations>
+            <linesPerColumn>40</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Christine de Pizan</title>
+            <commonName>Français 1177</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>vellum</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 1177</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Christine de Pizan</title>
+            <commonName>Français 1177</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscript</type>
+            <material>vellum</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 1177</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

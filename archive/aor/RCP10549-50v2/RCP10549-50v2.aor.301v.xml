@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.301v.tif" pagination="54" reader="John Dee" signature="[Dd.iii.[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="selectione" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>selectio</marginalia_text>
+                </position>
+            </language>
+            <translation>Selection.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="parce támque restricte" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        parcè
+                        restrictè
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Sparingly.
+                Sparcely.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nimium saepe" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>nimiu[m] s[a]epe</marginalia_text>
+                </position>
+            </language>
+            <translation>Too often.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="bellum gerebat" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        belle[m] gerere
+                        co[n]tendere
+                        disserere.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To wage war. To contend. To argue.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristippum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aristippus.</marginalia_text>
+                    <person name="Aristippus"/>
+                </position>
+            </language>
+            <translation>Aristippus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="hominem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Homo.</marginalia_text>
+                </position>
+            </language>
+            <translation>Man.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ennius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ennius</marginalia_text>
+                    <person name="Ennius"/>
+                </position>
+            </language>
+            <translation>Ennius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Carneadium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Carneadium.</marginalia_text>
+                    <person name="Carneades"/>
+                </position>
+            </language>
+            <translation>Of Carneades.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristoni &amp; Pyrrhoni" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Aristo.
+                        Pyrro.
+                    </marginalia_text>
+                    <person name="Aristo of Chios"/>
+                    <person name="Pyrrho"/>
+                </position>
+            </language>
+            <translation>
+                Aristo of Chios. Pyrrho.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Herillus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Herillus</marginalia_text>
+                    <person name="Herillus"/>
+                </position>
+            </language>
+            <translation>Herillus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cum Academicis incerta luctatio est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cum Academicis incerta luctatio est</marginalia_text>
+                </position>
+            </language>
+            <translation>The struggle with Academics is uncertain.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Chrysippus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Chrysippus.</marginalia_text>
+                    <person name="Chrysippus"/>
+                </position>
+            </language>
+            <translation>Chrysippus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="memoria" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Memoria</marginalia_text>
+                </position>
+            </language>
+            <translation>Memory.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Honestum igitur id intelligimus, quod tale est vt detracta omni vtilitate sine vllis praemiis fructibúsve per seipsum possit iure laudari" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Honestum quid</marginalia_text>
+                </position>
+            </language>
+            <translation>What honour is.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Homines enim etsi multis aliis, tamen hoc vno à bestiis plurimu[m] differunt: quòd rationem habeant à natura datam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hominis praesta[n]tia</marginalia_text>
+                </position>
+            </language>
+            <translation>The excelling of man.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ad Archytam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Plato ad Archyta[m]</marginalia_text>
+                    <person name="Plato"/>
+                    <person name="Archytas"/>
+                </position>
+            </language>
+            <translation>Plato to Archytas.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="defensores eius sententiae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>defensor sente[n]ti[a]e.</marginalia_text>
+                </position>
+            </language>
+            <translation>A defender of the opinion.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="è duplici genere voluptatis coniunctus est" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>co[n]iunctus est è duplici genere voluptatis.</marginalia_text>
+                </position>
+            </language>
+            <translation>He is joined by a double kind of pleasure.</translation>
+        </marginalia>
+
+        <marginalia anchor_text="iacere vestra omnia" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>iace[n]t o[mn]ia v[est]ra.</marginalia_text>   
+                </position>
+            </language>
+            <translation>All your ideas lie defeated.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="suggeras" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>suggerere</marginalia_text>
+                </position>
+            </language>
+            <translation>To suggest.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="se implicet primum ciuium, deinde omniu[m] mortalium societate" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Societate implicare</marginalia_text>
+                </position>
+            </language>
+            <translation>To join in a social bond.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ad pastum, &amp; procreandi" type="straight"/>
+        <underline language="LA" method="pen" text="absurdius" type="straight"/>
+        <underline language="LA" method="pen" text="Nec enim figura corporis, nec ratio excellens ingenii humani significat ad ha[n]c vnam rem natum hominem vt frueretur voluptatibus" type="straight"/>
+        <underline language="LA" method="pen" text="nimium saepe" type="straight"/>
+        <underline language="LA" method="pen" text="depulsione" type="straight"/>
+        <underline language="LA" method="pen" text="cessando siue gaudendo vt Aristippus, siue non dolendo vt hic, sed agendo aliquid" type="straight"/>
+        <underline language="LA" method="pen" text="quibuscum bellum gerebat" type="straight"/>
+        <underline language="LA" method="pen" text="expleturum cumulate" type="straight"/>
+        <underline language="LA" method="pen" text="tam parce támque restricte faciant" type="straight"/>
+        <underline language="LA" method="pen" text="emendum eis sit quod addant ad virtutem" type="straight"/>
+        <underline language="LA" method="pen" text="omnino visa sunt pro nihilo" type="straight"/>
+        <underline language="LA" method="pen" text="desitum est disputari" type="straight"/>
+        <underline language="LA" method="pen" text="selectione" type="straight"/>
+        <underline language="LA" method="pen" text="post enim Chrysippum non sanè est disputatum" type="straight"/>
+        <underline language="LA" method="pen" text="Nam cum Academicis incerta luctatio est, qui nihil affirmant" type="straight"/>
+        <underline language="LA" method="pen" text="quasi desperata cognitione certi, id sequi volunt quodcunque verisimile videatur" type="straight"/>
+        <underline language="LA" method="pen" text="genere voluptatis coniunctus" type="straight"/>
+        <underline language="LA" method="pen" text="postea defensores eius sententiae" type="straight"/>
+        <underline language="LA" method="pen" text="is qui authoritatem minimam habet, maximam vim cum illis" type="straight"/>
+        <underline language="LA" method="pen" text="nisi arguimus, omnis virtus, omne decus, omnis vera laus deserenda" type="straight"/>
+        <underline language="LA" method="pen" text="homo &amp; acutus &amp; diligens" type="straight"/>
+        <underline language="LA" method="pen" text="iacere vestra" type="straight"/>
+        <underline language="LA" method="pen" text="forte defecerit, tuum est vt suggeras" type="straight"/>
+        <underline language="LA" method="pen" text="studiis atque factis, qui permulta ob eam vna[m] causam faciunt quia decet" type="straight"/>
+        <underline language="LA" method="pen" text="honestum est, etsi nullum consecuturu[m] emolumentum vident" type="straight"/>
+        <underline language="LA" method="pen" text="mentémque &amp; acrem &amp; vigentem, celerriméque multa simul agitantem" type="straight"/>
+        <underline language="LA" method="pen" text="sagacem, quae &amp; causas reru[m] &amp; consecutiones videat, &amp; similitudines transferat" type="straight"/>
+        <underline language="LA" method="pen" text="disiuncta co[n]iungat, &amp; cum praesentibus futura copulet, omnémque co[m]plectatur" type="straight"/>
+        <underline language="LA" method="pen" text="statu[m]. Eadémque ratio facit homine[m] hominu[m] appetente[m], cúmque his natura &amp; sermone" type="straight"/>
+        <underline language="LA" method="pen" text="vsu congruente[m], vt profectus à charitate domesticoru[m] ac suoru[m] currat longius, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="implicet primum ciuium, deinde omniu[m] mortalium societate: atque vt" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Unidentified" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="tripunctus" place="head" text="nimiu[m] s[a]epe"/>
+        <mark language="LA" method="pen" name="guillemet" place="head" text="selectio"/>
+        <mark language="LA" method="pen" name="guillemet" place="head" text="parcè restrictè"/>
+        <mark language="LA" method="pen" name="plus_sign" place="head" text="belle[m] gerere co[n]tendere disserere"/>
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark method="pen" name="tripunctus" place="tail"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="guillemet" place="left_margin"/>
+        <mark method="pen" name="guillemet" place="left_margin"/>
+        <mark method="pen" name="guillemet" place="left_margin"/>
+        <mark method="pen" name="tripunctus_with_tail" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="guillemet" place="tail" text="defensor sente[n]ti[a]e"/>
+        <mark language="LA" method="pen" name="guillemet" place="tail" text="co[n]iunctus est è duplici genere voluptatis"/>
+        <mark language="LA" method="pen" name="tripunctus_with_tail" place="tail" text="suggerere"/>
+        
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        
+        <drawing anchor_text="cessando siue gaudendo vt Aristippus, siue non dolendo vt hic, sed agendo aliquid" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

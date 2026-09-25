@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+	<page filename="FolgersHa2.016r.tif" pagination="351" reader="Harvey"/>	<!-- ABO 020right  -->
+    	<annotation>
+    		
+            		<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="EN">
+            			               <position book_orientation="0" place="head">
+                    				<marginalia_text>
+                    					The best do but well: none well enough.
+                    				</marginalia_text>
+            			               	<emphasis method="chalk" type="straight"/>
+            			               </position>
+        			</language>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						s[upr]a /
+    					</marginalia_text>
+    					<internal_ref>
+    						<target ref="FolgersHa2:Ha2.013v" text="s[upr]a"/> <!--Alfonso de'Pazzi-->
+    					</internal_ref>
+    				</position>
+    			</language>
+    			<translation>
+    				[See] above.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						Multi magnates: pauci magni.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Many important men: few great men.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="EN">
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						( No man is mean: if a right man.)
+    						Of Kingdoms prouinced: a saying
+    						of Orient.
+    					</marginalia_text>
+    					<location name="Orient"/>
+    					<emphasis method="chalk" text="mean" type="straight"/>
+    				</position>
+    			</language>
+    		</marginalia>
+    		
+    		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.016r_0001" marginalia_continues_to="Ha2.015v_0001" marginalia_to_transcription="Ha2.015v.xml">
+    			<language ident="EN">
+    				<position book_orientation="270" place="right_margin">
+    					<marginalia_text>
+    						What say you to the Preists, that presume to prouincialise the mightiest kingdoms
+    						vpon Earth, not to the Empire, but to the Popedum: &amp; deuise such statelie
+    						designes, to inuest the bishop of Roome, The vniuersal monarch of the World? = 
+    					</marginalia_text>
+    					<location name="Rome"/>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    				<position book_orientation="270" place="left_margin">
+    					<marginalia_text>
+    						= Aspiring to a greater maiestie, then euer Alexander the Great, or greater Cesar
+    						vsurped. Do you not think them holie preists, that can platforme Such [p. 350: gallant conceits for their owne supremacie, &amp; the pompe of spiritual pastors: the notablest fooles-paradise in the World. Basta.]
+    						<!-- Continues onto facing page, right margin, Ha2.015v -->
+    					</marginalia_text>
+    					<person name="Alexander the Great"/>
+    					<person name="Julius Caesar"/>
+    				</position>
+    			</language>
+    			<translation> [[p. 350: Enough!]</translation>
+    		</marginalia>
+    		
+	    	<!-- Underlines -->
+    		<underline language="IT" method="pen" text="ambasciate" type="straight"/>
+    		<underline language="IT" method="pen" text="infastidito da una uedoua" type="straight"/>
+    		<underline language="IT" method="pen" text="Pesciatina" type="straight"/>
+    		<underline language="IT" method="pen" text="era guasta di lui" type="straight"/>
+    		<underline language="IT" method="pen" text="dite a Madonna" type="straight"/>
+    		<underline language="IT" method="pen" text="io spenda il mio" type="straight"/>
+    		<underline language="IT" method="pen" text="beni sodi" type="straight"/>
+    		<underline language="IT" method="pen" text="mi togliete piu il capo" type="straight"/>
+    		<underline language="IT" method="pen" text="Alfonso de' Pazzi" type="straight"/>
+    		<underline language="IT" method="pen" text="di Siena" type="straight"/>
+    		<underline language="IT" method="pen" text="di sei" type="straight"/>
+    		<underline language="IT" method="pen" text="chiamati Signori" type="straight"/>
+    		<underline language="IT" method="pen" text="suprema auttorità sopra" type="straight"/>
+    		<underline language="IT" method="pen" text="sopra il suo stato" type="straight"/>
+    		<underline language="IT" method="pen" text="di due mesi" type="straight"/>
+    		<underline language="IT" method="pen" text="che un di quei Signori" type="straight"/>
+    		<underline language="IT" method="pen" text="un giorno solo hauea sopra de gli altri suoi" type="straight"/>
+    		<underline language="IT" method="pen" text="di fargli ragunare" type="straight"/>
+    		<underline language="IT" method="pen" text="proporre le cose occorrenti, &amp; appartene[n]ti a quello" type="straight"/>
+    		<underline language="IT" method="pen" text="faceua in commune" type="straight"/>
+    		<underline language="IT" method="pen" text="bello e" type="straight"/>
+    		<underline language="IT" method="pen" text="accommodato ragionamento rinuntiaua la sua auttorità" type="straight"/>
+    		<underline language="IT" method="pen" text="presenta[n]dogli per segno" type="straight"/>
+    		<underline language="IT" method="pen" text="mazza d'auorio" type="straight"/>
+    		<underline language="IT" method="pen" text="Pandolfo Petrucci" type="straight"/>
+    		<underline language="IT" method="pen" text="col suo astuto ingeno, &amp; affabile natura" type="straight"/>
+    		<underline language="IT" method="pen" text="haueua acquistata una piaceuole tira[n]nide" type="straight"/>
+    		<underline language="IT" method="pen" text="istessa città" type="straight"/>
+    		<underline language="IT" method="pen" text="famiglia de' Buoninsegni, il" type="straight"/>
+    		<underline language="IT" method="pen" text="alhora de' deti Signori" type="straight"/>
+    		<underline language="IT" method="pen" text="rinuntiare l'auttorità" type="straight"/>
+    		<underline language="IT" method="pen" text="un bel esordio" type="straight"/>
+    		<underline language="IT" method="pen" text="cominciò a narrare" type="straight"/>
+    		<underline language="IT" method="pen" text="Dio permesso a Satanasso" type="straight"/>
+    		<underline language="IT" method="pen" text="Giobbe" type="straight"/>
+    		<underline language="IT" method="pen" text="Satanasso lo priuò de' frutti" type="straight"/>
+    	       
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	    	<symbol name="JC" place="intext"/>
+    		<symbol name="SS" place="right_margin"/>
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark method="pen" name="dash" place="right_margin"/> <!-- ispa -->
+	    	<mark method="pen" name="X_sign" place="right_margin"/> <!-- ordinati -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- quel -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- ce -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- na -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- quel -->
+    		
+	    	<!-- Left margin -->
+	    	<mark method="pen" name="plus_sign" place="left_margin"/> <!-- in beni sodi -->
+    		<mark method="pen" name="bracket" place="left_margin"/> <!-- piccola ... insegni-->
+		    
+	    	<!-- Intext -->
+	    	<mark language="IT" method="pen" name="plus_sign" place="intext" text="uedoua"/>
+    		<mark method="pen" name="dot" place="intext"/> <!-- di lui, il quale -->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="suprema"/>
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- suo stato -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- un di quei -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- giorno solo -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- ragionamento rinuntiava --> 
+    		<mark method="pen" name="dot" place="intext"/> <!-- compagni, presentandogli -->
+    		<mark method="pen" name="vertical_bar" place="intext"/> <!-- d'auorio. Avve[n]ne -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- astuto ingeno -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- affabile -->
+    		<mark method="pen" name="equal_sign" place="intext"/> <!-- piaceuole tira[n]nide -->
+    		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark through middle of page -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- rinuntiare l'auttorita' -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- compagno, dopo' un bel -->
+    		<mark method="pen" name="vertical_bar" place="intext"/> <!-- a narrare, come -->
+    		
+
+    </annotation>
+</transcription>

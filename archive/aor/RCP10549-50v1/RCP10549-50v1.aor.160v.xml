@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.160v.tif" pagination="300" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="animis vestris mentibúsque mandate" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        mandare a[nim]is me[n]tibus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To entrust with souls and minds.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="patria" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Patria
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Country.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="priuati" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Priuati
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Private.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Similitudo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Similarity.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Etenim si mecum patria, quae mihi vita mea multo est carior, si cu[n]cta Italia" type="straight"/>
+        <underline language="LA" method="pen" text="nónne hunc in vincula duci, non ad mortem rapi, non summo supplicio mactari imperabis?" type="straight"/>
+        <underline language="LA" method="pen" text="Republica perniciosos ciues morte multarunt" type="straight"/>
+        <underline language="LA" method="pen" text="imperium per omnes honorum gradus extulit, si" type="straight"/>
+        <underline language="LA" method="pen" text="salutem ciuium tuorum negligis" type="straight"/>
+        <underline language="LA" method="pen" text="vastabitur Italia, vexabuntur vrbes, tecta ardebunt, tum te non existimas inuidiae incendio conflagraturum" type="straight"/>
+        <underline language="LA" method="pen" text="vnius vsuram horae gladiatori isti ad viuendu[m] no[n] dedissem" type="straight"/>
+        <underline language="LA" method="pen" text="Quòd si ea mihi maximè impenderet, tamen hoc animo semper fui, vt inuidiam virtute partam, gloriam, non inuidiam putarem" type="straight"/>
+        <underline language="LA" method="pen" text="non modo haec tam adulta Reipublicae pestis, verumetiam stirps, ac semen malorum omnium" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; erit inclusum penitus in venis, atque in visceribus" type="straight"/>
+        <underline language="LA" method="pen" text="homines aegri, morbo graui, cùm aestu, febríque oactantur, si aqua[m] geldina[m] biberint, prius releuari videntur: deinde multo grauius,              veheme[n]tiúsque afflicta[n]tur. sic hic morbus, qui est in Repub. releuatus istius poena, vehementius viuis reliquis ingrauescet" type="straight"/>
+        <underline language="LA" method="pen" text="cum gladiis curiam, malleolos ad ince[n]dendam vrbem, fascésque co[m]parare: sit denique inscriptum in fro[n]te vniuscuiusque ciuis quid de Republica sentiat:              hoc polliceor vobis P. C. tantam in nobis COSS. fore diligentiam, tantam in vobis authoritatem, tantam in Equitibus Romanis virtutem, tantam in omnibus bonis consensione[m], vt Catilinae profectione omnia patefacta, illustrata,              oppressa, vindicata esse" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">11</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+        <drawing anchor_text="Priuati" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.315r.tif" pagination="609" reader="John Dee" signature="qqq.i."/>
+    <annotation>
+        
+        <marginalia anchor_text="Est enim lex" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>LEX: QVID</marginalia_text>
+                </position>
+            </language>
+            <translation>The law: which.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Dynastáeque" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dynast[a]e.</marginalia_text>
+                </position>
+            </language>
+            <translation>Rulers.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="primo quoque te[m]pore" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>primo quoq[ue] tempore.</marginalia_text>
+                </position>
+            </language>
+            <translation>As soon as possible.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="acerbissimu[m] &amp; calamitosissimu[m] ciuile bellum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>bellu[m] acerbiss[imu]m calamitosiss[imu]m.</marginalia_text>
+                </position>
+            </language>
+            <translation>A most bitter and calamitous war.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="C. Cassium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>C. Cassius</marginalia_text>
+                    <person name="Gaius Cassius Longinus"/>
+                </position>
+            </language>
+            <translation>Gaius Cassius Longinus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="primo" type="straight"/>
+        <underline language="LA" method="pen" text="praedicatio nondu[m] omnibus grata est, hanc memoriae potius, quam vocis testimonio, co[n]seruemus" type="straight"/>
+        
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">13</numeral>
+        
+        <drawing anchor_text="praedictio nondu[m] omnibus grata est, hanc memoriae potius, quam vocis testimonio, co[n]seruemus" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

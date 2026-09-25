@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.088r.tif" pagination="81" reader="John Dee" signature="X"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Na[m] res illa significata per illos planetas ita retrogrados, impedietur et tarde progredietur</marginalia_text>
+                </position>
+            </language>
+            <translation>For that matter was indicated through those planets [which] thus moved backwards, will hinder and slowly move forward.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sequu[n]tur haec significata, ip[s]as domuu[m] significationes quasi, initio ab ♈ fuit</marginalia_text>
+                    <symbol_in_text name="Aries"/>
+                </position>
+            </language>
+            <translation>These signified follow those signifiers of the houses as if it was the beginning from Aries.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="quoties celerioris motus aliq[ui]s separatur à planeta tardioris motus ad alteru[m] applicans" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quid significet luminis translatio</marginalia_text> 
+                </position>
+            </language>
+            <translation>What the transfer of light may signify.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vide de istis inf[ra] fo 237 % aph 30</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:493" text="237"/>
+                        <target ref="RCP7134:481" text="30"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See regarding those, below folio 237, that is, aphorism 30.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Retrogradatio medij, in tra[n]slatio[n]e Luminis:</marginalia_text> 
+                </position>
+            </language>
+            <translation>The retrogradation of the centre, in the transfer of light.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Erasio tertij ad que[m] fit Luminis tra[n]slatio</marginalia_text>
+                </position>
+            </language>
+            <translation>The erasion of the third toward which the transfer of light occurs.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="retrogradando" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Retrogradatio</marginalia_text> 
+                </position>
+            </language>
+            <translation>Retrogradation.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Translationis coname[n] no[n] tamen perficitur.</marginalia_text> 
+                </position>
+            </language>
+            <translation>The exertion of the transfer is nonetheless not finished.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="semp[er] aut respicere oportet cui praesint, alij uitae, alij negotiationi" type="straight"/>
+        <underline language="LA" method="pen" text="delitias &amp; uoluptate[m]" type="straight"/>
+        <underline language="LA" method="pen" text="quoties celerioris motus aliq[ui]s separatur à planeta tardioris motus ad alteru[m] applicans" type="straight"/>
+        <underline language="LA" method="pen" text="adulteriu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="causa" type="straight"/>
+        <underline language="LA" method="pen" text="ut" type="straight"/>
+        <underline language="LA" method="pen" text="illi" type="double"/>
+        
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <numeral language="LA" place="intext" text="adulteriu[m]">1</numeral>
+        <numeral language="LA" place="intext" text="causa">2</numeral>
+        <numeral language="LA" place="intext" text="ut">3</numeral>
+        
+    </annotation>
+</transcription>

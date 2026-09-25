@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonPA8550.107v.tif" pagination="214" reader="Harvey" signature="Oiiiv"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="leges etiam" type="straight"/>
+        <underline language="LA" method="pen" text="Fuit illud omnino" type="straight"/>
+        <underline language="LA" method="pen" text="humanitatis in terris domicilium" type="straight"/>
+        <underline language="LA" method="pen" text="sunt Camilli" type="straight"/>
+        <underline language="LA" method="pen" text="Curij" type="straight"/>
+        <underline language="LA" method="pen" text="Fabricij" type="straight"/>
+        <underline language="LA" method="pen" text="Fabij" type="straight"/>
+        <underline language="LA" method="pen" text="Scipiones" type="straight"/>
+        <underline language="LA" method="pen" text="Crassij" type="straight"/>
+        <underline language="LA" method="pen" text="Cicerones" type="straight"/>
+        <underline language="LA" method="pen" text="Sceuolae" type="straight"/>
+        <underline language="LA" method="pen" text="hi Respub[licam] regere" type="straight"/>
+        <underline language="LA" method="pen" text="in sole ac puluere" type="straight"/>
+        <underline language="LA" method="pen" text="inconstantiam, uariasq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="retinenda tractandaq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="pharmaca ciuitatu[m] morbis" type="straight"/>
+        <underline language="LA" method="pen" text="Exempla optima propone[n]da" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- conferant, cum -->
+        <mark method="pen" name="dot" place="intext"/> <!-- proponant, cur -->
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- usurparemus? Milesias -->
+        
+        <errata amendedtext="Crassi" copytext="Crassij" language="LA"/>
+         
+    </annotation>
+</transcription>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.178r.tif" pagination="179" reader="John Dee" signature="Z.iij."/>   
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cibus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Food.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vina" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vinu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>Wine.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ebrietas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ebrietas.</marginalia_text>
+                </position>
+            </language>
+            <translation>Drunkenness.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Uina parant animos Veneri, nisi plurima sumas" type="straight"/>
+        
+        <symbol name="Taurus" place="right_margin"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="Daunius an libycis bulbus tibi missus ab oris, An veniat Megaris, noxius omnis erit. Nec minus erucas aptum est vitare salaces. Et quicquid Veneri corpora nostra parat"/>
+        
+    </annotation>
+</transcription>

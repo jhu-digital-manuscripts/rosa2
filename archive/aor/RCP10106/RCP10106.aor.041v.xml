@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.041v.tif" pagination="82" reader="John Dee" signature="[f[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="discrimina ingeniorum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ingenioru[m] discrimina.</marginalia_text>
+                </position>
+            </language>
+            <translation>Innate differences.</translation> <!-- FSF: I'd translate as differences in character -->
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Simile.</marginalia_text>
+                </position>
+            </language>
+            <translation>Similar.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nec pauciores" type="straight"/>
+        <underline language="LA" method="pen" text="penè quàm" type="straight"/>
+        <underline language="LA" method="pen" text="presso, limato'q[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="cuius acri, graui, dulci, aspero, nitido, urbano maximè" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; adiuta cura natura magis eualescat" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

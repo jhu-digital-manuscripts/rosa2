@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.149r.tif" pagination="297" reader="John Dee" signature="t 5"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Intelligitur enim quod non dicitur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Intelligitur quod no[n] dicitur</marginalia_text> 
+                </position>
+            </language>
+            <translation>What is not said here is understood.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="simulationem &amp; dißimulationem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>simulatio &amp; dißimulatio</marginalia_text> 
+                </position>
+            </language>
+            <translation>Simulation and dissimulation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="asperioribus ad leniora" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Asperiora ad leniora</marginalia_text> 
+                </position>
+            </language>
+            <translation>From the coarse to the gentler.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iuba" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Iuba</marginalia_text>
+                    <person name="Juba II"/>
+                </position>
+            </language>
+            <translation>Juba.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Galba de piscibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Galba de piscibu[s]</marginalia_text>
+                    <person name="Galba"/>
+                </position>
+            </language>
+            <translation>Galba who served fish.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="inseram. Intelligitur enim quod non dicitur. Et hercle omnis salse dice[n]di ratio in eo est, ut" type="straight"/>
+        <underline language="LA" method="pen" text="parte adesi, &amp; uersati, postero" type="straight"/>
+        
+        <drawing anchor_text="Intelligitur quod no[n] dicitur" book_orientation="0" method="pen" place="head" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

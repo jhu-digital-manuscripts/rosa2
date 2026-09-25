@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.201v.tif" pagination="226" reader="Harvey" signature="[Pv]"/>	<!-- ABO 206left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.201v_0001" marginalia_continues_to="Ha2.202r_0001" marginalia_to_transcription="Ha2.202r.xml">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Vultu, voce, gestu; omni parte absolutus vir: [p. 227: idq[ue] Semper: et apud maximas maximè.]
+						<!-- Continues onto facing page, head, Ha2.202r -->
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>In expression, voice, and gesture: in all parts the man is absolute: [p. 227: and this he always is: and especially among the greatest.]</translation>
+		</marginalia>		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Vnicus Quodlibetarius, ad placitum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The singular quodlibertarian, arbitrarily.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Omnium horarum vsurarius.
+						Minutorum Calculator Scrupulosus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>It is useful for all hours. A scrupulous calculator of minutiae.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Scitum est, nonnulla magna officiosè dicere; pla[e]raq[ue] omnia parua
+						profundè iudicare. Magna Sunt, qua[e] hodiè
+						pollent in Mundo; et in posterum ingentia existimabuntur.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>It is known that he says several great things attentively, and that he judges profoundly the majority of all small things. 
+			Great are the things which are strong in the world today and the vast things which will be estimated thereafter.</translation> 
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Ingenij est, singula redigere ad sua puncta analyticè: aut ad insignes sententias
+						aphoristicè. Nuda magis patent: pressa plus valent.
+						Extrà pra[e]scriptos limites vagari, non ire, sed errare est.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>It becomes the intellect to reduce singular things to their points analytically or to distinguished maxims aphoristically. 
+				Bare things are more accessible; compressed things are worth more.
+				To wander beyond prescribed limits is not to advance, but to err.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Il tempo" type="straight"/>
+		<underline language="IT" method="pen" text="sparir volando senza ritegno" type="straight"/>
+		<underline language="IT" method="pen" text="Fra[n]cesco Petrarca in vna" type="straight"/>
+		<underline language="IT" method="pen" text="brevità della vita humana" type="straight"/>
+		<underline language="IT" method="pen" text="il tempo vola &amp; fugge" type="straight"/>
+		<underline language="IT" method="pen" text="la celerità d'esso tempo, si come" type="straight"/>
+		<underline language="IT" method="pen" text="descrisse leggiadramente" type="straight"/>
+		<underline language="IT" method="pen" text="in questa guisa" type="straight"/>
+		
+		<symbol name="SS" place="head"/>
+		 
+		<mark method="pen" name="dash" place="right_margin"/> <!--ri-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--tem-->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="brevità della vita humana"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="il tempo vola &amp; fugge"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="celerità"/>
+		
+    </annotation>
+</transcription>

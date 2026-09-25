@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.114r.tif" pagination="211" reader="John Dee" signature="s 4"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Qualis ho[min]i vita in [terris] esse debet. <!-- I am not sure about 'terris'-->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The life of what kind of man ougt to be on earth.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Os homini sublime dedit, co[e]lumq[ue] vivere iussit
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                From high above the mouth gave to men, and ordered him to watch the sky.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ut demersus animus, &amp; pessundatus, nunq[uam] originis suae possit inuenire principia, sed in tenebris semper, in coenóq[ue]" type="straight"/>  
+        <underline language="LA" method="pen" text="ut recti corporis forma, ab omni" type="straight"/>  
+        <underline language="LA" method="pen" text="rectum &amp; incoruptum immortalitatis iter, ad originem suam reuersurus, inueniat, nec errantibus gressibus, &amp; labentibus, trepidantibúsq[ue]" type="straight"/>  
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

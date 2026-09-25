@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.157r.tif" pagination="158" reader="John Dee"/>   
+    <annotation>
+        
+        <marginalia anchor_text="Troïa" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Troïa</marginalia_text>
+                    <location name="Troy"/>
+                </position>
+            </language>
+            <translation>Troy.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ponunt in statione" type="straight"/>
+        <underline language="LA" method="pen" text="Errat, &amp; in nulla sede moratur amor" type="straight"/>
+        <underline language="LA" method="pen" text="crassantur" type="straight"/>
+        <underline language="LA" method="pen" text="Discite ab alterius vestris timuisse querelis" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url>http://creativecommons.org/licenses/by/4.0/</url>
+        <logo>https://i.creativecommons.org/l/by/4.0/88x31.png</logo>
+    </license>
+    <totalPages>1136</totalPages>
+    <dates>
+        <startDate>1555</startDate>
+        <endDate>1555</endDate>
+    </dates>
+    <texts>
+        <text id="1">
+            <language>la</language>
+            <title>T. Liuii Patauini Romanae historiae principis decades tres (Basel, 1555)</title>
+            <textId>PrincetonPA6452</textId>
+            <pages end="568v" start="1r">1136</pages>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>T. Liuii Patauini Romanae historiae principis decades tres (Basel, 1555)</title>
+            <commonName>Titus Livius, Romanae historiae principis (Basel, 1555)</commonName>
+            <dateLabel>1555</dateLabel>
+            <currentLocation>Princeton University Library</currentLocation>
+            <repository>Princeton University Library</repository>
+            <shelfmark>PA6452 .A2 1555q</shelfmark>
+            <author>
+              <name>Patavinus, Titus Livius</name>
+              <id>http://www.isni.org/isni/0000000079744934</id>
+            </author>
+            <reader>
+              <name>Gabriel Harvey</name>
+              <id>http://www.isni.org/isni/0000000073570531</id>
+            </reader>
+            <website>https://archaeologyofreading.org/bibliography/Harvey-corpus/Livy</website>
+            <detail>[16], 829, [288] p.; 39 cm. (fol.)</detail>
+            <note>Already digitized</note>
+        </bibliography>
+    </bibliographies>
+</book>
+

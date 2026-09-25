@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.253v.tif" pagination="[246v]" reader="John Dee" signature="[QQ ij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>De moribus</marginalia_text>
+                </position>
+            </language>
+            <translation>On habits.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quòd proprietates Martis magis retinebit" type="straight"/>
+        
+        <symbol language="LA" name="Saturn" place="left_margin" text="Saturnus"/>
+        <symbol language="LA" name="Mars" place="left_margin" text="Marti"/>
+        <symbol language="LA" name="Saturn" place="left_margin" text="Saturnus"/>
+        <symbol language="LA" name="Venus" place="left_margin" text="Veneri"/>
+        <symbol language="LA" name="Saturn" place="left_margin" text="Saturnus"/>
+        <symbol language="LA" name="Sun" place="left_margin" text="Soli"/>
+        <symbol language="LA" name="Saturn" place="left_margin" text="Saturnus"/>
+        <symbol language="LA" name="Moon" place="left_margin" text="Lunae"/>
+        
+        <drawing anchor_text="quòd proprietates Martis magis retinebit" book_orientation="0" method="pen" place="intext" type="manicule"/>
+        
+    </annotation>
+</transcription>

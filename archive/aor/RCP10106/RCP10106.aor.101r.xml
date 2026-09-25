@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.101r.tif" pagination="201" reader="John Dee" signature="n 5"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Caius Cornelius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Caius Cornelius</marginalia_text>
+                    <person name="Tacitus"/>
+                </position>
+            </language>
+            <translation>Tacitus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="commonitio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Commonitio</marginalia_text>
+                </position>
+            </language>
+            <translation>Reminder.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="periculosum id oratori arbitrantur duabus ex causis, quòd nonnunquam excidere soleant, quae promisimus: &amp; siqua in partie[n]do praeterierimus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Partitio nonnuq[uam] periculosa est</marginalia_text>
+                </position>
+            </language>
+            <translation>A partition is sometimes perilous.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quapropter ne illos quidem probauerim, qui partitione[m] uetant ultra treis propostiones extendere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Contra Cicerone[m]</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Contrary to Cicero,</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ex causis, quòd nonnunquam excidere soleant, quae promisimus: &amp; si qua in partie[n]do praeterierimus,              occurrere." type="straight"/>
+        <underline language="LA" method="pen" text="nihili cogitati praemeditatiq[ue] detulerit" type="straight"/>
+        <underline language="LA" method="pen" text="Quapropter ne illos quidem probauerim, qui partitione[m] uetant ultra treis propostiones extendere" type="straight"/>
+        
+    </annotation>
+</transcription>

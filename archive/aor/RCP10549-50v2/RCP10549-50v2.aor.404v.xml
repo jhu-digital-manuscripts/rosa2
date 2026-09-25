@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.404v.tif" pagination="260" reader="John Dee" signature="[[Rr.iii.[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="interitu[m] Caesaris contigit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ca[e]sari quomodo interitus portendebat[u]r a dijs</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <translation>How Caesar's ruin was portended by the gods.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vt videret interitu[m], non vt caueret" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Lic[et] videre no[n] ta[m] cauere</marginalia_text>
+                </position>
+            </language>
+            <translation>On may see, not so much avoid.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="auibus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aues</marginalia_text>
+                </position>
+            </language>
+            <translation>Birds.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="animal omne vt vult ita vtitur motu" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Motus animalis</marginalia_text>
+                </position>
+            </language>
+            <translation>The movement of an animal.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Si paulo luna ante solis ortu[m] defecisset in signo Leonis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>☾ &amp; ☉ .8. in ♌ hora 5.</marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Sun"/>
+                    <symbol_in_text name="Leo"/>
+                </position>
+            </language>
+            <translation>The moon and sun 8, in Leo, at the fifth hour.</translation> <!--JG: Not sure about the '8'. Refers to number of the house? Or sign of opposite planets?-->
+        </marginalia>
+        
+        <marginalia anchor_text="puella nata biceps" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Puella biceps nata</marginalia_text>
+                </position>
+            </language>
+            <translation>A girl born with two heads.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Crosei filium" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Croesi filuis</marginalia_text>
+                    <person name="Croesus"/>
+                </position>
+            </language>
+            <translation>Croesus’s son.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>T[itus] Liuius lib[er] 1. ⁰</marginalia_text>
+                    <person name="Livy"/>
+                    <book title="Ab Urbe Condita"/>
+                    <internal_ref>
+                        <target ref="PrincetonPA6452:00000043" text="lib[er] 1"/> <!--JG: Link to page in Livy which frequently mentions the name of Servius Tullius-->
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Titus Livy, book one.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Daemonion appellat, cui semper ipse paruerit, nunqua[m] impellenti, saepe reuocanti. Et Socrates              quidem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Da[e]monon. Soc[rates]</marginalia_text>
+                    <person name="Socrates"/>
+                </position>
+            </language>
+            <translation>Socrates. Daemon.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Critonis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Criton.</marginalia_text>
+                    <person name="Crito"/>
+                </position>
+            </language>
+            <translation>Crito.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Socrates quum apud Delium male pugnatu[m] esset Lachete Praetore, fuge rétque cum ipso Lachete: vt ventu[m] est in triuium" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Socrates in triuio.</marginalia_text>
+                    <person name="Socrates"/>
+                </position>
+            </language>
+            <translation>Socrates at the crossroads.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Soc[rates] in Appollogia</marginalia_text>
+                    <person name="Socrates"/>
+                    <book title="The Apology"/>
+                </position>
+            </language>
+            <translation>Socrates in [Plato's] 'The Apology'.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="homines autem vt in certibus artibus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>homniu[m] est errari</marginalia_text>
+                </position>
+            </language>
+            <translation>To err pertains to mankind.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="diuine praesensa &amp; praedicta reperiri" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Diuinatio vnde repete[n]da</marginalia_text>
+                </position>
+            </language>
+            <translation>Where divination must be claimed.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="praesensa" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>pr[a]esensa</marginalia_text>
+                </position>
+            </language>
+            <translation>Prescience.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="praedicta" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>pra[e]dicta</marginalia_text>
+                </position>
+            </language>
+            <translation>Predicted.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="aut affingit" type="straight"/>
+        <underline language="LA" method="pen" text="in sella" type="straight"/>
+        <underline language="LA" method="pen" text="vt videret interitu[m], non vt caueret" type="straight"/>
+        <underline language="LA" method="pen" text="immolationis" type="straight"/>
+        <underline language="LA" method="pen" text="id deo est facilius, cuius" type="straight"/>
+        <underline language="LA" method="pen" text="Vt igitur qui se tradet" type="straight"/>
+        <underline language="LA" method="pen" text="animo, quu[m] bonis cogitationibus, tum rebus ad tranquillitatem" type="straight"/>
+        <underline language="LA" method="pen" text="cernit in somniis: sic castus animus purúsque vigilantis" type="straight"/>
+        <underline language="LA" method="pen" text="reliquorúmque signoru[m], &amp; ad extorum" type="straight"/>
+        <underline language="LA" method="pen" text="soleo praesagitione" type="straight"/>
+        <underline language="LA" method="pen" text="in suggestu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="praesena &amp; praedicta" type="straight"/>
+        
+        <symbol name="Unidentified" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Unidentified" place="left_margin"/>
+        <symbol name="Unidentified" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Unidentified" place="left_margin"/>
+        
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+
+        <numeral place="left_margin">5</numeral>
+        <numeral place="left_margin">12</numeral>
+        
+        <drawing anchor_text="vt videret interitu[m], non vt caueret" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

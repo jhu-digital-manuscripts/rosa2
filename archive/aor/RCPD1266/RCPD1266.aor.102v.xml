@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.102v.tif" pagination="190" reader="John Dee"/> 
+    <annotation>
+        
+      <marginalia hand="Italian">
+          <language ident="LA">
+              <position book_orientation="0" place="head">
+                  <marginalia_text>Solstitu[m] hybernu[m] iste opinatur fuisse vltima Dece[m]bris Tempore Iulij Ca[e]saris.</marginalia_text>
+                  <person name="Julius Caesar"/>
+              </position>
+          </language>
+          <translation>That winter solstice is believed to have been at the end of December, in the time of Julius Caesar.</translation>
+      </marginalia>  
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Astronomia[e] vtilitas</marginalia_text>
+                </position>
+            </language>
+            <translation>The usefulness of astronomy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Post annum autem septuagesimum quadragesimumsecu[n]dum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Annis 742.</marginalia_text>
+                </position>
+            </language>
+            <translation>Within 742 years.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="Septembris" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Decembris</marginalia_text>
+                </position>
+            </language>
+            <translation>Of December.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="obseruati sunt coelestes motus, &amp; anni ipsius non fuit comperta ratio" type="straight"/>
+        <underline language="LA" method="pen" text="debet extremum anni diem conficere" type="straight"/>
+        <underline language="LA" method="pen" text="anno Iuliano nequaqua[m] fuit vigesimaquinta die Decembris" type="straight"/>
+        <underline language="LA" method="pen" text="autem septuagesimum quadragesimumsecu[n]dum" type="straight"/>
+        <underline language="LA" method="pen" text="à publicatis per Iulium Caesarem Pontificem maximu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="bruma" type="straight"/>
+        <underline language="LA" method="pen" text="vellemus his" type="double"/>
+        <underline language="LA" method="pen" text="eo die quo contigisse" type="double"/>
+        <underline language="LA" method="pen" text="hiberno solstitio" type="double"/>
+        <underline language="LA" method="pen" text="duodecimo die Decembris" type="straight"/>
+        <underline language="LA" method="pen" text="solstitio hiberno" type="straight"/>
+        <underline language="LA" method="pen" text="decimo quinto die Septembris" type="straight"/>
+        <underline language="LA" method="pen" text="ecclesiae Ægyptiacae" type="straight"/>
+        <underline language="LA" method="pen" text="temporum &amp; motuum coelestium diligenti obseruatione, notum" type="straight"/>
+        <underline language="LA" method="pen" text="quùm prophanis" type="straight"/>
+        <underline language="LA" method="pen" text="ídque eam ob rem praecipuè, quòd artium Mathematicarum studia culta sunt perpetuò in" type="straight"/>
+        <underline language="LA" method="pen" text="Epiphaniorum habet Dominicae natiuitatis &amp; Baptismi" type="straight"/>
+        <underline language="LA" method="pen" text="eadem die solennitatem" type="straight"/>
+        <underline language="LA" method="pen" text="vndecima Tybi me[n]sis" type="straight"/>
+        <underline language="LA" method="pen" text="Domini facta est in carne natiuitas" type="straight"/>
+        <underline language="EL" method="pen" text="θεοφάνειαν" type="straight"/> 
+        <underline language="LA" method="pen" text="Itaque natalem Dominicum diem, &amp; Epiphaniam idem esse Orosio videmus" type="straight"/>
+        <underline language="LA" method="pen" text="quando natus est in" type="straight"/>
+        <underline language="FR" method="pen" text="La Typhaine" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark method="pen" name="quattuorpunctus" place="right_margin"/>
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+        <numeral language="LA" place="intext" text="septuagesimum quadragesimumsecu[n]dum">742</numeral>
+        <numeral language="LA" place="intext" text="decimoquinto">[25 - deleted]</numeral>
+        
+        <errata amendedtext="[deleted]" copytext="septuagesimum" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="decimo" language="LA"/>
+        
+    </annotation>
+</transcription>

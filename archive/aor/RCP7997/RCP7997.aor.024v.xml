@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.024v.tif" reader="John Dee" signature="[Dvj[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="c[on]siderat de qua[n]titab[us] relatis ad nu[m]eru[m] vt pat[um] decimo geometrie" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        In decimo euclide[m] loqui de qua[n]titatibus relatis ad numeru[m]. 
+                    </marginalia_text>
+                    <person name="Euclid"/>
+                </position>
+            </language>
+            <translation>
+                In the tenth [book], Euclid talks about the quantities related to a number.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="resoluant[ur]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Resolutio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Resolution.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="p[ro]portionib[us] irr[ati]onalibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Proportio[n]es irrationales
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Irrational proportions.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="algebricus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Algebricus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                An algebraist.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nu[m]eru[m] irrationale[m] no[n] radicari" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Numerus irrationalis no[n] habet radice[m] nota[m] sc[ilicet].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Irrational numbers don't have a known square root, one may know.  
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mixtum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Mixtus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Mixed.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="q[ua]re p[ro]positio v[e]l interrogatio p[ro]prie dicitur in aliqua scie[n]tia. ex qua demo[n]strat[ur] in illa scie[n]tia v[e]l in scientia subalt[er]nata et habet se vt suppositio. Sed" type="straight"/>
+        <underline language="LA" method="pen" text="edictu[m] de p[ro]portionib[us] irr[ati]onalibus" type="straight"/>
+        <underline language="LA" method="pen" text="Vt si algebricus cu[m] algebrico" type="straight"/>
+        <underline language="LA" method="pen" text="musicu[m] q[ua]re p[er] accide[n]s c[on]ti[n]git geometra[m] esse musicu[m] q[ua]re" type="straight"/>
+        <underline language="LA" method="pen" text="vt demo[n]strare ha[n]c intenta[m] nu[m]eru[m] irrationale[m] no[n] radicari" type="straight"/>
+        <underline language="LA" method="pen" text="decimo geometrie" type="straight"/>
+        <underline language="LA" method="pen" text="mixtu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="p[re]supponat quid nominis" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- intenta[m] nu[m]eru[m] -->
+    
+    </annotation>
+</transcription>

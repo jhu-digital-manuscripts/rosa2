@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.164v.tif" pagination="318" reader="John Dee" signature="[Ee.iij.[v]]"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="Dominus Edmundus Cantebrigiae Comes" type="straight"/>
+        <underline language="LA" method="pen" text="contra Bastardum Hispaniae" type="double"/>
+        <underline language="LA" method="pen" text="qui se regem" type="straight"/>
+        <underline language="LA" method="pen" text="ne Comes" type="straight"/>
+        <underline language="LA" method="pen" text="pax clanculo est firmata" type="straight"/>
+        <underline language="LA" method="pen" text="regnum suis Anglicis" type="straight"/>
+        <underline language="LA" method="pen" text="Anglici Portugalibus facti sunt onerosi" type="straight"/>
+        <underline language="LA" method="pen" text="sed &amp; vxores &amp; filias execrabiliter opprimentes" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/> 
+        <mark method="pen" name="circumflex" place="intext"/> <!-- opprimentes -->
+        
+        <errata amendedtext="tantum" copytext="tamen" language="LA"/>
+        
+    </annotation>
+</transcription>

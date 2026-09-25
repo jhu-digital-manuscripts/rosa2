@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.370v.tif" pagination="192" reader="John Dee" signature="[Mm.viii.[v]]"/>   
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        hoc persuaderi mihi no[n] opinione[m] <!-- FSF: partly covered up by folded page -->
+                        sed etia[m] ad veritatem plane velim
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Cotta
+                    </marginalia_text>
+                    <person name="Gaius Aurelius Cotta"/>
+                    <emphasis method="pen" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                Gaius Aurelius Cotta.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        dei
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Gods.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ceteroqui" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        ceteroqui
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                In other respects.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Academicus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Academic.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vereor laudare praesentem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Laudare pra[e]se[n]tem verearis.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                You dread to praise the present.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Zenonem, quem Philo noster coryphaeum appellare Epicureoru[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Zeno epicur[i] corypha[e]us.
+                    </marginalia_text>
+                    <person name="Zeno of Citium"/>
+                </position>
+            </language>
+            <translation>
+                Zeno of Citium, head of the Epicureans.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Maxime in Physicis quid no[n] sit q[uam] quid sit, explicare facilius
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                It is greatly easier to explain what is not and what is in physics.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Simonides de deo interrogatus.
+                    </marginalia_text>
+                    <person name="Simonides of Ceos"/>
+                </position>
+            </language>
+            <translation>
+                Simonides of Ceos questioned about God.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Simonidem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Simonides Poeta.
+                    </marginalia_text>
+                    <person name="Simonides of Ceos"/>
+                </position>
+            </language>
+            <translation>
+                Simonides of Ceos, the poet.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="síntne dei" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        An Dij sint
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Whether there are gods.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="deos esse" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Cur deos esse crederemus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Why we believe that there are gods.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Diagoras Atheos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Diagoras Atheos.
+                    </marginalia_text>
+                    <person name="Diagoras of Melos"/>
+                </position>
+            </language>
+            <translation>
+                Diagoras of Melos, the Atheist.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Abderites quidem Protagoras" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Protagoras Abderites.
+                    </marginalia_text>
+                    <person name="Protagoras"/>
+                </position>
+            </language>
+            <translation>
+                Protagoras.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="poenam ne dubitatio quidem effugere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        poena[m] Dubitatio ne effugiat de rebus diuinis quas profiteri debes
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Punishment that uncertainty flee divine things that you have to profess. <!-- FSF: not sure at all -->
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="atomorum regno" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Atomorum regnum.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Domination of atoms.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Prouerb[ium]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Proverb.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Corporibus autem omnis obsidetur locus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Corporibus o[mn]is obsidetur loc[us]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The space occupied with all bodies.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Democriti, siue etiam ante Leucippi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Democri, Leucippi opinio
+                    </marginalia_text>
+                    <person name="Democritus"/>
+                    <person name="Leucippus"/>
+                </position>
+            </language>
+            <translation>
+                The judgement of Democritus and Leucippus.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        r[ati]o { explorata firma
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Reason, explored and firm.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="corpuscula quaedam leuia, alia aspera, rotunda alia, partim autem angulata, curuata quaedam, &amp; quasi adunca" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        corpiscula { leuia aspera rotunda augulata curuata adunca
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Small bodies, light, hard, round, angular, curved and bent.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        { id satis magnu[m] argume[n]tum dixisti, cur [et]c q[uod] cu[m] leue p[er] se tu[m] etia[m] falsu[m] e[st]. no[n] est igitur ta[m] explorata ista r[ati]o, ad id q[uod] vis co[n]firma[n]tum, quàm videtur
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                You said this argument is great enough, why etc. because it is then also false <!-- FSF: not sure -->
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="physicorum oracla fundo" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        physicor[um] oracula fundo.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                I speak oracles of natural philosophy.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        gentes immanitate efferata[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The peoples fierce through brutality. <!-- FSF: not sure -->
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        agere pro territorio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To act for the territory.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        exterminatus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Dismissed.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="solum copiose" type="straight"/>
+        <underline language="LA" method="pen" text="etiam ornatius quàm" type="straight"/>
+        <underline language="LA" method="pen" text="tu, distincte, grauiter, ornate" type="straight"/>
+        <underline language="LA" method="pen" text="quod in illo mihi vsu saepe" type="straight"/>
+        <underline language="LA" method="pen" text="vt moleste ferrem tantu[m] ingenium (bona venia me audies) in tam leues, ne dicam in tam ineptas sente[n]tias incidisse" type="straight"/>
+        <underline language="LA" method="pen" text="Quia qua[n]to diutius co[n]sydero, inquit, tanto mihi res videtur obscurior" type="straight"/>
+        <underline language="LA" method="pen" text="ceteroqui" type="straight"/>
+        <underline language="LA" method="pen" text="quid dicit quod non modo philosophia dignum esset, sed mediocri prudentia" type="straight"/>
+        <underline language="LA" method="pen" text="dei" type="straight"/>
+        <underline language="LA" method="pen" text="consessu facillimu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="tuendas" type="straight"/>
+        <underline language="LA" method="pen" text="Multa enim occurrunt quae conturbent, vt interdum nulli esse videantur" type="straight"/>
+        <underline language="LA" method="pen" text="Quod enim omnium gentium generúmque hominibus ita videretur" type="straight"/>
+        <underline language="LA" method="pen" text="esse argume[n]tum dixisti, cur esse deos confiteremur: quod quum leue per se, tum etiam falsum" type="straight"/>
+        <underline language="LA" method="pen" text="esse gentes sic immanitate efferatas" type="straight"/>
+        <underline language="LA" method="pen" text="vrbe atque agro est exterminatus" type="straight"/>
+        <underline language="LA" method="pen" text="quum poenam ne dubitatio quidem effugere potuisset" type="straight"/>
+        <underline language="LA" method="pen" text="tam explorata ista ratio ad id quod vultis confirmandum, quàm videtur" type="straight"/>
+        <underline language="LA" method="pen" text="vnde" type="straight"/>
+        <underline language="LA" method="pen" text="vbi sint" type="straight"/>
+        <underline language="LA" method="pen" text="Abuteris ad omnia atomorum regno &amp; licentia" type="straight"/>
+        <underline language="LA" method="pen" text="in solum venit" type="straight"/>
+        <underline language="LA" method="pen" text="Corporibus autem omnis obsidetur" type="straight"/>
+        <underline language="LA" method="pen" text="Haec ego nunc physicorum oracla fundo" type="straight"/>
+        
+        <symbol name="Unidentified" place="left_margin"/>
+        <symbol name="Unidentified" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="tripunctus" place="left_margin" text="An Dij sint"/>
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="guillemet" place="left_margin"/>
+        <mark method="pen" name="section_sign" place="intext"/>
+        <mark method="pen" name="guillemet" place="tail"/>
+        
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral language="LA" place="left_margin" text="vnde">1</numeral>
+        <numeral language="LA" place="left_margin" text="vbi sint">2</numeral>
+        <numeral language="LA" place="left_margin" text="quales">3</numeral>
+        <numeral language="LA" place="left_margin" text="animo">4</numeral>
+        <numeral language="LA" place="left_margin" text="vita">5</numeral>
+        
+        <drawing anchor_text="Simonides Poeta" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+        <!-- FSF: unknown symbol -->
+    
+    </annotation>
+</transcription>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.364r.tif" pagination="711" reader="Harvey" signature="ooo2[r]"/>
+    <annotation>        
+        
+        <marginalia anchor_text="Annibal &amp; Philopoemen; Scipio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        Annibal, tandem mortuus, non mordet: duarum propè Decadum materia. Scipio etiam, et Philopaemen, mortui: 
+                        tres singulares Imp[eratores].
+                    </marginalia_text>
+                    <person name="Hannibal"/>
+                    <person name="Scipio Africanus"/> 
+                    <person name="Philopoemen"/>
+                    <emphasis method="pen" text="Annibal" type="straight"/>
+                    <emphasis method="pen" text="Scipio" type="straight"/>
+                    <emphasis method="pen" text="Philopa[e]men" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                A finally dead Hannibal does not bite; the subject of almost two decades. Also Scipio and Philopoemen are dead: three remarkable commanders
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="duarum potentissimarum gentium summis imperatoribus" type="straight"/>
+        <underline language="LA" method="pen" text="graue imperium regum nihil inexploratum, quod uestigari" type="straight"/>
+        <underline language="LA" method="pen" text="Annibal" type="straight"/>
+        <underline language="LA" method="pen" text="omnia circà clausa custodijs" type="straight"/>
+        <underline language="LA" method="pen" text="uenenu[m], quod multo antè praeparatum" type="straight"/>
+        <underline language="LA" method="pen" text="Liberemus" type="straight"/>
+        <underline language="LA" method="pen" text="diuturna cura PR. quando" type="straight"/>
+        <underline language="LA" method="pen" text="mortem senis expectare" type="straight"/>
+        <underline language="LA" method="pen" text="nec memorabilem ex inermi" type="straight"/>
+        <underline language="LA" method="pen" text="mores quidem" type="straight"/>
+        <underline language="LA" method="pen" text="quantum mutauerit" type="straight"/>
+        <underline language="LA" method="pen" text="patres Pyrrho regi hosti armato" type="straight"/>
+        <underline language="LA" method="pen" text="ueneno caueret" type="straight"/>
+        <underline language="LA" method="pen" text="autor esset Prusi[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="scelus occidendi hospitis" type="straight"/>
+        <underline language="LA" method="pen" text="Execratus deinde in caput regnumq[ue] Prusiae" type="straight"/>
+        <underline language="LA" method="pen" text="Hic uitae exitus fuit Annibalis" type="straight"/>
+        <underline language="LA" method="pen" text="Scipionem" type="straight"/>
+        <underline language="LA" method="pen" text="hoc anno mortuu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Africanus fuisset" type="straight"/>
+        <underline language="LA" method="pen" text="quo uiuo" type="straight"/>
+        <underline language="LA" method="pen" text="nisi ut ille senatu moueretur" type="straight"/>
+        <underline language="LA" method="pen" text="alius princeps in locum eius lectus non" type="straight"/>
+        <underline language="LA" method="pen" text="Trium clarissimoru[m] suae cuiusq[ue] gentis uirorem non magis" type="straight"/>
+        <underline language="LA" method="pen" text="comparabilis mors uidetur" type="straight"/>
+        <underline language="LA" method="pen" text="nemo eorum satis" type="straight"/>
+        <underline language="LA" method="pen" text="dignum splendore uitae exitum habuit" type="straight"/>
+        <underline language="LA" method="pen" text="omnes no[n] in patri solo mortui" type="straight"/>
+        <underline language="LA" method="pen" text="ueneno absumpti Annibal &amp; Philopoemen" type="straight"/>
+        <underline language="LA" method="pen" text="exul Annibal proditus" type="straight"/>
+        <underline language="LA" method="pen" text="captus Philopoeme[m] in carcere" type="straight"/>
+        <underline language="LA" method="pen" text="Scipio" type="straight"/>
+        <underline language="LA" method="pen" text="dicta, ad quam" type="straight"/>
+        <underline language="LA" method="pen" text="reus absens citatus" type="straight"/>
+
+        <symbol language="LA" name="SS" place="right_margin" text="Trium clarissimoru[m] suae cuiusq[ue] gentis uirorem non magis"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!-- posue -->
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- Annibalis -->
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- uolun -->
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- indixit -->
+        
+    </annotation>
+</transcription>

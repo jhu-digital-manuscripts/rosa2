@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>0</illustrations>
+    <totalPages>155</totalPages>
+    <dimensions units="mm">
+        <width>198</width>
+        <height>287</height>
+    </dimensions>
+    <dates>
+        <startDate>1400</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="135v" start="1r">135</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>40</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="testament">
+            <language>fr</language>
+            <title>Testament</title>
+            <textId/>
+            <pages end="155v" start="136r">20</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>40</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Senshu 3</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>Paper</material>
+            <origin>France</origin>
+            <currentLocation>Tokyo, Japan</currentLocation>
+            <repository>Senshu University</repository>
+            <shelfmark>MS 3</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Senshu 3</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>papier</material>
+            <origin>France</origin>
+            <currentLocation>Tokyo, Japon</currentLocation>
+            <repository>Université de Senshu</repository>
+            <shelfmark>MS 3</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

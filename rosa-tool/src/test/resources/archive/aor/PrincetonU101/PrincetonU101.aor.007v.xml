@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.007v.tif" pagination="iii[v]" reader="Harvey" signature="[Aiii[v]]"/>
+    <annotation>
+    
+    	<marginalia book_id="PrincetonU101" hand="Italian" id="PrincetonU101:00000020:m0001" marginalia_continues_to="PrincetonU101:00000021:m0001" marginalia_to_transcription="00000020.xml">
+    		<language ident="LA">
+    			<position book_orientation="0" place="head">
+    				<marginalia_text>
+    					M. Antonius Columna, pra[e]clarissimus Iuuenis, post paterna[m] Etrusco bello
+    					mortem; Prospero Patruo, et Fabritio huius patrueli, 
+    					celeberrimis Ducibus adha[e]sit: ab hisq[ue] certissimis militia[e] pra[e]ceptis imbutus, [iiii[r]: ità exactam hausit disciplinam, atq[ue] peritiam, Vt Prosperi, natura cunctatoris,
+    					cautum, et inuictu[m] robur; Fabritij verò pra[e]seruida[m] 
+    					in expediendis armis vim; nobili, salubriq[ue] temperamento moderari didicerit. Jouius, [9.5.] Elog. Bellicoru[m]. Sub Effigie M. Antonij Columna[e]:
+    					Ite[m], sub Effigie Prosperi Col. Both Prospero, &amp; Fabritio Colonna, learnid [their] militar doctrine, &amp; discipline,
+    					Vnder Don Consaluus Ferrandus, Dux Magnus.]
+    						<!-- Marginalia continues onto the head of 00000021.tif -->
+    				</marginalia_text>
+    				<person name="Marcantonio Colonna"/>
+    				<person name="Prospero Colonna"/>
+    				<person name="Fabrizio Colonna"/>
+    			</position>
+    		</language>
+    		<translation>
+    			Marcantonio Colonna, a most distinguished young man, after the death of his father in the Etruscan war,
+    			kept close to his paternal uncle Prosperus, and his cousin Fabrizio, most celebrated dukes:
+    			and having learned from these men the most certain principles of war, [iiii[r]: thus he took in their combined discipline and experience, such that he learned to control,
+    			with a noble and healthy moderation, the guarded and insurpassable might of Prospero 
+    			(by nature a cautious person), and the the strength of Fabrizio (truly most hotblooded in 
+    			settling disputes with arms).
+    			
+    			Giovio, in Book 9, Chapter 5 of his Elogia Bellicorum. Under the portait of Marco Antonio Colonna:
+    			likewise, under the potrait of Prospero Colonna.
+    			
+    			Both Prospero and Fabrizio Colonna learned the military doctrine and discipline under Don 
+    			Consalvo Ferrando, a great leader.]
+    		</translation>
+    	</marginalia>
+
+	<underline language="EN" method="pen" text="where largelye of the same gentilman" type="straight"/>
+    	<underline language="EN" method="pen" text="matters of warre, both wittyly and prudently" type="straight"/>
+    	<underline language="EN" method="pen" text="learne hereby manye thinges" type="straight"/>
+    	<underline language="EN" method="pen" text="onely to the life of Souldiours, but" type="straight"/>
+    	<underline language="EN" method="pen" text="ciuill mens liues, whiche grauely of a moste wise" type="straight"/>
+    	<underline language="EN" method="pen" text="was disputed" type="straight"/>
+
+    	<mark method="pen" name="hash" place="right_margin"/>	<!-- Connects marginalia to following page  -->
+    	
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="matters of warre, both wittyly and prudently"/>
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="ciuill mens liues, whiche grauely of a moste wise"/>
+    	
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="moste wise"/>
+
+    </annotation>
+</transcription>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.065r.tif" pagination="65" reader="John Dee" signature="R"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Regenbogen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Iridis varia ratio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Different reasons for rainbows</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="die natrürlichen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Iris naturalis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The natural rainbow</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Imò alia[m] novere optici ratione[m] iridis efficie[n]te[m] qua[n]tu[m] ad coloru[m] varietate[m].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Indeed, the opticians get to know another reason of Iris, causing the extent of the variety of colours.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="Reng" type="straight"/>
+        <underline language="DE" method="pen" text="macen sie auch" type="double"/>
+        <underline language="DE" method="pen" text="Regenbogen" type="straight"/>
+        <underline language="DE" method="pen" text="Regenpogen sol ein pra[e]sagium" type="straight"/>
+        <underline language="DE" method="pen" text="besondern erkennen vor den" type="straight"/>
+        <underline language="DE" method="pen" text="werden im Firmament geboren von den Wassersternen so sie" type="straight"/>
+        <underline language="DE" method="pen" text="das" type="straight"/>
+        <underline language="DE" method="pen" text="der plust" type="triple"/>
+        <underline language="DE" method="pen" text="Regen ohn" type="straight"/>
+        <underline language="DE" method="pen" text="ein vorplust" type="double"/>
+        <underline language="DE" method="pen" text="sein plüest" type="straight"/>
+        <underline language="DE" method="pen" text="werden nicht sichtbar alle verschwinden" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

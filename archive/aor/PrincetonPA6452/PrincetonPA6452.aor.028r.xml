@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.028r.tif" pagination="39" reader="Harvey"/>
+    <annotation>
+        <marginalia anchor_text="A. Posthumius dictator" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A. Posthumius dictator, vnus illustrium viroru[m], apud Aureliu[m] Victore[m]. Vt etiam Cincinnatus dictator: de quo i[nfr]a.
+                    </marginalia_text>
+                    <person name="Aulus Postumius Albus Regillensis"/>
+                    <person name="Aurelius Victor"/>
+                    <person name="Quinctius Cincinnatus"/>
+                    <internal_ref text="i[nfr]a">
+                        <target ref="PrincetonPA6452:00000082" text="[60]"/>
+                        <target ref="PrincetonPA6452:00000090" text="[68]"/>
+                        <target ref="PrincetonPA6452:00000094" text="[72]"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Aulus Posthumius as dictator, one of the distinguished men, in Aurelius Victor. As also the dictator Cincinnatus, about whom below.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="A. Posthumius dictator" type="straight"/>
+        <underline language="LA" method="pen" text="Valerius Publicolae" type="straight"/>
+        <underline language="LA" method="pen" text="conspicatus ferocem iuuenem Tarquinium" type="straight"/>
+        <underline language="LA" method="pen" text="domestica etiam gloria accensus" type="straight"/>
+        <underline language="LA" method="pen" text="subdit calcaria equo" type="straight"/>
+        <underline language="LA" method="pen" text="Tarquinium" type="straight"/>
+        <underline language="LA" method="pen" text="spiculo petit" type="straight"/>
+        <underline language="LA" method="pen" text="Tarquinius retrò in agmen suorum" type="straight"/>
+        <underline language="LA" method="pen" text="Valerium temerè inuectum in exulum" type="straight"/>
+        <underline language="LA" method="pen" text="moribundus Romanus labentibus" type="straight"/>
+        <underline language="LA" method="pen" text="cecidisse talem uirum" type="straight"/>
+        <underline language="LA" method="pen" text="cohorti suae" type="straight"/>
+        <underline language="LA" method="pen" text="delecta manu praesidij causa circa se" type="straight"/>
+        <underline language="LA" method="pen" text="que[m] suorum" type="straight"/>
+        <underline language="LA" method="pen" text="fugientem uiderint" type="straight"/>
+        <underline language="LA" method="pen" text="pro hoste habeant" type="straight"/>
+        <underline language="LA" method="pen" text="metu ancipiti uersi à fuga Romani" type="straight"/>
+        <underline language="LA" method="pen" text="Cohors dictatoris tum primùm" type="straight"/>
+        <underline language="LA" method="pen" text="integris corporibus" type="straight"/>
+        <underline language="LA" method="pen" text="animisq[ue] fessos, adorti exules caedunt" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark method="pen" name="dot" place="head"/> <!--next to 39-->
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--Tarqui-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--Va-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--suo-->
+        
+        <mark method="pen" name="dot" place="intext"/> <!--acie, domestica-->
+        
+    </annotation>
+</transcription>

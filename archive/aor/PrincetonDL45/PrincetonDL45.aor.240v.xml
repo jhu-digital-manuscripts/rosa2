@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonDL45.240v.tif" pagination="480" reader="Harvey" signature="[SSij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="De nobilium nuptiis." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Oeconomica nobilium personaru[m].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The household of noble characters.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="De nobilium nutpiis." type="straight"/>
+        <underline language="LA" method="pen" text="annuli impositione" type="straight"/>
+        <underline language="LA" method="pen" text="dotalitio munere" type="straight"/>
+        <underline language="LA" method="pen" text="Nupti[a]e nobiliu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Viris tamen praecipua delectatio est in" type="straight"/>
+        <underline language="LA" method="pen" text="venationibus, ac" type="straight"/>
+        <underline language="LA" method="pen" text="structurarem aedificiis" type="straight"/>
+        <underline language="LA" method="pen" text="colonis" type="straight"/>
+        <underline language="LA" method="pen" text="agros &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="subditis pacificandis" type="straight"/>
+        <underline language="LA" method="pen" text="verò etiam illustrissim[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="manum aliquod homorificum" type="straight"/>
+        <underline language="LA" method="pen" text="pro ornatu" type="straight"/>
+        <underline language="LA" method="pen" text="Polonicar[um] reginar[um] manibus vestes sacr[a]e co[n]sectae." type="straight"/>
+        <underline language="LA" method="pen" text="vidi vestes sacras Reginarumi" type="straight"/>
+        <underline language="LA" method="pen" text="Illustrium Dei" type="straight"/>
+        <underline language="LA" method="pen" text="ancillarum, manibus elaboratas" type="straight"/>
+        <underline language="LA" method="pen" text="sagacitas est" type="straight"/>
+        <underline language="LA" method="pen" text="etenim materfamiliâs" type="straight"/>
+        <underline language="LA" method="pen" text="omnes ministros habet" type="straight"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="Polonicar[um] reginar[um] manibus vestes sacr[a]e co[n]sectae."/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="vidi vestes sacras Reginarumi"/>
+        
+        
+    </annotation>
+</transcription>

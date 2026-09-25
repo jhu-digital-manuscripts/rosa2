@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA8550.339r.tif" pagination="684" reader="Harvey" signature="uiij[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Perpotatio causa plurimoru[m] morborum.
+                    </marginalia_text>
+                    <emphasis method="pen" text="Perpotatio" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                Drinking is the cause of many diseases.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ipso ac principio neruorum cerebro laeso" type="straight"/>
+        <underline language="LA" method="pen" text="sua ui destitui" type="straight"/>
+        <underline language="LA" method="pen" text="illa capitis crebra nutatio atq[ue] grauedo" type="straight"/>
+        <underline language="LA" method="pen" text="articulorum dissolutio" type="straight"/>
+        <underline language="LA" method="pen" text="paralisin" type="straight"/>
+        <underline language="LA" method="pen" text="medicum quendam" type="straight"/>
+        <underline language="LA" method="pen" text="equestris ordinis" type="straight"/>
+        <underline language="LA" method="pen" text="Medici facetia" type="straight"/>
+        <underline language="LA" method="pen" text="morbo decumbentem aliquando" type="straight"/>
+        <underline language="LA" method="pen" text="de origine ac causis morbi" type="straight"/>
+        <underline language="LA" method="pen" text="interrogatum" type="straight"/>
+        <underline language="LA" method="pen" text="respondere" type="straight"/>
+        <underline language="LA" method="pen" text="Fluxionem quandam" type="straight"/>
+        <underline language="LA" method="pen" text="manu dextra in caput defluentem" type="straight"/>
+        <underline language="LA" method="pen" text="fontem illi &amp; causam morborum esse" type="straight"/>
+        <underline language="LA" method="pen" text="quid id fieri" type="straight"/>
+        <underline language="LA" method="pen" text="cantarum" type="straight"/>
+        <underline language="LA" method="pen" text="potu plenus" type="straight"/>
+        <underline language="LA" method="pen" text="protinus correptum ad os admouebat" type="straight"/>
+        <underline language="LA" method="pen" text="hanc esse fluxionem tot morborum causam" type="straight"/>
+        <underline language="LA" method="pen" text="ualetudini nullam" type="straight"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="head" text="cerebro"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="nutatio"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="grauedo"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="paralisin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- admoue -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="causis"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="dextra"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="caput"/>
+        
+       <errata amendedtext="qui" copytext="quid" language="LA"/> 
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.019v.tif" pagination="38" reader="John Dee" signature="[c 3[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Varro" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Varro</marginalia_text>
+                    <person name="Marcus Terentius Varro"/>
+                </position>
+            </language>
+            <translation>Varro.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Illa tamen quomodo effugient, ut nomina qua[m]uis foeminina, singulari nominatiuo V S finita, nunquam, genitiuo casu in E R I S syllabam terminantur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>.VS.</marginalia_text>
+                </position>
+            </language>
+            <translation>-us.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ite[m] cum E S literus finita per uarios exeant genitiuos, nunqua[m] tamen eade[m] R I S syllaba terminatos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ES.</marginalia_text>
+                </position>
+            </language>
+            <translation>-es.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nec lex est loquendi, sed obseruatio" type="straight"/>
+        
+    </annotation>
+</transcription>

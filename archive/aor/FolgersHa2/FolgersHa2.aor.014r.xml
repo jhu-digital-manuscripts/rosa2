@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="FolgersHa2.014r.tif" pagination="347" reader="Harvey"/>	<!-- ABO  018right -->
+    	<annotation>
+    		
+            	<!-- Marginalia -->
+    		
+        		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.014r_0001" marginalia_continues_from="Ha2.013v_0001" marginalia_from_transcription="Ha2.013v.xml">
+        			<language ident="LA">
+        				<position book_orientation="0" place="head">
+                    				<marginalia_text>
+                    					[p. 346: Plurimis literulis fit homo modica[e] habilitatis:] Autotechnia, et Cosmopraxia Vnica.
+                    				</marginalia_text>
+        				</position>
+        			</language>
+        			<translation>
+        				[p. 346: With the most letters, a man becomes modestly capable:] Self-instruction, and Cosmopraxia alone. <!-- CG: Autotechnos at least exists in Greek, I still don't know the best way to translate Cosmopraxia.  --><!--JG: Will send it to the group-->
+        			</translation>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						s[upr]a / 
+    					</marginalia_text>
+    					<internal_ref>
+    						<target ref="FolgersHa2:Ha2.007r" text="s[upr]a"/> <!--La domenica-->
+    					</internal_ref>
+    				</position>
+    			</language>
+    			<language ident="IT">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						dilemma. (
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				[See] above. Dilemma. 
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						Ca[e]teri omnes nugas agu[n]t.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				All others deliver trifles. 
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						Plures Doctores, pro, an contra?
+    						pro se, qua[e]q[ue] secta.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				More Doctors: for or against?
+    				For it, whatever the sect.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						( Solus polytechnus non nugatur.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				( Only the man skilled in many arts does not talk nonsense.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						A radice ad fructum: aut
+    						opera perdita.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				From the root to the fruit: or else the works are ruined.
+    			</translation>
+    		</marginalia>
+        
+    		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.014r_0002" marginalia_continues_to="Ha2.013v_0002" marginalia_to_transcription="Ha2.013v.xml">
+    			<language ident="LA">
+    				<position book_orientation="270" place="right_margin">
+    					<marginalia_text>
+    						Autotechni, et Cosmopragmatici Archignomicon.. Parcus uesc[e]ndi: parcissimus esto bibendi:
+    						Parcior [e]t somni: parcior [a]t Veneris. Prodigus at soliai studij, techna[e]q[ue] profundia[e],
+    						Pra[e]ualidiq[ue] actus, omnigeniq[ue] boni. Talis ego Parcus, talisq[ue] ego Prodigus omnes
+    						Abijcio nugas: pragmata stricta premo. Quod potis est ars, aut virtus, aut = 
+    					</marginalia_text>
+    				</position>
+    				<position book_orientation="270" place="intext">
+    					<marginalia_text>
+    						= da[e]dala praxis, Extentu
+    					</marginalia_text>
+    					<person name="Daedalus"/>
+    				</position>
+    				<position book_orientation="270" place="left_margin">
+    					<marginalia_text>
+    						Extentu proprio multiplicare decet. Huc arcana acma[e], stratagemataq[ue] eruta ab alto: [p. 346: plus plusq[ue] ingenij: hic operum vlterius. Flexanima[e] Eutrapelus superaggerat agmina Suad[a]e: Impressaq[ue] Fide, mirum operatur opus.].	
+    						<!-- Continues onto facing page, right margin, Ha2.013v. -->
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Chief piece of wisdom for the self-instructed and universally pragmatic man.. Live sparingly with eating and most sparingly with drinking:
+    				moreover, be more sparing with sleep: but even more sparing with Love. However, be lavish alone in study, and in deep skill,
+    				and superior behavior, and in every kind of good. Being so sparing and so lavish, I cast away all trifles: I pursue strictly practical
+    				concerns. That which art can do, or virtue, or skilful action, to be extended on one's own, should be multiplied. For this purpose, 
+    				the mysteries of perfection, and strategems drawn from on high:	[p. 346: more and more intellect: here more beyond works. Eutrapelus heaps over the movement of persuasive head-swaying: and with impressed faith, the wonderful work works.]
+    			</translation>
+    		</marginalia>
+	        
+	    	<underline language="IT" method="pen" text="347." type="straight"/>
+    		<underline language="IT" method="pen" text="uscirne in sabbato" type="straight"/>
+    		<underline language="IT" method="pen" text="la Domenica" type="straight"/>
+    		<underline language="IT" method="pen" text="Hebreo" type="straight"/>
+    		<underline language="IT" method="pen" text="Christiano" type="straight"/>
+    		<underline language="IT" method="pen" text="Hebrei" type="straight"/>
+    		<underline language="IT" method="pen" text="più santi in" type="straight"/>
+    		<underline language="IT" method="pen" text="contare i" type="straight"/>
+    		<underline language="IT" method="pen" text="cauare un pelo del" type="straight"/>
+    		<underline language="IT" method="pen" text="barba all'altro" type="straight"/>
+    		<underline language="IT" method="pen" text="l'Hebreo" type="straight"/>
+    		<underline language="IT" method="pen" text="Abraam" type="straight"/>
+    		<underline language="IT" method="pen" text="Pietro" type="straight"/>
+    		<underline language="IT" method="pen" text="seguita[n]do per ordine parecchi l'un" type="straight"/>
+    		<underline language="IT" method="pen" text="Christiano fastidito" type="straight"/>
+    		<underline language="IT" method="pen" text="alla barba al Giudeo" type="straight"/>
+    		<underline language="IT" method="pen" text="strappogliela tutta" type="straight"/>
+    		<underline language="IT" method="pen" text="Santa Orsola con la sua compagnia" type="straight"/>
+    		<underline language="IT" method="pen" text="scolare Pesciatino" type="straight"/>
+    		<underline language="IT" method="pen" text="moccichino in" type="straight"/>
+    		<underline language="IT" method="pen" text="Niccoletta Cortigiana" type="straight"/>
+    		<underline language="IT" method="pen" text="io no[n] u'inte[n]do" type="straight"/>
+    		<underline language="IT" method="pen" text="pure a inte[n]dere" type="straight"/>
+    		<underline language="IT" method="pen" text="buoni orecchi" type="straight"/>
+    		<underline language="IT" method="pen" text="be[n] forati" type="straight"/>
+    		<underline language="IT" method="pen" text="gli orecchi gra[n]di" type="straight"/>
+    		<underline language="IT" method="pen" text="pie[n] d'annelletti d'oro" type="straight"/>
+    		<underline language="IT" method="pen" text="Arguto" type="straight"/>
+    		<underline language="IT" method="pen" text="scolar Pesciatino" type="straight"/>
+    		<underline language="IT" method="pen" text="uolte per burla" type="straight"/>
+    		<underline language="IT" method="pen" text="battaglie a una cortigiana" type="straight"/>
+    		<underline language="IT" method="pen" text="innamorato" type="straight"/>
+    		<underline language="IT" method="pen" text="uoler dormire" type="straight"/>
+    		<underline language="IT" method="pen" text="ella non gli" type="straight"/>
+    		<underline language="IT" method="pen" text="mai dato udienza" type="straight"/>
+    		<underline language="IT" method="pen" text="offerendole che" type="straight"/>
+    		
+	       
+	       
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark method="pen" name="dash" place="right_margin"/> <!-- Domeni -->
+    		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- un pelo del -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- cam -->
+    		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- tutta, di- -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- ridomandando -->
+    		
+	    	<!-- Left margin -->
+	    	<mark method="pen" name="bracket" place="left_margin"/> <!-- lecito .. ca -->
+    		<mark method="pen" name="bracket" place="left_margin"/> <!-- po Abraam ... po l'altro -->
+		    
+	    	<!-- Intext -->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Hebrei"/> 
+	    	<mark method="pen" name="dot" place="intext"/> <!-- i suoi, e ogni -->
+    		<mark method="pen" name="vertical_bar" place="intext"/> <!-- Christiano: e il -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- ordine parecchi -->
+    		<mark method="pen" name="quotation_mark" place="intext"/> <!-- Christiano fastidito -->
+    		<mark method="pen" name="comma" place="intext"/> <!-- al Giudeo & -->
+    		<mark method="pen" name="equal_sign" place="intext"/> <!-- Santa Orsola -->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="forati"/>
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Arguto"/>
+    		
+    		
+
+    </annotation>
+</transcription>

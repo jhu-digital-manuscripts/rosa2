@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.025v.tif" reader="John Dee" signature="[Gij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="kalchs" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Calx</marginalia_text> 
+                </position>
+            </language>
+            <translation>Limestone.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Colica" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Colica[e] cura facilis</marginalia_text>
+                </position>
+            </language>
+            <translation>An easy remedy for colic.</translation>  
+        </marginalia>        
+        
+        <underline language="DE" method="pen" text="abkült mit den zůfallenden" type="straight"/>
+        <underline language="DE" method="pen" text="anfang seines vrsprungs ist" type="straight"/>
+        <underline language="DE" method="pen" text="durch den kalchstein" type="straight"/>
+        <underline language="DE" method="pen" text="werme" type="double"/>
+        <underline language="DE" method="pen" text="kalchstein" type="double"/>
+        <underline language="DE" method="pen" text="treffend die haut" type="straight"/>
+        <underline language="DE" method="pen" text="allein zů seuberen vn[d] zů reinigen" type="straight"/>
+        <underline language="DE" method="pen" text="eines yetlichen wassers" type="straight"/>
+        <underline language="DE" method="pen" text="gewermbt wird" type="straight"/>
+        <underline language="DE" method="pen" text="ein kalchstein gegossen" type="straight"/>
+        <underline language="DE" method="pen" text="müde außzeucht" type="straight"/>
+        <underline language="DE" method="pen" text="macht zů essen" type="straight"/>
+
+        <mark method="pen" name="bracket" place="left_margin"/>
+
+       <drawing anchor_text="den kalchstein" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+
+    </annotation>
+</transcription>

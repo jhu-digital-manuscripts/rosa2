@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+   <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+   
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <title>Le debat de deux amans</title>
+         
+         </titleStmt>
+         
+         <publicationStmt>
+            
+            <distributor>MSEL</distributor>
+         
+         </publicationStmt>
+         
+         <notesStmt>
+            
+            <note rend="IDENTIFICATION">
+               
+               <p>Français 1740, Bibliothéque national de France, Paris. Paris, 1401-1402. </p>
+            
+            </note>
+            
+            <note rend="BASIC INFORMATION">
+               
+               <p>Parchment, 284 x 205 mm, 32 folios.</p>
+            
+            </note>
+            
+            <note rend="MATERIAL">
+               
+               <p> The <material>parchment</material> presents a yellow tonality, especially around the edges. It has many defects such as spots, holes carefully repaired (ff. <locus>17</locus>, <locus>25</locus>, and <locus>28</locus>) and cuts. The irregularities in the dimension of the folios indicates that they were not trimmed during binding. The rule vis-à-vis is respected half the time.</p>
+                  
+            </note>
+            
+            <note rend="QUIRES">
+               
+               <list>
+                  
+                  <head>Collation:</head>
+                  
+                  <item n="I">
+                     
+                     <locus from="1" to="8">1-8</locus>
+                  
+                  </item>
+                  
+                  <item n="II">
+                     
+                     <locus from="9" to="15">9-15</locus>
+                  
+                  </item>
+                  
+                  <item n="III">
+                     
+                     <locus from="16" to="23">16-23</locus>
+                  
+                  </item>
+                  
+                  <item n="IV">
+                     
+                     <locus from="24" to="31">24-31</locus>
+                  
+                  </item>
+                  
+                  <item n="V">
+                     
+                     <locus>32</locus>
+                  
+                  </item>                  
+                              
+                                   
+               </list>
+                
+               <p>32 + I. Modern foliation in ink on the top right corner is accurate. It was probably added in the 18th century.</p>
+            
+            </note>
+            
+            <note rend="LAYOUT">
+               
+               <p>There are uniform light gray ruling marks on the folios done with a lead pencil. There is some evidence of pricking, with 2 or 4 rather big pricks on the folios of circular or eliptical form. There is one column with 32 (sometimes 30 to 41) lines.</p>
+
+            
+            </note>
+            
+            <note rend="SCRIPT">
+               
+               <p>The text is written in brown ink and the rubrics are pink. There seems to be one scribal hand for the whole manuscript (Hand X) using a very controlled calligraphic cursive script. There is little evidence of punctuation marks, but there are plenty corrections done by the scribe's own hand.</p>
+            
+            </note>
+            
+            <note rend="DECORATION">
+               
+               <p>There is a large pen-flourished initial P at the beginning of the manuscript (fol. <locus>1</locus>) in light blue, with red, black and dark blue flourishes. There are also traces of gilding. In addition, there are four smaller pen-flourished initials (ff. <locus>7</locus>, <locus>15</locus>, <locus>16</locus>, and <locus>31</locus>) alternating the colour scheme between red initial with blue flourishes and vice-versa. </p>
+               
+               <p>Only one miniature decorates the manuscript on folio <locus>1</locus>, Christine presenting her manuscript to the Duque of Orleans, painted in grisaille by the workshop of the Master of the Coronation of the Virgin.</p>
+             
+            </note>
+            
+            <note rend="BINDING">
+               
+               <p>The manuscript was bound with yellow moroccan leather with the coat of arms surrounded by three golden fillets on the cover. There are 5 nerves on the spine, with the initials of the Louis XIV surmounted by a small star. The title appears also in the spine, over an applied piece of red leather, reading <hi rend="italics">"LE DE/BAT D D'A/M'P CH/D'PIS"</hi>.</p>
+            </note>
+            
+            <note rend="HISTORY">
+               
+               <p>The manuscript can be dated between 1401 and 1402. It is the oldest surviving copy of this text, even earlier than the copy in Chantilly Ms. 492, completed in 1402.</p>
+               
+               <p>Provenance: The manuscript belonged without a doubt to Louis d'Orléans. It contains previous shelfmarks on folio <locus>1</locus>: 1023 (Rigault), 980 (Dupuy); 7692 (Regius). There is a stamp from the royal library dated around 1724. </p>
+                  
+            </note>
+            
+            <note rend="TEXT">
+               
+               <p>It only contains <hi rend="italics">Le debat de deux amans</hi>.</p>
+               
+               
+            
+            </note>
+            
+            <note rend="AUTHOR">
+              
+               <p>
+*The information given here comes from direct observation and from Ouy, Gilbert, Christine Reno and Inès Villela-Petit.<hi rend="italics"> Album Christine de Pizan </hi>. Turnhout: Brepols, 2012. </p>
+<p> Description by Mónica Ann Walker Vadillo</p>
+            
+            </note>
+         
+         </notesStmt>
+         
+         <sourceDesc>
+            
+            <bibl>
+               
+               <note type="format">manuscript</note>
+               
+               <note type="commonName">Français 1740</note>
+               
+               <title>Le debat de deux amans</title>
+
+               
+               <extent>
+                  
+                  <measure quantity="32" unit="folios">32 folios</measure>
+                  
+                  <dimensions>
+                     
+                     <height unit="mm">284</height>
+                     
+                     <width unit="mm">205</width>
+                  
+                  </dimensions>
+               
+               </extent>
+               
+               <note type="illustrations">1</note>
+               
+               
+               
+               
+               
+               <note type="material">parchment</note>
+               
+               <pubPlace>Paris, France</pubPlace>
+     
+               <date notAfter="1500" notBefore="1400">15th century</date>
+            
+            </bibl>
+            
+            <msDesc>
+               
+               <msIdentifier>
+                  
+                  <settlement>Paris</settlement>
+                  
+                  <repository>Bibliothèque nationale de France</repository>
+                  
+                  <idno>Français 1740</idno>
+               
+               </msIdentifier>
+            
+               <msContents>
+                  <msItem n="1">
+                     <locus from="1r" to="32v">1r-32v</locus>
+                     <title>Le debat de deux amans</title>
+                     <note type="textid">Le debat de deux amans</note>
+                     <note type="folios">32</note>
+                     <note type="illustrations">1</note>
+                     <note type="linesPerColumn">40</note>
+                     <note type="leavesPerGathering">8</note>
+                     <note type="columnsPerFolio">1</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         
+         </sourceDesc>
+      
+      </fileDesc>
+   
+   </teiHeader>
+   
+   <text>
+      
+      <body>
+         
+         <div> </div>
+      
+      </body>
+   
+   </text>
+
+</TEI>

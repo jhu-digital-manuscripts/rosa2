@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.014v.tif" reader="John Dee" signature="[Cij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Sed linea nesurat[ur] pu[n]ctis. sup[er]ficies lineis et corpus sup[er]ficiebus et locus corpore" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Varia[e] opiniones mathematicoru[m], q[uo]modo punctum line[a]e, linea sup[er]ficei et sup[er]ficies corpori insit et corpus loco.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                There are various opinions of mathematicians, on how a point connects to a line, a line to an area (surface?), and an area to body, and a body to a locus.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Line[a]e, sup[er]ficei, corporis loci. generatio mathematica q[uo]m[od]o co[n]cipie[n]da.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+               Loci of a line, area and body. Mathematical generation to be conceived this way.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quare diffinitio posicio est cu[m] no[n] p[ro]bat[ur]. et suppositio positio est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Definitio Positio Suppositio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Definition, position, supposition.
+            </translation>
+        </marginalia>
+
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Suppositio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Supposition.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Quomodo pu[n]ctu[m] insit line[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                How a point is connected to a line.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Line[a]e gener[ati]o
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The generation of a line.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="co[n]tinuitas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Co[n]tinuitas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Continuity.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        sup[er]ficiei gen <!-- FSF: the rest is illegible; I think it is an abbreviation as before, so possibly gen[eratio] -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The generation of an area.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        o[mn]i, semper et p[er] se inesse debere.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                   All should always be connected to themselves.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="demo[n]stratio[n]is cu[m] diffinitio sit quid esse rei. suppositio aut[em] esse v[e]l no[n] esse. quid aut[em]" type="straight"/>
+        <underline language="LA" method="pen" text="quare diffinitio posicio est cu[m] no[n] p[ro]bat[ur]. et suppositio positio est. quonia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ide[m] esse suppositione[m] et diffinitione[m] s[e]c[un]d[u]m positione[m] differu[n]t t[ame]n in hoc cu[m] suppositio sit p[ro]posicio             q[uo] accipit sumptu[m] c[om]positiue diffinitio vero expositiue" type="straight"/> 
+        <underline language="LA" method="pen" text="et o[mn]i loco" type="straight"/>
+        <underline language="LA" method="pen" text="s[e]c[un]d[u]m co[m]une[m] scolam mathematicoru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="essenciale formale" type="straight"/>
+        <underline language="LA" method="pen" text="et corpus loco" type="straight"/>
+        <underline language="LA" method="pen" text="Cu[m] linea no[n] co[n]stituat[ur] ex" type="straight"/>
+        <underline language="LA" method="pen" text="Sed linea " type="straight"/>
+        <underline language="LA" method="pen" text="mensurat[ur] pu[n]ctis" type="double"/>
+        <underline language="LA" method="pen" text="s[e]c[un]d[u]m q[uod] sunt termini co[m]munes" type="straight"/>
+        <underline language="LA" method="pen" text="vltima cu[m] p[ri]mis vnu[m] [et] neutrius p[er] se sicut dixim[us]" type="straight"/>
+        <underline language="LA" method="pen" text="q[ui]a ill[u]d q[uo]d ymaginat[ur] moueri est i[n]diuisibile" type="straight"/>
+        <underline language="LA" method="pen" text="et co[n]tinuitas est formale" type="straight"/>
+        <underline language="LA" method="pen" text="latu[m] causat sup[er]ficie[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ita corpus locum. q[ua]re pu[n]ctus est principiu[m] linee sine quo no[n] est linea et linea principiu[m] sup[er]ficie sine qua no[n] est sup[er]ficies et             sup[er]ficies principiu[m] corp[or]is sine quo no[n] est corpus et corp[us] p[ri]ncipium loci sine quo no[n] est loc[us] et de istis no[n] est dicere in quoda[m] sic in quoda[m]" type="straight"/>
+        <underline language="LA" method="pen" text="semp[er] sic eade[m] ratione formali et essenciali" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- actu supponit[ur] -->
+        <mark method="pen" name="comma" place="intext"/> <!-- c[om]positive diffinitio -->
+        <mark method="pen" name="comma" place="intext"/> <!-- sup[er]ficie[m] et -->
+        
+        <errata amendedtext="," copytext="." language="LA"/> <!-- potentia s[ed] -->
+        <errata amendedtext="quide[m]" copytext="quid i[n]" language="LA"/>  
+        <errata amendedtext="quide[m]" copytext="quid i[n]" language="LA"/>  
+        
+    </annotation>
+</transcription>

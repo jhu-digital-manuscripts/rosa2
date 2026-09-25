@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.258r.tif" pagination="31" reader="John Dee" signature="Diiij"/>
+    <annotation>
+       
+        <marginalia anchor_text="Comites, Morgarus, &amp; Edwardus" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Morgarus Edwardus comites</marginalia_text>
+                    <person name="Morcar"/>
+                    <person name="Siward Barn"/>
+                </position>
+            </language>
+            <translation>Morcar and Siward, Earls.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Herewardo" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Herewardus</marginalia_text>
+                    <person name="Hereward the Wake"/>
+                </position>
+            </language>
+            <translation>Hereward.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Stigandus Dorobernensis Archiepiscopus degradatur" type="straight"/>
+        <underline language="LA" method="pen" text="quos nulla euidenti causa nec consilia nec leges saeculi damnabant" type="straight"/>
+        <underline language="LA" method="pen" text="ecclesiam Christi Cantuar" type="straight"/>
+        <underline language="LA" method="pen" text="Morgarus" type="straight"/>
+        <underline language="LA" method="pen" text="Edwardus" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; ponte[m] duoru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="excepto Herewardo" type="straight"/>
+        <underline language="LA" method="pen" text="regni sui 6" type="straight"/>
+        <underline language="LA" method="pen" text="Abrenitici occurrit, &amp; homagium sibi fecit" type="straight"/>
+        <underline language="LA" method="pen" text="Cinomannus" type="straight"/>
+        <underline language="LA" method="pen" text="vxoratos sacerdotes a diuino" type="straight"/>
+        <underline language="LA" method="pen" text="nouo exemplo" type="straight"/>
+        <underline language="LA" method="pen" text="inconsiderato praeiudicio contra sanctorum patrum sententiam" type="straight"/>
+        <underline language="LA" method="pen" text="sacramenta quae fiunt in ecclesia" type="straight"/>
+        <underline language="LA" method="pen" text="Baptismus" type="straight"/>
+        <underline language="LA" method="pen" text="Chrisma" type="straight"/>
+        <underline language="LA" method="pen" text="corpus &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="spiritu sancto latenter operante eorundem" type="straight"/>
+        <underline language="LA" method="pen" text="effectum, seu per bonos seu per malos intra ecclesiam dispensentur" type="straight"/>
+        <underline language="LA" method="pen" text="misticè illa viuificat" type="straight"/>
+        <underline language="LA" method="pen" text="bonorum meritis" type="straight"/>
+        <underline language="LA" method="pen" text="peccatis malorum attenuantur" type="straight"/>
+        <underline language="LA" method="pen" text="laici sacrosancta mysteria temerant" type="straight"/>
+        <underline language="LA" method="pen" text="de hijs disputant" type="straight"/>
+        <underline language="LA" method="pen" text="infantes baptizant" type="straight"/>
+        <underline language="LA" method="pen" text="sordido humore aurium pro sacro oleo &amp; crismate vtentes" type="straight"/>
+        <underline language="LA" method="pen" text="presbyteris coniugatis accipere paruipendunt" type="straight"/>
+        <underline language="LA" method="pen" text="decimas presbyteris deputatas" type="straight"/>
+        <underline language="LA" method="pen" text="laici corpus domini a presbyteris coniugatis consecratum, saepe pedibus conculcauerunt" type="straight"/>
+        <underline language="LA" method="pen" text="domini voluntariè effuderunt" type="straight"/>
+        <underline language="LA" method="pen" text="Lanfrancus quo" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- Christi spiritu -->
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

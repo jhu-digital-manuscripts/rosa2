@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.316v.tif" pagination="146" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Lancecronum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Lancecrona.</marginalia_text>
+                    <person name="Agnes de Launcekrona"/>
+                </position>
+            </language>
+            <translation>Launcekrona.</translation>
+        </marginalia>
+
+        <marginalia anchor_text="Londoniensibus, quos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>illos sc[ilicet]</marginalia_text>
+                </position>
+            </language>
+            <translation>That is, those.</translation>
+        </marginalia>
+
+        <marginalia anchor_text="Londoniensibus, quos nouit contingentes ad vtru[m]libet" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Londine[n]ses Contingentes ad vtru[m]lib[et]</marginalia_text>  
+                </position>
+            </language>
+            <translation>Londoners reaching either place.</translation>  <!-- DO: Not sure about translation -->
+        </marginalia>
+    
+        <underline language="LA" method="pen" text="Hyberniae repudiauit vxorem" type="straight"/>
+        <underline language="LA" method="pen" text="cuiusdam sellarij filiam sat ignobilem" type="straight"/>
+        <underline language="LA" method="pen" text="Lancecronam" type="straight"/>
+        <underline language="LA" method="pen" text="fauebat sibi" type="double"/>
+        <underline language="LA" method="pen" text="Glouerni[a]e mulieris" type="double"/>
+        <underline language="LA" method="pen" text="Mich. Attepool" type="straight"/>
+        <underline language="LA" method="pen" text="necem proceru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="suis traditoribus" type="double"/>
+        <underline language="LA" method="pen" text="contingentes" type="double"/> 
+        <underline language="LA" method="pen" text="ad vtru[m]libet" type="straight"/> 
+        <underline language="LA" method="pen" text="gratiam regi" type="double"/>
+        <underline language="LA" method="pen" text="dominos indictarent" type="double"/>
+        <underline language="LA" method="pen" text="quòd" type="straight"/>
+        <underline language="LA" method="pen" text="communes velle tenere consuetudines vsitatas" type="straight"/>
+        <underline language="LA" method="pen" text="statutu[m] &amp;c. fieri procurarunt, qualiter" type="straight"/>
+        <underline language="LA" method="pen" text="Bigamia Ducis satis impia" type="straight"/>
+        
+        
+        <mark method="pen" name="comma" place="intext"/>       <!-- Hyberniae in -->
+        
+        <mark method="pen" name="circumflex" place="intext"/>  <!-- Londoniensibus, quos -->
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

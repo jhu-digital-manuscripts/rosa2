@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note rend="IDENTIFICATION">
+          <p>Paris, Bibliothèque de l'Arsenal (Bibliothèque nationale de France), 3339</p>
+        </note>
+        <note rend="CONTENTS">
+          <p><hi rend="italics">Roman de la Rose</hi> (ff. 1r-155v), <hi rend="italics">Le Testament</hi> (ff. 156r-185v), <hi rend="italics">Le Codicille</hi> (ff. 186r-186v), <hi rend="italics">Les Sept articles de la foi</hi> (ff. 187r-193r)</p>
+        </note>
+        <note rend="MATERIAL">
+          <p>Parchment</p>
+        </note>
+        <note rend="ORIGIN">
+          <p>France</p>
+        </note>
+        <note rend="DATE">
+          <p>Beginning of the 15th century</p>
+        </note>
+        <note rend="SCRIPT">
+          <p>Gothic, poem written in 2 columns of 36 lines</p>
+        </note>
+        <note rend="DECORATION">
+          <p>1 double-column miniature in colors (containing 5 scenes: "L'Amans Sleeps," "L’Amans Dreams He Rises and Dresses," "L’Amans Goes into the Countryside," "L’Amans Approaches the River," "L'Amans at the Gate of the Garden of Deduiz"), with a full border of rinceaux, a bar border, and a large decorated initial (f. <locus>1r</locus>); miniature of Jean de Meun, with borders of rinceaux, a bar border, and a large decorated initial in colors and gold begin <hi rend="italics">Le Testament</hi> (f. <locus>156r</locus>); large decorated initial with borders of rinceaux and a bar border at the start of <hi rend="italics">Le Codicille</hi> (f. <locus>186r</locus>); miniature of Trinity, borders of rinceaux, a bar border, and a large decorated initial in colors and gold begin <hi rend="italics">Les Sept articles de la foi</hi> (f. <locus>187r</locus>). Smaller blue initials flourished in red and red initials flourished in blue throughout.</p>
+        </note>
+        <note rend="DIMENSIONS">
+          <p>330 x 263 mm (this measurement is from Langlois)</p>
+        </note>
+        <note rend="FOLIATION">
+          <p>ff. ii + 194 (this includes a blank at the end) + ii</p>
+        </note>
+        <note rend="BINDING">
+          <p>French, 18th century; marbled brown calf, raised spine bands, stamped arms of Paulmy on spine, red leather spine label with gilt lettering, marbled endpapers.</p>
+        </note>
+        <note rend="PROVENANCE">
+          <p>Bibliothèque de Paulmy, late 18th century; Bibliothèque de l'Arsenal, 19th century (after 1797).</p>
+        </note>
+        <note rend="NOTES">
+          <p>Description of authors and manuscript written in an 18th-century hand on a flyleaf: <locus>frontmatter.flyleaf.02v</locus>
+               </p>
+        </note>
+        <note rend="SELECT BIBLIOGRAPHY">
+          <p>1. Henry Martin, <hi rend="italics">Catalogue des manuscrits de la bibliothèque de l'Arsenal</hi>, III, p. 337</p>
+          <p>2. Langlois, <hi rend="italics">Les manuscrits</hi>, p. 78
+               </p>
+        </note>
+        <note rend="N.B.">
+          <p>This description has been compiled using the site's images and various published sources. If you have corrections or additional information on the manuscript, please do contact us.</p>
+        </note>
+        <note>
+          <p>Description by Beatrice Radden Keefe</p>
+        </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscript</note>
+          <note type="commonName">Arsenal 3339</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="193" unit="folios">193</measure>
+            <dimensions>
+              <height unit="mm">330</height>
+              <width unit="mm">263</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">3</note>
+          <note type="material">parchment</note>
+          <pubPlace>France</pubPlace>
+          <date notAfter="1500" notBefore="1400">15th century</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Paris</settlement>
+            <repository>
+                     
+                     Bibliothèque de l'Arsenal</repository>
+            <idno>3339</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="155v">1r-155v</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">155</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">36</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+            <msItem n="2">
+              <locus from="156r" to="185v">156r-185v</locus>
+              <title>Testament</title>
+              <note type="textid">testament</note>
+              <note type="folios">30</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">36</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">1</note>
+            </msItem>
+            <msItem n="3">
+              <locus from="186r" to="186v">186r-186v</locus>
+              <title>Codicille</title>
+              <note type="textid">codicille</note>
+              <note type="folios">1</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">36</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="4">
+              <locus from="187r" to="193r">187r-193r</locus>
+              <title>Sept articles de la foi</title>
+              <note type="textid">septarticles</note>
+              <note type="folios">7</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">36</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

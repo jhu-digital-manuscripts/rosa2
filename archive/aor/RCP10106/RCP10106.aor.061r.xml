@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.061r.tif" pagination="121" reader="John Dee" signature="h 5"/>
+    <annotation>
+        
+        <marginalia anchor_text="tria faciunt genera auditorum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tria auditoru[m] genera</marginalia_text>
+                </position>
+            </language>
+            <translation>Three categories of audience.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="oratoris officium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Oratoris officiu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>The duty of the orator.</translation>
+        </marginalia>  
+        
+        <marginalia anchor_text="Anaximenes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Anaximenes.</marginalia_text>
+                    <person name="Anaximenes of Lampsacus"/>
+                </position>
+            </language>
+            <translation>Anaximenes.</translation>
+        </marginalia>  
+        
+        <marginalia anchor_text="Protagoram" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Protagoras.</marginalia_text>
+                    <person name="Protagoras"/>
+                </position>
+            </language>
+            <translation>Protagoras.</translation>
+        </marginalia>  
+        
+        <marginalia anchor_text="Plato" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Plato</marginalia_text>
+                    <person name="Plato"/>
+                </position>
+            </language>
+            <translation>Plato.</translation>
+        </marginalia>  
+        
+       <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

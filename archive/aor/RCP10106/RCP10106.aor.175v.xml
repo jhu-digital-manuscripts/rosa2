@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.175v.tif" pagination="350" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="dispositio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dispositio</marginalia_text>
+                </position>
+            </language>
+            <translation>Disposition.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="more Homerico" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Mos homericus</marginalia_text>
+                    <person name="Homer"/>
+                </position>
+            </language>
+            <translation>The manner of Homer.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="imperatoria uirtus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Imperatoria v[ir]tus</marginalia_text>
+                </position>
+            </language>
+            <translation>The virtue of the general.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="antè" type="straight"/>
+        <underline language="LA" method="pen" text="prooemium, ubi omittendum, ubi utendum" type="straight"/>
+        <underline language="LA" method="pen" text="partita" type="straight"/>
+        <underline language="LA" method="pen" text="ab initijs incipie[n]dum" type="straight"/>
+        <underline language="LA" method="pen" text="à medijs" type="straight"/>
+        <underline language="LA" method="pen" text="uel ultimis" type="straight"/>
+        <underline language="LA" method="pen" text="no[n] expone[n]dum, quando à nostris" type="straight"/>
+        <underline language="LA" method="pen" text="quando ab aduersariorum" type="straight"/>
+        <underline language="LA" method="pen" text="qua[n]do à firmißimis probationibus, quando à leuioribus" type="straight"/>
+        <underline language="LA" method="pen" text="proponendae prooemijs quaestiones, qua praeparatione praemuninedae, quid iudicis animus" type="straight"/>
+        <underline language="LA" method="pen" text="accipere" type="double"/>
+        <underline language="LA" method="pen" text="paulatim deducendus" type="straight"/>
+        <underline language="LA" method="pen" text="refutatio. Reseruandi perorationi, an per totam* oratione[m]" type="straight"/>
+        <underline language="LA" method="pen" text="affectus. De iure prius" type="straight"/>
+        <underline language="LA" method="pen" text="crimina" type="straight"/>
+        <underline language="LA" method="pen" text="de quibus iudiciu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="quis ordo faciendus" type="straight"/>
+        <underline language="LA" method="pen" text="testimonia, tabulae" type="straight"/>
+        <underline language="LA" method="pen" text="seruandae" type="straight"/>
+        <underline language="LA" method="pen" text="affuerint natura, donctrina, studiu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="copias eloque[n]tiae ponit in medio: nostrum est uti eis scire" type="straight"/>
+        <underline language="LA" method="pen" text="ne commissura pelluceat, corpus sit, non membra" type="straight"/>
+         
+         <mark method="pen" name="vertical_bar" place="left_margin"/>
+         <mark method="pen" name="comma" place="intext"/> <!-- animus accipere -->
+            
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

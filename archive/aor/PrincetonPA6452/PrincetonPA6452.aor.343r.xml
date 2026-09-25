@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.343r.tif" pagination="669" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text> 
+                        Gallorum natura, primo impetu pra[e]ceps, et feruida. s[upr]a, i[nfr]a.
+                    </marginalia_text>
+                <emphasis method="pen" text="Gallorum" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                The nature of the Gauls, rash and fiery at the first impulse. [See] above, below.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="primum impetum, que[m]" type="straight"/>
+        <underline language="LA" method="pen" text="feruido ingenio &amp; caeca ira effundunt, sustinueris" type="straight"/>
+        <underline language="LA" method="pen" text="sudore &amp; lassitudine membra" type="straight"/>
+        <underline language="LA" method="pen" text="laba[n]t arma" type="straight"/>
+        <underline language="LA" method="pen" text="mollia corpora, molles" type="straight"/>
+        <underline language="LA" method="pen" text="sol, puluis, sitis, ut ferrum" type="straight"/>
+        <underline language="LA" method="pen" text="admoueas, prosternunt" type="straight"/>
+        
+    </annotation>
+</transcription>

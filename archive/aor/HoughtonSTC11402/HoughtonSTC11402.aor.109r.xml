@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.109r.tif" reader="Harvey" signature="[Nvi[r]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Ha[e]c Honoris, Gloria[e]q[ue] Messis: Julio, Augustoq[ue] sudore, atq[ue]
+                    sanguine importanda.</marginalia_text>
+                </position>
+            </language>
+            <translation>These months of honor and glory: July and August, with sweat and by causing blood.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Petrarchs</marginalia_text>
+                    <person name="Petrarch"/>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Triumph of fame: more worth, then all [the] other fiue, 
+                    for vse in [the] world.</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vt nobilibus factis, dictisue inclarescas.</marginalia_text>
+                </position>
+            </language>
+            <translation>So that you are illuminated by noble deeds and sayings.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>s[upr]a.</marginalia_text>
+                </position>
+            </language>
+            <translation>[See] above.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Martiall Axiomes.</marginalia_text>
+                    <person name="Martial"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="That what so euer is profytable to the, is hurtefull to thyne aduersarie" hand="English_secretary">
+           <language ident="LA">
+               <position book_orientation="0" place="right_margin">
+                   <marginalia_text>quod tibi proficit; hosti officit: et contra.</marginalia_text>
+                   <emphasis method="pen" text="quod tibi" type="straight"/>
+                   <emphasis method="pen" text="hosti officit" type="straight"/>
+               </position>
+           </language>
+           <translation>What benefits you, hinders the enemy, and the other way around.</translation>
+       </marginalia> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Regulae belloru[m] generales è Flaujo Vegetjo.</marginalia_text>
+                    <person name="Vegetius"/>
+                </position>
+            </language>
+            <translation>General rules of war by Flavius Vegetius.</translation>
+        </marginalia> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>s[upr]a.</marginalia_text>
+                </position>
+            </language>
+            <translation>[See] above.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="these generalle rules of warre, taken out of Vegetius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>È libro 3. Vegetij de Re Militari: cap. 26.</marginalia_text>
+                    <person name="Vegetius"/>
+                    <book title="De re Militari"/>
+                </position>
+            </language>
+            <translation>From book 3 of Vegetius' 'De re militari', chapter 26.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="vnarmed were" type="straight"/>
+        <underline language="EN" method="pen" text="the Perseans" type="straight"/>
+        <underline language="EN" method="pen" text="theyr harneys vpon his owne souldiours" type="straight"/>
+        <underline language="EN" method="pen" text="enmies, were in the same shippes, whiche" type="straight"/>
+        <underline language="EN" method="pen" text="knewe the shyppes and the apparayle of them, whiche" type="straight"/>
+        <underline language="EN" method="pen" text="stode aboue the hatches" type="straight"/>
+        <underline language="EN" method="pen" text="beinge sodeynly" type="straight"/>
+        <underline language="EN" method="pen" text="in one selfe day, vanquished" type="straight"/>
+        <underline language="EN" method="pen" text="bothe by see" type="straight"/>
+        <underline language="EN" method="pen" text="and on the" type="straight"/>
+        <underline language="EN" method="pen" text="these generalle rules of warre, taken out of Vegetius" type="straight"/>
+        <underline language="EN" method="pen" text="That what so euer is profytable" type="straight"/>
+        <underline language="EN" method="pen" text="hurtefull to thyne aduersarie" type="straight"/>
+        <underline language="EN" method="pen" text="that" type="straight"/>
+        <underline language="EN" method="pen" text="that helpeth" type="straight"/>
+        <underline language="EN" method="pen" text="hyndreth the" type="straight"/>
+        
+        <symbol language="LA" name="SS" place="head" text="Ha[e]c Honoris, Gloria[e]q[ue] Messis: Julio, Augustoq[ue] sudore, atq[ue]             sanguine importanda."/>
+        
+        <symbol language="EN" name="SS" place="intext" text="Petrarchs Triumph of fame: more worth, then all [the] other fiue,              for vse in [the] world. Vt nobilibus factis, dictisue inclarescas."/>
+        
+        <mark method="pen" name="X_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="being sodeynly"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="That what so euer is profytable"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Perseans"/>
+        <mark method="pen" name="dot" place="intext"/> <!--Cyprus, he-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="harneys"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="owne"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="shyppes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="apparayle"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="hatches"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="in one selfe day"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="page_break" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--vacant, we-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="profytable"/>
+        <mark method="pen" name="dot" place="intext"/> <!--aduersarie, and-->
+        
+    </annotation>
+</transcription>

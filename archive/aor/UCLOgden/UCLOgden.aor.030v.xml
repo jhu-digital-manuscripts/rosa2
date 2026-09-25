@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.030v.tif" pagination="44" reader="John Dee" signature="[d 4[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        De questionibus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                On questions.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Astrologi qualis debet esse vita
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Such must be the life of an astrologer.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Antistitem enim ☉ ac ☾, &amp; caeterorum deorum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Antistes ☉ et ☾ae et ca[e]teror[um] deor[um].
+                    </marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>
+                The priest of the sun and the moon and other gods.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Publice danda responsa.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                An answer to be given publicly.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="de fato Imperatoris desinire" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Imperatoru[m] fortuna et corporis co[n]stitutione[m] ignoratur.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The fate of the emperors and the constitution of the body were ignored. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Cur igitur aurea o[mn]ia de Sylla ad stellas retulit?
+                    </marginalia_text>
+                    <person name="Sulla"/>
+                </position>
+            </language>
+            <translation>
+                Why has he then returned all golden things from Sulla to the stars?
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sit tibi uxor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Sit tibi vxor
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                May she be a wife to you.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Contra foeneratores
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Against usurers.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nocturnis sacrificiis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nocturnia sacrificia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Nocturnal sacrifices.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ne istius diuinae scientiae gloriam, ignobilis pecuniae cupiditas infamet" type="straight"/>
+        <underline language="LA" method="pen" text="enim ☉ ac ☾, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="deorum, per quos terrena omnia gubernantur" type="straight"/>
+        <underline language="LA" method="pen" text="responsa publice" type="double"/>
+        <underline language="LA" method="pen" text="hoc interrogaturis" type="double"/>
+        <underline language="LA" method="pen" text="ante pr[a]edicito" type="straight"/>
+        <underline language="LA" method="pen" text="quod omnia quidem illis, de quibus" type="double"/>
+        <underline language="LA" method="pen" text="interrogat te, clara sis uoce dicturus" type="straight"/>
+        <underline language="LA" method="pen" text="à te tale forte quaeratur, quod" type="straight"/>
+        <underline language="LA" method="pen" text="nec interrogare" type="straight"/>
+        <underline language="LA" method="pen" text="nec dicere" type="straight"/>
+        <underline language="LA" method="pen" text="quando de statu reip. uel de uita Romani Imperatoris" type="straight"/>
+        <underline language="LA" method="pen" text="aliq[ui]d interroga[n]ti respondeas" type="straight"/>
+        <underline language="LA" method="pen" text="oportet, nec licet, ut de statu reip. aliquid" type="straight"/>
+        <underline language="LA" method="pen" text="nefaria curiositate" type="double"/>
+        <underline language="LA" method="pen" text="atque omni animaduersione dignus est, si q[ui]s interrogatus de fato dixerit Imperatoris" type="straight"/>
+        <underline language="LA" method="pen" text="nec dicere poteris de eo aliquid, nec inuenire" type="straight"/>
+        <underline language="LA" method="pen" text="solus enim imperator, stellarum non subiacet cursibus, &amp; solus est, in cuius fato stellae decernendi non habeant potestatem" type="straight"/>
+        <underline language="LA" method="pen" text="fuerit numinum" type="straight"/>
+        <underline language="LA" method="pen" text="maioris potestatis, quae est in Imperatore, non poterit explicare substantia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Quare quicunque aliquid de Imperatore quaesiuerit, nolo ut eum truci, ac s[a]euera responsione conturbes, sed ei docili sermone persuade, quod nullus             possit de uita Imperatoris inuenire, ut persuasionibus tuis monitus, istum furorem temeritatis, correcto mentis errore, deponant" type="straight"/>
+        <underline language="LA" method="pen" text="da opera[m] ut in omnibus actibus, fides tua incorrumpta permaneat, nunqua[m]] conscientia[m] tua[m], falsis testimpniis polluas, nunqua[m] pecuniae foenus exerceas, nec" type="straight"/>
+        <underline language="LA" method="pen" text="insiurandi fidem, nec promittas, nec exigas" type="straight"/>
+        <underline language="LA" method="pen" text="fuerit, ne propter eius miseram stipem, diuina numinum praesidia implorata esse uidea[n]tur" type="straight"/>
+        <underline language="LA" method="pen" text="solum responsis, sed etiam consiliis, perditas hominu[m] possis instituere cupiditates. Nunq[uam]" type="straight"/>
+        <underline language="LA" method="pen" text="nocturnis sacrificiis" type="straight"/>
+        <underline language="LA" method="pen" text="sed palàm" type="straight"/>
+        <underline language="LA" method="pen" text="artis exerce disciplina[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Nolo te uitia hominu[m] in tractatu genituraru[m] manifestius explicare" type="straight"/>
+        <underline language="LA" method="pen" text=" suspende, ne, quod homini malus stellarum decreuit cursus" type="straight"/>
+        <underline language="LA" method="pen" text="non dicere, sed exprobtare uidearis" type="double"/>
+        <underline language="LA" method="pen" text="separatos &amp; alienos esse decet à prauis" type="straight"/>
+        
+        <mark colour="red" method="pen" name="bracket" place="left_margin"/> 
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark colour="red" method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark colour="red" method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="equal_sign" place="right_margin"/> <!-- aliquando -->
+        <mark method="pen" name="comma" place="intext"/> <!-- aliquid nefaria -->
+        <mark method="pen" name="comma" place="intext"/> <!-- seditio[n]es fuge -->
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

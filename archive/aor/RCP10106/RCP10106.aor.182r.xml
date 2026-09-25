@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.182r.tif" pagination="363" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="euentus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Eventus</marginalia_text>
+                </position>
+            </language>
+            <translation>Event.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="famae locus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>fam[a]e locus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Famous passage.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="συνωνυμία" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>[Συνωνυμία - deleted].</marginalia_text>
+                </position>
+            </language>
+            <translation>Synonymy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sciamus inornatum esse, quod sit improprium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>O[mn]e improprium est inornatum.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Everything improper is unadorned.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="idem verborum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vsus verboru[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>The words used.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nam rebus atrocibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In reb[us] atrocib[us]</marginalia_text>
+                </position>
+            </language>
+            <translation>On terrible things.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="redhibitione" type="straight"/>
+        <underline language="LA" method="pen" text="est, perspicuitatem proprijs, ornatum translatis uerbis magis egere. Sciamus" type="straight"/>
+        <underline language="LA" method="pen" text="alia honestiora, sublimiora, nitidiora, iucundiora, uocaliora" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; quò plus quaeque spiritus habet, auditu pulchrior. Et" type="straight"/>
+        <underline language="LA" method="pen" text="notabile est" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">1</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

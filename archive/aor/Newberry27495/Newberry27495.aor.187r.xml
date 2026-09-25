@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.187r.tif" reader="Harvey" signature="Yy.i.[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian" other_reader="modern hand">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        oped [.] eight. <!-- AB: quite faint - I think it's referring to Harvey's correction of the word 'oped' to 'opened'. Any thoughts on what that single letter could be? -->
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="certein sparkle of that" type="straight"/>
+        <underline language="EN" method="pen" text="godlye loue" type="straight"/>
+        <underline language="EN" method="pen" text="holye furie" type="straight"/>
+        <underline language="EN" method="pen" text="hath" type="straight"/>
+        <underline language="EN" method="pen" text="vnsaught" type="straight"/>
+        <underline language="EN" method="pen" text="indited" type="straight"/>
+        <underline language="EN" method="pen" text="me" type="straight"/>
+        <underline language="EN" method="pen" text="inspireth me" type="straight"/>
+        <underline language="EN" method="pen" text="loue will" type="straight"/>
+        <underline language="EN" method="pen" text="his secretes discouered" type="straight"/>
+        <underline language="EN" method="pen" text="is so stiepe (in" type="straight"/>
+        <underline language="EN" method="pen" text="it be harde to" type="straight"/>
+        <underline language="EN" method="pen" text="vnpossible for women" type="straight"/>
+        <underline language="EN" method="pen" text="often to offende" type="straight"/>
+        <underline language="EN" method="pen" text="more forgiuen" type="straight"/>
+        <underline language="EN" method="pen" text="womens soules" type="straight"/>
+        <underline language="EN" method="pen" text="be" type="straight"/>
+        <underline language="EN" method="pen" text="accustomed" type="straight"/>
+        <underline language="EN" method="pen" text="behouldinges" type="straight"/>
+        <underline language="EN" method="pen" text="this" type="straight"/>
+        <underline language="EN" method="pen" text="Plato" type="straight"/>
+        <underline language="EN" method="pen" text="Socrates" type="straight"/>
+        <underline language="EN" method="pen" text="Plotinus" type="straight"/>
+        <underline language="EN" method="pen" text="our holye fatehrs" type="straight"/>
+        <underline language="EN" method="pen" text="Saint Francis" type="straight"/>
+        <underline language="EN" method="pen" text="feruent spirite of loue" type="straight"/>
+        <underline language="EN" method="pen" text="holie seale" type="straight"/>
+        <underline language="EN" method="pen" text="hale vp Saint Paul the" type="straight"/>
+        <underline language="EN" method="pen" text="the sight of those secretes" type="straight"/>
+        <underline language="EN" method="pen" text="Saint Stephan the heauens" type="straight"/>
+        <underline language="EN" method="pen" text="by a woman" type="straight"/>
+        <underline language="EN" method="pen" text="Diotima" type="straight"/>
+        <underline language="EN" method="pen" text="And" type="straight"/>
+
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="straight_quotation_mark" place="right_margin"/>
+        <mark method="pen" name="X_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="holye furie"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- him, and -->
+        <mark method="pen" name="dot" place="intext"/> <!-- men, but -->
+        <mark method="pen" name="dot" place="intext"/> <!-- women, for -->
+        
+        <errata amendedtext="opened" copytext="oped" language="EN"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.056v.tif" pagination="[56[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="nostra[e] altitudinis parallelu[m] com meridiano, horizontem in quatuor quartas non a[e]qualiter" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        falsum, si de acu intelligas / at rei natura veru[m] est.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                It is wrong, if you understand with a needle, but it is true in the nature of the matter.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        non posse in quatuor quartas ina[e]quales diuidi, et et lineas quarta[m] respo[n]dere vero ortui [etc]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                It cannot be divided in four unequal quarters and also to the lines correctly correspond to the origin <!-- FSF: second 'quartam' unclear -->   <!--JG: Can't figure it out either-->
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        [deleted]
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="nostra[e] altitudinis parallelu[m] com meridiano, horizontem in quatuor quartas non a[e]qualiter" type="straight"/>
+        <underline language="LA" method="pen" text="spiritui" type="double"/>
+        <underline language="LA" method="pen" text="acum in leste eadem altitudine procedere" type="straight"/>
+        <underline language="LA" method="pen" text="Quod esse nequit absque altitudinis diminutione illius partis, unde nauis profecta fuit. Interrogatio" type="straight"/>
+        <underline language="LA" method="pen" text="illuc non" type="double"/>
+        <underline language="LA" method="pen" text="Expositione autem hac reiecta, ueram aggrediamur expositionem. Et ne tantum temporis consumatur, absque eo quòd causa sciatur,              eam declarare conabor: quia officium meum causas explicare est: tuum uerò, effectum considerare" type="straight"/> 
+        
+        <drawing anchor_text="reiecta, ueram aggrediamur expositionem. Et ne tantum temporis consumatur, absque" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+
+    </annotation>
+</transcription>

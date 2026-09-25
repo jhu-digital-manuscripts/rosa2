@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="ChChWb512.108r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Chedulla[m]
+                    </marginalia_text>
+                    <person name="Caedwalla of Wessex"/>
+                </position>
+            </language>
+            <translation>Caedwalla</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="occidentale[m] porta[m] lo[n]doniaru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="honore[m] sancti Martini" type="straight"/>
+        <underline language="LA" method="pen" text="Elidualdam" type="straight"/>
+        <underline language="LA" method="pen" text="decim" type="double"/>
+        
+        <mark method="pen" name="bracket" place="intext"/> <!--igitur vt-->
+        <mark method="pen" name="bracket" place="intext"/> <!--coeperam languente-->
+        
+        <errata amendedtext="Amoricam" copytext="Armonicam" language="LA"/>
+        
+    </annotation>
+</transcription>

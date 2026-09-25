@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonRB16th12.006v.tif" reader="Harvey" signature="[B.iij.v]"/>
+    <annotation>
+        
+        <marginalia anchor_text="King" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Quene
+                    </marginalia_text>
+                    <person name="Mary Queen of Scots"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="to the Quene" type="straight"/>
+        <underline language="EN" method="pen" text="she flingeth away in hast" type="straight"/>
+        <underline language="EN" method="pen" text="like a mad woman" type="straight"/>
+        <underline language="EN" method="pen" text="by great iourneyes in poste" type="straight"/>
+        <underline language="EN" method="pen" text="the sharpe time of winter" type="straight"/>
+        <underline language="EN" method="pen" text="and in an unconuenient" type="straight"/>
+        <underline language="EN" method="pen" text="despising all disco[m]modities of the way &amp; wether" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="hash" place="left_margin" text="despising all disco[m]modities of the way &amp; wether"/>
+        
+        <errata amendedtext="[deleted]" copytext="king" language="EN"/>
+        
+        
+    </annotation>
+</transcription>

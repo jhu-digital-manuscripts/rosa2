@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.062r.tif" pagination="55" reader="John Dee" signature="Oiij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Cumq[ue] significator aliam partem possederit latitudinis â promissore, uel ex eadem parte fuerit, sed maiorem aut aequalem habuerit latitudinem cum promissore, minor effectus apparebit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota, qua r[ati]o[n]e effectus frustret[u]r.</marginalia_text>
+                </position>
+            </language>
+            <translation>Note by which reason the effect is rejected.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro mundi mutationibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota.</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>at co[n]sidera</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>etia[m] in radijs</marginalia_text>
+                </position>
+            </language>
+            <translation>But consider, even in the rays.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="unicuiq[ue] parti annu[m] unum, &amp; dies quinq[ue], &amp; octo horas" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>pro Vnoq[u]oq[ue] gradu, annus .1. Dies 5. hora[e] 8.</marginalia_text>
+                </position>
+            </language>
+            <translation>For every degree, 1 year, 5 days, 8 hours.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aequalem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>in[a]equale[m]</marginalia_text> 
+                </position>
+            </language>
+            <translation>Unequal.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Cumq[ue] significator aliam partem possederit latitudinis â promissore, uel ex eadem parte fuerit, sed maiorem aut aequalem habuerit" type="straight"/>
+        <underline language="LA" method="pen" text="iuxta Ptolomaei sententia[m] promissorem ad significatorem iuxta horaru[m] partes &amp; ascensiones ipsius promissoris" type="straight"/>
+        <underline language="LA" method="pen" text="pro mundi mutationibus" type="straight"/>
+        <underline language="LA" method="pen" text="dando cuiq[ue]" type="double"/>
+        <underline language="LA" method="pen" text="mi.2.sec.1" type="straight"/>
+        <underline language="LA" method="pen" text="In uita hominis, ut dixi, unicuiq[ue] parti annu[m] unum, &amp; dies quinq[ue], &amp; octo horas" type="straight"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="Cumq[ue] significator aliam partem possederit latitudinis â promissore, uel ex eadem parte fuerit, sed maiorem aut aequalem habuerit latitudinem cum promissore, minor effectus apparebit"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

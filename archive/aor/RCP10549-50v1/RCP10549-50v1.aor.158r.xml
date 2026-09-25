@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.158r.tif" pagination="295" reader="John Dee" signature="tt.iiii."/>
+    <annotation>
+        
+        <marginalia anchor_text="C. Marium, quem vere patrem patriae, parentem inquam vestrae libertatis, atque huiusce Reipublicae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Caius Marius p[ate]r patria[e] parens libertatis parens Reip.
+                    </marginalia_text>
+                    <person name="Gaius Marius"/>
+                </position>
+            </language>
+            <translation>
+                Gaius Marius, father of the fatherland, parent of freedom, parent of the state.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in fide non stetit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        in fide stare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To be trusted.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="innumerabileis hostium copias in Italia fudisset" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        fundere innumerabiles copias
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To rout countless troops.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="religionem &amp; sanctimonia[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        religio sanctimonia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Holy and sacred estates.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="gloriae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Gloria
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Glory.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fistulas quibus aqua suppeditabatur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        fistulis aqua[m] suppeditari
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To supply water with pipes.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="salutem" type="straight"/>
+        <underline language="LA" method="pen" text="adeóne ignarus es disciplinae, consuetudinísque nostrae, vt haec nescias" type="straight"/>
+        <underline language="LA" method="pen" text="quoniam sensu &amp; vita caret" type="straight"/>
+        <underline language="LA" method="pen" text="omnia sua secum vnà" type="straight"/>
+        <underline language="LA" method="pen" text="neque quisquam nostrum in Reipublicae periculis cum laude ac virtute versatur, quin spe posteritatis fructúque ducatur" type="straight"/>
+        <underline language="LA" method="pen" text="virorum bonorum mentes diuinae mihi, atque aeternae videntur esse, tum maxime quòd optimi &amp; sapientissimi cuiusque animus ita praesentit in posterum,              vt nihil nisi sempiternum spectare videatur" type="straight"/>
+        <underline language="LA" method="pen" text="deorum religionem &amp; sanctimonia[m] demigrasse" type="straight"/>
+        <underline language="LA" method="pen" text="Etenim Quirites exiguum nobis vitae curriculum natura circunscripsit, immensum gloriae. quare si eos qui iam de vita decesserunt ornabimus,             iustiorem nobis mortis conditione[m] relinquemus. Sed" type="straight"/>
+        <underline language="LA" method="pen" text="C. Marius, quòd fistulas quibus aqua" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">18</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

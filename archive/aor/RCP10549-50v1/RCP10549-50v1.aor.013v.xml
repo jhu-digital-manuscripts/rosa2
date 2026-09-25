@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.013v.tif" pagination="10" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        crafty and full of deceyte, wilye
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="vulgaria &amp; obsoleta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        vulgare obsoletu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Commonplace and out of date.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="verbis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        VERBA
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Words.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ad ephemeride[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Ephemeris
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Diary.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Coarguit Neviu[m] a tempore &amp; loco
+                    </marginalia_text>
+                    <person name="Nevius"/>
+                </position>
+            </language>
+            <translation>
+                He refutes Nevius by time and place.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="L. Albius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Luci[us] Albius
+                    </marginalia_text>
+                    <person name="Lucius Albius"/>
+                </position>
+            </language>
+            <translation>
+                Lucius Albius.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="profecti sunt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Al[ii]s [prosecuti su[n]t
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                In other [copies]: they prosecuted.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Quonia[m] causa porata aut in ip[s]is caussis interrogavantur testes <!--JG: Unsure abt 'porata' NBW: do you think he means "parata"? it does look like an o, though. I've changed the translation to reflect this, but it's questionable-->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Since in the given matter or in similar cases witnesses were questioned.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Indignatio p[er] querela[m] a fortuna Quintij
+                    </marginalia_text>
+                    <person name="Publius Quinctius"/>
+                </position>
+            </language>
+            <translation>
+                Indignation through the quarrel by Quinctius' fortune.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Interrogatio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Interrogation.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        P Qui[n]tij vit[a]e R[ati]o
+                    </marginalia_text>
+                    <person name="Publius Quinctius"/>
+                </position>
+            </language>
+            <translation>
+                The reason for Publius Quinctius' life.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        dumtaxat vsq[ue] èo.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Only so far [Loeb 240, 67].
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        PETITIO
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Petition.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Secunda Diuisio[n]is pars mi[nim]e tractatur 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The second part of the division is insufficiently treated.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        [que[m]qu[am] diuinare - deleted]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>To divine whatever.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="procuratoris dilige[n]tis officium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Procuratoris dilige[n]tis officium.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The duty of a diligent procurator.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quid aliud sit absentem defendi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Defendi abse[n]te[m] quid
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To defend what is absent.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Ironicè
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Ironically.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Transitio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Transition.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        εἰρωνεία 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Irony.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        [ειρωνεια; deleted]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                [Irony]
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Prosopopeia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Prosopopeia.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        mea 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                My.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nonis Februarii" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        [id est] .5. die februarij
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                That is, 5 February.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="literae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        [id est] ephemeris
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                That is, a journal.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="testes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        [id est] familiar[um] qui[n]tij &amp; albij
+                    </marginalia_text>
+                    <person name="Publius Quinctius"/>
+                    <person name="Lucius Albius"/>
+                </position>
+            </language>
+            <translation>
+                That is, from the families of Quinctius and Albius.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        [Id est] die[m] p[er]fectionis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                That is, the day of perfection.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        [samge] <!-- NBW: Also not sure what this is-->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        of youre questions they shal be founde oute
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        simplely
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        w[i]t[h] oute any pleasor
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        tyll
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        of diasapoy[n]tment 
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        w[hi]ch was the first playnte of his super
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="iudicium acciperet" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        did abyde the law
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="postulabas" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        C
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="recusabat" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        N
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Praetor" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        N
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="igitur" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        C
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="vereor mehercule ne aut grauioribus vtar verbis quàm natura fert, aut leuioribus quàm causa postulat" type="straight"/>
+        <underline language="LA" method="pen" text="in memoriam rediit" type="straight"/>
+        <underline language="LA" method="pen" text="Vixit enim semper inculte atque horride, natura tristi ac recondita fuit, non ad solarium, non in campo, no[n] in conuiuiis versatus est:              id egit, vt amicos obseruantia, rem parsimonia retineret: antiquam officii rationem dilexit, cuius splendor omnis his moribus obsoleuit. At" type="straight"/>
+        <underline language="LA" method="pen" text="ne vt par quidem" type="straight"/>
+        <underline language="LA" method="pen" text="duntaxat vsque eò" type="straight"/>
+        <underline language="LA" method="pen" text="fama, fortunísque omnibus Sext. Neuii cupiditati crudelitatíque dedatur" type="straight"/>
+        <underline language="LA" method="pen" text="quisquam diuinare poterat te" type="straight"/>
+        <underline language="LA" method="pen" text="quenquam attinebat" type="straight"/>
+        <underline language="LA" method="pen" text="Hominem P. Quintii deprehe[n]dis in publico" type="straight"/>
+        <underline language="LA" method="pen" text="iudicium postulas" type="straight"/>
+        <underline language="LA" method="pen" text="hominem egetem, litigiosum, improbum, qui posset scurrae diuitis quotidianu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="locuples, sui negocii bene gere[n]s" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; rem &amp; famam tuam comme[n]dare proficiens" type="straight"/>
+        <underline language="LA" method="pen" text="edebat" type="straight"/>
+        
+        <symbol name="Asterisk" place="left_margin"/>
+        <symbol name="Unidentified" place="left_margin"/>
+        <symbol name="Bisected_circle" place="left_margin"/>
+        <symbol name="Bisected_circle" place="left_margin"/>
+        <symbol name="Bisected_circle" place="left_margin"/>
+        <symbol name="Bisected_circle" place="left_margin"/>
+        <symbol name="Bisected_circle" place="left_margin"/>
+        <symbol name="Bisected_circle" place="left_margin"/>
+        <symbol name="Asterisk" place="intext"/>
+        <symbol name="Asterisk" place="intext"/>
+        <symbol name="Asterisk" place="intext"/>
+        <symbol name="Asterisk" place="intext"/>
+        <symbol name="Asterisk" place="intext"/>
+        <symbol name="Asterisk" place="intext"/>
+        
+        <mark method="pen" name="arrow" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="circumflex" place="intext"/>
+        
+        <numeral place="left_margin">12</numeral>
+
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+   
+    </annotation>
+</transcription>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.143v.tif" pagination="278" reader="John Dee" signature="[Aa[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Ottanforde" hand="Italian"> 
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Otford
+                    </marginalia_text>
+                    <location name="Otford"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="apud Ottanforde" type="straight"/>
+        <underline language="LA" method="pen" text="Italiam totam" type="straight"/>
+        <underline language="LA" method="pen" text="Carolus dei gratia" type="straight"/>
+        <underline language="LA" method="pen" text="Francorum, &amp; Longobardorum, &amp; patricius Romanoru[m]" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonU101.002r.tif" reader="Harvey" signature="aii[r]"/>
+    <annotation>
+    	<!-- Marginalia -->
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="head">
+    				<marginalia_text>
+    					Imbelles Dama[e], quid nisi pra[e]da sumus?
+    				</marginalia_text>
+    				<X-ref book_title="Epigrams" language="LA" person="Martial" text="Imbelles Damae, quid nisi praeda sumus?"/>
+    			</position>
+    		</language>
+    		<translation>
+    			"Helpless deer, what are we but prey?"
+    		</translation>
+    	</marginalia>
+    	
+    	<underline language="EN" method="pen" text="he feleth himselfe naturally" type="straight"/>
+    	<underline language="EN" method="pen" text="aduaunceme[n]t of a Kingdome, or Common" type="straight"/>
+    	<underline language="EN" method="pen" text="no one thing to be" type="straight"/>
+    	<underline language="EN" method="pen" text="profitable, necessarye, or more honourable" type="straight"/>
+    	<underline language="EN" method="pen" text="knowledge of seruice in warre, and déedes of armes;" type="straight"/>
+    	<underline language="EN" method="pen" text="ambicion of the worlde" type="straight"/>
+    	<underline language="EN" method="pen" text="the defence of the swoorde is not alwayes" type="straight"/>
+    	<underline language="EN" method="pen" text="Gréekes, being occupied about trifling matters" type="straight"/>
+    	<underline language="EN" method="pen" text="pleasure in resiting of Comedies," type="straight"/>
+    	<underline language="EN" method="pen" text="neglecting Martial feates" type="straight"/>
+    	<underline language="EN" method="pen" text="to Philip king of Macedonia, father to Alexander" type="straight"/>
+    	<underline language="EN" method="pen" text="Great, to oppresse &amp; to bring them in seruitude" type="straight"/>
+    	    	
+    	<symbol name="SS" place="right_margin"/>
+    	<symbol language="EN" name="Mars" place="right_margin" text="knowledge of seruice in warre, and déedes of armes"/>
+    	    	
+    	<mark method="pen" name="semicolon" place="intext"/> <!--inclined yet-->
+    	<mark method="pen" name="plus_sign" place="intext"/> 
+    	
+    	<mark language="EN" method="pen" name="plus_sign" place="right_margin" text="profitable, necessarye, or more honourable"/> 
+    	<mark language="EN" method="pen" name="plus_sign" place="right_margin" text="the defence of the swoorde is not alwayes"/>
+    	
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="Philip king of Macedonia, father to Alexander"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="Great, to oppresse &amp; to bring them in seruitude"/>
+    	
+    </annotation>
+</transcription>

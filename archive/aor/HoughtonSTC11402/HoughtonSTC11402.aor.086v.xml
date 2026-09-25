@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.086v.tif" reader="Harvey" signature="[Kvii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Pythius Coosinage of Canius.</marginalia_text>
+                    <person name="Pythius"/>
+                    <person name="Canius"/>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>With A</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>goodly fayer showe of suborned fisshermen &amp; botes.</marginalia_text>
+                    <emphasis method="pen" text="showe of suborned" type="straight"/>
+                    <emphasis method="pen" text="fisshermen &amp; botes. 3. Offic." type="straight"/>
+                </position>
+            </language>  
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>3.Offic.</marginalia_text>
+                    <book title="De Officiis"/>
+                </position>
+            </language>
+            <translation>Pythius Coosinage of Canius. With A goodly fayer showe of suborned fisshermen &amp; botes. Book 3 of Cicero's 'De Officiis'.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="that they had" type="straight"/>
+        <underline language="EN" method="pen" text="corne and other vittailes" type="straight"/>
+        <underline language="EN" method="pen" text="plentie of suche thynges" type="straight"/>
+        <underline language="EN" method="pen" text="they fed theyr beastes" type="straight"/>
+        <underline language="EN" method="pen" text="by famyne" type="straight"/>
+        <underline language="EN" method="pen" text="brynge all theyr corne in" type="straight"/>
+        <underline language="EN" method="pen" text="a great feast throughe" type="straight"/>
+        <underline language="EN" method="pen" text="agaynst traytours and renneaways" type="straight"/>
+        <underline language="EN" method="pen" text="Batteus" type="straight"/>
+        <underline language="EN" method="pen" text="corrupte the commons" type="straight"/>
+        <underline language="EN" method="pen" text="Anniball a pleasure" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="corne and other vittailes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="they fed theyr beastes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="a great feast throughe"/>
+        <mark method="pen" name="hash" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="brynge all theyr corne in"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="a great feast throughe"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

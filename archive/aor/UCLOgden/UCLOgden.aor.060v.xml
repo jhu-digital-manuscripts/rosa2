@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.060v.tif" pagination="104" reader="John Dee" signature="[i 4[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Syderatio ♃.
+                    </marginalia_text>
+                    <symbol_in_text name="Jupiter"/>
+                </position>
+            </language>
+            <translation>
+                Consideration of Jupiter.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Mixtiones significatione planetar[um].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Mixture in the significance of the planets.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Ha[e]c dilige[n]ter p[er]pe[n]de 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Assess this carefully.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        egregie dictum.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Excellently said.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="semper co[m]mixtiones" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Semp[er] decreta misce[n]da
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Secrets must always be confounded.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tempus ergp uitae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Tempus vitae.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Lifetime.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Quod si ☾ maleuola stella" type="straight"/>
+        <underline language="LA" method="pen" text="perhibuerint atq[ue] ex loci, &amp; signi" type="straight"/>
+        <underline language="LA" method="pen" text="praesertim si omniu[m] fuerit beneuolat[m] stellaru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; locum, si malus fuerit, beneuola semper mitigat" type="straight"/>
+        <underline language="LA" method="pen" text="imaginem etiam" type="double"/>
+        <underline language="LA" method="pen" text="tunc deniq[ue] aegritudines deus sanat" type="straight"/>
+        <underline language="LA" method="pen" text="nihil possunt ex promissa felicitate" type="straight"/>
+        <underline colour="red" language="LA" method="pen" text="cum maleuola stella geniturae fuerit dominum consecuta, an in opportunis geniturae locis posita sit, an in pigris, siue deiectis, an in domo,              uel altitudine sua sit co[n]stituta" type="dotted"/> 
+        <underline language="LA" method="pen" text="aliud in principe loco, nisi te[m]pus uitae dilige[n]ti debes ratione colligere, ac geniturae d[omi]ni potestatem freque[n]ter inspicere" type="straight"/>
+        <underline language="LA" method="pen" text="sint specialiter tamen in singulari libro, que[m] de d[omi]no geniturae" type="straight"/>
+        
+        <mark colour="red" method="pen" name="bracket" place="left_margin"/> 
+        <mark colour="red" method="pen" name="bracket" place="left_margin"/> 
+        <mark colour="red" method="pen" name="bracket" place="left_margin"/> 
+        <mark colour="red" method="pen" name="bracket" place="left_margin"/> 
+        
+        <drawing book_orientation="0" colour="red" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" colour="red" method="pen" place="left_margin" type="manicule"/> 
+        <drawing book_orientation="0" colour="red" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonK6233.006v.tif" reader="Harvey" signature="[α6v]"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="LEX" type="straight"/> 
+        <underline language="LA" method="pen" text="DONATIO" type="straight"/>
+        <underline language="LA" method="pen" text="dominio reali" type="straight"/>
+        <underline language="LA" method="pen" text="personale seu manumissiones" type="straight"/>
+        <underline language="LA" method="pen" text="MANVMISSIONES" type="straight"/>
+        <underline language="LA" method="pen" text="POSSESSIO" type="straight"/>
+        
+        <mark method="chalk" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- reali, sequitur -->
+        <mark method="pen" name="comma" place="intext"/> <!-- ordinarie vel -->
+        
+    </annotation> 
+</transcription>

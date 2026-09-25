@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.214v.tif" pagination="420" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Editham regina, rex dignanter recepit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Editha Regina in gra[tia]m recepta.
+                    </marginalia_text>
+                    <person name="Edith of Wessex"/>
+                </position>
+            </language>
+            <translation>
+                Queen Edith of Wessex was thankfully received.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Normannos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Normanni
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Normans.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Osbernus verò, &amp; Hugo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Osbernus Hugo }
+                    </marginalia_text>
+                    <person name="Osbern Pentecost"/>
+                </position>
+            </language>
+            <translation>
+                Osbern Hugo.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Osbernus verò, &amp; Hugo, Normannigenae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Osbernus et Hugo Normanni.  
+                    </marginalia_text>
+                    <person name="Osbern Pentecost"/>
+                </position>
+            </language>
+            <translation>
+                Osborne and Hugo were Normans.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="honorem" type="straight"/>
+        <underline language="LA" method="pen" text="restituit Godvvino &amp; filijs eius omnibus" type="straight"/>
+        <underline language="LA" method="pen" text="Beornum" type="straight"/>
+        <underline language="LA" method="pen" text="eam pristinae restituit dignitati" type="straight"/>
+        <underline language="LA" method="pen" text="Normannos" type="straight"/>
+        <underline language="LA" method="pen" text="Osbernus" type="straight"/>
+        <underline language="LA" method="pen" text="Hugo" type="straight"/>
+        <underline language="LA" method="pen" text="Normannigenae" type="straight"/>
+        <underline language="LA" method="pen" text="sua castella relinquentes" type="straight"/>
+        <underline language="LA" method="pen" text="Scotorum regem adeuntes" type="straight"/>
+        <underline language="LA" method="pen" text="frater Griffini, regis VValensiu[m], Rhes[us] nomine, in loco, qui Bulenduna dicitur, occisus est,              &amp; caput eius regi Eadvvardo in vigilia epiphaniae, apud Glouerniam praesentatur" type="straight"/>
+        <underline language="LA" method="pen" text="Rhes[us] frater Griffini regis" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+
+    </annotation>
+</transcription>

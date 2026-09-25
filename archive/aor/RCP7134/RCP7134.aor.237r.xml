@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.237r.tif" pagination="230" reader="John Dee" signature="MM ij"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Claudus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Limping.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iupiter in trino Lunae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>△ ☾ ♃.</marginalia_text>
+                    <symbol_in_text name="Trine"/>
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Jupiter"/>
+                </position>
+            </language>
+            <translation>Jupiter in a trine to the moon.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>fovetur cu[m] ♂ malitia, solis authoritate.</marginalia_text> <!--JG: Not sure about cum, could also be eum? Or eius?--> <!-- FSF: I think it is eum; but I don't know how to translate this either -->
+                    <symbol_in_text name="Mars"/>
+                    <symbol_in_text name="Sun"/>
+                </position>
+            </language>
+            <translation>Mars [...] is favoured by the malicious authority of the Sun.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="uel q[ua]drato amico" type="straight"/>
+        <underline language="LA" method="pen" text="dominae ascendentis" type="straight"/>
+        <underline language="LA" method="pen" text="principe" type="straight"/>
+        <underline language="LA" method="pen" text="populo" type="straight"/>
+        
+    </annotation>
+</transcription>

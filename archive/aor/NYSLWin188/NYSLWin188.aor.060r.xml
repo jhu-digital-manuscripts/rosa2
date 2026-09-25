@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.060r.tif" pagination="60" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Sonst kan kein Metal an sich zogen werden" hand="Italian"> <!-- FSF: I think a better anchor text is that referring to iron 'die zeihen Eysen ansich' -->
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Dubito an solum ferru[m] attrahi possitu[s].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>I am uncertain whether [it is] possible that metal is attracted by the sun.</translation> <!-- FSF: I am uncertain whether iron can be the only metal to be attracted -->
+        </marginalia>
+        
+        <marginalia anchor_text="portz" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        [po]rtione <!-- FSF: I am not sure what this is; nor do I know what portz means -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Part.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sternen seindt die Magnetische arth haben" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Magnetica stellaru[m] vis.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The magnetic force of stars.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Stern Magnes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Stella magnetica
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Magnetic star.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="das thunt andere Sternen in andere wege" type="straight"/>
+        <underline language="DE" method="pen" text="Sonst kan kein Metal an sich zogen werden" type="straight"/>
+        <underline language="DE" method="pen" text="ein attraction" type="straight"/>
+        <underline language="DE" method="pen" text="Berg Magnes" type="straight"/>
+        <underline language="DE" method="pen" text="auff ein mal an eim stücke" type="straight"/>
+        <underline language="DE" method="pen" text="klaubt zusammen mit der portz" type="straight"/>
+        <underline language="DE" method="pen" text="biß er viel zu wegen" type="straight"/>
+        <underline language="DE" method="pen" text="in kleiner gestalt" type="double"/>
+        <underline language="DE" method="pen" text="nächsten enden" type="double"/>
+        <underline language="DE" method="pen" text="zu jm in sein Mansion" type="double"/>
+        <underline language="DE" method="pen" text="Radiert ers" type="double"/>
+        <underline language="DE" method="pen" text="zerschmeltzets wie der Magnet" type="double"/>
+        <underline language="DE" method="pen" text="von jm widerfallen" type="straight"/>
+        <underline language="DE" method="pen" text="Alcool" type="straight"/>
+        <underline language="DE" method="pen" text="corradiert in" type="double"/>
+        <underline language="DE" method="pen" text="Alcool" type="straight"/>
+        <underline language="DE" method="pen" text="Salis colligiert" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+    </annotation>
+</transcription>

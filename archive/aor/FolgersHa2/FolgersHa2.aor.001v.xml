@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="FolgersHa2.001v.tif" pagination="322" reader="Harvey"/>    <!-- ABO 006left -->
+    <annotation>
+        <!-- Marginalia -->
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Non Cura, sed remedium. [-] q[ue] iam nunc.
+                    </marginalia_text>
+                    <!-- Piece of page missing. -->
+                </position>
+            </language>
+            <translation>
+                Not the care, but the cure. And [-] just now.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Recta linea statim ferit metam: seu</marginalia_text> 
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>theorica[m], seu practicam.</marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Straight lines immediately hit the target: whether theoretical, or practical.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        ridicolo.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                ridiculous.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        ) Quicquid alij dole[nt] aut languent; Eudromus semper alacer, et firmus.
+                    </marginalia_text>
+                    <person name="Eudromus"/>
+                </position>
+            </language>
+            <translation>
+                The more others grieve or languish; Eudromus is always eager, and constant.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                    Interpocula, aut epulas nunq[uam] hebetior Eutrapelus,
+                    </marginalia_text>
+                    <person name="Eutrapelus"/>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>sed semper viuidior.</marginalia_text>
+                </position>
+            </language>
+            <translation>
+                During drinks and meals Eutrapelus is never duller, but always more lively.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>discretamente.</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Sit sua gloria, non mea.</marginalia_text>
+                </position>
+            </language>
+            <translation>
+                discreetly. Let it be his glory, not mine.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Vilis conuiua, qui hebescit vino, aut cibo.</marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A guest of little value, who is dulled by wine, or food.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Qui non est homo omnium horarum,
+                        asinus est exceptarum horarum.
+                    </marginalia_text>
+                    <X-ref book_title="Adages" language="LA" person="Erasmus" text="Omnium horarum homo"/> <!-- Adages I, iii, 88: "Omnium horarum homo." Referring to Thomas More. -->
+                </position>
+            </language>
+            <translation>
+                Whoever is not a man for all hours is a donkey for occasional hours.    
+            </translation>
+        </marginalia>
+      
+
+            <!--Left margin, orientation 270-->
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="270" place="left_margin">
+                    <marginalia_text>
+                        Force your industrie, according to your
+                        conceit: choose not so manie instigations
+                        of heauen.
+                        </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <!--Right margin, orientation 270-->
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="270" place="right_margin">
+                    <marginalia_text>
+                        Euerie his saying, &amp; doing beginnes, proceedes, &amp; endes with a Plaudite.
+                        </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+
+        <!-- Underlines-->
+        <underline language="IT" method="pen" text="fisico eccellentissimo &amp; medico di Pio IIII" type="straight"/>
+        <underline language="IT" method="pen" text="uecchio" type="straight"/>
+        <underline language="IT" method="pen" text="moglie giouane" type="straight"/>
+        <underline language="IT" method="pen" text="facendo il suo bisogno, ella lo strascinaua" type="straight"/>
+        <underline language="IT" method="pen" text="montare adosso" type="straight"/>
+        <underline language="IT" method="pen" text="ueniua a dir nulla" type="straight"/>
+        <underline language="IT" method="pen" text="montò ella disopra" type="straight"/>
+        <underline language="IT" method="pen" text="alla china" type="straight"/>
+        <underline language="IT" method="pen" text="all'erta" type="straight"/>
+        <underline language="IT" method="pen" text="e honesto quanto la materia comporta" type="straight"/>
+        <underline language="IT" method="pen" text="penato otto dì, o piu a" type="straight"/>
+        <underline language="IT" method="pen" text="un fante m'ha promesso già un me" type="straight"/>
+        <underline language="IT" method="pen" text="ca[m]po di Fiore" type="straight"/>
+        <underline language="IT" method="pen" text="Lasciuo." type="straight"/>
+        <underline language="IT" method="pen" text="fatto a una femina molte uolte" type="straight"/>
+        <underline language="IT" method="pen" text="piu caro" type="straight"/>
+        <underline language="IT" method="pen" text="se io proprio l'hauessi fatto" type="straight"/>
+        <underline language="IT" method="pen" text="era uago delle" type="straight"/>
+        <underline language="IT" method="pen" text="cani delle" type="straight"/>
+        <underline language="IT" method="pen" text="Vn certo huomo" type="straight"/>
+        <underline language="IT" method="pen" text="per moglie" type="straight"/>
+        <underline language="IT" method="pen" text="quale era specchio a tutte l'altre matrone" type="straight"/>
+        <underline language="IT" method="pen" text="in casa" type="straight"/>
+        <underline language="IT" method="pen" text="conuiti" type="straight"/>
+        <underline language="IT" method="pen" text="nelle piazze" type="straight"/>
+        <underline language="IT" method="pen" text="in gelosia, che" type="straight"/>
+        <underline language="IT" method="pen" text="amasse piu uno altro, che" type="straight"/>
+        <underline language="IT" method="pen" text="riccame[n]te uestita" type="straight"/>
+        
+        <symbol name="Sun" place="left_margin"/>
+        
+        <mark language="IT" method="pen" name="dot" place="head" text="Pesciatino"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--tut-->    
+        <mark method="pen" name="dash" place="right_margin"/> <!--Ia-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--me-->
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--maz-->
+        
+        <mark language="IT" method="pen" name="apostrophe" place="intext" text="all'erta"/>
+        <mark method="pen" name="dot" place="intext"/> <!--seruigio, perch'egli-->
+        <mark method="pen" name="dot" place="intext"/> <!--disse, oime-->
+        <mark method="pen" name="dot" place="intext"/> <!--uolte, disse-->
+        <mark language="IT" method="pen" name="plus_sign" place="intext" text="io proprio"/>
+        <mark method="pen" name="dot" place="intext"/> <!--donne, come-->
+        <mark method="pen" name="quotation_mark" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--bellezza, la-->
+        <mark language="IT" method="pen" name="plus_sign" place="intext" text="specchio"/>
+        <mark language="IT" method="pen" name="plus_sign" place="intext" text="in gelosia"/>
+        <mark method="pen" name="dot" place="intext"/> <!--marito, dal-->
+        
+    </annotation>
+</transcription>

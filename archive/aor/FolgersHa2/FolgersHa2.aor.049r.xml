@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.049r.tif" pagination="417" reader="Harvey"/>	<!-- ABO 53right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Ridentem dicere veru[m], Quid
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						vetat?
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				To speak the laughing truth, "What is forbidden?" 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						scitè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Knowingly.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						) Litera cuiusdam Pistoris Bononiensis ad Papam. Fideliter versa ex Jtalico
+					</marginalia_text>
+					<book title="Litera cujusdam pistoris Bononiensis ad papam"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Exemplari, impresso Florentia[e]. 
+						Sic grauissima qua[e]q[ue] possu[n]t ad viuu[m] perstringi,
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						) altè defixis aculeis
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						) faceti contemptus.
+						Vnde prudentis est, Seipsu[m] armare efficaci arte;
+						) aut seria facultate; aut =
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						aut aliquam cogenti vi, qua[e] à Seipsa dependeat, et omnes spernat mundi. 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The letter of a certain Bolognese baker to the pope. Faithfully translated from an Italian copy, printed in Florence.
+				Thus the weightiest matters can be seized to the quick, with barbs of witty contempt sunk deep.
+				Whence the prudent to arm themselves with effective skill, 
+				or, in some degree, with combined power, with which they depend on themselves, and spurn all things of the world.				
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Pro, et Contra.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				For and against.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Furor fit la[e]sa sa[e]iùs patientia. Mimographus. 
+					</marginalia_text>
+					<X-ref book_title="Sententiae" language="LA" person="Publilius Syrus" text="Furor fit la[e]sa sa[e]iùs patientia"/>
+				</position>
+			</language>
+			<translation>
+				"Fury more often becomes a wounded patience." A writer of mimes. 
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						scitè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Knowingly.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Censura limati Critici, vt s[upr]a / 406. 378.
+					</marginalia_text>
+					<internal_ref>
+						<target ref="FolgersHa2:Ha2.029v" text="378"/>
+						<target ref="FolgersHa2:Ha2.043v" text="406"/>
+					</internal_ref>
+				</position>
+			</language>
+			<translation>
+				Judgment of the polished critic, as above, pg. 406, 378.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						How manie verses ar here? a 100.
+						I dare warrant you, Virgil neuer made a 100. such verses.
+					</marginalia_text>
+					<person name="Virgil"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="gentil'huomo" type="straight"/>
+		<underline language="IT" method="pen" text="hauuto tre molgi" type="straight"/>
+		<underline language="IT" method="pen" text="haueua un figliuolo" type="straight"/>
+		<underline language="IT" method="pen" text="bel nuouo s'era rimaritato" type="straight"/>
+		<underline language="IT" method="pen" text="figliuolo" type="straight"/>
+		<underline language="IT" method="pen" text="di quest'altra" type="straight"/>
+		<underline language="IT" method="pen" text="far primiera" type="straight"/>
+		<underline language="IT" method="pen" text="un mio amico" type="straight"/>
+		<underline language="IT" method="pen" text="uien riputato per lo piu" type="straight"/>
+		<underline language="IT" method="pen" text="importuno, &amp; noioso huomo del mondo" type="straight"/>
+		<underline language="IT" method="pen" text="che natione e' si fusse" type="straight"/>
+		<underline language="IT" method="pen" text="che patria" type="straight"/>
+		<underline language="IT" method="pen" text="cortesissimamente rispose" type="straight"/>
+		<underline language="IT" method="pen" text="quella bestia" type="straight"/>
+		<underline language="IT" method="pen" text="tuttauia piu sul uiuo" type="straight"/>
+		<underline language="IT" method="pen" text="legittimo" type="straight"/>
+		<underline language="IT" method="pen" text="o bastardo" type="straight"/>
+		<underline language="IT" method="pen" text="piu il giouane" type="straight"/>
+		<underline language="IT" method="pen" text="Per piena risposta" type="straight"/>
+		<underline language="IT" method="pen" text="io non sono ne torto, ne gobbo" type="straight"/>
+		<underline language="IT" method="pen" text="come uoi" type="straight"/>
+		<underline language="IT" method="pen" text="suo epitalmio" type="straight"/>
+		<underline language="IT" method="pen" text="Pedante" type="straight"/>
+		<underline language="IT" method="pen" text="Iacopo Sanazzaro" type="straight"/>
+		<underline language="IT" method="pen" text="gliene pareua" type="straight"/>
+		<underline language="IT" method="pen" text="non faceua" type="straight"/>
+		<underline language="IT" method="pen" text="pure un poco piaciuto" type="straight"/>
+		<underline language="IT" method="pen" text="l'haggio fatto in una notte" type="straight"/>
+		<underline language="IT" method="pen" text="Sanazzaro destramente pungendolo" type="straight"/>
+		<underline language="IT" method="pen" text="senza che" type="straight"/>
+		<underline language="IT" method="pen" text="questo conobbi io da me stesso" type="straight"/>
+		<underline language="IT" method="pen" text="mordace" type="straight"/>
+		<underline language="IT" method="pen" text="prouerbio Napoletano" type="straight"/>
+		<underline language="IT" method="pen" text="opra di notte" type="straight"/>
+		<underline language="IT" method="pen" text="uergogna di giorno" type="straight"/>
+		<underline language="IT" method="pen" text="una Donna" type="straight"/>
+		<underline language="IT" method="pen" text="del marito" type="straight"/>
+		<underline language="IT" method="pen" text="stanco, &amp; lento" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="intendere come io non sono ne torto, ne gobbo" type="straight"/>
+		<underline language="IT" method="chalk" text="in una notte" type="straight"/>
+		<underline language="IT" method="chalk" text="opra di notte uergogna di giorno" type="straight"/>
+		
+		<!-- Symbols -->
+		<symbol name="Mercury" place="right_margin"/>
+		
+		<!-- Marks -->	
+		<!-- Right margin -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- haue -->
+		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- far pri -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- uen -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- doman -->
+		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- impronta -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- impronta -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- face -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Napole -->
+		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- giorno -->
+		
+	    	<!-- Left margin -->
+	    <mark method="pen" name="bracket" place="left_margin"/> <!-- va ... miera -->
+		<mark language="IT" method="pen" name="plus_sign" place="left_margin" text="importuno, &amp; noioso huomo del mondo"/> 
+		<mark method="pen" name="quotation_mark" place="left_margin"/> <!--  quella -->
+		<mark method="pen" name="bracket" place="left_margin"/> <!-- dato ... come -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark method="pen" name="dot" place="intext"/> <!-- figliuolo, a -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="piu sul uiuo"/>
+	    <mark method="pen" name="quotation_mark" place="intext"/> <!-- come uoi -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Sanazzaro"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- Sanazzaro, lo -->
+		<mark method="pen" name="dot" place="intext"/> <!-- pareua, & -->
+		<mark method="pen" name="dot" place="intext"/> <!-- piaciuto, gli -->
+		<mark language="IT" method="pen" name="straight_quotation_mark" place="intext" text="pungendolo"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- pungendolo, gli -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- questo connobi -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="mordace"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="opra di notte"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="giorno"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- dicendo, che -->
+
+    </annotation>
+</transcription>

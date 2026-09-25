@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.255r.tif" pagination="25" reader="John Dee" signature="Dj"/> 
+    <annotation>
+
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>J.D. Nota diuersitatem inter Comitem [ occensem - Gislebertum oxunensem - Thurstinu[s]</marginalia_text>
+                    <person name="Gilbert, Count of Brionne"/>
+                    <person name="Thurstan le Goz"/>
+                   <location name="Eu"/>
+                    <location name="Exmes"/>
+                </position>
+            </language>
+            <translation>J.D. Note the difference between the Counts [ Eu - Gislebertum; Exmes - Thurstan.</translation>   
+        </marginalia>
+
+        <marginalia anchor_text="Gislebertus cognomento Crispinus" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gislebertus Crispinus.</marginalia_text>
+                    <person name="Gilbert, Count of Brionne"/>
+                </position>
+            </language>
+            <translation>Gilbert Crispin.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Will[ia]mus lib[er] gall[icus]</marginalia_text>
+                </position>
+            </language>
+            <translation>William. The French book.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Oxunensem comitatum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Oxunensis Comitatus</marginalia_text>
+                    <location name="Exmes"/>
+                </position>
+            </language>
+            <translation>The county of Exmes.</translation>
+        </marginalia>
+                
+        <marginalia anchor_text="Argentonium" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Argentonium.</marginalia_text>
+                    <location name="Argenton-les-Vallees"/> <!-- FSF: I am wondering if this again goes together with the marginalia above; Exmes is in the arrondissement of Argentan, so possibly this is referred to here -->
+                </position>
+            </language>
+            <translation>Argenton-les-Vallees.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Thurstinus Oxunensis praeses" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Thurstanus pra[e]ses Oxunensis.</marginalia_text>
+                    <person name="Thurstan le Goz"/>
+                    <location name="Exmes"/>
+                </position>
+            </language>
+            <translation>Thurstan, ruler of Exmes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Falise Castellu[m]" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Castellum Falise.</marginalia_text>  <!-- DO: Should this be tagged as a location (Chateau de Falaise)? -->
+                </position>
+            </language>
+            <translation>Falaise Castle.</translation>
+        </marginalia>
+
+        <marginalia anchor_text="vnaquaq[ue]" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>vndi[que]</marginalia_text>  
+                </position>
+            </language>
+            <translation>On all sides.</translation>
+        </marginalia>
+
+        <marginalia anchor_text="profugus a patria extorris aufugit" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Thurstinus exulat</marginalia_text>
+                    <person name="Thurstan le Goz"/>
+                </position>
+            </language>
+            <translation>Thurstan exiled.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Robertus Archiepiscopus Rhotomagensis, cui successit Malgerius frater Roberti ducis" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Robertus Archiep[iscop]us. Malgerius. archiep[iscop]us</marginalia_text>
+                    <person name="Robert II, Archbishop of Rouen"/>
+                    <person name="Mauger, Archbishop of Rouen"/>
+                </position>
+            </language>
+            <translation>Archbishop Robert. Archbishop Mauger.</translation>
+        </marginalia>
+
+        <marginalia anchor_text="Gulielmum Archasensem; elatus nobilitate generis" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gulielmus Archase[n]s[is] elatus nobilitate generis [etc] quia Papia erat soror Canuti Regig[?] vt dicit liber gallicus.</marginalia_text>
+                    <person name="William of Talou"/>
+                    <person name="Pappia of Envermeu"/>
+                    <person name="Cnut the Great"/>
+                </position>
+            </language>
+            <translation>William of Arques raised with noble upbringing etc. because Pappia was the sister of King Cnut, so says the French book.</translation>  
+            <!-- DO: Not sure about translation. I don't know why it would be 'Regig.' so have just translated it as if it were 'Regis'. Pappia wasn't Cnut's sister though, which makes me question if it might be something else... -->
+            <!-- FSF: I am not sure either -->
+        </marginalia>
+
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Henricus. R[ex] Fr[ancorum]</marginalia_text>
+                    <person name="Henry I of France"/>
+                </position>
+            </language>
+            <translation>Henry, King of the Franks.</translation>
+        </marginalia>
+
+        <marginalia anchor_text="Inglaramus Abbatis ville comes" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ingelramus Comes Abbevillamis.</marginalia_text>
+                    <person name="Enguerrand I, Count of Ponthieu"/>
+                </position>
+            </language>
+            <translation>Ingelram, Count of Abbeville.</translation>
+        </marginalia>
+      
+        <marginalia anchor_text="Hugo cognome[n]to Bardulfus" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hugo Bardurlfus.</marginalia_text>
+                    <person name="Hugh I of Broyes"/>
+                </position>
+            </language>
+            <translation>Hugh Bardolf.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ipse a natiuo solo in exilium discessit" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Guliel[mus] Archas[ensis] exul[at]</marginalia_text>
+                    <person name="William of Talou"/>
+                </position>
+            </language>
+            <translation>William of Arques is exiled.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A[nno] 1038</marginalia_text>  <!-- DO: Last digit looks like a 4 changed into an 8 --> <!-- FSF: to me it looks as if he first wrote 4 and corrected it -->
+                </position>
+            </language>
+            <translation>In the year 1038.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cui successit Haroldus eius filius ex concubina nomine Elfina natus" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Elfina, concubina, Haraldus succedit</marginalia_text>
+                    <person name="Aelfgifu of Northampton"/>
+                    <person name="Harold Harefoot"/>
+                </position>
+            </language>
+            <translation>Aelfgifu, a concubine; Harold succeeds.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Comitem Godwinum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Godwinus Comes</marginalia_text>
+                    <person name="Godwin, Earl of Wessex"/>
+                </position>
+            </language>
+            <translation>Count Godwin.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Gislebertus" type="grid"/>
+        <underline language="LA" method="pen" text="cognomento Crispinus" type="straight"/>
+        <underline language="LA" method="pen" text="Oxunensem comitatum aggressus Argentonium" type="straight"/>
+        <underline language="LA" method="pen" text="onustus" type="straight"/>
+        <underline language="LA" method="pen" text="Castellum Regulense" type="straight"/>
+        <underline language="LA" method="pen" text="Thurstinus Oxunensis" type="straight"/>
+        <underline language="LA" method="pen" text="succensus infidelitatis" type="double"/>
+        <underline language="LA" method="pen" text="Falise Castellu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="extorris aufugit" type="straight"/>
+        <underline language="LA" method="pen" text="tempore moritur Robertus Archiepiscopus Rhotomagensis" type="straight"/>
+        <underline language="LA" method="pen" text="successit Malgerius frater Roberti ducis" type="straight"/>
+        <underline language="LA" method="pen" text="Iudith aliam vxorem nomine Papiam" type="straight"/>
+        <underline language="LA" method="pen" text="Walgerium" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Gulielmum Archasensem" type="straight"/>
+        <underline language="LA" method="pen" text="Comitatum Tolagi" type="straight"/>
+        <underline language="LA" method="pen" text="nobilitate" type="straight"/>
+        <underline language="LA" method="pen" text="castrum Archarum" type="straight"/>
+        <underline language="LA" method="pen" text="S. Albanum castrum" type="straight"/>
+        <underline language="LA" method="pen" text="Inglaramus Abbatis ville comes" type="straight"/>
+        <underline language="LA" method="pen" text="Hugo cognome[n]to Bardulfus" type="straight"/>
+        <underline language="LA" method="pen" text="affectus inedia" type="straight"/>
+        <underline language="LA" method="pen" text="castellum reddidit" type="straight"/>
+        <underline language="LA" method="pen" text="successit" type="straight"/>
+        <underline language="LA" method="pen" text="nomine Elfina" type="straight"/>
+        <underline language="LA" method="pen" text="habuit Comitem Godwinum" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- pueri Normanni -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- stantes decreuerunt -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- Argentonium ducis -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- vicum cremauit -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- praeses ducem --> 
+        <mark method="pen" name="comma" place="intext"/>  <!-- ducem puerum -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- puerum cessisse -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- infidelitatis regales -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- montis castru[m] -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- inedia inuitus --> 
+        <mark method="pen" name="comma" place="intext"/>  <!-- inuitus castellum -->
+            
+        <numeral language="EN" place="tail" text="Judith">.1.</numeral>     
+        <numeral language="LA" place="tail" text="Papia">2</numeral>  <!-- DO: Also a mark by 'Richardus 2', possibly a 'us' but seems oddly placed -->
+  
+        <errata amendedtext="Malgerium" copytext="Walgerium" language="LA"/>
+ 
+        <graph book_orientation="0" method="pen" place="tail" type="genealogical_tree">
+            <node id="n1" person="Judith of Brittany">Judith</node>
+            <node id="n2" person="Richard II, Duke of Normandy">Richardus 2. Dux N[orthmanniae]</node>
+            <node id="n3" person="Pappia of Envermeu">Papia</node>
+            <node id="n4" person="Richard III, Duke of Normandy">Richardus .3. D[ux] N[orthmanniae]</node>
+            <node id="n5" person="Robert I, Duke of Normandy">Robertus D[ux] N[orthmanniae]</node>
+            <node id="n6" person="William of Fecamp">Will[ia]mus monar[c]hus</node>
+            <node id="n7">[blank]</node>
+            <node id="n8" person="Matilda of Fecamp">virgo moratur</node>
+            <node id="n9" person="Alice of Normandy">Arleliz</node>
+            <node id="n10" person="Baldwin IV, Count of Flanders">Baldwinus comes Fl[andriae]</node>
+            <node id="n11" person="Reginald I, Count of Burgundy">Ramasous com[es] [?]</node> <!-- FSF: I think it is Burg. for Burgundy or rather the Latin name of Burgundy -->
+            <node id="n12" person="Mauger, Archbishop of Rouen">Malgerius Archipra[e]sul Rhotomage[n]s[is]</node>
+            <node id="n13" person="William of Talou">Gulielmus Archase[n]s[is] comes To Lagi</node>
+            <link from="n1" relationship="has_spouse" to="n2"/>
+            <link from="n2" relationship="has_spouse" to="n1"/>
+            <link from="n1" relationship="has_child" to="n4"/>
+            <link from="n1" relationship="has_child" to="n5"/>
+            <link from="n1" relationship="has_child" to="n6"/>
+            <link from="n1" relationship="has_child" to="n7"/>
+            <link from="n1" relationship="has_child" to="n8"/>
+            <link from="n1" relationship="has_child" to="n9"/>
+            <link from="n2" relationship="has_child" to="n4"/>
+            <link from="n2" relationship="has_child" to="n5"/>
+            <link from="n2" relationship="has_child" to="n6"/>
+            <link from="n2" relationship="has_child" to="n7"/>
+            <link from="n2" relationship="has_child" to="n8"/>
+            <link from="n2" relationship="has_child" to="n9"/>
+            <link from="n7" relationship="has_spouse" to="n10"/>
+            <link from="n10" relationship="has_spouse" to="n7"/>
+            <link from="n9" relationship="has_spouse" to="n11"/>
+            <link from="n11" relationship="has_spouse" to="n9"/>
+            <link from="n2" relationship="has_spouse" to="n3"/>
+            <link from="n3" relationship="has_spouse" to="n2"/>
+            <link from="n2" relationship="has_child" to="n12"/>
+            <link from="n2" relationship="has_child" to="n13"/>
+            <link from="n3" relationship="has_child" to="n12"/>
+            <link from="n3" relationship="has_child" to="n13"/>
+        </graph> 
+        
+    </annotation>
+</transcription>

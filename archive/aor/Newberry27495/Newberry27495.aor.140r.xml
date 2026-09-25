@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.140r.tif" reader="Harvey" signature="Kk.ii.[r]"/>
+    <annotation>  
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        s[upr]a.
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="Newberry27495:case_712_c27495_171" text="s[upr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                [See] above.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vnico Aretino" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                       Vnico.
+                    </marginalia_text>
+                    <person name="Bernardo Accolti"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Vnico conceited &amp; bold, but discreet.
+                    </marginalia_text>
+                    <person name="Bernardo Accolti"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="certein skornefull facion in few" type="straight"/>
+        <underline language="EN" method="pen" text="smallye regarded whoso euer beehouldeth or serueth them" type="straight"/>
+        <underline language="EN" method="pen" text="countenaunce" type="straight"/>
+        <underline language="EN" method="pen" text="their speach" type="straight"/>
+        <underline language="EN" method="pen" text="all hansomnesse" type="straight"/>
+        <underline language="EN" method="pen" text="like one floure made of all the xcellencies in the worlde" type="straight"/> 
+        <underline language="EN" method="pen" text="scarsitie of these loues proceadinge of an" type="straight"/>
+        <underline language="EN" method="pen" text="her desertes" type="straight"/>
+        <underline language="EN" method="pen" text="the affiance of [the] prowesse in themselues" type="straight"/>
+        <underline language="EN" method="pen" text="knowe themselues" type="straight"/>
+        <underline language="EN" method="pen" text="worthy to be beloued" type="straight"/>
+        <underline language="EN" method="pen" text="Dutchesse toulde" type="straight"/>
+        <underline language="EN" method="pen" text="the wronge, confirminge" type="straight"/>
+        <underline language="EN" method="pen" text="woman of the" type="straight"/>
+        <underline language="EN" method="pen" text="Courtier" type="straight"/>
+        <underline language="EN" method="pen" text="auauntage:" type="straight"/>
+        <underline language="EN" method="pen" text="teache women to loue" type="straight"/>
+        <underline language="EN" method="pen" text="that coulde doe" type="straight"/>
+        <underline language="EN" method="pen" text="accompanye their beawtye with crueltye and vnkindnesse toward" type="straight"/>
+        <underline language="EN" method="pen" text="as serue" type="straight"/>
+        <underline language="EN" method="pen" text="noblenesse" type="straight"/>
+        <underline language="EN" method="pen" text="honestie and vertue deserued" type="straight"/>
+        <underline language="EN" method="pen" text="for a prey" type="straight"/>
+        <underline language="EN" method="pen" text="to most blockish and cowardly men &amp; verye assheades, and" type="straight"/>
+        <underline language="EN" method="pen" text="so foule ouersightes" type="straight"/>
+        <underline language="EN" method="pen" text="taught them to make a cheise of" type="straight"/>
+        <underline language="EN" method="pen" text="deserue to be belowed" type="straight"/>
+        <underline language="EN" method="pen" text="afterward to loue him." type="straight"/>
+        
+        <underline language="EN" method="pen" text="beawtifull" type="straight"/>
+        <underline language="EN" method="pen" text="cruell" type="straight"/>
+        
+        <symbol name="SS" place="head"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        
+        <symbol language="EN" name="SS" place="right_margin" text="all hansomnesse"/>
+        <symbol language="EN" name="SS" place="right_margin" text="her desertes"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="like one floure made of all the xcellencies in the worlde"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="accompanye their beawtye with crueltye and vnkindnesse toward"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="EN" method="pen" name="equal_sign" place="right_margin" text="smallye regarded"/>
+        <mark method="chalk" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="comma" place="right_margin"/> <!-- loue -->
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="certein skornefull facion in few"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- together, like -->
+        <mark method="pen" name="dot" place="intext"/> <!-- themselues, wherby -->
+        <mark method="pen" name="dot" place="intext"/> <!-- him, but -->
+        <mark method="pen" name="bracket" place="intext"/> <!-- Courtier. Then -->
+        <mark method="pen" name="dot" place="intext"/> <!-- loue, bicause -->
+        <mark method="pen" name="dot" place="intext"/> <!-- it, for -->
+        <mark method="chalk" name="vertical_bar" place="intext"/> <!-- red chalk, starts at 'noblenesse' and extends down through four further lines of text -->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="taight them to make a cheise of"/>
+        
+    </annotation>
+</transcription>

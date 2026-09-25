@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonRB16th99a.040v.tif" pagination="[40v]" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>The mixt Alphabeth, of {Proffit. Pleasure.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>The</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Alphabet of sy Orchyard:</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>s[upr]a,</marginalia_text> 
+                    <internal_ref>
+                        <target ref="PrincetonRB16th99a:00000069" text="s[upr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>in January.</marginalia_text>
+                </position>
+            </language>
+            <translation>The Alphabet of sy Orchyard: [See] above, in January.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="Herbes to still in" type="straight"/>
+        <underline language="EN" method="pen" text="Blessed thistle" type="straight"/>
+        <underline language="EN" method="pen" text="Dill" type="straight"/>
+        <underline language="EN" method="pen" text="Fumetorie." type="straight"/>
+        <underline language="EN" method="pen" text="Woodrose for" type="straight"/>
+        <underline language="EN" method="pen" text="swéete waters and cakes" type="straight"/>
+        <underline language="EN" method="pen" text="garden for Physick" type="straight"/>
+        <underline language="EN" method="pen" text="Annis" type="straight"/>
+        <underline language="EN" method="pen" text="Archangel" type="straight"/>
+        
+        <underline language="EN" method="pen" text="Betanie" type="straight"/>
+        <underline language="EN" method="pen" text="Cummin" type="straight"/>
+        <underline language="EN" method="pen" text="Dragons" type="straight"/>
+        <underline language="EN" method="pen" text="Detanie, or garden" type="straight"/>
+        <underline language="EN" method="pen" text="Gromel séed" type="straight"/>
+        <underline language="EN" method="pen" text="Hartstong" type="straight"/>
+        <underline language="EN" method="pen" text="Licoras" type="straight"/>
+        <underline language="EN" method="pen" text="Pionées" type="straight"/>
+        <underline language="EN" method="pen" text="Poppie" type="straight"/>
+        <underline language="EN" method="pen" text="Rubarb" type="straight"/>
+        <underline language="EN" method="pen" text="Smalach" type="straight"/>
+        <underline language="EN" method="pen" text="swellings" type="straight"/>
+        <underline language="EN" method="pen" text="Saxefrage" type="straight"/>
+        <underline language="EN" method="pen" text="stone" type="straight"/>
+        <underline language="EN" method="pen" text="bots" type="straight"/>
+        <underline language="EN" method="pen" text="Ualerian" type="straight"/>
+        <underline language="EN" method="pen" text="herbes the chéese" type="straight"/>
+        <underline language="EN" method="pen" text="Such mo to" type="straight"/>
+        <underline language="EN" method="pen" text="Of field go" type="straight"/>
+        
+        <underline language="EN" method="pen" text="March dust to be sold" type="straight"/>
+        <underline language="EN" method="pen" text="Worth ransome of gold" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="swéete waters and cakes"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="bots"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="herbes, the chéese"/>
+        
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark method="pen" name="comma" place="intext"/> <!--waters and-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="swéete waters and cakes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="garden for Physick"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Detanie, or garden"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Gromel séed"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Hartstong"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Rubarb"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!--timelie, prooue-->
+        
+        <errata amendedtext="Woodrofes" copytext="Woodrofe" language="EN"/>
+        
+    </annotation>
+</transcription>

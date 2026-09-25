@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.034v.tif" pagination="xxx[v]" reader="Harvey" signature="Hii[v]"/>
+    <annotation>
+    	<!-- Marginalia -->
+    	<marginalia anchor_text="sixe thousande men" hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					A Legion, or Mainbattail: of VI M.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	
+    	<!-- Underlines -->
+    	<underline language="EN" method="pen" text="be sixe thousande men" type="straight"/>
+    	<underline language="EN" method="pen" text="bee M.D. Peticapitaynes" type="straight"/>
+    	<underline language="EN" method="pen" text="xv. Conestables, with xv. Drummes, and xv. Ansignes" type="straight"/>
+    	<underline language="EN" method="pen" text="lv. Centurions" type="straight"/>
+    	<underline language="EN" method="pen" text="heads of the" type="straight"/>
+    	<underline language="EN" method="pen" text="Capitayn ouer all the maine battayle, with his" type="straight"/>
+    	<underline language="EN" method="pen" text="and Drumme" type="straight"/>
+    	<underline language="EN" method="pen" text="maners of ordering the battailes" type="straight"/>
+    	<underline language="EN" method="pen" text="intendeth to ordeyne their subiectes to" type="straight"/>
+    	<underline language="EN" method="pen" text="with these armours and weapons" type="straight"/>
+    	<underline language="EN" method="pen" text="mayne battailes, as it were able" type="straight"/>
+    	<underline language="EN" method="pen" text="suffice to exercise euerye battaile by it" type="straight"/>
+    	<underline language="EN" method="pen" text="selfe, make the fashion of a iuste armie" type="straight"/>
+    	<underline language="EN" method="pen" text="maye learne to do" type="straight"/>
+    	<underline language="EN" method="pen" text="particularly appertayneth vnto him" type="straight"/>
+    	<underline language="EN" method="pen" text="twoo orders is" type="straight"/>
+    	<underline language="EN" method="pen" text="the men ought to do in euery" type="straight"/>
+    	<underline language="EN" method="pen" text="after" type="straight"/>
+    	<underline language="EN" method="pen" text="the other in armie" type="straight"/>
+    	<underline language="EN" method="pen" text="one of these battailes, maybe by them" type="straight"/>
+    	<underline language="EN" method="pen" text="keep the orders of the arayes, in euery qualitie of mooving, and of place" type="straight"/>
+    	<underline language="EN" method="pen" text="them selues togethers" type="straight"/>
+    	<underline language="EN" method="pen" text="vnderstande the sounds, by meanes" type="straight"/>
+    	<underline language="EN" method="pen" text="by the whistell, what" type="straight"/>
+    	
+    	<!-- Marks -->
+    	<mark method="pen" name="bracket" place="left_margin"/>   
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="selfe, make the fashion of a iuste armie"/>
+    	<mark method="pen" name="bracket" place="left_margin"/>   		
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="one of these battailes, maye by them"/>
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="moouing, and of place"/>
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="vnderstande the sounds, by meanes"/>
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="the whistell, what"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="tail" text="the whistell, what"/>
+    
+    	<mark method="pen" name="dot" place="intext"/> <!-- men, amongest -->
+    	<mark method="pen" name="dot" place="intext"/> <!-- battaile, and -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="them selues"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="keep the orders of the arayes"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- place, & -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="sounds"/>
+
+    </annotation>
+</transcription>

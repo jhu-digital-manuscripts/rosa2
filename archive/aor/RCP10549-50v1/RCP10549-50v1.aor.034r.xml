@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.034r.tif" pagination="51" reader="John Dee" signature="dd.ii."/>
+    <annotation> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Repetitio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Repetition.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        dimicandu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Having to fight.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        incolumnia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Unharmed.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="omnium sermone percrebuit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        o[mn]iu[m] sermone percrebuit
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                It is expressed in speech for all.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="praedicatione absolutus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        pr[ae]dicatio[n]e absolutus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Acquitted by assertion.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pecunia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        PECUNIA
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Money.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="percommode cadit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        perco[m]mode cadit
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                It very conveniently happened.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="seuerè, non nimis accuratè, non nimis" type="straight"/>
+        <underline language="LA" method="pen" text="ta[n]tulum offensum titubatúmque sit" type="straight"/>
+        <underline language="LA" method="pen" text="adhuc percommode cadit" type="straight"/>
+        
+        <numeral place="right_margin">8</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        
+        
+    </annotation>
+</transcription>

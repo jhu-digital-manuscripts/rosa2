@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.066r.tif" reader="Harvey" signature="Hiii[r]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Scipio; Alexander" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Heroica Temperantia: { Scipionis. Alexandri. ad imitationem Cyri.</marginalia_text>
+                    <person name="Scipio Africanus"/>
+                    <person name="Alexander the Great"/>
+                    <person name="Cyrus the Great"/>
+                </position>
+            </language>
+            <translation>Heroic self-control of Scipio and Alexander. Towards the imitation of Cyrus.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Popular,</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>&amp; plausible Actions.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Scipio" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Scipioes magnificent continency.</marginalia_text>
+                    <person name="Scipio Africanus"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Alexander Macedo" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Alexanders honorable</marginalia_text>
+                    <person name="Alexander the Great"/>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Temperance.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Scipio" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>his sociable moderation, L. 4. c. 6.</marginalia_text>
+                    <person name="Alexander the Great"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="reason of the commotion" type="straight"/>
+        <underline language="EN" method="pen" text="virgine of excellent beautie" type="straight"/>
+        <underline language="EN" method="pen" text="was brought vnto Scipio" type="straight"/>
+        <underline language="EN" method="pen" text="restored her to Luceius her" type="straight"/>
+        <underline language="EN" method="pen" text="golde that her" type="straight"/>
+        <underline language="EN" method="pen" text="redeme her" type="straight"/>
+        <underline language="EN" method="pen" text="hole nation was ouercom" type="straight"/>
+        <underline language="EN" method="pen" text="submytted themselfe to the" type="straight"/>
+        <underline language="EN" method="pen" text="so highe abstinence" type="straight"/>
+        <underline language="EN" method="pen" text="a virgin taken in warre" type="straight"/>
+        <underline language="EN" method="pen" text="ones beholde" type="straight"/>
+        <underline language="EN" method="pen" text="her spowse" type="straight"/>
+        <underline language="EN" method="pen" text="benefytte he allured and wanne" type="straight"/>
+        <underline language="EN" method="pen" text="all the nation" type="straight"/>
+        
+        <symbol name="SS" place="head"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="hole nation was ouercom"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="X_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="hole"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="all the nation"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.036r.tif" reader="Harvey" signature="Dv[r]"/>
+    <annotation>
+        
+        <marginalia anchor_text="tyll that theyr heate and courage were abated" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>till [their] ueyne was ouer.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>s[upr]a.</marginalia_text>
+                </position>
+            </language>
+            <translation>[See] above.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>+ ouer</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="valyantly exercising" type="straight"/>
+        <underline language="EN" method="pen" text="chargynge and dischargynge" type="straight"/>
+        <underline language="EN" method="pen" text="their speares" type="straight"/>
+        <underline language="EN" method="pen" text="that theyr heate and courage were abated" type="straight"/>
+        <underline language="EN" method="pen" text="dayly euen before" type="straight"/>
+        <underline language="EN" method="pen" text="men, and smal skyrmyshes, standing" type="straight"/>
+        <underline language="EN" method="pen" text="with a fewe" type="straight"/>
+        <underline language="EN" method="pen" text="susteyned thassault of his ennemies, and" type="straight"/>
+        <underline language="EN" method="pen" text="kept them skyrmyshyng longer than" type="straight"/>
+        <underline language="EN" method="pen" text="thus they weried" type="straight"/>
+        <underline language="EN" method="pen" text="sore an hungred" type="straight"/>
+        <underline language="EN" method="pen" text="to recule" type="straight"/>
+        <underline language="EN" method="pen" text="army freshe &amp; lusty, va[n]quished" type="straight"/>
+        <underline language="EN" method="pen" text="vsed to eate at a certayne" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="were abated"/>
+        
+    </annotation>
+</transcription>

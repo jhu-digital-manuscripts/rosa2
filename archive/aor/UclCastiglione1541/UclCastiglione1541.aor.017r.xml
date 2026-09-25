@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="UclCastiglione1541.017r.tif" pagination="V[r]" reader="Harvey" signature="Biir"/>
+<annotation>
+    <marginalia hand="Italian">
+        <language ident="IT">
+            <position book_orientation="0" place="right_margin">
+                <marginalia_text>
+                    Papa Giuli[o] II.
+                </marginalia_text>
+                <person name="Pope Julius II"/>
+            </position>
+        </language>
+        <translation>
+            Pope Julius II.
+        </translation>
+    </marginalia>
+    <marginalia hand="Italian">
+        <language ident="IT">
+            <position book_orientation="0" place="left_margin">
+                <marginalia_text>
+                    Ordine de giuochi.
+                </marginalia_text>
+            </position>
+        </language>
+        <translation>
+            The order of the games.
+        </translation>
+    </marginalia>
+    <marginalia hand="Italian">
+        <language ident="IT">
+            <position book_orientation="0" place="right_margin">
+                <marginalia_text>
+                    E imposto dalla Duche[ssa] alla S. Emil[ia] che incominci i giuochi. 
+                </marginalia_text>
+                <person name="Elisabetta Gonzaga"/>
+                <person name="Emilia Pia da Montefeltro"/>
+            </position>
+        </language>
+        <translation>
+            The Duchess orders that Signora Emilia begin the games. 
+        </translation>
+    </marginalia>
+    
+    <mark method="chalk" name="horizontal_bar" place="tail"/>
+    
+</annotation>
+</transcription>

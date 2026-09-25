@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.080r.tif" reader="Harvey" signature="[*9r]"/>	<!-- ABO 84right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Venetia[e] victa[e]. Ergò nerui belloru[m], no[n] nummi, sed uiri.
+					</marginalia_text>
+					<location name="Venice"/>
+				</position>
+			</language>
+			<translation>
+				Venice defeated. Thus the muscles in wars are not coins but men.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Qui non potest plus; erubescat, et abeat.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				He who can go no further blushes and leaves.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Solus mundi proficiens,
+						qui bona animi, corporis, fortuna[e] in dies singulos,
+						in horasq[ue] singulas multiplicat.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The only one in the world who makes progress is he who multiplies the
+				goods of mind, body, and fortune every day and every hour.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Hodiè: quotidiè. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Today, daily.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Nihil turpius, quàm esse ullo die non proficientem.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Nothing is more wretched than not making progress on any day.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Bestiaru[m] abunde est:
+						virorum penuria.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				It abounds in beasts; there is a scarcity of men.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Quotidiana Exercitatio, pragmatico necessaria.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Daily exercise is necessary for the pragmatic man.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						in pettie quarrels, lesse then a man: in maine quarrels, more then a man.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Quotidiana Corporis, animiq[ue] Exercitatio, tam necessaria industrio actori,
+						quàm ipse panis quotidianus. Egregiè Vegetius: Veteranus, cum desinit
+						exercere, tyro est.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Daily exercise of the body and mind is as necessary for the industrious actor as is his daily bread. 
+				He is notably more energetic. When the veteran ceases to exercise, he becomes a novice.				
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="pazzi riputarsi, da saui" type="straight"/>
+		<underline language="IT" method="pen" text="sale ad alto grado" type="straight"/>
+		<underline language="IT" method="pen" text="se medesimo non riconoscere" type="straight"/>
+		<underline language="IT" method="pen" text="Stoltitia" type="straight"/>
+		<underline language="IT" method="pen" text="sdegno di donna" type="straight"/>
+		<underline language="IT" method="pen" text="d'amico" type="straight"/>
+		<underline language="IT" method="pen" text="cortigiane" type="straight"/>
+		<underline language="IT" method="pen" text="la fronte del padrone" type="straight"/>
+		<underline language="IT" method="pen" text="La bellezza esser" type="straight"/>
+		<underline language="IT" method="pen" text="non imitabile patienza" type="straight"/>
+		<underline language="IT" method="pen" text="nequitia de' gouernatori" type="straight"/>
+		<underline language="IT" method="pen" text="si ribellano" type="straight"/>
+		<underline language="IT" method="pen" text="conoscer le qualità dell'huo[m]o" type="straight"/>
+		<underline language="IT" method="pen" text="incredibil costanza" type="straight"/>
+		<underline language="IT" method="pen" text="p[ro]fessori del futuro" type="straight"/>
+		<underline language="IT" method="pen" text="il p[re]sente" type="straight"/>
+		<underline language="IT" method="pen" text="Principi" type="straight"/>
+		<underline language="IT" method="pen" text="de' pazzi" type="straight"/>
+		<underline language="IT" method="pen" text="cattiua fortuna si tolleri" type="straight"/>
+		<underline language="IT" method="pen" text="l'esser ingannato da gli amici" type="straight"/>
+		<underline language="IT" method="pen" text="da' nimici" type="straight"/>
+		<underline language="IT" method="pen" text="Vna pronta risposta" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="Secondo 'l seme" type="straight"/>
+		
+		<symbol name="SS" place="intext"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--manca-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--riprensibi-->
+		
+		<mark method="pen" name="comma" place="intext"/> <!--amico quali-->
+		<mark method="pen" name="dot" place="intext"/> <!--amici, ma-->
+		<mark method="pen" name="quotation_mark" place="intext"/>
+		
+		<errata amendedtext="[deleted]" copytext="ingannar" language="IT"/>
+		
+    </annotation>
+</transcription>

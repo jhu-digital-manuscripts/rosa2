@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.339v.tif" pagination="10" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Clodium criminatur</marginalia_text> 
+                    <person name="Publius Clodius Pulcher"/>
+                </position>
+            </language>
+            <translation>He accuses Publius Clodius Pulcher.</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pra[e]mia</marginalia_text>                
+                </position>
+            </language>
+            <translation>Rewards.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Cn[aeus] Pompeius" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>C. Pompeius</marginalia_text>
+                    <person name="Pompey"/>
+                </position>
+            </language>
+            <translation>Pompey.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="inconstantiae mihi" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Consilii mutatio no[n] est inconstantia dicenda</marginalia_text>                
+                </position>
+            </language>
+            <translation>A change of counsel is not varied speaking.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Caesar" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Caesar.</marginalia_text>  
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <translation>Julius Caesar.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="vetus amicitia" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Amicitia.</marginalia_text>                
+                </position>
+            </language>
+            <translation>Friendship.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Platonem" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Platonis</marginalia_text>              
+                </position>
+            </language>
+            <language ident="EL"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Platonis γνώμη</marginalia_text>
+                    <person name="Plato"/>
+                </position>
+            </language>
+            <translation>Plato's maxim.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="ad Caesarem &amp; Bibulum [Consules]" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Caesar. Bibulus. co[n]s[ule]s.</marginalia_text>               
+                    <person name="Julius Caesar"/>
+                    <person name="Marcus Calpurnius Biblulus"/>
+                </position>
+            </language>
+            <translation>Julius Caesar. Marcus Calpurnius Bibulus. Consuls</translation> <!-- NBW: Abbreviation uncertain, but this would follow the text --> 
+        </marginalia>
+        
+        <marginalia anchor_text="Hispania[m]" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hispania.</marginalia_text>                
+                    <location name="Spain"/>                
+                </position>
+            </language>
+            <translation>Spain.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="varia culpa" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Culpa.</marginalia_text>                
+                </position>
+            </language>
+            <translation>Fault.</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In clodium invehitur</marginalia_text>                
+                    <person name="Publius Clodius Pulcher"/>
+                </position>
+            </language>
+            <translation>He inveighs against Publius Clodius Pulcher.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Tenebam memora" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>{Tenebam memoria memineram</marginalia_text>                
+                </position>
+            </language>
+            <translation>I held in memory, I have remembered.</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>contentio dissentio discrimen { civilis</marginalia_text>                
+                </position>
+            </language>
+            <translation>Contention,  dissent, and distinction of the citizenry.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="consensus" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>vnus sensus consensus.</marginalia_text>                
+                </position>
+            </language>
+            <translation>One accord: consensus.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="vt mihi stomachu[m] facerent" type="straight"/>
+        <underline language="LA" method="pen" text="ego fundidus perdidi," type="straight"/>
+        <underline language="LA" method="pen" text="qua[n]tum humano consilio efficere potui" type="straight"/>
+        <underline language="LA" method="pen" text="circunspectis rebus meis omnibus, rationibúsque subductis, summa[m] feci cogitationum mearum omniu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="cuiúsque ego dignitatis ab adolesce[n]tia fautor," type="straight"/>
+        <underline language="LA" method="pen" text="meúmque inimicum, vnum in ciuitate haberet inimicum:" type="straight"/>
+        <underline language="LA" method="pen" text="dignitatem aggregassem" type="straight"/>
+        <underline language="LA" method="pen" text="co[m]plectendus erat mihi Caesar," type="straight"/>
+        <underline language="LA" method="pen" text="in hanc mentem impulit &amp; Pompeii fides quam de me Caesari dederat, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="Tenebam memoria" type="straight"/>
+        <underline language="LA" method="pen" text="ea fundamenta iacta ex Cal[endo]" type="straight"/>
+        <underline language="LA" method="pen" text="Idémque memineram" type="straight"/>
+        <underline language="LA" method="pen" text="sententiae nostrae magnum in senatu pondus haberent" type="straight"/>
+        <underline language="LA" method="pen" text="haberet, sed mercatores prouinciarum, &amp; seditionum seruos ac ministros: iecit quidam" type="straight"/> 
+        <underline language="LA" method="pen" text="quo in discrimine" type="straight"/>
+        <underline language="LA" method="pen" text="omnium consensus" type="straight"/>
+        <underline language="LA" method="pen" text="enim" type="straight"/>
+        <underline language="LA" method="pen" text="accusandi" type="straight"/>
+        <underline language="LA" method="pen" text="pro me stante pugnare" type="straight"/>
+        <underline language="LA" method="pen" text="adiungeretur: nulli improbo ciui locis ad remp[ublicam] violandam esse potuisset" type="straight"/>
+        <underline language="LA" method="pen" text="poenas à seditioso ciue per bonos viros iudicio persequi vellet) exemplum" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="duopunctus_with_antenna" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark language="LA" method="pen" name="vertical_bar" place="left_margin" text="Caesar"/> <!-- This and the vertical bar at the tail are for the marks within annotations. -->
+        <mark language="LA" method="pen" name="bracket" place="left_margin" text="Tenebam memoria"/> <!-- NBW: is this the right tag for this mark?--> <!--JG: Yep! Something is wrong with the tag though, hence the XML validation error!--> <!-- NBW: Found it, finally -->
+        <mark language="LA" method="pen" name="apostrophe" place="left_margin" text="consensus"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark language="LA" method="pen" name="apostrophe" place="tail" text="vnus sensus consensus."/>
+        
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        
+        <errata amendedtext="Hîc" copytext="Hic" language="LA"/>
+        
+        <drawing anchor_text="Pra[e]mia" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>       
+        <drawing anchor_text="Amicitia" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="Hispania" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

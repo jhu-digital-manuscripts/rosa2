@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.121r.tif" pagination="227" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Non sunt igitur Magogi, Scythae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>No[n] sunt Magogi Scytha[e].</marginalia_text>
+                    <location name="Magog"/>
+                    <location name="Scythia"/>
+                </position>
+            </language>
+            <translation>The Magogi people are not Scythians.</translation> <!-- FSF: I'd translate something like There are no Magogi people in Scythia/There are no Magogi Scythians -->  <!-- DO: I'm not sure. I thought he was perhaps pointing out that they're different? --> <!--JG: This is a tricky one, I'd keep it like it is, but going to check with other people-->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Iuda, fuit Dei populus" type="straight"/>
+        <underline language="LA" method="pen" text="Ecclesiam Dei retulit" type="straight"/>
+        <underline language="LA" method="pen" text="aduersarios pioru[m]" type="double"/>
+        <underline language="LA" method="pen" text="multabu[n]tur à Domino, suo" type="straight"/>
+        <underline language="LA" method="pen" text="Gog &amp; Magog" type="straight"/>
+        <underline language="LA" method="pen" text="Et Gog reges" type="straight"/>
+        <underline language="LA" method="pen" text="illis adiutores" type="straight"/>
+        <underline language="LA" method="pen" text="sunt igitur Magogi, Scythae, sed populi Coelesyriae, perpetui &amp; capitales" type="straight"/>
+        <underline language="LA" method="pen" text="Madai tertius Iapeti filius" type="straight"/>
+        <underline language="LA" method="pen" text="dedit Medis" type="straight"/>
+        <underline language="LA" method="pen" text="Iauan" type="straight"/>
+        <underline language="LA" method="pen" text="Ab his Ionibus, Athenenses originem trahunt, etsi volunt se esse antochthonas" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- Coelesyriae perpetui -->
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

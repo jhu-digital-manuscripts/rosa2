@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.043r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Asclepiodotu[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Asclepiodotus.
+                    </marginalia_text>
+                    <person name="Asclepiodotus"/>
+                </position>
+            </language>
+            <translation>Asclepiodotus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Alectu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Alectus. Gallus
+                    </marginalia_text>
+                    <person name="Allectus"/>
+                </position>
+            </language>
+            <translation>Allectus, the Gaul.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Asclepiodotu[m] duce[m] cornubiae" type="straight"/>
+        <underline language="LA" method="pen" text="rege[m] Alectu[m] i[n]teremit" type="straight"/>
+        <underline language="LA" method="pen" text="demeti" type="straight"/>
+        <underline language="LA" method="pen" text="venedoti" type="straight"/>
+        <underline language="LA" method="pen" text="deiri" type="straight"/>
+        <underline language="LA" method="pen" text="albani" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

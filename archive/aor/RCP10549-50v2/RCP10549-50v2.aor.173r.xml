@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.173r.tif" pagination="85" reader="John Dee" signature="f.iii."/>   
+    <annotation>
+        
+        <marginalia anchor_text="no[n] vt negotialis implicite &amp; abscondite, sed pate[n]tius &amp; expeditius recti" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        implicite 
+                        abscondite x
+                        [ expeditius
+                        pate[n]tius ]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Confusedly, obscurely. More explicitly, more openly.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Huius partes sunt duae, quarum altera[m] absolutam, alteram assumptiua[m] nominamus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                      Partes Iuridicialis co[n]stitu[tionis]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The parts of a juridical issue.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Absoluta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Absoluta.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Absolute.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Locos aute[m] co[m]munes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Loci co[mmun]es.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Commonplaces.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Assumptiua" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Assu[m]ptiua
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Assumptive.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Eius partes sunt quatuor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Eius partes. 4.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Its four parts.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Comparatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Comparatio.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Comparison.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Ea est huiusmodi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Exemp[lum]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>An example.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Hoc causae genus ex his locis tractari conueniet" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Huius caussa[e] loci.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The topics of this case.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="negotialis implicite &amp; abscondite, sed pate[n]tius &amp; expeditius" type="straight"/>
+        <underline language="LA" method="pen" text="modo in praesentia declara[n]dae" type="straight"/>
+        <underline language="LA" method="pen" text="Ea[m] enim ex bello gloria[m] virtute peperimus, vt eius aeterna insignia posteris nostris relinquere vellemus" type="straight"/>
+        <underline language="LA" method="pen" text="multos &amp; graues" type="straight"/>
+        <underline language="LA" method="pen" text="circunsideretur" type="straight"/>
+       
+        <mark method="pen" name="section_sign" place="left_margin"/>   
+        
+        <mark method="pen" name="bracket" place="intext"/>  <!-- superauissent, & -->
+        <mark method="pen" name="bracket" place="intext"/>  <!-- maneret, aeneum -->
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <errata amendedtext="[deleted]" copytext="circunsideretur" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.006v.tif" pagination="[6[v]]" reader="John Dee" signature="[Avi[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Tractatus Doctoris Petri Nonij" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Tractatus Petri Nonij.
+                    </marginalia_text>
+                    <person name="Pedro Nunes"/>
+                </position>
+            </language>
+            <translation>The tract of Pedro Nunes.</translation>  <!-- FSF: I am not sure what tract is referred here --> <!--JG: https://es.wikipedia.org/wiki/Pedro_Nunes he wrote various tracts, difficult to establish which one is referred to here-->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Hic incipit Tractatus Doctoris Petri Nonij, dein quicquid Mathematica dixerit" type="straight"/>
+        <underline language="LA" method="pen" text="quod ipse Doctor iuxta literam dixit, Philosophia" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="RCP7831-1.022v.tif" pagination="32" reader="Dee" signature="[E[v]]"/> <!--JG: Pagination error-->
+    <annotation>
+        
+        <marginalia anchor_text="morbos[a]e dispositio[n]es" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[A]n inco[n]sta[n]tes?</marginalia_text> <!--JG: Unsure whether it is 'In' or 'An', but an makes sense, considering the question mark-->
+                </position>
+            </language>
+            <translation>Whether [they are] fickle.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="aliud stando, aliud sedendo cogitantes" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.018v.tif" pagination="20" reader="Harvey"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Tale quid de Ascanio refert Virgilius libro secundo A[e]neid. hoc autem                        
+                    </marginalia_text>
+                    <person name="Virgil"/>
+                    <person name="Ascanius"/>
+                    <book title="Aeneid"/>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        μετέωρον
+                    </marginalia_text>
+                            <!-- Greek added. -->
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>                    
+                        à Physicis nostris Ignis lambens vsurpatur. 
+                    </marginalia_text>                   
+                </position>
+            </language>
+            <translation>Vergilius reports something similar about Ascanius, in the second book of the Aeneid. 
+                And in fact this meteor is called a licking fire by our natural scientists.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Interpretatio prodigij: fuit enim Seruius post Tarquinium rex designatus.
+                    </marginalia_text>
+                    <person name="Tarquin the Elder"/>
+                    <person name="Servius Tullius"/>
+                </position>
+            </language>
+            <translation>The interpretation of the prodigy, that is to say: Servius was destined to be king after Tarquinius.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Eo tempore in regia prodigium uisu euentuq[ue] mirabile fuit." type="straight"/>
+        <underline language="LA" method="pen" text="Puero dormienti, cui Seruio Tullio nome[n] fuit, caput arsisse ferunt multoru[m] in co[n]spectu" type="straight"/>
+        <underline language="LA" method="pen" text="plurimo igitur clamore inde ad tantae rei miraculum orto excitum regem" type="straight"/>
+        <underline language="LA" method="pen" text="Tanaquil" type="straight"/>
+        <underline language="LA" method="pen" text="pueru[m] hu[n]c inquit" type="straight"/>
+        <underline language="LA" method="pen" text="tam humili cultu" type="straight"/>
+        <underline language="LA" method="pen" text="educamus" type="straight"/>
+        <underline language="LA" method="pen" text="columen" type="straight"/>
+        <underline language="LA" method="pen" text="reb[us] nostris dubijs futuru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="praesidiumq[ue] regiae afflictae" type="straight"/>
+        <underline language="LA" method="pen" text="materie[m] ingentis publicè priuatimq[ue] decoris omni" type="straight"/>
+        <underline language="LA" method="pen" text="pueru[m] liberûm loco" type="straight"/>
+        <underline language="LA" method="pen" text="erudiriq[ue] artibus, quibus ingenia ad magnae fortunae cultum excita[n]tur" type="straight"/>
+        <underline language="LA" method="pen" text="Euenit facile quod dijs cordi esset" type="straight"/>
+        <underline language="LA" method="pen" text="iuuenis euasit uerè indolis regiae" type="straight"/>
+        <underline language="LA" method="pen" text="gener Tarquinio" type="straight"/>
+        <underline language="LA" method="pen" text="quisquam Romanae iuuentutis ulla arte conferri potuit" type="straight"/>
+        <underline language="LA" method="pen" text="filiamq[ue] ei" type="straight"/>
+        <underline language="LA" method="pen" text="tantus illi honos habitus" type="straight"/>
+        <underline language="LA" method="pen" text="serua natum" type="straight"/>
+        <underline language="LA" method="pen" text="ipsum seruisse" type="straight"/>
+        <underline language="LA" method="pen" text="Seruij Tullij, qui princeps" type="straight"/>
+        <underline language="LA" method="pen" text="nobilitatem ab regina Romana prohibitam" type="straight"/>
+        <underline language="LA" method="pen" text="seruitio partum" type="straight"/>
+        <underline language="LA" method="pen" text="puerum ut" type="straight"/>
+        <underline language="LA" method="pen" text="in charitate atque honore fuisse" type="straight"/>
+        <underline language="LA" method="pen" text="fortunam matris" type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark language="LA" method="pen" name="est_mark" place="left_margin" text="Interpretatio prodigij: fuit enim Seruius post Tarquinium rex designatus."/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--cul-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--cre-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--do-->
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="regia"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Seruio"/>
+        <mark method="pen" name="est_mark" place="intext"/> <!-- scire --> <!-- AB: Jaap, does this connect to the marginalia? -->
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--nutriamus. inde-->
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="quod"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        
+    </annotation>
+</transcription>

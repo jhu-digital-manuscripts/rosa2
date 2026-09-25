@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.173v.tif" pagination="170" reader="Harvey" signature="[L5v]"/>	<!-- ABO 178left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Semper Scientia[e], et Industria[e] plus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Always more knowledge and industry.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="FR">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Tresexcellent.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Very good.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Nulla tam composita Creatura, quàm politicus.
+						Nihil tam conuertibile, quàm pragmaticus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>There is not such a composite creature, as a politician. Nothing is as changeable, as a pragmatist.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Proteus rediuiuus.
+					</marginalia_text>
+					<person name="Proteus"/>
+				</position>
+			</language>
+			<translation>A second-hand Proteus.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Historiaru[m], et discursuum nullus
+						finis. In paucis Optimis, omnia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>There is not end of histories and discourses. Everything is in a few best ones.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						{ Quod sciri arte potest, et effici virtute, id penitùs intelligendu[m];
+						et Hoc agendum serio. Nulli, satis efficacissima[e] Scientia[e], et
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						Industria[e].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>That which can be known by art and by efficient virtue must be understood thoroughly and must be done seriously. There is not enough efficient knowledge and industry.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Quantum sciri potest, et agi: sola artis, et virtutis regia
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						professio.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>How much can be known and done: only the royal profession of art and virtue.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="viuono nell'altrui corpo &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="proprio sono come morti" type="straight"/>
+		<underline language="IT" method="pen" text="Dolce cosa essere la" type="straight"/>
+		<underline language="IT" method="pen" text="vn Cigno cantando" type="straight"/>
+		<underline language="IT" method="pen" text="egli solo si dolce" type="straight"/>
+		<underline language="IT" method="pen" text="le trappole dell'huomo" type="straight"/>
+		<underline language="IT" method="pen" text="Che viuer pouerin con l'huomo ingrato" type="straight"/>
+		<underline language="IT" method="pen" text="filosofi" type="straight"/>
+		<underline language="IT" method="pen" text="soprafare da' bisogni" type="straight"/>
+		<underline language="IT" method="pen" text="che i saui non hanno mai bisogno" type="straight"/>
+		<underline language="IT" method="pen" text="Dà" type="straight"/>
+		<underline language="IT" method="pen" text="poi ti soluerò" type="straight"/>
+		<underline language="IT" method="pen" text="che io non ho hor bisogno" type="straight"/>
+		<underline language="IT" method="pen" text="Descrittione breuissima de l'vniuerso" type="straight"/>
+		<underline language="IT" method="pen" text="leggiadra parabola" type="straight"/>
+		<underline language="IT" method="pen" text="Esopo concerti soffistici" type="straight"/>
+		<underline language="IT" method="pen" text="superaua di gran lunga" type="straight"/>
+		
+		<symbol name="SS" place="left_margin"/> <!-- DISPVTANDO -->
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="left_margin" text="Che viuer pouerin con l'huomo ingrato"/>
+		
+		<mark method="pen" name="comma" place="intext"/> <!-- corpo & -->
+		<mark method="pen" name="comma" place="intext"/> <!-- filosofo) & -->
+		<mark method="pen" name="comma" place="intext"/> <!-- soffistici, gli -->		
+		
+    </annotation>
+</transcription>

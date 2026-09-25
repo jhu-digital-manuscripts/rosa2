@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.109r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Prophetia Angelica.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Angelic prophecy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Britones in insula Britanniae diutius regnare" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Britones regnaturos
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The Britons are to reign.</translation>
+            <!-- NBW: "shall reign [again]?"-->
+        </marginalia>
+        
+        <marginalia anchor_text="Brito[n]es reliquiis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cadovalladri reliquiae.</marginalia_text>
+                </position>
+            </language>
+            <translation>Cadwallader's remains</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iuor; Iuy" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Iuor. Ine</marginalia_text>
+                    <person name="Ivor"/>
+                    <person name="Ine of Wessex"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="regnare anteq[uam] tempus illud venisset q[uo]d Merlin[us] Arthuro p[ro]phetauerat" type="straight"/>
+        <underline language="LA" method="pen" text="populum Britonu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="suae fidei insula[m]" type="straight"/>
+        <underline language="LA" method="pen" text="futuro adepturu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="postq[uam] fatale tempus superueniret" type="straight"/>
+        <underline language="LA" method="pen" text="Brito[n]es reliquiis" type="straight"/>
+        <underline language="LA" method="pen" text="eius potiti" type="double"/>
+        <underline language="LA" method="pen" text="illas a Roma in Britannia[m] asportare[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="reuelatis etiam caeteroru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="sanctorum reliquiis" type="double"/>
+        <underline language="LA" method="pen" text="amissu[m] regnu[m] recuperarent" type="double"/>
+        <underline language="LA" method="pen" text="Iuor" type="straight"/>
+        <underline language="LA" method="pen" text="Iuy" type="straight"/>
+        <underline language="LA" method="pen" text="ad reliquias Britonum regendas" type="straight"/>
+        <underline language="LA" method="pen" text="sexcentesimo octogesimo" type="straight"/>
+        <underline language="LA" method="pen" text="xlix" type="straight"/>
+        
+        <errata amendedtext="Cadualladri" copytext="Caualladri" language="LA"/>
+       
+    </annotation>
+</transcription>

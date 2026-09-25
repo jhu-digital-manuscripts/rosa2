@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.038r.tif" pagination="38" reader="John Dee" signature="Kij"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>De intervallis pluuiarum.</marginalia_text>
+                </position>
+            </language>
+            <translation>On the intervals of the rains.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="ander Regen Gewülcke" type="double"/>
+        <underline language="DE" method="pen" text="krafft hat zu forderung" type="straight"/>
+        <underline language="DE" method="pen" text="küle" type="straight"/>
+        <underline language="DE" method="pen" text="Rege[n] wolcke[n]" type="straight"/>
+        <underline language="DE" method="pen" text="andere Constellationem" type="straight"/>
+        <underline language="DE" method="pen" text="der haffen" type="double"/>
+        <underline language="DE" method="pen" text="Stern" type="double"/>
+        <underline language="DE" method="pen" text="drey Ersten der Prima materia" type="straight"/>
+        <underline language="DE" method="pen" text="widerumb erwaschen" type="double"/>
+        <underline language="DE" method="pen" text="nach jre" type="straight"/>
+        <underline language="DE" method="pen" text="küle" type="straight"/>
+        <underline language="DE" method="pen" text="küle in Lufft kompt" type="straight"/>
+        <underline language="DE" method="pen" text="Lufft auch dester küler" type="straight"/>
+        
+        <mark language="DE" method="pen" name="bracket" place="right_margin" text="Dan[n] viel Rege[n] wolcke[n] seind die durch andere Constellationem verzert werden welche an dem orth in bürgen nicht mag für sich gehen"/>
+        <mark language="DE" method="pen" name="bracket" place="right_margin" text="als dann hat er aber seine zeit biß seine drey Ersten der Prima materia widerumb erwaschen              nach jre zeit als danne so gehent jre wirckung aber an wie hie mit diesen Regen gemelt ist"/>
+        
+    </annotation>
+</transcription>

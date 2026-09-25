@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>0</illustrations>
+    <totalPages>200</totalPages>
+    <dimensions units="">
+        <width>-1</width>
+        <height>-1</height>
+    </dimensions>
+    <dates>
+        <startDate>1401</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="Le livre des trois vertus à l'ensaignement des dames">
+            <language>fr</language>
+            <title>Le livre des trois vertus à l'ensaignement des dames</title>
+            <textId/>
+            <pages end="92v" start="1r">92</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>32</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Christine de Pizan</title>
+            <commonName>Français 452</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>vellum</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 452</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Christine de Pizan</title>
+            <commonName>Français 452</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscript</type>
+            <material>vellum</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 452</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.181r.tif" pagination="353" reader="John Dee" signature="Gg iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Gevviseorum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Provincia Gowiseorum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The province of the Gewisse tribe.   
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cridiensis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ep[iscopu]s Cridiensis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The bishop of Crediton.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in illa parte Angliae, quae in plaga australi sita est fluminis Thamesis" type="straight"/>
+        <underline language="LA" method="pen" text="Sutherensis" type="straight"/>
+        <underline language="LA" method="pen" text="Cridiensis habebat" type="straight"/>
+        <underline language="LA" method="pen" text="Cornubienses" type="straight"/>
+        <underline language="LA" method="pen" text="VVallenses aquilonares" type="straight"/>
+        <underline language="LA" method="pen" text="flumen Heilemuthe sedes habuerunt" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.219v.tif" pagination="[212v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Deinde ascende[n]tem in toto anno.</marginalia_text>
+                </position>
+            </language>
+            <translation>Henceforth the ascendant in the whole year.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Copernici autem no[n]dum p[er]specta est recte sententia: uix enim, quae uellet, dicere uisus est" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hic tame[n] o[mn]es vincit exacte supputatio[n]e et observa[n]di dilige[n]tia</marginalia_text> 
+                </position>
+            </language>
+            <translation>Here he nevertheless outlasts all by exact computation and diligence of the things to be observed.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>De octimestri partu, et septimestri / et r[ati]o[n]e foetus in vtero</marginalia_text>
+                    <book title="De octimestri partu"/>
+                </position>
+            </language>
+            <translation>'The eigth and the seventh month'. And on the reason of the foetus in the womb.</translation> <!--JG: Unsure about the second tract of Hippocrates--> <!-- FSF: not sure -->
+        </marginalia>
+        
+        <marginalia hand="English_secretary" id="RCP7134:444:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Ha[e]c co[n]tra Antiquor[um] Canones dicentur</marginalia_text>
+                </position>
+            </language>
+            <translation>These things are said against the canons of the ancients.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Copernici autem no[n]dum p[er]specta est recte sententia: uix enim quae uellet, dicere uisus est" type="straight"/>
+        <underline language="LA" method="pen" text="ratio" type="straight"/>
+        <underline language="LA" method="pen" text="computatio" type="straight"/>
+        <underline language="LA" method="pen" text="obseruatio" type="straight"/>
+        <underline language="LA" method="pen" text="numeratio" type="straight"/>
+        <underline id="RCP7134:444:u0001" language="LA" method="pen" text="Primus mensis" type="straight"/>
+        
+        <physical_link>
+            <marginal_annotation idref="RCP7134:444:m0001"/>
+            <marginal_annotation idref="RCP7134:444:u0001"/>
+            <relation from="RCP7134:444:m0001" to="RCP7134:444:u0001" type="directed"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

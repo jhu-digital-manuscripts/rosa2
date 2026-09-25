@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.173r.tif" pagination="85" reader="John Dee" signature="H"/>
+    <annotation>
+        
+        <marginalia anchor_text="coniunctio fortior est" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Coniunctionis vis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Joint forces.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="iudicia non uera" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Quando iudicia non sunt vera
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                When the assessments are not true.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="una quidem secundum naturam, alia secundum domos, &amp; tertia secundu[m] aspectus" type="straight"/>
+        <underline language="LA" method="pen" text="est circa gradum medii coeli" type="straight"/>
+        <underline colour="red" language="LA" method="chalk" text="nullam aliam quàm ascendens aspicias" type="dotted"/>
+        
+        <mark colour="red" method="chalk" name="bracket" place="right_margin"/>
+        <mark colour="red" method="chalk" name="bracket" place="right_margin"/>
+        <mark method="chalk" name="bracket" place="right_margin"/>
+        <mark colour="red" method="chalk" name="bracket" place="right_margin"/>
+        <mark colour="red" method="chalk" name="dash" place="right_margin"/>
+        <mark colour="red" method="chalk" name="dash" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.001r.tif" pagination="title page" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia date="1552" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Joannes Deeus:1552:
+                    </marginalia_text>
+                    <person name="John Dee"/>
+                </position>
+            </language>
+            <translation>
+                John Dee, 1552.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        [CE 11 45 deleted]
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        [R.5.27 deleted]
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

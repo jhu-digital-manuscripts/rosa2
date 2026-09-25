@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.034v.tif" pagination="[34v]" reader="John Dee" signature="[Eij[v]]"/>     
+    <annotation>
+        
+        <marginalia anchor_text="Re di Francia" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Rex Fra[n]cia[e]</marginalia_text>
+                    <location name="France"/>
+                </position>
+            </language>
+            <translation>The king of France.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="poi in Inghilterra à cercare il fratello" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Barthilmew Colon yet in England</marginalia_text>
+                    <person name="Bartholomew Columbus"/>
+                    <location name="England"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Consaylors not allways best to syft matters to the nearest of reason.</marginalia_text>   
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="andare àtrouare il Re di Francia" type="straight"/>
+        <underline language="IT" method="pen" text="poi in Inghilterra à cercare il fratello" type="double"/>
+        <underline language="IT" method="pen" text="non" type="double"/>
+        <underline language="IT" method="pen" text="haueua nouella alcuna" type="straight"/>
+        <underline language="IT" method="pen" text="Diego" type="straight"/>
+        <underline language="IT" method="pen" text="frate Gioan Perez" type="double"/>
+        <underline language="IT" method="pen" text="risolutione, &amp; di quel, che Spagna per" type="straight"/>
+        <underline language="IT" method="pen" text="partita haurebbe perduto" type="straight"/>
+        <underline language="IT" method="pen" text="suo padre di confessione" type="straight"/>
+        <underline language="IT" method="pen" text="d'ogni speranza, e sdegnatp" type="straight"/>
+        <underline language="IT" method="pen" text="animo, &amp; giudicio" type="double"/>
+        <underline language="IT" method="pen" text="dell' Altezze loro" type="straight"/>
+        <underline language="IT" method="pen" text="presa à Spagna" type="double"/>
+        <underline language="IT" method="pen" text="per lo gran" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

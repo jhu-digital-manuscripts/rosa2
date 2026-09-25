@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.045r.tif" pagination="73" reader="John Dee" signature="g"/>
+    <annotation>
+        
+        <marginalia anchor_text="urnatores" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vrnatores
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                <!-- FSF: see https://books.google.co.uk/books?id=ATcAx4mcn88C&pg=PA1637&lpg=PA1637&dq=urnatores+latin&source=bl&ots=ANG_5nizKc&sig=8HTL4ugbYUb4OKlWKPca6U55hHI&hl=en&sa=X&ved=0ahUKEwimhcHPn7PTAhXCtRoKHbdmAWsQ6AEIRDAE#v=onepage&q=urnatores%20latin&f=false -->
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="co[n]stitutus in diurna genitura" type="straight"/>
+        
+        <!-- FSF: there is a little scribble something in hte right margin of which I am not sure what it's meant to indicate -->
+        <!-- M.B. I'm not sure either but I've seen symbol elsewhere for example in Vol. 2 Cicero 0987.tif -->
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>4</illustrations>
+    <totalPages>152</totalPages>
+    <dimensions units="mm">
+        <width>225</width>
+        <height>304</height>
+    </dimensions>
+    <dates>
+        <startDate>1400</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="Le livre de la cité des dames">
+            <language>fr</language>
+            <title>Le livre de la cité des dames</title>
+            <textId/>
+            <pages end="152v" start="1r">152</pages>
+            <illustrations>4</illustrations>
+            <linesPerColumn>33</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Le livre de la cité des dames</title>
+            <commonName>Français 609</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material> vellum</material>
+            <origin>Paris, France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>Français 609</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Le livre de la cité des dames</title>
+            <commonName>Français 609</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>Vellum</material>
+            <origin>France</origin>
+            <currentLocation>Paris, France</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>Français 609</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

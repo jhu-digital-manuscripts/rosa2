@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.115r.tif" pagination="115" reader="John Dee" signature="Piij"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="non parlaua co' suoi soggetti, se non per cenni" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Speaking by signes and tokens.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Cacique" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note of this Prince</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="vn canale" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A narrow channel</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Testuggini della grandezza di due, &amp; tre braccia" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mighty great Tortuces.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="parte Occidentale" type="straight"/>
+        <underline language="IT" method="pen" text="se" type="straight"/>
+        <underline language="IT" method="pen" text="non per cenni" type="double"/>
+        <underline language="IT" method="pen" text="subito vbidito" type="double"/>
+        <underline language="IT" method="pen" text="bassa, &amp; piena di molte Isole" type="straight"/>
+        <underline language="IT" method="pen" text="vn braccio di acqua di profondità" type="straight"/>
+        <underline language="IT" method="pen" text="accostandosi più a Cuba" type="straight"/>
+        <underline language="IT" method="pen" text="videro Testuggini della grandezza di due, &amp; tre braccia" type="straight"/>
+        <underline language="IT" method="pen" text="vna nube di Corui" type="straight"/>
+        <underline language="IT" method="pen" text="tante Farfalle" type="straight"/>
+        
+        <mark language="IT" method="pen" name="bracket" place="right_margin" text="Cacique della parte Occidentale non parlaua co' suoi soggetti, se non per cenni, per li quali era di subito vbidito in tutto quel, che egli commandaua"/>
+        
+        <mark method="pen" name="equal_sign" place="right_margin"/>  <!-- molti -->
+
+    </annotation>
+    
+</transcription>

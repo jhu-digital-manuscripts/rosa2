@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.044r.tif" pagination="407" reader="Harvey"/>	<!-- ABO 48right -->
+	<annotation>
+		<!-- Marginalia -->
+		<!-- Orientation: 0 -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						( Nocte, dieq[ue] leuis; vino, epulisq[ue] brevis.)
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Plain by night and by day; humble with wine and food.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						apopthegma moratum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A moral aphorism.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Euschemosynen, et Entelechian Solus sapit Angelus Furius. )
+					</marginalia_text>
+					<person name="Angelus Furius"/>
+				</position>
+			</language>
+			<translation>
+				Angelus Furius alone understands both Refinement and Actualization.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Axiophili dia[e]ta aurea.
+					</marginalia_text>
+					<person name="Axiophilus"/>
+				</position>
+			</language>
+			<translation>
+				The golden regimen of Axiophilus.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Laudo viuidam, sed viuacem virtutem.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				I recommend lively but vigorous virtue.
+			</translation>
+		</marginalia>
+		
+		
+		<!-- Orientation: 270 -->
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.044r_0001" marginalia_continues_to="Ha2.043v_0001" marginalia_to_transcription="Ha2.043v.xml">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Axiophilus. È Nilo bibit ille, fugitq[ue]: vir expedit acer: Corpus, mensq[ue] agilis:
+						mensa, thorusq[ue] breuis. 2. Eutrapelus. Officium vt faciat pars qua[e]q[ue] volubilis
+					</marginalia_text>
+					<person name="Axiophilus"/>
+					<person name="Eutrapelus"/>
+					<emphasis method="pen" text="Axiophilus" type="straight"/>
+					<emphasis method="pen" text="Eutrapelus" type="straight"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position book_orientation="270" place="tail">
+					<marginalia_text>
+						orbis, =
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						= Da purum, atq[ue] parum: Salue et Iäcche vale. 3. Enteleches. Officiu[m]	[p. 406: vt faciat pars qua[e]q[ue] rotantis Olympi, Purius, atq[ue] minus: libat, auisq[ue] volat.]
+						<!-- Continues onto facing page, right marign, Ha2.043v. -->
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Axiophilus. He drinks from the Nile and hastens away. The keen man is prepared, agile in body and mind;
+				with a small table and bed. 2. Eutrapelus. His duty: that every part values the voluble world. <!-- Unclear. --> <!--JG: Don't the gens. qualify 'pars quaeque'?-->
+				Give pure and equal: Greetings and farewell, wine. 3. Actualization. Its duty: [p. 406: that every part values rotating Olympus more chastely and less. He drinks and flies away as a bird.]
+			</translation>
+		</marginalia>
+		
+		
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="sordido" type="straight"/>
+		<underline language="IT" method="pen" text="da uno atto men che honesto" type="straight"/>
+		<underline language="IT" method="pen" text="gli era uergogna" type="straight"/>
+		<underline language="IT" method="pen" text="quale arrogantissimo" type="straight"/>
+		<underline language="IT" method="pen" text="che uergogna" type="straight"/>
+		<underline language="IT" method="pen" text="essere ciò" type="straight"/>
+		<underline language="IT" method="pen" text="la uergogna è d'un color tale benche" type="straight"/>
+		<underline language="IT" method="pen" text="no[n] si scorge" type="straight"/>
+		<underline language="IT" method="pen" text="al Re Massimiano" type="straight"/>
+		<underline language="IT" method="pen" text="bellissimi cauagli" type="straight"/>
+		<underline language="IT" method="pen" text="uen'era; ch'egli" type="straight"/>
+		<underline language="IT" method="pen" text="uno de' buoni saltatori, maneggiatori, &amp; corridori del mondo" type="straight"/>
+		<underline language="IT" method="pen" text="il Re ue[n]ne" type="straight"/>
+		<underline language="IT" method="pen" text="uederlo caualcare" type="straight"/>
+		<underline language="IT" method="pen" text="Re andando a caccia" type="straight"/>
+		<underline language="IT" method="pen" text="caualerizzo, che lo" type="straight"/>
+		<underline language="IT" method="pen" text="essendo piccolissimo" type="straight"/>
+		<underline language="IT" method="pen" text="cauallo grossissimo, &amp; altissimo" type="straight"/>
+		<underline language="IT" method="pen" text="appenna poteua toccar' con gli sproni i fianchi" type="straight"/>
+		<underline language="IT" method="pen" text="bruttissima mostra di se" type="straight"/>
+		<underline language="IT" method="pen" text="molto discaro" type="straight"/>
+		<underline language="IT" method="pen" text="uedere luciole" type="straight"/>
+		<underline language="IT" method="pen" text="per lanterue" type="straight"/>
+		<underline language="IT" method="pen" text="accostò" type="straight"/>
+		<underline language="IT" method="pen" text="non è riuscito di quella bont&amp;, ch'io glielo predicai" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="e' può essere ciò che uoi dite: perche la uergogna è d'un color tale benche bellissimo, che no[n] si scorge" type="straight"/>
+		<underline language="IT" method="chalk" text="maneggiatori, &amp; corridori del mondo" type="straight"/>
+		
+		<!-- Symbols -->
+		<symbol name="SS" place="right_margin"/>
+		<symbol name="Sun" place="tail"/>
+		
+		<!-- Marks -->	
+		
+		<!-- Right margin -->
+		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- ueduto fa --> <!--JG: I'd link this to underlined text-->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- fa -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Do -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- uer -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- scor -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- mol -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- commi -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- luc -->
+		
+	    	<!-- Left margin -->
+	    <mark method="pen" name="plus_sign" place="left_margin"/> <!-- superbissimo -->
+		<mark method="pen" name="bracket" place="left_margin"/> <!-- menico ... ge -->
+		<mark method="pen" name="bracket" place="left_margin"/> <!-- ven'era ... to -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark method="pen" name="comma" place="intext"/> <!-- Ragugeo & -->
+		<mark method="pen" name="comma" place="intext"/> <!-- era gli -->
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- ogniuno --> 
+		<mark method="pen" name="dot" place="intext"/> <!-- Pugliano, fra -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- uno de' buoni -->
+	    <mark method="pen" name="dot" place="intext"/> <!-- caualcare, & -->
+
+    </annotation>
+</transcription>

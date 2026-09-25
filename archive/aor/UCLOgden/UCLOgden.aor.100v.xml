@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.100v.tif" pagination="184" reader="John Dee" signature="[q 2[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Admonitio et co[n]silium  
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Advice and council.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="☉ loco patris" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ☉ loco patris
+                    </marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                </position>
+            </language>
+            <translation>
+                The sun in the position of the father.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="aut in iis, in quibus non gaudet" type="straight"/>
+        <underline language="LA" method="pen" text="in secu[n]dis cardinibus" type="straight"/>
+        <underline language="LA" method="pen" text="ipse enim ex sua natura locum inficit" type="straight"/>
+        <underline language="LA" method="pen" text="☉ loco patris" type="straight"/>
+        <underline colour="red" language="LA" method="pen" text="Matris loco" type="dotted"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

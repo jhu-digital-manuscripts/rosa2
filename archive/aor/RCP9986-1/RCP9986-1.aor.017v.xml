@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.017v.tif" pagination="[18v]" reader="John Dee" signature="[C.ij.[v]]"/>  
+    <annotation>
+        
+        <marginalia anchor_text="non notis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>No[n] nisi notis</marginalia_text>
+                </position>
+            </language>
+            <translation>Not unless to well-known [people].</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Quis sua non notis arua tenenda dabit" type="straight"/>
+        <underline language="LA" method="pen" text="Sed queror infidum, questáq[ue] peius amo" type="straight"/>
+        <underline language="LA" method="pen" text="Te lapis, &amp; montes, innata'q[ue] rupibus altis Robora, te saeuae progenuere ferae" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        
+    </annotation>
+</transcription>

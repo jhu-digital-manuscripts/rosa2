@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.342v.tif" pagination="192" reader="John Dee" signature="[Cc.ij.[v]]"/>
+    
+    
+    <annotation>
+        
+        
+        <marginalia anchor_text="Imperator" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sigismundus Imp[erator]</marginalia_text>
+                    <person name="Sigismund, Holy Roman Emperor"/>
+                </position>
+            </language>
+            <translation>Emperor Sigismund.</translation>
+        </marginalia>
+        
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>bellum</marginalia_text> 
+                </position>
+            </language>
+            <translation>War.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="venit Imperator Londonias deductus in magnificentia &amp; gloria per regem" type="straight"/>
+        <underline language="LA" method="pen" text="apud Lamhitham" type="straight"/>
+        <underline language="LA" method="pen" text="humanitatem regi Romanoru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="quod imperator ex post" type="straight"/>
+        <underline language="LA" method="pen" text="congessit in omni" type="straight"/>
+        <underline language="LA" method="pen" text="quòd mediatione imperatoris" type="straight"/>
+        <underline language="LA" method="pen" text="dominus Ioh. dux Bedfordi[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="Imperator &amp; Rex Angliae foedus adinuicem pepigere" type="straight"/>
+        
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        
+        
+    </annotation>
+    
+</transcription>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.023r.tif" pagination="23" reader="John Dee" signature="Fiij"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Sagani 4 Elementoru[m] no[n] habent a[n]i[m]am humana[m]. Licet intellectum, prudentiamq[ue] habeant.</marginalia_text>
+                </position>
+            </language>
+            <translation>Of the four elements the Sagani do not have the human soul. Although they have intellect and prudence.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Homo - Adamicus - Saganicus</marginalia_text>
+                </position>
+            </language>
+            <translation>Man - of [the line of] Adam - of [the line of] the Sagani.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Menschviech" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Manbeasts.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Gnomi; Nymphen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gnomi. Nympha[e].</marginalia_text>
+                </position>
+            </language>
+            <translation>Gnomes. Nymphes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in Bergen Thälern Erden im Wasser" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In hills, dales Mynes, and Waters.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="das er keines Elementes ist" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Homo est nullus vni[us] Elementi.</marginalia_text>
+                </position>
+            </language>
+            <translation>Man is not of one element.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[N]o[t]a</marginalia_text> <!--JG: Not sure-->
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="nicht bey" type="straight"/>        
+        <underline language="DE" method="pen" text="wir Menschen seindt durch Gott geschaffen" type="straight"/>
+        <underline language="DE" method="pen" text="der Seele ohn todt" type="straight"/>
+        <underline language="DE" method="pen" text="Seele die andern nicht haben" type="straight"/>
+        <underline language="DE" method="pen" text="menschliche vernunfft vnd Kunst" type="straight"/>
+        <underline language="DE" method="pen" text="Seel nicht" type="straight"/>
+        <underline language="DE" method="pen" text="Menschviech seindt sie" type="double"/>
+        <underline language="DE" method="pen" text="Gnomi haben alle Künst der Menschen" type="straight"/>
+        <underline language="DE" method="pen" text="die Nymphen" type="double"/>
+        <underline language="DE" method="pen" text="Da ist aber keine Seele für die Christus gestorben sey" type="straight"/>
+        <underline language="DE" method="pen" text="mit deren bludt vnd fleisch er" type="straight"/>
+        <underline language="DE" method="pen" text="werden. Dan[n] viel wirt der Natur zugelegt das auß der Natur nicht also ist sondern durch solche Saganas geschehen" type="straight"/>
+        <underline language="DE" method="pen" text="Bergen" type="straight"/>
+        <underline language="DE" method="pen" text="Thälern" type="straight"/>
+        <underline language="DE" method="pen" text="Erden" type="straight"/>
+        <underline language="DE" method="pen" text="Wasser" type="straight"/>
+        <underline language="DE" method="pen" text="er keines" type="straight"/>
+        <underline language="DE" method="pen" text="alleine ist" type="double"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.090v.tif" pagination="[83v]" reader="John Dee" signature="[X iij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Conditiones [quattuor] qua[e] in figura[e] co[n]sideratio[n]e perpenduntur</marginalia_text>
+                </position>
+            </language>
+            <translation>Four conditions which are assessed carefully in the consideration of a figure.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Significatores post revolutiones suas et p[er]iodos, res in Luce proferri patiuntur qu[a]e ip[s]i significant</marginalia_text>
+                </position>
+            </language>
+            <translation>After their revolutions and periods which they themselves signify, the signifiers permit that the matter is brought forward into the light.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="ex directionibus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Directiones.</marginalia_text>
+                </position>
+            </language>
+            <translation>Directions.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="naturae significatoris" type="straight"/> 
+        <underline language="LA" method="pen" text="tardi" type="straight"/>
+        <underline language="LA" method="pen" text="unusquisq[ue] enim significator, significat rem post suam reuolutione[m] completam" type="straight"/>
+        <underline language="LA" method="pen" text="significatores, dominatores, &amp; non significatores per se, aut infortunatores" type="straight"/>
+        <underline language="LA" method="pen" text="ueloces in cursu" type="straight"/>
+        <underline language="LA" method="pen" text="significat tempus initij rei" type="straight"/>
+        <underline language="LA" method="pen" text="planetaru[m] in esse, quo ad" type="straight"/>
+        <underline language="LA" method="pen" text="ex hoc quinta &amp; sexta sunt ualde tardae, nisi sint in proprio significato" type="straight"/>
+        <underline language="LA" method="pen" text="orientalitas à Sole, quae signant" type="straight"/>
+        <underline language="LA" method="pen" text="ad tempore uniuersalia" type="straight"/>
+        <underline language="LA" method="pen" text="pendet ex directionibus" type="straight"/>
+        
+        <numeral language="LA" place="intext" text="naturae">1</numeral>
+        <numeral language="LA" place="intext" text="ueloces in cursu">2</numeral>
+        <numeral language="LA" place="intext" text="planetaru[m]">3</numeral>
+        <numeral language="LA" place="intext" text="orientalitas à Sole, quae signant">4</numeral>
+        
+    </annotation>
+</transcription>

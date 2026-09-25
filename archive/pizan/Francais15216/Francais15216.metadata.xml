@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>2</illustrations>
+    <totalPages>159</totalPages>
+    <dimensions units="mm">
+        <width>232</width>
+        <height>165</height>
+    </dimensions>
+    <dates>
+        <startDate>1401</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="Recueil">
+            <language>fr</language>
+            <title>Recueil</title>
+            <textId/>
+            <pages end="152v" start="1r">152</pages>
+            <illustrations>2</illustrations>
+            <linesPerColumn>22</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="Paraphrase française des sept Psaumes de la pénitence">
+            <language>fr</language>
+            <title>Paraphrase française des sept Psaumes de la pénitence</title>
+            <textId/>
+            <pages end="48r" start="1r">48</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>22</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="Les neuf Leçons de Job, paraphrasées en vers français, par Pierre [DE] NESSON">
+            <language>fr</language>
+            <title>Les neuf Leçons de Job, paraphrasées en vers français, par Pierre [DE] NESSON</title>
+            <textId/>
+            <pages end="93v" start="49r">44</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>19</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="Le Remors de conscience">
+            <language>fr</language>
+            <title>Le Remors de conscience</title>
+            <textId/>
+            <pages end="104v" start="95r">9</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>20</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="Le Miroir de mort, fait messire Phelippe DE CROY, conte de Chimay">
+            <language>fr</language>
+            <title>Le Miroir de mort, fait messire Phelippe DE CROY, conte de Chimay</title>
+            <textId/>
+            <pages end="123v" start="105v">18</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>20</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="Le Pas de la mort fait par ame. N'a pas long temps que je vivoie... » — Dédié à la comtesse de Charolais">
+            <language>fr</language>
+            <title>Le Pas de la mort fait par ame. N'a pas long temps que je vivoie... » — Dédié à la comtesse de Charolais</title>
+            <textId/>
+            <pages end="141v" start="125r">16</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>20</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="Protestations moult nécessaires et utiles à dire par chascun feal chrestien ou chrestienne, avant son trespas de ce monde, à l'encontre des ennemis d'enfer.">
+            <language>fr</language>
+            <title>Protestations moult nécessaires et utiles à dire par chascun feal chrestien ou chrestienne, avant son trespas de ce monde, à l'encontre des ennemis d'enfer.</title>
+            <textId/>
+            <pages end="150v" start="142v">8</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>22</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="Notes de naissances de différents membres de la famille de Saulx (1497-1547). ; La signature : « Chardin l'aîné, 1725">
+            <language>fr</language>
+            <title>Notes de naissances de différents membres de la famille de Saulx (1497-1547). ; La signature : « Chardin l'aîné, 1725</title>
+            <textId/>
+            <pages end="152v" start="151r">1</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>21</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Christine de Pizan</title>
+            <commonName>Français 15216</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>Parchment</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 15216</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Christine de Pizan</title>
+            <commonName>Français 15216</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscript</type>
+            <material>Parchment</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 15216</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

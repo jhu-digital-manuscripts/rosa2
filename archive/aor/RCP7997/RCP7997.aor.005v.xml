@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.005v.tif" reader="John Dee" signature="[Avj[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="magnu[m] vel paruu[m]. multu[m] vel paucu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        magnu[m] et paruum. multu[m] et pacu[m].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Large and little, many and few.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="magnis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Magnum.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Great.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="multiplice[m] [et] submultiplice[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Multiplex submultiplex
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Multiplex submultiplex.
+            </translation>
+        </marginalia>
+
+        <marginalia anchor_text="Et sic dicim[us] duos nu[m]eros versari p[ro]portione ducem et comitem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Dux comes} p[ro]portionu[m].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Leader and follower of proportions.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="si[mi]liter magnu[m] [et] paruu[m] no[m]i[n]a no[n] significa[n]t q[uan]titates principalit[er] sed qliq[ui]d circa qua[n]titate[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Significare {qua[n]titatem aliq[ui]d circa qua[n]titate[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To signify some quantity or about the quantity.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quis qua[n]titatib[us] p[er]" type="straight"/>
+        <underline language="LA" method="pen" text="dicunt[ur] sc[ilicet] forme circa qua[n]ta" type="straight"/>
+        <underline language="LA" method="pen" text="eoru[m] q[uae] nu[m]eram[us] seu me[n]suram[us] significa[n]t q[uan]titates sub formis q[uae] essencialit[er] sunt qua[n]titates. multu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="sed aliq[ui]d circa qua[n]titate[m]" type="straight"/>
+        
+        <mark method="pen" name="equal_sign" place="right_margin"/> <!-- qua[n]titas -->
+        <mark method="pen" name="equal_sign" place="right_margin"/> <!-- dicunt[ur] -->
+        
+        <errata amendedtext="," copytext="." language="LA"/> <!-- no[m]i[n]a no[n] -->
+        
+    </annotation>
+</transcription>

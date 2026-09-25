@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.307v.tif" pagination="166" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="in insula Londeie" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Insula Londeie.
+                    </marginalia_text>
+                    <location name="Lundy"/>
+                </position>
+            </language>
+            <translation>
+                The island Lundy.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Gulihelmus scilicet de Marisco" type="straight"/>
+        <underline language="LA" method="pen" text="insula Londeie" type="straight"/>
+        <underline language="LA" method="pen" text="Galfridus de Marisco" type="straight"/>
+        
+    </annotation>
+</transcription>

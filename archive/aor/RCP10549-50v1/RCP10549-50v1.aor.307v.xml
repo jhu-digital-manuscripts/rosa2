@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.307v.tif" pagination="594" reader="John Dee" signature="[ppp.i.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="seruitute[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Seruitus</marginalia_text>
+                </position>
+            </language>
+            <translation>Servitude.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="no[n] omnes saluos esse voluisset" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>no[n] omnes ciues salvandi</marginalia_text>
+                </position>
+            </language>
+            <translation>Not all citizens are to be saved.</translation>
+        </marginalia> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Similitudo</marginalia_text>
+                </position>
+            </language>
+            <translation>Similarity.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="P. Clodium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>P Clodius</marginalia_text>
+                    <person name="Publius Clodius Pulcher"/>
+                </position>
+            </language>
+            <translation>Publius Clodius Pulcher.</translation>
+        </marginalia>         
+        
+        <marginalia anchor_text="intercurrere[n]t" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>intercurrere.</marginalia_text>
+                </position>
+            </language>
+            <translation>To run between.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="co[n]te[m]psit, reiecit, repudiauit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>co[n]tempsit reiecit repudiauit.</marginalia_text>
+                </position>
+            </language>
+            <translation>She despised, repelled, repudiated.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="homo seuerus &amp; prudens" type="straight"/>
+        <underline language="LA" method="pen" text="conseruandum putas. In corpore siquid eiusmodi est quod reliquo corpori noceat, vri ac secari patimur, vt membroru[m] aliquod potius, quàm totum corpus intereat" type="straight"/>
+        <underline language="LA" method="pen" text="corpore, vt totum saluum sit, quicquid est pestiferu[m] amputetur" type="straight"/>
+        <underline language="LA" method="pen" text="Salui sint improbi, scelerati, impii" type="straight"/>
+        <underline language="LA" method="pen" text="Itaque sine verboru[m] co[n]tumelia à te dissentire possum, sine" type="straight"/>
+        <underline language="LA" method="pen" text="su[m]mo dolore no[n] possum" type="straight"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="left_margin" text="seruitus"/>
+        <mark method="pen" name="dash" place="left_margin"/>
+        <mark method="pen" name="dash" place="left_margin"/>
+        <mark method="pen" name="dash" place="left_margin"/>
+        <mark method="pen" name="dash" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark language="LA" method="pen" name="bracket" place="left_margin" text="ac secari patimur, vt membroru[m] aliquod potius, quàm totum corpus intereat:              sic in Reip. corpore, vt totum saluum sit, quicquid est pestiferu[m] amputetur"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">.5.</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">8</numeral>
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">10</numeral>
+        
+        <drawing anchor_text="Seruitus" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="Salui sint improbi, scelerati, impii" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

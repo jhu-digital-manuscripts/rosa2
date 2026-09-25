@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.118r.tif" pagination="235" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="περίστασις " hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>περίστασις</marginalia_text>
+                </position>
+            </language>
+            <translation>Circumstance.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="lex" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lex.</marginalia_text>
+                </position>
+            </language>
+            <translation>Law.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="co[n]iunctis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A Coniunctis</marginalia_text>
+                </position>
+            </language>
+            <translation>From the connected.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Lex" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lex.</marginalia_text>
+                </position>
+            </language>
+            <translation>Law.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Clunetio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Clunetio</marginalia_text>
+                    <book title="Pro Cluentio"/>
+                </position>
+            </language>
+            <translation>Pro Cluentio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uis inuentionis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Inventionis vis.</marginalia_text>
+                </position>
+            </language>
+            <translation>The power of invention.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ut in illo adultero sacerdote, qui lege, qua unius seruandi potestate[m] habebat" type="straight"/>
+        <underline language="LA" method="pen" text="qui te adultero dimisso, adulteram occidere non" type="straight"/>
+        <underline language="LA" method="pen" text="creditum suum" type="straight"/>
+        <underline language="LA" method="pen" text="cum est in singulis ambiguitas frequens, adhuc in co[n]iunctis magis" type="straight"/>
+        <underline language="LA" method="pen" text="usuram non accepisti" type="straight"/>
+        <underline language="LA" method="pen" text="Nec minus in hic curae debet adhiberi, quid propone[n]dum, quàm quomodo sit, quod proposueris proba[n]du[m]. Hîc omnino              uis inuentionis si no[n] maior, certe prior" type="straight"/>
+        
+    </annotation>
+</transcription>

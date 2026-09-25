@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="RCP7831-1.023r.tif" pagination="33" reader="Dee" signature="Eij[r]"/> <!--JG: Pagination error-->
+    <annotation>
+        
+        <marginalia anchor_text="rete[n]trice" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vis retenrix</marginalia_text>
+                </position>
+            </language>
+            <translation>Restrained force.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="suspe[n]dio arbore[m] pleru[m]que delige[n]tes" type="straight"/>
+        <underline language="LA" method="pen" text="in rete[n]trice quae naturali" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

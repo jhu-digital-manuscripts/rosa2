@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.192r.tif" pagination="363" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="literatissimorum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        literatissimus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Most cultivated.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex pueris excessit Archias" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Archia[e] vita. ex pueris excedere.
+                    </marginalia_text>
+                    <person name="Aulus Licinius Archias"/>
+                </position>
+            </language>
+            <translation>
+                The life of Archias. To withdraw from his childhood.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="antecellere omnibus ingenii gloria" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        antecellere o[mn]ibus ingenij gloria
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To surpass all by his brilliance of character. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="de ingeniis poterant iudicare" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        de ingenijs indicare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To indicate talent.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Gracche" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Gracchus
+                    </marginalia_text>
+                    <person name="Gratius"/>
+                </position>
+            </language>
+            <translation>
+                Gratius.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quod non modo à consuetudine iudiciorum, veru[m]etiam à forensi sermone abhorreat" type="straight"/>
+        <underline language="LA" method="pen" text="huic reo" type="straight"/>
+        <underline language="LA" method="pen" text="vti propè nouo quodam &amp; inusitato genere dice[n]di" type="straight"/>
+        <underline language="LA" method="pen" text="vobis tribui, concedíque sentiam, perficiam profecto, vt hunc" type="straight"/>
+        <underline language="LA" method="pen" text="humanitatem informari solet, se ad scribendi studium contulit: primùm Antiochiae (nam ibi natus est, loco nobili, &amp; celebri quondam vrbe &amp; copiosa,              atque eruditissimis hominibus, liberalissimísque studiis affluenti) celeriter antecellere omnibus ingenii gloria co[n]tigit. pòst in caeteris Asiae partibus, cunctáeque Graeciae, sic eius aduentus celebrabatur,              vt famam ingenii expectatio hominis, expectatione[m], ipsius aduentus admiratióque" type="straight"/>
+        <underline language="LA" method="pen" text="Itaque hunc &amp; Tarentini, &amp; Rhegyni &amp; Neapolitani" type="straight"/>
+        <underline language="LA" method="pen" text="qui aliquid de ingeniis poterant" type="straight"/>
+        <underline language="LA" method="pen" text="quoru[m] alter res ad scribe[n]dum maximas" type="straight"/>
+        <underline language="LA" method="pen" text="alter cu[m] res gestas, tum etiam studium, atque" type="straight"/>
+        <underline language="LA" method="pen" text="Hîc tu tabulas" type="straight"/>
+        <underline language="LA" method="pen" text="Est ridiculu[m] ad ea quae habemus nihil dicere, quaerere quae habere no[n] possumus: &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="tacere, literaru[m memoria[m] flagitare" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">4</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">18</numeral>
+        
+        <drawing anchor_text="Archia[e] vita" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

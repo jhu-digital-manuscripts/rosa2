@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.020r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="luporu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Lupi
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Wolves.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="iuuene[m] Ebrancu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Expeditio in partes Galliar[um] p[ar] Ebrancum. 
+                    </marginalia_text>
+                    <person name="Ebrancus"/>
+                    <location name="Gaul"/>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        - Lessabes - [in?] his boke of Hennan speketh of this.
+                    </marginalia_text>
+                    <!-- NBW: Can't make out the title of the book or the author's name in greater detail yet -->
+                </position>
+            </language>
+            <translation>Expedition to parts of Gaul by Ebrancus.</translation>
+        </marginalia>
+            
+        <underline language="LA" method="pen" text="Siluius Aeneas" type="straight"/>
+        <underline language="LA" method="pen" text="iuuene[m] Ebrancu[m]" type="straight"/>        
+        <underline language="LA" method="pen" text="rabiosoru[m] luporu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Euristeus i[n] Lacedemonia" type="straight"/>
+        <underline language="LA" method="pen" text="q[uo]d quadraginta" type="straight"/>
+        <underline language="LA" method="pen" text="post Brutu[m] classes in p[ar]tes Galliaru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="c[a]ede viror[um] atq[ue]" type="straight"/>
+        
+    </annotation>
+</transcription>

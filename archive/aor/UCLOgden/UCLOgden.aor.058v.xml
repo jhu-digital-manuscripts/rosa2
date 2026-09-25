@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.058v.tif" pagination="100" reader="John Dee" signature="[i 2[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Exemplum de domino genitura[e] secundu[m] se[n]tentia[m] Julij Firmici et alor[um]
+                    </marginalia_text>
+                    <person name="Julius Firmicus Maternus"/>
+                </position>
+            </language>
+            <translation>
+                Example of the lord of a geniture according to the opinion of Julius Firmicus [Maternus} and others.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        At hoc minus est qua[m] esse dominos, cur igitur no[n] possu[n]t esse d[omi]ni? 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                And this is less than the lords, why therefore can they not be lords?
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        videtur repugna[n]tia dicere.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                It seems to say a contradiction.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Quonia[m] est co[n]traria eius conditioni 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Since it is opposite to its condition.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        particularia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Particular.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext"> 
+                    <marginalia_text>
+                        % si in eius domu[m] feratur
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                That is, if it is brought into this house.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="debemus, quod neq[ue] ☉ neq[ue] ☾, in aliqua genitura, domini efficiuntur, totius enim dominii dedignantur dominia sortiri. Si" type="straight"/>
+        <underline language="LA" method="pen" text="efficietur, habebunt tamen co[m]municationem in dominio ☉ &amp; ☾, si diurnae geniturae fines tenuerit ☉, nocturnae uero luna" type="straight"/>
+        <underline language="LA" method="pen" text="crescens ☾ decreuerit" type="straight"/>
+        <underline language="LA" method="pen" text="modicum sumentes cibum" type="straight"/>
+        <underline language="LA" method="pen" text="qui cibos assidue" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; sit diurnae geniturae locus" type="straight"/>
+        <underline language="LA" method="pen" text="Sed haec fortiora eru[n]t mala, si fuerit nocturna genitura, et si minuta luminibus ☾, ei dominiu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="quorum lumina repentinis caecita" type="straight"/>
+        <underline language="LA" method="pen" text="ista signoru[m], uel partiu[m] deiectione" type="straight"/>
+        <underline language="LA" method="pen" text="positum malignum sydus radiauerit, haec" type="straight"/>
+        <underline language="LA" method="pen" text="plurimum capientes cibum" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Sun" place="left_margin"/>
+        <symbol name="Mars" place="left_margin"/>
+        <symbol name="Mercury" place="left_margin"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- dominii dedignantur -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="sumentes"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="qui"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="haec"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

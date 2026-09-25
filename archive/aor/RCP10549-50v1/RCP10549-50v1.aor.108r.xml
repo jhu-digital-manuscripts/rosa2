@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.108r.tif" pagination="195" reader="John Dee" signature="nn.ii."/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        obuia[m] venire
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To meet halfway. 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="solum literis tradita, neque commemorata" type="straight"/>
+        <underline language="LA" method="pen" text="legem enim socioru[m] causa iussisse, &amp; vos ei legi custodes ac vindices praeposuisse" type="straight"/>
+        <underline language="LA" method="pen" text="aspicite, aspicite Iudices squalorem, sordésque socioru[m]. est Sthenius" type="straight"/>
+        <underline language="LA" method="pen" text="Thermitanus cum hoc capillo atque veste: domo sua tota expilata mentione[m] tuorum futorum non facit, sese ipsum abs te repetit" type="straight"/>
+        <underline language="LA" method="pen" text="multis virtutibus &amp; beneficiis floruit princeps" type="straight"/>
+        <underline language="LA" method="pen" text="vt quibus oculis crue[n]tas ceruices filii sui viderat, iisde[m] te condemnatu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="venit: &amp; ita me sua[m] salutem appellans, te suum carnifice[m] nominans, filii nomen implorans, mihi ad pedes misera iacuit, quasi ego excitare" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">18</numeral>
+        
+        <drawing anchor_text="legem enim socioru[m] causa iussisse, &amp; vos ei legi custodes ac vindices praeposuisse" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

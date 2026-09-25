@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.153v.tif" pagination="130" reader="Harvey" signature="[Iv]"/>	<!-- ABO 158left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Vir non est, qui non est vir omnium horarum; et apud
+						omnes homines vir, quantoscu[m]q[ue]
+						magnates; aut principes.
+						
+						<!-- CG: Missing text added. -->
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A man who is not a man for all hours is not a man: and a man among all men, however great magnates or princes.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Quid prosunt omnes artes, aut omnia
+						Ornamenta, nisi viro? Nihil habet, qui habet omnia, nisi
+						seipsum habeat.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>What is the usefulness of all arts, or all ornament, if not for a man? He who has everything, has nothing, unless he has himself.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Plus adhuc scientia[e] in esse: plus, plusq[ue] facultatis.
+						Ante omnia, et super Singula; Summa[e] Mnemonica[e].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>So far more knowledge in being: more and more skill. Before all things, and above singular things: the greatest remembrances.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Habere omnes Artes, philosophias, professiones; summa deniq[ue] arcana, et stratagemata;
+						mea est singularis professio. Et carum praxi, plurimum omnium
+						posse in Mundo, meus vnicus scopus. Nihil alioru[m] studioru[m],
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						aut actionum, huic repugnet scopo.
+						Nuga[e], omnia mundi
+						optata, pra[e] meo vnius pra[e]stantissimo scopo.
+						Intima omniu[m] scientiarum 
+						practica percallere;
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						eademq[ue] in mundo acerrimè extendere: nihil vanum, aut inefficax ad mittere:
+						mera operandi, negociandiq[ue] puncta prosequi: mea adhuc solius industria.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+			To have all arts, philosophies, and professions: in the end, the highest mysteria and stratagem is my singular profession. 
+			And my unique goal, affectionate of praxis, is to be able to do the majority of all things in the world.
+			No other pursuits or actions disagree with this goal. Trifles, all desires of the world, for my most outstanding goal of one thing. To thoroughly understand the inimate practices of all sciences;
+			and to extend these practices vigorously in the world: to put forward nothing vain or ineffective. To follow the pure points of acting and doing business: my industriousness is still the only thing.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="cipolla essere" type="straight"/>
+		<underline language="IT" method="pen" text="la cipolla, no[n] solamente" type="straight"/>
+		<underline language="IT" method="pen" text="Carmenide sogguinse" type="straight"/>
+		<underline language="IT" method="pen" text="la cipolla è molto" type="straight"/>
+		<underline language="IT" method="pen" text="De' baci crederei" type="straight"/>
+		<underline language="IT" method="pen" text="della battaglia" type="straight"/>
+		<underline language="IT" method="pen" text="la munificentia" type="straight"/>
+		<underline language="IT" method="pen" text="non" type="straight"/>
+		<underline language="IT" method="pen" text="soldato vecchio" type="straight"/>
+		<underline language="IT" method="pen" text="alquanti serui" type="straight"/>
+		<underline language="IT" method="pen" text="della ragia, si" type="straight"/>
+		<underline language="IT" method="pen" text="oh" type="straight"/>
+		<underline language="IT" method="pen" text="hauete schiaui" type="straight"/>
+		
+		<symbol name="Sun" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- secon -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- soggiun -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- man -->	
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Impe -->
+		
+    </annotation>
+</transcription>

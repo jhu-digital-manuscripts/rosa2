@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.121v.tif" pagination="232" reader="John Dee" signature="[V.ij.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Nec mora, consuetis adhibitis instrumentis missilibus scilicet" hand="Italian">
+            <language ident="LA">
+              <position book_orientation="0" place="left_margin">
+                  <marginalia_text>A[nn]o: 1379 tormenta</marginalia_text>
+              </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>(great ordinance)</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>in navibus</marginalia_text>
+                </position>
+            </language>
+            <translation>In the year of 1379 artillery (great ordinance) on ships.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quae vulgus gunnas vocant" type="straight"/>
+       
+        <mark method="pen" name="circumflex" place="intext"/> <!-- non enim  -->
+        <errata amendedtext="onerariquae" copytext="onerarequae" language="LA"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>88</illustrations>
+    <totalPages>148</totalPages>
+    <dimensions units="">
+        <width>-1</width>
+        <height>-1</height>
+    </dimensions>
+    <dates>
+        <startDate>1500</startDate>
+        <endDate>1600</endDate>
+    </dates>
+    <texts>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="148v" start="1r">148</pages>
+            <illustrations>88</illustrations>
+            <linesPerColumn>28</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Grenoble 608 Rés</commonName>
+            <dateLabel>16th century</dateLabel>
+            <type>manuscript</type>
+            <material>parchment</material>
+            <origin>France</origin>
+            <currentLocation>Grenoble, France</currentLocation>
+            <repository>Bibliothèque municipale de Grenoble</repository>
+            <shelfmark>Grenoble608</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Grenoble 608 Rés</commonName>
+            <dateLabel>16e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Grenoble</currentLocation>
+            <repository>Bibliothèque municipale de Grenoble</repository>
+            <shelfmark>Grenoble608</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

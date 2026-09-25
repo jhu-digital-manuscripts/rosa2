@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.124v.tif" pagination="248" reader="John Dee" signature="[q 4[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Homerica dispositione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Homerica dispositio qualis</marginalia_text> 
+                </position>
+            </language>
+            <translation>
+                Such a Homerican arrangement.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ratio causae cuiusq[ue] postulabit, ordinabuntur: uno, ut ego censeo, excepto, ne à potentißimis ad leuißima decrescat              oratio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vnu[m] locando in vitiu[m] evita[n]du[m]</marginalia_text> 
+                </position>
+            </language>
+            <translation>
+              One fault in placing must be avoided.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quidam executi sunt uerbosius, quibus placuit, proposita locorym communium materia, quo quaeq[ue] res modo dici posset, oste[n]dere," hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Non debent nec possu[n]t o[mn]iu[m] argume[n]toru[m] sedes ostendi.</marginalia_text>
+                </position>
+            </language>
+            <translation>The places of all arguments neither has to nor can be revealed.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="declamationes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Declamatio[n]es</marginalia_text> 
+                </position>
+            </language>
+            <translation>Declamations.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nam ut illi robur lacertos, barbamq[ue] ante omnia, &amp; alia, quae natura propria maribus dedit, parum existimant decora, quaeq[ue] fortia, si liceret, forent, ut dura molliunt:              ita nos habitum orationis ipsum uirilem, &amp; illam uim stricte, robusteq[ue] dicendi tenera quadam elocutionis cute operimus, &amp; dum leuia sint, ac nitida, quantum ualeant, nihil interesse arbitramur." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Similitudo.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Similarity.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ratio causae cuiusq[ue] postulabit, ordinabuntur: uno, ut ego censeo, excepto, ne à potentißimis ad leuißima decrescat              oratio" type="straight"/>
+        <underline language="LA" method="pen" text="confido, plurimas" type="straight"/>
+        <underline language="LA" method="pen" text="uelut praepilatis" type="straight"/>
+        <underline language="LA" method="pen" text="neruis carent" type="straight"/>
+        <underline language="LA" method="pen" text="uirilitate" type="straight"/>
+        <underline language="LA" method="pen" text="robuste'q[ue] dicendi tenera" type="straight"/>
+        <underline language="LA" method="pen" text="Sed mihi naturam intuenti, nemo nor uir spadone formosior erit" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.058r.tif" reader="Harvey" signature="Giii[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Comes Purl. l.I.obs[eruat]. 86.</marginalia_text>
+                    <person name="Jacopo di Porcia"/>
+                    <book title="The preceptes of warre"/>
+                </position>
+            </language>
+            <translation>Jacopo di Porcia, book 1, observation 86.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="L. Martius a knight of Rome; after the two Scipions were slayne" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Martius, Captayne after [the] 2 Scipioes death. See his valure and prowes, cap. 20.</marginalia_text>
+                    <person name="Lucius Marcius Septimus"/>
+                    <person name="Publius Cornelius Scipio"/> <!--father of Scipio Africanus-->
+                    <person name="Gnaeus Cornelius Scipio Calvus"/> <!--older brother of Scipio Africanus' father-->
+                    <emphasis method="pen" text="Martius" type="straight"/>
+                    <emphasis method="pen" text="after [the] 2 Scipioes" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Cedere qui nouit, prodesse aliquando ualebit.</marginalia_text>
+                    <emphasis method="pen" text="credere" type="straight"/>
+                </position>
+            </language>
+            <translation>He who learns to withdraw, will prevail to be useful at any time.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="gaue way, the" type="straight"/>
+        <underline language="EN" method="pen" text="L. Martius" type="straight"/>
+        <underline language="EN" method="pen" text="host chose" type="straight"/>
+        <underline language="EN" method="pen" text="their capitain" type="straight"/>
+        <underline language="EN" method="pen" text="after the two Scipions were slayne" type="straight"/>
+        <underline language="EN" method="pen" text="sell their lyues derely" type="straight"/>
+        <underline language="EN" method="pen" text="opened the wardes of his" type="straight"/>
+        <underline language="EN" method="pen" text="beinge sparpled abrode, he slewe them" type="straight"/>
+        <underline language="EN" method="pen" text="whom dispeire caused" type="straight"/>
+        <underline language="EN" method="pen" text="theym passe" type="straight"/>
+        <underline language="EN" method="pen" text="they fledde, he sette" type="straight"/>
+        <underline language="EN" method="pen" text="were enclosed of Anniball" type="straight"/>
+        <underline language="EN" method="pen" text="he opened the" type="straight"/>
+        <underline language="EN" method="pen" text="beatynge them downe as they" type="straight"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="tail"/>
+        
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="sell their lyues derely"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="beinge sparpled abrode, he slewe them"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="dispeire"/>
+        
+    </annotation>
+</transcription>

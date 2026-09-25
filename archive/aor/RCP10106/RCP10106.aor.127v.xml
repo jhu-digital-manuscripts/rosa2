@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.127v.tif" pagination="254" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Cicero pro Scuaro" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro scauro ...</marginalia_text>
+                    <book title="Pro Scauro"/>
+                </position>
+            </language>
+            <translation>Pro Scauro.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Vareno" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>pro Varreno.</marginalia_text>
+                    <book title="Pro Vareno"/>
+                </position>
+            </language>
+            <translation>Pro Vareno.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Co[m]mune" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Co[m]mune</marginalia_text>
+                </position>
+            </language>
+            <translation>Common.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="M. Cottam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>M[arcus] Cotta</marginalia_text>
+                    <person name="Marcus Aurelius Cotta"/>
+                </position>
+            </language>
+            <translation>Marcus Cotta.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Oppium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Oppius.</marginalia_text>
+                    <person name="Gaius Oppius"/>
+                </position>
+            </language>
+            <translation>Gaius Oppius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Caelio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Ca[e]lio</marginalia_text>
+                    <book title="Pro Caelio"/>
+                </position>
+            </language>
+            <translation>Pro Caelio.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nunquàm co[m]mitte[n]dum est, ut aduersarioru[m] dicta cum sua co[n]firmatione" type="straight"/>
+        <underline language="LA" method="pen" text="Aut pluribus propositionibus iunctis" type="straight"/>
+        <underline language="LA" method="pen" text="Quaedam co[n]tradictiones natura sunt singulae" type="straight"/>
+        <underline language="LA" method="pen" text="Co[m]mune qui prior dicit, contrarium facit" type="straight"/>
+        <underline language="LA" method="pen" text="Aliquando uerò praebet eius rei occasionem, minus considerata ex aduerso dicentis oratio: quod accidit praecipue cupidis sententiarum,              ut ducti occasione dicendi, no[n] respiciant, quid dixerint, dum locum praesentem, non totam causam intuentur" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

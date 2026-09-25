@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.112r.tif" pagination="213" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Iohannes Philpot" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Joannes Philpot.</marginalia_text>
+                    <person name="John Philpot"/>
+                </position>
+            </language>
+            <translation>John Philpot.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ta[n]dem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>tantam</marginalia_text>
+                </position>
+            </language>
+            <translation>So much.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ducis Lancastriae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Dux Lancastria[e]</marginalia_text>
+                    <person name="John of Gaunt"/>
+                </position>
+            </language>
+            <translation>John of Gaunt, Duke of Lancaster.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ducis Lancastriae &amp; c[a]eterorum dominorum defectum, ne dicam falsitatem qui" type="straight"/>
+        <underline language="LA" method="pen" text="regnum defendisse debuerant attentè considerans" type="double"/>
+        <underline language="LA" method="pen" text="oppressionibus condolens incolarum de propria pecunia conduxit mille armatos" type="straight"/>
+        <underline language="LA" method="pen" text="qui &amp; pr[a]edicto Iohanni Mercer eriperent naues" type="straight"/>
+        <underline language="LA" method="pen" text="bona quae latrocinando ceperat" type="straight"/>
+        <underline language="LA" method="pen" text="regnum Angliae" type="straight"/>
+        <underline language="LA" method="pen" text="talibus incursibus tuerentur" type="straight"/>
+        <underline language="LA" method="pen" text="ta[n]dem" type="straight"/>
+        <underline language="LA" method="pen" text="nostris verò proceribus &amp; militia quae dudum conducta fuerat, diceba[n]tur probosa" type="straight"/>
+        <underline language="LA" method="pen" text="co[m]mune vulgus solet inferre" type="straight"/>
+        <underline language="LA" method="pen" text="per paucorum" type="straight"/>
+        <underline language="LA" method="pen" text="Barones &amp; comites" type="straight"/>
+        <underline language="LA" method="pen" text="procerum aduerjus" type="straight"/>
+        <underline language="LA" method="pen" text="agitati, illud aegrè fereba[n]t" type="double"/>
+        <underline language="LA" method="pen" text="qua[m]uis se reos agnoscerent" type="straight"/>
+        <underline language="LA" method="pen" text="culpabiles" type="straight"/>
+        <underline language="LA" method="pen" text="foret inertia manifesta, tamen eidem Iohanni Philpot non solùm occultè insidiari, sed publicè improperari c[a]eperunt" type="straight"/>
+        <underline language="LA" method="pen" text="licere sibi talia facere sine consilio" type="straight"/>
+        <underline language="LA" method="pen" text="acsi non licuisset benefacere regi vel regno sine consilio comitum &amp; baronum" type="straight"/>
+        <underline language="LA" method="pen" text="comiti de Stafford" type="straight"/>
+        <underline language="LA" method="pen" text="vel collegis tuis surriperem" type="straight"/>
+        <underline language="LA" method="pen" text="quae iam vestra desidia de nobilissimo regno domina quoque" type="straight"/>
+        <underline language="LA" method="pen" text="tantam deuoluta miseriam" type="straight"/>
+        <underline language="LA" method="pen" text="cuiuslibet vilisimae gentis direptioni pateat" type="straight"/>
+        <underline language="LA" method="pen" text="cum sit nullus ex vobis qui ad desensionem eius manus apponat" type="straight"/>
+        <underline language="LA" method="pen" text="Ego me meáque exposui pro propri[a]e gentis saluatione" type="straight"/>
+        <underline language="LA" method="pen" text="patriae liberatione" type="straight"/>
+        <underline language="LA" method="pen" text="nescitur quibus detentus impedimentis" type="straight"/>
+        <underline language="LA" method="pen" text="pertinebat regi Nauariae" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- falsitatem, qui -->
+        <mark method="pen" name="comma" place="intext"/> <!-- considerans, &amp; -->
+        <mark method="pen" name="comma" place="intext"/> <!-- armatos, qui -->
+        <mark method="pen" name="comma" place="intext"/> <!-- miseriam, vt -->
+        <mark method="pen" name="comma" place="intext"/> <!-- apponat-->
+        <mark method="pen" name="comma" place="intext"/> <!-- bonum, mihiqu&egrave; -->
+        <mark method="pen" name="comma" place="intext"/> <!-- regno, dominia -->
+        <mark method="pen" name="circumflex" place="intext"/> <!-- meaque -->
+        <mark method="pen" name="circumflex" place="intext"/> <!-- patriaeque -->
+        
+        <errata amendedtext="tantam" copytext="ta[n]dem" language="LA"/>
+        <errata amendedtext="praenoscere" copytext="praenoscerit" language="LA"/>
+        <errata amendedtext="domina" copytext="dominia" language="LA"/>
+        <errata amendedtext="experiri" copytext="experire" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="head" type="scientific_instrument"/> <!-- MB. Update schema with new drawing type for anchor symbol. -->
+        <drawing anchor_text="naues" book_orientation="0" method="pen" place="head" type="scientific_instrument"/> <!-- M.B: Update schema with new drawing type for boat. -->
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.063v.tif" reader="Harvey" signature="[O.i.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="with presumption" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        The Spaniard audacious, &amp; pra[e]sumptuous.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="a certein malapertnesse" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Mallipartnes
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="declare a certain modesty" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Ciuilis confidentia, hodiè multò Valentior, quàm modestia.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Civil confidence, nowadays much more vigorous than modest.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Fidutia, et Hecate faciunt diuites. Hesiodus. <!--JG: Not sure if Harvey refers to the goddess-->
+                    </marginalia_text>
+                    <person name="Hecate"/>
+                    <person name="Hesiod"/>
+                </position>
+            </language>
+            <translation>
+                Confidence and Hecate create the rich. Hesiod.
+            </translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="with presumption" type="straight"/>
+        <underline language="EN" method="pen" text="promotion with modestie" type="straight"/>
+        <underline language="EN" method="pen" text="you respite to bethink your self" type="straight"/>
+        <underline language="EN" method="pen" text="French Court" type="straight"/>
+        <underline language="EN" method="pen" text="a certein malapertnesse" type="straight"/>
+        <underline language="EN" method="pen" text="the king himselfe" type="straight"/>
+        <underline language="EN" method="pen" text="a certein libertie and familiaritie without ceremonies" type="straight"/>
+        <underline language="EN" method="pen" text="natural vnto" type="straight"/>
+        <underline language="EN" method="pen" text="and ieste" type="straight"/>
+        <underline language="EN" method="pen" text="suche as be malapert" type="straight"/>
+        <underline language="EN" method="pen" text="any prowesse or modesty" type="straight"/>
+        <underline language="EN" method="pen" text="marke [the] Spaniardes" type="straight"/>
+        <underline language="EN" method="pen" text="seme the very maisters of Courtly facions" type="straight"/>
+        <underline language="EN" method="pen" text="with women" type="straight"/>
+        <underline language="EN" method="pen" text="great men are not moste malapert" type="straight"/>
+        <underline language="EN" method="pen" text="the fyrste" type="straight"/>
+        <underline language="EN" method="pen" text="declare a certein modesty" type="straight"/>
+        <underline language="EN" method="pen" text="be wise in so" type="straight"/>
+        <underline language="EN" method="pen" text="the great" type="straight"/>
+        <underline language="EN" method="pen" text="time do al fauour suche as are of these condicions" type="straight"/>
+        <underline language="EN" method="pen" text="the great men of our" type="straight"/>
+        <underline language="EN" method="pen" text="modesty: the" type="straight"/>
+        <underline language="EN" method="pen" text="whan it is accompanied with great prowesse it maketh" type="straight"/>
+        <underline language="EN" method="pen" text="muche esteamed" type="straight"/>
+        <underline language="EN" method="pen" text="woorthye deedes speake at large" type="straight"/>
+        <underline language="EN" method="pen" text="much more to be wondred" type="straight"/>
+        <underline language="EN" method="pen" text="accompanied with presumption" type="straight"/>
+        <underline language="EN" method="pen" text="many Spaniardes there" type="straight"/>
+        <underline language="EN" method="pen" text="malapertnesse" type="straight"/>
+        <underline language="EN" method="pen" text="best esteamed, for the moste part are" type="straight"/>
+        <underline language="EN" method="pen" text="modest" type="straight"/>
+        <underline language="EN" method="pen" text="so cold" type="straight"/>
+        <underline language="EN" method="pen" text="they flee the company" type="straight"/>
+        <underline language="EN" method="pen" text="The frenche gentlemen without ceremonies" type="straight"/>
+        <underline language="EN" method="pen" text="Spaniardes" type="straight"/>
+        <underline language="EN" method="pen" text="Many spaniardes" type="straight"/>
+        <underline language="EN" method="pen" text="sawcye" type="straight"/>
+        
+        <symbol language="EN" name="SS" place="left_margin" text="with presumption"/>
+        <symbol language="EN" name="SS" place="left_margin" text="a certein malapertnesse"/>
+        <symbol name="SS" place="left_margin"/>
+        <symbol language="EN" name="SS" place="left_margin" text="whan it is accompanied with great prowesse it maketh"/>
+        <symbol language="EN" name="SS" place="left_margin" text="best esteamed, for the moste part are"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="with presumption"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="Spaniardes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="Many spaniardes"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!-- none, and -->
+        <mark method="pen" name="dot" place="intext"/> <!-- malapertnesse, and-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="a certein libertie and familiaritie without ceremonies"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="seme the very maisters of Courtly facions"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="great men are not moste malapert"/>
+        <mark method="pen" name="dot" place="intext"/> <!--malapert, & -->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="the great"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="time do al fauour suche as are of these condicions"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- rashnes, I -->
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- modest. Agayne -->
+        
+    </annotation>
+</transcription>

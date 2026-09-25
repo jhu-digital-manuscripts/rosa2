@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd"> 
+    <page filename="BLC122bb35.059r.tif" pagination="59" reader="John Dee" signature="Hii"/> 
+    <annotation>
+        
+        <marginalia hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>J D. cu[m] et ille scilicet qui tum et alter
+                    </marginalia_text>
+                    <person name="John Dee"/>
+                </position>
+            </language>
+            <translation>John Dee. Even that which is obviously it as well as even the other.</translation> <!-- FSF: to be checked --> <!--JG: This is perplexing to me, need to get back to it later-->
+        </marginalia>
+        
+       <underline language="LA" method="pen" text="et eius quod" type="straight"/>
+        <underline language="LA" method="pen" text="et eius" type="straight"/>
+        
+    </annotation>
+</transcription>

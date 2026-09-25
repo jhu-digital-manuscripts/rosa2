@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.020r.tif" reader="John Dee" signature="Dij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="phisici" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Physici
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Physicists.    
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tabulis sinuu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Tabula[e] sinuum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Tables of curves.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="p[er]spectiue pisani" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Perspectíua Pisani
+                    </marginalia_text>
+                    <person name="Fibonacci"/>
+                </position>
+            </language>
+            <translation>
+                Perspectives of Fibonacci.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="scientie cui tu[n]c subalt[er]nat[ur]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Subalternata[e] scientia[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Subaltern sciences.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="p[er]spectiuus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Perspectiuus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Perspective.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ergo in talibus aliquid est quod est pure geometricum et aliquid q[uo]d est pure p[er]spectiuu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        pure {geometricu[m] p[er]spectiuu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Pure geometry or perspective.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        geometri[a]e vt miscetur p[er]spectiue in vsa geom.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                <!-- FSF: not sure -->  <!-- DO: Not sure either; are these two separate notes? 'Geometries as combined' for the first part? --> <!-- FSF: maybe: Geometries as combined perspectively in the used geometry? -->
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ad tale[m] materia[m] applicatis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Applicatio ad materiam
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Application to the material.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Line[a]e co[n]sideratio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Consideration of the line.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Media et Vltima debet esse de eode[m] genere.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The middle and the last should be of the same kind.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="demo[n]stratu[m] qua[m]uis phisici" type="straight"/>
+        <underline language="LA" method="pen" text="tabulis sinuu[m] quantu[m] ad corda[m] [et] arcu[m] Cu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="na[m] c[on]clusio si[mi]le t[em]p[or]e nata c[on]stat cu[m] minore" type="straight"/>
+        <underline language="LA" method="pen" text="In hijs aut[em] que subalt[er]nant[ur] no[n] illicitu[m] est hoc co[n]tingere" type="straight"/>
+        <underline language="LA" method="pen" text="s[e]c[un]di p[er]spectiue pisani est eam" type="straight"/>
+        <underline language="LA" method="pen" text="armonica v[e]l algebra demo[n]strare" type="straight"/> 
+        <underline language="LA" method="pen" text="scientie cui tu[n]c" type="straight"/>
+        <underline language="LA" method="pen" text="q[ua]re subalt[er]nans demo[n]strat huiusmo[d]i ratio[n]es p[ro]pter quid. subalternata aut[em] quia est. [et]" type="straight"/>
+        <underline language="LA" method="pen" text="subalt[er]nu[m] q[ua]si ide[m] et non" type="straight"/>
+        <underline language="LA" method="pen" text="necesse est mediu[m] esse in eade[m] p[ro]ximitate" type="straight"/>
+        <underline language="LA" method="pen" text="vt si p[er]spectiuus probare velit hanc" type="straight"/>
+        <underline language="LA" method="pen" text="c[on]siderat p[er]spectiu[us] no[n] p[er] mediu[m] geometricu[m]. s[ed] p[er] mediu[m] p[ro]priu[m] vt quia sic imp[ri]mit.             de q[ui]bus imp[re]ssionibus oculor[um] [et] rer[um] obiectaru[m] no[n] habet demo[n]strare geometra" type="straight"/>
+        <underline language="LA" method="pen" text="aliquid est q[uo]d est pure p[er]spectiuu[m] aliquid" type="straight"/>
+        <underline language="LA" method="pen" text="hoc puru[m] est geometricu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="p[ro]bandu[m] hanc imp[re]ssione[m] esse tale[m] p[er] similitudine[m] anguloru[m] no[n] est ali[u]d              q[uam] adaptare hoc q[uo]d determi[n]atu[m] est in geometrica ad materia[m] specialem vt ad oculu[m] de quo c[on]siderat p[er]spectiuus. Ha[n]c" type="straight"/>
+        <underline language="LA" method="pen" text="facere no[n]" type="straight"/>
+        <underline language="LA" method="pen" text="descendit in" type="straight"/>
+        <underline language="LA" method="pen" text="ergo scie[n]tiam subalt[er]nata[m] vti p[ro]positionib[us] subalt[er]natis no[n] est aliud q[uam] p[ro]positio[n]es illas ad speciales materias applicacare. tunc" type="straight"/>
+        <underline language="LA" method="pen" text="nec est linee visualis vt visualis est. sed est magis linee s[e]c[un]d[u]m abstractione[m] sumpte. S[ed]" type="straight"/>
+        <underline language="LA" method="pen" text="passio" type="straight"/>
+        <underline language="LA" method="pen" text="[et] subiectu[m]" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- pisani est -->
+        
+    </annotation>
+</transcription>

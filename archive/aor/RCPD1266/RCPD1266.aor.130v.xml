@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.130v.tif" pagination="246" reader="John Dee" signature="[x.iij.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Persas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Persa[e]</marginalia_text>
+                    <location name="Persia"/>
+                </position>
+            </language>
+            <translation>Persians.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Elymaeos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Elyma[e]i.</marginalia_text>
+                    <location name="Elymais"/>
+                </position>
+            </language>
+            <translation>Elymais people.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Taurum montem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Mons Taurus</marginalia_text>
+                    <location name="Taurus Mountains"/>
+                </position>
+            </language>
+            <translation>Taurus Mountain.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aua" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aua.</marginalia_text>
+                    <location name="Ivah"/>
+                </position>
+            </language>
+            <translation>Ivah.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Dionysij Halicarnassaei" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dionysius Halicarnasseus.</marginalia_text>
+                    <person name="Dionysius of Halicarnassus"/>
+                </position>
+            </language>
+            <translation>Dionysius of Halicarnassus</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Asia quidem penè tota potiti sunt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Persa[e] pene Asia[e] toti imperita[n]t</marginalia_text>
+                    <location name="Persia"/>
+                    <location name="Asia"/>
+                </position>
+            </language>
+            <translation>The Persians rule nearly the whole of Asia.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="Ælam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head"> 
+                    <marginalia_text>Ælam</marginalia_text>
+                    <location name="Elam"/>
+                </position>
+            </language>
+            <translation>Elam.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fabulos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>fabulosa</marginalia_text>
+                </position>
+            </language>
+            <translation>Fabled things.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in regione Ælam" type="straight"/>
+        <underline language="LA" method="pen" text="in Sosan castro, quod est in Ælam regione" type="straight"/>
+        <underline language="LA" method="pen" text="detracto" type="straight"/>
+        <underline language="LA" method="pen" text="dixerunt Αἰλὰμ" type="straight"/>  
+        <underline language="LA" method="pen" text="voca[n]t Elymaeos" type="straight"/>
+        <underline language="LA" method="pen" text="terram Elymaidem" type="straight"/>
+        <underline language="LA" method="pen" text="distinguentes à Perside" type="straight"/>
+        <underline language="LA" method="pen" text="sua ratione" type="straight"/>
+        <underline language="LA" method="pen" text="verendum est" type="straight"/>
+        <underline language="LA" method="pen" text="mentiti fuerint impudentius quàm decuerit" type="straight"/>
+        <underline language="LA" method="pen" text="doctos, plus fidei iis tribuere, quàm" type="straight"/>
+        <underline language="LA" method="pen" text="ordinis historicorum autoritate coarguere possumus" type="straight"/>
+        <underline language="LA" method="pen" text="montem" type="straight"/>
+        <underline language="LA" method="pen" text="rex Emath" type="straight"/>
+        <underline id="RCPD126.6:270:u0001" language="LA" method="pen" text="Aua" type="straight"/>
+        <underline id="RCPD126.6:270:u0002" language="LA" method="pen" text="excedunt fines Syriae" type="straight"/>
+        <underline language="LA" method="pen" text="Dionysij Halicarnassaei" type="straight"/>
+        <underline language="LA" method="pen" text="de Assyrio imperio" type="straight"/>
+        <underline language="LA" method="pen" text="retro ad fabulosa vsque pertingens" type="straight"/>
+        <underline language="LA" method="pen" text="Persae porrò Medis deuictis, Asia quidem penè tota potiti sunt. haec Dionysius" type="straight"/>
+        <underline language="LA" method="pen" text="Arphaxad" type="straight"/>
+        <underline language="LA" method="pen" text="Arphaxadaei" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        
+        <physical_link>
+            <marginal_annotation idref="RCPD126.6:270:u0001"/> 
+            <marginal_annotation idref="RCPD126.6:270:u0002"/>
+            <relation from="RCPD126.6:270:u0001" to="RCPD126.6:270:u0001" type="undirected"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

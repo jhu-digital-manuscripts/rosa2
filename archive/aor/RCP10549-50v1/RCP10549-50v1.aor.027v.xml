@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.027v.tif" pagination="38" reader="John Dee" signature="[cc.iii.[v]]"/>
+    <annotation> 
+        
+        <marginalia anchor_text="etiam qtque etiam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        etia[m] atq[ue] etia[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Again and again.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="liberalissimus munifice[n]tissimúsque" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        liberaliss[imus] munifice[n]tiss[imus]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Most liberal, most generous.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pecunia immanis, haec paruula: illa honesta, haec sordida: illa iucunda, haec acerba: illa propria" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        pecunia {sordida immanis peruula honesta iucu[n]da acerba propria infinita
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A sum of money, sordid, immense, honourably acquired, agreeable, pleasant, distressing, infinite.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="repudiarit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        repudiare reijcere recusare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To repudiate, to reject, to refuse.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="damno, dolore, incommodo, calamitate, iniuria" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        damnum dolor inco[m]modu[m] calamitas iniuria
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Loss, vexation, inconvenience, disaster, unjustice.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        a[e]gritudo criminis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The affliction of a crime.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="probus improbu[m], pudens impudente[m], periurum castus, calidum imperitus, liberalis" type="straight"/>
+        <underline language="LA" method="pen" text="exorditur magna cu[m] expectione veteris histrionis" type="straight"/>
+        <underline language="LA" method="pen" text="est scilicet homo liberalis, &amp; dissolutus, &amp; bonitate affluens" type="straight"/>
+        <underline language="LA" method="pen" text="Quoniam ille hic co[n]stitit paulisper: mihi quoque necesse est paulum co[m]morari" type="straight"/>
+        
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">19</numeral>
+        <numeral place="left_margin">11.</numeral>
+        
+    </annotation>
+</transcription>

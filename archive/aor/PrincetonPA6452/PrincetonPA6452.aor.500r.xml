@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.500r.tif" reader="Harvey" signature="M4[r]"/>    
+    
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text> 
+                        LL. Consulares.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Consular laws.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text> 
+                        s[upr]a.
+                    </marginalia_text>
+                    <internal_ref text="s[upr]a">
+                        <target ref="PrincetonPA6452:00000169" text="[147]"/>
+                        <target ref="PrincetonPA6452:00000970" text="[I4v]"/>
+                        <target ref="PrincetonPA6452:00000984" text="[K5v]"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                [See] above.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pleraq[ue] acies fusa, &amp; in fugam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text> 
+                        s[upr]a.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                [see] above.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mendacium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text> 
+                        Mendacium.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The lie.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text> 
+                        Nunc ad selectissimas annotationes Glareani, et aliorum Interpretum. Nam mihi ante illos omnes Velcurio.
+                    </marginalia_text>
+                <person name="Heinrich Glarean"/>
+                <person name="Johannes Velcurio"/>
+                </position>
+            </language>
+            <translation>
+                Now to very select notes of Glareanus and other interpreters. For I prefer above all Velcurio.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text> 
+                        Huc adde politicos Aphorismos Dana[e]i; novissimè editos.
+                    </marginalia_text>
+                <person name="Lambert Daneau"/>
+                    <book title="Politicorum aphorismorum silva"/>
+                </position>
+            </language>
+            <translation>
+                To this add the political aphorisms of Daneau, published very recently.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text> 
+                        s[upr]a.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                [see] above.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text> 
+                        obedientia subditorum.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Obedience of the subjects.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        (Metaphora[e] Livij singulares.)
+                    </marginalia_text>
+                <person name="Livy"/>
+                </position>
+            </language>
+            <translation>
+                Remarkable metaphors of Livy.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        Velcurionis historica[e], politica[e]q[ue] annotationes, Dana[e]i aphorismis illustrata[e]; mihi antè Machiauelli discursus Liuianos: 
+                        ad peritius, solertiusq[ue] singularum actionum iudicium.
+                    </marginalia_text>
+                    <person name="Johannes Velcurio"/>
+                    <person name="Lambert Daneau"/>
+                    <person name="Machiavelli"/>
+                    <person name="Livy"/>
+                </position>
+            </language>
+            <translation>
+                For me Velcurio’s historical and political commentary, illuminated by Daneau’s aphorisms, come before Machiavelli’s discourses on Livy, 
+                for judging individual actions in a more skilful and intelligent way.
+            </translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="extra urbem" type="straight"/>
+        <underline language="LA" method="pen" text="campo Martio" type="straight"/>
+        <underline language="LA" method="pen" text="magna comitia" type="straight"/>
+        <underline language="LA" method="pen" text="quorum indicendorum" type="straight"/>
+        <underline language="LA" method="pen" text="magistratum praeter Consules, uel Dictatorem" type="straight"/>
+        <underline language="LA" method="pen" text="Praetorem urbanum" type="straight"/>
+        <underline language="LA" method="pen" text="minores quoq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="curiata comitia" type="straight"/>
+        <underline language="LA" method="pen" text="Tribuniplebis &amp; Augures, ut Pontifices" type="straight"/>
+        <underline language="LA" method="pen" text="Centuriatis uerò" type="straight"/>
+        <underline language="LA" method="pen" text="Consules" type="straight"/>
+        <underline language="LA" method="pen" text="Praetores" type="straight"/>
+        <underline language="LA" method="pen" text="Pontifices" type="straight"/>
+        <underline language="LA" method="pen" text="Aediles, Qu[a]estores" type="straight"/>
+        <underline language="LA" method="pen" text="Censores, alijq[ue] maiores magistratus" type="straight"/>
+        <underline language="LA" method="pen" text="praerogatiuam classium" type="straight"/>
+        <underline language="LA" method="pen" text="Tributa comitia" type="straight"/>
+        <underline language="LA" method="pen" text="descriptae sunt tribus" type="straight"/>
+        <underline language="LA" method="pen" text="tantu[m] quatuor locales effent" type="straight"/>
+        <underline language="LA" method="pen" text="numerus tribuum qui &amp; curiarum effet" type="straight"/>
+        <underline language="LA" method="pen" text="trigintaquinq[ue] tribus numerare[n]tur, sicut" type="straight"/>
+        <underline language="LA" method="pen" text="trigintaquinque curi[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="sicut curi[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="tribus" type="straight"/>
+        <underline language="LA" method="pen" text="tributa comitia" type="straight"/>
+        <underline language="LA" method="pen" text="curiata habebantur" type="straight"/>
+        <underline language="LA" method="pen" text="ex unaquaq[ue] tribu suffragium" type="straight"/>
+        <underline language="LA" method="pen" text="capite ciuis" type="straight"/>
+        <underline language="LA" method="pen" text="Ciceronis, planè eadem" type="straight"/>
+        <underline language="LA" method="pen" text="comitia curiata" type="straight"/>
+        <underline language="LA" method="pen" text="tributa" type="straight"/>
+        <underline language="LA" method="pen" text="Tribunitia uerò" type="straight"/>
+        <underline language="LA" method="pen" text="tribuniplebis tantum uocabant" type="straight"/>
+        <underline language="LA" method="pen" text="sola plebe" type="straight"/>
+        <underline language="LA" method="pen" text="praeteritis nobilibus" type="straight"/>
+        <underline language="LA" method="pen" text="plebiscita" type="straight"/>
+        <underline language="LA" method="pen" text="plebeij magistratus" type="straight"/>
+        <underline language="LA" method="pen" text="repetere" type="straight"/>
+        <underline language="LA" method="pen" text="istorum discrimina" type="straight"/>
+        <underline language="LA" method="pen" text="ualde referat in historijs" type="straight"/>
+        <underline language="LA" method="pen" text="tribunitia" type="straight"/>
+        <underline language="LA" method="pen" text="tributa comitia" type="straight"/>
+        <underline language="LA" method="pen" text="Militem magis decet arma" type="straight"/>
+        <underline language="LA" method="pen" text="quàm leges" type="straight"/>
+        <underline language="LA" method="pen" text="manu, quàm uerbis, pugnare" type="straight"/>
+        <underline language="LA" method="pen" text="eloquentia" type="straight"/>
+        <underline language="LA" method="pen" text="imbellis, militiaq[ue]; illiterata." type="straight"/>
+        <underline language="LA" method="pen" text="Ventosa in lingua" type="straight"/>
+        <underline language="LA" method="pen" text="pedibusq[ue] fugacibus" type="straight"/>
+        <underline language="LA" method="pen" text="hac thesi" type="straight"/>
+        <underline language="LA" method="pen" text="concionem C. Marij apud" type="straight"/>
+        <underline language="LA" method="pen" text="Tribuniplebis" type="straight"/>
+        <underline language="LA" method="pen" text="coercendi aduersum nobilies &amp; patricios" type="straight"/>
+        <underline language="LA" method="pen" text="tantum in plebeios" type="straight"/>
+        <underline language="LA" method="pen" text="aucta ipsorum potestas" type="straight"/>
+        <underline language="LA" method="pen" text="coercitionem quoq[ue] exercerent in nobiles" type="straight"/>
+        <underline language="LA" method="pen" text="L. Sylla" type="straight"/>
+        <underline language="LA" method="pen" text="tribunitium ualde imminuit" type="straight"/>
+        <underline language="LA" method="pen" text="Pompeius" type="straight"/>
+        <underline language="LA" method="pen" text="exercitium libertatis Romanae" type="straight"/>
+        <underline language="LA" method="pen" text="imperij uim omnem" type="straight"/>
+        <underline language="LA" method="pen" text="obedientium" type="straight"/>
+        <underline language="LA" method="pen" text="neq[ue] satis tutam maiestatem" type="straight"/>
+        <underline language="LA" method="pen" text="sine uiribus obsequentium" type="straight"/>
+        <underline language="LA" method="pen" text="mirabiliter saepe" type="straight"/>
+        <underline language="LA" method="pen" text="magistratus contra inobedientiam &amp; uim" type="straight"/>
+        <underline language="LA" method="pen" text="reges &amp; magistratus" type="straight"/>
+        <underline language="LA" method="pen" text="peculiari curae sunt Deo" type="straight"/>
+        <underline language="LA" method="pen" text="tanquam alumni sunt deorum" type="straight"/>
+        <underline language="LA" method="pen" text="hoc Homericum" type="straight"/>
+        <underline language="LA" method="pen" text="sacris literis" type="straight"/>
+        <underline language="LA" method="pen" text="magistratum esse" type="straight"/>
+        <underline language="LA" method="pen" text="uicem Dei in" type="straight"/>
+        <underline language="LA" method="pen" text="ordinationem, suosq[ue] uicarios" type="straight"/>
+        <underline language="LA" method="pen" text="Miles desertor" type="straight"/>
+        <underline language="LA" method="pen" text="suum, ordinem" type="straight"/>
+        <underline language="LA" method="pen" text="contra" type="straight"/>
+        <underline language="LA" method="pen" text="contra disciplinam militarem." type="straight"/>
+        <underline language="LA" method="pen" text="Poena" type="straight"/>
+        <underline language="LA" method="pen" text="uerò desertoris" type="straight"/>
+        <underline language="LA" method="pen" text="solum infamia" type="straight"/>
+        <underline language="LA" method="pen" text="capitale supplicium" type="straight"/>
+        <underline language="LA" method="pen" text="pleraq[ue] acies fusa, &amp; in fugam" type="straight"/>
+        <underline language="LA" method="pen" text="piculare non est" type="straight"/>
+        <underline language="LA" method="pen" text="Virium fugientem" type="straight"/>
+        <underline language="LA" method="pen" text="pugnaturum cenuò" type="straight"/>
+        <underline language="LA" method="pen" text="aequitas suadet, paucos è multis luere" type="straight"/>
+        <underline language="LA" method="pen" text="ut ita paucorum exemplo" type="straight"/>
+        <underline language="LA" method="pen" text="plures deterreantur" type="straight"/>
+        <underline language="LA" method="pen" text="[a]equitati aliquid" type="straight"/>
+        <underline language="LA" method="pen" text="confilijs submoueri non debent" type="straight"/>
+        <underline language="LA" method="pen" text="quàm submotos" type="straight"/>
+        <underline language="LA" method="pen" text="Honorij imperatoris" type="straight"/>
+        <underline language="LA" method="pen" text="curasset Aetium" type="straight"/>
+        <underline language="LA" method="pen" text="uiruin iuxtà" type="straight"/>
+        <underline language="LA" method="pen" text="caede Aetij uideretur" type="straight"/>
+        <underline language="LA" method="pen" text="quòd interfecto Aetio" type="straight"/>
+        <underline language="LA" method="pen" text="dextram tuam sinistra tibi manu" type="straight"/>
+        <underline language="LA" method="pen" text="Rei perclitantes" type="straight"/>
+        <underline language="LA" method="pen" text="pullis &amp; atris uestibus" type="straight"/>
+        <underline language="LA" method="pen" text="ad mistericordia[m] mouendam" type="straight"/>
+        <underline language="LA" method="pen" text="humilitas fortem" type="straight"/>
+        <underline language="LA" method="pen" text="innocentem" type="straight"/>
+        <underline language="LA" method="pen" text="Mortui suis" type="straight"/>
+        <underline language="LA" method="pen" text="saeuire in mortuos immane est" type="straight"/>
+        <underline language="LA" method="pen" text="Solonis humanissima" type="straight"/>
+        <underline language="LA" method="pen" text="capite plecti" type="straight"/>
+        <underline language="LA" method="pen" text="saltem infames esse eos" type="straight"/>
+        <underline language="LA" method="pen" text="malè obloquerentur mortuis" type="straight"/>
+        <underline language="LA" method="pen" text="Mendacium triplex est" type="straight"/>
+        <underline language="LA" method="pen" text="iocosum" type="straight"/>
+        <underline language="LA" method="pen" text="officiosum" type="straight"/>
+        <underline language="LA" method="pen" text="perniciosum" type="straight"/>
+        <underline language="LA" method="pen" text="Iocosum" type="straight"/>
+        <underline language="LA" method="pen" text="Officiosum, cum" type="straight"/>
+        <underline language="LA" method="pen" text="poetae uera falsis permiscent, &amp; falsa" type="straight"/>
+        <underline language="LA" method="pen" text="oblectent &amp; doceant lectres suos ista" type="straight"/>
+        <underline language="LA" method="pen" text="amoenitate, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="illecebris minimè otiosis." type="straight"/>
+        <underline language="LA" method="pen" text="Nam hae nug[a]e seria ducunt." type="straight"/>
+        <underline language="LA" method="pen" text="Sic bonus uiir quoq[ue] officiose" type="straight"/>
+        <underline language="LA" method="pen" text="inde commoditas alijs obueniat, quàm" type="straight"/>
+        <underline language="LA" method="pen" text="dicendo uera." type="straight"/>
+        <underline language="LA" method="pen" text="dissimulare enim uerum aliquando" type="straight"/>
+        <underline language="LA" method="pen" text="ualde utile est &amp; bonestum" type="straight"/>
+        <underline language="LA" method="pen" text="alienae utilitatis gratia fit." type="straight"/>
+        <underline language="LA" method="pen" text="apud Fabium in quarto" type="straight"/>
+        <underline language="LA" method="pen" text="Perniciosum uerò" type="straight"/>
+        <underline language="LA" method="pen" text="aliquis sui commodi gratia" type="straight"/>
+        <underline language="LA" method="pen" text="neminem decet bonum unquam." type="straight"/>
+        <underline language="LA" method="pen" text="Signa castrensia" type="straight"/>
+        <underline language="LA" method="pen" text="muta" type="straight"/>
+        <underline language="LA" method="pen" text="uocalia" type="straight"/>
+        <underline language="LA" method="pen" text="sunt media" type="straight"/>
+        <underline language="LA" method="pen" text="ex omni amborum libraroru[m] historia Liuiana" type="straight"/>
+        <underline language="LA" method="pen" text="plura, imò plurima possent annotari" type="straight"/>
+        <underline language="LA" method="pen" text="priuatae meditationi" type="straight"/>
+        <underline language="LA" method="pen" text="omnia proponantur" type="straight"/>
+        <underline language="LA" method="pen" text="fastidium inde" type="straight"/>
+        <underline language="LA" method="pen" text="TRANSLATIONES" type="straight"/>
+        <underline language="LA" method="pen" text="Praecipitiq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="ia[m] die" type="straight"/>
+        <underline language="LA" method="pen" text="Certamine" type="straight"/>
+        <underline language="LA" method="pen" text="exudandu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="senatorum conoquere" type="straight"/>
+        <underline language="LA" method="pen" text="senescit pugna" type="straight"/>
+        <underline language="LA" method="pen" text="Differendo" type="straight"/>
+        <underline language="LA" method="pen" text="elanguit res" type="straight"/>
+        <underline language="LA" method="pen" text="uegetum ingenium" type="straight"/>
+        <underline language="LA" method="pen" text="in uiuido pectore" type="straight"/>
+        <underline language="LA" method="pen" text="uigebat" type="straight"/>
+        <underline language="LA" method="pen" text="uirebatq[ue] integris" type="straight"/>
+        <underline language="LA" method="pen" text="principes occultè" type="straight"/>
+        <underline language="LA" method="pen" text="Romanum coqueba[n]t bellum" type="straight"/>
+        <underline language="LA" method="pen" text="Reciprocare animam" type="straight"/>
+        <underline language="LA" method="pen" text="ad aures" type="straight"/>
+        <underline language="LA" method="pen" text="uoluenbantur" type="straight"/>
+        <underline language="LA" method="pen" text="tertia[m] buccina[m] praestò" type="straight"/>
+        <underline language="LA" method="pen" text="Cannas praecipitasset Romana refpublica" type="straight"/>
+        <underline language="LA" method="pen" text="in Hispania, prolapsam eam erexisse." type="straight"/>
+        <underline language="LA" method="pen" text="quassatam rempublicam excepisse" type="straight"/>
+        <underline language="LA" method="pen" text="A. Fluctuatus animo" type="straight"/>
+        
+        <symbol language="LA" name="Mars" place="right_margin" text="Virum fugientem esse pugnaturum denuò fortiter"/>
+        <symbol language="LA" name="SS" place="left_margin" text="dextram tuam sinistra tibi manu"/>
+        <symbol language="LA" name="SS" place="left_margin" text="TRANSLATIONES"/>
+        <symbol name="Mercury" place="right_margin"/>
+        <symbol language="LA" name="SS" place="right_margin" text="Cannas praecipitasset Romana refpublica"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!-- urbanum, -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="minores quoq[ue]"/>
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="ut Pontifices"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Pontifices"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- magistratus, -->
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="dash" place="intext"/> <!-- trigintaquin -->
+        <mark method="pen" name="dot" place="intext"/> <!-- tributa, -->
+        <mark method="pen" name="dot" place="intext"/> <!-- plebe, -->
+        <mark method="pen" name="dash" place="intext"/> <!-- sereban -->
+        <mark method="pen" name="dot" place="intext"/> <!-- libuit, -->
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark method="pen" name="dash" place="intext"/> <!-- lo -->
+        <mark method="pen" name="dot" place="intext"/> <!-- imbellis, -->
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Tribuniplebis"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="nobiles "/>
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- patricios, -->
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- reperiuntur, -->
+        <mark method="pen" name="dot" place="intext"/> <!-- debilitauit, -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="imperij uim omnem"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="obedientium"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="peculiari curae sunt Deo"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- decorum, -->
+        <mark method="pen" name="equal_sign" place="right_margin"/>
+        <mark method="pen" name="dash" place="intext"/> <!-- Poe -->
+        <mark method="pen" name="dash" place="intext"/> <!-- huma -->
+        <mark method="pen" name="equal_sign" place="right_margin"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- poenam, -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- submo -->
+        <mark method="pen" name="equal_sign" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- submotos. -->
+        <mark method="pen" name="dot" place="intext"/> <!-- prudentem, -->
+        <mark method="pen" name="dot" place="intext"/> <!-- uideretur, -->
+        <mark method="pen" name="dot" place="intext"/> <!-- nolo, -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- ue -->
+        <mark method="pen" name="dot" place="intext"/> <!-- mouendam, -->
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="innocentum"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- decet, -->
+        <mark method="pen" name="quotation_mark" place="right_margin"/> <!--mortuis-->
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- duodecimo, -->
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- media. -->
+        <mark method="pen" name="plus_sign" place="intext"/> <!-- media. -->
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- sufficiant, -->
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- utile, -->
+        <mark method="pen" name="dot" place="intext"/> <!-- materiam, -->
+        <mark method="pen" name="plus_sign" place="right_margin"/> <!--below fastidium inde-->
+        <mark method="pen" name="comma" place="intext"/> <!-- LIVIANAE -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Praecipitiq[ue]"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- cor -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="exudandu[m]"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="senatorum conoquere"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="senescit pugna"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Differendo"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="elanguit res"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="uegetum ingenium"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="uirebatq[ue] integris"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Romanum coqueba[n]t bellum"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- bel -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Reciprocare animam"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="uoluebantur"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="buccina[m]"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Cannas pr[a]ecipitasset Romana refpublica"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- refpublica, -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="quassatam rempublicam excepisse"/>
+        <mark method="pen" name="dot" place="intext"/> <!--respublica, prospera-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="A. Fluctuatus animo"/>
+        
+    </annotation>
+</transcription>

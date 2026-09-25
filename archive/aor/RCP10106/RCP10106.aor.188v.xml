@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.188v.tif" pagination="376" reader="John Dee" signature="[A 4[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Quatuor tamen maxime generibus uideio co[n]stare amplificatione[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Amplificatio 4 constat generib[us]</marginalia_text>
+                </position>
+            </language>
+            <translation>Amplification consists of four kinds.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Incrementum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>2. Incrementu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Two. Increment.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Omnibus his sufficit uel uunum Ciceronis exe[m]plu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In Verrem.</marginalia_text>
+                    <book title="In Verrem"/>
+                </position>
+            </language>
+            <translation>In Verrem.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="supra summum adiectio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>supra summu[m] adiectio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Beyond the highest degree.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vergilium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vergilius.</marginalia_text>
+                    <person name="Virgil"/>
+                </position>
+            </language>
+            <translation>Virgil.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in Antonium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In Antoniu[m]</marginalia_text>
+                    <book title="Philippics"/>
+                </position>
+            </language>
+            <translation>In Antonium.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Illo enim modo, ut sit multum, hoc etiam plus sit, efficitur" type="straight"/>
+        <underline language="LA" method="pen" text="amplificationem, incremento, comparatione, ratiocinatione, co[n]gerie" type="straight"/>
+        <underline language="LA" method="pen" text="gradu uno" type="straight"/>
+        <underline language="LA" method="pen" text="quod maximu[m] est occupasset, necesse erat in eo, quod ultâ est, uerba deficere" type="straight"/>
+        <underline language="LA" method="pen" text="aliquid efficere, ut non poßit augeri" type="straight"/>
+        
+        <numeral place="left_margin">.1.</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">4</numeral>
+        
+    </annotation>
+</transcription>

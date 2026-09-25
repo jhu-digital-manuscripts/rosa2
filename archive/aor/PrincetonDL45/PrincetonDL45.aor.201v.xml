@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonDL45.201v.tif" pagination="402" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Vt equus sic populus. mansuefaciendus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                As a horse, thus the people must be civilised. 
+            </translation>
+        </marginalia>
+        
+        <!--Underlining is very light in some cases-->
+        <underline language="LA" method="pen" text="Assentatores euertunt regna" type="straight"/>
+        <underline language="LA" method="pen" text="prudenti commissione Principum." type="straight"/>
+        <underline language="LA" method="pen" text="Reges bene impera[n]tes tutius regunt" type="straight"/>
+        <underline language="LA" method="pen" text="Obedie[n]tia subditorum." type="straight"/>
+        <underline language="LA" method="pen" text="Dures imperiti fallunt." type="straight"/>
+        <underline language="LA" method="pen" text="Officiu[m] regium" type="straight"/>
+        <underline language="LA" method="pen" text="Reges bene imperare didicissent" type="straight"/>
+        <underline language="LA" method="pen" text="subditi fideliter obediant" type="straight"/>
+        <underline language="LA" method="pen" text="obedientia" type="straight"/>
+        <underline language="LA" method="pen" text="eadem terunt" type="straight"/>
+        <underline language="LA" method="pen" text="equestris munus" type="straight"/>
+        <underline language="LA" method="pen" text="mansuetum equum" type="straight"/>
+        <underline language="LA" method="pen" text="respuentem frena" type="straight"/>
+        <underline language="LA" method="pen" text="driore ceruice obluctantem" type="straight"/>
+        <underline language="LA" method="pen" text="populum vltro obsequentem reddere" type="straight"/>
+        <underline language="LA" method="pen" text="gratia" type="straight"/>
+        <underline language="LA" method="pen" text="beneuolentia" type="straight"/>
+        <underline language="LA" method="pen" text="aequilitate" type="straight"/>
+        <underline language="LA" method="pen" text="benignitateq[ue] sic homines sibi deuincire" type="straight"/>
+        <underline language="LA" method="pen" text="sponte sua parêre" type="straight"/>
+        <underline language="LA" method="pen" text="destrectent" type="straight"/>
+        <underline language="LA" method="pen" text="aut iniquo" type="straight"/>
+        <underline language="LA" method="pen" text="ne facilitate Principis" type="straight"/>
+        <underline language="LA" method="pen" text="ab insidiis subditorum" type="straight"/>
+        <underline language="LA" method="pen" text="misericordiae, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="Principis facilitate saeuiunt subditi" type="straight"/>
+        <underline language="LA" method="pen" text="Obliuio cleme[n]tiae quando" type="straight"/>
+        
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="mansuetum equum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="ne facilitate Principis"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="ab insidiis subditorum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="misericordiae"/>
+        <mark method="pen" name="bracket" place="intext"/> <!-- enim -->
+        
+    </annotation>
+</transcription>

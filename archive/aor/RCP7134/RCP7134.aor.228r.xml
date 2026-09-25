@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.228r.tif" pagination="221" reader="John Dee" signature="KK"/>
+    <annotation>
+        
+        <marginalia anchor_text="Cum Mars &amp; Saturnus coierint" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>☌ ♄ ♂</marginalia_text>
+                    <symbol_in_text name="Conjunction"/>
+                    <symbol_in_text name="Saturn"/>
+                    <symbol_in_text name="Mars"/>
+                </position>
+            </language>
+            <translation>The conjunction of Saturn and Mars.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>vide aph. 6.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:452" text="6"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See aphorism 6.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Terrea signa aeternus seruant iras" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ratio ira[e] ex signo</marginalia_text>
+                </position>
+            </language>
+            <translation>The reason for anger from the sign.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uocem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vox.</marginalia_text>
+                </position>
+            </language>
+            <translation>Voice.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Signoru[m] form[a]e.</marginalia_text>
+                </position>
+            </language>
+            <translation>The forms of the signs.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="omnem autem signum totum significat corpus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Et illa causa est cur ☾ vel dominus asce[n]de[n]tis in extremis partib[us], male affecti, extremas
+                    corporis partes et fines quasi male vexent.</marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>And that is the cause why the Moon or the lord of the ascendant, which was badly affected in the extreme parts, trouble
+                the extreme parts and ends of the body just as badly.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="uocem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vox.</marginalia_text>
+                </position>
+            </language>
+            <translation>Voice.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cum trinus planetae locus, seu radius quadratus ad cor coeli peruenerit, significat quòd decretum illius planetae confirmabitur &amp; uim eam recipiet, quia effectum producere poterit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ratio directionum //.</marginalia_text>
+                </position>
+            </language>
+            <translation>The reason for the directions.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uocem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Passiones planetaru[m] quid significent.</marginalia_text>
+                </position>
+            </language>
+            <translation>What the passions of the planets may signify.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Cum Mars &amp; Saturnus coierint in Ariete, natus carebit somno, si in Tauro, claudetur uox eius, &amp; erit rauca" type="straight"/>
+        <underline language="LA" method="pen" text="omne autem signum totum significat corpus" type="straight"/>
+        <underline language="LA" method="pen" text="Cancer Scorpius Pisces aphona" type="straight"/>
+        <underline language="LA" method="pen" text="in nodis ambiguitatem &amp; ancipites" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing anchor_text="omne autem signum totum significat corpus" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

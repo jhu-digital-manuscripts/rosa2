@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.037v.tif" reader="John Dee" signature="[Gi[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="qua[m] diffinit[i]o[n]e[m] p[ri]mo plato posuit [et] ab euclide assumpta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Euclidis definitio pu[n]cti
+                    </marginalia_text>
+                    <person name="Euclid"/>
+                </position>
+            </language>
+            <translation>
+                Euclid's definition of a point.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="differe[n]tia affirmatiue [et] negatiue" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        differe[n]tia[e] vel negatiua[e] vel p[ri]uatiu[a]e q[uo]mo[d]o adm[...]ta[n]tur. 
+                        <!-- FSF: can't figure out the first part of the last word -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Differences, either restained or deprived, how [...].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mathephisicalib[us]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Metaphysi
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Of metaphysics.    
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="posuit [et] ab euclide" type="straight"/>
+        <underline language="LA" method="pen" text="Ista aut[em] p[ro]batio no[n] tenet nisi suppone[n]do q[uod] gen[us] sit forma separata vna nu[m]ero" type="straight"/>
+        <underline language="LA" method="pen" text="Ista e[ni]m significa[n]t formas d[iffe]r[enti]ar[um] q[uae] q[uo] nobis note no[n] sunt. ideo negatio[n]e opposita d[iffe]r[enti]e affirmatiue s[ignifi]cant[ur]. hoc etia[m] m[od]o" type="straight"/>
+        <underline language="LA" method="pen" text="in mathephisicalib[us] lati[us] dicem[us]" type="straight"/>
+        
+    </annotation>
+</transcription>

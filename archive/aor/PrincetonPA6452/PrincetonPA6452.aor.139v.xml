@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.139v.tif" pagination="262" reader="Harvey"/> 
+    <annotation>
+        <marginalia anchor_text="L. Papyrius Cursor, quà paterna gloria, quà sua" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Papyrius Cursor filius: Paternae Virtutis, Honorisq[ue] ha[e]res.
+                    </marginalia_text>
+                    <person name="Lucius Papirius Cursor II"/>
+                </position>
+            </language>
+            <translation>Papyrius Cursor, the son: heir to his father’s virtue and honour.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        s[upr]a.
+                    </marginalia_text>
+                    <internal_ref text="s[upr]a">
+                        <target ref="PrincetonPA6452:00000246" text="[224]"/>
+                        <target ref="PrincetonPA6452:00000264" text="[242]"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>[See] above.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        s[upr]a.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>[See] above.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="&amp; Cos. insignis" type="straight"/>
+        <underline language="LA" method="pen" text="Papyrius Cursor, quà paterna gloria, quà sua: &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="bellum ingens, uictoriaq[ue] quantam de Samnitib[us] nemo ad" type="straight"/>
+        <underline language="LA" method="pen" text="L. Papyrium patrem Cos. pepererat" type="straight"/>
+        <underline language="LA" method="pen" text="eodem conatu apparatuq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="omni opule[n]tia insignium armoru[m] bellu[m] adornauerant" type="straight"/>
+        <underline language="LA" method="pen" text="opes deoru[m] etia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="caput Ioui sacratum erat" type="straight"/>
+        <underline language="LA" method="pen" text="ex libro uetere" type="straight"/>
+        <underline language="LA" method="pen" text="sacrificatu[m] sacerdote" type="straight"/>
+        <underline language="LA" method="pen" text="iubebat nobilissimu[m] quenq[ue] genere factisq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="abnue[n]tes iuraturos" type="straight"/>
+        <underline language="LA" method="pen" text="obtruncati" type="straight"/> 
+        <underline language="LA" method="pen" text="ea detestatione obstrictis" type="straight"/>
+        <underline language="LA" method="pen" text="ut uir uiru[m] legerent" type="straight"/>
+        <underline language="LA" method="pen" text="donec sexdecim milliu[m] numeru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="legio linteata ab" type="straight"/>
+        <underline language="LA" method="pen" text="arma insignia data" type="straight"/>
+        <underline language="LA" method="pen" text="cristatae gale[a]e, ut inter" type="straight"/>
+        <underline language="LA" method="pen" text="Papyrius noua exercitu" type="straight"/>
+        <underline language="LA" method="pen" text="minus q[uam] collega cepit hominum" type="straight"/>
+        <underline language="LA" method="pen" text="plus aliqua[n]to occidit" type="straight"/>
+        <underline language="LA" method="pen" text="pr[a]eda opule[n]ta" type="straight"/>
+        <underline language="LA" method="pen" text="peruagati Samniu[m] Coss." type="straight"/>
+        <underline language="LA" method="pen" text="Papyrius ad Aquilonia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="summa rei Samnitiu[m] erat" type="straight"/>
+        <underline language="LA" method="pen" text="nec cessatu[m] ab armis" type="straight"/>
+        <underline language="LA" method="pen" text="neq[ue] grauiter pugnatu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="lacessendo quietos" type="straight"/>
+        <underline language="LA" method="pen" text="resiste[n]tib[us] cede[n]do" type="straight"/>
+        <underline language="LA" method="pen" text="co[m]mina[n]doq[ue] magis q[uam] infere[n]do pugna[m]" type="straight"/>
+        <underline language="LA" method="pen" text="interiorq[ue] Caruilius, quo maiore discrimine" type="straight"/>
+        <underline language="LA" method="pen" text="Papyrius ia[m] per omnia ad dimicandu[m] satis paratus" type="straight"/>
+        <underline language="LA" method="pen" text="sibi in animo" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]fligere cum hoste" type="straight"/>
+        <underline language="LA" method="pen" text="qua[n]ta maxima ui posset" type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark method="pen" name="X_sign" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--eo-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--per-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--Pau-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--occi-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--Sa-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--la-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--profereba-->
+        
+        <mark language="LA" method="pen" name="triple_dash" place="tail" text="qua[n]ta maxima ui posset"/>
+        
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="comma" place="intext"/> <!--quietos, resiste[n]tib.-->
+        <mark language="LA" method="pen" name="diacritic" place="intext" text="quo"/>
+        
+    </annotation>
+</transcription>

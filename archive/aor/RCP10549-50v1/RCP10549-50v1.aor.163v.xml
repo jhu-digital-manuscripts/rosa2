@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.163v.tif" pagination="306" reader="John Dee" signature="[vv.i.[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Exordium
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Opening.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Romulu[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Romulus
+                    </marginalia_text>
+                    <person name="Romulus"/>
+                </position>
+            </language>
+            <translation>
+                Romulus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tertia ferè vigilia exacta" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        tertia vigilia ferè exacta
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                At about three o'clock in the morning.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cimbrum Gabinium" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Cimbrus Gabinus
+                    </marginalia_text>
+                    <person name="Publius Gabinius Capito"/>
+                </position>
+            </language>
+            <translation>
+                Publius Gabinius Capito.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="minus nobis iucu[n]di atque illustres sunt ii dies quibus co[n]seruamur, quàm illi quibus nascimur: quò salutis certa laetitia est,              nasce[n]di incerta co[n]ditio: &amp; quòd sine sensu nascimur, cu[m] voluptate co[n]seruamur: profecto, quonia[m] illu[m] qui ha[n]c vrbe[m] co[n]didit, Romulu[m] ad deos immortales beneuole[n]tia,              famáque sustulimus: esse" type="straight"/>
+        <underline language="LA" method="pen" text="propè ia[m] ignes circu[m]datósque restinximus, iidémque gladios in Re[m]publica[m] distroctos retudimus,              mucronésque epru[m] à iugulis vestris reiecimus. Quae" type="straight"/>
+        <underline language="LA" method="pen" text="quos maximo furore &amp; scelere esse inflammatos" type="straight"/>
+        <underline language="LA" method="pen" text="vt quoniam auribus vestris propter incredibile[m] magnitudinem sceleris minorem fidem faceret oratio mea, rem ita comprehenderem:              vt tum demum animis saluti vestrae prouideretis, cum oculis maleficium ipsum videretis" type="straight"/>
+        <underline language="LA" method="pen" text="Reatina" type="straight"/>
+        <underline language="LA" method="pen" text="dilucesceret" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">1</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+        
+    </annotation>
+</transcription>

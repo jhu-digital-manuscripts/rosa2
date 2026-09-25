@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonRB16th12.082v.tif" reader="Harvey" signature="[X.iij.v]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Tryall By Battayl.
+                    </marginalia_text>
+                    <emphasis method="pen" text="Tryall By Battayl." type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="made inquisitioun" type="straight"/>
+        <underline language="EN" method="pen" text="the committers" type="straight"/>
+        <underline language="EN" method="pen" text="Erle Bothwell" type="straight"/>
+        <underline language="EN" method="pen" text="Balfoure, the" type="straight"/>
+        <underline language="EN" method="pen" text="Dauy Chambers" type="straight"/>
+        <underline language="EN" method="pen" text="spere at Gilbert Bawfoord" type="straight"/>
+        <underline language="EN" method="pen" text="Blacke M." type="straight"/>
+        <underline language="EN" method="pen" text="Spence" type="straight"/>
+        <underline language="EN" method="pen" text="principall deuiser" type="straight"/>
+        <underline language="EN" method="pen" text="quene assentyng" type="straight"/>
+        <underline language="EN" method="pen" text="the persuasioun" type="straight"/>
+        <underline language="EN" method="pen" text="Bothwell" type="straight"/>
+        <underline language="EN" method="pen" text="the witchcraft" type="straight"/>
+        <underline language="EN" method="pen" text="new proclamatioun" type="straight"/>
+        <underline language="EN" method="pen" text="the setter" type="straight"/>
+        <underline language="EN" method="pen" text="vp of the sayd Bill" type="straight"/>
+        <underline language="EN" method="pen" text="and auowe" type="straight"/>
+        <underline language="EN" method="pen" text="subscribe the same" type="straight"/>
+        <underline language="EN" method="pen" text="the summe" type="straight"/>
+        <underline language="EN" method="pen" text="further accordyng" type="straight"/>
+        <underline language="EN" method="pen" text="to his abilitie, and sight" type="straight"/>
+        <underline language="EN" method="pen" text="subscribe, andauow the same" type="straight"/>
+        <underline language="EN" method="pen" text="mony" type="straight"/>
+        <underline language="EN" method="pen" text=" be consignit" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="spere at Gilbert Bawfoord"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="made inquisitioun"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- true -->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="principall deuiser"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="quene assentyng"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- thairto -->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="the persuasioun"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="witchcraft"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="and auowe"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="subscribe the same"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- sight -->
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!-- morrow -->
+        
+        <mark language="EN" method="pen" name="plus_sign" place="tail" text=" be consignit"/>
+
+        
+    </annotation>
+</transcription>

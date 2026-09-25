@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.015v.tif" reader="John Dee" signature="[D iij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Daemones" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Da[e]mones</marginalia_text>
+                </position>
+            </language>
+            <translation>Demons.</translation>
+        </marginalia>
+       
+        <underline language="LA" method="pen" text="substantias animales" type="straight"/>
+        <underline language="LA" method="pen" text="sicuti heroas" type="straight"/>
+        
+    </annotation>
+</transcription>

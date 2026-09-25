@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.056v.tif" pagination="[56v]" reader="John Dee" signature="[Gviij[v]]"/> 
+    
+    <annotation>
+        
+        <marginalia anchor_text="serpente" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A serpent.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Wel done if you had kept that riche allways</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="serpente di sette" type="straight"/>
+        <underline language="IT" method="pen" text="buon piede" type="straight"/>
+        <underline language="IT" method="pen" text="horribil pelle, &amp; quelle scaglie" type="straight"/>
+        <underline language="IT" method="pen" text="Giouanna" type="straight"/>
+        <underline language="IT" method="pen" text="gente a fuggir si pose" type="straight"/>
+        <underline language="IT" method="pen" text="tolta cosa alcuna di" type="straight"/>
+        <underline language="IT" method="pen" text="non tenessero" type="straight"/>
+        <underline language="IT" method="pen" text="per ladri i Christiani" type="double"/>
+        
+    </annotation>
+</transcription>

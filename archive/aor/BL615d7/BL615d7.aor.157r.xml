@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.157r.tif" pagination="157" reader="John Dee"/>    
+    <annotation>
+        
+        <marginalia anchor_text="monstrati i III Moggietti" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>3 Moggietti</marginalia_text> 
+                    <!-- FSF: see https://books.google.co.uk/books?id=NG95jlM9UD0C&pg=PA267&lpg=PA267&dq=tre+moggietti&source=bl&ots=IHsYE2aqPy&sig=9sgy7Kkc6f-zy7qgixNQmVrG2ZQ&hl=en&sa=X&ved=0ahUKEwji1OrgzrDSAhUpBsAKHZsxDmkQ6AEIMzAD#v=onepage&q=tre%20moggietti&f=false 
+                    and https://books.google.co.uk/books?id=aSwTAAAAQAAJ&pg=PA204&lpg=PA204&dq=moggietti+vitruvio&source=bl&ots=CrYgh4KiAo&sig=XwwWVKyqsIGrAS9wWwqZxgGIaAU&hl=en&sa=X&ved=0ahUKEwiZrfamz7DSAhXqK8AKHQScBKQQ6AEIJDAB#v=onepage&q=moggietti%20vitruvio&f=false-->
+                </position>
+            </language>
+            <translation>A type of hydraulic machine similar to the Ctesibio machine.</translation> <!-- MB. A provisional translation, will provide a more precise description. Am not able to find any contemporary secondary literature discussing the 'Moggietti', as of yet.  -->
+        </marginalia>
+        
+        <marginalia anchor_text="punta, che chiamoò Della Galea" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Punta della Galea</marginalia_text>
+                    <location name="Galeota"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="botte d'acqua" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>heat of water</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Della Spiaggia" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Punta della Spaggia</marginalia_text>
+                </position>
+            </language>
+            <translation>Head of the beach.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pescatori, che erano fuggiti" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>The people fled.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="mostrati i III Moggietti" type="straight"/>
+        <underline language="IT" method="pen" text="v leghe d'vna punta" type="straight"/>
+        <underline language="IT" method="pen" text="Della Galea" type="straight"/>
+        <underline language="IT" method="pen" text="vno scoglio" type="double"/>
+        <underline language="IT" method="pen" text="vna galea" type="straight"/>
+        <underline language="IT" method="pen" text="botte d'acqua" type="straight"/>
+        <underline language="IT" method="pen" text="altra punta" type="straight"/>
+        <underline language="IT" method="pen" text="Della Spiaggia" type="straight"/>
+        <underline language="IT" method="pen" text="acqua d'vn bellissimo riuo" type="straight"/>
+        <underline language="IT" method="pen" text="riuo" type="double"/>
+        <underline language="IT" method="pen" text="vedute di molte case, &amp; popolationi" type="straight"/>
+        <underline language="IT" method="pen" text="case, &amp; popolationi" type="double"/>
+        <underline language="IT" method="pen" text="fuggiti" type="double"/>
+        <underline language="IT" method="pen" text="pedate di animali" type="straight"/>
+        <underline language="IT" method="pen" text="di capre" type="straight"/>
+        
+    </annotation>
+</transcription>

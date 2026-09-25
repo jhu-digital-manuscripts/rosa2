@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.148r.tif" pagination="35" reader="John Dee" signature="c.ii."/>   
+    <annotation>
+        
+        <marginalia anchor_text="Haec &amp; in verborum &amp; sententiaru[m] exornatione[m] diuiditur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dignitatis Diuisio</marginalia_text>
+                </position>
+            </language>
+            <translation>The division of distinction.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="REPETITIO" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Repetitio quid.</marginalia_text>
+                </position>
+            </language>
+            <translation>What epanaphora is.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Conuersio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Conversio</marginalia_text>
+                </position>
+            </language>
+            <translation>Antistrophe.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Complexio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Complexio</marginalia_text>
+                </position>
+            </language>
+            <translation>Interlacement.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Traductio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Traductio</marginalia_text>
+                </position>
+            </language>
+            <translation>Transplacement.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Conte[n]tio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Contentio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Antithesis.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Exclamatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Exclamatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Apostrophe.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="concinniorem oratione[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Ex eode[m] genere est exornationis" type="straight"/>
+        <underline language="LA" method="pen" text="assentatio iucu[n]da principia, eade[m] exitus amarissimos affert. Item" type="straight"/>
+        <underline language="LA" method="pen" text="Hoc genere si" type="straight"/>
+        
+        <drawing anchor_text="Ex eode[m] genere est exornationis" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.337v.tif" pagination="6" reader="John Dee" signature="[A.iii.[v]]"/>
+    <annotation> 
+        
+        <marginalia anchor_text="reductio" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="head">
+                    <marginalia_text>reductio</marginalia_text>
+                </position>
+            </language>
+            <translation>Leading away.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="propugnatio, ac defensio" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="head">
+                    <marginalia_text>propugnatio defensio</marginalia_text> 
+                </position>
+            </language>
+            <translation>Defense. Defense.</translation> <!-- NBW: The sense of this is probably '"propugnatio" means "defensio"' i.e. Dee is compiling synonyms--> 
+        </marginalia>
+        
+        <marginalia anchor_text="Caniniano" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Catoniano.</marginalia_text>
+                </position>
+            </language>
+            <translation>Catonian.</translation> <!--NBW: This is another misidentification: unsure which, if any, person tags to add--> <!--JG: Text refers to Lucius Caninius Gallus, but because of the misidentification, I wouldn't tag a person-->
+        </marginalia>  
+        
+        <marginalia anchor_text="Ciliciam" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cilicia</marginalia_text>
+                    <location name="Cilicia"/>
+                </position>
+            </language>
+            <translation>Cilicia.</translation> 
+        </marginalia>
+
+        <marginalia anchor_text="Cyprúmque" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cyprus.</marginalia_text>
+                    <location name="Cyprus"/>
+                </position>
+            </language>
+            <translation>Cyprus.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Prolemaidae" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ptolemais.</marginalia_text>
+                    <location name="Ptolemais Hormos"/>
+                </position>
+            </language>
+            <translation>Ptolemais Hormos.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Sibyllae" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sibylla</marginalia_text>
+                </position>
+            </language>
+            <translation>The Sibyl.</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>face aut tace.</marginalia_text>
+                </position>
+            </language>
+            <translation>Put up or shut up.</translation> 
+        </marginalia>
+
+        <marginalia anchor_text="offensionem esse periculosam" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>offensio p[er]iculosa</marginalia_text>
+                </position>
+            </language>
+            <translation>A dangerous offense.</translation> 
+        </marginalia>
+
+        <marginalia anchor_text="de Milonis familiaritate" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Milo.</marginalia_text>
+                    <person name="Titus Annius Milo"/>
+                </position>
+            </language>
+            <translation>Titus Annius Milo.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="imbecillitate Clodii" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Clodius.</marginalia_text>
+                    <person name="Publius Claudius Pulcher"/>
+                </position>
+            </language>
+            <translation>Publius Clodius Pulcher.</translation> 
+        </marginalia>
+
+        <marginalia anchor_text="incredibilis hominu[m] peruersitas" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Incredibilis ho[m]i[nu]m p[er]u[er]sitas.</marginalia_text>
+                </position>
+            </language>
+            <translation>An unbelievable perversity of men.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Maleuolentissimis" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Maleuolentiss[imus].</marginalia_text>
+                </position>
+            </language>
+            <translation>The most malevolent.</translation> 
+        </marginalia>
+
+        <marginalia hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>aßequi. consequi. efficere.</marginalia_text>
+                </position>
+            </language>
+            <translation>To achieve, to pursue, to bring about.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="saepe significaui" type="straight"/>
+        <underline language="LA" method="pen" text="quoque re perspecta, &amp; cognita scribere: veheme[n]ter" type="straight"/>
+        <underline language="LA" method="pen" text="per cupidum tui studiosum" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; fide, &amp; animo in te singulari" type="straight"/>
+        <underline language="LA" method="pen" text="nostra propugnatio, ac defensio" type="straight"/>
+        <underline language="LA" method="pen" text="Praeterea quidem de consularibus nemini possum aut studii erga te, aut officii, aut amici animi esse testis." type="straight"/>
+        <underline language="LA" method="pen" text="&amp; tibi tua praesta[n]ti in eum liberalitate deuinctum" type="straight"/>
+        <underline language="LA" method="pen" text="ipso supiciosissimo tempore" type="straight"/>
+        <underline language="LA" method="pen" text="ac de tuis ornamentis, &amp; commodis cogitare." type="straight"/>
+        <underline language="LA" method="pen" text="redutio regis" type="straight"/> <!-- NBW: to truncated est mark at head -->
+        <underline language="LA" method="pen" text="cum pace, praesidiísque firmaris," type="straight"/>
+        <underline language="LA" method="pen" text="si cecidisset vt volumus vt" type="straight"/>
+        <underline language="LA" method="pen" text="quid assequi possis" type="straight"/>
+        <underline language="LA" method="pen" text="posse illius regni potiri" type="straight"/>
+        <underline language="LA" method="pen" text="esse cunctandu[m]: si dubium sit, no[n] esse conandu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="vt absens à multis: cum redieris, ab omnibus collaudêre" type="straight"/>
+        <underline language="LA" method="pen" text="periculosam propter interposita[m] authoritatem, religionémque video" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; auxiliis eu[m] tuis, &amp; copiis adiuuares. eam" type="straight"/>
+        <underline language="LA" method="pen" text=", de leuitate &amp; imbecillitate Clodii" type="straight"/>
+        <underline language="LA" method="pen" text="quos fouendo in co[m]muni causa retinere potuerunt, inuidendo abalienarunt:" type="straight"/>
+        <underline language="LA" method="pen" text="maleuolentissimis obtrectationibus nos" type="straight"/> <!-- NBW: poss. referent for the "supra," on 0687 -->
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol language="LA" name="Asterisk" place="intext" text="Caniniano"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol language="LA" name="Asterisk" place="left_margin" text="Catoniano"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/> <!-- NBW: w/flourish -->
+        
+        <mark language="LA" method="pen" name="est_mark" place="head" text="reductio"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark language="LA" method="pen" name="est_mark" place="left_margin" text="reductio regis"/> 
+        
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+        <drawing anchor_text="face aut tace" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="Offensio p[er]iculosa" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="Incredibilis ho[m]i[nu]m p[er]u[er]sitas" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

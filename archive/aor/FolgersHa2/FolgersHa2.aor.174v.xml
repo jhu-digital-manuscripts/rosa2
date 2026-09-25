@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.174v.tif" pagination="172" reader="Harvey" signature="[L6v]"/>	<!-- ABO 179left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						( Omnis doctrina aut practica; aut phantastica.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>All doctrine or practice; or imagionary.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Non est Entelechia, qua[e] omnes non Superat praxes
+						aureas. Tam Subtilissima, quàm celerrima.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>It is not actualization, which does not surpass all golden practices. Both most subtle and quickest.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Quicquid non est solare, est vmbratile.
+						Vt festa confestim: sic omnia ludicra.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Whatever is not a comfort, is a ghost. Just as things are immediately festive, so they are all playthings.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Sola energetica, et practica in artibus, philosophia, professionibus. Ca[e]tera
+						phantastica, aut sterilia. Mundus non eget friuolis, aut superfluis:
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						sed necessarijs, et vtilib[us].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Only energetical and practical things in arts, philosophy, and professions. The remaining things are imaginary or fruitless.
+			The world does not need frivolous or superfluous, but necessary and useful things.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Nondùm notum orbi, quantu[m] valeat aphoristica artiu[m], professionu[m]q[ue] expeditio.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>It is not yet known to the world, how much the aphoristic account of the arts and professions is worth.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="per vanità della donna" type="straight"/>
+		<underline language="IT" method="pen" text="di leggierezza" type="straight"/>
+		<underline language="IT" method="pen" text="egli disperato deliberò" type="straight"/>
+		<underline language="IT" method="pen" text="conoscere la leggierezza" type="straight"/>
+		<underline language="IT" method="pen" text="te ne sei fidato" type="straight"/>
+		<underline language="IT" method="pen" text="tua" type="straight"/>
+		<underline language="IT" method="pen" text="prima à patirne" type="straight"/>
+		<underline language="IT" method="pen" text="con vno coltello" type="straight"/>
+		<underline language="IT" method="pen" text="si vccise" type="straight"/>
+		<underline language="IT" method="pen" text="grauissimo disordine" type="straight"/>
+		<underline language="IT" method="pen" text="ritenere" type="straight"/>
+		<underline language="IT" method="pen" text="vno segreto" type="straight"/>
+		<underline language="LA" method="pen" text="tacenda loqui" type="straight"/>
+		<underline language="IT" method="pen" text="per iscusa" type="straight"/>
+		<underline language="IT" method="pen" text="domandata Iulia figliuola" type="straight"/>
+		<underline language="IT" method="pen" text="in certi loro tempi per procreare" type="straight"/>
+		<underline language="IT" method="pen" text="elle son bestie" type="straight"/>
+		<underline language="IT" method="pen" text="simili ad Agrippa" type="straight"/>
+		<underline language="IT" method="pen" text="di tanti altri" type="straight"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- am -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- coltel -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- gra -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Cesa -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- appeti -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- pren -->
+		
+    </annotation>
+</transcription>

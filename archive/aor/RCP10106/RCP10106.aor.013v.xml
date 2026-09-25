@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.013v.tif" pagination="26" reader="John Dee" signature="[b 5[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="oratio tres habeat uirtutes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tres or[ati]o[n]is virtutes.</marginalia_text>
+                </position>
+            </language>
+            <translation>Three virtues of speech.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Verba nunc generaliter accipi uolo: nam duplex corum intellectus est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Verba duplicia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Ambiguous words.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quam uitantes ambiguitatem quidam dicere maluerunt, uoces, dictiones, locutiones." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Verboru[m] Diuisio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Division of words.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="qui omnia per quae sermo nectitur significat" type="straight"/>
+        <underline language="LA" method="pen" text="Laudamus enim uerba rebus bene acco[m]modata. Sola" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

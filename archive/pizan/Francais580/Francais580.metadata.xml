@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>1</illustrations>
+    <totalPages>2</totalPages>
+    <dimensions units="mm">
+        <width>262</width>
+        <height>320</height>
+    </dimensions>
+    <dates>
+        <startDate>1400</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="Letter to the Queen (Epistre a la reine)">
+            <language>fr</language>
+            <title>Letter to the Queen (Epîstre a la reine)</title>
+            <textId/>
+            <pages end="54v" start="53r">2</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>39</linesPerColumn>
+            <leavesPerGathering>8</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Letter to the Queen (Epîstre a la reine)</title>
+            <commonName>Français 580</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>parchment</material>
+            <origin>Paris, France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>Français 580</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Letter to the Queen (Epistre a la reine)</title>
+            <commonName>Français 580</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>Parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Paris, France</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>Français 580</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

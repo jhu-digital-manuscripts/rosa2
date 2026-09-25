@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.231r.tif" pagination="13" reader="John Dee" signature="Bbb"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="Gulihelmus Magn[us]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Gulielmus Magnus
+                    </marginalia_text>
+                    <person name="William II of England"/>
+                </position>
+            </language>
+            <translation>
+                William II of England, the Great.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="possessiones eorum fidelioribus distributae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Dominiorum Translatio nova
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The new transfer of dominions.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Gulihelmus Magn[us]" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; possessiones eorum" type="double"/>
+        
+    </annotation>
+    
+</transcription>

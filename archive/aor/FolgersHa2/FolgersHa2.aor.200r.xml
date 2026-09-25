@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.200r.tif" pagination="223" reader="Harvey" signature="[O8r]"/>	<!-- ABO 204right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						{ Nothing harsh, cold, or slow.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Sua sponte fluant Omnia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Let everything flow of its own accord.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Theire singularitie; to Mercurialise their
+						Boddies, and Minds.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Manie pragmatists: no Entelechist, but One.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						( Microtechne, et Macrotechne. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A small skill and a great skill.</translation> <!-- CG: Neologisms. -->
+				
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Manie politists: no Monarchist but one.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Quicquid discitur, docetur, aut exercetur, duo mihi aurea Specula:
+						Luminare Minus, et Luminare Maius.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Whatever is learned, taught, or excercised, I have two golden mirrors: to illuminate less, and to illuminate more. </translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Nemo uel sermone promptior; uel ingenio pra[e]gnantior; uel calliditate astutior; uel
+						opere agilior; uel omni industria dexterior; uel toto deniq[ue] animi, corporisq[ue]
+						habitu viuidior: summa Gallici Pragmatici laus. Nam Galli
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						omnia amant expedita; et plurimum
+						tribuunt dictoru[m], factoru[m]q[ue]
+						Celeritati.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>No one is either more prompt in speaking, or more pregnant in intellect, or more astute in shrewdness, or more agile or action, or more skillful in all industry; or
+			finally more lively in the whole condition of mind and body: the highest praise for the French pragmatists. For the French love all prompt things; and they bestow
+			the greatest number of sayings and deeds with speed.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="occider vn'Elefante" type="straight"/>
+		<underline language="IT" method="pen" text="effetto d'auaritia" type="straight"/>
+		<underline language="IT" method="pen" text="Re Mida" type="straight"/>
+		<underline language="IT" method="pen" text="MIDA Re di" type="straight"/>
+		<underline language="IT" method="pen" text="tutto quello" type="straight"/>
+		<underline language="IT" method="pen" text="diuentasse oro" type="straight"/>
+		<underline language="IT" method="pen" text="errore" type="straight"/>
+		<underline language="IT" method="pen" text="diuenta[n]do oro tutto quelo ch' egli toccaua" type="straight"/>
+		<underline language="IT" method="pen" text="fame e di stratio si morì" type="straight"/>
+		<underline language="IT" method="pen" text="L'auaitia" type="straight"/>
+		<underline language="IT" method="pen" text="vicino ricchissimo" type="straight"/>
+		<underline language="IT" method="pen" text="estrema auaritia, à patir ogni disagio" type="straight"/>
+		<underline language="IT" method="pen" text="nobilissima famiglia" type="straight"/>
+		<underline language="IT" method="pen" text="à non mangiar piu che vna volta" type="straight"/>
+		<underline language="IT" method="pen" text="quella male" type="straight"/>
+		<underline language="IT" method="pen" text="Auaritia crudel" type="straight"/>
+		<underline language="IT" method="pen" text="meritate tante pene" type="straight"/>
+		<underline language="IT" method="pen" text="guasti l'humana compagnia" type="straight"/>
+		<underline language="IT" method="pen" text="compagnia pur naturale" type="straight"/>
+		<underline language="IT" method="pen" text="doppo'l pasto" type="straight"/>
+		<underline language="IT" method="pen" text="hà piu fame che pria" type="straight"/>
+		
+		<mark method="pen" name="plus_sign" place="left_margin"/> <!--darsi, underneath exercetur-->
+		
+		<mark language="IT" method="pen" name="X_sign" place="right_margin" text="occider vn'Elefante"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!--tocca-->
+		<mark language="IT" method="pen" name="plus_sign" place="right_margin" text="fame e di stratio si morì"/> 
+		<mark method="pen" name="dash" place="right_margin"/> <!--fa-->
+		
+		<mark method="pen" name="comma" place="intext"/> <!--Elefante che-->
+		<mark method="pen" name="dot" place="intext"/> <!--male, esclamo--> 
+		
+    </annotation>
+</transcription>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>82</illustrations>
+    <totalPages>202</totalPages>
+    <dimensions units="mm">
+        <width>235</width>
+        <height>323</height>
+    </dimensions>
+    <dates>
+        <startDate>1400</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="157r" start="1r">157</pages>
+            <illustrations>80</illustrations>
+            <linesPerColumn>37</linesPerColumn>
+            <leavesPerGathering>8</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="testament">
+            <language>fr</language>
+            <title>Testament</title>
+            <textId/>
+            <pages end="187r" start="158r">30</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>37</linesPerColumn>
+            <leavesPerGathering>8</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="codicille">
+            <language>fr</language>
+            <title>Codicille</title>
+            <textId/>
+            <pages end="200r" start="189r">12</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>37</linesPerColumn>
+            <leavesPerGathering>8</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Français 12595</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>Parchment</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 12595</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Français 12595</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>Parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 12595</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.017r.tif" reader="John Dee" signature="[Cv]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="modus arguendi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Modi argue[n]di
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Methods of proving.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Cu[m]q[ue] ita hoc fuerit p[ri]mus modus arguendi" type="straight"/>
+        <underline language="LA" method="pen" text="est c[on]iu[n]cta" type="straight"/>
+        <underline language="LA" method="pen" text="Qui[n]tus modus argue[n]di" type="straight"/>
+        <underline language="LA" method="pen" text="passio. co[m]munis i[n]nomi[n]ati assignat[ur] in esse i[n]feriorib[us]" type="straight"/>
+        <underline language="LA" method="pen" text="demo[n]stratur v[niversa]le. si sit co[m]mune nome[n] impositu[m] et demo[n]stret[ur] p[ro]pria" type="straight"/>
+        <underline language="LA" method="pen" text="singulis speciebus seorsim. v[e]l de om[n]ibus si[mu]l" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- si[mu]l q[ue] -->
+        
+    </annotation>
+</transcription>

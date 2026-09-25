@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.027r.tif" pagination="37" reader="John Dee" signature="d"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        At no[n]dum docunt r[ati]o[n]em qua hunc sciremus. Sed infra lib. 4. cap. 12 declarat.
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="UCLOgden:278" text="lib. 4 cap. 12"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                But they do not yet teach the reason for which we know this. But below book 4, chapter 12 reveal it.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="bonum ei testimoniu[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Bonu[m] testimonium.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Good testimonium.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Si itaq[ue] dominus" type="straight"/>
+        <underline language="LA" method="pen" text="in domo" type="straight"/>
+        <underline language="LA" method="pen" text="altitudine" type="straight"/>
+        <underline language="LA" method="pen" text="finibus" type="straight"/>
+        <underline language="LA" method="pen" text="bonum ei testimoniu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="mediam uero aetatem tu[n]c praecipue decernunt, si dator uitae sit quidem in finibus suis uel in suis domiciliis, aut in             ortu, uel dignitate sua, &amp; maleuolis tamen sit raditionibus impeditus, uel in deiecto loco positus, aut nullius stellae testimonio munitus" type="dotted"/>
+        <underline language="LA" method="pen" text="☾, nec aliam rationem admittas, quia haec ab omnibus probatur" type="straight"/>
+        <underline language="LA" method="pen" text="genitura per signoru[m] cursum in secundo" type="straight"/>
+        <underline language="LA" method="pen" text="Sed quicunq[ue] decenniumsortitus fuerit, licet sit totius temporis dominus, omnibus tamen stellis, tota[m] decennii substantiam             diuidit, à se incipiens, &amp; post se illis tradens, qui sunt per ordinem positi, ac primo illi tradens, quicunq[ue] in themate secundus fuerit inuentus" type="straight"/>
+        
+        <mark colour="red" method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- decreuerit 79 -->
+        
+    </annotation>
+</transcription>

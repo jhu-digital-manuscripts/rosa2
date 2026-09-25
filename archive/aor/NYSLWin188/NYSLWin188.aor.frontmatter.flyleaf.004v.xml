@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.frontmatter.flyleaf.004v.tif" reader="John Winthrop"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>Winthropi.</marginalia_text>
+                </position>
+            </language>
+            <translation>Winthrop's.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" other_reader="unknown reader">
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>16</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" other_reader="unknown reader">
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>188</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>Nr 455</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <symbol name="Hieroglyphic_Monad" place="full_page"/>
+       
+    </annotation>
+</transcription>

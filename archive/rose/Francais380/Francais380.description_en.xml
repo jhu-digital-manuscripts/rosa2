@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note rend="IDENTIFICATION">
+          <p>Paris, Bibliothèque nationale de France, fr. 380</p>
+        </note>
+        <note rend="CONTENTS">
+          <p><hi rend="italics">Roman de la Rose</hi> (ff. 1r-139r), <hi rend="italics">Le Testament</hi> (ff. 140r-153r), <hi rend="italics">Les Sept articles de la foi</hi> (ff. 154r-159v), <hi rend="italics">Le Codicille</hi> (ff. 159v-160r)</p>
+        </note>
+        <note rend="MATERIAL">
+          <p>Parchment</p>
+        </note>
+        <note rend="ORIGIN">
+          <p>France</p>
+        </note>
+        <note rend="DATE">
+          <p>ca. 1400</p>
+        </note>
+        <note rend="SCRIPT">
+          <p>Bâtarde, written in 2 columns of 41 lines, 1 scribe</p>
+        </note>
+        <note rend="ARTISTS">
+          <p>1 artist (possibly the artist of ms. fr. 12595?)</p>
+        </note>
+        <note rend="DECORATION">
+          <p> 50 single-column panel miniatures in colors and gold, within gold frames with trifoliate leaf extenders (ff. 1r, 1v, 2r (x2), 2v (x2), 3r, 3v, 4r (x2), 5r, 6v, 10v, 12r, 13v, 14r, 14v, 19v, 20v, 21r, 22r, 23r, 24r, 25v, 26v, 28v, 29v, 36v, 38v, 43v, 44r, 46v, 49r, 57r, 62v, 67v, 69r, 70r, 73r, 81r, 84r, 85v, 99v, 108r, 125r, 132v, 135v, 140r, 154r, 159v); 1-sided foliate bar borders and decorated initials in colors and gold on ff. <locus>1r</locus>, <locus>140r</locus>, <locus>154r</locus>, <locus>159v</locus>; the miniature on f. <locus>140</locus> is for <hi rend="italics">Le Testament</hi>, the one on f. <locus>154r</locus> is for <hi rend="italics">Les Sept articles de la foi</hi>, and the final miniature, on f. <locus>159v</locus>, is for <hi rend="italics">Le Codicille</hi>. Blue initials flourished in red, gold initials flourished in blue.</p>
+        </note>
+        <note rend="DIMENSIONS">
+          <p>374 x 280 mm (this measurement is from Langlois)</p>
+        </note>
+        <note rend="FOLIATION">
+          <p>ff. iii + 160 + iv</p>
+        </note>
+        <note rend="BINDING">
+          <p>French, 17th century; red morocco with gilt fillet border and arms of Colbert (snake surrounded by the collars of the Orders of St Michael and of the Holy Ghost) stamped in centre of upper and lower covers, raised spine bands, marbled endpapers.</p>
+        </note>
+        <note rend="PROVENANCE">
+          <p>Jean de Berry (1340-1416), beginning of 15th century (on <locus>frontmatter.flyleaf.03r</locus> is written "Le Romant de la Rose. Est a Jehan, filz de roy de France, duc de Berry et d'Auvergne, conte de Poitou, d'Estampes, de Bouloingne et d'Auvergne. Flamel," and on f. <locus>160r</locus> "Ce livre est au duc de Berry. Jehan"); Jean-Baptiste Colbert (1619-1683), 2nd half of 17th century (stamped in gold on upper and lower covers) - it was ms. 2623 in his collection; 18th century stamp of Bibliotheca Regiae (royal library), where it was ms. 6985 (ff. <locus>1r</locus>, <locus>160v</locus>)</p>
+        </note>
+        <note rend="SELECT BIBLIOGRAPHY">
+          <p>1. Paulin Paris, <hi rend="italics">Les manuscrits françois de la Bibliothèque du roi</hi> (Paris: Techener, 1836-1848), III, pp. 174-176</p>
+          <p>2. Langlois, <hi rend="italics">Les Manuscrits</hi>, pp. 5-6 </p>
+        </note>
+        <note rend="N.B.">
+          <p>This description has been compiled using the site's images and various published sources. If you have corrections or additional information on the manuscript, please do contact us.</p>
+        </note>
+        <note>
+          <p>Description by Beatrice Radden Keefe</p>
+        </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl><note type="format">manuscript</note><note type="commonName">Français 380</note><title>Roman de la Rose</title><extent><measure quantity="160" unit="folios">160</measure><dimensions><height unit="mm">374</height><width unit="mm">280</width></dimensions></extent><note type="illustrations">50</note>
+               
+               
+               -
+               
+               <note type="material">parchment</note>
+               
+               <pubPlace>France</pubPlace>
+               
+               <date notAfter="1500" notBefore="1400">15th century</date>
+            
+            </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Paris</settlement>
+            <repository>Bibliothèque nationale de France</repository>
+            <idno>fr. 380</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="139r">1r-139r</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">139</note>
+              <note type="illustrations">47</note>
+              <note type="linesPerColumn">41</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+            <msItem n="2">
+              <locus from="140r" to="153r">140r-153r</locus>
+              <title>Testament</title>
+              <note type="textid">testament</note>
+              <note type="folios">14</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">41</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="3">
+              <locus from="154r" to="159v">154r-159v</locus>
+              <title>Sept articles de la foi</title>
+              <note type="textid">septarticles</note>
+              <note type="folios">6</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">41</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="4">
+              <locus from="159v" to="160r">159v-160r</locus>
+              <title>Codicille</title>
+              <note type="textid">codicille</note>
+              <note type="folios">2</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">41</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

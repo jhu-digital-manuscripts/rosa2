@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.091v.tif" pagination="172" reader="John Dee" signature="[P.ij.[v]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Vrbanus quintus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vrbanus Quintus PPL.</marginalia_text> <!-- M.B. Not certain about the first abbrevaition. --> <!-- FSF: not sure either; possibly p[ax], since one of the mottos of the Benedictine order, to which he adhered, was pax --> <!-- NBW: This transcription had too many Ps. I think the last one might be an L-->
+                    <person name="Pope Urban V"/>
+                </position>
+            </language>
+            <translation>Pope Urban V.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="dominus Gillerinus Abbas" type="straight"/>
+        <underline language="LA" method="pen" text="patria Anglicus" type="straight"/>
+        <underline language="LA" method="pen" text="vocatur Vrbanus" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

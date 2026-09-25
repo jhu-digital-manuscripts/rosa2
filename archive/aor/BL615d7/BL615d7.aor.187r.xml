@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.187r.tif" pagination="187" reader="John Dee" signature="Aaiij"/>
+    <annotation>
+        
+        <marginalia anchor_text="osa sradicare il loglio, si che non torni piu a germoglaire: cosi la gente mal' habituata non può             lasciar di ricader ne' suoi errori" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note this</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="D. Fernando di Gheuara" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>D. Firnando di Ghueuara</marginalia_text>
+                    <person name="Fernando Nino de Guevara"/>
+                </position>
+            </language>
+            <translation>Fernando Nino de Guevara</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="prender per moglie vna figliuola di Canua, ch' era la principal Reina di Suragna" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Adriano" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Adriano</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="MD" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>1500</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="restituire alcuni huomini" type="straight"/>
+        <underline language="IT" method="pen" text="stata la ruina loro, &amp;" type="straight"/>
+        <underline language="IT" method="pen" text="cosa sradicare il loglio, si che non torni piu a germoglaire: cosi la gente mal'habituata non può lasciar di ricader ne' suoi errori" type="straight"/>
+        <underline language="IT" method="pen" text="vn D. Fernando" type="straight"/>
+        <underline language="IT" method="pen" text="seditioso" type="straight"/>
+        <underline language="IT" method="pen" text="prender per moglie vna figliuola di Canua, ch'era la principal Reina di Suragna" type="straight"/>
+        <underline language="IT" method="pen" text="huomini di mala vita, i quali" type="straight"/>
+        
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        
+    </annotation>
+</transcription>

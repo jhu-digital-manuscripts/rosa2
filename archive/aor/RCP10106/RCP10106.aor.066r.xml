@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.066r.tif" pagination="131" reader="John Dee" signature="i 2"/>
+    <annotation>
+        
+        <marginalia anchor_text="Archidemus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Archidemus</marginalia_text>
+                    <person name="Archedemus of Tarsus"/>
+                </position>
+            </language>
+            <translation>Archedemus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="δικαιολογικός" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>δικαιολογικός</marginalia_text>
+                </position>
+            </language>
+            <translation>Judicial.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pamphilus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pamphilus</marginalia_text>
+                    <person name="Pamphilus"/>
+                </position>
+            </language>
+            <translation>Pamphilus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Apollodorus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Apollodôus</marginalia_text>
+                    <person name="Apollodorus of Pergamon"/>
+                </position>
+            </language>
+            <translation>Apollodorus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Theodôrus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Theodôrus</marginalia_text>
+                    <person name="Theodorus of Gadara"/>
+                </position>
+            </language>
+            <translation>Theodorus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Theodôrus, quid quale, quantum, ad aliquid. Sunt &amp; qui de eodem, &amp; de alio, modò qualitatem esse, modò finitione[m] uelint" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>4 Pra[e]dicame[n]ta</marginalia_text>
+                </position>
+            </language>
+            <translation>Four predicaments.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quale" type="straight"/>
+        
+        <numeral place="right_margin">.1.</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">4</numeral>
+        <numeral place="right_margin">5</numeral>
+        <numeral place="right_margin">4</numeral>
+        <numeral place="right_margin">6</numeral>
+        <numeral place="right_margin">7</numeral>
+        
+    </annotation>
+</transcription>

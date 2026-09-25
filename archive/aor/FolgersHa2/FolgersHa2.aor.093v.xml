@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.093v.tif" pagination="10" reader="Harvey" signature="[A5v]"/>	<!-- ABO 98left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Secretum singulare, Crocus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A singular secret, the crocus.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Omnes in vno Suauitates.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				All charms in one man.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Cogendus sibi quisqu[e]: idq[ue] quotidiana necessitate:
+						aut quotidiè quisq[ue] frigescet,
+						plùs, minùs.
+						Sola coacta Sibi ipsis pra[e]stant.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Everyone must drive themselves; and it must be done by necessity daily,
+				otherwise, daily one becomes cold, more, less.
+				Only things compelled by themselves can excel themselves. 
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Nunq[uam] hebetandus, aut obscurandus animi
+						splendor: sed nitidissimè semper fouenda 
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						pars a[e]therea.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The splendor of the mind must never be dulled or obscured, but the heavenly part must always be favored most brightly.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Viuidus exultat nocte, dieq[ue] vigor.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The lively man exults vigor by day and by night.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						The Toung, the great allectiue: the Hart, the great attractiue: the Hand, the great extensiue.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Desperatarum rerum remedium, Crocus. Meorum Emblematum Vnum.
+						Crocus fortunam propriè mutat: Nec vlla Planta, aut omninò aliud desperatis rebus
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						tam auxilium affert.
+						Cardanj l. I.
+						Synes. Somnio c. 30. de plantis.
+					</marginalia_text>
+					<person name="Girolamo Cardano"/>
+					<book title="Somniorium synesorium"/>					
+				</position>
+			</language>
+			<translation>
+				The cure for desparate matters, the crocus. One of my emblems.
+				The crocus changes ones own fortune. No plant, or anything else, is able to completely bring as much help
+				for desparate situations.
+				Cardano Book 1.
+				Somniorium synesorium, chapter 3, on plants.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Aurea etiam Aqua vita[e], mirificam habet virtutem alterantem.\
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Even the golden water of life has a wonderful further virtue.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="doppiezza, la malitia" type="straight"/>
+		<underline language="LA" method="pen" text="subditi estote senioribus" type="straight"/>
+		<underline language="IT" method="pen" text="ottenere audienza, &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="belare l'agnello" type="straight"/>
+		<underline language="IT" method="pen" text="all'agnello" type="straight"/>
+		<underline language="IT" method="pen" text="ti ringratio della" type="straight"/>
+		<underline language="IT" method="pen" text="L'arte, del dersi con" type="straight"/>
+		<underline language="IT" method="pen" text="egli harrà imparato" type="straight"/>
+		<underline language="IT" method="pen" text="Corace" type="straight"/>
+		<underline language="IT" method="pen" text="arte sofistica" type="straight"/>
+		<underline language="IT" method="pen" text="risponde Corace" type="straight"/>
+		<underline language="IT" method="pen" text="consiste nel persuadere" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="vn' agnell, &amp; con" type="straight"/>
+		<underline language="IT" method="chalk" text="Auuocato, ilquale" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<symbol name="Sun" place="right_margin"/>
+		
+		<symbol name="JC" place="intext"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--tro-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--con-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--occupa-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--agnel-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--ret-->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="head" text="doppiezza"/>
+		<mark method="pen" name="quotation_mark" place="intext"/>
+		
+		<errata amendedtext="deludersi" copytext="del dersi" language="IT"/>
+
+    </annotation>
+</transcription>

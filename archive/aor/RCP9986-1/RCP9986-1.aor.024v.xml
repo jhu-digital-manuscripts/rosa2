@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.024v.tif" pagination="[25v]" reader="John Dee" signature="[D.j.[v]]"/>  
+    
+    <annotation>
+        
+        <marginalia anchor_text="Foemina" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>fa[e]mina</marginalia_text>
+                </position>
+            </language>
+            <translation>A woman.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="famae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>fama.</marginalia_text>
+                </position>
+            </language>
+            <translation>Rumour.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="num cultu lingua retenta silet" type="straight"/>
+        <underline language="LA" method="pen" text="tolle animos, &amp; fortia facta recense" type="straight"/>
+        <underline language="LA" method="pen" text="Foemina tela tulit" type="straight"/>
+        <underline language="LA" method="pen" text="licuit non credere famae" type="straight"/>
+        
+    </annotation>
+    
+</transcription>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.205v.tif" pagination="234" reader="Harvey" signature="[P5v]"/>	<!-- ABO 210left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Vir prudens, et cordatus: serius, et industrius.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A prudent, wise, serious and industrious man.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						{ Abundè pra[e]ceptoru[m]:
+						facto opus. Omnis laus in actione.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Abounding in precepts: it is necessary for the deed. All praise lies in the action.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Quantus quantus esse potes; Semper esto Tantus. <!--JG: See for a similar construction Ha2.138v-->
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>You must always be as great as you can possibly be great.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Ipsa artis, virtutisq[ue] dignitas, actio.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The very act of art and dignity of virtue.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Nihil indignum viro: omnia prudentia, fortiq[ue] viro planè dignissima. Semper
+						etiam cogitandu[m], priuataru[m] virtutu[m] radicem esse Temperantiam; publicaru[m], Justitiam.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Nothing is unworthy to a man: all prudent things are clearly most worthy to a strong man. 
+				And the thing to be learned is that the root of private virtue is temperance, while the root of public virtue is justice.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Pulchrum, Semper esse amabilem, et la[e]tum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>To be beautiful is always to be lovable and cheerful.</translation>
+		</marginalia>
+		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.205v_0001" marginalia_continues_from="Ha2.206r_0001" marginalia_from_transcription="Ha2.206r.xml">
+			<language ident="LA">
+				<position book_orientation="180" place="tail">
+					<marginalia_text>
+						<!-- Continued from facing page, Ha2.205r --> [p. 235: Qui timescit, Vilescit. Qui tristescit,]
+						planè Sordescit. Tristi, et timido nihil turpius.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>[p. 235: He who is frigthened, becomes worthless. He who becomes sad] it grows entirely base. For the sad and timid mad nothing is more ugly.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Laudo virum in factis constantissimum, et planè virum: in dictis urbanum:
+						in omni conuersatione humanissimum. In actione Laconicum:
+						in oratione Atticum: in vtraq[ue] Romanum: in omni virili
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						industria, acerrimum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>I praise the man who is most constant in deed, and clearly is a man: cultivated in words,
+			most refined in all conversation. Spartan in action, Attic in speech: Roman in both; most keen in all manly industriousness.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Dante nostro" type="straight"/>
+		<underline language="IT" method="pen" text="Fortuna con" type="straight"/>
+		<underline language="IT" method="pen" text="Colui, lo cui sauer tutto trascende" type="straight"/>
+		<underline language="IT" method="pen" text="Fece li Cieli" type="straight"/>
+		<underline language="IT" method="pen" text="general ministra, &amp; Duce" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--que-->
+		
+		<mark method="pen" name="vertical_bar" place="intext"/> <!--ricchezze Dante-->
+		<mark method="pen" name="dot" place="intext"/> <!--elegenza, in-->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="general"/> 
+		
+
+    </annotation>
+</transcription>

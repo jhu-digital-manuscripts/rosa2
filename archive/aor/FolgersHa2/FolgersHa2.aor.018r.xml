@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+	<page filename="FolgersHa2.018r.tif" pagination="355" reader="Harvey"/>	<!-- ABO 022right  -->
+    	<annotation>
+    		
+        		<marginalia hand="Italian">
+        			<language ident="EN">
+            				<position book_orientation="0" place="head">
+                    				<marginalia_text>
+                    					One of mie last, but not least Memorials.
+                    				</marginalia_text>
+            				</position>
+        			</language>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="head">
+    					<marginalia_text>
+    						s[upr]a /
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				[See] above.
+    			</translation>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="EN">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						Ô braue Sir Antonie
+    						( Sherlie at larg: but Ô worthie Earle 
+    					</marginalia_text>
+    					<person name="Anthony Shirley"/>
+    					<person name="Robert Cecil"/> <!--Earl of Salisbury-->
+    				</position>
+    				<position book_orientation="0" place="right_margin">
+    					<marginalia_text>
+    						of Salisburie at hand.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						Quid prodest Optimum sine Effigie?
+    						Nemo vnq[uam] satis est dignissimos a[e]mulatus.
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Of what use is the best thing without a copy?
+    				No one ever emulated well enough the most worthy men.
+    			</translation>
+    		</marginalia>
+    		
+        
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="270" place="right_margin">
+    					<marginalia_text>
+    						Tria operantur miracula, Spiritus, Industria, et Peritia
+    						in specie proposita: sed oportet singula esse singularia. Na[m]
+    						ab ordinarijs causis stultum est exspectare extraordi- 
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    				<position book_orientation="270" place="left_margin">
+    					<marginalia_text>
+    						naria effecta. Superior medijs esse debet, qui vult fine superare. 
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Three things work miracles, specifically Spirit, Industry, and Experience: 
+    				but single things ought to be singular. For it is stupid to expect extraordinary 
+    				results	from ordinary causes.  He who wishes to surpass the limit, must
+    				be superior to average men.
+    			</translation>
+    		</marginalia>
+    		
+	    	<!-- Underlines -->
+	        
+    		<underline language="IT" method="pen" text="rare qualità" type="straight"/>
+    		<underline language="IT" method="pen" text="niuno d'essi" type="straight"/>
+    		<underline language="IT" method="pen" text="la cagione" type="straight"/>
+    		<underline language="IT" method="pen" text="ella conduce al Culiseo" type="straight"/>
+    		<underline language="IT" method="pen" text="antefiteatro di Vespesiano" type="straight"/>
+    		<underline language="IT" method="pen" text="Culiseo per" type="straight"/>
+    		<underline language="IT" method="pen" text="di uituperosa lussuria a colui" type="straight"/>
+    		<underline language="IT" method="pen" text="Pungente" type="straight"/>
+    		<underline language="IT" method="pen" text="ingegnoso" type="straight"/>
+    		<underline language="IT" method="pen" text="il medesimo" type="straight"/>
+    		<underline language="IT" method="pen" text="sotto colore di finta amicitia stato" type="straight"/>
+    		<underline language="IT" method="pen" text="casa di certi mercanti" type="straight"/>
+    		<underline language="IT" method="pen" text="interi con esso" type="straight"/>
+    		<underline language="IT" method="pen" text="professione d'essergli amicissimi" type="straight"/>
+    		<underline language="IT" method="pen" text="discreto" type="straight"/>
+    		<underline language="IT" method="pen" text="debite gratie per l'hospitalità riceuuta" type="straight"/>
+    		<underline language="IT" method="pen" text="molto piu tempo di quello" type="straight"/>
+    		<underline language="IT" method="pen" text="che da principio" type="straight"/>
+    		<underline language="IT" method="pen" text="di tutte quelle spese, che per conto suo" type="straight"/>
+    		<underline language="IT" method="pen" text="loro discrettione" type="straight"/>
+    		<underline language="IT" method="pen" text="Negarono essi di" type="straight"/>
+    		<underline language="IT" method="pen" text="rimisero a" type="straight"/>
+    		<underline language="IT" method="pen" text="eccessiuamente a tassare a loro utile" type="straight"/>
+    		<underline language="IT" method="pen" text="conueniente &amp; honesta tassa" type="straight"/>
+    		<underline language="IT" method="pen" text="l'ingordigia de' mercanti" type="straight"/>
+    		<underline language="IT" method="pen" text="non fu" type="straight"/>
+    		<underline language="IT" method="pen" text="piaceuolmente" type="straight"/>
+    		
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+    		
+	    	<symbol name="Mercury" place="right_margin"/>
+	    
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark method="pen" name="plus_sign" place="right_margin"/> <!-- terminando; -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- importu -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- l'innan -->
+    		<mark method="pen" name="horizontal_bar" place="right_margin"/> <!-- nel partir -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- l'hospi -->
+    		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- sodisfar --> 
+	    	
+	    	<!-- Left margin -->
+	    	<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- tro, se non  -->
+    		<mark method="pen" name="plus_sign" place="left_margin"/> <!--fatta una --> 
+		    
+	    	<!-- Intext -->
+	    	<mark language="IT" method="pen" name="plus_sign" place="intext" text="Culiseo"/>
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="antefiteatro"/>
+    		<mark method="pen" name="comma" place="intext"/> <!-- Culiseo per -->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Pungente"/>
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="finta"/>
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- essergli amicissimi -->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="discreto"/>
+    		<mark method="pen" name="comma" place="intext"/> <!-- tassa ma -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- mercanti non fu -->
+
+    </annotation>
+</transcription>

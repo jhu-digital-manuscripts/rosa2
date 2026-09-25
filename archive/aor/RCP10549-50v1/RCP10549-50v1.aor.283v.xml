@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.283v.tif" pagination="546" reader="John Dee" signature="[mmmm.i.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="sermunculis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>sermu[n]culi</marginalia_text>
+                </position>
+            </language>
+            <translation>Rumours.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="plausu" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>plausus</marginalia_text>
+                </position>
+            </language>
+            <translation>Applause.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="Antiochus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Antiochus</marginalia_text>
+                    <person name="Antiochus III the Great"/>
+                </position>
+            </language>
+            <translation>Antiochus III the Great.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="vestutas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vetuitas</marginalia_text>
+                </position>
+            </language>
+            <translation>Antiquity.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="quae publicis Po. Ro. literis monimentísque consignata sunt, quae vnqua[m] vetustas obruet? aut quae tanta delebit obliuio? Quid" type="straight"/>
+        <underline language="LA" method="pen" text="etiam sola bona esse dixerunt" type="straight"/>
+        <underline language="LA" method="pen" text="Haec ille reputans, &amp; dies &amp; noctes cogitans, no[n] modo" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">18</numeral>
+        
+    </annotation>
+</transcription>

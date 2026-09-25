@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.035v.tif" pagination="54" reader="John Dee" signature="[e 3[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="biothanatos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Biothanati.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Those died of violence.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aurifices" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Aurifices aut tales
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Goldsmiths or such.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="δυοδεκατημόριον" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>δυοδεκατημόριον</marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Twelfth part.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Quod ego meo damno didici
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                What I learnt through my pain.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="♂ in horosc. co[n]stituto, in exiliu[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Exiliu[m] horoscopa[n]te ♂
+                    </marginalia_text>
+                    <symbol_in_text name="Mars"/>
+                </position>
+            </language>
+            <translation>
+                An exile after drawing an horoscope of Mars.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        [At qui p[otes]t esse in matutino ortu in secundo du[m] dies est, [nisi] ☉ in 7 domo sit vel circa - deleted]
+                    </marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                </position>
+            </language>
+            <translation>
+                [But what can be in the rise of the early morning in the second [house], while the day is [unless] the Sun is in the seventh house or close] 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Maximu[m] q[uod]da[m] facimus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The greatest we create.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="horosc. loco fuerit inuentus biothanatos enim sine dubitatione perficiet" type="straight"/>
+        <underline language="LA" method="pen" text="♃, quodam subtili artificio saepe pollentes, aut aurifices" type="straight"/>
+        <underline language="LA" method="pen" text="autem si fuerit partiliter in horosc. constitutus, sine radiatione ♃, faciet largiores uiros, plus uolentes" type="straight"/>
+        <underline language="LA" method="pen" text="graues" type="straight"/>
+        <underline language="LA" method="pen" text="qui quicquid ausi fuerint nulla potuerunt ratione co[m]plere" type="straight"/>
+        <underline language="LA" method="pen" text="uxores etiam" type="straight"/>
+        <underline language="LA" method="pen" text="sed haec prima quide[m] aetate depereunt" type="straight"/>
+        <underline language="LA" method="pen" text="Sed &amp; ego scio, quod in plurimis genituris inueni, multos ♂ in horosc. co[n]stituto, in exiliu[m] datos, &amp; bene &amp;strenue              res pub. administrasse, déq[ue] eis benemeritos" type="straight"/>
+        <underline language="LA" method="pen" text="praesertim si in matutino ortu fuerit" type="straight"/>
+        <underline language="LA" method="pen" text="aute[m] à frigore, aut" type="straight"/>
+        <underline language="LA" method="pen" text="Erunt autem semper tales, in aestu animi. &amp; in maximis necessitatibus constituti" type="straight"/>
+        <underline language="LA" method="pen" text="periculorum continuatione decipere" type="straight"/>
+        <underline language="LA" method="pen" text="Alienas aut[em], q[ui] sic ♂ habuerit, desiderabit, &amp; omnibus in uidebit" type="straight"/>       
+        
+        <mark method="pen" name="bracket" place="intext"/> <!-- affectu Per -->
+        
+    </annotation>
+</transcription>

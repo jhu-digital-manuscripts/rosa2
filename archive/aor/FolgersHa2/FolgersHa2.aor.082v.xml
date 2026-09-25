@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.082v.tif" reader="Harvey" signature="[**2v]"/>	<!-- ABO 87left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Eutrapeli pragmatica Metamorphosis.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				The pragmatic transformation of Eutrapelus.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Juvat, in iocis
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						haurire salem terra[e], et lucem Mundi.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				It is pleasing in jokes to draw salt from the earth and light from the world. 
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						vtrunq[ue] Sapidissimum, et Splendidissimum.
+						Alij seria pra[e]tendunt: solus Eutrapelus seria
+						exequitur; perpetrat egregia.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				Each is most prudent and most splendid. 
+				Others assert serious matters, but only Eutrapelus carries out serious matters.
+				He accomplishes exceptional things.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Magna in parua mutat Eutrapelus:
+						parua in magna.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				Eutrapelus changes great into small, and small into great.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Arcana Metamorphosis Eutrapeli. Aliorum seria, in iocos conuertenda: Tui ipsius
+						Joci, in Seria. Alienis addatur hyperbolic[ως], aut ironic[ως]: Tuis detrahatur: sed pra[e]ter
+						Tua,
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<language ident="ES">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						todos es nada.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The mysterious transformation of Eutrapelus. The serious matters of others must be converted into playthings.
+				Your playthings must be converted into serious matters. One associates with strangers hyperbolically or ironically,
+				but withhold this tendency with your friends. Apart from your own matters, all is for naught.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						( Musa magis florida, quàm Ver.)
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The muse is more flowery than the spring.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Malim eos Auctores, in quibus nihil deest; quàm eos, in quibus multa redundant.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				I prefer those authors, in whom nothing is lacking, rather than those authors, in whom many things abound.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="L'inuidia nuocer al" type="straight"/>
+		<underline language="IT" method="pen" text="la vir" type="straight"/>
+		<underline language="IT" method="pen" text="la virtù" type="straight"/>
+		<underline language="IT" method="pen" text="nimico" type="straight"/>
+		<underline language="IT" method="pen" text="Oracolo di Scipione" type="straight"/>
+		<underline language="IT" method="pen" text="lo stato" type="straight"/>
+		<underline language="IT" method="pen" text="piu alla riuscita, che all'entrata delle" type="straight"/>
+		<underline language="IT" method="pen" text="Acutezza, &amp; prontezza" type="straight"/>
+		<underline language="IT" method="pen" text="ogni periglio" type="straight"/>
+		<underline language="IT" method="pen" text="della pouertà" type="straight"/>
+		<underline language="IT" method="pen" text="peste l'nuidia" type="straight"/>
+		<underline language="IT" method="pen" text="parca, &amp; industriosa" type="straight"/>
+		<underline language="IT" method="pen" text="il silentio" type="straight"/>
+		<underline language="IT" method="pen" text="Detto corrispo[n]de[n]te a'fatti" type="straight"/>
+		<underline language="IT" method="pen" text="di minor fortuna" type="straight"/>
+		<underline language="IT" method="pen" text="Il nimico" type="straight"/>
+		<underline language="IT" method="pen" text="metter in oblio" type="straight"/>
+		<underline language="IT" method="pen" text="La forza" type="straight"/>
+		<underline language="IT" method="pen" text="soffocar la ragione" type="straight"/>
+		<underline language="IT" method="pen" text="sofisticheria, &amp; ostentatione non" type="straight"/>
+		<underline language="IT" method="pen" text="dotti, &amp; saui" type="straight"/>
+		<underline language="IT" method="pen" text="la vanagloria" type="straight"/>
+		<underline language="IT" method="pen" text="sogni, &amp; vento" type="straight"/>
+		<underline language="IT" method="pen" text="consiglio de'saui" type="straight"/>
+		<underline language="IT" method="pen" text="mal'vsata, tornar'" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="tù essere necessaria" type="straight"/>
+		<underline language="IT" method="chalk" text="la virtù del" type="straight"/>
+		<underline language="IT" method="chalk" text="ogni periglio" type="straight"/>
+		<underline language="IT" method="chalk" text="Vituperabile esser la vita crapulosa" type="straight"/>
+		<underline language="IT" method="chalk" text="laudabile la parca, &amp; industriosa" type="straight"/>
+		<underline language="IT" method="chalk" text="modo di vendicarsi contra igrandi" type="straight"/>
+		<underline language="IT" method="chalk" text="sofisticheria, &amp; ostentatione" type="straight"/>
+		
+		<symbol name="SS" place="left_margin"/>
+		
+		<symbol name="SS" place="intext"/>
+		
+		<mark method="pen" name="quotation_mark" place="left_margin"/>
+		<mark method="pen" name="quotation_mark" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--mori-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--talho-->
+		
+		<mark method="pen" name="dot" place="intext"/> <!--pigra, &-->
+		<mark method="pen" name="dot" place="intext"/> <!--insieme, cioe-->
+		
+    </annotation>
+</transcription>

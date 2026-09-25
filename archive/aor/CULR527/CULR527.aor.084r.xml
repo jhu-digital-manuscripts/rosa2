@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.084r.tif" pagination="84" reader="John Dee" signature="Liiij"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Nonnius
+                    </marginalia_text>
+                    <person name="Pedro Nunes"/>
+                </position>
+            </language>
+            <translation>
+                Nunes.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="figura lineae curuae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        figura linea[e] curva[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A figure of a curved line.
+            </translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="probas" type="double"/>
+        <underline language="LA" method="pen" text="quòd ad sciendum rotam in qua duo loca sunt, circulos maiores per ambo describere debemus" type="straight"/>
+        <underline language="LA" method="pen" text="Quod totum falsum est" type="straight"/>
+        <underline language="LA" method="pen" text="rumi aequidistantiam" type="straight"/>
+        <underline language="LA" method="pen" text="certa esse potest nisi in orbe recto" type="straight"/>
+        <underline language="LA" method="pen" text="horizo[n]tis faciet ut no[n] oste[n]dat, sed no[n] faciet ut ad illu[m] no[n] procedat,              tametsi illud oste[n]dat: quia illud oste[n]dit à principio, ab horizo[n]te qui sicut acus rectus erat" type="straight"/>
+        <underline language="LA" method="pen" text="Quod totu[m] in figura lineae curuae explicitu[m] remanet" type="straight"/>
+        <underline language="LA" method="pen" text="globum pluribus alijs rumis assignari non posse, ad hoc ut ueri sint, nisi parallelis" type="straight"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="Quippe quum in eo probas quòd ad sciendum rotam in qua             duo loca sunt, circulos maiores per ambo describere debemus; &amp; quòd gradus horizontis collecti inter punctum ubi circulus quem descripsimus horizonta secat,             nobis ostendent quaenam sit rota. Quod totum falsum est, per rationes supradictas. Quippe quum rumi aequidistantiam seruare debeant, maximè patet             quòd quanuis acus per rumum nordeste ostendat quadragintaquinque gradus quartae orientalis septentrionalis, non ideo talis demonstratio certa esse potest nisi in orbe recto"/>
+        
+        <mark method="pen" name="bracket" place="intext"/>  <!-- esse. Quippe -->
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="tail" type="manicule"/>
+  
+    </annotation>
+</transcription>

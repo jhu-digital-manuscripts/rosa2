@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+	<page filename="FolgersHa2.037v.tif" pagination="394" reader="Harvey"/>	<!-- ABO 042left  -->
+    	<annotation>
+    		
+            		<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+            			<position book_orientation="0" place="head">
+                    				<marginalia_text>
+                    					{ Meus Althusius: meus Venatorius: Speculator
+                    					meissimus.
+                      			</marginalia_text>
+            				<person name="Johannes Althusius"/>
+            				<person name="Thomas Venatorius"/>
+            				<person name="Guillaume Durand"/>
+            				<emphasis method="chalk" type="straight"/>
+            			</position>
+        			</language>
+        			<translation>
+        				{ My Althusius, my Venatorius, my very own Speculator.
+        			</translation>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="left_margin">
+    					<marginalia_text>
+    						2. { Meus Gandinus: meus Apollonius: Wecherus meissimus.
+    					</marginalia_text>
+    					<person name="Marcantonio Gandino"/>
+    					<person name="Apollonius"/>
+    					<person name="Johannes Jacob Wecker"/>
+    				</position>
+    			</language>
+    			<translation>
+    				My Gandino, my Apollonius, my very own Wecker.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="left_margin">
+    					<marginalia_text>
+    						3. { Mea Euschemosyne: mea Fronia: meissima Entelechia. Propria quarto modo expeditio.
+    					</marginalia_text>    		
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				My Gracefulness, my Wisdom, my very own Actuality. My own enterprise with a fourth way.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="left_margin">
+    					<marginalia_text>
+    						4.
+    					</marginalia_text>
+    				</position>
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						{ Meus Rabela[e]sius: meus Martialis:
+    						Domenicus meissimus. Ad vngue[m] totus.	
+    					</marginalia_text>
+    					<person name="Francois Rabelais"/>
+    					<person name="Martial"/>
+    					<person name="Lodovico Domenichi"/>
+    				</position>
+    			</language>
+    			<translation>
+    				{ My Rabelais, my Martial, my very own Domenichi. Completely by heart. 
+    			</translation>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						aptè. qualis qua[e]stio, talis responsio. 
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Aptly. As the question, so the response.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						s[upr]a
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				[See] above.
+    			</translation>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="90" place="right_margin">
+    					<marginalia_text>
+    						Gandinus, et Weccherus: Althusius, et Speculator: Rabela[e]sius, et Domenicus
+    						Gabrielis.
+    					</marginalia_text>
+    					<person name="Marcantonio Gandino"/>
+    					<person name="Johannes Jacob Wecker"/>
+    					<person name="Johannes Althusius"/>
+    					<person name="Francois Rabelais"/>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Marcantonio Gandino and Johannes Jacob Wecker; Johannes Althusius and Guillaume Durand; Francois Rabelais and Gabriel Domenicus. <!--JG: Unsure about 'Gabriel Domenicus'. Chris, any ideas?-->
+    			</translation>
+    		</marginalia>
+        
+	    	<!-- Underlines -->
+	        
+    		<underline language="IT" method="pen" text="ridere" type="straight"/>
+    		<underline language="IT" method="pen" text="dallo Spini potrete intendere il mio parere" type="straight"/>
+    		<underline language="IT" method="pen" text="conferito l'uno con" type="straight"/>
+    		<underline language="IT" method="pen" text="Il Domenichi ui scriue" type="straight"/>
+    		<underline language="IT" method="pen" text="quanto uoi desiderate sapere da me" type="straight"/>
+    		<underline language="IT" method="pen" text="l'amico commune" type="straight"/>
+    		<underline language="IT" method="pen" text="niuno" type="straight"/>
+    		<underline language="IT" method="pen" text="data espedita" type="straight"/>
+    		<underline language="IT" method="pen" text="persona giudiciosissima" type="straight"/>
+    		<underline language="IT" method="pen" text="essi ui rispondono benissimo alle rime" type="straight"/>
+    		<underline language="IT" method="pen" text="uostra dimanda a loro senza sugo, &amp; senza concetto" type="straight"/>
+    		<underline language="IT" method="pen" text="a uoi non doueua essere d'altra maniera" type="straight"/>
+    		<underline language="IT" method="pen" text="Arguto" type="straight"/>
+    		<underline language="IT" method="pen" text="di cose piaceuoli &amp; garbate" type="straight"/>
+    		<underline language="IT" method="pen" text="sopra l'ethimologia" type="straight"/>
+    		<underline language="IT" method="pen" text="prouincie &amp; città del mondo" type="straight"/>
+    		<underline language="IT" method="pen" text="il nome" type="straight"/>
+    		<underline language="IT" method="pen" text="Venetia" type="straight"/>
+    		<underline language="IT" method="pen" text="prontissimo, &amp; acutissimo intelletto" type="straight"/>
+    		<underline language="IT" method="pen" text="subito" type="straight"/>
+    		<underline language="IT" method="pen" text="dal Latino" type="straight"/>
+    		<underline language="IT" method="pen" text="ueni" type="straight"/>
+    		<underline language="IT" method="pen" text="etiam," type="straight"/>
+    		<underline language="IT" method="pen" text="inuitato a tornarci anchora" type="straight"/>
+    		<underline language="IT" method="pen" text="Rise il" type="straight"/>
+    		<underline language="IT" method="pen" text="prontezza del motto" type="straight"/>
+    		<underline language="IT" method="pen" text="Signore miserissimo" type="straight"/>
+    		<underline language="IT" method="pen" text="Spagnuolo" type="straight"/>
+    		<underline language="IT" method="pen" text="S. Lopes ad" type="straight"/>
+    		<underline language="IT" method="pen" text="alloggiar seco" type="straight"/>
+    		<underline language="IT" method="pen" text="fuor del" type="straight"/>
+    		<underline language="IT" method="pen" text="prouision di pollami" type="straight"/>
+	       
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	    	<symbol name="SS" place="head"/>
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+    		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- intendere il -->
+	    	<mark method="pen" name="plus_sign" place="right_margin"/> <!-- lungo -->
+    		<mark method="pen" name="bracket" place="right_margin"/> <!-- essendo ... maniera -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- piace -->
+    		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- della -->
+    		<mark method="pen" name="equal_sign" place="right_margin"/> <!--  molto. -->    		
+	    	
+	    	<!-- Left margin -->
+    		<mark method="pen" name="horizontal_bar" place="left_margin"/> <!-- noi gli rispose -->
+	    	<mark method="pen" name="plus_sign" place="left_margin"/> <!-- mio parere  -->
+    		<mark method="pen" name="plus_sign" place="left_margin"/> <!-- la risposta -->
+    		<mark method="pen" name="horizontal_bar" place="left_margin"/> <!-- la risposta -->
+    		<mark method="pen" name="straight_quotation_mark" place="left_margin"/> <!-- le prouincie -->
+    		<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- & etiam -->
+    		<mark method="pen" name="horizontal_bar" place="left_margin"/> <!-- Aspettando -->
+		    
+	    	<!-- Intext -->
+	    	<mark language="IT" method="pen" name="plus_sign" place="intext" text="Domenichi"/>
+    		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- First chalk mark in first paragraph -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- amico commune -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- persona -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- alle rime -->
+    		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- Second chalk mark in first paragraph -->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="dimanda"/>
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- risposta -->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Arguto"/>
+    		<mark method="pen" name="dot" place="intext"/> <!-- Lollio, & -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- ingegni, cade' -->
+    		<mark language="IT" method="pen" name="equal_sign" place="intext" text="ethimologia"/>
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- & citta' -->
+    		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- Chalk mark in second paragraph -->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Venetia"/>
+    		<mark method="pen" name="dot" place="intext"/> <!-- Venetia, egli -->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="ueni"/>
+    		<mark method="pen" name="dot" place="intext"/> <!-- motto, & -->
+    		<mark method="pen" name="straight_quotation_mark" place="intext"/> <!-- miserissimo -->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Spagnuolo"/>
+    		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- Chalk mark in third paragraph -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- seco, fuor -->
+    		
+    </annotation>
+</transcription>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.086v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="giganteam turrim" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Gigantea turris.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The Giant's Tower.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quinq[ue] anni" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Quinq[ue] anni
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Five years.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="giganteam turrim" type="straight"/>
+        <underline language="LA" method="pen" text="i[n]cepissent Cador" type="straight"/>
+        <underline language="LA" method="pen" text="armoru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="alearum vero &amp; mulierum" type="straight"/>
+        <underline language="LA" method="pen" text="inflammationes, ceteraq[ue] oblectame[n]ta adesse: dubitandu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="sunt quinq[ue]" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

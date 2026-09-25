@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note rend="IDENTIFICATION">
+          <p>Manchester, John Rylands University Library, French 66</p>
+        </note>
+        <note rend="CONTENTS">
+          <p><hi rend="italics">Roman de la Rose</hi> with preliminary tables of contents and chapter headings (ff. 1v-163v)</p>
+        </note>
+        <note rend="MATERIAL">
+          <p>Parchment</p>
+        </note>
+        <note rend="ORIGIN">
+          <p>Picardie?, France</p>
+        </note>
+        <note rend="DATE">
+          <p>1st half of 14th century</p>
+        </note>
+        <note rend="SCRIPT">
+          <p>Gothic, written in two columns of 35 lines, 2 scribes</p>
+        </note>
+        <note rend="ARTISTS">
+          <p>1 artist</p>
+        </note>
+        <note rend="DECORATION">
+          <p>1 historiated initial ‘M’ (L’Amans Sleeps) and foliate bar border on f. <locus>7r</locus> (with a dog chasing a hare and a hybrid creature wearing a mitre and holding a chalice), and 3 single-column miniatures in colors and brown ink:  ff. <locus>22r</locus> (Amors Explains His Commandments), <locus>87r</locus> (Amors and Barons Come to L’Amans Aid), <locus>87v</locus> (Amors Prays for the Birth of Jean de Meun), in red, blue and brown ink. Red and blue pen initials throughout.  </p>
+        </note>
+        <note rend="DIMENSIONS">
+          <p>280 x 201 mm (text block, 212 x 153 mm) </p>
+        </note>
+        <note rend="FOLIATION">
+          <p>ff. iii + 163 + iii</p>
+        </note>
+        <note rend="COLLATION">
+          <p>Mainly quires of 8</p>
+        </note>
+        <note rend="BINDING">
+          <p>English (Fazakerley of Liverpool), 19th century; blue morocco with Johns Rylands monogram (JR) stamped in gold on front cover.</p>
+        </note>
+        <note rend="PROVENANCE">
+          <p>Friars Minim convent at Mons, 17th century ("De Conventu Patrum Minimorum Montensium" written in cursive at the top of f. <locus>1r</locus>); John Rylands Library, late 19th century (1894 bookplate, inside upper cover); Rylands library merged with Manchester University Library in 1972.</p>
+        </note>
+        <note rend="NOTES">
+          <p>5 <hi rend="italics">Capitle</hi> or chapter titles given in red (f. <locus>1v</locus>); prose treatise on the nature of love (ff. <locus>2r</locus>-<locus>4r</locus>); <hi rend="italics">li capitle et li title</hi> (ff. <locus>4v</locus>-<locus>6v</locus>). Large number of marginal notes in red. </p>
+        </note>
+        <note rend="SELECT BIBLIOGRAPHY">
+          <p>1. Robert Fawtier, “Deux Manuscrits du ‘Roman de la Rose’,” <hi rend="italics">Romania</hi>, 53 (1932), pp. 263-73.</p>
+          <p> 2. Cedric E. Pickford, “‘The Roman de la Rose’ and a Treatise Attributed to Richard de Fournival; Two Manuscripts in the Johns Rylands Library,” <hi rend="italics">Bulletin of the John Rylands Library</hi>, 34 (1951-52) pp. 344-49.
+               </p>
+        </note>
+        <note rend="N.B.">
+          <p>This description has been compiled using the site's images and various published sources. If you have corrections or additional information, please do contact us.</p>
+        </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscript</note>
+          <note type="commonName">Rylands French 66</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="163" unit="folios">163</measure>
+            <dimensions>
+              <height unit="mm">280</height>
+              <width unit="mm">201</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">4</note>
+          <note type="material">parchment</note>
+          <pubPlace>France</pubPlace>
+          <date notAfter="1400" notBefore="1300">14th century</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Manchester, UK</settlement>
+            <repository>John Rylands University Library</repository>
+            <idno>French 66</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="7r" to="163v">7r-163v</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">157</note>
+              <note type="illustrations">4</note>
+              <note type="linesPerColumn">35</note>
+              <note type="leavesPerGathering">8</note>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

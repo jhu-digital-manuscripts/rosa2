@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.198r.tif" pagination="219" reader="Harvey" signature="[O6r]"/>	<!-- ABO 202right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.198r_0001" marginalia_continues_from="Ha2.197v_0001" marginalia_from_transcription="Ha2.197v.xml">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						<!-- Continued from facing page, head, Ha2.197v --> [p. 218: Vel Arte, et Virtute:]
+						Vel ratione, et industria.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>[p. 218: Either by art and virtue:] or by reason and industry.</translation>
+		</marginalia>
+		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.198r_0002" marginalia_continues_from="Ha2.197v_0002" marginalia_from_transcription="Ha2.197v.xml">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						<!-- Continued from facing page, in text, Ha2.197v --> [p. 218: ( Sum other prudent; He profounde:
+						other industrious; He valorous: Other]
+						Other haue practis: onlie He entelechie.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Antonini vita, vnicè ciuilis, et philosophica.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The life of Anthony, uniquely civil and philosophical.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Plus diligentia[e]; plus, plusq[ue] spiritus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>More diligence; more and more spirit.</translation>
+		</marginalia>
+
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						The most effectiue Causes, &amp; predominant Meanes, that exceede not the
+						possibilitie of your Nature, Art, or Exercise: &amp; may[e deleted] anie way encrease =
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						= the abilities of your mind, boddie, or estate: priuate, or publique; in [the]
+						howse, or the Cittie; in the realme, or the World. Cause causeth.
+					</marginalia_text> 
+				</position>
+			</language>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="sia vana" type="straight"/>
+		<underline language="IT" method="pen" text="speranza" type="straight"/>
+		<underline language="IT" method="pen" text="fallace" type="straight"/>
+		<underline language="IT" method="pen" text="disegno" type="straight"/>
+		<underline language="IT" method="pen" text="sia'l mondo" type="straight"/>
+		<underline language="IT" method="pen" text="d'ignoranza" type="straight"/>
+		<underline language="IT" method="pen" text="Morte mia" type="straight"/>
+		<underline language="IT" method="pen" text="vel dimostra" type="straight"/>
+		<underline language="IT" method="pen" text="padri" type="straight"/>
+		<underline language="IT" method="pen" text="i figliuoli" type="straight"/>
+		<underline language="IT" method="pen" text="i meriti loro" type="straight"/>
+		<underline language="IT" method="pen" text="suo figliuolo di sè generato" type="straight"/>
+		<underline language="IT" method="pen" text="i pidocchi di noi" type="straight"/>
+		<underline language="IT" method="pen" text="cose brutte &amp; inutili" type="straight"/>
+		<underline language="IT" method="pen" text="figliuoli" type="straight"/>
+		<underline language="IT" method="pen" text="essi il meritano" type="straight"/>
+		<underline language="IT" method="pen" text="sceleratezze sopramerita" type="straight"/>
+		<underline language="IT" method="pen" text="Marcantonio Imperadore" type="straight"/>
+		<underline language="IT" method="pen" text="filosofo" type="straight"/>
+		<underline language="IT" method="pen" text="al punto della morte" type="straight"/>
+		<underline language="IT" method="pen" text="racco[m]mandasse il suo figliuolo" type="straight"/>
+		<underline language="IT" method="pen" text="à Dio onnipotente" type="straight"/>
+		<underline language="IT" method="pen" text="poi, à voi" type="straight"/>
+		<underline language="IT" method="pen" text="suoi amici" type="straight"/>
+		<underline language="IT" method="pen" text="piangere" type="straight"/>
+		<underline language="IT" method="pen" text="mi piangete voi" type="straight"/>
+		<underline language="IT" method="pen" text="dolete voi piu tosto della Morte" type="straight"/>
+		<underline language="IT" method="pen" text="commune à voi" type="straight"/>
+		<underline language="IT" method="pen" text="come à me" type="straight"/>
+		<underline language="IT" method="pen" text="La dottrina esser" type="straight"/>
+		<underline language="IT" method="pen" text="strumento, per" type="straight"/>
+		<underline language="IT" method="pen" text="l'ostinatione d'vn Principe" type="straight"/>
+		<underline language="IT" method="pen" text="Cesare Augusto" type="straight"/>
+		<underline language="IT" method="pen" text="Sostrato huomo" type="straight"/>
+		<underline language="IT" method="pen" text="sempre fauorita" type="straight"/>
+		<underline language="IT" method="pen" text="d'esso Marcantonio" type="straight"/>
+		<underline language="IT" method="pen" text="per via de" type="straight"/>
+		
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Quanta sia vana ogni speranza nostra, Quanto fallace ciaschedun disegno, Quanto sia'l mondo d'ignoranza pregno, La Morte mia, hor chiaro, vel dimostra"/>
+		
+		<mark method="pen" name="plus_sign" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!--ri-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--sa-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--inuti-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--Im-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--mor-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--Sostra-->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="head" text="speranza"/>
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="disegno"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="mondo"/>
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="d'ignoranza"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="i meriti loro"/>
+		<mark method="pen" name="apostrophe" place="intext"/> <!--sopramerita Et-->
+		<mark method="pen" name="comma" place="intext"/> <!--onnipotente &-->
+		<mark method="pen" name="apostrophe" place="intext"/> <!--degno il-->
+		
+    </annotation>
+</transcription>

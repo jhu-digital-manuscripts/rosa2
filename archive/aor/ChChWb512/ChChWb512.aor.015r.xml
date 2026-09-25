@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.015r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="triginta dierum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        atr. 32 dier[um]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>32 days.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="flumen Maleae transeu[n]tes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Bryta[n]ic[us] textus non habet
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The English text does not have this.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        [su]spicior [h]ac m?e[n]tione[m] [co]rrup [tam] esse
+                    </marginalia_text> <!--Transcription incomplete // NBW: "[su]spicior [h]ac m?e[n]tione[m] [co]rrup [tam] esse" Possibly hac sectionem"The "o" ties it to the bottom note below, this looks like it's anchored to "Tyrrhenum" in the text.-->
+                </position>
+            </language>
+            <translation>I suspect that this mention is corrupted</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        J[ohn] D[ee]. fortè, vbi infra habetur Æquor Tyrenu[m], debet esse a[e]quor Pyren[a]eu[m]. vbi Montes Pyrena[e]i, in mare q[ua]si Brytanicu[m]
+                        procurrere dicuntur ab ortelio et alijs 
+                    </marginalia_text>
+                    <person name="John Dee"/>
+                    <person name="Abraham Ortelius"/>
+                    <location name="Pyrenees"/>
+                    <location name="Britain"/>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        facilis eni[m] erat lapsus, scribere T pro P: cu[m] illa curvatura vel paulo D[???], vel obscuriori ducta fuerit
+                        Vt Mare Atlantica propter mo[n]te[m] Altla[n]ticu[m] in Mauritania [etc].
+                    </marginalia_text> <!--Transcription incomplete / NBW: Stll incomplete - "paulo" above posible "parte [??] linea"? .-->
+                    <location name="Mauritania"/>
+                </position>
+            </language>
+            <translation>John Dee. Perhaps, when below it is had Tyrrhenian Sea, it must be Pyrenean sea. 
+                When [it has] the Pyrenees to advance in the British sea as it were, it is learnt from Ortelius and others, that was in fact an easy mistake to write T for P: when that rounding is either more [???] or obscurely drawn. 
+                When Atlantic Ocean, rather than the Atlantika Mountains in Mauritania.</translation>
+            <!-- NBW: last part of the translation more likely "Hence the Alantic Ocean (is named) from the Atlantika Mountains in Mauritania." -->
+        </marginalia>
+        
+        <marginalia anchor_text="aras Philenorum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ara[e] Phila[e]noru[m] orbiu[m] geographis nota[e],
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Notes of the Philenean altars.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="flumen Maleae transeu[n]tes applicueru[n]t se in Mauritaniam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        fl[uvius] Malua. Ptoloma[e]o
+                    </marginalia_text>
+                    <person name="Ptolemy"/>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Μαλϒα
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        dictu[m] in Mauritaniaru[m] confinio.
+                    </marginalia_text>
+                    <location name="Mauritania"/>
+                </position>
+            </language>
+            <translation>
+                The river Malua called by Ptolemy (Malga), in proximity of Mauritania
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Iam retro navigare visi su[n]t q[uo]d vix videtur probabile, tu[m] ob Bruti infortun[am?] in Italia co[m]issu[m] tu[m] quia progredi conabatur,
+                        vltra gallica regna [etc?]
+                    </marginalia_text>
+                    <!--JG: Person mentioned?-->
+                    <location name="Italy"/>
+                </position>
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        ciuitate Asarath vide in su[???] Numedico apud Ptoloma[e]u[m]. lo[n]g[itudo] 28 1/2 lat[itudo] 31 1/2. Montes Azara[e] agnoscit Io[uann]is Boccatius
+                        in Mauritania[e] finibus, disterminantes Mauritania[m] et aphrica[m]: Ruscicada[m] vide apud Ptoloma[e]u[m] [tab. 2 Aphrica[e]]. Lo[n]g[itudo] 28 ferè Lat[itudo] 32 1/2
+                    </marginalia_text> <!--Transcription and translation incomplete. / NBW: Initial 28 1/2 lat possibly "25 1/2"?-->
+                    <person name="Ptolemy"/>
+                    <person name="Giovanni Boccaccio"/>
+                    <location name="Mauritania"/>
+                    <location name="Ruscicada"/>
+                    <location name="Africa"/>
+                </position>
+            </language>
+            <translation> [...]
+                For the city of Asarath see in [???] with Ptolemy. 28 1/2 [degrees] longitude, 31 1/2 degrees latitude. Giovanni Boccaccio claimed the mountains of Azara on the borders of Mauritania, dividing Mauritania and Africa. See Ruscicada with Ptolemy [table 2, Africa]. 28 [degrees] longitude, 32 1/2 [degrees] latitude.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        J[ohn] d[ee]. O
+                        Tande[m] a[nn]o 1574. Julij 12: mu[n]di in correctu[m] exemplar Galfredi vbi nulla [ia[m]?] fit me[n]tio mari Tyrrheni: sed co[n]tra[?], per hispania[m] pr[a]etermeassa illos expresse
+                        asserit[?]. 
+                    </marginalia_text> <!--Transcription and translation incomplete.-->
+                    <person name="John Dee"/>
+                    <person name="Geoffrey of Monmouth"/>
+                    <location name="Tyrrhenian Sea"/>
+                    <location name="Spain"/>
+                </position>
+            </language>
+            <translation>John Dee. Finally in the year 1574, on July 12:</translation>
+            <!-- NBW: at last, on July 12th, 1574: [unknown word, I found? or similar] a corrected exemplar of Geoffrey [of Monmouth] where no mention was made of the Tyrennian Sea, but asserted clearly that they [?] through Spain." the "o" joins it to the note in the gutter above. -->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="velis occasum versus" type="straight"/>
+        <underline language="LA" method="pen" text="ad inquirendum" type="double"/>
+        <underline language="LA" method="pen" text="q[uo]d dea spoponderat" type="straight"/>
+        <underline language="LA" method="pen" text="cursu triginta dierum veneru[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="nescii adhuc" type="double"/>
+        <underline language="LA" method="pen" text="ad aras Philenorum" type="straight"/>
+        <underline language="LA" method="pen" text="Ruscicadam" type="straight"/>
+        <underline language="LA" method="pen" text="mo[n]tes Azari[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="Maleae" type="straight"/>
+        <underline language="LA" method="pen" text="Mauritaniam" type="straight"/>
+        <underline language="LA" method="pen" text="colu[n]nas Herculis" type="straight"/>
+        <underline language="LA" method="pen" text="Tyrrhenu[m] aequor" type="straight"/>
+        <underline language="LA" method="pen" text="Tyrrhenu[m] aequor" type="dotted"/>
+        <underline language="LA" method="pen" text="Antenoris fuga[m]" type="double"/>
+        <underline language="LA" method="pen" text="comitat[a]e fuerant" type="straight"/>
+        <underline language="LA" method="pen" text="eoru[m] dux" type="double"/>
+        
+        <mark method="pen" name="bracket" place="intext"/> <!--Brutus cu[m]-->
+        <mark method="pen" name="comma" place="intext"/> <!--Troiano ad-->
+        <mark method="pen" name="bracket" place="intext"/> <!--reperto Aquitania[m]-->
+        <mark method="pen" name="bracket" place="intext"/> <!--INde flumen-->
+        <mark method="pen" name="bracket" place="intext"/> <!--transeu[n]tes applicueru[n]t-->
+        
+        <errata amendedtext="[deleted]" copytext="Tyrrhenu[m] reperto" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="veneru[n]t ad Tyrrhenu[m]" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="Qui si cu[m] aliquo gyga[n]te co[n]gressum faceret ilico esi obruebat: ac si cu[m] puero co[n]tenderet" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="head" type="manicule"/>
+        
+    </annotation>
+</transcription>

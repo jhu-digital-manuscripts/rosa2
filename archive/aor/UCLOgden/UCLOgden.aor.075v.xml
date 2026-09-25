@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.075v.tif" pagination="134" reader="John Dee" signature="[m[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nota de ♄i periodo.
+                    </marginalia_text>
+                    <symbol_in_text name="Saturn"/>
+                </position>
+            </language>
+            <translation>
+                Note about the period of Saturn.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Saturnus pertran" type="straight"/>
+        <underline language="LA" method="pen" text="pauperes effecti" type="straight"/>
+        <underline language="LA" method="pen" text="corpore uitiati" type="straight"/>
+        <underline language="LA" method="pen" text="necessaria sibi poterunt" type="straight"/>
+        <underline language="LA" method="pen" text="uitae subsidia" type="straight"/>
+        <underline language="LA" method="pen" text="sufficienti ratione" type="straight"/>
+        <underline language="LA" method="pen" text="habuerint, equites erunt" type="straight"/>
+        <underline language="LA" method="pen" text="iaculationibus" type="straight"/>
+        <underline language="LA" method="pen" text="equos nutrient" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; beluas" type="straight"/>
+        <underline language="LA" method="pen" text="milites" type="straight"/>
+        <underline language="LA" method="pen" text="tamen foedissimi aspectus" type="straight"/>
+        <underline language="LA" method="pen" text="mirabilis formae" type="straight"/>
+        <underline language="LA" method="pen" text="suum Saturnus" type="straight"/>
+        <underline language="LA" method="pen" text="magicas summo studio sequentur incantationes" type="straight"/>
+        <underline language="LA" method="pen" text="erunt potentes" type="straight"/>
+        <underline language="LA" method="pen" text="audaces" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; fortes" type="straight"/>
+        <underline language="LA" method="pen" text="equestri praecipue iaculatione" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+        
+    </annotation>
+</transcription>

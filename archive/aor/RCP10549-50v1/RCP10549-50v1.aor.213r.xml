@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.213r.tif" pagination="405" reader="John Dee" signature="ccc.iii."/>
+    <annotation>
+        
+        <marginalia anchor_text="maiores" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Maiores
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Ancestors.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="deos esse" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Deos esse.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Gods exist.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="imperium esse natum &amp; auctum &amp;retentum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        imperiu[m] natum auctu retentum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The empire, created and sustained by growth.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vt hominum fama est" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vt ho[minu]m fama est.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                As rumour has it.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="praemonstrare &amp; praecinere" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        p[rae]monstrare pr[a]ecinere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To prophesy and to predict.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Delicta ho[m]i[nu]m.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Human misdoings.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="epulones" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        epulo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                By a feast.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ludius" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ludius
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A performer.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ludorum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ludi
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Games.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Ego verò primùm habeo authores ac magistros religioneum colendaru[m] maiores nostros: quorum mihi tanta fuisse sapientia videtur,             vt satis supérque prudentes sint, qui illorum prudentiam non dica[m] assequi, sed quanta fuerit, perspicere possint" type="straight"/>
+        <underline language="LA" method="pen" text="nos amemus, tamen nec numero Hispanos, nec robore Gallos, nec calliditate Poenos, nec artibus Graecos,              nec denique hoc ipso huius ge[n]tis ac terrae domestico natiuóque sensu Italos ipsos ac Latinos, sed pietate ac religione, atque hac vna sapientia, quòd deorum immortalium numine omnia regi,              gubernaríque perspeximus, omnes gentes nationésque superauimus" type="straight"/>
+        <underline language="LA" method="pen" text="vt hominum fama" type="straight"/>
+        <underline language="LA" method="pen" text="sed hominum quae ob delicta, quaero" type="straight"/>
+        <underline language="LA" method="pen" text="tensae, curricula, praecentio, ludi, libationes, epuláeque" type="straight"/>
+        <underline language="LA" method="pen" text="ludiorum" type="straight"/>
+        <underline language="LA" method="pen" text="tensam, aut loru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; mentes deorum immortalium" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="hash" place="right_margin"/>
+        
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">10</numeral>
+        
+        <drawing anchor_text="Deos esse" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="Delicta ho[m]i[nu]m" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="Ludi" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

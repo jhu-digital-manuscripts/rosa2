@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.065r.tif" pagination="129" reader="John Dee" signature="i"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>οὐσία καὶ αἱ λοῖπαι κατήγωριαι</marginalia_text> <!-- for οὐσία καὶ αἱ λοιπαὶ κατηγορίαι -->
+                </position>
+            </language>
+            <translation>Substance and the remaining categories.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="συγκείσθαι" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>συγκείσθαι</marginalia_text>
+                </position>
+            </language>
+            <translation>To be composed.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Χρόνος" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Χρόνος</marginalia_text>
+                </position>
+            </language>
+            <translation>Time.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hermagoras" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hermagoras</marginalia_text>
+                    <person name="Hermagoras of Temnos"/>
+                </position>
+            </language>
+            <translation>Hermagoras.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristoteles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aristoteles.</marginalia_text>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>Aristotle.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="irasci" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Irasci in</marginalia_text>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>συγκείσθαι</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>co[n]timetur</marginalia_text>
+                </position>
+            </language>
+            <translation>To be angry belongs to the category of what is composed.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ductae tra[n]slatio, &amp; co[m]paratio. Post" type="straight"/>
+        <underline language="LA" method="pen" text="est co[m]positum" type="straight"/>
+        <underline language="LA" method="pen" text="irasci" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

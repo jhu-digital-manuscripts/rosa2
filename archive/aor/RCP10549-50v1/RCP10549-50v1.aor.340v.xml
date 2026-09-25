@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.340v.tif" pagination="12" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="laudationem ex ultimus terris miseris" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="head">
+                    <marginalia_text>laudatione[m] mittere [et cetera]</marginalia_text>                
+                </position>
+            </language>
+            <translation>To give praise etc.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="in Eunucho" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Terentius in enucho</marginalia_text>
+                    <person name="Terence"/> 
+                    <book title="Eunuchus"/>
+                    <!-- NBW: Does this count as a book reference if he's referring to quoted text in Cicero? --> <!--JG: Tricky one, but I would count it as a book reference-->
+                </position>
+            </language>
+            <translation>Terence in "The Eunuch."</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>transitio</marginalia_text>                
+                </position>
+            </language>
+            <translation>Transition.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Gabinii" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Gabinius</marginalia_text>                
+                    <person name="Aulus Gabinius"/>
+                </position>
+            </language>
+            <translation>Aulus Gabinius.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="inclusum illud odium" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Odium inclusu[m]</marginalia_text>                
+                </position>
+            </language>
+            <translation>Suppressed hatred.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="mei generi Crassipedis" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Crassipides ciceronis gener. </marginalia_text>                
+                    <person name="Furius Crassipes"/>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Furius Crassipes, the son-in-law of Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="temporibus assentie[n]dum" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Temporib[us] assentie[n]du[m]</marginalia_text>                
+                </position>
+            </language>
+            <translation>Agreeing with the times.</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Comparatio.</marginalia_text>                
+                </position>
+            </language>
+            <translation>Comparison.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="in administranda rep[ublica]" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Propositu[m] in Rep[ublicae] rege[n]da</marginalia_text>                
+                </position>
+            </language>
+            <translation>Placed in the governance of states.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="cum mihi cum illo magna iam gratia esset" hand="Italian"> 
+            <language ident="LA"> 
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>redire in o[mn]iam cu[m] mihi cu[m] illo magna gr[ati]a erat</marginalia_text>                
+                </position>
+            </language>
+            <translation>It was a great graciousness to give back to me as to him in all things.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="tibi ego idem reponam" type="straight"/>
+        <underline language="LA" method="pen" text="laudationem ex vltimus terris miseris" type="straight"/>
+        <underline language="LA" method="pen" text="Vatinii fuit etiam ille stimulus" type="straight"/>
+        <underline language="LA" method="pen" text="atque hilare amplexarentur" type="straight"/>
+        <underline language="LA" method="pen" text="illorum animos mediocriter lacessitus leuiter repungere" type="straight"/>
+        <underline language="LA" method="pen" text="diis hominibúsque approbantibus" type="straight"/>
+        <underline language="LA" method="pen" text="mihi cum illo magna iam graita" type="straight"/>
+        <underline language="LA" method="pen" text="obliuione contriueram" type="straight"/>
+        <underline language="LA" method="pen" text="in me iniuriarum, quod ego effudisse me omne abritrabar, residiuu[m] tamen insciente" type="straight"/>
+        <underline language="LA" method="pen" text="fuisset, omne repe[n]te apparuit" type="straight"/>
+        <underline language="LA" method="pen" text="saepe nutu, significationéque appello, cum" type="straight"/>
+        <underline language="LA" method="pen" text="Crasso redirem in gratiam" type="straight"/>
+        <underline language="LA" method="pen" text="à meis laribus in prouinciam" type="straight"/>
+        <underline language="LA" method="pen" text="Nam cum mihi condixisset, coenauit" type="straight"/>
+        <underline language="LA" method="pen" text="in mei generi Crassipedis" type="straight"/>
+        <underline language="LA" method="pen" text="eadem sensuru[m] fuisse" type="straight"/>
+        <underline language="LA" method="pen" text="integra omnia ac libera" type="straight"/>
+        <underline language="LA" method="pen" text="principatum" type="straight"/>
+        <underline language="LA" method="pen" text="temporibus affectie[n]dum NVNQVAM ENIM PRAESTANTIBUS" type="straight"/>
+        <underline language="LA" method="pen" text="gubernanda viris laudata est in vna sententia perpetua permansio. sed" type="straight"/>
+        <underline language="LA" method="pen" text="si portu[m] tenere" type="straight"/>
+        <underline language="LA" method="pen" text="possis mutata velificatione" type="straight"/>
+        <underline language="LA" method="pen" text="esse debeat id, quod à me saepissime dictu[m] est, cum dignitate otium: no[n] idem semper dicere, sed idem semper spectare debemus" type="straight"/>
+        <underline language="LA" method="pen" text="omnia mihi solutissima" type="straight"/>
+        <underline language="LA" method="pen" text="non ita illustri gratia exceperit" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/> <!-- NBW: w/flourish -->
+        <symbol name="Jupiter" place="left_margin"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">12</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="sed idem" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

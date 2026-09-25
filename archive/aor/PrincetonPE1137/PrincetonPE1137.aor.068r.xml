@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+<page filename="PrincetonPE1137.068r.tif" pagination="22[r]" reader="Harvey" signature="F.ii.r"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        soli ferè Smithi Juresconsulti, cum ipso textu iuris ciuilis.
+                    </marginalia_text>
+                    <person name="Thomas Smith"/>
+                    <book title="De republica Anglorum"/> 
+                    <!-- JE: I can't find a book matching the title 'Juresconsultus' or similar, cf. also Freigius, 00000005 --> 
+                    <!-- CG: Perhaps still referring to the De republica Anglorum? -->
+                    <!-- JE: I've put 'De republica Anglorum', although I'm still not totally convinced - it may be the least worst answer! -->
+                    <!--JG: I'd leave it as it is for the moment-->
+                </position>
+            </language>
+            <translation>
+                In general, only in Smith's 'De republica Anglorum', with the same text of civil law.
+                <!-- JE: not sure of my translation here. -->
+                <!-- CG: Seems fine, until we can figure out what this work is. -->
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Budaeis licebit" type="straight"/>
+        <underline language="LA" method="pen" text="Alciatis" type="straight"/>
+        <underline language="LA" method="pen" text="Baysiis" type="straight"/>
+        <underline language="LA" method="pen" text="quidem viris, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="Budaeus" type="straight"/>
+        <underline language="LA" method="pen" text="Alciatus" type="straight"/>
+        <underline language="LA" method="pen" text="Baysius" type="straight"/>
+        
+        <symbol name="JC" place="right_margin"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

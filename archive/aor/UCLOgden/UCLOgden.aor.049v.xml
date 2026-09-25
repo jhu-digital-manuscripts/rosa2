@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.049v.tif" pagination="82" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="breue uitae tempus" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        oligochronij.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Shortlived.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aut os graui odoris foeditate turpetur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        odor gravis et fo[e]tidus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A heavy and fetid smell.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Babylonii enim decretorum omniu[m] summam duodecatemriis tribuunt, licet Antisciis Ptholemaeus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        De Duodecatemorijs. Antiscia Ptoloma[e]i.
+                    </marginalia_text>
+                    <person name="Ptolemy"/>
+                </position>
+            </language>
+            <translation>
+                About the twelve parts. Antiscia of Ptolemy.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="duodecatemoriorum efficaciam notaueris, ex finibus praecipue in quibus fuerint, inuenta, ex iíq[ue] uolerit, omnen apotelesmatum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Ex antiscijs et duodecatemorijs omnis apotelesmatu[m] substantia explicari p[otes]t. 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                From the antiscia and the twelve parts, all nature of the influence on the stars on human destiny can be explained.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="loco fortunae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Locus fortuna[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The place of fortune.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uel in undecimo, in quo loco medii coeli pars frequentissimis rationibus inuenitur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Mediu[m] co[e]lum in vndecimo signo frequ[n]tis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The Midheaven is frequently in the eleventh sign.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quoru[m] corpus, autos graui odoris foeditate turpetur" type="straight"/>
+        <underline language="LA" method="pen" text="Babylonii enim" type="straight"/>
+        <underline language="LA" method="pen" text="Antisciis Ptholemaeus" type="straight"/>
+        <underline language="LA" method="pen" text="nos uero utrisq[ue]" type="double"/>
+        <underline language="LA" method="pen" text="cum illa mortalium uitae sit praecipua" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

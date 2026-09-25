@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>174</illustrations>
+    <totalPages>190</totalPages>
+    <dimensions units="mm">
+        <width>285</width>
+        <height>390</height>
+    </dimensions>
+    <dates>
+        <startDate>1300</startDate>
+        <endDate>1400</endDate>
+    </dates>
+    <texts>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="148v" start="1r">148</pages>
+            <illustrations>162</illustrations>
+            <linesPerColumn>42</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="testament">
+            <language>fr</language>
+            <title>Testament de Jean de Meun</title>
+            <textId/>
+            <pages end="176v" start="149r">27</pages>
+            <illustrations>8</illustrations>
+            <linesPerColumn>42</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="codicille">
+            <language>fr</language>
+            <title>Codicille de Jean de Meun</title>
+            <textId/>
+            <pages end="178v" start="177r">148</pages>
+            <illustrations>2</illustrations>
+            <linesPerColumn>42</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="articles">
+            <language>fr</language>
+            <title>Articles de la Foy</title>
+            <textId/>
+            <pages end="190v" start="179r">11</pages>
+            <illustrations>2</illustrations>
+            <linesPerColumn>42</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>BH Ms. 387</commonName>
+            <dateLabel>14th century</dateLabel>
+            <type>manuscript</type>
+            <material>Parchment</material>
+            <origin>France</origin>
+            <currentLocation>Valencia, Spain</currentLocation>
+            <repository>Universitat de València, Biblioteca Històrica</repository>
+            <shelfmark>BH Ms. 387</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>BH Ms. 387</commonName>
+            <dateLabel>14e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>Parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Valencia, Spain</currentLocation>
+            <repository>Universitat de València, Biblioteca Històrica</repository>
+            <shelfmark>BH Ms. 387</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

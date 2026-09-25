@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.200r.tif" pagination="391" reader="John Dee" signature="Kk iiij"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Occasio delendi Danos.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The opportunity to wipe out the Danes.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Liuingus, qui &amp; Aethelstanus" type="straight"/>
+        <underline language="LA" method="pen" text="Huna" type="double"/>
+        <underline language="LA" method="pen" text="quòd vxores virorum nobilium, &amp; filias vi opprimere" type="straight"/>
+        <underline language="LA" method="pen" text="ludibrio tradere praesumpserunt" type="straight"/>
+        <underline language="LA" method="pen" text="nationibus singulis &amp; vniuersis, vt sub vna die" type="straight"/>
+        <underline language="LA" method="pen" text="sancti Britij episcipi, omnes" type="straight"/>
+        <underline language="LA" method="pen" text="furtiuo impetu" type="straight"/>
+        <underline language="LA" method="pen" text="opprobriosè nimis sunt" type="double"/>
+        <underline language="LA" method="pen" text="perempti" type="straight"/>
+        <underline language="LA" method="pen" text="decreuerunt propinquorum suorum &amp; amicorum sanguinem fore vlciscendum" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- impetu morti -->
+        
+    </annotation>
+</transcription>

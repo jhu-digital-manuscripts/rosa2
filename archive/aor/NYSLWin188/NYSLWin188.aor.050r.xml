@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.050r.tif" pagination="50" reader="John Dee" signature="Nij"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Impedimenta fulminu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Impediments of the lightning.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="So ist der Salniter am gewaltigsten so er lebt in der feiste dann seine feiste ist sein Tyrannitet" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nitri Tyrannis</marginalia_text>
+                </position>
+            </language>
+            <translation>The tyranny of salpeter.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="So ist der Salniter am gewaltigsten so er lebt in der feiste dann seine feiste ist sein Tyrannitet" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>☿ Tyrannis</marginalia_text>
+                    <symbol_in_text name="Mercury"/>
+                </position>
+            </language>
+            <translation>The tyranny of mercury.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Sulphur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sulph[ur]</marginalia_text>
+                </position>
+            </language>
+            <translation>Sulfur.</translation> 
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="tribus primis das eine" type="straight"/>
+        <underline language="DE" method="pen" text="nicht perfect" type="double"/>
+        <underline language="DE" method="pen" text="Bürge" type="straight"/>
+        <underline language="DE" method="pen" text="zu früe ein Windtstern" type="straight"/>
+        <underline language="DE" method="pen" text="es erkelt" type="double"/>
+        <underline language="DE" method="pen" text="Tyrannitet" type="straight"/>
+        <underline language="DE" method="pen" text="der fürgang" type="straight"/>
+        <underline language="DE" method="pen" text="Stralischen geberung" type="straight"/>
+        <underline language="DE" method="pen" text="die höchsten grad" type="straight"/>
+        <underline language="DE" method="pen" text="der dreyen" type="straight"/>
+        <underline language="DE" method="pen" text="gemelt" type="straight"/>
+        <underline language="DE" method="pen" text="Tyrannischste vnd" type="straight"/>
+        <underline language="DE" method="pen" text="gewaltigste" type="straight"/>
+        <underline language="DE" method="pen" text="der feiste" type="double"/>
+        <underline language="DE" method="pen" text="feiste" type="double"/>
+        <underline language="DE" method="pen" text="das zeheste" type="straight"/>
+        <underline language="DE" method="pen" text="subtileste Corpus" type="straight"/>
+        
+    </annotation>
+</transcription>

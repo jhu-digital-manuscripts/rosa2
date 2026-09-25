@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.146v.tif" pagination="32" reader="John Dee"/>   
+    
+    <annotation>
+        
+        
+        <marginalia anchor_text="Nunc omnino aliunde sic intelligemus sumenda non fuisse" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Exempla o[mn]i[n]o aliu[n]de no[n] sume[n]da.</marginalia_text>
+                </position>
+            </language>
+            <translation>Examples are not to be taken from elsewhere at all.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="aceruos se dicant tritici habere, &amp; eoru[m] exemplum pugno no[n] habeant, quod ostendant" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>mos vendendi tritici</marginalia_text>
+                </position>
+            </language>
+            <translation>The custom of selling wheat.</translation>
+        </marginalia>
+      
+        
+        <marginalia anchor_text="SVNT igitur tria genera, quae nos figuras appellamus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>figurarum diuisio</marginalia_text>
+                </position>
+            </language>
+            <translation>The division of styles.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="vnam graue[m], alteram mediocre[m], tertiam extenuata[m] vocamus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>figura [ Grauis. Mediocris. Attenuata.</marginalia_text>
+                </position>
+            </language>
+            <translation>Style [ Grand, moderate, reduced.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="In graui consumetur oratio figura" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quando in graui.</marginalia_text>
+                </position>
+            </language>
+            <translation>When in the grand style.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="exemplu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Exemplu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>An example.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="no[n] putare vnum posse omnia" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; eoru[m] exemplum pugno no[n] habeant, quod" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; omnium rigare debeant ingenia" type="straight"/>
+        <underline language="LA" method="pen" text="arescant ipsi siccitate" type="straight"/>
+        <underline language="LA" method="pen" text="Quae enim res apud nostros non erant, earu[m] rerum nomina no[n] poterant esse vsitata" type="straight"/>
+        <underline language="LA" method="pen" text="quod asperius &amp; inusitatu[m], id proprie nobis attribueretur" type="straight"/>
+        <underline language="LA" method="pen" text="vnam graue[m], alteram mediocre[m], tertiam extenuata[m]" type="straight"/>
+        
+        <mark method="pen" name="est_mark" place="left_margin"/>
+        
+        <numeral place="left_margin">.1.</numeral>
+        <numeral place="left_margin">2.</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">.5.</numeral>
+        
+        
+        <drawing anchor_text="mos vendendi tritici" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+        
+        
+    </annotation>
+    
+</transcription>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.140r.tif" pagination="279" reader="John Dee" signature="s 4"/> 
+    <annotation>
+        
+        <marginalia anchor_text="amor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Amor.</marginalia_text>
+                </position>
+            </language>
+            <translation>Love.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="orator, hoc opus eius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Oratoris opus.</marginalia_text>
+                </position>
+            </language>
+            <translation>The orator's work.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="πάθος" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>πάθος καὶ ἦθος</marginalia_text>
+                </position>
+            </language>
+            <translation>Feeling and way of beeing.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="no[n]nullas credo esse materias, quae continuum desiderent affectum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Materia[e] qua[e]da[m] continuum desiderant affectum</marginalia_text>
+                </position>
+            </language>
+            <translation>Some subjects require continuous emotion.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="caetera nuda, ieiuna, infirma, ingrata sunt, Adeò uelut spiritus operis huius atq[ue] animus est in affectibus. Horum" type="straight"/>
+        <underline language="LA" method="pen" text="cxwuius nomine, ut ego quide[m] sentio, caret sermo Romanus" type="straight"/>
+        <underline language="LA" method="pen" text="Cautiores uoluntate, complecti, quàm nomina interpretari malueru[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="credo esse materias, quae" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing anchor_text="Amor" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

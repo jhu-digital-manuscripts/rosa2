@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.155r.tif" pagination="133" reader="Harvey" signature="I3[r]"/>	<!-- ABO 159right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Vnus auctor Optimus, instar reliquoru[m] in eodem genere
+						Omnium. Non alius, sed aliud: ait quotidiè
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						proficiens.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The one best actor, an example for all the rest in every genre of all things. Not another person, but another thing: he says while accomplishing things daily.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Vnus Excellentissimus, quasi omnes: alij omnes, ne
+						vnus quidem.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Vno, mà vnico.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The one most excellent person, as if all men: all others, not one indeed. One, but unique.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Tam nouis excogitandis, quàm veteribus examinandis valet
+						Inuentionis et Judicis ars. diuina Euretice, 
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Nondum est prudens, qui sibi ipse non est
+						instar omnium Librorum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The art of invention and judging is worth as much for new designs as for old things to be examined. A divine discovery; 
+				he who is not himself an example of all books, is not yet prudent.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Verbum sapienti sat: et prudens sibi ipse regula. Semper ego auditor tantu[m]?
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>For the wise the word is enough: and the prudent man himself . Am I always a hearer of so much?</translation> <!--JG: Chris, have a look at this please, I don't get it--> <!-- CG: I can't seem to figure out 'prudens sibi ipse regula' but I think the last part might mean 'Am I always such a great disciple?' -->
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Is demùm est artifex, qui in seipso habet omnes artes, philosophias,
+						professiones. Nec solidè doctus est, qui non posset omnes artes supplere,
+						si nihil esset Librorum in Mundo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>He, who has all arts, philosophies, and profession in himself, is ultimately a craftsman. Nor is he instructed completely, who can not supply all arts 
+				if there is nothing in the world of books.</translation>
+		</marginalia>
+		
+		
+		<underline language="IT" method="pen" text="due casse" type="straight"/>
+		<underline language="IT" method="pen" text="danari" type="straight"/>
+		<underline language="IT" method="pen" text="di gratia" type="straight"/>
+		<underline language="IT" method="pen" text="questa" type="straight"/>
+		<underline language="IT" method="pen" text="fumo, &amp; vento" type="straight"/>
+		<underline language="IT" method="pen" text="quell'altra" type="straight"/>
+		<underline language="IT" method="pen" text="danari, et" type="straight"/>
+		<underline language="IT" method="pen" text="presenti ad" type="straight"/>
+		<underline language="IT" method="pen" text="huomini di magistrato" type="straight"/>
+		<underline language="IT" method="pen" text="i Senatori" type="straight"/>
+		<underline language="IT" method="pen" text="non potesser prender" type="straight"/>
+		<underline language="IT" method="pen" text="tu comperi" type="straight"/>
+		<underline language="IT" method="pen" text="tu vuoi vsare" type="straight"/>
+		<underline language="IT" method="pen" text="quanta miseria" type="straight"/>
+		<underline language="IT" method="pen" text="per colpa d'altri" type="straight"/>
+		<underline language="IT" method="pen" text="BELISARIO" type="straight"/>
+		<underline language="IT" method="pen" text="vinse i Vandali" type="straight"/>
+		<underline language="IT" method="pen" text="per inuidia" type="straight"/>
+		<underline language="IT" method="pen" text="per suspetto" type="straight"/>
+		<underline language="IT" method="pen" text="luogo di premio" type="straight"/>
+		<underline language="IT" method="pen" text="cauare dli occhi" type="straight"/>
+		<underline language="IT" method="pen" text="à viuer mendicando" type="straight"/>
+		<underline language="IT" method="pen" text="domandaua la limosina" type="straight"/>
+		<underline language="IT" method="pen" text="pouero Belisario, il quale" type="straight"/>
+		<underline language="IT" method="pen" text="dalla virtù" type="straight"/>
+		<underline language="IT" method="pen" text="dalla inuidia" type="straight"/>
+		
+		<symbol name="Sun" place="right_margin"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- propone -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- al -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Impe -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ca -->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="to vuoi vsare"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="per suspetto"/>
+		
+    </annotation>
+</transcription>

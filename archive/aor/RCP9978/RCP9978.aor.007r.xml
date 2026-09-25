@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.007r.tif" reader="John Dee" signature="B iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="rationes animae mundi seminales; figuram coelestem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>{ - Idea in [?] - R[ati]o[n]es seminales in a[n]i[m]a Mundi - figura[e] celestes </marginalia_text>  <!-- DO: First line cut off -->
+                </position>
+            </language>
+            <translation>{ An idea in [?]; seminal methods in the soul of the world; celestial figures.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ideae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Idea.</marginalia_text>
+                </position>
+            </language>
+            <translation>An idea.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in coelis ultra stellas etiam figuras" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Magica[e] figura[e] in ca[e]lis vltr[a] stellas</marginalia_text>
+                </position>
+            </language>
+            <translation>Magical models in the skies beyond the stars.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="coelis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ca[e]lu[m].</marginalia_text>        
+                </position>
+            </language>
+            <translation>The sky.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Indiuiduorum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Indiuiduoru[m] indiuiduali[s?] proprieta[s]</marginalia_text>    
+                </position>
+            </language>
+            <translation>The individual character of indivisibles.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Ideae virtute insignita" type="straight"/>
+        <underline language="LA" method="pen" text="atq[ue] eandem omnium esse naturam" type="straight"/>
+        <underline language="LA" method="pen" text="anima mundi rationes rerum" type="straight"/>
+        <underline language="LA" method="pen" text="quot Ideae" type="straight"/>
+        <underline language="LA" method="pen" text="ipsa sibi asciuit" type="straight"/>
+        <underline language="LA" method="pen" text="etiam figuras" type="straight"/>
+        <underline language="LA" method="pen" text="stellis" type="double"/>
+        <underline id="RCP9978:021:u0001" language="LA" method="pen" text="figuris" type="double"/>
+        <underline language="LA" method="pen" text="proprietatibus'q[ue]" type="double"/>
+        <underline language="LA" method="pen" text="qu[a]elibet species" type="straight"/>
+        <underline id="RCP9978:021:u0002" language="LA" method="pen" text="propriam figuram coelestem" type="straight"/>
+        <underline language="LA" method="pen" text="rationes animae mundi" type="straight"/>
+        <underline language="LA" method="pen" text="existendi" type="straight"/>
+        <underline language="LA" method="pen" text="cuiusq[ue] virtutis" type="straight"/>
+        <underline language="LA" method="pen" text="situm &amp; figuram coelestium, causam esse rerum" type="straight"/>
+        <underline language="LA" method="pen" text="virtutum causas" type="straight"/>
+        <underline language="LA" method="pen" text="incipit esse sub determinato horoscopo" type="straight"/>
+        <underline language="LA" method="pen" text="praeter eam quam habet à sua specie, tum" type="double"/>
+        <underline language="LA" method="pen" text="per influxum" type="straight"/>
+        <underline language="LA" method="pen" text="materiae generabilium ad animam mundi" type="double"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        <physical_link>
+            <marginal_annotation idref="RCP9978:021:u0001"/>
+            <marginal_annotation idref="RCP9978:021:u0002"/>
+            <relation from="RCP9978:021:u0001" to="RCP9978:021:u0002" type="undirected"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

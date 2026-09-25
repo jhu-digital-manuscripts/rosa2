@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <title>Christine de Pizan</title>
+         
+         </titleStmt>
+         
+         <publicationStmt>
+            
+            <distributor>MSEL</distributor>
+         
+         </publicationStmt>
+        
+         <sourceDesc> 
+            
+            <bibl>
+               <note type="format">manuscript</note>
+               <note type="commonName">Arsenal 2681</note>
+               <title>Christine de Pizan</title>
+
+               <extent>
+                  <measure quantity="204" unit="folios">204</measure>
+                  <dimensions>
+                     
+                     <height unit="mm">208</height>
+                     <width unit="mm">301</width>
+                  
+                  </dimensions>
+               
+               </extent>
+               
+               <note type="illustrations">1</note>
+               
+               <note type="material">white parchment</note>
+               
+               <pubPlace>France</pubPlace>
+               
+               <date notBefore="1401" notAfter="1500">15th century</date>
+            
+            </bibl>
+            
+            <msDesc>
+               
+               <msIdentifier>
+                  
+                  <settlement>Paris</settlement>
+                  
+                  <repository>Bibliothèque nationale de France</repository>
+                  
+                  <idno>Arsenal 2681</idno>
+               
+               </msIdentifier>
+            
+               <msContents>
+                  <msItem n="1">
+                     <locus from="1r" to="94v">1r-94v</locus>
+                     <title>Le Livre du corps de policie</title>
+                     <note type="textid">Le Livre du corps de policie</note>
+                     <note type="folios">94</note>
+                     <note type="illustrations">1</note>
+                     <note type="linesPerColumn">30</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         
+         </sourceDesc>
+      
+      </fileDesc>
+   
+   </teiHeader>
+   
+   <text>
+      
+      <body>
+         
+         <div> </div>
+      
+      </body>
+   
+   </text>
+
+</TEI>

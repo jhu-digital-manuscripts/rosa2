@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.343v.tif" pagination="18" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia anchor_text="accessio" hand="Italian">
+            <language ident="EN"> 
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>oure avaunncemense</marginalia_text> <!-- NBW: i.e. advancement, onset -->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Issum" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Issus.</marginalia_text>
+                    <location name="Issus"/>               
+                </position>
+            </language>
+            <translation>Issus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Clitarchus" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Clitarchus</marginalia_text>
+                    <person name="Clitarchus"/>  
+                </position>
+            </language>
+            <translation>Clitarchus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Dareum ab Alexandro" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Darius Alexander.</marginalia_text>
+                    <person name="Darius III"/>
+                    <person name="Alexander the Great"/> 
+                </position>
+            </language>
+            <translation>Darius. Alexander the Great.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pindenissum" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pindenissus</marginalia_text> <!-- NBW: poss "Pinclenissus"-->
+                    <location name="Pindenissus"/>
+                </position>
+            </language>
+            <translation>Pindenissus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Panteris" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pantherae.</marginalia_text>
+                </position>
+            </language>
+            <translation>Panthers.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cariam" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Caria</marginalia_text>
+                    <location name="Caria"/>
+                </position>
+            </language>
+            <translation>Caria.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Patischo" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Patischus.</marginalia_text>
+                    <person name="Quintus Patischus"/>
+                </position>
+            </language>
+            <translation>Quintus Patischus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Megalensibus" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Megalens.</marginalia_text>
+                </position>
+            </language>
+            <translation>The Megalesia (festival of Cybele, 4 April).</translation> <!-- NBW: This could refer either to a Roman goddess (Cybele), the festivals held in her honor (as in text a measure of time) or the place where the festivals were held.  -->
+        </marginalia>
+
+        <marginalia anchor_text="Quinquatrus" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quinquatrus.</marginalia_text>
+                </position>
+            </language>
+            <translation>The festival of Minerva.</translation> <!-- NBW: As above: this has a temporal reference as well, 19-23 March -->
+        </marginalia>
+        
+        <marginalia anchor_text="hospes" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>hospes.</marginalia_text>
+                </position>
+            </language>
+            <translation>A guest.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Diogenes" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Diogenes</marginalia_text>
+                    <person name="Diogenes"/>
+                </position>
+            </language>
+            <translation>Diogenes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Philone Pessinunte" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Philo pessin[us].</marginalia_text> <!-- NBW: Possible that Dee doesn't know what this place is, and thus how to expand this place name-->
+                    <person name="Philo"/>   
+                    <location name="Pessinus"/>
+                </position>
+            </language>
+            <translation>Philo Pessinus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Peregrinatio" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Peregrinatio</marginalia_text>
+                </position>
+            </language>
+            <translation>A journey.</translation>
+        </marginalia>
+
+        <marginalia anchor_text="κωμικὸς μάρτυς " hand="Italian">
+            <language ident="EL"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>κωμικὸς μάρτυς </marginalia_text>
+                </position>
+            </language>
+            <translation>Witness from comedy.</translation> <!--JG: Barry Baldwin, “Greek in Cicero's Letters,” Acta Classica, Vol. 35 (1992), pp. 8-9-->
+        </marginalia>
+
+        <underline language="LA" method="pen" text="superatum: abduxi exercitum" type="straight"/>
+        <underline language="LA" method="pen" text="Ibi quintum &amp; vigesimum iam diem aggeribus, vinies, turribus" type="straight"/>
+        <underline language="LA" method="pen" text="oppugnabam oppidum munitissimum Pindenissum, tantis opibus, ta[n]tóque negotio" type="straight"/>
+        <underline language="LA" method="pen" text="ad summam" type="straight"/>
+        <underline language="LA" method="pen" text="te in praesenti scripsi" type="straight"/>
+        <underline language="LA" method="pen" text="haec aestas habuit hunc exitum satis foelicem" type="straight"/>
+        <underline language="LA" method="pen" text="spissus," type="straight"/>
+        <underline language="LA" method="pen" text="vestra oratoria, sed haec etiam leuia nostratia? desunt" type="straight"/>
+        <underline language="LA" method="pen" text="Mirum me desyderium tenet vrbis" type="straight"/>
+        <underline language="LA" method="pen" text="incredibile meorum, atqui in primis tui, satietas autem provinciae: vel" type="straight"/>
+        <underline language="LA" method="pen" text="tam accessio" type="straight"/>
+        <underline language="LA" method="pen" text="vel quia belli magni timor impendet" type="straight"/>
+        <underline language="LA" method="pen" text="eos qui venari" type="straight"/>
+        <underline language="LA" method="pen" text="sed mira paucitas est" type="straight"/>
+        <underline language="LA" method="pen" text="siquae ridenda essent" type="straight"/>
+        <underline language="LA" method="pen" text="iam annum munus co[n]fecero" type="straight"/>
+        <underline language="LA" method="pen" text="me erudiant de omni rep." type="straight"/> 
+        <underline language="LA" method="pen" text="discessit, iter habebant" type="straight"/>
+        <underline language="LA" method="pen" text="Omnis peregrinatio (quod ego ab adoclescentia iudicaui) obscura &amp; sordida est iis, quorum industria Romae potest illustris" type="straight"/>
+        <underline language="LA" method="pen" text="hercule ambulatiuncula" type="straight"/>
+        <underline language="LA" method="pen" text="prudentibus, fidelitérque suadentibus idem videri. Ego" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/> <!-- NBW: First three poss. Jupiter w/flourish -->
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Unidentified" place="left_margin"/>
+        <symbol name="Unidentified" place="left_margin"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        
+        <errata amendedtext="Darium" copytext="Dareum" language="LA"/>
+        
+        <drawing anchor_text="hercule ambulatiuncula" book_orientation="0" method="pen" place="left_margin" type="manicule"/> <!-- JG: I'd link this to the underscored text, hercule ambulatiuncula--> 
+        
+    </annotation>
+</transcription>

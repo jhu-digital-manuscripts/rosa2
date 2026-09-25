@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.194v.tif" pagination="388" reader="John Dee" signature="[B 2[v]]"/> 
+    <annotation>
+                
+        <marginalia anchor_text="translatio, qualis est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vitia tra[n]slationis.</marginalia_text>
+                </position>
+            </language>
+            <translation>The disadvantages of metaphors.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="poëtis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Poëta[e].</marginalia_text>
+                </position>
+            </language>
+            <translation>Poets.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pastorem populi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>pastor populi</marginalia_text>
+                </position>
+            </language>
+            <translation>Shepherd of the people.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Homero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Homerus</marginalia_text>
+                    <person name="Homer"/>
+                </position>
+            </language>
+            <translation>Homer.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vergilius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>virgilius</marginalia_text>
+                    <person name="Virgil"/>
+                </position>
+            </language>
+            <translation>Virgil.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="synechdoche" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Synecdoche</marginalia_text>
+                </position>
+            </language>
+            <translation>Synecdoche.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="translatio permouendis animis plerunq[ue], &amp; signandis rebus, ac sub oculos subijciendis reperta est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quare tra[n]slatio reperta est.</marginalia_text>
+                </position>
+            </language>
+            <translation>Hence translation is invented.</translation>
+            
+        </marginalia> <marginalia anchor_text="prosa" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Prosa</marginalia_text>
+                </position>
+            </language>
+            <translation>Prose.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="numerorum illa libertas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Numeroru[m] libertas</marginalia_text>
+                </position>
+            </language>
+            <translation>Liberty of numbers.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Liuius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Liuius</marginalia_text>
+                    <person name="Livy"/>
+                </position>
+            </language>
+            <translation>Livy.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="συνεκδοχὴ" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>συνεκδοχὴ</marginalia_text> <!-- for συνεκδοχή -->
+                </position>
+            </language>
+            <translation>Synecdoche.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nimio maior" type="straight"/>
+        <underline language="LA" method="pen" text="accidit, minor. Ne dißimilis" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; copia" type="straight"/>
+        <underline language="LA" method="pen" text="Sunt &amp; duarae" type="straight"/>
+        <underline language="LA" method="pen" text="omnia ad uoluptatem referunt, &amp; plurima uertere, etiam ipsa metri neceßitate coguntur" type="straight"/>
+        <underline language="LA" method="pen" text="autore Homero" type="straight"/>
+        <underline language="LA" method="pen" text="orando ualebit numerorum illa libertas. Nam" type="straight"/>
+        <underline language="LA" method="pen" text="orationes modo ornat, sed etiam quotidiani sermonis usus recipit" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

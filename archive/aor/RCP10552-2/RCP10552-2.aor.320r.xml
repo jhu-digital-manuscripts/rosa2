@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.320r.tif" pagination="147" reader="John Dee" signature="T.iiij."/>
+    <annotation>
+        
+        <marginalia anchor_text="Isabella Ducissa de Cuerwike" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Isabella filia Petri Regis His[paniae]</marginalia_text>
+                    <person name="Isabella of Castile, Duchess of York"/>
+                    <person name="Peter of Castile"/>
+                </position>
+            </language>
+            <translation>Isabella, daughter of Peter, King of Spain.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota, de male regimine Hibernia[e].</marginalia_text>
+                  <location name="Ireland"/>
+                </position>
+            </language>
+            <translation>Note, about the bad governance of Ireland.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Duces Lancastriae" type="straight"/>
+        <underline language="LA" method="pen" text="domina Isabella Ducissa de Cuerwike soror ducissae Lancastriae" type="straight"/>
+        <underline language="LA" method="pen" text="mollis" type="straight"/>
+        <underline language="LA" method="pen" text="delicata" type="straight"/>
+        <underline language="LA" method="pen" text="satis p[a]enitens" type="straight"/>
+        <underline language="LA" method="pen" text="apud Langlee praedium" type="straight"/>
+        <underline language="LA" method="pen" text="annuatim 30000. librarum" type="straight"/>
+        <underline language="LA" method="pen" text="nihil inde" type="straight"/>
+        <underline language="LA" method="pen" text="soluit 30000" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <errata amendedtext="Euerwike" copytext="Cuerwike" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="tail" type="coat_of_arms"/>
+        
+    </annotation>
+</transcription>

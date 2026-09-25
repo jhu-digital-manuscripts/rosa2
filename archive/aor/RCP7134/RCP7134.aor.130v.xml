@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.130v.tif" pagination="[123v]" reader="John Dee" signature="[hh iij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dispositio trium dominoru[m] triplicitatis ascendentis.</marginalia_text>
+                </position>
+            </language>
+            <translation>The disposition of the three lords of the three-fold ascendants.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="duplici causa, tum per essentiam, tu[m] quia dominabat[ur] ascende[n]ti" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vide de duplici significato planetarum supra fo.84.v.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:188" text="84.v"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>For the two-fold signification of the planets, see above, folio 84 verso.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="uitae" type="straight"/>
+        <underline language="LA" method="pen" text="duplici causa, tum per essentiam, tu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="dominabat[ur] ascende[n]ti" type="straight"/>
+        <underline language="LA" method="pen" text="signo foemineo simili suae temperatura" type="straight"/>
+        
+        <symbol language="LA" name="Moon" place="left_margin" text="Lunae"/>
+        
+    </annotation>
+</transcription>

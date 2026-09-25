@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.021r.tif" reader="John Dee" signature="Diij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="methaphisica" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Metaphysic[us]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Metaphysical.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mechanice" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Mechanicus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Mechanical.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="visoriste" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Visorista[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                <!-- FSF: I am not sure about this -->
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Architectura
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Architecture.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Principia subalterna[n]tis subalternata contrahuntur ad subalternate materia[m] p[ro]p[ri]a[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The subaltern principles of the subaltern draw to the proper material subalternately. <!-- FSF: I am not sure as to what is happening here. -->  <!-- DO: Not sure either -->
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Principia propria co[m]munia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Principles proper or common.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="co[m]mune scie[n]tia[m] q[uae] est methaphisica" type="straight"/>
+        <underline language="LA" method="pen" text="hab[et] methaphisica ad om[n]es scie[n]tias qua[n]tu[m] ad hoc q[uod] demo[n]strat p[ri]ncipia co[m]munia" type="straight"/>
+        <underline language="LA" method="pen" text="Quare co[n]cludit q[uod] demo[n]stratio no[n] erit ex p[ri]ncipijs extraneis nec ex co[m]munibus. sed ex p[ro]prijs q[uo] dictum est q[uod] no[n]" type="straight"/>
+        <underline language="LA" method="pen" text="descendu[n]t in mechanicas v[e]l in machinatiuas" type="straight"/>
+        <underline language="LA" method="pen" text="me[n]surantes co[n]tine[n]tia[m] dolioru[m]" type="straight"/>
+        <underline language="LA" method="pen" text=" sunt de triangulis" type="straight"/>
+        <underline language="LA" method="pen" text="Et hic simplicit[er] loque[n]do no[n] est descensus de genere in gen[us] diuersum. sed in ide[m] [et] subalt[er]nu[m]. p[ri]ncipia e[ni]m" type="straight"/>
+        <underline language="LA" method="pen" text="simplicit[er] extranea p[ri]ncipijs" type="straight"/>
+        <underline language="LA" method="pen" text="q[uod] illa pri[n]cipia sint resolubilia in p[ri]ma vera immediata" type="straight"/>
+        <underline language="LA" method="pen" text="in q[ua]libet ergo scie[n]tia demo[n]stratiua accipit[ur] sine deminstratio[n]e quid significe[n]t p[er] nome[n] diffinitione[m] v[e]l expositione[m]. [et]" type="straight"/>
+        <underline language="LA" method="pen" text="vt passio[n]is esse. est inesse subiecto. [et] hoc" type="straight"/>
+        
+        <errata amendedtext="," copytext="." language="LA"/> <!-- demo[n]stra[n]da no[n] -->
+        <errata amendedtext="," copytext="." language="LA"/> <!-- esse v[e]l -->
+
+    </annotation>
+</transcription>

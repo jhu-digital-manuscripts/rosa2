@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>46</illustrations>
+    <totalPages>169</totalPages>
+    <dimensions units="">
+        <width>-1</width>
+        <height>-1</height>
+    </dimensions>
+    <dates>
+        <startDate>1325</startDate>
+        <endDate>1375</endDate>
+    </dates>
+    <texts>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="169v" start="1r">169</pages>
+            <illustrations>46</illustrations>
+            <linesPerColumn>32</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Cod.gall. 80</commonName>
+            <dateLabel>14th century</dateLabel>
+            <type>manuscript</type>
+            <material>parchment</material>
+            <origin>France</origin>
+            <currentLocation>Berlin</currentLocation>
+            <repository>Berlin Staatsbibliothek</repository>
+            <shelfmark>Cod. gall. 80</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Cod.gall. 80</commonName>
+            <dateLabel>14e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>Parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Berlin</currentLocation>
+            <repository>Berlin Staatsbibliothek</repository>
+            <shelfmark>Cod.gall. 80</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

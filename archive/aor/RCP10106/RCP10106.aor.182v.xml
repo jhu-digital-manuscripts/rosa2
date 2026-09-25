@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.182v.tif" pagination="364" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="clasu;a ipsa unius syllabae no[n] usitata" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Clasula vnius syllaba[e] no[n] vsitata est.</marginalia_text>
+                </position>
+            </language>
+            <translation>The conclusion of one syllable is not customary.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uerborum humilitas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Verboru[m] humilitas.</marginalia_text>
+                </position>
+            </language>
+            <translation>The debasement of words.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in Pisone[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In Pisonem.</marginalia_text>
+                    <book title="In Pisonem"/>
+                </position>
+            </language>
+            <translation>In Pisonem.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pusio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pusio</marginalia_text>
+                </position>
+            </language>
+            <translation>Young boy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cn. Flauius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cn[aues] flauius</marginalia_text>
+                    <person name="Gnaeus Flavius"/>
+                </position>
+            </language>
+            <translation>Gnaeus Flavius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Milone" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Milone.</marginalia_text>
+                    <book title="Pro Milone"/>
+                </position>
+            </language>
+            <translation>Pro Milone.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="antiquitas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Antiquitas.</marginalia_text>
+                </position>
+            </language>
+            <translation>Antiquity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="P. Vergilius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>P. Vergilius.</marginalia_text>
+                    <person name="Virgil"/>
+                </position>
+            </language>
+            <translation>Virgil.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="discordat" type="straight"/>
+        <underline language="LA" method="pen" text="uerborum humilitas affert" type="straight"/>
+        <underline language="LA" method="pen" text="in serraco" type="straight"/>
+        <underline language="LA" method="pen" text="conifica[n]s" type="straight"/>
+        <underline language="LA" method="pen" text="notabilius" type="straight"/>
+        <underline language="LA" method="pen" text="fastidio" type="straight"/>
+        <underline language="LA" method="pen" text="Cùm sint aute[m] uerba propria, ficta, translata, propijs dignitatem dat antiquitas" type="straight"/>
+        <underline language="LA" method="pen" text="uetustatis inimitabilem arti autoritatem" type="straight"/>
+        
+        <mark method="pen" name="est_mark" place="right_margin"/>
+        
+    </annotation>
+</transcription>

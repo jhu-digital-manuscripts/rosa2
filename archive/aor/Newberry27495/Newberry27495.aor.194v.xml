@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.194v.tif" reader="Harvey" signature="[Zz.iiii.[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Alioqui Simia
+                    </marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        erit Simia, etiamsi aurea gestet Insignia.
+                    </marginalia_text>
+                    <X-ref book_title="Adagia" person="Erasmus"/>
+                </position>
+            </language>
+            <translation>
+                An ape is otherwise an ape, even if he wears gold medals.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        They that do not enforce themselues in the pra[e]misses, prooue ashamed of themselues in the Conclusion.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        A viewe of [the] commendable qualities, requisite in A Courtier, or wayting Gentlewoman.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Satis multa, si satis multùm. <!--JG: Seems a variant of 'si satis est, multum est'--> <!-- CG: Harvey and his variants ... -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Many things are sufficient, if they are particularly sufficient. 
+            </translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="men well growen in yeeres, then" type="straight"/>
+        <underline language="EN" method="pen" text="for her desertes" type="straight"/>
+        <underline language="EN" method="pen" text="amiablenesse" type="straight"/>
+        <underline language="EN" method="pen" text="and good grace" type="straight"/>
+        <underline language="EN" method="pen" text="with anie vncomelie or dishonest behauiour" type="straight"/>
+        <underline language="EN" method="pen" text="flickeringe enticement" type="straight"/>
+        <underline language="EN" method="pen" text="but with vertue" type="straight"/>
+        <underline language="EN" method="pen" text="condicions" type="straight"/>
+        <underline language="EN" method="pen" text="properties" type="straight"/>
+        <underline language="EN" method="pen" text="feates" type="straight"/>
+        <underline language="EN" method="pen" text="qualities" type="straight"/>
+        <underline language="EN" method="pen" text="fauour with her Lady" type="straight"/>
+        <underline language="EN" method="pen" text="instruct her and traine her" type="straight"/>
+        <underline language="EN" method="pen" text="to vertue" type="straight"/>
+        <underline language="EN" method="pen" text="abhor flatterers" type="straight"/>
+        <underline language="EN" method="pen" text="entring into self leeking and ingorance, either of other outward thinges, or yet of her owne self." type="straight"/>
+
+        <symbol name="SS" place="right_margin"/>
+        <symbol language="EN" name="SS" place="right_margin" text="self leeking and ingorance"/>
+
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="instruct her and traine her to vertue"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+
+        <mark method="pen" name="scribble" place="right_margin"/>
+        <mark language="EN" method="pen" name="quotation_mark" place="right_margin" text="but with vertue"/>
+        <mark method="chalk" name="X_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- her -->
+        
+        <mark method="pen" name="dot" place="intext"/> <!-- grace, not -->
+        <mark method="pen" name="dot" place="intext"/> <!-- qualities, serueth -->
+        <mark method="pen" name="dot" place="intext"/> <!-- matter, and -->
+
+    </annotation>
+</transcription>

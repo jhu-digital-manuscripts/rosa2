@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.142v.tif" pagination="284" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="histriones, atque comoedos, cum ex aliquo grauiore actu personam deposuissent, flentes adhuc egredi." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Histriones flentes adhuc, cu[m] p[er]sona[m] qua[m] agebant deposuißent.</marginalia_text>
+                </position>
+            </language>
+            <translation>Actors still weeping after taking off the mask which they enacted-.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Nam plerique Demostheni facultatem huius rei defuisse credunt, Ciceroni modum." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cicero &amp; Demosthenes.</marginalia_text>
+                    <person name="Cicero"/>
+                    <person name="Demosthenes"/>
+                </position>
+            </language>
+            <translation>Cicero and Demosthenes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mihi quidem, siue id recte iudico, siue amore immodico praecipui in eloquentia uiri laboro, mira quaedam uidetur in eo fuisse urbanitas." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cicernois laus.</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Praise of Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in Verrrem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In Verrem</marginalia_text>
+                    <book title="In Verrem"/>
+                </position>
+            </language>
+            <translation>In Verrem</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Orbum agimus, &amp; naufragum, &amp; periclitantem, quorum induere personas no[n] attinet, nisi affectus assumimus. Haec" type="straight"/>
+        <underline language="LA" method="pen" text="maximi oratores, alter Graecae, alter Latinae eloquentiae principes, docent. Nam plerique" type="straight"/>
+        <underline language="LA" method="pen" text="affectator" type="straight"/>
+        <underline language="LA" method="pen" text="ut quò sunt magis uulgaria, eò sit credibilius illa ab oratore non ficta, sed paßime esse" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

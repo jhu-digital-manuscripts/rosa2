@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.011v.tif" pagination="14" reader="John Dee" signature="[B j.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Aeneas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Vide omnino co[m]me[n]taria Seruij in Æneida virgilij
+                    </marginalia_text>
+                    <person name="Virgil"/>
+                    <person name="Maurus Servius Honoratus"/>
+                    <book title="Aeneid"/>
+                    <book title="In Vergilii Aeneidem commentarii"/>
+                </position>
+            </language>
+            <translation>
+                See entirely [Maurus] Servius's [Honoratus] commentaries on Virgil's Aeneid.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ascanius" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Aliter dictus Euritala Dionysio Halicarnasseo 
+                    </marginalia_text>
+                    <person name="Ascanius"/>
+                    <person name="Dionysius of Halicarnassus"/>
+                </position>
+            </language>
+            <translation>
+                Otherwise called Euritala by Dionysius of Halicarnassus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hic condidit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        dubito
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                I doubt [it].
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        sine liberis. Vt servus vel, <!-- JG: Checked original, note does not continue hereafter -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Without children. As a servant or.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="suscepit Ascanius" type="straight"/>
+        <underline language="LA" method="pen" text="Hic" type="straight"/>
+        <underline language="LA" method="pen" text="Tiberim genuitq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="nepti Lauiniae" type="straight"/>
+        
+        <graph book_orientation="0" method="pen" place="head" type="genealogical_tree">
+            <node id="n1" person="Anchises">Anchises</node>
+            <node id="n2" person="Venus">Venus</node>
+            <node id="n3" person="Aeneas">Æneas</node>
+            <node id="n4" person="Creusa">Creusa</node>
+            <node id="n5" person="Lavinia">Lavinia</node>
+            <node id="n6" person="Ascanius">Ascanius</node>
+            <node id="n7" person="Silvius">Sylui[us] Posthum[us]</node> 
+            <node id="n8" person="Silvius">Syluius</node>
+            <node id="n9">Livina[e] Neptis</node>    
+            <node id="n10" person="Brutus of Troy">Brutus</node>
+            <node id="n11" person="Ignoge">Innogen</node>
+            <node id="n12" person="Locrinus">Locrinus</node>
+            <node id="n13" person="Albanactus"/>  
+            <node id="n14" person="Kamber">Camber</node>
+            <link from="n1 n2" relationship="has_child" to="n3"/>
+            <link from="n3 n5" relationship="has_child" to="n7"/>
+            <link from="n3 n4" relationship="has_child" to="n6"/>
+            <link from="n6" relationship="has_child" to="n8 n9"/>
+            <link from="n10" relationship="has_child" to="n8"/>   
+            <link from="n10" relationship="has_child" to="n9"/>
+            <link from="n10 n11" relationship="has_child" to="n12 n13 n14"/>
+            <graph_text>
+                <note hand="Italian" internal_link="n6 n7" language="LA">
+                    Duo F[rat]res
+                </note>
+                <translation>
+                    Two brothers.
+                </translation>
+            </graph_text>
+        </graph>
+        
+    </annotation>
+</transcription>

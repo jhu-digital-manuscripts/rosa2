@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+  <license>
+    <url>http://creativecommons.org/licenses/by/4.0/</url>
+    <logo>https://i.creativecommons.org/l/by/4.0/88x31.png</logo>
+  </license>
+  <totalPages>1084</totalPages>
+  <dates>
+    <startDate>1539</startDate>
+    <endDate>1539</endDate>
+  </dates>
+  <texts>
+    <text id="1">
+      <language>la</language>
+      <title>M. T. Ciceronis opera. Ex Petri Victorii codicibus maxima ex parte descripta, viri docti et in recensendis authoris huius scriptis cauti &amp; perdiligentis: quem nos industria, quanta potuimus, co[n]sequuti, quasdam orationes redintegratas, tres libros De legibvs multo quàm antea meliores, &amp; reliquias de commentariis que De repvblica inscripti erant, magno labore collectas vndique, descriptásque libris, vobis exhibemus. Eivsdem Victorii explicationes suarum in Ciceronem castigationum. Index rervm et verborvm.</title>
+      <textId>cicero1</textId>
+      <pages end="542v" start="1r">1084</pages>
+    </text>
+  </texts>
+  <bibliographies>
+    <bibliography lang="en">
+      <title>M. T. Ciceronis opera. Ex Petri Victorii codicibus maxima ex parte descripta, viri docti et in recensendis authoris huius scriptis cauti &amp; perdiligentis: quem nos industria, quanta potuimus, co[n]sequuti, quasdam orationes redintegratas, tres libros De legibvs multo quàm antea meliores, &amp; reliquias de commentariis que De repvblica inscripti erant, magno labore collectas vndique, descriptásque libris, vobis exhibemus. Eivsdem Victorii explicationes suarum in Ciceronem castigationum. Index rervm et verborvm.</title>
+      <commonName>Marcus Tullius Cicero, Opera (vol. 1, Paris, 1539)</commonName>
+      <dateLabel>1539</dateLabel>
+      <origin>Paris</origin>
+      <currentLocation>London, England</currentLocation>
+      <repository>Royal College of Physicians Library</repository>
+      <shelfmark>10549-50 D1/16-b-5</shelfmark>
+      <author>
+        <name>Cicero, Marcus Tullius</name>
+        <id>http://www.isni.org/isni/0000000449396819</id>
+      </author>
+      <reader>
+        <name>John Dee</name>
+        <id>http://www.isni.org/isni/0000000122785193</id>
+      </reader>
+      <website>https://archaeologyofreading.org/bibliography/Dee-corpus/Cicero-I</website>
+      <note>Record: http://rcp.soutron.net/Portal/Default/en-GB/RecordView/Index/33629</note>
+    </bibliography>
+  </bibliographies>
+</book>

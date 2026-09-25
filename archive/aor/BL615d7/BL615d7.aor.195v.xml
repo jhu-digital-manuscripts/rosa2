@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.195v.tif" pagination="[195v]" reader="John Dee" signature="[Bbiij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Domenichina" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Domenichina</marginalia_text>
+                    <location name="Dominica"/>
+                </position>
+            </language>
+            <translation>Dominica</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Borica</marginalia_text>
+                    <location name="Puerto Rico"/>
+                </position>
+            </language>
+            <translation>Puerto Rico</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nello stretto" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>This streict</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="&amp; lauasse" type="straight"/>
+        <underline language="IT" method="pen" text="panni fino al Sabbatodì" type="straight"/>
+        <underline language="IT" method="pen" text="all' Isola" type="straight"/>
+        <underline language="IT" method="pen" text="dista x leghe" type="straight"/>
+        <underline language="IT" method="pen" text="Santa Croce" type="straight"/>
+        <underline language="IT" method="pen" text="S. Giouanni" type="straight"/>
+        <underline language="IT" method="pen" text="per lo Golfo" type="straight"/>
+        <underline language="IT" method="pen" text="Paria" type="straight"/>
+        <underline language="IT" method="pen" text="nello stretto" type="straight"/>
+        <underline language="IT" method="pen" text="uerso Veragua, &amp; il Nome" type="straight"/>
+        <underline language="IT" method="pen" text="Lares" type="straight"/>
+        <underline language="IT" method="pen" text="amministratione" type="straight"/>
+        <underline language="IT" method="pen" text="Pietro di Terreros" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

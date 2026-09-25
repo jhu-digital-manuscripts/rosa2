@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.092v.tif" pagination="8" reader="Harvey" signature="[A4v]"/>	<!-- ABO 97left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Pra[e]sently run-ouer the worthiest bookes you haue,
+						or can gett: and see what important vse you can
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						make of the worthiest points
+						in them: pra[e]cepts, or examples.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Qui solido iudico
+						procedit, et verè Critico; statim animaduertit
+						qua[e] sunt maximu[m] factura
+						opera[e] precium. Ca[e]tera leuiter percurrenda.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Whoever procedes with judgment both solid and truly critical, immediately
+				turns his attention to those works which are greatest in reward.
+				Other things must be passed over quickly.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Prudentis est, Sibi ipsi
+						nunq[uam] repugnare in suo cursu.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The prudent man never opposes himself while going forward.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Sibi constat proficiens.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The accomplishing man is always consistent with himself.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Minerua, mea minera.
+					</marginalia_text>
+					<person name="Minerva"/>
+				</position>
+			</language>
+			<translation>
+				Minerva, my goldmine. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Sententia[e] Ethica[e], et Physica[e], ex viuo fonte 4. Virtutum: 4. Elementorum:
+						4. Complexionum: 4. Mundi Cardinum: 4. anni temporum. Mea vnius
+						Minera inexhausta.
+					</marginalia_text>
+					<person name="Minerva"/>
+				</position>
+			</language>
+			<translation>
+				The concepts of Ethics and Physics, from a living source: four virtues, four elements,
+				four combinations, four cardinal directions, four seasons. My sole unexhausted Minerva.
+			</translation>
+		</marginalia>
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.092v_0001" marginalia_continues_to="Ha2.093r_0001" marginalia_to_transcription="Ha2.093r.xml">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Apollonius Tyaneus et ipsis Atticis loquebatur elegantiùs: [[A5r]: et ipsis A[e]gyptijs operabatur peritiùs: et omnibus Magis
+						potentiora Miracula perpetrabat.]
+							<!-- Continues onto facing page, left margin, Ha2.093r -->
+					</marginalia_text>
+					<person name="Apollonius of Tyana"/>
+				</position>
+			</language>
+			<translation>
+				Apollonius Tyaneus spoke more elegantly even than the Greeks themselves, [[A5r]: and worked more skillfully than the Egyptians themselves, and carried out miracles
+				more powerful than all the wise men.] 
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Alfonso de' Pazzi" type="straight"/>
+		<underline language="IT" method="pen" text="l'altre Cortigiane alla" type="straight"/>
+		<underline language="IT" method="pen" text="lasciato legato" type="straight"/>
+		<underline language="IT" method="pen" text="non sei signore di nulla" type="straight"/>
+		<underline language="IT" method="pen" text="mordente sfacciataggine" type="straight"/>	
+		<underline language="IT" method="pen" text="che io impieghi tutto il mio" type="straight"/>
+		<underline language="IT" method="pen" text="in beni sodi" type="straight"/>
+		<underline language="IT" method="pen" text="già liquida" type="straight"/>
+		<underline language="IT" method="pen" text="posso impiegar cosa alcuna" type="straight"/>
+		<underline language="IT" method="pen" text="stimarsi la libertà con molti" type="straight"/>
+		<underline language="IT" method="pen" text="seruitù con molti" type="straight"/>
+		<underline language="IT" method="pen" text="hai la pasciona" type="straight"/>
+		<underline language="IT" method="pen" text="la catena" type="straight"/>
+		<underline language="IT" method="pen" text="serui pur tu Cane" type="straight"/>
+		<underline language="IT" method="pen" text="ch'io Leone" type="straight"/>
+		<underline language="IT" method="pen" text="siano facili à satiarsi" type="straight"/>
+		<underline language="IT" method="pen" text="Il Toro" type="straight"/>
+		<underline language="IT" method="pen" text="vna selue basta" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--ripo-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--tra-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--ca-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--Leo-->
+		
+		<mark method="pen" name="dot" place="intext"/> <!--ano, ma-->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="posso impiegar cosa alcuna"/>
+		<mark method="pen" name="dot" place="intext"/> <!--satiarsi, &--> 
+
+    </annotation>
+</transcription>

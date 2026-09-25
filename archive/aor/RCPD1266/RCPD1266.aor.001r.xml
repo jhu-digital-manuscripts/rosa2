@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.001r.tif" pagination="title page" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian" other_reader="Nicholas Saunder">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>nich[olas]:saunder</marginalia_text>
+                    <person name="Nicholas Saunder"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pencil" other_reader="unknown">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>19</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="vt de ea posthac nulla sit mouenda quaestio" type="straight"/>
+        <underline language="LA" method="pen" text="ANTON. CHVPPINVM" type="straight"/>
+        
+        <mark method="pen" name="scribble" place="tail"/>
+        
+    </annotation>
+</transcription>

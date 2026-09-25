@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.089v.tif" pagination="2" reader="Harvey" signature="[Av]"/>	<!-- ABO 94left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="EL">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						οττι τοι ἐν μεγάροισι κακόντ', ἀγαθόν τε τέτυκται.
+					</marginalia_text>
+					<X-ref book_title="The Odyssey" language="EL" person="Homer" text="οττι τοι ἐν μεγάροισι κακόντ', ἀγαθόν τε τέτυκται"/>
+				</position>
+			</language>
+			<translation>
+				"What evil and what good has been wrought in thy halls."
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Neoauxesis, s[upr]a, i[nfr]a. Neoironia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A new form of improvement, above, below. A new form of irony.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Valet actor, tam iudicio solidus, quàm serius industriâ.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				An actor is capable when he is as solid in judgment as he is earnest in his industriousness.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Et singula seriò: et ioco omnia: Eutrapeli dexteritas.	
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				Both earnestly in singular matters, and jovially in all things: the skillfulness of Eutrapelus.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Nec tanti est ullum negociu[m], vt tristem 
+						faciat virum. 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				There is no matter of importance that makes a man sad.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Nec me vnq[uam] uidebit mundus aut ignavum; aut
+						timidum; aut tristem; aut iracundum. }
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The world will never see me lazy, timid, sad, or angry.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Singula leui pollice: instar Ludi omnia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Doing singular things with a light touch: a model for all games.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Tardè aggredi, frigiditas senilis: non perficere, leuitas puerilis. Et maturè
+						incipere, et perfectè finire, virtus est virilis. Pla[e]riq[ue] omnes, Nuga[e].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				To undertake something too late, such is the coldness of old age. To fail to accomplish something, such is the fickleness of youth.
+				But to begin at the right moment and to finish something enitrely, such is the virtue of the virile man. The majority of all men are trifles.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Bona Oeconomica facit bonam politicam. Vt charitas; sic prudentia
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="tail">
+					<marginalia_text>
+						incipit à Se ipsa. Hodiè mihi: cras tibi.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Good economics makes for good politics. As with charity, so too prudence begins
+				from itself. Today is mine, tomorrow is yours.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>s[upr]a.</marginalia_text> <!--next to fortuiti-->
+				</position>
+			</language>
+			<translation>[See] above.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Non, ogni" type="straight"/>
+		<underline language="IT" method="pen" text="alla Fortuna" type="straight"/>
+		<underline language="IT" method="pen" text="loquacità" type="straight"/>
+		<underline language="IT" method="pen" text="gli occhi" type="straight"/>
+		<underline language="IT" method="pen" text="gli orechi" type="straight"/>
+		<underline language="IT" method="pen" text="il dolersi d'altri" type="straight"/>
+		<underline language="IT" method="pen" text="ammazzò quel tale" type="straight"/>
+		<underline language="IT" method="pen" text="d'homicidio" type="straight"/>
+		<underline language="IT" method="pen" text="ne voglio far la penitentia" type="straight"/>
+		<underline language="IT" method="pen" text="donde io caddi" type="straight"/>
+		<underline language="IT" method="pen" text="sederò doue sedeua tuo padre" type="straight"/>
+		<underline language="IT" method="pen" text="anche tu me, se ti" type="straight"/>
+		
+		<symbol name="JC" place="tail"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--ve-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--d'ho-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--pe-->
+		
+		<mark method="pen" name="vertical_bar" place="intext"/> <!--poco Questo-->
+    </annotation>
+</transcription>

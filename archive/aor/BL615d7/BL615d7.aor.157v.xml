@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.157v.tif" pagination="[157v]" reader="John Dee"/>    
+    <annotation>
+        
+        <marginalia anchor_text="Paria" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Paria</marginalia_text>
+                    <location name="Paria"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="I di Agosto" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Augusti I</marginalia_text>
+                </position>
+            </language>
+            <translation>1st of August.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="terra ferma" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Terra firma</marginalia_text>
+                </position>
+            </language>
+            <translation>Solid earth.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="la corrente" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>The Curre[n]te</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tyde and eb.</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+      
+      
+        <underline language="IT" method="pen" text="per li molti" type="straight"/>
+        <underline language="IT" method="pen" text="Paria" type="straight"/>
+        <underline language="IT" method="pen" text="Spiaggia sopra" type="straight"/>
+        <underline language="IT" method="pen" text="alla volta dell' Ostro" type="straight"/>
+        <underline language="IT" method="pen" text="XXV leghe" type="double"/>
+        <underline language="IT" method="pen" text="vn'altra Isola" type="straight"/>
+        <underline language="IT" method="pen" text="I'Isola Santa" type="straight"/>
+        <underline language="IT" method="pen" text="XXX leghe" type="straight"/>
+        <underline language="IT" method="pen" text="Leste Aueste" type="straight"/>
+        <underline language="IT" method="pen" text="molte popolationi" type="straight"/>
+        <underline language="IT" method="pen" text="corrente del mare era si veloce verso l' Occidente" type="straight"/>
+        <underline language="IT" method="pen" text="crescesse, &amp; scemasse l'" type="straight"/>
+        <underline language="IT" method="pen" text="LX" type="double"/>
+        <underline language="IT" method="pen" text="suole auuenire" type="straight"/>
+        <underline language="IT" method="pen" text="non pericò lascia mai di correre verso il mare" type="double"/>
+        
+        <mark method="pen" name="dot" place="intext" text="veloce verso"/>
+        
+    </annotation>
+</transcription>

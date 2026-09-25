@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.305r.tif" pagination="589" reader="John Dee" signature="[ooo.viii.]"/>
+    <annotation>
+        
+        <marginalia anchor_text="moneta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>moneta.</marginalia_text>
+                </position>
+            </language>
+            <translation>Money.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="reserare" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>reserare.</marginalia_text>
+                </position>
+            </language>
+            <translation>To unseal.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="bellicum me cecinisse" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>bellicu[m] canere.</marginalia_text>
+                </position>
+            </language>
+            <translation>To blow the war trumphet.</translation>
+        </marginalia> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Qu[a]estio.</marginalia_text>
+                </position>
+            </language>
+            <translation>A question.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="ego ille" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ego ille.</marginalia_text>
+                </position>
+            </language>
+            <translation>I. He.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="tamen animus aberrat à sententia" type="straight"/>
+        <underline language="LA" method="pen" text="quantum afferat languoris" type="straight"/>
+        <underline language="LA" method="pen" text="reserare nos exteris ge[n]tibus Italiam" type="straight"/>
+        <underline language="LA" method="pen" text="illa fax excitare no[n] posset incendiu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Vtrum igitur in nefariis ciuibus vlciscendis" type="straight"/>
+        <underline language="LA" method="pen" text="qui" type="straight"/>
+        <underline language="LA" method="pen" text="quî enim conuenit" type="straight"/>
+        <underline language="LA" method="pen" text="animo amicissimo" type="straight"/>
+        <underline language="LA" method="pen" text="cogitationes" type="straight"/>
+        <underline language="LA" method="pen" text="studiorum etiam honestissimorum societas" type="straight"/>
+        <underline language="LA" method="pen" text="non pari virtute &amp; voluntate alii" type="straight"/>
+        <underline language="LA" method="pen" text="tantam causam" type="straight"/>
+        <underline language="LA" method="pen" text="qui semper author pacis fui: cuíque" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">18.21</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        
+    </annotation>
+</transcription>

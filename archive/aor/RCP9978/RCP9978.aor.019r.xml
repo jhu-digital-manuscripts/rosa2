@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.019r.tif" reader="John Dee" signature="E iij"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Berelishca</marginalia_text>  <!-- Berelistica; see https://books.google.co.uk/books?id=FAOvxls5fWwC&pg=PA141&lpg=PA141&dq=Berelistica&source=bl&ots=KD3hJLAbwC&sig=oqEBJYeSmZAydYea0dn8FL04GE8&hl=en&sa=X&ved=0ahUKEwid74fu97_WAhVnD8AKHSZ_DzwQ6AEILTAA#v=onepage&q=Berelistica&f=false -->
+                </position>
+            </language>
+            <translation>Berelistica</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="securibus, Axiomantia" type="straight"/>
+        <underline language="LA" method="pen" text="quae speculis &amp; corporibus splendidioribus fieri solet, in quibus apparerent hominum, siue parentum" type="straight"/>
+        <underline language="LA" method="pen" text="siue aliorum formae: item castra, ciuitates, &amp; id genus" type="straight"/>
+        
+        <errata amendedtext="oluimus" copytext="voluimus" language="LA"/>
+        <errata amendedtext="amphora" copytext="amplora" language="LA"/>
+        
+    </annotation>
+</transcription>

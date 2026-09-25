@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.504r.tif" reader="Harvey" signature="N2[r]"/>    
+    <annotation>
+        
+        <marginalia anchor_text="GLAREANI CHRONOLOGIA" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        Chronologia Glareani, alphabetica. 
+                    </marginalia_text>
+                    <person name="Heinrich Glarean"/>  
+                </position>
+            </language>
+            <translation>
+                Glareanus' alphabetical chronology.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Martius Figulus" type="straight"/>
+        <underline language="LA" method="pen" text="Baebius Pamphilus" type="straight"/>
+        <underline language="LA" method="pen" text="Fonteius Balbus" type="straight"/>
+        <underline language="LA" method="pen" text="CENSORES PRIMAE" type="straight"/>
+        <underline language="LA" method="pen" text="Papyrius Mugillanus" type="straight"/>
+        <underline language="LA" method="pen" text="CENSORES" type="straight"/>
+        <underline language="LA" method="pen" text="CENSORES QVARTAE" type="straight"/>
+        <underline language="LA" method="pen" text="PONTIFICES MAXIMI" type="straight"/>
+        <underline language="LA" method="pen" text="Furius" type="straight"/>
+        <underline language="LA" method="pen" text="Cornelius Barbatus" type="straight"/>
+        <underline language="LA" method="pen" text="PONTIFICES MAXIMI" type="straight"/>
+        <underline language="LA" method="pen" text="GLAREANI CHRONOLOGIA" type="straight"/>
+        <underline language="LA" method="pen" text="ASCENSIVM IN SERIEM" type="straight"/>
+        <underline language="LA" method="pen" text="Olympiadum" type="straight"/>
+        <underline language="LA" method="pen" text="Vrbe condita" type="straight"/>
+        <underline language="LA" method="pen" text="natalem Dominicum" type="straight"/>
+        <underline language="LA" method="pen" text="Liuio magistratibus" type="straight"/>
+        <underline language="LA" method="pen" text="quo tempore" type="straight"/>
+        <underline language="LA" method="pen" text="Olympiadis" type="straight"/>
+        <underline language="LA" method="pen" text="anno 4. urbis" type="straight"/>
+        <underline language="LA" method="pen" text="Glareanus errorem" type="straight"/>
+        
+        <symbol language="LA" name="SS" place="left_margin" text="Papyrius Mugillanus"/>
+        <symbol name="SS" place="intext"/>
+            
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="Furius"/>
+        <mark method="pen" name="dot" place="intext"/> <!--CHRONOLOGIA, PER-->
+        <mark method="pen" name="dot" place="intext"/> <!--REDACTA, signatis-->
+        <mark method="pen" name="dot" place="intext"/> <!-- condita, &-->
+        <mark method="pen" name="comma" place="intext"/> <!-- Dominicum -->
+        <mark method="pen" name="dot" place="intext"/> <!-- notiora, -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="quo tempore"/>
+        
+    </annotation>
+    
+</transcription>

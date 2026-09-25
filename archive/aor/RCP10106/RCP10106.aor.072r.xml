@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.072r.tif" pagination="143" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Herculis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hercules.</marginalia_text>
+                    <person name="Hercules"/>
+                </position>
+            </language>
+            <translation>Hercules.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="proprium laùdis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Laudis prop[ri]u[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Proper praise.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Verum in deis, generaliter primum maiestate[m] ipsius eorum naturae uenerabimur: deinde propriam uim cuiusq[ue] &amp; inuenta, quae utile aliquid hominibus attuleru[n]t. Vis              ostenditur, ut in Ioue, regundorum hominum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Deoru[m] laus</marginalia_text>
+                </position>
+            </language>
+            <translation>Praise of gods.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iaus hominum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hominu[m] laus</marginalia_text>
+                </position>
+            </language>
+            <translation>Praise of men.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="care[n]tium" type="straight"/>
+        
+    </annotation>
+</transcription>

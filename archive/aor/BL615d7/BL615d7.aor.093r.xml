@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.093r.tif" pagination="93" reader="John Dee"/> 
+    
+    
+    <annotation>
+        
+        <marginalia anchor_text="Castore, &amp; Polluce" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Castor and Pollux.</marginalia_text>
+                    <person name="Castor"/>
+                    <person name="Pollux"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="II di Nouembre" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nove[m]ber 2</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Domenica" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Isola Domenica.</marginalia_text>
+                    <location name="Dominica"/>
+                </position>
+            </language>
+            <translation>The island Dominica.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="la Salve" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Prayer</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="in XX giorni" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In 20 diebus</marginalia_text>
+                </position>
+            </language>
+            <translation>In 20 days.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="DCCL fino ad DCCC leghe" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>750 or 800 Leagues of 4 Italien miles to a League.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="ch'era Castore" type="straight"/>
+        <underline language="IT" method="pen" text="anco i nembi" type="straight"/>
+        <underline language="IT" method="pen" text="d'esser" type="double"/>
+        <underline language="IT" method="pen" text="vicino ad alcuna" type="straight"/>
+        <underline language="IT" method="pen" text="videro terra al Loeste sette leghe lontan dell'armata, ch'era vna Isola alta, &amp; montuosa" type="straight"/>
+        <underline language="IT" method="pen" text="Domenica" type="straight"/>
+        <underline language="IT" method="pen" text="vn'altra" type="straight"/>
+        <underline language="IT" method="pen" text="vide vn'altra" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; vn'altra" type="straight"/>
+        <underline language="IT" method="pen" text="che in XX" type="straight"/>
+        <underline language="IT" method="pen" text="partiti dalla Gomera" type="straight"/>
+        <underline language="IT" method="pen" text="alla sopradetta terra" type="straight"/>
+        <underline language="IT" method="pen" text="DCCL" type="straight"/>
+        <underline language="IT" method="pen" text="ad DCCC" type="straight"/>
+           
+        
+    </annotation>
+    
+</transcription>

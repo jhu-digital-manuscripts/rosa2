@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.202r.tif" pagination="202" reader="John Dee" signature="Ccij"/>
+   <annotation>
+       
+       <marginalia anchor_text="l' Oriente fino al Capo di Gratie a Dio, è quasi negra" hand="Italian" method="pen">
+           <language ident="IT">
+               <position book_orientation="0" place="right_margin">
+                   <marginalia_text>Negros.</marginalia_text>
+               </position>
+           </language>
+           <translation>Black people.</translation>
+       </marginalia>
+       
+       <marginalia anchor_text="Costa dell' Orecchia" hand="Italian" method="pen">
+           <language ident="IT">
+               <position book_orientation="0" place="right_margin">
+                   <marginalia_text>Costa dell'Orecchia</marginalia_text> 
+                   <location name="Coast of Orecchia"/>
+               </position>
+           </language>
+           <translation>The coast of Orecchia.</translation>
+       </marginalia>
+        
+       <underline language="IT" method="pen" text="l'Oriente fino al Capo di Gratie a Dio, è quasi" type="double"/>
+       <underline language="IT" method="pen" text="Costa dell'Orecchia" type="straight"/>
+       <underline language="IT" method="pen" text="MDII" type="straight"/>
+       <underline language="IT" method="pen" text="il possesso" type="double"/>
+       
+       <mark method="pen" name="comma" place="intext"/> <!-- Costa, Costa -->
+        
+    </annotation>
+</transcription>

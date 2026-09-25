@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.001r.tif" pagination="[Aii[r]]" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Exemploru[m] bellicoru[m] Libri 4. </marginalia_text>
+                    <emphasis method="pen" text="Exemploru[m] bellicoru[m]" type="straight"/>
+                </position>
+            </language>
+            <translation>Of examples of war, in book 4.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>{ No riches, to A sound boddy: nor any pleasure, to [the] ioy of [the] Hart. <!--Ecclesiastes 30:16-->
+                    Ecclesiast. 30.</marginalia_text>
+                    <book title="Book of Ecclesiastes"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Duo necessarij Tomi ad vitam fouenda[m]: alter vtilium stratagematu[m]: alter dulcium Iocorum.</marginalia_text>
+                </position>
+            </language>
+            <translation>Two necessary volumens for fostering life: one of useful strategies, another of pleasant jokes.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In [the] reigne of king Henry VIII. on M. Horne, Doctor Barnes especial frend, hearing that 
+                    [the] writt shoold uery shortly com to burne him: gaue D[octo]r Barnes counsel, to faine himself desperate; and in that pra[e]tensed case shoold
+                    write A Letter to [the] Lord Cardinal Woolsey, &amp; leaue it on his Table, where he lay, &amp; A paper by: to declare whether he
+                    was gon to drowne himself, &amp; to leaue his clothes in the same place: leauing there an other Letter to [the] Maior of [the] towne,
+                    to search for him in [the] water: bycause he had A Letter written in parchment abowt his neck, enclosed in wax, for Mylorde Cardinal; wi[ch] woold teach all men to beware by him.
+                    Whereupon they were VII. dayes in searching for him: but he was warily conueyed to London in A poremans apparrel: and not tarrying there, tooke shipping, &amp; went by long [sease] to Anwerp, &amp; so to Luther:
+                    with whome he soone grew uery great, as also with Melancthon, Pomeran, Justus Jonas, Hegendorphinus, and other lerned men: beside [the] Duke of Saxony, &amp; [the] Kinge of Denmark. Immediatly it was towld [the] Cardinal, that
+                    D[octo]r Barnes was drowned: who sayed,
+                    </marginalia_text>
+                    <person name="Henry VIII"/>
+                    <person name="Robert Barnes"/>
+                    <person name="Thomas Wolsey"/>
+                    <person name="Luther"/>
+                    <person name="Philipp Melanchthon"/>
+                    <person name="Johannes Pomerantz"/>
+                    <person name="Justus Jonas"/>
+                    <person name="Christopher Hegendorphine"/>
+                    <person name="George of Saxony"/> 
+                    <person name="Christian III of Denmark"/>
+                    <location name="London"/>
+                    <location name="Antwerp"/>
+                    <X-ref book_title="Book of martyrs" language="EN" person="John Foxe" text="In [the] reigne of king Henry VIII. on M. Horne, Doctor Barnes especial frend, hearing that [the] writt shoold uery shortly com to burne him: gaue D[octo]r Barnes counsel, to faine himself desperate; and in that pra[e]tensed case shoold write A Letter to [the] Lord Cardinal Woolsey, &amp; leaue it on his Table, where he lay, &amp; A paper by: to declare whether he was gon to drowne himself, &amp; to leaue his clothes in the same place: leauing there an other Letter to [the] Maoir of [the] towne, search for him in [the] water: bycause he had A Letter written in parchment abowt his neck, inclosed in wax, for Mylorde Cardinal; wi[ch] woold teach all men to beware by him. Whereupon they were VII. dayes in searching for him: but he was warily conueyed to London in A poremans apparrel: and not tarrying there, tooke shipping, &amp; went by long [sease] to Anwerp, &amp; so to Luther: with whome he sooen grew uery great, as also with Melancthon, Pomeran, Just Jonas, Hegendorphinus, and other lerned men: beside [the] Duke of Saxony, &amp; [the] Kinge of Denmark. Immediatly it was towld [the] Cardinal, that D[octo]r Barnes was drowned: who sayed,"/> <!--see: https://books.google.co.uk/books?id=QARgAAAAcAAJ&pg=PA373&lpg=PA373&dq=perit+memoria+eius+cum+sonitu.&source=bl&ots=T8Pj21cxCm&sig=2ECyrsAHqDbDnSXythch6HnnnHE&hl=en&sa=X&ei=_QU6VdyhMo-Uau_qgOAH&ved=0CCkQ6AEwAg#v=onepage&q=perit%20memoria%20eius%20cum%20sonitu.&f=false-->
+                    <emphasis method="pen" text="Doctor Barnes" type="straight"/>
+                    <emphasis method="pen" text="faine himself desperate" type="straight"/>
+                    <emphasis method="pen" text="Letter to" type="straight"/>
+                    <emphasis method="pen" text="Lord Cardinal" type="straight"/>
+                    <emphasis method="pen" text="gon to drowne himself" type="straight"/>
+                    <emphasis method="pen" text="other Letter" type="straight"/>
+                    <emphasis method="pen" text="[the] Maior of [the] towne" type="straight"/>
+                    <emphasis method="pen" text="Letter written" type="straight"/>
+                    <emphasis method="pen" text="parchment abowt" type="straight"/>
+                    <emphasis method="pen" text="enclosed in" type="straight"/>
+                    <emphasis method="pen" text="wax, for Mylorde" type="straight"/>
+                    <emphasis method="pen" text="Cardinal" type="straight"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>perit memoria eius cum sonitu.</marginalia_text> <!--JG: Variant of Psalm 9:7 '...periit memoria eorum cum sonitu'-->
+                    <X-ref book_title="Book of martyrs" language="LA" person="John Foxe" text="periit memoria eius cum sonitu"/>
+                </position>
+            </language>
+            <translation>his memory dies with a noise.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="Lorde of Irelande, and" type="straight"/>
+        <underline language="EN" method="pen" text="Richarde Morysine" type="straight"/>
+        <underline language="EN" method="pen" text="parte of all dayes" type="straight"/>
+        <underline language="EN" method="pen" text="of all" type="straight"/>
+        <underline language="EN" method="pen" text="nyghtes alsoo" type="straight"/>
+        <underline language="EN" method="pen" text="peace mooste godly lawes, statutes, and proclamations, for" type="straight"/>
+        <underline language="EN" method="pen" text="subiectes fowles" type="straight"/>
+        
+        <symbol name="Sun" place="head"/>
+        
+        <symbol language="EN" name="SS" place="left_margin" text="No riches, to A sound boddy: nor any pleasure, to [the] ioy of [the] Hart. Ecclesiast. 30."/>
+        
+        <symbol name="SS" place="right_margin"/> <!--JG: sloppy SS symbol-->
+        <symbol name="SS" place="right_margin"/> <!--JG: sloppy SS symbol-->
+        <symbol name="SS" place="right_margin"/> <!--JG: sloppy SS symbol-->
+        
+        <mark method="pen" name="plus_sign" place="head"/>
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="n [the] reigne of king Henry VIII. on M. Horne, Doctor Barnes especial frend, hearing that              [the] writt shoold uery shortly com to burne him: gaue D[octo]r Barnes counsel, to faine himself desperate; and in that pra[e]tensed case shoold             write A Letter to [the] Lord Cardinal Woolsey, &amp; leaue it on his Table, where he lay, &amp; A paper by: to declare whether he             was gon to drowne himself, &amp; to leaue his clothes in the same place: leauing there an other Letter to [the] Maior of [the] towne,             to search for him in [the] water: bycause he had A Letter written in parchment abowt his neck, enclosed in wax, for Mylorde Cardinal; wi[ch] woold teach all men to beware by him.             Whereupon they were VII. dayes in searching for him: but he was warily conueyed to London in A poremans apparrel: and not tarrying there, tooke shipping, &amp; went by long [sease] to Anwerp, &amp; so to Luther:             with whome he soone grew uery great, as also with Melancthon, Pomeran, Justus Jonas, Hegendorphinus, and other lerned men: beside [the] Duke of Saxony, &amp; [the] Kinge of Denmark. Immediatly it was towld [the] Cardinal, that             D[octo]r Barnes was drowned: who sayed,"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/> <!--above vitam fouenda-->
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="peace mooste godly lawes, statutes, and proclamations, for"/>
+        <mark method="pen" name="double_vertical_bar" place="left_margin"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!--Englande, Richarde-->
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--separating two marginal notes-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="dayes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="nyghtes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="lawes, statutes"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.099r.tif" reader="Harvey" signature="Miiii[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Right stowtnes, &amp; uery ualiant lusty coorage; worthy A noble, &amp; heroical Mynde.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Inuincible Audacity, confidence,</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Zeale, obstinacy, &amp; fury: proceding of A magnanimous &amp; curragious mynd:
+                    resolutely bent, ether to liue or dy honorably. The only</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>( braue resolution of the</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>World.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Caius Caesar" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ca[e]sar stout, &amp; inuincible, euen in [the] heat of sedition.</marginalia_text>
+                    <person name="Gaius Caesar"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Omnia magna, Cordialiter, et fiducialiter gerenda: aliàs parùm valent. Fortis Imaginatio, et
+                    Valida Actio operant[u]r miracula: vt in Dauide, Goliam statim prosternente, et sua illa famosa X. Millia.</marginalia_text>
+                    <person name="King David"/>
+                    <person name="Goliath"/>
+                    <emphasis method="chalk" type="straight"/>
+                </position>
+            </language>
+            <translation>All great things must be born cordially and confidently: otherwise they are of little worth.
+            Firm imagination and powerful action work miracles: as in David knocking down Goliath at once, and his famous ten thousands.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Vt s[upr]a.</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0187" text="s[upr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>As above.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="compelled" type="straight"/>
+        <underline language="EN" method="pen" text="Of Constancie" type="straight"/>
+        <underline language="EN" method="pen" text="Cn. Po[m]peius" type="straight"/>
+        <underline language="EN" method="pen" text="thretned" type="straight"/>
+        <underline language="EN" method="pen" text="the moneye" type="straight"/>
+        <underline language="EN" method="pen" text="caryed in the triu[m]ph" type="straight"/>
+        <underline language="EN" method="pen" text="deuide it, leeste" type="straight"/>
+        <underline language="EN" method="pen" text="it wolde cause" type="straight"/>
+        <underline language="EN" method="pen" text="no triumphe" type="straight"/>
+        <underline language="EN" method="pen" text="rather dye" type="straight"/>
+        <underline language="EN" method="pen" text="bowe and obeye to the lewde lybertie" type="straight"/>
+        <underline language="EN" method="pen" text="of his souldiours" type="straight"/>
+        <underline language="EN" method="pen" text="caste forth" type="straight"/>
+        <underline language="EN" method="pen" text="his lauriate bundelles" type="straight"/>
+        <underline language="EN" method="pen" text="borne in sygne of vyctorie" type="straight"/>
+        <underline language="EN" method="pen" text="fyrste to spoyle" type="straight"/>
+        <underline language="EN" method="pen" text="that odiouse proffer, he pacyfyed" type="straight"/>
+        <underline language="EN" method="pen" text="of sedition amonges" type="straight"/>
+        <underline language="EN" method="pen" text="souldiours" type="straight"/>
+        <underline language="EN" method="pen" text="were in their moste" type="straight"/>
+        <underline language="EN" method="pen" text="Caius Cesar feared not to put the holle legyon out of wages" type="straight"/>
+        <underline language="EN" method="pen" text="beheaddynge the captaynes" type="straight"/>
+        <underline language="EN" method="pen" text="wages, besechynge" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="head"/>
+        <mark method="pen" name="plus_sign" place="head"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="Caius Cesar feared not to put the holle legyon out of wages"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--thret-->
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Of Constancie"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--under 'Of Constancie'-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="wolde cause"/>
+        <mark method="pen" name="dot" place="intext"/> <!--sedition, he-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="bowe and obeye to the lewde lybertie"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="odiouse"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="beheaddynge"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="captaynes"/>
+        
+    </annotation>
+</transcription>

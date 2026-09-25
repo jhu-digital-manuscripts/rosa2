@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.255v.tif" pagination="490" reader="John Dee" signature="[hhh.v.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="interseptum sit his iter" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        interseptu[m] iter.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                An enclosed way.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fidelissima[m] atque amicissima[m] nobis ciuitate[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Ciuitas amiciss[im]a fideliss[im]a co[n]iunctiss[im]a
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A city, most amicable, faithful and connected.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ornamentis populu[m] istum C. Caesar, cum esset in Hispania Praetor, affecerit, co[n]trouersias sedarit: iura ipsoru[m] permissu statuerit:              inueteratam quonda[m] barbaria[m] ex Gaditanorum moribus disciplináque delerit: summa in eam ciuitate[m] huius rogatu studia &amp; beneficia" type="straight"/>
+        <underline language="LA" method="pen" text="Itaque &amp; adsunt principes ciuitatis: &amp; defendu[n]t, amore vt suum ciue[m], testimonio vt nostru[m],              officio vt nobilissimu[m] &amp; sanctissimu[m] hospitem, studio vt diligentissimu[m] defensorem co[m]modorum suorum. Ac ne" type="straight"/>
+        <underline language="LA" method="pen" text="vos non ignoranteis" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">18</numeral>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.285v.tif" pagination="551" reader="John Dee" signature="[mmmm.iii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="id numerabitur in actis ... id in actis Caesaris no[n] habebitur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>id [ numerabit[ur] habebitur in actis</marginalia_text>
+                </position>
+            </language>
+            <translation>That is counted/had in deeds.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="laudatius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Laudatius.</marginalia_text>
+                </position>
+            </language>
+            <translation>More praise.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="liudici" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Judex</marginalia_text>
+                </position>
+            </language>
+            <translation>Judge.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="sordes suas eluet" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>eluere sordes</marginalia_text>
+                </position>
+            </language>
+            <translation>To wash clear filth.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="armis enim gesta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Armis gesta</marginalia_text>
+                </position>
+            </language>
+            <translation>Acts of warfare.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="aqua &amp; igni interdici" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>aqua &amp; igni interdici</marginalia_text>
+                </position>
+            </language>
+            <translation>To be prohibited by water and fire.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="in quo quantus" type="straight"/>
+        <underline language="LA" method="pen" text="armis enim gesta, nunqua[m] profecto in iudiciu[m]" type="straight"/>
+        
+        <numeral place="left_margin">10.11</numeral>
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+        <drawing anchor_text="Judex" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="Armis gesta" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

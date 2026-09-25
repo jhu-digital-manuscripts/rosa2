@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.159r.tif" pagination="297" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="inficiari" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        inficiari
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To deny.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Coniuratio Catilin[a]e
+                    </marginalia_text>
+                    <person name="Lucius Sergius Catilina"/>
+                </position>
+            </language>
+            <translation>
+                Catilina's conspiracy.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="non feram, non patiar, non sinam" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        no[n] fera[m] no[n] patiar no[n] sinam ]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                I do not bear, I do not suffer, I do not allow.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ioui Statori" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Jupiter Stator
+                    </marginalia_text>
+                    <location name="Temple of Jupiter Stator"/>
+                </position>
+            </language>
+            <translation>
+                Jupiter Stator.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="per me tibi obstiti" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        per me tibi obstiti
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                I oppose you through me.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Recognosce mecum tandem" type="straight"/>
+        <underline language="LA" method="pen" text="quos ferro trucidari oportebat, eos no[n]dum voce vulnero" type="straight"/>
+        <underline language="LA" method="pen" text="descripsisti vrbis partes ad incendia" type="straight"/>
+        <underline language="LA" method="pen" text="exclusi" type="straight"/>
+        <underline language="LA" method="pen" text="dummodo inter me atque te murus" type="straight"/>
+        <underline language="LA" method="pen" text="tam tetram, tam horribilem, támque infestam Reipublicae peste[m]" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; vastitate[m]" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; perniciosa sentina Reipublicae" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">7</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">21</numeral>
+        
+    </annotation>
+</transcription>

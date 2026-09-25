@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.067v.tif" pagination="[67[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Fa[e]mina[e] Anatomia discrepat ab humana
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The female anatomy differs from the human [anatomy].</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Creatur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Creatura - 1. 2. 3.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Creatures: 1, 2, 3.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="wiewol gleich in viel kranckheiten mit dem Mann" type="straight"/>
+        <underline language="DE" method="pen" text="andere Welt" type="straight"/>
+        <underline language="DE" method="pen" text="Welt is vnd" type="straight"/>
+        <underline language="DE" method="pen" text="die erste Creatur" type="straight"/>
+        <underline language="DE" method="pen" text="Me[n]sch war die ander" type="straight"/>
+        <underline language="DE" method="pen" text="Die fraw" type="straight"/>
+        <underline language="DE" method="pen" text="in den Generationibus nicht von einander" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!--ist vnd-->
+        <mark method="pen" name="comma" place="intext"/> <!--war die-->
+        <mark method="pen" name="dash" place="intext"/> <!--Mann also-->
+        <mark method="pen" name="dash" place="intext"/> <!--also auch-->
+        <mark method="pen" name="dash" place="intext"/> <!--Man[n] also-->
+        <mark method="pen" name="dash" place="intext"/> <!--also auch-->
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.127v.tif" pagination="[120v]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>pro divinatio[n]e in coclite causa[e] radicales optim[a]e que etiam tempore p[er] 
+                    revolutiones et directio[n]es [etc] corroboroba[n]tur.</marginalia_text>
+                    <person name="Bartholomaeus Cocles"/>
+                    <book title="Chyromantie ac physionomie anastasis"/>
+                </position>
+            </language>
+            <translation>For the prognostication in Cocles of optimal radical causes which are corroborated, even in [that] time, through the revolutions and directions, et cetera. </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>♃ ☿ ⚹ ♃ ☾ △ Etiam ☾ d[omi]na 9ae in  asce[n]de[n]tis <!-- FSF: I don't understand the distinction between a sextile and a star here; in this whole note, all "stars" look like sextiles to me, except for the third, which is a star -->
+                    ☾ ☿ ☍ ☿⁰ cu[m] ☊
+                    ♄ ☉ ☌ in ♈
+                    ♂ △ ☾ et in ⚹ asce[ndens]
+                    ♂ △ ♀ in ♉
+                    ♂  ☿</marginalia_text>
+                    <symbol_in_text name="Jupiter"/>
+                    <symbol_in_text name="Mercury"/>
+                    <symbol_in_text name="Sextile"/>
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Trine"/>
+                    <symbol_in_text name="Opposite_planets"/>
+                    <symbol_in_text name="North_Node"/>
+                    <symbol_in_text name="Saturn"/>
+                    <symbol_in_text name="Conjunction"/>
+                    <symbol_in_text name="Aries"/>
+                    <symbol_in_text name="Venus"/>
+                    <symbol_in_text name="Mars"/>
+                </position>
+            </language>
+            <translation>Jupiter, Mercury, sextile; Jupiter, Moon, trine. The moon also is the lord of the ninth house in sextile [when] ascending; Moon, Mercury, opposition Mercury with North node;
+            Saturn, Sun, conjunction in Aries; Mars, trine, Moon et in sextile [when] ascending; Mars, trine, Venus in Taurus; Mars, sextile, Mercury.</translation>
+        </marginalia>
+        
+        <errata amendedtext="[deleted]" copytext="9" language="LA"/> 
+        <errata amendedtext="[deleted]" copytext="4" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="Moon 18. 14." language="LA"/>
+        <errata amendedtext="[deleted]" copytext="Mercury 10.33" language="LA"/> 
+        <errata amendedtext="[deleted]" copytext="Sun 28. 8" language="LA"/> 
+        <errata amendedtext="[deleted]" copytext="27" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="46" language="LA"/>
+        
+        <drawing anchor_text="" book_orientation="0" method="pen" place="intext" type="manicule"/> <!--JG: Anchor text to include later, when MS text within chart is transcribed correctly-->
+        
+        <table place="intext" type="astrological_chart">
+            <tr>
+                <th/>
+                <th label="House"/>
+                <th label="Position"/>
+            </tr>
+            <tr>
+                <td>Scorpio</td> 
+                <td>1</td>
+                <td>9</td> 
+            </tr>
+            <tr>
+                <td>[Moon - deleted]</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>South Node</td>
+                <td>11</td>
+                <td>19/30/</td> 
+            </tr>
+            <tr>
+                <td>Moon</td>
+                <td>11</td>
+                <td>circa mediu[m] Virgo</td>
+            </tr>
+            <text hand="English_secretary" language="LA">
+                1467 die 18 martij hora.3 noctis Bononi[a]e. vt tradit ip[s]e cocles p[r]imo capite Chyroma[n]tiae [mag] <!--JG: Unsure abt 'mag'--> <!-- FSF: that's what I read too -->
+                ergo co[n]iuncti ☉ et ♄ ex [acte] <!--JG: Unsure abt 'acte' & commenti - coniuncti makes a bit more sense?--> <!-- FSF: I read coniuncti; not sure about acte either -->
+            </text>
+            <person name="Bartholomaeus Cocles"/>
+            <book title="Chyromantie ac physionomie anastasis"/>
+            <location name="Bologna"/>
+            <symbol_in_text name="Sun"/>
+            <symbol_in_text name="Saturn"/>
+            <translation>1467, on March 18, the third hour of the night, in Bologna. As Cocles himself related in the first chapter of the 'Chyromatie' [mag?]. 
+                Therefore of the coniunction of the Sun and Saturn from the acte. </translation> <!--JG: Very unsure, e.g. abt mag and 'commenti', acte-->
+        </table>
+        
+        
+    </annotation>
+</transcription>

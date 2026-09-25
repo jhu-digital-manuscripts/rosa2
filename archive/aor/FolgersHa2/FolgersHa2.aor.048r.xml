@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.048r.tif" pagination="415" reader="Harvey"/>	<!-- ABO 52right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Its a madd world mie Masters. The title of a new booke.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Plura Diogenis, et Aristippi apophtheg[ma]ta,
+						quàm Aristotelis, aut Platonis. Et eodem tempore,
+					</marginalia_text>
+					<person name="Diogenes of Sinope"/>
+					<person name="Aristippus"/>
+					<emphasis method="pen" text="Diogenis" type="straight"/>
+					<emphasis method="pen" text="Aristippi" type="straight"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						ipso Demosthene salsior Demades. Vt ) multis ante
+					</marginalia_text>
+					<person name="Demosthenes"/>
+					<person name="Demades"/>
+					<emphasis method="pen" text="Demades" type="straight"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						annis Pythagora Æsopus. At Cicerone
+					</marginalia_text>
+					<person name="Pythagoras"/>
+					<person name="Aesop"/>
+					<person name="Cicero"/>
+					<emphasis method="pen" text="A[e]sopus" type="straight"/>
+					<emphasis method="pen" text="Cicerone" type="straight"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						nemo Romanorum facetior; ne Ca[e]sar quidem. Vt multò
+					</marginalia_text>
+					<person name="Julius Caesar"/>
+					<emphasis method="pen" text="Ca[e]sar" type="straight"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						) esse
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						debeat
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						facetissimus, qui vult Ciceronianus esse, aut Ca[e]sarianus.
+					</marginalia_text>
+					<emphasis method="pen" text="facetissimus" type="straight"/>
+					<emphasis method="pen" text="Ciceronianus esse" type="straight"/>
+					<emphasis method="pen" text="Ca[e]sarianus" type="straight"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Valdè etiam salsi,
+					</marginalia_text>
+					<emphasis method="pen" text="salsi" type="straight"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						et faceti, illi exquisiti
+						Oratores, Proa[e]resius, Libanius, Julianus, Eunapius,						
+					</marginalia_text>
+					<person name="Proaeresius"/>
+					<person name="Libanius"/>
+					<person name="Julian"/>
+					<person name="Eunapius"/>
+					<emphasis method="pen" text="faceti" type="straight"/>
+					<emphasis method="pen" text="Proa[e]resius" type="straight"/>
+					<emphasis method="pen" text="Libanius" type="straight"/>
+					<emphasis method="pen" text="Julianus" type="straight"/>
+					<emphasis method="pen" text="Eunapius" type="straight"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Lucianus: delitia[e] Attica[e]. Vt erat longè
+						ante sal Atticus, ipso dulcior melle Hymettio. 
+					</marginalia_text>
+					<person name="Lucian"/>
+					<emphasis method="pen" text="Lucianus" type="straight"/>
+					<emphasis method="pen" text="delitia[e] Attica[e]" type="straight"/>
+					<emphasis method="pen" text="sal Atticus" type="straight"/>
+					<emphasis method="pen" text="dulcior melle Hymettio" type="straight"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Better the aphorisms of Diogenes and Aristippus than those of Aristotle or Plato. 
+				Just as Demades is funnier than Demosthenes himself.
+				And Aesop too, many years before Pythagoras. But no Roman was
+				wittier than Cicero, not even Caesar. Just as he who wants to be
+				like Cicero or Caesar must be by far the wittiest. Even those exquisite orators
+				were immensely witty and funny: Proaeresius, Libanius, Julian, Eunapius,
+				the Delitiae Atticae. Just as, much earlie, Attic salt was sweeter than	<!-- CG: I think Delitiae Atticae is a book, but I can only find it published first in 1624, which is a bit too late. --> <!--JG: Hmm, I can't find anything else either. Will leave this as an open question-->
+				Hymettian honey itself.	
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						argutè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Cleverly.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						ridicolo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Ridiculous.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Si spiritus deficit, nihil proficit. Etiam Plutarchi uitis deest uita.
+					</marginalia_text>
+					<person name="Plutarch"/>
+					<book title="Parallel Lives"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				If the spirit is fading, nothing can be accomplished. Even in the lives of Plutarch life is missing. <!--JG: Could is also be: 'If the spirit fades, it accomplishes nothing?' Perhaps more closely tailored to original text-->
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="soleua in atto heroico rispo[n]dere" type="straight"/>
+		<underline language="LA" method="pen" text="Datum Romae" type="straight"/>
+		<underline language="IT" method="pen" text="sciagura auuenuta alla sua Signora" type="straight"/>
+		<underline language="IT" method="pen" text="d'una mela rancia su un occhio" type="straight"/>
+		<underline language="IT" method="pen" text="Amore non" type="straight"/>
+		<underline language="IT" method="pen" text="nascer cieco" type="straight"/>
+		<underline language="IT" method="pen" text="ueder lume per gli" type="straight"/>
+		<underline language="IT" method="pen" text="mio Sole" type="straight"/>
+		<underline language="IT" method="pen" text="ancho ha perduti" type="straight"/>
+		<underline language="IT" method="pen" text="occhi che" type="straight"/>
+		<underline language="IT" method="pen" text="uedrà egli piu lume" type="straight"/>
+		<underline language="IT" method="pen" text="Cola ge[n]tilmente" type="straight"/>
+		<underline language="IT" method="pen" text="che gli presterò io" type="straight"/>
+		<underline language="IT" method="pen" text="mio culiseo" type="straight"/>
+		<underline language="IT" method="pen" text="scurrile" type="straight"/>
+		<underline language="IT" method="pen" text="un Pedante" type="straight"/>
+		<underline language="IT" method="pen" text="ricca uesta a nolo" type="straight"/>
+		<underline language="IT" method="pen" text="faceua bella mostra" type="straight"/>
+		<underline language="IT" method="pen" text="questo bue" type="straight"/>
+		<underline language="IT" method="pen" text="montò il capriccio di motteggiarlo" type="straight"/>
+		<underline language="IT" method="pen" text="della uesta, ch'era" type="straight"/>
+		<underline language="IT" method="pen" text="alzate la coda" type="straight"/>
+		<underline language="IT" method="pen" text="punto" type="straight"/>
+		<underline language="IT" method="pen" text="mia coda è alzata pur troppo" type="straight"/>
+		<underline language="IT" method="pen" text="seruitio di V.S." type="straight"/>
+		<underline language="IT" method="pen" text="birro, che fauellaua" type="straight"/>
+		<underline language="IT" method="pen" text="state si passerà allegramente col bere, del buon Latino" type="straight"/>
+		<underline language="IT" method="pen" text="uendere a buon mercato" type="straight"/>
+		<underline language="IT" method="pen" text="fino a' birri ui nuotano" type="straight"/>
+		
+		<underline language="LA" method="chalk" text="Datum Roma[e]" type="straight"/>
+		<underline language="IT" method="chalk" text="un Pedagogo" type="straight"/>
+		<underline language="IT" method="chalk" text="montò il capriccio di motteggiarlo" type="straight"/>
+		<underline language="IT" method="chalk" text="la mia coda è alzata pur troppo" type="straight"/>
+		
+		<!-- Symbols -->
+		<symbol name="SS" place="intext"/>
+		
+		<!-- Marks -->		
+		<!-- Right margin -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ge[n] -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ha -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- que -->
+		
+	    	<!-- Left margin -->
+	    <mark method="pen" name="bracket" place="left_margin"/> <!-- stato ... Datum -->
+		<mark method="pen" name="plus_sign" place="left_margin"/> <!-- co, solo --> 
+		<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- mio culiseo -->
+		<mark method="pen" name="bracket" place="left_margin"/> <!-- culiseo .. Hauendosi -->
+		<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- gli disse -->
+		<mark method="pen" name="bracket" place="left_margin"/> <!-- gli ... al -->
+		<mark method="pen" name="straight_quotation_mark" place="left_margin"/> <!-- tino --> 
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark language="IT" method="pen" name="plus_sign" place="head" text="heroico"/>
+		<mark method="pen" name="quotation_mark" place="head"/> <!-- egli e' un -->		
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark -->
+	    <mark method="pen" name="comma" place="intext"/> <!-- Pedagogo della -->
+		<mark method="pen" name="dot" place="intext"/> <!-- occhio, dicendo -->
+		<mark method="pen" name="dot" place="intext"/> <!-- Sole, hor -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- Pronto -->
+		<mark method="pen" name="comma" place="intext"/> <!-- Pronto ma -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- capriccio -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="coda"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="coda"/>
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- seruitio -->
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- V.S. -->
+		<mark method="pen" name="dot" place="intext"/> <!-- lettera, disse -->
+		<mark method="pen" name="comma" place="intext"/> <!-- disse que -->
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- per entro -->
+
+    </annotation>
+</transcription>

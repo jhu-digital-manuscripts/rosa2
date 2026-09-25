@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.164r.tif" pagination="164" reader="John Dee" signature="Xiiij"/>    
+    <annotation>
+        
+        <marginalia anchor_text="XXX d Agosto" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Angusti 30.</marginalia_text>
+                </position>
+            </language>
+            <translation>August 30</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="San Domenico" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>San Domenico.</marginalia_text>
+                    <location name="San Domenico"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="ma trouò nondimeno tutto il contrario" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>yll rule.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="che si trouasse pien di" type="straight"/>
+        <underline language="IT" method="pen" text="marauiglia, per vedersi tanto al Ponente" type="straight"/>
+        <underline language="IT" method="pen" text="forze delle correnti mancauano" type="straight"/>
+        <underline language="IT" method="pen" text="subito" type="double"/>
+        <underline language="IT" method="pen" text="di San" type="straight"/>
+        <underline language="IT" method="pen" text="a' XXX d" type="straight"/>
+        <underline language="IT" method="pen" text="il sito" type="straight"/>
+        <underline language="IT" method="pen" text="di suo padre" type="straight"/>
+        <underline language="IT" method="pen" text="maluagità di vn'Orlando" type="double"/>
+        <underline language="IT" method="pen" text="giudice generale" type="double"/>
+        <underline language="IT" method="pen" text="vista quasi perduta dal souerchio vegghiare" type="straight"/>
+        <underline language="IT" method="pen" text="ma trouò nondimeno tutto il contrario" type="straight"/>
+        <underline language="IT" method="pen" text="tutte le famiglie" type="double"/>
+        <underline language="IT" method="pen" text="erano in gran tumulto, &amp; seditione" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

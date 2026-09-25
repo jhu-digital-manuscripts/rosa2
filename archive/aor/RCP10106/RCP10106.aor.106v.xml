@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.106v.tif" pagination="212" reader="John Dee" signature="[o 2[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="pars testium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>testiu[m] subdiuisio</marginalia_text>
+                </position>
+            </language>
+            <translation>Subdivision of witnesses.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in utroque enim genere summis artibus interrogantis opus est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>stipulator</marginalia_text>
+                </position>
+            </language>
+            <translation>Stipulator.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nam ut in oratione sparsa pleru[m]q[ue] colligimus argumenta, quae per se nihil reum aggrauare uideantur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vis vnita fortius agit</marginalia_text>
+                </position>
+            </language>
+            <translation>United force acts more strongly.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ne poenite[n]tia propositu[m] mutauerint" type="straight"/>
+        <underline language="LA" method="pen" text="At in eo, qui uerum inuitus dicturus est, prima felicitas interrogantis est, extorquere, quod is noluerit." type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.102r.tif" pagination="102" reader="John Dee"/> 
+    
+    <annotation>
+        
+       <marginalia anchor_text="le minere di Cibao" hand="Italian" method="pen">
+           <language ident="IT">
+               <position book_orientation="0" place="right_margin">
+                   <marginalia_text>Le Minere de Cibao</marginalia_text>
+                   <location name="Cibao"/>
+               </position>
+           </language>
+           <translation>The mines of Cibao.</translation>
+       </marginalia> 
+        
+        
+        <marginalia anchor_text="non sol non hebbe tempo di scriuere, secondo il suo costume, giornalmente" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>The iornall boke now not kept by Columbus.</marginalia_text>
+                    <person name="Columbus"/>
+                </position>
+            </language>
+        </marginalia> 
+        
+        <marginalia anchor_text="da' XI di Decembre fino a' XII di Marzo" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>fro[m] Dece[m]b[er] 11. tyll th[e] 12 of March</marginalia_text>
+                </position>
+            </language>
+        </marginalia> 
+        
+        <marginalia anchor_text="Alfonso di Ogieda" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Alfonso di Ogieda</marginalia_text>
+                    <person name="Alonso de Ojeda"/>
+                </position>
+            </language>
+            <translation>Alonso de Ojeda.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="Antonio de Torres" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Antonio di Torres, his Message to the King etc.</marginalia_text> 
+                    <person name="Antonio de Torres"/>
+                </position>
+            </language>
+        </marginalia> 
+        
+        <underline language="IT" method="pen" text="le minere di Cibao" type="straight"/>
+        <underline language="IT" method="pen" text="di scriuere" type="straight"/>
+        <underline language="IT" method="pen" text="suo costume, giornalmente" type="straight"/>
+        <underline language="IT" method="pen" text="interruppe la sua scrittura" type="straight"/>
+        <underline language="IT" method="pen" text="da' XI di" type="double"/>
+        <underline language="IT" method="pen" text="a' XII di" type="straight"/>
+        <underline language="IT" method="pen" text="di Genaio" type="straight"/>
+        <underline language="IT" method="pen" text="le minere di Cibao" type="straight"/>
+        <underline language="IT" method="pen" text="ritornarono" type="triple"/>
+        <underline language="IT" method="pen" text="XII nauigli dell'armata in Castiglia" type="straight"/>
+        <underline language="IT" method="pen" text="Antonio de Torres" type="straight"/>
+        <underline language="IT" method="pen" text="copiosamente portaua scritto tutto quello, che era successo" type="straight"/>
+        <underline language="IT" method="pen" text="qualità del" type="straight"/>
+        <underline language="IT" method="pen" text="dì tornò l'Ogieda" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="intext"/>  <!-- facesse. Et -->
+        
+        <errata amendedtext="disse" copytext="aisse" language="IT"/>
+       
+    </annotation>
+    
+</transcription>

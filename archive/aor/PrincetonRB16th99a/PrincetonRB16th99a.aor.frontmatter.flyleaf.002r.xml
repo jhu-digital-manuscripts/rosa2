@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonRB16th99a.frontmatter.flyleaf.002r.tif" pagination="title page" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>gratum opus agricolis.</marginalia_text>
+                </position>
+            </language>
+            <translation>The pleasant work for the husbandman.</translation>
+        </marginalia>
+        
+        <marginalia date="1580" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Gabriel Haruey. XVIII. August. 1580.</marginalia_text>
+                    <person name="Gabriel Harvey"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Heywoods prouerbs. Floyds Discourse of [the] nine Worthyes.</marginalia_text>
+                    <person name="John Heywood"/>
+                    <person name="Richard Lloyd"/>
+                    <book title="The Proverbs, Epigrams, and Miscellanies of John Heywood"/>
+                    <book title="A brief discourse"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="Husbandrie" type="straight"/>
+        <underline language="EN" method="pen" text="Champion, or open countrie" type="straight"/>
+        <underline language="EN" method="pen" text="for the woodland, or Seuerall" type="straight"/>
+        <underline language="EN" method="pen" text="Huswiferie" type="straight"/>
+        <underline language="EN" method="pen" text="a diet for" type="straight"/>
+        <underline language="EN" method="pen" text="winds" type="straight"/>
+        <underline language="EN" method="pen" text="planets" type="straight"/>
+        <underline language="EN" method="pen" text="hops" type="straight"/>
+        <underline language="EN" method="pen" text="herbes" type="straight"/>
+        <underline language="EN" method="pen" text="bees" type="straight"/>
+        <underline language="EN" method="pen" text="for sheepe" type="straight"/>
+        <underline language="EN" method="pen" text="cattle" type="straight"/>
+        <underline language="EN" method="pen" text="table of husbandrie" type="straight"/>
+        <underline language="EN" method="pen" text="of huswiferie at" type="straight"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Husbandrie"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Huswiferie"/>
+        <mark method="pen" name="dot" place="intext"/> <!--more, with-->
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--bees, and-->
+        <mark method="pen" name="plus_sign" place="intext"/> <!--approoued-->
+        <mark method="pen" name="dot" place="intext"/> <!--cattle, with-->
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="husbandrie"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Huswiferie"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.031v.tif" pagination="[31[v]]" reader="John Dee" signature="[Hiij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="geberung der Winde die Sternen Violas vnd Cucurbit as seindt vnd die Meteorischen Sul. Merc. vnd Sal, in jnen nach Etherischer arth dieselbigen wircken durch den Etherischen Vulcanum in denselbigen Violis, auß denen Etherischen wirckungen wachsen nun Etherische operationes als dann die Windt seindt die da außgetrieben" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Stella[e] Viola[e] su[n]t in quibus vulcani virtute tres prima[e] cocta[e] ventos in terra[e] traculantur.</marginalia_text>
+                    <person name="Vulcan"/>
+                </position>
+            </language>
+            <translation>Violet are the stars in which, through the virtue of Vulcan, the three primes, having been stirred up, are thrust across the winds on the earth.</translation> <!--JG: Unsure-->
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="Violas vnd Cucurbit as seindt" type="straight"/>
+        <underline language="DE" method="pen" text="Sul. Merc. vnd Sal" type="straight"/>
+        <underline language="DE" method="pen" text="in jnen" type="straight"/>
+        <underline language="DE" method="pen" text="Etherischen Vulcanum" type="straight"/>
+        <underline language="DE" method="pen" text="die Windt" type="straight"/>
+        <underline language="LA" method="pen" text="Concauitatibus" type="straight"/>
+        <underline language="DE" method="pen" text="auff die" type="straight"/>
+        <underline language="DE" method="pen" text="Nicht aber" type="straight"/>
+        <underline language="DE" method="pen" text="in einem grad sondern" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

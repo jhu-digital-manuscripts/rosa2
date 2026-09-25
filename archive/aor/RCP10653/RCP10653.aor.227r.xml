@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.227r.tif" pagination="5" reader="John Dee" signature="Aaa iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Comes Ranulphus de Micenis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Ranulfus de Micenis
+                    </marginalia_text>
+                    <person name="Ranulf le Meschin"/>
+                </position>
+            </language>
+            <translation>
+                Ranulf le Meschin.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dedit illi pro eo Comitatum Cestri[a]e" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ranulphus de Mecenis: fit Comes Cestriae
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Ranulf is made Earl of Chester.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Quo m[od]o p[otes]t hoc e[ss]e cum nondu[m] mortuus erat Hugo Lupus Comes Cestria[e]? Et Ranulphus iste, Comes Cestria[e] erat, sed post submersione[m] Richardi comitis Cestria[e] filij Hugonis Comitis Cestr 
+                    </marginalia_text>
+                    <person name="Ranulf le Meschin"/>
+                    <person name="Hugh d'Avranches"/>
+                    <person name="Richard d'Avranches"/>
+                </position>
+            </language>
+            <translation>
+                How can this be when Hugh the Wolf, Earl of Chester, was not yet dead? And Ranulf le Meschin was made Earl of Chester, but after the drowning of Richard d'Avranches, Earl of Chester, the son of Hugh d'Avranches, Earl of Chester.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Comes" type="triple"/>
+        <underline language="LA" method="pen" text="Ranulphus de" type="straight"/>
+        <underline language="LA" method="pen" text="Micenis" type="double"/>
+        <underline language="LA" method="pen" text="Comitatum Cestri[a]e" type="double"/>
+        <underline language="LA" method="pen" text="construxit castellum" type="straight"/>
+        <underline language="LA" method="pen" text="Sacerdotes vxoratos à diuino officio amouit, nouo exemplo, &amp;, vt multis visum est, inconsiderato praeiudicio, contra sanctorum patrum sententiam" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- eo Comitatum -->
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

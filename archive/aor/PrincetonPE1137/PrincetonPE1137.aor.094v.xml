@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonPE1137.094v.tif" pagination="[50v]" reader="Harvey" signature="M.iv.v"/>
+    <annotation>
+        
+        <marginalia date="1543" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Anno 1543. fuit Procancellarjus Academia[e]. cui proximo anno successit Mattha[e]us Parkerus, nunc Archiepiscopus Canterburiesis.
+                    </marginalia_text>
+                    <person name="Thomas Smith"/>
+                    <person name="Matthew Parker"/>
+                    <location name="University of Cambridge"/>
+                </position>
+            </language>
+            <translation>
+                In 1543, he was vice-chancellor of the university, succeeded the following year by Matthew Parker, now Archbishop of Canterbury.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Valdinas.
+                        <!-- JE: I can't work out what this means. Am I being thick? -->
+                        <!-- CG: I'm not sure about this either. -->
+                        <!--JG: Nor am I. Need to get back to this later-->
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="legum studiosum deferre" type="straight"/>
+        
+        <mark method="pen" name="scribble" place="tail"/>
+        
+    </annotation>
+</transcription>

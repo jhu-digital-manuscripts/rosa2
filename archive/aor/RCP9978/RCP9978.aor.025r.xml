@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.025r.tif" reader="John Dee" signature="G"/>
+    <annotation>
+        
+        <marginalia anchor_text="Orchis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[Or]chis</marginalia_text>
+                    <person name="Orchis"/>
+                </position>
+            </language>
+            <translation>Orchis.</translation>
+        </marginalia>
+       
+        <marginalia anchor_text="Rutam" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[R]uta</marginalia_text>
+                </position>
+            </language>
+            <translation>The rue plant.</translation>
+        </marginalia>
+
+        <marginalia anchor_text="regionis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[r]egio</marginalia_text>
+                </position>
+            </language>
+            <translation>The region.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[Pe]rsuo[s]io</marginalia_text>               
+                </position>
+            </language>
+            <translation>Persuasion.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="corporis complexionem, animae sequi virtutem" type="straight"/>
+        <underline language="LA" method="pen" text="sola mentis intentione corpus" type="straight"/>
+        <underline language="LA" method="pen" text="qualiscunq[ue]" type="double"/>
+        <underline language="LA" method="pen" text="sit" type="straight"/>
+        <underline language="LA" method="pen" text="complexio corporis virtutem sequatur animae, necesse" type="straight"/>
+        <underline language="LA" method="pen" text="ex timore" type="straight"/>
+        <underline language="LA" method="pen" text="tristitia" type="straight"/>
+        <underline language="LA" method="pen" text="laetitia" type="straight"/>
+        <underline language="LA" method="pen" text="stupore" type="straight"/>
+        
+    </annotation>
+</transcription>

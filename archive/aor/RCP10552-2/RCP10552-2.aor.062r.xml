@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.062r.tif" pagination="113" reader="John Dee" signature="K.iij."/>
+    <annotation>
+        
+        <marginalia anchor_text="Robertus de Brus filius regis Roberti nothus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Robertus Brus - Robertus Brus Nothus</marginalia_text>
+                    <person name="Robert VII de Brus"/>
+                    <person name="Robert Bruce, Lord of Liddesdale"/>
+                </position>
+            </language>
+            <translation>Robert Bruce - Robert Bruce, the Bastard.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Robertus de Brus filius regis Roberti" type="straight"/>
+        <underline language="LA" method="pen" text="Robertus Brus" type="straight"/>
+        <underline language="LA" method="pen" text="Nigellus Brus" type="straight"/>
+        
+    </annotation>
+</transcription>

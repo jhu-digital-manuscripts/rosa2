@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.004v.tif" reader="John Dee" signature="[¶.iiij.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="ingrati" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ingratitudo.</marginalia_text>
+                </position>
+            </language>
+            <translation>Ingratitude.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="homines ingratia essemus, dum nec labores alienos meritò approbamus, nec ingenia excellentia" type="straight"/>
+        <underline language="LA" method="pen" text="praemio &amp; honore" type="straight"/>
+        <underline language="LA" method="pen" text="doctißimos quosq[ue] viros eloquentißimos cum indignitate reijcimus" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+    </annotation>
+</transcription>

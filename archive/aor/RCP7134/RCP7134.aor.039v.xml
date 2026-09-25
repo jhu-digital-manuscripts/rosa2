@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.039v.tif" pagination="[33v]" reader="John Dee" signature="[I[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vide h[a]ec verius posita, supra fo. 8.v.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:034" text="8.v."/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See these placed more properly, above, folio 8 verso.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>R[ati]o quare [hic - deleted] minuu[n]t minuta hic posita, ha[e]c est, quod cu[m] in bisextili anno integru[m] addicunt die[m]
+                    pro quater 5 h[orae] 55 minutis et 20 secundis, cum efficia[n]t [....] [prete - deleted] horas 23 m[inutae] 41 sec. 20, desunt igitur singulis diebus
+                    eius anni intercalare[m] die[m] seque[n]tib[us] minuta 18 secunda 40, et similiter singulis bissextilib[us]</marginalia_text> 
+                </position>
+            </language>
+            <translation>The reason why the minutes placed here diminish, this is because when in a leap year they add a whole day for four times, five hours, 55 minutes
+            and 20 seconds, since they accomplish [...] 23 hours, 41 minutes and 20 seconds, therefore they lack the intercalcated day for the single days of this year, by the
+            following 18 minutes, 40 seconds and similarly on single leap years.</translation> 
+        </marginalia>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="tail"/>
+        
+        <errata amendedtext="[deleted]" copytext="[table]" language="LA"/>
+        
+        <table place="intext" type="standard_table">
+            <tr>
+                <th label="ho."/>
+                <th label="mi."/>
+                <th label="sec."/>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>55</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>50</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td/>
+                <td>9</td>
+                <td>0</td>
+            </tr>
+        </table>
+        
+    </annotation>
+</transcription>

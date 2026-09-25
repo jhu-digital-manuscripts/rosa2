@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.205v.tif" pagination="390" reader="John Dee" signature="[bbb.iii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="conue[n]ticula" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Conventiculum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A small assembly.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="campus Martiu[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Campus Martius
+                    </marginalia_text>
+                    <location name="Field of Mars"/>
+                </position>
+            </language>
+            <translation>
+                Field of Mars.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="obiectas" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        obiectare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To expose.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="laudem illustras" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        laude[m] illustrare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To shed lustre.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vertendi, hic est mudandi soli" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        vertere solum quid
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To turn around only something. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="adumbrare" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        adumbrare
+                    </marginalia_text>
+                    <emphasis method="pen" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                To outline.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="conue[n]ticula &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="quibus tanquam gradibus mihi videor in coelum ascendisse" type="straight"/>
+        <underline language="LA" method="pen" text="reuertisse? Ille" type="straight"/>
+        <underline language="LA" method="pen" text="probrum no[n] modo mihi nullum obiectas, sed etia[m] laudem illustras meam" type="straight"/>
+        <underline language="LA" method="pen" text="ciuitatem vero nemo vnquam vllo populi iussu amittet inuitus" type="straight"/>
+        <underline language="LA" method="pen" text="ciuitatis, sed tecti &amp; aquae &amp; ignis interdictione faciebant" type="straight"/>
+        <underline language="LA" method="pen" text="quòd si non fuit, quid te audacius" type="straight"/>
+        <underline language="LA" method="pen" text="quid desperatius" type="straight"/>
+        
+    </annotation>
+</transcription>

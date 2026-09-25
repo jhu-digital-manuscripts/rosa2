@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.182r.tif" pagination="356" reader="John Dee" signature="Gg iiij"/>
+    <annotation>
+        
+        <marginalia anchor_text="quandam puellam genere nobilissimam, nomine Popam, filiam sciliceet Berengarij Ducis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Alij dicunt illa[m] fuisse filiam Guidonis Comitis Siluanectensis.
+                    </marginalia_text>
+                    <person name="Gui, Count of Senlis"/>   
+                </position>
+            </language>
+            <translation>
+                Others say that she was the daughter of Gui, Count of Senlis. 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nobilissimam, nomine Popam, filiam scilicet Berengarij Ducis, illustris viri, rapiens, non multo post eam sibi matrimonio copulauit" type="straight"/>
+        <underline language="LA" method="pen" text="nomine VVilhelmu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="filiam Gerloc" type="straight"/>
+        <underline language="LA" method="pen" text="Carolum regem adeunt" type="straight"/>
+        <underline language="LA" method="pen" text="Gilla filia sua" type="straight"/>
+        <underline language="LA" method="pen" text="Superaddidit etiam ei Britanniam totam, cuius principes Berengarius &amp; Alanus Rolloni sacramenta fidelitatis" type="straight"/>
+        <underline language="LA" method="pen" text="Rollo genua flectere dedignatus, pedem regis apprehensum truculenter traxit ad os suum, ipso rege in terram resupinato" type="straight"/>
+        
+    </annotation>
+</transcription>

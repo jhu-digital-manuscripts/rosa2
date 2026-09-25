@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note rend="IDENTIFICATION">
+          <p>Rosenwald 396 (Incun. X. R75), Library of Congress, Washington DC. Printed by Guillaume Le Roy in Lyons, ca. 1487. Contains
+                     <hi rend="italics">Roman de la Rose</hi>.</p>
+        </note>
+        <note rend="BASIC INFORMATION">
+          <p>Paper, 276 x 185 mm, 150 leaves</p>
+        </note>
+        <note rend="MATERIAL">
+          <p><material>Paper</material>, in good condition but for small worm holes and various stains. Vertical chain lines. Watermark of a paschal lamb (not found in C. M. Briquet, <hi rend="italics">Les Filigranes</hi>, though similar to 1-14 in vol. 1) is visible in outer margins of leaves.</p>
+        </note>
+        <note rend="QUIRES">
+          <p>
+            <list>
+              <head>Collation:</head>
+              <item n="I">
+                <locus from="A1" to="A8">A1-A8</locus>
+              </item>
+              <item n="II">
+                <locus from="B1" to="B8">B1-B8</locus>
+              </item>
+              <item n="III">
+                <locus from="C1" to="C8">C1-C8</locus>
+              </item>
+              <item n="IV">
+                <locus from="D1" to="D8">D1-D8</locus>
+              </item>
+              <item n="V">
+                <locus from="E1" to="E8">E1-E8</locus>
+              </item>
+              <item n="VI">
+                <locus from="F1" to="F8">F1-F8</locus>
+              </item>
+              <item n="VII">
+                <locus from="G1" to="G8">G1-G8</locus>
+              </item>
+              <item n="VIII">
+                <locus from="H1" to="H8">H1-H8</locus>
+              </item>
+              <item n="IX">
+                <locus from="I1" to="I8">I1-I8</locus>
+              </item>
+              <item n="X">
+                <locus from="K1" to="K8">K1-K8</locus>
+              </item>
+              <item n="XI">
+                <locus from="L1" to="L8">L1-L8</locus>
+              </item>
+              <item n="XII">
+                <locus from="M1" to="M8">M1-M8</locus>
+              </item>
+              <item n="XIII">
+                <locus from="N1" to="N8">N1-N8</locus>
+              </item>
+              <item n="XIV">
+                <locus from="O1" to="O8">O1-O8</locus>
+              </item>
+              <item n="XV">
+                <locus from="P1" to="P8">P1-P8</locus>
+              </item>
+              <item n="XVI">
+                <locus from="Q1" to="Q8">Q1-Q8</locus>
+              </item>
+              <item n="XVII">
+                <locus from="R1" to="R8">R1-R8</locus>
+              </item>
+              <item n="XVIII">
+                <locus from="S1" to="S8">S1-S8</locus>
+              </item>
+            </list>
+          </p>
+          <p>Bound into 18 quires of 8 leaves, with a final quire of 6. Printed signatures at bottom edge of first 4 leaves in a quire; signatures go from <hi rend="italics">a2</hi> in Quire I to <hi rend="italics">tiii</hi> in Quire XIX. Signatures begin at <locus>A2r</locus> (the first leaf containing the poem) after the title page on <locus>A1r</locus>. In Quire XIX, with 6 folios, the first 3 leaves have printed signatures.</p>
+        </note>
+        <note rend="LAYOUT">
+          <p>Text block is 230 by 150 mm; two columns per folio, each is approx. 230 x 70 mm. 41 lines of text to a full column, 13-16 lines left empty for illustrations. 6-line space indented for opening initial  <hi rend="italics">M</hi> that was never added, 2- or 3-line spaces indented for later initials never added (printed guide letters beside and within these spaces). Printed headings with character names or brief 1-line explanations of scenes centered within columns of text.</p>
+        </note>
+        <note rend="SCRIPT">
+          <p>Printed in <hi rend="italics">lettre bâtarde</hi> throughout; capitals begin new lines of poetry. Corrections to the text are made in a number of hands. Where there is no printed guide letter at text divisions often letter has been added in pen.</p>
+        </note>
+        <note rend="DECORATION">
+          <p>According to F. W. Bourdillon (<hi rend="italics">The Early Editions of the Roman de la Rose</hi>), the woodcut initial <hi rend="italics">L</hi> on the title page (<locus>A1r</locus>) is similar to one in books printed by Pierre Levet, ca. 1486. The first text page (<locus>A2r</locus>) has a woodcut border down the left margin and across the top, with acanthus leaves, flowers, and birds. (The border was also used for Jean Syber's ca. 1485 edition of the <hi rend="italics">Roman de la Rose</hi>.) There are 92 woodcut illustrations measuring about 70 x 60 mm. The first illustration, which takes up two columns of text on page <locus>A2r</locus> and measures 90 x 140 mm, has two scenes ("L'Amans Sleeps" and "L'Amans at the Gate of the Garden of Deduiz"); the illustration on <locus>D5r</locus> also takes up two columns, but is one scene ("Building the Castle of Jalousie"). The remaining illustrations are all over one column and take up 13 lines. Illustrations are framed by single black lines, some of which show cracks and breakages (e.g. <locus>G7v</locus>, <locus>H5r</locus>, <locus>L5v</locus>, <locus>L6r</locus>).  They appear to be the work of one artist with a basic knowledge of the poem and with imagery in earlier illustrated manuscripts. 7 of these illustrations are repeats; 85 different cuts in the book. The same cuts were used for Jean Syber’s edition of the poem. </p>
+        </note>
+        <note rend="BINDING">
+          <p>19th century red morroco binding, with 4 stamped motifs in gold at edges of front and back covers, 5 raised bands on the spine. The title of the book (“Le Rommant de la Rose”) is in gilt letters on the spine. The end papers at front and back are marbled. There is also a blank leaf at the end of the book. </p>
+        </note>
+        <note rend="HISTORY">
+          <p>Bookplate (on <locus>pastedown</locus>) states that it was a gift of Lessing J. Rosenwald to the Library of Congress. Above the bookplate is Rosenwald’s octagonal book label in red leather. Rosenwald bought this book from the Philadelphia bookseller A. S. W. Rosenbach in February of 1930. 
+                  
+                  On the paper flyleaf at the front of the book is written “livres tres ancien et rare” in black ink  and “B. 8. 14.” in pencil, and beneath the title ("Le Rommant de la Rose") on the title page is a description of the poem written in blank ink, added in the 19th century. This continues on the verso.  
+          </p>
+        </note>
+        <note rend="TEXT">
+          <p>The edition is very close to Jean Syber’s edition printed in Lyons a few years earlier. It is considered to be the third edition of the text, after one printed in Lyons ca. 1481, and Jean Syber’s of ca. 1485.</p>
+          <p>A manuscript in the British Library, MS Harley 4425, produced at Bruges in around 1500, is thought to be copied from this edition.</p>
+        </note>
+        <note>
+          <p>Description by Beatrice Radden Keefe</p>
+        </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">printed book</note>
+          <note type="commonName">Rosenwald 396</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="150" unit="folios">150 folios</measure>
+            <dimensions>
+              <height unit="mm">276</height>
+              <width unit="mm">185</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">92</note>
+          <note type="material">paper</note>
+          <pubPlace>Lyons, France</pubPlace>
+          <date notAfter="1500" notBefore="1400">15th century</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Washington, DC</settlement>
+            <repository>Library of Congress</repository>
+            <idno>Rosenwald 396</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1" to="150">1-150</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">150</note>
+              <note type="illustrations">92</note>
+              <note type="linesPerColumn">41</note>
+              <note type="leavesPerGathering">8</note>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

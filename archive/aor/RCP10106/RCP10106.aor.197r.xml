@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.197r.tif" pagination="393" reader="John Dee" signature="B 5"/> 
+    <annotation>
+        
+            
+        <marginalia anchor_text="Bucolicis" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Bu[co]licis</marginalia_text>
+                    <book title="Eclogues"/>
+                </position>
+            </language>
+            <translation>Bucolics.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Menalcas. sed Vergilius" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Menalcas &amp; p[ro] vergilio</marginalia_text>
+                    <person name="Menalcas"/>
+                    <person name="Virgil"/>
+                </position>
+            </language>
+            <translation>Menalcas and Virgil.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ciceronem" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cicero</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="commixtum" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Comixtum</marginalia_text>
+                </position>
+            </language>
+            <translation>Mixed.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="trium permixta est gratia" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>gr[ati]a triu[m] p[er]mixta</marginalia_text>
+                </position>
+            </language>
+            <translation>The charm of all three is combined.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="custodiendum" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Custodiendu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>To be guarded.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="inconsequentia foedißima" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Inco[n]seque[n]tia fo[e]dissima</marginalia_text>
+                </position>
+            </language>
+            <translation>Most horrible incongruity.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="genere &amp; species ex arceßitis uerbis uenit, &amp; intellectus ex propriijs" type="straight"/>
+        <underline language="LA" method="pen" text="similitudinis, allegoriae, &amp; translationis" type="straight"/>
+        <underline language="LA" method="pen" text="Nam id quoq[ue] in primis est custodiendum, ut quo ex genere coeperis translationis, hoc desinas. Multi" type="straight"/>
+        <underline language="LA" method="pen" text="inconsequentia rerum foedißima" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="star"/> <!--JG: Unclear whether the drawing somehow symbolizes the printed text?!-->
+        
+    </annotation>
+</transcription>

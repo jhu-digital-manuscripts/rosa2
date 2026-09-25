@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonRB16th99a.068v.tif" pagination="[68v]" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Frugi Matrona[e] Synopsis Oeconomica.</marginalia_text>
+                </position>
+            </language>
+            <translation>Useful for a lady. Economic summary.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Salue festa dies.</marginalia_text>
+                </position>
+            </language>
+            <translation>Hail festive day.</translation>
+        </marginalia>    
+        
+        <underline language="EN" method="pen" text="fiue a clock, Holla: maid" type="straight"/>
+        <underline language="EN" method="pen" text="quickly your Mistres, vncouer" type="straight"/>
+        <underline language="EN" method="pen" text="To worke and a way" type="straight"/>
+        <underline language="EN" method="pen" text="As fast as ye may" type="straight"/>
+        <underline language="EN" method="pen" text="Morning workes" type="straight"/>
+        <underline language="EN" method="pen" text="sooner some" type="straight"/>
+        <underline language="EN" method="pen" text="nose is in" type="straight"/>
+        <underline language="EN" method="pen" text="ouerlong slugging good seruant is" type="straight"/>
+        <underline language="EN" method="pen" text="Some slouens from" type="straight"/>
+        <underline language="EN" method="pen" text="hand is in aumbrie" type="straight"/>
+        <underline language="EN" method="pen" text="and nose in the cup" type="straight"/>
+        <underline language="EN" method="pen" text="That early is" type="straight"/>
+        <underline language="EN" method="pen" text="Count huswifely" type="straight"/>
+        <underline language="EN" method="pen" text="husband without" type="straight"/>
+        <underline language="EN" method="pen" text="within" type="straight"/>
+        <underline language="EN" method="pen" text="much time about trifles shall hinder thy wealth" type="straight"/>
+                
+        <symbol language="LA" name="SS" place="left_margin" text="Frugi Matrona[e] Synopsis Oeconomica."/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="bracket" place="left_margin" text="Good husband without it is needfull there be, good huswife within as needfull as he."/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="bracket" place="left_margin" text="Sluts corners auoided shall further thy health, much time about trifles shall hinder thy wealth."/>
+
+        <mark language="EN" method="pen" name="bracket" place="right_margin" text="Sluts corners auoided shall further thy health, much time about trifles shall hinder thy wealth."/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!--without it-->
+        <mark method="pen" name="comma" place="intext"/> <!--within as-->
+        
+    </annotation>
+</transcription>

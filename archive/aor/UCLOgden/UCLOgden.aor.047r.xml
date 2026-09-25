@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.047r.tif" pagination="77" reader="John Dee" signature="g 3"/>
+    <annotation>
+        
+        <marginalia anchor_text="crucieatores eru[n]t seruorum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Cruciatores servorum.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The torturer of the slaves.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uxorem suam manu propria interficete" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vxorem interficeturus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                He will kill his wife.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro signorum qualitate" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Pro signor[um] qualitate.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                For the quality of signs.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fures, &amp; effractores" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        fures. effractores.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Thieves. Housebreakers.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="assiduis nauigationibus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Assidua[e] navigatio[n]es
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Perpetual voyages.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sed ☿ cum ♂ diuersa &amp; nultiplicia actuum, uel administrationum genera decernit, uarietas enim haec prouenit,              secu[n]dum qualtitatem substantiámq[ue] signorum." hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Multiplicia actuu[m] genera pro r[ati]o[n]e signorum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Multiple kinds of deeds for the reason of signs.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="aut propter seruos" type="straight"/>
+        <underline language="LA" method="pen" text="complebu[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="fient frequenti damnatione biothanati" type="straight"/>
+        <underline language="LA" method="pen" text="sed hos ipsos deos, quibus seruient spoliantes atq[ue] nudantes,              ut scilicet templorum dominationes ad praeda[m] suam faciant" type="straight"/>
+        <underline language="LA" method="pen" text="assiduis nauigationibus" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

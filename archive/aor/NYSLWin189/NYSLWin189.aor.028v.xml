@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.028v.tif" reader="John Dee" signature="[H[v]]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Vnde aquaru[m] vires</marginalia_text>
+                </position>
+            </language>
+            <translation/>
+        </marginalia>
+        
+        <marginalia anchor_text="vnnd errrincken in denen wassern darumb die krafft sich dem wasser zůgleichnet." hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Nota
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vn zeytigen vitriols" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vitriolu[m] ♂</marginalia_text> 
+                </position>
+            </language>
+            <translation>Sulphuric acid.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[Call...]</marginalia_text> <!--JG: No idea what's written here. Need to get back to it at some point. Perhaps 'allzu', as in 'alzo'?-->
+                </position>
+            </language>
+            <translation/>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>baln[eum], Potus</marginalia_text> <!--JG: Not entirely sure-->
+                </position>
+            </language>
+            <translation>Bath, drink.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="vnnd errrincken in denen wassern darumb die krafft sich dem wasser zůgleichnet." type="straight"/>
+        <underline language="DE" method="pen" text="teglich wachssen" type="straight"/>
+        <underline language="DE" method="pen" text="ort vester dann am andren" type="straight"/>
+        <underline language="DE" method="pen" text="vnzeytigen vitriols" type="straight"/>
+        <underline language="DE" method="pen" text="marten" type="straight"/>
+        <underline language="DE" method="pen" text="zůstercken den magen" type="straight"/>
+        <underline language="DE" method="pen" text="von feule" type="double"/>  
+        <underline language="DE" method="pen" text="hütten" type="straight"/>
+        <underline language="LA" method="pen" text="in hyposarca" type="straight"/>
+        <underline language="DE" method="pen" text="zůstercken die feule darauß zetreyben" type="straight"/>
+        <underline language="DE" method="pen" text="feule deß moß" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+        <!--JG: Link between marginal note and mark, to be captured at a later stage-->
+        
+        </annotation>
+</transcription>

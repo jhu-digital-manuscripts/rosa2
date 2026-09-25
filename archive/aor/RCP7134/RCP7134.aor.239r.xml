@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.239r.tif" pagination="232" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="breuium ascensionum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Breves asce[n]tio[n]es.</marginalia_text>
+                </position>
+            </language>
+            <translation>Short ascensions.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sol cum capite" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>☉ cu[m] ☊.</marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                    <symbol_in_text name="North_Node"/>
+                </position>
+            </language>
+            <translation>The Sun with the North node.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mercurius in linea fuerit ascendentis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>☿ in ascen[n]d.</marginalia_text>
+                    <symbol_in_text name="Mercury"/>
+                </position>
+            </language>
+            <translation>Mercury in the ascendant.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Luna à Venere separatur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>☾ a ♀ sep[ar]ata</marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Venus"/>
+                </position>
+            </language>
+            <translation>The Moon is separated from Venus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Luna à Venere separatur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>☾ ♂ ♄ stult[us]</marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Mars"/>
+                    <symbol_in_text name="Saturn"/>
+                </position>
+            </language>
+            <translation>The Moon with Mars and Saturn. Stupid.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Venus cum in orde Solis fuerit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>♀ in corde ☉</marginalia_text>
+                    <symbol_in_text name="Venus"/>
+                    <symbol_in_text name="Sun"/>
+                </position>
+            </language>
+            <translation>Venus in the heart of the Sun.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="corde Leonis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cor ♌.</marginalia_text>
+                    <symbol_in_text name="Leo"/>
+                </position>
+            </language>
+            <translation>The heart of Leo.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="loca habent principalia" type="straight"/>
+        <underline language="LA" method="pen" text="fuerit ascendentis" type="straight"/>
+        <underline language="LA" method="pen" text="motu uelocissimus" type="straight"/>
+        <underline language="LA" method="pen" text="in humano" type="straight"/>
+        <underline language="LA" method="pen" text="memoriae boni'que" type="straight"/>
+        <underline language="LA" method="pen" text="erit ingenij ac acuti" type="straight"/>
+        <underline language="LA" method="pen" text="sed ob uenerea periculis subijcietur" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <mark method="pen" name="slash" place="intext"/> <!--aphorism 47, after separatur-->
+        <mark method="pen" name="slash" place="intext"/> <!--aphorism 47, after separatur-->
+        
+        <numeral language="LA" place="intext" text="fuerit ascendentis">1</numeral>
+        <numeral language="LA" place="intext" text="motu uelocissimus">2</numeral>
+        <numeral language="LA" place="intext" text="in humano">3</numeral>
+        
+    </annotation>
+</transcription>

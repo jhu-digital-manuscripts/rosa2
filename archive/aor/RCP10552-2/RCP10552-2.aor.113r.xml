@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.113r.tif" pagination="215" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="sed impune" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>non</marginalia_text>
+                </position>
+            </language>
+            <translation>not.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="seu malitiae regni" type="straight"/>
+        <underline language="LA" method="pen" text="ad Brytanniam" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="circumflex" place="intext"/> <!-- sanctum Maloum -->
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.189v.tif" pagination="[189v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Francesco di Bouadiglia" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Francisco de Bouadiglia</marginalia_text>
+                    <person name="Francisco di Bouadiglia"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="MCCCCXCIX" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>1499.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="assai lettere bianche" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Note these blanks.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="MD" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>1500</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="vn Francesco di Bouadiglia, pouero Commendatore" type="straight"/>
+        <underline language="IT" method="pen" text="MCCCCXCIX" type="straight"/>
+        <underline language="IT" method="pen" text="assai lettere bianche" type="straight"/>
+        <underline language="IT" method="pen" text="de' Re" type="double"/>
+        <underline language="IT" method="pen" text="che paresse" type="triple"/>
+        <underline language="IT" method="pen" text="fin di Agosto" type="straight"/>
+        <underline language="IT" method="pen" text="fu alloggiar nel palazzo dell'Ammiraglio" type="straight"/>
+        <underline language="IT" method="pen" text="seruirsi, &amp; impadronirsi di tutto quello, che vi era, come se per giusta successione" type="straight"/>
+        <underline language="IT" method="pen" text="stati de' solleuati" type="straight"/>
+        
+        <mark method="pen" name="equal_sign" place="right_margin"/>
+        
+    </annotation>
+</transcription>

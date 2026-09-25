@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.031r.tif" reader="John Dee" signature="Fi"/> 
+    <annotation>
+        
+        <marginalia anchor_text="septe[m] r[ati]ones" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Septem r[ati]o[n]es pra[e]sta[n]tiam vniversalis demo[n]stratio[n]is co[n]firma[n]tes
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Seven reasons confirming the excellence of universal demonstrations.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cui[us] r[ati]o demo[n]stratio[n]is a p[ri]ori est talis [et] agis magistralis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Alia demo[n]str[ati]o
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The other demonstration.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="de co[m]paratio[n]e scie[n]tar[um]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Scientiaru[m] Co[m]paratio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The comparison of sciences.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="qu[ae] sunt effectus demo[n]strationu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Scientia[e] su[n]t effectus demo[n]strationu[m].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Sciences are the effect of demonstrations.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="maxime scim[us] v[niversa]le si no[n] ampli[us] est p[ro]pter aliq[ui]d aliud" type="straight"/>
+        <underline language="LA" method="pen" text="huc deest q[uae]rere p[ro]pter quid vt q[ui]a tria[n]gulus" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]ueniat q[ue] deue[n]tu[m] est ad vltimu[m] genus" type="straight"/>
+        <underline language="LA" method="pen" text="q[uod] q[uae]libet figura resoluat[ur] in tot tria[n]gulos qua[n]tu[m] ip[s]a distiterit a p[ri]ma sup[er]ficie vt q[ua]dratu[m] s[e]c[un]da sup[er]ficies a tria[n]gulo. ergo" type="straight"/>
+        <underline language="LA" method="pen" text="Cui[us] r[ati]o demo[n]stratio[n]is a p[ri]ori est talis [et] magis magistralis. ponat[ur]" type="straight"/>
+        <underline language="LA" method="pen" text="S[ed] cu[m] qui[n]q[ue] tria[n]guli valeant decem rectos. hij vero q[ui] sunt ad ce[n]tru[m] valent quatuor q[ui]" type="straight"/>
+        <underline language="LA" method="pen" text="si figura haberet mille angulos tu[n]c om[n]es extrinsici p[ar]iter accepti sunt" type="straight"/>
+        <underline language="LA" method="pen" text="co[m]paratio[n]e scie[n]tiar[um] q[uae] sunt effectus demo[n]strationu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="c[on]siderat q[ue] [et] p[ro]pter quid" type="straight"/>
+        <underline language="LA" method="pen" text="q[uae] no[n] est de subiecto sensibili" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- q[uae]rere p[ro]pter -->
+        <mark method="pen" name="comma" place="intext"/> <!-- quid vt -->  
+        
+        <numeral place="right_margin">1.</numeral>      
+        <numeral place="right_margin">2</numeral> 
+        
+    </annotation>
+</transcription>

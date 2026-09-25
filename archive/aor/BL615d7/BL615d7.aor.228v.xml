@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.228v.tif" pagination="[228v]" reader="John Dee" signature="[Ffiiij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Macaca" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Macaca.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Giamaica" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Giamaica.
+                    </marginalia_text>
+                    <location name="Jamaica"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="luogo spredo" type="straight"/>
+        <underline language="IT" method="pen" text="Costa di Cuba" type="straight"/>
+        <underline language="IT" method="pen" text="Macaca" type="straight"/>
+        <underline language="IT" method="pen" text="le gran correnti, che vanno all Occidente" type="straight"/>
+        <underline language="IT" method="pen" text="vigilia di S. Giouanni" type="triple"/>
+        
+    </annotation>
+</transcription>

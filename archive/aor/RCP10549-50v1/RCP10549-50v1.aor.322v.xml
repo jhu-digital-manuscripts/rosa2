@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.322v.tif" pagination="624" reader="John Dee" signature="[qqq.viii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Poeta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Poeta</marginalia_text>
+                </position>
+            </language>
+            <translation>A poet.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="co[n]fectio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>co[n]fectio</marginalia_text>
+                </position>
+            </language>
+            <translation>Preparing.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="cornua duo tenueru[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="Poeta nescio" type="straight"/>
+        <underline language="LA" method="pen" text="prodigia" type="straight"/>
+        
+        <mark method="pen" name="scribble" place="left_margin"/> <!--JG: Grid-like thingy-->
+                
+        <numeral place="left_margin">5</numeral>
+        <numeral place="left_margin">8</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">8</numeral>
+        
+        <drawing anchor_text="Poeta" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

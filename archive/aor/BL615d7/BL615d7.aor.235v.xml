@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.235v.tif" pagination="[235v]" reader="John Dee" signature="[Ggiij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="per trauersar posica alla Spagnuola d vna terra and vn altra" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Bethrone and Cuba
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        spagnola
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Enthroned in Spain and Cuba.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="XVII leghe" type="straight"/>
+        <underline language="IT" method="pen" text="pacificarsi con l'Ammiraglio" type="double"/>
+        <underline language="IT" method="pen" text="rimaso d'arme" type="double"/>
+        <underline language="IT" method="pen" text="cioò per" type="double"/>
+        <underline language="IT" method="pen" text="di Aoamaquique" type="straight"/>
+        <underline language="IT" method="pen" text="di vn mese" type="double"/>
+        <underline language="IT" method="pen" text="&amp; distruggendo il paese" type="straight"/>
+        <underline language="IT" method="pen" text="dolo a discretione, secondo il potere, ò la resistenza de' Caciqui, per doue" type="straight"/>
+        
+        <drawing anchor_text="&amp; distruggendo il paese." book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

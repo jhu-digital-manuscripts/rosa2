@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="UclCastiglione1541.019r.tif" pagination="VII[r]" reader="Harvey" signature="Biiiir"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Dottrina di fra Mariano.
+                    </marginalia_text>
+                    <person name="Mariano Fetti"/>
+                </position>
+            </language>
+            <translation>
+                The doctrine of Brother Mariano.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        III. Giuoco proposto da fra Serafi[no] perche le Don[ne] habbiano in odio 
+                        i ratti, et am[ino] le serpi.   
+                    </marginalia_text>
+                    <person name="Serafino"/> 
+                </position>
+            </language>
+            <translation>
+                III. Game proposed by Brother Serafino: why women hate rats and love snakes.
+            </translation>
+        </marginalia>
+    </annotation>
+</transcription>

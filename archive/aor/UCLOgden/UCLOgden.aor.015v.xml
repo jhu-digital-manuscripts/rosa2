@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.015v.tif" pagination="14" reader="John Dee" signature="[b[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="generis humani" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Qua[m] fuit humano generi vtile varias facere esse formas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                How it is useful to humankind to bring various froms into existence. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="totius orbis Imperator" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Totius orbis Imperator
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Ruler over the entire planet.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Genitus apud Tharsum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                According to Tharsus begotten.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="aeuum obliquus signorum ordo co[n]uertitur" type="straight"/>
+        <underline language="LA" method="pen" text="ut ad harum stellarum cursum, omne auimantium genus, perpetua sibi generis propagatione succedat" type="straight"/>
+        <underline language="LA" method="pen" text="quae nigros, ad uariandas hominum formas, stellarum plurimum potestas operatur, &amp; unicuiq[ue] homini" type="straight"/>
+        <underline language="LA" method="pen" text="maxima uultuum dissimilitudo uariaret" type="straight"/>
+        <underline language="LA" method="pen" text="comprobatur, Zonarum quide[m] esse, quod nigri, uel candidi sunt stelllarum uero, quod in illa uarietate coloris, dissimiliu[m] formarum uarietatibus corporantur" type="straight"/>
+        <underline language="LA" method="pen" text="ac totius orbis Imperator" type="straight"/>
+        <underline language="LA" method="pen" text="Constantinus" type="double"/>
+        <underline language="LA" method="pen" text="scilicet maximus, Diui Co[n]stantini filius" type="straight"/>
+        <underline language="LA" method="pen" text="decepit, apud Tharsum genitus" type="straight"/>
+        <underline language="LA" method="pen" text="aetatis gradu imperii gubernacula" type="straight"/>
+        
+        <mark colour="red" method="pen" name="bracket" place="left_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="left_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="left_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

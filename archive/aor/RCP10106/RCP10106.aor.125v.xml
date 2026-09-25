@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.125v.tif" pagination="250" reader="John Dee" signature="[q 5[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Tum accusator praemeditata pleraq[ue] domon affert: Patronus etiam inopinatis frequenter occurrit." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Difficiliores Patroni qua[m] accusatoris partes. X.</marginalia_text>  
+                </position>
+            </language>
+            <translation>The parts of the defender are more difficult than that of the accuser.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="defensor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Defensor.</marginalia_text>
+                </position>
+            </language>
+            <translation>Defender.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tantò est accusare, quàm defendere, quantò facere, quàm sanare uulnera, facilius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ide[m] pene cicero pro quintio</marginalia_text>
+                    <person name="Cicero"/>
+                    <book title="Pro Quinctio"/>
+                </position>
+            </language>
+            <translation>Nearly the same as Cicero in Pro Quinctio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Primùm igitur intuendum est id, cui responsuri sumus, proprium sit eius iudicij, an ad causam extrà accersitum." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Prima refellendi ratio.</marginalia_text>
+                </position>
+            </language>
+            <translation>The first reason for refuting.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tubero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tubero</marginalia_text>
+                    <person name="Quintus Aelius Tubero"/>
+                </position>
+            </language>
+            <translation>Tubero.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Ideo'q[ue] accusationibus etiam mediocres in dicendo suffecerunt: bonus defensor nemo, nisi qui eloque[n]tißimus fuit" type="straight"/>
+        <underline language="LA" method="pen" text="facere quàm sanare uulnera, facilius" type="straight"/>
+        <underline language="LA" method="pen" text="an ad causam" type="straight"/>
+        <underline language="LA" method="pen" text="pronunciandi forma tenentur: quanquàm illae quoque" type="straight"/>
+        <underline language="LA" method="pen" text="C. Caesarem, &amp; Triumuiros pro diuersaru[m] partium hominibus actiones, etiam si precibus utuntur" type="straight"/>
+        
+        <mark method="pen" name="Ichthys" place="left_margin"/> <!-- JG: after marginal note-->
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

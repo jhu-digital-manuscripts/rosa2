@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.135r.tif" pagination="93" reader="Harvey" signature="[F7r]"/>	<!-- ABO 139right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.135r_0001" marginalia_continues_from="Ha2.134v_0001" marginalia_from_transcription="Ha2.134v.xml">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						<!-- Continued from facing page, in text, Ha2.134v --> [[F6v]: Corduba adolescentulus vtroq[ue] erat egregius: et arguta
+						ratiocinatione pra[e] ca[e]teris: et multiplici artiu[m] instructu super omnes. Proximus illi Fortius. Fortio Ramus:
+						Ramo Freigius: Freigio Gregoris: Gregorio =]
+						= Caius Julius Guercentius, qui sexcentis audientibus
+						profitebatur, se quindecim
+						diebus mathematicas scientias perfecta explicatione
+					</marginalia_text>
+                    <!-- CG: I'm unsure who this is. --> <!--JG: Can't find anything either. Will ask specialist-->
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						pra[e]lecturum: Geometr. Arithm. Astron.
+						( Egregius mea memoria professor, et discursor
+						in pla[e]risq[ue] admirabilis: idemq[ue]
+						) imberbis adolescens,
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						et pra[e]lector
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						gladiatus. Post triduu[m], à Lauherno in philosophia;
+						à Brouno in Mathematicis lacessitus: magis
+					</marginalia_text>
+					<person name="Richard Laugherne"/>
+					<person name="Lancelot Brown"/>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						( speciosè, quàm energeticè.
+						Lauhernu[m], impudentem scurram, et
+						egregium nebulonem sa[e]pè appellabat. Fugit metus causâ.
+					</marginalia_text>					
+				</position>
+			</language>
+			<translation>
+				[[F6v]: A very young man in Corduba was excellent in both disciplines;
+				and with clever reasoning, he was beyond the other men; and instructed by various men 
+				of the arts, he was above all men. Fortius was next to him, and Ramus next Fortius.
+				Next to Ramus was Freigius, and next to Freigius Gregoire. Next to Gregoire] Caius Julius Guercentius, who declared to six hundred listeners,
+				that he was going to give a complete explanation of the mathematical
+				sciences in just fifteen days, including geometry, arithmetic, and astronomy.
+				In my memory, he is an illustrious professor, and a wondrous discourser 
+				on many subjects; at the same time, he was a beardless youth and an armed lecturer. <!-- CG: 'gladiatus' is perplexing. --> <!--JG: I don't get this either. Will ask specialist, maybe it's an expression we don't know of-->
+				After three days, he was provoked by Laugherne in philosophy and by Brown in mathematics,
+				however they were more showy than effective.
+				He frequently called Laugherne an impudent dandy and a singular scoundrel, who then fled in fear.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						il fato, e predestinatione, secondo Zenone Stoico. )	
+					</marginalia_text>
+					<person name="Zeno of Citium"/>
+				</position>
+			</language>
+			<translation>
+				Fate and predestination, according to Zeno the Stoic.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						At Aristippus tantò securiùs dormiuisset.
+					</marginalia_text>
+					<person name="Aristippus"/>
+				</position>
+			</language>
+			<translation>
+				But Aristippus had been soundly sleeping so much.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						destramente.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Skillfully.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						A good hart will do all the boddie good.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="era sua colpa" type="straight"/>
+		<underline language="IT" method="pen" text="destino" type="straight"/>
+		<underline language="IT" method="pen" text="de' Cieli è" type="straight"/>
+		<underline language="IT" method="pen" text="destino che" type="straight"/>
+		<underline language="IT" method="pen" text="sia impiccato" type="straight"/>
+		<underline language="IT" method="pen" text="danari" type="straight"/>
+		<underline language="IT" method="pen" text="il sonno" type="straight"/>
+		<underline language="IT" method="pen" text="ANACREONTE filosofo" type="straight"/>
+		<underline language="IT" method="pen" text="valore di dieci mila ducati, entrò" type="straight"/>
+		<underline language="IT" method="pen" text="tre dì &amp; tre notti senza dormire" type="straight"/>
+		<underline language="IT" method="pen" text="tosto tosto quei danari à quel" type="straight"/>
+		<underline language="IT" method="pen" text="ei no[n] lo lasciauano dormire" type="straight"/>
+		<underline language="IT" method="pen" text="non fa" type="straight"/>
+		<underline language="IT" method="pen" text="ei puo" type="straight"/>
+		<underline language="IT" method="pen" text="puo far" type="straight"/>
+		<underline language="IT" method="pen" text="ei vuole" type="straight"/>
+		<underline language="IT" method="pen" text="volle al primo assalto" type="straight"/>
+		<underline language="IT" method="pen" text="era à ordine" type="straight"/>
+		<underline language="IT" method="pen" text="le doleua la testa" type="straight"/>
+		<underline language="IT" method="pen" text="ritirò da banda" type="straight"/>
+		<underline language="IT" method="pen" text="del suo errore" type="straight"/>
+		<underline language="IT" method="pen" text="prese risolutione" type="straight"/>
+		<underline language="IT" method="pen" text="non mi duol piu il capo" type="straight"/>
+		<underline language="IT" method="pen" text="Lisabetta" type="straight"/>
+		<underline language="IT" method="pen" text="duol hora la coda" type="straight"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="left_margin" text="Lisabetta"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- do -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- die -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ri -->
+		<mark language="IT" method="pen" name="quotation_mark" place="right_margin" text="ei no[n] lo lasciauano dormire"/> <!-- Marginalia is written over the mark. Alongside 'dormire' in printed text. -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- me -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- vol -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ri -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- or -->
+		
+		<mark method="pen" name="dot" place="intext"/> <!-- ladro, Zenone -->
+		<mark method="pen" name="dot" place="intext"/> <!-- impiccato, et -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="ei vuole"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- testa, onde -->
+		
+		<mark language="IT" method="pen" name="quotation_mark" place="tail" text="duol hora la coda"/>
+		
+    </annotation>
+</transcription>

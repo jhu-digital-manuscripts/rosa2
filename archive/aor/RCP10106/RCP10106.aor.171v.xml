@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.171v.tif" pagination="342" reader="John Dee" signature="[y 3[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="lege aliqua obscuritas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>legis obscuritas</marginalia_text>
+                </position>
+            </language>
+            <translation>Obscurity in the law.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Fur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>fur.</marginalia_text>
+                </position>
+            </language>
+            <translation>Thief.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Voluntas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Voluntas</marginalia_text>
+                </position>
+            </language>
+            <translation>Intention.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="meretrix" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Meretrix</marginalia_text>
+                </position>
+            </language>
+            <translation>Prostitute.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="co[n]tra scriptum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Co[n]tra scriptu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>Opposing the text.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Peregrinus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Peregrinus</marginalia_text>
+                </position>
+            </language>
+            <translation>Foreigner.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Fur quadruplum" type="straight"/>
+        <underline language="LA" method="pen" text="non posse ex ipso patet" type="straight"/>
+        <underline language="LA" method="pen" text="Peregrinus, si murum asce[n]derit, capite puniatur" type="straight"/>
+        <underline language="LA" method="pen" text="contra scriptu[m], uehementius eo quod in lite" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">.1.</numeral>
+        <numeral language="LA" place="left_margin" text="Alterum genus ">2</numeral> 
+        <numeral place="left_margin">1</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.088v.tif" pagination="176" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Prodicus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Prodicus</marginalia_text>
+                    <person name="Prodicus"/>
+                </position>
+            </language>
+            <translation>Prodicus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro C. Varreno" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>p[ro] C. Vareno.</marginalia_text>
+                    <book title="Pro Vareno"/>
+                </position>
+            </language>
+            <translation>Pro Vareno.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Cluentio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>P[ro] Cluentio</marginalia_text>
+                    <book title="Pro Cluentio"/>
+                </position>
+            </language>
+            <translation>Pro Cluentio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Muraena" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>P[ro] Murena.</marginalia_text>
+                    <book title="Pro Murena"/>
+                </position>
+            </language>
+            <translation>Pro Murena.</translation>
+        </marginalia>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.093v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="aureum draconem infixit quem pro vexillo" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Arturi Vexillu[m]
+                    </marginalia_text>
+                    <person name="King Arthur"/>
+                </position>
+            </language>
+            <translation>Arthur's banner.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Dacis atq[ue] norWegensibus" hand="English_secretary" id="WB5-12_0194_085v:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Nota: tantu[m] Dacos et Norwegens[es] se no[m]i[n]are.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Note: only the Dacians and the Norwegians named themselves.</translation>
+            <!-- NBW: I think this is "se" rather than "sunt", nominare being a syncopated perfect - The translation would be something akin to "Note how the Dacians and Norwegians named one another" I don't really get what Dee is saying here, unless he's suggesting that it's important that the Danes and Norwegians considered themselves to be separate people?-->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quo aureum draconem infixit quem" type="straight"/>
+        <underline language="LA" method="pen" text="Brita[n]nia[m] terdenorum regnorum fecistis dominam" type="straight"/>
+        <underline id="WB5-12_0194_085v:u0001" language="LA" method="pen" text="quid nouerunt quae bella Dacis atq[ue] norWegensibus galloru[m]q[ue] ducib[us] intulistis? quos meae subdidistis potestati: &amp;" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="coat_of_arms"/>
+        <drawing book_orientation="0" method="pen" place="tail" type="coat_of_arms"/>
+        
+        <physical_link>
+            <marginal_annotation idref="WB5-12_0194_085v:m0001"/>
+            <marginal_annotation idref="WB5-12_0194_085v:u0001"/>
+            
+            <relation from="WB5-12_0194_085v:m0001" to="WB5-12_0194_085v:u0001" type="directed"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

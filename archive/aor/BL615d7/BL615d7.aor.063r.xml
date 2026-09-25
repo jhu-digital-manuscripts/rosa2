@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.063r.tif" pagination="63" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Canoa" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A canoe.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>    
+        
+        <marginalia anchor_text="CVII leghe" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>107 leagues</marginalia_text>
+                </position>
+            </language>
+        </marginalia> 
+        
+        <marginalia anchor_text="Alfa" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Alpha.</marginalia_text>
+                    <location name="Alpha"/>
+                </position>
+            </language>
+        </marginalia>    
+        
+        <marginalia anchor_text="V di Decembre" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dece[m]b[e]r 5.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>    
+        
+        <marginalia anchor_text="XVI leghe" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>16 leagues betwene Cuba and Spagnola}.</marginalia_text>
+                    <location name="Cuba"/>
+                    <location name="Hispaniola"/>
+                </position>
+            </language>
+        </marginalia>    
+        
+        <marginalia anchor_text="Parto di S. Nicolò" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Portus Sancti Nicolai.</marginalia_text>
+                    <location name="Mole-Saint-Nicolas"/>
+                </position>
+            </language>
+            <translation>The Port of Saint Nicholas.</translation>
+        </marginalia>    
+        
+        <marginalia anchor_text="mirti" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mirti</marginalia_text>
+                </position>
+            </language>
+            <translation>Myrtles.</translation>
+        </marginalia>    
+        
+        <marginalia anchor_text="la Co[n]cettione" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Portus Conceptionis</marginalia_text>
+                    <location name="Port Conception"/>
+                </position>
+            </language>
+            <translation>The Port of Conception.</translation>
+        </marginalia>    
+        
+        <marginalia anchor_text="quercie picciole" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>quercie picciole</marginalia_text>
+                </position>
+            </language>
+            <translation>Oaks' bark.</translation>  <!-- DO: unsure of translation of 'picciole' --> 
+            <!-- MB. I think 'picciole' is an early variant form of 'piccola' (i.e. small) -->  <!-- DO: Possibly, although perhaps more likely: 'picciolo' means 'stalk', which doesn't really work with oaks, so that's why I was thinking bark... -->
+        </marginalia>    
+        
+        <underline language="IT" method="pen" text="lunga palmi XCV, e" type="straight"/>
+        <underline language="IT" method="pen" text="di CL persone" type="straight"/>
+        <underline language="IT" method="pen" text="CVII" type="straight"/>
+        <underline language="IT" method="pen" text="verso Leuante" type="straight"/>
+        <underline language="IT" method="pen" text="Alfa" type="straight"/>
+        <underline language="IT" method="pen" text="XVI" type="straight"/>
+        <underline language="IT" method="pen" text="alcune correnti" type="straight"/>
+        <underline language="IT" method="pen" text="solennità, la qual correa" type="straight"/>
+        <underline language="IT" method="pen" text="quercie picciole" type="straight"/>
+        <underline language="IT" method="pen" text="Canoe grosse, come fuste di XV banchi. Ma" type="straight"/>
+        <underline language="IT" method="pen" text="prattica" type="straight"/>
+        <underline language="IT" method="pen" text="chiamò la Co[n]cettione" type="straight"/>
+        
+        <mark language="IT" method="pen" name="bracket" place="intext" text="per alcune correnti, che iui sono"/>
+        
+        <errata amendedtext="Porto" copytext="Parto" language="IT"/>
+        
+    </annotation>
+    
+</transcription>

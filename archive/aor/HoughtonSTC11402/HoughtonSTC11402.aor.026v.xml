@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.026v.tif" reader="Harvey" signature="[Ciii[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Dionisius" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dionisius [the] Tyran.</marginalia_text>
+                    <person name="Dionysius I of Syracuse"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="armye, by and by" type="straight"/>
+        <underline language="EN" method="pen" text="crie and cal for vessels" type="straight"/>
+        <underline language="EN" method="pen" text="dryue mules with moche noyse" type="straight"/>
+        <underline language="EN" method="pen" text="so made them beleue" type="straight"/>
+        <underline language="EN" method="pen" text="caused to tary" type="straight"/>
+        <underline language="EN" method="pen" text="Affricanes" type="straight"/>
+        <underline language="EN" method="pen" text="fortyfyed Castelles" type="straight"/>
+        <underline language="EN" method="pen" text="kepers neuer" type="straight"/>
+        <underline language="EN" method="pen" text="yelde theym to theyr ennemyes" type="straight"/>
+        <underline language="EN" method="pen" text="dysmissed, to retourne" type="straight"/>
+        <underline language="EN" method="pen" text="priuily vnto Syracusa" type="straight"/>
+        <underline language="EN" method="pen" text="had broughte" type="straight"/>
+        <underline language="EN" method="pen" text="the armye of his ennemies, to a smalle" type="straight"/>
+        <underline language="EN" method="pen" text="Agesilaus" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="crie and cal for vessels"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--whi-->
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="the armye of his ennemies, to a smalle"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--Syracusa, whiche-->
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+        
+    </annotation>
+</transcription>

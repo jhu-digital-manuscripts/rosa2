@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.024v.tif" reader="Harvey" signature="[C[i[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Nota.</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Comes Purl. L.I. obser. 103.</marginalia_text>
+                    <person name="Jacopo di Porcia"/>
+                    <book title="The preceptes of warre"/>
+                </position>
+            </language>
+            <translation>Jacopo di Porcia, book 1, observation 103.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>to bring him in A jeolousy, and suspicion of treason.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Annibal; Fabius" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Fabius wisely anoydid Hannibals pollicy.</marginalia_text>
+                    <person name="Fabius Maximus"/>
+                    <person name="Hannibal"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hannibal ouertaken with [the] lyke, being in Antiochus Courte.</marginalia_text>
+                    <person name="Hannibal"/>
+                    <location name="Antioch"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>infrà.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Lib. 2. cap. 5.</marginalia_text>
+                    <book title="The stratagems"/>
+                </position>
+            </language>
+            <translation>Book 2, chapter 5.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Polya[e]ni Hieron, L. I.</marginalia_text>
+                    <person name="Polyaenus"/>
+                    <person name="Hiero I of Syracuse"/>
+                    <book title="Stratagems"/>
+                </position>
+            </language>
+            <translation>Hiero I of Syracuse, in Polyaenus, book 1.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Vlisses entrappid Palamedes by counterfett Letters. w[hi]ch he forgid in kyng Priamus name, and causid the[m]
+                    to be fownde abouwte A Troian slayne, [etc], wheres Palamedes convict of Treaso[n],
+                    was wronfully stonyed to death.</marginalia_text>
+                    <person name="Odysseus"/>
+                    <person name="Palamedes"/>
+                    <person name="Priam"/>
+                    <emphasis method="pen" text="Vlisses" type="straight"/>
+                    <emphasis method="pen" text="counterfett" type="straight"/>
+                    <emphasis method="pen" text="Priamus" type="straight"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Insigne Stratagema, multis implicatu[m] astutijs. Vide Seruiu[m] in L. 2. Virg. Aenead.</marginalia_text>
+                    <person name="Maurus Servius Honoratus"/>
+                    <person name="Virgil"/>
+                    <book title="In Vergilii Aeneidem commentarii"/>
+                    <book title="Aeneid"/>
+                </position>
+            </language>
+            <translation>A famous stratagem, entangled with many tricks. See Servius in book 2 of Virgil's Aenead.</translation> <!--JG: I think Harvey means Maurus Servius Honoratus commentary on Virgil-->
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="people, therby" type="straight"/>
+        <underline language="EN" method="pen" text="discension" type="straight"/>
+        <underline language="EN" method="pen" text="commons agaynste the lordes" type="straight"/>
+        <underline language="EN" method="pen" text="matche Fabius" type="straight"/>
+        <underline language="EN" method="pen" text="forbare to hurte Fabius landes and" type="straight"/>
+        <underline language="EN" method="pen" text="spoyled other" type="straight"/>  
+        <underline language="EN" method="pen" text="Fabius" type="straight"/>
+        <underline language="EN" method="pen" text="mystruste his fydelitie" type="straight"/>
+        <underline language="EN" method="pen" text="gaue all his landes to the comon welthe" type="straight"/>
+        <underline language="EN" method="pen" text="Fabius Maximus" type="straight"/>
+        <underline language="EN" method="pen" text="fyft time" type="straight"/>
+        <underline language="EN" method="chalk" text="ioyned together" type="straight"/>
+        <underline language="EN" method="pen" text="wrote letters to Fuluius" type="straight"/>
+        <underline language="EN" method="pen" text="Posthumius" type="straight"/>
+        <underline language="EN" method="pen" text="that laye in garryson to defende the citie" type="straight"/>
+        <underline language="EN" method="pen" text="power to Sitium" type="straight"/>
+        <underline language="EN" method="chalk" text="to Sitium: which thynges doone, the Etruscians and Umbrians drewe home to defende" type="straight"/>
+        <underline language="EN" method="pen" text="Etruscians" type="straight"/>
+        <underline language="EN" method="pen" text="Umbrians drewe home to defende" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="to bring him in A jeolousy, and suspicion of treason."/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--people, therby-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="forbare to hurte Fabius landes and"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="gaue all his landes to the common welthe"/>
+        <mark method="pen" name="dot" place="intext"/> <!--welthe, through-->
+        <mark method="pen" name="comma" place="intext"/> <!--withstande, he-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="wrote letters to Fuluius"/>
+        <mark method="pen" name="comma" place="intext"/> <!--Fuluius, and-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="power to Sitium"/>
+        <mark method="pen" name="comma" place="intext"/> <!--Etruscians, and-->
+        
+    </annotation>
+</transcription>

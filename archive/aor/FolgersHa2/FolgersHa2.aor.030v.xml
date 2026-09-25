@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+	<page filename="FolgersHa2.030v.tif" pagination="380" reader="Harvey"/>	<!-- ABO 035left -->
+    	<annotation>
+    		
+            	<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+            				<position book_orientation="0" place="head">
+                    				<marginalia_text>
+                    					( Aut magnum: aut indignum magno viro.
+                      				</marginalia_text>
+            					<emphasis method="chalk" type="straight"/>
+            				</position>
+        			</language>
+        			<translation>
+        				( Either a great thing, or an unworthy thing for a great man.
+        			</translation>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						Antiastrologo. s[upr]a,
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Anti-astrologer. [See] above.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="180" place="intext">
+    					<marginalia_text>
+    						Alij pauci optimè: tu melius.
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				A few other men are great: you are better.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						Fortij perpetua Meditatio. Quicquid
+    						agis,
+    					</marginalia_text>
+    					<person name="Joachim Fortius Ringelberg"/>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<language ident="IT">
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						piu oltre.
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				The continuous meditation of Fortius. Whatever you do, beyond that.
+    			</translation>
+    		</marginalia>
+    		
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="90" place="left_margin">
+    					<marginalia_text>
+    						Multi benè: pauci meliùs: rarissimi optimè: optimorum optimè, solus Eutrapelus.
+    						Cui vnica verborum, rerum, actionu[m] pra[e]c[a]lentia: et singularis summaru[m] facultatu[m]
+    						copia. Semper magis, magisq[ue] proficiens.		
+    					</marginalia_text>
+    					<person name="Eutrapelus"/>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Many men are well: few are better: even fewer are great: the best of the best is Eutrapelus alone,
+    				who has a unique zeal for words, things, and actions, and a singular abundance of the highest faculties.
+    				Always progressing more and more.
+    			</translation>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="270" place="right_margin">
+    					<marginalia_text>
+    						Quis, qualis, quantus? Ecquantum hoc in politicis, aut polemicis? Ecquid illud
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    				<position book_orientation="270" place="tail">
+    					<marginalia_text>
+    						in magnis mundi negociationibus?
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Who, of what kind, how much? This much in politics, or polemics? What is that in the great business of the world? <!--JG: Very unsure, esp. about ecquantum and ecquid-->
+    			</translation>
+    		</marginalia>
+        
+	    	<!-- Underlines -->
+	        <underline language="IT" method="pen" text="non errano" type="straight"/>
+    		<underline language="IT" method="pen" text="noi altri goffi" type="straight"/>
+    		<underline language="IT" method="pen" text="Paolo dell'Ottonaio" type="straight"/>
+    		<underline language="IT" method="pen" text="accorto, &amp; pieno di bellissimi" type="straight"/>
+    		<underline language="IT" method="pen" text="motti" type="straight"/>
+    		<underline language="IT" method="pen" text="si uiui tratti" type="straight"/>
+    		<underline language="IT" method="pen" text="parole tanto bene espresse" type="straight"/>
+    		<underline language="IT" method="pen" text="riso di bocca a qual" type="straight"/>
+    		<underline language="IT" method="pen" text="&amp; seuero" type="straight"/>
+    		<underline language="IT" method="pen" text="Questo gala[n]te huomo" type="straight"/>
+    		<underline language="IT" method="pen" text="molti debiti" type="straight"/>
+    		<underline language="IT" method="pen" text="sicuro in casa sua" type="straight"/>
+    		<underline language="IT" method="pen" text="s'era ritirato in S. Lorenzo" type="straight"/>
+    		<underline language="IT" method="pen" text="di modo maninconico" type="straight"/>
+    		<underline language="IT" method="pen" text="haueua ben di che" type="straight"/>
+    		<underline language="IT" method="pen" text="che hauete" type="straight"/>
+    		<underline language="IT" method="pen" text="siete di cosi mala uoglia" type="straight"/>
+    		<underline language="IT" method="pen" text="toccare doue gli doleua," type="straight"/>
+    		<underline language="IT" method="pen" text="star sempre dolente" type="straight"/>
+    		<underline language="IT" method="pen" text="isciagura" type="straight"/>
+    		<underline language="IT" method="pen" text="già per cagione d'alcun" type="straight"/>
+    		<underline language="IT" method="pen" text="fallito di molte migliaia di" type="straight"/>
+    		<underline language="IT" method="pen" text="creditori miei no[n] co[n]tenti d'hauermi" type="straight"/>
+    		<underline language="IT" method="pen" text="usurpato ciò che io haueua" type="straight"/>
+    		<underline language="IT" method="pen" text="nella persona" type="straight"/>
+    		<underline language="IT" method="pen" text="uogliono patto, ne accordo" type="straight"/>
+    		<underline language="IT" method="pen" text="alla disperatione" type="straight"/>
+    		<underline language="IT" method="pen" text="consolatione, che" type="straight"/>
+    		<underline language="IT" method="pen" text="bellissimo libro della Patientia" type="straight"/>
+    		
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	    	<symbol name="Sun" place="intext"/>
+    		<symbol name="Sun" place="intext"/> <!--JG: I can't find this Sun symbol? There's a SS symbol in the left margin, though-->
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+    		<!-- Right margin -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- pia -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- tro -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- passeggian -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- sen -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- tut -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- haue -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- uoglio -->
+    		
+    		<!-- Left margin -->
+    		<mark method="pen" name="bracket" place="left_margin"/> <!-- M. Paolo ... motti -->
+    		<mark method="pen" name="straight_quotation_mark" place="left_margin"/> <!-- tendosi -->
+    		<mark method="pen" name="plus_sign" place="left_margin"/> <!-- mio difetto -->
+    		
+    		<!-- Intext -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- errano, ma  -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- arguti -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- motti, quali -->
+    		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- Chalk mark in text on right side -->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="uiui"/>
+    		<mark method="pen" name="equal_sign" place="intext"/> <!-- bene espresse -->
+    		<mark method="pen" name="quotation_mark" place="intext"/> <!-- Questo gala[n]te -->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Patientia"/>
+    		<mark method="pen" name="dot" place="intext"/> <!-- Patientia, io -->
+
+
+    </annotation>
+</transcription>

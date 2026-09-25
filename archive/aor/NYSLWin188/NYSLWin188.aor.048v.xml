@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.048v.tif" pagination="[48[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="sich augenscheinlch das Gott Sul. Sal, Merc. ins Firmament" hand="Italian" id="NYSLWin188:00000110:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Hinc Argume[n]tum euidens, de &#128781; ▢ ☿ celestibus</marginalia_text>
+                    <symbol_in_text name="Sulfur"/>
+                    <symbol_in_text name="Salt"/>
+                    <symbol_in_text name="Mercury"/>
+                </position>
+            </language>
+            <translation>This evident argument about sulfur, salt and mercury in the heavenly bodies.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="Stral welches das grössest vnd sterckeste werck ist des Firmaments" type="straight"/>
+        <underline language="DE" method="pen" text="vber die Natur sondern in der Natur" type="straight"/>
+        <underline language="DE" method="pen" text="sich augenscheinlich das Gott Sul. Sal, Merc. ins Firmament" type="straight"/>
+        <underline id="NYSLWin188:00000110:u0001" language="DE" method="pen" text="ding Materialiter geboren" type="straight"/>
+        
+        <physical_link>
+            <marginal_annotation idref="NYSLWin188:00000110:m0001"/>
+            <marginal_annotation idref="NYSLWin188:00000110:u0001"/>
+            
+            <relation from="NYSLWin188:00000110:m0001" to="NYSLWin188:00000110:u0001" type="directed"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

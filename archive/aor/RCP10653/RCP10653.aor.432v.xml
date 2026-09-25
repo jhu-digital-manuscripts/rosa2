@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.432v.tif" pagination="414" reader="John Dee" signature="[Mmmm iij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="magni Cassani frater" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Magnus Cassanus habuit fratre[m] Carbanda no[m]i[n]e. 
+                    </marginalia_text>
+                    <person name="Mahmud Ghazan"/>
+                    <person name="Öljaitü"/>
+                </position>
+            </language>
+            <translation>
+                Mahmud Ghazan the Great had a brother by the name of Kharbanda.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sed militibus bellicosis illud erogare curauit" type="straight"/>
+        <underline language="LA" method="pen" text="magni Cassani frater, Paganus, adamauit filiam regis Armeniae Christianam" type="straight"/>  
+        <underline language="LA" method="pen" text="hispidus" type="straight"/>
+        <underline language="LA" method="pen" text="credidit pater, &amp; domus eius tota" type="straight"/>
+        <underline language="LA" method="pen" text="fratres, qui dicuntur Minores, seu quod latius publicatur &amp; nequius comprobatur, totius doctrinae exploratores" type="straight"/>
+        <underline language="LA" method="pen" text="absolutis mercatoribus à depositi" type="straight"/>
+        
+    </annotation>
+</transcription>

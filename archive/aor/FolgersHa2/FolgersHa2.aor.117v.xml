@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.117v.tif" pagination="58" reader="Harvey" signature="[D5v]"/>	<!-- ABO 122left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Summa pra[e]gnantium studiorum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The summa of pregnant studies.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						{ Aut necessaria in vsu pragmatico: aut qua[e] plus
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						possunt: aut Noli me tangere. Primis ascenditur ordinariè:
+					</marginalia_text>
+					<X-ref book_title="Bible" language="LA" person="John" text="Noli me tangere"/>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						{ secundis, etia[m] extraordinariè.
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Prima requisita ad functionem
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						{ officij:
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						secunda honorifica ad reputationem
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Meriti. Ex illis Opes, et auctoritas:
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						ex his valor, et admiratio.
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						{ Primùm maximè
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						necessaria in tua professione:
+						tum summè pra[e]potentia in mundo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Either the essentials for pragmatic use, or those things which can do more, otherwise "do not touch me." First one moves upward in an ordinary manner, 
+				yet then one moves upward in an extraordinary manner. The first necessary matters are directed towards the operation of one's office; then, secondary honorable things are directed towards one's reputation of 
+				worth. Riches and authority come from the former; valor and admiration from the latter. First there are those especially necessary matters for your profession; but then comes the greatest power in the world.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						In necessarijs deficere, turpissimum: in pra[e]potentibus 
+						excellere, magnificum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The most ugly matter lacks necessary qualities;
+				the great matter excels in superior qualities.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Sol in auge.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The sun at its peak.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Eutrapeli vtilissima studia.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				The most useful studies of Eutrapelus.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Ille, rara auis: his, vnica.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				That man is a rare bird; this one is a unique bird.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Galerita est: at non Luscinia: falco est,
+						at non aquila: cignus est: at non Phoenix.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A crested lark, but not a nightingale;
+				A falcon, but not an eagle;
+				A swan, but not a phoenix.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Doctor Barlow hath three things to make him a preferred man: ordinarie diuintie;
+						Greek; &amp; boldnes extraordinarie.		
+					</marginalia_text>
+					<person name="William Barlow"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="parlar troppo" type="straight"/>
+		<underline language="IT" method="pen" text="molesto" type="straight"/>
+		<underline language="IT" method="pen" text="APOLLONIO" type="straight"/>
+		<underline language="IT" method="pen" text="troppo parlare" type="straight"/>
+		<underline language="IT" method="pen" text="questi loquaci fastidiosi" type="straight"/>
+		<underline language="IT" method="pen" text="tanta molestia ne' lor" type="straight"/>
+		<underline language="IT" method="pen" text="quanta essi ad altri" type="straight"/>
+		<underline language="IT" method="pen" text="Tenacità de' Turchi estraordinaria" type="straight"/>
+		<underline language="IT" method="pen" text="generation Turchesca" type="straight"/>
+		<underline language="IT" method="pen" text="à prender" type="straight"/>
+		<underline language="IT" method="pen" text="à non dar mai" type="straight"/>
+		<underline language="IT" method="pen" text="tenace, ch'egli" type="straight"/>
+		<underline language="IT" method="pen" text="in vna fossa" type="straight"/>
+		<underline language="IT" method="pen" text="non dar la mano" type="straight"/>
+		<underline language="IT" method="pen" text="Crudeltà certo arguta" type="straight"/>
+		<underline language="IT" method="pen" text="empiamente vccidere" type="straight"/>
+		<underline language="IT" method="pen" text="il burlaua à viuere dipoi" type="straight"/>
+		<underline language="IT" method="pen" text="lasciato herede" type="straight"/>
+		<underline language="IT" method="pen" text="all'huomo non è huomo" type="straight"/>
+		<underline language="IT" method="pen" text="ma lupo" type="straight"/>
+		<underline language="IT" method="pen" text="La ingratitudine portarne" type="straight"/>
+		<underline language="IT" method="pen" text="certo fiume" type="straight"/>
+		<underline language="IT" method="pen" text="ingiuriosamente" type="straight"/>
+		<underline language="IT" method="pen" text="fonte" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<symbol name="JC" place="intext"/>
+		
+		<mark method="pen" name="circumflex" place="left_margin"/>
+		<mark method="pen" name="circumflex" place="left_margin"/>
+		<mark method="pen" name="circumflex" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- dis -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- stet -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ma -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- mo -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- vc -->
+		<mark method="pen" name="dot" place="right_margin"/> <!-- Plauto -->
+		
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- dark grey chalk diagonal line, third paragraph. -->
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- trarre -->
+		<mark method="chalk" name="horizontal_bar" place="intext"/> <!-- dark grey chalk line, third paragraph. -->
+		<mark method="chalk" name="horizontal_bar" place="intext"/> <!-- dark grey chalk line, line beginning 'riua' --> 
+		
+    </annotation>
+</transcription>

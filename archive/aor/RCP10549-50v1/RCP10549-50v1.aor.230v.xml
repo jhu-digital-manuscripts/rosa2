@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.230v.tif" pagination="440" reader="John Dee" signature="[eee.iiii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Spirante etiam Repub." hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        spira[n]te Rep.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                While the state was breathing.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="grauissimum iudicium" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Iudiciu[m] grauiss[imu]m
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A most severe judgement.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sanctissimaru[m] atqueantiquissimaru[m] religionu[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Religio antiq[ui]ss[im]a sanctiss[im]a
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A ritual most ancient and holy.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Rex Ptolaemeus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Rex Ptolomeus
+                    </marginalia_text>
+                    <person name="Ptolemy of Cyprus"/>
+                </position>
+            </language>
+            <translation>
+                King Ptolemy of Cyprus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pacatus, quietus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        pacatus quietus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Peaceful, calm.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Antiochum [...] Attalo [...] Tigrane" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Antiochus Attalus Tigranes
+                    </marginalia_text>
+                    <person name="Antiochus III the Great"/>
+                    <person name="Attalus I"/>
+                    <person name="Tigranes I"/>
+                </position>
+            </language>
+            <translation>
+                Antiochus III the Great, Attalus I, Tigranes I.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mithridatem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Mithridates
+                    </marginalia_text>
+                    <person name="Mithridates VI of Pontus"/>
+                </position>
+            </language>
+            <translation>
+                Mithridates VI of Pontus.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Sed vt à mea causa" type="straight"/>
+        <underline language="LA" method="pen" text="sic enim facillime perspicietis" type="straight"/>
+        <underline language="LA" method="pen" text="anni furore co[n]quassatas" type="straight"/>
+        <underline language="LA" method="pen" text="regali ocio perfruebatur" type="straight"/>
+        
+        <symbol name="Asterisk" place="left_margin"/>
+        
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+    </annotation>
+</transcription>

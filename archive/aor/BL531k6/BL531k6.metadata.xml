@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+  <license>
+    <url>http://creativecommons.org/licenses/by/4.0/</url>
+    <logo>https://i.creativecommons.org/l/by/4.0/88x31.png</logo>
+  </license>
+  <totalPages>88</totalPages>
+  <dates>
+    <startDate>1567</startDate>
+    <endDate>1567</endDate>
+  </dates>
+  <texts>
+    <text id="1">
+      <language>la</language>
+      <title>Doctrina reuolutionum solis: tam æqualium quam apparentium ... Cum tabulis mediarum conuersionum temporis &amp; motuum solis in annis tropicis &amp; sidereis. His adiecti sunt perpetui canones magnitudinis apparentis anni, pro inueniendis nouo modo veris reuolutionibus. Item: Canones temporarij &amp; generales apparentium reuolutionum ad normam æqualitatis accommodati. Postremo, canon introitus solis in quatuor cardines seu tropica signa Zodiaci ad annos 200.</title>
+      <textId>crucius</textId>
+      <pages end="001r" start="044v">88</pages>
+    </text>
+  </texts>
+  <bibliographies>
+    <bibliography lang="en">
+      <title>Doctrina reuolutionum solis: tam æqualium quam apparentium ... Cum tabulis mediarum conuersionum temporis &amp; motuum solis in annis tropicis &amp; sidereis. His adiecti sunt perpetui canones magnitudinis apparentis anni, pro inueniendis nouo modo veris reuolutionibus. Item: Canones temporarij &amp; generales apparentium reuolutionum ad normam æqualitatis accommodati. Postremo, canon introitus solis in quatuor cardines seu tropica signa Zodiaci ad annos 200.</title>
+      <commonName>Paulus Crusius, Doctrina revolutionum solis (Jena, 1567)</commonName>
+      <dateLabel>1567</dateLabel>
+      <currentLocation>London, UK</currentLocation>
+      <repository>British Library</repository>
+      <shelfmark>531.k.6.(3.)</shelfmark>
+      <author>
+        <name>Crucius, Paulus</name>
+        <id></id>
+      </author>
+      <reader>
+        <name>John Dee</name>
+        <id>http://www.isni.org/isni/0000000122785193</id>
+      </reader>
+      <website>https://archaeologyofreading.org/bibliography/Dee-corpus/Crusius</website>
+    </bibliography>
+  </bibliographies>
+</book>

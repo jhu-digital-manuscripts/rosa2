@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.033r.tif" pagination="27" reader="John Dee" signature="G iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="puncta" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>+ Tum fortunio, tum infortunio: ⁰ ⁰ Illa tria puncta, duo h[o]r[um] □ et vnu[m] ☍ in infortunijs sunt insigniter mala: At in fortunijs 
+                    no[n] su[n]t insigniter bona, lic[e]t no[n] sint mala, tame[n] bonas actiones tardius producu[n]t, veru[m] △ fortunor[um] magis iuvant et in malis min[us] la[e]d[unt]</marginalia_text>
+                    <symbol_in_text name="Square"/>
+                    <symbol_in_text name="Opposite_planets"/>
+                    <symbol_in_text name="Trine"/>
+                </position>
+            </language>
+            <translation>As often with fortune as with unfortune: these three points, two of these squares and one opposition in unfortunate [events] are conspicuously bad: and in fortunate [events]
+            they are not manifestly good, although they may not be bad, nevertheless they bring out good actions more slowly, indeed the trine of fortunes help more as they hurt less in bad things.</translation> 
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hic locus est explicatus a Schonero lib. .1. Iudicioru[m], fo. 120. v.</marginalia_text>
+                    <person name="Johannes Schoner"/> 
+                    <book title="De iudicijs Natiuitatum libri tres"/>  
+                </position>
+            </language>
+            <translation>This place is explained by Schöner in book 1 of his 'De iudicijs nativitatum libri tres', folio 120 verso.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mediolani coeli medium" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Duplex Coeli M.</marginalia_text>
+                    <location name="Milan"/>
+                </position>
+            </language>
+            <translation>A twofold [movement?] of the sky in Milan.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="consimilis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>no[n] omnino similit[er]</marginalia_text>
+                </position>
+            </language>
+            <translation>Not altogether similarly.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>natus</marginalia_text>
+                </position>
+            </language>
+            <translation>Born.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>modo debile fuerit.</marginalia_text>
+                </position>
+            </language>
+            <translation>It only was weak.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="cuilibet" type="straight"/>
+        <underline language="LA" method="pen" text="puncta" type="straight"/>
+        <underline language="LA" method="pen" text="consimilis" type="straight"/>
+        <underline language="LA" method="pen" text="Vnum oppositionis, &amp; duo quadratorum concordantia Igitur" type="straight"/>
+        <underline language="LA" method="pen" text="Qui uero fortunam habet in loco infortunae alterius, infortunabit illum, &amp; no recipiet malum ab illo, quod credebat Ptolemaeus" type="straight"/>
+        <underline language="LA" method="pen" text="nec similiter alienum oberit infortunium" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/> 
+        <mark language="LA" method="pen" name="small_circle" place="intext" text="puncta"/> <!-- FSF: I don't know if that is possible, but I would transcribe this small circle the same way as the one in the marginal note, so it is clear that they are meant to be connected -->
+        <mark method="pen" name="comma" place="intext"/> <!--oppositionis &-->
+        <mark method="pen" name="colon" place="intext"/> <!--quadratorum concordantia-->
+        <mark method="pen" name="comma" place="intext"/> <!--locorum uni-->
+        <mark method="pen" name="comma" place="intext"/> <!--terminabatur per-->
+        <mark method="pen" name="comma" place="intext"/> <!--90 distans-->
+        
+        <errata amendedtext="[deleted]" copytext="," language="LA"/>
+        <errata amendedtext="[deleted]" copytext="Triplicatum autem habere, omnino extra naturam est" language="LA"/>
+        <errata amendedtext="Concordantia" copytext="concordantia" language="LA"/>
+        
+        
+    </annotation>
+</transcription>

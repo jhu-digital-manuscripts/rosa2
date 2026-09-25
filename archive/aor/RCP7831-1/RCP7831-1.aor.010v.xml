@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="RCP7831-1.010v.tif" pagination="10" reader="Dee" signature="[B[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Colores varietas Vnde. sed maxima[m] causam [o]mittit, distantia[e] r[ati]o[n]em.
+                    [N]a[m] ide[m] planeta provt vel accedat ad [t]erra[m] vel recedit fulgoris visibilis r[ati]o[n]em mutat, vt
+                    ♄ ♃ et ♂ s[a]epissi[m]a videbis.</marginalia_text>
+                    <symbol_in_text name="Saturn"/>
+                    <symbol_in_text name="Jupiter"/>
+                    <symbol_in_text name="Mars"/>
+                </position>
+            </language>
+            <translation>Hence the varying colours. But he omits the greatest cause, the reason of distance.
+            For the same planet exactly as it approaches or recedes from the earth, changes the reason for its visible brightness,
+            as you will see most often with Saturn, Jupiter, and Mars.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ephemerides Author.</marginalia_text>
+                </position>
+            </language>
+            <translation>The author of ephemerides.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="naturam corporis" type="straight"/>
+        <underline language="LA" method="pen" text="aeriae regionis constitutionem" type="straight"/>
+        <underline language="LA" method="pen" text="idcirco" type="double"/>
+        <underline language="LA" method="pen" text="ut uariae sunt nubes" type="straight"/>
+        <underline language="LA" method="pen" text="uel quantitate" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

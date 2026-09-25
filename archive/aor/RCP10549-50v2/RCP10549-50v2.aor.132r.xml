@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.132r.tif" pagination="3" reader="John Dee" signature="a.ii."/>   
+    
+    <annotation>
+        
+        
+        <marginalia date="1588" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Nove[m]b. [Octobris deleted] die octauo. 1588. [deleted]   <!-- DO: 1548 has been changed into 1588 in both instances -->
+                        Octobris die 6. 1588. [deleted]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                8 November 1588. 
+                6 October 1588.
+            </translation>
+        </marginalia>
+        
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Cornificius: lic[et] zazius co[n]trariu[m] asserat.</marginalia_text>
+                    <person name="Lucius Cornificius"/>
+                    <person name="Ulrich Zasius"/>         <!-- DO: Not 100% sure it's him... -->
+                </position>
+            </language>
+            <translation>Cornificius: Zasius may have suggested the contrary.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Rhetoricam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Rhetorica.</marginalia_text>      
+                </position>
+            </language>
+            <translation>Rhetoric.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Graeci scriptores" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gra[e]ci Scriptores.</marginalia_text>
+                </position>
+            </language>
+            <translation>Greek writers.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="artem sine assiduitate dicendi non multum iuuare, vt intelligas hanc praeceptionis rationem ad exercitationem accommodari oportere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Assiduitas exercitatio.</marginalia_text>      
+                </position>
+            </language>
+            <translation>The discipline of continuance.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="ORATORIS officium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Oratoris officium</marginalia_text>      
+                </position>
+            </language>
+            <translation>The duty of an orator.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Tria sunt genera causarum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>3 Genera caussarum</marginalia_text>      
+                </position>
+            </language>
+            <translation>Three types of cause.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Demonstratiuum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Demonstratiuu[m] quid.</marginalia_text>      
+                </position>
+            </language>
+            <translation>What the demonstrative type is.</translation>    
+        </marginalia>
+        
+       
+        <marginalia anchor_text="Deliberatiuum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Deliberatiuu[m].</marginalia_text>      
+                </position>
+            </language>
+            <translation>The deliberative type.</translation>    
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Iudiciale" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Iudiciale.</marginalia_text>      
+                </position>
+            </language>
+            <translation>The judicial type.</translation>    
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Oportet igitur in oratore esse inuentionem, dispositionem, elocutionem, memorian, &amp; pronuntiationem; Haec omnia tribus modis assequi poterimus, arte, imitatione &amp; exercitatione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>5. Qu[a]e oportet esse in oratore. Inventio. Dispositio. Elocutio. Memoria. Pronu[n]ciatio ] Quomodo hec assegua[n]tur. Ars Imitatio. Exercitatio.</marginalia_text>      
+                </position>
+            </language>
+            <translation>Five things which an orator should have: invention, organisation, style, memory, delivery ] these things follow in this way. Art. Imitation. Discipline.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Inuentio in sex partes orationis consumitur, in exordium, narrationem, diuisionem, confirmationem, confutationem, &amp; conclusionem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Inventio[n]is partes 6 Exordiu[m]. Narratio. Diuisio. Confirmatio. Confutatio. Conclusio.</marginalia_text>      
+                </position>
+            </language>
+            <translation>The six parts of invention: introduction, statement of the case, division, confirmation, refutation, conclusion.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="commodius exordiri" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Genus causs[a]e co[n]ducit ad co[m]moduis exordium.</marginalia_text>   <!-- DO: Not sure about 'Oenus caussa[rum]' NBW: corrected to 'genus causs[a]e'-->
+                </position>
+            </language>
+            <translation>The type of the cause contributes to a more suitable introduction.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="quae nihil ad propositum attinebant" type="straight"/>
+        <underline language="LA" method="pen" text="si te illud vnum monuerimus, artem sine assiduitate dicendi non multum iuuare" type="straight"/>
+        <underline language="LA" method="pen" text="Haec omnia tribus modis assequi poterimus, arte, imitatione &amp; exercitatione" type="straight"/>
+        
+        
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        
+        
+        <numeral place="right_margin">5</numeral>
+        <numeral place="right_margin">.13.</numeral> 
+        
+        
+    </annotation>
+    
+</transcription>

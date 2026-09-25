@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+	<page filename="FolgersHa2.035v.tif" pagination="390" reader="Harvey"/>	<!-- ABO 040left -->
+    	<annotation>
+    		
+            	<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+            			<position book_orientation="0" place="head">
+                    				<marginalia_text>
+                    					Sat, superq[ue] scriptarum Obseruationum.
+                      			</marginalia_text>
+            			</position>
+        			</language>
+        			<translation>
+        				Enough and more of written observations. 
+        			</translation>
+        		</marginalia>
+    		
+    		
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						amoroso, e ridicolo.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Amorous and ridiculous.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						L'vnico, sempre nuoua hiperbola, ironia, o paradosso.
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				The unique man, always a new hyperbole, irony, or paradox. 
+    			</translation>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="EN">
+    				<position book_orientation="90" place="left_margin">
+    					<marginalia_text>
+    						The honour of the artist, is his Workmanship: of the professour, his
+    						emploiment: of the actour, his execution.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="EN">
+    				<position book_orientation="270" place="right_margin">
+    					<marginalia_text>
+    						Your delight to repeate: your felicitie, to execute.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+        
+	    	<!-- Underlines -->
+	        
+    		<underline language="IT" method="pen" text="alcuna bella &amp; nuoua" type="straight"/>
+    		<underline language="IT" method="pen" text="no[n]" type="straight"/>
+    		<underline language="IT" method="pen" text="simile a molti, i" type="straight"/>
+    		<underline language="IT" method="pen" text="tenuti arguti, &amp; pro[n]ti" type="straight"/>
+    		<underline language="IT" method="pen" text="le medesime cose in bocca" type="straight"/>
+    		<underline language="IT" method="pen" text="stomaco a' cani, non" type="straight"/>
+    		<underline language="IT" method="pen" text="giaciuto con una femina da" type="straight"/>
+    		<underline language="IT" method="pen" text="chiamare segretamente" type="straight"/>
+    		<underline language="IT" method="pen" text="Dante fusse prode caualiere, &amp;" type="straight"/>
+    		<underline language="IT" method="pen" text="miglia egli haueua" type="straight"/>
+    		<underline language="IT" method="pen" text="assai dapoco &amp; debile huomo" type="straight"/>
+    		<underline language="IT" method="pen" text="assai buona bestia sotto" type="straight"/>
+    		<underline language="IT" method="pen" text="è caualcato più d'un miglio" type="straight"/>
+    		<underline language="IT" method="pen" text="Dante non era uecchio" type="straight"/>
+    		<underline language="IT" method="pen" text="era assai ben giouane" type="straight"/>
+    		<underline language="IT" method="pen" text="tu lo motteggi," type="straight"/>
+    		<underline language="IT" method="pen" text="facci arrossire" type="straight"/>
+    		<underline language="IT" method="pen" text="Dante" type="straight"/>
+    		<underline language="IT" method="pen" text="buona sera, M. Asso" type="straight"/>
+    		<underline language="IT" method="pen" text="incontanente rispose" type="straight"/>
+    		<underline language="IT" method="pen" text="ancho tratto sei" type="straight"/>
+    		<underline language="IT" method="pen" text="tauoliere non mi piacque" type="straight"/>
+    		<underline language="IT" method="pen" text="ingegno rarissimo" type="straight"/>
+    		<underline language="IT" method="pen" text="sentito gridare" type="straight"/>
+    		<underline language="IT" method="pen" text="insieme con la moglie," type="straight"/>
+    		<underline language="IT" method="pen" text="gran cosa, che" type="straight"/>
+    		<underline language="IT" method="pen" text="professione di patiente" type="straight"/>
+    		<underline language="IT" method="pen" text="rispondere a moglieta" type="straight"/>
+    		
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	        <symbol name="SS" place="head"/>
+	    	<symbol name="SS" place="right_margin"/>
+    		<symbol name="SS" place="intext"/>
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<mark method="pen" name="quotation_mark" place="head"/>
+	    	
+	    	<!-- Right margin -->
+	    	<mark method="pen" name="plus_sign" place="right_margin"/> <!-- cani, non -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- do -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- sot -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- daca -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- dappres -->
+    		<mark method="pen" name="bracket" place="right_margin"/> <!-- tu ... farlo -->
+	    	
+	    	<!-- Left margin --> 
+	    	<mark method="pen" name="plus_sign" place="left_margin"/> <!-- le medesime -->
+    		<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- mandata -->
+    		<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- to, non e' -->
+    		<mark method="pen" name="plus_sign" place="left_margin"/> <!-- so, lo saluto' -->
+    		<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- che tratto -->
+    		<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- che fai -->
+    		
+    		<!-- Intext --> <!--JG: Plus sign above nuoua in the first sentence-->
+	    	<mark method="pen" name="dot" place="intext"/> <!-- pronti, & -->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="medesime"/> 
+    		<mark method="pen" name="dot" place="intext"/> <!-- da partito, -->
+    		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- Chalk mark in first paragraph -->
+    		<mark method="pen" name="comma" place="intext"/> <!-- chio, & la donna -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- Signore, la -->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="M. Asso"/>
+    		<mark method="pen" name="dot" place="intext"/> <!-- Motto, & -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!--  tratto sei -->
+    		<mark method="pen" name="quotation_mark" place="intext"/> <!-- tauoliere -->
+    		<mark method="pen" name="dot" place="intext"/> <!--  moglie, & -->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="patiente"/>
+    		
+    </annotation>
+</transcription>

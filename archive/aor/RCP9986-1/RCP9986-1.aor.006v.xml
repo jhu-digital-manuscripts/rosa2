@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.006v.tif" pagination="[7v]" reader="John Dee"/>  
+    <annotation>
+        
+        <marginalia anchor_text="fortuna" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>fortuna.</marginalia_text>
+                </position>
+            </language>
+            <translation>Fortune.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Qua merui culpa fieri tibi vilis Achille?" type="straight"/>
+        <underline language="LA" method="pen" text="Quò leuis à nobis tam cito fugit amor?" type="straight"/>
+        <underline language="LA" method="pen" text="nubiferis" type="straight"/>
+        <underline language="LA" method="pen" text="Sanguinis, atq[ue] animi pectus inane fuit" type="straight"/>
+        <underline language="LA" method="pen" text="classi sarcina magna tuae" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        
+        <errata amendedtext="[deleted]" copytext="phthijs" language="LA"/>
+       
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.316v.tif" pagination="612" reader="John Dee" signature="[qqq.ii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="nutum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>nutu[m] sequi.</marginalia_text>
+                </position>
+            </language>
+            <translation>To follow a command.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="extremum vitae spiritum ediderim" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Que petebat Anto.</marginalia_text>
+                    <person name="Mark Antony"/>
+                </position>
+            </language>
+            <translation>What did he ask from Mark Antony.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="refixistis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>refigere</marginalia_text>
+                </position>
+            </language>
+            <translation>To unfasten.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="extremum vitae spiritum ediderim" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>à maiori.</marginalia_text>
+                </position>
+            </language>
+            <translation>By the great.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="eadem causa erant, &amp; propter multorum annorum iniurias alienati à Senatu putaba[n]tur" type="straight"/>
+        <underline language="LA" method="pen" text="quae enim est conditio pacis, in qua ei, cu[m] quo pace[m] facias, nihil co[n]cedi potest" type="straight"/>
+        <underline language="LA" method="pen" text="Quòd si ea quae decreuimus obruere volumus, num etiam memoria[m] rerum delere possumus" type="straight"/>
+        <underline language="LA" method="pen" text="nónne oppressam Rempub[licam] putes, si tot, tam impii ciues, ta[m] audaces" type="straight"/>
+        
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+        <drawing anchor_text="Quòd si ea quae decreuimus obruere volumus, num etiam memoria[m] rerum delere possumus" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

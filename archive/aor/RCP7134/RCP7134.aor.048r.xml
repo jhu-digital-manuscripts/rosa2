@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.048r.tif" pagination="42" reader="John Dee" signature="L ij"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary" id="RCP7134:101:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>infra fo 276.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:571:m0001" text="276"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>[See] below, folio 276.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="iudicauerit ex genitura tantum, non secus ac sortilegus ex interrogatione pronunciabit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Contra co[mmun]em astrologoru[m] praxim q[u]i statim, inspecta genitura, de reb[us] omnib[us] judiciu[m] ferre no[n] dubitabunt</marginalia_text>
+                </position>
+            </language>
+            <translation>Against the common practice of the astrologers [who] at once, with the genitures inspected, do not hesitate to take up the judgement about all things. </translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Ob haec igitur animi &amp; corporis ornamenta, exigua quidem apud homines, egregia eutem &amp; maxima â conditore facta sunt, &amp; potentissimis causis subiacent" type="straight"/>
+        <underline language="LA" method="pen" text="ex genitura tantum, non secus ac" type="straight"/>
+        <underline language="LA" method="pen" text="si uero de genitura, animi &amp; corporis" type="straight"/>
+        <underline language="LA" method="pen" text="reuolutionibus fortuna[m] &amp; gloriam, hic" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

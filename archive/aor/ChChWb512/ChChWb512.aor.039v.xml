@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.039v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="p[ro]uincialium insularu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Insula[e] provinciales.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Provincial islands.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Demetiae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nota fines Demetia[e] eo te[m]pore
+                    </marginalia_text>
+                    <location name="Demetia"/>
+                </position>
+            </language>
+            <translation>Note the borders of Demetia at that time.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="succendit regem vt ipsam" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]finio Demetiae" type="straight"/>
+        <underline language="LA" method="pen" text="Aruiragu[m] gubernaculum Demetiaci ducatus" type="straight"/>
+        <underline language="LA" method="pen" text="p[ro]uincialium insularu[m]" type="double"/>
+        <underline language="LA" method="pen" text="rebellat Aruiragus" type="straight"/>
+        <underline language="LA" method="pen" text="coercere vt longe positis regibus timori esset" type="straight"/>
+        <underline language="LA" method="pen" text="Claudio vt Aruiragum vel pacificaret vel Roman[a]e subiectioni" type="straight"/>
+        
+    </annotation>
+</transcription>

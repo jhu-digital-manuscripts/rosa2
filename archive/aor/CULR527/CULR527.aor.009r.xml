@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.009r.tif" pagination="9" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Intellectus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Intellectus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Comprehension.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="scie[n]tia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        scie[n]tia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Knowledge.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sapie[n]tia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        sapientia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Wisdom.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="prudentia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Prude[n]tia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Foresight.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ars" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ars
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Skill.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Et sic ha[e], artificium scilicet, sensus, &amp; experie[n]tia, ad perfectionem deseruiuent sapientia[e]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Artificiu[m]
+                        Sensus
+                        exp[er]ie[n]tia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Skillful
+                Sense
+                Experience.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in sapientia, minore[m] parte[m] habere " hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mathematicas minore[m] p[ar]te[m] sapientia[e] in se habere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Mathematics has a smaller part of wisdom in it.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="principiorum minus qu&amp;m alia[e] in se contineant" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mathematicas min[us] principior[um] in se habere, [quod deleted] alijs scientijs orbe 
+                        <!-- FSF: to be checked --> <!--JG: Not entirely sure about 'orbe'. A genitive would make sense there, but it doesn't seem to be orbis either. Perhaps you should try to translate it and see what makes sense-->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                There are fewer principles in Mathematics than in other sciences in the world. <!-- FSF: this is a possible translation with orbe; it would work -->
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quia intellectus est habitus principioru[m] primorum demonstrationis" type="straight"/>
+        <underline language="LA" method="pen" text="qua[e] ratiocinatiua de contingentibus à nobis operabilibus dicitur" type="straight"/>
+        <underline language="LA" method="pen" text="artificium" type="straight"/>
+        <underline language="LA" method="pen" text="sensus" type="straight"/>
+        <underline language="LA" method="pen" text="experie[n]tia" type="straight"/>
+        <underline language="LA" method="pen" text="Illud quod est magis calidu[m], est magis" type="straight"/>
+        <underline language="LA" method="pen" text="id est in sapie[n]tia" type="straight"/>
+        <underline language="LA" method="pen" text="minore[m] parte[m] habere, quàm omnes alia[e]" type="straight"/>
+        <underline language="LA" method="pen" text="quia principioru[m] minus quàm alia[e]" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="Mathematicas min[us] principior[um] in se habere, [quod deleted] alijs scientijs orbe"/>
+        
+        <mark method="pen" name="plus_sign" place="tail"/>
+        
+        
+    </annotation>
+</transcription>

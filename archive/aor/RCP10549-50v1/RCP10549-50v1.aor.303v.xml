@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.303v.tif" pagination="586" reader="John Dee" signature="[ooo.vi.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="P. Apuleius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>P Apuleius</marginalia_text> <!-- FSF: https://books.google.co.uk/books?id=879r910iiE0C&pg=PA75&lpg=PA75&dq=publius+Apuleius&source=bl&ots=BRPJ6-3Wk-&sig=cYpj28m8VvAeKqVJwDPea2rpdsc&hl=en&sa=X&ved=0ahUKEwiTm_Ks9YzbAhWPe8AKHX55AZQQ6AEIUTAF#v=onepage&q=publius%20Apuleius&f=false -->
+                </position>
+            </language>
+            <translation>Publius Apuleius.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="denunciationi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>denu[n]ciatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Denunciation.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="vinolentia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vinolentia</marginalia_text>
+                </position>
+            </language>
+            <translation>Intoxication.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="flume[n] Rubiconem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Rubico flu.</marginalia_text>
+                    <location name="Rubicon"/>
+                </position>
+            </language>
+            <translation>In the river Rubicon.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="quo omnes acrius, grauiúsque incumberent" type="straight"/>
+        <underline language="LA" method="pen" text="testicor, denu[n]cio, antè praedico" type="straight"/>
+        <underline language="LA" method="pen" text="qui finis est Galliae" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">11.12</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">11.10</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+        <drawing anchor_text="qui finis est Galliae" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

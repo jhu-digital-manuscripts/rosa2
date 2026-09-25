@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.062r.tif" reader="Harvey" signature="[Gvii[r]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dauids, worthyes.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Seruius Tullius" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A braue fellow, &amp; A noble spur.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>[the] same.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="campe, that" type="straight"/>
+        <underline language="EN" method="pen" text="the water was in" type="straight"/>
+        <underline language="EN" method="pen" text="theyr ennemys, with" type="straight"/>
+        <underline language="EN" method="pen" text="his fynger" type="straight"/>
+        <underline language="EN" method="pen" text="Yonder you must fetche" type="straight"/>
+        <underline language="EN" method="pen" text="incitation, he so moued" type="straight"/>
+        <underline language="EN" method="pen" text="order the battayle by constancy" type="straight"/>
+        <underline language="EN" method="pen" text="Seruius Tullius" type="straight"/>
+        <underline language="EN" method="pen" text="fought nothinge" type="straight"/>
+        <underline language="EN" method="pen" text="toke the standarde, and violently" type="straight"/>
+        <underline language="EN" method="pen" text="flange it among his ennemies" type="straight"/>
+        <underline language="EN" method="pen" text="ardently foughte to" type="straight"/>
+        <underline language="EN" method="pen" text="standarde, that they" type="straight"/>
+        <underline language="EN" method="pen" text="began to recule" type="straight"/>
+        <underline language="EN" method="pen" text="plucked the baner from hym that bare it" type="straight"/>
+        <underline language="EN" method="pen" text="amonge the horsemenne of" type="straight"/>
+        
+        <symbol language="EN" name="SS" place="intext" text="Howe to order the battayle by constancy."/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="Yonder you must fetche"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="constancy"/>
+        <mark method="pen" name="dot" place="intext"/> <!--freshely, toke-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="toke the standarde, and violently"/>
+        <mark method="pen" name="dot" place="intext"/> <!--ennemies, the-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="plucked the baner from hym that bare it"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note rend="IDENTIFICATION">
+          <p>Paris, Bibliothèque nationale de France, fr. 801</p>
+        </note>
+        <note rend="CONTENTS">
+          <p><hi rend="italics">Roman de la Rose</hi> (ff. 1r-128v)</p>
+        </note>
+        <note rend="MATERIAL">
+          <p>Parchment</p>
+        </note>
+        <note rend="ORIGIN">
+          <p>France</p>
+        </note>
+        <note rend="DATE">
+          <p>15th century</p>
+        </note>
+        <note rend="SCRIPT">
+          <p>Gothic, written in 2 columns of 40-50 lines, 1 scribe</p>
+        </note>
+        <note rend="ARTISTS">
+          <p>1 artist</p>
+        </note>
+        <note rend="DECORATION">
+          <p>31 single-column panel miniatures in brown ink and colors with red/blue or blue
+                  frames (ff. 1r, 1v, 2r (x2), 2v (x2), 3r, 3v (x2), 4v, 5r, 7r, 8r, 8v (x3), 9r,
+                  11v (x2), 12r, 13r, 17r (x2), 17v, 18r, 19r (x2), 22v (x2), 23r, 23v). The
+                  scribe's instructions for the artist are beside several miniatures. Blue and red
+                  pen initials throughout. </p>
+        </note>
+        <note rend="DIMENSIONS">
+          <p>350 x 248 mm (this measurement is from Langlois)</p>
+        </note>
+        <note rend="FOLIATION">
+          <p>ff. vi + 128 + iv</p>
+        </note>
+        <note rend="BINDING">
+          <p>French, early 19th century; brown calf marbled binding with gilt decorative border
+                  and arms of Napoleon I stamped in the centre of upper and lower covers, title of
+                  the book and initials of Napoleon in gilt on spine, marbled endpapers.</p>
+        </note>
+        <note rend="PROVENANCE">
+          <p> Martel family arms painted three times (ff. <locus>1r</locus>,
+                  <locus>21r</locus>, <locus>65r</locus>); in the royal library at Fontainebleau
+                  (ms. 630), 16th century; 18th century stamp of Bibliotheca Regiae (royal library),
+                  where it was ms. 7196 (ff. <locus>1r</locus>, <locus>128v</locus>)</p>
+        </note>
+        <note rend="NOTES">
+          <p>Fragments of a 12th-century liturgical book serve as flyleaves
+                     (<locus>frontmatter.flyleaf.05r</locus> and
+                  <locus>endmatter.flyleaf.01r</locus>). On <locus>frontmatter.flyleaf.06v</locus> a
+                  dialogue between Macquet or Marquet and a sleeping character was added in the late
+                  15th century.</p>
+        </note>
+        <note rend="SELECT BIBLIOGRAPHY">
+          <p>1. Paulin Paris, <hi rend="italics">Les manuscrits françois de la Bibliothèque du
+                     roi</hi> (Paris: Techener, 1836-1848), IV, pp. 232-234</p>
+          <p>2. Langlois, <hi rend="italics">Les manuscrits</hi>, pp. 8-9 </p>
+        </note>
+        <note rend="N.B.">
+          <p>This description has been compiled using the site's images and various published
+                  sources. If you have corrections or additional information on the manuscript,
+                  please do contact us.</p>
+        </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscript</note>
+          <note type="commonName">Français 801</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="128" unit="folios">128</measure>
+            <dimensions>
+              <height unit="mm">350</height>
+              <width unit="mm">248</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">31</note>
+          <note type="material">parchment</note>
+          <pubPlace>France</pubPlace>
+          <date notAfter="1500" notBefore="1400">15th century</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Paris</settlement>
+            <repository>Bibliothèque nationale de France</repository>
+            <idno>fr. 801</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="128v">1r-128v</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">128</note>
+              <note type="illustrations">31</note>
+              <note type="linesPerColumn">43</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

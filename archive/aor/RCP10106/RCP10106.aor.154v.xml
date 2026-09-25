@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.154v.tif" pagination="308" reader="John Dee" signature="[u 2[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="infinita[e] litium firmae fuerint" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Infinita[e] litiu[m] forma[e] sunt.</marginalia_text>
+                </position>
+            </language>
+            <translation>There has always been an infinite variety of lawsuits.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Diuisio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Diuisio</marginalia_text>
+                </position>
+            </language>
+            <translation>Division.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Partitio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Partitio</marginalia_text>
+                </position>
+            </language>
+            <translation>Partition.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Dispositio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dispositio</marginalia_text>
+                </position>
+            </language>
+            <translation>Disposition.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Demothenes quoq[ue], atq[ue] Aeschines" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Demosthenes &amp; A[E]schines</marginalia_text>
+                    <person name="Demosthenes"/>
+                    <person name="Aeschines"/>
+                </position>
+            </language>
+            <translation>Demosthenes and Aeschines.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in accusatione mutua" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In accuasatione mutua</marginalia_text>
+                </position>
+            </language>
+            <translation>Of mutual accusation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Qui[n]tilianus sua[m] promit disponendi r[ati]o[n]em</marginalia_text>
+                    <person name="Quintilian"/>
+                </position>
+            </language>
+            <translation>Quintilian's promised to lay out his reason.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="θέματα" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>θέματα</marginalia_text>
+                </position>
+            </language>
+            <translation>Themes proposed for discussion.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Aliud enim alio docere prius expedit, alioqui semper petitoris arbitrio diceretur" type="straight"/>
+        
+        <numeral place="left_margin">.1.</numeral>
+        
+    </annotation>
+</transcription>

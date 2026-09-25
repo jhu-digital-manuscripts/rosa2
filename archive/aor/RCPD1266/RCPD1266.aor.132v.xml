@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.132v.tif" pagination="250" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Melita" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Melità.</marginalia_text>
+                    <location name="Malta"/>
+                </position>
+            </language>
+            <translation>Malta.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Syrtis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Syrtis.</marginalia_text>
+                    <location name="Syrtis"/>
+                </position>
+            </language>
+            <translation>Syrtis.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Geographorum" type="straight"/>
+        <underline language="LA" method="pen" text="codicibus de Melita" type="straight"/>
+        <underline language="LA" method="pen" text="ergo Melita insula, in quam cum reliquis" type="straight"/>
+        <underline language="LA" method="pen" text="vehebantur eadem naui" type="straight"/>
+        <underline language="LA" method="pen" text="fuit eiectus Paulus, in mari Adriatico. in" type="straight"/>
+        <underline language="LA" method="pen" text="Melitam" type="straight"/>
+        <underline language="LA" method="pen" text="Meladam" type="straight"/>
+        <underline language="LA" method="pen" text="hodie Maltham" type="straight"/>
+        <underline language="LA" method="pen" text="valeret vox Syrtis" type="straight"/>
+        <underline language="LA" method="pen" text="quibus Syrtium" type="straight"/>
+        <underline language="LA" method="pen" text="in mari Adriatico, quod longissimè abest ab Africo" type="straight"/>
+        <underline language="LA" method="pen" text="significare loca vadosa" type="straight"/>
+        <underline language="LA" method="pen" text="est, traho" type="straight"/>
+        
+    </annotation>
+</transcription>

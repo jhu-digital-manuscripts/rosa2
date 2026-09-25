@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.297r.tif" pagination="145" reader="John Dee" signature="Nnn"/>
+    <annotation>
+        
+        <marginalia anchor_text="apud Tharenta[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Tarenta.
+                    </marginalia_text>
+                    <location name="Tarrant Keyneston"/>
+                </position>
+            </language>
+            <translation>
+                Tarrant Keyneston.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="apud Tharenta[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Circa illa tempora Comes Cestri[a]e Ioha[n]nes, cognomento Scoutus, potionatus, vt dicitur, obijt" type="straight"/>
+        
+        <errata amendedtext="quondam" copytext="quosdam" language="LA"/>
+        
+    </annotation>
+</transcription>

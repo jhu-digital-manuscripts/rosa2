@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.039r.tif" pagination="61" reader="John Dee" signature="f"/>
+    <annotation>
+        
+        <marginalia anchor_text="locus fortunae partiliter" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Pars fortuna[e].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A part of fortune.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pollincotres, aut funerarios" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Pollinctores, curratores funera et vnctor cadauerum sunt.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                There are undertaker, supervisors of a funeral and anointer of corpse.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Et si in nocturna genitura ☉ &amp; ♄, in septimo loco co[n]stitutis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vix p[otes]t ☉ in nocturna genitura in hoc loco esse
+                    </marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                </position>
+            </language>
+            <translation>
+                The sun can hardly be in this place in the nocturnal constellation.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="archigallos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Archigalli
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Chief priest.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in sexto loco" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Sexti loci malitia vt frangi p[otes]t, docuit supra
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Above it taught how the badness of the sixth place can be removed.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aut cornicularii, aut co[m]mentarienses" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        cornicularij commentarie[n]ses
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Assistants, officials.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in duodecimo loco" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        In duodecimo loco.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                In twelfth place.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quid malorum decretu[m] fuerit, mitigatur" type="straight"/>
+        <underline language="LA" method="pen" text="naturam maleuolae stellae, qu[a]e cum ipso fuerit collocata, indicit uitia" type="straight"/>
+        <underline language="LA" method="pen" text="fuerit in domo" type="straight"/>
+        <underline language="LA" method="pen" text="uel altitudine" type="straight"/>
+        <underline language="LA" method="pen" text="domo ♃" type="straight"/>
+        <underline language="LA" method="pen" text="Facient etiam ut ipsi sibi manibus suis inferant mortem, aut captiuos facient hos eosdem, aut exules" type="straight"/>
+        <underline language="LA" method="pen" text="uelint difficilium literarum noticiam habere" type="straight"/>
+        <underline language="LA" method="pen" text="pollinctores" type="straight"/>
+        <underline language="LA" method="pen" text="nocturna genitura ☉ &amp; ♄, in septimo loco" type="straight"/>
+        <underline language="LA" method="pen" text="in quibus se duplex natura coniungat" type="straight"/>
+        <underline language="LA" method="pen" text="archigallos faciet, &amp; qui uirilia propriis sibi" type="straight"/>
+        <underline language="LA" method="pen" text="MC, fuerit inuenta, iis omnibus in sexto" type="straight"/>
+        <underline language="LA" method="pen" text="uel aquaru[m] distributores. Quod" type="straight"/>
+        <underline language="LA" method="pen" text="aut cornicularii" type="straight"/>
+        <underline language="LA" method="pen" text="aut co[m]mentarienses, quibus" type="straight"/>
+        <underline language="LA" method="pen" text="nihil quidem eorum facient, quae" type="straight"/>
+        <underline language="LA" method="pen" text="Sed hae omnes" type="straight"/>
+        
+        <symbol name="Moon" place="right_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+   
+    </annotation>
+</transcription>

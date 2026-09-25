@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.029r.tif" pagination="41" reader="Harvey"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Qua[e] potissimùm notauit Quinctilianus, ea semper curiosè animaduerte. Nec non ea, qua[e] Pontanus accuratè obseruauit, 
+                        aut Sigonius. Certè Liuius usquequaq[ue] elegans, prudens, pragmaticus, et momentosus. Compara Gra[e]corum solertissimos: 
+                        vix aliquid tam sagacis ingenij, aut tam arcani iudicij in singulis vbiq[ue] rebus enucleandis.
+                    </marginalia_text>
+                    <person name="Quintilian"/>
+                    <person name="Giovanni Pontano"/>
+                    <person name="Carlo Sigonio"/>
+                    <person name="Livy"/>
+                </position>
+            </language>
+            <translation>Always pay close attention to what Quintilian chiefly observed. And also to what Pontanus carefully noted, or Sigonius. 
+                Surely Livy is elegant at every place, sagacious, pragmatic and quick. Compare [him with] the most experts ones of the Greeks: 
+                there is hardly anything of such perceptive intelligence, or such intimate judgement in explaining specific issues anywhere.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="postulare minaciter magis, quàm suppliciter" type="straight"/>
+        <underline language="LA" method="pen" text="Appius uehementis ingenij uir" type="straight"/>
+        <underline language="LA" method="pen" text="uno aut altero arrepto, quieturos alios" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]citatos animos flecti, quàm frangi putabat cùm tutius, tu[m] facilius esse" type="straight"/>
+        <underline language="LA" method="pen" text="quo edixit, ne quis ciuem Romanu[m] uinctu[m] aut clausum teneret, quo minus ei nominis edendi apud consules potestas fieret: ne quis militis, donec in castris esst, bona possideret" type="straight"/>
+        <underline language="LA" method="pen" text="liberos, nepotesúe eius moraretur" type="straight"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="quo edixit, ne quis ciuem Romanu[m] uinctu[m] aut clausum teneret, quo minus ei nominis edendi apud consules potestas fieret: ne quis militis, donec in castris esst, bona possideret"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--ob-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--ho-->
+        
+    </annotation>
+</transcription>

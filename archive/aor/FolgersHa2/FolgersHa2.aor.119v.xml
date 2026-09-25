@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.119v.tif" pagination="62" reader="Harvey" signature="[D7v]"/>	<!-- ABO 124left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Quid potest plus quàm alij? Mundi qua[e]stio
+						et intimus prudentissimoru[m] hominu[m] respectus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				What can one do more than others? The question of the world and innermost
+				consideration of the most prudent men.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						) Quorsùm tot artes, arcana, stratagemata?
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				To what purpose all of the arts, secrets, and stratagems?
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Summa summarum est, plus actu posse, quàm alij.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The summa of summas is to be able to do more in action than others.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Vt Paulus: sic Apollonius: sic Maximus erat duo,
+						Orator, et Thaumaturgus.
+						Erant omnes vnus, id est, Mercurius.
+					</marginalia_text>
+					<person name="St. Paul"/>
+					<person name="Apollonius of Tyana"/>
+					<person name="Valerius Maximus"/>
+					<person name="Mercury"/>
+				</position>
+			</language>
+			<translation>
+				Just as St. Paul, so too Apollonius of Tyana; so too Valerius Maximus,
+				who was two, both orator and thaumaturge.
+				They were all one, that is, Mercury.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Mercurij pra[e]cipua mnemosyna; ala[e] virga
+						angui potens; [doli], furta; diuina Eloquentia.
+					</marginalia_text>
+					<person name="Mercury"/>
+				</position>
+			</language>
+			<translation>
+				The particular symbols of Mercury: the mighty rod with the winged serpent,
+				trickery, theft; divine Eloquence.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Mihi textus: tibi glossa. Mihi operatio: tibi speculatio.
+						Non curo arguere, sed operari.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				For me, the text; for you, the gloss. For me the work, for you the speculation.
+				I do not care to argue, but to act.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Maximus vnus perplacuit Juliano: dictis oraculu[m]; factis
+					</marginalia_text>
+					<person name="Julian"/>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						Miraculu[m].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				One great man most pleased Julian; an oracle in words, a miracle in deeds.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="era buoni, per tirare l'acqua al suo molino" type="straight"/>
+		<underline language="IT" method="pen" text="l'huomo" type="straight"/>
+		<underline language="IT" method="pen" text="migliore" type="straight"/>
+		<underline language="IT" method="pen" text="peggiore di tutti" type="straight"/>
+		<underline language="IT" method="pen" text="Leone contra del Leone non" type="straight"/>
+		<underline language="IT" method="pen" text="Liopardo," type="straight"/>
+		<underline language="IT" method="pen" text="altri animali à se dissimili pugnare" type="straight"/>
+		<underline language="IT" method="pen" text="l'huomo (" type="straight"/>
+		<underline language="IT" method="pen" text="l'huomo" type="straight"/>
+		<underline language="IT" method="pen" text="viuere sicuro" type="straight"/>
+		<underline language="IT" method="pen" text="alla ragione" type="straight"/>
+		<underline language="IT" method="pen" text="migliore di" type="straight"/>
+		<underline language="IT" method="pen" text="non lo vbidisce, è il peggiore" type="straight"/>
+		<underline language="IT" method="pen" text="Proposte esorbitanti" type="straight"/>
+		<underline language="IT" method="pen" text="strauaganti" type="straight"/>
+		<underline language="IT" method="pen" text="vn bicchier cadendo" type="straight"/>
+		<underline language="IT" method="pen" text="volano i tordi" type="straight"/>
+		<underline language="IT" method="pen" text="non le zucche" type="straight"/>
+		
+		<symbol name="SS" place="left_margin"/>
+		
+		<symbol name="JC" place="intext"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Sola -->
+		
+		<mark method="chalk" name="vertical_bar" place="right_margin"/> <!-- Chalk line through first paragraph -->
+		<mark method="chalk" name="vertical_bar" place="right_margin"/> <!-- Chalk line through last paragraph -->
+		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- zucche? -->
+		
+    </annotation>
+</transcription>

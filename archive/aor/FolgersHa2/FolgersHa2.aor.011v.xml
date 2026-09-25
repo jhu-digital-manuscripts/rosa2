@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+	<page filename="FolgersHa2.011v.tif" pagination="342" reader="Harvey"/>	<!-- ABO  16left -->
+    	<annotation>
+    		
+            		<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+        				<position book_orientation="0" place="head">
+                    				<marginalia_text>
+                    					Haec etiam Penelope suam habet rationem: sed fragilem.
+                    				</marginalia_text>
+        					<person name="Penelope"/>
+        				</position>
+        			</language>
+        			<translation>
+        				Even Penepole has her own reasoning: albeit a frail one. <!--JG: I'm a bit puzzled by haec, how to translate this?--> <!-- CG: As a way to intensify Penelope perhaps? -->
+        			</translation>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="left_margin">
+    					<marginalia_text>
+    						Vita Eudromi iteru[m].
+    					</marginalia_text>
+    					<person name="Eudromus"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Again the life of Eudromus.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						. Ingenùe.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Nobly.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						( Adhuc citius. 
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				( More quickly to this point.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						bona fide dictum: sed mala fide factum. 
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Said in good faith: but done in bad faith.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						( Passionis ratio, non rationis. ) 
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				( The reasoning of passion, not of reason. )
+    			</translation>
+    		</marginalia>
+    	
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						Omnes vitae, 
+    						tria sunt verba, scientia, virtus, et hinc foelicitas: aut
+    						his contraria. In genere, spetie, indiuiduo.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				All lives are in three words, namely: knowledge, virtue, and happiness: 
+    				or the contrary of these. In genus, in species, and in the individual.
+    			</translation>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="90" place="left_margin">
+    					<marginalia_text>
+    						Ars, virtus, praxis, merus aether, spiritus, ignis,
+    						vitarum effigies vnica, vita mea est. }
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Skill, virtue, action, pure either, spirit, fire,
+    				the sole image of lives: this is my life. }
+    			</translation>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="90" place="right_margin">
+    					<marginalia_text>
+    						Plus valet vnus Optimus, vel auctor, vel actor, quàm centum mediocres.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				A single Great man, either as author or actor,  is worth more than one hundred mediocre ones.
+    			</translation>
+    		</marginalia>
+    		
+	    	<!-- Underlines --> 
+	        
+    		<underline language="IT" method="pen" text="questo essere possibile" type="straight"/>
+    		<underline language="IT" method="pen" text="esempio anchor uiuo esser" type="straight"/>
+    		<underline language="IT" method="pen" text="per uent'anni almeno" type="straight"/>
+    		<underline language="IT" method="pen" text="innamorato d'una sua cittadina" type="straight"/>
+    		<underline language="IT" method="pen" text="quei due, che haueua" type="straight"/> 
+    		<underline language="IT" method="pen" text="sono poco considerati" type="straight"/> 
+    		<underline language="IT" method="pen" text="ella sia d'essa" type="straight"/>
+    		<underline language="IT" method="pen" text="esser certa" type="straight"/>
+    		<underline language="IT" method="pen" text="diedero a ridere" type="straight"/>
+    		<underline language="IT" method="pen" text="detto la bugia" type="straight"/>
+    		<underline language="IT" method="pen" text="come colta ne' suoi propri lacci" type="straight"/>
+    		<underline language="IT" method="pen" text="ne sapesse uscire" type="straight"/>
+    		<underline language="IT" method="pen" text="ci uccellò tutti" type="straight"/>
+    		<underline language="IT" method="pen" text="non era dessa" type="straight"/>
+    		<underline language="IT" method="pen" text="ella era pur lei" type="straight"/>
+    		<underline language="IT" method="pen" text="sono cosi sciocca; che" type="straight"/>
+    		<underline language="IT" method="pen" text="lasciassi giamai" type="straight"/>
+    		<underline language="IT" method="pen" text="innamorato" type="straight"/>
+    		<underline language="IT" method="pen" text="tormentarsi" type="straight"/>
+    		<underline language="IT" method="pen" text="con mio si gran danno" type="straight"/>
+    		<underline language="IT" method="pen" text="astretti crederle l'una &amp;" type="straight"/>
+    		<underline language="IT" method="pen" text="altra cosa" type="straight"/>
+    		<underline language="IT" method="pen" text="singolar dolcezza" type="straight"/>
+    		<underline language="IT" method="pen" text="del sangue Bolognese" type="straight"/>
+    		<underline language="IT" method="pen" text="molto uecchio" type="straight"/>
+    		<underline language="IT" method="pen" text="in letto con la moglie" type="straight"/>
+	       
+	       
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	        
+	    	<symbol name="Sun" place="left_margin"/>
+    		<symbol name="SS" place="intext"/>
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- cit -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- gentildon -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- opi -->
+    		<mark method="pen" name="bracket" place="right_margin"/> <!-- la- ... cosa. -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- dolcez -->
+	    	
+	    	<!-- Left margin -->
+    		<mark method="pen" name="bracket" place="left_margin"/> <!-- che ... tutta -->
+    		<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- sciassi  -->
+    		
+		    
+	    	<!-- Intext -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- possibile, &  -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- amanti, o -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- sapesse uscire, -->    	
+    		<mark method="pen" name="quotation_mark" place="intext"/> <!-- uccello -->
+    		<mark method="pen" name="quotation_mark" place="intext"/> <!-- cosi -->
+    		<mark method="pen" name="comma" place="intext"/> <!-- innamorato tormentarsi -->
+    		
+
+    </annotation>
+</transcription>

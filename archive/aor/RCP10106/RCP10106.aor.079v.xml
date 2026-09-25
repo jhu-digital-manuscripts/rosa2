@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.079v.tif" pagination="158" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Inspicienda igitur materia est, quo praecipimus ordine, scribenda quo dicimus." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hanc clausulam notare debem[us].</marginalia_text>
+                </position>
+            </language>
+            <translation>We have to take note of this little conclusion.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="unius rei controuersoa" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vna co[n]trouersia</marginalia_text>
+                </position>
+            </language>
+            <translation>One controversy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Plures" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Plures.</marginalia_text>
+                </position>
+            </language>
+            <translation>Many.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="concitatum an remißum, aduersum" type="straight"/>
+        <underline language="LA" method="pen" text="est, quo praecipimus ordine, scribenda quo dicimus." type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

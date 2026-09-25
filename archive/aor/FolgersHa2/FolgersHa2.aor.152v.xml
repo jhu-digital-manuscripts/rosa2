@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.152v.tif" pagination="128" reader="Harvey" signature="[H8v]"/>	<!-- ABO 157left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Non viuitur discursibus, sed artibus.
+						Vulgari studiorum modo, non itur ad
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						scientiam, sed erratur ad futilitatem.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>One does not live for discourses but for arts. In the common approach to studies, one does not go towards knowledge, but errs towards futility.</translation> 
+		</marginalia>
+
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Studere, vt
+						vulgares isti scholastici; non procedere,
+						sed vagari est;
+						non proficere, sed confundere.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>To study, as those vulgar scholastics, is not to advance, but to wander; not to accomplish, but to bewilder.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						) Pilula[e], Sine quibus non.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Little pills, without which there is nothing.</translation> 
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Pla[e]riq[ue] docti terunt a[e]tatem, et operam perdunt in varijs eiusdem rei scriptoribus, commentarijs,
+						discursibus, infinitis libroru[m] nugis. Mihi non est opus discursibus: sed uel ipsis artibus,
+						philosophia, professionibus in quotidiam praxi: vel arcanis, stratagematis, technis
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						Oeconomicis in esse: vel saltem gnomis, apophthegmatis,
+						prouerbijs, epimythijs, epigrammatis,
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="tail">
+					<marginalia_text>
+						salibus,
+						qui verè sales.
+						In talibus sententiaru[m],
+						reru[m], operu[m] articulis,
+						nulla temporis
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						iactura: { Nulla liberalis
+						educatio, Sine Liberalium
+						artium institutione: quicq[ui]d
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						posteà profitendum, aut negociandum. Propriaru[m] omnium facultatum ille
+						communis apparatus. Et sine hoc generali instructu, qua[e]uis deficit specialis pro[fe]ssio? 					
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Many learned people wear out with age and ruin the work of the same matter in various authors, commentaries, discourses, and infinite trifles of books. For me, discourses are not useful: but either the arts
+			themselves, philosophy, and the professions in their daily praxis; or for secrets, stratagems, and economic artifices in their being: or at least sayings, aphorisms, proverbs, aftertales, epigrams, and witticisms which truely are witty.
+			In such points of opinions, matters, and works, there is no waste of time: there is no education of gentlemanliness without the institution of honorable arts, whatever is to be completed or carried out afterwards.
+			That common preparation of all proper skills. And without this general instruction, is any special profession left wanting?</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Il Sonno" type="straight"/>
+		<underline language="IT" method="pen" text="abbandonaua à poco à" type="straight"/>
+		<underline language="IT" method="pen" text="bene" type="straight"/>
+		<underline language="IT" method="pen" text="il sonno mi" type="straight"/>
+		<underline language="IT" method="pen" text="alla sorella" type="straight"/>
+		<underline language="IT" method="pen" text="il sonno" type="straight"/>
+		<underline language="IT" method="pen" text="fratello della Morte" type="straight"/>
+		<underline language="IT" method="pen" text="commertio humano, esser pieno di fraude" type="straight"/>
+		<underline language="IT" method="pen" text="cacciatori" type="straight"/>
+		<underline language="IT" method="pen" text="gli vccellatori" type="straight"/>
+		<underline language="IT" method="pen" text="tante reti &amp; lacci alle fiere, &amp; à gli vccelli" type="straight"/>
+		<underline language="IT" method="pen" text="malitiosi, à gli altri semplici" type="straight"/>
+		<underline language="IT" method="pen" text="tu muori" type="straight"/>
+		<underline language="IT" method="pen" text="fuggi il commercio" type="straight"/>
+		<underline language="IT" method="pen" text="Lorenzo" type="straight"/>
+		<underline language="IT" method="pen" text="tolse pace" type="straight"/>
+		<underline language="IT" method="pen" text="la speranza" type="straight"/>
+		<underline language="IT" method="pen" text="Questa fà sofferir i tristi" type="straight"/>
+		<underline language="IT" method="pen" text="discrettion de l'huom maluaggio, &amp; falso" type="straight"/>
+		<underline language="IT" method="pen" text="qualità de' beni" type="straight"/>
+		<underline language="IT" method="pen" text="vera felicità" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- re -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- muo -->
+		
+		<mark method="pen" name="dot" place="intext"/> <!-- sonno, onde -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="fratello della morte"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- vccelli, quante -->
+		<mark method="pen" name="dot" place="intext"/> <!-- ingannato, o -->
+		<mark method="pen" name="vertical_bar" place="intext"/> <!-- humano. Et -->
+
+    </annotation>
+</transcription>

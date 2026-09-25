@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.064v.tif" pagination="[64[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="das praesagium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Pra[e]sagium
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>A sense of foreboding.</translation>
+        </marginalia>
+
+        <marginalia anchor_text="den Magis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Magia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Magic.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="brennete[n] Sternen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Cometa[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Comets.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="gnugsam zeugs" type="straight"/>
+        <underline language="DE" method="pen" text="das" type="straight"/>
+        <underline language="LA" method="pen" text="praesagium" type="straight"/>
+        <underline language="DE" method="pen" text="das sie nit" type="straight"/>
+        <underline language="DE" method="pen" text="nach jrem pra[e]figurieren" type="double"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.017v.tif" pagination="[17[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Diffinitio enim data per forma[m], ut Paulus Venetus inquit, demo[n]strat no[n] in eo quòd est formalis, sed in eo q[uod] est materialis" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Definitio formalis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Formal definition.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Falsum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Wrong.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="principia" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Principia Mathematica
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Mathematical principles.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Principia co[mmun]ia tame[n] mathematice p[ro]pria
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Communal principles, nevertheless mathematically individual.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="inquit, demo[n]strat no[n] in eo quòd est formalis, sed in" type="straight"/>
+        <underline language="LA" method="pen" text="est materialis. Na[m]" type="straight"/>
+        <underline language="LA" method="pen" text="uerissimas &amp; uniuersales esse, per quas itur de notis ad ignota" type="straight"/>
+        <underline language="LA" method="pen" text="si notius fuerit posterius" type="straight"/>
+        <underline language="LA" method="pen" text="notius fuerit prius" type="straight"/> 
+        <underline language="LA" method="pen" text="causam &amp; esse" type="straight"/>
+        <underline language="LA" method="pen" text="Et quia in mathematicis prius est late[n]tius, nullus modus est modoru[m] demonstrationu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="illa. neque mathematicus ratione[m] dare potest nisi quia est, &amp; no[n] p[ro]pter" type="straight"/> 
+        <underline language="LA" method="pen" text="est, ut postea patebit" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]sideratio secundu[m] quòd sunt co[m]munia, pertinet ad Philosophia[m], quae co[n]siderat de" type="straight"/>
+        <underline language="LA" method="pen" text="ens. Habebit ergo mathematicus" type="straight"/>
+        <underline language="LA" method="pen" text="demo[n]strationu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="co[m]mune in omnibus qua[n]titatibus" type="straight"/>
+        <underline language="LA" method="pen" text="inaequale. Quae quide[m] principia co[n]siderationis mathematicae sunt" type="straight"/>
+
+        <mark method="pen" name="plus_sign" place="left_margin"/> 
+        <mark method="pen" name="comma" place="intext"/> <!-- principia co[n]siderationis -->
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

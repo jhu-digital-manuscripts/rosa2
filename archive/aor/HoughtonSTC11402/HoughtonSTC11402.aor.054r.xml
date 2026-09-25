@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.054r.tif" reader="Harvey" signature="[Fvii[r]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Fabius" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Fabius.</marginalia_text>
+                    <person name="Fabius Maximus"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="wether beinge excedynge colde" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Comes Purl. l.I. obs[eruat]. 77.</marginalia_text>
+                    <person name="Jacopo di Porcia"/>
+                    <book title="The preceptes of warre"/>
+                </position>
+            </language>
+            <translation>Jacopo di Porcia, book 1, observation 77.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Vis consilij expers, mole ruit sua.</marginalia_text>
+                    <X-ref book_title="Odes" language="LA" person="Horace" text="Vis consilij expers, mole ruit sua."/>
+                </position>
+            </language>
+            <translation>Brute force without wisdom collapses under its own weight.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="Fabius" type="straight"/>
+        <underline language="EN" method="pen" text="wayted nothynge but an occasyon" type="straight"/>
+        <underline language="EN" method="pen" text="Minutius beynge inflamed" type="straight"/>
+        <underline language="EN" method="pen" text="desyre to fyghte" type="straight"/>
+        <underline language="EN" method="pen" text="layde pryuily" type="straight"/>
+        <underline language="EN" method="pen" text="wayte, a" type="straight"/>
+        <underline language="EN" method="pen" text="certayn of fote men in the rocky and holowe wayes" type="straight"/>
+        <underline language="EN" method="pen" text="next hyll, &amp; so to" type="straight"/>
+        <underline language="EN" method="pen" text="Annibal had layd in wayte" type="straight"/>
+        <underline language="EN" method="pen" text="Fabius had" type="straight"/>
+        <underline language="EN" method="pen" text="Anniball" type="straight"/>
+        <underline language="EN" method="pen" text="excedynge colde" type="straight"/>
+        <underline language="EN" method="pen" text="to race out" type="straight"/>
+        <underline language="EN" method="pen" text="Sempronius pale" type="straight"/>
+        <underline language="EN" method="pen" text="suche fourdes" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="Annibal had layd in wayte"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--occasyon, Minutius-->
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+        
+    </annotation>
+</transcription>

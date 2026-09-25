@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.031v.tif" pagination="[31v]" reader="John Dee" signature="[Dvij[v]]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>The Portugal discoueries he meaneth of Bresilia for as yet the Iles about Hispaniola wer not yet discouered as this aneser asserets</marginalia_text>
+                    <location name="Brasilia"/>
+                    <location name="Hispaniola"/>
+                </position>
+            </language>
+        </marginalia>
+                
+        <marginalia anchor_text="1480. atq[ue]; insuper anno 8. decimaq[ue]" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A[nno] 1488.</marginalia_text>
+                </position>
+            </language>
+            <translation>The year 1488.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Portugal [Iles]</marginalia_text> <!--KS: Not sure about 'Iles'...-->
+                    <location name="Portugal"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" id="BL615d7:615_d_7_f031v:m0001" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Vide fol[io] 35.</marginalia_text>
+                    <internal_ref>
+                        <target ref="BL615d7:615_d_7_f035r:m0001" text="fol[io] 35"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See folio 35.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="fra le sue scritture io trouai" type="straight"/>
+        <underline language="LA" method="pen" text="etiam nuper sulcata carinis. Hispanis Zona illa, prius incognita genti" type="straight"/>
+        <underline language="LA" method="pen" text="Torrida" type="double"/>
+        <underline language="LA" method="pen" text="nunc est notissima" type="straight"/>
+        <underline language="LA" method="pen" text="istud, Londonijs" type="straight"/>
+        <underline language="LA" method="pen" text="D[omi]ni 1480. atq[ue] insuper anno 8. decimaq[ue] die cum tertia me[n]sis" type="straight"/>
+        <underline language="IT" method="pen" text="Colombus de terra rubra" type="straight"/>
+        <underline language="IT" method="pen" text="che, da lui il Mappamondo ve duto, &amp; ciò, che l' Ammiraglio gli offeriua" type="straight"/>
+        <underline id="BL615d7:615_d_7_f031v:u0001" language="IT" method="pen" text="allegro volto accettò la sua offerta" type="straight"/>
+        
+        <mark method="pen" name="scribble" place="tail"/>
+        
+        <physical_link>
+            <marginal_annotation idref="BL615d7:615_d_7_f031v:m0001"/>
+            <marginal_annotation idref="BL615d7:615_d_7_f031v:u0001"/>
+            
+            <relation from="BL615d7:615_d_7_f031v:m0001" to="BL615d7:615_d_7_f031v:u0001" type="directed"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

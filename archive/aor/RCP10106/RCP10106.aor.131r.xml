@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.131r.tif" pagination="261" reader="John Dee" signature="r 3"/> 
+    <annotation>
+        
+        <marginalia anchor_text="co[m]plexione[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Complexio</marginalia_text>
+                </position>
+            </language>
+            <translation>Conclusion.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Anima" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Anima.</marginalia_text>
+                </position>
+            </language>
+            <translation>Soul.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mors" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mors</marginalia_text>
+                </position>
+            </language>
+            <translation>Death.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mundus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mundus</marginalia_text>
+                </position>
+            </language>
+            <translation>The world.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="rationibus uarijs" type="straight"/>
+        <underline language="LA" method="pen" text="approbari" type="straight"/>
+        <underline language="LA" method="pen" text="quod ex omnibus partibus cogitur" type="straight"/>
+        <underline language="LA" method="pen" text="Sed haec est in causis &amp; quaestione longior, quàm in singulis argumentis: &amp; pleru[m]que summa co[m]plexione uel per              enumeratione[m], uel per breue[m] co[n]clusione[m] testantur, quid effecerint" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

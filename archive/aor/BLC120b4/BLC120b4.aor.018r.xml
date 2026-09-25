@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.018r.tif" pagination="18" reader="John Dee" signature="Dii"/> 
+    <annotation>
+        
+        <drawing book_orientation="0" method="pen" place="intext" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="intext" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="intext" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="intext" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="intext" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="tail" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="tail" type="florilegium"/>
+        
+        <calculation book_orientation="0" id="BLC120b4:c_120_b_4_(2)_f018r:c0001" internal_ref="BLC120b4:c_120_b_4_(2)_f018r:t0001" method="pen" place="intext" type="arithmetic">
+            18 + 14 = 32
+            14 + 17 = 31
+        </calculation>
+        
+        <calculation book_orientation="0" id="BLC120b4:c_120_b_4_(2)_f018r:c0002" internal_ref="BLC120b4:c_120_b_4_(2)_f018r:t0002" method="pen" place="intext" type="arithmetic">
+            18 + 14 + 9 = 41
+            14 + 17 = 31
+        </calculation>
+        
+        <calculation book_orientation="0" id="BLC120b4:c_120_b_4_(2)_f018r:c0003" internal_ref="BLC120b4:c_120_b_4_(2)_f018r:t0003" method="pen" place="intext" type="arithmetic">
+            13 + 19 + 14 = 46
+            7 + 1 + 18 = 26
+            13 + 1 + 19 + 14 = 47
+            7 + 18 = 25
+        </calculation>
+        
+        <calculation book_orientation="0" id="BLC120b4:c_120_b_4_(2)_f018r:c0004" internal_ref="BLC120b4:c_120_b_4_(2)_f018r:t0004" method="pen" place="intext" type="arithmetic">
+            19 + 14 = 33
+            7 + 18 = 25
+            13 + 1 =14
+        </calculation>
+        
+        <table id="BLC120b4:c_120_b_4_(2)_f018r:t0001" place="intext" type="standard_table">
+            <tr>
+                <td>☉</td>
+                <td>☾</td>
+                <td>[Hieroglyphic Monad]</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>14</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>17</td>
+                <td/>
+            </tr>
+            <tr>
+                <td>32</td>
+                <td>31</td>
+                <td/>
+            </tr>
+            <text hand="English_secretary" language="LA">
+                K: 12 [?]1 <!--JG: Some sort of symbol?]-->
+                K 21: [?]1: ½:
+            </text>
+        </table>
+        
+        <table id="BLC120b4:c_120_b_4_(2)_f018r:t0002" place="intext" type="standard_table">
+            <tr>
+                <td>☉</td>
+                <td>☾</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td/>
+            </tr>
+            <tr>
+                <td>41</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>32</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>☉</td>
+                <td>☾</td>
+                <td>[Hieroglyphic Monad]</td>
+                <td>☿</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>14</td>
+                <td>27</td>
+                <td>17</td>
+            </tr>
+            <text hand="English_secretary" language="LA">vel</text>
+            <text hand="English_secretary" language="LA">excessus, 10</text>
+            <text hand="English_secretary" language="LA">excessus, 8.</text>
+            <text hand="English_secretary" language="LA">proportio est 1 ¼</text>
+            <text hand="English_secretary" language="LA">vel</text>
+            <text hand="English_secretary" language="LA">K 12 K 23. [?] 1 ½</text>
+            <translation>Or; digression, 10; digression, 8; the proportion is 1 ¼; or. K 12 K 23. [?] 1 ½.</translation>
+        </table>
+        
+        <table id="BLC120b4:c_120_b_4_(2)_f018r:t0003" place="intext" type="standard_table">
+            <tr>
+                <td>☉</td>
+                <td>☾</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td/>
+            </tr>
+            <tr>
+                <td>46</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td/>
+            </tr>
+            <tr>
+                <td>47</td>
+                <td>25</td>
+            </tr>
+            <text hand="English_secretary" language="LA">excessus, 20</text>
+            <text hand="English_secretary" language="LA">vel</text>
+            <translation>Digression, 20. Or.</translation>
+        </table>
+        
+        <table place="tail" type="standard_table">
+            <tr>
+                <td>☉</td>
+                <td>☾</td>
+                <td>[Hieroglyphic Monad]</td>
+                <td>☿</td>
+                <td>☿</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>7</td>
+                <td>32</td>
+                <td>18</td>
+                <td>1</td>
+            </tr>
+            <text hand="English_secretary" language="LA">K. 16 [etc].</text>
+        </table>
+        
+        <table id="BLC120b4:c_120_b_4_(2)_f018r:t0004" place="tail" type="standard_table">
+            <tr>
+                <td>☉</td>
+                <td>☾</td>
+                <td>[Hieroglyphic Monad]</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>7</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>18</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td>25</td>
+                <td>14</td>
+            </tr>
+            <text hand="English_secretary" language="LA">sed verius</text>
+            <text hand="English_secretary" language="LA">vix K: 13 [?] 2 et ½</text>
+            <translation>But more truthful. Hardly K 13 [?] 2 and ½.</translation>
+        </table>
+        
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.052v.tif" pagination="104" reader="John Dee" signature="[g 4[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Annibal" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Annibal</marginalia_text> 
+                    <!-- FSF: I think there is an aspiration sign over the A like in Greek, see https://en.wikipedia.org/wiki/Greek_diacritics; I am not sure however if this is complicating things or overinterpretation -->
+                    <person name="Hannibal"/>
+                </position>
+            </language>
+            <translation>Hannibal.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Theopompus Lacedaemonius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Theopompus.</marginalia_text>
+                    <person name="Theopompus of Sparta"/>
+                </position>
+            </language>
+            <translation>Theopompus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cicero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cicero</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="uero, scit falsum esse, eoq[ue] se pro uero uti: no[n] ergo falsam" type="straight"/>
+        <underline language="LA" method="pen" text="ipse opione[m], sed fallit alium" type="straight"/>
+        <underline language="LA" method="pen" text="praestabit hunc semper orator, semper enim bene dicet" type="straight"/>
+        <underline language="LA" method="pen" text="Tendit quidem ad uictoria[m], qui dicit, sed cum bene dixit, estiamsi non uincat, id quod arte continetur, effecit" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">6</numeral>
+        <numeral place="left_margin">7</numeral>
+        <numeral place="left_margin">8</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.443r.tif" pagination="435" reader="John Dee" signature="Oooo ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="immediato domino" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Dominus Immediatus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The immediate lord.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="anno .Mccci." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        A[nno] 1301.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                In 1301.  
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        ratione
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Through reason.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="homagia &amp; fidelitatem nobis" type="straight"/>
+        <underline language="LA" method="pen" text="immediato domino" type="straight"/>
+        <underline language="LA" method="pen" text="Et cum iure" type="straight"/>
+        <underline language="LA" method="pen" text="quin insolentiam subditorum nostrorum rebellium, si quos inuenerimus, praeheminentia regia prout expedire viderimus reprimamus" type="straight"/>
+        <underline language="LA" method="pen" text="tàm possessionis quàm proprietatis" type="straight"/>
+        <underline language="LA" method="pen" text="fecimus vel cauerim[us]" type="double"/>
+        <underline language="LA" method="pen" text="sicuti nec possemus, per" type="grid"/>
+        <underline language="LA" method="pen" text="aliqualiter derogari" type="straight"/>
+        <underline language="LA" method="pen" text="animi motu[m] degnemini informare" type="straight"/>
+        <underline language="LA" method="pen" text="Kynardesey" type="straight"/>
+        <underline language="LA" method="pen" text=".Mccci." type="straight"/>
+        <underline language="LA" method="pen" text=".xxix." type="straight"/>
+        <underline language="LA" method="pen" text="Comes" type="straight"/>
+        <underline language="LA" method="pen" text="Comes Lancastriae" type="straight"/>
+        <underline language="LA" method="pen" text="Radulphus de Monte Hermeti" type="straight"/>
+        <underline language="LA" method="pen" text="Humfridus de Bohun" type="straight"/>
+        <underline language="LA" method="pen" text="Guido comes VVarvvic." type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="tripunctus" place="left_margin"/>  
+        <mark method="pen" name="circumflex" place="intext"/>
+        <mark method="pen" name="circumflex" place="intext"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- praemissa prouida -->
+        <mark method="pen" name="circumflex" place="intext"/>               
+        <mark method="pen" name="circumflex" place="left_margin"/>      
+        
+        <errata amendedtext="pra[e]missis" copytext="primissis" language="LA"/>
+        <errata amendedtext="ferimus" copytext="fecimus" language="LA"/>      
+        <errata amendedtext="Sanctitati" copytext="sanctitati" language="LA"/>
+        <errata amendedtext="meditatione" copytext="praemeditatione" language="LA"/>
+        <errata amendedtext="illis" copytext="illius" language="LA"/>
+        <errata amendedtext="dignemini" copytext="degnemini" language="LA"/>
+        <errata amendedtext="aemulorum" copytext="emulorum" language="LA"/>
+        <errata amendedtext="complementeum" copytext="complimentum" language="LA"/>
+        
+    </annotation>
+</transcription>

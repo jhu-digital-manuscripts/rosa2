@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.020r.tif" reader="Harvey" signature="Bv[r]"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>The Foxes,</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Pax  Vobis.</marginalia_text>
+                </position>
+            </language>
+            <translation>The Foxes, the peace for you.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>L. Sylla.</marginalia_text>
+                    <person name="Sulla"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="entred into a treatie of peace" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A treaty of Peace, to make his Enemyes more secure and necligent.</marginalia_text>
+                    <emphasis method="pen" text="treaty" type="straight"/>
+                    <emphasis method="pen" text="Peace" type="straight"/>
+                    <emphasis method="pen" text="more secure" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>[the] same.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A truce.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>The French Edicts of Pacification.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="conditions of peace" type="straight"/>
+        <underline language="EN" method="pen" text="no suche thynge" type="straight"/>
+        <underline language="EN" method="pen" text="slacke and" type="straight"/>
+        <underline language="EN" method="pen" text="entred into a treatie of peace" type="straight"/>
+        <underline language="EN" method="pen" text="trumpetter" type="straight"/>
+        <underline language="EN" method="pen" text="the fourth watch" type="straight"/>
+        <underline language="EN" method="pen" text="The same man" type="straight"/>
+        <underline language="EN" method="pen" text="inconuenient place and" type="straight"/>
+        <underline language="EN" method="pen" text="to an intreatie of peace" type="straight"/>
+        <underline language="EN" method="pen" text="a truce" type="straight"/>
+        <underline language="EN" method="pen" text="toke lesse hede" type="straight"/>
+        <underline language="EN" method="pen" text="to intreate with" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="conditions of peace"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="entred into a treatie of peace"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="no suche thynge"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="toke lesse hede"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="tail" text="to intreate with"/>
+        
+    </annotation>
+</transcription>

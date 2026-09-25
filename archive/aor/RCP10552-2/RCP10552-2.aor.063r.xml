@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.063r.tif" pagination="115" reader="John Dee" signature="K.iiij."/>
+    <annotation>
+        
+        <marginalia anchor_text="rex Edvvardus Scotiae .14. Calend. Iulij aoud nouum castrum super Tynam in domo fratrum praedicatorum fecit &amp; iuraun homagium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Homagium Scotoru[m].Regis.</marginalia_text>
+                </position>
+            </language>
+            <translation>Homage to the King of the Scots.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Edvvardus de Baliol rex Scotiae tenuit Parliamentum citò post" type="straight"/>
+        <underline language="LA" method="pen" text="Hoc anno rex" type="straight"/>
+        <underline language="LA" method="pen" text="Scotiae .14. Calend. Iulij apud nouum castrum super Tynam in domo fratrum praedicatorum fecit &amp; iuraun" type="straight"/>
+        
+        <errata amendedtext="[deleted]" copytext="deuntibus" language="LA"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.007v.tif" pagination="14" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="praeceptorem eligere sanctißimum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Praeceptor sanctiss[imus] eligendus.</marginalia_text> 
+                </position>
+            </language>
+            <translation>The most holy teacher to be chosen.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="tempora sua impensurus" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

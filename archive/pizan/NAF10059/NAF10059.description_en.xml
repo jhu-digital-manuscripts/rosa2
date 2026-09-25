@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <title>Christine de Pizan</title>
+         
+         </titleStmt>
+         
+         <publicationStmt>
+            
+            <distributor>MSEL</distributor>
+         
+         </publicationStmt>
+        
+         <sourceDesc> 
+            
+            <bibl>
+               <note type="format">manuscript</note>
+               <note type="commonName">Français NAF10059</note>
+               <title>Christine de Pizan</title>
+
+               <extent>
+                  <measure quantity="192" unit="folios">192</measure>
+                  <dimensions>
+                     <height unit="mm">298</height>
+                     <width unit="mm">215</width>
+                  </dimensions>
+               
+               </extent>
+               
+               <note type="illustrations">0</note>
+               
+               <note type="material">parchment</note>
+               
+               <pubPlace>France</pubPlace>
+               
+               <date notBefore="1401" notAfter="1500">15th century</date>
+            
+            </bibl>
+            
+            <msDesc>
+               
+               <msIdentifier>
+                  
+                  <settlement>Paris</settlement>
+                  
+                  <repository>Bibliothèque nationale de France</repository>
+                  
+                  <idno>NAF 10059</idno>
+               
+               </msIdentifier>
+            
+               <msContents>
+                  <msItem n="1">
+                     <locus from="1r" to="191v">1r-191v</locus>
+                     <title>Recueil d'opuscules français de Jean Gerson, Guillaume de Tignonville, Christine de Pisan, etc.</title>
+                     <note type="textid"></note>
+                     <note type="folios">191</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">48</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">1</note>
+                  </msItem>
+                  <msItem n="2">
+                     <locus from="1r" to="10r">1r-10r</locus>
+                     <title>Traité de Jean Gerson contre le Roman de la Rose</title>
+                     <note type="textid"></note>
+                     <note type="folios">10</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">45</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">1</note>
+                  </msItem>
+                  <msItem n="3">
+                     <locus from="10v" to="15v"></locus>
+                     <title>Plusieurs exemples et enseignemens du tressaint nom de nostre sire Jhesucrist, et comme l'on peut pechier en pluseurs manieres en l'esglise... C'est grant paresce quand on renomme...</title>
+                     <note type="textid"></note>
+                     <note type="folios">5</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">45</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">1</note>
+                  </msItem>
+                  <msItem n="4">
+                     <locus from="16r" to="63v"></locus>
+                     <title>Dits des philosophes, traduits en français par Guillaume de Tignonville</title>
+                     <note type="textid"></note>
+                     <note type="folios">47</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">43</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">1</note>
+                  </msItem>
+                  <msItem n="5">
+                     <locus from="65r" to="113r">65r-113r</locus>
+                     <title>Épître d'Othéa à Hector, poème de Christine de Pisan, avec glose et explication allégorique</title>
+                     <note type="textid"></note>
+                     <note type="folios">48</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">33</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">1</note>
+                  </msItem>
+                  <msItem n="6">
+                     <locus from="114r" to="144r">114r-144r</locus>
+                     <title>Heures de contemplacion sur la Passion de nostre seigneur Jhesucrist, par Christine de Pisan.</title>
+                     <note type="textid"></note>
+                     <note type="folios">30</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">29</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         
+         </sourceDesc>
+      
+      </fileDesc>
+   
+   </teiHeader>
+   
+   <text>
+      
+      <body>
+         
+         <div> </div>
+      
+      </body>
+   
+   </text>
+
+</TEI>

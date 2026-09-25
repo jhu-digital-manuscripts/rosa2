@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.092v.tif" reader="Harvey" signature="[X.ii.[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Caesar Borgiae[.] [-]. <!-- page trimming has cut off the last word.-->
+                    </marginalia_text>
+                    <person name="Cesare Borgia"/>
+                    <emphasis method="pen" text="Caesar Borgiae" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        De Orat. Subabsurdum.
+                    </marginalia_text>
+                    <book title="De Oratore"/>
+                </position>
+            </language>
+            <translation>
+                'De oratore'. Somewhat absurd. 
+            </translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="reported to be a quicke souldier" type="straight"/>
+        <underline language="EN" method="pen" text="is quicke" type="straight"/>
+        <underline language="EN" method="pen" text="not so longe as to aske leaue to depart" type="straight"/>
+        <underline language="EN" method="pen" text="pretie tauntes" type="straight"/>
+        <underline language="EN" method="pen" text="verie communication" type="straight"/>
+        <underline language="EN" method="pen" text="taketh that he would not" type="straight"/>
+        <underline language="EN" method="pen" text="as our Duke answered" type="straight"/>
+        <underline language="EN" method="pen" text="that lost Saint" type="straight"/>
+        <underline language="EN" method="pen" text="state was taken by" type="straight"/>
+        <underline language="EN" method="pen" text="Duke Valentin" type="straight"/>
+        <underline language="EN" method="pen" text="Duke" type="straight"/>
+        <underline language="EN" method="pen" text="Venice at that" type="straight"/>
+        <underline language="EN" method="pen" text="of his subiectes" type="straight"/>
+        <underline language="EN" method="pen" text="secret information" type="straight"/>
+        <underline language="EN" method="pen" text="matters of state passed" type="straight"/>
+        <underline language="EN" method="pen" text="he had excused himselfe" type="straight"/>
+        <underline language="EN" method="pen" text="woorke a meane" type="straight"/>
+        <underline language="EN" method="pen" text="may be recouered again" type="curved"/>
+        <underline language="EN" method="pen" text="for in losinge it thou haste wroughte a" type="straight"/>
+        <underline language="EN" method="pen" text="that it may be recouered again" type="straight"/>
+        <underline language="EN" method="pen" text="to be wittie" type="straight"/>
+        <underline language="EN" method="pen" text="of folye" type="straight"/>
+        <underline language="EN" method="pen" text="foole" type="straight"/>
+        <underline language="EN" method="pen" text="he beegane to were" type="straight"/>
+        <underline language="EN" method="pen" text="died" type="straight"/>
+        <underline language="EN" method="pen" text="wittie &amp; kind dissimulacion" type="straight"/>
+        <underline language="EN" method="pen" text="that is wise" type="straight"/>
+        <underline language="EN" method="pen" text="not" type="straight"/>
+        <underline language="EN" method="pen" text="doth vnderstande" type="straight"/>
+        <underline language="EN" method="pen" text="a prating" type="straight"/>
+        <underline language="EN" method="pen" text="Pigions of his Douehouse with snares" type="straight"/>
+        <underline language="EN" method="pen" text="helde one continuallye" type="straight"/>
+        <underline language="EN" method="pen" text="hanging by the foote" type="straight"/>
+        <underline language="EN" method="pen" text="be a remedye for it" type="straight"/>
+        
+        <underline language="EN" method="pen" text="Pope Alexander. vj. vsurped the dukedom of Vrbin and gaue it to hys sonne Cesar Borgia              communlye called Duca valentino." type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="hash" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/> <!-- Vrbin, and -->
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="that it may be recouered again"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="quotation_mark" place="left_margin" text="doth vnderstande"/>
+        
+        <mark method="pen" name="hash" place="right_margin"/>
+        <mark method="pen" name="hash" place="right_margin"/>
+        <mark method="pen" name="hash" place="right_margin"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!--souldiers, one-->
+        <mark language="EN" method="pen" name="equal_sign" place="intext" text="reported to be a quicke souldier"/>
+        <mark language="EN" method="pen" name="equal_sign" place="intext" text="not so longe as to aske leaue to depart"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- depart. They -->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="pretie tauntes"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- not and -->
+        <mark method="pen" name="dot" place="intext"/> <!-- Valentin, the -->
+        <mark method="pen" name="dot" place="intext"/> <!-- passed, and -->
+        <mark method="pen" name="dot" place="intext"/> <!-- that, for -->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="that it may be recouered again"/> 
+        <mark method="pen" name="comma" place="intext"/> <!-- wittie, speaketh -->
+        <mark method="pen" name="dot" place="intext"/> <!-- dead, he -->
+        
+    </annotation>
+</transcription>

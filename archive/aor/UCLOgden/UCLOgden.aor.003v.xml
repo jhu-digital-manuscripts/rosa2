@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.003v.tif" reader="John Dee" signature="[α 3[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian" method="pencil" other_reader="unknown modern reader">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Annus 63
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The year 63.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἀφητικὰ" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ἀφητικὰ
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        loca.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The places of the release (i.e. the Hyleg).
+            </translation>
+        </marginalia>
+        
+        <mark colour="red" method="pen" name="bracket" place="left_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="left_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

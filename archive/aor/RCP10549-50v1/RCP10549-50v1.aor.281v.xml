@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.281v.tif" pagination="542" reader="John Dee" signature="[lll.vii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="loci ipsius insolentia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>insole[n]tia loci.</marginalia_text>
+                </position>
+            </language>
+            <translation>The strangeness of place.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="in exulcerato animo facile fictum crime[n] insideret" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In exulcerato a[n]i[m]o facile insidet fictum crimen.</marginalia_text>
+                </position>
+            </language>
+            <translation>'A fictitious charge finds a ready lodgement in an inflamed mind.' [Loeb 252, 507]</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="honorificentissimis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Rex honorifice[n]tiss[imus]</marginalia_text>
+                </position>
+            </language>
+            <translation>A most honorific king.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="longinquus &amp; alienigena" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>longinquus alienigena</marginalia_text>
+                </position>
+            </language>
+            <translation>Remote. Foreign.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="talibus enim nunciis &amp; rumoribus patebat ad orie[n]tem via" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>via[m] patere nu[n]cijs &amp; rumorib[u]s</marginalia_text>
+                </position>
+            </language>
+            <translation>To open the road to messages and rumours.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="co[n]spiratione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>co[n]spiratio</marginalia_text>
+                </position>
+            </language>
+            <translation>Conspiration.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="vt in exulcerato animo facile" type="straight"/>
+        <underline language="LA" method="pen" text="ne residere in te" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">21 13</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">12</numeral>
+        
+    </annotation>
+</transcription>

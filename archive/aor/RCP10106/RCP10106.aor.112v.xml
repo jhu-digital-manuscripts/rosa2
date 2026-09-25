@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.112v.tif" pagination="224" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="ratio faciendi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ratio facie[n]di</marginalia_text>
+                </position>
+            </language>
+            <translation>The reason for this action.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex loco" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ex loco</marginalia_text>
+                </position>
+            </language>
+            <translation>From a place.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Milone" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>p[ro]. Milone.</marginalia_text>
+                    <book title="Pro Milone"/>
+                </position>
+            </language>
+            <translation>For Milo.</translation> <!-- FSF: original to be kept -->
+        </marginalia>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.555r.tif" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text> 
+                        Ludoru[m] Synopsis.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Playful synopsis.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Ludi à Tarquinio opulentius" type="straight"/>
+        
+    </annotation>
+</transcription>

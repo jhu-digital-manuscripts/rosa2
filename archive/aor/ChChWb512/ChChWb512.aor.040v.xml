@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.040v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Rodericus - Humfredo lloydo</marginalia_text>
+                    <person name="Humphrey Lloyd"/>
+                </position>
+            </language>
+            <translation>Roderic [or] Humfrey Lloyd.</translation>
+        </marginalia>
+        
+        <!-- NBW: This is a suggestion for a different spelling, rather than a genealogical tree. The first suggests Roderic for Londric, and the second is an attribution to the antiquarian Humphrey Lloyd (Lhwyd) - This could be to his translation of the History of Cambria, or to the person himself.-->
+        
+        <marginalia anchor_text="Scotorum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Scoti.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The Scots.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Maesmarius dicta" type="straight"/>
+        <underline language="LA" method="pen" text="qu[a]e Cathenesia" type="straight"/>
+        <underline language="LA" method="pen" text="illis &amp; Hiberniensibus" type="double"/>
+        <underline language="LA" method="pen" text="Coillus regni" type="straight"/>
+        <underline language="LA" method="pen" text="illis subdiditum: eoru[m]q[ue]" type="straight"/>
+        
+        <underline language="LA" method="pen" text="Origo Pictor[um]" type="straight"/>
+        
+    </annotation>
+</transcription>

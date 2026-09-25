@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.088v.tif" reader="Harvey" signature="[**8v]"/>	<!-- ABO 93left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Pra[e]stat plus facere, quàm plus sapere.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				It is superior to do more than to know more.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						( Axiophilus, legat, scribat,
+					</marginalia_text>
+					<person name="Axiophilus"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						/ agat; vt ipse
+						/ quondam Ca[e]sar: singula
+						/ expeditissimè omnium: et
+						/ tamen omnia absolutiss[im]è
+						/ singulorum.
+					</marginalia_text>
+					<person name="Julius Caesar"/>
+				</position>
+			</language>
+			<translation>
+				Axiophilus reads, writes, and does (just as Caesar himself once did)
+				the singular of all things in a most expedient manner,
+				yet all singular things in a most complete manner.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						{ Qui vix est suus,
+						a[e]grè fit alterius.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				He who is hardly his own, with difficulty becomes another's.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						{ Undè prima cura,
+						{ Teipsum expedire promptissimè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Whence, your first concern is to set yourself free most readily.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						{ Quod opus no[n] est, asse carum est.
+					</marginalia_text>
+					<X-ref book_title="Epistles" language="LA" person="Seneca" text="Quod opus non est, asse carum est."/>
+				</position>
+			</language>
+			<translation>
+				"What you do not want is dear at a farthing."
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Hodiè vincit, non I,U,S, sed V,I,S.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Today, not JUSTICE but FORCE is the victor.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						gli huomini singolari di Francesco Guicciardini;
+						prontissimi d'ingegno; e efficaci molto
+						nelle Parole. Massimamente, Alessandro VI
+						e suo figliuolo, Cesare Borgia; lo Specchio
+						de tutti astutissimi, et valorosissimi Politici
+						del mondo. Giulio 2. Lorenzo de' Medici.
+						Consaluo, gran Capitano. Lodouico Sforza,
+						duca di Milano. D'Aualos, Marchese di
+						Pescara. tutti efficacissimi nel parlare,
+						et negociare. Egregij Pramatici.
+					</marginalia_text>
+					<person name="Francesco Guicciardini"/>
+					<person name="Pope Alexander VI"/>
+					<person name="Cesare Borgia"/>
+					<person name="Pope Julius II"/>
+					<person name="Lorenzo de' Medici"/>
+					<person name="Gonzalo Fernández de Córdoba"/>
+					<person name="Fernando Francesco d'Avalos"/>
+					<emphasis method="pen" text="gli huomini singolari di" type="straight"/>
+					<emphasis method="pen" text="prontissimi d'ingegno" type="straight"/>
+					<emphasis method="pen" text="efficaci molto" type="straight"/>
+					<emphasis method="pen" text="nelle Parole" type="straight"/>
+					<emphasis method="pen" text="efficacissimi nel parlare" type="straight"/>
+					<emphasis method="pen" text="et negociare" type="straight"/>
+					<emphasis method="pen" text="Egregij pramatici" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The singular men of Francesco Guicciardini, most ready in genius and most effective in words.
+				Especially Alexander VI and his son Cesare Borgia, the mirror of all the most astute and most
+				valorous political men in the world. Julius the 2nd. Lorenzo de' Medici. Consalvo, a great captain.
+				Lodovico Sforza, duke of Milan. D'Avalos, marquis of Pescara. All most effective in speaking and
+				doing business. Outstanding practical men.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Qui plus sapit, et minus facit, eius sapientia firma non est: Qui minus sapit, et
+						plus facit, eius sapientia firma est. Vt prudenter Hanna, in apophthegmatis 
+						Hebra[e]orum Sapientum.
+					</marginalia_text>
+					<person name="Hannah"/>
+				</position>
+			</language>
+			<translation>
+				He who knows more but does less, does not possess solid wisdom. Who knows less and does more
+				possesses solid wisdom, like prudent Hanna in the aphorisms of the Jewish wisemen.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Statim ad rem ipsam: sine vllis parergis. Solus procedendi modus solidus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Immediately to the thing itself, without any ornamentation. Only a solid way of proceding.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="simulata amicitia" type="straight"/>
+		<underline language="IT" method="pen" text="lento al deliberare" type="straight"/>
+		<underline language="IT" method="pen" text="veloce ad esequire" type="straight"/>
+		<underline language="IT" method="pen" text="Fortuiti" type="straight"/>
+		<underline language="IT" method="pen" text="casi della guerra" type="straight"/>
+		<underline language="IT" method="pen" text="militia" type="straight"/>
+		<underline language="IT" method="pen" text="fortuna" type="straight"/>
+		<underline language="IT" method="pen" text="ammira[n]do tratto di giouane Principe" type="straight"/>
+		<underline language="IT" method="pen" text="&amp; concordia" type="straight"/>
+		<underline language="IT" method="pen" text="perfetti" type="straight"/>
+		<underline language="IT" method="pen" text="scuse di" type="straight"/>
+		<underline language="IT" method="pen" text="ca[m]bieuoli insidie" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<symbol name="SS" place="left_margin"/>
+		<symbol language="IT" name="SS" place="left_margin" text="Far mestieri d'esser lento al deliberare, e veloce ad esequire."/>
+		<symbol name="SS" place="left_margin"/>
+		
+		<symbol name="JC" place="intext"/>
+		
+		<symbol name="Sun" place="tail"/>
+		
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Far mestieri d'esser lento al deliberare, e veloce ad esequire"/>
+		
+		<mark method="pen" name="dot" place="intext"/> <!--deliberare, e-->
+
+    </annotation>
+</transcription>

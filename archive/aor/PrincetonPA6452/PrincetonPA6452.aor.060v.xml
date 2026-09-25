@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.060v.tif" pagination="104" reader="Harvey"/>
+    <annotation>
+        <underline language="LA" method="pen" text="libros linteos autores profitentur" type="straight"/>
+        <underline language="LA" method="pen" text="remp. foris gerenda[m]" type="straight"/>
+        <underline language="LA" method="pen" text="tutaq[ue] omnia praestanda" type="straight"/>
+        <underline language="LA" method="pen" text="au[n]t eius custodia[m] esse" type="straight"/>
+        <underline language="LA" method="pen" text="si magna imperia diuturna non essent" type="straight"/>
+        <underline language="LA" method="pen" text="temporis" type="straight"/>
+        <underline language="LA" method="pen" text="quibus iuris imponi" type="straight"/>
+        <underline language="LA" method="pen" text="Alios magistratus" type="straight"/>
+        <underline language="LA" method="pen" text="annuos esse" type="straight"/>
+        <underline language="LA" method="pen" text="quinquennalem censura[m] grauem" type="straight"/>
+        <underline language="LA" method="pen" text="ne plus quàm annua ac semestris" type="straight"/>
+        <underline language="LA" method="pen" text="quàm mihi diuturna no[n] place[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="causam potius ignomiae intuente[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ignominia[m]" type="straight"/>
+        
+        <mark method="pen" name="X_sign" place="left_margin"/>
+        
+        <mark method="pen" name="equal_sign" place="right_margin"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="magna"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="diuturna"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="quinquennalem"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="causam"/>
+
+        <errata amendedtext="placu[n]t" copytext="place[n]t" language="LA"/>
+        
+    </annotation>
+</transcription>

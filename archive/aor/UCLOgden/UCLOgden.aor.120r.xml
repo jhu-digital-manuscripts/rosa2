@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.120r.tif" pagination="223" reader="John Dee" signature="t 4"/>
+    <annotation>
+        
+        <marginalia anchor_text="Chaldaei operis disciplina" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Chalda[e]orum disciplina.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The discipline of the Chaldaeans.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="myriogenesis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Myriogenesis
+                    </marginalia_text>
+                    <book title="Myriogenesis"/>
+                </position>
+            </language>
+            <translation>
+                Myriogenesis.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Anguis extremus est" type="straight"/>
+        <underline language="LA" method="pen" text="Marsi erunt" type="straight"/>
+        <underline language="LA" method="pen" text="Cygnus" type="straight"/>
+        <underline language="LA" method="pen" text="quod si illa" type="straight"/>
+        <underline language="LA" method="pen" text="qua pars" type="straight"/>
+        <underline language="LA" method="pen" text="co[m]pletur" type="straight"/>
+        <underline language="LA" method="pen" text="aut terrae" type="straight"/>
+        <underline language="LA" method="pen" text="motus" type="straight"/>
+        <underline language="LA" method="pen" text="fuerit, aut" type="straight"/>
+        <underline language="LA" method="pen" text="coelum" type="straight"/>
+        <underline language="LA" method="pen" text="tonuerit" type="straight"/>
+        <underline language="LA" method="pen" text="semper" type="straight"/>
+        <underline language="LA" method="pen" text="corpore tremulus" type="straight"/>
+        <underline language="LA" method="pen" text="instabilis erit" type="straight"/>
+        <underline language="LA" method="pen" text="dubio gressu trepidantibus'q[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="per omnia horaru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="mome[n]ta" type="straight"/>
+        <underline language="LA" method="pen" text="imminentiu[m] culminu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ruinas" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; metuat. Huic" type="straight"/>
+        <underline language="LA" method="pen" text="Chaldaei operis disciplina" type="straight"/>
+        <underline language="LA" method="pen" text="myriogenesis" type="straight"/>
+        <underline language="LA" method="pen" text="secu[n]dum sphaeram barbaricam" type="dotted"/>
+        <underline language="LA" method="pen" text="Anguis" type="straight"/>
+        <underline language="LA" method="pen" text="Cygnus" type="straight"/>
+        <underline language="LA" method="pen" text="Sub errae motu nati" type="straight"/>
+        
+    </annotation>
+</transcription>

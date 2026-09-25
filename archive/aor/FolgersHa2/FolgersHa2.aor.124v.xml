@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.124v.tif" pagination="72" reader="Harvey" signature="[E4v]"/>	<!-- ABO 129left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Eutrapelus, pura ars in persona, et mera virtus.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				Eutrapelus in his person has both pure art and undiluted virtue.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Singula facilè excellentiss[im]a omnia planè efficacissima.
+						Nihil vanum: pulchra vniuersa singula
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						dicta, scripta, facta in flore, et fructa
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Artis, et Virtutis pra[e]domina[n]tis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				All singular matters are easily the most excellent and entirely the most effective.
+				Nothing in vain. Together, all beautiful and singular words, writings, and deeds in bloom; 
+				and the fruits of Art and predominant virtue. 
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( What spirit so pure, &amp; neate as it /
+						should?
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						/ Quicquid alij vulgares;
+						Eutrapelus pro actionum, aut personaru[m]; locorum,
+						aut temporum occasione; vel pura Ars,						
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						et mera Virtus:
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						vel mera Ars, et pura Virtus.
+						Nihil suprà in vtraq[ue]: nihil in alterutra.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				How much so ever others are common;
+				Eutrapelus behaves according to the occasion of actions, people, places, or times;
+				either with pure art or undiluted virtue, or with undiluted art and pure virtue.
+				Nothing superior in either; nothing in either. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Nihil magis conspicuum, aut optatum: nihil tam excellens aut memorabile,
+						quàm Eutrapeli Singula. Sed tamen animus in carcere Corporis,						
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						perpetuis eget Mnemosynis, et 
+						diuino Calcare.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Nothing is more visible or welcome, nothing is as excellent or as memorable
+				as the singular deeds of Eutrapelus.  But still, the mind in the prison of the body
+				lacks continual reminders and a divine stimulus.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="l'or s'ottien" type="straight"/>
+		<underline language="IT" method="pen" text="l'or rompon" type="straight"/>
+		<underline language="IT" method="pen" text="l'or le leggi" type="straight"/>
+		<underline language="IT" method="pen" text="descri[uen]ndo la medesime infirmità" type="straight"/> 
+		<underline language="IT" method="pen" text="gran perigli" type="straight"/>
+		<underline language="IT" method="pen" text="error d'Vlisse" type="straight"/>
+		<underline language="IT" method="pen" text="Scilla" type="straight"/>
+		<underline language="IT" method="pen" text="Ciclopi" type="straight"/>
+		<underline language="IT" method="pen" text="Harpie" type="straight"/>
+		<underline language="IT" method="pen" text="Syrte" type="straight"/>
+		<underline language="IT" method="pen" text="Syrene" type="straight"/>
+		<underline language="IT" method="pen" text="quasi nulla a' gran" type="straight"/>
+		<underline language="IT" method="pen" text="Sol per oro acquistar" type="straight"/>
+		<underline language="IT" method="pen" text="scelerati" type="straight"/>
+		<underline language="IT" method="pen" text="al Diauolo" type="straight"/>
+		<underline language="IT" method="pen" text="Ma il Diauolo" type="straight"/>
+		<underline language="IT" method="pen" text="che per questa" type="straight"/>
+		<underline language="IT" method="pen" text="volta tu haurai patienza" type="straight"/>
+		<underline language="IT" method="pen" text="liberalità, &amp; la clemenza" type="straight"/>
+		<underline language="IT" method="pen" text="strumenti per regnare" type="straight"/>
+		<underline language="IT" method="pen" text="il Pontano" type="straight"/>
+		<underline language="IT" method="pen" text="desiderano di regnare" type="straight"/>	
+		
+		<symbol name="SS" place="left_margin"/>
+		
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Con l'or s'ottien honor, Amor con l'oro,    Con l'or rompon la fe, con l'or le leggi"/>
+		<mark method="pen" name="circumflex" place="left_margin"/>
+		<mark method="pen" name="circumflex" place="left_margin"/>
+		<mark method="pen" name="circumflex" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--co[n]-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--desidera-->
+		
+		<mark method="pen" name="vertical_bar" place="intext"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/>
+
+    </annotation>
+</transcription>

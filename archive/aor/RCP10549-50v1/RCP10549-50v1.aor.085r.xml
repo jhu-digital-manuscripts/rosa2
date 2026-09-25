@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.085r.tif" pagination="149" reader="John Dee" signature="lzlz.iii."/>
+    <annotation> 
+        
+        <marginalia anchor_text="fructuosissima[m] atque opportunissima[m] prouinciam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        prouincia fructuosiss[ima] opportuniss[ima]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A most fertile and most valuable province.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="res rusticae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Res rustic[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Agriculture.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="transfere[n]dis iudiciis" type="straight"/>
+        <underline language="LA" method="pen" text="falsa, modo" type="straight"/>
+        <underline language="LA" method="pen" text="nullo modo negare potest" type="straight"/>
+        <underline language="LA" method="pen" text="Feci quod" type="straight"/>
+        <underline language="LA" method="pen" text="eos homines" type="straight"/>
+        <underline language="LA" method="pen" text="Summam faciam vobis" type="straight"/>
+        <underline language="LA" method="pen" text="Etenim ad incertum casum &amp; eue[n]tum" type="straight"/>
+        <underline language="LA" method="pen" text="res rusticae eiusmodi sunt, vt eas no[n] ratio, neque labor sed res incertissimae venti, tempestatésque moderentur. Hinc" type="straight"/>
+        <underline language="LA" method="pen" text="etiámne haec" type="straight"/>
+        <underline language="LA" method="pen" text="Itaque haec" type="straight"/>
+        <underline language="LA" method="pen" text="Sicilia desertas" type="straight"/>
+        <underline language="LA" method="pen" text="neque quicquam aliud agitur hoc iudicio, nisi vt" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">8</numeral>
+        <numeral place="right_margin">19</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">11</numeral>
+        <numeral place="right_margin">8</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">8</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">8</numeral>
+        <numeral place="right_margin">10</numeral>
+        
+        
+    </annotation>
+</transcription>

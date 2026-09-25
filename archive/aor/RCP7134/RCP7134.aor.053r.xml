@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.053r.tif" pagination="47" reader="John Dee" signature="M iij"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Loci propria natura est ex stellis ibi existentibus, vel in eodem circulo ascendentibus, vel ex seipsa, vel domina[n]tis planeta[e] seg 3. aphor. 98.</marginalia_text> 
+                    <internal_ref>
+                        <target ref="RCP7134:495" text="98"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>The particular nature of a position is from where the stars appear, either ascending in the same circle, or from themselves or the dominance of a planet. Sergius of Reshaina 3. More apt 98.</translation> <!--JG: Unsure about meaning of 'seg'-->
+        </marginalia>
+        
+        <marginalia anchor_text="Sic septima significat mortem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Si Septima significat morte[m], inimicos, et rixas, quid caus[a]e est cur et vxores significat [.] Aut fateri [de]bemus co[n]iugam in se
+                    qua[m]da[m] co[n]trarietate[m] [co[n]traxa[m]] habere, aut r[ati]o diversitatis redde[n]da. Vide igitur Artemidoru[m] in so[m]nijs de morte et co[n]iugis.</marginalia_text>
+                    <person name="Artemidorus Daldianus"/>
+                    <book title="Oneirocritica"/>
+                </position>
+            </language>
+            <translation>If the seventh signifies death, hostilities, and disputes, what cause is there why it even signifies wifes?
+                Or should we admit that a wife in itself has a certain incurred misfortune, or the reason of diversity must be restored. Therefore see Artemidorus Daldianus
+            in dreams on death and spouses.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="significat mortem" type="straight"/>
+        
+    </annotation>
+</transcription>

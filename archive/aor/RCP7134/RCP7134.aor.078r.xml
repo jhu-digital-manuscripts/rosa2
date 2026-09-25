@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.078r.tif" pagination="71" reader="John Dee" signature="S iij"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Isti vel statim interficiunt, vel directione radioru[m] ☍ □ ☌ ⚹
+                    temporis tractu ratione arcus directionis interficiunt. //</marginalia_text>
+                    <symbol_in_text name="Opposite_planets"/>
+                    <symbol_in_text name="Square"/>
+                    <symbol_in_text name="Conjunction"/>
+                    <symbol_in_text name="Sextile"/>
+                </position>
+            </language>
+            <translation>Those either kill at once, or, with the directions of the rays, opposition, square, conjunction, sexitle, by the lengthening of time,
+            because of the arc's direction they kill.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Radij.</marginalia_text>
+                </position>
+            </language>
+            <translation>Rays.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="stellae fixae de natura infortunarum abscindunt" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Stella[e] fixa[e] occidu[n]t.</marginalia_text>
+                </position>
+            </language>
+            <translation>Fixed stars kill.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>quonia[m] ♀ tunc domina octava[e] sit sua pra[e]sentia: at quid si ♂ fuerit ♏ loco ♀? an no[n] ip[s]e sua[e] mortis causa putaretur?
+                    imo r[ati]o[n]e loci septimi, cui ♀ preest.</marginalia_text>
+                    <symbol_in_text name="Venus"/>
+                    <symbol_in_text name="Mars"/>
+                    <symbol_in_text name="Scorpio"/>
+                </position>
+            </language>
+            <translation>Seeing that Venus then is the lady of the eight [house] by her presence: but why if Mars was in Scorpio in the place of Venus?
+            Whether he himself did not reckon the cause of his death? Indeed, by the reason of the seventh place, of which Venus is in charge.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>vita[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Of life.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="radios" type="straight"/>
+        <underline language="LA" method="pen" text="uel qui" type="straight"/>
+        <underline language="LA" method="pen" text="uel qui" type="straight"/>
+        <underline language="LA" method="pen" text="significatori" type="double"/>
+        <underline language="LA" method="pen" text="ex propria substantia" type="straight"/>
+        <underline language="LA" method="pen" text="ratioue loci" type="straight"/>
+        <underline language="LA" method="pen" text="Solem, &amp; Lunam" type="straight"/>
+        <underline language="LA" method="pen" text="Marten, &amp; Mercurium" type="straight"/>
+        <underline language="LA" method="pen" text="Trinus autem raro occidit" type="straight"/>
+        <underline language="LA" method="pen" text="Sol abscindit" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; stellae fixae de natura infortunarum abscindunt, cum radius alicuius planetae super eas ceciderit" type="straight"/>
+        
+        <symbol language="LA" name="Saturn" place="right_margin" text="Saturnus"/>
+        <symbol language="LA" name="Mars" place="right_margin" text="Mars"/>
+        <symbol language="LA" name="Jupiter" place="right_margin" text="Iupiter"/>
+        <symbol language="LA" name="Venus" place="right_margin" text="Venus"/>
+        <symbol language="LA" name="Sun" place="right_margin" text="Sol"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="intext" text="non solum primae"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark language="LA" method="pen" name="bracket" place="intext" text="estq[ue] infortuna"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.185v.tif" pagination="[185v]" reader="John Dee" signature="[Aa[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Pietro di Arana" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pietro di Arana</marginalia_text>
+                    <person name="Peter d'Arana"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="intention" type="straight"/>
+        <underline language="IT" method="pen" text="all'Occidente DC leghe" type="straight"/>
+        <underline language="IT" method="pen" text="che ad egual partito combattea co' Christiani" type="straight"/>
+        <underline language="IT" method="pen" text="ricchezze" type="double"/>
+        <underline language="IT" method="pen" text="&amp; Guanini" type="straight"/>
+        <underline language="IT" method="pen" text="Ricquelme" type="straight"/>
+        <underline language="IT" method="pen" text="Bonao per l'Orlando" type="double"/>
+        <underline language="IT" method="pen" text="vn forte poggio" type="straight"/>
+        <underline language="IT" method="pen" text="porere indi con poca gente far tutto quel male" type="straight"/>
+        <underline language="IT" method="pen" text="accioche tra loro non nascesse alcun diserdine" type="straight"/>
+        
+        <errata amendedtext="armenti haueua" copytext="armenti haue " language="LA"/>
+        
+    </annotation>
+</transcription>

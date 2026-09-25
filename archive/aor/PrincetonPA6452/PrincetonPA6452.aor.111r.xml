@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.111r.tif" pagination="205" reader="Harvey" signature="s[1r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Animosi legati libera, et cordata apophtegmata. Qualis posteà legatus Popilius: orator verbo, factoq[ue] peremptorius. i[nfr]a, 813. 
+                        Duo eximia pro legato exempla: sed urbaniùs exercenda. Credo, inter arcana nostrorum legatoru[m], Smithi, Vuttoni, Vilsonis, 
+                        Dali: quatuor iuris Doctoru[m]. Sed quid abijcio tempus scripturiendo? De talibus viderit doctor Gentilis in libris de Legationib. 
+                        et de iure belli. Redeo ad ipsum hîc Archetypum.
+                    </marginalia_text>
+                    <person name="Gaius Popillius Laenas"/>
+                    <person name="Thomas Smith"/>
+                    <person name="Edward Wotton"/>
+                    <person name="Thomas Wilson"/>
+                    <person name="Valentine Dale"/>
+                    <person name="Alberico Gentili"/>
+                    <book title="De Legationibus Libri Tres"/>
+                    <book title="De iure belli libri tres"/>
+                    <internal_ref>
+                        <target ref="PrincetonPA6452:00000835" text="813"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>The outspoken and judicious apophtegms of a bold ambassador. Such as later ambassador Popilius: 
+                a decisive orator in word and deed, [see] below 813. Two excellent examples for an ambassador, but in private settings, 
+                I belief, one should follow, in a more sophisticated style, those of our ambassadors Smith, Wotton, Wilson, and Dale, four doctors of law. 
+                But why do I waste my time by desiring to write? Doctor Gentili attends to these things in his books De legationibus and De iure belli. 
+                I return to the original text here.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="innoxia multitudine" type="straight"/>
+        <underline language="LA" method="pen" text="exquirendae" type="straight"/>
+        <underline language="LA" method="pen" text="dandae sunt" type="straight"/>
+        <underline language="LA" method="pen" text="Priuernates" type="straight"/>
+        <underline language="LA" method="pen" text="uicinos Samnitibus" type="straight"/>
+        <underline language="LA" method="pen" text="nobis incertissima pax est" type="straight"/>
+        <underline language="LA" method="pen" text="irarum inter nos illosq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="unus ex Priuernatibus legatis" type="straight"/>
+        <underline language="LA" method="pen" text="magis co[n]ditionis in qua" type="straight"/>
+        <underline language="LA" method="pen" text="praesentis necessitatis memor" type="straight"/>
+        <underline language="LA" method="pen" text="quam poenam meritos Priuernates censeret" type="straight"/>
+        <underline language="LA" method="pen" text="merentur qui se libertate dignos censent" type="straight"/>
+        <underline language="LA" method="pen" text="qualem nos pacem uobiscu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Si bona[m] dederitis" type="straight"/>
+        <underline language="LA" method="pen" text="fidam, &amp; perpetuam" type="straight"/>
+        <underline language="LA" method="pen" text="mala[m], haud diuturna[m]" type="straight"/>
+        <underline language="LA" method="pen" text="uiri, &amp; liberi, uocem auditam" type="straight"/>
+        <underline language="LA" method="pen" text="ea conditione, cuius eum poenitaet, diutius quàm necesse sit mansurum" type="straight"/>
+        <underline language="LA" method="pen" text="pacem esse fidam, ubi uoluntarij pacati sint" type="straight"/>
+        <underline language="LA" method="pen" text="ubi seruitutem esse uelint" type="straight"/>
+        <underline language="LA" method="pen" text="fidem speranda[m] esse. In hanc" type="straight"/>
+        <underline language="LA" method="pen" text="qui nihil praeterquam de libertate cogitant, dignos esse qui Romani fiant" type="straight"/>
+        <underline language="LA" method="pen" text="Priuernatibus ciuitas daretur" type="straight"/>
+        
+        <symbol name="Mercury" place="right_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark language="LA" method="pen" name="bracket" place="left_margin" text="Si bona[m] dederitis, inquit, &amp; fidam, &amp; perpetuam: si mala[m], haud diuturna[m]."/>
+        <mark method="pen" name="straight_quotation_mark" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--Pri-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--diu-->
+        <mark method="pen" name="plus_sign" place="right_margin"/> 
+        
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="uiri"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="liberi"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="pacem"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="seruitutem"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="libertate"/>
+        
+    </annotation>
+</transcription>

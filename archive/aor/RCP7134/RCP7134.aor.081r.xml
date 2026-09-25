@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.081r.tif" pagination="74" reader="John Dee" signature="T ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Naufragium" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Naufragiu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Shipwreck.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pestem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pestis.</marginalia_text>
+                </position>
+            </language>
+            <translation>Pestilence.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="clades" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Clades.</marginalia_text>
+                </position>
+            </language>
+            <translation>Disaster.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="frequenter prodest" type="straight"/>
+        <underline language="LA" method="pen" text="cum ad euidens periculum non fertur, nec consilio rapi ac compelli tunc ex astris atq[ue] hoc in genitura uel reuolutione apparere" type="straight"/>
+        <underline language="LA" method="pen" text="in clade" type="straight"/>
+        <underline language="LA" method="pen" text="in peste" type="straight"/>
+        <underline language="LA" method="pen" text="in naufragio" type="straight"/>
+        <underline language="LA" method="pen" text="Saturnus, &amp; Mars" type="straight"/>
+        <underline language="LA" method="pen" text="quibus nasce[n]tibus Cometa in loco principali" type="straight"/>
+        <underline language="LA" method="pen" text="magna euenient" type="straight"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="Respondemus, illum qui sic se habet, cum ad euidens periculum non fertur, nec consilio rapi ac compelli tunc ex astris atq[ue] hoc in genitura uel reuolutione apparere"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

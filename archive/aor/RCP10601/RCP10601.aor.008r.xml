@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.008r.tif" pagination="15" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Adami lingua. infusa.</marginalia_text>
+                    <person name="Adam"/>
+                </position>
+            </language>
+            <translation>The language of Adam, spread around.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ab intellectu agente &amp; poßibili" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Intellectus agens &amp; possibilis</marginalia_text>
+                </position>
+            </language>
+            <translation>Driving and potential understanding.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="primus homo in maiori perfectione sanctitatis fuerit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Adami excellentia</marginalia_text>
+                    <person name="Adam"/>
+                </position>
+            </language>
+            <translation>The excellence of Adam.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ut primus pare[n]s coelitus sit edoctus de uniuersarum rerum nomine" type="straight"/>
+        <underline language="LA" method="pen" text="ut uoce interiori omnia rerum conceperit uocabula" type="straight"/>
+        <underline language="LA" method="pen" text="fuisse infusa nomina rerum" type="straight"/>
+        <underline language="LA" method="pen" text="ueritatis aeternae omnia ordinantis rationem" type="straight"/>
+        <underline language="LA" method="pen" text="ab intellectu agente" type="straight"/>
+        <underline language="LA" method="pen" text="poßibili" type="straight"/>
+        <underline language="LA" method="pen" text="uniuersi sumus" type="straight"/>
+        <underline language="LA" method="pen" text="duplicibus tabulis" type="straight"/>
+        <underline language="LA" method="pen" text="perfectione sanctitatis fuerit, quàm uniuersi sancti simul: ita" type="straight"/>
+        <underline language="LA" method="pen" text="tota elementorum natura concuteretur" type="straight"/>
+        <underline language="LA" method="pen" text="digitorum uerò attactu omnia" type="straight"/>
+        
+    </annotation>
+</transcription>

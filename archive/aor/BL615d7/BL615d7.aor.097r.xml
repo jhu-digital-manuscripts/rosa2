@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.097r.tif" pagination="97" reader="John Dee" signature="N"/> 
+    
+    <annotation>
+        
+        <marginalia anchor_text="Isola di Monserrato" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Monserrato Isola.</marginalia_text>
+                    <location name="Montserrat"/>
+                </position>
+            </language>
+            <translation>Montserrat Island.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Santa Maria Rotonda" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Santa Maria Rotonda</marginalia_text>
+                    <location name="Redonda"/>
+                </position>
+            </language>
+            <translation>Santa Maria Redonda.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ocamaniro" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ocamaniro.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Giamaica" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Giamaica.</marginalia_text>
+                    <location name="Jamaica"/>
+                </position>
+            </language>
+            <translation>Jamaica.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Santa Maria dell'Antigua, che gl'Indiani chiamauano Giamaica" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>S[ant]a Maria dell'Antigua [is] Giamaica not far fro[m] Guadalupe</marginalia_text>
+                    <location name="Antigua"/>
+                    <location name="Jamaica"/>
+                    <location name="Guadeloupe"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="Monserrato" type="straight"/>
+        <underline language="IT" method="pen" text="per la sua altezza diede" type="straight"/>
+        <underline language="IT" method="pen" text="mangiando la gente" type="double"/>
+        <underline language="IT" method="pen" text="di essa" type="straight"/>
+        <underline language="IT" method="pen" text="Rotonda" type="straight"/>
+        <underline language="IT" method="pen" text="rotonda, &amp; liscia" type="straight"/>
+        <underline language="IT" method="pen" text="poßa salir senza scala" type="straight"/>
+        <underline language="IT" method="pen" text="Ocamaniro" type="straight"/>
+        <underline language="IT" method="pen" text="Maria dell'Antigua" type="straight"/>
+        <underline language="IT" method="pen" text="chiamauano Giamaica" type="straight"/>
+        <underline language="IT" method="pen" text="di XVIII leghe" type="straight"/>
+        <underline language="IT" method="pen" text="tutte" type="straight"/>
+        <underline language="IT" method="pen" text="molto alte" type="double"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        
+        
+        
+    </annotation>
+    
+</transcription>

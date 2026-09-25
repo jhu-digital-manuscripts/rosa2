@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.047v.tif" pagination="[47[v]]" reader="John Dee" signature="[Miij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Himlitzen vnd donnern" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Wynter Thunder</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="Himlitzen vnd donnern" type="straight"/>
+        <underline language="DE" method="pen" text="vnd Hageln" type="straight"/>
+        <underline language="DE" method="pen" text="Hermaphroditische" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+          
+    </annotation>
+</transcription>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+<page filename="PrincetonK6233.011v.tif" reader="Harvey" signature="[β3v]"/>
+    <annotation>
+        
+        <marginalia anchor_text="alter" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        a.         
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        <marginalia anchor_text="semis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        s.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ante diem conditionis" type="straight"/>
+        <underline language="LA" method="pen" text="de notis" type="straight"/>
+        <underline language="LA" method="pen" text="Non notas pro notis accepisse" type="straight"/>
+        <underline language="LA" method="pen" text="ut as" type="straight"/>
+        <underline language="LA" method="pen" text="a.s." type="straight"/>
+        <underline language="LA" method="pen" text="as" type="straight"/>
+        <underline language="LA" method="pen" text="singulas voces" type="straight"/>
+        <underline language="LA" method="pen" text="alter" type="straight"/>
+        <underline language="LA" method="pen" text="semis" type="straight"/>
+        <underline language="LA" method="pen" text="ideóque ingenia hominum in hunc vsque diem miserè torsit" type="straight"/>
+        <underline language="LA" method="pen" text="ut as" type="straight"/>
+        <underline language="LA" method="pen" text="Praetorísue" type="straight"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="ante diem conditionis"/>
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="ideóque ingenia hominum in hunc vsque diem miserè torsit"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- sti-pulatio --> 
+        <mark method="pen" name="comma" place="intext"/> <!-- Praetorisue parte -->
+        
+    </annotation>
+</transcription>

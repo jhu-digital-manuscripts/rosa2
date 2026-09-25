@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.160v.tif" pagination="320" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ἀντικατηγορία</marginalia_text>
+                </position>
+            </language>
+            <translation>Countercharge.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Vareno" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Vareno.</marginalia_text>
+                    <book title="Pro Vareno"/>
+                </position>
+            </language>
+            <translation>Pro Vareno.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Scauro" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Scauro</marginalia_text>
+                    <book title="Pro Scauro"/>
+                </position>
+            </language>
+            <translation>Pro Scauro.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="praecesserit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pra[e]cede[n]tia</marginalia_text>
+                </position>
+            </language>
+            <translation>Precedence.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aetas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ætas.</marginalia_text>
+                </position>
+            </language>
+            <translation>An age.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Interest subitò defecerit, an longiore ualetudine consumtpus sit." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ægrotationis tempus</marginalia_text>
+                </position>
+            </language>
+            <translation>A period of sickness.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="aliâs incertam" type="straight"/>
+        <underline language="LA" method="pen" text="in extrariam, aut in ipsius qui" type="straight"/>
+        <underline language="LA" method="pen" text="quas spagere quàm" type="straight"/>
+        <underline language="LA" method="pen" text="si unum aliquid affirmaris, probandum est, aut causa periclitandum" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">5</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

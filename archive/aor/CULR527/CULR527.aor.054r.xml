@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.054r.tif" pagination="54" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="nos per circulum minorem non posse, sed per maiorem naviagere" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        An per circulos maiores aut minores navigan[us]?
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Whether to sail on larger or smaller circles?
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Per Circulu[m] [Maius]    
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Through a greater circle.</translation>  
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ubique AEquatorem petere" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; illuc ire nunquam, imò aequali semper distantia &amp; altitudine peragrare, conuenisses me" type="straight"/>
+        <underline language="LA" method="pen" text="Mathematicorum autem exacta discussio non in uniuersis est flagitanda: sed in hisce dumtaxat quae materia uacant. quapropter" type="straight"/>
+        <underline language="LA" method="pen" text="per circulum minorem non posse, sed per maiorem naviagere" type="straight"/>
+
+    </annotation>
+</transcription>

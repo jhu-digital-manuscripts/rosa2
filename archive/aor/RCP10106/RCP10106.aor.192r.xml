@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.192r.tif" pagination="383" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Crispus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Crispus</marginalia_text>
+                    <person name="Lucius Junius Quintus Vibius Crispus"/>
+                </position>
+            </language>
+            <translation>Crispus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Senecae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Seneca</marginalia_text>
+                    <person name="Seneca"/>
+                </position>
+            </language>
+            <translation>Seneca.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex contrarijs" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ex co[n]traijs</marginalia_text>
+                </position>
+            </language>
+            <translation>From contraries.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ex co[m]paratio[n]e</marginalia_text>
+                </position>
+            </language>
+            <translation>From comparison.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="à uerbo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A verbo</marginalia_text>
+                </position>
+            </language>
+            <translation>From a word.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ambiguitas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Amiguitas</marginalia_text>
+                </position>
+            </language>
+            <translation>Ambiguity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἀποκαρτέρησις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ἀποκαρτέρησις</marginalia_text>
+                </position>
+            </language>
+            <translation>Starvation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Alexandrum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Alexander</marginalia_text>
+                    <person name="Alexander the Great"/>
+                </position>
+            </language>
+            <translation>Alexander.</translation>
+        </marginalia>
+     
+        <underline language="LA" method="pen" text="&amp; leges diligentissimae pudoris custodes, deimas uxoribus dari, quartas meretricibus iubent" type="straight"/>  
+        
+    </annotation>
+</transcription>

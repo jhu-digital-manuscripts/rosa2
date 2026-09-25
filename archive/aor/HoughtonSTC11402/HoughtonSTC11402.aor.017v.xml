@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.017v.tif" reader="Harvey" signature="[Bii[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="trenche; fire" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A dooble Impediment to his Enemy.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[the] same.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="out after theym" type="straight"/>
+        <underline language="EN" method="pen" text="policie intised out" type="straight"/>
+        <underline language="EN" method="pen" text="opteyned the hauen" type="straight"/>
+        <underline language="EN" method="pen" text="a trenche in maner of" type="straight"/>
+        <underline language="EN" method="pen" text="croked mone, whiche" type="straight"/>
+        <underline language="EN" method="pen" text="whanne he had" type="straight"/>
+        <underline language="EN" method="pen" text="with wodde" type="straight"/>
+        <underline language="EN" method="pen" text="a fyre" type="straight"/>
+        <underline language="EN" method="pen" text="a trenche with old house rafters" type="straight"/>
+        <underline language="EN" method="pen" text="stakes" type="straight"/>
+        <underline language="EN" method="pen" text="and other stuffe mete to" type="straight"/>
+        <underline language="EN" method="pen" text="and set it on fyer" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--theym, and-->
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="trenche"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="fyre"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="trenche"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="fyer"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

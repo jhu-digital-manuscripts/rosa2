@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.269v.tif" pagination="91" reader="John Dee" signature="[Hhh iij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Albericu[m] de Veer" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Albericus de Ver
+                    </marginalia_text>
+                    <person name="Aubrey de Vere II"/>  
+                </position>
+            </language>
+            <translation>
+                Aubrey de Vere, 2nd Earl of Oxford.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Petrum de Malo lacu" hand="Italian" id="RCP10653:554:m0001"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Petrus de Malolacu Matth. Paris pag. 300 <!--JG: Not sure what Dee refers to. Page 300 (in both of these books by Paris doesn't mention this guy-->
+                    </marginalia_text>
+                    <person name="Peter de Maulay"/>
+                    <person name="Matthew Paris"/>
+                </position>
+            </language>
+            <translation>
+                Peter de Maulay, Matthew Paris page 300.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="hoc errore &amp; pertinatia" type="straight"/>
+        <underline language="LA" method="pen" text="Albericu[m] de Veer" type="straight"/>
+        <underline language="LA" method="pen" text="de VVrotham, custode[m] Portuum" type="straight"/>
+        <underline language="LA" method="pen" text="Brie[n]nium de Insula" type="straight"/>
+        <underline language="LA" method="pen" text="Galfridum de Luci" type="straight"/>
+        <underline language="LA" method="pen" text="Canteleu, &amp; Gulihelmum" type="straight"/>
+        <underline language="LA" method="pen" text="Braibroc, &amp; Henricum" type="straight"/>
+        <underline language="LA" method="pen" text="Petrum de Malo" type="straight"/>
+        <underline language="LA" method="pen" text="Fulcone[m], &amp; Gulihelmum Brivver" type="straight"/>
+        
+        <graph book_orientation="0" method="pen" place="head" type="genealogical_tree">
+            <node anchor_text="Robertum de Braibroc" id="n1" person="Robert of Braybrooke">Rob. de Braibrok</node>
+            <node anchor_text="Henricum" id="n2" person="Henry of Braybrooke">Henricus</node>
+            <link from="n1" relationship="has_child" to="n2"/>
+        </graph>
+        
+    </annotation>
+</transcription>

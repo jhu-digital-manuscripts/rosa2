@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.248r.tif" pagination="241" reader="John Dee" signature="PP"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Nulla figura huic co[n]stitutio[n]e convenire p[otes]t</marginalia_text>
+                </position>
+            </language>
+            <translation>No figure can be fitted to this constitution.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Terrea &amp; aquea bello, Aerea &amp; ignea contemplationi, ob id atroces bello gentes, literis semper inimicae fuerunt" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+    </annotation>
+</transcription>

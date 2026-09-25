@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.495v.tif" pagination="442" reader="John Dee" signature="[EEE.v.[v]]"/>   
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cygnus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Cygnus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cephei" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cepheus</marginalia_text>
+                </position>
+            </language>
+            <translation>Cepheus</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pegasus</marginalia_text>
+                </position>
+            </language>
+            <translation>Pegasus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nixi " hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Nixi fugo asis.</marginalia_text> <!-- FSF: not sure about what follows Nixi -->
+                </position>
+            </language>
+            <translation/>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="flexum genus" type="straight"/>
+        <underline language="LA" method="pen" text="Gestist: iam verò clinata est vngula vehemens Fortis equi propter" type="straight"/>
+        <underline language="LA" method="pen" text="Tum fixum tremulo quatietur" type="straight"/>
+        
+        <errata amendedtext="Quòd" copytext="Quod" language="LA"/>
+        
+    </annotation>
+</transcription>

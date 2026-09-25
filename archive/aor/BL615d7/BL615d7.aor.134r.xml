@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.134r.tif" pagination="134" reader="John Dee"/>
+    
+    <annotation>
+        
+       
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                   <marginalia_text>Of the speaking Idols vide sup[ra] 125. v.</marginalia_text>
+                    <internal_ref text="sup[ra]">
+                        <target ref="BL615d7:615_d_7_f125v" text="125. v."/>
+                    </internal_ref>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="Chi ha le ossa di suo padre" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; di sua madre" type="straight"/>
+        <underline language="IT" method="pen" text="fatti di pietra, o di legno" type="straight"/>
+        <underline language="IT" method="pen" text="che parlano" type="straight"/>
+        <underline language="IT" method="pen" text="quei semplici ignoranti" type="straight"/>
+        <underline language="IT" method="pen" text="facciano quelli" type="straight"/>
+        <underline language="IT" method="pen" text="propriamente" type="straight"/>
+        <underline language="IT" method="pen" text="quei Demonij" type="straight"/>
+        <underline language="IT" method="pen" text="Cohoba" type="straight"/>
+        
+        <mark language="IT" method="pen" name="equal_sign" place="right_margin" text="ignoranti"/>
+           
+    </annotation>
+    
+</transcription>

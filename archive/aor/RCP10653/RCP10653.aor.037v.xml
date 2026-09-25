@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.037v.tif" pagination="66" reader="John Dee" signature="[F iij.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Belinus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Vide de isto Belino
+                    </marginalia_text>
+                    <person name="Beli Mawr"/>
+                </position>
+            </language>
+            <translation>
+                See about this Belinus.  
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="eo Belinus" type="straight"/>
+        
+    </annotation>
+</transcription>

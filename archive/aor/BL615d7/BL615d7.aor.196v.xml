@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.196v.tif" pagination="[196v]" reader="John Dee" signature="[Bbiiij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="che non si saluarono se non III, ò IIII di tutti i XVIII nauagli" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>24 ships lost</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="accoglienza, che anco à gli stata fatta sarebbe, non che a loro, ch erano di vna isteßa natione" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Note</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="ingratitudine" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ingratitudo maxima</marginalia_text>
+                </position>
+            </language>
+            <translation>Greatest ingratitude.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="la maggior parte de'" type="straight"/>
+        <underline language="IT" method="pen" text="tutti i XXVIII" type="straight"/>
+        <underline language="IT" method="pen" text="Ammiraglio preueduta cotal" type="straight"/>
+        <underline language="IT" method="pen" text="accoglienza, che anco à gli strani stata fatta sarebbe, non che à loro, che erano di vna isteßa natione" type="straight"/>
+        <underline language="IT" method="pen" text="raddoppiaua la ingiuria, &amp; ingratitudine," type="straight"/>
+        <underline language="IT" method="pen" text="da se data a lore inhonore" type="straight"/>
+        <underline language="IT" method="pen" text="negato il rifugio" type="straight"/>
+        <underline language="IT" method="pen" text="riparo della sua" type="straight"/>
+        <underline language="IT" method="pen" text="partirono III nauigli" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin" text="accoglienza, che anco à gli stata fatta sarebbe, non che à loro, ch erano di vna istessa natione"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

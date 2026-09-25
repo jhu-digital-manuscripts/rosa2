@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.205r.tif" pagination="233" reader="Harvey" signature="[P5r]"/>	<!-- ABO 209right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="FR">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Desir n'a repos.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Oculus Lyncis, in manu
+						Archimedis.
+					</marginalia_text>
+					<person name="Archimedes"/>
+				</position>
+			</language>
+			<translation>Desire doesn't rest. The eye of the lynx, in the hand of Archimedes.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Vnicus Mundi Panergus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The unique panergus of the world.</translation> <!--JG: Have to agree on a standardized way to translate panergus!--> <!-- CG: Neologism! -->
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						mirabile forza dell'Occasione.	
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Quod semidiscitur, aut semiexercetur, nihil ualet.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The wondrous force of the occassion. That, which is learned or exercised half-heartedly, is worth nothing.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Iamiamq[ue] Singula necessaria: statim omnia vtilia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>At every moment, a singular necessity: at once entirely useful.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Vita, Vigilia. Vita, Militia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Life, vigilant. Life, militant.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Solus Entelechus, scit eloqui; exequi;
+						et viuere.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The only actualization knows to utter, strive, and to live.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Plus anima[e], viuidiq[ue] spiritus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A spirit, more vital and lively.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Viua dictorum, factorumq[ue] hyperbole.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A fresh hyperbole of maxims and actions.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Non prodest alius, sed aliud. Da mihi non plures artifices, sed plus artis:
+						nec operum numero, sed pondere crescit scientia, facultas, fama.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Another man is not useful, but another thing. Do not give my more artists, but more art:
+				not with the number of works, but with weight does knowledge, ability, and fame increase.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Is verè Sapiens, qui Vtilia, non qui Multa scit. È gra[e]co A[e]schyli. 
+					</marginalia_text>
+					<person name="Aeschylus"/>
+				</position>
+			</language>
+			<language ident="IT">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Chi troppo abraccia, poco stringe.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Dimidiu[m] perfectu[m], plus toto imperfecto.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Wise is he who knows useful things, not he who knows many things. From the Greek Aeschylus. He who embraces too much, presses too little. Half perfect, is more than wholly imperfect.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="vna Lepre" type="straight"/>
+		<underline language="IT" method="pen" text="quà" type="straight"/>
+		<underline language="IT" method="pen" text="chi là à torme" type="straight"/>
+		<underline language="IT" method="pen" text="soldati di dentro, i quali su per le mura" type="straight"/>
+		<underline language="IT" method="pen" text="città esplorauano" type="straight"/>
+		<underline language="IT" method="pen" text="inimici in quel punto gli volessero assalire, tutti" type="straight"/>
+		<underline language="IT" method="pen" text="spauentati abbandonarono vilmente la muraglia" type="straight"/>
+		<underline language="IT" method="pen" text="accortisi gli Imperiali" type="straight"/>
+		<underline language="IT" method="pen" text="non perdendo tanta occasione" type="straight"/>
+		<underline language="IT" method="pen" text="subitamente assaltarono la terra" type="straight"/>
+		<underline language="IT" method="pen" text="resistenza, facilmente" type="straight"/>
+		<underline language="IT" method="pen" text="espugnarono" type="straight"/>
+		<underline language="IT" method="pen" text="Vita comparata" type="straight"/>
+		<underline language="IT" method="pen" text="alla militia" type="straight"/>
+		<underline language="IT" method="pen" text="IOB trauagliato" type="straight"/>
+		<underline language="IT" method="pen" text="non vna continua militia" type="straight"/>
+		<underline language="IT" method="pen" text="L'esito della militia" type="straight"/>
+		<underline language="IT" method="pen" text="sempre incerto" type="straight"/>
+		<underline language="IT" method="pen" text="come si muore" type="straight"/>
+		<underline language="IT" method="pen" text="s'entra al sicuro" type="straight"/>
+		<underline language="IT" method="pen" text="si nauiga" type="straight"/>
+		<underline language="IT" method="pen" text="mentre si viue" type="straight"/>
+		<underline language="IT" method="pen" text="viene alla morte" type="straight"/>
+		<underline language="IT" method="pen" text="piglia porto" type="straight"/>
+		<underline language="IT" method="pen" text="sia la Fortuna" type="straight"/>
+		<underline language="IT" method="pen" text="sua ruota" type="straight"/>
+		<underline language="IT" method="pen" text="fortuna è influentia" type="straight"/>
+		<underline language="IT" method="pen" text="la quale procede" type="straight"/>
+		<underline language="IT" method="pen" text="reuolutione de' cieli" type="straight"/>
+		<underline language="IT" method="pen" text="la sua ruota à tondo à tondo" type="straight"/>
+		<underline language="IT" method="pen" text="la richezza" type="straight"/>
+		<underline language="IT" method="pen" text="superbia" type="straight"/>
+		<underline language="IT" method="pen" text="superbia impatienza" type="straight"/>
+		<underline language="IT" method="pen" text="l'impatienza guerra" type="straight"/>
+		<underline language="IT" method="pen" text="guerra pouertà" type="straight"/>
+		
+		<mark language="IT" method="pen" name="quotation_mark" place="left_margin" text="spauentati abbandonarono vilmente la muraglia"/>
+		<mark method="pen" name="quotation_mark" place="left_margin"/> <!--to;-->
+		<mark method="pen" name="plus_sign" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--ro-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--spa-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--mon-->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="fortuna"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/>
+		
+    </annotation>
+</transcription>

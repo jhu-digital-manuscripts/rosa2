@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.125r.tif" pagination="241" reader="John Dee" signature="X"/>
+    <annotation>
+        
+        <marginalia anchor_text="concilium congregauit in loco qui Hathfelde appellatur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Concilium Prouinciale, Hathfeldense
+                    </marginalia_text>
+                    <location name="Hatfield"/>
+                </position>
+            </language>
+            <translation>
+                The Provincial Council of Hatfield.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="concilium congregauit" type="double"/>
+        <underline language="LA" method="pen" text="Hathfelde" type="straight"/>
+        <underline language="LA" method="pen" text="tradidit symbolum" type="straight"/>
+        <underline language="LA" method="pen" text="Suscipimus sanctos &amp; vniuersales quinque" type="straight"/>
+        <underline language="LA" method="pen" text="Nicenam" type="straight"/>
+        <underline language="LA" method="pen" text="Constantinopolitanam" type="straight"/>
+        <underline language="LA" method="pen" text="Ephesinam" type="straight"/>
+        <underline language="LA" method="pen" text="Chalcedonensem" type="straight"/>
+        <underline language="LA" method="pen" text="Constantinopolitana[m]" type="straight"/>
+        <underline language="LA" method="pen" text="haeresim Monothelitarum" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/> <!-- sempiternis. Eodem -->
+        
+    </annotation>
+</transcription>

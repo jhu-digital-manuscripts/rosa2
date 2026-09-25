@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="RCP7831-1.024r.tif" pagination="37" reader="Dee" signature="Eiij[r]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="pulmonibus; arterijs" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pulmon[es]. Arteria[e].</marginalia_text>
+                </position>
+            </language>
+            <translation>Lungs. Arteries.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="coctio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Coctrix.</marginalia_text>
+                </position>
+            </language>
+            <translation>Cooker.</translation> <!--JG: Unsure-->
+        </marginalia>
+        
+        <marginalia anchor_text="vegetatrice[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vege[trix].</marginalia_text>
+                </position>
+            </language>
+            <translation>Invigorator.</translation> <!--JG: Unsure-->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="arterijs" type="straight"/>
+        <underline language="LA" method="pen" text="Sed vegetatrice[m] vim, ad" type="straight"/>
+        <underline language="LA" method="pen" text="qui, non vt volunt, sed vt possunt libenter alijs benefaciunt" type="straight"/>
+        <underline language="LA" method="pen" text="siculissant qua[n]doque" type="straight"/>
+        <underline language="LA" method="pen" text="benefactorum sunt memores" type="straight"/>
+        <underline language="LA" method="pen" text="ad vindicta[m] procliues videntur qua[n]doque" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

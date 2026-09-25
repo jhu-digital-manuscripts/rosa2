@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.043r.tif" pagination="xxxix[r]" reader="Harvey" signature="Kiii[r]"/>
+    <annotation>
+    	<!-- Marginalia -->
+    	<marginalia anchor_text="Ansigne bearers" hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					Nota.
+    					Pro Rebusp[ublicis] contrà Monarchias.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Note.
+    			In favor of Republics, against Monarchies.
+    		</translation>
+    	</marginalia>
+    	<marginalia anchor_text="constrained to kepe liuely the warlike orders" hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					Audaces nimio cogimur esse metu.
+    				</marginalia_text>
+    				<X-ref book_title="Tristia" language="LA" person="Ovid" text="Audaces nimio cogimur esse metu."/>
+    			</position>
+    		</language>
+    		<translation>
+    			"Through fear we are exceedingly compelled to be bold."
+    		</translation>
+    	</marginalia>
+    	
+    	<!-- Underlines -->
+	<underline language="EN" method="pen" text="doinges excellent" type="straight"/>
+    	<underline language="EN" method="pen" text="To Africke" type="straight"/>
+    	<underline language="EN" method="pen" text="nourished more" type="straight"/>
+    	<underline language="EN" method="pen" text="Carthagines common weale" type="straight"/>
+    	<underline language="EN" method="pen" text="common weales, there grow more excellent" type="straight"/>
+    	<underline language="EN" method="pen" text="kingdomes" type="straight"/>
+    	<underline language="EN" method="pen" text="because in common weales" type="straight"/>
+    	<underline language="EN" method="pen" text="vertue is" type="straight"/>
+    	<underline language="EN" method="pen" text="kingdomes it" type="straight"/>
+    	<underline language="EN" method="pen" text="vertuous men" type="straight"/>
+    	<underline language="EN" method="pen" text="they are extincte" type="straight"/>
+    	<underline language="EN" method="pen" text="full of common weales, and of princedomes" type="straight"/>
+    	<underline language="EN" method="pen" text="feare that the" type="straight"/>
+    	<underline language="EN" method="pen" text="to kepe liuely the warlike orders" type="straight"/>
+    	<underline language="EN" method="pen" text="honour them, which in those most" type="straight"/>
+    	<underline language="EN" method="pen" text="Grece" type="straight"/>
+    	<underline language="EN" method="pen" text="kingdome of the Macdonians" type="straight"/>
+    	<underline language="EN" method="pen" text="many common weales, &amp; in euery" type="straight"/>
+    	<underline language="EN" method="pen" text="most excellent men" type="straight"/>
+    	<underline language="EN" method="pen" text="the Romaines" type="straight"/>
+    	<underline language="EN" method="pen" text="Sannites" type="straight"/>
+    	<underline language="EN" method="pen" text="the Toscanes" type="straight"/>
+    	<underline language="EN" method="pen" text="the Gallie Cisalpini" type="straight"/>
+    	<underline language="EN" method="pen" text="Almaine, were full of common" type="straight"/>
+    	<underline language="EN" method="pen" text="Spaine likewise" type="straight"/>
+    	<underline language="EN" method="pen" text="Romanes, there are" type="straight"/>
+    	<underline language="EN" method="pen" text="of the writers" type="straight"/>
+    	<underline language="EN" method="pen" text="whom followe fortune" type="straight"/>
+    	<underline language="EN" method="pen" text="to honour the conquerours" type="straight"/>
+    	<underline language="EN" method="pen" text="whom fought. CL. yeres with the Romane people, before" type="straight"/>
+    	<underline language="EN" method="pen" text="exceeding many excellent men" type="straight"/>
+    	<underline language="EN" method="pen" text="Fraunce" type="straight"/>
+    	<underline language="EN" method="pen" text="in Spaine" type="straight"/>
+    	<underline language="EN" method="pen" text="that vertue" type="straight"/>
+    	<underline language="EN" method="pen" text="in particuler" type="straight"/>
+    	<underline language="EN" method="pen" text="generally in the people, where" type="straight"/>
+    	<underline language="EN" method="pen" text="to the Starres, the obstinatenesse that was" type="straight"/>
+    	<underline language="EN" method="pen" text="them, to defende their libertie" type="straight"/>
+    	<underline language="EN" method="pen" text="most dominions" type="straight"/>
+    	<underline language="EN" method="pen" text="most valiaunt" type="straight"/>
+    	<underline language="EN" method="pen" text="of necessitie, that extinguishing" type="straight"/>
+    	<underline language="EN" method="pen" text="is extinct straightway, the occasion" type="straight"/>
+    	
+    	<!-- Marks -->
+    	<mark language="EN" method="pen" name="plus_sign" place="right_margin" text="nourished more"/>
+    	<mark language="EN" method="pen" name="hash" place="right_margin" text="feare that the"/>
+    	<mark method="pen" name="plus_sign" place="right_margin"/>
+    	<mark method="pen" name="hash" place="right_margin"/>
+    	<mark language="EN" method="pen" name="hash" place="right_margin" text="people, before"/>
+    	<mark language="EN" method="pen" name="hash" place="right_margin" text="generally in the people, where"/>
+    	<mark language="EN" method="pen" name="hash" place="right_margin" text="them, to defende their libertie"/>
+    	<mark language="EN" method="pen" name="hash" place="right_margin" text="of necessitie, that extinguishing"/>
+    	<mark language="EN" method="pen" name="hash" place="right_margin" text="is extinct straightway, the occasion"/>
+
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="doinges excellent"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="To Africke"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="common weales"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="more excellent"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="kingdomes"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="constrained to kepe liuely the warlike orders"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="to honour the conquerours"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="in particuler"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="generally in the people"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="obstinatenesse"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="libertie"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="most dominions"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="most valiaunt"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="vertue"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- straightway, the -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="occasion"/>
+    	
+    	<!-- Errata -->
+    	<errata amendedtext="who" copytext="whom" language="EN"/>
+    	<errata amendedtext="who" copytext="whom" language="EN"/>
+    	
+    </annotation>
+</transcription>

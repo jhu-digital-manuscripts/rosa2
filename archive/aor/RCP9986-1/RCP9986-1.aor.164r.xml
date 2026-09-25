@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.164r.tif" pagination="165" reader="John Dee"/>   
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Amor.</marginalia_text>
+                </position>
+            </language>
+            <translation>Love.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Saepe tepent alij iuuenes, ego semper amaui" type="straight"/>
+        <underline language="LA" method="pen" text="Et si quid faciam nunc quoq[ue] quaeris, amo" type="straight"/>
+        <underline language="LA" method="pen" text="At, siquis male fert indignae regna puellae" type="straight"/>
+        <underline language="LA" method="pen" text="Ne pereat, nostrae sentiat artis opem. Cur aliquis laqueo collum nodatus amator A trabe sublimi triste pependit onus?              Cur aliquis rigido fodiat sua pectora ferro? Inuidiam caedis pacis amator habes. Qui nisi desierit, misero periturus amore est Desinat, &amp; nulli funeris author eris" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

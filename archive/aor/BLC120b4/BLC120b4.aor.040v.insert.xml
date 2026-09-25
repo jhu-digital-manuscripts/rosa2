@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.040v.insert.tif" origin="added" reader="John Dee" status="fixed"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Ideoq[ue] dispositionis &amp; [deleted: totius] operis radix calor est. Sed cu[m] [etc.]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                For this reason, the root of disposition and the work is in the heat. But with etc.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Et certe Ignis, siue Calor, est Ignis sive calor intentissimus, sic
+                        testante Maria: Mensura ignis tui esto sicut solis in diebus
+                        Junij &amp; Juli&amp;. Et vocatur Fimus equiuns, vt inquit Alphidius. Igne coquitur, quod tibi ostenda[m]. [etc]
+                    </marginalia_text>
+                    <person name="Alphidius"/>
+                    <person name="Mary the Jewess"/>
+                </position>
+            </language>
+            <translation>
+                And certainly, fire or heat is fire or the most intense heat, as attested to by Mary the Jewess: A measure of your fire shall be just as the sun during the days of June and July.
+                And it is called a horse dung, as Alphidius says. What I showed you is matured by fire etc.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Nam sicut Ignis Fimi augmentat frigidu[m] &amp; humidu[m], propter sua[m]
+                        frigiditatem &amp; humiditate[m]; qua[e] prohibetur: Ita fortitudo ignis calidi <!-- FSF: running over, which clarifies the endings missing on this page--> 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                For just as the heat of the dung increases the cold and humid because of its cold and humidity, which are condensed. In such a way the strength of hot [and dry] fire 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>Putrefactio 539 Generatio 386 Alteratio 229</marginalia_text>
+                </position>
+            </language>
+            <translation>Putrefaction, generation, alteration.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>Putrefactio 772 Generatio 544 Alteratio 326</marginalia_text>
+                </position>
+            </language>
+            <translation>Putrefaction, generation, alteration.</translation>
+        </marginalia>
+        
+        <calculation book_orientation="0" method="pen" place="full_page" type="arithmetic">
+            50 + 5 + 400 + 200 + 5 + 10 = 670
+            9 + 5 + 70 + 400 = 484
+            670 + 1154 = 1154
+        </calculation>
+        
+        <calculation book_orientation="0" method="pen" place="full_page" type="arithmetic">
+            200 + 90 + 6 + 700 = 996
+            1 + 30 + 5 + 10 + 600 = 646
+        </calculation>
+        
+        <calculation book_orientation="0" method="pen" place="full_page" type="arithmetic">
+            539 + 386 + 229 = 1154
+        </calculation>
+        
+        <calculation book_orientation="0" method="pen" place="full_page" type="arithmetic">
+            772 + 544 + 326 = 1642
+        </calculation>
+        
+        <table place="full_page" type="standard_table">
+            <tr>
+                <td>N</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>E</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Y</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td>Σ</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>E</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>I</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td/>
+                <td>670</td>
+            </tr>
+            
+            <tr>
+                <td>Θ</td>
+                <td/>
+            </tr>
+            <tr>
+                <td>E</td>
+                <td/>
+            </tr>
+            <tr>
+                <td>O</td>
+                <td/>
+            </tr>
+            <tr>
+                <td>Y</td>
+                <td/>
+            </tr>
+            <tr>
+                <td/>
+                <td>484</td>
+            </tr>
+            <text hand="Italian" language="EL">NEUSEI THEOU</text>
+            <translation>The will of God.</translation>
+        </table>
+        
+        <table place="full_page" type="standard_table"> <!--JG: Hebrew needed-->
+            <tr>
+                <td>ן‬</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td/>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td/>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td/>
+                <td>700</td>
+            </tr>
+            <tr>
+                <td/>
+                <td>996</td>
+            </tr>
+            <tr>
+                <td/>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td/>
+                <td>30</td>
+            </tr>
+            
+            <tr>
+                <td/>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td/>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td/>
+                <td>600</td>
+            </tr>
+            <tr>
+                <td/>
+                <td>646</td>
+            </tr>
+            <text hand="Italian" language="IW">RACON ALHIM</text>
+        </table>
+        
+    </annotation>
+</transcription>

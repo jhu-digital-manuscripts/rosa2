@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.210r.tif" pagination="419" reader="John Dee" signature="D 2"/> 
+    <annotation>
+        
+        <!-- M.B. Uncertain how to capture two symbols in the margins. -->
+        
+        <marginalia anchor_text="ualidius bonos inhibet pudor, quàm metus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Validius bonos inhibet pudor q[uam] metus</marginalia_text>
+                </position>
+            </language>
+            <translation>Good men are more inhibited by shame than by fear.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nolle nos credant" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nos nolle creda[n]t</marginalia_text>
+                </position>
+            </language>
+            <translation>They believe we don't want to.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="diuerticula &amp; anfractus suggugia sunt infirmitati" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Diuerticula &amp; anfractus suffugia sunt infirmitati.</marginalia_text>
+                </position>
+            </language>
+            <translation>These byways winding are refuge of weaknesses..</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="persona obstaret rectae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Persona si obstet or[ati]o[n]i recta[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Personality obstructs straighforwardd speech.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="asperas figuras, sed palàm contrarias causae pleriq[ue]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>quomo[do] no[n] solum aspera[e] sed causa[e] co[n]traria[e] figura[e] reddu[n]t?</marginalia_text>
+                </position>
+            </language>
+            <translation>How figures are adopted which are not only harsh but represent the contrary to the cause.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ualidius bonos inhibet pudor, quàm metus" type="straight"/>
+        <underline language="LA" method="pen" text="iudices aut" type="straight"/>
+        <underline language="LA" method="pen" text="Nam rectu[m] genus approbari nisi maximis uiribus no[n] potest: haec diuerticula &amp; anfractus suffugia sunt in firmitati, ut qui cursu parum              uale[n]t, flexu eludunt, cum haec quae affecatur ratio sententiarum, non procul à ratione ioca[n]di abhorreat. Adiuuat etiam, quòd auditor gaudet intelligere, &amp; fauet ingenio suo, &amp;              alio dicente, se laudat" type="straight"/>
+        
+        <symbol name="Unidentified" place="right_margin"/>
+        
+    </annotation>
+</transcription>

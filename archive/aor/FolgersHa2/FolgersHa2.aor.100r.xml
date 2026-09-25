@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.100r.tif" pagination="23" reader="Harvey" signature="B4[r]"/>	<!-- ABO 104right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.100r_0001" marginalia_continues_from="Ha2.099v_0001" marginalia_from_transcription="Ha2.099v.xml">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						<!-- Continued from facing page, head, Ha2.99v --> [B3v]: { Pro vno Amico singula:] 
+						{ In vnum Hostem omnia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				[[B3v]: Singular things on behalf of one friend:] All things against one enemy.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Minuta non curat Jurisprudentia: summa
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						considerat, et finem respicit.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Jurisprudence cares not for minutiae, but considers the highest matters
+				and looks towards the end.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Aurifaber Fortuna[e]. Centimanus.
+					</marginalia_text>
+					<person name="Appius Claudius Caecus"/>
+				</position>
+			</language>
+			<translation>
+				The goldsmith of Fortune. Appius Claudius Caecus.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Eutrapelus, a peerles 
+						Artist: a matchles Professour: &amp; a most excelle[n]t
+						man, at euerie proofe of the Worthiest men.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						At anie negotiation, euer Singular, for vigour, reason, &amp; diligence: which
+						easely supplie other defects; &amp; generally reigne in all specials.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						In illum ingentem omnia terribilia: sed
+						Crypticè: vt Themistocles in Xerxem.
+					</marginalia_text>
+					<person name="Themistocles"/>
+					<person name="Xerxes"/>
+				</position>
+			</language>
+			<translation>
+				All things are terrifying in that remarkable matter: but
+				concealed, as Themistocles against Xerxes.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Multi Patrocli: vnus Achilles. Non multi Pompeij: vnicus Ca[e]sar.
+					</marginalia_text>
+					<person name="Patroclus"/>
+					<person name="Achilles"/>
+					<person name="Pompey"/>
+					<person name="Julius Caesar"/>
+				</position>
+			</language>
+			<translation>
+				Many Patrocluses, one Achilles. Several Pompeys, one sole Caesar.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Pro Rege, aut Duce Optima: contra Regem, aut Ducem Maximum. 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				On behalf of the king or best leader: against the king, or greatest leader.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Resolutio Achitophelis: executio Jehu: scriptio Esdra[e].
+					</marginalia_text>
+					<person name="Ahitophel"/>
+					<person name="Jehu"/>
+					<person name="Ezra"/>
+				</position>
+			</language>
+			<translation>
+				Ahitophel's solution; Jehu's execution; Ezra's writing. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Sapit, qui prouidet suo Microcosmo: tam maturè, quàm aptè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				He who provides for his microcosm both at the right time and fittingly is one who understands.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Fattion del naso" type="straight"/>
+		<underline language="IT" method="pen" text="natura dell'huomo" type="straight"/>
+		<underline language="IT" method="pen" text="i nasi arcuati" type="straight"/>
+		<underline language="IT" method="pen" text="chiamano Grypi &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="perche Ciro" type="straight"/>
+		<underline language="IT" method="pen" text="haueua Catilina" type="straight"/>
+		<underline language="IT" method="pen" text="huomo ambitioso, &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="il corbo" type="straight"/>
+		<underline language="IT" method="pen" text="mezzo del naso alquanto" type="straight"/>
+		<underline language="IT" method="pen" text="Scipione Affricano" type="straight"/>
+		<underline language="IT" method="pen" text="d'huomo magnanimo &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="becco dell' Aquila" type="straight"/>
+		<underline language="IT" method="pen" text="alla generosità d'essa" type="straight"/>
+		<underline language="IT" method="pen" text="Nobilissima comparatione" type="straight"/>
+		<underline language="IT" method="pen" text="muouono le membra" type="straight"/>
+		<underline language="IT" method="pen" text="volontà &amp; con la mente" type="straight"/>
+		<underline language="IT" method="pen" text="la diuinità" type="straight"/>
+		<underline language="IT" method="pen" text="muta tutto" type="straight"/>
+		<underline language="IT" method="pen" text="Le lettere" type="straight"/>
+		
+		<symbol language="EN" name="SS" place="intext" text="Eutrapelus, a peerles Artist: a matchles Professour: &amp; a most excelle[n]t man, at euerie proofe of the Worthiest men."/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--Gry-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--drit-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--for-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--cor-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--ver-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--Si-->
+		
+		<mark method="pen" name="vertical_bar" place="intext"/> <!--corbo: L'altra-->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="magnanimo"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="muouono"/>
+		<mark language="IT" method="pen" name="straight_quotation_mark" place="intext" text="volontà"/>
+		<mark method="pen" name="straight_quotation_mark" place="intext"/>
+		
+    </annotation>
+</transcription>

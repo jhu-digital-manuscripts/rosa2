@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.018v.tif" reader="John Dee" signature="[Cvj[v]]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Euclides in decimo tractavit Lineas, no[n] numeros vt q[ui]dam co[n]te[n]dit
+                    </marginalia_text>
+                    <person name="Euclid"/>
+                </position>
+            </language>
+            <translation>
+                In his tenth [book], Euclid treated lines, not numbers as one asserted.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="linea vt subiectu[m] passio[n]is r[ati]onalis et irr[ati]onalis co[n]siderat[ur] nu[m]ero" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Linea[e] numeri { r[ati]onales irrationales  
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Lines are rational or irrational numbers.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="diuersa subiecta vt diuersa" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        diuersa subiecta vt diuersa
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Different subjects as different.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="genus subalternatu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        genus subalternatu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A subaltern kind.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="methaphisicu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Metaphysic[us]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Metaphysics.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Duo cubi vn[us] cubus multiplicatione efficiu[n]tur
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Two cubes/one cube are effected by multiplication.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="habes ex algebra et" type="straight"/>
+        <underline language="LA" method="pen" text="ex decimo geometrie" type="straight"/>
+        <underline language="LA" method="pen" text="linea vt subiectu[m] passio[n]is r[ati]onalis et irr[ati]onalis co[n]siderat[ur] nu[m]ero" type="straight"/>
+        <underline language="LA" method="pen" text="cu[m] linea sit nu[m]erus nu[m]eratus tunc p[er] causas et principia nu[m]eri p[ro]bant[ur]" type="straight"/>
+        <underline language="LA" method="pen" text="q[uod] p[ro]portio vni[us] ad alteru[m] sit sicut" type="straight"/>
+        <underline language="LA" method="pen" text="sic q[ua]si de eode[m]" type="straight"/>
+        <underline language="LA" method="pen" text="i[d est] subiectu[m] geometrie co[n]tineret[ur] sub subiecto arismetrice" type="straight"/>
+        <underline language="LA" method="pen" text="diuersa subiecta vt diuersa" type="straight"/>
+        <underline language="LA" method="pen" text="q[uod] arithmetrica et geometrica vnaqueq[ue] semp[er] h[abet] genus p[ro]priu[m] siue subiectu[m] circa q[uo]d fit demo[n]stratio p[er] passione[m]" type="straight"/>
+        <underline language="LA" method="pen" text="methaphisicu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="angulos et duodeci[m] latera eq[ua]lia vt lo[n]gitudo co[m]par" type="straight"/>
+        <underline language="LA" method="pen" text="additione duoru[m] nu[m]eror[um] cuborum" type="straight"/>
+        <underline language="LA" method="pen" text="additio[n]is hoc vniuersalit[er] falsum esset" type="straight"/>
+        <underline language="LA" method="pen" text="q[uod] si cubus in cubum ducat[ur] cubum vnu[m] p[ro]ducat" type="straight"/>
+        
+        <mark method="pen" name="circumflex" place="intext"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- cubus sicut -->
+        <mark method="pen" name="comma" place="intext"/> <!-- irratinale eade[m] -->
+        
+        <errata amendedtext="irrationale" copytext="irratinale" language="LA"/>
+        
+    </annotation>
+</transcription>

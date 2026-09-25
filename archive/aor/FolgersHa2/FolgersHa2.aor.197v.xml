@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.197v.tif" pagination="218" reader="Harvey" signature="[O5v]"/>	<!-- ABO 202left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.197v_0001" marginalia_continues_to="Ha2.198r_0001" marginalia_to_transcription="Ha2.198r.xml">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Vel Arte, et Virtute: [p. 219: Vel ratione, et industria.]
+							<!-- Continues onto facing page, head, Ha2.198r -->
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Either by art and virtue: [p. 219: or by reason and industry.]</translation>
+		</marginalia>
+		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.197v_0002" marginalia_continues_to="Ha2.198r_0002" marginalia_to_transcription="Ha2.198r.xml">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Sum other prudent; He profounde:
+						other industrious; He valorous: Other [p. 219: Other haue practis: onlie He entelechie.]
+							<!-- Continues onto facing page, in text, Ha2.198r -->						
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						dextrè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Skillfully.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						{ Quant[a]e Causa[e], tanti effectus.
+						Domina Fortuna[e], Virtus: sed egregia. 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The effects are as great as the causes are many. Virtue, the lady of fortune: but extraordinary.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						To entelechise your mind, boddie, &amp; fortune; the greatest of Secrets. In all Occurents,
+						nothing more importes, then pra[e]sently to resolue the substance, &amp; circumstance of the Case,
+						with general, special, &amp; singular reason,
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						nudis terminis:
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="EN">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						&amp; instantly
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						to procede with order, industrie, dexteritie, efficacie, longanimitie, &amp; sum
+						emprooued singularitie. The best order; most industrie; &amp; quickest expeditio[n]
+						of all Other.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>with clear limits</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="L'arroganza d'alcuni prosuntuosi" type="straight"/>
+		<underline language="IT" method="pen" text="spesso scornata" type="straight"/>
+		<underline language="IT" method="pen" text="di diuersi cose" type="straight"/>
+		<underline language="IT" method="pen" text="pungersi l'vn l'altro" type="straight"/>
+		<underline language="IT" method="pen" text="Greco co[n] insolenza" type="straight"/>
+		<underline language="IT" method="pen" text="ch'io son Greco" type="straight"/>
+		<underline language="IT" method="pen" text="vscite tutte le virtù" type="straight"/>
+		<underline language="IT" method="pen" text="lo stato presente di" type="straight"/>
+		<underline language="IT" method="pen" text="argutamente" type="straight"/>
+		<underline language="IT" method="pen" text="Grecia son'vscite tutte le virtù" type="straight"/>
+		<underline language="IT" method="pen" text="c'hoggidì ve ne sia rimasta veruna" type="straight"/>
+		<underline language="IT" method="pen" text="Morte" type="straight"/>
+		<underline language="IT" method="pen" text="huomini costanti" type="straight"/>
+		<underline language="IT" method="pen" text="scienza" type="straight"/>
+		<underline language="IT" method="pen" text="sommo bene" type="straight"/>	
+		<underline language="IT" method="pen" text="l'ignoranza" type="straight"/>
+		<underline language="IT" method="pen" text="sommo male" type="straight"/>
+		<underline language="IT" method="pen" text="per bere" type="straight"/>
+		<underline language="IT" method="pen" text="per mangiare" type="straight"/>
+		<underline language="IT" method="pen" text="egli mangiaua &amp; beeua per viuere" type="straight"/>
+		<underline language="IT" method="pen" text="la nuona" type="straight"/>
+		<underline language="IT" method="pen" text="alla morte l'haueuano" type="straight"/>
+		<underline language="IT" method="pen" text="senza perturbarsi punto" type="straight"/>
+		<underline language="IT" method="pen" text="Natura hà" type="straight"/>
+		<underline language="IT" method="pen" text="versi in sostanza" type="straight"/>
+		
+		<symbol name="JC" place="intext"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--pas-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--Prouin-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--ve-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--be-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--man-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--per-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--lo-->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="vscite tutte le virtù"/>
+		<mark method="pen" name="dot" place="intext"/> <!--virtu, perche-->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="scienza"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="l'ignoranza"/>
+		<mark method="pen" name="vertical_bar" place="intext"/> <!--viuere Il-->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="alla morte l'haueuano"/>
+
+    </annotation>
+</transcription>

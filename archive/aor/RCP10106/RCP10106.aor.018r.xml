@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.018r.tif" pagination="35" reader="John Dee" signature="c 2"/>
+    <annotation>
+        
+        <marginalia anchor_text="patitur decor." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Decor</marginalia_text>
+                </position>
+            </language>
+            <translation>Elegance.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="C. Caesar" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>G[auis]. Ca[e]sar.</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <translation>Gauis Caesar.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sed autoritatem consuetudo superauit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>consuetudo</marginalia_text>
+                </position>
+            </language>
+            <translation>Convention.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quamuis capsis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Capsis. obiect[ati]o</marginalia_text> <!-- FSF: Capsis instead of capsus and maybe abbreviation of obiect[ati]o? --> 
+                    <X-ref book_title="Orator" person="Cicero"/>
+                </position>
+            </language>
+            <translation>With boxes. Putting before.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Lupercalia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lupercalia</marginalia_text>
+                </position>
+            </language>
+            <translation>Lupercalia.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Solituarilia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Solitaurilia</marginalia_text>
+                </position>
+            </language>
+            <translation>Suoveuaurilia.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pacuuius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pacuuius.</marginalia_text>
+                    <person name="Marcus Pacuvius"/>
+                </position>
+            </language>
+            <translation>Pacuvius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="duobus Latinis integris, ut superfui, subterfugi: qua[n]quàm ex integris an co[m]posita sint quaeritur." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Varia duoru[m] compositio verborum.</marginalia_text>
+                </position>
+            </language>
+            <translation>Various ways to compound two words.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Sed autoritatem consuetudo superauit" type="straight"/>
+        <underline language="LA" method="pen" text="ex tribus nostrae utiq[ue] linguae non concesserim: quamuis" type="straight"/>
+        <underline language="LA" method="pen" text="Sed haec non tam ex tribus, quàm ex particulis trium coëunt" type="straight"/>
+        <underline language="LA" method="pen" text="Romani suum ex utroq[ue]; alieno fecerunt." type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">.1.</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">.3.</numeral>
+        <numeral place="right_margin">4</numeral>
+        <numeral place="right_margin">5</numeral>
+        <numeral place="right_margin">6</numeral>
+        <numeral place="right_margin">7</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

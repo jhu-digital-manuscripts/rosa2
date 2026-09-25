@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.034r.tif" reader="John Dee" signature="[Fiiij]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="formale[m] causam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        formalis causa
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A formal cause.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vtrum aut[em] causa illa sit materialis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Materialis c[aus]a
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A material cause.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Definitiones vt fiant
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Definitions as they are made.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="p[ro]pter quid" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Propter quid
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Why it is.    
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quomo[do] possunt inuestigari" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Quo modo possu[n]t investigari quid est, et propter quid.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                How that it is and why it is can be investigated.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="formale[m] causam" type="straight"/>
+        <underline language="LA" method="pen" text="ista[m] causam q[uod] o[mn]is angulus in semicirculo" type="straight"/>
+        <underline language="LA" method="pen" text="p[ri]nceps aut[em] alteratio[n]is est dualitas [et]" type="straight"/>
+        <underline language="LA" method="pen" text="c[on]siderare diuisio[n]es [et] subdiuisio[n]es" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        
+        <errata amendedtext="q[ua]tuor oportet" copytext="q[ua]tuoro, portet" language="LA"/>      
+        
+    </annotation>
+</transcription>

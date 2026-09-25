@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.074r.tif" pagination="67" reader="John Dee" signature="R iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Vxores declarat septima" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vide infra fo 272.v 273</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:564" text="272.v"/>
+                        <target ref="RCP7134:565" text="273"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See below, folio 272 verso and 273.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Vxores declarat septima" type="straight"/>
+        
+    </annotation>
+</transcription>

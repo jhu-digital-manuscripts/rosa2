@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.142r.tif" pagination="142" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian" id="BL615d7:615_d_7_f142r:m0001" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Fortezza [?] Rocca</marginalia_text> <!-- DO: Can't make out the second word --> <!-- MB: I cannot decipher this either, reads something like 'oloro' --> <!--JG: I'd go for olero, not sure though-->
+                </position>
+            </language>
+            <translation/>
+        </marginalia>
+        
+        <marginalia anchor_text="nell'Isola della Maddalena" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>L'Isola della Maddalena</marginalia_text>
+                    <location name="Tobago"/>
+                </position>
+            </language>
+            <translation>The island of Magdalena</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Caouabo Cacique" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Caouabo Cacique</marginalia_text>
+                    <person name="Caonabo"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="lingua" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Language</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline id="BL615d7:615_d_7_f142r:u0001" language="IT" method="pen" text="nell'Isola" type="straight"/>
+        <underline language="IT" method="pen" text="in soccorso di Ariaga" type="straight"/>
+        <underline language="IT" method="pen" text="Caouabo" type="straight"/>
+        <underline language="IT" method="pen" text="che la Prouincia" type="straight"/>
+        <underline language="IT" method="pen" text="Maddalena Maroris" type="straight"/>
+        <underline language="IT" method="pen" text="Guarionex" type="straight"/>
+        <underline language="IT" method="pen" text="quella lingua s'intendea" type="straight"/>
+        <underline language="IT" method="pen" text="con Guarionex, non sapendo" type="straight"/>
+        <underline language="IT" method="pen" text="lingua, che quella del Maroris" type="straight"/>
+        <underline language="IT" method="pen" text="Nuhuirci" type="straight"/>
+        <underline language="IT" method="pen" text="furono Christiani, &amp; sapeuano ambedue le lingue" type="straight"/>
+        <underline language="IT" method="pen" text="compagnia il migliore de gl'Indiani, &amp; il più prattico nella Santa Fede Catolica; &amp; poi me lo" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        
+        <physical_link>
+            
+            <marginal_annotation idref="BL615d7:615_d_7_f142r:m0001"/>
+            <marginal_annotation idref="BL615d7:615_d_7_f142r:u0001"/>
+            
+            <relation from="BL615d7:615_d_7_f142r:m0001" to="BL615d7:615_d_7_f142r:u0001" type="directed"/>
+            
+        </physical_link>
+        
+    </annotation>
+</transcription>

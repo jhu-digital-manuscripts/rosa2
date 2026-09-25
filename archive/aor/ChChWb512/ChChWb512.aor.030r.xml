@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="ChChWb512.030r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                       Foelicius cum n[ost]ris Brytannis actum est, qua[m] cum Lydo[rum] regibus. quippe cum n[ost]ro[rum] co[n]sta[n]t et no[m]i[n]a, et regno[rum] tempora;
+                       illo[rum] vero qui ab Argone primo (ex Heraclidis) eor[um] rege, (continuata in filios successione)
+                       regnarunt reges 22, o[mn]i[u]m tame[n]
+                    </marginalia_text> 
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        intermedior[um], vsq[ue] ad 4 vltimos, tu[m] no[m]i[n]a, tu[m] tempora ignorantur. Vide Gerardi Mercatoris Chronolog[ia]. A[nn]o Mundi 2747.
+                    </marginalia_text>
+                    <person name="Gerardus Mercator"/>
+                    <book title="Chronologia"/>
+                </position>
+            </language>
+            <translation>It was more happily done with our Britons, than with the kings of the Lydians, in that both the names of ours and times of their reigns should remain; of the Lydians, 22 kings reigned in continuous filial succession from their first king, Argone (from Hercules), but both the names and the dates of all the intervening kings, up to the last four, are unknown.  See Gerardus Mercator's 'Chronologia'. Year of the world 2747.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Guinthelinus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Kyhelinus
+                    </marginalia_text>
+                    <person name="Guintelinus"/>
+                </position>
+            </language>
+            <translation>Kyhelinus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Marthe helage" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Marchenleage.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Marcian law.</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Kynvarchus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Kynvarchus.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="270" place="tail">
+                    <marginalia_text>
+                        A Brenno ergo ad [Cassibelatu[m]?] interstitiu[m] annor[um] 223:
+                    </marginalia_text> 
+                    <person name="Brennus"/>
+                    <person name="Cassibelanus"/>
+                </position>
+            </language>
+            <translation>Therefore from Brenne to Cassibelan a span of 223 years.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="misit homines cum eis ad insulam Hyberniae quae tunc" type="straight"/>
+        <underline language="LA" method="pen" text="vacua ab omni incola erat: eamq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="concessit" type="straight"/>
+        <underline language="LA" method="pen" text="etiam rex Aluredus" type="straight"/>
+        <underline language="LA" method="pen" text="Marthe helage" type="straight"/>
+        <underline language="LA" method="pen" text="sumpto diademate" type="straight"/>
+        <underline language="LA" method="pen" text="Kimarus eius filius" type="straight"/>
+        
+        <graph book_orientation="90" method="pen" place="tail" type="genealogical_tree">
+            <node id="n1" person="Clotheus">Cloteuus</node>
+            <node id="n2" person="Morianus">Morianus</node>
+            <node id="n3" person="Bledud">Bleduus</node>
+            <node id="n4" person="Capenus">Cap</node> <!--Son of Morianus-->
+            <node id="n5" person="Ovinus">Oenus</node>
+            <node id="n6" person="Silius I">Sisillius</node>
+            <node id="n7" person="Blegabredus">Bledgabredus</node>
+            <node id="n8" person="Archimalus">Archimailus Fr[ater]</node> 
+            <node id="n9" person="Eldodus">Eldon</node>
+            <node id="n10" person="Rodian">Redion</node>
+            <node id="n11" person="Redargius">Rodrecius</node>
+            <node id="n12" person="Samulius">Samulpenisel</node>
+            <node id="n13" person="Penisellus">Samulpenisel</node>
+            <node id="n14" person="Pyrrhus">Pir</node>
+            <node id="n15" person="Caporus">Capoirus</node> <!--Son of Pyrrus-->
+            <node id="n16" person="Divellius">Gligueilus Fil[ius]</node>
+            <node id="n17" person="Hely">F Hely</node>
+            <node id="n18" person="Lud">Lud</node>
+            <node id="n19" person="Cassibelanus">Cassibelanu[s]</node>
+            <node id="n20" person="Nennius">Nenniu[s]</node>
+            
+            <link from="n8" relationship="has_sibling" to="n7"/>
+            <link from="n15" relationship="has_child" to="n16"/>
+            <link from="n17" relationship="has_child" to="n18 n19 n20"/>
+            <link from="n18" relationship="has_sibling" to="n19"/>
+            
+            <graph_text>
+                <note hand="English_secretary" internal_link="n17" language="LA">40 a[n]nis regnabit.</note>
+                <translation>[Hely] Reigned for forty years.</translation>
+            </graph_text>
+            <graph_text>
+                <note hand="English_secretary" internal_link="n19" language="LA">erat a[e]tate Julij Ca[e]saris cu[m] q[u]o bellu[m] gessit pro sui regni defe[n]sione circa a[n]nu[m] Mu[n]di 3912. S[icut] a[nn]o a[n]te Chr[ist]i 52.</note>
+                <person name="Julius Caesar"/>
+                <person name="Cassibelanus"/>
+                <translation>[Cassibelan] reigned in the time of Julius Caesar and, in defense of his kingdom, warred with Caesar around AM. 3912, that is in the fifty second year before Christ.</translation>
+            </graph_text>
+        </graph>
+        
+    </annotation>
+</transcription>

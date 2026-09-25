@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd"> 
+    
+<page filename="PrincetonK6233.026v.tif" pagination="20" reader="Harvey" signature="[b2v]"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="principium" type="straight"/>
+        <underline language="LA" method="pen" text="ἀρχὴ" type="straight"/>
+        <underline language="LA" method="pen" text="legum" type="straight"/>
+        <underline language="LA" method="pen" text="prudentum autoritatem" type="straight"/>
+        <underline language="LA" method="pen" text="sint qui iura" type="straight"/>
+        <underline language="LA" method="pen" text="patricio &amp; nobili" type="straight"/>
+        <underline language="LA" method="pen" text="uersatur, ignorare" type="straight"/>
+        <underline language="LA" method="pen" text="Capito" type="straight"/>
+        <underline language="LA" method="pen" text="Labeo" type="straight"/>
+        <underline language="LA" method="pen" text="tempora Augusti" type="straight"/>
+        <underline language="LA" method="pen" text="publicè respondendi" type="straight"/>
+        <underline language="LA" method="pen" text="non" type="straight"/>
+        <underline language="LA" method="pen" text="principibus" type="straight"/>
+        <underline language="LA" method="pen" text="qui fiduciam studioru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ex eius autoritate" type="straight"/>
+        <underline language="LA" method="pen" text="responderent" type="straight"/>
+        <underline language="LA" method="pen" text="causis efficientib[us]" type="straight"/>
+
+        <symbol name="Bisected_circle" place="head"/>
+        <symbol language="LA" name="SS" place="intext" text="uersatur, ignorare"/>
+        <symbol name="JC" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark language="LA" method="pen" name="bracket" place="intext" text="principibus dabatur:             sed qui fiduciam studioru[m] suorum habebant, consulentibus respondebant. Primus D              Augustus constituit, ut ex eius autoritate responderent, quod Sabino à Tiberio             Caes[ere] est concessum"/> 
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- respondebant. Primus -->
+        <mark method="pen" name="dot" place="intext"/> <!-- responderent, quod -->
+        
+    </annotation>
+</transcription>

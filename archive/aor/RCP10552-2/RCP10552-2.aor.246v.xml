@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.246v.tif" pagination="10" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Pinchimacum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pinquimacum</marginalia_text>
+                    <location name="Picquigny"/>
+                </position>
+            </language>
+            <translation>Picquigny.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Berengerius quidem atquè Alanus Britones" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Bereng Alanus} Bryt[annia]</marginalia_text>
+                    <person name="Berengar II of Neustria"/>
+                    <person name="Alan I"/>
+                    <location name="Brittany"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="in ecclesiam Sanctae Mariae virginis intulerunt" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Will[ia]mus Rhotomagi sepultus.</marginalia_text>
+                    <person name="William I Longsword"/>
+                </position>
+            </language>
+            <translation>William of Rouen buried.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Bernardi Dani" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Bernardus Danus.</marginalia_text>
+                   <person name="Bernard the Dane"/>
+                </position>
+            </language>
+            <translation>Bernard the Dane.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="anno Christi. 944" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A[nn]⁰: 944:</marginalia_text>
+                </position>
+            </language>
+            <translation>In the year 944.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Richardus primus. Dux. Nor[thmanniae] et Bryt[anniae]</marginalia_text>
+                    <person name="Richard I of Normandy"/>
+                </position>
+            </language>
+            <translation>Richard the First, Duke of Normandy and Brittany.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Rodulphus nec non &amp; Bernardus atquè Anslech tutores" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Rodolphus Bernardus Anslech} Tutores Richard[i] Ducis.</marginalia_text>
+                    <person name="Raoul Taisson"/>
+                    <person name="Bernard the Dane"/>
+                    <person name="Anslech de Bricquebec"/>
+                </position>
+            </language>
+            <translation>Raoul, Bernard, Anslech} The tutors of Richard the Duke.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="palatinis disciplinis" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Disciplina[e] Palatina[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>The disciplines of the palace.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cu[m] Richardo puero Francia[m] repetit" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ludouicus R[ex] aufert secum sua[m] preda[m], Richardum</marginalia_text>
+                    <person name="Louis IV of France"/>
+                    <person name="Richard I of Normandy"/>
+                </position>
+            </language>
+            <translation>King Louis took Richard, his plunder, with him.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Pinchimacum" type="straight"/>
+        <underline language="LA" method="pen" text="Sompne" type="straight"/>
+        <underline language="LA" method="pen" text="extractis gladijs proh dolor interimunt innocentem" type="straight"/>
+        <underline language="LA" method="pen" text="reliquerunt. Berengerius" type="straight"/>
+        <underline language="LA" method="pen" text="atquè Alanus Britones" type="straight"/>
+        <underline language="LA" method="pen" text="stamineam scilicet cucullam" type="straight"/>
+        <underline language="LA" method="pen" text="puero Richardo" type="straight"/>
+        <underline language="LA" method="pen" text="Bernardi Dani" type="straight"/>
+        <underline language="LA" method="pen" text="Nempe Lodowicus" type="straight"/>
+        <underline language="LA" method="pen" text="Rodulphus" type="straight"/>
+        <underline language="LA" method="pen" text="Bernardus" type="straight"/>
+        <underline language="LA" method="pen" text="Anslech" type="straight"/>
+        <underline language="LA" method="pen" text="tantilli" type="straight"/>
+        <underline language="LA" method="pen" text="fraudulenter promittere" type="straight"/>
+        <underline language="LA" method="pen" text="redditurum imbutum" type="triple"/>
+        <underline language="LA" method="pen" text="palatinis disciplinis" type="double"/>
+        <underline language="LA" method="pen" text="sub oculto ferens egrè" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- consultu puero -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- accepit sub -->
+        
+    </annotation>
+</transcription>

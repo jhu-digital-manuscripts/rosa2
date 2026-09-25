@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.048v.tif" pagination="[42v]" reader="John Dee" signature="[L ij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="In diuidendis autem domibus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>de diuidendis domibus duodeci[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>On dividing the twelve houses.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="existimet in his, quae generalia sunt, nullum firmum iudiciu[m] posse" type="straight"/>
+        <underline language="LA" method="pen" text="Solus animus coelestis, atq[ue] huic corpus affinitate eximia iunctum est: tertia accedit, gloria bene actae uitae. Haec tria à coelo fouentur aut ministrantur: sordes &amp; labes è terrenis emergunt" type="straight"/>
+        <underline language="LA" method="pen" text="oportebit, super quam locum aut radium primo significator ceciderit motu diurno: nam &amp; aliqui Lunam" type="straight"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="left_margin" text="Solus animus coelestis, atq[ue] huic corpus affinitate eximia iunctum est: tertia accedit, gloria bene actae uitae. Haec tria à coelo fouentur aut ministrantur: sordes &amp; labes è terrenis emergunt"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

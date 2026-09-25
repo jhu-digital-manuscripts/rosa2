@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.359r.tif" pagination="169" reader="John Dee" signature="[Ll.v.]"/>   
+    <annotation>
+        
+        <marginalia anchor_text="profligata iam haec, &amp; penè ad exitum adducta quaestio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        profligata ad exitu[m] p[ro]cuncta } qu[a]estio videtur ad exitu[m] venisse
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Depraved ... inquiry, it seems to have come to an end. <!-- FSF: not sure about procuncta -->
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="leuia quaedam vina" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Leuia vina
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Lighter wines.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="chorus virtutum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        virtutu[m] chorus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A multitude of strengths.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nulla virtus prudentia vacat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Nulla virtus prude[n]tia vacat
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                No strength is free of prudence.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Miseria.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Misery.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Beatitas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Happiness.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        beatus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Happy.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mathematicorum iste mos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mathematicorum mos.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The custom of mathematicians.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Philosophi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Philosophorum mos.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The custom of philosophers.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="reliquáeque virtutes rapiantur ad" type="straight"/>
+        <underline language="LA" method="pen" text="aqua, sic Stoicorum ista magis gustata quàm potata delectant" type="straight"/>
+        <underline language="LA" method="pen" text="chorus" type="straight"/>
+        <underline language="LA" method="pen" text="eas cursim" type="straight"/>
+        <underline language="LA" method="pen" text="etsi iniquum est praescribere mihi te, que[m]admodum" type="straight"/>
+        <underline language="LA" method="pen" text="profligata iam haec" type="straight"/>
+        <underline language="LA" method="pen" text="exilia, luctus, orbitates" type="straight"/>
+        <underline language="LA" method="pen" text="que[m] libidinibus inflammatum &amp; furentem videmus" type="straight"/>
+        <underline language="LA" method="pen" text="omnia rabide oppetentem" type="straight"/>
+        <underline language="LA" method="pen" text="cum inexplebili cupiditate: quóque affluentius voluptates vndique hauriat, eo grauius ardentiúsque sitientem, nónne recte" type="straight"/>
+        <underline language="LA" method="pen" text="languidis liquefaciunt voluptatibus" type="straight"/>
+        <underline language="LA" method="pen" text="videtur enim ad exitum venisse quaestio" type="straight"/>
+        <underline language="LA" method="pen" text="pro co[n]cesso &amp; probato" type="straight"/>
+        <underline language="LA" method="pen" text="in eam, quae co[n]ueniunt, congerunt omnia, etsi alio loco disputata sunt" type="straight"/>
+        
+        <symbol name="Unidentified" place="right_margin"/>
+        <symbol name="Unidentified" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Unidentified" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing anchor_text="Miseria." book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="Beatitas" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="beatus" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

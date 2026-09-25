@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.139v.tif" pagination="18" reader="John Dee" signature="[b.i.[v]]"/>   
+    
+    
+    <annotation>
+        
+        
+        <marginalia anchor_text="falsis aut vulgaribus diffinitionibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Diff[initi]o[n]es fals[a]e [quadrupla deleted] vulgares</marginalia_text>
+                </position>
+            </language>
+            <translation>False and common definitions.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="quadruplator" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quadruplator.</marginalia_text>
+                </position>
+            </language>
+            <translation>An informer.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="detexa[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>detexo.</marginalia_text>
+                </position>
+            </language>
+            <translation>I weave.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Satius est vti regibus quàm malis legibus" type="straight"/>
+        <underline language="LA" method="pen" text="Nu[n]c ego te ab summo ia[m] detexa[m] exordio" type="straight"/>
+        
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">5</numeral>
+        <numeral place="left_margin">6</numeral>
+        <numeral place="left_margin">7</numeral>
+        <numeral place="left_margin">8</numeral>
+        <numeral place="left_margin">9</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">.11.</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">14</numeral>
+        
+    </annotation>
+</transcription>

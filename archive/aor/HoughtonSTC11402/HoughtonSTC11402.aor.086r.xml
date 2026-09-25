@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.086r.tif" reader="Harvey" signature="[Kvii[r]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Defectus omnes supplendi, aut reuerâ, aut sophisticè: 
+                    et tum maxima requiritur ostentatio, cum maximâ laboratur Inopiâ.</marginalia_text>
+                </position>
+            </language>
+            <translation>The failure of supplying all things, either in fact or sophistically: and then the greatest display is required, it is produced
+                with greatest surprise.
+            </translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="extreme famine" type="straight"/>
+        <underline language="EN" method="pen" text="threwe out breade among their ennemys" type="straight"/>
+        <underline language="EN" method="pen" text="abundaunce" type="straight"/>
+        <underline language="EN" method="pen" text="the syege tyll" type="straight"/>
+        <underline language="EN" method="pen" text="Athenians" type="straight"/>
+        <underline language="EN" method="pen" text="the Lacedemonians" type="straight"/>
+        <underline language="EN" method="pen" text="extreme famyne" type="straight"/>
+        <underline language="EN" method="pen" text="destroied the herbes" type="straight"/>
+        <underline language="EN" method="pen" text="by ofte plowynge" type="straight"/>
+        <underline language="EN" method="pen" text="place, that" type="straight"/>
+        <underline language="EN" method="pen" text="they sowed theyr seedes in" type="straight"/>
+        <underline language="EN" method="pen" text="place prepared and tylled" type="straight"/>
+        <underline language="EN" method="pen" text="inoughe, tyll the sedes" type="straight"/>
+        <underline language="EN" method="pen" text="quantitie of wheate or" type="straight"/>
+        <underline language="EN" method="pen" text="fedde theyr beastes" type="straight"/>
+        <underline language="EN" method="pen" text="stray vnto their" type="straight"/>
+        <underline language="EN" method="pen" text="ennemies campe" type="straight"/>
+        <underline language="EN" method="pen" text="kylde, and founde in theyr intrayles" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="extreme famine"/>
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="breade"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="their ennemys"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Athenians"/>
+        <mark method="pen" name="bracket" place="intext"/> <!--famyne, by-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="destroied the herbes"/>
+        <mark method="pen" name="bracket" place="intext"/> <!--walles: they-->
+        
+    </annotation>
+</transcription>

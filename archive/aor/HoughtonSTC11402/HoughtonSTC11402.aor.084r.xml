@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.084r.tif" reader="Harvey" signature="Kv[r]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Epaminundas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Iphirates, and Epaminondas peremptory.</marginalia_text>
+                    <person name="Iphirates"/>
+                    <person name="Epaminondas"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>In case of importance / &amp; for an</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Example of terror.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Achitophel resolute, &amp; peremptory.</marginalia_text>
+                    <person name="Ahitophel"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Stigmatophoxus</marginalia_text>
+                    <person name="Stigmatophoxus"/> <!--JG: No idea who this might be. Is not mentioned in Polyaenus-->
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>l.I. Polya[eni], in Istia[e]o.</marginalia_text>
+                    <book title="Stratagems"/>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>not any deuice here so strang, or cunning.</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Conon, l.I. Polya[e]ni.</marginalia_text>
+                    <person name="Conon"/>
+                    <book title="Stratagems"/>
+                </position>
+            </language>
+            <translation>Stigmatophoxus, book 1 of Polyaenus' 'Stratagems', in Istiaia. not any deuice here so strang, or cunning. 
+                Conon, book 1 of Polyaenus' 'Stratagems'. </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in his belte" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A Letter in his belt.</marginalia_text>
+                    <emphasis method="pen" text="A Letter" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="beasts bealyes" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>in beasts bellyes.</marginalia_text>
+                    <emphasis method="pen" text="beasts" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="in venyson and beastes bealyes" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Letters priuily conueyed.
+                     </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Comes Purl. L.I.obs.I29.</marginalia_text>
+                    <person name="Jacopo di Porcia"/>
+                    <book title="The preceptes of warre"/>
+                    <emphasis method="pen" text="obs. 129" type="straight"/>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>by bynding the[m] to arrowes.</marginalia_text>
+                    <emphasis method="pen" text="bynding the[m] to" type="straight"/>
+                </position>
+            </language>
+            <translation>Letters priuily conueyed. Jacopo di Porcia, book 1, observation 129. by bynding the[m] to arrowes.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="Lyke as I found hym" type="straight"/>
+        <underline language="EN" method="pen" text="soo haue I lefte him" type="straight"/>
+        <underline language="EN" method="pen" text="Epaminundas" type="straight"/>
+        <underline language="EN" method="pen" text="lyke dede" type="straight"/>
+        <underline language="EN" method="pen" text="receyue in a messanger. Cap." type="straight"/>
+        <underline language="EN" method="pen" text="besieged in the Capitoll" type="straight"/>
+        <underline language="EN" method="pen" text="Pontius Cominus" type="straight"/>
+        <underline language="EN" method="pen" text="Camillus, to besieche hym to come" type="straight"/>
+        <underline language="EN" method="pen" text="from exile" type="straight"/>
+        <underline language="EN" method="pen" text="deceyue the watche" type="straight"/>
+        <underline language="EN" method="pen" text="downe by the" type="straight"/>
+        <underline language="EN" method="pen" text="rocke Tarpeia" type="straight"/>
+        <underline language="EN" method="pen" text="swymmynge ouer" type="straight"/>
+        <underline language="EN" method="pen" text="Tyberis" type="straight"/>
+        <underline language="EN" method="pen" text="the Veians" type="straight"/>
+        <underline language="EN" method="pen" text="done his" type="straight"/>
+        <underline language="EN" method="pen" text="same way" type="straight"/>
+        <underline language="EN" method="pen" text="by dilygent watche" type="straight"/>
+        <underline language="EN" method="pen" text="a felowe suborned as" type="straight"/>
+        <underline language="EN" method="pen" text="a runne awaye" type="straight"/>
+        <underline language="EN" method="pen" text="in his belte or" type="straight"/>
+        <underline language="EN" method="pen" text="letter" type="straight"/>
+        <underline language="EN" method="pen" text="letters written in parchement" type="straight"/>
+        <underline language="EN" method="pen" text="in venyson and beastes bealyes" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="soo haue I lefte him"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="Lyke as I found hym"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--him. It-->
+        <mark language="EN" method="pen" name="X_sign" place="intext" text="lyke dede"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/> <!--faded, right side of printed text-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="done his"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="by dilygent watche"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="a runne awaye"/>
+        <mark method="pen" name="comma" place="intext"/> <!--parchement sowed-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="in venyson and beastes bealyes"/>
+        
+    </annotation>
+</transcription>

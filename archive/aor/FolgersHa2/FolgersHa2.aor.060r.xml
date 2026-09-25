@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.060r.tif" pagination="439" reader="Harvey"/>	<!-- ABO 64right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Ha-ha-ha; Ha-ha-he; Ha-ha-hi; Ha-ha-ho;
+						Ha-ha-hu.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Paradosso.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Paradox.
+			</translation>
+		</marginalia>
+
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Vndè oportet, illos etiam Tres habere ad vnguem: additis necessariò addendis.
+						Sic qui maximè dudum excellebat, Bacon Cancellarius; non multa, sed multu[m].						
+					</marginalia_text>
+					<person name="Francis Bacon"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position book_orientation="90" place="tail">
+					<marginalia_text>
+						Sic
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						adhùc
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="tail">
+					<marginalia_text>
+						Ca[e]cilius
+						Thesaurarius.
+					</marginalia_text>
+					<person name="Robert Cecil"/>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						Sensi sa[e]piùs.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Whence even they ought to memorize these three by heart; while adding those things which must be added necessarily.
+				Thus he, who most excelled little while ago, was Lord Chancellor Bacon; not in quantity, but in quality. <!-- CG: This seems like an adequate translation for the Latin play on words. --> <!--JG: Yes, I agree-->
+				Thus, till then it was Cecil, Lord High Treasurer. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						At argutias Facetarium, Apophthegmatum, Stratagematum, nemo eorum percalluit.
+						Nemo spiritum Bartasij, in Epinicio Regis Gallici. Nemo Taciti,
+					</marginalia_text>
+					<person name="Guillaume Du Bartas"/>
+					<person name="Tacitus"/>
+					<emphasis method="pen" text="Facetarium" type="straight"/>
+					<emphasis method="pen" text="Apophthegmatum" type="straight"/>
+					<emphasis method="pen" text="Stratagematum" type="straight"/>
+					<emphasis method="pen" text="spiritum" type="straight"/>
+					<emphasis method="pen" text="Taciti" type="straight"/>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						aut
+						Seneca[e]
+						acumè:
+						nemo
+					</marginalia_text>
+					<person name="Seneca"/>
+					<emphasis method="pen" text="Seneca[e]" type="straight"/>
+				</position>
+				<position book_orientation="270" place="tail">
+					<marginalia_text>
+						Eunapij
+					</marginalia_text>
+					<person name="Eunapius"/>
+					<emphasis method="pen" text="Eunapij" type="straight"/>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						vnica[m]
+					</marginalia_text>
+					<emphasis method="pen" text="vnica[m]" type="straight"/>
+				</position>
+				<position book_orientation="270" place="tail">
+					<marginalia_text>
+						Suada[m]
+						medulla[m].
+						Nemo Crispi fluentissima[m] stili Celeritatem.
+					</marginalia_text>
+					<person name="Sallust"/>
+					<emphasis method="pen" type="curved"/>
+					<emphasis method="pen" text="medulla[m]" type="straight"/>
+					<emphasis method="pen" text="Crispi fluentissima[m]" type="straight"/>
+					<emphasis method="pen" text="Celeritatem" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				But no one fully understood the cleverness of witticisms, aphorisms, or strategems.
+				No one fully understood the spirit of Bartas in his victory ode of the French king. No one
+				fully understood the acumen of Tacitus or Seneca. No one fully understood 
+				the singular persuasive core of Eunapius.	No one understood the fast-flowing 
+				quickness of the style of Sallust.		
+					<!-- CG: This seems connected to the "public debate" that Harvey might be alluding to
+						on the previous page; also the references to certain periods: Bacon as Chancellor (1618-1621)
+						and Cecil as Treasurer (1608-1612). -->
+			</translation>
+		</marginalia>
+
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="nel dire altro" type="straight"/>
+		<underline language="IT" method="pen" text="quello, chè aspettato da gli uditori" type="straight"/>
+		<underline language="IT" method="pen" text="quanto l'error" type="straight"/>
+		<underline language="IT" method="pen" text="ingannati nell'aspettatione" type="straight"/>
+		<underline language="IT" method="pen" text="Marcantonio Bell'occhio" type="straight"/>
+		<underline language="IT" method="pen" text="che i birri menauano prigione uno per debito" type="straight"/>
+		<underline language="IT" method="pen" text="Qua[n]to e debito costui" type="straight"/>
+		<underline language="IT" method="pen" text="menate prigione" type="straight"/>
+		<underline language="IT" method="pen" text="i birri credendo" type="straight"/>
+		<underline language="IT" method="pen" text="quella seuerità di uolto" type="straight"/>
+		<underline language="IT" method="pen" text="guardaron la somma" type="straight"/>
+		<underline language="IT" method="pen" text="dieci ducati" type="straight"/>
+		<underline language="IT" method="pen" text="il capriccioso" type="straight"/>
+		<underline language="IT" method="pen" text="Io non ui aggiungo" type="straight"/>
+		<underline language="IT" method="pen" text="altro" type="straight"/>
+		<underline language="IT" method="pen" text="menatelo pure" type="straight"/>
+		<underline language="IT" method="pen" text="Nella qual replica" type="straight"/>
+		<underline language="IT" method="pen" text="argutame[n]te" type="straight"/>
+		<underline language="IT" method="pen" text="della ambiguità" type="straight"/>
+		<underline language="IT" method="pen" text="Io non ui aggiungo" type="straight"/>
+		<underline language="IT" method="pen" text="aggiugneua alla somma di denari" type="straight"/>
+		<underline language="IT" method="pen" text="haueua debito" type="straight"/>
+		<underline language="IT" method="pen" text="aggiugneua piu parole a quelle" type="straight"/>
+		<underline language="IT" method="pen" text="riso poi" type="straight"/>
+		<underline language="IT" method="pen" text="dallo error" type="straight"/>
+		<underline language="IT" method="pen" text="aspettando" type="straight"/>
+		<underline language="IT" method="pen" text="ei per pietà non" type="straight"/>
+		<underline language="IT" method="pen" text="fecero il motto ridicolo" type="straight"/>
+		<underline language="IT" method="pen" text="Gouernator di una città" type="straight"/>
+		<underline language="IT" method="pen" text="domandauano licentia di poter portar le armi" type="straight"/>
+		<underline language="IT" method="pen" text="pugnale" type="straight"/>
+		<underline language="IT" method="pen" text="la sottoscrittione" type="straight"/>
+		<underline language="IT" method="pen" text="SENZA IL PVGNALE" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="l'error nostro" type="straight"/>
+		<underline language="IT" method="chalk" text="capriccioso" type="straight"/>
+		<underline language="IT" method="chalk" text="Io non ui aggiungo" type="straight"/>
+		
+		<!-- Symbols -->
+		<symbol name="SS" place="head"/>
+		<symbol name="Sun" place="head"/>
+		<symbol name="SS" place="intext"/>
+		<symbol name="JC" place="intext"/>
+				
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Pado -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- seue -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ri -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ag -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- fe -->
+		
+	    	<!-- Left margin -->
+	    <mark method="pen" name="bracket" place="left_margin"/> <!-- gentile ... altro  -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chak mark -->
+		<mark language="IT" method="pen" name="plus_sign" place="head" text="nel dire altro"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chak mark -->
+		<mark method="pen" name="equal_sign" place="intext"/> <!-- ch'e' aspettato -->
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chak mark -->
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="l'error"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="per debito"/>
+	    <mark method="pen" name="dot" place="intext"/> <!-- debito, si -->
+		<mark method="pen" name="equal_sign" place="intext"/> <!-- quella seue -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="il capriccioso"/>
+		<mark method="pen" name="comma" place="intext"/> <!-- scolare soggiunse -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="argutame[n]te"/>
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- somma -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- parole -->
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark -->
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="error"/>
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- ridicolo. -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- le armi -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="pugnale"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- PUGNALE, & -->
+		<mark method="pen" name="vertical_bar" place="intext"/> <!-- T.C. Auuenne -->
+		
+    </annotation>
+</transcription>

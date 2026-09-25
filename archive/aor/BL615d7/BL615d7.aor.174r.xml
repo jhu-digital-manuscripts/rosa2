@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.174r.tif" pagination="174" reader="John Dee"/>    
+    <annotation>
+        
+        <marginalia anchor_text="perdon" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pardon</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="villa del Bonao" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Bonao.</marginalia_text>
+                    <location name="Bonao"/>
+                </position>
+            </language>
+        </marginalia>
+       
+        <underline language="IT" method="pen" text="donando perdon" type="straight"/>
+        <underline language="IT" method="pen" text="villa del Bonao" type="straight"/>
+        <underline language="IT" method="pen" text="che Adriano" type="straight"/>
+        <underline language="IT" method="pen" text="che erano i principali" type="straight"/>
+        <underline language="IT" method="pen" text="anco fece" type="straight"/>
+        <underline language="IT" method="pen" text="a trattar di accordo, ne voler, ne hauer bisogno di pace, percioche egli" type="straight"/>
+        <underline language="IT" method="pen" text="nel pugno, per sostentarlo, o disfarlo, come" type="straight"/>
+        <underline language="IT" method="pen" text="fosser mandati tutto gl'Indiani, che erano stati presi nell'assedio della Concettione," type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

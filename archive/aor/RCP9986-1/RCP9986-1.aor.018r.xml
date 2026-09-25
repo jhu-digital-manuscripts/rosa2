@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.018r.tif" pagination="19" reader="John Dee" signature="C.iiij."/>  
+    <annotation>
+        
+        <marginalia anchor_text="fidem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>fides.</marginalia_text>
+                </position>
+            </language>
+            <translation>Trust.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>co[n]scie[n]tia</marginalia_text>
+                </position>
+            </language>
+            <translation>Conscience.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Exerces pretiosa odia" type="straight"/>
+        <underline language="LA" method="pen" text="retinacula" type="straight"/>
+        <underline language="LA" method="pen" text="Nec violasse fidem tentantibus aequora prodest, Perfidiae poenas exigit ille locus" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

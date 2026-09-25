@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.336v.tif" pagination="4" reader="John Dee" signature="[A.ii.[v]]"/>
+    <annotation> 
+        
+        <marginalia anchor_text="multis partibus plureis" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="head">
+                    <marginalia_text>multis partibus plures.</marginalia_text>                
+                </position>
+            </language>
+            <translation>Many times greater.</translation>  
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>sup[ra] 2..</marginalia_text>                
+                </position>
+            </language>
+            <translation>Above, 2..</translation> <!-- NBW: second letter? -->  <!--JG: Could be, does this volume contain a letter written at that date?--> <!-- NBW: This one is the second letter. It begins with a reference to activity in the Ides of January, so maybe Dee is referring back to the first line so as not to confuse the date of the letter's writing (in February) with the date at the opening?  -->
+        </marginalia>
+        
+        <marginalia anchor_text="Cato &amp; Caninius" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cato Caninius.</marginalia_text>                
+                    <person name="Gaius Porcius Cato"/>
+                    <person name="Lucius Caninius Gallus"/>
+                </position>
+            </language>
+            <translation>Gaius Porcius Cato. Lucius Caninius Gallus.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="AVLO Trebonio" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aulus Trebonius.</marginalia_text>                
+                    <person name="Aulus Trebonius"/>
+                </position>
+            </language>
+            <translation>Aulus Trebonius.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="T. Ampius" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>T Ampius.</marginalia_text>                
+                    <person name="Titus Ampius Balbus"/>
+                </position>
+            </language>
+            <translation>Titus Ampius Balbus.</translation>  
+        </marginalia>        
+        
+        <marginalia anchor_text="Curionem, Bibulu[m]" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Curio: Bibulus.</marginalia_text>                
+                    <person name="Gaius Scribonius Curio"/>
+                    <person name="Marcus Calpurnius Bibulus"/>
+                </position>
+            </language>
+            <translation>Gaius Scribonius Curio: Marcus Calpurinius Bibulus.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="per legem Pupia[m]" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Lex puppia.</marginalia_text>                
+                </position>
+            </language>
+            <translation>The Puppian Law.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="Alexandria[m]" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Alexandria</marginalia_text>                
+                    <location name="Alexandria"/>
+                </position>
+            </language>
+            <translation>Alexandria.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="[co[n]]cedebant, neque valde repugnabant" type="straight"/>
+        <underline language="LA" method="pen" text="volebant: id quod" type="straight"/>
+        <underline language="LA" method="pen" text="enim in Hortensii sententia multis partibus plureis ituros" type="straight"/>
+        <underline language="LA" method="pen" text="controuersia vsque ad noctem ducta, senatus dimissus" type="straight"/>
+        <underline language="LA" method="pen" text="die casu" type="straight"/>
+        <underline language="LA" method="pen" text="dies primus honestissimus nobis" type="straight"/>
+        <underline language="LA" method="pen" text="mihi viderer animum hominis ab omni alia cogitatione ad tua[m] dignitatem tuendam traducere" type="straight"/>
+        <underline language="LA" method="pen" text="iam omnibus est apertu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ante lucem" type="straight"/>
+        <underline language="LA" method="pen" text="vt potest in tanta hominum perfidia &amp; iniquitate, retinebimus" type="straight"/>
+        <underline language="LA" method="pen" text="magna negotia &amp; ampla &amp; expedita" type="straight"/>
+        <underline language="LA" method="pen" text="pridie eius diei fregeramus: vnúmque certamen esset relictu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="nostris extracta est variis calu[m]niis" type="straight"/>
+        <underline language="LA" method="pen" text="die acerbu[m] habuimus" type="straight"/>
+        <underline language="LA" method="pen" text="multo iustiore[m]" type="straight"/>
+        <underline language="LA" method="pen" text="(id quod scis)" type="straight"/>
+        <underline language="LA" method="pen" text="nisi perfectis, aut reiectis legationibus" type="straight"/>
+        <underline language="LA" method="pen" text="discessio fieret" type="straight"/>
+        <underline language="LA" method="pen" text="nomine, re autem vera" type="straight"/>
+        <underline language="LA" method="pen" text="enim aut me ostente[m], qui se vita[m] pro tua dignitate" type="straight"/>
+        <underline language="LA" method="pen" text="tuoru[m] affecutus? aut de alioru[m] iniuriis querar: quod sine summo dolore" type="straight"/>
+        <underline language="LA" method="pen" text="tua[m] profectionem co[n]secuta" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark language="LA" method="pen" name="circumflex" place="intext" text="P[opul]o"/>
+        
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+        <errata amendedtext="ne quis" copytext="nequis" language="LA"/>
+        <errata amendedtext="P[opul]o R[oman]o nomine" copytext="P[opul]o nomine" language="LA"/>
+        <errata amendedtext="Ego tibi in hac" copytext="Ego tibi à vi, hac" language="LA"/>
+        <errata amendedtext="At ea excepta" copytext="vi excepta," language="LA"/>
+                
+    </annotation>
+</transcription>

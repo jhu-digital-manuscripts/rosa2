@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.062r.tif" pagination="62" reader="John Dee" signature="Pii"/> 
+    <annotation>
+        
+        <marginalia anchor_text="576" hand="Italian" method="pen"> <!-- FSF: the 576s in the two columns are linked with a stroke -->
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        A[e]qualitas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Equality.
+            </translation>
+        </marginalia>
+        
+        <errata amendedtext="qm" copytext="q" language="LA"/>
+        <errata amendedtext="qm" copytext="q" language="LA"/>
+        <errata amendedtext="qm" copytext="q" language="LA"/>
+        
+    </annotation>
+</transcription>

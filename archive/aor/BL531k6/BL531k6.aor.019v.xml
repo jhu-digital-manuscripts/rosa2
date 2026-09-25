@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL531k6.019v.tif" pagination="[019v]" reader="John Dee" signature="[E3v]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="armillis" hand="Italian" id="RCP7997:531_k_6_(3)_f019v:m0001" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Nota de Armillis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Note about bracelets.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="scrupulo primo" type="straight"/>
+        <underline language="LA" method="pen" text="Imò, ne integras quidem horas absq[ue] singulari industria ex" type="straight"/>
+        <underline id="RCP7997:531_k_6_(3)_f019v:u0001" language="LA" method="pen" text="armillis depraehe[n]di" type="double"/>
+        
+        <physical_link>
+            <marginal_annotation idref="RCP7997:531_k_6_(3)_f019v:u0001"/>
+            <marginal_annotation idref="RCP7997:531_k_6_(3)_f019v:m0001"/>
+            
+            <relation from="RCP7997:531_k_6_(3)_f019v:u0001" to="RCP7997:531_k_6_(3)_f019v:m0001" type="directed"/>
+            
+        </physical_link>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>0</illustrations>
+    <totalPages>251</totalPages>
+    <dimensions units="mm">
+        <width>142</width>
+        <height>216</height>
+    </dimensions>
+    <dates>
+        <startDate>1400</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="Traités d'édification, en prose et en vers, par Christine de Pisan, saint Bernard ; le Pastoral de saint Grégoire, etc">
+            <language>fr</language>
+            <title>Traités d'édification, en prose et en vers, par Christine de Pisan, saint Bernard ; le Pastoral de saint Grégoire, etc</title>
+            <textId/>
+            <pages end="248v" start="1r">248</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>29</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="The Lamentation by Christine de Pizan">
+            <language>fr</language>
+            <title>The Lamentation by Christine de Pizan</title>
+            <textId/>
+            <pages end="18v" start="14r">5</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>26</linesPerColumn>
+            <leavesPerGathering>8</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="Moralized Proverbs by Christine de Pizan">
+            <language>fr</language>
+            <title>Moralized Proverbs by Christine de Pizan</title>
+            <textId/>
+            <pages end="178bisv" start="176r">4</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>26</linesPerColumn>
+            <leavesPerGathering>8</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Lamentation by Christine de Pizan</title>
+            <commonName>Français 24864</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>paper</material>
+            <origin>Paris, France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>Français 24864</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Christine de Pizan</title>
+            <commonName>Français 24864</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscript</type>
+            <material>paper and parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 24864</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

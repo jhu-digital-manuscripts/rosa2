@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>5</illustrations>
+    <totalPages>320</totalPages>
+    <dimensions units="">
+        <width>-1</width>
+        <height>-1</height>
+    </dimensions>
+    <dates>
+        <startDate>1401</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="">
+            <language>fr</language>
+            <title>Boece, De Consolacion, tranduire par Charles d'Orléans</title>
+            <textId/>
+            <pages end="75v" start="1r">75</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>36</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="">
+            <language>fr</language>
+            <title>Le Livre de la moralité des nobles hommes et des gens du peuple sur le Jeu des Eschez par Jacques de Cessoles, tranduire par Jehan de Vignay</title>
+            <textId/>
+            <pages end="120r" start="76v">44</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>38</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="rose">
+            <language>fr</language>
+            <title>Le Roman de la Rose par Guillaume de Lorris et Jehan Clopinel</title>
+            <textId/>
+            <pages end="264v" start="120v">144</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>37</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="">
+            <language>fr</language>
+            <title>Les Notables</title>
+            <textId/>
+            <pages end="266r" start="264v">2</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>37</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="">
+            <language>fr</language>
+            <title>Les Dis moraulx des philosophez, tranduire par Guillaume de Tygnonville</title>
+            <textId/>
+            <pages end="319v" start="266r">53</pages>
+            <illustrations>2</illustrations>
+            <linesPerColumn>36</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Christine de Pizan</title>
+            <commonName>Français 812</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>vellum</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 812</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Christine de Pizan</title>
+            <commonName>Français 812</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscript</type>
+            <material>vellum</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 812</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.224r.tif" pagination="217" reader="John Dee" signature="II"/>
+    <annotation>
+        
+        <marginalia anchor_text="Cometes supra Venerem uisus est" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Comet[us] supr[a] ♀e[m] etia[m] visus est a[nn]o 1572</marginalia_text>
+                    <symbol_in_text name="Venus"/>
+                </position>
+            </language>
+            <translation>The comet also has been seen above Venus in 1572.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Considerare oportet tempore eclipsis, uires planetae dominantis, nam non eclipsis, sed illius significatio apparebit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ex eclipsi qua[e] significantur.</marginalia_text>
+                </position>
+            </language>
+            <translation>The things which are shown by an eclipse.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="natus periculum uitae extra ordinem incurret" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Periculum vita[e] extra ordine[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>The danger of life beyond the order.</translation> <!--JG: Not sure how to render this. Extra ordinem often used within legal discourse-->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="reditu centri" type="straight"/>
+        <underline language="LA" method="pen" text="reditu Planeta" type="straight"/>
+        <underline language="LA" method="pen" text="Considerare oportet tempore eclipsis, uires planetae dominantis, nam non eclipsis, sed illius significatio apparebit" type="straight"/>
+        <underline language="LA" method="pen" text="Albumasar, Cometes supra Venerem uisus est: no[n]" type="straight"/>
+        <underline language="LA" method="pen" text="filiae autem meliores sunt, quia" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral language="LA" place="intext" text="reditu centri">3.</numeral>
+        <numeral language="LA" place="intext" text="reditu">4</numeral>
+        <numeral language="LA" place="intext" text="Planetae">5</numeral>
+        
+    </annotation>
+</transcription>

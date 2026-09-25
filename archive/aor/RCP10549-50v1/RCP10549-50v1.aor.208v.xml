@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.208v.tif" pagination="396" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="proiecta quadam &amp; effraenata cupiditate" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Cupiditas proiecta effra[e]nata
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A covetousness, over-reaching and unbridled.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="habitare laxe &amp; magnifice" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        habitare laxe magnifice
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To live splendidly and without restraint.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="porticum cum conclauibus pauimentata[m] trecentum pedum concupierat, amplissimum peristylum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        porticus pauime[n]tata. peristylum.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A portico, paved and lined with columns.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="&amp; laxitate &amp; dignitate" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        dignitas laxitas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Worth and largeness.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dignitate[m] [...] scientia [...] vetustas" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Dignitas Scientia vetustas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Worth, skill, antiquity.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="obstrictus beneficio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        obstrictus beneficio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Bound to kindness.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Dedicatio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Dedication.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="funditus ex oculis hominum ac mentibus" type="straight"/>
+        <underline language="LA" method="pen" text="litigatoribus defatigatis propè dimidio carius quàm" type="straight"/>
+        <underline language="LA" method="pen" text="Tanagrea oppressa libertate" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; laxitate &amp; dignitate" type="straight"/>
+        <underline language="LA" method="pen" text="nemo nomen dedit nisi aut egestate aut scelere perditus" type="straight"/>
+        <underline language="LA" method="pen" text="tam variam, tam nouam in omni genere voluntate[m], impudentiam, audaciam, cupiditate[m] comprobabitis" type="straight"/>
+        <underline language="LA" method="pen" text="tamen auget &amp; aetas, &amp; honos" type="straight"/>
+        <underline language="LA" method="pen" text="quam etsi omnes co[n]secuti sunt, tame[n] certe peritiores vetustas" type="straight"/>
+        <underline language="LA" method="pen" text="quanta est in adolescente authoritas, ea propter tantam coniunctionem affinitatis, minor est putanda" type="straight"/>
+        <underline language="LA" method="pen" text="antelatu[m] videbat" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">19</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+        <drawing anchor_text="Dignitas" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="Scientia" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="Vetustas" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="Dedicatio" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+    </annotation>
+</transcription>

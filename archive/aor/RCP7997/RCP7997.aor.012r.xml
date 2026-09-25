@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.012r.tif" reader="John Dee" signature="[Bvj]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="quare petere id q[uo]d est in principio est ide[m] ad p[ro]batione[m] sui ip[s]ius sumere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Petitio principii
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                An attack on the principle.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="de no[n] p[ro]pter hoc accidere falsum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        De no[n] p[ro]pter hoc accidere falsu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                About that this falsehood happened not because of this.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="no[n] causa[m] vt causa[m] ponere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        No[n] causa[m] vt causa[m] ponere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Not to put the reason as the reason.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="zenonis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        zenon
+                    </marginalia_text>
+                    <person name="Zeno of Elea"/> 
+                </position>
+            </language>
+            <translation>
+                Zeno.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="est quare q[ua] per principiu[m] nata sunt oste[n]di. no[n] valent demo[n]strare p[ro]positu[m] eo q[uod] posteriora             sunt p[ro]posito et potius p[ro]bant[ur] per p[ro]positu[m] q[uam] p[ro]positu[m] p[er] ipsa" type="straight"/>
+        <underline language="LA" method="pen" text="ita sunt singula p[ro]bata ex se ipsis" type="straight"/>
+        <underline language="LA" method="pen" text="principio est ide[m] ad p[ro]batione[m] sui ip[s]ius sumere. statim" type="straight"/>
+        <underline language="LA" method="pen" text="q[ua]re solus mathematic[us] infert peti[ti]o[ni]s in p[ri]ncipio" type="straight"/>
+        <underline language="LA" method="pen" text="q[ua]n[do] ypothesis est inco[n]iu[n]cta ad terminos p[er] quos c[on]cluditur impossibile et q[ua]n[do] in nullo termi[n]o co[m]municat cu[m] silogismo" type="straight"/>
+        <underline language="LA" method="pen" text="est no[n] causam vt causa[m] ponere" type="straight"/>
+        <underline language="LA" method="pen" text="q[uod] hoc p[ri]mu[m] [et] pri[n]cipalit[er] i[n] silogismis c[on]ti[n]git q[ui] su[n]t ad impossibile in quibus p[ri]mu[m] supponit[ur] falsum vt iam in" type="straight"/>
+
+        <mark language="LA" method="pen" name="bracket" place="intext" text="equidistantes Que"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- p[ri]ncipiu[m] Hoc -->
+        
+    </annotation>
+</transcription>

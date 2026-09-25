@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.322r.tif" pagination="623" reader="John Dee" signature="[qqq.viii.]"/>
+    <annotation>
+        
+        <marginalia anchor_text="piissimos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>pijssimos no[n] latinè d[icitu]r</marginalia_text>
+                </position>
+            </language>
+            <translation>Most affectionately. It is not said in Latin.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="peditatuq[ue]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>peditatus</marginalia_text>
+                </position>
+            </language>
+            <translation>Foot soldier.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Nihil agis" type="straight"/>
+        <underline language="LA" method="pen" text="quod verbu[m] omnino nullu[m] in lingua Latina est, id propter tua[m] diuinam pietate[m] nouu[m] inducis" type="straight"/>
+        <underline language="LA" method="pen" text="huius belli feret principatum" type="straight"/>
+        <underline language="LA" method="pen" text="tecu[m] ipse recolis, aequiore" type="straight"/>
+        
+        <numeral place="right_margin">21</numeral>
+        
+        <drawing anchor_text="21" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

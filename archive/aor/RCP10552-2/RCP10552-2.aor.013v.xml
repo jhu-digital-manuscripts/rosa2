@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.013v.tif" pagination="16" reader="John Dee"/>
+    <annotation>
+        
+        
+        <marginalia anchor_text="Margaretam, quae matri mortuae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Margareta ha[e]res Scotic[a]e moritur</marginalia_text>
+                </position>
+            </language>
+            <translation>Margaret, the Scottish, heir died.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Gilbertum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Gilberti Nuptia[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Gilbert's marriage.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="tanquam superior dominus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tanq[uam] superior dominus</marginalia_text>
+                </position>
+            </language>
+            <translation>As the superior lord.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nomine Margaretam" type="straight"/>
+        <underline language="LA" method="pen" text="Margareta Regi Northvvagiae desponsata" type="straight"/>
+        <underline language="LA" method="pen" text="Ha[n]c consulto Rege Angliae" type="straight"/>
+        <underline language="LA" method="pen" text="nuncios Regis Angliae" type="straight"/>
+        <underline language="LA" method="pen" text="nauigium tenderet" type="straight"/>
+        <underline language="LA" method="pen" text="Orkadas Insulas est defuncta" type="straight"/>
+        <underline language="LA" method="pen" text="Anglicanae secundùm verum valorem" type="straight"/>
+        <underline language="LA" method="pen" text="Scotis dubius &amp; solicitus propter destructionem" type="straight"/>
+        <underline language="LA" method="pen" text="mortua Margareta filia Regis Northwagiae" type="straight"/>
+        <underline language="LA" method="pen" text="iure haereditario" type="straight"/>
+        <underline language="LA" method="pen" text="auo" type="straight"/>
+        <underline language="LA" method="pen" text="patruo" type="straight"/>
+        <underline language="LA" method="pen" text="matre" type="straight"/>
+        <underline language="LA" method="pen" text="filium &amp; haeredem" type="straight"/>
+        <underline language="LA" method="pen" text="ac inter Gilbertum Comitem Glouerniae, &amp; Iohanñam filiam suam tertiam" type="straight"/>
+        <underline language="LA" method="pen" text="dimicaturus" type="straight"/>
+        <underline language="LA" method="pen" text="de" type="straight"/>
+        <underline language="LA" method="pen" text="iusto haerede" type="double"/>
+        <underline language="LA" method="pen" text="tanquam superior dominus" type="double"/>
+        <underline language="LA" method="pen" text="Regina" type="straight"/>
+        <underline language="LA" method="pen" text="Herdeby iuxta Lincolnia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="iussit Rex cruce[m] miro tabulatu erigi ad Regin[a]e memoriam" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- Angliae,  magnates-->
+        <mark method="pen" name="bracket" place="intext"/> <!-- defuncta ( Hocanno -->
+        <mark method="pen" name="comma" place="intext"/> <!-- Angliae, cum -->
+        <mark method="pen" name="comma" place="intext"/> <!-- mari, apud -->
+        <mark method="pen" name="comma" place="intext"/> <!-- iure, haereditario" -->
+        <mark method="pen" name="comma" place="intext"/> <!-- haeredem tanquam -->
+        <mark method="pen" name="comma" place="intext"/> <!-- Rex coepto -->
+        <mark method="pen" name="comma" place="intext"/> <!-- itinere, Londonias -->
+        <mark method="pen" name="semicolon" place="intext"/> <!-- Lincolnia[m] propterea -->
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="tail" type="church"/>
+        
+    </annotation>
+</transcription>

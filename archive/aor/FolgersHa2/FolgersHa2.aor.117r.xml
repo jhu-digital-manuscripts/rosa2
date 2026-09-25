@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.117r.tif" pagination="57" reader="Harvey" signature="[D5r]"/>	<!-- ABO 121right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Plus adhuc, plusq[ue] spiritus: sed multò magis plus,
+						plusq[ue] valoris.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Still more and more spirit; yet even more and more valor. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Industria, singuloru[m] maxima: sed in rebus omnium maximis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Industriousness: greatest of singular matters, but counted among the greatest of all things.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Quantum rei momentum, tanta cura.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The greater the importance of some matter, the greater the attention to that matter.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Perditus dies, qui non proficiens.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				He who does not make process has wasted the day.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Ô miser, cui pereunt foelices hora[e].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				O miserable is the man, for whom the happy hours pass by!
+			</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Alij profiteantur: Eutrapelus proficiat.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				Let others be acknowledged; let Eutrapelus make progress.
+			</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						{ Pure Quintessence, meere flame, no fuming smoke:
+						More fine then wildfire, sterne then hart of Oke.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="non è piu tempo da burle" type="straight"/>
+		<underline language="IT" method="pen" text="non ci è di tuo altri" type="straight"/>
+		<underline language="IT" method="pen" text="che'l maggiore" type="straight"/>
+		<underline language="IT" method="pen" text="il primo anno" type="straight"/>
+		<underline language="IT" method="pen" text="fede" type="straight"/>
+		<underline language="IT" method="pen" text="i loro padri à" type="straight"/>
+		<underline language="IT" method="pen" text="il minore" type="straight"/>
+		<underline language="IT" method="pen" text="oh natura" type="straight"/>
+		<underline language="IT" method="pen" text="à lei" type="straight"/>
+		<underline language="IT" method="pen" text="Oh mamma mia" type="straight"/>
+		<underline language="IT" method="pen" text="priego buon padre" type="straight"/>
+		<underline language="IT" method="pen" text="vn'huomo famoso, &amp; ricco" type="straight"/>
+		<underline language="IT" method="pen" text="figliuolo tutto rallegratosi" type="straight"/>
+		<underline language="IT" method="pen" text="poi ch'io hò padre sì fatto" type="straight"/>
+		<underline language="IT" method="pen" text="non ti alzi prima i panni" type="straight"/>
+		<underline language="IT" method="pen" text="sei maschio" type="straight"/>
+		<underline language="IT" method="pen" text="femina" type="straight"/>
+		
+		<symbol name="Sun" place="left_margin"/>
+		
+		<symbol name="SS" place="right_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- peg -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Gugliel -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- man -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- pa -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- gio -->
+		
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- opinione -->
+		
+		
+    </annotation>
+</transcription>

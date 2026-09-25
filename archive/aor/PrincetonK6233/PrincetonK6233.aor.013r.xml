@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonK6233.013r.tif" reader="Harvey" signature="β5r"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="clarius exemplu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="literas nesciat" type="straight"/>
+        <underline language="LA" method="pen" text="armis" type="straight"/>
+        <underline language="LA" method="pen" text="neque nostro ingenio" type="straight"/>
+        <underline language="LA" method="pen" text="ad solam summae trinitatis" type="straight"/>
+        <underline language="LA" method="pen" text="tam studiosum" type="straight"/> 
+        <underline language="LA" method="pen" text="quàm legum autoritas" type="straight"/>
+        <underline language="LA" method="pen" text="omnes in omnia" type="straight"/>
+        <underline language="LA" method="pen" text="certi per" type="straight"/>
+        <underline language="LA" method="pen" text="meliores" type="straight"/>
+        <underline language="LA" method="pen" text="deteriores inueniu[n]tur" type="straight"/>
+        <underline language="LA" method="pen" text="ex multitudine autorum" type="straight"/>
+        
+        <mark method="chalk" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- Pr[a]-etoris -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- exi-git -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- testan-tur -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- Vul-gar -->
+        <mark method="pen" name="comma" place="intext"/> <!-- Probum & -->
+        <mark method="pen" name="comma" place="intext"/> <!-- Diaconum & -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="quàm legum autoritas"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="certi per"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="ex multitudine autorum"/>
+        
+        <errata amendedtext="[deleted]" copytext="Populi Romani" language="LA"/>
+        
+    </annotation>
+</transcription>

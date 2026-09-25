@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.019v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Habren" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        J[ohn] D[ee] Peredam[us]. Seavern of sea Habren bycause of the great arme of th[e] sea being 30 myle wyde in th[e] middl[e].
+                    </marginalia_text>
+                    <!-- NBW: Possible - Last word doesn't have enough minims to be spelled "middl[e], likely spelling "mitelle" -->
+                    <person name="John Dee"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Habren" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Habra, nome[n] gra[e]cu[m] fuisse declarat fabula Nicostrati Atheniensis.
+                    </marginalia_text>
+                    <person name="Nicostratus Atheniensis"/>
+                </position>
+            </language>
+            <translation>Habra, to have been a Greek name, so the fable of Nicostratus announced.</translation>
+        </marginalia>
+        
+        <!--Illegible marginalia in the right margin. // NBW: Transcribed below, fairly certain this works-->
+       <marginalia anchor_text="Cornubiam" hand="Italian">
+           <language ident="LA">
+            <position book_orientation="0" place="right_margin">
+                <marginalia_text>
+                    hic corrupt[tur] nominata[m]
+                </marginalia_text>
+                <location name="Cornwall"/> 
+            </position>
+                </language>
+           <translation>Here the name is corrupted </translation>
+       </marginalia>
+        <underline language="LA" method="pen" text="sacrificium diis suis" type="straight"/>
+        <underline language="LA" method="pen" text="Habren vocauit" type="straight"/>        
+        <underline language="LA" method="pen" text="Cornubiam" type="straight"/>
+        <underline language="LA" method="pen" text="sturam flume[n]" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

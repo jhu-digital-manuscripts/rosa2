@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.005v.tif" pagination="10" reader="John Dee" signature="[a 5[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Arisophanem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aristophanes.</marginalia_text>
+                    <person name="Aristophanes"/>
+                </position>
+            </language>
+            <translation>Aristophanes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Eratosthenes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Eratosthenes.</marginalia_text>
+                    <person name="Eratosthenes"/>
+                </position>
+            </language>
+            <translation>Eratosthenes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Chrysippus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Chrysippus</marginalia_text>
+                    <person name="Chrysippus"/>
+                </position>
+            </language>
+            <translation>Chrysippus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="memoria constant: quae non modo iam est in paruis, sed tum etiam tenacißima est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Memoria in paruis tenaciss.</marginalia_text>
+                </position>
+            </language>
+            <translation>The memory in the young is most tenancious.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nutricibus triennium" type="straight"/>
+        <underline language="LA" method="pen" text="quod initia literaru[m] sola memoria constant" type="straight"/>
+        <underline language="LA" method="pen" text="protinus accerbe putem" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

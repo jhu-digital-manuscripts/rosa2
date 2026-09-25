@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.164r.tif" pagination="307" reader="John Dee" signature="vv.ii."/>
+    <annotation>
+        
+        <marginalia anchor_text="Cethegus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Cethegus
+                    </marginalia_text>
+                    <person name="Gaius Cornelius Cethegus"/>
+                </position>
+            </language>
+            <translation>
+                Gaius Cornelius Cethegus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex fatis Sibyllinies" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        fata Sibyllina
+                    </marginalia_text>
+                    <book title="Sibylline books"/>
+                </position>
+            </language>
+            <translation>
+                Sibylline books.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Capitolii autem incensionem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Capitolij Incensio
+                    </marginalia_text>
+                    <location name="Capitol"/>
+                </position>
+            </language>
+            <translation>
+                The burning of the Capitol.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="confirmasse ex fatis Sibyllinis" type="straight"/>
+        <underline language="LA" method="pen" text="qui esset decimus annus post virginum absolutionem, post Capitolii autem incensionem vigesimus" type="straight"/>
+        <underline language="LA" method="pen" text="nos linum incidimus" type="straight"/>
+        <underline language="LA" method="pen" text="non modo ingeniu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="semper valuit" type="straight"/>
+        <underline language="LA" method="pen" text="impudentia, qua superabat omnes, improbitásque defecit" type="straight"/>
+        
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">21</numeral>
+        
+        
+    </annotation>
+</transcription>

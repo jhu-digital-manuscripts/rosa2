@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.036r.tif" reader="John Dee" signature="[Fvj]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="sed essentie p[rae]dicame[n]tor[um] sunt imp[er]mixte.              ergo genus [et] species no[n] possunt reperiri in diuersis coordinatio[n]ibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Genus et spe[cie]s in eode[m] p[rae]dicame[n]to.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Kind and species in the same predicament.    
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in secu[n]da p[ar]te nostra naturalis philozophie" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Alteru[m] hui[us] authoris volumen.
+                    </marginalia_text>
+                    <person name="Andreas Alexander"/>
+                </position>
+            </language>
+            <translation>
+                The other volume of this author.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="de libello linear[um] i[n]diuisibiliu[m] aristotelis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        De lineis indiuisibilibus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                About indivisible lines.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Continua" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Continua
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Continuous.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="illo generi gen[us]" type="straight"/>
+        <underline language="LA" method="pen" text="specie essentialit[er] p[rae]dicat[ur]" type="straight"/>
+        <underline language="LA" method="pen" text="ergo genus [et] species no[n] possunt reperiri in diuersis coordinatio[n]ibus" type="straight"/>
+        <underline language="LA" method="pen" text="Na[m] eor[um] q[uae] su[n]t adaliq[ui]d genera [et] ip[s]as species esse adaliq[ui]d" type="straight"/>
+        <underline language="LA" method="pen" text="p[ar]te nostra naturalis" type="straight"/>
+        <underline language="LA" method="pen" text="philozophie" type="double"/>
+        <underline language="LA" method="pen" text="dicet[ur] in s[e]c[un]da n[ume]ra p[ar]te na[ua]lis ph[ilosoph]ie de libello linear[um] i[n]diuisibiliu[m] aristotelis" type="straight"/>
+        <underline language="LA" method="pen" text="Et illis par[um] est mathematici qua[n]tu[m]" type="straight"/>
+        
+    </annotation>
+</transcription>

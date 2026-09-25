@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.081r.tif" reader="Harvey" signature="Kii[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Embuscads, &amp; surprizes,</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>vt s[upr]a/</marginalia_text>
+                    <internal_ref text="s[upr]a">
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0021" text="[TOC]"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0062" text="[Civ[r]]"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0086" text="[Dviii[r]]"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0105" text="[Fi[v]]"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0120" text="[G[i[r]]"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0138" text="[Hii[r]]"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0146" text="[Hvi[r]]"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0223" text="[Niiii[v]]"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Embuscads, &amp; surprizes, as above.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Cunning Ironyes &amp; sophistryes./</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>[the] same.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="priuily" type="straight"/>
+        <underline language="EN" method="pen" text="Anniball" type="straight"/>
+        <underline language="EN" method="pen" text="suffered his campe, to be taken of purpose" type="straight"/>
+        <underline language="EN" method="pen" text="to recule" type="straight"/>
+        <underline language="EN" method="pen" text="lefte their citie" type="straight"/>
+        <underline language="EN" method="pen" text="ranne oute" type="straight"/>
+        <underline language="EN" method="pen" text="the citie by them" type="straight"/>
+        <underline language="EN" method="pen" text="priuely layde" type="straight"/>
+        <underline language="EN" method="pen" text="layde pryuily in" type="straight"/>
+        <underline language="EN" method="pen" text="men were yssued" type="straight"/>
+        <underline language="EN" method="pen" text="out a good waye" type="straight"/>
+        <underline language="EN" method="pen" text="shulde set grene" type="straight"/>
+        <underline language="EN" method="pen" text="wodde on fyre" type="straight"/>
+        <underline language="EN" method="pen" text="yarly in the mornynge" type="straight"/>
+        <underline language="EN" method="pen" text="to entyce out his ennemies" type="straight"/>
+        <underline language="EN" method="pen" text="though he fledde" type="straight"/>
+        <underline language="EN" method="pen" text="good way" type="straight"/>
+        <underline language="EN" method="pen" text="laye in embushement nere the" type="straight"/>
+        <underline language="EN" method="pen" text="sette the griene" type="straight"/>
+        <underline language="EN" method="pen" text="wodde a fyre" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="suffered his campe, to be"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="priuily"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="to be taken of purpose"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="priuely"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="yarly in the mornynge"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="laye in embushement nere the"/>
+        <mark method="pen" name="semicolon" place="intext"/> <!--walles as-->
+        
+    </annotation>
+</transcription>

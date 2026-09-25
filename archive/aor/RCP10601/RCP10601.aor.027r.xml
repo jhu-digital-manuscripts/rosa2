@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.027r.tif" pagination="53" reader="John Dee" signature="d 3"/>
+    <annotation>
+        
+        <marginalia anchor_text="quinq[ue] libros Mosis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pentateuch</marginalia_text>
+                </position>
+            </language>
+            <translation>The Pentateuch.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="duplici'q[ue] charactere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Duplex character</marginalia_text>
+                </position>
+            </language>
+            <translation>A double character.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ferè uniuersi" type="straight"/>
+        <underline language="LA" method="pen" text="putant quinq[ue] libros Mosis coelitùs instar 10. Praeceptoru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="eo quòd absolutè nomine Legis appella[n]tur" type="straight"/>
+        <underline id="RCP10601:059:u0001" language="LA" method="pen" text="admiscuit diuinitùs scripta in" type="straight"/>
+        <underline id="RCP10601:059:u0002" language="LA" method="pen" text="duplici'q[ue] charactere sacrosanctum librum fecit" type="straight"/>
+        <underline language="LA" method="pen" text="suppresso omnino receptionis" type="straight"/>
+        <underline language="LA" method="pen" text="nomine" type="double"/>
+        
+        <physical_link>
+            <marginal_annotation idref="RCP10601:059:u0001"/>
+            <marginal_annotation idref="RCP10601:059:u0002"/>
+            <relation from="RCP10601:059:u0001" to="RCP10601:059:u0002" type="undirected"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.010v.tif" pagination="4" reader="John Dee" signature="[a 2[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="eges" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Legum pa[e]na[e] iniqu[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Unjust punishments of law.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Animar[um] exuscitatio a ☿
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation> 
+                An awakening of the minds by Mercury.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="stella animantes aut inanimantes" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        stella[e] anima[n]tes an inanimantes 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Animate or inanimate stars.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Quida[m] qua[e]da[m] co[n]cedu[n]t.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                They conceded them.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Qua r[ati]o[n]e debere[n]t aduersarij confutari.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                For this reason, the opponents ought to be refuted.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Vtitur dile[m]mate co[m]posito
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The composition uses a dilemma.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="miscere, illum quiescentium securas animas, etiam lethaei fluminis obliuione purgatas, ☿ cogit nefatiis carminibus excitare. Ecce" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; ille, te iubente, manu carnificis, sine causa percussus est, in illum" type="straight"/>
+        <underline language="LA" method="pen" text="studio" type="straight"/>
+        <underline language="LA" method="pen" text="In quibus rebus, &amp; disputationibus, ingenia quidem nos eorum laudamus, propositum uero institutum'que uitamuss, quia nobis fidem" type="straight"/>
+        <underline language="LA" method="pen" text="pronum rotatae uertiginis lapsum" type="straight"/>
+        <underline language="LA" method="pen" text="refutare quae" type="straight"/>
+        <underline colour="red" language="LA" method="pen" text="in refutationibus omnibus, ueritatis fides, non orationis splendor, ac substantia requiratur" type="dotted"/>
+        <underline language="LA" method="pen" text="nam ceperit aliquod ipsius scientiae expertimentum, an sciscita[n]ti" type="straight"/>
+        <underline language="LA" method="pen" text="uetitus scilicet, ne rigidas cogitationes suas, fides ueritatis infrigeret, inique" type="straight"/>
+        <underline language="LA" method="pen" text="sunt enim semper (sicut nouimus) iudices, quid de incognitis sibi, pronuncia[n]t" type="straight"/>
+        
+        <symbol name="Saturn" place="left_margin"/>
+
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark colour="red" method="pen" name="bracket" place="left_margin"/>
+
+    </annotation>
+</transcription>

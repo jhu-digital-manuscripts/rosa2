@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC122bb35.007v.tif" pagination="[7v]" reader="John Dee" signature="[Avij[v]]"/> 
+    <annotation> 
+        
+        <marginalia anchor_text="mutuo congruunt" hand="Italian"> <!-- FSF: hybrid form of marginalia text and errata. Dee seems to have added the word applicata between mutuo congruunt -->
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>applicata</marginalia_text>
+                </position>
+            </language>
+            <translation>Applied.</translation>
+        </marginalia>
+        
+        
+    </annotation>
+</transcription>

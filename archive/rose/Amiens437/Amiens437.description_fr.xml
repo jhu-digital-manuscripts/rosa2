@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscrit</note>
+          <note type="commonName">Amiens 437</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="185" unit="folios">185</measure>
+            <dimensions>
+              <height unit="mm">281</height>
+              <width unit="mm">203</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">4</note>
+          <note type="material">parchemin</note>
+          <pubPlace>France</pubPlace>
+          <date notAfter="1400" notBefore="1350">14e siècle</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Amiens</settlement>
+            <repository>Bibliothèque municipale d'Amiens</repository>
+            <idno>437</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="143v">1r-143v</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">143</note>
+              <note type="illustrations">2</note>
+              <note type="linesPerColumn">37</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+            <msItem n="2">
+              <locus from="144r" to="166r">144r-166r</locus>
+              <title>Le Miserere du Reclus de Molliens</title>
+              <note type="textid">miserere</note>
+              <note type="folios">23</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">37</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="3">
+              <locus from="166r" to="185r">166r-185r</locus>
+              <title>Le Roman de Charité du Reclus de Molliens</title>
+              <note type="textid">charité</note>
+              <note type="folios">20</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">37</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

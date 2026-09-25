@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.031r.tif" pagination="45" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="diuini seminis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Diuinu[m] semen
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Divine seed.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="diuinitate animi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Diuinitas animi.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Divinity of the mind.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="hominis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Homo Microcosmus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Man as a microcosm.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="diuino illi spiritui" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Diuinus spiritus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Diuine spirit.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="hominem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Hòmo Microcosmus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Man as a microcosm.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aesculpium &amp; Anubium" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Æsculpius Anubius. 
+                    </marginalia_text>
+                    <person name="Asclepius"/>
+                    <person name="Anubion"/>
+                </position>
+            </language>
+            <translation>
+                Asclepius Anubion.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nec errantibus animi cupidiatibus, religionis istius arcana co[m]mittas, non enim oportet perditas mentes hominum, diuinis initiari" type="straight"/>
+        <underline language="LA" method="pen" text="si rectum uiuendi uotum, te ab omni scelerum liberauit inuidia, &amp; si" type="straight"/>
+        <underline language="LA" method="pen" text="animum, &amp; memorem diuini seminis geris, aggredere hoc opus" type="straight"/>
+        <underline language="LA" method="pen" text="explicando uitae cursu, non tantum lectionibus, sed propriis mentis" type="straight"/>
+        <underline language="LA" method="pen" text="diuinitate animi" type="straight"/>
+        <underline language="LA" method="pen" text="lectionu[m] magisterio" type="straight"/>
+        <underline language="LA" method="pen" text="quod ad imaginem speciémque mundi, formam hominis, ac statum, totámque substantiam, deus ille, fabricator hominis, natura" type="straight"/>
+        <underline language="LA" method="pen" text="ut in paruo corpore, omnium elementorum uim" type="straight"/>       
+        <underline language="LA" method="pen" text="ut diuino illi spiritui, qui" type="straight"/>       
+        <underline language="LA" method="pen" text="coelesti mente" type="straight"/> <!-- FSF: link to diuini seminis -->
+        <underline language="LA" method="pen" text="simile" type="double"/>       
+        <underline language="LA" method="pen" text="quasi minorem quendam mundum, stellae quinque, ☉ etiam, &amp; ☾ ignita, ac sempiterna agitatione sustentant, ut animal, quod ad imitationem" type="straight"/>       
+        <underline language="LA" method="pen" text="muni genituram" type="straight"/>       
+        <underline language="LA" method="pen" text="atque monstrarent, hominem ad naturam mundi, similitudinémq[ue] formatum, iisdem principiis, quibus ipse mundus regitur, &amp; continetur, perenniter perpetuitatis             sustenari comitibus" type="straight"/>             
+        
+        <mark colour="red" method="pen" name="bracket" place="right_margin"/> 
+        <mark colour="red" method="pen" name="triple_dash" place="right_margin"/> 
+        <mark method="pen" name="comma" place="intext"/> <!-- animi qu&agrave;m -->
+        
+    </annotation>
+</transcription>

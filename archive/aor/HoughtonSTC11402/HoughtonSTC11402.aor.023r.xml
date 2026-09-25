@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.023r.tif" reader="Harvey" signature="[Bviii[r]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Egregiu[m] Stratagema. Boiorum.</marginalia_text>
+                </position>
+            </language>
+            <translation>An excellent stratagem of the Boli.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Si de Romanis intelligitur; fraus fraude uincitur.
+                    { id fieri potuisset
+                    Incidu[n]t in foueam, qua[m] ipsi fecerant.</marginalia_text>
+                    <X-ref book_title="Psalms" language="LA" person="King David" text="Incidunt in foueam, quam fecerant."/> <!--7: 15. Orginal text is slightly adapted-->
+                </position>
+            </language>
+            <translation>If it is understood according to the the Romans; deceit is conquered by deceit.
+                That could be done. "They fall into the traps which they had made themselves."
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Sed reuerâ Galloru[m] erat victoria: ut copiosè Liuius decadis 3. libro 3. interfectus Posthumius Co[n]s. designatus.
+                    vix dece Rom. effugeru[n]t.</marginalia_text>
+                    <person name="Lucius Postumius Albinus"/>
+                    <book title="Ab Urbe Condita"/>
+                    <location name="Rome"/>
+                </position>
+            </language>
+            <translation>But in fact the victory was of the French: as eloquently in Livy, decade 3, book 3. Postumius, designated as consul, was killed.
+               Hardly ten escaped from Rome.
+            </translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="vawarde" type="straight"/>
+        <underline language="EN" method="pen" text="reteyned with hym a sorte of the most" type="straight"/>
+        <underline language="EN" method="pen" text="pycked men" type="straight"/>
+        <underline language="EN" method="pen" text="all aboute, in spoylynge" type="straight"/>
+        <underline language="EN" method="pen" text="men freshe, lusty, and well" type="straight"/>
+        <underline language="EN" method="pen" text="ordered, he set vpon" type="straight"/>
+        <underline language="EN" method="chalk" text="vpon them" type="straight"/>
+        <underline language="EN" method="pen" text="dyscomfyted" type="straight"/>
+        <underline language="EN" method="pen" text="pyllage" type="straight"/>
+        <underline language="EN" method="pen" text="wodde" type="straight"/>
+        <underline language="EN" method="pen" text="Litana" type="straight"/>
+        <underline language="EN" method="pen" text="and hewed al" type="straight"/>
+        <underline language="EN" method="pen" text="greatte trees in suche wyse" type="straight"/>
+        <underline language="EN" method="pen" text="lyttell holde" type="straight"/>
+        <underline language="EN" method="pen" text="to falle at any" type="straight"/>
+        <underline language="EN" method="pen" text="hydde them selfe at" type="straight"/>
+        <underline language="EN" method="pen" text="vttermooste trees" type="straight"/> 
+        <underline language="EN" method="pen" text="so cutte" type="straight"/>
+        <underline language="EN" method="pen" text="Romayns" type="straight"/>
+        <underline language="EN" method="pen" text="also those, that were" type="straight"/>
+        <underline language="EN" method="pen" text="meanes the ruyne growynge" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="men freshe, lusty, and well"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="chalk" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/> <!--small bar, next to throwynge-->
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="intext"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="tail" text="meanes the ruyne growynge"/>
+        <mark method="pen" name="horizontal_bar" place="tail"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.100v.tif" pagination="186" reader="John Dee" signature="[q.iij.[v]]"/>
+    <annotation>
+        
+      <marginalia anchor_text="annum Domini quinge[n]tesimum tricesimumsecundum" hand="Italian">
+          <language ident="LA">
+              <position book_orientation="0" place="left_margin">
+                  <marginalia_text>A[nn]o D[omi]ni 532.</marginalia_text> 
+              </position>
+          </language>
+          <translation>In the year 532 AD.</translation>
+      </marginalia>  
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nota</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="Iesum Christum fuisse natum aeqinoctio Autumnali" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Chr[istu]m natu[m] Æquinoctio Autu[m]nali.</marginalia_text>
+                    <person name="Jesus Christ"/>
+                </position>
+            </language>
+            <translation>Christ born on the Autumnal equinox.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="Certi autem &amp; quod omnes sequerentur" type="straight"/>
+        <underline language="LA" method="pen" text="ante annum Domini" type="straight"/>
+        <underline language="LA" method="pen" text="Adhaec consuetudinis" type="straight"/>
+        <underline language="LA" method="pen" text="Astrologos Ecclesiasticos" type="straight"/>
+        <underline language="LA" method="pen" text="à mense Septembri computum suum repetere, atque ordiri" type="straight"/>
+        <underline language="LA" method="pen" text="annos Alexandri Magni" type="straight"/>
+        <underline language="LA" method="pen" text="incipere ab aestiuo solstitio" type="straight"/>
+        <underline language="LA" method="pen" text="Christianismum professi sunt, annum" type="straight"/>
+        <underline language="LA" method="pen" text="aequinoctio Autumnali inchoarunt, quemadmodum inde tempora fluere &amp; decurrere ab ipso orbe condito iusserat Deus" type="straight"/>
+        <underline language="LA" method="pen" text="natum aequinoctio Autumbali" type="straight"/>
+        <underline language="LA" method="pen" text="annos inde sint" type="straight"/>
+        <underline language="LA" method="pen" text="à Domini natiuitate" type="straight"/>
+        <underline language="LA" method="pen" text="tamen" type="double"/>
+        <underline language="LA" method="pen" text="hyberno solstitio" type="straight"/>
+        <underline language="LA" method="pen" text="habent ferè" type="straight"/>
+        <underline language="LA" method="pen" text="praeiudicio" type="double"/>
+        <underline language="LA" method="pen" text="nescio quo malè fundatarum opinionum" type="straight"/>
+        <underline language="LA" method="pen" text="in Autumnale aequinoctium" type="straight"/>
+        <underline language="LA" method="pen" text="sunt vmbra futurorum" type="straight"/>
+        <underline language="LA" method="pen" text="corpus" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

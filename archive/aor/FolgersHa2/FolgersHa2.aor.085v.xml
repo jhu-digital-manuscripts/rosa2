@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.085v.tif" reader="Harvey" signature="[**5v]"/>	<!-- ABO 90left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Venus, absolutè prohibita viro senescenti.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Venus is absolutely forbidden to the aging man.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Romani semper animo parati, in
+						( Virtute, Industria ponebant omnia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Romans, always prepared in mind and virtue, employed industriousness in everything. 
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Vnicus contemnit vulgaria: 
+						et contemnitur vulgaris.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A unique man holds common things in contempt;
+				a common man is held in contempt.
+			</translation>
+		</marginalia>
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.085v_0001" marginalia_continues_to="Ha2.086r_0001" marginalia_to_transcription="Ha2.086r.xml">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Cromuellus, Henrico 8.
+						et Cecilius sub 
+						) Elizabeta regina, maximi:
+						nec arte, nec virtute,
+						nec ullo valore magni:
+						sed competenti literaru[m], rerumq[ue]
+						scientia; industria, [[**6r]: solertia, fide;
+						regio fauore, diuina, humanaq[ue] fortuna gratiosi;
+						in primisq[ue] honorati.]
+						<!-- Continues onto facing page, in text, Ha2.086r -->
+					</marginalia_text>
+					<person name="Oliver Cromwell"/>
+					<person name="Henry VIII"/>
+					<person name="Robert Cecil"/>
+					<person name="Elizabeth I of England"/>
+				</position>
+			</language>
+			<translation>
+				Great were Cromwell under Henry VIII, and Robert Cecil under Queen Elizabeth.
+				There is no art, virtue, or any valor of a great man, but being competent
+				in letters and the knowledge of things; through industriousness, [[**6r]: skill and faith.
+				They are beloved by favor both kingly and divine, and by human fortune,
+				and they are honored among the first.]			
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Virtus vnita, fortior.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A unified virtue is stronger.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						multiplicata, mirabilior. humana Dea.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Multiplied, it is more wondrous. A human goddess.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						The natures of men ar not ripe in few yeares: &amp; what wittes soone mellow, to consider,
+						do, &amp; suffer; with sound discretion, &amp; fitt distinction?
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						{ Homerus, Hesiodus, 
+						Pindarus, maioribus nostris optimi Poeta[e]: quia nescieru[n]t meliores. Sic optimi Oratores, Demosthenes,						
+					</marginalia_text>
+					<person name="Homer"/>
+					<person name="Hesiod"/>
+					<person name="Pindar"/>
+					<person name="Demosthenes"/>
+				</position>
+				<position book_orientation="90" place="tail">
+					<marginalia_text>
+						Isocrates,
+					</marginalia_text>
+					<person name="Isocrates"/>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						Cicero.
+					</marginalia_text>
+					<person name="Cicero"/>
+				</position>
+			</language>
+			<translation>
+				Homer, Hesiod, and Pindar were much better poets than ours because they knew of no one better. Likewise with the greatest orators
+				Demosthenes, Isocrates, and Cicero.			
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						In vno, voluptas, et foelicitas:  In pluribus, tristitia, et miseria.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				In unity there is pleasure and happiness: in plurality there is sadness and misery.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Juvenes admirentur, laudent, imitentur: liceat viris, a[e]mulari, excellere, obscurare celeberrimos.
+						
+						<!-- CG: Missing text added. -->
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Young men admire, praise, and imitate. Men are allowed to emulate, to surpass, and to overshadow the most celebrated men.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Venere nuocere" type="straight"/>
+		<underline language="IT" method="pen" text="non giouare" type="straight"/>
+		<underline language="IT" method="pen" text="vn Principe" type="straight"/>
+		<underline language="IT" method="pen" text="Le leggi humane, perche" type="straight"/>
+		<underline language="IT" method="pen" text="vsar la vittoria nelle" type="straight"/>
+		<underline language="IT" method="pen" text="Le adulationi costar" type="straight"/>
+		<underline language="IT" method="pen" text="Saggia, &amp; vtilissima ammonitione" type="straight"/>
+		<underline language="IT" method="pen" text="La virtù, &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="far viuo l'hnomo" type="straight"/>
+		<underline language="IT" method="pen" text="Inuentioni crudeli" type="straight"/>
+		<underline language="IT" method="pen" text="macchia notabile" type="straight"/>
+		<underline language="IT" method="pen" text="non prouocare" type="straight"/>
+		<underline language="IT" method="pen" text="da far racchettare i tenaci" type="straight"/>
+		<underline language="IT" method="pen" text="Falsi testimoni" type="straight"/>
+		<underline language="IT" method="pen" text="accorti interroganti" type="straight"/>
+		<underline language="IT" method="pen" text="l'amicitia" type="straight"/>
+		<underline language="IT" method="pen" text="Pianamente &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="non in" type="straight"/>
+		<underline language="IT" method="pen" text="douersi risoluere" type="straight"/>
+		<underline language="IT" method="pen" text="tutti i colpi di Fortuna" type="straight"/>
+		<underline language="IT" method="pen" text="si lasciare soprafare da' bisogni" type="straight"/>
+		<underline language="IT" method="pen" text="l'vniuerso" type="straight"/>
+		<underline language="IT" method="pen" text="non riuelare l'altrui segreto" type="straight"/>
+		<underline language="IT" method="pen" text="non communicare" type="straight"/>
+		<underline language="IT" method="pen" text="suoi di" type="straight"/>
+		<underline language="IT" method="pen" text="scusa del lor dishonesto" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<symbol name="SS" place="left_margin"/>
+		<symbol name="SS" place="left_margin"/> <!--pianamente-->
+		
+		<symbol language="IT" name="JC" place="intext" text="Falsi testimoni; accorti interroganti"/>
+		<symbol language="IT" name="Bisected_circle" place="intext" text="Cromuellus, Henrico 8. et Cecilius sub Elizabeta regina, maximi: nec arte, nec virtute, nec ullo valore magni: sed competenti literaru[m], rerumq[ue] scientia; industria"/>
+		
+		<mark method="pen" name="plus_sign" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!--tro-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--al-->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="head" text="nuocere"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="head" text="non giouare"/>
+		
+		<mark method="pen" name="dot" place="intext"/>	<!--vecchi, &-->
+		<mark method="pen" name="plus_sign" place="intext"/>
+		<mark method="pen" name="dot" place="intext"/>	<!--segreto, si-->
+
+    </annotation>
+</transcription>

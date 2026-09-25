@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note rend="IDENTIFICATION">
+          <p>Paris, Bibliothèque de l'Arsenal (Bibliothèque nationale de France), 3337</p>
+        </note>
+        <note rend="CONTENTS">
+          <p><hi rend="italics">Roman de la Rose</hi> (ff. 1r-124r)</p>
+        </note>
+        <note rend="MATERIAL">
+          <p>Parchment</p>
+        </note>
+        <note rend="ORIGIN">
+          <p>Sully-sur-Loire, France (known from colophon on f.<locus>123r</locus>)</p>
+        </note>
+        <note rend="DATE">
+          <p>1390 (from colophon)</p>
+        </note>
+        <note rend="SCRIPT">
+          <p>Gothic, written in 2 columns of 45 lines, 1 scribe</p>
+        </note>
+        <note rend="DECORATION">
+          <p>1 empty space of 24 lines left for opening miniature and blue and red penwork ‘M’ (f. <locus>1r</locus>). Smaller blue initials with red pen-florishing and red initials with brown pen-florishing.</p>
+        </note>
+        <note rend="DIMENSIONS">
+          <p>296 x 213 mm (this measurement is from Langlois)</p>
+        </note>
+        <note rend="FOLIATION">
+          <p>ff. ii + 124 + ii</p>
+        </note>
+        <note rend="BINDING">
+          <p>French; brown calf binding with gilt fillet borders on covers, raised spine bands, gilt ornaments on spine, red leather spine labels with gilt lettering, marbled endpapers.</p>
+        </note>
+        <note rend="PROVENANCE">
+          <p>Charles d’Albret, comte de Dreux (d. 1415), early 15th century (colophon on f. <locus>123r</locus>: “Cy faut le rommans de la rose, Ou l’art d’amours est toute enclose. L’an mil. ccc.IIIIxx dis Fu ce rommans ycy escrips. A suly le chastel sur loire…[erasure]”); André Sevin? (name written on ff. <locus>123v</locus> and <locus>124r</locus>, “Ce liure est a Andre Seuin qui le trouuera, cy luy rendre”; Marc Antoine René de Voyer d’Argenson, marquis de Paulmy (1722-1787), 18th century ("Paulmy" written at the bottom of f. <locus>1r</locus>); stamps of Bibliothèque de l'Arsenal on ff. <locus>1r</locus>, <locus>122v</locus>, <locus>123r</locus>. </p>
+        </note>
+        <note rend="NOTES">
+          <p>Latin glosses (proverbial sayings and citations from Ovid) added by 3 hands (1 is the scribe)</p>
+        </note>
+        <note rend="SELECT BIBLIOGRAPHY">
+          <p>1. Henry Martin, <hi rend="italics">Catalogue des manuscrits de la bibliothèque de l'Arsenal</hi>, III, p. 336</p>
+          <p>2. Langlois, <hi rend="italics">Les manuscrits</hi>, pp. 76-77
+             </p>
+          <p>3. Sylvia Huot, <hi rend="italics">The Romance of the Rose and its medieval readers: interpretation, reception, manuscript transmission</hi> (Cambridge: Cambridge University Press, 1993), pp. 27, 55-58.</p>
+        </note>
+        <note rend="N.B.">
+          <p>This description has been compiled using the site's images and various published sources. If you have corrections or additional information on the manuscript, please do contact us.</p>
+        </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscript</note>
+          <note type="commonName">Arsenal 3337</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="124" unit="folios">124</measure>
+            <dimensions>
+              <height unit="mm">295</height>
+              <width unit="mm">212</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">0</note>
+          <note type="material">parchment</note>
+          <pubPlace>Sully-sur-Loire, France</pubPlace>
+          <date notAfter="1400" notBefore="1300">14th century</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Paris</settlement>
+            <repository>
+                     
+                     Bibliothèque de l'Arsenal</repository>
+            <idno>3337</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="123r">1r-123r</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">123</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">45</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

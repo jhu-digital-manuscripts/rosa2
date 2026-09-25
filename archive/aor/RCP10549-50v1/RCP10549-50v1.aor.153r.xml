@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.153r.tif" pagination="285" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="gleba" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        gleba
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Clod of earth.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nunquam malus nuncius auditus est" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        nu[m]q[uam] malus nu[n]ci[us] auditus est.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A bad messenger was never heard.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="plebicola" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        plebicola
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Demagogue.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Comunitas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Community.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aduentitiis copiis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        adue[n]titi[a]e copi[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Foreign troops.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Carthago Corinthus Capua ]
+                    </marginalia_text>
+                    <location name="Carthage"/>
+                    <location name="Ancient Corinth"/>
+                    <location name="Capua"/>
+                </position>
+            </language>
+            <translation>
+                Carthage, Corinth, Capua.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="optima &amp; modestissima" type="straight"/>
+        <underline language="LA" method="pen" text="funditus" type="straight"/>
+        <underline language="LA" method="pen" text="robustis &amp; valentibus &amp; audacibus Decemuirûm" type="straight"/>
+        <underline language="LA" method="pen" text="Hunc agrum nobis maiores nostri reliquerunt" type="straight"/>
+        <underline language="LA" method="pen" text="Hunc agrum patres nostri acceptum à patribus suis perdiderunt" type="straight"/>
+        <underline language="LA" method="pen" text="bini pedes assignentur" type="straight"/>
+        <underline language="LA" method="pen" text="tamen promiscue toto, quàm proprie parua frui parte malletis" type="straight"/>
+        <underline language="LA" method="pen" text="eum vos vniuersi" type="straight"/>
+        <underline language="LA" method="pen" text="atque aduentitiis copiis occupabunt" type="straight"/>
+        <underline language="LA" method="pen" text="contra hanc Romam communem patriam omnium nostrum" type="straight"/>
+        <underline language="LA" method="pen" text="Carthaginem, Corinthum, Capua[m]" type="straight"/>
+        <underline language="LA" method="pen" text="tu[m] ipsa natura ac loco succincta portibus, armata muris, excurrere ex Africa, imminere ita fructuosissimis insulis Populi" type="straight"/>
+        <underline language="LA" method="pen" text="Corinthi vestigium" type="straight"/>
+        <underline language="LA" method="pen" text="sic vt terra claustra locoru[m] teneret, &amp; duo" type="straight"/>
+        <underline language="LA" method="pen" text="cu[m] pertenui discrimine separare[n]tur" type="straight"/>
+        <underline language="LA" method="pen" text="etiam nequando recreata exurgere atque erigere se" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">18</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+        
+    </annotation>
+</transcription>

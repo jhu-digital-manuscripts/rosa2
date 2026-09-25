@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.039v.tif" pagination="62" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia anchor_text="comperendinaretur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        co[m]pere[n]dinari
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To adjourn.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ampliandi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ampliare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To augment.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Dissimilatio est in caussis age[n]dis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The dissimulation is in the reason for acting.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        DIO
+                    </marginalia_text>
+                    <person name="Cassius Dio"/>
+                </position>
+            </language>
+            <translation>
+                Dio.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tetigit prouinciam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        tangere p[ro]vincia[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To touch soil.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aures iudex erigeret, animúmque attenderet" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        erigere aures a[n]i[mu[m] attendere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To prick up ears and to arouse attention.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="èo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        èo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                For that.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in medio proposuissem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        in medio p[ro]ponere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To state clearly.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="incognita quidem condemnari nemo potest" type="straight"/>
+        <underline language="LA" method="pen" text="accusabo" type="straight"/>
+        <underline language="LA" method="pen" text="dissimulamus Hortensi, quod saepe in dicendo experti sumus" type="straight"/>
+        <underline language="LA" method="pen" text="ac tetigit" type="straight"/>
+        <underline language="LA" method="pen" text="aut cuiusquam oratoris eloque[n]tiam" type="straight"/>
+        <underline language="LA" method="pen" text="rem" type="straight"/>
+        
+        <mark language="LA" method="pen" name="hash" place="left_margin" text="aut cuiusquam oratoris eloque[n]tiam"/>
+        
+        <numeral place="left_margin">11.10</numeral>
+        <numeral place="left_margin">10.11</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">16</numeral>
+        <numeral place="left_margin">10</numeral>
+        
+        <errata amendedtext="melliorem" copytext="molliorem" language="LA"/>
+        
+    </annotation>
+</transcription>

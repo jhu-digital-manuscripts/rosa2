@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.115v.tif" pagination="230" reader="John Dee" signature="[p 3[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Vt sunt autem tria tempora, ita ordo reru[m] tribus momentis consertus est, Habent enim omnia initium, incrementum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>O[mn]ia, tria habe[n]t</marginalia_text>
+                </position>
+            </language>
+            <translation>Everything comes in threes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex similibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ex similibus</marginalia_text>
+                </position>
+            </language>
+            <translation>From similarities.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἐπαγογή" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ἐπαγογή</marginalia_text> <!-- for ἐπαγωγή -->
+                </position>
+            </language>
+            <translation>Induction.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex dißulibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ex dissimilibus.</marginalia_text>
+                </position>
+            </language>
+            <translation>From dissimilarities.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex contrarijs" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ex contrarijs</marginalia_text>
+                </position>
+            </language>
+            <translation>From contraries.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex pugna[n]tibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ex pugna[n]tibus</marginalia_text>
+                </position>
+            </language>
+            <translation>From conflicts.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex co[n]sequentibus, siue adiunctis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ex adiunctus.</marginalia_text>
+                </position>
+            </language>
+            <translation>From adjuncts.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἀκόλουθα" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ἀκόλουθα</marginalia_text>
+                </position>
+            </language>
+            <translation>Immediately consequential.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἐπαγόμενα" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ἐπαγόμενα</marginalia_text>
+                </position>
+            </language>
+            <translation>Not immediately consequential.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nominibus anxius, uocet enim ut uoluerit quisq[ue] dum uis rerum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nomina reru[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>The names of things.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Actionis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Actionis</marginalia_text>
+                </position>
+            </language>
+            <translation>Action.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Nam &amp; ex initijs summa colligitur, quale est" type="straight"/>
+        <underline language="LA" method="pen" text="uoluerit quisq[ue] dum uis rerum ipsa manifesta sit" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

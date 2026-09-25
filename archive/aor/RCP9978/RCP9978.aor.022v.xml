@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.022v.tif" reader="John Dee" signature="[F ij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Fascinum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Fascinum</marginalia_text>
+                </position>
+            </language>
+            <translation>Witchcraft.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="philosophandi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Philosophari</marginalia_text>
+                </position>
+            </language>
+            <translation>To philosophise.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Foeminas quidem omnes ubique uisu nocere, quae duplices pupillas habent" type="straight"/>
+        <underline language="LA" method="pen" text="Quapropter male audiunt apud doctos, q[ui]" type="straight"/>
+        <underline language="LA" method="pen" text="Etenim vbi nos causae ratio deficit, hinc dubitandi manat exordium, hoc est philosophandi. Idcirco" type="straight"/>
+        <underline language="LA" method="pen" text="ratione" type="straight"/>
+        <underline language="LA" method="pen" text="hoc historia" type="straight"/>
+        <underline language="LA" method="pen" text="suo conspectu" type="straight"/>
+       
+        <numeral language="LA" place="intext" text="ratione">1</numeral>
+        <numeral language="LA" place="intext" text="hoc historia">2</numeral>
+        
+    </annotation>
+</transcription>

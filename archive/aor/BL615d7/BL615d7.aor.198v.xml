@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.198v.tif" pagination="[198v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="grandissimo errore" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>The cart makers errors detected.</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Guanara" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Guanara</marginalia_text>
+                    <location name="Guanara"/>
+                </position>
+            </language>
+            <translation>Republic of Guanara</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Capo di Honduras" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Capo di Honduras</marginalia_text>
+                    <location name="Honduras"/>
+                </position>
+            </language>
+            <translation>Honduras</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="punta di casine" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Punta di Casine</marginalia_text>
+                    <location name="Casine"/>
+                </position>
+            </language>
+            <translation>The tip of Castine.</translation>
+        </marginalia>
+      
+    <underline language="IT" method="pen" text="Guanara" type="straight"/>
+    <underline language="IT" method="pen" text="Isole de' Guanari" type="double"/>
+    <underline language="IT" method="pen" text=" quasi XII" type="double"/>
+    <underline language="IT" method="pen" text="punta di Casine" type="straight"/>
+    <underline language="IT" method="pen" text="senza andar" type="double"/>
+    <underline language="IT" method="pen" text="grandissimo errore" type="double"/>
+    <underline language="IT" method="pen" text="Queste medesime Isole, &amp;" type="straight"/>
+    <underline language="IT" method="pen" text="due" type="straight"/>
+    <underline language="IT" method="pen" text="capo di Gratie" type="straight"/>
+    <underline language="IT" method="pen" text="due" type="straight"/>
+    <underline language="IT" method="pen" text="Gioan Diaz di Solis" type="straight"/>
+    <underline language="IT" method="pen" text="Rio di Solis" type="straight"/>
+              
+    </annotation>
+</transcription>

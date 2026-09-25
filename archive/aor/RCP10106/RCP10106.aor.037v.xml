@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.037v.tif" pagination="74" reader="John Dee" signature="[e 5[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="sic ut no[n] homini patrocinemur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Praua &amp; vitiosa suu[m] habe[n]t patrociniu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>Corrupt and vicious things have their own protection.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="rerum comparatione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Reru[m] co[m]parationes</marginalia_text>
+                </position>
+            </language>
+            <translation>The comparison of things.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in causa Muraenae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Murona.</marginalia_text>
+                    <book title="Pro Murena"/>
+                </position>
+            </language>
+            <translation>For Murena.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="deliberatiuum pertine[n]tes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Deliberatiua[e] Theses</marginalia_text>
+                </position>
+            </language>
+            <translation>Deliberative theses.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="coniecturalibus causis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Causae co[n]iecturales</marginalia_text>
+                </position>
+            </language>
+            <translation>Conjectural cases.</translation>
+        </marginalia>
+        
+       
+        <underline language="LA" method="pen" text="sic ut no[n] homini patrocinemur, sed crimini" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+       
+    </annotation>
+</transcription>

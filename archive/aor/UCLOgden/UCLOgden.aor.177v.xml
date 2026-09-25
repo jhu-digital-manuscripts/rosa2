@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.177v.tif" pagination="94" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="coniunguntur infortunae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Infortunar[um] ☌
+                    </marginalia_text>
+                    <symbol_in_text name="Conjunction"/>
+                </position>
+            </language>
+            <translation>
+                A conjunction of unfortunate things.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ptolemaei" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Ptoloma[e]us.
+                    </marginalia_text>
+                    <person name="Ptolemy"/>
+                </position>
+            </language>
+            <translation>
+                Ptolemy.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Imo de hac re Cardanus bene ratiocinatur fo 86.
+                    </marginalia_text>
+                    <person name="Girolamo Cardano"/> 
+                    <internal_ref>
+                        <target ref="RCP7134:191" text="86"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                On the contrary, about this matter, Cardanus computed well. Folio 86.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sordidus, &amp; cui Mars, foetidus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Sordidus. foetidus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Mean. Stinking.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        vt si ♐ asce[n]dat. vel ♍
+                    </marginalia_text>
+                    <symbol_in_text name="Sagittarius"/>
+                    <symbol_in_text name="Virgo"/>
+                </position>
+            </language>
+            <translation>
+                As if Sagittarius or Virgo ascends.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Sed adiuvari debent fortunatis irradiationibus alicui[us] planeta[e], vt docet Ptoloma[e]us.   
+                    </marginalia_text>
+                    <person name="Ptolemy"/>
+                </position>
+            </language>
+            <translation> But they ought to be assisted by the blessed illuminations of any planet, as Ptolemy teaches.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        ?ad ♂e[m] quid dicemus?
+                    </marginalia_text>
+                    <symbol_in_text name="Mars"/>
+                </position>
+            </language>
+            <translation>
+                What will we say to Mars?
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="choleram rubeam" type="straight"/>
+        <underline language="LA" method="pen" text="est aerea" type="straight"/>
+        <underline language="LA" method="pen" text="aquatica triplicitas est" type="dotted"/>
+        <underline language="LA" method="pen" text="auarae" type="straight"/>
+        <underline language="LA" method="pen" text="secundum dicta Ptolemaei" type="straight"/>
+        <underline language="LA" method="pen" text="Non prodest aspectus trinus &amp; sextilis infortunarum, sicut nec obest" type="straight"/>
+        <underline language="LA" method="pen" text="Cuicunq[ue] fuerint in ascendente infortunae, turpem notam in facie patietur" type="straight"/>
+        <underline language="LA" method="pen" text="auarus" type="straight"/>
+        <underline language="LA" method="pen" text="Dominus quinti circuli, scilicet" type="straight"/>
+        <underline language="LA" method="pen" text="cui Mars &amp; Venus fuerint in sexta" type="straight"/>
+        <underline language="LA" method="pen" text="Mercurius tetrogradus com Venere in eodem signo" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

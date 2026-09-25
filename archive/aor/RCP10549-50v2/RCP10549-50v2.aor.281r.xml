@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.281r.tif" pagination="13" reader="John Dee" signature="[A.vii.]"/>   
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>λίαν γὰρ ἁπλοῦν τὸ νομίζειν μικρὸν τοῖς μεγέθεσιν εἶναι τῶν φερομένων ἕκαστον, ὅτι φαίνεται θεωροῦσιν ἐντεῦθεν ἡμῖν οὕτως</marginalia_text>          <!-- DO: Greek needed -->
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Arist. 1⁰ meteoro[rum]. ]</marginalia_text> 
+                    <person name="Aristotle"/>
+                    <book title="Meteorology"/>
+                </position>
+            </language>
+            <translation>'It is rather simple to suppose that each of the celestial bodies is small in its dimensions, only because it looks so to us when we look at it from here'. 
+                Aristotle, in the first part of his Meteorology.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fabricemúrque si opus erit verba" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        fabricemur si opus verbas
+                    </marginalia_text>        
+                </position>
+            </language>
+            <translation>We may make up the words if necessary.</translation>
+        </marginalia>
+      
+        <marginalia anchor_text="perspicuitate[m] aut euidentia[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        perspicuitas
+                        evidentia.
+                    </marginalia_text>        
+                </position>
+            </language>
+            <translation>
+                Transparency. Evidence.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cognitio, aut perceptio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        cognitio
+                        perceptio
+                    </marginalia_text>        
+                </position>
+            </language>
+            <translation>
+                Knowledge. Perception.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cum his qui nihil probarent" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Academici nihil p[ro]ba[n]t
+                    </marginalia_text>        
+                </position>
+            </language>
+            <translation>The Academics approved nothing.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="multus in eo fuisset" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        multus in eo fuit
+                    </marginalia_text>        
+                </position>
+            </language>
+            <translation>He spent a lot of time on this.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        κατάληψις             
+                    </marginalia_text>        
+                </position>
+            </language>
+            <translation>Comprehension.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ἐνάργεια 
+                    </marginalia_text>        
+                </position>
+            </language>
+            <translation>Clearness.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fabricemúrque si opus erit verba" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        fabricari verba.
+                    </marginalia_text>        
+                </position>
+            </language>
+            <translation>To be made up with words.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="euidentia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Euidentia
+                    </marginalia_text>        
+                </position>
+            </language>
+            <translation>Evidence.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Philo; aperte mentitur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Philo aperte me[n]titur.
+                    </marginalia_text>
+                    <person name="Philo of Larissa"/>
+                </position>
+            </language>
+            <translation>Philo of Larissa openly decieves.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Academicoru[m] pertinaciam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                       Academicoru[m] p[er]tinacia 
+                    </marginalia_text>        
+                </position>
+            </language>
+            <translation>The obstinacy of the Academics.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in idipsum se induit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        in idip[su]m se induit.
+                    </marginalia_text>        
+                </position>
+            </language>
+            <translation>He put himself completely in.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ἀκατάληπτον φαντασία 
+                    </marginalia_text>        
+                </position>
+            </language>
+            <translation>Incomprehensible.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        φαντασία 
+                    </marginalia_text>        
+                </position>
+            </language>
+            <translation>Imaginative faculty.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Zenone" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Zeno
+                    </marginalia_text>    
+                    <person name="Zeno of Citium"/>
+                </position>
+            </language>
+            <translation>Zeno of Citium.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex quo efficitur; Quare; igitur; Itaque" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        { no[n] p[otes]t igitur Dubitari 15.53
+                        ex q[uo] efficitur
+                        quare
+                        igitur
+                        itaq[ue]
+                        qua[m]obre[m] 14.47 }
+                    </marginalia_text>    
+                    <internal_ref>
+                        <target ref="RCP10549-50v2:0573" text="15.53"/>
+                    </internal_ref>
+                    <internal_ref>
+                        <target ref="RCP10549-50v2:0572" text="14.47"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                Thus it cannot be doubted, [page] 15, [section] 53.
+                From which it is drawn.
+                How.
+                Therefore.
+                And so.
+                Why, [page] 14, [section] 47.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="à sensibus, quoru[m] ita clara iudicia &amp; sunt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        sensuu[m] iudiciu[m] claru[m] certu[m]q[ue] est.
+                        co[n]tra veteres philosophos fo.9.63
+                    </marginalia_text>       
+                    <internal_ref>
+                        <target ref="RCP10549-50v2:0567" text="9.63"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                The judgement of the senses is clear and certain.
+                Against the old philosophers, folio 9.63.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Neque vero hoc loco expectandum est dum de remo inflexo, aut de collo columbae respondeam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        obiectio / quia rem[us] in aqua demersus curu[us] aparet. et quia colu[m]ba[e] collu[m] vario colore sparsu[m] apparet nec aliquo certo
+                    </marginalia_text>        
+                </position>
+            </language>
+            <translation>An objection, because an oar submerged in water appears curved. And because a pigeon's neck appears dappled with various colours, and not in any way certain.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ita est maxima in sensibus veritas, si sani sunt ac valentes, &amp; omnia remoue[n]tur quae obstant &amp; impediunt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        in sensu, nullo modo, infirmo maxima veritas inest
+                    </marginalia_text>        
+                </position>
+            </language>
+            <translation>In a feeble sense, there is in no way the greatest truth.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Itaque &amp; lumen mutari saepe volumus, &amp; situs earum rerum quas intuemur, &amp; interualla aut contrahimus, aut diducimus,              multáque facimus vsque eò, dum aspectus ipse fidem faciat sui iudicii" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        videndi Ratio.
+                    </marginalia_text>        
+                </position>
+            </language>
+            <translation>The reasoning of seeing.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quod idem fit in vocibus, in odore, in sapore" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        O[mn]i[u]m sensuu[m] eade[m] ratio
+                    </marginalia_text>        
+                </position>
+            </language>
+            <translation>The same reasoning for all of the senses.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="exercitatione, &amp; arte" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ars. exercitatio.
+                    </marginalia_text>        
+                </position>
+            </language>
+            <translation>Art. Practice.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Adhibita vero exercitatione, &amp; arte, vt oculi pictura teneantur, aures cantibus, quis est quin cernat quanta vis est in sensibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Docti plus q[uam] rudes p[er]spiciu[n]t.
+                    </marginalia_text>        
+                </position>
+            </language>
+            <translation>Learned people perceive more than untrained people.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in eo genere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Cantionu[m] genera.
+                    </marginalia_text>        
+                </position>
+            </language>
+            <translation>Types of songs.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quid de tactu, &amp; eo quidem que[m] philosophi interiore[m] vocant" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Tactus interior.
+                    </marginalia_text>        
+                </position>
+            </language>
+            <translation>Internal touch.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cyrenaici" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Cyrenaici.
+                    </marginalia_text>        
+                </position>
+            </language>
+            <translation>The Cyrenaics.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quodam modo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        quoda[m] modo.
+                    </marginalia_text>        
+                </position>
+            </language>
+            <translation>In a certain way.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Animo iam haec tenemus comprehensa, non sensibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        retinem[us] obiecta a[n]i[m]o, no[n] se[n]su
+                    </marginalia_text>        
+                </position>
+            </language>
+            <translation>We retain objects in the mind, not in by [our] sense[s].</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="series" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Series.
+                    </marginalia_text>        
+                </position>
+            </language>
+            <translation>A series.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="homo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        HOMO QUID.
+                    </marginalia_text>        
+                </position>
+            </language>
+            <translation>What man is.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Non enim is sum, qui quicquid videatur tale, dicam esse quale videatur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        No[n] quicquid quale videtur tale revera est
+                    </marginalia_text>        
+                </position>
+            </language>
+            <translation>Not everything is seen as it actually is.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="interualla aut contrahimus, aut diducimus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        interualla { co[n]trahere diducere
+                    </marginalia_text>        
+                </position>
+            </language>
+            <translation>
+                To narrow; to open up intervals.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Animo iam haec tenemus comprehensa, non sensibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Comprehe[n]sa [ a[n]i[m]o sensibus
+                    </marginalia_text>        
+                </position>
+            </language>
+            <translation>
+                Comprehended by the mind [and] by the senses.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="vester operam multos annos dedit" type="straight"/>
+        <underline language="LA" method="pen" text="quidam è philosophis, &amp; hi quidem no[n] mediocres, faciendum" type="straight"/>
+        <underline language="LA" method="pen" text="qui multus in eo fuisset" type="straight"/>
+        <underline language="LA" method="pen" text="inscie[n]ter facere diceba[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="fabricemúrque si opus erit verba, ne" type="straight"/>
+        <underline language="LA" method="pen" text="illustriorem ipsa euidentia reperiri posse, nec ea quae tam clara" type="straight"/>
+        <underline language="LA" method="pen" text="ea sustinere vix poterat" type="straight"/>
+        <underline language="LA" method="pen" text="Academicoru[m] pertinaciam" type="straight"/>
+        <underline language="LA" method="pen" text="in idipsum se induit quod" type="straight"/>
+        <underline language="LA" method="pen" text="hesterno sermone triuimus) visum" type="straight"/>
+        <underline language="LA" method="pen" text="Hoc quu[m] infirmat, tollítque Philo, iudiciu[m] tollit incogniti" type="straight"/>
+        <underline language="LA" method="pen" text="imprude[n]s eò, quò minime vult, reuoluitur" type="straight"/>
+        <underline language="LA" method="pen" text="nobis, vt retineamus" type="straight"/>
+        <underline language="LA" method="pen" text="voluit euertere" type="straight"/>
+        <underline language="LA" method="pen" text="obtinemus" type="straight"/>
+        <underline language="LA" method="pen" text="aliqui" type="straight"/>
+        <underline language="LA" method="pen" text="iudicio ita est maxima in sensibus veritas, si sani sunt ac valentes, &amp; omnia remoue[n]tur quae obstant &amp; impediunt" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; interualla aut contrahimus, aut diducimus, multáque" type="straight"/>
+        <underline language="LA" method="pen" text="suis cuiusque generis iudicium requirat acrius" type="straight"/>
+        <underline language="LA" method="pen" text="quám multa vident pictores in vmbris, &amp; in emine[n]tia, quae nos non videmus?              quàm multa quae nos fugiunt in cantu, exaudiunt in eo genere exercitati, qui primo inflatu tibicinis Antiopam" type="straight"/>
+        <underline language="LA" method="pen" text="in quibus intelligentia, etsi vitiosa, est quaedam tamen" type="straight"/>
+        <underline language="LA" method="pen" text="non apertissime insaniat" type="straight"/>
+        <underline language="LA" method="pen" text="sensibus ipsis percipi dicuntur, sed quodam modo sensibus" type="straight"/>
+        <underline language="LA" method="pen" text="Animo iam haec tenemus comprehensa" type="straight"/>
+        <underline language="LA" method="pen" text="non sensibus" type="straight"/>
+        <underline language="LA" method="pen" text="caetera series deinde sequitur maiora nectens" type="straight"/>
+        <underline language="LA" method="pen" text="quasi expletam rerum comprehensione[m] amplectu[n]tur" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <!-- DO: Unknown symbol in left margin -->
+        
+        <mark method="pen" name="X_sign" place="right_margin"/>
+        <mark language="LA" method="pen" name="X_sign" place="tail" text="No[n] quicquid quale videtur tale revera est"/>
+        <mark method="pen" name="circumflex" place="right_margin"/>
+        <mark method="pen" name="circumflex" place="right_margin"/>  <!-- DO: These two circumflexes are in Dee's corrections to his own notes -->
+        
+        <mark method="pen" name="tripunctus_with_tail" place="head"/>  <!--JG: To be anchored to Greek marginalia in head-->
+        <mark language="LA" method="pen" name="duopunctus_with_antenna" place="head" text="fabricemur si opus erit verbas"/>
+        
+        <mark method="pen" name="duopunctus_with_antenna" place="right_margin"/>
+        <mark method="pen" name="tripunctus_with_tail" place="right_margin"/>
+        
+        <mark method="pen" name="Ichthys" place="left_margin"/>
+
+    </annotation>
+</transcription>

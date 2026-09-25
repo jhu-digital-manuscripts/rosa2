@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.251r.tif" pagination="19" reader="John Dee" signature="Cij"/> 
+    <annotation>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="FR">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Et dedens ordonnerent Neel de S[ain]t Sauueur, qui viconte estoit de Constentin: Raoul de Trony de et Rogier son filz, et leur gens, et puis s'enretourna Richard a Rouen</marginalia_text>  <!-- DO: I can't make out the word after 'Raoul de'; the English version of their name is 'Trosny' and the French is 'Ternois', but this doesn't appear to be either -->
+                    <person name="Nigel I of Saint Sauveur"/>
+                    <person name="Raoul I of Tosny"/>
+                    <person name="Roger I of Tosny"/>
+                    <person name="Richard II, Duke of Normandy"/>
+                    <location name="Coutances"/>
+                    <location name="Rouen"/>
+                </position>
+            </language>
+            <translation>And they had ordered inside Nigel of Saint Sauveur, who was Viscount of Coutances, Raoul of Tosny and his son Roger, and their people, and then Richard returned to Rouen.</translation>  <!-- DO: Not sure about this translation -->
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Lacina[m] Swanorum, &amp; Alanu[m] Moricorum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Lacina rex Swanoru[m] Olanus rex Noricoru[m]</marginalia_text>  <!-- DO: I'm not certain who these two kings are - this was the most plausible I could find re: names and time period -->
+                    <person name="Anund Jacob"/>
+                    <person name="Olaf II Haraldsson"/>
+                </position>
+            </language> 
+            <translation>[Arnund Jacob], King of the Swedes, Olaf, King of the Norwegians.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="Londoniae Comitatum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Londonia[e] comitatus</marginalia_text>
+                    <location name="London"/>
+                </position>
+            </language> 
+            <translation>The army of London.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="Auxendunu[m]" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Auxendunum</marginalia_text>
+                    <location name="Assandun"/>   <!-- DO: Definitely not sure about this location, but the Isle of Axholme is part of https://en.wikipedia.org/wiki/Kingdom_of_Lindsey where Cnut had allies... -->
+                    <!-- MB. I think the location is Ashdon. "The most through and recent discussion of the site by C.R.Hart identifies Auxendunum/Assundun with Ashdon" but there is apparently lingering disagreement among scholars whether it is modern day Ashdon or Ashingdon. Ashdon seems to be the more common attribution though.
+                        See:  https://books.google.co.uk/books?id=UExnAAAAMAAJ&q=Auxendunum&dq=Auxendunum&hl=en&sa=X&ved=0ahUKEwjj0qXg-7_TAhUEHxoKHRjSCRgQ6AEITTAH  and  https://en.wikipedia.org/wiki/Battle_of_Assandun.-->  <!-- DO: Not sure whether to just tag as 'Assandun' considering that Wikipedia article...? -->
+                </position>
+            </language> 
+            <translation/>  
+        </marginalia>
+        
+        <marginalia anchor_text="crudescente morbo corporis non multò post hominem exuit" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ethelredi Regis Ang[liae] mors.</marginalia_text>
+                    <person name="Aethelred II"/>
+                </position>
+            </language> 
+            <translation>The death of Aethelred, King of England.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="Emmam Regina[m]" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Emma filia Rich[ardi] primi. Duci N[orthmanniae]</marginalia_text>
+                    <person name="Emma of Normandy"/>
+                </position>
+            </language> 
+            <translation>Emma, the daughter of Richard the first, Duke of Normandy.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="Edwardi regis ortum ignorantibus monstremus" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Edwardi Regis ortus hinc clarius constabit.</marginalia_text>
+                    <person name="Edward the Confessor"/>
+                </position>
+            </language> 
+            <translation>The clearer accession of King Edward will stand here.</translation>  <!-- DO: Translation doesn't make sense -->
+            <!-- MB. Maybe it is 'ortius' rather than ortus? -->
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Dorcastrini" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dreux</marginalia_text>
+                    <location name="Dreux"/>
+                </position>
+            </language> 
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Odo Carnotensis" hand="Italian" method="pen">
+            <language ident="FR">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>The Comte of Chartes.</marginalia_text>
+                    <person name="Odo II, Count of Blois"/>
+                </position>
+            </language> 
+            <translation>The Count of Chartres.</translation>  
+        </marginalia>
+        
+        
+        <marginalia anchor_text="comitadem" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nigellum et</marginalia_text>
+                    <person name="Nigel I of Saint Sauveur"/>
+                </position>
+            </language> 
+            <translation>Nigel and</translation>  
+        </marginalia>
+        
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Castru[m] Tegulense conditur</marginalia_text>
+                    <location name="Tillieres"/>
+                </position>
+            </language> 
+            <translation>Tillieres Castle is founded.</translation>   
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Hugone siquidem Cinomannensi" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hugo Comes Cenoma[nnensi]</marginalia_text>
+                    <person name="Hugh III of Maine"/>
+                </position>
+            </language> 
+            <translation>Hugh, Count of Maine.</translation>  
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Wallerando Mellentensi" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Walerandus Comes Mellentensis.</marginalia_text>
+                    <person name="Waleran III, Count of Meulan"/>
+                </position>
+            </language> 
+            <translation>Waleran, Count of Meulan.</translation>  
+        </marginalia>
+        
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hugonis astutia.</marginalia_text>
+                    <person name="Hugh III of Maine"/>
+                </position>
+            </language> 
+            <translation>The cunning of Hugh.</translation>  
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Lacina[m] Swanorum" type="straight"/>
+        <underline language="LA" method="pen" text="Alanu[m] Moricorum" type="straight"/>
+        <underline language="LA" method="pen" text="Londoniae Comitatum" type="straight"/>
+        <underline language="LA" method="pen" text="Auxendunu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="vt nullus hominum queat supputare, quot millia die illa gentis Anglicae corruere" type="straight"/>
+        <underline language="LA" method="pen" text="vrbe[m] Ethelredus" type="straight"/>
+        <underline language="LA" method="pen" text="Emmam Regina[m] abstractam" type="straight"/>
+        <underline language="LA" method="pen" text="Christiano more" type="straight"/>
+        <underline language="LA" method="pen" text="pensum illius corporis" type="straight"/>
+        <underline language="LA" method="pen" text="nomine Hardecnutum" type="straight"/>
+        <underline language="LA" method="pen" text="Danorum regem" type="straight"/>
+        <underline language="LA" method="pen" text="vocabulo Gunnildem" type="straight"/>
+        <underline language="LA" method="pen" text="Henrico Romanorum" type="straight"/>
+        <underline language="LA" method="pen" text="serie inteximus" type="double"/>
+        <underline language="LA" method="pen" text="vt Edwardi" type="straight"/>
+        <underline language="LA" method="pen" text="Odo Carnotensis" type="straight"/>
+        <underline language="LA" method="pen" text="medietatem Dorcastrini" type="double"/>
+        <underline language="LA" method="pen" text="dedit dotis nomine" type="straight"/>
+        <underline language="LA" method="pen" text="cum terra super Arne fluuium adiacente" type="straight"/>
+        <underline language="LA" method="pen" text="Dorcasini" type="straight"/>
+        <underline language="LA" method="pen" text="quod Tegulense" type="straight"/>
+        <underline language="LA" method="pen" text="Hugone siquidem Cinomannensi" type="straight"/>
+        <underline language="LA" method="pen" text="Mellentensi" type="straight"/>
+        <underline language="LA" method="pen" text="signiferis" type="straight"/>
+        <underline language="LA" method="pen" text="Odo atq[ue] Wallerandus" type="straight"/>
+        <underline language="LA" method="pen" text="sulco tegens telluris" type="straight"/>
+        <underline language="LA" method="pen" text="duos reges cum" type="straight"/>
+        <underline language="LA" method="pen" text="Olanum" type="straight"/>
+        <underline language="LA" method="pen" text="Lacinam Suanorum" type="straight"/>
+        <underline language="LA" method="pen" text="Odo Matildam ducis" type="straight"/>
+        
+        <mark method="pen" name="dagger" place="head"/>
+        
+        <mark method="pen" name="dagger" place="intext"/>  <!-- comitadem custodes -->
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral language="LA" place="tail" text="Ethelfredus rex">1</numeral>
+        
+        <numeral language="LA" place="tail" text="Cnutus rex">2</numeral>
+        
+        <numeral language="LA" place="tail" text="Cnutus rex">2</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        
+        <graph book_orientation="0" method="pen" place="tail" type="genealogical_tree">
+            
+            <node id="n1" person="Cnut the Great">Cnutus rex</node>
+            <node id="n2" person="Emma of Normandy">Emma regina</node>
+            <node id="n3" person="Aethelred II">Ethelfredus rex</node>
+            <node id="n4" person="Harthacnut">Hardecnutus rex Dan[orum]</node>
+            <node id="n5" person="Gunhilda of Denmark">Gumildis</node>
+            <node id="n6" person="Henry III, Holy Roman Emperor">Henricus Rom[anus] Imp[erator]</node>
+            
+            <link from="n1" relationship="has_spouse" to="n2"/>
+            <link from="n2" relationship="has_spouse" to="n1"/>
+            <link from="n1" relationship="has_child" to="n4"/>
+            <link from="n1" relationship="has_child" to="n5"/>
+            <link from="n2" relationship="has_child" to="n4"/>
+            <link from="n2" relationship="has_child" to="n5"/>
+            <link from="n2" relationship="has_spouse" to="n3"/>
+            <link from="n3" relationship="has_spouse" to="n2"/>
+            <link from="n5" relationship="has_spouse" to="n6"/>
+            <link from="n6" relationship="has_spouse" to="n5"/>
+           
+        </graph>
+        
+
+        
+        
+        
+    </annotation>
+    
+</transcription>

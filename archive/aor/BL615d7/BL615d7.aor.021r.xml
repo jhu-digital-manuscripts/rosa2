@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.021r.tif" pagination="21" reader="John Dee" signature="[Cv]"/> 
+    
+    <annotation>
+        
+        <marginalia anchor_text="San Brandan" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>St Brandans Iles</marginalia_text>
+                    <location name="Saint Brendan's Island"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                   <marginalia_text>Insula[e] q$uae] subpolares</marginalia_text>
+                </position>
+            </language>
+            <translation>Subpolar islands.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="che ogni anno vedeuano alcune Isole dalla parte verso Ponente" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Iuuentio Fortunato" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Inventio Fortunata[e], est nomen libri scripti ad Ed. 3[us] Rege[m] Anglia[e], de mirabilib[us]q[ue] peregrinationib[us]q[ue] [etc.]</marginalia_text>
+                    <person name="Edward III of England"/>
+                    <book title="Inventio Fortunata"/>
+                    <emphasis method="pen" text="Inventio Fortunata[e]" type="straight"/>
+                </position>
+            </language>
+            <translation>'Inventio Fortunatae' is the name of a book written to Edward III, king of England, about the miraculous journeys, etcetera.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="si presume" type="double"/>
+        <underline language="IT" method="pen" text="che fossero" type="double"/>
+        <underline language="IT" method="pen" text="quelle, che si dicono di San Brandan" type="double"/>
+        <underline language="IT" method="pen" text="molte marauiglie" type="straight"/>
+        <underline language="IT" method="pen" text="altri, che giacciono molto sotto al settentrione" type="straight"/>
+        <underline language="IT" method="pen" text="Iuuentio Fortunato" type="double"/>
+        <underline language="IT" method="pen" text="quali vanno sopra l'acqua nuotando" type="straight"/>
+        <underline language="IT" method="pen" text="del ferro" type="straight"/>
+        <underline language="IT" method="pen" text="della Gomera" type="straight"/>
+        <underline language="IT" method="pen" text="che ogni anno vedeuano alcune Isole dalla" type="straight"/>
+        <underline language="IT" method="pen" text="parte verso Ponente" type="double"/>
+        <underline language="IT" method="pen" text="a scoprir certo paese, il qual giuraua che vedeua ogni anno" type="straight"/>
+        <underline language="IT" method="pen" text="sempre di vno steffo modo" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="tail"/>
+    
+    </annotation>
+</transcription>

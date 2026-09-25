@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="RCP7831-1.007v.tif" pagination="4" reader="Dee" signature="[Aij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[C]o[e]lum moderatissimu[m] virtutibus pra[e]ditu[m] temperataru[m] qualitatu[m] effec[t]ricibus</marginalia_text>
+                </position>
+            </language>
+            <translation>The most moderate air gifted with characteristics of mild qualities by the authors.</translation> <!--JG: Unsure, esp. what he means with 'effectricibus', sort of the first makers/doers/originators?-->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Authoris scopus, &amp; institutum" type="straight"/>
+        <underline language="LA" method="pen" text="qualitatibus" type="straight"/>
+        <underline language="LA" method="pen" text="de motu" type="straight"/>
+        <underline language="LA" method="pen" text="orbibus" type="straight"/>
+        <underline language="LA" method="pen" text="corpore" type="straight"/>
+        <underline language="LA" method="pen" text="natura" type="straight"/>
+        <underline language="LA" method="pen" text="colore" type="straight"/>
+        <underline language="LA" method="pen" text="corruptibilium" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; uicissitudines" type="straight"/>
+        <underline language="LA" method="pen" text="Recordaberis itaque nullum coelis inesse elementaris qualitatis excessum" type="straight"/>
+        <underline language="LA" method="pen" text="siue etiam simplex" type="straight"/>
+        <underline language="LA" method="pen" text="moderatissimu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="elementaris" type="straight"/>
+        <underline language="LA" method="pen" text="qualitatis" type="straight"/>
+        <underline language="LA" method="pen" text="sed uirtutes potius" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/> <!--after marginal note-->
+        
+    </annotation>
+</transcription>

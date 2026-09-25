@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.319r.tif" pagination="617" reader="John Dee" signature="[qqq.v.]"/>
+    <annotation>
+        
+        <marginalia anchor_text="cum inscriptione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>inscriptio</marginalia_text>
+                </position>
+            </language>
+            <translation>Inscription.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Contentio</marginalia_text>
+                </position>
+            </language>
+            <translation>Contention.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fortuna ipsa, quae dicitur caeca" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>fortuna Ca[e]ca.</marginalia_text>
+                </position>
+            </language>
+            <translation>Blind fortune.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mea memoria dilabu[n]tur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>mea memoria dilabu[n]tur.</marginalia_text>
+                </position>
+            </language>
+            <translation>My memories dissolve.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quasi thesaurum draco" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Thesauru[m] draco.</marginalia_text>
+                </position>
+            </language>
+            <translation>A scrooge.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quid Licet.</marginalia_text>
+                </position>
+            </language>
+            <translation>What is permissible.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ille helluo" type="straight"/>
+        <underline language="LA" method="pen" text="Falerno anseres" type="straight"/>
+        <underline language="LA" method="pen" text="quasi thesaurum draco" type="straight"/>
+        <underline language="LA" method="pen" text="licet autem nemini contra patriam ducere exercitum si" type="straight"/>
+        <underline language="LA" method="pen" text="Neque enim quod quisque potest" type="straight"/>
+        <underline language="LA" method="pen" text="id ei" type="straight"/>
+        <underline language="LA" method="pen" text="nec si non obstatur" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">21</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="quasi thesaurum draco" book_orientation="0" method="pen" place="right_margin" type="dragon"/>
+        
+    </annotation>
+</transcription>

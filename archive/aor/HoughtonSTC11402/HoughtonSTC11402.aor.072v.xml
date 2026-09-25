@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.072v.tif" reader="Harvey" signature="[I[i[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Annibal" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hannibal.</marginalia_text>
+                    <person name="Hannibal"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>+ Nico, &amp; Philomenes.</marginalia_text>
+                    <person name="Nicomedes"/>
+                    <person name="Philomenes"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Hannibal" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In [the] warres of Annibal: c. 36.</marginalia_text> <!--JG: Which chapter 36?-->
+                    <person name="Hannibal"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="the manly feates" type="straight"/>
+        <underline language="EN" method="pen" text="agaynste the Persians in" type="straight"/>
+        <underline language="EN" method="pen" text="capitayne of Babylon" type="straight"/>
+        <underline language="EN" method="pen" text="set a wayne loded with free stone" type="straight"/>
+        <underline language="EN" method="pen" text="troubled at the gate, that was" type="straight"/>
+        <underline language="EN" method="pen" text="the wayne" type="straight"/>
+        <underline language="EN" method="pen" text="Citie of Tarentyne" type="straight"/>
+        <underline language="EN" method="pen" text="to betray the citie" type="straight"/>
+        <underline language="EN" method="pen" text="on huntynge by nyght" type="straight"/>
+        <underline language="EN" method="pen" text="wylde bores for" type="straight"/>
+        <underline language="EN" method="pen" text="taken theym by venerye" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="the manly feates"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="troubled at the gate, that was"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="on huntynge by nyght"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="wylde bores for"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Eoneus"/>
+        <mark method="pen" name="plus_sign" place="intext"/> <!--Eoneus-->
+        <mark method="pen" name="comma" place="intext"/> <!--citie, and-->
+        
+    </annotation>
+</transcription>

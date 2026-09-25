@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.115v.tif" pagination="54" reader="Harvey" signature="[D3v]"/>	<!-- ABO 120left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Certa, et absoluta fructificant. Non curat
+						numerum, sed pondus Eutrapelus.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				Solid and complete matters bear fruit.
+				Eutrapelus cares not for number, but weight.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Cosimo, arguto et prudente, come Laconi: Lorenzo, prudente, et
+						arguto, come Atheniesi.
+					</marginalia_text>
+					<person name="Cosimo de' Medici"/>
+					<person name="Lorenzo de' Medici"/>
+					<emphasis method="pen" text="Cosimo" type="straight"/>
+					<emphasis method="pen" text="Lorenzo" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Cosimo is clever and prudent, as the Spartans.
+				Lorenzo is prudent and clever, as the Athenians.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Solus scit, qui absolutè Scit.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Only he who knows completely, actually knows.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						The
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Mirrour of the World.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Nemo operatur vehementiùs, aut faciliùs. 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				No one works more eagerly or more easily.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Meminerunt omnia coeli. Pra[e]stabunt
+						optima coeli. Philomela[e] Canticum.
+					</marginalia_text>
+					<person name="Philomela"/>
+				</position>
+			</language>
+			<translation>
+				All things recall heaven.
+				The best things surpass heaven.
+				The song of Philomela.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Vt pra[e]ter reliquos foelix, propriéq[ue] beatus, Antè omnes hilaris, delitiumq[ue] chori[s]. 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Just as he is happy and rightly blessed more than the others, he is cheerful before all and a delight of the crowd.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Eutrapeli hypothesis, Optimitas: vt Principis, Maximitas.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				Eutrapelus' proposition is greatness, just as that of the prince is grandness.
+			</translation>
+		</marginalia>
+
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Principis est, pra[e]stare subditis: Eutrapeli, viris.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				The Prince is superior to subordinates; Eutrapelus to men.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="citta guasta, che perduta" type="straight"/>
+		<underline language="IT" method="pen" text="di panno rosato, faceuano" type="straight"/>
+		<underline language="IT" method="pen" text="vn'huomo" type="straight"/>
+		<underline language="IT" method="pen" text="teneuano co' pater nostri" type="straight"/>
+		<underline language="IT" method="pen" text="moglie che" type="straight"/>
+		<underline language="IT" method="pen" text="occhi chiusi" type="straight"/>
+		<underline language="IT" method="pen" text="auuezzarli alla morte" type="straight"/>
+		<underline language="IT" method="pen" text="bugia odiosa" type="straight"/>
+		<underline language="IT" method="pen" text="fuor che ne' medici" type="straight"/>
+		<underline language="IT" method="pen" text="le bugie" type="straight"/>
+		<underline language="IT" method="pen" text="a' medici" type="straight"/>
+		<underline language="IT" method="chalk" text="della morte, sia vero, ò nò prometter loro la     sanità. Dante nostro non solamente prohibisce la bugia" type="straight"/>
+		<underline language="IT" method="pen" text="prometter loro la sanità" type="straight"/>
+		<underline language="IT" method="pen" text="Dante nostro" type="straight"/>
+		<underline language="IT" method="pen" text="à quel ver" type="straight"/>
+		<underline language="IT" method="pen" text="faccia di menzogna" type="straight"/>
+		<underline language="IT" method="pen" text="chiuder le labbra" type="straight"/>
+		<underline language="IT" method="pen" text="senza colpa fa vergogna" type="straight"/>
+		<underline language="IT" method="pen" text="ricchezze" type="straight"/>
+		<underline language="IT" method="pen" text="incitamento di voglie praue" type="straight"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- pun -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ammo -->
+		
+		<mark method="pen" name="comma" place="intext"/> <!-- dormiuano, rispose -->
+		<mark method="pen" name="vertical_bar" place="intext"/> <!-- capo. Ad -->
+		<mark method="pen" name="dot" place="intext"/> <!-- bene, & -->
+		<mark method="pen" name="vertical_bar" place="intext"/> <!-- nostri. Alla -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="che ne'medici"/>
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- sanita. Dante -->
+		<mark method="pen" name="dot" place="intext"/> <!-- somigli, ammonendocene -->
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- menzogna -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="senza colpa fa vergogna"/>
+		
+		
+    </annotation>
+</transcription>

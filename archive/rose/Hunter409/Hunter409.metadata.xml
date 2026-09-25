@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>0</illustrations>
+    <totalPages>151</totalPages>
+    <dimensions units="">
+        <width>-1</width>
+        <height>-1</height>
+    </dimensions>
+    <dates>
+        <startDate>1400</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="romaunt">
+            <language>fr</language>
+            <title>Romaunt of the Rose</title>
+            <textId/>
+            <pages end="150r" start="1r">150</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>24</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Hunter 409</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>parchment</material>
+            <origin>England</origin>
+            <currentLocation>Glasgow</currentLocation>
+            <repository>University of Glasgow Library</repository>
+            <shelfmark>MS Hunter 409</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Hunter 409</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>parchemin</material>
+            <origin>England</origin>
+            <currentLocation>Glasgow</currentLocation>
+            <repository>University of Glasgow Library</repository>
+            <shelfmark>MS Hunter 409</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

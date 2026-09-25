@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.006r.tif" reader="John Dee" signature="[Avij]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="magnu[m] [et] paruu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        magnu[m] et paruu[m] su[n]t relatiua.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Large and small are relative.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="opinione[m] antiquoru[m] ph[ilosoph]or[um]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Antiq[uo]ru[m] philosophoru[m] opinio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The opinion of the old philosophers.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="s[ecundu]m q[uod] dixim[us] locum esse phisice co[n]sideratio[n]is" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Locus physicus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Physical space.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Locus aut[em] mathematice c[on]siderationis p[ro]ut trib[us] dime[n]sio[n]ibus              s[ecundu]m corporis locati dime[n]sio[n]es me[n]surat[ur] no[n] habet c[on]trariu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Locus mathematicus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A mathematical locus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in de celo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        In lib. de ca[e]lo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                <!-- FSF: I haven't found it -->
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="qua[n]titas p[er] se absoluta [et] no[n] respectiua" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        qua[n]titas {p[er] se absoluta respectiua
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The absolute quantity itself or respectively.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="c[on]traria sibimet deno[m]i[n]atio[n]e" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Co[n]traria denominatione
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A contrary denomination.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Est nanqu[am] inequale in maius [et] minus q[uae] c[on]traria sibimet deno[m]i[n]atio[n]e fingunt[ur]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Quantitas respectiue d[icitu]r a[e]qualis vel ina[e]qualis et no[n] absolute p[er] se, 
+                        sed semp[er] in co[m]paratione ad alia[m] qua[n]titate[m] [etc].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+               A quantity respectively is said to be equal or unequal and not absolute in itself, but always in comparison to other quantities etc.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Fundant[ur] igit[ur] hec relatiua circa equale [et] ineq[ua]le" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Relatiua fundata circa a[e]quale et ina[e]quale.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Relatives established around the equal and unequal.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="c[on]trarietas s[ecundu]m q[uod] dixim[us] locum esse phisice" type="straight"/>
+        <underline language="LA" method="pen" text="Locus aut[em] mathematice c[on]siderationis p[ro]ut trib[us] dime[n]sio[n]ibus s[ecundu]m corp[or]is locati dime[n]sio[n]es me[n]surat[ur] no[n] habet c[on]trariu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="in de celo" type="double"/>
+        <underline language="LA" method="pen" text="remissione[m] s[ecundu]m q[uod] qua[n]titas p[er] se absoluta [et] no[n] respectiua" type="straight"/>
+        <underline language="LA" method="pen" text="Magis aut[em] [et] minus st??? de absolutis no[n] respectiuis" type="straight"/> <!-- FSF: not sure what the abbreviation of the st is -->
+        <underline language="LA" method="pen" text="qui[d]qu[am]" type="straight"/>
+        <underline language="LA" method="pen" text="Na[m] senari[us] vt senari[us] p[er] se nec minor" type="straight"/>
+        <underline language="LA" method="pen" text="p[ro]prietas no[n] p[ro]priu[m] quarto m[od]o" type="straight"/>
+        <underline language="LA" method="pen" text="Inequale v[er]o gemina diuisione nome[n] importat ad" type="straight"/>
+        <underline language="LA" method="pen" text="c[on]traria sibimet deno[m]i[n]atio[n]e" type="straight"/>
+        <underline language="LA" method="pen" text="s[ecundu]m qua[n]titate[m] p[er] se" type="straight"/>
+        <underline language="LA" method="pen" text="est ad aliquid" type="straight"/>
+        <underline language="LA" method="pen" text="equale [et] ineq[ua]le" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <errata amendedtext="," copytext="." language="LA"/> <!-- angulat[ur] de --> 
+        
+    </annotation>
+</transcription>

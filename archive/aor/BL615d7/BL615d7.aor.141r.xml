@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.141r.tif" pagination="141" reader="John Dee"/>
+    
+    
+    <annotation>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A prophesie</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="frate Roman" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Frier Roman</marginalia_text>
+                    <person name="Ramon Pane"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Artiaga, Capitano di quella" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Artiaga Capitano della Maddalena</marginalia_text>
+                    <person name="Artiaga"/>
+                </position>
+            </language>
+            <translation>Artiaga, Captain of La Magdalena</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="con Giocauuaghama," type="straight"/>
+        <underline language="IT" method="pen" text="haueua detto" type="straight"/>
+        <underline language="IT" method="pen" text="percioche nel lor paese verrebbe vna gente vestita, la quale hauea a dominarli, &amp; vcciderli, &amp;" type="straight"/>
+        <underline language="IT" method="pen" text="si morrebbono della fame" type="straight"/>
+        <underline language="IT" method="pen" text="eßere i Canibali" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; altri frati" type="straight"/>
+        <underline language="IT" method="pen" text="frate Roman, pouero" type="straight"/>
+        <underline language="IT" method="pen" text="rimasi" type="double"/>
+        <underline language="IT" method="pen" text="alla Maddalena" type="double"/>
+        <underline language="IT" method="pen" text="Artiago" type="straight"/>
+        
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="intext"/>  <!-- seco. Hora -->
+        
+        
+    </annotation>
+    
+    
+</transcription>

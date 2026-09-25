@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.138r.tif" pagination="99" reader="Harvey" signature="G2[r]"/>	<!-- ABO 142right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Ignavus est, qui plus potest, quàm vult. Vanus est,
+						qui plus vult, quàm potest. Ignobilis est, qui
+						non putat se posse, quod alius potest.
+					</marginalia_text>
+					<emphasis method="pen" text="Ignavus est" type="straight"/>
+					<emphasis method="pen" text="Vanus" type="straight"/>
+					<emphasis method="pen" text="Ignobilis est" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				He who can do more than he wants is a coward.
+				He who wants more than he can is vain.
+				He who does not believe that he can do what others can is ignoble.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Aliter etiam Eutrapelus, vt res ferebat:
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						) vilis est,
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						qui
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						non vult,
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						quantu[m] potest.
+						Ignauus est, qui no[n] potest, quantum vult.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Otherwise, even Eutrapelus as he carried out the matters. 
+				he who does not want as much as he can achieve is cheap.
+				He who cannot do as much as he wants is a coward.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						serio Principe.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A serious prince.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Apparet Virtus,
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						arguiturq[ue] Malis.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="IT">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						risoluto.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Virtue appears and is denounced by evil. 
+				Resolute.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						The predominant spirit.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Luciani Rhetor.)
+					</marginalia_text>
+					<person name="Lucian"/>
+				</position>
+			</language>
+			<translation>
+				Lucian's rhetorician.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Ignavus est, qui minus vult, quàm potest.
+						Vanus est, qui plus vult, quàm potest.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				He who does less than he can is a coward.
+				He who wants more than he can is vain.
+			</translation>
+		</marginalia>
+		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.138r_0001" marginalia_continues_from="Ha2.137v_0001" marginalia_from_transcription="Ha2.137v.xml">
+			<language ident="EN">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						<!-- Continued from facing page, right margin, Ha2.137v -->
+						else, the more brauerie, the more speede, &amp; greater account.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="i medici dissero" type="straight"/>
+		<underline language="IT" method="pen" text="saluar la vita, bisognaua tagliar subito quella mano" type="straight"/>
+		<underline language="IT" method="pen" text="che'l veleno si distendesse" type="straight"/>
+		<underline language="IT" method="pen" text="voglio piu tosto morire, che far questo" type="straight"/>
+		<underline language="IT" method="pen" text="non puo con vna mano sola reggere" type="straight"/>
+		<underline language="IT" method="pen" text="drittamente il mondo" type="straight"/>
+		<underline language="IT" method="pen" text="Efficacia &amp; virtù" type="straight"/>
+		<underline language="IT" method="pen" text="della pouertà" type="straight"/>
+		<underline language="IT" method="pen" text="la pouertà è sussidio" type="straight"/>
+		<underline language="IT" method="pen" text="filosofia" type="straight"/>
+		<underline language="IT" method="pen" text="la filosofia cerca" type="straight"/>
+		<underline language="IT" method="pen" text="con le parole" type="straight"/>
+		<underline language="IT" method="pen" text="pouertà constringe co' fatti" type="straight"/>
+		<underline language="IT" method="pen" text="Aristone" type="straight"/>
+		<underline language="IT" method="pen" text="vna lucerna" type="straight"/>
+		<underline language="IT" method="pen" text="palesa tutte le miserie" type="straight"/>
+		<underline language="IT" method="pen" text="anche il valore &amp; la virtù d'esso" type="straight"/>
+		<underline language="IT" method="pen" text="nelle auuersità" type="straight"/>
+		<underline language="IT" method="chalk" text="nelle auuertisà" type="straight"/>
+		<underline language="IT" method="pen" text="fa la virtù sua operatione" type="straight"/>
+		<underline language="IT" method="chalk" text="fa la virtù sua operatione" type="straight"/>
+		<underline language="IT" method="pen" text="velenosa peste" type="straight"/>
+		<underline language="IT" method="pen" text="l'inuidia" type="straight"/>
+		<underline language="IT" method="pen" text="l'auaritia" type="straight"/>
+		<underline language="IT" method="pen" text="L'AVARO" type="straight"/>
+		<underline language="IT" method="pen" text="l'inuidioso" type="straight"/>
+		<underline language="IT" method="pen" text="gratie" type="straight"/>
+		<underline language="IT" method="pen" text="quel che vogliono" type="straight"/>
+		<underline language="IT" method="pen" text="Mercurio" type="straight"/>
+		<underline language="IT" method="pen" text="desiderio loro" type="straight"/>
+		<underline language="IT" method="pen" text="cheil compagno" type="straight"/>
+		<underline language="IT" method="pen" text="doppio di" type="straight"/>
+		<underline language="IT" method="pen" text="l'altro addimanda" type="straight"/>
+		<underline language="IT" method="pen" text="L'auaro adunque" type="straight"/>
+		<underline language="IT" method="pen" text="grandissimo tesoro" type="straight"/>
+		<underline language="IT" method="pen" text="compagno" type="straight"/>
+		<underline language="IT" method="pen" text="ottiene il doppio" type="straight"/>
+		<underline language="IT" method="pen" text="L'inuidioso" type="straight"/>
+		<underline language="IT" method="pen" text="priuato d'vn'occhio" type="straight"/>
+		<underline language="IT" method="pen" text="priuato di due" type="straight"/>
+		<underline language="LA" method="pen" text="alterius macrescit rebus opimis" type="straight"/>
+		
+		<mark language="IT" method="pen" name="plus_sign" place="left_margin" text="saluar la vita, bisognaua tagliar subito quella mano"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="plus_sign" place="left_margin"/> <!-- fatti -->
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="plus_sign" place="left_margin"/>
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="L'auaro adunque non gli parendo potersi empiere,     domanda grandissimo tesoro, &amp; l'ottiene."/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="horizontal_bar" place="right_margin"/> <!-- under marginal note, 'vult' -->
+		<mark method="pen" name="horizontal_bar" place="right_margin"/> <!-- under marginal note, 'risoluto'. -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- inui -->
+		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- vn' -->
+		<mark language="LA" method="pen" name="plus_sign" place="right_margin" text="alterius macrescit rebus opimis"/>
+		
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- fatti. Et -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="L'auaro adunque"/>
+		
+    </annotation>
+</transcription>

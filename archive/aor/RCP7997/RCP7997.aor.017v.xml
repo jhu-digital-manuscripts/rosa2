@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.017v.tif" reader="John Dee" signature="[Cv[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Unde hoc est subiectu[m] v[niuersa]le veru[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vniuersale subiectum verum.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A true universal subject.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="et p[ri]mo" type="straight"/>
+        <underline language="LA" method="pen" text="si passio illa adhuc insit remoto illo cui inesse dicebat[ur] no[n] videt[ur] esse illud v[niversa]le. fuisse v[niversa]le subiectu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Unde hoc est subiectu[m] v[universa]le veru[m] quo posito ponit[ur] causa passio[n]is et quo remoto passio remouet[ur]" type="straight"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!-- v[universa]le p[ri]mu[m] --> 
+        <mark method="pen" name="comma" place="intext"/> <!-- p[ri]mu[m] hui[us] -->
+        <mark method="pen" name="comma" place="intext"/> <!-- p[ri]mo quia -->
+        <mark method="pen" name="comma" place="intext"/> <!-- passio habere-->
+        <mark method="pen" name="comma" place="intext"/> <!-- triangulo remota -->    
+        
+        <errata amendedtext="remanet" copytext="remenet" language="LA"/>   
+        <errata amendedtext="," copytext="." language="LA"/> <!-- triangulus cui -->
+        
+    </annotation>
+</transcription>

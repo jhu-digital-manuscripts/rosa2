@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.305v.tif" pagination="162" reader="John Dee" signature="[Ooo iij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Griffinus filius Madochi, quidam princepts VValliae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Griffinus ap Madoc princeps
+                    </marginalia_text>
+                    <person name="Gruffydd II ap Madog, Lord of Dinas Bran"/>
+                </position>
+            </language>
+            <translation>
+                Prince Gruffydd II ap Madog, Lord of Dinas Bran.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Griffinus filius Madochi" type="straight"/>
+        <underline language="LA" method="pen" text="quidam princeps" type="straight"/>
+        <underline language="LA" method="pen" text="Griffinum liberum dimisit, veru[m] etiam in propria persona ad pace[m] regis, mansuetus &amp; edomitus peruenit, examen" type="straight"/>
+        <underline language="LA" method="pen" text="omnia subiturus" type="straight"/>
+        <underline language="LA" method="pen" text="Griffinum, à fratris carcere liberatum" type="straight"/>
+        <underline language="LA" method="pen" text="ipsum Dauidem in London. vt ad curiam veniret" type="straight"/>
+        <underline language="LA" method="pen" text="responsurus" type="straight"/>
+
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

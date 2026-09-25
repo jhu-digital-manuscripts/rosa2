@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.029v.tif" pagination="42" reader="John Dee" signature="[d 3[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="antiscium" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nota Aspectus etia[m] in antiscijs
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Note the aspect even in the antiscia. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        J:D. Cardanus hunc errorem correxit salve firmici honore fo 181
+                    </marginalia_text>
+                    <person name="John Dee"/>
+                    <person name="Girolamo Cardano"/>
+                    <person name="Julius Firmicus Maternus"/>
+                    <internal_ref>
+                        <target ref="RCP7134:381" text="181"/> <!--JG: The correct geniture appears on folio 180v of Cardano's book--> 
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                John Dee. Cardano corrected this error with Firmicus' honour unharmed, [see] folio 181.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Antisciu[m] ♃ in locu[m] 12.
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="UCLOgden:089" text="12"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                Antiscian Jupiter in place 12.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Translatio virtutis et potestatis alicuius Planeta[e].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The transfer of virtue and power of some planet.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="est, an sibi per antiscium, sociata radiatione iunga[n]tur" type="straight"/>
+        <underline language="LA" method="pen" text="ut trigonica" type="straight"/>
+        <underline language="LA" method="pen" text="uel quadrata" type="straight"/>
+        <underline language="LA" method="pen" text="uel diametra" type="straight"/>
+        <underline language="LA" method="pen" text="hexagona" type="straight"/>
+        <underline language="LA" method="pen" text="quasi sic sint simplici" type="straight"/>
+        <underline language="LA" method="pen" text="Est autem ratio haec latens, antisciorum naturali firmata consensu, quam alio tempore explicare curabo" type="straight"/>
+        <underline language="LA" method="pen" text="eius genitur[a]e pater, post geminum ordinarium consulatum, in exilium datus est" type="straight"/>
+        <underline language="LA" method="pen" text="adulterii crimen in exilium similiter datus" type="straight"/>
+        <underline language="LA" method="pen" text="administrationem Campaniae orimum destinatus" type="straight"/>
+        <underline language="LA" method="pen" text="Achaiae proconsulatum" type="straight"/>
+        <underline language="LA" method="pen" text="adsimilem Asiae proconsulatum" type="straight"/>
+        <underline language="LA" method="pen" text="urbis Romanae praefecturam" type="straight"/>
+        <underline language="LA" method="pen" text="Frtunámq[ue] prius acerba[m], atq[ue] aduersam" type="straight"/>
+        <underline language="LA" method="pen" text="de exilio" type="double"/>
+        <underline language="LA" method="pen" text="signum, in quo humiliatur" type="straight"/>
+        <underline language="LA" method="pen" text="xii locum" type="straight"/>
+        <underline language="LA" method="pen" text="patri damosum decernit exilium. ♃" type="straight"/>
+        <underline language="LA" method="pen" text="antiscii radius" type="straight"/>
+        <underline language="LA" method="pen" text="signo ♓ ad ♎ transtulit" type="straight"/>
+        <underline language="LA" method="pen" text="signum, ac si in duodecimo loco, id est in cacodaemone" type="straight"/>
+        
+        <mark language="LA" method="pen" name="small_circle" place="intext" text="atq[ue]"/>
+        
+        <numeral language="LA" place="intext" text="quo">.1.</numeral>
+        <numeral language="LA" place="intext" text="locum">2</numeral>
+        
+    </annotation>
+</transcription>

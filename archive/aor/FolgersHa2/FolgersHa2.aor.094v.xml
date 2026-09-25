@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.094v.tif" pagination="12" reader="Harvey" signature="[A6v]"/>	<!-- ABO 99left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Stultus est, qui non sapit sine Libris.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				He who knows nothing without books is a fool.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Magistratus, lex loquens: sapiens, animata
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						bibliotecha. Omnes in 
+						Ca[e]sare manes. In vno omnes Magni.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The magistrate, a speaking law; the wise man, a living library.
+				Everything is in the hands of Caesar. Everything in one great man.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Da mihi talem Amorem in Artibus, et Virtutibus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Give me such love in the Arts and Virtues.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Sera nimis Vita est crastina: viue hodiè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The life of tomorrow is too late; live today.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Cupido, flammis armatus: apud poetas.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Cupid is armed with flames, according to the poets.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Omnem excedit amor, visq[ue] coacta modum. Axiophilus.
+						Sapiens, sibi Microcosmus; et Vnus, Omnia. Ca[e]tera, sibi parerga.
+					</marginalia_text>
+					<person name="Axiophilus"/>
+				</position>
+			</language>
+			<translation>
+				Love exceeds all, and strength compels the manner. Axiophilus.
+				The wise man, a Microcosm for himself; and one, all things.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Eccentrica quot, et
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="tail">
+					<marginalia_text>
+						quanta?
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Eccentric matters: how many and to what degree?
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Sapiens Theodori, Aristippi, Aristotelis, Epicuri, filius huius seculi: qualis etiam
+						interdum, Sapiens Antisthenis, Diogenis, Zenonis, ipsiusq[ue] etiam Platonis.
+					</marginalia_text>
+					<person name="Theodorus the Atheist"/>
+					<person name="Aristippus"/>
+					<person name="Aristotle"/>
+					<person name="Epicurus"/>
+					<person name="Antisthenes"/>
+					<person name="Diogenes of Sinope"/>
+					<person name="Zeno of Citium"/>
+					<person name="Plato"/>
+					<emphasis method="pen" text="Sapiens Theodori" type="straight"/>
+					<emphasis method="pen" text="filius huius seculi" type="straight"/>
+					<emphasis method="pen" text="Sapiens Antisthenis" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The philosopher of Theodorus, Aristippus, Aristotle, Epicurus is the child of this generation,
+				indeed, just now and then the philosopher of Antisthenes, Diogenes, Zeno, and even Plato himself.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Potentissimo" type="straight"/>
+		<underline language="IT" method="pen" text="l'affetto d'Amore" type="straight"/>
+		<underline language="IT" method="pen" text="HIPARCHIA" type="straight"/>
+		<underline language="IT" method="pen" text="Cratete filosofo" type="straight"/>
+		<underline language="IT" method="pen" text="ecco lo sposo" type="straight"/>
+		<underline language="IT" method="pen" text="ecco la dote" type="straight"/>
+		<underline language="IT" method="pen" text="cosi presenti padre" type="straight"/>
+		<underline language="IT" method="pen" text="consumò il matrimonio" type="straight"/>
+		<underline language="IT" method="pen" text="quell'atto domandato" type="straight"/>
+		<underline language="IT" method="pen" text="io pianto l'huomo" type="straight"/>
+		<underline language="IT" method="pen" text="natura dell'huomo" type="straight"/>
+		<underline language="IT" method="pen" text="inconstante" type="straight"/>
+		<underline language="IT" method="pen" text="varie passioni" type="straight"/>
+		<underline language="IT" method="pen" text="Lorenzo de' Medici" type="straight"/>
+		<underline language="IT" method="pen" text="diuisandosi delle natural" type="straight"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--di-->
+		
+		<mark method="pen" name="comma" place="intext"/> <!--ancora che'-->
+		<mark method="pen" name="plus_sign" place="intext"/>
+		<mark method="pen" name="quotation_mark" place="intext"/> 
+
+    </annotation>
+</transcription>

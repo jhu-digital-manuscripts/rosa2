@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.009v.tif" pagination="[9v]" reader="John Dee" signature="[Bv]"/> 
+    <annotation>
+        <marginalia anchor_text="Mastiche" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Mastiche</marginalia_text>  
+                </position>
+            </language>
+            <translation>Mastic</translation>
+        </marginalia>
+       
+       <marginalia anchor_text="per mar ventitre anni senza vscirne per alcun tempo" hand="Italian" method="pen"> 
+           <language ident="LA">
+               <position book_orientation="0" place="left_margin">
+                   <marginalia_text>23 anni, navigationu[m] co[n]tinuorum</marginalia_text>
+               </position>
+           </language>
+           <translation>23 years of continuous voyages </translation>
+       </marginalia>
+        
+        <marginalia anchor_text="di quatordici anni" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ab anno 14⁰</marginalia_text>
+                </position>
+            </language>
+            <translation>From the 14th year.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" id="BL615d7:615_d_7_f009v:m0001" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nascitur Anno 1447 vel Circiter</marginalia_text>
+                </position>
+            </language>
+            <translation>He was born in around the year 1447.</translation>
+        </marginalia>
+                
+       <underline language="IT" method="pen" text="il Settentrione, cioè l'Inghilterra" type="straight"/>
+       <underline language="IT" method="pen" text="di quatordici anni, &amp; che sempre seguì il mare" type="straight"/>
+       
+    </annotation>
+</transcription>

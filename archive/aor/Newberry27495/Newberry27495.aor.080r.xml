@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.080r.tif" reader="Harvey" signature="S.ii.[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Protei ingeniu[m].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A trick of the best.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="meerie Prankes" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Pranke.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="stoode musing" type="straight"/>
+        <underline language="EN" method="pen" text="so cruell" type="straight"/>
+        <underline language="EN" method="pen" text="neither giue" type="straight"/>
+        <underline language="EN" method="pen" text="ne yet leaue" type="straight"/>
+        <underline language="EN" method="pen" text="one that is broughte lowe with" type="straight"/>
+        <underline language="EN" method="pen" text="admonicion for you" type="straight"/>
+        <underline language="EN" method="pen" text="maistresse is not pleased" type="straight"/>
+        <underline language="EN" method="pen" text="her with much instance" type="straight"/>
+        <underline language="EN" method="pen" text="giue not [that] is required" type="straight"/>
+        <underline language="EN" method="pen" text="to be suid to" type="straight"/>
+        <underline language="EN" method="pen" text="one saying of great" type="straight"/>
+        <underline language="EN" method="pen" text="modest praise" type="straight"/>
+        <underline language="EN" method="pen" text="nipping boord" type="straight"/>
+        <underline language="EN" method="pen" text="pleasant declaration" type="straight"/>
+        <underline language="EN" method="pen" text="of a thing" type="straight"/>
+        <underline language="EN" method="pen" text="quicke and subtilll" type="straight"/>
+        <underline language="EN" method="pen" text="in one saiyng" type="straight"/>
+        <underline language="EN" method="chalk" text="Boordes or meerie Prankes" type="straight"/>
+        <underline language="EN" method="pen" text="meerie prankes" type="straight"/>
+        <underline language="EN" method="pen" text="processe is" type="straight"/>
+        <underline language="EN" method="pen" text="saiynges short" type="straight"/>
+        <underline language="EN" method="pen" text="deedes" type="straight"/>
+        <underline language="EN" method="pen" text="first therfore" type="straight"/>
+        <underline language="EN" method="pen" text="woulde tell a tale" type="straight"/>
+        
+        <underline language="LA" method="pen" text="Ré" type="straight"/>
+        <underline language="LA" method="pen" text="Dicto" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="head"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="equal_sign" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!-- name, but -->
+        <mark method="pen" name="dot" place="intext"/> <!-- almes -->
+        <mark method="pen" name="dot" place="intext"/> <!-- depart, so -->
+        <mark method="pen" name="dot" place="intext"/> <!-- dispraise, one -->
+        <mark method="chalk" name="vertical_bar" place="intext"/> <!-- starts at 'made mention' -->
+        <mark method="pen" name="comma" place="intext"/> <!-- praise, and -->
+        <mark method="pen" name="dot" place="intext"/> <!-- interruption, which -->
+        <mark method="pen" name="dot" place="intext"/> <!-- resdines, which -->
+        <mark method="pen" name="comma" place="intext"/> <!-- short, and -->
+        <mark method="pen" name="comma" place="intext"/> <!-- interruption, are -->
+        
+        <numeral language="LA" place="right_margin" text="Ré">1.</numeral>
+        <numeral language="LA" place="right_margin" text="Dicto">2.</numeral>
+        <numeral language="LA" place="right_margin" text="Pranke">3.</numeral>
+        <numeral place="right_margin">1.</numeral>
+        
+    </annotation>
+</transcription>

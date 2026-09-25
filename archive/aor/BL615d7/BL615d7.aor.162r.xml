@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.162r.tif" pagination="162" reader="John Dee" signature="Xij"/>    
+    <annotation>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Note Tides and Ebs here</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="le correnti" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>The curre[n]t</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="tre braccia" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="head">
+                    <marginalia_text> thre faddom</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <!-- M.B. Note. Omega symbol in right margin check how to transcribe this in the XML --> <!-- FSF: the text describes a harbour in the shape of a horseshoe (porto, fatto in forma di ferro di cauallo) -->
+        
+        <marginalia anchor_text="Xi di Agosto" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Augusti 11</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="di montante andauano le correnti al Ponente: &amp;" type="straight"/>
+        <underline language="IT" method="pen" text="di giusante" type="straight"/>
+        <underline language="IT" method="pen" text="all' Oriente" type="double"/>
+        <underline language="IT" method="pen" text="montante all'" type="double"/>
+        <underline language="IT" method="pen" text="mezo dolce" type="straight"/>
+        <underline language="IT" method="pen" text="l'acqua del fiume" type="double"/>
+        <underline language="IT" method="pen" text="non ardì di passar più oltre" type="straight"/>
+        <underline language="IT" method="pen" text="uoleua tre braccia di acqua, &amp; era di cento botte;" type="straight"/>
+        <underline language="IT" method="pen" text="surse" type="double"/>
+        <underline language="IT" method="pen" text="sicurissima" type="double"/>
+        <underline language="IT" method="pen" text="forma di ferro di cauallo" type="straight"/>
+        <underline language="IT" method="pen" text="il Corriero" type="straight"/>
+        <underline language="IT" method="pen" text="era passo" type="straight"/>
+        <underline language="IT" method="pen" text="ui era una bocca" type="straight"/>
+        <underline language="IT" method="pen" text="due leghe " type="double"/>
+        <underline language="IT" method="pen" text="di Ostro Tramontanaå" type="straight"/>
+        <underline language="IT" method="pen" text="di ciascun di quelli usciua vn fiume" type="straight"/>
+        <underline language="IT" method="pen" text="cosi dolce" type="double"/>
+        <underline language="IT" method="pen" text="essere Isole, tutte erano vna terra" type="straight"/>
+        <underline language="IT" method="pen" text="quattro, &amp; cinque braccia di" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

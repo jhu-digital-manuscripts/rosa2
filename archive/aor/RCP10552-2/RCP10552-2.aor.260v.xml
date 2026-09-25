@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.260v.tif" pagination="36" reader="John Dee" signature="[E.ij.[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Heliam" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Helias, Comes de Mans.</marginalia_text>
+                    <person name="Elias I, Count of Maine"/>
+                </position>
+            </language>
+            <translation>Elias, Count of Maine.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Gulielmus Comes Moritoniensis" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Gulielmus Comes Moritoniensis.</marginalia_text>
+                    <person name="William, Count of Mortain"/>
+                </position>
+            </language>
+            <translation>William, Count of Mortain.</translation>
+        </marginalia>
+ 
+        <marginalia anchor_text="Roberto de Beleasmo" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Robertus de beleasmo.</marginalia_text>
+                    <person name="Robert of Belleme, 3rd Earl of Shrewsbury"/>
+                </position>
+            </language>
+            <translation>Robert of Belleme.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Beccum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Beccum</marginalia_text>
+                    <location name="Bec"/>
+                </position>
+            </language>
+            <translation>Bec.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Heliam Consulem" type="straight"/>
+        <underline language="LA" method="pen" text="Henricus Rex Anglorum vxorem" type="straight"/>
+        <underline language="LA" method="pen" text="Gulielmus" type="straight"/>
+        <underline language="LA" method="pen" text="Roberto" type="straight"/>
+        <underline language="LA" method="pen" text="de Moritonia" type="straight"/>
+        <underline language="LA" method="pen" text="Beccum venit" type="straight"/>
+        
+    </annotation>
+</transcription>

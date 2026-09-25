@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tei-c.org/ns/1.0" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscrit</note>
+          <note type="commonName">Cod. poet et Phil. 2º 6</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="204" unit="folios">204</measure>
+            <dimensions>
+              <height unit="mm">335</height>
+              <width unit="mm">240</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">36</note>
+          <note type="material">Parchemin</note>
+          <pubPlace>France</pubPlace>
+          <date notBefore="1416" notAfter="1416">1416</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Stuttgart, Germany</settlement>
+            <repository>Württembergische Landesbibliothek</repository>
+            <idno>Cod. poet et Phil. 2º 6</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="155r">1r-155r</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">155</note>
+              <note type="illustrations">29</note>
+              <note type="linesPerColumn">36</note>
+              <note type="leavesPerGathering">8</note>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+            <msItem n="2">
+              <locus from="156r" to="186r">156r-186r</locus>
+              <title>Le Testament Maistre Jehan de Meun</title>
+              <note type="textid">testament</note>
+              <note type="folios">30</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">36</note>
+              <note type="leavesPerGathering">8</note>
+              <note type="columnsPerFolio">1</note>
+            </msItem>
+            <msItem n="3">
+              <locus from="186v" to="196r">186v-196r</locus>
+              <title>Le codicile Maistre Jehan de Meun</title>
+              <note type="textid">codicille</note>
+              <note type="folios">10</note>
+              <note type="illustrations">5</note>
+              <note type="linesPerColumn">36</note>
+              <note type="leavesPerGathering">8</note>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="4">
+              <locus from="196r" to="196v">196r-196v</locus>
+              <title>Petit codicile</title>
+              <note type="textid">petitcodicille</note>
+              <note type="folios">1</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">36</note>
+              <note type="leavesPerGathering">8</note>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

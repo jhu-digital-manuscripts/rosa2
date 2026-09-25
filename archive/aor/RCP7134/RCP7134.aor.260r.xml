@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.260r.tif" pagination="253" reader="John Dee" signature="SS"/>
+    <annotation>
+        
+        <marginalia anchor_text="affectibus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Affectus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Affections.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ædificatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Explanation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="adultera erit mulier illa" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Adultera nata</marginalia_text>
+                </position>
+            </language>
+            <translation>Adultery born.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in exitu principis ad bellum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Exitus ad bellu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>The departure for war</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Planetae orientales; occidentales" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota de orie[n]talitate et occidentalitate planetaru[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>Note about the easterly and westernly [aspects] of the planets.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Ascendens significat corpus potius, &amp; dominus illius animum magis" type="straight"/>
+        
+        <symbol language="LA" name="Moon" place="right_margin" text="Luna"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="Planetae orientales, non solum celeriter sed &amp; faciliter dant dona sua, &amp; hoc si à Sole fuerint, in mundo autem, celeriter sed non adeo faciliter: hoc etiam contingit, cum occidentales à Luna fuerint, tunc enim Luna exoritur ante illos"/>
+        
+    </annotation>
+</transcription>

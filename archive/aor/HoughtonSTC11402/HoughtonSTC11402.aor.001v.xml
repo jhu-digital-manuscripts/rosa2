@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.001v.tif" pagination="[Aii[v]]" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>The most famous Enginers at this day, In Millan, &amp; in Noriberg. Millan lernid of Cardan, or perhaps
+                    Bombarders, Canoners, harnes, swords, targets, [etc.]</marginalia_text>
+                    <person name="Girolamo Cardano"/>
+                    <location name="Milan"/>
+                    <location name="Nuremberg"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="90" place="left_margin">
+                    <marginalia_text>Noua Italoru[m], et Hisparnoum Strategemata, adiuncta Frontino; mera Imitatio, Frontini, et Polya[e]ni.</marginalia_text>
+                    <person name="Frontinus"/>
+                    <person name="Polyaenus"/>
+                </position>
+            </language>
+            <translation>The new strategies of the Italians and the Spanish, belonging to Frontinus. A mere imitation of Frontinus and Polyaenus. </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>scitè</marginalia_text> <!--Underneat 'Frontino'-->
+                </position>
+            </language>
+            <translation>Knowingly.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Loue hath no leaden heles" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Looue is not leaden heelid[.]</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="90" place="left_margin">
+                    <marginalia_text>In Frontino, plus Romanoru[m] Strategematu[m]; in Polya[e]no, plus Gra[e]coru[m], et Barbarorum.
+                    Frontino sola fere polemica: Polya[e]no, etia[m] techna[e] Oeconomica[e], Politica[e], Tyrannica[e].
+                    Pauca[e] in vtroq[ue] mechanica[e].</marginalia_text> 
+                    <person name="Frontinus"/>
+                    <person name="Polyaenus"/>
+                </position>
+            </language>
+            <translation>In Frontinus, there are more Roman strategies; in Polyaenus, there are more Greek and barbarian strategies.
+                In Frontinus, there are only military [devices]. In Polyaenus, there are also economic, political, and tyrannical devices. 
+            In both books, there are few things about engineering.</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="270" place="right_margin">
+                    <marginalia_text>Tria, aut quatuor propria, et inaudita Strategemata; digna sexcentis scriptis, et vsitatis. 
+                        Politicu[m], et polymechanicum Ingeniu[m], miras Inuentiones excogitat.</marginalia_text>
+                </position>
+                <position book_orientation="270" place="tail">
+                    <marginalia_text>Inopinata, et incredibilia valet plurimu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>Three or four particular and novel strategies; worthy of 600 texts and common usage.
+          Political and polymechanic devices come up with wonderful inventions. The unforeseen and the extraordinary is worth much.
+            </translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="so is al labour light, where loue hyreth the workeman" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>All labo[r] light, where looue hyreth [the] workman.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Verus Amor nullum nouit habere modum.</marginalia_text>
+                    <X-ref book_title="Elegies" language="LA" person="Sextus Propertius" text="Verus amor nullum nouit habere modum."/>
+                </position>
+            </language>
+            <translation>"True love knows to have no limit."</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="plattes" type="straight"/>
+        <underline language="EN" method="pen" text="blocke howses" type="straight"/>
+        <underline language="EN" method="pen" text="bulwarkes" type="straight"/>
+        <underline language="EN" method="pen" text="walles" type="straight"/>
+        <underline language="EN" method="pen" text="castelles" type="straight"/>
+        <underline language="EN" method="pen" text="munitions" type="straight"/>
+        <underline language="EN" method="pen" text="ingins" type="straight"/>
+        <underline language="EN" method="pen" text="fortresses" type="straight"/>
+        <underline language="EN" method="pen" text="of their bodies" type="straight"/>
+        <underline language="EN" method="pen" text="that fond loue hath wynges" type="straight"/>
+        <underline language="EN" method="pen" text="and seldome abydeth longe" type="straight"/>
+        <underline language="EN" method="pen" text="a place" type="straight"/>
+        <underline language="EN" method="pen" text="beynge hyther and thyther ledde by folye, and phansy" type="straight"/>
+        <underline language="EN" method="pen" text="discrete loue hath his wynges and" type="straight"/>
+        <underline language="EN" method="pen" text="flyeth fast" type="straight"/>
+        <underline language="EN" method="pen" text="no leaden heles" type="straight"/>
+        <underline language="EN" method="pen" text="labour light" type="straight"/>
+        <underline language="EN" method="pen" text="where loue hyreth the workeman" type="straight"/>
+        <underline language="EN" method="pen" text="fethers of his wynges are so softe, that" type="straight"/>
+        <underline language="EN" method="pen" text="betwene our shulders" type="straight"/>
+        <underline language="EN" method="pen" text="burdeyn" type="straight"/>
+        <underline language="EN" method="pen" text="weight" type="straight"/>
+        <underline language="EN" method="pen" text="beare neuer so heuy" type="straight"/>
+        
+        <symbol language="EN" name="Mars" place="left_margin" text="warre"/>
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="warre"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="labour light"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!--castelles, with-->
+        <mark method="pen" name="dot" place="intext"/> <!--fortresses, for-->
+        <mark method="pen" name="dot" place="intext"/> <!--trauayle, Can-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="discrete loue hath his wynges"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="and flyeth fast"/>
+        <mark language="EN" method="pen" name="equal_sign" place="intext" text="loue"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="leaden"/>
+        <mark language="EN" method="pen" name="quotation_mark" place="intext" text="no leaden heles"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="where loue hyreth the workman"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="fethers of his wynges are so softe, that"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="weight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL531k6.023r.tif" pagination="[023r]" reader="John Dee" signature="F3"/> 
+    <annotation>
+        
+        <marginalia anchor_text="quantitas anni omnium minia" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Minima Anni quantitas.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The minimal quantity of the year.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="congruentem ad medium reuolutionum" type="straight"/>
+        <underline language="LA" method="pen" text="eccentrotete media" type="straight"/>
+        <underline language="LA" method="pen" text="omnium minima fuit" type="double"/>
+        <underline language="LA" method="pen" text="scilicet horarum 5. scr. 41 1a/ 26 2a/" type="double"/>
+        <underline language="LA" method="pen" text="haec multiplicata in annos, qui fluxerunt à" type="double"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.241r.tif" pagination="221" reader="John Dee"/>   
+    <annotation>
+        
+        
+        <marginalia anchor_text="salutariter vterentur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Salutariter vti armis</marginalia_text>   
+                </position>
+            </language>
+            <translation>To use arms beneficially.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="ii mihi vide[n]tur fortunate beatéque vixisse" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Qui in Rep. beate vixerunt</marginalia_text>
+                </position>
+            </language>
+            <translation>Who lived happily in the Republic.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="M. ad me Brutus; Tito Po[m]ponio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        M Brutus
+                        Titus Pomponius.
+                    </marginalia_text>
+                    <person name="Marcus Junius Brutus the Younger"/>
+                    <person name="Titus Pomponius Atticus"/>
+                </position>
+            </language>
+            <translation>Marcus Brutus. Titus Pomponius.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="epistola[m], quam ad te Brutus misit ex Asia" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Bruti epistola ad Cicerone[m].</marginalia_text>
+                    <person name="Marcus Junius Brutus the Younger"/>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Brutus's letter to Cicero.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Ca[n]nensem illam calamitatem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cannensis Clades.</marginalia_text>
+                    <location name="Cannae"/>
+                </position>
+            </language>
+            <translation>The destruction at Cannae.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="libru[m] mihi saluti fuisse" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Attici historia[rum] volume[n].</marginalia_text> 
+                    <person name="Titus Pomponius Atticus"/>
+                </position>
+            </language>
+            <translation>Atticus's volume of histories.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Hesiodiu[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hesiodus</marginalia_text>
+                    <person name="Hesiod"/>
+                </position>
+            </language>
+            <translation>Hesiod.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="cura consederit; praesentem me cura leuatis; solicitudines alleuaret" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Cura[m] co[n]sidere
+                        Cura levare aliquid
+                        sollicitudines allevare
+                        reficere alique[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>To settle a worry. To lessen some worry. To alleviate concerns. To restore someone.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="vt impendiis etia[m] augere possimus largitate[m] tui muneris" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>impedijs augere largitate[m] muneris.</marginalia_text>
+                </position>
+            </language>
+            <translation>To increase the largeness of the gift in expense.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="perdiligenter" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>perdiligenter.</marginalia_text>
+                </position>
+            </language>
+            <translation>Very carefully.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="tractatio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>tractatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>The treatment.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="emetiar" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>emetiri</marginalia_text>
+                </position>
+            </language>
+            <translation>To measure out.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="impendiis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>foenere</marginalia_text>    <!-- DO: Not sure what this says --> <!--JG: Not sure either-->
+                </position>
+            </language>
+            <translation/>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="salutariter vterentur" type="straight"/>
+        <underline language="LA" method="pen" text="cum inambulare[m] in xysto" type="straight"/>
+        <underline language="LA" method="pen" text="repub. cura consederit" type="straight"/>
+        <underline language="LA" method="pen" text="quàm te afficeremus vlla molestia" type="straight"/>
+        <underline language="LA" method="pen" text="vestris primu[m] literis recreatus, me" type="straight"/>
+        <underline language="LA" method="pen" text="parte solicitudines alleuaret meas" type="straight"/>
+        <underline language="LA" method="pen" text="perdiligenter" type="straight"/>
+        <underline language="LA" method="pen" text="mihi tractatio literarum" type="straight"/>
+        <underline language="LA" method="pen" text="profecto emetiar, sed rem" type="straight"/>
+        <underline language="LA" method="pen" text="sic omnis foetus repressus" type="straight"/>
+        <underline language="LA" method="pen" text="vt impendiis etia[m] augere" type="straight"/>
+        <underline language="LA" method="pen" text="largitate[m]" type="straight"/>
+
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="LA" method="pen" name="plus_sign" place="tail" text="taxatio"/>
+        <mark language="LA" method="pen" name="plus_sign" place="tail" text="impedijs augere largitate[m] muneris"/>
+        
+    </annotation>
+</transcription>

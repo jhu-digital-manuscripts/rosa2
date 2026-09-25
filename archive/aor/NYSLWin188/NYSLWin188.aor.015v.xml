@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.015v.tif" pagination="[15[v]]" reader="John Dee" signature="[Diij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Biren; Apffel; Nüsse; Rege[n]; Schnee; Hagel" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Vt pira, poma, Cerasa su[n]t Arboru[m] fructus. Ita Nix, grando, pluuia, stellarum sunt fructus.</marginalia_text>
+                </position>
+            </language>
+            <translation>As pears, apples and cherries are fruits of the trees, thus snow, hail and rain are fruits of the stars.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="eigenschafft standen auch die" type="straight"/>
+        <underline language="DE" method="pen" text="Rege[n]" type="straight"/>
+        <underline language="DE" method="pen" text="Schnee" type="straight"/>
+        <underline language="DE" method="pen" text="Hagel" type="straight"/>
+        <underline language="DE" method="pen" text="die hitze so" type="straight"/>
+        <underline language="DE" method="pen" text="Wie wir dann sehent von den Etnischen fewer von den heissen Wassern" type="straight"/>
+        <underline language="DE" method="pen" text="solche Natur auch" type="straight"/>
+        <underline language="DE" method="pen" text="solcher käldte auch begabet seindt vnd jnen eingeleibt" type="straight"/>
+        <underline language="DE" method="pen" text="Also seindt auch anziehende Sternen im Firmament" type="straight"/>
+        
+        <symbol language="DE" name="Sun" place="left_margin" text="Sonne"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.031v.tif" pagination="62" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Onomatoma[n]tiae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Onomatoma[n]tia</marginalia_text>
+                </position>
+            </language>
+            <translation>Onomancy.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Onomatoma[n]tiae" type="straight"/>
+        <underline language="LA" method="pen" text="Bactriana lingua" type="straight"/>
+        <underline language="LA" method="pen" text="in alijs linguis" type="straight"/>
+        <underline language="LA" method="pen" text="tamen Iodici seu ex Iod facti" type="straight"/>
+        <underline language="LA" method="pen" text="delitescit" type="straight"/>
+        <underline language="LA" method="pen" text="angelus Ogygij regni" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

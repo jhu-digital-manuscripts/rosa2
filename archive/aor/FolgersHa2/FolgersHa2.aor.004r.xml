@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="FolgersHa2.004r.tif" pagination="327" reader="Harvey"/>	<!-- ABO 008right -->
+    <annotation>
+        <!-- Marginalia -->
+        <marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.004r_0001" marginalia_continues_from="Ha2.003v_0001" marginalia_from_transcription="Ha2.003v.xml">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        [p. 326: At non legit quotidiè rarissima mundi ingenia: -] - et spiritus omnium viuidissimos.  <!-- Continued from page Domenichi_008left, head, 'At non legit quotidi&egrave; rarissima mundi ingenia: -' -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                [p. 326: But he does not read daily the rarest natural talents of the world:] and the most lively souls of everyone.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ) Quotiès 
+                    </marginalia_text>
+                    <person name="Guillaume Du Bartas"/>
+                    <emphasis method="chalk" type="straight"/>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        friget ipse enthusiasticus Homerus: 
+                    </marginalia_text>
+                    <person name="Homer"/>
+                </position>             
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        et ipse diuinus Bartasius?
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                And how often does enthusiastic Homer himself lack vigor: and divine Barthas himself?
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                       Goffredo di Tasso.
+                    </marginalia_text>
+                    <person name="Torquato Tasso"/>
+                    <book title="Jerusalem Delivered"/>  
+                </position>
+            </language>
+            <translation>
+                Tasso's Goffredo.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Nemo un[quam] satis animosus.
+                    </marginalia_text>
+                    <emphasis method="pen" text="animosus" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                No one is ever sufficiently courageous.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        nota.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Note.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Quis omniu[m] satis cordatus?
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Who of all is sufficiently wise? 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        ridicolo.
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        distinctio profunda.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Ridiculous. Profound distinction.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Allwaies as fresh, as the morning Sun.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Nulla adhuc quinta essentia, satis viuida. Solis propria lux, vnicusq[ue] calor.
+                    </marginalia_text>
+                    <emphasis method="chalk" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                    No thing besides the fifth essence is sufficiently full of life. The special light of the sun, and its singular heat.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="90" place="left_margin">
+                    <marginalia_text>
+                        cum duobus argutissimis poetis, Ausonio, et Politiano. <!-- Continued from page Domenichi_008left, right margin, 'Eiusdem panis quotidianus, Martialis, et Heiuodus ='-->
+                    </marginalia_text>
+                    <person name="Ausonius"/>
+                    <person name="Angelo Poliziano"/>
+                </position>
+            </language>
+            <translation>
+                with the two sharpest poets, Ausonius and Poliziano.
+            </translation>
+        </marginalia>
+                
+        <!-- Underlines -->
+        <underline language="IT" method="pen" text="riposare sulla terra, della quale era uscita" type="straight"/>
+        <underline language="IT" method="pen" text="generatione humana" type="straight"/>
+        <underline language="IT" method="pen" text="Sauio" type="straight"/>
+        <underline language="IT" method="pen" text="temperato" type="straight"/>
+        <underline language="IT" method="pen" text="essendo dì Quaresima" type="straight"/>
+        <underline language="IT" method="pen" text="confessaua al suo parocchiano" type="straight"/>
+        <underline language="IT" method="pen" text="ne' sette sentimenti" type="straight"/>
+        <underline language="IT" method="pen" text="contra Dio, e 'l prossimo" type="straight"/>
+        <underline language="IT" method="pen" text="tu sette sentimenti" type="straight"/>
+        <underline language="IT" method="pen" text="tutti i filosofi" type="straight"/>
+        <underline language="IT" method="pen" text="che cinque" type="straight"/>
+        <underline language="IT" method="pen" text="piu che cinque sentime[n]ti" type="straight"/>
+        <underline language="IT" method="pen" text="figliuolo del Consolo" type="straight"/>
+        <underline language="IT" method="pen" text="il bel tabarro rosso" type="straight"/>
+        <underline language="IT" method="pen" text="n'hò due di piu, che gli altri non" type="straight"/>
+        <underline language="IT" method="pen" text="il Sere della" type="straight"/>
+        <underline language="IT" method="pen" text="altri due" type="straight"/>
+        <underline language="IT" method="pen" text="il sono" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; l'ocio" type="straight"/>
+        <underline language="IT" method="pen" text="dormo" type="straight"/>
+        <underline language="IT" method="pen" text="contadini uegghiano" type="straight"/>
+        <underline language="IT" method="pen" text="a far nulla" type="straight"/>
+        <underline language="IT" method="pen" text="lauorano" type="straight"/>
+        <underline language="IT" method="pen" text="a ridere" type="straight"/>
+        <underline language="IT" method="pen" text="licentiò il pazzo figliuolo" type="straight"/>
+        <underline language="IT" method="pen" text="egli sapesse piu che gli altri" type="straight"/>
+        <underline language="IT" method="pen" text="dal Conte" type="straight"/>
+        <underline language="IT" method="pen" text="Consolo della" type="straight"/>
+        <underline language="IT" method="pen" text="Semplicità" type="straight"/>
+        <underline language="IT" method="pen" text="giuochi a" type="straight"/>
+        <underline language="IT" method="pen" text="all'improuiso" type="straight"/>
+        <underline language="IT" method="pen" text="amicissimo mio" type="straight"/>
+        
+        
+        <!-- Symbols -->
+        <symbol name="Sun" place="head"/>
+        <symbol name="Sun" place="left_margin"/>
+        
+        <!-- Marks -->
+        <mark method="pen" name="plus_sign" place="intext"/> <!-- Sa- -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- la ge -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- Queresi -->
+        <mark language="IT" method="pen" name="plus_sign" place="intext" text="sette sentimenti"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- prossimo, -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- tut -->
+        <mark language="IT" method="pen" name="plus_sign" place="intext" text="cinque"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark language="IT" method="pen" name="plus_sign" place="intext" text="cinque"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- sentime[n] -->
+        <mark method="pen" name="quotation_mark" place="intext"/> <!-- n'ho due -->
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/> <!-- Beside questi -->
+        <mark method="pen" name="vertical_bar" place="right_margin"/> <!-- Beside uegghiano: & -->
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark language="IT" method="pen" name="plus_sign" place="intext" text="sono"/>
+        <mark language="IT" method="pen" name="plus_sign" place="intext" text="l'ocio"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark language="IT" method="pen" name="straight_quotation_mark" place="intext" text="dormo"/>
+        <mark language="IT" method="pen" name="straight_quotation_mark" place="intext" text="far nulla"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- ridere, & -->
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- contadi -->
+        <mark method="pen" name="dot" place="intext"/> <!-- Consolo, -->
+        <mark method="pen" name="plus_sign" place="intext" text="sapesse"/>
+        <mark method="pen" name="straight_quotation_mark" place="left_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- vegghia -->
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.153r.tif" pagination="153" reader="John Dee" signature="V"/>    
+    <annotation>
+        
+        <marginalia anchor_text="XVII di Giugno" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Iunij 27</marginalia_text>
+                </position>
+            </language>
+            <translation>June 27.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Di buona vista" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In[su]l[a] de bona Vista</marginalia_text> 
+                </position>
+            </language>
+            <translation>'Insula de bona vista' (Island of the good view).</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="del Sale" type="straight"/>
+        <underline language="IT" method="pen" text="Di buona" type="straight"/>
+        <underline language="IT" method="pen" text="lontano dalla verità" type="straight"/>
+        <underline language="IT" method="pen" text="è maninconica, &amp; miserabile" type="straight"/>
+        <underline language="IT" method="pen" text="ueggono alcun nauiglio" type="straight"/>
+        <underline language="IT" method="pen" text="di acqua, &amp; di sale" type="straight"/>
+        <underline language="IT" method="pen" text="la sterilità dell'Isola" type="straight"/>
+               
+    </annotation>
+</transcription>

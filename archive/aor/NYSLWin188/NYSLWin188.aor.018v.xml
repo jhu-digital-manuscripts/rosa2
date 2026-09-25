@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.018v.tif" pagination="[18[v]]" reader="John Dee" signature="[Eij[v]]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Omnia in perpetuo motu</marginalia_text>
+                </position>
+            </language>
+            <translation>Everyting [is] in a perpetual motion.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Also feieret nichts in der Natur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nihil in Natura feriatur</marginalia_text>
+                </position>
+            </language>
+            <translation>Nothing in nature is idle.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ob gleichwol das Corpus feyert der Geist feyert aber nit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Corpora solum feriari debent Non Anima[e] ho[m]i[nu]m</marginalia_text> 
+                    <!--JG: Interesting, here anima corresponds to Geist, whereas before Dee used the word 'spiritus'. Signifies difficulty to capture German word 'Geist' in Latin-->
+                </position>
+            </language>
+            <translation>Only bodies ought to rest, non the minds of men.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="reuhe die ding in der Natur" type="straight"/>
+        <underline language="DE" method="pen" text="ruhe ist den" type="straight"/>
+        <underline language="DE" method="pen" text="entpfindtlichen" type="double"/>
+        <underline language="DE" method="pen" text="Winther auch eine Ruhe" type="straight"/>
+        <underline language="DE" method="pen" text="ist natürlicher dingen" type="straight"/>
+        <underline language="DE" method="pen" text="keine Ruhe nicht" type="straight"/>
+        <underline language="DE" method="pen" text="sie vbent sich für vn[d]" type="straight"/>
+        <underline language="DE" method="pen" text="wider" type="double"/>
+        <underline language="DE" method="pen" text="darreichung" type="double"/>
+        <underline language="DE" method="pen" text="Also feieret nichts in der" type="straight"/>
+        <underline language="DE" method="pen" text="in vbung von stundt zu" type="straight"/>
+        <underline language="DE" method="pen" text="Allein der Mensch feiert zu nacht vn[d] den Sabbath" type="straight"/>
+        <underline language="DE" method="pen" text="de[n] Geist" type="double"/>
+        <underline language="DE" method="pen" text="allein de[m] leibe zu rasten aufferlegt" type="straight"/>
+        <underline language="DE" method="pen" text="also d[as] wider schlaff noch Sabbath in still vn[d] rewig macht" type="straight"/>
+        <underline language="DE" method="pen" text="das Corpus feyert" type="straight"/>
+        <underline language="DE" method="pen" text="der Geist feyert aber nit" type="straight"/>
+        <underline language="DE" method="pen" text="Corpora von den Tag vnd Nacht" type="straight"/>
+        
+        
+        
+    </annotation>
+</transcription>

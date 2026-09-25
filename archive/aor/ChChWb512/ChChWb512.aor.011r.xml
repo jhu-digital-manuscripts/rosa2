@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.011r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="fluuium Akalon" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Akalon fl[uvium] forte Acheloum forte Ackeron in Epiro, is fluuius erat.
+                    </marginalia_text>
+                    <location name="Epirus"/>
+                </position>
+            </language>
+            <translation>The river Akalon was perhaps the same river as Achelous, or Acheron in Epirus. </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Antigonum &amp; Anacletum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Antigonus Anacletus
+                    </marginalia_text>
+                    <person name="Antigonus"/>
+                    <person name="Anacletus"/>
+                </position>
+            </language>
+            <translation>Antigonus, Anacletus.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Co[n]sidera similia o[mn]ia sic recitari et simul Loco esse, natura vt hic rebus in eisde[m] Locis gestis significari videtur.
+                    </marginalia_text> <!--Murky transcription. NBW: Slightly clearer - need to consult text-->
+                </position>
+            </language>
+            <translation/> <!--JG: Translation yet to be done-->
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        forte in hac gra[e]cia sola, fuit Brutus exul, et fugati[uus] et vt de verbo Brutij videtur Strabo significa[ns] in Lingua Lucano[rum]. et[c].
+                        Et erat e ei regione Epiri ubi Heb[us?]. [etc]
+                    </marginalia_text> <!--Transcription and translation lacking.-->
+                    <!--JG: Which Brutus is mentioned here?-->
+                    <person name="Strabo"/>
+                    <location name="Greece"/>
+                    <location name="Epirus"/>
+                </position>
+            </language>
+            <translation>In that lonely Greece, Brutus became an exile, and a fugitive [...]</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Antigonum &amp; Anacletum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        fratrem
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Brother.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="fluuium Akalon" type="straight"/>
+        <underline language="LA" method="pen" text="prope fluebat" type="double"/>
+        <underline language="LA" method="pen" text="vbi Antigonus" type="straight"/>
+        <underline language="LA" method="pen" text="Troes armis" type="straight"/>
+        <underline language="LA" method="pen" text="Antigonum &amp; Anacletum socios retinuerunt" type="straight"/>
+        
+        <mark method="pen" name="dot" place="right_margin"/> <!-- Antigo- -->
+        
+        <mark method="pen" name="vertical_bar" place="tail"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!--interfectis Antigonum-->
+        
+        <graph book_orientation="0" method="pen" place="tail" type="genealogical_tree">
+            <node id="n1" person="Pandrasus">Rex Pandrasus</node>
+            <node id="n2" person="Antigonus">Antigonus</node>
+            
+            <link from="n2" relationship="has_sibling" to="n1"/>
+            
+            <graph_text>
+                <note hand="English_secretary" internal_link="n2" language="LA">fr[ater] Pandr[asi]</note>
+                <person name="Pandrasus"/>
+                <translation>Brother of Pandrasus.</translation>
+            </graph_text>
+        </graph>
+        
+    </annotation>
+</transcription>

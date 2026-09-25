@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.156v.tif" pagination="[157v]" reader="John Dee"/>   
+    <annotation>
+        
+        <marginalia anchor_text="fama" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>fama.</marginalia_text>
+                </position>
+            </language>
+            <translation>Fame.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="poëtae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Poëta[e].</marginalia_text>
+                </position>
+            </language>
+            <translation>Poets.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ennius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ennius.</marginalia_text>
+                    <person name="Ennius"/>
+                </position>
+            </language>
+            <translation>Ennius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Homerum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Homerus.</marginalia_text>
+                    <person name="Homer"/>
+                </position>
+            </language>
+            <translation>Homer.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Fructus abest, facies cum bona teste caret" type="straight"/>
+        <underline language="LA" method="pen" text="Non erit ignotae gratia magna lyrae" type="straight"/>
+        <underline language="LA" method="pen" text="Sed famae inuigilare iuuat" type="straight"/>
+        <underline language="LA" method="pen" text="Se quoq[ue] det populo mulier speciosa videndam" type="straight"/>
+        <underline language="LA" method="pen" text="Quem trahat, è multis forsitan vnus erit" type="straight"/>
+        <underline language="LA" method="pen" text="Casus vbiq[ue] valet. semper tibi pendeat hamus" type="straight"/>
+        <underline language="LA" method="pen" text="Quo minime credis gurgite piscis erit" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        
+    </annotation>
+</transcription>

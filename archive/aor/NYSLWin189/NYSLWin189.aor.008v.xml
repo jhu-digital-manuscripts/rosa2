@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.008v.tif" reader="John Dee" signature="[C[v]]"/> 
+    <annotation>
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Caput hoc est Initiatis conscriptum</marginalia_text>
+                </position>
+            </language>
+            <translation>This chapter is the composition for the introductory rites</translation> <!--JG: Don't get Initiatis conscriptum--> <!--KS: perhaps 'This chapter is composed of initiations'? 'Initiatis' doesn't seem right though-->
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota mysteriu[m], si sis Philosophus</marginalia_text> 
+                </position>
+            </language>
+            <translation>Note the mystery, if you are a philosopher.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ignis occasionatus: n[oste]r [scilicet] Innaturalis:</marginalia_text> 
+                </position>
+            </language>
+            <translation>The occasion of fire: certainly unnatural to us.</translation> <!--JG: Don't get the noster here--> <!--KS: It doesn't make much sense here...-->
+        </marginalia>
+        
+        <marginalia anchor_text="spiritus vitrioli" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>spiritus vitrioli</marginalia_text>
+                </position>
+            </language>
+            <translation>The spirit of vitriol.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="prima materia" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Prima Materia</marginalia_text>
+                </position>
+            </language>
+            <translation>Prime matter</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>suum absq[ue] igne socium consequetur</marginalia_text>
+                </position>
+            </language>
+            <translation>It catches up on its companion without fire.</translation>
+        </marginalia>
+        
+        <underline id="NYSLWin189:00000028:u0001" language="DE" method="pen" text="auß welchen compositzen ein werme entspringt" type="straight"/>
+        <underline id="NYSLWin189:00000028:u0002" language="DE" method="pen" text="der aquarum regum die da kalt sind so bald sy zůsamen gegossen werden ein gewaltigen sudt haben" type="straight"/>
+        <underline id="NYSLWin189:00000028:u0003" language="DE" method="pen" text="das der spiritus vitrioli der an jm selbs kalt ist so er in ein kalt wasser geschütt wird das selbig siedend heyß macht." type="straight"/>
+        <underline id="NYSLWin189:00000028:u0004" language="LA" method="pen" text="prima materia" type="straight"/>
+        <underline language="DE" method="pen" text="auch in andren" type="straight"/> 
+        <underline language="DE" method="pen" text="andren salibus" type="straight"/> 
+        <underline language="DE" method="pen" text="wasser tingiert" type="double"/>
+        <underline id="NYSLWin189:00000028:u0005" language="DE" method="pen" text="hitz und in den krefften" type="straight"/>
+        <underline language="DE" method="pen" text="vom lufft" type="straight"/>
+        <underline language="DE" method="pen" text="jren" type="straight"/>
+        <underline language="DE" method="pen" text="nitrischen salia" type="straight"/>
+        <underline language="LA" method="pen" text="liquoribus metallorum" type="straight"/>
+        <underline language="DE" method="pen" text="kalt wasser zů wermen on holtz oder feur" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+         
+        <numeral language="LA" place="intext" text="spiritus vitrioli">1.</numeral>
+        <numeral language="LA" place="intext" text="kalt wasser">2.</numeral>
+        <numeral language="DE" place="intext" text="nitrischen salia">1.</numeral>
+        <numeral language="LA" place="intext" text="liquoribus metallorum">2.</numeral>
+        <numeral place="right_margin">3.</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+        <physical_link>
+            <marginal_annotation idref="NYSLWin189:00000028:u0001"/>
+            <marginal_annotation idref="NYSLWin189:00000028:u0002"/>
+            <marginal_annotation idref="NYSLWin189:00000028:u0003"/>
+            <marginal_annotation idref="NYSLWin189:00000028:u0004"/>
+            <marginal_annotation idref="NYSLWin189:00000028:u0005"/>
+            
+            <relation from="NYSLWin189:00000028:u0001" to="NYSLWin189:00000028:u0002" type="undirected"/>
+            <relation from="NYSLWin189:00000028:u0002" to="NYSLWin189:00000028:u0003" type="undirected"/>
+            <relation from="NYSLWin189:00000028:u0004" to="NYSLWin189:00000028:u0005" type="undirected"/>
+        </physical_link>
+        
+        
+    </annotation>
+</transcription>

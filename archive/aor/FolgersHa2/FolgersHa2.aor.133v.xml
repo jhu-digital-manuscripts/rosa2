@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.133v.tif" pagination="90" reader="Harvey" signature="[F5v]"/>	<!-- ABO 138left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Nondum est in mundo vir: quia nulla est adhuc, qui tantu[m]
+						facit, quantum potest vir.
+					</marginalia_text>
+					<emphasis method="pen" text="Nondum est in mundo vir:" type="straight"/>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Cogitet quisq[uam], quanto plus posset,
+						Si cogeretur extremas vires de improuiso extendere.
+						Et quotidiè tantu[m] pra[e]stet pro virili:
+						aut sanè non est vir.
+						Is tandem
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						est vir, qui in dies Singulos quoquo modo distendit
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						suam virilem.
+						Et ita
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						semper dicit, facitq[ue], vt nec ipse, nec quisq[uam] hominu[m]
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						possit meliùs.
+						Pra[e]sertim in Causis magnis:
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						aut apud illustres personas. Sed tame[n] quasi aliud agens.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A true man in not yet found in the world, because until now there has been no man who does as much as a man can do.
+				Every man would think about how much more he could do, if he were suddenly forced to extend his utmost abilities.
+				And let him so excel daily, to the utmost of his ability, otherwise he indeed is not a man.
+				However he is a man who every day stretches out his abilities in any way.
+				Thus, he always speaks and acts, as if he himself or no other man could do better,
+				especially in important matters or with illustrious people.
+				However, he acts as if doing something else.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						( Pochi libri dell'antichi: mà molta pratica. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Few books from the ancients, but much practice.
+			</translation>
+		</marginalia>
+		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.133v_0001" marginalia_continues_to="Ha2.134r_0001" marginalia_to_transcription="Ha2.134r.xml">
+			<language ident="EN">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Here is heauen: there is hell. Witt is always at home. [[F6r]: Valour goes allwais forward, &amp; neuer backward.]
+						<!-- Continues onto facing page, left margin, Ha2.134r -->
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="egli mancare l'anello" type="straight"/>
+		<underline language="IT" method="pen" text="Esopo" type="straight"/>
+		<underline language="IT" method="pen" text="presto a' suoi bisogni &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="molte vassella da bere" type="straight"/>
+		<underline language="IT" method="pen" text="fece l'apparecchio in sul lito del mare" type="straight"/>
+		<underline language="IT" method="pen" text="cominciare à bere" type="straight"/>
+		<underline language="IT" method="pen" text="bere tutto il mare" type="straight"/>
+		<underline language="IT" method="pen" text="nel mare sboccano infiniti fiumi" type="straight"/>
+		<underline language="IT" method="pen" text="solamente il mare" type="straight"/>
+		<underline language="IT" method="pen" text="valent'huomo" type="straight"/>
+		<underline language="IT" method="pen" text="prima quei fiumi, ch'io" type="straight"/>
+		<underline language="IT" method="pen" text="poscia tutto il mare" type="straight"/>
+		<underline language="IT" method="pen" text="totalmente assoluto" type="straight"/>
+		<underline language="IT" method="pen" text="L'hauere molt'inimici" type="straight"/>
+		<underline language="IT" method="pen" text="men periglioso" type="straight"/>
+		<underline language="IT" method="pen" text="l'hauerne vn solo" type="straight"/>
+		<underline language="IT" method="pen" text="le migliaia delle persone" type="straight"/>
+		<underline language="IT" method="pen" text="era la maggior sicurtà" type="straight"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ami -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ma -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- so -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- assolu -->
+		<mark method="pen" name="comma" place="right_margin"/> <!-- assai -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- maluag -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- vantag -->
+		
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- honore -->
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="le migliaia delle persone"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- persone, soleua -->
+		
+    </annotation>
+</transcription>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.016v.tif" pagination="32" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Antonius Rufus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Anto[nius]. Rufus.</marginalia_text>
+                    <person name="Antonius Rufus"/>
+                </position>
+            </language>
+            <translation>Antonius Rufus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="M. Tullium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>.M[arcus]. Tullius.</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Marcus Tullius.</translation>
+        </marginalia>
+        
+    </annotation>
+</transcription>

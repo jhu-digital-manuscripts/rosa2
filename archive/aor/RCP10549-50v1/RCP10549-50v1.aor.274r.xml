@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.274r.tif" pagination="527" reader="John Dee" signature="[lzlzlz.viii.]"/>
+    <annotation>
+        
+        <marginalia anchor_text="nihil autem erat illo bla[n]dius, nihil hoc benignius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>nihil benignius blandius</marginalia_text>
+                </position>
+            </language>
+            <translation>Nothing more kind and pleasant.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fabricatus gladium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>fabricari gladium</marginalia_text>
+                </position>
+            </language>
+            <translation>To forge a sword.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vsus magister est optimus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vsus magister optimus</marginalia_text>
+                </position>
+            </language>
+            <translation>'Practice is the best of teachers' [Loeb 252, 375].</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Non igitur reus ex ea causa quae iudicata est, redundat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>no[n] igitur re[us] redundat.</marginalia_text>
+                </position>
+            </language>
+            <translation>Therefore the plaintiff does not overflow.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="conscie[n]tia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Conscie[n]tia</marginalia_text>
+                </position>
+            </language>
+            <translation>Conscience.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Id est difficile, quod cum spe magna sis ingressus, id non exequi vsque ad extremu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="si vsus magister est" type="straight"/>
+        <underline language="LA" method="pen" text="cuius conscie[n]tia nihil est quod quisquam timeat, si non pertimescat suam" type="straight"/>
+        <underline language="LA" method="pen" text="meminerit solum, sed etiam quatenus commissum" type="straight"/>
+        
+        <drawing anchor_text="Conscie[n]tia" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

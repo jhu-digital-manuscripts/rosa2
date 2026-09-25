@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.194r.tif" pagination="377" reader="John Dee" signature="Kk.iij."/>
+    <annotation>
+        
+        <marginalia anchor_text="ducis Eboraci, creatur comes de Rutland." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Dux Eboraci - comes Rutland.</marginalia_text>
+                    <person name="Edward of Norwich, 2nd Duke of York"/>
+                </position>
+            </language>
+            <translation>Duke of York - Earl of Rutland.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="de Lifland noluerunt diutius expectare. Facti sunt christiani de gente de Lettovv" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lucomia [est] Lifland Lettovv [est] Lithuania</marginalia_text>
+                    <location name="Lithuania"/>
+                </position>
+            </language>
+            <translation>Lucomia is Lifland, Livonia is Lithuania.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Eode[m] anno in parliamento praescripto, dominus Iohannes dux Lancastriae factus est dux Aquitanniae, per virgam &amp; pileu[m] praebitis manu regis" type="straight"/>
+        <underline language="LA" method="pen" text="filius &amp; haeres ducis Eboraci" type="straight"/>
+        <underline language="LA" method="pen" text="comes de Rutland" type="straight"/>
+        <underline language="LA" method="pen" text="VVyot" type="straight"/>
+        <underline language="LA" method="pen" text="regis de Letovve" type="straight"/>
+        <underline language="LA" method="pen" text="de Poleyn" type="straight"/>
+        <underline language="LA" method="pen" text="de Lifland" type="straight"/>
+       
+    </annotation>
+</transcription>

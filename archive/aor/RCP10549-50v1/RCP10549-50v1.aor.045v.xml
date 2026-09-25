@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.045v.tif" pagination="72" reader="John Dee" signature="ee.iiii."/>
+    <annotation> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Avaritia verris
+                    </marginalia_text>
+                    <person name="Verres"/>
+                </position>
+            </language>
+            <translation>
+                Verres' greed.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="remigésque" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        remiges
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Oarsmen.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Dianio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Dianiu[m]
+                    </marginalia_text>
+                    <location name="Dénia"/>
+                </position>
+            </language>
+            <translation>
+                Dénia.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="renu[n]ciationémque" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        renu[n]ciatio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Renunciation.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="hoc quàmnihil sit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        hoc quam nihil sit
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                How futile this is [Loeb 221, 217].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pupilli Malleoli tutor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Pupillus. Tutor }
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Ward. Tutor.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="syngraphas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Syngrapha
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Written contract.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="circum pedes autem homines formosos, &amp; literatos, suos esse" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        circu[m] pedes esse
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To be in attendance by foot.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="tametsi dici tum verè, tum grauiter, &amp; vehementer potest, tamen dicere praetermittam" type="straight"/>
+        <underline language="LA" method="pen" text="Illud quod neque taceri vllo modo potest, neque dici pro dignitate" type="straight"/>
+        <underline language="LA" method="pen" text="remigésque" type="straight"/>
+        <underline language="LA" method="pen" text="hoc quàm nihil" type="straight"/>
+        <underline language="LA" method="pen" text="quamobrem vnam ex decem non praedonum repentino aduentu, sed legati latrocinio: non vi tempestatis, sed hac horribili tempestate sociorum amissam, in literas" type="straight"/>
+        <underline language="LA" method="pen" text="contra piratas aedificata sit, piratam ipsum consceleratum fuisse" type="straight"/>
+        <underline language="LA" method="pen" text="in prouinciam sic copiosè profectus erat, vt domi prorsus nihil relinqueret" type="straight"/>
+        <underline language="LA" method="pen" text="syngraphas" type="straight"/>
+        <underline language="LA" method="pen" text="argenti optimi caelati grande" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark language="LA" method="pen" name="bracket" place="left_margin" text="quamobrem vnam ex decem non praedonum repentino aduentu, sed legati latrocinio: non vi tempestatis, sed hac horribili tempestate sociorum amissam, in literas"/>
+        
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">16</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">15</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">19</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">16</numeral>
+        
+        <drawing anchor_text="contra piratas aedificata sit, piratam ipsum consceleratum fuisse" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

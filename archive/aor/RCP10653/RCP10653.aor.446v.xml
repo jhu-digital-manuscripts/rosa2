@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.446v.tif" pagination="442" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        perdidit
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                He lost.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Campania" type="straight"/>
+        
+        <mark method="pen" name="circumflex" place="intext"/>
+        
+        <errata amendedtext="Colonna" copytext="Campania" language="LA"/>   
+        
+    </annotation>
+</transcription>

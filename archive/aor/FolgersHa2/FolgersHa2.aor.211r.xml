@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.211r.tif" pagination="flyleaf" reader="Harvey"/>	<!-- ABO 215right -->
+	<annotation>
+		<!-- Marginalia --> 
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						Bionis Epitaphium.
+						Henrici 4. Epinicion. 
+						Aschami discursus Germanicus.
+					</marginalia_text>
+					<person name="Bion of Smyrna"/>
+					<person name="Roger Ascham"/>
+					<book title="Epitaph of Adonis"/>
+					<book title="A canticle of the victorie"/>
+					<book title="Report and Discourse"/>
+				</position>
+			</language>
+			<language ident="EN">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						Instructions for trauellers.
+						Eliots French dialogs.
+						Heywoods prouerbs, &amp; Epigrams.
+					</marginalia_text>
+					<person name="John Eliot"/>
+					<person name="John Heywood"/>
+					<book title="Ortho-epia gallica"/>
+					<book title="The Proverbs, Epigrams, and Miscellanies of John Heywood"/>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						Tria scuta heroica:
+						Herculis, Achillis, A[e]nea[e]:
+						apud Hesiodu[m], Homeru[m], Virgiliu[m].
+						Quibus nihil apud excellentiss[imos]
+						Gra[e]cos aut Romanos in flore,
+						vel prudentius, vel fortius,
+						vel omninò validius, aut
+						admirabilius.
+						Techna[e] contractuu[m] pragmatica[e],
+						in arte Notariatus: et Vilsoni
+						dialogis de Vsura.
+					</marginalia_text>
+					<person name="Hercules"/>
+					<person name="Achilles"/>
+					<person name="Aeneas"/>
+					<person name="Hesiod"/>
+					<person name="Homer"/>
+					<person name="Virgil"/>
+				</position>
+			</language>
+			<translation>Bion of Smyrna's 'Epitaph of Adonis', 'The triumph of Henry IV', Roger Ascham's 'Report and Discourse'. Instruction for trauellers. John Eliot's 'Ortho-epia gallica', John Heywood's 
+				'The Proverbs, Epigrams, and Miscellanies of John Heywood'. Three heroic shields: of Hercules, Achilles, and Aeneas; in Hesiod, Homer, and Virgil. To whom no one can be either more prudent,
+				strong, altogether powerful or admirable among the most excellent Greeks and Romans in their youthful prime. Pragmatic tricks of contracts in the art of a notary, and in Thomas Wilson's 
+				'A discourse upon usurie'.
+			</translation>
+		</marginalia>
+    </annotation>
+</transcription>

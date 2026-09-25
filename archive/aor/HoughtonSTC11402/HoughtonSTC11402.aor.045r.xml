@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.045r.tif" reader="Harvey" signature="[Evi[r]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Impedimentu[m] pro occasione.</marginalia_text>
+                </position>
+            </language>
+            <translation>An impediment for the opportunity.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Bis interimit[u]r, qui suis Armis perit.</marginalia_text>
+                </position>
+            </language>
+            <translation>He, who dies by his own weapons, is destroyed twice.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>So Annibals Elephants seruid him.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="great shyps" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nauale pra[e]liu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>A naval battle.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Polymechania nunq[uam] deficit.</marginalia_text>
+                </position>
+            </language>
+            <translation>Polymechanics never fails.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="How to trouble and disorder the araye." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Pars victoria[e] est,</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Inimicum</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>turbare, anteq[uam]</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>dimices. Vegetius, l.3.c.I8.</marginalia_text>
+                    <person name="Vegetius"/>
+                    <book title="De re Militari"/>
+                </position>
+            </language>
+            <translation>'Part of the victory consists of throwing the enemy into disorder before you engage them.' [after John Clarke, 1797]. Vegetius' 'De re militari', book 3, chapter 18.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="clamour and" type="straight"/>
+        <underline language="EN" method="pen" text="the dartes" type="straight"/>
+        <underline language="EN" method="pen" text="tourned agayne vppon" type="straight"/>
+        <underline language="EN" method="pen" text="disturbed and" type="straight"/>
+        <underline language="EN" method="pen" text="array of" type="straight"/> 
+        <underline language="EN" method="pen" text="reculynge backe" type="straight"/>
+        <underline language="EN" method="pen" text="Archelaus sette to incountre" type="straight"/>
+        <underline language="EN" method="pen" text="hym, his horsmen, the whiche" type="straight"/>
+        <underline language="EN" method="pen" text="great shyps" type="straight"/>
+        <underline language="EN" method="pen" text="excedyng swift nauy of" type="straight"/>
+        <underline language="EN" method="pen" text="the manlynesse of his sowldyours" type="straight"/>
+        <underline language="EN" method="pen" text="imagined" type="straight"/>
+        <underline language="EN" method="pen" text="handes of yron" type="straight"/>
+        <underline language="EN" method="pen" text="to catche and claspe" type="straight"/>
+        <underline language="EN" method="pen" text="enmies shyppes to his" type="straight"/>
+        <underline language="EN" method="pen" text="caste ouer brydges" type="straight"/>
+        <underline language="EN" method="pen" text="and disorder the" type="straight"/>
+        <underline language="EN" method="pen" text="araye. Capit.4." type="straight"/>
+        <underline language="EN" method="pen" text="Papirius Cursor shuld" type="straight"/>
+        <underline language="EN" method="pen" text="company knowinge" type="straight"/>
+        <underline language="EN" method="pen" text="nothinge" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="shyps"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="swift nauy"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="handes of yron"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/> <!--Naucius, his-->
+        
+        <mark language="EN" method="pen" name="plus_sign" place="tail" text="compnay knowinge nothinge"/>
+        
+    </annotation>
+</transcription>

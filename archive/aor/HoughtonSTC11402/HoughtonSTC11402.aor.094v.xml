@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.094v.tif" reader="Harvey" signature="[Lvii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Seuerity in priu[a]te, toward the person: Clemency in publigue, toward the state.</marginalia_text>
+                    <emphasis method="chalk" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="streyght put to deathe; exaumple to the other" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Such seuere Exa[m]ples otherwhiles necessary.</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>s[upr]a, l.3.c.12.</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0175" text="l.3.c.12."/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>[See] above, book 3, chapter 12.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="brought forth by lotte" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Decimation by lottery, in transgression of A multitude.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>No fowler crime, then defection, or disorder.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cases of Judgment, not of mercy. Discipline, &amp; very puissance of [the] Army: aliàs, the more affability, &amp;
+                    curtesy, the better.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="bulwark was burned" type="straight"/>
+        <underline language="EN" method="pen" text="his camp" type="straight"/>
+        <underline language="EN" method="pen" text="taken" type="straight"/>
+        <underline language="EN" method="pen" text="be beaten with roddes" type="straight"/>
+        <underline language="EN" method="pen" text="of the simple souldiours" type="straight"/>
+        <underline language="EN" method="pen" text="saw one of his souldiours left" type="straight"/>
+        <underline language="EN" method="pen" text="on the shore" type="straight"/>
+        <underline language="EN" method="pen" text="and streyght put to deathe" type="straight"/>
+        <underline language="EN" method="pen" text="make hym an exaumple" type="straight"/>
+        <underline language="EN" method="pen" text="to the other" type="straight"/>  
+        <underline language="EN" method="pen" text="Appius Claudius" type="straight"/>
+        <underline language="EN" method="pen" text="slewe with" type="straight"/>
+        <underline language="EN" method="pen" text="tenth souldiour" type="straight"/>
+        <underline language="EN" method="pen" text="brought forth by" type="straight"/>
+        <underline language="EN" method="pen" text="lotte" type="straight"/>
+        <underline language="EN" method="pen" text="had fledde and gyuen" type="straight"/>
+        <underline language="EN" method="pen" text="behedded thre of the" type="straight"/>
+        <underline language="EN" method="pen" text="had broken" type="straight"/>
+        <underline language="EN" method="pen" text="their warde" type="straight"/>
+        <underline language="EN" method="pen" text="beate downe the" type="straight"/>
+        <underline language="EN" method="pen" text="callyd the kynges towne" type="straight"/>
+        <underline language="EN" method="pen" text="without commaundement of the graunde capitayne" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--soul-->
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="make hym an exaumple"/>
+        <mark method="pen" name="X_sign" place="right_margin"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!--taken, to-->
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="tenth souldiour"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="had broken"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.114v.tif" pagination="220" reader="John Dee" signature="[T ij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="cum Godbaldo rege Orchadum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Godbaldus Rex Orchadum.
+                    </marginalia_text>
+                    <person name="Godbold, King of Orkney"/>   
+                </position>
+            </language>
+            <translation>
+                Godbold, King of Orkney.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Penda rex Merciorum idolis deditus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Penda Idolatra
+                    </marginalia_text>
+                    <person name="Penda of Mercia"/>
+                </position>
+            </language>
+            <translation>
+                The idolator Penda of Mercia.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cadvvalin[us] verò [...] adeò barbarus erat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Cadwallini feritas
+                    </marginalia_text>
+                    <person name="Cadwallon ap Cadfan"/>
+                </position>
+            </language>
+            <translation>
+                The savageness of Cadwallon ap Cadfan.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="assumpta secum regina Aethelburga" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        A[E]thelburga Regina.
+                    </marginalia_text>
+                    <person name="Æthelburh of Kent"/>
+                </position>
+            </language>
+            <translation>
+                Queen Æthelburh of Kent.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Osricu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Osricus
+                    </marginalia_text>
+                    <person name="Osric of Deira"/> 
+                </position>
+            </language>
+            <translation>
+                Osric of Deira.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ea[n]fridu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Eanfridus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Eanfrith of Bernicia.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Orchadum quarta die iduum" type="straight"/>
+        <underline language="LA" method="pen" text="Merciorum idolis" type="straight"/>
+        <underline language="LA" method="pen" text="Cadvvalin[us]" type="straight"/>
+        <underline language="LA" method="pen" text="adeò barbarus erat" type="straight"/>
+        <underline language="LA" method="pen" text="nec sexui" type="straight"/>
+        <underline language="LA" method="pen" text="muliebri" type="straight"/>
+        <underline language="LA" method="pen" text="paruulorum parceret" type="straight"/>
+        <underline language="LA" method="pen" text="omne genus Angloru[m] Britanniae finibus proscribere laborabat" type="straight"/>
+        <underline language="LA" method="pen" text="regina Aethelburga" type="straight"/>
+        <underline language="LA" method="pen" text="crucem magnam auream atque" type="straight"/>
+        <underline language="LA" method="pen" text="Osric[us]" type="straight"/>
+        <underline language="LA" method="pen" text="Eanfridus" type="straight"/>
+        <underline language="LA" method="pen" text="Cadvvalin[us] rex Britonum" type="straight"/>
+        
+    </annotation>
+</transcription>

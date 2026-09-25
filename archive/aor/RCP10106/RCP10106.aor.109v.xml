@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.109v.tif" pagination="218" reader="John Dee" signature="[o 5[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="εἰκότα" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>εἰκότα</marginalia_text>
+                </position>
+            </language>
+            <translation>Verisimilar.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hermagoras" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hermagoras.</marginalia_text>
+                    <person name="Hermagoras of Temnos"/>
+                </position>
+            </language>
+            <translation>Hermagoras.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Areopagitae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Areopagita[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>The Areopagites.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="inimicus, si antè minatus, si eodem loco fuit" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

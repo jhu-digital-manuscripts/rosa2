@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.159v.tif" pagination="58" reader="John Dee"/>   
+    <annotation>
+        
+        <marginalia anchor_text="co[n]cinnitudinis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>co[n]cinnitudo</marginalia_text>
+                </position>
+            </language>
+            <translation>Elegance of style.</translation>
+        </marginalia>
+        
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Simile</marginalia_text>
+                </position>
+            </language>
+            <translation>A comparison.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Exordium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Exordiu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>The introduction.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="apparationis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Apparatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Preparation.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Vitia vero haec sunt certissima exordioru[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vitia exordioru[m] 7</marginalia_text>
+                </position>
+            </language>
+            <translation>The seven faults of introductions.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Vulgare; Co[m]mune; Commutabile; Longum; Separatu[m]; Translatu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vulgare Comune Comutabile Longu[m]. Separatu[m] Translatu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>General, common, interchangeable, long, irrelevant, out of place.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Contra praecepta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Co[n]t[ra] p[rae]cepta.</marginalia_text>
+                </position>
+            </language>
+            <translation>Contrary to precepts.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="NARRATIO" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>NARRATIO</marginalia_text>
+                </position>
+            </language>
+            <translation>The statement of the case.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Narrationu[m] tria sunt genera" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Narrationis tria genera</marginalia_text>
+                </position>
+            </language>
+            <translation>The three types of the statement of the case.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Tertium genus; Eius partes sunt duae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tertij Generis diuisio</marginalia_text>
+                </position>
+            </language>
+            <translation>The division of the third type.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Sin auditoris studium defatigatio" type="straight"/>
+        <underline language="LA" method="pen" text="cp[n]cinnitudinis" type="straight"/>
+        <underline language="LA" method="pen" text="quae maxime orationi fidem, oratori adimit" type="straight"/>
+        
+        <mark language="LA" method="pen" name="duopunctus_with_antenna" place="head" text="co[n]cinnitudo"/>
+        
+        <mark method="pen" name="duopunctus_with_antenna" place="left_margin"/>
+      
+        <numeral place="left_margin">.1.</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">3</numeral>
+        
+        <drawing anchor_text="NARRATIO" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

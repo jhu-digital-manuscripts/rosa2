@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.173v.tif" pagination="[174v]" reader="John Dee"/>       
+    <annotation>
+        
+        <marginalia anchor_text="Taedia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Taedia</marginalia_text>
+                </position>
+            </language>
+            <translation>Boredom.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="diffidentia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Diffidentia</marginalia_text>
+                </position>
+            </language>
+            <translation>Diffidence.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="lethaeus amor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Lethaeus amor.</marginalia_text>
+                </position>
+            </language>
+            <translation>Lethean love.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ad mala quisq[ue] animum referat sua. ponet amorem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Mala, ponere amorem coge[n]t</marginalia_text>
+                </position>
+            </language>
+            <translation>Misfortunes urge one to get rid of love.</translation>  
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Taedia quaere mali. faciunt &amp; taedia finem" type="straight"/>
+        <underline language="LA" method="pen" text="Qui timet vt sua sit, ne quis sibi subtrahat" type="straight"/>
+        <underline language="LA" method="pen" text="Ille machaonia" type="straight"/>
+       
+        <symbol name="Jupiter" place="left_margin"/>
+         
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

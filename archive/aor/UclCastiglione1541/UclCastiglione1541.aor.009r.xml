@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="UclCastiglione1541.009r.tif" reader="Harvey" signature="Aii[r]"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Occasione, che mosse l'Auttore a comporre il pra[e]sente libro del Cortegiano.    
+                    </marginalia_text>
+                    <book title="Book of the Courtier"/>
+                </position>
+            </language>
+            <translation>
+                The occasion which moved the author to compose the present book of the courtier.   
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        lode della Marchesa di Pescara.
+                    </marginalia_text>
+                    <person name="Vittoria Colonna"/>
+                </position>
+            </language>
+            <translation>
+                Praise of the Marchioness of Pescara.
+            </translation>
+        </marginalia> 
+    </annotation>
+</transcription>

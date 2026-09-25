@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.269v.tif" pagination="[262v]" reader="John Dee" signature="[VV ij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Filiorum &amp; parentum dilectio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>filioru[m] et pare[n]tum dilectio.</marginalia_text>
+                </position>
+            </language>
+            <translation>The love of children and parents.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Judiciu[m] ex c[oe]li imaginibus</marginalia_text>
+                </position>
+            </language>
+            <translation>A judgement from the appearances of the sky.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Mutatio augis Solis quid significet</marginalia_text>
+                </position>
+            </language>
+            <translation>What the mutation of the sun's apogee may signify.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Metalla subsunt planetes.</marginalia_text>
+                </position>
+            </language>
+            <translation>Metals are underneath the planets.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Metallica" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Metallica co[e]li partibus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Metals [are] in parts of the sky.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Lapides autem ac gemmae, tum herbarum ac arborum species, proculdubio subsunt fixis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Lapides ge[m]m[a]e herbaru[m] et arboru[m] spe[ci]es fixis subsunt.</marginalia_text>
+                </position>
+            </language>
+            <translation>Stones [and] gems, species of herbs and trees, are beneath fixed places.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nam si dominus filiorum ad dominum geniturae in patris natiuitate accesserit" type="straight"/>
+        <underline language="LA" method="pen" text="Cancro ad Libram, bene habitabitur Borealis, &amp; Australi dominabitur à Libra ad Capricornum, Austrina habitabitur, sed Boreali" type="straight"/>
+        <underline language="LA" method="pen" text="Metallica autem, ut argentum uiuum, ac sulfur, &amp; calchantum, ac reliqua huius generis, partibus coeli, non autem" type="straight"/>
+        <underline language="LA" method="pen" text="proculdubio subsunt fixis, in quibusdam tamen uirtus planetarum magis apparet" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

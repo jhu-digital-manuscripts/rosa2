@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.098v.tif" pagination="182" reader="John Dee" signature="[q.j.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="radices motuum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Radices motuu[m] Ca[e]lestium</marginalia_text> 
+                </position>
+            </language>
+            <translation>The origins of the celestial movements.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Astrologoru[m] errata" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Astrologoru[m] (vt iste autumat) errores.</marginalia_text>    
+                </position>
+            </language>
+            <translation>Errors of astrologers (as this asserts).</translation>   
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="post 25. Martij" type="straight"/>
+        <underline language="LA" method="pen" text="Dionysij errore[m] notari" type="straight"/>
+        <underline language="LA" method="pen" text="annos ab incarnatione sumptos, post quartum Christi annum eosde[m] esse cum annis à natiuitate computatis, propter superfluum bissextum anno quarto Domini inconsultè annotatum" type="straight"/>
+        <underline language="LA" method="pen" text="idem annus" type="straight"/>
+        <underline language="LA" method="pen" text="vt quidam" type="straight"/>
+        <underline language="LA" method="pen" text="radices motuum" type="straight"/>
+        <underline language="LA" method="pen" text="non co[m]putatis septem illis diebus" type="double"/>
+        <underline language="LA" method="pen" text="horam natiuitatis Christi inuenire volunt, retrocedunt per dies septem à radicibus Planetarum" type="straight"/>
+        <underline language="LA" method="pen" text="in tabulis annotatis, vt ait Lucidus" type="straight"/>
+        <underline language="LA" method="pen" text="hac in re" type="straight"/>
+        <underline language="LA" method="pen" text="Astrologoru[m] errata" type="double"/>
+        <underline language="LA" method="pen" text="qui nec" type="straight"/>
+        <underline language="LA" method="pen" text="sit anni naturalis initium" type="straight"/>
+        <underline language="LA" method="pen" text="quando natus" type="double"/>
+        <underline language="LA" method="pen" text="Dominus" type="straight"/>
+        <underline language="LA" method="pen" text="intelligu[n]t" type="double"/>
+        <underline language="LA" method="pen" text="norunt nostris te[m]pori Theologi" type="straight"/>  
+        <underline language="LA" method="pen" text="quando in eo" type="straight"/>
+        <underline language="LA" method="pen" text="errant" type="double"/>
+        <underline language="LA" method="pen" text="cum Deo" type="straight"/>
+        <underline language="LA" method="pen" text="completa fuerunt" type="straight"/>
+        <underline language="LA" method="pen" text="omnia" type="double"/>
+       
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="comma" place="intext"/>      <!-- Domini completa -->
+        
+        <errata amendedtext="nostri" copytext="nostris" language="LA"/>    
+        <errata amendedtext="temporis" copytext="tempori" language="LA"/>   <!-- DO: Not sure if a final letter has been altered or just the 's' added? -->
+        
+    </annotation>
+</transcription>

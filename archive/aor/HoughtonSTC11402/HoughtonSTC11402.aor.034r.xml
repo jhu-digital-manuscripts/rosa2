@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.034r.tif" reader="Harvey" signature="Diii[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>On notable Stratagem in extremity; to solace, &amp; recreate [the] Army, with sum pleasant Conceits,
+                    &amp; delectable deuises: euen to make them merry, in [their] deepist dumpes.</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Huc. +</marginalia_text>
+                </position>
+            </language>
+            <translation>Here.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="a flaake of fyre, that fell from heuen" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A falke of fijer fro[m] heauen.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>+ Huc Ars benè Jocandi:</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>pra[e]sertim ex</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vnici Aretini inexpectatissimis Ironijs, et Paradoxis.</marginalia_text>
+                    <person name="Bernardo Accolti"/>
+                </position>
+            </language>
+            <translation>Here, the art of joking well. In particular from Bernardo Accolti, with the most unexpected irony and paradoxes.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ominous,</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ut s[upr]a.</marginalia_text>
+                </position>
+            </language>
+            <translation>Ominous, as above.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Naturall Philosophy studd thes 3. in speciall steade.</marginalia_text>
+                    <emphasis method="pen" text="Naturall" type="straight"/>
+                    <emphasis method="pen" text="Philosophy" type="straight"/>
+                    <emphasis method="chalk" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>so Maharbal,</marginalia_text>
+                    <person name="Maharbal"/>
+                    <emphasis method="chalk" type="straight"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>l.2.ca.5.</marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>wine, w[i]th mandrage. So Clisthenes.</marginalia_text>
+                    <person name="Cleisthenes"/>
+                    <emphasis method="pen" text="wine" type="straight"/>
+                    <emphasis method="pen" text="mandrage" type="straight"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>l.3.c.7.</marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>water, corruptid w[i]th Helleborus.</marginalia_text>
+                </position>
+            </language>
+            <translation>So Maharbal, book 2, chapter 5, wine, with mandrage. So Clisthenes. Book 3, chapter 7, water, corruptid with helleborus. </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Huc Arcana Magica, physica, mathematica.</marginalia_text>
+                    <emphasis method="chalk" type="straight"/>
+                </position>
+            </language>
+            <translation>Here, esoteric magic, physics, and mathematics.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="the eclypses" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Vide Q. Curtiu[m] de Eclypse Lun[a]e, lib. 4. 75. Insignis locus est: quomodò 
+                        perterriti milites; quomodò rursus confirmati</marginalia_text>
+                    <person name="Curtius"/>
+                    <book title="Historiae Alexandri Magni"/>
+                    <emphasis method="pen" text="de Eclypse Lune" type="straight"/>
+                </position>
+            </language>
+            <translation>See Quintus Curtius Rufus on the eclipse of the moon, book 4, [page] 75. There is a distinguished place: just as soldiers are terrified
+                and just as encouraged in turn.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="the Eclyps of the mone" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>An Eclypse of the Moone.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="the eclypses" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Eclypses.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="with a flaake" type="straight"/>
+        <underline language="EN" method="pen" text="vs this light" type="straight"/>
+        <underline language="EN" method="pen" text="his chayre fell vnder hym" type="straight"/>
+        <underline language="EN" method="pen" text="chaunce betokened" type="straight"/>
+        <underline language="EN" method="pen" text="that it is no time nowe to sytte" type="straight"/>
+        <underline language="EN" method="pen" text="Sulpitius Gallus" type="straight"/>
+        <underline language="EN" method="pen" text="the Eclyps of the mone" type="straight"/>
+        <underline language="EN" method="pen" text="a heuye token" type="straight"/>
+        <underline language="EN" method="pen" text="al the reason, and causes of the eclyps" type="straight"/>
+        <underline language="EN" method="pen" text="Agathocles" type="straight"/>
+        <underline language="EN" method="pen" text="the eclypses happened" type="straight"/>
+        <underline language="EN" method="pen" text="reason therof vnto the armie" type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+        <symbol language="EN" name="SS" place="intext" text="Huc Ars benè Jocandi: pra[e]sertim ex Vnici Aretini inexpectatissimis Ironijs, et Paradoxis."/>
+        
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="that it is no time nowe to sytte"/>
+        
+        <mark method="pen" name="horizontal_bar" place="tail"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

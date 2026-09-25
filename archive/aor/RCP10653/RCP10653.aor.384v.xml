@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.384v.tif" pagination="318" reader="John Dee" signature="[Dddd iij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Rogerius de Mortuo mari" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Rogerus de M. M.
+                    </marginalia_text>
+                    <person name="Roger Mortimer, 1st Baron Mortimer"/>
+                </position>
+            </language>
+            <translation>
+                Roger Mortimer, 1st Baron Mortimer.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Robertus de Ferrarijs Comes Dereb." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Rob. de Fer   
+                    </marginalia_text>
+                    <person name="Robert de Ferrers, 6th Earl of Derby"/>
+                </position>
+            </language>
+            <translation>
+                Robert de Ferrers, 6th Earl of Derby.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iudaismum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Iudaismus       
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Judaism.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="priore. Interea Rogerius de Mortuo" type="straight"/>
+        <underline language="LA" method="pen" text="Qu[a]e cum prouincia &amp; appenditijs Rogerio praedicto tradidit ad custodie[n]da" type="straight"/>
+        <underline language="LA" method="pen" text="qui &amp; villam destruxit ac Iudaismum euertit" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.075r.tif" pagination="149" reader="John Dee" signature="k 3"/> 
+    <annotation>
+        
+        <marginalia anchor_text="coniectura" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Coniectura</marginalia_text>
+                </position>
+            </language>
+            <translation>Conjecture.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vbi coniecturae non erit locus, ali sunt intue[n]da" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ubi co[n]iectura[e] no[n] est locus quid faciendu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>When there are no conjectures, the aim is what must be done.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>C[aius]. Ca[e]sar.</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <translation>Julius Caesar.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Semper autem de eo prius loquemur, de quo deliberari" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>De quo primu[m] deliberandum.</marginalia_text>
+                </position>
+            </language>
+            <translation>Of which first deliberation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Partes suadendi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Suadendi partes.</marginalia_text>
+                </position>
+            </language> 
+            <translation>Parts of the recommend.</translation>
+        </marginalia>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <numeral place="left_margin">1.</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

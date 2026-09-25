@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.066r.tif" pagination="59" reader="John Dee" signature="P iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Cor coeli gloriam, magistratus, famam, honores, matrem, Decima, artem, industriam, filios, &amp; filias" hand="Italian" id="RCP7134:137:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Nota diuersas significationes Decima[e] domus et Cordis Ca[e]li</marginalia_text>
+                </position>
+            </language>
+            <translation>Note the different indicators of the ten houses and midheaven.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Significatores secu[n]dum substantiam et naturam propria[m] haru[m] rerum qua[e] hic citantur, hij planeta[e] et ha[e] domus existunt,
+                        alij autem Domini locoru[m] in quibus haec reperiuntur, dicunt[u]r domini secundu[m] accidens, et singulis revolutionib[us] muta[n]tur vocantur etiam
+                        dispositores, huiusmodi Domini, et significatores reru[m] et eventuu[m] futuroru[m]. Hij tame[n] planeta[e] alias res proprie significant, sicut et Domus
+                        ip[s]e, et etia[m] signa habent sua[m] propria[m] and co[n]sta[n]tem in natura significatione[m]; sed significata talia co[m]modius vnu[m]q[uod]que in
+                        peculiari capite, enumerari debent vt infra vides, capitibus 10. 12. 15. 18 [etc] vide plura folio. 84.v. et 95 r. v. [etc].</marginalia_text>  
+                    <internal_ref>
+                        <target ref="RCP7134:149" text="10"/>
+                        <target ref="RCP7134:151" text="12"/>
+                        <target ref="RCP7134:155" text="15"/>
+                        <target ref="RCP7134:158" text="18"/>
+                        <target ref="RCP7134:188" text="84.v."/>
+                        <target ref="RCP7134:209" text="95. r"/>
+                        <target prefix="95 r. " ref="RCP7134:210" suffix=" [etc]" text="v."/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>The signifiers according to their particular substance and nature of these things which are cited here, these planets and houses appear,
+            but other lords of the places into which these are found, are called the lords according to circumstance, and are mutated by individual revolutions, [and] are also
+            called disposers, of this kind of lords, and signifiers of future matters and events. Nevertheless these these planets indvidually signify other matters,
+            like even the house itself, and even signs have their particular and constant signification in nature; but such significations, conveniently all, ought to be enumerated
+            in a particular chapter, as you can see below, in the chapters 10, 12, 15, 18, et cetera. See more, folio 84 verso and 95 recto and verso, et cetera.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>NOTA.</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Duplex eni[m] est promissor vt in proxima pagina licet videre.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Namely the twofold [nature] of the promissor, as one may see on the next page.</translation>
+        </marginalia>
+        
+        <underline id="RCP7134:137:u0001" language="LA" method="pen" text="Cor" type="straight"/>
+        <underline id="RCP7134:137:u0002" language="LA" method="pen" text="Decima" type="straight"/>
+        <underline language="LA" method="pen" text="uinculu[m] animae cu[m] corpore" type="straight"/>
+        <underline language="LA" method="pen" text="non" type="double"/> 
+        <underline language="LA" method="pen" text="est Saturnus" type="straight"/>
+        <underline language="LA" method="pen" text="loca quatuor Saturni" type="double"/>
+        <underline language="LA" method="pen" text="occidat" type="straight"/>
+        <underline language="LA" method="pen" text="perficiat" type="straight"/>
+        <underline language="LA" method="pen" text="sed radij" type="straight"/>
+        
+        <numeral language="LA" place="intext" text="Planetam">1.</numeral>
+        <numeral language="LA" place="intext" text="locu[m]">2.</numeral>
+        <numeral language="LA" place="intext" text="occidat">1.</numeral>
+        <numeral language="LA" place="intext" text="perficiat">2.</numeral>
+        <numeral language="LA" place="intext" text="radij">1.</numeral>
+        
+        <physical_link>
+            <marginal_annotation idref="RCP7134:137:m0001"/>
+            <marginal_annotation idref="RCP7134:137:u0001"/>
+            <marginal_annotation idref="RCP7134:137:u0002"/>
+            
+            <relation from="RCP7134:137:m0001" to="RCP7134:137:u0001" type="directed"/>
+            <relation from="RCP7134:137:m0001" to="RCP7134:137:u0002" type="directed"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

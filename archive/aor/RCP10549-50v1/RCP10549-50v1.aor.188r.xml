@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.188r.tif" pagination="355" reader="John Dee" signature="zz.ii."/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        litter[a]e quare inve[n]t[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Therefore invented letters.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Permitto aliquid iracundiae tuae, do adolescentiae, cedo amicitiae, tribuo parenti" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        permitto do cedo tribuo ]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To allow, to concede, to sacrifice, to pay regard.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pericula" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Pericula
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Risks.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="protego" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        protego
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                I protect.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="me ego veritatem patefactam co[n]taminarem aliquo mendacio" type="straight"/>
+        <underline language="LA" method="pen" text="Sed nisi tibi aliquem modum vitae constitueris, coges oblitu[m] me" type="straight"/>
+        <underline language="LA" method="pen" text="me tenuissima suspitione perstrinxit, quem non praeuerterim. Sed" type="straight"/>
+        <underline language="LA" method="pen" text="abuti mea: noli aculeos orationis meae qui reconditi sunt, excussos" type="straight"/>
+        <underline language="LA" method="pen" text="tum no[n]dum statuo te viriu[m] satis habere, vt ego" type="straight"/>
+        <underline language="LA" method="pen" text="quòd si esses vsu atque aetate robustior, essem idem qui soleo, cum sum lacessitus" type="straight"/>
+        <underline language="LA" method="pen" text="disciplinam, vt nullius amicitia ad propulsanda" type="straight"/>
+        <underline language="LA" method="pen" text="honoris erat certamen" type="straight"/>
+        <underline language="LA" method="pen" text="aerumnis venis ad eum lacerandum quem interemisti: ego iacentem &amp; spoliatu[m] defendo &amp; protego. Atque" type="straight"/>
+        
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">18</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        <drawing anchor_text="Pericula" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+        
+    </annotation>
+</transcription>

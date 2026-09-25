@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.097v.tif" pagination="186" reader="John Dee" signature="[Q iij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="nemus Calidonis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nemus Calidonis
+                    </marginalia_text>
+                    <location name="Caledonian Forest"/>
+                </position>
+            </language>
+            <translation>
+                The Caledonian Forest.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Kaerlindcoit" type="straight"/>
+        <underline language="LA" method="pen" text="nemus Calidonis" type="straight"/>
+        <underline language="LA" method="pen" text="Boëtius" type="double"/>
+        <underline language="LA" method="pen" text="consolatione philosophiae" type="straight"/>
+        <underline language="LA" method="pen" text="obsides eorum suspendi praecepit" type="straight"/>
+        <underline language="LA" method="pen" text="galeam simulacro draconis insculptam" type="straight"/>
+        <underline language="LA" method="pen" text="Pridvven" type="straight"/>
+        <underline language="LA" method="pen" text="sanctae dei genitricis" type="straight"/>
+        <underline language="LA" method="pen" text="Iron" type="straight"/>
+        <underline language="LA" method="pen" text="Paganos" type="double"/>
+        
+        <mark method="pen" name="circumflex" place="intext"/>
+        
+        <errata amendedtext="proximum" copytext="proxmum" language="LA"/>
+        <errata amendedtext="montem" copytext="mortem" language="LA"/>
+        
+        
+    </annotation>
+</transcription>

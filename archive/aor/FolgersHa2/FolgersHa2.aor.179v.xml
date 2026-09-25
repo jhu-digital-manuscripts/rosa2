@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.179v.tif" pagination="182" reader="Harvey" signature="[M3v]"/>	<!-- ABO 184left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Seu legitur, seu scribitur: siue etiam agitur, siue
+						dicitur: summa, summarum est ha[e]c: Non =
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						= Non numero, sed pondere constat dignitas: et
+						pauca egregia, plus quàm mille
+						Laudabilia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Whether it is read, or written: or even done, or said: the highest of the highest is this:
+			dignity consists not in a number but in weight: and a little excellency is more than a thousand praises.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						In sermone,
+						odi tautologian: in actione, amo tautopraxian.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>In speech, I hate he who repeats his words; in action, I love he who repeats his practice.</translation> 
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Ad punctum Semper.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Always towards the mark.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Nihil aptius Autotechnia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Nothing is more apt than autotechnia.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Ô diuina thaumaturga, Fides: omnium miraculoru[m] radix pra[e]potentissima. Ferrei Seculi, rupes magnetica.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Oh faith, divine miracle-worker: the most powerful root of all miracles. Magnetic rocks, the steel of ages.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Imaginare quotidiè pra[e]sentem pugnam; eandemq[ue] asperrima[m]
+						contra robustissimos hostes, atq[ue] adeò peritissimos.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>To imagine the present fight daily; and the same most-troubled [fight] against the most robust enemies, and finally the most experienced ones.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Dominatur Hector, nisi domat Achilles. Capit
+						Dauidem Absolon, nisi capitur à Chusaio Achitophel.
+					</marginalia_text>
+					<person name="Hector"/>
+					<person name="Achilles"/>
+					<person name="Absalom"/>
+					<person name="King David"/>
+					<person name="Ahitophel"/>
+					<person name="Hushai"/>
+				</position>
+			</language>
+			<translation>Hector is dominated, unless Achilles dominates. Absalom seizes David, unless Ahitophel is seized by Hushai.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="nè Dio" type="straight"/>
+		<underline language="IT" method="pen" text="meglio di voi" type="straight"/>
+		<underline language="IT" method="pen" text="fraudolenti" type="straight"/>
+		<underline language="IT" method="pen" text="pregiar altrui à suo" type="straight"/>
+		<underline language="IT" method="pen" text="danno" type="straight"/>
+		<underline language="IT" method="pen" text="Volpe" type="straight"/>
+		<underline language="IT" method="pen" text="dietro vn cane fuggiua" type="straight"/>
+		<underline language="IT" method="pen" text="vna Lepre, si volse" type="straight"/>
+		<underline language="IT" method="pen" text="di questa lepre (" type="straight"/>
+		<underline language="IT" method="pen" text="alla Lepre" type="straight"/>
+		<underline language="IT" method="pen" text="essendo velocissima scampò" type="straight"/>
+		<underline language="IT" method="pen" text="non hebbe nè l una, nè l'altra" type="straight"/>
+		<underline language="IT" method="pen" text="ella l'hauesse scoperta" type="straight"/>
+		<underline language="IT" method="pen" text="oh ingrata" type="straight"/>
+		<underline language="IT" method="pen" text="perch'io ti lodai tanto?" type="straight"/>
+		<underline language="IT" method="pen" text="hauessi biasmata" type="straight"/>
+		<underline language="IT" method="pen" text="qualche astutia" type="straight"/>
+		<underline language="IT" method="pen" text="gratiamente di pericolo" type="straight"/>
+		<underline language="IT" method="pen" text="combattere in steccato" type="straight"/>
+		<underline language="IT" method="pen" text="'insegna sua" type="straight"/>
+		<underline language="IT" method="pen" text="vna burla" type="straight"/>
+		
+		<symbol name="Sun" place="left_margin"/>
+		
+		<mark method="pen" name="plus_sign" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- lamen -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- com -->
+		
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="hauessi biasmata"/>
+		
+		<mark method="pen" name="plus_sign" place="tail"/> <!-- below "perche" -->
+
+    </annotation>
+</transcription>

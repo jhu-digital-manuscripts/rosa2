@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.150r.tif" reader="John Dee" signature="B.iij."/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Excidium Troia[e], secundum Plutarchum, Solinum, et Dyonisium Halicarnassa[e]um: vt antea in Chron[icon] l[iber] : 2 : c[apitulum] : 2 : pag[ina] 60.</marginalia_text>
+                    <person name="Plutarch"/>
+                    <person name="Solinus"/>
+                    <person name="Dionysius of Halicarnassus"/>
+                    <book title="Chronicum"/>
+                    <location name="Troy"/>
+                    <internal_ref>
+                        <target ref="RCPD126.6:84" text="60"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>The destruction of Troy, according to Plutarch, Solinus, and Dionysius of Halicarnassus: as before in Chronicon book 2, chapter 2, page 60.</translation> 
+        </marginalia>
+   
+    </annotation>
+</transcription>

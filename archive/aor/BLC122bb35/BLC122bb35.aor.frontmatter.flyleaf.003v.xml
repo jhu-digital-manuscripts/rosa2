@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC122bb35.frontmatter.flyleaf.003v.tif" reader="John Dee" signature=""/> 
+    <annotation>
+          
+        <marginalia date="22 May 1559" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Ioannes Dee hanc sibi venia[m] a doctis co[n]cedi 
+                        cupit Mathematicis, vt q[uo]n[i]a[m] hactenus tota <!--JG: Or just quam?-->
+                        Antiquitas Geometria[e] no[st]r[a]e celebravit arte[m]
+                        eande[m] vt Schematica[e] [insigniat no[st]r[a]e - deleted]
+                        siue potius Megethoscopa[e], no[st]r[a]e, insigniat. 1559. 22 Maij Welbor[niae] <!--KS: 'Welborina[e]'?-->
+                    </marginalia_text>
+                    <person name="John Dee"/>
+                </position>
+            </language>
+            <translation>
+                John Dee desired that this favour be granted to him by learned mathematicians, as [quam/quoniam?] so far the whole antiquity of our geometry celebrated
+                the same art so that it distinguishes by form or rather Megethoscopic. 22 May, 1559. Welborn[...]. <!--JG: Extremely unsure-->
+            </translation> 
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Geometria[e] eiu[s] no[min]em tum ad res terrenas dimetiendas
+                        convenit, qualia n[ost]ra pura ars no[n] tractat 
+                        sed
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>διανοητά</marginalia_text> <!-- διανοητά = what is conceivable, what is thinkable-->
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>tantum, tum a[e]que bene
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>ουρανομετρια</marginalia_text> <!-- οὐρανομετρία is a very rare compound, not classical, meaning "the measure of the sky", paralleling the etymology of geo-metry-->
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        dici potuisset qua[m] geometria
+                        [a]eque eiu[s] in ca[e]lestu[m] corporu[m] magnitudinibus
+                        et intervallis dimetiend[is] occupatur, ac [...]
+                        motu[m] siue Arear[um]: vnde partis nome[n] est
+                        no[n] totius artis: Modo ad sensibilia descendere,
+                        artis esse p[ro]prium daremus: vnde cum re[s]
+                        ad sensibilia descende[re]t, et amplior sit, qua[m]
+                        dictiona[e] illa geometria[e] significari possit
+                        de alio erat cogitandu[m] no[m]i[n]e convenientur.
+                        Illud aute[m] si sit Megethoscopica[e], vel tale
+                        quid, animo philosophantes examinand[o] retiquo
+                        Hoc eiu[s] nomen materia[m] huius artis p[ro]priu[m]
+                        pra[e]cipuu[m]q[ue] artis fine denotat.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <numeral place="full_page">1942</numeral>
+        
+    </annotation>
+</transcription>

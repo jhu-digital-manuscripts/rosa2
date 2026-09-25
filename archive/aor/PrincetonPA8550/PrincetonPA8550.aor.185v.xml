@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA8550.185v.tif" pagination="370" reader="Harvey" signature="[aiv]"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text> 
+                        I. vtile.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                I. Useful.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="chalk" text="potuis quaedam fragmenta atrium circumferre" type="straight"/>
+        <underline language="LA" method="chalk" text="quaestus" type="straight"/>
+        <underline language="LA" method="chalk" text="ut popularem opinionem" type="straight"/>
+        <underline language="LA" method="chalk" text="causis mutationum," type="straight"/>
+        <underline language="LA" method="chalk" text="non solum animantium," type="straight"/>
+        <underline language="LA" method="chalk" text="sed etiam ciuitatum &amp; imperiorum" type="straight"/>
+        <underline language="LA" method="chalk" text="officiorum" type="straight"/>
+        <underline language="LA" method="chalk" text="de numeris" type="straight"/>
+        <underline language="LA" method="chalk" text="mensuris" type="straight"/>
+        <underline language="LA" method="pen" text="Thraces quosdam" type="straight"/>
+        
+        <mark method="chalk" name="quotation_mark" place="left_margin"/>
+        <mark method="chalk" name="horizontal_bar" place="left_margin"/>
+        <mark method="chalk" name="quotation_mark" place="left_margin"/>
+        <mark method="chalk" name="plus_sign" place="left_margin"/>
+        <mark method="chalk" name="plus_sign" place="left_margin"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/> <!--Repub.-->
+        
+        
+    </annotation>
+</transcription>

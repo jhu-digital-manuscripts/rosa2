@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.220r.tif" pagination="213" reader="John Dee" signature="HH"/>
+    <annotation>
+        
+        <marginalia anchor_text="Principium eorum quae à casu contingu[n]t" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Principiu[m] eorum qu[a]e a casu contingunt. //</marginalia_text> 
+                </position>
+            </language>
+            <translation>Of those principles which are produced by change.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>☿ igitur et ♀ ☉is sunt stipatores et per se in vit[a]e cursa, parvi momenti /.</marginalia_text>
+                    <symbol_in_text name="Mercury"/>
+                    <symbol_in_text name="Venus"/>
+                    <symbol_in_text name="Sun"/>
+                </position>
+            </language>
+            <translation>Therefore Mercury and Venus are the satellites of the Sun and through themselves in charge of life, for a short moment.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Delectatio est in his quae iuxta Venerem sunt" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Delectatio à ♀</marginalia_text>
+                    <symbol_in_text name="Venus"/>
+                </position>
+            </language>
+            <translation>Delight by Venus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="morbo" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Morbus</marginalia_text>
+                </position>
+            </language>
+            <translation>Disease.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>vide supra, fol. 82. a.v.</marginalia_text>
+                    <internal_ref>
+                        <target prefix=". " ref="RCP7134:183" suffix=".v." text="a"/>
+                        <target prefix="a." ref="RCP7134:184" suffix="." text="v"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See above, folio 82 [a?] [and] verso.</translation> <!--JG: Unsure about the 'a' here?? Seems to refer to 'recto'--> 
+            <!-- FSF: maybe it is just to indicate where on the page? sometimes letters were used to indicate the apoximate place -->
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Quasi [morbi - deleted] vires sint semp[er] vel a ♄ vel ♂</marginalia_text>
+                    <symbol_in_text name="Saturn"/>
+                    <symbol_in_text name="Mars"/>
+                </position>
+            </language>
+            <translation>As if powers always are from Saturn or Mars.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in anima" type="straight"/>
+        <underline language="LA" method="pen" text="no[n] in his quae à natura sunt" type="double"/>
+        <underline language="LA" method="pen" text="lapidibus" type="straight"/>
+        <underline language="LA" method="pen" text="reuolutionis, iuxta directionem lunarem" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="slash" place="intext"/> <!--JG: after ascendens-->
+        <mark method="pen" name="bracket" place="right_margin"/> 
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <errata amendedtext="[deleted]" copytext="," language="LA"/>
+        <errata amendedtext="[deleted]" copytext="," language="LA"/>
+        <errata amendedtext="[deleted]" copytext="," language="LA"/>
+        <errata amendedtext="[deleted]" copytext="," language="LA"/>
+        <errata amendedtext="[deleted]" copytext="," language="LA"/>
+        
+    </annotation>
+</transcription>

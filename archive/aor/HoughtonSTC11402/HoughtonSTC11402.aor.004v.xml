@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.004v.tif" reader="Harvey" signature="[Av[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="90" place="left_margin">
+                    <marginalia_text>Nulla Culpa, aut mora, in Meipso esse debet, ullo uel minimo Tempore: Etiam Externi
+                    defectus, omni modo curiosissimè supplendi. Mearu[m] maximaru[m] maxima; ascripta Galateo.
+                    { Aut Tacendu[m], aut loquendu[m] meliora: Aut non mouendu[m], aut promouendum. Utrinq[ue] Vincenti gloria Victi.</marginalia_text>
+                    <book title="Galateo: The Rules of Polite Behavior"/>
+                    <X-ref book_title="The Shepheardes Calender" language="LA" person="Edmund Spenser" text="Utrinq[ue] Vincenti gloria Victi."/>
+                </position>
+            </language>
+            <translation>There ought to be not faults or obstacles in myself in any or in the least time: nevertheless external defects are most
+            curiously supplied in any way. The greatest of my greatests; inserted in Galateo.
+            Either passing over or mentioning better things: Either not stirring or moving forward [better things]. Either way, "the glory of the defeated goes to the conqueror."</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Fortune bearith A great swey in fower things: In Marriages: in [the] fauours of princes: in Warres: &amp; in
+                    nauigation.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Fower main chances.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Fortuna fortes metuit: ignauos premit:
+                    Seneca in Medea. Intrepida constent uerba: qui ti[m]idè rogat, docet negare: Ide[m] in Hippolito.
+                    Prudentia sibi serua reddit omnia. Menander.</marginalia_text>
+                    <person name="Seneca"/>
+                    <person name="Menander"/>
+                    <book title="Medea"/> <!--JG: Part of his tragedies, so tag as such instead of as Medea?-->
+                    <book title="Phaedra"/>
+                </position>
+            </language>
+            <translation>"Fortune fears the brave, overwhelms the cowards". Seneca in 'Medea'. "Fearless be thy words, and firm; who makes timid request, invites denial." [Frank Justus Miller, 'The tragedies of Seneca']
+            The same author in Hippolito. 
+            Prudence renders all slaves to themselves. Menander.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="the senses of our body" type="straight"/>
+        <underline language="EN" method="pen" text="also the powers of oure mynde decay, and go to ruine, onles" type="straight"/>
+        <underline language="EN" method="pen" text="dayly refresshed and holpen" type="straight"/>
+        <underline language="EN" method="pen" text="eie" type="straight"/>
+        <underline language="EN" method="pen" text="clere lyghte" type="straight"/>
+        <underline language="EN" method="pen" text="the smel" type="straight"/>
+        <underline language="EN" method="pen" text="taste asketh" type="straight"/>
+        <underline language="EN" method="pen" text="wytte" type="straight"/>
+        <underline language="EN" method="pen" text="vnderstandynge" type="straight"/>
+        <underline language="EN" method="pen" text="Memorie" type="straight"/>
+        <underline language="EN" method="pen" text="Inuention" type="straight"/>
+        <underline language="EN" method="pen" text="with continuance of redynge" type="straight"/>
+        <underline language="EN" method="pen" text="herynge, and" type="straight"/>
+        <underline language="EN" method="pen" text="reasonynge of mattiers" type="straight"/>
+        <underline language="EN" method="pen" text="ware rustye, they" type="straight"/>
+        <underline language="EN" method="pen" text="canker" type="straight"/>
+        <underline language="EN" method="pen" text="a tyme" type="straight"/>
+        <underline language="EN" method="pen" text="peace" type="straight"/>
+        <underline language="EN" method="pen" text="of warre" type="straight"/>
+        <underline language="EN" method="pen" text="occasyons" type="straight"/>
+        <underline language="EN" method="pen" text="matters" type="straight"/>
+        <underline language="EN" method="pen" text="thoughte vppon" type="straight"/>
+        <underline language="EN" method="pen" text="place" type="straight"/>
+        <underline language="EN" method="pen" text="Tyme maketh euyl thynges" type="straight"/>
+        <underline language="EN" method="pen" text="with good, but good also" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="hash" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="EN" method="pen" name="X_sign" place="right_margin" text="with continuance of redynge"/>
+        <mark method="pen" name="X_sign" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="the senses of our body"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="dayly refresshed and holpen"/>
+        <mark method="pen" name="dot" place="intext"/> <!--colours, the-->
+        <mark method="pen" name="dot" place="intext"/> <!--delectable, the-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="with continuance of redynge"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="occasyons"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Tyme maketh euyl thynges"/>
+        
+    </annotation>
+</transcription>

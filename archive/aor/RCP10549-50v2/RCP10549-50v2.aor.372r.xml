@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.372r.tif" pagination="195" reader="John Dee" signature="Nn.ii."/>   
+    <annotation>
+        
+        <marginalia anchor_text="claudicatio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        claudicatio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Limping.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ne fando quide[m] auditum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        ne fando quide[m] auditu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Not that I speak listening. <!-- FSF: not sure -->
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Cotta
+                    </marginalia_text>
+                    <person name="Gaius Aurelius Cotta"/>
+                </position>
+            </language>
+            <translation>
+                Gaius Aurelius Cotta.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        academicus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Academic.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pictores, fictorésque" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Pictores. fictores.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Painter, maker.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="barbaria" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Barbaria
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Foreign land.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Barbaroru[m] co[n]sta[n]tia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Steadiness of barbarians.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fana multa expoliata, &amp; simulacra deorum de locis sanctissimis ablata" date="1547" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        fama multa expoliata, &amp; simulachra deorum de locis sa[n]ctiss[imis] ablata ego hodie vidi 1547
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Today I saw much fame plundered and images of gods removed from most sacred places, 1547.
+            </translation>
+        </marginalia>
+        
+        <marginalia date="Sospitam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Sospita
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Female preserver.
+            </translation>
+        </marginalia>
+        
+        <marginalia date="Argia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Argia
+                    </marginalia_text>
+                    <person name="Argia of Argos"/>
+                </position>
+            </language>
+            <translation>
+                Argia of Argos.
+            </translation>
+        </marginalia>
+        
+        <marginalia date="Iuno" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Iuno
+                    </marginalia_text>
+                    <person name="Juno"/>
+                </position>
+            </language>
+            <translation>
+                Juno.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="physicum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Physicus natura[e] venator.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Natural philosopher is a hunter of nature.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iouem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Juppiter
+                    </marginalia_text>
+                    <person name="Jupiter"/>
+                </position>
+            </language>
+            <translation>
+                Jupiter.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Apollnem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Apollo
+                    </marginalia_text>
+                    <person name="Apollo"/>
+                </position>
+            </language>
+            <translation>
+                Apollo.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vulcanum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Vulcanus claudicans
+                    </marginalia_text>
+                    <person name="Vulcan"/>
+                </position>
+            </language>
+            <translation>
+                A wavering Vulcan.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="deos facimus, quibus à nobis nominantur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Deorum nomina
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The names of the gods.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Not as you ar euerie where [that] you come cald Velleius, so [et]c
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Quid enim attinet quum vna facies sit, plura esse nomina?" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Quum vna facies sit, quid attinet eße plura nomina deoru[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                'since what is the point of more names when they are all exactly alike' [LCL 268:80-81].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aut luna[m], aut coelu[m] deum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ☉ ☾ nec co[e]lum Dij sunt.
+                    </marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>
+                The sun and moon are no gods of the sky.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Epicuri
+                    </marginalia_text>
+                    <person name="Epicurus"/>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        κυριαὶ δόξαι
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The lordly doctrines of Epicurus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ambigue" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ambiguitas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Ambiguity.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="morte" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mors an res terribilis?
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Whether death is a terrible thing.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Qua[e]rit apertè causas sibi rece[n]teri cur sydera dij esse no[n] possint
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                He apparently searches for reasons to examine why stars cannot be gods.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sol" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Solis motus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The movement of the sun.
+            </translation>
+        </marginalia>
+
+        <marginalia anchor_text="Quid solis, nu[m]quidnam aut lunae, aut quinque erra[n]tium syderum simile vidisti" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ☾ ☌ ... cu[m] ☉ <!-- FSF: not sure about the third symbol or word -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Moon in conjunction with ... 
+            </translation>
+        </marginalia>
+
+        <marginalia anchor_text="sigilla numerantes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Sigilla munerare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To present seals.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="reliquos deos ea facie nouimus qua pictores, fictorésque voluerunt: neque solum facie, sed etiam ornatu, aetate, vestitu: At" type="straight"/>
+        <underline language="LA" method="pen" text="de bestiis quibusdam, quàm apud nos de sanctissimis templis &amp; simulacris deorum" type="straight"/>
+        <underline language="LA" method="pen" text="vero ne fando quide[m] auditum" type="straight"/>
+        <underline language="LA" method="pen" text="calceolis repandis" type="straight"/>
+        <underline language="LA" method="pen" text="speculatorem, venatorémque naturae, ab animis consuetudine imbutis petere" type="straight"/>
+        <underline language="LA" method="pen" text="in quo stante atque vestito, leuiter apparet claudicatio non deformis" type="straight"/>
+        <underline language="LA" method="pen" text="Quàm bellum erat Vellei confiteri potius nescire quod nescires, quàm ista effutientem nauseare, atque ipsum sibi displicere?" type="straight"/>
+        <underline language="LA" method="pen" text="Quî potest esse in eiusmodi trunco sapie[n]tia" type="straight"/>
+        <underline language="LA" method="pen" text="omnia sigilla numerantes" type="straight"/>
+        <underline language="LA" method="pen" text="verbis reliquisse deos, re sustulisse" type="straight"/>
+        <underline language="LA" method="pen" text="animaduertunt, hic eum ambigue locutum esse" type="straight"/>
+        <underline language="LA" method="pen" text="milia latrocinantur morte proposita" type="straight"/>
+        <underline language="LA" method="pen" text="possunt fana compilant" type="straight"/>
+        <underline language="LA" method="pen" text="inlustrationem eiusdem incensa radiis me[n]struo spatio luna co[m]plet" type="straight"/>
+        <underline language="LA" method="pen" text="orbem tenentes, aliae propius à terris, aliae remotius, ab eisdem principiis, disparibus te[m]poribus eadem spatia co[n]ficiunt" type="straight"/>
+        
+        <symbol name="Unidentified" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol language="LA" name="Saturn" place="right_margin" text="Quinque autem stellae"/>
+        <symbol language="LA" name="Mars" place="right_margin" text="Quinque autem stellae"/>
+        <symbol language="LA" name="Jupiter" place="right_margin" text="Quinque autem stellae"/>
+        <symbol language="LA" name="Mercury" place="right_margin" text="Quinque autem stellae"/>
+        <symbol language="LA" name="Venus" place="right_margin" text="Quinque autem stellae"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">21</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing anchor_text="Barbaria" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="Sospita" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="Iuno" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="Solis motus" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.023v.tif" reader="John Dee" signature="[Fiiij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="misthauffen" hand="Italian" method="pen">  
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>supr[a] tractatu 3 cap. 6 et 8.</marginalia_text>
+                    <internal_ref>
+                        <target ref="NYSLWin189:00000036" text="6"/>
+                        <target ref="NYSLWin189:00000037" text="8"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See above in treaty 3, chapters 6 and 8.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nitrische" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nitri virtus</marginalia_text>
+                </position>
+            </language>
+            <translation>The property of alkalis.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="salibus carnis" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Salia carnis</marginalia_text>
+                </position>
+            </language>
+            <translation>Salts of the flesh.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="realger fixo" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Realgar fixu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Fixed realgar.</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ce[n]tru[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>The centre.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="in superficie fleche der Globel" type="straight"/>
+        <underline language="DE" method="pen" text="misthauffen" type="double"/>
+        <underline language="DE" method="pen" text="durch feule" type="double"/>
+        <underline language="DE" method="pen" text="hitz empfacht" type="double"/>
+        <underline language="DE" method="pen" text="ein nitrum" type="double"/>
+        <underline language="DE" method="pen" text="dem erdtschwebel" type="double"/>
+        <underline language="DE" method="pen" text="nitrische" type="straight"/>
+        <underline language="DE" method="pen" text="auß" type="triple"/>
+        <underline language="DE" method="pen" text="auff der ban ist dergleichen zů fürderen das böß so zů bösem geschickt ist darin" type="straight"/>
+        <underline language="DE" method="pen" text="schnelwag" type="double"/>
+        <underline language="LA" method="pen" text="salibus" type="straight"/>
+        <underline language="LA" method="pen" text="carnis" type="double"/>
+        <underline language="DE" method="pen" text="stipticitet" type="triple"/>
+        <underline language="DE" method="pen" text="serpentinischer" type="straight"/>
+        <underline language="DE" method="pen" text="realger fixo" type="straight"/>
+        
+        <mark language="DE" method="pen" name="bracket" place="left_margin" text="auff der ban ist dergleichen zů fürderen das böß so zů bösem geschickt ist darin"/>
+        
+        <drawing anchor_text="auff der ban ist dergleichen zů fürderen das böß so zů bösem geschickt ist darin" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+   
+    </annotation>
+</transcription>

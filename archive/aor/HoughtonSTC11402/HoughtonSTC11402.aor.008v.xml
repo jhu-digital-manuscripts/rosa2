@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.008v.tif" reader="Harvey" signature="[A[iv]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>A deep, &amp; profound politique, no way possible, to be vndermined, or pumped dry, of sounded to the depth.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Syphax" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Numidaru[m] Rex: de quo multa Liuius.</marginalia_text>
+                    <book title="Ab Urbe Condita"/>
+                </position>
+            </language>
+            <translation>The king of the Numidians: much about whom in Livy.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="90" place="left_margin">
+                    <marginalia_text>Secrecy, on of [the] souerainest Rules, of Vegetius Rules: &amp; therfore more then once, of twise
+                        repeatid, in that breife sententious chapter.
+                  </marginalia_text>
+                    <book title="De re Militari"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="270" place="left_margin">
+                    <marginalia_text>Fons omniu[m] Strategematu[m], secretus, et intricatus procedendi modus, multis Technarum ambagibus implicitus.
+                        Nam simplicia Strategemata rarò succedunt: Composita,
+                        ipsos maximè fallentes, fallu[n]t maximè. Vulpis pera, dolis referta.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The source of all stratagems: a secret and complex way of proceeding, obscured by many ambiguities of 
+            cunning tricks. For simple stratagems rarely succeed: composite ones deceive them greatly, they deceive greatly. The bag of the fox, stuffed with tricks. </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Malo nodo, malus qua[e]rendus Cuneus.</marginalia_text>
+                    <X-ref book_title="Epistles" language="LA" person="Jerome" text="Malo nodo, malus quaerendus cuneus."/>
+                </position>
+            </language>
+            <translation>"For a bad knot, a bad wedge must be found."</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Eueryman reddy to interteine intelligence, &amp; to mainteine discourse: but how few
+                    meet, to reteine counsel, or to conceale matters of Secrecy?</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="Hamilcar capytayne" type="straight"/>
+        <underline language="EN" method="pen" text="tables sealed" type="straight"/>
+        <underline language="EN" method="pen" text="by force of tempest" type="straight"/>
+        <underline language="EN" method="pen" text="from the course of the ammyrall shyp" type="straight"/>
+        <underline language="EN" method="pen" text="to Syphax, to" type="straight"/>
+        <underline language="EN" method="pen" text="wysely espye and serche out the" type="straight"/>
+        <underline language="EN" method="pen" text="slaues, certayne" type="straight"/>
+        <underline language="EN" method="pen" text="his chiefe capytaynes" type="straight"/>
+        <underline language="EN" method="pen" text="Statorius" type="straight"/>
+        <underline language="EN" method="pen" text="a staffe" type="straight"/>
+        <underline language="EN" method="pen" text="lyke a slaue" type="straight"/>
+        <underline language="EN" method="pen" text="the chiefe of the Gabiens were slayne" type="straight"/>
+        <underline language="EN" method="pen" text="commit to no" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="by force of tempest"/>
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="Numidaru[m] Rex: de quo multa Liuius."/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="from the course of the ammyrall shyp"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Syphax"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="wysely espye and serche out the"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="were slayne"/>
+        
+        <mark method="pen" name="plus_sign" place="tail"/>
+        
+    </annotation>
+</transcription>

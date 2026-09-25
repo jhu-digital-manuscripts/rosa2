@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.012r.tif" pagination="12" reader="John Dee" signature="Biiij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Pythagoras" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Pythagoras
+                    </marginalia_text>
+                    <person name="Pythagoras"/>
+                </position>
+            </language>
+            <translation>
+                Pythagoras.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="totu[m] orbem septe[m] soli fueru[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="Pythagoras Samius, qui plus omnibus alijs in Mathematicis" type="straight"/>
+        <underline language="LA" method="pen" text="in morale[m]" type="straight"/>
+        <underline language="LA" method="pen" text="naturale[m]" type="straight"/>
+        <underline language="EL" method="pen" text="λογική" type="straight"/>  
+        <underline language="LA" method="pen" text="Haec est scie[n]tia quae cognoscit reru[m] causas &amp; principia, tam diuinaru[m] quàm humanaru[m], qua[n]tu[m] humano intellectu capi potest" type="straight"/>
+
+    </annotation>
+</transcription>

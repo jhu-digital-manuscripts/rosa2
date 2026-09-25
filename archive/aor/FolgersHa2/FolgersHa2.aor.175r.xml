@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.175r.tif" pagination="173" reader="Harvey" signature="[L7r]"/>	<!-- ABO 179right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Nondùm Ars venit in mundum: Extat
+						modò quiddam artificiale.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Art has not yet come into the world: a certain thing stands out in an artificial manner.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Nondu[m] Ille Prouidus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>He is not yet prophectic.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						{ Idem dico de Virtute, quod de Arte
+						nondum venit in mundu[m].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Likewise I say about virtue, what I say about art. It has not yet come into the world.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Noua Creatura, Virtus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Virtue, a new creature.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						risoluto.	
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Resolute.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						) Neotechnia, et Neopraxia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>New skills and new praxis.</translation> <!--CG: Neologisms-->
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Excipe Euangelium: et quid est dignum admiratione?
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Follow the Gospel: and what is worthy of admiration?</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Piu Oltre: di Carlo Quinto.
+					</marginalia_text>
+					<person name="Charles V"/>
+				</position>
+			</language>
+			<translation>Much further than Charles V.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Sapere,
+						humanu[m] est: tempestiue, heroicu[m]: maturè, diuinum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>To understand is human: to understand timely is heroic: to understand maturely is divine.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Tardè procedit frigideq[ue] proficit qua[e]uis Genesis, aut Analysis, seu co[m]munis,						
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						seu propria; qua[e] non est aphoristica; et "
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						" et quasi virgo nuda; sine omnibus vestium ornamentis, id est, impedimentis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Whatever creation or analysis of things (whether public or private) advances slowly and proceeds indifferently, when it is is not aphoristic; and, it is like a bare virgin, without
+			all ornaments of clothes, that is, without impediments.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Singula ordine disposita: omnia confestim expedita. tam maturimè, quàm celerrimè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Singular things managed by order: everything obtained immediately. Both most maturely and quickest.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="mai passaggieri, che la naue non sia carica" type="straight"/>
+		<underline language="IT" method="pen" text="anco non si puo dolere" type="straight"/>
+		<underline language="IT" method="pen" text="officio di sauio" type="straight"/>
+		<underline language="IT" method="pen" text="premeditare il futuro" type="straight"/>
+		<underline language="IT" method="pen" text="tolerar constantemente" type="straight"/>
+		<underline language="IT" method="pen" text="voglia accidente" type="straight"/>
+		<underline language="IT" method="pen" text="l'officio del sauio" type="straight"/>
+		<underline language="IT" method="pen" text="premeditare" type="straight"/>
+		<underline language="IT" method="pen" text="accommodare l'animo à tutto quello" type="straight"/>
+		<underline language="IT" method="pen" text="puo venire allhuomo" type="straight"/>
+		<underline language="IT" method="pen" text="gran prudenza" type="straight"/>
+		<underline language="IT" method="pen" text="il preueder che mal nessuno non" type="straight"/>
+		<underline language="IT" method="pen" text="minor animo" type="straight"/>
+		<underline language="IT" method="pen" text="tollerar costantemente quello che" type="straight"/>
+		<underline language="IT" method="pen" text="molte cose dissimulare" type="straight"/>
+		<underline language="IT" method="pen" text="pensar" type="straight"/>
+		<underline language="IT" method="pen" text="aspettar" type="straight"/>
+		<underline language="IT" method="pen" text="antiuedere" type="straight"/>
+		<underline language="IT" method="pen" text="vari casi, &amp; li praui accidenti" type="straight"/>
+		<underline language="IT" method="pen" text="sempremai lieti, &amp; contenti" type="straight"/>
+		<underline language="IT" method="pen" text="gli saetta" type="straight"/>
+		<underline language="IT" method="pen" text="All'improuiso" type="straight"/>
+		<underline language="IT" method="pen" text="ambitione" type="straight"/>
+		<underline language="IT" method="pen" text="impedire la quiete" type="straight"/>
+		<underline language="IT" method="pen" text="doma[n]da[n]dolo Cinea filosofo molto" type="straight"/>
+		<underline language="IT" method="pen" text="se egli i Romani superasse" type="straight"/>
+		<underline language="IT" method="pen" text="noi ci faremo signore di tutta Italia" type="straight"/>
+		<underline language="IT" method="pen" text="acquistassimo Italia" type="straight"/>
+		<underline language="IT" method="pen" text="che" type="straight"/>
+		<underline language="IT" method="pen" text="quella fruttifera" type="straight"/>
+		
+		<symbol language="IT" name="SS" place="intext" text="voglia accidente"/>
+		<symbol language="IT" name="SS" place="intext" text="sempermai lieti, &amp; contenti"/>
+		
+		<mark method="pen" name="quotation_mark" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!-- futu -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- pre -->
+		<mark method="pen" name="plus_sign" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!-- so -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- co[n] -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Si -->
+		
+		<mark method="pen" name="plus_sign" place="intext"/>
+		
+    </annotation>
+</transcription>

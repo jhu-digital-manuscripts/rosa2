@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.104r.tif" pagination="30" reader="Harvey" signature="[B8r]"/>	<!-- ABO 108right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						{ Mera Entelechia: aut pura Ironia: Jouialis
+						Orthopa[e]dia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Pure Actualization, or pure Irony. Jovial orthopedia.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						( Vnica mundi disciplina. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The one training of the world.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						peritè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Expertly.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Est
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						operatio
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						in
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						omnibus, qua[e] 
+						desiderat anima forti desiderio.
+						Albertus
+					</marginalia_text>
+					<person name="Albertus Magnus"/>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						de Mirabilibus.
+					</marginalia_text>
+					<person name="Albertus Magnus"/>
+					<book title="De mirabilibus mundi"/>
+				</position>
+			</language>
+			<translation>
+				It is activity in all things which the soul desires with a strong desire.
+				Albert the Great, On the Wonders of the World.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Vana est cogitatio sine effectu.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Reasoning without execution is vain.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Qui vult frui Fortuna, debet vti Animo, et Corpore.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				He who wishes to enjoy Fortune must make use of his mind and body.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Principia pauca: Sententia[e] multa[e]: exempla infinita.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Principles are few, opinions are many, examples are infinite.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Qui vult sibi satisfacere, debet alijs satagere.					
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				He who wishes to satisfy himself must busy himself with others.
+			</translation>
+		</marginalia>
+
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Axiophili expedita Fortuna. Totum habet in sese, qui sese habet integer ipsum:
+						Plena, potensq[ue] Tui possessio, Copia[e] abundè.
+					</marginalia_text>
+					<person name="Axiophilus"/>
+				</position>
+			</language>
+			<translation>
+				The ready fortune of Axiophilus. He who possesses his entire self, possesses the whole in himself.
+				The full and powerful possession of yourself is an abundance of resources.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Donatello gratiatamente" type="straight"/>
+		<underline language="IT" method="pen" text="fatta questa" type="straight"/>
+		<underline language="IT" method="pen" text="in meno d'vn mese" type="straight"/>
+		<underline language="IT" method="pen" text="esser mio scolare" type="straight"/>
+		<underline language="IT" method="pen" text="piu di sei mesi" type="straight"/>
+		<underline language="IT" method="pen" text="argutamente della" type="straight"/>
+		<underline language="IT" method="pen" text="tassando l'emulo d'insuffitienza" type="straight"/>
+		<underline language="IT" method="pen" text="virtù sua, meritamente" type="straight"/>
+		<underline language="IT" method="pen" text="La perdita della" type="straight"/>
+		<underline language="IT" method="pen" text="acquisto d'honore" type="straight"/>
+		<underline language="IT" method="pen" text="giorno nuoue" type="straight"/>
+		<underline language="IT" method="pen" text="come la sua naue, dou'egli" type="straight"/>
+		<underline language="IT" method="pen" text="perita in alto Mare" type="straight"/>
+		<underline language="IT" method="pen" text="non punto alterato" type="straight"/>
+		<underline language="IT" method="pen" text="asserenato il volto" type="straight"/>	
+		<underline language="IT" method="pen" text="ringratio Fortuna che tu" type="straight"/>
+		<underline language="IT" method="pen" text="filosofia, esercitio" type="straight"/>
+		<underline language="IT" method="pen" text="Sceleratissimi affetti" type="straight"/>
+		<underline language="IT" method="pen" text="dalla libidine" type="straight"/>
+		<underline language="IT" method="pen" text="SEMIRAMIS" type="straight"/>
+		<underline language="IT" method="pen" text="scettro solamente vn giorno" type="straight"/>
+		<underline language="IT" method="pen" text="ammazzar il marito" type="straight"/>
+		<underline language="IT" method="pen" text="occupato il" type="straight"/>
+		<underline language="IT" method="pen" text="sfrenata libidine" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="meno d'vn mese" type="straight"/>
+		<underline language="IT" method="pen" text="piu di sei mesi" type="straight"/>
+		
+		<symbol name="Asterisk" place="left_margin"/>
+		
+		<symbol name="SS" place="right_margin"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--huo-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--vol-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--stan-->
+		
+		<mark method="pen" name="dot" place="intext"/> <!--mese, ma-->
+		<mark method="pen" name="dot" place="intext"/> <!--insuffitienza, &-->
+		<mark language="IT" method="pen" name="plus_sign" place="right_margin" text="filosofia, esercitio"/> 
+		
+    </annotation>
+</transcription>

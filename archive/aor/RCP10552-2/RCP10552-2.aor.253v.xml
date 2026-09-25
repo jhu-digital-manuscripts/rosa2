@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.253v.tif" pagination="24" reader="John Dee" signature="[C.iiij[v]]"/> 
+    <annotation>
+         
+        <marginalia anchor_text="Robertum vtriusq[ue] auunculum, Normannorum vi[delicet] Archipresulem" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Robertus Archiep[iscop]us Rotomagensis Avunculus Richardi et Alani</marginalia_text> 
+                    <person name="Robert II, Archbishop of Rouen"/>
+                    <person name="Richard III, Duke of Normandy"/>
+                    <person name="Alan III"/>
+                </position>
+            </language>
+            <translation>Robert, Archbishop of Rouen, the uncle of Richard and Alan.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="eis Gulielmum filium suum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Gulielmus Conques[tor] Roberti istius filius naturalis</marginalia_text>
+                    <person name="William the Conqueror"/>
+                    <person name="Robert I, Duke of Normandy"/>
+                </position>
+            </language>
+            <translation>William the Conqueror the natural son of this Robert.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="1034" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A[nn]o 1034</marginalia_text>
+                </position>
+            </language>
+            <translation>In the year 1034.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Gulielmus Roberti ducis filius Roberto successit" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Gulielmus Dux N[orthmanniae]</marginalia_text>
+                    <person name="William the Conqueror"/>
+                    <person name="Robert I, Duke of Normandy"/>
+                </position>
+            </language>
+            <translation>William, Duke of Normandy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hugone montis fortis cum Walchelino" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hugo montis fortis. Walchelinus.</marginalia_text>
+                    <person name="Hugh de Montfort"/>
+                    <person name="Walchelin de Ferriers"/>
+                </position>
+            </language>
+            <translation>Hugh de Montfort. Walchelin.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tutor ipsius pueri, scilicet domini, Occensis siquidem Comes Gislebertus" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Gislebertus Comes occensis. Tutor Gulielmi Ducis N[orthmanniae]</marginalia_text>
+                    <person name="Gilbert, Count of Brionne"/>
+                    <person name="William the Conqueror"/>
+                </position>
+            </language>
+            <translation>Gilbert, Count of Eu. Tutor of William, Duke of Normandy.</translation>   <!-- DO: Not completely sure about Eu for Occensis - it might actually refer to the region Eure, but as he was Count of Eu this is how I've translated it -->
+            <!-- FSF: not sure either -->
+        </marginalia>
+   
+        <marginalia anchor_text="" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>vasselin</marginalia_text>     <!-- DO: Not sure what this is -->
+                    <!-- FSF: there is a little French village called vasselin; but it is not in Normandy nor anywhere near that concerns this bit, as far as I can see https://www.google.co.uk/maps/place/38890+Vasselin,+France/@45.6293502,5.4328765,14z/data=!3m1!4b1!4m5!3m4!1s0x478b3b5649edc305:0x408ab2ae4be6430!8m2!3d45.631122!4d5.453654 -->
+                    <emphasis method="pen" text="vasselm" type="straight"/>
+                </position>
+            </language>
+            <translation/>
+        </marginalia>
+        
+        <marginalia anchor_text="Walchelino" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Walchelinus D[omi]n[u]s de Ferieres lib[er] gall[icus]</marginalia_text>   <!-- DO: Liber Gallicus reference needed -->
+                    <person name="Walchelin de Ferriers"/>
+                    <emphasis method="pen" text="Walchelinus" type="straight"/>
+                </position>
+            </language>
+            <translation>Baron Walchelin de Ferriers. The French book.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Occensis siquidem Comes Gislebertus non multo post perimitur" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Gislebertus Comes occensis, perimitur.</marginalia_text>
+                    <person name="Gilbert, Count of Brionne"/>
+                </position>
+            </language>
+            <translation>Gilbert, Count of Eu, is killed.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Robertum vtriusq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="Archipr[a]esulem" type="straight"/>
+        <underline language="LA" method="pen" text="pacta fidelitate" type="double"/>
+        <underline language="LA" method="pen" text="reddere filijs, &amp; haeredi" type="straight"/>
+        <underline language="LA" method="pen" text="peregrinatione[m] diu optauerat" type="straight"/>
+        <underline language="LA" method="pen" text="Archiepiscopo Rhotomagensi" type="straight"/>
+        <underline language="LA" method="pen" text="eis Gulielmum filium" type="straight"/>
+        <underline language="LA" method="pen" text="tenerrima detineretur aetate" type="straight"/>
+        <underline language="LA" method="pen" text="pangentes illi fidelitatem inuiolandis sacramentis" type="straight"/>
+        <underline language="LA" method="pen" text="ad Nicenam" type="straight"/>
+        <underline language="LA" method="pen" text="1034" type="straight"/>
+        <underline language="LA" method="pen" text="Hugone montis" type="straight"/>
+        <underline language="LA" method="pen" text="Walchelino" type="straight"/>
+        <underline language="LA" method="pen" text="tutor ipsius pueri" type="straight"/>
+        <underline language="LA" method="pen" text="Occensis" type="straight"/>
+        <underline language="LA" method="pen" text="Comes Gislebertus non multo post" type="straight"/>
+        <underline language="LA" method="pen" text="perimitur" type="double"/>
+        <underline language="LA" method="pen" text="Turoldus" type="straight"/>
+        <underline language="LA" method="pen" text="Osbernus" type="straight"/>
+        <underline language="LA" method="pen" text="Cnuto ducem instituit haredem regni" type="straight"/>
+        <underline language="LA" method="pen" text="Dux peregrinatur ad Hierosolymas" type="straight"/>
+        <underline language="LA" method="pen" text="Roberti mors" type="straight"/>
+
+        <!-- DO: I think there's some sort of mark between 'atrocem. enarrasset'? (line 4)-->
+      
+        <mark method="pen" name="circumflex" place="intext"/>
+        
+        <errata amendedtext="[deleted]" copytext="ducem" language="LA"/>
+        <errata amendedtext="Angelis" copytext="Anglis" language="LA"/>
+        <errata amendedtext="immemor" copytext="immemór" language="LA"/>
+        
+    
+    </annotation> 
+</transcription>

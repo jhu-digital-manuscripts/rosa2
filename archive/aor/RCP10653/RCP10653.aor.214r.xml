@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.214r.tif" pagination="419" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="toto honore" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Honores istos Co[n]sidera
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Consider these honours.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Reginam quoque Editham" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Editha Regina
+                    </marginalia_text>
+                    <person name="Edith of Wessex"/>
+                </position>
+            </language>
+            <translation>
+                Queen Edith of Wessex.       
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Redvvellam" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        Redwella Abbathia.       
+                    </marginalia_text>
+                <location name="Wherwell Abbey"/>
+                </position>
+            </language>
+            <translation>
+                Redwell Abbey
+                <!-- FSF: not sure what or where Redwella is -->    <!-- DO: I don't know either. My only suggestion is Redhill as it's near Reigate which seems to have an Edward the Confessor connection, really not sure though. 'Abbathia' perhaps 'Abbey'? -->
+                <!-- FSF: mabe this is Hereford Cathedral? there is a connection to Edward the confessor (https://en.wikipedia.org/wiki/Hereford_Cathedral) and the text talks about Hereford -->
+                <!-- NBW: ODNB gives a location for this story as Wherwell Abbey, Hampshire, Luard's edition notes this without comment. I've tagged Wherwell as the place but left Dee's translation -->
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Marianus Scotus" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Marianus Chronographus veracissim[us]
+                    </marginalia_text>
+                    <person name="Marianus Scotus"/> 
+                </position>
+            </language>
+            <translation>
+                Marianus Scotus, the most truthful chronicler.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="toto honore comitatus sui, scilicet" type="straight"/>
+        <underline language="LA" method="pen" text="Cantia" type="straight"/>
+        <underline language="LA" method="pen" text="Suthsaxonia" type="straight"/>
+        <underline language="LA" method="pen" text="VVestsaxonia" type="straight"/>
+        <underline language="LA" method="pen" text="Svvanus" type="straight"/>
+        <underline language="LA" method="pen" text="Haraldus" type="straight"/>
+        <underline language="LA" method="pen" text="Comitem Eustachium, cum socijs suis, sub denuntiatione belli sibi reddi ma[n]dauit" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; sine eius licentia" type="straight"/>
+        <underline language="LA" method="pen" text="pariturus nolebat" type="straight"/>
+        <underline language="LA" method="pen" text="ipsum Godvvinum" type="straight"/>
+        <underline language="LA" method="pen" text="eius quinque filios" type="straight"/>
+        <underline language="LA" method="pen" text="Tosto, filius eius, cum Iuditha" type="straight"/>
+        <underline language="LA" method="pen" text="Svvanus" type="straight"/>
+        <underline language="LA" method="pen" text="Gurth" type="straight"/>
+        <underline language="LA" method="pen" text="Reginam quoque Editham, rex propter patrem eius repudiauit" type="straight"/>
+        <underline language="LA" method="pen" text="Redvvellam" type="straight"/>
+        <underline language="LA" method="pen" text="Marianus Scotus" type="straight"/>
+        <underline language="LA" method="pen" text="scriptor chronicorum veracissimus" type="straight"/>
+        <underline language="LA" method="pen" text="tempus rex VValensium Griffinus, Herefordensem depopulans prouinciam, multos re bellantes prouinciales interfecit" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        <graph book_orientation="0" method="pen" place="right_margin" type="genealogical_tree">
+            <node anchor_text="Godvvinum" id="n1" person="Godwin, Earl of Wessex">Godwin[us]</node>
+            <node anchor_text="cum co[n]iuge sua Giua" id="n2" person="Gytha Thorkelsdóttir">Giua</node>
+            <node anchor_text="Baldvvini, Comitis Flandre[n]sis" id="n3" person="Baldwin IV, Count of Flanders">Baldwinus Com. Fl.</node>
+            <node anchor_text="Tosto, filius eius" id="n4" person="Tostig Godwinson">Tosto</node>
+            <node anchor_text="cum Iuditha vxore sua" id="n5" person="Judith of Flanders">Juditha</node>
+            <link from="n1" relationship="has_spouse" to="n2"/>
+            <link from="n2" relationship="has_spouse" to="n1"/>
+            <link from="n1" relationship="has_child" to="n4"/>
+            <link from="n2" relationship="has_child" to="n4"/>
+            <link from="n3" relationship="has_child" to="n5"/>
+            <link from="n5" relationship="has_spouse" to="n4"/>
+            <link from="n4" relationship="has_spouse" to="n5"/>
+        </graph>
+        
+        
+    </annotation>
+</transcription>

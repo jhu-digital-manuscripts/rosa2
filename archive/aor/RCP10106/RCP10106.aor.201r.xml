@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.201r.tif" pagination="401" reader="John Dee" signature="C"/> 
+    <annotation>
+        
+        <marginalia anchor_text="uariatur, &amp; nihil refert" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Variatur &amp; nihil refert.</marginalia_text>
+                </position>
+            </language>
+            <translation>The [names] vary and do not repeat/</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uel dictionis, uel elocutionis, uel sermonis, uel orationis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Dictio Elocutio sermo oratio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Diction, elocuction, speech and style.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cornelius tamen Celsus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Corneli[us] Celsus</marginalia_text>
+                    <person name="Aulus Cornelius Celsus"/>
+                </position>
+            </language>
+            <translation>Cornelius Celsus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="colores" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Colores</marginalia_text>
+                </position>
+            </language>
+            <translation>Colours.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sensu &amp; in uerbis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>or[ati]o in sensu verbis</marginalia_text>
+                </position>
+            </language>
+            <translation>Speech with sense and words.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="probationem, qua figura quic[que]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>figura no[n] magi[s] probat.</marginalia_text> 
+                </position>
+            </language>
+            <translation>The Figure does not provide a greater proof.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nanq[ue] ut in armoru[m] certamine, &amp; aduersos ictus, &amp; rectas ac simplices manus tum uidere, tum etia[m] cauere ac propulsare facile est,              auersae tectae'q[ue] minus sunt obseruabiles, &amp; aliud oste[n]disse, quàm petas, artis est: sic oratio quae astu caret, pondere, mole, &amp; implulsu praeliatur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>simili</marginalia_text>
+                </position>
+            </language>
+            <translation>Similar.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fingere utiq[ue] Graecis promptißimum est." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gra[e]cis pro[m]ptissimu[m] est fingere.</marginalia_text>
+                </position>
+            </language>
+            <translation>Readily coined by the Greeks.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>probare &amp; facere credibilius differu[n]t</marginalia_text>
+                </position>
+            </language>
+            <translation>They scatter to prove and fashion more credibly.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="uel dictionis, uel elocutionis, uel sermonis, uel orationis. Nam" type="straight"/>
+        <underline language="LA" method="pen" text="Vt uerò natura prius est, concipere animo res quàm enuntiare: ita de ijs figura antè loquendum              est quae ad mentem pertinent, quarum quidem utilitas" type="straight"/>
+        <underline language="LA" method="pen" text="probationem, qua figura quicq[ue] dicatur, facit tamen credibilia" type="straight"/>
+        <underline language="LA" method="pen" text="obseruabiles" type="straight"/>
+        
+        <mark language="LA" method="pen" name="pin" place="head" text="Variatur &amp; nihil refert"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="Ichthys" place="right_margin"/>
+        <mark method="pen" name="Ichthys" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="pin" place="right_margin"/>
+        <mark language="LA" method="pen" name="Ichthys" place="tail" text="probare &amp; facere credibilius differu[n]t"/>
+        
+        <numeral place="right_margin">.1.</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+         
+        
+    </annotation>
+</transcription>

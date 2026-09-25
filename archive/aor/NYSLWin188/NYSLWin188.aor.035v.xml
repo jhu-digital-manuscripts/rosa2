@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.035v.tif" pagination="[35[v]]" reader="John Dee" signature="[Jiii[v]]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ventosa[e] et vndosa[a].</marginalia_text>
+                </position>
+            </language>
+            <translation>Windy and wavy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Paroxismus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Paroxismus</marginalia_text>
+                </position>
+            </language>
+            <translation>Paroxism.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Flores; Wolcken" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nubes su[n]t flores pluuiaru[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>Clouds are the flowers of the rain.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="sie in feuchten Constellationibus" type="straight"/>
+        <underline language="DE" method="pen" text="vnd Windtsternen stehendt" type="straight"/>
+        <underline language="DE" method="pen" text="mehr fruchtbar" type="straight"/>
+        <underline language="LA" method="pen" text="Paroximus" type="double"/>
+        <underline language="DE" method="pen" text="in denselbigen Sternen" type="straight"/>
+        <underline language="DE" method="pen" text="Dispensieren" type="straight"/>
+        <underline language="DE" method="pen" text="praeparieren" type="straight"/>
+        <underline language="DE" method="pen" text="Digestion" type="double"/>
+        <underline language="DE" method="pen" text="die Flores" type="double"/>
+        <underline language="DE" method="pen" text="Gewülcke" type="double"/>
+        <underline language="DE" method="pen" text="Etherische rauch" type="double"/>
+        <underline language="DE" method="pen" text="Wolcken geheissen" type="straight"/>
+         
+    </annotation>
+</transcription>

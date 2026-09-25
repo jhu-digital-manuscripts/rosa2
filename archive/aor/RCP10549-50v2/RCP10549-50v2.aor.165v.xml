@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.165v.tif" pagination="70" reader="John Dee" signature="[e.iii.[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Enumeratio vitiosa" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Enumeratio vitiosa. 6.</marginalia_text>
+                </position>
+            </language>
+            <translation>6. Flawed enumeration.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Simplex aute[m] conclusio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Simplex conclusio. 7.</marginalia_text>
+                </position>
+            </language>
+            <translation>7. A simple conclusion.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="&amp; grandi vitio praeditum posuimus" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        
+        <numeral place="left_margin">.1.</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">.1.</numeral>
+        <numeral place="left_margin">2</numeral>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.062v.tif" pagination="104" reader="John Dee" signature="[gg.iiii.[v]]"/>
+    <annotation> 
+        
+        <marginalia anchor_text="erit comprobatu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        co[m]probatu[m] est
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                It was approved.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="verbi gratia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        verbi gratia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                'Shall we say' [Loeb 221, 445].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in hanc rem testem totam Siciliam citabo, quae mihi vna voce" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        in hanc re[m] teste[m] citare. vna voce
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To call as a testimony about one fact. Unanimously.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sed cum genera quaedam pecuniarum capiendarum comprobaremus" type="straight"/>
+        <underline language="LA" method="pen" text="honesta nomina turpissimis rebus imponere" type="straight"/>
+        <underline language="LA" method="pen" text="ipsa vos admonet vt putetis modu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Quid enim" type="straight"/>
+        <underline language="LA" method="pen" text="nouum, non" type="straight"/>
+        <underline language="LA" method="pen" text="caetera non" type="straight"/>
+        <underline language="LA" method="pen" text="colligam" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">7</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">7</numeral>
+        <numeral place="left_margin">7</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">15</numeral>
+        <numeral place="left_margin">7</numeral>
+        <numeral place="left_margin">15</numeral>
+        <numeral place="left_margin">10</numeral>
+        
+        <drawing anchor_text="sed cum genera quaedam pecuniarum capiendarum comprobaremus, honesta nomina turpissimis rebus imponere" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        
+    </annotation>
+</transcription>

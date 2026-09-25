@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.259v.tif" pagination="34" reader="John Dee"/>
+    <annotation>
+  
+        <marginalia anchor_text="Bamburgh castellum s[cilicet] ipsius Comitis; Moreal" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Castellu[m] de Bamburgh. Comitis Stephani de Albamarla. Moreal.</marginalia_text>  
+                    <person name="Stephen of Aumale"/>
+                    <person name="Morel of Bamburgh"/>
+                    <location name="Bamburgh Castle"/>
+                </position>
+            </language>
+            <translation>Bamburgh Castle, of Stephen, Count of Aumale. Morel.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Abbatis Herlewini" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Herlewinus p[ri]mus Abbas et fundator Monasteris Becce[n]sis</marginalia_text>   
+                    <person name="Herluin of Bec"/>
+                    <location name="Bec Abbey"/>
+                </position>
+            </language>
+            <translation>Herluin, the founder and first abbot of Bec.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="castella" type="straight"/>
+        <underline language="LA" method="pen" text="Monasterio S. Oswini" type="straight"/>
+        <underline language="LA" method="pen" text="castellum s[cilicet] ipsius" type="double"/>
+        <underline language="LA" method="pen" text="&amp; oculos" type="straight"/>
+        <underline language="LA" method="pen" text="Moreal Castellum" type="straight"/>
+        <underline language="LA" method="pen" text="Moreal" type="straight"/>
+        <underline language="LA" method="pen" text="Gulielmi de Anco" type="straight"/>
+        <underline language="LA" method="pen" text="duello victi" type="straight"/>
+        <underline language="LA" method="pen" text="Comitem Odone[m] de" type="straight"/>
+        <underline language="LA" method="pen" text="praedicti Stephani patrem" type="straight"/>
+        <underline language="LA" method="pen" text="pontem ferreu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="pontem ferreum" type="straight"/>
+        <underline language="LA" method="pen" text="Gerardi signifer" type="straight"/>
+        <underline language="LA" method="pen" text="viri, &amp; de[n]tes" type="straight"/>
+        <underline language="LA" method="pen" text="collum &amp; humeros vsq[ue] in pectora diffidit" type="straight"/>
+        <underline language="LA" method="pen" text="quendam medium secauit" type="straight"/>
+        <underline language="LA" method="pen" text="Abbatis Herlewini" type="double"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- post illum -->
+        <mark method="pen" name="circumflex" place="intext"/>  <!-- promocionem Beccensis -->
+        
+        <errata amendedtext="promocionem Anselmi Beccensis" copytext="promocionem Beccensis" language="LA"/>
+    
+        <graph book_orientation="0" method="pen" place="left_margin" type="genealogical_tree">
+            <node id="n1" person="Odo, Count of Champagne">Odo, Comes Campani[a]e</node>
+            <node id="n2" person="Stephen of Aumale">Stephanus comes Alb[amarlae]</node>
+            <link from="n1" relationship="has_child" to="n2"/>
+        </graph>
+ 
+    </annotation>
+</transcription>

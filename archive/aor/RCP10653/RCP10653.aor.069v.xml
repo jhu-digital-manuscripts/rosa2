@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.069v.tif" pagination="130" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Helenae" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        At cuius Helena[e]?
+                    </marginalia_text>
+                    <person name="Saint Helena"/> 
+                </position>
+            </language>
+            <translation>
+                But of which Helena?  
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Helenae" type="straight"/>
+        <underline language="LA" method="pen" text="ex rege imperator creatus" type="straight"/>
+        
+    </annotation>
+</transcription>

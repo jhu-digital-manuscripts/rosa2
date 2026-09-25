@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="UclCastiglione1541.010r.tif" reader="Harvey" signature="Aiii[r]"/>
+        <annotation>
+            <marginalia hand="Italian">
+                <language ident="IT">
+                    <position book_orientation="0" place="right_margin">
+                        <marginalia_text>
+                            la fortuna contraria alla uirtù
+                        </marginalia_text>
+                    </position>
+                </language>
+                <translation>
+                    Fortune unfavourable with virtue. 
+                </translation>
+            </marginalia>
+            <marginalia hand="Italian">
+                <language ident="IT">
+                    <position book_orientation="0" place="right_margin">
+                        <marginalia_text>
+                            Rafaello Michel'Angelo Pittori illustri.   
+                        </marginalia_text>
+                        <person name="Raphael"/>
+                        <person name="Michelangelo"/>
+                        <emphasis method="chalk" text="Rafaello" type="straight"/>
+                    </position>
+                </language>
+                <translation>
+                    Raphael, Michaelangelo, famous painters.
+                </translation>
+            </marginalia>
+            
+            <underline language="IT" method="pen" text="tenuto" type="straight"/>
+            
+            <errata amendedtext="[deleted]" copytext="io" language="IT"/>
+            
+        </annotation>
+</transcription>

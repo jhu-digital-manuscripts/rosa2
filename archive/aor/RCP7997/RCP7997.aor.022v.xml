@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.022v.tif" reader="John Dee" signature="[Diiij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="in potissima demo[n]stratio[n]e" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Demo[n]stratio potissi[m]a.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The most powerful demonstration.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dignitates. subiecta. [et] passiones" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Dignitates subiecta passiones.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Axioms, subjects, properties. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Na[m] nu[m]er[us] dicit[ur] q[ua]si nut[us] me[n]tis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Numerus q[ua]si nutus mentis.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A number is like the will of the mind.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quare naturalit[er] t[ame]n requirit[ur] in o[mn]i demo[n]stratione" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Tria in o[mn]i demo[n]stratione necessaria
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation> 
+                Three necessities in every demonstration.   
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="principijs complexis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Principia co[m]plexa    
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Complex principles.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dignitas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Dignitas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Axiom.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="omnes peticio[n]es geometrice in p[ri]ncipio. sunt demonstrabiles a phisicis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Petitiones a physicis demonstrabiles
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Petitions demonstrable by physicists.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="se potest habere ad p[ro]positione[m] illa[m] addiscens. triplicit[er]" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Addiscens se habens triplici modo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Affirming that it is in a triple mode.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sc[ilicet] subiectum" type="straight"/>
+        <underline language="LA" method="pen" text="passio" type="straight"/>
+        <underline language="LA" method="pen" text="dignitas" type="straight"/>
+        <underline language="LA" method="pen" text="hijs e[ni]m vt p[ri]mis [et] immediatis et indemonstrabilibus demo[n]stra[n]t in potissima demo[n]stratio[n]e" type="straight"/>
+        <underline language="LA" method="pen" text="maxime in physicis" type="straight"/>
+        <underline language="LA" method="pen" text="subiectu[m] circa" type="straight"/>
+        <underline language="LA" method="pen" text="ea q[ue] demo[n]strat" type="straight"/>
+        <underline language="LA" method="pen" text="sunt principia" type="straight"/>
+        <underline language="LA" method="pen" text="dignitates" type="straight"/>
+        <underline language="LA" method="pen" text="subiecta" type="straight"/>
+        <underline language="LA" method="pen" text="passiones" type="straight"/>
+        <underline language="LA" method="pen" text="Dignitas" type="straight"/>
+        <underline language="LA" method="pen" text="Suppositio" type="straight"/>
+        <underline language="LA" method="pen" text="Diffinitio" type="straight"/>
+        <underline language="LA" method="pen" text="Petitio" type="straight"/>
+        <underline language="LA" method="pen" text="Questio" type="straight"/>
+        <underline language="LA" method="pen" text="vt o[mn]es peticio[n]es geometrice in p[ri]ncipio. sunt demo[n]strabiles a phisicis" type="straight"/>
+        <underline language="LA" method="pen" text="suppositio. peticio" type="straight"/>
+        <underline language="LA" method="pen" text="q[uae]stio" type="straight"/>
+        <underline language="LA" method="pen" text="p[ro]positio[n]es demo[n]strabiles" type="straight"/>
+        <underline language="LA" method="pen" text="addiscens. triplicit[er]" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- se vt -->
+        
+        <numeral place="right_margin">1</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">.1.</numeral>
+ 
+    </annotation>
+</transcription>

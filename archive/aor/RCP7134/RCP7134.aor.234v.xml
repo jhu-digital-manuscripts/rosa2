@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.234v.tif" pagination="[227v]" reader="John Dee" signature="[LL iij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vide caput 3 &amp; 4. libri de Revolutionibus, et libro de Iudicijs 25 cap. sup[ra].</marginalia_text> 
+                    <internal_ref>
+                        <target ref="RCP7134:184" text="3"/>
+                        <target ref="RCP7134:186" text="4"/>
+                        <target ref="RCP7134:168" text="25"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See above, chapters three and four of the book 'on revolutions', and chapter 25 of the book 'on judgments'.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nauis mare ingreditur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vide cap. 26. lib. de Iudicijs, sup[ra].</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:170" text="26"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See chapter 26 of the book 'on judgments', above.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cometes, magnos aliquando nascituros homines indicat" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quis sub cometa natus indicatur.</marginalia_text>
+                </position>
+            </language>
+            <translation>Whose birth is indicated during a comet.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cometis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cometes.</marginalia_text>
+                </position>
+            </language>
+            <translation>Comet.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="angulo" type="straight"/>
+        <underline language="LA" method="pen" text="ac signo" type="straight"/>
+        <underline language="LA" method="pen" text="Tum uero coniunctionem, aut saltem oppositionem, natiuitatem illius praecedentem in loco cometis factam fuisse oportet" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.127r.tif" pagination="253" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="pro Tullio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Tullio</marginalia_text>
+                    <book title="Pro Tullio"/>
+                </position>
+            </language>
+            <translation>Pro Tullio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Oppio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Oppio</marginalia_text>
+                    <book title="Pro Oppio"/>
+                </position>
+            </language>
+            <translation>Pro Oppio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cicero. sed haec simulatio interim hucusq[ue]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cicero. Similitudinu[m]</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Similarities of Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="refutare" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Refutatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Refutation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Exempla rerim uariè tractanda sunt, si nocebunt: quae si dubia erunt, fabulosa dicere licebit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Exe[m]ploru[m] infirmatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Disproving examples.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quo de exemplis, idem etiam de iudicati obseruandu[m]." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Iudicatoru[m] dissolutio</marginalia_text>
+                </position>
+            </language>
+            <translation>The abolition of judges.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="si est minus efficaciter locutus, ipsa eius uerna ponantur: si acri &amp; uehementi usus fuerit oratione, eande[m] rem nostris              uerbis mitioribus proferamus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Accusatoris uerba nota[n]da</marginalia_text>
+                </position>
+            </language>
+            <translation>The words of the accuser should be noted.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cicero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cicero.</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="praecipites, insidiosae, impotentes deprehenduntur" type="straight"/>
+        <underline language="LA" method="pen" text="sit in quoq[ue] quod assumitur dißimile" type="straight"/>
+        <underline language="LA" method="pen" text="quidem recte factum" type="straight"/>
+        <underline language="LA" method="pen" text="si est minus efficaciter locutus, ipsa eius uerba ponantur: si acri &amp; uehementi usus fuerit oratione, eande[m] rem nostris uerbis mitioribus proferamus" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- periculosum, ut -->
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">8</numeral>
+        <numeral place="right_margin">9</numeral>
+        <numeral place="right_margin">10.</numeral>
+        <numeral place="right_margin">11.</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">13</numeral>
+       
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

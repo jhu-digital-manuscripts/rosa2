@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.089r.tif" pagination="1" reader="Harvey" signature="A[r]"/>	<!-- ABO 93right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Singuli tituli, totidem discursus ingenioso.
+						Tanta hîc Copia, et Varietas selectorum Discursuum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Single headings and just as many discourses for the ingenious man.
+				Here there is a great abundance and variety of select discourses.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Mihi quasi octauus liber Domenici.
+						Satis exempli causa: si satis promptè.
+					</marginalia_text>
+					<person name="Lodovico Domenichi"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				For me this work is almost the eighth book of Domenichi.
+				It is sufficient for the sake of example, if it is sufficiently at hand.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Accipere iniuria[m], et dare gratias; aulicum est.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				It is princely to receive injury and give thanks.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						i[nfr]a, 49. 
+					</marginalia_text>
+					<internal_ref>
+						<target ref="FolgersHa2:Ha2.113r" text="49"/>
+					</internal_ref>
+				</position>
+			</language>
+			<translation>
+				[See] below, pg. 49.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						politico.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Political.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Satis, si solidè: et ad unguem.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				It is enough if it is firmly known and by heart.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Qui suus est, facilè fit alterius: et in quemuis est alium conuertibilis: pra[e]sertim
+						vnius generis vnum Optimum. Qui dexterrimus est proficiendi
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						modus, et efficacissimus.
+						Quomodò Centaurus
+						in suu[m] est
+						equum conuersus, perita
+						assuetudine.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				He who is his own can easily become another's, and he is changeable into any other thing, especially
+				a single great man of a single kind. The way of accomplishment is that which is most skilled and most effective.
+				Just as the Centaur is changed into his own horse through experienced habit.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Vir serius sola curat solida: ca[e]tera obitèr percurrens, relinquit
+						ociosis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				An earnest man cares about substantial things only, and to idle men he leaves those other things which he passes over quickly. 
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="DETTI, ET FATTI NOTABILI" type="straight"/>
+		<underline language="IT" method="pen" text="PIACEVOLI" type="straight"/>
+		<underline language="IT" method="pen" text="INGIVRIE DE' POTENTI" type="straight"/>
+		<underline language="IT" method="pen" text="non vendetta" type="straight"/>
+		<underline language="IT" method="pen" text="manco vn vitello" type="straight"/>
+		<underline language="IT" method="pen" text="ritrouar" type="straight"/>
+		<underline language="IT" method="pen" text="il ladro" type="straight"/>
+		<underline language="IT" method="pen" text="trouò vn Leone in" type="straight"/>
+		<underline language="IT" method="pen" text="leuate le mani al cielo" type="straight"/>
+		<underline language="IT" method="pen" text="vn'agnello, se tu mi" type="straight"/>
+		<underline language="IT" method="pen" text="ritrouare il ladro del mio" type="straight"/>
+		<underline language="IT" method="pen" text="prometto vn toro" type="straight"/>
+		<underline language="IT" method="pen" text="tu mi liberi dalle" type="straight"/>
+		<underline language="IT" method="pen" text="sue branche" type="straight"/>
+		
+		<symbol name="SS" place="intext"/>
+		
+		<symbol name="SS" place="tail"/>
+		<symbol name="JC" place="tail"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="comma" place="right_margin"/> <!--POTENTI-->
+		<mark method="pen" name="comma" place="right_margin"/> <!--danni-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--man-->
+		<mark language="IT" method="pen" name="plus_sign" place="right_margin" text="ritrouar"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!--spa-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--ritro-->
+		
+		<mark method="chalk" name="vertical_bar" place="intext"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="il ladro"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="vn Leone"/>
+		
+		
+		<errata amendedtext="mangiava" copytext="ma g aua" language="IT"/>
+    </annotation>
+</transcription>

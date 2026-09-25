@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonDL45.124v.tif" pagination="248" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        generosa Educatio. gymnastica.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Noble education. Gymnastics.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="De militari educatione Illustrium, ac nobilium puerorum." type="straight"/>
+        <underline language="LA" method="pen" text="Instituta militiaria." type="straight"/>
+        <underline language="LA" method="pen" text="Virgas &amp; mammas i[n]fantibus matres p[ro]bent." type="straight"/>
+        <underline language="LA" method="pen" text="Lacedaemonii. Spartani." type="straight"/>
+        <underline language="LA" method="pen" text="Lycurgus." type="straight"/>
+        <underline language="LA" method="pen" text="Pueri fla[m]ma &amp; frigore durant Nec motu, nec metu mouent." type="straight"/>
+        
+        <mark method="pen" name="horizontal_bar" place="head"/>
+        
+    </annotation>
+</transcription>

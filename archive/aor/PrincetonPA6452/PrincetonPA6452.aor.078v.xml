@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.078v.tif" pagination="140" reader="Harvey" signature="[m4 v]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Brennus regulus Gallorum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Brennus.</marginalia_text>
+                    <person name="Brennus"/>
+                </position>
+            </language>
+            <translation>Brennus.</translation>
+        </marginalia>
+         
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Tota Brenni nostri historia vbiq[ue] gentium, atq[ue] terrarum egregiè memorabilis. /
+                    </marginalia_text>
+                    <person name="Brennus"/>
+                </position>
+            </language>
+            <translation>The entire story of our Brennus is wonderfully memorable everywhere among the nations and in the world.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="inusitato atq[ue] inaudito hoste, ab Oceano terrarumq[ue] ultimis oris bell[m] cie[n]te" type="straight"/>
+        <underline language="LA" method="pen" text="uiolatoribus iuris" type="straight"/>
+        <underline language="LA" method="pen" text="flagrantes ira, cuius impotens est gens" type="straight"/>
+        <underline language="LA" method="pen" text="Romam se ire" type="straight"/>
+        <underline language="LA" method="pen" text="plurimum terroris Romam celeritas hostiu[m] tulit" type="straight"/>
+        <underline language="LA" method="pen" text="aegrè ad undecimum lapide[m] occursum" type="straight"/>
+        <underline language="LA" method="pen" text="hostium plena erant" type="straight"/>
+        <underline language="LA" method="pen" text="in uanos tumultus gens, truci cantu, clamoribusq[ue] uarijs, horrendo cuncta" type="straight"/>
+        <underline language="LA" method="pen" text="no[n] praemunito uallo" type="straight"/>
+        <underline language="LA" method="pen" text="in cornua, ne circu[m]ueniri multitudine hostium" type="straight"/>
+        <underline language="LA" method="pen" text="Brennus regulus Gallorum" type="straight"/>
+        <underline language="LA" method="pen" text="in paucitate hostium" type="straight"/>
+        <underline language="LA" method="pen" text="artem maximè timens" type="straight"/>
+        <underline language="LA" method="pen" text="superiore[m] locu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="si eos loco depulisset, haud dubius facile[m] in aequo campi tantum superanti multitudini uictoria[m] fore" type="straight"/>
+        <underline language="LA" method="pen" text="non fortuna" type="straight"/>
+        <underline language="LA" method="pen" text="ratio etia[m] cum Barbaris stabat" type="straight"/>
+        <underline language="LA" method="pen" text="simile Romanis" type="straight"/>
+        <underline language="LA" method="pen" text="apud duces" type="straight"/>
+        <underline language="LA" method="pen" text="apud milites" type="straight"/>
+        <underline language="LA" method="pen" text="pauor fugaq[ue] occupauerat animos" type="straight"/>
+        <underline language="LA" method="pen" text="ta[n]ta hominum obliuio" type="straight"/>
+        <underline language="LA" method="pen" text="itinere Romam ad co[n]iuges" type="straight"/>
+        <underline language="LA" method="pen" text="ac liberos fugerent" type="straight"/>
+        <underline language="LA" method="pen" text="subsidiarios tutatus est locus" type="straight"/>
+        <underline language="LA" method="pen" text="multosq[ue] imperitos na[n]di" type="straight"/>
+        <underline language="LA" method="pen" text="aut inualidos graues loricis" type="straight"/>
+        <underline language="LA" method="pen" text="Gallos quoq[ue] uelut obstupefactos" type="straight"/>
+        <underline language="LA" method="pen" text="miraculum uictoriae tam repentin[a]e tenuit" type="straight"/>
+        <underline language="LA" method="pen" text="ipsi pauore defixi primum" type="straight"/>
+        <underline language="LA" method="pen" text="insidias uereri" type="straight"/>
+        <underline language="LA" method="pen" text="c[a]esorum spolia legere" type="straight"/>
+        <underline language="LA" method="pen" text="amorumq[ue] cumulos" type="straight"/>
+        <underline language="LA" method="pen" text="coaceruare" type="straight"/>
+        <underline language="LA" method="pen" text="nihil usquam hostile cernebatur" type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="quotation_mark" place="left_margin" text="in uanos tumultus gens, truci cantu, clamoribusq[ue] uarijs, horrendo cuncta"/>
+        
+        <mark language="LA" method="pen" name="equal_sign" place="right_margin" text="flagrantes ira, cuius impotens est gens"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--tumul-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--ta-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--Gal-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--transuer-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--dubi-->
+        
+        <mark method="pen" name="dot" place="intext"/> <!--esse, flagrantes-->
+        <mark method="pen" name="dot" place="intext"/> <!--erat, pauor-->
+        <mark method="pen" name="dot" place="intext"/> <!--perfugit, unde-->
+        
+    </annotation>
+</transcription>

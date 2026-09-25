@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="ChChWb512.045r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="dux Wisseoru[m]" hand="Italian" id="ChChWb512:WB5-12_0097_037r:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        J[ohn] D[ee] fortè Dux uuisseorum GeWisseoru[m]. fol. 44
+                    </marginalia_text>
+                    <person name="John Dee"/>
+                    <internal_ref>
+                        <target ref="ChChWb512:WB5-12_0111_044r:u0001" text="fol. 44"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>John Dee: "duke of the Wisseans" is more likely "duke of the Gewissi" .fol. 44.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dux Wisseoru[m]" hand="Italian" id="ChChWb512:WB5-12_0097_037r:m0002">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        The English men name him Duke of Windesor. But the british is Erle of Vrchinfelde [deleted in Hereford Shire].
+                    </marginalia_text>
+                    <location name="Windsor"/>
+                    <location name="Archenfield"/>
+                    <location name="Herefordshire"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Octaui[us]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Eudaf. Octaui[us].</marginalia_text>
+                    <person name="Eudasius"/>
+                    <person name="Octavius"/>
+                </position>
+            </language>
+            <translation>Eudasius. Octavius.</translation>
+        </marginalia>
+            
+        <marginalia anchor_text="vt a rege Go[m]berto auxiliu[m] acquireret" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        no[n] h[ic]? brytanicus textus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>This is not the British text.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="p[ro]co[n]sules romanae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Proconsules Rom.[anae]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Roman proconsuls.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Westinauala" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Westmerlont
+                    </marginalia_text>
+                    <location name="Westmoreland"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="norWegia[m]" hand="Italian">
+            <language ident="CY">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        llychlyn
+                    </marginalia_text>
+                    <location name="Llychlyn"/>
+                    <emphasis method="pen" text="Llychlyn" type="dotted"/>
+                </position>
+            </language>
+            <translation>Llychlyn.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Comes ergo oppidi municipii" hand="Italian">
+            <language ident="CY">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        iarll y castell cadarn
+                    </marginalia_text>
+                    <emphasis method="pen" text="iarll y castell cadarn" type="straight"/>
+                </position>
+            </language>
+            <translation>The earl of the strong castle.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Go[m]berto" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Gombertus Rex NorWegia[e].
+                    </marginalia_text>
+                    <person name="Gombertus"/>
+                    <location name="Norway"/>
+                </position>
+            </language>
+            <translation>Gombertus, king of Norway.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Gouarus quidam erat Norwegia[e] Rex. Olaus Magnus lib. 3. pag. 115
+                    </marginalia_text>
+                    <person name="Gewar"/>
+                    <book title="Historia de gentibus Septentrionalibus"/>
+                    <internal_ref>
+                        <target ref="PrincetonDL45:00000121" text="lib. 3. pag. 115"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>A certain Gewar was king of Norway. 'Historia de gentibus Septentrionalibus', book 3, page 115.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Loelinu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Traheru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Mariu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Octaui[us]" type="double"/>
+        <underline id="ChChWb512:WB5-12_0097_037r:u0001" language="LA" method="pen" text="dux Wisseoru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="p[ro]co[n]sules romanae" type="straight"/>
+        <underline language="LA" method="pen" text="direxit Traheru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="auu[n]culu[m] Helen[a]e" type="grid"/>
+        <underline language="LA" method="pen" text="cu[m] tribus legionibus vt insula[m] roman[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="rex Octauius" type="straight"/>
+        <underline language="LA" method="pen" text="maesurian" type="straight"/>
+        <underline language="LA" method="pen" text="qu[a] Westinauala" type="straight"/>
+        <underline language="LA" method="pen" text="norWegia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="norWegia[m]" type="dotted"/>
+        <underline language="LA" method="pen" text="Go[m]berto" type="straight"/>
+        <underline language="LA" method="pen" text="Comes ergo oppidi municipii" type="straight"/>
+        <underline language="LA" method="pen" text="Comes ergo oppidi municipii" type="dotted"/>
+        
+        <mark method="pen" name="equal_sign" place="right_margin"/> <!-- hyphen for "urbem" -->
+        
+        <mark method="pen" name="bracket" place="intext"/> <!--adiuit: vt-->
+        <mark method="pen" name="bracket" place="intext"/> <!--acquireret. Interea-->
+        <mark method="pen" name="bracket" place="intext"/> <!--municipii qui-->
+        <mark method="pen" name="bracket" place="intext"/> <!--diligebat praeceptis-->
+        
+        <errata amendedtext="[deleted]" copytext="Westinauala" language="LA"/>
+        
+        <physical_link>
+            <marginal_annotation idref="ChChWb512:WB5-12_0097_037r:m0001"/>
+            <marginal_annotation idref="ChChWb512:WB5-12_0097_037r:m0002"/>
+            <marginal_annotation idref="ChChWb512:WB5-12_0097_037r:u0001"/>
+            
+            <relation from="ChChWb512:WB5-12_0097_037r:m0001" to="ChChWb512:WB5-12_0097_037r:u0001" type="directed"/>
+            <relation from="ChChWb512:WB5-12_0097_037r:m0002" to="ChChWb512:WB5-12_0097_037r:u0001" type="directed"/>
+            
+        </physical_link>
+        
+    </annotation>
+</transcription>

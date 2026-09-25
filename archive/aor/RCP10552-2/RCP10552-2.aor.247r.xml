@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.247r.tif" pagination="11" reader="John Dee" signature="B.ij."/> 
+    <annotation>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>A bribe of £50 and more.</marginalia_text>   <!-- DO: Not sure of the mark above this --> <!-- M.B. I couldn't decipher this either.-->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Conscius ip[s]e sibi Arnulfus, Comes Fl[andriae] excusationes machinatur</marginalia_text>
+                    <person name="Arnulf I, Count of Flanders"/>
+                </position>
+            </language>
+            <translation>Himself guilty, Arnulfus, Count of Flanders, makes excuses.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="consilium" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Arnulfi crudele concilium.</marginalia_text>
+                    <person name="Arnulf I, Count of Flanders"/>
+                </position>
+            </language>
+            <translation>The cruel advice of Arnulfus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="acerbissimis confuta[n]s co[n]uitijs" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ludouici opprobria in Richardu[m] Iuuene[m] Duce[m] N[orthmannia]</marginalia_text>
+                    <person name="Louis IV of France"/>
+                    <person name="Richard I of Normandy"/>
+                </position>
+            </language>
+            <translation>Louis' taunting of the young Richard, Duke of Normandy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Osmundus" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Osmundus</marginalia_text>
+                    <person name="Osmond de Conteville"/>
+                </position>
+            </language>
+            <translation>Osmond.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ieiunium" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ieiuniu[m] pro regis incolumitate et pra[e]ces ad Deum</marginalia_text>
+                </position>
+            </language>
+            <translation>Fasting on behalf of the safety of the king and [prayers?] to God.</translation> <!-- DO: Not sure how to translate 'praeces' --> <!-- MB: See, http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0059:entry=praeses -->
+        </marginalia>
+        
+        <marginalia anchor_text="Quod custodes videntes neglecta eius custodia, ad propria procuranda negotia hu illucq[ue] diuertu[n]t" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Notato, subdolos custodes, ficti morbi r[ati]o[n]e, falli posse.</marginalia_text> <!-- DO: Not sure of the word following 'morbi' --> <!-- M.B. I can't figure this one out either, the line above (oe) makes it looks like a contraction? -->
+                </position>
+            </language>
+            <translation>With it noted that the cunning guards were able to be deceived by the method of the counterfeit sick.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cotidiacu[m]" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>a[f]t[e]r Conciacu[m]</marginalia_text>
+                    <location name="Coucy"/>
+                </position>
+            </language>
+            <translation>After Conciacum.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Siluanectis" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Siluanecta[e]</marginalia_text>
+                    <location name="Senlis"/>
+                </position>
+            </language>
+            <translation>Senlis.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Bernardus comes" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Bernardus. Comes. Danus Siluan[ectensis] etc.</marginalia_text>  <!-- DO: Not sure in which order to transcribe these words. Bernard the Dane and Bernard, Count of Senlis are two different people. -->
+                    <person name="Bernard the Dane"/>
+                    <person name="Bernard, Count of Senlis"/>
+                </position>
+            </language>
+            <translation>Bernard. Count. The Dane. Of Senlis. etc.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="FR">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ce Bernard fut Conte de Senliz et de Concy.</marginalia_text>
+                    <person name="Bernard, Count of Senlis"/>
+                    <location name="Senlis"/>
+                    <location name="Coucy"/>
+                </position>
+            </language>
+            <translation>This Bernard was Count of Senlis and of Coucy.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Siluanectensem" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vrbs Siluanectensis</marginalia_text>
+                    <location name="Senlis"/>
+                </position>
+            </language>
+            <translation>The city of Senlis.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ARnulfus multu[m] confidit muneru[m] potestati. vt pri[us?] ipse expertus erat</marginalia_text>
+                    <person name="Arnulf I, Count of Flanders"/>
+                </position>
+            </language>
+            <translation>Arnulfus bestows many gifts on authority as he himself had previously experienced.</translation>  <!-- DO: Not sure how to translate this -->
+        </marginalia>
+        
+        <marginalia anchor_text="Caltina" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>a[f]t[e]r Caletina</marginalia_text>
+                    <location name="Pays de Caux"/>
+                </position>
+            </language>
+            <translation>After Caletina.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quae cum Bernardus Danus didicisset Bernardus Siluanectensis vsus consilio" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Bernardus [ Com[es] Sil[uanectensis] Danus.</marginalia_text>
+                    <person name="Bernard, Count of Senlis"/>
+                    <person name="Bernard the Dane"/>
+                </position>
+            </language>
+            <translation>Bernard [ Count of Senlis, the Dane.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Richardus primus, Nepos Bernardi Comitis Siluanecte[nsi]s. [7?] de - quia Sprota erat filia Hereberti Comitis Siluanectensis: cuius filius forte iste Bernardus erat</marginalia_text> <!-- DO: not sure if it is a 7, or an I -->
+                    <person name="Richard I of Normandy"/>
+                    <person name="Bernard Senlis"/>
+                    <person name="Sprota"/>
+                    <person name="Herbert I, Count of Vermandois"/>
+                </position>
+            </language>
+            <translation>Richard the first, a descendent of Bernard, Count of Senlis. [7?] because Sprota was the daughter of Herbert, Count of Senlis, whose son by chance was that Bernard.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Caltina" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Calcina territoria gallice</marginalia_text>
+                 <location name="Pays de Caux"/>
+                </position>
+            </language>
+            <translation>Caux, a Gaulish territory.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Caltina" hand="Italian" method="pen">
+            <language ident="FR">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Caux</marginalia_text>
+                    <location name="Pays de Caux"/>
+                </position>
+            </language>
+            <translation>Pays de Caux.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="crimine traditoris" type="straight"/>
+        <underline language="LA" method="pen" text="dece[m] libris auri, à" type="straight"/>
+        <underline id="RCP10552-2:503:u0001" language="LA" method="pen" text="pueru[m] adustis poplicibus" type="straight"/>
+        <underline language="LA" method="pen" text="muneribus" type="double"/>
+        <underline language="LA" method="pen" text="caecatus &amp; decipulis" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; ira[m] reflexit in" type="double"/>
+        <underline language="LA" method="pen" text="innocentem puerum" type="straight"/>
+        <underline language="LA" method="pen" text="Landunum clauatum" type="straight"/>
+        <underline language="LA" method="pen" text="puerum ab aucupio regredientem, acerbissimis confuta[n]s" type="straight"/>
+        <underline language="LA" method="pen" text="meretricis filiu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="vltrò virum rapientis" type="straight"/>
+        <underline id="RCP10552-2:503:u0002" language="LA" method="pen" text="cautriatis genibus" type="straight"/>
+        <underline language="LA" method="pen" text="alijs custodibus" type="straight"/>
+        <underline language="LA" method="pen" text="eius procurator" type="straight"/>
+        <underline language="LA" method="pen" text="fitq[ue] continua oratio" type="straight"/>
+        <underline language="LA" method="pen" text="hortabatur vt simulata egritudine lecto decu[m]beret" type="straight"/>
+        <underline language="LA" method="pen" text="aegrè vt ab omnibus desperaretur" type="straight"/>
+        <underline language="LA" method="pen" text="custodes videntes neglecta eius custodia, ad propria procuranda negotia" type="straight"/>
+        <underline language="LA" method="pen" text="velut equo laturus pabulum caenante rege" type="straight"/>
+        <underline language="LA" method="pen" text="Cotidiacu[m] venit" type="straight"/>
+        <underline language="LA" method="pen" text="Siluanectis" type="straight"/>
+        <underline language="LA" method="pen" text="Bernardus" type="straight"/>
+        <underline language="LA" method="pen" text="nepote[m]" type="double"/>
+        <underline language="LA" method="pen" text="suum" type="straight"/>
+        <underline language="LA" method="pen" text="Cotidiacum" type="straight"/>
+        <underline language="LA" method="pen" text="Siluanectensem" type="straight"/>
+        <underline language="LA" method="pen" text="illum muneribus excaecare" type="straight"/>
+        <underline language="LA" method="pen" text="elegit periurus honore ampliari" type="straight"/>
+        <underline language="LA" method="pen" text="fidem amico suo Richardo seruare" type="straight"/>
+        <underline language="LA" method="pen" text="Caltina" type="straight"/>
+        <underline language="LA" method="pen" text="Bernardus Danus" type="straight"/>
+        <underline language="LA" method="pen" text="Bernardi Siluanectensis" type="straight"/>
+        <underline language="LA" method="pen" text="benedictus" type="straight"/>
+        <underline language="LA" method="pen" text="Arnulfus muneribus regem placat" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/> <!-- ipsum suspendio -->
+        <mark method="pen" name="bracket" place="intext"/> <!-- dignu[m] absoluit -->
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- filiu[m] vltro -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- rapientis eu[m] -->
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="circumflex" place="intext"/> <!-- cautriatis -->
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- genibus omni -->
+        <mark method="pen" name="comma" place="intext"/> <!-- Osmundus eius -->
+        <mark method="pen" name="comma" place="intext"/> <!-- obtemperans lecto -->
+        <mark method="pen" name="comma" place="intext"/> <!-- pabulum caenante -->
+        <mark method="pen" name="comma" place="intext"/> <!-- equita[n]s diluculo -->
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- magnum cum -->
+        <mark method="pen" name="comma" place="intext"/> <!-- Normannicum, reseruando -->
+        <mark method="pen" name="comma" place="intext"/> <!-- disputare cupiditate -->
+        
+        <mark method="pen" name="tripunctus" place="tail"/>
+        
+        <errata amendedtext="cauteriatis" copytext="cautriatis" language="LA"/>
+        
+        <errata amendedtext="[deleted]" copytext="Cotidiacu[m]" language="LA"/>    <!-- DO: Not sure if these should be tagged as errata -->
+        
+        <errata amendedtext="[deleted]" copytext="Cotidiacum" language="LA"/>
+        
+        <errata amendedtext="[deleted]" copytext="Caltina" language="LA"/>
+        
+        
+        
+        <physical_link>
+            
+            <marginal_annotation idref="RCP10552-2:503:u0001"/>
+            
+            <marginal_annotation idref="RCP10552-2:503:u0002"/>
+            
+            <relation from="RCP10552-2:503:u0001" to="RCP10552-2:503:u0002" type="undirected"/>
+            
+        </physical_link>
+        
+        
+        
+        
+        
+    </annotation>
+    
+</transcription>

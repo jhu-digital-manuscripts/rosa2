@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.428r.tif" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text> 
+                        Roma 
+                    </marginalia_text>
+                    <location name="Rome"/>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        ἐν ἀκμῆ.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Rome at its peak.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text> 
+                        Pompeius. Ca[e]sar. 
+                    </marginalia_text>
+                <person name="Pompey"/>
+                <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <translation>
+                Pompey; Caesar. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text> 
+                        De Pompeij rebus gestis tam magnificè Liuius, vt ab ipso Augusto audiret, Pompeianus. At Lucanus Pompeio quantò 
+                        liberalior: Ca[e]sari iniquior? Plinius, vtriq[ue] a[e]quus; et Plutarchus.
+                    </marginalia_text>
+                <person name="Livy"/>
+                <person name="Pompey"/>
+                <person name="Augustus"/>
+                <person name="Julius Caesar"/>
+                <person name="Lucan"/>
+                <person name="Pliny the Elder"/>
+                <person name="Plutarch"/>
+                </position>
+            </language>
+            <translation>
+                Livy wrote so proudly of Pompey's achievements, that he was called ‘Pompeianus’ by Augustus himself. But how much more generous to Pompey and 
+                harsh on Caesar was Lucan! Pliny was fair to both, as was Plutarch.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text> 
+                        { Huc Pompeij grauis prouincia de tot Romanorum corruptis legibus, moribusq[ue] corrigendis: apud C[ornelium] Tacitum, Annalium l. 3. 
+                        Locus est subtili disquisitione dignus.
+                    </marginalia_text>
+                    <person name="Pompey"/>
+                    <person name="Tacitus"/>
+                    <book title="The Annals"/>
+                </position>
+            </language>
+            <translation>
+                On this point Pompey’s serious task of reforming a great many corrupt laws and customs of the Romans, see Tacitus, bk. 3 of the Annals. 
+                This is a place that is worth meticulous scrutiny. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Dua[e] Ca[e]saris decades: quales vna Scipionis;</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>altera Sylla[e], s[upr]a. Nam extraordinaria[e] Virtutis, fortuna[e]q[ue] Triumviri, Scipio, Sylla, Ca[e]sar. 
+                        Et Ca[e]sar, plus quàm illi ambo. Omnes in Ca[e]sare manes: etiam ( aduersa[e] factionis vox.</marginalia_text>
+                    <person name="Julius Caesar"/>
+                    <person name="Scipio Africanus"/>
+                    <person name="Sulla"/>
+                    <X-ref book_title="Pharsalia" language="LA" person="Lucan" text="Omnes in Ca[e]sare manes"/>
+                    <internal_ref text="s[upr]a">
+                        <target ref="PrincetonPA6452:00000246" text="[224]"/>
+                        <target ref="PrincetonPA6452:00000299" text="[277]"/>
+                        <target ref="PrincetonPA6452:00000426" text="[404]"/>
+                        <target ref="PrincetonPA6452:00000859" text="[AAA5[r]]"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>The two decades of Caesar; similar first to the one of Scipio and then to that of Sulla, [see] above. For the triumvirs Scipio, 
+                Sulla, and Caesar were of outstanding virtue and fortune. Caesar even more than both of the former. 
+                "All the ghosts of the dead are in Caesar," even the voice of the opposing party.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Catilina" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text> 
+                        Catilina.
+                    </marginalia_text>
+                    <person name="Lucius Sergius Catilina"/>
+                </position>
+            </language>
+            <translation>
+                Catiline.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Caesarem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text> 
+                        Ca[e]sar.
+                    </marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <translation>
+                Caesar.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        Qua[e] iam gerebantur, summo sunt gesta ingenio, et industria. Et hoc aureum est speculum Romana[e] prudentia[e], et fortitudinis: 
+                        vtinam etiam iustitia[e], et temperantia[e]. Nemo plura paucioribus de Pompeio, et Ca[e]sare, quàm Velleius, et Plinius. Da 
+                        mihi scriptores, qui quasi oculari demonstratione repra[e]sentant personas. In quo etiam viuido descriptionis genere excellit Liuius: 
+                        propè vnicus Iconismi artifex.
+                    </marginalia_text>
+                    <person name="Pompey"/>
+                    <person name="Julius Caesar"/>
+                    <person name="Marcus Velleius Paterculus"/>
+                    <person name="Pliny the Elder"/>
+                    <person name="Livy"/>
+                </position>
+            </language>
+            <translation>
+                What is accomplished at this point, are deeds of the highest ingenuity and industry. And this a the golden mirror of Roman sagacity and 
+                courage, if only also of justice and restraint. Nobody wrote more in fewer words about Pompey and Caesar than Velleius Paterculus and Pliny. 
+                Give me authors who portray characters as if by showing them before the eyes. And in this lively category of description Livy excels also, as 
+                a nearly unique craftsman of ‘imaging’ [i.e. the representation of the characteristics a person].
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="M. Crassus praetor" type="straight"/>
+        <underline language="LA" method="pen" text="Cum Spartaco deinde" type="straight"/>
+        <underline language="LA" method="pen" text="L. Lucullus in Ponto aduersus M[i]thridatem feliciter pugnauit, coesis" type="straight"/>
+        <underline language="LA" method="pen" text="sexaginta millibus" type="straight"/>
+        <underline language="LA" method="pen" text="Lachares filius Mithridatis, Bosphorirex" type="straight"/>
+        <underline language="LA" method="pen" text="L. Lucullo in amicitiam receptus" type="straight"/>
+        <underline language="LA" method="pen" text="Lucullum, ne persequeretur" type="straight"/>
+        <underline language="LA" method="pen" text="ac Tigranem, summamq[ue] uictoriae" type="straight"/>
+        <underline language="LA" method="pen" text="seditio militum tenuit, qui sequi nolebant" type="straight"/>
+        <underline language="LA" method="pen" text="Cn. Po[m]peius lege" type="straight"/>
+        <underline language="LA" method="pen" text="persequi piratas iussus, qui" type="straight"/>
+        <underline language="LA" method="pen" text="commercium annonae intercluserant" type="straight"/>
+        <underline language="LA" method="pen" text="quadragesimum diem toto mari eos expulit" type="straight"/>
+        <underline language="LA" method="pen" text="acceptis in deditionem piratis" type="straight"/>
+        <underline language="LA" method="pen" text="queritur Metellus gloriam rerum à se gestarum" type="straight"/>
+        <underline language="LA" method="pen" text="Pompeius Romae rationem reddit" type="straight"/>
+        <underline language="LA" method="pen" text="Pompeius ad gerendum bellu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="aduersus Mithridatem profectus" type="straight"/>
+        <underline language="LA" method="pen" text="Parthorum Phraate amicitiam renouauit" type="straight"/>
+        <underline language="LA" method="pen" text="filiu[m] Tigranem, patremq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="DECADIS XI." type="straight"/>
+        <underline language="LA" method="pen" text="Pompeius Mithridatem nocturno praelio uictum coegit" type="straight"/>
+        <underline language="LA" method="pen" text="Tigrane[m] in deditionem" type="straight"/>
+        <underline language="LA" method="pen" text="ademptis Syria, Phoenicia" type="straight"/>
+        <underline language="LA" method="pen" text="regnum Armeniae restituit" type="straight"/>
+        <underline language="LA" method="pen" text="Pompeius cum Mithridarem persequeretur" type="straight"/>
+        <underline language="LA" method="pen" text="in ultimas ignotasq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="gentes penetrauit" type="straight"/>
+        <underline language="LA" method="pen" text="Albanos, qui transitum" type="straight"/>
+        <underline language="LA" method="pen" text="praelio uicit" type="straight"/>
+        <underline language="LA" method="pen" text="fuga[m] Mithridatis per Colchos" type="straight"/>
+        <underline language="LA" method="pen" text="Pompeius in prouinciae formam Pontum redegit" type="straight"/>
+        <underline language="LA" method="pen" text="Pharnaces filius Mithridatis" type="straight"/>
+        <underline language="LA" method="pen" text="bellum patri intulit" type="straight"/>
+        <underline language="LA" method="pen" text="Mithridates" type="straight"/>
+        <underline language="LA" method="pen" text="obsessas in regia" type="straight"/>
+        <underline language="LA" method="pen" text="ueneno sumpto parum profecisset" type="straight"/>
+        <underline language="LA" method="pen" text="milite Gallo, nomine Bithoco" type="straight"/>
+        <underline language="LA" method="pen" text="Cn. Pompeius Iudaeos subegit" type="straight"/>
+        <underline language="LA" method="pen" text="fanum eorum Hierofolyma inuiolatum" type="straight"/>
+        <underline language="LA" method="pen" text="L. Catilina" type="straight"/>
+        <underline language="LA" method="pen" text="in petitione consulatus" type="straight"/>
+        <underline language="LA" method="pen" text="Lentulo praetore" type="straight"/>
+        <underline language="LA" method="pen" text="Cethego &amp; pluribus coniurauit" type="straight"/>
+        <underline language="LA" method="pen" text="de caede consulum" type="straight"/>
+        <underline language="LA" method="pen" text="Ea coniuratio" type="straight"/>
+        <underline language="LA" method="pen" text="industria M. Tullij Cicero" type="straight"/>
+        <underline language="LA" method="pen" text="urbe pulso" type="straight"/>
+        <underline language="LA" method="pen" text="coniuratis omnino sumptum" type="straight"/>
+        <underline language="LA" method="pen" text="Catilina à C." type="straight"/>
+        <underline language="LA" method="pen" text="exercitu coesus" type="straight"/>
+        <underline language="LA" method="pen" text="Clodius accusatur" type="straight"/>
+        <underline language="LA" method="pen" text="mulieris habitu sacrarium, in" type="straight"/>
+        <underline language="LA" method="pen" text="C. Caesar Lusitanos subegit eoq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="captante rempublicam inuadere" type="straight"/>
+        <underline language="LA" method="pen" text="conspiratio inter tres principes" type="straight"/>
+        <underline language="LA" method="pen" text="Cn. Pompeium" type="straight"/>
+        <underline language="LA" method="pen" text="M. Crassum" type="straight"/>
+        <underline language="LA" method="pen" text="C. Caesarem" type="straight"/>
+        <underline language="LA" method="pen" text="agrariae à" type="straight"/>
+        <underline language="LA" method="pen" text="inuito senatu" type="straight"/>
+        <underline language="LA" method="pen" text="Bibulo latae sunt" type="straight"/>
+        <underline language="LA" method="pen" text="Pompeius de liberis Mithridatis" type="straight"/>
+        <underline language="LA" method="pen" text="Tigrane" type="straight"/>
+        <underline language="LA" method="pen" text="Tigranis filio triumphauit" type="straight"/>
+        <underline language="LA" method="pen" text="Magnusq[ue]" type="dotted"/>
+        <underline language="LA" method="pen" text="consalutatus" type="straight"/>
+        <underline language="LA" method="pen" text="situm Germaniae, moresq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="C. Caesar co[n]tra" type="straight"/>
+        <underline language="LA" method="pen" text="Ariouisto duce in Gallia[m] descendera[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="rogatus ab Heduis &amp; Sequanis" type="straight"/>
+        <underline language="LA" method="pen" text="trepidationem militu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="metum nouoru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="allocutione exercitus inhibuit" type="straight"/>
+        <underline language="LA" method="pen" text="praelio Germanos Gallia omni expulit" type="straight"/>
+        <underline language="LA" method="pen" text="Po[m]peio inter" type="straight"/>
+        <underline language="LA" method="pen" text="Milone tribuno" type="straight"/>
+        <underline language="LA" method="pen" text="ingenti gaudio senatus, ac uniuersae Italiae" type="straight"/>
+        <underline language="LA" method="pen" text="Cn. Po[m]peio" type="straight"/>
+        <underline language="LA" method="pen" text="annonae cura ma[n]data" type="straight"/>
+        <underline language="LA" method="pen" text="Caesar Ambianos" type="straight"/>
+        
+        <symbol name="Sun" place="intext"/>
+        <symbol name="SS" place="intext"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!-- aspe -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- igno -->
+        
+        <mark method="pen" name="dot" place="intext"/> <!-- millibus -->
+        <mark method="pen" name="dot" place="intext"/> <!--tenuit-->
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- uicit -->
+        <mark method="pen" name="dot" place="intext"/> <!-- regem, -->
+        <mark language="LA" method="pen" name="dot" place="intext" text="milite"/> 
+        <mark method="pen" name="dot" place="intext"/> <!-- inuadere, -->
+        <mark language="LA" method="pen" name="dot" place="intext" text="inuito"/> 
+        <mark method="pen" name="comma" place="intext"/> <!-- orta[m] allocutione-->
+        <mark method="pen" name="dot" place="intext"/> <!--inhibuit, et-->
+        
+    </annotation>
+</transcription>

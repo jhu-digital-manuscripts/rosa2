@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.176r.tif" pagination="91" reader="John Dee" signature="H 4"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        status ☾ in aurora.
+                    </marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>
+                The position of the Moon at daybreak.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ☾ ☌ cu[m] planetis
+                    </marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Conjunction"/>
+                </position>
+            </language>
+            <translation>
+                The moon in conjunction with planets.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ☾ ☌ ☉
+                    </marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Conjunction"/>
+                    <symbol_in_text name="Sun"/>
+                </position>
+            </language>
+            <translation>
+                The Moon in conjunction with the Sun.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ☾ ☍ cum planetis.
+                    </marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Opposite_planets"/>
+                </position>
+            </language>
+            <translation>
+                The Moon in opposition to the planets.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ☾ in □ cu[m] planetis.
+                    </marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Square"/>
+                </position>
+            </language>
+            <translation>
+                The Moon in ninty degrees to the planets.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ⚹ ☾ cum alijs planetis.
+                    </marginalia_text>
+                    <symbol_in_text name="Sextile"/>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>
+                The moon in sixty degrees to other planets. 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in omni opere, nisi in eis quae uult aliquis" type="straight"/>
+        <underline language="LA" method="pen" text="abscondi, si quis aegrotauerit, morietur illa causa" type="straight"/>
+        <underline language="LA" method="pen" text="Quando Soli, dies illa nihil, in nullo opere bonum" type="straight"/>
+        <underline language="LA" method="pen" text="aeger morietur in ea" type="dotted"/>
+        <underline language="LA" method="pen" text="gratum est exire die illa de quolibet facto, in illa die laetabitur factor" type="dotted"/>
+        <underline language="LA" method="pen" text="aeger  moriet[ur]" type="straight"/>
+        <underline language="LA" method="pen" text="de negociis &amp; causis" type="straight"/>
+        <underline language="LA" method="pen" text="librorum legere libros &amp; scientias" type="dotted"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <errata amendedtext="aliqua" copytext="ailqua" language="LA"/> <!-- FSF: last letter illegible -->
+        
+    </annotation>
+</transcription>

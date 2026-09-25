@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.336r.tif" pagination="123" reader="John Dee" signature="[Hh.vi.]"/>   
+    <annotation>
+        
+        <marginalia anchor_text="miserabiliter" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        miserabiliter
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Miserably.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in eum fuerat teterrimus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        in eu[m] sunt teterrimus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                They 'treated him abominably' [Loeb 141, 115]. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Propino" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        propino
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                I drink to.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="prudentia dulcius, quam, vt caetera auferat, affert certe senectus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Senectus prude[n]tia[m] affert.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Old age brings prudence.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nihil habemus, hoc longum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Nihil homini longum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Nothing is lasting to men.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristoteles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Arist de Histor. li. 4
+                    </marginalia_text>
+                    <person name="Aristotle"/>
+                    <book title="History of Animals"/>
+                </position>
+            </language>
+            <translation>
+                Aristotle in the fourth book of his History of Animals.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nostram longissima[m] aetatem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Longissima n[ost]ra a[e]tas instar vnius Diei
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Our longest age equals only one day.
+            </translation>
+        </marginalia>
+
+        <marginalia anchor_text="rerum humanarum co[n]temptione ac despicientia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Co[n]temptio ac Despicie[n]tia rerum Humanarum.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Contempt for and indifference to human matters.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Chaldaeorum promissa" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Chaldeoru[m] p[ro]missa ex astrorum influentia: ex alchodode[n] 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The promisse of the Chaldeans from the influence of the stars: from the Alchododen. <!-- http://www.skyscript.co.uk/gl/alchocoden.html -->
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="iter" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Iter.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A way.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Theramenes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Theramenes.
+                    </marginalia_text>
+                    <person name="Theramenes"/>
+                </position>
+            </language>
+            <translation>
+                Theramenes.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Critias" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Critiae
+                    </marginalia_text>
+                    <person name="Critias"/>
+                </position>
+            </language>
+            <translation>
+                Critias.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Graeci enim in conuiuiis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Gra[e]coru[m] mos in co[n]uiuijs
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The custom of the Greeks in the symposia.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="morte[m] est eam auguratus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Iam ia[m] morituri augurari solent
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Already they use to be dead and predicted.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Plato in pha[e]done in fine
+                    </marginalia_text>
+                    <person name="Plato"/>
+                    <book title="Phaedo"/>
+                </position>
+            </language>
+            <translation>
+                Plato at the end of his 'Phaedo'.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="duobus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Duplex a[n]i[m]oru[m] Cursus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Two ways of the souls.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mortem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mors quid
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                What death.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="peregrinatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Peregrinatio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Travel.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="iudicio iniquoru[m] circumuentos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Iudicio iniquoru[m] circu[m]venti.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Avoided by the judgement of the unjust.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nec enim cuiquam bono mali quicquam euenire potest" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Bono mali co[n]tinget nihil.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Nothing evil happens to a good person.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Viuere an mori melius sit nemo homo scit.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                No human knows whether it is better to live or to die.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="suum illud, nihil vt affirmet, tenet ad extremum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Socrates suu[m] illud (nihil vt affirmet, tenet ad extremu[m]
+                    </marginalia_text>
+                    <person name="Socrates"/>
+                </position>
+            </language>
+            <translation>
+                Socrates holds to his last idea that nothing is asserted.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        haud paulo malim
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                I shall wish nothing little.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        resonare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To resound.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="[iucun]dior: nihil est enim profecto homini prudentia dulcius, quam, vt caetera auferat, affert certe senectus. Quae vero aetas lo[n]ga est?              aut quid omnino homini? nónne modo pueros, modo adolescentes in cursu à tergo insequens, nec opina[n]tis assequuta est senectus?" type="straight"/>
+        <underline language="LA" method="pen" text="prouecta aetate mortua" type="straight"/>
+        <underline language="LA" method="pen" text="si etiam solstitiali die. Confer" type="straight"/>
+        <underline language="LA" method="pen" text="enim leuius huic leuitati" type="straight"/>
+        <underline language="LA" method="pen" text="nunc quidem cogitationibus molestissimis effoeminamur: vt si ante mors aduentet, quàm Chaldaeorum promissa consequuti" type="straight"/>
+        <underline language="LA" method="pen" text="desydera[n]do pendemus animis, cruciamur, animur. Prò" type="straight"/>
+        <underline language="LA" method="pen" text="miserabiliter" type="straight"/>
+        <underline language="LA" method="pen" text="venenu[m] vt sitiens obduxisset" type="straight"/>
+        <underline language="LA" method="pen" text="eiecit, vt id resonaret" type="straight"/>
+        <underline language="LA" method="pen" text="Propino" type="straight"/>
+        <underline language="LA" method="pen" text="qui in eum fuerat teterrimus" type="straight"/>
+        <underline language="LA" method="pen" text="cui poculu[m] tradituri sunt" type="straight"/>
+        <underline language="LA" method="pen" text="quum iam praecordiis concepta[m] mrte[m] contineret" type="straight"/>
+        <underline language="LA" method="pen" text="morte[m] est eam auguratus" type="straight"/>
+        <underline language="LA" method="pen" text="Vadit in eundem carcere[m], atque in eundum paucis post annis scyphu[m] Socrates eodem scelere iudicu[m], quo tyrannorum" type="straight"/>
+        <underline language="LA" method="pen" text="mórsq[ue] ei somno similis est, qui no[n]numquam etiam sine visis" type="straight"/>
+        <underline language="LA" method="pen" text="migrationem esse mortem in eas oras, quas qui è vita excesserint incolunt, id multo iam beatius est,              te quum iis qui se iudicum numero haberi volunt, euaseris, ad eos venire qui vere iudices appellentur, Minoem, Rhadamanthu[m], AEacum" type="straight"/>
+        <underline language="LA" method="pen" text="qui iuste" type="straight"/>
+        <underline language="LA" method="pen" text="cum fide" type="straight"/>
+        <underline language="LA" method="pen" text="Nec ob eam rem, quum haec exquirerem, sicut" type="straight"/>
+        <underline language="LA" method="pen" text="Nec enim cuiquam bono mali quicquam euenire potest nec viuo" type="straight"/>
+        <underline language="LA" method="pen" text="Vtru[m] autem sit melius, dii immortales sciunt, homne[m] quidem scire arbitror nemine[m]" type="straight"/>
+        <underline language="LA" method="pen" text="paulo hunc animu[m]" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Unidentified" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+       
+       <mark method="pen" name="circumflex" place="head"/>
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        <mark language="LA" method="pen" name="tripunctus" place="tail" text="haud paulo malim"/>
+        
+        <numeral place="right_margin">12</numeral>
+        
+        <errata amendedtext="mittar" copytext="mittat" language="LA"/>
+        
+        <drawing anchor_text="nunc quidem cogitationibus molestissimis effoeminamur:              vt si ante mors aduentet, quàm Chaldaeorum promissa consequuti" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing anchor_text="Peregrinatio" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

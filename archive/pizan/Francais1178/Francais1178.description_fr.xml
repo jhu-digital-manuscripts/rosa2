@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd" xmlns="http://www.tei-c.org/ns/1.0">
+   <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Le Livre de la Cité des Dames</title>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>MSEL</distributor>
+         </publicationStmt>
+         
+         
+         <sourceDesc>
+            <bibl>
+               <note type="format">manuscrit</note>
+               <note type="commonName">Français 1178</note>
+               <title>Le livre de la cité des dames </title>
+               
+               <extent>
+                  <measure quantity="160" unit="folios">160</measure>
+                  <dimensions>
+                     <height unit="mm">302</height>
+                     <width unit="mm">215</width>
+                  </dimensions>
+               </extent>
+               <note type="illustrations">3</note>
+               <note type="material">Parchemin</note>
+               
+               <pubPlace>France</pubPlace>
+               <date notBefore="1400" notAfter="1500">15e si&#x00E8;cle</date>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <settlement>Paris, France</settlement>
+                  <repository>Bibliothèque nationale de France</repository>
+                  <idno>Français 1178</idno>
+               </msIdentifier>
+               
+               <msContents>
+                  <msItem n="1">
+                     <locus from="2r" to="160v">2r-160v</locus>
+                     <title>Le Livre de la Cité des Dames</title>
+                     <note type="textid">Le Livre de la Cité des Dames</note>
+                     <note type="folios">160</note>
+                     <note type="illustrations">3</note>
+                     <note type="linesPerColumn">33</note>
+                     <note type="leavesPerGathering">8</note>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div> </div>
+      </body>
+   </text>
+</TEI>

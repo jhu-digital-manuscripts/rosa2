@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.123r.tif" pagination="229" reader="John Dee" signature="u"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        stella fixa.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Fixed stars.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="fuerit inuenta, reges faciet, &amp; potentes. Sed" type="straight"/>
+        <underline language="LA" method="pen" text="aut ♄, grauia illis belloru[m] certamina" type="straight"/>
+        <underline language="LA" method="pen" text="parte" type="straight"/>
+        <underline language="LA" method="pen" text="est limpida" type="double"/>
+        <underline language="LA" method="pen" text="stella" type="straight"/>
+        <underline language="LA" method="pen" text="inuenta, regem faciet duplex regnum" type="straight"/>
+        <underline language="LA" method="pen" text="numine, radios suos" type="straight"/>
+        <underline language="LA" method="pen" text="homines faciet uenatores" type="straight"/>
+        <underline language="LA" method="pen" text="athletarum magistros" type="straight"/>
+        <underline language="LA" method="pen" text="inuenta, athletas faciet" type="straight"/>
+        
+    </annotation>
+</transcription>

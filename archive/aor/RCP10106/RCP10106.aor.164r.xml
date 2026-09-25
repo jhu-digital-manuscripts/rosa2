@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.164r.tif" pagination="327" reader="John Dee" signature="x 4"/> 
+    <annotation>
+        
+        <marginalia anchor_text="adulterium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Adulteriu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>Adultery.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="signatorem necesse habet, signator" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Scriptor et signator</marginalia_text>
+                </position>
+            </language>
+            <translation>Writer and signatory.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Adulterium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Adulteriu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>Adultery.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Veneum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Venenu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Poison.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tyrannidis affectatae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tyra[n]nis affectata</marginalia_text>
+                </position>
+            </language>
+            <translation>Attempted tyranny.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sola mulier" type="straight"/>
+        <underline language="LA" method="pen" text="&amp;" type="straight"/>
+        
+        <mark method="pen" name="dot" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="90" method="pen" place="right_margin" type="florilegium"/> 
+        
+    </annotation>
+</transcription>

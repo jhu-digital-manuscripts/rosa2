@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.232v.tif" pagination="[225v]" reader="John Dee" signature="[LL[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Electio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Election.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sere, aut planta" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Serere Plantare.</marginalia_text>
+                </position>
+            </language>
+            <translation>To sow, to plant.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Electionis r[ati]o.</marginalia_text>
+                </position>
+            </language>
+            <translation>The reason of an election.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in qualitate aeris" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>De qualitate aëris.</marginalia_text>
+                </position>
+            </language>
+            <translation>On the quality of the air.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="alicuius ciuitatis initio" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Oppidoru[m] origo.</marginalia_text>
+                </position>
+            </language>
+            <translation>The origin of villages.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mercurius" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>☿ Locus.</marginalia_text>
+                    <symbol_in_text name="Mercury"/>
+                </position>
+            </language>
+            <translation>The place of Mercury.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="electio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Electio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Election.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Cum Luna[m] duobus simul planetis aptare nequis" type="straight"/>
+        <underline language="LA" method="pen" text="Sed &amp; loci aliquid significantis, effectum praeparare ab ea statim die incipit" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral language="LA" place="intext" text="Dominus">1</numeral>
+        <numeral language="LA" place="intext" text="respicit eos">2</numeral>
+        <numeral language="LA" place="intext" text="in cardinibus">3</numeral>
+        
+    </annotation>
+</transcription>

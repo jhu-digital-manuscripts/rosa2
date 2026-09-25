@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.488r.tif" pagination="427" reader="John Dee" signature="[DDD.vi.]"/>   
+    <annotation>
+        
+        <marginalia anchor_text="contra Physicos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Contra physicos</marginalia_text>
+                </position>
+            </language>
+            <translation>Contrary to physics.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="P. Nigidio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>P[ublicus] Nigidius</marginalia_text>
+                    <person name="Nigidius Figulus"/>
+                </position>
+            </language>
+            <translation>Publicus Nigidius Figulus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pythagoreos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pythagorei</marginalia_text>
+                </position>
+            </language>
+            <translation>Pythagoreans.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cratippus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cratippus.</marginalia_text>
+                    <person name="Cratippus of Pergamon"/>
+                </position>
+            </language>
+            <translation>Cratippus of Pergamon.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quid est quod semper sit, neque vllum habet ortum, &amp; gignatur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Descriptio eius rei que vel immortalis vel orta est.</marginalia_text>
+                </position>
+            </language>
+            <translation>Description of his thing which is either immortal or born.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nullius enim rei causa remoto, reperiri origo potest" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nullius rei, caussa remota, reperiri origo potest.</marginalia_text>
+                </position>
+            </language>
+            <translation>If the source is remote, no origin of a thing can be discovered.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="speciem quae semper eadem est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Species qu[a]e semp[er] eadem est</marginalia_text>
+                </position>
+            </language>
+            <translation>Apperance which is always the same.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="generatus ortus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>An genitus mundus</marginalia_text>
+                </position>
+            </language>
+            <translation>Whether the world was created.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="tum acer inuestigator, &amp; dilige[n]s earum rerum quae à natura inuolutae videntur" type="straight"/>
+        <underline language="LA" method="pen" text="viguissent, hunc extisse qui illam renouaret. Qui" type="straight"/>
+        <underline language="LA" method="pen" text="gignitur, ex aliqua causa gigni necesse est. nullius enim rei" type="straight"/>
+        <underline language="LA" method="pen" text="quae semper eadem" type="straight"/>
+        <underline language="LA" method="pen" text="Omne igitur caelum siue mundus, siue quo alio vocabulo gaudet" type="straight"/>
+        <underline language="LA" method="pen" text="temporis principatu ortus est" type="straight"/>
+        
+        <symbol name="Unidentified" place="right_margin"/>
+        
+    </annotation>
+</transcription>

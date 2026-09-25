@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.407r.tif" pagination="363" reader="John Dee" signature="Hhhh ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Que[m] Gilbertus &amp; Iohannes, Comites Glouer. &amp; VVar. prae caeteris nobilibus terrae suae, honorificentius susceperu[n]t,              sibi per dies multos in Castris suis, de Tonebrege &amp; Reigate, cum non modico apparatu, conuiuium &amp; maximum gaudium facientes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Castru[m] de Reigat. Io[hann]is Comitis Warrena[e].   
+                    </marginalia_text>
+                    <person name="John de Warenne, 6th Earl of Surrey"/>
+                    <location name="Reigate Castle"/>
+                </position>
+            </language>
+            <translation>
+                Reigate Castle of John de Warenne, 6th Earl of Surrey.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Que[m] Gilbertus &amp; Iohannes, Comites Glouer. &amp; VVar. prae caeteris nobilibus terrae suae, honorificentius susceperu[n]t,              sibi per dies multos in Castris suis, de Tonebrege &amp; Reigate, cum non modico apparatu, conuiuium &amp; maximum gaudium facientes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Castellu[m] de Tonebrigde Gilberti Comitis de Clare      
+                    </marginalia_text>
+                    <person name="Gilbert de Clare, 7th Earl of Gloucester"/>
+                    <location name="Tonbridge Castle"/>
+                </position>
+            </language>
+            <translation>
+                Tonbridge Castle of Gilbert de Clare, 7th Earl of Gloucester.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Iohannes" type="straight"/>
+        <underline language="LA" method="pen" text="in Castris suis, de Tonebrege &amp; Reigate" type="straight"/>
+        <underline language="LA" method="pen" text="Alex. rex Scoti[a]e, &amp; .I. Comes Brita[n]ni[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="soriribus quide[m] regis Eadvvardi" type="straight"/>
+        <underline language="LA" method="pen" text="draco igneus" type="straight"/>
+        <underline language="LA" method="pen" text="Cruce[m] lapidea[m]" type="straight"/>
+        
+        <errata amendedtext="sororibus" copytext="soriribus" language="LA"/>
+        
+    </annotation>
+</transcription>

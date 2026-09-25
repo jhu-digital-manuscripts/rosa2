@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.094v.tif" pagination="[87v]" reader="John Dee" signature="[Y iij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ha[e]c figura magis apertas et physicas causas habet eventuu[m] quos hic memorat q[uo]niam est vera figura ha[e]c, no[n] illa impressa</marginalia_text>
+                </position>
+            </language>
+            <translation>This figure has more clear and physical causes of the events which he mentioned here. Hence this is the true figure, not the printed one.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[ho: 8. m[inutae] 2[0]. - deleted] hor. 10. [20 - deleted] m[inutae]. 6.</marginalia_text>
+                </position>
+            </language>
+            <translation>Ten hours, six minutes.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="mutuum, &amp; res acquisitas malo modo, &amp; ita fuit, &amp;" type="straight"/>
+        
+        <errata amendedtext="34.a" copytext="341." language="LA"/>
+        <errata amendedtext="[deleted]" copytext="19 Capricorn" language="LA"/>
+        
+        <errata amendedtext="[deleted]" copytext="7 Taurus" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="Moon 7.14." language="LA"/>
+        <errata amendedtext="[deleted]" copytext="7 Gemini" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="7 Cancer" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="North_Node 3.31" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="7 Leo" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="Saturn 9.21." language="LA"/>
+        <errata amendedtext="[deleted]" copytext="Venus 1.40." language="LA"/>
+        <errata amendedtext="[deleted]" copytext="7 Virgo" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="7 Libra" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="Sun 10.37." language="LA"/>
+        <errata amendedtext="[deleted]" copytext="Mercury 20.56" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="Mars 23.22." language="LA"/>
+        <errata amendedtext="[deleted]" copytext="7 Scorpio" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="7 Sagittarius" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="7 Capricorn" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="Jupiter 22.22." language="LA"/>
+        <errata amendedtext="[deleted]" copytext="7 Aquarius" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="7 Pisces" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="7 Aries" language="LA"/>
+        
+        <table place="intext" type="astrological_chart">
+            <tr>
+                <th/>
+                <th label="House"/>
+                <th label="Position"/>
+            </tr>
+            <tr>
+                <td>Cancer</td>
+                <td>1</td>
+                <td>5⁰</td>
+            </tr>
+            <tr>
+                <td>North Node</td>
+                <td>1</td>
+                <td>3⁰21'</td>
+            </tr>
+            <tr>
+                <td>Leo</td>
+                <td>2</td>
+                <td>5⁰</td>
+            </tr>
+            <tr>
+                <td>Saturn</td>
+                <td>2</td>
+                <td>9⁰21'</td>
+            </tr>
+            <tr>
+                <td>Venus</td>
+                <td>2</td>
+                <td>1⁰50'</td>
+            </tr>
+            <tr>
+                <td>Virgo</td>
+                <td>3</td>
+                <td>5⁰</td>
+            </tr>
+            <tr>
+                <td>Libra</td>
+                <td>4</td>
+                <td>5⁰</td>
+            </tr>
+            <tr>
+                <td>Mercury</td>
+                <td>4</td>
+                <td>21⁰</td>
+            </tr>
+            <tr>
+                <td>Mars</td>
+                <td>4</td>
+                <td>23½⁰</td>
+            </tr>
+            <tr>
+                <td>Sun</td>
+                <td>4</td>
+                <td>10½⁰</td>
+            </tr>
+            <tr>
+                <td>Scorpio</td>
+                <td>5</td>
+                <td>5⁰</td>
+            </tr>
+            <tr>
+                <td>Sagittarius</td>
+                <td>6</td>
+                <td>5⁰</td>
+            </tr>
+            <tr>
+                <td>Capricorn</td>
+                <td>7</td>
+                <td>5⁰</td>
+            </tr>
+            <tr>
+                <td>Jupiter</td>
+                <td>7</td>
+                <td>22⁰22'</td>
+            </tr>
+            <tr>
+                <td>Aquarius</td>
+                <td>8</td>
+                <td>5⁰</td>
+            </tr>
+            <tr>
+                <td>Pisces</td>
+                <td>9</td>
+                <td>5⁰</td>
+            </tr>
+            <tr>
+                <td>Aries</td>
+                <td>10</td>
+                <td>5⁰</td>
+            </tr>
+            <tr>
+                <td>Taurus</td>
+                <td>11</td>
+                <td>5⁰</td>
+            </tr>
+            <tr>
+                <td>Moon</td>
+                <td>11</td>
+                <td>8⁰</td>
+            </tr>
+            <tr>
+                <td>Gemini</td>
+                <td>12</td>
+                <td>5⁰</td>
+            </tr>
+            <text hand="English_secretary" language="LA">
+                Asce[n]dens [deleted] ♋ 5 Cor. C. ♓ 8. [♒ 14 - deleted]
+                
+                infra [Hora 15 m[inutae] 55. s[ecundae] 40 vera revolutio 35a.. - deleted]
+                ha[e]c aute[m] est annus 33 extactis et curre[n]te 34.
+            </text>
+            <symbol_in_text name="Cancer"/>
+            <symbol_in_text name="Pices"/>
+            <translation>Cancer 5⁰ ascending, midheaven Pisces 8⁰. See below. But this is year 33, and by more exact and current [???] year 34.</translation> <!--JG: Unsure-->
+        </table>
+        
+    </annotation>
+</transcription>

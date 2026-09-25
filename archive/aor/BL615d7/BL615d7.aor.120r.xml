@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.120r.tif" pagination="120" reader="John Dee"/>
+    
+    
+    <annotation>
+        
+       <marginalia hand="Italian" method="pen">
+           <language ident="EN">
+               <position book_orientation="0" place="head">
+                   <marginalia_text>The Admirall His Iornall or Diurnall or Itinerarie.</marginalia_text>
+                   <person name="Columbus"/>
+               </position>
+           </language>
+       </marginalia> 
+        
+        <marginalia anchor_text="Amona" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Al[te]r Mona.</marginalia_text>
+                    <location name="Mona Island"/>
+                </position>
+            </language>
+            <translation>The other Mona.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="dall'Amona" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>dalla Mona</marginalia_text>
+                    <location name="Mona Island"/>
+                </position>
+            </language>
+            <translation>Mona Island.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="vna infermità" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A great siknes of the Admirall</marginalia_text>
+                    <person name="Columbus"/>
+                </position>
+            </language>
+        </marginalia> 
+        
+        <marginalia anchor_text="Le Isole de' Caribi" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Le Isole de' Caribi.</marginalia_text>
+                    <location name="Caribbean"/>
+                </position>
+            </language>
+            <translation>The Caribbean islands.</translation>
+        </marginalia> 
+        
+        
+        <marginalia anchor_text="XXIX di Settembre" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>5 Monthes 18: Dayes [ fro[m] th[e] .24. of Aprill - till the .29. of Septe[m]bre - A[nn]⁰ 1494.</marginalia_text>
+                </position>
+            </language>
+        </marginalia> 
+        
+        <underline language="IT" method="pen" text="fino alla più" type="straight"/>
+        <underline language="IT" method="pen" text="Oriental parte" type="double"/>
+        <underline language="IT" method="pen" text="&amp; da gl'Indiani è chiamata Amona" type="double"/>
+        <underline language="IT" method="pen" text="nel suo diurno" type="double"/>
+        <underline language="IT" method="pen" text="dall'Amona" type="double"/>
+        <underline language="IT" method="pen" text="infermità" type="straight"/>
+        <underline language="IT" method="pen" text="qual priuollo della" type="straight"/>
+        <underline language="IT" method="pen" text="di abandonar l'impresa" type="straight"/>
+        <underline language="IT" method="pen" text="di scoprir tutte le Isole de' Caribi" type="straight"/>
+        <underline language="IT" method="pen" text="XXIX di Settembre" type="straight"/>
+        <underline language="IT" method="pen" text="V mesi" type="straight"/>
+        <underline language="IT" method="pen" text="volta otto" type="straight"/>
+        <underline language="IT" method="pen" text="ch'ei non hauea dormito tre hore : cosa, la qual" type="straight"/>
+        <underline language="IT" method="pen" text="impossibile" type="straight"/>
+        <underline language="IT" method="pen" text="egli istesso ne gli scritti suoi non fosse di ciò testimonio" type="straight"/>
+        
+        
+        <symbol name="Moon" place="tail"/>
+        
+        <symbol name="Jupiter" place="tail"/>
+        
+        
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- istesso ne -->
+        
+        
+        <errata amendedtext="A mona" copytext="Amona" language="IT"/>
+        
+        
+            
+        
+        
+        
+    </annotation>
+    
+</transcription>

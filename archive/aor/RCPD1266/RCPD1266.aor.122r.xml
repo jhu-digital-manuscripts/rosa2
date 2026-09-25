@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.122r.tif" pagination="229" reader="John Dee" signature="v.j."/>
+    <annotation>
+        
+        <marginalia anchor_text="à Iosepho dissentit Eusebius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Iosephus Eusebius ] +</marginalia_text> 
+                    <person name="Titus Flavius Josephus"/>
+                    <person name="Eusebius"/>
+                </position>
+            </language>
+            <translation>Josephus, Eusebius ] +</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Magog" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Magog</marginalia_text>
+                    <person name="Magog"/>
+                </position>
+            </language>
+            <translation>Magog.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Arca req[ui]escit</marginalia_text>  
+                </position>
+            </language>
+            <translation>The arc stops.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aschenezaeos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aschenezij</marginalia_text>
+                </position>
+            </language>
+            <translation>The Ashkenazi people.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Riphaeis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Riphei.</marginalia_text>
+                </position>
+            </language>
+            <translation>The Riphatheans.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Gotthicas" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]iectura sua fallaci vsus" type="straight"/>
+        <underline language="LA" method="pen" text="Gomer &amp; Magog" type="straight"/>
+        <underline language="LA" method="pen" text="per Africam" type="straight"/>
+        <underline language="LA" method="pen" text="Medorum regna" type="straight"/>
+        <underline language="LA" method="pen" text="sunt Aschanazaei, qui socia arma cum Medis tulerunt aduersus Babylonem" type="straight"/>
+        <underline language="LA" method="pen" text="Ararat" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Hadeb" type="straight"/>
+        <underline language="LA" method="pen" text="Carduennis" type="straight"/>
+        <underline language="LA" method="pen" text="Gordiaeum" type="straight"/>
+        <underline language="LA" method="pen" text="sit Hadeb" type="straight"/>
+        <underline language="LA" method="pen" text="in Medorum" type="straight"/>
+        <underline language="LA" method="pen" text="ad Rheginos" type="straight"/>
+        <underline language="LA" method="pen" text="oras occupauit quasdam mundi extremas" type="straight"/>
+        <underline language="LA" method="pen" text="dedisse Riphaeis" type="straight"/>
+        <underline language="LA" method="pen" text="esse Turcas" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+    </annotation>
+</transcription>

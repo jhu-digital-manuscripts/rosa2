@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.140v.tif" pagination="104" reader="Harvey" signature="[G4v]"/>	<!-- ABO 145left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Achillis furore experrectus Alexander, non potuit
+						dormire. Ca[e]sarem excitauit Alexander: Julianu[m]
+					</marginalia_text>
+					<person name="Alexander the Great"/>
+					<person name="Achilles"/>
+					<person name="Julius Caesar"/>
+					<person name="Julian"/>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Ca[e]sar.
+						Nescia virtus Stare loco:
+						solusq[ue] pudor, non vincere cunctos.
+						Sherlij
+					</marginalia_text>
+					<person name="Anthony Shirley"/>
+					<X-ref book_title="Pharsalia" language="LA" person="Lucan" text="Nescia virtus stare loco, solusque pudor non vincere"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						magnifica[e] iam Legationes non Sinu[n]t Ergophilu[m]
+						dormire. Vnicus mundi Neopragmaticus.
+					</marginalia_text>
+					<person name="Ergophilus"/> <!-- CG: I'm wondering if this is a new name/character for Harvey or a historical person? --> <!--JG: I assume the former (based on Harvey's characterization of Ergophilus)-->
+				</position>
+			</language>
+			<translation>
+				Roused by the fury of Achilles, Alexander was unable to sleep.
+				Alexander excited Caesar, and Caesar Julian.
+				'His virtue not knowing how to stand in one place,
+				and his one disgrace, was not to conquer' those joined together.
+				Now, the magnificent ambassadors of Shirley won't let Ergophilus sleep.
+				The sole new pragmatic man in the world.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Certè Arma, virumq[ue] scit: Arma, sophumq[ue] non scit.
+					</marginalia_text>
+					<X-ref book_title="Aeneid" language="LA" person="Virgil" text="Arma, virumq[ue]"/>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Et subitò deficiet,
+						non satis
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Polytechnus, Politicus, mundi peritus.
+						Plus habet Alexandri, quàm Ca[e]saris. Aut Ca[e]sar est
+					</marginalia_text>
+					<person name="Alexander the Great"/>
+					<person name="Julius Caesar"/>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Sine dictatura, vel imperio: ideoq[ue]
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Maiori indiget artiu[m], professionu[m], arcanoru[m] facultate.
+						Nouo viro nullus satis est animi, corporis, fortuna[e] valor.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Clearly he knows 'arms and the man,' but he doesn't know 'arms and the wise man.'
+				And he will immediately fail, as he is not poly-technical, political, or experienced enough in the world.
+				He has more of Alexander than of Caesar. Else Caesar is without a dictatorship or empire, and for that reason,
+				he needs a greater ability in the arts, professions, or mysteries.
+				For the new man, no valor of mind, body, and fortune is enough.
+			</translation>
+		</marginalia>
+		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.140v_0001" marginalia_continues_from="Ha2.141r_0001" marginalia_from_transcription="Ha2.141r.xml">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						<!-- Continued from facing page, left margin, Ha2.141r --> [[G5r]: Ille noster in dicendo, agendoq[ue] grauiss[im]a semper expeditus,
+						et laetus: etiam in Tragicùs Co[micus]. Totus mu[n]dus no[n] dignus tristi =]
+						= vultu: nedum Corde ferenti a[e]grè, id est, sordidè, et miserè.
+						Nam vulgares isti, pla[e]runq[ue] ignobiles, sordidi, miserabil[e]s.
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						At Ille in a[e]rumnosissimis
+						negociationibus
+						semper festiuissimus.
+					</marginalia_text>
+					<emphasis method="pen" text="festiuissimus." type="straight"/>
+				</position>
+			</language>
+			<translation>
+				[[G5r]: Our man there is most ready and cheerful in saying and doing the most serious things;
+				even in a tragedy, he is comic. The entire world is not worthy of a sad] face: still less hardly of bearing a heart; that is, in a foul and wretched manner.
+				For those men are vulgar, and many of them are ignoble, foul, and wretched.
+				But He remains ever lively, even while most afflicted by troubles.
+			</translation>
+		</marginalia>		
+		
+		<underline language="IT" method="pen" text="mise per farne poi seuera dimostratione" type="straight"/>
+		<underline language="IT" method="pen" text="nel letto de" type="straight"/>
+		<underline language="IT" method="pen" text="per commandamento" type="straight"/>
+		<underline language="IT" method="pen" text="medesimo camariere" type="straight"/>
+		<underline language="IT" method="pen" text="fece ben l'vfficio" type="straight"/>
+		<underline language="IT" method="pen" text="letto della padrona" type="straight"/>
+		<underline language="IT" method="pen" text="il Barone, ignorante" type="straight"/>
+		<underline language="IT" method="pen" text="qual Barone, volendo" type="straight"/>
+		<underline language="IT" method="pen" text="giostrar con la sua moglie" type="straight"/>
+		<underline language="IT" method="pen" text="dormire nel" type="straight"/>
+		<underline language="IT" method="pen" text="soggiunse iratamente" type="straight"/>
+		<underline language="LA" method="pen" text="Ingrato homine" type="straight"/>
+		<underline language="IT" method="pen" text="mettere in oblio" type="straight"/>
+		<underline language="IT" method="pen" text="debbe parlare de' suoi nimici" type="straight"/>
+		<underline language="IT" method="pen" text="ributtargli dalla memoria" type="straight"/>
+		<underline language="IT" method="pen" text="natura, che" type="straight"/>
+		<underline language="IT" method="pen" text="suo contrario" type="straight"/>
+		<underline language="IT" method="pen" text="La forza opprimere" type="straight"/>
+		<underline language="IT" method="pen" text="soffocare la ragione" type="straight"/>
+		<underline language="IT" method="pen" text="La Gatta haueua" type="straight"/>
+		<underline language="IT" method="pen" text="il Gallo" type="straight"/>
+		<underline language="IT" method="pen" text="animale turbulente" type="straight"/>
+		<underline language="IT" method="pen" text="lasciaua riposare i" type="straight"/>
+		<underline language="IT" method="pen" text="Il Gallo da" type="straight"/>
+		<underline language="IT" method="pen" text="per loro vtilità, conciosia" type="straight"/>
+		<underline language="IT" method="pen" text="facende gli suegliaua" type="straight"/>
+		
+		<symbol name="Sun" place="right_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- damigel -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- sen -->
+		
+		<mark method="pen" name="dot" place="intext"/> <!-- Damigella, done -->
+		<mark method="pen" name="dot" place="intext"/> <!-- memoria, come -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="suo contrario"/>
+		
+    </annotation>
+</transcription>

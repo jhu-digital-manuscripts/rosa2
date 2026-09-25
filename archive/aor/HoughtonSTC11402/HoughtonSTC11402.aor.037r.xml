@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.037r.tif" reader="Harvey" signature="Dvi[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>s[upr]a.</marginalia_text>
+                </position>
+            </language>
+            <translation>[See] above.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="frenche men; most valiant at the fyrst brayde" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>French, most ualiant at [the] first brayde.</marginalia_text>
+                    <emphasis method="pen" text="French" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Galli, et Franci:</marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>cockish, &amp; frealick.</marginalia_text>
+                </position>
+            </language>
+            <translation>Gauls and Franks: cockish, &amp; frealick.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Conueniu[n]t reb[us]</marginalia_text>
+                    <X-ref book_title="Paulinus et Polla" language="LA" person="Richard of Venosa" text="conveniunt rebus nomina saepe suis"/>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Nomina sa[e]pe</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>suis.</marginalia_text>
+                </position>
+            </language>
+            <translation>Names often correspond to their objects.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="vnto the rore, and noyse" type="straight"/>
+        <underline language="EN" method="pen" text="eyther flewe, or toke prisoners" type="straight"/>
+        <underline language="EN" method="pen" text="ennemies racynge out" type="straight"/>
+        <underline language="EN" method="pen" text="to pitche theyr dartes in" type="straight"/>
+        <underline language="EN" method="pen" text="army lusty and fresshe" type="straight"/>
+        <underline language="EN" method="pen" text="almost breathelesse" type="straight"/>
+        <underline language="EN" method="pen" text="frenche men &amp;" type="straight"/>
+        <underline language="EN" method="pen" text="Samnites" type="straight"/>
+        <underline language="EN" method="pen" text="valiant at the fyrste brayde" type="straight"/>
+        <underline language="EN" method="pen" text="grewe and" type="straight"/>
+        <underline language="EN" method="pen" text="more and more" type="straight"/>
+        <underline language="EN" method="pen" text="fyrste encountre" type="straight"/>
+        <underline language="EN" method="pen" text="to susteyne and forbere" type="straight"/>
+        <underline language="EN" method="pen" text="wery theyr" type="straight"/>
+        <underline language="EN" method="pen" text="vawwarde" type="straight"/>
+        <underline language="EN" method="pen" text="hardened with longe vse and exercyse, and that" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="army lusty and fresshe"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/> 
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!--brayde, and-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="more and more"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="tail" text="hardened with longe vse and exercyse, and that"/>
+        <mark method="pen" name="plus_sign" place="tail"/>
+        
+    </annotation>
+</transcription>

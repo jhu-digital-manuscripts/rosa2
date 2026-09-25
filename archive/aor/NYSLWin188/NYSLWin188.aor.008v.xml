@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.008v.tif" pagination="[8[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Materia prima" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Materia prima</marginalia_text>
+                </position>
+            </language>
+            <translation>Chief material.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="die Materia prima getheilt in vier theil das ist in die vier Elementen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Materia prima in [quatuor] Elementa diuidebatur</marginalia_text>
+                </position>
+            </language>
+            <translation>The chief material is divided into four elements.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="mehr dann dreierley Species suchen" type="straight"/>
+        <underline language="DE" method="pen" text="Materia prima" type="straight"/>
+        <underline language="LA" method="pen" text="Prima materia" type="straight"/>
+        <underline language="DE" method="pen" text="Gott die Materia prima getheilt in vier their das" type="straight"/>
+        <underline language="DE" method="pen" text="ist in die vier Elementen" type="straight"/>
+        <underline language="DE" method="pen" text="Vnd ein jeglichs geformiert in sein Praedestinirte form" type="straight"/>
+        
+    </annotation>
+</transcription>

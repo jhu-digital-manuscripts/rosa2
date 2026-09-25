@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.008r.tif" pagination="15" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Verum in studijs magis uacabit unus uni." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Unus uni.</marginalia_text> 
+                </position>
+            </language>
+            <translation>One for one.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cum praesertim multò plus secreti temporis studia desiderent." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Studij tempus.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Study period.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Lectio quoque non omnis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lectio.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Reading.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nostros concubinos" type="straight"/>
+        <underline language="LA" method="pen" text="Nam optimus quisque praeceptor frequentia gaudet, ac maiore se theatro dignum putat" type="straight"/>
+        <underline language="LA" method="pen" text="incomparabilem magistrum" type="straight"/>
+        <underline language="LA" method="pen" text="cum praesertim multò plus secreti" type="straight"/>
+        
+        <drawing anchor_text="Nam optimus quisque praeceptor frequentia gaudet, ac maiore se theatro dignum putat" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="Lectio" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

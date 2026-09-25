@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.273r.tif" pagination="59" reader="John Dee" signature="H.iij."/>
+    
+    
+    <annotation>
+        
+        <marginalia anchor_text="Simon de monte forti filius Simonis de monte forti" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Simon de monte forti. iunior.</marginalia_text>
+                    <person name="Simon de Montfort, 5th Earl of Leicester"/>
+                </position>
+            </language>
+            <translation>Simon de Montfort, junior.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Gilbertus de Clare" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>.0. Gilbertus de Clare</marginalia_text>
+                    <person name="Gilbert de Clare, 5th Earl of Gloucester"/>
+                </position>
+            </language>
+            <translation>0. Gilbert de Clare.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="Gulielmo de longa spata profectus" type="straight"/>
+        <underline language="LA" method="pen" text="Simon de monte forti filius Simonis de monte forti, qui" type="straight"/>
+        <underline language="LA" method="pen" text="dom. 1209." type="straight"/>
+        <underline language="LA" method="pen" text="Leicestriae obtinuit comitatum" type="straight"/>
+        <underline language="LA" method="pen" text="Seneschallia Angliae" type="straight"/>
+        <underline language="LA" method="pen" text="castitatem publicè" type="straight"/>
+        <underline language="LA" method="pen" text="Cecidit in hoc tumultu miles illustris Gilbertus de Clare alijq[ue] nonnulli" type="straight"/>
+        <underline language="LA" method="pen" text="Dauid princeps Walliae ex sorore nepos" type="straight"/>
+        
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        
+        
+    </annotation>
+    
+</transcription>

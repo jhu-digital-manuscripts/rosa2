@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+  <license>
+    <url>http://creativecommons.org/licenses/by/4.0/</url>
+    <logo>https://i.creativecommons.org/l/by/4.0/88x31.png</logo>
+  </license>
+  <totalPages>56</totalPages>
+  <dates>
+    <startDate>1548</startDate>
+    <endDate>1548</endDate>
+  </dates>
+  <texts>
+    <text id="1">
+      <language>la</language>
+      <title>In Caii Plinii Secvndi Natvralis historiae argutissimi Scriptoris I. &amp; II. Cap: Libri XXX. Commentarius : Naturalis quidem Magiae compendiariam rationem, plenam mysterijs, profundissimamq[ue] rerum secretissimarum Contemplationem, Naturam ... totiusq[ue] Naturae cognitionem complectens ; Cvi Praeterea Adiecta Est De Fascinationibus Disputatio elegans &amp; erudita, ad cognoscendosq[ue] Naturae scretiores effectus, mire vtilis &amp; necessaria. Item de Icantatione, &amp; Adiuratione, Colliq[ue] suspensione Epistola incerti Authoris, vnà cum Ioannis Tritemii Spancheymensis viri doctissimi ... in Libros suos Steganographi[a]e, Epistola apologetica ;In Plinianae lectionis Studiosorum gratiam</title>
+      <textId>pliny</textId>
+      <pages end="v28" start="1r">56</pages>
+    </text>
+  </texts>
+  <bibliographies>
+    <bibliography lang="en">
+      <title>In Caii Plinii Secvndi Natvralis historiae argutissimi Scriptoris I. &amp; II. Cap: Libri XXX. Commentarius : Naturalis quidem Magiae compendiariam rationem, plenam mysterijs, profundissimamq[ue] rerum secretissimarum Contemplationem, Naturam ... totiusq[ue] Naturae cognitionem complectens ; Cvi Praeterea Adiecta Est De Fascinationibus Disputatio elegans &amp; erudita, ad cognoscendosq[ue] Naturae scretiores effectus, mire vtilis &amp; necessaria. Item de Icantatione, &amp; Adiuratione, Colliq[ue] suspensione Epistola incerti Authoris, vnà cum Ioannis Tritemii Spancheymensis viri doctissimi ... in Libros suos Steganographi[a]e, Epistola apologetica ;In Plinianae lectionis Studiosorum gratiam</title>
+      <commonName>Pliny the Elder, Naturalis historiae (Würzburg, 1548)</commonName>
+      <dateLabel>1548</dateLabel>
+      <origin>Wurzburg</origin>
+      <currentLocation>London, England</currentLocation>
+      <repository>Royal College of Physicians Library</repository>
+      <shelfmark>9978 D1/19-c-27</shelfmark>
+      <author>
+        <name>Pliny, Caius</name>
+        <id>http://www.isni.org/isni/0000000123213947</id>
+      </author>
+      <reader>
+        <name>John Dee</name>
+        <id>http://www.isni.org/isni/0000000122785193</id>
+      </reader>
+      <website>https://archaeologyofreading.org/bibliography/Dee-corpus/Pliny</website>
+      <note>Record: http://rcp.soutron.net/Portal/Default/RecordView/Index/35457</note>
+    </bibliography>
+  </bibliographies>
+</book>

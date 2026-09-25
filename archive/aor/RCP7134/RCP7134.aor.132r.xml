@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.132r.tif" pagination="125" reader="John Dee" signature="ii"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Si in co[n]iugem, et in amicos etia[m] et inimicos, in servos pr[a]eterea, et cur no[n] in rege[m]
+                    ip[su]m: ergo et in populu[m] [etc].</marginalia_text>
+                </position>
+            </language>
+            <translation>If [it can affect] a spouse, and friends, also even enemies, besides slaves, and why not the king himself: therefore even the people, et cetera.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pulchra q[ua]n[d]o</marginalia_text> 
+                </position>
+            </language>
+            <translation>When [it is] beautiful.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Responsum</marginalia_text>
+                </position>
+            </language>
+            <translation>Reply.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Egregiu[m] responsu[m[</marginalia_text>
+                </position>
+            </language>
+            <translation>An outstanding reply.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="coniugem" type="straight"/>
+        <underline language="LA" method="pen" text="imò multum faciunt per uiam causae, modum autem longum" type="straight"/>
+        <underline language="LA" method="pen" text="matre[m] &amp; uitam" type="straight"/>
+        <underline language="LA" method="pen" text="peste" type="straight"/>
+        <underline language="LA" method="pen" text="clade" type="straight"/>
+        <underline language="LA" method="pen" text="ruina" type="straight"/>
+        <underline language="LA" method="pen" text="fame" type="straight"/>
+        <underline language="LA" method="pen" text="leduntur tales" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; sic ijdem duo homines, quatuor, &amp; longe plures, inter se affectus habent diuersoru[m] comparatione" type="straight"/>
+        <underline language="LA" method="pen" text="magna &amp; longa experientia" type="straight"/>
+        <underline language="LA" method="pen" text="animo ueritatis studiosissimo" type="straight"/>
+        <underline language="LA" method="pen" text="unq[uam] de" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        
+        <numeral place="right_margin">.1.</numeral>
+        <numeral place="right_margin">2</numeral>
+        
+        <numeral language="LA" place="intext" text="quodam">1</numeral>
+        <numeral language="LA" place="intext" text="magna &amp; longa experientia">2</numeral>
+        <numeral language="LA" place="intext" text="animo ueritatis studiosissimo">3</numeral>
+        
+        <drawing anchor_text="imò multum faciunt per uiam causae, modum autem longum" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.044v.tif" pagination="88" reader="John Dee" signature="[f 4[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Qua in Alcorano bona</marginalia_text>  
+                    <book title="Quran"/>
+                </position>
+            </language>
+            <translation>What good things are in the Quran</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Chosroë</marginalia_text>
+                    <person name="Khosrow II"/>      
+                </position>
+            </language>
+            <translation>Khosrow.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="profeta[m], Muhamedem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Muhamedes propheta.</marginalia_text> 
+                    <person name="Muhammad"/>
+                </position>
+            </language>
+            <translation>The prophet Muhammad.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="reciperent de Christo" type="straight"/>
+        <underline language="LA" method="pen" text="quibus maximè contraueniunt" type="straight"/>
+        <underline language="LA" method="pen" text="noti Iudaei" type="double"/>
+        <underline language="LA" method="pen" text="co[n]ceptus de spiritu" type="straight"/>
+        <underline language="LA" method="pen" text="uirgine natus" type="straight"/>
+        <underline language="LA" method="pen" text="miracula puer et" type="straight"/>
+        <underline language="LA" method="pen" text="Deo super omnes" type="straight"/>
+        <underline language="LA" method="pen" text="dextra Dei sedens" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; inde sit" type="straight"/>
+        <underline language="LA" method="pen" text="anno 1548, surgent" type="straight"/>
+        <underline language="LA" method="pen" text="qui secretò suis praedixit, post" type="straight"/>
+        <underline language="LA" method="pen" text="annos ruitur u[t] eius dogma sensim, uidelicet" type="straight"/> 
+         
+    </annotation>
+</transcription>

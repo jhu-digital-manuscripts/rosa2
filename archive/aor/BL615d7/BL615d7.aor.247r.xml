@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.247r.tif" reader="John Dee" signature="247"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>No[n] est verum.</marginalia_text>
+                </position>
+            </language>
+            <translation>It is not true.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Invidiosa dictum tortuasum sunt fabula Dr Princison Mudor Cambrita[n]n[ia]</marginalia_text>
+                </position>
+            </language>
+            <translation>An tortuous saying, envious are the stories </translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="ch'eglisia stato il primo scopritore dell'Indie Occide[n]tali: come che poi" type="straight"/>
+        <underline language="IT" method="pen" text="Imperator di" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.195r.tif" pagination="381" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Aelfricus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ælfricus [deleted]
+                    </marginalia_text>
+                    <person name="Aelfric of Abingdon"/>  
+                </position>
+            </language>
+            <translation>
+                Ælfric.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Emmam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Emma siue Imma, Normania[e] dicitur Ælfgiva saxonicè
+                    </marginalia_text>
+                    <person name="Emma of Normandy"/>
+                    <person name="Ælfgifu of York"/>
+                </position>
+            </language>
+            <translation>
+                Emma or Imma of Normandy was called Ælfgifu in the Saxon language. 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Aelfricus" type="straight"/>
+        <underline language="LA" method="pen" text="Habuit rex Aethelredus Emmam filliam praedicti Ducis" type="straight"/>
+        <underline language="LA" method="pen" text="Aelfredum" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Eadvvardum" type="straight"/>
+        
+    </annotation>
+</transcription>

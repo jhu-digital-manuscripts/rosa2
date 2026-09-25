@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.041v.tif" pagination="xxxvii[v]" reader="Harvey" signature="Ki[v]"/>
+    <annotation>
+    	<!-- Marginalia -->
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="head">
+    				<marginalia_text>
+    					Carriages necessary, &amp; conuenient.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="head">
+    				<marginalia_text>
+    					Nota.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Note.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="head">
+    				<marginalia_text>
+    					Petycaptains
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<!-- Underlines -->
+	<underline language="EN" method="pen" text="carrie of necessity the tentes" type="straight"/>
+    	<underline language="EN" method="pen" text="the vessels to seeth" type="straight"/>
+    	<underline language="EN" method="pen" text="axes, barres of" type="straight"/>
+    	<underline language="EN" method="pen" text="the lodinges" type="straight"/>
+    	<underline language="EN" method="pen" text="carrye anye other thing" type="straight"/>
+    	<underline language="EN" method="pen" text="that the heades" type="straight"/>
+    	<underline language="EN" method="pen" text="so many commaunders" type="straight"/>
+    	<underline language="EN" method="pen" text="confound all" type="straight"/>
+    	<underline language="EN" method="pen" text="when it were" type="straight"/>
+    	<underline language="EN" method="pen" text="to one man" type="straight"/>
+    	<underline language="EN" method="pen" text="referring it" type="straight"/>
+    	<underline language="EN" method="pen" text="cause order" type="straight"/>
+    	<underline language="EN" method="pen" text="without them, it is impossible" type="straight"/>
+    	<underline language="EN" method="pen" text="a wall, which on" type="straight"/>
+    	<underline language="EN" method="pen" text="to haue many proppes, &amp; thicke" type="straight"/>
+    	<underline language="EN" method="pen" text="then few, though they were" type="straight"/>
+    	<underline language="EN" method="pen" text="of one a lone" type="straight"/>
+    	<underline language="EN" method="pen" text="remedie the ruine a" type="straight"/>
+    	<underline language="EN" method="pen" text="euery tenne" type="straight"/>
+    	<underline language="EN" method="pen" text="there bee one, of more" type="straight"/>
+    	<underline language="EN" method="pen" text="more harte" type="straight"/>
+    	<underline language="EN" method="pen" text="of more aucthoritie" type="straight"/>
+    	<underline language="EN" method="pen" text="stomacke" type="straight"/>
+    	<underline language="EN" method="pen" text="woordes, and with example" type="straight"/>
+    	<underline language="EN" method="pen" text="declared, bee" type="straight"/>
+    	<underline language="EN" method="pen" text="the heads" type="straight"/>
+    	<underline language="EN" method="pen" text="the Ansignes" type="straight"/>
+    	<underline language="EN" method="pen" text="the Drummes" type="straight"/>
+    	<underline language="EN" method="pen" text="none doth his office" type="straight"/>
+    	<underline language="EN" method="pen" text="Peticaptaynes do the same, for whiche" type="straight"/>
+    	<underline language="EN" method="pen" text="difference, betweene euery" type="straight"/>
+    	<underline language="EN" method="pen" text="they lodge together" type="straight"/>
+    	<underline language="EN" method="pen" text="places, bee a rule, &amp; a temperaunce" type="straight"/>
+    	<underline language="EN" method="pen" text="them more wages, then to other" type="straight"/>
+    	<underline language="EN" method="pen" text="doo some particular feate" type="straight"/>
+    	
+    	<!-- Symbols -->
+    	<symbol language="EN" name="Bisected_circle" place="left_margin" text="more harte"/>
+    	
+    	<!-- Marks -->
+    	<mark method="pen" name="hash" place="left_margin"/>
+    	<mark method="pen" name="hash" place="left_margin"/>
+    	<mark language="EN" method="pen" name="quotation_mark" place="left_margin" text="to haue many proppes, &amp; thicke"/> <!--JG: I'm not sure whether this is a quotation mark. Please put 'unkown mark' in comment field-->
+    	<mark language="EN" method="pen" name="quotation_mark" place="left_margin" text="few, though they were"/> <!--Ibid.-->
+    	<mark method="pen" name="quotation_mark" place="left_margin"/> <!--Ibid.-->
+    	<mark method="pen" name="hash" place="left_margin"/>
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="Peticaptaynes do the same, for whiche"/>
+
+
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="the tentes"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="the vessels to seeth"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="axes"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="barres of Iro[n]"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- lodinges, and -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="carrye any other thing"/>
+    	<mark method="pen" name="comma" place="intext"/> <!-- heades of -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="so many commaunders"/>
+    	<mark language="EN" method="pen" name="hash" place="intext" text="confound all"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="to one man"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- man, but -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="cause order"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="of one a lone"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="remedie the ruine a"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="euery tenne"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="there bee one"/>
+    	<mark language="EN" method="pen" name="hash" place="intext" text="of more life"/> 
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="of more aucthoritie"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- fight, & -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="none doth his office"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="Peticaptaynes"/>
+  
+    </annotation>
+</transcription>

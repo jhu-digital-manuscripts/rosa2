@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.094v.tif" pagination="[94[v]]" reader="John Dee"/> 
+    
+    <annotation>
+        
+        <marginalia anchor_text="Caribi" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Caribi</marginalia_text>
+                    <location name="Caribbean"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nay that is not so: it was all occupyed in th[e] fort.</marginalia_text> <!--JG: Not entirely sure abt 'not'-->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="costame" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>The Rib of a ship</marginalia_text>  
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="V di Nouembre" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>5. Nove[m]ber.</marginalia_text>  
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>.2. Indians gotten.</marginalia_text>  
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" id="BL615d7:615_d_7_f094v:m0001" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>That must be enquired after.</marginalia_text>  
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="non si è veduta cosa alcuna di ferro fra quelle" type="straight"/>
+        <underline language="IT" method="pen" text="di per di quel" type="straight"/>
+        <underline language="IT" method="pen" text="stato riferito da quelli, che erano dismontati in" type="straight"/>
+        <underline language="IT" method="pen" text="fosse stato di ferro" type="straight"/>
+        <underline language="IT" method="pen" text="Caribi" type="double"/>
+        <underline language="IT" method="pen" text="scorrendo, &amp; rubando fino" type="straight"/>
+        <underline language="IT" method="pen" text="alla Spagnuola" type="double"/>
+        <underline language="IT" method="pen" text="quel tegame da'" type="straight"/>
+        <underline language="IT" method="pen" text="il corpo della" type="double"/>
+        <underline language="IT" method="pen" text="perdè l'Ammiraglio" type="straight"/>
+        <underline language="IT" method="pen" text="lor trouato, nelle medesime case" type="straight"/>
+        <underline language="IT" method="pen" text="ferri" type="double"/>
+        <underline language="IT" method="pen" text="stato il corpo" type="double"/>
+        <underline language="IT" method="pen" text="di quella naue" type="double"/>
+        <underline language="IT" method="pen" text="stato il" type="triple"/> 
+        <underline language="IT" method="pen" text="costame di" type="double"/>
+        <underline id="BL615d7:615_d_7_f094v:u0001" language="IT" method="pen" text="alcun'altra" type="grid"/> 
+        <underline language="IT" method="pen" text="rotta" type="double"/>
+        <underline language="IT" method="pen" text="che i venti" type="straight"/>
+        <underline language="IT" method="pen" text="dalle nostre" type="grid"/>
+        <underline language="IT" method="pen" text="non tolsero il tegame" type="double"/>
+        <underline language="IT" method="pen" text="prendere alcuna" type="double"/>
+        <underline language="IT" method="pen" text="persona" type="straight"/>
+        <underline language="IT" method="pen" text="distanza, &amp;" type="straight"/>
+        <underline language="IT" method="pen" text="doue era la" type="straight"/>
+        <underline language="IT" method="pen" text="condusse vn giouane" type="triple"/>
+        
+        <mark method="pen" name="bracket" place="intext"/>  <!-- scriuere di -->
+        <mark method="pen" name="bracket" place="intext"/>  <!-- di quel -->
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- Guadalupe Caribi -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- doue era -->
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        <physical_link>
+            <marginal_annotation idref="BL615d7:615_d_7_f094v:m0001"/>
+            <marginal_annotation idref="BL615d7:615_d_7_f094v:u0001"/>
+            <relation from="BL615d7:615_d_7_f094v:m0001" to="BL615d7:615_d_7_f094v:u0001" type="directed"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

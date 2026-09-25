@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.022v.tif" pagination="28" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia anchor_text="tantum itineris contendere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        tantu[m] itineris co[n]tendere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To hurry so long a journey.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="palmas, hanc primam esse tamen lemniscatam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        palma lemniscata
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Grand triumph.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cupiditas, &amp; auaritia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Cupiditas Auaritia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Greed, avarice.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aphricanus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Aphricanus.
+                    </marginalia_text>
+                    <person name="Scipio Aemilianus"/>
+                </position>
+            </language>
+            <translation>
+                Scipio Aemilianus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="multa scelerate, multa audacter, multa improbe fecisti: vnu[m] stultissime" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        scelerate audacter improbè stultiss[im]è auare perfidiose
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Criminally, audaciously, shamelessly, most foolishly, avariciously, treacherously.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nónne vobis haec, quae audistis" type="straight"/>
+        <underline language="LA" method="pen" text="lemniscatam" type="straight"/>
+        <underline language="LA" method="pen" text="Profecto no[n] tam perspicue istorum maleficia videremus, nisi ipsos caecos ederet cupiditas, &amp; auaritia, &amp; audacia. alter" type="straight"/>
+        <underline language="LA" method="pen" text="neque teste quisquam vtitur eo, qui de accusatoris subsellio surgit" type="straight"/>
+        
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">30</numeral>
+        
+        <errata amendedtext="Erucìi" copytext="Erucii" language="LA"/>
+        
+    </annotation>
+</transcription>

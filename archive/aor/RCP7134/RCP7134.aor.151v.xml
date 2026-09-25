@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.151v.tif" pagination="[144v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vera anni qualitas etia[m] dabit co[e]li figuram in revolutione ♃.</marginalia_text> 
+                    <symbol_in_text name="Jupiter"/>
+                </position>
+            </language>
+            <translation>The true quality of a year; he will even give a figure of the sky in a revolution of Jupiter.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="annis 24 ad" type="straight"/>
+        
+        <errata amendedtext="[deleted]" copytext="5" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="25" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="29" language="LA"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.136v.tif" pagination="96" reader="Harvey" signature="[F8v]"/>	<!-- ABO 141left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Nemini vnq[uam] satis fuit bonorum, vel animi, vel corporis,
+						vel fortuna[e]. Quò acrior
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						opus est industria, et incessans
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						super omnes Entelechia. Crassus in
+					</marginalia_text>
+					<person name="Marcus Licinius Crassus"/>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						domo: Cicero in foro:
+					</marginalia_text>
+					<person name="Cicero"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						^ Cato in Senatu
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						^ Ca[e]sar in campo voluit esse
+					</marginalia_text>
+					<person name="Julius Caesar"/>
+				</position>				
+			</language>
+			<language ident="EL">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						πάντων κράτιστος.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Egregiarum Mentium Sempiterna
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						hypothesis. Quid prodest Optimum Sine
+						Effigie?
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				No one ever had enough good qualities, either in the mind, the body, or fortune.
+				Therefore a more severe industriousness is necessary, along with an unceasing Actualization above all things.
+				Crassus at home, Cicero in the forum, Cato in the senate, Caesar in the field: all wanted to the be [greatest of all].
+				The eternal proposition of eminent minds. What is the point of being the best without a likeness?
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Ironia Socratis mitigat Inuidiam, et mellificat [v]ia[m]. <!-- CG: Unsure of this last word. --> 
+					</marginalia_text>
+					<person name="Socrates"/>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Viri est,
+						quantiscunq[ue] potest modis,
+						seipsum semper probare virum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Socrates' irony softens envy, and sweetens [the road].
+				A man has however many ways he can use,
+				always to test himself as a man.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Pyrro.
+					</marginalia_text>
+					<person name="Pyrrhus of Epirus"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Axiophili vir serius, et solidus.
+						{ Semper ad effectum: puncto strictissimus omni.
+						Viuidus exultat nocte, dieq[ue] vigor.
+						Aut Nihil suprà: aut demonstra: et emineat dignior.
+					</marginalia_text>
+					<person name="Axiophilus"/>
+				</position>
+			</language>
+			<translation>
+				For Axiophilus a serious and solid man.
+				Always concerned with the outcome, most strict with every point.
+				This lively man exults vigor by day and by night.
+				Either nothing is above him, or you must prove it; and let him stand out as more worthy.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Aduocatus Agrippa[e], et Speculatoris, fori monarcha.
+					</marginalia_text>
+					<!-- CG: Not sure which Agrippa this is. -->
+					<person name="Guillaume Durand"/>
+				</position>
+			</language>
+			<translation>
+				The counselor of Agrippa and the Speculator, the monarch of the forum.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="necessaria a' giouani" type="straight"/>
+		<underline language="IT" method="pen" text="diletteuole a' vecchi" type="straight"/>
+		<underline language="IT" method="pen" text="vtile a' poueri" type="straight"/>
+		<underline language="IT" method="pen" text="gloria a felici" type="straight"/>
+		<underline language="IT" method="pen" text="sollazzo" type="straight"/>
+		<underline language="IT" method="pen" text="gl'infelici" type="straight"/>
+		<underline language="IT" method="pen" text="illustra la nobilità" type="straight"/>
+		<underline language="IT" method="pen" text="l'ignobilità nobilita" type="straight"/>
+		<underline language="IT" method="pen" text="che la virtù" type="straight"/>
+		<underline language="IT" method="pen" text="PIERO vinse brauamente" type="straight"/>
+		<underline language="IT" method="pen" text="campale, i Romani" type="straight"/>
+		<underline language="IT" method="pen" text="tanta perdita" type="straight"/>
+		<underline language="IT" method="pen" text="Ohime che" type="straight"/>
+		<underline language="IT" method="pen" text="vinciamo vn'altra" type="straight"/>
+		<underline language="IT" method="pen" text="perduta la" type="straight"/>
+		<underline language="IT" method="pen" text="l'antiuedere" type="straight"/>
+		<underline language="IT" method="pen" text="de'Romani al sicuro" type="straight"/>
+		<underline language="IT" method="pen" text="che Cartagine" type="straight"/>
+		<underline language="IT" method="pen" text="Greci messi in soggettione" type="straight"/>
+		<underline language="IT" method="pen" text="sauio Scipione" type="straight"/>
+		<underline language="IT" method="pen" text="gran periglio" type="straight"/>
+		<underline language="IT" method="pen" text="auuersari" type="straight"/>
+		<underline language="IT" method="pen" text="da temere" type="straight"/>
+		<underline language="IT" method="pen" text="riuerire" type="straight"/>
+		<underline language="IT" method="pen" text="fusse diuino" type="straight"/>
+		<underline language="IT" method="pen" text="corruttione" type="straight"/>
+		<underline language="IT" method="pen" text="discordie" type="straight"/>
+		<underline language="IT" method="pen" text="rouina di quello inuittissimo" type="straight"/>
+		<underline language="IT" method="pen" text="dimostrarono" type="straight"/>
+		
+		<symbol name="Sun" place="right_margin"/>
+		
+		<symbol name="SS" place="intext"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- final -->
+		
+		<mark method="pen" name="dot" place="intext"/> <!-- diuino, le -->
+		
+    </annotation>
+</transcription>

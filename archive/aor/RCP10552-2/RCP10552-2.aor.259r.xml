@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.259r.tif" pagination="35" reader="John Dee" signature="Ej"/>
+    <annotation>
+        
+        <marginalia anchor_text="Wulnotheum &amp; Morcharum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Wulnotheus Morcharus.</marginalia_text>
+                    <person name="Wulfnoth Godwinson"/>
+                    <person name="Morcar"/>
+                </position>
+            </language>
+            <translation>Wulfnoth. Morcar.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Castellum sancti Walerici &amp; Albamarle &amp; On &amp; Fiscamium" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Castellu[m] [ S[anc]ti Walerici Albamarla[e] On Fiscamiu[m]</marginalia_text>
+                    <location name="Saint-Valery-en-Caux"/>
+                    <location name="Aumale"/>
+                    <location name="Mortemer-sur-Eaulne"/>
+                    <location name="Fecamp"/>
+                </position>
+            </language>
+            <translation>The castle of: Saint-Valery-en-Caux, Aumale, Mortemer-sur-Eaulne, Fecamp.</translation> <!-- DO: Might be Mortemer-sur-Eaulne, looking at: https://books.google.co.uk/books?id=2ulxJ9Dfd9MC&pg=PA273&lpg=PA273&dq=william+rufus+norman+castles+aumale&source=bl&ots=rhNWrbx4b6&sig=3fJgkBTI1ODCeqbfvpsqnYWe94s&hl=en&sa=X&ved=0ahUKEwim5KG4_Y3UAhUHvRQKHTIPCx8Q6AEITDAH#v=onepage&q=william%20rufus%20norman%20castles%20aumale&f=false -->
+        </marginalia>
+        
+        <marginalia anchor_text="Caerlel, restaurauit" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Caerleil reedificata.</marginalia_text>
+                  <location name="Caerleon"/>
+                </position>
+            </language>
+            <translation>Caerleon rebuilt.</translation>
+        </marginalia>
+                
+        <marginalia anchor_text="5219" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>J.D. + 5158.</marginalia_text>
+                    <person name="John Dee"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Northumbrensis comes Robertus de Mulbraio &amp; Gulielmus de Auco" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Robertus de Mulbraio Comes Northumb[rensis] Gulielmus de Auco</marginalia_text>
+                    <person name="Robert de Mowbray"/>
+                    <person name="William de Auco"/>
+                </position>
+            </language>
+            <translation>Robert de Mowbray, Earl of Northumbria. William de Auco.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Wulnotheum &amp; Morcharum" type="straight"/>
+        <underline language="LA" method="pen" text="hostibus trans Sabrinam" type="straight"/>
+        <underline language="LA" method="pen" text="Gulielmo Rege non" type="straight"/>
+        <underline language="LA" method="pen" text="modica pecuniae data" type="straight"/>
+        <underline language="LA" method="pen" text="quantitate" type="straight"/>
+        <underline language="LA" method="pen" text="Hoc enim statuerunt inter se, si alter sine haerede moriretur, haereditas defuncti superstiti remaneret. Post haec" type="straight"/>
+        <underline language="LA" method="pen" text="quae a Danis Paganis ante ducentos" type="straight"/>
+        <underline language="LA" method="pen" text="5219" type="straight"/>
+        <underline language="LA" method="pen" text="de Auco" type="straight"/>
+        <underline language="LA" method="pen" text="Concordia regis cum fratre" type="straight"/>
+        
+    </annotation>
+</transcription>

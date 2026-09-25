@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.018v.tif" pagination="36" reader="John Dee" signature="[C 2[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Ὀνοματοποία" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ὀνοματοποία</marginalia_text> <!-- for Ὀνοματοποιία -->
+                </position>
+            </language>
+            <translation>Onomatopoeia</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="balare quidem, aut hinnire" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Balare Hinnire</marginalia_text>
+                </position>
+            </language>
+            <translation>To bleat. To neigh.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sermo constat ratione, uetustate, autoritate, &amp; co[n]suetudine" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ex quibus sermo constat</marginalia_text>
+                </position>
+            </language>
+            <translation>From which things a speech consists of.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Autoritas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Autoritas.</marginalia_text>
+                </position>
+            </language>
+            <translation>Authority.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ut incerta certis probet" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Incerta certis p[ro]ba[n]da sunt.</marginalia_text>
+                </position>
+            </language>
+            <translation>Uncertainties must be sanctioned by certainties.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Est etia[m] sua loquentibus obseruatio" type="straight"/>
+        <underline language="LA" method="pen" text="scribentibus" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; uel error honestus est, magnos duces sequentibus." type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

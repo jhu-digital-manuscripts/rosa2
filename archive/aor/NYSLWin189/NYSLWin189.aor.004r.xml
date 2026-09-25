@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.004r.tif" reader="John Dee" signature="B"/> 
+    <annotation>
+        
+        <marginalia anchor_text="So ist separatio ein werck das da scheidet zwey vereiniget wäsen voneinander yetliches inn sein eigene traft" hand="Italian" method="pen"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                  <marginalia_text>Separatio Elementoru[m]</marginalia_text>  
+                </position>
+            </language>
+            <translation>The separation of the elements.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="heyßt temperatum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Temperatum</marginalia_text>
+                </position>
+            </language>
+            <translation>Temperate.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="So ist separatio ein werk das da scheidet zwey vereiniget wäsen voneinander yetliches inn sein eigene traft" type="straight"/>
+        <underline language="DE" method="pen" text="heyßt temperatum" type="straight"/>
+        
+    </annotation>
+</transcription>

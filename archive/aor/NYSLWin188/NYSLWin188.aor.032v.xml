@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.032v.tif" pagination="[32[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Windsternen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ventosa[e] Stella[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Wind stars.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Boreas coaguliert der Auster resoluiert, der Eurus conseruiert, der Zephyrus putrificiert" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Boreas - coagulat Auster - Resoluit Eurus - conservat Zephirus - putrefacit</marginalia_text>
+                </position>
+            </language>
+            <translation>The north wind coagulates; the south wind resolves; the east wind conserves; the west wind putrifies.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="sey sondern das sichtig vnd vnsichtig was Gott geschaffen hat is alles Corporalisch" type="straight"/>
+        <underline language="DE" method="pen" text="Winden das sie sich alleine erheben in den Windsternen" type="straight"/>
+        <underline language="DE" method="pen" text="zeiten zeitig" type="double"/>
+        <underline language="DE" method="pen" text="vnd außbrechen in den" type="straight"/>
+        <underline language="DE" method="pen" text="Centrum der Globul" type="double"/>
+        <underline language="DE" method="pen" text="jrem wesen" type="triple"/>
+        <underline language="DE" method="pen" text="coaguliert" type="straight"/>
+        <underline language="DE" method="pen" text="resoluiert" type="straight"/>
+        <underline language="DE" method="pen" text="conseruiert" type="straight"/>
+        <underline language="DE" method="pen" text="putrificiert" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

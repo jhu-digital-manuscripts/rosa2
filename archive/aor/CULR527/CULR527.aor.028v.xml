@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.028v.tif" pagination="[28[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Ioannes Picus" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Picus.
+                    </marginalia_text>
+                    <person name="Giovanni Pico della Mirandola"/>
+                </position>
+            </language>
+            <translation>
+                Pico.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Capnion" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Capnio.
+                    </marginalia_text>
+                    <person name="Johann Reuchlin"/>
+                </position>
+            </language>
+            <translation>
+                Reuchlin.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Egidius Viterbiensis" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Egidius Viterbiensis.
+                    </marginalia_text>
+                    <person name="Giles of Viterbo"/>
+                </position>
+            </language>
+            <translation>
+                Giles of Viterbo.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="fieri. Omitto nunc Cabalistas, &amp; in ipsa Cabala uersatos, qui non nisi per anagogicum intellectum arcana considerant" type="straight"/>
+        <underline language="LA" method="pen" text="tantùm ore tradeba[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="Paulus" type="straight"/>
+        <underline language="LA" method="pen" text="Egidius Viterbiensis" type="straight"/>
+        <underline language="LA" method="pen" text="de literis" type="straight"/>
+        <underline language="LA" method="pen" text="plura, longéque altiora" type="straight"/>
+        <underline language="LA" method="pen" text="Genethliaci" type="straight"/>
+        <underline language="LA" method="pen" text="hominum ex uultus inspectione pronuntient" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+
+    </annotation>
+</transcription>

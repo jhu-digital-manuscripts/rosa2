@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.030r.tif" pagination="59" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia anchor_text="Henocho" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Enoch</marginalia_text>
+                    <person name="Enoch"/>
+                </position>
+            </language>
+            <translation>Enoch.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nemrodus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nemrodus</marginalia_text>
+                    <person name="Nimrod"/>
+                </position>
+            </language>
+            <translation>Nimrod.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="scripta" type="double"/>
+        <underline language="LA" method="pen" text="fascinando populos" type="straight"/>
+        <underline language="LA" method="pen" text="ea" type="double"/>
+        <underline language="LA" method="pen" text="colligandorum spirituum terrestrium" type="straight"/>
+        <underline language="LA" method="pen" text="coelestium &amp; supracoelestium" type="straight"/>
+        <underline language="LA" method="pen" text="Berosus" type="straight"/>
+        <underline language="LA" method="pen" text="rituales libros" type="straight"/>
+        <underline language="LA" method="pen" text="rerum ueritas" type="straight"/>
+        <underline language="LA" method="pen" text="uia elementari" type="straight"/>
+        <underline language="LA" method="pen" text="uia coelesti" type="double"/>
+        <underline language="LA" method="pen" text="uia supracoelesti" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

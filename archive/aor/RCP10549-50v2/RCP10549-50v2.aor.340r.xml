@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.340r.tif" pagination="131" reader="John Dee" signature="Ii.ii."/>   
+    <annotation>
+        
+        <marginalia anchor_text="intoleranter" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        intolera[n]ter
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Intolerably.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="clepsisse" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        clepo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                I steal.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="foeminata virtus afflicta occidit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        foeminata virtus, afflicta occidit
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                An effeminate virtue dies shattered.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vestróne pressu quondam Nemaeus leo Frendens efflauit grauiter extremum halitum?              Haec dextra Lernam tetram mactata excetrea Placauit: haec bicorporem afflixit manum? Herymanthiam haec vastificam abiecit beluam:              Haec è tartarea tenebrica abstractum plaga Tricipitem eduxit hydra generatum canem: Haec interemit tortu multiplicabili" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Hercules Labores
+                    </marginalia_text>
+                    <person name="Hercules"/>
+                </position>
+            </language>
+            <translation>
+                The Labours of Hercules.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="AEschylus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Æschulus.
+                    </marginalia_text>
+                    <person name="Aeschylus"/>
+                </position>
+            </language>
+            <translation>
+                Aeschylus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Prometheus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Prometheus.
+                    </marginalia_text>
+                    <person name="Prometheus"/>
+                </position>
+            </language>
+            <translation>
+                Prometheus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="viduus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        viduus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Widowed.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="adulat" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        adulat
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                He flatters.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="anquirens" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        anquirens
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Seeking.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Heu virginalem me ore ploratum edere" type="straight"/>
+        <underline language="LA" method="pen" text="ô lacertorum tori" type="straight"/>
+        <underline language="LA" method="pen" text="tam intoleranter dolere" type="straight"/>
+        <underline language="LA" method="pen" text="clepsisse" type="straight"/>
+        <underline language="LA" method="pen" text="Transuerberatus castrum hoc furiarum" type="straight"/>
+        <underline language="LA" method="pen" text="opimo farta, &amp; satiata affatim" type="straight"/>
+        <underline language="LA" method="pen" text="adulat" type="straight"/>
+        <underline language="LA" method="pen" text="perenni viuum foedat miseria" type="straight"/>
+        <underline language="LA" method="pen" text="viduus pestes" type="straight"/>
+        <underline language="LA" method="pen" text="terminum anquirens" type="straight"/>
+
+        <symbol name="Jupiter" place="intext"/>
+        
+        <numeral language="LA" place="intext" text="Vestróne">1</numeral>
+        <numeral language="LA" place="intext" text="dextra">2</numeral>
+        <numeral language="LA" place="intext" text="bicorporem">3</numeral>
+        <numeral language="LA" place="intext" text="haec vastificam">4</numeral>
+        <numeral language="LA" place="intext" text="tartara tenebrica">5</numeral>
+        <numeral language="LA" place="intext" text="tortu">6</numeral>
+                
+    </annotation>
+</transcription>

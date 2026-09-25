@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.017r.tif" pagination="17" reader="John Dee" signature="b 3"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Babylonij exaltatio[n]es pro domicilijs p[osuere] at revera planeta[e] melius in exaltationibus dececernunt. <!-- FSF: not sure --> <!--JG: Perhaps it's posuere?-->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The Babylonians placed the exaltations for the dwellings and in fact the planets resolved better in the exaltations.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Babylonij.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The Babylonians.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cum in ipso decano stella fuerit, licet sit in alieno domicilio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        stella in decano suo a[e]qua[m] exeret potestatem ac si esset in suo domicilio.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A star in its decan exerts the same power as it does in its domicile. 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="maximae felicitatis insignia decernunt, quoties in hominum genituris, maxima stellarum pars partiliter altitudinum suarum signa possederit" type="straight"/>
+        <underline language="LA" method="pen" text="domicilia earum ese uoluerunt" type="straight"/>
+        <underline language="LA" method="pen" text="decernere in altitudinibus suis, q[uam] in domiciliis" type="straight"/>
+        <underline language="LA" method="pen" text="cum per haec signa exaltentur singuli planetae, ita etiam domos" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; cum in ipso decano stella fuerit, licet sit in alieno" type="straight"/>
+        
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

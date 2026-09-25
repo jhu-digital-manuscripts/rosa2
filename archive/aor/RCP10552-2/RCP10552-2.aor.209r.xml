@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.209r.tif" pagination="409" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Edmundus Mortymer obijt, iuuenis quem retulimus ante captum ab Ovveno Glendor, vel taedio dirae captiuitatis, vel metu mortis, vel ex alia wua nescitur causa, conuersus retrorsum cum Ovveno, contra regem Angliae se sentire professus est, dum nuptias satis humiles &amp; suae generositati impares co[n]trahit, cu[m] filia dicti Ovveni." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Owen[us] Glyndor Edmundus Mortimer = filia</marginalia_text> 
+                    <person name="Owen Glendower"/>
+                    <person name="Edmund Mortimer, 5th Earl of March"/>
+                </position>
+            </language>
+            <translation>Owen Glendower, Edmund Mortimer [marries] daughter.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Henricus Percy" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Henricus Percy</marginalia_text>
+                    <person name="Henry Percy (Hotspur)"/>
+                </position>
+            </language>
+            <translation>Henry Percy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Thomas Percy" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Thomas Percy.</marginalia_text>
+                    <person name="Thomas Percy, 1st Earl of Worcester"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nota</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Edmundus Mortymer obijt, iuuenis" type="straight"/>
+        <underline language="LA" method="pen" text="dirae captiuitatis" type="straight"/>
+        <underline language="LA" method="pen" text="vel metu mortis" type="straight"/>
+        <underline language="LA" method="pen" text="retrorsum" type="straight"/>
+        <underline language="LA" method="pen" text="cum Ovveno, contra" type="double"/>
+        <underline language="LA" method="pen" text="humiles &amp; suae" type="double"/>
+        <underline language="LA" method="pen" text="co[n]trahit, cu[m] filia dicti Ovveni" type="straight"/>
+        <underline language="LA" method="pen" text="repente[m] host is regis apparuit" type="straight"/>
+        <underline language="LA" method="pen" text="Thomas Percy" type="straight"/>
+        <underline language="LA" method="pen" text="partuus Henrici" type="straight"/>
+        <underline language="LA" method="pen" text="speciali, recessit ad nepotem, augens" type="straight"/>
+        <underline language="LA" method="pen" text="nisi" type="straight"/>
+        <underline language="LA" method="pen" text="pro saluatione personarum suarum, &amp;" type="double"/>
+        <underline language="LA" method="pen" text="reipublicae meliori gubernatione" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; tallagia regis concessa" type="straight"/>
+        <underline language="LA" method="pen" text="in vsus indebitos" type="double"/>
+        <underline language="LA" method="pen" text="inutiliter consumeba[n]tur" type="double"/>
+        <underline language="LA" method="pen" text="aemulorum dilationes" type="double"/>
+        <underline language="LA" method="pen" text="auderent personaliter" type="straight"/>
+        <underline language="LA" method="pen" text="declarare suam innocentiam" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <errata amendedtext="Census" copytext="sensus" language="LA"/>
+        
+    </annotation>
+</transcription>

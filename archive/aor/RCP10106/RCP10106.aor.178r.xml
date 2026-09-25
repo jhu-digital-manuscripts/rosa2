@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.178r.tif" pagination="355" reader="John Dee" signature="z 2"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Cicero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cicero.</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sed ille durus, atque à consuetudine communi abhorrere." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ironia</marginalia_text>
+                </position>
+            </language>
+            <translation>Irony.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ulla uerboru[m], nisi rei cohaerentium, uirtus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>verboru[m] v[ir]tus</marginalia_text>
+                </position>
+            </language>
+            <translation>The virtue of words.</translation>
+        </marginalia>
+       
+        <marginalia anchor_text="pauper orator" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Paup[er] Orator.</marginalia_text>
+                </position>
+            </language>
+            <translation>A poor orator.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="uelut laeto sata stangulant" type="straight"/>
+        <underline language="LA" method="pen" text="tum demum ingeniosi" type="straight"/>
+        <underline language="LA" method="pen" text="extinguit mora &amp; differentia" type="straight"/>
+        <underline language="LA" method="pen" text="quasi" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/> 
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="scribble" place="right_margin"/>
+        
+        <numeral place="right_margin">2</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

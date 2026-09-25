@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.003v.tif" reader="John Dee" signature="[A iij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="series inquam numinum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Series Numinu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>A series of divine wills.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="lumina" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Num[ina]</marginalia_text>
+                </position>
+            </language>
+            <translation>Divine wills.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="esse portionem actiuam naturalis scientiae diximus" type="straight"/>
+        <underline language="LA" method="pen" text="prorsus, q[uod] ordo &amp; series rerum" type="straight"/>
+        <underline language="LA" method="pen" text="inquam numinum" type="straight"/>
+        <underline language="LA" method="pen" text="occulta certe lumina" type="straight"/>
+        <underline language="LA" method="pen" text="intellectualis dicetur, aurea &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="potestate purior anima sequestrari possit" type="straight"/>
+        
+        <errata amendedtext="Cathena" copytext="Cethena" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="l" language="LA"/>
+        
+    </annotation>
+</transcription>

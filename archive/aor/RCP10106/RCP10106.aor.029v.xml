@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.029v.tif" pagination="58" reader="John Dee" signature="[d 5[v]]"/>
+    <annotation>    
+        
+        <marginalia anchor_text="Pericles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pericles</marginalia_text>
+                    <person name="Pericles"/>
+                </position>
+            </language>
+            <translation>Pericles.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sulpitius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sulpitius.</marginalia_text>
+                    <person name="Gaius Sulpicius Gallus"/>
+                </position>
+            </language>
+            <translation>Sulpicius.</translation>
+        </marginalia>
+    
+        <marginalia anchor_text="Nicias" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nicias.</marginalia_text>
+                    <person name="Nicias"/>
+                </position>
+            </language>
+            <translation>Nicias.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Dion" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dion</marginalia_text>
+                    <person name="Dion of Syracuse"/>
+                </position>
+            </language>
+            <translation>Dion.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Archimedes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Archimedes.</marginalia_text>
+                    <person name="Archimedes"/>
+                </position>
+            </language>
+            <translation>Archimedes.</translation>
+        </marginalia>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="hash" place="left_margin"/>
+        
+    </annotation>
+</transcription>

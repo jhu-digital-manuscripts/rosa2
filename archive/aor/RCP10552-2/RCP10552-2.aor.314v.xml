@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.314v.tif" pagination="142" reader="John Dee"/>
+    
+    
+    <annotation>
+        
+        
+        <marginalia anchor_text="rex Portingaliae" hand="Italian" id="RCP10552-2:638:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Rex Portugalia[e]</marginalia_text>
+                    <person name="John I of Portugal"/>
+                </position>
+            </language>
+            <translation>The King of Portugal.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="dissentio inter regem &amp; ducem Lancastri[a]e" type="straight"/>
+        <underline id="RCP10552-2:638:u0001" language="LA" method="pen" text="Eo tempore rex Portingaliae adiutorio Anglicorum" type="straight"/>
+        <underline language="LA" method="pen" text="regi Angliae sex galeas, vt essent illi solatio contra hostes" type="straight"/>
+        
+        
+        <physical_link>
+            
+            <marginal_annotation idref="RCP10552-2:638:m0001"/>
+            
+            <marginal_annotation idref="RCP10552-2:638:u0001"/>
+            
+            <relation from="RCP10552-2:638:m0001" to="RCP10552-2:638:u0001" type="directed"/>
+            
+        </physical_link>
+        
+    </annotation>
+    
+</transcription>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.125v.tif" pagination="236" reader="John Dee" signature="[v.iiij.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Alexandriam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Alexandria.</marginalia_text>
+                    <location name="Alexandria"/>
+                </position>
+            </language>
+            <translation>Alexandria.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Prophetarum aetate, nusquam extitisse Alexandriam" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.302r.tif" pagination="295" reader="John Dee" signature="eee iij"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Longe alia erat figura co[e]li in rei veritate, na[m] anni magnitudo 365 5.55.24</marginalia_text>
+                </position>
+            </language>
+            <translation>For a long while there was another figure of the sky in the truth of the matter, for the magnitude of the year was 365, 5 [hours].55 [minutes].24 [seconds].</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="igitur anno 50, siquidem" type="straight"/>
+        <underline language="LA" method="pen" text="1545. die 20 Iunij mortuus" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; ipse interfecit se in 327 die" type="straight"/>  
+        
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        
+        <errata amendedtext="[deleted]" copytext="&amp; Luna fuit in sexto loco damnata" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="reuolutione, &amp; genitura ad ascendens perueniet in diebus 536" language="LA"/> 
+        
+    </annotation>
+</transcription>

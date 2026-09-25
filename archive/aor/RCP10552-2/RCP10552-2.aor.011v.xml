@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.011v.tif" pagination="12" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Resus autem Vazhan" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Rhesus Vauchan</marginalia_text>
+                    <person name="Rees Vazhan"/>
+                </position>
+            </language>
+            <translation>Rees Vazhan</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Comiti Hertfordiae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>de clare sed credo Herefordi</marginalia_text>
+                    <person name="Gilbert de Clare, 6th Earl of Herford"/>
+                </position>
+            </language>
+            <translation>Gilbert de Clare, 6th Earl of Herford"</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Glomorganciam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Glamorgancia.</marginalia_text>
+                    <location name="Glamorgan"/>
+                </position>
+            </language>
+            <translation>Glarmorgan</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="crux dicta Neoti" type="straight"/>
+        <underline language="LA" method="pen" text="Resus autem Vazhan" type="straight"/>
+        <underline language="LA" method="pen" text="nobilissimus, audita captione Dauid" type="straight"/>
+        <underline language="LA" method="pen" text="Comiti Hertfordiae" type="double"/>
+        <underline language="LA" method="pen" text="vallem Regalem" type="straight"/>
+        <underline language="LA" method="pen" text="leges Anglicanas" type="double"/>
+        <underline language="LA" method="pen" text="Glomorganciam quae ad ditionem Comitis Glouerniae noscitur pertinere" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- redditus ad -->
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+    </annotation>
+</transcription>

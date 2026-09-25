@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.117v.tif" pagination="220" reader="John Dee" signature="[t.ij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Roma capta dicitur à Senonibus Gallis, anno Vrbis 365" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tempus Roma[e] Capta[e] per Brennu[m].</marginalia_text>
+                    <person name="Brennus of the Senones"/>
+                </position>
+            </language>
+            <translation>The time of the capture of Rome by Brennus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cyri Persarum regis tempus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cyri Persaru[m] R[egis] Tempus.</marginalia_text>
+                    <person name="Cyrus the Great"/>
+                </position>
+            </language>
+            <translation>The time of King Cyrus of Persia.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="hîc annis erratum est centum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Error centum annorum</marginalia_text>
+                </position>
+            </language>
+            <translation>An error of one hundred years.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="vt id possit falsum existimari" type="straight"/>
+        <underline language="LA" method="pen" text="seruatam fuisse certam vllam eorum temporum memoriam" type="straight"/>
+        <underline language="LA" method="pen" text="quando alia recentiora effecerit illa confusio, dubia" type="straight"/>
+        <underline language="LA" method="pen" text="obscuro quodam rumore perlatam ad eos captae Romae famam, docet istud sub Philippo Macedonum rege contigisse" type="straight"/>
+        <underline language="LA" method="pen" text="infinita" type="double"/>
+        <underline language="LA" method="pen" text="vno verbo" type="double"/>
+        <underline language="LA" method="pen" text="nobis Cyri Persarum" type="double"/>
+        <underline language="LA" method="pen" text="malè fuit" type="straight"/>
+        <underline language="LA" method="pen" text="errores infiniti" type="straight"/>
+        <underline language="LA" method="pen" text="Persicum annis tantùm stetisse centum &amp; triginta" type="straight"/>
+        <underline language="LA" method="pen" text="annis ducentis &amp;" type="double"/>
+        <underline language="LA" method="pen" text="triginta" type="straight"/>
+        <underline language="LA" method="pen" text="est centum" type="double"/>
+        <underline language="LA" method="pen" text="aditi Persarum imperij" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/>  <!-- Plutarcho in -->
+        <mark method="pen" name="bracket" place="intext"/>  <!-- Camillo, sequuto -->
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark method="pen" name="comma" place="intext"/>  <!-- Latina quae -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- sequitur historia-->
+        
+    </annotation>
+</transcription>

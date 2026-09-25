@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.068r.tif" pagination="68" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="dreyerley Artzt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Medicus Triplex
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Threefold doctor.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="antzet vnd behüt vor jren gebresten" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">1</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3</numeral>
+        
+        <errata amendedtext="MATRICIS." copytext="METEORORVM" language="LA"/>
+        
+    </annotation>
+</transcription>

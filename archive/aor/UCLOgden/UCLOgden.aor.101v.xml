@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.101v.tif" pagination="186" reader="John Dee" signature="[q 3[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Cap: 10. et 11
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP10653:120" text="Cap: 10"/>
+                    </internal_ref>
+                    <internal_ref>
+                        <target ref="RCP10653:122" text="11"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                Chapters 10 and 11.
+            </translation>
+        </marginalia>
+        
+        <underline colour="red" language="LA" method="chalk" text="Haiz" type="straight"/>
+        <underline colour="red" language="LA" method="chalk" text="Cupidinis locum se" type="dotted"/>
+        <underline colour="red" language="LA" method="chalk" text="Locum autem fortunae, &amp; locum daemonis, qua ratione inuenias, in quarto diximus libro" type="dotted"/>
+        
+        <mark colour="red" method="chalk" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

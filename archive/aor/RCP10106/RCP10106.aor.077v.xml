@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.077v.tif" pagination="154" reader="John Dee" signature="[k 5[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="oratio, si ab homine, quàm si à re, cui accommodari debuit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Oratio rei accommodari debet.</marginalia_text>
+                </position>
+            </language>
+            <translation>A speech ought to be adapted to the subject.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="prosopopoeiae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Prosopopoeia[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Prosopopoeia.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ciceronem pro Caelio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cic[eronem] pro Ca[e]lio.</marginalia_text>
+                    <person name="Cicero"/>
+                    <book title="Pro Caelio"/>
+                </position>
+            </language>
+            <translation>Cicero's Pro Caelio..</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="C. Caesarem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>C[aius] Ca[e]sar.</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <translation>Julius Caesar.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quibus uocem dabat, etiam imaginem expreßit?" type="straight"/>
+        <underline language="LA" method="pen" text="est oratio, si ab homine, quàm si à re, cui accommodari debuit" type="straight"/>
+        <underline language="LA" method="pen" text="ut uix comoediarum actoribus plures habitus in pronunciando concipiendi sint, quàm his in dice[n]do: quae" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+            
+    </annotation>
+</transcription>

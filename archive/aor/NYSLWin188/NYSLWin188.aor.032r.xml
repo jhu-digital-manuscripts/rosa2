@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.032r.tif" pagination="32" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Dan[n] auch Christus in Parabolis sein Wort verkündet hat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Parabolaris Doctrina</marginalia_text>
+                </position>
+            </language>
+            <translation>An allegorical doctrine.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="die zeit vnd stunde solcher Winder aufferstehung" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tempus et hora quando ventus suborietur</marginalia_text>
+                </position>
+            </language>
+            <translation>The time and hour when the wind will come into being.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Astronomisch" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Astronomia tempora ventoru[m] docere debet</marginalia_text>
+                </position>
+            </language>
+            <translation>Astronomy ought to teach the times of the winds.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="dadurch bewert" type="straight"/>
+        <underline language="DE" method="pen" text="exempel vnd gleichnuß in das jenige" type="straight"/>
+        <underline language="DE" method="pen" text="Parabel" type="straight"/>
+        <underline language="DE" method="pen" text="mehrers" type="straight"/>
+        <underline language="DE" method="pen" text="verstanden sol vn[d] muß werden" type="straight"/>
+        <underline language="DE" method="pen" text="die zeit vnd stunde solcher" type="straight"/>
+        <underline language="DE" method="pen" text="gar mit grunde" type="double"/>
+        <underline language="DE" method="pen" text="sond[er]n Astronomisch" type="straight"/>
+        <underline language="DE" method="pen" text="als viel Co[n]cordantz macht viel" type="straight"/>
+        <underline language="DE" method="pen" text="starckes Winds" type="straight"/>
+        <underline language="DE" method="pen" text="offte Concorda[n]tz" type="straight"/>
+        <underline language="DE" method="pen" text="ofte Wind" type="straight"/>
+        <underline language="DE" method="pen" text="Vulcanus" type="double"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+    </annotation>
+</transcription>

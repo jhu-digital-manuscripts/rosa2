@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.214v.tif" pagination="[214v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Gieura" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Gieura Fl.[ume]</marginalia_text>
+                    <location name="Gieura"/>
+                </position>
+            </language>
+            <translation>The Gieura river.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Betlem" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Bethlem</marginalia_text>
+                    <location name="Belen"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Beragua" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Beragua</marginalia_text>
+                    <location name="Beragua"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="di pieno mar" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Full sea</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="Gieura" type="straight"/>
+        <underline language="IT" method="pen" text="Betlem" type="straight"/>
+        <underline language="IT" method="pen" text="gl'Indiani" type="straight"/>
+        <underline language="IT" method="pen" text="Beragua" type="straight"/>
+        <underline language="IT" method="pen" text="di pieno" type="double"/>
+        <underline language="IT" method="pen" text="le minere dell'oro in Beragua" type="straight"/>
+        
+    </annotation>
+</transcription>

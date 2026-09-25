@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.013r.tif" pagination="25" reader="John Dee" signature="b 5"/>
+    <annotation>
+        
+        <marginalia anchor_text="subtilis origines nominu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nominu[m] origines</marginalia_text>
+                </position>
+            </language>
+            <translation>Origins of Names.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quaerat etia[m], sit ne apud Graecis uis quaedam sexti casus, &amp; apud nos quoq[ue] seotimi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sit ne 69 apud Gr[a]ecos, et apud latinos, 79 casus.</marginalia_text> <!-- FSF: I think it is latinos -->
+                </position>
+            </language>
+            <translation>Let there be not, 69 among the Greeks and among the Latin, 79 cases.</translation> <!-- M.B. Is this translation better? Pluralized 'case' but I wasn't totally sure of this rendering.. --><!-- FSF: I think casus is simply Nom Pl -->
+        </marginalia>
+        
+        
+    </annotation>
+</transcription>

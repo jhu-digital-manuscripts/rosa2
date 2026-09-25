@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.213v.tif" pagination="418" reader="John Dee"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="Comes Bononiae, Eustachius, qui" type="straight"/>
+        <underline language="LA" method="pen" text="regis Eadvvardi" type="straight"/>
+        
+        <errata amendedtext="picis" copytext="piscis" language="LA"/>
+        
+        <graph book_orientation="0" method="pen" place="left_margin" type="genealogical_tree">
+            <node anchor_text="Comes Bononiae, Eustachius" id="n1" person="Eustace II">Eustachius Comes Bononiae</node>
+            <node anchor_text="Godam regis Eadvvardi sororem" id="n2" person="Goda of England">Goda soror Ed. Regis</node>
+            <link from="n2" relationship="has_spouse" to="n1"/>
+            <link from="n1" relationship="has_spouse" to="n2"/>
+        </graph>
+        
+    </annotation>
+</transcription>

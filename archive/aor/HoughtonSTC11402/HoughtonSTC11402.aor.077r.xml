@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.077r.tif" reader="Harvey" signature="[Ivi[r]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Mosaicu[m] miraculu[m].</marginalia_text>
+                    <person name="Moses"/>
+                </position>
+            </language>
+            <translation>A Mosaic miracle.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Semiramis" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Semiramis.</marginalia_text>
+                    <person name="Semiramis"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="cast them into a laske" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>kast into a laske.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="siege vnto Babylon" type="straight"/>
+        <underline language="EN" method="pen" text="through the myddest" type="straight"/>
+        <underline language="EN" method="pen" text="Euphrates" type="straight"/>
+        <underline language="EN" method="pen" text="great bulwarke on the top" type="straight"/>
+        <underline language="EN" method="pen" text="caste out erthe, for his" type="straight"/>
+        <underline language="EN" method="pen" text="ryuer sodeynly beinge turned" type="straight"/>
+        <underline language="EN" method="pen" text="cite, ouer the way, that" type="straight"/>
+        <underline language="EN" method="pen" text="the water was wonte" type="straight"/>
+        <underline language="EN" method="pen" text="Semiramis" type="straight"/>
+        <underline language="EN" method="pen" text="course of the ryuer Euphrates" type="straight"/>
+        <underline language="EN" method="pen" text="brake vp" type="straight"/>
+        <underline language="EN" method="pen" text="the co[n]dyte" type="straight"/>
+        <underline language="EN" method="pen" text="with thyrst" type="straight"/>
+        <underline language="EN" method="pen" text="restored to the[m] the water, corrupted" type="straight"/>
+        <underline language="EN" method="pen" text="the herbe Helleborus" type="straight"/>
+        <underline language="EN" method="pen" text="cast them into a laske" type="straight"/>
+        <underline language="EN" method="pen" text="vp erthe before the wailes" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="siege vnto Babylon"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="caste out erthe, for his"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="ryuer sodeynly beinge turned"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Euphrates"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="ryuer sodeynly beinge turned"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="course of the ryuer Euphrates"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

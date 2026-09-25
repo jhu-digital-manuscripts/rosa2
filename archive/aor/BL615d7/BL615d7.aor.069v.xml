@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.069v.tif" pagination="[69v]" reader="John Dee" signature="[Iv[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Il che veduto" hand="Italian" id="BL615d7:615_d_7_f069v:m0001" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Gold.</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Cibao" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cibao</marginalia_text>
+                </position>
+            </language>
+            <translation>Food.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Caribi; mangiarseli" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Caribi, the men eaters.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="lasciasse Christiani" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Note this intent of leaving men behynde</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline id="BL615d7:615_d_7_f069v:u0001" language="IT" method="pen" text="Il che veduto" type="triple"/>
+        <underline language="IT" method="pen" text="dal gran Cacique" type="straight"/>  
+        <underline language="IT" method="pen" text="quantità da Cibao" type="double"/>
+        <underline language="IT" method="pen" text="alcune maschere con gli occhi, &amp; con le orecchie grandi di oro" type="straight"/>
+        <underline language="IT" method="pen" text="dolendosi" type="straight"/>
+        <underline language="IT" method="pen" text="Caribi" type="double"/>
+        <underline language="IT" method="pen" text="mangiarseli" type="triple"/>
+        <underline language="IT" method="pen" text="mostrò le nostre armi, dicendo, che con quelle lo haurebbe" type="straight"/>
+        <underline language="IT" method="pen" text="nostra artiglieria" type="straight"/>
+        <underline language="IT" method="pen" text="tanto spauento" type="straight"/>
+        <underline language="IT" method="pen" text="tanto" type="straight"/>
+        <underline language="IT" method="pen" text="amore" type="double"/>
+        <underline language="IT" method="pen" text="si gran mostre" type="straight"/>
+        <underline language="IT" method="pen" text="fermasse qui habitationi, &amp; vi lasciasse" type="straight"/>
+        <underline language="IT" method="pen" text="Christiani, i quali" type="straight"/>
+        <underline language="IT" method="pen" text="trafficassero" type="double"/>
+        <underline language="IT" method="pen" text="&amp; s'informassero" type="double"/>
+        <underline language="IT" method="pen" text="apprendendo quella" type="straight"/>
+        <underline language="IT" method="pen" text="prattica con" type="straight"/>
+        
+        <mark language="IT" method="pen" name="equal_sign" place="right_margin" text="porgea"/>
+        <mark language="IT" method="pen" name="equal_sign" place="right_margin" text="tanto"/>
+        <mark language="IT" method="pen" name="bracket" place="left_margin" text="egli fermasse qui habitationi, &amp; vi lasciasse Christiani, i quali trafficassero, &amp; s'informassero del paese, &amp; della gente, apprendendo quella lingua, e tenendo prattica con quel popolo"/>
+        
+        <drawing book_orientation="0" method="pen" place="tail" type="manicule"/>
+        
+        <physical_link>
+            <marginal_annotation idref="BL615d7:615_d_7_f069v:m0001"/>
+            <marginal_annotation idref="BL615d7:615_d_7_f069v:u0001"/>
+            <relation from="BL615d7:615_d_7_f069v:m0001" to="BL615d7:615_d_7_f069v:u0001" type="directed"/>
+        </physical_link>
+        
+    </annotation> 
+</transcription>

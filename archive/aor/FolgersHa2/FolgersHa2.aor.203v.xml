@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.203v.tif" pagination="230" reader="Harvey" signature="[P3v]"/>	<!-- ABO 208left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Puerile est, incipere, nec perficere.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>It is childish to start and not to finish.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Si adsint libri, promptissimè consulendi: si =
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						= absint, contemnendi.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>If the books arrive most promptly they must be consulted: if they are absent, they must be condemned.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Manie can Ciceronise:
+						none Ca[e]sarise).
+					</marginalia_text>
+					<person name="Cicero"/>
+					<person name="Julius Caesar"/>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						| Academici isti, statim Scriptores laudant, aut
+						vituperant:
+						in artium ipsarum operibus non insistunt:						
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						( non versant pragmateias; non conferunt arcana;
+						non faciunt periculum in experimentis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Those academics immediately praise or scold the authors. They do not tread upon the works of skills themselves: they do not go over scientific treatises, they do not
+			discuss mysteries, they do not create danger in experiments.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Ars, Virtus; et inde Foelicitas; gnoma[e] gnomarum; apophthegmata apophthegmatu[m];
+						emblemata emblematum; postremò Historia[e] Historiarum.
+					</marginalia_text>
+					<emphasis method="pen" text="Ars" type="straight"/>
+					<emphasis method="pen" text="inde Foelicitas" type="straight"/>
+					<emphasis method="pen" text="gnoma[e] gnomarum" type="straight"/>
+					<emphasis method="pen" text="Virtus" type="straight"/>
+					<emphasis method="pen" text="Historia[e] Historiarum" type="straight"/>
+				</position>
+			</language>
+			<translation>Art, virtue, and thence happiness: the maxim of maxims, the aphorism of aphorisms, the emblem of emblems, and finally the history of histories.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Quàm turpe, atq[ue] stultum est, tantum temporis, studij, opera[e]q[ue] perdere,
+						quantum abijciunt, qui incipiunt, nec perficiunt.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>How shameful and foolish it is to waste as much time, study, and work as those who throw it all away, those who start but do not finish.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="momentaneo essere" type="straight"/>
+		<underline language="IT" method="pen" text="amore delle mogli verso" type="straight"/>
+		<underline language="IT" method="pen" text="la figliuola" type="straight"/>
+		<underline language="IT" method="pen" text="marito era malato in estremo" type="straight"/>
+		<underline language="IT" method="pen" text="marito molto piu bello" type="straight"/>
+		<underline language="IT" method="pen" text="solamente non ammetteua le" type="straight"/>
+		<underline language="IT" method="pen" text="che egli d'un' altro" type="straight"/>
+		<underline language="IT" method="pen" text="ella infra i sospiri, et infra" type="straight"/>
+		<underline language="IT" method="pen" text="domandò del nuouo marito" type="straight"/>
+		<underline language="IT" method="pen" text="saggi &amp; bei detti" type="straight"/>
+		<underline language="IT" method="pen" text="possino appo" type="straight"/>
+		<underline language="IT" method="pen" text="huomini grandi" type="straight"/>
+		<underline language="IT" method="pen" text="Re Filippo" type="straight"/>
+		<underline language="IT" method="pen" text="perche causa vieni" type="straight"/>
+		<underline language="IT" method="pen" text="oppugnare la nostra città" type="straight"/>
+		<underline language="IT" method="pen" text="sono innamorato" type="straight"/>
+		<underline language="IT" method="pen" text="per ottener" type="straight"/>
+		<underline language="IT" method="pen" text="prontamente" type="straight"/>
+		<underline language="IT" method="pen" text="vanno à fare all' amore" type="straight"/>
+		<underline language="IT" method="pen" text="gli strumenti musicali" type="straight"/>
+		<underline language="IT" method="pen" text="Questo arguto, &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="stolse da quella impresa" type="straight"/>
+		<underline language="IT" method="pen" text="nella sua libertà, trapassò" type="straight"/>
+		<underline language="IT" method="pen" text="piu oltre" type="straight"/>
+		
+		<symbol name="SS" place="head"/>
+		
+		<mark language="IT" method="pen" name="quotation_mark" place="left_margin" text="ella infra i sospiri, et infra"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--al-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--huo-->
+		<mark method="pen" name="plus_sign" place="right_margin"/> <!--marito-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--so-->
+		<mark method="pen" name="quotation_mark" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!--innamo-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--a-->
+		<mark method="pen" name="quotation_mark" place="right_margin"/>
+		<mark method="pen" name="plus_sign" place="right_margin"/> 
+
+    </annotation>
+</transcription>

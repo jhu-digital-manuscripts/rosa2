@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.050r.tif" pagination="99" reader="John Dee" signature="g 2"/>
+    <annotation>
+        
+        <marginalia anchor_text="caecus ille Appius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Appius ca[e]cus.</marginalia_text>
+                    <person name="Appius Claudius Caecus"/>
+                </position>
+            </language>
+            <translation>Appius the blind.</translation>
+        </marginalia>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

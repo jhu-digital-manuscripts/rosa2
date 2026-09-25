@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.211v.tif" pagination="[211v]" reader="John Dee" signature="[Ddiii[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Belporto" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Bel porto</marginalia_text>
+                    <location name="Belporto"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="con tanti tuoni, &amp; lampi" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Thunder and lightening.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="Cocodrili" type="straight"/>
+        <underline language="IT" method="pen" text="minere" type="straight"/>
+        <underline language="IT" method="pen" text="Belporto X leghe verso Occidente" type="straight"/>
+        <underline language="IT" method="pen" text="che erano i tempi instabili" type="straight"/>
+        <underline language="IT" method="pen" text="Belporto" type="straight"/>
+        <underline language="IT" method="pen" text="con tanti tuoni, &amp;" type="straight"/>
+        
+    </annotation>
+</transcription>

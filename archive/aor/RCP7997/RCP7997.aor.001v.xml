@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.001v.tif" reader="John Dee" signature="[Ai[v]]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian" method="pencil" other_reader="unknown">
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        1d
+                        D14/1
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="qui audeat p[ro]fiteri sine mathematica intelligere se aristotele[m]?" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Aristoteles absq[ue] cognitione mathematica[e] no[n] p[otes]t plene intelligi
+                    </marginalia_text>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>
+                Aristotle cannot be fully understood was it not for his mathematical knowledge.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vtilis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Mathematica[e] vtilitas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The usefulness of mathematics.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Alexandri scripta
+                    </marginalia_text>
+                    <person name="Andreas Alexander"/>
+                </position>
+            </language>
+            <translation>
+                The writings of Andreas Alexander.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="p[ro]fessi hostes sunt mathematice" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        professi hostes Mathematica[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Declared enemies of mathematics.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="eccl[es]ie" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ecclesia.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The Church.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="divo Gregorio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Gregorius.
+                    </marginalia_text>
+                    <person name="Gregory of Nazianzus"/>
+                </position>
+            </language>
+            <translation>
+                Gregory of Nazianzus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="gen[us] docticulo[rum] sane molestu[m] nimis et odiosum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        docticuloru[m] odiosu[m] gen[us]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The disgraceful kind of the pseudo-learned.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Reliqua" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Reliqua
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Remains.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="qui audeat p[ro]fiteri sine mathematica intelligere se aristotele[m]" type="straight"/>
+        <underline language="LA" method="pen" text="p[ro]fessi hostes" type="straight"/>
+        <underline language="LA" method="pen" text="tam eccl[es]ie q[uam] seculo" type="straight"/>
+        <underline language="LA" method="pen" text="q[uan]tu[m] Kale[n]daria n[e]c[essari]a a via deflexerint" type="straight"/>
+        <underline language="LA" method="pen" text="Gregorio" type="straight"/>
+        <underline language="LA" method="pen" text="Musica[m]" type="straight"/>
+        <underline language="LA" method="pen" text="loyca[m]" type="straight"/>
+        <underline language="LA" method="pen" text="astrologia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Boeti[us] ph[ilosoph]ie lumi[n]a, nu[m]q[uam] t[a]m[en] sapi[enti]e nom[en] adepti fuisse[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="se tu[n]c maxi[m]e ad summa[m] sapie[n]tia[m] p[er]uenisse. cu[m] ridicule [et] [pro]teruede bonis artibus: q[ua]s tu[m] primis adhuc labris non attigit indicauerit" type="straight"/>
+        <underline language="LA" method="pen" text="putare[n]t se ia[m] p[er]uennise" type="straight"/>
+        <underline language="LA" method="pen" text="phi[losophi]e q[ua] esse docta, q[uam] videri malu[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="Om[n]es mathematicas demo[n]stratio[n]es Arestotelis" type="straight"/>
+        <underline language="LA" method="pen" text="racionali" type="straight"/>
+        <underline language="LA" method="pen" text="naturali" type="straight"/>
+        <underline language="LA" method="pen" text="morali" type="straight"/>
+        <underline language="LA" method="pen" text="Lipsens[um] hec alioquin" type="straight"/>
+        <underline language="LA" method="pen" text="Reliqua etia[m] p[ro]pe die[m] in luce[m] dabo" type="straight"/>
+        <underline language="LA" method="pen" text="Millesimo quinge[n]tesimoquarto. vndecimo Kale[n]das februarij" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- colueru[n]t Babilo[n]ia -->
+        <mark method="pen" name="dot" place="intext"/> <!-- Egipcij Sine -->
+        <mark method="pen" name="comma" place="intext"/> <!-- attigit indicauerit -->
+        
+        <errata amendedtext="?" copytext=":" language="LA"/> <!-- mathematica[m] cu[m] -->
+        <errata amendedtext="," copytext="." language="LA"/> <!-- obseruauit mirati -->
+        <errata amendedtext="," copytext="." language="LA"/> <!-- indicauerit sua[m]que -->
+        <errata amendedtext="," copytext="." language="LA"/> <!-- doctissime ita -->
+        <errata amendedtext="," copytext=":" language="LA"/> <!-- caues vt -->
+        <errata amendedtext="," copytext="." language="LA"/> <!-- docta q[uod] -->
+        <errata amendedtext="," copytext=":" language="LA"/> <!-- potui Om[n]es -->
+        <errata amendedtext="Aristotelis" copytext="Arestotelis" language="LA"/>
+        <errata amendedtext="," copytext=":" language="LA"/> <!-- Arestotelis q[ua]s -->
+        <errata amendedtext="," copytext="." language="LA"/> <!-- sit exacto -->
+        
+    </annotation>
+</transcription>

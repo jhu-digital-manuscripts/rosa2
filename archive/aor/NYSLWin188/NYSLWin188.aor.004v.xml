@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.004v.tif" pagination="[4[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Sternen seind frücht vom Himmel" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Stellae sunt Co[e]li fructus</marginalia_text>
+                </position>
+            </language>
+            <translation>Stars are the fruits of the heaven.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="das eine stand vbersich, die ander ha[n]gt vndersich, die eine gibt seine frücht &amp; höhe zu die ander vnderisch" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Comparatio Co[e]li et Terra[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>The comparison of the heaven and the earth.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="schwimmen die Sternen im Him[m]el" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Stella[e] certas et ordinatas in ca[e]lo q[u]asi Natationes faciunt, vt pisces in aqua [etc]</marginalia_text>
+                </position>
+            </language>
+            <translation>Stars create fixed and ordered [routes] in the sky, as if swimming, as fish in the water, et cetera.</translation> <!--JG: Unsure--> <!--KS: alternatively: 'Stars make fixed and orderly swims in the sky, like fish in water, et cetera.'-->
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="zusamen in eins vermischet" type="straight"/>
+        <underline language="DE" method="pen" text="deutliche[n] namen" type="double"/>
+        <underline language="DE" method="pen" text="füß vn[d] wurtzen" type="straight"/>
+        <underline language="DE" method="pen" text="seind des Him[m]els" type="straight"/>
+        <underline language="DE" method="pen" text="sie wurtzent nit im Him[m]el" type="double"/>
+        <underline language="DE" method="pen" text="vnder" type="double"/>
+        <underline language="DE" method="pen" text="Him[m]el fix" type="double"/>
+        <underline language="DE" method="pen" text="eine gibt seine frucht mit wurtzen das ander nicht" type="straight"/>
+        <underline language="DE" method="pen" text="stand vbersich" type="straight"/>
+        <underline language="DE" method="pen" text="d[as] ander ha[n]gt vndersich" type="straight"/>
+        <underline language="DE" method="pen" text="seine frücht d[er] höhe zu" type="straight"/>
+        <underline language="DE" method="pen" text="d[as] ander vndersich" type="straight"/>
+        <underline language="DE" method="pen" text="auff nichten" type="straight"/>
+        <underline language="DE" method="pen" text="nit füsse" type="straight"/>
+        <underline language="DE" method="pen" text="schwimmen die Sternen" type="straight"/>
+        <underline language="DE" method="pen" text="Ordnung mit irem schwim[m]em wie sie Gott geschaffen hat hoch in der weit" type="straight"/>
+        <underline language="DE" method="pen" text="schnel" type="straight"/>
+        <underline language="DE" method="pen" text="langsam" type="straight"/>
+        
+        <drawing anchor_text="schwimmen die Sternen" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+       
+    </annotation>
+</transcription>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.024v.tif" pagination="[24[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Also ist auch in der Erde[n] einer der das macht das auß jr kompt. Ein solchs ist auch im Wasser der solche Composition zusammen tregt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Fabricator in o[mn]ibus Eleme[n]tis</marginalia_text>
+                </position>
+            </language>
+            <translation>The maker is in all the elements.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="drüber gesetzt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Prepositus</marginalia_text>
+                </position>
+            </language>
+            <translation>Place in front.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="Subiecta darzu" type="straight"/>
+        <underline language="DE" method="pen" text="an stadt Gottes" type="double"/>
+        <underline language="DE" method="pen" text="der das macht das auß jr kompt. Ein solchs ist" type="straight"/>
+        <underline language="DE" method="pen" text="Wasser der solche Composition zusammen tregt" type="straight"/>
+        <underline language="DE" method="pen" text="Firmament" type="straight"/>
+        <underline language="DE" method="pen" text="er hat aber einen drüber gesetzt" type="straight"/>
+        <underline language="DE" method="pen" text="machen" type="straight"/>
+        <underline language="DE" method="pen" text="formieren" type="straight"/>
+        <underline language="DE" method="pen" text="Corporieren" type="straight"/>
+        <underline language="DE" method="pen" text="Ordinieren" type="straight"/>
+        <underline language="DE" method="pen" text="ohne ein Arbeiter wirdt" type="straight"/>
+        <underline language="DE" method="pen" text="graß auch" type="straight"/>
+        <underline language="DE" method="pen" text="ordnet von" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <drawing anchor_text="ordnet von" book_orientation="0" method="pen" place="tail" type="manicule"/>
+        
+    </annotation>
+</transcription>

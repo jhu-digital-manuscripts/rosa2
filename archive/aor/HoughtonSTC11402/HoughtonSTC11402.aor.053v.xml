@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.053v.tif" reader="Harvey" signature="[Fvi[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Ca[e]sar impeditos, sa[e]pè</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>adoriebat[u]r.</marginalia_text>
+                </position>
+            </language>
+            <translation>Caesar always attacked obstructed [people]. </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Annibal" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hannibal.</marginalia_text>
+                    <person name="Hannibal"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="in the water slewe" type="straight"/>
+        <underline language="EN" method="pen" text="Anniball" type="straight"/>
+        <underline language="EN" method="pen" text="Fuluius the" type="straight"/>
+        <underline language="EN" method="pen" text="thinges vnaduisedly" type="straight"/>
+        <underline language="EN" method="chalk" text="in the dawnynge of the daye, the mist beinge some what thycke, and the ayer" type="straight"/>
+        <underline language="EN" method="pen" text="of the daye" type="straight"/>
+        <underline language="EN" method="pen" text="the mist" type="straight"/>
+        <underline language="EN" method="pen" text="the ayer" type="straight"/>
+        <underline language="EN" method="pen" text="hym sodeynly" type="straight"/>
+        <underline language="EN" method="pen" text="Anniball on" type="straight"/>
+        <underline language="EN" method="pen" text="toke his campe" type="straight"/>
+        <underline language="EN" method="pen" text="theyr capitayne" type="straight"/>
+        <underline language="EN" method="pen" text="with. viii. M. valiaunt menne" type="straight"/>
+        <underline language="EN" method="pen" text="Romayns host was deuided" type="straight"/>
+        <underline language="EN" method="pen" text="Fabius" type="straight"/>
+        <underline language="EN" method="pen" text="dictatour" type="straight"/>
+        <underline language="EN" method="pen" text="Minutius" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="in the water slewe"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="vnaduisedly"/>
+        <mark method="pen" name="dot" place="intext"/> <!---obscured, he-->
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+        
+    </annotation>
+</transcription>

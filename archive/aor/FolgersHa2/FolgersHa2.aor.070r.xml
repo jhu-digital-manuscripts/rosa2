@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.070r.tif" pagination="459" reader="Harvey"/>	<!-- ABO 74right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Alexander, die Achilles: nocte Homerus. Ca[e]sar, qua[e] ipse
+						diu exequitur,
+					</marginalia_text>
+					<person name="Alexander the Great"/>
+					<person name="Achilles"/>
+					<person name="Homer"/>
+					<person name="Julius Caesar"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						noctu ipse conscribit. Et vtru[m]q[ue] negociu[m] expedit
+						quasi facillimè: certè foelicissimè.
+						Ca[e]sar solus est Cae[s]ar. Nec die, nec nocte alius,
+						quàm idem Ipse. Omnes
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						) in Ca[e]sare
+						Manes.
+					</marginalia_text>
+					<X-ref book_title="Pharsalia" language="LA" person="Lucan" text="in Caesare manes"/>
+				</position>
+			</language>
+			<translation>
+				By day, Alexander is Achilles; by night he is Homer. Caesar, pursues things himself all day, which he writes
+				down himself at night. And he completes both activties as if they were done most easily, most surely, more happily.
+				Caesar is Caesar alone. And by day or night he is no one other than he himself. "All the ghosts are in Caesar."				
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						destramente.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						argutè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Skillfully. Cleverly.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Tam scientia, quàm Virtute Omni sufficiens. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Sufficent for science as well as for every virtue.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Basta.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Enough.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Huc Optimum, et Effigies, in adyto Ethico. 
+						Quod Optimum, statim exprimendum: aut frustrà.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Here is the best thing, and its portrait, within an ethical sanctuary.
+				Whatever is best must be expressed immediately, or else it is in vain. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Omnes actores, et historici infra vnum Ca[e]sarem. Varij colores: vnica essentia.
+					</marginalia_text>
+					<person name="Julius Caesar"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				All actors and historians are beneath Caesar alone. There are many colors but one essence.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Neographia, et Neopraxia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Neographia and Neopraxia.
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="doppio intendimento" type="straight"/>
+		<underline language="IT" method="pen" text="Hettore Podocatharo" type="straight"/>
+		<underline language="IT" method="pen" text="la propria gloria" type="straight"/>
+		<underline language="IT" method="pen" text="scriuendo opere" type="straight"/>
+		<underline language="IT" method="pen" text="historie elega[n]tissime" type="straight"/>
+		<underline language="IT" method="pen" text="uiue[n]do cauallerescame[n]te" type="straight"/>
+		<underline language="IT" method="pen" text="meriteuoli" type="straight"/>
+		<underline language="IT" method="pen" text="huomini di ualore" type="straight"/>
+		<underline language="IT" method="pen" text="d'un cerusico giouane" type="straight"/>
+		<underline language="IT" method="pen" text="non molto prattico" type="straight"/>
+		<underline language="IT" method="pen" text="troppo piu cauallino" type="straight"/>
+		<underline language="IT" method="pen" text="medicare una fanciulla ricca &amp; bella" type="straight"/>
+		<underline language="IT" method="pen" text="occhio" type="straight"/>
+		<underline language="IT" method="pen" text="quel cerusico" type="straight"/>
+		<underline language="IT" method="pen" text="inesperto" type="straight"/>
+		<underline language="IT" method="pen" text="come acutissimo" type="straight"/>
+		<underline language="IT" method="pen" text="in medicar quell'occhio" type="straight"/>
+		<underline language="IT" method="pen" text="corrotta la pupilla" type="straight"/>
+		<underline language="IT" method="pen" text="senso ambiguo" type="straight"/>
+		<underline language="IT" method="pen" text="corrompere" type="straight"/>
+		<underline language="IT" method="pen" text="Pupilla" type="straight"/>
+		<underline language="IT" method="pen" text="dottor di" type="straight"/>
+		<underline language="IT" method="pen" text="lettere, greche" type="straight"/>
+		<underline language="IT" method="pen" text="latine" type="straight"/>
+		<underline language="IT" method="pen" text="Aristofilo" type="straight"/>
+		<underline language="IT" method="pen" text="ornamento della nobiltà, et della dottrina" type="straight"/>
+		
+		<!-- Symbols -->
+		<symbol name="SS" place="head"/>
+		<symbol name="SS" place="right_margin"/>
+		<symbol name="Sun" place="right_margin"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Cauallie -->
+		<mark method="pen" name="quotation_mark" place="right_margin"/>
+		<mark method="pen" name="quotation_mark" place="right_margin"/>
+		<mark method="pen" name="quotation_mark" place="right_margin"/>
+		<mark method="pen" name="quotation_mark" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!-- sen -->
+		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- scher -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Baldac -->
+		
+	    <!-- Left margin -->
+	    <mark method="pen" name="bracket" place="left_margin"/> <!-- se ... zando -->
+		    
+	    <!-- Head/Intext/Tail -->
+		<mark language="IT" method="pen" name="plus_sign" place="head" text="doppio intendimento"/>
+	    <mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark: splendore -->
+		<mark method="pen" name="dot" place="intext"/> <!-- splendore, scriuendo -->
+		<mark method="pen" name="dot" place="intext"/> <!-- elega[n]tissime, uiue[n]do -->
+		<mark method="pen" name="dot" place="intext"/> <!-- escame[n]te, dona[n]do -->
+		<mark method="pen" name="vertical_bar" place="intext"/> <!-- pregio. Ragionauasi -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="acutissimo"/>
+		<mark language="IT" method="pen" name="straight_quotation_mark" place="intext" text="in medicar quell'occhio"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="corrotta la pupilla"/>
+		<mark method="pen" name="comma" place="intext"/> <!-- corrompere sopra -->
+
+    </annotation>
+</transcription>

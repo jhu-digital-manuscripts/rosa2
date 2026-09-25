@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.131v.tif" pagination="[124v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Hi igitur sunt termini naturaliu[m] morborum &amp; mortis. uiolenti autem sunt" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro morte naturali et violenta.</marginalia_text>
+                </position>
+            </language>
+            <translation>For a natural and violent death.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Si tame[n] ego à generalibus periculis abstinuero, clade, peste, naufragio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Generalia pericula.</marginalia_text>
+                </position>
+            </language>
+            <translation>Common dangers.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>♄ ipse, na[m] retrogradus est.</marginalia_text>
+                    <symbol_in_text name="Saturn"/>
+                </position>
+            </language>
+            <translation>Saturn itself, for it is retrograde.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Postmodu[m] direxi quadratu[m] Solis dextrum ad ascende[n]s" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; perueniet ad ipsum in 58 anno" type="straight"/>
+        <underline language="LA" method="pen" text="Si tame[n] ego à generalibus periculis abstinuero, clade, peste, naufragio" type="straight"/>
+        <underline language="LA" method="pen" text="solum in his, sed etiam in filijs, &amp; uita uxoris" type="straight"/>
+        
+    </annotation>
+</transcription>

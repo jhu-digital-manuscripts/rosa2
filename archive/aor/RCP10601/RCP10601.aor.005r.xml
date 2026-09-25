@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.005r.tif" pagination="9" reader="John Dee" signature="a 5"/>
+    <annotation>
+        
+        <marginalia anchor_text="Ismaelitae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ismaëlita[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Ishmaelites.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Zohar" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Liber Zohar</marginalia_text>
+                    <book title="Zohar"/>
+                </position>
+            </language>
+            <translation>The Zohar book.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="autem Ismaelitae" type="straight"/>
+        <underline language="LA" method="pen" text="Ismael" type="straight"/>
+        <underline language="LA" method="pen" text="multa aut falsa" type="straight"/>
+        <underline language="LA" method="pen" text="matris Aegyptiae" type="straight"/>
+        <underline language="LA" method="pen" text="moderatione ad spiritum" type="straight"/>
+        <underline language="LA" method="pen" text="praeterquam in Alcorano" type="straight"/>
+        <underline language="LA" method="pen" text="Zohar" type="straight"/>
+        <underline language="LA" method="pen" text="proximè exacto ex Chaldaeis" type="straight"/>
+        <underline language="LA" method="pen" text="omnia notat" type="straight"/>
+        
+        <errata amendedtext="receptae" copytext="receceptae" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

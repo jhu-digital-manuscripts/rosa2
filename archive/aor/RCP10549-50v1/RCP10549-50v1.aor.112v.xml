@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.112v.tif" pagination="204" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="M. Catonis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Marc[us] Cato
+                    </marginalia_text>
+                    <person name="Cato the Younger"/>
+                </position>
+            </language>
+            <translation>
+                Marcus Cato (the Younger).
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="occultae inimicitiae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Inimiciti[a]e occult[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Hiden hostilities.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Conclusio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Conclusion.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iuppiter" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Oratio ad Iovem
+                    </marginalia_text>
+                    <person name="Jupiter"/>
+                </position>
+            </language>
+            <translation>
+                Prayer to Jupiter.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iuno" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ad Iononem
+                    </marginalia_text>
+                    <person name="Juno"/>
+                </position>
+            </language>
+            <translation>
+                To Juno.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Minerua" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ad minerva[m]
+                    </marginalia_text>
+                    <person name="Minerva"/>
+                </position>
+            </language>
+            <translation>
+                To Minerva.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Latona, &amp; Apollo, &amp; Diana" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ad { latona[m] Diana[m] appoline[m]
+                    </marginalia_text>
+                    <person name="Latona"/>
+                    <person name="Diana"/>
+                    <person name="Apollo"/>
+                </position>
+            </language>
+            <translation>
+                To Latona, Diana and Apollo.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mercuri" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ad mercuriu[m]
+                    </marginalia_text>
+                    <person name="Mercury"/>
+                </position>
+            </language>
+            <translation>
+                To Mercury.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hercules" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ad hercule[m]
+                    </marginalia_text>
+                    <person name="Hercules"/>
+                </position>
+            </language>
+            <translation>
+                To Hercules.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Idea" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ad Idea[m]
+                    </marginalia_text>
+                    <person name="Idaea"/>
+                </position>
+            </language>
+            <translation>
+                To Idaea.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Castor &amp; Pollux" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ad castore[m] polluce[m]
+                    </marginalia_text>
+                    <person name="Castor"/>
+                    <person name="Pollux"/>
+                </position>
+            </language>
+            <translation>
+                To Castor [and] Pollux.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nudauit [...] expilauit [...] compilauit [...] spoliauit [...] asportandúmque [...] conuellere ex suis sedibus [...] violatae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        extorquere sustollere nudare expilare compilare spoliare asportare co[n]vellere ex sedib[us] polluere violare anectere 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To extort, to raise up high, to lay bare, to plunder, to pillage, to rob, to remove from the seats, to shatter, to violate, to tie.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ad quos vos per ludum ac negligentiam" type="straight"/>
+        <underline language="LA" method="pen" text="via: horum nos hominum sectam atque instituta persequimur" type="straight"/>
+        <underline language="LA" method="pen" text="sit in inuidia, quantóque in odio apud quosdam homines nobiles, nouorum hominu[m] virtus &amp; industria: si tantulum oculos deiecerimus,              praestò esse insidias: si vllum locum aperuerimus suspitioni aut crimini, accipiendum esse statim vulnus, esse nobis semper vigila[n]dum, semper laborandum videmus. inimicitiae" type="straight"/>
+        <underline language="LA" method="pen" text="tacitae magis &amp; occultae inimicitiae time[n]dae sunt, quàm" type="straight"/>
+        <underline language="LA" method="pen" text="quasi natura &amp; genere disiuncti sint, ita dissident à nobis animo ac voluntate" type="straight"/>
+        <underline language="LA" method="pen" text="Quamobrem mihi Iudices, opta[n]dum est illud, in hoc reo finem accusandi facere: cum &amp; Populo Rom. satisfactum" type="straight"/>
+        <underline language="LA" method="pen" text="officium Siculis necessariis meis erit persolutem" type="straight"/>
+        <underline language="LA" method="pen" text="Proinde siqui sunt" type="straight"/>
+        <underline language="LA" method="pen" text="qui in hoc reo aut potentes, aut audaces, aut artifices ad corrumpendum iudicium velint esse: ita sint parati,              vt discaeptante Populo Rom. mecum sibi rem videant futuram. &amp; si me in hoc reo, quem mihi inimicum Siculi dederunt, satis vehementem, satis perseuerantem, satis vigilantem esse cognorunt: existiment in his hominibus,              quorum ego inimicitias Populi Romani salutis causa suscaepero, multo grauiorem atque acriore[m] futurum" type="straight"/>
+        <underline language="LA" method="pen" text="téque Iuno" type="straight"/>
+        <underline language="LA" method="pen" text="téque Minerua" type="straight"/>
+        <underline language="LA" method="pen" text="etiam te Apollo" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">8</numeral>
+        <numeral place="left_margin">10</numeral>
+        
+        
+    </annotation>
+</transcription>

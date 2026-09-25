@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.195v.tif" pagination="390" reader="John Dee" signature="[B 3[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="orator" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Orator.</marginalia_text>
+                </position>
+            </language>
+            <translation>Orator.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἀντονομασία" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ἀντονομασία"</marginalia_text>
+                </position>
+            </language>
+            <translation>Antonomasia.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cicero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cicero</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ὀνοματοποιία" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ὀνοματοποιία.</marginalia_text>
+                </position>
+            </language>
+            <translation>Onomatopoeia.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sermonem primi fecerunt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Primi sermonis factores.</marginalia_text>
+                </position>
+            </language>
+            <translation>The originators of the first language.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Nam dico uultus hominis, pro" type="straight"/>
+        <underline language="EL" method="pen" text="ἀντονομασία" type="straight"/>
+        <underline language="LA" method="pen" text="quae aliquid pro nomine ponit, poëtis" type="straight"/>
+        <underline language="LA" method="pen" text="Graecis inter maximas habita uirtutes, nobis uix permittitur" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">.1.</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">3</numeral>
+        
+    </annotation>
+</transcription>

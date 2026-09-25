@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.041r.tif" pagination="41" reader="John Dee" signature="K"/> 
+    <annotation>
+        
+        <marginalia anchor_text="substantia agens in hoc toto mu[n]do est unum [scilicet] Calor" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Solus Calor est Agens in hoc mundo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Heat alone is the agent in this world.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Et est calidus &amp; siccus in quarto" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Calidus et siccus in 4⁰                    
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Hot and dry in the fourth.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="72" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        {Imò summa est 83: sed putandum est hoc no[n] latuisse 
+                        authorem: Ip[su]m tame[n] numeru[m] suu[m] mysteriu[m] nobis obijcere 
+                        ante oculos: hocq[ue] nome[n] mysticu[m] cum suis numeris, proposito bene q[ua]drare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                On the contrary, the highest point is 83. But it must be believed that the author had not hidden this. Nevertheless [it must be believed] that he cast his mystic
+                number before our eyes: and that he made the mystical name suitable with his numbers, having related it well.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="mistam" type="grid"/>
+        <underline language="LA" method="pen" text="Calore enim sublato nullus omnino Motus est" type="straight"/>
+        
+        <table place="intext" type="standard_table">
+            <tr>
+                <th>Reso[lutio]</th>
+            </tr>
+            <tr>
+                <td>☉</td>
+                <td>☾</td>
+            </tr>
+            <tr>
+                <td>41</td>
+                <td>42</td>
+            </tr>
+            <tr>
+                <th>Project[io]</th>
+            </tr>
+            <tr>
+                <td>☉</td>
+                <td>☾</td>
+                <td>[Hieroglyphic Monad]</td>
+            </tr>
+            <tr>
+                <td>41</td>
+                <td>19</td>
+                <td>13</td>
+            </tr>
+            <text hand="English_secretary" language="LA">vel potius</text>
+            <translation>Dissolution. Or rather. Transmutation.</translation> <!--JG: Unsure about the transcription and translation of the words 'Reso' and 'Project'-->
+        </table>
+        
+    </annotation>
+</transcription>

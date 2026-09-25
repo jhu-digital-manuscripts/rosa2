@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+  <license>
+    <url>http://creativecommons.org/licenses/by/4.0/</url>
+    <logo>https://i.creativecommons.org/l/by/4.0/88x31.png</logo>
+  </license>
+  <totalPages>320</totalPages>
+  <dates>
+    <startDate>1557</startDate>
+    <endDate>1557</endDate>
+  </dates>
+  <texts>
+    <text id="1">
+      <language>la</language>
+      <title>Euclidis elementorum libri XV. Græce et Latine</title>
+      <textId>euclid</textId>
+      <pages end="001r" start="160v">320</pages>
+    </text>
+  </texts>
+  <bibliographies>
+    <bibliography lang="en">
+      <title>Euclidis elementorum libri XV. Græce et Latine</title>
+      <commonName>Euclid, Euclidis elementorum (Paris, 1557)</commonName>
+      <dateLabel>1557</dateLabel>
+      <currentLocation>London, UK</currentLocation>
+      <repository>British Library</repository>
+      <shelfmark>C.122.bb.35.</shelfmark>
+      <author>
+        <name>Euclid</name>
+        <id>http://www.isni.org/isni/0000000356067426</id>
+      </author>
+      <reader>
+        <name>John Dee</name>
+        <id>http://www.isni.org/isni/0000000122785193</id>
+      </reader>
+      <website>https://archaeologyofreading.org/bibliography/Dee-corpus/Euclid</website>
+    </bibliography>
+  </bibliographies>
+</book>

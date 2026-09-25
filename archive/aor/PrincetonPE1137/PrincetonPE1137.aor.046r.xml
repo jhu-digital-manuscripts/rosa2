@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonPE1137.046r.tif" reader="Harvey"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        In tres libros dispertita.
+                        Commentarium vocat su[pra], 7.v.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Divided into three books.
+                He calls it his commentary, above, p. 7v. 
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        GHaruius.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                G. Harvey.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Smithi Gallica, et Italica Peregrinatio.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Smith's journey through France and Italy.
+            </translation>
+        </marginalia>
+        
+        <mark method="chalk" name="horizontal_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

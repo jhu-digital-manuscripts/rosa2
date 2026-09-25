@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.207v.tif" pagination="406" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="VVindorum regis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Rex Windor[um].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                King of the Wends.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex Herletta concubina susceptum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Herletta, mater Guilielmi Conq.
+                    </marginalia_text>
+                    <person name="Herleva"/>
+                    <person name="William the Conqueror"/>
+                </position>
+            </language>
+            <translation>
+                Herleva, mother of William the Conqueror.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Comes Gilbertus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Comes Gilbertus 
+                    </marginalia_text>
+                    <person name="Gilbert, Count of Brionne"/> 
+                </position>
+            </language>
+            <translation>
+                Count Gilbert of Brionne.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Gulihelmi" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        bastard 
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Angliae prolixius scribens" type="straight"/>
+        <underline language="LA" method="pen" text="Victigerni" type="straight"/> 
+        <underline language="LA" method="pen" text="VVindorum" type="straight"/>
+        <underline language="LA" method="pen" text="Aethelredus habuit in vxorem filia[m] Ricardi primi, Ducis Normannorum" type="straight"/>
+        <underline language="LA" method="pen" text="Emma" type="straight"/>
+        <underline language="LA" method="pen" text="primus, pater Gulihelmi de" type="straight"/>
+        <underline language="LA" method="pen" text="Robertus, Richardi secundi, Ducis Norma[n]norum, alter" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; frater Richardi tertij" type="straight"/>
+        <underline language="LA" method="pen" text="ex Herletta" type="double"/>
+        <underline language="LA" method="pen" text="vxoris loco eam aliqua[n]diu" type="straight"/>
+        <underline language="LA" method="pen" text="Gulihelmus" type="straight"/>
+        <underline language="LA" method="pen" text="Comes Gilbertus" type="straight"/>
+        <underline language="LA" method="pen" text="tutela tutoris" type="straight"/>
+        
+        <symbol name="Asterisk" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="intext"/> <!-- primus pater -->
+        <mark method="pen" name="bracket" place="intext"/> <!-- Gulihelmi de -->               
+        
+        <numeral language="LA" place="intext" text="primus">29</numeral>
+        
+        <errata amendedtext=";" copytext="," language="LA"/> <!-- Normannorum &amp; -->
+        <errata amendedtext=";" copytext="," language="LA"/> <!-- primo, & -->
+        
+    </annotation>
+</transcription>

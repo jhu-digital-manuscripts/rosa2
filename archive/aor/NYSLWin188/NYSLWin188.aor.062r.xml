@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.062r.tif" pagination="62" reader="John Dee" signature="Q ij"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Qua[e] facile a c[a]elo attrahuntur
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>That are easily attracted to the sky.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="Humiditet feulen läst vnd putrificieren das" type="straight"/>
+        <underline language="DE" method="pen" text="alles möglich das es auffgezogen werde" type="straight"/>
+        <underline language="DE" method="pen" text="faul holtz" type="straight"/>
+        <underline language="DE" method="pen" text="ander faul ding" type="straight"/>
+        <underline language="DE" method="pen" text="nichts mehr da ist" type="straight"/>
+        <underline language="DE" method="pen" text="so klein das nicht an die Sonnen kompt" type="straight"/>
+        <underline language="DE" method="pen" text="das ist in des Menschen verstand vnd erkantnuß" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

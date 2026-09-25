@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.157v.tif" pagination="54" reader="John Dee" signature="[d.iii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="constituio coniecturalis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Constitutio co[n]iecturalis</marginalia_text>
+                </position>
+            </language>
+            <translation>A conjectural issue.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="constitutio definitiua" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Constitutio diffinitiua</marginalia_text>
+                </position>
+            </language>
+            <translation>A definitional issue.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="constitutio generalis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Constitutio generalis</marginalia_text>
+                </position>
+            </language>
+            <translation>A qualitative issue.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="translatiua dicitur constitutio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Constitutio tra[n]slatiua</marginalia_text>
+                </position>
+            </language>
+            <translation>An issue of transferral.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="facti quidem controuersia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Facti co[n]trouersia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Dispute about a fact.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nominis controuersia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nominis co[n]trov[er]sia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Dispute about a definition.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Generis est controuersia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Generis co[n]trou[er]sia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Dispute about the kind.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hermagoras" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hepmagoras.</marginalia_text>   <!-- DO: Again not sure about the third letter, might just be a strange 'r'? -->
+                    <person name="Hermagoras of Temnos"/>
+                </position>
+            </language>
+            <translation>Hermargoras.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quod eius, vt nos putamus, no[n] mediocre peccatum reprehe[n]dendum videtur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Contra hermagor[a]e opinio[n]em Sillogismus Rhetoricus.</marginalia_text>
+                    <person name="Hermagoras of Temnos"/>
+                </position>
+            </language>
+            <translation>Against the opinion of Hermagoras. A rhetorical syllogism.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Atque haru[m] aliquam in omne causae genus incidere necesse est" type="straight"/>
+        <underline language="LA" method="pen" text="Eadem enim res alii genus esse, alii pars potest, eidem genus esse &amp; pars no[n] potest. Deliberatio" type="straight"/>
+        <underline language="LA" method="pen" text="Pars autem causae constitutio est omnis" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

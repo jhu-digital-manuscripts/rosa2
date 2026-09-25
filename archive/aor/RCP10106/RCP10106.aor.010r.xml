@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.010r.tif" pagination="19" reader="John Dee" signature="b 2"/>
+    <annotation>
+        
+        <marginalia anchor_text="Mihi ille detur puer" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Puer opt[imus].</marginalia_text>
+                </position>
+            </language>
+            <translation>The best boy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Danda est tamen omnibus aliqua remißio: non solum, quia nulla res est, quar perferre possit continuum laborem (atque ea quoque, quae sensu,              &amp; anima carent, ut seruare uim suam poßint, uelut quiete alterna retenduntur) sed quòd studium discendi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Studioru[m] remissio</marginalia_text> 
+                </position>
+            </language>
+            <translation>The recreation of studying.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uoluntatem quae cogi non potest" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Volu[n]tas cogi no[n] p[otes]t</marginalia_text>
+                </position>
+            </language>
+            <translation>The will cannot be forced.</translation>
+        </marginalia>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

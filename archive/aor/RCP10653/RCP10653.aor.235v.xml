@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.235v.tif" pagination="22" reader="John Dee"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="nomine Matildem" type="straight"/>
+        <underline language="LA" method="pen" text="hanc quinquennem" type="double"/>
+        <underline language="LA" method="pen" text="imperator Henricus petijt" type="straight"/>
+        
+        <graph book_orientation="0" method="pen" place="left_margin" type="genealogical_tree">
+            <node anchor_text="imperator Henricus" id="n1" person="Henry IV, Holy Roman Emperor">Henricus 4[us] Imp</node>
+            <node anchor_text="Matildem" id="n2" person="Empress Matilda">Matildis</node> 
+            <link from="n2" relationship="has_spouse" to="n1"/>
+            <link from="n1" relationship="has_spouse" to="n2"/>
+        </graph>
+        
+    </annotation>
+</transcription>

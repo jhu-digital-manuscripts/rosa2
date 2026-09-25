@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.299v.tif" pagination="[292v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Imò ♄, at per accide[n]s.</marginalia_text> 
+                    <symbol_in_text name="Saturn"/>
+                </position>
+            </language>
+            <translation>On the contrary, Saturn, but by chance.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>at ille calor redunda[n]s intelligitur no[n] co[m]mode na[m] tantis salutaris est.</marginalia_text> 
+                </position>
+            </language>
+            <translation>And this overflowing heat is not easily understood, for it is beneficial for so many things.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Iouem pluuias" type="straight"/>
+        <underline language="LA" method="pen" text="Nulla eclipsis omnino, toti orbi penuriam, aut pestem pronunciare potest. Pestis autem ex his, quotuor annis durare nunq[uam] potest" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="pluuias"/>
+        
+    </annotation>
+</transcription>

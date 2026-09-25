@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.285r.tif" pagination="278" reader="John Dee" signature="aaa ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Fortunae domini" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Domini fortuna[e].</marginalia_text>
+                </position>
+            </language>
+            <translation>The lords of fortune.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Numerum fratrum, sume ex domino ascendentis trigoni primo usq[ue] ad ascendens, si supra terram fuerit: uel ab ascendente ad ipsum, &amp; communi da duos" type="straight"/>
+        <underline language="LA" method="pen" text="Iupiter si comburatur in Leone, uir ille nunq[uam] erit pauper neq[ue] diues" type="straight"/>
+        <underline language="LA" method="pen" text="pater eo anno morietur" type="straight"/>
+        
+        <symbol language="LA" name="Mercury" place="right_margin" text="Mercurio"/>
+        <symbol language="LA" name="Moon" place="right_margin" text="Luna"/>
+        <symbol name="Venus" place="right_margin"/>
+        <symbol name="Mars" place="right_margin"/>
+        
+    </annotation>
+</transcription>

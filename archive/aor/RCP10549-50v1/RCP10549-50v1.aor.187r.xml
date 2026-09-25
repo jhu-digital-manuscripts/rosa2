@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.187r.tif" pagination="353" reader="John Dee" signature="zz.i."/>
+    <annotation>
+        
+        <marginalia anchor_text="difficile est enim tacere cum doleas" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Difficile est tacere cu[m] doleas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                It is hard to be silent when you are hurt.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="oratoris vitium" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vitium oratio[n]is
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The vice of speech.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Adestote omnes animis, qui adestis corporibus, " hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        adestote o[mn]es a[nim]is qui adestis corporibus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                All those gathered here, give me your attention.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Erigite mentes aurésque" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        errigere [ me[n]tes aures ]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Alert your minds and ears.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="occasum interitúmque Reipublicae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        occasus interritus Reip
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The destruction and ruin of the state.
+            </translation>
+        </marginalia>
+
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Contubernalis in co[n]sulatu
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Comrad in consulship.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="secum facere" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        secu[m] facere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To do with them.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="difficile est enim tacere cum doleas" type="straight"/>
+        <underline language="LA" method="pen" text="maxima voce, vt omnes exaudire possint, dico, sempérque dicam" type="straight"/>
+        <underline language="LA" method="pen" text="qui adestis corporibus" type="straight"/>
+        <underline language="LA" method="pen" text="Erigite mentes aurésque vestras" type="straight"/>
+        <underline language="LA" method="pen" text="crudelissimum &amp; luctuosissimum exitium patriae" type="straight"/>
+        <underline language="LA" method="pen" text="ad occasum interitúmque Reipublicae Catilina in castris" type="straight"/>
+        <underline language="LA" method="pen" text="co[m]prehensis atque confossis, incensione vrbem, internicione ciues, vastitate Italiam, interitu" type="straight"/>
+        <underline language="LA" method="pen" text="orbis terrae, vrbem hanc denique sedem omnium nostrum, arcem regum ac nationum exterarum, lumen gentium, domicilium imperii,              quinque hominum amentium ac perditorum poena redemi" type="straight"/>
+        <underline language="LA" method="pen" text="infirmitatem corporis animi virtute superaret" type="straight"/>
+        <underline language="LA" method="pen" text="Sed iam redeo ad causam" type="straight"/>
+        <underline language="LA" method="pen" text="authoritate spoliare voluisset" type="straight"/>
+        <underline language="LA" method="pen" text="secum facere" type="straight"/>
+        
+        <symbol name="Asterisk" place="left_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <mark language="LA" method="pen" name="tripunctus_with_tail" place="head" text="difficile est enim tacere cum doleas"/>
+        
+        <mark method="pen" name="tripunctus_with_tail" place="right_margin"/>
+        
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">4</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">18</numeral>
+        
+    </annotation>
+</transcription>

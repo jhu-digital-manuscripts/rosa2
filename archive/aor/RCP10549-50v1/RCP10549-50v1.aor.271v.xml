@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.271v.tif" pagination="522" reader="John Dee" signature="[lzlzlz.v.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="aetas nostra vidit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>a[e]tas n[ost]ra vidit</marginalia_text>
+                </position>
+            </language>
+            <translation>Our age witnessed.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="liberae enim sunt cogitationes nostrae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Liber[a]e su[n]t cogitatio[n]es no[st]r[a]e</marginalia_text>
+                </position>
+            </language>
+            <translation>Our thoughts are free.</translation>
+        </marginalia>        
+        
+        <marginalia anchor_text="intuentur, vt ea cernimus quae videmus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>intueri cernere videre</marginalia_text>
+                </position>
+            </language>
+            <translation>To look at. To discern. To see.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tyrannos necauerunt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tyranni mors</marginalia_text>
+                </position>
+            </language>
+            <translation>The death of a tyrant.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>à maiore</marginalia_text>
+                </position>
+            </language>
+            <translation>From the greater.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>à maiore</marginalia_text>
+                </position>
+            </language>
+            <translation>From the greater.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vir" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>VIR</marginalia_text>
+                </position>
+            </language>
+            <translation>Man.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vim caelestem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>VIS Co[e]lestis</marginalia_text>
+                </position>
+            </language>
+            <translation>Heavenly force.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="memoriae" type="straight"/>
+        <underline language="LA" method="pen" text="in illum euomere videar" type="straight"/>
+        <underline language="LA" method="pen" text="no[n] potest dici satis, nec cogitari quidem, quantum in illo sceleris, qua[n]tum" type="straight"/>
+        <underline language="LA" method="pen" text="liberae enim sunt cogitationes nostrae" type="straight"/>
+        <underline language="LA" method="pen" text="Fingite igitur cogitatione imagine[m] huius conditionis" type="straight"/> 
+        <underline language="LA" method="pen" text="nam quid esset ingratius, quàm laetari caeteros, lugere eum solum, propter quem caeteri laetarentur?" type="straight"/>
+        <underline language="LA" method="pen" text="Proposita inuidia, morte, poena, qui nihilo segnius Remp. defendit, is vir vere puta[n]das est" type="straight"/>
+        <underline language="LA" method="pen" text="nisi qui nullam vim caelestem existimat" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">18</numeral>
+        
+        <drawing anchor_text="Tyranni mors" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="nam quid esset ingratius, quàm laetari caeteros, lugere eum solum, propter quem caeteri laetarentur?" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing anchor_text="VIR" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="nisi qui nullam vim caelestem existimat" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

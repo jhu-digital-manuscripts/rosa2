@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.012r.tif" reader="Harvey" signature="[Av[r]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>A notable Course of Proceding in Ambassadours, [etc]. A platfourme of many French Practises.</marginalia_text>
+                    <emphasis method="pen" text="Course of Proceding" type="straight"/>
+                    <emphasis method="pen" text="platfourme" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ἀπὸ μεχανῆς</marginalia_text> 
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ex improuiso:</marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>[the] Jouial &amp; most braue Stratagem.</marginalia_text>
+                </position>
+            </language>
+            <translation>"From the machine," unexpectedly: [the] Jouial &amp; most braue Stratagem.</translation> <!--JG: Chris, please translate Greek--> <!-- CG: So 'apo mechanes' is the Greek version of 'ex machina.' -->
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ambulare in nube, Heroicum est. Dixit, et Fecit: aut vana Imaginatio.</marginalia_text>
+                    <emphasis method="pen" text="Ambulare in nube" type="straight"/>
+                    <emphasis method="pen" text="Fecit" type="straight"/>
+                </position>
+            </language>
+            <translation>It is heroic to walk in the air. But vain imagination said and did.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Samsonis prodigiosum robur</marginalia_text>
+                    <person name="Samson"/>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>patefactu[m], etiam à muliercula</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>debilitat[u]r.</marginalia_text>
+                </position>
+            </language>
+            <translation>The prodigious strength of Samson having been revealed, is weakened, even by a foolish woman.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="To serche out the secretes of ennemies" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>vide Comite[m] </marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Purl. L.1.obser.35.</marginalia_text> 
+                    <person name="Jacopo di Porcia"/>
+                    <book title="The preceptes of warre"/>
+                </position>
+            </language>
+            <translation>See Jacopo di Porcia, book 1, observation 35.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>A lewred, A Brytane kynge, in [the] Habitt of A Minstrell</marginalia_text>
+                    <emphasis method="pen" text="A lewred" type="straight"/>
+                    <emphasis method="pen" text="A Minstrell" type="straight"/>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>in [the] Danes Campe.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="capitaynes and centurions in slaues apparell" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Captaynes in Slaues apparrell.</marginalia_text>
+                    <emphasis method="pen" text="Capitaynes" type="straight"/>
+                    <emphasis method="pen" text="Slaues" type="straight"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ante.c.I.</marginalia_text>
+                    <emphasis method="pen" text="Ante" type="straight"/>
+                </position>
+            </language>
+            <translation>Before, chapter 1.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Summaru[m] Virium, actorumq[ue] modus, declaratus, ludibrio esse incipit, et 
+                    quasi nihil Videtur: Vt Samsonis intonsa Coma. Vndè gloriosius est, Mysteria esse, qua[e] Vim habent mirificam.</marginalia_text>
+                    <person name="Samson"/>
+                    <emphasis method="pen" text="Summaru[m] Virium, actorumq[ue] modus" type="straight"/>
+                    <emphasis method="pen" text="quasi nihil" type="straight"/>
+                    <emphasis method="pen" text="Mysteria" type="straight"/>
+                </position>
+            </language>
+            <translation>The method of the greatest men and actors, it is announced, starts with mockery, and as if it seems nothing: 
+                as the uncut hair of Samson. Hence it is more glorious to be mysteries, that have a wonderful power.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="90" place="left_margin">
+                    <marginalia_text>If you in boddie, or mind, a Sampson seeme, Sweete Dalida no secretarie deeme.</marginalia_text>
+                    <person name="Samson"/>
+                    <person name="Delilah"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="they hadde sent Themistocles" type="straight"/>
+        <underline language="EN" method="pen" text="of one" type="straight"/>
+        <underline language="EN" method="pen" text="deathe of many" type="straight"/>
+        <underline language="EN" method="pen" text="Metellus" type="straight"/>
+        <underline language="EN" method="pen" text="If this cote on my backe knewe, and coulde vtter it" type="straight"/>
+        <underline language="EN" method="pen" text="I wolde bourne" type="straight"/>
+        <underline language="EN" method="pen" text="what tyme" type="straight"/>
+        <underline language="EN" method="pen" text="Arte thou" type="straight"/>
+        <underline language="EN" method="pen" text="trompette?" type="straight"/>
+        <underline language="EN" method="pen" text="Lelius" type="straight"/>
+        <underline language="EN" method="pen" text="kynge Syphax" type="straight"/>
+        <underline language="EN" method="pen" text="slaues" type="straight"/>
+        
+        <symbol name="SS" place="head"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+        <symbol language="LA" name="SS" place="tail" text="Summaru[m] Virium, actorumq[ue] modus, declaratus, ludibrio esse incipit, et quasi nihil Videtur: Vt Samsonis intonsa Coma. Vndè gloriosius est, Mysteria esse, qua[e] Vim habent mirificam."/>
+        <symbol name="SS" place="tail"/>
+        <symbol name="SS" place="tail"/>
+        
+        <mark method="pen" name="vertical_bar" place="head"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="they hadde sent Themistocles"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/> <!--curved-->
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/> <!--underneath 'Campe'-->
+        
+        <mark language="EN" method="pen" name="hash" place="intext" text="death of many"/>
+        
+    </annotation>
+</transcription>

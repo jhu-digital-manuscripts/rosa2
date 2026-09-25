@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.046v.tif" reader="Harvey" signature="[Evii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Auxilij superuenientis Elenchus. Vt i[nfr]a, eode[m] c. ite[m], c. 5. exemplo finali.</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0105" text="c. 5"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>A review of the help that arrived. As below, in the same chapter. Likewise, chapter 5, in the final example.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[the] same.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="horse kepers and" type="straight"/>
+        <underline language="EN" method="pen" text="conuey them selfe into the" type="straight"/>
+        <underline language="EN" method="pen" text="theyr mules" type="straight"/>
+        <underline language="EN" method="pen" text="them selfes" type="straight"/>
+        <underline language="EN" method="pen" text="ioyned together" type="straight"/>
+        <underline language="EN" method="pen" text="frenche" type="straight"/>
+        <underline language="EN" method="pen" text="came socour to the Romayns" type="straight"/>
+        <underline language="EN" method="pen" text="they had almost gotten" type="straight"/>
+        <underline language="EN" method="pen" text="vpper hande" type="straight"/>
+        <underline language="EN" method="pen" text="Marius" type="straight"/>
+        <underline language="EN" method="pen" text="Marcellus" type="straight"/>
+        <underline language="EN" method="pen" text="shewe of a great multitude" type="straight"/>
+        <underline language="EN" method="pen" text="horse kepers" type="straight"/>
+        <underline language="EN" method="pen" text="cookes, and" type="straight"/>
+        <underline language="EN" method="pen" text="to goo also" type="straight"/>
+        <underline language="EN" method="pen" text="beastes with" type="straight"/>
+        <underline language="EN" method="pen" text="and laden" type="straight"/>
+        <underline language="EN" method="pen" text="with beddynge" type="straight"/>
+        <underline language="EN" method="pen" text="other baggage" type="straight"/>
+        <underline language="EN" method="pen" text="come down on the backe" type="straight"/>
+        <underline language="EN" method="pen" text="began" type="straight"/>
+        <underline language="EN" method="pen" text="with so gret feare" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="ioyned together"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="they had almost gotten"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="to goo also"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="conuey them selfe into the"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="they had almost gotten"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--men, he-->
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

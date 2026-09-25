@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.009r.tif" reader="John Dee" signature="C"/>
+    <annotation>
+        
+        <marginalia anchor_text="appetitiua" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Appetitus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Appetite.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="imaginatio" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Imag[i]natio</marginalia_text>
+                </position>
+            </language>
+            <translation>Imagination.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Phantasiam" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pha[n]tasi[a]</marginalia_text>
+                </position>
+            </language>
+            <translation>Fantasy.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quandoq[ue] sensitiuam" type="straight"/>
+        <underline language="LA" method="pen" text="temporale" type="straight"/>
+        <underline language="LA" method="pen" text="cu[m] rationalem" type="straight"/>
+        <underline language="LA" method="pen" text="quae menti" type="straight"/>
+        <underline language="LA" method="pen" text="in concupisdibilem &amp; irascibilem" type="straight"/>
+        <underline language="LA" method="pen" text="imaginatiua" type="straight"/>
+        <underline language="LA" method="pen" text="deorsum ad" type="straight"/>
+        <underline language="LA" method="pen" text="enim non solum corpus proprium, sed alienum interdum transmutant, p[er] modum imitationis, virtute scilicet quadam, quam habet similitudo rei, ad transmutandam rem" type="straight"/>
+        <underline language="LA" method="pen" text="vehemens" type="straight"/>
+        <underline language="LA" method="pen" text="proprium, sed alienum corpus possunt transcendere, ac illud immutare adeò, ut mirabiles possint produci impressiones in elementis, item" type="straight"/>
+        <underline language="LA" method="pen" text="citra medicinae adminiculum" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/>  <!-- item siue -->
+        <mark method="pen" name="bracket" place="intext"/>  <!-- malis, quae -->
+        
+        <numeral language="LA" place="intext" text="q[uam] sensituam">1</numeral>
+        <numeral language="LA" place="intext" text="cu[m] rationalem">2</numeral>
+        <numeral language="LA" place="intext" text="quae menti"/>
+        
+        <errata amendedtext="concupisibilem" copytext="concupisdibilem" language="LA"/>
+        
+    </annotation>
+</transcription>

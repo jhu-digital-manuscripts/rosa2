@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.098v.tif" pagination="20" reader="Harvey" signature="[B2v]"/>	<!-- ABO 103left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						( Phocion, Phocion.
+					</marginalia_text>
+					<person name="Phocion"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Semper effectum: puncto strictissimus omni.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Always for the result; most strict with every point.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Eutrapelus, amongst men a Transcendent: amongst						
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						singular men, an Excedent. 
+						A mortal god, like the Inue[n]tours of arts, &amp;
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						/ faculties: but not an
+						immortal god, like the Creator of heauen, &amp; earth.
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						/ Whome
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						onlie he honours, as his founder, &amp;
+						the great autour of autours. Eutrapelus, &amp; other,
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						multipotent, and su[m]time 
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						woonderfull: He onlie omnipotent, &amp; euer woonderfull.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Quodq[ue] punctum ad rem: et cum effectu: aut
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="ES">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Todos es nada.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Non ut Duns, sed ut Phocion.
+					</marginalia_text>
+					<person name="Duns Scotus"/>
+					<person name="Phocion"/>
+				</position>
+			</language>
+			<translation>
+				Each point directed effectively towards the deed.
+				Otherwise, everything is nothing.
+				Not as Duns, but as Phocion.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Marauigliosi rimedi talhora" type="straight"/>
+		<underline language="IT" method="pen" text="prudenti Cittadini per saluare la lor" type="straight"/>	
+		<underline language="IT" method="pen" text="Menenio Agrippa" type="straight"/>
+		<underline language="IT" method="pen" text="che 'l ventre" type="straight"/>
+		<underline language="IT" method="pen" text="poco le forze mancare" type="straight"/>
+		<underline language="IT" method="pen" text="conobbero il lor' errore" type="straight"/>
+		<underline language="IT" method="pen" text="il ventre era quello" type="straight"/>
+		<underline language="IT" method="pen" text="nato" type="straight"/>
+		<underline language="IT" method="pen" text="popolo Romano" type="straight"/>
+		<underline language="IT" method="pen" text="per la concordia posson" type="straight"/>
+		<underline language="IT" method="pen" text="popolo" type="straight"/>
+		<underline language="IT" method="pen" text="bene accommodata" type="straight"/>
+		<underline language="IT" method="pen" text="L'insolenza de gl'ignoranti" type="straight"/>
+		<underline language="IT" method="pen" text="parecchi filosofi" type="straight"/>
+		<underline language="IT" method="pen" text="cose sottili" type="straight"/>
+		<underline language="IT" method="pen" text="insolente &amp; ignorante" type="straight"/>
+		<underline language="IT" method="pen" text="per burlargli" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="seco si sdegnarono" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<mark method="pen" name="vertical_bar" place="intext"/> <!--ritornarono. Cosi-->
+
+    </annotation>
+</transcription>

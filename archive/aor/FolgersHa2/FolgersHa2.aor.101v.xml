@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.101v.tif" pagination="26" reader="Harvey" signature="[B5v]"/>	<!-- ABO 106left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Questi punti.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Dictoru[m], factoru[m]q[ue] Quinta Essentia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				These points. The fifth essence of words and deeds.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Vt quodq[ue] est aptissimu[m], agillimumq[ue]
+						ingenium; ita in Singulis proficit celerrimè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Whenever anything of genius is most fitting and most agile, it succeeds most rapidly in singular endeavors.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Citò discit, et statim operatur animus diuinus.
+						Quicquid imperauit animus, obtinuit.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The divine mind learns quickly and immeditely begins to work.
+				Whatever the mind has commanded, it has obtained.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Serius, solidusq[ue] artifex statim capit, quod sapit maximè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The serious and solid artist understands immediately what he knows especially well.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						In grauibus, meras Gnomas loquitur, aut Leges: In acribus, mera apophthegmata,
+						aut Stratagemata: In lepidis, meras Ironias, aut Sales.
+					</marginalia_text>
+					<emphasis method="pen" text="Gnomas" type="straight"/>
+					<emphasis method="pen" text="Leges" type="straight"/>
+					<emphasis method="pen" text="apophthegmata" type="straight"/>
+					<emphasis method="pen" text="Stratagemata" type="straight"/>
+					<emphasis method="pen" text="Ironias" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				In serious matters, one speaks only in gnomic phrases or laws; in subtle matters, only in aphorisms or stratagems; 
+				in pleasant matters, only with irony or wit.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Nihil peritius, subtilius, aut profundius. Nihil efficacius, aut potentius.
+						Prudentia, ars viuendi: fortitudo, praxis. 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Nothing is more experienced, more subtle, or more profound. Nothing more effective, or more potent.
+				Prudence, the art of living: strength, praxis.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="non sanno mentire" type="straight"/>
+		<underline language="IT" method="pen" text="non ingannare" type="straight"/>
+		<underline language="IT" method="pen" text="non fare vsura" type="straight"/>
+		<underline language="IT" method="pen" text="spogliare il prossimo" type="straight"/>
+		<underline language="IT" method="pen" text="La Verità" type="straight"/>
+		<underline language="IT" method="pen" text="queste tre cose" type="straight"/>
+		<underline language="IT" method="pen" text="Vino" type="straight"/>
+		<underline language="IT" method="pen" text="Donna" type="straight"/>
+		<underline language="IT" method="pen" text="la Verità" type="straight"/>
+		<underline language="IT" method="pen" text="la Verità" type="straight"/>
+		<underline language="IT" method="pen" text="questa Virtù" type="straight"/>
+		<underline language="IT" method="pen" text="La Verità figliuola del Tempo" type="straight"/>
+		<underline language="IT" method="pen" text="sempre risplende, come il" type="straight"/>
+		<underline language="IT" method="pen" text="conosce se medesimo" type="straight"/>
+		<underline language="IT" method="pen" text="LEONE essendo" type="straight"/>
+		<underline language="IT" method="pen" text="vn Topo che" type="straight"/>
+		<underline language="IT" method="pen" text="Il Topo contento" type="straight"/>
+		<underline language="IT" method="pen" text="presto presto l'opera, richiese" type="straight"/>
+		<underline language="IT" method="pen" text="figliuola per moglie" type="straight"/>
+		<underline language="IT" method="pen" text="ecco la sposa che" type="straight"/>
+		<underline language="IT" method="pen" text="pestò, &amp;" type="straight"/>
+		
+		<symbol language="IT" name="SS" place="intext" text="La Verità figliuola del Tempo"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="La Verità è figliuoloa del Tempo,    Hà forza, &amp; hà virtù sopra ogni cosa,    Onde sempre risplende, come il Sole"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--huo-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--pros-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--pa-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--prepara-->
+		
+		<mark method="pen" name="vertical_bar" place="intext"/> <!--acconsentirono. Et-->
+		<mark method="pen" name="plus_sign" place="intext"/>
+
+    </annotation>
+</transcription>

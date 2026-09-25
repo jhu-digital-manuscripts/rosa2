@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.005r.tif" reader="John Dee" signature="B"/>
+    <annotation>
+        
+        <marginalia anchor_text="restitui" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>restituti</marginalia_text>       
+                </position>
+            </language>
+            <translation>Restored.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Angelus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[An]gelus</marginalia_text>      
+                </position>
+            </language>
+            <translation>The Angel.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mundi parui" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Microcosm</marginalia_text>      
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Adeptina</marginalia_text>       <!-- DO: Not sure what this is --> <!-- FSF:  Idon't know either --> <!-- NBW: This is my best guess-->
+                </position>
+            </language>
+            <translation>Attainment</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="consurgit anima" hand="Italian" id="RCP9978:017:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A[n]i[m]a stans</marginalia_text>      
+                </position>
+            </language>
+            <translation>A standing soul.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="materiam omnem sese potenter extollere, vt sibiipsis, &amp; suo vigori, semoto" type="straight"/>
+        <underline language="LA" method="pen" text="restitui" type="straight"/>
+        <underline language="LA" method="pen" text="cuicunq[ue] corpori dominari" type="straight"/>
+        <underline language="LA" method="pen" text="potentius proprio" type="straight"/>
+        <underline language="LA" method="pen" text="mundi parui" type="straight"/>
+        <underline language="LA" method="pen" text="Quatuor humores versat anima" type="straight"/>
+        <underline language="LA" method="pen" text="Fantasiae affectus" type="straight"/>
+        <underline language="LA" method="pen" text="maioris animalis" type="straight"/>
+        <underline language="LA" method="pen" text="suo solo'q[ue] affectu" type="straight"/>
+        <underline language="LA" method="pen" text="citat ventos Deo" type="straight"/>
+        <underline language="LA" method="pen" text="Auicebron" type="straight"/>
+        <underline language="LA" method="pen" text="ab rationali anima id, quo nihil admirabilius" type="straight"/>
+        <underline language="LA" method="pen" text="vt radiorum splendore ab ipsa manantium illustratum, diuino more corpus etiam surrigi possit in sublime, ad id maxime conferente, insita radijs lenitate, quod" type="straight"/>
+        <underline language="LA" method="pen" text="quando tota in Deum Patrem luminum" type="straight"/>
+        <underline id="RCP9978:017:u0001" language="LA" method="pen" text="consurgit anima" type="double"/>
+        <underline language="LA" method="pen" text="a[tque] illinc luce amplissima perfusa rapitur" type="straight"/>
+        <underline language="LA" method="pen" text="quae" type="straight"/>
+        <underline language="LA" method="pen" text="sola mente" type="double"/>
+        <underline language="LA" method="pen" text="ut Angelus euadit" type="straight"/>
+        <underline language="LA" method="pen" text="pectore Deum quodam modo concipit" type="straight"/>
+        <underline language="LA" method="pen" text="inebriatur. Si ergo homo se conformem reddat coelestibus, coelestis erit" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="equal_sign" place="right_margin"/>  <!-- libuerit -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- mundi parui -->
+        <mark method="pen" name="comma" place="intext"/>  <!--  more corpus -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- anima Deum -->
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        <physical_link>
+            <marginal_annotation idref="RCP9978:017:m0001"/> 
+            <marginal_annotation idref="RCP9978:017:u0001"/>
+            <relation from="RCP9978:017:m0001" to="RCP9978:017:u0001" type="directed"/> 
+        </physical_link>
+        
+    </annotation>
+</transcription>

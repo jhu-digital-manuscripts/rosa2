@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.221r.tif" pagination="433" reader="John Dee" signature="Oo"/>
+    <annotation>
+        
+        <marginalia anchor_text="Editham" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Editha moritur a[nn]o 1075
+                    </marginalia_text>
+                    <person name="Edith of Wessex"/>
+                </position>
+            </language>
+            <translation>
+                Edith of Wessex dies in 1075.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nomine Editham" type="straight"/>
+        <underline language="LA" method="pen" text="liberalium artium repositum est magisterium" type="straight"/>
+        <underline language="LA" method="pen" text="nec thoro remouit, nec eam virili more cognouit" type="straight"/>
+        <underline language="LA" method="pen" text="qui in dubijs sinistra interpretantur" type="straight"/>
+        <underline language="LA" method="pen" text="in quo linea regum Angliae" type="straight"/>
+        <underline language="LA" method="pen" text="trecentis coggonibus aduectus" type="straight"/>
+
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

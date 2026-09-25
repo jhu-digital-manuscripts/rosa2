@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.054r.tif" pagination="87" reader="John Dee" signature="ff.iiii."/>
+    <annotation> 
+        
+        <marginalia anchor_text="[sepmer viuamus] vt rationem reddendam nobis arbitremur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Semper ita viuamus vt r[ati]o[n]em reddendam nobis arbitremur
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                We live in perpetual expectation of being called to account for our behaviour.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Eiusdemmodi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Eiusdemmodi
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Of the same kinds.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="iura Siculorum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Siculoru[m] Ius
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The legal rights of Sicilians.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="coactu istius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        coactu istius
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Constraint of it.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="vt rationem reddendam nobis arbitremur" type="straight"/>
+        <underline language="LA" method="pen" text="eiusdemmodi" type="straight"/>
+        
+        <mark language="LA" method="pen" name="pin" place="head" text="Semper ita viuamus vt r[ati]o[n]em reddendam nobis arbitremur"/>
+        
+        <mark language="LA" method="pen" name="pin" place="right_margin" text="vt rationem reddendam nobis arbitremur"/>
+        
+        <numeral place="right_margin">16</numeral>
+        <numeral place="right_margin">13</numeral>
+     
+    </annotation>
+</transcription>

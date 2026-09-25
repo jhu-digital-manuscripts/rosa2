@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.027r.tif" pagination="39" reader="John Dee" signature="d.ij."/>
+    <annotation>
+        
+        <marginalia anchor_text="menses Caui &amp; Pleni" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>mensis lunaris plenus, &amp; cavus.</marginalia_text>
+                </position>
+            </language>
+            <translation>A full, and a void, lunar month.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Vocant autem Plenum mensem" type="straight"/>
+        <underline language="LA" method="pen" text="Cauum autem dicunt eum" type="straight"/>
+        
+    </annotation>
+</transcription>

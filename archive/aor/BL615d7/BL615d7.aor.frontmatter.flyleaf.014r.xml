@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.frontmatter.flyleaf.014r.tif" reader="John Dee" signature="biij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Matrimino" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Matininó 
+                    </marginalia_text>
+                    <location name="Martinique"/>
+                </position>
+            </language> 
+            <translation>Martinique.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="Saometto" type="straight"/>
+        <underline language="IT" method="pen" text="Cuba, detta poi Giouanna" type="straight"/>
+        <underline language="IT" method="pen" text="di Bochio" type="straight"/>
+        <underline language="IT" method="pen" text="Matinino" type="straight"/>
+        <underline language="IT" method="pen" text="Borichen" type="straight"/>
+        <underline language="IT" method="pen" text="Huino" type="straight"/>
+        <underline language="IT" method="pen" text="di Boriche[n];" type="straight"/>
+        <underline language="IT" method="pen" text="Amona" type="straight"/>
+        <underline language="IT" method="pen" text="Matrimino" type="straight"/>
+        <underline language="IT" method="pen" text="Matinino" type="straight"/>
+        <underline language="IT" method="pen" text="Isolette dette il Mare di nostra Donna" type="straight"/>
+        
+        <errata amendedtext="Matininó" copytext="Matinino" language="IT"/>
+        <errata amendedtext="mona" copytext="Amona" language="IT"/>
+        
+    </annotation>
+</transcription>

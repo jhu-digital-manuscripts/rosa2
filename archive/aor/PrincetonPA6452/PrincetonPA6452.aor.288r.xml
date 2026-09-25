@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.288r.tif" pagination="559" reader="Harvey" signature="aaa4[r]"/>
+    <annotation>
+
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text> 
+                        Bellum adhuc Macedonicum. Sed tandem cum Philippo pax: cum Antiocho bellu[m].
+                    </marginalia_text>
+                <person name="Philip V of Macedon"/>
+                <person name="Antiochus III the Great"/>
+                </position>
+            </language>
+            <translation>
+                Still the Macedonian war. But peace with Philip at last; war with Antiochus.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text> 
+                        politica obseruatio ipsius Liuij. vnum bellum vna tempestate gerendum: pluribus simul bellis distringi, valdè solicitum, 
+                        magisq[ue] periculosum. Quod tamen aliquotiès audebant pra[e]potentes Romani, nusq[uam] perterriti. Est autem casus singularis, 
+                        et vnum experimentorum extraordinarioru[m]. Quasi magnifica Exceptio, non contra, sed pra[e]ter regulam politicam: quales non[n]ulla[e] 
+                        suo loco.
+                    </marginalia_text>
+                    <person name="Livy"/>
+                </position>
+            </language>
+            <translation>
+                A political observation of Livy himself. One war should be fought per single occasion; it is very troubling and dangerous even more to be 
+                burdened by several wars at the same time. Which, however, the superior Romans dared several times, not frightened as they were of anything. 
+                Yet this is a unique case, and one of exceptional experiments. A brilliant exception, as it were, not against the political rule but beyond it:
+                a bit more of this at its proper place.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in Thessalia" type="straight"/>
+        <underline language="LA" method="pen" text="in Achaia" type="straight"/>
+        <underline language="LA" method="pen" text="Asia per eosdem dies fermè" type="straight"/>
+        <underline language="LA" method="pen" text="Philippus cu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="propè orbe terrarum undiq[ue] se suosq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="no[n] pro reliquo statu fortunae facta, refectis" type="straight"/>
+        <underline language="LA" method="pen" text="ta[m] in te[m]pore Punicu[m] bellu[m] terminatu[m] erat" type="straight"/>
+        <underline language="LA" method="pen" text="cum Philippo foret bellandu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="opportunè iam Antiocho in Syria moliente" type="straight"/>
+        <underline language="LA" method="pen" text="Philippus est superatus" type="straight"/>
+        <underline language="LA" method="pen" text="quò facilius cum singulis quaàm" type="straight"/>
+        <underline language="LA" method="pen" text="unu[m] ambo simul co[n]tulissent uires" type="straight"/>
+        <underline language="LA" method="pen" text="Hispania quoq[ue] sub idem tempus" type="straight"/>
+        <underline language="LA" method="pen" text="tumultu ad bellu[m] consurrexit" type="straight"/>
+       
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="unu[m] ambo simul co[n]tulissent uires"/>
+        
+    </annotation>
+</transcription>

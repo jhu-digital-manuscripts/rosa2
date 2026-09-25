@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA8550.119r.tif" pagination="237" reader="Harvey" signature="Pviir"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Jurisprudentia[e] necessarius, et planè singularis vsus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The necessary and, indeed, particular use of jurisprudence.
+            </translation>
+        </marginalia>
+        <marginalia anchor_text="hoc" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        haec /
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                these
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="arte tradita discrimina" type="straight"/>
+        <underline language="LA" method="pen" text="à rei uindicatione" type="straight"/>
+        <underline language="LA" method="pen" text="publicanum distingui" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; magis regunt" type="straight"/>
+        <underline language="LA" method="pen" text="est ars" type="straight"/>
+        <underline language="LA" method="pen" text="ca[e]tera[e] disciplina[e]" type="straight"/>
+        <underline language="LA" method="pen" text="sit arte" type="straight"/>
+        <underline language="LA" method="pen" text="discernenda iusta" type="straight"/>
+        <underline language="LA" method="pen" text="doctissimos" type="straight"/>
+        <underline language="LA" method="pen" text="sapientissimis consilijs" type="straight"/>
+        <underline language="LA" method="pen" text="hoc" type="straight"/>
+        <underline language="LA" method="pen" text="sequeremur" type="straight"/>
+        <underline language="LA" method="pen" text="Rectè igitur" type="straight"/>
+        <underline language="LA" method="pen" text="utimur" type="straight"/>
+        
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- imperij hoc -->
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.051v.tif" pagination="94" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Orcadas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Orcades
+                    </marginalia_text>
+                    <location name="Orkney Islands"/>
+                </position>
+            </language>
+            <translation>
+                Orkney.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Genissa" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Genissa filia Claudij Imper[atoris]  
+                    </marginalia_text>
+                    <person name="Venissa"/>
+                    <person name="Claudius"/>
+                </position>
+            </language>
+            <translation>
+                Venissa, daughter of the Emperor Claudius.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="inter Brita[n]nicos obsides Rom[a]e" type="double"/>
+        <underline language="LA" method="pen" text="videlicet Claudius filiam suam Aruirago maritaret" type="straight"/>
+        <underline language="LA" method="pen" text="Aruiragus regnu[m] Britanniae à Romanis sub tributo teneret" type="straight"/>
+        <underline language="LA" method="pen" text="propter filiam" type="double"/>
+        <underline language="LA" method="pen" text="interim Orcadas insulas, auxilio" type="straight"/>
+        <underline language="LA" method="pen" text="Aruiragi, suae potestati submisit" type="double"/>
+        <underline language="LA" method="pen" text="Genissa" type="straight"/>
+        <underline language="LA" method="pen" text="honorem Claudij" type="straight"/>
+        <underline language="LA" method="pen" text="Kaerglou" type="grid"/>
+        
+    </annotation>
+</transcription>

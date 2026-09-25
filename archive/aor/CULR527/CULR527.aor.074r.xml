@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.074r.tif" pagination="74" reader="John Dee" signature="Kij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="ipsa, nec mare, nec acus, mutatur ab eo quod est: semper necesse est, ut eodem modo procedannt,              quanuis mutetur horizon. Horizontis autem mutatio plus qu&amp;m apparentiam mutare non potest: non autem iter, nec opus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Summa totius disputationis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The sum of the entire disputation.
+            </translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="ipsa, nec mare, nec acus, mutatur ab eo quod est: semper necesse est, ut eodem modo procedant,              quanuis mutetur horizon. Horizontis autem mutatio plus qu&amp;m apparentiam mutare non potest: non autem iter, nec opus" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

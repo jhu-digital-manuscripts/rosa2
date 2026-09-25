@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.306v.tif" pagination="164" reader="John Dee" signature="[Ooo iiij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="exaltatione repentina" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Exaltatio repe[n]tina.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A sudden exaltation.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Comes de Marchia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Comes Marchia[e] 
+                    </marginalia_text>
+                    <person name="Hugh X of Lusignan"/>
+                </position>
+            </language>
+            <translation>
+                Hugh V of La Marche.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="eius exaltatione" type="straight"/>
+        <underline language="LA" method="pen" text="repentina" type="straight"/>
+        <underline language="LA" method="pen" text="Comes enim de Marchia, instinctu Isabellae" type="straight"/>
+        <underline language="LA" method="pen" text="vxoris eius, matris scilicet regis Angliae" type="straight"/>
+        
+    </annotation>
+</transcription>

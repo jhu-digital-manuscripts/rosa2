@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.382r.tif" pagination="215" reader="John Dee" signature="Oo.iiii."/>   
+    <annotation>
+        
+        <marginalia anchor_text="machinatione" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        machinatio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Mechanism.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="opacasset ... obscurauisse" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        opacare obscurare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To overshadow, to obscure.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vicissitudines anniuersarias" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        vicissitudines aniversari[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Changes of the seasons.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="diem efficeret, toto caelo luce diffusa" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Dies ☉
+                    </marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                </position>
+            </language>
+            <translation>
+                Day, Sun.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="AEtnaeoru[m] ignium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ætna[e]i ignes.
+                    </marginalia_text>
+                    <location name="Etna"/>
+                </position>
+            </language>
+            <translation>
+                The eruption of the Etna.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="assiduitate ... nouitas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Assiduitas. Nouitas.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Attendance, Novelty.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="certos coeli motus, ratos astrorum ordines" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Astrorum rati ordines, et certi coeli motus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                'He regular motions of the heaven and the fixed order of the stars' [LCL 268:216-17].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vt sphaeram, vt horas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Spha[e]ra. hora[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Sphere, hour.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vicissitudines anniuersarias" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vicissitudines aniversaria[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Changes of season.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="terra" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Terra.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Earth.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        fontes.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Sources.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="auri argentíque venas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Auri, argentiq[ue] ven[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Veins of gold and silver.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="bestiarum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Bestia[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Beasts.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        A quatilia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                From the shaking.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Imbres
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Rains.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ve[n]tos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        venti
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Winds.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="annuas frigorum &amp; calorum facit varietates" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        varietates annu[a]e Caloru[m] frigorum.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Yearly variation of heat and cold.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="AEther" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Æther.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Ether.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sol" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Sol.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The sun.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="binas in singulis annis reuersiones" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Solis bin[a]e reuersiones
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Returns of the sun twice a year. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Luna" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Luna
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The moon.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ☾ et ☉ ☌ □ △ ☍ <!-- FSF: I can't tag here the Asterisk; I am not sure anyway if the symbols after the sun should be tagged here or rather as symbols -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The moon and the sun.
+            </translation>
+        </marginalia>
+
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ecclepsis ☾ et ☉
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                An eclipse of the moon and the sun.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        volucru[m] lapsus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The fall of the winged beings.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="volatus alitum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        volatus alitu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Flight of the winged beings.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="spiritus ductus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        spiritus ductus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A led spirit.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        belu[a]e innantes
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A swimming animal.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        imme[n]titates
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Immensities.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        pecunnitates
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Perpetualities.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        cludit
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                He closes.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        alit sustentat
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                He nourishes, he sustains.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="is diem efficeret, toto" type="straight"/>
+        <underline language="LA" method="pen" text="quum aute[m] terras nox opacasset, tum caelum" type="straight"/>
+        <underline language="LA" method="pen" text="cernerent astris distinctu[m] &amp; ornatum, lunáeque" type="straight"/>
+        <underline language="LA" method="pen" text="regiones obscurauisse" type="straight"/>
+        <underline language="LA" method="pen" text="Sed assiduitate cotidiana, &amp; consuetudinte oculoru[m] assuescunt animi, neque admirantur,              neque reuirunt rationes earu[m] rerum quas semper vident, proinde quasi nouitas nos magis quàm magnitudo rerum debeat" type="straight"/>
+        <underline language="LA" method="pen" text="ad exquirendas causas excitare" type="double"/>
+        <underline language="LA" method="pen" text="tam ratos astrorum ordines, támque inter se omnia connexa &amp; apta viderit, neget in his vllam inesse" type="straight"/>
+        <underline language="LA" method="pen" text="cum machinatione quada[m] moueri" type="straight"/>
+        <underline language="LA" method="pen" text="impetum" type="straight"/>
+        <underline language="LA" method="pen" text="vicissitudines anniuersarias" type="straight"/>
+        <underline language="LA" method="pen" text="remota subtilitate" type="straight"/>
+        <underline language="LA" method="pen" text="mundi, solida &amp; globosa, &amp; vndique ipsa in sese nutibus suis conglobata, vestita floribus, herbis, arboribus, frugibus" type="straight"/>
+        <underline language="LA" method="pen" text="multitudo insatiabili varietate herbis, arboribus, frugibus" type="straight"/>
+        <underline language="LA" method="pen" text="vel circuru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="nec immanitate beluarum efferari, nec stirpium asperitate vastari, quorúmque" type="straight"/>
+        <underline language="LA" method="pen" text="insulae, littoráque collucent distincta tectis &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="genera quámque disparia partim submersarum, partim fluitantium &amp; innantium beluarum, partim ad saxa natiuis testis inhaere[n]tium?" type="straight"/>
+        <underline language="LA" method="pen" text="cludit" type="straight"/>
+        <underline language="LA" method="pen" text="Isque tum fusus &amp; extenuatus in fertus, tum autem concretus in nubes cogitur, humorémque colligens terram auget imbribus,              tum effluens huc &amp; illuc, ve[n]tos efficit" type="straight"/>
+        <underline language="LA" method="pen" text="spiritus ductus alit" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; coercens caeli" type="straight"/>
+        <underline language="LA" method="pen" text="extrema ora &amp; determinatio mundi" type="straight"/>
+        <underline language="LA" method="pen" text="reuersiones" type="straight"/>
+        <underline language="LA" method="pen" text="quadam contrahit terram, tum vicissim laetificat, vt cum caelo hilarata videatur. Luna" type="straight"/>
+        <underline language="LA" method="pen" text="congrediens" type="straight"/>
+        <underline language="LA" method="pen" text="tum digrediens" type="straight"/>
+        <underline language="LA" method="pen" text="dubiecta atque opposita soli" type="straight"/>
+        <underline language="LA" method="pen" text="radios eius &amp; lumen obscurat" type="straight"/>
+        
+        <symbol name="Asterisk" place="left_margin"/>
+        <symbol name="Asterisk" place="left_margin"/>
+        <symbol name="Asterisk" place="left_margin"/>
+        <symbol name="Unidentified" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Unidentified" place="right_margin"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="head" text="machinatio"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <errata amendedtext="innatantiu[m]" copytext="innantium" language="LA"/>
+        <errata amendedtext="in" copytext="sublime" language="LA"/>
+        <errata amendedtext="etia[m]" copytext="eam" language="LA"/> <!-- FSF: not sure -->
+        
+        <drawing anchor_text="Terra" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="Bestia[e]" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="Aquatilia" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="Aer" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="Æther" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

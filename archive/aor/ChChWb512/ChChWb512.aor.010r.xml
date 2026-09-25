@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.010r.tif" pagination="2" reader="Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Pandrasus
+                    </marginalia_text>
+                    <person name="Pandrasus"/>
+                </position>
+            </language>
+            <translation>Pandrasus.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Helenu[m] cu[m] Pyrrho post Troia[e] excidu[m] iuisse et ma[n]sisse ex ip[s]o Dicty Cretense verasimile est. ubi verba Heleni veritas ad Pyrrhu[m] de equo Troiano fabricando in 5⁰ lib.
+                    </marginalia_text> 
+                    <person name="Helenus"/>
+                    <person name="Tyrrhus"/>
+                    <person name="Dictys Cretensis"/>
+                    <book title="Ephemeridos Belli Troiani"/>
+                    <location name="Troy"/>
+                </position>
+            </language>
+            <translation> It is possible that Helen went with Phyrrus after the destruction of Troy and remained with him, from Dictys Cretensis himself (i.e. as Dictys himself says) in his fifth book, where the words of Helen to Pyrrhus on the building of the Trojan horse are the truth.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Helenum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Helenus
+                    </marginalia_text>
+                    <person name="Helenus"/>
+                </position>
+            </language>
+            <translation>Helenus.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Nota alios eo loco et tempore Regulos fuisse, pra[e]ter Pandrassus.
+                    </marginalia_text>
+                    <person name="Pandrasus"/>
+                </position>
+            </language>
+            <translation>Note that there were other lords, besides Pandrasus, in the same place at that time.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        fugatiui ad exulem.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Fugitives into exile.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Comedia[m] scripsit Nicostratus Athenie[n]sis cui nomen erat Pandrosos. Et verè eius res gesta[e] his explicata[e] comedia[e] no[n] tragedia[e] materia[m] prebere possunt
+                    </marginalia_text>
+                    <person name="Nicostratus Atheniensis"/>
+                    <emphasis method="pen" text="Pandrosos" type="straight"/>
+                </position>
+            </language>
+            <translation>Nicostratus Atheniensis wrote a comedy of which the title was 'Pandrosos'. And truly, the things described here could provide the material of a comedy, not of a tragedy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="septem milia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>7000</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Pandrasi Graecorum" type="straight"/>
+        <underline language="LA" method="pen" text="prosapia moratus est Brutus apud eos" type="straight"/>
+        <underline language="LA" method="pen" text="vt a regibus" type="straight"/>
+        <underline language="LA" method="pen" text="totum suis" type="straight"/>
+        <underline language="LA" method="pen" text="Diuulgata itaq[ue] per" type="straight"/>
+        <underline language="LA" method="pen" text="vniuersas nationes" type="double"/>
+        <underline language="LA" method="pen" text="ipsum Troiani" type="straight"/>
+        <underline language="LA" method="pen" text="a seruitute" type="straight"/>
+        <underline language="LA" method="pen" text="septem" type="straight"/>
+        <underline language="LA" method="pen" text="nomen Assaracus" type="straight"/>
+        <underline language="LA" method="pen" text="propter tria castra quibus" type="straight"/>
+        <underline language="LA" method="pen" text="frater: quia ex co[n]cubina natus" type="straight"/>
+        <underline language="LA" method="pen" text="adh[a]ereba[n]t in nemora &amp; colles secedu[n]t" type="straight"/>
+        
+        <mark method="pen" name="apostrophe" place="intext"/> <!--ipso duce-->
+        
+    </annotation>
+</transcription>

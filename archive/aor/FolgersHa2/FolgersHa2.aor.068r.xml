@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.068r.tif" pagination="455" reader="Harvey" signature="Ff4[r]"/>	<!-- ABO 72right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Solus in acerbo dulcis; vt Chrysanthius.
+					</marginalia_text>
+					<person name="Chrysanthius"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Sweet in bitterness alone; like Chrysanthius.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						diuinum Mnemosynon.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				A divine reminder.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( The youthfull age of Proa[e]resius, &amp; Chrysanthius: the pring of the Winter.
+						But
+					</marginalia_text>
+					<person name="Prohaeresius"/>
+					<person name="Chrysanthius"/>
+					<emphasis method="chalk" type="straight"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						no such springing Winter, as the great Apollonius Tyaneus.
+					</marginalia_text>
+					<person name="Apollonius of Tyana"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Giouio. Critico arrogante.
+					</marginalia_text>
+					<person name="Paolo Giovio"/>
+				</position>
+			</language>
+			<translation>
+				Giovio. An arrogant critic.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Mundus quotidiè repuerascit, infinita generatione.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				By infinite generation, the world becomes a child again daily.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						ridicolo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Ridiculous.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Musa[e], filia[e] Jouis, et Mnemosynes: =
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						= id est, diuini ingenij, et memoria[e].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The Muses are daughters of Jove and Mnemosyne; that is, of divine genius and memory.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Follow the best: Pardon the rest.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Hic, et ille infinita loqu[u]ntur:
+						sed ubi inueniam practicum?
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				This one and that one say infinite things, but where will I find a practical man?
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="O seruito minchioni" type="straight"/>
+		<underline language="IT" method="pen" text="Marullo" type="straight"/>
+		<underline language="IT" method="pen" text="Bologna nel" type="straight"/>
+		<underline language="IT" method="pen" text="Filippo Beroaldi" type="straight"/>
+		<underline language="IT" method="pen" text="certi uersi" type="straight"/>
+		<underline language="IT" method="pen" text="in lode di lui" type="straight"/>
+		<underline language="IT" method="pen" text="senza dir parola" type="straight"/>
+		<underline language="IT" method="pen" text="gettò sopra" type="straight"/>
+		<underline language="IT" method="pen" text="il giudicio di" type="straight"/>
+		<underline language="IT" method="pen" text="Marullo" type="straight"/>
+		<underline language="IT" method="pen" text="delle piante Bolognesi" type="straight"/>
+		<underline language="IT" method="pen" text="superbia mordace" type="straight"/>
+		<underline language="IT" method="pen" text="pianta ha" type="straight"/>
+		<underline language="IT" method="pen" text="dodici anni" type="straight"/>
+		<underline language="IT" method="pen" text="non aspettate" type="straight"/>
+		<underline language="IT" method="pen" text="frutto di sorte alcuna" type="straight"/>
+		<underline language="IT" method="pen" text="professor di grammatica" type="straight"/>
+		<underline language="IT" method="pen" text="pedante" type="straight"/>
+		<underline language="IT" method="pen" text="alla disciplina de' loro figliuoli" type="straight"/>
+		<underline language="IT" method="pen" text="una mera perpspettiua ne' costumi, nelle arti liberali, &amp; nella bontà" type="straight"/>
+		<underline language="IT" method="pen" text="nelle lettere, ch'ei" type="straight"/>
+		<underline language="IT" method="pen" text="Achille Bouio" type="straight"/>
+		<underline language="IT" method="pen" text="uiuacità d'ingegno" type="straight"/>
+		<underline language="IT" method="pen" text="propria di" type="straight"/>
+		<underline language="IT" method="pen" text="s'egli è litterato" type="straight"/>
+		<underline language="IT" method="pen" text="studiato dieci anni co[n]tinui" type="straight"/>
+		<underline language="IT" method="pen" text="Virgilio" type="straight"/>
+		<underline language="IT" method="pen" text="se Enea fosse maschio" type="straight"/>
+		<underline language="IT" method="pen" text="femina" type="straight"/>
+		<underline language="IT" method="pen" text="medico facetissimo" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="una mera perspettiua" type="straight"/>
+		
+		<!-- Symbols -->
+		<symbol language="IT" name="SS" place="right_margin" text="una mera perpspettiua ne' costumi, nelle arti liberali, &amp; nella bontà"/> <!--una mera per-->
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- frut -->
+		<mark language="IT" method="pen" name="plus_sign" place="right_margin" text="professor di grammatica"/> 
+		<mark method="pen" name="dash" place="right_margin"/> <!-- figliuo -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- d'inge -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Virgi -->
+		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- o femina -->
+				
+	    	<!-- Left margin -->
+	    <mark method="pen" name="bracket" place="left_margin"/> <!-- Michele ... minchioni -->
+		<mark method="pen" name="equal_sign" place="left_margin"/> <!-- Beroaldo -->
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Se cotesta uostra pianta ha passato dodici anni, non aspettate da lei frutto di sorte alcuna"/>
+		<mark method="pen" name="bracket" place="left_margin"/> <!-- Di ... uitruosissimo -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- minchioni -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Marullo"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Filippo Beroaldi"/>
+	    <mark method="pen" name="comma" place="intext"/> <!-- parola gli -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Marullo"/>
+		<mark method="pen" name="equal_sign" place="intext"/> <!-- piante -->
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark: Bolognesi -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="superbia mordace"/> 
+		<mark method="pen" name="equal_sign" place="intext"/> <!-- pianta ha -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="frutto"/>
+		<mark method="pen" name="comma" place="intext"/> <!-- pedante nuouamente -->
+		<mark method="pen" name="dot" place="intext"/> <!-- li, & era -->
+		<mark method="pen" name="comma" place="intext"/> <!-- ogniuno ch'ei -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="una mera perspettiua"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Achille Bouio"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="prontezza"/>
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="uiuacità"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- lio, et fa -->
+
+    </annotation>
+</transcription>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+	<page filename="FolgersHa2.027v.tif" pagination="374" reader="Harvey"/>	<!-- ABO 032left -->
+    	<annotation>
+    		
+            	<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="IT">
+            			<position book_orientation="0" place="head">
+                    				<marginalia_text>
+                    					Eccellentissimo del mondo: et singolarissimo 
+                      			</marginalia_text>
+            				<emphasis method="chalk" type="straight"/>
+            			</position>
+        				<position book_orientation="0" place="left_margin">
+        					<marginalia_text>
+        						del suo Tempo.
+        					</marginalia_text>
+        					<emphasis method="chalk" type="straight"/>
+        				</position>
+        			</language>
+        			<translation>
+        				The most excellent in the world, and most singular of his time.
+        			</translation>
+        		</marginalia>
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+        				<position book_orientation="0" place="left_margin">
+        					<marginalia_text> 
+        						Ô digniore: ò viliore. 
+        					</marginalia_text>
+        				</position>
+        			</language>
+        			<translation>
+        				O, more worthy; o, more vile.
+        			</translation>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="left_margin">
+    					<marginalia_text>
+    						Aulicoru[m] decentiss[im]us. Pragmaticorum subtilissimus:
+    						industrioru[m] diligentiss[im]us omniu[m] facilè 
+    						tam pra[e]stantiss[imus] quàm candidissimus.
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				The most decent of courtiers. The most subtle of pragmatic men:
+    				the most diligent of all industrious men, easily as most excellent as
+    				he is most radiant.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						ridicolo.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Ridiculous.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						) Tutto per il meglio.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				) Everything for the best.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						Enteleches
+    					</marginalia_text>
+    					<person name="Enteleches"/>
+    				</position>
+    			</language>
+    			<language ident="EL">
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						ἐν ἀκμῆ, <!-- Greek: en axme -->
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<language ident="LA">
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						et Euschemôn in floré: nunq[uam] sua[e] oblitus dignitatis.
+    					</marginalia_text>
+    					<person name="Euschemon"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Enteleches at his peak, and Euschemon in his prime: never forgetful of his own dignity.
+    			</translation>
+    		</marginalia>
+       
+       		<marginalia hand="Italian">
+       			<language ident="LA">
+       				<position book_orientation="270" place="right_margin">
+       					<marginalia_text>
+       						Tam pura Theurgia, quàm mera Entelechia: aut
+       					</marginalia_text>
+       				</position>
+       			</language>
+       			<language ident="ES">
+       				<position book_orientation="270" place="right_margin">
+       					<marginalia_text>
+       						Todos es nada.
+       					</marginalia_text>
+       				</position>
+       			</language>
+       			<translation>
+       				Both pure theurgy and unmixed actualization: or everything is nothing.
+       			</translation>
+       		</marginalia>
+    		
+	    	<!-- Underlines -->
+	        
+    		<underline language="IT" method="pen" text="teneua le gambe all'erta" type="straight"/>
+    		<underline language="IT" method="pen" text="la moglie" type="straight"/>
+    		<underline language="IT" method="pen" text="seruenti uostre" type="straight"/>
+    		<underline language="IT" method="pen" text="tengan matto," type="straight"/>
+    		<underline language="IT" method="pen" text="moglie mia?" type="straight"/>
+    		<underline language="IT" method="pen" text="star dritto" type="straight"/>
+    		<underline language="IT" method="pen" text="uirtù de' contrari, che" type="straight"/>
+    		<underline language="IT" method="pen" text="rouerscio" type="straight"/>
+    		<underline language="IT" method="pen" text="te ne dar dunque" type="straight"/>
+    		<underline language="IT" method="pen" text="fa il simile ancho tu" type="straight"/>
+    		<underline language="IT" method="pen" text="sciocco" type="straight"/>
+    		<underline language="IT" method="pen" text="Thomaso Guadagni mercante" type="straight"/>
+    		<underline language="IT" method="pen" text="guadagnato" type="straight"/>
+    		<underline language="IT" method="pen" text="prestare a" type="straight"/>
+    		<underline language="IT" method="pen" text="Re di Francia cinquecento mila scudi per uolta" type="straight"/>
+    		<underline language="IT" method="pen" text="qualche memoria di se" type="straight"/>
+    		<underline language="IT" method="pen" text="uno Spedale per" type="straight"/>
+    		<underline language="IT" method="pen" text="ammalati" type="straight"/>
+    		<underline language="IT" method="pen" text="sua forma" type="straight"/>
+    		<underline language="IT" method="pen" text="qualunque amico" type="straight"/>
+    		<underline language="IT" method="pen" text="co[n]siglio gioueuole a tal sua muraglia" type="straight"/>
+    		<underline language="IT" method="pen" text="buon giudicio nell'architettura" type="straight"/>
+    		<underline language="IT" method="pen" text="considerare ogni parte del suo spedale, gli" type="straight"/>
+    		<underline language="IT" method="pen" text="bene, disse" type="straight"/>
+    		<underline language="IT" method="pen" text="quanto quello, che è nella" type="straight"/>
+    		<underline language="IT" method="pen" text="Tant'è" type="straight"/>
+	       
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	    	<symbol name="Sun" place="right_margin"/>
+    		<symbol name="SS" place="left_margin"/>
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark method="pen" name="dash" place="right_margin"/> <!-- drit -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- dun -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- gioue -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- co[n] -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- piace -->
+    		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- architettura -->
+    		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- pare. -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- no -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- re -->
+	    	
+	    	<!-- Left margin -->
+	    	<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- che queste -->
+    		<mark method="pen" name="horizontal_bar" place="left_margin"/> <!-- Alche tosto -->
+		    
+	    	<!-- Intext -->
+	    	<mark language="IT" method="pen" name="plus_sign" place="intext" text="Guadagni"/>
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="guadagnato"/>
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="cinquecento"/>
+    		<mark method="pen" name="dot" place="intext"/> <!-- uolta, uolendo -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- morte, diede -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- ammalati, come -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- grandezza, ogni -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- architettura -->
+
+    </annotation>
+</transcription>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note rend="IDENTIFICATION">
+          <p>MS Douce 332, Bodleian Library, Oxford. Français, XVe siècle. </p>
+        </note>
+        <note rend="INFORMATIONS BASIQUES">
+          <p>Parchemin, 280 x 200 mm, 195 feuillets.</p>
+        </note>
+        <note rend="MATERIEL">
+          <p><material>Parchemin</material> en bon état.</p>
+        </note>
+        <note rend="CAHIERS">
+          <list>
+            <head>Collation:</head>
+            <item n="I">
+              <locus from="1" to="8">1-8</locus>
+            </item>
+            <item n="II">
+              <locus from="9" to="16">9-16</locus>
+            </item>
+            <item n="III">
+              <locus from="17" to="24">17-24</locus>
+            </item>
+            <item n="IV">
+              <locus from="32" to="25">25-32</locus>
+            </item>
+            <item n="V"><locus from="33" to="39">33-39</locus>(Il manque un feuillet après f. 39) </item>
+            <item n="VI">
+              <locus from="40" to="47">40-47</locus>
+            </item>
+            <item n="VII">
+              <locus from="48" to="55">48-55</locus>
+            </item>
+            <item n="VIII"><locus from="56" to="61">56-61</locus>(Cahier de 6 feuillets) </item>
+            <item n="IX">
+              <locus from="62" to="69">62-69</locus>
+            </item>
+            <item n="X"><locus from="70" to="76">70-76</locus>(Il manque un feuillet après f. 69) </item>
+            <item n="XI">
+              <locus from="77" to="84">77-84</locus>
+            </item>
+            <item n="XII">
+              <locus from="85" to="92">85-92</locus>
+            </item>
+            <item n="XIII">
+              <locus from="93" to="100">93-100</locus>
+            </item>
+            <item n="XIV">
+              <locus from="101" to="108">101-108</locus>
+            </item>
+            <item n="XV">
+              <locus from="109" to="116">109-116</locus>
+            </item>
+            <item n="XVI">
+              <locus from="117" to="124">117-124</locus>
+            </item>
+            <item n="XVII">
+              <locus from="125" to="132">125-132</locus>
+            </item>
+            <item n="XVIII"><locus from="133" to="139">133-139</locus>(Il manque un feuillet après f. 133) </item>
+            <item n="XIX"><locus from="140" to="146">140-146</locus>(Il manque un feuillet après f. 143) </item>
+            <item n="XX">
+              <locus from="147" to="154">147-154</locus>
+            </item>
+            <item n="XXI"><locus from="155" to="161">155-161</locus>(Il manque un feuillet après f. 155) </item>
+            <item n="XXII">
+              <locus from="162" to="169">162-169</locus>
+            </item>
+            <item n="XXIII"><locus from="170" to="176">170-176</locus>(Il manque un feuillet après f. 175) </item>
+            <item n="XXIV">
+              <locus from="177" to="184">177-184</locus>
+            </item>
+            <item n="XXV">
+              <locus from="185" to="192">125-132</locus>
+            </item>
+            <item n="XXVI"><locus from="193" to="195">193-195</locus>(cahier de 3 feuillets; feuillets blancs du reste du cahier ont apparemment été
+                     ébarbés) </item>
+          </list>
+          <p>ii+195+ii. Relié en quaternions, Restes des signatures dans quelques cahiers,
+			      inférieur gauche, quelques fois ébarbées, e.g. f. <locus>9r</locus>; la pluspart en sont à peine visibles
+                  dans le fond. Ces signatures sont en chiffres arabes en crayon et ont peut-être été ajoutés
+                  quand le livre s'est fait relié à nouveau. Réclames partout, inférieur droite. 
+				  Feuillets chiffrés en encre à une date relativement tôt au supérieur droite des rectos.
+				  La foliotation commence avec le chiffre 1 au f. <locus>2r</locus>. Une main postérieur a ajouté
+                  la pagination en crayon moderne (en numérotant aussi le f. <locus>2r</locus> comme f. 1)
+                  qui essai de corriger les écarts de pagination de la foliotation antérieur qui resultent du manque de feuillets,
+				  en donnant des chiffres doubles aux ff. <locus from="38" to="39">38/39</locus>,
+                     <locus from="70" to="71">70/71</locus>, <locus from="138" to="139">138/139</locus>, <locus from="148" to="149">148/149</locus>/ <locus from="158" to="159">158/159</locus> et 180/181. Dans cette description, les pages sont numérotées consécutivement, en commançant
+					 au f. 1r, comme indiqué dans la collation.
+               </p>
+        </note>
+        <note rend="MISE-EN-PAGE">
+          <p>Quelques cahiers sont réglés en crayon brun, d'autres en mine. Quelques piqûres survivent aux bords inférieurs
+                  des feuillets, e.g. à travers le cahier XXI. Deux schémas de réglure apparaissent dans le manuscrit.
+                  Le premier est réglé en crayon brun et a six lignes rectrices majeurs verticales et deux horizontales.
+				  Dans ces cas-ci, le corps du texte se divise en deux colonnes dont les deux bords se délimitent par des lignes verticales.
+				  Chaque colonne a de plus une ligne vertical qui sépare la première lettre du reste de la ligne.
+                  Des lignes rectrices majeures horizontales délimitent les bords supérieurs et inférieurs du corps de texte et il y a 28 à 30 
+				  lignes dans chaque colonne. Le deuxième schéma est réglé en mine avec huit au lieu de six lignes rectrices verticales et 27
+				  à 28 lignes dans chaque colonne.  Dans ce schéma, des lignes rectrices majeures délimitent chaque colonne et deux lignes verticales 
+				  supplémentaires, qui ne s'étendent pas beaucoup au-delà du corps du texte, séparent les premières lettres du reste de la ligne.
+                  Les deux schémas de reglure s'associent aux deux scribes responsables du travail; celui fait au crayon brun et six lignes
+				  verticales est généralement - mais non pas toujours - présent dans le travail du scribe un et la réglure en mine de huite lignes
+				  verticales correspond au travail du scribe deux.  Voir, par exemple, le bifeuillet extérieur du cahier II, qui
+				  est réglé en brun et les bifeuillets médians qui sont réglés en mine (cf. section 6 ici-bas);
+                  à noter que la dernière ligne réglée n'est pas toujours employée, e.g. <locus>88v</locus> et <locus>89r</locus>. 
+				  Les corps de texte varient légérement en format; environ 205 x150 mm. Chaque colonne est environ 70 mm de largeur.</p>
+        </note>
+        <note rend="ECRITURE">
+          <p>Deux scribes. Le scribe un a complété le premier cahier et le bifeuillet extérieur, recto et verso
+                  (i.e. ff. <locus>9</locus> and <locus>16</locus>)du deuxième cahier. Le scribe deux est responsable pour
+				  les ff. <locus>10r</locus> à <locus>15v</locus> et ff. <locus>17r</locus> à une partie de f. <locus>87v</locus>.
+                  De ce point à la fin, on voit de nouveau la main du scribe un. Les deux copistes utilisent une écriture en cursiva formata.
+				  Il y a peu de corrections, mais l'on voit des exemples de rayure, rature, et addition; voir e.g. ff. <locus>2v</locus> et
+                     <locus>3r</locus>. La plupart est écrite en encre brune, avec quelques instances d'encre noire.</p>
+        </note>
+        <note rend="DECORATION">
+          <p>De nombreuses rubriques accompagnent les miniatures et identifient les locuteurs. Une initiale de 
+			      quatre lignes au f. <locus>1r</locus> qui présente une lettre bleue filigranée de blanc. La lettre entour un feuille d'or et 
+			      des vignes décoratives en bleu, rouge, et blanc.  Elle est en rouge, filigranée de blanc et enfermée d'une bordure doréee.
+                  De nombreuses initiales dorées de deux lignes d'hauteur se trouve partout, ornées de bleu et de rouge et filigranées de blanc.
+                  Bordure de rouge, bleu et or, filigranée de blanc seulement au f.<locus>1r</locus>.
+                  Vignes et fleurs du même motif de couleurs s'étendent de la bordure jusqu'à remplir les marges et accompagnées d'un motif de 
+				  feuilles vertes.  Deux dragons se trouvent au centre du bord supérieur de la bordure.  Il y a 59 miniatures en grisaille.
+                  </p>
+        </note>
+        <note rend="RELIURE">
+          <p>France, XVIIIe siècle(?), 290 mm de hauteur, 235 de largeur du centre du dos à la gouttière. Relié en maroquin. Ais plats. 
+			   Les plats antérieurs et postérieurs sont actuellement verdâtres et fondent en brun vers le dos.
+			   Le dos est uniformément brun clair. Deux étiquettes sur le contre-plat décrivent la reliure comme "maroquin bleu" 
+			   [“blue Turkey”] et "maroquin rouge". Cinque nervures au dos. Les deux tranchefilles sont rouges, blanches, et bleues.
+			   Le devant se couvre d'un cadre de trois filets poussés. La fin est ornée de la même façon, avec l'addition de petits soleils 
+			   (ou fleures?) poussés, dont les visages font face aux bords, aux coins des cadres. Le titre apparaît à l'intérieur du second 
+			   compartiment du dos.  Dans les autres compartiments se trouvent des fleurs poussées au centre entourées de décorations estampées.
+			   Filets doubles aux bords supérieur, inférieur et à la gouttière. Roulette fleurie aux remplis de devant et de la fin.
+			   Le titre se trouve dans le deuxième compartiment du dos; les lettres en sont poussées: “ROMAN / DE / LA ROSE”. 
+			   Papiers de garde marbrés, devant et à la fin. Deux gardes volantes au devant et deux à la fin; dans les deux cas, l'une 
+			   est collée au papier de garde. Marques aux gardes volantes : une grappe de raisins dans une corne d'abondance; les raisins 
+			   se dispose en quatre rangs (d'en haut) de 1, 2, 3, 2, raisins.  Tranches dorées. Relié avec un signet de ruban rouge.</p>
+        </note>
+        <note rend="HISTOIRE">
+          <p>Contient l'ex-libris de Jean-Joseph Languet de Gergy (1677-1753), archevêque de Sens (1731-53), et celui 
+			   de Francis Douce (1757-1834), qui a légué le livre à l'Université. Un autre ex-libris semble avoir été effacé de 
+			   l'inférieur du f. <locus>195</locus>.</p>
+        </note>
+        <note rend="TEXTE">
+          <p>Contient le Roman de la Rose. Une note collée à l'intérieur du devant prétend que le codex contient aussi la Chatellaine de Vergy; 
+			   ce dernier texte ne s'y trouve pas. A la fin du poème se sont ajoutés quatre vers : “Par la grande hayne diuerse / Qui dedens faulx samblant conu[er]se / Fu Clopinel aus champs couuert / Pour ce quil ot voir descouuert” </p>
+        </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscrit</note>
+          <note type="commonName">Douce 332</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="195" unit="folios">195 feuillets</measure>
+            <dimensions>
+              <height unit="mm">280</height>
+              <width unit="mm">200</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">59</note>
+          <note type="material">parchemin</note>
+          <pubPlace>France</pubPlace>
+          <date notAfter="1499" notBefore="1400">15e siècle</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Oxford</settlement>
+            <repository>Bodleian Library</repository>
+            <idno>MS Douce 332</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="195r">1r-195r</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">195</note>
+              <note type="illustrations">59</note>
+              <note type="linesPerColumn">28</note>
+              <note type="leavesPerGathering">8</note>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

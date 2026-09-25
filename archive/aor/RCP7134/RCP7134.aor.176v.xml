@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.176v.tif" pagination="[169v]" reader="John Dee" signature="[uu[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Mars in sublimi positus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>♂ in sublimi</marginalia_text>
+                    <symbol_in_text name="Mars"/>
+                </position>
+            </language>
+            <translation>Mars in the highest.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Mars in sublimi positus, ascendens ad absidem, in signo fixo, cu[m] asino" type="straight"/>
+        <underline language="LA" method="pen" text="natura Martis &amp; Solis, in quadrato Solis &amp; ascendentis &amp; trino" type="straight"/>
+        <underline language="LA" method="pen" text="Martis" type="straight"/>
+        <underline language="LA" method="pen" text="radij Martis" type="straight"/>
+        
+    </annotation>
+</transcription>

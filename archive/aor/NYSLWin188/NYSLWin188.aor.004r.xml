@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.004r.tif" pagination="4" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="wassers" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aqua</marginalia_text>
+                </position>
+            </language>
+            <translation>Water.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Lufft" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aer</marginalia_text>
+                </position>
+            </language>
+            <translation>Air.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Himmel" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Coelum.</marginalia_text>
+                </position>
+            </language>
+            <translation>Heaven.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Dann also seind die Elementischen Cörper das keine perfect farbe[n] mit namen mag genennet werden" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Eleme[n]toru[m] no[n] sunt perfecti et certi colores.</marginalia_text>
+                </position>
+            </language>
+            <translation>The colours of the elements are not perfect and fixed.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Dann nicht eine farben wachst von inen sondern viel farben" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quare no[n] sunt vnici et certi Eleme[n]toru[m] colores.</marginalia_text>
+                </position>
+            </language>
+            <translation>Why the colours of the elements are not unique and fixed.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="andere farben seind" type="double"/>
+        <underline language="DE" method="pen" text="farbe des" type="straight"/>
+        <underline language="DE" method="pen" text="Die Erde[n] hat" type="straight"/>
+        <underline language="DE" method="pen" text="schwartz" type="double"/>
+        <underline language="DE" method="pen" text="praun" type="double"/>
+        <underline language="DE" method="pen" text="weiß" type="straight"/>
+        <underline language="DE" method="pen" text="praun" type="double"/>
+        <underline language="DE" method="pen" text="gelb" type="double"/>
+        <underline language="DE" method="pen" text="grüne" type="double"/>
+        <underline language="DE" method="pen" text="blawe" type="double"/>
+        <underline language="DE" method="pen" text="wie braun" type="double"/>
+        <underline language="DE" method="pen" text="das keine perfect farbe[n] mit namen mag genennet werden" type="straight"/>
+        <underline language="DE" method="pen" text="jnen kompt" type="straight"/>
+        <underline language="DE" method="pen" text="seine deutliche" type="straight"/>
+        <underline language="DE" method="pen" text="habe[n] sondern wie" type="straight"/>
+        <underline language="DE" method="pen" text="Dann nicht eine farben wachst von jnen sondern viel farben" type="straight"/>
+        <underline language="DE" method="pen" text="von so viel farben in so viel" type="straight"/>
+        <underline language="DE" method="pen" text="schwartz" type="straight"/>
+        <underline language="LA" method="pen" text="Colores Collecti" type="straight"/>
+        
+        <symbol name="Asterisk" place="left_margin"/>
+        <symbol name="Asterisk" place="head"/>
+        
+        <mark method="pen" name="circumflex" place="intext"/> <!--Nun-->
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        
+    </annotation>
+</transcription>

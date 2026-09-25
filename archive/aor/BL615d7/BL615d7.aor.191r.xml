@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.191r.tif" pagination="191" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Sotto questo nome vendendo egli il tutto dall' altra parte procacciaua, che fosse comprato da alcuni suoi compagni" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Collusion</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="li due terzi meno di quel, che valeuano" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>⅔</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Diego Ortiz" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Diego Ortiz</marginalia_text>
+                    <person name="Diego Ortiz"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="che i Re non erano lauoratori, ne mercatanti, ne voleuano quelle terre per loro vtile: ma" type="straight"/>
+        <underline language="IT" method="pen" text="aiuto de' lor buoni sudditi" type="straight"/>
+        <underline language="IT" method="pen" text="vendendo" type="double"/>
+        <underline language="IT" method="pen" text="li due terzi" type="straight"/>
+        <underline language="IT" method="pen" text="meno di quel, che valeuano" type="double"/>
+        <underline language="IT" method="pen" text="cose di giustitia, ne hauea altro rispetto, che di farsi ricco, &amp; acquistar la gratia" type="straight"/>
+        <underline language="IT" method="pen" text="che armata manu cercasse di liberar l'Ammiraglio" type="straight"/>
+        <underline language="IT" method="pen" text="ottenuto piu facilmente il castigo di cosi fatta persona, &amp; rimedio al torto, che" type="straight"/>
+        <underline language="IT" method="pen" text="lasciò d'imprigionarlo co' suoi" type="straight"/>
+        <underline language="IT" method="pen" text="suonando con corni presso" type="straight"/>
+        <underline language="IT" method="pen" text="per li cantoni molti libelli infamatorij" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext" text="nome vendendo"/>
+        <mark method="pen" name="comma" place="intext" text="tutto dall"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

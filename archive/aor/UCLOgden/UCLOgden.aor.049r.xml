@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.049r.tif" pagination="81" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        fieri no[n] p[otes]t.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                It cannot happen.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="filios [...] filias" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        filij &amp; filia[e] quales.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Such sons and daughters.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        oligochronij
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Shortlived.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Signoru[m] discrimina.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Distinction between the signs.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="♋" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ☾ in ♋ nocte.
+                    </marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Cancer"/>
+                </position>
+            </language>
+            <translation>
+                The moon in Cancer at night.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Si uero partem medii coeli praecedat aut sequatur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Si parte[m] medij C. pr[a]ecedat, aut sequatur.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                If a part of Midheaven it precedes, otherwise it follows.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="inuenta, plena lumine" type="straight"/>
+        <underline language="LA" method="pen" text="qui sic eam habuerit, multos procreabit filios, à quibus" type="straight"/>
+        <underline language="LA" method="pen" text="uel pacto placituram" type="straight"/>
+        <underline language="LA" method="pen" text="templis sordide manere" type="straight"/>
+        <underline language="LA" method="pen" text="quasi à" type="straight"/>
+        <underline language="LA" method="pen" text="si ♄, scientiam alchimiae" type="straight"/>
+        <underline language="LA" method="pen" text="dabit omniu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="partem medii coeli praecedat aut sequatur, in proximo" type="straight"/>
+        <underline language="LA" method="pen" text="in eode[m] signo, in quo est mediu[m] coelu[m], platice fuerit co[n]stituta, magnos" type="straight"/>
+        <underline language="LA" method="pen" text="actus administratio[n]e terribiles. Sed" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <errata amendedtext="puncta" copytext="plura" language="LA"/>
+        
+    </annotation>
+</transcription>

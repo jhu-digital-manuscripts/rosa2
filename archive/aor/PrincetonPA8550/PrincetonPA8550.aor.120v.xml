@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA8550.120v.tif" pagination="240" reader="Harvey" signature="Pviiiv"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        peroratio.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Conclusion.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="non modò" type="straight"/>
+        <underline language="LA" method="pen" text="sed illud" type="straight"/>
+        <underline language="LA" method="pen" text="multa[e] gentes" type="straight"/>
+        <underline language="LA" method="pen" text="iuris similitudine" type="straight"/>
+        <underline language="LA" method="pen" text="hoc ius, quod" type="straight"/>
+        <underline language="LA" method="pen" text="quod" type="straight"/>
+        <underline language="LA" method="pen" text="summorum uirorum" type="straight"/>
+        <underline language="LA" method="pen" text="a[e]quissimum &amp; maximè" type="straight"/>
+        <underline language="LA" method="pen" text="munit nos aduersus" type="straight"/>
+        <underline language="LA" method="pen" text="prodest ad bonos" type="straight"/>
+        <underline language="LA" method="pen" text="etiamsi in forum" type="straight"/>
+        <underline language="LA" method="pen" text="scholis legi" type="straight"/>
+        <underline language="LA" method="pen" text="naturam iusticia[e] &amp; a[e]quitatis" type="straight"/>
+        <underline language="LA" method="pen" text="perfectior &amp; illustrior imago iustitia[e]" type="straight"/>
+        <underline language="LA" method="pen" text="legibus" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- above 'oppidis' -->
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- est, quod -->
+        <mark method="pen" name="dot" place="intext"/> <!-- est, quod -->
+        <mark method="pen" name="dot" place="intext"/> <!-- rationi, quod -->
+        <mark method="pen" name="dot" place="intext"/> <!-- Tyrannidem, quod -->        
+        <mark method="pen" name="dot" place="intext"/> <!-- mores, retineamus -->        
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="etiamsi in forum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="naturam iusticia[e] &amp; a[e]quitatis"/>
+
+    </annotation>
+</transcription>

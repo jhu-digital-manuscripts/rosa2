@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.367v.tif" pagination="284" reader="John Dee" signature="[Aaaa iiij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="datae sunt tre[u]gae inter praedictos regem &amp; VValenses" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Treuga[e] cum Wallensibus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A truce with the Welsh.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="videlicet, Comes de Clare, Iohannes Mansel, Petrus de" type="straight"/>
+        <underline language="LA" method="pen" text="pr[a]emuniti omnes, qui regi debeba[n]t seruitium" type="straight"/>
+        <underline language="LA" method="pen" text="cum equis &amp; armis contra VVallenses pugnaturi" type="straight"/>
+        <underline language="LA" method="pen" text="tre[u]gae inter praedictos regem &amp; VValenses vsque ad idem festum anno reuoluto" type="straight"/>
+        
+        <errata amendedtext="lignis" copytext="linguis" language="LA"/> 
+        
+    </annotation>
+</transcription>

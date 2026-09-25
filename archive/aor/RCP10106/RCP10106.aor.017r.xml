@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.017r.tif" pagination="33" reader="John Dee" signature="c"/>
+    <annotation>
+        
+        <marginalia anchor_text="Nam sunt quaeda[m] cognata" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>.Cognata.</marginalia_text>
+                </position>
+            </language>
+            <translation>Cognate.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="an, &amp; aut" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>An &amp; aut.</marginalia_text>
+                </position>
+            </language>
+            <translation>Or and or.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="ne, act no[n]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ne &amp; no[n]</marginalia_text>
+                </position>
+            </language>
+            <translation>Not and not.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="intus, &amp; intrò" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Intus &amp; intro.</marginalia_text>
+                </position>
+            </language>
+            <translation>Inside and into.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="imprudentiam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Imprude[n]tia</marginalia_text> 
+                </position>
+            </language>
+            <translation>Thoughtlessly.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hoc amplius, ut institutum ordine[m] sequar, uerba aut Latina, aut peregrina sunt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Verboru[m] Diuisio</marginalia_text>
+                </position>
+            </language>
+            <translation>Division of words.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Patauinitatem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pattauinitas</marginalia_text>
+                </position>
+            </language>
+            <translation>The dialect of Padua.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sed oratoribus" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

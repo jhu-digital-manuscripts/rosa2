@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.302r.tif" pagination="583" reader="John Dee" signature="ooo.iiii."/>
+    <annotation>
+        
+        <marginalia anchor_text="Bruto" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Brutus</marginalia_text>
+                    <person name="Marcus Junius Brutus the Younger"/>
+                </position>
+            </language>
+            <translation>Marcus Junius Brutus the Younger.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="M. Lepido" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>M. Lepidus.</marginalia_text>
+                    <person name="Marcus Aemilius Lepidus"/>
+                </position>
+            </language>
+            <translation>Marcus Aemilius Lepidus.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="quamamplissimos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>qua[m]ampliss[imus], a, u[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>As ample as possible.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="periculosissimu[m] ciuile bellu[m], maximúmque ... acerbissimum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>bellu[m] tetru[m] miseru[m] p[er]iculosiss[imu]m maximu[m] acerbiss[imu]m</marginalia_text>
+                </position>
+            </language>
+            <translation>A foul, miserable, most dangerous and bitter war.</translation>
+        </marginalia> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aepistola ad Senatu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>A letter to the senate.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="à Bruto igitur Consule designato more" type="straight"/>
+        <underline language="LA" method="pen" text="neque enim vlla[m] mercede[m] tanta virtus, praeter hanc laudis, gloriáeque desyderat: qua" type="straight"/>
+        <underline language="LA" method="pen" text="no[n] debeatur" type="straight"/>
+        <underline language="LA" method="pen" text="Magna haec, sed ad maiora properat oratio" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">10.12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">10.13</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        
+    </annotation>
+</transcription>

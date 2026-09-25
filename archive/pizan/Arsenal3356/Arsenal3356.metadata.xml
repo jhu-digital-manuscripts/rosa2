@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>0</illustrations>
+    <totalPages>548</totalPages>
+    <dimensions units="mm">
+        <width>273</width>
+        <height>192</height>
+    </dimensions>
+    <dates>
+        <startDate>1401</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="Recueil">
+            <language>fr</language>
+            <title>Recueil</title>
+            <textId/>
+            <pages end="264r" start="1r">264</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>32</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="Cy commance le livre que le chevalier de La Tour pur l'enseingnement des dames et damoiselles...">
+            <language>fr</language>
+            <title>Cy commance le livre que le chevalier de La Tour pur l'enseingnement des dames et damoiselles...</title>
+            <textId/>
+            <pages end="105r" start="1r">105</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>32</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="Libre de Mélibée et Prudence par Albertan de Brescia">
+            <language>fr</language>
+            <title>Libre de Mélibée et Prudence par Albertan de Brescia</title>
+            <textId/>
+            <pages end="126r" start="105v">21</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>32</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="Cy commance le livre des troys vertuz a l'enseignement des dames par Christine de Pisan">
+            <language>fr</language>
+            <title>Cy commance le livre des troys vertuz a l'enseignement des dames par Christine de Pisan</title>
+            <textId/>
+            <pages end="264r" start="129r">135</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>32</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Christine de Pizan</title>
+            <commonName>Arsenal 3356</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>paper</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>Arsenal 3356</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Christine de Pizan</title>
+            <commonName>Arsenal 3356</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscript</type>
+            <material>paper</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>Arsenal 3356</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

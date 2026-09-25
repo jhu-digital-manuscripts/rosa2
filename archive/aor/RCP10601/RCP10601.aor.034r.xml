@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.034r.tif" pagination="67" reader="John Dee" signature="e 2"/>
+    <annotation>
+        
+      <marginalia anchor_text="spirituu[m]" hand="Italian">
+          <language ident="LA">
+              <position book_orientation="0" place="right_margin">
+                  <marginalia_text>spiritus</marginalia_text>
+              </position>
+          </language>
+          <translation>Spirit.</translation>
+      </marginalia>  
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota.</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="spirituu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="addictorum" type="straight"/>
+        <underline language="LA" method="pen" text="diuina &amp; spirituali &amp; coelesti sapientia coniuncta humanae diligentiae" type="straight"/>
+        <underline language="LA" method="pen" text="rerum corruptibilium naturis" type="straight"/>
+        <underline language="LA" method="pen" text="malis spiritibus imperare" type="straight"/>
+        <underline language="LA" method="pen" text="quàm bonos in obsequium" type="straight"/>
+        <underline language="LA" method="pen" text="daemones" type="straight"/>
+        <underline language="LA" method="pen" text="uirtute herbaru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="spirituum rebus ipsis impactorum fiamus inter res ipsas deuorandas participes" type="straight"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="Ea de re no[n] minus &amp; Moses &amp; Solomon, &amp; quicunque ea parte sapientiae summè pollebat,              poterat &amp; diuina &amp; spirituali &amp; coelesti sapientia coniuncta humanae diligentiae &amp; rerum corruptibilium naturis, malis spiritibus imperare, quàm bonos in obsequium trahere"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.107r.tif" pagination="199" reader="John Dee" signature="r.iiij."/>
+    <annotation>
+        
+        <marginalia anchor_text="bissestre" hand="Italian">
+            <language ident="FR">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>dissestre</marginalia_text>  
+                </position> 
+            </language>
+            <translation>Bissextile.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ne Latinis menses qua[n]doque errones essent, vt Ægyptiis, sed perpetuò stabiles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Discrimen inter Annu[m] Ægyptu[m] et Iulianu[m].</marginalia_text>  
+                </position> 
+            </language>
+            <translation>Distinction between the Egyptian year and the Julian year.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quò factu[m] fuit vt Februario relicti sint ta[n]tu[m]modò dies 28. in anno co[m]muni" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Febr[uario] dies. 28.</marginalia_text> 
+                </position> 
+            </language>
+            <translation>There are 28 days in February.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="imparis numeri, cui multum propter superstitiones receptas" type="straight"/>
+        <underline language="LA" method="pen" text="tamen triginta" type="straight"/>
+        <underline language="LA" method="pen" text="quòd annum trecentis sexagintaquinque diebus, &amp; quadrante definiuisset" type="straight"/>
+        <underline language="LA" method="pen" text="anno bis" type="straight"/>
+        <underline language="LA" method="pen" text="diceretur, sexto Calend" type="double"/>
+        <underline language="LA" method="pen" text="propter nouum" type="double"/>
+        <underline language="LA" method="pen" text="nomen, infaustum" type="straight"/>
+        <underline language="FR" method="pen" text="Bissestre" type="straight"/>
+        <underline language="FR" method="pen" text="quelque bissestre" type="straight"/>
+        <underline language="LA" method="pen" text="dies addantur quinque" type="straight"/>
+        <underline language="LA" method="pen" text="quadrantem diei quotannis negligerent" type="straight"/>
+        <underline language="LA" method="pen" text="tamen 30. redirent" type="double"/> 
+        <underline language="LA" method="pen" text="essent, vt Ægyptiis" type="double"/>
+        <underline language="LA" method="pen" text="perpetuò stabiles" type="double"/>
+        <underline language="LA" method="pen" text="fuit Iulius" type="straight"/>
+        <underline language="LA" method="pen" text="Augustus" type="straight"/>
+        <underline language="LA" method="pen" text="Sed ne Augustus Iulio videretur inferior, detractus fuit vnus dies me[n]si Februario, &amp; Augusto me[n]si additus" type="straight"/>
+        <underline language="LA" method="pen" text="triginta &amp; vnum" type="straight"/>
+        <underline language="LA" method="pen" text="dies 28. in" type="straight"/>
+        
+        <mark method="pen" name="straight_quotation_mark" place="left_margin"/>
+        <mark method="pen" name="straight_quotation_mark" place="intext"/>
+        <mark method="pen" name="X_sign" place="left_margin"/>
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark method="pen" name="straight_quotation_mark" place="left_margin"/>
+        <mark method="pen" name="straight_quotation_mark" place="intext"/>     
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="left_margin">29</numeral>
+        <numeral place="left_margin">29</numeral>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.074r.tif" pagination="147" reader="John Dee" signature="k 2"/> 
+    <annotation>
+        
+        <marginalia anchor_text="populumq[ue]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Populus</marginalia_text>
+                </position>
+            </language>
+            <translation>The people.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Demosthene[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Demosthenes</marginalia_text>
+                    <person name="Demosthenes"/>
+                </position>
+            </language>
+            <translation>Demosthenes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="officijs constat duobus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Duo officia</marginalia_text>
+                </position>
+            </language>
+            <translation>Two functions.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Prooemio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Proo[e]miu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Prelude.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="beneuolentiae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Benevole[n]tia</marginalia_text>
+                </position>
+            </language>
+            <translation>Goodwill.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristoteles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aristoteles</marginalia_text>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>Aristotle.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Isocrates" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Isocrates</marginalia_text>
+                    <person name="Isocrates"/>
+                </position>
+            </language>
+            <translation>Isocrates.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quia est aliquid in omni materia" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

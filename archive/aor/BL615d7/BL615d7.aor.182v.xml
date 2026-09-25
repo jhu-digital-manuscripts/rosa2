@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.182v.tif" pagination="[182v]" reader="John Dee"/>    
+    <annotation>
+        
+        <marginalia anchor_text="Francesco di Garai" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Francisca de Garay</marginalia_text>
+                    <person name="Francisco de Garay"/>
+                </position>
+            </language> 
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="hauea voglia d'" type="straight"/>
+        <underline language="IT" method="pen" text="Francesco di Garai" type="straight"/>
+        
+    </annotation>
+</transcription>

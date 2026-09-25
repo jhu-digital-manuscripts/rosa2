@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.032v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Sisillius" hand="Italian">
+            <language ident="CY">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        seysylld
+                    </marginalia_text>
+                    <person name="Sisillius I"/>
+                </position>
+            </language>
+            <translation>Sisillius I.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="CY">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        albion
+                    </marginalia_text>
+                    <location name="Albion"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Blegabridus" hand="Italian">
+            <language ident="CY">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        blegowyrd
+                    </marginalia_text>
+                    <person name="Blegabridus"/>
+                </position>
+            </language>
+            <translation>Blegabridus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Samulpenisel" hand="Italian">
+            <language ident="CY">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Saulpenisel
+                    </marginalia_text>
+                    <person name="Samuilpenissel"/>
+                </position>
+            </language>
+            <translation>Samuilpenissel.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hely" hand="Italian">
+            <language ident="CY">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        heli
+                    </marginalia_text>
+                    <person name="Heli"/>
+                </position>
+            </language>
+            <translation>Heli.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Neurium" hand="Italian">
+            <language ident="CY">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nenniu[m]
+                    </marginalia_text>
+                    <person name="Nennius"/>
+                </position>
+            </language>
+            <translation>Nennius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Gurgineus" hand="Italian">
+            <language ident="CY">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        grwist
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Merianus" hand="Italian">
+            <language ident="CY">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        meirion
+                    </marginalia_text>
+                    <person name="Merianus"/>
+                </position>
+            </language>
+            <translation>Merianus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Bleduus" hand="Italian">
+            <language ident="CY">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        bleyddye
+                    </marginalia_text>
+                    <person name="Bleduno"/>
+                </position>
+            </language>
+            <translation>Bleduno.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cap" hand="Italian">
+            <language ident="CY">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        capis
+                    </marginalia_text>
+                    <person name="Capenus"/>
+                </position>
+            </language>
+            <translation>Capenus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Archemailus" hand="Italian">
+            <language ident="CY">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        arthemaes
+                    </marginalia_text>
+                    <person name="Arthmail"/>
+                </position>
+            </language>
+            <translation>Arthmail.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Rodrecius" hand="Italian">
+            <language ident="CY">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Ryddorch
+                    </marginalia_text>
+                    <person name="Rederchius"/>
+                </position>
+            </language>
+            <translation>Rederchius.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Gurgineus" type="straight"/>
+        <underline language="LA" method="pen" text="Merianus" type="straight"/>
+        <underline language="LA" method="pen" text="Bleduus" type="straight"/>
+        <underline language="LA" method="pen" text="Cap" type="straight"/>
+        <underline language="LA" method="pen" text="Oenus" type="straight"/>
+        <underline language="LA" method="pen" text="Sisillius" type="straight"/>
+        <underline language="LA" method="pen" text="Blegabridus" type="straight"/>
+        <underline language="LA" method="pen" text="Archemailus" type="straight"/>
+        <underline language="LA" method="pen" text="Archemailum" type="straight"/>
+        <underline language="LA" method="pen" text="Samulpenisel" type="straight"/>
+        <underline language="LA" method="pen" text="Hely" type="straight"/>
+        <underline language="LA" method="pen" text="Neurium" type="straight"/>
+        <underline language="LA" method="pen" text="Lud" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!--cui Blegabridus-->
+        <mark method="pen" name="scribble" place="intext"/> <!--above Blegabridus-->
+        
+    </annotation>
+</transcription>

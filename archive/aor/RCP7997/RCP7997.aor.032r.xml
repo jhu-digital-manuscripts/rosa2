@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.032r.tif" reader="John Dee" signature="Fij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="de p[ri]ncipijs c[om]munib[us]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Principia co[m]munia.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Common principles.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mathematici" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Mathematicus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A mathematician.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="que materialit[er] bene potest esse de eade[m] re opinio vera [et] falsa s[ed] no[n] formalit[er]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        opinio [ materialiter formaliter
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Opinion, materially or formally.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="alios habit[us] qui se s[em]p[er] habe[n]t ad veru[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Varij habitus qui se semp[er] ad verum referunt. 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Different qualities that always return to the truth.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="q[uod] si sit aliq[ua] causa hoc demo[n]stra[n]s ad huc dubiu[m] est vtr[um] ista causa sit v[niversa]lis. v[e]l" type="straight"/>
+        <underline language="LA" method="pen" text="de p[ri]ncipijs c[om]munib[us]" type="straight"/>
+        <underline language="LA" method="pen" text="q[ue] diuerse [et] diuersimode c[on]trahunt[ur]. na[m]" type="straight"/>
+        <underline language="LA" method="pen" text="[et] de hijs no[n] est mathematici cu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="c[on]siderat de p[ri]ncipijs necessarijs" type="straight"/>
+        <underline language="LA" method="pen" text="sit de necessarijs opinio v[er]o" type="straight"/>
+        <underline language="LA" method="pen" text="mediu[m] q[uo]d no[n] potest alit[er] se habere tu[n]c generat[ur] scientia [et] hoc mediu[m] est diffinitio" type="straight"/>
+        <underline language="LA" method="pen" text="q[ue] materialit[er] bene potest esse de eade[m] re opinio vera [et] falsa s[ed] no[n] formalit[er]" type="straight"/>
+        <underline language="LA" method="pen" text="ad illos q[ui]" type="straight"/>
+        <underline language="LA" method="pen" text="mediu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="in ratione[m]" type="straight"/>
+        <underline language="LA" method="pen" text="intellectu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="scie[n]tia[m]. arte[m]. prudentia" type="straight"/>
+        <underline language="LA" method="pen" text="sapie[n]tia[m]" type="straight"/>
+        
+        <numeral language="LA" place="left_margin" text="Prima">.1.</numeral>
+        <numeral language="LA" place="left_margin" text="S[e]c[un]da">.2.</numeral>
+        <numeral language="LA" place="left_margin" text="Tertia">.3.</numeral>
+        <numeral language="LA" place="left_margin" text="Quarta">4</numeral>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.439v.tif" pagination="428" reader="John Dee" signature="[Nnnn iiij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Brutus nomine, de genere Troianorum" hand="Italian" id="RCP10653:894:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Brutus.
+                    </marginalia_text>
+                    <person name="Brutus of Troy"/>
+                </position>
+            </language>
+            <translation>
+                Brutus of Troy.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Scatarum" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Stateriumg 
+                    </marginalia_text>
+                    <person name="Dyfnwal Moelmud"/>
+                </position>
+            </language>
+            <translation>
+                
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Belenius &amp; Brennius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Belinus Brennius
+                    </marginalia_text>
+                    <person name="Belinus"/>
+                    <person name="Brennius"/>
+                </position>
+            </language>
+            <translation>
+                Belinus, Brennius.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Arthurus rex Britonum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Arthurus.
+                    </marginalia_text>
+                    <person name="King Arthur"/>
+                </position>
+            </language>
+            <translation>
+                King Arthur.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ancelmum regem Scotiae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Anguselum
+                    </marginalia_text>
+                    <person name="Anguselus, King of Scotland"/>
+                </position>
+            </language>
+            <translation>
+                
+            </translation>
+        </marginalia>
+
+        <marginalia anchor_text="Ancelmus rex Scotiae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Anguselus
+                    </marginalia_text>
+                    <person name="Anguselus, King of Scotland"/>
+                </position>
+            </language>
+            <translation>
+                Anguselus.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        in
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                In.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="causa gestis antiquorum temporum saluis" type="straight"/>
+        <underline language="LA" method="pen" text="insignis, Brutus" type="straight"/>
+        <underline language="LA" method="pen" text="quandam" type="straight"/>
+        <underline language="LA" method="pen" text="Locrino regia dignitate" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Albanactum" type="straight"/>
+        <underline language="LA" method="pen" text="Locricus" type="double"/>
+        <underline language="LA" method="pen" text="Item Du[n]vvallo rex Britonum" type="straight"/>
+        <underline language="LA" method="pen" text="regem Scotiae sibi rebellem" type="straight"/>
+        <underline language="LA" method="pen" text="recepit" type="straight"/>
+        <underline language="LA" method="pen" text="filij Dunvvallionis" type="straight"/>
+        <underline language="LA" method="pen" text="Belinus &amp; Brennius" type="straight"/>
+        <underline language="LA" method="pen" text="regnu[m] patris sui diuiserunt" type="straight"/>
+        <underline language="LA" method="pen" text="Brennius" type="double"/>
+        <underline language="LA" method="pen" text="regnaturus Scotiam acciperet, petebat enim Troiana consuetudo" type="straight"/>
+        <underline language="LA" method="pen" text="Item Arthurus rex Britonum" type="straight"/>
+        <underline language="LA" method="pen" text="famosissimus, Scotiam sibi rebellem subiecit, &amp; penè totam gente[m] deleuit" type="straight"/>
+        <underline language="LA" method="pen" text="cum posteà" type="straight"/>
+        <underline language="LA" method="pen" text="ibi omnes reges sibi subiecti" type="straight"/>
+        <underline language="LA" method="pen" text="Ancelmus rex Scotiae" type="double"/>
+        <underline language="LA" method="pen" text="omnes reges Scotiae omnibus regibus Britonu[m] fuerunt subiecti" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/> 
+        <mark method="pen" name="plus_sign" place="tail"/>
+        <mark method="pen" name="circumflex" place="intext"/>   
+        
+        <errata amendedtext="hanc" copytext="quandam" language="LA"/>
+        <errata amendedtext="Locrinus" copytext="Locricus" language="LA"/>
+        <errata amendedtext="Postea" copytext="Item" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="Scatarum" language="LA"/>  
+        <errata amendedtext="accepit" copytext="recepit" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="possiderit" language="LA"/>  
+        <errata amendedtext="accepit" copytext="acciperet" language="LA"/>
+        <errata amendedtext="posteà cum" copytext="cum posteà" language="LA"/>  
+        <errata amendedtext="ibidem" copytext="ibi" language="LA"/>      
+        <errata amendedtext="[deleted]" copytext="Ancelmus" language="LA"/>
+        <errata amendedtext="successiuè" copytext="successione" language="LA"/>  
+        
+    </annotation>
+</transcription>

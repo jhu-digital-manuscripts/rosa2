@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.036v.tif" pagination="36[v]" reader="John Dee" signature="[Hiv[v]]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        sup[ra] pag[ina] 19: △
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="BLC120b4:c_120_b_4_(2)_f019v:s0001" text="pag[ina] 19"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See above page 19.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Terminatio'q[ue] rubificationis" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Terminatio Rubificationis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The terminology of rubification.
+            </translation>
+        </marginalia>
+         
+        <underline language="LA" method="pen" text="ut in pra[e]missis" type="straight"/>
+        <underline language="LA" method="pen" text="uitri, Materia[e]'q[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="Aeris, &amp; Ignis" type="straight"/>
+        <underline language="LA" method="pen" text="maioris &amp; minoris, ac Argenti" type="straight"/>
+               
+    </annotation>
+</transcription>

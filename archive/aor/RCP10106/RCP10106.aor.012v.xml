@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.012v.tif" pagination="24" reader="John Dee" signature="[b 4[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="ac maxime Stoicis auctus est numerus, ac primu[m] co[n]iunctionibus articuli adiecti, post praepositiones" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Partiu[m] numerus à stoicis auctus</marginalia_text>
+                </position>
+            </language>
+            <translation>The number of parts was increased by the Stoics.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="octo duntaxat partes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Octo partes.</marginalia_text>
+                </position>
+            </language>
+            <translation>Eight parts.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nouem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nouem.</marginalia_text>
+                </position>
+            </language>
+            <translation>Nine.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uocabulum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vocabulum.</marginalia_text>
+                </position>
+            </language>
+            <translation>Name.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Appellatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Appellatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Name.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nominibus tria genera" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nominu[m] genera.</marginalia_text>
+                </position>
+            </language>
+            <translation>Noun types.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Noster" type="straight"/>
+        <underline language="LA" method="pen" text="coelum" type="straight"/>
+        
+        <mark language="LA" method="pen" name="tripunctus_with_tail" place="left_margin" text="Partiu[m] numerus à stoicis auctus"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

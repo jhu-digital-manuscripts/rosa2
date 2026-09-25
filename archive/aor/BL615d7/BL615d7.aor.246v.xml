@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.246v.tif" reader="John Dee" signature="[246v]"/> 
+    
+    <annotation>
+        
+        <marginalia anchor_text="MDVI" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>.1506.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+    
+        <marginalia anchor_text="MDVI" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">           
+                    <marginalia_text>[Deleted] Anno a[e]tatis puto supra 69 vel Anum circa. Nascitur enim 1447 vide fol 9:v</marginalia_text> 
+                    <internal_ref>
+                        <target ref="BL615d7:615_d_7_f009v:m0001" text="fol 9:v"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>'In this year of his life, I suspect he was older than 69 or around that old age. For he is born in 1447, see folio 9v.</translation>
+        </marginalia>
+        
+        
+    
+        <underline language="IT" method="pen" text="la molta parte" type="straight"/>
+        <underline language="IT" method="pen" text="tentaua, che a se fosse rimaso" type="straight"/>
+        <underline language="IT" method="pen" text="l'assoluto Dominio di quelle" type="straight"/>
+        <underline language="IT" method="pen" text="suo modo" type="double"/>
+        <underline language="IT" method="pen" text="voglia" type="double"/>
+        <underline language="IT" method="pen" text="vfficij" type="double"/>
+        <underline language="IT" method="pen" text="Ammiraglio toccauano" type="straight"/>
+        <underline language="IT" method="pen" text="patti di ricompenso" type="double"/>
+        <underline language="IT" method="pen" text="Filippo Primo venne in" type="straight"/>
+        <underline language="IT" method="pen" text="tempo, che il Re Catolico" type="straight"/>
+        <underline language="IT" method="pen" text="del suo possesso" type="straight"/>
+        <underline language="IT" method="pen" text="MDVI" type="straight"/>
+    
+    </annotation>
+</transcription>

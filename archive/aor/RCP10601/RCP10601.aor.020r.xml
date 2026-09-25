@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.020r.tif" pagination="39" reader="John Dee" signature="c 4"/>
+    <annotation>
+        
+        <marginalia anchor_text="Aristotelis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aristoteles</marginalia_text>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>Aristotle.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="6. millium annorum spacio Hispano, quo comprehenduntur bis mille magni &amp; communes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>6000 anni [est] 2000</marginalia_text>
+                </position>
+            </language>
+            <translation>6000 years [is] 2000.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Dyri, seu Atali, Itali'ue, aut Athlantis, qui &amp; Iapetus est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Dyrus Atalus Italus Athlas Iapetus</marginalia_text> <!-- FSF: I don't really understand this; are these all people or different tribes? -->  <!-- DO: I initially thought these were all referring to Japheth but now I don't think this is the case. I can't identify any of these though  -->
+                    <person name="Japheth"/>
+                </position>
+            </language>
+            <translation>Dyrus, Atalus, Italus, Atlas, Japheth.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="atheismum" type="straight"/>
+        <underline language="LA" method="pen" text="praeter sacras" type="straight"/>
+        <underline language="LA" method="pen" text="quibus si concordabu[n]t" type="double"/>
+        <underline language="LA" method="pen" text="Dictatore, 6. millium" type="straight"/>
+        <underline language="LA" method="pen" text="spacio Hispano" type="straight"/>
+        <underline language="LA" method="pen" text="bis mille magni &amp; communes" type="straight"/>
+        <underline language="LA" method="pen" text="Dyri" type="straight"/>
+        <underline language="LA" method="pen" text="Atali" type="straight"/>
+        <underline language="LA" method="pen" text="Itali'ue" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- annorum spacio -->
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.134v.tif" pagination="268" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Nam quo ille animo, qua mediocorum admiratione, me[n]sium octo ualetudinem tulit? ut me in supremis consolatus est?" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Affectus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Affection.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="omnia, uocis iucunditas, claritas'q[ue] oris suauitas, &amp; in utracu[n]q[ue] lingua, tanquam ad ea[m] demum natus esset, expressa              proprietas omnium literarum" type="straight"/>
+        <underline language="LA" method="pen" text="Nemo nisi sua culpa diu dolet" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.051v.tif" pagination="86" reader="John Dee" signature="[h[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Cautio qu[a]e in o[mn]ib[us] hijs decretis adhiberi debet.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Caution which in all these decrees must be applied.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in sexto ab horosc. uel in duodecimo loco" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        In sexto vel duodecimo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                In the sixth or twelfth [place].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="In quinto uero loco, uel undecimo ab horosc. uel in secundo, siue in octauo, uel in ipso horosc." hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        In: 5. 11. 2. 8. 1. domibus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                In the fifth, eleventh, second, eighth or first house.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Vide sup[ra] lib. 2. cap 7 de ☾ contraria ♀ du[m] tame[n] eius crescit
+                    </marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Venus"/>
+                    <internal_ref>
+                        <target ref="UCLOgden:086" text="lib. 2 cap. 7"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in mulieris genitura" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        In mulieris genitura.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                In the constellation of a woman.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Signorum qualitas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The quality of signs.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="aliorum enim oculis nocet" type="straight"/>
+        <underline language="LA" method="pen" text="Sed haec omnia" type="triple"/>
+        <underline language="LA" method="pen" text="signorum" type="straight"/>
+        <underline language="LA" method="pen" text="secundum cardines" type="straight"/>
+        <underline language="LA" method="pen" text="cardinum anaphotas" type="straight"/>
+        <underline language="LA" method="pen" text="corpus, ferri laceratione conciditur" type="straight"/>
+        <underline language="LA" method="pen" text="si per diem" type="straight"/>
+        <underline language="LA" method="pen" text="in nocturna genitura, &amp; minuta luminibus" type="straight"/>
+        <underline language="LA" method="pen" text="praesertim si in primis cerdinibus geniturae, sic fuerit inuenta" type="straight"/>
+        <underline language="LA" method="pen" text="uero per diem" type="straight"/>
+        <underline language="LA" method="pen" text="se partili radiatione" type="straight"/>
+        <underline language="LA" method="pen" text="aliis alienationis decernit incommoda" type="straight"/>
+        <underline language="LA" method="pen" text="partiliter radios ☾ uenientis" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; crescens" type="straight"/>
+        <underline language="LA" method="pen" text="processu temporis consequentur" type="straight"/>
+        <underline language="LA" method="pen" text="☾ deficiens" type="straight"/>
+        <underline language="LA" method="pen" text="rumoribus infamati" type="straight"/>
+        <underline language="LA" method="pen" text="coniunctionem ♂, de" type="straight"/>
+        <underline language="LA" method="pen" text="tropicis" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/> <!-- facit Sed -->
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral language="LA" place="intext" text="signorum">1</numeral>
+        <numeral language="LA" place="intext" text="secundum">2</numeral>
+        <numeral language="LA" place="intext" text="secundum">3</numeral>
+        <numeral language="LA" place="intext" text="societatibus">3</numeral>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.239r.tif" pagination="29" reader="John Dee" signature="Ccc iij"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="Richardus quoque, Consul Cestrensis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Rich. Co. Cestr.
+                    </marginalia_text>
+                    <person name="Richard d'Avranches"/>
+                </position>
+            </language>
+            <translation>
+                Richard d'Avranches, 2nd Earl of Chester.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Consul Cestrensis" type="straight"/>
+        
+    </annotation>
+    
+</transcription>

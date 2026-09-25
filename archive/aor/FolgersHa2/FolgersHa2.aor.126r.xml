@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.126r.tif" pagination="75" reader="Harvey" signature="[E6r]"/>	<!-- ABO 130right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Ex Eutrapeli arcanis, singulare secretum.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				A singular secret from the mysteries of Eutrapelus.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Eutrapelus
+						nihil pra[e]tendit apud quenq[uam]: intendit summa apud
+						| omnes.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				Eutrapelus claims nothing among anyone;
+				he aims for the heights among all men.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Nulla tanta Entelechia:
+						Nulla talis Euschemosyne. Sed Ironia,
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						vtramq[ue] celans auget
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						| vtramq[ue]. Nec vlla Mundi
+						disciplina tam potens. Pra[e]tendere gloriosa,
+						hominis est impotentis: Ipsa extendere maxima,
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Serij est viri.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Nothing is as great as Actualization;
+				Nothing is like Refinement.
+				But a concealed Irony can improve both of them.
+				Nor is any discipline in the world as powerful.
+				To claim glorious matters is for impotent men;
+				to aim for the greatest things is for serious men.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						dextrè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Skillfully.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Nugatur, qui gloriatur. Rem gerit, qui rem tenet.
+						Nec vlla tam conspicua demonstratio, quàm ipse
+						Euentus. Qui eò magnificentior, quò modestior.
+					</marginalia_text>
+					<emphasis method="pen" text="Rem gerit, qui rem tenet" type="straight"/>
+					<emphasis method="pen" text="quàm ipse" type="straight"/>
+					<emphasis method="pen" text="Euentus" type="straight"/>
+					<emphasis method="pen" text="eò magnificentior, quò modestior" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Whoever boasts is a trifler. Whoever can hold on to a matter can manage that matter.
+				Nor is any proof as visible as success itself. He who is so much more magnificent is likewise more modest.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Plus candore valet Eutrapelus, quàm alij superbia: et magnificentior est =
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						= huius dignitas, quàm illorum pompa.
+						Vt nihil vulgare: sic nihil odiosum. Pulchra omnia: nulla vana.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Eutrapelus is worth more with his candor than others with their arrogance;
+				and his dignity is more magnificent than their pomp.
+				Thus nothing is to be common, just as nothing is to be hateful. 
+				All things are to be beautiful, and nothing in vain.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Atlanta ottenne per moglie" type="straight"/>
+		<underline language="IT" method="pen" text="impatiente dell'amore che" type="straight"/>
+		<underline language="IT" method="pen" text="sacro bosco di Cibele" type="straight"/>
+		<underline language="IT" method="pen" text="luogo, la suergognò" type="straight"/>
+		<underline language="IT" method="pen" text="sdegnata Cibele" type="straight"/>
+		<underline language="IT" method="pen" text="in Lioni gli" type="straight"/>
+		<underline language="IT" method="pen" text="tirare il suo carro" type="straight"/>
+		<underline language="IT" method="pen" text="Quando si dee desinare" type="straight"/>
+		<underline language="IT" method="pen" text="chi è ricco" type="straight"/>
+		<underline language="IT" method="pen" text="quando ei vuole" type="straight"/>
+		<underline language="IT" method="pen" text="pouero" type="straight"/>
+		<underline language="IT" method="pen" text="quando ei puo" type="straight"/>
+		<underline language="IT" method="pen" text="farsi beffe" type="straight"/>
+		<underline language="IT" method="pen" text="superstitioni" type="straight"/>
+		<underline language="IT" method="pen" text="scarpe, erano" type="straight"/>
+		<underline language="IT" method="pen" text="topi" type="straight"/>
+		<underline language="IT" method="pen" text="Catone" type="straight"/>
+		<underline language="IT" method="pen" text="che i topi habbiano rose" type="straight"/>
+		<underline language="IT" method="pen" text="le tue scarpe" type="straight"/>	
+		<underline language="IT" method="pen" text="hauessino rosi i topi" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="farsi beffe delle superstitioni" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+	
+		<symbol name="SS" place="intext"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--po-->
+		<mark language="IT" method="pen" name="quotation_mark" place="right_margin" text="farsi beffe delle superstitioni"/>
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="in Lioni gli"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="hauessino rosi i topi"/>
+
+    </annotation>
+</transcription>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.154v.tif" pagination="132" reader="Harvey" signature="[I2v]"/>	<!-- ABO 159left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						{ Optimi cuiusq[ue] Classis auctores, plus habent et in
+						ediscendo vtilitatis;
+						et in allegando dignitatis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The best authors of every class have more, both in the study of usefulness and in the commission of dignity.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Optimum
+						Exemplar, seu vivum, seu mortuum; instar omnium
+						exemplorum, et pra[e]ceptorum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The best exemplar, either alive or dead: an example of all examples and precepts.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Seria voluntatis contentio magnam habet
+						efficiendi facultatem.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Serious exercise of the will has a great faculty of accomplishment.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Viuida semper affectatio proficit plurimu[m]:
+						sed eò gratiosior, quò latentior.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A living affectation always accomplishes many things: but the more agreeable, the more hidden.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Quorsum tot dicendi, agendiq[ue] exquisita[e] formula[e], nisi vt dicatur, agaturq[ue]
+						excellentiùs, quàm alij? Pudeat se sui, qui non omnes superat
+						pra[e]sentes, sua quemq[ue] laude. Eamq[ue] intimè affectare.
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						Victoriam virile est. 
+						Ca[e]sar introduxit genus expedita[e]
+						Eloquentia[e], et Industria[e], quod
+					</marginalia_text>
+					<person name="Julius Caesar"/>
+				</position>
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						adhuc omnes supereminet. Quodmodo ille canit; Micat inter omnes Julium Sydus. 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>To what end are so many exquiste formulas of saying and doing, except as one says and does more excellently than others? He who does not surpass all others present is ashamed of himself... <!--JG: Not sure about 'sua quemq[ue] laude'--> <!-- CG: Actually I can't figure this out either. -->
+			 And to desire deeply that victory is manly. Caesar introduced the kind of expedite eloquence and industry, which hitherto rises above all. In what way does that man sing; Caesar's comet pulses among all the others.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Roma trionfante" type="straight"/>
+		<underline language="IT" method="pen" text="Augusto" type="straight"/>
+		<underline language="IT" method="pen" text="Scipione" type="straight"/>
+		<underline language="IT" method="pen" text="Pompeio" type="straight"/>
+		<underline language="IT" method="pen" text="Cesare" type="straight"/>
+		<underline language="IT" method="pen" text="Caligula Imperadore" type="straight"/>
+		<underline language="IT" method="pen" text="vna testa sola" type="straight"/>
+		<underline language="IT" method="pen" text="mente sana in corpo" type="straight"/>
+		<underline language="IT" method="pen" text="collo lungo à guisa di Gru" type="straight"/>
+		<underline language="IT" method="pen" text="gustare" type="straight"/>
+		<underline language="IT" method="pen" text="esser parco nel biasimare" type="straight"/>
+		<underline language="IT" method="pen" text="largo nel lodare" type="straight"/>
+		<underline language="IT" method="pen" text="Luigi Alamanno" type="straight"/>
+		<underline language="IT" method="pen" text="&amp; maldicente" type="straight"/>
+		<underline language="IT" method="pen" text="queste parole" type="straight"/>
+		<underline language="IT" method="pen" text="parco al dannar" type="straight"/>
+		<underline language="IT" method="pen" text="largo alle lodi" type="straight"/>
+		<underline language="IT" method="pen" text="dà vero honor" type="straight"/>
+		<underline language="IT" method="pen" text="l'altrui vergogna" type="straight"/>
+		<underline language="IT" method="pen" text="La virtù nostra" type="straight"/>
+		<underline language="IT" method="pen" text="col mal del vicin" type="straight"/>
+		<underline language="IT" method="pen" text="sempre ch'altrui" type="straight"/>
+		<underline language="IT" method="pen" text="nuoce à se stesso" type="straight"/>
+		<underline language="IT" method="pen" text="fatica altrui" type="straight"/>
+		<underline language="IT" method="pen" text="solito premio" type="straight"/>
+		<underline language="IT" method="pen" text="con cerimonie, &amp; ringratiamenti" type="straight"/>
+		<underline language="IT" method="pen" text="Simonide" type="straight"/>
+		<underline language="IT" method="pen" text="alcuni versi in" type="straight"/>
+		<underline language="IT" method="pen" text="laude" type="straight"/>
+		<underline language="IT" method="pen" text="honore" type="straight"/>
+		
+		<symbol name="Sun" place="left_margin"/>
+		
+		<symbol name="SS" place="intext"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- alquan -->
+		<mark language="IT" method="pen" name="bracket" place="right_margin" text="La virtù nostra con piu saldi chiodi, Che col     mal del vicin fermar bisogna."/>
+		<mark language="IT" method="pen" name="bracket" place="right_margin" text="Et piu sempre ch'altrui nuoce à se stesso, Chi     dir mal si diletta à torto, &amp; spesso."/>
+		
+		<mark method="pen" name="vertical_bar" place="intext"/> <!-- trionfante. Desideraua -->
+		<mark method="pen" name="vertical_bar" place="intext"/> <!-- Cesare. Caligula -->
+		<mark method="pen" name="vertical_bar" place="intext"/> <!-- colpo. Horatio -->
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- Corpo. Filoseno -->
+		<mark method="pen" name="X_sign" place="right_margin"/> <!-- largo alle lodi -->
+		
+    </annotation>
+</transcription>

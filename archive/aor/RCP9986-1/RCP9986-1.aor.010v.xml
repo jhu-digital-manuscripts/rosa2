@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.010v.tif" pagination="[11[v]]" reader="John Dee" signature="[B.iij.[v]]"/>  
+    <annotation>
+        
+        <marginalia anchor_text="pium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>pium.</marginalia_text>
+                </position>
+            </language>
+            <translation>Pious.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Prima securigeras" type="straight"/>
+        <underline language="LA" method="pen" text="latus ense peregit" type="straight"/>
+        <underline language="LA" method="pen" text="Ista vetus pietas, aeuo moritura futuro, Rustica Saturno regna tenènte fuit. Iuppiter esse pium statuit, quodcunq[ue] iuuaret" type="straight"/>
+        <underline language="LA" method="pen" text="Et fas omne facit fratre marita soror" type="straight"/> 
+        <underline language="LA" method="pen" text="iunctura catena" type="straight"/>
+        <underline language="LA" method="pen" text="Cognato poterit nomine culpa tegi" type="straight"/>
+        <underline language="LA" method="pen" text="reseranda" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        
+        <mark method="pen" name="scribble" place="left_margin"/> <!-- FSF: maybe actually a new symbol or mark? --> <!--JG: Could be, need to return to this!-->
+        
+    </annotation>
+</transcription>

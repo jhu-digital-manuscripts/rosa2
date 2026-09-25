@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.463r.tif" reader="John Dee" signature="* iiij"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vide in collectaneis meis a[nno] 1574 alia[m] serie[m], et altius repetitam Epi[stolo]rum Hereford 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>See in my compilations anno 1574, another serie, and the profound claim of Hereford's epistles.</translation> <!--JG: Unsure, in particular about 'Epistolorum Hereford'-->
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Wigoru[m]
+                    </marginalia_text>
+                    <location name="Worchester"/>
+                </position>
+            </language>
+            <translation>Of Worchester.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="VVicciorum" type="straight"/>
+        
+    </annotation>
+</transcription>

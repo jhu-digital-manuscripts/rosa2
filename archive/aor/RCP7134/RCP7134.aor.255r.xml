@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.255r.tif" pagination="248" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>De moribus</marginalia_text>
+                </position>
+            </language>
+            <translation>On habits.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Luna &amp; Mars in Canco sub radijs" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>☾ ♂ in ♋ sub radijs</marginalia_text>
+                </position>
+            </language>
+            <translation>The Moon and Marijs in Cancer under the rays.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="morum, catus, &amp; fraudulentus" type="straight"/>
+        <underline language="LA" method="pen" text="deses" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Sun" place="right_margin"/>
+        <symbol language="LA" name="Jupiter" place="right_margin" text="Iupiter"/>
+        <symbol language="LA" name="Venus" place="right_margin" text="Veneri"/>
+        <symbol language="LA" name="Jupiter" place="right_margin" text="Iupiter"/>
+        <symbol language="LA" name="Mercury" place="right_margin" text="Mercurio"/>
+        <symbol language="LA" name="Jupiter" place="right_margin" text="Iupiter"/>
+        <symbol language="LA" name="Moon" place="right_margin" text="Moon"/>
+        <symbol language="LA" name="Mars" place="right_margin" text="Mars"/>
+        <symbol language="LA" name="Mars" place="right_margin" text="Mars"/>
+        <symbol language="LA" name="Sun" place="right_margin" text="Soli"/>
+        <symbol language="LA" name="Mars" place="right_margin" text="Mars"/>
+        <symbol language="LA" name="Moon" place="right_margin" text="Lunae"/>
+        <symbol language="LA" name="Mars" place="right_margin" text="Mars"/>
+        <symbol language="LA" name="Venus" place="right_margin" text="Veneri"/>
+        
+    </annotation>
+</transcription>

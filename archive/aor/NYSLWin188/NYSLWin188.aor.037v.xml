@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.037v.tif" pagination="[37[v]]" reader="John Dee" signature="[K[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="das Saltz; der Merc." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Nota. Et ad alias considerationes applic[e]ri de sale et M[ercuri]o.</marginalia_text>
+                    <symbol_in_text name="Mercury"/>
+                </position>
+            </language>
+            <translation>Note. And to be applied to other considerations regarding salt and mercury.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nota.</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="das Saltz" type="straight"/>
+        <underline language="DE" method="pen" text="der Merc." type="straight"/>
+        <underline language="DE" method="pen" text="der impetus" type="double"/>
+        <underline language="DE" method="pen" text="worde[n] von de[m]" type="straight"/>
+        <underline language="DE" method="pen" text="Sterne[n]wind one regen" type="straight"/>
+        <underline language="DE" method="pen" text="die Winde" type="double"/>
+        <underline language="DE" method="pen" text="geligen" type="double"/>
+        <underline language="DE" method="pen" text="es ein" type="straight"/>
+        <underline language="DE" method="pen" text="das Merc. vn[d] Sal." type="straight"/>
+        <underline language="DE" method="pen" text="dem Sul. vniert habe[n]" type="straight"/>
+        <underline language="DE" method="pen" text="in die Gewülcke" type="straight"/>
+        <underline language="DE" method="pen" text="Regen wolcken" type="straight"/>
+        <underline language="DE" method="pen" text="eige[n] Winde[n]" type="straight"/>
+        <underline language="DE" method="pen" text="werden selten" type="straight"/>
+        <underline language="DE" method="pen" text="resoluiert da sie gefallen" type="straight"/>
+        <underline language="DE" method="pen" text="resoluierte guttas" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.008v.tif" reader="John Dee" signature="[B iiij[v]]"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="modo'q[ue] coelesti" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Terrena in coelo q[uo]modo</marginalia_text>    
+                </position>
+            </language>
+            <translation>How terrestrial things are in the sky.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="anima mundi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A[n]i[m]a Mundi</marginalia_text>
+                </position>
+            </language>
+            <translation>The soul of the world.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Animi Motus</marginalia_text>
+                </position>
+            </language>
+            <translation>Movement of the soul.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="non proprie" type="straight"/>
+        <underline language="LA" method="pen" text="secundum causam, modo'q[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; caetera sensu" type="straight"/>
+        <underline language="LA" method="pen" text="Margaritam, Cristallum, Carbunculum" type="straight"/>
+        <underline language="LA" method="pen" text="Hiacinthum, Berillum" type="straight"/>
+        <underline language="LA" method="pen" text="Lilium" type="straight"/>
+        <underline language="LA" method="pen" text="Quercum" type="straight"/>
+        <underline language="LA" method="pen" text="Magnes lapis" type="straight"/>
+        <underline language="LA" method="pen" text="interdum agunt, rebus ita apte praeparatis, &amp; anima mundi ita inferiora foecundante: Nam anima mundi" type="straight"/>
+        <underline language="LA" method="pen" text="naturalia, q[uam] artificialia foecundat" type="straight"/>
+        <underline language="LA" method="pen" text="proprietates occultas, &amp; miris plenas" type="straight"/>
+        <underline language="LA" method="pen" text="sensibiles" type="straight"/>
+        <underline language="LA" method="pen" text="aliae rationales" type="straight"/>
+        <underline language="LA" method="pen" text="aliae menti congruae" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/>      <!-- modoq[ue] coelesti -->
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+    </annotation>
+    
+</transcription>

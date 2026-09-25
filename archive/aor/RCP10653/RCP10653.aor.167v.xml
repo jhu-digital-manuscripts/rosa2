@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.167v.tif" pagination="326" reader="John Dee" signature="[Ee[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Wiltun" hand="Italian"> 
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Wiltshire
+                    </marginalia_text>
+                    <location name="Wiltshire"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Asserum" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Asserus Menevie[n]sis
+                    </marginalia_text>
+                    <person name="Asser of St David's"/>
+                </position>
+            </language>
+            <translation>
+                Asser of St David's.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="VViltun" type="straight"/>
+        <underline language="LA" method="pen" text="fluminis" type="straight"/>
+        <underline language="LA" method="pen" text="Guilonis" type="triple"/>
+        <underline language="LA" method="pen" text="Guiltoscira" type="straight"/>
+        <underline language="LA" method="pen" text="Herefridus" type="straight"/>
+        <underline language="LA" method="pen" text="ex vltimis etia[m] VVallanoru[m] finibus" type="straight"/> 
+        <underline language="LA" method="pen" text="de monasterio sancti Dauid" type="straight"/>
+        
+    </annotation>
+</transcription>

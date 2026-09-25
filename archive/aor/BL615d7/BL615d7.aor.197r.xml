@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.197r.tif" pagination="197" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Carauella Bermuda" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Carauilla Bermuda</marginalia_text>
+                    <!-- 'Name of ship' therefore not entered into the person spreadsheet  -->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Azua" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Azua port</marginalia_text>
+                    <location name="Azua"/>
+                </position>
+            </language>
+            <translation>The port of Azua.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="che per arte magica hauesse fatto nascer quella burasca per vendicarsi del Bouadiglia" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Magik imputed to Christopher Colon</marginalia_text>
+                    <person name="Columbus"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="Capitan Terreros" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; perderlo, per non perder se" type="straight"/>
+        <underline language="IT" method="pen" text="Carauella Bermuda" type="straight"/>
+        <underline language="IT" method="pen" text="fin sopra le coperte" type="straight"/>
+        <underline language="IT" method="pen" text="nelle cose di mare non si trouaua allhora huomo piu prattico" type="straight"/>
+        <underline language="IT" method="pen" text="Azua" type="straight"/>
+        <underline language="IT" method="pen" text="prattico marinaio" type="double"/>
+        <underline language="IT" method="pen" text="sauio Astrologo" type="double"/>
+        <underline language="IT" method="pen" text="conosceua il luogo" type="double"/>
+        <underline language="IT" method="pen" text="che per arte magica hauesse" type="double"/>
+        <underline language="IT" method="pen" text="fatto nascer quella burasca per vendicarsi del Bouadiglia" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/> 
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        
+    </annotation>
+</transcription>

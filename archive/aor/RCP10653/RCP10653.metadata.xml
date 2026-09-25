@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+  <license>
+    <url>http://creativecommons.org/licenses/by/4.0/</url>
+    <logo>https://i.creativecommons.org/l/by/4.0/88x31.png</logo>
+  </license>
+  <totalPages>938</totalPages>
+  <dates>
+    <startDate>1570</startDate>
+    <endDate>1570</endDate>
+  </dates>
+  <texts>
+    <text id="1">
+      <language>la</language>
+      <title>Flores historiarum</title>
+      <textId>historiarum</textId>
+      <pages end="469v" start="1r">938</pages>
+    </text>
+  </texts>
+  <bibliographies>
+    <bibliography lang="en">
+      <title>Flores historiarum</title>
+      <commonName>Matthew Paris, Flores Historiarum (London, 1570)</commonName>
+      <dateLabel>1570</dateLabel>
+      <origin>London, England</origin>
+      <currentLocation>London, England</currentLocation>
+      <repository>Royal College of Physicians Library</repository>
+      <shelfmark>10653 D1/19-e-7</shelfmark>
+      <author>
+        <name>Paris, Matthew</name>
+        <id>http://www.isni.org/isni/0000000121271959</id>
+      </author>
+      <reader>
+        <name>John Dee</name>
+        <id>http://www.isni.org/isni/0000000122785193</id>
+      </reader>
+      <website>https://archaeologyofreading.org/bibliography/Dee-corpus/Paris</website>
+      <note>Record: http://rcp.soutron.net/Portal/Default/RecordView/Index/34837</note>
+    </bibliography>
+  </bibliographies>
+</book>

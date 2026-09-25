@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="UclCastiglione1541.207r.tif" pagination="CXCV[r]" reader="Harvey" signature="[BBviiir]"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Il fine.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The end.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Gabriel Aruejo.
+                    </marginalia_text>
+                    <person name="Gabriel Harvey"/>
+                </position>
+            </language>
+            <translation>
+                Gabriel Harvey.
+            </translation>
+        </marginalia>
+    </annotation>
+</transcription>

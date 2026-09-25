@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.094v.tif" pagination="188" reader="John Dee"/> 
+    <annotation>
+      
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Argumentu[m] elega[n]s</marginalia_text>
+                </position>
+            </language>
+            <translation>An elegant argument</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="accusator" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Accusator.</marginalia_text>
+                </position>
+            </language>
+            <translation>Accuser.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="confeßio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Confessio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Confession.</translation>
+        </marginalia>
+           
+        <underline language="LA" method="pen" text="peroratio ince[n]dit, &amp; plenos irae reliquit" type="straight"/>
+        <underline language="LA" method="pen" text="Verbis eleurare quaedam licebit, luxuria hilaritatis, auraritia parsimoniae, neglige[n]tia simplicitatis              nomine lenietur" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation> 
+</transcription>

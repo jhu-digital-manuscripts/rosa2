@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.039r.tif" reader="John Dee" signature="Giij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="methaphisice" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Metaphysice
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Metaphysically.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="arismetrici dicu[n]t p[ri]ncipia minima su[n]t qua[n]titate [et] maxi[m]a p[er]ta[n]te" type="straight"/>
+        <underline language="LA" method="pen" text="methaphisice declarabim[us]" type="straight"/>
+        <underline language="LA" method="pen" text="[et] de hijs paru[m] ad p[ro]positu[m]" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- p[ri]ncipia incidit -->
+        
+        <errata amendedtext="exercitata[m]" copytext="exercitate[m]" language="LA"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.033v.tif" pagination="[33[v]]" reader="John Dee" signature="[J[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="auch gehet durch die Poras der Erde[n] durch die Mannern" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Venti Terra[e] poros et Muros penetrat</marginalia_text>
+                </position>
+            </language>
+            <translation>The wind penetrates the limestone and the walls of the earth.</translation> <!--JG: Unsure, venti = plural. Also, text is about water, not about wind. Could be that it should be 'penetra[n]t' though-->
+            <!-- FSF: the texts tells of the impact of wind on water, so I think wind is what Dee had in mind; since neither the text nor the script suggest a plural, I would assume that this is a mistake by Dee? -->
+        </marginalia>
+        
+        <marginalia anchor_text="das da vo[n] Erdbidmen werden" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Terra[e]motus Vnde.</marginalia_text>
+                </position>
+            </language>
+            <translation>Hence earthquakes.</translation> 
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="dergleichen gangen" type="straight"/>
+        <underline language="DE" method="pen" text="sondern auff de[m] Wasser" type="double"/>
+        <underline language="DE" method="pen" text="die Poras der Erde[n]" type="straight"/>
+        <underline language="DE" method="pen" text="Manuern" type="straight"/>
+        <underline language="DE" method="pen" text="Berg" type="straight"/>
+        <underline language="DE" method="pen" text="felsen" type="straight"/>
+        <underline language="DE" method="pen" text="vnd kompt nicht durch das Wasser herauß so kompt es in die Erden" type="straight"/>
+        <underline language="DE" method="pen" text="gehet durch die Erden so lange" type="straight"/>
+        <underline language="DE" method="pen" text="biß es sein Exitum findt oder im selbigen consumiert wirdt" type="straight"/>
+        <underline language="DE" method="pen" text="das da vo[n] Erbdimen" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

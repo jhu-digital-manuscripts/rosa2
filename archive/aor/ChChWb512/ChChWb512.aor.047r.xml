@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.047r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="filia tua" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Helena
+                    </marginalia_text>
+                    <person name="Helena"/>
+                </position>
+            </language>
+            <translation>Helena.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="filia tua" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Helenam hic qua[n]da[m] no[m]i[n]at textus bryta[n]nicus.
+                    </marginalia_text>
+                    <person name="Helena"/>
+                </position>
+            </language>
+            <translation>The British text names Helena here.</translation>
+            <!-- NBW: When Dee uses "British" in contexts like these, I think he's most likely referring to their language (i.e. Welsh) -->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="regaliq[ue] p[ro]sapia britonum creatu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Coel nostri regis cuius Helena[m] filia[m] nequim[us]" type="straight"/>
+        
+        <mark method="pen" name="circumflex" place="intext"/> <!--his-->
+        
+    </annotation>
+</transcription>

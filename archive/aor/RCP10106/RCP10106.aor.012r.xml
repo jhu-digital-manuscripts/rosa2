@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.012r.tif" pagination="23" reader="John Dee" signature="b 4"/>
+    <annotation>
+        
+        <marginalia anchor_text="Qui d, literae cum t, quaedam cognatio?" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>.D.&amp;.T.</marginalia_text>
+                </position>
+            </language>
+            <translation>D and T.</translation> <!-- M.B. I've opted for just 'translating' what on the page but perhaps a more contextal translation would be apt? --> 
+            <!-- FSF: given that the text discusses the characters, this translations seems adequate --> 
+        </marginalia>
+        
+        <marginalia anchor_text="Quid o, atq[ue] u, permutatae inuicem?" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>.O.&amp;.U.</marginalia_text>
+                </position>
+            </language>
+            <translation>O and U.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quid? non e, quoq[ue] i" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>E.&amp;.I.</marginalia_text>
+                </position>
+            </language>
+            <translation>E and I.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tres solu[m] or[ati]o[n]is era[n]t partes antiquis.</marginalia_text>
+                </position>
+            </language>
+            <translation>Only three parts of the speech were ancient.</translation>
+        </marginalia>
+        
+    </annotation>
+</transcription>

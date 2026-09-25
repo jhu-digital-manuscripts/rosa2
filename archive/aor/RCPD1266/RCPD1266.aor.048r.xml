@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.048r.tif" pagination="81" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Eden, siue Edenen, regione[m] esse in Syria" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Eden, regionem esse in Syria.</marginalia_text>
+                    <location name="Eden"/>
+                    <location name="Syria"/>
+                </position>
+            </language>
+            <translation>That Eden was a region in Syria.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Edenenses" type="double"/>
+        <underline language="LA" method="pen" text="domo voluptatis" type="double"/>
+        <underline language="LA" method="pen" text="Mibbeth Eden" type="straight"/>
+        <underline language="LA" method="pen" text="Edenem, esse regionem Syriacam" type="straight"/>
+        <underline language="LA" method="pen" text="Eden, siue Edenen, regione[m] esse" type="straight"/>
+        <underline language="LA" method="pen" text="sacramentis &amp; tesseris visibilibus" type="straight"/>
+        <underline language="LA" method="pen" text="obscurius est" type="straight"/>
+        <underline language="LA" method="pen" text="si ad" type="straight"/>
+        <underline language="LA" method="pen" text="facillimum fiet" type="straight"/>
+        <underline language="LA" method="pen" text="doctos viros permultos turbauit" type="straight"/>
+        <underline language="LA" method="pen" text="saepssimè permutentur numeri" type="straight"/>
+        <underline language="LA" method="pen" text="Et fluuius erat egrediens, id est, Et fluuij egrediebantur ex Edene" type="straight"/>
+        <underline language="LA" method="pen" text="Et" type="straight"/>
+        <underline language="LA" method="pen" text="fluuij qui ex superioribus" type="double"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

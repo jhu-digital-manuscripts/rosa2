@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.086r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Dubricius" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Dubricius
+                    </marginalia_text>
+                    <person name="Dubricius"/>
+                </position>
+            </language>
+            <translation>Dubricius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Dauid" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Dauid.
+                    </marginalia_text>
+                    <person name="David"/>
+                </position>
+            </language>
+            <translation>David.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Samsonis Dolensis acchipraesulis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Samson Dolensis Archiep[iscopu]s.
+                    </marginalia_text>
+                    <person name="St. Samson"/>
+                    <location name="Dole"/>
+                </position>
+            </language>
+            <translation>Samson, archbishop of Dole.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="omnes oceani insulas" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        O[mn]es Insula[e] Oceani.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>All the islands of the ocean.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sacrat[ur] Dauid regis" type="straight"/>
+        <underline language="LA" method="pen" text="Samsonis" type="straight"/>
+        <underline language="LA" method="pen" text="Chelian[us]" type="double"/>
+        <underline language="LA" method="pen" text="Hoelo rege" type="straight"/>
+        <underline language="LA" method="pen" text="vero Silcestriae" type="straight"/>
+        <underline language="LA" method="pen" text="DiWanio" type="straight"/>
+        <underline language="LA" method="pen" text="Eledemo" type="straight"/>
+        <underline language="LA" method="pen" text="omnes oceani insulas: quarum reges du[m] Romana potestas in illis partibus" type="straight"/>
+        <underline language="LA" method="pen" text="perualuit, vectigal maioribus nostris reddideru[n]t" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!--Aldud Eledemo-->
+        
+    </annotation>
+</transcription>

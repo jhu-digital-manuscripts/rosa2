@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.029r.tif" pagination="57" reader="John Dee" signature="d 5"/>
+    <annotation>
+        
+        <marginalia anchor_text="Se habet maiore[m] quandam aliam cum arte oratoria cognationem. Iam primùm ordo est geometriae necessarius, non' ne &amp; eloque[n]tiae?" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Geometria[e] cu[m] Rhetorica cognatio [est]</marginalia_text>
+                </position>
+            </language>
+            <translation>There is a relationship between geometry and rhetoric.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="certe enthymemate, qui rhetoricus est syllogismus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Rhetoricus syllogismus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Rhetorical syllogism.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="reprehensiq[ue] à gemometris sunt historici" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Historici rep[re]he[n]si</marginalia_text>
+                </position>
+            </language>
+            <translation>Historians reprehened.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="certe enthymemate, qui rhetoricus est syllogismus" type="straight"/>
+        <underline language="LA" method="pen" text="Nam ut quaeq[ue] forma perfectißima, ita capacißima est" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.266v.tif" pagination="516" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text> 
+                        Potentia[e] Romanorum prior Scipio viam aperuerat: luxuria[e] posterior aperuit. Paterculus initio libri 2. historia[e] Romana[e]. 
+                        Mnemosynon potentia[e], et luxuria[e] Romana[e] ex Paterculo.
+                    </marginalia_text>
+                <person name="Marcus Velleius Paterculus"/>
+                <book title="Roman History"/>
+                </position>
+            </language>
+            <translation>
+                “The first of the Scipios opened the way for the world power of the Romans; the second opened the way for luxury.” Velleius Paterculus, at the 
+                beginning of bk. 2 of his Historia Romana. A reminder of Roman power and extravagance from Paterculus.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        Thomas Smithus filius solebat dicere, malle se vel ipsa Homerica Iliade carere, quàm hac decade Liuiana. Vsq[ue] adèo 
+                        uarijs vntrinq[ue] mirabilibusq[ue] tam virtutis, quàm fortuna[e] actibus capiebatur generosus animus: neutri parti addictus, 
+                        sed applaudens pra[e]clariùs merenti.
+                    </marginalia_text>
+                <person name="Thomas Smith Junior"/>
+                <person name="Homer"/>
+                <person name="Livy"/>
+                <book title="Iliad"/>
+                </position>
+            </language>
+            <translation>
+                Thomas Smith junior used to say that he preferred to miss the very Iliad of Homer to missing this decade of Livy. So much was this noble spirit
+                captivated by the various remarkable actions of both valor and fortune on both sides. He was not devoted to either party, but applauded the one
+                that deserved it more brilliantly.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="pugnatu[m] cum Annibal esse suprema Carthaginiensibus pugna" type="straight"/>
+        <underline language="LA" method="pen" text="Vermina[m] etia[m] Syphacis filium" type="straight"/>
+        <underline language="LA" method="pen" text="parua bene gestae rei accessio erat" type="straight"/>
+        <underline language="LA" method="pen" text="belli finem alterius" type="straight"/>
+        <underline language="LA" method="pen" text="principiu[m] alterius prospicieba[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="seu bellu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="iam finiretur" type="straight"/>
+        <underline language="LA" method="pen" text="tanti belli se co[n]sule gloria[m] petens" type="straight"/>
+        <underline language="LA" method="pen" text="collega, moderato" type="straight"/>
+        <underline language="LA" method="pen" text="eius certamen cum Scipione" type="straight"/>
+        <underline language="LA" method="pen" text="etiam impar futuru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="cuius uellent imperiu[m] in Africa esse" type="straight"/>
+        <underline language="LA" method="pen" text="P. Scipioni id imperiu[m] decreuisse" type="straight"/>
+        <underline language="LA" method="pen" text="sortirenturue" type="straight"/>
+        <underline language="LA" method="pen" text="uter Italia[n]" type="straight"/>
+        <underline language="LA" method="pen" text="uter classem nauiu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="consul mari" type="straight"/>
+        <underline language="LA" method="pen" text="Scipio eode[m], quo adhuc, iure imperij terra" type="straight"/>
+        <underline language="LA" method="pen" text="populu[m] rogarent" type="straight"/>
+        <underline language="LA" method="pen" text="P. Scipioni cu[m] exercitibus, quos haberet, in prouincia Africa" type="straight"/>
+        <underline language="LA" method="pen" text="prorogatu[m] imperiu[m]" type="straight"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!-- Sypha -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- prospicie -->
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- modera -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- deporta -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- proro -->
+        
+        <mark method="pen" name="comma" place="intext"/> <!--impositu[m] inge[n]ti-->
+        <mark method="pen" name="dot" place="intext"/> <!--exposuisset, adiecit-->
+        <mark method="pen" name="comma" place="intext"/> <!-- Scipione pr[a]eterq[ue]-->
+        <mark method="pen" name="dot" place="intext"/> <!-- mari, Scipio-->
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.150v.tif" pagination="40" reader="John Dee" signature="[c.iiii.[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="electius verbum; redintegratio verbi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>verbu[m] electius redintegratio verbi</marginalia_text>
+                </position>
+            </language>
+            <translation>A choicer word, repetition of a word.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Occupatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Occupatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Paralipsis.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Haec vtilis est exornatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ad quod vtilis occupatio.</marginalia_text>  
+                </position>
+            </language>
+            <translation>Paralipsis for what use.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Disiunctio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Disiunctio</marginalia_text>
+                </position>
+            </language>
+            <translation>Disjunction.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Co[n]iunctio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Coniunctio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Conjunction.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Adiu[n]ctio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Adiunctio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Adjunction.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Conduplicatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Conduplicatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Reduplication.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Interpretatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Interpretatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Interpretation.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Co[m]mutatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Co[m]mutatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Reciprocal change.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Permissio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Permissio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Surrender.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Remp. radicitus euertisti, ciuitate[m] funditus deiecisti" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>radicitus funditus ]</marginalia_text>
+                </position>
+            </language>
+            <translation>By the roots, from the very bottom. ]</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ad electius" type="straight"/>
+        <underline language="LA" method="pen" text="Ad festiuitate[m] disiu[n]ctio" type="straight"/>
+        <underline language="LA" method="pen" text="apposita. quare rarius vtemur ea, ne satietatem pariat. Ad breuitatem coniunctio" type="straight"/>
+        <underline language="LA" method="pen" text="redintegratio verbi" type="straight"/>
+        <underline language="LA" method="pen" text="redintegrat" type="straight"/>
+        <underline language="LA" method="pen" text="radicitus" type="straight"/>
+        <underline language="LA" method="pen" text="funditus" type="straight"/>
+        <underline language="LA" method="pen" text="Esse oportet vt viuas, non viuere vt edas" type="straight"/>
+        <underline language="LA" method="pen" text="Poema, loquens pictura est: pictura, tacitum poema" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="head"/>
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+        <drawing anchor_text="redintegratio verbi" book_orientation="0" method="pen" place="head" type="florilegium"/>
+        <drawing anchor_text="redintegratio verbi" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="funditas" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="radicitus funditus" book_orientation="0" method="pen" place="tail" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.233v.tif" pagination="[226v]" reader="John Dee" signature="[LL ij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="nauis mare ingreditur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Navis ingressus in mare.</marginalia_text>
+                </position>
+            </language>
+            <translation>The ship went into the see.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Syderu[m] vis vbi maxima.</marginalia_text>
+                </position>
+            </language>
+            <translation>Where the power of the stars is greatest.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tempestates" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Te[m]pestates.</marginalia_text>
+                </position>
+            </language>
+            <translation>Storms.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="reuolutionem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Reuolutio</marginalia_text>
+                </position>
+            </language>
+            <translation>Revolution.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tempestates" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In co[n]iu[n]ctione planetarum quis fortior fuerit.</marginalia_text>
+                </position>
+            </language>
+            <translation>Who was stronger in the conjunction of the planets.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="biothanatos, in occasus" type="straight"/>
+        <underline language="LA" method="pen" text="naufragium patietur" type="straight"/>
+        <underline language="LA" method="pen" text="Luna ad eas peruenit" type="straight"/>
+        <underline language="LA" method="pen" text="Si cum profectio ascendentis" type="straight"/>
+        <underline language="LA" method="pen" text="attingit, effectus sequeretur, eode[m] tempore" type="straight"/>
+        <underline language="LA" method="pen" text="fuerit in eccentrico" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; paruo" type="straight"/>
+        <underline language="LA" method="pen" text="qui in loco" type="straight"/>
+        <underline language="LA" method="pen" text="stellas suae naturae" type="straight"/>
+        <underline language="LA" method="pen" text="augetur motus" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

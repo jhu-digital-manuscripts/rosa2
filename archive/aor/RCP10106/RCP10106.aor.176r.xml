@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.176r.tif" pagination="351" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Via tamen opus est incipientibus, sed ea plana" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>via incipientib[us] plana</marginalia_text>
+                </position>
+            </language>
+            <translation>Beginners need a level path.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="numerosae atq[ue] perplexae" type="straight"/>
+        <underline language="LA" method="pen" text="peritus ille praeceptor ex omnibus optima, &amp; tradat ea demu[m]" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+<page filename="PrincetonPA8550.127v.tif" pagination="254" reader="Harvey" signature="Qviiv"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="Regulariter" type="straight"/>
+        <underline language="LA" method="pen" text="ea" type="straight"/>
+        <underline language="LA" method="pen" text="lege constituta sunt in" type="straight"/>
+        <underline language="LA" method="pen" text="principaliter lex loquitur" type="straight"/>
+        <underline language="LA" method="pen" text="sunt a[e]quissima" type="straight"/>
+        <underline language="LA" method="pen" text="Lex de sabbato, pra[e]cipiebat" type="straight"/>
+        <underline language="LA" method="pen" text="lex de Sabbato non complectitur" type="straight"/>
+        <underline language="LA" method="pen" text="necessitatis" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- Regulariter ea -->
+        <mark method="pen" name="dot" place="intext"/> <!-- interiret, recte -->
+        
+        <errata amendedtext="," copytext="." language="LA"/>
+        
+    </annotation>
+</transcription>

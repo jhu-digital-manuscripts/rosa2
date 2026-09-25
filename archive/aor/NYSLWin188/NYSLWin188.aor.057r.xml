@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.057r.tif" pagination="57" reader="John Dee" signature="P"/> 
+    <annotation>
+        
+        <marginalia anchor_text="usnea[e] co[e]lestes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Vsnea[e] co[e]lestes
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Moss from the sky.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Flores ; Co[e]lestes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        flores co[e]lestes
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Flowers from the sky.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sul[phur]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sulphur</marginalia_text>
+                </position>
+            </language>
+            <translation>Sulphur.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="Milch" type="straight"/>
+        <underline language="DE" method="pen" text="Bituminosische vsneam" type="straight"/>
+        <underline language="DE" method="pen" text="einem stein" type="straight"/>
+        <underline language="DE" method="pen" text="solche vsnea[e]" type="straight"/>
+        <underline language="DE" method="pen" text="in allen farben Rott" type="straight"/>
+        <underline language="DE" method="pen" text="von blut" type="straight"/>
+        <underline language="DE" method="pen" text="grün" type="straight"/>
+        <underline language="DE" method="pen" text="blaw" type="straight"/>
+        <underline language="DE" method="pen" text="schwartz" type="straight"/>
+        <underline language="DE" method="pen" text="auff die" type="straight"/>
+        <underline language="DE" method="pen" text="Erden kommen" type="double"/>
+        <underline language="DE" method="pen" text="mögen wies an jm selbst seindt" type="straight"/>
+        <underline language="DE" method="pen" text="solchen Vsneis" type="straight"/>
+        <underline language="DE" method="pen" text="in der Alchimey" type="straight"/>
+        <underline language="DE" method="pen" text="kommen mögen" type="straight"/>
+        <underline language="DE" method="pen" text="Vnd sie Flores" type="straight"/>
+        <underline language="DE" method="pen" text="fewr" type="straight"/>
+        <underline language="DE" method="pen" text="Sulphur, Sal vn[d]" type="straight"/>
+        <underline language="DE" method="pen" text="vnd muß sich vom" type="straight"/>
+        <underline language="DE" method="pen" text="brennen in" type="double"/>
+        <underline language="DE" method="pen" text="ein Wasser resoluieren" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

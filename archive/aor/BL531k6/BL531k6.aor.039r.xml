@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL531k6.039r.tif" pagination="[39r]" reader="John Dee" signature="K3"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Ad Meridianu[m] Regiomontis Prussia[e] sup[ra] in Appendice
+                        Meridianus iste distat a Tubinge[n]se grad. 17 cuius tempus est 0 hor[a] 8 m[inutae] quanto tempore Montis Regij tempus precedit Tubinge[n]sem supputatione[m]
+                    </marginalia_text>
+                    <location name="Königsberg"/>
+                    <location name="Prussia"/>          
+                </position>
+            </language>
+            <translation>
+                To the meridian of Königsberg in Prussia as above in the appendix.
+                This meridian is 17 degrees from Tübingen away and its time is 0 hours and 8 minutes, by which amount of time the time of Königsberg precedes the Tübingen computation
+            </translation> 
+        </marginalia>
+        
+    </annotation>
+</transcription>

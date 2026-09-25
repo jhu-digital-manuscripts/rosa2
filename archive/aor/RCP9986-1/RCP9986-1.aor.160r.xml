@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.160r.tif" pagination="161" reader="John Dee" signature="X.j."/>   
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Qua r[ati]o[n]e literas ama[n]ti multas.</marginalia_text>
+                </position>
+            </language>
+            <translation>By which method many letters [sent] to a lover.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Quae venit ex tuto, minus est accepta voluptas" type="straight"/>
+        <underline language="LA" method="pen" text="possit solea chartas caelare ligatas" type="straight"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="Cum melius foribus possis, admitte fenestra, In'q[ue] tuo vultu verba timentis habe. Callida prosiliat, dicátq[ue] ancilla, perimus"/>
+        
+    </annotation>
+</transcription>

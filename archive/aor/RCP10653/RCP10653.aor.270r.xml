@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.270r.tif" pagination="92" reader="John Dee" signature="H iiij"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="filius VValteri" type="straight"/>
+        <underline language="LA" method="pen" text="Eustachius de Vesci" type="straight"/>
+        <underline language="LA" method="pen" text="exulabant" type="straight"/>
+        <underline language="LA" method="pen" text="aliorum baronum" type="straight"/>
+        <underline language="LA" method="pen" text="possessiones sunt infiscatae" type="straight"/>  
+        <underline language="LA" method="pen" text="&amp; dirutae" type="straight"/>
+        <underline language="LA" method="pen" text="contulisse ei omnia, qu[a]ecumque violenter, &amp; nequiter extorierat" type="straight"/>
+        <underline language="LA" method="pen" text="Iohannes Extorris" type="straight"/>
+        <underline language="LA" method="pen" text="est Romani pontificis tributarius, declaratum est verbum propheticum" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="face"/>
+        
+        <graph book_orientation="0" method="pen" place="left_margin" type="genealogical_tree">
+            <node anchor_text="VValteri" id="n1" person="Walter de Vesci">Walterus de Vesci</node>       
+            <node anchor_text="Robertus" id="n2" person="Robert de Vesci">Robertus de Vesci</node>
+            <node anchor_text="Eustachius de Vesci" id="n3" person="Eustace de Vesci">Eustachius de Vesci</node>
+            <link from="n1" relationship="has_child" to="n2"/>
+        </graph>
+        
+    </annotation>
+</transcription>

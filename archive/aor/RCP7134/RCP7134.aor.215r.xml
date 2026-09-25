@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.215r.tif" pagination="208" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>id est, quando [numeriori] sunt rationales / alioqui surdi dicentur</marginalia_text>  
+                </position>
+            </language>
+            <translation>That is, when numbers are rational, otherwise they seem [to be] muffed. </translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Principia artis; Principia uero operationum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Principia artis et operationis.</marginalia_text> 
+                </position>
+            </language>
+            <translation>The principles of art and activity.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ex parte sciri potest" type="straight"/>
+        <underline language="LA" method="pen" text="signorum" type="straight"/>
+        <underline language="LA" method="pen" text="syderum" type="straight"/>
+        <underline language="LA" method="pen" text="Principia artis sunt" type="straight"/>
+        <underline language="LA" method="pen" text="ratio" type="straight"/>
+        <underline language="LA" method="pen" text="sensus" type="straight"/>
+        <underline language="LA" method="pen" text="experimentu[m]" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

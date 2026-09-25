@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.296r.tif" pagination="575" reader="Harvey"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="ibi moratus dies Cato" type="straight"/>
+        <underline language="LA" method="pen" text="ubi" type="straight"/>
+        <underline language="LA" method="pen" text="quantae hostium copiae" type="straight"/>
+        <underline language="LA" method="pen" text="mora quidem segnis esset" type="straight"/>
+        <underline language="LA" method="pen" text="exercendis militibus consumpsit" type="straight"/>
+        
+        <symbol name="SS" place="intext"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!-- essent, ut-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="mora quidem segnis esset"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="exercendis militibus consumpsit"/>
+        
+    </annotation>
+    
+</transcription>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.021r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="regi Franci[a]e" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Rex francia[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>King of the Franks.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="filius eius" type="straight"/>
+        <underline language="LA" method="pen" text="Hurdibras" type="straight"/>
+        <underline language="LA" method="pen" text="apta. Quibus" type="straight"/>
+        <underline language="LA" method="pen" text="praefecit numen Mineruae" type="double"/>
+        <underline language="LA" method="pen" text="per regnum" type="straight"/>
+        <underline language="LA" method="pen" text="dilectam regi Franci[a]e" type="straight"/>
+        
+    </annotation>
+</transcription>

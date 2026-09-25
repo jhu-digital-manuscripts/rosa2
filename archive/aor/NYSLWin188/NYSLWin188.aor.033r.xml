@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.033r.tif" pagination="33" reader="John Dee" signature="J"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Emunctorijs" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Emunctoria stellarum</marginalia_text>
+                </position>
+            </language>
+            <translation>Snuffers of the stars.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tempestates im Meer vnd im Wasser" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tempestates in Mari</marginalia_text>
+                </position>
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>et Aquis</marginalia_text>
+                </position>
+            </language>
+            <translation>Storms in a sea and in water.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Per oledus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Peroledum</marginalia_text>
+                </position>
+            </language>
+            <translation>'Air floor.'</translation> <!--JG: Unsure abt how to translate this--> <!--KS: It's something like 'air floor', or 'bottom of the sky'... ('Lufftboden' in German)-->
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="von jren Emunctorijs" type="straight"/>
+        <underline language="DE" method="pen" text="im Windzirckel" type="straight"/>
+        <underline language="DE" method="pen" text="Astellieren" type="straight"/>
+        <underline language="DE" method="pen" text="erste gang vber das Meer" type="straight"/>
+        <underline language="DE" method="pen" text="Peroledum" type="straight"/>
+        <underline language="DE" method="pen" text="Peroledum" type="straight"/>
+        <underline language="DE" method="pen" text="mittle[n] auch" type="straight"/>
+        <underline language="DE" method="pen" text="Peroledus" type="double"/>
+        <underline language="DE" method="pen" text="durch das Wasser dringt der ander theil auff dem Wasser" type="straight"/>
+        <underline language="DE" method="pen" text="im Wasser" type="double"/>
+        <underline language="DE" method="pen" text="er gehet herauß auß dem Wasser in" type="straight"/>
+        <underline language="DE" method="pen" text="er tempestates" type="straight"/>
+        
+    </annotation>
+</transcription>

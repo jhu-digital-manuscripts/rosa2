@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.051r.tif" pagination="45" reader="John Dee" signature="M"/>
+    <annotation>
+        
+        <marginalia anchor_text="Similes sunt" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Planet[a]e similes in qualitatibus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Planets similar in qualities.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dissimiles" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dissimiles.</marginalia_text>
+                </position>
+            </language>
+            <translation>Dissimilar [planets].</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Sol, Iupiter, Mars" type="straight"/>
+        <underline language="LA" method="pen" text="Iupiter &amp; Saturnus" type="straight"/>
+        <underline language="LA" method="pen" text="Luna &amp; Venus" type="straight"/>
+        <underline language="LA" method="pen" text="Saturnus &amp; Mercurius" type="straight"/>
+        <underline language="LA" method="pen" text="Sol &amp; Mercurius" type="straight"/>
+        <underline language="LA" method="pen" text="Sol &amp; Venus" type="straight"/>
+        <underline language="LA" method="pen" text="frigiditatem siccitatemq[ue]" type="straight"/>
+        
+        <symbol language="LA" name="Saturn" place="right_margin" text="Saturnus"/>
+        <symbol language="LA" name="Jupiter" place="right_margin" text="Iupiter"/>
+        <symbol language="LA" name="Mars" place="right_margin" text="Mars"/>
+        <symbol language="LA" name="Sun" place="right_margin" text="Sol"/>
+        
+    </annotation>
+</transcription>

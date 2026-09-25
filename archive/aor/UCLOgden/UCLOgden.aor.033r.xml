@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.033r.tif" pagination="49" reader="John Dee" signature="e"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Per omnia decreta operepreciu[m] est videre qua[m] ingens discrime[n] ipsius apotolesmatis efficiat, planetam alique[m] esse 
+                        secundu[m] suam conditione[m], vel co[n]tra. id est planeteas diurnus die sup[ra] terra esse nocte vero [sub...] [mea[m]]: perpende
+                        bene q[uod] res summa est, vt in singulis decretis cernere possis <!-- FSF: some words still missing -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Through all these decrees, it is worthwhile to see how vast the difference of its influence causes that another planet is according to or against its order. That is that
+                the planets daily are above the earth by the day and indeed [...] [...] by night: weigh carefully and well what the highest matter is, so that you can distinguish in
+                singular decrees. <!--JG: Unsure + some words are missing-->
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ♄ orie[n]talis
+                    </marginalia_text>
+                    <symbol_in_text name="Saturn"/>
+                </position>
+            </language>
+            <translation>
+                Rising Saturn.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ♄ occide[n]talis
+                    </marginalia_text>
+                    <symbol_in_text name="Saturn"/>
+                </position>
+            </language>
+            <translation>
+                Setting Saturn.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Si uero ☾ de quadrato uel diametro uiderit, aut ipsa in eadem patre fuerit in qua ipse est constitutus" type="straight"/>
+        <underline language="LA" method="pen" text="isto fuerit, reges faciet" type="straight"/>
+        <underline language="LA" method="pen" text="si deficiens se ei ☾ coniunxerit, facit" type="straight"/>
+        <underline language="LA" method="pen" text="omne patrimonium dissipat" type="straight"/>
+        <underline language="LA" method="pen" text="si matutinus" type="straight"/>
+        <underline language="LA" method="pen" text="bonus erit" type="straight"/>
+        <underline language="LA" method="pen" text="maximam enim sic positus, senectutis largitur aetatem, &amp; pecuniarum custodes facit" type="straight"/>
+        <underline language="LA" method="pen" text="haemorrhoicos" type="straight"/>
+        <underline language="LA" method="pen" text="uespertinus" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; quos semper uxore[m] casus graui doloris acerbitate co[m]pressos concutant" type="straight"/>
+        <underline language="LA" method="pen" text="Quod si ☾ sic positam cum ♄, ♂ ex aliqua parte qualibet radiatione respexerit, biothanatos faciet" type="straight"/>
+        
+        <mark colour="red" method="pen" name="bracket" place="right_margin"/> <!-- M.B. Mark as chalk. -->
+        <mark colour="red" method="pen" name="dash" place="right_margin"/> <!-- M.B. Mark as chalk. -->
+        <mark colour="red" method="pen" name="dash" place="right_margin"/> <!-- M.B. Mark as chalk. -->       
+        
+        <errata amendedtext="[deleted]" copytext="in" language="LA"/>
+        <errata amendedtext="radiatio" copytext="raditio" language="LA"/>
+        
+    </annotation>
+</transcription>

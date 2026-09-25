@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.307r.tif" pagination="593" reader="John Dee" signature="ppp.i[r]"/>
+    <annotation>
+        
+        <marginalia anchor_text="vacationes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vacatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Freedom.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="inter bellu[m] &amp; pacem medium nihil est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ïnter bellu[m] &amp; pace[m] nihil est</marginalia_text>
+                </position>
+            </language>
+            <translation>There is nothing between war and peace.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="la[n]guescimus, debilitetur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>languescere debilitari</marginalia_text>
+                </position>
+            </language>
+            <translation>To become faint. To be weakened.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="hostilia verba, nec bellica" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>v[er]ba hostilia bellica</marginalia_text>
+                </position>
+            </language>
+            <translation>Hostile and warlike words.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="co[n]tentione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Contentio</marginalia_text>
+                </position>
+            </language>
+            <translation>Contention.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="omnes Caphones, omnes Saxae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Caphones Saxa[e]</marginalia_text>
+                    <person name="Cafo"/>
+                    <person name="Lucius Decidius Saxa"/>
+                </position>
+            </language>
+            <translation>Cafo and Lucius Decidius Saxa.</translation>  
+            <!-- (https://www.loebclassics.com/view/marcus_tullius_cicero-philippic_8/2010/pb_LCL507.43.xml?rskey=06klUu&result=1&mainRsKey=r7Wsdh), I think Saxa is this https://en.wikipedia.org/wiki/Lucius_Decidius_Saxa -->
+        </marginalia> 
+        
+        <marginalia anchor_text="Dii meliora" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>dij meliora</marginalia_text>
+                </position>
+            </language>
+            <translation>'May the gods forbid it!' [Loeb 507, 43].</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="sceleru[m] enim promissio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sceleru[m] promissio</marginalia_text>
+                </position>
+            </language>
+            <translation>The promise of sins.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="tumultu" type="straight"/>
+        <underline language="LA" method="pen" text="infirmus ex graui diuturnóque morbo, nulla[m]" type="straight"/>
+        <underline language="LA" method="pen" text="immortaliu[m] templa, nos muros, nos domicilia, sedésque Po. Ro. penates, aras, focos, sepulchra maioru[m], nos leges, iura,              liberate[m], coniuges, liberos, patria[m] defendimus" type="straight"/>
+        <underline language="LA" method="pen" text="Hasta Caesaris P. C. multis improbis &amp; spem affert &amp; audacia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="viderunt enim ex mendicis fieri repe[n]te diuites" type="straight"/>
+        <underline language="LA" method="pen" text="sceleru[m] enim promissio, &amp; iis qui expecta[n]t perniciosa est, &amp; iis qui promittu[n]t" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">13.10</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">3.2.</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        
+        <drawing anchor_text="Vacatio" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="Contentio" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="Sceleru[m] promissio" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

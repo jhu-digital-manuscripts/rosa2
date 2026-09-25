@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.005r.tif" reader="Harvey" signature="[Avi[r]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Ignauus, prouerbio dicit[u]r, Mulieris podex.</marginalia_text>
+                    <X-ref book_title="Adagia" language="LA" person="Erasmus" text="Mulieris podex"/>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>γυναικὸς πυγή</marginalia_text> 
+                    <X-ref book_title="Adagia" language="EL" person="Erasmus" text="γυναικὸς πυγή"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Testudo.</marginalia_text>
+                </position>
+            </language>
+                <translation>In the proverb, the coward is said to be "a woman's ass" (in Greek as well). A tortoise.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>(( Tyme, and opportunity.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Aphthonij Sophia, in Bello sola arma tractat, cogitatq[ue]: in pace, solas leges: quasi
+                    hîc Armorum nescia; ibi Legum. Hoc age.</marginalia_text>
+                    <person name="Aphthonius of Antioch"/>
+                </position>
+            </language>
+            <translation>The wisdom of Aphthonius, in war he hauls and considers only arms. In peace, you will read unique things: as if unware of arms
+            here. Do this. </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="prepare for warre" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>M[aste]r Morrysine pra[e]paratiu[.] for warr.</marginalia_text>
+                    <person name="Richard Morrison"/>
+                    <emphasis method="pen" text="praeparatu[.]" type="straight"/>
+                    <emphasis method="pen" text="for warr" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aphorismis, et Exemplis, Citò Magnus,
+                    et admirabilis fies: discursuu[m], et pleniorum Historiaru[m]
+                    nullus est finis: et corpus fatiga[n]t, et Ingenium, memoriamq[ue] co[n]fu[n]du[n]t.</marginalia_text>
+                </position>
+            </language>
+            <translation>With aphorisms and examples, you will easily become great and admirable: there is not an end for dispersed and plump histories. And they tire the body and 
+                blur the character and memory.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Il Cosmopolitico, risoluto, et spedito per tutto.</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Mea Regula Apodemica, et Pragmatica: Canis in degipto.</marginalia_text>
+                </position>
+            </language>
+            <translation>The cosmopolitician, resolute and quick in everything. 
+            My travel and pragmatic rules: a dog in [Egypt].</translation> <!--JG: Unsure abt translation-->
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="pull downe" type="straight"/>
+        <underline language="EN" method="pen" text="buylde" type="straight"/>
+        <underline language="EN" method="pen" text="byddeth flee" type="straight"/>
+        <underline language="EN" method="pen" text="to heale the diseased" type="straight"/>
+        <underline language="EN" method="pen" text="as to kyll them that be not sycke." type="straight"/>
+        <underline language="EN" method="pen" text="byddeth spende" type="straight"/>
+        <underline language="EN" method="pen" text="sparynge is great" type="straight"/>
+        <underline language="EN" method="pen" text="Loue is lewdenesse" type="straight"/>
+        <underline language="EN" method="pen" text="tyme" type="straight"/>
+        <underline language="EN" method="pen" text="biddeth hate" type="straight"/>
+        <underline language="EN" method="pen" text="Peace" type="straight"/>
+        <underline language="EN" method="pen" text="warre" type="straight"/>
+        <underline language="EN" method="pen" text="tryfle" type="straight"/>
+        <underline language="EN" method="pen" text="exhorted al my contrey me[n]" type="straight"/>
+        <underline language="EN" method="pen" text="peace laid aside" type="straight"/>
+        <underline language="EN" method="pen" text="prepare for warre" type="straight"/>
+        <underline language="EN" method="pen" text="if nede constrein them to it, they" type="straight"/>
+        <underline language="EN" method="pen" text="redy to entertayne false frendes" type="straight"/>
+        <underline language="EN" method="pen" text="tha[n] enmies" type="straight"/>
+        <underline language="EN" method="pen" text="accordyng to their desertes" type="straight"/>
+        <underline language="EN" method="pen" text="troubled" type="straight"/>
+        <underline language="EN" method="pen" text="fynd some clerer veyne" type="straight"/>
+        
+        <symbol language="LA" name="Mars" place="right_margin" text="prepare for warre"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="quotation_mark" place="left_margin" text="to heale the diseased, as to kyll them that be not sycke"/>
+        <mark language="EN" method="pen" name="quotation_mark" place="left_margin" text="to heale the diseased, as to kyll them that be not sycke"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="hash" place="right_margin"/>
+        <mark method="pen" name="hash" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Peace"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="warre"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--warre. Wherfore-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="redy to entertayne false frendes"/>
+        <mark method="pen" name="dot" place="intext"/> <!--talke, wherfore-->
+        
+        <errata amendedtext="entertayne" copytext="entertayne" language="EN"/>
+        <errata amendedtext="[deleted]" copytext="the destructio[n], [the] deth of al popery" language="EN"/>
+        
+    </annotation>
+</transcription>

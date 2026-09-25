@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.102v.tif" pagination="204" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Graeci" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Gra[e]ci.</marginalia_text>
+                </position>
+            </language>
+            <translation>The Greeks.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cicero pro Cluentio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ci[cero] Pro Cluentio</marginalia_text>
+                    <person name="Cicero"/>
+                    <book title="Pro Cluentio"/>
+                </position>
+            </language>
+            <translation>Cicero's Pro Cluentio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="non aliter quam facientibus iter, multum detrahunt fatigationis notata inscriptis lapidibus spatia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Itineru[m] leuatio</marginalia_text>
+                </position>
+            </language>
+            <translation>The relief from journeys.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="non tentanda quae effici omnino non poßunt" type="straight"/>
+        <underline language="LA" method="pen" text="Quaedam interim nos, &amp; inuitis litigatoribus simulandum est dicere" type="straight"/>
+        <underline language="LA" method="pen" text="Sed ut non semper necessaria, ac etiam superuacua partitio est, ita opportune adhibita plurimum orationi lucis &amp; gratiae confert" type="straight"/>
+        <underline language="LA" method="pen" text="notata inscriptis lapidibus spatia" type="straight"/>
+        <underline language="LA" method="pen" text="Nihil enim longum uideri necesse estm in quo quid ultimum sit, certum est. Nec" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.095r.tif" pagination="13" reader="Harvey" signature="[A7r]"/>	<!-- ABO 99right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Maximè sapit, qui prouidet maximè, vt à Seipso dependeat:
+					</marginalia_text>
+					<emphasis method="pen" text="à Seipso dependeat" type="straight"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						quantu[m] facere
+						potest vllo modo.
+						Summa summaru[m] Epicteti, Seneca[e], Antonini.
+						Quomodò Crates; nihilo egere philosophum.
+						Stoici; Omnia esse Sapientum. 
+					</marginalia_text>
+					<person name="Epictetus"/>
+					<person name="Seneca"/>
+					<person name="Marcus Aurelius"/>
+				</position>
+			</language>
+			<language ident="EL">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						ὅτι
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						μόνος ὁ σοφὸς πλούσιος.
+						ὅτι ἀυταρκὴς ἡ ἀρετὴ πρὸς ἐυδαιμονϊαν.
+					</marginalia_text>
+					<X-ref book_title="Paradoxa Stoicorum" language="EL" person="Cicero" text="μόνος ὁ σοφὸς πλούσιος"/>
+					<X-ref book_title="Paradoxa Stoicorum" language="EL" person="Cicero" text="ὅτι ἀυταρκὴς ἡ ἀρετὴ πρὸς ἐυδαιμονϊαν"/>
+				</position>
+			</language>
+			<translation>
+				He who takes care the most that he depend only on himself is he who knows the most.
+				And he can do as much as possible in any way.
+				The sum of sums of Epictetus, of Seneca, of Marus Aurelius.
+				Crates in the same manner -- that the philosopher needs nothing. <!-- CG: I can't figure these next two lines out. They might refer to Lipsius or someone else discussing Seneca, Stoicism, etc. Which would explain the weird grammar, i.e. philosophum and sapientum in the accusative. --> <!--JG: Yeah, the grammar is weird indeed. Can't figure this one out either, we should ask a specialist-->
+				Of the Stoic: that the wise man is all things.
+				"That only the wise man is rich."
+				"That virtue is self-sufficient for happiness."			
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Omnes Magistros superat profundus discipulus.
+						Puer est, qui nondum didicit viuere.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The profound disciple surpasses all magistrates.
+				He who has not yet learned to live is a child.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Sera nimis sophia est crastina; disce hodiè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Tomorrow's wisdom is too late; learn today.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EL">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						ὅτι σοφὸι ἐλεύθεροι, καὶ ὁι μωρὸι δοῦλοι.
+					</marginalia_text>
+					<X-ref book_title="Paradoxa Stoicorum" language="EL" person="Cicero" text="ὅτι σοφὸι ἐλεύθεροι, καὶ ὁι μωρὸι δοῦλοι"/>
+				</position>
+			</language>
+			<translation>
+				"That all wise men are free, and all fools are slaves."
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Crastinia sera nimis copia: cresce hodiè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Tomorrow's bounty is too late; grow today. 
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Eutuchus,
+						summus hodiernista. Euemarus, ephemerus.
+					</marginalia_text>
+					<person name="Eutuchus"/>
+					<person name="Euhemerus"/>
+				</position>
+			</language>
+			<translation>
+				Eutuchus, the highest modernist. 
+				Euhemerus, ephemeral. 
+			</translation>
+		</marginalia>
+		
+		
+		<underline language="IT" method="pen" text="descrisse all'improuiso gratiosame[n]te" type="straight"/>
+		<underline language="IT" method="pen" text="Teme" type="straight"/>
+		<underline language="IT" method="pen" text="spera" type="straight"/>
+		<underline language="IT" method="pen" text="rallegrasi" type="straight"/>
+		<underline language="IT" method="pen" text="contrista" type="straight"/>
+		<underline language="IT" method="pen" text="nostra natura" type="straight"/>
+		<underline language="IT" method="pen" text="il mal la fa lieta" type="straight"/>
+		<underline language="IT" method="pen" text="ben l'attrista" type="straight"/>
+		<underline language="IT" method="pen" text="il suo" type="straight"/>
+		<underline language="IT" method="pen" text="ben ha paura" type="straight"/>
+		<underline language="IT" method="pen" text="ha'l viuer mortal" type="straight"/>
+		<underline language="IT" method="pen" text="fin van'è ogni" type="straight"/>
+		<underline language="IT" method="pen" text="pensier, &amp;" type="straight"/>	
+		<underline language="IT" method="pen" text="antiuedere i pericoli" type="straight"/>
+		<underline language="IT" method="pen" text="il Re di Francia" type="straight"/>
+		<underline language="IT" method="pen" text="chiamato il Re di Francia" type="straight"/>
+		<underline language="IT" method="pen" text="doue chi gli haueua" type="straight"/>
+		<underline language="IT" method="pen" text="nol potesse vdire" type="straight"/>
+		<underline language="IT" method="pen" text="che esaudire" type="straight"/>
+		<underline language="IT" method="pen" text="dal proprio Signore" type="straight"/>
+		<underline language="IT" method="pen" text="riprendersi altrui" type="straight"/>
+		<underline language="IT" method="pen" text="anco in noi" type="straight"/>
+		<underline language="IT" method="pen" text="andando ei tornaua" type="straight"/>
+		<underline language="IT" method="pen" text="voi parlate come" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<mark language="IT" method="pen" name="plus_sign" place="left_margin" text="nostra natura"/>
+		<mark method="pen" name="plus_sign" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--inui-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--altera-->
+		
+    </annotation>
+</transcription>

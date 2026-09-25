@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.169v.tif" pagination="[162v]" reader="John Dee" signature="[ss ij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Vienn[a]e mortuus 6⁰ id[us] aprilis 1462.</marginalia_text>
+                </position>
+            </language>
+            <translation>He died on 6 ides of April [= April 8] 1462 in Vienna.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>♀ in [nona] in domo ☿ studiu[m] et voluptate[m] eius partim declarat.</marginalia_text>
+                    <symbol_in_text name="Venus"/>
+                    <symbol_in_text name="Mercury"/>
+                </position>
+            </language>
+            <translation>Venus in the ninth [house] in the house of Mercury partly indicates his zeal and pleasure.</translation>
+        </marginalia>
+        
+        <errata amendedtext=" 3.a m[inutae]. 5." copytext="3 tertia, min" language="LA"/>
+        
+        <!-- FSF: I think there is an s added, just before the post -->
+        
+    </annotation>
+</transcription>

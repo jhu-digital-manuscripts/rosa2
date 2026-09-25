@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.008v.tif" pagination="[9v]" reader="John Dee" signature="[B.j.[v]]"/>  
+    <annotation>
+        
+        <marginalia anchor_text="epistola" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Epistola</marginalia_text>
+                </position>
+            </language>
+            <translation>A letter.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="amor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Amor</marginalia_text>
+                </position>
+            </language>
+            <translation>Love.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ars" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ars</marginalia_text>
+                </position>
+            </language>
+            <translation>Art.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="est, quid epistola lecta nocebit?" type="straight"/>
+        <underline language="LA" method="pen" text="His arcana notis terra, pelagóq[ue] feruntur" type="straight"/>
+        <underline language="LA" method="pen" text="pudor est miscendus amori" type="straight"/> 
+        <underline language="LA" method="pen" text="Dicere quae puduit, scribere iussit amor" type="straight"/>
+        <underline language="LA" method="pen" text="Venit amor grauius, quo serius, vrimur" type="straight"/>
+        <underline language="LA" method="pen" text="Ars fit, vbi à teneris crimen condiscitur annis, Quae venit exacto tempore, peius amat" type="straight"/>
+        
+        <symbol name="Taurus" place="left_margin"/>
+        
+    </annotation>
+</transcription>

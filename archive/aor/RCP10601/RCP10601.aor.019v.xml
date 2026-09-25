@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.019v.tif" pagination="38" reader="John Dee" signature="[c 3[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="ut in historijs quae aliquid Graecitatis habent, sit certißimum, nil esse certi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Greci mendaces</marginalia_text>
+                    <location name="Greece"/>
+                </position>
+            </language>
+            <translation>The deceitful Greeks.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="habent, sit certißimum, nil esse certi" type="straight"/>
+        
+    </annotation>
+</transcription>

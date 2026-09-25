@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.388v.tif" pagination="228" reader="John Dee" signature="[Pp.ii.[v]]"/>   
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        deuotio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Devotion.
+            </translation>
+        </marginalia>
+
+        <marginalia anchor_text="fato fieri" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        omnia fato fiunt.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Everything is created by fate.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Pra[e]scie[n]ta reru[m] inutilis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Unuseful foreknowledge of things.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Decioru[m] deuotionibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Decioru[m] deuotiones
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A sacrifice of the Decii.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        στρατήγημα
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The act of a general.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quatuor modis formatas in animis hominu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Quatuor modis Deoru[m] notio[n]es in ho[m]i[nu]m a[n]i[mi]s formata[e].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                'Ideas of the gods are formed in men’s minds in four ways' [LCL 268:300-1].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="perturbationibus coelestibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Perturbatio[n]es co[e]lestes
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Celestial disturbances.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Totius mundi co[n]ueme[n]tia &amp; consensus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Harmony and common purpose of the whole world.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Calor
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Heat.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="&amp; Sol, &amp; Luna, &amp; stellae sensum ac mentem haberent" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ☾ ☉  sensu[m] habe[n]t
+                    </marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Sun"/>
+                    <!-- FSF: not sure how to capture the Star -->
+                </position>
+            </language>
+            <translation>
+                The moon, sun and stars have sensations.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="A co[n]suetudine enim oculorum animum abducere difficillimum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        A co[n]suetudine oculoru[m] a[n]i[mu]m abducere difficillimu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                'You intended to show what the gods are like non-existent' [LCL 268:304-5].
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Bonum triplex
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Good in three ways.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vrbe nostra" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Roma.
+                    </marginalia_text>
+                    <location name="Rome"/>
+                </position>
+            </language>
+            <translation>
+                Rome.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        b... et .... co[n].l..io[n]e <!-- FSF: unable to read this -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="iidem fato fieri dicatis omnia" type="straight"/>
+        <underline language="LA" method="pen" text="in te est Balbe" type="straight"/>
+        <underline language="LA" method="pen" text="perturbationibus tempestatum" type="straight"/>
+        <underline language="LA" method="pen" text="perturbationibus coelestibus" type="straight"/>
+        <underline language="LA" method="pen" text="totius mundi conuenientiam consensúmque afferebas" type="straight"/>
+        <underline language="LA" method="pen" text="déque eo calore ex quo omnia generari dicebas, loco suo" type="straight"/>
+        <underline language="LA" method="pen" text="auertas orationem" type="straight"/>
+        <underline language="LA" method="pen" text="nec des respondendi" type="straight"/>
+        <underline language="LA" method="pen" text="strictim, nostri" type="straight"/>
+        <underline language="LA" method="pen" text="quaestione quae nunc" type="straight"/>
+        <underline language="LA" method="pen" text="manibus est separa[n]tur" type="straight"/>
+        <underline language="LA" method="pen" text="Si pulchrius" type="straight"/>
+        <underline language="LA" method="pen" text="vtilitates nostras" type="straight"/>
+        <underline language="LA" method="pen" text="sapientius" type="straight"/>
+        <underline language="LA" method="pen" text="mentem ab oculis seuocare" type="straight"/>
+        <underline language="LA" method="pen" text="ne in terris quidem vrbe" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Unidentified" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="tripunctus" place="head" text="deuotio"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark language="LA" method="pen" name="tripunctus" place="left_margin" text="A co[n]suetudine oculoru[m] a[n]i[mu]m abducere difficillimu[m]"/>
+        
+        <numeral language="LA" place="left_margin" text="Vnus">1</numeral>
+        <numeral language="LA" place="left_margin" text="Alter">2</numeral>
+        <numeral language="LA" place="left_margin" text="Tertius">3</numeral>
+        <numeral language="LA" place="left_margin" text="Quartus">4</numeral>
+        
+        <drawing anchor_text="omnia fato fiunt" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

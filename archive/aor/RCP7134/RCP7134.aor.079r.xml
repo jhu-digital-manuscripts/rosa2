@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.079r.tif" pagination="72" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Quamobrem patet, deliquia mortem in ascendente minime significare. idem autem dico de magnis coniunctionibus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Eclipses nec magnas ☌ in asc morte[m] significare</marginalia_text>
+                </position>
+            </language>
+            <translation>[It is well known] that eclipses nor great conjunctions signify death in ascending.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="obiter per annum eueniunt" hand="English_secretary">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ἐπέμβασις</marginalia_text>
+                </position>
+            </language>
+            <translation>The approaching.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ERgo eclipses &amp; coniunctiones magnae nihil operantur, nisi ut causae generals" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Eclipsiu[m] effectus</marginalia_text> 
+                </position>
+            </language>
+            <translation>The effect of eclipses.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="magnis coniunctionibus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>De magnis co[n]iunctionbius</marginalia_text> 
+                </position>
+            </language>
+            <translation>On great conjunctions.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Quamobrem patet" type="straight"/>
+        <underline language="LA" method="pen" text="significare. idem autem" type="straight"/>
+        <underline language="LA" method="pen" text="nisi cu[m[ regione calamitate[m] effecerint" type="straight"/>
+        <underline language="LA" method="pen" text="fortuito" type="straight"/>
+        <underline language="LA" method="pen" text="obiter" type="straight"/>
+        <underline language="LA" method="pen" text="Multas alias eclipses hoc modo obseruaui nihil" type="straight"/>
+        <underline language="LA" method="pen" text="Ergo eclipses &amp; coniunctiones magnae nihil operantur, nisi ut causae generales: unde plus nocent his qui, cum effectus initio, cum urbe &amp; prouincia concordant, quam his quibus in Horoscopo auot loco uitae ceciderint" type="straight"/>
+        <underline language="LA" method="pen" text="Si tamen hora ipsa reuolutionis annuae, dominum ascendentis infestum habuerint, esse potest, ut mali aliquid minentur" type="straight"/>
+        <underline language="LA" method="pen" text="tantu[m] est propositum docere, Ptolemaei regulas minie ueras esse," type="straight"/>
+        <underline language="LA" method="pen" text="Lunae, minime semper malum" type="straight"/>
+        
+        <symbol language="LA" name="Conjunction" place="right_margin" text="Luna quandoq[ue] iungit Soli"/>
+        <symbol language="LA" name="Moon" place="right_margin" text="Luna"/> 
+        <symbol language="LA" name="Sun" place="right_margin" text="Soli"/> 
+        
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="Quamobrem patet, deliquia mortem in ascendente minime significare. idem autem dico de magnis coniunctionibus"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/> 
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- qui cum -->
+        <mark method="pen" name="comma" place="intext"/> <!-- initio cum -->
+        
+    </annotation>
+</transcription>

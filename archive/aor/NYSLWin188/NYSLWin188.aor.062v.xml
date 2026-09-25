@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.062v.tif" pagination="[62[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="sie habe[n] jre narung im Firmament" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Stellaru[m] metrimenta. <!-- FSF: I think it is nutrimenta as in nourishment; see also the German narung (mdoern Nahrung) -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Metrimenta of stars.</translation>
+        </marginalia>
+
+        <marginalia anchor_text="Excrementum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Excrementu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Excrement.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dann mit fewr erhalten werden" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Igne aluntur sydera
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Stars are maintained by fire.</translation>
+        </marginalia>
+
+        <marginalia anchor_text="Essentia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Essentia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The essence.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="Sternen" type="straight"/>
+        <underline language="DE" method="pen" text="sich reinigen" type="triple"/>
+        <underline language="DE" method="pen" text="einem Corpus" type="straight"/>
+        <underline language="DE" method="pen" text="habe[n] jre narung im Firmament" type="straight"/>
+        <underline language="DE" method="pen" text="nicht seine tägliche füterung habe[n] muß" type="double"/>
+        <underline language="DE" method="pen" text="Element essen" type="double"/>
+        <underline language="DE" method="pen" text="dann mit fewr erhalten werden" type="straight"/>
+        <underline language="DE" method="pen" text="von der Erden" type="straight"/>
+        <underline language="DE" method="pen" text="vo[n] der er ist" type="straight"/>
+        <underline language="DE" method="pen" text="jr Essentiam" type="straight"/>
+        <underline language="DE" method="pen" text="Blut vnd fleisch" type="straight"/>
+        <underline language="DE" method="pen" text="von der Essentia ist" type="straight"/>
+        <underline language="DE" method="pen" text="ein fewriner Stern" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!--erhalten vom-->
+        
+        <errata amendedtext="Sternen" copytext="Sterden" language="DE"/>
+        
+    </annotation>
+</transcription>

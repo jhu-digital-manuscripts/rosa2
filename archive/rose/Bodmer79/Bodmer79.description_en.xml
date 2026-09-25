@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 RdelaR/tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note rend="IDENTIFICATION">
+          <p>Fondation Martin Bodmer, Cologny, Cod. Bodmer 79. French, 1308 (dated from rubric on <locus>1r</locus>).</p>
+        </note>
+        <note rend="MATERIAL">
+          <p>Parchment, excellent condition throughout. Book very well preserved.</p>
+        </note>
+        <note rend="ORIGIN">
+          <p>France</p>
+        </note>
+        <note rend="DATE">
+          <p>1308 (from the 1st rubric on f. <locus>1r</locus>)</p>
+        </note>
+        <note rend="SCRIPT">
+          <p>One scribe throughout, using Gothic script. Light brown ink with some darker stints. Ascenders occasionally decorated, e.g., <locus>58v</locus>, <locus>62v</locus>; these sometimes touched by rubricator  – e.g., <locus>66r</locus>. The incipt on <locus>1r</locus> informs us that the book was copied in 1308: <hi rend="italics">Ci commence li rommans de la  Rose ou lart damours est toute enclose lan .  IIIc . et . viii </hi>. An explicit on <locus>138r</locus>: <hi rend="italics">Explicit iste liber scriptor sit crimine liber . amen </hi>.</p>
+        </note>
+        <note rend="ARTISTS">
+          <p>1 artist </p>
+        </note>
+        <note rend="DECORATION">
+          <p>Rubrics for miniatures, textual divisions, and changes in speakers rubricated. Guidewords survive in margins. On <locus>1r</locus> only, first letter of each line touched in red. If not otherwise decorated, the first letter of each line touched in yellow, now faded. On <locus>1r</locus>, a 4-line <hi rend="italics">M</hi> in blue on red background with gold infill and red/white vines on the infilled background. In second column, a 2-line initial in same design but with red on blue background. Elsewhere, numerous blue lombard initials with red penwork alternating with red lombards with blue penwork. A single border on 1r on the left, bottom, and top of folio, in blue, red, and gold with blue and gold sections decorated with white penwork. An intercolumnar border of the same design. A tree is found at the center of the bottom border; to the left of the tree is a stag, which is pursued by two hounds on the right. At the top, a hound pursues a hare. At the top left, the border terminates in a grotesque head. Two birds along right edge. 22 Miniatures with borders in red, blue, and gold. Red and blue areas decorated with white penwork throughout.</p>
+        </note>
+        <note rend="DIMENSIONS">
+          <p>260-265 x 175-180 mm</p>
+        </note>
+        <note rend="FOLIATION">
+          <p>138 folios</p>
+        </note>
+        <note rend="COLLATION">
+          <p>
+            <list>
+              <item n="I">
+                <locus from="1" to="4">1-4</locus>
+              </item>
+              <item n="II">
+                <locus from="5" to="8">5-8</locus>
+              </item>
+              <item n="III">
+                <locus from="9" to="16">9-16</locus>
+              </item>
+              <item n="IV">
+                <locus from="17" to="24">17-24</locus>
+              </item>
+              <item n="V"><locus from="25" to="33">25-33</locus>(foliation skips 29)
+                     </item>
+              <item n="VI">
+                <locus from="34" to="41">34-41</locus>
+              </item>
+              <item n="VII">
+                <locus from="42" to="49">42-49</locus>
+              </item>
+              <item n="VIII">
+                <locus from="50" to="57">50-57</locus>
+              </item>
+              <item n="IX">
+                <locus from="58" to="65">58-65</locus>
+              </item>
+              <item n="X">
+                <locus from="66" to="73">66-73</locus>
+              </item>
+              <item n="XI">
+                <locus from="74" to="81">74-81</locus>
+              </item>
+              <item n="XII">
+                <locus from="82" to="89">82-89</locus>
+              </item>
+              <item n="XIII">
+                <locus from="90" to="97">90-97</locus>
+              </item>
+              <item n="XIV">
+                <locus from="98" to="105">98-105</locus>
+              </item>
+              <item n="XV">
+                <locus from="106" to="111">106-111</locus>
+              </item>
+              <item n="XVI">
+                <locus from="112" to="119">112-119</locus>
+              </item>
+              <item n="XVII">
+                <locus from="120" to="127">120-127</locus>
+              </item>
+              <item n="XVIII"><locus from="128" to="139">128-(139)</locus>(a gathering of 12; final parchment leaf is not foliated, but is part of gathering)
+                        
+                        
+                     </item>
+            </list>
+          </p>
+          <p>
+                     iv + 138 + ii (correcting for mistake in foliation and fact that final parchment leaf is not a flyleaf). No quire marks or signatures. Catchwords, written and boxed in scribal ink, are present on most final versos of gatherings, but partially or totally cropped away on many. The foliation, in pencil, top right of rectos, skips number 29; this description refers to foliation as written rather than correcting it to refer to actual sequential folio number after fol. 29. An earlier foliation in ink, roman numerals, probably contemporary with the manuscript, has been erased but remains visible on many folios. The same hand has labeled front flyleaves A-D, the final parchment leaf X, and the final flyleaves Y-Z.   
+               </p>
+        </note>
+        <note rend="LAYOUT">
+               Ruled in lead for two columns, usually 40 lines per column. No horizontal through lines. Eight vertical through lines, three of which are on the left of each column and one of which defines the right edge of each column. The three to the left of each column are spaced 3-4 mm apart, and the first letter of each line is centered on the middle of the three lines. Text block measures approximately 185-190 x 130 mm. Most prickings cropped away, but a few survive, e.g., fols. <locus from="44" to="46">44-46</locus>.
+            </note>
+        <note rend="BINDING">
+          <p>French, 18th century. Binding 272 mm in height, 203 mm from center of spine to fore edge. Red morocco. Five raised bands on spine. Red and white headband and tailband. Green bookmark. Front and back covers with three gold fillets around outer edge. Small gold flowers at corners where fillets meet. Spine divided into six compartments. Compartment 2 contains the title <hi rend="italics">ROMAN / DE LA / ROSE M.SS</hi> stamped in gold. At the center of the other compartments, a design featuring a small bird has been placed at the center of a diamond shape that is formed by alternating very small circle, diamond, and flower tools. Corners and sides of compartments feature additional floral or vine stamps. Each compartment delineated by a pair of fillets running around the edges. A single fillet on the center of each raised band. On the outside vertical edges of each compartment, an additional dotted line parallel to the pair of fillets. Top and bottom compartments are larger than others, with extra space taken up by additional gold fillets and vines and flowers formed with larger tools than those used elsewhere on the spine. Edges decorated by a pair of gold fillets. Turn-ins decorated with a floral roll. Edges gilt. Marbled endpapers in red, blue, orange, and green. One half of endpaper is pastedown in front and back, the other half joined to a paper flyleaf. In front, a second paper flyleaf followed by two parchment flyleaves from a previous binding. In rear, only one additional flyleaf (what appears to be a parchment flyleaf is actually part of the structure of the final gathering, as described above).</p>
+        </note>
+        <note rend="PROVENANCE">
+          <p>In <hi rend="italcs">Manuscrits Français du Moyen Âge</hi> (Cologny: Fondation Martin Bodmer, 1975), François Vielliard enumerates three known owners; his findings are summarized and expanded upon here.</p>
+        </note>
+        <note rend="NOTES">
+          <p>In <hi rend="italics">Manuscrits Français du Moyen Âge</hi> (Cologny: Fondation Martin Bodmer, 1975), François Vielliard enumerates three known owners; his findings are summarized and expanded upon here.</p>
+          <p>
+                  1) J. B. Denis Guyon de Sardière, whose signature <hi rend="italcs">guyon de sardiere</hi> is found on the recto of the first parchment flyleaf and at the base of 138r. Both Vielliard and Langlois cite <hi rend="italcs">Catalogue des livres de la bibliotheque de feu M. J. B. Denis Guyon </hi>(Paris, 1759), which lists two <hi rend="italcs">Rose</hi> manuscripts, along with two early printed editions of the poem, in Guyon’s collection. The <hi rend="italcs">Rose</hi> manuscripts were numbers 528, now the Bodmer manuscript, and 529, now University of Glasgow Library, Hunter 52, which also contains Guyon’s signature. (The printed editions were a 1538 copy published by Guill. le Bret and a 1521 copy by Mich. le Noir. According to F. W. Bourdillon’s <hi rend="italcs">The Early Editions</hi> of The Roman de la Rose, Appendix C, p. 207, these would have been editions of Clément Marot’s recension and Molinet’s prose version, respectively.) 
+               </p>
+          <p>
+                  The catalogue of Guyon’s collection suggests that the book once belonged to François I: 
+               </p>
+          <p><hi rend="italcs">Les mignatures n'ont que le merite de l'antiquitė: il paroit avoir appartenu à François I; car sur le plat de la couverture, on voit d'un côté le portrait de ce Roi, avec cette Inscription, F. Rex, &amp; de l'autre celui de Didon, DIDO</hi> (p. ix).
+               </p>
+          <p>
+                  No sign of this portrait remains today, however, and a new binding apparently postdates the catalogue.
+               </p>
+          <p>
+                  2) P. K. Suchtelen (1751-1836), Russian nobleman, diplomat, and ambassador to Stockholm who amassed a collection of approximately 27,000 volumes. His bookplate appears on the front pastedown, and a black ink stamp reading <hi rend="italics">Bibliotheca Suchtelen</hi> appears at the bottom of fol. <locus>1r</locus>. 
+               </p>
+          <p>
+                  3) Also at the bottom of <locus>1r</locus> is a blue ink stamp, now partially cropped, with an inscription in Cyrillic characters that reads “Biblioteka grafa Nikolaja Aleksandroviča Košelev(a)” (“Library of Count Nikolaj Aleksandrovič Košelev”).
+               </p>
+          <p>
+                  4) Acquired by Martin Bodmer in 1935. 
+               </p>
+          <p>
+                  In addition, there are a number of other clues to former owners found throughout the manuscript:
+               </p>
+          <p>
+                  On the front pastedown, below Suchtelen’s bookplates, are the remains of two additional bookplates, one formerly affixed atop the other, both now partially obscured and or removed. The number <hi rend="italics">2154</hi>, written in pencil, is visible on the lower label.
+               </p>
+          <p>
+                  On verso of front flyleaf i, the signature (18th c.) <hi rend="italics">F. Mayer Constanten</hi>. Above and to the left of this signature, in the same ink, is written <hi rend="italics">S:a</hi> (or perhaps <hi rend="italics">5:a</hi>); to the right of this is written MS. At bottom left of the same folio numbers were written in a modern hand and later erased, although <hi rend="italics">416</hi> may still be read.  
+               </p>
+          <p>
+                  On recto of flyleaf ii, a name – <hi rend="italics">Folsom</hi>(?). On top right of this folio, written in brown ink: <hi rend="italics">Ec</hi> (or perhaps (<hi rend="italics">Ee</hi>). 
+               </p>
+          <p>
+                  On verso of first parchment flyleaf, continuing on recto of second parchment flyleaf, a table of contents for <hi rend="italics">Rose</hi> written in an early hand.
+               </p>
+          <p>
+                  At top left of <locus>1r</locus>, the number <hi rend="italics">7769</hi> written in blue ink. This has been crossed out in pencil, and next to it is written <hi rend="italics">3370</hi>. 
+               </p>
+          <p>
+                  On recto of final paper flyleaf, in pencil: <hi rend="italics">M. Ms. II. 3</hi> - beneath this: <hi rend="italics">Cod. Bodmer 79</hi>
+               </p>
+          <p>
+                  On rear pastedown, a paper label with blank lines for <hi rend="italics">WK.</hi> and <hi rend="italics">Non.</hi> that were never filled in.
+               </p>
+        </note>
+        <note rend="TEXT">
+               Contains only <hi rend="italics">Roman de la Rose</hi>. 
+            </note>
+        <note rend="SELECT BIBLIOGRAPHY">
+          <p>Françoise Vieillard, <hi rend="italics">Manuscrits Français du Moyen Âge</hi> (Cologny-Genève: Fondation Martin Bodmer, 1975), pp. 153-56.  </p>
+        </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscript</note>
+          <note type="commonName">Bodmer 79</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="138" unit="folios">138 folios</measure>
+            <dimensions>
+              <height unit="mm">265</height>
+              <width unit="mm">180</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">22</note>
+          <note type="material">parchment</note>
+          <pubPlace>France</pubPlace>
+          <date notBefore="1308" notAfter="1308">14th century</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Cologny, Switzerland</settlement>
+            <repository>Fondation Martin Bodmer</repository>
+            <idno>Bodmer 79</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="138r">1r-138r</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">138</note>
+              <note type="illustrations">22</note>
+              <note type="linesPerColumn">40</note>
+              <note type="leavesPerGathering">8</note>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

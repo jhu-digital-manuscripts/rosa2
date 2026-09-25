@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.020v.tif" pagination="26" reader="John Dee" signature="[c.j.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="ratio certa, non aliunde, quàm ex Sacris scripturis repetenda est" hand="Italian">
+            <language ident="LA">
+              <position book_orientation="0" place="head">
+                  <marginalia_text>Ex scripturis sacris o[mn]is Antiquitatis petenda r[ati]o.</marginalia_text>
+              </position>
+            </language>
+            <translation>Reason to be sought from all the sacred scriptures of antiquity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cornelius Tacitus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cor[nelii] Taciti errores et figme[n]ta.</marginalia_text>
+                    <person name="Tacitus"/>
+                </position>
+            </language>
+            <translation>The errors and fictions of Cornelius Tacitus.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Dion autem Nicaeus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dion Nica[e]us</marginalia_text>
+                    <person name="Dion Cassius Nicaeus"/>
+                </position>
+            </language>
+            <translation>Dion Nicaeus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="est: à qua antiquitatis" type="straight"/>
+        <underline language="LA" method="pen" text="hexamero" type="straight"/>
+        <underline language="LA" method="pen" text="diei Saturno dicati fit" type="straight"/>
+        <underline language="LA" method="pen" text="ab eo finguntur" type="double"/>
+        <underline language="LA" method="pen" text="septimum diem Saturno dicatum esse apud" type="straight"/>
+        <underline language="LA" method="pen" text="vera falsis admiscens" type="straight"/>
+        <underline language="LA" method="pen" text="eadem ignoratione, qua Tacitus" type="straight"/>
+        <underline language="LA" method="pen" text="scriptores Ecclesiastici" type="straight"/>
+        <underline language="LA" method="pen" text="non, prima" type="straight"/>
+        <underline language="LA" method="pen" text="Sabbati, seu hebdomadae" type="double"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/> 
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+    </annotation>
+</transcription>

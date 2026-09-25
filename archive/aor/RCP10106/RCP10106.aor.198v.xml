@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.198v.tif" pagination="396" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="ἀναστροφή" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ἀναστροφή</marginalia_text>
+                </position>
+            </language>
+            <translation>Anastrophe.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="hyperbati" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>hyperbaton</marginalia_text>
+                </position>
+            </language>
+            <translation>Hyperbaton.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Poëtae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Poëtae</marginalia_text>
+                </position>
+            </language>
+            <translation>The poets.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tropus fit, quia componendus est è duobus intellectus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tropus et figura.</marginalia_text>
+                </position>
+            </language>
+            <translation>Trope and figure.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="confusis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Confusa</marginalia_text>
+                </position>
+            </language>
+            <translation>Confused.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ὑπερβολή" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ὑπερβολή</marginalia_text>
+                </position>
+            </language>
+            <translation>Hyperbole.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in Antoniu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In Antoniu[m]</marginalia_text>
+                    <book title="Philippics"/>
+                </position>
+            </language>
+            <translation>Against Anthony.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Charybdim" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Charybdis</marginalia_text>
+                    <person name="Charybdis"/>
+                </position>
+            </language>
+            <translation>Charybdis.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Quibus de rebus" type="straight"/>
+        <underline language="LA" method="pen" text="hyperbati tenet nomen" type="straight"/>
+        <underline language="LA" method="pen" text="duas diuisam esse parteis" type="straight"/>
+        <underline language="LA" method="pen" text="Ad id quod est, &amp; propter quod cu[m] dicitur, tropus fit, quia componendus est è duobus intellectus. Alioqui ubi nihil" type="straight"/>
+        <underline language="LA" method="pen" text="significatione mutatum est, &amp; structura sola uariatur, figura potius uerborum dici potest, sicut" type="straight"/>
+        <underline language="LA" method="pen" text="ementiens superiectio" type="straight"/>
+        <underline language="LA" method="pen" text="mediusfidius" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">1</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">5</numeral>
+        
+    </annotation>
+</transcription>

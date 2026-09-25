@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.115r.tif" pagination="53" reader="Harvey" signature="D3[r]"/>	<!-- ABO 119right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Non tam lege, quàm repete, repete, repete qua[e] lecta
+						sunt vtilissima. In animo scribit prudens, quicquid
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						esse sentit efficacissimu[m]. Ca[e]tera concurrunt sua sponte.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Don't just read, but repeat, repeat, repeat those readings which are most useful.
+				The prudent man will write in his mind whatever he feels to be most efficacious.
+				Other things will happen of their own accord.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( The best, that euer Writt.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						A per se A.)
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				( The best, that euer Writt.
+				A in itself A. )
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Or henceforth nothing at all.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Virgilio plus Virtutis in A[e]neide:
+						Ouidio plus Artis in Metamorphosibus. Vtriusq[ue]
+					</marginalia_text>
+					<person name="Virgil"/>
+					<person name="Ovid"/>
+					<book title="Aeneid"/>
+					<book title="Metamorphoses"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						plurimu[m] in Seneca[e] tragoedijs: vt etiam
+					</marginalia_text>
+					<person name="Seneca"/>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						in Lucano. Pra[e] quibus alij pla[e]riq[ue] poeta[e], quasi
+						nuga[e], et fragmenta rerum vulgarium.
+					</marginalia_text>
+					<person name="Lucan"/>
+					<X-ref book_title="Rerum vulgarium fragmenta" language="LA" person="Petrarch" text="fragmenta rerum vulgarium"/>
+				</position>
+			</language>
+			<translation>
+				More Virtue than Virgil in the Aeneid, more Art than Ovid in the Metamorphoses.
+				More of both in Seneca's tragedies, and even in Lucan. 
+				Compared with them, most other poets are almost trifles and 'fragments of common things'.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						s[upr]a /
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				[See] above.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Pulchrè: sed Memorem mones: et agilem moues.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Excellently, but you remind the mindful man, and you move the agile man. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Quicquid optimu[m], Noster ulteriùs.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Whatever is best is ours in the greatest degree.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="cose prohibite accendersi" type="straight"/>
+		<underline language="IT" method="pen" text="la libertà nell'huomo" type="straight"/>
+		<underline language="IT" method="pen" text="le cose prohibite" type="straight"/>
+		<underline language="IT" method="pen" text="Fù in Arezzo alla" type="straight"/>
+		<underline language="IT" method="pen" text="il Capitano lo" type="straight"/>
+		<underline language="IT" method="pen" text="per burla" type="straight"/>
+		<underline language="IT" method="pen" text="ch'egli vsciua spesso" type="straight"/>
+		<underline language="IT" method="pen" text="à parlamentare" type="straight"/>
+		<underline language="IT" method="pen" text="il Capitano" type="straight"/>
+		<underline language="IT" method="pen" text="comandò sotto graui pene di non" type="straight"/>
+		<underline language="IT" method="pen" text="vecchio accesso con tal prohitione" type="straight"/>
+		<underline language="IT" method="pen" text="fuora della terra" type="straight"/>
+		<underline language="IT" method="pen" text="huomini valorosi &amp; d'alto ingegno" type="straight"/>
+		<underline language="IT" method="pen" text="pronte &amp; argute risposte" type="straight"/>
+		<underline language="IT" method="pen" text="conquidere" type="straight"/>
+		<underline language="IT" method="pen" text="loro auuersaij" type="straight"/>
+		<underline language="IT" method="pen" text="COSIMO de' Medici il vecchio" type="straight"/>
+		<underline language="IT" method="pen" text="gran qualità" type="straight"/>
+		<underline language="IT" method="pen" text="suoi detti &amp; nelle sue risposte" type="straight"/>
+		<underline language="IT" method="pen" text="molto arguto &amp; graue" type="straight"/>
+		<underline language="IT" method="pen" text="Albizi" type="straight"/>
+		<underline language="IT" method="pen" text="Palla Strozzi" type="straight"/>
+		<underline language="IT" method="pen" text="la gallina couaua" type="straight"/>
+		<underline language="IT" method="pen" text="poteua mal couare fuora del nido" type="straight"/>
+		<underline language="IT" method="pen" text="ribelli, che gli mandarono" type="straight"/>
+		
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="il vecchio acceso con tal prohitione, di desiderio;     fù preso l'altro giorno fuora della terra"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- con -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- memo -->
+		<mark method="pen" name="dash" place="right_margin"/> <!--  parlamen-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--  san-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--  fuo-->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="fuora della terra"/>
+		<mark method="pen" name="vertical_bar" place="intext"/> <!-- nido. Ad -->
+		
+    </annotation>
+</transcription>

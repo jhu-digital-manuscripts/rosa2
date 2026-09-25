@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.055r.tif" pagination="89" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia anchor_text="capit consilium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        capere Consiliu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To make a plan.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="commonefaciunt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        co[m]monefacio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                I admonish.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="eò accedebat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        eò accedebat
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                'There was the further fact' [Loeb 221, 339].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="factorum tuorum redditurum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        sup[ra] .87.
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP10549-50v1:0115" text="87"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                See above, 87.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="simulatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        simulatio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Simulation.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fortunis omnibus euerti" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        everti fortunis o[mn]ib[us]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To be stripped of all possessions.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="laudationis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        laudatio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Praise.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ambigebatur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ambigi
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To be disputed.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="comportari" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        co[m]portari
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To be carried.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="auctio facta est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Auctione[m] facere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To hold an auction
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="factorum tuorum redditurum" type="straight"/>
+        <underline language="LA" method="pen" text="omnibus" type="straight"/>
+        <underline language="LA" method="pen" text="Profectò enim negare non potes, te ex lege" type="straight"/>
+        <underline language="LA" method="pen" text="ipse te impedies, ipse tu tua defe[n]sione implicabere" type="straight"/>
+        <underline language="LA" method="pen" text="ambigebatur" type="straight"/>
+        <underline language="LA" method="pen" text="controuersia fuerat nulla" type="straight"/>
+        <underline language="LA" method="pen" text="Verum esto" type="straight"/>
+        <underline language="LA" method="pen" text="euerte leges, testamenta, voluntates mortuorum, iura viuorum: num" type="straight"/>
+        <underline language="LA" method="pen" text="quàm impudenter, quàm palàm, quàm acerbe" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">15</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">11</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">11</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">3</numeral>
+        
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.198r.tif" pagination="198" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="porto del Brasil" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Porto del Brasil.</marginalia_text>
+                    <location name="Brazil"/> 
+                </position>
+            </language>
+            <translation>The port of Brazil.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="molte correnti lo gittarono" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>The currents</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="le pozze" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Le pozze</marginalia_text>
+                </position>
+            </language>
+            <translation>the puddles</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Gioachemo" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Gioachimo, hauen </marginalia_text>
+                    <location name="Gioachemo"/>
+                </position>
+            </language>
+            <translation/>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="Manati, ne" type="straight"/>
+        <underline language="IT" method="pen" text="de' terrestri animali, dicono" type="straight"/>
+        <underline language="IT" method="pen" text="pesci esser veramente vitelli," type="straight"/>
+        <underline language="IT" method="pen" text="che dell'herba" type="double"/>
+        <underline language="IT" method="pen" text="del Brasil" type="straight"/>
+        <underline language="IT" method="pen" text="Gioachemo" type="straight"/>
+        <underline language="IT" method="pen" text="vn'altro braccio di fortuna, che douea" type="straight"/>
+        <underline language="IT" method="pen" text="venire" type="double"/>
+        <underline language="IT" method="pen" text="molte correnti lo gittarono" type="straight"/>
+        <underline language="IT" method="pen" text="a Giamaica" type="straight"/>
+        <underline language="IT" method="pen" text="le pozze" type="straight"/>
+        <underline language="IT" method="pen" text="molte pozze" type="straight"/>
+        <underline language="IT" method="pen" text="nell' arena" type="double"/>
+        
+    </annotation>
+</transcription>

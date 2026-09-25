@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.253r.tif" pagination="23" reader="John Dee" signature="Ciiij"/> 
+    <annotation>
+         
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Baldwinus</marginalia_text>
+                    <person name="Baldwin V, Count of Flanders"/>  <!-- DO: Have tagged the son, but the text actually refers to both father and son (both called Baldwin) -->
+                </position>
+            </language>
+            <translation>Baldwin.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="moritur Francorum rex Robertus, cui successit filius eius Henricus" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A[nn]o 1030 Robertus R[ex] Fr[ancorum] morit[u]r succesit Henricus.</marginalia_text> 
+                    <person name="Robert II of France"/>
+                    <person name="Henry I of France"/>
+                </position>
+            </language>
+            <translation>In the year 1030, Robert, King of the Franks, dies; Henry succeeds.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Comes Alanus" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Alanus Comes Bryt[anniae]</marginalia_text>
+                    <person name="Alan III"/>
+                </position>
+            </language>
+            <translation>Alan, Count of Brittany.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Doli" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Comitatus Doli.</marginalia_text>
+                    <location name="Dol-de-Bretagne"/>
+                </position>
+            </language>
+            <translation>The county of Dol.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Abricatensem comitatum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Comitatus Abrincatensis.</marginalia_text>
+                  <location name="Avranches"/>
+                </position>
+            </language>
+            <translation>The county of Avranches.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Rodonis" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Rhodon.</marginalia_text>
+                    <location name="Rhodon"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="duos filios Edwardu[m] &amp; Aluredum non longo post patria[m] repetens, Richardo eorum auu[n]culo reliquit nutriendos" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Roberti Richardi Ducis N[orthmanniae] solicitudo pro suis Nepotibus Aluredo et Edwardo Ethelredi regis Ang[lorum] filijs</marginalia_text>
+                    <person name="Robert II, Archbishop of Rouen"/>
+                    <person name="Richard II, Duke of Normandy"/>
+                    <person name="Edward the Confessor"/>
+                    <person name="Alfred Aetheling"/>
+                    <person name="Aethelred II"/>
+                    <emphasis method="pen" text="Roberti" type="straight"/>
+                    <emphasis method="pen" text="Richardi" type="straight"/>
+                </position>
+            </language>
+            <translation>The concern of Robert / Richard, Duke of Normandy on behalf of his nephews Alfred and Edward, the sons of Aethelred, King of the English.</translation>  
+            <!-- DO: Not sure about the translation - I think he's possibly suggesting the two uncles which it could refer to (Robert or Richard) -->
+            <!-- FSF: solicitudo is subject, so the concern of Rober and Richard goes towards their offsprings Alfred and Erdward? -->
+            <!-- DO: 'Robert / Richard's care of his nephews'? -->
+        </marginalia>
+        
+        <marginalia anchor_text="Fiscamium in littore ponti" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Fiscamium in littore ponti.</marginalia_text>
+                    <location name="Fecamp"/>
+                </position>
+            </language>
+            <translation>Fecamp on the sea shore.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="fretus affinitate regali patrem a solo pepulit" type="straight"/>
+        <underline language="LA" method="pen" text="Cioca vocatur" type="straight"/>
+        <underline language="LA" method="pen" text="relicto filio ad patrem sunt reuersi, duci obsides" type="straight"/>
+        <underline language="LA" method="pen" text="eius Henricus" type="straight"/>
+        <underline language="LA" method="pen" text="Roberto viuente Francorum" type="straight"/>
+        <underline language="LA" method="pen" text="matre Constantia" type="straight"/>
+        <underline language="LA" method="pen" text="Comes Alanus" type="straight"/>
+        <underline language="LA" method="pen" text="Doli" type="straight"/>
+        <underline language="LA" method="pen" text="Abrincatensem" type="straight"/>
+        <underline language="LA" method="pen" text="cum dedecore" type="straight"/>
+        <underline language="LA" method="pen" text="Rodonis" type="double"/>
+        <underline language="LA" method="pen" text="Ethelredus" type="straight"/>
+        <underline language="LA" method="pen" text="auu[n]culo" type="straight"/>
+        <underline language="LA" method="pen" text="fabricari" type="straight"/>
+        <underline language="LA" method="pen" text="apud Fiscamium" type="straight"/>
+        <underline language="LA" method="pen" text="vocatur Gernsi" type="straight"/>
+        <underline language="LA" method="pen" text="futurum regnare sine sanguinis effusione" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- viuente Francorum -->
+        
+        <errata amendedtext="Flandriam" copytext="Flandoniam" language="LA"/>
+ 
+    </annotation>
+</transcription>

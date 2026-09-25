@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.030r.tif" pagination="30" reader="John Dee" signature="Hij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Boreas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Boreas</marginalia_text>
+                </position>
+            </language>
+            <translation>The north wind.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sulphurisch; Salisch" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sulphurea et salsosa natura Borea[e]</marginalia_text> <!--JG: Unsure abt salsosa, salsola would make more sense-->
+                </position>
+            </language>
+            <translation>The nature of the north wind is sulfurous and salty.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Also hatt ein jeder seine zeit im jar darinne er sonderlich geboren wirdt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>4 principales venti 4 Anni temporibus suas vires maxime potentes habe[n]t</marginalia_text>
+                </position>
+            </language>
+            <translation>The four principal winds have their strengths, most powerful in [one of] the four seasons of a year.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Glentzen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Autumno</marginalia_text>
+                </position>
+            </language>
+            <translation>In Autumn.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="in denselbigen" type="straight"/>
+        <underline language="DE" method="pen" text="Sternen jr gewächs" type="double"/>
+        <underline language="DE" method="pen" text="nach jrer zeit" type="double"/>
+        <underline language="DE" method="pen" text="in jren zeiten" type="double"/>
+        <underline language="DE" method="pen" text="sie so ein weiten weg zu gehen haben so werden sie in jren krefften etwas schwach" type="straight"/>
+        <underline language="DE" method="pen" text="Sommersterne" type="straight"/>
+        <underline language="DE" method="pen" text="ist er Sulphurisch" type="double"/>
+        <underline language="DE" method="pen" text="kranckheit zu" type="double"/>
+        <underline language="DE" method="pen" text="ist Salisch" type="double"/>
+        <underline language="LA" method="pen" text="Alopetias" type="straight"/>
+        <underline language="DE" method="pen" text="Glentzen" type="straight"/>
+        <underline language="DE" method="pen" text="ein jeder seine zeit im" type="straight"/>
+        <underline language="DE" method="pen" text="sein eigen zerbrechung" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

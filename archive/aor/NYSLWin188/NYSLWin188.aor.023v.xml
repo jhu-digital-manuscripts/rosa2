@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.023v.tif" pagination="[23[v]]" reader="John Dee" signature="[Fiij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="auß in alle[n] lebt er" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Homo ex omnibus Elementis viuit: et in omnibus moru[m] [ti..ere] p[otes]t </marginalia_text> <!--JG: Unsure--> <!--<KS: 'facere p[os]t'? -->
+                </position>
+            </language>
+            <translation>Man lives in all elements:</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Gnomi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Gnomi</marginalia_text>
+                </position>
+            </language>
+            <translation>Gnomes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nymphae; Lemures" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nympha[e] Lemures</marginalia_text>
+                </position>
+            </language>
+            <translation>Nymphs. Specters.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vnd ist doch in allen viere[n] der Centru[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Homo Elementorum Centrum</marginalia_text>
+                </position>
+            </language>
+            <translation>Man is the centre of the elements.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Radios" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Radij</marginalia_text>
+                </position>
+            </language>
+            <translation>Rays.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Radios" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Philosophia - Saganarum - Hominum</marginalia_text>
+                </position>
+            </language>
+            <translation>The philosophy of the Sagini [and] of men.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="auß jn alle[n] lebt" type="double"/>
+        <underline language="DE" method="pen" text="wandlet in jnen allen" type="double"/>
+        <underline language="DE" method="pen" text="seinet" type="double"/>
+        <underline language="DE" method="pen" text="in der Erden" type="double"/>
+        <underline language="DE" method="pen" text="Auff dem Wasser" type="double"/>
+        <underline language="DE" method="pen" text="vnder dem Himmel" type="double"/>
+        <underline language="DE" method="pen" text="neben dem Lufft" type="straight"/>
+        <underline language="DE" method="pen" text="nit im Lufft" type="straight"/>
+        <underline language="DE" method="pen" text="in allen viere[n] der Centru[m]" type="straight"/>
+        <underline language="DE" method="pen" text="alle vier operationes vn[d] refluctiones auff jn" type="straight"/>
+        <underline language="DE" method="pen" text="geben" type="straight"/>
+        <underline language="DE" method="pen" text="vn[d] jr Radios alle in jne[n]" type="straight"/>
+        <underline language="DE" method="pen" text="verstandt des Menschen" type="straight"/>
+        <underline language="DE" method="pen" text="den Saganis" type="straight"/>
+        <underline language="DE" method="pen" text="noch bessere seindt" type="straight"/>
+        <underline language="DE" method="pen" text="im Ertzwone[n]" type="straight"/>
+        <underline language="DE" method="pen" text="Nymphae" type="straight"/>
+        
+        <!--JG: quite a lot underscoring on this page actually seems to have bled through from the previous page. Sometimes tricky to decided whether or not this is the case-->
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

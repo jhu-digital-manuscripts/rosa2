@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.191r.tif" pagination="381" reader="John Dee"/> 
+    <annotation>
+                
+        <marginalia anchor_text="ad rem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ad re[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>To a things.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ad persona[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ad persona[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>To a person.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nonnuquam deuplice[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>sente[n]tia simplex Duplex</marginalia_text>
+                </position>
+            </language>
+            <translation>Simple sentences are twofold.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="decem genera" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Decem</marginalia_text>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>γνώμων</marginalia_text> 
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>genera.</marginalia_text>
+                </position>
+            </language>
+            <translation>Ten kinds of proverbs.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="notabile" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>notabile</marginalia_text>
+                </position>
+            </language>
+            <translation>Notable.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mutatione figurae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mutatio figura[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>A change of figure.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ouidium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ovidius.</marginalia_text>
+                    <person name="Ovid"/>
+                </position>
+            </language>
+            <translation>Ovid.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nihil habet Caesar nec fortuna tua maius, quàm ut poßisL nec natura melius, quàm ut uelis seruare qua[m]plurimos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>pro ligario</marginalia_text>
+                    <book title="Pro Ligario"/>
+                </position>
+            </language>
+            <translation>Pro Ligario.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="custodiendum est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Custodiendu[m] est</marginalia_text>
+                </position>
+            </language>
+            <translation>It should be guarded</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="καθολικὰ" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>καθολικὰ</marginalia_text>
+                </position>
+            </language>
+            <translation>Universal things.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="autoritas, ut rei pondus etia[m] persona " hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Persona[e] autoritas</marginalia_text>
+                </position>
+            </language>
+            <translation>Character of authority.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Enthymema quoq[ue]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>sup[ra] de enthy[mema]</marginalia_text>
+                    <internal_ref text="sup[ra]">
+                        <target ref="RCP10106:266" text="[260]"/>
+                        <target ref="RCP10106:270" text="[264]"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>[See] above for enthymeme.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="per interrogationem, comparatione[m], inficatione[m], similitudinem, admirationem" type="straight"/>
+        <underline language="LA" method="pen" text="Per omnes enim figuras tractari potest" type="straight"/>
+        <underline language="LA" method="pen" text="Ita quae erant rerum propria, fecit hominis. In" type="straight"/>
+        <underline language="LA" method="pen" text="custodiendum est" type="straight"/>
+        <underline language="LA" method="pen" text="ne crebrae" type="straight"/>
+        <underline language="LA" method="pen" text="palàm falsae" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; ne paßim, &amp; à quocu[n]q[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="ut rei pondus etia[m] persona confirmet" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

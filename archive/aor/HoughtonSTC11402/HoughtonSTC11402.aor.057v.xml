@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.057v.tif" reader="Harvey" signature="[Gii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>If there be any coniuring; woold not A rowt troupe of Diuels, make [the] brauist harte in [the] world to guake, &amp; to
+                        pisse for feare?
+                    </marginalia_text>
+                    <emphasis method="pen" text="troupe" type="straight"/>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>If [Michael - deleted]</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Ismael</marginalia_text>
+                    <!-- CG: Possibly 'Ismail Mirza', founder of the Sufi dynasty? https://books.google.com/books?id=ijk5AAAAMAAJ&q=ismael+mursa&dq=ismael+mursa&hl=en&sa=X&ved=0CCUQ6AEwAGoVChMInpGAjLuIyAIVglY-Ch0_UA3k --> 
+                    <!--KS: I think so too, Ismail was himself even sometimes decribed as a 'thunderbolt launched by the Almighty'-->
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Mursa, cowld command thunderbolts &amp;tempests or if Doctor Faustus cowld reare Castels, &amp;
+                    arme Diuels at pleasure: What woenderful, &amp; monstrous exploits might be acheuid by</marginalia_text>
+                    <person name="Doctor Faustus"/>
+                    <person name="Ismael Mursa"/>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>such terrible meanes?</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Embushments,</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Camisados,</marginalia_text>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>&amp; such pore shifes, but trifles,</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>in comparison</marginalia_text>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>of [the] cunning</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>practises, &amp;</marginalia_text>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>horrible furyes, that Diuel cowld play.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>A bridg of siluer, for flying Enemyes: [the] opinion of Aluiano, &amp; other Captains, in [the]
+                    Emblems, or Impreses of Jouius.</marginalia_text>
+                    <person name="Bartolomeo d'Alviano"/>
+                    <book title="The worthy tract by Paulus Jovius"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="styll fled" type="straight"/>
+        <underline language="EN" method="pen" text="vntyll he had" type="straight"/>
+        <underline language="EN" method="pen" text="brought them" type="straight"/>
+        <underline language="EN" method="pen" text="where his shyppes" type="straight"/>
+        <underline language="EN" method="pen" text="and landynge" type="straight"/>
+        <underline language="EN" method="pen" text="had landed" type="straight"/>
+        <underline language="EN" method="pen" text="battayle on the see" type="straight"/>
+        <underline language="EN" method="pen" text="mastes" type="straight"/>
+        <underline language="EN" method="pen" text="hoyse vp the sayles" type="straight"/>
+        <underline language="EN" method="pen" text="an other nauye" type="straight"/>
+        <underline language="EN" method="pen" text="To lette an ennemy escape, leste be beinge" type="straight"/>
+        <underline language="EN" method="pen" text="shulde through dispaire, renewe the battayle. Cap.vi." type="straight"/>
+        <underline language="EN" method="pen" text="Gaules, whiche desyred vessels" type="straight"/>
+        <underline language="EN" method="pen" text="holpen with vittayles" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/> <!--the mastes-->
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="an other nauye"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

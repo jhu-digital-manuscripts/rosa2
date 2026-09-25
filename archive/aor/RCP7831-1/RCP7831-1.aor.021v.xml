@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="RCP7831-1.021v.tif" pagination="32" reader="Dee" signature="[Diiij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="morbos[a]e dispositio[n]es" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Morbi melancholici.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Melancholic diseases.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Qui fumi, quia arcem animi recta petunt, spiritumq[ue] animalem illi remisti obturbant: atq[ue] cerebrum" type="straight"/>
+        <underline language="LA" method="pen" text="Quod cum suis periodis indicant morbos[a]e dispositio[n]es hinc co[n]ciliatae: cuiusmodi" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!--animalem illi-->
+        
+        <errata amendedtext="misti" copytext="remisti" language="LA"/>
+        
+    </annotation>
+</transcription>

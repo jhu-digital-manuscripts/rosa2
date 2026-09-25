@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL531k6.012v.tif" pagination="[012v]" reader="John Dee" signature="[C4v]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="nouum sit inuentum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nouu[m] Inuentu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>A new invention.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="dies 1. hor. 16. scrup." type="straight"/>
+        <underline language="LA" method="pen" text="apparens conuersio aequalem sequitur" type="straight"/>
+        <underline language="LA" method="pen" text="anno 132. Sept: 25" type="straight"/>
+        <underline language="LA" method="pen" text="meridiem hor. 1. scr. 4 1a" type="straight"/>
+        <underline language="LA" method="pen" text="die 25. hor. 1. scr. 59 1a/" type="straight"/>
+        <underline language="LA" method="pen" text="tantum scrupulo" type="straight"/>
+        <underline language="LA" method="pen" text="Solis ex annua magnitudine" type="straight"/>
+        <underline language="LA" method="pen" text="per veram anni magnitudinem" type="straight"/>
+        <underline language="LA" method="pen" text="vsq[ue] ad finem longaeuitatis humanae" type="straight"/>
+        <underline language="LA" method="pen" text="nouum sit inuentum" type="straight"/>
+        
+    </annotation>
+</transcription>

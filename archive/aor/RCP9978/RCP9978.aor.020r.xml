@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.020r.tif" reader="John Dee" signature="[E iiij]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Medicina" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Medici[ina]</marginalia_text>
+                </position>
+            </language>
+            <translation>Medicine.</translation>
+        </marginalia>       
+        
+        <marginalia anchor_text="religionis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Religio</marginalia_text>
+                </position>
+            </language>
+            <translation>Religion.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="Mathematicas" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mathem[ati]ca</marginalia_text>
+                </position>
+            </language>
+            <translation>Mathematics.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="vicies centu[m] millia" hand="Italian">  
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>2000,000</marginalia_text>
+                </position>
+            </language>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="MAgicas uanitates" type="straight"/>
+        <underline language="LA" method="pen" text="quod fraudulentissima artium plurimum" type="straight"/>
+        <underline language="LA" method="pen" text="tres alias imperiosissimas" type="straight"/>
+        <underline language="LA" method="pen" text="artes Mathematicas" type="straight"/>
+        <underline language="LA" method="pen" text="auido futura, de sese sciendi" type="straight"/>
+        <underline language="LA" method="pen" text="sex millibus annorum" type="straight"/>
+        <underline language="LA" method="pen" text="vicies centu[m]" type="straight"/>
+        
+    </annotation>
+</transcription>

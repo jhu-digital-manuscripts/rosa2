@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.287v.tif" pagination="554" reader="John Dee" signature="[mmm.v.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="mercatu omnia essent vaenalia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>mercatus venalis</marginalia_text>
+                </position>
+            </language>
+            <translation>Market. For sale.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="impuritates" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>impuritates</marginalia_text>
+                </position>
+            </language>
+            <translation>Impurities.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="in epistolis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aepistola[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Letters.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="verbo meus P.C. re vester" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>verbo meus, re vester</marginalia_text>
+                </position>
+            </language>
+            <translation>Mine in name, yours in reality [Loeb 189, 67].</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="vituperaret" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vituperare.</marginalia_text>
+                </position>
+            </language>
+            <translation>To blame. </translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="fatale" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>fatale.</marginalia_text>
+                </position>
+            </language>
+            <translation>Fatal.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="vita excede[n]s" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vita excedere</marginalia_text>
+                </position>
+            </language>
+            <translation>Taking leave of life [Loeb 189, 67].</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="qui te tanta mercede" type="straight"/>
+        <underline language="LA" method="pen" text="iam proferam, nihil" type="straight"/>
+        <underline language="LA" method="pen" text="quid est minus non dico oratoris, sed hominis, quàm obiicere aduersario, quod ille si verbo negarit, longius progredi no[n] possit qui obiecerit" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">11</numeral>
+        <numeral place="left_margin">11</numeral>
+        <numeral place="left_margin">19</numeral>
+        <numeral place="left_margin">11</numeral>
+        <numeral place="left_margin">22.13</numeral>
+        <numeral place="left_margin">11</numeral>
+        <numeral place="left_margin">19</numeral>
+        
+        <drawing anchor_text="Aepistola[e]" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

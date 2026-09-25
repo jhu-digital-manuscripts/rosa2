@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.059v.tif" pagination="102" reader="Harvey"/>
+    <annotation>
+        <underline language="LA" method="pen" text="equitemq[ue] longè fortissimus ipse rex ab" type="straight"/>
+        <underline language="LA" method="pen" text="Cornelius Cossus" type="straight"/>
+        <underline language="LA" method="pen" text="eximia pulchritudine corporis" type="straight"/>
+        <underline language="LA" method="pen" text="animo ac uiribus par" type="straight"/>
+        <underline language="LA" method="pen" text="generis" type="straight"/>
+        <underline language="LA" method="pen" text="ad impetum" type="straight"/>
+        <underline language="LA" method="pen" text="Tolumnij quacunq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="eum regio habitu uolitante[m] tota acie" type="straight"/>
+        <underline language="LA" method="pen" text="ruptor foederis" type="straight"/>
+        <underline language="LA" method="pen" text="uiolatorq[ue] genitum iuris?" type="straight"/>
+        <underline language="LA" method="pen" text="mactatam uictimam" type="straight"/>
+        <underline language="LA" method="pen" text="legatorum manibus dabo" type="straight"/>
+        <underline language="LA" method="pen" text="in unum fertur hostem" type="straight"/>
+        <underline language="LA" method="pen" text="ictum equo deiecisset" type="straight"/>
+        <underline language="LA" method="pen" text="innixus, se in pedes" type="straight"/>
+        <underline language="LA" method="pen" text="assurge[n]tem ibi regem umbone resupinat" type="straight"/>
+        <underline language="LA" method="pen" text="tum exangui detracta spolia" type="straight"/>
+        <underline language="LA" method="pen" text="terrore caesi regis hostes fundit" type="straight"/>
+        <underline language="LA" method="pen" text="equitu[m] quoq[ue] fusa" type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="JC" place="left_margin"/>
+        
+        <mark method="pen" name="X_sign" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- ui -->
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="legatorum manibus dabo"/>
+        <mark method="pen" name="dot" place="intext"/> <!--deiecisset, confestim-->
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.072r.tif" pagination="123" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia anchor_text="virgis ad necem caedetur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        virgis ad nece[m] c[a]edi
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To be flogged to death.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="bona, possessiones, fortunas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        bona posessio[n]es fortun[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Goods, properties, fortunes.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="frumentum, quod illi ex area, si velle, admetiri licebat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        frume[n]tu[m] ex area admetur
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To measure out wheat from the floor.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="multas enim cruces pro" type="straight"/>
+        <underline language="LA" method="pen" text="quamobrem imperabas vt adderent?" type="straight"/>
+        <underline language="LA" method="pen" text="Audite reliqua, &amp; diligenter attendite, quominus miremini Siculos re" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">18</numeral>
+        
+    </annotation>
+</transcription>

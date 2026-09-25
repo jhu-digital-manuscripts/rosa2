@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.012r.tif" reader="John Dee" signature="[Ciij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>filium.</marginalia_text>
+                    <emphasis method="pen" type="straight"/>
+                </position>
+            </language>
+            <translation>A son.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Psalmos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Psalm[i]</marginalia_text>
+                </position>
+            </language>
+            <translation>Psalms.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="item" type="straight"/>
+        <underline language="LA" method="pen" text="Rabani'q[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="secundum numerorum significantiam" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/>    <!-- feroo austico -->
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

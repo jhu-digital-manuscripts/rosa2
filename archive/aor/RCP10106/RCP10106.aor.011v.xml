@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.011v.tif" pagination="22" reader="John Dee" signature="[b 3[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="uocalibus grammatici est uidere, an aliquas pro consonantibus usus acceperit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vocalis aliqua[n]do consonans fit.</marginalia_text>
+                </position>
+            </language>
+            <translation>The vowel is sometimes a consonant.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Conijcit enim est ab illo iacit. Et u, quomodo nunc scribitur uulgus, &amp; seruus." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Verborum radices.</marginalia_text>
+                </position>
+            </language>
+            <translation>The roots of words.</translation>
+        </marginalia>
+
+    </annotation>
+</transcription>

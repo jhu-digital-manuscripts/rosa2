@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.243r.tif" pagination="3" reader="John Dee" signature="A.ij."/> 
+    <annotation>
+        
+        <marginalia anchor_text="luxui excessiuè" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Luxus Danoru[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>The extravagance of the Danes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Lothbrocus rex" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lothbrocus Rex.</marginalia_text>
+                    <person name="Ragnar Lodbrock"/>
+                </position>
+            </language>
+            <translation>King Lothbrocus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Troianos" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Troiani</marginalia_text>
+                </position>
+            </language>
+            <translation>The Trojans.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vehementissimis infectus veneficijs suae matris, licèt in acie staret inermis, omnem vim armorum ill[a]esus sperneret" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Veneficiu[m] co[n]tra tela.</marginalia_text>
+                </position>
+            </language>
+            <translation>Defence against poison.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="humanum sanguinem" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sanguis humanus sacrificiu[m] Danoa[e].</marginalia_text>
+                </position>
+            </language>
+            <translation>A Danish human blood sacrifice</translation>
+        </marginalia>
+      
+        <marginalia anchor_text="noningentorum monachorum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>900 Monachi in ca[e]nobio Gemetice[n]si.</marginalia_text>
+                    <location name="Jumieges"/>
+                </position>
+            </language>
+            <translation>900 monks in the Jumieges monastery.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sequanae" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sequana fl[umen].</marginalia_text>
+                    <location name="River Seine"/>
+                </position>
+            </language>
+            <translation>The river Seine.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Andegauensem" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Andegaue[n]sis regio</marginalia_text>
+                    <person name="Andegaves"/>
+                </position>
+            </language>
+            <translation>The region of the Andegaves people.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pictauiensem" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pictavia Poictiers</marginalia_text>
+                    <location name="Poitiers"/>
+                </position>
+            </language>
+            <translation>Pictavia Poitiers</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Turonum" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tours.</marginalia_text>
+                    <location name="Tours"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Aurenam" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aurelia[num]</marginalia_text>
+                    <location name="Orleans"/>
+                </position>
+            </language>
+            <translation>Orleans.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aurenam" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Orleans.</marginalia_text>
+                    <location name="Orleans"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>navibus</marginalia_text>
+                </position>
+            </language>
+            <translation>By ships.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Hiteciam Parisiorum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Lutecia[m]</marginalia_text>  
+                    <location name="Lutetia"/>
+                </position>
+            </language>
+            <translation>Lutetia.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hiteciam Parisiorum" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Paris</marginalia_text>
+                    <location name="Paris"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Emino; Clodonei Francorum regis; Philberto; Beatilda Regina" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Emino, Ep[iscop]us Nevione[n]s[i]. Clodouens. R[ex] Fr[ancorum]. S[anc]t[u]s Philobertus. Beatilda Regina.</marginalia_text>
+                    <person name="Emino"/>
+                    <person name="Clovis II"/>
+                    <person name="Philibert of Jumieges"/>
+                    <person name="Balthild of Ascania"/>
+                </position>
+            </language>
+            <translation>Emino, Bishop of Neustria. Clovis, King of the Franks. Saint Philibert. Queen Balthild. </translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="luxui excessiuè" type="straight"/>
+        <underline language="LA" method="pen" text="multis" type="straight"/>
+        <underline language="LA" method="pen" text="haeredem sui iuris relinquebat" type="straight"/>
+        <underline language="LA" method="pen" text="Ex quorum progenie iactitãt Troianos fuisse progressos: &amp; Anthenorem ab vrbis exterminio cum duobus millibus" type="straight"/>
+        <underline language="LA" method="pen" text="quingentis viris ob proditionem illius ab eo perpetratem euasisse, &amp; per multimodos anfractus ponti, Germaniam appulisse, ac in Dacia ex post regnasse: eamq[ue] à quodam vocato Danao suae stirpis Rege, Danemarchiam nuncapasse" type="straight"/>
+        <underline language="LA" method="pen" text="nomine Bier" type="straight"/>
+        <underline language="LA" method="pen" text="paedogogo suo Hastingo" type="straight"/>
+        <underline language="LA" method="pen" text="costa ferrea" type="straight"/>
+        <underline language="LA" method="pen" text="infectus veneficijs" type="straight"/>
+        <underline language="LA" method="pen" text="staret inermis, omnem vim armorum ill[a]esus" type="straight"/>
+        <underline language="LA" method="pen" text="suo pro thure humanum" type="straight"/>
+        <underline language="LA" method="pen" text="vnanimiter potauerunt" type="straight"/>
+        <underline language="LA" method="pen" text="Vermendensem" type="straight"/>
+        <underline language="LA" method="pen" text="Emino" type="straight"/>
+        <underline language="LA" method="pen" text="apud Gemeticum" type="straight"/>
+        <underline language="LA" method="pen" text="beato Philberto" type="straight"/>
+        <underline language="LA" method="pen" text="Beatilda Regina" type="straight"/>
+        <underline language="LA" method="pen" text="in noningentorum" type="straight"/>
+        <underline language="LA" method="pen" text="aduentum paganorum" type="straight"/>
+        <underline language="LA" method="pen" text="deniq[ue] Sequanae" type="straight"/>
+        <underline language="LA" method="pen" text="Northma[n]nica ferocitate" type="straight"/>
+        <underline language="LA" method="pen" text="Namiaticam" type="straight"/>
+        <underline language="LA" method="pen" text="Turonum" type="straight"/>
+        <underline language="LA" method="pen" text="Aurenam" type="straight"/>
+        <underline language="LA" method="pen" text="ad tempus" type="straight"/>
+        <underline language="LA" method="pen" text="Hiteciam" type="straight"/>
+        <underline language="LA" method="pen" text="Betuacus" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Nomonius" type="straight"/>
+        <underline language="LA" method="pen" text="Bier dictus eosta ferrea" type="straight"/>
+        <underline language="LA" method="pen" text="Cades S. Quintint" type="straight"/>
+        <underline language="LA" method="pen" text="Gemeticus monachoru[m] sedes" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- suo pro -->
+        <mark method="pen" name="comma" place="intext"/> <!-- thure humanum -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- paganorum fuga -->
+        <mark method="pen" name="comma" place="intext"/> <!-- vrbem auro -->
+        <mark method="pen" name="comma" place="intext"/> <!-- recedentes, secundo -->
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+            
+    </annotation>
+</transcription>

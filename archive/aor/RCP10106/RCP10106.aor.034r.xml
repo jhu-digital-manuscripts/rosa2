@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.034r.tif" pagination="67" reader="John Dee" signature="e 2"/>
+    <annotation>
+        
+        <marginalia anchor_text="Sumat igitur ante omnia parentis erga discipulos suos animum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quale[m] a[n]i[mu]m p[rae]ceptor sumeret.</marginalia_text>
+                </position>
+            </language>
+            <translation>The teacher assumes what kind of soul.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="praecipueq[ue] eius praeceptoris" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pra[e]ceptoris Pra[e]lectio.</marginalia_text>
+                </position>
+            </language>
+            <translation>The reading of the teacher.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uina illa, ut dicitur, uox" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Viua Vox.</marginalia_text>
+                </position>
+            </language>
+            <translation>The living voice.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quem discipuli (si modò rectè sunt instituti)" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Discipuli officium.</marginalia_text> 
+                </position>
+            </language>
+            <translation>The duty of disciples.</translation> <!-- M.B. Uncertain how to translate offficinus, 'X' captured using X-sign mark. -->
+        </marginalia>
+
+        <underline language="LA" method="pen" text="quantò libentius imitemur eos, quibus fauemus" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="X_sign" place="right_margin"/>
+        
+    </annotation>
+</transcription>

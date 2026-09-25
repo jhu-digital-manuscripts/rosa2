@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.239v.tif" pagination="30" reader="John Dee" signature="[Ccc iij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Castra [...] de Oximo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Castru[m] de Oximo 
+                        <!-- FSF: I am not sure which castle this is; it appears to be somewhere in the Normandy https://books.google.co.uk/books?id=Aft7UVNU-x4C&pg=PA50&lpg=PA50&dq=castrum+oximo&source=bl&ots=ZQEFKkC5kl&sig=5sB805JrPav2jI1lO4uU_emXEFY&hl=en&sa=X&ved=0ahUKEwjMk6exub_UAhViDsAKHSq4AKIQ6AEIKzAA#v=onepage&q=castrum%20oximo&f=false --> 
+                        <!-- DO: I'm not sure either. Might be something here: https://en.wikipedia.org/wiki/Exmes  but I don't know that there was a castle there -->
+                    </marginalia_text>
+                    <location name="Exmes"/>
+                </position>
+            </language>
+            <translation>Castle of Exmes.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in mari tranquillissimo" type="double"/>
+        <underline language="LA" method="pen" text="tenderet, cum exercitu copioso, VVallenses ei sippliciter obuiantes" type="straight"/>
+        <underline language="LA" method="pen" text="concordati sunt cum ipso, iuxta magnificentiam suae" type="straight"/>
+        <underline language="LA" method="pen" text="Gulihelmus de Curboile" type="straight"/>
+        <underline language="LA" method="pen" text="Oximo" type="straight"/>
+        
+    </annotation>
+</transcription>

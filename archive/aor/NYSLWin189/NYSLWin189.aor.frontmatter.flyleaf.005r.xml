@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.frontmatter.flyleaf.005r.tif" pagination="title page" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia date="1562" hand="Italian" id="NYSLWin189:00000011:m0001" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Joannes Dee 1562.</marginalia_text>
+                    <person name="John Dee"/>
+                </position>
+            </language>
+            <translation>John Dee</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen" other_reader="Unknown"> <!-- DO: Reader unknown, perhaps member of winthrop family? -->
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>No 466</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Idromancia" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hydromant[ia]</marginalia_text> <!-- DO: translation unknown - hydromantia - hydromancy? -->
+                </position>
+            </language>
+            <translation>Hydromancy.</translation>  
+        </marginalia>
+        
+        <marginalia hand="Italian" id="NYSLWin189:00000011:m0002" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Agi hic assero, non de vulgaribus solum Balneis, sed de secretissimi etiam philosophorum Thermia[e]. J.D.</marginalia_text> 
+                    <person name="John Dee"/>
+                </position>
+            </language>
+            <translation>I dealt with [it], I assert here, not only about common bathrooms, but even about the most secret baths of the philosophers. John Dee.</translation> <!--JG: Not entirely sure about 'agi hic assero'-->
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="edel wasserschatz die rechte Idromancia, Beschriben" type="straight"/>
+        
+    </annotation>
+</transcription>

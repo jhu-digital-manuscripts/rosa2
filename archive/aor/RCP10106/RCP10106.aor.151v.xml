@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.151v.tif" pagination="302" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="neque perfectus orator sine hac uirtute dici potest" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Perfectus orator sine altercatione eße no[n] p[otes]t</marginalia_text>
+                </position>
+            </language>
+            <translation>He cannot be the perfect orator without the ability to debate.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uox illa praeconis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pra[e]conis Vox.</marginalia_text>
+                </position>
+            </language>
+            <translation>The voice of the herald.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="uirtute dici potest, paulùm impendamus" type="straight"/>
+        <underline language="LA" method="pen" text="Nusquam est deniq[ue] qui cognoscit intentior" type="straight"/>
+        
+    </annotation>
+</transcription>

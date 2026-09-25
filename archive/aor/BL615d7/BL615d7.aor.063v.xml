@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.063v.tif" pagination="[63[v]]" reader="John Dee" signature="[Hvij[v]]"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="Bocio" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Bochio now Spagnola</marginalia_text>
+                    <location name="Hispaniola"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Tortuga" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tortuga Ile.</marginalia_text>
+                    <location name="Tortuga"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="IX di Decembre; Spagnuola" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dece[m]b[er] 9. Spagn[i]ola.</marginalia_text>
+                    <location name="Hispaniola"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="vna donna giouane" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A woman gotten</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Note this Policie</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="Tortuga" type="straight"/>
+        <underline language="IT" method="pen" text="Bochio" type="straight"/>
+        <underline language="IT" method="pen" text="quelli di Spagna" type="double"/>
+        <underline language="IT" method="pen" text="quelli di Spagna" type="double"/>
+        <underline language="IT" method="pen" text="Salmoni" type="straight"/>
+        <underline language="IT" method="pen" text="IX" type="straight"/>
+        <underline language="IT" method="pen" text="Spagnuola" type="straight"/>
+        <underline language="IT" method="pen" text="delle qualità" type="straight"/>
+        <underline language="IT" method="pen" text="tre Christiani" type="straight"/>
+        <underline language="IT" method="pen" text="spauento si misero" type="straight"/>
+        <underline language="IT" method="pen" text="à fuggire" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; i Christiani" type="straight"/>
+        <underline language="IT" method="pen" text="hauer lingua da essi, tennero" type="straight"/>
+        <underline language="IT" method="pen" text="giouane" type="straight"/>
+        <underline language="IT" method="pen" text="appiccata al naso" type="straight"/>
+        
+        <mark language="IT" method="pen" name="tripunctus" place="left_margin" text="hauer lingua da essi, tennero"/>
+        
+        
+    </annotation>
+</transcription>

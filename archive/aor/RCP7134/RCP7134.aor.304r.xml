@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.304r.tif" pagination="297" reader="John Dee" signature="fff"/>
+    <annotation>
+        
+        <marginalia anchor_text="mortis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mors ex fixis</marginalia_text>
+                </position>
+            </language>
+            <translation>Death from the fixed [stars].</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in reuolutione" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Revolutio</marginalia_text>
+                </position>
+            </language>
+            <translation>Revolution.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Vnde ex his patet, nullas magis" type="straight"/>
+        <underline language="LA" method="pen" text="quâm eorum, qui eodem momento nascuntur" type="straight"/>
+        <underline language="LA" method="pen" text="cum insignibus fixis necessario" type="straight"/>
+        <underline language="LA" method="pen" text="dominus ascende[n]tis" type="straight"/>
+        <underline language="LA" method="pen" text="in reuolutione, natus" type="straight"/>
+        <underline language="LA" method="pen" text="peraget mala" type="straight"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="Cum dominus ascende[n]tis aut Luna in opposito aut quadrato fuerint infortunaru[m], in reuolutione, natus detrimenta magna patietur. Si autem cum illis fuerint, peraget mala, &amp; detrimenta inferet. Quod si cum hoc locis inimicis, infortunae dominentur, patrabit &amp; patietur"/>
+        <mark method="pen" name="comma" place="intext"/> <!--mandato reliquorum-->
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

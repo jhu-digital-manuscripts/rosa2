@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL531k6.011v.tif" pagination="[011v]" reader="John Dee" signature="[C3v]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="anno 1515" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        A[nn]⁰ Chr[ist]i 1515
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>In the year 1515.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="anno Christi 132" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        A[nn]⁰ Chr[ist]i 132
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>In the year 132.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="mentio conuersarum" type="straight"/>
+        <underline language="LA" method="pen" text="Fruenburgi Prußiae" type="straight"/>
+        <underline language="LA" method="pen" text="1515. septemb. 14. die" type="straight"/>
+        <underline language="LA" method="pen" text="Prost" type="straight"/>
+        <underline language="LA" method="pen" text="ante annos 1383. id" type="straight"/>
+        <underline language="LA" method="pen" text="132 labente" type="straight"/>
+        <underline language="LA" method="pen" text="anno Ptolemaeus" type="straight"/>
+        <underline language="LA" method="pen" text="anno 17." type="straight"/>
+        <underline language="LA" method="pen" text="132. Sept. 25. die, hor. 2. post meridiem" type="straight"/>
+        <underline language="LA" method="pen" text="primum Canonem" type="straight"/>
+        <underline language="LA" method="pen" text="annis 1300." type="straight"/>
+        <underline language="LA" method="pen" text="subtrahenda" type="double"/>
+        <underline language="LA" method="pen" text="subtrahenda" type="straight"/>
+        <underline language="LA" method="pen" text="faciunt dies 10. hor. 6" type="straight"/>
+        <underline language="LA" method="pen" text="57ia/23" type="straight"/>
+        <underline language="LA" method="pen" text="reliquis 3." type="straight"/>
+        
+    </annotation>
+</transcription>

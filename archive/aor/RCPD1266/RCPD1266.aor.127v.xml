@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.127v.tif" pagination="240" reader="John Dee"/> 
+    <annotation>
+        
+     <marginalia anchor_text="Schaba autem filium Regma scriptura distingui à Saba filio Chus" hand="Italian">
+         <language ident="LA">
+             <position book_orientation="0" place="left_margin">
+                 <marginalia_text>Schaba. Saba.</marginalia_text>
+                 <person name="Shaba"/>
+                 <person name="Saba"/>
+             </position>
+         </language>
+         <translation>Shaba. Saba.</translation>
+     </marginalia>   
+        
+        <marginalia anchor_text="Saba" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Saba</marginalia_text>
+                    <person name="Saba"/>
+                </position>
+            </language>
+            <translation>Saba.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="reginam Schaba" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Regina schaba</marginalia_text>
+                    <person name="Queen of Sheba"/>
+                </position>
+            </language>
+            <translation>Queen Shaba.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="Idumaeam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Iduma[e]a.</marginalia_text>
+                    <location name="Kingdom of Judah"/>
+                </position>
+            </language>
+            <translation>Idumea.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="Chaldaeos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Chalda[e]i</marginalia_text>
+                    <location name="Chaldea"/>
+                </position>
+            </language>
+            <translation>Chaldeans.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="nempe Schaba parentem esse Arabum Sabaeorum ad sinum Persicum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Schaba Saba ] Parentes Arabu[m] [ ad sinu[m] persicu[m] ad sinu[m] Arabiu[m]</marginalia_text>
+                    <person name="Shaba"/>
+                    <person name="Saba"/>
+                    <location name="Arabia"/>
+                    <location name="Persian Gulf"/>
+                    <location name="Red Sea"/>
+                </position>
+            </language>
+            <translation>Schaba, Saba ] Parents of the Arabs [ to the Persian Gulf, to the Red Sea.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="Ita prima tyra[n]nis in ipsa matre confusionis linguarum est orta" type="straight"/>
+        <underline language="LA" method="pen" text="Schaba" type="straight"/>
+        <underline language="LA" method="pen" text="samech" type="straight"/>
+        <underline language="LA" method="pen" text="per schin" type="straight"/>
+        <underline language="LA" method="pen" text="vterque Saba" type="straight"/>
+        <underline language="LA" method="pen" text="propter thura clari &amp; celebres" type="straight"/>
+        <underline language="LA" method="pen" text="complectitur Idumaeam" type="straight"/>
+        <underline language="LA" method="pen" text="Chaldaeos" type="straight"/>
+        <underline language="LA" method="pen" text="autem populos ad sinum Persicum" type="straight"/>
+        <underline language="LA" method="pen" text="fuisse non sit mirum" type="straight"/>
+        <underline language="LA" method="pen" text="pars aequa in co[m]merciis &amp; latrociniis degit" type="straight"/>
+        <underline language="LA" method="pen" text="Schaba parentem" type="straight"/>
+        <underline language="LA" method="pen" text="quae thurifera est, &amp; aurifera regio in" type="straight"/>
+        <underline language="LA" method="pen" text="esse Arabum" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="comma" place="intext"/>  <!-- Chus per -->
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

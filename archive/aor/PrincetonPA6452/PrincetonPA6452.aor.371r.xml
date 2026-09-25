@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.371r.tif" pagination="725" reader="Harvey" signature="ppp3[r]"/>
+    <annotation>        
+        
+        <marginalia anchor_text="duae lapideae arcae; Numam Pompiliu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        Libri Numa[e] Regis, in arca lapidea vetusta inuenti.
+                    </marginalia_text>
+                <person name="Numa Pompilius"/>
+                </position>
+            </language>
+            <translation>
+                The books of King Numa, found in an ancient stone chest.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="duae lapideae arcae octonos" type="straight"/>
+        <underline language="LA" method="pen" text="Literis latinis graecisq[ue] utraq[ue] arca inscripta" type="straight"/>
+        <underline language="LA" method="pen" text="Numam Pompiliu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="libros Numae Pompilij inesse." type="straight"/>
+        <underline language="LA" method="pen" text="Eas arcas cum ex amicoru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="duo fasces candelis inuoluti" type="straight"/>
+        <underline language="LA" method="pen" text="septenos habuere libros, non" type="straight"/>
+        <underline language="LA" method="pen" text="sed recentissima specie" type="straight"/>
+        <underline language="LA" method="pen" text="septem Latini" type="straight"/>
+        <underline language="LA" method="pen" text="iure pontificio" type="straight"/>
+        <underline language="LA" method="pen" text="septem Graeci de disciplina sapientiae" type="straight"/>
+        <underline language="LA" method="pen" text="Pythagoricos fuisse" type="straight"/>
+        <underline language="LA" method="pen" text="Pythagorae auditorem" type="straight"/>
+        <underline language="LA" method="pen" text="fuisse Numam" type="straight"/>
+        <underline language="LA" method="pen" text="libri lecti" type="straight"/>
+        <underline language="LA" method="pen" text="Lectis rerum summis" type="straight"/>
+        <underline language="LA" method="pen" text="animaduertisset pleraq[ue] dissoluendarum religionum esse" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!-- Nu -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- titu -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- ulli -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- po -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- Py -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- uulgaren -->
+        
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- est. Eodem -->
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="septem Graeci de disciplina sapientiae"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Pythagoricos"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="animaduertisset pleraq[ue] dissoluendarum religionum esse"/>
+        <mark method="pen" name="dot" place="intext"/> <!--esse, L.-->
+        
+    </annotation>
+</transcription>

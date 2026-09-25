@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.119v.tif" pagination="224" reader="John Dee" signature="[t.iiij.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Iohannes Annius Viterbiensis cum suis comme[n]tariis nugacibus, &amp; mendaciorum plenis exhibuit, animaduertendum est Berosum Chaldaicam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Contra Io[hann]em Anniu[m] Viterbiense[m] et Berosu[m] suu[m].</marginalia_text>
+                    <person name="Annius of Viterbo"/>
+                    <person name="Berossus"/> 
+                    <book title="Antiquitatum Variarum"/> 
+                </position>
+            </language>
+            <translation>Against Annius of Viterbo and his Berossus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tatianus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tatianus.</marginalia_text>
+                    <person name="Tatian"/>
+                </position>
+            </language>
+            <translation>Tatian.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Gomer; latera Aquilonis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Gomer Latera Aq[ui]lonis</marginalia_text>
+                    <person name="Gomer"/>
+                </position>
+            </language>
+            <translation>Gomer. The Northern parts.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Gomer; latera Aquilonis" hand="Italian" id="RCPD126.6:248:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Gomer. Latera Aq[ui]lonis</marginalia_text>
+                    <person name="Gomer"/>
+                </position>
+            </language>
+            <translation>Gomer.The Northern parts.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Antiochum, Seleuci Nicatoris" type="straight"/>
+        <underline language="LA" method="pen" text="Tatianus Assyrius" type="straight"/>
+        <underline language="LA" method="pen" text="quinque librorum" type="straight"/>
+        <underline language="LA" method="pen" text="Metasthenis" type="straight"/>
+        <underline language="LA" method="pen" text="Coelo" type="double"/>
+        <underline language="LA" method="pen" text="&amp; Terra" type="straight"/>
+        <underline language="LA" method="pen" text="Galatae" type="straight"/>
+        <underline language="LA" method="pen" text="Phrygiae partem maiorem occuparunt" type="straight"/>
+        <underline language="LA" method="pen" text="stultè habetur" type="straight"/>
+        <underline language="LA" method="pen" text="Gomer" type="straight"/>
+        <underline id="RCPD126.6:248:u0001" language="LA" method="pen" text="latera Aquilonis, &amp; totu[m] robur eius, populíq[ue]" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <errata amendedtext="cuique" copytext="quique" language="LA"/>
+        
+        
+        <physical_link>
+            
+            <marginal_annotation idref="RCPD126.6:248:m0001"/>
+            <marginal_annotation idref="RCPD126.6:248:u0001"/>
+            
+            <relation from="RCPD126.6:248:m0001" to="RCPD126.6:248:u0001" type="directed"/>
+                   
+        </physical_link>
+
+    </annotation>
+</transcription>

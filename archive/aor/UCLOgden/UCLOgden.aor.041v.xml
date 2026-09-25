@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.041v.tif" pagination="66" reader="John Dee" signature="[f 3[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Duru[m] hoc est et vix ferendu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                This hard [thing] is also to be considered.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mulier" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Mulieris genitura.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The constellation of woman.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mulier" hand="English_secretary">  
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Mulieris genitura.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The constellation of woman.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="archigallos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Archigalli.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Chief priests.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        no[n] opus vt admonea[m] denuo de ♀is dista[n]tia a ☉ 
+                    </marginalia_text>
+                    <symbol_in_text name="Venus"/>
+                    <symbol_in_text name="Sun"/>
+                </position>
+            </language>
+            <translation>
+                It is not useful that I caution yet again regarding the distance from Venus to the sun.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Etia[m] cogita de Antiscijs: ut sup[ra] dixis de ♃is antesciu[m] in 12a doma. sup[ra] pag. 42 linea ultima.
+                    </marginalia_text>
+                    <symbol_in_text name="Jupiter"/>
+                    <internal_ref>
+                        <target ref="UCLOgden:065" text="pag. 42"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                I likewise would think about the Antiscia in the way he previously talked about the antiscion of Jupiter in the twelfth house. See the final line on page 42.   
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="inuentus, ☿ in quandrato" type="straight"/>
+        <underline language="LA" method="pen" text="uirorum actus semper imitabitur" type="straight"/>
+        <underline language="LA" method="pen" text="archigallos" type="straight"/>
+        <underline language="LA" method="pen" text="semper haec no[n] agant, sed patiantur, quae mulieres pati consueuerunt" type="straight"/>
+        <underline language="LA" method="pen" text="praeposteris libidinum ardoribus, uuluae" type="straight"/>
+        <underline language="LA" method="pen" text="si uespertina fuerit" type="straight"/>
+        <underline language="LA" method="pen" text="faciet mulieru[m] causa, affidua tristiti[a]e dolore cruciari. Sed" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="bracket" place="intext"/> <!-- denegat[ur] Per -->
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

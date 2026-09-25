@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.066r.tif" pagination="115" reader="Harvey" signature="K4[r]"/>
+<annotation>
+    <marginalia hand="Italian">
+        <language ident="LA">
+            <position book_orientation="0" place="right_margin">
+                <marginalia_text>
+                    s[upr]a.
+                </marginalia_text>
+            </position>
+        </language>
+        <translation>Above.</translation>
+    </marginalia>
+    
+    <underline language="LA" method="pen" text="ager ex hostibus captus" type="straight"/>
+    <underline language="LA" method="pen" text="nec tribuni" type="straight"/>
+    <underline language="LA" method="pen" text="uiam consilijs inuenieba[n]t" type="straight"/>
+    <underline language="LA" method="pen" text="Ap.Claudius, nepos" type="straight"/>
+    <underline language="LA" method="pen" text="uetus se ac familiare co[n]silium domo afferre" type="straight"/>
+    <underline language="LA" method="pen" text="Ap. Claudium ostendisse patribus uiam unam dissoluendae tribunitiae" type="straight"/>
+    <underline language="LA" method="pen" text="per collegarum intercessionem" type="straight"/>
+    <underline language="LA" method="pen" text="facile homines nouos autoritate principum de sententia" type="straight"/>
+    <underline language="LA" method="pen" text="si temporum interdum potius" type="straight"/>
+    <underline language="LA" method="pen" text="maiestatis memor adhibeatur oratio" type="straight"/>
+    <underline language="LA" method="pen" text="pro fortuna illis animos esse" type="straight"/>
+    <underline language="LA" method="pen" text="rei gratiam omnem ad plebe[m] praeoccupasse" type="straight"/>
+    <underline language="LA" method="pen" text="nec locum in ea relictu[m] sibi" type="straight"/>
+    <underline language="LA" method="pen" text="quisq[ue] posset ex collegio" type="straight"/>
+    <underline language="LA" method="pen" text="ad intercessionem perlicerent" type="straight"/>
+    <underline language="LA" method="pen" text="suadendo, monendo, pollice[n]doq[ue] gratum id" type="straight"/>
+    <underline language="LA" method="pen" text="sex ad intercessionem comparauere" type="straight"/>
+    <underline language="LA" method="pen" text="largitione pessimi exempli" type="straight"/>
+    <underline language="LA" method="pen" text="pro se quisq[ue] iam" type="straight"/>
+    
+    <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="per collegarum intercessionem"/>
+    <mark method="pen" name="equal_sign" place="left_margin"/>
+    
+    <mark method="pen" name="dash" place="right_margin"/> <!--publi-->
+    <mark method="pen" name="dash" place="right_margin"/> <!--Ap-->
+    <mark method="pen" name="dash" place="right_margin"/> <!--stir-->
+    
+    <mark language="LA" method="pen" name="plus_sign" place="intext" text="intercessionem"/>
+    <mark method="pen" name="diacritic" place="intext"/> <!--above 'e' of facile-->
+    <mark method="pen" name="apostrophe" place="intext"/> <!--above quisq[ue]-->
+    
+</annotation>
+</transcription>

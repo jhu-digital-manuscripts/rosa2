@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonRB16th12.frontmatter.flyleaf.003r.tif" pagination="Title Page" reader="Harvey" signature="[Air]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        gabrielharuejus.
+                    </marginalia_text>
+                    <person name="Gabriel Harvey"/>
+                </position>
+            </language>
+            <translation>
+                Gabriel Harvey.
+            </translation>
+        </marginalia>
+
+        <mark method="pen" name="comma" place="intext"/> <!-- Latine -->
+        
+        
+    </annotation>
+</transcription>

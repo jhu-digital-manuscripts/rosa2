@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.030r.tif" reader="Harvey" signature="Eiiii[r]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>A discours of speaking , and writing.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>s[upr]a.</marginalia_text>
+                    <internal_ref>
+                        <target ref="Newberry27495:case_712_c27495_062" text="s[upr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>[See] above.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="without any payne" type="straight"/>
+        <underline language="LA" method="pen" text="most perfect" type="straight"/>
+        <underline language="LA" method="pen" text="in that exercise" type="straight"/>
+        <underline language="LA" method="chalk" text="one measure" type="straight"/>
+        <underline language="LA" method="pen" text="hath a good grace," type="straight"/>
+        <underline language="LA" method="pen" text="he roule out but" type="straight"/>
+        <underline language="LA" method="pen" text="wyth a sweete" type="straight"/>
+        <underline language="LA" method="pen" text="so easily that a" type="straight"/>
+        <underline language="LA" method="chalk" text="one lyne not studyed vpon, one draught with the pensel sleightly drawen" type="straight"/>
+        <underline language="LA" method="chalk" text="the hand without the guiding of any" type="straight"/>
+        <underline language="LA" method="pen" text="the excellency of the workman" type="straight"/>
+        <underline language="LA" method="chalk" text="and in euerye thyng he shall" type="straight"/>
+        <underline language="LA" method="pen" text="haue a good grace, and" type="straight"/>
+        <underline language="LA" method="chalk" text="and especially in speaking, if be auoide" type="straight"/>
+        <underline language="LA" method="pen" text="especially in speaking" type="straight"/>
+        <underline language="LA" method="chalk" text="which errour many men runne, and some" type="straight"/>
+        <underline language="LA" method="pen" text="speake the Romayne" type="straight"/>
+        <underline language="LA" method="pen" text="ouer great desier to show much knowledge" type="straight"/>
+        <underline language="LA" method="pen" text="a most odyous vice" type="straight"/>
+        
+        <underline language="LA" method="pen" text="A slight trick" type="straight"/>
+        <underline language="LA" method="pen" text="be wel languaged" type="straight"/>
+        <underline language="LA" method="pen" text="Auncient Tuscane" type="straight"/>
+        
+        <symbol name="Mars" place="right_margin"/>
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="chalk" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/> <!--partly in printed text-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--lan-->
+        
+        <mark method="pen" name="bracket" place="intext"/> <!--thing. Therfore-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="speaking"/>
+        <mark method="pen" name="dot" place="intext"/> <!--Frenche, and-->
+        
+    </annotation>
+</transcription>

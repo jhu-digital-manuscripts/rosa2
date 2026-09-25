@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="RCP7831-1.022r.tif" pagination="33" reader="Dee" signature="E[r]"/>
+    <annotation>
+        
+        <marginalia anchor_text="audaciam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aucadia ex ♄ q[u]omo[do]</marginalia_text>
+                    <symbol_in_text name="Saturn"/>
+                </position>
+            </language>
+            <translation>How audacity [is caused] by Saturn.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="timorem eitam sibi adiungit, cum extrema ignauia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Timor. Ignavia [...]</marginalia_text>
+                </position>
+            </language>
+            <translation>Fear. Idleness.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="audaciam conciliat" type="straight"/>
+        <underline language="LA" method="pen" text="refrixerit" type="straight"/>
+        <underline language="LA" method="pen" text="ad frigiditatis" type="straight"/>
+        <underline language="LA" method="pen" text="timorem etiam sibi adiungit" type="straight"/>
+        <underline language="LA" method="pen" text="extrema ignauia" type="straight"/>
+        <underline language="LA" method="pen" text="in amicitia querulos" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

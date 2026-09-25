@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tei-c.org/ns/1.0" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscript</note>
+          <note type="commonName">Ausburg Cod.I.4.2 3</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="120" unit="folios">120</measure>
+            <dimensions>
+              <height unit="mm"/>
+              <width unit="mm"/>
+            </dimensions>
+          </extent>
+          <note type="illustrations">5</note>
+          <note type="material">Parchment</note>
+          <pubPlace>France</pubPlace>
+          <date notBefore="1300" notAfter="1350">14th century</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Augsburg, Germany</settlement>
+            <repository>Universitätsbibliothek Augsburg</repository>
+            <idno>Cod.I.4.2 3</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="120v">1r-120v</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">120</note>
+              <note type="illustrations">5</note>
+              <note type="linesPerColumn">40</note>
+              <note type="leavesPerGathering">8</note>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

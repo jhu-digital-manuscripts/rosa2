@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.141r.tif" pagination="281" reader="John Dee" signature="s 5"/> 
+    <annotation>
+        
+        <marginalia anchor_text="ἦθη" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ἦθη</marginalia_text>
+                </position>
+            </language>
+            <translation>Mores.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἦθη" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quo</marginalia_text>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ἦθη</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>mores dicuntur</marginalia_text>
+                </position>
+            </language>
+            <translation>Where [in Greek] 'mores' are called mores.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="πάθος" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>πάθος</marginalia_text>
+                </position>
+            </language>
+            <translation>Feeling.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="metum tamen duplicem intelligi uolo, qurm patimur, &amp; quem facimus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Metus Duplex</marginalia_text>
+                </position>
+            </language>
+            <translation>Two forms of fear.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="inuidum: nanq[ue] altera inuidum, altera inuidiosum facit." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Invidia Duplex.</marginalia_text>
+                </position>
+            </language>
+            <translation>Two forms of envy.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Nam qui dum dicit, malus uidetur, uitq[ue] male dicit" type="straight"/>
+        <underline language="LA" method="pen" text="ac mite, nihil superbum, nihil elatum saltem ac sublime de" type="straight"/>
+        <underline language="LA" method="pen" text="Propriè, iucundè, credibiliter dicere sat est." type="straight"/>
+        <underline language="LA" method="pen" text="illud comoediae, hoc tragoediae simile. Haec pars circa iram, odium, metum, inuidiam, miseratione[m]: ferè tota uersatur.              Quae" type="straight"/>
+        <underline language="LA" method="pen" text="Nam quaedam uidentur grauia per se, parricidium, caedes, ueneficium: quaedam efficienda sunt. Id" type="straight"/>
+        <underline language="LA" method="pen" text="exaggeramus" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.208r.tif" pagination="407" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Ovvenus de Glendor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Owenus.</marginalia_text>
+                    <person name="Owen Glendower"/>
+                </position>
+            </language>
+            <translation>Owen.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Halvveden hil" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Halweden Hil. Halido[n]ton. vulgariter</marginalia_text>
+                    <location name="Halidon Hill"/>
+                </position>
+            </language>
+            <translation>Halweden hill commonly called Homilidon.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Ovvenus de Glendor, cum comitiua Cambrensium" type="straight"/>
+        <underline language="LA" method="pen" text="irruptionibus, penè totam militiam Herefordensis comitatus prouocauit ad arma" type="straight"/>
+        <underline language="LA" method="pen" text="proditione" type="double"/>
+        <underline language="LA" method="pen" text="quàm mille viris" type="double"/>
+        <underline language="LA" method="pen" text="collectis exercitibus" type="straight"/>
+        <underline language="LA" method="pen" text="Ovvenum de Glendor" type="straight"/>
+        <underline language="LA" method="pen" text="nihil profuit ta[n]tus armorum" type="straight"/>
+        <underline language="LA" method="pen" text="arte magica" type="double"/>
+        <underline language="LA" method="pen" text="qui dicerent haec aduersa arte fratrum Minorum contra regem fuisse co[m]mentata, qui" type="straight"/>
+        <underline language="LA" method="pen" text="parti VVallici" type="double"/>
+        <underline language="LA" method="pen" text="necessitate cogente" type="double"/>
+        <underline language="LA" method="pen" text="incensam patriam &amp; praedatam" type="straight"/>
+        <underline language="LA" method="pen" text="Halvveden hil" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- aduersa, arte -->
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="tripunctus" place="tail"/>
+        
+    </annotation>
+</transcription>

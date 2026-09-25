@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.088r.tif" pagination="175" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Demosthene" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Demosthenes.</marginalia_text>
+                    <person name="Demosthenes"/>
+                </position>
+            </language>
+            <translation>Demosthenes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sallustius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sallustius.</marginalia_text>
+                    <person name="Sallust"/>
+                </position>
+            </language>
+            <translation>Sallust.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ciceronem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cicero.</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Scauro" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Scauro</marginalia_text>
+                    <book title="Pro Scauro"/>
+                </position>
+            </language>
+            <translation>Pro Scauro</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Rabirio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Rabirio</marginalia_text>
+                    <book title="Pro Rabirio Posthumo"/>
+                </position>
+            </language>
+            <translation>Pro Rabirio.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="pro Cluentio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Clue[n]tio</marginalia_text>
+                    <book title="Pro Cluentio"/>
+                </position>
+            </language>
+            <translation>Pro Cluentio.</translation> 
+        </marginalia>
+        
+        
+        <marginalia anchor_text="pro Ligario" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Ligario</marginalia_text>
+                    <book title="Pro Ligario"/>
+                </position>
+            </language>
+            <translation>Pro Ligario.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uulgare" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Uulgare.</marginalia_text>
+                </position>
+            </language>
+            <translation>Commonly.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="co[m]mune" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Co[m]mune.</marginalia_text>
+                </position>
+            </language>
+            <translation>Ordinarily.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="com[m]utabile" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Co[m]mutabile</marginalia_text>
+                </position>
+            </language>
+            <translation>Interchangeable.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="separatu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Separatu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Detached.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="translatu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Translatu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Transferred.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristoteles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aristoeles.</marginalia_text>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>Aristotle.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="cui diuina illa pro" type="straight"/>
+        <underline language="LA" method="pen" text="quorum pleraq[ue] non principij modò sunt uitia, sed totius orationis. Haec" type="straight"/>
+        
+        <numeral place="right_margin">1</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">4</numeral>
+        <numeral place="right_margin">5</numeral>
+        <numeral place="right_margin">6</numeral>
+        
+    </annotation>
+</transcription>

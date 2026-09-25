@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.058r.tif" pagination="51" reader="John Dee" signature="N iij"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Consilium.</marginalia_text>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ἀκμὴ</marginalia_text> 
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vit[a]e.</marginalia_text>
+                </position>
+            </language>
+            <translation>Advice. The peak of life.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Imò et aliq[u]ibus 30 annos natis.</marginalia_text>
+                </position>
+            </language>
+            <translation>Indeed, even by others born 30 years ago.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="propter Martis natura[m]" type="straight"/>
+        <underline language="LA" method="pen" text="carens iudicio &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="pueritia tertio" type="straight"/>
+        <underline language="LA" method="pen" text="ut planta quasi, nec" type="straight"/> 
+        
+    </annotation>
+</transcription>

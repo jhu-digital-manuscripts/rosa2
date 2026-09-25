@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 RdelaR/tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscrit</note>
+          <note type="commonName">Bodmer 79</note>
+          <title>Roman de la Rose</title>
+          <extent><measure quantity="138" unit="folios">138 feuillets</measure><dimensions><height unit="mm">265</height><width unit="mm">180</width></dimensions> --&gt;
+               </extent>
+          <note type="illustrations">22</note>
+          <note type="material">parchemin</note>
+          <pubPlace>France</pubPlace>
+          <date notAfter="1308" notBefore="1308">14e siècle</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Cologny, Suisse</settlement>
+            <repository>Fondation Martin Bodmer</repository>
+            <idno>Bodmer 79</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="138r">1r-138r</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">138</note>
+              <note type="illustrations">22</note>
+              <note type="linesPerColumn">40</note>
+              <note type="leavesPerGathering">8</note>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.073v.tif" pagination="[66v]" reader="John Dee" signature="[R ij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Et iuxta sua propria decreta fo 169 maledice[n]tissimu[m]</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:357" text="169"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>And alike his own decrees, folio 169, most evil.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vide infra fo. 281 279. v.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:581" text="281"/>
+                        <target ref="RCP7134:578" text="279. v."/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See below, folio 281 and 279 verso.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="rationem" hand="English_secretary">
+            <language ident="EL">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>διάνοια</marginalia_text>
+                </position>
+            </language>
+            <translation>Reason.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="radios" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>malos</marginalia_text> 
+                </position>
+            </language>
+            <translation>Bad.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Venerem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>quonia[m] [tunc] est significatrix matris</marginalia_text> <!--JG: Unsure abt 'tunc'--> <!-- FSF: maybe tum? -->
+                </position>
+            </language>
+            <translation>Because then it is the signifier of the mother.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="grauitatem" type="straight"/>
+        <underline language="LA" method="pen" text="moderationem" type="straight"/>
+        <underline language="LA" method="pen" text="continentiam" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; fastum" type="straight"/>
+        <underline language="LA" method="pen" text="uoluptatem" type="straight"/>
+        <underline language="LA" method="pen" text="concupisentiam" type="straight"/>
+        <underline language="LA" method="pen" text="ingenium" type="straight"/>
+        <underline language="LA" method="pen" text="imaginationem" type="straight"/>
+        <underline language="LA" method="pen" text="eo debilis" type="straight"/>
+        <underline language="LA" method="pen" text="radios" type="straight"/>
+        <underline language="LA" method="pen" text="facit praecipitem" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; iracundum" type="straight"/>
+        <underline language="LA" method="pen" text="Venerem" type="straight"/>
+        
+    </annotation>
+</transcription>

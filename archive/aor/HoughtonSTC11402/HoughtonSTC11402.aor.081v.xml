@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.081v.tif" reader="Harvey" signature="[Kii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>an od practis.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ide[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>Likewise.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Lucullus; imbusshement; slewe hym" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Lucullus slayne by [the] Scordiscians ambusshment.</marginalia_text>
+                    <person name="Lucius Licinius Lucullus"/> <!--JG: Unclear which Lucullus this is-->
+                    <emphasis method="pen" text="Lucullus" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Lucullus cawght in A trapp, &amp; slain.</marginalia_text>
+                    <person name="Lucius Licinius Lucullus"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="the sinowlder ryse vp, supposed" type="straight"/>
+        <underline language="EN" method="pen" text="ranne backe" type="straight"/>
+        <underline language="EN" method="pen" text="were incontred of those" type="straight"/>
+        <underline language="EN" method="pen" text="that laye in embusshement" type="straight"/>
+        <underline language="EN" method="pen" text="nowe folowynge" type="straight"/>
+        <underline language="EN" method="pen" text="in imbusshement" type="straight"/>
+        <underline language="EN" method="pen" text="a fewe" type="straight"/>
+        <underline language="EN" method="pen" text="Socobrigians beastes awaye" type="straight"/>
+        <underline language="EN" method="pen" text="to rescue they" type="straight"/>
+        <underline language="EN" method="pen" text="folowed after the robbers" type="straight"/>
+        <underline language="EN" method="pen" text="semblaunce to flee" type="straight"/>
+        <underline language="EN" method="pen" text="Whan Lucullus" type="straight"/>
+        <underline language="EN" method="pen" text="Scordiscians horsemen" type="straight"/>
+        <underline language="EN" method="pen" text="dryue away theyr beastes" type="straight"/>
+        <underline language="EN" method="pen" text="to issue out of the" type="straight"/>
+        <underline language="EN" method="pen" text="feynynge to flee, they" type="straight"/>
+        <underline language="EN" method="pen" text="brought Lucullus" type="straight"/>
+        <underline language="EN" method="pen" text="pursuinge them" type="straight"/>
+        <underline language="EN" method="pen" text="where theyr imbusshement lay" type="straight"/>
+        <underline language="EN" method="pen" text="slewe hym" type="straight"/>
+        <underline language="EN" method="pen" text="and. viiii." type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--sem-->
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="folowed after the robbers"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Scordiscians"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="dryue away theyr beastes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="feynynge to flee"/>
+        
+    </annotation>
+</transcription>

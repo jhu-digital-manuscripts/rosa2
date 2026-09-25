@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.162r.tif" pagination="147" reader="Harvey" signature="K2[r]"/>	<!-- ABO 166right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Bacons Essayes. Julians Ca[e]sars, &amp; Misopogon.
+					</marginalia_text>
+					<person name="Francis Bacon"/>
+					<person name="Julian"/>
+					<book title="Essays"/>
+					<book title="Caesars"/>
+					<book title="Misopogon"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Articuli articuloru[m]: et mera sententiaru[m] spicula.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The moments of moments: and the pure stings of thoughts.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Content with his owne Epicycle.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Ca[e]tera in punctis artium, philosophia[e], professionu[m].)
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The remainder in the points of arts, philosophy, and the professions.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Satyra[e] Persij, Juuenalis, Horatij.
+						Argutissimi etiam Ausonius, Politianus, Morus.
+					</marginalia_text>
+					<person name="Juvenal"/>
+					<person name="Ausonius"/>
+					<person name="Angelo Poliziano"/>
+					<person name="Thomas More"/> 
+					<book title="Satires"/>
+					<book title="Horace's Satires"/>
+				</position>
+			</language>
+			<translation>Juvenal's and Horace's 'Satires'. Also the most eloquent Ausonius, Poliziano, and Thomas Moore.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Eliots dialogs: Gascoignes steel-glasse: Greenes quip for an vpstart courtier;
+						&amp; his art of Conniecatching: Diets drie dinner; a fresh supplie of 
+						Mensa philosophica: the Tragedie of Hamlet: Richard 3.
+					</marginalia_text>
+					<person name="John Eliot"/>
+					<person name="George Gascoigne"/>
+					<person name="Robert Greene"/>
+					<book title="Ortho-epia gallica"/>
+					<book title="The Steele Glas"/>
+					<book title="Quip for an Upstart Courtier"/>
+					<book title="The Second Part of Conny-catching"/>
+					<book title="The Thirde and Last Part of Conny-Catching"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Excellunt aduersaria[e] orationes prudentissimoru[m] Senatoru[m], Ca[e]saris, et Catonis apud Sallust:
+						Drancis, et Turni apud Virgiliu[m]: Aiacis, et Vlyssis apud Ouidiu[m]: A[e]schinis, et
+					</marginalia_text>
+					<person name="Julius Caesar"/>
+					<person name="Cato the Elder"/>
+					<person name="Sallust"/>
+					<person name="Drances"/> 
+					<person name="Turnus"/> 
+					<person name="Virgil"/>
+					<person name="Ajax"/>
+					<person name="Odysseus"/>
+					<person name="Aeschines"/>
+					<person name="Demosthenes"/>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						Demosthenis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The rival speeches of the most prudent senators, Caesar and Cato, excel in Sallust: of Daunus and Turnus in Virgil:
+				of Ajax and Odysseus in Ovid: of Aeschines and Demonsthenes.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="il vecchio" type="straight"/>
+		<underline language="IT" method="pen" text="quanto tempo fosse" type="straight"/>
+		<underline language="IT" method="pen" text="Gionanni" type="straight"/>
+		<underline language="IT" method="pen" text="è vn'anno" type="straight"/>
+		<underline language="IT" method="pen" text="stimi tè tanto sauio" type="straight"/>
+		<underline language="IT" method="pen" text="tanto stolto, che" type="straight"/>
+		<underline language="IT" method="pen" text="meglio conosciuto la natura" type="straight"/>
+		<underline language="IT" method="pen" text="hò io in dieci" type="straight"/>
+		<underline language="IT" method="pen" text="Due mogli d'un sol" type="straight"/>
+		<underline language="IT" method="pen" text="SOCRATE" type="straight"/>
+		<underline language="IT" method="pen" text="bruttissimo" type="straight"/>
+		<underline language="IT" method="pen" text="Diauolo" type="straight"/>
+		<underline language="IT" method="pen" text="fussi bello" type="straight"/>
+		<underline language="IT" method="pen" text="che sono sì brutto" type="straight"/>
+		<underline language="IT" method="pen" text="facende di Gioue" type="straight"/>
+		<underline language="IT" method="pen" text="Chilone" type="straight"/>
+		<underline language="IT" method="pen" text="Esopo" type="straight"/>
+		<underline language="IT" method="pen" text="abbassa" type="straight"/>
+		<underline language="IT" method="pen" text="inalza" type="straight"/>
+		<underline language="IT" method="pen" text="sottosopra à vice[n]da si voltino" type="straight"/>
+		<underline language="IT" method="pen" text="Le falsità de" type="straight"/>
+		<underline language="IT" method="pen" text="Iddij gentili" type="straight"/>
+		<underline language="IT" method="pen" text="IONE" type="straight"/>
+		<underline language="IT" method="pen" text="Gioue" type="straight"/>
+		<underline language="IT" method="pen" text="d'una nube, &amp; impregnolla" type="straight"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- per -->
+		<mark method="pen" name="dot" place="right_margin"/> <!-- mani -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- fa -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- filo -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- continua --> 
+		
+		<mark method="pen" name="dot" place="intext"/> <!-- hauena, lequai -->
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="che sono sì brutto"/>
+		
+    </annotation>
+</transcription>

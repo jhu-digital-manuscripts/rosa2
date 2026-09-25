@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>59</illustrations>
+    <totalPages>195</totalPages>
+    <dimensions units="mm">
+        <width>200</width>
+        <height>280</height>
+    </dimensions>
+    <dates>
+        <startDate>1400</startDate>
+        <endDate>1499</endDate>
+    </dates>
+    <texts>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="195r" start="1r">195</pages>
+            <illustrations>59</illustrations>
+            <linesPerColumn>28</linesPerColumn>
+            <leavesPerGathering>8</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Douce 332</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>Parchment</material>
+            <origin>France</origin>
+            <currentLocation>Oxford</currentLocation>
+            <repository>Bodleian Library</repository>
+            <shelfmark>MS Douce 332</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Douce 332</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>Parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Oxford</currentLocation>
+            <repository>Bodleian Library</repository>
+            <shelfmark>MS Douce 332</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

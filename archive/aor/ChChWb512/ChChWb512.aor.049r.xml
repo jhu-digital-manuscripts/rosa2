@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.049r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="naues intra maria i[n] maiori p[ar]te submers[a]e" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        infelix navigiu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>An unfortunate vessel.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Fl[oruit] Gainas Gothus Magister vtriusq[ue] militu[m] imp[er]ium in oriente arripuit A[nn]o Chr[ist]i 398.
+                    </marginalia_text>
+                    <person name="Gainas"/>
+                </position>
+            </language>
+            <translation>Gainas the Gothic leader lived at this time, and seized both the army and the empire in the east in the year of the Lord 398.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="altera Brita[n]nia" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        little Brittayn
+                    </marginalia_text>
+                    <location name="Britain"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Guanini &amp; Melg[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="eas Ambrones" type="straight"/>
+        <underline language="LA" method="pen" text="Interea Maximianus Rom[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="altera Brita[n[nia vocabat" type="straight"/>
+        
+    </annotation>
+</transcription>

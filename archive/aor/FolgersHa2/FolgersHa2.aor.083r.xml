@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.083r.tif" reader="Harvey" signature="**3[r]"/>	<!-- ABO 87right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Pluris valent, non qui plura possu[n]t, sed qui plus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				More valuable are not those men who can do more things, but those who can be more.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Sanguis uva[e].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The blood of the grape.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Libauerunt de sanguine uva[e], filij Aaronis. Vt eccè
+						in splendidissimo Encomio Simonis Onia[e]:
+						/ cui nullum Elogium par, in omni humanitate, Romana,
+						Attica, Heroica.
+					</marginalia_text>
+					<person name="Aaron"/>
+					<person name="Simon I"/>
+					<person name="Onias I"/>
+					<X-ref book_title="Book of Ecclesiastes" language="LA" person="" text="de sanguine uvae"/>
+				</position>
+			</language>
+			<translation>
+				The children of Aaron poured out the blood of the grape in libation.
+				And here in this most splendid encomium of Simon, son of Onia, 
+				to which no other saying is equal, in any culture, Roman, Greek, or Heroic.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Alij Sui, et alieni: solus Eutrapelus suissimus. Sua Singula
+						assiduè augens, et mirificè multiplicans.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				Other men are beholden to a friend or stranger, only Eutrapelus is his very own.
+				He constantly increases and wondrously multiplies his singular deeds.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Omnes in vno auxeses, hyperbola[e], metamorphoses, theogonia[e].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				All amplification, increase, transformation, theogony in one man.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Multi vrbani, non pragmatici: multi pragmatici, non vrbani: Da mihi vrbanu[m]
+						pragmaticum: tam politicu[m],
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="head">
+					<marginalia_text>
+						quàm facetu[m]: Solum =
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						= Solum combinatorem salium, et stratagematu[m]: ad Optimu[m], qui esse potest, pra[e]sente[m]
+						vsum. Semper tibi pendeat [h]amus Fauoris, et Commoditatis.			
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Many urbane men are not pragmatic, and many pragmatic men are not urbane. 
+				Give me an urbane and pragmatic man, as political as he is witty;
+				give me only him who combines wit and stratagems, 
+				approaching the best possible practice for the present time.
+				Let a hook always hang for your favor and advantage.		
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="gli adulatori" type="straight"/>
+		<underline language="IT" method="pen" text="riconciliar i domestici" type="straight"/>
+		<underline language="IT" method="pen" text="del vano cicalar de'populi" type="straight"/>
+		<underline language="IT" method="pen" text="Alle proposte punge[n]ti" type="straight"/>
+		<underline language="IT" method="pen" text="riposte morde[n]ti conuenirsi" type="straight"/>
+		<underline language="IT" method="pen" text="adosso i burlatori" type="straight"/>
+		<underline language="IT" method="pen" text="falli minuti, piu tosto" type="straight"/>
+		<underline language="IT" method="pen" text="Mio" type="straight"/>
+		<underline language="IT" method="pen" text="Tuo" type="straight"/>
+		<underline language="IT" method="pen" text="guastar il mondo" type="straight"/>
+		<underline language="IT" method="pen" text="consigli vili, essere" type="straight"/>
+		<underline language="IT" method="pen" text="contra potenti" type="straight"/>
+		<underline language="IT" method="pen" text="La virtu della" type="straight"/>
+		<underline language="IT" method="pen" text="mansueti, &amp; pietosi" type="straight"/>
+		<underline language="IT" method="pen" text="ignoranti vendere piu" type="straight"/>
+		<underline language="IT" method="pen" text="Legista ignorante" type="straight"/>
+		<underline language="IT" method="pen" text="alla necessità" type="straight"/>
+		<underline language="IT" method="pen" text="hà leggi" type="straight"/>
+		<underline language="IT" method="pen" text="dall'opere sue, non" type="straight"/>
+		<underline language="IT" method="pen" text="di buona disciplina" type="straight"/>
+		<underline language="IT" method="pen" text="di co[n]tine[n]za, e" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="non dall'altrui" type="straight"/>
+		
+		<symbol name="JC" place="right_margin"/>
+		<symbol name="SS" place="right_margin"/>
+		
+		<symbol name="JC" place="intext"/>
+		
+		<mark method="pen" name="plus_sign" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!--malesi-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--per-->
+		<mark method="pen" name="quotation_mark" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!--magna-->
+		<mark method="pen" name="plus_sign" place="right_margin"/>
+		<mark method="pen" name="equal_sign" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!--ricu-->
+		
+		<mark method="pen" name="equal_sign" place="intext"/>
+		
+    </annotation>
+</transcription>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note rend="IDENTIFICATION">
+          <p>Cox Macro, privately owned, anonymous.  French, first half of the 14th century. </p>
+        </note>
+        <note rend="BASIC INFORMATION">
+          <p>Parchment, 295 x 220 mm, 163 folios. </p>
+        </note>
+        <note rend="MATERIAL">
+          <p><material>Parchment</material> has minor soiling due to use.  A few worm holes in first 4 and final 8 fols.  Fol. <locus>155r</locus> missing and replaced with a later piece of parchment (note later script that attempts to approximate the hand of the Rose text and the ruling that is clearly not original).  </p>
+        </note>
+        <note rend="QUIRES">
+          <list>
+            <head>Collation:</head>
+            <item n="I">
+              <locus from="1" to="8">1-8</locus>
+            </item>
+            <item n="II">
+              <locus from="9" to="16">9-16</locus>
+            </item>
+            <item n="III">
+              <locus from="17" to="24">17-24</locus>
+            </item>
+            <item n="IV">
+              <locus from="25" to="32">25-32</locus>
+            </item>
+            <item n="V">
+              <locus from="33" to="40">33-40</locus>
+            </item>
+            <item n="VI">
+              <locus from="41" to="48">41-48</locus>
+            </item>
+            <item n="VII">
+              <locus from="49" to="56">49-56</locus>
+            </item>
+            <item n="VIII"><locus from="57" to="66">57-66</locus>gathering of ten (A)</item>
+            <item n="IX"><locus from="67" to="74">67-74</locus>gathering of eight (B)</item>
+            <item n="X"><locus from="75" to="80">75-80</locus>gathering of six (C) (order should be ACB)</item>
+            <item n="XI">
+              <locus from="81" to="88">81-88</locus>
+            </item>
+            <item n="XII"><locus from="89" to="96">89-96</locus>(note modern foliation gets off in this gathering)</item>
+            <item n="XIII">
+              <locus from="97" to="104">97-104</locus>
+            </item>
+            <item n="XIV">
+              <locus from="105" to="112">105-112</locus>
+            </item>
+            <item n="XV">
+              <locus from="113" to="120">113-120</locus>
+            </item>
+            <item n="XVI">
+              <locus from="121" to="128">121-128</locus>
+            </item>
+            <item n="XVII">
+              <locus from="129" to="136">129-136</locus>
+            </item>
+            <item n="XVIII">
+              <locus from="137" to="144">137-144</locus>
+            </item>
+            <item n="XIX">
+              <locus from="145" to="152">145-152</locus>
+            </item>
+            <item n="XX"><locus from="153" to="154">153-154</locus>imperfect, two stubs remaining; formerly a quire containing four leaves</item>
+            <item>(fol. 155 - added singleton)</item>
+            <item n="XXI">
+              <locus from="156" to="163">156-163</locus>
+              <hi rend="italics">La Chastelaine de Vergi</hi>
+            </item>
+          </list>
+          <p>Bound mostly in quarternios, with exceptions noted above. Fols <locus from="67" to="74">67-74</locus> and <locus from="75" to="80">75-80</locus> are bound out of order; notations at the bottoms of <locus>66v</locus> (Vte usque ad octa folio) and <locus>74v</locus> (Vte usque ad vi folia) instruct the reader to jump ahead eight and six folios respectively in order to read the text in the correct order.  The hand responsible for these instructions is early, suggesting that the folios were misbound early in the history of the codex. No quire marks or signatures.  Catchwords on <locus>32v</locus> and <locus>40v</locus> only. Modern foliation on lower right of rectos in pencil skips folio <locus>92</locus>, after which count is off by one (Bond and Faye report 162 folios due to incorrect modern foliation). </p>
+        </note>
+        <note rend="LAYOUT">
+          <p>Ruled in brown ink.  A few holes from prickings survive in inner margin and along bottom.  Ruled in two columns. Eight vertical and two horizontal through lines. Each column is delineated by a through line on either side and contains two additional through lines, one forming a compartment for the first letter of each line, and the second an empty compartment to separate that letter from the rest of the line. One horizontal line each at top and bottom of text block. Text block 205 x 143 mm. 36 lines per column. </p>
+        </note>
+        <note rend="SCRIPT">
+          <p>The manuscript is the work of two scribes; one completes up through fol. <locus>27v</locus> and the second finishes the manuscript.  Written in textualis throughout. Corrections, including lining through, erasure, and the use of  marginal notation to indicate lines out of order, distributed sparsely throughout, some in a different hand.  </p>
+        </note>
+        <note rend="DECORATION">
+          <p>No rubrication or highlighting other than initials.  Foliate initial begins <hi rend="italics">Roman de la Rose</hi> - pinkish M with white tracery, 33 x 40 mm - tendrils with leaves and topped by animal heads are within legs of letter.  Blue background with white tracery.  Littera duplex initials with penwork throughout, alternating blue letter with red penwork and red letter with blue penwork.  Historiated initial U at beginning of La Chastelaine de Vergi, 44 x 42 mm; the U contains an image with a tree in the center.  On the left stands the lover, on the right a woman standing in a doorway.  A small white dogs runs across the bottom, heading towards the lover.  Lover dressed in blue robe, woman in orange and blue. Red background within letter.  Pinkish letter with white tracery set on blue background with white tracery.  Tendril extends into upper margin.  No line fillers or borders. </p>
+          <p>One miniature at the beginning of Roman de la Rose, 52 x 66 mm, features the poet asleep in bed with Dangier at foot of bed holding club. A tree stands at center in background.  Blue bed clothes, brownish-red robe on Dangier, red flowers on tree, red frame with white tracery.  Orange background.  A number of blank areas ranging in size from 4-6 lines early in the manuscript may have been left for other decoration, or may have been rubrics or other features in the exemplar that were abandoned after some time by the copyist (e.g top of 12r, top of 12v, 14r, 14v, 15r).</p>
+        </note>
+        <note rend="BINDING">
+          <p>Five raised bands on spine.  Red morocco.  Gold pattern on spine; gilt ownership stamp of Hudson Gurney on front and back covers, center. Paper flyleaves and end papers.  Fol. 163 glued to paper flyleaf on verso side. </p>
+        </note>
+        <note rend="HISTORY">
+          <p>There are a number of ownership marks –throughout the manuscript:
+                  On verso of first flyleaf:  
+               </p>
+          <p>1. The "EX LIBRIS" bookplate of Clifford Rattey</p>
+          <p>2. <hi rend="italics">"This copy recorded by ? Ernest Langlois in his ed. of 1914 (Paris)/ for codical(?) description see: Cedric E. Pickford : 'Bull. John Rylands Library'/ Vol. 34. No 2 March/ 1952 pp. 333-365 ./ of 'Chastelaine(?) de Vergi. 11 ?? ?? 13th . ?? ". only ?? recorded/
+                  (none in U.K. or U.S.A.)"</hi>
+               
+               </p>
+          <p>Written on the back of the bookplate of Harry A. Walton, Jr., which has been glued along one edge to recto of the second fly leaf:</p>
+          <p>1. <hi rend="italics">This is a very good and valuable ?? of the/  Roman de la Rose.  At the end is the/pathetic tale of the Chateleaine de Vergy.
+               </hi>
+               </p>
+          <p>2. <hi rend="italics">*Douce</hi> (asterisk and ouce in pencil, D in pen)</p>
+          <p>3. <hi rend="italics">Though this MS is not illuminated,/ it is ???????????? of value from the/ purity of the Text - the date of it/ is about 1380. –</hi></p>
+          <p>4. <hi rend="italics">Cf. letter ?? Callins of ???????? Museum/ dated 29 October 1947, dating this MS/ Early 14th century/ CCR</hi></p>
+          <p>5. <hi rend="italics">*Monogrammic sign ? Francis Douce/ C??</hi></p>
+          <p>Written on fol. <locus>163r</locus>:</p>
+          <p>1. <hi rend="italics">A CELELA RANDRE HONEVR</hi> is written at the top left and, adjacent to this, <hi rend="italics">PLVS DEVIL Que Joye</hi></p>
+          <p>2. A monogram reading  <hi rend="italics">Ospo?inace</hi></p>
+          <p>Provenance given by Bond and Faye: "Sir Henry Spelman; Rev. Cox Macro; John Patterson (sale, 1820); Hudson Gurney; C. C. Rattey"</p>
+        </note>
+        <note rend="TEXT">
+          <p>1. <hi rend="italics">Roman de la Rose</hi> fols. 1r-155r<lb/>
+                  2. <hi rend="italics">La Chastelaine de Vergi</hi> fols. 156r-163v
+               </p>
+          <p>Previous descriptions:  Bond and Faye p. 524;  “'The Roman de la Rose' and a Treatise Attributed to Richard de Fournival; Two Mss. in the Johns Rylands Library,” <hi rend="italics">Bulletin of the John Rylands Library</hi>, XXXIV (1951-52) 344-49. </p>
+        </note>
+        <note>
+          <p>Description by Timothy L. Stinson</p>
+        </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscript</note>
+          <note type="commonName">Cox Macro Rose</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="163" unit="folios">163 folios</measure>
+            <dimensions>
+              <height unit="mm">295</height>
+              <width unit="mm">220</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">1</note>
+          <note type="material">parchment</note>
+          <pubPlace>France</pubPlace>
+          <date notAfter="1350" notBefore="1300">14th century</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Unspecified</settlement>
+            <repository>Privately owned, anonymous</repository>
+            <idno>Cox Macro Rose</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="155r">1r-155r</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">155</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">36</note>
+              <note type="leavesPerGathering">8</note>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+            <msItem n="2">
+              <locus from="156r" to="162v">156r-162v</locus>
+              <title>La Chastelaine de Vergi </title>
+              <note type="textid">chastelaine</note>
+              <note type="folios">7</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">36</note>
+              <note type="leavesPerGathering">8</note>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

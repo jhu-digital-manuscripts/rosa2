@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.046r.tif" pagination="32" reader="John Dee"/>   
+    <annotation>
+        
+        <marginalia anchor_text="le correnti" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>The curre[n]ts</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="pesci Rondini" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>flying fish</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pencil" other_reader="Unknown">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>46</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="vn col tridente" type="straight"/>
+        <underline language="IT" method="pen" text="le correnti" type="straight"/>
+        <underline language="IT" method="pen" text="vltimi dì" type="straight"/>
+        <underline language="IT" method="pen" text="andauano cosi ferme, &amp; ordinate" type="straight"/>
+        <underline language="IT" method="pen" text="indietro con le maree" type="straight"/>
+        <underline language="IT" method="pen" text="vn Rabi Orcado" type="straight"/>
+        <underline language="IT" method="pen" text="l'aria perseguitando gli Alcatrazi" type="straight"/>
+        <underline language="IT" method="pen" text="l'aria raccoglie" type="straight"/>
+        <underline language="IT" method="pen" text="dui Alcatrazi" type="straight"/>
+        <underline language="IT" method="pen" text="pesci Rondini" type="straight"/>
+        <underline language="IT" method="pen" text="palmo, &amp; con due alette" type="straight"/>
+        <underline language="IT" method="pen" text="del Pipistrello" type="straight"/>
+        <underline language="IT" method="pen" text="volano tal volta" type="straight"/>
+        <underline language="IT" method="pen" text="vna Lancia alto dall'acqua" type="straight"/>
+        <underline language="IT" method="pen" text="verso Nort mezo" type="straight"/>
+        <underline language="IT" method="pen" text="Alcatrazi" type="straight"/>
+        <underline language="IT" method="pen" text="vn Rabi Orcado" type="straight"/>
+        
+        <mark language="IT" method="pen" name="tripunctus" place="right_margin" text="l'aria perseguitando gli Alcatrazi"/>
+        
+        <errata amendedtext="46" copytext="32" language="IT"/>
+        
+    </annotation>
+</transcription>

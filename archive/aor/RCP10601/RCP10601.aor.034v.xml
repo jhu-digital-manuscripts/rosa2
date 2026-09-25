@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.034v.tif" pagination="68" reader="John Dee" signature="[e 2[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[I]esus</marginalia_text>
+                    <person name="Jesus Christ"/>
+                </position>
+            </language>
+            <translation>Jesus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sticheoma[n]tia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>sticheomantia</marginalia_text>
+                </position>
+            </language>
+            <translation>Stichomancy.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ut in omnibus delitesce[n]s" type="straight"/>
+        <underline language="LA" method="pen" text="sublimius" type="straight"/>
+        <underline language="LA" method="pen" text="generali omniu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="uniuersi mediatore" type="straight"/>
+        <underline language="LA" method="pen" text="illa sticheoma[n]tia" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- Messiae electo -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- electo subijci -->
+        
+    </annotation>
+</transcription>

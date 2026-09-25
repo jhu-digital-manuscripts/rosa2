@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+   <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+   
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <title>Letter to the Queen (<hi rend="italics">Epîstre a la reine</hi>)</title>
+         
+         </titleStmt>
+         
+         <publicationStmt>
+            
+            <distributor>MSEL</distributor>
+         
+         </publicationStmt>
+         
+         <notesStmt>
+            
+            <note rend="IDENTIFICATION">
+               
+               <p>Français 580, Bibliothèque national de France, Paris. Paris, c. 1405. </p>
+            
+            </note>
+            
+            <note rend="BASIC INFORMATION">
+               
+               <p>Parchment, 320 x 262 mm, 2 folios.</p>
+            
+            </note>
+            
+            <note rend="MATERIAL">
+               
+               <p> Slightly yellowed <material>parchment</material>. The <hi rend="italics">vis-à-vis</hi> rule is respected.</p>
+                  
+            </note>
+            
+            <note rend="QUIRES">
+               
+               <list>
+                  
+                  <head>Collation:</head>
+                  
+                  <item n="VII">
+                     
+                     <locus from="49" to="56">49-56</locus>
+                  
+                  </item>
+                  
+               </list>
+                
+               <p> ff. 2. Modern foliation in ink on the top right corner is correct, slightly faded. </p>
+            
+            </note>
+            
+            <note rend="LAYOUT">
+               
+               <p>There is evidence of ruling with light brown lines. There is no indication of pricking. There are two columns with 39 lines each.</p>
+            
+            </note>
+            
+            <note rend="SCRIPT">
+               
+               <p>The text is written evenly in brown ink. The text seems to have been written by one scribe in an ornate calligraphic cursive script. Punctuation marks are also used, especially the period and, less frequently, the comma. There are some corrections done by the hand of the main scribe.</p>
+            
+            </note>
+            
+            <note rend="DECORATION">
+               
+               <p>There is no ornamental decoration, nor decorated initials.</p>
+               <p> There is one miniature, which was created by the Master of the Moralized Ovid. The yellow frame surrounding the miniautre contains some foliate extenders on the top and left sides. This type of decorative frame is typical of this artist. The miniature has been doen in grisaille and it represents a scene that has nothing to do with the <hi rend="italics">Epistre</hi>.</p>
+               <p>Miniature:</p>
+               <list>
+                  <item> Fol. <locus>53</locus>, The Lover and the Lady. The text on the philactery says <hi rend="italics">"Mort ou merci"</hi>. </item>                                             
+                </list>
+            </note>
+            
+            <note rend="BINDING">
+               
+               <p> The manuscript is bound in fawn skin embossed with two gold fillets around the edge of the covers. On the spine appears the coat of arms of Jean Bigot embossed in gold five times. The title appears in gold letters on the spine, <hi rend="italics">"DU JEU DES ESCHETZ FOL. M.S."</hi>.</p>
+            </note>
+            
+            <note rend="HISTORY">
+               
+               <p>This manuscript can be dated to 1405, or slightly before that, taking into account the style of the miniatures, which are a product of a Flemish artist that was active in Paris at the turn of the 15th century.</p>
+               <p>Provenance: Robert le Moyne (15th-16th centuries); Guillemme Saro (16th century); Pierre (?) Du Chemyn (16th century). In the early 17th century, Jean Bigot, lord of Somménil and Cleuville and adviser of the Parliament of Normandy, bought this volume, and was catalogued in his library with the shelfmark 148. His ex-libris, carrying his family's coat of arms and his name, can be seen in the interior of the front cover. His name, barely visible through ultraviolet light, was erased from folio <locus>40</locus>. The manuscripts from the Bigot family were acquired by the abbot of Louvois for the royal library in 1706. Other shelfmarks also from the Bigot collection: C7; B25. Finally, the shelfmark from the royal library: 7073 (Regius). </p>
+                  
+            </note>
+            
+            <note rend="TEXT">
+               
+               <p>The actual manuscript contains multiple texts: </p>
+               <list>
+                  <item> Fols. <locus from="1" to="40">1-40</locus>, <hi rend="italics">Livre des nobles hommes et des gens de peuple selon le jeu des eschies</hi>, translated from Latin by Jacques de Cessoles, and into French by Brother Jehan de Vignay.</item>
+                  <item> Fols. <locus from="41" to="52">41-52</locus>, <hi rend="italics">Le Livre de Mellibée et de Prudence sa femme</hi>, from Albertanus, translated by Renaut de Louhans.</item>
+                  <item> Fols. <locus from="53" to="54">53-54</locus>, <hi rend="italics">Lettre de Christine de Pizan à «ma dame Ysabel, royne de France », du 5 octobre 1405</hi>.</item>
+                  <item> Fols. <locus from="55" to="56">55-56</locus>, List/Summary (?).</item>
+                  <item> Fols. <locus from="57" to="122">57-122</locus>, <hi rend="italics">Le Livre que le chevalier Geoffroi de la Tour Landry ost fait pour l'enseignements de ses filles et cetera</hi>.</item>
+                  <item> Fols. <locus from="123" to="131">123-131</locus>, <hi rend="italics">Le Roman de Fauvel</hi>.</item>
+                  </list> 
+              
+            </note>
+            
+            <note rend="AUTHOR">
+              
+               <p>
+*The information given here comes from direct observation and from Ouy, Gilbert, Christine Reno and Inès Villela-Petit.<hi rend="italics"> Album Christine de Pizan </hi>. Turnhout: Brepols, 2012. </p>
+<p> Description by Mónica Ann Walker Vadillo</p>
+            
+            </note>
+         
+         </notesStmt>
+         
+         <sourceDesc>
+            
+            <bibl>
+               
+               <note type="format">manuscript</note>
+               
+               <note type="commonName">Français 580</note>
+               
+               <title>Letter to the Queen (<hi rend="italics">Epîstre a la reine</hi>)</title>
+
+               
+               <extent>
+                  
+                  <measure quantity="2" unit="folios">2 folios</measure>
+                  
+                  <dimensions>
+                     
+                     <height unit="mm">320</height>
+                     
+                     <width unit="mm">262</width>
+                  
+                  </dimensions>
+               
+               </extent>
+               
+               <note type="illustrations">1</note>
+                        
+               
+               
+               
+               <note type="material">parchment</note>
+               
+               <pubPlace>Paris, France</pubPlace>
+     
+               <date notAfter="1500" notBefore="1400">15th century</date>
+            
+            </bibl>
+            
+            <msDesc>
+               
+               <msIdentifier>
+                  
+                  <settlement>Paris</settlement>
+                  
+                  <repository>Bibliothèque nationale de France</repository>
+                  
+                  <idno>Français 580</idno>
+               
+               </msIdentifier>
+            
+               <msContents>
+                  <msItem n="1">
+                     <locus from="53r" to="54v">53r-54v</locus>
+                     <title>Letter to the Queen (<hi rend="italics">Epîstre a la reine</hi>)</title>
+                     <note type="textid">Letter to the Queen (<hi rend="italics">Epistre a la reine</hi>)</note>
+                     <note type="folios">2</note>
+                     <note type="illustrations">1</note>
+                     <note type="linesPerColumn">39</note>
+                     <note type="leavesPerGathering">8</note>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         
+         </sourceDesc>
+      
+      </fileDesc>
+   
+   </teiHeader>
+   
+   <text>
+      
+      <body>
+         
+         <div> </div>
+      
+      </body>
+   
+   </text>
+
+</TEI>

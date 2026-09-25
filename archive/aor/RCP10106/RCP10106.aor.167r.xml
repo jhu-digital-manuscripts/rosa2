@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.167r.tif" pagination="333" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Quid igitur? fugiebant propter metum? quid metuebant? uim uidelicet. Poestis igitur principia negara, cùm extrema concedatis?" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Cecinna</marginalia_text>
+                    <book title="Pro Caecina"/>
+                </position>
+            </language>
+            <translation>Pro Caecina</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="similitudine" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>similitudo</marginalia_text>
+                </position>
+            </language>
+            <translation>Similarity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex contrario" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ex co[n]trario.</marginalia_text>
+                </position>
+            </language>
+            <translation>From the contrary.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="adolescentes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Adolesce[n]tes</marginalia_text>
+                </position>
+            </language>
+            <translation>Young boys.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iuuenes qui conuiuere solebant, constituerunt, ut in littore coenarent." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Exemplu[m] fictu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>False example.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="causa mortis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mortis causa</marginalia_text>
+                </position>
+            </language>
+            <translation>The cause of death.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mente" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mens</marginalia_text>
+                </position>
+            </language>
+            <translation>Mind.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ut in causa Cornelij quaesitum est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Cornelio</marginalia_text>
+                    <book title="Pro Cornelio"/>
+                </position>
+            </language>
+            <translation>Pro Cornelio.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Iuuenes qui conuiuere solebant, constituerunt" type="straight"/>
+        <underline language="LA" method="pen" text="per quem factum" type="straight"/>
+        <underline language="LA" method="pen" text="undecu[n]que causa fluxit" type="straight"/>
+        <underline language="LA" method="pen" text="Ad coenam inuitarit" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

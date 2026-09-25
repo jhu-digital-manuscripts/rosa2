@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.182r.tif" pagination="175" reader="John Dee" signature="xxiij"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>anno [1467 - deleted] 1476 vel 1475 mortu[us] rom[a]e</marginalia_text>
+                    <location name="Rome"/>
+                </position>
+            </language>
+            <translation>He died in Roma in the year 1476 or 1475.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Mo[n]teregius multa sibi ex alioru[m] laboribus" type="straight"/>
+        
+    </annotation>
+</transcription>

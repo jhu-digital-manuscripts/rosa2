@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.127r.tif" pagination="239" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="de auro Schaba" hand="Italian" id="RCPD126.6:263:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Quid si fuerit de auro Ophir prope Schaba in Oreente?</marginalia_text> 
+                    <location name="Ophir"/>
+                    <location name="Saba"/>
+                </position>
+            </language>
+            <translation>What if it was about the gold [of?] Ophir near Saba in the Orient?</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Scheba &amp; Seba; Schaba &amp; Saba" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Schaba et Seba.</marginalia_text>
+                    <location name="Saba"/>
+                    <location name="Sheba"/>
+                </position>
+            </language>
+            <translation>Saba and Sheba.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iosephi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Iosephus. Regina[m] Æthiopia[e] vult esse [Quae?] ad [?] venit</marginalia_text>  <!-- DO: Can't make some of this out, and not sure about translation --> 
+                    <!-- FSF: I am not sure either; the first word missing ends with a d, maybe quid?, and the second one starts sat, I think -->  <!-- DO: Second one 'Salomonem' or 'Salomone[m]'? -->
+                    <person name="Titus Flavius Josephus"/>
+                    <person name="Queen of Sheba"/>
+                    <person name="Solomon"/>
+                </position>
+            </language>
+            <translation>Josephus. She wants to be Queen of Ethiopia, who came to Solomon.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quàm etiam fallantur qui istam regionem Heuila, sunt interpretati Indiam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ista Seba no[n] est in India.</marginalia_text>
+                    <location name="Sheba"/>
+                    <location name="India"/>
+                </position>
+            </language>
+            <translation>That Sheba is not in India.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ptolomaeo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ptoloma[e]o</marginalia_text>
+                    <person name="Ptolemy"/>
+                </position>
+            </language>
+            <translation>By Ptolemy.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ad vtrunque mare" type="straight"/>
+        <underline language="LA" method="pen" text="Sabaeos &amp; Schabaeos" type="straight"/>
+        <underline language="LA" method="pen" text="Psalmus 72" type="straight"/>
+        <underline language="LA" method="pen" text="reges Schaba &amp; Saba" type="straight"/>
+        <underline id="RCPD126.6:263:u0001" language="LA" method="pen" text="de auro Arabiae" type="straight"/>
+        <underline language="LA" method="pen" text="mizzahab Scheba" type="straight"/>
+        <!-- FSF: I think you jumped de auro Schaba -->
+        <underline language="LA" method="pen" text="extremas mundi oras" type="straight"/>
+        <underline language="LA" method="pen" text="in Schaba" type="straight"/>
+        <underline language="LA" method="pen" text="Heuila" type="straight"/>
+        <underline language="LA" method="pen" text="autem Ismael" type="straight"/>
+        <underline language="LA" method="pen" text="ab Heuila vsque Sur" type="straight"/>
+        <underline language="LA" method="pen" text="prodiderit Iosephus de Heuila" type="straight"/>
+        <underline language="LA" method="pen" text="populos Africae" type="straight"/>
+        <underline language="LA" method="pen" text="Getuli" type="straight"/>
+        <underline language="LA" method="pen" text="qui istam" type="straight"/>
+        <underline language="LA" method="pen" text="interpretati Indiam" type="straight"/>
+        <underline language="LA" method="pen" text="quandam à Ptolomaeo" type="straight"/>
+        <underline language="LA" method="pen" text="Sabbatha" type="straight"/>
+        <underline language="LA" method="pen" text="Chus consederint in Arabiis prope suum parentem, &amp; Chusaeos ipsorum" type="straight"/>
+        <underline language="LA" method="pen" text="Schaba" type="straight"/>
+        <underline language="LA" method="pen" text="Regma" type="straight"/>
+        <underline language="LA" method="pen" text="tribuantur aurum, item lapilli, &amp; aromata" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        <physical_link>
+            <marginal_annotation idref="RCPD126.6:263:m0001"/>
+            <marginal_annotation idref="RCPD126.6:263:u0001"/>
+            <relation from="RCPD126.6:263:m0001" to="RCPD126.6:263:u0001" type="directed"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

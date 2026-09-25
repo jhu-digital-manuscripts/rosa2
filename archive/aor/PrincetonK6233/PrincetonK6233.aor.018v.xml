@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd"> 
+    
+<page filename="PrincetonK6233.018v.tif" pagination="4" reader="Harvey" signature="[a2v]"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Sabiniani in Obligationibus Jus Gentium respexeru[n]t: Proculeiani, non factu[m],
+                        aut nudu[m] Jus Gentium; sed ipsam facti causam, et naturalem a[e]quitatem.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The Sabinians respected being bound in the 'ius gentium'. For Proculians, the 'ius gentium' 
+                is neither a 'factum', nor a 'nudum factum' but the cause of a 'factum', and natural equality.
+            </translation>
+            <!-- JE: I'd appreciate the advice of a legal specialist here... -->
+            <!-- CG: Sorry, I won't be any help here! -->
+            <!--JG: For me this is quite puzzeling as well. It seems as if the discussion is about whether the law of nations is made (factum) (i.e. by people) or 'made bare (factum numdum) (i.e. has some sort of natural origin) (see: https://books.google.co.uk/books?id=DWlDAAAAcAAJ&pg=PA148&lpg=PA148&dq=jus+gentium+nudum+factum&source=bl&ots=WRD_ZKquIK&sig=tAk90uaOeMSxEuRP7vAqXo-bL6w&hl=en&sa=X&ei=AHrcVOGWG4bkaK_4gOgM&ved=0CC0Q6AEwAg#v=onepage&q=jus%20gentium%20nudum%20factum&f=false). I'll ask a specialist, though.-->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ius naturale" type="straight"/>
+        <underline language="LA" method="pen" text="ut ius ciuile" type="straight"/>
+        <underline language="LA" method="pen" text="honorarium" type="straight"/>
+        <underline language="LA" method="pen" text="aliâs tribunal" type="straight"/>
+        <underline language="LA" method="pen" text="ius cognationis" type="straight"/>
+        <underline language="LA" method="pen" text="ars boni" type="straight"/>
+        <underline language="LA" method="pen" text="sunt praecepta" type="straight"/>
+        <underline language="LA" method="pen" text="Publicum" type="straight"/>
+        <underline language="LA" method="pen" text="statu[m] rei Rom[ani]" type="straight"/>
+        <underline language="LA" method="pen" text="sacerdotibus" type="straight"/>
+        <underline language="LA" method="pen" text="magistratibus" type="straight"/>
+        <underline language="LA" method="pen" text="Priuatum" type="straight"/> 
+        <underline language="LA" method="pen" text="ex naturalibus" type="straight"/>
+        <underline language="LA" method="pen" text="gentium" type="straight"/>
+        <underline language="LA" method="pen" text="ciuilibus" type="straight"/>
+        <underline language="LA" method="pen" text="animalia" type="straight"/>
+        <underline language="LA" method="pen" text="Ius gentium" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- principio. Eius -->
+        
+    </annotation>
+</transcription>

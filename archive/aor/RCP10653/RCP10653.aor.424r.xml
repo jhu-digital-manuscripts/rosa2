@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.424r.tif" pagination="397" reader="John Dee" signature="[Llll[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="+Bogo" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        de Clare  
+                    </marginalia_text>
+                    <person name="Bogo de Clare"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="+ Bonus de Clara" type="straight"/>
+        <underline language="LA" method="pen" text="germanus Comitis Glouerni[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="multarum Rector ecclesiaru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="potius incubator" type="straight"/>
+        <underline language="LA" method="pen" text="subita nece interemptus" type="straight"/>
+        
+    </annotation>
+</transcription>

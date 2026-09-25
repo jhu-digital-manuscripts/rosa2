@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.094r.tif" reader="Harvey" signature="[Lvii[r]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Sure, &amp; sterne discipline of [the] vertuous Rom.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="neyther feast nor bayne hym selfe" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A shameful penance for A captayne.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>i[nfr]a,</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0197" text="i[nfr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>thee Centurions beheddid.</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A Capital Crime.</marginalia_text>
+                </position>
+            </language>
+            <translation>[See] below, thee Centurions beheddid. A Capital Crime.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="neyther feast nor bayne hym selfe" type="straight"/>
+        <underline language="EN" method="pen" text="Sylla commanded" type="straight"/>
+        <underline language="EN" method="pen" text="whose warde their ennemies" type="straight"/>
+        <underline language="EN" method="pen" text="had broken" type="straight"/>
+        <underline language="EN" method="pen" text="helmed" type="straight"/>
+        <underline language="EN" method="pen" text="and vngyrded" type="straight"/>
+        <underline language="EN" method="pen" text="cutte the garmentes of Aemilius Rufus, capitayn of" type="straight"/>
+        <underline language="EN" method="pen" text="gaue place to his" type="straight"/>
+        <underline language="EN" method="pen" text="with armure" type="straight"/>
+        <underline language="EN" method="pen" text="dishoneste and shamefull apparayle" type="straight"/>
+        <underline language="EN" method="pen" text="stande before the heed capitaynes" type="straight"/>
+        <underline language="EN" method="pen" text="and put backe" type="straight"/>
+        <underline language="EN" method="pen" text="by his ennemies" type="straight"/>
+        <underline language="EN" method="pen" text="commaunded to slee" type="straight"/>
+        <underline language="EN" method="pen" text="those that fledde" type="straight"/>
+        <underline language="EN" method="pen" text="as rebelles" type="straight"/>
+        <underline language="EN" method="pen" text="Cotta consul" type="straight"/>
+        <underline language="EN" method="pen" text="Aurelius" type="straight"/>
+        <underline language="EN" method="pen" text="his kinseman" type="straight"/>
+        <underline language="EN" method="pen" text="made gouernour" type="straight"/>
+        <underline language="EN" method="pen" text="went to Messana" type="straight"/>
+        <underline language="EN" method="pen" text="to knowe by diuination" type="straight"/>
+        <underline language="EN" method="pen" text="what shulde betyde" type="straight"/>
+        
+        <mark method="pen" name="horizontal_bar" place="head"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="to knowe by diuination what shulde betyde"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="helmed"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="dishoneste and shamefull apparayle"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="by his ennemies"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--Aureli-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--gouer-->
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="whose warde their ennemies"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="had broken"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="gaue place to his"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="those that fledde"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="as rebelles"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--kinseman, whom-->
+        <mark method="pen" name="dot" place="intext"/> <!--Lipara, while-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="diuination"/>
+        <mark method="pen" name="dot" place="intext"/> <!--betyde, bycause-->
+        
+    </annotation>
+</transcription>

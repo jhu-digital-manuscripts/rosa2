@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.135r.tif" pagination="269" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="ἀνακεφαλαίωσις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ἀνακεφαλαίωσις</marginalia_text>
+                </position>
+            </language>
+            <translation>Summary.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἀνακεφαλαίωσις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ἀνακεφαλαίωσις</marginalia_text>
+                </position>
+            </language>
+            <translation/>
+        </marginalia>
+        
+        <marginalia anchor_text="in Verrem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In Verre[m]</marginalia_text>
+                    <book title="In Verrem"/>
+                </position>
+            </language>
+            <translation>In Verrem.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>NOTA.</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>singule ??</marginalia_text> <!-- M.B. Struggling to read this intext marginal note. -->
+                </position>
+            </language>
+            <translation/>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="si morabimur, no[n] iam enumeratio, sed altera quasi fiet oratio" type="straight"/>
+        <underline language="LA" method="pen" text="nihil est odiosius recta illa repetitione uelut memoriae iudicum diffidentis" type="straight"/>
+        <underline language="LA" method="pen" text="Licet &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="Nec refere[n]da modò nostra, sed postulandum est etiam ab aduersarijs, ut ad quaedam respondeat, Id" type="straight"/>
+        
+        <mark method="pen" name="est_mark" place="intext"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

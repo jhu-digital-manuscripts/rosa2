@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.170v.tif" pagination="[171v]" reader="John Dee" signature="[Y.iij.[v]]"/>   
+    <annotation>
+        
+        <marginalia anchor_text="Vergilio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vergilius.</marginalia_text>
+                    <person name="Virgil"/>
+                </position>
+            </language>
+            <translation>Virgil.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="pharetratos" type="straight"/>
+        <underline language="LA" method="pen" text="Nil mihi cum nupta" type="straight"/>
+        <underline language="LA" method="pen" text="Rumpere liuor edax" type="straight"/>
+        <underline language="LA" method="pen" text="studium famae mihi crescit" type="straight"/>
+        <underline language="LA" method="pen" text="Principio cliui noster anhelat equus" type="straight"/>
+
+        <symbol name="Jupiter" place="left_margin"/>
+        
+    </annotation>
+</transcription>

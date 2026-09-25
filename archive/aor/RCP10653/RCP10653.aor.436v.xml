@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.436v.tif" pagination="422" reader="John Dee" signature="[Nnnn[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="per vim &amp; metu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Per vim et metum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Through strength and fear.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="beatae Andreae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        S. Andreas
+                    </marginalia_text>
+                    <person name="Andrew the Apostle"/>
+                </position>
+            </language>
+            <translation>
+                Andrew the Apostle.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="regimen licet indebitè diceris commisisse" type="double"/>
+        <underline language="LA" method="pen" text="per" type="straight"/>
+        <underline language="LA" method="pen" text="quam debent de iure subsistere" type="straight"/>
+        <underline language="LA" method="pen" text="Andreae apostoli venera[n]das reliquias, no[n]" type="straight"/>
+        <underline language="LA" method="pen" text="dubium veniat, regnum Scotiae praelibatum ad praefatam Romanam ecclesiam pertinere, quod tibi nec licet nec licuit" type="straight"/>
+        <underline language="LA" method="pen" text="in ipsius ecclesiae ac multorum" type="triple"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

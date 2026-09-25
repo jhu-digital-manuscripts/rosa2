@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.215v.tif" pagination="[208v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Valeat igitur a[n]nus Platonis</marginalia_text> <!--JG: https://en.wikipedia.org/wiki/Great_Year-->
+                    <person name="Plato"/>
+                </position>
+            </language>
+            <translation>Therefore the year of Plato may be influential.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nec scientur nec" type="straight"/>
+        <underline language="LA" method="pen" text="sciri possunt" type="straight"/>
+        <underline language="LA" method="pen" text="mixtiones syderum" type="straight"/>
+        <underline language="LA" method="pen" text="ac uires" type="straight"/>
+        <underline language="LA" method="pen" text="alius à Sole" type="straight"/>
+        
+    </annotation>
+</transcription>

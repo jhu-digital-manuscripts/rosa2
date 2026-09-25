@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.045v.tif" pagination="90" reader="John Dee" signature="[f 5[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="opere de Ethruriae originibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Lib[er] de Ethruria[e] originibus</marginalia_text>
+                    <location name="Etruria"/>
+                </position>
+            </language>
+            <translation>A book of Etrurian origins.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aeterna lege" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Lex a[e]terna</marginalia_text>
+                </position>
+            </language>
+            <translation>The eternal law.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Euangelio[m] Iaacobi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Euangelium Iacobi.</marginalia_text>
+                    <book title="Gospel of James"/> 
+                </position>
+            </language>
+            <translation>The Gospel of James.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="cuius praescriptum" type="straight"/>
+        <underline language="LA" method="pen" text="Ethruriae originibus" type="straight"/>
+        <underline language="LA" method="pen" text="omnium regnorum origines" type="straight"/>
+        <underline language="LA" method="pen" text="Euangelio[m]" type="double"/>
+        <underline language="LA" method="pen" text="Iaacobi" type="straight"/>
+        <underline language="LA" method="pen" text="primo in Latino orbe" type="straight"/>
+        <underline language="LA" method="pen" text="Theodori Bibliandri prodijt" type="straight"/>
+       
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+      
+    </annotation>
+</transcription>

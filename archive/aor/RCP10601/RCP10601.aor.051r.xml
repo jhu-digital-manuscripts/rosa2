@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.051r.tif" pagination="101" reader="John Dee" signature="g 3"/>
+    <annotation>
+        
+        <marginalia anchor_text="Hebraei tres" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>S triplex</marginalia_text>
+                </position>
+            </language>
+            <translation>Triple S.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="unu[m], Hebraei tres" type="straight"/>
+        <underline language="LA" method="pen" text="Arabiam Seba" type="straight"/>
+        <underline language="LA" method="pen" text="Orientalem Arabiae regionem" type="straight"/>
+        <underline language="LA" method="pen" text="Persidem, qua uenerunt reges" type="straight"/>
+        <underline language="LA" method="pen" text="regina Austri" type="straight"/>
+        <underline language="LA" method="pen" text="Presbyteru[m] Ioannem" type="straight"/>
+        <underline language="LA" method="pen" text="Ioan Belul" type="straight"/>
+        <underline language="LA" method="pen" text="prole &amp; fide successor Candacis reginae" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

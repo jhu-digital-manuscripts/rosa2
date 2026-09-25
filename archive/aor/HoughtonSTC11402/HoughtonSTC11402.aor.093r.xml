@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.093r.tif" reader="Harvey" signature="[Lvi[r]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="extreme punyshement" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Penaltyes of captiues, &amp; fugitiues.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>They that</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>feared vncertain death, by desertion incurred certen punishment.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sic Ca[e]sar, Detrimentu[m] Vertebat in bonu[m].</marginalia_text>
+                    <person name="Julius Caesar"/>
+                    <X-ref book_title="De bello civili" language="LA" person="Julius Caesar" text="detrimentu[m] vertit in Bonum."/> <!--book 3-->
+                </position>
+            </language>
+            <translation>Thus Caesar "turned defeat into a good thing."</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="which taken" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>^ were</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="doubtefull" type="straight"/>
+        <underline language="EN" method="pen" text="they left their capitayn" type="straight"/>
+        <underline language="EN" method="pen" text="sure" type="straight"/>
+        <underline language="EN" method="pen" text="taken by kynge Pirrhus" type="straight"/>
+        <underline language="EN" method="pen" text="horsemen" type="straight"/>
+        <underline language="EN" method="pen" text="made fote menne" type="straight"/>
+        <underline language="EN" method="pen" text="fote men" type="straight"/>
+        <underline language="EN" method="pen" text="be made lyghte harneysed" type="straight"/>
+        <underline language="EN" method="pen" text="lodge without the" type="straight"/>
+        <underline language="EN" method="pen" text="eche of theym, had" type="straight"/>
+        <underline language="EN" method="pen" text="home two spoyles of theyr ennemyes" type="straight"/>
+        <underline language="EN" method="pen" text="taken of Anniball" type="straight"/>
+        <underline language="EN" method="pen" text="shulde lye without" type="straight"/>
+        <underline language="EN" method="pen" text="the trenche of the campe" type="straight"/>
+        <underline language="EN" method="pen" text="accustome them selfes" type="straight"/>
+        <underline language="EN" method="pen" text="to perylles" type="straight"/>
+        <underline language="EN" method="pen" text="the more bolde and" type="straight"/>
+        <underline language="EN" method="pen" text="hardy agaynste" type="straight"/>
+        <underline language="EN" method="pen" text="fyrst bette with roddes" type="straight"/>
+        <underline language="EN" method="pen" text="condempned" type="straight"/>
+        <underline language="EN" method="pen" text="lefte and forsaken" type="straight"/>
+        <underline language="EN" method="pen" text="two wynges" type="straight"/>
+        
+        <mark language="EN" method="pen" name="quotation_mark" place="head" text="Penaltyes of captiues, &amp; fugitiues."/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="fyrst bette with roddes"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="shulde lye without"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="doubtefull"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="sure"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="taken by kynge Pirrhus"/>
+        <mark method="pen" name="dot" place="intext"/> <!--menne, if-->
+        <mark method="pen" name="dot" place="intext"/> <!--,men, &-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="home two spoyles of theyr ennemyes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="home two spoyles of theyr ennemyes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="taken of Anniball"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="the trenche of the campe"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="the more bolde"/>
+        <mark method="pen" name="dot" place="intext"/> <!--consuls, fyrst-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="lefte and forsaken"/>
+        
+    </annotation>
+</transcription>

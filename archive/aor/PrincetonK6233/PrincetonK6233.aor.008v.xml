@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonK6233.008v.tif" reader="Harvey" signature="[α8v]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                            Commentarij Juris prohibiti. Paratitla permissa.                        
+                        {
+                            Sigla etiam, et nota[e] vetita[e].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                    Commentaries on law are prohibited. The 'Paratitla' are permitted.
+                {
+                    Abbreviations likewise, and forbidden notes.
+            </translation>
+        </marginalia>
+        <marginalia anchor_text="Edicta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Edicta.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Edicts.
+            </translation>
+        </marginalia>
+        <marginalia anchor_text="Edictu[m] perpetuu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Edictum perpetuum.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Perpetual edict.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="efficientem" type="straight"/>
+        <underline language="LA" method="pen" text="materialem" type="straight"/>
+        <underline language="LA" method="pen" text="finalem" type="straight"/>
+        <underline language="LA" method="pen" text="formalem" type="straight"/>
+        <underline language="LA" method="pen" text="commentarios in ius fieri" type="straight"/>
+        <underline language="LA" method="pen" text="paratitla" type="straight"/>
+        <underline language="LA" method="pen" text="per sigla aut notas" type="straight"/>
+        <underline language="LA" method="pen" text="Edicta" type="straight"/>
+        <underline language="LA" method="pen" text="quomodo de" type="straight"/>
+        <underline language="LA" method="pen" text="ius dicturi" type="straight"/>
+        <underline language="LA" method="pen" text="praetores ex edictis suis p[er]petuis ius dicerent" type="straight"/>
+        <underline language="LA" method="pen" text="Edictum scripsit" type="straight"/>
+        <underline language="LA" method="pen" text="praetoru[m] edictis" type="straight"/>
+        <underline language="LA" method="pen" text="Edictu[m] perpetuu[m] est appellatum" type="straight"/>
+        <underline language="LA" method="pen" text="vniuersum ferè ius ciuile compraehendit. Ex eo inde omnes praetores ius dixeru[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="ad sigla &amp; notas" type="straight"/>
+        <underline language="LA" method="pen" text="notis &amp; signis" type="straight"/>
+        
+        <symbol name="Moon" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="commentarios in ius fieri"/> 
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="praetores ex edictis suis p[er]petuis ius dicerent"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="commentarios in ius fieri"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="paratitla"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- scribi. Edicta -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="ius dicturi"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Edictum scripsit"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="praetoru[m] edictis"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Edictuu[m] perpetuu[m] est appellatum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="notis &amp; signis"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="horizontal_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+    </annotation> 
+</transcription>

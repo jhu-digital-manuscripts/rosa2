@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.072v.tif" pagination="128" reader="John Dee" signature="[l 4[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="ad hebdomaticos, uel enneaticos annos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Hebdomatici Enneatici } Anni
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                7 or 9 years.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ab hebdomaticos" type="straight"/>
+        <underline language="LA" method="pen" text="enneaticos" type="straight"/>
+        <underline language="LA" method="pen" text="quadrata geniturae" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

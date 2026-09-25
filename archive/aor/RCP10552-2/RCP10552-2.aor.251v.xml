@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.251v.tif" pagination="20" reader="John Dee" signature="[C.ij.[v]]"/>  
+    <annotation>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>liber gallicus</marginalia_text>  <!-- DO: External reference needed -->
+                </position>
+            </language>
+            <translation/>
+        </marginalia>
+
+        <marginalia hand="Italian" method="pen">
+            <language ident="FR">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Et adonc Dreux, ou l'en vsoit a la coustume de Normandie, fut muè a la coustume francoyse: et Tilliers, qui estoit a la coustume francoyse, fut mue a la coustume de Normandie.</marginalia_text>
+                    <location name="Dreux"/>
+                    <location name="Normandy"/>
+                    <location name="France"/>
+                    <location name="Tillieres"/>
+                </position>
+            </language>
+            <translation>And so Dreux, where people had been used to the custom of Normandy, was changed to the French custom, and Tillieres, which was of the French custom, was changed to the custom of Normandy.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>strategema.</marginalia_text>
+                </position>
+            </language>
+            <translation>The strategy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="castrum Doli; Salemone aduocato" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Salomon, advocatus Doli Castri.</marginalia_text>
+                    <person name="Salomon, King of Brittany"/>
+                    <location name="Dol-de-Bretagne"/>
+                </position>
+            </language>
+            <translation>Salomon, an advocate of Dol Castle.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Rex autem Francorum Robertus" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Robertus R[ex] Fr[ancorum]</marginalia_text>
+                    <person name="Robert II of France"/>
+                </position>
+            </language>
+            <translation>Robert, King of France.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Coldras" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Coldra[e]</marginalia_text>
+                    <location name="Le Coudray"/>
+                </position>
+            </language>
+            <translation>Le Coudray.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Dorocasinum" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dreux</marginalia_text>
+                    <location name="Dreux"/>
+                </position>
+            </language>
+        </marginalia>
+
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[Tiliers deleted]</marginalia_text>
+                    <location name="Tillieres"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="quandam sororem Iudith nomine, corpore elegantem, omniq[ue] morum honestate pollentem, hanc in connubium petijt per legatos" hand="Italian" method="pen"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Richardi secundi nuptia[e]</marginalia_text>  
+                    <person name="Richard II, Duke of Normandy"/>
+                </position>
+            </language>
+            <translation>The nuptials of Richard the Second.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ad limina Michaelis Archangeli, vbi dux illam suscipiens cu[m] honore, eam sibi iunxit legitimo iure" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nuptia[e] Ducis et Iudith apud S[anctus] Michaele[m] Arch[angelum]</marginalia_text>
+                    <person name="Richard II, Duke of Normandy"/>
+                    <person name="Judith of Brittany"/>
+                </position>
+            </language>
+            <translation>The nuptials of the Duke and Judith at [the church of] the Archangel Saint Michael.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Goiffridus" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Gaufridi siue Goiffridi siue Goistridi mors.</marginalia_text>
+                    <person name="Geoffrey I, Duke of Brittany"/>
+                </position>
+            </language>
+            <translation>The death of Gaufridus or Goiffridus or Goistridus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Burchardus Mildunensis castri comes" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Burchardus Comes Mildunensis Castri</marginalia_text>
+                    <person name="Bouchard I, Count of Melun"/>
+                </position>
+            </language>
+            <translation>Bouchard, Count of Melun.</translation>
+        </marginalia>     
+        
+        <marginalia anchor_text="Walterius" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Walterius.</marginalia_text> <!-- DO: I can't identify this person -->
+                </position>
+            </language>
+            <translation>Walter.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="profundissimos" type="straight"/>
+        <underline language="LA" method="pen" text="cuniculos in superficie angustos" type="straight"/>
+        <underline language="LA" method="pen" text="castrum Doli" type="straight"/>
+        <underline language="LA" method="pen" text="cu[m] Salemone" type="straight"/>
+        <underline language="LA" method="pen" text="apud Coldras" type="straight"/>
+        <underline language="LA" method="pen" text="quide[m] tenore vt" type="straight"/>
+        <underline language="LA" method="pen" text="Dorcasinum castrum" type="double"/>
+        <underline language="LA" method="pen" text="teneret" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; dux praereptam" type="straight"/>
+        <underline language="LA" method="pen" text="oua[n]ter ad propria redire" type="straight"/>
+        <underline language="LA" method="pen" text="Richardus de successione prolis sollicitus" type="straight"/>
+        <underline language="LA" method="pen" text="Goisfridum" type="straight"/>
+        <underline language="LA" method="pen" text="sororem Iudith" type="straight"/>
+        <underline language="LA" method="pen" text="Goisrridus" type="straight"/>
+        <underline language="LA" method="pen" text="limina Michaelis" type="straight"/>
+        <underline language="LA" method="pen" text="filios s. Richardum" type="straight"/>
+        <underline language="LA" method="pen" text="Robertum &amp; Gulielmum" type="straight"/>
+        <underline language="LA" method="pen" text="est Monachus apud Fiscamium" type="straight"/>
+        <underline language="LA" method="pen" text="nomine Adeliz nupsit Rainaldo Burgundionum" type="straight"/>
+        <underline language="LA" method="pen" text="altera Baldewino" type="straight"/>
+        <underline language="LA" method="pen" text="adulta obijt virgo" type="straight"/>
+        <underline language="LA" method="pen" text="Alano vi[delicet] atq[ue] Endone" type="straight"/>
+        <underline language="LA" method="pen" text="Burchardus Mildunensis" type="straight"/>
+        <underline language="LA" method="pen" text="nomine Walterius" type="straight"/>
+        <underline language="LA" method="pen" text="decurre[n]tis in giro alueum Sequanae" type="straight"/>
+        <underline language="LA" method="pen" text="Mildunu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="distracto duce" type="straight"/>
+        <underline language="LA" method="pen" text="Francorum" type="straight"/>
+        <underline language="LA" method="pen" text="pacem inter vtrosq[ue] reges componit" type="straight"/>
+        <underline language="LA" method="pen" text="Olanus rex fit Christianus" type="straight"/>
+        <underline language="LA" method="pen" text="Martyr" type="straight"/>
+        <underline language="LA" method="pen" text="Richardi liberi per vxorem Iudith" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>   
+        <mark method="pen" name="tripunctus" place="left_margin"/>  
+        <mark method="pen" name="comma" place="intext"/>  <!-- tenore vt -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- Comes expost -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- expost orationis -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- obtentu Romam -->
+
+        <!-- DO: Also unknown marks in head and right margin -->
+        
+        <graph book_orientation="0" method="pen" place="tail" type="genealogical_tree">
+            
+            <node id="n1" person="Richard II, Duke of Normandy">Richardus Secundus Dux N[orthmanniae]</node>
+            <node id="n2" person="Judith of Brittany">Iudith</node>
+            <node id="n3" person="Geoffrey I, Duke of Brittany">Galfredus</node>
+            <node id="n4" person="Richard III, Duke of Normandy">Richardus</node>
+            <node id="n5" person="Robert I, Duke of Normandy">Robertus</node>
+            <node id="n6" person="William of Fecamp">Gulielmus Monarchus apud fiscamus</node>
+            <node id="n7" person="Matilda of Fecamp">virgo obijt</node>
+            <node id="n8">[N.N.]</node> 
+            <node id="n9" person="Alice of Normandy">Adeliz</node>
+            <node id="n10" person="Reginald I, Count of Burgundy">Rainoldus burgundioru[m] Comes</node>
+            <node id="n11" person="Baldwin IV, Count of Flanders">Baldiwn Comes Fl[andriae]</node>
+            
+            <link from="n1" relationship="has_spouse" to="n2"/>
+            <link from="n2" relationship="has_spouse" to="n1"/>
+            <link from="n2" relationship="has_sibling" to="n3"/>
+            <link from="n1" relationship="has_child" to="n4"/>
+            <link from="n1" relationship="has_child" to="n5"/>
+            <link from="n1" relationship="has_child" to="n6"/>
+            <link from="n1" relationship="has_child" to="n7"/>
+            <link from="n1" relationship="has_child" to="n8"/>
+            <link from="n1" relationship="has_child" to="n9"/>
+            <link from="n2" relationship="has_child" to="n4"/>
+            <link from="n2" relationship="has_child" to="n5"/>
+            <link from="n2" relationship="has_child" to="n6"/>
+            <link from="n2" relationship="has_child" to="n7"/>
+            <link from="n2" relationship="has_child" to="n8"/>
+            <link from="n2" relationship="has_child" to="n9"/>
+            <link from="n9" relationship="has_spouse" to="n10"/>
+            <link from="n10" relationship="has_spouse" to="n9"/>
+            <link from="n8" relationship="has_spouse" to="n11"/>
+                        
+        </graph>
+        
+    </annotation>
+</transcription>

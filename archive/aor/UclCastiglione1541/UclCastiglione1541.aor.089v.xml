@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="UclCastiglione1541.089v.tif" pagination="[LXXVIIv]" reader="Harvey" signature="[Liiv]"/>
+    <annotation>
+        <marginalia anchor_text="Alessandro Papa VI" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ui.
+                    </marginalia_text>
+                    <emphasis method="pen" text="ui." type="straight"/>
+                </position>
+            </language>
+            <translation>
+                By force.
+            </translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="Alessandro Papa VI" type="straight"/>
+        <underline language="IT" method="pen" text="Papa per la forza" type="straight"/>
+        <underline language="LA" method="pen" text="Nihil Papa ualet" type="straight"/>
+        <underline language="IT" method="pen" text="la gratia perfetta, et uera uirtu" type="straight"/>
+        <underline language="IT" method="pen" text="tanto bene, et senza fatica" type="straight"/>
+        <underline language="IT" method="pen" text="co i gesti" type="straight"/>
+        <underline language="IT" method="pen" text="le parole" type="straight"/>
+        <underline language="IT" method="pen" text="innanzi a gli occhi far" type="straight"/>
+        
+    </annotation>
+</transcription>

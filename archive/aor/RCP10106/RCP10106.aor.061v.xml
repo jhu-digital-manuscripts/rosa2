@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.061v.tif" pagination="122" reader="John Dee" signature="[h 5[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Isocrates" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Isocrates.</marginalia_text>
+                    <person name="Isocrates"/>
+                </position>
+            </language>
+            <translation>Isocrates.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="laudatiuum in se genus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Laudatiuu[m] genus.</marginalia_text>                  
+                </position>
+            </language>
+            <translation>Laudatory, type</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Panegyricos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Panegyricus</marginalia_text>                  
+                </position>
+            </language>
+            <translation>Panegyric.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="communia, co[n]ciliare" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Comunia causaurum</marginalia_text>          
+                </position>
+            </language>
+            <translation>Common ground of the reasons</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="autem &amp; tutißimum est autores plures sequi, &amp; ita uidetur ratio dictare. Est" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

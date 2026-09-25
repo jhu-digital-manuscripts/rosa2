@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.226r.tif" pagination="3" reader="John Dee" signature="Aaa ij"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Matildis, consecratur Regina.
+                    </marginalia_text>
+                    <person name="Matilda of Flanders"/>
+                </position>
+            </language>
+            <translation>
+                Matilda was consecrated queen.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="natus est regi Gulihelmo filius in Anglia, &amp; vocatus est Henricus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Henricus .1. natus. Prae[m]eius Anglico[rum] Rege existe[n]te et <!-- FSF: can't read much -->  <!-- DO: I think before 'iam' is 'eius'.I think this is going to refer to the next printed sentence about the first born sons -->
+                        <!-- FSF: I wonder if eius and the word before are one --> <!-- NBW: The emphasis seems to be that Henry is the first of the Norman kings of England to actually be born there-->
+                    </marginalia_text>
+                    <person name="Henry I of England"/>
+                </position>
+            </language>
+            <translation>
+                Henry I was born, the first of the English who would be king.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Mlxviij. Matildis" type="straight"/>
+        <underline language="LA" method="pen" text="Anglia, &amp; vocatus est Henricus" type="straight"/>
+        <underline language="LA" method="pen" text="Rufus &amp; Robertus" type="straight"/>
+        
+        <numeral place="head">.1068.</numeral>
+        
+        
+    </annotation>
+</transcription>

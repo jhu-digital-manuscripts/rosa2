@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.097r.tif" pagination="17" reader="Harvey" signature="B[r]"/>	<!-- ABO 101right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Da mihi singula Solaria.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Give me the singular things of the sun.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Fitz-dei. Mack-dei.
+						Fitz-morgin. Mack-vulcani.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Fitz Mercurij alati. Mack Pegasi
+						volantis. Archifaber mundi.
+					</marginalia_text>
+					<person name="Mercury"/>
+				</position>
+			</language>
+			<translation>
+				The Fitz of winged Mercury. The Mack of flying Pegasus.
+				The arch-smith of the world.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EL">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						ἐν ἀκμῆ,
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						et
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="EL">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						κατ' ἐξοχὴν
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						omnia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				At the peak, and all things par excellence.
+			</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						ò migliore, ò niente.	
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Demosthenes ipse Demadi, sus Minerua[e].
+					</marginalia_text>
+					<person name="Demosthenes"/>
+					<person name="Demades"/>
+					<X-ref book_title="Moralia" language="LA" person="Plutarch" text="Demadi, sus Minerva[e]"/>
+				</position>
+			</language>
+			<translation>
+				Either better, or nothing at all. Demosthenes himself to Demadus, the sow of Minerva.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						{ Concetti politichi, et desegni finissimi di Lodouico Sforza, nel Fran: Guicciardini:
+						mà mal fondati, strauaganti, smisurati, e non dependenti da se stesso. Comè di Massimiliano.
+					</marginalia_text>
+					<person name="Ludovico Sforza"/>
+					<person name="Francesco Guicciardini"/>
+						<!-- CG: Unsure who this "Massimiliano" might refer to. -->
+					<emphasis method="pen" text="Concetti politichi" type="straight"/>
+					<emphasis method="pen" text="desegni finissimi" type="straight"/>
+					<emphasis method="pen" text="mal fondati" type="straight"/>
+					<emphasis method="pen" text="strauaganti" type="straight"/>
+					<emphasis method="pen" text="smisurati" type="straight"/>
+					<emphasis method="pen" text="non dependenti da sestesso" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The political conceits and most refined designs of Lodovico Sforza, found in Francesco Guicciardini,
+				but which are ill-founded, extravagant, extreme, and which do not depend on he himself. As with Massimiliano.
+			</translation>
+		</marginalia>
+
+
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="180" place="tail">
+					<marginalia_text>
+						Semper iocundissimus: quicquid verboru[m], aut
+						facinorum contra.
+
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Always most cheerful: whatever words or whatever deeds are contrary.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Hebe, omnibus Nymphis, Deabusq[ue] iunior, et Senior. Filia Jovis, et Junonis,
+					</marginalia_text>
+					<person name="Hebe"/>
+					<person name="Jove"/>
+					<person name="Juno"/>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						id est, Ignis, et Aeris;
+						non Aqua[e],
+						et Terra[e].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Hebe is younger and older than all the Nymphs, and Goddesses. She is the daughter of Jove and Juno,
+				that is, of fire and air, not of water and earth.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Non guari appresso" type="straight"/>
+		<underline language="IT" method="pen" text="che faccia rouinare Lansaceo" type="straight"/>
+		<underline language="IT" method="pen" text="non habbia rispetto alcuno" type="straight"/>
+		<underline language="IT" method="pen" text="non à gli huomini" type="straight"/>
+		<underline language="IT" method="pen" text="finalmente tutto à ferro &amp; fuoco" type="straight"/>
+		<underline language="IT" method="pen" text="legato dal suo giuramento" type="straight"/>
+		<underline language="IT" method="pen" text="perdonò humanamente a' Lampsaceni" type="straight"/>
+		<underline language="IT" method="pen" text="Giouane chi è" type="straight"/>
+		<underline language="IT" method="pen" text="ricco chi non" type="straight"/>
+		<underline language="IT" method="pen" text="quanto tempo" type="straight"/>
+		<underline language="IT" method="pen" text="ch'era sano" type="straight"/>
+		<underline language="IT" method="pen" text="fusse ricco" type="straight"/>
+		<underline language="IT" method="pen" text="haueua debito" type="straight"/>
+		<underline language="IT" method="pen" text="giouana assai" type="straight"/>
+		<underline language="IT" method="pen" text="ricco veramente" type="straight"/>
+		<underline language="IT" method="pen" text="accorti con mirabili espedienti" type="straight"/>
+		<underline language="IT" method="pen" text="molestie perpetue" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="horizontal_bar" place="tail"/> <!--separating two marginalia-->
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--ap-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--pre-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--huomi-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--giuramen-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--sa-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--mu-->
+		
+		<mark method="pen" name="dot" place="intext"/> <!--Anassamene, &-->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="sano"/>
+		<mark method="pen" name="dot" place="intext"/> <!--sano, ricco-->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="debito"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/>
+		<mark method="pen" name="apostrophe" place="intext"/> <!--sano, Domandato-->
+		
+    </annotation>
+</transcription>

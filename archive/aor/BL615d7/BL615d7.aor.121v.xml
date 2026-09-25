@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.121v.tif" pagination="[121v]" reader="John Dee" signature="[Q[v]]"/>
+    
+    <annotation>
+        
+       <marginalia anchor_text="CCCLX huomini à piedi, &amp; XIIII a cauallo" hand="Italian" method="pen">
+           <language ident="EN">
+               <position book_orientation="0" place="head">
+                   <marginalia_text>360 - fote men 14 - horsmen</marginalia_text>
+               </position>
+           </language>
+       </marginalia> 
+        
+        <marginalia anchor_text="Vega Real" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vega Real</marginalia_text>
+                    <location name="La Vega"/>
+                </position>
+            </language>
+        </marginalia> 
+        
+        <marginalia anchor_text="s'imbarcò ne' primi nauigli, che uennero di Castiglia" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Petro Margarita went disorderly fro[m] Spagnuola not Spayn.</marginalia_text>
+                    <person name="Pedro Marguerite"/>
+                    <location name="Hispaniola"/>
+                    <location name="Spain"/>
+                </position>
+            </language>
+        </marginalia> 
+        
+        <marginalia anchor_text="ne lasciare ordine alcuno sopra la gente" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>The span[ia]rds disorder.</marginalia_text>
+                </position>
+            </language>
+        </marginalia> 
+        
+        <underline language="IT" method="pen" text="CCCLX huomini à piedi, &amp; XIIII a cauallo, accioche scorresse con" type="straight"/>
+        <underline language="IT" method="pen" text="l'Isola, riducendola al seruigio" type="straight"/>
+        <underline language="IT" method="pen" text="all'obedienza de' Christiani" type="straight"/>
+        <underline language="IT" method="pen" text="prouincia di Cibao" type="straight"/>
+        <underline language="IT" method="pen" text="dalla quale si aspettaua" type="straight"/>
+        <underline language="IT" method="pen" text="principale utile, esseguì il tutto" type="straight"/>
+        <underline language="IT" method="pen" text="come prima" type="double"/>
+        <underline language="IT" method="pen" text="alla Vega" type="double"/>
+        <underline language="IT" method="pen" text="&amp; pacificar l'Isola" type="double"/>
+        <underline language="IT" method="pen" text="anzi fu cagione" type="triple"/>
+        <underline language="IT" method="pen" text="discordie, &amp; partialità" type="straight"/>
+        <underline language="IT" method="pen" text="obedissero a' suoi commandamenti" type="straight"/>
+        <underline language="IT" method="pen" text="mandar loro lettere" type="straight"/>
+        <underline language="IT" method="pen" text="di farsi a tutti superiore" type="straight"/>
+        <underline language="IT" method="pen" text="s'imbarcò ne' primi nauigli, che uennero di Castiglia" type="straight"/>
+        <underline language="IT" method="pen" text="ordine alcuno" type="double"/>
+        <underline language="IT" method="pen" text="sopra la gente" type="straight"/>
+        <underline language="IT" method="pen" text="Da che successe, che ciascuno andò fra gl'Indiani, doue piu gli piacque, togliendo lor la robba" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; le donne" type="triple"/>
+        <underline language="IT" method="pen" text="loro tanti dispiaceri, che gl'Indiani" type="straight"/>
+        <underline language="IT" method="pen" text="uendetta in quelli, che" type="straight"/>
+        <underline language="IT" method="pen" text="Guatigana" type="straight"/>
+        <underline language="IT" method="pen" text="uccise dieci" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- tutto cosi -->
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+
+    </annotation>
+    
+</transcription>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.038r.tif" pagination="75" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Stipulator</marginalia_text>
+                </position>
+            </language>
+            <translation>Stipulator.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pulchra locutio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pulchra locutio</marginalia_text>
+                </position>
+            </language>
+            <translation>Beautiful speech.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="lator" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lator.</marginalia_text>
+                </position>
+            </language>
+            <translation>The legislator.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nam &amp; genera sunt tria sacri, publici, priuati iuris." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Jus Sacru[m] Publicu[m] Priuatu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Law: sacred, public, private.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="testem" type="straight"/>
+        <underline language="LA" method="pen" text="Verum hactenus euagari satis fuerit" type="straight"/>
+        <underline language="LA" method="pen" text="lator earu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="trino fortè nundino" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

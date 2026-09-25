@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.011r.tif" reader="John Dee" signature="[Bv]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Planetaru[m] motus si inco[m]me[n]surabiles nu[m]q[uam] [maternu[m]] [bis] copulabu[n]tur eode[m] puncto. <!-- FSF: to be completed; mot sure about this one bit which looks like bi? --> <!--JG: 'bis'?-->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The motion of the planets if they, being incommensurable, never [maternum?] will be united in the same point twice.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="passione[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Passio p[ro]pria
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Proper passion.  
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ad reducendu[m] h[uius]mo[d]i silogismu[m] i[n] t[er]mi[n]os inco[m]plexos siue simplices fallit[ur] i[n] h[uius]mo[d]i d[e]mo[n]strat[i]o[n]ib[us]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Reductio ad terminos incomplexos   
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Reduction to simple terms.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="diffinit[i]o[nem] subieti vel passionis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        definitio {subiecti passio[n]is   
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Definition of subject or of passion.  
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="resolutio i[n] t[erm]i[n]os i[n]co[m]plexos" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Resolutio in terminos inco[m]plexos no[n] semp[er] facie[n]da.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A rendering into simple terms is not always to be made.  
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Multa[e] proportiones in co[n]tinuis sunt, quas numeris rationalibus explicare no[n] possum[us], sed tantu[m] irrationalibus. Vide Diophantu[m] gra[e]cu[m]
+                    </marginalia_text>
+                    <person name="Diophantus of Alexandria"/>
+                </position>
+            </language>
+            <translation>
+                There are many proportions in the continuities, which we cannot explain with rational numbers, but only with irrational ones. See Diophantus of Alexandria.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nunq[uam] fieret ad insta[n]s c[on]iu[n]ctio p[ro]pt[er] inco[n]uenie[n]tia[m] p[ro]port[i]o[n]is" type="straight"/>
+        <underline language="LA" method="pen" text="nec notu[m] fieri potest" type="straight"/>
+        <underline language="LA" method="pen" text="quas nu[m]eror[um] natura neqaq[uam]" type="straight"/>
+        <underline language="LA" method="pen" text="c[on]ti[n]git falli i[n] silogismo" type="straight"/>
+        <underline language="LA" method="pen" text="i[d est] p[er] triangulu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="int[er] passione[m]" type="straight"/>
+        <underline language="LA" method="pen" text="rectis. Ad reducendu[m] h[uius]mo[d]i silogismu[m] i[n] t[er]mi[n]os inco[m]plexis siue simplices fallit[ur] i[n] h[uius]mo[d]i d[e]mo[n]strat[i]o[n]ib[us]" type="straight"/>
+        <underline language="LA" method="pen" text="diffinit[i]o[nem]" type="straight"/>
+        <underline language="LA" method="pen" text="vel passionis" type="straight"/>
+        <underline language="LA" method="pen" text="p[er] diffinit[i]o[nem] passio[n]is" type="straight"/>
+        <underline language="LA" method="pen" text="q[ua]re oportet aliq[ua]n[do] cap[er]e i[n] resolutionib[us] or[ati]ones p[ro] t[er]mi[no]s" type="straight"/>
+        <underline language="LA" method="pen" text="sc[ilicet] passione[m] ha[n]c de suo subiecto" type="straight"/>
+        <underline language="LA" method="pen" text="m[od]o pl[ur]es t[er]mi[ni] ponu[n]t[ur] loco vni[us] extremitat[is] v[e]l medij q[uo] q[ua]nq[uam] no[n] h[abe]nt vnu[m] nome[n] i[m]positu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="loco maior[is] extre[m]itat[is]" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- rectis hoc -->   
+        <mark method="pen" name="comma" place="intext"/> <!-- aliud q[uo]d -->
+        <mark method="pen" name="comma" place="intext"/> <!-- est nec -->
+        <mark method="pen" name="comma" place="intext"/> <!-- rectis hoc --> 
+        <mark method="pen" name="dash" place="intext"/> <!-- isocheles -->     
+        <mark method="pen" name="bracket" place="intext"/> <!-- t[er]mi[n]o. Ad -->
+        
+        <errata amendedtext="ysoeles" copytext="ysogeles" language="LA"/>
+        <errata amendedtext="ysoeles" copytext="ysogeles" language="LA"/>
+        <errata amendedtext="," copytext="." language="LA"/> <!-- m[od]o O[mn]is -->
+        
+    </annotation>
+</transcription>

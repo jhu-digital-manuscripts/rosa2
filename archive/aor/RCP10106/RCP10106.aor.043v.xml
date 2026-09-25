@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.043v.tif" pagination="86" reader="John Dee" signature="[f 3[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="declamatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Declamatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Declamation.</translation>
+        </marginalia>
+       
+        <underline language="LA" method="pen" text="qui nec ita" type="straight"/>
+        <underline language="LA" method="pen" text="uulgò loquimur, pronuntiant, quod esset sine arte, nec" type="straight"/>
+        <underline language="LA" method="pen" text="procul à natura recedunt, quo uitio periret imitatio, sed" type="straight"/>
+        <underline language="LA" method="pen" text="co[m]munis huius sermonis decore quodam scenico exornant" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

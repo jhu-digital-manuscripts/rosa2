@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.533v.tif" reader="Harvey" signature="S[v]"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="Bellum Sociale" type="straight"/>
+        <underline language="LA" method="pen" text="Cn.Pompeius Strabo" type="straight"/>
+        <underline language="LA" method="pen" text="Portius Cato" type="straight"/>
+        <underline language="LA" method="pen" text="Magni Pompeij pater" type="straight"/>
+        <underline language="LA" method="pen" text="Cornelius Sylla" type="straight"/>
+        <underline language="LA" method="pen" text="Marius Nepos VII" type="straight"/>
+        <underline language="LA" method="pen" text="Cinna IIII" type="straight"/>
+        <underline language="LA" method="pen" text="Marij filius" type="straight"/>
+        <underline language="LA" method="pen" text="Cornelius Sylla II" type="straight"/>
+        <underline language="LA" method="pen" text="L." type="straight"/>
+        <underline language="LA" method="pen" text="Lucullus" type="straight"/>
+        <underline language="LA" method="pen" text="huius Luculli meminit" type="straight"/>
+        <underline language="LA" method="pen" text="Pompeius Magnus" type="straight"/>
+        
+        <symbol name="SS" place="intext"/>
+        <symbol language="LA" name="SS" place="intext" text="Cornelius Sylla"/>
+        <symbol language="LA" name="SS" place="intext" text="Marius Nepos VII"/>
+        <symbol name="SS" place="tail"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Magni Pompeij pater"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Marij filius"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="Lucullus"/> 
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="Pompeius Magnus"/>
+        
+    </annotation>
+</transcription>

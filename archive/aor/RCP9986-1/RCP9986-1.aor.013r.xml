@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.013r.tif" pagination="14" reader="John Dee"/>  
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Helena</marginalia_text>
+                    <person name="Helen of Troy"/>
+                </position>
+            </language>
+            <translation>Helen.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aetas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ætas.</marginalia_text>
+                </position>
+            </language>
+            <translation>An age.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="raptam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Raptio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Abduction.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pudicitia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pudicitia</marginalia_text>
+                </position>
+            </language>
+            <translation>Chastity.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Digna sum, &amp; cupio fieri matrona potentis" type="straight"/>
+        <underline language="LA" method="pen" text="Nec me, faginea quòd tecum fronde iacebam Despice, purpureo sum magis apta toro" type="straight"/>
+        <underline language="LA" method="pen" text="Tyndaris infestis fugitiua reposcitur armis" type="straight"/> 
+        <underline language="LA" method="pen" text="Hac venit in thalamos dote superba tuos" type="straight"/>
+        <underline language="LA" method="pen" text="quas aetas longa magistra fuit. Turpe rudimentum est, patriae praeponere raptam, Causa pudenda tua est, iusta vir arma mouet" type="straight"/> 
+        <underline language="LA" method="pen" text="Tu quoq[ue] clamabis, nulla reparabilis arte Laesa pudicitia est. deperit illa semel" type="straight"/>
+        <underline language="LA" method="pen" text="Tu leuior folijs, tunc cum sine pondere succi" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+         
+    </annotation>
+</transcription>

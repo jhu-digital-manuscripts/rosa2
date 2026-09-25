@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.015v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Corinniensis scribi debet: sed ob defectum distinctae scriptioriis, Corniuiensis: vnde Corniuia pro Corinnia: et tandem Cornubia: 
+                        posita u pro i: et B p[ro] v. quod vsitatu[m] est.
+                    </marginalia_text>
+                    <person name="Corineus"/>
+                    <location name="Cornwall"/>
+                    <emphasis method="pen" text="Corinniensis scribi debet" type="straight"/>
+                </position>
+            </language>
+            <translation>'Corinniensis' should be written, but from lack of disctintion on the part of the scribes 'Corniuiensis': likewise Corniuia for Corinnia: and finally, as is customary, Cornubia: u taken for i and b for v.
+            </translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Brutus Corrineu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="necno[n] &amp; populu[m] cui p[os]sidebat" type="straight"/>
+        <underline language="LA" method="pen" text="ostiu[m] ligeris" type="straight"/>
+        <underline language="LA" method="pen" text="Groffarius Pictus" type="straight"/>
+        
+        <errata amendedtext="" copytext="Cornubie[n]sis" language="LA"/>
+        
+    </annotation>
+</transcription>

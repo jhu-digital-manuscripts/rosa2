@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="UclCastiglione1541.087r.tif" pagination="LXXV[r]" reader="Harvey" signature="[Kviiir]"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        De jocis, et facetijs conferendi, lib.2. de Oratore: Quinctiliani cap.4.lib.6 
+                        de Risu:  
+                    </marginalia_text>
+                    <person name="Quintilian"/>
+                    <person name="Giovanni Pontano"/>
+                    <book title="De Oratore"/>
+                    <book title="De Risu"/>
+                    <book title="The Arte of Rhetorique"/>
+                    <book title="De bello neapolitano et de sermone"/>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>M. Secretary Wylsons Rhetoric; Of delighting the Hearers, and prouoking them
+                        to Lawghter:</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>[etc] Jouiani pontani de Sermone</marginalia_text>
+                </position>            
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        urbano, et faceto libri sex, pra[e]sertim tertius: Jocoru[m] ueteru[m], ac recentiu[m];
+                        Adriani Barlandi; Libri tres.
+                    </marginalia_text>
+                    <person name="Adriaan van Baerland"/>
+                    <book title="Iocorum veterum ac recentium"/>
+                </position>
+            </language>
+            <translation>
+                For jokes and jests, see book 2 of 'De Oratore'; Quintilian's 'De Risu', chapter 4, book 6;
+                Master Secretary Wilson's 'Rhetoric', Of Delighting the Hearers and Provoking them to Laughter;
+                [etc] Giovanni Pontano's six books on urbane and humorous speech, especially the third; 
+                Adriaan van Baerland's three books on ancient and modern jokes. 
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Locus communis lapidè, faretè, et salsè dictoru[m] in Valerio Maximo[;]
+                        illius a[e]mulo Baptista Egnatio; Apophthegmatis Lycosthenis; Theatro Zuingeri.
+                    </marginalia_text>
+                    <person name="Valerius Maximus"/>
+                    <person name="Giovanni Battista Cipelli"/>
+                    <person name="Conrad Lycosthenes"/>
+                    <person name="Theodor Zwinger"/>
+                    <book title="Valeri Maximi factorum et dictorum memorabilium libri novem"/>
+                    <book title="Apophthegmatum sive responsorum"/> 
+                    <book title="Theatrum vitae humanae"/>
+                </position>
+            </language>
+            <translation>
+                A commonplace of the precious, humorous and witty sayings in Valerius Maximus, his rival Baptista 
+                Egnatio, the apophthegms of Conrad Lycosthenes, and Zwinger's 'Theatrum'.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Bibiena.
+                    </marginalia_text>
+                    <person name="Bernardo Dovizi"/>
+                </position>
+            </language>
+            <translation>
+                Bibbiena.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        De giuocchi Discorso; il qual narra distintamente tutte le qualita sue buone, e cattiue,
+                        et à qual fine fossero instituiti. Composto dal reuerendo padre Maestro Giouan 
+                        Paulo Cardello.
+                    </marginalia_text>
+                    <person name="Giovanni Paolo Cardelli"/>
+                    <book title="De giuocchi discorso"/>
+                </position>
+            </language>
+            <translation>
+                Discourse on games, which clearly relates all their good and bad qualities, and to what end 
+                they have been set up. Compiled by the reverend Father Master Giovanni Paulo Cardello.
+            </translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="delle facetie" type="straight"/>
+        
+    </annotation>
+</transcription>

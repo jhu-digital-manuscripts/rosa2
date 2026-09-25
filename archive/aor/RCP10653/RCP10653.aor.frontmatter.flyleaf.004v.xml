@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.frontmatter.flyleaf.004v.tif" pagination="Flyleaf" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Historia Luce[m] magna[m] recipit ex Genealogijs illustru[m] viror[um] de quibus, co[n]texitur pag[ina] 356 
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP10653:380" text="356"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                History receives the great light from the genealogies of illustrous men about whom is composed on page 356.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Sanctus Brendanus et Machutus insulas fortunatas navigatione septennali, requirentes mullta relata digna videru[n]t pag[ina] 195  
+                        J.D
+                        Forte iste est de q[uo] Mercator intelligit generatione post Arthurum quarta <!-- FSF: again, not sure -->  <!-- DO: not sure what final word is -->
+                    </marginalia_text>
+                    <person name="John Dee"/> 
+                    <location name="Saint Brendan's Island"/>
+                    <location name="Saint-Malo"/>
+                    <internal_ref>
+                        <target ref="RCP10653:219" text="195"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                Saint Brendan’s Isle and St Malo, blessed by a seven-year navigation, requiring many worthy reports they saw, on page 195. John Dee. A stronger interpretation is the one that Mercator found, in the fourth generation after Arthur <!-- FSF: not sure NBW: still needs work -->
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Nonne vidisti Hugone[m] Co[n]sulem Cestri[a]e, et Richardu[m] filiu[m] eius, et Randulfum successore[m] [deleted] eor[um], et nunc aliu[m] Randulfum?
+                        et hij o[mn]es exinanili su[n]t. &amp;c Henricus Hungtindon [ post lib. 10. cui li... fecit de summitatib[us] 294: et deleted] lib[r]o 3⁰ ad Walteru[m] co[n]sorte[m] suu[m] de Mundi appetita.  <!-- DO: The deleted text can be captured in brackets followed by the word 'deleted'-->
+                    </marginalia_text>
+                    <person name="Hugh d'Avranches"/>
+                    <person name="Richard d'Avranches"/>
+                    <person name="Ranulf le Meschin"/>
+                    <person name="Ranulf de Gernon, 4th Earl of Chester"/>
+                    <person name="Henry of Huntingdon"/>
+                    <person name="Walter of Leicester"/> <!-- FSF: maybe as a book De mundi contemptu? --> <!-- NBW: Bale's catalogue, which Dee owned and used, lists "De appetitu mundi" as a separate text. I think these are found within the Historia Anglorum today -->
+                </position>
+            </language>
+            <translation>
+                Did you not see Hugh, the Earl of Chester, and Richard, his son, and Ranulf, the successor of them and then the other Ranulf?
+                Henry of to his colleague Walter of Leicester 'on worldly desire'.<!-- NBW: "on worldly desire?"-->
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        floruit Henricus H[un]t[in]gdo[n] a[nn]o [1145 deleted] 1135        
+                    </marginalia_text>
+                    <person name="Henry of Huntingdon"/>
+                </position>
+            </language>
+            <translation>
+            Henry of Huntingdon fourished in the year 1135.          
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Henricus Huntingdon scripsit ep[isto]lam Regi Henrico, De serie regu[m] pote[n]tissior[um] ip[s]i p[er] orbe[m] terrar[um] huc vsq[ue] [deleted] fueru[n]t <!-- FSF: not sure about ipsi -->
+                        et aliu[m] de origine regu[m] Britannor[um] qui in hac terra regnaveru[n]t vsq[ue] ad adve[n]tum Julij Ca[e]sarij siue gesti anglor[um]   
+                        et tertiu[m] ad Walteru[m] &amp; vt sup[ra] 
+                    </marginalia_text>
+                    <person name="Henry of Huntingdon"/> <!-- FSF: given the translation, maybe his work historia to be tagged to? -->
+                    <person name="Henry II of England"/>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        All these ar ioyned w[ith] his 9 bokes of historie: in a fayr copy, which I borowed of Mr John harpsfeld a[nn]o 1576. feb[ruarij] 23.
+                    </marginalia_text>
+                    <person name="John Dee"/>
+                    <person name="John Harpsfield"/>
+                </position>
+            </language>
+            <translation>
+                Henry of Huntingdon wrote a letter to King Henry II On the series of most powerful kings through the world until today
+                and another on the origin of the British kings which in this land ruled until the advent of Julius Caesar or the deeds of the Angles
+                and a third to Walter as above
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Gigas 50 pedu[m]. A[nn]o 1170
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A 50-foot giant in 1170.
+            </translation>
+        </marginalia>
+          
+    </annotation>
+</transcription>

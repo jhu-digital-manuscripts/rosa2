@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.037r.tif" pagination="37" reader="John Dee" signature="K"/> 
+    <annotation>
+        
+        <marginalia anchor_text="miltisten Regen" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aqua[e] Pluuialis Bonitas.</marginalia_text>
+                </position>
+            </language>
+            <translation>The benevolence of rainwater.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Alcool" hand="Italian">
+            <language ident="DE">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Alcool.</marginalia_text>
+                </position>
+            </language>
+            <translation>Alcohol.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="ander Sterne von denen auch Regen außgehent Aber dieselbigen haben die eigenschafft das sie Windt mit jnen geben" hand="Italian">
+            <language ident="DE">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Stella[e] qua[e] et ventosa[e] et vndosa[e]</marginalia_text>
+                </position>
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>simul sunt.</marginalia_text>
+                </position>
+            </language>
+            <translation>Stars which are both windy and wavy at the same time.</translation> 
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="weither" type="double"/>
+        <underline language="DE" method="pen" text="miltisten Regen" type="straight"/>
+        <underline language="DE" method="pen" text="die bästen" type="straight"/>
+        <underline language="DE" method="pen" text="erkülen" type="straight"/>
+        <underline language="DE" method="pen" text="befeuchten" type="straight"/>
+        <underline language="DE" method="pen" text="antrecken" type="straight"/>
+        <underline language="DE" method="pen" text="gesundesten" type="straight"/>
+        <underline language="DE" method="pen" text="miltisten" type="double"/>
+        <underline language="DE" method="pen" text="mancherley Regen" type="straight"/>
+        <underline language="DE" method="pen" text="durch" type="double"/>
+        <underline language="DE" method="pen" text="Alcool" type="straight"/>
+        <underline language="DE" method="pen" text="Windt mit jnen" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

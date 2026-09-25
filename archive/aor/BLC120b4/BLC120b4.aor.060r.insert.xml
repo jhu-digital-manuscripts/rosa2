@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.060r.insert.tif" origin="added" reader="John Dee" status="fixed"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                       Qua[e] aute[m], quot, et qualia metallica et naturalia sunt, elementa, 
+                       in Cabalisticum, archimica[e] artis magisteriu[m] ingredientia
+                       Quid etia[m] forma, materia, mediu[m] dispositiu[m], Aurum, Argentum 
+                       splendidum, Argentum calcinatum, Argentum viuum,
+                       de corde Saturni, Oleum Sulphuris. Quidq[ue] sit Argilla simplex,
+                       haud nos fugit te ia[m] intellexisse, ac experientia in laboratorio
+                       n[ost]ro conspexisse, cum hac de re, verba (vt n[ost]ra exigit amicitia)
+                       haberemus. Attamen [etc]. vbi sequitur, de Metallorum spiritus 
+                       generatione/ De Metalloru[m] anima[e] generatione/ De
+                       mixtione corporis, spiritusq[ue] Metalloru[m] Anima[e]./et in
+                       fine sequitur
+                    </marginalia_text>
+                    <emphasis method="pen" text="vbi sequitur, de Metallorum spiritus generatione/ De Mettaloru[m] animus generatione/ De mixtione[m] corporis, spiritusq[ue] Metalloru[m] Animus./et in fine sequitur/" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                The things [mentioned] before, namely how many and what sort of metallic and natural elements and ingredients there are in Cabalistic Magisterium of the art of Archimica. 
+                <!-- Qua[e] aute[m], quot, et qualia metallica et naturalia sunt, elementa, 
+                in Cabalisticum, archimica[e] artis magisteriu[m] ingredientia -->
+                What is also form, matter, assigned middle, gold, 'argentum splendidum', <!-- FSF: for argentum splendidum, see p. 73 of https://books.google.co.uk/books?id=zdEUAAAAIAAJ&pg=PA73&lpg=PA73&dq=splendidum+argentum&source=bl&ots=h6-a9H1UIe&sig=gZZ6XoCYG2ozhU4c_K48rg-OvtI&hl=en&sa=X&ved=0ahUKEwj6zueks43SAhXlDMAKHTtbAaYQ6AEIPzAI#v=onepage&q=splendidum%20argentum&f=false: in the BL and the Warburg (FGH 4710)-->
+                <!-- JG: Also, see: https://books.google.co.uk/books?id=vEdOAQAAMAAJ&pg=PA166&lpg=PA166&dq=argentum+splendidum&source=bl&ots=MksNBVTYth&sig=XHC677U7LvDkm4FBGByYazn9Hxk&hl=en&sa=X&ved=2ahUKEwjQteL355zeAhVGzKQKHSMDCkIQ6AEwAXoECAgQAQ#v=onepage&q=argentum%20splendidum&f=false--> 
+                calcinated silver, quicksilver from the heart of Saturn, and sulphuric oil. And what simple clay may be, by no means it escapes us that you have already understood it, and have observed by experience in our laboratory,
+                since we will have words about this matter the words (as our friendship demands). Nevertheless, etc. Whereby it continues: on the generation of the spirit of metals, on the generation of the soul of metals,
+                on the mixture of bodies, spirit and soul of metals. And it continues in the end.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Perficitur aute[m] diuinu[m] Arcanu[m] hoc equini fimi medio, qui est <!-- FSF: in Ars metallicae quod insted of qui -->
+                        ignis (vt supra) per horas et per dies, sub NVTV ad fixu[m] 
+                        libraru[m] LXIIII
+                        Hora[e] aute[m] et pariter Fimi dies, erunt ex temporibus NVTV: 
+                        Gradibus huiusmodi in n[ost]ra Theorica no[n] expressis +++ <!-- FSF: there are three crosses drawn here -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                But this divine arcane is swallowed up in the heat of horse dung, 
+                which is fire (as above) through hours and days, by the will of God within a determined space of time.
+                Of 64 scales.
+                But the hours and similar days of heat, shall be from the times of the will of God: for the degrees of this kind have not been expressed with a threefold cross in our theory. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>De TEMPORIBVS
+                        M Hora[e] Dies
+                    N 12, indicat, et sex dies in Putrefactione
+                    V Decem in generatione
+                    T 12 Novem in Alteratione
+                    V Dece[m] in fixione
+                    Scito tamen in Lepidissime Gulielme[n], o[mn]es pra[e]dictos motus</marginalia_text>
+                </position>
+            </language>
+            <translation>
+                On time
+                N 12 indicates six days in corruption
+                V 10 in giving birth
+                T 12 9 and finally
+                V 10 in fixation
+                Nevertheless, know that all aforesaid movements [are] in the 'most agreeable William'. <!-- JG: Unsure what this refers to -->
+            </translation> 
+        </marginalia>
+
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+                
+    </annotation>
+</transcription>

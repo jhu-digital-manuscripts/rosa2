@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url>http://creativecommons.org/licenses/by/4.0/</url>
+        <logo>https://i.creativecommons.org/l/by/4.0/88x31.png</logo>
+    </license>
+    <totalPages>414</totalPages>
+    <dates>
+        <startDate>1541</startDate>
+        <endDate>1541</endDate>
+    </dates>
+    <texts>
+        <text id="1">
+            <language>it</language>
+            <title>Il libro del cortegiano (Venice, 1541)</title>
+            <textId>castiglione</textId>
+            <pages end="207v" start="1r">414</pages>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Il libro del cortegiano (Venice, 1541)</title>
+            <commonName>Baldassare Castiglione, Il cortegiano (Venice, 1541)</commonName>
+            <dateLabel>1541</dateLabel>
+            <currentLocation>University College London Library</currentLocation>
+            <repository>University College London Library</repository>
+            <shelfmark>Castiglione 1541 (2)</shelfmark>
+            <author>
+                <name>Castiglione, Baldessare</name>
+                <id>http://www.isni.org/isni/0000000121007795</id>
+            </author>
+            <reader>
+                <name>Gabriel Harvey</name>
+                <id>http://www.isni.org/isni/0000000073570531</id>
+            </reader>
+            <website>https://archaeologyofreading.org/bibliography/Harvey-corpus/Castiglione-Italian</website>
+            <detail>[11] CXCV leaves; 16 cm</detail>
+            <note>Ties to Newberry Castiglione</note>
+        </bibliography>
+    </bibliographies>
+</book>
+

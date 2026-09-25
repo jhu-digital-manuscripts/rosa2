@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.180r.tif" pagination="183" reader="Harvey" signature="M4r"/>	<!-- ABO 184right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Autotechnia, et Tautotechnia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Self-instruction and repetition of skills.</translation> <!-- CG: Neologisms. -->
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						distinctionis foedere reconciliantur inimici.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Unfriendly people are reconciled by an alliance of separation.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Autopraxia, et Tautopraxia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Autopraxis and tautopraxis.</translation> <!--CG: Neologisms. -->
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						pulcherrimè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Beautifully.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						risoluto.	
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Resolute.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						) In artibus, tautologia:
+						in experimentis, tautopraxia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A tautology in arts, tautopraxis in experiments.</translation> <!-- CG: Neologisms. -->
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Quid qua[e]ratur extrà, quod est intùs?
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Why is it sought on the outside, what is on the inside?</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Nihil potentius Tautotechnia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Nothing is more potent than the same skills.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Vix vnus liber tam plenus ingenij, iudicijq[ue], in omnes mundi sapientissimos
+						discursus, quàm Bodini Methodus Historica: pra[e]sertim cu[m]
+					</marginalia_text>
+					<person name="Jean Bodin"/>
+					<book title="Methodus ad facilem historiarum cognitionem"/>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						ciusdem Republica.
+					</marginalia_text>
+					<book title="De Republica"/>
+				</position>
+			</language>
+			<translation>There is hardly one book so full of intellect and judgement, venturing into all most wise [subjects] of the world, than Jean Bodin's 'Methodus Historica': especially with his Republic.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Sed ante omnes Pragmatici Libros, Bodini Methodus Historica; et
+						Stratagemata Gandini.
+						<!-- CG: Missing text added. -->
+					</marginalia_text>
+					<person name="Jean Bodin"/>
+					<person name="Marcantonio Gandino"/>
+					<book title="Methodus ad facilem historiarum cognitionem"/>
+					<book title="Stratagemata"/>
+				</position>
+			</language>
+			<translation>But before all books of pragmatics, Jean Bodin's 'Methodus Historica' and Marcantonio Gandino's 'Stratagemata'. </translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Tum Bartoli distinctiones: et cautela[e] Speculatoris. <!-- Note added in at different time. Different size and ink quality. -->
+						<!-- CG: Missing text added. -->
+					</marginalia_text>
+					<person name="Bartolus de Saxoferrato"/>
+					<book title="Distinctiones"/>
+				</position>
+			</language>
+			<translation>Then Bartolus de Saxoferrato's 'Distinctiones': and Guillaume Durand's cautions.</translation> <!--JG: Not sure whether Harvey is referring to one of Durand's books here-->
+			
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="insegna" type="straight"/>
+		<underline language="IT" method="pen" text="gli miei maggiori" type="straight"/>
+		<underline language="IT" method="pen" text="habbia vsurpata" type="straight"/>
+		<underline language="IT" method="pen" text="vna testa di bue" type="straight"/>
+		<underline language="IT" method="pen" text="vna testa di vacca" type="straight"/>
+		<underline language="IT" method="pen" text="vita humana" type="straight"/>
+		<underline language="IT" method="pen" text="come intrigata, &amp; piena" type="straight"/>
+		<underline language="IT" method="pen" text="come lieta &amp; tranquilla" type="straight"/>
+		<underline language="IT" method="pen" text="nostra implicata con la fortuna" type="straight"/>
+		<underline language="IT" method="pen" text="vno torrente grosso" type="straight"/>
+		<underline language="IT" method="pen" text="data alla virtù" type="straight"/>
+		<underline language="IT" method="pen" text="nobil fonte" type="straight"/>
+		<underline language="IT" method="pen" text="acqua è chiara" type="straight"/>
+		<underline language="IT" method="pen" text="imperturbata" type="straight"/>
+		<underline language="IT" method="pen" text="potabile" type="straight"/>
+		<underline language="IT" method="pen" text="ogni vitio, &amp; cattiuità" type="straight"/>
+		<underline language="IT" method="pen" text="vista de gli amici" type="straight"/>
+		<underline language="IT" method="pen" text="rallegrare i mal contenti" type="straight"/>
+		<underline language="IT" method="pen" text="de' Medici, i malati" type="straight"/>
+		<underline language="IT" method="pen" text="venir il medico, si rallegrano" type="straight"/>
+		<underline language="IT" method="pen" text="malcontenti veggendo" type="straight"/>
+		<underline language="IT" method="pen" text="venir l'amico si" type="straight"/>
+		<underline language="IT" method="pen" text="l'amico alla" type="straight"/>
+		<underline language="IT" method="pen" text="non è il medico" type="straight"/>
+		<underline language="IT" method="pen" text="à gli amici ricorrere" type="straight"/>
+		<underline language="IT" method="pen" text="conferma nobilmente" type="straight"/>
+		<underline language="LA" method="pen" text="exupera[n]s, aut animo" type="straight"/>
+		<underline language="LA" method="pen" text="aut amico" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<symbol name="SS" place="right_margin"/> <!-- aut amico -->
+		
+		<symbol language="IT" name="SS" place="intext" text="de' Medici, i malati"/>
+		
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Domanda il Genouese qual sia la sua insegna; risponde il Franzese, esser vna     testa di bue: adunque disse il Genouese, non ci bisogna combattere per questo, imperò che l'arme mia è vna testa di vacca."/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- vsur -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- im -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- dol -->
+		<mark method="pen" name="dot" place="right_margin"/> <!-- contenti -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- conforta -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- rinco -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Au -->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="fortuna"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="virtù"/>
+		<mark method="pen" name="semicolon" place="intext"/> <!-- confortano cosi -->
+		
+		<errata amendedtext="Tristtia" copytext="Tristitia" language="LA"/> <!-- CG: Nonsensical emendation. -->
+		
+    </annotation>
+</transcription>

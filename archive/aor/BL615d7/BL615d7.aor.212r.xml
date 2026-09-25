@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.212r.tif" pagination="212" reader="John Dee" signature="Ddiiij"/>
+    <annotation>
+        
+        <marginalia anchor_text="pioggia" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Rayne</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="tutti gli elementi" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Danger of all the Elements</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A whorle wynde or a spowl</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+   
+        <underline language="IT" method="pen" text="cosi lungamente continuauano" type="straight"/>
+        <underline language="IT" method="pen" text="tutti gli" type="double"/>
+        <underline language="IT" method="pen" text="loro temendo" type="straight"/>
+        <underline language="IT" method="pen" text="il fuoco" type="double"/>
+        <underline language="IT" method="pen" text="&amp; l'aria" type="double"/>
+        <underline language="IT" method="pen" text="l'acqua" type="double"/>
+        <underline language="IT" method="pen" text="la terra" type="double"/>
+        <underline language="IT" method="pen" text="di vna manica" type="double"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/> 
+        <mark method="pen" name="quotation_mark" place="right_margin"/>  
+                
+    </annotation>
+</transcription>

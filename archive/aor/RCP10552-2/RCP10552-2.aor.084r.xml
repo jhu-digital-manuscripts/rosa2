@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.084r.tif" pagination="157" reader="John Dee" signature="O."/>
+    <annotation>
+        
+        <marginalia anchor_text="Dauid le Brus rex Scotiae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dauid Le Brus Rex scotia[e] captus</marginalia_text>
+                    <person name="David II of Scotland"/>
+                </position>
+            </language>
+            <translation>David the Bruce King of Scotland captured.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Dauid le Brus rex Scotiae" type="straight"/>
+        <underline language="LA" method="pen" text="VVilhelmo Duglas" type="straight"/>
+        <underline language="LA" method="pen" text="Cum rege verò capti" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/> <!-- perierunt. Per -->
+        <mark method="pen" name="comma" place="intext"/> <!-- nobilibusm , quorum -->
+        <mark method="pen" name="comma" place="intext"/> <!-- Scotiae, animatus -->
+        
+        <errata amendedtext="militia[m]" copytext="malitia[m]" language="LA"/>
+        
+    </annotation>
+</transcription>

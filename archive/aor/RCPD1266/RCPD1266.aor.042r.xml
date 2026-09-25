@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.042r.tif" pagination="69" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="spiritum Dei, qui ferebatur supra aquas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Spiritus D[omi]ni ferebatur super Aquas</marginalia_text>
+                </position>
+            </language>
+            <translation>The spirit of the Lord was carried over waters.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="variè torqueri" type="straight"/>
+        <underline language="LA" method="pen" text="Deum vno eodémque momento" type="straight"/>
+        <underline language="LA" method="pen" text="Deum sex diebus creasse coelum" type="straight"/>
+        <underline language="LA" method="pen" text="ventus" type="straight"/>
+        <underline language="LA" method="pen" text="quidem &amp; piè" type="double"/>
+        <underline language="LA" method="pen" text="terrae" type="straight"/>
+        <underline language="LA" method="pen" text="aquae" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; ventum" type="straight"/>
+        <underline language="LA" method="pen" text="item tenebras atque lucem" type="straight"/>
+        <underline language="LA" method="pen" text="bis mille &amp; trecentos" type="straight"/>
+        <underline language="LA" method="pen" text="Coelum ante terram fuisse conditum" type="straight"/>
+        
+    </annotation>
+</transcription>

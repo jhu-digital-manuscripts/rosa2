@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+   <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+   
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <title>Poetic Works of Christine de Pizan (Manuscrit du Duc, Vol. I)</title>
+         
+         </titleStmt>
+         
+         <publicationStmt>
+            
+            <distributor>MSEL</distributor>
+         
+         </publicationStmt>
+         
+         <notesStmt>
+            
+            <note rend="IDENTIFICATION">
+               
+               <p>Français 835, Bibliothéque national de France, Paris. Paris, ca. 1406-1408. </p>
+            
+            </note>
+            
+            <note rend="BASIC INFORMATION">
+               
+               <p>Parchment, 348 x 260 mm, 103 folios.</p>
+            
+            </note>
+            
+            <note rend="MATERIAL">
+               
+               <p>Ivory <material>parchment</material> with many humidity spots, some of them quite large, and with many unrepaired holes, seams and flies and two cuts. There are a few drops of wax in folios [<locus>56</locus>]v and [<locus>65</locus>]v. </p>
+                             
+            </note>
+            
+            <note rend="QUIRES">
+               
+               <list>
+                  
+                  <head>Collation:</head>
+                  
+                  <item n="I">
+                     
+                     <locus from="1" to="8">1-8</locus>
+                  
+                  </item>
+                  
+                  <item n="II">
+                     
+                     <locus from="9" to="16">9-16</locus>
+                  
+                  </item>
+                  
+                  <item n="III">
+                     
+                     <locus from="17" to="24">17-24</locus>
+                  
+                  </item>
+                  
+                  <item n="IV">
+                     
+                     <locus from="25" to="32">25-32</locus>
+                  
+                  </item>
+                  
+                  <item n="V">
+                     
+                     <locus from="33" to="40">33-40</locus>
+                  
+                  </item>
+                  
+                  <item n="VI">
+                     
+                     <locus from="41" to="47">41-47</locus>
+                  
+                  </item>               
+                               
+                  <item n="VII">
+                     
+                     <locus from="48" to="55">48-55</locus>
+                     
+                  </item>  
+                  
+                  <item n="VIII">
+                     
+                     <locus from="56" to="63">56-63</locus>
+                     
+                  </item>   
+                  
+                  <item n="IX">
+                     
+                     <locus from="64" to="71">64-71</locus>
+                     
+                  </item>   
+                  
+                  <item n="X">
+                     
+                     <locus from="72" to="79">72-79</locus>
+                     
+                  </item>   
+                  
+                  <item n="XI">
+                     
+                     <locus from="80" to="87">80-87</locus>
+                     
+                  </item>  
+                  
+                  <item n="XII">
+                     
+                     <locus from="88" to="95">88-95</locus>
+                    </item> 
+                   <item n="XIII">
+                        
+                       <locus from="96" to="101">96-101</locus>
+                        
+                   </item> 
+                  <item n="XIV">
+                     
+                     <locus from="102" to="103">102-103</locus>
+                     
+                  </item>  
+                   
+               </list>
+     
+               
+               <p>(II, paper) + I (parchment) + 103 + (I, parchment) + (I paper). Modern foliation in dark brown ink is located on the top right corner on the recto of each folio. The foliation was done by two different hands, ff. <locus from="1" to="20">1-20</locus> by one and ff. <locus from="21" to="103">21-103</locus> by another. Several folios were displaced during binding, and a third hand partially rectified the error by numbering in pencil folios <locus>3</locus> “3” and <locus>7</locus> “2”. The correct order of the folios is the following: <locus>1</locus>, <locus>7</locus>, <locus from="3" to="6">3-6</locus>, <locus>2</locus>, <locus from="8" to="16">8-16</locus>, <locus>18</locus>, <locus>17</locus>, <locus from="19" to="22">19-22</locus>, <locus>24</locus>, <locus>23</locus>, <locus from="25" to="103">25-103</locus>.</p>
+            
+            </note>
+            
+            <note rend="LAYOUT">
+               
+               <p>Visible light gray ruling marks, probably done with a very hard lead pencil, which left frequent ridges, can be seen in ff.<locus from="1" to="42">1-42</locus>, <locus from="45" to="63">45-63</locus>. A different type of pencil was used for ff. <locus from="43" to="44">43-44</locus> and <locus from="64" to="103">64-103</locus>, which left thicker and less uniform traces in a brownish color. There is also visible pricking with 4 main pricks.</p>
+               <p> They were done with different instruments due to some pricks being larger than others, and some being triangular. The mise-en-page for the texts in verse has 2 columns with 32 lines each. Each column measures around 44 mm. The mise-en-page for the Dit de la pastoure has 2 columns with 32 lines each. Each column measures around 48mm. The mise-en-page for the texts in prose has 2 columns with 32 lines each. Each column measures around 50 mm.</p>
+            </note>
+            
+            <note rend="SCRIPT">
+               
+               <p>The text is written in brown ink (ff. <locus from="1" to="25">1-25</locus> and <locus from="157" to="174">157-174</locus>) and dark brown ink (ff. <locus from="26" to="156">26-156</locus>), with bright red ink being used for the rubrics.  There seems to be a main scribal hand for the text characterized by its exuberance. The text has been written using a quick bookish cursive script. The script was obviously done in haste. There are minor signs of punctuation. The scribe uses commas and periods. There are few corrections in the text, mostly done by the scribe by scratching the parchment. </p>
+            </note>
+            
+            <note rend="DECORATION">
+               
+               <p>There are numerous small decorative initials in red or blue over a gold leaf background. There are six large foliated initials under each one of the six miniatures with gold leaf foliate extenders coming from the top and bottom of the initials framing the miniature above and part of the text below.</p>       
+               <p> There are six miniatures probably done by the hand of the Master of the Épître Othéa (ff. <locus>1</locus>, <locus>45</locus>, <locus>50</locus>, <locus>52</locus>, <locus>64</locus>) and by the Master of Egerton (fol. <locus>74</locus>). All the miniatures are framed with gold leaf over a black border. </p>
+               <p>Miniatures:</p>
+               <list>
+                  <item> Fol. <locus>1</locus>, Christine in her studio with a dog. </item>
+                  <item> Fol. <locus>45</locus>, The God of Love's letter book. </item>
+                  <item> Fol. <locus>50</locus>, The Lover complains to His Lady. </item>
+                  <item> Fol. <locus>52</locus>, Christine Pesents the Lovers to Louis d'Orléans.</item>
+                  <item> Fol. <locus>64</locus>, Christine Talks to the Seneschal of Hainaut. </item>
+                  <item> Fol. <locus>74</locus>, Journey to Poissy.</item>
+               </list>                                                   
+            </note>
+            
+            <note rend="BINDING">
+               
+               <p>The manuscript was rebound at the end of the 18th century with Moroccan red leather and inscribed with the royal coat of arms surrounded by three festoons. The spine is divided in six nerves with six golden <hi rend="italics">fleur-de-lys</hi> and the title "BALADES". While it was in the library of the Duque of Berry, it had simple wooden cover lined with black cloth.</p>
+            </note>
+            
+            <note rend="HISTORY">
+               
+               <p> The manuscript was written circa 1406-1408, and it constitutes the firs volume of the <hi rend="italics">Oeuvres</hi> of Christine de Pizan bought by Jean de Berry in 1408. It was likely that the manuscript was made for Louis d'Orleans before his death on the 23rd of November, 1407. The <hi rend="italics">Debat de deux amants</hi> should have followed the <hi rend="italics">Dit de la rose</hi>, a work that was directly connected with Louis d'Orleans, but which has been removed from te volume.</p>
+               <p>Provenance: Jean de Berry, who bught it in 1408; Marie de Berry, duchess of Bourbon, his daughter. François I, who in 1523 seized the property of Charles de Bourbon in 1523; old shelfmarks can be found on the manuscript. On the obverse side of the cover the inscription 191 can be seen. Other shelfmarks are 593 (Rigault), 466 (Dupuy), and 7217 (Regius). </p> 
+                                    
+            </note>
+            
+            <note rend="TEXT">
+               
+               <p>Contains her poetic works in the following order: </p>
+               <list>
+                  <item><hi rend="italics">Cent balades</hi> (ff.  <locus from="1" to="16">1-16</locus></item>
+                  <item><hi rend="italics">Virelays plusieurs </hi> (ff.  <locus from="17" to="21">17-21</locus></item>
+                  <item><hi rend="italics">Ballades d'estrange façon </hi> (ff.  <locus from="21" to="24">21-24</locus></item>
+                  <item><hi rend="italics"> Lais</hi> (ff.  <locus from="24" to="25">24-25</locus>)</item>
+                  <item><hi rend="italics"> Rondeaux</hi> (ff. <locus from="25" to="31">25-31</locus>)</item>
+                  <item><hi rend="italics"> Jeux a vendre</hi> (ff.  <locus from="31" to="34">31-34</locus>)</item>
+                  <item> <hi rend="italics">Autres Balades</hi> (ff. <locus from="34" to="44">34-44</locus> <locus>25</locus>v)</item>
+                  <item> <hi rend="italics">Epistre au dieu d'Amour</hi> (ff.  <locus from="45" to="50">45-50</locus>)</item>
+                  <item> <hi rend="italics">Complainte amoureuses</hi> (ff.  <locus from="50" to="51">50-51</locus>)</item>
+                  <item><hi rend="italics">Debat des deux amans</hi> (ff. <locus from="52" to="73">52-73</locus>)</item>
+                  <item> <hi rend="italics">Livre des trois jugements </hi>(ff. <locus from="64" to="75">64-75</locus>)</item>
+                  <item><hi rend="italics"> Dit de Poissy</hi> (ff. <locus from="74" to="86">74-86</locus>)</item>
+                  <item> <hi rend="italics">Epistres sur le roman de la rose</hi> (ff. <locus from="87" to="103">87-103</locus>)</item>
+               </list>      
+                 
+              </note>
+            
+            <note rend="AUTHOR">
+              
+               <p>
+*The information given here comes from direct observation and from Ouy, Gilbert, Christine Reno and Inès Villela-Petit.<hi rend="italics"> Album Christine de Pizan </hi>. Turnhout: Brepols, 2012. </p>
+<p> Description by Mónica Ann Walker Vadillo</p>
+            
+            </note>
+         
+         </notesStmt>
+         
+         <sourceDesc>
+            
+            <bibl>
+               
+               <note type="format">manuscript</note>
+               
+               <note type="commonName">Français 835</note>
+               
+               <title>Poetic Works of Christine de Pizan, (Manuscrit du Duc, Vol. I)</title>
+
+               
+               <extent>
+                  
+                  <measure quantity="103" unit="folios"> 103 folios</measure>
+                  
+                  <dimensions>
+                     
+                     <height unit="mm">348</height>
+                     
+                     <width unit="mm">260</width>
+                  
+                  </dimensions>
+               
+               </extent>
+               
+               <note type="illustrations">6</note>
+               
+               
+               
+               
+               
+               <note type="material">parchment</note>
+               
+               <pubPlace>Paris, France</pubPlace>
+     
+               <date notAfter="1500" notBefore="1400">15th century</date>
+            
+            </bibl>
+            
+            <msDesc>
+               
+               <msIdentifier>
+                  
+                  <settlement>Paris</settlement>
+                  
+                  <repository>Bibliothèque nationale de France</repository>
+                  
+                  <idno>Français 835</idno>
+               
+               </msIdentifier>
+            
+               <msContents>
+                  <msItem n="1">
+                     <locus from="1r" to="103v">1r-103v</locus>
+                     <title>Poetic Works of Christine de Pizan (Manuscrit du Duc, Vol. I)</title>
+                     <note type="textid">Poetic Works of Christine de Pizan (Manuscrit du Duc, Vol. I)</note>
+                     <note type="folios">103</note>
+                     <note type="illustrations">6</note>
+                     <note type="linesPerColumn">40</note>
+                     <note type="leavesPerGathering">8</note>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem>
+                  <msItem n="2">
+                     <locus from="1r" to="18v">1r-18v</locus>
+                     <title>Cent Balades</title>
+                     <note type="textid">Cent Balades</note>
+                     <note type="folios">18</note>
+                     <note type="illustrations">1</note>
+                     <note type="linesPerColumn">35</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem><msItem n="3">
+                     <locus from="18v" to="21v">18v-21v</locus>
+                     <title>Virelays</title>
+                     <note type="textid">Virelays</note>
+                     <note type="folios">3</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">36</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem><msItem n="4">
+                     <locus from="21v" to="25r">21v-25r</locus>
+                     <title>Balade retrograde, Balade à rimes reprises, Balade à responses</title>
+                     <note type="textid">Balade retrograde, Balade à rimes reprises, Balade à responses</note>
+                     <note type="folios">4</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">37</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem><msItem n="5">
+                     <locus from="25r" to="31r">25r-31r</locus>
+                     <title>Lays, Rondiaux</title>
+                     <note type="textid">Lays, Rondiaux</note>
+                     <note type="folios">6</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">32</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem><msItem n="6">
+                     <locus from="31r" to="34r">31r-34r</locus>
+                     <title>Jeux à vendre</title>
+                     <note type="textid">Jeux à vendre</note>
+                     <note type="folios">3</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">35</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem>
+                  <msItem n="7">
+                     <locus from="34r" to="44v">34r-44v</locus>
+                     <title>Autres Balades</title>
+                     <note type="textid">Autres Balades</note>
+                     <note type="folios">10</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">35</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem><msItem n="8">
+                     <locus from="45r" to="50r">45r-50r</locus>
+                     <title>L'Epistre au dieu d'amours</title>
+                     <note type="textid">L'Epistre au dieu d'amours</note>
+                     <note type="folios">5</note>
+                     <note type="illustrations">1</note>
+                     <note type="linesPerColumn">42</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem><msItem n="9">
+                     <locus from="50r" to="51v">50r-51v</locus>
+                     <title>Complainte amoureuse</title>
+                     <note type="textid">Complainte amoureuse</note>
+                     <note type="folios">1</note>
+                     <note type="illustrations">1</note>
+                     <note type="linesPerColumn">42</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         
+         </sourceDesc>
+      
+      </fileDesc>
+   
+   </teiHeader>
+   
+   <text>
+      
+      <body>
+         
+         <div> </div>
+      
+      </body>
+   
+   </text>
+
+</TEI>

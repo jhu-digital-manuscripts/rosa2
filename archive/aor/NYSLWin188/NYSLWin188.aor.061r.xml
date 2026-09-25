@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.061r.tif" pagination="61" reader="John Dee" signature="Q"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Borras" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Borax
+                    </marginalia_text>
+                    <person name="Boreas"/>
+                </position>
+            </language>
+            <translation>Boreas.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Eisen das wider herab fallt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ferru[m] ex ca[e]lo cadens
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Iron falling from the sky.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Wo solch Eysen ligt oder gefunden wirdt kan nicht sein es muss besser sein dann ander Eysen: dann der Etherische Borras hats geleutert vnd gradiert." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ferru[m] à ca[e]lo repurgatum, excelle[n]tissimu[m] est.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Iron cleansed by the sky is very excellent.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pennates" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Pennates
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Comets.</translation> <!--KS: Literally, 'pennates' refers to elemental spirits that used comets as weapons.-->
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="wider herab fallt" type="straight"/>
+        <underline language="DE" method="pen" text="dan[n] es ist nicht fir" type="straight"/>
+        <underline language="DE" method="pen" text="transmutiert in ein" type="double"/>
+        <underline language="DE" method="pen" text="Eruginem den zeuchts an sich" type="straight"/>
+        <underline language="DE" method="pen" text="derselbige" type="double"/>
+        <underline language="DE" method="pen" text="jm diß bereidt" type="straight"/>
+        <underline language="DE" method="pen" text="hat. So" type="double"/>
+        <underline language="DE" method="pen" text="es zu viel ist" type="double"/>
+        <underline language="DE" method="pen" text="Borras" type="straight"/>
+        <underline language="DE" method="pen" text="flissent mache[n] in ein Maß" type="straight"/>
+        <underline language="DE" method="pen" text="Corpus, so mags das Firmament nimmer trage[n] vnd lests fallen" type="straight"/>
+        <underline language="DE" method="pen" text="sein es muss besser sein dann ander Eysen" type="straight"/>
+        <underline language="DE" method="pen" text="geleutert vnd gradiert" type="straight"/>
+        <underline language="DE" method="pen" text="von vnten hinauff gezogen werde[n] offtmals die Pennates" type="straight"/>
+        <underline language="DE" method="pen" text="fabrieren vnd fallen lassen" type="straight"/>
+        <underline language="DE" method="pen" text="Superi seindt in den Magnetischen Sternen" type="straight"/>
+        <underline language="DE" method="pen" text="Kunst in solchem starck gehet" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!--Kunst in-->
+        <mark method="pen" name="comma" place="intext"/> <!--solchem starck-->
+        
+    </annotation>
+</transcription>

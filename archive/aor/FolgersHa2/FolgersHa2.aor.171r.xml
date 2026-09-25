@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.171r.tif" pagination="165" reader="Harvey" signature="L3r"/>	<!-- ABO 175right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Senex a[e]tate puer moribus; stultus iudicio.
+						Cum teipso vis esse infirmior, age stultum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>An old man in age, a boy in habit; a fool in judgement. The strength to be more weaker with yourself, do a foolish thing.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Nemo satis validus:
+						quantu[m]uis alienus a corruptelis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>No one is strong enough, howevermuch a stranger to corruption.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Foemina[e],
+						grandissima[e] Politica[e].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Women, the most powerful politicians.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Rotundiùs dictum, quàm factum.
+						De Venere nemo salubriùs, aut solidiùs, quàm
+						Guicciardinus, et Julianus.
+					</marginalia_text>
+					<person name="Francesco Guicciardini"/>
+					<person name="Julian"/>
+				</position>
+			</language>
+			<translation>A saying more round than a deed. Regarding love, no one is more salutary or solid than Guicciardini and Julian. </translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Philanthropus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A philanthropist.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Economico.	
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Economically.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						{ Mea[e] delitia[e], Virgines: Minerua, Diana;
+						Vesta, Daphne: Musa[e], Charites, Sibylla[e].
+					</marginalia_text>
+					<person name="Minerva"/>
+					<person name="Diana"/>
+					<person name="Vesta"/>
+					<person name="Daphne"/>
+					<person name="Muses"/>
+					<person name="Charites"/>
+					<person name="Sybil"/>
+				</position>
+			</language>
+			<translation>My delightful virgins: Minerva, Diana, Vesta, Daphne: Muses, Charites, Sibyl.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+					Quanti adhuc Persius? quo toto longiora m[od]i	<!-- CG: Unsure of "modi" -->
+						sunt plura, quàm XX. Poemata.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>How much of Persius is there still? [????], there are many more than 20 poems.</translation> <!--JG: Don't get first part--> <!-- CG: I'm still not sure about this. Perhaps he's wondering about the number of works already discovered by Persius? -->
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Aut plus valoris in scientia[e], actionisq[ue] momentis: aut quorsum scripta?
+						Nec numerus Librorum valet, aut longitudo: sed egregia 
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						vtilitas, et dignitas.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Either there is more value in the importance of knowledge and actions: or to what end are writings?
+			Nor is the number of books important, or their length: but their extraordinary utility and merit.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Sed heus tu, Nihil tuum, quod non quotidianum: vt Juliano
+						ante Omnia sui Ca[e]sares: cum Mithridatis Epistola, et Concione.
+					</marginalia_text>
+					<person name="Julian"/>
+					<person name="Mithridates VI of Pontus"/>
+					<book title="Caesars"/>
+					<book title="Histories"/>
+					<emphasis method="pen" text="Juliano" type="straight"/>
+					<emphasis method="pen" text="sui Ca[e]sares" type="straight"/>
+					<emphasis method="pen" text="Mithridatis Epistola" type="straight"/>
+					<emphasis method="pen" text="Concione" type="straight"/>
+				</position>
+			</language>
+			<translation>But hey, you, nothing is yours, what is not [done] daily: just as with Julian's Caesars before all things, and with the letter and speech of Mithridatis.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Le donne per" type="straight"/>
+		<underline language="IT" method="pen" text="hauer gran" type="straight"/>
+		<underline language="IT" method="pen" text="ne gli stati" type="straight"/>
+		<underline language="IT" method="pen" text="di Temistocle" type="straight"/>
+		<underline language="IT" method="pen" text="io" type="straight"/>
+		<underline language="IT" method="pen" text="madre" type="straight"/>
+		<underline language="IT" method="pen" text="mia madre" type="straight"/>
+		<underline language="IT" method="pen" text="Temistocle" type="straight"/>
+		<underline language="IT" method="pen" text="Temistocle" type="straight"/>
+		<underline language="IT" method="pen" text="popolo" type="straight"/>
+		<underline language="LA" method="pen" text="Ergo" type="straight"/>
+		<underline language="IT" method="pen" text="voglio io" type="straight"/>
+		<underline language="IT" method="pen" text="popolo d'Atene" type="straight"/>
+		<underline language="IT" method="pen" text="Le adulationi" type="straight"/>
+		<underline language="IT" method="pen" text="volta care à" type="straight"/>
+		<underline language="IT" method="pen" text="Marcantinio Triunuiro" type="straight"/>
+		<underline language="IT" method="pen" text="honori grandissimi" type="straight"/>
+		<underline language="IT" method="pen" text="volendolo adulare interamente" type="straight"/>
+		<underline language="IT" method="pen" text="Dea Minerua da marito" type="straight"/>
+		<underline language="IT" method="pen" text="per moglie à lui" type="straight"/>
+		<underline language="IT" method="pen" text="Dio Libero" type="straight"/>
+		<underline language="IT" method="pen" text="Marc'antonio accortosi, &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="quel guiderdone" type="straight"/>
+		<underline language="IT" method="pen" text="per consorte" type="straight"/>
+		<underline language="IT" method="pen" text="voglio di dote" type="straight"/>
+		<underline language="IT" method="pen" text="mille talenti" type="straight"/>
+		<underline language="IT" method="pen" text="Saggia &amp; vtilissima" type="straight"/>
+		<underline language="IT" method="pen" text="amici saggiame[n]te" type="straight"/>
+		<underline language="IT" method="pen" text="via della fatica voi" type="straight"/>
+		<underline language="IT" method="pen" text="quella fatica p[re]sto da voi si parte" type="straight"/> 
+		<underline language="IT" method="pen" text="cosa ben fatta, ta[n]to quato" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<symbol name="SS" place="intext"/>
+		
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Ergo quello che voglio io, vuol tutto il poplo d'Atene."/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Ate -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- saggia -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- a -->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Temistocle"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- consorte, ma -->
+    </annotation>
+</transcription>

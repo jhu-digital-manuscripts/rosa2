@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.166r.tif" pagination="155" reader="Harvey" signature="[K5v]"/>	<!-- ABO 170right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Singularia Mundi Mnemosyna, rarissima.
+						Vndiq[ue] Optima Maxima.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The singular and rarest reminders of the world. In all respects the very best.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						ridicolo.	
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Ridiculous.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						{ Multi Canales:
+						{ Pauca[e] Concha[e].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Many canals: a few mussels.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Plurima, vulgaria: paucissima, axiozela.
+						Ludu[m], iocu[s]q[ue] dices illu[m] alteru[m]: pra[e]vt huius rabies Qua[e].
+					</marginalia_text>
+					<X-ref book_title="Eunuchus" language="LA" person="Terence" text="Ludu[m], iocu[s]q[ue] dices illu[m] alteru[m]: pra[e]vt huius rabies Qua[e]."/>
+				</position>
+			</language>
+			<translation>There are many vulgar things: very few are worthwhile.
+			"You will say that other thing is fun and games, in comparison with that which this one's madness will create."
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Omnia summorum auctorum axiozela Capita, vna hebdomade possunt
+						perlegi. Qua[e] in singulis aut paucissima Sunt, aut nulla. Mea vnius potentiss[im]a
+						Mnemosyna, et absolutissima. Sola arcanoru[m] arcana. 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>All the worthwhile headings of the highest actors can be read through in one week. Either very few or none of which are in singular matters. 
+				My most potent and absolute reminders of one thing. The only mystery of mysteries.</translation> 
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Nemo vnus tam axiozelus, quàm Gandinus, ad maximas mundi negociationes.
+					</marginalia_text>
+					<person name="Marcantonio Gandino"/>
+				</position>
+			</language>
+			<translation>Not one man is a worthwhile as Marcantonio Gandino for the greatest business of the world.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="tanta abbondanza di lagrime" type="straight"/>
+		<underline language="IT" method="pen" text="s'affliggesse" type="straight"/>
+		<underline language="IT" method="pen" text="per ricuparare la sanità" type="straight"/>
+		<underline language="IT" method="pen" text="non per offenderlo" type="straight"/>
+		<underline language="IT" method="pen" text="Ohime" type="straight"/>
+		<underline language="IT" method="pen" text="hò indugiato tanto à prouar sì grande" type="straight"/>
+		<underline language="IT" method="pen" text="singolar dolcezza" type="straight"/>
+		<underline language="IT" method="pen" text="La morte non" type="straight"/>
+		<underline language="IT" method="pen" text="admonirne" type="straight"/>
+		<underline language="IT" method="pen" text="della venuta" type="straight"/>
+		<underline language="IT" method="pen" text="affrontato dalla morte" type="straight"/>
+		<underline language="IT" method="pen" text="alquanto differire" type="straight"/>
+		<underline language="IT" method="pen" text="facesse testamento" type="straight"/>
+		<underline language="IT" method="pen" text="le cose necessarie" type="straight"/>
+		<underline language="IT" method="pen" text="sei tu prepato" type="straight"/>
+		<underline language="IT" method="pen" text="l'hauea mai piu vista" type="straight"/>
+		<underline language="IT" method="pen" text="rapiua gli tuoi" type="straight"/>
+		<underline language="IT" method="pen" text="giornalmente rapiua i giouani" type="straight"/>
+		<underline language="IT" method="pen" text="fanciulli, et bambini" type="straight"/>
+		<underline language="IT" method="pen" text="mancare il vedere" type="straight"/>
+		<underline language="IT" method="pen" text="diminuir l'vdire" type="straight"/>
+		<underline language="IT" method="pen" text="altri sensi indebolire" type="straight"/>
+		<underline language="IT" method="pen" text="corpo consumare, per" type="straight"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- tan -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- pregua -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Mor -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- vede -->
+		
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="singolar dolcezza"/>
+
+    </annotation>
+</transcription>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.214r.tif" pagination="417" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="ad maris custodiam" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Maris Custodia</marginalia_text>
+                </position>
+            </language>
+            <translation>The protection of the sea.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="succursu Ovveni Glendor" type="straight"/>
+        <underline language="LA" method="pen" text="euadentibus meticulosè" type="straight"/>
+        <underline language="LA" method="pen" text="mercatores nostros" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- nostros ad -->
+        
+    </annotation>
+</transcription>

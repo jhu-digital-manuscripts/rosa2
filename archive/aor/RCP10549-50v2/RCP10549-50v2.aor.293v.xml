@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.293v.tif" pagination="38" reader="John Dee" signature="[Cc.iii.[V]]"/>  
+    <annotation>
+        
+        <marginalia anchor_text="quis sit finis, quid extremu[m], quid vltimum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        finis
+                        extreme[m]
+                        vltimu[m].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The end.
+                The extreme.
+                The last thing.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="libris; literis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                       liter[a]e.
+                       libri
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Literature.
+                Books.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tum id quod iis libris quaeritur, quis sit finis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                       Lib. de finibus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Books about endings.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dignitatis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                      Dignitas scripti
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The esteem for writing.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="partus ancillae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Partus ancilla[e].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The offspring of a female slave.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vsus ciuium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Ïus ciuile.       
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Civil law.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="philosophiae disciplinis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Philosophia[e] diciplin[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The instructions of philosophy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Epicuri" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Epicurus.
+                    </marginalia_text>
+                    <person name="Epicurus"/>
+                </position>
+            </language>
+            <translation>Epicurus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="L. Torquato" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        L. Torquatus
+                    </marginalia_text>
+                    <person name="Lucius Manlius Torquatus"/>
+                </position>
+            </language>
+            <translation>Lucius Manlius Torquatus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="C. Triarius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        C. Triarius.
+                    </marginalia_text>
+                    <person name="Gaius Valerius Triarius"/>
+                </position>
+            </language>
+            <translation>Gaius Triarius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Torquatus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Torquati disputatio co[n]tra Cicerone[m] in Cumano.
+                    </marginalia_text>
+                    <person name="Lucius Manlius Torquatus"/>
+                    <person name="Cicero"/>
+                    <location name="Cumae"/>
+                </position>
+            </language>
+            <translation>The dispute of Torquatus against Cicero at Cumae.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="oratio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Oratio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Oration.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tamen à philosopho si afferat eloquentiam, non asperner, si non habeat, no[n] admodum flagite[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        A Philosopho ne flagites eloquentiam
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>You may not demand eloquence from a philosopher.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quot homines tot sententiae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Prouerb[ium].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>A proverb.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Phaedrum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Pha[e]drus
+                    </marginalia_text>
+                    <person name="Phaedrus the Epicurean"/>
+                </position>
+            </language>
+            <translation>Phaedrus the Epicurean.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Zenonem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Zeno.
+                    </marginalia_text>
+                    <person name="Zeno of Sidon"/>
+                </position>
+            </language>
+            <translation>Zeno of Sidon.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quotidiéque inter nos ea, quae audiebamus, conferebamus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Qua[e] audiebamus, quotidie co[n]ferrebamus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>What we heard we discussed everyday.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Principio, inquam, in Physicis, quibus maxime gloriatur, primu[m] totus est alienus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Contra Epicurum.
+                    </marginalia_text>
+                    <person name="Epicurus"/>
+                </position>
+            </language>
+            <translation>Against Epicurus.</translation>
+        </marginalia>
+      
+        <marginalia anchor_text="atomos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Atomi.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Atoms.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Democritu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Democritus
+                    </marginalia_text>
+                    <person name="Democritus"/>
+                </position>
+            </language>
+            <translation>Democritus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in rerum natura duo quaerenda sint" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        In reru[m] natura duo qua[e]renda sunt.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>In the nature of things two issues are to be questioned.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sedulitatem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        sedulitas.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Diligence.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="illae Epicuri propriae ruinae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        illa[e] epicuri p[ro]p[ria]e ruin[a]e
+                    </marginalia_text>
+                    <person name="Epicurus"/>
+                </position>
+            </language>
+            <translation>Those particular faults of Epicurus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quam mihi quisque" type="straight"/>
+        <underline language="LA" method="pen" text="ancillae sítne in" type="straight"/>
+        <underline language="LA" method="pen" text="acutu[m] genus est, &amp; ad vsus ciuium no[n] inutile" type="straight"/>
+        <underline language="LA" method="pen" text="illa vendibiliora, haec vberiora certe sunt: quanquam" type="straight"/>
+        <underline language="LA" method="pen" text="esse his literis" type="straight"/>
+        <underline language="LA" method="pen" text="philosophiae disciplinis diceretur" type="straight"/>
+        <underline language="LA" method="pen" text="veniat in medium Epicuri" type="straight"/>
+        <underline language="LA" method="pen" text="non soleat accuratius explicari: veru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="aduersarium aliquem conuincere" type="straight"/>
+        <underline language="LA" method="pen" text="in primis grauis &amp; doctus adolesce[n]s ei disputationi interesset. Nam" type="straight"/>
+        <underline language="LA" method="pen" text="maximísque erroribus animos hominum liberauisse" type="straight"/>
+        <underline language="LA" method="pen" text="Nam illuc quidem adduci vix possum, vt ea quae senserit" type="straight"/>
+        <underline language="LA" method="pen" text="philosophi non offendit" type="straight"/>
+        <underline language="LA" method="pen" text="nam &amp; complectitur verbis quod" type="straight"/>
+        <underline language="LA" method="pen" text="philosopho si afferat eloquentiam, non asperner: si non habeat, no[n] admodum flagite[m]" type="straight"/>
+        <underline language="LA" method="pen" text="sed quot homines tot sententiae" type="straight"/>
+        <underline language="LA" method="pen" text="praeter sedulitatem probarent" type="straight"/>
+        <underline language="LA" method="pen" text="Phaedrum aute[m] etiam amaret" type="straight"/>
+        <underline language="LA" method="pen" text="quotidiéque inter nos ea, quae audiebamus, conferebamus" type="straight"/>
+        <underline language="LA" method="pen" text="controuersia quid ego intelligerem, sed quid probarem" type="straight"/>
+        <underline language="LA" method="pen" text="quibus maxime gloriatur" type="straight"/>
+        <underline language="LA" method="pen" text="quae corrigere vult, mihi quidem deprauare videatur" type="straight"/>
+        <underline language="LA" method="pen" text="id est corpora indiuidia propter soliditate[m]" type="straight"/>
+        <underline language="LA" method="pen" text="concursionibus inter se cohaerescant, ex" type="straight"/>
+        <underline language="LA" method="pen" text="efficiantur ea quae sint, quaéque cernantur, omnia" type="straight"/>
+        <underline language="LA" method="pen" text="sed ex aeterno tempore" type="straight"/>
+        <underline language="LA" method="pen" text="vnum quae" type="straight"/>
+        <underline language="LA" method="pen" text="illae Epicuri propriae ruinae" type="straight"/>
+        <underline language="LA" method="pen" text="illa indiuidua &amp; solida corpora" type="straight"/>
+        
+        <symbol name="Unidentified" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        
+        <mark method="pen" name="X_sign" place="head"/> 
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="LA" method="pen" name="plus_sign" place="tail" text="sedulitas"/>
+        
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral language="LA" place="left_margin" text="vnum">1</numeral>
+        <numeral language="LA" place="left_margin" text="alteru[m]">2</numeral>
+        
+        <drawing anchor_text="Ius ciuile" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="Oratio" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

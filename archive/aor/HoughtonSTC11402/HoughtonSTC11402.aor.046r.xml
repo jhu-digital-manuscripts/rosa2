@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.046r.tif" reader="Harvey" signature="[Evii[r]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Polymechania.</marginalia_text>
+                </position>
+            </language>
+            <translation>Polymechanis.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="ouermatched with" type="straight"/>
+        <underline language="EN" method="pen" text="the great multitude of" type="straight"/>
+        <underline language="EN" method="pen" text="to blowe a larum" type="straight"/> 
+        <underline language="EN" method="pen" text="harde the great noyse, and" type="straight"/>
+        <underline language="EN" method="pen" text="a face of a great multitude" type="straight"/>
+        <underline language="EN" method="pen" text="also discomfited by the" type="straight"/>
+        <underline language="EN" method="pen" text="Portius Cato tribune" type="straight"/>
+        <underline language="EN" method="chalk" text="ouerthrowe" type="straight"/>
+        <underline language="EN" method="pen" text="toppes of the mountayne Callydronius" type="straight"/>
+        <underline language="EN" method="chalk" text="of the mountayne Callydronius" type="straight"/>
+        <underline language="EN" method="pen" text="the hyl, ouer the" type="straight"/>
+        <underline language="EN" method="pen" text="breakyng in on bothe sydes of" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="to blowe a larum"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="toppes of the mountayne Callydronius"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="great noyse"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="a face of a great multitude"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

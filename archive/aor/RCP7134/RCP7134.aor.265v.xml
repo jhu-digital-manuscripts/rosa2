@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.265v.tif" pagination="[258v]" reader="John Dee" signature="[TT ij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Finis rerum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin"> 
+                    <marginalia_text>finis rerum.</marginalia_text>
+                </position>
+            </language>
+            <translation>The end of things.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Finis rerum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Imi coeli dominus no[n] p[otes]t ort[us] reb[us] fine[m] imponere.</marginalia_text>
+                </position>
+            </language>
+            <translation>Indeed, the lord of heaven, having descended, cannot impose the end to things.</translation>  
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Rigi[e]</marginalia_text> <!-- JG: Very unsure -->
+                </position>
+            </language>
+            <translation>Moisten.</translation>  
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="Finis rerum habetur, uel per periodum significatoris" type="straight"/>
+        <underline language="LA" method="pen" text="casum" type="straight"/>
+        <underline language="LA" method="pen" text="concursu domini imi" type="straight"/>
+        
+        <numeral language="LA" place="intext" text="per periodum">1</numeral>
+        <numeral language="LA" place="intext" text="casum">2</numeral>
+        <numeral language="LA" place="intext" text="concursu">3</numeral>
+        
+    </annotation>
+</transcription>

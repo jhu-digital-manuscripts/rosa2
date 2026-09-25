@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.222v.tif" reader="John Dee" signature="[Q 2[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="singula signa" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Per singula signa</marginalia_text>
+                </position>
+            </language>
+            <translation>Through each sign.</translation>
+        </marginalia>
+       
+        <underline language="LA" method="pen" text="Et quod erat mundi mundo regeretur ab ipso" type="straight"/>
+        <underline language="LA" method="pen" text="Quae'q[ue] opera" type="straight"/>
+        <underline language="LA" method="pen" text="Humana" type="straight"/>
+        <underline language="LA" method="pen" text="pars semper ut idem Confinis parti uicinis staret in astris" type="straight"/>
+        <underline language="LA" method="pen" text="ad singula signa locauit" type="straight"/>
+        <underline language="LA" method="pen" text="Ordo ducem sequitur, donec uenit orbis in orbem. Has autem facies rerum per signa locatas" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+    </annotation>
+</transcription>

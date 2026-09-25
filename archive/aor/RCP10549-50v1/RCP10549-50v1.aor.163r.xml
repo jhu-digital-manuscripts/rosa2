@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.163r.tif" pagination="305" reader="John Dee" signature="vv.i."/>
+    <annotation>
+        
+        <marginalia anchor_text="causas ipsas, quae inter se confligunt, contendere velimus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        caussas inter se [ co[n]fligere co[n]tendere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Causes that conflict each other and contrast.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Comparatio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Comparison.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="contra illam naufragorum eiectam ac debilitatam manum, florem totius Italiae ac robur educite" type="straight"/>
+        <underline language="LA" method="pen" text="hac enim parte pudor pugnat, illinc petula[n]tia: hinc pudicitia, illinc stuprum: hinc fides, illinc fraudatio: hinc pietas, illinc scelus: hinc co[n]stantia, illinc furpr:              hinc honestas, illinc turpitudo: hinc continentia, illinc libido. Denique aequitas, tempera[n]tia, fortitudo, prudentia, virtutes omnes, certant cum iniquitate, cum luxuria, cum ignauia, cum temeritate,              cum viciis omnibus. postremo copiae cum egestate, bona ratio cum perdita, mens sana cum amentia, bona denique spes cum omnium rerum desperatione confligit" type="straight"/>
+        <underline language="LA" method="pen" text="praeclarissimis virtutibus tot, &amp; tanta vicia superari" type="straight"/>
+        <underline language="LA" method="pen" text="vestra tecta custodiis, vigiliísque defendite" type="straight"/>
+        <underline language="LA" method="pen" text="salutem omniúmque vestrum in" type="straight"/>
+        <underline language="LA" method="pen" text="Mea lenitas adhuc sicui solutior visa est, hoc" type="straight"/>
+        <underline language="LA" method="pen" text="cuius ego non modo factum, sed incoeptum vllum, conatúmve contra patriam deprehendero: sentiet in hac vrbe" type="straight"/>
+        <underline language="LA" method="pen" text="vigilantes, esse egregios magistratus, esse fortem Senatum, esse arma, esse" type="straight"/>
+        <underline language="LA" method="pen" text="ego ducibus in hanc spem, sente[n]tiámque sum ingressus" type="straight"/>
+        <underline language="LA" method="pen" text="vrbem pulcherrimam, florentissimam, potentissimámque" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">10</numeral>
+        
+    </annotation>
+</transcription>

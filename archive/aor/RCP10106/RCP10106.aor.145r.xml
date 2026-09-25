@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.145r.tif" pagination="289" reader="John Dee" signature="t"/> 
+    <annotation>
+        
+        <marginalia anchor_text="aduersus miseros, sicut suprà dixera[t], inhumanus est iocus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Aduersus miseros inhumanus est iocus.</marginalia_text>
+                </position>
+            </language>
+            <translation>As for attacking the unfortunate, any joke is inhuman.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="iudices" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Iudices</marginalia_text>
+                </position>
+            </language>
+            <translation>Judges.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Longus Sulpitius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Longus Sulpiti[us]</marginalia_text>
+                    <person name="Quintus Sulpicius Longus"/>
+                </position>
+            </language>
+            <translation>Sulpicius Longus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Domitius Afer" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Domitius Afer</marginalia_text>
+                    <person name="Domitius Afer"/>
+                </position>
+            </language>
+            <translation>Domitius Afer.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Alia[e] Circu[m]sta[n]tia[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Other circumstances.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quod in plures conuenit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quod ad plures pertinent.</marginalia_text>
+                </position>
+            </language>
+            <translation>Which is more relevant.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="risus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Risus</marginalia_text>
+                </position>
+            </language>
+            <translation>Laughter.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tres risus fontes.</marginalia_text>
+                </position>
+            </language>
+            <translation>The three origins of laughter.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="etia[m], ne petulans, ne superbu[m], ne loco, ne te[m]pori alienu[m], ne praeparatu[m] &amp; domo allatu[m] uideatur, quod dicimus" type="straight"/>
+        <underline language="LA" method="pen" text="Male etia[m] dicitur, quod in plures conuenit, si aut nationes totae incessantur, aut ordines, aut co[n]ditio, aut studia multoru[m]. Ea" type="straight"/>
+        <underline language="LA" method="pen" text="probitatis impendio" type="straight"/>
+        <underline language="LA" method="pen" text="quae si grauius posita sit, seria sit: si leuius, ridicula. Haec" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark language="LA" method="pen" name="pin" place="head" text="Aduersus miseros inhumanus est iocus"/>
+        <mark method="pen" name="pin" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+  <license>
+    <url>http://creativecommons.org/licenses/by/4.0/</url>
+    <logo>https://i.creativecommons.org/l/by/4.0/88x31.png</logo>
+  </license>
+  <totalPages>109</totalPages>
+  <dates>
+    <startDate>1517</startDate>
+    <endDate>1517</endDate>
+  </dates>
+  <texts>
+    <text id="1">
+      <language>en</language>
+      <title>Britanni[a]e vtriusq[ue] regu[m] et principum origo &amp; gesta insignia ab Galfrido Monemutensi ex antiquissimis Britannici sermonis monumentis in Latinum traducta: &amp; ab Ascensio rursus maiore accuratione impressa..</title>
+      <textId>monmouth</textId>
+      <pages end="109v" start="9r">100</pages>
+    </text>
+  </texts>
+  <bibliographies>
+    <bibliography lang="en">
+      <title>Britanni[a]e vtriusq[ue] regu[m] et principum origo &amp; gesta insignia ab Galfrido Monemutensi ex antiquissimis Britannici sermonis monumentis in Latinum traducta: &amp; ab Ascensio rursus maiore accuratione impressa..</title>
+      <commonName>Geoffrey of Monmouth, Brittaniae vtriusque regum (Paris, 1517)</commonName>
+      <dateLabel>1517</dateLabel>
+      <currentLocation>Christ Church College Library, Oxford</currentLocation>
+      <repository>Christ Church College Library, Oxford</repository>
+      <shelfmark>Wb.5.12</shelfmark>
+      <author>
+        <name>Monmouth, Geoffrey of</name>
+        <id>http://www.isni.org/isni/0000000123212370</id>
+      </author>
+      <reader>
+        <name>John Dee</name>
+        <id>http://www.isni.org/isni/0000000122785193</id>
+      </reader>
+      <website>https://archaeologyofreading.org/bibliography/Dee-corpus/Monmouth</website>
+      <detail>[8], CI, [1] leaves : coat of arms ; 4⁰</detail>
+      <note></note>
+    </bibliography>
+  </bibliographies>
+</book>

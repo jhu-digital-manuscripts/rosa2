@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.041v.tif" pagination="[41[v]]" reader="John Dee" signature="[L[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="das die Steren arbores seindt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Stella[e] su[n]t Arbores Co[e]li</marginalia_text>
+                </position>
+            </language>
+            <translation>Stars are the trees of the sky.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="arbores seindt" type="straight"/>
+        <underline language="DE" method="pen" text="das dieselbigen Sternen außgossen haben vnd samlent ein anderst" type="straight"/>
+        <underline language="DE" method="pen" text="so die zeit kompt so wirts alles erfült vn[d] erstadt auff ein mal" type="straight"/>
+        <underline language="DE" method="pen" text="dann da versaumpt sich nichts von oben herab was" type="straight"/>
+        <underline language="DE" method="pen" text="das kompt auff ein andere zeit" type="double"/>
+        <underline language="DE" method="pen" text="den Winther" type="straight"/>
+        <underline language="DE" method="pen" text="nur Arbores" type="straight"/>
+        
+    </annotation>
+</transcription>

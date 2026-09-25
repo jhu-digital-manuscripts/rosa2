@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.endmatter.flyleaf.005v.tif" reader="John Dee"/> 
+<annotation>
+    
+    <marginalia hand="Italian" method="pen" other_reader="Wait Winthrop">
+       <language ident="LA">
+           <position book_orientation="180" place="full_page">
+               <marginalia_text>Wait Winthrop</marginalia_text>
+               <marginalia_symbol name="Hieroglyphic_Monad"/>
+               <person name="Wait Winthrop"/>
+           </position>
+       </language>
+   </marginalia>
+    
+    <marginalia hand="Italian" method="pencil" other_reader="Unknown">
+        <language ident="EN">
+            <position book_orientation="180" place="full_page">
+            <marginalia_text>168 [deleted]</marginalia_text>
+            </position>
+        </language>
+    </marginalia>
+    
+    </annotation>
+</transcription>

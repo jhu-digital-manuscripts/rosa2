@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.106r.tif" pagination="35" reader="Harvey" signature="C2[r]"/>	<!-- ABO 110right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Fractus, timidúsue animus; aut vitij
+						Conscius, aut ignorantia[e].
+						Vnde semper Audendum absolutè. {
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A broken or timid soul; conscious either of vice or of ignorance;
+				whence one must always be absolutely daring.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Subiecta materia distinguit adiuncta[m]
+						tam Elocutionis, quàm Pronunciationis. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Subject matter determines any addition, as much of Expression, as of Pronunciation.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Stratagema O[e]conomicum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				An economic stratagem.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Sosipatra had all bookes without booke. 
+					</marginalia_text>
+					<person name="Sosipatra"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Hoc age: et Scopum ipsum fige.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Do This; and fix yourself on the Goal.	
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Magis feruidus in flagranti opere, quam ullus Achilles, aut Alexander: Sylla, aut Ca[e]sar.
+					</marginalia_text>
+					<person name="Achilles"/>
+					<person name="Alexander the Great"/>
+					<person name="Sulla"/>
+					<person name="Julius Caesar"/>
+				</position>
+			</language>
+			<translation>
+				More fiery in performing deeds than any Achilles or Alexander, Sulla or Caesar.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Axiophili summa Angelica. Summa ha[e]c summarum est, à multo ascensus ad vnum.
+						Menteq[ue] purgata geritur res integra lucis. Foelix pra[e] reliquis, cui pra[e]sentissimus
+						a[e]ther. Dexteritasq[ue] valet, qua[e] compos acuminis alti.
+					</marginalia_text>
+					<person name="Axiophilus"/>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						Distinguit confusa ad viuum,
+						et nullibi hebescens
+						Inseruit momento aptè,
+						figitq[ue] scopu[m] ipsu[m] =
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						= Merionis veluti percussit arundo Columbam, Atq[ue] aue traiecta meruit bis quinq[ue]
+						secures.
+					</marginalia_text>
+					<person name="Meriones"/>
+				</position>
+			</language>
+			<translation>
+				The angelic summit of Axiophilus. The chief of points of this summa are: 
+				ascending from many to one;
+				the matter is managed, with a cleansed mind, impartial to light;
+				happy in view of the future; for which the ether is most powerful; 
+				and valuable is the skill which shares in a noble acumen. 
+				He distinguishes confused things at once, and nowhere grows dull.
+				He rightly attends to the current moment and fixes himself on the goal.
+				Just as the arrow of Meriones strikes the pigeon, and after the bird was pierced, he earned ten axes.	
+					<!-- Description of Meriones in Book XXIII of the Iliad. -->
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="quei poeti, i quali" type="straight"/>
+		<underline language="IT" method="pen" text="famoso Petrarca, il quale" type="straight"/>
+		<underline language="IT" method="pen" text="corone de'fiori" type="straight"/>
+		<underline language="IT" method="pen" text="Quelle d'alloro" type="straight"/>
+		<underline language="IT" method="pen" text="Cesari" type="straight"/>
+		<underline language="IT" method="pen" text="poeti" type="straight"/>
+		<underline language="IT" method="pen" text="e gli ornan" type="straight"/>
+		<underline language="IT" method="pen" text="come'l ciel le stelle" type="straight"/>
+		<underline language="IT" method="pen" text="troppo vuole, tutto perde" type="straight"/>
+		<underline language="IT" method="pen" text="certi danari in" type="straight"/>
+		<underline language="IT" method="pen" text="suo secreto confidaua" type="straight"/>
+		<underline language="IT" method="pen" text="stati furati" type="straight"/>
+		<underline language="IT" method="pen" text="che'l compare" type="straight"/>
+		<underline language="IT" method="pen" text="di bene in meglio" type="straight"/>
+		<underline language="IT" method="pen" text="sotterrare domani altri mille ducati" type="straight"/>
+		<underline language="IT" method="pen" text="con quelli che voi sapete" type="straight"/>
+		<underline language="IT" method="pen" text="di rubare quelli di più" type="straight"/>
+		<underline language="IT" method="pen" text="vi ripose subito" type="straight"/>
+		<underline language="IT" method="pen" text="padrone di essa ritornato" type="straight"/>
+		<underline language="IT" method="pen" text="allegramente" type="straight"/>
+		<underline language="IT" method="pen" text="compare, &amp; guarti" type="straight"/>
+		<underline language="IT" method="pen" text="il prouerbio" type="straight"/>
+		<underline language="IT" method="pen" text="giouamento" type="straight"/>
+		<underline language="IT" method="pen" text="etiando dal nimico" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<symbol name="SS" place="left_margin"/>
+		
+		<symbol name="SS" place="right_margin"/>
+		
+		<symbol name="SS" place="intext"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--fura-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--pe-->
+		
+		<mark method="pen" name="dot" place="intext"/> <!--ornauano, si-->
+		<mark method="pen" name="apostrophe" place="intext"/> <!--guarti. onde-->
+
+    </annotation>
+</transcription>

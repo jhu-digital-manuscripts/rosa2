@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>2</illustrations>
+    <totalPages>194</totalPages>
+    <dimensions units="mm">
+        <width>235</width>
+        <height>310</height>
+    </dimensions>
+    <dates>
+        <startDate>1400</startDate>
+        <endDate>1450</endDate>
+    </dates>
+    <texts>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="194v" start="1r">194</pages>
+            <illustrations>2</illustrations>
+            <linesPerColumn>38</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Royal 19 B XII</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>Parchment</material>
+            <origin>France</origin>
+            <currentLocation>London</currentLocation>
+            <repository>British Library</repository>
+            <shelfmark>Royal MS 19 B XII</shelfmark>
+	    <website>http://searcharchives.bl.uk/IAMS_VU2:IAMS040-002107604</website>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Royal MS 19 b XII</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>Parchemin</material>
+            <origin>France</origin>
+            <currentLocation>London</currentLocation>
+            <repository>British Library</repository>
+            <shelfmark>Royal MS 19 B XII</shelfmark>
+	    <website>http://searcharchives.bl.uk/IAMS_VU2:IAMS040-002107604</website>
+        </bibliography>
+    </bibliographies>
+</book>

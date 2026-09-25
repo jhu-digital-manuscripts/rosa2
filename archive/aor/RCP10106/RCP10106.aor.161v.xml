@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.161v.tif" pagination="322" reader="John Dee" signature="[x[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="accusatione autoritatis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Autorita[ti]s in accusatione</marginalia_text>
+                </position>
+            </language>
+            <translation>Authority for an accusation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="comparatione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Comparatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Comparison.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Vareno" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Vareno.</marginalia_text>
+                    <book title="Pro Vareno"/>
+                </position>
+            </language>
+            <translation>Pro Vareno.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Roscius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Roscio.</marginalia_text>
+                    <book title="Pro Roscio Amerino"/>
+                </position>
+            </language>
+            <translation>Pro Roscio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Naeuij Apruniani" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Neuiuis aprunianus</marginalia_text>
+                    <person name="Naevius Arpinianus"/>
+                </position>
+            </language>
+            <translation>Naevius Arpinianus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tyrannus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tyrannus</marginalia_text>
+                </position>
+            </language>
+            <translation>A tyrant.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="uniuersitate pugnandum est" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

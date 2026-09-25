@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.027v.tif" pagination="54" reader="John Dee" signature="[d 3[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Razielem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Raziel.</marginalia_text>
+                    <person name="Raziel"/>
+                </position>
+            </language>
+            <translation>Raziel.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="libris Hanochi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Libri Enoch.</marginalia_text>
+                    <book title="Book of Enoch"/>
+                </position>
+            </language>
+            <translation>The Books of Enoch.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uocatus est Og in sacris commentarijs, alibi Ogys &amp; Ogyges" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Og. Ogyges.</marginalia_text>
+                    <person name="Ogyges"/>
+                </position>
+            </language>
+            <translation>Og. Ogyges.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in suo libro" type="straight"/>
+        <underline language="LA" method="pen" text="annis Adamum docentem" type="straight"/>
+        <underline language="LA" method="pen" text="per Razielem omnia" type="straight"/>
+        <underline language="LA" method="pen" text="prior est libris Hanochi" type="straight"/>
+        <underline language="LA" method="pen" text="conseruantur canonicè" type="straight"/>
+        <underline language="LA" method="pen" text="ecclesia reginae Sabba" type="double"/>
+        <underline language="LA" method="pen" text="mundis" type="straight"/>
+        <underline language="LA" method="pen" text="distincta ante" type="triple"/>
+        <underline language="LA" method="pen" text="diluuium" type="straight"/>
+        <underline language="LA" method="pen" text="panes propositionis" type="straight"/>
+        <underline language="LA" method="pen" text="in sanguine humano Deo unito" type="straight"/>
+        <underline language="LA" method="pen" text="per omnia innocenti" type="straight"/>
+        <underline language="LA" method="pen" text="est panis uini'q[ue] mysterijs" type="straight"/>
+        
+    </annotation>
+</transcription>

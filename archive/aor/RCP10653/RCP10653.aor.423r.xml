@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.423r.tif" pagination="395" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Rogeriu[m] de Pyuelesdon" hand="Italian">  <!-- DO: Anchor '' -->
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Rogerus Pyuelesdon 
+                    </marginalia_text>
+                    <person name="Roger de Puleston"/>
+                    <location name="Puleston"/>
+                </position>
+            </language>
+            <translation>
+                               
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pyuelesdon" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Pylston 
+                    </marginalia_text>
+                    <location name="Puleston"/>
+                </position>
+            </language>
+            <translation>
+                Puleston.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="VVallenses" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Wallenses.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The Welsh.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Conanus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Conanus. 
+                    </marginalia_text>
+                    <person name="Cynan ap Maredudd"/>
+                </position>
+            </language>
+            <translation>
+                Cynan ap Maredudd.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Morganus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Morganus. 
+                    </marginalia_text>
+                    <person name="Morgan ap Maredudd"/>
+                </position>
+            </language>
+            <translation>
+                Morgan ap Maredudd.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Madocus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Madocus. 
+                    </marginalia_text>
+                    <person name="Madog ap Llywelyn"/>
+                </position>
+            </language>
+            <translation>
+                Madog ap Llywelyn.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vocalis princeps" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        vocalis Princeps
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The outspoken leader.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="VVallenses iterum" type="straight"/>
+        <underline language="LA" method="pen" text="malignitatis spiritu debacchantes" type="straight"/>
+        <underline language="LA" method="pen" text="insueto iugo eis imposito &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="exhibitione sumptuu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Centurioem ipsoru[m], quenda[m] nomine Rogeriu[m] de" type="straight"/>
+        <underline language="LA" method="pen" text="nostris suspende[n]tes" type="straight"/>
+        <underline language="LA" method="pen" text="expoliauerunt, &amp; eum diu suspensum posteà decollauerunt" type="straight"/>
+        <underline language="LA" method="pen" text="illam, tam sacrilegam &amp; prophanam, penitus" type="straight"/>
+        <underline language="LA" method="pen" text="Snauduna[m] mouit" type="double"/>
+        <underline language="LA" method="pen" text="milleni homines deficientes spiritum exhalabant" type="straight"/>
+        <underline language="LA" method="pen" text="centenos &amp; ce[n]tenos" type="straight"/>
+        <underline language="LA" method="pen" text="est Conanus" type="straight"/>
+        <underline language="LA" method="pen" text="praedo nominatissimus" type="straight"/>
+        <underline language="LA" method="pen" text="Morganus de tribu" type="straight"/>
+        <underline language="LA" method="pen" text="Comitem Glouerniae" type="double"/>
+        <underline language="LA" method="pen" text="nomine Madocus" type="double"/>
+        <underline language="LA" method="pen" text="vocalis princeps" type="double"/>
+        
+    </annotation>
+</transcription>

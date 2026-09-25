@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.052r.tif" pagination="46" reader="John Dee" signature="M ij"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Intelligit radios □ ☍ alicuius planet[a]e: qui radij proijciebantur ad ☉ intraret aliquod ex quatuor
+                    signis mobilib[us]. // hoc etia[m] colligere potes ex sequentibus de ☾ Imò et de suis proprijs radijs ess[e] rerum p[otes]t.</marginalia_text> <!-- FSF: I think the last word before the // is mobilib[us] -->
+                    <symbol_in_text name="Square"/>
+                    <symbol_in_text name="Opposite_planets"/>
+                    <symbol_in_text name="Sun"/>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>He understands the rays in the square or opposition of any planet: those which were thrown out towards the sun. He quickly reached any out of four shifting signs.
+            You can even collect this from the observations of the moon. Indeed, it can even be from the things' own rays themselves.</translation> 
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vide quid de radijs concurre[n]tibus ad eunde[m] locu[m] dicat.</marginalia_text>
+                </position>
+            </language>
+            <translation>Look what he says about the rays rallying towards the same place.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="si directio bona sit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota qua ratione directio bona impediatur. Et r[ati]o[n]e co[n]traria Iuvatur.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Note by which reason a good direction is hindered. And by a contrary manner he is assisted.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>extra angulos.</marginalia_text>
+                </position>
+            </language>
+            <translation>Beyond the angles.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>[Tamen] ci</marginalia_text> <!--JG: No clue--> <!-- FSF: I don't know either; it could be that the second word is cui, but the u disappears in the dot -->
+                </position>
+            </language>
+            <translation/>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Cum Sol aequinoctium facit, in locis quadratis &amp; oppositis, fortior est" type="straight"/>
+        <underline language="LA" method="pen" text="Idem" type="straight"/>
+        <underline language="LA" method="pen" text="reliquorum" type="straight"/>
+        <underline language="LA" method="pen" text="amici ac beneuoli, erit contrarium: &amp; si directio bona sit, &amp; discurrant inimici per locum oppositum significatori, non habebit" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <errata amendedtext=", " copytext="." language="LA"/>
+        <!-- A full stop converted into a comma at the end of the ninth line from the bottom -->
+        
+    </annotation>
+</transcription>

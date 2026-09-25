@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.014v.tif" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>De ductoria planetaru[m]. fo. 170.v.
+                    Reflexio et tra[n]slatio luminis fo. 177. fo. 169.
+                    figura[e] dominius 168.v. 208.v.  <!--JG: Unsure about 'dominius'. Refers to page which contains the note 'figurae dominus'-->
+                    primus / secundus / et tertius domin[us] alicui[us] dom[us]. 281 et fo 236..v.
+                    Chronocrator / fo 149 //
+                    Alfridaria. particularis et generalis 156.v.
+                    Dominis genitur[a]e duplex. 135.v/
+                    Partes 296.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:360:m0001" text="170.v"/>
+                        <target ref="RCP7134:373:m0001" text="177"/>
+                        <target ref="RCP7134:357:m0001" text="169"/>
+                        <target ref="RCP7134:356" text="168.v"/>
+                        <target ref="RCP7134:436" text="208.v"/>
+                        <target ref="RCP7134:581" text="281"/>
+                        <target ref="RCP7134:492" text="236..v"/>
+                        <target ref="RCP7134:317:m0001" text="149"/>
+                        <target ref="RCP7134:332" text="156.v"/>
+                        <target ref="RCP7134:290" text="135.v"/>
+                        <target ref="RCP7134:611:m0001" text="296"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>On the position of power (ductoria) of planets, folio 170 verso.
+                The reflection and translation of the light, folio 177 [and] folio 169.
+                The lord of the figure, [folio] 168 verso [and] 208 verso.
+                The first, second and third lord of any house, [folio] 281 and folio 236 verso.
+                Chronocrator ("time-lord"), folio 149. 
+                The Alfridaries, particular and general, [folio] 156 verso.
+                The double [nature?] of the lord of a geniture, [folio] 135 verso.
+                Parts, [folio] 296.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>Transitu[m] d[omi]ni genitur[a]e vel asce[nd]entis notat. [Etc] in sua a[e]ditione 1543. fol aa.1. </marginalia_text> <!-- FSF: I read asce[n]de[n]tis -->
+                    <book title="Libelli Duo"/>
+                </position>
+            </language>
+            <translation>He notes the transition of the lord of the geniture or the ascendant. Et cetera in his edition [of] 1543. Folio aa1.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>Reuolutio[n]es diurnae[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Daily revolutions.</translation>
+        </marginalia>
+        
+        <marginalia date="28-10-1553" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>Probabile est in annuis revolutionibus no[n] fieri illum saltu[m] post die[s] 365 co[m]pletas, sed sup[er]
+                    numerariu[m] illud tempus 5 horaru[m] et 55 minutorum in diurnas elapsi anni revolutiones absumi p[otes]t si, tempori radicis vel revolution[is] 
+                    addatur pro quolib[et] die minutu fere vnu[m], dico fere, na[m] pro singulis 36 diebus elapsis addantur tantum 35 minuta. Et ad illud tempus 
+                    figura erigatur cum pr[a]esenti tum ca[e]li forma. At alias directionu[m] formas vide in aphorismis n[ost]ris. / vel, 
+                    Probabilius est, maiore[m] certitudine[m] inveniri in nature et causarum ordine perseque[n]do, ad effectus eliciendos futuros, vel memorandos
+                    transactos, qui talis est, videm[us] diebus singulis ☉e[m], suo redit[u] ad idem diem [conpletur], vnde et nos notat loco ☉is tempore revolutionis, <!-- FSF: I think completur is something like confictus; I believe the tu belongs to respectu -->
+                    [respectu] [ et xi] horizontis et loci singulis totius anni seque[n]tibus diebus, quoties ad simile[m] situ[m] et position[is]
+                    circulu[m] recurrat, et ip[su]m et caeteros planetas considerabim[us] pro ille tempore, vbi sunt in [signifero] locali. Deinde in [motu] <!-- FSF: something like signifero -->
+                    eius diei diurno, quomodo [reru[m]] significatores temporanei ad loca aptissima pro suis significatis prodace[m] die[m] ferantur etc. j.d. 1553. 28 octb[ris].</marginalia_text> <!-- FSF: I think the third word is diurno -->
+                    <symbol_in_text name="Sun"/>
+                    <person name="John Dee"/>
+                </position>
+            </language>
+            <translation>It is probable that in the yearly revolutions that leap cannot be done after 365 complete days, but  
+            that in addition to the arithmatician, that time of five hours and 55 minutes elasped on a daily basis, it can be that the revolutions of a year are wasted if it is added to the time
+            of the root or revolution for whatever day to lessen [....] [....], I say in general, for only 35 minutes are added for 36 individual elapsed days. And for that time a figure is constructed both for the present form and of the sky <!-- JG: Unsure about 'cum praesenti tum caeli forma'-->
+            And see the other forms of the directions in our aphorisms. Or, it is more probable that a greater certitude is found in the nature and order of the causes [which is] to be taken up with the
+            aim of eliciting future effest or remembering transactions, which is of such kind: we see the sun on invidual days, it is fulfilled by its return, hence even it observes us [??] <!--JG: Don't get this 'nos notat loco', what is the subject??-->
+            in the place of the sun in the time of the revolution [...........] of the horizon and place for the invidual following days of the whole year, it returns daily towards a similar place and cycle of the position,
+            and we will consider itself and the remaining planets for that time, where they are in the chief location. Thence in the daily motion of that day, how the timely signifiers of matters were brought to the most apt place 
+            for their significations [prodacem diem??]. John Dee, October 28, 1553.</translation> 
+        </marginalia>
+        
+        <marginalia hand="English_secretary" id="t0001" internal_ref="c0001">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>Exactissime pro diurnis revolutionib[us] proveniunt secunda minuta
+                    58 et 150/365 vni[us] % 30/73) minuti. Ergo ante [nimium] [dedim[us]]: cum vnu[m] minutum primu[m] <!-- FSF: I think it is 58; maybe dedimus is deditic[us]? but dedimus actually works better here -->
+                    assignavim[us].</marginalia_text>
+                </position>
+            </language>
+            <translation>The minutes and seconds come forth most exactly for daily revolutions. 58 [seconds] and 150/365 of one [year], that is <!-- FSF: '58' not 'six seconds'; I don't think the year is correct here; maybe minute? -->
+            30/73 minutes. Therefore, we attributed too much before: when we assigned one minute first.</translation> <!--JG: Extremely unsure, both abt transcription and translation-->
+        </marginalia>
+        
+        <calculation book_orientation="0" id="RCP7134:034:c0001" internal_ref="RCP7134:034:t0001" method="pen" place="full_page" type="arithmetic">
+            165/365 [=0.452] % [that is] 33/73 [=0.452]
+        </calculation>
+        
+        <table place="full_page" type="astrological_chart">
+            <tr>
+                <th>2 [secundum]</th> <!-- FSF: I don't understand these four lines, I have to admit -->
+                <th>3 [tertium]</th>
+                <th>4 [quartum]</th>
+                <th>5 [quinctum]</th>
+            </tr>
+            <tr>
+                <td>58</td>
+                <td>24</td>
+                <td>39</td>
+                <td>165</td>
+            </tr>
+        </table>
+        
+        <table place="full_page" type="standard_table">
+            <tr>
+                <th>Anni</th>
+                <th>H.</th>
+                <th>M.</th>
+                <th>S.</th>
+                <th/>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>5</td>
+                <td>55</td>
+                <td>20</td>
+                <td>Ad.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>11</td>
+                <td>50</td>
+                <td>40</td>
+                <td>ad.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>6</td>
+                <td>14</td>
+                <td>0</td>
+                <td>.sub.</td>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>5</td>
+                <td>55</td>
+                <td>20</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>12</td>
+                <td>9</td>
+                <td>20</td>
+                <td>S</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>6</td>
+                <td>14</td>
+                <td>0</td>
+                <td>S.</td>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>18</td>
+                <td>4</td>
+                <td>40</td>
+                <td>S.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>12</td>
+                <td>9</td>
+                <td>20</td>
+                <td>S</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>5</td>
+                <td>55</td>
+                <td>20</td>
+                <td>Ad</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>11</td>
+                <td>50</td>
+                <td>40</td>
+                <td>ad.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>17</td>
+                <td>46</td>
+                <td>0</td>
+                <td>ad.</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>0</td>
+                <td>18</td>
+                <td>40</td>
+                <td>S.</td>
+            </tr>
+                <tr>
+                    <td>8</td>
+                    <td>0</td>
+                    <td>37</td>
+                    <td>20</td>
+                    <td>S.</td>
+                </tr>
+            <tr>
+                <td>12 [16 - deleted]</td>
+                <td>0</td>
+                <td>56</td>
+                <td>0</td>
+                <td>S.</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>1</td>
+                <td>14</td>
+                <td>40</td>
+                <td>S.</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>1</td>
+                <td>33</td>
+                <td>20</td>
+                <td>S.</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>1</td>
+                <td>52</td>
+                <td>0</td>
+                <td>S.</td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td>2</td>
+                <td>10</td>
+                <td>40</td>
+                <td>S.</td>
+            </tr>
+            <text hand="English_secretary" language="LA">Si Radix fuerit anno primo post bissex.</text>
+            <text hand="English_secretary" language="LA">Anno secundo</text>
+            <text hand="English_secretary" language="LA">Anno tertio</text>
+            <text hand="English_secretary" language="LA">Si in anno intercalari fluente sc[ilicet] post 24 febr. Radix tua fuerit.            
+            </text>
+            <translation>If the root would be in the first year after the bissextile. In the second year. In the third year. If in the proceeding intercalary
+            year, naturally after February 24. Your root would be.</translation> <!-- JG: Unsure, esp. about 'intercalari fluente'--> <!-- FSF: maybe: If in the running leap year? -->
+        </table>
+        
+        <table place="full_page" type="standard_table">
+            <tr>
+                <th>Anni</th>
+                <th>Hor.</th>
+                <th>I</th>
+                <th>II.</th>
+                <th/>
+            </tr>
+            <tr>
+                <td>32</td>
+                <td>2</td>
+                <td>29</td>
+                <td>20</td>
+                <td>S.</td>
+            </tr>
+            <tr>
+                <td>36</td>
+                <td>2</td>
+                <td>48</td>
+                <td>0</td>
+                <td>S.</td>
+            </tr>
+            <tr>
+                <td>40</td>
+                <td>3</td>
+                <td>6</td>
+                <td>40</td>
+                <td>S.</td>
+            </tr>
+            <tr>
+                <td>44</td>
+                <td>3.</td>
+                <td>28</td>
+                <td>20</td>
+                <td>S.</td>
+            </tr>
+            <tr>
+                <td>48</td>
+                <td>3</td>
+                <td>44</td>
+                <td>0</td>
+                <td>S.</td>
+            </tr>
+            <tr>
+                <td>52</td>
+                <td>4.</td>
+                <td>2</td>
+                <td>40</td>
+                <td>S.</td>
+            </tr>
+            <tr>
+                <td>56</td>
+                <td>4.</td>
+                <td>21</td>
+                <td>20</td>
+                <td>S.</td>
+            </tr>
+            <tr>
+                <td>60</td>
+                <td>4.</td>
+                <td>40</td>
+                <td>0</td>
+                <td>S.</td>
+            </tr>
+            <tr>
+                <td>70</td>
+                <td>17</td>
+                <td>26</td>
+                <td>40</td>
+                <td>S.</td>
+            </tr>
+            <tr>
+                <td>80</td>
+                <td>6.</td>
+                <td>13</td>
+                <td>20</td>
+                <td>S.</td>
+            </tr>
+            <tr>
+                <td>90</td>
+                <td>19</td>
+                <td>0</td>
+                <td>0</td>
+                <td>S.</td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>7</td>
+                <td>46</td>
+                <td>40</td>
+                <td>S.</td>
+            </tr>
+            <text hand="English_secretary" language="LA">Vide r[ati]o[n]em ob quam vel hic fiat additio vel subtractio, infrà fo 33.v. Scriptaru[m] a nobis.</text> 
+            <!-- FSF: there is a / missing between subtractio and infra; also, the coma needs to be deleted, because it is an abbreciation from the scriptura[m] below -->
+            <internal_ref>
+                <target ref="RCP7134:084" text="33.v"/>
+            </internal_ref>
+            <translation>See the reason based on which actually this addition or subtraction may be done. [See] below, folio 33 verso, the text [written] by us.</translation> <!-- FSF: I'd translate hic as here -->
+        </table>
+        
+        <table place="full_page" type="standard_table">
+            <tr>
+                <th>G.</th>
+                <th>m</th>
+            </tr>
+            <tr>
+                <td>88</td>
+                <td>50</td>
+            </tr>
+            <text hand="English_secretary" language="LA">
+                Gradus Æquatoris
+            </text>
+            <translation>Degree of the equator.</translation>
+        </table>
+        
+    </annotation>
+</transcription>

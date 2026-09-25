@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.092r.tif" pagination="7" reader="Harvey" signature="A4[r]"/>	<!-- ABO 96right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Nemini vnq[uam] satis fuit Constantia[e] in Optimis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Constancy in the greatest men was never enough for anyone. <!-- CG: Grammar is weird, either it's plural 'Constantiae' (acceptable for the Stoics), but then the verb should be plural; otherwise the subject is something else? Unsure. --> <!--JG: Weird indeed, for can't find anything else that might work as a subject. Leave it like this, will have to ask a specialist-->
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Simplicis est, in paruis ha[e]rescere, (
+						Signa in mundo maiora.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The simple man clings to small things,
+				greater signs are in the world.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						{ i[infr]a 103. 84.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Below, pp. 103, 84.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Fato
+						prudentia maior.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Prudence greater than fate.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+					risoluto.	
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Resolute.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Chi la dura, La vinca.	
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Whoever can endure it, wins it.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Multi magnanimi: paucissimi longanimi.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				There are many magnanimous men and very few patient ones.
+			</translation>
+		</marginalia>
+		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.092r_0001" marginalia_continues_from="Ha2.091v_0001" marginalia_from_transcription="Ha2.091v.xml">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						<!-- Continued from facing page, right margin, Ha2.091v -->
+						[[A3v]: { Gulielmi Birdi dictum de Axiophilo. Illum hominem nunq[uam] vidi iratum; nunq[uam]]
+						tristem; nunq[uam] timidum; nunq[uam] irresolutum; nunq[uam] ignavum, aut languidum; nunq[uam]
+						sui, aut aliorum immemorem; nunq[uam] perturbatum vllo Casu. Non noui hominem, beneficioru[m]
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						magis memorem; aut iniuriarum magis
+						immemore[m]. 
+						Nec scio
+						alique[m], cuius
+						rationes, et actiones ità dependent
+						à Seipso. Ha[e]c ille sobrius generosus 
+						de Axiophilo ingenuè.
+					</marginalia_text>
+					<person name="Axiophilus"/>
+				</position>
+			</language>
+			<translation>
+				[[A3v]: The saying of William Bird regarding Axiophilus. I never saw that man angry, never] sad, never timid, never irresolute, never lazy or languid, never forgetful of himself or of others, 
+				never disturbed by any happening. I have never known a man more mindful of favors, or
+				more forgetful of injuries. Nor do I know of anyone whose reasons and actions depend so much
+				on himself. The sensible noble, man naturally finds these things in Axiophilus. <!-- CG: Unclear on last sentence. -->
+			</translation>
+		</marginalia>		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Hominum dicta, et facta errant: Artium, et Virtutum, non errant.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The words and deeds of men err; those of art and virtue do not.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Manie Quintessentians, curious in other things: but One Entelechist, euer mindful of Himself.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="i dardi della Fortuna" type="straight"/>
+		<underline language="IT" method="pen" text="huomini" type="straight"/>
+		<underline language="IT" method="pen" text="Luigi Alamanni elegantissimo" type="straight"/>
+		<underline language="IT" method="pen" text="Al miser' huom" type="straight"/>
+		<underline language="IT" method="pen" text="la Fortuna il" type="straight"/>
+		<underline language="IT" method="pen" text="Vince" type="straight"/>
+		<underline language="IT" method="pen" text="rinasce in morte" type="straight"/>
+		<underline language="IT" method="pen" text="huomini saui" type="straight"/>
+		<underline language="IT" method="pen" text="alto quesito" type="straight"/>
+		<underline language="IT" method="pen" text="piu antica di" type="straight"/>
+		<underline language="IT" method="pen" text="Iddio" type="straight"/>
+		<underline language="IT" method="pen" text="piu bella" type="straight"/>
+		<underline language="IT" method="pen" text="mondo" type="straight"/>
+		<underline language="IT" method="pen" text="il luogo" type="straight"/>
+		<underline language="IT" method="pen" text="piu co[m]moda" type="straight"/>
+		<underline language="IT" method="pen" text="la speranza" type="straight"/>	
+		<underline language="IT" method="pen" text="perduto" type="straight"/>
+		<underline language="IT" method="pen" text="la virtù" type="straight"/>
+		<underline language="IT" method="pen" text="la mente dell'huomo" type="straight"/>
+		<underline language="IT" method="pen" text="la necessità, ouero" type="straight"/>
+		<underline language="IT" method="pen" text="dar consiglio ad altri" type="straight"/>
+		<underline language="IT" method="pen" text="conoscer se medesimo" type="straight"/>
+		<underline language="IT" method="pen" text="piu" type="straight"/>
+		<underline language="IT" method="pen" text="il tempo" type="straight"/>
+		<underline language="IT" method="pen" text="consegue il tutto" type="straight"/>
+		
+		<symbol name="Sun" place="intext"/>
+		<symbol name="SS" place="intext"/>
+		
+		<symbol name="SS" place="right_margin"/>
+		
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Ma'l valoroso, &amp; saggio, Stelle, Fortuna, &amp; sorte,   Vince, &amp; rinasce in morte"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--si-->
+		<mark method="pen" name="quotation_mark" place="right_margin"/>
+		<mark method="pen" name="plus_sign" place="right_margin"/>
+		
+		<mark method="pen" name="vertical_bar" place="head"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="valoroso"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="saggio"/>
+		<mark method="pen" name="dot" place="intext"/> <!--Vince, &-->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Iddio"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="mondo"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="luogo"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="speranza"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="la virtù"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="mente"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="necessità"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="dar consiglio ad altri"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="conoscer se medesimo"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="tempo"/>
+		
+    </annotation>
+</transcription>

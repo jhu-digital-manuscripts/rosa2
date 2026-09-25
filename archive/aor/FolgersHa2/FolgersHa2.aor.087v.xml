@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.087v.tif" reader="Harvey" signature="[**7v]"/>	<!-- ABO 92left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Exquitissima[e] mundi Sententia[e], et acerrima[e].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The most pointed and exquisite thoughts of the world.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Mimi sublimati.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Elevated mimes.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Fortuna[e] adde:
+						Corpori adde, adde:
+						Animo adde,
+						adde, adde.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Add to fortune.
+				Add, add to the body.
+				Add, add, add to the soul.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Nemo vir,  nisi qui satagit ultra virum.)
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				No one is a man, save he who busies himself more than a man.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Anadiplosis bonorum.
+						Climax Pantagathi.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A folding up of good things.
+				A climax of all good things.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						s[upr]a /
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				[See] above.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Grata breuitas: nouitas:
+						varietas.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Brevity is pleasing; novelty; variety.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Anima, coeli, terra[e]q[ue] 
+						) magnes.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The soul of heaven and the loadstone of the earth.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Vnicus animi, corporis, fortuna[e] faber.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The sole workman of the mind, body and fortune.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Solus faber trismegistus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The sole thrice-great workman.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Axiophili est, exquisitissimas Artium gnomas; et accuratissima Virtutum
+						apophthegmata; in suis dictis, scriptisq[ue] passim interspergere.
+					</marginalia_text>
+					<person name="Axiophilus"/>
+				</position>
+			</language>
+			<translation>
+				To Axiophilus belongs the scattering here and there in his sayings and writings of the most exquisite
+				maxims of the arts and the most accurate aphorisms of virtue.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Quicquid infirmat corpus, aut animum; absolutè contemnatur, et serio
+						fugiatur, tanq[uam] pestis, aut ipsa mors. Noli me tangere.
+					</marginalia_text>
+					<X-ref book_title="Bible" language="LA" person="John" text="Noli me tangere"/>
+				</position>
+			</language>
+			<translation>
+				Whatever weakens the body or the mind must be condemned absolutely and earnestly
+				avoided like the plague or even like death itself. "Do not touch me."
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Di quali cose" type="straight"/>
+		<underline language="IT" method="pen" text="gloriarsi l'huomo" type="straight"/>
+		<underline language="IT" method="pen" text="Ne' giudicij" type="straight"/>
+		<underline language="IT" method="pen" text="l'una, &amp; l'altra" type="straight"/>
+		<underline language="IT" method="pen" text="garrulità" type="straight"/>
+		<underline language="IT" method="pen" text="Incorruttibili" type="straight"/>
+		<underline language="IT" method="pen" text="huomini magnanimi," type="straight"/>
+		<underline language="IT" method="pen" text="huomini dotti" type="straight"/>
+		<underline language="IT" method="pen" text="orrecchio à cicaloni" type="straight"/>
+		<underline language="IT" method="pen" text="Amore hauer" type="straight"/>
+		<underline language="IT" method="pen" text="imperio" type="straight"/>
+		<underline language="IT" method="pen" text="doni placare" type="straight"/>
+		<underline language="IT" method="pen" text="seco[n]do la dignità, &amp; co[n]ditio[n]e" type="straight"/>
+		<underline language="IT" method="pen" text="la virtò" type="straight"/>
+		<underline language="IT" method="pen" text="i maldicenti" type="straight"/>
+		<underline language="IT" method="pen" text="godere della libertà" type="straight"/>
+		<underline language="IT" method="pen" text="Poco pregiarsi da' veri" type="straight"/>
+		<underline language="IT" method="pen" text="grandezza, &amp; fasto" type="straight"/>
+		<underline language="IT" method="pen" text="La malitia" type="straight"/>
+		<underline language="IT" method="pen" text="hippocresia male" type="straight"/>
+		<underline language="IT" method="pen" text="tenere ascosa" type="straight"/>
+		
+		<symbol name="SS" place="left_margin"/>
+		<symbol language="IT" name="JC" place="left_margin" text="Ne' giudicij"/>
+		<symbol name="SS" place="left_margin"/>
+		<symbol name="SS" place="left_margin"/>
+		<symbol name="SS" place="left_margin"/>
+		
+		<mark method="pen" name="quotation_mark" place="left_margin"/>
+		<mark method="pen" name="quotation_mark" place="left_margin"/>
+		<mark method="pen" name="equal_sign" place="left_margin"/> <!--under 'o' of 'apophthegma-->
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--vir-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--maldi-->
+		
+		<mark method="pen" name="plus_sign" place="intext"/>
+		
+		<mark language="IT" method="pen" name="plus_sign" place="tail" text="hippocresia"/>
+
+    </annotation>
+</transcription>

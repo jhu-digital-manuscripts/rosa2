@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.150r.tif" pagination="299" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="haereditas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hereditas</marginalia_text> 
+                </position>
+            </language>
+            <translation>A legacy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="παροιμία" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>παροιμία</marginalia_text>
+                </position>
+            </language>
+            <translation>Comparison.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="prouerbia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Prouerbia</marginalia_text> 
+                </position>
+            </language>
+            <translation>Proverbs.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ut Cicero fecit, cùm ei testem in iudicio Verris roganti dixisset Hortensius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hortensius &amp; Cicero.</marginalia_text> 
+                    <person name="Quintus Hortensius"/>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Hortensius and Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hispo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hispo.</marginalia_text>
+                    <person name="Romanius Hispo"/>
+                </position>
+            </language>
+            <translation>Hispo.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="casus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Casus</marginalia_text> 
+                </position>
+            </language>
+            <translation>Chance.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Domitius Marsus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Domitius Marsus.</marginalia_text>
+                    <person name="Domitius Marsus"/>
+                </position>
+            </language>
+            <translation>Domitius Marsus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="illo" type="straight"/>
+        <underline language="LA" method="pen" text="eruditum" type="straight"/>
+        <underline language="LA" method="pen" text="ut qui mirantibus, quòd humile candelabru[m] emisset, Pransorium erit inquit" type="straight"/>
+        <underline language="LA" method="pen" text="persona, locus, tempus, casus deniq[ue], qui est maximè" type="straight"/>
+        
+        <mark method="pen" name="scribble" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

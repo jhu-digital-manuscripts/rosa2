@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.056v.tif" reader="Harvey" signature="[M.ii.[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Musick,
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        s[upr]a.
+                    </marginalia_text>
+                    <internal_ref text="s[upr]a">
+                        <target ref="Newberry27495:case_712_c27495_097" text="[Iii[r]]"/>
+                        <target ref="Newberry27495:case_712_c27495_098" text="[Iii[v]]"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                Musick, [see] above.
+            </translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="sence of whom" type="straight"/>
+        <underline language="EN" method="pen" text="who" type="straight"/>
+        <underline language="EN" method="pen" text="matches" type="straight"/>
+        <underline language="EN" method="pen" text="doer in such a matter" type="straight"/>
+        <underline language="EN" method="pen" text="doers were of a base sort" type="straight"/>
+        <underline language="EN" method="pen" text="yonge Gentilmen vpon the holy dayes" type="straight"/>
+        <underline language="EN" method="pen" text="daunce" type="straight"/>
+        <underline language="EN" method="pen" text="the countrey" type="straight"/>
+        <underline language="EN" method="pen" text="the barre" type="straight"/>
+        <underline language="EN" method="pen" text="in wrastling" type="straight"/>
+        <underline language="EN" method="pen" text="but of force and slight" type="straight"/>
+        <underline language="EN" method="pen" text="familiar conuersation" type="straight"/>
+        <underline language="EN" method="pen" text="louely freenesse" type="straight"/>
+        <underline language="EN" method="pen" text="shal gain by it" type="straight"/>
+        <underline language="EN" method="pen" text="wrastle" type="straight"/>
+        <underline language="EN" method="pen" text="runne" type="straight"/>
+        <underline language="EN" method="pen" text="leape with" type="straight"/>
+        <underline language="EN" method="pen" text="for courtesie" type="straight"/>
+        <underline language="EN" method="pen" text="not to trye maistry with" type="straight"/>
+        <underline language="EN" method="pen" text="assured to get the vpper hand" type="straight"/>
+        <underline language="EN" method="pen" text="to foule a matter" type="straight"/>
+        <underline language="EN" method="pen" text="to see a Gentilman ouercome by a Cartar" type="straight"/>
+        <underline language="EN" method="pen" text="especially in wrastling" type="straight"/>
+        <underline language="EN" method="pen" text="to abstaine from" type="straight"/>
+        <underline language="EN" method="pen" text="ouercome" type="straight"/>
+        <underline language="EN" method="pen" text="gaine is small" type="straight"/>
+        <underline language="EN" method="pen" text="losse in being" type="straight"/>
+        <underline language="EN" method="pen" text="at tenise" type="straight"/>
+        <underline language="EN" method="pen" text="in open sight" type="straight"/>
+        <underline language="EN" method="pen" text="multitude with their" type="straight"/>
+        <underline language="EN" method="pen" text="beside handlyng his weapon" type="straight"/>
+        <underline language="EN" method="pen" text="matter that is not his profession" type="straight"/>
+        <underline language="EN" method="pen" text="for any praise" type="straight"/>
+        <underline language="EN" method="pen" text="he bestoweth" type="straight"/>
+        <underline language="EN" method="pen" text="he do it excelle[n]tly well" type="straight"/>
+        
+        <underline language="EN" method="pen" text="men" type="straight"/>
+        <underline language="EN" method="pen" text="countrey" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="matches"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="but of force and slight"/>
+        <mark method="chalk" name="X_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="chalk" name="X_sign" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="EN" method="pen" name="X_sign" place="right_margin" text="beside handlyng his weapon"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!-- vppon, for -->
+        <mark method="pen" name="dot" place="intext"/> <!-- many, because -->
+        <mark method="pen" name="dot" place="intext"/> <!-- small, and -->
+        <mark method="pen" name="comma" place="intext"/> <!-- rest, beside -->
+        <mark method="pen" name="bracket" place="intext"/> <!-- rest, beside -->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="beside handlyng his weapon"/>
+        <mark method="pen" name="bracket" place="intext"/> <!-- weapon, as -->
+        
+    </annotation>
+</transcription>

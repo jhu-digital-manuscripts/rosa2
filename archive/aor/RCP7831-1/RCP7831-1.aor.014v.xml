@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="RCP7831-1.014v.tif" pagination="18" reader="Dee" signature="[C[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Homero" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[H]omerus</marginalia_text>
+                    <person name="Homer"/>
+                </position>
+            </language>
+            <translation>Homer.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Terram solis radios meretricari" type="straight"/>
+        <underline language="LA" method="pen" text="Nam Sol &amp; homo, ut" type="straight"/>
+        <underline language="LA" method="pen" text="Sol &amp; planta" type="straight"/>
+        <underline language="LA" method="pen" text="Homero" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

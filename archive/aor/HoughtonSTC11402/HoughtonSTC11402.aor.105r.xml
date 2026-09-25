@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.105r.tif" reader="Harvey" signature="Nii[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Naumachia,</marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>a great, &amp; necessary Art at this day.</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Eccè principia istius Artis, in P. Gregorij Arte mirabili de militia: capite, de Excercitu classico.</marginalia_text>
+                    <person name="Pierre Gregoire"/>
+                    <book title="Syntaxeon artis mirabilis"/>
+                </position>
+            </language>
+            <translation>A mock naval battle, a great, &amp; necessary Art at this day. Look at the origin of that art, in Pierre Grégoire's 'Arte mirabili de militia', in the chapter 'de excercitu classico'. </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="whan they were least loked for" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Ex improuiso.</marginalia_text>
+                </position>
+            </language>
+            <translation>Suddenly.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>owr Inglish pollicy against the Spanish Armada, this other day.</marginalia_text>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ἕυρηκα.
+                    </marginalia_text> 
+                </position>
+            </language>
+            <translation>
+                Eureka. <!-- Unsure if being literal; in that case: "I have found it." -->
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hùc specula, comburentia naues procul Venientes:</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>( è Cardano, Ramo,</marginalia_text>
+                    <person name="Girolamo Cardano"/>
+                    <person name="Petrus Ramus"/>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>et alijs.</marginalia_text>
+                </position>
+            </language>
+            <translation>Here, the coming imitated ships, burned up at distance. According to Cardano, Ramus and others.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>s[upr]a, l.3.c.x.</marginalia_text> <!--JG: See the infra on image _172-->
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0169" text="l.3.c.x."/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>[See] above, book 3, chapter 10.</translation>
+        </marginalia>
+        
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>i[nfr]a, in fine.</marginalia_text> 
+                </position>
+            </language>
+            <translation>[See] below, at the end.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="made promyse" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>No regarde of promucis w[i]th Hasdrubal, and Hannibal.</marginalia_text>
+                    <person name="Hasdrubal II"/>
+                    <person name="Hannibal"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>he playeth fast, &amp; Loose with them.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Hannibal, &amp; Asdrubal, no superstitious votaryes: but perfidous Libertines for aduantage.</marginalia_text>
+                    <person name="Hannibal"/>
+                    <person name="Hasdrubal II"/>
+                    <emphasis method="pen" text="no supersititious votaryes" type="straight"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Elenchus Causa[e].</marginalia_text>
+                </position>
+            </language>
+            <translation>Refutation of the cause.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="they were least loked" type="straight"/>
+        <underline language="EN" method="pen" text="ranne and" type="straight"/>
+        <underline language="EN" method="pen" text="of theyr ennemyes" type="straight"/>
+        <underline language="EN" method="pen" text="and spoyle" type="straight"/>
+        <underline language="EN" method="pen" text="great shyppes on fyer, whiche were lyttell" type="straight"/>
+        <underline language="EN" method="pen" text="wynde amonge" type="straight"/>
+        <underline language="EN" method="pen" text="ennemyes" type="straight"/>
+        <underline language="EN" method="pen" text="them also a fyer &amp; brent" type="straight"/>
+        <underline language="EN" method="pen" text="Hasdruball to" type="straight"/>
+        <underline language="EN" method="pen" text="his ennemies to deth" type="straight"/>
+        <underline language="EN" method="pen" text="remayn alyue" type="straight"/>
+        <underline language="EN" method="pen" text="beare tydynges to" type="straight"/>
+        <underline language="EN" method="pen" text="Hasdruball" type="straight"/>
+        <underline language="EN" method="pen" text="resyste" type="straight"/>
+        <underline language="EN" method="pen" text="came but to take elephantes" type="straight"/>
+        <underline language="EN" method="pen" text="made promyse, not to" type="straight"/>
+        <underline language="EN" method="pen" text="wold graunt hym" type="straight"/>
+        <underline language="EN" method="pen" text="departed a sunder" type="straight"/>
+        <underline language="EN" method="pen" text="sodeynly sette vppon them" type="straight"/>
+        <underline language="EN" method="pen" text="vnder" type="straight"/>
+        
+        <symbol language="LA" name="SS" place="head" text="Eccè principia istius Artis, in P. Gregorij Arte mirabili de militia: capite, de Excercitu classico."/>
+        <symbol name="SS" place="head"/>
+        
+        <symbol language="EN" name="Mars" place="intext" text="robbe and spoyle them"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="elephantes"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="ranne and"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/> <!--Beneath marginal note-->
+        <mark method="pen" name="plus_sign" place="right_margin"/> <!--Beneath marginal note-->
+        <mark method="pen" name="plus_sign" place="right_margin"/> <!--Beneath marginal note-->
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="hash" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="and spoyle"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="great shyppes"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="wynde amonge"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="also a fyer"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="brent"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="EN" method="pen" name="apostrophe" place="intext" text="Hasdrubal"/>
+        <mark method="pen" name="apostrophe" place="intext"/> <!--Hasdruball entrynge-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="came but to take elephantes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="made promyse"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="departed a sunder"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="sodeynly"/>
+        <mark language="EN" method="pen" name="X_sign" place="intext" text="vnder"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="tail" text="Elenchus Causa[e]."/>
+        
+    </annotation>
+</transcription>

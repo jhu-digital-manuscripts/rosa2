@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.029r.tif" pagination="57" reader="John Dee" signature="d 5"/>
+    <annotation>
+        
+        <marginalia anchor_text="in quarta &amp; ultima Ecclesiae aetate sub Maternitatis spiritu" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Maternitas 4a Etas</marginalia_text>
+                </position>
+            </language>
+            <translation>Maternity, the fourth age.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ciuis mundi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cosmopolites</marginalia_text>
+                </position>
+            </language>
+            <translation>Cosmopolitans.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quarta &amp; ultima" type="double"/>
+        <underline language="LA" method="pen" text="Maternitatis" type="double"/>
+        <underline language="LA" method="pen" text="intelligentiae" type="straight"/>
+        <underline language="LA" method="pen" text="paternam &amp; maternam" type="straight"/>
+        <underline language="LA" method="pen" text="ciuis mundi" type="straight"/>
+        <underline language="LA" method="pen" text="diuina uocatio nil aliud sit, quàm complementum iam incoepti ab eo operis, tam ut nobis" type="straight"/>
+        <underline language="LA" method="pen" text="circuncisus fide" type="straight"/>
+        
+    </annotation>
+</transcription>

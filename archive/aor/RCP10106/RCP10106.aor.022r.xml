@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.022r.tif" pagination="43" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="ὀρθογραφία" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>[ὀρθογραφία - deleted]</marginalia_text>
+                </position>
+            </language>
+            <translation>[Orthography].</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ut malus, utrum arborem significet, an hominem non bonum, apice distinguitur." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Malus</marginalia_text>
+                </position>
+            </language>
+            <translation>Evil.</translation> <!-- M.B. In this case I have favoured the most common translation since in these cases Quintilian is discussing both meaning of Malus (evil & apple tree) and Palus (marsh & stake). -->
+        </marginalia>
+        
+        <marginalia anchor_text="Palus aliuid priore syllaba longa, aliud sequenti significat." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Palus</marginalia_text>
+                </position>
+            </language>
+            <translation>Marsh.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ut ex praepositionem si uerbum sequertur specto, adiecta secundae syllaba s litera, es specto: sed si pecto, remota s sciberemus," hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>EX.</marginalia_text>
+                </position>
+            </language>
+            <translation>Ex.</translation> <!-- FSF: I'd translate as from -->
+        </marginalia>
+        
+        <marginalia anchor_text="ut ad, cum esset praepositio, d literam: cum autem coniunctio, t acciperet." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>.AD.</marginalia_text>
+                </position>
+            </language>
+            <translation>Ad.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Item cum, si tempus significaret, per q: si comitem per c" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>CVM.</marginalia_text>
+                </position>
+            </language>
+            <translation>With.</translation>
+        </marginalia>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

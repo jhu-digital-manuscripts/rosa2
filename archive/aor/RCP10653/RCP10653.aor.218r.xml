@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.218r.tif" pagination="427" reader="John Dee" signature="Nn iiij"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Rex pra[e]fectus Walle[n]sibus ab Edwardo R. a[nn]o 1064.
+                    </marginalia_text>
+                    <person name="Edward the Confessor"/>
+                </position>
+            </language>
+            <translation>
+                Put in charge as king of the Welsh by King Edward. 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Dux VVestsaxonum" type="straight"/>
+        <underline language="LA" method="pen" text="At Griffinus, eius aduentu praecognito, naues ascendit, &amp; fugie[n]s vix" type="straight"/>
+        <underline language="LA" method="pen" text="regemque suum Griffinum exultatu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="interfecto rege suo Griffino, caput eius Duci Haraldo" type="straight"/>
+        <underline language="LA" method="pen" text="alium VVallensibus regem praefecit" type="straight"/>
+        <underline language="LA" method="pen" text="Qui Edvvardo" type="double"/>
+        <underline language="LA" method="pen" text="regi fidelitatem pr[a]estito faciens" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

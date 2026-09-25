@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.017r.tif" pagination="17" reader="John Dee" signature="E"/> 
+    <annotation>
+        
+        <marginalia anchor_text="vnd Nachtliecht" hand="Italian">
+            <language ident="DE">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>eins</marginalia_text>
+                </position>
+            </language>
+            <translation>One.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="oder nider" type="straight"/>
+        <underline language="DE" method="pen" text="Dan[n] der Mon mit seinen Sternen ist für vnd für kaldt" type="straight"/>
+        <underline language="DE" method="pen" text="dorren sie auß" type="straight"/>
+        <underline language="DE" method="pen" text="Die höhe der Sonne[n] gibt keinen Sommer" type="double"/>
+        <underline language="DE" method="pen" text="Sommersternen" type="double"/>
+        <underline language="DE" method="pen" text="Sonnen nemen sie" type="straight"/>
+        <underline language="DE" method="pen" text="wachsen" type="straight"/>
+        <underline language="DE" method="pen" text="ein Winther mit seinen" type="double"/>
+        <underline language="DE" method="pen" text="zu schwach" type="double"/>
+        <underline language="DE" method="pen" text="Sonne" type="double"/>
+        <underline language="DE" method="pen" text="Nacht vom liechte" type="straight"/>
+        <underline language="DE" method="pen" text="Mondts" type="double"/>
+        <underline language="DE" method="pen" text="Mon" type="straight"/>
+        <underline language="DE" method="pen" text="Eins weiß" type="double"/>
+        <underline language="DE" method="pen" text="ander Rott" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="DE" method="pen" name="X_sign" place="intext" text="liecht"/>
+        <mark language="DE" method="pen" name="X_sign" place="intext" text="oder"/>
+        <mark language="DE" method="pen" name="X_sign" place="intext" text="Mon"/>
+        
+    </annotation>
+</transcription>

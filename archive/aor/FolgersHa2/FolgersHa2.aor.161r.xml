@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.161r.tif" pagination="145" reader="Harvey" signature="K[r]"/>	<!-- ABO 165right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						La ciuil conuersatione del Platone.
+					</marginalia_text>
+					<person name="Plato"/>
+				</position>
+			</language>
+			<translation>Plato's civil conversation.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Analysis hominu[m] difficillima.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The most difficult analysis of men.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Mnemosyna animalium.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The remembrance of animals.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						apophthegma argutum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A witty aphorism.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Analysis singulorum nuda, et intima
+						Anatoma. aphoristica enucleatio.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The bare analysis and the deepest anatomy of singular things. An aphoristic elucidation.</translation>
+		</marginalia>
+		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.161r_0001" marginalia_continues_to="Ha2.160v_0001" marginalia_to_transcription="Ha2.160v.xml">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Thomas acutus: verum est: subtilis Scotus: nemo scholasticoru[m] magis: argutus Occam:
+						Laudo. Da mihi apophthegmata Laertij, et Plutarchi: epigrammata Martialis, et
+					</marginalia_text>
+					<person name="Thomas Aquinas"/>
+					<person name="Duns Scotus"/>
+					<person name="William of Ockham"/>
+					<person name="Diogenes Laertius"/>
+					<person name="Plutarch"/>
+					<person name="Martial"/>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						Heiuodi sales Domenici, et Guatij.
+						Cu[m] mensa philosophica: dialogis
+						Eliota[e]: apodemicis locoru[m],
+					</marginalia_text>
+					<person name="John Heywood"/>
+					<person name="Lodovico Domenichi"/>
+					<person name="Stefano Guazzo"/>
+					<person name="John Eliot"/>
+					<book title="Mensa philosophica"/>
+					<book title="Ortho-epia gallica"/>
+				</position>
+				<position book_orientation="270" place="tail">
+					<marginalia_text>
+						reru[m]q[ue]
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						detectionibus:
+						Aschami personarum descriptionibus in rebus Germanicis:
+						ad omnes discursus.
+						Ha[e] Aulicorum
+						argutia[e]: et
+					</marginalia_text>
+					<person name="Roger Ascham"/>
+					<book title="Report and Discourse"/>
+				</position>
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						hac mundi subtilitas. Pra[e]sertim cum Aristotelis Oeconomicis, politicisq[ue] technis:
+						Mithridatis epistola, et concione contra Romanos: stratagematis Gandini. [p. 144: Huc etiam Aularu[m] secreta in rhapsodijs aulicis: politici aphorismi Lipsij, Sansouini, 
+						Dana[e]i; Machiauelli etiam, Bodini, Hotomani. the Queen Mothers Legenda aurea. Poncets resolutions from Turkie.]
+							<!-- Continues onto facing page, right margin, Ha2.162v -->
+					</marginalia_text>
+					<person name="Aristotle"/>
+					<person name="Mithridates VI of Pontus"/>
+					<person name="Marcantonio Gandino"/>
+					<book title="Economics"/>
+					<book title="Politics"/>
+					<book title="Histories"/> <!--JG: This is the book in which Mithridates' letter appears -->
+					<book title="Stratagemata"/>
+				</position>
+			</language>
+			<translation>It is true that Thomas Aquinas is sharp, and that Duns Scotus is subtle. No one of the scholastics more than the witty William of Ockham. I praise them. 
+				Give me the aphorism of Diogenes Laertius and Plutarch, Martial's epigrams, and Heywood's, Domenichi's and Guazzo's witticisms. With the 'Mensa Philosophica': Eliot's 'Dialogues',
+				the instructive revealing of places and things: with Ascham's descriptions of the persons in German matters: for all discourses. These are the eloquent things of courtiers and this exactness
+				of the world. Especially with Aristotle's economic and political artifices: with Mithridates' letter, and his speech against the Romans: with Marcantonio Gandino's 'Stratagemata'. [p. 144: Here also the secrets of the courts in the royal rhapsodies: the political aphorisms of Lipsius, Francesco Sansavino, and Lambert Daneau. Also of Machiavelli, Jean Bodin, and Francois Hotman.
+				The Queen Mothers Golden Legend. Maurice Poncet resolutions from Turkie.]
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="quali cose" type="straight"/>
+		<underline language="IT" method="pen" text="l'humanità" type="straight"/>
+		<underline language="IT" method="pen" text="l'humanità" type="straight"/>
+		<underline language="IT" method="pen" text="magnanimità" type="straight"/>
+		<underline language="IT" method="pen" text="in tre cose" type="straight"/>
+		<underline language="IT" method="pen" text="nel salutar le" type="straight"/>
+		<underline language="IT" method="pen" text="aiutar il prossimo" type="straight"/>
+		<underline language="IT" method="pen" text="gli amici à conuiuio" type="straight"/>
+		<underline language="IT" method="pen" text="Difficilissimo" type="straight"/>
+		<underline language="IT" method="pen" text="la natura" type="straight"/>
+		<underline language="IT" method="pen" text="de' mortali" type="straight"/>
+		<underline language="IT" method="pen" text="d'animali brutti" type="straight"/>
+		<underline language="IT" method="pen" text="ha vna sola" type="straight"/>
+		<underline language="IT" method="pen" text="i Leoni" type="straight"/>
+		<underline language="IT" method="pen" text="forti" type="straight"/>
+		<underline language="IT" method="pen" text="le lepri che" type="straight"/>
+		<underline language="IT" method="pen" text="le volpi" type="straight"/>
+		<underline language="IT" method="pen" text="l'aquile mananime" type="straight"/>
+		<underline language="IT" method="pen" text="i nibbi" type="straight"/>
+		<underline language="IT" method="pen" text="i colombi" type="straight"/>
+		<underline language="IT" method="pen" text="centomila" type="straight"/>
+		<underline language="IT" method="pen" text="trouerebbe vno" type="straight"/>
+		<underline language="IT" method="pen" text="digenerasse" type="straight"/>
+		<underline language="IT" method="pen" text="conosciuto il genere" type="straight"/>
+		<underline language="IT" method="pen" text="la specie" type="straight"/>
+		<underline language="IT" method="pen" text="la natura" type="straight"/>
+		<underline language="IT" method="pen" text="huomini" type="straight"/>
+		<underline language="IT" method="pen" text="piu nature, che non sono le" type="straight"/>
+		<underline language="IT" method="pen" text="impossibile conoscerle" type="straight"/>
+		<underline language="IT" method="pen" text="vna di tante, senza" type="straight"/>
+		<underline language="IT" method="pen" text="Arguto morso" type="straight"/>
+		<underline language="IT" method="pen" text="scolare guercio" type="straight"/>
+		<underline language="IT" method="pen" text="LORENZO de' Medici" type="straight"/>
+		<underline language="IT" method="pen" text="scolar guercio" type="straight"/>
+		<underline language="IT" method="pen" text="piu valent'huo[mo]" type="straight"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark language="IT" method="pen" name="straight_quotation_mark" place="left_margin" text="Arguto morso"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- consi -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- colom -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- habbia -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- diffici -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- huo -->
+		
+		<mark method="pen" name="dot" place="intext"/> <!-- animosi, le -->
+		<mark method="pen" name="dot" place="intext"/> <!-- magnanime, i -->
+		<mark method="pen" name="dot" place="intext"/> <!-- poltroni, i -->
+		<mark method="pen" name="dot" place="intext"/> <!-- semplice, in -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="genere"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="specie"/>
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="huomini"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="piu nature, che non sono le"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="scolare guercio"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="scolar guercio"/>
+		
+    </annotation>
+</transcription>

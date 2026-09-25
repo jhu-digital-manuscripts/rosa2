@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.176v.tif" pagination="352" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="iudicaris, docere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Iudicare &amp; Docere</marginalia_text>
+                </position>
+            </language>
+            <translation>Judge and teach.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="duabus his partibus perquàm sunt pauca, circa quae si is qui instituetur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>2⁰ li[br]o [primo].</marginalia_text>
+                </position>
+            </language>
+            <translation>In the second book.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Materiam eius, res omnes, de quibus dicendum esset, tum &amp; eas in tribus ferè generibus, demonstrauio deliberatiuo, iudicialiq[ue]              reperiri." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Rhetorices Materia, res o[mn]es.</marginalia_text>
+                </position>
+            </language>
+            <translation>Rhetorical matter, all things</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="solum iter credant" type="straight"/>
+        <underline language="LA" method="pen" text="plurimu[m] in hoc laboris exhausimus" type="straight"/>
+        <underline language="LA" method="pen" text="collocatione[m]" type="straight"/>
+        <underline language="LA" method="pen" text="quis, apud que[m], quid diceret" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

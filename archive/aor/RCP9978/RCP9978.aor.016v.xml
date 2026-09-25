@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.016v.tif" reader="John Dee" signature="[D iiij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Basilius" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Basilius</marginalia_text>
+                    <person name="Basil of Caesarea"/>            
+                </position>
+            </language>
+            <translation>Basil.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="materiae esse" type="straight"/>
+        <underline language="LA" method="pen" text="materiale" type="straight"/>
+        <underline language="LA" method="pen" text="Angelos omnes ante lapsum, corpora habuisse aërea, ex" type="straight"/>
+        <underline language="LA" method="pen" text="spiritus potius dicitur neruo" type="straight"/>
+        <underline language="LA" method="pen" text="Nam quod est non compos spiritus, sensus sit expers, est &amp; necessarium: sic spiritale corpus Daemonu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="absque medio" type="double"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <errata amendedtext="sensibus" copytext="senibus" language="LA"/>
+        <errata amendedtext="expertes" copytext="expertos" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/> <!-- JG: Not entirely sure -->
+        
+    </annotation>
+</transcription>

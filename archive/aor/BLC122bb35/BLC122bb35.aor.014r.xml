@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC122bb35.014r.tif" pagination="14" reader="John Dee" signature="[Bvj]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="vtroq[ue]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Si co[n]currere eas dicat adversarius, ex 13, et 17, illum [eis]</marginalia_text>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        τὸ ἀδύνατον 
+                    </marginalia_text> 
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>impelle[t].</marginalia_text> 
+                </position>
+            </language>
+            <translation>If he says, being contrary, based on 13 and 17, that they intersect [i.e. that the parallels meet], then he will persuade something absurd.</translation> <!--JG: Still unsure, also about eis-->
+        </marginalia>
+
+    </annotation>
+</transcription>

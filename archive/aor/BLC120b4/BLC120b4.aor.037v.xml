@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.037v.tif" pagination="37[v]" reader="John Dee" signature="[I[v]]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        sed est. alio tame[n] sensu % vulgari: no[n] est
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                But it is. Nevertheless in another sense: it is to be divulged. It is not. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Elementa n[ost]ra et metalla n[ost]ra
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Our elements and our metals.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="metallorum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        nostrorum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Our.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cui rubor succedit" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>est ☿</marginalia_text>
+                    <symbol_in_text name="Mercury"/>
+                </position>
+            </language>
+            <translation>It is Mercury.</translation>
+        </marginalia>
+        
+        <underline id="BLC.120.b.4:c_120_b_4_(2)_f037v:u0001" language="LA" method="pen" text="prima artis" type="straight"/>
+        <underline language="LA" method="pen" text="Argenti:Auri" type="straight"/>
+        <underline language="LA" method="pen" text="Argenti'q[ue] uiui:&amp; Olei" type="straight"/>
+        <underline language="LA" method="pen" text="uitri.s.&amp;Arg.uiuo" type="straight"/>
+        <underline id="BLC.120.b.4:c_120_b_4_(2)_f037v:u0002" language="LA" method="pen" text="Materia prima" type="straight"/> 
+        <underline language="LA" method="pen" text="uitri:&amp;) Arg[entum] uiuum est" type="straight"/>
+        <underline language="LA" method="pen" text="animatum: cui rubor succedit" type="double"/>
+        <underline language="LA" method="pen" text="Aequatum" type="straight"/>
+        
+        <symbol language="LA" name="Hieroglyphic_Monad" place="intext" text="Oleum"/>
+        <symbol language="LA" name="Mercury" place="intext" text="uiuum"/>
+        
+        <physical_link>
+            
+            <marginal_annotation idref="BLC.120.b.4:c_120_b_4_(2)_f037v:u0001"/>
+            
+            <marginal_annotation idref="BLC.120.b.4:c_120_b_4_(2)_f037v:u0002"/>
+            
+            <relation from="BLC.120.b.4:c_120_b_4_(2)_f037v:u0001" to="BLC.120.b.4:c_120_b_4_(2)_f037v:u0002" type="undirected"/>
+            
+        </physical_link>
+        
+    </annotation>
+</transcription>

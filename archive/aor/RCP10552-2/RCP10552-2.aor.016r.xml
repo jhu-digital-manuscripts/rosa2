@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.016r.tif" pagination="21" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="procuratores &amp; nuncios speciales, nobilem virum Aduen de. Hagr, &amp; magistrum H Plebanum, plebis de Castillione arretino domini Papae capellanum, &amp; magistrum             Petrum Algor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Nu[n]cij et Procuratores Erici Regis Norvegs { M[agiste]r Hugutio plebanus plebij de Castellione M[agiste]r Petrus Algoti M[agiste]r Bernhardus Lodouici D[omi]n[u]s Willelmus de Corrogha[m] miles Aymo Canonicus Abergenemy</marginalia_text>
+                    <person name="Eric II of Norway"/>
+                    <person name="Hugotio Plebanus"/>
+                    <person name="Petrus Algoti"/>
+                    <person name="Bernardus Ludovici"/>
+                    <person name="Willhelmus de Torroghan Miles"/>
+                    <person name="Aymo Canonicus Bergham"/>
+                </position>
+            </language>
+            <translation>Messagers and agents from Eric, King of Norway { Master Hugotio Plebanus, Master Petrus Algoti, Master Bernardus Ludovici, Lord Willhelmus de Torroghan Miles, Aymo Canonicus Bergham.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Petrum Algor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hugutione[m] Algoti, etc.</marginalia_text>
+                    <person name="Hugotio Plebanus"/>
+                    <person name="Petrus Algoti"/>
+                </position>
+            </language>
+            <translation>Hugotio Plebanus, Petrus Algoti, etc.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Castillione arretino domini" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aretina[e] Dioceseos</marginalia_text>
+                    <location name="Castiglion Fiorentino"/>
+                </position>
+            </language>
+            <translation>The diocese of Castiglion Fiorentino</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quatuor annorum, quo fluxerunt à tempore mortis Alexandri" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>4. nunc anni à morte Alexandri 3ij. scot. Reg</marginalia_text>
+                    <person name="Alexander III of Scotland"/>
+                </position>
+            </language>
+            <translation>Now four years since the death of Alendander III, King of Scotland.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Rex Romanoru[m] Radulphus" type="straight"/>
+        <underline language="LA" method="pen" text="est Adulphus" type="straight"/>
+        <underline language="LA" method="pen" text="eligi fecit quadraginta" type="straight"/> 
+        <underline language="LA" method="pen" text="de Anglia" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; viginti de" type="straight"/>
+        <underline language="LA" method="pen" text="sententiam finalem" type="straight"/>
+        <underline language="LA" method="pen" text="Ericus Rex Norvvagiae" type="straight"/>
+        <underline language="LA" method="pen" text="Angliae illustri, &amp; superiori" type="straight"/>
+        <underline language="LA" method="pen" text="domino regni Scotiae," type="double"/>
+        <underline language="LA" method="pen" text="&amp; ad petendum nomine nostro, tanquam per superiorem dominum rengi Scotiae" type="straight"/>
+        <underline language="LA" method="pen" text="adiudicari regnum Scotiae supradictu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="dominae Margaretae filiae nostrae" type="straight"/>
+        <underline language="LA" method="pen" text="Item ad petendum" type="straight"/>
+        <underline language="LA" method="pen" text="Scotiae quatuor annorum," type="straight"/>
+        <underline language="LA" method="pen" text="mortis domini Alexandri, bonae memoriae" type="straight"/>
+        <underline language="LA" method="pen" text="diem mortis dominae Margaretae filiae nostrae" type="straight"/>
+        <underline language="LA" method="pen" text="legitimus administrator" type="double"/>
+        <underline language="LA" method="pen" text="tum etia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="sumptuum onera" type="straight"/>
+        <underline language="LA" method="pen" text="in regno Norvvagiae moram" type="straight"/>
+        <underline language="LA" method="pen" text="mittendo eam ad regnum" type="straight"/>
+        <underline language="LA" method="pen" text="poenam centum millium librarum sterlingorum" type="straight"/>
+        <underline language="LA" method="pen" text="non recipiendo liberè praefatam dominam Margaretam, filiam" type="straight"/>
+        <underline language="LA" method="pen" text="Scotiae, nec ei obediendo in aliquo" type="straight"/>
+        <underline language="LA" method="pen" text="occasione dotis" type="straight"/>
+        <underline language="LA" method="pen" text="Regis Scotiae" type="straight"/>
+        <underline language="LA" method="pen" text="Angliae, superiore" type="straight"/>
+        <underline language="LA" method="pen" text="domino regni" type="double"/>
+        <underline language="LA" method="pen" text="debita" type="straight"/>
+
+        <mark method="pen" name="bracket" place="intext"/> <!-- legitime Item -->
+        <mark method="pen" name="equal_sign" place="left_margin"/> <!-- arretino -->
+        <mark method="pen" name="circumflex" place="intext"/>
+        <mark method="pen" name="circumflex" place="intext"/> 
+        <mark method="pen" name="circumflex" place="right_margin"/>
+        <mark method="pen" name="circumflex" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+
+        <numeral place="right_margin">1.</numeral>
+        <numeral place="right_margin">2.</numeral>
+        <numeral place="right_margin">3.</numeral>
+        <numeral place="right_margin">4</numeral>
+        <numeral place="right_margin">5.</numeral>
+        <numeral place="right_margin">6</numeral>
+       
+        <errata amendedtext="104" copytext="quadraginta" language="LA"/> 
+        <errata amendedtext="24" copytext="viginti" language="LA"/>
+        <errata amendedtext="80" copytext="viginti" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="H" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="arretino" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="Algor[um]" language="LA"/>
+
+    </annotation>
+</transcription>

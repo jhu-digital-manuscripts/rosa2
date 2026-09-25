@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.090v.tif" pagination="[90v]" reader="John Dee" signature="[Mij[v]]"/> 
+    
+    <annotation>
+        
+        <marginalia anchor_text="auttorità" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Authoritie</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="che vi obediscano" type="straight"/>
+        <underline language="IT" method="pen" text="persone, et beni" type="double"/>
+        <underline language="IT" method="pen" text="dette Indie, et terra ferma, vadano fuora di esse; e che non entrino, ne stiano in esse" type="straight"/>
+        <underline language="IT" method="pen" text="voglia appellatione, ò supplicatione, che di tal" type="straight"/>
+        <underline language="IT" method="pen" text="con tutte le sue incidenze, &amp; dipendenze" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+    
+</transcription>

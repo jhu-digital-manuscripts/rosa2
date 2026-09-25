@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.014r.tif" pagination="17" reader="John Dee" signature="B.iij."/>
+    <annotation>
+        
+        <marginalia anchor_text="millesimo ducentesimo nonagesimo secu[n]do" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>1292</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Norha[m]</marginalia_text>  
+                    <location name="Norham"/>
+                </position>
+            </language>
+            <translation>Norham</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="apud Northumb" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>a[u]t Norham</marginalia_text> 
+                    <location name="Norham"/>
+                </position>
+            </language>
+            <translation>Rather Norham.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Radulphi de Luzeto" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dizeto</marginalia_text>
+                    <person name="Ralph de Diceto"/>
+                </position>
+            </language>
+            <translation>Ralph de Diceto.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>K</marginalia_text> <!-- MB. Note sure what this 'K' refers to. -->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>qui iurauit ei fidelitatem: Item ibidem Rex Angliae et Dacia[e] Kanut[us] anno Regni sui 16 perdomuit Malcolinu[m] Rege[m] scotoru[m] et ex tunc [..].
+                        Vide infra in Ypodig- pag[ina] 73.</marginalia_text>
+                    <person name="Cnut the Great"/>
+                    <person name="Malcolm II of Scotland"/>
+                    <book title="Ypodigma"/>
+                    <internal_ref>
+                        <target ref="RCP10552-2:569:u0001" text="73"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Who swore loyalty to him: likewise, the same Cnut, king of England and Denmark, in the sixteenth year of his reign subdued Malcolinus, king of Scotland, and from then [..]. See below in the Ypodigma, page 73.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Angliae, Scotiae, Daciae, &amp; Norwagiae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Canutus, Anglia[e], Scotioru[m], Dacia[e], Norwagia[e]</marginalia_text>
+                    <person name="Cnut the Great"/>
+                    <location name="England"/>
+                    <location name="Scotland"/>
+                    <location name="Denmark"/>
+                    <location name="Norway"/>
+                </position>
+            </language>
+            <translation>Cnut the Great, [king of] England, Scotland, Denmark and Norway.</translation>
+        </marginalia>
+              
+        <underline language="LA" method="pen" text="ducentesimo nonagesimo" type="straight"/>
+        <underline language="LA" method="pen" text="post" type="straight"/>
+        <underline language="LA" method="pen" text="Northumb" type="straight"/>
+        <underline language="LA" method="pen" text="temporum annalibus" type="straight"/>
+        <underline language="LA" method="pen" text="Northumb" type="straight"/>
+        <underline language="LA" method="pen" text="in" type="straight"/>
+        <underline language="LA" method="pen" text="superius dominium" type="double"/>
+        <underline language="LA" method="pen" text="protestando se ius coronae suae vsque ad effusionem sanguinis" type="straight"/>
+        <underline language="LA" method="pen" text="monasteria Angliae" type="straight"/>
+        <underline language="LA" method="pen" text="Scotiae" type="straight"/>
+        <underline language="LA" method="pen" text="VValliae" type="straight"/>
+        <underline language="LA" method="pen" text="Mariani Scoti" type="straight"/>
+        <underline language="LA" method="pen" text="VVilhelmi de Malmesburia" type="straight"/>
+        <underline language="LA" method="pen" text="Rogeri de Houeden" type="straight"/>
+        <underline language="LA" method="pen" text="Henrici de Huntyngdon" type="straight"/>
+        <underline language="LA" method="pen" text="Radulphi de Luzeto" type="straight"/>
+        <underline language="LA" method="pen" text="nongentesimo decimo" type="double"/>
+        <underline language="LA" method="pen" text="Rex Edvvardus senior" type="straight"/>
+        <underline language="LA" method="pen" text="praedict[a]e gentes elegerunt sibi Edvvardum praedictum in dominum &amp; pattonum" type="straight"/>
+        <underline language="LA" method="pen" text="Scoti[a]e Constantinu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="sub se permisit" type="double"/>
+        <underline language="LA" method="pen" text="Edgarus" type="straight"/>
+        <underline language="LA" method="pen" text="Angliae" type="straight"/>
+        <underline language="LA" method="pen" text="Scotiae" type="straight"/>
+        <underline language="LA" method="pen" text="Daciae" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Norvvagiae" type="straight"/>
+        <underline language="LA" method="pen" text="de se tenendum" type="straight"/>
+        
+        <mark method="pen" name="dagger" place="intext"/> <!-- Scotorum, Et -->
+        <mark method="pen" name="dagger" place="right_margin"/>
+        
+        <errata amendedtext="[deleted]" copytext="Northumb" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="Et" language="LA"/>
+        
+    </annotation>
+</transcription>

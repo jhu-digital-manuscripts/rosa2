@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.160v.tif" pagination="[161v]" reader="John Dee" signature="[X.j.[v]]"/>   
+    <annotation>
+        
+        <marginalia anchor_text="Munera" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Munera</marginalia_text>
+                </position>
+            </language>
+            <translation>Gifts.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sistris" type="straight"/>
+        <underline language="LA" method="pen" text="Munera (crede mihi) placant hominésq[ue], deósq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="Placatur donis Iuppiter ipse datis" type="straight"/>
+           
+    </annotation>
+</transcription>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.006r.tif" pagination="11" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Philippus Macedonum rex" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Philippus Rex</marginalia_text>
+                    <person name="Philip II of Macedon"/>
+                </position>
+            </language>
+            <translation>King Philip.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristotele" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aristoteles</marginalia_text>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>Aristotle.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="eburneas etiam literarum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Literae Eburneae.</marginalia_text>
+                </position>
+            </language>
+            <translation>Letters of ivory.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ad ipsos ductus" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="tripunctus_with_tail" place="right_margin"/>  
+        
+    </annotation>
+</transcription>

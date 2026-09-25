@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.036v.tif" reader="John Dee" signature="[Fvj[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Co[n]tigua" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Contigua
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Adjoining.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="hoc in relatiuis s[e]c[un]d[u]m dici vt disciplina est adaliq[ui]d.              g[ra]matica v[er]o no[n]. S[ed] in relatiuis s[ecundu]m esse" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Relatiua secundu[m] dici et secu[n]dum esse.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Relatives, as they are named and as they are.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="s[e]c[un]d[u]m dici" type="straight"/>
+        <underline language="LA" method="pen" text="alias parum est mathematici" type="straight"/>
+        <underline language="LA" method="pen" text="tractabit[ur] de lineis i[n]diuisibilib[us]" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- adaliq[ui]d [et] -->
+        
+    </annotation>
+</transcription>

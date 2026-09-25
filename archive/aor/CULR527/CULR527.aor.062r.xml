@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.062r.tif" pagination="62" reader="John Dee"/> 
+    <annotation>
+
+        <marginalia anchor_text="Ciruelus" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ciruelus
+                    </marginalia_text>
+                    <person name="Pedro Ciruelo"/>
+                </position>
+            </language>
+            <translation>
+                Ciruelo.
+            </translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="circulus minor esset, sequeretur quòd coeli medietatem" type="straight"/>
+        <underline language="LA" method="pen" text="ut Ciruelus ait" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

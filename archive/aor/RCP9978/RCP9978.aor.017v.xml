@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.017v.tif" reader="John Dee" signature="[E[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Da[e]mon proprius</marginalia_text>
+                </position>
+            </language>
+            <translation>A particular demon.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="intellectum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Intellectus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Intellect.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="esse, q[uam] intellectum" type="straight"/> 
+        <underline language="LA" method="pen" text="Naturale, quod mysticum" type="straight"/>
+        <underline language="LA" method="pen" text="congruentibus, compositam rite statuam, confestim per D[a]emonem congruum animari: quod &amp; confirmat Augustinus" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        <mark method="pen" name="circumflex" place="tail"/>
+        
+        <errata amendedtext="sollilos" copytext="sollios" language="LA"/>             <!-- DO: Not completely sure which letter has been inserted here -->
+        <errata amendedtext="conatos'q[ue]" copytext="cognatos'q[ue]" language="LA"/>
+        <errata amendedtext="inscitiam" copytext="institiam" language="LA"/>
+        <errata amendedtext="nuntiant" copytext="nunctiant" language="LA"/>
+        <errata amendedtext="futu[ro]rum" copytext="futurum" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

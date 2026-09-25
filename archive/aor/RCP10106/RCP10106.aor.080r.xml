@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.080r.tif" pagination="159" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="ἀντικατηγορία" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ἀντικατηγορία</marginalia_text>
+                </position>
+            </language>
+            <translation>Counterchange.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hermagorae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hermagoras</marginalia_text>
+                    <person name="Hermagoras of Temnos"/>
+                </position>
+            </language>
+            <translation>Hermagoras.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="συνέχον" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>συνέχον</marginalia_text>
+                </position>
+            </language>
+            <translation>The countainer.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="In iudiciali autem materia dupliciter accipienda est: altero modo, quo dicimus multas quaestiones habere controuersiam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In Iudiciali materia dupl[ici]t[e]r d[icitu]r q[uaesti]o</marginalia_text>
+                </position>
+            </language>
+            <translation>In judicial matters it said that the question may be asked in two ways. </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Apollodorus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Appollodôrus</marginalia_text>
+                    <person name="Apollodorus of Pergamon"/>
+                </position>
+            </language>
+            <translation>Apollodorus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="speciem in species diuidi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Spe[cie]s in spe[cie]m p[otes]t diuidi</marginalia_text>
+                </position>
+            </language>
+            <translation>We can divide a species into other species.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ζήτημα" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ζήτημα</marginalia_text>
+                </position>
+            </language>
+            <translation>Question.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="de hac nunc loquor" type="straight"/>
+        <underline language="LA" method="pen" text="speciem in species diuidi conuenit" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.027v.tif" pagination="[27[v]]" reader="John Dee" signature="[Giij[v]]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian" id="NYSLWin188:00000068:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Astronomia</marginalia_text>
+                </position>
+            </language>
+            <translation>Astronomy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Inclinationes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Inclinationes</marginalia_text>
+                </position>
+            </language>
+            <translation>Inclinations.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Generationes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Generationes</marginalia_text>
+                </position>
+            </language>
+            <translation>Generations.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Astronomey" hand="Italian" id="NYSLWin188:00000068:m0002">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Astronomica</marginalia_text>
+                </position>
+            </language>
+            <translation>Astronomical.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="was er nit findet in dieser Meteorick &amp; find es in der Astronomey" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Stellaru[m] vis - Meteorica - Astronomica</marginalia_text>
+                </position>
+            </language>
+            <translation>The force of the stars [is] meteoric and astronomical.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="gewalt annemen" type="straight"/>
+        <underline language="DE" method="pen" text="Pestes" type="double"/>
+        <underline language="DE" method="pen" text="Feber" type="double"/>
+        <underline language="DE" method="pen" text="Impressiones stehent de[m] Menschen zu was er thun" type="straight"/>
+        <underline language="DE" method="pen" text="Generationes" type="straight"/>
+        <underline language="DE" method="pen" text="Meteorischen früchte der Sternen" type="double"/>
+        <underline id="NYSLWin188:00000068:u0001" language="DE" method="pen" text="das die vnsichtbaren der Astronomey befohlen werden" type="straight"/>
+        <underline language="DE" method="pen" text="die Sichtbaren in jren theil" type="straight"/>
+        <underline language="DE" method="pen" text="erkennen was er nit findet in dieser Meteorick d[er] find es in der Astronomey" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- zu was -->
+        
+        <drawing anchor_text="Impressiones stehent de[m] Menschen zu was er thun" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing anchor_text="erkennen was er nit findet in dieser Meteorick &amp; find es in der Astronomey" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        <physical_link>
+            <marginal_annotation idref="NYSLWin188:00000068:m0001"/>
+            <marginal_annotation idref="NYSLWin188:00000068:m0002"/>
+            <marginal_annotation idref="NYSLWin188:00000068:u0001"/>
+            
+            <relation from="NYSLWin188:00000068:m0001" to="NYSLWin188:00000068:u0001" type="directed"/>
+            <relation from="NYSLWin188:00000068:m0002" to="NYSLWin188:00000068:u0001" type="directed"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

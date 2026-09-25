@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.305v.tif" pagination="590" reader="John Dee" signature="[ooo.viii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="curriculum industriae nostrae in foro, in curia, in amicorum periculis propulsandis elaboratum est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Curriculu[m] industria[m] in aliqua re elaboratu[m] est</marginalia_text> 
+                </position>
+            </language>
+            <translation>The course of action of [our] work extended over any matter.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="quantuscunque" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>qua[n]tuscu[n]q[ue]</marginalia_text>
+                </position>
+            </language>
+            <translation>Of whatever size.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="pace ciuile" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pax ciuilis</marginalia_text>
+                </position>
+            </language>
+            <translation>Civil peace.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="A. Hircius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A. Hircius</marginalia_text>
+                    <person name="Aulus Hirtius"/>
+                </position>
+            </language>
+            <translation>Aulus Hirtius.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="re &amp; veritate" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>re &amp; veritate</marginalia_text>
+                </position>
+            </language>
+            <translation>In matter and truth.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quemadmodum accaepturi P.C." type="straight"/>
+        <underline language="LA" method="pen" text="si erit vel acerbu[m] auditu" type="straight"/>
+        <underline language="LA" method="pen" text="vel incredibile" type="straight"/>
+        <underline language="LA" method="pen" text="accipiatis sine offensione" type="straight"/>
+        <underline language="LA" method="pen" text="magna spe ingredior in reliquam" type="straight"/>
+        <underline language="LA" method="pen" text="locum silentio sum praeteruectus" type="straight"/>
+        <underline language="LA" method="pen" text="mobilitate" type="straight"/>
+        <underline language="LA" method="pen" text="imbecillitate? qua macie? sed animi vires corporis infirmitas no[n] retardauit" type="straight"/>
+        <underline language="LA" method="pen" text="Consuli" type="straight"/>
+        <underline language="LA" method="pen" text="vlla recusatione" type="straight"/>
+        <underline language="LA" method="pen" text="heu me miserum, cur Senatu[m] cogor" type="straight"/>
+        <underline language="LA" method="pen" text="semper, reprehendere" type="straight"/>
+        <underline language="LA" method="pen" text="hic ordo nimium" type="straight"/>
+        
+        <mark method="pen" name="X_sign" place="left_margin"/>
+        
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">5</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">13</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

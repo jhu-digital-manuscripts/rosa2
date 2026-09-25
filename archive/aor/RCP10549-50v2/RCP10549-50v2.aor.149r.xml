@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.149r.tif" pagination="37" reader="John Dee" signature="c.iii."/> 
+    <annotation>
+        
+        <marginalia anchor_text="co[n]tortione dextrae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>co[n]tortio dextr[a]e</marginalia_text>
+                </position>
+            </language>
+            <translation>A contortion of the right hand.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tripertito" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>tripertito</marginalia_text>
+                </position>
+            </language>
+            <translation>Threefold.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Membru[m] orationis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Membru[m] or[ati]o[n]is.</marginalia_text>
+                </position>
+            </language>
+            <translation>A clause.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Articulus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Articulus.</marginalia_text>
+                </position>
+            </language>
+            <translation>A comma.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Co[n]tinuatio; Ea vtemur co[m]modissime tripertito" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Continuatio &amp; co[m]modissime trip[er]tito vtit[ur]</marginalia_text>
+                </position>
+            </language>
+            <translation>A period, and how it is most appropriately used in three ways.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="In sente[n]tia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In se[n]te[n]tia.</marginalia_text>
+                </position>
+            </language>
+            <translation>In a maxim.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="In co[n]trario" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In co[n]rario.</marginalia_text>
+                </position>
+            </language>
+            <translation>In a contrast.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="In co[n]clusione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In co[n]clusio[n]e.</marginalia_text>
+                </position>
+            </language>
+            <translation>In a conclusion.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Compar" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Compar.</marginalia_text>
+                </position>
+            </language>
+            <translation>An isocolon.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Similiter cadens" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Similiter cadens.</marginalia_text>
+                </position>
+            </language>
+            <translation>Falling in the same [case].</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Similiter desinens" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Similiter desinens</marginalia_text>
+                </position>
+            </language>
+            <translation>Ending in the same way.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="multitudinem alterius assequatur &amp; exaequet" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>exaequare assequi. ] plenitudo</marginalia_text>
+                </position>
+            </language>
+            <translation>To balance, to match. ] Plenitude.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in illo genere ex remotione brachii &amp; co[n]tortione dextrae gladius ad corpus afferi, in hoc aute[m] crebro &amp; celeri vulnere corpus consauciari videtur" type="straight"/>
+        
+        <mark language="LA" method="pen" name="tripunctus_with_tail" place="head" text="co[n]tortio dextr[a]e"/>
+        <mark language="LA" method="pen" name="pin" place="head" text="tripertito"/>
+        
+        <mark method="pen" name="tripunctus_with_tail" place="right_margin"/>
+        <mark method="pen" name="pin" place="right_margin"/>
+        <mark method="pen" name="pin" place="right_margin"/>
+        
+        <numeral place="right_margin">1</numeral>
+        <numeral place="right_margin">2</numeral>
+        
+    </annotation>
+</transcription>

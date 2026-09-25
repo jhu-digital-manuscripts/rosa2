@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.045r.tif" pagination="45" reader="John Dee" signature="L"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Coagulum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Coägulum. vide pag[ina] 4[0] <!--JG: Probably reference to folio 40v-->
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="BLC120b4:c_120_b_4_(2)_f040v" text="4[0]"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                On the rennet, see page 4[0].
+            </translation>
+        </marginalia>
+         
+        <underline language="LA" method="pen" text="impossibile prorsus" type="grid"/> 
+        <underline language="LA" method="pen" text="Coagulum" type="grid"/> 
+        <underline language="LA" method="pen" text="idest Aurum duarum caementationum perfectarum" type="grid"/>
+        <underline language="LA" method="pen" text="[id est] Voarchadúmicu[m] opus" type="grid"/> 
+        <underline language="LA" method="pen" text="Arg[entum] uiui" type="grid"/> 
+        <underline language="LA" method="pen" text="[id est] uenarum" type="grid"/> 
+        <underline language="LA" method="pen" text="[id est] metalla, siue elementa" type="grid"/>
+        
+    </annotation>
+</transcription>

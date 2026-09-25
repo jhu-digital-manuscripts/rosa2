@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.185v.tif" pagination="362" reader="John Dee" signature="[Hh[v]]"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="Aethelstanus fratrem" type="straight"/>
+        <underline language="LA" method="pen" text="in mare" type="straight"/>
+        
+        <graph book_orientation="0" method="pen" place="head" type="genealogical_tree">
+            <node id="n1" person="Edith of Polesworth">Eadgitha</node> 
+            <node id="n2" person="Sitric Cáech">Sithricus Rex North</node>
+            <link from="n2" relationship="has_spouse" to="n1"/>
+            <link from="n1" relationship="has_spouse" to="n2"/>
+            <graph_text>
+                <note hand="Italian" language="LA">
+                    925
+                </note>
+            </graph_text>
+        </graph>
+        
+        <graph book_orientation="0" method="pen" place="head" type="genealogical_tree">  
+            <node id="n3" person="Edith of England">Eadgiua</node> 
+            <node id="n4" person="Otto I, Holy Roman Emperor">Otho Imp.</node>
+            <link from="n4" relationship="has_spouse" to="n3"/> 
+            <link from="n3" relationship="has_spouse" to="n4"/>
+            <graph_text>
+                <note hand="Italian" language="LA">  
+                    A[nn]o 938
+                </note>
+                <translation>
+                    In 938.
+                </translation>
+            </graph_text>
+        </graph>
+
+    </annotation>
+</transcription>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.083r.tif" pagination="83" reader="John Dee" signature="Liij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="nauigatio punctualis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Naviga⁰ punctualis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                'Precise navigation.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian"> 
+            <language ident="EN">  
+                <position book_orientation="0" place="right_margin"> 
+                    <marginalia_text>
+                        nordest
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                North East.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="insulas no[n] accipiet" type="straight"/>
+        <underline language="LA" method="pen" text="quantum Caput (ut sic dicam) est ab Vlyssipone" type="double"/>
+        <underline language="LA" method="pen" text="nauigatio punctualis" type="straight"/>
+        <underline language="LA" method="pen" text="dictae insulae uiderentur: nullo modo quempiam in oeste dirigere per acum possent" type="straight"/>
+        <underline language="LA" method="pen" text="Et ratio quae facit leste acus ostendere quòd per unam parte[m] pergit &amp; illuc non uadit: eade[m] facit, quòd              omnes alij rumi ostendant quòd per unum iter procedunt, &amp; per illud non pergant. Sed" type="straight"/>
+        <underline language="LA" method="pen" text="accipiet ab illo tam separatum quem antea accepit, quantum locus distat unde profectus est, ab alio" type="straight"/>
+        <underline language="LA" method="pen" text="primùm uela" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+  
+    </annotation>
+</transcription>

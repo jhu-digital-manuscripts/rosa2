@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.103r.tif" pagination="103" reader="John Dee"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="segretamente si erano congiurati di lasciar l'obedienza dell'Ammiraglio" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A mutinie of the spaniards</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Bernardo di Pisa" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Bernardo di Pisa</marginalia_text>
+                    <person name="Bernardo di Pisa"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="come di hauere scritte alcune cose falsamente contra lo Ammiraglio" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>untrue reports fro[m] th[e] spaniards.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Don Diego Colon" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Don. Diego Colon</marginalia_text>
+                    <person name="Diego Columbus"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="vna fortezza" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A fort.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="con fatica, &amp; industria, e tempo" type="straight"/>
+        <underline language="IT" method="pen" text="scontenti, e trauagliati" type="straight"/>
+        <underline language="IT" method="pen" text="qualità del paese nuouo, dell'aere, &amp;" type="straight"/>
+        <underline language="IT" method="pen" text="nate hauea" type="straight"/>
+        <underline language="IT" method="pen" text="erano congiurati di lasciar" type="straight"/>
+        <underline language="IT" method="pen" text="l'obedienza dell'Ammiraglio" type="double"/>
+        <underline language="IT" method="pen" text="per forza quei nauigli" type="double"/>
+        <underline language="IT" method="pen" text="con essi in Castiglia" type="straight"/>
+        <underline language="IT" method="pen" text="stato vn Capitano" type="double"/>
+        <underline language="IT" method="pen" text="chiamato Bernardo di Pisa" type="straight"/>
+        <underline language="IT" method="pen" text="viaggio con carico di" type="straight"/>
+        <underline language="IT" method="pen" text="contatore de'Re Catolici" type="double"/>
+        <underline language="IT" method="pen" text="in vna naue prigione, con pro ponimento di mandarlo poscia in Castiglia col processo del suo delitto" type="straight"/>
+        <underline language="IT" method="pen" text="cosi della solleuatione" type="straight"/>
+        <underline language="IT" method="pen" text="di hauere scritte alcune cose" type="straight"/>
+        <underline language="IT" method="pen" text="falsamente contra lo" type="double"/>
+        <underline language="IT" method="pen" text="Don Diego Colon" type="straight"/>
+        <underline language="IT" method="pen" text="alla volta di Cibao" type="straight"/>
+        <underline language="IT" method="pen" text="vna fortezza" type="straight"/>
+        <underline language="IT" method="pen" text="conseruata pacifica" type="double"/>
+        <underline language="IT" method="pen" text="hauessero a raccoglier" type="double"/>
+        
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        
+        <mark method="pen" name="equal_sign" place="right_margin"/> <!-- contatore -->
+        
+        <mark language="IT" method="pen" name="bracket" place="left_margin" text="contatore de' Re Catolici"/>
+       
+        <mark method="pen" name="equal_sign" place="right_margin"/> <!-- processo -->
+ 
+    </annotation>
+    
+</transcription>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl><note type="format">manuscript</note><note type="commonName">Français 378</note><title>Roman de la Rose</title><extent><measure quantity="74" unit="folios">74</measure><dimensions><height unit="mm">365</height><width unit="mm">272</width></dimensions></extent><note type="illustrations">41</note>
+               
+               
+               -
+               
+               <note type="material">parchment</note>
+               
+               <pubPlace>France</pubPlace>
+               
+               <date notAfter="1300" notBefore="1200">13th century</date>
+            
+            </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Paris</settlement>
+            <repository>Bibliothèque nationale de France</repository>
+            <idno>fr. 378</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="1v">1r-1v</locus>
+              <title>C'est des trois mors et des trois vis</title>
+              <note type="textid">morsvis</note>
+              <note type="folios">1</note>
+              <note type="illustrations">2</note>
+              <note type="linesPerColumn">60</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">3</note>
+            </msItem>
+            <msItem n="2">
+              <locus from="1v" to="3v">1v-3v</locus>
+              <title>C'est li dis des Quatre sereurs</title>
+              <note type="textid">sereurs</note>
+              <note type="folios">3</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">60</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">3</note>
+            </msItem>
+            <msItem n="3">
+              <locus from="3v" to="6v">3v-6v</locus>
+              <title>La Bible Hugue de Berzi</title>
+              <note type="textid">berzi</note>
+              <note type="folios">4</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">60</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">3</note>
+            </msItem>
+            <msItem n="4">
+              <locus from="6v" to="7v">6v-7v</locus>
+              <title>Li dis de la Tremontaine</title>
+              <note type="textid">tremontaine</note>
+              <note type="folios">2</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">60</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">3</note>
+            </msItem>
+            <msItem n="5">
+              <locus from="7v" to="8r">7v-8r</locus>
+              <title>Dis des trois mors et des trois vis</title>
+              <note type="textid">dismorsvis</note>
+              <note type="folios">2</note>
+              <note type="illustrations">2</note>
+              <note type="linesPerColumn">60</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">3</note>
+            </msItem>
+            <msItem n="6">
+              <locus from="8r" to="8v">8r-8v</locus>
+              <title>Li dis dou cerf amoureus</title>
+              <note type="textid">cerf</note>
+              <note type="folios">1</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">60</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">3</note>
+            </msItem>
+            <msItem n="7">
+              <locus from="9r" to="9v">9r-9v</locus>
+              <title>La Comparoison dou Faucon</title>
+              <note type="textid">faucon</note>
+              <note type="folios">1</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">60</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">3</note>
+            </msItem>
+            <msItem n="8">
+              <locus from="9v" to="10r">9v-10r</locus>
+              <title>La Comparoisons du Pré</title>
+              <note type="textid">pré</note>
+              <note type="folios">2</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">60</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">3</note>
+            </msItem>
+            <msItem n="9">
+              <locus from="10r" to="11r">10r-11r</locus>
+              <title>C'est dou roi qui racheta le larron</title>
+              <note type="textid">roilarron</note>
+              <note type="folios">2</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">60</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">3</note>
+            </msItem>
+            <msItem n="10">
+              <locus from="11r" to="12r">11r-12r</locus>
+              <title>C'est la brebis desrobee</title>
+              <note type="textid">brebis</note>
+              <note type="folios">2</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">60</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">3</note>
+            </msItem>
+            <msItem n="11">
+              <locus from="12r" to="12v">12r-12v</locus>
+              <title>Dou sot le conte</title>
+              <note type="textid">conte</note>
+              <note type="folios">1</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">60</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">3</note>
+            </msItem>
+            <msItem n="12">
+              <locus from="13r" to="74v">13r-74v</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">32</note>
+              <note type="illustrations">28</note>
+              <note type="linesPerColumn">60</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">3</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

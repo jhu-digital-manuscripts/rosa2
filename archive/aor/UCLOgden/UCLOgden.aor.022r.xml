@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.022r.tif" pagination="27" reader="John Dee" signature="c 2"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ista pro directionibus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                This is for directions.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quoto anno unumquod'q[ue] signum in genituris oriatur" type="straight"/>
+        <underline language="LA" method="pen" text="quibus stellae singulae ad sui efficaciam promouentur" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        
+    </annotation>
+</transcription>

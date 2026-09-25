@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.endmatter.flyleaf.002v.tif" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Foelicitas
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        <!-- Chris, please add Greek. It's very faint, good luck! -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                <!-- translation here. -->
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        { an eie sore. an hartsore.
+                    </marginalia_text>
+                    <emphasis method="pen" text="an eie sore" type="straight"/>
+                    <emphasis method="pen" text="an hartsore" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        [the] error of [the] goulden age, 
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        vnde:
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        A probable gesse. L. I. <!-- MISSING TEXT: ILLEGIBLE DUE TO BENT PAGE. ORIGINAL SOURCE NEEDED. --> 
+                        <!-- The 'I.' is visible from the nxt page image, but I think we would need to see the original to check if there is a further page reference. -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The error of the goulden age, hence, A probable gesse. Book 1.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Cur te vana iuuant misera[e] ludibria charta[e]? Hoc lege, quod possis dicere iure, meum est. ( martialis. 
+                        Parùm sepulta[e] distat Inertia[e] 
+                        Celata virtus. Horatius.
+                    </marginalia_text>
+                    <person name="Martial"/>
+                    <person name="Horace"/>
+                    <book title="Epigrams"/>
+                    <book title="Odes"/>
+                </position>
+            </language>
+            <translation>
+                "[Why] do the empty tales of such frivolous writings profit you? Read in this book of mine of real life, of which you may say, "It is mine."" [trans. G. Bell et al., 1897] Martial.
+                "Courage which is concealed in the tomb, is little different from cowardice." Horace.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        A cleere conscience is [the] soueraingist contentment Man can enioye.
+                    </marginalia_text>
+                    <emphasis method="pen" text="A cleere conscience is [the] soueraingist contentment Man can enioye. " type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Castilios Courtier, [the] right Gentlemans booke: &amp; his only professions, Letters or Armes: with continual Experience in [the] pregnant affaires of the World.
+                    </marginalia_text>
+                    <person name="Castiglione"/>
+                    <book title="Book of the Courtier"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" other_reader="modern hand">
+            <language ident="EN">
+                <position book_orientation="270" place="full_page">
+                    <marginalia_text>
+                        end
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <mark method="pen" name="plus_sign" place="full_page"/>
+
+    </annotation>
+</transcription>

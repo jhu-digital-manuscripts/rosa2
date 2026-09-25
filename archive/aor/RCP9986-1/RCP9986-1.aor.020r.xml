@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.020r.tif" pagination="21" reader="John Dee"/>  
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Rodulp[hus].</marginalia_text>   
+                    <person name="Rudolf Hospinian"/>
+                </position>
+            </language>
+            <translation>Rudolf [Hospinian].</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Quod crimen dicis praeter amare" type="straight"/>
+        <underline language="LA" method="pen" text="quodlibet esse feret" type="straight"/>
+        <underline language="LA" method="pen" text="praebebis carbasa ventis" type="straight"/>
+        <underline language="LA" method="pen" text="semirefecta moras" type="straight"/>
+        <underline language="LA" method="pen" text="Dum freta mitescu[n]t, &amp; amor dum temperat vsum" type="straight"/> 
+        <underline language="LA" method="pen" text="Fortiter ediscam tristia posse pati" type="straight"/>
+        <underline language="LA" method="pen" text="Anna soror, soror Anna" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>  
+        <symbol name="Jupiter" place="right_margin"/>
+        
+    </annotation>
+</transcription>

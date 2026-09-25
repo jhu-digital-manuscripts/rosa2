@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+  <license>
+    <url>http://creativecommons.org/licenses/by/4.0/</url>
+    <logo>https://i.creativecommons.org/l/by/4.0/88x31.png</logo>
+  </license>
+  <totalPages>696</totalPages>
+  <dates>
+    <startDate>1574</startDate>
+    <endDate>1574</endDate>
+  </dates>
+  <texts>
+    <text id="1">
+      <language>la</language>
+      <title>Historia brevis Thomae Walsingham, ab Edwardo primo, ad Henricum quintum</title>
+      <textId>historiabrevix</textId>
+      <pages end="238v" start="1r">476</pages>
+    </text>
+    <text id="2">
+      <language>la</language>
+      <title>Ypodigma Neustriae vel Normanniae ... ab irruptione Normannorum usque ad annum 6 regni Henrici quinti</title>
+      <textId>ypodigma</textId>
+      <pages end="348v" start="240r">216</pages>
+    </text>
+  </texts>
+  <bibliographies>
+    <bibliography lang="en">
+      <title></title>
+      <commonName>Thomas Walsingham, Historia brevis (London, 1574) &amp; Thomas Walsingham, Ypodigma (London, 1574)</commonName>
+      <dateLabel>1574</dateLabel>
+      <origin>London, England</origin>
+      <currentLocation>Royal College of Physicians Library</currentLocation>
+      <repository>Royal College of Physicians Library</repository>
+      <shelfmark>10552-2 D1/17-c-11</shelfmark>
+      <author>
+        <name>Walsingham, Thomas</name>
+        <id>http://www.isni.org/isni/0000000118452759</id>
+      </author>
+      <reader>
+        <name>John Dee</name>
+        <id>http://www.isni.org/isni/0000000122785193</id>
+      </reader>
+      <website>https://archaeologyofreading.org/bibliography/Dee-corpus/Walsingham-Historia</website>
+      <website>https://archaeologyofreading.org/bibliography/Dee-corpus/Walsingham-Ypodigma</website>
+      <note>Publication Statement: Londini : Excusum apud Henricum Binneman typographum. [sic] sub insigno Syrenis, anno Domini 1574</note>
+      <note>Record: http://rcp.soutron.net/Portal/Default/en-GB/RecordView/Index/36110</note>
+      <note>Title within cartouche.Edited by Matthew Parker.Copy 10552: Dorchester No. D124/11</note>
+      <note>Provenance: Copy 10552: Roberts and Watson note that it is not signed, but that the copy belonged to Dee and is 'heavily annotated, particularly in passages dealing with the Welsh and their history'.Copy 10552: former shelf-mark on upper flyleaf: 'T.7'.</note>
+      <note>Pagination: [12], 382, 385-418, 417-458, [10] pages</note>
+      <note>woodcut illustrations</note>
+    </bibliography>
+  </bibliographies>
+</book>

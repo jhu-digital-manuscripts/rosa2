@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.243r.tif" pagination="37" reader="John Dee" signature="Ddd"/>
+    <annotation>
+        
+        <marginalia anchor_text="castrum de Marleburgo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Castru[m] de Marloburgo
+                    </marginalia_text>
+                    <location name="Marlborough Castle"/>
+                </position>
+            </language>
+            <translation>
+                Marlborough Castle.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="rex Stephan[us] in bello captus est .iiij. Nonas Feb. p[er] Gulihelmu[m] de Kahaynes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Stephanus Rex, captus p[er] Gulielmu[m] de Kahaynes.
+                    </marginalia_text>
+                    <person name="King Stephen"/>
+                    <person name="William de Cahaignes"/>
+                </position>
+            </language>
+            <translation>
+                King Stephen was captured by William de Cahaignes.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Gulihelmus de Mandeuilla" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Gulielmus de Mandeuilla.      
+                    </marginalia_text>
+                    <person name="William de Mandeville"/>
+                </position>
+            </language>
+            <translation>
+                William de Mandeville.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Captus est Robertus Comes Glouerniae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Rob. Con. Glo. capt[us]
+                    </marginalia_text>
+                    <person name="Robert, 1st Earl of Gloucester"/>
+                </position>
+            </language>
+            <translation>
+                Robert, 1st Earl of Gloucester was captured.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Comes de Mellento" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Comes de Melle[n]to
+                    </marginalia_text>
+                    <person name="Waleran III, Count of Meulan"/>
+                </position>
+            </language>
+            <translation>
+                Count of Meulan.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="multas deceptiones" type="double"/>
+        <underline language="LA" method="pen" text="castrum de" type="straight"/>
+        <underline language="LA" method="pen" text="Diuises dominae suae" type="straight"/>
+        <underline language="LA" method="pen" text="Eodem anno, in Pentecoste inductum est colloquium inter imperatricem &amp; regem" type="straight"/>
+        <underline language="LA" method="pen" text="pacem reformandam" type="straight"/>
+        <underline language="LA" method="pen" text="Sed cum venerunt illuc, scilicet iuxta Bathonia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Comite Roberto, fratre suo" type="straight"/>
+        <underline language="LA" method="pen" text="rex Stephan[us] in bello captus" type="straight"/>
+        <underline language="LA" method="pen" text="Gulihelmu[m] de Kahaynes" type="straight"/>
+        <underline language="LA" method="pen" text="episcopi, cu[m] auunculo suo, rege Scotoru[m], Dauid &amp; fratre suo Roberto. Sed" type="straight"/>
+        <underline language="LA" method="pen" text="Captus est Robertus Comes Glouerniae in festo exaltationis sanctae crucis. Sed pro eius liberatione, rex liberatus est in festo omniu[m] sanctoru[m], &amp; regno restitutus" type="straight"/>
+        <underline language="LA" method="pen" text="Robertus de sigillo" type="straight"/>
+        
+        <errata amendedtext=";" copytext="," language="LA"/> <!-- Bathonia[m] Comite -->
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.199r.tif" pagination="389" reader="John Dee" signature="Kk iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Eadricus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Edricus.
+                    </marginalia_text>
+                    <person name="Eadric Streona"/>
+                </position>
+            </language>
+            <translation>
+                Eadric.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="rex Danorum Suanus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Suanus Danor[um] Rex
+                    </marginalia_text>
+                    <person name="Sweyn Forkbeard"/>
+                </position>
+            </language>
+            <translation>
+                Sweyn Forkbeard, King of Denmark.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Dux Eadricus" type="straight"/>
+        <underline language="LA" method="pen" text="vt Dani omnes qui in regno erant, pacificam haberent cum Anglis vbiq[ue] cohabitationem" type="straight"/>
+        <underline language="LA" method="pen" text="esset vtriusque populi quasi cor vnum &amp; anima" type="straight"/>
+        <underline language="LA" method="pen" text="Danorum Suanus reuersus est" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

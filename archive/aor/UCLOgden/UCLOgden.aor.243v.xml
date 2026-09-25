@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.243v.tif" reader="John Dee" signature="[T 5[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>The finding of the Gold Mine 1579. and 1576 after the stronger star in Cassiope appering.</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>I did coniecture the blasing star in Cassiopea appering a⁰ 1572, to signifye the fynding of som[m]e great threasor or the philosophers stone: 
+                        and what to end it did therein signifye, that it should concerne me somwhat. This I told to M[iste]r Ed Dier.
+                        at the same tyme. How truely it fell out a⁰ 1582. Martij 10 it may appere in tyme to come</marginalia_text> 
+                    <symbol_in_text name="Trine"/>
+                    <person name="Edward Dyer"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ad stuporem Mundi</marginalia_text>
+                </position>
+            </language>
+            <translation>I did conjecture the blazing star in Cassiopeia appearing in the year 1572, to signify the finding of some great treasure or the philosophers stone: and in fact it did [..] This I told to Mr Ed Dier at the same time. How truly it fell out 
+            in the year 1582. March 10 it may appear in time to come to the marvel of the world.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ei</marginalia_text> <!--JG: Unsure about this marginalia, doesn't seem to be an errata-->
+                </position>
+            </language>
+            <translation>For him.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Aurea Phoebeis" type="straight"/>
+        <underline language="LA" method="pen" text="Hinc lenocinium formae, cultus'q[ue] repertus Corporis, atq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="auro" type="double"/>
+        <underline language="LA" method="pen" text="aurea" type="straight"/>
+        <underline language="LA" method="pen" text="Quaerere sub terris aurum, furto'q[ue] latentem Naturam eruere, orbem'[que] inuertere praedae Imperat" type="straight"/>
+        <underline language="LA" method="pen" text="glebas inter" type="straight"/>
+        <underline language="LA" method="pen" text="deprendere gazam. Inuitam'q[ue] nouo" type="straight"/>
+        <underline language="LA" method="pen" text="tandem perducere coelo" type="straight"/>
+        <underline language="LA" method="pen" text="etiam fuluas auidus numberabit arenas Perfundet'[que] nouo" type="straight"/> 
+        <underline language="LA" method="pen" text="stillantia littora ponto" type="straight"/>
+        <underline language="LA" method="pen" text="uenam'q[ue] latentem Eruet &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="erit per utrunq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="Alter &amp; alterius semper mutabit in usus. Talia Cassiope nascentum pectora fingit" type="straight"/>
+        <underline language="LA" method="pen" text="parteis" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="double_vertical_bar" place="left_margin"/>
+        <mark method="pen" name="dash" place="intext"/>
+        <mark method="pen" name="dash" place="intext"/>
+        
+        <errata amendedtext="spumanteis" copytext="spumantis" language="LA"/>
+        <errata amendedtext="perlucenteis" copytext="perlucentis" language="LA"/>
+            
+    </annotation>
+</transcription>

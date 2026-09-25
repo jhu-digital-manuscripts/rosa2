@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.107v.tif" pagination="206" reader="John Dee" signature="[S[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Brochimallum" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Brochwel yskythrog Comes Cestria[e]. 
+                    </marginalia_text>
+                    <person name="Brochwellus Skithrog"/>
+                </position>
+            </language>
+            <translation>
+                Brochwel Ysgithrog, Count of Chester.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="defensorem Brochimallum" type="straight"/>
+        <underline language="LA" method="pen" text="Rof" type="double"/>
+        <underline language="LA" method="pen" text="Delebitur religio" type="straight"/>
+        <underline language="LA" method="pen" text="insula, &amp; transmutatio primarum sediu[m] fiet, dignitas Londoniae adornabit Doroborniam" type="straight"/>
+
+        <mark method="pen" name="comma" place="intext"/> <!-- aduentum cum -->
+        
+        <errata amendedtext="gladijs" copytext="glagijs" language="LA"/>
+        
+    </annotation>
+</transcription>

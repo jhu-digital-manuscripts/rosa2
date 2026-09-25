@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.078r.tif" reader="Harvey" signature="[*7r]"/>	<!-- ABO 82right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Flamma, non fumus. Eudromus.
+					</marginalia_text>
+					<person name="Eudromus"/>
+				</position>
+			</language>
+			<translation>
+				Fire, not smoke. Eudromus.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Alij causas negociantur scilicèt: hic ludit longè
+						maiores: nec persequitur, sed expedit grauiss[im]a. 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Others certainly deal with causes: this man mocks his elders at length.
+				And he does not follow others but explains the most serious matters.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Aforismi ciuili.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Civil aphorisms.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Piu dolcezza, che forza.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				More sweetness than force.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Viuitur ingenio:
+						vincitur ingenio.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				He lives by his genius and wins by his genius.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Ego Phoenici S[imilis].
+							<!-- CG: I believe the word is "similis" but should ask a specialist for confirmation. -->
+					</marginalia_text>				
+				</position>
+			</language>
+			<translation>
+				I am similar to the phoenix.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Aut Julium Sydus: aut Cauda Draconis.
+					</marginalia_text>
+					<person name="Julius Caesar"/>
+				</position>
+			</language>
+			<translation>
+				Either Caesar's comet or the tail of the Dragon.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Vel melius: vel nihil.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Either better, or nothing at all.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Chrysotechni
+						aurea doctrina, et disciplina.
+					</marginalia_text>
+					<person name="Chrysotechnus"/>
+				</position>
+			</language>
+			<translation>
+				The golden learning and discipline of Chrysotechnus.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Nihil in mundo pulchrius, quà dictis factisq[ue] excellere.
+						Eminere, pra[e]clarum: pra[e]eminere, singulare.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Nothing in the world is more beautiful than excelling in words and deeds.
+				To stand out is honorable: to stand above all others is singular.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Prudentum decet, paratissimum esse ante factum: in facto apparari,
+						tardi, miseriq[ue] est. Stolidus miles, qui non acuit ensem ante pra[e]lij tempestatem.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				It is right for the prudent man to be most prepared before the fact; for the slow and the miserable, it is
+				to be prepared only during the fact. Sluggish is the soldier who does not sharpen his sword before the storm of battle.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="no[n] vendetta" type="straight"/>
+		<underline language="IT" method="pen" text="di piu graui danni" type="straight"/>
+		<underline language="IT" method="pen" text="Motti arditi, &amp; piaceuoli de'" type="straight"/>
+		<underline language="IT" method="pen" text="inscusare l'inauertenza" type="straight"/>
+		<underline language="IT" method="pen" text="huomini saui" type="straight"/>
+		<underline language="IT" method="pen" text="ciaschedun'alto quesito rispo[n]dere" type="straight"/>
+		<underline language="IT" method="pen" text="mordenti" type="straight"/>
+		
+		<symbol name="SS" place="left_margin"/>
+		<symbol name="SS" place="intext"/>
+		<symbol language="LA" name="SS" place="tail" text="Prudentum decet, paratissimum esse ante factum: in facto apparari, tardi, miseriq[ue] est. Stolidus miles, qui non acuit ensem ante pra[e]lij tempestatem."/>
+		
+		<mark language="IT" method="pen" name="straight_quotation_mark" place="left_margin" text="Motti arditi, &amp; piaceuoli de'"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="left_margin" text="Gli huomini constanti, &amp; virili farsi beffe del male"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="left_margin" text="L'audacia à tempo &amp; luogo giouar molto"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--ven-->
+		
+		<mark method="pen" name="comma" place="intext"/> <!--danni douersi-->
+		<mark method="pen" name="plus_sign" place="intext"/> <!--fieri-->		
+		
+
+    </annotation>
+</transcription>

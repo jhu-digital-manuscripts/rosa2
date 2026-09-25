@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.310v.tif" pagination="[303v]" reader="John Dee" signature="[ggg iij[v]]"/>
+    <annotation>
+        
+        <!-- FSF: I think this is from another note, which Dee accidentally continued onto this page -->
+       
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>hora casus. {</marginalia_text> 
+                </position>
+            </language>
+            <translation>The hour of the fall.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>hor. 5. m[inutae] 27 s[ecundae] [4 - deleted] 20 a med. nocte</marginalia_text>
+                </position>
+            </language>
+            <translation>5 hours, 27 minutes, 20 seconds from midnight.</translation>
+        </marginalia>
+        
+        <errata amendedtext="[deleted]" copytext="[Mars] 4.45" language="LA"/> <!--JG: Really tricky to capture such 'visual' modifications-->
+        
+        <table place="intext" type="astrological_chart">
+            <tr>
+                <th/>
+                <th label="House"/>
+                <th label="Position"/>
+                <th label="Added information"/>
+            </tr>
+            <tr>
+                <td>Mars</td>
+                <td>12</td>
+                <td>4.45.</td>
+            </tr>
+        </table>
+        
+    </annotation>
+</transcription>

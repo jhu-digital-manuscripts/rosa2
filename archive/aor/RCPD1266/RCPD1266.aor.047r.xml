@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.047r.tif" pagination="79" reader="John Dee" signature="g.iiij."/>
+    <annotation>
+        
+       <marginalia anchor_text="Paradisus" hand="Italian">
+           <language ident="LA">
+               <position book_orientation="0" place="right_margin">
+                   <marginalia_text>Paradisus.</marginalia_text>
+               </position>
+           </language>
+           <translation>Paradise.</translation>
+       </marginalia> 
+        
+        <marginalia anchor_text="παράδεισος" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>παράδεισος</marginalia_text>                
+                </position>
+            </language>
+            <translation>Paradise.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="mihi plurimùm declinasse. quò" type="straight"/>
+        <underline language="LA" method="pen" text="sit, quòd diluuio interiit" type="straight"/>
+        <underline language="LA" method="pen" text="sublatus" type="straight"/>
+        <underline language="LA" method="pen" text="ille" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; loca quae illo tempore extarent" type="straight"/>
+        <underline language="LA" method="pen" text="ornatus ille, &amp; loci eius elegantia" type="straight"/>
+        <underline language="LA" method="pen" text="tamen terrae aut flumina" type="straight"/>
+        <underline language="LA" method="pen" text="Paradisus" type="straight"/>
+        <underline language="LA" method="pen" text="sicut Ægyptus" type="straight"/>
+        <underline language="LA" method="pen" text="aliorum sententiis quamuis longè diuersum" type="straight"/>
+        <underline language="LA" method="pen" text="comprehensam ab ipsis Paradisi topographiam" type="double"/>
+        <underline language="LA" method="pen" text="extra terras" type="double"/>
+        <underline language="LA" method="pen" text="existimant toto" type="double"/>
+        <underline language="LA" method="pen" text="Ioachimus Vadianus" type="straight"/>
+        
+        <mark method="pen" name="circumflex" place="intext"/>
+        <mark method="pen" name="circumflex" place="intext"/>
+        
+        <errata amendedtext="viuariu[m]" copytext="vinariu[m]" language="LA"/>
+        <errata amendedtext="Viuariáque" copytext="Vinariáque" language="LA"/>
+        
+    </annotation>
+</transcription>

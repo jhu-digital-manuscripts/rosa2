@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.061r.tif" pagination="441" reader="Harvey"/>	<!-- ABO 65right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.061r_0001" marginalia_continues_from="Ha2.060v_0001" marginalia_from_transcription="Ha2.060v.xml">
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						<!-- Continued from facing page, head, Ha2.060v. -->
+						[p. 440: The onlie Entelechist in the World: &amp;] The first Euschemonist
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						per Totum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The first Euschemonist all together.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						argutamente. ridicolo. 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Cleverly. Ridiculous.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						) The onlie pragmatician of art, &amp; vertu.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						A posse ad Esse,
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<language ident="EN">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						who but HEE?
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				From possibilty to being, who but HEE?
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Laudo hominem Semper familiarem; nunq[uam] vulgarem. Quotidiè lucet Sol: sed adhuc Sol. 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				I praise the man who is always familiar, but never vulgar. The sun shines daily, but it is still the sun. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Imperfecta[e] Artis, et Virtutis Minuit pra[e]sentia famam: Perfecta[e], auget.						
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<language ident="IT">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Sempre piu oltre; sempre ò Migliore, ò Niente.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The presence of an imperfect art and virtue diminishes fame: the presence of a perfect art increases it.
+				Always further and further; always either better or nothing at all.
+			</translation>
+		</marginalia>
+		
+		
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="delle Dee" type="straight"/>
+		<underline language="IT" method="pen" text="delle Gratie" type="straight"/>
+		<underline language="IT" method="pen" text="Polifemo grandissimo" type="straight"/>
+		<underline language="IT" method="pen" text="Mercurio di età di tredici" type="straight"/>
+		<underline language="IT" method="pen" text="profession di essere" type="straight"/>
+		<underline language="IT" method="pen" text="suegliato ingegno" type="straight"/>
+		<underline language="IT" method="pen" text="tutte queste figure sono eccellentissime" type="straight"/>
+		<underline language="IT" method="pen" text="desidererei" type="straight"/>
+		<underline language="IT" method="pen" text="bella rosa" type="straight"/>
+		<underline language="IT" method="pen" text="foglia di uite" type="straight"/>
+		<underline language="IT" method="pen" text="la uergogna di quel Mercurio" type="straight"/>
+		<underline language="IT" method="pen" text="sorridendo Raffaello" type="straight"/>
+		<underline language="IT" method="pen" text="haueua tanta consideratione" type="straight"/>
+		<underline language="IT" method="pen" text="perche non" type="straight"/>
+		<underline language="IT" method="pen" text="uoi anchor" type="straight"/>
+		<underline language="IT" method="pen" text="simile al Polifemo" type="straight"/>
+		<underline language="IT" method="pen" text="che dianzi tanto mi lodaste" type="straight"/>
+		<underline language="IT" method="pen" text="grande nella uergogna" type="straight"/>
+		<underline language="IT" method="pen" text="Francesco Doni" type="straight"/>
+		<underline language="IT" method="pen" text="quel grido &amp; fama" type="straight"/>
+		<underline language="IT" method="pen" text="c'homai si sa per tutto" type="straight"/>
+		<underline language="IT" method="pen" text="come acutissimo" type="straight"/>
+		<underline language="IT" method="pen" text="intelletto sottile e suegliato" type="straight"/>
+		<underline language="IT" method="pen" text="un'arma a" type="straight"/>
+		<underline language="IT" method="pen" text="Contadino" type="straight"/>
+		<underline language="IT" method="pen" text="molto ricco, dal contado" type="straight"/>
+		<underline language="IT" method="pen" text="ritirato a star nella città" type="straight"/>
+		<underline language="IT" method="pen" text="nobilitarsi" type="straight"/>
+		<underline language="IT" method="pen" text="reprimer la arroganza" type="straight"/>
+		<underline language="IT" method="pen" text="la prosuntio[n] di colui, ordinò" type="straight"/>
+		<underline language="IT" method="pen" text="uno scudo" type="straight"/>
+		<underline language="IT" method="pen" text="campo di grano" type="straight"/>
+		<underline language="IT" method="pen" text="una uite" type="straight"/>
+		<underline language="IT" method="pen" text="un pero" type="straight"/>
+		<underline language="IT" method="pen" text="quel grano incerato e spigato" type="straight"/>
+		<underline language="IT" method="pen" text="uerdura di quella uite piena di" type="straight"/>
+		<underline language="IT" method="pen" text="bella pianta" type="straight"/>
+		
+		<!-- Symbols -->
+		<symbol language="IT" name="Mercury" place="right_margin" text="Mercurio"/>
+		<symbol name="Sun" place="intext"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Ma -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- gri -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- richie -->
+		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- facesse -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- quel -->
+		
+	    	<!-- Left margin -->
+	    <mark method="pen" name="plus_sign" place="left_margin"/> <!-- lifemo -->
+		<mark method="pen" name="bracket" place="left_margin"/> <!-- la .. diuisandogli -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark method="pen" name="dot" place="intext"/> <!-- Gratie, & -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Polifemo grandissimo"/>
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="Mercurio"/>
+		<mark method="pen" name="equal_sign" place="intext"/> <!-- tutte -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="bella rosa"/>
+		<mark method="pen" name="equal_sign" place="intext"/> <!-- foglia di uite -->
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="Mercurio"/>
+	    <mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark: Perdonatemi -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="simile al Polifemo"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Francesco Doni"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark: fama c'homai -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="acutissimo"/>
+		<mark method="pen" name="equal_sign" place="intext"/> <!--sottile-->
+		<mark method="pen" name="dot" place="intext"/> <!-- suegliato, fu -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="molto ricco"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- colui, ordino -->
+
+    </annotation>
+</transcription>

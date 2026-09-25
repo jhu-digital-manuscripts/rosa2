@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.211v.tif" pagination="422" reader="John Dee" signature="[D 3[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="crebiores figurae, quàm ut dißimulari poßint, postulandum est, ut illud nescio quid, quod, aduersariij obliquis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Contra aduirsarij figuraru[m] densitate[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Against adversaries of the abundances of figures.</translation> <!-- M.B. Not certain of this translation ? -->
+        </marginalia>
+        
+        <marginalia anchor_text="dißimulatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dissimulatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Dissimulation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in Clodium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In Clodui[m]</marginalia_text>
+                    <book title="In Clodium et Curionem"/>
+                </position>
+            </language>
+            <translation>In Clodium.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ironia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ironia</marginalia_text>
+                </position>
+            </language>
+            <translation>Irony.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="iuare" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Iuare</marginalia_text>
+                </position>
+            </language>
+            <translation>An oath.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Seneca" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>seneca.</marginalia_text>
+                    <person name="Seneca"/>
+                </position>
+            </language>
+            <translation>Senca.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Demosthenes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Demosthenis.</marginalia_text>
+                    <person name="Demosthenes"/>
+                </position>
+            </language>
+            <translation>Demosthenes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in Clodiam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In Clodiam</marginalia_text>
+                    <book title="In Clodium et Curionem"/>
+                </position>
+            </language>
+            <translation>In Clodiam</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Comparationem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Comparatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Comparison.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Muraena" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Murena</marginalia_text>
+                    <book title="Pro Murena"/>
+                </position>
+            </language>
+            <translation>Pro Murena.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="aliquando dißimulatio est, ut in eo (nota enim" type="straight"/>
+        <underline language="LA" method="pen" text="pro exhaeredato" type="straight"/>
+        <underline language="LA" method="pen" text="Nam in totum iurare" type="straight"/>
+        <underline language="LA" method="pen" text="ubi necesse est, graui uiro parum conuenit. Et est" type="straight"/>
+        <underline language="LA" method="pen" text="dictum eleganter, no[n] patronorum hoc esse, sed testium" type="straight"/>
+        <underline language="LA" method="pen" text="quam omnes amican omnium potius" type="straight"/>
+        <underline language="LA" method="pen" text="inimicam putaueru[n]t" type="straight"/>
+        
+        <symbol name="Unidentified" place="left_margin"/> 
+        
+        <mark language="LA" method="pen" name="tripunctus" place="left_margin" text="Ironia"/>
+        <mark language="LA" method="pen" name="tripunctus" place="left_margin" text="Iurare"/>
+        <mark language="LA" method="pen" name="tripunctus" place="left_margin" text="Comparatio"/>
+        
+        <numeral place="left_margin">3</numeral>
+        
+    </annotation>
+</transcription>

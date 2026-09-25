@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.352r.tif" pagination="253" reader="John Dee" signature="Yyy"/>
+    <annotation>
+        
+        <marginalia anchor_text="Roberti Bacun" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Rob. Bacun       
+                    </marginalia_text>
+                    <person name="Robert Bacon"/>
+                </position>
+            </language>
+            <translation>
+                Robert Bacon.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Gasto, dominus Biardae &amp; Peregoti" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Gasto. D. de Biarda et Peregot.   
+                    </marginalia_text>
+                    <person name="Gaston VII, Viscount of Bearn"/>
+                </position>
+            </language>
+            <translation>
+                Gaston, Viscount of Béarn, and Périgord.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Quae quia sine communi baronagij assensu prouisa sunt constitui generaliter, minime valuerunt" type="straight"/>
+        <underline language="LA" method="pen" text="Roberti Bacun" type="straight"/>
+        <underline language="LA" method="pen" text="Gasto, dominus Biardae &amp; Peregoti" type="straight"/>
+        
+    </annotation>
+</transcription>

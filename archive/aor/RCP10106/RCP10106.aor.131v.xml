@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.131v.tif" pagination="262" reader="John Dee" signature="[r 3[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="anima, an sit immortalis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>An a[n]i[m]a immortalis</marginalia_text>
+                </position>
+            </language>
+            <translation>Whether the soul is immortal.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="haeres" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Heres</marginalia_text>
+                </position>
+            </language>
+            <translation>Heir.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Milone</marginalia_text>
+                    <book title="Pro Milone"/>
+                </position>
+            </language>
+            <translation>Pro Milone.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Milone.</marginalia_text>
+                    <book title="Pro Milone"/>
+                </position>
+            </language>
+            <translation>Pro Milone.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Caetera sequi, nisi co[n]firmata prima parte, non possunt" type="straight"/>
+        <underline language="LA" method="pen" text="Quod est dißolutu[m], sensu" type="straight"/>
+         
+         <mark method="pen" name="quattuorpunctus" place="left_margin"/>
+         <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

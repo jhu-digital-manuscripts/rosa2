@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.012v.tif" reader="John Dee" signature="[Ciiij]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Crucem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Crux</marginalia_text>
+                </position>
+            </language>
+            <translation>The cross.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="characteres" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Characteres</marginalia_text>
+                </position>
+            </language>
+            <translation>Characters.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="pensiculatius ac attentius figuras ex numeris ortas, numerorum" type="straight"/>
+        <underline language="LA" method="pen" text="tritraequae" type="straight"/>
+        <underline language="LA" method="pen" text="omnium coelestium ac D[a]emonum consumationem testantur" type="straight"/>
+        <underline language="LA" method="pen" text="Crucem" type="double"/>
+        <underline language="LA" method="pen" text="stellae maximae fortes" type="straight"/>
+        <underline language="LA" method="pen" text="characteres" type="straight"/>
+        <underline language="LA" method="pen" text="Magis characteres" type="straight"/>
+        <underline language="LA" method="pen" text="characteres" type="double"/>
+        <underline language="LA" method="pen" text="vim ab anima mundi suscipere" type="straight"/>
+        
+        <symbol name="Trine" place="left_margin"/>
+        
+    </annotation>
+</transcription>

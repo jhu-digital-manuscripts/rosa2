@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.178r.tif" pagination="171" reader="John Dee" signature="uu iij"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Maxima causa ex ♄ pe[n]det in ☌ et □ pulsante ☾a[m].</marginalia_text> 
+                    <symbol_in_text name="Saturn"/>
+                    <symbol_in_text name="Conjunction"/>
+                    <symbol_in_text name="Square"/>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>The greatest cause depends on Saturn in conjuction and square, pulsating the Moon.</translation> <!--JG: V unsure-->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Sol &amp; Luna in nona, fecerunt eum ex ordine canonicorum regularium. Iupiter" type="straight"/>
+        <underline language="LA" method="pen" text="molestas &amp; longas indicat aegritudines" type="straight"/>
+        
+    </annotation>
+</transcription>

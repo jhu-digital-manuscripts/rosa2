@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.145v.tif" pagination="114" reader="Harvey" signature="[Hv]"/>	<!-- ABO 150left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Quicquid est in tuo vnius Globo, aut in tua ipsius
+						Spha[e]ra: id omne decet
+						singulari vigore exertare. Nec vnq[uam] desinit.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Whatever is in your own globe or sphere must be
+				worked with all singular vigor; it should never cease.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Eutrapelus seipsum cogere: quantus quantus potest extendi.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				Eutrapelus, to know himself, is as great as he can be great in extending himself.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						His original arts: &amp; final professions: 
+						the onlie Singular bookes, which he principally regardes.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Sed quasi ludens, ut est pragmaticoru[m] dexterrimus.
+						Nec possu[nt] illum parua irritare obuia, qui magna spernit opposita.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				But as if he were playing, as he is the most skilled of the pragmaticians.
+				He who scorns opposition cannot be irritated by small and obvious matters.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Illas tantummodò literas curat Eutrapelus: qua[e] viru[m]
+						faciunt alijs pra[e]claris viris pra[e]stantiorem.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				Eutrapelus cares only for those letters which make a man more illustrious
+				to other illustrious men.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Soli studet doctrina[e], qua[e] est in operibus efficaciss[im]a
+						in mundo potentissima.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				One should only study that learning which is most effective in deeds and
+				most potent in the world.
+			</translation>
+		</marginalia>
+		
+		
+		<underline language="IT" method="pen" text="virtù della cortesia infino" type="straight"/>
+		<underline language="IT" method="pen" text="gli assassini" type="straight"/>
+		<underline language="IT" method="pen" text="farli mansueti &amp; pietosi" type="straight"/>
+		<underline language="IT" method="pen" text="benefattore d'ogn'vno" type="straight"/>
+		<underline language="IT" method="pen" text="dette ne' malandrini" type="straight"/>
+		<underline language="IT" method="pen" text="voleuano vccidere" type="straight"/>
+		<underline language="IT" method="pen" text="ohime non l'ammazzate" type="straight"/>
+		<underline language="IT" method="pen" text="huomo raro" type="straight"/>
+		<underline language="IT" method="pen" text="piacer à ogn'vno," type="straight"/>
+		<underline language="IT" method="pen" text="astennero" type="straight"/>
+		<underline language="IT" method="pen" text="insino al sicuro, gli" type="straight"/>
+		<underline language="IT" method="pen" text="Ariosto nobilmente" type="straight"/>
+		<underline language="IT" method="pen" text="giouar'altrui" type="straight"/>
+		<underline language="IT" method="pen" text="rade" type="straight"/>
+		<underline language="IT" method="pen" text="il ben far senza il suo premio" type="straight"/>
+		<underline language="IT" method="pen" text="Morte" type="straight"/>
+		<underline language="IT" method="pen" text="nè danno" type="straight"/>
+		<underline language="IT" method="pen" text="nè ignominia" type="straight"/>
+		<underline language="IT" method="pen" text="i monti fermi stanno" type="straight"/>
+		<underline language="IT" method="pen" text="ignoranti" type="straight"/>
+		<underline language="IT" method="pen" text="più le lor fatiche" type="straight"/>
+		<underline language="IT" method="pen" text="fusse dottore di legge" type="straight"/>
+		<underline language="IT" method="pen" text="non haueua" type="straight"/>
+		<underline language="IT" method="pen" text="haueua poche" type="straight"/>
+		<underline language="IT" method="pen" text="facende" type="straight"/>
+		<underline language="IT" method="pen" text="domandaua venticinque ducati" type="straight"/>
+		
+		<symbol name="SS" place="left_margin"/>
+		
+		<symbol name="Sun" place="right_margin"/>
+		
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Chi nuoce altrui, tardi, ò per tempo Il debito     à scontar, che non s'oblia."/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- libera -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- det -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- fe -->
+		<mark method="pen" name="horizontal_bar" place="right_margin"/> <!-- underneath marginalia 'posita -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- qua -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- du -->
+		
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="ohime non l'ammazzate"/>
+		
+		
+    </annotation>
+</transcription>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonDL45.146v.tif" pagination="292" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        { Scuta.
+                        Clypei.
+                        Catheia.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>{ Shields. Round schields. Spears.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Teutonico ritu soliti torquere" type="straight"/>
+        <underline language="LA" method="pen" text="fracte subis Cimber" type="straight"/>
+        <underline language="LA" method="pen" text="gladiisq[ue] grauatas" type="straight"/>
+        <underline language="LA" method="pen" text="manus solas iusse portare catheias" type="straight"/>
+        
+        <mark method="pen" name="horizontal_bar" place="head"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.259v.tif" pagination="[252v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="in corde Lunae" hand="English_secretary">
+           <language ident="LA">
+               <position book_orientation="0" place="left_margin">
+                   <marginalia_text>Planeta[e] vel fixae in Corde ☾ vel solis.</marginalia_text>
+                   <symbol_in_text name="Moon"/>
+               </position>
+           </language>
+           <translation>The planets are either fixed in the heart of the moon or the sun.</translation>
+       </marginalia> 
+        
+        <marginalia anchor_text="eclipsis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Eclipsis</marginalia_text>
+                </position>
+            </language>
+            <translation>Eclipse.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mars facit in ascendente" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>♂ vel ♄ in asc.</marginalia_text>
+                    <symbol_in_text name="Mars"/>
+                    <symbol_in_text name="Saturn"/>
+                </position>
+            </language>
+            <translation>Mars or Saturn in the ascendant.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="amicitia" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Planetarum amicitia quibus modis conciliat[ur]</marginalia_text>
+                </position>
+            </language>
+            <translation>By which way the friendship of the planets is acquired.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iupiter; Venus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>♃. ♀ bonitas.</marginalia_text>
+                    <symbol_in_text name="Jupiter"/>
+                    <symbol_in_text name="Venus"/>
+                </position>
+            </language>
+            <translation>The benevolence of Jupiter and Venus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="eruditi, ut plurimum sunt, malorum morum" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Eruditi malor[um] morum saepissi[m]e</marginalia_text>
+                </position>
+            </language>
+            <translation>Skilled most often in evil habits.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="Trinus omnis radius, bonum affert" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>No[n] tame[n] semper vide supra fo 86, v, linea 4.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:192:m0001" text="86, v"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Yet not always, see above, folio 86 verso, line 4.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Trinus Saturni &amp; Iouis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>♄ ♃ △</marginalia_text>
+                    <symbol_in_text name="Saturn"/>
+                    <symbol_in_text name="Jupiter"/>
+                    <symbol_in_text name="Trine"/>
+                </position>
+            </language>
+            <translation>The trine of Saturn and Jupiter.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="amicitia" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>propter ♄i impuritate[m]</marginalia_text> 
+                    <symbol_in_text name="Saturn"/>
+                </position>
+            </language>
+            <translation>Because of Saturn's impurity.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="natura" type="straight"/>
+        <underline language="LA" method="pen" text="uel radio" type="straight"/>
+        <underline language="LA" method="pen" text="communibus" type="straight"/>
+        <underline language="LA" method="pen" text="Trinus omnis radius, bonum affert" type="straight"/>
+        
+        <errata amendedtext="qua" copytext="quia" language="LA"/> 
+        
+    </annotation>
+</transcription>

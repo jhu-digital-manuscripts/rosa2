@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.023v.tif" pagination="[24v]" reader="John Dee"/>  
+    <annotation>
+        
+        <marginalia anchor_text="Maeander" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ma[e]ander.</marginalia_text>
+                      <person name="Meander"/>
+                </position>
+            </language>
+            <translation>Meander.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Diomedis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Diomedes.</marginalia_text>
+                    <person name="Diomedes"/>
+                </position>
+            </language>
+            <translation>Diomedes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Anteus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Anteus.</marginalia_text>
+                    <person name="Antaeus"/>
+                </position>
+            </language>
+            <translation>Antaeus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="animam pestis nemeaea" type="straight"/>
+        <underline language="LA" method="pen" text="Efferus humana qui dape pauit equos" type="straight"/>
+        
+    </annotation>
+</transcription>

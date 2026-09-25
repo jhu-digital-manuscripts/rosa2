@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+   <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+   
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <title>Lamentation by Christine de Pizan</title>
+         
+         </titleStmt>
+         
+         <publicationStmt>
+            
+            <distributor>MSEL</distributor>
+         
+         </publicationStmt>
+         
+         <notesStmt>
+            
+            <note rend="IDENTIFICATION">
+               
+               <p>Français 24864, Bibliothéque national de France, Paris. Paris, 23 August, 1410. </p>
+            
+            </note>
+            
+            <note rend="BASIC INFORMATION">
+               
+               <p>Paper, 216 x 142 mm, 9 folios.</p>
+            
+            </note>
+            
+            <note rend="MATERIAL">
+               
+               <p> Light colored <material>paper</material> with some humidity and ink marks on folio <locus>14</locus> and numerous humidity marks especially in folios <locus from="176" to="178bis">176-178bis</locus>.</p>
+                  
+            </note>
+            
+            <note rend="QUIRES">
+                            
+                                 
+               <p> Folios <locus from="14" to="18">14-18</locus> are part of the same quire (from <locus from="14" to="21">14-21</locus>, but only the first four folios and a half contain the Lamentation). The victorine foliation dates from the 15th century and it was written in thick Arabic numerals on the top right.</p>
+               <p> Folios <locus from="176" to="178bis">176-178bis</locus>. ff. 4. Like almost all the manuscripts of Saint-Victor, the foliation dates from the 15th/16th century and it was written in thick Arabic numerals on the top right. Folio <locus>178bis</locus> was later on numbered.</p>
+            
+            </note>
+            
+            <note rend="LAYOUT">
+               
+               <p>There is no evidence of ruling nor pricking. There is one column with 24-29 lines.</p>
+            
+            </note>
+            
+            <note rend="SCRIPT">
+               
+               <p>The text for "Lamentation" is written in dark brown ink. The text seems to have been written by one scribe in a cursive calligraphic script. The name of the Duc de Berry is written in thick letters and underlined on folios <locus>16</locus> and <locus>18</locus> (<hi rend="italics">"O duc de Berry"</hi>). Punctuation marks are also used, especially the period. There are no corrections.</p>
+               <p>The text for "Moralized Proverbs" is written in faded brown ink with a faded red for the <hi rend="italics">explicit</hi>. The text seems to have been written by one scribe in a high cursive script. This script is very similar to that used in the transcription of the <hi rend="italics">Dit de la pasture</hi> at the end of the manuscript in Chantilly, Bibl. du Château, Ms. 492. Punctuation marks are also used, especially scansion bar, except when the break falls in the middle of a word. There are some corrections done by the hand of the main scribe.</p>
+            
+            </note>
+            
+            <note rend="DECORATION">
+               
+               <p>There is no ornamental decoration, nor decorated initials, nor any miniatures.</p>
+              
+            </note>
+            
+            <note rend="BINDING">
+               
+               <p> The manuscript is bound with full scraped sheepskin rebuilt in the 20th century in the medieval style.</p>
+            </note>
+            
+            <note rend="HISTORY">
+               
+               <p>The "Lamentation" manuscript can be dated to the 23 of August, 1410, according to the colophon, a date that confirms the watermark on the paper. This is the only copy known to have survived of the Lamentation, this autograph on paper without any decoration has all the characteristics of a first time exemplar.</p>
+               <p>Provenance: Abbey of Saint-Victor where Claude de Grandrue gave the manuscript the shelfmark TT7 in 1514 underneath the table of contents along with other shelfmarks on folio <locus>1</locus> (C.d.33, 509, 879, 623). The diverse elements of this collection were gathered by Guillaume Tuysselet in the mid-15th century. The manuscripts from Saint-Victor entered the Bibliothèque de la Nation (the future BnF) after the French Revolution. There is a stamp from the Second Empire (1852-1870) on folios <locus>176</locus> and <locus>178bis</locus>.</p>
+               <p>The "Moralized Proverbs" manuscript can be dated to the 27 of October, 1405. This is the only copy of this book to be dated.</p>
+               <p>Provenance: Abbey of Saint-Victor where Claude de Grandrue gave the manuscript the shelfmark TT7 in 1514 underneath the table of contents along with other shelfmarks on folio <locus>1</locus> (C.d.33, 509, 879, 623). The diverse elements of this collection were gathered by Guillaume Tuysselet in the mid-15th century. The manuscripts from Saint-Victor entered the Bibliothèque de la Nation (the future BnF) after the French Revolution. There is a stamp from the Second Empire (1852-1870) on folios <locus>176</locus> and <locus>178bis</locus>.</p>
+                  
+            </note>
+            
+            <note rend="TEXT">
+               
+               <p>The manuscript contains several texts: Treaties of edification in prose and verse, by Christine de Pisan, Saint Bernard; le Pastoral fo Saint Gregory, etc. </p>
+                             
+            </note>
+           
+            <note rend="AUTHOR">
+              
+               <p>
+*The information given here comes from direct observation and from Ouy, Gilbert, Christine Reno and Inès Villela-Petit.<hi rend="italics"> Album Christine de Pizan </hi>. Turnhout: Brepols, 2012. </p>
+<p> Description by Mónica Ann Walker Vadillo</p>
+            
+            </note>
+         
+         </notesStmt>
+         
+         <sourceDesc>
+            
+            <bibl>
+               
+               <note type="format">manuscript</note>
+               
+               <note type="commonName">Français 24864</note>
+               
+               <title>The Lamentation by Christine de Pizan</title>
+
+               
+               <extent>
+                  
+                  <measure quantity="251" unit="folios">251 folios</measure>
+                  
+                  <dimensions>
+                     
+                     <height unit="mm">216</height>
+                     
+                     <width unit="mm">142</width>
+                  
+                  </dimensions>
+               
+               </extent>
+               
+               <note type="illustrations">0</note>
+                        
+               
+               
+               
+               <note type="material">paper</note>
+               
+               <pubPlace>Paris, France</pubPlace>
+     
+               <date notAfter="1500" notBefore="1400">15th century</date>
+            
+            </bibl>
+            
+            <msDesc>
+               
+               <msIdentifier>
+                  
+                  <settlement>Paris</settlement>
+                  
+                  <repository>Bibliothèque nationale de France</repository>
+                  
+                  <idno>Français 24864</idno>
+               
+               </msIdentifier>
+            
+               <msContents>
+                  <msItem n="1">
+                     <locus from="1r" to="248v">1r-248v</locus>
+                     <title>Traités d'édification, en prose et en vers, par Christine de Pisan, saint Bernard ; le Pastoral de saint Grégoire, etc</title>
+                     <note type="textid">Traités d'édification, en prose et en vers, par Christine de Pisan, saint Bernard ; le Pastoral de saint Grégoire, etc</note>
+                     <note type="folios">248</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">29</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">1</note>
+                  </msItem>
+                  <msItem n="2">
+                     <locus from="14r" to="18v">14r-18v</locus>
+                     <title>The Lamentation by Christine de Pizan</title>
+                     <note type="textid">The Lamentation by Christine de Pizan</note>
+                     <note type="folios">5</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">26</note>
+                     <note type="leavesPerGathering">8</note>
+                     <note type="columnsPerFolio">1</note>
+                  </msItem>
+                  <msItem n="3">
+                     <locus from="176r" to="178bisv">176r-178bisv</locus>
+                     <title>Moralized Proverbs by Christine de Pizan</title>
+                     <note type="textid">Moralized Proverbs by Christine de Pizan</note>
+                     <note type="folios">4</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">26</note>
+                     <note type="leavesPerGathering">8</note>
+                     <note type="columnsPerFolio">1</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         
+         </sourceDesc>
+      
+      </fileDesc>
+   
+   </teiHeader>
+   
+   <text>
+      
+      <body>
+         
+         <div> </div>
+      
+      </body>
+   
+   </text>
+
+</TEI>

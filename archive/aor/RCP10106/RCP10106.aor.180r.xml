@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.180r.tif" pagination="359" reader="John Dee" signature="z 4"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Atabulus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Atabulus</marginalia_text>
+                </position>
+            </language>
+            <translation>Sirocco.</translation> <!-- M.B. The Atabulus wind now known as Sirocco. -->
+        </marginalia>
+        
+        <marginalia anchor_text="homonyma" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Homonyma</marginalia_text>
+                </position>
+            </language>
+            <translation>Homonyms.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="obscuritatis in contextu &amp; continuatione sermonis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Or[ati]o[n]is contextus.</marginalia_text>
+                </position>
+            </language>
+            <translation>The structure of speech.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="hyberbaton" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>hyperbaton</marginalia_text>
+                </position>
+            </language>
+            <translation>Hyperbaton.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mixtura uerborum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Verboru[m] Mixtura</marginalia_text>
+                </position>
+            </language>
+            <translation>A mixture of words.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="interiectione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Interiectio</marginalia_text>
+                </position>
+            </language>
+            <translation>Parenthesis.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vergilius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vergilius</marginalia_text>
+                    <person name="Virgil"/>
+                </position>
+            </language>
+            <translation>Virgil.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ambiguitas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ambiguitas.</marginalia_text>
+                </position>
+            </language>
+            <translation>Ambiguity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="inanium uerborum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Verba inania</marginalia_text>
+                </position>
+            </language>
+            <translation>Inane words.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="apud Titum Liuium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Apud Liuiu[m]</marginalia_text>
+                    <person name="Livy"/>
+                </position>
+            </language>
+            <translation>According to Livy.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="radix arboris" type="straight"/>
+        <underline language="LA" method="pen" text="Saxa uocant Itali, medijs quae in fluctibus aras. Etiam" type="straight"/>
+        <underline language="LA" method="pen" text="intellectus, nisi quod interponitur, breue est" type="straight"/>
+        <underline language="LA" method="pen" text="reformidant, ducti specie nitoris, circumeunt omnia copiosa loquacitate, quae dicere uolunt: ipsam deinde illam seriem              cum alia simili iungentes, miscentes'q[ue]" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">4</numeral>
+        <numeral place="right_margin">5</numeral>
+        <numeral place="right_margin">6</numeral>
+        <numeral place="right_margin">7</numeral>
+        <numeral place="right_margin">8</numeral>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.189r.tif" pagination="201" reader="Harvey" signature="[N5r]"/>	<!-- ABO 193right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Omnes Cosmopolitici, similes Crassi, Balbi, Pontij.
+					</marginalia_text>
+					<person name="Marcus Licinius Crassus"/>
+					<person name="Lucius Cornelius Balbus"/>
+					<person name="Pontius Telesinus"/>
+				</position>
+			</language>
+			<translation>All cosmospolitans, similar to Crassus, Balbus, and Pontius.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Pragmaticis Pecunia, Nervus belli, et Pacis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>For practical men, money is the force of war and peace.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Bancrofti tandem archiepiscopi arcanum.
+					</marginalia_text>
+					<person name="Richard Bancroft"/>
+				</position>
+			</language>
+			<translation>Finally the mystery of archbishop Bancroft.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Syllani temporis messis).
+					</marginalia_text>
+					<person name="Sulla"/>
+				</position>
+			</language>
+			<translation>The harvest of Sulla's time.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Crassus, et Vespasianus Imp. duo peritiss[im]i
+						Oeconomi: de illo, Plutarchus in Crasso: de hoc, Suetonius
+						in Vespatiano.
+					</marginalia_text>
+					<person name="Marcus Licinius Crassus"/>
+					<person name="Vespasian"/>
+					<person name="Plutarch"/>
+				</position>
+			</language>
+			<translation>Crassus and emperor Vespianus, two most skilled in economics: regarding the former, Plutarchus on Crassus; regarding the latter, Suetonius on Vespatianus.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Illa verò Crassi, Pontij, Balbi Exempla quàm pragmatica, et egregia? M. Crassus negebat
+						ullam satis magnam pecuniam esse Ei, qui in Rep. Princeps uellet esse, qui suis fructibus exercitu[m]
+						alere non posset. C[i]c[er]o Io. Offic. Vtinam, inquit C. Pontius Samnis, ad illa tempora Fortuna
+						essem natus, quando Romani
+					</marginalia_text>
+					<person name="Marcus Licinius Crassus"/>
+					<person name="Lucius Cornelius Balbus"/>
+					<person name="Pontius Telesinus"/>
+					<person name="Cicero"/>
+					<book title="De Officiis"/>
+					<emphasis method="pen" text="M. Crassus" type="straight"/>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						coepissent: non essem passus
+						imperare. 2o Offi.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>How pragmatic and distinguished are those examples of Crassus, Pontius, and Balbus? Marcus Crasses denied that there was any big sum of money sufficient for him; he who wished
+			to be prince in the Republic, who could not nourish an army from his income. Cicero, book 1 of 'De Officiis'. If only, said C. Pontius, [leader] of the Samnites, I were born in those times by Fortune,
+			when the Romans had begun [to accept bribes]: I would not have suffered [them] to rule. Book 2 of 'De Officiis'.</translation> <!--JG: Harvey didn't copy Cicero's lines completely, hence a literal translation wouldn't have made sense-->
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Cornelius Balbus apud
+						Velleium; ausus est ingredi Castra hostium; et cum ipso Consule sa[e]pè conferre, Quanti se venderet?
+						Vnde posteà magnus apud Ca[e]sarem, reru[m] Dominu[m]. Vna Ca[e]sarianaru[m] artium. Largitio. 
+					</marginalia_text>
+					<person name="Lucius Cornelius Balbus"/>
+					<person name="Marcus Velleius Paterculus"/>
+					<book title="Roman History"/>
+				</position>
+			</language>
+			<translation>Cornelius Balbius in Velleius; he was prepared to advance into the fort of the enemy to confer often with the consul himself: what price to put on himself?
+			Thereafter he was great before Caesar, the master of things. One skilled in the arts of emperors. Bribery.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="d'Amor" type="straight"/>
+		<underline language="IT" method="pen" text="di Fede" type="straight"/>
+		<underline language="IT" method="pen" text="di Consiglio" type="straight"/>
+		<underline language="IT" method="pen" text="e ingrate" type="straight"/>
+		<underline language="IT" method="pen" text="Per pestilentia" type="straight"/>
+		<underline language="IT" method="pen" text="al mondo nate" type="straight"/>
+		<underline language="IT" method="pen" text="sano intelletto" type="straight"/>
+		<underline language="IT" method="pen" text="il matrimonio" type="straight"/>
+		<underline language="IT" method="pen" text="Socrate" type="straight"/>
+		<underline language="IT" method="pen" text="delle donne" type="straight"/>
+		<underline language="IT" method="pen" text="à suo senno" type="straight"/>
+		<underline language="IT" method="pen" text="dimostriamo la fallacia per non" type="straight"/>
+		<underline language="IT" method="pen" text="doueua maritare ò nò" type="straight"/>
+		<underline language="IT" method="pen" text="la piu honesta &amp; la piu" type="straight"/>
+		<underline language="IT" method="pen" text="prender moglie sua pari" type="straight"/>
+		<underline language="IT" method="pen" text="Ariosto" type="straight"/>
+		<underline language="IT" method="pen" text="senza moglie à" type="straight"/>
+		<underline language="IT" method="pen" text="chi non hà del suo" type="straight"/>
+		<underline language="IT" method="pen" text="Mendicando" type="straight"/>
+		<underline language="IT" method="pen" text="vsa beccar de" type="straight"/>
+		<underline language="IT" method="pen" text="tordo, e quaglia" type="straight"/>
+		<underline language="IT" method="pen" text="Diman fagiani" type="straight"/>
+		<underline language="IT" method="pen" text="dì vuol starne" type="straight"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+			
+		<mark method="pen" name="dash" place="right_margin"/> <!--sapientis-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--ami-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--pos-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--Ario-->
+		<mark language="IT" method="pen" name="plus_sign" place="right_margin" text="chi non hà del suo"/>
+		
+    </annotation>
+</transcription>

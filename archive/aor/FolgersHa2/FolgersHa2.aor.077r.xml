@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.077r.tif" reader="Harvey" signature="[*6[r]]"/>	<!-- ABO 81right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Nulla dies sine apophthegmate: Epigrammate: et
+						dicterio è visceribus Facetiarium.
+					</marginalia_text>
+					<book title="Facetie, motti, et burle di diversi signori et persone private"/>
+				</position>
+			</language>
+			<translation>
+				Not one day without aphorisms, epigrams, and a joke taken from the heart of the Facetie. 
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EL">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						τὸ γρῖφον.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The riddle.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Quicquid est in deo, est deus. quicquid in uiro, vir.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Whatever is in God, is God; whatever is in man, is man.
+			</translation>
+		</marginalia>
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.077r_0001" marginalia_continues_from="Ha2.076v_0001" marginalia_from_transcription="Ha2.076v.xml">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						[[*5[v]]: Mens cuiusq[ue], is est quisq[ue]. Animus est omnia.
+						Epictetus est duo verba, ἀνέχου, καὶ ἀπέχου: Seneca, duo,] Tranquillitas, et Constantia: Lipsius, tria, Tranq[uillitas], Const[antia], et Pietas.
+						<!-- Continues from facing page, tail, Ha2.076v -->
+					</marginalia_text>
+					<person name="Lipsius"/> 
+				</position>
+			</language>
+			<translation>
+				[[*5[v]]: Anyone's mind can be anything. The intellect is all things.
+				There are the two words of Epictetus: be patient and desist.
+				Seneca, in two.] Tranquillity and Constancy. Lipsius, in three words: Tranquillity, Constancy, and Piety.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Plenior vitalium, animaliumq[ue] spirituum Eutrapelus, quàm ullus
+						adhuc alius.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+					<emphasis method="pen" text="vitalium" type="straight"/>
+					<emphasis method="pen" text="animaliumq[ue] spirituum" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Eutrapelus is more full of vital energies and animal spirits, more than anyone else up till now.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Dict[um], et ictum: imò, ictum, et dictum: Entelechissimi apophthegma, ex arcanis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The saying and the blow, or rather, the blow and the saying: the aphorism of a most practical man from hidden things.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Occulta philosophia adamantini ingenij, et fatalis spiculi.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="EL">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						τὸ γρῖφον.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The occult philosophy of an adamantine character and of a fatal sting. The riddle.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Ludus, iocusq[ue], ipse Ca[e]sar Borgia: pra[e] huius rabie.
+					</marginalia_text>
+					<person name="Cesare Borgia"/>
+				</position>
+			</language>
+			<translation>
+				A game and a joke, Caesar Borgia himself, before his madness.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="dal Franzese" type="straight"/>
+		<underline language="IT" method="pen" text="dallo Spagnuolo" type="straight"/>
+		<underline language="IT" method="pen" text="dall' Italiano, per" type="straight"/>
+		<underline language="IT" method="pen" text="cui d'vna in vn' altra lingua" type="straight"/>
+		<underline language="IT" method="pen" text="aggiugnendo qualche parola" type="straight"/>
+		<underline language="IT" method="pen" text="mischiato il mio con quello dell'autore" type="straight"/>
+		<underline language="IT" method="pen" text="Nè per" type="straight"/>
+		<underline language="IT" method="pen" text="cambiato il nome d'alcuno" type="straight"/>	
+		<underline language="IT" method="pen" text="piacenza, ò dispiacanza di questo" type="straight"/>
+		<underline language="IT" method="pen" text="sempre seguiti gli autori piu pregia" type="straight"/>
+		<underline language="IT" method="pen" text="sopra la medesima" type="straight"/>
+		<underline language="IT" method="pen" text="qualche diuersità &amp; discordanza" type="straight"/>
+		<underline language="IT" method="pen" text="vn caso medesimo" type="straight"/>
+		<underline language="IT" method="pen" text="vscito da piu bocche" type="straight"/>
+		<underline language="LA" method="pen" text="quod non dictum sit prius" type="straight"/>
+		<underline language="IT" method="pen" text="simili considerationi" type="straight"/>
+		<underline language="IT" method="pen" text="diuersità, ò discordanze sì fatte, non gettano" type="straight"/>
+		<underline language="IT" method="pen" text="con nuoua inuentione, hò" type="straight"/>
+		<underline language="IT" method="pen" text="aggiugner' alcuni bei versi d'eccellenti Poeti" type="straight"/>
+		<underline language="IT" method="pen" text="Italiani" type="straight"/>
+		<underline language="IT" method="pen" text="quelli d'ottimi autori" type="straight"/>
+		
+		<underline language="LA" method="chalk" text="quod non dictum sit prius" type="straight"/>
+		<underline language="IT" method="chalk" text="aggiugner' alcuni bei versi d'eccellenti Poeti" type="straight"/>
+		
+		<symbol name="Sun" place="left_margin"/>
+		<symbol name="SS" place="right_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--hab-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--quel-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--pregia-->
+		<mark method="pen" name="plus_sign" place="right_margin"/>
+		
+    </annotation>
+</transcription>

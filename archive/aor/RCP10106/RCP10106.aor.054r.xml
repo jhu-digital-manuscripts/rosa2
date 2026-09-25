@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.054r.tif" pagination="107" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Confirmatur autem eam esse arte[m] breuiter" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quod rhetorica sit Ars.</marginalia_text>
+                </position>
+            </language>
+            <translation>That rhetoric is art.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="artem co[n]stare" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ars quid ...</marginalia_text>
+                </position>
+            </language>
+            <translation>What art...</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="si est ars dialectice" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dialectica est Ars.</marginalia_text>
+                </position>
+            </language>
+            <translation>Dialetic is art.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="artium aliae positae in inspectione, id est, cognitione &amp; aestimatione rerum, qualis est astrologia nullum exigens actum, sed ipso rei             cuius studium habet, intellectu contenta, quae θεωρητικὴ uocatur: Aliae in age[n]do, quarum in hoc finis est, &amp; ipso actu perficitur, nihil'q[ue] post actum operis relinquit,             quae Practice dicitur, qualis est salatio: Aliae in effectu, quae operis, quod oculis subijcitur, con[n]summatione fine[m] accipiu[n]t qua[m] Poëticen appellamus, qualis             est pictura ferè: iudicandu[m] est, rhetoricen in actu co[n]sistere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Artiu[m] alia[e] in { Inspectione vt astrolo[logia]. agendo. Saltatio. Rhetorica. Effectu. Pictura.</marginalia_text>
+                </position>
+            </language>
+            <translation>Some arts are { examination such as astronomy. Action. Dancing. Rhetoric. Effect. Painting.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quod non artis, sed hominis est uitium" type="straight"/>
+        <underline language="LA" method="pen" text="nihil no[n]" type="straight"/>
+        <underline language="LA" method="pen" text="inartificialiter" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="tail" type="florilegium"/>
+        
+    </annotation>
+</transcription>

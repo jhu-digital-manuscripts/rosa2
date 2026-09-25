@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.079v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="auream galeam" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Galea aurea.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Golden helmet.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Caliburno gladio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Caliburn
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Caliburn.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="auream galeam simulacro draconis" type="straight"/>
+        <underline language="LA" method="pen" text="insculptam capiti" type="straight"/>
+        <underline language="LA" method="pen" text="PriWen" type="straight"/>
+        <underline language="LA" method="pen" text="Caliburno gladio optimo" type="straight"/>
+        <underline language="LA" method="pen" text="Auallonis" type="straight"/>
+        <underline language="LA" method="pen" text="fabricato" type="double"/>
+        
+        
+    </annotation>
+</transcription>

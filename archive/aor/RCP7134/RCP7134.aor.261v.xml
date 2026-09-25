@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.261v.tif" pagination="[254v]" reader="John Dee" signature="[SS ij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="uia combusta" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>via combusta.</marginalia_text>
+                </position>
+            </language>
+            <translation>The burned road.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ptolemaeus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>De Ptoloma[e]i quadripartito.</marginalia_text>
+                    <person name="Ptolemy"/>
+                    <book title="Liber quadripartiti Ptolomaei"/>
+                </position>
+            </language>
+            <translation>On Ptolemy's 'Quadripartitum'.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Quando dominus ascendentis fuerit in uia combusta, natus confusus erit in negotijs" type="straight"/>
+        <underline language="LA" method="pen" text="radices artis posuit" type="straight"/>
+        
+    </annotation>
+</transcription>

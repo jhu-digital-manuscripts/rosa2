@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.126v.tif" pagination="238" reader="John Dee" signature="[v.v.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Saba" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Saba Scheba &lt;</marginalia_text> 
+                    <location name="Sheba"/>
+                    <location name="Saba"/>
+                </position>
+            </language>
+            <translation>Saba, Sheba &lt;</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vicinas sedes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vicina[e] sedes</marginalia_text>
+                </position>
+            </language>
+            <translation>Neighbouring settlements.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Schaba" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Shaba.</marginalia_text>
+                    <location name="Saba"/>
+                </position>
+            </language>
+            <translation>Saba.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sabaei; Schabaei" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Saba[e]i. Schaba[e]i.</marginalia_text>
+                    <location name="Sheba"/>
+                </position>
+            </language>
+            <translation>Sabaeans, Shabaeans.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Chus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Chu[s]</marginalia_text>   <!-- DO: End of the word is not visible -->
+                    <person name="Cush"/>
+                </position>
+            </language>
+            <translation>Cush.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>in</marginalia_text>
+                </position>
+            </language>
+            <translation>In.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Saba" type="straight"/>
+        <underline language="LA" method="pen" text="qui Saba" type="straight"/>
+        <underline language="LA" method="pen" text="per schin" type="straight"/>
+        <underline language="LA" method="pen" text="decimus Iectan" type="straight"/>
+        <underline language="LA" method="pen" text="per Samech" type="straight"/>
+        <underline language="LA" method="pen" text="ad vtraque maria porrectis gentibus habitent" type="straight"/>
+        <underline language="LA" method="pen" text="vicinas sedes" type="double"/>
+        <underline language="LA" method="pen" text="Syriacum &amp; Ægyptiacum" type="straight"/>
+        <underline language="LA" method="pen" text="Saba autem" type="straight"/>
+        <underline language="LA" method="pen" text="sinum" type="straight"/>
+        <underline language="LA" method="pen" text="Schaba" type="straight"/>
+        <underline language="LA" method="pen" text="sinum Persicum" type="straight"/>
+        <underline language="LA" method="pen" text="Schabaei" type="straight"/>
+        <underline language="LA" method="pen" text="Ægypto" type="straight"/>
+        <underline language="LA" method="pen" text="Chus" type="straight"/>
+        <underline language="LA" method="pen" text="Saba" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; sinu Heroopolitico" type="straight"/>
+        <underline language="LA" method="pen" text="Schabaei" type="straight"/>
+        <underline language="LA" method="pen" text="oportet" type="straight"/>
+        <underline language="LA" method="pen" text="Propheta Sabaim, id est Sabaeos viros mensurae, id est" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/>  <!-- Saba per -->
+        <mark method="pen" name="bracket" place="intext"/>  <!-- primogenitus -->  <!-- DO: Hebrew word -->
+        <mark method="pen" name="circumflex" place="intext"/>
+        
+    </annotation>
+</transcription>

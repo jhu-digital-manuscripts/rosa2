@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.341v.tif" pagination="232" reader="John Dee" signature="[Vvv ij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Robertus cognome[n]to Bacun" hand="Italian">   
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Rogerius, fortè aliqui putaret   
+                    </marginalia_text>
+                    <person name="Roger Bacon"/>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        sed spe post istos annos diu sup[er]vixit et [..ta] erat      <!-- DO: My only guess at the missing words would be 'ni verita' as in '(he) was not respected' but why would it be feminine? Could it refer to 'spe'? -->
+                    </marginalia_text>
+                    <emphasis method="pen" text="sed" type="straight"/>
+                    <emphasis method="pen" text="istos" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                Roger Bacon, perhaps someone thought, but lived on hope for all these years and [...].
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Robertus" type="dotted"/>
+        
+    </annotation>
+</transcription>

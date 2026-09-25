@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.063v.tif" pagination="[56v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Dispositores" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dispositores qui,</marginalia_text>
+                </position>
+            </language>
+            <translation>The disposers, who.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>At distingue de ip[s]ius aspectus spe[cat]: s[cili]c[et] an □ uel △ uel ☍.</marginalia_text> <!--JG: Unsure abt 'spectat'-->
+                    <symbol_in_text name="Square"/>
+                    <symbol_in_text name="Trine"/>
+                    <symbol_in_text name="Opposite_planets"/>
+                </position>
+            </language>
+            <translation>But distinguish of their own aspect [...]: of course whether a square, trine, or opposition.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Si locum promissoris, non promissorem, qui ab initio est geniturae tempore, nihil iuuant" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Promissor genitur[a]e tempore durat, et ipse co[n]sideran[n]d[us].</marginalia_text> 
+                </position>
+            </language>
+            <translation>The promisor endures by the time of a geniture, and he himself must be considered.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fixae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Fixa[e].</marginalia_text>
+                </position>
+            </language>
+            <translation>Fixed.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tot autem annis ac mensibus serius, quotus est numerus patrium correspondentiu[m] partibus latitudinis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cur anni numerare[n]tur secundum partes latitudinis.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Why the years are enumerated according to the parts of the latitude.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fixae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Vide ha[e]c alio modo in a[e]ditio[n]e 1543.</marginalia_text>
+                </position>
+            </language>
+            <translation>See these things in another manner in the 1543 edition.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="uideantur, tunc si debile" type="straight"/>
+        <underline language="LA" method="pen" text="Saturnus occisor ex Leone" type="straight"/>
+        <underline language="LA" method="pen" text="senis praepotentis" type="straight"/>
+        <underline language="LA" method="pen" text="seu domini locorum significatoru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="promissis" type="straight"/>
+        <underline language="LA" method="pen" text="abscisionibus" type="straight"/>
+        <underline language="LA" method="pen" text="si locu[m] significatoris" type="straight"/>
+        <underline language="LA" method="pen" text="aspiciant" type="straight"/>
+        <underline language="LA" method="pen" text="significatum, ipsum augent" type="straight"/>
+        <underline language="LA" method="pen" text="planetae iuua[n]t, si boni sint, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="promissoris ab initio" type="straight"/>
+        <underline language="LA" method="pen" text="directionis effectum ad finem perducet" type="straight"/>
+        <underline language="LA" method="pen" text="coniunguntur, fortunam cu[m] ipso tempore planetae iungunt, sic" type="straight"/>
+        <underline language="LA" method="pen" text="tot autem annis ac mensibus serius, quotus est numerus partium correspondentiu[m] partibus latitudinis" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="intext" text="qualecunq[ue] sit significatum)"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- Significator per --> 
+        <mark method="pen" name="comma" place="intext"/> <!-- directionis minuit -->
+        <mark method="pen" name="section_sign" place="intext"/>
+        <mark language="LA" method="pen" name="bracket" place="intext" text="ab initio existenti,"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- significatoris ascendens -->
+        <mark method="pen" name="comma" place="intext"/> <!-- ascendens uel -->
+        
+    </annotation>
+</transcription>

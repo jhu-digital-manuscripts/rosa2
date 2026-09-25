@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.294v.tif" pagination="40" reader="John Dee" signature="[Cc.iiii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="è philosophorum choro sustilisti" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>è philosophoru[m] choro tollere.</marginalia_text>
+                </position>
+            </language>
+            <translation>To expel from the chorus of philosophers.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="de caetero" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>de c[a]etero</marginalia_text>
+                </position>
+            </language>
+            <translation>Regarding the rest.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="illa perdiscere ludus esset" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>illa p[er]discere ludus esset %</marginalia_text>
+                </position>
+            </language>
+            <translation>To study these things may be child's play.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ad haec" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>ad hec.</marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>as co[n]cerning these things</marginalia_text> 
+                </position>
+            </language>
+            <translation>As concerning these things.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="honesta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Honesta.</marginalia_text>
+                </position>
+            </language>
+            <translation>Moral integrity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="per se esset &amp; virtus &amp; cognitio reru[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>virtus no[n] p[er] se expete[n]da, nec rerum cognitio</marginalia_text>
+                </position>
+            </language>
+            <translation>Virtue must not be desired in itself, nor is the knowledge of things.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="non satis politus his artibus, quas qui tene[n]t, eruditi appella[n]tur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Artibus politi, Eruditi</marginalia_text>
+                </position>
+            </language>
+            <translation>Those polished in the arts, the learned.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="disserendi artem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dissere[n]di Ars.</marginalia_text>
+                </position>
+            </language>
+            <translation>The art of discussion.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristippus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aristippus</marginalia_text>
+                    <person name="Aristippus"/>
+                </position>
+            </language>
+            <translation>Aristippus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dicas quid non probes eius à quo dissentias" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dic quid no[n] probes eius priusq[uam] dissentias.</marginalia_text>
+                </position>
+            </language>
+            <translation>'Say which of his ideas you don't approve of before' [Loeb 40, 31].</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="reprehensiones; disputa[n]do pertinaces" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Reprehensio et Pertinacia in disput.</marginalia_text>
+                </position>
+            </language>
+            <translation>Criticism and obstinacy in dispute.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Democriti errata ab Epicuro reprehe[n]sa &amp; correcta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Democriti errata ab Epicuro reprehensa et correcta.</marginalia_text>
+                    <person name="Democritus"/>
+                    <person name="Epicurus"/>
+                </position>
+            </language>
+            <translation>The errors of Democritus reprimanded and corrected by Epicurus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="oratione perpetua" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>O[rati]o perpetua.</marginalia_text>
+                </position>
+            </language>
+            <translation>Continuous oration.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quid sit extremum, quid vltimum bonorum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>O[mn]i[u]m Bonoru[m] extremu[m] quid sit.</marginalia_text>
+                </position>
+            </language>
+            <translation>What may be the end of all good things.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="natura incorrupte atque integre iudicante" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Natura incorruptè et integrè iudicat.</marginalia_text>
+                </position>
+            </language>
+            <translation>Nature judges in an unbiased and genuine way.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Maniefeste vera.</marginalia_text>  
+                </position>
+            </language>
+            <translation>Apparent truths.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="animaduersione[m] atque admonitionem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Animaduersio
+                        Admonitio. ]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                An observation. A reminder. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="voluptate[m] &amp; dolore[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        voluptas
+                        Dolor.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Pleasure. Grief.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="si mihi probabis ea quae dice" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Si mihi probabis ea qu[a]e dices.
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        yf ye will proue me those things you say.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>If you will prove to me those things you say.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sed multitudine[m] hoc maxime allicit" type="straight"/>
+        <underline language="LA" method="pen" text="totam rationem euerti" type="straight"/>
+        <underline language="LA" method="pen" text="de caetero" type="straight"/>
+        <underline language="LA" method="pen" text="ipse doctrinis fuisset instructior" type="straight"/>
+        <underline language="LA" method="pen" text="non satis politus his artibus, quas qui tene[n]t, eruditi appella[n]tur" type="straight"/>
+        <underline language="LA" method="pen" text="Triarius leniter arride[n]s" type="straight"/>
+        <underline language="LA" method="pen" text="totum Epicurum penè è philosophorum choro sustulisti" type="straight"/>
+        <underline language="LA" method="pen" text="in iis corrigere voluit, deteriora" type="straight"/>
+        <underline language="LA" method="pen" text="detractis de homine sensibus" type="straight"/>
+        <underline language="LA" method="pen" text="ô Triari nullo pacto potest, vt non dicas quid non probes eius" type="straight"/>
+        <underline language="LA" method="pen" text="dissentias" type="straight"/>
+        <underline language="LA" method="pen" text="illa perdiscere ludus esset" type="straight"/>
+        <underline language="LA" method="pen" text="sunt vituperandae: maledicta, contumeliae, tum iracundiae, contentiones, concertationésque in disputa[n]do pertinaces, indignae philosophia mihi videri solent" type="straight"/>
+        <underline language="LA" method="pen" text="neque enim disputari sine reprehensione, nec cum iracundia aut pertinacia recte disputari potest: sed ad haec, nisi molestu[m] est, habeo quae" type="straight"/>
+        <underline language="LA" method="pen" text="Democriti errata ab Epicuro reprehe[n]sa &amp; correcta" type="straight"/>
+        <underline language="LA" method="pen" text="tibíque, si mihi probabis ea quae dices, libe[n]ter assentiar" type="straight"/>
+        <underline language="LA" method="pen" text="malo quàm" type="straight"/>
+        <underline language="LA" method="pen" text="non quo ignorare vos arbitrer, sed vt ratione &amp; via procedat" type="straight"/>
+        <underline language="LA" method="pen" text="dolorem aspernari" type="straight"/>
+        <underline language="LA" method="pen" text="possit à se repellere" type="straight"/>
+        <underline language="LA" method="pen" text="nondum deprauatum" type="straight"/>
+        <underline language="LA" method="pen" text="exquisitis rationibus" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; quasi inuoluta aperiri, altera pro[m]pta &amp; aperta indicari" type="straight"/>
+        <underline language="LA" method="pen" text="naturalem atque insita[m] in animis nostris inesse notionem, vt" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Asterisk" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Unidentified" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Unidentified" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Unidentified" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="head" text="è philosophoru[m] choro tollere"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="est_mark" place="head"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        <mark method="pen" name="circumflex" place="head"/>
+        
+    </annotation>
+</transcription>

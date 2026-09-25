@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.186v.tif" pagination="372" reader="John Dee" signature="[A 2[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="repertae sunt similitudines" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Similitudines ad duo inventa.</marginalia_text>
+                </position>
+            </language>
+            <translation>Two [types] of similes invented.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="terram cultu, sic animum disciplinis meliore[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Terra. &amp; anim[us]</marginalia_text>
+                </position>
+            </language>
+            <translation>Soil and mind.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quod illustrandae alterius rei gratia assumitur, ipsum esse clarius eo, quod illuminat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Quod illustranda[e] alterius rei gr[ati]a sumitur ip[su]m eße clarius eo quod illuminat debet.</marginalia_text>
+                </position>
+            </language>
+            <translation>What is selected to illustrate something else needs to be clearer than the thing it illustrates.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Ad se refert quisq[ue] quae audit, &amp; id facilimè accipiunt animi, quod cognoscu[n]t. Praeclare" type="straight"/>
+        <underline language="LA" method="pen" text="aut obscurum" type="straight"/>
+        <underline language="LA" method="pen" text="aut ignotum" type="straight"/>
+        <underline language="LA" method="pen" text="clarius eo, quod illuminat" type="straight"/>
+        <underline language="LA" method="pen" text="Non idem decebit oratorem, ut occultis aperta demonstret" type="straight"/>
+        <underline language="LA" method="pen" text="ornat orationem, facit'q[ue] sublimem, floridam, iucundam, mirabilem" type="straight"/>
+        
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">4</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing anchor_text="Quod illustranda[e] alterius rei gr[ati]a sumitur ip[su]m eße clarius eo quod illuminat debet" book_orientation="0" method="pen" place="tail" type="manicule"/>
+        
+    </annotation>
+</transcription>

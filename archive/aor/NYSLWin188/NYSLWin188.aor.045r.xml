@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.045r.tif" pagination="45" reader="John Dee" signature="M"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Grandines" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Grandines</marginalia_text>
+                </position>
+            </language>
+            <translation>Hail stones.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Germmae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Gemma[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Precious stones.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="Mertzen" type="straight"/>
+        <underline language="DE" method="pen" text="außgang der Schnee" type="straight"/>
+        <underline language="LA" method="pen" text="Gemmae" type="straight"/>
+        <underline language="DE" method="pen" text="Grandines" type="straight"/>
+        <underline language="DE" method="pen" text="Wintherstern geacht" type="straight"/>
+        <underline language="DE" method="pen" text="sie mehr im Sommer kommen" type="straight"/>
+        <underline language="DE" method="pen" text="geberung vnd" type="straight"/>
+        <underline language="DE" method="pen" text="aller hitze" type="straight"/>
+        <underline language="DE" method="pen" text="die kälte wie" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

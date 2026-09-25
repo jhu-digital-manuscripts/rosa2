@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.399v.tif" pagination="250" reader="John Dee" signature="[Qq.v.[v]]"/>   
+    <annotation>
+        
+        <marginalia anchor_text="Eudemi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Eudemus
+                    </marginalia_text>
+                    <person name="Eudemus of Rhodes"/>
+                </position>
+            </language>
+            <translation>
+                Eudemus of Rhodes.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="domu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Domus n[ost]ra
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Our house.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sophoclem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Sophocles
+                    </marginalia_text>
+                    <person name="Sophocles"/>
+                </position>
+            </language>
+            <translation>
+                Sophocles.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Fabii, Gellii" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Fabij, Gelij.
+                    </marginalia_text>
+                    <person name="Quintus Fabius Pictor"/>
+                    <person name="Gnaeus Gellius"/>
+                </position>
+            </language>
+            <translation>
+                Quintus Fabius Pictor, Gnaeus Gellius.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ludi votiui ... instauratiui" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Ludi votiui. instauratiui
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Great votiv games, renewed.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="praesultorem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Pra[e]sultor
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Dancer.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="C. vero Gracchus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        C. Gracchus
+                    </marginalia_text>
+                    <person name="Gaius Gracchus"/>
+                </position>
+            </language>
+            <translation>
+                Gaius Gracchus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Simonide" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Simonides
+                    </marginalia_text>
+                    <person name="Simonides of Ceos"/>
+                </position>
+            </language>
+            <translation>
+                Simonides of Ceos.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="duo Arcades" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Duo Arcades
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Two friends of Arcadia.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sallustius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Sallusttius
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Sallustius.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="arctè &amp; dormitare" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        arcte &amp; grauiter dormitare.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To fall into deep and tight sleep.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Eudemmi è corpore excesserit, tum domu[m] reuertisse" type="straight"/>
+        <underline language="LA" method="pen" text="instauratiui" type="straight"/>
+        <underline language="LA" method="pen" text="ab eo quem sepultura affecerat" type="straight"/>
+        <underline language="LA" method="pen" text="cauponem" type="straight"/>
+        <underline language="LA" method="pen" text="ad hospitem" type="straight"/>
+        <underline language="LA" method="pen" text="plaustrum" type="straight"/>
+        <underline language="LA" method="pen" text="bubulco" type="straight"/>
+        <underline language="LA" method="pen" text="Sallustius" type="straight"/>
+        <underline language="LA" method="pen" text="gloriosa, patriae calamitosa" type="straight"/>
+        <underline language="LA" method="pen" text="denique arctè &amp; grauiter dormitare" type="straight"/>
+        <underline language="LA" method="pen" text="in locis solis" type="straight"/>
+        
+        <symbol name="Unidentified" place="left_margin"/>
+        <symbol name="Unidentified" place="left_margin"/>
+        <symbol name="Unidentified" place="left_margin"/>
+        <symbol name="Jupiter" place="tail"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        
+        <drawing anchor_text="Domus n[ost]ra" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="Ludi votui, instauratiui" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="Pra[e]sultor" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+         
+    </annotation>
+</transcription>

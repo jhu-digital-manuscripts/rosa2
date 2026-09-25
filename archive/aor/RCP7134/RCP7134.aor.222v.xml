@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.222v.tif" pagination="[215v]" reader="John Dee" signature="[HH iij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>De morbis.</marginalia_text>
+                </position>
+            </language>
+            <translation>On diseases.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="coniu[n]ctiones luminariu[m], praecede[n]tes morbi initia" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>☌ ☾ ☉ morbos pra[e]cedens.</marginalia_text>
+                    <symbol_in_text name="Conjunction"/>
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Sun"/>
+                </position>
+            </language>
+            <translation>The conjunction of the Moon and the Sun precedes diseases.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Maius est discrimen inter Ptolemaei praecepta, &amp; omniu[m] reliquorum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ptolom[a]ei laus.</marginalia_text>
+                    <person name="Ptolemy"/>
+                </position>
+            </language>
+            <translation>Praise for Ptolemy.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="existentes, ad malos deferuntur" type="straight"/>
+        <underline language="LA" method="pen" text="scripta mira[n]da multorum seculoru[m]" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

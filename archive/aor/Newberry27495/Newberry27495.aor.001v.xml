@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.001v.tif" reader="Harvey" signature="[Aiii[v]]"/>
+    <annotation>
+        <marginalia anchor_text="Castilio the maker, whan he was in this realme to be installed knight of the Order for the Duke his Maister" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Castilio installid knight off the order, for the Duke his master.</marginalia_text>
+                    <person name="Castiglione"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="The honour and entertainment that your noble Auncestours shewed Castilio the maker, whan he was in this realme to be installed knight of the Order for the Duke his Maister, was not so muche as presently both he, and this his handywoorke shall receiue of you" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="chalk" name="hash" place="right_margin"/> <!--JG: Not sure about this mark-->
+        
+        <mark method="pen" name="comma" place="intext"/> <!--Order for-->
+        
+        
+    </annotation>
+</transcription>

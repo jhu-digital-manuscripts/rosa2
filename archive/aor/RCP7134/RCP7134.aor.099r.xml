@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.099r.tif" pagination="92" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="per damnationem" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Damnatio, vt hic capitur.</marginalia_text>
+                </position>
+            </language>
+            <translation>Damnation, as it is captured here.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Et scias, quod non negatur transitus de geniture ad mensem, uel ad diem, sine anno, &amp; ita in reliquis, cum damnatio fuerit ualida, aliter non" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Transitus alioq[ui] ordine profligato, no[n] admitteretur //.</marginalia_text>
+                </position>
+            </language>
+            <translation>In some respects the crossing to a deprived order was not allowed.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sub terra" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sub terra/.</marginalia_text>
+                </position>
+            </language>
+            <translation>Under the earth.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ille erat in reuolutione anni robustissimus, &amp; ex quartis illa, in qua damnabitur dispositor loci Lunae" type="straight"/>
+        <underline language="LA" method="pen" text="intelligo damnationem ultimam, &amp; non" type="straight"/>
+        <underline language="LA" method="pen" text="cum damnatio fuerit ualida" type="straight"/>
+        <underline language="LA" method="pen" text="quando homo" type="straight"/>
+        <underline language="LA" method="pen" text="praeualea[n]t tertiae" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; fortuna octauae dispositrix, est deterior infortuna non disponente, quantum ad applicationem, quantum uero ad hostiles radios, est contrarium" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/> 
+        <mark method="pen" name="bracket" place="intext"/> 
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.166r.tif" pagination="167" reader="John Dee"/>   
+    <annotation>
+        
+        <marginalia anchor_text="impetus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Impetus.</marginalia_text>
+                </position>
+            </language>
+            <translation>An attack.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dolor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dolor.</marginalia_text>
+                </position>
+            </language>
+            <translation>Anguish.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Temporibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tempus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Time.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ocia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ociu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>Leisure.</translation>   
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Difficiles aditus impetus omnis habet" type="straight"/>
+        <underline language="LA" method="pen" text="Stultus, ab obliquo qui cum discedere possit" type="straight"/>
+        <underline language="LA" method="pen" text="Pugnat in aduersas ire natator aquas" type="straight"/>
+        <underline language="LA" method="pen" text="tractabilis arte" type="straight"/>
+        <underline language="LA" method="pen" text="Quis matrem, nisi mentis inops, in funere nati Flere vetat? non hac illa monenda loco est" type="straight"/>
+        <underline language="LA" method="pen" text="Ille dolor verbis emoderandus erit" type="straight"/>
+        <underline language="LA" method="pen" text="Temporibus medicina valet. data tempore prosunt" type="straight"/>
+        <underline language="LA" method="pen" text="Et data non apto tempore vina nocent" type="straight"/>
+        <underline language="LA" method="pen" text="Fac monitis fugias ocia prima meis" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <numeral language="LA" place="right_margin" text="prima">.1.</numeral> 
+        
+    </annotation>
+</transcription>

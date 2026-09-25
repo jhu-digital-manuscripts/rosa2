@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.269v.tif" pagination="518" reader="John Dee" signature="[IzIzIz.iii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="in suspicionem caderent" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        in suspitione[m] cadere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To fall into suspicion.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Comparatio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Comparison.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="substructiones" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        substructio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Foundation.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tortore" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        tortor
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A torturer.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="eculeo" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        eculeum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A little horse.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Res loquitur Iudices, ipsa, quae semper valet plurimum" type="straight"/>
+        <underline language="LA" method="pen" text="quia no[n] semper viator à latrone, nonnunquam etiam latro à viatore occiditur: quia" type="straight"/>
+        <underline language="LA" method="pen" text="Martémque comune[m]: qui" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="scroll">
+            <text hand="English_secretary" language="LA">à loco</text>
+            <translation>From a place</translation>
+        </drawing>
+        
+        
+    </annotation>
+</transcription>

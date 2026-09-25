@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.163r.tif" pagination="325" reader="John Dee" signature="x 3"/> 
+    <annotation>
+        
+        <marginalia anchor_text="pro Vareno" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Vareno</marginalia_text>
+                    <book title="Pro Vareno"/>
+                </position>
+            </language>
+            <translation>Pro Vareno.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="furandi causa paupertas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Fura[n]di caußa paupertas.</marginalia_text>
+                </position>
+            </language>
+            <translation>Poverty is a motive for stealing.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sperare" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Spes.</marginalia_text>
+                </position>
+            </language>
+            <translation>Hope.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Milone" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Milone.</marginalia_text>
+                    <book title="Pro Milone"/>
+                </position>
+            </language>
+            <translation>Pro Milone</translation>
+        </marginalia>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

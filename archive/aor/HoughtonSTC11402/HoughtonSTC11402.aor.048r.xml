@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.048r.tif" reader="Harvey" signature="F[ir]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Medusa[e] caput.</marginalia_text>
+                    <person name="Medusa"/>
+                </position>
+            </language>
+            <translation>The head of Medusa.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="elephantes" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Elephantes.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="fyre" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pyromachia.</marginalia_text>
+                </position>
+            </language>
+            <translation>A fire fight.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="oxen; waynes; brondes" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Oxen, w[i]th waynes and in the fyrebrondes.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="souldiours in priestes apparaylle; like furies" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Souldiors in Prists apparrel, lyke Furyes.</marginalia_text>
+                    <emphasis method="pen" text="Prists apparrel" type="straight"/>
+                    <emphasis method="pen" text="lyke Furyes" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>What if now, sum terrible cumpany, thorowghly accomplished, shoold hideously rush owt vpon three enemyes
+                        in good order, like Diuels vpon A stage, or much more horribly? Sum on egregious exploit, might so be acheuid.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="with elephantes" type="straight"/>
+        <underline language="EN" method="pen" text="the same policy ageinst" type="straight"/>
+        <underline language="EN" method="pen" text="Volsciens" type="straight"/>
+        <underline language="EN" method="pen" text="tentes nere vnto" type="straight"/>
+        <underline language="EN" method="pen" text="fyre on all that wolde bourne, euen vnto his ennemies " type="straight"/>
+        <underline language="EN" method="pen" text="tentes, and brent" type="straight"/>
+        <underline language="EN" method="pen" text="sette oxen in their" type="straight"/>
+        <underline language="EN" method="pen" text="waynes layd" type="straight"/>
+        <underline language="EN" method="pen" text="they brondes apt to" type="straight"/>
+        <underline language="EN" method="pen" text="with drie styckes, myngled" type="straight"/>
+        <underline language="EN" method="pen" text="with brymstone, and" type="straight"/>
+        <underline language="EN" method="pen" text="those thynges a fyre, dryuyng" type="straight"/>
+        <underline language="EN" method="pen" text="the oxen vpon their ennemies" type="straight"/>
+        <underline language="EN" method="pen" text="in priestes apparaylle" type="straight"/>
+        <underline language="EN" method="pen" text="fyrebrandes" type="straight"/>
+        <underline language="EN" method="pen" text="serpentes" type="straight"/>
+        <underline language="EN" method="pen" text="like furies" type="straight"/>
+        <underline language="EN" method="pen" text="helle" type="straight"/>
+        <underline language="EN" method="pen" text="troubled and" type="straight"/>
+        
+        <symbol language="LA" name="SS" place="head" text="Medusa[e] caput."/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="the oxen vpon their ennemies"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="in priestes apparaylle"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="fyre"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="styckes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="brymstone"/>
+        <mark method="pen" name="dot" place="intext"/> <!--brymstone, and-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="furies"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="tail" text="troubled"/>
+        
+    </annotation>
+</transcription>

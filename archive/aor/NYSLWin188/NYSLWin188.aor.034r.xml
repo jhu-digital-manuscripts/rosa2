@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.034r.tif" pagination="34" reader="John Dee" signature="Jij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="so ist es ein Wasser Erdtbidmen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aqua[e] tremor perinde vt Terra[e] Motus</marginalia_text>
+                </position>
+            </language>
+            <translation>The trembling of water, just as earthquakes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Dann alles was geboren wird das muß verzert werden vnd hat ein ende" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Rebus omnibus est terminus p[re]scriptus</marginalia_text> 
+                </position>
+            </language>
+            <translation>For all matter, the end is prescribed.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="das die Erden an jr selbst Ventos nicht gibt allein was die Windt hinein treiben" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ex terra nulli oriuntur ve[n]ti originaliter.</marginalia_text>
+                </position>
+            </language>
+            <translation>Originally no winds arise from the earth.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="der da gewalt hat alle Stein vnd Metallen durch zugehen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Metalla penetra[n]t venti.</marginalia_text>
+                </position>
+            </language>
+            <translation>Winds penetrate metals.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="Wasser" type="straight"/>
+        <underline language="DE" method="pen" text="Dann alles was geboren wird das muß verzert werden vnd hat ein ende" type="straight"/>
+        <underline language="DE" method="pen" text="den er nit vbergehen mag" type="straight"/>
+        <underline language="DE" method="pen" text="Fulgurisch" type="straight"/>
+        <underline language="DE" method="pen" text="vnd Metallen" type="straight"/>
+        <underline language="DE" method="pen" text="nichts aüßgenommen" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.006v.tif" reader="John Dee" signature="[Avj[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="si[mi]le [et] dissimile" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        simile dissimile
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Similar, dissimilar.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="magis [et] minus" hand="Italian">
+           <language ident="LA">
+               <position book_orientation="0" place="right_margin">
+                   <marginalia_text>
+                       Magis et minus
+                   </marginalia_text>
+               </position>
+           </language>
+            <translation>
+                More and less.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="si[mi]le [et] dissimile [...] equale et inequale" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Simile dissimile a[e]quale Ina[e]quale
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Similar, dissimilar, equal, unequal.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vero exp[re]ssam p[er] se qua[n]titate[m] determina[n]t in p[ro]portio[n]e" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        expressa quantitas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A clear quantity.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Dicit[ur] nanq[uam] o[mn]is p[ro]portio certa relatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        o[mn]is proportio est relatio certa
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Every proportion is certain relation. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="q[ua]dratura circuli" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Quadratura circuli
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Squaring the circle.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="radix nu[m]eri irr[ati]onabilis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Radix numeri irrationalis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A square roots of an irrational number.      
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dyesis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Diesis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Diesis.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        sub duplex
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Under double.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="eode[m] quare si[mi]le [et] dissimile. circu[m]scribu[n]t q[ua]litate[m]. sicut equale et inequale qua[n]titate[m]" type="straight"/>
+        <underline language="LA" method="pen" text="q[uae] vero exp[re]ssam p[er] se qua[n]titate[m] determina[n]t in p[ro]portio[n]e. relatio[n]e vel c[on]patione. nunq[uam] mag[is]              et min[us] suscipiu[n]t. vt duplu[m] dimidij duplu[m] no[n] e[ni]m est aliq[uo]d duplu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Dicit[ur] nanq[uam] o[mn]is p[ro]portio certa relatio" type="straight"/>
+        <underline language="LA" method="pen" text="dicit[ur] semitoniu[m] maius [et] min[us]" type="straight"/>
+        
+        <mark method="pen" name="circumflex" place="intext"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <errata amendedtext="magis" copytext="maius" language="LA"/>
+        
+    </annotation>
+</transcription>

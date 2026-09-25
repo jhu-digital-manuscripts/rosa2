@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.063r.tif" pagination="63" reader="John Dee" signature="Q iij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="ein Sultz" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Muria
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Brine.</translation>
+        </marginalia>
+
+        <marginalia anchor_text="viel Sternen reinigen sich in ander wege" hand="Italian" id="NYSLWin188:00000139:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        stellis; varij sunt modi, quibus sua, reijciu[n]t excreme[n]ta.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Of stars; various are the methods, by which they dispose of their excrements.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="ein schleim" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        star slyme.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>       
+        
+        <underline language="DE" method="pen" text="herab auff die vndern Him[m]el im Lufft" type="straight"/>
+        <underline language="DE" method="pen" text="da wirt es sichtbar" type="straight"/>
+        <underline language="DE" method="pen" text="ein Sultz" type="straight"/>
+        <underline language="DE" method="pen" text="viel Sternen reinigen sich" type="straight"/>
+        <underline id="NYSLWin188:00000139:u0001" language="DE" method="pen" text="in ander wege" type="double"/>
+        <underline language="DE" method="pen" text="also fewrin gehet vnd" type="straight"/>
+        <underline language="DE" method="pen" text="doch fewre" type="double"/>
+        <underline language="DE" method="pen" text="aber vnsichtbar" type="double"/>
+        <underline language="DE" method="pen" text="weiß Sternen" type="double"/>
+        <underline language="DE" method="pen" text="geschoß" type="straight"/>
+        <underline language="DE" method="pen" text="Sternen geworffen" type="double"/>
+        <underline language="DE" method="pen" text="Wulcken bruch" type="double"/>
+        <underline language="DE" method="pen" text="im Schawer" type="straight"/>
+        <underline language="DE" method="pen" text="der Sternen purgatz" type="double"/>
+        <underline language="DE" method="pen" text="zum außtzang" type="double"/>
+        <underline language="DE" method="pen" text="Also sie drincken fewr gehet wider von jnen" type="straight"/>
+        <underline language="DE" method="pen" text="es jrdisch vnd kein fewr" type="double"/>
+        <underline language="DE" method="pen" text="ein sultze" type="double"/>
+        <underline language="DE" method="pen" text="ein schleim" type="double"/>
+        <underline language="DE" method="pen" text="rott farben" type="double"/>
+        <underline language="DE" method="pen" text="geldfarben froßleich" type="double"/>
+        <underline language="DE" method="pen" text="So sollent" type="straight"/>
+        <underline language="DE" method="pen" text="Sultze wie der Stern geschoß" type="double"/>
+        <underline language="DE" method="pen" text="ein harten gestanck" type="double"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        <physical_link>
+            
+            <marginal_annotation idref="NYSLWin188:00000139:m0001"/>
+            <marginal_annotation idref="NYSLWin188:00000139:u0001"/>
+            
+            <relation from="NYSLWin188:00000139:m0001" to="NYSLWin188:00000139:u0001" type="directed"/>
+        </physical_link>
+
+    </annotation>
+</transcription>

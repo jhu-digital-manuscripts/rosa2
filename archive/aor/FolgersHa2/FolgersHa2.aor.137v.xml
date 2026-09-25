@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.137v.tif" pagination="98" reader="Harvey" signature="[Gv]"/>	<!-- ABO 142left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Per se valent Ars, et virtus: per accidens, opulentia,
+						et reputatio.
+						Bona animi, et corporis valent per se: bona fortuna[e],
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						per accidens. 
+						A per
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						se A, virtus per se: olim
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="EL">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						ἀυταρκὴς.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Art and Virtue are valuable in themselves; 
+				wealth and reputation are valuable by chance.
+				The good things of the mind and body are valuable in themselves;
+				the good things of fortune, by chance.
+				A in itself A; virtue in itself. Virtue was once self-sufficient.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Nulla Virtus
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="EL">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						ἀυταρκὴς
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						sine omni Virtute: sed
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						altera indiget alterius;
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						ut ars artis.
+						Virtus per se potest omnia: per accidens, quid no[n]?
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				No virtue is self-sufficient without the whole virtue,
+				but a second virtue needs the other, just as art needs art.
+				Virtue by itself can do anything; by chance, why not?
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Virtus per se, et per accidens Quid non?
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Virtue by itself; and by chance, why not?
+			</translation>
+		</marginalia>
+		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.137v_0001" marginalia_continues_to="Ha2.138r_0001" marginalia_to_transcription="Ha2.138r.xml">
+			<language ident="EN">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						A fine witt, &amp; braue spirit may easely carrie all before him
+						in the Countrie: but in the Court, as he / may. =
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						= Where respect may do more, then brauerie. Euerie Where
+						<!-- Continues onto facing page, left margin, Ha2.138r -->
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Acutezza" type="straight"/>
+		<underline language="IT" method="pen" text="prontezza d'ingegno" type="straight"/>
+		<underline language="IT" method="pen" text="ogni periglio" type="straight"/>
+		<underline language="IT" method="pen" text="La Volpe" type="straight"/>
+		<underline language="IT" method="pen" text="oh buon dì cugino" type="straight"/>
+		<underline language="IT" method="pen" text="le buone nouelle" type="straight"/>
+		<underline language="IT" method="pen" text="ditemi di gratia qual" type="straight"/>
+		<underline language="IT" method="pen" text="mai cosa tanto importante" type="straight"/>
+		<underline language="IT" method="pen" text="conchiusa pace generale fra tutti" type="straight"/>
+		<underline language="IT" method="chalk" text="pace generale fra tutti gli" type="straight"/>
+		<underline language="IT" method="pen" text="piu l'vn l'altro non debbiamo" type="straight"/>
+		<underline language="IT" method="pen" text="scendere" type="straight"/>
+		<underline language="IT" method="pen" text="godiamo insieme" type="straight"/>
+		<underline language="IT" method="pen" text="migliore nuoue per certo" type="straight"/>
+		<underline language="IT" method="pen" text="eccomi à voi" type="straight"/>
+		<underline language="IT" method="pen" text="furia è questa di due veloci cani ch'io veggio" type="straight"/>
+		<underline language="IT" method="chalk" text="questa di due veloci" type="straight"/>
+		<underline language="IT" method="pen" text="credendoselo, si dette subito à" type="straight"/>
+		<underline language="IT" method="pen" text="doue fuggite" type="straight"/>
+		<underline language="IT" method="pen" text="fra tutti gli animali" type="straight"/>
+		<underline language="IT" method="pen" text="quella pace, che voi dite" type="straight"/>
+		<underline language="IT" method="pen" text="ne sieno ancor auuertiti" type="straight"/>
+		<underline language="IT" method="pen" text="seguitò la fuga" type="straight"/>
+		<underline language="IT" method="pen" text="Principi religiosi" type="straight"/>
+		<underline language="IT" method="pen" text="morire" type="straight"/>
+		<underline language="IT" method="pen" text="viuere inhabili alla" type="straight"/>
+		<underline language="IT" method="pen" text="dominatione" type="straight"/>
+		<underline language="IT" method="pen" text="GIOVANNI Augusto imperadore" type="straight"/>
+		<underline language="IT" method="pen" text="vn Ceruio" type="straight"/>
+		<underline language="IT" method="pen" text="ferì per" type="straight"/>
+		<underline language="IT" method="pen" text="disgratia se stesso in vna mano" type="straight"/>
+		
+		<symbol name="Mercury" place="intext"/>
+		
+		<mark method="chalk" name="vertical_bar" place="full_page"/> <!-- red chalk line, goes from top to bottom of the page. -->
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- cu -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- insie -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- dis -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- anima -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- tal -->
+		
+		<mark method="pen" name="dot" place="intext"/> <!--fuggire, donde-->
+
+    </annotation>
+</transcription>

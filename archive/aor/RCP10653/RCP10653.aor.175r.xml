@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.175r.tif" pagination="341" reader="John Dee" signature="Ff iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Eadvvinus." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        filius Ellae 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Eadwinus the son of Ella.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Eadvvinus." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        652 Oiswald[us] filius Oswaldi. 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>[In the year] 652. Oiswaldus the son of Oswald.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ella." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        A[nno]. 560
+                        Obiit a[nno] 593.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>In the year 560. He died in the year 593.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Osricus." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        633
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>[In the year] 633.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Osvvinus." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        645
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>[In the year] 645.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        vide co[n]tra pag[ina] 228. 
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP10653:252" text="pag[ina] 228"/>
+                    </internal_ref>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Deira" type="straight"/>
+        
+    </annotation>
+</transcription>

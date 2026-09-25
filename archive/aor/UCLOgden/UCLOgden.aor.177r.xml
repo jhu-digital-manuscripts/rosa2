@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.177r.tif" pagination="93" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vt dixit hermes aphor.6.
+                    </marginalia_text>
+                    <person name="Hermes Trismegistus"/>
+                    <book title="Centiloquium"/>
+                </position>
+            </language>
+            <translation>
+                As Hermes [Trismegistus] said in Aphorism 6.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="diurnum" type="straight"/>
+        <underline language="LA" method="pen" text="nocturnum" type="straight"/>
+        <underline language="LA" method="pen" text="masculinu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="femininum" type="straight"/>
+        <underline language="LA" method="pen" text="leue" type="straight"/>
+        <underline language="LA" method="pen" text="graue" type="straight"/>
+        <underline language="LA" method="pen" text="septem exaltatio in illo loco esse dicit[ur], in quo substantialiter patitur ab alio contrarium" type="straight"/>
+        <underline language="LA" method="pen" text="Solis in Ariete" type="straight"/>
+        <underline language="LA" method="pen" text="qui Saturni casus est" type="straight"/>
+        <underline language="LA" method="pen" text="enim habet claritate[m], Saturnus tenebrositatem, &amp; ut Iouis in Ca[n]cro, in quo Mars cadit, quorum alter cupit iustitiam" type="straight"/>
+        <underline language="LA" method="pen" text="alter nanq[uam] significat scientiam &amp; philosophiam" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

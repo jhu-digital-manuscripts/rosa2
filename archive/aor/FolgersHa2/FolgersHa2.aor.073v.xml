@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.073v.tif" pagination="flyleaf" reader="Harvey"/>	<!-- ABO 78left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						egregij fatti, et aguti detti di Castruccio, cioè,
+						di Aristippo, Diogene, Bione: onde appare
+						l'arguto, e faceto humore del Macchiauelli.
+						Vita del Esopo.
+					</marginalia_text>
+					<person name="Castruccio Castracani"/>
+					<person name="Aristippus"/>
+					<person name="Diogenes of Sinope"/>
+					<person name="Bion of Smyrna"/>
+					<person name="Machiavelli"/>
+					<person name="Aesop"/>
+					<book title="La vita di Castruccio Castracani"/>
+				</position>
+			</language>
+			<translation>
+				The illustrious facts and clever sayings of Castruccio, that is,
+				of Aristippus, Diogenes of Sinope, Bion of Smyrna: from whom
+				comes the clever and witty humor of Machiavelli. The life of Aesop.				
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						Apophthegmata Hebra[e]oru[m], et Arabum: à
+						Drusio nouissimè collecta. scita, et salsa.
+					</marginalia_text>
+					<person name="Johannes Drusius"/>
+					<book title="Apophthegmata Hebraeorum ac Arabum"/>
+				</position>
+			</language>
+			<translation>
+				Jewish and Arabic aphorisms, collected most recently by Drusius. 
+				Clever and witty.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						{ Maior Natura[e], et Exercitationis
+						 valor, quàm Artis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				There is no greater valor of nature and exercise than that of art.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						{ Sapiens est, qui multa nouit Natura[e] solertiâ:
+						qui autem disciplina vsi fuerunt, uehementes garrulitate
+						velùt Corui, irrita clamant Jouis aduersùs auem
+						diuinam. Pindarus Ode 2. Olympiorum.
+					</marginalia_text>
+					<person name="Pindar"/>
+					<book title="Olympian Odes"/>
+					<emphasis method="pen" text="Natura[e] solertiâ" type="straight"/>
+					<emphasis method="pen" text="disciplina vsi" type="straight"/>
+					<emphasis method="pen" text="uehementes garrulitate" type="straight"/>
+					<emphasis method="pen" text="irrita clamant" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				"The man who knows a great deal by nature is truly skillful, 
+				while those who have only learned chatter with raucous and 
+				indiscriminate tongues in vain like crows against the divine bird of Zeus."
+				  Pindar's second Olympian Ode.
+				  
+				  [Translation from Perseus Project; Diane Arnson Svarlien]
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						Telamoni nunq[uam] timor viroru[m] domitor extinxit
+						fortitudinem animi. Sic ex ingenita virtute illustri
+						quisq[ue] magnum pondus obtinet + At/qui ex disciplina
+						accepit ea qua[e] habet obscurus vir, aliàs alia spirans,
+						nunq[uam] pede exactè stabili incedit, sed infinitas
+						Virtutes insufficienti mente degustat. Idem
+						Idem 3. Nemeorum. { Horatio Dirca[e]us Cygnus.
+					</marginalia_text>
+					<book title="Nemean Odes"/>
+					<emphasis method="pen" text="Telamoni nunq[uam] timor" type="straight"/>
+					<emphasis method="pen" text="fortitudinem animi" type="straight"/>
+					<emphasis method="pen" text="ex ingenita virtute" type="straight"/>
+					<emphasis method="pen" text="magnum pondus obtinet" type="straight"/>
+					<emphasis method="pen" text="ex disciplina" type="straight"/>
+					<emphasis method="pen" text="aliàs alia spirans" type="straight"/>
+					<emphasis method="pen" text="nunq[uam] pede exactè stabili incedit" type="straight"/>
+					<emphasis method="pen" text="infinitas" type="straight"/>
+					<emphasis method="pen" text="Virtutes" type="straight"/>
+					<emphasis method="pen" text="insufficienti mente degustat" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				"And fear, the subduer of men, never dulled the edge of Telamon's mind.
+				A man with inborn glory has great weight; but he who has only learned is a man in darkness, 
+				breathing changeful purposes, never taking an unwavering step, but trying his hand 
+				at countless forms of excellence with his ineffectual thought."
+				  Pindar's third Nemean Ode
+				 (in Horace, he is the Thebean swan).
+				 
+				 [Translation from Perseus Project; Diane Arnson Svarlien]
+			</translation> 
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						Hieron, decerpens summitates ex singulis virtutibus.
+					</marginalia_text>
+					<emphasis method="pen" text="singulis virtutibus" type="straight"/>
+				</position>
+			</language>
+			<language ident="EL">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						δρέπων κορυφὰς  ἀρετᾶν.
+					</marginalia_text>
+					<emphasis method="pen" text="δρέπων κορυφὰς" type="straight"/>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						Ode I. Olymp.
+					</marginalia_text>
+					<book title="Olympian Odes"/>
+				</position>
+			</language>
+			<translation>
+				"Hieron, reaping every excellence at its peak." 
+				"Reaping every excellence at its peak."
+				Pindar's first Olympian Ode.
+				[Translation from Perseus Project; Diane Arnson Svarlien]
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						Omnis Natura pra[e]clarior fit, si conformatio qua[e]dam
+						doctrina[e] accesserit: longè verò maximè ijs, quibus
+						contigit meliorem ab initio sortiri, quàm alijs.
+						Illis enim sese tantùm vincere: his verò alijs etiam
+						pra[e]stare accidit. Demosthenes in Erotica.
+					</marginalia_text>
+					<emphasis method="pen" text="Natura pra[e]clarior" type="straight"/>
+					<emphasis method="pen" text="doctrina[e]" type="straight"/>
+					<emphasis method="pen" text="meliorem ab initio" type="straight"/>
+					<emphasis method="pen" text="enim sese tantù vincere" type="straight"/>
+					<emphasis method="pen" text="verò alijs etiam pra[e]stare" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				"All natural ability is improved by the addition of the appropriate education,
+				and this is especially true of talents which at the outset are inherently superior to the rest, 
+				because the one kind is capable only of improving upon itself while the other may also surpass the rest."
+				The Erotic Essay of Demosthenes.
+				
+				[Translation from Perseus Project; Norman Wentworth DeWitt]
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						Posteri dies, testes sunt sapientissimi. Pind. Ode. I.
+					</marginalia_text>
+					<book title="Olympian Odes"/>
+				</position>
+			</language>
+			<translation>
+				"The days to come are the wisest witnesses."
+				  Pindar's first Olympian Ode.
+				  
+				  [Translation from Perseus Project; Diane Arnson Svarlien]
+			</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="full_page">
+					<marginalia_text>
+						Certè magis est radicale, quod Natura, et Exercitatione infigitur, quàm quod Arte
+						inseritur.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Certainly it is more radical that nature is fixed by practice, rather than grafted on by art.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="full_page">
+					<marginalia_text>
+						Nulla vtilitas est vel vtilissima[e] Artis, sine assidua Exercitatione.
+						R. in Corollario Scholarum Dialecticaru[m].
+					</marginalia_text>
+					<person name="Petrus Ramus"/>
+					<book title="Scholarum dialectarum seu animadversionum in Organum Aristotelis"/>
+				</position>
+			</language>
+			<translation>
+				Even the most useful art is useless without constant practice.
+				R. in the deduction from his Scholarum Dialecticarum. 
+			</translation>
+		</marginalia>
+    </annotation>
+</transcription>

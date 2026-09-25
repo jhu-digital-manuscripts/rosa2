@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.006v.tif" reader="Harvey" signature="[Avii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>In mediocriter, imperfecteq[ue] excellentibus, Minuit pra[e]sentia famam: vt nuper in Sordello, et Piccinino:
+                    (pra[e]sertim cum magna Virtus non cerneretur, sed parua persona): In perfectè autem, potenterq[ue] Excellentibus,
+                   </marginalia_text>
+                    <person name="Sordello"/>
+                    <person name="Nicholas Piccininus"/>
+                    <emphasis method="chalk" type="straight"/>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Superat</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>pra[e]sentia Famam:</marginalia_text>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vt olim in Salomone, et</marginalia_text>
+                    <person name="Solomon"/>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Scipione; cu[m] a peregrinis,</marginalia_text>
+                    <person name="Scipio Africanus"/>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>honoris ergô</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>inuiserent[u]r</marginalia_text> 
+                </position>
+            </language>
+            <translation>In excellent things, presence lessens reputation moderately and incompletely: 
+                as recently in Sordello and Nicholas Piccininus (especially when a great virtue is not distinguished, but an unimportant person [is]). 
+            But in excellent things, presence surpasses reputation completely and powerfully: as once  in Salomon and in Scipio. Since therefore, they are watched over by 
+            strangers of honour.</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Strategems,</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>practicable in the assault, &amp;</marginalia_text>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>defence of Cittyes, Townes, Castles,
+                    forts, [etc]. Notable matter: for Conquerours, Aduenturers, Experimenters of fortunes by Sea, &amp; Lande,
+                    Pirates, [etc] aspiring to new principalityes, or particular bootyes, or hostile reuengments [etc].</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Suddain, &amp; incredible surprizes, with sufficient power, may do much, &amp; peraduenture work woonders.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Virtutis Ducis, Comes fortuna.</marginalia_text>
+                </position>
+            </language>
+            <translation>Fortune, a friend of a leader's virtue.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="90" place="left_margin">
+                    <marginalia_text>In proprijs homines Symphatijs, et Antipathijs facilè capiuntur.</marginalia_text>
+                </position>
+            </language>
+            <translation>Men are easily captured in their own sympathies and antipathies.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="270" place="right_margin">
+                    <marginalia_text>Amoris viâ semper procedendu[m] alacriter: summa Audatia, et Industria. Solus</marginalia_text>
+                </position>
+                <position book_orientation="270" place="tail">
+                    <marginalia_text>fo[e]liciss[imi]s Cursus.</marginalia_text>
+                </position>
+            </language>
+            <translation>On the path of love, one must always proceed briskly: with the greatest boldness and diligence.
+            The only course for the greatest happiness.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="sodeyne assaute" type="straight"/>
+        <underline language="EN" method="pen" text="deceyue" type="straight"/>
+        <underline language="EN" method="pen" text="enmies to treason" type="straight"/>
+        <underline language="EN" method="pen" text="tournyng the course" type="straight"/>
+        <underline language="EN" method="pen" text="of ryuers" type="straight"/>
+        <underline language="EN" method="pen" text="breake oute on that" type="straight"/>
+        <underline language="EN" method="pen" text="are not loked for" type="straight"/>
+        <underline language="EN" method="pen" text="safegarde of the beseged, what diligent" type="straight"/>
+        
+        <mark method="pen" name="horizontal_bar" place="left_margin"/> <!--curved-->
+        
+        <mark method="pen" name="horizontal_bar" place="intext"/> <!--curved-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="sodeyne assaute"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="are not loked for"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/> <!--curved-->
+        
+        <mark language="LA" method="pen" name="plus_sign" place="tail" text="Amoris viâ semper procedendu[m] alacriter: summa Audatia, et Industria. Solus fo[e]liciss[imi]s Cursus."/>
+        
+    </annotation>
+</transcription>

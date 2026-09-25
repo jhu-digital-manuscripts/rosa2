@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.260v.tif" pagination="500" reader="John Dee" signature="[iii.ii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="honorifice[n]tius" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        honorifice[n]tius
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                More honorifically.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quid me attinet dicere?" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        quid me attinet dicere?
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                What concern of mine is it to say.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex hara" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        hara
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Pens.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="exercitum ... conscripserat" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        co[n]scribere exercitu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To conscribe with the army.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        occupatio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Employment.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="si diis placet" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        si dijs placet:
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                If it pleases the gods.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ex hara producte" type="straight"/>
+        <underline language="LA" method="pen" text="vt cum sicario disputabo" type="straight"/>
+        <underline language="LA" method="pen" text="vtrum tu conscientia oppressus scelerum tuoru[m] nihil vnqua[m] ausus sis scribere" type="straight"/>
+        <underline language="LA" method="pen" text="túnc etiam, atque adeò vos geminae voragines" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+    </annotation>
+</transcription>

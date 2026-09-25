@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.044v.tif" pagination="[44[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Grandines; Gemmas " hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Grandines Gemma[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Hail and precious stones.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sommer vnd Winther in allen vier zeiten des jars vnangesehen landts arth natur constellation Mond Windsterne jr Grandines vn[d] Gemmas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nota</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="sondern coagulierte Wasser" type="straight"/>
+        <underline language="DE" method="pen" text="nie Wasser gewesen in jr erste" type="straight"/>
+        <underline language="DE" method="pen" text="Materia" type="straight"/>
+        <underline language="DE" method="pen" text="also geboren" type="straight"/>
+        <underline language="DE" method="pen" text="landts" type="straight"/>
+        <underline language="DE" method="pen" text="natur" type="straight"/>
+        <underline language="DE" method="pen" text="constellation" type="straight"/>
+        <underline language="DE" method="pen" text="Mond" type="straight"/>
+        <underline language="DE" method="pen" text="Windsterne" type="straight"/>
+        <underline language="DE" method="pen" text="zeiten des Schnees" type="straight"/>
+        <underline language="DE" method="pen" text="keinem gemelten" type="straight"/>
+        <underline language="DE" method="pen" text="sie kommen nur Sommers vnd Winters zeiten" type="straight"/>
+        <underline language="DE" method="pen" text="kälte vnd Wind haben" type="straight"/>
+        <underline language="DE" method="pen" text="ander Contariu[m] nicht zustandt" type="straight"/>
+        <underline language="DE" method="pen" text="dann im Sommer oder Winther" type="straight"/>
+        <underline language="DE" method="pen" text="im Aprillen" type="straight"/>
+        
+        <mark language="DE" method="pen" name="vertical_bar" place="left_margin" text="Sommer vnd Winther in allen vier zeiten des jars vnangesehen landts arth natur constellation Mond Windsterne jr Grandines vn[d] Gemmas geben"/>
+        <mark language="DE" method="pen" name="vertical_bar" place="left_margin" text="sie kommen nur Sommers vnd Winters zeiten so sie kälte vnd Wind haben vo[n] jnen selbst vnd das in sonst kein ander Contariu[m] nicht zustandt"/>
+        
+    </annotation>
+</transcription>

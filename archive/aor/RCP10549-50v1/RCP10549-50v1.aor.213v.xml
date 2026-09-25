@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.213v.tif" pagination="406" reader="John Dee" signature="[ccc.iii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="casti, slonnes, religiosi" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ludi casti solemnes religiosi
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Games, pious, solemn and venerable.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="inquinatum, defromatum, peruersum, conturbatum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        inq[ui]natu[m] deformatu[m] p[er]uersu[m] co[n]turbatu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Polluted, dishonoured, distorted and confused.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="porte[n]ditur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        portendi
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To be predicted.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ludos facere" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        facere ludos
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To hold games.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vetustas" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        vetustas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Age.
+            </translation>
+        </marginalia>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">19</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">12</numeral>
+        
+        <drawing anchor_text="Vestutas" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+        
+    </annotation>
+</transcription>

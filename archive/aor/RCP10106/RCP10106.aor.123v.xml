@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.123v.tif" pagination="246" reader="John Dee" signature="[q 3[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="argumentum oportere esse" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Argume[n]tu[m] o[porter]e, est co[n]feßu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>An argument should be acknowledged.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>vsus argumetorum</marginalia_text> 
+                </position>
+            </language>
+            <translation>The use of arguments.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Argumentoru[m] Dispositio.</marginalia_text> 
+                </position>
+            </language>
+            <translation>The arrangement of arguments.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="argume[n]to nimetur odij" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Argume[n]tu[m] odij</marginalia_text> 
+                </position>
+            </language>
+            <translation>An argument of hatred.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quae tamen adiecta fuerint, non multum ad his abhorrebunt. Nunc" type="straight"/>
+        <underline language="LA" method="pen" text="argumentum oportere esse confeßum" type="straight"/>
+        <underline language="LA" method="pen" text="ipsa probanda sunt" type="straight"/>
+        <underline language="LA" method="pen" text="Illud hoc loco monere inter necessaria est, nulla esse firmiora, quàm quae ex dubijs facta sunt certa. Caedes" type="straight"/>
+        <underline language="LA" method="pen" text="graue argume[n]tum si fatetur, quàm si conuincitur" type="straight"/>
+        <underline language="LA" method="pen" text="si non possumt ualere quia magna non sunt, ualebu[n]t quia multa sunt, quae" type="straight"/>
+        <underline language="LA" method="pen" text="etiamsi non ut fulmine, tamen ut grandine" type="straight"/>
+        <underline language="LA" method="pen" text="si no[n] nudos &amp; uelut carne spoliatos artus ostenderint" type="straight"/>
+
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.117v.tif" pagination="234" reader="John Dee" signature="[p 5[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="fictione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>fictio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Fiction.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Cecinna" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Cecinna.</marginalia_text>
+                    <book title="Pro Caecina"/>
+                </position>
+            </language>
+            <translation>Pro Caecina.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fictio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>fictiones.</marginalia_text>
+                </position>
+            </language>
+            <translation>Fictions.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Non po[es]t locoru[m] certa assignari capacitas</marginalia_text>
+                </position>
+            </language>
+            <translation>The certain capacity of places cannot be assigned..</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Qui parentes non aluerit, uinciatur" type="straight"/>
+        <underline language="LA" method="pen" text="in eode[m] libro plurima" type="straight"/>
+        <underline language="LA" method="pen" text="subierunt incommoda, ut &amp; nimium dicerent, nec tame[n] totum" type="straight"/>
+        <underline language="LA" method="pen" text="certis legum uinculis, perdiderunt, &amp; magistrum respicientes, naturam ducem sequi desierunt" type="straight"/>
+        <underline language="LA" method="pen" text="quia communibus ex praeceptis propria inuenienda sunt. Hoc" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

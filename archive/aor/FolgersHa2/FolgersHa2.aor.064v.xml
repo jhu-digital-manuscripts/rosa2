@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.064v.tif" pagination="448" reader="Harvey"/>	<!-- ABO 69left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Quotidianum gallicinium: Salue festa dies.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Daily at dawn: hail the festive day.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						He is noboddie, that hath not his witt, &amp; toung at will.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Sera nimis vita est crastina: viue hodiè.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Tomorrow's life is too late: live in the present.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Qui poterit sanum fingere, sanus erit. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Whoever can feign health will be healty.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Panacea.
+					</marginalia_text>
+					<emphasis method="pen" text="Panacea" type="straight"/>
+				</position>
+			</language>
+			<translation>Panacea.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Viuidus exultet nocte, dieq[ue] vigor.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Let the lively vigor jump about by night and day. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Plurima quotidiè circunfluunt: qua[e] uix (
+						ego stans pede in vno.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Many things flow around daily, due to which
+				I can barely stay upright on my feet.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Virgil refined Ennius: a second Pindar refined
+						Virgil. That Pindar may still be refined.
+					</marginalia_text>
+					<person name="Virgil"/>
+					<person name="Ennius"/>
+					<person name="Pindar"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						In cespite paucorum Principiorum latet lepus plurimorum Experimentorum.
+					</marginalia_text>
+					<X-ref book_title="Three proper, and wittie, familiar letters" language="LA" person="Edmund Spenser" text="In exiguo quandoque cespite latet lepus"/>
+				</position>
+			</language>
+			<translation>
+				In the short grass of small beginnings hides the hare of many experiences.
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="Aristippo" type="straight"/>
+		<underline language="IT" method="pen" text="a Dionigi" type="straight"/>
+		<underline language="IT" method="pen" text="filosofo non ha bisogno" type="straight"/>
+		<underline language="IT" method="pen" text="che non ho bisogno" type="straight"/>
+		<underline language="IT" method="pen" text="ha, onde cauarne a' suoi" type="straight"/>
+		<underline language="IT" method="pen" text="Vn medico in Padoua" type="straight"/>
+		<underline language="IT" method="pen" text="un Filosofo" type="straight"/>
+		<underline language="IT" method="pen" text="argutamente burlarlo" type="straight"/>
+		<underline language="IT" method="pen" text="che i medici" type="straight"/>
+		<underline language="IT" method="pen" text="fossero ricchissimi" type="straight"/>
+		<underline language="IT" method="pen" text="filosofi" type="straight"/>
+		<underline language="IT" method="pen" text="poueramente" type="straight"/>
+		<underline language="IT" method="pen" text="uai filosofia" type="straight"/>
+		<underline language="IT" method="pen" text="Il filosofo" type="straight"/>
+		<underline language="IT" method="pen" text="argutamente" type="straight"/>
+		<underline language="IT" method="pen" text="uil guadagno intesa" type="straight"/>
+		<underline language="IT" method="pen" text="Vguccion della Faggiuola" type="straight"/>
+		<underline language="IT" method="pen" text="a tauola, che desinaua" type="straight"/>
+		<underline language="IT" method="pen" text="in Lucca" type="straight"/>
+		<underline language="IT" method="pen" text="come Pisa haueua" type="straight"/>
+		<underline language="IT" method="pen" text="tumulto contra di" type="straight"/>
+		<underline language="IT" method="pen" text="prima di desinare" type="straight"/>
+		<underline language="IT" method="pen" text="fretta uerso Pisa" type="straight"/>
+		<underline language="IT" method="pen" text="ributtato" type="straight"/>
+		<underline language="IT" method="pen" text="tornandosene a Lucca" type="straight"/>
+		<underline language="IT" method="pen" text="Lucchesi" type="straight"/>
+		<underline language="IT" method="pen" text="serrarono le porte" type="straight"/>
+		<underline language="IT" method="pen" text="Verona a Can della" type="straight"/>
+		<underline language="IT" method="pen" text="ricetto in quei tempi di tutti i fuorusciti" type="straight"/>
+		<underline language="IT" method="pen" text="de' dishonesti" type="straight"/>
+		<underline language="IT" method="pen" text="mangiatori" type="straight"/>
+		<underline language="IT" method="pen" text="Vguccione uecchio miserabile" type="straight"/>
+			
+		<!-- Marks -->			
+	    	<!-- Left margin -->
+	    <mark language="IT" method="pen" name="plus_sign" place="left_margin" text="filosofo non ha bisogno"/> 
+		<mark method="pen" name="horizontal_bar" place="left_margin"/> <!-- chi ha, onde -->
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Pouera &amp; nuda uai filosofia"/>
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Dice la turba al uil guadagno intesa"/>
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark method="pen" name="dot" place="intext"/> <!-- stippo, & -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="ha, onde cauarne a' suoi"/> 
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="argutamente"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="medici"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="filosofi"/>
+	    <mark method="pen" name="dot" place="intext"/> <!-- poueramente, -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="argutamente"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="uil guadagno intesa"/> 
+		<mark method="pen" name="comma" place="intext"/> <!-- Lucca hebbe -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="prima di desinare"/> 
+		<mark method="pen" name="comma" place="intext"/> <!-- nare caualco' -->
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark: serrarono -->
+		<mark method="pen" name="comma" place="intext"/> <!-- scacciato se -->
+		<mark method="pen" name="comma" place="intext"/> <!-- l'altre ragionandosi -->
+		<mark method="pen" name="comma" place="intext"/> <!-- Cane de' -->		
+
+    </annotation>
+</transcription>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.026r.tif" pagination="35" reader="John Dee" signature="cc.ii."/>
+    <annotation> 
+        
+        <marginalia anchor_text="reiicitis, &amp; aspernamini" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        reicere aspernari
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To repeal, to reject.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="domestica crudelitate" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Domestica Crudelitas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Domestic Cruelty.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quàm mox" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        qua[m] mox
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                As soon as.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ratum haberet" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ratu[m] habere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To have established.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        referre o[mn]es su[m]mas in codices
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To enter all amounts in ledgers.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Na[m] que[m]admodum turpe est scribere quod no[n] debeatur: sic improbu[m] est no[n] referre, quod debeas" type="straight"/>
+        
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">15</numeral>
+        <numeral place="right_margin">18</numeral>
+        
+        <drawing anchor_text="Na[m] que[m]admodum turpe est scribere quod no[n] debeatur: sic improbu[m] est no[n] referre, quod debeas" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+        
+    </annotation>
+</transcription>

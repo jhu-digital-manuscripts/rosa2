@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.132r.tif" pagination="243" reader="John Dee" signature="qq.ii."/>
+    <annotation>
+        
+        <marginalia anchor_text="pharmacopolam circunforaneum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        pharmacspola circu[m]forane[us]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A drug seller travelling to different markets.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="punctum est temporis commoratus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        pu[n]ctu[m] temporis commorari
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To remain at a point in time.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="signis adulterinis obsignare" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        signis adulterinis obsignare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To transcribe with forged seals [Loeb 198, 263].
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Repetitio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Repetition.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="vnquam" type="straight"/>
+        <underline language="LA" method="pen" text="medicum illum suum iam cognitum &amp; saepe victore[m], per quem interfecerat plurimos" type="straight"/>
+        <underline language="LA" method="pen" text="digito legata deleuit: &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="Multa praetereo co[n]sulto: etenim vereor ne haec ipsa nimium multa esse videantur: vos tamen eum similem sui fuisse in caeteris vitae suae partibus" type="straight"/>
+        <underline language="LA" method="pen" text="tutorem vnquam liberis suis scripsit. nemo illum aditu, nemo congressione, nemo sermone, nemo conuiuio dignum iudicabat: omnes asperbantur, omnes abhorrebant:              omnes vt aliquam immanem ac perniciosam bestiam, pestémque fugiebant" type="straight"/>
+        <underline language="LA" method="pen" text="Erat huic inimicus" type="straight"/>
+        <underline language="LA" method="pen" text="crudelis &amp; huic infesta mater: attamen mater" type="straight"/>
+        <underline language="LA" method="pen" text="expona[m] vobis Oppianici facinus manifesto co[m]pertu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ince[n]debat eius amentiam" type="straight"/>
+        
+        <symbol name="Asterisk" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">19</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">4</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">21</numeral>
+        
+    </annotation>
+</transcription>

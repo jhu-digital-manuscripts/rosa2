@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.136v.tif" pagination="272" reader="John Dee"/> 
+    <annotation>
+       
+        <marginalia anchor_text="accusator" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Accusator</marginalia_text>
+                </position>
+            </language>
+            <translation>Prosecutor.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Accusator ante vertere patronu[m] dice[n]do debet</marginalia_text>
+                </position>
+            </language>
+            <translation>The prosectuor ought to alter in saying before the defender.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="Seruius Sulpitius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Seruus Sulpiti[us]</marginalia_text>
+                    <person name="Servius Sulpicius Rufus"/>
+                </position>
+            </language>
+            <translation>Servius Sulpicius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aeschine" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aeschines.</marginalia_text>
+                    <person name="Aeschines"/>
+                </position>
+            </language>
+            <translation>Aeschines.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cicero atque Asinius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cicero &amp; Asini[us]</marginalia_text>
+                    <person name="Cicero"/>
+                    <person name="Gaius Asinius Pollio"/>
+                </position>
+            </language>
+            <translation>Cicero and Asinius</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="miseratio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Miseratio</marginalia_text>
+                </position>
+            </language>
+            <translation>Pity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vt cicero pro Quintio</marginalia_text>
+                    <person name="Cicero"/>
+                    <book title="Pro Quinctio"/>
+                </position>
+            </language>
+            <translation>As Cicero [notes] in pro Quinctio.</translation>
+        </marginalia>
+       
+        <underline language="LA" method="pen" text="Etiam futuri te[m]poris" type="straight"/>
+        <underline language="LA" method="pen" text="mouet, qui maneat" type="straight"/> 
+        <underline language="LA" method="pen" text="qui de ui" type="straight"/>
+        <underline language="LA" method="pen" text="fugiendum" type="straight"/>
+        <underline language="LA" method="pen" text="cedendum" type="straight"/>
+        <underline language="LA" method="pen" text="Cuius locis est etiam occupare, quae dicturu[m], facturum'ue aduersarium putes. Nam" type="straight"/>
+        <underline language="LA" method="pen" text="noua, ut Seruius Sulpitius contra Aufidiam" type="straight"/>
+        <underline language="LA" method="pen" text="est. Docendi quoque interim iudices, quid rogantibus respondere debeant, quod est unum repetitionis genus" type="straight"/>
+        <underline language="LA" method="pen" text="causa periculi" type="straight"/>
+        <underline language="LA" method="pen" text="Referenda haec pars quoq[ue] ad utilitate[m] reipub[licae] ad iudicu[m] gloriam ad exemplum, ad memoriam posteritatis. Plurimum " type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

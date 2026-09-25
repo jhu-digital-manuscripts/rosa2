@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.069v.tif" reader="Harvey" signature="[Hvi[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>ex improuiso.</marginalia_text>
+                </position>
+            </language>
+            <translation>Suddenly.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Caualcados, &amp; Camisados.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="spedily" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>( Celeritas.</marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Speede.</marginalia_text>
+                </position>
+            </language>
+            <translation>Speed.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="in the space of two dayes" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>None so like, as that of Archidamus,</marginalia_text>
+                    <person name="Archidamus II"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>l.I. Polya[e]ni.</marginalia_text>
+                    <book title="Stratagems"/>
+                </position>
+            </language>
+            <translation>None so like, as that of Archidamus, book 1 of Polya[e]nus' Stratagems.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Worthy Industry,</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vt s[upr]a, in Martio. c.X.l.2. i[nfr]a, in Cassio, c.2.l.4. in Conone, vltimo Eiusde[m].</marginalia_text> <!--JG: For Cassius, see Frontinus, img _199--> <!--JG: Conon: reference to Frontinus, image _226-->
+                    <person name="Lucius Marcius Septimus"/>
+                    <person name="Gaius Cassius Longinus"/>
+                    <person name="Conon"/>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0124" text="c.X.l.2"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0199" text="c.2.l.4"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0226" text="vltimo Eiusde[m]"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Worthy industry, as above, in Lucius Marcius Septimus, below, in Gaius Cassius Longinus, chapter 2, book 4., in Conon, in the ultimate [example] of book 4.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vide c. II. huius: de Viriato.</marginalia_text> <!--JG: Reference to Frontinus, image _108. Is book 2, ch. 5, not ch. 2  of book 4 though-->
+                    <person name="Viriatus Lusitanus"/>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0108" text="c. II."/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See chapter 2 of this [book]: on Viriatus.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Il Spedito.</marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Such great marches, otherwhiles of</marginalia_text>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>maruelous</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>effect.</marginalia_text>
+                </position>
+            </language>
+            <translation>The speed.</translation> <!--JG: Chris, what do you think would be a good translation of 'il spedito'?-->
+                                                                                <!-- CG: I think 'il Spedito' might actually be a person. I found someone with this epithet (and no name attached) here (and he is described as someone who helped take over a city):
+                                                                                    https://books.google.com/books?id=60IdvJXrgcEC&pg=PA149&dq=il+spedito&hl=en&sa=X&ved=0CD0Q6AEwBGoVChMIm_7szr2IyAIVgnA-Ch1trwyT#v=onepage&q=il%20spedito&f=false -->
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>At nihil tale feci. Ad Polyhistorem, ista aliquid: sed quid ad Gabrielem Haruejum?
+                    Nihil Loci Communes, sine Propria Industria.</marginalia_text>
+                </position>
+            </language>
+            <translation>But I did not do such thing. I did those things to some extent towards polyhistor, but what did I do for Gabriel Harvey? 
+                No commonplaces without its own industry </translation> <!--JG: This marginal note is somewhat perplexing. Chris, do you have suggestions for better translation?-->
+                                                                                                                    <!-- CG: My attempt: "But I did no such thing. I did these things to some extend for the much-learned man, but what about for Gabriel Harvey? Common places are nothing without one's own industriousness." -->
+                                                                                                                    <!-- CG: I'm wondering if 'Polyhistor' is meant slightly ironically. As in, he did certain things that a much-learned man was supposed to do, but it wasn't "personalized." -->
+                                                                                                                    <!--KS: Agreed, so maybe in a way that reads better: 'But I did no such thing. [I did progress] to some extent towards a much-learned man, but what towards Gabriel Harvey?' I also suspect Harvey uses 'loci communes' as 'arguments', or 'discussion topics', so maybe: 'No discussions without one's own industriousness.'-->
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="howe necessarie, and howe easy" type="straight"/>
+        <underline language="EN" method="pen" text="spedily" type="straight"/>
+        <underline language="EN" method="pen" text="them vnwares" type="straight"/>
+        <underline language="EN" method="pen" text="in the space" type="straight"/>
+        <underline language="EN" method="pen" text="of two dayes" type="straight"/>
+        <underline language="EN" method="pen" text="iiii. dayes" type="straight"/>
+        <underline language="EN" method="pen" text="his ennemyes, dredynge noo such thynge" type="straight"/>
+        <underline language="EN" method="pen" text="got the victorie" type="straight"/>
+        <underline language="EN" method="pen" text="in two dayes" type="straight"/>
+        <underline language="EN" method="pen" text="trauayled. iiii. dayes iourney" type="straight"/>
+        
+        <mark method="pen" name="horizontal_bar" place="left_margin"/> <!-- JG: Line crossing left_margin and head-->
+        <mark language="EN" method="pen" name="hash" place="left_margin" text="None so like, as that of Archidamus, l.I. Polya[e]ni."/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="iiii. dayes"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/> 
+        <mark method="pen" name="horizontal_bar" place="left_margin"/> 
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="howe necessarie, and howe easy"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="EN" method="pen" name="hash" place="intext" text="in the space of two dayes"/>
+        <mark method="pen" name="apostrophe" place="intext"/> <!--iourneye: and-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="dredynge noo such thynge"/>
+        <mark method="pen" name="apostrophe" place="intext"/> <!--thynge. And-->
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="in two dayes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="trauayled. iiii. dayes iourney"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/> <!--through marginal note-->
+        <mark method="pen" name="horizontal_bar" place="intext"/> <!--through marginal note-->
+        
+    </annotation>
+</transcription>

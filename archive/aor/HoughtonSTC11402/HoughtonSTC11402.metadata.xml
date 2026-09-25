@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+  <license>
+    <url>http://creativecommons.org/licenses/by/4.0/</url>
+    <logo>https://i.creativecommons.org/l/by/4.0/88x31.png</logo>
+  </license>
+  <totalPages>224</totalPages>
+  <dates>
+    <startDate>1539</startDate>
+    <endDate>1539</endDate>
+  </dates>
+  <texts>
+    <text id="1">
+      <language>en</language>
+      <title>The strategemes, sleyghtes, and policies of warre (London, 1539)</title>
+      <textId>frontinus</textId>
+      <pages end="111r" start="1r">224</pages>
+    </text>
+  </texts>
+  <bibliographies>
+    <bibliography lang="en">
+      <title>The strategemes, sleyghtes, and policies of warre (London, 1539)</title>
+      <commonName>Sextus Julius Frontinus, Strategemes of warre (London, 1539)</commonName>
+      <dateLabel>1539</dateLabel>
+      <currentLocation>Houghton Library, Harvard University</currentLocation>
+      <repository>Houghton Library, Harvard University</repository>
+      <shelfmark>Houghton STC 11402</shelfmark>
+      <author>
+        <name>Frontinus, Sextus Julius</name>
+        <id>http://www.isni.org/isni/0000000121209098</id>
+      </author>
+      <reader>
+        <name>Gabriel Harvey</name>
+        <id>http://www.isni.org/isni/0000000073570531</id>
+      </reader>
+      <website>https://archaeologyofreading.org/bibliography/Harvey-corpus/Frontinus</website>
+      <detail>[224] p.; 17 cm. (8vo)</detail>
+      <note>Ties in to Machiavelli</note>
+    </bibliography>
+  </bibliographies>
+</book>

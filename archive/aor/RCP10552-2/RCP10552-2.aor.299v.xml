@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.299v.tif" pagination="112" reader="John Dee"/>
+    
+    
+    <annotation>
+        
+        
+        <marginalia anchor_text="impediuit honorem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Impedire honore[m] Regis, est La[e]sa[e] Maiestatis Crimen</marginalia_text>
+                </position>
+            </language>
+            <translation>To obstruct the honour of the King is a crime of treason.</translation>
+        </marginalia>
+       
+        
+        <marginalia anchor_text="Dauid" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dauid</marginalia_text>
+                    <person name="David II of Scotland"/>
+                </position>
+            </language>
+            <translation>David.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Edwar. filius Iohan. de Baliolo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Edwardus de Baliol fil[ius] Io[hann]is de Baliol.</marginalia_text>
+                    <person name="Edward Balliol"/>
+                    <person name="John Balliol"/>
+                </position>
+            </language>
+            <translation>Edward Balliol, son of John Balliol.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="anno sequenti" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>[est] 1333.</marginalia_text>
+                </position>
+            </language>
+            <translation>[is] 1333.</translation>
+        </marginalia>
+        
+        
+        
+        <underline language="LA" method="pen" text="impediuit honorem regis" type="straight"/>
+        <underline language="LA" method="pen" text="recepit 20. millia" type="straight"/>
+        <underline language="LA" method="pen" text="hoc chartam regis fieri fecit eisdem" type="straight"/>
+        <underline language="LA" method="pen" text="vt de alijs taceamus" type="straight"/>
+        <underline language="LA" method="pen" text="contemplatione sororis suae, nuptae Dauid filio Roberti" type="straight"/>
+        <underline language="LA" method="pen" text="duo millia Anglicorum viceru[n]t 40. millia Scotorum" type="straight"/>
+        <underline language="LA" method="pen" text="concordia facta inter ipsum" type="double"/>
+        <underline language="LA" method="pen" text="fuit irrita" type="double"/>
+        <underline language="LA" method="pen" text="proditionem, ipso in minori aetate notoriè constituto, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="custodia matris su[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="contra consilium" type="double"/>
+        <underline language="LA" method="pen" text="gesta sunt" type="straight"/>
+        <underline language="LA" method="pen" text="Edwar. filius Iohan. de Baliolo" type="straight"/>
+        <underline language="LA" method="pen" text="regem Scotiae coronatur" type="straight"/>
+        <underline language="LA" method="pen" text="dicitur Boothule iuxta Hellidon" type="straight"/>
+        
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        
+        
+        
+        <errata amendedtext="consiliatius" copytext="conciliatius" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        
+        
+    </annotation>
+    
+</transcription>

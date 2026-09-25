@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.288r.tif" pagination="281" reader="John Dee" signature="bbb"/>
+    <annotation>
+        
+        <marginalia anchor_text="filij illius illegittimi" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>filij illegittimi</marginalia_text>
+                </position>
+            </language>
+            <translation>Illegitimate children.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="grandines" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Grando</marginalia_text>
+                </position>
+            </language>
+            <translation>Hail.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Quae aestate &amp; autumno grandines pariunt, eadem hieme niues, ac uere" type="straight"/>
+        
+        <mark method="pen" name="horizontal_bar" place="left_margin"/> <!--JG: New mark??--> <!-- FSF: it does look like a y -->
+        <mark method="pen" name="horizontal_bar" place="left_margin"/> <!--JG: New mark??-->
+        
+        
+    </annotation>
+</transcription>

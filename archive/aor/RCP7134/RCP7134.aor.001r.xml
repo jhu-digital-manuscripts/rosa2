@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.001r.tif" pagination="title page" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Vide sequenti 3. apli 154[.]. &amp; 43.</marginalia_text> 
+                </position>
+            </language>
+            <translation>See for the following, April 3, 154[.] and 43.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Liber de archanis [a]eternitatis fo 159.v.</marginalia_text>
+                    <book title="De arcanis aeternitatis"/>
+                    <internal_ref>
+                        <target ref="RCP7134:338" text="159.v."/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Book on the mysteries of eternity, folio 159 verso.</translation> <!--JG: Not entirely sure: is archanis variant of arcanis? Probably, see printed text on f. 159v-->
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Antonius Brassavola fo 171.v.</marginalia_text>
+                    <person name="Antonio Musa Brassavola"/>
+                    <internal_ref>
+                        <target ref="RCP7134:362" text="171.v."/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Antonio Musa Brassavola, [see] folio 171 verso.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>W</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <mark method="pen" name="tick" place="full_page"/>
+        
+    </annotation>
+</transcription>

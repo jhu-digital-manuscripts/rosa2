@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonDL45.286r.tif" pagination="571" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia anchor_text="De podagrae incommodis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Podagra.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Gout.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ticinum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ticinum. 
+                    </marginalia_text>
+                    <location name="Pavia"/>
+                </position>
+            </language>
+            <translation>
+                Pavia.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Aqua[e] delinitoria[e], et siccatiua[e]. Mundatiua[e].
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        καθαρτικὰ φαρμακὰ.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Cleansing waters for softening and drying out. A purifying medicine.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="medici laudem maiorem assequuntur" type="straight"/>
+        <underline language="LA" method="pen" text="simplicioribus medicinis vtentes" type="straight"/>
+        <underline language="LA" method="pen" text="frequentius languores curant" type="straight"/>
+        <underline language="LA" method="pen" text="coniugio senum virorum" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; puellarum" type="straight"/>
+        <underline language="LA" method="pen" text="masculos potius" type="straight"/>
+        <underline language="LA" method="pen" text="quàm foemellas" type="straight"/>
+        <underline language="LA" method="pen" text="inducunt aegrotos verbis solatiosis" type="straight"/>
+        <underline language="LA" method="pen" text="moenitatem locorum" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; garritum auium" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; ranarum eligant" type="straight"/>
+        <underline language="LA" method="pen" text="restauratione sanitatis" type="straight"/>
+        <underline language="LA" method="pen" text="Cassiodori lib. X. Epistolarum" type="straight"/>
+        <underline language="LA" method="pen" text="ligat solutos" type="straight"/>
+        <underline language="LA" method="pen" text="contrahit" type="straight"/>
+        <underline language="LA" method="pen" text="decrescere facit corpora" type="straight"/>
+        <underline language="LA" method="pen" text="Vtantur ergo aquis primùm" type="straight"/>
+        <underline language="LA" method="pen" text="potu delinitoriis" type="straight"/>
+        <underline language="LA" method="pen" text="thermarum exhibitionibus" type="straight"/>
+        <underline language="LA" method="pen" text="siccatiuis" type="straight"/>
+        <underline language="LA" method="pen" text="indomabilis ceruix illa passionis" type="straight"/>
+        <underline language="LA" method="pen" text="plurima effusione" type="straight"/>
+        <underline language="LA" method="pen" text="mundantur" type="straight"/>
+        <underline language="LA" method="pen" text="attractiua virtute libera" type="straight"/>
+        <underline language="LA" method="pen" text="duobus auxiliis congregatis" type="straight"/>
+        <underline language="LA" method="pen" text="superantur" type="straight"/>
+        <underline language="LA" method="pen" text="Amentur aquae munera" type="straight"/>
+        <underline language="LA" method="pen" text="humani generis debellatricem" type="straight"/>
+        <underline language="LA" method="pen" text="munimina lauachrorum" type="straight"/>
+        <underline language="LA" method="pen" text="edomat uige decennium" type="straight"/>
+        <underline language="LA" method="pen" text="potionum molliter introitus" type="straight"/>
+        <underline language="LA" method="pen" text="voluptuosis aquarum remediis" type="straight"/>
+        <underline language="LA" method="pen" text="Aquas verò Bormias siccatiuas" type="straight"/>
+        <underline language="LA" method="pen" text="vrbem Ticinum scaturientes" type="straight"/>
+        <underline language="LA" method="pen" text="Masculi genera[n]tur ex sene" type="straight"/>
+        <underline language="LA" method="pen" text="puella." type="straight"/>
+        <underline language="LA" method="pen" text="Verba solatiosa" type="straight"/>
+        <underline language="LA" method="pen" text="Descriptio podagrae." type="straight"/>
+        <underline language="LA" method="pen" text="Mors viua." type="straight"/>
+        <underline language="LA" method="pen" text="in armis." type="straight"/>
+        <underline language="LA" method="pen" text="Remedia ex aquis." type="straight"/>
+        <underline language="LA" method="pen" text="Virtus interna, &amp; externa." type="straight"/>
+        <underline language="LA" method="pen" text="Aqu[a]e Bormiae." type="straight"/>
+        
+        <symbol name="HT" place="left_margin"/> <!-- AB unclear what this mark is, HT is just most similar -->
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="right_margin" text="Verba solatiosa"/>
+        <mark language="LA" method="pen" name="plus_sign" place="right_margin" text="Remedia ex aquis."/>
+        <mark method="pen" name="comma" place="right_margin"/> <!-- interna, & -->
+        <mark method="pen" name="horizontal_bar" place="right_margin"/> <!-- below marginal note -->
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="inducunt aegrotos verbis solatiosis"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="locorum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="&amp; garritum auium"/>
+        <mark language="LA" method="pen" name="horizontal_bar" place="intext" text="De podagrae incommodis."/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Cassiodori lib. X. Epistolarum"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- aquis, primum -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="potu delinitoriis"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- delinitoriis -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="siccatiuis"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="indomabilis ceruix illa passionis"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- interna, plurima -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="plurima effusione"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="mundantur"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="attractiua virtute libera"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="duobus auxiliis congragatis"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Amentur aquae munera"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="munimina lauachrorum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="voluptuosis aquarum remediis"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Aquas verò Bormias siccatiuas"/>
+        
+    </annotation>
+</transcription>

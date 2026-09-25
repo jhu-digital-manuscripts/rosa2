@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.284v.tif" pagination="82" reader="John Dee" signature="[K.iiij.[v]]"/>
+    <annotation>
+        
+       <marginalia anchor_text="&amp;" hand="Italian">
+           <language ident="LA">
+               <position book_orientation="0" place="intext">
+                   <marginalia_text>ei</marginalia_text>
+               </position>
+           </language>
+           <translation>To him.</translation>
+       </marginalia> 
+        
+        
+        <marginalia anchor_text="&amp;" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>vel</marginalia_text>
+                </position>
+            </language>
+            <translation>Or.</translation>
+        </marginalia> 
+        
+        
+        <marginalia anchor_text="Karenna" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Warennia</marginalia_text>
+                    <person name="John de Warenne, 6th Earl of Surrey"/>
+                </position>
+            </language>
+            <translation>Warenne.</translation>
+        </marginalia> 
+        
+        
+        <underline id="RCP10552-2:578:u0001" language="LA" method="pen" text="fractoq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="nobis &amp; h[a]eredibus" type="straight"/>
+        <underline id="RCP10552-2:578:u0002" language="LA" method="pen" text="&amp; iurauimus" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.269r.tif" pagination="521" reader="Harvey" signature="xx3[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text> 
+                        Bellum Macedonicum contra regem Philippum.
+                    </marginalia_text>
+                <person name="Philip V of Macedon"/>
+                </position>
+            </language>
+            <translation>
+                The Macedonian war against king Philip.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Consul" type="straight"/>
+        <underline language="LA" method="pen" text="utrum bellum an pacem habeatis" type="straight"/>
+        <underline language="LA" method="pen" text="permittet Philippus" type="straight"/>
+        <underline language="LA" method="pen" text="terra mariq[ue] ingens" type="straight"/>
+        <underline language="LA" method="pen" text="utrum in Macedoniam" type="straight"/>
+        <underline language="LA" method="pen" text="hostem in" type="straight"/>
+        <underline language="LA" method="pen" text="unquam antè aliàs" type="straight"/>
+        <underline language="LA" method="pen" text="Punico certè proximo" type="straight"/>
+        <underline language="LA" method="pen" text="Saguntinis obsessis" type="straight"/>
+        <underline language="LA" method="pen" text="Mamertinis tulerant" type="straight"/>
+        <underline language="LA" method="pen" text="in Hispaniam" type="straight"/>
+        <underline language="LA" method="pen" text="Italiam accepimus" type="straight"/>
+        <underline language="LA" method="pen" text="ipsum Philippum" type="straight"/>
+        <underline language="LA" method="pen" text="literasq[ue] cum Annibale in Italiam traijcere" type="straight"/>
+        <underline language="LA" method="pen" text="nunc pulso Italia Annibale, deuictis" type="straight"/>
+        <underline language="LA" method="pen" text="segnitiem nostram experiri" type="straight"/>
+        <underline language="LA" method="pen" text="aequaueritis Annibali Philippum" type="straight"/>
+        <underline language="LA" method="pen" text="Carthaginiensibus Macedonas" type="straight"/>
+        <underline language="LA" method="pen" text="Pyrrho certè aequabitis" type="straight"/>
+        <underline language="LA" method="pen" text="uel uir uiro" type="straight"/>
+        <underline language="LA" method="pen" text="uel gens" type="straight"/>
+        <underline language="LA" method="pen" text="quanto magis florentem Italiam" type="straight"/>
+        <underline language="LA" method="pen" text="aggressus Pyrrhus tamen" type="straight"/>
+        <underline language="LA" method="pen" text="uictor propè ad" type="straight"/>
+        <underline language="LA" method="pen" text="urbem Romam uenit" type="straight"/>
+
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- Philippum, ne -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- Ita -->
+        
+    </annotation>
+</transcription>

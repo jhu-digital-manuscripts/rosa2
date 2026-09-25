@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.268v.tif" pagination="516" reader="John Dee" signature="[IzIzIz.ii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="multam irrogarat" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        multa[m] irrogare.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To inflict much.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Q. Hortensium" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Q horte[n]si[us]
+                    </marginalia_text>
+                    <person name="Quintus Hortensius"/>
+                </position>
+            </language>
+            <translation>
+                Quintus Hortensius.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sica illa, quam à Catilina accaeperat, conquieuit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        sica[m] co[n]quiescere.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To put down the dagger.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="inimicus Clodio, P. Lentulus, vltor sceleris illius, propugnator Senatus, defensor vestrae voluntatis, patronus illius publici consensus, restitutor salutis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        inimic[us] vltor sceleris p[ro]pugnator defensor patronus restitutor salutis.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Enemy, avenger of crime, forefighter, defender, promoter, restorer of safety.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="gladios distringendos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        distringere gladium
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To draw a sword.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Repetitio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Repetition.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="atque illam belluam iudicii laqueos declinantem iam irretitam teneret, qui locus" type="straight"/>
+        <underline language="LA" method="pen" text="Que[m] igitur cum omnium gratia noluir, hunc voluit cum aliquorum querela? quem iure, quem loco, quem tempore, quem impune non est ausus, hunc iniuria,              iniquo loco, alieno tempore, periculo capitis, no[n] dubitauit occidere? praesertim" type="straight"/>
+        <underline language="LA" method="pen" text="rumorem, fabulam ficta[m], falsam perhorrescimus" type="straight"/>
+        
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">10</numeral>
+        
+    </annotation>
+</transcription>

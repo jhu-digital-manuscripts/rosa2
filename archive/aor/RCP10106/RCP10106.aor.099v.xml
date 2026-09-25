@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.099v.tif" pagination="198" reader="John Dee" signature="[n 3[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="non est semper necessaria post narrationem illa procursio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Procursio post narratione[m] no[n] est semper neceßaria.</marginalia_text>
+                </position>
+            </language>
+            <translation>It is not always necessary that digression will come after the narrative.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="iudicis quoque natura" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Iudicis Natura.</marginalia_text>
+                </position>
+            </language>
+            <translation>The nature of the judge.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="παρέκβασις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>παρέκβασις</marginalia_text>
+                </position>
+            </language>
+            <translation>Digression.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="contra Verrem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Contra Verre[m].</marginalia_text>
+                    <book title="In Verrem"/>
+                </position>
+            </language>
+            <translation>In Verrem.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro C. Cornelio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro C[aius] Cornelio.</marginalia_text>
+                    <book title="Pro Cornelio"/>
+                </position>
+            </language>
+            <translation>Pro C[aius] Cornelio.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="poenarias actiones" type="straight"/>
+        <underline language="LA" method="pen" text="Nihil enim facilè persuadetur inuitis. Quo" type="straight"/>
+        
+    </annotation>
+</transcription>

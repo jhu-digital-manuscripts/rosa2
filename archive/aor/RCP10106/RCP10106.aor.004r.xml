@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.004r.tif" pagination="7" reader="John Dee" signature="a 4"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        usus m[ate]r artium
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Practice the mother of the arts.</translation> <!-- FSF: for this translation it would have to reat matrem; but I am not sure about what mr could stand for -->
+        </marginalia>
+        
+        <marginalia anchor_text="indociles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Indociles.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Unteachable.</translation>
+        </marginalia>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="dash" place="intext"/> <!-- scribendi -->
+        <mark method="pen" name="tripunctus_with_tail" place="right_margin"/>
+        
+    </annotation>
+</transcription>

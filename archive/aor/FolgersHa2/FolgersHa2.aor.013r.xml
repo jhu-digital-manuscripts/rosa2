@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+	<page filename="FolgersHa2.013r.tif" pagination="345" reader="Harvey"/>	<!-- ABO 17right -->
+    	<annotation>
+
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+        				<position book_orientation="0" place="head">
+                    				<marginalia_text>
+                    					Animus, imperator Corporis, et fortuna[e].
+                    				</marginalia_text>
+            			               	<emphasis method="chalk" type="straight"/>
+            			</position>
+        			</language>
+        			<translation>
+        				The mind, emperor of the Body, and of fortune.
+        			</translation>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						Giulio 3. padrone del diuino Pietro Aretino.
+    					</marginalia_text>
+    					<person name="Pope Julius III"/>
+    					<person name="Pietro Aretino"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Pope Julius III, patron of the divine Pietro Aretino.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						humore del mondo.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Worldly humor.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						) { Animus facit magnum: Fortuna, magnatem.
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				) { The mind makes one great: Fortune, important.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						ridicolo.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						Sic transit gloria mundi.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Ridiculous. So passes the glory of the world.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						Prudentia, theoria: fortitudo, Praxis.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Prudence in theory; strength in Action.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						Fortuna, fortitudo vna.
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Fortune, one strength.
+    			</translation>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="90" place="left_margin">
+    					<marginalia_text>
+    						Animus est, qui facit foelicem, aut miserum.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				The mind is that which creates happiness or misery.
+    			</translation>
+    		</marginalia>
+        
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="270" place="right_margin">
+    					<marginalia_text>
+    						Vilis animus est, qui non dominatur corpori. Magnus animus, ideóq[ue]	
+    						tranquillus, tam Corpori imperat, quàm fortuna[e]; quantumcunq[ue] aut
+    						illud a[e]gru[m] aut ha[e]c afflict[a].
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Of little value is the mind which does not control the body. A great and tranquil mind, therefore, 
+    				both rules the Body, and fortune: however infirm the former or oppressive the latter.
+    			</translation>
+    		</marginalia>
+        
+    		<underline language="IT" method="pen" text="scarpe Pontificali" type="straight"/>
+    		<underline language="IT" method="pen" text="giudicandole strette" type="straight"/>
+    		<underline language="IT" method="pen" text="non fu mai scarpa, che mi calzasse meglio" type="straight"/>
+    		<underline language="IT" method="pen" text="giouani" type="straight"/>
+    		<underline language="IT" method="pen" text="amici miei in" type="straight"/>
+    		<underline language="IT" method="pen" text="sul canto" type="straight"/>
+    		<underline language="IT" method="pen" text="Zoppo da amendue" type="straight"/>
+    		<underline language="IT" method="pen" text="caminaua forte a piu" type="straight"/>
+    		<underline language="IT" method="pen" text="hor con l'una, &amp; hora con" type="straight"/>
+    		<underline language="IT" method="pen" text="spalla battesse" type="straight"/>
+    		<underline language="IT" method="pen" text="co[m]pagni il piu faceto" type="straight"/>
+    		<underline language="IT" method="pen" text="quello" type="straight"/>
+    		<underline language="IT" method="pen" text="che festa è domani" type="straight"/>
+    		<underline language="IT" method="pen" text="cura di feste" type="straight"/>
+    		<underline language="IT" method="pen" text="uoi sonate cosi forte a doppio" type="straight"/>
+    		<underline language="IT" method="pen" text="difetti naturali non" type="straight"/>
+    		<underline language="IT" method="pen" text="scherzo" type="straight"/>
+    		<underline language="IT" method="pen" text="tosto compassione" type="straight"/>
+    		<underline language="IT" method="pen" text="empio è chi" type="straight"/>
+    		<underline language="IT" method="pen" text="feste in Fiorenza" type="straight"/>
+    		<underline language="IT" method="pen" text="tessitor di lana" type="straight"/>
+    		<underline language="IT" method="pen" text="horreuolmente a gli spettacoli" type="straight"/>
+    		<underline language="IT" method="pen" text="moglie con" type="straight"/>
+    		<underline language="IT" method="pen" text="spendeua troppo, &amp; rimarrebbono poueri" type="straight"/>
+    		<underline language="IT" method="pen" text="che per farmi honore, ti metterei in chiasso" type="straight"/>
+    		<underline language="IT" method="pen" text="Parola libera" type="straight"/>
+    		<underline language="IT" method="pen" text="semplicemente" type="straight"/>
+    		<underline language="IT" method="pen" text="una frotta di giouani" type="straight"/>
+    		<underline language="IT" method="pen" text="andauano pazzeggiando per" type="straight"/>
+    	
+	        	<symbol name="SS" place="intext"/>
+	      	
+	      	<mark method="chalk" name="vertical_bar" place="right_margin"/> 
+	    	<mark method="pen" name="dash" place="right_margin"/> <!-- Fioren -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- spal -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- pan -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- quel -->
+    		<mark method="pen" name="quotation_mark" place="right_margin"/>
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- dis -->    		
+    		<mark method="pen" name="comma" place="right_margin"/>
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- co[n] -->
+    		<mark method="pen" name="quotation_mark" place="right_margin"/>
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- paz -->
+	    	
+	    	<mark method="pen" name="bracket" place="left_margin"/> 
+    		<mark method="pen" name="straight_quotation_mark" place="left_margin"/> 
+    		<mark method="pen" name="straight_quotation_mark" place="left_margin"/>
+		    
+	    	<mark method="pen" name="dot" place="intext"/> <!-- piede, disse: -->
+    		<mark method="chalk" name="vertical_bar" place="intext"/>
+    		<mark method="pen" name="dot" place="intext"/> <!-- above egli -->
+    		
+    		<mark method="chalk" name="vertical_bar" place="tail"/>
+		
+    </annotation>
+</transcription>

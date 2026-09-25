@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.051r.tif" pagination="101" reader="John Dee" signature="g 3"/>
+    <annotation>
+        
+        <marginalia anchor_text="Pericli" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pericles</marginalia_text>
+                    <person name="Pericles"/>
+                </position>
+            </language>
+            <translation>Pericles.</translation>
+        </marginalia>
+                
+        <marginalia anchor_text="Cicero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cicero</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="de arte rheotrica" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Rhetorica est ars.</marginalia_text>
+                </position>
+            </language>
+            <translation>Rhetoric is an art.</translation>
+        </marginalia>
+        
+    </annotation>
+</transcription>

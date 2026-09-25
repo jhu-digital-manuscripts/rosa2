@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.311r.tif" pagination="73" reader="John Dee"/>   
+    <annotation>
+        
+        <marginalia anchor_text="frequentia; multitudo" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        bonor[um] [ multitudo
+                                    freque[n]tia
+                                    copia
+                                    abunda[n]tia
+                                    affluentia.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A multitude; a crowd; a supply; an abundance; a plethora of goods.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vt si quum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>vt si quum.</marginalia_text>
+                </position>
+            </language>
+            <translation>As when.</translation>   
+            <!-- DO: Not sure how to translate --> 
+            <!--JG: According to Loeb it's 'vt si cum': https://www.loebclassics.com/view/marcus_tullius_cicero-de_finibus_bonorum_et_malorum/1914/pb_LCL040.263.xml -->
+        </marginalia>
+        
+        <marginalia anchor_text="rerum omnino discrepantiam, quàm verboru[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Reru[m] discrepa[n]tia et verboru[m]</marginalia_text> 
+                </position>
+            </language>
+            <translation>A discrepancy of facts and words.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="omnia quae ipsi bona appellant, pertinere dicant ad beate viuendum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Omnia bona co[n]curru[n]t ad beatitatis absolutionem.</marginalia_text>
+                </position>
+            </language>
+            <translation>All good things contribute to absolute happiness.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="eculeo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Eculeus.</marginalia_text>
+                </position>
+            </language>
+            <translation>The rack.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="opinio facit non natura" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Opinio no[n] natura.</marginalia_text>
+                </position>
+            </language>
+            <translation>Not a natural opinion.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tria genera bonoru[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tria genera bonoru[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>Three kinds of goods.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="corporis co[m]modorum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Corporis commoda.</marginalia_text>
+                </position>
+            </language>
+            <translation>Bodily advantages.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="valetudinem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>valetudo.</marginalia_text>
+                </position>
+            </language>
+            <translation>Health.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>virtus dignitas, splendor.</marginalia_text>
+                </position>
+            </language>
+            <translation>Virtue, esteem, splendour.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>εὐκαρία</marginalia_text>        <!-- for εὐκαιρία -->
+                </position>
+            </language>
+            <translation>Opportunity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>κατορθωσίς</marginalia_text>        <!-- for κατόρθωσις -->
+                </position>
+            </language>
+            <translation>Right action.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>κατόρθωμα </marginalia_text>        
+                </position>
+            </language>
+            <translation>Virtuous action.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cothurni laus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cothurni Laus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Praise of a boot.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="bonam morte[m] &amp; bonum partum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mors. Partus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Death. Birth.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quod appellamus extremu[m], quod vltimum, pute[n]t crescere posse" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Summu[m] Bonu[m] crescet.</marginalia_text>
+                </position>
+            </language>
+            <translation>The greatest good will extend.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="crescere bonorum finem non putamus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Bonoru[m] finis no[n] crescit.</marginalia_text>
+                </position>
+            </language>
+            <translation>The extreme of goods will not extend.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vt enim qui demersi sunt in aqua, nihilo magis respirare possunt, si non longe absunt à summo vt iam iámque possint emergere,              quàm si etiam tum essent in profundo: nec catulus ille qui iam appropinquat vt videat, plus cernit quàm is qui modo est natus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Similitudo</marginalia_text>
+                </position>
+            </language>
+            <translation>Comparison.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="offunditur; obscuretur &amp; obruatur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        offundi
+                        obscurari
+                        obrui
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To be covered.
+                To be hidden.
+                To be covered up.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="productione temporis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        productio te[m]poris
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The prolonging of time.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nostri vero quod aestimatione omnino aliqua dignum sit" type="straight"/>
+        <underline language="LA" method="pen" text="complecti vitam beatam putent. An" type="straight"/>
+        <underline language="LA" method="pen" text="esse quum eculeo torqueatur" type="straight"/>
+        <underline language="LA" method="pen" text="causa: opinio facit non natura vim doloris" type="straight"/>
+        <underline language="LA" method="pen" text="vt si quum" type="straight"/>
+        <underline language="LA" method="pen" text="sit, quo sit corporis, aut externis bonis plenior: vt" type="straight"/>
+        <underline language="LA" method="pen" text="frequentia" type="straight"/>
+        <underline language="LA" method="pen" text="pluris sit coniunctum quàm sapere ipsum separatim. Nam" type="straight"/>
+        <underline language="LA" method="pen" text="Vt enim obscuratur &amp; offunditur luce solis lumen lucernae, &amp; vt interit magnitudine maris AEgaei stilla muriae,              &amp; vt in diuitiis Croesi teruncii accessio" type="straight"/>
+        <underline language="LA" method="pen" text="gradus vnus in ea via quae est hinc in Indiam: sic quum sit is bonoru[m] finis" type="straight"/>
+        <underline language="LA" method="pen" text="obscuretur" type="straight"/>
+        <underline language="LA" method="pen" text="obruatur" type="straight"/>
+        <underline language="LA" method="pen" text="non fit maior productione temporis" type="straight"/>
+        <underline language="LA" method="pen" text="crescendi accessione[m] nullam" type="straight"/>
+        <underline language="LA" method="pen" text="atque opportunitate finitur, nec plura paucioribus, nec longinquiora breuioribus antepone[n]tur. Nec" type="straight"/>
+        <underline language="LA" method="pen" text="crescere bonorum finem non" type="straight"/>
+        <underline language="LA" method="pen" text="aqua, nihilo magis respirare possunt, si non longe absunt à summo vt iam iámque" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Unidentified" place="right_margin"/>
+        <symbol name="Unidentified" place="right_margin"/>
+
+        <mark method="pen" name="guillemet" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

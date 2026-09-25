@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.294r.tif" pagination="101" reader="John Dee" signature="N.ij."/>
+    <annotation>
+        
+        <marginalia anchor_text="Gilbertus comes Glouerniae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gilbertus de Clare. 0. Comes Glo[uerniae]</marginalia_text>
+                    <person name="Gilbert de Clare, 8th Earl of Gloucester"/>
+                </position>
+            </language>
+            <translation>Gilbert de Clare, Earl of Gloucester.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Robertus de Clifford" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Robertus de Clifford</marginalia_text>
+                    <person name="Robert de Clifford, 1st Baron de Clifford"/>
+                </position>
+            </language>
+            <translation>Robert de Clifford.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Radulphus Mounhermer" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Radulphus de monte Hermeri captus</marginalia_text>
+                    <person name="Ralph de Monthermer"/>
+                </position>
+            </language>
+            <translation>Ralph de Monthermer captured.</translation>
+        </marginalia>
+        
+        <underline id="RCP10552-2:597:u0001" language="LA" method="pen" text="corruit nobilis ille miles Gilbertus comes Glouerniae, ante mortem suam crudelem sumens de Scotis suis manibus vltione[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Dominus Radulphus Mounhermer qui desponsauerat" type="straight"/>
+        <underline language="LA" method="pen" text="sorore[m] regis Angliae &amp; comitissam Glouerni[a]e" type="double"/>
+        <underline id="RCP10552-2:597:u0002" language="LA" method="pen" text="Gilbertus consul Glouerniae infausta pugna vita priuatus, tres filias superstites dereliquit" type="straight"/>
+        <underline language="LA" method="pen" text="Quarum prima[m] duxit dominus Hugo de Spencer" type="straight"/>
+        <underline language="LA" method="pen" text="dominus Hugo de Audeley" type="straight"/>
+        <underline language="LA" method="pen" text="dominus Petrus de Gauerston" type="straight"/>
+        <underline language="LA" method="pen" text="dominus Rog. de Tamary" type="straight"/>
+        <underline language="LA" method="pen" text="dominus Ioh de Burgo" type="straight"/>
+        <underline language="LA" method="pen" text="filius &amp; h[a]res" type="double"/>
+        <underline language="LA" method="pen" text="comitis Vltoni[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="comitatus nobilissimus" type="straight"/>
+        <underline language="LA" method="pen" text="corpora comitis Glouerniae" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; baronis de Clifford transmisit regi Angliae apud Berwicum commoranti" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <physical_link>
+           <marginal_annotation idref="RCP10552-2:597:u0001"/> 
+            <marginal_annotation idref="RCP10552-2:597:u0002"/>
+            <relation from="RCP10552-2:597:u0001" to="RCP10552-2:597:u0002" type="undirected"/>
+        </physical_link>
+        
+        
+    </annotation>
+</transcription>

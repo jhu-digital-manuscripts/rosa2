@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.027r.tif" pagination="27" reader="John Dee" signature="Diij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Cartaginesi di Fenicia" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Carthagine[n]ses etia[m] nominati Phenices.</marginalia_text>
+                </position>
+            </language>
+            <translation>The Carthaginians were even named after the Phoenicians.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="che ne la Cuba, ne la Spagnuola non hanno fiumi atti ad esser" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+       
+       <underline language="IT" method="pen" text="Cartaginesi di Fenicia" type="double"/>
+        <underline language="IT" method="pen" text="Fenici" type="double"/>
+        <underline language="IT" method="pen" text="Spagnuoli i Christiani, che nascono, &amp; habitano nelle istesse Indie" type="straight"/>
+        <underline language="IT" method="pen" text="erano molti animali bruti, i" type="straight"/>
+        <underline language="IT" method="pen" text="cotal particolarità" type="straight"/>
+        <underline language="IT" method="pen" text="che ne la Cuba, ne la Spagnuola non" type="straight"/>
+        <underline language="IT" method="pen" text="fiumi atti ad esser" type="straight"/>
+        <underline language="IT" method="pen" text="entrar qualche nauiglio" type="straight"/>
+        <underline language="IT" method="pen" text="nauigare per essi cosi" type="straight"/>
+        
+    </annotation>
+</transcription>

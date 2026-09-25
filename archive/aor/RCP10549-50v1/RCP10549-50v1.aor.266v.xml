@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.266v.tif" pagination="512" reader="John Dee" signature="[iii.viii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Insidiatori verò &amp; latroni" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Insidiator. Latro.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                One who lies in wait. Robber.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="poena luenda" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        luere po[e]nas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To suffer punishments.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="intermortuae co[n]ciones" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        intermortu[a]e co[n]ciones
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Moribund speeches.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in qua P. Clodius occisus fuit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        vbi Clodius interfectus.
+                    </marginalia_text>
+                    <person name="Publius Clodius Pulcher"/>
+                </position>
+            </language>
+            <translation>
+                Where Publius Clodius Pulcher died.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="illata defenditur" type="straight"/>
+        <underline language="LA" method="pen" text="Facere enim probus adolescens periculosè, quàm perpeti turpiter maluit" type="straight"/>
+        <underline language="LA" method="pen" text="Est enim haec Iudices non scripta, sed nata" type="straight"/>
+        <underline language="LA" method="pen" text="legimus, verum ex natura ipsa arripuimus, hausimus, expressimus: ad quam non docti, sed facti: non instituti, sed imbuti sumus:              vt si vita nostra in aliquas insidias, si in vim, in tela aut latronum aut inimicorum incidisset, omnis honesta ratio esset expediendae" type="straight"/>
+        <underline language="LA" method="pen" text="non enim dubito quin probaturus sim vobis defensionem meam, si id memineritis, quod obliuisci non potestis, insidiatorem iure interfici posse" type="straight"/>
+        
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">13</numeral>
+        
+        <!-- FSF: in the left margin, there are two @ signs or so -->
+        
+    </annotation>
+</transcription>

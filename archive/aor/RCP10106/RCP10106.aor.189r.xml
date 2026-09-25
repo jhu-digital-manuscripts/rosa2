@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.189r.tif" pagination="377" reader="John Dee" signature="A 5"/> 
+    <annotation>
+        
+        <marginalia anchor_text="comparationem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Comparatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Comparison.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in Catilinam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In Catilinam.</marginalia_text>
+                    <book title="In Catilinam"/>
+                </position>
+            </language>
+            <translation>In Catilinam.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tui" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>* forsa[n] tibi</marginalia_text>  <!-- M.B. This is an errata but I've captured it as a marginal note since Dee notes 'forsa[n]'. -->
+                </position>
+            </language>
+            <translation>Perhaps 'tibi'.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Cluentio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Clue[n]tio</marginalia_text>
+                    <book title="Pro Cluentio"/>
+                </position>
+            </language>
+            <translation>Pro Cluentio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nec putet quisqua[m] hoc, quanquàm est simile illi ex argumentis loco quo maiora ex minoribus colliguntur, idem esse" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Notandum.</marginalia_text>
+                </position>
+            </language>
+            <translation>To be noted.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="P. Scipio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>P[ublicus]. Scipio.</marginalia_text>
+                    <person name="Publius Cornelius Scipio"/>
+                </position>
+            </language>
+            <translation>Publius Scipio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ratiocinationem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ratiocinatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Reasoning.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="pro abortu pecunia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Nec putet quisqua[m] hoc, quanquàm est simile illi ex argumentis loco quo maiora ex minoribus colliguntur, idem esse" type="straight"/>
+        <underline language="LA" method="pen" text="ut ille male fecerit, sed ut" type="straight"/>
+        <underline language="LA" method="pen" text="tamen quanquàm diuersarum rerum quaedam uicinia" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3</numeral>
+        
+        <errata amendedtext="[tibi]" copytext="tui" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

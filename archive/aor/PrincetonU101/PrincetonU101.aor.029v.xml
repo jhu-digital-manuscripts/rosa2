@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.029v.tif" pagination="xxv[v]" reader="Harvey" signature="Gi[v]"/>
+    <annotation>
+    	<!-- Marginalia -->
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					nota, pro peditatu.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Note, in favor of infantry.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					Vsus Vtriusque, {	Equitatus.
+    								Peditatus.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			The use of both, {	Cavalry
+    						Infantry
+    		</translation>
+    	</marginalia>
+    	
+    	<!-- Underlines -->
+	<underline language="EN" method="pen" text="beene taken, ruinated" type="straight"/>
+    	<underline language="EN" method="pen" text="through not other fault" type="straight"/>
+    	<underline language="EN" method="pen" text="care, of the seruice on foote, and" type="straight"/>
+    	<underline language="EN" method="pen" text="all on horsebacke" type="straight"/>
+    	<underline language="EN" method="pen" text="had horses, but for seconde" type="straight"/>
+    	<underline language="EN" method="pen" text="of an armie" type="straight"/>
+    	<underline language="EN" method="pen" text="make a discouery" type="straight"/>
+    	<underline language="EN" method="pen" text="to ouer run" type="straight"/>
+    	<underline language="EN" method="pen" text="to destroy the enemies countrie" type="straight"/>
+    	<underline language="EN" method="pen" text="troubled and disquieted, the armie of the" type="straight"/>
+    	<underline language="EN" method="pen" text="let them of their victuals" type="straight"/>
+    	<underline language="EN" method="pen" text="necessary, and most" type="straight"/>
+    	<underline language="EN" method="pen" text="daye of battaile, and" type="straight"/>
+    	<underline language="EN" method="pen" text="enemie being discomfited" type="straight"/>
+    	<underline language="EN" method="pen" text="footemen much inferiour" type="straight"/>
+    	<underline language="EN" method="pen" text="Parthians dyd" type="straight"/>
+    	<underline language="EN" method="pen" text="warre, other then horses" type="straight"/>
+    	<underline language="EN" method="pen" text="they deuided the" type="straight"/>
+    	<underline language="EN" method="pen" text="shewe, howe the horsemen can" type="straight"/>
+    	<underline language="EN" method="pen" text="withstoode of footemen" type="straight"/>
+    	<underline language="EN" method="pen" text="whereof groweth the strength" type="straight"/>
+    	<underline language="EN" method="pen" text="reasoning of the affaires" type="straight"/>
+    	<underline language="EN" method="pen" text="not to passe the boundes of Europe" type="straight"/>
+    	<underline language="EN" method="pen" text="same, which is vsed in Asia" type="straight"/>
+    	<underline language="EN" method="pen" text="warring of the Parthians" type="straight"/>
+    	<underline language="EN" method="pen" text="contrarye, to the same" type="straight"/>
+    	<underline language="EN" method="pen" text="Parthians, warred all" type="straight"/>
+    	<underline language="EN" method="pen" text="proceded confusedlye" type="straight"/>
+    	<underline language="EN" method="pen" text="a maner of fighte vnstable" type="straight"/>
+    		
+    	<underline language="EN" method="pen" text="horsmen be" type="straight"/>
+    	
+    	<!-- Marks -->
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="not to passe the boundes of Europe"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="through not other fault"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="make a discouery"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="to ouer run"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="to let them of their victuals"/>
+    	<mark method="pen" name="bracket" place="intext"/>
+    	<mark method="pen" name="bracket" place="intext"/>
+    	<mark method="pen" name="plus_sign" place="intext"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="whereof groweth the strength"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- Asia, yet -->
+    	
+    	
+    </annotation>
+</transcription>

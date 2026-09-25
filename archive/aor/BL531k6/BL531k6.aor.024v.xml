@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL531k6.024v.tif" pagination="[024v]" reader="John Dee" signature="[F4[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="ferè maximo interuallo aequalem superat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nota annu[m] nunc ferè Maximu[m].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Note that now is almost the greatest year.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nota</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="apparentem annum tropicum ab aequali parum abfuisse" type="straight"/>
+        <underline language="LA" method="pen" text="ferè" type="double"/>
+        <underline language="LA" method="pen" text="maximo interuallo aequalem superat" type="straight"/>
+        <underline language="LA" method="pen" text="circiter quadratem" type="straight"/>
+        <underline language="LA" method="pen" text="etiam longius ab ea recedit" type="straight"/>
+        <underline language="LA" method="pen" text="non multum" type="double"/>
+        <underline language="LA" method="pen" text="à vero dissentientem" type="straight"/>
+        <underline language="LA" method="pen" text="ijs natiuitatibus" type="double"/>
+        <underline language="LA" method="pen" text="habent" type="straight"/>
+        <underline language="LA" method="pen" text="Sed in eo fallitur" type="straight"/>
+        <underline language="LA" method="pen" text="neglecta mutatione anni, qua" type="straight"/>
+        
+    </annotation>
+</transcription>

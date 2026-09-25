@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+    <page filename="FolgersHa2.010r.tif" pagination="339" reader="Harvey"/>	<!-- ABO 14right -->
+    <annotation>
+        
+        <!-- Marginalia -->
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                      Vita Eudromi.
+                    </marginalia_text>
+                	<person name="Eudromus"/>
+                </position>
+            </language>
+        	<translation>
+        		The life of Eudromus.
+        	</translation>
+        </marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="head">
+    				<marginalia_text>
+    					( polytechnia, et polypraxia.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			<!-- CG: These words seem to be neologisms for Harvey. Even if they might have had a Greek meaning,
+    			Harvey seems to have an idiosyncratic meaning for them. Perhaps one of the specialists on Harvey could
+    			provide a translation? --> <!--JG: I'll email it to the group-->
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="IT">
+    			<position book_orientation="0" place="tail">
+    				<marginalia_text>
+    				( solo Cancelliere, politico. )	
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			( Only Chancellor, politician. ) 
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="tail">
+    				<marginalia_text>
+    					Ô quot minuta studia? heu egregia quam pauca?
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			O how many insignificant studies? Alas, how few distinguished studies?
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="90" place="left_margin">
+    				<marginalia_text>
+    					Spiritus intus alit: spiritus intus agit. Vnicismus ab Vnico:
+    					non à multis.	
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			The spirit nourishes within: the spirit acts within. Uniqueness from a single thing:
+    			not from many things.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="90" place="right_margin">
+    				<marginalia_text>
+    					Discere Summa; exquirere Summa; retexere Summa;
+    					Summa docere; Sequi, extendere, vita mea est. }
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			To learn the highest things; to scrutinize the highest things; to reveal the highest things;
+    			to teach the highest things; to follow, to exert myself, this is my life. }
+    		</translation>
+    	</marginalia>
+        
+        <!-- Underlines -->
+        
+    	<underline language="IT" method="pen" text="sia un Re molto ricco" type="straight"/>
+    	<underline language="IT" method="pen" text="doue spenderò io" type="straight"/>
+    	<underline language="IT" method="pen" text="stati donati" type="straight"/>
+    	<underline language="IT" method="pen" text="donargli altrui" type="straight"/>
+    	<underline language="IT" method="pen" text="gli amici miei, i quali" type="straight"/>
+    	<underline language="IT" method="pen" text="fatto seruigio" type="straight"/>
+    	<underline language="IT" method="pen" text="loro obligato" type="straight"/>
+    	<underline language="IT" method="pen" text="prima che" type="straight"/>
+    	<underline language="IT" method="pen" text="questo thesoro" type="straight"/>
+    	<underline language="IT" method="pen" text="trassero molti" type="straight"/>
+    	<underline language="IT" method="pen" text="uno" type="straight"/>
+    	<underline language="IT" method="pen" text="gli beeua con gli occhi" type="straight"/>
+    	<underline language="IT" method="pen" text="non racconti tu quel" type="straight"/>
+    	<underline language="IT" method="pen" text="in seruigio mio" type="straight"/>
+    	<underline language="IT" method="pen" text="pasciuto i Falcino del Re" type="straight"/>
+    	<underline language="IT" method="pen" text="un'altro diceua" type="straight"/>
+    	<underline language="IT" method="pen" text="quante piu parole" type="straight"/>
+    	<underline language="IT" method="pen" text="magnificaua il suo ufficio" type="straight"/>
+    	<underline language="IT" method="pen" text="qualche bugia" type="straight"/>
+    	<underline language="IT" method="pen" text="lodaua il parlare di ciascuno" type="straight"/>
+    	<underline language="IT" method="pen" text="Questa risolutione" type="straight"/>
+    	<underline language="IT" method="pen" text="prolungata lungo" type="straight"/>
+    	<underline language="IT" method="pen" text="per tormentargli piu" type="straight"/>
+    	<underline language="IT" method="pen" text="tutti con la speranza" type="straight"/>
+    	<underline language="IT" method="pen" text="con la paura" type="straight"/>
+    	<underline language="IT" method="pen" text="primo Ca[n]celliere" type="straight"/>
+    	<underline language="IT" method="pen" text="il Re" type="straight"/>
+    	<underline language="IT" method="pen" text="Costui piu sauio de gli" type="straight"/>
+    	<underline language="IT" method="pen" text="non predicaua gli uffici suoi" type="straight"/>
+    	<underline language="IT" method="pen" text="spettatore della comedia" type="straight"/>
+    	<underline language="IT" method="pen" text="il mio Cancelliere" type="straight"/>
+    	<underline language="IT" method="pen" text="non domanda cosa" type="straight"/>
+    	<underline language="IT" method="pen" text="ne predica gli uffici suoi" type="straight"/>
+    	<underline language="IT" method="pen" text="dalla cortesia" type="straight"/>
+    	<underline language="IT" method="pen" text="assai" type="straight"/>
+    	<underline language="IT" method="pen" text="piu di quel, che io meritaua" type="straight"/>
+    	<underline language="IT" method="pen" text="non come io possa rispondere" type="straight"/>
+    	<underline language="IT" method="pen" text="alla liberalità sua" type="straight"/>
+    	<underline language="IT" method="pen" text="uoglia chiedere cosa alcuna" type="straight"/>
+    	<underline language="IT" method="pen" text="tu solo fra tutti non hai" type="straight"/>
+    	<underline language="IT" method="pen" text="uostra cortesia, Sire" type="straight"/>
+    	<underline language="IT" method="pen" text="che io non n'habbia bisogno" type="straight"/>
+    
+        
+        <!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+        
+        <symbol name="SS" place="right_margin"/>
+    	<symbol name="JC" place="right_margin"/>
+        
+        <!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|tilde|triple_dash|vertical_bar|X_sign -->
+    	
+    	<mark method="pen" name="quotation_mark" place="head"/>
+    	
+    	<!-- Right margin -->
+    	<mark method="pen" name="plus_sign" place="right_margin"/> <!-- Questi mi so- -->
+    	<mark method="pen" name="dash" place="right_margin"/> <!-- que -->
+    	<mark method="pen" name="dash" place="right_margin"/> <!-- uer -->
+    	<mark method="pen" name="dash" place="right_margin"/> <!-- fat -->
+    	<mark method="pen" name="dash" place="right_margin"/> <!-- tem -->
+    	<mark method="pen" name="dash" place="right_margin"/> <!-- ciascu -->
+    	<mark method="pen" name="dash" place="right_margin"/> <!-- uffi -->
+    	<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- tutti -->
+    	
+    	<!-- Left margin -->
+    	<mark method="pen" name="plus_sign" place="left_margin"/> <!-- no stati -->
+    	<mark method="pen" name="equal_sign" place="left_margin"/> <!-- son hora -->
+    	<mark method="pen" name="straight_quotation_mark" place="left_margin"/> <!-- amoreuolmente -->
+    	<mark method="pen" name="bracket" place="left_margin"/> <!-- sta... paura -->
+    	<mark method="pen" name="plus_sign" place="left_margin"/> <!-- uio de gli -->
+    	<mark method="pen" name="plus_sign" place="left_margin"/> <!-- to; che -->
+    	<mark method="pen" name="bracket" place="left_margin"/> <!-- il Ca[n]celliere... que il Re -->
+    	<mark method="pen" name="bracket" place="left_margin"/> <!-- denari? ... ha fatto -->
+    
+    	<!-- Intext -->
+    	<mark method="pen" name="dot" place="intext"/> <!-- occhi, riuolto -->
+    	<mark method="pen" name="vertical_bar" place="intext"/> <!-- spesa: un'altro -->
+    	<mark method="pen" name="vertical_bar" place="intext"/> <!-- cosa: & -->
+    	<mark method="pen" name="straight_quotation_mark" place="intext"/> <!-- qualche bugia -->
+    	<mark method="pen" name="vertical_bar" place="intext"/> <!-- bugia. Il Re -->
+    	<mark method="pen" name="straight_quotation_mark" place="intext"/> <!-- lodaua -->
+    	<mark method="pen" name="plus_sign" place="intext"/> <!-- primo Ca[n]celliere -->
+    	<mark method="pen" name="plus_sign" place="intext"/> <!-- piu sa -->
+    	<mark method="pen" name="straight_quotation_mark" place="intext"/> <!-- non predicaua-->
+    	<mark method="pen" name="plus_sign" place="intext"/> <!-- comedia -->
+    	<mark method="pen" name="plus_sign" place="intext"/> <!-- io meritaua -->
+    	<mark method="pen" name="plus_sign" place="intext"/> <!-- tu solo -->
+    	
+    	<mark method="pen" name="plus_sign" place="tail"/>
+
+    </annotation>
+</transcription>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.120v.tif" pagination="226" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="vmbilici terrae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vmbilicus terra[e].</marginalia_text>
+                </position>
+            </language>
+            <translation>The middle of the land.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quos? Quo tempore, et quibus temporibus?</marginalia_text>
+                </position>
+            </language>
+            <translation>Whom? At what time, and at what times?</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nomine Gog" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>No[m]i[n]e Og.</marginalia_text>
+                    <person name="Gog"/>
+                </position>
+            </language>
+            <translation>By the name Gog.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Magog" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Magog.</marginalia_text>
+                    <person name="Magog"/>
+                </position>
+            </language>
+            <translation>Magog.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Magog esse regionem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Magog Regio.</marginalia_text>
+                    <location name="Magog"/>
+                </position>
+            </language>
+            <translation>The Magog region.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mosochis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Moschij mo[n]tes in Persidis finib[us]</marginalia_text>
+                    <location name="Meskheti Range"/>
+                    <location name="Persia"/>
+                </position>
+            </language>
+            <translation>The Moschian mountains at the borders of Persia.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="suorum sedibus" type="straight"/>
+        <underline language="LA" method="pen" text="pacem quia Gog" type="straight"/>
+        <underline language="LA" method="pen" text="denu[n]ciare ipsi Gog" type="straight"/>
+        <underline language="LA" method="pen" text="vmbilici" type="straight"/>
+        <underline language="LA" method="pen" text="illi sine suo nomine" type="double"/>
+        <underline language="LA" method="pen" text="co[n]turbet Gog" type="double"/>
+        <underline language="LA" method="pen" text="Ezechielis 37. 38. 39." type="straight"/>
+        <underline language="LA" method="pen" text="Nam quos hostes" type="double"/>
+        <underline language="LA" method="pen" text="patriae redditus" type="straight"/>
+        <underline language="LA" method="pen" text="constat ex historiis" type="straight"/>
+        <underline language="LA" method="pen" text="reges Austri" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Aquilonis" type="straight"/>
+        <underline language="LA" method="pen" text="Aquilonis verò reges" type="straight"/>
+        <underline language="LA" method="pen" text="Syriae &amp; Asiae reges" type="straight"/>
+        <underline language="LA" method="pen" text="nomine Gog comprehendit" type="double"/>
+        <underline language="LA" method="pen" text="principem praecipuum &amp; regnatorem" type="straight"/>
+        <underline language="LA" method="pen" text="sunt affusi" type="straight"/>
+        <underline language="LA" method="pen" text="Magog" type="straight"/>
+        <underline language="LA" method="pen" text="populum Coelesyriae" type="straight"/>
+        <underline language="LA" method="pen" text="deprehendi ex Plinio" type="double"/>
+        <underline language="LA" method="pen" text="Bambycem" type="straight"/>
+        <underline language="LA" method="pen" text="Magog" type="double"/>
+        <underline language="LA" method="pen" text="vrbis seu potius" type="double"/>
+        <underline language="LA" method="pen" text="Gogum" type="double"/>
+        <underline language="LA" method="pen" text="contra Gog" type="straight"/>
+        <underline language="LA" method="pen" text="terram Magog" type="double"/>
+        <underline language="LA" method="pen" text="Mosoch &amp; Tubal" type="straight"/>
+        <underline language="LA" method="pen" text="Magog esse regionem" type="straight"/>
+        <underline language="LA" method="pen" text="virorum nominibus" type="double"/>
+        <underline language="LA" method="pen" text="Ita Gog, rex est populi Magog" type="double"/>
+        <underline language="LA" method="pen" text="igitur Syriae &amp; Asiae, qui successerunt Seleuco Nicatori, post Alexandri Magni obitum, intelliguntur sub nomine Gog" type="straight"/>
+        <underline language="LA" method="pen" text="Mosochis" type="straight"/>
+        <underline language="LA" method="pen" text="Israelitis reducibus" type="double"/>
+        <underline language="LA" method="pen" text="è captiuitate" type="straight"/>
+       
+        <mark method="pen" name="comma" place="intext"/>  <!-- quibus pios -->
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonDL45.105v.tif" pagination="210" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia anchor_text="Aurum enim sepulchris iustè detrahitur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Auru[m] Sepulcris legitime[m], iusteq[ue] detractu[m].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The gold is legitimately and justly removed from the grave.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Casiodorus" type="straight"/>
+        <underline language="LA" method="pen" text="talenta non teneant" type="straight"/>
+        <underline language="LA" method="pen" text="qui viuendi commercia reliquerunt" type="straight"/>
+        <underline language="LA" method="pen" text="Aurum enim sepulchris iustè detrahitur" type="straight"/>
+        <underline language="LA" method="pen" text="dominus in memoria non habetur" type="straight"/>
+        <underline language="LA" method="pen" text="culp[a]e genus est" type="straight"/>
+        <underline language="LA" method="pen" text="inutiliter" type="straight"/>
+        <underline language="LA" method="pen" text="Aurum qua[n]dp extrahendum" type="straight"/>
+        <underline language="LA" method="pen" text="mortuorum" type="straight"/>
+        <underline language="LA" method="pen" text="vnde se vita potest sustentare viuentium" type="straight"/>
+        <underline language="LA" method="pen" text="Non est enim cupiditas" type="straight"/>
+        <underline language="LA" method="pen" text="eripere" type="straight"/>
+        <underline language="LA" method="pen" text="quae nullus se dominus ingemiscat amisisse" type="straight"/>
+        <underline language="LA" method="pen" text="dicuntur aurum" type="straight"/>
+        <underline language="LA" method="pen" text="ardentum Indus Rex Scythiae" type="straight"/>
+        <underline language="LA" method="pen" text="humano vsui summa" type="straight"/>
+        <underline language="LA" method="pen" text="contrarium" type="straight"/>
+        <underline language="LA" method="pen" text="sicut latentia cum laude" type="straight"/>
+        <underline language="LA" method="pen" text="prodita" type="straight"/>
+        <underline language="LA" method="pen" text="inuenta cum vituperatione videantur" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!-- sepulchra, talenta -->
+        
+    </annotation> 
+</transcription>

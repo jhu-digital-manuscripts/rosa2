@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.137r.tif" pagination="97" reader="Harvey" signature="G[r]"/>	<!-- ABO 141right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Ignavus est, et sordidus, qui non dicit, scribit, agit
+						excellentiùs,
+						quàm isti vulgares: qui mundum circumagitant,
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						et interturbant omnia: vt Davus in Comoedia.
+						Multi politici, et pragmatici Daui: pauci Mitiones
+					</marginalia_text>
+					<person name="Davus"/>
+					<person name="Micio"/>
+					<book title="Andria"/>
+						<!-- Mitio is a character in Terence's Adelphoe -->
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						et Scipiones.
+					</marginalia_text>
+					<person name="Scipio Africanus"/>
+				</position>
+			</language>
+			<translation>
+				He who does not speak, write, or do more excellently than these common men is a filthy coward,
+				Those who stir the world about and agitate things from the inside are like Davus in that comedy.
+				Many politicians and pragmatic Davuses, few Micios and Scipios.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						dilemma retortum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A dilemma in the retort.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Multa dicuntur: pauca fiunt.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Many things are said; few are done.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Flamma Sine fumo: solus Actor.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A flame without smoke, a sole actor.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Stultus sapit, qui in principio cogitat de fine.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				He who reflects on the end in the beginning is thinking like a fool.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Magnus strepitus: parvus effectus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Much noise; little effect.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Axiophilus de Eutrapelo. Quis novus eluxit solerti Da[e]dalus orbi,
+						vultu, voce, animo, techna insuperabilis, aut re? Delitium in dictis,
+						in factis viua procella. Semper ad effectum: puncto strictissimus
+					</marginalia_text>
+					<person name="Axiophilus"/>
+					<person name="Eutrapelus"/>
+					<person name="Daedalus"/>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						omni.
+					</marginalia_text>
+					<emphasis method="pen" text="omni." type="straight"/>
+				</position>
+			</language>
+			<translation>					
+				Axiophilus concerning Eutrapelus. Who reveals himself as the new Daedalus in the shrewd world, with looks, voice, spirit, incomparable skills, or anything? 
+				A delight in words, a living storm in deeds. Always concerned with the outcome, strictest with every detail.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Vt Vulcanus, sic Da[e]dalus; Semper ad incudem: puncto strictissimus omni. 
+					</marginalia_text>
+					<person name="Vulcan"/>
+					<person name="Daedalus"/>
+				</position>
+			</language>
+			<translation>
+				As Vulcan, so Daedalus. Always at the anvil, most strict every point.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="huomini saui" type="straight"/>
+		<underline language="IT" method="pen" text="non douersi dare all'amministratione" type="straight"/>
+		<underline language="IT" method="pen" text="CRISIPPO" type="straight"/>
+		<underline language="IT" method="pen" text="desse alla amministratione della Republica" type="straight"/>
+		<underline language="IT" method="pen" text="male" type="straight"/>
+		<underline language="IT" method="pen" text="à Dio" type="straight"/>
+		<underline language="IT" method="pen" text="bene" type="straight"/>
+		<underline language="IT" method="pen" text="gli huomini" type="straight"/>
+		<underline language="IT" method="pen" text="Sidonio suo scolare" type="straight"/>
+		<underline language="IT" method="pen" text="ritorse argutamente" type="straight"/>
+		<underline language="IT" method="pen" text="facesti bene" type="straight"/>
+		<underline language="IT" method="pen" text="facesti male" type="straight"/>
+		<underline language="IT" method="pen" text="alla riuscita" type="straight"/>
+		<underline language="IT" method="pen" text="all'entrata, delle" type="straight"/>
+		<underline language="IT" method="pen" text="Re Francesco primo di quel" type="straight"/>
+		<underline language="IT" method="pen" text="ricuperare il Ducato di Milano" type="straight"/>
+		<underline language="IT" method="pen" text="poi prigione sotto Pauia" type="straight"/>
+		<underline language="IT" method="pen" text="qual via si douesse entrare" type="straight"/>
+		<underline language="IT" method="pen" text="sua maestà, con" type="straight"/>
+		<underline language="IT" method="pen" text="risoluta" type="straight"/>
+		<underline language="IT" method="pen" text="Amaril suo buffone" type="straight"/>
+		<underline language="IT" method="pen" text="vostri saui, mi paiono pazzi" type="straight"/>
+		<underline language="IT" method="pen" text="à entrare in Italia" type="straight"/>
+		<underline language="IT" method="pen" text="voi n'hauete à vscire" type="straight"/>
+		<underline language="IT" method="pen" text="non vi rimanere" type="straight"/>
+		
+		<symbol name="Sun" place="right_margin"/>
+		
+		<symbol name="SS" place="intext"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="horizontal_bar" place="right_margin"/> <!-- am- -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- face -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- consul -->
+		<mark language="IT" method="pen" name="plus_sign" place="right_margin" text="qual via si douesse entrare"/> <!--prouincia-->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- consi -->
+		<mark method="pen" name="dash" place="right_margin"/> <!--vo-->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- lun -->	
+		
+		<mark method="pen" name="vertical_bar" place="intext"/> <!-- huomini. Ma -->
+		<mark method="pen" name="vertical_bar" place="intext"/> <!--below 'omni' in marginal note-->
+		
+    </annotation>
+</transcription>

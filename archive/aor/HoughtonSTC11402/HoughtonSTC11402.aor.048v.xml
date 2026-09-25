@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.048v.tif" reader="Harvey" signature="[Fi[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Talis Ars Strategematu[m], ad finem libri I. Pa[e]dia[e] Cyri: et certis capitibus Belloru[m] Annibalis, 
+                        pra[e]sertim illis quatuor astutissimis: 26.36.37. et 42.</marginalia_text>
+                    <person name="Hannibal"/>
+                    <book title="Cyropaedia"/>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>[the]</marginalia_text>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>very schoole of Machiauel, &amp;platfo[rm]e of pollicy.</marginalia_text>
+                    <person name="Machiavelli"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>quale Ar[t]ist. c.xi.l.5. politicoru[m]: cu[m] Ludouici Regij Gallicis Scholijs.
+                    Sed nemo Vnus, a[e]qualis</marginalia_text>
+                    <person name="Aristotle"/>
+                    <person name="Ludovicus Regius"/>
+                    <book title="Politics"/>
+                    <book title="Aristotle's Politiques"/>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Polya[e]no.</marginalia_text>
+                    <person name="Polyaenus"/>
+                </position>
+            </language>
+            <translation>Such art of stratagems towards the end of book 1 of Cyropaedia: and for specific chapters on Hannibal's wars, especially
+                four most astutes ones: [chapters] 26, 36, 37, and 42. [the] very schoole of Machiauel, &amp;platfo[rm]e of pollicy. Such as Aristotle, chapter 11, book 5 of his 'Politics'. With
+            the French notes of Ludovicus Regius. But not one equals Polyaenus. </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="imbushementes" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A pittfall.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="270" place="right_margin">
+                    <marginalia_text>Quia belloru[m] nerui, tam ad corrumpendu[m], quàm ad omnia necessaria supplementa, pecunia[e]:
+                    </marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Oeconomica Arist. Exempla valent plurimu[m]</marginalia_text>
+                    <book title="Economics"/>
+                </position>
+            </language>
+            <translation>Because money is the sinew of wars, both for bribing as for all necessary supplements. The example are very strong in Aristotles' 'Economics'.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Of traynes and disceytes." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>De Insidijs.</marginalia_text>
+                </position>
+            </language>
+            <translation>On ambushes.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Tale Caput, i[nfr]a, l.4. De diuersis Consilijs. Vulpis pera:</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0188" text="l.4"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>with the Italian Aggiunta: And Valerius chapter</marginalia_text>
+                    <book title="Valeri Maximi factorum et dictorum memorabilium libri novem"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>de Stratagematis,</marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>with Egnatius addition.</marginalia_text>
+                    <person name="Giovanni Battista Cipelli"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Multa paucis.</marginalia_text>
+                </position>
+            </language>
+            <translation>Such a chapter, [see] below, book 4. About various strategies. 
+                The bag of the fox: with the Italian addition: and Valerius' chapter on stratagems, with Egnatius' addition. <!--JG: Don't know which of Cipelli's books Harvey is talking about-->
+            Say much in few words.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="that women" type="straight"/>
+        <underline language="EN" method="pen" text="chylderne" type="straight"/>
+        <underline language="EN" method="pen" text="that were vnmete" type="straight"/>
+        <underline language="EN" method="pen" text="brynge droues of asses" type="straight"/>
+        <underline language="EN" method="pen" text="and oxen" type="straight"/>
+        <underline language="EN" method="pen" text="backwarde o" type="straight"/>
+        <underline language="EN" method="pen" text="auauncyng, and shewyng" type="straight"/>
+        <underline language="EN" method="pen" text="farther Scithiens" type="straight"/>
+        <underline language="EN" method="pen" text="Of traynes and disceytes. Cap.v." type="straight"/>
+        <underline language="EN" method="chalk" text="Of traynes and disceytes. Cap.v." type="straight"/>
+        <underline language="EN" method="pen" text="Romulus" type="straight"/>
+        <underline language="EN" method="pen" text="in secrete embushement" type="straight"/>
+        <underline language="EN" method="pen" text="saynyng hym selfe to flee" type="straight"/>
+        <underline language="EN" method="pen" text="hastily" type="straight"/>
+        <underline language="EN" method="pen" text="pursuyng him, thither where" type="straight"/>
+        <underline language="EN" method="pen" text="imbushementes lay" type="straight"/>
+        <underline language="EN" method="pen" text="Fabius Maximus" type="straight"/>
+        
+        <symbol language="LA" name="SS" place="head" text="Talis Ars Strategematu[m], ad finem libri I. Pa[e]dia[e] Cyri: et certis capitibus Belloru[m] Annibalis, pra[e]sertim illis quatuor astutissimis: 26.36.37. et 42."/>
+        
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark method="pen" name="X_sign" place="intext"/> <!--underneath 'valent' (in marginal note)-->
+        <mark method="pen" name="apostrophe" place="intext"/> <!--Romulus-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="imbushementes"/>
+        
+    </annotation>
+</transcription>

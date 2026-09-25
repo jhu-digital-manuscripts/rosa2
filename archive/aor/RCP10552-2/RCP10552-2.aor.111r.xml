@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.111r.tif" pagination="211" reader="John Dee" signature="S.iiij."/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>A[nno] 1378.</marginalia_text>
+                </position>
+            </language>
+            <translation>In the year of 1378.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Lancastriae instanter expetijt" type="straight"/>
+        <underline language="LA" method="pen" text="Petitio ducis Lancastriae" type="straight"/>
+        <underline language="LA" method="pen" text="praeconcessa regi in" type="straight"/>
+        <underline language="LA" method="pen" text="laicis sub arbitrio suo traderetur" type="straight"/>
+        <underline language="LA" method="pen" text="aliquod praegrande commodum" type="straight"/>
+        <underline language="LA" method="pen" text="importunae petitioni" type="straight"/>
+        <underline language="LA" method="pen" text="aduersam" type="straight"/>
+        <underline language="LA" method="pen" text="&amp;" type="straight"/>
+        <underline language="LA" method="pen" text="ipsum etia[m]" type="double"/>
+        <underline language="LA" method="pen" text="tantum in regno valere, vt" type="straight"/>
+        <underline language="LA" method="pen" text="omninò" type="double"/>
+        <underline language="LA" method="pen" text="non expediret eius contradicere voluntati" type="straight"/>
+        <underline language="LA" method="pen" text="Roberto Knoll, custodi muncipij de Brest" type="straight"/>
+        <underline language="LA" method="pen" text="qui se dicit regem" type="double"/>
+        <underline language="LA" method="pen" text="Henricus Bastardus nauigium parat" type="straight"/>
+        <underline language="LA" method="pen" text="sed ob eius regnu[m], (quod idem dux perebat ratione vxoris h[a]eredis legitim[a]e regni ipsius Hispani[a]e)" type="straight"/>
+        <underline language="LA" method="pen" text="Quod forsitan" type="straight"/>
+        <underline language="LA" method="pen" text="Portingaliae sibi impedimento non suisset" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- laicis, sub -->
+        <mark method="pen" name="comma" place="intext"/> <!-- fortunam, aduersam-->
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

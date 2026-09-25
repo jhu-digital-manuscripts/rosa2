@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.113v.tif" pagination="[cix[v]]" reader="Harvey" signature="[Eei[v]]"/>
+    <annotation>
+    	<!-- Marginalia -->
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="head">
+    				<marginalia_text>
+    					Miltar discipline, &amp; this whole
+    					Art of Warfare, inamanner
+    				</marginalia_text>
+    			</position>
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					altogither occupied, in obseruing &amp; executing
+    					these, or semblable Orders: aswell skilfully,
+    					&amp; reddily,
+    				</marginalia_text>
+    			</position>
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					as cheerfully, &amp; valiantly.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					s[upr]a,
+    				</marginalia_text>
+    			</position>
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					fol. 70.v. et 87.v.
+    				</marginalia_text>
+    				<internal_ref>
+    					<target ref="PrincetonU101:00000154" text="70.v."/>
+    					<target ref="PrincetonU101:00000188" text="87.v."/>
+    				</internal_ref>
+    			</position>
+    		</language>
+    		<translation>
+    			[See] above, folio 70v and 87v.
+    		</translation>
+    	</marginalia>
+    	
+    	<!-- Underlines -->
+	<underline language="EN" method="pen" text="order of the" type="straight"/>
+    	<underline language="EN" method="pen" text="and of the" type="straight"/>
+    	<underline language="EN" method="pen" text="and lodginges in the Campe" type="straight"/>
+    	<underline language="EN" method="pen" text="the figure of euerie" type="straight"/>
+    	<underline language="EN" method="pen" text="what poinctes and letters" type="straight"/>
+    	
+    	<underline language="EN" method="pen" text="captayne of hundred" type="straight"/>
+    	<underline language="EN" method="pen" text="armie" type="straight"/>
+
+    	<!-- Marks -->
+    	<mark method="pen" name="dot" place="intext"/> <!-- armyes, and -->
+      	<mark method="pen" name="dot" place="intext"/> <!-- appoincted, I -->
+    	
+    	<!-- Errata -->
+    	<errata amendedtext="the" copytext="he" language="EN"/>
+    	<errata amendedtext="[deleted]" copytext="a" language="EN"/>
+    	
+    </annotation>
+</transcription>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.030r.tif" pagination="43" reader="John Dee" signature="d 4"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ♃ <!-- the rest in the gutter -->
+                    </marginalia_text>
+                    <symbol_in_text name="Jupiter"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Locus valde corruptus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A very corrupt place.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="crescentis ☾ lumen exceperit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ♂ ☾a[e] cresce[n]tis lumen exceperit 
+                    </marginalia_text>
+                    <symbol_in_text name="Mars"/>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>
+                Mars receives the light of the growing moon.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="biothanatus" hand="English_secretary" id="UCLOgden:066:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Biothanatus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Dying a violent death.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="enim misera ♀" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ♀ quando misera
+                    </marginalia_text>
+                    <symbol_in_text name="Venus"/>
+                </position>
+            </language>
+            <translation>
+                When Venus is miserable.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="fuisse constitutus" type="double"/>
+        <underline language="LA" method="pen" text="&amp; antiscium eius ☉ antiscium de diametri" type="straight"/>
+        <underline language="LA" method="pen" text="amplissimi ordinis decreto, eum in exiliu[m] mitti fecerunt, ob hoc quod ♄ &amp; ☉ antiscia, in cosmicis constituta syderibus, de diametro se uiderunt" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; est perniciosus, quoties de quocunque latere, crescentis ☾ lumen exceperit, nam superior effectus" type="straight"/>
+        <underline language="LA" method="pen" text="uiolenta" type="straight"/>
+        <underline language="LA" method="pen" text="Quarto" type="straight"/>
+        <underline language="LA" method="pen" text="Ex omnibus itaq[ue] ne lateribus scrscens ☾, martis" type="straight"/>
+        <underline colour="red" language="LA" method="pen" text="(altitudo enim ♃ est ♋) de" type="dotted"/>
+        <underline language="LA" method="pen" text="♃ beneficia in prioribus partibus diximus, ob hoc, quia terto die ☾ in ♌ constituta, de diametro plena lumine, ♂ radiis impegit" type="straight"/>
+        <underline colour="red" language="LA" method="pen" text="dies, id est tertius, plurimum in modum in genituris operatur" type="dotted"/>
+        <underline language="LA" method="pen" text="implicata, si in occasu posita, uiolenta ♂ radiatione pulsetur, &amp; rursus antiscium ♀ in ♌ missum, ♂ in ♒" type="straight"/>
+        <underline language="LA" method="pen" text="sine antiscii ratione ♀ quadrata" type="straight"/>
+        <underline language="LA" method="pen" text="inimicos se genere societatis" type="straight"/>
+        <underline language="LA" method="pen" text="absconsarum literarum conscium faciunt" type="straight"/>
+        <underline language="LA" method="pen" text="domibus, ♄ Mercuriíq[ue] decernunt" type="straight"/>
+        <underline language="LA" method="pen" text="oratio eius ac stylus, ueteribus" type="straight"/>
+        <underline language="LA" method="pen" text="de istis criminibus Imperator fecit in illum sententiam" type="straight"/>
+        <underline language="LA" method="pen" text="nunquam eum tractantem fata hominum, coniecturae fallet intentio" type="straight"/>
+        <underline language="LA" method="pen" text="ad imaginem te diuinitatis, similitudinémque forma" type="straight"/>
+        <underline language="LA" method="pen" text="die de diis, ac cum diis loquitur, animum suum ita formate atq[ue] instruere, ut ad imitatione[m] diuinitatis semper accedat" type="straight"/>
+        <underline language="LA" method="pen" text="Tertius dies in genituris obseruandus" type="straight"/>
+        
+        <symbol language="LA" name="Saturn" place="intext" text="eius"/>
+        
+        <mark colour="red" method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- eius &Sun; -->
+        
+        <numeral language="LA" place="intext" text="primum">1</numeral>
+        <numeral language="LA" place="intext" text="Deinde">:2:</numeral>
+        <numeral language="LA" place="intext" text="Tertio">3</numeral>
+        <numeral language="LA" place="intext" text="Quarto">4</numeral>
+        
+        <errata amendedtext="☾" copytext="plenam" language="LA"/>
+        
+    </annotation>
+</transcription>

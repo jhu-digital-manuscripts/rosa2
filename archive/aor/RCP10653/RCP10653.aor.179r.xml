@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.179r.tif" pagination="349" reader="John Dee" signature="Gg"/>
+    <annotation>
+        
+        <marginalia anchor_text="longas naues" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Longa[e] naues
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Longboats.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Ceolmundum" type="straight"/>
+        <underline language="LA" method="pen" text="Roffensi Suithulfum" type="straight"/>
+        <underline language="LA" method="pen" text="Comitem Brithulfum" type="straight"/>
+        <underline language="LA" method="pen" text="Comitem Aethelredum" type="straight"/>
+        <underline language="LA" method="pen" text="Dorkacesteria Halardum" type="straight"/>
+        <underline language="LA" method="pen" text="longas naues, quas cyulas" type="straight"/>
+        <underline language="LA" method="pen" text="Rollo quidam" type="straight"/>
+        <underline language="LA" method="pen" text="insula" type="straight"/>
+        <underline language="LA" method="pen" text="vir strenuus &amp; potens, quem pater" type="straight"/>
+        <underline language="LA" method="pen" text="retento" type="straight"/>
+        <underline language="LA" method="pen" text="primogenito" type="triple"/>
+        <underline language="LA" method="pen" text="filio vt sibi succederet" type="double"/>
+        <underline language="LA" method="pen" text="Ameltrudem" type="straight"/>
+        <underline language="LA" method="pen" text="De Rollone primo Normannorum" type="straight"/>
+        
+        <errata amendedtext="peninsula" copytext="insula" language="LA"/>
+        
+    </annotation>
+</transcription>

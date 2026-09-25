@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.224v.tif" reader="John Dee" signature="[Q 4[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Nilus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nilus.</marginalia_text>
+                    <location name="Nile"/>
+                </position>
+            </language>
+            <translation>Nile.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Inde" type="straight"/>
+        <underline language="LA" method="pen" text="cadunt" type="double"/>
+        <underline language="LA" method="pen" text="noctes, surgunt'q[ue] in tempora luces," type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonPE1137.003r.tif" pagination="2[r]" reader="Harvey" signature="a.ii.r"/>
+    <annotation>
+        
+        <marginalia anchor_text="ad te" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Smithus.
+                    </marginalia_text>
+                    <person name="Thomas Smith"/>
+                </position>
+            </language>
+            <translation>
+                Smith.
+            </translation>
+        </marginalia>
+        <marginalia anchor_text="ad Haddonu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Haddonus.
+                    </marginalia_text>
+                    <person name="Walter Haddon"/>
+                </position>
+            </language>
+            <translation>
+                Haddon.
+            </translation>
+        </marginalia>
+        <marginalia anchor_text="Ascamum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ascamus.
+                    </marginalia_text>
+                    <person name="Roger Ascham"/>
+                </position>
+            </language>
+            <translation>
+                Ascham.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="incurrerem in odium eius              inexpiabile" type="straight"/>
+        <underline language="LA" method="pen" text="plaerisque in rebus              diversissimum ab opinionibus illius habeo iudicium" type="straight"/>
+        <underline language="LA" method="pen" text="De re nummaria" type="straight"/>
+        <underline language="LA" method="pen" text="controversia nostra fuit descriptione             nostri sermonis" type="straight"/>
+        <underline language="LA" method="pen" text="quibusdam suffarcinatas esse syllabas             literis" type="straight"/>
+        <underline language="LA" method="pen" text="novas excogitare literas " type="straight"/>
+        <underline language="LA" method="pen" text="ridere Sardonicè" type="straight"/>
+        <underline language="LA" method="pen" text="me suo more irridere" type="straight"/>
+        <underline language="LA" method="pen" text="scribatur" type="straight"/>
+        <underline language="LA" method="pen" text="legi queat" type="straight"/>
+        <underline language="LA" method="pen" text="ad te" type="straight"/>
+        <underline language="LA" method="pen" text="ad Haddonu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Ascamum" type="straight"/>
+        <underline language="LA" method="pen" text="sponsione" type="straight"/>
+        <underline language="LA" method="pen" text="illo certare" type="straight"/>
+        <underline language="LA" method="pen" text="ni vos secundu[m] me sententiam              feratis" type="straight"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="plaerisque              in rebus diversissimum ab opinionibus illius habeo iudicium"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        
+    </annotation>
+</transcription>

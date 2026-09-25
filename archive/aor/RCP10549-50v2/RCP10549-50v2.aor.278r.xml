@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.278r.tif" pagination="7" reader="John Dee" signature="Aa.iiii."/> 
+    <annotation>
+        
+        <marginalia anchor_text="omnino in rerum natura minimum, quod diuidi nequeat; mundum, extra quem nulla pars materiae sit, nullúmque corpus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Nihil est o[mn]i[n]o in reru[m] natura minimu[m] quod diuidi nequeat
+                        Extra mu[n]du[m] nulla pars materia[e] nullu[m] Corpus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                There is nothing whatsoever in the nature of things which is the absolute least, unable to be divided.
+                Outside the world there is no part of matter, no body.
+            </translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="interdum; nonnunquam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        interdu[m] nonnu[n]q[u]a[m].      
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Sometimes; sometimes.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="infinite" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>infinitè</marginalia_text>
+                </position>
+            </language>
+            <translation>Infinitely.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="commutari; laberentur &amp; fluerent; " hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        labi
+                        fluere
+                        co[m]mutari
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To ebb.
+                To flow.
+                To be changed.
+            </translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="natura cohaerente &amp; continuata" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        natura[m] coherens          <!-- DO: Possibly contraction sign has been crossed out -->
+                                  co[n]tinuata.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Coherent and continual nature.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        ascuritas            <!-- DO: Not sure about either of these --> <!--JG: Can't figure this out either-->
+                        [ignoratio]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Ignorance.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>conissare</marginalia_text>     <!-- DO: Not sure --> <!--JG: Me neither-->
+                </position>
+            </language>
+            <translation/>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="appellaba[n]t; dicere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        apellare
+                        dicere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To name.
+                To call.
+            </translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="quae subiectae sensibus viderentur, quae essent aut ita paruae, vt sub sensum cadere non possent: aut ita mobiles &amp; concitatae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        res subiecte sensibus { mobiles
+                                               concitata[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                  Things in the realm of the senses [are] agitated [and] mobile.
+            </translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Quae autem moueantur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>De motu forma[e].</marginalia_text>
+                </position>
+            </language>
+            <translation>On the movement of forms.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="vltro citróque" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vltro citroq[ue].</marginalia_text>
+                </position>
+            </language>
+            <translation>To and fro.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="qualia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Qualia</marginalia_text>
+                </position>
+            </language>
+            <translation>Qualified.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="mundum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>MVNDVS</marginalia_text>
+                </position>
+            </language>
+            <translation>The world.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Parteis autem esse mundi omnia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Partes mu[n]di.</marginalia_text>
+                </position>
+            </language>
+            <translation>The parts of the world.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Quam vim animum dicu[n]t esse mundi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Animus mu[n]di</marginalia_text>
+                </position>
+            </language>
+            <translation>The spirit of the world.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="vale[n]tius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>{ valentius</marginalia_text>
+                </position>
+            </language>
+            <translation>More strongly.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Deum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>.DEVS.</marginalia_text>
+                </position>
+            </language>
+            <translation>God.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Necessitatem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Necessitas Quid.</marginalia_text>
+                </position>
+            </language>
+            <translation>What necessity is.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="inter quasi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>inter quasi.</marginalia_text>
+                </position>
+            </language>
+            <translation>As if between.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Fortuna" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Fortuna Quid.</marginalia_text>
+                </position>
+            </language>
+            <translation>What fortune is.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="improuisa" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Improuisa.</marginalia_text>
+                </position>
+            </language>
+            <translation>Improvised.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Tertia deinde philosophiae pars, quae erat in ratione, &amp; in disserendo sic tractabatur ab vtrisque, Quanqua[m] oriretur à sensibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>R[ati]o disserendi oritur à se[n]sibus</marginalia_text>
+                </position>
+            </language>
+            <translation>The reason of discussion rises from the senses.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="no[n] esse iudicium veritatis in sensibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Iudiciu[m] veritatis no[n] e[sse] in se[n]sib[us].</marginalia_text>
+                </position>
+            </language>
+            <translation>Judgement of the truth is not in the senses.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Mentem voleba[n]t rerum esse iudicem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>MENS sola iudex reru[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>The mind [is] the sole judge of things.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Ideam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>.IDEA.</marginalia_text>
+                </position>
+            </language>
+            <translation>Idea.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Sensus autem omnes hebetes &amp; tardos esse arbitrabantur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        sensus { hebetes
+                        Tardi
+                        angusti .9.63
+                        integri
+                        incorru[m]pti ] 13.39.
+                        sani
+                        valentes ] 13.39
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP10549-50v2:0567" text="9.63"/>
+                    </internal_ref>
+                    <internal_ref>
+                        <target prefix="incorru[m]pti ] " ref="RCP10549-50v2:0571" suffix="sani" text="13.39."/>
+                    </internal_ref>
+                    <internal_ref>
+                        <target prefix="valentes ] " ref="RCP10549-50v2:0571" text="13.39"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                The senses: dull, slow, narrow, [page] 9, [section] 63, complete, sound, strong.
+            </translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Sensus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>SENSVS</marginalia_text>
+                </position>
+            </language>
+            <translation>The senses.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="continenter" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>co[n]tine[n]ter</marginalia_text>
+                </position>
+            </language>
+            <translation>Continually.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="rerum opinabilem" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>DIAλεκτικη</marginalia_text> <!-- instead of διαλεκτική or ΔΙΑΛΕΚΤΙΚΗ -->
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>opinabilis reru[m]</marginalia_text>    
+                </position>
+            </language>
+            <translation>Dialectic is the conjectural study of things.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Scie[n]tiam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>SCIENTIA.</marginalia_text>
+                </position>
+            </language>
+            <translation>Knowledge.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Qua de causa definitiones rerum probaba[n]t, &amp; has ad omnia de quibus disceptabatur, adhibeba[n]t" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ad vna[m]qua[m]q[ue] re[m] de qua disceptaba[n]t diff[initi]o[n]es abhibeba[n]t</marginalia_text>
+                </position>
+            </language>
+            <translation>To whichever matter which they discussed they assigned definitions.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Etymologiam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ETYMOLOGÏA.</marginalia_text>      
+                </position>
+            </language>
+            <translation>ETYMOLOGY.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="dialectica" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>DIALECTICA.</marginalia_text>
+                </position>
+            </language>
+            <translation>Dialectics.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="oratoria vis; Haec erat illis prima à Platone tradita" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ORATORIA VIS à PLATONE prima</marginalia_text>
+                    <person name="Plato"/>
+                </position>
+            </language>
+            <translation>The faculty of oratory, the primary method from Plato.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Aristoteles primus, species quas pauloante dixi, labefactauit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ARISTOTELES primus spe[cie]s labefactauit.</marginalia_text>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>Aristotle first undermined the types.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Theophrastus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>THEOPHRASTVS laudatur.</marginalia_text>
+                    <person name="Theophrastus"/>
+                </position>
+            </language>
+            <translation>Theophrastus is praised.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Strato" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>STRATO</marginalia_text>
+                    <person name="Strato of Lampsacus"/>
+                </position>
+            </language>
+            <translation>Strato of Lampsacus.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="qui quum maxime necessariam partem philosophiae, quae posita est in virtute &amp; in moribus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Philosophia moralis maximè necessaria</marginalia_text>
+                </position>
+            </language>
+            <translation>Moral philosophy [is] extremely necessary.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Speusippus autem &amp; Xenocrates; Polemo &amp; Crates, vnáque Crantor; Zeno &amp; Arcesilas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        SPEVSIPPVS.
+                        XENOCRATES.
+                        POLEMO
+                        CRATES.
+                        ZENO
+                        ARCESILAS
+                    </marginalia_text>
+                    <person name="Speusippus"/>
+                    <person name="Xenocrates of Chalcedon"/>
+                    <person name="Polemon"/>
+                    <person name="Crates of Athens"/>
+                    <person name="Zeno of Citium"/>
+                    <person name="Arcesilaus"/>
+                </position>
+            </language>
+            <translation>
+                Speusippus. Xenocrates of Chalcedon. Polemon. Crates of Athens. Zeno of Citium. Arcesilaus.
+            </translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Antiochus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ANTIOCHVS</marginalia_text>
+                    <person name="Antiochus of Ascalon"/>
+                </position>
+            </language>
+            <translation>Antiochus of Ascalon.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Po[m]ponium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>POMPONIVS</marginalia_text>
+                    <person name="Titus Pomponius Atticus"/>
+                </position>
+            </language>
+            <translation>Titus Pomponius Atticus.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Theophrastus, neruos virtutis inciderit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Theophrastus nervos v[ir]tutis incidit.</marginalia_text>
+                    <person name="Theophrastus"/>
+                </position>
+            </language>
+            <translation>Theophrastus met the tendons of virtue.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="honestum quod" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>HONESTV[M] QVID.</marginalia_text>
+                </position>
+            </language>
+            <translation>What is honest.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="labefactauit; vehementius etiam fregit quodammodo authoritatem veteris disciplinae; valdéque subtiliter dissereret" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        labefactare
+                        frangere veheme[n]tius
+                        valde subtilit[er] disserere
+                        infirmare
+                        tollere } 13.37
+                        evertere ibi
+                        evertere funditas
+                        eripere instrume[n]ta vel fundame[n]ta ] 
+                        coarguere.
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP10549-50v2:0571" text="13.37"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                To undermine.
+                To break more violently.
+                To discuss very precisely.
+                To weaken, to fall, [page] 13, [section] 37.
+                To overturn there.
+                To overturn the foundation.
+                To snatch the instruments and the foundations
+                To refute.
+            </translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="recte; Praeclare; mirifice; diligenter; subtiliter" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        recte
+                        pra[e]clarè
+                        dilige[n]ter
+                        mirificè.
+                        bene 6.37
+                        subtiliter
+                        ap[er]te
+                        p[er]spicue ] 20 15.61.109
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP10549-50v2:0564" text="bene 6.37"/>
+                        <target ref="RCP10549-50v2:0573" text="15.61"/>
+                        <target ref="RCP10549-50v2:0578" text="109"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                Rightly.
+                Clearly.
+                Carefully.
+                Wonderfully.
+                Well, 6.37.
+                Precisely.
+                Openly.
+                Clearly. 20 15.61.109 
+            </translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="oratione suauis; acri ingenio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        or[ati]o[n]e suavus.
+                        acri ingenio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Charming in speech.
+                An acute intellect.
+            </translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="numeraret in bonis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>numerare in bonis</marginalia_text>
+                </position>
+            </language>
+            <translation>To count in good things.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="anteiret aetate" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Anteibat a[e]tate.</marginalia_text>
+                </position>
+            </language>
+            <translation>He preceded in age.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="vt prae se probitatem quandam &amp; ingenuitatem ferat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        probitas
+                        ingenitas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Uprightness.
+                Nobility.
+            </translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="peracute moueretur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>p[er]acute moueri</marginalia_text>
+                </position>
+            </language>
+            <translation>To be stirred very acutely.</translation>
+        </marginalia>
+        
+        
+        <marginalia hand="English_secretary">    <!-- DO: I can't find this in the text -->
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>eidem quide[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Indeed to the same.</translation>
+        </marginalia>
+        
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        semonere
+                        seiungere         
+                        remouere
+                        auocare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To discuss.
+                To exclude.
+                To remove.
+                To call off.
+            </translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="omnino in rerum natura minimum, quod diuidi" type="straight"/>
+        <underline language="LA" method="pen" text="putant, &amp; illa effici quae appellant qualia, è quibus in omni natura cohaerente &amp; continuata cum omnibus suis partibus effectum esse mundum" type="straight"/>
+        <underline language="LA" method="pen" text="extra quem nulla pars materiae sit, nullúmque" type="straight"/>
+        <underline language="LA" method="pen" text="natura sentiente" type="straight"/>
+        <underline language="LA" method="pen" text="enim vale[n]tius esse à quo intereat" type="straight"/>
+        <underline language="LA" method="pen" text="subiectae, quasi prudentiam quandam procurantem caelestia maxime, deinde in terris ea quae pertine[n]t ad homines. Quam interdum eandem Necessitatem appellant, quia nihil aliter possit atque ab ea constitutum sit, inter quasi fatalem" type="straight"/>
+        <underline language="LA" method="pen" text="immutabilem continuationem ordinis sempiterni" type="straight"/>
+        <underline language="LA" method="pen" text="Nonnunqua[m] quidem eandem Fortuna[m], quòd efficiat multa improuisa haec nec opinata nobis, propter obscuritatem ignorationémque causaru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Quanqua[m] oriretur à sensibus, tamen no[n]" type="straight"/>
+        <underline language="LA" method="pen" text="Mentem voleba[n]t rerum esse iudicem: solam" type="straight"/>
+        <underline language="LA" method="pen" text="quia sola cerneret id quod semper esset simplex, &amp; vnius modi, &amp; tale quale esset" type="straight"/>
+        <underline language="LA" method="pen" text="hebetes &amp; tardos" type="straight"/>
+        <underline language="LA" method="pen" text="mobiles &amp; concitatae" type="straight"/>
+        <underline language="LA" method="pen" text="quia continenter laberentur &amp; fluerent" type="straight"/>
+        <underline language="LA" method="pen" text="nisi in animi motionibus atque rationibus" type="straight"/>
+        <underline language="LA" method="pen" text="definitiones rerum" type="straight"/>
+        <underline language="LA" method="pen" text="Verboru[m] etiam explicatio probabatur" type="straight"/>
+        <underline language="LA" method="pen" text="id est orationis ratione conclusae" type="straight"/>
+        <underline language="LA" method="pen" text="ex altera parte" type="straight"/>
+        <underline language="LA" method="pen" text="oratoria vis dicendi adhibebatur, explicatrix orationis perpetuae, ad persuadendum accommodatae" type="straight"/>
+        <underline language="LA" method="pen" text="Plato erat amplexatus" type="straight"/>
+        <underline language="LA" method="pen" text="vir &amp; oratione suauis, &amp; ita moratus, vt prae se probitatem quandam &amp; ingenuitatem ferat, vehementius" type="straight"/>
+        <underline language="LA" method="pen" text="Spoliauit enim virtutem suo decore" type="straight"/>
+        <underline language="LA" method="pen" text="imbecillámque reddidit" type="straight"/>
+        <underline language="LA" method="pen" text="fuit acri ingenio" type="straight"/>
+        <underline language="LA" method="pen" text="omnino semouendus" type="straight"/>
+        <underline language="LA" method="pen" text="posita est in virtute &amp; in moribus" type="straight"/>
+        <underline language="LA" method="pen" text="ad inuestigationem naturae" type="straight"/>
+        <underline language="LA" method="pen" text="anteiret aetate, valdéque" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; peracute moueretur" type="straight"/>
+        <underline language="LA" method="pen" text="significare Po[m]ponium" type="straight"/>
+        <underline language="LA" method="pen" text="neruos virtutis inciderit" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        
+        <mark method="pen" name="est_mark" place="head"/>
+        <mark method="pen" name="est_mark" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="head"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <mark method="pen" name="quattuorpunctus" place="right_margin"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- haec nec -->
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/> 
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        
+    </annotation>
+</transcription>

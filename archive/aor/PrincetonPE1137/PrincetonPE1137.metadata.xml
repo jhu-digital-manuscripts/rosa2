@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url>http://creativecommons.org/licenses/by/4.0/</url>
+        <logo>https://i.creativecommons.org/l/by/4.0/88x31.png</logo>
+    </license>
+    <totalPages>94</totalPages>
+    <dates>
+        <startDate>1568</startDate>
+        <endDate>1568</endDate>
+    </dates>
+    <texts>
+        <text id="1">
+            <language>la</language>
+            <title>De recta &amp; emendata linguæ Anglicæ scriptione dialogus (Paris, 1568)</title>
+            <textId>smith</textId>
+            <pages end="94v" start="1r">94</pages>
+        </text>
+    </texts>
+    <bibliographies>
+         <bibliography lang="en">
+            <title>De recta &amp; emendata linguæ Anglicæ scriptione dialogus (Paris, 1568)</title>
+            <commonName>Thomas Smith, De linguæ Anglicæ (Paris, 1568)</commonName>
+            <dateLabel>1568</dateLabel>
+            <origin>Paris</origin>
+            <currentLocation>Princeton University Library</currentLocation>
+            <repository>Princeton University Library</repository>
+            <shelfmark>PE1137.A2 S53 1568</shelfmark>
+            <author>
+              <name>Smith, Sir Thomas</name>
+              <id>http://www.isni.org/isni/0000000047468314</id>
+            </author>
+            <reader>
+              <name>Gabriel Harvey</name>
+              <id>http://www.isni.org/isni/0000000073570531</id>
+            </reader>
+            <website>https://archaeologyofreading.org/bibliography/Harvey-corpus/Smith</website>
+            <detail>[2], 44 leaves; 23 cm. (4to)</detail>
+            <note>Already digitized</note>
+        </bibliography>
+    </bibliographies>
+</book>

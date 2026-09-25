@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.060r.tif" reader="Harvey" signature="Gv[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Tali ingenio, foelix Sylla.</marginalia_text>
+                    <person name="Sulla"/>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vt i[nfr]a, c.8.</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0133" text="c.8."/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>The fortunate Sulla, with such a great innate quality. As below, chapter 8.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="so to do" type="straight"/>
+        <underline language="EN" method="pen" text="and comfort, that some" type="straight"/>
+        <underline language="EN" method="pen" text="to ayde hym, were by chaunce" type="straight"/>
+        <underline language="EN" method="pen" text="that those felowes had conspired to forsake hym" type="straight"/>
+        <underline language="EN" method="pen" text="in to those inconuenient" type="straight"/>
+        <underline language="EN" method="pen" text="he had reuenged hym selfe" type="straight"/>
+        <underline language="EN" method="pen" text="worde vnto Scipio" type="straight"/>
+        <underline language="EN" method="pen" text="oute of Sicilia in to Aphrike, in truste of his societie and" type="straight"/> 
+        <underline language="EN" method="pen" text="his souldiors courage, to" type="straight"/>
+        <underline language="EN" method="pen" text="leage and societye betwene them" type="straight"/>
+        <underline language="EN" method="pen" text="ambassadours quickly" type="straight"/>
+        <underline language="EN" method="pen" text="fame, that" type="straight"/>
+        <underline language="EN" method="chalk" text="Syphax had sent for" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="that those felowes had conspired to forsake hym"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="that those felowes had conspired to forsake hym"/> 
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="his souldiors courage, to"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="ambassadours quickly"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--hym. wherfore-->
+        <mark method="pen" name="dot" place="intext"/> <!--ayde, and-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="ambassadours quickly"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="tail" text="fame"/>
+        <mark method="pen" name="plus_sign" place="tail"/>
+        
+    </annotation>
+</transcription>

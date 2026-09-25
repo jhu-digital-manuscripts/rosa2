@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="UclCastiglione1541.019v.tif" pagination="[VIIv]" reader="Harvey" signature="[Biiiiv]"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        IIII. Giuoco proposto dallo Unico Aretino sopra la impresa della lettera S.
+                        che la Duchessa portaua in fronte.
+                    </marginalia_text>
+                    <person name="Bernardo Accolti"/>
+                    <person name="Elisabetta Gonzaga"/>
+                </position>
+            </language>
+            <translation>
+                IIII. Game proposed by the Unique Aretino about the device of the letter 'S',
+                which the Duchess was wearing on her forehead.
+            </translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="non è alcun di noi qui, che" type="straight"/>
+        <underline language="IT" method="pen" text="ui ceda in ogni cosa" type="straight"/>    
+        <underline language="IT" method="pen" text="l'ingegno uostro diuino" type="straight"/>
+        
+        <mark language="IT" method="pen" name="plus_sign" place="left_margin" text="ui ceda in ogni cosa"/>
+        <mark language="IT" method="pen" name="plus_sign" place="intext" text="l'ingegno uostro diuino"/> 
+  
+            
+    </annotation>
+</transcription>

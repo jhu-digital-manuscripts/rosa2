@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.182v.tif" pagination="348" reader="Harvey"/> 
+    <annotation>
+        <marginalia anchor_text="mors Hieronis; testamento prolato" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Testamentum regale Hieronis, prudentis Regis.
+                    </marginalia_text>
+                    <person name="Hiero II of Syracuse"/>
+                </position>
+            </language>
+            <translation>The royal will of Hiero, a prudent king.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="leuia praelia ex occasione, aut opportunitate huius aut" type="straight"/>
+        <underline language="LA" method="pen" text="meliorq[ue] eis Romanus" type="straight"/>
+        <underline language="LA" method="pen" text="in dies cautior, tutiorq[ue] ab insidijs fiebat" type="straight"/>
+        <underline language="LA" method="pen" text="mutauerat mors Hieronis" type="straight"/>
+        <underline language="LA" method="pen" text="regnumq[ue] ad Hyeronimum ab Hyeronimum nepotum eius" type="straight"/>
+        <underline language="LA" method="pen" text="puerum uixdum" type="straight"/>
+        <underline language="LA" method="pen" text="dominationem modicè laturu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ad praecipitandu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="in omnia uitia" type="straight"/>
+        <underline language="LA" method="pen" text="liberas Syracusas" type="straight"/>
+        <underline language="LA" method="pen" text="sub dominatu" type="straight"/>
+        <underline language="LA" method="pen" text="puerili per" type="straight"/>
+        <underline language="LA" method="pen" text="bonis artibus partu[m] firmatumq[ue] interiret regnum" type="straight"/>
+        <underline language="LA" method="pen" text="nomen regium penes pueru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="regimen" type="straight"/>
+        <underline language="LA" method="pen" text="omnes penes se, uiros" type="straight"/>
+        <underline language="LA" method="pen" text="tutorum primi" type="straight"/>
+        <underline language="LA" method="pen" text="nonagesimu[m] iam agenti annum" type="straight"/>
+        <underline language="LA" method="pen" text="noctesq[ue] muliebrib[us] blanditijs" type="straight"/>
+        <underline language="LA" method="pen" text="liberare animu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="conuertere ad publica[m] priuatamq[ue] cura[m]" type="straight"/>
+        <underline language="LA" method="pen" text="tutores numero" type="straight"/>
+        <underline language="LA" method="pen" text="quindecim puero" type="straight"/>
+        <underline language="LA" method="pen" text="disciplinaeq[ue], in qua" type="straight"/>
+        <underline language="LA" method="pen" text="testamento prolato" type="straight"/>
+        <underline language="LA" method="pen" text="paucis" type="straight"/>
+        <underline language="LA" method="pen" text="apporbantibus testamentu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="magis amore ciuiu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="iuuenem" type="straight"/>
+        <underline language="LA" method="pen" text="regni potentem" type="straight"/>
+        <underline language="LA" method="pen" text="in se unum" type="straight"/>
+        
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--me-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--re-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--no-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--excitan-->
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="bonis artibus partu[m] firmatumq[ue] interiret regnum"/>
+        <mark method="pen" name="comma" place="intext"/> <!--ratae regimen-->
+        <mark method="pen" name="dot" place="intext"/> <!--seruarent, iuuenemq[ue]-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="disciplinaeq[ue]"/>
+        
+    </annotation>
+</transcription>

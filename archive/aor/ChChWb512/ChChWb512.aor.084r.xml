@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.084r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="de vrbe Legionum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Vrbs legionu[m].
+                    </marginalia_text>
+                    <location name="Caerleon"/>
+                </position>
+            </language>
+            <translation>The City of Legions.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tertiam metropolitanam sedem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Tertia sedes Metropolitana.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Third metropolitan see.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex collateralibus insulis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Collaterales Insula[e].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The adjacent islands.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Caduallo Venedotor rex" hand="English_secretary" id="ChChWb512:WB5-12_0175_076r_m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Quis est iste Caduallo Rex?
+                    </marginalia_text>
+                    <person name="Cadwallo Lewirh"/>
+                </position>
+            </language>
+            <translation>Who is this king Cadwallo?</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="de vrbe" type="straight"/>
+        <underline language="LA" method="pen" text="Aaron" type="straight"/>
+        <underline language="LA" method="pen" text="subnixa tertiam" type="straight"/>
+        <underline language="LA" method="pen" text="Praeterea gymnasium ducentorum philosophorum habebat: qui astronomia atq[ue] caeteris artibus eruditi cursus stellarum diligenter obseruabant, &amp; prodigia" type="straight"/>
+        <underline language="LA" method="pen" text="tempore ventura regi Arthuro veris argumentis pr[a]edicebant" type="straight"/>
+        <underline language="LA" method="pen" text="q[uam] ex collateralibus" type="double"/>
+        <underline language="LA" method="pen" text="insulis oceani" type="double"/>
+        <underline language="LA" method="pen" text="Auguselus" type="straight"/>
+        <underline language="LA" method="pen" text="rex Albaniae q[uae] nu[n]c Scotia dicit" type="straight"/>
+        <underline language="LA" method="pen" text="Vrianus rex Murefrensiu[m]" type="straight"/>
+        <underline id="ChChWb512:WB5-12_0175_076r:u0001" language="LA" method="pen" text="Caduallo" type="double"/>
+        <underline language="LA" method="pen" text="Venedotor[um] rex" type="straight"/>
+        
+        <physical_link>
+            <marginal_annotation idref="ChChWb512:WB5-12_0175_076r:m0001"/>
+            <marginal_annotation idref="ChChWb512:WB5-12_0175_076r:u0001"/>
+            
+            <relation from="ChChWb512:WB5-12_0175_076r:m0001" to="ChChWb512:WB5-12_0175_076r:u0001" type="directed"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.103r.tif" pagination="185" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Consuetudo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Habit.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tot in Sicilia ciuitates sunt, quibus tu per triennium praefuisti: arguunt caeterae: paucae &amp; paruae metu repressae silent" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ciuitates metu rep[re]ss[a]e sile[n]t
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The repressed cities are silenced by fear.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mamertina ciuitas" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mamertiua ciuitas
+                    </marginalia_text>
+                    <location name="Galati Mamertino"/>
+                </position>
+            </language>
+            <translation>
+                Galati Mamertino.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vehiculum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vehiculu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Carriage.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="factitatum semper" hand="English_secretary">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        factitatu[m] se[m]per
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Invariable practice.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="missione" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        missio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Mission.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nauibus his semiplenis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        naves semiplen[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Half-manned vessels.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="multa sint" type="straight"/>
+        <underline language="LA" method="pen" text="qui decem laudatores dare non potest, honestius est ei nullu[m] dare quàm" type="straight"/>
+        <underline language="LA" method="pen" text="soli ex foedere quod debuerunt" type="straight"/>
+        <underline language="LA" method="pen" text="bis improbus" type="straight"/>
+        <underline language="LA" method="pen" text="illi tibi &amp; locum furtis &amp; furtorum vehiculum comperaueru[n]t. itaque" type="straight"/>
+        <underline language="LA" method="pen" text="tempore in tanta inopia nauium, tantáque calamitate" type="straight"/>
+        <underline language="LA" method="pen" text="Habetis vnius ciuitatis" type="straight"/>
+        <underline language="LA" method="pen" text="cui potest esse dubium quamobrem &amp; omnium consuetudinem veterem primus immutaris, &amp; tantam vtilitatem per alios tractandae pecuniae neglexeris, &amp; ta[n]tam difficultatem cu[m] crimine, molestiam cum suspitione suscaeperis?" type="straight"/>
+        <underline language="LA" method="pen" text="commeatu[m] totius aestatis" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark language="LA" method="pen" name="plus_sign" place="right_margin" text="commeatu[m] totius aestatis"/>
+        
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">19</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">8</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">45</numeral>
+        
+        <drawing anchor_text="qui decem laudatores dare non potest, honestius est ei nullu[m] dare quàm" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

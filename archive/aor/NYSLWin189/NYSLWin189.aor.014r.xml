@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.014r.tif" reader="John Dee" signature="Diij"/>
+    <annotation>
+        
+        <marginalia anchor_text="eysen zů kupffer" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ferrum in cuprum</marginalia_text>
+                </position>
+            </language>
+            <translation>Iron to cupper.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="holtz zů steinen machen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lignum in lapidem</marginalia_text>
+                </position>
+            </language>
+            <translation>Wood to stone.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sal gemmae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ex sale gemma</marginalia_text>
+                </position>
+            </language>
+            <translation>From salt gem.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="saltzbirgen" hand="Italian"> 
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In england, at Knaesborough, by Wetherby in [the - deleted] york shyre, is a well by the river syde which in the space of a wynter turneth any wood to stone.</marginalia_text>
+                    <location name="England"/>
+                    <location name="Knaresborough"/>
+                    <location name="Wetherby"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="der metallen" type="straight"/>
+        <underline language="DE" method="pen" text="auß dem vitriol" type="double"/>
+        <underline language="DE" method="pen" text="yetlich eysen zů kupffer" type="straight"/>
+        <underline language="LA" method="pen" text="sal gemmae" type="straight"/>
+        <underline language="DE" method="pen" text="holtz zů steinen machen" type="double"/>
+        <underline language="DE" method="pen" text="herten das eysen" type="straight"/>
+        
+        <errata amendedtext="zůuerandlen" copytext="zůuermandlen" language="DE"/>
+        
+    </annotation>
+</transcription>

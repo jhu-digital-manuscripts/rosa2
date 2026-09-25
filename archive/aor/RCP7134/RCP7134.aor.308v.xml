@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.308v.tif" pagination="[301v]" reader="John Dee" signature="[ggg[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Dominus Asc. et Decim[a]e Retrogradus</marginalia_text>
+                </position>
+            </language>
+            <translation>Lord of the ascendant and retrograde of the tenth.</translation> <!--JG: Not entirely sure what Dee means by this--> <!-- FSF: no clue -->
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Natiuitas hui[us] posita est folio 224.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:467" text="224"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>His nativity has been place on folio 224.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Memineris hanc no[n] esse vera[m] figura[m], ob anni qua[n]titate[m]</marginalia_text> 
+                </position>
+            </language>
+            <translation>You might remember that this is not the true figure, on account of the quantity of the year.</translation>
+        </marginalia>
+        
+        
+    </annotation>
+</transcription>

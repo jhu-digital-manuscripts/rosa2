@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.110v.tif" pagination="[110v]" reader="John Dee" signature="[Ovi[v]]"/>
+    
+    <annotation>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Giamaica</marginalia_text>
+                    <location name="Jamaica"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="oro" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Gold.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Porto Buono" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Porto buono.</marginalia_text>
+                    <location name="Rio Bueno"/>
+                </position>
+            </language>
+            <translation>Rio Bueno port.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="infinite Canoe" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Infinite Canoe</marginalia_text>
+                </position>
+            </language>
+           <translation>Endless canoes.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="molto oro" type="double"/>
+        <underline language="IT" method="pen" text="altre Isole essere in quella" type="straight"/>
+        <underline language="IT" method="pen" text="bella di quante nelle" type="straight"/>
+        <underline language="IT" method="pen" text="e tanta era la moltitudine" type="straight"/>
+        <underline language="IT" method="pen" text="Canoe grandi, &amp; picciole, &amp; della" type="straight"/>
+        <underline language="IT" method="pen" text="veniua a' nauigli, che era" type="straight"/>
+        <underline language="IT" method="pen" text="cosa marauigliosa" type="double"/>
+        <underline language="IT" method="pen" text="Canoe, &amp; gente armata a difender" type="straight"/>
+        <underline language="IT" method="pen" text="astretti" type="triple"/>
+        <underline language="IT" method="pen" text="fossero necessitati a" type="straight"/>
+        <underline language="IT" method="pen" text="romper l'amicitia" type="triple"/>
+        <underline language="IT" method="pen" text="paura" type="double"/>
+        <underline language="IT" method="pen" text="più orgogliosi" type="straight"/>
+        <underline language="IT" method="pen" text="no insuperbiti" type="straight"/>
+        <underline language="IT" method="pen" text="fu Porto" type="straight"/>
+        <underline language="IT" method="pen" text="feriti sei, ò sette" type="straight"/>
+        <underline language="IT" method="pen" text="Cosi cessata la pugna" type="straight"/>
+        <underline language="IT" method="pen" text="vicini infinite Canoe" type="straight"/>
+        <underline language="IT" method="pen" text="molto pacifiche" type="straight"/>
+        <underline language="IT" method="pen" text="vedere, &amp; barattar" type="straight"/>
+        <underline language="IT" method="pen" text="varie cose" type="double"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <drawing anchor_text="fossero necessitati a romper l'amicitia" book_orientation="0" method="pen" place="left_margin" type="manicule"/>            
+            
+        
+    </annotation>
+    
+</transcription>

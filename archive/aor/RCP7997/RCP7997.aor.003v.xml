@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.003v.tif" reader="John Dee" signature="[Aiij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="positione[m] namq[uam] qua[n]da[m] p[er]manentia[m] c[on]tinuitat[is] ordine[m] vero quanda[m] inp[er]manentia[m] sep[ar]atio[n]is" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Positio. ordo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Position. Order.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="p[ar]tib[us] aliquotis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Partes aliq[uo]tae
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                As many other parts.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        obiectio solutio.
+                    </marginalia_text>
+                </position>
+            </language>
+           <translation>
+               Objection, solution.
+           </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Causam p[ro]pter q[ui]d" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Causa p[ro]pter q[ui]d
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The cause for which.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="positione[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ordine[m] vero" type="straight"/>
+        <underline language="LA" method="pen" text="p[ar]tib[us] aliquotis" type="straight"/>
+        <underline language="LA" method="pen" text="ei[us] no[n] copulant[ur] p[er] illu[m] terminu[m] tanq[uam] per modu[m] p[ri]ncipij [et] finis" type="straight"/>
+        <underline language="LA" method="pen" text="[et] quinta quare vnitates eq[ui]uocant[ur] s[ecundu]m substa[n]tia[m] nu[m]eri q[uo]d semel" type="straight"/>
+        <underline language="LA" method="pen" text="Sed in equiuocis quid co[mmun]e no[n] reperit[ur] sed in vniuocis" type="straight"/>
+        <underline language="LA" method="pen" text="p[ro]pter quid" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- ordinem distinctim -->
+        
+    </annotation>
+</transcription>

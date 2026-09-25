@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.196r.tif" pagination="391" reader="John Dee" signature="B 4"/> 
+    <annotation>
+        
+        <marginalia anchor_text="eade[m] fictione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ficta no[m]i[n]a</marginalia_text>
+                </position>
+            </language>
+            <translation>Fictitious names.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[v]io p[ro] eo</marginalia_text>
+                </position>
+            </language>
+            <translation>To go for travel.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="septentriones" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>septe[n]t[ri]ones</marginalia_text>
+                </position>
+            </language>
+            <translation>The seven stars near the north pole.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="κατάχρησις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>κατάχρησις</marginalia_text>
+                </position>
+            </language>
+            <translation>Catachresis.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="leo pariet" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>leo pariet</marginalia_text>
+                </position>
+            </language>
+            <translation>Give birth to a lion.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="parricida" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Parricîda</marginalia_text>
+                </position>
+            </language>
+            <translation>Parricide.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quòd abusio est, ubi nomen defuit, translatio ubi aliud fuit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In q[uo] abvsio &amp; translatio differ.</marginalia_text>
+                </position>
+            </language>
+            <translation>Where the improper translation is different,</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="non uerbum, pro uerbo ponitur, sed res pro re" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Verbum p[ro] u[er]bo Res pro re</marginalia_text>
+                </position>
+            </language>
+            <translation>Word for word but word, thing for thing.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="μετάληψις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>μετάληψις</marginalia_text>
+                </position>
+            </language>
+            <translation>Transference of meaning.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sullaturit, &amp; proscripturit: atque" type="straight"/>
+        <underline language="LA" method="pen" text="uio pro eo infelicius" type="straight"/>
+        <underline language="LA" method="pen" text="obelisco, coludumo" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; acetabula quicquid habet, &amp; pyxides cuiuscunque materiae sunt" type="straight"/>
+        <underline language="LA" method="pen" text="parricida matris quoq[ue] aut fratris interfector" type="straight"/>
+        <underline language="LA" method="pen" text="quòd abusio est, ubi nomen defuit, translatio ubi aliud fuit. Nam" type="straight"/>
+        <underline language="EL" method="pen" text="κατάχρησις" type="straight"/>
+        <underline language="LA" method="pen" text="pro temeritate uirtus, aut pro luxuria liberalitas" type="straight"/>
+        <underline language="LA" method="pen" text="sunt, quòd in his non uerbum, pro uerbo ponitur, sed res pro re" type="straight"/>
+        <underline language="LA" method="pen" text="transumptio, quae ex alio in aliud uelut uia[m] praestat" type="straight"/>
+        <underline language="EL" method="pen" text="υήσους θοάς ὀξείας" type="straight"/> <!-- M.B. I've captured the ligature Ȣ as ου not sure about the rest.. Someone who knows Greek needs to check this . -->
+        <underline language="LA" method="pen" text="si Verrem suem, aut Laelium doctum nominemus" type="straight"/>
+        <underline language="LA" method="pen" text="Cano, canto, dico, ita cano, dico" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <mark method="pen" name="circumflex" place="right_margin"/>
+    </annotation>
+</transcription>

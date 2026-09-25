@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.019v.tif" reader="John Dee" signature="[Eiiijv]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sine correctionibus no[n] habent has virtutes therma</marginalia_text>
+                </position>
+            </language>
+            <translation>Without corrections the baths do not have these properties.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="compositum hinzůthüung andrer mittel zů volkomnem endt nicht ghen darumb welcher das" type="straight"/>
+        <underline language="DE" method="pen" text="neundten tag" type="double"/>
+        <underline language="DE" method="pen" text="halb" type="double"/>
+        <underline language="DE" method="pen" text="podagrischen purgation" type="double"/>
+        <underline language="DE" method="pen" text="einmal" type="double"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

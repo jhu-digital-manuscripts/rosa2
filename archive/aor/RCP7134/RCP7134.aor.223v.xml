@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.223v.tif" pagination="[216v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Mortuus part[us] et m[at]ris mors im..i mens.</marginalia_text> <!--JG: Not sure about the last two words--> <!-- FSF: maybe imani? -->
+                </position>
+            </language>
+            <translation>The death of offspring and the death of a mother [...] [...].</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vide in Albumasare qua ra[tion]e de ☌ ♄ ♂ Indiciu[m] ferri debet</marginalia_text>
+                    <symbol_in_text name="Conjunction"/>
+                    <symbol_in_text name="Saturn"/>
+                    <symbol_in_text name="Mars"/>
+                    <person name="Albumasar"/>
+                </position>
+            </language>
+            <translation>See in Albumasar for what reason, regarding the conjunction of Saturn and Mars, the start ought to be considered.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="paruos facit oculos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Parvi oculi.</marginalia_text>
+                </position>
+            </language>
+            <translation>Small eyes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Fixarum robur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Fixaru[m] robur</marginalia_text>
+                </position>
+            </language>
+            <translation>The strength of the fixed [stars].</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Reuolutionu[m] varia ratio.</marginalia_text>
+                </position>
+            </language>
+            <translation>A different reason for revolutions.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>vide aphoris. 80.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:221" text="80"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See aphorism 80.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Imo hac r[ati]o[n]e quicquid intra nona[m] co[n]tinetur equale[m] fortitudine[m] vel maiore[m] q[uam] quicquid in fortissima 11a[e] parte do[m]itur</marginalia_text> <!--JG: Unsure abt last two words--> 
+                    <!-- FSF: I agree with parte, but would suggest ponitur; I think the abbreviation at the beginning of the third line is q[uam] -->
+                </position>
+            </language>
+            <translation>Indeed by this reason whatever is contained within the ninth equal or greater fortitude, whatever [...] is the strongest part of the eleventh.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Saturnus &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="Mars in" type="straight"/>
+        <underline language="LA" method="pen" text="Tauro, in quarta" type="straight"/>
+        <!-- FSF: I think casus is underlined too -->
+        <underline language="LA" method="pen" text="uel ruina" type="straight"/>
+        <underline language="LA" method="pen" text="dorso Piscis" type="straight"/>
+        <underline language="LA" method="pen" text="Martis" type="straight"/>
+        <underline language="LA" method="pen" text="Saturni" type="straight"/>
+        <underline language="LA" method="pen" text="Solisue" type="straight"/>
+        <underline language="LA" method="pen" text="uel" type="straight"/>
+        <underline language="LA" method="pen" text="centri planetae ad" type="straight"/>
+        <underline language="LA" method="pen" text="eundem eclipticae" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <!-- after the second marginal note -->
+        
+        <numeral language="LA" place="intext" text="Saturnus">1</numeral>
+        <numeral language="LA" place="intext" text="Tauro">2</numeral>
+        <numeral language="LA" place="intext" text="quarta">3</numeral>
+        
+        <numeral language="LA" place="intext" text="uel">1</numeral>
+        <numeral language="LA" place="intext" text="eundem eclipticae">2</numeral>
+        
+    </annotation>
+</transcription>

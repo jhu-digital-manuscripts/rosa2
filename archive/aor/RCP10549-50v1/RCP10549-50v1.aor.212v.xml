@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.212v.tif" pagination="404" reader="John Dee" signature="[ccc.ii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="interpretatio [...] explanatio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        interp[re]tatio explanatio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Interpretation and explanation.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pecunia publica: deine contra vim nefariam huius gladiatoris tot Senatusconsultis munita atque septa" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        pecunia munita septa
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Money, fortified and barricaded.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="literate [...] grauiter" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        litterate grauiter
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Literally, seriously.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nefariam" type="straight"/>
+        <underline language="LA" method="pen" text="O post hominum" type="straight"/>
+        <underline language="LA" method="pen" text="non praedicare[m] apud vos, ne nimis gloriari viderer" type="straight"/>
+        <underline language="LA" method="pen" text="non grata potius, quàm" type="straight"/>
+        
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">13</numeral>
+        
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.085r.tif" reader="Harvey" signature="[Kvi[r]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Those letters safist, that ar karried in [the] Hart, and deliuered with [the] Tongue. sure messengers, [th]e best letters.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="write[n] in leade" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>writte[n] in leade.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="letters about pygeons neckes" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Letters abowte Pigeons Necks.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Captain Skinks passage thorowgh [the] Prince of Parmas host, with certain braue Inglish Gentlemen;
+                        that ventured to haue slain [the] Prince in his bed: but made him fly: &amp; retired safe.</marginalia_text>
+                    <person name="Maarten Schenck"/>
+                    <person name="Alexander Farnese"/>
+                    <emphasis method="chalk" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="write[n] in leade" type="straight"/>
+        <underline language="EN" method="pen" text="bounde to the souldiours" type="straight"/>
+        <underline language="EN" method="pen" text="with bristels" type="straight"/>
+        <underline language="EN" method="pen" text="letters about pygeons neckes" type="straight"/>
+        <underline language="EN" method="pen" text="kept" type="straight"/>
+        <underline language="EN" method="pen" text="in darke places" type="straight"/>
+        <underline language="EN" method="pen" text="hungry" type="straight"/>
+        <underline language="EN" method="pen" text="let flee as nere" type="straight"/>
+        <underline language="EN" method="pen" text="the walles" type="straight"/>
+        <underline language="EN" method="pen" text="beinge fayne of lyght, and" type="straight"/>
+        <underline language="EN" method="pen" text="gredy of" type="straight"/>
+        <underline language="EN" method="pen" text="foode" type="straight"/> 
+        <underline language="EN" method="pen" text="vp to the hyghest buyldynges" type="straight"/>
+        <underline language="EN" method="pen" text="Brutus" type="straight"/>
+        <underline language="EN" method="pen" text="was certified of al thinges" type="straight"/>
+        <underline language="EN" method="pen" text="ordeyned meate" type="straight"/>
+        <underline language="EN" method="pen" text="be laide in" type="straight"/>
+        <underline language="EN" method="pen" text="pygeons myght flee thyther" type="straight"/>
+        <underline language="EN" method="pen" text="Ategua" type="straight"/>
+        <underline language="EN" method="pen" text="Pompeians" type="straight"/>
+        <underline language="EN" method="pen" text="Maurus" type="straight"/>
+        <underline language="EN" method="pen" text="kynge for a" type="straight"/>
+        <underline language="EN" method="pen" text="had ben of Cesars parte" type="straight"/>
+        <underline language="EN" method="pen" text="one of the chiefe capitaynes" type="straight"/>
+        <underline language="EN" method="pen" text="certayne of the" type="straight"/>
+        <underline language="EN" method="pen" text="refused some for" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="letters about pygeons neckes"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="certayne of the"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="write[n] in leade"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="bounde to the souldiours"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="in darke places"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="hungry"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="vp to the hyghest buyldynges"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="meate"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="pygeons myght flee thyther"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--Pompeians, Maurus-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="had ben of Cesars parte"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="one of the chiefe capitaynes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="refused some for"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="tail" text="refused some for"/>
+        
+        <numeral language="EN" place="intext" text="beinge fayne of lyght">1.</numeral>
+        <numeral language="EN" place="intext" text="gredy">2.</numeral>
+        
+    </annotation>
+</transcription>

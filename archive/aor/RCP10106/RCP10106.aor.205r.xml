@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.205r.tif" pagination="409" reader="John Dee" signature="C 5"/> 
+    <annotation>
+        
+        <marginalia anchor_text="reprehensione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Reprehensio</marginalia_text>
+                </position>
+            </language>
+            <translation>Refutation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dubitatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dubitatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Doubt.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="co[m]municatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Co[m]municatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Communication.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Domitius Afer" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Afer.</marginalia_text>
+                    <person name="Domitius Afer"/>
+                </position>
+            </language>
+            <translation>Afer.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cato" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cato.</marginalia_text>
+                    <person name="Cato the Elder"/>
+                </position>
+            </language>
+            <translation>Cato.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in Verrem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In Verrem.</marginalia_text>
+                    <book title="In Verrem"/>
+                </position>
+            </language>
+            <translation>In Verrem.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="suste[n]tationem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>sustentatio [2]</marginalia_text>  
+                </position>
+            </language>
+            <translation>Suspense.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="παράδoξoν" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>παράδoξoν</marginalia_text> 
+                </position>
+            </language>
+            <translation>The paradoxical.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pollio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pollio</marginalia_text>
+                    <person name="Gaius Asinius Pollio"/>
+                </position>
+            </language>
+            <translation>Pollio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="permißione[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Permissio</marginalia_text>
+                </position>
+            </language>
+            <translation>Permission.</translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="aut reprehensione" type="straight"/>
+        <underline language="LA" method="pen" text="diu suspendisset iudicu[m] animos" type="straight"/>
+                
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3.</numeral>
+        <numeral place="right_margin">4.</numeral>
+        <numeral place="right_margin">5.</numeral>
+        
+        <drawing anchor_text="Afer" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

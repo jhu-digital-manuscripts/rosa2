@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.089v.tif" pagination="[82v]" reader="John Dee" signature="[X ij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="circulum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Intelligit circulu[m] positionis planetar[um].</marginalia_text>
+                </position>
+            </language>
+            <translation>He understands the circle of the position of the planets.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dies in hebdomada, &amp; sunt pauciores sex figurae, &amp; plures octo, &amp; mediocres septem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Intelligit de numero figuraru[m] erige[n]daru[m] in vna hebdomada.</marginalia_text>
+                </position>
+            </language>
+            <translation>He understands about the number of figures to be raised in one week.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[L.] Intelligit raptu[m] coeli diurnu[m] ad certa primi ca[e]li loca vt ip[s]emet in fine pr[a]ecendentis pagin[a]e exponit.</marginalia_text>
+                </position>
+            </language>
+            <translation>[?] He understands the daily plunder of the heaven towards certain places of the 'first heaven' (primum caelum), as he himself explains at the end of the preceding pages.</translation> <!-- JG: Unsure about translation caelum here - sky or heaven? Esp. 'primi caeli' Seems Aristotelean to me -->
+        </marginalia>
+        
+        <marginalia anchor_text="Igitur figura geniturae principaliter ostendit primi anni nutritionem, &amp; reuolutio anni ostendit principaliter de primo mense, &amp; ita de alijs" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pulchre et recte concludit.</marginalia_text>
+                </position>
+            </language>
+            <translation>He concludes beautifully and rightfully.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aliquid q[u]od in figura demonstretur frustrari possit?" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>De Natiuitatis significatis an possint frustrari</marginalia_text> 
+                </position>
+            </language>
+            <translation>On the indications of a nativity [and] whether they can be frustrated.</translation> 
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>No[n] o[mn]nia promissa in natiuitate effectum co[n]sequi</marginalia_text> 
+                </position>
+            </language>
+            <translation>Not all promisses in a nativity achieve an effect.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="tempora" type="straight"/>
+        <underline language="LA" method="pen" text="sunt" type="straight"/>
+        <underline language="LA" method="pen" text="Igitur figura geniturae principaliter ostendit primi anni nutritionem, &amp; reuolutio anni ostendit principaliter de primo mense, &amp; ita de alijs" type="straight"/>
+        <underline language="LA" method="pen" text="necessario &amp; semper, figuram" type="straight"/>
+        <underline language="LA" method="pen" text="constat enim in pueris cito morituris, etiam significatores filiorum, &amp; nuptiarum" type="straight"/>
+        <underline language="LA" method="pen" text="horum assequi possunt" type="straight"/>
+        
+        <mark method="pen" name="section_sign" place="intext"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- principales hebdomadas-->
+        <mark method="pen" name="bracket" place="intext"/> 
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="noni"/>
+        <mark method="pen" name="tripunctus" place="left_margin"/> <!--JG: Above 2nd marginal note-->
+        <mark language="LA" method="pen" name="bracket" place="left_margin" text="constat enim in pueris cito morituris, etiam significatores filiorum, &amp; nuptiarum, &amp; exercitij adesse, no[n] tame[n], quonia[m] more praeueniu[n]tur, aliquid horum assequi possunt"/>
+        
+        <numeral language="LA" place="intext" text="tempora">1</numeral>
+        <numeral language="LA" place="intext" text="annos">2</numeral>
+        <numeral language="LA" place="intext" text="menses">3</numeral>
+        <numeral language="LA" place="intext" text="hebdomadas">4</numeral>
+        <numeral language="LA" place="intext" text="gradus">5</numeral>
+        <numeral language="LA" place="intext" text="horas">6</numeral>
+        
+        
+        
+    </annotation>
+</transcription>

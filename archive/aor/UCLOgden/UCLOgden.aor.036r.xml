@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.036r.tif" pagination="55" reader="John Dee" signature="e 4"/>
+    <annotation>
+        
+        <marginalia anchor_text="signoru[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Signorum natura co[n]sider
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To consider the nature of the signs.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sine gratia pr[a]estare" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Sin[e] gr[ati]a dantes.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Given without grace.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Debes hic animaduertere cu[m] dicat aut cu[m] eo, quonia[m] ante dixit nocte hoc ita no[n] esse debere, sed die qui ☉e in 4 co[n]stituto esse no[n] p[otes]t noli in re tam aperta cavillari 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                You ought to pay attention here when he says 'or with that', since before he said that in the nights this ought not to be thus,
+                but on the day which cannot be in the fourth position with the Sun, do not jest in the matter so openly. <!--JG: Unsure-->
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Signa contra [&amp;c]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Signs against et cetera.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="faciet praesides riparum" type="straight"/>
+        <underline language="LA" method="pen" text="secundu[m] qualitate[m] signoru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="habuerit, in omnibus semper actibus impediet[ur]" type="straight"/>
+        <underline language="LA" method="pen" text="inualidos, &amp; quos feminae semp[er] impugnent" type="straight"/>
+        <underline language="LA" method="pen" text="nam quicu[n]q[ue] aliquid ab ipsis fuerit co[n]secutus, ingratus illis semp[er]" type="straight"/>
+        <underline language="LA" method="pen" text="aut cu[m] eo fuerit" type="straight"/>
+        <underline language="LA" method="pen" text="si sic ♂ co[n]stituto, horosc. in domo ♂ fuerit collocatus, aut si locus cupidinis,              uel daemonis, in eadem domo fuerit co[n]stitus, ea enim, quae diximus, tunc fortius perficientut" type="straight"/>
+        <underline language="LA" method="pen" text="administrationibus gladii decernit potestate[m]" type="straight"/>
+        <underline language="LA" method="pen" text="accide[n]t, peregrini" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; cito de peregrinatio" type="straight"/>
+        <underline language="LA" method="pen" text="uincula, carceres, &amp; custodias, nisi" type="straight"/>
+        <underline language="LA" method="pen" text="penitus denegabit" type="straight"/>
+        <underline language="LA" method="pen" text="pro signoru[m] scilicet geniturae qualiter" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/> <!-- grati Si -->
+        
+    </annotation>
+</transcription>

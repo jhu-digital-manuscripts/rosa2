@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.163r.tif" pagination="163" reader="John Dee" signature="Xiij"/>    
+    <annotation>
+        
+        <marginalia anchor_text="piene di gente domestica" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note people ientle</marginalia_text>
+                </position>
+            </language>
+             </marginalia>
+        
+        <marginalia anchor_text="Golfo delle perle" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Golfo delle Perle</marginalia_text> 
+                    <location name="Pearl Gulf"/>
+                </position>
+            </language>
+            <translation>Pearl Gulf</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="chiamò delle Conche" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Capo dille Conche</marginalia_text> 
+                    <location name="San Rossore"/> <!-- M.B  On the basis of Bruni's excavations, the area of San Rossore is now recognized as site of the Porto delle Conche, a small tidal lake near the mouth of the Auser River-->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="la Margarita" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>La Margarita</marginalia_text> 
+                    <location name="Margarita Island"/>
+                </position>
+            </language>
+            <translation>Margarita Island</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cabagua" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cubagua"</marginalia_text> 
+                    <location name="Cubagua"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="sempre nuoue" type="double"/>
+        <underline language="IT" method="pen" text="piene di gente domestica," type="straight"/>
+        <underline language="IT" method="pen" text="quel Golfo delle perle," type="straight"/>
+        <underline language="IT" method="pen" text="tutto era d'acqua dolce" type="straight"/>
+        <underline language="IT" method="pen" text="di sette parti della Sfera sola vna è coperta dall' acqua; perche" type="straight"/>
+        <underline language="IT" method="pen" text="grandissima terra ferma" type="double"/>
+        <underline language="IT" method="pen" text="chiamò delle" type="straight"/>
+        <underline language="IT" method="pen" text="la Margarita" type="straight"/>
+        <underline language="IT" method="pen" text="Isola di Cabagua, dalla qual si è tratta innumerabile quantita di perle, &amp; margarite" type="straight"/>
+        
+    </annotation>
+</transcription>

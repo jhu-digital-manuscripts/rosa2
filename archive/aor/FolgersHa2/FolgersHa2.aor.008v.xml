@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+    <page filename="FolgersHa2.008v.tif" pagination="336" reader="Harvey"/>	<!-- ABO 13left -->
+    <annotation>
+        
+        <!-- Marginalia -->
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                      Vita Astrophili.
+                    </marginalia_text>
+                	<person name="Astrophilus"/>
+                </position>
+            </language>
+        	<translation>
+        		The life of Astrophil.
+        	</translation>
+        </marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					Elixir vitae, Industria.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			The elixir of life, diligence.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="IT">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					Problema ridicolo.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Ridiculous problem.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					Euerie day better, &amp; better.
+    				</marginalia_text>
+    				<emphasis method="pen" text="Euerie" type="straight"/>
+    				<emphasis method="pen" text="better, &amp; better" type="straight"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia anchor_text="Pontano" hand="Italian">
+    		<language ident="IT">
+    			<position book_orientation="0" place="tail">
+    				<marginalia_text>
+    					{ Pontano, nato a piaceuolezze.
+    				</marginalia_text>
+    				<person name="Giovanni Pontano"/>
+    			</position>
+    		</language>
+    		<translation>
+    			{ Pontano, born for pleasantries.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="tail">
+    				<marginalia_text>
+    					) philosophus, philautus.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			) A philosopher, a lover of the self. 	
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="90" place="left_margin">
+    				<marginalia_text>
+    					[mih]i vita est, essentia quinta valoris;
+    					[-]s, virtus, praxis multiplicata potens. } 
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			One life belongs [to me]: the fifth essence of valor;
+    			[-], virtue, powerful increased action. }
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="90" place="right_margin">
+    				<marginalia_text>
+    					Manie bigg lubbers, little worth: &amp; manie little men of great valour.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="270" place="right_margin">
+    				<marginalia_text>
+    					Hic et ille legerunt [septimos?] libros. Pra[e]clare est: sed nondu[m] horu[m] mea[m] Entelechiam, qua[e] est 
+    					tota in toto. Praesertim cum
+    				</marginalia_text>
+    			</position>
+    			<position book_orientation="270" place="intext">
+    				<marginalia_text>
+    					Euschemosyne,    
+    					et
+    					Fronismo.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			This and that person read [the seventh?] books. It is very clear: but not yet my actualization for hours, which is complete in the whole.
+    			the whole thing in its entirety. Especially with Refinement and Prudence. 
+    		</translation>
+    	</marginalia> 
+        
+        <underline language="IT" method="pen" text="tuttauia messere" type="straight"/>
+    	<underline language="IT" method="pen" text="quella riuerentia" type="straight"/>
+    	<underline language="IT" method="pen" text="messa" type="straight"/>
+    	<underline language="IT" method="pen" text="canto rozo" type="straight"/>
+    	<underline language="IT" method="pen" text="uillanesco" type="straight"/>
+    	<underline language="IT" method="pen" text="altra donna" type="straight"/>
+    	<underline language="IT" method="pen" text="nudo all'altare" type="straight"/>
+    	<underline language="IT" method="pen" text="esser uestito" type="straight"/>
+    	<underline language="IT" method="pen" text="la terza" type="straight"/>
+    	<underline language="IT" method="pen" text="egli era morto" type="straight"/>
+    	<underline language="IT" method="pen" text="sulla bara" type="straight"/>
+    	<underline language="IT" method="pen" text="i suoi uicini" type="straight"/>
+    	<underline language="IT" method="pen" text="frate" type="straight"/>
+    	<underline language="IT" method="pen" text="ignudo" type="straight"/>
+    	<underline language="IT" method="pen" text="no fussi morto" type="straight"/>
+    	<underline language="IT" method="pen" text="mi riderei molto di" type="straight"/>
+    	<underline language="IT" method="pen" text="queste pazzie de' miei" type="straight"/>
+    	<underline language="IT" method="pen" text="queste tre donne habbia uinta la" type="straight"/>
+    	<underline language="IT" method="pen" text="ingegnose quistioni" type="straight"/>
+    	<underline language="IT" method="pen" text="le balie" type="straight"/>
+    	<underline language="IT" method="pen" text="cantar delle" type="straight"/>
+    	<underline language="IT" method="pen" text="il Pontano" type="straight"/>
+    	<underline language="IT" method="pen" text="mirabilmente piaceuole in esprimere" type="straight"/>
+    	<underline language="IT" method="pen" text="d'eloquentia, &amp; di dottrina con" type="straight"/>
+    	<underline language="IT" method="pen" text="egli sia nato solamente a" type="straight"/>
+    	<underline language="IT" method="pen" text="piaceuolezze" type="straight"/>
+    	
+    
+        
+        <!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+        
+        <symbol name="Sun" place="head"/>
+    	<symbol name="Sun" place="head"/>
+    	<symbol name="JC" place="intext"/>
+    	<symbol name="SS" place="left_margin"/>
+        
+        <!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|tilde|triple_dash|vertical_bar|X_sign -->
+    	
+    	<!-- Right margin -->
+    	<mark method="pen" name="dash" place="right_margin"/> <!-- co -->
+    	<mark method="pen" name="dash" place="right_margin"/> <!-- don -->
+    	<mark method="pen" name="dash" place="right_margin"/> <!-- mira -->
+    	<mark method="pen" name="dash" place="right_margin"/> <!-- pia -->
+    	<mark method="pen" name="dash" place="right_margin"/> <!-- caminan -->
+    	
+    	<!-- Left margin -->
+    	<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- bilmente -->
+    	<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- ceuolezze -->
+    
+    	<!-- Intext -->
+    	<mark method="pen" name="vertical_bar" place="intext"/> <!-- uillanesco; l'altra -->
+    	<mark method="pen" name="vertical_bar" place="intext"/> <!-- uestito. Ma la terza -->
+    	<mark method="pen" name="dot" place="intext"/> <!-- frate, & l'altro -->
+    	<mark method="pen" name="dot" place="intext"/> <!-- l'offerta, disse -->
+    	<mark language="IT" method="pen" name="plus_sign" place="intext" text="tre donne"/>
+    	<mark method="pen" name="quotation_mark" place="intext"/> <!-- quistioni.] -->
+    	<mark method="pen" name="quotation_mark" place="intext"/> <!-- Sogliono -->
+    	<mark language="IT" method="pen" name="plus_sign" place="intext" text="Pontano"/>
+    	<mark method="pen" name="equal_sign" place="intext"/> <!-- fu mira -->
+    	<mark language="IT" method="pen" name="plus_sign" place="intext" text="nato"/>
+    	<mark method="pen" name="equal_sign" place="intext"/> <!-- solamente -->
+    	
+    	<mark method="chalk" name="vertical_bar" place="intext"/> <!-- Middle of page to the left -->
+    	<mark method="chalk" name="vertical_bar" place="intext"/> <!-- Bottom of page to the left -->
+    	
+    	
+    	
+    	<numeral language="IT" place="left_margin" text="l'altra donna">
+    		2.
+    	</numeral>
+    	<numeral language="IT" place="left_margin" text="la terza">
+    		3.
+    	</numeral>
+    	
+
+    </annotation>
+</transcription>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.099v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Achilles rex Daciae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Attilius
+                    </marginalia_text>
+                    <person name="Atillius"/>
+                </position>
+            </language>
+            <translation>Atillius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Arthuri Olbrict[us] rey NorWegiae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Loth erat dux Norwegia[e].
+                    </marginalia_text>
+                    <person name="Lot"/>
+                    <location name="Norway"/>
+                </position>
+            </language>
+            <translation>Lot was lord of Norway.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Arthuri Olbrict[us] rey Norwegiae" type="straight"/>
+        <underline language="LA" method="pen" text="Achilles rex Daciae" type="straight"/>
+        <underline language="LA" method="pen" text="Constantino &amp; filio Cadoris" type="straight"/>
+        
+        <mark method="pen" name="circumflex" place="intext" text="Achilles"/>
+        
+        <numeral place="left_margin">
+            542.
+        </numeral>
+        
+    </annotation>
+</transcription>

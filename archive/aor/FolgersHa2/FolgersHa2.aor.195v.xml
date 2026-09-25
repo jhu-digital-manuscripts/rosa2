@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.195v.tif" pagination="214" reader="Harvey" signature="[O3v]"/>	<!-- ABO 200left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Ad rem pra[e]sentem semper pra[e]sens.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Always at hand for the matter at hand.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Prudenter, et suauiter.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Prudently and pleasantly.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Columna composita.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A composite pillar.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( ò Cesare, ò Catone. )
+					</marginalia_text>
+					<person name="Julius Caesar"/>
+					<person name="Cato the Younger"/>
+				</position>
+			</language>
+			<translation>Oh Caesar, oh Cato.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Vel Vlysses, vel Diomedes, uel potiùs vterq[ue].
+					</marginalia_text>
+					<person name="Odysseus"/>
+					<person name="Diomedes"/>
+				</position>
+			</language>
+			<translation>Either Odysseus or Diomedes, or rather both.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Aut Julius Imp: aut Trebatius JC: aut Tullius orator:
+						aut potiùs isti omnes.
+					</marginalia_text>
+					<person name="Julius Caesar"/> 
+					<person name="Trebatius Testa"/>
+					<person name="Cicero"/>
+				</position>
+			</language>
+			<translation>Either emperor Julius, or judge Trebatius: or Cicero the orator, or rather all of them.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Summa omnium in dicendo, agendoq[ue] facilitas.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The highest facility of all in speaking and acting.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Hoc age: ca[e]tera patere. Ad hoc, Entelechia: ad ca[e]tera, Ironia.
+						Vt Eutrapelus dulcissimè solet alia omnia pro tempore contemnere, pra[e]ter
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+					<emphasis method="pen" text="hoc" type="straight"/>
+					<emphasis method="pen" text="Entelechia" type="straight"/>
+					<emphasis method="pen" text="ad ca[e]tera" type="straight"/>
+					<emphasis method="pen" text="Ironia" type="straight"/>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						Id vnu[m], quod est in Manibus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Do this: suffer the rest. For this, actualization: for the other, irony. 
+				As Eutrapelus is used to contemn sweetly for a time everying else, except the one thing which is in his hands.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Eutrapelus, amabilis ingenuitatis, et omnis planè humanitatis aureum speculum:
+						erga Omnes a[e]quissimus; siue a[e]mulos, siue inuidos, siue maleuolos, siue aduerarios.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						respectiuè candidus in omne genus humanum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Eutrapelus, lovable for his ingenuity and a golden mirror of all humanity in its entirety: 
+				most fair towards all; whether rivals, or envious, malevolent or hostile.
+				He is respectfully bright in all of the human kind.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="all'acqua" type="straight"/>
+		<underline language="IT" method="pen" text="la terra ricuopra" type="straight"/>
+		<underline language="IT" method="pen" text="il centro" type="straight"/>
+		<underline language="IT" method="pen" text="al fuoco ch'è" type="straight"/>
+		<underline language="IT" method="pen" text="Diuerse cose" type="straight"/>
+		<underline language="IT" method="pen" text="tutto hanno" type="straight"/>
+		<underline language="IT" method="pen" text="Tra lor contrarie fan" type="straight"/>
+		<underline language="IT" method="pen" text="conforme l'opra" type="straight"/>
+		<underline language="IT" method="pen" text="muoue il ciel" type="straight"/>
+		<underline language="IT" method="pen" text="benigna legge" type="straight"/>
+		<underline language="IT" method="pen" text="Dolce catena" type="straight"/>
+		<underline language="IT" method="pen" text="tutto lega" type="straight"/>
+		<underline language="IT" method="pen" text="Poco pregiarsi" type="straight"/>
+		<underline language="IT" method="pen" text="veri filosofi" type="straight"/>
+		<underline language="IT" method="pen" text="fasto Reale" type="straight"/>
+		<underline language="IT" method="pen" text="ALESSANDRO Magno" type="straight"/>
+		<underline language="IT" method="pen" text="Diogene" type="straight"/>
+		<underline language="IT" method="pen" text="Allessandro Magno" type="straight"/>
+		<underline language="IT" method="pen" text="Diogene Cane" type="straight"/>
+		<underline language="IT" method="pen" text="mille offerte" type="straight"/>
+		<underline language="IT" method="pen" text="lui qualcosa" type="straight"/>
+		<underline language="IT" method="pen" text="tu mi tieni il Sole" type="straight"/>
+		<underline language="IT" method="pen" text="s'io non fussi Alessandro" type="straight"/>
+		<underline language="IT" method="pen" text="vorrei esser Diogene" type="straight"/>
+		<underline language="IT" method="pen" text="La malitia" type="straight"/>
+		<underline language="IT" method="pen" text="stratio ne' semplici" type="straight"/>
+		<underline language="IT" method="pen" text="d'acqua del fiume" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="Dolce catena il tutto lega, &amp; regge." type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<symbol name="SS" place="intext"/>
+		<symbol name="SS" place="intext"/>
+		
+		<mark method="pen" name="quotation_mark" place="head"/>
+		<mark method="pen" name="quotation_mark" place="head"/>
+		
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Che non lo passi, &amp; la terra ricuopra:    In mezzo del gran corpo, il centro ascosto, Graue &amp; contrario, al fuoco ch'è di sopra. Diuerse cose il tutto    hanno composto: Tra lor contrarie fan conforme l'opra, Ordina, &amp; muoue il ciel benigna legge: Dolce catena il tutto lega, &amp; regge."/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--al-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--aiu-->
+		
+		<mark method="pen" name="plus_sign" place="intext"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/>
+		
+    </annotation>
+</transcription>

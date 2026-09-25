@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.026v.tif" reader="John Dee" signature="[Giij[v]]"/>
+    <annotation>
+        <marginalia anchor_text="der in das fünfft jar seyn augmentum gibt Der arsenic im vierdten jar Auripigmentum im dritten jar " hand="Italian" method="pen">
+        <language ident="LA">
+            <position book_orientation="0" place="head">
+                <marginalia_text>
+                    Sal inter, Arsenic, Auripiy } Anno { 5, 4, 3 
+                </marginalia_text>
+            </position>
+        </language>
+        <translation>Salt within the fifth year, arsenic within the fourth, and orpiment within the third.</translation>
+    </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nota has periodos
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Note these periods.</translation>
+        </marginalia>         
+       
+       <underline language="DE" method="pen" text="mit gewalt" type="double"/>
+        <underline language="DE" method="pen" text="es im dritten jar genůgsam ist zůheilen" type="straight"/>
+        <underline language="DE" method="pen" text="vierdten jar ist" type="double"/>
+        <underline language="DE" method="pen" text="wachsen deß zůfallenden" type="double"/>
+        <underline language="DE" method="pen" text="in das fünfft" type="straight"/>
+        <underline language="DE" method="pen" text="seyn augmentum gibt" type="triple"/>
+        <underline language="DE" method="pen" text="vierdten jar" type="double"/>
+        <underline language="DE" method="pen" text="im dritten" type="double"/>
+        <underline language="DE" method="pen" text="zerbrechens der geschwären" type="straight"/>
+        <underline language="DE" method="pen" text="im grien" type="double"/>
+        <underline language="LA" method="pen" text="Aquae aluminis" type="straight"/>
+        <underline language="LA" method="pen" text="Alunis lameni" type="straight"/>
+        <underline language="DE" method="pen" text="fàderweiß" type="straight"/>
+        <underline language="DE" method="pen" text="wallwurtzen" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="right_margin"/>       
+        <!--JG: Links between marginal annotations, to be captured at a later stage-->
+         
+    </annotation>
+</transcription>

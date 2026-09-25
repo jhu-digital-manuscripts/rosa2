@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.240r.tif" pagination="465" reader="Harvey" signature="qq4[r]"/>  <!--error in page number-->
+    <annotation>
+        <marginalia anchor_text="Ciuilis alius furor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ciuilis Defectio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Civil revolt.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="graui morbo" type="straight"/>
+        <underline language="LA" method="pen" text="ad id quisq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="insita hominibus libidine ale[n]di de industria rumores" type="straight"/>
+        <underline language="LA" method="pen" text="adijceret aliquid" type="straight"/>
+        <underline language="LA" method="pen" text="quanta[m]" type="straight"/>
+        <underline language="LA" method="pen" text="uanus rumor tantas procellas exciuisset" type="straight"/>
+        <underline language="LA" method="pen" text="Mandonius &amp; Indibilis" type="straight"/>
+        <underline language="LA" method="pen" text="Ciuilis alius furor" type="straight"/>
+        <underline language="LA" method="pen" text="tribunos" type="straight"/>
+        <underline language="LA" method="pen" text="haud expertes seditionis de fectionisq[ue] rati" type="straight"/>
+        <underline language="LA" method="pen" text="principes seditionis" type="straight"/>
+        <underline language="LA" method="pen" text="gregarios milites" type="straight"/>
+        <underline language="LA" method="pen" text="C. Albium Calenum" type="straight"/>
+        <underline language="LA" method="pen" text="C. Atrium Vmbrum" type="straight"/>
+        <underline language="LA" method="pen" text="ijs uenit in mentem" type="straight"/>
+        <underline language="LA" method="pen" text="suis tergis, suis ceruicibus uirgas" type="straight"/>
+        <underline language="LA" method="pen" text="Mors Scipionis falso credita occaecabat" type="straight"/>
+        <underline language="LA" method="pen" text="turbatis rebus" type="straight"/>
+        <underline language="LA" method="pen" text="cum omnia omnes auderent" type="straight"/>
+        <underline language="LA" method="pen" text="minus insignia fore quae ipsi fecissent" type="straight"/>
+        <underline language="LA" method="pen" text="causa irae consternationisq[ue]" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--ani-->
+        
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--sunt. Ciuilis-->
+        
+        
+    </annotation>
+</transcription>

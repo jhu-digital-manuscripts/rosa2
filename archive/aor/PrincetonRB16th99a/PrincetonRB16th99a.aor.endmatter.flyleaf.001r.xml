@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonRB16th99a.endmatter.flyleaf.001r.tif" pagination="[90r]" reader="Harvey"/>
+    <annotation>
+    
+<marginalia hand="Italian">
+    <language ident="EN">
+        <position book_orientation="0" place="head">
+            <marginalia_text>Emblems.</marginalia_text>
+        </position>
+    </language>
+</marginalia>
+
+<marginalia hand="English_secretary">
+    <language ident="EN">
+        <position book_orientation="0" place="tail">
+            <marginalia_text>An owld painted cloth. Layowt to howldowt: Remember thy gaine: 
+                Now some, and then sum: To lack is A paine. </marginalia_text>
+        </position>       
+    </language> 
+</marginalia>
+
+<marginalia hand="Italian">
+    <language ident="EN">
+        <position book_orientation="0" place="tail">
+            <marginalia_text>Tusser, &amp; Heywood poets for common life, and vulgar discourse. Full of matters to the purpose, in euerie howse. 
+                The new art of Coniecatching in three, or fower Parts.</marginalia_text>
+            <person name="Thomas Tusser"/>
+            <person name="John Heywood"/>
+        </position>     
+    </language>
+</marginalia>
+
+<underline language="EN" method="pen" text="own bed chamber" type="straight"/>
+<underline language="EN" method="pen" text="Barnards verses" type="straight"/>
+<underline language="EN" method="pen" text="Authors life of" type="straight"/>
+
+<mark method="pen" name="plus_sign" place="left_margin"/>
+<mark language="EN" method="pen" name="bracket" place="left_margin" text="Posies for the Parler. 78. 79.a. Posies for the gestes chamber. 79.a. Posies for thine own bed chamber. 79.a. and b."/>
+
+    </annotation>
+</transcription>

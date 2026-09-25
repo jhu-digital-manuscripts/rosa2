@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.011r.tif" reader="Harvey" signature="Aiiii[r]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Asdrubal, and Hannibal by pollicy beguiled, and vanguisshed.</marginalia_text>
+                    <person name="Hasdrubal II"/>
+                    <person name="Hannibal"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="so with bothe theyr powers togither, they" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Virtus Vnita fortior.</marginalia_text>
+                </position>
+            </language>
+            <translation>United power is stronger.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Duo Vincula fortiùs ligant.</marginalia_text>
+                </position>
+            </language>
+            <translation>Two chains bind more strongely.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Etiam abundans Cautela non nocet.</marginalia_text>
+                </position>
+            </language>
+            <translation>Even abundant caution does not harm.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Omnia Ordine, et Vi.</marginalia_text>
+                    <emphasis method="pen" text="Ordine" type="straight"/>
+                    <emphasis method="pen" text="Vi" type="straight"/>
+                </position>
+            </language>
+            <translation>Everything with order and strength.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="Liuius Salinator" type="straight"/>
+        <underline language="EN" method="pen" text="picked out ten thousand of the most" type="straight"/>
+        <underline language="EN" method="pen" text="lefte behynde" type="straight"/>
+        <underline language="EN" method="pen" text="kepe watche and warde" type="straight"/>
+        <underline language="EN" method="pen" text="kyndlynge as many" type="straight"/>
+        <underline language="EN" method="pen" text="forthe the same face and" type="straight"/>
+        <underline language="EN" method="pen" text="as before" type="straight"/>
+        <underline language="EN" method="pen" text="they laye" type="straight"/>
+        <underline language="EN" method="pen" text="suspectynge somewhat theyr smal" type="straight"/>
+        <underline language="EN" method="pen" text="set vpon them" type="straight"/>
+        <underline language="EN" method="pen" text="felowe" type="straight"/>
+        <underline language="EN" method="pen" text="ioyned theyr armyes in" type="straight"/>
+        <underline language="EN" method="pen" text="the campe to be enlarged" type="straight"/> 
+        <underline language="EN" method="pen" text="so with both theyr powers togither, they" type="straight"/>
+        <underline language="EN" method="pen" text="ouercame" type="straight"/>
+        <underline language="EN" method="pen" text="hym" type="straight"/>
+        <underline language="EN" method="pen" text="with all spede" type="straight"/>
+        <underline language="EN" method="pen" text="he begyled" type="straight"/>
+        <underline language="EN" method="pen" text="oppressed the other" type="straight"/>
+        <underline language="EN" method="pen" text="skylfull capitaynes of" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="as before"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="picked out ten thousand of the most"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="kyndlynge as many"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="head"/> <!--below marginal note-->
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="so with both theyr powers togither, they"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--hym, and-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="with all spede"/>
+        
+    </annotation>
+</transcription>

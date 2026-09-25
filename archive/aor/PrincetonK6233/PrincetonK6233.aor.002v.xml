@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonK6233.002v.tif" reader="Harvey" signature="[α2v]"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="uocauit ZASIVS" type="straight"/>
+        <underline language="LA" method="pen" text="Paratitla" type="straight"/>
+        <underline language="LA" method="pen" text="multum lucis" type="straight"/>
+        <underline language="LA" method="pen" text="ego" type="straight"/>
+        <underline language="LA" method="pen" text="interpretum" type="straight"/>
+        <underline language="LA" method="pen" text="iuxta methodi leges" type="straight"/>
+        <underline language="LA" method="pen" text="iuris perpendere" type="straight"/>
+        <underline language="LA" method="pen" text="ha[n]c tandem summa[m] redierit" type="straight"/>
+     
+        <symbol name="SS" place="left_margin"/>
+     
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="interpretum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="tail" text="ha[n]c tandem summa[m] redierit"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- fuerit. Eius -->
+        <mark method="pen" name="comma" place="intext"/> <!-- inciperem & -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="interpretum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="iuxta methodi leges"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- redierit. Pro -->
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.019v.tif" pagination="19[v]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="animae eleme[n]taris Voarchadumic[a]e" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Anima { Eleme[n]taris: fixa Voarchadumica.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Air: elementary: constant and Voarchadumica.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vide inf[ra]: pag:36:
+                    </marginalia_text> 
+                    <internal_ref>
+                        <target ref="BLC120b4:c_120_b_4_(2)_f036v" text="36"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See below, page 36.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ut supra" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        13: vt supra
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>13: As above.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        vide pagina precede[n]te
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="BLC120b4:c_120_b_4_(2)_f019r" text="precede[n]te"/>                
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See the preceding page.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="animae" type="double"/>
+        <underline language="LA" method="pen" text="anim[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="uitri, &amp; Materiae" type="straight"/>
+        <underline language="LA" method="pen" text="factae" type="triple"/>
+        <underline language="LA" method="pen" text="ex sale" type="double"/>
+        <underline language="LA" method="pen" text="fixa" type="double"/>
+        <underline language="LA" method="pen" text="huiusmodi" type="double"/>
+        
+        <symbol id="BLC120b4:c_120_b_4_(2)_f019v:s0001" name="Trine" place="right_margin"/>
+        
+        <mark method="pen" name="quinquepunctus" place="left_margin"/>   
+        <mark method="pen" name="quinquepunctus" place="intext"/> <!--factae-->
+        
+        <numeral place="intext" text="animae">1</numeral>
+        <numeral place="intext" text="anim[a]e">2</numeral>
+        
+    </annotation>
+</transcription>

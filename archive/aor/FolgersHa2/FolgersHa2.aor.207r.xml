@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.207r.tif" pagination="237" reader="Harvey" signature="[P7r]"/>	<!-- ABO 211right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Quorsùm vlla lectio, nisi vndè plus cognoscit[u]r,
+						plusq[ue] agitur.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>What is the point of any reading unless from it one becomes more knowledgeable and does more.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Singuloru[m] membroru[m] vsus, in suo cuiusq[ue] officio.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The use of singular members, on the duty of each of each one.</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Doctus est, qui reuerâ plus scit: et vir est, qui re ipsa plus potest.
+						Frustra sapit, qui serò sapit. Hodiè Mihi: cras tibi.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>He, who actually knows more, is learned. And he, who can do more in the actual matter, is a man.
+			He, who understands too late, understands in vain. Today for me, tomorrow for you.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Nihil uel opere satis efficax: uel tempore satis maturum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Nothing is either effective enough in work, or mature enough in time.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Ea curato, qua[e] maximè faciunt virum: et quibus Mundus eget maximè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Pay attention to those things which make men in particular: and which the world requires in particular.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="l'occhio non" type="straight"/>
+		<underline language="IT" method="pen" text="orecchio è superfluo" type="straight"/>
+		<underline language="IT" method="pen" text="io solo à illuminare il capo" type="straight"/>
+		<underline language="IT" method="pen" text="Le mani" type="straight"/>
+		<underline language="IT" method="pen" text="i piedi non" type="straight"/>
+		<underline language="IT" method="pen" text="tutta la fatica è nostra" type="straight"/>
+		<underline language="IT" method="pen" text="che affaticarci" type="straight"/>
+		<underline language="IT" method="pen" text="questo ventre ci stà in riposo" type="straight"/>
+		<underline language="IT" method="pen" text="tutte le nostre fatiche" type="straight"/>
+		<underline language="IT" method="pen" text="ventre disutile" type="straight"/>
+		<underline language="IT" method="pen" text="ventre non" type="straight"/>
+		<underline language="IT" method="pen" text="io non voglio riceuere quel" type="straight"/>
+		<underline language="IT" method="pen" text="pacificamente conuiuendo insieme tutte queste membra" type="straight"/>
+		<underline language="IT" method="pen" text="l'vno aiuta &amp; serue l'altro" type="straight"/>
+		<underline language="IT" method="pen" text="l'occhio vede" type="straight"/>
+		<underline language="IT" method="pen" text="piè camina" type="straight"/>
+		<underline language="IT" method="pen" text="man laua l'altra" type="straight"/>
+		<underline language="IT" method="pen" text="due lauano il viso" type="straight"/>
+		<underline language="IT" method="pen" text="corpo regge la mano" type="straight"/>
+		<underline language="IT" method="pen" text="bocca mangia" type="straight"/>
+		<underline language="IT" method="pen" text="ventre riceue" type="straight"/>
+		<underline language="IT" method="pen" text="digerisce per" type="straight"/>
+		<underline language="IT" method="pen" text="paiono piu vili, &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="auuentura piu necessarie" type="straight"/>
+		<underline language="IT" method="pen" text="coprendole" type="straight"/>
+		<underline language="IT" method="pen" text="tenendole segrete" type="straight"/>
+		<underline language="IT" method="pen" text="voi Corinthij" type="straight"/>
+		<underline language="IT" method="pen" text="vostra città" type="straight"/>
+		<underline language="IT" method="pen" text="fanno vfficio d'occhio" type="straight"/>
+		<underline language="IT" method="pen" text="vfficio d'orecchio" type="straight"/>
+		<underline language="IT" method="pen" text="di mani, &amp; piedi" type="straight"/>
+		<underline language="IT" method="pen" text="vfficio di capo" type="straight"/>
+		<underline language="IT" method="pen" text="gouernano," type="straight"/>
+		<underline language="IT" method="pen" text="&amp; giuridittione" type="straight"/>
+		
+		<symbol name="SS" place="right_margin"/>
+		<symbol name="JC" place="right_margin"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--orec-->
+		<mark method="pen" name="plus_sign" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!--tut-->
+		<mark method="pen" name="plus_sign" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!--ca-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--la-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--co-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--buo-->
+		
+		<mark method="pen" name="dot" place="intext"/> <!--manda, anzi-->
+		
+    </annotation>
+</transcription>

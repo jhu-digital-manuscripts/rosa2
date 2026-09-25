@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonDL45.253r.tif" pagination="50[5]" reader="Harvey" signature="VViij[r]"/>
+    <annotation>
+        
+        <marginalia anchor_text="De maialibus festis." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Virtutes
+                        Vitia} festis carminibus decantata.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Virtues
+                Defects }   sung with festive songs.                   
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vetustorum heroum domi, forisq[ue] magnifica gesta vbilibet in orbe peracta," hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Notabile.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Noteworthy.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vitia maritor[um]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ex signis explorata.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                From investigated signs.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Imitatio. A[e]mulatio.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Imitation. Rivalry.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="De Maialibus festis." type="straight"/>
+        <underline language="LA" method="pen" text="vetustorum heroum domi, forisq[ue] magnifica gesta vbilibet in orbe peracta," type="straight"/>
+        <underline language="LA" method="pen" text="saltando decantat:" type="straight"/>
+        <underline language="LA" method="pen" text="quid illustriores fo[e]minae" type="straight"/>
+        <underline language="LA" method="pen" text="assequendis laudibus" type="straight"/>
+        <underline language="LA" method="pen" text="degeneres" type="straight"/>
+        <underline language="LA" method="pen" text="ignauiq[ue] nobiles" type="straight"/>
+        <underline language="LA" method="pen" text="tyranni," type="straight"/>
+        <underline language="LA" method="pen" text="cantionibus" type="straight"/>
+        <underline language="LA" method="pen" text="rhythmis sonantibus" type="straight"/>
+        <underline language="LA" method="pen" text="mariti vitia" type="straight"/>
+        <underline language="LA" method="pen" text="in lusibus alearum" type="straight"/>
+        <underline language="LA" method="pen" text="rixa tabernarum" type="straight"/>
+        <underline language="LA" method="pen" text="luxu vestium" type="straight"/>
+        <underline language="LA" method="pen" text="societate scurrarum" type="straight"/>
+        <underline language="LA" method="pen" text="continua ebrietate, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="crapula exerceant" type="straight"/>
+        <underline language="LA" method="pen" text="pigerrimae" type="straight"/>
+        <underline language="LA" method="pen" text="fallaces" type="straight"/>
+        <underline language="LA" method="pen" text="indomitae" type="straight"/>
+        <underline language="LA" method="pen" text="rixosae" type="straight"/>
+        <underline language="LA" method="pen" text="garrulae" type="straight"/>
+        <underline language="LA" method="pen" text="nugaces" type="straight"/>
+        <underline language="LA" method="pen" text="infidae sunt" type="straight"/>
+        <underline language="LA" method="pen" text="perfidi ciues" type="straight"/>
+        <underline language="LA" method="pen" text="versuti artifices" type="straight"/>
+        <underline language="LA" method="pen" text="vagi negotiatores" type="straight"/>
+        <underline language="LA" method="pen" text="stertentes naut[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="rusticiq[ue] infideles" type="straight"/>
+        <underline language="LA" method="pen" text="astutissimi proditores" type="straight"/>
+        <underline language="LA" method="pen" text="blandiloqui" type="straight"/>
+        <underline language="LA" method="pen" text="auari" type="straight"/>
+        <underline language="LA" method="pen" text="crudelesq[ue] terrarum praefecti efficiunt" type="straight"/>
+        <underline language="LA" method="pen" text="quàm excelsa, ac splendida virtus sit" type="straight"/>
+        <underline language="LA" method="pen" text="ac praecauere exemplis" type="straight"/>
+        <underline language="LA" method="pen" text="Cantilen[a]e heroum canuntur. Tyranni crudeles." type="straight"/>
+        <underline language="LA" method="pen" text="Vitia maritor[um]." type="straight"/>
+        <underline language="LA" method="pen" text="Vitia mulieru[m]." type="straight"/>
+        <underline language="LA" method="pen" text="Vitia co[m]munia." type="straight"/>
+        
+        <mark language="LA" method="pen" name="horizontal_bar" place="right_margin" text="explorata."/> <!-- under marginal note, 'explorata' -->
+        <mark language="LA" method="pen" name="horizontal_bar" place="right_margin" text="A[e]mulatio."/> <!-- under marginal note, 'A[e]mulatio' -->
+        
+        <numeral language="LA" place="intext" text="in lusibus alearum">1.</numeral>
+        <numeral language="LA" place="intext" text="rixa tabernarum">2.</numeral>
+        <numeral language="LA" place="intext" text="luxu vestium">3.</numeral>
+        <numeral language="LA" place="intext" text="societate scurrarum">4.</numeral>
+        <numeral language="LA" place="intext" text="continua ebrietate, &amp;">5.</numeral>
+        
+    </annotation> 
+</transcription>

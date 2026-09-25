@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.310r.tif" pagination="303" reader="John Dee" signature="ggg iij"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>♀ in decimia Retrograda, ♄ p[ro]pt[er] Quartu[m], Retrogradus } [etc]</marginalia_text> 
+                    <symbol_in_text name="Venus"/>
+                    <symbol_in_text name="Saturn"/>
+                </position>
+            </language>
+            <translation>Venus in the tenth retrograde, Saturn near the fourth, retrograde, et cetera.</translation>
+        </marginalia>
+        
+        <errata amendedtext="[deleted]" copytext="[Mercury] 18." language="LA"/>
+        
+        <table place="intext" type="astrological_chart">
+            <tr>
+                <th/>
+                <th label="House"/>
+                <th label="Position"/>
+                <th label="Added information"/>
+            </tr>
+            <tr>
+                <td>Mercury</td>
+                <td>9</td>
+                <td>:18:</td>
+            </tr>
+        </table>
+        
+    </annotation>
+</transcription>

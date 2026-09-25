@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.189r.tif" pagination="189" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="modo che, essendo io in Granata, quando il Serenissimo" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Fer. Colon</marginalia_text>
+                    <person name="Ferdinand Columbus"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="paga, paga" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Paga paga.</marginalia_text>
+                </position>
+            </language>
+            <translation>Pay, pay.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="accarezzarli" type="triple"/>
+        <underline language="IT" method="pen" text="modo che, essendo io in Granata, quando il Serenissimo" type="straight"/>
+        <underline language="IT" method="pen" text="Don Michel" type="straight"/>
+        <underline language="IT" method="pen" text="huomini senza vergogna" type="double"/>
+        <underline language="IT" method="pen" text="Ammiraglio li faceuano passare in quel modo la vita per la mala paga con mille altre" type="straight"/>
+        <underline language="IT" method="pen" text="sfacciatezza, che, se il" type="double"/>
+        <underline language="IT" method="pen" text="paga paga" type="double"/>
+        <underline language="IT" method="pen" text="io, &amp; mio" type="double"/>
+        <underline language="IT" method="pen" text="Ecco i figliuoli dell'Ammiraglio" type="double"/>
+        <underline language="IT" method="pen" text="Mosciolini" type="double"/>
+        <underline language="IT" method="pen" text="trouate terre di vanità, &amp; d'inganno, per sepoltura, &amp; miseria de' gentilhuomini Castigliani; soggiugnendo" type="straight"/>
+        
+        <mark method="pen" name="equal_sign" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        
+    </annotation>
+</transcription>

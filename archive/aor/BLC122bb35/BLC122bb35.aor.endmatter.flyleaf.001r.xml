@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC122bb35.endmatter.flyleaf.001r.tif" reader="John Dee" signature=""/> 
+    <annotation>
+         
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        J.D. quid si su..
+                        Planus angulus est sup[er]fici[es] ad co[n]tactu[m] duar[um] 
+                        rectaru[m] mutuo se in plano tange[n]t[ium] et no[n] in
+                        directu[m] [positar[um] - deleted] extensar[um], posita. na[m] est [deleted] [deleted].
+                        [sup[er]ficies pote...; deleted]
+                        Anguli rectilinei, a[e]qualiae sunt <!--JG: not sure about word below, [vestr...]--> <!-- FSF: or anyhting starting with vestig? --> <!--KS: I was also thinking in the direction of 'vestiga', in meaning it would correspond with 'semita' below ('tracked', 'traced')-->
+                        Linea est semita puncti
+                        Linea est longitudo ex fluxu puncti effecta. Linea est puncti tract[ae] [etc]
+                        Linea est longitudo ex mutata puncti seda[e]
+                        Linea effecta est intervallu[m], quo [...] puncti motu[m] metimur <!-- FSF to be added --> <!--KS: I think Dee's added word goes in the line below rather than in this one-->
+                        Linea [intervallu[m] - deleted] est puncti Iter.
+                        A Linea est intervallu[m] quod punctu[m] movendu[m] descripsit <!--JG: Not sure about movens, could be movend[a]?--> <!-- FSF: or movendum --> <!--KS: Would go for movend[um]-->
+                        { Linea est duoru[m] punctoru[m] intervallum.
+                        Superficies est duar[um] linear[um] intervallum
+                        Corpus est duar[um] sup[er]ficior[um] intervallu[m]. }
+                        D Linea recta est brevissu[m] duor[um] et eorundem punctor[um] intervallum
+                        B Superficies est intervallum quod linea motu suo (laterali no[n] indirectu[m] facto) efficit <!-- FSF: to be checked -->
+                        C Corpus est intervallum quod superficies ex motu suo in latus progignit.</marginalia_text>
+                    <person name="John Dee"/>
+                    <emphasis method="pen" text="no[n] indirectu[m] facto" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                A plane angle is an area in contact of two rectangles that cross each other in a plane
+               <!-- FSF: to be completed -->
+                Rectilinear angles are equal.
+                A line is the path of a point.
+                A line is a length established by the flow of a point.
+                A line is ... <!-- FSF: to be competed -->
+                A line is a length from ... <!-- FSF: to be competed -->
+                An established line is the space by which we measure the movement of a point.
+                A line is the way of a point.
+                A A line is the space that a movable point marks.
+                A line is the space between two points.
+                An area is the space between two lines. 
+                A (geometric) body is the space between two areas.
+                D A straight line is the shortest space between two and the same points.
+                B An area is the space that a line establishes by its movement (not accomplished by a lateral movement) <!-- FSF: to be checked -->
+                C A body is the space that an area produces from its movement to one side.
+            </translation>
+        </marginalia>
+        
+    </annotation>
+</transcription>

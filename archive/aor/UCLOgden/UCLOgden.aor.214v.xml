@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.214v.tif" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Fraudata inuenies amissis sidera membris" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sydera fraudata me[m]bris</marginalia_text> 
+                </position>
+            </language>
+            <translation>Stars cheated by divisions.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Vel quae fessa sedent pigras referentia menteis" type="straight"/>
+        <underline language="LA" method="pen" text="pede, lumina Cancri Desunt" type="straight"/>
+        <underline language="LA" method="pen" text="Sic nostros casus solatur mundus in astris. Exempló q[ue] docet patienter damna subire" type="straight"/>
+        <underline language="LA" method="pen" text="Nec satis est proprias signorum noscere formas, Consensu quoq[ue] fata mouent, &amp; foedere gaudent. Atq[ue] aliis aliae              succedunt sorte locó q[ue]." type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

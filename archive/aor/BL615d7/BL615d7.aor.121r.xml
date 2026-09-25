@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.121r.tif" pagination="121" reader="John Dee" signature="Q"/>
+    
+    <annotation>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Bartholomaus Colu[m]bus.</marginalia_text>
+                    <person name="Bartholomew Columbus"/>
+                </position>
+            </language>
+            <translation>Bartholomew Columbus.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>[deleted]</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="MD" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>1500</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="quasi tutti gli Indiani della terra solleuati per colpa di M. Pietro" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail"> 
+                    <marginalia_text>Note the occasion of the Indians vnquieting</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="seruì di Capitano" type="double"/>
+        <underline language="IT" method="pen" text="del XCIIII fino a' XII di" type="straight"/>
+        <underline language="IT" method="pen" text="del XCVI, che" type="straight"/>
+        <underline language="IT" method="pen" text="seruir de Gouernatore" type="straight"/>
+        <underline language="IT" method="pen" text="XCVIII" type="straight"/>
+        <underline language="IT" method="pen" text="lo Ammiraglio" type="straight"/>
+        <underline language="IT" method="pen" text="Capitano" type="double"/>
+        <underline language="IT" method="pen" text="MD, che io tornai" type="straight"/>
+        <underline language="IT" method="pen" text="Castiglia" type="straight"/>
+        <underline language="IT" method="pen" text="lo fece Prefetto" type="straight"/>
+        <underline language="IT" method="pen" text="Gouernator delle Indie" type="straight"/>
+        <underline language="IT" method="pen" text="Catolici diceano non essere conceduto" type="double"/>
+        <underline language="IT" method="pen" text="all'Ammiraglio il poter" type="straight"/>
+        <underline language="IT" method="pen" text="dar tale ufficio" type="straight"/>
+        <underline language="IT" method="pen" text="concedettero di nuouo" type="double"/>
+        <underline language="IT" method="pen" text="Prefetto delle Indie" type="straight"/>
+        <underline language="IT" method="pen" text="allhora riposò alquanto, &amp; uisse in molta quiete" type="straight"/>
+        <underline language="IT" method="pen" text="trouò quasi tutti" type="double"/>
+        <underline language="IT" method="pen" text="gli Indiani" type="straight"/>
+        <underline language="IT" method="pen" text="solleuati per colpa di M. Pietro, di" type="straight"/>
+        
+        <mark language="IT" method="pen" name="vertical_bar" place="right_margin" text="doue seruì alcuni anni, come appare per una memoria, la qual fra le sue scritture io trouai, oue ei dice queste parole. Io servì di Capitano da' XIIII di Aprile del XCIIII fino a' XII di Marzo del XCVI, che partì lo Ammiraglio per Castiglia; &amp; all'hora io cominciai a seruir de Gouernatore fino a' XXVIII di Agosto dell'anno del XCVIII, che lo Ammiraglio uenne dalla scoperta di Paria: nel qual tempo io tornai a seruir di Capitano fino a gli XI di Decembre dell'anno MD, che io tornai in Castiglia."/>
+        
+        <mark method="pen" name="bracket" place="intext"/>  <!-- Castiglia. Ma -->
+        
+        
+        
+        
+    
+        
+    </annotation>
+    
+</transcription>

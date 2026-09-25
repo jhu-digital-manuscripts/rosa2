@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.325v.tif" pagination="630" reader="John Dee" signature="[rrr.iii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="non dubitanter" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>no[n] dubita[n]ter</marginalia_text>
+                </position>
+            </language>
+            <translation>Not hesitatingly.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dilapidabat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>dilapidare.</marginalia_text>
+                </position>
+            </language>
+            <translation>To squander.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="crudeliter; scelerate" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>crudelit[er] scelerate</marginalia_text>
+                </position>
+            </language>
+            <translation>Cruelly. Wickedly.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="facere prohibeor, absens" type="straight"/>
+        <underline language="LA" method="pen" text="nisi fortè frustra eos appello" type="straight"/>
+        <underline language="LA" method="pen" text="auris atque animus" type="straight"/>
+        
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">13</numeral>
+        
+    </annotation>
+</transcription>

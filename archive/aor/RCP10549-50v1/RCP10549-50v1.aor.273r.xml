@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.273r.tif" pagination="525" reader="John Dee" signature="[lzlzlz.vii.]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gloria</marginalia_text>
+                </position>
+            </language>
+            <translation>Glory.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="centesima lux est haec ab interitu P. Clodii" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Centesima lux ab interitu Clodij</marginalia_text>
+                    <person name="Publius Clodius Pulcher"/>
+                </position>
+            </language>
+            <translation>'102 days after Clodius perished' [Loeb 252, 117].</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="No[n] recuso, non abnuo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>no[n] recuso no[n] abnuo.</marginalia_text>
+                </position>
+            </language>
+            <translation>I do not reject, I do not decline.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="indagaui, patefeci, protuli, extinxi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>indagaui protuli extinxi patefeci</marginalia_text>
+                </position>
+            </language>
+            <translation>I tracked down, discovered, destroyed, revealed.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="esse hanc vnam, quae breuitatem vitae posteritatis memoria consolaretur: quae efficeret, vt absentes adessemus, mortui viueremus:             hanc denique esse, cuius gradibus etiam in caelum homines videantur asce[n]dere. De me, inquit, sempter Pop. Romanus, se[m]per omnes gentes loquentur, nulla vnqam obmutescet vetustas" type="straight"/>
+        <underline language="LA" method="pen" text="Quamobre[m] vbi corpus hoc sit, no[n], inquit, laboro: quonia[m] omnibus in terris &amp; ia[m] versatur &amp; semper habitabit" type="straight"/>
+        <underline language="LA" method="pen" text="Judices, vt vestra beneficia, quae in me contulistis, aut in huius salute augeatis, aut in eiusdem exitio occasura esse iubeatis. His lachrymis" type="straight"/>
+        <underline language="LA" method="pen" text="exilium ibi esse putat, vbi virtuti no[n] sit locus: mortem naturae finem esse, non poena[m]" type="straight"/>
+        <underline language="LA" method="pen" text="O me miseru[m]: ô me infoelice[m]: reuocare" type="straight"/>
+        <underline language="LA" method="pen" text="omnes in me meósque redundant ex illo fonte dolores?" type="straight"/>
+        <underline language="LA" method="pen" text="quàm fuerit ille ipse discessus. nam quî possum putare me restitutum esse, si distrahor ab iis, per quos restitutus sum" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">3.22</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">3</numeral>
+        
+        <drawing anchor_text="Gloria" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="Quamobre[m] vbi corpus hoc sit, no[n], inquit, laboro: quonia[m] omnibus in terris &amp; ia[m] versatur &amp; semper habitabit" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        <drawing anchor_text="exilium ibi esse putat, vbi virtuti no[n] sit locus: mortem naturae finem esse, non poena[m]" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

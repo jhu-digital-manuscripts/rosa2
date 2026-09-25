@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.288v.tif" pagination="556" reader="John Dee" signature="[mmm.vi.[v]]"/>
+    <annotation>
+         
+        <marginalia anchor_text="ab vxore mima" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vxor mima</marginalia_text>
+                </position>
+            </language>
+            <translation>'Mime-actress spouse' [Loeb 189, 75].</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="Quaeramus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Questio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Question.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="negociúmque transegisses" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>negotiu[m] transigere.</marginalia_text>
+                </position>
+            </language>
+            <translation>To finish the job.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="disiu[n]xit; distrahere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>disiungere distrahere auocare dirimere</marginalia_text>
+                </position>
+            </language>
+            <translation>To separate; to pull apart; to divide; to dissolve.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="societate[m] aut nunqua[m] coisses" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>coire societatem</marginalia_text>
+                </position>
+            </language>
+            <translation>To enter a partnership [Loeb 189, 79].</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="fluminis Cydni" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cydinus flu. ad co[n]traria[m] ripa[m] navim applicare.</marginalia_text>
+                    <location name="Berdan River"/>
+                </position>
+            </language>
+            <translation>The river Cydnus. To place the ship near the other bank.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="ad ea[m] ripa[m], quam constituerat, non ad contrariam, nauim applicuisset" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ad co[n]traria[m] ripa[m] navim applicare.</marginalia_text>
+                </position>
+            </language>
+            <translation>To place the ship near the other bank.</translation>
+        </marginalia> 
+        
+        <underline language="EN" method="pen" text="stulti erat sperare" type="straight"/>
+        <underline language="EN" method="pen" text="contrariam" type="straight"/>
+        
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">19</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">5</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">13</numeral>
+        
+    </annotation>
+</transcription>

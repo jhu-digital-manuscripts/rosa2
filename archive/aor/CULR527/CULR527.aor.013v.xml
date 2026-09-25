@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.013v.tif" pagination="[13[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="puncta, linae, superficiesue, quae interdum sunt, interdum non sunt" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Puncta linea[s] [etc] interdum esse interdu[m] no[n]   <!-- DO: It looks like 'lineas' to me, and makes more sense to be accusative with the infinitive-->
+                        <!-- FSF: I do agree that it looks more like lineas; but then I am not sure how to translate it, given that puncta is singular nom or abl -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Points, lines etc. sometimes are there, sometimes not
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="habet esse" type="straight"/>
+        <underline language="LA" method="pen" text="Ex nihilo" type="straight"/>
+        <underline language="LA" method="pen" text="corpus, lineam, &amp; superficiem solùm accidentia" type="straight"/>
+        <underline language="LA" method="pen" text="quae fingi possunt ad faciendum intelligere" type="straight"/>
+        <underline language="LA" method="pen" text="quòd" type="straight"/>
+        <underline language="LA" method="pen" text="ipsa per se sint res" type="grid"/>
+        <underline language="LA" method="pen" text="generentur uel corrumpantur" type="straight"/>
+        <underline language="LA" method="pen" text="quidem quòd quandoque sint, quandoque" type="straight"/>
+        <underline language="LA" method="pen" text="non enim indiuisibile punctum, bipartitum esse potest" type="straight"/>
+
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+    </annotation>
+</transcription>

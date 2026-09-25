@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.411r.tif" pagination="371." reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="corpus maximi principis, patris Imperatoris nobilis Constantini" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Corpus Consta[n]tij Imperatoris.
+                    </marginalia_text>
+                    <person name="Constantius Chlorus"/>
+                </position>
+            </language>
+            <translation>
+                The body of Emperor Constantius. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ad Anglos gloria VVallensium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Wallensiu[m] Gloria ad Anglos translata
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The glories of the Welsh were transferred onto the English. 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="malorum inuentor" type="straight"/>
+        <underline language="LA" method="pen" text="saeuissimus" type="straight"/>
+        <underline language="LA" method="pen" text="propri[a]e nationis impostor" type="straight"/>
+        <underline language="LA" method="pen" text="belli author" type="straight"/>
+        <underline language="LA" method="pen" text="caput Londin." type="straight"/>
+        <underline language="LA" method="pen" text="nobilis" type="straight"/>
+        <underline language="LA" method="pen" text="Corona quondam famosi regis Britonum Arthuri" type="straight"/>
+        <underline language="LA" method="pen" text="Sic ad" type="triple"/>
+        <underline language="LA" method="pen" text="Anglos gloria VVallensium, inuitè Anglorum legibus subditorum, per dei prouidentiam est translata" type="straight"/>
+        
+        <mark method="pen" name="circumflex" place="intext"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- caput Londin. -->
+        <mark method="pen" name="comma" place="intext"/> <!-- inuit&egrave; Anglorum -->
+        
+        <errata amendedtext="Mamfredi" copytext="Memfredi" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="tail" type="crown"/>
+        
+    </annotation>
+</transcription>

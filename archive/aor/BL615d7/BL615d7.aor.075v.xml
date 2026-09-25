@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.075v.tif" pagination="[75v]" reader="John Dee" signature="[Kiij[v]]"/> 
+    
+    <annotation>
+        
+        <marginalia anchor_text="voti" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Note these vows.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="orationi, &amp; alla religione" type="straight"/>
+        <underline language="IT" method="pen" text="in peregrinaggio per tutti all Madonna" type="straight"/>
+        <underline language="IT" method="pen" text="Guadalupe" type="straight"/>
+        <underline language="IT" method="pen" text="toccò all'Ammiraglio" type="double"/>
+        <underline language="IT" method="pen" text="Madonna" type="double"/>
+        <underline language="IT" method="pen" text="marinaio" type="straight"/>
+        <underline language="IT" method="pen" text="Pietro" type="straight"/>
+        <underline language="IT" method="pen" text="peregrino" type="double"/>
+        <underline language="IT" method="pen" text="Chiara di Mogher" type="straight"/>
+        <underline language="IT" method="pen" text="stesso Ammiraglio" type="double"/>
+        <underline language="IT" method="pen" text="andar discalzi" type="straight"/>
+        <underline language="IT" method="pen" text="della Madonna" type="straight"/>
+        <underline language="IT" method="pen" text="voti" type="straight"/>
+        <underline language="IT" method="pen" text="sopportaua difficilmente" type="straight"/>
+        <underline id="BL615d7:615_d_7_f075r:u0001" language="IT" method="pen" text="saorno" type="double"/>
+        <underline language="IT" method="pen" text="era mancata" type="double"/>
+        <underline language="IT" method="pen" text="consumate" type="straight"/>
+        <underline id="BL615d7:615_d_7_f075r:u0002" language="IT" method="pen" text="aiuto" type="double"/>
+        <underline language="IT" method="pen" text="senza cosi gran pericolo di trauolgersi" type="straight"/>
+               
+        <mark id="BL615d7:615_d_7_f075r:ma0001" method="pen" name="quotation_mark" place="left_margin"/>
+        <mark id="BL615d7:615_d_7_f075r:ma0002" method="pen" name="quotation_mark" place="left_margin"/>
+        
+        <physical_link>
+            <marginal_annotation idref="BL615d7:615_d_7_f075r:u0001"/>
+            <marginal_annotation idref="BL615d7:615_d_7_f075r:u0002"/>
+            <marginal_annotation idref="BL615d7:615_d_7_f075r:ma0001"/>
+            <marginal_annotation idref="BL615d7:615_d_7_f075r:ma0002"/>
+            
+            <relation from="BL615d7:615_d_7_f075r:u0001" to="BL615d7:615_d_7_f075r:u0002" type="undirected"/>
+            <relation from="BL615d7:615_d_7_f075r:ma0001" to="BL615d7:615_d_7_f075r:ma0002" type="undirected"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

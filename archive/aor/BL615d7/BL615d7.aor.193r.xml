@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.193r.tif" pagination="193" reader="John Dee" signature="Bb"/>
+    <annotation>
+        
+        <marginalia anchor_text="la morte de gli LXXX Re" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>La morte di 80 Re</marginalia_text>
+                </position>
+            </language>
+            <translation>The death of the 80 Kings</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="morte de gli LXXX Re, di cui di Sopra habbiam detto" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Where ?</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="esser piena di malitia, &amp; di falsità &amp; non di casi, per li" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note, lyes</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="MD" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>1500</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        
+        <underline language="IT" method="pen" text="molto appassionato in pregiudicio del" type="straight"/>
+        <underline language="IT" method="pen" text="passioni con cautelose astutie, &amp; dando fede a' suoi sospetti," type="straight"/>
+        <underline language="IT" method="pen" text="crudeltà" type="double"/>
+        <underline language="IT" method="pen" text="morte de gli LXXX Re, di cui di Sopra" type="straight"/>
+        <underline language="IT" method="pen" text="habbiam detto" type="double"/>
+        <underline language="IT" method="pen" text="Ammiraglio ad alcun viaggio, onde essi riceuessero da lui alcuno vtile, &amp; oue egli si occupasse, fin che il detto Commendatore acquetasse le cose," type="straight"/>
+        <underline language="IT" method="pen" text="del suo giusto possesso" type="straight"/>
+        <underline language="IT" method="pen" text="esser piena di malitia, &amp; di falsità &amp; non di casi, per li" type="straight"/>
+        <underline language="IT" method="pen" text="nuoua informatione" type="straight"/>
+        <underline language="IT" method="pen" text="che gli promettessero di conseruarlo, &amp; guardarlo da' suoi pericoli" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="head"/>
+        
+    </annotation>
+</transcription>

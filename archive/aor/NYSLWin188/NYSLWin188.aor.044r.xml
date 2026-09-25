@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.044r.tif" pagination="44" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>propter reflexionis calorem circa terram vt supra dixit.</marginalia_text>
+                </position>
+            </language>
+            <translation>As said above, because of the heat of the reflection around the earth.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Repugnantes concurrentes.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Opposing competitors.</translation> <!--JG: Unsure how to render this best-->
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="Aber so es der Erde[n] nahet" type="straight"/>
+        <underline language="DE" method="pen" text="in die nidere" type="straight"/>
+        <underline language="DE" method="pen" text="Som[m]er regen Stern" type="straight"/>
+        <underline language="DE" method="pen" text="schwächisten" type="straight"/>
+        <underline language="DE" method="pen" text="Sommer regen" type="straight"/>
+        <underline language="DE" method="pen" text="coagulieren im fallen" type="straight"/>
+        <underline language="DE" method="pen" text="allein im gefriren" type="straight"/>
+        <underline language="DE" method="pen" text="auff Erden" type="straight"/>
+        <underline language="DE" method="pen" text="von dem Winther" type="double"/>
+        <underline language="DE" method="pen" text="Schnee auß seiner Mutter kommen" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+    </annotation>
+</transcription>

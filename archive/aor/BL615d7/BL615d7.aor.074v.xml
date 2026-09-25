@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.074v.tif" pagination="[74v]" reader="John Dee"/> 
+    <annotation>
+    
+        
+        <marginalia anchor_text="XVI di Genaio dell'anno MCCCCXCIII" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>1493. January. 16.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="il Capo di santo Elmo" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Il Capo di s[an]to Elmo.</marginalia_text>
+                    <location name="Saint Elmo"/>
+                </position>
+            </language>
+            <translation>The Cape of Saint Elmo.</translation>
+        </marginalia>
+    
+        <marginalia anchor_text="le correnti" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>The current.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="a' XVI" type="straight"/>
+        <underline language="IT" method="pen" text="Golfo delle freccie" type="double"/>
+        <underline language="IT" method="pen" text="chiamano di Samana" type="straight"/>
+        <underline language="IT" method="pen" text="essendo l'vltima" type="straight"/>
+        <underline language="IT" method="pen" text="ch'ei lasciò di vista, il Capo di Santo" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; XX leghe" type="straight"/>
+        <underline language="IT" method="pen" text="di Toni" type="straight"/>
+        <underline language="IT" method="pen" text="XIX, e XX" type="straight"/>
+        <underline language="IT" method="pen" text="Leste a Veste" type="straight"/>
+        <underline language="IT" method="pen" text="con le correnti" type="straight"/>
+        
+        
+        
+    
+    </annotation>
+    
+</transcription>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.007r.tif" reader="John Dee" signature="B"/> 
+    <annotation>
+        
+        <marginalia anchor_text="ad quod exe[m]plu[m] respondent Mathematici demo[n]stratiue negatiue              ex maxima illa et concessa demonstrata ex quindecima tercij geometrie" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Demonstratiue negatiue
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Demonstratively negative.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="inter illa[m] et circulu[m] aliam lineam rectam capi est impossibile" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Circulu[m] q[ua]dravi no[n] posse
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                It is not possible to square a circle.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="anthiphontis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Antiphon
+                    </marginalia_text>
+                    <person name="Antiphon"/>
+                </position>
+            </language>
+            <translation>
+                Antiphon.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="brissonis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Brison.
+                    </marginalia_text>
+                    <person name="Bryson"/>
+                </position>
+            </language>
+            <translation>
+                Bryson of Heraclea.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="archimedis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Archimedes
+                    </marginalia_text>
+                    <person name="Archimedes"/>
+                </position>
+            </language>
+            <translation>
+                Archimedes.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cuse" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Cusa
+                    </marginalia_text>
+                    <person name="Nicholas of Cusa"/>
+                </position>
+            </language>
+            <translation>
+                Nicholas of Cusa.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vt sicut res differunt speciebus. Ita etiam figuris" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Species figura
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Shape, figure.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="si est scibilis" type="straight"/>
+        <underline language="LA" method="pen" text="ex quindecima tercij geometrie" type="straight"/>
+        <underline language="LA" method="pen" text="quia est" type="straight"/>
+        <underline language="LA" method="pen" text="Si quadratura circuli scibilis est necessario ab aduersario dicat[ur] curuum recto vniri per lieam" type="straight"/>
+        <underline language="LA" method="pen" text="media et non per equalem angulum rectum" type="straight"/>
+        <underline language="LA" method="pen" text="et itur per omnia media et nunq[uam] per equale. S[ed]" type="straight"/>
+        <underline language="LA" method="pen" text="si angulus contingentie esset diuisibilis per lineam rectam aliquod scibile esse de quadratura quare dicit ph[ilosoph]us in p[ro]posito si est scibilis" type="straight"/>
+        <underline language="LA" method="pen" text="q[uo]d tame[n] non est" type="straight"/>
+        <underline language="LA" method="pen" text="multi male opinant[ur] de quadratura et diuersas opiniones" type="straight"/>
+        <underline language="LA" method="pen" text="fieri per lineam elicam" type="straight"/>
+        <underline language="LA" method="pen" text="cuse" type="straight"/>
+        <underline language="LA" method="pen" text="differunt speciebus. Ita etiam figuris" type="straight"/>
+        <underline language="LA" method="pen" text="etia[m] est vna figura" type="straight"/>
+        <underline language="LA" method="pen" text="Quadratura negati[u]e euclidis" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- negatiue ex' -->
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.082v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Sulpitii" hand="English_secretary" id="ChChWb512:WB5-12_0172_074v_m0001">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        This name is corrupted:
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline id="ChChWb512:WB5-12_0172_074v:u0001" language="LA" method="pen" text="Sulpitii" type="double"/>
+        <underline language="LA" method="pen" text="papae ab auu[n]culo traditus" type="straight"/>
+        <underline language="LA" method="pen" text="ei rex Riculfus" type="straight"/>
+        <underline language="LA" method="pen" text="vniuerso patriae" type="straight"/>
+        <underline language="LA" method="pen" text="Riculfum" type="straight"/>
+        <underline language="LA" method="pen" text="dispersisq[ue] pagensibus saeuitiae indulgere non cessauerunt" type="straight"/>
+        <underline language="LA" method="pen" text="totam" type="double"/>
+        <underline language="LA" method="pen" text="NorWegesiam necno[n] &amp; Dacia[m] dominio Arthuri submiseru[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="Dacia[m] dominio" type="double"/>
+        <underline language="LA" method="pen" text="Quib[us] subactis cu[m]" type="double"/>
+        <underline language="LA" method="pen" text="Nam Arthurum iuue[n]tus i[n]sularum omnium quas subiugauerat" type="straight"/>
+        <underline language="LA" method="pen" text="comitabatur" type="double"/>
+        <underline language="LA" method="pen" text="tum perhibebatur habere exercitu[m] qua[n]tu[m] erat difficule ab vllo posse superari. Famulabatur quoq[ue] ei melior pars Gallicanae proui[n]ciae quam sua largitas sibi obnoxiam fecerat" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <physical_link>
+            <marginal_annotation idref="ChChWb512:WB5-12_0172_074v:m0001"/>
+            <marginal_annotation idref="ChChWb512:WB5-12_0172_074v:u0001"/>
+            
+            <relation from="ChChWb512:WB5-12_0172_074v:m0001" to="ChChWb512:WB5-12_0172_074v:u0001" type="directed"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

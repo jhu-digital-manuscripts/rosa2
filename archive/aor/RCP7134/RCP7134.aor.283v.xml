@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.283v.tif" pagination="[276v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Mars &amp; Mercurius cum Luna" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>♂ ☿ ☾.</marginalia_text>
+                    <symbol_in_text name="Mars"/>
+                    <symbol_in_text name="Mercury"/>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>Mars [and] Mercury [with] the Moon.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Venus, cum locum cum Marte" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>♀ ♂</marginalia_text>
+                    <symbol_in_text name="Venus"/>
+                    <symbol_in_text name="Mars"/>
+                </position>
+            </language>
+            <translation>Venus [with] Mars.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Castitas" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Castitas.</marginalia_text>
+                </position>
+            </language>
+            <translation>Chastity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mars &amp; Mercurius cum Luna" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>☾ ♃.</marginalia_text>
+                    <symbol_in_text name="Jupiter"/>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>The Moon [with] Jupiter.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Mars &amp; Mercurius cum" type="straight"/>
+        <underline language="LA" method="pen" text="existente, omnis e[ni]m planeta robustus in angulo, impedit sapientia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Castitas sit, uel ex sola regia naturae Iouis &amp; Veneris in ascendente existente" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.169v.tif" pagination="[170v]" reader="John Dee" signature="[Y.ij.[v]]"/>   
+    <annotation>
+        
+        <marginalia anchor_text="medicus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Medice cura teip[su]m</marginalia_text>   
+                </position>
+            </language>
+            <translation>Doctor, cure yourself.</translation>    
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Et (fateor) medicus turpiter aeger eram" type="straight"/>
+        <underline language="LA" method="pen" text="Et mala sunt vicina bonis" type="straight"/>
+        <underline language="LA" method="pen" text="Pro vitio virtus crimina saepe tulit" type="straight"/>
+        <underline language="LA" method="pen" text="Turgida, si plena est" type="straight"/>
+        
+        <mark method="pen" name="scribble" place="head"/>            <!-- DO: Not sure if these are specific marks -->
+        <mark method="pen" name="scribble" place="left_margin"/>
+     
+    </annotation>
+</transcription>

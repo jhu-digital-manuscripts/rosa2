@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.371v.tif" pagination="194" reader="John Dee" signature="[Nn.i.[v]]"/>   
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Cotta
+                    </marginalia_text>
+                    <person name="Gaius Aurelius Cotta"/>
+                </position>
+            </language>
+            <translation>
+                Gaius Aurelius Cotta.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="informatum, anticipatum mentibus nostris" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        est { anticipatu[m] informatu[m] } me[n]tib[us] n[ost]ris
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                It is anticipated and fashioned by our intellect.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Academicus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Academic.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pythagoras" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Pythagoras suis ta[n]tu[m] sua explicuit
+                    </marginalia_text>
+                    <person name="Pythagoras"/>
+                </position>
+            </language>
+            <translation>
+                Pythagoras explains his ideas only through his ideas. <!-- FSF: not sure -->
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="species" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Deorum Species.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Types of gods.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Venere Coa" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        venus Coa
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Venus of Cos.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Cur Deus credatur humana esse forma
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Why God is believed to have created in human shape.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="simulacra" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Simulachra
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Images.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Poeta[e] Pictores opifices } 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Poets, painters, artisan.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="homini homine pulchrius nihil videatur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Homini, ho[m]i[n]e pulchri[us] videt[ur] nil
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To man, nothing seems more beautiful than man.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cur deos homunium similes putemus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Cur deos ho[m]i[nu]m similes putem[us]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Why we belief that the gods are similar to men.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Ino
+                    </marginalia_text>
+                    <person name="Ino"/>
+                </position>
+            </language>
+            <translation>
+                Ino.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Triton" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Triton
+                    </marginalia_text>
+                    <person name="Triton"/>
+                </position>
+            </language>
+            <translation>
+                Triton.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        forsan pa[e]dica. vel athletus intelligit
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Perhaps predicted or he understands athletes.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Naeuus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Na[e]uus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A mole.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quintus Catulus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Q. Catulus.
+                    </marginalia_text>
+                    <person name="Quintus Lutatius Catulus"/>
+                </position>
+            </language>
+            <translation>
+                Quintus Lutatius Catulus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="strabones, at petulos ... silos, flaccos, frontones, capitones" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Strabones. Petuli. Sili. Flacci. Frontones. Capitones
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Squinters, squinting, pug-nosed, protruding ears, prominents brows and large heads.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        qua[m] blanda co[n]ciliatrix et qua[m] sui est lena natura?
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Like a flattering match-maker and like <!-- FSF: not sure if I transcribed the second part correctly -->
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Lume[n]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Light.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Dij adumbrati
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Obscure gods.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vitia" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        some deformitie of them bale <!-- FSF: not sure about the last word -->
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="vt Pythagoras solebat alienos: nec" type="straight"/>
+        <underline language="LA" method="pen" text="pugnare te" type="straight"/>
+        <underline language="LA" method="pen" text="vt quaedam sit deorum, quae nihil concreti habeat, nihil solidi, nihil expressi" type="straight"/>
+        <underline language="LA" method="pen" text="nec ille fusus &amp; candore mixtus rubor" type="straight"/>
+        <underline language="LA" method="pen" text="adumbratorum deorum" type="straight"/>
+        <underline language="LA" method="pen" text="no[n] deest hoc loco copia rationum" type="straight"/>
+        <underline language="LA" method="pen" text="sit informatum" type="straight"/>
+        <underline language="LA" method="pen" text="domicilium me[n]tos esse" type="straight"/>
+        <underline language="LA" method="pen" text="omniu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="quae venera[n]tes, deos ipsos se adire" type="straight"/>
+        <underline language="LA" method="pen" text="homini homine pulchrius nihil videatur" type="straight"/>
+        <underline language="LA" method="pen" text="equae co[n]trectatione" type="straight"/>
+        <underline language="LA" method="pen" text="tributuras" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; iungere formas" type="straight"/>
+        <underline language="LA" method="pen" text="inuehens" type="straight"/>
+        <underline language="LA" method="pen" text="homo nemo" type="straight"/>
+        <underline language="LA" method="pen" text="singuli" type="straight"/>
+        <underline language="LA" method="pen" text="vitia" type="straight"/>
+        <underline language="LA" method="pen" text="lumen" type="straight"/>
+        <underline language="LA" method="pen" text="peruersissimis" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Asterisk" place="right_margin"/>
+        <symbol name="Asterisk" place="right_margin"/>
+        
+        <mark language="LA" method="pen" name="tripunctus" place="left_margin" text="Venus Coa"/>
+        <mark language="LA" method="pen" name="tripunctus" place="left_margin" text="Cur Deus creatur humana esse forma"/>  
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="tripunctus" place="left_margin"/>  
+        <mark method="pen" name="tripunctus" place="left_margin"/>  
+        <mark method="pen" name="tripunctus" place="left_margin"/>  
+        <mark method="pen" name="tripunctus" place="left_margin"/>  
+        <mark language="LA" method="pen" name="tripunctus" place="tail" text="Lume[n]"/>  
+        
+        <numeral language="LA" place="left_margin" text="Primum">1</numeral>
+        <numeral language="LA" place="left_margin" text="Deinde">2</numeral>
+        <numeral language="LA" place="left_margin" text="Tertiam">3</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+        <errata amendedtext="[deleted]" copytext="omniu[m]" language="LA"/>
+        <errata amendedtext="esse rerum, fac" copytext="esse, rerum fac" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing anchor_text="Triton" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="Na[e]uus" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

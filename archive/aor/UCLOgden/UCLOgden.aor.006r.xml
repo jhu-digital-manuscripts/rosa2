@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.006r.tif" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Apheres" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Aphetes.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Starting point.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" other_reader="unknown modern reader">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Anabibazon Catabibazon
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="κενοδρομία" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        κενοδρομία
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                'Empty course' (i.e. the unaccompanied course of a planet).
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Quida[m] hylegralia[e] voca[n]t
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Some call the hylegalia.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        et ista hyleg. nomina[n]t.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                And they call these hyleg.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἀνατάχυσις" hand="English_secretary">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ἀνατάχυσις <!-- this word is not found anywhere in Greek dictionaries or the existing repositories like the TLG. I suspect it is an error and it should read ἀνάχυσις, which means fusion, reversion. -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Reversion.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="aut supetexcedit[ur]" type="straight"/>
+        
+        <mark colour="red" method="pen" name="bracket" place="right_margin"/>
+        <mark method="pencil" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pencil" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

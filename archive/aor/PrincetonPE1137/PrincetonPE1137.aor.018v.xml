@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+<page filename="PrincetonPE1137.018v.tif" pagination="[17v]" reader="Harvey" signature="e.i.v"/>
+    <annotation>
+        <marginalia anchor_text="duaru[m] vocalium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Audomarus Tala[e]us Veliam, oppidum Lucania[e],
+                    </marginalia_text>   
+                    <person name="Omer Talon"/>
+                    <location name="Velia"/>
+                    <location name="Lucania"/>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ἀπὸ τοῦ ἕλεος
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        nomen habuisse refert, aspiratione in latina voce Versa in u vocalem.
+                        grammatici nostri u consonantem vocant.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Audomarus Talaeus reports that Velia, the city in Lucania, had the name 'apo tou heleos', with the aspiration 
+                turned in the Latin tongue into the vowel 'u'.
+                Our grammaticians call 'u' a consonant.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Si iu, in Juno diphthongus esset, esset, ut uidetur, in Virgiliano carmine 
+                    </marginalia_text>
+                    <person name="Virgil"/>
+                    <person name="Juno"/>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        συναλλοιφὴ.
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        nisi forte
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        διαίρεσιν                     
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        esse putemus, et Jüno sonandum arbitremur, quod nemo vnq[uam] obseruauit. Sed qui in his 
+                        uocibus, aurãi, aquãi, aulãi, pictãi, tam audacem, ut ita dicam, ferit
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        διαίρεσιν,
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        potuit etiam eadem licentia Jüno dicere.
+                    </marginalia_text>
+                </position>
+            </language>            
+            <translation>
+                If the 'ju' in 'Juno' were a diphthong, it would - as is clear - undergo 'synalepha' in Virgil's poetry. Otherwise, we may suppose it undergoes
+                'diaresis' and judge that it is to be pronounced 'I-uno', something that no-one has previously noticed. But one who, if I may say, were so bold as to
+                use diaeresis with these vowels - 'aura-i', 'aqua-i', 'aula-i', 'picta-i' - could with the same wantonness say 'I-uno'.         
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="duaru[m] vocalium" type="straight"/>
+        
+        <mark language="LA" method="pen" name="est_mark" place="intext" text="duaru[m] vocalium"/>
+        <mark language="LA" method="pen" name="est_mark" place="left_margin" text="duaru[m] vocalium"/>
+        
+    </annotation>
+</transcription>

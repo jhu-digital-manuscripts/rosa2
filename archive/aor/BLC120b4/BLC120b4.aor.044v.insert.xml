@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.044v.insert.tif" origin="added" reader="John Dee" status="fixed"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        nisi spiritus solos, vel quod natura[m] spiritus vel corporis in se co[n]tineat.
+                        Sed hos proiectos super corpora sine illorum mundatione,
+                        viderunt non perfectos colores dare, vel ex toto corrumpere
+                        denigrare, advere, &amp; defo[e]dare. Notetis ergo, quod dicim[us] <!-- FSF: in Ars metallicae advertere -->
+                        sine illorum mundatione. Igitur mundatio debet fidei, %
+                        ista à ingredine, et tenebris: et ita sentit Hermes. sed 
+                        quid est illud quod parit ista[m] nigredine[m]? certe humiditas
+                        aquosa et advstiva. Vnde Author trium verboru[m] [etc.]
+                    </marginalia_text>
+                    <person name="Hermes Trismegistus"/>
+                    <person name="King Calid"/>
+                    <book title="The Book of Three Words"/>
+                </position>
+            </language>
+            <translation>
+                Unless souls alone, or that the spirit of the body cointains in itself nature.
+                But those cast over the body without purgation of those saw them give to those not perfected colours... <!-- FSF: I don't understand this structure -->
+                You will note htat we say without purgation. Therefore, it must be purged from the blackness and darkness. And thus says Hermes
+                But what actually causes this blackness? Certainly a watery and combusting moistness. THis says the Author of the Book of Three Words.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Fumus albus est anima et spiritus illorum corporum, quor[um]
+                        animas iam extraximus, et iteru[m] eas suis corporibus
+                        coniunximus. Ista ergo anima suu[m] corpus ingressa, dealbat
+                        ip[su]m, et mundat ab omni nigredine. Vnde Parmenides in <!-- FSF: running over to next page -->
+                    </marginalia_text>
+                    <person name="Parmenides"/>
+                </position>
+            </language>
+            <translation>
+                White smoke is the breath and soul of bodies the breaths of which we have already extracted and we have joint with their bodies.
+                This breath, which is entered into its body, has whitened itself and is cleansed of all its blackness. On this Parmenides [says] in [...].
+            </translation>
+        </marginalia>
+        
+    </annotation>
+</transcription>

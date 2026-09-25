@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.222v.tif" pagination="428" reader="Harvey" signature="[nn4v]"/> 
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Thomas Smithus filius, et Eques Humfredus Gilbertus pro Marcello: Thomas Smithus pater, et doctor Gualterus Haddonus 
+                        pro Fabio Maximo. Auscultantibus iam tum in Montis aula me, Joanne Vuddo, nonnullis alijs generosis. 
+                        Cedebant tandem filius, et Eques honorato Secretario: haud scio an cesserit Marcellus Fabio. Boni ambo, et cordati: 
+                        Marcellus validior: Fabius astutior: nec hic inermis: nec ille imprudens: vterq[ue] suo loco necessarius. 
+                        Est, vbi malim esse Marcellus: est, vbi Fabius.
+                    </marginalia_text>
+                    <person name="Thomas Smith Junior"/>
+                    <person name="Humphrey Gilbert"/>
+                    <person name="Marcus Claudius Marcellus"/>
+                    <person name="Thomas Smith"/>
+                    <person name="Walter Haddon"/>
+                    <person name="Fabius Maximus"/>
+                    <person name="Gabriel Harvey"/>
+                    <person name="John Wood"/>    
+                    <location name="Hill Hall"/>
+                </position>
+            </language>
+            <translation>Thomas Smith junior and Sir Humphrey Gilbert [debated] for Marcellus, Thomas Smith senior and Doctor Walter Haddon for 
+                Fabius Maximus, before an audience at Hill Hall consisting at that very time of myself, John Wood, and several others of gentle birth. 
+                At length the son and Sir Humphrey yielded to the distinguished secretary: perhaps Marcellus yielded to Fabius. 
+                Both of them worthy men, and judicious. Marcellus the more powerful; Fabius the more cunning. Neither was the latter unprepared
+                [weak], nor the former imprudent: each as indispensible as the other in his place. There are times when I would rather be Marcellus, 
+                times when Fabius. [Trans. Grafton and Jardine 1990]
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Fabium Maximu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="quem tum principe[m] Roman[a]e ciuitatis esse, uel Annibale iudice uicturus esset" type="straight"/>
+        <underline language="LA" method="pen" text="princeps in senatu" type="straight"/>
+        <underline language="LA" method="pen" text="Fabius Maximus COS." type="straight"/>
+        <underline language="LA" method="pen" text="Matellus erat" type="straight"/>
+        <underline language="LA" method="pen" text="infamis autor deserend[a]e Itali[a]e post Ca[n]nensem" type="straight"/>
+        <underline language="LA" method="pen" text="equestribus quoq[ue] notis eadem" type="straight"/>
+        <underline language="LA" method="pen" text="Marcellus &amp; co[n]sulis" type="straight"/>
+        <underline language="LA" method="pen" text="quia ita in animu[m] induxerat, neminem" type="straight"/>
+        <underline language="LA" method="pen" text="ducem Romanum tam parem Annibali quàm se esse" type="straight"/>
+        <underline language="LA" method="pen" text="Marcellus uestigijs instabat, castraq[ue]" type="straight"/>
+        
+        <symbol language="LA" name="SS" place="left_margin" text="Fabium Maximu[m], quem tum principe[m] Roman[a]e ciuitatis esse, uel Annibale iudice uicturus esset"/>
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="principe[m]"/>
+        
+    </annotation>
+</transcription>

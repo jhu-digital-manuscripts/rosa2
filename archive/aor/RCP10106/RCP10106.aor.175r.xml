@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.175r.tif" pagination="349" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="prooemio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Proo[e]miu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Prooemium.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Verbis legis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>legis verba</marginalia_text>
+                </position>
+            </language>
+            <translation>Word of the law.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Praeceptoris" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pra[e]ceptor.</marginalia_text>
+                </position>
+            </language>
+            <translation>Teacher.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pictor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pictor</marginalia_text>
+                </position>
+            </language>
+            <translation>Painter.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="faber" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>faber</marginalia_text>
+                </position>
+            </language>
+            <translation>Potter.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="medicus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Medicus</marginalia_text>
+                </position>
+            </language>
+            <translation>Doctor.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="plurimos ac prudentißimos" type="straight"/>
+        <underline language="LA" method="pen" text="Verbis legis standum sit, an uolu[n]tante" type="straight"/>
+        <underline language="LA" method="pen" text="struxerit orationem" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

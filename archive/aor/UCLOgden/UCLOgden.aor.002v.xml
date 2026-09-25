@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.002v.tif" reader="John Dee" signature="[α 2[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Valde inepta et depravata.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Very inapt and depraved.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Horoscopus" colour="red" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Horoscopius
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Horoscope.
+            </translation>
+        </marginalia>
+        
+        <symbol name="Aries" place="left_margin"/>
+        
+        <mark colour="red" method="pen" name="vertical_bar" place="left_margin"/>
+        <mark colour="red" method="pen" name="bracket" place="left_margin"/> 
+        
+    </annotation>
+</transcription>

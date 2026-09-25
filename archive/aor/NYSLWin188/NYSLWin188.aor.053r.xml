@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.053r.tif" pagination="53" reader="John Dee" signature="O"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vt pagina [sic] dixit</marginalia_text> <!--JG: Unsure abt 'pagmast'--> <!--KS: Looks like 'pagina' to me, not sure about 'st' though--> <!-- FSF: maybe sic? -->
+                </position>
+            </language>
+            <translation>As the page thus said.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="gradus Olympi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gradus Olympi</marginalia_text> 
+                    <location name="Olympus"/>
+                </position>
+            </language>
+            <translation>The degree of Olympus.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="gegen jr höhe das ist" type="straight"/>
+        <underline language="DE" method="pen" text="offene Loch empfunden" type="straight"/>
+        <underline language="DE" method="pen" text="dan[n] für sich bricht sie auff nit hindersich" type="straight"/>
+        <underline language="DE" method="pen" text="nichts ist dan[n] ein fewer in ein kleine Massa" type="straight"/>
+        <underline language="DE" method="pen" text="arth penetration" type="straight"/>
+        <underline language="DE" method="pen" text="all durch ga[n]g mit" type="straight"/>
+        <underline language="DE" method="pen" text="Geist" type="straight"/>
+        <underline language="DE" method="pen" text="durch gehen" type="straight"/>
+        <underline language="DE" method="pen" text="was da ist zu bodem gehen" type="straight"/>
+        <underline language="DE" method="pen" text="hoch per hennisch, das in eine[m] augenblick alle eysen was es berürt in fluß bringt" type="straight"/>
+        <underline language="DE" method="pen" text="gradus Olympi" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

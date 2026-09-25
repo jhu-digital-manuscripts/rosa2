@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.241r.tif" pagination="241" reader="John Dee" signature="Hh"/> 
+    
+    <annotation>
+   
+            <marginalia anchor_text="Capo di S. Michele" hand="Italian" method="pen">
+                <language ident="LA">
+                    <position book_orientation="0" place="right_margin">
+                        <marginalia_text>Cap St Michel</marginalia_text>
+                        <location name="Cape St. Michael"/>
+                    </position>
+                </language>
+                <translation>Cape St. Michael</translation>
+            </marginalia>
+      
+            <marginalia anchor_text="Saragua" hand="Italian" method="pen">
+                <language ident="IT">
+                    <position book_orientation="0" place="left_margin">
+                        <marginalia_text>Saragua</marginalia_text>
+                        <location name="Saragua"/>
+                    </position>
+                </language>
+                <translation/> <!-- FSF: is there a translation for this place? -->
+            </marginalia>
+            
+         <underline language="IT" method="pen" text="Capo di S. Michele" type="straight"/>
+        <underline language="IT" method="pen" text="vicin paese della Spagnuola" type="straight"/>
+        <underline language="IT" method="pen" text="principio del quarto giorno della lor partita. &amp;" type="straight"/>
+        <underline language="IT" method="pen" text="per lo mare, che haueano" type="straight"/>
+        <underline language="IT" method="pen" text="fu huom, che seco tornar volesse." type="straight"/>
+        <underline language="IT" method="pen" text="hauesse la quartana" type="straight"/>
+        <underline language="IT" method="pen" text="a Saragua" type="straight"/>
+        <underline language="IT" method="pen" text="molto lungo nello espedirlo per le" type="straight"/>
+           
+    </annotation>
+</transcription>

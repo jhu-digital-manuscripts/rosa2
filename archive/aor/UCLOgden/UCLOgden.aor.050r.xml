@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.050r.tif" pagination="83" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ☾ cursus post natiuitatis diei diem ..tu[m] ita est notandus vt eadem ... simili r[ati]o[n]e tunc pendere ab sa[e]pe loco putandu[m] sit vt in ip[s]a natiuitate
+                    </marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>
+                The course of the moon after the day of the birthday [...] [...] thus it must be note so that the same [...]
+                by a similar reason then hang often must be put from the place as in the birthday itself.<!-- FSF: not sure --> <!-- M.B. I can't figure this one out either.. -->
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Occasio seque[n]tis libri.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The opportunity for the following book. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Huius studij fructus est dignitas.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The dignity is the fruit of this study.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="conueniet, nec ta[n]tum eodem die, quo natus homo" type="straight"/>
+        <underline language="LA" method="pen" text="prima uestigia lucis ingreditur, sed diligenti etiam ratione, tertio die perquirere debemus, cui se stellae ☾" type="straight"/>
+        <underline language="LA" method="pen" text="immulgentur alimenta nutricia" type="straight"/>
+        <underline language="LA" method="pen" text="Nam &amp; tertio die, sicuti primo, omnia simili ratione" type="straight"/>
+        <underline colour="red" language="LA" method="pen" text="caninae" type="straight"/>
+        <underline colour="red" language="LA" method="pen" text="contentionis iurgiosa certamina" type="straight"/>
+        <underline language="LA" method="pen" text="Deserui itaque hoc studium, ne imperitotum" type="straight"/>
+        <underline language="LA" method="pen" text="conualescente consensu" type="straight"/>
+        <underline language="LA" method="pen" text="alienis utilitatibus excuba[n]s, maximis me insidiis, &amp; maximorum periculorum discriminibus implicarem" type="straight"/>
+        <underline language="LA" method="pen" text="ratione restitutionis, quàm liberali animo, co[n]temptis forensibus" type="straight"/>
+        <underline language="LA" method="pen" text="itaque constitutus, &amp; forensium certaminum" type="straight"/>
+        <underline language="LA" method="pen" text="quodammodo inuidiae laqueis" type="straight"/>
+        <underline language="LA" method="pen" text="scripsi, ut à terrena quoda[m]modo conuersatione sepositus, ex qualicu[m]q[ue] parte,              ad purganda animi uitia, quae ex prauorum hominum conuersatione contraxetam, coelestibus ac diuinis me disputationibus" type="straight"/>
+        
+        <symbol name="Unidentified" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- die nato -->
+        
+    </annotation>
+</transcription>

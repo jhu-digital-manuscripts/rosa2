@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.027v.tif" pagination="38" reader="John Dee" signature="[d[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="te[m]pus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Temporis distributio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The disturbance of the time.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Alii" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Alior[um] opinio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The opinion of others.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Si o[mn]es istos dies co[n]iunxeris videbi[s] anni qua[n]titate[m] et paulo plus 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                If you add alll these days, you will see the number of years and a little more.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ptholomaeus [...] Antiochius [...] Dorochius" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Ptolomaeus. Antiochus. Dorochius
+                    </marginalia_text>
+                    <person name="Ptolemy"/>
+                    <person name="Stephen of Antioch"/>
+                    <person name="William of Drogheada"/>
+                </position>
+            </language>
+            <translation>
+                Ptolemy, Stephen of Antioch, William of Drogheada. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Dorotheus Sydonius carmine apotelesmata verissimè et disertissimè scripsit
+                    </marginalia_text>
+                    <person name="Dorotheus of Sidon"/>
+                </position>
+            </language>
+            <translation>
+                Dorotheus of Sidon wrote in his astrological prediction with greatest truth and skill.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quid quaeq[ue] stella, suscipiens te[m]pus ab alia stella decernat, omnia enim, quae nobis proueniu[n]t bona, uel mala, ista temporu[m] ratio[n]e colligimus" type="straight"/>
+        <underline language="LA" method="pen" text="nam ab horosc. semper sumit exordium, &amp; primus annus erit in quo est horosc. constitutus, secundus in secundo signo, tertius in tertio, &amp; sic caeteri per ordine[m]" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; habet rationem" type="straight"/>
+        <underline language="LA" method="pen" text="In quocunq[ue] itaq[ue] signo annus fuerit, eius signi dominus primos accipit dies, &amp; post ipsum c[a]eteri, prout sunt singuli in geniturae themate constituti" type="straight"/>
+        <underline language="LA" method="pen" text="sed prius signorum, ac locorum qualitate perspecta, nam si bene collocata stella fuerit, &amp; aut te[m]pus, aut menses, aut dies acceperit, &amp; sit beneuola, o[mn]ia bona" type="straight"/>
+        <underline language="LA" method="pen" text="Graecoru[m] sunt nobis magisterio" type="straight"/>
+        <underline language="LA" method="pen" text="quod Libra Arietem, propter" type="straight"/>
+        <underline language="LA" method="pen" text="terram" type="triple"/>
+        <underline language="LA" method="pen" text="Dorochius uero Sydonius" type="straight"/>
+        <underline language="LA" method="pen" text="apotelesmata uerissimis, &amp; disertissimis uersibus" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark colour="red" method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="intext"/> <!-- ordine[m] Alii -->
+        
+        <numeral language="LA" place="left_margin" text="☉ dies habet quinquaginta tres, ☾ septuaginta unum, ♄ octaginta quinq[ue], ♃ triginta, ♂ triginta sex, ♀ triginta             tres, ☿ quinquaginta septem">365</numeral>
+        
+    </annotation>
+</transcription>

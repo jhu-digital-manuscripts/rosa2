@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonDL45.228v.tif" pagination="456" reader="Harvey" signature="[QQij[v]]"/>
+    <annotation>
+        
+        
+        <marginalia anchor_text="Familiaritas nimia." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Parit Contemptum.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                It gives birth to contempt.
+            </translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="De indiscreta familiaritate Principium" type="straight"/>
+        <underline language="LA" method="pen" text="contubernales" type="straight"/>
+        <underline language="LA" method="pen" text="aut seruos" type="straight"/>
+        <underline language="LA" method="pen" text="nimia familiaritas apud" type="straight"/>
+        <underline language="LA" method="pen" text="milites" type="straight"/>
+        <underline language="LA" method="pen" text="commilitones nouo" type="straight"/>
+        <underline language="LA" method="pen" text="blandoq[ue] more appellasset" type="straight"/>
+        <underline language="LA" method="pen" text="affectabat charior" type="straight"/>
+        <underline language="LA" method="pen" text="Familiaritas nimia" type="straight"/>
+        <underline language="LA" method="pen" text="Nulli te facias nimis" type="straight"/>
+        <underline language="LA" method="pen" text="Gaudebis minus" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; minus dolebis" type="straight"/>
+
+        <mark method="pen" name="plus_sign" place="intext"/>
+        
+    </annotation>
+</transcription>

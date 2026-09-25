@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.frontmatter.flyleaf.004r.tif" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia hand="Italian" id="NYSLWin189:00000009:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>Archidoxis Theophrastia[e] pars prima 
+                    Noven libri de misterijs Natura[e] Theophr. Bombast de Hohenb. Suevij Heremita[e], Naturaliu[m] rerum docti Paracelsi Magni Ph[ilosoph]i industriosissimi 
+                    lib[er] 1. de Misterijs Microcosmi
+                    [liber] 2. [de Misterijs] Elementor[um] 
+                    [liber] 3. [de Misterijs] 5a[e] [quintae] essentia[e]
+                    [liber] 4. [de Misterijs] Arcani
+                    [liber] 5. [de Misterijs] Extractionum 
+                        [liber] 6. [de Misterijs] specificor[um] 
+                        [liber] 7. [de Misterijs] Elixir 
+                    [liber] 8. De misterijs extremis
+                    liber 9 De praxi, sed no[n] est impressus</marginalia_text> 
+                    <person name="Paracelsus"/>
+                    <book title="Archidoxa"/>
+                </position>
+            </language>
+            <translation>The first part of Theophrastus' Archidoxa
+                Nine books on the mysteries of nature by Theophrastus Bombast of Hohenberg, a Swabian hermit, [named] Paracelsus learned in natural matters and very industrious. 
+                Book 1 On the mysteries of the microcosmos
+                Book 2 On the mysteries of the elements
+                Book 3 On the mysteries of the holy essence
+                Book 4 On the mysteries of the arcane
+                Book 5 On the mysteries of the extractions
+                Book 6 On the mysteries of the specifics
+                Book 7 On the mysteries of elixirs
+                Book 8 On the mysteries of externals
+                Book 9 On the practice, but it is not printed yet. 
+            </translation>
+        </marginalia>
+        
+        <marginalia date="24 Juli 1640" hand="Italian" other_reader="John Winthrop">
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>This above written and the name on the top of the frontisspice of this booke [and] [the] writing in the middle of the fro[n]tisspice and the severall notes in the margent through the whole booke, was written 
+                        by that famous Philosopher and Chimist John Dee. w[i]th his owne hand. this J[ohn] Dee: was he [that] wrote the philosophicall treatise called Monae Hieroglifica. also Propaideumata Aphoriastic 
+                        also the learned preface before Euclides Elements in English in folio. he was warden of Manchester. I have divers books [that] were his wher he hath written his name and many notes [etc]: for w[i]ch they are worthyly the more esteemed. 
+                        John Winthrop. Juli 24 1640..</marginalia_text>
+                    <person name="John Dee"/>
+                    <person name="John Winthrop"/>
+                    <book title="Hieroglyphic Monad"/>
+                    <book title="Propaedumata Aphoristica"/>
+                    <book title="Stoicheia"/>
+                    <location name="Manchester"/>
+                    <internal_ref>
+                        <target prefix="This " ref="NYSLWin189:00000009:m0001" suffix=" written" text="above"/>
+                        <target prefix="the " ref="NYSLWin189:00000011:m0001" suffix=" of" text="top"/>
+                        <target prefix="the " ref="NYSLWin189:00000011:m0002" suffix=" of" text="middle"/>
+                    </internal_ref>
+                </position>
+            </language>
+        </marginalia>
+        
+       <mark method="pen" name="page_break" place="full_page"/> 
+        
+    </annotation>
+</transcription>

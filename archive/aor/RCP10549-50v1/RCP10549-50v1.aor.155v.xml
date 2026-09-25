@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.155v.tif" pagination="290" reader="John Dee" signature="[tt.i.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="donationis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        donatio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Donation.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="obiurgator" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        obiurgator
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Accuser.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="criminor" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        criminor
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                I accuse.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="agros no[n]nullos, inquit, socer meus desertos atque linginquos, ve[n]det eos mea lege quantivolet: habet incertos ac nullo iure possessos, co[n]firmabu[n]tur optimo iure.              habet publicos, redda[m] priuatis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ager { disertus longinquus incertus posessus publicus priuatus ]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+               A field: waste, remote, uncertain, inherited, public, private.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="non est meae consuetudinis initio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Exordiu[m] no[n] est me[a]e co[n]suetudinis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                For the beginning it is not my custom.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in hac defensione capitis, famae, fortunarúmque omnium C. Rabirii" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Caussa cur Rabiriu[m] defendat
+                    </marginalia_text>
+                    <person name="Gaius Rabirius"/>
+                </position>
+            </language>
+            <translation>
+                The reason why he [Cicero] defends Rabirius.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="hoc noster obiurgator vno verbo" type="straight"/>
+        <underline language="LA" method="pen" text="No[n] mediocris res, neque paruum sub hoc" type="straight"/>
+        <underline language="LA" method="pen" text="publicati" type="straight"/>
+        <underline language="LA" method="pen" text="impudentissime possidentur" type="straight"/>
+        <underline language="LA" method="pen" text="habeat quod no[n] habet, quae dubia sunt, per vos sancire vult: &amp; cu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="quos in agro Cassinati optimos, fructuosissimos co[n]tinuauit" type="straight"/>
+        <underline language="LA" method="pen" text="resistam atque repugnabo" type="straight"/>
+        <underline language="LA" method="pen" text="Consule dimoueri, praesertim cu[m] vobis nihil quaeratur. hoc enim vos in errore versari diutius non oportet" type="straight"/>
+        <underline language="LA" method="pen" text="cum omnibus ciuibus in eorum periculis semper satis iustam mihi causam necessitudinis esse duxi: tamen" type="straight"/>
+        <underline language="LA" method="pen" text="nam me cum amicitiae vetustas, tum dignitas hominis, tum ratio humanitatis, tum meae vitae" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">16</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">11</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">11</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">1</numeral>
+        <numeral place="left_margin">12</numeral>
+
+    </annotation>
+</transcription>

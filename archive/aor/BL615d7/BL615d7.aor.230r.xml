@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.230r.tif" pagination="230" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        The spaniards nature
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+       
+        <underline language="IT" method="pen" text="Ammiraglio volle fortificarsi in mare, &amp; non fare habitatione in terra: percioche, essendo noi" type="straight"/>
+        <underline language="IT" method="pen" text="poco vbidienti" type="double"/>
+        <underline language="IT" method="pen" text="castigo" type="double"/>
+        <underline language="IT" method="pen" text="mento sarebbe bastato per fermar la gente" type="straight"/>
+        <underline language="IT" method="pen" text="a scorrere i luoghi" type="double"/>
+        <underline language="IT" method="pen" text="gl'Indiani, per tor loro quel, che essi hauessero hauuto" type="straight"/>
+        <underline language="IT" method="pen" text="sarian poi nate" type="double"/>
+        <underline language="IT" method="pen" text="contese, &amp; romori" type="straight"/>
+        <underline language="IT" method="pen" text="fatti nemici" type="straight"/>
+        <underline language="IT" method="pen" text="loro a forza le vettouaglie" type="straight"/>
+        <underline language="IT" method="pen" text="tolti in nota, &amp; non haueano licentia" type="straight"/>
+        <underline language="IT" method="pen" text="zabi" type="straight"/>
+        <underline language="IT" method="pen" text="beretta rossa" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <errata amendedtext="nauigli" copytext="naui gli" language="IT"/>
+        
+    </annotation>
+</transcription>

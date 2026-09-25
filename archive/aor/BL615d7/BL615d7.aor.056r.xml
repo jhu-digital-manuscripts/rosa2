@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.056r.tif" pagination="56" reader="John Dee"/> 
+    
+    <annotation>
+        
+        <marginalia anchor_text="la terza; chiamò Fernandina" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>3. Fernandina</marginalia_text>
+                    <location name="Fernandina"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="la quarta Isabella" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>4 Isabella.</marginalia_text>
+                    <location name="Isabela"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Cuba, chiamò Giouanna in memoria del Prencipe Don Giouanni" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>5. Cuba a[f]t[e]r Giouanna.</marginalia_text>
+                    <person name="John II of Castile"/> 
+                    <location name="Cuba"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="legni Aloe" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lignu[m] Aloes</marginalia_text>
+                </position>
+            </language>
+            <translation>Aloeswood.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cerimonie del possesso" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Possession taking</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="Fernandina" type="straight"/>
+        <underline language="IT" method="pen" text="quarta Isabella" type="straight"/>
+        <underline language="IT" method="pen" text="cioè Cuba" type="straight"/>
+        <underline language="IT" method="pen" text="chiamò Giouanna" type="straight"/>
+        <underline language="IT" method="pen" text="Prencipe Don Giouanni" type="straight"/>
+        <underline language="IT" method="pen" text="che con quei nomi si sodisfacesse alla memoria dello spirituale, &amp; del temporale" type="straight"/>
+        <underline language="IT" method="pen" text="di molte acque, &amp; di bellissimi prati, &amp; alberi, fra' quali" type="straight"/>
+        <underline language="IT" method="pen" text="Aloe" type="double"/>
+        <underline language="IT" method="pen" text="&amp; colline" type="straight"/>
+        <underline language="IT" method="pen" text="molto piane" type="double"/>
+        <underline language="IT" method="pen" text="del possesso" type="straight"/>
+        <underline language="IT" method="pen" text="si vdiua il canto de'Luscignuoli" type="straight"/>
+        
+        <mark language="IT" method="pen" name="tripunctus" place="left_margin" text="che con quei nomi si sodisfacesse alla memoria dello spirituale, &amp; del temporale"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- piane della -->
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- della cui -->
+        
+        
+
+    </annotation>
+</transcription>

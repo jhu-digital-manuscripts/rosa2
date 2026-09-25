@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.009v.tif" reader="John Dee" signature="[Cij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Denn was in oder ob der erden ist můß alles dem himmel zů" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A Centro o[mn]ia contendu[n]t [a]d Circumfere[n]tia[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Everything strives from the centre for the circumference.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="das solcher wasser gengen ein abschneiden geschicht" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cataracta[e] Thermaru[m] no[n] numq[am] interclusa[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>The cataracts of the baths are always blockaded.</translation>
+        </marginalia>
+         
+        <underline language="DE" method="pen" text="nicht warm wasser cataracten vnderligen" type="straight"/>
+        <underline language="DE" method="pen" text="vnden auff auß der erden můß die werme ghen" type="straight"/>
+        <underline language="DE" method="pen" text="dem Centro der erden der samen darauß wachssen die cataracten" type="straight"/>
+        <underline language="DE" method="pen" text="in" type="straight"/>
+        <underline language="DE" method="pen" text="erden" type="straight"/>
+        <underline language="DE" method="pen" text="alles dem himmel zů" type="double"/>
+        <underline language="DE" method="pen" text="der cataracten" type="straight"/>
+        <underline language="DE" method="pen" text="keine sommer in den selbigen" type="straight"/>
+        <underline language="DE" method="pen" text="abschneiden" type="double"/>
+        <underline language="DE" method="pen" text="den erdbidem" type="double"/>
+        <underline language="DE" method="pen" text="verfallen" type="double"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/> <!-- FSF: with tail -->
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+
+    </annotation>
+</transcription>

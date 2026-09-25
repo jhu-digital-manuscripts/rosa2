@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.073v.tif" pagination="146" reader="John Dee" signature="[k[2]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="uirtutibus ac uitijs uicinitas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>virtutu[m] ac vitioru[m] vicinitas.</marginalia_text>
+                </position>
+            </language>
+            <translation>Virtues and vices are in the same neighbourhood.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Laudantur autem urbes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vrbiu[m] laudes</marginalia_text>
+                </position>
+            </language>
+            <translation>Praises the city.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="laus &amp; operum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Operu[m] laus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Praise of works.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="locorum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Locoru[m] laus</marginalia_text>
+                </position>
+            </language>
+            <translation>Praise of places.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="rerum omnis modi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Omn[is] reu[m] laus</marginalia_text>
+                </position>
+            </language>
+            <translation>Praise of all things.</translation>
+        </marginalia> 
+        
+        
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

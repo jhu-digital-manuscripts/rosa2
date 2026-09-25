@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.018v.tif" pagination="26" reader="John Dee" signature="[C.i[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Madocum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Madocus</marginalia_text>
+                    <person name="Madog ap Llywelyn"/>
+                </position>
+            </language>
+            <translation/>
+        </marginalia>
+        
+        <marginalia anchor_text="Comitem Glouerniae Gilbertum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Gilbertius comes glo[uerniae]</marginalia_text>
+                    <person name="Gilbert de Clare, 7th Earl of Gloucester"/>
+                </position>
+            </language>
+            <translation>Gilbert, Earl of Gloucester</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="partibus, diuersos sibi principes praefecerunt" type="straight"/>
+        <underline language="LA" method="pen" text="quendam de genere Levvlini" type="double"/>
+        <underline language="LA" method="pen" text="Madocum" type="double"/>
+        <underline language="LA" method="pen" text="nomine Mailgone" type="double"/>
+        <underline language="LA" method="pen" text="etiam Morganus" type="straight"/>
+        <underline language="LA" method="pen" text="Comitem Glouerniae Gilbertu[m]," type="straight"/>
+        <underline language="LA" method="pen" text="qui progenitores suos exh[a]editauerat," type="double"/>
+        <underline language="LA" method="pen" text="de terra sua quae Glamorgan dicitur expulit" type="straight"/>
+        <underline language="LA" method="pen" text="Comitis Lincolniae de Dimby, VValenses in magna virtue occureru[n]t, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="conserto graui praelio" type="double"/>
+        <underline language="LA" method="pen" text="repulerunt" type="straight"/>
+        <underline language="LA" method="pen" text="VValliam" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.057r.tif" reader="Harvey" signature="Gii[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Monomachia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Duel.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota.</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ide[m], apud Poluaenu[m].</marginalia_text>
+                    <book title="Stratagems"/>
+                </position>
+            </language>
+            <translation>Also in Polyaenus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Alcibyades" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Alcibiades.</marginalia_text>
+                    <person name="Alcibiades"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="agaynst me alone man" type="straight"/>
+        <underline language="EN" method="pen" text="an other followyng the" type="straight"/>
+        <underline language="EN" method="pen" text="maruayled" type="straight"/>
+        <underline language="EN" method="pen" text="loked backeward" type="straight"/>
+        <underline language="EN" method="pen" text="Melanthus" type="straight"/>
+        <underline language="EN" method="chalk" text="Melanthus" type="straight"/>
+        <underline language="EN" method="pen" text="stept in" type="straight"/>
+        <underline language="EN" method="pen" text="slewe hym at one stroke" type="straight"/>
+        <underline language="EN" method="pen" text="valyaunt warriours" type="straight"/>
+        <underline language="EN" method="pen" text="the shyppes" type="straight"/>
+        <underline language="EN" method="pen" text="into a secreta place" type="straight"/>
+        <underline language="EN" method="pen" text="shyppes" type="straight"/>
+        <underline language="EN" method="pen" text="styll manned with" type="straight"/>
+        <underline language="EN" method="pen" text="ouer the fees openly" type="straight"/>
+        <underline language="EN" method="chalk" text="behinde" type="straight"/>
+        <underline language="EN" method="pen" text="Alcibyades" type="straight"/>
+        <underline language="EN" method="pen" text="narow see called" type="straight"/>
+        <underline language="EN" method="pen" text="Hellespontus" type="straight"/>
+        <underline language="EN" method="pen" text="landed part of his souldiours" type="straight"/> 
+        <underline language="EN" method="pen" text="nighte" type="straight"/>
+        <underline language="EN" method="pen" text="hydde parte of his nauy" type="straight"/>
+        <underline language="EN" method="chalk" text="hydde" type="straight"/>
+        <underline language="EN" method="pen" text="behynde certayne promontories" type="straight"/>
+        
+        <mark method="pen" name="double_vertical_bar" place="left_margin"/>
+        
+        <mark method="pen" name="X_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="styll manned with"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="me alone man"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="an other followyng the"/>
+        <mark method="pen" name="dot" place="intext"/> <!--openly, and-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="narow see called"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        
+    </annotation>
+</transcription>

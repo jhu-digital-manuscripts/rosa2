@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.309v.tif" pagination="[302v]" reader="John Dee" signature="[ggg ij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Contra Trutina[m] Hermetis.</marginalia_text>
+                    <person name="Hermes Trismegistus"/> <!--JG: Not entirely sure--> <!-- FSF: not sure either -->
+                </position>
+            </language>
+            <translation>Against Hermes' balance.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quia utrumq[ue] luminare" type="straight"/> 
+        <underline language="LA" method="pen" text="est in aspectu Saturni" type="straight"/>
+        <underline language="LA" method="pen" text="quia Sol erat in" type="straight"/>
+        <underline language="LA" method="pen" text="ad unguem uerius" type="straight"/>
+        <underline language="LA" method="pen" text="correxit, &amp; traduxit tempus datum sibi, secundum moram nati, quae ut dixi, saepius fabulosa est, ascendit autem 26 pars" type="straight"/>
+        <underline language="LA" method="pen" text="se habet, ut Mars in Libra" type="straight"/> 
+        <underline language="LA" method="pen" text="occupat igitur pudenda" type="double"/>
+        
+    </annotation>
+</transcription>

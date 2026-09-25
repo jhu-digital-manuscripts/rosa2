@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.214v.tif" pagination="[207v]" reader="John Dee" signature="[FF iij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sed an brevissimo interiecto spatio que[m]admo[dum] Regine [J... - deleted] Anglia[e] 1553 Julij 10                    
+                    et 19 et multis alij eode[m] tempore.</marginalia_text>
+                    <person name="Lady Jane Grey"/> 
+                </position>
+            </language>
+            <translation>But whether by a most short interjected space. How for the Queen of England, 10 and 19 July 1553, and for many others in the same time.</translation> <!-- JG: Very unsure -->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ad infortunia" type="straight"/>
+        <underline language="LA" method="pen" text="ad egregia facta" type="straight"/>
+        <underline language="LA" method="pen" text="repente foelicitates" type="straight"/>
+        
+        <errata amendedtext="detrimenta" copytext="rderimenta" language="LA"/>
+        
+    </annotation>
+</transcription>

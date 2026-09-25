@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.022r.tif" pagination="33" reader="John Dee"/>
+    <annotation>
+       
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>fractoq[ue] vide in Ypod.[igma] pag[ina] 82</marginalia_text>
+                    <book title="Ypodigma"/>
+                    <internal_ref>
+                        <target ref="RCP10552-2:578:u0001" text="82"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Defeated see in Ypodigma page 82.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>al[ite]r iurauimus vide in Ypod.[igma] pag[ina] 82</marginalia_text> <!-- NBW: This is the correct abbreviation, but could either refer to the (corrected) spelling of 'iuramus' in the text or to a different oath -->
+                    <book title="Ypodigma"/>
+                    <internal_ref>
+                        <target ref="RCP10552-2:578:u0002" text="82"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Or otherwise "We swore," see in Ypodigma page 82.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Anno regni regis Angliae Edvvardi domini nostri vicesimo quinto" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Anno R[egni] R[egis] Ed[vvardi]. 25.</marginalia_text>
+                </position>
+            </language>
+            <translation>In the 25th year of the reign of King Edward.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="sicut potest de iure facere tanquam dominus de feodo suo, quia nos ei homagium nostru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="plena potestate" type="straight"/>
+        <underline language="LA" method="pen" text="voluntate reddimus ei terram Scotiae" type="double"/>
+        <underline language="LA" method="pen" text="gentem totam cum homagijs" type="straight"/>
+        <underline language="LA" method="pen" text="factoq[ue]; sigillo communi" type="straight"/>
+        <underline language="LA" method="pen" text="Scotiae, praecedente eum semper per vnam dietam Episcopo Dunelmensi" type="straight"/>
+        <underline language="LA" method="pen" text="Scotorum tempore coronationis" type="straight"/>
+        <underline language="LA" method="pen" text="vti pro throno, vsque VVestmonasterium transtulit illum" type="straight"/>
+        <underline language="LA" method="pen" text="caelebrantium cathedram sacerdotum" type="straight"/>
+        <underline language="LA" method="pen" text="magnatum Scotiae fidelitates" type="straight"/>
+        <underline language="LA" method="pen" text="homagia" type="straight"/>
+        <underline language="LA" method="pen" text="hoc literas patentes eorum sigillis" type="straight"/>
+        <underline language="LA" method="pen" text="promittimus pro nobis, &amp; haeredibus nostris, sub poena corporum nostrorum &amp; castellorum, ac omnium              quae habere possumus, quod nos seruiemus ei bene &amp; fideliter contra omnes gentes, quae viuere &amp; mori possunt, omnibus vicibus quibus" type="straight"/>
+        <underline language="LA" method="pen" text="nostris, &amp; eos" type="straight"/>
+        <underline language="LA" method="pen" text="Insuper &amp; iuramus tactis sacrosanctis Euangelijs, &amp; posteà nos omnes, &amp; quilibet nostrum," type="straight"/>
+        <underline language="LA" method="pen" text="se secit homagium dicto domino nostro regi Angliae in haec verba." type="straight"/>
+        <underline language="LA" method="pen" text="legalitatem seruabo Edvvardo regi Angliae &amp; haeredibus suis, de" type="straight"/> 
+        <underline language="LA" method="pen" text="terreno honore, co[n]tra omnes qui possunt viuere &amp; mori:" type="straight"/>
+        <underline language="LA" method="pen" text="arma" type="straight"/>
+        <underline language="LA" method="pen" text="nec ero in consilio vel auxilio contra eum, vel haeredes suos" type="straight"/>
+        <underline language="LA" method="pen" text="sed fideliter recognoscam, &amp; fideliter faciam seruitia, quae pertinent ad tenementum, quod de eo tenere clamito, sic" type="straight"/>
+        <underline language="LA" method="pen" text="regni regis Angliae Edvvardi" type="straight"/>
+        <underline language="LA" method="pen" text="domini nostri" type="double"/>
+        <underline language="LA" method="pen" text="vicesimo quinto" type="straight"/>
+        <underline language="LA" method="pen" text="cui mandauit rex, vt omnes tenentes de rege terras aliquas vocaret, &amp; eorum homagia fidelitatésque reciperet." type="straight"/>
+        <underline language="LA" method="pen" text="quo[n]dam regem" type="double"/>
+        <underline language="LA" method="pen" text="Londonias ad turrim" type="double"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- Dunelmensi Cumq -->
+        <mark method="pen" name="bracket" place="intext"/> <!-- sacerdotum. ( Eo -->
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="intext"/> <!-- quinto ( His -->
+        <mark method="pen" name="comma" place="intext"/> <!-- vero, Scotiae  -->
+        
+        <errata amendedtext="nostri" copytext="nostro" language="LA"/>
+        <errata amendedtext="fractoq[ue]" copytext="factoq[ue]" language="LA"/>
+        <errata amendedtext="praemonebimur" copytext="praemoniemur" language="LA"/>
+        <errata amendedtext="praemonebimus" copytext="praemoniemus" language="LA"/>
+        <errata amendedtext="iuramui" copytext="iuramus" language="LA"/>
+        <errata amendedtext="ligeus" copytext="ligius" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

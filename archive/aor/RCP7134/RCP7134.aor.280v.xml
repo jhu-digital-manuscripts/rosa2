@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.280v.tif" pagination="[273v]" reader="John Dee" signature="[ZZ[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>De morte</marginalia_text>
+                </position>
+            </language>
+            <translation>On death.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quaecunq[ue] Luna significat, circa corporis detrimenta, idem &amp; dominus ascendentis. Quamobrem in his, qui Taurum aut Cancrum habent ascendens, sit duplicatum infortunium" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quon[i]a[m] duplici r[ati]o[n]e ide[m] significat: se[m]per eni[m] corpori preest at maxime cu[m] ia[m] sit asce[n]de[n]t[us] d[...]</marginalia_text> <!--JG: Unsure abt two last words--> <!-- FSF: I am not sure at all -->
+                </position>
+            </language>
+            <translation>Since by the two-fold reason it signifies the same: for always it is in charge of the body and greatly when it already is  [...] [...].</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Similis eni[m] genesi, et anni revolutio at debilior // vide sup[ra] fo 57.</marginalia_text> 
+                    <internal_ref>
+                        <target ref="RCP7134:133" text="fo 57"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>For [it is] similar to a birth, and the revolution of a year but weaker. See above, folio 57.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Quaecunq[ue] Luna significat, circa corporis detrimenta, idem &amp; dominus ascendentis. Quamobrem in his, qui Taurum aut Cancrum habent ascendens, sit duplicatum infortunium" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

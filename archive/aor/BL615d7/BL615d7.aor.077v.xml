@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.077v.tif" pagination="[77v]" reader="John Dee" signature="[Kv[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="giornal" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>The Admiralls iornals.</marginalia_text>
+                    <person name="Columbus"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Santa Maria, che è vna delle Isole de gli Astori" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sancta Maria one of the Iles of Azorres</marginalia_text>
+                    <location name="Santa Maria"/>
+                    <location name="Azores"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="scopersero vn'altra" type="straight"/>
+        <underline language="IT" method="pen" text="suo giornal dice. Sabbato" type="straight"/>
+        <underline language="IT" method="pen" text="attratto delle gambe" type="straight"/>
+        <underline language="IT" method="pen" text="esser l'Isola di Santa Maria, che è vna" type="straight"/>
+        <underline language="IT" method="pen" text="XV di continui" type="straight"/>
+        <underline language="IT" method="pen" text="haueua scoperto" type="double"/>
+        <underline language="IT" method="pen" text="romitorio" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        
+    </annotation>
+</transcription>

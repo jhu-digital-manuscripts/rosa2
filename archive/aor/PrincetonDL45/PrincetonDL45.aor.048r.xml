@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonDL45.048r.tif" pagination="95" reader="Harvey" signature="Iii[r]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Arte leuatur onus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Arte leuatur onus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The burden is lightened by art.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="magno tamen" type="straight"/>
+        <underline language="LA" method="pen" text="aestimatione aquaeductores" type="straight"/>
+        <underline language="LA" method="pen" text="qui aquaeductus inueniunt" type="straight"/>
+        <underline language="LA" method="pen" text="vbi latices ponderosos arte leuare nouerint" type="straight"/>
+        <underline language="LA" method="pen" text="qui ascendere non praeualent per naturam" type="straight"/>
+        <underline language="LA" method="pen" text="Arte leuatur onus" type="straight"/>
+        <underline language="LA" method="pen" text="solatur Musa laborem" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.100v.tif" pagination="192" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Duodecies Dux Belli fuit, Duodecies victor Bellator[um] Primu[m] Bellu[m] esse. Ha[e]c autem [deleted] Bella, et loca bellor[um] narrat quida[m] historiographus qua[e] tame[n] o[mn]ia loca, n[ost]ra[e] a[e]tati incognita su[n]t. 
+                        Quod providentia dei factum putamus, ad despectum popularis aur[a]e etc.
+                        Henricus Hundingdon liber [2] de Arthuro         
+                    </marginalia_text>                                
+                    <person name="Henry of Huntingdon"/>
+                    <person name="King Arthur"/>
+                    <book title="Historia Anglorum"/>
+                </position>
+            </language>
+            <translation>
+                He was twelve times the victor of warriors in the first wars. But a certain historian tells of the wars, and the places of wars, which are nevertheless all unknown to our age.  
+                We believe this to be done by God's providence to the disdain of the ear of the people, etc.               
+                Henry of Huntingdon, book two on Arthur.                            
+            </translation>                     
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Constantino" type="double"/>
+        <underline language="LA" method="pen" text="cognato suo, filio Cadoris Ducis Cornubiae" type="straight"/>
+        <underline language="LA" method="pen" text="prae magnitudine dilectionis contendunt" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; infra Choream gygantum sepultus est" type="straight"/>
+        <underline language="LA" method="pen" text="De dubia morte nobilis regis Arthuri" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

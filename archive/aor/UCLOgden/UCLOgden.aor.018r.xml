@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.018r.tif" pagination="19" reader="John Dee" signature="b 4"/>
+    <annotation>
+        
+        <marginalia anchor_text="in finibus suis stella fuerit inuenta, sic est tanquam in suo domicilio constituta" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        finis est vt domus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The end is like the house.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sic est tanquam in suo domicilio" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.271v.tif" pagination="[264v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Elegantiss. Aph.</marginalia_text>
+                </position>
+            </language>
+            <translation>The most elegant aphorism.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pestilentiae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pestilentia[e].</marginalia_text>
+                </position>
+            </language>
+            <translation>Pestilences.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Si Luna ceciderit in septimo loco à dignitate, &amp; descendat tam in eccentrico quam paruo circulo, erit nimio humore infirmus" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>☾ in Septimo a dignitate desc[endat].</marginalia_text> 
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>The moon may descend in the seventh [place] by dignity.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Cum Luna fuerit in eadem parte cum Sole, &amp; ambo in quadrato vel opposito Saturni" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>☌ ☉ et ☾ in □ ☍ ♄.</marginalia_text>
+                    <symbol_in_text name="Conjunction"/>
+                    <symbol_in_text name="Sun"/>
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Square"/>
+                    <symbol_in_text name="Opposite_planets"/>
+                    <symbol_in_text name="Saturn"/>
+                </position>
+            </language>
+            <translation>The conjunction of the sun and the moon, [and] both in square [or] opposition to Saturn.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nutrietur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nutritio</marginalia_text>
+                </position>
+            </language>
+            <translation>Nutrition.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="monstrosos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Monstrosi.</marginalia_text>
+                </position>
+            </language>
+            <translation>Monsters.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nutrietur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nutritio</marginalia_text>
+                </position>
+            </language>
+            <translation>Nutrition.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nutrietur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Vide tame[n] natiuitate[m] J. Mo[n]teregij.</marginalia_text>
+                    <person name="Regiomontanus"/>
+                </position>
+            </language>
+            <translation>See nevertheless the nativity of Johannes Regiomontanus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ignem &amp; aerem" type="straight"/>
+        <underline language="LA" method="pen" text="aquam ac terram" type="straight"/>
+        <underline language="LA" method="pen" text="coeli malis coniunctae fuerint, &amp; fuerint ipsae" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        
+    </annotation>
+</transcription>

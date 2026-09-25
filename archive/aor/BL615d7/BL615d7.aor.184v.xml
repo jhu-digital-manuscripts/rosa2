@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.184v.tif" pagination="[184v]" reader="John Dee"/>    
+    <annotation>
+        
+        <marginalia anchor_text="Alfonso di Ogieda" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Alfonso Ogieda.</marginalia_text>
+                    <person name="Alonso de Ojeda"/>
+                </position>
+            </language>
+            <translation>Alonso de Ojeda</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="di casi di morte" type="straight"/>
+        <underline language="IT" method="pen" text="vna casa forte" type="straight"/>
+        <underline language="IT" method="pen" text="era contra il seruitio" type="straight"/>
+        <underline language="IT" method="pen" text="acquestandola, &amp; riducendo gl'Indiani al tributo" type="straight"/>
+        <underline language="IT" method="pen" text="corresse a castigar ciò, &amp; vi rimediassse" type="straight"/>
+        <underline language="IT" method="pen" text="menar seco il Prefetto; percioche difficilmente si sarebbono scordate" type="straight"/>
+        <underline language="IT" method="pen" text="cose" type="straight"/>
+        <underline language="IT" method="pen" text="Alfonso di Ogieda, che" type="straight"/>
+        
+        <errata amendedtext="tornando" copytext="tornanto" language="IT"/>
+        <drawing anchor_text="menar seco il Prefetto; perioche difficilmente si sarebbono scordate" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+
+    </annotation>
+</transcription>

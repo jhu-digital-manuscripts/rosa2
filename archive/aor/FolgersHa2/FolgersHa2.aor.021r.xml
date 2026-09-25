@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+	<page filename="FolgersHa2.021r.tif" pagination="365" reader="Harvey"/>	<!-- ABO 025right -->
+    	<annotation>
+    		
+            		<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+            			<position book_orientation="0" place="head">
+                    				<marginalia_text>
+                    					Sufficit diei sua malitia. <!--Matt. 6:34-->
+                      			            </marginalia_text>
+            				<X-ref book_title="Bible" language="LA" person="Matthew" text="sufficit diei malitia sua"/>
+            			</position>
+        			</language>
+        			<translation>
+        				"Sufficent for each day is its own trouble."
+        			</translation>
+        		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="right_margin">
+    					<marginalia_text>
+    						Sufficiat diei sua la[e]titia.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				May it be sufficent for each day its own happiness.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						s[upr]a, 360.
+    					</marginalia_text>
+    					<internal_ref>
+    						<target ref="FolgersHa2:Ha2.018v" text="360"/>
+    					</internal_ref>
+    				</position>
+    			</language>
+    			<translation>
+    				[See] above, 360.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						Quot impedimenta; tot calcaria, aut occasiones.
+    						Adhuc animus in exp[edi]to.
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				As many obstacles as spurs, or else opportunities.
+    			</translation>
+    		</marginalia>
+    		
+    		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.021r_0001" marginalia_continues_from="Ha2.020v_0001" marginalia_from_transcription="Ha2.020v.xml">
+    			<language ident="EN">
+    				<position book_orientation="90" place="left_margin">
+    					<marginalia_text> 
+    						<!-- Continued from facing page, right margin, Ha2.020v. -->
+    						[p. 364: No hart gallant enowgh: no witt nimble enowgh: no discourse =] fine enowgh: no dispute subtill enowgh: no behauiour sweet enowgh: no discouerie,
+    						or intelligence profound enowgh: no desert meritorious enowgh: "
+    					</marginalia_text>
+    				</position>
+    				<position book_orientation="90" place="right_margin">
+    					<marginalia_text>
+    						" no cautell superabundant: no action supererogatorie. 
+    						No no: this age is a fox: &amp; this world a Lion. 
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    		</marginalia>
+    		
+	    	<!-- Underlines -->
+	        
+    		<underline language="IT" method="pen" text="s'obligò per contratto di restituirgli" type="straight"/>
+    		<underline language="IT" method="pen" text="parargli l'utile" type="straight"/>
+    		<underline language="IT" method="pen" text="sul banco di San" type="straight"/>
+    		<underline language="IT" method="pen" text="cauati per" type="straight"/>
+    		<underline language="IT" method="pen" text="a morte" type="straight"/>
+    		<underline language="IT" method="pen" text="lasciato heredi altri" type="straight"/>
+    		<underline language="IT" method="pen" text="piu stretti" type="straight"/>
+    		<underline language="IT" method="pen" text="che esso S. Marc'" type="straight"/>
+    		<underline language="IT" method="pen" text="il tempo di restituire" type="straight"/>
+    		<underline language="IT" method="pen" text="con due preti huomini" type="straight"/>
+    		<underline language="IT" method="pen" text="stati presenti" type="straight"/>
+    		<underline language="IT" method="pen" text="in termine di morte" type="straight"/>
+    		<underline language="IT" method="pen" text="hauea dati i quattrocento scudi al nipote" type="straight"/>
+    		<underline language="IT" method="pen" text="non riuolergli altrimenti" type="straight"/>
+    		<underline language="IT" method="pen" text="l'haueua obligato" type="straight"/>
+    		<underline language="IT" method="pen" text="stato per tenerlo in freno" type="straight"/>
+    		<underline language="IT" method="pen" text="che 'l nipote se gli hauesse" type="straight"/>
+    		<underline language="IT" method="pen" text="fargli questo beneficio" type="straight"/>
+    		<underline language="IT" method="pen" text="gli offerse" type="straight"/>
+    		<underline language="IT" method="pen" text="testimoni farne fede in giudicio" type="straight"/>
+    		<underline language="IT" method="pen" text="molti sapeuano" type="straight"/>
+    		<underline language="IT" method="pen" text="che egli haueua" type="straight"/>
+    		<underline language="IT" method="pen" text="conuenuto di restituire i denari" type="straight"/>
+    		<underline language="IT" method="pen" text="incontro tre soli s'offeriuano di far fede" type="straight"/>
+    		<underline language="IT" method="pen" text="tosto pagando sodisfar a molti" type="straight"/>
+    		<underline language="IT" method="pen" text="compiacere a' pochi; e" type="straight"/>
+    		<underline language="IT" method="pen" text="huomo uirtuoso" type="straight"/>
+    		
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	    	<symbol name="JC" place="head"/>
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark method="pen" name="dash" place="right_margin"/> <!-- ca -->
+    		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- soleua ca -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- iqua -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- Pao -->
+    		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- haueua ha -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- offer -->
+    		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- far fede, co -->
+    		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- di uo-  -->
+    		<!--JG: dash next to offer-->
+    		
+	    	<!-- Left margin -->
+    		<mark method="pen" name="plus_sign" place="left_margin"/> <!-- uar sul banco -->
+    		<mark method="pen" name="plus_sign" place="left_margin"/> <!-- uto a dire -->
+    		<mark method="pen" name="bracket" place="left_margin"/> <!-- me ... so -->
+    		
+	    	<!-- Intext -->
+	    	<mark method="pen" name="dot" place="intext"/> <!-- contratto, M. Pao  -->
+    		<!--JG: Also dot between nipote and Auuenne?-->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="freno"/>
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- uirtuoso.] -->
+
+    </annotation>
+</transcription>

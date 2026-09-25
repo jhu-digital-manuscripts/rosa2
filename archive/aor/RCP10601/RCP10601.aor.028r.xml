@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.028r.tif" pagination="55" reader="John Dee" signature="d 4"/>
+    <annotation>
+        
+        <marginalia anchor_text="Melchisedech siue Sem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Melchisedech Sem.</marginalia_text>
+                    <person name="Melchizedek"/>
+                    <person name="Shem"/>
+                </position>
+            </language>
+            <translation>Melchizedek, Shem.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uideatur nobis gratia quàm natura nobilior" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gratia Natura</marginalia_text>
+                </position>
+            </language>
+            <translation>Grace, nature.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sibylla Babylonica" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sibylla babylonica</marginalia_text>
+                    <person name="Persian Sibyl"/>
+                </position>
+            </language>
+            <translation>The Babylonian Sibyl.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nobis gratia" type="straight"/>
+        <underline language="LA" method="pen" text="reuera est inferior" type="straight"/>
+        <underline language="LA" method="pen" text="Sibylla Babylonica" type="straight"/>
+        <underline language="LA" method="pen" text="quum leges, iudicia" type="straight"/>
+        <underline language="LA" method="pen" text="caeremonias" type="straight"/>
+        <underline language="LA" method="pen" text="Moses" type="double"/>
+        <underline language="LA" method="pen" text="sensim auctus" type="straight"/>
+        <underline language="LA" method="pen" text="natura superiori diuinae sapientiae abscondita" type="straight"/>
+        
+    </annotation>
+</transcription>

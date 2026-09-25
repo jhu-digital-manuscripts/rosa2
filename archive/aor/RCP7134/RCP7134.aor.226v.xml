@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.226v.tif" pagination="[219v]" reader="John Dee" signature="[II iij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Si fuerit ♂ occidentalis in ♋ no[n] aspiciens ♄, nec ♃
+                    nec ♀ neq[ue] ☉, sic natus erit flebotomator. Eodem modo ♂e existente in ♑, erit 
+                    corruptor ho[m]i[nu]m, et effusio[n]is sa[n]guinis armator. Schonerus. fol 108.v.</marginalia_text> 
+                    <symbol_in_text name="Mars"/>
+                    <symbol_in_text name="Cancer"/>
+                    <symbol_in_text name="Saturn"/>
+                    <symbol_in_text name="Jupiter"/>
+                    <symbol_in_text name="Venus"/>
+                    <symbol_in_text name="Sun"/>
+                    <symbol_in_text name="Capricorn"/>
+                    <person name="Johannes Schoner"/>
+                    <book title="De iudicijs Natiuitatum libri tres"/> <!--JG: https://books.google.co.uk/books?id=ecNZAAAAcAAJ&pg=PR49-IA1&lpg=PR49-IA1&dq=schonerus+corruptor&source=bl&ots=gaAeN5ZR-B&sig=xcbYTvqUfa7Kp4_tp550Tu1F-Pk&hl=en&sa=X&ved=0ahUKEwj-zeGzkMrUAhUDalAKHWn5BQwQ6AEILTAB#v=onepage&q=schonerus%20corruptor&f=false, this is the copy from 1545, and the corresponding page is 49v. No clue which edition Dee was using-->
+                </position>
+            </language>
+            <translation>If Western Mars were in Cancer, not beholding Saturn, Jupiter, Venus, nor the Sun, thus the phlebotomist shall be born. In the
+            same manner, with Mars existing in Capricorn, the corruptor of men shall be and the lover of the effusion of blood. Johannes Schoner, folio 108 verso.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nutrietur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro nutritio[n]e infantis</marginalia_text>
+                </position>
+            </language>
+            <translation>For the nutrition of a child.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Perpe[n]de causam diuersitatis.</marginalia_text>
+                </position>
+            </language>
+            <translation>Carefully assess the cause of diversity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Eudaemonis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Euda[e]mon.</marginalia_text>
+                </position>
+            </language>
+            <translation>Eudaemon.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Mars in ca[n]cro facit eos q[ui] uole[n]tibus fan (&amp; diuinatoris" type="straight"/> 
+        <underline language="LA" method="pen" text="luminaris" type="straight"/>
+        <underline language="LA" method="pen" text="Cui uero Saturnus, uel diues no[n] fiet, uel" type="straight"/>
+        <underline language="LA" method="pen" text="congrediens facit prudentes, odiosos, uitiosos" type="straight"/>
+        
+        <symbol language="LA" name="Mercury" place="left_margin" text="Mercurius"/> 
+        <symbol language="LA" name="Saturn" place="left_margin" text="Saturni"/>
+        
+        <errata amendedtext="terminis" copytext="termini" language="LA"/>
+        <errata amendedtext="soli" copytext="Soli" language="LA"/>
+        
+    </annotation>
+</transcription>

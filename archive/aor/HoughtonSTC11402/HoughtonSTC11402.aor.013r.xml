@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.013r.tif" reader="Harvey" signature="[Avi[r]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Decius, l.4.c.5.i[nfr]a.</marginalia_text> <!--See image _0209-->
+                    <person name="Publius Decius Mus I"/>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0209" text="l.4.c.5"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Decius: book 4, chapter 5. [See] below.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>300.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Trecenti Romani.</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Trecenti Lacones. Trecenti Hebra[e]i. 
+                    Ducibus, { Catone. Leonide. Gedeone.</marginalia_text>
+                    <person name="Cato the Elder"/>
+                    <person name="Leonidas I"/>
+                    <person name="Gideon"/>
+                </position>
+            </language>
+            <translation>300 Romans, 300 Spartans, 300 Jews. By the leaders Cato, Leonidas, Gideon.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Marius; frenche men; faythfull frendes" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A prety Deuyce of Marius, to knowe whether [the] French were his frendes, or not.</marginalia_text>
+                    <person name="Gaius Marius"/>
+                    <emphasis method="pen" text="whether" type="straight"/>
+                    <emphasis method="pen" text="were his frendes" type="straight"/>
+                    <emphasis method="pen" text="or not" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vide Com. Purl. l.I. obs. 27.</marginalia_text> 
+                    <book title="The preceptes of warre"/>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>by moouing su[m] speciall, <!--JG: Not sure about su[m]-->
+                    and greate request: w[hi]ch would not be granntid, but of mery frendes.</marginalia_text>
+                    <emphasis method="pen" text="by moouing su[m] speciall" type="straight"/> <!--JG: Not sure about su[m]-->
+                    <emphasis method="pen" text="had greate request" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="iii. hundreth souldiers" type="straight"/>
+        <underline language="EN" method="pen" text="to runne al together vpon the" type="straight"/>
+        <underline language="EN" method="pen" text="snappe vp" type="straight"/>
+        <underline language="EN" method="pen" text="and safelye" type="straight"/>
+        <underline language="EN" method="pen" text="brynge one of them to hym" type="straight"/>
+        <underline language="EN" method="pen" text="racked and tormented" type="straight"/>
+        <underline language="EN" method="pen" text="the secretes of" type="straight"/>
+        <underline language="EN" method="pen" text="Marius" type="straight"/>
+        <underline language="EN" method="pen" text="frenche men" type="straight"/>
+        <underline language="EN" method="pen" text="and the Genowayes" type="straight"/>
+        <underline language="EN" method="pen" text="faythfull frendes" type="straight"/>
+        <underline language="EN" method="pen" text="the fyrst parte commaunded" type="straight"/>
+        <underline language="EN" method="pen" text="shulde in no wyse open the" type="straight"/>
+        <underline language="EN" method="pen" text="parte beinge sealed" type="straight"/>
+        <underline language="EN" method="pen" text="vntyl a certayne tyme" type="straight"/>
+        <underline language="EN" method="pen" text="by the seale" type="straight"/>
+        <underline language="EN" method="pen" text="that the letters" type="straight"/> 
+        <underline language="EN" method="pen" text="vnderstode they" type="straight"/>
+        <underline language="EN" method="pen" text="not his frendes" type="straight"/>
+        <underline language="EN" method="pen" text="moche them selfe" type="straight"/>
+        
+        <mark method="pen" name="horizontal_bar" place="head"/> <!--below 300-->
+        
+        <mark method="pen" name="hash" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="brynge one of them to hym"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="brynge one of them to hym"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="snappe vp"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="tormented"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="shulde in no wyse open the"/>
+        
+    </annotation>
+</transcription>

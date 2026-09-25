@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.167r.tif" pagination="160" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vide vt in ♄ et ♃ facit revolutiones eor[um] a[n]norum.</marginalia_text>
+                    <symbol_in_text name="Saturn"/>
+                    <symbol_in_text name="Jupiter"/>
+                </position>
+            </language>
+            <translation>See as he makes the revolutions of those years in Saturn and Jupiter.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="tempus aedificationis urbis per annos 29, menses 6, seu" type="straight"/>
+        <underline language="LA" method="pen" text="numerum exeuntem tanquam partes aequales adde propriae ascensioni significatoris, &amp; uide ubi terminatur locus in zodiaco.              Exemplum habes in sequenti reuolutione, etiam pro genituris" type="straight"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="Diuides igitur tempus aedificationis urbis per annos 29, menses 6, seu annos 29, menses 5, dies 11,              si ad unguem magis uis operari, &amp; numerum exeuntem tanquam partes aequales add propriae ascensioni significatoris, &amp; uide ubi terminatur locus in zodiaco. Exemplum habes in sequenti reuolutione, etiam pro genituris "/>
+        
+        <errata amendedtext="[deleted]" copytext="magis uis operari" language="LA"/>
+        
+    </annotation>
+</transcription>

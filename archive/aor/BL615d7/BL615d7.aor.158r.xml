@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.158r.tif" pagination="158" reader="John Dee"/>    
+    <annotation>
+        
+        <marginalia anchor_text="II di Agosto" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aug .2.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="chiamolla dell' Arenale" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Punta dell' Arenale</marginalia_text>
+                    <location name="Arenal Island"/>
+                </position>
+            </language>
+            <translation>Tip of the Arenal Island</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="canoa" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A Canoa.</marginalia_text>
+                </position>
+            </language>
+            <translation>A canoe.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="poteuano hauer lingua dalla gente" type="straight"/>
+        <underline language="IT" method="pen" text="II di" type="straight"/>
+        <underline language="IT" method="pen" text="dell'Arenale" type="straight"/>
+        <underline language="IT" method="pen" text="che i Leuanti" type="double"/>
+        <underline language="IT" method="pen" text="Canoa co[n] XXV persone" type="straight"/>
+        <underline language="IT" method="pen" text="altri Indiani" type="straight"/>
+        <underline language="IT" method="pen" text="soleuano ricercar prima" type="double"/>
+        <underline language="IT" method="pen" text="baccini di" type="straight"/>
+        
+    </annotation>
+</transcription>

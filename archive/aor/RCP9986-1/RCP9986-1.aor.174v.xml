@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.174v.tif" pagination="[175v]" reader="John Dee"/>   
+    <annotation>
+        
+        <marginalia anchor_text="secreta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Secreta.</marginalia_text>
+                </position>
+            </language>
+            <translation>Seclusion.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Phyllidis exemplo nimium secreta cauete" type="straight"/>
+        <underline language="LA" method="pen" text="Siquis amas, nec vis, facias contagia vites" type="straight"/>
+        <underline language="LA" method="pen" text="Haec etiam pecori saepe nocere solent" type="straight"/> 
+        <underline language="LA" method="pen" text="Dum spectant" type="straight"/>
+        <underline language="LA" method="pen" text="transitione" type="straight"/>
+        <underline language="LA" method="pen" text="Manat amor tectus, si non ab amante recedas" type="straight"/>
+        <underline language="LA" method="pen" text="Turbáq[ue] in hoc omnes ingeniosa sumus" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+      
+    </annotation>
+</transcription>

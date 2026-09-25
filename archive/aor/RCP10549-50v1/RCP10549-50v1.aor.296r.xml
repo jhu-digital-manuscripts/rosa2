@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.296r.tif" pagination="571" reader="John Dee" signature="[nnn.vi.]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Tarquinio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Tarquinius melior Antonio</marginalia_text>
+                    <person name="Lucius Tarquinius Superbus"/>
+                    <person name="Mark Antony"/>
+                </position>
+            </language>
+            <translation>Lucius Tarquinius Superbus is better than Marc Antony.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="insigniter impude[n]s" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>insigniter impudens</marginalia_text>
+                </position>
+            </language>
+            <translation>Notably impudent.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nundinaba[n]tur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>nu[n]dinari</marginalia_text>
+                </position>
+            </language>
+            <translation>To trade.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="seruitus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Seruitus</marginalia_text>
+                </position>
+            </language>
+            <translation>Servitude.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Repititio</marginalia_text>
+                </position>
+            </language>
+            <translation>Repetition.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="flos Italiae illud firmamentu[m] imperii Pop. Romani, illud ornamentu[m] dignitatis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>flos itali[a]e firmamentu[m] imp[er]ij orname[n]tu[m] dignitat[is]</marginalia_text>
+                    <location name="Italy"/>
+                </position>
+            </language>
+            <translation>The flower of Italy, the foundation of authority and the ornament of dignity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fustuariu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>fustuarius</marginalia_text>
+                </position>
+            </language>
+            <translation>Beaten to death.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="naturalis pater" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>naturalis pater.</marginalia_text>
+                </position>
+            </language>
+            <translation>Biological father.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="iura regni" type="straight"/>
+        <underline language="LA" method="pen" text="Supplica verò in ciues Rom. nulla Tarquinii accaepimus. at hic &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="Postremo Tarquinius pro Pop[ulo] Romano bellum gerebat" type="straight"/>
+        <underline language="LA" method="pen" text="Cum aute[m] est omnis seruitus misera, tum verò intolerabile est seruire" type="straight"/>
+        <underline language="LA" method="pen" text="impudico, effoeminato, nunqua[m] ne in metu quidem sobrio" type="straight"/>
+        <underline language="LA" method="pen" text="priuatum consiliu[m] authoritate publica comprobemus. Nec" type="straight"/>
+        <underline language="LA" method="pen" text="Hunc igitur ego Consule[m], hun ciuem" type="straight"/>
+        <underline language="LA" method="pen" text="constantia, grauitate prouinciae Galliae taceri potest. est enim ille flos Italiae illud firmamentu[m] imperii Pop[uli] Romani, illud ornamentu[m] dignitatis. Ta[n]tus autem" type="straight"/>
+        <underline language="LA" method="pen" text="Quamobrem omnia mea sententia complectar, vobis (vt intelligo) non inuitis" type="straight"/>
+        <underline language="LA" method="pen" text="Primu[m] in Caesarem maledicta coniecit deprompta ex recordatione impudicitiae &amp; stuprorum suoru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="quis modestior? quid in iuuentute habemus illustrius exemplu[m] veteris sanctitatis? quis autem illo maledico" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21.19</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">12</numeral>
+        
+        <drawing anchor_text="Seruitus" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

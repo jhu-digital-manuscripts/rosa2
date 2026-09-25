@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.069v.tif" pagination="[62v]" reader="John Dee" signature="[Qij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="nodos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nodi.</marginalia_text>
+                </position>
+            </language>
+            <translation>Nodes.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Quamcu[m]q[ue] latitudine[m] Planeta vel fixa h[abet] eius quadratus aspectus cadet in ecliptica[e] gradum nonagesimu[m]
+                        ab eius loco secundum longitudine[m]. et causa huius est quod ille punctus in ecliptica est instar poli illius circuli p[er] que[m] descripta est 
+                        stell[a]e lo[n]gitudo, et co[n]tra q[u]ocumq[ue] puncto extra ecliptica[m] accept[o] si p[er] illud describatur circulus mag[nus] (vt su[n]t circuli lo[n]gitudinu[m]) polus eius 
+                        in ecliptica erit distans 90 gradus ab o[mn]i parte eius circuli, ad angulos rectos</marginalia_text> <!--JG: marginal note continues onto next page?-->
+                </position>
+            </language>
+            <translation>Whichever latitude the planet or fixed [star] has,  its square aspect falls into the ninteenth degree of the eclipse from
+            its place according to the longitude. And it's cause is that this point in the eclipse is the image of that orbital pole through which
+            the longitude of a star is described, and against, by whichever point [received] beyond the eclipse, if through that its great orbital pole is described
+            (as are the orbits of longitudes) in the eclipse, shall be standing apart 90 degress from every part of its orbit, towards right angles</translation> <!--JG: No clue about meaning of this note and hence my translation-->
+        </marginalia>
+        
+        
+    </annotation>
+</transcription>

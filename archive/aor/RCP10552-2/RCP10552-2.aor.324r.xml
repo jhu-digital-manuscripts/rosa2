@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.324r.tif" pagination="155" reader="John Dee" signature="V.iiij."/>
+    <annotation>
+        
+        <marginalia anchor_text="dux Henricus olim Herefordiae sed nunc Lancastriae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Henricus Dux Lancastria[e] filius Jo[hanni]s nup[er] mortui.</marginalia_text> 
+                    <person name="Henry IV of England"/>
+                    <person name="John of Gaunt"/>
+                </position>
+            </language>
+            <translation>Henry, Duke of Lancaster, son of the recently deceased John.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="exercitus 60000. pugnatoru[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Exercitus 60000 pug[natorum]</marginalia_text> 
+                </position>
+            </language>
+            <translation>An army of 60000 fighters.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="festum Pentecostes" type="double"/>
+        <underline language="LA" method="pen" text="ducum" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Herefordiae" type="straight"/>
+        <underline language="LA" method="pen" text="traxit multos" type="straight"/>
+        <underline language="LA" method="pen" text="consensu octo personaru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; reliquias" type="straight"/>
+        <underline language="LA" method="pen" text="sine consensu" type="straight"/>
+        <underline language="LA" method="pen" text="Interea dux Henricus olim Herefordiae sed nunc Lancastriae" type="straight"/>
+        <underline language="LA" method="pen" text="relegationem" type="straight"/>
+        <underline language="LA" method="pen" text="grauius exiliu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="sciuit inuisum populo regni sui" type="straight"/>
+        <underline language="LA" method="pen" text="protestabantur se duci nolle nocere" type="straight"/>
+        <underline language="LA" method="pen" text="quem nouerant iniuriosè tractatum fuisse" type="straight"/>
+        <underline language="LA" method="pen" text="quondam fuerat villa de Rauenesere nemine" type="straight"/>
+        <underline language="LA" method="pen" text="60000. pugnatoru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ad clamore[m] communiu[m] sunt decollati" type="straight"/>
+        <underline language="LA" method="pen" text="Dimisit ergo familiam" type="straight"/>
+        <underline language="LA" method="pen" text="Dux Herefordiae" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+   
+    </annotation>
+</transcription>

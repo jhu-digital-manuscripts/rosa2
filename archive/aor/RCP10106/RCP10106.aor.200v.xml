@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.200v.tif" pagination="400" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="uitandae similitudinis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Similitudo vitanda</marginalia_text>
+                </position>
+            </language>
+            <translation>Sameness is to be avoided.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="eadem figura dicimus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quid sit eade[m] dici figura</marginalia_text>
+                </position>
+            </language>
+            <translation>What is to be said by the same figure.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Apollodorus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Apollodôrus.</marginalia_text>
+                    <person name="Apollodorus of Pergamon"/>
+                </position>
+            </language>
+            <translation>Apollodorus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="oratione[m] ἀσχημάτιστον, id est, carentem figuris, quod uitium no[n] inter minima est, aliam ἐσχηματισμένην, id est, figuratam." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>or[ati]o figurata figuris rarius</marginalia_text> <!-- FSF: the first abbreviation is or[ati]o; the last word reads rareus, I think -->
+                </position>
+            </language>
+            <translation>Speech figured or figure rare.</translation> <!-- M.B. Not sure how best to translate this compressed note. Speech in a figured [style] ?? -->
+        </marginalia>
+        
+        <marginalia anchor_text="Caelius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ca[e]lius.</marginalia_text>
+                    <person name="Caecilius of Calacte"/>
+                </position>
+            </language>
+            <translation>Caecilius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ergo figura" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>figura quid</marginalia_text>
+                </position>
+            </language>
+            <translation>What figure?</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="opiniones" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Opinio[n]es</marginalia_text>
+                </position>
+            </language>
+            <translation>Opinions.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cauillatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cavillatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Mockery.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="co[n]sensum est duas eius esse partes, διανοίας id est mentis uel sensus, uel sente[n]tiarum (na[m] ijs omnibus modis dictum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>schemata</marginalia_text> 
+                </position>
+            </language>
+            <language ident="EL">
+           <position book_orientation="0" place="left_margin">
+               <marginalia_text>διανοίας λέξεως.</marginalia_text> 
+           </position>
+            </language>
+            <translation>Shape of the mind and speech.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Itaq[ue], cùm in eosdem casus aut tempora, aut numeros, aut etiam pedes, continunò quis aut certè              nimium freque[n]ter incurrit, pracipere solemus uariandas figuras" type="straight"/>
+        <underline language="LA" method="pen" text="esse uitandae" type="double"/>
+        <underline language="LA" method="pen" text="similitudinis" type="straight"/>
+        <underline language="LA" method="pen" text="dicimus cursitare, qua lectitare" type="straight"/>
+        <underline language="LA" method="pen" text="incomprehensibilia partis huius praecepta existimauit" type="straight"/>
+        <underline language="LA" method="pen" text="poëticè uel oratoriè mutatum" type="straight"/>
+        <underline language="LA" method="pen" text="putauerit schema, quo aliud simulatur dici, quàm dicitur: quod sanè" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

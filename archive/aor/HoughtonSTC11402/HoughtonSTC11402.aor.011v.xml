@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.011v.tif" reader="Harvey" signature="[Aiiii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Viuitur Ingenio. Prudentia, Ars Viuendi, et Vincendi.</marginalia_text>
+                    <emphasis method="pen" text="Viuitur Ingenio" type="straight"/>
+                </position>
+            </language>
+            <translation>One lives by one's genius. 
+            Prudence, the art of living and conquering.
+            </translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Themistocles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Polya[e]ni Them. l. I.</marginalia_text>
+                    <person name="Themistocles"/>
+                    <book title="Stratagems"/>
+                </position>
+            </language>
+            <translation>Themistocles, in Polyaenus, book 1. </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>{ i[nfr]a, C. 4. Exe[m]plu[m] 5. Legati ad philippu[m].
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0039" text="C. 4."/>
+                    </internal_ref>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Hostages, &amp; Ambassadours,</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> i[nfr]a, C. 8. Politicè.
+                    C. XI.l.3. </marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0056" text="C. 8."/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0187" text="C. XI.l.3."/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>[See] below, chapter 5, example 5. Envoys to Philipp. Hostages, &amp; Ambassadours, [see] below, chapter 8. Politically. Chapter 11, book 3.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>(At nihil tale feci: Ca[e]saris Lacryma[e].</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <translation>(And I did nothing of such kind: the tears of Caesar.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="Themistocles" type="straight"/>
+        <underline language="EN" method="pen" text="repayre spedily their walles, whiche" type="straight"/>
+        <underline language="EN" method="pen" text="he hym selfe wolde come, and" type="straight"/>
+        <underline language="EN" method="pen" text="faynynge hym selfe sycke" type="straight"/>
+        <underline language="EN" method="pen" text="droue forthe a certayne space" type="straight"/>
+        <underline language="EN" method="pen" text="the rumour was false" type="straight"/>
+        <underline language="EN" method="pen" text="conueyed letters to his frendes" type="straight"/>
+        <underline language="EN" method="pen" text="to retayn these ambassadours" type="straight"/>
+        
+        <symbol name="SS" place="head"/>
+        <symbol name="SS" place="head"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="he hym selfe wolde come, and"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="droue forthe a certayne space"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="the rumour was false"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="to retayn these ambassadours"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="conueyed letters to his frendes"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--space, and-->
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--work, and-->
+        
+        <numeral language="EN" place="left_margin" text="he hym selfe wolde come, and">1.</numeral>
+        <numeral language="EN" place="left_margin" text="the rumour was false">2.</numeral>
+        <numeral language="EN" place="left_margin" text="to retayn these ambassadours">3.</numeral>
+        
+    </annotation>
+</transcription>

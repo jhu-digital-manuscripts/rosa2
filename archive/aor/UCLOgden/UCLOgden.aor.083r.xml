@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.083r.tif" pagination="149" reader="John Dee" signature="n 3"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Consiliu[m] rectum qua r[ati]o[n]e in precedentibus versari oporteat.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                By which reason a right council ought to dwell.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nec enim semper ingressus ♀ loca ♃, decernit uxores" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ingressus Veneris loca ♃ no[n] semp[er] vxores decernit.
+                    </marginalia_text>
+                    <symbol_in_text name="Jupiter"/>
+                </position>
+            </language>
+            <translation>
+                The entry of Venus into the place of Jupiter does not always determine the consorts. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex signorum anaphoris prouecti" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ex signoru[m] anaphoris provecti.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Advanced from the ascencion of the signs.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nec debes ex malo loco sperare discrimen, cum eu[m] salutare sydus aspexerit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Malus locus no[n] nocet cu[m] eu[m] salutare sydus aspexerit &amp;c
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A bad place does not do any harm when a beneficial star observes it, etc. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="stellaru[m] mixturas" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mixtura[e] stellar[um] in lib. sexto tradet
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                In book six he conveys the mixtures of stars.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="unius stellae cursu, totam geniturae" type="straight"/>
+        <underline language="LA" method="pen" text="duodecim locoru[m] potestatibus" type="straight"/>
+        <underline language="LA" method="pen" text="quae stela cum horosc. qua" type="straight"/>
+        <underline language="LA" method="pen" text="Nec enim semper ingressus ♀ loca ♃, decernit uxores, nec ingressus filioru[m] locu[m] filios tribuit" type="straight"/>
+        <underline language="LA" method="pen" text="sed illis h[a]ec reddit" type="double"/>
+        <underline language="LA" method="pen" text="q[ui]bus uxores, uel filios prioris substa[n]tia geniturae decreuerit" type="straight"/>
+        <underline language="LA" method="pen" text="tunc ex signorum anaphoris prouecti, &amp; temporum" type="straight"/>
+        <underline language="LA" method="pen" text="nec debes ex malo loco sperare discrimen, cum eu[m] salutare sydus aspexerit, sicut maleuolarum etiam stellaru[m] minaces radii, ex loci opportunitate franguntur" type="straight"/>
+        
+        <mark colour="red" method="pen" name="vertical_bar" place="left_margin"/> <!-- dotted -->
+        <mark colour="red" method="pen" name="vertical_bar" place="left_margin"/> <!-- dotted -->
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/> <!-- dotted -->
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/> <!-- dotted -->
+        
+        <errata amendedtext="Iovis" copytext="Iovis" language="LA"/> 
+        <errata amendedtext="apotelesmatum" copytext="apothelesmatum" language="LA"/>
+        
+    </annotation>
+</transcription>

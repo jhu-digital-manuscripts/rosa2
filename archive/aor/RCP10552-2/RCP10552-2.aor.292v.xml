@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.292v.tif" pagination="98" reader="John Dee" signature="[M.iiij.[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Radulphum de Mounhermer" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Radulphus de Monhermer.</marginalia_text>
+                    <person name="Ralph de Monthermer"/>
+                </position>
+            </language>
+            <translation>Ralph de Monthermer.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Wallia[m] de manu Lewlini recepit in vsus suos proprios" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nota quod dicat eum recepisse Walliu[m] de manu Lewelini</marginalia_text> 
+                    <person name="Llywelyn ap Gruffudd"/>
+                    <location name="Wales"/>
+                </position>
+            </language>
+            <translation>Note that it says he received Wales from the hand of Llywelyn.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>no[m]i[n]avit illu[m] Henricu[m] de Barres. in p[ri]ma histor[i]a pag[ina] 24. que[m] hic Gulielmu[m]</marginalia_text>
+                    <person name="Henry III, Count of Bar"/>
+                    <internal_ref>
+                        <target ref="RCP10552-2:044" text="24"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>He named him Henry of Bar in the first history, page 24, who is this William.</translation>
+        </marginalia>
+
+        <underline id="RCP10552-2:594:u0001" language="LA" method="pen" text="Guliel. de Bares" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Iohannam de Acres, quae nupsit Gilberto de Clare Comiti Gloucestriae" type="straight"/>
+        <underline language="LA" method="pen" text="comitis, elegit inconculto patre, Radulphum de Mounhermer" type="straight"/>
+        <underline language="LA" method="pen" text="Humfredus de Boun, comes Thetfordiae" type="straight"/>
+        <underline language="LA" method="pen" text="Wallia[m] de manu Lewlini recepit in vsus suos proprios" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

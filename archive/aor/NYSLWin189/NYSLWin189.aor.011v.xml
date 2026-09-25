@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.011v.tif" reader="John Dee" signature="[Ciiij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Carniol" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Carneolus</marginalia_text>
+                </position>
+            </language>
+            <translation>Carnelian</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="bärlein" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Perla[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Pearls.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Margariten bärlein" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nota de Margaritis.</marginalia_text>
+                </position>
+            </language>
+            <translation>Note the Margarita [pearls].</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="solcher beder als der gemmarum" type="straight"/>
+        <underline language="DE" method="pen" text="bärlein" type="straight"/>
+        <underline language="DE" method="pen" text="schnecken schalen" type="straight"/>
+        <underline language="DE" method="pen" text="schifflein" type="straight"/>
+        <underline language="DE" method="pen" text="sind zů glutinieren" type="straight"/>
+        <underline language="DE" method="pen" text="die milch mamillarum" type="straight"/>
+        <underline language="DE" method="pen" text="den cancru[m]" type="straight"/>
+        <underline language="DE" method="pen" text="so da gegicht" type="straight"/>
+        <underline language="DE" method="pen" text="so paralisis" type="straight"/>
+        <underline language="DE" method="pen" text="der bärlein art jnen der gestalt das die Margariten auß jnen entspringen" type="straight"/>
+        <underline language="DE" method="pen" text="nicht auß den Margarite[n] bärlein " type="straight"/>
+        <underline language="DE" method="pen" text="weg dem wasser" type="double"/>
+        <underline language="DE" method="pen" text="den mehr" type="triple"/>
+        <underline language="DE" method="pen" text="als den Margariten selbst" type="straight"/>
+        
+    </annotation>
+</transcription>

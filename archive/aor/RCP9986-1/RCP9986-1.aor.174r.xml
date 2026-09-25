@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.174r.tif" pagination="175" reader="John Dee"/>   
+    <annotation>
+        
+        <marginalia anchor_text="loca sola" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>loca sola</marginalia_text>
+                </position>
+            </language>
+            <translation>Solitary places.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Et quis non causas mille doloris habet?" type="straight"/>
+        <underline language="LA" method="pen" text="Quiquis amas, loca sola nocent, loca sola caueto" type="straight"/>
+        <underline language="LA" method="pen" text="Nam tibi secretos augent secreta furores" type="straight"/>
+        <underline language="LA" method="pen" text="laeserunt Phyllida syluae" type="straight"/>
+        <underline language="LA" method="pen" text="trieterica Baccho" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="Cogitet, &amp; damno littora saeua suo. Filius hunc miles, hunc filia nubilis angat, Et quis non causas mille doloris habet?"/>
+        
+    </annotation>
+</transcription>

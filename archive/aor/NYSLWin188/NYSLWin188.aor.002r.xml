@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="NYSLWin188.002r.tif" pagination="2" reader="John Dee" signature="Aij"/> 
+    <annotation>
+        <marginalia anchor_text="Erden" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Terra</marginalia_text>
+                </position>
+            </language>
+            <translation>Earth.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Complexiones" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>4 complexiones in singulis Eleme[n]ti[s].</marginalia_text>
+                </position>
+            </language>
+            <translation>Four combinations in individual elements.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Wasser" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aqua</marginalia_text>
+                </position>
+            </language>
+            <translation>Water.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Him[m]el" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Co[e]lum. Ignis.</marginalia_text>
+                </position>
+            </language>
+            <translation>Heaven. Fire.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="ein Mutter ist sie der früchten" type="straight"/>
+        <underline language="DE" method="pen" text="heiß" type="straight"/>
+        <underline language="DE" method="pen" text="trucken" type="straight"/>
+        <underline language="DE" method="pen" text="vnd trucken" type="straight"/>
+        <underline language="DE" method="pen" text="Sondern es sol wol naß sein/am andern ligt nichts" type="straight"/>
+        <underline language="DE" method="pen" text="jrer kraft" type="double"/>
+        <underline language="DE" method="pen" text="trucken" type="straight"/>
+        <underline language="DE" method="pen" text="hitzig" type="straight"/>
+        <underline language="DE" method="pen" text="Corporalischen natur" type="double"/>
+        <underline language="DE" method="pen" text="Erdreich trucken" type="straight"/>
+        <underline language="DE" method="pen" text="einer Complexion, sonder vieler" type="straight"/>
+        <underline language="DE" method="pen" text="nicht" type="straight"/>
+        <underline language="DE" method="pen" text="also" type="double"/>
+      
+        <mark language="DE" method="pen" name="plus_sign" place="left_margin" text="sonder vieler"/>
+      
+        <numeral language="DE" place="intext" text="jrer kraft">1</numeral>
+        <numeral language="DE" place="intext" text="natur">2</numeral>
+             
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

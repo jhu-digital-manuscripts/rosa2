@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.026r.tif" reader="John Dee" signature="Giij"/>
+    <annotation>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                    Vitriolu[m], stillicidiu[m] cupri 
+                    </marginalia_text>
+                    <person name="George Ripley"/>
+                <book title="Medulla Alchymiae"/>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>consider Ripleys words in Medulla Alchymiae</marginalia_text>
+                    <person name="George Ripley"/>
+                    <book title="Medulla Alchymiae"/>
+                </position>
+            </language>
+            <translation>Sulphur, rain water collected from the eaves of a house, copper. Consider Ripley's words in 'The marrow of Alchemy'.</translation> <!--JG: Unsure-->
+        </marginalia>
+        
+        <marginalia anchor_text="da mag man durch die correctiones nicht inbringen" hand="Italian" method="pen"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                    Correctio[n]es vbi adhibenda[e]
+                    </marginalia_text>
+                </position>
+            </language>
+        <translation>Where corrections must be brought in.</translation>
+        </marginalia>
+
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Centru[m]</marginalia_text> 
+                </position>
+            </language>
+            <translation>Centre.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="matrices der wilden roten Granate[n];" hand="Italian" method="pen"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Matrices granatoru[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>The sources of garnets.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="unzeytigen golds" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Auru[m] immaturu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Raw gold.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Margazichen Animonij; salniters; matrices der wilden roten Granate[n]; göldischen kisigen Granaten; ärtz deß silbers; vitriol; arsenic; auripigment; schwebel fix vnd vnfix" hand="Italian" method="pen"> <!-- FSF: anchor text added -->
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        Calx - Margazitaru[m] Antimonnij, salnitru[m] matrices rubror[um] granator[um] aurei Margazitri Granat[ae]  Auru[m] incoctu[m] 
+                        argente Arsenic[um] auripigme[n]t sulph. fix[um] et no[n] fix[um] Vitriolu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Limestone, pyrite, antimony, source of red granate, golden pyrite granates, raw gold, arsenic, auripigment, sulpher, fixed and not fixed, vitriol.</translation>
+        </marginalia> <!-- M.B  Margazitavum or margazichen is a Paracelsian term referring to pyrite and pyrite like minerals such as chalcopyrite-->
+        
+        <underline language="DE" method="pen" text="vnd milteren etlich schwer kranckheyten aber kein gewale zû heilen" type="straight"/>
+        <underline language="DE" method="pen" text="dan wo dz haubtstuct niche krafft vnud" type="straight"/>
+        <underline language="DE" method="pen" text="gewalthet damag man durch die correctiones nicht trafft" type="straight"/>
+        <underline language="DE" method="pen" text="het damag man durch die correctiones nichts inbringen" type="straight"/>
+        <underline language="DE" method="pen" text="kalch" type="double"/>
+        <underline language="LA" method="pen" text="Antimonij" type="straight"/>
+        <underline language="LA" method="pen" text="salni" type="straight"/>
+        <underline language="DE" method="pen" text="dem sechsten theil der" type="straight"/>
+        <underline language="DE" method="pen" text="matrices der wilden roten Granatê" type="double"/>
+        <underline language="DE" method="pen" text="ärtz deß silbers" type="straight"/>
+        <underline language="DE" method="pen" text="vnzeytigen golds" type="double"/>
+        <underline language="DE" method="pen" text="grad der hitz am letsten wie am ersten" type="straight"/>
+        <underline language="DE" method="pen" text="dem kupfferischen vitriol" type="straight"/>
+        <underline language="LA" method="pen" text="arsenic" type="straight"/>
+        <underline language="DE" method="pen" text="auripigment" type="straight"/>
+        <underline language="DE" method="pen" text="fiv vnd vnfix" type="double"/>
+        <underline language="DE" method="pen" text="sorglicherem grad" type="double"/>
+        <underline language="DE" method="pen" text="die geschwär/" type="double"/>
+       
+        <mark method="pen" name="tripunctus" place="head"/>
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+       
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/> 
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.311v.tif" pagination="602" reader="John Dee" signature="[ppp.v.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="no[n] enim in spiritu vita est, sed ea nulla est omnino seruienti" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Non enim sp[i]r[i][t]u vita est, sed ea nulla est omnino seruie[n]ti</marginalia_text>
+                </position>
+            </language>
+            <translation>For life is not just a matter of breathing; a slave has no life at all [Loeb 507, 119, 121].</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="iuuentutis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Iuuentus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Youth.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="seruitute" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Seruitus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Servitude.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="ecquodnam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ecquodnam.</marginalia_text>
+                </position>
+            </language>
+            <translation>And to what?</translation> <!--JG: Unsure--> <!-- FSF: not sure either -->
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="longinquitate grauissimi morbi recreatus" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]tulit, quoru[m] votis iudicauit se à morte reuocatum" type="straight"/>
+        <underline language="LA" method="pen" text="futuraru[m], aut ad propulsandu[m] metu[m] dilige[n]tior" type="straight"/>
+        <underline language="LA" method="pen" text="tamen si essent arrogantes, non possem ferre fastidium" type="straight"/>
+        <underline language="LA" method="pen" text="Sed vt concedam incertos exitus esse belli, Martémque communem, tamen pro libertate, vitae periculo decernendum est.              no[n] enim in spiritu vita est, sed ea nulla est omnino seruienti" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">5</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">12</numeral>
+        
+        <drawing anchor_text="Non enim sp[i]r[i][t]u vita est, sed ea nulla est omnino seruie[n]ti" book_orientation="0" method="pen" place="head" type="florilegium"/>
+        <drawing anchor_text="Iuuentus" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="Seruitus" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="no[n] enim in spiritu vita est, sed ea nulla est omnino seruienti" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+        
+    </annotation>
+</transcription>

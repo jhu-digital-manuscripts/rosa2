@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.121r.tif" pagination="65" reader="Harvey" signature="E[r]"/>	<!-- ABO 125right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Industria non coacta, citò deferuescit.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Industriousness which is not driven onward will quickly grow cold.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Nullibi morandum vltra Fortij mensem. Cui
+					</marginalia_text>
+					<person name="Joachim Fortius Ringelberg"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						a[e]quipollet Chrysotechni Septimana.
+					</marginalia_text>
+					<person name="Chrysotechnus"/>
+				</position>
+			</language>
+			<translation>
+				Nowhere must a matter be delayed beyond the month of Fortius, <!-- CG: The meaning of this is unclear. -->
+				with whom the week of Chrysotechnus is equally as strong.			
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						scitè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Knowingly.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Cogendus sibi quisq[ue] quotidiè: ne quid extrema[e] sua[e] potestatis
+						languescat.
+					</marginalia_text>
+					<emphasis method="pen" text="Cogendus sibi" type="straight"/>
+					<emphasis method="pen" text="quid extrema[e] sua[e] potestatis" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Each man must collect himself daily, lest something of his utmost power diminish.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Nam qui non crescit pro viribus, descrescit.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Indeed, he who does not grow in the face of other men will shrink.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Paradosso generoso, oue necessario.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A generous paradox where necessary.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Item prouerbia Italorum, Heiuodi, Erasmi. In primisq[ue] ioci isti, et sales Domenici,
+						Castillionis, Guatij, mensa[e] philosophica[e]: qua[e] Eutrapeli delitia[e].
+					</marginalia_text>
+					<person name="John Heywood"/>
+					<person name="Erasmus"/>
+					<person name="Lodovico Domenichi"/>
+					<person name="Castiglione"/>
+					<person name="Stefano Guazzo"/>
+					<person name="Eutrapelus"/>
+					<book title="Mensa philosophica"/>
+					<emphasis method="pen" text="prouerbia" type="straight"/>
+					<emphasis method="pen" text="ioci isti" type="straight"/>
+					<emphasis method="pen" text="sales" type="straight"/>
+					<emphasis method="pen" text="Eutrapeli delitia[e]" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Likewise, the proverbs of the Italians, Heywood, Erasmus; and first, those jokes and witticisms of Domenichi,
+				Castiglione, Guazzo, and the Mensa Philosophica, all of which are delights for Eutrapelus.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Valdè etiam ingenio conferunt Rabela[e]sius, et Arcadia Comitiss[a]e: Apologia Herodoti, et Loci
+						communes Manlij: Sylua Nuptialis, et Bartasij diuini Hymni. Multo plus, quàm omnes
+						Italica[e] Oda[e], et discursus. Nihil Aretinus ad Rabela[e]sium.
+					</marginalia_text>
+					<person name="Francois Rabelais"/>
+					<person name="Johannes Jacobus Manlius"/>
+					<person name="Guillaume Du Bartas"/>
+					<person name="Pietro Aretino"/>
+					<book title="The Countess of Pembroke's Arcadia"/>
+					<book title="Apologie pour Hérodote"/>
+					<book title="Loci communes"/>
+					<book title="Sylva nuptialis"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				And by all means, Rabelais with his ingenuity and the Countess of Pembroke's Arcadia should be added, 
+				as well as the Apology for Herodotus, the common places of Manlius, the 'Sylva nuptialis' and Bartas' divine hymns.
+				These are much greater than all the odes and discourses of Italy. Aretino is nothing compared with Rabelais.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="egli vn solo figliuolino" type="straight"/>
+		<underline language="IT" method="pen" text="hor lui" type="straight"/>
+		<underline language="IT" method="pen" text="hor lei riguardaua" type="straight"/>
+		<underline language="IT" method="pen" text="certo che cotesto putto fosse mio, come" type="straight"/>
+		<underline language="IT" method="pen" text="sì strana" type="straight"/>
+		<underline language="IT" method="pen" text="senza" type="straight"/>
+		<underline language="IT" method="pen" text="mutar faccia" type="straight"/>
+		<underline language="IT" method="pen" text="donare il valore di mille ducati" type="straight"/>
+		<underline language="IT" method="pen" text="parenti per giudici" type="straight"/>
+		<underline language="IT" method="pen" text="loro il caso" type="straight"/>
+		<underline language="IT" method="pen" text="il figliuolo in" type="straight"/>
+		<underline language="IT" method="pen" text="bambino è mio" type="straight"/>
+		<underline language="IT" method="pen" text="ch'io ve lo dono" type="straight"/>
+		<underline language="IT" method="pen" text="egli è vostro" type="straight"/>
+		<underline language="IT" method="pen" text="risa" type="straight"/>
+		<underline language="IT" method="pen" text="la saggia donna" type="straight"/>
+		<underline language="IT" method="pen" text="nobilissimi tra gli" type="straight"/>
+		<underline language="IT" method="pen" text="i più nobili huomini del mondo" type="straight"/>
+		<underline language="IT" method="pen" text="dispregiano le ricchezze" type="straight"/>
+		<underline language="IT" method="pen" text="gloria" type="straight"/>
+		<underline language="IT" method="pen" text="piaceri" type="straight"/>
+		<underline language="IT" method="pen" text="vita" type="straight"/>
+		<underline language="IT" method="pen" text="vincono le cose" type="straight"/>
+		<underline language="IT" method="pen" text="pouertà" type="straight"/>
+		<underline language="IT" method="pen" text="l'infamia" type="straight"/>
+		<underline language="IT" method="pen" text="dolore" type="straight"/>
+		<underline language="IT" method="pen" text="morte" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<symbol language="IT" name="JC" place="right_margin" text="parenti per giudici"/>
+		
+		<symbol name="Sun" place="left_margin"/>
+		
+		<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- risa-->
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="DIOGENE domandato quali fossero i più nobili    huomini del mondo, ripose: quelli che dispregiano le ricchezze, la gloria, i piaceri, &amp; finalmente la vita: &amp; che vincono    le cose co[n]trarie à queste, cioè la pouertà, l'infamia, il dolore, et la morte, tollerandole"/>
+		<mark method="pen" name="equal_sign" place="left_margin"/>
+		<mark method="pen" name="equal_sign" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--cer-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--no-->
+		<mark method="pen" name="circumflex" place="right_margin"/>
+		<mark method="pen" name="circumflex" place="right_margin"/>
+		<mark method="pen" name="circumflex" place="right_margin"/>
+		<mark method="pen" name="circumflex" place="right_margin"/>
+		<mark method="pen" name="circumflex" place="right_margin"/>
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="mio"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="mio"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="dono"/>
+		<mark method="pen" name="dot" place="intext"/> <!--donna, &-->
+		<mark method="pen" name="plus_sign" place="intext"/> <!--DIOGENE-->
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="dispregiano le ricchezze"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="gloria"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="piaceri"/>
+		<mark method="pen" name="dot" place="intext"/> <!--piaceri, &-->
+		<mark method="pen" name="vertical_bar" place="intext"/> <!--vita: &-->
+		<mark method="pen" name="dot" place="intext"/> <!--dolore, et-->
+		<mark method="pen" name="dot" place="intext"/> <!--morte, tollerandole-->
+		
+    </annotation>
+</transcription>

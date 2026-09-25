@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.041r.tif" pagination="65" reader="John Dee" signature="ee.i."/>
+    <annotation> 
+        
+        <marginalia anchor_text="iter fecit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        facere iter
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To make a journey.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="peruadere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        peruadere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To go through.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="animaduersionis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Animadu[er]sio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Observation.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ingem ex lignis viridibus, atque humidis in loco angusto fieri" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        igne[m] fieri
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To make fire.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="onerariam nauem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        oneraria navis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Transport ship.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Delum [...] religio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Religio deli
+                    </marginalia_text>
+                    <location name="Delos"/>
+                </position>
+            </language>
+            <translation>
+                The belief of Delos.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tempestates" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Tempestates
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Stormes.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hîc nauis illa praedonis istius onusta signis religiosis, expulsa, atque eiecta flcuctu, frangitur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Naufragium
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Shipwreck.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="templo, tam antiquo, tam sancto, tam religioso" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        templu[m] antiquu[m] sanctum religiosum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A temple, ancient, holy, venerated.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="proditum memoriae ac literis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        proditu[m] memori[a]e literis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Advanced tradition and literature.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mille numero nauim classem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        mille numero Classis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A fleet of a thousand.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="prandia, coenas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        prandia c[o]en[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Lunches, dinners.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tenedios" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Tenes deus
+                    </marginalia_text>
+                    <location name="Tenedos"/>
+                </position>
+            </language>
+            <translation>
+                Tenedos.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nomine Te[nedus]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Tenedos vnde no[m]i[n]atur
+                    </marginalia_text>
+                    <location name="Tenedos"/>
+                </position>
+            </language>
+            <translation>
+                From where the name Tenedos comes.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ignem ex lignis viridibus, atque humidis" type="straight"/>
+        <underline language="LA" method="pen" text="est alius mihi locus" type="straight"/>
+        <underline language="LA" method="pen" text="onerariam nauem suam" type="straight"/>
+        <underline language="LA" method="pen" text="Tum subito tempestates coortae sunt maximae Iudices" type="straight"/>
+        <underline language="LA" method="pen" text="Hîc nauis illa praedonis istius onusta signis religiosis, expulsa" type="straight"/>
+        <underline language="LA" method="pen" text="si in pueritia non his artibus, &amp; disciplinis institutus eras, vt ea quae literis mandata" type="straight"/>
+        <underline language="LA" method="pen" text="Latonam ex longo errore" type="straight"/>
+        <underline language="LA" method="pen" text="illa cupiditas tanta, quae tantam extingueret religionem? &amp; si tum haec non cogitabas" type="straight"/>
+        <underline language="LA" method="pen" text="nullum esse tantum malum, quod non tibi pro sceleribus" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/> <!--JG: Four plus signs forming a cross-->
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">16.10</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">21</numeral>
+        
+    </annotation>
+</transcription>

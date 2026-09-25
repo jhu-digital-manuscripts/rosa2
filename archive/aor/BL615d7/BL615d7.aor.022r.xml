@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.022r.tif" pagination="22" reader="John Dee" signature="[C[vi]]"/> 
+    
+    <annotation>
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>The Ile called Antilia</marginalia_text>
+                    <location name="Antillia"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Palos di Mogher in Portogallo" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Palos de Mogher</marginalia_text>
+                    <location name="Palos de Moguer"/>
+                </position>
+            </language>
+            <translation>Palos de Moguer.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="l'Isola de' Fiori" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>L'isola de' Fiori</marginalia_text>
+                    <location name="Flores Island"/>
+                </position>
+            </language>
+            <translation>Flores Island.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="che quella gente non volesse esser conosciuta" type="straight"/>
+        <underline language="IT" method="pen" text="Il quale li riprese seueramente, &amp; gli cómandò, che tosto vi ritornassero" type="straight"/>
+        <underline language="IT" method="pen" text="il terzo" type="double"/>
+        <underline language="IT" method="pen" text="della quale trouarono esser tutto oro" type="straight"/>
+        <underline language="IT" method="pen" text="Diego da Tiene" type="straight"/>
+        <underline language="IT" method="pen" text="Palos di Mogher in Portogallo" type="straight"/>
+        <underline language="IT" method="pen" text="ch'essi parti rono dal Fagial, &amp; nauigarono più di cento e cinquanta leghe per Libecchio" type="straight"/>
+        <underline language="IT" method="pen" text="l'Isola de' Fiori" type="double"/>
+        
+        <symbol name="Sun" place="right_margin"/>
+        
+        <mark method="pen" name="equal_sign" place="right_margin"/>
+        <mark method="pen" name="equal_sign" place="right_margin"/>
+          
+    </annotation>
+</transcription>

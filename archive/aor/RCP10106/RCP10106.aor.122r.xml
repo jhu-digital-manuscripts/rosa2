@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.122r.tif" pagination="243" reader="John Dee" signature="q 2"/>
+    <annotation>
+        
+        <marginalia anchor_text="Itaq[ue[ in hoc gnere maximè quaeritur, an simile sit, quod infertur." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Notandum</marginalia_text>
+                </position>
+            </language>
+            <translation>It should be noted.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Socraticu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Socraticus mos</marginalia_text>
+                    <person name="Socrates"/>
+                </position>
+            </language>
+            <translation>The Socratic manner.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aspasia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aspasia</marginalia_text>
+                    <person name="Aspasia"/>
+                </position>
+            </language>
+            <translation>Aspasia.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="malle enim responderat, se malle alienum aurum quàm suum." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ratio occurendi Socratica[e] argumentatio[n]i</marginalia_text>
+                    <person name="Socrates"/>
+                </position>
+            </language>
+            <translation>Reason for a Socratic argument to occur.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="minutißimas partes ista secuisse, &amp; aliquid simile minus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Similis, Diuisio</marginalia_text>
+                </position>
+            </language>
+            <translation>Similar, division.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Contrariorum quoq[ue] aliter accipi opposita" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Contrarioru[m] Diuisio</marginalia_text>
+                </position>
+            </language>
+            <translation>The division of contrary things.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="iure simili" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ius simile</marginalia_text>
+                </position>
+            </language>
+            <translation>Similar law.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cicero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cicero</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="matriomoniu[m] sit mente coëuntium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Matrimoniu[m] mente coëu[n]tiu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Marriage through the will of the partners.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Itaq[ue] in hoc genere" type="straight"/>
+        <underline language="LA" method="pen" text="ut apud Aeschinem Socraticu[m] male respondit Aspasia Xenophontis uxor, quod Cicero his uerbis transfert: Dic mihi quaeso Xenophontis uxor, si uicina" type="straight"/>
+        <underline language="LA" method="pen" text="male enim responderat, se malle alienum aurum" type="straight"/>
+        <underline language="LA" method="pen" text="esse simile minus" type="straight"/>
+        <underline language="LA" method="pen" text="aliquid plus" type="straight"/>
+        <underline language="LA" method="pen" text="Et dißimilibus inesse simile" type="straight"/>
+        <underline language="LA" method="pen" text="similibus dißimile" type="straight"/>
+        <underline language="LA" method="pen" text="argume[n]ta duci ex iure simili, ut" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

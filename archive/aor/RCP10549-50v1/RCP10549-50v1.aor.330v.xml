@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.330v.tif" pagination="340" reader="John Dee" signature="[fff.ii.[v]]"/> <!--JG: Pagination error-->
+    <annotation> 
+        
+        <marginalia anchor_text="25 October 1585" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>finis a[nn]o d[omi]ni 1585. Octobris die 25.</marginalia_text>
+                </position>
+            </language>
+            <translation>Finished on 25 October 1585.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="miserrimi" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">3</numeral>
+        
+    </annotation>
+</transcription>

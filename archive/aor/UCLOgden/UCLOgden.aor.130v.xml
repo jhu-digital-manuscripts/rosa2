@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.130v.tif" pagination="244" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="sphaera barbarica" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Spha[e]ra Barbarica. 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Barbaric spheres. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Gaudiu[m] et maestitia stellarum.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The joy and majesty of the stars.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="♓ est clara stella" type="straight"/>
+        <underline language="LA" method="pen" text="in Australi scilicet" type="straight"/>
+        <underline language="LA" method="pen" text="pronunciat sphaera barbarica" type="straight"/>
+        <underline language="LA" method="pen" text="ne imperitis &amp; sacrilegis auribus scientia istius operis intimetur" type="straight"/>
+        <underline language="LA" method="pen" text="tegumentis, natura " type="straight"/>
+        <underline language="LA" method="pen" text="diuinitatis ab initio" type="straight"/>
+        <underline language="LA" method="pen" text="cunctis patefacta maiestatis suae origine" type="straight"/>
+        <underline language="LA" method="pen" text="lectio religiosis tantum" type="straight"/>
+        <underline language="LA" method="pen" text="haec filiis tuis tantu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="trade amicis" type="straight"/>
+        <underline language="LA" method="pen" text="Horu[m] aut[em] libroru[m] antificiu[m], nos tibi soli [a]edidisse sufficiat, quos" type="straight"/>
+        <underline language="LA" method="pen" text="ma[n]damus, tibi credimus, tibi co[n]secramus. Tu" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="slash" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

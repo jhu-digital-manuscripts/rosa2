@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.misc.insert.08.tif" origin="added" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian" method="pencil" other_reader="unknown modern hand">
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>p T5 verso</marginalia_text>
+                    <internal_ref>
+                        <target ref="UCLOgden:493" text="T5 verso"/>
+                    </internal_ref>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pencil" other_reader="unknown modern hand">
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>Last notes No 530 about</marginalia_text> <!--JG: Unsure abt first word--> <!-- NBW: Best guess is that's an s, given the graph above-->
+                </position>
+            </language>
+        </marginalia>
+        
+    </annotation>
+</transcription>

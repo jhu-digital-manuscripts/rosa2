@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonRB16th11.001r.tif" pagination="Title Page" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia date="1571" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Gabrielis Harveij.
+                        1571.
+                    </marginalia_text>
+                    <person name="Gabriel Harvey"/>
+                    <emphasis method="pen" text="1571" type="straight"/>
+                </position>
+            </language>
+            <translation>Gabriel Harvey</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        GH.
+                    </marginalia_text>
+                    <person name="Gabriel Harvey"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Confer the Queene Moothers Legendary in French.
+                    </marginalia_text>
+                    <person name="Mary of Guise"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Georgij Buchanani Inuectiva.
+                    </marginalia_text>
+                    <person name="George Buchanan"/>
+                </position>
+            </language>
+            <translation> George Buchanan's attacks. </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" other_reader="unknown">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        H.3.17.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        
+    </annotation>
+</transcription>

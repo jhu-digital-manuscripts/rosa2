@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.280r.tif" pagination="539" reader="John Dee" signature="[lll.vi.]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>sup[r]a in verre[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>See above, against Verres.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="excusare" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>excusare</marginalia_text>
+                </position>
+            </language>
+            <translation>To apologise.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Africa[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Africa</marginalia_text>
+                    <location name="Africa"/>
+                </position>
+            </language>
+            <translation>Africa.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="apud ipsum te" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>apud ipsu[m] te</marginalia_text>
+                </position>
+            </language>
+            <translation>By yourself.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Rex potentissimus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Rex potentiss[imus]</marginalia_text>
+                </position>
+            </language>
+            <translation>A most powerful king.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vt perhibetis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vt perhibetis</marginalia_text>
+                </position>
+            </language>
+            <translation>As you give.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="viri" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vir</marginalia_text>
+                </position>
+            </language>
+            <translation>Man.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sed hoc non concedo, vt quibus rebus gloriemini in vobis, easdem in aliis reprehendatis" type="straight"/>
+        <underline language="LA" method="pen" text="magnu[m] etia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="verboru[m] tamen ipsorum pondus sustinere no[n] posset" type="straight"/>
+        <underline language="LA" method="pen" text="liberalitas det" type="straight"/>
+        <underline language="LA" method="pen" text="apud ipsum te" type="straight"/>
+        <underline language="LA" method="pen" text="pedem ponere" type="straight"/>
+        <underline language="LA" method="pen" text="ego autem confitebor" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">11</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">4</numeral>
+        <numeral place="right_margin">12</numeral>
+        
+        <drawing anchor_text="Africa" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="Vir" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

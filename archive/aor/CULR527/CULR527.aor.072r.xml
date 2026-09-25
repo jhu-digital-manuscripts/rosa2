@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.072r.tif" pagination="72" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="cur AEquator emendatione non egeat?" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Aliud operatur magnes qua[m] ostendit 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The other magnet works, as it shows.
+            </translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="decidunt ab altitudine in qua erant. Quoniam" type="straight"/>
+        <underline language="LA" method="pen" text="parua declinatio est, circa punctum contingentiae" type="straight"/>
+        <underline language="LA" method="pen" text="Quamuis enim in globo ita totum (ut asseris) repraesentetur, neque ob id rumus leste oeste illud              esse poterit quod acus repraesentat extra AEquatorem, propter differentiam quae est inter opus &amp; demonstrationem" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+  
+    </annotation>
+</transcription>

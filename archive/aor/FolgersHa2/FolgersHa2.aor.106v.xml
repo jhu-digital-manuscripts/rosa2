@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.106v.tif" pagination="36" reader="Harvey" signature="[C2v]"/>	<!-- ABO 111left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Animus est omnia. Omnia habet, qui seipsum habet absolutè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The mind is everything. He who has himself absolutely has everything.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						{ Epictetus: Mimi: Italica prouerbia: selecta
+						   Plutarchi, Laertij apophthegmata: epigrammatum argutissima.	
+					</marginalia_text>
+					<person name="Epictetus"/>
+					<person name="Plutarch"/>
+					<person name="Diogenes Laertius"/>
+				</position>
+			</language>
+			<translation>
+				Epictetus, mimes, Italian proverbs, select aphorisms of Plutarch and Laertius, the most clever elements of epigrams. 
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						ridicolo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Ridiculous.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Pauca fertilissima: sed ad unguem.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				There are few most fertile matters, but they are learned by heart.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Totus Mundus in parua Mappa.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The entire world in a small map.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Omnis Inuentio, nihil; sine Critica Epicteti,
+						aut Publij. Prosunt Certa, et seria.
+					</marginalia_text>
+					<person name="Epictetus"/>
+					<person name="Publilius Syrus"/> <!-- Probably Publilius Syrus given the reference to him on the next page. --> 
+				</position>
+			</language>
+			<translation>
+				In all matters, invention is nothing without the criticism of Epictetus or Publius Syrus.
+				Certain and serious things are useful.
+			</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Eudromus, euer cheerfull, &amp; most liuelie: alwais industrious, &amp;
+						most nimble. Of all men, the most effectual; &amp; the least vaine.
+						Neuer regarding their common matters of brawles; but onlie
+					</marginalia_text>
+					<person name="Eudromus"/>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						prosecuting his proper actions to the purpose.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Vir ager, semiuir. Tanti est valetudo, et tam instantis momenti.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The wild man is a half-man. Soundness of health is of such great and immediate importance.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Spediente mirabile" type="straight"/>
+		<underline language="IT" method="pen" text="fa le fusa" type="straight"/>
+		<underline language="IT" method="pen" text="La fortuna" type="straight"/>
+		<underline language="IT" method="pen" text="assiduo giramento" type="straight"/>
+		<underline language="IT" method="pen" text="sommo grado" type="straight"/>
+		<underline language="IT" method="pen" text="stabilito risegga" type="straight"/>
+		<underline language="IT" method="pen" text="Piero delli Albizi in" type="straight"/>
+		<underline language="IT" method="pen" text="grandezza à Firenze" type="straight"/>
+		<underline language="IT" method="pen" text="d'autorità, &amp;  di prosperità auanzaua" type="straight"/>
+		<underline language="IT" method="pen" text="vn bel conuito à" type="straight"/>
+		<underline language="IT" method="pen" text="vn nappo d'argento, pieno di" type="straight"/>
+		<underline language="IT" method="pen" text="vn chiouo" type="straight"/>
+		<underline language="IT" method="pen" text="Ilqual chiouo" type="straight"/>
+		<underline language="IT" method="pen" text="ch'egli la ruota della fortuna" type="straight"/>
+		<underline language="IT" method="pen" text="conficcasse" type="straight"/>
+		<underline language="IT" method="pen" text="suo colmo" type="straight"/>
+		<underline language="IT" method="pen" text="no'l tornasse in fondo" type="straight"/>
+		<underline language="IT" method="pen" text="suo rouina" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="fa le fusa" type="straight"/>
+		
+		<symbol name="SS" place="left_margin"/>
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="vn chiouo"/>
+		
+
+    </annotation>
+</transcription>

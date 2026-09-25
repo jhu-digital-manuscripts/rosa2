@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.252v.tif" pagination="484" reader="John Dee" signature="[hhh.ii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="nihil ... sibtilius ... acutius: nihil peritius de foederibus, nihil illustriore authoritate ... grauius, nihil de ipso modestius ... ornatius ... verius" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        nihil subtilius acutius peritius illustriore grauius modestius ornatius verius autho[ritate]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Nothing more delicate, sharply, skillful, illustruous, severe, modest, ornate and true than authority.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vbertas, varietas, copia" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        vbertas varietas copia ] 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Fruitfulness, variety, abundance,
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="hoc satis esse causae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        hoc satis esse caus[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                That is essential to your case.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="acerrimis illis praeliis &amp; maximis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        bellum duriss[imu]m acerrimu[m] maximu[m] &gt; 485
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP10549-50v1:0513:u0001" text="485"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                A war, protracted, most bitter and greatest.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Principio orationis hoc oppono, me omnibus qui amici fuerint saluti &amp; dignitati meae si minus referenda gratia satisfacere potuerim, at praedicanda &amp; habenda certe satis esse facturu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="quod mihi de iure subtilius dici videretur" type="straight"/>
+        <underline language="LA" method="pen" text="acutius" type="straight"/>
+        <underline language="LA" method="pen" text="peritius de" type="straight"/>
+        <underline language="LA" method="pen" text="nihil illustriore authoritate de bellis, nihil de Republica grauis, nihil de ipso modestius, nihil de causa &amp; crimine ornatius. vt mihi iam verum videatur illud esse, quod no[n]nulli literati ac studiis doctrinísque dediti, quasi quiddam incredibile dicere putabantur: eum qui omnes animo virtutes penitus comprehendisset, omnia quae facere vellet, facillime tractare. quae enim in" type="straight"/>
+        <underline language="LA" method="pen" text="vbertas, varietas, copia" type="straight"/>
+        <underline language="LA" method="pen" text="Quo mihi difficilior est hic extremus perora[n]di locus" type="straight"/>
+        <underline language="LA" method="pen" text="orationi, quae non praeteruecta sit aures vestras, sed in animis omniu[m] penitus insederit: vt plus voluptatis ex recordatione illius orationis, quàm non modo ex mea, sed ex cuiusqua[m] oratione capere possitis. Sed" type="straight"/>
+        <underline language="LA" method="pen" text="Nam verius nihil est" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">11</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        
+    </annotation>
+</transcription>

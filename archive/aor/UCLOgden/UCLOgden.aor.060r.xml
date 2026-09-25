@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.060r.tif" pagination="103" reader="John Dee" signature="i 4"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        at no[n] habent
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                But they don't have.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quia ☉ and ☾ nunquam accipiunt geniturae dominatum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Sol et Luna nu[n]q[uam] eliguntur in genitura[e] dominos.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The sun and moon never choose the lords of constellation.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="corpulentos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Corpulenti.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Corpulent.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mortis genus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A type of death.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="semper corpus modicum" type="straight"/>
+        <underline language="LA" method="pen" text="modicum cibum" type="straight"/>
+        <underline language="LA" method="pen" text="eorum finibus" type="straight"/>
+        <underline language="LA" method="pen" text="Facit etiam corpulentos" type="straight"/>
+        <underline language="LA" method="pen" text="stabiles" type="straight"/>
+        <underline language="LA" method="pen" text="magnos corpore" type="straight"/>
+        <underline language="LA" method="pen" text="uenustet" type="straight"/>
+        
+        <mark colour="red" method="pen" name="vertical_bar" place="left_margin"/> <!-- FSF: the red line is kind of dotted -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="stabiles"/>
+        
+        <drawing book_orientation="0" colour="red" method="pen" place="left_margin" type="florilegium"/> 
+        
+    </annotation>
+</transcription>

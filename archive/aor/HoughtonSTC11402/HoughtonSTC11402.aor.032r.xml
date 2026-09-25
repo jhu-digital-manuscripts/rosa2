@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.032r.tif" reader="Harvey" signature="D[ir]"/>
+    <annotation>
+        
+        <marginalia anchor_text="southesayer" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Superstition / blynde zeale.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Persians, whose apporte was very terrible, as longe as theyr apparyle was one; strypped naked" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>The Persians striped nakid owte of [their] lusty, and terrible apparrell.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="hande of the southesayer" type="straight"/>
+        <underline language="EN" method="pen" text="the vyctorie shulde" type="straight"/>
+        <underline language="EN" method="pen" text="giuen to Alexander" type="straight"/>
+        <underline language="EN" method="pen" text="printed on the warme liuer" type="straight"/>
+        <underline language="EN" method="pen" text="kyng shewed to the army" type="straight"/>
+        <underline language="EN" method="pen" text="god" type="straight"/>
+        <underline language="EN" method="pen" text="poynt of religion" type="straight"/>
+        <underline language="EN" method="pen" text="nyghte the harneys and armure" type="straight"/>
+        <underline language="EN" method="pen" text="vp to adorne the temples" type="straight"/>
+        <underline language="EN" method="pen" text="goddes folowed hym in his" type="straight"/>
+        <underline language="EN" method="pen" text="Agesilaus" type="straight"/>
+        <underline language="EN" method="pen" text="Persians" type="straight"/>
+        <underline language="EN" method="pen" text="apporte was very terrible" type="straight"/>
+        <underline language="EN" method="pen" text="whome he stryped naked" type="straight"/>
+        <underline language="EN" method="pen" text="shewed theyr whyte and effemynate" type="straight"/>
+        <underline language="EN" method="pen" text="bodies to his souldiars" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="shewed theyr whyte and effemynate"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="printed on the warme liuer"/>
+        <mark method="pen" name="dot" place="intext"/> <!--temples, perswadynge-->
+        <mark method="pen" name="dot" place="intext"/> <!--on, whome-->
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

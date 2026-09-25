@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.442r.tif" pagination="433" reader="John Dee" signature="Oooo"/>
+    <annotation>
+        
+        <marginalia anchor_text="Mccxci" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        1291
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="tanquàm subditus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Tanq[uam] subditus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Just as submissive.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quousque" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Quovsq[ue]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Until the time when.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="proditionem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Proditio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Treason.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in crimen lesae maiestatis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Crimen lesae Maiestatis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The crime of lese-majesty.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="praedictum iusticiae complementum" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; nobilium, quasi totius regni Scotiae" type="straight"/>
+        <underline language="LA" method="pen" text="Ioha[n]nem de Balliolo debitè" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; ex tunc tàm in Parliamentis quàm Consilijs nostris, de mandato nostro venie[n]s, tanquàm subditus noster, sicut alij de regno nostro" type="straight"/>
+        <underline language="LA" method="pen" text="quousque" type="straight"/>
+        <underline language="LA" method="pen" text="ex praeconcepta malitia" type="straight"/>
+        <underline language="LA" method="pen" text="proditionem" type="straight"/>
+        <underline language="LA" method="pen" text="inimicis nostris capitalibus" type="straight"/>
+        <underline language="LA" method="pen" text="coniurationes, in exhaeredationem" type="straight"/>
+        <underline language="LA" method="pen" text="debitum homagium, in crimen lesae maiestatis" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- praeordinata proditionem -->
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

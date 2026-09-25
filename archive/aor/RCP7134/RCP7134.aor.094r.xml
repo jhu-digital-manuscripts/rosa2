@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.094r.tif" pagination="87" reader="John Dee" signature="Y iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="est, &amp; cum hoc memor sis stellarum insignium, cum planetis existentium" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>fixa[e] stella[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Fixed stars.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="est, &amp; cum hoc memor sis stellarum insignium, cum planetis existentium" type="straight"/>
+        <underline language="LA" method="pen" text="significauit aliquem timorem cum desperatione" type="straight"/>
+        
+    </annotation>
+</transcription>

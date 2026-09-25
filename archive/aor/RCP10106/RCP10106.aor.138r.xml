@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.138r.tif" pagination="275" reader="John Dee" signature="s 2"/> 
+    <annotation>
+        
+        <marginalia anchor_text="priuatae quoq[ue] causae utrunq[ue]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Priuata[e] Caußa[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Private causes.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Notandum</marginalia_text>
+                </position>
+            </language>
+            <translation>To be noted.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nam &amp; ij, quorum officij erat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>locus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Location.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Gliconi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Glicon</marginalia_text>
+                    <person name="Glycon"/>
+                </position>
+            </language>
+            <translation>Glycon.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ciceronis fabula" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ciceronis fabula</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero’s story.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Na[m] in paruis quide[m] litibus has tragoedias mouere tale est, quale si personam Herculis, &amp; cothurnos aptare infantibus uelis" type="straight"/>
+        <underline language="LA" method="pen" text="imperitia, &amp; rusticitas, &amp; rigor, &amp; deformitas afferu[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="Transtulit patronus aliqua[n]do puellam" type="straight"/>
+        <underline language="LA" method="pen" text="Nam &amp; ij, quorum officij erat" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

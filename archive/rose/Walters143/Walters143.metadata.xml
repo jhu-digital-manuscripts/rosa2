@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>42</illustrations>
+    <totalPages>143</totalPages>
+    <dimensions units="mm">
+        <width>216</width>
+        <height>300</height>
+    </dimensions>
+    <dates>
+        <startDate>1300</startDate>
+        <endDate>1400</endDate>
+    </dates>
+    <texts>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="143r" start="1r">143</pages>
+            <illustrations>42</illustrations>
+            <linesPerColumn>40</linesPerColumn>
+            <leavesPerGathering>8</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Walters 143</commonName>
+            <dateLabel>14th century</dateLabel>
+            <type>manuscript</type>
+            <material>Parchment</material>
+            <origin>Paris, France</origin>
+            <currentLocation>Baltimore, MD</currentLocation>
+            <repository>Walters Art Museum</repository>
+            <shelfmark>W. 143</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Walters 143</commonName>
+            <dateLabel>14e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>parchemin</material>
+            <origin>Paris, France</origin>
+            <currentLocation>Baltimore, MD</currentLocation>
+            <repository>Walters Art Museum</repository>
+            <shelfmark>W. 143</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

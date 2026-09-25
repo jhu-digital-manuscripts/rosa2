@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd"> 
+    
+<page filename="PrincetonK6233.026r.tif" pagination="19" reader="Harvey" signature="b2r"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Hi diuersa[e] secta[e] Auctores, no[n] ita pra[e]ceptoribus addicti, quin ab
+                        eoru[m] traditionibus nonnunqu[am] recedere[n]t.
+                        Sic Jabolenus, cu[m] Sabinianus esset, Labeonis tamen sententiam probat: o[pere]   
+                        c[itato] Ra[e]uardus, ad Regula[m], cum amplius solutum.
+                    </marginalia_text>
+                    <person name="Jabolenus"/>
+                    <person name="Sabinianus"/>
+                    <person name="Marcus Antistius Labeo"/>
+                    <person name="Jacobus Raevardus"/>
+                </position>
+            </language>
+            <translation>
+                These authors were of the opposite sect and therefore not dedicated to the rulers; 
+                they even sometimes retreated from their traditions.
+                Thus Jabolenus, at the time of Sabinianus, tested Labeo's statement; c.f. Raevardus
+                on the rule 'cum amplius solutum'.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Sabinus" type="straight"/>
+        <underline language="LA" method="pen" text="Nerua" type="straight"/>
+        <underline language="LA" method="pen" text="Cassius" type="straight"/>
+        <underline language="LA" method="pen" text="Proculus" type="straight"/>
+        <underline language="LA" method="pen" text="Cassiani" type="straight"/>
+        <underline language="LA" method="pen" text="Proculiani" type="straight"/>
+        <underline language="LA" method="pen" text="Capitone" type="straight"/>
+        <underline language="LA" method="pen" text="Labeone" type="straight"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Cassiani"/>
+        
+    </annotation>
+</transcription>

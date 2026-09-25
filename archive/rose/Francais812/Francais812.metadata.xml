@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>5</illustrations>
+    <totalPages>319</totalPages>
+    <dimensions units="mm">
+        <width>254</width>
+        <height>304</height>
+    </dimensions>
+    <dates>
+        <startDate>1400</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="consolation">
+            <language>fr</language>
+            <title>Boece, de Consolation</title>
+            <textId/>
+            <pages end="75v" start="1r">75</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>38</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="échecsmoralisés">
+            <language>fr</language>
+            <title>Le Livre des échecs moralisés</title>
+            <textId/>
+            <pages end="120r" start="76v">45</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>38</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="264v" start="120v">145</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>38</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="notables">
+            <language>fr</language>
+            <title>Les bonnes meurs et les sages notables</title>
+            <textId/>
+            <pages end="266r" start="264v">3</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>38</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="dismoraulx">
+            <language>fr</language>
+            <title>Les Dis moraulx des Philosophez</title>
+            <textId/>
+            <pages end="319v" start="266r">54</pages>
+            <illustrations>2</illustrations>
+            <linesPerColumn>38</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Français 812</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>parchment</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 812</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Français 812</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 812</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

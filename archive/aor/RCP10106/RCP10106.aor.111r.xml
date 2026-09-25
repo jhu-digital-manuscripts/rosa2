@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.111r.tif" pagination="221" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="argumentum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Argume[n]tum</marginalia_text>
+                </position>
+            </language>
+            <translation>Argument.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="certis aute[m] habemus primu[m] quae sensibus percipiuntur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Qua[e] certa eße suspicamur</marginalia_text>
+                </position>
+            </language>
+            <translation>We suspect that these are certain.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sunt: ut pleraq[ue]m in iure no[n] legibus, sed moribus co[n]stant" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pleraq[ue] in iure morib[us] solu[m] co[n]stant.</marginalia_text>
+                </position>
+            </language>
+            <translation>Mostly, law involves custom to be consistent with the region.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="sunt quae εἰκότων dicuntur. Credibilium aute[m] genera sunt tria" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        εἰκότων 
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>triplicia sunt genera</marginalia_text>
+                </position>
+            </language>
+            <translation>There are kinds of likelihood.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristoteles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aristoteles</marginalia_text>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>Aristotle.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="per id quod dubiu[m] no[n] est, co[n]firmat, necesse est esse aliquid in causa, quod probatione no[n] egeat" type="straight"/>
+        <underline language="LA" method="pen" text="est: praeterea positum in co[m]muni omniu[m] intellectu. Si" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">1.</numeral>
+        <numeral place="right_margin">2.</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">4</numeral>
+        <numeral place="right_margin">5</numeral>
+        <numeral place="right_margin">6</numeral>
+        <numeral place="right_margin">7</numeral>        
+        <numeral place="right_margin">1</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

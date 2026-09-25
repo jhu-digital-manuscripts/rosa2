@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.011v.tif" reader="John Dee" signature="[Bv[v]]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Per sensibiles formas Geometer demo[n]strat suas intellectuales co[n]clusio[n]es
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Through sensible forms the geometer demonstrates its intellectual conclusions.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mathematic[us] abstrahit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mathematica abstractio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Mathematical abstraction.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="termini mathematicales in silogisticis r[ati]onibus, co[n]notatiue recipiu[n]t[ur]" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Termini mathematicales in syllogismis co[n]notatiue accipiu[n]tur
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Mathematical terms are connotatively accepted by syllogisms.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="petitio ei[us] q[uo]d in p[ri]ncipio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Petitio eius q[uod] est in principio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A petition of what has been in the beginning.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="diffinitu[m] aut[em] c[aus]a diffinit[i]o[n]is" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        definitu[m] causa definitionis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Defined by the cause of the definition.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in abstracto" type="straight"/>
+        <underline language="LA" method="pen" text="recto" type="straight"/>
+        <underline language="LA" method="pen" text="sed de his q[ui] per illos intelligunt[ur] sicut c[on]tingit p[er]cipue in geometricis" type="straight"/>
+        <underline language="LA" method="pen" text="q[ui]a no[n] demo[n]strat de ista in plano p[ro]tracta sed de ea que p[er] ista[m] intelligit[ur]" type="straight"/>
+        <underline language="LA" method="pen" text="facia[m] nisi lineis abstract[is] ad si[mi]litudine[m] illar[um] [et] ideo mathematic[us] abstrahit a materia" type="straight"/>
+        <underline language="LA" method="pen" text="quare termini mathematicales in silogisticis r[ati]o[ni]bus. co[n]notatiue recipiu[n]t[ur] na[m] significa[n]t tria[n]gulu[m] hic descriptu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="cu[m] solu[m]m[od]o c[on]notat formale[m] dispositionem materie" type="straight"/>
+        <underline language="LA" method="pen" text="s[ecundu]m rem [et] no[n] t[a]m[en] s[ecundu]m c[on]cessione[m]" type="straight"/>
+        <underline language="LA" method="pen" text="[et] fit digressio ad aliq[ui]d aliud. q[uo]d est natu[m] oste[n]di p[er] ip[su]m" type="straight"/>
+        <underline language="LA" method="pen" text="diffinitu[m] aut[em] c[aus]a diffinit[i]o[n]is s[em]p[er] cu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="effectu[m] inducit ad cause p[ro]batione[m]" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- c[on]currere diffinitu[m] -->
+        <mark method="pen" name="comma" place="intext"/> <!-- diffinitionis s[em]p[er] -->
+        
+        <errata amendedtext="," copytext="." language="LA"/> <!-- r[ati]o[ni]bus co[n]notatiue -->
+        
+    </annotation>
+</transcription>

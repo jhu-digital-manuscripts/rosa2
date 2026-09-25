@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.062v.tif" reader="Harvey" signature="[Gvii[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="very shame" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Shame breedith Constancy in sum.</marginalia_text>
+                    <emphasis method="pen" text="Shame" type="straight"/>
+                    <emphasis method="pen" text="Constancy" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="flinige his standarde" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Su[m] like egregious Examples,</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>in Ca[e]saris</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Militia.</marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>This slinging of [the] standard amongst [the] Enemy,
+                    on[e] of [the] greatist &amp; brauist Stratagems of [the] Romans.</marginalia_text>
+                </position>
+            </language>
+            <translation>Su[m] like egregious Examples, in Caesar's campaign. This slinging of [the] standard amongst [the] Enemy,
+                on[e] of [the] greatist &amp; brauist Stratagems of [the] Romans.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="flinige his standarde" type="straight"/>
+        <underline language="EN" method="pen" text="Furius" type="straight"/>
+        <underline language="EN" method="pen" text="marshal" type="straight"/>
+        <underline language="EN" method="pen" text="of the hoste" type="straight"/>
+        <underline language="EN" method="pen" text="hauynge the consulles" type="straight"/>
+        <underline language="EN" method="pen" text="stagger" type="straight"/>
+        <underline language="EN" method="pen" text="standerde bearer, &amp;" type="straight"/>
+        <underline language="EN" method="pen" text="very shame" type="straight"/>
+        <underline language="EN" method="pen" text="ageyne" type="straight"/>
+        <underline language="EN" method="pen" text="armye of his agaynste" type="straight"/>
+        <underline language="EN" method="pen" text="worthy citezens, if they wolde" type="straight"/>
+        <underline language="EN" method="pen" text="fyghte with theyr" type="straight"/>
+        
+        <symbol language="EN" name="SS" place="head" text="Su[m] like egregious Examples, in Ca[e]saris Militia. This slinging of [the] standard amongst [the] Enemy,             on[e] of [the] greatist &amp; brauist Stratagems of [the] Romans."/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="Shame"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="worthy citezens, if they wolde"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Furius"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="shame"/>
+        
+    </annotation>
+</transcription>

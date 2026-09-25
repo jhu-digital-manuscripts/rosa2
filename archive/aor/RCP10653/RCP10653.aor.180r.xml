@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.180r.tif" pagination="351" reader="John Dee" signature="Gg ij"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Cuspinianus ide[m] affirmat.  
+                    </marginalia_text>
+                    <person name="Johannes Cuspinianus"/>
+                </position>
+            </language>
+            <translation>
+                Cuspinianus asserts this.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Nota ha[e]c no[m]i[n]a distincta esse Eadgiua, Eadgitha Eadhilda
+                    </marginalia_text>
+                    <person name="Eadgifu"/>
+                    <person name="Eadgyth of England"/>
+                    <person name="Eadhild"/>
+                </position>
+            </language>
+            <translation>
+                Note that these names are distinct: Eadgaca, Eadgitha, and Eadhilda. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Othoni" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Magno
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The Great.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Aethelvvaldus vnam abusiuè" type="straight"/>
+        <underline language="LA" method="pen" text="INtereà rex fines regni sui latius quàm" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]cubina" type="straight"/>
+        <underline language="LA" method="pen" text="Egvvina" type="straight"/>
+        <underline language="LA" method="pen" text="primogenitum Aethelstanu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Aelfleda, Ealfelmi" type="straight"/>
+        <underline language="LA" method="pen" text="id est, Eadgiua Othoni Romanoru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Eadhildam Carolus rex Fra[n]corum" type="straight"/>
+        <underline language="LA" method="pen" text="tertiam Siricius rex Northanhumbrorum" type="straight"/>
+        <underline language="LA" method="pen" text="Edgitham" type="straight"/>
+        <underline language="LA" method="pen" text="Algiuam Hugo filius Ducis Roberti habuerunt" type="straight"/>
+        <underline language="LA" method="pen" text="Edgitha" type="straight"/>
+        
+        <symbol name="Aquarius" place="right_margin"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">1</numeral>
+        <numeral place="right_margin">2</numeral>
+        
+    </annotation>
+</transcription>

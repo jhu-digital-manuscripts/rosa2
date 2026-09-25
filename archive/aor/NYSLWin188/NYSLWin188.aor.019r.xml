@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.019r.tif" pagination="19" reader="John Dee" signature="Eiij"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>☉ est sal ex tribus p[ri]m[is].</marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                </position>
+            </language>
+            <translation>The sun is salt from the three principles.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="den dreien ersten" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tria prima</marginalia_text>
+                </position>
+            </language>
+            <translation>The tree principles.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Die Sonne ist Sal perspicuum diaphanum, von den dreien ersten clarificiert extrahiert vnd mundiert von aller dunckele" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>☉ est sal diaphanum omni macula et tenebra, vacuum</marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                </position>
+            </language>
+            <translation>The sun is transparent salt, devoid of all blemishes and darkness.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="den Weisse schein in die Son[n]e vn[d] der Rotte schien in den Mon vnd Sternen" hand="Italian" id="NYSLWin188:00000051:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lume[n] ☉ - album ☾ - rubeu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Light. The sun is white [and] the moon is reddish.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Solis Creatio qualis</marginalia_text>
+                </position>
+            </language>
+            <translation>What kind of creation of the sun.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="den dreien" type="double"/>
+        <underline language="LA" method="pen" text="Sal perspicuum" type="straight"/>
+        <underline language="LA" method="pen" text="diaphanum" type="straight"/>
+        <underline language="DE" method="pen" text="den dreien" type="double"/>
+        <underline language="DE" method="pen" text="ersten clarificiert" type="straight"/>
+        <underline language="DE" method="pen" text="extrahiert" type="straight"/>
+        <underline language="DE" method="pen" text="mundiert" type="straight"/>
+        <underline language="DE" method="pen" text="aller dunckele" type="straight"/>
+        <underline language="DE" method="pen" text="wider ein gut weiß vnd ein gut schwartz" type="straight"/>
+        <underline language="DE" method="pen" text="Marmel" type="straight"/>
+        <underline language="DE" method="pen" text="nit prendt" type="double"/>
+        <underline language="DE" method="pen" text="herauß geschlagen" type="straight"/>
+        <underline language="DE" method="pen" text="auß" type="triple"/>
+        <underline language="LA" method="pen" text="der Massa Primae materiae Elementi Coeli" type="straight"/>
+        <underline language="DE" method="pen" text="der schein" type="triple"/>
+        <underline language="DE" method="pen" text="den Weisse schein in die" type="straight"/>
+        <underline language="DE" method="pen" text="Rott schein in den Mon vnd Sternen" type="straight"/>
+        <underline language="LA" method="pen" text="Diaphinitet" type="straight"/>
+        <underline language="LA" method="pen" text="Perspicuitet" type="straight"/>
+        <underline language="DE" method="pen" text="Sul" type="straight"/>
+        <underline language="DE" method="pen" text="Sal" type="straight"/>
+        <underline language="DE" method="pen" text="Liquore" type="straight"/>
+        
+        <symbol name="Moon" place="tail"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!--ersten clarificiert-->
+        <mark language="DE" method="pen" name="scribble" place="tail" text="weissen"/>
+        
+        <errata amendedtext="rott" copytext="Weisse" id="NYSLWin188:00000051:e0001" language="DE"/>
+        <errata amendedtext="weisse" copytext="Rott" id="NYSLWin188:00000051:e0002" language="DE"/>
+        
+        <physical_link>
+            <marginal_annotation idref="NYSLWin188:00000051:m0001"/>
+            <marginal_annotation idref="NYSLWin188:00000051:e0001"/>
+            <marginal_annotation idref="NYSLWin188:00000051:e0002"/>
+            
+            <relation from="NYSLWin188:00000051:m0001" to="NYSLWin188:00000051:e0001" type="directed"/>
+            <relation from="NYSLWin188:00000051:m0001" to="NYSLWin188:00000051:e0002" type="directed"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.074r.tif" reader="Harvey" signature="*2[r]"/>	<!-- ABO 78right -->
+	
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Nihil valent Artes, nisi quatenùs
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="EL">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						πραγματέιαι,
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						conducunt necessarijs vita[e] operibus, vtilissimisq[ue]
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Mundi actionibus. Undè ipsa[e]
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="EL">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						πραγματέιαι
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						cuiusq[ue] Artis; statim discenda[e] ad serium vsum; reliqua[e]
+						scholastica[e]
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="EL">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						θεωρίαι,
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						leuiter percurrenda[e], cum suaui contemptu.
+						Ex Eudromi energetica disciplina.
+						Nam vbiq[ue] vanitas vanitatu[m]: et stultoru[m] plena omnia.
+					</marginalia_text>
+					<person name="Eudromus"/>
+				</position>
+			</language>
+			<translation>
+				The arts are worth nothing unless they are in some way pragmatic, being profitable for life through necessary deeds
+				and profitable for the world through most useful actions. Whence these pragmatic actions themselves, of whatever art, 
+				must be learned immediatley for serious use; the remaining theories should be lightly skimmed through with pleasant disregard.
+				The energetic discipline taken from Eudromus.
+				For vanity is everywhere, and all things are full of fools.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Qui excellentissimos Libros potest facere a[e]thereos,
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						miracula perpetrabit. Vis est enim a[e]therea, qua[e] sublimat,
+						multiplicat, [ve]req[ue] magneticos montes exstruit immensi valoris.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				He who can write most excellent divine books will perform miracles. Indeed power is divine when it elevates, multiplies, and erects magnetic rocks
+				of boundless value.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Seipsum quotidiè rectificare, sapientis est: nec ulla Epanorthosis
+						tanti momenti. Hominem malo sublimatum, quàm omnes						
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						quintas Essentias.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				He who straightens himself out daily is wise, and no correction is as important. 
+				I prefer an elevated man to all the Fifth Essences.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Multum valet Ars: sed plurimum Natura; et Assuetudo, altera natura.
+						Tanti interest, quod scitur intimè, exercere diligentissimè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Art is worth much, but Nature is worth more, and habit is another form of nature.
+				It is of great intrest that what is known profoundly be practiced most diligently.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="GABRIELLO STROZZI" type="straight"/>
+		<underline language="IT" method="pen" text="veramente piaceuole" type="straight"/>
+		<underline language="IT" method="pen" text="motti" type="straight"/>
+		<underline language="IT" method="pen" text="l'vtile che" type="straight"/>
+		
+		<mark method="pen" name="comma" place="intext"/> <!--STROZZI-->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="piaceuole"/>
+		<mark method="pen" name="dot" place="intext"/> <!--lunga, io-->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="motti"/>
+		<mark method="pen" name="dot" place="intext"/> <!--motti, in-->
+		<mark method="pen" name="dot" place="intext"/> <!--componimenti, ma-->
+		<mark method="pen" name="dot" place="intext"/> <!--bisogni, &-->
+		
+    </annotation>
+</transcription>

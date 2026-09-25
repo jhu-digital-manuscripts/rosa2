@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.141r.tif" pagination="105" reader="Harvey" signature="[G5r]"/>	<!-- ABO 145right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Faciat, quicquid fieri potest à viro priuato: at paru[m]
+						erit pro tantis ausis. Nunq[uam] corrumpatur tot
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Mundi illecebris, aut nugis:
+						nunq[uam] cesset, aut
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( frigeat: nihil
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						no[n] tentet,
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						agitet, extendat, quod vllo modo valet: idq[ue] quoad
+						potest, peritè subtiliter, profunde: at deficiet aliqua
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						personarum oppositione; aut reru[m] pondere; aut 
+						| actionu[m] mole
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Tanta opus est ta[m]
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						diuina
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						arte in tracta[n]dis
+						personis, rebus, actionibus, aptissimè, prudentissimè,
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						fortissimè, postremò solidissimè.
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Nec vlla aut satis curiosa industria: aut satis
+						secura magnanimitas. Cu[m] desinet Jocari, deflorescet.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Let him do whatever can be done by a private man, but it will not be enough for such daring deeds. 
+				Let him never be entirely corrupted by the charms or trifles of the world. Let him never stop or grow cold. 
+				Let him be tempted, excited, and increased only by something of value. And as long as he can, let him do this
+				expertly, subtly, profoundly; but he will be wanting in any opposition from people, or the weight of things, 
+				or the bulk of actions. This is quite necessary, and with such divine art in dealing with people, things, actions 
+				in a most suitable, prudente, strong, and solid manner.
+				Nor is any industriousness ever diligent enough, or magnanimity tranquil enough.
+				When he ceases joking, he will wither.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						l'arte dell'Elenchi, et
+						paralogismi. /
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The art of refutation and paralogism.
+			</translation>
+		</marginalia>
+		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.141r_0001" marginalia_continues_to="Ha2.140v_0001" marginalia_to_transcription="Ha2.140v.xml">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Ille noster in dicendo, agendoq[ue] grauiss[im]a semper expeditus,
+						et laetus: etiam in Tragicùs Co[micus]. Totus mu[n]dus no[n] dignus tristi = [[G4v]: = vultu: nedum Corde ferenti a[e]grè, id est, sordidè, et miserè.
+						Nam vulgares isti, pla[e]runq[ue] ignobiles, sordidi, miserabil[e]s.]
+						<!-- Continues on facing page, right margin, Ha2.140v -->
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Our man there is most ready and cheerful in saying and doing the most serious things;
+				even in a tragedy, he is comic. The entire world is not worthy of a sad [[G4v]: face: still less hardly of bearing a heart; that is, in a foul and wretched manner.
+				For those men are vulgar, and many of them are ignoble, foul, and wretched.
+				But He remains ever lively, even while most afflicted by troubles.]
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="oltre scelerato, &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="pecchi cotidianamente contra" type="straight"/>
+		<underline language="IT" method="pen" text="vsando con le tue sorelle" type="straight"/>
+		<underline language="IT" method="pen" text="propria madre" type="straight"/>
+		<underline language="IT" method="pen" text="per profitto del padrone" type="straight"/>
+		<underline language="IT" method="pen" text="vuoua, &amp; pulcini perueniuano" type="straight"/>
+		<underline language="IT" method="pen" text="ragioni" type="straight"/>
+		<underline language="IT" method="pen" text="la Gatta" type="straight"/>
+		<underline language="IT" method="pen" text="habbia ragione" type="straight"/>
+		<underline language="IT" method="pen" text="star piu digiuna" type="straight"/>
+		<underline language="IT" method="pen" text="mangiosselo" type="straight"/>
+		<underline language="IT" method="pen" text="soffisticheria &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="ostentatione" type="straight"/>
+		<underline language="IT" method="pen" text="dotti &amp; sauij" type="straight"/>
+		<underline language="IT" method="pen" text="certo soffistico" type="straight"/>
+		<underline language="IT" method="pen" text="l'accutezza del suo ingegno" type="straight"/>
+		<underline language="IT" method="pen" text="son'io, non sei tu" type="straight"/>
+		<underline language="IT" method="pen" text="io sono huomo" type="straight"/>
+		<underline language="IT" method="pen" text="nò nò, disse" type="straight"/>
+		<underline language="IT" method="pen" text="comincia da me" type="straight"/>
+		<underline language="IT" method="pen" text="arguirai bene" type="straight"/>
+		<underline language="IT" method="pen" text="quanto è" type="straight"/>
+		<underline language="IT" method="pen" text="tu vieni di là" type="straight"/>
+		<underline language="IT" method="pen" text="sustantie" type="straight"/>
+		<underline language="IT" method="pen" text="la vanagloria" type="straight"/>
+		<underline language="IT" method="pen" text="fine, sogni, &amp; vento" type="straight"/>
+		<underline language="IT" method="pen" text="VN'AVARO caduto" type="straight"/>
+		<underline language="IT" method="pen" text="non haueua à portare cosa" type="straight"/>
+		<underline language="IT" method="pen" text="compagnia da mè esempio, accioche" type="straight"/>
+		
+		<symbol name="Sun" place="left_margin"/>
+		
+		<symbol name="JC" place="intext"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Dioge -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- accon -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- osten -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ami -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- dol -->
+		
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- bene. A -->
+		
+    </annotation>
+</transcription>

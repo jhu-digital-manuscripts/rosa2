@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.117v.tif" pagination="[117v]" reader="John Dee" signature="[Pv[v]]"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="Capo di Croce" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Capo di Croce</marginalia_text>
+                    <location name="Santa Croce"/>
+                </position>
+            </language>
+            <translation>Santa Croce.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Giamaica" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Giamaica</marginalia_text>
+                    <location name="Jamaica"/>
+                </position>
+            </language>
+            <translation>Jamaica.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vn nembo con pioggia" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Note of rayne and showers.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="Capo di Croce" type="straight"/>
+        <underline language="IT" method="pen" text="doue da gl'Indiani fu raccolto amicheuolme[n]te" type="straight"/>
+        <underline language="IT" method="pen" text="Questi gli portarono molto" type="straight"/>
+        <underline language="IT" method="pen" text="fertilità, la quale hauea eccellenti porti di lega in lega, &amp; tutta la Costa piena di popolationi" type="straight"/>
+        <underline language="IT" method="pen" text="portando delle vettouaglie" type="straight"/>
+        <underline language="IT" method="pen" text="Christiani assai migliori stimate di quelle" type="straight"/>
+        <underline language="IT" method="pen" text="tutte l'altre Isole haueano" type="straight"/>
+        <underline language="IT" method="pen" text="Giamaica ogni dì sull'hora del vespro si apparecchiaua vn nembo con" type="straight"/>
+        <underline language="IT" method="pen" text="vn'hora, &amp; alcuna volta più" type="straight"/>
+        <underline language="IT" method="pen" text="attribuiua alle gran selue" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        
+    </annotation>
+    
+</transcription>

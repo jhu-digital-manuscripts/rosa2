@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.251v.tif" pagination="[244v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="perfectis genituris" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Perfectarum genitaru[m] ex conceptionibus exacta[e] periodus.</marginalia_text> <!-- FSF: I think it is exacta[e], which not necessarily makes the translation any easier -->
+                </position>
+            </language>
+            <translation>The exact period of perfect genitures from conceptions.</translation> <!--JG: Not sure, exacta doesn't match w/ periodus (not w/ anything else, for that matter-->
+        </marginalia>
+        
+        <marginalia anchor_text="perfectis genituris" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ratio vna atq[ue] altera contra trutina[m] hermetis</marginalia_text>
+                    <person name="Hermes"/>
+                </position>
+            </language>
+            <translation>One and another argument against Hermes' balance.</translation>
+        </marginalia>
+        
+    </annotation>
+</transcription>

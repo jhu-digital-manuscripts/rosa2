@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.009v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Ascanius Ænea[e] ex Creusa filius, sine liberis moriebatur sed Syluius Posthumus, qui post fratre[m] regnabat, etia[m] Ascanius dicebatur. Vide Seruium super 4. Æneidos
+                    </marginalia_text> 
+                    <person name="Ascanius"/>
+                    <person name="Aeneas"/>
+                    <person name="Creusa"/>
+                    <person name="Silvius Posthumus"/>
+                    <person name="Maurus Servius Honoratus"/>
+                    <book title="Commentary on the Aeneid of Vergil"/>
+                    <!-- NBW: http://www.perseus.tufts.edu/hopper/text?doc=Serv.%20A. - I think this is what Dee is talking about, can't find the exact reference -->
+                </position>
+            </language>
+            <translation>Ascanius, the son of Aeneas with Creusa, died without children but Sylvius Posthumus, who ruled after [his] brother, is even now called Ascanius. See Servius, above, on book 4 of the Aeneid.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="genuit[que] filium cui nomen erat Syluio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        1. Vide, an Ascanius habuerit filum, no[m]i[n]e Syluium. Vide supra, solutio. 
+                        2. Deinde vide de eius morte. tempore et genere mortij. 
+                        3. quas nept[e]s habuerat Lauinia.
+                    </marginalia_text>
+                    <person name="Ascanius"/>
+                    <person name="Silvius Posthumus"/>
+                    <person name="Lavinia"/>
+                </position>
+            </language>
+            <translation>1. Look, Ascanius has a son, named Sylvius. See solution above. 2. Then, see concerning his death: its time and nature. 3. What granddaughters Lavinia had.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="genuitq[ue] filium" type="double"/>
+        <underline language="LA" method="pen" text="vxorem ducens" type="straight"/>
+        <underline language="LA" method="pen" text="expulsus" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="intext"/>
+        
+        <graph book_orientation="90" method="pen" place="left_margin" type="genealogical_tree">
+            <node id="n1" person="Anchises">Anchises</node>
+            <node id="n2" person="Aeneas">Æneas</node>
+            <node id="n3" person="Creusa">Creusa</node>
+            <node id="n4" person="Ascanius">Ascanius</node>
+            <node id="n5" person="Lavinia">Lavinia</node>
+            <node id="n6" person="Sylvius Posthumus">Syluius Posthumus</node>
+            <node id="n7" person="Aeneas Silvius">Syliu[s]</node>
+            <node id="n8" person="Brutus of Troy">Brut[us]</node>
+            
+            <link from="n1" relationship="has_child" to="n2"/>
+            <link from="n2" relationship="has_child" to="n3 n5"/>
+            <link from="n3" relationship="has_child" to="n4"/>
+            <link from="n5" relationship="has_child" to="n6"/>
+            <link from="n6" relationship="has_child" to="n7"/>
+            <link from="n7" relationship="has_child" to="n8"/>
+            
+            <graph_text>
+                <note hand="English_secretary" internal_link="n4" language="LA">Sine liberis. vt Seruius dicit</note>
+                <person name="Maurus Servius Honoratus"/> 
+                <translation>Without children, as Servius says. </translation> 
+            </graph_text>
+            <graph_text>
+                <note hand="English_secretary" internal_link="n6" language="LA">qui et Ascanius dictus est vt Seruius sup[er] Vergilium docet.</note>
+                <person name="Ascanius"/>
+                <person name="Virgil"/>
+                <person name="Servius Maurus Honoratus"/>
+                <book title="Commentary on the Aeneid of Vergil"/>
+                <translation>Who is still (sometimes?) called Ascanius, as Servius shows in his commentary on Vergil.</translation> <!-- This last part, I think is the rendering of 'Servius super Virgilium' as the title of the work-->
+            </graph_text>
+        </graph>
+           
+    </annotation>
+</transcription>

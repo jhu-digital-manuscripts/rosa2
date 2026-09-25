@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.083v.tif" pagination="166" reader="John Dee" signature="[l 3[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="uideatur afferre, sed penè testis fidem. Quare in primis existimetur uenisse ad agendum ductus officio uel cognationis, uel amicitiae, maximéq[ue] si fieri poteri. Reipu.              aut alicuius certè non mediocris exempli." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Actor causa[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Petitioner of the cause.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="co[m]mendatio tacita" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Comme[n]datio tacita</marginalia_text>
+                </position>
+            </language>
+            <translation>Tacit approval.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Messalae prooemia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Meßala[e] Proo[e]m[ia]</marginalia_text>
+                    <person name="Marcus Valerius Messalla Corvinus"/>
+                </position>
+            </language>
+            <translation>Messalla's preludes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="eloquentia[m] simulatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Eloquentia[e] Simulatio olim fuit</marginalia_text>
+                </position>
+            </language>
+            <translation> Formerly there was simulation of eloquence.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Asinius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Asinius.</marginalia_text>
+                    <person name="Gaius Asinius Pollio"/>
+                </position>
+            </language>
+            <translation>Asinius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Corn, Celsus, quae sint extra litem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Corn[elius]. Celsus. taxat</marginalia_text>
+                    <person name="Aulus Cornelius Celsus"/>
+                </position>
+            </language>
+            <translation>Cornelius Celsus assesses.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ligatoris persona" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Litigatoris p[er]sona</marginalia_text>
+                </position>
+            </language>
+            <translation>The character of the litigant.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="suspicio sordium, aut odioru[m], aut ambitionis abfuerit" type="straight"/>
+        <underline language="LA" method="pen" text="Inde illa ueteru[m] circa occultandam eloquentia[m] simulatio" type="straight"/>
+        <underline language="LA" method="pen" text="laedi, nisi aduersa iudicum" type="straight"/>
+        <underline language="LA" method="pen" text="ad causam puto, quicquid ad dicentem pertinet: cu[m] sit" type="straight"/>
+        <underline language="LA" method="pen" text="sua" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

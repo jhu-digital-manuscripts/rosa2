@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.183v.tif" pagination="190" reader="Harvey" signature="[M7v]"/>	<!-- ABO 188left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						As behauiour; so vtterance familiar, /
+						not vulgar. (speedie, not hastie.)
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EL">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Ρητορων διδασκαλος.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A teacher of rhetoricians.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Apollonius, in sermone semper
+						Atticus: in scriptis, semper adamantinus. )
+					</marginalia_text>
+					<person name="Apollonius of Tyana"/>
+				</position>
+			</language>
+			<translation>Apollonius, always Athenian in his speech; always incorruptible in his writings.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Pilula[e] aura[e].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Golden pills.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Rudis est, qui non est elegans: qui affectare
+						| videtur, magis rudis. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>He, who is not elegant, is rude. He, who seems to aspire, is ruder.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						As acts; so termes woold be effectual.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						He that doth not allwais thinke upon it, To make his vtterance reddie, flowing, and
+						pithie without Circumlocution, or anie delaie: shall sumtime be slowe, coold, or sumway
+						harsh. Which ar vile faults in nimble, and fine vtterance: &amp; argu a 
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						simple conceit, or base gift of Nature.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Nothing delightes, or deserues commendation, that is not quick, apt, round, &amp; pithie
+						to the point: or seemes not to flowe of the owne accord. Naturally.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="douersi contentar" type="straight"/>
+		<underline language="IT" method="pen" text="Dio senza" type="straight"/>
+		<underline language="IT" method="pen" text="prender di quel, che" type="straight"/>
+		<underline language="IT" method="pen" text="&amp; si contenta" type="straight"/>
+		<underline language="IT" method="pen" text="dà Dio" type="straight"/>
+		<underline language="IT" method="pen" text="quello amico starne" type="straight"/>
+		<underline language="IT" method="pen" text="altro vino che quello, che presenta" type="straight"/>
+		<underline language="IT" method="pen" text="sommo Iddio" type="straight"/>
+		<underline language="IT" method="pen" text="quell' altra" type="straight"/>
+		<underline language="IT" method="pen" text="sà meglio quello, che ci fa dibisogno" type="straight"/>
+		<underline language="IT" method="pen" text="sappiamo noi medesimi" type="straight"/>
+		<underline language="IT" method="pen" text="La curiosità di" type="straight"/>
+		<underline language="IT" method="pen" text="non ci s'appartiene" type="straight"/>
+		<underline language="IT" method="pen" text="precipitarne talhora" type="straight"/>
+		<underline language="IT" method="pen" text="tendeua la ragna," type="straight"/>
+		<underline language="IT" method="pen" text="edifico" type="straight"/>
+		<underline language="IT" method="pen" text="si nascose" type="straight"/>
+		<underline language="IT" method="pen" text="per prenderla" type="straight"/>
+		<underline language="IT" method="pen" text="sdegnosamente" type="straight"/>
+		<underline language="IT" method="pen" text="oh huomo fallace" type="straight"/>
+		<underline language="IT" method="pen" text="edifichi tale città" type="straight"/>
+		<underline language="IT" method="pen" text="pochi habitatori" type="straight"/>
+		<underline language="IT" method="pen" text="abusioni, che corrompono" type="straight"/>
+		<underline language="IT" method="pen" text="sono dodici, cioè sauio senza" type="straight"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- hone -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- lam -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- al -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- cor -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- corrom -->
+		<mark method="pen" name="comma" place="right_margin"/> <!-- l'opere -->
+		
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- oltre -->
+		<mark method="pen" name="dot" place="intext"/> <!-- presenta, manco -->
+		<mark method="pen" name="dot" place="intext"/> <!-- dona, massime -->
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="edifico"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="edifico"/>
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="si nascose"/>
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- pochi habitatori -->
+		<mark method="pen" name="vertical_bar" place="intext"/> <!-- alongside marginal note, 'videtur' -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="sauio"/>
+    </annotation>
+</transcription>

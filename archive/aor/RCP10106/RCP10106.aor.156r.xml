@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.156r.tif" pagination="311" reader="John Dee" signature="u 4"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Procurator alicuius pecuniam petit ex foenore haereditario, potest incidere quaestio, an huic esse procuratorem liceat.              Finge nos, postquàm tractauimus, renmittere, uel etiam conuinci: quaeretur, an ei cuius nomine litigatur, procuratorem habendi sit ius." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Exemplum.</marginalia_text>
+                </position>
+            </language>
+            <translation>Example.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="In factis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In factis</marginalia_text>
+                </position>
+            </language>
+            <translation>About facts.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Numa" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Numa</marginalia_text>
+                    <person name="Numa Pompilius"/>
+                </position>
+            </language>
+            <translation>Numa.</translation>
+        </marginalia>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

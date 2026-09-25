@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.330v.tif" pagination="644" reader="Harvey" signature="[hhh4v]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Annibal" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        Annibal fugit victus.
+                    </marginalia_text>
+                <person name="Hannibal"/>
+                </position>
+            </language>
+            <translation>
+               Hannibal is defeated and flees. 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Annibal: dextro" type="straight"/>
+        <underline language="LA" method="pen" text="Annibali occurit" type="straight"/>
+        <underline language="LA" method="pen" text="cornu aduersus Annibale[m] pugnabatur" type="straight"/>
+        <underline language="LA" method="pen" text="momento temporis &amp; nauiu[m] uirtus &amp; usus rei maritimae terrore[m] omnem" type="straight"/>
+        <underline language="LA" method="pen" text="Eudamu[m] in alto multitudine nauiu[m] maximè Annibal, c[a]eteris omnibus longè praestante[m], urgebat: &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="circunuenisset, ni signo" type="straight"/>
+        <underline language="LA" method="pen" text="quo dispersam classem in unu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Annibal, quaeq[ue] circa" type="straight"/>
+        <underline language="LA" method="pen" text="capessunt fuga[m]: nec" type="straight"/>
+        <underline language="LA" method="pen" text="Eudamus hostes claudas mutilatasq[ue] naues apertis nauibus remulco" type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        
+    </annotation>
+</transcription>

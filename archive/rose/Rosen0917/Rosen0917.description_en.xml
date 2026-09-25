@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note rend="IDENTIFICATION">
+          <p>Rosenwald 917 (PQ1527.A1 1503), Library of Congress, Washington DC.  Printed by Guillaume Balsarin in Lyons in 1503. </p>
+          <p>Contains 
+                  <hi rend="italics">Roman de la Rose moralisé</hi>, written in prose by Jean Molinet in the last quarter of the 15th century.</p>
+        </note>
+        <note rend="BASIC INFORMATION">
+          <p>Paper, 253 x 183 mm, 153 leaves</p>
+        </note>
+        <note rend="MATERIAL">
+          <p><material>Paper</material>, in good condition but for a few small worm holes. Vertical chain lines. Watermarks on leaves include a blessing hand and a bunch of grapes (not in C. M. Briquet, <hi rend="italics">Les Filigranes</hi>).</p>
+        </note>
+        <note rend="QUIRES">
+          <p>
+            <list>
+              <head>Collation:</head>
+              <item n="I">
+                <locus from="A1" to="A3">A1-A3</locus>
+              </item>
+              <item n="II">
+                <locus from="B1" to="B6">B1-B6</locus>
+              </item>
+              <item n="III">
+                <locus from="C1" to="C6">C1-C6</locus>
+              </item>
+              <item n="IV">
+                <locus from="D1" to="D6">D1-D6</locus>
+              </item>
+              <item n="V">
+                <locus from="E1" to="E6">E1-E6</locus>
+              </item>
+              <item n="VI">
+                <locus from="F1" to="F6">F1-F6</locus>
+              </item>
+              <item n="VII">
+                <locus from="G1" to="G6">G1-G6</locus>
+              </item>
+              <item n="VIII">
+                <locus from="H1" to="H4">H1-H4</locus>
+              </item>
+              <item n="IX">
+                <locus from="I1" to="I6">I1-I6</locus>
+              </item>
+              <item n="X">
+                <locus from="K1" to="K6">K1-K6</locus>
+              </item>
+              <item n="XI">
+                <locus from="L1" to="L6">L1-L6</locus>
+              </item>
+              <item n="XII">
+                <locus from="M1" to="M6">M1-M6</locus>
+              </item>
+              <item n="XIII">
+                <locus from="N1" to="N6">N1-N6</locus>
+              </item>
+              <item n="XIV">
+                <locus from="O1" to="O4">O1-O4</locus>
+              </item>
+              <item n="XV">
+                <locus from="P1" to="P6">P1-P6</locus>
+              </item>
+              <item n="XVI">
+                <locus from="Q1" to="Q4">Q1-Q4</locus>
+              </item>
+              <item n="XVII">
+                <locus from="R1" to="R6">R1-R6</locus>
+              </item>
+              <item n="XVIII">
+                <locus from="S1" to="S4">S1-S4</locus>
+              </item>
+              <item n="XIX">
+                <locus from="T1" to="T6">T1-T6</locus>
+              </item>
+              <item n="XX">
+                <locus from="V1" to="V4">V1-V4</locus>
+              </item>
+              <item n="XXI">
+                <locus from="X1" to="X6">X1-X6</locus>
+              </item>
+              <item n="XXII">
+                <locus from="Y1" to="Y4">Y1-Y4</locus>
+              </item>
+              <item n="XXIII">
+                <locus from="Z1" to="Z6">Z1-Z6</locus>
+              </item>
+              <item n="XXIV">
+                <locus from="Et1" to="Et4">Et1-Et4</locus>
+              </item>
+              <item n="XXV">
+                <locus from="AA1" to="AA6">AA1-AA6</locus>
+              </item>
+              <item n="XXVI">
+                <locus from="BB1" to="BB4">BB1-BB4</locus>
+              </item>
+              <item n="XXVII">
+                <locus from="CC1" to="CC6">CC1-CC6</locus>
+              </item>
+              <item n="XXVIII">
+                <locus from="DD1" to="DD4">DD1-DD4</locus>
+              </item>
+              <item n="XXIX">
+                <locus from="EE1" to="EE6">EE1-EE6</locus>
+              </item>
+            </list>
+          </p>
+          <p>The book was bound into 29 gatherings of either 4 or 6 leaves; the first has only 3.</p>
+        </note>
+        <note rend="LAYOUT">
+          <p>Text block is 212 x 211 mm; two columns per folio, each is roughly 212 by 73 mm. 45-46 lines in a full text column, 15-16 lines left empty for illustrations. Printed signatures on lower right margin of first 4 leaves in a quire, the word "<hi rend="italics">feuillet</hi>" is printed on top margin of all versos, and in the top margin of rectos are printed numbers (<hi rend="italics">iiii.</hi>- <hi rend="italics">c.liii.</hi>). Signatures go from <hi rend="italics">a2</hi> in Quire I to <hi rend="italics">eeiiii</hi> in Quire XXIX; signatures begin on <locus>A2r</locus> after the title page on folio <locus>A1r</locus>; from <locus>A2r</locus> to <locus>A3v</locus> is a table (in the top margin of these leaves, "<hi rend="italics">tabula</hi>" is printed) giving chapter numbers ("<hi rend="italics">Le premier chapitre</hi>" - "<hi rend="italics">Le.cvii. chap.</hi>") with brief summaries; the table is followed by a prologue (with the title "<hi rend="italics">Le prologue</hi>") from <locus>B1r</locus> to <locus>B2v</locus>; the first chapter begins on <locus>B3r</locus>. Chapters have brief summaries (same as in the table) centered within column of text, followed by a woodcut illustration and the prose text (which begins with a heading centered within the column and a woodcut initial), and then there is a moralized interpretation (with the heading <hi rend="italics">Moralite</hi> centered within the column). New sections of text (including headings) also distinguished by <hi rend="italics">capitulum</hi> marks.</p>
+        </note>
+        <note rend="SCRIPT">
+          <p>Printed in lettre bâtarde. Title page ("<hi rend="italics">C'est le Roman de la Rose Moralise cler et net, Tra/n/slate de rime en prose Par vostre humble molinet</hi>"), the prologue title on B1r ("Le prologue"), and the printer's device on <locus>EE6v</locus> ("<hi rend="italics">Gloire soit a dieu Et prouffit es humains</hi>") are in large rotunda letters.</p>
+        </note>
+        <note rend="DECORATION">
+          <p>140 woodcut illustrations approx. 70 x 60 mm within text columns (larger author portrait woodcut and woodcut initial "L" with a head in profile on <locus>B1r</locus>); printer's device on <locus>EE6v</locus>. Woodcuts are often repeated in this book. The illustration on <locus>L6r</locus> has color added to it. </p>
+        </note>
+        <note rend="BINDING">
+          <p>Printed book rebound in 19th century by P. Thompson, an English bookbinder living in Paris (slip at beginning of book: "THOMPSON reliure"). Red morocco covers with blind tooled frame, 4 stamped motifs at edges of both covers, six raised bands on spine. </p>
+        </note>
+        <note rend="HISTORY">
+          <p>Bookplate states that it was a gift of Lessing J. Rosenwald to the Library of Congress. Above the bookplate is Rosenwald’s octagonal book label in red leather. Rosenwald purchased the book from the Philadelphia bookseller A.S.W. Rosenbach in 1944</p>
+        </note>
+        <note>
+          <p>Description by Beatrice Radden Keefe</p>
+        </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">printed book</note>
+          <note type="commonName">Rosenwald 917</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="153" unit="folios">153 folios</measure>
+            <dimensions>
+              <height unit="mm">300</height>
+              <width unit="mm">210</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">140</note>
+          <note type="material">paper</note>
+          <pubPlace>Lyons, France</pubPlace>
+          <date notAfter="1600" notBefore="1500">16th century</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Washington, DC</settlement>
+            <repository>Library of Congress</repository>
+            <idno>Rosenwald 917</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1" to="153">1-153</locus>
+              <title>Roman de la Rose moralisé</title>
+              <note type="textid">rosemoralisé</note>
+              <note type="folios">153</note>
+              <note type="illustrations">140</note>
+              <note type="linesPerColumn">45</note>
+              <note type="leavesPerGathering">6</note>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

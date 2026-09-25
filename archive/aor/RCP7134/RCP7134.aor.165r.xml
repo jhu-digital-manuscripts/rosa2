@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.165r.tif" pagination="158" reader="John Dee" signature="rr ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Si quis tame[n] mihi hanc coeli constitutione[m] pro urbis origine ostendat" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vrbis origo.</marginalia_text>
+                </position>
+            </language>
+            <translation>The origin of the city.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Si quis tame[n] mihi" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.053v.tif" pagination="86" reader="John Dee" signature="[ff.iii.[v]]"/>
+    <annotation> 
+        
+        <marginalia anchor_text="excursor &amp; emissarius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        excursor emissari[us]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Agent and emissary.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aures tuae crimen accipiunt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        aures accipere.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To come to ears.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="libellam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        libella
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A small silver coin.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Si enim innoce[n]tes existimari volumus: non solum nos abstinentes, sed etiam nostros comites praestare debemus.              Primum omnium opera tanta danda est, vt eos nobiscum ducamus, qui nostrae famae capitíque consulant" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nota
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Note.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="tecto recipiet nemo" type="straight"/>
+        <underline language="LA" method="pen" text="ob tua decreta, ob imperata, ob iudicata" type="straight"/>
+        <underline language="LA" method="pen" text="comites illi tui dilecti, manus era[n]t tuae: Praefecti, Scribae, Medici, Accensi, Aruspices, Praecones, manus" type="straight"/>
+        <underline language="LA" method="pen" text="maxime cognatione, affinitate, necessitudine aliqua attingebat: ita macimè" type="straight"/>
+        <underline language="LA" method="pen" text="putabatur" type="straight"/>
+        <underline language="LA" method="pen" text="quicquid ab horum quopiam captum est, id non modo tibi datum, sed tua manu numeratum iudicari necesse est. nam si ha[n]c defensionem probabitis" type="straight"/>
+        <underline language="LA" method="pen" text="Qua de re Iudices, vobis" type="straight"/>
+        <underline language="LA" method="pen" text="Si enim innoce[n]tes existimari volumus: non solum nos abstinentes, sed etiam nostros comites praestare debemus. Primum omnium opera tanta danda est, vt eos nobiscum ducamus, qui nostrae famae capitíque consulant" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">7</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">19</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">18</numeral>
+        
+        <drawing anchor_text="Si enim innoce[n]tes existimari volumus: non solum nos abstinentes, sed etiam nostros comites praestare debemus. Primum omnium opera tanta danda est, vt eos nobiscum ducamus, qui nostrae famae capitíque consulant" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        
+    </annotation>
+</transcription>

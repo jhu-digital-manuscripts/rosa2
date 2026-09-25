@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.217r.tif" pagination="210" reader="John Dee" signature="GG ij"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Figura[m] illa[m] sculpta[m] esse mihi asserebat, neglige[n]tia vero no[n] esse edita[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>He alleged to me that this figure was engraved, in truth it was not edited out of negligence.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="absidum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Absides</marginalia_text>
+                </position>
+            </language>
+            <translation>Absides.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vide sup[ra] folio 39.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:095" text="39"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See above, folio 39.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="absidum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>sup[er]ius memorato aph. 29.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:209" text="29"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>As memorated more above, aphorism 29.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="uim à natura eius contrahunt, cuius est absis, puram in abside" type="straight"/>
+        <underline language="LA" method="pen" text="Aux Lunae singulo mense reuoluitur" type="straight"/>
+        <underline language="LA" method="pen" text="planetas superiores co[n]stat" type="straight"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="Ex rotunda autem figura, habemus quo loco directio pertingat, naturam partium existentium in domibus, totius similitudinem coeli, reuolutionum concursus"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url>http://creativecommons.org/licenses/by/4.0/</url>
+        <logo>https://i.creativecommons.org/l/by/4.0/88x31.png</logo>
+    </license>
+    <dates>
+        <startDate>1583</startDate>
+        <endDate>1583</endDate>
+    </dates>
+    <texts>
+        <text id="1">
+            <language>la</language>
+            <title>Paratitla…Synopsis pandectarum iuris ciuilis (Basel, 1583)</title>
+            <textId>freigius</textId>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Paratitla…Synopsis pandectarum iuris ciuilis (Basel, 1583)</title>
+            <commonName>Johannes Freigius, Paratitla pandectarum (Basel, 1583)</commonName>
+            <dateLabel>1583</dateLabel>
+            <currentLocation>Princeton University Library</currentLocation>
+            <repository>Princeton University Library</repository>
+            <shelfmark>K6233 .F745 1583</shelfmark>
+            <author>
+              <name>Freigius, Joannes Thomas</name>
+              <id>http://www.isni.org/isni/0000000081207900</id>
+            </author>
+            <reader>
+              <name>Gabriel Harvey</name>
+              <id>http://www.isni.org/isni/0000000073570531</id>
+            </reader>
+            <website>https://archaeologyofreading.org/bibliography/Harvey-corpus/Freigius</website>
+            <detail>[2], 44 leaves; 23 cm. (4to)</detail>
+            <note>Already digitized.</note>
+        </bibliography>
+    </bibliographies>
+</book>

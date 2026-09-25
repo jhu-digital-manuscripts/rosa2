@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.037r.tif" pagination="37" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="quei letterati" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>quei letterati</marginalia_text>
+                </position>
+            </language>
+            <translation>Those writers.</translation>
+        </marginalia>
+          
+        <marginalia anchor_text="anzi ch'egli era di contrario parere a loro, il qual credea, che più tosto sarebbono giudicati Principi magnanimi, &amp; generosi, per hauer tentato di saper le grandezze, &amp; i secreti dell'vniuerso" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Verè.</marginalia_text>
+                </position>
+            </language>
+            <translation>True.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="M M D" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>2500</marginalia_text>  <!-- DO: unknown triangle symbol here -->
+                </position>
+            </language>
+        </marginalia>
+        
+
+        <underline language="IT" method="pen" text="non chiedeua altro premio, se non di quel, che trouasse" type="straight"/>
+        <underline language="IT" method="pen" text="quei letterati le diceuano" type="straight"/>
+        <underline language="IT" method="pen" text="anzi ch'egli era di contrario parere a loro, il qual credea, che più tosto sarebbono giudicati Principi magnanimi, &amp; generosi, per hauer tentato di saper le grandezze, &amp; i secreti dell'vniuerso" type="straight"/>
+        <underline language="IT" method="pen" text="M M D scudi" type="straight"/>
+        <underline language="IT" method="pen" text="di accettarlo con patto" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin" text="anzi ch'egli era di contrario parere a loro, il qual credea, che più tosto sarebbono giudicati Principi magnanimi, &amp; generosi, per hauer tentato di saper le grandezze, &amp; i secreti dell'vniuerso"/>
+         
+    </annotation> 
+</transcription>

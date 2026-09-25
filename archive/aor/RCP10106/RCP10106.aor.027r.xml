@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.027r.tif" pagination="53" reader="John Dee" signature="d 3"/>
+    <annotation>
+        
+        <marginalia anchor_text="Pythagoras" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pythagoras</marginalia_text>
+                    <person name="Pythagoras"/>
+                </position>
+            </language>
+            <translation>Pythagoras.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Socrates" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Socrates.</marginalia_text>
+                    <person name="Socrates"/>
+                </position>
+            </language>
+            <translation>Socrates.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Lycurgus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lycurgus</marginalia_text>
+                    <person name="Lycurgus of Sparta"/>
+                </position>
+            </language>
+            <translation>Lycurgus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="autor eminentißimus" type="straight"/>
+        
+    </annotation>
+</transcription>

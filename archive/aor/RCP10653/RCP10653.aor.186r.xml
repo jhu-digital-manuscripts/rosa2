@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.186r.tif" pagination="363" reader="John Dee" signature="Hh ij"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        mortuo Rege Sithrico, eius p[ri]ore marito vel ista alta est ab illa Eadgitha.
+                    </marginalia_text> 
+                    <person name="Sitric Cáech"/>
+                    <person name="Edith of Polesworth"/>
+                </position>
+            </language>
+            <translation>
+                Either King Sitric, her former spouse, had died, or this is a different Edith from that one.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Comes Hugo" type="straight"/>
+        <underline language="LA" method="pen" text="quem rex Aethelstanus, auunculus" type="straight"/>
+        <underline language="LA" method="pen" text="Otho Romanum adeptus imperium" type="straight"/>
+        <underline language="LA" method="pen" text="Eadgiuam" type="straight"/>
+        <underline language="LA" method="pen" text="Aethelstanus, pro anima fratris sui Eadvvini, quem prauo vsus consilio in mari fecerat submergi" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/> <!-- quem prauo -->
+        <mark method="pen" name="bracket" place="intext"/> <!-- consilio in -->
+        
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.093r.tif" pagination="9" reader="Harvey" signature="[A5r]"/>	<!-- ABO 97right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Obserua semper peritissima scientiaru[m]: subtiliss[im]a
+						Experimentorum: potentissima actionum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Always observe the most expert examples of science, the most subtle examples
+				of experimentation, and the most potent examples of action.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Quorsum tot libri, et tanta studia, si non plus
+						possunt doctores, quàm
+						illiterati?
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				What is the point so many books and so many studies, if teachers can do no more than illiterate men?
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						salsè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Witty.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Medice, cura teipsum. Ante omnia, Nosce teipsu[m].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Doctor, heal thyself. Before everything, know thyself.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Maximus mundi Theurgus, et Panurgus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The greatest theurge and panurge of the world.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Qui se habet, nil perdidit: Ausus est dicere Seneca.
+					</marginalia_text>
+					<person name="Seneca"/>
+					<X-ref book_title="Epistolae ad Lucilium" language="LA" person="Seneca" text="Qui se habet, nil perdidit"/>
+				</position>
+			</language>
+			<translation>
+				Whoever has himself can lose nothing. Seneca dared to speak.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Etiam potentissima, potenti uiro impotentiora.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Even the most powerful things are less powerful than the powerful man.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Totum in se habet, qui se habet: Ausus est dicere
+						Cassiodorus. Quod petis, intùs habes.
+					</marginalia_text>
+					<person name="Cassiodorus"/>
+				</position>
+			</language>
+			<translation>
+				Whoever has himself has everything in himself. Cassiodorus dared to speak.
+				Whatever you desire, you shall have within. 
+			</translation>
+		</marginalia>
+		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.093r_0001" marginalia_continues_from="Ha2.092v_0001" marginalia_from_transcription="Ha2.092v.xml">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						[[A4v]: Apollonius Tyaneus et ipsis Atticis loquebatur elegantiùs:] et ipsis A[e]gyptijs operabatur peritiùs: et omnibus Magis
+						potentiora Miracula perpetrabat.
+							<!-- Continued from facing page, right margin, Ha2.092v -->
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				[[A4v]: Apollonius Tyaneus spoke more elegantly even than the Greeks themselves,] and worked more skillfully than the Egyptians themselves, and carried out miracles
+				more powerful than all the wise men.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Hominum scripta, errantes planeta[e]: Artiu[m], et Virtutum impressiones, fixa[e] stella[e].
+					</marginalia_text>
+					<emphasis method="pen" text="Hominum scripta" type="straight"/>
+					<emphasis method="pen" text="Artiu[m]" type="straight"/>
+					<emphasis method="pen" text="Virtutum" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The writings of men are wandering planes; the impressions of the Arts and Virtues are fixed stars. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Florescat ars: virescat virtus: splendescat vir. Nunq[uam] languidus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Art flourishes, virtue prospers, man begins to shine. Never languid. 
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="con tutta la terra, nè anco col mare" type="straight"/>
+		<underline language="IT" method="pen" text="cosa con le parole" type="straight"/>
+		<underline language="IT" method="pen" text="doue i fatti repugnano" type="straight"/>
+		<underline language="IT" method="pen" text="Epitetto filosofo" type="straight"/>
+		<underline language="IT" method="pen" text="prender moglie" type="straight"/>
+		<underline language="IT" method="pen" text="vna delle tue figliuole" type="straight"/>
+		<underline language="IT" method="pen" text="sorti di persecutioni principali" type="straight"/>
+		<underline language="IT" method="pen" text="la robba" type="straight"/>
+		<underline language="IT" method="pen" text="il corpo" type="straight"/>
+		<underline language="IT" method="pen" text="l'anima" type="straight"/>
+		<underline language="IT" method="pen" text="da gli Auuocati" type="straight"/>
+		<underline language="IT" method="pen" text="da' Medici" type="straight"/>
+		<underline language="IT" method="pen" text="l'anima da' Teologi" type="straight"/>
+		<underline language="IT" method="pen" text="Auuocati" type="straight"/>
+		<underline language="IT" method="pen" text="Medici che" type="straight"/>
+		<underline language="IT" method="pen" text="Teologi, che sieno" type="straight"/>
+		<underline language="IT" method="pen" text="L'esperienza," type="straight"/>
+		<underline language="IT" method="pen" text="la prudenza" type="straight"/>
+		<underline language="IT" method="pen" text="la esperienza" type="straight"/>
+		<underline language="IT" method="pen" text="la prudenza hà piu credito" type="straight"/>
+		<underline language="IT" method="pen" text="Fortuna hà manco luogo" type="straight"/>
+		<underline language="IT" method="pen" text="i giouani sono semplici" type="straight"/>
+		
+		<symbol name="Sun" place="left_margin"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--di-->
+		
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="vna delle tue figliuole"/>
+		<mark method="pen" name="dot" place="intext"/> <!--Auuocati, il-->
+		<mark method="pen" name="dot" place="intext"/> <!--Medici, &-->
+		<mark method="pen" name="dot" place="intext"/> <!--piatiscano, pochi-->
+		<mark method="pen" name="dot" place="intext"/> <!--medicina, &-->
+		<mark method="pen" name="plus_sign" place="intext"/>
+
+    </annotation>
+</transcription>

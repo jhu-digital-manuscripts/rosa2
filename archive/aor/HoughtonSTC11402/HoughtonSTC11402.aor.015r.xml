@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.015r.tif" reader="Harvey" signature="[Aviii[r]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>the same/</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="couered the syde of his hooste" type="straight"/>
+        <underline language="EN" method="pen" text="with suche as he hadde before taken prysoners" type="straight"/>
+        <underline language="EN" method="pen" text="laden with pillage &amp; spoyle" type="straight"/>
+        <underline language="EN" method="pen" text="his prisoners and captyues on both sides his army" type="straight"/>
+        <underline language="EN" method="pen" text="vaunced his banners towarde" type="straight"/>
+        <underline language="EN" method="pen" text="citie of Thebes" type="straight"/>
+        <underline language="EN" method="pen" text="left the strayghtes" type="straight"/>
+        <underline language="EN" method="pen" text="to defende theyr" type="straight"/>
+        
+        <mark language="EN" method="pen" name="hash" place="head" text="couered the syde of his hooste"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="to defende theyr"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="citie of Thebes"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="with suche as he hadde before taken prysoners"/>
+        <mark method="pen" name="dot" place="intext"/> <!--prysoners, for-->
+        <mark method="pen" name="bracket" place="intext"/> <!--, for-->
+        <mark method="pen" name="dot" place="intext"/> <!--fyght, wherfore-->
+        <mark method="pen" name="dot" place="intext"/> <!--army, and-->
+        <mark method="pen" name="dot" place="intext"/> <!--Thebes, whereof-->
+        <mark method="pen" name="dot" place="intext"/> <!--citie, and-->
+        
+        
+    </annotation>
+</transcription>

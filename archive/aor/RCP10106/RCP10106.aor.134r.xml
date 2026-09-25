@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.134r.tif" pagination="267" reader="John Dee"/> 
+    <annotation>
+       
+        <marginalia anchor_text="Ego uel hoc uno malo sic era[m] afflictus, ut me iam nulla fortuna posset efficere felicem." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quintiliani vxor.</marginalia_text>
+                    <person name="Quintilian"/>
+                </position>
+            </language>
+            <translation>Quintilian's wife.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sed dißimulare quî possum, quid illi gratiae in uultu, quid incunditatis in sermone, quos ingenij igniculos, quam praestantiam placidae, &amp;              (quod scio uix posse credi) tantu[m] altae mentis ostenderit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pueri laus.</marginalia_text>
+                </position>
+            </language>
+            <translation>In praise of the boy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iuro per mala mea, per infelice[m] conscientiam, per illos manes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Iuramenta.</marginalia_text>
+                </position>
+            </language>
+            <translation>Oaths.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="celerius occidere festinata[m] maturitatem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Celerius occidit festinata maturitas</marginalia_text>
+                </position>
+            </language>
+            <translation>Early ripeness means a quicker fall.</translation>
+        </marginalia>
+       
+        <underline language="LA" method="pen" text="sum ambitiosus" type="straight"/>
+        <underline language="LA" method="pen" text="celerius occidere festinata[m] maturitatem" type="straight"/>
+        
+       <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

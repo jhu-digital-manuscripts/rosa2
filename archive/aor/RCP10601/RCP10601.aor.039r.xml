@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.039r.tif" pagination="77" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="cogendarum potentiarum separataru[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Potentiaru[m] separatar[um] coactio.</marginalia_text>
+                </position>
+            </language>
+            <translation>The collection of separated powers.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="Armoricae Britaniae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Armorica Brittania</marginalia_text>
+                    <location name="Armorica"/>
+                </position>
+            </language>
+            <translation>Armorica.</translation>  
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="iam 350 à diluuio" type="straight"/>
+        <underline language="LA" method="pen" text="maiore cogendarum potentiarum separataru[m] uirtute in reip." type="straight"/>
+        <underline language="LA" method="pen" text="fuerint, quàm in Ethruria. Caeterum" type="straight"/>
+        <underline language="LA" method="pen" text="Armoricae Britanniae" type="straight"/>
+        <underline language="LA" method="pen" text="erepti anteactorum seculoru[m] mysteria reuelarens" type="straight"/> 
+        <underline language="LA" method="pen" text="mundum'q[ue] reformarent" type="straight"/>
+        
+    </annotation>
+</transcription>

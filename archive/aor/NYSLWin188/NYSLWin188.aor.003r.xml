@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.003r.tif" pagination="3" reader="John Dee" signature="Aiij"/> 
+    <annotation>
+        <marginalia anchor_text="Aeris" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aer</marginalia_text>
+                </position>
+            </language>
+            <translation>Air.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Chaos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Chaos</marginalia_text>
+                </position>
+            </language>
+            <translation>Chaos [primordial matter].</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ignis</marginalia_text>
+                </position>
+            </language>
+            <translation>Fire.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Himmel" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Coelum</marginalia_text>
+                </position>
+            </language>
+            <translation>Heaven.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="das Corpus" type="straight"/>
+        <underline language="LA" method="pen" text="Corpus Aereum" type="straight"/>
+        <underline language="LA" method="pen" text="Chaos" type="straight"/>
+        <underline id="00000019:u0001" language="DE" method="pen" text="nicht" type="straight"/>
+        <underline language="DE" method="pen" text="Compact" type="double"/>
+        <underline id="00000019:u0002" language="DE" method="pen" text="nicht ein" type="straight"/>
+        <underline language="DE" method="pen" text="nicht" type="straight"/>
+        <underline language="DE" method="pen" text="gleich einem Rauch" type="double"/>
+        
+        <drawing book_orientation="0" method="pen" place="tail" type="manicule"/>
+        
+        <physical_link>
+            <marginal_annotation idref="NYSLWin188:00000019:u0001"/>
+            <marginal_annotation idref="NYSLWin188:00000019:u0002"/>
+            
+            <relation from="NYSLWin188:00000019:u0001" to="NYSLWin188:00000019:u0002" type="undirected"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

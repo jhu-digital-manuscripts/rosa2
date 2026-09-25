@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.003r.tif" reader="Harvey" signature="Bi[r]"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>uide Lib.I.h, ii[ij].</marginalia_text> 
+                    <internal_ref text="uide Lib.I.h">
+                        <target ref="Newberry27495:case_712_c27495_093" text="[H.iiii[r]]"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See book I, [signature] hiiii.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="soundrye" type="straight"/>
+        <underline language="LA" method="pen" text="Yf thou bee vnlearned" type="straight"/>
+        <underline language="LA" method="pen" text="thou dooest wislye" type="straight"/>
+        <underline language="LA" method="pen" text="but yf thou bee learned, unwyselye" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        
+    </annotation>
+</transcription>

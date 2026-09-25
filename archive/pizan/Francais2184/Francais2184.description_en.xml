@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+   <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+   
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <title>Le dit de la pastoure</title>
+         
+         </titleStmt>
+         
+         <publicationStmt>
+            
+            <distributor>MSEL</distributor>
+         
+         </publicationStmt>
+         
+         <notesStmt>
+            
+            <note rend="IDENTIFICATION">
+               
+               <p>Français 2184, Bibliothéque national de France, Paris. Paris, 1403. </p>
+            
+            </note>
+            
+            <note rend="BASIC INFORMATION">
+               
+               <p>Parchment, 236 x 164 mm, 45 folios.</p>
+            
+            </note>
+            
+            <note rend="MATERIAL">
+               
+               <p> The yellowed <material>parchment</material>, especially brown and curled at the beginning and end of the manuscript, has obviously suffered the effects of humidity. The first and last folios are very dirty. The sheets, rather unequal, were not trimmed during binding. The <hi rend="italics">vis-à-vis</hi> rule is respected. </p>
+                  
+            </note>
+            
+            <note rend="QUIRES">
+               
+               <list>
+                  
+                  <head>Collation:</head>
+                  
+                  <item n="I">
+                     
+                     <locus from="1" to="8">1-8</locus>
+                  
+                  </item>
+                  
+                  <item n="II">
+                     
+                     <locus from="9" to="16">9-16</locus>
+                  
+                  </item>
+                  
+                  <item n="III">
+                     
+                     <locus from="17" to="24">17-24</locus>
+                  
+                  </item>
+                  
+                  <item n="IV">
+                     
+                     <locus from="25" to="32">25-32</locus>
+                  
+                  </item>
+                  
+                  <item n="V">
+                     
+                     <locus from="34" to="41">34-41</locus>
+                     
+                  </item>
+                  
+                  <item n="VI">
+                     
+                     <locus>33</locus>, <locus from="42" to="47">42-47</locus>
+                     
+                  </item>
+                                   
+               </list>
+                
+               <p>(I) + 45 + II + (I). Modern foliation in ink on the top right corner is accurate. </p>
+            
+            </note>
+            
+            <note rend="LAYOUT">
+               
+               <p>There are thin light grey ruling marks on the folios. There is one column with 26 (sometimes 25) lines.</p>
+
+            
+            </note>
+            
+            <note rend="SCRIPT">
+               
+               <p>The text is written in dark brown ink. The red ink for the only rubric in the text has faded. The text seems to have been the result of one scribal hand (Hand R) in an irregular semicursive minuscule script. There are corrections done by a different hand (Hand X) done by scrapping the parchment and using a darker brown ink. There are some marginal annotations and a <hi rend="italics">nota bene</hi> done by hand X.</p>
+            
+            </note>
+            
+            <note rend="DECORATION">
+               
+               <p>The ornamental decoration of the manuscript was made by one artist whose style was described as "aux brims de fantaisie". There is one large foliated initial in folio <locus>1</locus>, a M in blue over a gold leave background (vignette) with very imaginative foliate extenders that wrap above the initial and partially frames the text below. There are many smaller initials in gold leaf over a red or blue background.</p>
+                                                             
+            </note>
+            
+            <note rend="BINDING">
+               
+               <p>This volume was binded in red moroccan leather with the royal coat of arms within a triplet fillet embossed in gold. On the spine there are five sets of two intertwined Ls surmounted by a crown and a star; the title <hi rend="italics">"LE DIT DE LA PASTOUR"</hi>. On top and bottom of the spine, there are alternating <hi rend="italics">fleur-de-lys</hi> and palmettes.</p>
+            </note>
+            
+            <note rend="HISTORY">
+               
+               <p>The manuscript can be dated to 1403.</p>
+               <p>Provenance: Cobert, its shelfmark can be seen on f.<locus>1</locus>, 5239. His collection entered the royal library in 1732. There is an additional shelfmark on the same folio, 7993 (Regius).</p>
+                  
+            </note>
+            
+            <note rend="TEXT">
+               
+               <p>It only contains <hi rend="italics">Le dit de la pastoure</hi>.</p>
+               
+               
+            
+            </note>
+            
+            <note rend="AUTHOR">
+              
+               <p>
+*The information given here comes from direct observation and from Ouy, Gilbert, Christine Reno and Inès Villela-Petit.<hi rend="italics"> Album Christine de Pizan </hi>. Turnhout: Brepols, 2012. </p>
+<p> Description by Mónica Ann Walker Vadillo</p>
+            
+            </note>
+         
+         </notesStmt>
+         
+         <sourceDesc>
+            
+            <bibl>
+               
+               <note type="format">manuscript</note>
+               
+               <note type="commonName">Français 2184</note>
+               
+               <title>Le dit de la pastoure</title>
+
+               
+               <extent>
+                  
+                  <measure quantity="45" unit="folios">45 folios</measure>
+                  
+                  <dimensions>
+                     
+                     <height unit="mm">236</height>
+                     
+                     <width unit="mm">164</width>
+                  
+                  </dimensions>
+               
+               </extent>
+               
+               <note type="illustrations">0</note>
+                        
+               
+               
+               
+               <note type="material">parchment</note>
+               
+               <pubPlace>Paris, France</pubPlace>
+     
+               <date notAfter="1500" notBefore="1400">15th century</date>
+            
+            </bibl>
+            
+            <msDesc>
+               
+               <msIdentifier>
+                  
+                  <settlement>Paris</settlement>
+                  
+                  <repository>Bibliothèque nationale de France</repository>
+                  
+                  <idno>Français 2184</idno>
+               
+               </msIdentifier>
+            
+               <msContents>
+                  <msItem n="1">
+                     <locus from="1r" to="45v">1r-45v</locus>
+                     <title>Le dit de la pastoure</title>
+                     <note type="textid">Le dit de la pastoure</note>
+                     <note type="folios">45</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">26</note>
+                     <note type="leavesPerGathering">8</note>
+                     <note type="columnsPerFolio">1</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         
+         </sourceDesc>
+      
+      </fileDesc>
+   
+   </teiHeader>
+   
+   <text>
+      
+      <body>
+         
+         <div> </div>
+      
+      </body>
+   
+   </text>
+
+</TEI>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.146v.tif" pagination="292" reader="John Dee" signature="[t 2[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Ciceronis in Pletorium Fonteij" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro fonteio</marginalia_text>
+                    <book title="Pro Fonteio"/>
+                </position>
+            </language>
+            <translation>Pro Fonteio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="matalepsin" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Metalepsis</marginalia_text>
+                </position>
+            </language>
+            <translation>Metalepsis.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nominum fictio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nomi[num] fictio</marginalia_text>
+                </position>
+            </language>
+            <translation>Inventing names.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Manlium Suram" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Manlius Sura</marginalia_text>
+                    <person name="Manlius Sura"/>
+                </position>
+            </language>
+            <translation>Manlius Sura.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="satagere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Satagere.</marginalia_text>
+                </position>
+            </language>
+            <translation>Overacting.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in Verrem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In Verrem.</marginalia_text>
+                    <book title="In Verrem"/>
+                </position>
+            </language>
+            <translation>In Verrem.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Cecinna" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro cecinna</marginalia_text>
+                    <book title="Pro Caecina"/>
+                </position>
+            </language>
+            <translation>Pro Caecina.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="heminaria" type="straight"/>
+        <underline language="LA" method="pen" text="agendo discursantem, salientem, manus iactantem, togam deijciente[m], &amp; repone[n]tem, non" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.035r.tif" pagination="69" reader="John Dee" signature="e 3"/>
+    <annotation>
+
+        <marginalia anchor_text="dedocendi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dedocere</marginalia_text>
+                </position>
+            </language>
+            <translation>Unlearning.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Timotheum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Timotheus</marginalia_text>
+                    <person name="Timotheus"/>
+                </position>
+            </language>
+            <translation>Timotheus</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Phidias" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Phidias.</marginalia_text>
+                    <person name="Phidias"/>
+                </position>
+            </language>
+            <translation>Phidias.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Similitudo.</marginalia_text>
+                </position>
+            </language>
+            <translation>Similarity.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quanto sit melius optimis imbui, quanta'q[ue] in eleue[n]dis, quae semel insederint, uitijs difficultas consequatur, cum geminatum onus succedentes" type="straight"/>
+        <underline language="LA" method="pen" text="submittentem se ad mensuram discentis, ut uelocißimus quisq[ue], si fortè iter" type="straight"/> 
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+       
+        <numeral place="right_margin">.1.</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3.</numeral>
+        <numeral place="right_margin">17.</numeral>
+     
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.216r.tif" pagination="411" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="in sinu atque in delitiis quidam optimi viri viperam illam venenatam ac pestifera[m] habere" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        in sinu delitijs habere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To hug, to destroy.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="deformat" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        deformare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To defame.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="periculum, caedémque portendunt" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        portendere periculu[m] ca[e]dem
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To foreshadow danger and death.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Discordia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Discord.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Odium
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Hatred.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="dolorem fuit luctuosum, ad rationem Reipublicae gloriosum" type="straight"/>
+        <underline language="LA" method="pen" text="Etiámne in sinu atque in delitiis quidam optimi viri viperam illam venenatam ac pestifera[m] habere potuerunt?" type="straight"/>
+        <underline language="LA" method="pen" text="an ille demens, &amp; iam pridem ad poenam exitiúmque praeceps" type="straight"/>
+        <underline language="LA" method="pen" text="quorum &amp; mentes &amp; res sunt perditae, longéque à communi salutate disiunctae" type="straight"/>
+        <underline language="LA" method="pen" text="Vobis ô clarissimi atque optimi ciues, &amp; vestrae saluti consule[n]dum" type="straight"/>
+        <underline language="LA" method="pen" text="metum si deorum monitis non duceremur, tamen ipsi nostro sensu, coniecturáque raperemur" type="straight"/>
+        <underline language="LA" method="pen" text="haud obscurum odium, atque id insitum penitus, &amp; inustum animis hominum amplissimorum" type="straight"/>
+        <underline language="LA" method="pen" text="dissident principes, captatur occasio" type="straight"/>
+        <underline language="LA" method="pen" text="ista serpens" type="straight"/>
+        <underline language="LA" method="pen" text="compressa atque illisa morietur. Monent" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">19</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">8</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">8</numeral>
+        <numeral place="right_margin">3</numeral>
+        
+        <drawing anchor_text="Discordia" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="Odium" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

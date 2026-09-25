@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.409v.tif" pagination="270" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="[concursum esse] factum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>co[n]cursus est factus</marginalia_text>
+                </position>
+            </language>
+            <translation>An attack is made.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aruspicem quum vidisset" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Contra ortu[m] Aruspicina[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Against the origin of the soothsayer.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Rex Prusias" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Prusia[e]. Rex.</marginalia_text>
+                    <person name="Prusias I of Bithynia"/>
+                </position>
+            </language>
+            <translation>King Prusias.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Caesar" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ca[e]sar.</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <translation>Julius Caesar.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pompeio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pompeius.</marginalia_text>
+                    <person name="Pompey"/>
+                </position>
+            </language>
+            <translation>Pompey.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Maricu[m] bellum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Marsicu[m] Bellum</marginalia_text>
+                </position>
+            </language>
+            <translation>Marsian War.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ostenta" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Contra ostenta.</marginalia_text>
+                </position>
+            </language>
+            <translation>Against portents</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="praedictio mali tum probatur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pra[e]dictio qua[n]do p[ro]bat[ur]</marginalia_text>
+                </position>
+            </language>
+            <translation>When a prediction is proven.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="co[n]iectura" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Coniectura.</marginalia_text>
+                </position>
+            </language>
+            <translation>Conjecture.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="coniectura inuestigari videntur, anceps reperitur oratio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Coniectura affert ancipite[m] orationem.</marginalia_text>
+                </position>
+            </language>
+            <translation>He alleged the ambiguous speech by conjencture.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="galli victi silere solerent" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Galli victi silent.</marginalia_text>
+                </position>
+            </language>
+            <translation>Cocks are silent when defeated.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cur ante lucem galli canant" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cur ante luce[m] galli ca[n]te[n]t</marginalia_text>
+                </position>
+            </language>
+            <translation>Why cocks crow before daylight.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="conseruant, hunc fontem" type="straight"/>
+        <underline language="LA" method="pen" text="credat exaratum" type="straight"/>
+        <underline language="LA" method="pen" text="insipientior" type="straight"/>
+        <underline language="LA" method="pen" text="Quota enim quaeque res euneit praedicta" type="straight"/>
+        <underline language="LA" method="pen" text="à deis" type="straight"/>
+        <underline language="LA" method="pen" text="russis" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Unidentified" place="left_margin"/>
+        <symbol name="Unidentified" place="left_margin"/>
+        <symbol name="Unidentified" place="left_margin"/>
+        <symbol name="Unidentified" place="left_margin"/>
+        <symbol name="Unidentified" place="left_margin"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <drawing anchor_text="Coniectura" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

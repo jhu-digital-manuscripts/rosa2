@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.280r.tif" pagination="73" reader="John Dee" signature="I.iiij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Edgarus" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Edgarus.</marginalia_text>
+                    <person name="Edgar I of England"/>
+                </position>
+            </language>
+            <translation>Edgar.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Northu[m]b" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ham</marginalia_text>
+                </position>
+            </language>
+            <translation>ham.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Northu[m]b" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ram</marginalia_text>
+                </position>
+            </language>
+            <translation>ram.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="Parliamentu[m] tenuit apud" type="straight"/>
+        <underline language="LA" method="pen" text="priorum temporum annalibus" type="straight"/>
+        <underline language="LA" method="pen" text="Northu[m]b" type="straight"/>
+        <underline language="LA" method="pen" text="ius suum in superius dominium regni" type="straight"/>
+        <underline language="LA" method="pen" text="fecerat omnia monasteria" type="straight"/>
+        <underline language="LA" method="pen" text="Scotiae" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Walliae" type="straight"/>
+        <underline language="LA" method="pen" text="ad dignoscendum quale ius posset sibi competere in hac parte" type="straight"/>
+        <underline language="LA" method="pen" text="Mariani Scoti" type="straight"/>
+        <underline language="LA" method="pen" text="Gul. Malmesburiensis" type="straight"/>
+        <underline language="LA" method="pen" text="Rogeri de Houeden" type="straight"/>
+        <underline language="LA" method="pen" text="Henrici de Huntingdone" type="straight"/>
+        <underline language="LA" method="pen" text="Radulphi de diceto" type="straight"/>
+        <underline language="LA" method="pen" text="Edgarus" type="straight"/>
+        <underline id="RCP10552-2:569:u0001" language="LA" method="pen" text="Alpini regem Scotorum, qui iurauit ei fidelitatem" type="straight"/>
+        <underline language="LA" method="pen" text="Daciae Canutus" type="straight"/>
+        <underline language="LA" method="pen" text="perdomuit" type="straight"/>
+        <underline language="LA" method="pen" text="Angliae" type="straight"/>
+        <underline language="LA" method="pen" text="Scotiae, Daci[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="Norwagiae" type="straight"/>
+        <underline language="LA" method="pen" text="regnum Scotiae dedit Malcolino filio regis Cambrorum de se tenendum" type="straight"/>
+        <underline language="LA" method="pen" text="Rogerus Houede[m]" type="straight"/>
+        <underline language="LA" method="pen" text="chronicis S. Albani" type="straight"/>
+        <underline language="LA" method="pen" text="chartis regu[m] Scotiae" type="straight"/>
+        <underline language="LA" method="pen" text="se ignorare quod talis superioritas regi Angli[a]e competeret, nec" type="straight"/>
+        
+        
+        <mark method="pen" name="bracket" place="intext"/>  <!-- ciuitatis. Eo -->
+        
+        <mark method="pen" name="bracket" place="intext"/>   <!-- regibus. Conuenientibus -->
+        
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        
+        
+        <errata amendedtext="Norhu[m]" copytext="Northu[m]b" language="LA"/>
+        
+        <errata amendedtext="Nor" copytext="Northu[m]b" language="LA"/>
+        
+        <errata amendedtext="Cumbrorum" copytext="Cambrorum" language="LA"/>
+        
+        <errata amendedtext="Cumbrorum" copytext="Cambrorum" language="LA"/>
+        
+        <errata amendedtext="Nor" copytext="Northu[m]b" language="LA"/>
+        
+    </annotation>
+    
+</transcription>

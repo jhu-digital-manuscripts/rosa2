@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.067r.tif" reader="Harvey" signature="[Hiv[r]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="with feyned succour" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>preytence, and se[m]blannce of [s.e..] succour.</marginalia_text> <!--JG: Unsure abt one word--> <!--KS: first letter seems like an 'f' to me-->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A pore helpe.</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="small power, shoulde" type="straight"/>
+        <underline language="EN" method="pen" text="out by night on" type="straight"/>
+        <underline language="EN" method="pen" text="retourne ageyne" type="straight"/>
+        <underline language="EN" method="pen" text="campe that way, frome" type="straight"/>
+        <underline language="EN" method="pen" text="whens theyr ennemies myghte playnely see theym" type="straight"/>
+        <underline language="EN" method="pen" text="newe succour" type="straight"/>
+        <underline language="EN" method="pen" text="with feyned succour" type="straight"/>
+        <underline language="EN" method="pen" text="with [the] ayd, which" type="straight"/>
+        <underline language="EN" method="pen" text="the playne champyon" type="straight"/>
+        <underline language="EN" method="pen" text="by night from" type="straight"/>
+        <underline language="EN" method="pen" text="priuily conducted forthe" type="straight"/>
+        <underline language="EN" method="pen" text="them on ech syde the" type="straight"/>
+        <underline language="EN" method="pen" text="them on both sydes, and" type="straight"/>
+        <underline language="EN" method="pen" text="wherin the fyres were" type="straight"/>
+        <underline language="EN" method="pen" text="make a shewe, as there" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!--campe, he-->
+        
+        <mark method="pen" name="horizontal_bar" place="tail"/>
+        
+    </annotation>
+</transcription>

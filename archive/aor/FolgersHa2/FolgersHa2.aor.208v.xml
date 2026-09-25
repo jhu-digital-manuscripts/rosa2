@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.208v.tif" pagination="[240]" reader="Harvey" signature="[P8v]"/>	<!-- ABO 213left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Omnibus Britannia[e] bonis Angelis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>For all good British angels.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Omnia intelligentia[e], discursui, memoria[e]; praxi
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						deniq[ue] inimica; pra[e]ter Vnum Hoc.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>All matter of intelligence, discourse, and memory; finally, with an opposing praxis, beyond this one.</translation> 
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="FR">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Le plus valeureux homme
+						de son temps.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The bravest man of his time.</translation>
+		</marginalia>
+		
+		<marginalia date="1590" hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Principi iuuentutis: Regi uirilitatis.
+						Imperatori senectutis.
+						Anno 1590.
+					</marginalia_text> <!--JG: What about the numbers below this note? I'm not sure what to do with them--> <!-- CG: Definitely looks like another hand. Don't know what to make of them. -->
+				</position>
+			</language>
+			<translation>For the prince of youth: for the king of maturity. For the emperor of old age. In the year 1590.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Mercurius sublimatus: vel veteris Suada[e] noua [medella] <!--JG: Please check original, difficult to read--><!-- CG: Instead of 'modella', looks like it could also be 'medulla'. --> <!-- CG: Definitely unclear, even after consulting the original. I'm not sure about the grammar, if it's an adjective or a noun. -->
+						Bibliotheca; Apollonius, et Gandinus: cum arcanis Weccheri;
+					</marginalia_text>
+					<person name="Mercury"/>
+					<person name="Marcantonio Gandino"/>
+					<person name="Apollonius of Tyana"/> 
+					<book title="De secretis libri XVII"/>
+					<emphasis method="pen" text="Mercurius sublimatus" type="straight"/>
+					<emphasis method="pen" text="veteris Suada[e] noua [modella]" type="straight"/>
+					<emphasis method="pen" text="Bibliotheca" type="straight"/>
+					<emphasis method="pen" text="Gandinus" type="straight"/>
+					<emphasis method="pen" text="arcanis Weccheri" type="straight"/>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						Onomastico Theophrasti.
+					</marginalia_text>
+					<person name="Theophrastus"/>
+					<emphasis method="pen" text="Onomastico Theophrasti" type="straight"/>
+				</position>
+			</language>
+			<translation>Mercury elevated: or the new model library of ancient persuasion. 
+				Appolonius and Gandino, with the secrets of Johannes Jacob Wecker; Theoprastus' 'Onomastics'.</translation> <!--JG: Does this refer to Theoprastus' work 'On letters'?--> <!-- CG: I'm really not sure. Might need to ask a specialist. -->
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Omnia tandem vnum: et vnum omnia: aut certè omnia nihil.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>In the end, all are one, and one is all: but surely all is nothing.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						No Singular emploiment, or excellent practis can intende Writing.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="ad alcuna arte" type="straight"/>
+		<underline language="IT" method="pen" text="qualche naturale dote" type="straight"/>
+		<underline language="IT" method="pen" text="atto, &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="preposto al gouerno" type="straight"/>
+		<underline language="IT" method="pen" text="intelligente &amp; accorto" type="straight"/>
+		<underline language="IT" method="pen" text="questa vita" type="straight"/>
+		<underline language="IT" method="pen" text="è vn Mare" type="straight"/>
+		<underline language="IT" method="pen" text="dalle tempeste" type="straight"/>
+		<underline language="IT" method="pen" text="far mestieri" type="straight"/>
+		<underline language="IT" method="pen" text="grande arte à reggere il vario corso della nauigatione" type="straight"/>
+		<underline language="IT" method="pen" text="veneranda consideratione" type="straight"/>	
+		<underline language="IT" method="pen" text="contrapesare le" type="straight"/>
+		<underline language="IT" method="pen" text="che le auuersità" type="straight"/>
+		<underline language="IT" method="pen" text="piu vtili à gli" type="straight"/>
+		<underline language="IT" method="pen" text="sono le prosperità" type="straight"/>
+		<underline language="IT" method="pen" text="auuerse gli assottigliano, gli esercitano" type="straight"/>
+		<underline language="IT" method="pen" text="prospere per" type="straight"/>
+		<underline language="IT" method="pen" text="corrompono gli animi" type="straight"/>
+		<underline language="LA" method="pen" text="nimium fouet" type="straight"/>
+		<underline language="LA" method="pen" text="stultum facit" type="straight"/>
+		
+		<symbol name="SS" place="left_margin"/>
+		
+		<symbol name="SS" place="intext"/>
+		<symbol name="SS" place="intext"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+			
+		<mark method="pen" name="dash" place="right_margin"/> <!--huomi-->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="qualche naturale dote"/>
+		<mark method="pen" name="dot" place="intext"/> <!--humana, douere-->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="intelligente"/>
+		<mark method="pen" name="dot" place="intext"/> <!--venti, hor-->
+		<mark method="pen" name="plus_sign" place="intext"/>
+		<mark method="pen" name="quotation_mark" place="intext"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="che le auuersità"/>
+		<mark method="pen" name="dot" place="intext"/> <!--animi, per-->
+		<mark method="pen" name="dot" place="intext"/> <!--improuidi, &-->
+		
+		<mark method="pen" name="plus_sign" place="tail"/>
+		
+    </annotation>
+</transcription>

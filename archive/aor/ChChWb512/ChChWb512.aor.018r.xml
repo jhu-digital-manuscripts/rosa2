@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.018r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="trigi[n]ta giga[n]tibus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        31 gigantes.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>31 giants.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="i[n] portu quo applicuerat" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Tautenes.
+                    </marginalia_text>
+                    <location name="Totnes"/>
+                </position>
+            </language>
+            <translation>Totnes.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Brutus i[n] portu quo applicuerat" type="straight"/>
+        <underline language="LA" method="pen" text="trigi[n]ta giga[n]tibus" type="straight"/>
+        <underline language="LA" method="pen" text="tres fregit costas" type="straight"/>
+        <underline language="LA" method="pen" text="lamgoemagot.i[d est].saltus" type="straight"/>
+        <underline language="LA" method="pen" text="ciuitate[m] Brutus" type="straight"/>
+        <underline language="LA" method="pen" text="Vlso regno" type="straight"/>
+        <underline language="LA" method="pen" text="ternouatu[m]" type="straight"/>
+        
+    </annotation>
+</transcription>

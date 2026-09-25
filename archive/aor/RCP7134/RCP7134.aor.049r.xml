@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.049r.tif" pagination="43" reader="John Dee" signature="L iij"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Contra vetere[m] et co[mmun]em ratione[m] partiendi domos:</marginalia_text>
+                </position>
+            </language>
+            <translation>Against the traditional and common computation of dividing the houses.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Nam lic[et] cor coeli sit maxi[ma]e fortudinis, tamen decima domus suu[m] semp[e]r significatu[m]</marginalia_text> 
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>obtinere debet.</marginalia_text>
+                </position>
+            </language>
+            <translation>For although midheaven is of the greatest valor, nevertheless the tenth house always ought to obtain its designation.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="ascendente medietate; in descendente; verum quod inductio fuerat posterioris" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Triplex co[n]sideratio directionis</marginalia_text>
+                </position>
+            </language>
+            <translation>The threefold consideration of the direction..</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="maxime autem in occidentali parte" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cur magis in occidentali parte?</marginalia_text> 
+                </position>
+            </language>
+            <translation>Why more in the western part?</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="In particularibus autem Firmico indulget, ob bonorum autorum inopiam: uerum tantum ille abest à ueritate, quantum ab errore Ptolemaeus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ptolom[a]ei co[m]me[n]datio supra Firmicum...</marginalia_text>
+                    <person name="Ptolemy"/>
+                    <person name="Julius Firmicus Maternus"/>
+                </position>
+            </language>
+            <translation>The excellence of Ptolemy above Firmicus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="In particularibus autem Firmico indulget, ob bonorum autorum inopiam: uerum tantum ille abest à ueritate, quantum ab errore Ptolemaeus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Maiorem commendationem metetur Ptolom[a]e[us] maiorem et firmicus.</marginalia_text>
+                    <person name="Ptolemy"/>
+                    <person name="Julius Firmicus Maternus"/>
+                </position>
+            </language>
+            <translation>Ptolemy deserves greater recommendation, greater even than Firmicus.</translation>  
+        </marginalia>
+        
+        <marginalia hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cum de anno sumus certi, qua r[ati]o[n]e scrutemur anni partem in qua eventus sese sit ostensurus.</marginalia_text> 
+                </position>
+            </language>
+            <translation>As we are certain about the year, in which manner we explore the part of the year in which the event may be about to show itself.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="fortitudinis" type="double"/>
+        <underline language="LA" method="pen" text="alia significati" type="straight"/>
+        <underline language="LA" method="pen" text="ascendente medietate" type="straight"/>
+        <underline language="LA" method="pen" text="In descendente" type="straight"/>
+        <underline language="LA" method="pen" text="uerum" type="straight"/>
+        <underline language="LA" method="pen" text="inductio fuerat posterioris loci qui propinquior cordi coeli esset ad antecedente[m], in successione signorum" type="straight"/>
+        <underline language="LA" method="pen" text="inuentum, radios Planetarum dirigi, atque directo loco occurrere, maxime autem in occidentali parte" type="straight"/>
+        <underline language="LA" method="pen" text="firmandum geniturae tempus" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral language="LA" place="intext" text="ascendete medietate">1</numeral>
+        <numeral language="LA" place="intext" text="in descendente">2</numeral>
+        <numeral language="LA" place="intext" text="uerum">3</numeral>
+        
+    </annotation>
+</transcription>

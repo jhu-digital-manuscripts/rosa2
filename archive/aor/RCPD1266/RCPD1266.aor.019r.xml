@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.019r.tif" pagination="23" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Philastrius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Philastrius.</marginalia_text>
+                    <person name="Philastrius"/>
+                </position>
+            </language>
+            <translation>Philastrius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="librum illum Mercurij Trismegisti subdititium esse apparet" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mercurij Libru[m] esse subdititius</marginalia_text>
+                    <person name="Hermes Trismegistus"/>
+                </position>
+            </language>
+            <translation>That Mercury's book was substituted.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="impietas huius Trismegisti" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Trismegisti Impietas.</marginalia_text>
+                    <person name="Hermes Trismegistus"/>
+                </position>
+            </language>
+            <translation>The impiety of Trismegistus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="prouinciam" type="straight"/> <!-- FSF: what I would do in such cases is: [[Cel]tarum prouinciam -->
+        <underline language="LA" method="pen" text="qui vanus potius quàm magnus iudicandus" type="straight"/>
+        <underline language="LA" method="pen" text="Hermem fallacissimum illum, qui haec" type="straight"/>
+        <underline language="LA" method="pen" text="secundum septem stellas, dixerint hominum generationem consistere, vt ille ipse delirans hoc definiuit. haec" type="straight"/>
+        <underline language="LA" method="pen" text="Mercurij scripta" type="straight"/>
+        <underline language="LA" method="pen" text="quaedam" type="double"/>
+        <underline language="LA" method="pen" text="prodidit Suidas" type="straight"/>
+        <underline language="LA" method="pen" text="Nam Sibyllaru[m]" type="double"/>
+        <underline language="LA" method="pen" text="Phidiae" type="double"/>
+        <underline language="LA" method="pen" text="illum Mercurij Trismegisti subdititium" type="straight"/>
+        <underline language="LA" method="pen" text="in quo multa dicuntur, quae nec" type="straight"/>
+        <underline language="LA" method="pen" text="Ilerdam" type="double"/>
+        <underline language="LA" method="pen" text="qui titulis &amp; librorum nominibus decepti" type="straight"/>
+        <underline language="LA" method="pen" text="antiquitatis quadam veneratione" type="straight"/>
+        <underline language="LA" method="pen" text="Augustini alia fuisse nota Hermetis huius Trismegisti scripta apparet, ex capite" type="straight"/>
+        <underline language="LA" method="pen" text="quibus impietas huius" type="straight"/>
+        <underline language="LA" method="pen" text="quo de harmonia &amp; reciprocatione dierum istorum agit" type="straight"/>
+        <underline language="LA" method="pen" text="quam non ab Ægyptiis, sed" type="straight"/>
+        <underline language="LA" method="pen" text="essent hebdomadibus, &amp; septenis dierum" type="straight"/>
+        <underline language="LA" method="pen" text="sicuti tempora iam inde ab orbe condito distinxerat Deus, coepit paulatim" type="straight"/>
+        <underline language="LA" method="pen" text="illos singulos septe[m] interpositos dies, septimam ferè partem aetatis suae" type="straight"/>
+        <underline language="LA" method="pen" text="perda[n]t vacando" type="double"/>
+        <underline language="LA" method="pen" text="non agendo" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark method="pen" name="comma" place="intext"/>  <!-- vergentia non -->
+        
+        <errata amendedtext="vrgentia" copytext="vergentia" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

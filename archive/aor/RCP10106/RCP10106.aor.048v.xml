@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.048v.tif" pagination="96" reader="John Dee"/>
+    <annotation>
+         
+        <marginalia anchor_text="Ariston" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ariston</marginalia_text>
+                    <person name="Aristo of Ceos"/>
+                </position>
+            </language>
+            <translation>Aristo.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Theodôrus Gadareus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Theodôus</marginalia_text>
+                    <person name="Theodorus of Gadara"/>
+                </position>
+            </language>
+            <translation>Theodorus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cornelius Celsus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cornelius Celsus</marginalia_text>
+                    <person name="Aulus Cornelius Celsus"/>
+                </position>
+            </language>
+            <translation>Cornelius Celsus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Gorgia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Gorgias</marginalia_text>
+                    <person name="Gorgias"/>
+                </position>
+            </language>
+            <translation>Gorgias.</translation>
+        </marginalia>
+        
+    </annotation>
+</transcription>

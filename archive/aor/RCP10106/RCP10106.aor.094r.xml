@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.094r.tif" pagination="187" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="obscuranda ueritas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Obscura[n]da veritas</marginalia_text>
+                </position>
+            </language>
+            <translation>The truth is to be obscured.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="res contra nos erit: quo loco no[n]ulli praetereundam narrationem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cum res co[n]tra nos erit q[uo]m[od]o narra[n]d[i]</marginalia_text>
+                </position>
+            </language>
+            <translation>Since just as the case is to be narrated against us.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="silentio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Silentiu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Silence</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="confiteri" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Confessio</marginalia_text>
+                </position>
+            </language>
+            <translation>Confession.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="poena stupratori" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Stupratoris po[e]na</marginalia_text>
+                </position>
+            </language>
+            <translation>The penalty for a rapist.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mitigabimus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Rei mitigatio</marginalia_text>
+                </position>
+            </language>
+            <translation>The mitigation of the case.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="obscuranda" type="straight"/>
+        <underline language="LA" method="pen" text="nisi prorsus totam causam omnino non" type="straight"/>
+        <underline language="LA" method="pen" text="Quaedam enim quasi no[n] narrantes mitigabimus" type="straight"/>
+        <underline language="LA" method="pen" text="Interdum quasi damnemus" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <numeral place="right_margin">1</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">4.</numeral>
+        <numeral place="right_margin">5.</numeral>
+        
+    </annotation>
+</transcription>

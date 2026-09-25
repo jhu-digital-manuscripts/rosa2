@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.092r.tif" pagination="85" reader="John Dee" signature="Y"/>
+    <annotation>
+        
+        <marginalia anchor_text="filios" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vnde de filiabus co[n]ijciemus?</marginalia_text>
+                </position>
+            </language>
+            <translation>From where do we conclude about the daughters?</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="fratres" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vnde ia[m] colligemus sororum significatores?</marginalia_text>
+                </position>
+            </language>
+            <translation>From where do we collect the significators of the sisters now?</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="rugula generalis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Regula[e] pulchr[a]e.</marginalia_text>  
+                </position>
+            </language>
+            <translation>Beautiful rules.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Id est, cu[m] de aliq[u]a significatio[n]e iudiciu[m] ferem[us] / debem[us] eius rei significatore[m]
+                    co[m]parare cu[m] suo dispositore et alijs planetis bonis et malis [etc].</marginalia_text> 
+                </position>
+            </language>
+            <translation>That is, when we consider a judgement about any signification, we ought to compare the significator of that matter
+            with its dispositor and with other planets, good and evil, et cetera.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Elegans Analogia.</marginalia_text> 
+                </position>
+            </language>
+            <translation>An elegant analogy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dominator" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>significator.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Significator.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Regula indicandi.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Rule of indication.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in tempore illo" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>in aliquo tempore</marginalia_text> 
+                </position>
+            </language>
+            <translation>In any time.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Vide initiu[m] capitis</marginalia_text> 
+                </position>
+            </language>
+            <translation>See the beginning of the chapter.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="loco opposita luminariu[m], &amp; domini ascendentis nequaqua[m]" type="straight"/>
+        <underline language="LA" method="pen" text="filios" type="straight"/>
+        <underline language="LA" method="pen" text="dant fratres" type="straight"/>
+        <underline language="LA" method="pen" text="non ab ep quòd fuit in genitura" type="straight"/>
+        <underline language="LA" method="pen" text="in tempore illo" type="straight"/>
+        
+        <mark method="pen" name="section_sign" place="intext"/>
+        <mark method="pen" name="section_sign" place="intext"/>
+        <mark method="pen" name="section_sign" place="intext"/>
+        
+        <graph book_orientation="0" method="pen" place="tail" type="ramus_tree">
+            <node id="n1">Significatum fructuli</node>
+            <node anchor_text="domini secundu[m] substantiam" id="n2">D[omi]n[u]s secundu[m] sub[stanti]am</node>
+            <node anchor_text="domini agri" id="n3">D[omi]n[u]s agri</node>
+            <node anchor_text="domini secundu[m] accidens" id="n4">D[omi]n[u]s secundu[m] acc[ide]ns</node>
+            <node anchor_text="colonum" id="n5">Colonus</node> 
+            <link from="n1" to="n2"/>
+            <link from="n1" to="n3"/>
+            <link from="n1" to="n4"/>
+            <link from="n1" to="n5"/>
+            <graph_text>
+            <translation>The signification of the little fruit 
+            The lord according to substance
+            The lord of the field
+            The lord according to circumstance
+            Farmer</translation>
+            </graph_text>
+        </graph>
+        
+    </annotation>
+</transcription>

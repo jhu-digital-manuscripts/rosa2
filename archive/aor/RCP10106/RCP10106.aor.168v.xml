@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.168v.tif" pagination="336" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ἀντίστασις</marginalia_text>
+                </position>
+            </language>
+            <translation>Counter-plea.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Gracchus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Gracchus</marginalia_text>
+                    <person name="Tiberius Gracchus"/>
+                </position>
+            </language>
+            <translation>Gracchus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="μετάστασις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>μετάστασις</marginalia_text>
+                </position>
+            </language>
+            <translation>Shifting of blame.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="excusatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Excusatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Excuse.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Status qua[n]titatis</marginalia_text>
+                </position>
+            </language>
+            <translation>State of quantity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ποιότης ποσότης " hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ποιότης καὶ ποσότης </marginalia_text>
+                </position>
+            </language>
+            <translation>Quality and quantity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Qu. Ligario" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro ligario</marginalia_text>
+                    <book title="Pro Ligario"/>
+                </position>
+            </language>
+            <translation>Pro Ligario.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="deprecatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Deprecatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Deprecation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="haec tria in uita praecedere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tria in deprecatione</marginalia_text>
+                </position>
+            </language>
+            <translation>Three kinds of deprecation.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="aut ignorantiae" type="straight"/>
+        <underline language="LA" method="pen" text="aut neceßitatis" type="straight"/>
+        <underline language="LA" method="pen" text="aut ualetudine. Fortuna quoq[ue] saepe substituitur culpae" type="straight"/>
+        <underline language="LA" method="pen" text="sed bono animo" type="straight"/>
+        <underline language="LA" method="pen" text="an minui culpa" type="straight"/>
+        <underline language="LA" method="pen" text="est, haec tria in uita praecedere, si innocens, si bene meritus" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/> <!-- M.B. Tripunctus with 'tail' -->
+        
+        <numeral place="left_margin">1</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">5</numeral>
+        <numeral place="left_margin">6</numeral>
+        
+        </annotation>
+</transcription>

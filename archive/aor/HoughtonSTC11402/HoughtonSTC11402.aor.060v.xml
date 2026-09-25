@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.060v.tif" reader="Harvey" signature="[Gv[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>A tragical nuntio, [the] vnwelcummist man on [the] stage.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="messanger" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A resolute dispatch of an vnlucky messenger. Dispatch a post with good tidings: Ill tidings may go fast enowgh on foote.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="a barbarouse alyen in" type="straight"/>
+        <underline language="EN" method="pen" text="Sertorius" type="straight"/>
+        <underline language="EN" method="pen" text="Herculeius was slayne" type="straight"/>
+        <underline language="EN" method="pen" text="slewe hym with his dagger" type="straight"/>
+        <underline language="EN" method="pen" text="borne these tydynges any" type="straight"/>
+        <underline language="EN" method="pen" text="Alcibiades" type="straight"/>
+        <underline language="EN" method="pen" text="a messanger" type="straight"/>
+        <underline language="EN" method="pen" text="make great haste" type="straight"/>
+        <underline language="EN" method="pen" text="with sad" type="straight"/>
+        <underline language="EN" method="pen" text="and heuy chere" type="straight"/>
+        <underline language="EN" method="pen" text="nauye was assaylled" type="straight"/>
+        <underline language="EN" method="pen" text="of Phannabasus" type="straight"/>
+        <underline language="EN" method="pen" text="the kynges lieutenaunt" type="straight"/>
+        <underline language="EN" method="pen" text="thinges close, bothe from" type="straight"/>
+        <underline language="EN" method="pen" text="Anniball takynge" type="straight"/>
+        <underline language="EN" method="pen" text="forsaken of.iii.thousande carpenters" type="straight"/>
+        <underline language="EN" method="pen" text="self had sent" type="straight"/>
+        <underline language="EN" method="pen" text="also certayn home" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="slewe hym with his dagger"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="and heuy chere"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--lieutenaunt, he-->
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="tail" text="also certayn home"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.425v.tif" reader="Harvey" signature="[AAA3v]"/>
+    <annotation>
+
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text> 
+                        Nunc demùm maxima[e] res ingrandescentis Roma[e].
+                    </marginalia_text>
+                    <location name="Rome"/>
+                </position>
+            </language>
+            <translation>
+                Now finally the greatest affairs of Rome in its phase of expansion.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text> 
+                        Micipsa, Masanissa[e] filius. Vide Sallustij bellu[m] Iugurthinu[m].
+                    </marginalia_text>
+                <person name="Micipsa"/> <!-- LS, I added this -->
+                <person name="Masanissa"/>
+                <person name="Sallust"/>
+                <book title="Jugurthine War"/>
+                </position>
+            </language>
+            <translation>
+                Micipsa: Masanissa’s son. See 'Jugurthine War' by Sallust.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="O' urbem uenalem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text> 
+                        Jugurtha. Ô urbem uenalem.
+                    </marginalia_text>
+                    <person name="Jugurtha"/>
+                    <emphasis method="pen" text="Jugurtha" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                Jugurtha. Alas, a corrupt city.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        Mirificè mihi placet Liuius: sed cum Sallustio, Ca[e]sare, Velleio, Tacito, Suetonio: vt etiam cum Halicarnaseo, Polybio, Plutarcho, 
+                        Dione, Herodiano. Quos sa[e]pè sensi prudentissimos, suauissimosq[ue] historicos Romanos. Nec ulla[e] adhuc Historia[e] pares, exceptis
+                        Hebra[e]orum diuinis.  
+                    </marginalia_text>
+                <person name="Livy"/>
+                <person name="Sallust"/>
+                <person name="Julius Caesar"/>
+                <person name="Marcus Velleius Paterculus"/>
+                <person name="Tacitus"/>
+                <person name="Suetonius"/>
+                <person name="Dionysius of Halicarnassus"/>
+                <person name="Polybius"/>
+                <person name="Plutarch"/>
+                <person name="Cassius Dio"/>
+                <person name="Herodian"/> 
+                </position>
+            </language>
+            <translation>
+                Livy pleases me wonderfully, but together with Sallust, Caesar, Velleius, Tacitus, Suetonius, and also with Dionysius of Halicarnassus, 
+                Polybius, Plutarch, Cassius Dio, Herodian. For these I have come to regard as the most judicious and attractive Roman historians. And so far no
+                histories whatsoever are of the same calibre, except for the holy ones of the Hebrews.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Cleopatra" type="straight"/>
+        <underline language="LA" method="pen" text="Demetrium uirum suum" type="straight"/>
+        <underline language="LA" method="pen" text="Seleucum filium, multum" type="straight"/>
+        <underline language="LA" method="pen" text="à se, iniussu suo diadema" type="straight"/>
+        <underline language="LA" method="pen" text="interemit" type="straight"/>
+        <underline language="LA" method="pen" text="Micipsa Numidarum rex mortuus" type="straight"/>
+        <underline language="LA" method="pen" text="tribus filijs" type="straight"/>
+        <underline language="LA" method="pen" text="Adherbali" type="straight"/>
+        <underline language="LA" method="pen" text="Hyempsali" type="straight"/>
+        <underline language="LA" method="pen" text="Iugurthae fratris" type="straight"/>
+        <underline language="LA" method="pen" text="Iugurthae" type="straight"/>
+        <underline language="LA" method="pen" text="Hyempsalem fratrem bello petijt" type="straight"/>
+        <underline language="LA" method="pen" text="quem uictim interemit" type="straight"/>
+        <underline language="LA" method="pen" text="Adherbalem regno expulit" type="straight"/>
+        <underline language="LA" method="pen" text="à senatu restitutus" type="straight"/>
+        <underline language="LA" method="pen" text="Cato Porcius COS" type="straight"/>
+        <underline language="LA" method="pen" text="malè aduersus Scordiscos" type="straight"/>
+        <underline language="LA" method="pen" text="Lustrum" type="straight"/>
+        <underline language="LA" method="pen" text="censoribus conditum" type="straight"/>
+        <underline language="LA" method="pen" text="Censa sunt ciuiu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="CCCXCIIII millia" type="straight"/>
+        <underline language="LA" method="pen" text="Vestales" type="straight"/>
+        <underline language="LA" method="pen" text="incesti damnatae" type="straight"/>
+        <underline language="LA" method="pen" text="Cimbrigens uaga" type="straight"/>
+        <underline language="LA" method="pen" text="populabundi in Illyricum" type="straight"/>
+        <underline language="LA" method="pen" text="Liuius Drufus COS." type="straight"/>
+        <underline language="LA" method="pen" text="feliciter" type="straight"/>
+        <underline language="LA" method="pen" text="magnumq[ue] honorem" type="straight"/>
+        <underline language="LA" method="pen" text="Adherbal bello petitus à Iugurtha" type="straight"/>
+        <underline language="LA" method="pen" text="contra denunciationem senatus ab eo occisus" type="straight"/>
+        <underline language="LA" method="pen" text="Iugurthae bellum" type="straight"/>
+        <underline language="LA" method="pen" text="Calpurnius Bestia" type="straight"/>
+        <underline language="LA" method="pen" text="pacem cum Iugurtha" type="straight"/>
+        <underline language="LA" method="pen" text="multos pecunia in senatu corrupisse" type="straight"/>
+        <underline language="LA" method="pen" text="Romam uenit" type="straight"/>
+        <underline language="LA" method="pen" text="regulum quendam nomine" type="straight"/>
+        <underline language="LA" method="pen" text="interfectum" type="straight"/>
+        <underline language="LA" method="pen" text="Romae cu[m] periclitaretur" type="straight"/>
+        <underline language="LA" method="pen" text="causam capitis dicere iussus" type="straight"/>
+        <underline language="LA" method="pen" text="clàm profugit" type="straight"/>
+        <underline language="LA" method="pen" text="discedens urbe" type="straight"/>
+        <underline language="LA" method="pen" text="O urbem uenalem" type="straight"/>
+        <underline language="LA" method="pen" text="citò perituram, si emptorem inuenerit" type="straight"/>
+        <underline language="LA" method="pen" text="pacemq[ue] etiam multum" type="straight"/>
+        <underline language="LA" method="pen" text="esse seruandam" type="straight"/>
+        <underline language="LA" method="pen" text="Caecilius Metellus COS." type="straight"/>
+        <underline language="LA" method="pen" text="duobus praelijs" type="straight"/>
+        <underline language="LA" method="pen" text="Iugurtha[m] fudit" type="straight"/>
+        <underline language="LA" method="pen" text="uniuersam" type="straight"/>
+        <underline language="LA" method="pen" text="Iugurtha pulsus à C. Mario ex Numidia" type="straight"/>
+        <underline language="LA" method="pen" text="auxilio Bocchi Maurorum regis adiutus" type="straight"/>
+
+        <symbol language="LA" name="SS" place="left_margin" text="Nunc demum maxima[e] res ingrandescentis Roma[e]"/>
+        <symbol name="JC" place="intext"/>
+        
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Lustrum"/>
+        <mark method="pen" name="dot" place="intext"/> <!--uenerunt-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="clàm profugit"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- adiecit, -->
+        <mark method="pen" name="dot" place="intext"/> <!-- est, -->
+        
+    </annotation>
+</transcription>

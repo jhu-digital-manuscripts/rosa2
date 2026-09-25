@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.101v.tif" pagination="202" reader="John Dee" signature="[n 5[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="propter quae partitione non semper est utendum." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quapropter no[n] semp[er] partitione utendu[m] est</marginalia_text>
+                </position>
+            </language>
+            <translation>Why a partition is not always used.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mouendum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Movere.</marginalia_text>
+                </position>
+            </language>
+            <translation>To move.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="iucunda partitio est: ut quid quaq[ue] de re dicturi sumus, ordine appareat. At si unum crimen uarie defenderimus, superuacua" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Si vnu[m] crime[n] defe[n]derimus sup[er]vacua partitio est.</marginalia_text> 
+                </position>
+            </language>
+            <translation>If we defend one crime, a parition is superfluous.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Non enim solum oratoris est docere, sed plus eloquentia circa mouendum ualet" type="straight"/>
+        <underline language="LA" method="pen" text="trans mare fuisse" type="straight"/>
+        
+        <numeral place="left_margin">.1.</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">3</numeral>
+        
+    </annotation>
+</transcription>

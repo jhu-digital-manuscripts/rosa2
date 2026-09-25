@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonDL45.214r.tif" pagination="427" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia anchor_text="De fidelibus amicis tempore incendii probandis." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Aggregandu[m] ad Experimenta fidelium amicorum.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To be added to the experiences of faithful friends. 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="De fidelibus amicis tempore incendii probandis." type="straight"/>
+        <underline language="LA" method="pen" text="Amici fideles." type="straight"/>
+        <underline language="LA" method="pen" text="qui subita praesentia tam homines, quàm thesauros" type="straight"/>
+        
+        <mark method="pen" name="X_sign" place="intext"/>
+        
+    </annotation>
+</transcription>

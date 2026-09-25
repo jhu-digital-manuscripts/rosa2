@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+   <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+   
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <title>Le Livre de la Cité des Dames</title>
+         
+         </titleStmt>
+         
+         <publicationStmt>
+            
+            <distributor>MSEL</distributor>
+         
+         </publicationStmt>
+         
+         <notesStmt>
+            
+            <note rend="IDENTIFICATION">
+               
+               <p>Arsenal 2686, Bibliothéque de l'Arsenal, Paris. Paris, 1405. </p>
+            
+            </note>
+            
+            <note rend="BASIC INFORMATION">
+               
+               <p>Parchment, 273 x 201 mm, 140 folios.</p>
+            
+            </note>
+            
+            <note rend="MATERIAL">
+               
+               <p> The <material>parchment</material> is rather thick and yellowed. It has a number of imperfections with patches being used for almost all the folios. In addition it contains many stickes and pieces of different sizes. The <hi rend="italics">vis-à-vis</hi> rule is respected except for the last two folios (ff. <locus>139</locus> and <locus>140</locus>).</p>
+                  
+            </note>
+            
+            <note rend="QUIRES">
+               
+               <list>
+                  
+                  <head>Collation:</head>
+                  
+                  <item n="I">
+                     
+                     <locus from="C" to="6">C-6</locus>
+                  
+                  </item>
+                  
+                  <item n="II">
+                     
+                     <locus from="7" to="14">7-14</locus>
+                  
+                  </item>
+                  
+                  <item n="III">
+                     
+                     <locus from="15" to="22">15-22</locus>
+                  
+                  </item>
+                  
+                  <item n="IV">
+                     
+                     <locus from="23" to="30">23-30</locus>
+                  
+                  </item>
+                  
+                  <item n="V">
+                     
+                     <locus from="31" to="38">31-38</locus>
+                     
+                  </item>
+                  
+                  <item n="VI">
+                     
+                     <locus from="39" to="46">39-46</locus>
+                     
+                  </item>
+                  
+                  <item n="VII">
+                     
+                     <locus from="47" to="54">47-54</locus>
+                     
+                  </item>
+                  
+                  <item n="VIII">
+                     
+                     <locus from="55" to="62">55-62</locus>
+                     
+                  </item>
+                  
+                  <item n="IX">
+                     
+                     <locus from="63" to="70">63-70</locus>
+                  </item>
+                  
+                  <item n="X">
+                     
+                     <locus from="71" to="78">71-78</locus>
+                     
+                  </item>
+                  
+                  <item n="XI">
+                     
+                     <locus from="79" to="86">79-86</locus>
+                     
+                  </item>
+                  
+                  <item n="XII">
+                     
+                     <locus from="87" to="94">87-94</locus>                
+                  </item>
+                  
+                  <item n="XIII">
+                     
+                     <locus from="95" to="102">95-102</locus>
+                     
+                  </item>
+                  
+                  <item n="XIV">
+                     
+                     <locus from="103" to="110">103-110</locus>
+                     
+                  </item>
+                  
+                  <item n="XV">
+                     
+                     <locus from="111" to="118">111-118</locus>
+                     
+                  </item>
+                
+                  <item n="XVI">
+                     
+                     <locus from="119" to="126">119-126</locus>
+                     
+                  </item>
+                  
+                  <item n="XVII">
+                     
+                     <locus from="127" to="134">127-134</locus>                
+                  </item>
+                  
+                  <item n="XVIII">
+                     
+                     <locus from="135" to="140">135-140</locus>
+                     
+                  </item>
+                                              
+               </list>
+                
+               <p> III + 140 + II, plus inner covers in paper. Modern foliation on the top right corner is accurate. </p>
+            
+            </note>
+            
+            <note rend="LAYOUT">
+               
+               <p>There are thick grey ruling marks on the folios. There is no evidence of pricking. There are two columns with 31 lines (sometimes with 30 or 32).</p>
+            
+            </note>
+            
+            <note rend="SCRIPT">
+               
+               <p>The text is written in a dark brown ink that becomes lighter after folios <locus>47</locus>, <locus>78</locus> and <locus>121</locus>.  Most of the rubics are bright red, while some are orange red. The text seems to have been written by one scribe in a semicursive minuscule script. Punctuation marks are also used, especially the period, the comma and sometimes the semi-colon. There are some corrections done by the hand of the scribe and two others.</p>
+            
+            </note>
+            
+            <note rend="DECORATION">
+               
+               <p>The ornamental decoration of the manuscript was made by two different artist whose style was described as "aux araignées" and as "la vigne d'or". There are three large foliated initials in folios <locus>1</locus>, <locus>55</locus> and <locus>119</locus>, an S and two As respectively in blue and/or pink over a goldleaf background (vignette), which does not connect to the border. The text in folio <locus>1</locus> is fully framed by a foliate bar border with multiple goldleaf crosslets between the goldleaf leaves. This folio must have been trimmed since part of the top decoration has been cropped. Folios <locus>55</locus> and <locus>119</locus> are only partially framed by a foliate border that is connected to the inital A. There are many smaller initials in gold leaf over a red or blue background and viceversa.</p>
+                                                             
+            </note>
+            
+            <note rend="BINDING">
+               
+               <p> The manuscript as bound in brown calfskin with a simple dark brown fillet on the covers and gilded edges (18th century). On the spine there are five horizontal bands with red morrocan leather attached and carrying the following inscription: <hi rend="italics">"LA CITE DES DAMES"</hi>.</p>
+            </note>
+            
+            <note rend="HISTORY">
+               
+               <p>The manuscript can be dated to 1405. This manuscript is the second in order of seniority among the manuscripts of <hi rend="italics">La Cite des Dames</hi>. The state of the text and the type of corrections that were introduced, especially in the third part, helped to locate this manuscript just after the BnF, Ms. Fr. 24293 in the order of production.</p>
+               <p>Provenance: The manuscript does not contain any mark from the original owner. Then, in the 15th century, <hi rend="italics">"Mary Putens semper...</hi>(?); Antoine-Rene d'Argenson, Marquis of Paulmy (1722-1787), acquired the manuscript before 1774, because there is a long note written in part by his own hand and in part by the hand of his secretary Rotisset (d. 1774) can be seen in the interior of the front cover of the volume, next to its old shelfmark Paulmy:S[ciences] et A[rts] n. 606A. The Count of Artois, the future king Charles X, acquired the contents of the marquis' library on June 20, 1785. Saved from the destruction of the French Revolution, the Bibliotheque de l'Arsenal became the bibliotheque nationale on April 28, 1797.     </p>
+                  
+            </note>
+            
+            <note rend="TEXT">
+               
+               <p>It only contains <hi rend="italics">La Cité des Dames</hi>.</p>
+               
+               
+            
+            </note>
+            
+            <note rend="AUTHOR">
+              
+               <p>
+*The information given here comes from direct observation and from Ouy, Gilbert, Christine Reno and Inès Villela-Petit.<hi rend="italics"> Album Christine de Pizan </hi>. Turnhout: Brepols, 2012. </p>
+<p> Description by Mónica Ann Walker Vadillo</p>
+            
+            </note>
+         
+         </notesStmt>
+         
+         <sourceDesc>
+            
+            <bibl>
+               
+               <note type="format">manuscript</note>
+               
+               <note type="commonName">Arenal 2686</note>
+               
+               <title>La Cité des Dames</title>
+
+               
+               <extent>
+                  
+                  <measure quantity="140" unit="folios">140 folios</measure>
+                  
+                  <dimensions>
+                     
+                     <height unit="mm">284</height>
+                     
+                     <width unit="mm">200</width>
+                  
+                  </dimensions>
+               
+               </extent>
+               
+               <note type="illustrations">0</note>
+                        
+               
+               
+               
+               <note type="material">parchment</note>
+               
+               <pubPlace>Paris, France</pubPlace>
+     
+               <date notAfter="1500" notBefore="1400">15th century</date>
+            
+            </bibl>
+            
+            <msDesc>
+               
+               <msIdentifier>
+                  
+                  <settlement>Paris</settlement>
+                  
+                  <repository>Bibliothèque de l'Arsenal</repository>
+                  
+                  <idno>Arsenal 2686</idno>
+               
+               </msIdentifier>
+            
+               <msContents>
+                  <msItem n="1">
+                     <locus from="1r" to="140v">1r-140v</locus>
+                     <title>Le Livre de la Cité des Dames</title>
+                     <note type="textid">Le Livre de la Cité des Dames</note>
+                     <note type="folios">140</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">31</note>
+                     <note type="leavesPerGathering">8</note>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         
+         </sourceDesc>
+      
+      </fileDesc>
+   
+   </teiHeader>
+   
+   <text>
+      
+      <body>
+         
+         <div> </div>
+      
+      </body>
+   
+   </text>
+
+</TEI>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.179r.tif" pagination="357" reader="John Dee" signature="z 3"/> 
+    <annotation>
+        
+        <marginalia anchor_text="proprietas ipsa non simpliciter accupitur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Prop[ri]etatis no[n] simplex acceptio</marginalia_text> 
+                </position>
+            </language>
+            <translation>The acceptance of propriery as not simple.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Caßius Seuerus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Caßius seuerus</marginalia_text>
+                    <person name="Cassius Severus"/>
+                </position>
+            </language>
+            <translation>Cassius Severus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἄκυρον" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ἄκυρον</marginalia_text>
+                </position>
+            </language>
+            <translation>What is improper.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="lapidare" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>lapidare</marginalia_text>
+                </position>
+            </language>
+            <translation>To stone.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="κατάχρησις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>κατάχρησις</marginalia_text>
+                </position>
+            </language>
+            <translation>Catachresis.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tra[n]slatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Translatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Translation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="multa sunt &amp; Graecè, &amp; Latinè no[n] denominata" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Multa su[n]t &amp; gra[e]cè &amp; latinè no[n] denominata.</marginalia_text>
+                </position>
+            </language>
+            <translation>There are many [things] that are not named in either Greek or Latin.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Quia primum omnium multa sunt &amp; Graecè &amp; Latinè no[n] denominata. Nam" type="straight"/>
+        <underline language="LA" method="pen" text="proprietas non ad nomen, sed ad uim significandi refertur, nec auditu, sed intellectu perpendenda est. Secundo" type="straight"/>
+        
+        <numeral place="right_margin">1</numeral>
+        <numeral place="right_margin">2</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="Multa su[n]t &amp; gra[e]cè &amp; latinè no[n] denominata." book_orientation="0" method="pen" place="tail" type="florilegium"/>
+        
+    </annotation>
+</transcription>

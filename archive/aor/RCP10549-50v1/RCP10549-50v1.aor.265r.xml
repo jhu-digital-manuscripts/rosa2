@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.265r.tif" pagination="509" reader="John Dee" signature="iii.vii."/>
+    <annotation>
+        
+        <marginalia anchor_text="[Arsi]noam Thracum, Neopactum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Arsinoa Neopactus
+                    </marginalia_text>
+                    <location name="Arsinoe"/>
+                    <location name="Nafpaktos"/>
+                </position>
+            </language>
+            <translation>
+                Arsinoe. Nafpaktos. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Albutius" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Albutius.
+                    </marginalia_text>
+                    <person name="Titus Albucius"/>
+                </position>
+            </language>
+            <translation>
+                Albucius.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="praeposterus Imperator" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        proposter[us] Imp[er]ator.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The future Emperor.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="crepidatus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Crepidatus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Wearing crepidae.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nauem conscendit, Bru[n]dusiúmque vitauit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        bru[n]dusu[m] vitare. nave[m] co[n]sce[n]dere
+                    </marginalia_text>
+                    <location name="Brindisi"/>
+                </position>
+            </language>
+            <translation>
+                To avoid Brindisi. To board a ship.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="odium quod in ipsum attulerant, id in eius imaginem ac simulactum profuderunt" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        p[ro]fu[n]dere odium]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To pour out hate.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="deturbant, affligunt, co[m]minuunt, dissipa[n]t" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ] deturbare affligere cominuere dissipare ]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To upset, to overthrow, to crush, to scatter.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="inuitabis aut dehortabitur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        invitare. rehortari
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To incite, to encourage.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="specime[n]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Specime[n].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A mark.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="affirmasset, se, quae deberuntur, postero die persoluturu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="intempesta crepdatus" type="straight"/>
+        <underline language="LA" method="pen" text="Bru[n]dusoúmque" type="straight"/>
+        <underline language="LA" method="pen" text="vitauit, &amp; vltimas Adriani maris oras petiuit. cum interim" type="straight"/>
+        <underline language="LA" method="pen" text="ne suauissimi hominis memoria moreretur" type="straight"/>
+        <underline language="LA" method="pen" text="non aequè legetur quisquis voluerit, nec quisquis noluerit, non legetur. nulli" type="straight"/>
+        <underline language="LA" method="pen" text="eos, qui" type="straight"/>
+        <underline language="LA" method="pen" text="iudicaru[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="Consulatus tui, facta, mores, facie[m] denique ac nomen à Rep. detestantur" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">8</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">21</numeral>
+        
+
+    </annotation>
+</transcription>

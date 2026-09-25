@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.168v.tif" pagination="76" reader="John Dee"/>   
+    <annotation>
+        
+        <marginalia anchor_text="magnus &amp; nobilis rhetor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>rhetor | magnus nobilis</marginalia_text>
+                </position>
+            </language>
+            <translation>A great, noble rhetorician.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="exornatione; expolitio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        exornatio
+                        expolitio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Embellishment. Adornment.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="indiligenter" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>indilige[n]ter</marginalia_text>
+                </position>
+            </language>
+            <translation>Carelessly.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Nam fuit tempore eodem quo Aristoteles, magnus &amp; nobilis rhetor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Isocrates eodem tempore quo Aristoteles.</marginalia_text>
+                    <person name="Isocrates"/>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>Isocarates, at the same time as Aristotle.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="primus liber" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quid primo libro docuit.</marginalia_text>
+                </position>
+            </language>
+            <translation>What the first book taught.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="nunc certos confirmandi &amp; reprehendendi in singula causarum genera locos tradendos arbitramur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quid in hoc docebit.</marginalia_text>
+                </position>
+            </language>
+            <translation>What will be taught in this.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hoc qua[m]qua[m] ita est, tamen cum co[m]muniter quaeda[m] de omnibus praecipi possint, separatim quoque aliae sunt cuiusque generis &amp; diuersae praeceptiones" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>co[mmun]iter x separatim. generatim</marginalia_text>
+                </position>
+            </language>
+            <translation>Collectively - separately. Generally.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Caupo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Caupo.</marginalia_text>
+                </position>
+            </language>
+            <translation>The innkeeper.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="magnus &amp; nobilis rhetor" type="straight"/>
+        <underline language="LA" method="pen" text="omnis in dicendi erat studio &amp; praeceptione" type="straight"/>
+        <underline language="LA" method="pen" text="suas artes contuleru[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="in co[m]mune co[n]tulimus" type="straight"/>
+        <underline language="LA" method="pen" text="no[n] enim parum cognosse, sed in parum cognito stulte, &amp; diu perseuerasse turpe" type="straight"/>
+        <underline language="LA" method="pen" text="dubitanter" type="straight"/>
+        <underline language="LA" method="pen" text="paruulum" type="straight"/>
+        <underline language="LA" method="pen" text="distinctius dictum" type="straight"/>
+        <underline id="RCP10549-50v2:0346:u0001" language="LA" method="pen" text="disperse" type="straight"/>
+        <underline language="LA" method="pen" text="indiligenter" type="straight"/>
+        <underline language="LA" method="pen" text="simpliciter sine vlla exornatione" type="straight"/>      <!-- DO: Not sure if there is some sort of mark by this phrase as well, or if it's just part of the underlining -->
+        <underline language="LA" method="pen" text="Quorum igitur generum fines &amp; exitus diuersi sunt, eorum praecepta eadem esse no[n] possunt" type="straight"/>
+        <underline language="LA" method="pen" text="in via sermonem contulit" type="straight"/>
+        <underline language="LA" method="pen" text="somnum capere" type="straight"/>
+        
+        <mark language="LA" method="pen" name="Ichthys" place="head" text="indilige[n]ter"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- aliquo facile -->
+        
+        <mark method="pen" name="Ichthys" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/> 
+        
+        <drawing anchor_text="no[n] enim parum cognosse, sed in parum cognito stulte, &amp; diu perseuerasse turpe" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

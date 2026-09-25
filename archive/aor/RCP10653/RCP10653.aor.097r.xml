@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.097r.tif" pagination="185" reader="John Dee" signature="Q iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Choream gigantum" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Chorea gigantum
+                    </marginalia_text>
+                    <location name="Stonehenge"/>
+                </position>
+            </language>
+            <translation>
+                Stonehenge.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mare Catanesium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mare Catanesiu[m].
+                    </marginalia_text>
+                    <location name="Caithness"/>
+                </position>
+            </language>
+            <translation> 
+              The sea at Caithness.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nauibus septingentis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        700 Naves
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                700 vessels.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Helena [Anna deleted] soror Arthuri erat vterina
+                    </marginalia_text>
+                    <person name="King Arthur"/>
+                    <person name="Elaine of Garlot"/> 
+                </position>
+            </language>
+            <translation>
+                Helena was the sister of Arthur from the same mother.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="more regio" type="triple"/>
+        <underline language="LA" method="pen" text="Dubritius vrbis Legionum archiepiscopus, sociatis" type="straight"/>
+        <underline language="LA" method="pen" text="mare Catanesium" type="straight"/>
+        <underline language="LA" method="pen" text="misit Cadorem, Ducem Cornubiae, cu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="nauibus septingentis" type="straight"/>
+        <underline language="LA" method="pen" text="Timuerunt" type="double"/>
+        <underline language="LA" method="pen" text="Britanniam, ad" type="straight"/>
+        <underline language="LA" method="pen" text="Erat autem Hoëlius filius sororis Arthuri ex Dubritio, rege Armoricanorum Britonum generatus" type="straight"/>
+        
+    </annotation>
+</transcription>

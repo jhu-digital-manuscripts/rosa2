@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.141v.tif" pagination="[141v]" reader="John Dee" signature="[Sv[v]]"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="prouincia Maddalena : la qual prouincia chiamauasi già Maroris" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Maddalena prouincia [est] Maroris.</marginalia_text>
+                    <location name="Magdalena"/>
+                </position>
+            </language>
+            <translation>Magdalena province [is] Maroris.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="riceuettero l'acqua del Santo Battesimo" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Baptisme</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Guaticaua" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Guaticaua martyred</marginalia_text>
+                    <person name="Guaticava"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="prouincia" type="straight"/>
+        <underline language="IT" method="pen" text="già Maroris" type="straight"/>
+        <underline language="IT" method="pen" text="Guauaouoconel" type="double"/>
+        <underline language="IT" method="pen" text="figliuolo di Guauaenechin" type="straight"/>
+        <underline language="IT" method="pen" text="del Santo Battesimo" type="straight"/>
+        <underline language="IT" method="pen" text="ouero l'acqua del Santo Battesimo" type="straight"/>
+        <underline language="IT" method="pen" text="detto Guaticaua, che" type="straight"/>
+        <underline language="IT" method="pen" text="Gioua[n]ni" type="straight"/>
+        <underline language="IT" method="pen" text="che patì morte crudele; &amp; certo parmi, ch'ei facesse morte di martire" type="straight"/>
+        <underline language="IT" method="pen" text="Io son seruo di Dio" type="straight"/>
+        
+        
+    </annotation>
+    
+</transcription>

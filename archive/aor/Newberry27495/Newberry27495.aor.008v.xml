@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.008v.tif" reader="Harvey" signature="[Cii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vide g.i.</marginalia_text> 
+                    <internal_ref text="vide">
+                        <target ref="Newberry27495:case_712_c27495_079" text="[g.i.]"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See page [G.i.]</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="the matter" type="straight"/>
+        <underline language="EN" method="pen" text="tung may help" type="straight"/>
+        <underline language="EN" method="pen" text="Authores asmuch woorthie" type="straight"/>
+        <underline language="EN" method="pen" text="rather knowen for a Lumbard" type="straight"/>
+        <underline language="EN" method="pen" text="no Tuscan, in speaking" type="straight"/>
+        <underline language="EN" method="pen" text="Theophrastus did" type="straight"/>
+        <underline language="EN" method="pen" text="for speaking" type="straight"/>
+        <underline language="EN" method="pen" text="much the meere Athenian tunge" type="straight"/>
+        <underline language="EN" method="pen" text="olde woman knowen not to be" type="straight"/>
+        <underline language="EN" method="pen" text="written it in mine owne" type="straight"/>
+        <underline language="EN" method="pen" text="vnto such as speake as I speake" type="straight"/>
+        <underline language="EN" method="pen" text="speake in his owne tunge" type="straight"/>
+        <underline language="EN" method="pen" text="heare that contenteth hym" type="straight"/>
+        <underline language="EN" method="pen" text="will not reade my Courtier" type="straight"/>
+        <underline language="EN" method="pen" text="offende me nothing at all" type="straight"/>
+        <underline language="EN" method="pen" text="finde out a man of sch perfection" type="straight"/>
+        <underline language="EN" method="pen" text="the Courtier to" type="straight"/>
+        <underline language="EN" method="pen" text="superfluous to write" type="straight"/>
+        
+        <mark method="chalk" name="X_sign" place="left_margin"/> <!--almost faded-->
+        <mark method="chalk" name="X_sign" place="left_margin"/> <!--almost faded--> 
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="offende me nothing at all"/>
+        
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!--tunge, neyther-->
+        
+    </annotation>
+</transcription>

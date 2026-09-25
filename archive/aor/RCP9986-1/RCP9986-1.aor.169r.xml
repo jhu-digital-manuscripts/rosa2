@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.169r.tif" pagination="170" reader="John Dee" signature="Y.ij."/>   
+    <annotation>
+        
+        <marginalia anchor_text="regno" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Amoris Regnu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>The rule of love.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="amor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Amor.</marginalia_text>
+                </position>
+            </language>
+            <translation>Love.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="veneficijs" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>veneficia</marginalia_text>
+                </position>
+            </language>
+            <translation>Poison.</translation>
+        </marginalia>
+       
+        <marginalia anchor_text="dediscis amare" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Amare vt dediscas.</marginalia_text>
+                </position>
+            </language>
+            <translation>Loving in order to forget.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="odij semina" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ODij semina</marginalia_text>
+                </position>
+            </language>
+            <translation>The seeds of hatred.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Totáq[ue] sub regno terra futura tuo est" type="straight"/>
+        <underline language="LA" method="pen" text="attenuatus amor" type="straight"/>
+        <underline language="LA" method="pen" text="dedoluítq[ue] semel" type="straight"/>
+        <underline language="LA" method="pen" text="Nec potes, &amp; velles posse, docendus eris" type="straight"/>
+        <underline language="LA" method="pen" text="Et pone ante oculos omnia damna tuos" type="straight"/>
+        <underline language="LA" method="pen" text="Institor" type="straight"/>
+        <underline language="LA" method="pen" text="odij semina quaere tui" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

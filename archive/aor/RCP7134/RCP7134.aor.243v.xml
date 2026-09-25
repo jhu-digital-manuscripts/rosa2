@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.243v.tif" pagination="[236v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Cum Luna cum Marte conuenerit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>☾ co[n]venie[n]tia cu[m] aliq[u]o planeta //</marginalia_text> 
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>The agreement of the Moon with another planet.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Maximi omnium sanguinis effusores sunt" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Homicida[e].</marginalia_text>
+                </position>
+            </language>
+            <translation>Homicides.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ascendant" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>in 2⁰[secundo] loco</marginalia_text> 
+                </position>
+            </language>
+            <translation>In the second place.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="cum Marte" type="straight"/>
+        <underline language="LA" method="pen" text="Saturno" type="straight"/>
+        <underline language="LA" method="pen" text="Cum Ioue" type="straight"/>
+        <underline language="LA" method="pen" text="cum Sole" type="straight"/>
+        <underline language="LA" method="pen" text="cum Venere" type="straight"/>
+        <underline language="LA" method="pen" text="cum Mercurio" type="straight"/>
+        <underline language="LA" method="pen" text="ascendant" type="straight"/>
+        <underline language="LA" method="pen" text="sunt, cum Mars Solis radijs roboratur, post" type="straight"/>
+        
+    </annotation>
+</transcription>

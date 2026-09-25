@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.021r.tif" pagination="25" reader="John Dee" signature="c"/>
+    <annotation>
+        
+        <marginalia anchor_text="dicitur, indomitum, consonans, impurum, libidinosum, domus ♂, occasus ♀: altitudo solis circa partem xix, diectio ♄ circa partem xx, trigonum per diem ☉, per nocte[m] ♃" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        No[n] dicit deiectione[m] cu[m] illa sit ab altitudine sed occasus a domo sua scilic[et]. quod nota
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                It doesn't say the ejection with that is from altitude, but falling from its house. Note that.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ignitum quare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                For that reason ignited.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="♂, occasus" type="straight"/>
+        <underline language="LA" method="pen" text="Positum" type="straight"/>
+        <underline language="LA" method="pen" text="impar" type="straight"/>
+        <underline language="LA" method="pen" text="ac membrorum abscissorum" type="straight"/>
+        <underline language="LA" method="pen" text="Positum est autem hoc signum in" type="straight"/>
+        <underline language="LA" method="pen" text="par" type="straight"/>
+        <underline language="LA" method="pen" text="impar" type="straight"/>
+        <underline language="LA" method="pen" text="domus ☾" type="straight"/>
+        <underline language="LA" method="pen" text="occasus ♄" type="straight"/>
+        <underline language="LA" method="pen" text="altitudo ♃ circa" type="straight"/>
+        <underline language="LA" method="pen" text="par" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        
+    </annotation>
+</transcription>

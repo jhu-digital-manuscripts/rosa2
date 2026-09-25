@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.123r.tif" pagination="237" reader="John Dee"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="filius eius" type="double"/>
+        <underline language="LA" method="pen" text="soror Pendae" type="straight"/>
+        
+        <graph book_orientation="0" method="pen" place="right_margin" type="genealogical_tree">   
+            <node anchor_text="Cadvvalin[us]" id="n1" person="Cadwallon ap Cadfan">Cudwall</node>
+            <node anchor_text="soror Pendae" id="n2">soror Pendae</node>
+            <node anchor_text="Cadvvalladrum" id="n3" person="Cadwaladr ap Cadwallon">Cadowaladrus</node>
+            <link from="n2" relationship="has_spouse" to="n1"/>
+            <link from="n1" relationship="has_spouse" to="n2"/>
+            <link from="n1 n2" relationship="has_child" to="n3"/>
+        </graph>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.106r.tif" pagination="197" reader="John Dee" signature="r.iij."/>
+    <annotation>
+        
+       <marginalia anchor_text="natum Dominum Iesum Christum" hand="Italian">
+           <language ident="LA">
+               <position book_orientation="0" place="right_margin">
+                   <marginalia_text>Natiuitas Chr[ist]i.</marginalia_text>
+                   <person name="Jesus Christ"/>
+               </position>
+           </language>
+           <translation>The birth of Christ.</translation>
+       </marginalia> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>per</marginalia_text>
+                </position>
+            </language>
+            <translation>Through.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="de anno" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>De Anno</marginalia_text>
+                </position>
+            </language>
+            <translation>From the year.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="mense, quo autumnale conficitur aequinoctium" type="straight"/>
+        <underline language="LA" method="pen" text="vt tempus &amp; annum" type="straight"/>
+        <underline language="LA" method="pen" text="annum" type="straight"/>
+        <underline language="LA" method="pen" text="Hodie impleta est haec scriptura in auribus vestris" type="straight"/>
+        <underline language="LA" method="pen" text="quae anno Iubilaeo" type="straight"/>
+        <underline language="LA" method="pen" text="Iubilaeum" type="straight"/>
+        <underline language="LA" method="pen" text="animaduertimus. In quibus errores facilè depraehendimus, sed quae vera sunt, nullo pacto nostra ratione consequi possumus" type="straight"/>
+        <underline language="LA" method="pen" text="Latina Ecclesia malè contulit in hibernum solstitium: sicuti anni quoque nostri" type="straight"/>
+        <underline language="LA" method="pen" text="à Christo nato" type="straight"/>
+        <underline language="LA" method="pen" text="Quamobrem de anno" type="straight"/>
+        
+        <mark method="pen" name="circumflex" place="intext"/>
+        
+        
+    </annotation>
+</transcription>

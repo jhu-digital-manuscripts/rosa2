@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.frontmatter.flyleaf.003r.tif" pagination="title page" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Vel Arte, Vel Marte.</marginalia_text>
+                </position>
+            </language>
+            <translation>Either with skill or by force.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="90" place="left_margin">
+                    <marginalia_text>Serò, sed seriò. Nulla dies sine linea.</marginalia_text>
+                    <X-ref book_title="Natural History" language="LA" person="Pliny the Elder" text="Nulla dies sine linea"/>
+                </position>
+            </language>
+            <translation>Late but in earnest. "No day without line."</translation>
+        </marginalia>
+        
+        <marginalia date="1588" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="270" place="right_margin">
+                    <marginalia_text>1588. Reuolutio mea[e] Reformationis, seu Annus Assuetudinis.</marginalia_text>
+                </position>
+            </language>
+            <translation>1588. The turning of my reformation, or the year of experience.</translation>
+        </marginalia>
+        
+        <marginalia date="1578" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Precium [.] xxd. 1578.</marginalia_text> <!--JG: Unsure what follows after precium and before xxd-->
+                    <emphasis method="pen" text="1578." type="straight"/>
+                </position>
+            </language>
+            <translation>Price. 20 pence. </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Wecceri Secreta, multa habent polemica, et mechanopoietica[n] praesertim è Cardano.</marginalia_text>
+                    <person name="Johannes Jacob Wecker"/>
+                    <person name="Girolamo Cardano"/>
+                    <book title="De secretis libri XVII"/>
+                </position>
+            </language>
+            <translation>Wecker's Secrets, have many polemics, and especially the 'art of mechanics' (mechano-poetica) from Cardano. </translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Du[m]  potiar, patiar.</marginalia_text>
+                    <X-ref book_title="Apologia" language="LA" person="Apuleius" text="Dum potiar, patiar."/>
+                </position>
+            </language>
+            <translation>"While I acquire, I suffer."</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Gabrielis Harueij.</marginalia_text>
+                    <person name="Gabriel Harvey"/>
+                </position>
+            </language>
+            <translation>Gabriel Harvey's.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Non quâ, sed quô</marginalia_text>
+                    <X-ref book_title="Thronus cupidinis" language="LA" person="Anonymous" text="Non quâ, sed quô"/>
+                </position>
+            </language>
+            <translation>"Not by what, but where."</translation>
+        </marginalia>
+        
+        <symbol name="SS" place="head"/>
+        <symbol language="LA" name="SS" place="intext" text="Wecceri Secreta, multa habent polemica, et mechanopoietica[n] praesertim è Cardano."/>
+        
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

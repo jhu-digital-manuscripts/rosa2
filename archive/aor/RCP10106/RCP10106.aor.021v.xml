@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.021v.tif" pagination="42" reader="John Dee" signature="[C 5[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="exantlare" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Exantlare. 1⁰. tusc[ulanae].</marginalia_text> 
+                    <X-ref book_title="Tusculanae Disputationes" person="Cicero"/>
+                </position>
+            </language>
+            <translation>To exhaust, see Tusculan Disputations.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tuburchinabundum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tuburchinabu[n]d[us]</marginalia_text>
+                </position>
+            </language>
+            <translation>Voracious.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="consuetudinem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Consuetudo quid</marginalia_text>
+                </position>
+            </language>
+            <translation>What custom?</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="utendum est. Oratio uerò cuius summa uirtus est perspicuitas, quàm sit uitiosa, si egeat interprete?" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.001r.tif" pagination="title page" reader="Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Ponticus Virumnius, Italus eruditus hanc defendit Historia[m]. Balo[e]us tu[m] Novoburge[n]se[m] tu[m] Polydoru[m] taxat. 
+                        quia hunc immerite reprehendat.
+                    </marginalia_text>
+                    <person name="Virunius"/>
+                    <person name="John Bale"/>
+                    <person name="Polydore Virgil"/>
+                    <person name="William of Newburgh"/>
+                </position>
+            </language>
+            <translation>Ponticus Virumnius, the Italian erudite, defends this history. John Bale valued both William of Newburgh and Polydore Vergil, because he (i.e. Bale) unjustly censors him (i.e. Virunnius).</translation>
+        </marginalia> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Joannes Dee Londinensis.</marginalia_text>
+                    <person name="John Dee"/>
+                    <location name="London"/>
+                </position>
+            </language>
+            <translation>John Dee of London.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary" other_reader="Unkown">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Jeffrey, of Monmouth</marginalia_text>
+                    <person name="Geoffrey of Monmouth"/>
+                    <emphasis method="pen" text="Jeffrey" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Nescire, quid antequam natus sis, euenerit, est semper esse puerum... Cicero. Ora. 207
+                    </marginalia_text> <!--The actual quote goes: 'Nescire autem quid ante quam natus sis acciderit, id est semper esse puerum.'-->
+                    <person name="Cicero"/>
+                    <book title="Orator ad M. Brutum"/>
+                </position>
+            </language>
+            <translation>'To be ignorant of what happened before you were born, is to be a child forever.' Cicero, Orator ad M. Brutum, 207.</translation>
+        </marginalia>
+        
+        <numeral place="head">1</numeral>
+
+    </annotation>
+</transcription>

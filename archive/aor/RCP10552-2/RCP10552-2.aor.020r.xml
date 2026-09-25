@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.020r.tif" pagination="29" reader="John Dee" signature="C.iij."/>
+    <annotation>
+        
+        
+        <marginalia anchor_text="Vallicis exitialis, &amp; finis libertatis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>finis Libertatis Wallica[e].</marginalia_text>
+                </position>
+            </language>
+            <translation>The end of Welsh freedom.</translation> <!-- FSF: the Welsh freedom? -->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="VVallicis exitialis, &amp; finis libertatis" type="straight"/>
+        <underline language="LA" method="pen" text="Petri de Malo Lacu" type="straight"/>
+        
+    </annotation>
+</transcription>

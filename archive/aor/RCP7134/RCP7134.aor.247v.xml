@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.247v.tif" pagination="[240v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Consistentia infantis in vtero.</marginalia_text>
+                </position>
+            </language>
+            <translation>The consistence of the infant in the womb.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Luna" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>☾ cu[m] ☋.</marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="South_Node"/>
+                </position>
+            </language>
+            <translation>The Moon with the South node.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Antiquoru[m] impudens neglige[n]tia</marginalia_text>
+                </position>
+            </language>
+            <translation>The shameless negligence of the ancients.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iupiter est in aspectu Solis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>♃ in aspectu ☉</marginalia_text>
+                    <symbol_in_text name="Jupiter"/>
+                    <symbol_in_text name="Sun"/>
+                </position>
+            </language>
+            <translation>Jupiter [is] in the aspect of the Sun.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ergo in re minori Angli optime cu[m] heredib[us] agu[n]t, ad suu[m] genus propaga[n]du[m] cu[m]
+                    honore / ia[m] [heres] indiuisu[m] pr[im]is recipit patrimoniu[m]</marginalia_text> 
+                </position>
+            </language>
+            <translation>Therefore in an unimportant matter, Englishmen act best with heirs, for the propagation of their birth with honour.
+            Already the heir takes back the undivided patrimony from the nearest.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="totus orbis in unum imperium diu consentire nequit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Archana r[ati]o</marginalia_text>
+                </position>
+            </language>
+            <translation>An archane reason.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ex figura ergo co[n]cept[us] de hijs iudica[n]du[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>From the figure, therefore the concept of these things must be judged.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>sup[ra] fo. 66.v.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:152" text="66.v"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>[See] above, folio 66 verso.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="pleru[m]q[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="totus orbis in unum imperium diu consentire nequit" type="straight"/>
+        
+    </annotation>
+</transcription>

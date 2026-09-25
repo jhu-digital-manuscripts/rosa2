@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note rend="IDENTIFICATION">
+          <p>Paris, Bibliothèque de l'Arsenal (Bibliothèque nationale de France), 5226</p>
+        </note>
+        <note rend="CONTENTS">
+          <p><hi rend="italics">Roman de la Rose</hi> (ff. 1r-154v)</p>
+        </note>
+        <note rend="MATERIAL">
+          <p>Parchment</p>
+        </note>
+        <note rend="ORIGIN">
+          <p>Paris, France</p>
+        </note>
+        <note rend="DATE">
+          <p>1st half of 14th century</p>
+        </note>
+        <note rend="SCRIPT">
+          <p>Gothic, written in 2 columns of 36 lines, 1 scribe. Folios 96v-120v, 140r-141v, 152r-154v replacements by a 15th-century scribe</p>
+        </note>
+        <note rend="ARTISTS">
+          <p>2 artists, Richard de Montbaston (quires 1-2, 4) and Jeanne de Montbaston (quire 3) (this is according to Rouse and Rouse, see bibliography)</p>
+        </note>
+        <note rend="DECORATION">
+          <p>1 double-column panel miniature in colors and gold, with a foliate bar border incorporating a hare, dog, birds, a grotesque head, and a large decorated initial on f. <locus>1r</locus>; 23 single-column panel miniatures in colors which have pink, blue and gold frames patterned in white and outlined in black with gold boxes at corners and heart-shaped leaf extenders (ff. 1r, 2r (x2), 2v (x2), 3r, 3v, 4r, 4v (x2), 5r, 5v, 6v, 7r, 9r, 12r, 13v, 14r, 15v, 17r, 22r, 24v, 28r, 31r.) Champie initials throughout.</p>
+        </note>
+        <note rend="DIMENSIONS">
+          <p>265 x 197 mm (this measurement is from Langlois)</p>
+        </note>
+        <note rend="FOLIATION">
+          <p>ff. ii + 156 + ii</p>
+        </note>
+        <note rend="COLLATION">
+          <p>19 quires</p>
+        </note>
+        <note rend="BINDING">
+          <p>French; red moroccco covers with gilt fillet border, raised spine bands, gilt ornament and lettering on spine, marbled endpapers.</p>
+        </note>
+        <note rend="PROVENANCE">
+          <p>Louis César de La Baume Le Blanc, duc de la Vallière (1708-1780), 18th century?; Bibliothèque de Paulmy, late 18th century; Bibliothèque de l'Arsenal, 19th century (after 1797).</p>
+        </note>
+        <note rend="NOTES">
+          <p>Corrections and champie initials by the 15th-century scribe. 19th-century description of text and ms written on flyealf: <locus>frontmatter.flyleaf.02v</locus>
+               </p>
+        </note>
+        <note rend="SELECT BIBLIOGRAPHY">
+          <p>1. Henry Martin, <hi rend="italics">Catalogue des manuscrits de la bibliothèque de l'Arsenal</hi>, III, p. 337</p>
+          <p>2. Langlois, <hi rend="italics">Les manuscrits</hi>, pp. 79-80
+                  </p>
+          <p>3. Richard H. and Mary A. Rouse, <hi rend="italics">Manuscripts and their makers: commercial book producers in medieval Paris, 1200-1500</hi> (Turnhout: Harvey Miller, 2000) II, pp. 204-205</p>
+        </note>
+        <note rend="N.B.">
+          <p>This description has been compiled using the site's images and various published sources. If you have corrections or additional information on the manuscript, please do contact us.</p>
+        </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscript</note>
+          <note type="commonName">Arsenal 5226</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="154" unit="folios">154</measure>
+            <dimensions>
+              <height unit="mm">265</height>
+              <width unit="mm">197</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">24</note>
+          <note type="material">parchment</note>
+          <pubPlace>Paris, France</pubPlace>
+          <date notAfter="1400" notBefore="1300">14th century</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Paris</settlement>
+            <repository>
+                     
+                     Bibliothèque de l'Arsenal</repository>
+            <idno>5226</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="154v">1r-154v</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">154</note>
+              <note type="illustrations">24</note>
+              <note type="linesPerColumn">36</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

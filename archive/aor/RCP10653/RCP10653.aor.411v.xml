@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.411v.tif" pagination="372." reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Fredericus, igne combustus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Fredericus Imp. co[m]bustus 
+                    </marginalia_text>
+                    <person name="Frederick II, Holy Roman Emperor"/>
+                </position>
+            </language>
+            <translation>
+                Frederick II, Holy Roman Emperor, was burned.      <!-- DO: I'm not sure which Frederick it is. This might be correct, but I think it's more likely the Alfonso X of Castile would see the 'ghost' of Frederick of Castile whom he apparently secretly executed. See: https://en.wikipedia.org/wiki/Frederick_of_Castile. However, I don't think Frederick of Castile would be described as an Emperor...? So maybe Dee is thinking of FII, Holy Roman Emperor? -->
+                <!-- FSF: I am not sure really -->
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Rotundam tabulam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Rotunda Tabula 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The round table.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Alfonsus, regis primogenitus" type="straight"/>
+        <underline language="LA" method="pen" text="quandam aureolam" type="double"/>
+        <underline language="LA" method="pen" text="VValliae Leolini" type="double"/>
+        <underline language="LA" method="pen" text="Edvvardi feretrum" type="double"/>
+        <underline language="LA" method="pen" text="sancti Magni" type="double"/>
+        <underline language="LA" method="pen" text="per .xxxij." type="triple"/>
+        <underline language="LA" method="pen" text="Gulihelmus Holandiae" type="double"/>
+        <underline language="LA" method="pen" text="Richardus" type="double"/>
+        <underline language="LA" method="pen" text="&amp; Rodulphus" type="double"/>
+        <underline language="LA" method="pen" text="Inopinatum illud phantasma" type="straight"/>
+        <underline language="LA" method="pen" text="igne combustus" type="double"/>
+        <underline language="LA" method="pen" text="apud Neuyn in Snauduna, in choreis &amp; hastiludijs, Rotundam tabulam celebraru[n]t" type="straight"/>
+        
+        <errata amendedtext="apparens" copytext="apperiens" language="LA"/>
+        
+    </annotation>
+</transcription>

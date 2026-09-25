@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.055v.tif" pagination="[55v]" reader="John Dee" signature="[Gvij[v]]"/> 
+    
+    <annotation>
+        
+        <marginalia anchor_text="loro letti come vna rete appiccata" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Theyr beds in nets.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="cani [...] che non latrauano" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dogs not barking.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="XIX di Ottobre" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>19 octobr.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Saometto" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>4. Saometto. Ins Isabella</marginalia_text>
+                    <location name="Isabela"/>
+                </position>
+            </language>
+            <translation>Saometto island. Isabella.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="piu di dodici, ò quindici case" type="straight"/>
+        <underline language="IT" method="pen" text="altro adornamento, ne mobile, che di" type="straight"/>
+        <underline language="IT" method="pen" text="medesimo, che alle naui portauano, per" type="straight"/>
+        <underline language="IT" method="pen" text="come vna rete" type="straight"/>
+        <underline language="IT" method="pen" text="alcuni cani" type="double"/>
+        <underline language="IT" method="pen" text="chiamata Saometto" type="straight"/>
+        <underline language="IT" method="pen" text="nome l' Isabella" type="straight"/>
+        <underline language="IT" method="pen" text="per proceder con ordine ne' suoi nomi" type="straight"/>
+        <underline language="IT" method="pen" text="Guanahani" type="straight"/>
+        <underline language="IT" method="pen" text="seconda" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+        <numeral place="left_margin" text="Guanahani">1</numeral>  <!-- DO: see page 51r -->
+        <numeral place="left_margin" text="San Saluatore">2</numeral>
+        
+    </annotation>
+</transcription>

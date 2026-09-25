@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+   <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+   
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <title>Compilation of the Works of Christine de Pizan (Manuscrit du Duc, Vol. III)</title>
+         
+         </titleStmt>
+         
+         <publicationStmt>
+            
+            <distributor>MSEL</distributor>
+         
+         </publicationStmt>
+         
+         <notesStmt>
+            
+            <note rend="IDENTIFICATION">
+               
+               <p>Français 836, Bibliothéque national de France, Paris. Paris, ca. 1406-1408. </p>
+            
+            </note>
+            
+            <note rend="BASIC INFORMATION">
+               
+               <p>Parchment, 350 x 259 mm, 98 folios.</p>
+            
+            </note>
+            
+            <note rend="MATERIAL">
+               
+               <p>Ivory <material>parchment</material> with dark spots, small holes, some stitches, flies, and numerous pieces, most quite large, carefully incorporated in the manuscript, especially at the lower edge.</p>
+            </note>
+            
+            <note rend="QUIRES">
+               
+               <list>
+                  
+                  <head>Collation:</head>
+                  
+                  <item n="I">
+                     
+                     <locus from="1" to="8">1-8</locus>
+                  
+                  </item>
+                  
+                  <item n="II">
+                     
+                     <locus from="9" to="16">9-16</locus>
+                  
+                  </item>
+                  
+                  <item n="III">
+                     
+                     <locus from="17" to="24">17-24</locus>
+                  
+                  </item>
+                  
+                  <item n="IV">
+                     
+                     <locus from="25" to="32">25-32</locus>
+                  
+                  </item>
+                  
+                  <item n="V">
+                     
+                     <locus from="33" to="40">33-40</locus>
+                  
+                  </item>
+                  
+                  <item n="VI">
+                     
+                     <locus from="41" to="48">41-48</locus>
+                  
+                  </item>               
+                               
+                  <item n="VII">
+                     
+                     <locus from="49" to="56">49-56</locus>
+                     
+                  </item>  
+                  
+                  <item n="VIII">
+                     
+                     <locus from="57" to="64">57-64</locus>
+                     
+                  </item>   
+                  
+                  <item n="IX">
+                     
+                     <locus from="65" to="72">65-72</locus>
+                     
+                  </item>   
+                  
+                  <item n="X">
+                     
+                     <locus from="73" to="80">73-80</locus>
+                     
+                  </item>   
+                  
+                  <item n="XI">
+                     
+                     <locus from="81" to="88">81-88</locus>
+                     
+                  </item>  
+                  
+                  <item n="XII">
+                     
+                     <locus from="89" to="96">89-96</locus>
+                    </item> 
+                   <item n="XIII">
+                        
+                       <locus from="97" to="98">97-98</locus>
+                        
+                   </item> 
+                                    
+               </list>
+                    
+               <p>(IV, paper) + 98 + (IV, paper).Modern foliation appears on the top right corner of the manuscript in red ink.</p>
+            
+            </note>
+            
+            <note rend="LAYOUT">
+               
+               <p>Visible light gray ruling marks, probably done with a very hard lead pencil, which left frequent ridges. Some folios do not have any visible ruling, which might indicate the use of dry pencil. There is also visible pricking on the bottom margin with two or four pricks (circular and elliptical). </p>  
+               <p> The <hi rend="italics"> mise-en-page</hi> for the text, in verse, has 2 columns with 42 lines each (although sometimes they can be 39, 40 or 41). Each column measures around 48,5 mm.</p>
+            </note>
+            
+            <note rend="SCRIPT">
+               
+               <p>Almost all the text is written in dark brown ink, with bright red ink and orange red being used for the rubrics.  There seems to be a main scribal hand (R) for the text, and two other hands (E and P) for some corrections and some of the bright red rubrics. The main text has been written using a semi cursive minuscule script. There are signs of punctuation. The scribe (R) uses commas and periods. Very discreet scansion bars mark the decasyllabic verses. There are some corrections in the text done mainly by R, and some by P, by scratching the parchment. Furthermore, there are several extant preparations for corrections written in a quick cursive script (hand P?). </p>
+            </note>
+            
+            <note rend="DECORATION">
+               
+               <p>There are five large foliated initials (fols. <locus>1</locus>, <locus>42</locus>, <locus>48</locus>, <locus>63</locus>, <locus>65</locus>) either in pink or blue over a gold leaf background with foliate extenders and "sperm" coming out of the top and bottom of the left side of the initials. These foliate extenders partially frame the miniature above and the text below the initials. There are many other smaller foliated initials in pink and blue over a gold leaf background in the manuscript with gold leaf foliate extenders also framing the text and other miniatures.  </p>
+               <p> There are eighteen miniatures. The first ten miniatures were created by the Master of l'Épître Othéa (ff. <locus>1</locus>, <locus>3</locus>, <locus>5</locus>, <locus>10</locus>, <locus>12</locus>, <locus>15</locus>, <locus>19</locus>, <locus>40</locus>, <locus>42</locus>, <locus>45</locus>) and the last eight by the Master of Egerton (ff. <locus>48</locus>, <locus>63</locus>, <locus>65</locus>, <locus>66</locus>, <locus>71</locus>, <locus>74</locus>, <locus>76</locus>). All the illustrations are framed with a fine line of gold leaf outlined in black, and coming from the frame are gold leaf foliate extenders alternating with gold leaf "sperm".   </p> 
+                   <list>
+                      <item>Fol. <locus>1</locus>, Christine de Pizan presents the manuscript to Charles VI.</item>
+                      <item>Fol. <locus>3</locus>, Christine and the Sybille.</item>
+                      <item>Fol. <locus>5</locus>, Pegasus and the Fountain of Wisdom.</item>
+                      <item>Fol. <locus>10</locus>, The Ascent to Heaven.</item>
+                      <item>Fol. <locus>12</locus>, Christine and the Syblle in Heaven.</item>
+                      <item>Fol. <locus>15</locus>, The Heart of Reason in Heaven.</item>
+                      <item>Fol. <locus>19</locus>, Christine and the Sybille Arrive to the Heart of Reason.</item>
+                      <item>Fol. <locus>40</locus>, Christine and the Sybille Before Reason.</item>
+                      <item>Fol. <locus>42</locus>, Christine teaching her son.</item>
+                      <item>Fol. <locus>45</locus>, Christine presents the manuscript to the Virgin. </item>
+                      <item>Fol. <locus>48</locus>, Country scene.</item>
+                      <item>Fol. <locus>63</locus>, Christ of Mercy.</item>
+                      <item>Fol. <locus>65</locus>, Christine presents her manuscriopt.</item>
+                      <item>Fol. <locus>66</locus>, Encounter of Lovers. </item>
+                      <item>Fol. <locus>71</locus>, Tournament. </item>
+                      <item>Fol. <locus>74</locus>, Lady in a Litter. </item>
+                      <item>Fol. <locus>76</locus>, The Lover Entertains a Friend.</item>
+                   </list>
+            
+            </note>
+            
+            <note rend="BINDING">
+               
+               <p>The original binding was made of wood covered with black silk. The inventory of the library of the Bourbon in the castle of Moulins reported that the binding was done in 1523: "<hi rend="italics"> couver[t] de veloux rouge et tenné garny [...] de fermans de leton, de boulhons et carrées.</hi>" It was replaced in the early 19th century with the current calf binding with a marbled festoon gilded back, with 5 nerves, dated to the 20th century. There are also traces of gilding and carving. </p>
+            </note>
+            
+            <note rend="HISTORY">
+               
+               <p> Created circa 1406-1408, the manuscript constitutes the third volume of the compilation of the works of Christine de Pizan acquired by the Duke of Berry in 1408. It was very likely intended for Louis d'Orleans before his death on November 23rd, 1407.</p>
+               <p>Provenance: Jean de Berry, his daughter Marie de Berry, duchess of Bourbon; François I, who seized the property of the constable Charles of Bourbon in 1523. Old shelfmarks: 862 (Dupuy); 7216 (Regius).</p>
+                   </note>
+            
+            <note rend="TEXT">
+               
+               <p>Contains a compilation of her works in the following order: </p>
+               <list>
+                  <item><hi rend="italics">Chemin de long estude</hi> (ff.  <locus from="1" to="41">1-41</locus></item>
+                  <item><hi rend="italics">Enseignemens </hi> (ff.  <locus from="42" to="45">42-45</locus></item>
+                  <item><hi rend="italics">Oraysom Nostre Dame</hi> (ff.  <locus from="45" to="47">45-47</locus></item>
+                  <item><hi rend="italics"> XV. Joyes Nostre Dame </hi> (ff.  <locus from="47" to="48">47-48</locus>)</item>
+                  <item><hi rend="italics"> Livre de la pastoure</hi> (ff. <locus from="48" to="62">48-62</locus>)</item>
+                  <item><hi rend="italics"> Oroyson de Nostre Seigneur</hi> (ff.  <locus from="63" to="65">63-65</locus>)</item>
+                  <item> <hi rend="italics">Livre du duc des vrays amans </hi> (ff. <locus from="65" to="98">65-98</locus> </item>
+                  
+               </list>      
+                 
+              </note>
+            
+            <note rend="AUTHOR">
+              
+               <p>
+*The information given here comes from direct observation and from Ouy, Gilbert, Christine Reno and Inès Villela-Petit.<hi rend="italics"> Album Christine de Pizan </hi>. Turnhout: Brepols, 2012. </p>
+<p> Description by Mónica Ann Walker Vadillo</p>
+            
+            </note>
+         
+         </notesStmt>
+         
+         <sourceDesc>
+            
+            <bibl>
+               
+               <note type="format">manuscript</note>
+               
+               <note type="commonName">Français 836</note>
+               
+               <title>Compilation of the Works of Christine de Pizan ("Manuscrit du Duc, Vol. III)</title>
+
+               
+               <extent>
+                  
+                  <measure quantity="98" unit="folios"> 98 folios</measure>
+                  
+                  <dimensions>
+                     
+                     <height unit="mm">350</height>
+                     
+                     <width unit="mm">259</width>
+                  
+                  </dimensions>
+               
+               </extent>
+               
+               <note type="illustrations">18</note>
+               
+               
+               
+               
+               
+               <note type="material">parchment</note>
+               
+               <pubPlace>Paris, France</pubPlace>
+     
+               <date notAfter="1500" notBefore="1400">15th century</date>
+            
+            </bibl>
+            
+            <msDesc>
+               
+               <msIdentifier>
+                  
+                  <settlement>Paris</settlement>
+                  
+                  <repository>Bibliothèque nationale de France</repository>
+                  
+                  <idno>Français 836</idno>
+               
+               </msIdentifier>
+            
+               <msContents>
+                  <msItem n="1">
+                     <locus from="1r" to="98v">1r-98v</locus>
+                     <title>Compilation of the Works of Christine de Pizan ("Manuscrit du Duc, Vol. III) </title>
+                     <note type="textid">Compilaton of the Works of Christine de Pizan</note>
+                     <note type="folios">98</note>
+                     <note type="illustrations">18</note>
+                     <note type="linesPerColumn">42</note>
+                     <note type="leavesPerGathering">8</note>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         
+         </sourceDesc>
+      
+      </fileDesc>
+   
+   </teiHeader>
+   
+   <text>
+      
+      <body>
+         
+         <div> </div>
+      
+      </body>
+   
+   </text>
+
+</TEI>

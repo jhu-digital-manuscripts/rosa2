@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.011r.tif" reader="John Dee" signature="[Ciiij]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="venere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>♀</marginalia_text>
+                    <symbol_in_text name="Venus"/>
+                </position>
+            </language>
+            <translation>Venus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="marte" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>materia</marginalia_text>
+                </position>
+            </language>
+            <translation>Material.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iovis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>♃</marginalia_text>
+                    <symbol_in_text name="Jupiter"/>
+                </position>
+            </language>
+            <translation>Jupiter.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Saturno" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>♄</marginalia_text>
+                    <symbol_in_text name="Saturn"/>
+                </position>
+            </language>
+            <translation>Saturn.</translation>
+        </marginalia>
+
+        <marginalia anchor_text="lang leben" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vita longa ex ♄</marginalia_text>
+                    <symbol_in_text name="Saturn"/>
+                </position>
+            </language>
+            <translation>A long life [results] from Saturn.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tribus primis</marginalia_text>
+                </position>
+            </language>
+            <translation>On the three primes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="schmaragdischen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>smaragdus;</marginalia_text>
+                </position>
+            </language>
+            <translation>Emerald.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Saphirische" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Saphirus;</marginalia_text>
+                </position>
+            </language>
+            <translation>Saphire.</translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="floribus aeris" type="straight"/>
+        <underline language="DE" method="pen" text="Aestiomenischen vn[d] cancrenischen" type="straight"/>
+        <underline language="DE" method="pen" text="lang leben" type="double"/>
+        <underline language="DE" method="pen" text="Vber die alle sind" type="straight"/>
+        <underline language="DE" method="pen" text="safft vnd feuchte" type="straight"/>
+        <underline language="DE" method="pen" text="durch sy" type="double"/>
+        <underline language="DE" method="pen" text="schmaragdischen safft" type="double"/>
+        <underline language="DE" method="pen" text="gedulden in jnen kein verbringen der unkeuschheit on tödtlichen schaden:" type="straight"/>
+        <underline language="DE" method="pen" text="saffts" type="straight"/>
+        
+        <symbol name="Venus" place="left_margin" text="venere"/> 
+        <symbol name="Jupiter" place="left_margin" text="Iouis"/>
+        <symbol name="Saturn" place="left_margin" text="Saturno"/> 
+
+        <mark method="pen" name="scribble" place="intext"/>
+        
+        <numeral place="intext" text="auß">1</numeral>
+        <numeral place="intext" text="durch sy">2</numeral>
+        
+        <errata amendedtext="materia" copytext="Marte" language="DE"/>
+        
+    </annotation>
+</transcription>

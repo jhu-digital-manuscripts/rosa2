@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.054v.tif" pagination="92" reader="John Dee" signature="[h 4[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Si uero mulieris sit ista genitura" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Mulieris genitura.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The constellation of a woman.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="signorum frequenter qualitas" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Signorum qualitas.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The quality of signs.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pollinctores" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Pollinctores.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Undertakers.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Cautio vbiq[ue] ad libe[n]da.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A protection everywhere to be pleased.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="crescens uel plena luminibus" type="straight"/>
+        <underline language="LA" method="pen" text="sed libidinosi" type="straight"/>
+        <underline language="LA" method="pen" text="☾ minuta lumine" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; plena luminibus" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; sit nocturna genitura" type="straight"/>
+        <underline language="LA" method="pen" text="plena lumine in diurna genitura" type="straight"/>
+        <underline language="LA" method="pen" text="nocturna genitura minuta luminibus" type="straight"/>
+        <underline language="LA" method="pen" text="defluens ☾ minuta luminibus, per diem ad ♄ feratur" type="straight"/>
+        <underline language="LA" method="pen" text="crescens lumine feratur" type="straight"/>
+        <underline language="LA" method="pen" text="defluens ☾ minuta lumine" type="straight"/>
+        <underline language="LA" method="pen" text="in diurna genitura ferat[ur] ad" type="straight"/>
+        <underline language="LA" method="pen" text="☾ plena luminibus" type="straight"/>
+        <underline language="LA" method="pen" text="aut cresce[n]s" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+    </annotation>
+</transcription>

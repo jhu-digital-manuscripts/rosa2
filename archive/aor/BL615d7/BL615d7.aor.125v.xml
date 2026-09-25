@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.125v.tif" pagination="[125v]" reader="John Dee" signature="[Qv[v]]"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="Cimi" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Note Policy of theyr Cimi making and using</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="con quella astutia egli teneua tutti in obedienza" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Note this subtile practise of the princes to kepe theyr subiects in aw, &amp; order [...] pretend a diuine oracl[e]</marginalia_text>  <!--JG: Unsure about word after 'order'-->
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="miglior Cimi" type="straight"/>
+        <underline language="IT" method="pen" text="il Cimi, o i Cimini" type="straight"/>
+        <underline language="IT" method="pen" text="costume di rubbarsi i Cimi l'uno all'altro" type="straight"/>
+        <underline language="IT" method="pen" text="subito il Cimi gridò forte, &amp; parlò nella" type="straight"/>
+        <underline language="IT" method="pen" text="loro" type="straight"/>
+        <underline language="IT" method="pen" text="si scoperse" type="double"/>
+        <underline language="IT" method="pen" text="era fabricato" type="double"/>
+        <underline language="IT" method="pen" text="egli uuoto" type="straight"/>
+        <underline language="IT" method="pen" text="accommodata una tromba" type="straight"/>
+        <underline language="IT" method="pen" text="zarabottana" type="straight"/>
+        <underline language="IT" method="pen" text="un lato" type="double"/>
+        <underline language="IT" method="pen" text="oue era una persona" type="straight"/>
+        <underline language="IT" method="pen" text="parlaua quel, che il Cacique uolea" type="straight"/>
+        <underline language="IT" method="pen" text="ei dicesse" type="straight"/>
+        <underline language="IT" method="pen" text="narrato" type="straight"/>
+        <underline language="IT" method="pen" text="uedendo" type="double"/>
+        <underline language="IT" method="pen" text="instanza pregolli a non dir cosa" type="straight"/>
+        <underline language="IT" method="pen" text="sudditi, ne ad" type="double"/>
+        <underline language="IT" method="pen" text="egli teneua tutti in" type="straight"/>
+        <underline language="IT" method="pen" text="obedienza" type="double"/>
+        <underline language="IT" method="pen" text="colore" type="triple"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>   
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.108v.tif" pagination="[108v]" reader="John Dee" signature="[Oiiij[v]]"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="dal buon Cacique" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>The Good Cacique.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Cauallo" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A horse</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="il quale gli" type="straight"/>
+        <underline language="IT" method="pen" text="legate in piazza" type="straight"/>
+        <underline language="IT" method="pen" text="alla morte" type="double"/>
+        <underline language="IT" method="pen" text="veduto dal buon Cacique" type="straight"/>
+        <underline language="IT" method="pen" text="lagrime ottenne loro" type="double"/>
+        <underline language="IT" method="pen" text="suoi sudditi haueano" type="straight"/>
+        <underline language="IT" method="pen" text="Christiani, i quali erano partiti, per" type="straight"/>
+        <underline language="IT" method="pen" text="spauentandoli col Cauallo, gli hauea liberati" type="straight"/>
+        <underline language="IT" method="pen" text="di CCCC" type="straight"/>
+        <underline language="IT" method="pen" text="temendo, che il Caual passasse il fiume, volando" type="straight"/>
+        <underline language="IT" method="pen" text="andare à scoprir" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+    
+    
+</transcription>

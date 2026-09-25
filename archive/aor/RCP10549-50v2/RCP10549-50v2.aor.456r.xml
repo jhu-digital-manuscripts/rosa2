@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.456r.tif" pagination="363" reader="John Dee" signature="[Zz.vi.]"/>   
+    <annotation>
+        
+        <marginalia anchor_text="virgula diuina" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>virgula diuina.</marginalia_text>
+                </position>
+            </language>
+            <translation>Divine staff.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="totum se in cognitione &amp; scientia collocaret" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>totu[m] se in cognitione &amp; scie[n]tia collocare</marginalia_text> 
+                </position>
+            </language>
+            <translation>To place oneself competely in knowledge and understanding.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="docere, tum discere vellet: tum audire, tum dicere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Docere. discere. audire. dicere.</marginalia_text>
+                </position>
+            </language>
+            <translation>To teach, learn, hear, speak.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ne conseruandae quidem patriae causa sapiens" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Qua[e]da[m] (no[n] patria[e] co[n]serua[n]d[a]e causa) no[n] aget sapiens.</marginalia_text>
+                </position>
+            </language>
+            <translation>A certain person will not act wisely (not for the sake of preserving the fatherland).</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="genus officiorum excellere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>officioru[m] pra[e]stantia</marginalia_text>
+                </position>
+            </language>
+            <translation>The excellence of offices.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="In ipsa autem co[m]munitate sunt gradus officioru[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>gradus officioru[m] in co[mmun]itate.</marginalia_text>
+                </position>
+            </language>
+            <translation>The position of offices in a community.</translation>
+        </marginalia>
+         
+        <underline language="LA" method="pen" text="virgula diuina" type="straight"/>
+        <underline language="LA" method="pen" text="se in cognitione &amp; scientia collocaret" type="straight"/>
+        <underline language="LA" method="pen" text="sit vt agere considerate pluris sit, quàm cogitare prudenter. Atque" type="straight"/>
+       
+       <mark method="pen" name="bracket" place="right_margin"/>
+       <mark method="pen" name="bracket" place="right_margin"/>
+       <mark method="pen" name="X_sign" place="right_margin"/>
+        
+    </annotation>
+</transcription>

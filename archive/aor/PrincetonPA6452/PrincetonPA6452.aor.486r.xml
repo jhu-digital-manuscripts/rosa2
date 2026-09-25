@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.486r.tif" reader="Harvey" signature="K2[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text> 
+                        4. LL. Anci.
+                    </marginalia_text>
+                <person name="Ancus Marcius"/>
+                </position>
+            </language>
+            <translation>
+                4. The laws of Ancus.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Sacra priuata prohiberi" type="straight"/>
+        <underline language="LA" method="pen" text="publicè probatis" type="straight"/>
+        <underline language="LA" method="pen" text="Sacra publica fastis descripta" type="straight"/>
+        <underline language="LA" method="pen" text="autem fasti, libri, in" type="straight"/>
+        <underline language="LA" method="pen" text="Res repeti certa caerimonia" type="straight"/>
+        <underline language="LA" method="pen" text="conceptisq[ue] uerbis" type="straight"/>
+        <underline language="LA" method="pen" text="iustam causam" type="straight"/>
+        <underline language="LA" method="pen" text="iniuriosi non dedantur noxae" type="straight"/>
+        <underline language="LA" method="pen" text="Senatum" type="straight"/>
+        <underline language="LA" method="pen" text="publicum urbis consilium" type="straight"/>
+        <underline language="LA" method="pen" text="certa formula de" type="straight"/>
+        <underline language="LA" method="pen" text="publico consilio &amp; decreto" type="straight"/>
+        <underline language="LA" method="pen" text="latrocinium, si priuatim" type="straight"/>
+        <underline language="LA" method="pen" text="Bellum indici certa" type="straight"/>
+        <underline language="LA" method="pen" text="bellum" type="straight"/>
+        <underline language="LA" method="pen" text="iuris tutamentum, &amp; publica" type="straight"/>
+        <underline language="LA" method="pen" text="certo iure belli debet" type="straight"/>
+        <underline language="LA" method="pen" text="pax firma, tanquam belli finis" type="straight"/>
+        <underline language="LA" method="pen" text="Sacra regia" type="straight"/>
+        <underline language="LA" method="pen" text="consularia" type="straight"/>
+        <underline language="LA" method="pen" text="mandanda alijs in absentia regis" type="straight"/>
+        
+        <symbol name="JC" place="right_margin"/>
+        <symbol language="LA" name="Mars" place="right_margin" text="de bello inferendo"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!-- descri -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- describun -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- su -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- re -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- ex -->
+        
+        <mark method="pen" name="dot" place="intext"/> <!--fasti, de-->
+        <mark method="pen" name="dot" place="intext"/> <!--redantur, uel-->
+        
+    </annotation>
+</transcription>

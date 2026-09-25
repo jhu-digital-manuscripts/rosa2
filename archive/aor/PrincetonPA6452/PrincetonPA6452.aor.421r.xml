@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.421r.tif" pagination="825" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        Ingrata patria s[upr]a.
+                    </marginalia_text>
+                    <internal_ref text="s[upr]a">
+                        <target ref="PrincetonPA6452:00000708" text="[686]"/>
+                        <target ref="PrincetonPA6452:00000711" text="[689]"/>
+                    </internal_ref>
+                </position>
+            </language>
+         <translation>
+            An ungrateful fatherland, [see] above.
+         </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="seditiosos &amp; leues milites" type="straight"/>
+        <underline language="LA" method="pen" text="nullam in exercitu seditione[m] habuit" type="straight"/>
+        <underline language="LA" method="pen" text="Eadem seueritas imperij" type="straight"/>
+        <underline language="LA" method="pen" text="preciu[m] rectè" type="straight"/>
+        <underline language="LA" method="pen" text="poenam" type="straight"/>
+        <underline language="LA" method="pen" text="tam nocens reus fuit" type="straight"/>
+        <underline language="LA" method="pen" text="cuius uitia uitae tot" type="straight"/>
+        <underline language="LA" method="pen" text="Quirites uos" type="straight"/>
+        <underline language="LA" method="pen" text="milites uideor" type="straight"/>
+        <underline language="LA" method="pen" text="apud exercitu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="plebem urbana[m]" type="straight"/>
+        <underline language="LA" method="pen" text="milites" type="straight"/>
+        <underline language="LA" method="pen" text="ijsdem manibus discerpitis" type="straight"/>
+        <underline language="LA" method="pen" text="Macedonas" type="straight"/>
+        <underline language="LA" method="pen" text="L.Paulum minorem" type="straight"/>
+        <underline language="LA" method="pen" text="aut maiore[m] imperatorem" type="straight"/>
+        <underline language="LA" method="pen" text="triumphus" type="straight"/>
+        <underline language="LA" method="pen" text="ne inuidiae" type="straight"/>
+        <underline language="LA" method="pen" text="ingrati animi aduersus clarissimu[m] quemq[ue] ciuem opinione[m] habeat" type="straight"/>
+        <underline language="LA" method="pen" text="populum Atheniensem" type="straight"/>
+        <underline language="LA" method="pen" text="lacerante[m] inuidia principes suos" type="straight"/>
+        <underline language="LA" method="pen" text="Satis peccatum" type="straight"/>
+        <underline language="LA" method="pen" text="Camillo à maioribus" type="straight"/>
+        <underline language="LA" method="pen" text="in P. Africano" type="straight"/>
+        <underline language="LA" method="pen" text="suisse domitoris" type="straight"/>
+        <underline language="LA" method="pen" text="Africae" type="straight"/>
+        <underline language="LA" method="pen" text="gloria si par illis uiris L. Paulus" type="straight"/>
+        <underline language="LA" method="pen" text="enim aut Africani, aut Pauli similis esse" type="straight"/>
+        <underline language="LA" method="pen" text="ingrata et inimica bonis" type="straight"/>
+        
+        <symbol name="SS" place="head"/>
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!-- ma -->
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="preciu[m] recte"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="poenam"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- acce -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- af -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- di -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- prohi -->
+        <mark method="pen" name="hash" place="left_margin"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="lacerante[m] inuidia principes suos"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="Camillo à maioribus"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="dot" place="intext"/> <!--est, que[m]-->
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="Africano"/>
+        <mark method="pen" name="equal_sign" place="intext"/> <!-- Paulus -->
+    
+    </annotation>
+</transcription>

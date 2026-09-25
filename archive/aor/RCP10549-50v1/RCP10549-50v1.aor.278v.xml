@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.278v.tif" pagination="536" reader="John Dee" signature="[lll.iiii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="ciuis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ciuis</marginalia_text>
+                </position>
+            </language>
+            <translation>Citizen.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="cecidit, quàm qui in causa animam profudit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>cadere a[n]i[m]am p[ro]fundere</marginalia_text>
+                </position>
+            </language>
+            <translation>To fall. To pour out life.</translation>
+        </marginalia> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Conclusio</marginalia_text>
+                </position>
+            </language>
+            <translation>Conclusion.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="misericordiam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Misericordia</marginalia_text>
+                </position>
+            </language>
+            <translation>Mercy.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="liberationem culpae, sed errati veniam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>liberatio culpe venia errati</marginalia_text>
+                </position>
+            </language>
+            <translation>Absolution from guilt. Pardon for errors [Loeb 252, 459].</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="vnde est orsa" type="straight"/>
+        <underline language="LA" method="pen" text="mea, maximas tibi omnes gratias agimus" type="straight"/>
+        <underline language="LA" method="pen" text="asta[n]tibus omnibus" type="straight"/>
+        <underline language="LA" method="pen" text="vt ignoratione tua ad hominis miseri salutem abuterer" type="straight"/>
+        <underline language="LA" method="pen" text="qua plurimi sunt" type="straight"/>
+        <underline language="LA" method="pen" text="Bellu[m] subito" type="straight"/>
+        
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">22.18</numeral>
+        <numeral place="left_margin">8.15</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">12</numeral>
+        
+        <drawing anchor_text="Ciuis" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

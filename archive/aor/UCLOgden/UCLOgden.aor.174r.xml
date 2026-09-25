@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.174r.tif" pagination="87" reader="John Dee" signature="H 2"/>
+    <annotation>
+        
+        <marginalia anchor_text="uirtus enim planetae in tribus consideratur gradibus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Virtus planeta[e] in tribus consideratur gradibus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The Virtue of planets is considered in three degrees.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="separationibus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Applicatio. Separatio.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Application. Separation.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Eandem in impediendo uim habet dominus 2, quam dominus 8. Similiter dominus , eandem quam dominus 12" type="straight"/>
+        <underline language="LA" method="pen" text="Nisi beneuolus planeta prohibeat, quodcunq[ue] dat Mars, reuocat" type="straight"/>
+        <underline language="LA" method="pen" text="signo, uirtus enim planetae in tribus consideratur gradibus scilicet in quo est, &amp; in praecedenti, ac succedenti" type="straight"/>
+        <underline language="LA" method="pen" text="Fiunt in mundo multa incommoda, quando erit in uno mense utriusq[ue] luminaris eclipsis, &amp; praecipue in his locis, in quibus est significatio eorum specialis" type="straight"/>
+        <underline language="LA" method="pen" text="Si Mars fuerit almutaz in natiuitate, &amp; no[n] fuerit iunctus beneuolis, significat quod natus incendium patietur" type="straight"/>
+        <underline language="LA" method="pen" text="cum Mars super Saturnum fuerit eleuatus" type="straight"/>
+        <underline language="LA" method="pen" text="Si pars coniugii uiri" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark colour="red" method="chalk" name="bracket" place="right_margin"/>
+        <mark colour="red" method="chalk" name="dash" place="right_margin"/>
+        <mark colour="red" method="chalk" name="dash" place="right_margin"/>
+        <mark method="chalk" name="vertical_bar" place="right_margin"/> 
+        <mark colour="red" method="chalk" name="bracket" place="right_margin"/>
+        <mark colour="red" method="chalk" name="triple_dash" place="right_margin"/>
+        <mark colour="red" method="chalk" name="bracket" place="right_margin"/> 
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

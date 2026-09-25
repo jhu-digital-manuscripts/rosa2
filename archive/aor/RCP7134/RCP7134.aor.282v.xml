@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.282v.tif" pagination="[275v]" reader="John Dee" signature="[ZZ iij[v]]"/>
+    <annotation>
+        
+        <mark method="pen" name="dot" place="intext"/> <!--Venere dignitatem-->
+        <mark method="pen" name="comma" place="intext"/> <!--decernit Luna-->
+        
+        <errata amendedtext="[deleted]" copytext="1905" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="♃ 9.6." language="LA"/>
+        
+        <table place="intext" type="astrological_chart">
+            <tr>
+                <th/>
+                <th label="House"/>
+                <th label="Position"/>
+            </tr>
+            <tr>
+                <td>Jupiter</td>
+                <td>2</td>
+                <td>9.6.</td>
+            </tr>
+        </table>
+        
+    </annotation>
+</transcription>

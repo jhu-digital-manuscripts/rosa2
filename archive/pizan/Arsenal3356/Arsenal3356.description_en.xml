@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <title>Christine de Pizan</title>
+         
+         </titleStmt>
+         
+         <publicationStmt>
+            
+            <distributor>MSEL</distributor>
+         
+         </publicationStmt>
+        
+         <sourceDesc> 
+            
+            <bibl>
+               <note type="format">manuscript</note>
+               <note type="commonName">Arsenal 3356</note>
+               <title>Christine de Pizan</title>
+
+               <extent>
+                  <measure quantity="548" unit="folios">548</measure>
+                  <dimensions>
+                     
+                     <height unit="mm">192</height>
+                     <width unit="mm">273</width>
+                  
+                  </dimensions>
+               
+               </extent>
+               
+               <note type="illustrations">0</note>
+               
+               <note type="material">paper</note>
+               
+               <pubPlace>France</pubPlace>
+               
+               <date notBefore="1401" notAfter="1500">15th century</date>
+            
+            </bibl>
+            
+            <msDesc>
+               
+               <msIdentifier>
+                  
+                  <settlement>Paris</settlement>
+                  
+                  <repository>Bibliothèque nationale de France</repository>
+                  
+                  <idno>Arsenal 3356</idno>
+               
+               </msIdentifier>
+            
+               <msContents>
+                  <msItem n="1">
+                     <locus from="1r" to="264r">1r-264r</locus>
+                     <title>Recueil</title>
+                     <note type="textid">Recueil</note>
+                     <note type="folios">264</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">32</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">1</note>
+                  </msItem><msItem n="2">
+                     <locus from="1r" to="105r">1r-105r</locus>
+                     <title>Cy commance le livre que le chevalier de La Tour pur l'enseingnement des dames et damoiselles...</title>
+                     <note type="textid">Cy commance le livre que le chevalier de La Tour pur l'enseingnement des dames et damoiselles...</note>
+                     <note type="folios">105</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">32</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">1</note>
+                  </msItem><msItem n="3">
+                     <locus from="105v" to="126r">105v-126r</locus>
+                     <title>Libre de Mélibée et Prudence par Albertan de Brescia</title>
+                     <note type="textid">Libre de Mélibée et Prudence par Albertan de Brescia</note>
+                     <note type="folios">21</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">32</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">1</note>
+                  </msItem><msItem n="4">
+                     <locus from="129r" to="264r">129r-264r</locus>
+                     <title>Cy commance le livre des troys vertuz a l'enseignement des dames par Christine de Pisan</title>
+                     <note type="textid">Cy commance le livre des troys vertuz a l'enseignement des dames par Christine de Pisan</note>
+                     <note type="folios">135</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">32</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">1</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         
+         </sourceDesc>
+      
+      </fileDesc>
+   
+   </teiHeader>
+   
+   <text>
+      
+      <body>
+         
+         <div> </div>
+      
+      </body>
+   
+   </text>
+
+</TEI>

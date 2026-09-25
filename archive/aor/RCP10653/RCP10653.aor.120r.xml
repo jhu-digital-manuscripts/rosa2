@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.120r.tif" pagination="231" reader="John Dee" signature="V ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Cecidit inter caeteros Penda rex nequissimus qui tot nobiles vita temporali priuauit" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Penda interimitur
+                    </marginalia_text>
+                    <person name="Penda of Mercia"/>
+                </position>
+            </language>
+            <translation>
+                Penda of Mercia is killed.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="filiam suam" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        filia Oswij
+                    </marginalia_text>
+                    <person name="Oswiu"/>
+                </position>
+            </language>
+            <translation>
+                The daughter of Oswiu.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hilda" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Hilda
+                    </marginalia_text>
+                    <person name="Hilda of Whitby"/>
+                </position>
+            </language>
+            <translation>
+                Hilda of Whitby.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Streneshalh" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        streneshalh.     
+                    </marginalia_text>
+                    <location name="Whitby"/>
+                </position>
+            </language>
+            <translation>
+                Whitby
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Australium Merciorum" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Mercij Australes.  
+                    </marginalia_text>
+                    <location name="Mercia"/>
+                </position>
+            </language>
+            <translation>
+                Southern Mercia. 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sacra virginitate" type="straight"/>
+        <underline language="LA" method="pen" text="paganum trities" type="double"/>
+        <underline language="LA" method="pen" text="caeteros Penda rex nequissimus" type="straight"/>
+        <underline language="LA" method="pen" text="In VVinvved amne vindicata est caedes Annae" type="straight"/>
+        <underline language="LA" method="pen" text="dedit filiam" type="straight"/>
+        <underline language="LA" method="pen" text="Herteseie" type="straight"/>
+        <underline language="LA" method="pen" text="Streneshalh" type="straight"/>
+        <underline language="LA" method="pen" text="regnum eiusdem Aethelheri filijs Eadvvolfo &amp; Eadvvaldo" type="straight"/>
+        <underline language="LA" method="pen" text="Peadae" type="straight"/>
+        <underline language="LA" method="pen" text="Pendae" type="straight"/>
+        <underline language="LA" method="pen" text="quòd" type="straight"/>
+        <underline language="LA" method="pen" text="cognatus eius" type="double"/>
+        <underline language="LA" method="pen" text="Australium Merciorum" type="straight"/>
+        <underline language="LA" method="pen" text="nomine Dina[m]" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.209v.tif" pagination="398" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="confundis &amp; perturbas" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        co[n]fundere perturbare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To upset, to irritate.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        horati[us] Invetitu[m] ruim[us] 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                We destroy [...]
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Lex Papyria" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Lex papyria
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Law of Papirius. <!-- FSF: I have not been able to identify this person -->
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Reip. naufragio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Reipub. naufragiu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Shipwreck of the state.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vicatim" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        vicatim
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Street by street.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Comparatio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Comparison.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="licentiae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Lice[n]tia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Licence.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Rex disce à gentili" type="straight"/>
+        <underline language="LA" method="pen" text="haec ita confundis" type="straight"/>
+        <underline language="LA" method="pen" text="vt quicu[m]que velit, quod velit, quomodo velit, possit dedicare" type="straight"/>
+        <underline language="LA" method="pen" text="neque erat causa cur prohibendo non tam deterrere videretur, quam admonere" type="straight"/>
+        <underline language="LA" method="pen" text="vetat aedeio iniussu plebis consecrari" type="straight"/>
+        <underline language="LA" method="pen" text="ac non vox sceleris &amp; crudelitatis tuae" type="straight"/>
+        <underline language="LA" method="pen" text="tibi ista no[n] scita, sed porte[n]ta conscriberet, esses" type="straight"/>
+        <underline language="LA" method="pen" text="regum appellationes venales erant" type="straight"/>
+        <underline language="LA" method="pen" text="mirum est, praesertim in furore animi &amp; caecitate, multa illu[m] &amp; te fefellisse" type="straight"/>
+        <underline language="LA" method="pen" text="non qualem tu affers sceleris plenam &amp; furoris" type="straight"/>
+        <underline language="LA" method="pen" text="Quaeso Pontifices, &amp; hominem cum homine, &amp; te[m]pus cum tempore, &amp; rem cum re co[m]parate" type="straight"/>
+        <underline language="LA" method="pen" text="pl. scelere &amp; audacia singulari" type="straight"/>
+        <underline language="LA" method="pen" text="Tu, cum ferro, cum metu, cum edictis, cum priuilegiis, cump praesentibus copiis perditorum, absentis exercitus terrore &amp; minis, Consulum sociate,              &amp; nefario foedere seruitute oppressam ciuitate[m] teneres, libertatis signum posuisti magis ad ludibrium impude[n]tiae, quàm ad simulatione[m] religionis. Ille in" type="straight"/>
+        <underline language="LA" method="pen" text="meriti cruore, ac penè ossibus simulacrum non libertatis publicae, sed licentiae collocasti" type="straight"/>
+        <underline language="LA" method="pen" text="nefando quodam atque inaudito instituto" type="straight"/>
+        
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+        <drawing anchor_text="Comparatio" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="Quaeso Pontifices, &amp; hominem cum homine, &amp; te[m]pus cum tempore, &amp; rem cum re co[m]parate" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing anchor_text="Lice[n]tia" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+        
+    </annotation>
+</transcription>

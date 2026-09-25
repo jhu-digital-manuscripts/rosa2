@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.frontmatter.flyleaf.003r.tif" pagination="title page" reader="Harvey" signature="[Ai[r]]"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>A[nnales] Jul[...]n.</marginalia_text> 
+                        <!--JG: Unsure about transcription-->
+                        <!-- CG: Not sure about this either. -->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia date="1572" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>GabrielHaruey. 1572.</marginalia_text> 
+                    <person name="Gabriel Harvey"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Gabrielis Harueij. </marginalia_text> 
+                    <person name="Gabriel Harvey"/>
+                </position>
+            </language>
+            <translation>Gabriel Harvey's.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>x [pound]. </marginalia_text> <!--JG: 'li' is the symbol for pound, but it's much more likely that Harvey meant 'shilling' -->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Vnusquisque Fortunae faber.</marginalia_text> 
+                    <X-ref book_title="Sententiae Appij Claudij" language="LA" person="Appius Claudius" text="Vnusquisque Fortunae faber."/>
+                </position>
+            </language>
+            <translation>"Every single man is the artisan of his own destiny."</translation>
+        </marginalia>
+        
+        <symbol name="SS" place="intext"/>
+        
+        <mark method="pen" name="semicolon" place="intext"/> <!--castilio diuided-->
+        <mark method="pen" name="comma" place="intext"/> <!--necessary and-->
+        <mark method="pen" name="comma" place="intext"/> <!--gentilmen and-->
+        <mark method="pen" name="comma" place="intext"/> <!--gentilwomen abiding-->
+        <mark method="pen" name="semicolon" place="intext"/> <!--place done-->
+        
+    </annotation>
+</transcription>

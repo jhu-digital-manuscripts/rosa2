@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.291r.tif" pagination="565" reader="Harvey" signature="bbb[r]"/>
+    <annotation>
+
+        <underline language="LA" method="pen" text="Boij" type="straight"/>
+        <underline language="LA" method="pen" text="gens minimè ad morae taediu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Romana restitit primò" type="straight"/>
+        <underline language="LA" method="pen" text="deinde signa acriter intulit" type="straight"/>
+        <underline language="LA" method="pen" text="ultrà sustinuerunt" type="straight"/>
+        <underline language="LA" method="pen" text="Galli, quin terga uerterent" type="straight"/>
+        <underline language="LA" method="pen" text="praelio supra quadraginta" type="straight"/>
+        <underline language="LA" method="pen" text="millia hominum caesa" type="straight"/>
+        <underline language="LA" method="pen" text="quingenta septem signa militari" type="straight"/>
+        <underline language="LA" method="pen" text="carpenta quadringenta triginta" type="straight"/>
+        <underline language="LA" method="pen" text="Castra eo" type="straight"/>
+        <underline language="LA" method="pen" text="Castella inde" type="straight"/>
+        <underline language="LA" method="pen" text="consulem defeceru[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="aduersamq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="prospera pugna obliterauerit" type="straight"/>
+        
+        <mark language="LA" method="pen" name="equal_sign" place="left_margin" text="prospera pugna obliterauerit"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!-- cura -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- Mar -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- quadragin -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- ca -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- intercludere -->
+        
+        <mark method="pen" name="dot" place="intext"/> <!--capta, &-->
+        <mark method="pen" name="dot" place="intext"/> <!--multos, ex-->
+        
+        <errata amendedtext="militaria" copytext="militari" language="LA"/>
+        
+    </annotation>
+    
+</transcription>

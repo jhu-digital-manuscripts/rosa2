@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.045v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Maximianum senatorem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Maximianus Senator Romanus. J[ohn] D[ee] suspicor hunc Maximu[m] dicendu[m]: no[n] Maximianu[m]
+                    </marginalia_text>
+                    <person name="Maximianus"/>
+                    <person name="John Dee"/>
+                </position>
+            </language>
+            <translation>Maximianus, Roman senator. John Dee, I suspect that this man should be called Maximus, not Maximianus</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Leoninus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Leolinus Maximiani P[ate]r
+                    </marginalia_text>
+                    <person name="Leolinus"/>
+                    <person name="Maximianus"/>
+                </position>
+            </language>
+            <translation>Leolinus, father of Maximianus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Gratianum fratremque suum Valentinianum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Gratianus Vale[n]tinian[us] } Imp[eratores]
+                    </marginalia_text>
+                    <person name="Gratianus"/>
+                    <person name="Vakentinianus"/>
+                </position>
+            </language>
+            <translation>Gratianus and Valentinianus, emperors.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Maximianu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Maximianus
+                    </marginalia_text>
+                    <person name="Maximianus"/>
+                </position>
+            </language>
+            <translation>Maximianus</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        chronologia Ger[ardi] Merc[atoris] { Fl. Valentinianus Junior et Flauius Gratianus qui imperant in occide[n]te[m]. Valentinianus annis 16. me[n]s[es] 5. dies. 24 Onuphrias. Gratianus vero annis 7 m[enses] 9. dies 9. Onup[hrias]. 
+                        Anno Chri[sti] 375 obijt eoru[m] P[ate]r Valentinianus Augustus a[e]tatis suae anno 55. Imperij sui. 11.  me[nses] 8. die[s] 22.
+                    </marginalia_text>
+                    <person name="Gerardus Mercator"/>
+                    <person name="Valentinianus II"/>
+                    <person name="Gratian"/>
+                    <person name="Valentinianus I"/>
+                    <person name="Saint Onuphrius"/>
+                </position>
+            </language> 
+            <translation>Chronology of Gerardus Mercator { Valentinianus II and Flavius Gratianus who ruled in the west. Valentinianus 16 years, 3 months, 24 days. Onuphrias. 
+            Gratianus truely 7 years, 9 months, 9 days. Onuphrias. In the year of the Lord 375 their father Valentinianus I died, in the Summer of his 55th year. His rule: 11 [years], 8 months, 22 days.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dux" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        comes
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Knight.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Leoninus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Leolinus
+                    </marginalia_text>
+                    <person name="Leolinus"/>
+                </position>
+            </language>
+            <translation>Leolinus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Vnicam ta[n]tu[m] filiam habens" type="straight"/>
+        <underline language="LA" method="pen" text="Conanu[m] meriadocu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="dux" type="straight"/>
+        <underline language="LA" method="pen" text="vt Maximianum senatorem" type="straight"/>
+        <underline language="LA" method="pen" text="Leoninus Co[n]stantini auu[n]culus de" type="straight"/>
+        <underline language="LA" method="pen" text="ipsum genuerat" type="straight"/>
+        <underline language="LA" method="pen" text="Mauricium filium" type="straight"/>
+        <underline language="LA" method="pen" text="Erat tunc maxima inquietudo inter ipsum Maximianum &amp; duos imperatores Gratianum fratremq[ue] suum Valentinianum" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.024r.tif" pagination="31" reader="John Dee" signature="c 4"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Vide hic opinione[m] eius an per partes a[e]quales zodiaci dom[us] distribue[n]d[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                See here his opinion that through the parts are to be equally distributed among the houses of the zodiac. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἀναφορὰ" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ἀναφορὰ</marginalia_text>
+                </position>
+            </language>
+            <translation>Ascendant.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἐπικαταφορὰ" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ἐπικαταφορὰ</marginalia_text>
+                </position>
+            </language>
+            <translation>Falling over.</translation> <!-- name of the eighth place in a chart -->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="illud scientes, quod uxorem ♀, Maritum ♂ sidus" type="straight"/>
+        <underline language="LA" method="pen" text="Medium uero coelum est, ab horoscopo decimum signum; sed interdum medium coeli etiam in xi ab horoscopo signo, partiliter inuenitur, quod ut" type="straight"/>
+        <underline language="LA" method="pen" text="est dea, deus, bona fortuna, &amp; bonus daemon" type="dotted"/>
+        
+        <mark colour="red" method="pen" name="bracket" place="right_margin"/>
+        <mark colour="red" method="pen" name="bracket" place="right_margin"/>
+        <mark colour="red" method="pen" name="bracket" place="right_margin"/>
+        <mark colour="red" method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" colour="red" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" colour="red" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

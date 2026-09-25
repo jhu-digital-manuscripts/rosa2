@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.060r.tif" pagination="60" reader="John Dee" signature="[Oiv]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Ignis, Aer &amp; Aqua" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Corpus:Sp[irit]us:Anima
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Body: spirit: soul.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vnionem spirituum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Vnio Spirituum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A union of spirits.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sint Ignis, Aer, &amp; Aqua" type="straight"/>
+        <underline language="LA" method="pen" text="insimul rubificata" type="straight"/>
+        <underline language="LA" method="pen" text="naturae uitri" type="double"/>
+        <underline language="LA" method="pen" text="Ma'rthek septies multiplicatum" type="straight"/>
+        <underline language="LA" method="pen" text="Ignem:&amp; Aerem" type="double"/>
+        <underline language="LA" method="pen" text="nempe Argillam crudam simplice[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Oleum uitri" type="straight"/>
+        <underline language="LA" method="pen" text="Aur[um]" type="straight"/>
+        <underline language="LA" method="pen" text="Argentu[m]" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral language="LA" place="intext" text="Oleum uitri">1</numeral>
+        <numeral language="LA" place="intext" text="Aur[um]">2</numeral>
+        <numeral language="LA" place="intext" text="Argentu[m]">3</numeral>
+        <numeral language="LA" place="intext" text="Arge[n]tumq[ue]">4</numeral>
+        
+    </annotation>
+</transcription>

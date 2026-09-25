@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.021r.tif" pagination="31" reader="John Dee" signature="C.iiij."/>
+    <annotation>
+        
+        <marginalia anchor_text="regni nostri, cuius defensione &amp; tuitioni vinculo iuramenti" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Regu[m] Jurame[n]tu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>Oath of the Kings.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="resignationi homagij" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Resignatio Homagij</marginalia_text>
+                </position>
+            </language>
+            <translation>Renunciation of homage.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Richardum" type="double"/>
+        <underline language="LA" method="pen" text="de Cornubia fratrem Comitis de Cornubia," type="straight"/>
+        <underline language="LA" method="pen" text="eum gardianus &amp; lector Fratrum Minorum de Rokesburgh" type="straight"/>
+        <underline language="LA" method="pen" text="literas Iohannis regis Scotiae," type="straight"/>
+        <underline language="LA" method="pen" text="reddit homagium." type="straight"/>
+        <underline language="LA" method="pen" text="citando" type="straight"/>
+        <underline language="LA" method="pen" text="nec in fidelitate &amp; homagio vestro, lice[n]t per violentam impressionem impressam extortis, manendo contra nos etiam ad" type="straight"/> <!-- FSF: lic&egrave;t -->
+        <underline language="LA" method="pen" text="vinculo iuramenti sumus" type="straight"/>
+        <underline language="LA" method="pen" text="ratione terrarum quas in vestro regno tenebant, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="vobis reddimus" type="straight"/>
+        <underline language="LA" method="pen" text="resignationi homagij sui admisit" type="straight"/>
+        <underline language="LA" method="pen" text="praecepit hanc literam registrari ad perpetuam memoriam" type="straight"/>
+        <underline language="LA" method="pen" text="Patricius Comes de Dunbar" type="straight"/>
+        
+    </annotation>
+</transcription>

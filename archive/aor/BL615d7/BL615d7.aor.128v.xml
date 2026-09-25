@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.128v.tif" pagination="[128v]" reader="John Dee" signature="[Qviij[v]]"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="mama" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Mama</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="mama" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Mama</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Aiti" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aiti.</marginalia_text>
+                    <location name="Haiti"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Bouhi" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Bouhi.</marginalia_text>
+                    <!-- M.B. 'Bouhi' is the Taino word to designate a type of hut or habitation. Hispainola and the other island were all called 'Bouhi' as a synecdoche for 'islands that are our habitation or ancestral home'. 
+                        See  https://books.google.co.uk/books?id=oI3Z3xg61yIC&pg=PA8&dq=bouhi+columbus+now+called%5C&hl=en&sa=X&redir_esc=y#v=onepage&q=bouhi%20columbus%20now%20called%5C&f=false and https://books.google.co.uk/books?id=BForbJ4Fo04C&printsec=frontcover&dq=bouhi+columbus+now+called%5C&hl=en&sa=X&redir_esc=y#v=onepage&q=bouhi&f=false
+                        Perhaps a translation of the term in this context would be better rather than using the location tag? -->
+                </position>
+            </language>
+            <translation>Ancestral islands.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>.1. Agreement .2. Order</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="mama" type="straight"/>
+        <underline language="IT" method="pen" text="la tetta" type="double"/>
+        <underline language="IT" method="pen" text="tetta" type="double"/>
+        <underline language="IT" method="pen" text="too, too" type="double"/>
+        <underline language="IT" method="pen" text="piccioli animali" type="double"/>
+        <underline language="IT" method="pen" text="Tona" type="straight"/>
+        <underline language="IT" method="pen" text="tetta" type="straight"/>
+        <underline language="IT" method="pen" text="tutti gli" type="straight"/>
+        <underline language="IT" method="pen" text="huomini senza donne" type="double"/>
+        <underline language="IT" method="pen" text="Aiti" type="straight"/>
+        <underline language="IT" method="pen" text="Bouhi" type="straight"/>
+        <underline language="IT" method="pen" text="eglino non hanno scrittura" type="straight"/>
+        <underline language="IT" method="pen" text="lettere" type="straight"/>
+        <underline language="IT" method="pen" text="ciò inteso da' passati" type="straight"/>
+        <underline language="IT" method="pen" text="si conformano in" type="straight"/>
+        <underline language="IT" method="pen" text="ordinatamente" type="double"/>
+        <underline language="IT" method="pen" text="menò uia le donne" type="straight"/>
+        <underline language="IT" method="pen" text="suo Cacique" type="straight"/>
+        <underline language="IT" method="pen" text="Anacacugia" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

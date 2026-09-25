@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.346v.tif" pagination="24" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia anchor_text="L.F." hand="Italian">
+            <language ident="LA">
+               <position book_orientation="0" place="intext">
+                   <marginalia_text>filius</marginalia_text>
+               </position>
+            </language>
+        <translation>Son.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="Q. Fabius" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Q. Fabius Virgilian[us] </marginalia_text>
+                    <person name="Quintus Fabius Vergilianus"/> 
+                </position>
+            </language>
+            <translation>Quintus Fabius Vergilianus.</translation>      
+        </marginalia> 
+        
+        <marginalia anchor_text="C. Flaccus" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>C. Flaccus L[ucius] f[ilius]</marginalia_text> 
+                    <person name="Caius Flaccus"/>
+                </position>
+            </language>
+            <translation>Caius Flaccus son of Lucius.</translation>      
+        </marginalia> 
+            
+        
+        <marginalia anchor_text="M. Octauius" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>M. Octauius</marginalia_text>
+                    <person name="Marcus Octavius"/> 
+                </position>
+            </language>
+            <translation>Marcus Octavius.</translation>     
+        </marginalia> 
+        
+        <marginalia anchor_text="Cn. Pompeium" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>C. Pompeius</marginalia_text>
+                    <person name="Pompey"/>
+                </position>
+            </language>
+            <translation>Pompey.</translation>   
+        </marginalia> 
+        
+        <marginalia anchor_text="M. Brutum" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>M Brutus.</marginalia_text>
+                    <person name="Marcus Junius Brutus the Younger"/>
+                </position>
+            </language>
+            <translation>Marcus Iunius Brutus the Younger.</translation>      
+        </marginalia> 
+        
+        <marginalia anchor_text="ex illius" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ex</marginalia_text>
+                </position>
+            </language>
+            <translation>From.</translation>      
+        </marginalia> 
+        
+        <marginalia anchor_text="Tralleis" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tralleis</marginalia_text>
+                    <location name="Tralles"/>
+                </position>
+            </language>
+            <translation>Tralles.</translation>      
+        </marginalia> 
+        
+        <marginalia anchor_text="L. Lucilius" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>L. Lucilius</marginalia_text>
+                    <person name="Lucius Lucilius"/>
+                </position>
+            </language>
+            <translation>Lucius Lucilius.</translation>      
+        </marginalia> 
+        
+        <marginalia anchor_text="Corcyrae" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Corcyra.</marginalia_text>
+                    <location name="Corcyra"/>
+                </position>
+            </language>
+            <translation>Corcyra.</translation>      
+        </marginalia> 
+        
+        <marginalia anchor_text="Laodiceae" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Laodicea.</marginalia_text>
+                    <location name="Laodicea"/> 
+                </position>
+            </language>
+            <translation>Laodicea.</translation>      
+        </marginalia> 
+        
+        <marginalia anchor_text="Iconium" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Iconium.</marginalia_text>
+                    <location name="Iconium"/>
+                </position>
+            </language>
+            <translation>Iconium.</translation>      
+        </marginalia> 
+        
+        
+        <marginalia anchor_text="Scaeuola" hand="Italian"> 
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sceuola.</marginalia_text>
+                    <person name="Quintus Mucius Scaevola Augur"/> 
+                </position>
+            </language>
+            <translation>Quintus Mucius Sceuola Augur.</translation>      
+        </marginalia> 
+        
+        <marginalia anchor_text="Ephesi" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ephesus.</marginalia_text>
+                    <location name="Ephesus"/>
+                </position>
+            </language>
+            <translation>Ephesus.</translation>      
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="maximéque illo libro augurali, quem" type="straight"/>
+        <underline language="LA" method="pen" text="Nam cum teipsum, ex quo te[m]pore" type="straight"/>
+        <underline language="LA" method="pen" text="coepisti, quotidie pluris feci, tum accesserunt etiam coniunctiones necessariorum" type="straight"/>
+        <underline language="LA" method="pen" text="enim duarum aetatum" type="straight"/>
+        <underline language="LA" method="pen" text="mediocre vinculum mihi quidem attulisse videtur ad voluntates nostras copula[n]das" type="straight"/>
+        <underline language="LA" method="pen" text="ex illius" type="straight"/>
+        <underline language="LA" method="pen" text="fide, commemoratio officiorum superuacanea est" type="straight"/>
+        <underline language="LA" method="pen" text="Animaduerti enim, &amp; didici ex tuis" type="straight"/>
+        <underline language="LA" method="pen" text=", &amp; praeparares" type="straight"/>
+        <underline language="LA" method="pen" text="ratio facilior, &amp; solutior" type="straight"/>
+        <underline language="LA" method="pen" text="vt ipse tu" type="straight"/>
+        <underline language="LA" method="pen" text="neque enim obscuris personis, nec paruis in causis res agetur. Sed haec fieri, melius quàm dici, aut scribi" type="straight"/>
+        <underline language="LA" method="pen" text="in dubitationem videtur adducere, visurusne" type="straight"/>
+        <underline language="LA" method="pen" text="veni in eum sermonem" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; perfore accommodatum" type="straight"/>
+        <underline language="LA" method="pen" text="nauibus accessissem" type="straight"/>
+        <underline language="LA" method="pen" text="fore ad meum aduentum" type="straight"/>
+        <underline language="LA" method="pen" text="dum pecunia accipitur quae mihi ex publica premutatione debetur, co[m]morabor" type="straight"/>
+        <underline language="LA" method="pen" text="quod commodo tuo fieri possit" type="straight"/>
+        <underline language="LA" method="pen" text="Quam facultatem" type="straight"/>
+        <underline language="LA" method="pen" text="fuítque mecum familiariter triduum illud quod" type="straight"/>
+        
+        <symbol name="Unidentified" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/> 
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>        
+        
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        
+        <errata amendedtext="duos" copytext="duo" language="LA"/>
+    
+    </annotation>
+</transcription>

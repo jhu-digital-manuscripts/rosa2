@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.369v.tif" pagination="288" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Huberti de Burgo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Hubertus de Burgo Comes Cantia[e] ex dono Regis.
+                    </marginalia_text>
+                    <person name="Hubert de Burgh, 1st Earl of Kent"/>
+                    <person name="Henry III, King of England"/>
+                </position>
+            </language>
+            <translation>
+                Hubert de Burgh, 1st Earl of Kent, as granted by the King.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="tempus, obijt Comitissa Ca[n]tiae, dierum plena, &amp; matura morte" type="straight"/>
+        <underline language="LA" method="pen" text="Haec aute[m] multu[m] dapsilis &amp; commendata, vxor fuit quondam Huberti de Burgo" type="straight"/>
+        <underline language="LA" method="pen" text="Comitis, &amp; per consequens vxor eius" type="straight"/>
+        
+    </annotation>
+</transcription>

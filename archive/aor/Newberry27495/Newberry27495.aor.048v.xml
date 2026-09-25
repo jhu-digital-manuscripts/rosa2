@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.048v.tif" reader="Harvey" signature="[K.ii.[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        S[upr]a,
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="Newberry27495:case_712_c27495_010" text="S[upr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Epistle )
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                [See] the above epistle.
+            </translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="Appelles conceiued" type="straight"/>
+        <underline language="EN" method="pen" text="beawty of Campaspes" type="straight"/>
+        <underline language="EN" method="pen" text="that beawtye" type="straight"/>
+        <underline language="EN" method="pen" text="knowe her more perfectlye" type="straight"/>
+        <underline language="EN" method="pen" text="daughters of" type="straight"/>
+        <underline language="EN" method="pen" text="Zeusis the" type="straight"/>
+        <underline language="EN" method="pen" text="one figure that" type="straight"/>
+        <underline language="EN" method="pen" text="was most excellent in beawty" type="straight"/>
+        <underline language="EN" method="pen" text="renowmed of many Poets" type="straight"/>
+        <underline language="EN" method="pen" text="him that ought to haue a most perfect" type="straight"/>
+        <underline language="EN" method="pen" text="any man coulde" type="straight"/>
+        <underline language="EN" method="pen" text="delite, that he felt in heholding the beawty of a certein" type="straight"/>
+        <underline language="EN" method="pen" text="was there hard a great scraping of fete in the floor with a cherme of loude speaking" type="straight"/>
+        <underline language="EN" method="pen" text="vpon that" type="straight"/>
+        <underline language="EN" method="pen" text="euery man tourninge him selfe about" type="straight"/>
+        <underline language="EN" method="pen" text="Chambre door appeare a light of torches" type="straight"/>
+        <underline language="EN" method="pen" text="a greate and noble traine" type="straight"/>
+        <underline language="EN" method="pen" text="accompaninge the Pope a" type="straight"/>
+        <underline language="EN" method="pen" text="what the Dutches" type="straight"/>
+        <underline language="EN" method="pen" text="to Count Lewis to entreat" type="straight"/>
+        <underline language="EN" method="pen" text="of courting" type="straight"/>
+        <underline language="EN" method="pen" text="saluted the Dutchesse" type="straight"/>
+        <underline language="EN" method="pen" text="setled the reste that were risen vp at" type="straight"/>
+        <underline language="EN" method="pen" text="in the circle" type="straight"/>
+        <underline language="EN" method="pen" text="the chiefe of his traine" type="straight"/>
+        <underline language="EN" method="pen" text="Horace Floridus" type="straight"/>
+        <underline language="EN" method="pen" text="whist," type="straight"/>
+        <underline language="EN" method="pen" text="L. General" type="dotted"/>
+        <underline language="EN" method="pen" text="comminge shoulde" type="straight"/>
+        <underline language="EN" method="pen" text="hurtefull" type="straight"/>
+        <underline language="EN" method="pen" text="hindre" type="straight"/>
+        <underline language="EN" method="pen" text="good co[m]munication" type="straight"/>
+        <underline language="EN" method="pen" text="not this iniurie" type="straight"/>
+        <underline language="EN" method="pen" text="depriue" type="straight"/>
+        <underline language="EN" method="pen" text="youre selues" type="straight"/>
+        <underline language="EN" method="pen" text="me of" type="straight"/>
+        <underline language="EN" method="pen" text="pleasure" type="straight"/>
+        <underline language="EN" method="pen" text="silence" type="straight"/>
+        <underline language="EN" method="pen" text="speakinge" type="straight"/>
+        <underline language="EN" method="pen" text="before all other" type="straight"/>
+        <underline language="EN" method="pen" text="weired me in speakinge" type="straight"/>
+        <underline language="EN" method="pen" text="I wene" type="straight"/>
+        <underline language="EN" method="pen" text="all" type="straight"/>
+        <underline language="EN" method="pen" text="Campaspes" type="straight"/>
+        <underline language="EN" method="pen" text="Zeusis" type="straight"/>
+        <underline language="EN" method="pen" text="L.Francisco- maria della Rouere." type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark method="chalk" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="dash" place="left_margin"/> <!-- And whan -->
+        <mark method="chalk" name="vertical_bar" place="left_margin"/>
+        <mark method="chalk" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!-- Alexander, for -->
+        <mark method="pen" name="dot" place="intext"/> <!-- beauwtye, & -->
+        <mark method="pen" name="dot" place="intext"/> <!-- beawty, and -->
+        <mark method="pen" name="comma" place="intext"/> <!-- delite, that-->
+        <mark method="pen" name="dot" place="intext"/> <!-- self, began -->
+        <mark method="pen" name="dot" place="intext"/> <!-- speaking, and -->
+        <mark method="pen" name="dot" place="intext"/> <!-- traine, amonge-->
+        <mark method="pen" name="comma" place="intext"/> <!-- speakinge, and-->
+
+        <errata amendedtext="Campaspes" copytext="Campaspes" language="EN"/> <!-- printed 'asp' is upside down, corrected by Harvey. -->
+        
+    </annotation>
+</transcription>

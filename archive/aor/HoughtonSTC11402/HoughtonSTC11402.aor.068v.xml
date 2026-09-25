@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.068v.tif" reader="Harvey" signature="[Hv[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Neglicence in Truces.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="battayle on the see" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Nauale Pra[e]lium.</marginalia_text>
+                </position>
+            </language>
+            <translation>Naval battle.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="somwhat" type="straight"/>
+        <underline language="EN" method="pen" text="escaped" type="straight"/>
+        <underline language="EN" method="pen" text="through the stre[n]gth" type="straight"/>
+        <underline language="EN" method="pen" text="xx. to" type="straight"/>
+        <underline language="EN" method="pen" text="shyppes of victory" type="straight"/>
+        <underline language="EN" method="pen" text="gotten the vyctory" type="straight"/>
+        <underline language="EN" method="pen" text="terrible and dreadful to his enemys" type="straight"/>
+        <underline language="EN" method="pen" text="fayned them selfes" type="straight"/>
+        <underline language="EN" method="pen" text="the shalowe sondes" type="straight"/>
+        <underline language="EN" method="pen" text="dout what" type="straight"/>
+        <underline language="EN" method="pen" text="feare of lyke" type="straight"/>
+        <underline language="EN" method="pen" text="D. Julius" type="straight"/>
+        <underline language="EN" method="pen" text="with a gayl wind" type="straight"/>
+        <underline language="EN" method="pen" text="with a lowe tyde" type="straight"/>
+        <underline language="EN" method="pen" text="drye strondes" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="shyppes of victory"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="the shalowe sondes"/>    
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="with a gayl wind"/>  
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="with a lowe tyde"/> 
+        
+    </annotation>
+</transcription>

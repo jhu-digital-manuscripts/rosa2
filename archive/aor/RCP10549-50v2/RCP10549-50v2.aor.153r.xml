@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.153r.tif" pagination="45" reader="John Dee"/>   
+    <annotation>
+        
+        
+        <marginalia anchor_text="criminosior; occisio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>criminosior occisio</marginalia_text>
+                </position>
+            </language>
+            <translation>More incriminating; murder.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Inter hanc diuisionem, &amp; illam quae de partibus orationis tertia est, de qua in libro primo diximus secundu[m] narrationem, hoc interest" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quid intersit int[er] hanc diuisionem &amp; tertiam partem or[ati]o[n]is in primo libro.</marginalia_text>
+                </position>
+            </language>
+            <translation>What may differ between this division and the third part of a speech, as discussed in the first book.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Frequentatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>frequentatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Accumulation.</translation>
+        </marginalia>
+        
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Coniectur[a]e.</marginalia_text>
+                </position>
+            </language>
+            <translation>Conjectures.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="rumore" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Rumor</marginalia_text>
+                </position>
+            </language>
+            <translation>Rumour.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Expolitio; Ea dupliciter fit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Expolitio. 2</marginalia_text>
+                </position>
+            </language>
+            <translation>Refining, 2.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Co[m]mutabimus tripliciter" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Co[m]mutatio 3</marginalia_text>
+                </position>
+            </language>
+            <translation>Change, 3.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Sermocinatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sermocinatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Dialogue.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="patriae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Patria.</marginalia_text>
+                </position>
+            </language>
+            <translation>The homeland.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="multo potius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>multo potius</marginalia_text>
+                </position>
+            </language>
+            <translation>Rather more.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="criminosior" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; rumore populi, quem" type="straight"/>
+        <underline language="LA" method="pen" text="multo potius" type="straight"/>
+        
+        <mark language="LA" method="pen" name="X_sign" place="head" text="Occisio"/>
+        <mark method="pen" name="X_sign" place="right_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="LA" method="pen" name="plus_sign" place="tail" text="multo potius"/>
+        
+        <numeral place="right_margin">1</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">2</numeral>
+        
+        <errata amendedtext="," copytext="." language="LA"/>   <!-- dicemus Nunc -->
+        
+        <drawing anchor_text="criminosior occisio" book_orientation="0" method="pen" place="head" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

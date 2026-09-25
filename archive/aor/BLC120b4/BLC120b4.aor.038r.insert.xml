@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.038r.insert.tif" origin="added" reader="John Dee" status="fixed"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Item Notetis, quod Incolume dicitur sanum, vel mundum ab
+                        omni causa corruptionis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                You should also note that the unharmed is said to be healthy or free of any cause of corruption.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Item Hermes inquit, Filij, Philosophoru[m] corpora sunt septem: quoru[m]
+                        primus est sol, eorum optimus rex &amp; Caput, quod nec terra corrumpit,
+                        nec res combure[n]s comburrit: nec aqua alteratur, eo quod
+                        complexio eius est temperata, &amp; Natura directa, in caliditate 
+                        &amp;c
+                    </marginalia_text>
+                    <person name="Hermes Trismegistus"/>
+                </position>
+            </language>
+            <translation>
+                Likewise, Hermes says, my sone, there are seven bodies of the sages: the first of them is the sun, their greatest king and chief,
+                which neither the world can corrupt, nor a destructive thing destroy, nor is water mortify, because its substancce is terminated in and its natue directed into heat etc.
+            </translation>
+        </marginalia>
+
+    </annotation>
+</transcription>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.412v.tif" pagination="374" reader="John Dee" signature="[Iiij[v]]"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="quodam dicto Rheso filio Meredeth" type="straight"/>
+        
+        <graph book_orientation="0" method="pen" place="tail" type="genealogical_tree">
+            <node id="n1" person="Rhys Gryg">Rhese gryg</node>
+            <node anchor_text="Meredeth" id="n2" person="Maredudd ap Rhys Gryg">Meredith</node>
+            <node anchor_text="Rheso" id="n3" person="Rhys ap Maredudd">Rhese</node>
+            <link from="n1" relationship="has_child" to="n2"/>
+            <link from="n2" relationship="has_child" to="n3"/>
+        </graph>
+        
+    </annotation>
+</transcription>

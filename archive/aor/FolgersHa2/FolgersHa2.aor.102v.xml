@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.102v.tif" pagination="28" reader="Harvey" signature="[B6v]"/>	<!-- ABO 107left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Astrophili diuina illuminatio.
+					</marginalia_text>
+					<person name="Astrophilus"/>
+				</position>
+			</language>
+			<translation>
+				The divine illumination of Astrophilus.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Perennis est motus, qui facit auem 
+						Lautam, et subtilem.
+						Sic etiam piscis, purus, et delicatus.
+					</marginalia_text>
+					<emphasis method="pen" text="Perennis" type="straight"/>
+					<emphasis method="pen" text="motus" type="straight"/>
+					<emphasis method="pen" text="auem" type="straight"/>
+					<emphasis method="pen" text="Lautam" type="straight"/>
+					<emphasis method="pen" text="subtilem" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Unending is the motion which makes the bird noble and subtle.
+				Likewise, even the fish is pure and delicate.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Volat avis in
+						aëre: piscis in aqua: vir agilis
+						in terra. Nescia virtus stare loco.
+					</marginalia_text>
+					<X-ref book_title="Pharsalia" language="LA" person="Lucan" text="Nescia virtus stare loco"/>
+				</position>
+			</language>
+			<translation>
+				The bird flies through the air, the fish in the water, the agile man on the earth.
+				"His virtue not knowing how to stand in one place."
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Pra[e]gnantiss[im]a Methodo, et pra[e]santiss[im]a Praxe;
+						qua[e]uis ars statim fit facillima.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				With the most pregnant method and the most immediate praxis,
+				any art whatsoever immediately becomes the easiest.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Da mihi vnicum mundi Artificem, et singularem professorem: qui solus omniu[m]
+						est illuminatus Methodo, et Praxe; quotidiana repetitione, incessanti
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						assuetudine, et insuperabili zelo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Give me the one craftsman and singular professor of the world, who alone out of all men is illuminated
+				by method and praxis, by daily repetition, unceasing habit, and insuperable zeal.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Hic est ille, qui singula expedit promptissimè; omnia exequitur potentissimè:
+						cui nihil eorum difficile, qua[e] pla[e]riq[ue] omnib[us] 
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						videntur ardua; ignauis aut rudib[us].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Here is one who most quickly obtains singular things; who most effectively carries out all matters;
+				for whom nothing is difficult of those things which seem arduous to most men, especially the lazy and unskilled.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="pertinacia" type="straight"/>
+		<underline language="IT" method="pen" text="discordia" type="straight"/>
+		<underline language="IT" method="pen" text="inuidia" type="straight"/>
+		<underline language="IT" method="pen" text="la falsa felicità del mondo" type="straight"/>
+		<underline language="IT" method="pen" text="signorie" type="straight"/>
+		<underline language="IT" method="pen" text="richezze" type="straight"/>
+		<underline language="IT" method="pen" text="honori" type="straight"/>
+		<underline language="IT" method="pen" text="fama" type="straight"/>
+		<underline language="IT" method="pen" text="voluntà corporea" type="straight"/>
+		<underline language="IT" method="pen" text="Clemenza sopra" type="straight"/>
+		<underline language="IT" method="pen" text="THEODOSIO il giouane" type="straight"/>
+		<underline language="IT" method="pen" text="suscitare i morti" type="straight"/>
+		<underline language="IT" method="pen" text="perdonare le ingiurie" type="straight"/>
+		<underline language="LA" method="pen" text="Nobilissimum vindictae" type="straight"/>
+		<underline language="LA" method="pen" text="parcere" type="straight"/>
+		<underline language="IT" method="pen" text="Il sospetto de gli" type="straight"/>
+		<underline language="IT" method="pen" text="essere grande" type="straight"/>
+		<underline language="IT" method="pen" text="EDVARDO quarto Re" type="straight"/>
+		<underline language="IT" method="pen" text="G." type="straight"/>
+		<underline language="IT" method="pen" text="nietter in prigione" type="straight"/>
+		<underline language="IT" method="pen" text="la elettione della qualità della" type="straight"/>
+		<underline language="IT" method="pen" text="la maluagia" type="straight"/>
+		<underline language="IT" method="pen" text="gl'Inglesi" type="straight"/>
+		<underline language="IT" method="pen" text="morire in quel licore" type="straight"/>
+		
+		<symbol name="Asterisk" place="head"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="quotation_mark" place="left_margin"/>
+
+    </annotation>
+</transcription>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="ChChWb512.084v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Sater rex Demetorum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Sater, Rex Demetar[um]
+                    </marginalia_text>
+                    <person name="Sater"/>
+                </position>
+            </language>
+            <translation>Sater, king of the Demetians.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Gelandia Frislant
+                    </marginalia_text>
+                    <location name="Gothland"/>
+                    <location name="Friesland"/>
+                </position>
+            </language>
+            <translation>Gothland. Friesland.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vrbgeni[us]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        al[ite]r Vrien
+                    </marginalia_text> 
+                    <person name="Urien"/>
+                </position>
+            </language>
+            <translation>Otherwise called Urien.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="map apo" hand="Italian">
+            <language ident="CY">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        [deleted Mab] Vab pabo post Prydeni
+                    </marginalia_text>
+                    <person name="Pabo post Prydain"/>
+                </position>
+            </language>
+            <translation>Mab Pabo post Prydain.</translation> <!--No idea about 'vab pabo' // NBW - Looks like a lesser Welsh title/onomastic - Pabo post Prydain is a legendary C5 figure, Dee is looking for the place he was supposed to have founded, llanbabo. Might have gotten this from Price's Defensio?-->
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Maluasius Rex Islandia[e].
+                    </marginalia_text>
+                    <person name="Malvasius"/>
+                    <location name="Iceland"/>
+                </position>
+            </language>
+            <translation>Maluasius, king of Iceland.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="CY">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Ileu vab Kynvarch.
+                    </marginalia_text>
+                    <person name="Llew"/>
+                    <person name="Kynvarch"/>
+                    <emphasis method="pen" text="Ileu" type="double"/>
+                </position>
+            </language>
+            <translation>Llew son of Kynvarch.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Sex Insula[e] Collaterales al[ite]r Comprovinciales dicta[e].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Six collateral islands, also called adjacent islands.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Acellius rex Dacoru[m]" hand="Italian" id="ChChWb512:WB5-12_0176_076v:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        habet Io[ann]es Magnus circa hic tempora. Attilum Regens Gallia[e] et suetiae. et etia[m] meminit Loth Regis Norvegi[a]e.
+                    </marginalia_text> <!--Transcription and translation incomplete.// NBW: I Think this is it--> <!--JG: Shouldn't it be 'ha[e]c' instead of hic (which doesn't agree with tempora)?-->
+                    <person name="Johannes Magnus"/>
+                    <person name="Atilius"/>
+                    <person name="Lot"/>
+                    <location name="Norway"/>
+                </position>
+            </language>
+            <translation>Johannes Magnus has Attilus as ruler of the Gauls and Sueti around this time, and also records Loth as King of Norway</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Sater rex Demetorum" type="straight"/>
+        <underline language="LA" method="pen" text="archipraesules Londoniensis" type="straight"/>
+        <underline language="LA" method="pen" text="apostolic[a]e sedis legatus" type="straight"/>
+        <underline language="LA" method="pen" text="Vrbgeni[us] ex" type="straight"/>
+        <underline language="LA" method="pen" text="map apo:" type="straight"/>
+        <underline language="LA" method="pen" text="Ex collateralibus" type="double"/>
+        <underline language="LA" method="pen" text="insulis" type="straight"/>
+        <underline language="LA" method="pen" text="rex Hyberni[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="rex Islandiae" type="straight"/>
+        <underline language="LA" method="pen" text="rex Gela[n]diae" type="straight"/>
+        <underline language="LA" method="pen" text="Loth" type="double"/>
+        <underline id="ChChWb512:WB5-12_0176_076v:u0001" language="LA" method="pen" text="Acellius rex Dacoru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="rex Rutenoru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Boloniae" type="straight"/>
+        <underline language="LA" method="pen" text="Galliaru[m] pares siue" type="straight"/>
+        
+        <errata amendedtext="Keneu" copytext="Chenes" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="map apo" language="LA"/>
+        <!-- NBW: Dee underlined this word in the text, then crossed it out and amended it with his note in the margin (vab pabo) Did I transcribe this right --> <!--JG: You did, but you don't need to give an ID in this give (so I delted it)-->
+        
+        <physical_link>
+            <marginal_annotation idref="ChChWb512:WB5-12_0176_076v:m0001"/>
+            <marginal_annotation idref="ChChWb512:WB5-12_0176_076v:u0001"/>
+            
+            <relation from="ChChWb512:WB5-12_0176_076v:m0001" to="ChChWb512:WB5-12_0176_076v:u0001" type="directed"/>
+        </physical_link>
+    </annotation>
+</transcription>

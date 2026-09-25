@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.013v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="quam Ignogen vocant" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Some haue Innogen
+                    </marginalia_text>
+                    <person name="Ignoge"/>
+                    <!-- NBW: This is the least common variant of this name across the history -->
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quam Ignogen vocant" type="straight"/>
+        <underline language="LA" method="pen" text="Quis tamen" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.198r.tif" pagination="395" reader="John Dee"/> 
+    <annotation>
+          
+        <marginalia anchor_text="Obstat enim, quicquid no[n] adiuuat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Obstat enim quicquid no[n] adiuvat</marginalia_text>
+                </position>
+            </language>
+            <translation>For whatever is no help is a hindrance.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="genus diuiditur in species, nihil habet proprium, ut arboris species sunt pinus, &amp; olea, &amp;              cupresus, &amp; ipsius per nulla proprietas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Generis nulla proprietas</marginalia_text>
+                </position>
+            </language>
+            <translation>No properties of its own kind.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="μυκτερισμὸς" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>μυκτερισμὸς</marginalia_text> <!-- for μυκτηρισμός -->
+                </position>
+            </language>
+            <translation>Sacrasm.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="περίφρασις " hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>περίφρασις </marginalia_text>
+                </position>
+            </language>
+            <translation>Periphrasis.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sallustius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Salustius</marginalia_text>
+                    <person name="Sallust"/>
+                </position>
+            </language>
+            <translation>Sallust</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="περίφρασις " hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>περίφρασις </marginalia_text>
+                </position>
+            </language>
+            <translation>Periphrasis.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="περίφρασις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>περίφρασις</marginalia_text>
+                </position>
+            </language>
+            <translation>Wordliness.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ὑπέρβατον" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ὑπέρβατον</marginalia_text>
+                </position>
+            </language>
+            <translation>Hyperbaton.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="simili" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Simile.</marginalia_text>
+                </position>
+            </language>
+            <translation>Similar.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="opportuna ordinis mutatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>opportuna ordinis mutatio</marginalia_text>
+                </position>
+            </language>
+            <translation>An opportune change of order.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Platonis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Plato.</marginalia_text>
+                    <person name="Plato"/>
+                </position>
+            </language>
+            <translation>Plato.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quòd genus diuiditur in species, nihil habet proprium, ut arboris species sunt pinus, &amp; olea, &amp;              cupresus, &amp; ipsius per nulla proprietas" type="straight"/>
+        <underline language="LA" method="pen" text="simulatus" type="straight"/>
+        <underline language="LA" method="pen" text="non latens derisus" type="straight"/>
+        <underline language="LA" method="pen" text="circuitum" type="straight"/>
+        <underline language="LA" method="pen" text="astrictior. Quicquid significari breuius potest, &amp; cum ornatu latius ostenditur" type="straight"/>
+        <underline language="EL" method="pen" text="περίφρασις" type="straight"/>
+        <underline language="LA" method="pen" text="non sanè orationis aptum uirtuti" type="straight"/>
+        <underline language="LA" method="pen" text="Obstat enim, quicuid no[n] adiuuat" type="straight"/>
+        <underline language="LA" method="pen" text="Fit enim frequentiß]ime aspera, &amp; dura, &amp; dißoluta, &amp; hians oratio, si" type="straight"/>
+        <underline language="LA" method="pen" text="atque ut in structuris lapidum impolitiorum, loco" type="straight"/>
+        <underline language="LA" method="pen" text="quae coagmentata se magis" type="straight"/>
+        <underline language="EL" method="pen" text="κατέβην χθὲς εἰς Πειραιᾶ" type="straight"/>
+        
+        <mark language="LA" method="pen" name="pin" place="head" text="Obstat enim quicquid no[n] adiuvat"/>
+        
+        <mark method="pen" name="pin" place="right_margin"/>
+        
+    </annotation>
+</transcription>

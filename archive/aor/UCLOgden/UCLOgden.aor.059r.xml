@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.059r.tif" pagination="101" reader="John Dee" signature="i 3"/>
+    <annotation>
+        
+        <marginalia anchor_text="mors" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mors qualis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Such a death.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Regula &amp; admonitio generalis.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Rule and general suggestion.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Casus ab alto.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Fall from above.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        quonia[m] illa, eius co[n]ditioni co[n]traria est.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Because this is contrary to its condition. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uiolentae mortis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Violenta mors a ♂ in loco septimo.
+                    </marginalia_text>
+                    <symbol_in_text name="Mars"/>
+                </position>
+            </language>
+            <translation>
+                A violent death to Mars in the second place.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="uxores &amp; filios tenere semper diligunt" type="straight"/>
+        <underline language="LA" method="pen" text="ualetudines autem circa iecur faciet, ex" type="straight"/>
+        <underline language="LA" method="pen" text="feratur ad eum plena, nec" type="straight"/>
+        <underline language="LA" method="pen" text="multum cibum facile digerentes" type="straight"/>
+        <underline language="LA" method="pen" text="locis freque[n]ter praecipitat" type="straight"/>
+        <underline language="LA" method="pen" text="in diurna genitura dominus" type="straight"/>
+        <underline language="LA" method="pen" text="Semper enim in occasu ♂ positus, uiolentae mortis" type="straight"/>
+        <underline language="LA" method="pen" text="malitiae suae omnem" type="straight"/>
+        <underline language="LA" method="pen" text="crinibus bostrichis" type="straight"/>
+        <underline language="LA" method="pen" text="multo potu gaudentes, &amp; modicum sumentes" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/> <!-- decernit Quod -->
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

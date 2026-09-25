@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.193v.tif" pagination="386" reader="John Dee" signature="[B[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Quare mihi uide[n]tur errasse" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quorunda[m] error</marginalia_text>
+                </position>
+            </language>
+            <translation>Some uncertainty.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="μεταφορὰ" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>μεταφορὰ</marginalia_text> <!-- for μεταφορά -->
+                </position>
+            </language>
+            <translation>Metaphor.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Transfert ergo nome[n]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Qua[n]do nome[n] transfere[n]du[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>When a name ought to be transferred.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="gemma" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>gem[m]a</marginalia_text>
+                </position>
+            </language>
+            <translation>A bud.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sitire" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>sitire</marginalia_text>
+                </position>
+            </language>
+            <translation>To be thirsty.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="laborare" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>laborare</marginalia_text>
+                </position>
+            </language>
+            <translation>To toil.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="durum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Durus</marginalia_text>
+                </position>
+            </language>
+            <translation>Hard.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="asperu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>asper</marginalia_text>
+                </position>
+            </language>
+            <translation>Rough.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="incensum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>incensus</marginalia_text>
+                </position>
+            </language>
+            <translation>Burnt.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="inflammatum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>inflammatus</marginalia_text>
+                </position>
+            </language>
+            <translation>Inflamed.</translation>
+        </marginalia>
+
+        <marginalia anchor_text="lapsum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>lapsus</marginalia_text>
+                </position>
+            </language>
+            <translation>Fallen.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Milone" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro milo.</marginalia_text>
+                    <book title="Pro Milone"/>
+                </position>
+            </language>
+            <translation>Pro Milo.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Tropi quida[m] significatio[n]is ornatus ac decorus } gr[ati]a sumu[n]tur q[uo]r[um] alij in verbis proprijs translatis</marginalia_text> <!-- FSF: I read Tropi quida[m] significatio[n]is ornatus ac decorus} gr[ati]a sumu[n]tur q[uo]r[um] alij in verbis proprijs eranflatis (not sure about the last word) -->
+                </position>
+            </language>
+            <translation>Certain tropes, sign of, adorned and decorated } by whose grace he claims other words, particularities, pomp.</translation> <!-- M.B. I think the last word is 'translatis'. I am not sure about this translation, the marginalia seems to be a selection of Quintilian's Latin terms.  -->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="qui cùm freque[n]tißus est, tum" type="straight"/>
+        <underline language="LA" method="pen" text="Neq[ue] enim uulgaris esse, nec humilis, nec insuauis, rectè modò ascita sit, potest. Copiam" type="straight"/>
+        <underline language="LA" method="pen" text="ne ulli rei nomen deesse uideatur" type="straight"/>
+        <underline language="LA" method="pen" text="facimus, aut quia necesse est, aut quia significantius, aut, ut dixi, quia decentius" type="straight"/>
+        <underline language="LA" method="pen" text="Illa ad ornatum, lumen orationis, &amp; generis claritatem, &amp;* co[n]cionum procellas, &amp; eloque[n]tiae* flumina,              ut Cicero pro Milone Clodium fontem gloriae eius uocat: &amp; alio loco, segetem, ac materiam. Quaedam" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <numeral place="left_margin">1</numeral>
+        
+    </annotation>
+</transcription>

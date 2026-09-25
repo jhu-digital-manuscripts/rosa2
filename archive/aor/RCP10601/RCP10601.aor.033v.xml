@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.033v.tif" pagination="66" reader="John Dee" signature="[e[v]]"/>
+    <annotation>
+        
+       <marginalia anchor_text="auro" hand="Italian">
+           <language ident="LA">
+               <position book_orientation="0" place="left_margin">
+                   <marginalia_text>Aurum</marginalia_text>
+               </position>
+           </language>
+           <translation>Gold.</translation>
+       </marginalia> 
+
+        <marginalia anchor_text="scientia experimentali" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Scientia experimentali</marginalia_text>
+                </position>
+            </language>
+            <translation>Experimental science.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="formatione'ue, ex innumeris Abrahami libris nil extat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Abraham de formatione</marginalia_text>
+                    <person name="Abraham"/>
+                </position>
+            </language>
+            <translation>Abraham on the design.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="in auro" type="straight"/>
+        <underline language="LA" method="pen" text="ueritatis nudos illos reliquere" type="straight"/>
+        <underline language="LA" method="pen" text="studendo illis disciplinis" type="straight"/>
+        <underline language="LA" method="pen" text="tacitè exposuerint in" type="straight"/>
+        <underline language="LA" method="pen" text="experimentali" type="straight"/>
+        <underline language="LA" method="pen" text="creatione" type="straight"/>
+        <underline language="LA" method="pen" text="formatione'ue" type="straight"/> 
+        <underline language="LA" method="pen" text="Abrahami libris nil extat" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.088r.tif" pagination="159" reader="John Dee" signature="o 2"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ha[e]c sup[er]iori 14 capiti affigi debent.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                These must be attached to the 14 greater chapters.
+            </translation>
+        </marginalia>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.018r.tif" reader="John Dee" signature="E ij"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="crassescere &amp; obesius euadere produnt" type="straight"/>
+        <underline language="LA" method="pen" text="hos enim suffitus, vim tonitrua induce[n]di, habere putant" type="straight"/>
+        <underline language="LA" method="pen" text="Fiunt praeterea suffumigationes, sub oportunis setllaru[m] influxibus, Idola Daemonum in aëre facientes apparere: sic ex croco" type="straight"/>
+        <underline language="LA" method="pen" text="a fumo" type="straight"/>
+        
+        <symbol language="LA" name="Mars" place="left_margin" text="martis"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <errata amendedtext="mbra" copytext="vmbra" language="LA"/> <!-- FSF: there might be a letter in the left margin --> <!-- NBW: Looks like either an a or a lambda sign-->
+        <errata amendedtext="enixissime" copytext="exnixissime" language="LA"/>  
+        
+    </annotation>
+</transcription>

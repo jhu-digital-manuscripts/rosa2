@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.234r.tif" pagination="227" reader="John Dee" signature="LL iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Ortus; Occasus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ortus &amp; occasus inferiorum</marginalia_text>
+                </position>
+            </language>
+            <translation>The birth and setting of inferiors.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nutritione; vita" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nutritio. Vita.</marginalia_text>
+                </position>
+            </language>
+            <translation>Nutrition. Life.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mortis genus.</marginalia_text>
+                </position>
+            </language>
+            <translation>The birth of death.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in imo parui circuli" type="straight"/>
+        <underline language="LA" method="pen" text="descende[n]s" type="straight"/>
+        <underline language="LA" method="pen" text="pro nutritione" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; luminaris" type="straight"/>
+        <underline language="LA" method="pen" text="exaltationis" type="straight"/>
+        <underline language="LA" method="pen" text="domus" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; trigoni" type="straight"/>
+        <underline language="LA" method="pen" text="sumo suffocabit[ur]" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

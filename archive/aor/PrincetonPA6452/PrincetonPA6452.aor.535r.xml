@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.535r.tif" reader="Harvey" signature="S3[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text> 
+                        Epocha Christiana.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The Christian era.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ait mortuum Virgilium" type="straight"/>
+        <underline language="LA" method="pen" text="Domitius Aenobarbus" type="straight"/>
+        <underline language="LA" method="pen" text="Drufus Liuius" type="straight"/>
+        <underline language="LA" method="pen" text="Tiberius Nero" type="straight"/>
+        <underline language="LA" method="pen" text="Quintilius Varus" type="straight"/>
+        <underline language="LA" method="pen" text="euangelista[m] Luc" type="straight"/>
+        <underline language="LA" method="pen" text="Fabius Maximus" type="straight"/>
+        <underline language="LA" method="pen" text="Drusus Nero" type="straight"/>
+        <underline language="LA" method="pen" text="Asinius Gallus" type="straight"/>
+        <underline language="LA" method="pen" text="Tiberius Nero II" type="straight"/>
+        <underline language="LA" method="pen" text="Antistius Vetus" type="straight"/>
+        <underline language="LA" method="pen" text="Octauianus Augustus XII" type="straight"/>
+        <underline language="LA" method="pen" text="Sylla" type="straight"/>
+        <underline language="LA" method="pen" text="Lentulus" type="straight"/>
+        <underline language="LA" method="pen" text="CHRISTI natalis" type="dotted"/>
+        <underline language="LA" method="pen" text="Vinitius" type="straight"/>
+        <underline language="LA" method="pen" text="Cinna Magnus" type="straight"/>
+        <underline language="LA" method="pen" text="Furius Camillus" type="straight"/>
+        
+        <symbol language="LA" name="SS" place="intext" text="Octauianus Augustus XII"/>
+        <symbol name="SS" place="intext"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!--Virgilium-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Tiberius Nero"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Drusus Nero"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

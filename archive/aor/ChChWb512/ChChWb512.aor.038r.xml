@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.038r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Kymbelinus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Kymbelinus
+                    </marginalia_text>
+                    <person name="Kymbelinus"/>
+                </position>
+            </language>
+            <translation>Kymbelinus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Cui auxiliu[m] meu[m] reddere no[n] erubescam nisi co[n]silio meo parueris" type="straight"/>
+        <underline language="LA" method="pen" text="spopondit tria milia librarum arge[n]ti" type="double"/>
+        <underline language="LA" method="pen" text="Tenna[n]cius" type="double"/>
+        <underline language="LA" method="pen" text="Kymbelinus filius suus" type="straight"/>
+        <underline language="LA" method="pen" text="que[m] Augustus Caesar nutriuerat" type="double"/>
+        <underline language="LA" method="pen" text="est d[omi]n[u]s noster lesus" type="double"/>
+        
+        
+    </annotation>
+</transcription>

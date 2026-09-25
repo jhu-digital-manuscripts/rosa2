@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.491v.tif" reader="Harvey" signature="[Lv]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Legatos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text> 
+                       (  Legatorum jus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The law of ambassadors.
+            </translation>
+        </marginalia>
+  
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text> 
+                        s[upr]a /
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                [See] above. <!-- LS, not in ABO! --> 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Proditores" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text> 
+                        proditores.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Traitors. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        Leges Regia[e], s[upr]a: hîc Consulares, id est, ferè Aristocratica[e].
+                    </marginalia_text>
+                <emphasis method="pen" text="Aristocratica[e]" type="straight"/>
+                    <internal_ref text="s[upr]a">
+                        <target ref="PrincetonPA6452:00000047" text="[25]"/>
+                        <target ref="PrincetonPA6452:00000969" text="[I4[r]]"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                Royal laws, [see] above: here consular laws, that is, virtually aristocratic.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Primam aetatem Romani" type="straight"/>
+        <underline language="LA" method="pen" text="pueritiam" type="straight"/>
+        <underline language="LA" method="pen" text="esse sub regibus" type="straight"/>
+        <underline language="LA" method="pen" text="iuuentus" type="straight"/>
+        <underline language="LA" method="pen" text="aristocratiam" type="straight"/>
+        <underline language="LA" method="pen" text="Iunio Bruto" type="straight"/>
+        <underline language="LA" method="pen" text="Valerioq[ue] Publicola primis" type="straight"/>
+        <underline language="LA" method="pen" text="Iulium Caesarem" type="straight"/>
+        <underline language="LA" method="pen" text="monarchiam" type="straight"/>
+        <underline language="LA" method="pen" text="extincta libertate &amp; aristocratia" type="straight"/>
+        <underline language="LA" method="pen" text="initia imperij consularis" type="straight"/>
+        <underline language="LA" method="pen" text="multa egregia exempla morum priuatorum" type="straight"/>
+        <underline language="LA" method="pen" text="publicoru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="legum &amp; institutorum complectitur" type="straight"/>
+        <underline language="LA" method="pen" text="catalogum legum" type="straight"/>
+        <underline language="LA" method="pen" text="institutorum" type="straight"/>
+        <underline language="LA" method="pen" text="nouorum quidem" type="straight"/>
+        <underline language="LA" method="pen" text="omnem ferè aetatem secundam" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]sulibus actam" type="straight"/>
+        <underline language="LA" method="pen" text="LEGES ET" type="straight"/>
+        <underline language="LA" method="pen" text="anni consularis sub Iunio Bruto" type="straight"/>
+        <underline language="LA" method="pen" text="Publicola" type="straight"/>
+        <underline language="LA" method="pen" text="consulis Bruti" type="straight"/>
+        <underline language="LA" method="pen" text="populi consensu" type="straight"/>
+        <underline language="LA" method="pen" text="binos consules" type="straight"/>
+        <underline language="LA" method="pen" text="summa regia potestate" type="straight"/>
+        <underline language="LA" method="pen" text="singulos" type="straight"/>
+        <underline language="LA" method="pen" text="optima quaeq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="bona fide" type="straight"/>
+        <underline language="LA" method="pen" text="publica magis commoda" type="straight"/>
+        <underline language="LA" method="pen" text="nemo potestatem &amp; imperium eorum" type="straight"/>
+        <underline language="LA" method="pen" text="iudicio publico" type="straight"/>
+        <underline language="LA" method="pen" text="priuata actione negotiu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="statim eodem" type="straight"/>
+        <underline language="LA" method="pen" text="regiam consulum" type="straight"/>
+        <underline language="LA" method="pen" text="aliquantum imminuit Publicola" type="straight"/>
+        <underline language="LA" method="pen" text="prouocatione" type="straight"/>
+        <underline language="LA" method="pen" text="omnia iura regia tenere" type="straight"/>
+        <underline language="LA" method="pen" text="insignia gestare" type="straight"/>
+        <underline language="LA" method="pen" text="alternis" type="straight"/>
+        <underline language="LA" method="pen" text="fasces habere debere" type="straight"/>
+        <underline language="LA" method="pen" text="in" type="straight"/>
+        <underline language="LA" method="pen" text="extra urbem in" type="straight"/>
+        <underline language="LA" method="pen" text="pariter duodecim" type="straight"/>
+        <underline language="LA" method="pen" text="qui in urbe" type="straight"/>
+        <underline language="LA" method="pen" text="fasces" type="straight"/>
+        <underline language="LA" method="pen" text="insigne metuendum" type="straight"/>
+        <underline language="LA" method="pen" text="symbolum" type="straight"/>
+        <underline language="LA" method="pen" text="ius exequendae &amp; sumendae" type="straight"/>
+        <underline language="LA" method="pen" text="poenae capitalis" type="straight"/>
+        <underline language="LA" method="pen" text="minor tamen" type="straight"/>
+        <underline language="LA" method="pen" text="praetorib[us]" type="straight"/>
+        <underline language="LA" method="pen" text="proconsulibus" type="straight"/>
+        <underline language="LA" method="pen" text="aucto imperio" type="straight"/>
+        <underline language="LA" method="pen" text="parem quidem potestatem" type="straight"/>
+        <underline language="LA" method="pen" text="uterq[ue] consul" type="straight"/>
+        <underline language="LA" method="pen" text="praerogativa" type="straight"/>
+        <underline language="LA" method="pen" text="esset aliqua" type="straight"/>
+        <underline language="LA" method="pen" text="regem agere Romae" type="straight"/>
+        <underline language="LA" method="pen" text="pro capitali" type="straight"/>
+        <underline language="LA" method="pen" text="affectare regnum" type="straight"/>
+        <underline language="LA" method="pen" text="Spurio Cassio" type="straight"/>
+        <underline language="LA" method="pen" text="Manlio" type="straight"/>
+        <underline language="LA" method="pen" text="Gracchis" type="straight"/>
+        <underline language="LA" method="pen" text="Senatum Brutus" type="straight"/>
+        <underline language="LA" method="pen" text="Tarquinio diminutum" type="straight"/>
+        <underline language="LA" method="pen" text="patribus co[n]scriptis, et allectis" type="straight"/>
+        <underline language="LA" method="pen" text="ex equestri" type="straight"/>
+        <underline language="LA" method="pen" text="trecenti senatores" type="straight"/>
+        <underline language="LA" method="pen" text="Consules" type="straight"/>
+        <underline language="LA" method="pen" text="sacrorum agere" type="straight"/>
+        <underline language="LA" method="pen" text="reges" type="straight"/>
+        <underline language="LA" method="pen" text="quid de" type="straight"/>
+        <underline language="LA" method="pen" text="aut mutetur" type="straight"/>
+        <underline language="LA" method="pen" text="regem sacrificulum" type="straight"/>
+        <underline language="LA" method="pen" text="curaret sacra" type="straight"/>
+        <underline language="LA" method="pen" text="antea regi" type="straight"/>
+        <underline language="LA" method="pen" text="Libertatem" type="straight"/>
+        <underline language="LA" method="pen" text="nouum imperij" type="straight"/>
+        <underline language="LA" method="pen" text="muniendum esse magnis paruis que momentis" type="straight"/>
+        <underline language="LA" method="pen" text="Charitas Reipub." type="straight"/>
+        <underline language="LA" method="pen" text="charitatem priuatam" type="straight"/>
+        <underline language="LA" method="pen" text="quilibet" type="straight"/>
+        <underline language="LA" method="pen" text="affectus, quodlibet" type="straight"/>
+        <underline language="LA" method="pen" text="erga Rempub." type="straight"/>
+        <underline language="LA" method="pen" text="debet priuatos" type="straight"/>
+        <underline language="LA" method="pen" text="affectus, priuata" type="straight"/>
+        <underline language="LA" method="pen" text="Priuata enim" type="straight"/>
+        <underline language="LA" method="pen" text="publico ipsi iuri" type="straight"/>
+        <underline language="LA" method="pen" text="Bruto, qui charitatem reipub. praetulit" type="straight"/>
+        <underline language="LA" method="pen" text="sibi priuatim erat cum Tarquinio" type="straight"/>
+        <underline language="LA" method="pen" text="probat ius naturae" type="straight"/>
+        <underline language="LA" method="pen" text="publica priuatis" type="straight"/>
+        <underline language="LA" method="pen" text="propria" type="straight"/>
+        <underline language="LA" method="pen" text="contra legem naturae &amp; contra conscientiam" type="straight"/>
+        <underline language="LA" method="pen" text="Magistratui non licet abrogare suam potestatem" type="straight"/>
+        <underline language="LA" method="pen" text="semetipsum abdicet &amp; exuat" type="straight"/>
+        <underline language="LA" method="pen" text="superior magistratus cogat" type="straight"/>
+        <underline language="LA" method="pen" text="ui" type="straight"/>
+        <underline language="LA" method="pen" text="iure" type="straight"/>
+        <underline language="LA" method="pen" text="aliquis cum potestate" type="straight"/>
+        <underline language="LA" method="pen" text="publicè ab inferioribus statui" type="straight"/>
+        <underline language="LA" method="pen" text="Finito enim" type="straight"/>
+        <underline language="LA" method="pen" text="repetebantur ab eo rogationes gestorum" type="straight"/>
+        <underline language="LA" method="pen" text="impunè contra" type="straight"/>
+        <underline language="LA" method="pen" text="Consules" type="straight"/>
+        <underline language="LA" method="pen" text="totius populi suffragijs" type="straight"/>
+        <underline language="LA" method="pen" text="centuriatis comitijs" type="straight"/>
+        <underline language="LA" method="pen" text="maximo" type="straight"/>
+        <underline language="LA" method="pen" text="modo suffragiorum" type="straight"/>
+        <underline language="LA" method="pen" text="de comitijs" type="straight"/>
+        <underline language="LA" method="pen" text="In Aristocratia" type="straight"/>
+        <underline language="LA" method="pen" text="aequum ius &amp; libertatem" type="straight"/>
+        <underline language="LA" method="pen" text="omnibus optimatibus" type="straight"/>
+        <underline language="LA" method="pen" text="omnibus equitibus" type="straight"/>
+        <underline language="LA" method="pen" text="omnibus etiam plebeijs" type="straight"/>
+        <underline language="LA" method="pen" text="pro sua cuiq[ue] portione" type="straight"/>
+        <underline language="LA" method="pen" text="In regno uerò" type="straight"/>
+        <underline language="LA" method="pen" text="imparia &amp; non aequa" type="straight"/>
+        <underline language="LA" method="pen" text="multa pro arbitrio regis" type="straight"/>
+        <underline language="LA" method="pen" text="iura cuilibet ex aequo &amp; pari" type="straight"/>
+        <underline language="LA" method="pen" text="praeesse &amp; prodesse tam inopi" type="straight"/>
+        <underline language="LA" method="pen" text="omnes ligare" type="straight"/>
+        <underline language="LA" method="pen" text="leges non debent esse telis" type="straight"/>
+        <underline language="LA" method="pen" text="potentes impunè abire" type="straight"/>
+        <underline language="LA" method="pen" text="literis" type="straight"/>
+        <underline language="LA" method="pen" text="confirmari promissa" type="straight"/>
+        <underline language="LA" method="pen" text="scriptis &amp; syngraphis corroboratur" type="straight"/>
+        <underline language="LA" method="pen" text="obligationem" type="straight"/>
+        <underline language="LA" method="pen" text="rem suam priuatam" type="straight"/>
+        <underline language="LA" method="pen" text="quae sit eis mandata" type="straight"/>
+        <underline language="LA" method="pen" text="hostile quicquam" type="straight"/>
+        <underline language="LA" method="pen" text="legationis suae praeuaricatores" type="straight"/>
+        <underline language="LA" method="pen" text="hostium" type="straight"/>
+        <underline language="LA" method="pen" text="suum" type="straight"/>
+        <underline language="LA" method="pen" text="iure gentium sacrosanctos" type="straight"/>
+        <underline language="LA" method="pen" text="Deo semel" type="straight"/>
+        <underline language="LA" method="pen" text="humanis usibus prophanari" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; segetem" type="straight"/>
+        <underline language="LA" method="pen" text="religiosum" type="straight"/>
+        <underline language="LA" method="pen" text="Proditores damnari" type="straight"/>
+        <underline language="LA" method="pen" text="perduellium" type="straight"/>
+        <underline language="LA" method="pen" text="hostium patriae" type="straight"/>
+        <underline language="LA" method="pen" text="Publicum officium magistratus" type="straight"/>
+        <underline language="LA" method="pen" text="superat priuatum officium" type="straight"/>
+        <underline language="LA" method="pen" text="paternum" type="straight"/>
+        <underline language="LA" method="pen" text="Bruti exemplum" type="straight"/>
+        <underline language="LA" method="pen" text="seuerum in liberos suos" type="straight"/>
+        <underline language="LA" method="pen" text="ultimo supplicio capitali damnatos" type="straight"/>
+        <underline language="LA" method="pen" text="primùm uirgis" type="straight"/>
+        <underline language="LA" method="pen" text="capite" type="straight"/>
+        
+        <symbol language="LA" name="SS" place="left_margin" text="monarchiam"/>
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="JC" place="intext"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="aliquantum imminuit Publicola"/>
+        <mark language="LA" method="pen" name="quotation_mark" place="left_margin" text="insignia gestare"/>
+        <mark language="LA" method="pen" name="equal_sign" place="left_margin" text="insigne metuendum"/>
+        <mark language="LA" method="pen" name="equal_sign" place="left_margin" text="regem agere Romae"/>
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!-- priua -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- cha -->
+        <mark language="LA" method="pen" name="plus_sign" place="right_margin" text="Aristocratia"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- con -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- suppli -->
+        
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="aristocratiam"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="monarchiam"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- quadraginta, -->
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- Publicola, -->
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="Publicola"/>
+        <mark method="pen" name="dash" place="intext"/> <!-- consen -->
+        <mark method="pen" name="dot" place="intext"/> <!-- est, -->
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="summa regia potestate"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- creari, -->
+        <mark method="pen" name="dot" place="intext"/> <!-- fide, -->
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- detrectet, -->
+        <mark method="pen" name="dot" place="intext"/> <!-- Publicola, -->
+        <mark method="pen" name="dot" place="intext"/> <!-- gestare, -->
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dash" place="intext"/> <!-- sumen -->
+        <mark method="pen" name="dot" place="intext"/> <!-- proconsulibus, -->
+        <mark method="pen" name="comma" place="intext"/> <!-- potentiae -->
+        <mark method="pen" name="dot" place="intext"/> <!-- regnum, -->
+        <mark method="pen" name="dot" place="intext"/> <!-- diminutum, -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="patribus co[n]scriptis"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- ordine, -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="trecenti senatores"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- reges, -->
+        <mark method="pen" name="dash" place="intext"/> <!-- re -->
+        <mark method="pen" name="dot" place="intext"/> <!-- regi, -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="muniendum"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="charitatem priuatam"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- priuatam, -->
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- praeferri, -->
+        <mark method="pen" name="diacritic" place="intext"/> <!--contra-->
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- potest, -->
+        <mark method="pen" name="dot" place="intext"/> <!-- actorum, -->
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--conuentu. Supra-->
+        <mark method="pen" name="dot" place="intext"/> <!-- sunt, -->
+        <mark method="pen" name="dot" place="intext"/> <!-- legum, -->
+        <mark method="pen" name="dot" place="intext"/> <!-- mandata, -->
+        <mark method="pen" name="dot" place="intext"/> <!-- affectum, -->
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--caedi, deinde-->
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.frontmatter.flyleaf.002r.tif" origin="added" pagination="[added page]" reader="John Dee" status="fixed"/> 
+    <annotation>
+        
+        <marginalia anchor_text="nomina" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        in quo primò collocetur Carbo, et coaptetur ei bene, et pos[t] <!-- FSF: some ends of lines are lost --> <!--JG: Could also be 'potest'-->
+                        super carbones accensos, substantia distillanda ad spissitud[inem]
+                        Vnius digiti, et desuper etia[m] carbones, vsq[ue] ad sumitatem furm[...] <!--JG: Could also be 'utrius' & 'furnacis'-->
+                        et dimittatur operari quovsq[ue] totum dissittetur.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                In this first, charcoal is applied and joined well to it, and thereafter [...] above inflamed charcoal, the substance must be distilled to the thickness [...].
+                Of one finger, and even over charcoal, up to the sumit [of the furnace?] and may be abandoned to operate until every part is distilled. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nomina" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Modus vero alius per cineritiu[m] sic fit. Collocetur substantia in <!-- FSF: some ends of lines are lost -->
+                        fovea cineritij, ac desuper ligna accensa, et permittatur
+                        operari quovsq[ue] tota [...] exeat. Prima aute[m] disti[l]latio
+                        major est quam secunda: quia Manica ac[...]te[m]
+                        caloris plus infert quam cimeritiu[m]. Fit etiam pe[..]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Surely another way through cupellation is thus done. The substance in placed in [...] a pit of ash, and over inflamed wood 
+                and is allowed to work until the whole [...] expires. But the first distillation is greater than the second: because 
+                the sleeve [...] of heath obtains more than cupellation. It is also done [...].
+            </translation>
+        </marginalia>
+        
+    </annotation>
+</transcription>

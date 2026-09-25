@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.089v.tif" reader="Harvey" signature="[V.iii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Comparasons." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Similitud's. <!--JG: Likely an abbreviation of 'similitudines'. Thanks to Laetitia Sansonetti for her suggestion-->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Likenesses.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Mr Martin being asked of M[ist]ris Hubert, how Doctor Wath her Physitian looked in his sicknes; answered, Mr Doctor lookes like the further end of a fiddle.
+                    </marginalia_text> <!-- joke also found in the Domenichi -->
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="Lawyer" type="straight"/>
+        <underline language="EN" method="pen" text="Phisitien take" type="straight"/>
+        <underline language="EN" method="chalk" text="Phisitien" type="straight"/>
+        <underline language="EN" method="pen" text="diuine" type="straight"/>
+        <underline language="EN" method="chalk" text="diuine" type="straight"/>
+        <underline language="EN" method="pen" text="great Princes" type="straight"/>
+        <underline language="EN" method="pen" text="at comparasons" type="straight"/>
+        <underline language="EN" method="pen" text="thy great male" type="straight"/>
+        <underline language="EN" method="pen" text="whiche is like thy selfe" type="straight"/>
+        <underline language="EN" method="pen" text="liken menne" type="straight"/>
+        <underline language="EN" method="chalk" text="horses, to dogges" type="straight"/>
+        <underline language="EN" method="pen" text="dogges" type="straight"/>
+        <underline language="EN" method="pen" text="to coffers, to" type="straight"/>
+        <underline language="EN" method="chalk" text="coffers, to stooles, to cartes, to candelstickes" type="straight"/>
+        <underline language="EN" method="pen" text="a good grace" type="straight"/>
+        <underline language="EN" method="chalk" text="verye stale" type="straight"/>
+        <underline language="EN" method="pen" text="verye stale" type="straight"/>
+        <underline language="EN" method="pen" text="consider the place, the time" type="straight"/>
+        <underline language="EN" method="pen" text="The comparason" type="straight"/>
+        <underline language="EN" method="pen" text="Alexander his" type="straight"/>
+        <underline language="EN" method="pen" text="Akexander his sonn" type="straight"/>
+        <underline language="EN" method="chalk" text="seemed verye" type="straight"/>
+        <underline language="EN" method="pen" text="seemed verye sad" type="straight"/>
+        <underline language="EN" method="pen" text="verie heauie for youre" type="straight"/>
+        <underline language="EN" method="pen" text="may gete some of your winninges" type="straight"/>
+        <underline language="EN" method="pen" text="hym at the least one Ducat" type="straight"/>
+        <underline language="EN" method="chalk" text="one Ducat" type="straight"/>
+        <underline language="EN" method="pen" text="goe playe" type="straight"/>
+        <underline language="EN" method="chalk" text="suche a trifle" type="straight"/>
+        <underline language="EN" method="pen" text="dyscomfited a great armie, and" type="straight"/>
+        
+        <underline language="EN" method="pen" text="Comparasons" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="head"/> <!-- extends into right margin -->
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark language="EN" method="pen" name="equal_sign" place="left_margin" text="whiche is lyke thy selfe"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark language="EN" method="pen" name="quotation_mark" place="left_margin" text="a good grace"/>
+        
+        <mark method="pen" name="X_sign" place="right_margin"/>
+        <mark method="pen" name="X_sign" place="right_margin"/>
+        <mark method="pen" name="X_sign" place="right_margin"/>
+        <mark method="pen" name="X_sign" place="right_margin"/>
+        <mark method="pen" name="X_sign" place="right_margin"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!-- lawe, nor -->
+        <mark method="pen" name="dot" place="intext"/> <!-- medicin, nor -->
+        <mark method="pen" name="dot" place="intext"/> <!-- laughed, then -->
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- men. But -->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="at comparasons"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- birdes -->
+        <mark method="pen" name="dot" place="intext"/> <!-- candelstickes, which -->
+        <mark method="pen" name="comma" place="intext"/> <!-- grace, and -->
+        <mark method="pen" name="comma" place="intext"/> <!-- great, to -->
+        <mark method="pen" name="dot" place="intext"/> <!-- hande, and -->
+        <mark method="pen" name="dot" place="intext"/> <!-- deceyued, for -->
+        <mark method="pen" name="dot" place="intext"/> <!-- trifle, but -->
+        
+    </annotation>
+</transcription>

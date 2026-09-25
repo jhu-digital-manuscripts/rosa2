@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.046r.tif" pagination="46" reader="John Dee" signature="Mij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Vulcanum coagulatum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vulcanus coagulatus</marginalia_text>
+                </position>
+            </language>
+            <translation>Vulcan coagulated.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hagel" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hayle.</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                   <marginalia_text>gemma[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Hail. Precious stones.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Grandinibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Grando</marginalia_text>
+                </position>
+            </language>
+            <translation>Hail.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gemina[e] natura[e] in istis stellis</marginalia_text>
+                </position>
+            </language>
+            <translation>Precious stones born in those stars.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="bey beiden ein" type="straight"/>
+        <underline language="DE" method="pen" text="Windt" type="straight"/>
+        <underline language="DE" method="pen" text="kälte" type="straight"/>
+        <underline language="DE" method="pen" text="vngestümmigkeit" type="double"/>
+        <underline language="DE" method="pen" text="theil coaguliert sich" type="double"/>
+        <underline language="LA" method="pen" text="Vulcanum coagulatum" type="double"/>
+        <underline language="DE" method="pen" text="Kißlen" type="double"/>
+        <underline language="DE" method="pen" text="Grandines" type="straight"/>
+        <underline language="DE" method="pen" text="gleich den gemelten Gemmis" type="straight"/>
+        <underline language="DE" method="pen" text="allein das nicht solch impetus" type="straight"/>
+        <underline language="DE" method="pen" text="kalte Sulphur, Mercurius vnd Sal" type="straight"/>
+        <underline language="DE" method="pen" text="dermassen nicht so grob vnd so hoch in impetu gradiert" type="straight"/>
+        <underline language="DE" method="pen" text="Regen vnd Steinlein" type="straight"/>
+        <underline language="DE" method="pen" text="zwiling" type="double"/>
+        
+        <drawing anchor_text="dermassen nicht so grob vnd so hoch in impetu gradiert" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

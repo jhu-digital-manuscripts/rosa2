@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.069r.tif" pagination="117" reader="John Dee" signature="hh.iii."/>
+    <annotation> 
+        
+        <marginalia anchor_text="iudicio à me vis exigere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        iudicio exigere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To examine by trial.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="peculiare edictum repentinu[m] [...] edictum repente vberrimum &amp; quaestuosissimum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        edictu[m] [ peculiare repentinu[m] vberrimu[m] questuosiss[imum]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A special, forbidding, very fertile, [and] very profitable edict.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dies praestituta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        dies p[rae]stituta
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A fixed date.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cohibitio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        cohibitio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Restriction.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="iugera sationum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        satio. Iugera
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Acreage. Soil.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Quàm lapide se furari putat! vtrique facit" type="straight"/>
+        <underline language="LA" method="pen" text="imbri frumentum corrumpi in area patiebatur" type="straight"/>
+        <underline language="LA" method="pen" text="hoc apponitur" type="straight"/>
+        <underline language="LA" method="pen" text="cohibitio" type="straight"/>
+        <underline language="LA" method="pen" text="nec solum contra consuetudinem superiorum, sed etia[m] contra omnia iura Siculorum, quae habent à Senatu" type="straight"/>
+        
+        <numeral place="right_margin">15</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">16</numeral>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>0</illustrations>
+    <totalPages>22</totalPages>
+    <dimensions units="mm">
+        <width>252</width>
+        <height>348</height>
+    </dimensions>
+    <dates>
+        <startDate>1400</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="L'Epitre othea">
+            <language>fr</language>
+            <title>L'Epitre Othea</title>
+            <textId/>
+            <pages end="47v" start="1r">22</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>40</linesPerColumn>
+            <leavesPerGathering>8</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Works by Christine de Pizan (Manuscrit du Duc, Vol. IV).</title>
+            <commonName>Français 605</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material> Parchment</material>
+            <origin>Paris, France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>Français 605</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Works by Christine de Pizan (Manuscrit du Duc, Vol. IV)</title>
+            <commonName>Français 605</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>Parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Paris, France</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>Français 605</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

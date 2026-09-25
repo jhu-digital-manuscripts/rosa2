@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.095v.tif" pagination="[88v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="sexta de quadrato respexit" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Et lic[et] ♂ de □⁰ aspexit, iuvit tame[n] [no[n]nihil, vt ex regula supra data patet. fo 86. v. linea 13 et 14</marginalia_text> 
+                    <symbol_in_text name="Mars"/>
+                    <symbol_in_text name="Square"/>
+                    <internal_ref>
+                        <target ref="RCP7134:192" text="86. v."/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>And although Mars faces [them] from 90 degrees, nevertheless it helps in some measure, as is well known from the rule given above. Folio 86 verso, lines 13 and 14.</translation>  
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Domo</marginalia_text>
+                </position>
+            </language>
+            <translation>In the house.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sexta de quadrato respexit" type="straight"/>
+        <underline language="LA" method="pen" text="plurima officia eo anno" type="straight"/>
+        <underline language="LA" method="pen" text="quòd haec omnia essent uitiata &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="inimicorum apertorum &amp; occultorum" type="straight"/>
+        <underline language="LA" method="pen" text="Cauda etiam minuit dignitates, quae" type="straight"/>
+        <underline language="LA" method="pen" text="trino" type="straight"/>
+        
+        <errata amendedtext="signis" copytext="significatis" language="LA"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.225r.tif" pagination="218" reader="John Dee" signature="II ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="alter reuolutionis modus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Alter modus revolutionis</marginalia_text>
+                </position>
+            </language>
+            <translation>Another way of a revolution.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="Mars et in Mercurij quadrata radatione" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>□ ♂ et ☿.</marginalia_text>
+                    <symbol_in_text name="Square"/>
+                    <symbol_in_text name="Mars"/>
+                    <symbol_in_text name="Mercury"/>
+                </position>
+            </language>
+            <translation>Mars and Venus in 90 degrees.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Monstri genesis.</marginalia_text>
+                </position>
+            </language>
+            <translation>The birth of a monster.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="alter reuolutionis modus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>vide sup[ra]. aphoris. 15.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:452" text="15"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See above, aphorism fifteen.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="cogitabundos &amp; melancholicos" type="straight"/>
+        
+    </annotation>
+</transcription>

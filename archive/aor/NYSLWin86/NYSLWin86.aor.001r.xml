@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin86.001r.tif" pagination="title page" reader="Dee"/>
+    
+    <annotation>
+        <marginalia hand="Italian" other_reader="John Withrop">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>J.W.</marginalia_text>
+                    <person name="John Winthrop"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>J D.</marginalia_text>
+                    <person name="John Dee"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Dorn" hand="Italian" other_reader="John Winthrop">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Dorn</marginalia_text>
+                    <person name="Gerhard Dorn"/>
+                    <emphasis method="pen" text="Dorn" type="double"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Iste, ex n[ost]ra Monade Hieroplyphica Characteres istos noves formare didici[t]
+                    cum sine venia n[ost]ra, tu[m] sine grata n[ost]ri [.] mentione.</marginalia_text>
+                </position>
+            </language>
+            <translation>That [man] learned to form those new characters from our Hieroglyphic Monad, although
+            without our favour, and besides without our grateful mention.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian"> <!--JG: Annotator? Ask Winthrop team-->
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>N632</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian"> <!--JG: Annotator? Ask Winthrop team-->
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>N632</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Iste, ex n[ost]ra Monade Hieroplyphica Characteres istos noves formare didici[t] cum sine venia n[ost]ra, tu[m] sine grata n[ost]ri [.] mentione." hand="Italian"> <!--JG: Annotator? Ask Winthrop team-->
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>U:</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian"> <!--JG: Annotator? Ask Winthrop team-->
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>G.L.M.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Dorn" type="double"/>
+        
+        <numeral place="right_margin">2.</numeral>
+        <numeral place="right_margin">3. [deleted]</numeral>
+        
+    </annotation>
+</transcription>

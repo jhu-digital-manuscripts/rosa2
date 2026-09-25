@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.341v.tif" pagination="134" reader="John Dee" signature="[Ii.iii.[v]]"/>   
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        vetus miles exercitatus veteranus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                An old soldier, exercise, a veteran.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ploratus turpissimos edere" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        ploratus turpiss[im]os edere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Deplored to give out the most disgraceful.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        rudis inexercitatus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Underdeveloped, untrained.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Patrocles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Patrocles
+                    </marginalia_text>
+                    <person name="Patrocles"/>
+                </position>
+            </language>
+            <translation>
+                Patrocles.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Euripylus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Eurypilus 
+                    </marginalia_text>
+                    <person name="Eurypylus"/>
+                </position>
+            </language>
+            <translation>
+                Eurypylus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="AEsopus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Æsopus
+                    </marginalia_text>
+                    <person name="Aesop"/>
+                </position>
+            </language>
+            <translation>
+                Aesop.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aniculae saepe inediam biduum aut triuum feru[n]t" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Anicula[e] biduu[m] aut triduu[m] inediam ferent
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                'Old women often endure going without food for two or three days' [Loeb 141, 190].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Consuetudinis magna vis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Consuetudinis Vis.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Strength through experience.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Crudele gladiatorum spectaculum, &amp; inhumanum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Gladiatoru[m] spectaculu[m] crudele, inhumanu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The spectacles of the gladiators are cruel and inhumane.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Stoici" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Stoici
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Stoics.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Tolera[n]ter dolore[m] patere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To bear pain tolerably.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Exercitatio meditatio consuetudo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Exercise, meditation, habit.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        agesis 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                If you please.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="contortulis quibusdam &amp; minutis conclusiunculis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        co[n]tortulis quibusda[m] et minutis co[n]clusiunculis.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                By somewhat complicated and petty captious conclusions.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quanuis leui ictu ploratus turpissimos" type="straight"/>
+        <underline language="LA" method="pen" text="vllo potis est pacto profluens consistere" type="straight"/>
+        <underline language="LA" method="pen" text="Qui alteri exitium parat" type="straight"/>
+        <underline language="LA" method="pen" text="Eum scire oportet sibi paratam pestem vt participet parem" type="straight"/>
+        <underline language="LA" method="pen" text="Non potest" type="straight"/>
+        <underline language="LA" method="pen" text="Aniculae saepe inediam biduum aut" type="straight"/>
+        <underline language="LA" method="pen" text="Pernoctant venatores in niue, in montibus vri se patiuntur" type="straight"/>
+        <underline language="LA" method="pen" text="ratione corroboret? Crudele gladiatorum spectaculum, &amp; inhumanum no[n]nullis videri solet, &amp; haud scio an ita sit, vt nunc sit" type="straight"/>
+        <underline language="LA" method="pen" text="ita me ad credendum tua ducit oratio" type="straight"/>
+        <underline language="LA" method="pen" text="contortulis quibusdam &amp; minutis conclusiunculis, nec" type="straight"/>
+        <underline language="LA" method="pen" text="an eadem breuiter attingam quae modo" type="straight"/>
+
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Unidentified" place="left_margin"/>
+        <symbol name="Asterisk" place="right_margin"/>
+
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="X_sign" place="left_margin"/>
+        <mark method="pen" name="X_sign" place="tail"/>
+        
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">13</numeral>
+        
+        <errata amendedtext="[deleted]" copytext="homine[m] exercitatum" language="LA"/>
+        
+    </annotation>
+</transcription>

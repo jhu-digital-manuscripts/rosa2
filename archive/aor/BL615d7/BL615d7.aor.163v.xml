@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.163v.tif" pagination="[163v]" reader="John Dee" signature="[Xiij[v]]"/>    
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>The Variations of the Compas</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tutti Oro.</marginalia_text> 
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hill</marginalia_text> 
+                </position>
+            </language>
+            <translation>All gold hill.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="le Guardie" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Le Guardie</marginalia_text> 
+                </position>
+            </language>
+            <translation>The guards.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="i Testimoni." hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>I Testimoni</marginalia_text> 
+                </position>
+            </language>
+            <translation>The witnesses.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="XVI di Agosto" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>16 Augusti</marginalia_text>
+                </position>
+            </language>
+            <translation>16 August</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="la Beata" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>La Beata.</marginalia_text> 
+                </position>
+            </language>
+            <translation>The blessed.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="XX di Agosto" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>August 20</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Note the variation of the compas</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="monti Tutti Oro" type="straight"/>
+        <underline language="IT" method="pen" text="d'oro" type="straight"/>
+        <underline language="IT" method="pen" text="VI" type="straight"/>
+        <underline language="IT" method="pen" text="chiamò le Guardie" type="straight"/>
+        <underline language="IT" method="pen" text="i Testimoni" type="straight"/>
+        <underline language="IT" method="pen" text="del troppo vegghiare gli occhi gli" type="straight"/>
+        <underline language="IT" method="pen" text="maggior parte" type="straight"/>
+        <underline language="IT" method="pen" text="per relatione" type="triple"/>
+        <underline language="IT" method="pen" text="&amp; piloti" type="triple"/>
+        <underline language="IT" method="pen" text="allhora noruesteato, le aguglie noruestearono" type="straight"/>
+        <underline language="IT" method="pen" text="fretta piu d'vna quarta" type="straight"/>
+        <underline language="IT" method="pen" text="mezo vento" type="straight"/>
+        <underline language="IT" method="pen" text="sempre erano" type="straight"/>
+        <underline language="IT" method="pen" text="notar cioò" type="straight"/>
+        <underline language="IT" method="pen" text="al Norueste" type="straight"/>
+        <underline language="IT" method="pen" text="fondo" type="straight"/>
+        <underline language="IT" method="pen" text="la Beata" type="straight"/>
+        <underline language="IT" method="pen" text="la Spagnuola;" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="face"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

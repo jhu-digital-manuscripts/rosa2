@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.341r.tif" pagination="13" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia anchor_text="nulla in caeteros maleuolentia suffusum: contráque cum magnum &amp; excelsum, tum etiam apertum &amp; simplicem" hand="Italian"> 
+            <language ident="LA"> 
+                <position book_orientation="0" place="head">
+                    <marginalia_text>a[n]i[m]us { nulla maleuolentia suffusus in magnus excelsus apertus simplex. </marginalia_text>                
+                </position>
+            </language>
+            <translation>Feelings: Free of any malice. Exalted in the highest. Open. Straightforward.</translation> 
+        </marginalia> 
+        
+        <marginalia anchor_text="potentium beneuolentiam" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Potentu[m] Beneuolentia</marginalia_text>                
+                </position>
+            </language>
+            <translation>Powerful benevolence.</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lentulus</marginalia_text>  
+                    <person name="Cornelius Lentulus Spinther"/> 
+                </position>
+            </language>
+            <translation>Cornelius Lentulus Spinther.</translation> 
+        </marginalia>  
+        
+        <marginalia anchor_text="Quòd" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>HIC DECIMA EPISTOLA</marginalia_text>                
+                </position>
+            </language>
+            <translation>This is the tenth letter.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Menocrito" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Menocritus</marginalia_text>                
+                    <person name="Menocritus"/> 
+                </position>
+                </language>
+            <translation>Menocritus.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Aristoteleo more" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mos Aristoteleus</marginalia_text> 
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>The manner of Aristotle.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="treis libros de temporibus meis" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Libri quanda[m] quos Cic[ero] scripsit</marginalia_text>              
+                <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Certain books that Cicero wrote.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Appius" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Appius.</marginalia_text>                
+                    <person name="Appius Claudius Pulcher"/>
+                </position>
+            </language>
+            <translation>Appius Claudius Pulcher.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="legémque Curiatam" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lex Curiata. Cornelia</marginalia_text>                
+                </position>
+            </language>
+            <translation>The Curate's law. The Cornelian Law.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="foelicitate" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>al[ii]s facilitate</marginalia_text>                
+                </position>
+            </language>
+            <translation>Other texts have "facilitate."</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="diiungo" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>disiungo</marginalia_text>                
+                </position>
+            </language>
+            <translation>I divide.</translation> 
+        </marginalia>
+                
+        <underline language="LA" method="pen" text="perditoru[m] de me consilia frangere" type="straight"/>
+        <underline language="LA" method="pen" text="hanc etiam potentium beneuolentiam" type="straight"/>
+        <underline language="LA" method="pen" text="vt opinio mea fert" type="straight"/>
+        <underline language="LA" method="pen" text="nulla in caeteros maleuolentia suffusum: contráque" type="straight"/>
+        <underline language="LA" method="pen" text="magnum &amp; excelsum, tum etiam apertum &amp; simplicem. Vidi" type="straight"/>
+        <underline language="LA" method="pen" text="mihi potestas praesentis tui fuerit" type="straight"/>
+        <underline language="LA" method="pen" text="tibi erit eidem, cui salus mea fuit, etiam dignitas curae" type="straight"/>
+        <underline language="LA" method="pen" text="neque ita multae" type="straight"/>
+        <underline language="LA" method="pen" text="diiungo me fere" type="straight"/>
+        <underline language="LA" method="pen" text="à prima adolescentia delectarunt" type="straight"/>
+        <underline language="LA" method="pen" text="sed eos quos erat infinitum bene de me" type="straight"/>
+        <underline language="LA" method="pen" text="veteribus nostris delectationibus" type="straight"/>
+        <underline language="LA" method="pen" text="non transfieris" type="straight"/>
+        <underline language="LA" method="pen" text="velim quàm familiarissime certiore[m], &amp; quàm saepissime" type="straight"/>
+        <underline language="LA" method="pen" text="idque me, non modo vt tu sentias, sed omnes gentes, etiam vt posteritas omnis intelligat, esse" type="straight"/>
+        <underline language="LA" method="pen" text="tam de iure certum est" type="straight"/>
+        <underline language="LA" method="pen" text="sine vlla mora prouinciam successori concedere:" type="straight"/>
+        <underline language="LA" method="pen" text="suspicione tuae cupiditatis non possis illius cupiditatem refutare. Ego vtru[m]que meum puto esse, &amp; quid sentiam oste[n]dere, &amp; quod feceris defendere." type="straight"/>
+        <underline language="LA" method="pen" text="foelicitate quidem vellem, consequi" type="straight"/>
+  
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="section_sign" place="intext"/> 
+        <mark language="LA" method="pen" name="circumflex" place="intext" text="nominare"/>
+        
+        <numeral place="right_margin">12</numeral>
+        
+        <errata amendedtext="disiungo" copytext="diiungo" language="LA"/>  
+        <errata amendedtext="Aristotelico" copytext="Aristoteleo" language="LA"/>
+        <errata amendedtext="Aristotelicam" copytext="Aristoteleam" language="LA"/>
+        <errata amendedtext="Isocratica[m]" copytext="Isocrateam" language="LA"/>
+        <errata amendedtext="nominare non misi quos" copytext="nominare Quos" language="LA"/> 
+                
+    </annotation>
+</transcription>

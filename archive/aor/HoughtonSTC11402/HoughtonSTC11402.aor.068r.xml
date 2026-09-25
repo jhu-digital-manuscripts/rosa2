@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.068r.tif" reader="Harvey" signature="Hv[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>On of [the] brauist Roman acts.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Horatius Cocles" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A most ualiant, and resolute acte of Horatius Cocles.</marginalia_text>
+                    <person name="Horatius Cocles"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="disceuerynge his host" type="straight"/>
+        <underline language="EN" method="pen" text="assemblynge it together" type="straight"/>
+        <underline language="EN" method="pen" text="Porcennas" type="straight"/>
+        <underline language="EN" method="pen" text="Horatius Cocles" type="straight"/>
+        <underline language="EN" method="pen" text="retorne into" type="straight"/>
+        <underline language="EN" method="pen" text="hewe it downe behynde" type="straight"/>
+        <underline language="EN" method="pen" text="fore the head of the brydge" type="straight"/>
+        <underline language="EN" method="pen" text="the brydge cracke" type="straight"/>
+        <underline language="EN" method="pen" text="he sprange" type="straight"/>
+        <underline language="EN" method="pen" text="the myddest of the" type="straight"/>
+        <underline language="EN" method="pen" text="ouer" type="straight"/>
+        <underline language="EN" method="pen" text="weapons" type="straight"/>
+        <underline language="EN" method="pen" text="wou[n]des all to loden" type="straight"/>
+        <underline language="EN" method="pen" text="Afranius" type="straight"/>
+        <underline language="EN" method="pen" text="pursuynge nere vppon hym" type="straight"/>
+        <underline language="EN" method="pen" text="he stayde" type="straight"/>
+        <underline language="EN" method="pen" text="sente his men" type="straight"/>
+        <underline language="EN" method="pen" text="token to departe agayne" type="straight"/>
+        <underline language="EN" method="pen" text="hym fleinge" type="straight"/>
+        <underline language="EN" method="pen" text="a truce to burye" type="straight"/>
+        <underline language="EN" method="pen" text="them that were slayne" type="straight"/>
+        
+        <symbol language="EN" name="SS" place="head" text="On of [the] brauist Roman acts."/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="the myddest of the"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="assemblynge it together"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="wou[n]des"/>
+        
+    </annotation>
+</transcription>

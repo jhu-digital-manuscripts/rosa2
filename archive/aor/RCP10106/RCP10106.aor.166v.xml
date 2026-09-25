@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.166v.tif" pagination="332" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Quod autem commune cum alio est, desinet esse proprium." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Diff[init]o falsa comune.</marginalia_text>
+                </position>
+            </language>
+            <translation>What is common is falsely different.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fine" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[Id est] finitione</marginalia_text>
+                </position>
+            </language>
+            <translation>That is by defintion.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Etymologia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Etymologia</marginalia_text>
+                </position>
+            </language>
+            <translation>Etymology.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="addictus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>adictus</marginalia_text>
+                </position>
+            </language>
+            <translation>Assigned.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Seruus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Seruus.</marginalia_text>
+                </position>
+            </language>
+            <translation>A slave.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="propria differe[n]tiaq[ue] liberoru[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Prop[ri]a diffe[n]tia[que] liberoru[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>The properties and the differentiae.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="qualitas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Qualitas.</marginalia_text>
+                </position>
+            </language>
+            <translation>Quality.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Quod autem commune cum alio est, desinet esse proprium. Hic" type="straight"/>
+        <underline language="LA" method="pen" text="fine, propriorum, ac differentium, nonnunquam etiam etymologiae" type="straight"/>
+        <underline language="LA" method="pen" text="qui seruitutem seruit" type="straight"/>
+        <underline language="LA" method="pen" text="Propria liberi" type="straight"/>
+        <underline language="LA" method="pen" text="praenomen, nomen, cognomen, tribum: habet haec addictus" type="straight"/>
+        <underline language="LA" method="pen" text="quid sit" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

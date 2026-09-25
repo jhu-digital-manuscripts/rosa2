@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.047v.tif" pagination="78" reader="John Dee" signature="[g 3[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="scutarios" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Scutarij,  
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Esquiers.  
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation> 
+                Brokers. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="oratio leporis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Orationes elegantia lepos
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Elegant speeches, wit.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        R[ati]o actuu[m] ex signis ut sup[er]iori capite de ☿ et ♂ in decimo.
+                    </marginalia_text>
+                    <symbol_in_text name="Mercury"/>
+                    <symbol_in_text name="Mars"/>
+                </position>
+            </language>
+            <translation>
+                The reasoning behind actions from the signs, so that with the upper head of Mercury and Mars in the tenth [place].
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="&amp; qui numini praesint" type="straight"/>
+        <underline language="LA" method="pen" text="sed quorum oratio, leporis &amp; gratia plena existat" type="straight"/>
+        <underline language="LA" method="pen" text="uitiosos tamen ac libidinosos" type="straight"/>
+        <underline language="LA" method="pen" text="quibus desideria sua fecura ciuitas credat" type="straight"/>
+        <underline language="LA" method="pen" text="sed miserarum mulierum, aut seruilium, aut anuum, aut uirginu[m] tuitionem, defensionémq[ue] suscipient, &amp; qui" type="straight"/>
+        
+    </annotation>
+</transcription>

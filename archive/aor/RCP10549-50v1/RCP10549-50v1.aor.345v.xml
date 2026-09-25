@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.345v.tif" pagination="22" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia anchor_text="magis, magísque" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text> in dies magis magisq[ue]</marginalia_text>
+                </position>             
+            </language>
+            <translation>in days greater and greater</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristoni" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aristo.</marginalia_text>
+                    <person name="Aristo"/>
+                </position>
+            </language>
+            <translation>Aristo</translation>      
+        </marginalia> 
+        
+        <marginalia anchor_text="Ciliciam" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cilicia</marginalia_text>
+                    <location name="Cilicia"/>
+                </position>
+            </language>
+            <translation>Cilicia</translation>      
+        </marginalia> 
+        
+        <marginalia anchor_text="Curius" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Curius</marginalia_text>
+                    <person name="Curius"/>
+                </position>
+            </language>
+            <translation>Curius</translation>      
+        </marginalia> 
+        
+        <marginalia anchor_text="C. Virginius" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>C. Virginius.</marginalia_text>
+                    <person name="Gaius Virginius"/>
+                </position>
+            </language>
+            <translation>Gaius Virginius</translation>      
+        </marginalia> 
+        
+        <marginalia anchor_text="Phania" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Phania.</marginalia_text>
+                    <person name="Phania"/> 
+                </position>
+            </language>
+            <translation>Phania</translation>      
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="magis, magísque quotidie" type="straight"/>
+        <underline language="LA" method="pen" text="suscepturum inimicitas" type="straight"/>
+        <underline language="LA" method="pen" text="neminem honoris gradu superiorem" type="straight"/>
+        <underline language="LA" method="pen" text="incidere in terrores" type="straight"/>
+        <underline language="LA" method="pen" text="tua laus ex aliqua parte fuerit. sin" type="straight"/>
+        <underline language="LA" method="pen" text="mihi veniebant in mente[m]" type="straight"/>
+        <underline language="LA" method="pen" text="vitabis inimicitas, &amp; posteritatis otio consules" type="straight"/>
+        <underline language="LA" method="pen" text="optatissimum nu[n]tium" type="straight"/>
+        <underline language="LA" method="pen" text="die datae essent" type="straight"/>
+        <underline language="LA" method="pen" text="te statores meos, &amp; lictores cum" type="straight"/>
+        <underline language="LA" method="pen" text=", sicuti debet hominum amicissimorum diligens commendatio" type="straight"/>
+        <underline language="LA" method="pen" text="(quod iusset) curiosus" type="straight"/>
+        <underline language="LA" method="pen" text="propter multas suauitates" type="straight"/>
+        <underline language="LA" method="pen" text="temporis vsuram" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        
+        <numeral place="left_margin">12</numeral>      
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        
+        <drawing anchor_text="vitabis inimicitas, &amp; posteritatis otio consules" book_orientation="0" method="pen" place="left_margin" type="manicule"/>  
+        
+    </annotation>
+</transcription>

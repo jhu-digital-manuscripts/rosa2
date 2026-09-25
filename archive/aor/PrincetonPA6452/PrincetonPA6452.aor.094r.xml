@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.094r.tif" pagination="171" reader="Harvey" signature="P2[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>the death of the most excellent &amp; inuincible Furius.
+                    </marginalia_text>
+                    <person name="Marcus Furius Camillus"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="L. Manlio, Curtius, P. Decij, M. Valerium Coruinum" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Manlius, Curtius, Valerius Corvinus, Decius, most valiant &amp; <!--Circumflexes used to insert Decius after Coruinus-->
+                    </marginalia_text>
+                    <person name="Titus Manlius Torquatus"/>
+                    <person name="Curtius"/>
+                    <person name="Marcus Valerius Messalla Corvinus"/>
+                    <person name="Publius Decius Mus I"/> <!--JG: First of the three Romans named Publius Decius Mus-->
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>worthie men.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Nearchia, vtrinq[ue] politicè indulta.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>New magistracies, politically favourable to both parties.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Mors Furij Camilli, ingentis viri, et in omni fortuna vnici.
+                        Cuius singulare mnemosynon, Secundus à Romulo vrbis conditor. 
+                        Eutropius ait, appellatum fuisse secundum Romulum, quasi et ipse patria[e] conditor.
+                    </marginalia_text>
+                    <person name="Marcus Furius Camillus"/>
+                    <person name="Romulus"/>
+                    <person name="Flavius Eutropius"/>
+                    <book title="Breviarium Historiae Romanae"/> <!-- LS, change to xref? -->
+                </position>
+            </language>
+            <translation>The death of Furius Camillus, a remarkable and in all circumstances unique man.
+                A remarkable memorial to him, the second founder of the city after Romulus. 
+                He was called the “second Romulus”, Eutropius says, “as if he himself were also the founder of the fatherland.”
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in concordiam redactis" type="straight"/>
+        <underline language="LA" method="pen" text="ludi maximi fierent" type="straight"/>
+        <underline language="LA" method="pen" text="duos uiros aediles ex patribus" type="straight"/>
+        <underline language="LA" method="pen" text="dictator" type="straight"/>
+        <underline language="LA" method="pen" text="patres autores omnibus eius anni comitijs" type="straight"/>
+        <underline language="LA" method="pen" text="noui magistratus adiecti" type="straight"/>
+        <underline language="LA" method="pen" text="praetura" type="straight"/>
+        <underline language="LA" method="pen" text="aedilitas curulis" type="straight"/>
+        <underline language="LA" method="pen" text="Pestilentia" type="straight"/>
+        <underline language="LA" method="pen" text="eamq[ue] insignem fecit mors Furij Camilli" type="straight"/>
+        <underline language="LA" method="pen" text="dies L. Manlio dicta esset" type="straight"/>
+        <underline language="LA" method="pen" text="Curtius armatus equo se praecipitauit" type="straight"/>
+        <underline language="LA" method="pen" text="Valerius tribunus militum" type="straight"/>
+        <underline language="LA" method="pen" text="galea coruo, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="eo Coruini nomen" type="straight"/>
+        <underline language="LA" method="pen" text="creatus est ob uirtutem" type="straight"/>
+        <underline language="LA" method="pen" text="XXIII ageret annum" type="straight"/>
+        <underline language="LA" method="pen" text="P. Decij" type="straight"/>
+        <underline language="LA" method="pen" text="hostibus circumsessus erupit" type="straight"/>
+        <underline language="LA" method="pen" text="Valerium Coruinum" type="straight"/>
+        <underline language="LA" method="pen" text="noui hominis consulatu" type="straight"/>
+        <underline language="LA" method="pen" text="nouis duobus" type="straight"/>
+        <underline language="LA" method="pen" text="praetura" type="straight"/>
+        <underline language="LA" method="pen" text="curuli aedilitate" type="straight"/>
+        <underline language="LA" method="pen" text="patricij" type="straight"/>
+        <underline language="LA" method="pen" text="concesso plebi altero consulatu" type="straight"/>
+        <underline language="LA" method="pen" text="Plebes consulatum L." type="straight"/>
+        <underline language="LA" method="pen" text="patres praeturam" type="straight"/>
+        <underline language="LA" method="pen" text="aedilitatem Cn." type="straight"/>
+        <underline language="LA" method="pen" text="quid per plebeium consulem" type="straight"/>
+        <underline language="LA" method="pen" text="pro consule uno plebeio tres patricios magistratus curulib[us]" type="straight"/>
+        <underline language="LA" method="pen" text="tanquam consules" type="straight"/>
+        <underline language="LA" method="pen" text="praetorem" type="straight"/> 
+        <underline language="LA" method="pen" text="iura reddentem" type="straight"/>
+        <underline language="LA" method="pen" text="collegam consulibus" type="straight"/>
+        <underline language="LA" method="pen" text="ijsdem auspicijs creatum" type="straight"/>
+        <underline language="LA" method="pen" text="ex plebe fierent" type="straight"/>
+        <underline language="LA" method="pen" text="postea promiscuu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="maximeq[ue] eam pestilentiam" type="straight"/>
+        <underline language="LA" method="pen" text="mors quàm matura, tam acerba" type="straight"/>
+        <underline language="LA" method="pen" text="M. Furij" type="straight"/>
+        <underline language="LA" method="pen" text="uerè uir unicus in omni fortuna" type="straight"/>
+        <underline language="LA" method="pen" text="princeps pace belloq[ue], priusq[uam]" type="straight"/>
+        <underline language="LA" method="pen" text="clarior in exilio" type="straight"/>
+        <underline language="LA" method="pen" text="uel felicitate" type="straight"/>
+        <underline language="LA" method="pen" text="patriam ipsam restituit" type="straight"/>
+        <underline language="LA" method="pen" text="par deinde per" type="straight"/>
+        <underline language="LA" method="pen" text="titulo tantae gloriae fuit" type="straight"/>
+        <underline language="LA" method="pen" text="dignus que" type="straight"/>
+        <underline language="LA" method="pen" text="secundum" type="straight"/>
+        <underline language="LA" method="pen" text="conditorem urbis" type="straight"/>
+        <underline language="LA" method="pen" text="pestile[n]tia fuit" type="straight"/>
+        <underline language="LA" method="pen" text="eo nihil dignum memoria actum" type="straight"/>
+        <underline language="LA" method="pen" text="uis morbi, nec humanis consilijs, nec ope" type="straight"/>
+        <underline language="LA" method="pen" text="uictis superstitione" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        <symbol name="JC" place="right_margin"/>
+        <symbol name="SS" place="right_margin"/>
+        <symbol name="SS" place="right_margin"/> <!--JG: Looks like a sloppy SS symbol-->
+        <symbol name="SS" place="right_margin"/> <!--JG: Looks like a sloppy SS symbol-->
+        <symbol name="SS" place="right_margin"/> <!--JG: Looks like a sloppy SS symbol-->
+        
+        <mark language="LA" method="pen" name="quotation_mark" place="right_margin" text="Valerius tribunis militum"/>
+        <mark language="LA" method="pen" name="quotation_mark" place="right_margin" text="galea coruo"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- uaca -->
+        <mark language="EN" method="pen" name="circumflex" place="right_margin" text="Decius"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="noui"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="praetura"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="aedilitas curulis"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="noui"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="nouis"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="unicus"/>
+        <mark method="pen" name="dot" place="intext"/> <!--fuit, dignus-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="secundum"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--ferrent Et-->
+        <mark language="EN" method="pen" name="circumflex" place="intext" text="Decius"/>
+        
+    </annotation>
+</transcription>

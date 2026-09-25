@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.084v.tif" reader="Harvey" signature="[Kv[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Priuy conueyance of Letters.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="the insyde of theyr scabbardes" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>in [the] insyde of Scabberds.</marginalia_text>
+                    <emphasis method="pen" text="insyde" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="letters inclosed within theym" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Letters, inclosid in Bottels.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="thronged beastes" type="straight"/>
+        <underline language="EN" method="pen" text="ouer ageynst theyr" type="straight"/>
+        <underline language="EN" method="pen" text="escaped the" type="straight"/>
+        <underline language="EN" method="pen" text="written" type="straight"/>
+        <underline language="EN" method="pen" text="the insyde of theyr scabbardes" type="straight"/>
+        <underline language="EN" method="pen" text="Lucullus" type="straight"/>
+        <underline language="EN" method="pen" text="certifie the Cyricenians" type="straight"/>
+        <underline language="EN" method="pen" text="Mithridates in theyr" type="straight"/>
+        <underline language="EN" method="pen" text="his souldiours" type="straight"/>
+        <underline language="EN" method="pen" text="skylled in swymmynge" type="straight"/>
+        <underline language="EN" method="pen" text="sytte betwene two bottels blowen full of winde" type="straight"/>
+        <underline language="EN" method="pen" text="letters inclosed within theym" type="straight"/>
+        <underline language="EN" method="pen" text="fastened together" type="straight"/>
+        <underline language="EN" method="pen" text="beneth with" type="straight"/>
+        <underline language="EN" method="pen" text="square staues" type="straight"/>
+        <underline language="EN" method="pen" text="vii. myles by see" type="straight"/>
+        <underline language="EN" method="pen" text="course" type="straight"/>
+        <underline language="EN" method="pen" text="legges, as" type="straight"/>
+        <underline language="EN" method="pen" text="with rudders" type="straight"/>
+        <underline language="EN" method="pen" text="stode" type="straight"/>
+        <underline language="EN" method="pen" text="ben a monster of the see" type="straight"/>
+        <underline language="EN" method="pen" text="Hircius consull" type="straight"/>
+        <underline language="EN" method="pen" text="Decimus" type="straight"/>
+        <underline language="EN" method="pen" text="Brutus" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="thronged beastes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="sytte betwene two bottels blowen full of winde"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--hi-->
+        
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--watche. Some-->
+        <mark method="pen" name="bracket" place="intext"/> <!--comming, whiche-->
+        <mark method="pen" name="bracket" place="intext"/> <!--lande: caused-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="ben a monster of the see"/>
+        <mark language="EN" method="pen" name="X_sign" place="intext" text="ben a monster of the see"/>
+        
+    </annotation>
+</transcription>

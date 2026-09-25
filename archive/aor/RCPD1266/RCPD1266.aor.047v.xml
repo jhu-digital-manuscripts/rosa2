@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.047v.tif" pagination="80" reader="John Dee" signature="[g.iiij.[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Eden" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Eden</marginalia_text>
+                    <location name="Eden"/>
+                </position>
+            </language>
+            <translation>Eden.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="regis Eden" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Rex Eden</marginalia_text>
+                    <location name="Eden"/>
+                </position>
+            </language>
+            <translation>The King of Eden.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="rerum terrestrium similtudines vsurpat Scriptura, nostra causa, ad res coelestes explicandas, &amp; nobis subiiciendas ante oculos" type="straight"/>
+        <underline language="LA" method="pen" text="gan beeden" type="straight"/>
+        <underline language="LA" method="pen" text="horto Edenensi" type="straight"/>
+        <underline language="LA" method="pen" text="filios Eden, qui erant in Thalassar" type="straight"/>
+        <underline language="LA" method="pen" text="vrbs Eden" type="straight"/>
+        <underline language="LA" method="pen" text="regio Edenensis" type="double"/>
+        <underline language="LA" method="pen" text="Cananaeae respectu" type="straight"/>
+        <underline language="LA" method="pen" text="nempe Orientem" type="double"/>
+        <underline language="LA" method="pen" text="eorum quibus ista proponit, habet rationem" type="straight"/>
+        <underline language="LA" method="pen" text="est, à Perside, regione Orientali" type="straight"/>
+        <underline language="LA" method="pen" text="à principio" type="straight"/>
+        <underline language="LA" method="pen" text="regis Eden" type="straight"/>
+        
+    </annotation>
+</transcription>

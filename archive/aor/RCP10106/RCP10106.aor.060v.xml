@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.060v.tif" pagination="120" reader="John Dee" signature="[h 4[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="στοιχεῖα" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>στοιχεῖα</marginalia_text>
+                </position>
+            </language>
+            <translation>Elements.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="artificis est persuadere, uis autem persuadendi, artis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ars &amp; artifex</marginalia_text>
+                </position>
+            </language>
+            <translation>Art and artist.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="partes enim rheorices" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Rhetorica[e] Partes</marginalia_text>
+                </position>
+            </language>
+            <translation>Parts of rhetoric.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cicero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cicero.</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristotelem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aristoteles</marginalia_text>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>Aristotle.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nunc maximo temporu[m] nostrorum autore proprè impulsum, ut non modo plura haec genera, sed etia[m] penè inumerabilia uideantur. Nam si              laudadi ac uituperandi officium in parte tertia ponimus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Obiectio</marginalia_text>
+                </position>
+            </language>
+            <translation>Objection.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="igitur" type="straight"/>
+       
+       <mark method="pen" name="bracket" place="left_margin"/>
+       <mark method="pen" name="bracket" place="left_margin"/>
+       <mark method="pen" name="vertical_bar" place="left_margin"/>
+       <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

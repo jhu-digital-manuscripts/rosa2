@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.114r.tif" pagination="207" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="sermonibus diuulgare" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Sermonib[us] diuulgare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To spread by common talk [Loeb 252, 327].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ingeniosi, &amp; periti &amp; aequi iudicis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Iudex [ ingeniosus peritus [a]equus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                An able, skilled and just judge.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="animis agitare" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        a[nim]is agitare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To revolve in one's mind.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vnum est enim, &amp; simplex aurium iudicium &amp; promiscue &amp; communiter stultis ac sapientibus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vnu[m] Iudiciu[m] et stultis sapientib[us]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A single judgement by the foolish and the wise.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Quomodo noscatur prudens à stulto in iudicio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                How the prudent may be distinguished from the foolish by a judgement.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="M. AEmilio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Laus M. Aemilij Scauri
+                    </marginalia_text>
+                    <person name="Marcus Aemilius Scaurus"/>
+                </position>
+            </language>
+            <translation>
+                Praise to Marcus Aemilius Scaurus.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Satis opinor" type="straight"/>
+        <underline language="LA" method="pen" text="Iudices esse crimen, &amp; genere ipso magnum" type="straight"/>
+        <underline language="LA" method="pen" text="Sed ego ita existimo, quo maius crimen sit, id quod ostendatur esse falsum, hoc maiorem ab eo iniuriam fieri qui id confingat. vult enim" type="straight"/>
+        <underline language="LA" method="pen" text="actio reru[m], &amp; ius argumentorum coargui potest. igitur" type="straight"/>
+        <underline language="LA" method="pen" text="Hic si ingeniosi, &amp; periti, &amp; aequi iudicis has partes esse existimatis, vt quoniam quidem testes" type="straight"/>
+        <underline language="LA" method="pen" text="sin autem in rebus iudicandis, non minimam partem ad vnamquanque rem aestimandam, momentóque suo pondera[n]dam, sapientia iudicis tenet:              nae multo vestrae maiores, grauiorésque partes sunt ad cogita[n]dum, quàm ad dicendum meae. mihi enim semper vnaquaque de re" type="straight"/>
+        <underline language="LA" method="pen" text="Vos &amp; saepius eandem rem animis agitare, &amp; diuitius vnoquoque de teste cogitare potestis&gt; &amp; si" type="straight"/>
+        <underline language="LA" method="pen" text="nihil est cur alius alio iudice melior" type="straight"/>
+        <underline language="LA" method="pen" text="vnum est enim, &amp; simplex aurium iudicium &amp; promiscue &amp; communiter stultis ac sapientibus ab natura datum. Quid est igitur vbi elucere possit prudentia?              vbi discerni stultus auditor, &amp; credulus ab religioso, &amp; sapienti iudice? nimirum illud in quo ea, quae dicuntur à testibus, coniectura &amp; cogitatione traduntur, qua[n]ta authoritate, quanta animi aequitate,              quanto pudore, quanta fide, quanta religione, quanto studio existimationis bonae, quanta cura, uqnato timore dicantur. An" type="straight"/>
+        <underline language="LA" method="pen" text="Ecquem hominem vidimus, ecquem vere commemorare possumus, parem consilio, grauitate, co[n]stantia, caeteris virtutibus, honoris, ingenii,              rerum gestarum ornamentis, M. AEmilio Scauro" type="straight"/>
+        <underline language="LA" method="pen" text="in L. Crasso pudor fuerit, quod ingeniu[m], qua[n]ta" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <numeral place="right_margin">8</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">12</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        <drawing anchor_text="Quomodo noscatur prudens à stulto in iudicio" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+
+    </annotation>
+</transcription>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.067r.tif" pagination="67" reader="John Dee" signature="Riij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Die kleine Welt ist aber der Mensch" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Homo Microcosmus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Man, the microcosm.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Darum[b] hat der Mensch die haut vbersich" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ho[min]is Pellis 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The banished humans.</translation> <!-- FSF: judging from the German, see anchor text, I'd suggest the skin of man or the human skin -->
+        </marginalia>
+        
+        <marginalia anchor_text="Matrix" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Matrix Microcosmus minimus, seu potius Elachistocosmus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The matrix as lesser microcosm, or better: Elachistocosm.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="haut" type="straight"/>
+        <underline language="DE" method="pen" text="der Mensch" type="straight"/>
+        <underline language="DE" method="pen" text="zwey widerwertige" type="straight"/>
+        <underline language="DE" method="pen" text="ding nicht zusammen in eine Welt fallen" type="straight"/>
+        <underline language="DE" method="pen" text="die kleinest" type="straight"/>
+        <underline language="DE" method="pen" text="ein faß gebunden" type="straight"/>
+        <underline language="DE" method="pen" text="sonder gefäß haut" type="double"/>
+        <underline language="DE" method="pen" text="vnd gebewdt" type="double"/>
+        <underline language="DE" method="pen" text="die kleineste Welt" type="double"/>
+        
+        <graph book_orientation="0" method="pen" place="tail" type="ramus_tree">
+            
+            <node id="n1">Mundus</node>
+            <node id="n2">Maximus</node>
+            <node id="n3">Limbus</node>
+            <node id="n4">Minor</node>
+            <node id="n5">Homo</node>
+            <node id="n6">Minimus</node>
+            <node id="n7">Matrix</node>
+            
+            <link from="n1" to="n2 n4 n6"/>
+            <link from="n2" to="n3"/>
+            <link from="n4" to="n5"/>
+            <link from="n6" to="n7"/>
+        </graph>
+        
+    </annotation>
+</transcription>

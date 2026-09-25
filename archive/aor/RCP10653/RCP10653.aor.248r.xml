@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.248r.tif" pagination="47" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Rogerius, Comes Clarensis" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Rogerus de Tunbrige, interdu[m] no[min]atus: Co: Clare[n]sis.    
+                    </marginalia_text>
+                    <person name="Roger de Clare, 2nd Earl of Hertford"/>
+                </position>
+            </language>
+            <translation>
+                Roger of Tonbridge was in the meantime made Lord of Clare.  
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Rhesus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Rhesus. 
+                    </marginalia_text>
+                    <person name="Rhys ap Gruffydd"/>
+                </position>
+            </language>
+            <translation>
+                Rhys.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Rogerius, Comes Clarensis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Rogerus Comes Clarensis
+                    </marginalia_text>
+                    <person name="Roger de Clare, 2nd Earl of Hertford"/>
+                </position>
+            </language>
+            <translation>
+                Roger, Lord of Clare.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="&amp; Rhesus princeps Demeciae" type="straight"/>
+        <underline language="LA" method="pen" text="id est, Australiu[m] VVallensiu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Rogerius, Comes Clarensis, à Thoma Cantuar. archiepiscopo, apud VVestmonasterium vocatus est ad faciendum ei homagium de castello de Tunbrige" type="straight"/>
+        <underline language="LA" method="pen" text="fuit primum" type="straight"/>
+        <underline language="LA" method="pen" text="Rex in VValliam expeditionem fecit" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/> <!-- prohibuit fraudule[n]ter -->
+        <mark method="pen" name="bracket" place="intext"/> <!-- fraudule[n]ter hoc -->
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

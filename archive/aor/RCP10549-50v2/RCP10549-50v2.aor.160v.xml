@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.160v.tif" pagination="60" reader="John Dee"/>  
+    <annotation>
+        
+        <marginalia anchor_text="permiste cum partibus implicantur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>p[er]miste implicari</marginalia_text>
+                </position>
+            </language>
+            <translation>To be combined in an intermingled way.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Vna pars est; Altera est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Du[a]e diuisionis partes</marginalia_text>
+                </position>
+            </language>
+            <translation>The two parts of the division.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Quae aute[m] partitio rerum distributam continet expositionem, haec habere debet breuitatem, absolutione[m], paucitatem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Secund[a]e partis Diuisio</marginalia_text>
+                </position>
+            </language>
+            <translation>The division of the second part.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Breuitas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>1. Breuitas</marginalia_text>
+                </position>
+            </language>
+            <translation>1. Brevity.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Absolutio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>2. Absolutio.</marginalia_text>
+                </position>
+            </language>
+            <translation>2. Completeness.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Paucitas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>3. Paucitas</marginalia_text>
+                </position>
+            </language>
+            <translation>3. Conciseness.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="genus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Genus quid.</marginalia_text>
+                </position>
+            </language>
+            <translation>What a genus is.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Pars" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pars quid.</marginalia_text>
+                </position>
+            </language>
+            <translation>What a species is.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="homo animalis pars est, Thebani aut Troiani genus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>homo a[n]i[m]alis [gen[us] deleted] pars thebani genus.</marginalia_text>
+                </position>
+            </language>
+            <translation>'man is a species of animal, but a genus of which Thebans or Trojans are species' [Loeb 386, 65].</translation> 
+        </marginalia>
+        
+        
+        <marginalia anchor_text="genus est omnium nimirum libidinum cupiditas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cupiditas omnium libidinu[m] genus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Desire is the genus of all lusts.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="vt nequid posterius praeter conclusionem inferatur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nihil posterius p[rae]ter co[n]clusio[n]em</marginalia_text>
+                </position>
+            </language>
+            <translation>Nothing following beyond the conclusion.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="permiste cum" type="straight"/>
+        <underline language="LA" method="pen" text="Na[m] homo animalis pars est, Thebani aut Troiani genus" type="straight"/>
+        <underline language="LA" method="pen" text="est, ne cuius genus posueris, eius secum aliquam, sicuti diuersam &amp; dissimilem partem ponas" type="straight"/>
+        <underline language="LA" method="pen" text="ex quibus haec ipsa transtulimus, quae conuenire videbantur" type="straight"/>
+        <underline language="LA" method="pen" text="vt &amp; prima quaeque pars, vt exposita est in partitione, sic ordine transigatur: &amp; omnibus explicatis, peroratum sit, hoc modo, vt nequid posterius praeter conclusionem inferatur" type="straight"/>
+        <underline language="LA" method="pen" text="sic nobis placet &amp; ad singulas partes accedere, &amp; omnibus absolutis, perorare. Nunc de confirmatione" type="straight"/>
+        
+        <mark method="pen" name="dash" place="intext"/>   <!-- su aecausae -->
+        
+        <mark method="pen" name="vertical_bar" place="intext"/>  <!-- su aecausae -->
+        
+        <numeral place="left_margin">1</numeral>
+        <numeral place="left_margin">2</numeral>
+        
+        
+        <errata amendedtext="suae causae" copytext="su aecausae" language="LA"/>
+        
+        <drawing anchor_text="p[er]miste implicari" book_orientation="0" method="pen" place="head" type="florilegium"/>
+        <drawing anchor_text="est, ne cuius genus posueris, eius secum aliquam, sicuti diuersam &amp; dissimilem partem ponas" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

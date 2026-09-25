@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.endmatter.flyleaf.001r.tif" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia date="31 May 1594" hand="Italian">
+            <language ident="EN"> 
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>most excelle[n]t Doctor Padler - 3
+                    </marginalia_text>  <!--JG: Try to find these people; check for example Bill Sherman's book on Dee-->
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>Discipulus - Mr Barker - 2
+                        Discipulus - Mr Alpad - 1
+                        } - 1594. Maij Vltimo
+                        7. gradij 4[us] est miles [4] sa[n]guinis [...]</marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Student: Mr Barker - 2
+                Student: Mr Alpad - 1 
+                On the last day of May, 1594. Seven degrees. The fourth is a soldier [....] [of the family].
+            </translation>
+        </marginalia>
+        
+        <marginalia date="31 May 1594" hand="Italian"> 
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>{ Goodman Atkinson in Swannington in Norfolk
+                        Mr Ball. May 31 1594
+                        Anchor, Anachor, Arrilos.
+                        he knoweth the vycar that hath Raymund
+                        Lully his works in a skroll; and holp
+                        Mr Ball to a sight of it.</marginalia_text>
+                    <person name="Ramymond Lull"/>
+                    <book title="Hieroglyphic Monad"/>
+                    <book title="Propaedumata Aphoristica"/>
+                    <book title="Stoicheia"/>
+                    <location name="Swannington"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <mark method="pen" name="page_break" place="full_page"/> 
+        <mark method="pen" name="page_break" place="full_page"/> 
+        
+    </annotation>
+</transcription>

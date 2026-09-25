@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.023v.tif" pagination="30" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia anchor_text="ma[n]datum receperit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ma[n]dau[m] recepere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To accept a mandate. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="polluerit, maculáque affecerit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        polluo macula afficio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                I violate, I dishonour.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        fraus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Fraud.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="animaduertenda peccata maxime" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Peccata animadu[er]te[n]da maxime
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Offences that deserve the severest punishments.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="socium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Socius
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A partner.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="T. Roscius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        T[itus] Roscius
+                    </marginalia_text>
+                    <person name="Titus Roscius"/>
+                </position>
+            </language>
+            <translation>
+                Titus Roscius.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="malitiam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        malitia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Rascalities.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro[m]ptu[m], &amp; propositu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        pro[m]ptu[m] propositu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Manifest, exposed.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="lanista" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        lanista
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A master of gladiators.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quod ad me attinet" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        quod ad me attìnet
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                As far as I am concerned.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="tantidem quanti" type="straight"/>
+        <underline language="LA" method="pen" text="In rebus minoribus socium fallere turpissimum est" type="straight"/>
+        <underline language="LA" method="pen" text="atqui ea sunt animaduertenda peccata maxime, quae difficillime praecauentur" type="straight"/>
+        <underline language="LA" method="pen" text="socium vero cauere quî possumus? quem etiam si metuimus, ius officii laedimus" type="straight"/>
+        <underline language="LA" method="pen" text="maiores, eum qui socium fefellisset" type="straight"/>
+        <underline language="LA" method="pen" text="malitiam non" type="straight"/>
+        <underline language="LA" method="pen" text="aut is discipulus" type="straight"/>
+        <underline language="LA" method="pen" text="quod ad me attinet" type="straight"/>
+        
+        <numeral place="left_margin">15</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">12</numeral>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.109r.tif" pagination="217" reader="John Dee" signature="o 5"/>
+    <annotation>
+        
+        <marginalia anchor_text="probationum quadruplex ratio est, ut uel quia aliquid est, aliud non sit, ut quia dies est, nox non est" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Probationu[m] [quadruplex] ratio</marginalia_text>
+                </position>
+            </language>
+            <translation>Four forms of proofs. </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="probatio artificialis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Probatio artificialis triplex</marginalia_text>
+                </position>
+            </language>
+            <translation>Three forms of articial proof.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="signa siue indubitata sint, non sunt argumenta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Signa no[n] sunt Argume[n]ta</marginalia_text>
+                </position>
+            </language>
+            <translation>Signs cannot be arguments.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Diuiduntur autem in has duas species" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Signa Duplicia</marginalia_text>
+                </position>
+            </language>
+            <translation>Two forms of signs </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>τεκμήρια</marginalia_text>
+                </position>
+            </language>
+            <translation>Proofs.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="signum insolubile" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

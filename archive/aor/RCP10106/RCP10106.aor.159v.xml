@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.159v.tif" pagination="318" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="patris memoria" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Patris mens</marginalia_text>
+                </position>
+            </language>
+            <translation>The father's reasoning.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aequitate" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Æquitas</marginalia_text>
+                </position>
+            </language>
+            <translation>Equality.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Coniectura omnis aut de re, aut de animo est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>co[n]iectura de re a[n]i[m]o</marginalia_text>
+                </position>
+            </language>
+            <translation>Conjecture is about an affair or the mind.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>De re g[e]n[er]ales definit[a]e</marginalia_text>
+                </position>
+            </language>
+            <translation>Matters of fact are general or defintite.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Roscius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Roscio</marginalia_text>
+                    <book title="Pro Roscio Amerino"/>
+                </position>
+            </language>
+            <translation>Pro Roscio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Troiam quinquaginta reges nauigauerint" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quinquaginta Reges Troiam nauigauerunt.</marginalia_text>
+                    <location name="Troy"/>
+                </position>
+            </language>
+            <translation>Fifty kings set sail for Troy.</translation>
+        </marginalia>
+        
+        <symbol name="Unidentified" place="left_margin"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.182v.tif" pagination="188" reader="Harvey" signature="[M6v]"/>	<!-- ABO 187left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Vir: Entelechia: Cautela. Tria maxima Mnemosyna.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A man: actualization: caution. The three greatest reminders.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						destramente, e profondamente.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Dexterously and profoundly.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						) Mens ( diuina, vbiquetaria.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A divine mind, ubiquitous</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EL">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Εκλεκτικὴ,
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						prudentissima sectarum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Eclectic, the most prudent of sects.</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Vigore, et Industria: Industria, et vigore. Perpetuus vigor,
+						perpetua iuventus. Quomodò heroicis temporibus
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						vererat a[e]ternum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>With vigor and industry: with industry and vigor. Perpetual vigor, perpetual youth. How it sweeps along eternally in heroic times.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Ignaui est, non deuorare omnia studia, et opera, qua[e] sine necessaria.
+						Vtili Labori succumbere, vile est: in pulchris vinci, turpe.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>It is of the lazy not to consume all studies and works, which are without necessity. To succumb to useful labor is worthless: to be conquered in beautiful things is foolish.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="li presentaua vna bella" type="straight"/>
+		<underline language="IT" method="pen" text="lingua Greca" type="straight"/>
+		<underline language="IT" method="pen" text="Cesare ancora" type="straight"/>
+		<underline language="IT" method="pen" text="non glu donaua mai niente" type="straight"/>
+		<underline language="IT" method="pen" text="glu vn'Epigramma, similmente in Greco da" type="straight"/>
+		<underline language="IT" method="pen" text="Il Greco" type="straight"/>
+		<underline language="IT" method="pen" text="mostrare col volto, con le parole" type="straight"/>
+		<underline language="IT" method="pen" text="ella molto gli piacesse" type="straight"/>
+		<underline language="IT" method="pen" text="messe mano alla sua pouera borsa" type="straight"/>
+		<underline language="IT" method="pen" text="dette parecchi soldi" type="straight"/>
+		<underline language="IT" method="pen" text="Cesare" type="straight"/>
+		<underline language="IT" method="pen" text="ti dono non" type="straight"/>
+		<underline language="IT" method="pen" text="secondo la possanza mia" type="straight"/>
+		<underline language="IT" method="pen" text="piu n'hauessi" type="straight"/>
+		<underline language="IT" method="pen" text="piu te ne darei" type="straight"/>
+		<underline language="IT" method="pen" text="leuatosi le risa" type="straight"/>
+		<underline language="IT" method="pen" text="Imperadore ridendo piu de gli" type="straight"/>
+		<underline language="IT" method="pen" text="continente cento mila sesterzi" type="straight"/>
+		<underline language="IT" method="pen" text="forza" type="straight"/>
+		<underline language="IT" method="pen" text="facundia" type="straight"/>
+		<underline language="IT" method="pen" text="l'impossibilità" type="straight"/>
+		<underline language="IT" method="pen" text="&amp; pouertà" type="straight"/>
+		<underline language="IT" method="pen" text="per raccorre danari" type="straight"/>
+		<underline language="IT" method="pen" text="Iddij" type="straight"/>
+		<underline language="IT" method="pen" text="la forza" type="straight"/>
+		<underline language="IT" method="pen" text="persuasione" type="straight"/>
+		<underline language="IT" method="pen" text="prontamente" type="straight"/>
+		<underline language="IT" method="pen" text="Idee" type="straight"/>
+		<underline language="IT" method="pen" text="la pouertà" type="straight"/>
+		<underline language="IT" method="pen" text="'impossibilità" type="straight"/>
+		
+		<symbol name="Sun" place="left_margin"/>
+		
+		<symbol language="IT" name="SS" place="intext" text="incontinente cento mila sesterzi."/>
+		<symbol name="SS" place="intext"/> <!-- alongside marginal note ending 'aeturnum'. Symbol is rotated 90 degrees. -->
+		<symbol name="Mercury" place="intext"/>
+		
+		<mark method="pen" name="plus_sign" place="left_margin"/>
+		<mark method="pen" name="quotation_mark" place="left_margin"/>
+		<mark method="pen" name="quotation_mark" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Andriani io vi porto due Iddij, la forza, &amp; la persuasione, prendete hor     voi quel che piu vi piace."/>
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="A cui gli Andriani risposero prontamente; dicendo: &amp; noi Temistocle     habbiamo due Idee la pouertà, &amp; l'impossibilità, prendete voi quella ch'à voi piace."/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- do -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ha -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- pre -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- glise -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- so -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- con -->
+		
+		<mark method="pen" name="dot" place="intext"/> <!-- presentarlo, fu -->
+		<mark method="pen" name="dot" place="intext"/> <!-- mia, che -->
+		<mark method="pen" name="bracket" place="intext"/> <!-- darei. Or -->
+		<mark method="pen" name="dot" place="intext"/> <!-- salmente, lo -->
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="ridendo"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- dot over 'i' on 'mila' -->
+		<mark method="pen" name="dot" place="intext"/> <!-- forza, & -->
+		<mark method="pen" name="dot" place="intext"/> <!-- l'impossibilita, prendete -->
+
+    </annotation>
+</transcription>

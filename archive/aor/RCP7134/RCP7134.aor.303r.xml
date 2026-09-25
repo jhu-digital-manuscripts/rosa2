@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.303r.tif" pagination="296" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Cum in locis significatorum, coniunctiones ualidae acciderint" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vide apho. 137. sup[ra].</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:610" text="137"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See aphorism 137, above.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="partes" hand="English_secretary" id="RCP7134:611:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>partes.</marginalia_text>
+                </position>
+            </language>
+            <translation>Parts.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Luna" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>☾ eteni[m] potius an[n]u[m], Ascende[n]s corp[us] sign[i]ficat</marginalia_text> 
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>Since the ascending body signifies the moon rather than a year.</translation> <!--JG: very unsure (also abt transcription)-->
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Domus.</marginalia_text>
+                </position>
+            </language>
+            <translation>House.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Cum in locis significatorum, coniunctiones ualidae acciderint" type="straight"/>
+        <underline language="LA" method="pen" text="Significatores, loci esse possunt, promissores necessario erraticae, sydera, partes" type="straight"/>
+        <underline language="LA" method="pen" text="in aduentu loci promissoris, ad locum significatoris" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

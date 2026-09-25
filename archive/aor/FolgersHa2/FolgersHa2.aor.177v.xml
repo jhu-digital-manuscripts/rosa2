@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.177v.tif" pagination="178" reader="Harvey" signature="[Mv]"/>	<!-- ABO 182left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						{Pulchra[e] narrationes, et pra[e]clara[e] historia[e]: benè habet:
+						laudo. Sed da mihi pragmaticam Mithridatis Epistolam,
+					</marginalia_text>
+					<person name="Mithridates VI of Pontus"/>
+					<book title="Histories"/> <!--JG: This is the book in which Mithridates' letter appears -->
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						et Concionem: cum Elogijs Federici
+						Feltrij: Ca[e]saris Borgia[e]:
+					</marginalia_text>
+					<person name="Frederick Feltrius"/>
+					<person name="Cesare Borgia"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Ludouici Sfortia[e] paucorumq[ue] aliorum: pra[e]sertim
+					</marginalia_text>
+					<person name="Ludovico Sforza"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Catharina[e] Medicea[e], astutissima[e] Pragmatica[e].
+						Ante, et post omnia, Epinicion Henrici 4. Quo nulla
+					</marginalia_text>
+					<person name="Catherine de' Medici"/>
+					<book title="A canticle of the victorie"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						viuidior elocutionis formula.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>It has beautiful stories and very bright histories. I praise it. But give me the pragmatic letter and speech of Mithridatis:
+				with the eulogies of Frederick Feltrius: of Cesare Borgia: and a few others of Ludovico Sforza: especially of Catherine de Medici, the most astute pragmatist.
+			Before and after everything, 'The triumph of Henry IV'. No form of elocution is livelier than that.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Ilias iliados)
+					</marginalia_text>
+					<book title="Iliad"/>
+				</position>
+			</language>
+			<translation>The Iliad.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						In vno Speculo adamantino,
+						omnia egregia. Mens da[e]dala.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Everything extraordinary in one incorruptible mirror. The skillful mind.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Epistola[e] Mahometis 2: et Principu[m],
+						Statuumq[ue] pro, et Contra: ad
+					</marginalia_text>
+					<book title="Epistolae Mahometis Turcorum imperatoris"/>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						Negociatione[m] pragmatica[m]
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="tail">
+					<marginalia_text>
+						acco[m]modata[e].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>'The letters of Mehmed II': and of the princes and affairs for and against: for the pragmatic business of application.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Solem ede quisq[ue] dies: Sol ale quemq[ue] diem. Vnus adhuc
+						Fortius super omnes: sed cum istis pragmaticis prudentior.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Eat the sun, whatever the day: [whatever] the sun, eat the day. There is still one strength above all: but it is more prudent with these pragmatics.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="mariti douer" type="straight"/>
+		<underline language="IT" method="pen" text="comportar molto la" type="straight"/>
+		<underline language="IT" method="pen" text="sopportasse tante querele" type="straight"/>
+		<underline language="IT" method="pen" text="casa le tue galline" type="straight"/>
+		<underline language="IT" method="pen" text="dell'uuoua, &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="fa de' figliuolii" type="straight"/>
+		<underline language="IT" method="pen" text="Gli errori causati" type="straight"/>
+		<underline language="IT" method="pen" text="sono criminali" type="straight"/>
+		<underline language="IT" method="pen" text="scusa &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="segno d'humanità" type="straight"/>
+		<underline language="IT" method="pen" text="la bacciò publicamente" type="straight"/>
+		<underline language="IT" method="pen" text="la madre" type="straight"/>
+		<underline language="IT" method="pen" text="ridendo rispose" type="straight"/>
+		<underline language="IT" method="pen" text="morire chi ci porta amore" type="straight"/>
+		<underline language="IT" method="pen" text="chi ci porta odio" type="straight"/>
+		<underline language="IT" method="pen" text="da schernire" type="straight"/>
+		<underline language="IT" method="pen" text="pronostichi &amp; le perdittioni" type="straight"/>
+		<underline language="IT" method="pen" text="Astrologia giudiciaria" type="straight"/>
+		<underline language="IT" method="pen" text="di Pasquino di" type="straight"/>
+		<underline language="IT" method="pen" text="i ciechi vedranno" type="straight"/>
+		<underline language="IT" method="pen" text="i sordi vdiranno" type="straight"/>
+		<underline language="IT" method="pen" text="la state fia" type="straight"/>
+		<underline language="IT" method="pen" text="gran Sole" type="straight"/>
+		<underline language="IT" method="pen" text="piouerà tl" type="straight"/>
+		<underline language="IT" method="pen" text="fulminerà" type="straight"/>
+		<underline language="IT" method="pen" text="&amp; tonera" type="straight"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark language="IT" method="pen" name="bracket" place="right_margin" text="perch'elle mi fanno, disse Alcibiade dell'uuoua,     &amp; de'pulcini; &amp; la mia moglie (disse Socrate) à me fa de' figliuoli"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!-- crimi -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- cer -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ma -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- pren -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- per -->
+		
+    </annotation>
+</transcription>

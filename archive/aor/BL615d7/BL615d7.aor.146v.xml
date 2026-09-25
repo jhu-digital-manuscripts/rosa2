@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.146v.tif" pagination="[146v]" reader="John Dee" signature="[Tij[v]]"/>    
+    <annotation>
+        
+        <marginalia anchor_text="prender le Isole de' Caribi" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>The Caribi Isles.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Marigalante" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Marigalante</marginalia_text> 
+                    <location name="Marie-Galante"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Isola di Guadalupe" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Guadalupe</marginalia_text> 
+                    <location name="Guadeloupe"/>
+                </position>
+            </language>
+            <translation>Guadeloupe</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="prender le Isole de' Caribi" type="straight"/>
+        <underline language="IT" method="pen" text="fondo in Marigalante" type="straight"/>
+        <underline language="IT" method="pen" text="costume non leuar le ancore" type="straight"/>
+        <underline language="IT" method="pen" text="Domenica" type="straight"/>
+        <underline language="IT" method="pen" text="Isola di Guadalupe" type="straight"/>
+        <underline language="IT" method="pen" text="bosco molte" type="straight"/>
+        <underline language="IT" method="pen" text="che vettouaglie per le cose" type="straight"/>
+        <underline language="IT" method="pen" text="benche indarno" type="double"/>
+        
+    </annotation>
+</transcription>

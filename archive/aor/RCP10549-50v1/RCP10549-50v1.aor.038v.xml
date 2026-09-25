@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.038v.tif" pagination="60" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia anchor_text="securi non esse percussos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        securi percussus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Beheaded.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Confringat iste sanè vi sua consilia Senatoria: quaestiones omnium perrumpat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Co[n]fringere co[n]silia questio[n]es p[er]rump[er]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To break up the senate, to break through the questions.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="reditionis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        reditio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Returning.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="homines lauti, &amp; vrbani" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        homo lautus vrbanus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                An elegant and witty man.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Proficiscar eò, quò me" type="straight"/>
+        <underline language="LA" method="pen" text="quaestiones omnium perrumpat" type="straight"/>
+        <underline language="LA" method="pen" text="arctioribus apud Popu. Ro. laqueis tenebitur" type="straight"/>
+        <underline language="LA" method="pen" text="Nemini meus adue[n]tus labori aut su[m]ptui, neque publicè, neque priuatim fuit. vim" type="straight"/>
+        <underline language="LA" method="pen" text="huiuscemodi dissipassent" type="straight"/>
+        
+        <numeral place="left_margin">15</numeral>
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">18</numeral>
+        
+    </annotation>
+</transcription>

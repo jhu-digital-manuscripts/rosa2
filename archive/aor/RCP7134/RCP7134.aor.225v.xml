@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.225v.tif" pagination="[218v]" reader="John Dee" signature="[II ij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="monstruosus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>De mo[n]stris.</marginalia_text>
+                </position>
+            </language>
+            <translation>On monsters.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="monstruosus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Econtra indicato</marginalia_text>
+                </position>
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>de significati debilitate:</marginalia_text>
+                </position>
+            </language>
+            <translation>With the contrary indicated regarding the signified weakness. </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Robur rei significatae, est per uim significatoris" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

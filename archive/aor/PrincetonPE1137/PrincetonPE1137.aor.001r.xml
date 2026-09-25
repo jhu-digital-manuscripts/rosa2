@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonPE1137.001r.tif" reader="Harvey" signature="Title page"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        GH.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        <marginalia date="1569" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Ex dono Joannis Woddi, Aulicij, et Amici mei singularis. 
+                        Anno 1569.
+                    </marginalia_text>
+                    <person name="John Wood"/>
+                </position>
+            </language>
+            <translation>
+                The gift of John Wood, courtier and my particular friend.   
+                In the year 1569.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian" other_reader="Unknown">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        4/5
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Acceptissima semper Munera sunt, Auctor qua[e] preciosa facit.
+                    </marginalia_text>
+                    <X-ref book_title="Heroides" language="LA" person="Ovid" text="  Acceptissima semper Munera sunt, auctor quae preciosa facit."/>
+                </position>
+            </language>
+            <translation>
+                "Most dear are the gifts that the giver makes precious."
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        GHarueius.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                G. Harvey.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian" other_reader="John Wood">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Johannis Woddi liber, ex ipso Authoris dono.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                John Wood's book, a gift from the author.
+            </translation>
+        </marginalia>
+        
+        <mark method="pen" name="scribble" place="head"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        
+    </annotation>
+</transcription>

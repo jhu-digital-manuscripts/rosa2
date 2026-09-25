@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonK6233.008r.tif" reader="Harvey" signature="[α8r]"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="[Muni]cipes" type="straight"/>
+        <underline language="LA" method="pen" text="decreta" type="straight"/>
+        <underline language="LA" method="pen" text="Res publicae" type="straight"/>
+        <underline language="LA" method="pen" text="opera publica" type="straight"/>
+        <underline language="LA" method="pen" text="nundinae" type="straight"/>
+        <underline language="LA" method="pen" text="pollicitationes Reip[ublici] factae" type="straight"/>
+        <underline language="LA" method="pen" text="debita publica" type="straight"/>
+        <underline language="LA" method="pen" text="seu descriptio cuiusq[ue] bonorum" type="straight"/>
+        <underline language="LA" method="pen" text="Triboniano" type="straight"/>
+        <underline language="LA" method="pen" text="ex veterum" type="straight"/>
+        <underline language="LA" method="pen" text="nulla neque" type="straight"/>
+        <underline language="LA" method="pen" text="seu tautologia" type="straight"/>
+        <underline language="LA" method="pen" text="antinomia" type="straight"/>
+        <underline language="LA" method="pen" text="secundum Edicti perpetui imitatione[m]" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/> <!-- nundinae -->
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="Pandectis tres              epistolae praefixae sunt à Iustiniano, Prima ad Tribonianum: Secunda ad Antecessores:             Tertia ad Senatu[m]"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- incolae aut -->
+        <mark method="pen" name="dash" place="intext"/> <!-- decuriones -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="ex veterum"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- componat, nulla -->
+        <mark language="LA" method="pen" name="apostrophe" place="intext" text="Pandectas"/>
+        <mark language="LA" method="pen" name="apostrophe" place="intext" text="Pandectas"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="seu tautologia"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="antinomia"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="secundum Edicti perpetui imitatione[m]"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.024r.tif" reader="John Dee" signature="[Dvj]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Hic ph[ilosoph]us/ph[isic]us ostendit co[n]seque[n]ter              q[uae] interrogationes sunt p[ro]prie vnicuiq[ue] scie[n]tie Et p[ri]mo ostendit hoc inqua[n]tu[m] assumunt[ur]              vt p[ro]positio[n]es. S[e]c[un]do inqua[n]tu[m] assumu[n]t[ur] vt c[on]clusiones" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Co[n]clusio interrogatio p[ro]p[ositio]        
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Conclusion, investigation, proposition.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="interrogatione[m] vt est co[n]clusio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Interrogatio geometrica vt co[n]clusio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Geometric investigation like a conclusion.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="p[ro]positio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        vt p[ro]positio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Like a proposition.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="interrogationes sunt p[ro]prie vnicuiq[ue] scie[n]tie" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Interrogationes quasdam esse proprias cuiusq[ue] scientia[e].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Certain enquiries are suitable for every science.  
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="p[ro]prie interrogationes geometrice ex quibus aliquid demo[n]strat[ur] in geometrica [...] S[ed] interrogatio[n]es imp[ro]prie" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        {Interrogationes geometrica[e] propriè loquendo. Geometrica[e] interrogationes impropriè
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Appropriate geometric enquiries, in speaking; inappropriate geometric enquiries.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="demo[n]stratione ad impossibile que[m]admodu[m] ex interrogatio[n]ibus fiunt silogismi q[ue] ex eo q[uod] int[er]rogat[ur] aduersarius [et] ex ea q[uod] aduersarius dat" type="straight"/>
+        <underline language="LA" method="pen" text="assumunt[ur] vt p[ro]positio[n]es" type="straight"/>
+        <underline language="LA" method="pen" text="assumut[ur] vt c[on]clusiones" type="straight"/>
+        <underline language="LA" method="pen" text="interrogationes geometrice ex quibus aliquid demo[n]strat[ur] in geometrica p[ro]pter quid vt" type="straight"/>
+        <underline language="LA" method="pen" text="interrogatio[n]es imp[ro]prie" type="straight"/>
+        <underline language="LA" method="pen" text="scire q[ue] est" type="straight"/>
+        <underline language="LA" method="pen" text="arguet e[ni]m s[e]c[un]d[um] q[uod] geometra p[er] accide[n]s s[ecundu]m v[er]o q[uod] p[er]spectiu[us] s[e]c[un]d[u]m substa[n]tiam" type="straight"/>
+        <underline language="LA" method="pen" text="q[ua]re no[n] erit p[ro]positio geometrica nisi sit in t[er]minis geometricis. t[ame]n" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]tingit aliq[ua]n[do] vt diximus q[uod] aliquid solu[m] est co[n]clusio in geometrica q[uod] postea est p[ri]ncipiu[m] in p[er]spectiua" type="straight"/>
+        <underline language="LA" method="pen" text="interrogatione[m] vt est co[n]clusio dicens" type="straight"/>
+        <underline language="LA" method="pen" text="est interrogatio geometrica vt c[on]clusio" type="straight"/>
+        <underline language="LA" method="pen" text="p[er] ea[m] aliquid in subalt[er]nata p[ro]bat[ur] dicit[ur] p[ro]positio na[m] de" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

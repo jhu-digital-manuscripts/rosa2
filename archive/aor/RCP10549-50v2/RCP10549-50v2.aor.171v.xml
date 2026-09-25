@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.171v.tif" pagination="82" reader="John Dee" signature="[f.i.[v]]"/>  
+    <annotation>
+        
+        <marginalia anchor_text="grauius &amp; ornatius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        grauius 
+                        ornatius ]</marginalia_text>
+                </position>
+            </language>
+            <translation>More complex, more decorated.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Maiestatem minuisti; hoc est populi potestatem infirmat, minuit is maiestatem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        infirmare 
+                        minuere ] potestate[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>To weaken [and] to diminish power.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="tenuius, &amp; acutius, &amp; subtilius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        { tenuis
+                        acutius
+                        subtilius ]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>More delicate, sharper, simpler.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Certus aute[m] locus est accusatoris; Defensoris" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Certus Locus { accus. Defe[n]s.</marginalia_text>
+                </position>
+            </language>
+            <translation>A firm topic of the accuser [and] of the defender.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="co[n]stitutio definitiua" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Constitutio Diffinitiua.</marginalia_text>
+                </position>
+            </language>
+            <translation>An issue of definition [Loeb 386, 213].</translation>              <!-- DO: There is some sort of marking below this note on the far left -->
+        </marginalia>
+        
+        
+        <marginalia anchor_text="C. Flaminius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>C. flaminius.</marginalia_text>
+                    <person name="Gaius Flaminius Nepos"/>
+                </position>
+            </language>
+            <translation>Gaius Flaminius Nepos.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Primus ergo accusatoris locus est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Accusatoris Loci.</marginalia_text>
+                </position>
+            </language>
+            <translation>The topics of the accuser.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Locus autem co[m]munis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>loc[us] co[mmun]is.</marginalia_text>
+                </position>
+            </language>
+            <translation>A commonplace.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="defensoris primus locus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Defensoris Loci.</marginalia_text>
+                </position>
+            </language>
+            <translation>The topics of the defender.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Locus autem co[m]munis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>locus co[mmun]is.</marginalia_text>
+                </position>
+            </language>
+            <translation>A commonplace.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sed illae tenuius, &amp; acutius, &amp; subtilius tractantur: hi" type="straight"/>
+        <underline language="LA" method="pen" text="cum verbis, tum etiam sente[n]tiis excellentibus" type="straight"/>
+        <underline language="LA" method="pen" text="seditione[m] ad populu[m] legem agrariam ferebat" type="straight"/>
+        <underline language="LA" method="pen" text="derogare" type="straight"/>
+        
+        <numeral language="LA" place="left_margin" text="Primus">.1.</numeral>
+        <numeral language="LA" place="left_margin" text="Postea">2</numeral>
+        <numeral language="LA" place="left_margin" text="Pòst">.3.</numeral>
+        <numeral language="LA" place="left_margin" text="primus">.1.</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">5</numeral>
+        
+        
+    </annotation>
+</transcription>

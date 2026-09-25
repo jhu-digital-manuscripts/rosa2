@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.017r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Bruti nepos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        J[ohn] D[ee]. q[u]omodo Nepos?
+                    </marginalia_text>
+ 
+                    <person name="John Dee"/>
+                </position>
+            </language>
+            <translation>John Dee. Howso [his] nephew?</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Turonus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Turonus.
+                    </marginalia_text>
+                    <person name="Turonus"/>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Τϒρονος
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Turonus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="no[m]i[n]e Turonus" type="straight"/>
+        <underline language="LA" method="pen" text="Bruti nepos" type="straight"/>
+        <underline language="LA" method="pen" text="ciuitas Turoni" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!--nullus excepto-->
+        
+        <errata amendedtext="Turono" copytext="Turno" language="LA"/> <!--In the right margin.-->
+        
+    </annotation>
+</transcription>

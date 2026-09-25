@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.080r.tif" reader="Harvey" signature="K[ir]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Bella[e], et bellicosa[e] Ironia[e]. Vt s[upr]a )</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0164" text="s[upr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>War and war-like ironies. As above.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ide[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>The same.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="the walles" type="straight"/>
+        <underline language="EN" method="pen" text="runne to the other, where" type="straight"/>
+        <underline language="EN" method="pen" text="hauen" type="straight"/>
+        <underline language="EN" method="pen" text="skyrmyshed nowe" type="straight"/>
+        <underline language="EN" method="pen" text="men by lande" type="straight"/>
+        <underline language="EN" method="pen" text="nauye vnloked for" type="straight"/>
+        <underline language="EN" method="pen" text="toke the hauen" type="straight"/>
+        <underline language="EN" method="pen" text="a dyche" type="straight"/>
+        <underline language="EN" method="pen" text="strongely" type="straight"/>
+        <underline language="EN" method="pen" text="fortified" type="straight"/>
+        <underline language="EN" method="pen" text="the diche" type="straight"/>
+        <underline language="EN" method="pen" text="selfes to defende that" type="straight"/>
+        <underline language="EN" method="pen" text="bridges" type="straight"/>
+        <underline language="EN" method="pen" text="casting them ouer the diche" type="straight"/>
+        <underline language="EN" method="pen" text="his ennemies toke none" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="his ennemies toke none"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!--walles, the-->
+        <mark method="pen" name="dot" place="intext"/> <!--was, with-->
+        
+    </annotation>
+</transcription>

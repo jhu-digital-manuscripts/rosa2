@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.275r.tif" pagination="529" reader="John Dee" signature="lll.i."/>
+    <annotation>
+        
+        <marginalia anchor_text="Platone[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Plato</marginalia_text>
+                    <person name="Plato"/>
+                </position>
+            </language>
+            <translation>Plato.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Callisthenem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Calisthenes.</marginalia_text>
+                    <person name="Callisthenes of Olynthus"/>
+                </position>
+            </language>
+            <translation>Callisthenes of Olynthus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Demetrium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Demetrius</marginalia_text>
+                    <person name="Demetrius of Phalerum"/>
+                </position>
+            </language>
+            <translation>Demetrius of Phalerum.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="P. Rutiliu[m] Rufum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>P. Rutilius Rufus</marginalia_text>
+                    <person name="Publius Rutilius Rufus"/>
+                </position>
+            </language>
+            <translation>Publius Rutilius Rufus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ad Auletem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>auletes. à pipar.</marginalia_text> 
+                </position>
+            </language>
+            <translation>The flute players. With a pipe.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="curatione[m] &amp; dispensatione[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>curatio dispe[n]satio ]</marginalia_text>
+                </position>
+            </language>
+            <translation>Treatment. Dispensation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>VIS</marginalia_text>
+                </position>
+            </language>
+            <translation>Force.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Regum autem sunt haec imperia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Imperia Regum</marginalia_text>
+                </position>
+            </language>
+            <translation>The supreme powers of kings.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Sed ego in hoc ta[n]dem Posthumo no[n] ignoscam homini mediocriter docto, qui videam sapientissimos homines esse lapsos? virum" type="straight"/>
+        <underline language="LA" method="pen" text="Planè confiteor fieri nihil posse dementius, quàm scientem in eum locu[m] venire" type="straight"/>
+        <underline language="LA" method="pen" text="siquide[m] tam sempter stulti, quàm sero sapie[n]tis est, cu[m] stultitia sua impeditus sit, quoquomodo possit se expedire" type="straight"/>
+        <underline language="LA" method="pen" text="documentu[m] fuit hominibus nostris virtutis, antiquitatis, prudentiae" type="straight"/>
+        <underline language="LA" method="pen" text="quasi dispensatione[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Nolite igitur fortuna[m] co[n]uertere in culpa[m]" type="straight"/>
+        <underline language="LA" method="pen" text="nec consiliu[m] ex necessitate, nec voluntate[m] ex vi interpretari" type="straight"/>
+        <underline language="LA" method="pen" text="si aliter quippia[m] coacti facia[n]t quàm libere, vituperandos putes" type="straight"/>
+        <underline language="LA" method="pen" text="Animaduerte, &amp; dicto pare" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">12</numeral>
+        
+        <drawing anchor_text="Plato" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="Calisthenes" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="siquide[m] tam sempter stulti, quàm sero sapie[n]tis est, cu[m] stultitia sua impeditus sit, quoquomodo possit se expedire" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        <drawing anchor_text="VIS" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+       
+    </annotation>
+</transcription>

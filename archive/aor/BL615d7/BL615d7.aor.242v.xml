@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.242v.tif" pagination="[242v]" reader="John Dee" signature="[Hhij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="vendetta, sotto colore, &amp; nome di castigo" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vindicta castigatio</marginalia_text>
+                </position>
+            </language>
+            <translation>A vindictive correction.</translation> <!-- FSF: watch out to capitalise first word and end translation with a full stop -->
+        </marginalia>
+        
+        <marginalia anchor_text="negromantia" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Negroma[n]tia</marginalia_text> <!-- FSF: watch out for the use of [] when superscript n or m -->
+                </position>
+            </language>
+            <translation>Black magic.</translation> <!-- FSF: probably rather necromacy? -->
+        </marginalia>
+        
+        <marginalia anchor_text="tornarono a confermarli nella loro ribellione" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A new conspiracy</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="vendetta" type="double"/>
+        <underline language="IT" method="pen" text="di castigo" type="double"/>
+        <underline language="IT" method="pen" text="speranza" type="double"/>
+        <underline language="IT" method="pen" text="stata vera" type="straight"/>
+        <underline language="IT" method="pen" text="fantasma, &amp; per parte di negromantia" type="straight"/>
+        <underline language="IT" method="pen" text="che l'Ammiraglio sapea" type="straight"/>
+        <underline language="IT" method="pen" text="era verisimile, che, essendo" type="straight"/>
+        <underline language="IT" method="pen" text="Ammiraglio vi si sarebbe" type="straight"/>
+        <underline language="IT" method="pen" text="imbarcato con suo figliuolo, &amp; col fratello." type="straight"/>
+        <underline language="IT" method="pen" text="ribellione" type="double"/>
+        <underline language="IT" method="pen" text="&amp; a far prigione lo Ammiraglio." type="double"/>
+        
+        
+    </annotation>
+</transcription>

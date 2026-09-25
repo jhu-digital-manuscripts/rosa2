@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.041v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="octo &amp; vigi[n]ti" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Episcopi 28
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>28 bishops.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="octo &amp; vigi[n]ti" type="straight"/>
+        <underline language="LA" method="pen" text="Ca[m]bria.i.gaulia quae" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

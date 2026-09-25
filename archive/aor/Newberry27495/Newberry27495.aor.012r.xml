@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.012r.tif" reader="Harvey" signature="Aii[r]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>The commendatio[n] off king Henry the VIIJ.
+                    Rr.ij.</marginalia_text>
+                    <person name="Henry VIII"/>
+                    <internal_ref>
+                        <target ref="Newberry27495:case_712_c27495_345" text="Rr.ij"/>
+                    </internal_ref>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="be in Englande" type="straight"/>
+        <underline language="EN" method="pen" text="men worthy greate" type="straight"/>
+        <underline language="EN" method="pen" text="whose iudgement a man maye" type="straight"/>
+        <underline language="EN" method="pen" text="vndoubted credyt" type="straight"/>
+        <underline language="EN" method="pen" text="to arryue in good order at the ende" type="straight"/>
+        <underline language="EN" method="pen" text="Citye of Vrbin is" type="straight"/>
+        <underline language="EN" method="pen" text="middes of Italy towardes" type="straight"/>
+        <underline language="EN" method="pen" text="Duke Fridericke" type="straight"/>
+        <underline language="EN" method="pen" text="light of Italy" type="straight"/>
+        <underline language="EN" method="pen" text="wisdome" type="straight"/>
+        <underline language="EN" method="pen" text="courtesye" type="straight"/>
+        <underline language="EN" method="pen" text="his inuincible courage and pollycy of warr" type="straight"/>
+        <underline language="EN" method="pen" text="impregnable" type="straight"/>
+        <underline language="EN" method="pen" text="sodeyne redynesse in settynge forwarde" type="straight"/>
+        
+        <underline language="EN" method="pen" text="Vrbin" type="straight"/>
+        <underline language="EN" method="pen" text="Frydericke" type="straight"/>
+        
+        <symbol language="EN" name="SS" place="right_margin" text="Citye of Vrbin"/>
+        <symbol name="SS" place="right_margin"/>
+        <symbol language="EN" name="Mars" place="right_margin" text="warr"/>
+        
+        <symbol name="SS" place="tail"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

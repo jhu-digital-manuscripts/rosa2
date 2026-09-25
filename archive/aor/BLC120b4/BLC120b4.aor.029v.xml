@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.029v.tif" pagination="29[v]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Sulfuris unciarum quinque. Tartari. 10." hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        ] lib. I. vncia[e] 3. O
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Book 1. of twelfth part/ounce  3. O</translation>  <!-- FSF: not sure about translation -->
+        </marginalia>
+        
+        <symbol name="Mercury" place="intext"/>
+        
+    </annotation>
+</transcription>

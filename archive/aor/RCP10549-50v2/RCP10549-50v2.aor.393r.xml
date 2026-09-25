@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.393r.tif" pagination="237" reader="John Dee" signature="[Pp.vii.]"/>   
+    <annotation>
+        
+        <marginalia anchor_text="euerriculum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        euerriculu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Fishing net.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="exempto, aut vendito, aut conducto, aut locato" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ex empto vendito locato conducto
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Exempted, sold, contracted, hired.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Actio.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Action.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Dolus malus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A bad trick.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="malitiam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mallitia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Ill will.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Euripides
+                    </marginalia_text>
+                    <person name="Euripides"/>
+                </position>
+            </language>
+            <translation>
+                Euripides.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        R[ati]o[n]e abutimur.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                We are exhausted by reason.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Phaethontem ... Theseus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Pha[e]ton. Theseus.
+                    </marginalia_text>
+                    <person name="Phaethon"/>
+                    <person name="Theseus"/>
+                </position>
+            </language>
+            <translation>
+                Phaethon, Theseus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristo Chius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Aristo Chius.
+                    </marginalia_text>
+                    <person name="Aristo of Ceos"/>
+                </position>
+            </language>
+            <translation>
+                Aristo of Ceos.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Tacere pra[e]stiterat.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To be responsible for being silent.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="stultitia co[n]sensu omnium philosophorum maius est malum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        stultitia qua[n]tum malu[m].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                How bad a folly is.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sapientia[m] autem nemo assequitur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Nemo sapie[n]tiam assequitur
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                No one pursues wisedom.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Quod dij nos no[n] curent.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Because the gods do not care for us.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Boni male vexati.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The good badly shaken.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="euerriculum" type="straight"/>
+        <underline language="LA" method="pen" text="aliud sit simulatum, aliud actum" type="straight"/>
+        <underline language="LA" method="pen" text="vtuntur, vt donu[m] hoc diuinum rationis &amp; consilii ad fraude[m] hominibus non ad bonitate[m] impartitum esse videatur" type="straight"/>
+        <underline language="LA" method="pen" text="meracius sumpturum" type="straight"/>
+        <underline language="LA" method="pen" text="Sed hic quidem locus concludi iam potest" type="straight"/>
+        <underline language="LA" method="pen" text="Ac nos quidem nimis multa de re apertissima" type="straight"/>
+        <underline language="LA" method="pen" text="vno cursu" type="straight"/>
+        <underline language="LA" method="pen" text="domestici parietes non texerunt" type="straight"/>
+        <underline language="LA" method="pen" text="auunculus meus vir innoce[n]tissimus" type="straight"/>
+        <underline language="LA" method="pen" text="idémque" type="straight"/>
+        <underline language="LA" method="pen" text="temperantiae prudentiáeque specimen, ante simulacrum Vestae Pontifex maximus" type="straight"/>
+        <underline language="LA" method="pen" text="Dies deficiat, si velim numerare, quibus bonis male euenerit: nec" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="circumflex" place="intext"/>
+        
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        
+        <errata amendedtext="sementem" copytext="sementim" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing anchor_text="Dolus malus" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="Mallitia" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="R[ati]o[n]e abutimur." book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

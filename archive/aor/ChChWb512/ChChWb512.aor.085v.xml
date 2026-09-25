@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.085v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="munerib[us]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Munera
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Prizes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Lucii Romani" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Lucius Ro.
+                    </marginalia_text>
+                    <person name="Lucius Tiberius"/>
+                </position>
+            </language>
+            <translation>Lucius of the Romans.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ciru[m]uicinis insulis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        circumvicina[e] Insula[e].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The surrounding islands.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Facet[a]e aute[m] mulieres consimilia indumenta habentes nullius amore[m] habere dignabantur: nisi tertio in militia approbatus esset" type="straight"/>
+        <underline language="LA" method="pen" text="Efficiebantur ergo castae mulieres &amp; milites amomre illaru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="diebus tribus" type="straight"/>
+        <underline language="LA" method="pen" text="dotantur" type="double"/>
+        <underline language="LA" method="pen" text="cu[m] circu[m]" type="double"/>
+        <underline language="LA" method="pen" text="uicinis insulis &amp; Gallia ipsi senatui eripuisset: grauem" type="straight"/>
+        <underline language="LA" method="pen" text="praegrande[m] gigante[m] ex Hispania" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!--Gallia ipsi-->
+      
+      
+    </annotation>
+</transcription>

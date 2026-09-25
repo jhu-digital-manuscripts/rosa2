@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>0</illustrations>
+    <totalPages>340</totalPages>
+    <dimensions units="mm">
+        <width>210</width>
+        <height>300</height>
+    </dimensions>
+    <dates>
+        <startDate>1475</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="340v" start="2r">339</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>37</linesPerColumn>
+            <leavesPerGathering>16</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Penn Codex 906</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>Paper</material>
+            <origin>France</origin>
+            <currentLocation>Philadelphia, PA</currentLocation>
+            <repository>University of Pennsylvania Library</repository>
+            <shelfmark>Codex 906</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Penn Codex 906</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>papier</material>
+            <origin>France</origin>
+            <currentLocation>Philadelphie, PA</currentLocation>
+            <repository>Université de Pennsylvanie</repository>
+            <shelfmark>Codex 906</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

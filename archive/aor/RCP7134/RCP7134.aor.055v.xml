@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.055v.tif" pagination="[49v]" reader="John Dee" signature="[N[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="In duodecima; dominus ascendentis" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dominus asce[n]de[n]tis in duodecima</marginalia_text>
+                </position>
+            </language>
+            <translation>The lord of the ascendent in the twelfth [house].</translation> 
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Regula</marginalia_text>
+                </position>
+            </language>
+            <translation>Rule.</translation> 
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Separatio ☾ ab alijs planetis, et ad alios applicatio</marginalia_text>
+                </position>
+            </language>
+            <translation>The separation of the moon from other planets and [its] inclination towards others.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="arte sua mirabiles" type="straight"/>
+        <underline language="LA" method="pen" text="quibus'q[ue] planeta dominus ascendentis, in eo loco positus fuerit, qua[m]uis sic posito ascendentis domino, frequenter contingat dare poenas" type="straight"/>
+        <underline language="LA" method="pen" text="in fixis proditores" type="straight"/>
+        <underline language="LA" method="pen" text="in mobilibus leues" type="straight"/>
+        <underline language="LA" method="pen" text="quam ego differentiam generaliter intelligi uolo, quotiens" type="straight"/>
+        <underline language="LA" method="pen" text="planeta inconstantiam significat, nam &amp; hoc" type="straight"/>
+        <underline language="LA" method="pen" text="aquarum indicat possessionem, matrem" type="straight"/>
+        <underline language="LA" method="pen" text="mergit autem aquis libenter in octaua existe[n]s" type="straight"/>
+        <underline language="LA" method="pen" text="in duodecima tristiam, moerorem, breuem uitam" type="straight"/>
+        
+        <mark method="pen" name="section_sign" place="intext"/> <!-- before 'Cum'-->
+        
+        <numeral place="right_margin">.1.</numeral>
+        
+    </annotation>
+</transcription>

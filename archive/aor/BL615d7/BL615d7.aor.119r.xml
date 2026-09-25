@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.119r.tif" pagination="119" reader="John Dee"/>
+    
+    <annotation>
+        
+        
+        <marginalia anchor_text="non essendo quella Isoletta popolata" hand="Italian" method="pen">   <!-- DO: This text runs on from the previous page ['non essendo'] -->
+            <language ident="EN">
+            <position book_orientation="0" place="right_margin">
+                <marginalia_text>Altovelo Ile not enhabited.</marginalia_text>
+                <location name="Alto Velo Island"/>
+            </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Isola della Beata" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Beata Ile</marginalia_text>
+                    <location name="Beata Island"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Isola Isabella" hand="Italian" method="pen"> 
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Isabella Isola I know not, but the atol Isabella is sup[ra] fol. 101. v.</marginalia_text>  <!--JG: Not sure abt 'atol'. Text on f. 101v talks about fortress-->
+                    <location name="Isabela"/>
+                    <location name="La Isabela"/>
+                    <internal_ref>
+                        <target ref="BL615d7:615_d_7_f101v:m0001" text="fol. 101. v."/>
+                    </internal_ref>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="quella Isoletta" type="straight"/>
+        <underline language="IT" method="pen" text="dopo sei dì" type="straight"/>
+        <underline language="IT" method="pen" text="della Beata" type="straight"/>
+        <underline language="IT" method="pen" text="XII" type="straight"/>
+        <underline language="IT" method="pen" text="cosi popolata, che pareua" type="straight"/>
+        <underline language="IT" method="pen" text="popolatione di vna lega di lunghezza" type="straight"/>
+        <underline language="IT" method="pen" text="vn Lago" type="straight"/>
+        <underline language="IT" method="pen" text="con nuoua, che quiui erano capitati alcuni Christiani di quelli" type="straight"/>
+        <underline language="IT" method="pen" text="dell'Isola Isabella" type="grid"/>
+        <underline language="IT" method="pen" text="che tutti stauano bene" type="straight"/>
+        <underline language="IT" method="pen" text="all'Isabella" type="double"/>
+        <underline language="IT" method="pen" text="seguendo tuttauia la Costa" type="straight"/>
+        
+        <mark method="pen" name="equal_sign" place="right_margin"/>  <!-- trauersassero -->
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <errata amendedtext="[deleted]" copytext="dell'Isola" language="IT"/>
+        
+    </annotation>
+</transcription>

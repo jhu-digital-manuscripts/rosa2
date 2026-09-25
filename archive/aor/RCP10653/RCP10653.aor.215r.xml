@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.215r.tif" pagination="421" reader="John Dee" signature="Nn"/>
+    <annotation>
+        
+        <marginalia anchor_text="Algarum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Algarus    
+                    </marginalia_text>
+                    <person name="Aelfgar"/>
+                </position>
+            </language>
+            <translation>
+                Ælfgar.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ranulphus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ranulphus
+                    </marginalia_text>
+                    <person name="Ralph the Timid"/>
+                </position>
+            </language>
+            <translation>
+                Ralph the Timid.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Algarum Comitem" type="straight"/>
+        <underline language="LA" method="pen" text="iuncto sibi Griffino VVallensium rege, regnum" type="straight"/>
+        <underline language="LA" method="pen" text="depopulaturus instrauit" type="straight"/>
+        <underline language="LA" method="pen" text="Algarus &amp; Griffinus" type="straight"/>
+        <underline language="LA" method="pen" text="Dux Ranulphus" type="straight"/>
+        <underline language="LA" method="pen" text="Eadvvardi regis sororis filius" type="straight"/>
+        
+        <errata amendedtext="uitricus" copytext="gener" language="LA"/>  
+        
+    </annotation>
+</transcription>

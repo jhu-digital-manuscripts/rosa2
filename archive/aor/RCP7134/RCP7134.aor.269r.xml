@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.269r.tif" pagination="262" reader="John Dee" signature="VVij"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota in hac revolutione, quod pro si[n]gulis annis adiecit loco ☉ in nativitate, tantu[m] quantum ☉ in 
+                    vna die naturali movetur, et id sibi tempus revolutionis pr[a]escripsit, quod convenitati loco ☉ ita invento. Vt qu[e]ma[dmodum] in novembre Sol <!--JG: Unsure about quemadmodum--> <!-- FSF: could it be q[uo]nia[m] --> <!--JG: Could be, still not sure though-->
+                    in ♏ movetur, revolutione[m] hanc in mensi novembri statuit, cu[m] tamen sit in septembri natus: et quo [10] die, et qua hora et minuto ☉  <!-- JG: still not sure about 'quo 10' in this sentence, doesn't seem to make sense-->
+                    in tali loco sit faturus descrevit et ad id tempus figura[m] erigit. et huius reversionis qu[a]e sit significatio vide in Schonero libro terio fo 204 % [id est] cap. 12. possim[us] 
+                    etia[m] eode[m] modo reliquas planetas tractare, et in tardiorib[us] leviores concludere: et sane haec optime co[n]veniu[n]t. sed dubiu[m] hic
+                    moveri possit an accipiunt motum mediu[m] ☉ an veru[m] et diurnum te[m]pore nativitatis. At hic videtur eaede[m] asscripsisse.</marginalia_text> 
+                    <symbol_in_text name="Sun"/>
+                    <symbol_in_text name="Scorpio"/>
+                    <person name="Johannes Schoner"/>
+                </position>
+            </language>
+            <translation>Note in this revolution, that for individual years, he added the place of the sun in the nativity, as much as the Sun is moved in one natural day, and he order that 
+            time of the revolution to himself, that with the place of the Sun coming together thus was discovered. As how in November the Sun is moved into Scorpio, he established this revolution
+            in the month November, when he nevertheless was born in September: and on which [tenth] day, and on which hour and minute, &amp; in such place the Sun is about to be, he describes and produces a figure for this time.
+            And of this reversion, which may be an indication, see in Johannes Schoner, book three, folio 204, that is chapter 12. We can even treat the remaining planets in the same manner, and
+            deduce the more fickle ones in more slowly things: and certainly, these things come togheter optimally. But he might be able that this doubt is moved whether they grasp the ordinary movement of the Sun [and]
+            whether in truth even daily in the time of the nativity. And here it seems that the same things have been stated in writing.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Pro aphorismo: 114:</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:542" text="114:"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>For aphorism 114.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="fuerit infortuna" type="straight"/>
+        <underline language="LA" method="pen" text="fortuna cadenti" type="straight"/>
+        <underline language="LA" method="pen" text="secundum modum processus Solis, &amp;" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        
+    </annotation>
+</transcription>

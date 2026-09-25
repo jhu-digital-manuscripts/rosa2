@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.073r.tif" pagination="135" reader="John Dee" signature="M.ij."/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Nota.</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quòd se regem esse pr[a]etendebat" type="straight"/>
+        <underline language="LA" method="pen" text="tame[n] non regi" type="straight"/>
+        <underline language="LA" method="pen" text="detineret, &amp; regni dominationem indebitè" type="straight"/>
+        <underline language="LA" method="pen" text="Regina Angliae Philippa peperit filiam vocatam" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="head" type="coat_of_arms"/>
+        
+    </annotation>
+</transcription>

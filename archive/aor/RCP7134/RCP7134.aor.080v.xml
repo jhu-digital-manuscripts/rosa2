@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.080v.tif" pagination="[73v]" reader="John Dee" signature="[T[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="decreta generalia" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Decreta generalia</marginalia_text>
+                </position>
+            </language>
+            <translation>General decrees.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="trigono" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Trigonus</marginalia_text>
+                </position>
+            </language>
+            <translation>Trigonal.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fatum nulla prudentia, aduersus syderum decreta, magna" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>fatu[m] &amp; syderu[m] Decreta sint diuersa.</marginalia_text>
+                </position>
+            </language>
+            <translation>Fate and constellation are judged differently?</translation>  <!--JG: Unsure, since syderum is in gen, but fatum isn't. Would make sense for fatum to be in gen. too: "The judgements of fate and the constallations are different"-->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="perfectio operis" type="straight"/>
+        <underline language="LA" method="pen" text="non operatio" type="straight"/>
+        <underline language="LA" method="pen" text="decreta generalia" type="straight"/>
+        <underline language="LA" method="pen" text="tum maxime, quòd in eo trigono Iupiter Mars &amp; Venus domina[n]tur" type="straight"/>
+        <underline language="LA" method="pen" text="ut uero cuiuscu[m]q[ue] genitura cum trigono suo" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]sentit, sic homo redditur omnibus illustrior" type="straight"/>
+        <underline language="LA" method="pen" text="conuenit regione" type="straight"/>
+        <underline language="LA" method="pen" text="deinde itinere" type="straight"/>
+        <underline language="LA" method="pen" text="uiolentia causae" type="straight"/>
+        <underline language="LA" method="pen" text="fatum nulla prudentia, aduersus syderum decreta, magna" type="straight"/> 
+        
+        <numeral language="LA" place="intext" text="conuenit regione">1</numeral>
+        <numeral language="LA" place="intext" text="deinde itinere">2</numeral>
+        <numeral language="LA" place="intext" text="uiolentia causae">3</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

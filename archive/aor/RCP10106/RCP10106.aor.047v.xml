@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.047v.tif" pagination="94" reader="John Dee"/>
+    <annotation>
+        
+        
+        <marginalia anchor_text="persuadendi opificem, id est, πειθοῦς δημιουργόν" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Isocratis Diffinitio</marginalia_text>
+                    <person name="Isocrates"/>
+                </position>
+            </language>
+            <translation>Isocrates' definition.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Gorgias" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Gorgias</marginalia_text>
+                </position>
+            </language>
+            <translation>Gorgias.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cicero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cicero</marginalia_text>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Verum &amp; pecunia persuadet, &amp; gratia, &amp; autoritas dicentis, &amp; dignitas, postremo aspectus etiam ipse sine uoce" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pecunia Gratia autoritas Dignitas aspectus} Persuadent</marginalia_text>
+                </position>
+            </language>
+            <translation>Money, praise, authority, status, and appearance persuade.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Antonius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ANTONIVS</marginalia_text>
+                    <person name="Mark Antony"/>
+                </position>
+            </language>
+            <translation>Antonius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Galbam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>GALBA.</marginalia_text>
+                    <person name="Galba"/>
+                </position>
+            </language>
+            <translation>Galba.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hyperidis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hyperides.</marginalia_text>
+                    <person name="Hypereides"/>
+                </position>
+            </language>
+            <translation>Hypereides.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Persuadent enim dice[n]do, uel ducunt in id quod uolu[n]t alij quoq[ue]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Non solu[m] orator persuadet.</marginalia_text>
+                </position>
+            </language>
+            <translation>The orator is not the only one who persuades.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Sudae medullam" type="straight"/>
+        <underline language="LA" method="pen" text="uolu[n]t alij quoq[ue], ut meretrices, adulatores, corruptores" type="straight"/>
+
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+    </annotation>
+</transcription>

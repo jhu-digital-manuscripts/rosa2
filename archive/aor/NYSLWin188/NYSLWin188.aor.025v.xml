@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.025v.tif" pagination="[25[v]]" reader="John Dee" signature="[G[v]]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ignis quasi Vulcanus.</marginalia_text>
+                    <person name="Vulcan"/>
+                </position>
+            </language>
+            <translation>Fire is like Vulcan.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ist der Vulcanus der dem menschen vnderworffen ist" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ignis est Vulcanus nobis subiectus et inserviens.</marginalia_text>
+                    <person name="Vulcan"/>
+                </position>
+            </language>
+            <translation>Fire is Vulcan subjected to us and serving [us].</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vnd die rechten Vltimae materiae durch den Menschen beschehe[n] müssen: Vn[d] der Vulcanus Elementoru[m] macht sein Vltimam materiam nichts anderst dann das sei beim Menschen Media materia ist vo[n] der Media materia macht der Mensch Vltimam materia[m] darauß darzu muß er ein Vulcanum haben das ist das Fewer, dasselbige vertrit de[m] Vulcanu[m] vn[d] ist der Vulcanus Ignis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vltima Materia Natura[e] est Media Materia, n[ost]ror[um] artificior[um] seu potius prima Materia: qua[m] nos in n[ost]ram perfecta[m]
+                    et pote[n]tem vltima[m] Materia[m] ducimus auxilio n[ost]ri servi vulcani: [id est] Ignis.</marginalia_text>
+                    <person name="Vulcan"/>
+                </position>
+            </language>
+            <translation>The ultimate matter of nature is the centre matter or rather first matter of our artifices: which we turn into our perfect and powerful
+            ultimate material with the help of our servant Vulcanus: that is fire.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vulcanus Elementatus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Vulcanus - Eleme[n]tatus - Ignis</marginalia_text>
+                    <person name="Vulcan"/>
+                </position>
+            </language>
+            <translation>Vulcan: element and fire.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="das holtz in glaß" type="straight"/>
+        <underline language="DE" method="pen" text="Geist" type="double"/>
+        <underline language="DE" method="pen" text="Seel" type="double"/>
+        <underline language="DE" method="pen" text="person" type="double"/>
+        <underline id="NYSLWin188:00000064:u0001" language="DE" method="pen" text="Vulcanus der dem menschen vnderworffen ist" type="straight"/> 
+        <underline language="DE" method="pen" text="derselbige mag de[n] mensche[n] nicht werde[n] jn gehorsam zu sein" type="straight"/>
+        <underline language="DE" method="pen" text="sondern allein in der Natur hat er sein Officium" type="straight"/>
+        <underline language="DE" method="pen" text="die rechten Vltimae materiae " type="double"/>
+        <underline language="DE" method="pen" text="sein Vltimam" type="double"/>
+        <underline language="DE" method="pen" text="nichts anderst" type="straight"/>
+        <underline language="DE" method="pen" text="Media materia" type="double"/>
+        <underline language="DE" method="pen" text="Media materia macht der Mensch" type="straight"/>
+        <underline language="DE" method="pen" text="materia[m]" type="double"/>
+        <underline id="NYSLWin188:00000064:u0002" language="DE" method="pen" text="er ein Vulcanum" type="double"/>
+        <underline language="DE" method="pen" text="ist das Fewer" type="double"/>
+        <underline language="DE" method="pen" text="de[n] Vulcanu[m]" type="straight"/>
+        <underline language="DE" method="pen" text="vn[d] ist ein knecht d[er] natürlichen Künste[n] die der Mensch kan" type="straight"/>
+        <underline language="DE" method="pen" text="natürlichen Elementischen Vulcani" type="straight"/>
+        <underline language="DE" method="pen" text="Vulcanus Elementatus" type="straight"/>
+        
+        <physical_link>
+            <marginal_annotation idref="NYSLWin188:00000064:u0001"/>
+            <marginal_annotation idref="NYSLWin188:00000064:u0002"/>
+            
+            <relation from="NYSLWin188:00000064:u0001" to="NYSLWin188:00000064:u0002" type="undirected"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

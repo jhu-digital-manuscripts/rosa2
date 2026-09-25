@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.018v.tif" reader="Harvey" signature="[Biii[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Pompeius" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pompey.</marginalia_text>
+                    <person name="Pompey"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Poly[m]echania.</marginalia_text>
+                </position>
+            </language>
+            <translation>Polymechanics.</translation>
+        </marginalia>   
+        
+        <underline language="EN" method="pen" text="Halis" type="straight"/>
+        <underline language="EN" method="pen" text="caste a dyche behynde his army" type="straight"/>
+        <underline language="EN" method="pen" text="turned the course" type="straight"/>
+        <underline language="EN" method="pen" text="of the ryuer" type="straight"/> 
+        <underline language="EN" method="pen" text="at Brinduse" type="straight"/>
+        <underline language="EN" method="pen" text="as Cesar laye" type="straight"/>
+        <underline language="EN" method="pen" text="at his backe" type="straight"/>
+        <underline language="EN" method="pen" text="with walles" type="straight"/>
+        <underline language="EN" method="pen" text="intercut with dyches, settynge" type="straight"/>
+        <underline language="EN" method="pen" text="feused with great tres, layd" type="straight"/>
+        <underline language="EN" method="pen" text="wolde haue helde" type="straight"/>
+        <underline language="EN" method="pen" text="leste a fewe archers, to kepe the" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="caste a dyche behynde his army"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="wolde haue helde"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="walles"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="dyches"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="feused with great tres"/>
+        <mark method="pen" name="dot" place="intext"/> <!--quantitie, which-->
+        
+    </annotation>
+</transcription>

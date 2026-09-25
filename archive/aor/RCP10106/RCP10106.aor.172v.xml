@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.172v.tif" pagination="344" reader="John Dee" signature="[y 4[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="numnquàm esse legem legi co[n]trariam iure ipso" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Nunqua[m] est lex, legi co[n]traria iure ip[s]i</marginalia_text>
+                </position>
+            </language>
+            <translation>One law can never be contrary to another law in the legal code itself.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fortis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>fortis</marginalia_text>
+                </position>
+            </language>
+            <translation>Brave.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="magistratu" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Magistratus</marginalia_text>
+                </position>
+            </language>
+            <translation>Magistrate.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tyrannicidae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tyrannicida</marginalia_text>
+                </position>
+            </language>
+            <translation>Tyrannicide.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="confessum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Co[n]fessu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>Confessed.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dubium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dubium</marginalia_text>
+                </position>
+            </language>
+            <translation>Doubt.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Hic meritorum, temporis, praemij collatio est" type="straight"/>
+        <underline language="LA" method="pen" text="utra prior" type="straight"/>
+        <underline language="LA" method="pen" text="Vir fortis optato quae uolet" type="straight"/>
+        <underline language="LA" method="pen" text="stratus ab" type="straight"/>
+        <underline language="LA" method="pen" text="alio casu poni" type="straight"/>
+        
+        <mark language="LA" method="pen" name="pin" place="head" text="Nunqua[m] est lex, legi co[n]traria iure ip[s]i"/>
+        <mark method="pen" name="pin" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">.1.</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">.3.</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">5</numeral>
+        <numeral place="left_margin">1</numeral>
+        <numeral place="left_margin">2.</numeral>
+        <numeral place="left_margin">3.</numeral>
+        <numeral place="left_margin">.4.</numeral>
+        <numeral place="left_margin">5</numeral>
+        <numeral place="left_margin">6.</numeral>
+        <numeral place="left_margin">7.</numeral>
+        <numeral place="left_margin">8</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

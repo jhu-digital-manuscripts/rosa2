@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.249v.tif" pagination="478" reader="John Dee" signature="[ggg.vii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="deos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Dij
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Gods. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="orchestra" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Orchestra
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        a place wherin the senatores [and] honorable p[er]sons did [syt] to beholde plays <!--JG: Unsure about 'syt'-->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Seats in a theatre reserved for the Senate.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sipariu[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Siparium.
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        a courtayne
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A curtain.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="latrunculis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        latrunculi
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Robbers.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="co[n]solatio [...] solatio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        co[n]solatio solatiu[m] ]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Comfort, solace.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        prouinci[a]e annu[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A province appointed for a year.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quos non parsimonia, non continentia, non virtus, non labor, non splendor" type="straight"/>
+        <underline language="LA" method="pen" text="ipse nunquam se minus quàm erat, nequam esse simularit" type="straight"/>
+        <underline language="LA" method="pen" text="in orchestra" type="straight"/>
+        <underline language="LA" method="pen" text="antea post sipariu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]solatione" type="straight"/>
+        <underline language="LA" method="pen" text="latrunculis à" type="straight"/>
+        <underline language="LA" method="pen" text="solatio" type="straight"/>
+
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">19</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+        <drawing anchor_text="Dij" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

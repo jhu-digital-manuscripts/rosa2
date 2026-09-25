@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.033v.tif" pagination="50" reader="John Dee" signature="[e[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="gibbos, nanos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Gibb. Nani
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Lump, dwarf.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Triginta annor[um] cursus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A course of 30 years.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="hoc est partiliter" type="straight"/>
+        <underline language="LA" method="pen" text="si per diem" type="straight"/>
+        <underline language="LA" method="pen" text="per noctem" type="straight"/>
+        <underline language="LA" method="pen" text="uel signo" type="straight"/>
+        <underline language="LA" method="pen" text="uel loco" type="straight"/>
+        <underline language="LA" method="pen" text="uel finibus" type="straight"/>
+        <underline language="LA" method="pen" text="ex aliqua parte" type="straight"/>
+        <underline language="LA" method="pen" text="noctem in omnibus cardinibus constituta, mala genitur[a]e maxima decernit,              uxore[m] enim perimit, filios prosternit, &amp; acerbos dolores orbitatis semper indicit" type="straight"/>
+        <underline language="LA" method="pen" text="Quod si contrarius fuerit ei, qui dominus geniturae, seu qui dator uitae fuerit, ex iis annis,              qui decreti fuerint, triginta annos subtrahit, sed &amp; potiora mala decernit, quotiescunq[e] sit collocatus contra dominum geniturae" type="straight"/>
+        <underline language="LA" method="pen" text="gibbos" type="straight"/>
+        <underline language="LA" method="pen" text="nanos" type="straight"/>
+        <underline language="LA" method="pen" text="curuos" type="straight"/>
+        <underline language="LA" method="pen" text="faciet insanos. lunaticos, melancholicos, languidos" type="straight"/>
+        <underline language="LA" method="pen" text="phthisicos faciet" type="straight"/>
+        <underline language="LA" method="pen" text="fuit pater eius ante collocatus, sed" type="straight"/>
+        <underline language="LA" method="pen" text="si prima triginta annorum" type="straight"/>
+        
+        <symbol name="Trine" place="left_margin"/>      
+        
+    </annotation>
+</transcription>

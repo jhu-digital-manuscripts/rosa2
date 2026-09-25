@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.310v.tif" pagination="600" reader="John Dee" signature="[ppp.iiii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="admirationem mouet" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>mouere admiratione[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>To stir admiration.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="scriptum, meditatu[m], cogitatu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>scriptu[m] meditatu[m] cogitatu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Written down, prepared, pondered [Loeb 507, 103].</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="placáque animum aliquando, &amp; mitiga" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>placare mitigare a[n]i[mu]m</marginalia_text>
+                </position>
+            </language>
+            <translation>To placate [and] mitigate the mind.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="lapsis paucis pòst diebus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>lapsis paucis pòst dieb[us]</marginalia_text>
+                </position>
+            </language>
+            <translation>Slipped after a view days.</translation> <!--JG: See Loeb 507, 112-3: lapsis should be classis-->
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="quod verbum tibi non excidit, vt saepe" type="straight"/>
+        <underline language="LA" method="pen" text="scriptum, meditatu[m], cogitatu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="hoc pro nihilo" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">10.11</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">3</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

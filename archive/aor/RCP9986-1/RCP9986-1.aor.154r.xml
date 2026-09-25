@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.154r.tif" pagination="155" reader="John Dee" signature="V.iij."/>   
+    <annotation>
+        
+        <marginalia anchor_text="breuis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Breuis</marginalia_text>
+                </position>
+            </language>
+            <translation>Short.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="gracilis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>gracilis</marginalia_text>
+                </position>
+            </language>
+            <translation>Slender.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vnguis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vnguis</marginalia_text>
+                </position>
+            </language>
+            <translation>A nail.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="odor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>odor.</marginalia_text>
+                </position>
+            </language>
+            <translation>Odour.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Dens" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dens</marginalia_text>
+                </position>
+            </language>
+            <translation>A tooth.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Est illis sua dos forma sine arte potens" type="straight"/>
+        <underline language="LA" method="pen" text="auxilijs assidet" type="straight"/>
+        <underline language="LA" method="pen" text="Rara tamen menda facies caret, occule mendas" type="straight"/>
+        <underline language="LA" method="pen" text="Quódq[ue] potes vitium corporis abde tui" type="straight"/>
+        <underline language="LA" method="pen" text="aluta" type="straight"/>
+        <underline language="LA" method="pen" text="Si niger, aut ingens, aut non erit ordine natus Dens tibi, ridendo maxima damna feres" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="Exiguo signet gestu, quodcunq[ue] loquatur, Cui digiti pingues, &amp; scaber vnguis erit"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

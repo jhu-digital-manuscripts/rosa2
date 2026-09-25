@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.016r.tif" pagination="16" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Vn[d] solche Operationes seindt in de[n] drey ersten" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Operationes stellaru[m] iuxta triu[m] primaru[m] rationem</marginalia_text>
+                </position>
+            </language>
+            <translation>The activities of the stars next to the reason of the three principles.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Non ex eleuatio[n]e vaporum a terra vel solis et stellar[um] attractione [etc] vt Aristoteles vult</marginalia_text>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>Not from the elevation of heat from the earth or the attraction of the sun and stars, et cetera, as Aristoles wishes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Die Son[n]e ist der erste vn[d] Obriste Sommer" hand="Italian">
+        <language ident="LA">
+            <position book_orientation="0" place="right_margin">
+                <marginalia_text>Sol est prima</marginalia_text>
+            </position>
+            <position book_orientation="0" place="tail">
+                <marginalia_text>et principalis stella a[e]st[i]ualis.</marginalia_text>
+            </position>
+        </language>
+        <translation>The sun is the first and principal summer star.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="jren eigenen eigenschafften" type="straight"/>
+        <underline language="DE" method="pen" text="seindt in de[n] drey" type="straight"/>
+        <underline language="DE" method="pen" text="sich das erhebt" type="straight"/>
+        <underline language="DE" method="pen" text="an sich ziehen von der Erden" type="straight"/>
+        <underline id="NYSLWin188:00000045:u0001" language="DE" method="pen" text="es ist natura appropriata, dotata" type="double"/>
+        <underline language="DE" method="pen" text="Es ist kein Stern der Regen an sich ziehe" type="straight"/>
+        <underline language="DE" method="pen" text="vn[d] jn darnach wider gebe" type="straight"/>
+        <underline id="NYSLWin188:00000045:u0002" language="DE" method="pen" text="ist jr eigen Natur" type="double"/> 
+        <underline language="DE" method="pen" text="aufftruckenet" type="straight"/>
+        <underline language="DE" method="pen" text="wirdt im lufft verzert" type="straight"/>
+        <underline language="DE" method="pen" text="alle ding" type="straight"/>
+        <underline language="DE" method="pen" text="in der Erde[n] verzert werden" type="straight"/>
+        <underline language="DE" method="pen" text="wie der todt deren dingen so von der Erden kommen in der Erden ist" type="straight"/>
+        <underline language="DE" method="pen" text="alle ding zu nichten" type="straight"/>
+        <underline language="DE" method="pen" text="aller nassen dingen" type="double"/>
+        
+        <symbol language="DE" name="Sun" place="tail" text="Son[n]e"/>
+        
+        <physical_link>
+            
+            <marginal_annotation idref="NYSLWin188:00000045:u0001"/>
+            <marginal_annotation idref="NYSLWin188:00000045:u0002"/>
+            
+            <relation from="NYSLWin188:00000045:u0001" to="NYSLWin188:00000045:u0002" type="undirected"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

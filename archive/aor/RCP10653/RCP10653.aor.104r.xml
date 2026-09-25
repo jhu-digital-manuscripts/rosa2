@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.104r.tif" pagination="199" reader="John Dee" signature="R iiij"/>
+    <annotation>
+        
+        <marginalia anchor_text="in Cambriam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Cambria.         
+                    </marginalia_text>
+                    <location name="Wales"/>
+                </position>
+            </language>
+            <translation>
+                Wales.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Saxonum reges armis strennissimi, pagani atrocissimi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Saxones Pagani
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The pagan Saxons.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cornubia" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Cambria et Cornubia.       
+                    </marginalia_text>
+                    <location name="Wales"/>
+                    <location name="Cornwall"/>
+                </position>
+            </language>
+            <translation>
+                Wales and Cornwall.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tribus prouincijs" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Tres prouincia[e] Bryta[n]noru[m] iam nota[n]d[a]e      
+                    </marginalia_text>
+                    <location name="Britain"/>
+                </position>
+            </language>
+            <translation>
+                Three provinces of Britons to be noted now.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sed in hoc ta[n]tum reprehensibiles iudicantur, quòd semper gentem Anglorum, &amp; etiam vsque in hodiernum diem" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Cur reprehendendi Brita[n]ni siue Ca[m]bri hodierni 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Why are Britons or Welsh people to be blamed today
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="cum reliquijs sanctorum in Cambriam diffugerunt" type="straight"/>
+        <underline language="LA" method="pen" text="Loegriae" type="straight"/>
+        <underline language="LA" method="pen" text="pagani atrocissimi" type="straight"/>
+        <underline language="LA" method="pen" text="potius quàm Christum &amp; Christianorum cultum subuertere sitiebant" type="straight"/>
+        <underline language="LA" method="pen" text="Itaque Britanni regni diadema multis temporibus amittentes, videlicet" type="straight"/> 
+        <underline language="LA" method="pen" text="ad tempora Cadvvallonis, que[m] Beda Cedvvallum vocat" type="straight"/>
+        <underline language="LA" method="pen" text="illam patriae partem, quae eis remanserat, non" type="straight"/>
+        <underline language="LA" method="pen" text="tribus tyrannis" type="straight"/>
+        <underline language="LA" method="pen" text="Cornubia" type="straight"/>
+        <underline language="LA" method="pen" text="Demecia, qu[a]e Australis" type="straight"/>
+        <underline language="LA" method="pen" text="Venedocia, qu[a]e Northvvallia" type="straight"/>
+        <underline language="LA" method="pen" text="finibus quàmuis eis inuitis contenti" type="straight"/>
+        <underline language="LA" method="pen" text="tamen Christi nunquam recesserunt" type="straight"/>
+        <underline language="LA" method="pen" text="ta[n]tum reprehensibiles" type="straight"/>
+        <underline language="LA" method="pen" text="quasi per eos proprijs finibus" type="straight"/>
+        <underline language="LA" method="pen" text="libe[n]tius quam canibus communicare" type="straight"/>
+        <underline language="LA" method="pen" text="prouinciae illorum inexpugnabiles" type="straight"/>
+        <underline language="LA" method="pen" text="Anglorum nequiter infestant, nec aliud ab eis in bello, nisi capita solum pro redemptione requiru[n]t" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>  
+        <mark method="pen" name="bracket" place="right_margin"/> 
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

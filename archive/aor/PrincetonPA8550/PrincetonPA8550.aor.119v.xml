@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonPA8550.119v.tif" pagination="238" reader="Harvey" signature="Pviiv"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Reges semper co[n]sulueru[n]t Jurisco[n]sultos in ciuilib[us] qua[e]stionib[u]s.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Kings always consult lawyers on civil questions.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nota.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Note.
+            </translation>
+        </marginalia>
+        <marginalia anchor_text="ultra" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ulla
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                any
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Regius, et Palatinus vsus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Royal and courtly use.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Augusti" type="straight"/>
+        <underline language="LA" method="pen" text="poribus" type="straight"/>
+        <underline language="LA" method="pen" text="excelleret ciuili sapientia" type="straight"/>
+        <underline language="LA" method="pen" text="de Trebatijs" type="straight"/>
+        <underline language="LA" method="pen" text="Capitonis sententijs" type="straight"/>
+        <underline language="LA" method="pen" text="etiam liberè aduersanti" type="straight"/>
+        <underline language="LA" method="pen" text="morosi interdum" type="straight"/>
+        <underline language="LA" method="pen" text="Augustus &amp; si non la[e]sit Labeonem" type="straight"/>
+        <underline language="LA" method="pen" text="offendi se eius libertate significauit" type="straight"/>
+        <underline language="LA" method="pen" text="eoq[ue] Capitoni" type="straight"/>
+        <underline language="LA" method="pen" text="minori natu consulatum dedit" type="straight"/>
+        <underline language="LA" method="pen" text="eum Principes" type="straight"/>
+        <underline language="LA" method="pen" text="Iureconsultis ultra decreta" type="straight"/>
+        <underline language="LA" method="pen" text="Nerua et Cassius adfuerunt" type="straight"/>
+        <underline language="LA" method="pen" text="Traiano &amp; Adriano" type="straight"/>
+        <underline language="LA" method="pen" text="iudicio Senatus Romani essent" type="straight"/>
+        <underline language="LA" method="pen" text="Postea Antonini Pius &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="Alexander Seuerus" type="straight"/>
+        <underline language="LA" method="pen" text="nullum Decretum" type="straight"/>
+        <underline language="LA" method="pen" text="summi Reges &amp; Principes respondent" type="straight"/>
+        <underline language="LA" method="pen" text="certè sine frequentia" type="straight"/>
+        <underline language="LA" method="pen" text="a[e]duntur, qua[e] existimationi principum" type="straight"/>
+        
+        <symbol name="JC" place="tail"/>
+        
+        <mark method="pen" name="X_sign" place="head"/>
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="etiam liberè aduersanti"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="etiam liberè aduersanti"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- Principes, Augustus -->
+        <mark method="pen" name="X_sign" place="left_margin"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="libertate"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Capitoni"/>
+        <mark method="pen" name="scribble" place="left_margin"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="consulatum"/>
+        
+        <errata amendedtext="Trebatij" copytext="Trebatijs" language="LA"/>
+        
+    </annotation>
+</transcription>

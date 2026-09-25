@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.206r.tif" pagination="235" reader="Harvey" signature="[P6r]"/>	<!-- ABO 210right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Prudens pauca conatur: sed suscepta perficit.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A prudent person attempts a few things: but he completes these undertakings.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Vnicum Mundi Corculum: hominum delitium.
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						In factis,
+						Corculu[m]:
+						in
+						( dictis,
+						/ delitium.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The only wise person of the world: the delight of men.
+			In deeds, a wise man; in words, a delight.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Semiuiro nihil vilius. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Nothing is cheaper than a half-man.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Megalander.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A high-souled man.</translation> <!--For translation, see Ha2.056v, lines 132-3-->
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Vir absolutus; Hoc agens. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A complete man; doing this.</translation>
+		</marginalia>
+		
+		<marginalia anchor_text="Carlo nono Re di Francia" hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Carlo IX. re di Francia.
+					</marginalia_text>
+					<person name="Charles IX of France"/>
+					<location name="France"/>
+				</position>
+			</language>
+			<translation>Charles IX, king of France.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Ô quàm magnificum, vbiq[ue] esse audacem, et inuictum?
+						Qui sapit, ad multa animum non applicabit: sed pauca priuatim, aut publicè
+						vtilissima perficiet, quanta potest facultate maxima.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>O how magnificent is it, that there is boldness and invincibility everywere? <!--JG: Unsure-->
+			He who understands, will not apply the mind to many things; but in private or publicly, he will
+			accomplish a few of the most useful things, as much as he can, with the greatest ability.
+			</translation>
+		</marginalia>
+		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.206r_0001" marginalia_continues_to="Ha2.205v_0001" marginalia_to_transcription="Ha2.205v.xml">
+			<language ident="LA">
+				<position book_orientation="180" place="tail">
+					<marginalia_text>
+						Qui timescit, Vilescit. Qui tristescit, [p. 234: planè Sordescit. Tristi, et timido nihil turpius.]
+						<!-- Continues onto facing page, tail, Ha2.205v -->
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>He who is frigthened, becomes worthless. He who becomes sad, [p. 234: it grows entirely base. For the sad and timid mad nothing is more ugly.] </translation> 
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Quantum ulla fieri potest vel arte, vel philosophia, vel professione
+						maximum: vel omninò aliquoa humana facultate.
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						Ca[e]tera minuta, aut vulgaria linquenda
+						ociosis, aut rerum ignaris.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>As much as can be done either with any art, philosophy, or profession: or entirely with another human faculty.
+			The remaining faculties having been diminished, or the common ones must be left with those idle or ignorant of matters.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="permutasse à tempo li ben vani" type="straight"/>
+		<underline language="IT" method="pen" text="gente in gente" type="straight"/>
+		<underline language="IT" method="pen" text="d'uno in altro sangue" type="straight"/>
+		<underline language="IT" method="pen" text="Perch'una parte impera" type="straight"/>
+		<underline language="IT" method="pen" text="l'altra langue" type="straight"/>
+		<underline language="IT" method="pen" text="di costei" type="straight"/>
+		<underline language="IT" method="pen" text="Che è occulto, com'in herba l'Angue" type="straight"/>
+		<underline language="IT" method="pen" text="Ella prouede" type="straight"/>
+		<underline language="IT" method="pen" text="Suo regno" type="straight"/>
+		<underline language="IT" method="pen" text="Le sue permutation" type="straight"/>
+		<underline language="IT" method="pen" text="non hanno triegue" type="straight"/>
+		<underline language="IT" method="pen" text="Necessità la fa esser veloce" type="straight"/>
+		<underline language="IT" method="pen" text="Quest'è colei che" type="straight"/>
+		<underline language="IT" method="pen" text="dourian dar lode" type="straight"/>
+		<underline language="IT" method="pen" text="biasmo attorno" type="straight"/>
+		<underline language="IT" method="pen" text="s'è beata" type="straight"/>
+		<underline language="IT" method="pen" text="Tra l'altre prime creature" type="straight"/>
+		<underline language="IT" method="pen" text="Volue sua sfera, &amp; beata si gode" type="straight"/>
+		<underline language="IT" method="pen" text="ammirando tratto" type="straight"/>
+		<underline language="IT" method="pen" text="giouane Principe" type="straight"/>
+		<underline language="IT" method="pen" text="comincia Carlo nono" type="straight"/>
+		<underline language="IT" method="pen" text="di Francia" type="straight"/>
+		<underline language="IT" method="pen" text="manifesti segnali della" type="straight"/>
+		<underline language="IT" method="pen" text="liberalità" type="straight"/>
+		<underline language="IT" method="pen" text="l'anno nuouo" type="straight"/>
+		<underline language="IT" method="pen" text="poter dar la mancia" type="straight"/>
+		<underline language="IT" method="pen" text="il nouell'anno" type="straight"/>
+		<underline language="IT" method="pen" text="onde il tesoriere" type="straight"/>
+		<underline language="IT" method="pen" text="mille scudi" type="straight"/>
+		<underline language="IT" method="pen" text="finiti vndici" type="straight"/>
+		<underline language="IT" method="pen" text="egli erano pochi" type="straight"/>
+		
+		<symbol name="SS" place="head"/>
+		
+		<symbol name="SS" place="intext"/>
+		
+		<mark language="IT" method="pen" name="plus_sign" place="left_margin" text="Che è occulto, com'in herba l'Angue"/>
+		<mark language="IT" method="pen" name="plus_sign" place="left_margin" text="Necessità la fa esser veloce"/>
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Tra l'altre prime creature lieta, Volue sua sfera, &amp; beata si gode"/>
+		
+		<mark method="pen" name="plus_sign" place="right_margin"/>
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="segnali"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="nouell'anno"/>
+		<mark method="pen" name="dot" place="intext"/> <!--disse, che-->
+		
+
+    </annotation>
+</transcription>

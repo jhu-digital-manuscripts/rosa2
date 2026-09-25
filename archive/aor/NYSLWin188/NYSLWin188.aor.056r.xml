@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.056r.tif" pagination="56" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        <!--KS: most of marginal note is illegible.-->
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Sperma" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Sperma
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Sperm.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Also ist Basilißken geburt" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Basilisci origo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The birth of the basilisk.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="minder es werden solche im Himmel" type="straight"/>
+        <underline language="DE" method="pen" text="auch gefunden die auß jr Region auch kommen" type="straight"/>
+        <underline language="DE" method="pen" text="dann es ist vbersich wer" type="straight"/>
+        <underline language="DE" method="pen" text="ist aber jnen hinauff" type="straight"/>
+        <underline language="DE" method="pen" text="ein Wetter solche destruction macht" type="straight"/>
+        <underline language="DE" method="pen" text="an denselbigen ortern" type="straight"/>
+        <underline language="DE" method="pen" text="selbigen impetu herab fallen" type="straight"/>
+        <underline language="DE" method="pen" text="Sperma herab" type="straight"/>
+        <underline language="DE" method="pen" text="laub frösche" type="double"/>
+        <underline language="DE" method="pen" text="fallen in Sperma" type="straight"/>
+        <underline language="DE" method="pen" text="seine Eltern nie hinkommen seindt" type="straight"/>
+        <underline language="DE" method="pen" text="ist der Lufft ein" type="straight"/>
+        <underline language="DE" method="pen" text="Also ist" type="double"/>
+        <underline language="DE" method="pen" text="Basilißken" type="straight"/>
+        
+        <underline language="DE" method="pen" text="Laub frösche" type="double"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

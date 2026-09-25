@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.072r.tif" reader="Harvey" signature="I[ir]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>The Spaniards rich bribes, haue greatly aduauncid his procedings in [the] Low Cuntrys, &amp; other places.
+                    Corruption,</marginalia_text>
+                    <location name="Netherlands"/>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>[the] great Strategem of Philip of Macedonia: &amp; now of this Philip of Spain.</marginalia_text>
+                    <person name="Philip II of Macedon"/>
+                    <person name="Philip II of Spain"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Pysistratus voluntary</marginalia_text>
+                    <person name="Pisistratus"/>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>woondes.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Adathantes, s[upr]a, l.2.c.5.</marginalia_text>
+                    <person name="Adathantes"/>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0121" text="l.2.c.5."/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Adathantes, [see] above, book 2, chapter 5.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sinon, A miserable fugitiue betrayed Troy.</marginalia_text>
+                    <person name="Sinon"/>
+                    <location name="Troy"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="betraye the cytie" type="straight"/>
+        <underline language="EN" method="pen" text="somewhat negligent, on the holy" type="straight"/>
+        <underline language="EN" method="pen" text="them meate and wyne plentye" type="straight"/>
+        <underline language="EN" method="pen" text="sluggishnes" type="straight"/>
+        <underline language="EN" method="pen" text="scaled the" type="straight"/>
+        <underline language="EN" method="pen" text="slew the watche" type="straight"/>
+        <underline language="EN" method="pen" text="and opened to the Romayns" type="straight"/>
+        <underline language="EN" method="pen" text="tyme of great renome" type="straight"/>
+        <underline language="EN" method="pen" text="worthy vyctories" type="straight"/>
+        <underline language="EN" method="pen" text="Tarquinius" type="straight"/>
+        <underline language="EN" method="pen" text="Gabiens" type="straight"/>
+        <underline language="EN" method="pen" text="Sextus Tarquinius" type="straight"/>
+        <underline language="EN" method="pen" text="to beaten with roddes" type="straight"/>
+        <underline language="EN" method="pen" text="accusyng his father of crueltie" type="straight"/>
+        <underline language="EN" method="pen" text="the Gabiens to" type="straight"/>
+        <underline language="EN" method="pen" text="vse his hatrede ageynste the kynge" type="straight"/>
+        <underline language="EN" method="pen" text="he betrayed" type="straight"/>
+        <underline language="EN" method="pen" text="Zopirus" type="straight"/>
+        <underline language="EN" method="pen" text="well tried, in all to manglyng his face" type="straight"/>
+        <underline language="EN" method="pen" text="of purpose" type="straight"/>
+        <underline language="EN" method="pen" text="go vnto his ennemies" type="straight"/>
+        <underline language="EN" method="pen" text="those great iniuries" type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--cru-->
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="them meate and wyne plentye"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--vpon, scaled-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="to beaten with roddes"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="manglyng"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="those great iniuries"/>
+        
+    </annotation>
+</transcription>

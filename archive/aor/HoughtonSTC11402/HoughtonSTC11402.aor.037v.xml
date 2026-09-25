@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.037v.tif" reader="Harvey" signature="[Dvi[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>s[upr]a. 3.</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0023" text="3"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>[See] above, 3.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="vnexercised" type="straight"/>
+        <underline language="EN" method="pen" text="onely vyolent at the fyrste brayd" type="straight"/>
+        <underline language="EN" method="pen" text="prolonged" type="straight"/>
+        <underline language="EN" method="pen" text="sayntinge" type="straight"/>
+        <underline language="EN" method="pen" text="suche a rage" type="straight"/>
+        <underline language="EN" method="pen" text="that they came" type="straight"/>
+        <underline language="EN" method="pen" text="battayle, with theyr wyues" type="straight"/>
+        <underline language="EN" method="pen" text="differred" type="straight"/>
+        <underline language="EN" method="pen" text="enclosed the hoste of Affranius" type="straight"/>
+        <underline language="EN" method="pen" text="pyned theym with thyrste" type="straight"/>
+        <underline language="EN" method="pen" text="exasperated, distroyed all that withstode" type="straight"/>
+        <underline language="EN" method="pen" text="profered to" type="straight"/>
+        <underline language="EN" method="pen" text="whan yre and dispayre" type="straight"/>
+        <underline language="EN" method="pen" text="inflamed his ennemies" type="straight"/>
+        <underline language="EN" method="pen" text="Jugurthe" type="straight"/>
+        <underline language="EN" method="pen" text="battayle toward nyghte" type="straight"/>
+        <underline language="EN" method="pen" text="put to flyght" type="straight"/>
+        <underline language="EN" method="pen" text="oportunitie and succour of the nyght" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="oportunitie and succour of the nyght"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="whan yre and dispayre"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="battayle toward nyghte"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--thyrste, in-->
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

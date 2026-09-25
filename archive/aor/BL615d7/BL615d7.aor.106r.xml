@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.106r.tif" pagination="106" reader="John Dee" signature="Oij"/>
+    
+    <annotation>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Note</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Fiume verde" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Fl[umen] Verde</marginalia_text>
+                </position>
+            </language>
+            <translation>The Verde river.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Fl[umen] d'oro</marginalia_text>
+                </position>
+            </language>
+            <translation>The del Oro river.</translation>
+        </marginalia>
+        
+        
+        <underline language="IT" method="pen" text="nidi di fieno" type="double"/>
+        <underline language="IT" method="pen" text="finismo marmo" type="straight"/>
+        <underline language="IT" method="pen" text="poi di puro diaspro" type="straight"/>
+        <underline language="IT" method="pen" text="dì a' XXI di" type="straight"/>
+        <underline language="IT" method="pen" text="Fiume verde" type="straight"/>
+        <underline language="IT" method="pen" text="trouare il guado, per guazzar" type="straight"/>
+        <underline language="IT" method="pen" text="fiume Ebro" type="straight"/>
+        <underline language="IT" method="pen" text="popolationi de gl'Indiani" type="straight"/>
+        <underline language="IT" method="pen" text="mangiando del pan loro" type="straight"/>
+        <underline language="IT" method="pen" text="de gli agli" type="straight"/>
+        <underline language="IT" method="pen" text="volontieri per poca" type="straight"/>
+        
+        <mark method="pen" name="equal_sign" place="right_margin"/> <!-- perfetta -->
+
+        
+        
+    </annotation>
+    
+    
+</transcription>

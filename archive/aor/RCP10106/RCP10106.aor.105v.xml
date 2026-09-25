@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.105v.tif" pagination="210" reader="John Dee" signature="[o [v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sexta</marginalia_text>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ἀτέχνων</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>probationu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>The sixth of unskilled proofs.</translation>
+        </marginalia>
+        
+        <mark method="pen" name="quattuorpunctus" place="left_margin"/>
+        
+    </annotation>
+</transcription>

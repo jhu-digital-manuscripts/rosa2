@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.134r.tif" pagination="91" reader="Harvey" signature="[F6r]"/>	<!-- ABO 138right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Discoursers beat the bush: but artists, &amp; executioners
+						catch the birds.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Vno piu che Cento.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				One more than a hundred.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Nunq[uam] deficit, qui semper efficit.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Whoever always succeeds never lacks anything.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Vnicum artium, 
+						professionumq[ue]
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="EL">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						ὄργανον,
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Logica: cum Rhetorica: Sed
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						ad vngue[m].
+						Vt ne vitalis quidem spiritus magis promptus. =
+						= Nam maiora Lingua[e], quàm Manus miracula:
+						et Orpheus, {
+						quàm Da[e]dalus sa[e]pè potentior.
+					</marginalia_text>
+					<person name="Orpheus"/>
+					<person name="Daedalus"/>
+				</position>
+			</language>
+			<translation>
+				An organon, Logic, and Rhetoric of singular arts and professions, but learned by heart. 
+				So that not even a vital spirit can more prepared.
+				For languages are greater than the miracles of the hand,
+				and Orpheus is often more powerful than Daedalus.
+			</translation>
+		</marginalia>	
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						s[upr]a, 63.
+					</marginalia_text>
+					<internal_ref>
+						<target ref="FolgersHa2:Ha2.120r" text="63"/>
+					</internal_ref>
+				</position>
+			</language>
+			<translation>
+				[See] above, pg. 63.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						populus, chorus, fluuius. )
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Animus est entelechia: ingenium, quinta essentia: ars,
+						aureum magisterium.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Mind is Actualization; genius, the fifth essence; art, a golden master.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EL">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						διότι
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The reason why.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Eutrapelus can do more bie the White art, then anie
+						Coniurer in Europe, can do bie the black art.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Maestro di tutti tre mezzi; l'uno, ma l'unico,
+						Homero.
+					</marginalia_text>
+					<person name="Homer"/>
+				</position>
+			</language>
+			<translation>
+				A master of all three ways: the one and only Homer.
+			</translation>
+		</marginalia>
+		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.134r_0001" marginalia_continues_from="Ha2.133v_0001" marginalia_from_transcription="Ha2.133v.xml">
+			<language ident="EN">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						[[F5v]: Here is heauen: there is hell. Witt is always at home.] Valour goes allwais forward, &amp; neuer backward.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						No Witches Diuel can go beyound Astrophils Angell.
+						The Graces were neuer put downe bye [the] Furies.
+					</marginalia_text>
+					<person name="Astrophilus"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		
+		<underline language="IT" method="pen" text="infiniti inimici" type="straight"/>
+		<underline language="IT" method="pen" text="ciascuno aspetta che l'altro" type="straight"/>
+		<underline language="IT" method="pen" text="vendicare nessuno" type="straight"/>
+		<underline language="IT" method="pen" text="vno nimico solo" type="straight"/>
+		<underline language="IT" method="pen" text="Amor di popolo" type="straight"/>
+		<underline language="IT" method="pen" text="cosa incostantissima" type="straight"/>
+		<underline language="IT" method="pen" text="della incostanza" type="straight"/>
+		<underline language="IT" method="pen" text="Sereno di Verno" type="straight"/>
+		<underline language="IT" method="pen" text="aura di" type="straight"/>
+		<underline language="IT" method="pen" text="di Mare" type="straight"/>
+		<underline language="IT" method="pen" text="di Luna" type="straight"/>
+		<underline language="IT" method="pen" text="amor di popolo" type="straight"/>
+		<underline language="IT" method="pen" text="palma d'instabilità all'vltimo" type="straight"/>
+		<underline language="IT" method="pen" text="di bestia seluatica" type="straight"/>
+		<underline language="IT" method="pen" text="di domestica" type="straight"/>
+		<underline language="IT" method="pen" text="l'adulatore" type="straight"/>
+		<underline language="IT" method="pen" text="morsi piu nociui che" type="straight"/>
+		<underline language="IT" method="pen" text="delle fiere" type="straight"/>
+		<underline language="IT" method="pen" text="il detrattore" type="straight"/>
+		<underline language="IT" method="pen" text="domestici" type="straight"/>
+		<underline language="IT" method="pen" text="l'adulatore" type="straight"/>
+		<underline language="IT" method="pen" text="l'oro sia pallido" type="straight"/>
+		<underline language="IT" method="pen" text="sà che hà molti persecutori" type="straight"/>
+		<underline language="IT" method="pen" text="Mezzi idonei" type="straight"/>
+		<underline language="IT" method="pen" text="presto" type="straight"/>
+		<underline language="IT" method="pen" text="alla Monarchia" type="straight"/>
+		<underline language="IT" method="pen" text="in sì brieue tempo ottenuto" type="straight"/>
+		<underline language="IT" method="pen" text="col consiglio" type="straight"/>
+		<underline language="IT" method="pen" text="eloquenza" type="straight"/>
+		<underline language="IT" method="pen" text="disciplina militare" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<symbol name="SS" place="intext"/>
+		<symbol name="SS" place="intext"/>
+		
+		<mark method="pen" name="quotation_mark" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Imperio di tanto mondo, ripose: col consiglio, con la eloquenza &amp; con la disciplina militare"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- inconstan -->
+		<mark method="pen" name="bracket" place="right_margin"/>
+		<mark method="pen" name="comma" place="right_margin"/> <!-- detrattore -->
+		<mark method="pen" name="quotation_mark" place="right_margin"/>
+		
+		<mark method="pen" name="dot" place="intext"/> <!-- vendichi, & -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="vno nimico solo"/>
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- vltimo -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="detrattore"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="l'adulatore"/>
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- l'adulatore. Il -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="sà che hà molti persecutori"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Mezzi idonei"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/>
+		<mark method="pen" name="comma" place="intext"/> <!-- eloquenza, & -->
+		
+    </annotation>
+</transcription>

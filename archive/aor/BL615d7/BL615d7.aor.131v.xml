@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.131v.tif" pagination="[131v]" reader="John Dee" signature="[Riij[v]]"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="Conel" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Conel.</marginalia_text>
+                    <person name="Conel"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="hauuto origine il mare" type="double"/>
+        <underline language="IT" method="pen" text="Conel," type="straight"/>
+        <underline language="IT" method="pen" text="da Giaia." type="straight"/>
+        <underline language="IT" method="pen" text="Ahiacauo Guarocoel" type="straight"/>
+        <underline language="IT" method="pen" text="qual Cazzabi" type="straight"/>
+        <underline language="IT" method="pen" text="qual Cogioba è una" type="straight"/>
+        
+        <mark language="IT" method="pen" name="equal_sign" place="right_margin" text="fratelli"/>
+        
+        
+        
+    </annotation>
+    
+</transcription>

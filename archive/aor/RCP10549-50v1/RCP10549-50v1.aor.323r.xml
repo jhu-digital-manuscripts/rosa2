@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.323r.tif" pagination="625" reader="John Dee" signature="rrr.i."/>
+    <annotation>
+        
+        <marginalia anchor_text="inibi esse; festionatione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>inibi esse. festinatio</marginalia_text>
+                </position>
+            </language>
+            <translation>To be in that place. Haste.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>πάθος</marginalia_text>
+                </position>
+            </language>
+            <translation>Pathos.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cladibus, peste[m], vastitate[m], cruciatu[m], tormenta denunciat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>clades pestis vastitas cruciatus tormenta.</marginalia_text>
+                </position>
+            </language>
+            <translation>Destruction; plague; destruction; torture; torment.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="praeludiu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>pra[e]ludium</marginalia_text>
+                </position>
+            </language>
+            <translation>Preparation.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sed etia[m] necessitati victus anteferret" type="straight"/>
+        <underline language="LA" method="pen" text="immortaliu[m] beneficium festinatione praeripuisse, aut vim fortunae stultitia, conte[m]psisse videamur" type="straight"/>
+        <underline language="LA" method="pen" text="cladibus, peste[m], vastitate[m], cruciatu[m], tormenta denunciat" type="straight"/>
+        <underline language="LA" method="pen" text="libido flagitiosa, qua Antonioru[m] oblita est vita" type="straight"/>
+        
+        <mark language="LA" method="pen" name="tripunctus_with_tail" place="right_margin" text="pra[e]ludium"/>
+        
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">3</numeral>
+        
+    </annotation>
+</transcription>

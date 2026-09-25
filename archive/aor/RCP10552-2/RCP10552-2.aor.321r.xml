@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.321r.tif" pagination="149" reader="John Dee" signature="V.j."/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="Roberti de Veer" type="double"/>
+        <underline language="LA" method="pen" text="Iohannes dux Lancastriae cui rex donauerat" type="straight"/>
+        <underline language="LA" method="pen" text="recessit, &amp; properauit Lincolniam" type="straight"/>
+        <underline language="LA" method="pen" text="Katherina de Swinford" type="straight"/>
+        <underline language="LA" method="pen" text="Quam post Oct. Epiphaniae desponsauit" type="straight"/>
+        <underline language="LA" method="pen" text="admirantibus facti" type="straight"/>
+        <underline language="LA" method="pen" text="Dux Lanca[ti?] reuertitur" type="straight"/>  <!-- DO: Can't really see what's going on at the end of 'Lanca..' --> <!-- FSF: not sure either -->
+        
+        <numeral place="right_margin">1</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3</numeral>
+        
+        <graph book_orientation="0" method="pen" place="right_margin" type="genealogical_tree">  <!-- DO: Not sure if this is the best way to capture this? -->
+            <node id="n1" person="John of Gaunt">Io[hann]es Dux La[n]c[astriae]</node>
+            <node id="n2">N.N.</node>
+            <node id="n3">N.N.</node>
+            <node id="n4" person="Katherine Swynford">Katharina de Swineford</node>
+            <link from="n1" relationship="has_spouse" to="n2"/>
+            <link from="n2" relationship="has_spouse" to="n1"/>
+            <link from="n1" relationship="has_spouse" to="n3"/>
+            <link from="n3" relationship="has_spouse" to="n1"/>
+            <link from="n1" relationship="has_spouse" to="n4"/>
+            <link from="n4" relationship="has_spouse" to="n1"/>
+        </graph>
+
+    </annotation> 
+</transcription>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.005r.tif" reader="John Dee" signature="Bij"/>
+    <annotation>
+        <marginalia anchor_text="corpus" hand="Italian" method="pen"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Corpus</marginalia_text>
+                </position>
+            </language>
+            <translation>Body.</translation>    
+        </marginalia>
+        
+        <marginalia anchor_text="Auss solcher ordnung nicht allein dz da ich hie von tractier sonder alle ding jr krafft empfangen haben" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota quod generaliter loquatur: de separatione in o[mn]i re exercenda</marginalia_text> 
+                </position>
+            </language>
+            <translation>Note what generally is said: about the separation in every thing to be exercised.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="keinerley sovil jr sind jren gewalt haben mögen so lang biß sy gescheiden werden." type="straight"/>
+        <underline language="DE" method="pen" text="Auß solcher ordnung nicht allein d[as] da ich hie von tractier sonder alle ding jr krafft empfangen haben" type="straight"/>
+        
+        <!-- DO: unknown drawing in left margin -->
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.124r.tif" pagination="247" reader="John Dee" signature="q 4"/> 
+    <annotation>
+        
+        <marginalia anchor_text="In rebus uerò apertis argume[n]tari tam sit stultum, quàm in clarißimu[m] solem mortale lumen inferre." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Simile.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Similar.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="probationes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Probationes</marginalia_text> 
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>παθητικαι</marginalia_text>
+                </position>
+            </language>
+            <translation>Emotional proofs.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iphicrates" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Iphicrates.</marginalia_text>
+                    <person name="Iphicrates"/>
+                </position>
+            </language>
+            <translation>Iphicrates.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="affimratione probatio est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Probatio ex affirmatione.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Proof from declaration.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pontentißima argumenta primo' ne ponenda sint loco" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pote[n]tiss[ima] argume[n]ta vbi locari conuenit.</marginalia_text> 
+                </position>
+            </language>
+            <translation>The most powerful arguments to be placed where suitable.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="enim potest iudex credere satis esse ea potentia, quae non putamus ipsi sufficere, qui dicimus." type="straight"/>
+        <underline language="LA" method="pen" text="Quaesitum etiam, potentißima argumenta primo' ne ponenda sint loco, ut occupent animos: an summo, ut inde dimittant" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

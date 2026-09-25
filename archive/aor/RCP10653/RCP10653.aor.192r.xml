@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.192r.tif" pagination="375" reader="John Dee" signature="Ii ij"/>  
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        died 950 
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                       △ Dyfnwall, ap Howel Dda eius filius, Owen, interfectus fuit a[nn]o 989. Lancarvan.
+                    </marginalia_text>
+                    <person name="Dufnal, King of South-Wales"/>
+                    <person name="Owain ap Hywel Dda"/>
+                    <location name="Llancarfan"/>
+                </position>
+            </language>
+            <translation>
+                Dufnal, King of South-Wales. Owain, the son of Hywel Dda, was killed in 989. 
+                <!-- DO: I think the Owen must be: https://en.wikipedia.org/wiki/Owain_ap_Hywel_Dda (son of Hywel and the dates match). I'm not sure who the 'Dyfnwall' refers to, possibly https://en.wikipedia.org/wiki/Dyfnwal_ab_Owain but he wasn't a son of Hywel Dda. The only sense I can make is if it just lists two unrelated people ('Dyfnwal; Owain, son of Hywel Dda, was killed in 989' but it would be a really weird way of writing it... -->
+                <!-- FSF: Could it refer to their house? House of Dinefwr? -->
+                <!--JG: See: https://books.google.co.uk/books?id=5822MoKxWncC&pg=PA136&lpg=PA136&dq=Dufnal+rege+Demetiae&source=bl&ots=VA7xdGR9Ec&sig=VQuyTL-hnv7xyMnT86iYkG4qavo&hl=en&sa=X&ved=2ahUKEwidka6CnIbfAhUYSRUIHTYkBEoQ6AEwBnoECAkQAQ#v=onepage&q=Dufnal%20rege%20Demetiae&f=false-->
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        J[ohn] d[ee]. Howel ap Ieaf ap Idewall voyle. Rex Venedotia[e]       
+                    </marginalia_text>
+                    <person name="John Dee"/>
+                    <person name="Hywel ap Ieuaf"/>
+                    <person name="Idwal Foel"/>
+                </position>
+            </language>
+            <translation>
+                John Dee. Hywel ap Ieuaf descendent of Idwal Foel, King of Gwynedd.  
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Tudwall or Ludwall
+                    </marginalia_text>
+                    <person name="Saint Tudwal"/>
+                    <person name="Hywel Dda"/>
+                </position>
+            </language>
+            <translation>
+                Saint Tudwal or Ludwall.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="regibus VValliae" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Reges Wallia[e]  
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Kings of Wales.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        King Edgar a Kingly Pilot.
+                    </marginalia_text>
+                    <person name="Edgar I of England"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Equibus mille ducentas in plaga Angliae orientali, mille .cc. in occidentali, mille .cc. in australi, mille .cc. in septentrionali pelago constituit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Classis 4800 Nauium.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                4800 ships in this fleet.   
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="corpus Aelgiuae matris Eadgari regis" type="straight"/>
+        <underline language="LA" method="pen" text="loco qui Septonia nuncupatur" type="straight"/>
+        <underline language="LA" method="pen" text="rex Pacficus" type="straight"/>
+        <underline language="LA" method="pen" text="Macone rege Monae" type="straight"/>
+        <underline language="LA" method="pen" text="Dufnal" type="grid"/>
+        <underline language="LA" method="pen" text="rege Demetiae" type="straight"/>
+        <underline language="LA" method="pen" text="Sifertho" type="straight"/>
+        <underline language="LA" method="pen" text="Hovvel regibus" type="straight"/>
+        <underline language="LA" method="pen" text="cum illis naue[m]" type="double"/>
+        <underline language="LA" method="pen" text="gubernaculum" type="straight"/>
+        <underline language="LA" method="pen" text="fluminis peritè dirigens" type="double"/>
+        <underline language="LA" method="pen" text="tu[n]c demum que[m]que" type="double"/>
+        <underline language="LA" method="pen" text="terremotus magnus totam Anglia[m] concussit" type="straight"/>
+        <underline language="LA" method="pen" text="Eadgarus Pacificus" type="straight"/>
+        <underline language="LA" method="pen" text="robustas congregauit naues" type="straight"/>
+        <underline language="LA" method="pen" text="mille ducentas" type="straight"/>
+        <underline language="LA" method="pen" text="mille .cc." type="straight"/>
+        <underline language="LA" method="pen" text="mille .cc." type="straight"/>
+        <underline language="LA" method="pen" text="praeterea" type="triple"/>
+        <underline language="LA" method="pen" text="omni tempore vitae suae" type="straight"/>
+        <underline language="LA" method="pen" text="ne pauperes à potentibus" type="straight"/>
+        <underline language="LA" method="pen" text="timor" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; amor" type="double"/>
+        <underline language="LA" method="pen" text="nummus obulum" type="straight"/>
+        <underline language="LA" method="pen" text="Kinedum" type="straight"/>
+        
+        <symbol name="Trine" place="intext"/>
+        
+        <mark method="pen" name="circumflex" place="intext"/>
+        <mark method="pen" name="circumflex" place="intext"/>
+        
+        <errata amendedtext="vt intelligeret quomodo" copytext="vt quomodo" language="LA"/>  
+         
+    </annotation>
+</transcription>

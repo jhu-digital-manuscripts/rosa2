@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.181v.tif" pagination="362" reader="John Dee" signature="[z 5[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="ornatus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ornatus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Ornament.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uicina uitutibus uitia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vicina virtutib[us] vitia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Vices and virtues are close neighbours.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quincunce" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quincunx.</marginalia_text>
+                </position>
+            </language>
+            <translation>Quincunx.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Decentior equus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Decorus equus.</marginalia_text>
+                </position>
+            </language>
+            <translation/>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="demonstratiuis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Demonstratiui g[e]n[er]is ornatus</marginalia_text> 
+                    <!-- FSF: I am not sure, but I don't think this is quis; Dee's q's are usually very straight; to me this looks more like a g; also, there is an abbreviation sign over what you think is a u; taking all this into account, I think it is g[e]n[er]is -->
+                </position>
+            </language>
+            <translation>I have demonstrated the origin of ornament.</translation> 
+        </marginalia>
+
+        <underline language="LA" method="pen" text="uirilis, fortis, &amp; sanctus sit" type="straight"/>
+        <underline language="LA" method="pen" text="parte sint uicina uirtutibus uitia, etiam qui uitijs utuntur, uirtutis tame[n] his nomen imponant" type="straight"/>
+        <underline language="LA" method="pen" text="esse cultè dicentibus" type="straight"/>
+        <underline language="LA" method="pen" text="etiam fructiferis adhibendus" type="straight"/>
+        <underline language="LA" method="pen" text="ferro coërcebo" type="straight"/>
+        <underline language="LA" method="pen" text="Nunquàm uera species ab utilitate diuiditur. Sed" type="straight"/>
+        <underline language="LA" method="pen" text="ornatus pro" type="straight"/>
+        <underline language="LA" method="pen" text="sentenijs populare" type="straight"/>
+        <underline language="LA" method="pen" text="nitidum, figuris iucundum, translationibus magnificum, compositione elaboratum, uelut institor quidam" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.050r.tif" pagination="419" reader="Harvey"/>	<!-- ABO 54right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="FR">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Politique Monsiuer Bodine (ô simple Bodine)
+					</marginalia_text>
+					<person name="Jean Bodin"/>
+				</position>
+			</language>
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						died in the streets
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						for want.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Political Mr. Bodin (O simple Bodin) died in the streets for want.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Doctor neutriusq[ue] Juris.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A doctor of neither law. 
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						{ Rara auis in terris.
+					</marginalia_text>
+					<X-ref book_title="Satires" language="LA" person="Juvenal" text="Rara auis in terris."/>
+				</position>
+			</language>
+			<translation>
+				"A person of rarity in the world."
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						scitè, et profundè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Knowingly, and profoundly.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						The Mirrour of Ciuil humanitie, &amp; deepe Patience.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Quale meritu[m], tale pra[e]mium.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Just as the merit, so the reward.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Carlo Visconte, a fine humanist, &amp;
+						cunning Ciuilian.
+					</marginalia_text>
+					<person name="Carlo Visconti"/>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						( Neologus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Neologism.
+			</translation>
+		</marginalia>
+		
+		<!-- Orientation 90 -->
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						A great world abrode, is not Worth a little World at home.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		
+		<!-- Orientation 270 -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Vir serius, qui pendet à Seipso; et homo foelix. Nam mihi crede,
+						credendum Nemini: et cum maximè opus amicis, amicus est nullus.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				A man who depends on himself is a serious and happy person. But, trust me: believe in 
+				no one; and especially when friends are needed. A friend is nothing.
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="insolenza di quella pecora" type="straight"/>
+		<underline language="LA" method="pen" text="neutrius Sicilia[e]" type="straight"/>
+		<underline language="IT" method="pen" text="Discorreuasi in" type="straight"/>
+		<underline language="IT" method="pen" text="alcuni galant'huomini nobili" type="straight"/>
+		<underline language="IT" method="pen" text="poco honoreuole" type="straight"/>
+		<underline language="IT" method="pen" text="per non dire cosa uituperosa" type="straight"/>
+		<underline language="IT" method="pen" text="il dir male d'altri" type="straight"/>
+		<underline language="IT" method="pen" text="in assenza" type="straight"/>
+		<underline language="IT" method="pen" text="uero" type="straight"/>
+		<underline language="IT" method="pen" text="Parasito litterato" type="straight"/>
+		<underline language="IT" method="pen" text="biasimaua sempre" type="straight"/>
+		<underline language="IT" method="pen" text="massimamente i grandi, e i buoni" type="straight"/>
+		<underline language="IT" method="pen" text="rinomea" type="straight"/>
+		<underline language="IT" method="pen" text="Carlo Visconte" type="straight"/>
+		<underline language="IT" method="pen" text="caualier nobilissimo" type="straight"/>
+		<underline language="IT" method="pen" text="Vescouo di Vintimiglia" type="straight"/>
+		<underline language="IT" method="pen" text="sua rarissime" type="straight"/>
+		<underline language="IT" method="pen" text="dignissimo di molto piu alto" type="straight"/>
+		<underline language="IT" method="pen" text="me piu tosto" type="straight"/>
+		<underline language="IT" method="pen" text="farei bene a chi si sia" type="straight"/>
+		<underline language="IT" method="pen" text="non lo meriti" type="straight"/>
+		<underline language="IT" method="pen" text="dicessi male d'un mio nemico" type="straight"/>
+		<underline language="IT" method="pen" text="Generoso" type="straight"/>
+		<underline language="IT" method="pen" text="buona femina" type="straight"/>
+		<underline language="IT" method="pen" text="suo innamorato" type="straight"/>
+		<underline language="IT" method="pen" text="incominciaua a inuecchiarsi" type="straight"/>
+		<underline language="IT" method="pen" text="diuentare auaro" type="straight"/>
+		<underline language="IT" method="pen" text="uno scudo per uolta" type="straight"/>
+		<underline language="IT" method="pen" text="darle piu che due giuli" type="straight"/>
+		<underline language="IT" method="pen" text="atto di confortarla" type="straight"/>
+		<underline language="IT" method="pen" text="io uentrerò" type="straight"/>
+		<underline language="IT" method="pen" text="maleuadore per lui" type="straight"/>
+		<underline language="IT" method="pen" text="pagaua di scudi" type="straight"/>
+		<underline language="IT" method="pen" text="solo di doppioni" type="straight"/>
+		<underline language="IT" method="pen" text="Arguto, &amp; pronto" type="straight"/>
+		<underline language="IT" method="pen" text="bello intelletto" type="straight"/>
+		
+		<underline language="LA" method="chalk" text="neutrius Sicilia[e]" type="straight"/>
+		<underline language="IT" method="chalk" text="un Parasito litterato" type="straight"/>
+		<underline language="IT" method="chalk" text="biasimata sempre" type="straight"/>
+		<underline language="IT" method="chalk" text="rinomea" type="straight"/>
+		<underline language="IT" method="chalk" text="dignissimo di molto piu alto grado, disse; Io per me piu tosto farei bene a chi si sta, anchora che non lo meriti, che io dicessi male d'un mio nemico" type="straight"/>
+		<underline language="IT" method="chalk" text="maleuadore per lui: &amp; prometterò, che dou'egli per l'adietro ui pagaua di scudi" type="straight"/>
+		<underline language="IT" method="chalk" text="solo di doppioni" type="straight"/>
+		
+		<!-- Symbols -->
+		<symbol name="Sun" place="left_margin"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- Sicilia[e] -->
+		<mark method="pen" name="horizontal_bar" place="right_margin"/> <!-- Sicilia[e] -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- no -->
+		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- massimamente -->
+		<mark language="IT" method="pen" name="quotation_mark" place="right_margin" text="biasimaua sempre"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!-- nobilis -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- raris -->
+		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- si sia -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- trastul -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Per -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- litte -->
+		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- per l'a -->
+		
+	    	<!-- Left margin -->
+	    <mark method="pen" name="bracket" place="left_margin"/> <!-- tendosi ... ra -->
+		<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- in assenza -->
+		<mark language="IT" method="pen" name="plus_sign" place="left_margin" text="massimamente i grandi, e i buoni"/> 
+		<mark language="IT" method="pen" name="straight_quotation_mark" place="left_margin" text="dignissimo di molto piu alto"/>
+		<mark method="pen" name="bracket" place="left_margin"/> <!-- to ... nemico -->
+		<mark method="pen" name="vertical_bar" place="left_margin"/> <!-- maleuadore .. suo -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="galant'huomini"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="il dir male d'altri"/>
+	    <mark method="pen" name="dot" place="intext"/> <!-- assenza, & -->
+		<mark method="pen" name="comma" place="intext"/> <!-- litterato il -->
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Vescouo"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="sue rarissime"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- grado, disse -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="bene"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- meriti, che -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- dicessi male -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Generoso"/>
+		<mark language="IT" method="pen" name="straight_quotation_mark" place="intext" text="inuecchiarsi"/>
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- uno scudo -->
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- due giuli -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="scudi"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="doppioni"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Arguto"/>
+
+    </annotation>
+</transcription>

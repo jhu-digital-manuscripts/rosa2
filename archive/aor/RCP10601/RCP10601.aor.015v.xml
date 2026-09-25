@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.015v.tif" pagination="30" reader="John Dee"/>
+    <annotation>
+        
+       <marginalia anchor_text="Cabalam" hand="Italian">
+           <language ident="LA">
+               <position book_orientation="0" place="left_margin">
+                   <marginalia_text>Cabala</marginalia_text>
+               </position>
+           </language>
+           <translation>Kabbalah.</translation>
+       </marginalia>
+        
+        <marginalia anchor_text="numerat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Numeri.</marginalia_text>
+                </position>
+            </language>
+            <translation>Numbers.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Chaldaica coepit Arabica dici" type="straight"/>
+        <underline language="LA" method="pen" text="quam Cabalam" type="straight"/>
+        <underline language="LA" method="pen" text="Marochi" type="straight"/>
+        <underline language="LA" method="pen" text="Tunicij" type="straight"/>
+        <underline language="LA" method="pen" text="Alcachirae" type="straight"/>
+        <underline language="LA" method="pen" text="charactere Graeco &amp; Latino" type="straight"/>
+        <underline language="LA" method="pen" text="Ebged" type="straight"/>
+        <underline language="LA" method="pen" text="totus Oriens à literarum" type="straight"/>
+        
+    </annotation>
+</transcription>

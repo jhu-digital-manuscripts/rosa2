@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.153v.tif" pagination="306" reader="John Dee" signature="[u[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Horte[n]sius co[n]sul futurus, incidere. Et in ipsis actionibus primum ac pontentißimum obtinet locum." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Consilij officiu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>The duty of counsel.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="consilium Demostheneis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Consiliu[m] demosthenis.</marginalia_text>
+                    <person name="Demosthenes"/>
+                </position>
+            </language>
+            <translation>Demosthenes' counsel.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pro Cluentio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Clue[n]tio</marginalia_text>
+                    <book title="Pro Cluentio"/>
+                </position>
+            </language>
+            <translation>Pro Cluentio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Milone" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Milone.</marginalia_text>
+                    <book title="Pro Milone"/>
+                </position>
+            </language>
+            <translation>Pro Milone.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="faciles habuit aures" type="straight"/>
+        <underline language="LA" method="pen" text="nondum praemollitas iudicum me[n]tes" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

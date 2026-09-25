@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.021r.tif" pagination="21" reader="John Dee" signature="E"/> 
+    <annotation>
+        
+        <marginalia anchor_text="componitur" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Compositum nostru[m] ☉ ☾
+                    </marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                </position>
+            </language>
+            <translation>Our composition. Sun and moon.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="rubicu[n]dissimum Stagnum; Sale elebró elementaribus naturis rubificatis; primam Materiam artis" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        stagnu[m] rubicundissimu[m] sal elebrot Elementares n[atur]a[e] rubificat[es] Materia p[ri]ma Artis } ide[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Very ruddy stagnant water, Salpeter, natural red elements, first material of science } the same.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="interue[n]tu Arg. uiui, calidaeq[ue] Aquae" type="straight"/>
+        <underline language="LA" method="pen" text="Aquam albificantem ipsius domini Regis metallorum" type="straight"/>
+        <underline language="LA" method="pen" text="Fumi albi" type="straight"/>
+        <underline language="LA" method="pen" text="cum proportione suae" type="straight"/>
+        <underline language="LA" method="pen" text="componitur" type="straight"/>
+        <underline language="LA" method="pen" text="post nigrificationem" type="double"/>
+        <underline language="LA" method="pen" text="rubicu[n]dissimum Stagnum" type="straight"/>
+        <underline language="LA" method="pen" text="cum Sale elebrot" type="straight"/>
+        <underline language="LA" method="pen" text="elementaribus naturis rubificatis" type="straight"/>
+        <underline language="LA" method="pen" text="primam Materiam" type="straight"/>
+        <underline language="LA" method="pen" text="dictorum elementorum commistorum" type="double"/>
+        
+        <symbol name="Sun" place="right_margin"/>
+        
+    </annotation>
+</transcription>

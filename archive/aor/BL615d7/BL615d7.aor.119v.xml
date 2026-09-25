@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.119v.tif" pagination="[119v]" reader="John Dee" signature="[Pvij[v]]"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="Adamanai" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Adamania , for Adam and Eue. as Saona and Mona wer first [iles] named</marginalia_text>  <!-- DO: not sure about the last two words --> 
+                    <!-- MB: I read 'named' too but uncertain about the word preceding that.--> <!--JG: Not entirely sure either-->
+                    <person name="Adam"/>
+                    <person name="Eve"/>
+                    <location name="Saona Island"/>
+                    <location name="Mona Island"/>
+                    <emphasis method="pen" text="Adam and Eue" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="vn pesce, grande, come vna Balena" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A monstruous fish.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="XV" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>XIIII</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Adamanai" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Adamanai Isola.</marginalia_text>  
+                    <location name="Saona Island"/>
+                    <location name="Mona Island"/>
+                </position>
+            </language>
+            <translation>Adamanai Island.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Isoletta" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Isoletta.</marginalia_text> 
+                </position>
+            </language>
+            <translation>An islet.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="l'Eclissi della Luna" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Eclipsis Luna[e]</marginalia_text>  
+                </position>
+            </language>
+            <translation>A lunar eclipse.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="di V hore, &amp; XXIII minuti" hand="Italian" id="BL615d7:615_d_7_f119v:m0001" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>The difference of longitude</marginalia_text>  
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Jo[ha]n[n]es de Regio monte ponit hanc eclips[em] die 14. hor[ae] 19 m[inutae] 45 ad meridia[m] vt mense[m]. Iste verò ponit die 15 nocte.</marginalia_text> 
+                    <person name="Regiomontanus"/>
+                </position>
+            </language>
+            <translation>Regiomontanus sets this eclipse on the fourteenth day, nineteenth hour, 45 minutes, toward midday, as the month. Actually, he places [it] in the night of the fifteenth day.</translation>  <!--JG: Unsure abt translation-->
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="armati di archi, &amp; saette auuelenate" type="straight"/>
+        <underline language="IT" method="pen" text="legare i Christiani" type="straight"/>
+        <underline language="IT" method="pen" text="hauea sul collo vna gran" type="straight"/>
+        <underline language="IT" method="pen" text="come vna botte" type="straight"/>
+        <underline language="IT" method="pen" text="come di Tono" type="straight"/>
+        <underline language="IT" method="pen" text="lunga, co[n] due ali assai" type="straight"/>
+        <underline language="IT" method="pen" text="che il tempo volea mutarsi" type="straight"/>
+        <underline language="IT" method="pen" text="parte Orientale" type="straight"/>
+        <underline language="IT" method="pen" text="vicina a lei" type="straight"/>
+        <underline language="IT" method="pen" text="Adamanai" type="straight"/>
+        <underline language="IT" method="pen" text="Isoletta" type="straight"/>
+        <underline language="IT" method="pen" text="ch'è tramendue" type="double"/>
+        <underline id="BL615d7:615_d_7_f119v:u0001" language="IT" method="pen" text="di V hore" type="double"/>
+        <underline language="IT" method="pen" text="&amp; XXIII" type="straight"/>
+        <underline language="IT" method="pen" text="a' XX del" type="straight"/>    
+        
+        
+        <mark method="pen" name="double_vertical_bar" place="left_margin"/>
+        
+        <mark method="pen" name="equal_sign" place="right_margin"/>  <!-- chiamauano -->
+        
+        <errata amendedtext="[deleted]" copytext="XV" language="IT"/>
+        
+        <physical_link>
+            
+            <marginal_annotation idref="BL615d7:615_d_7_f119v:m0001"/>
+            
+            <marginal_annotation idref="BL615d7:615_d_7_f119v:u0001"/>
+            
+            <relation from="BL615d7:615_d_7_f119v:u0001" to="BL615d7:615_d_7_f119v:m0001" type="directed"/>
+            
+        </physical_link>
+        
+    </annotation>
+</transcription>

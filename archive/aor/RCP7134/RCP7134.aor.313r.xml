@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.313r.tif" pagination="306" reader="John Dee" signature="hhh ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Mars est in linea finitoris ascendentis, erit magnus, ac in professione sua inuictus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>♂ in Ascende[n]te, in sua professione invictu[m] reddit.</marginalia_text>
+                    <symbol_in_text name="Mars"/>
+                </position>
+            </language>
+            <translation>Mars in the ascendant, returns unconquered in its profession.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mars est in linea finitoris ascendentis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>♂ in asce[n]de[n]te</marginalia_text>
+                    <symbol_in_text name="Mars"/>
+                </position>
+            </language>
+            <translation>Mars in the ascendant.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Luna est cum corde Scorpij" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>☾ cu[m] corde ♏</marginalia_text>
+                    <symbol_in_text name="Moon"/> 
+                    <symbol_in_text name="Scorpio"/>
+                </position>
+            </language>
+            <translation>The Moon with the heart of Scorpio.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vllo modo vtit[u]r Schonerus [pro] Libro de Judicijs.</marginalia_text>  
+                    <person name="Johannes Schoner"/>
+                    <book title="De iudicijs Natiuitatum libri tres"/>
+                </position>
+            </language>
+            <translation>Schoner uses any way for his book 'on judgements'.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quia Venus est in coeli medio, significat in quadrato Martis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Talem □ in mea genitura habeba[m]</marginalia_text>
+                    <symbol_in_text name="Square"/>
+                </position>
+            </language>
+            <translation>As I have had such a square in my geniture.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="coniugium" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Coniugium.</marginalia_text>
+                </position>
+            </language>
+            <translation>A marriage.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="status declarat, eum futurum omnibus notum, ut" type="straight"/>
+        <underline language="LA" method="pen" text="ac in maximis rebus uersaturum" type="straight"/>
+        <underline language="LA" method="pen" text="ascendentis, erit magnus, ac in profeßione sua inuictus, est autem" type="straight"/> 
+        <underline language="LA" method="pen" text="sua profeßio" type="straight"/> 
+        <underline language="LA" method="pen" text="in carceribus, &amp; ex hoc potest uersificari exquisitum" type="straight"/>
+        <underline language="LA" method="pen" text="quia Venus est in coeli medio, significat in quadrato Martis, multa &amp; magna circa actus Venereos" type="straight"/>
+        
+    </annotation>
+</transcription>

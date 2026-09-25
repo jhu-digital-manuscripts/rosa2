@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.425r.tif" pagination="399" reader="John Dee" signature="Llll ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Thomas Turbeuile" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Thomas Turbeuile Proditor.
+                    </marginalia_text>
+                    <person name="Thomas Turbeville"/>
+                </position>
+            </language>
+            <translation>
+                The traitor Thomas Turbeville.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="duos filios" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Duo filij Thoma[e] Turbeville.
+                    </marginalia_text>
+                    <person name="Thomas Turbeville"/>
+                </position>
+            </language>
+            <translation>
+                Two sons of Thomas Turbeville.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tali ergo iudicio condemnatur" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Condemnatio Thoma[e] Turbeuile
+                    </marginalia_text>
+                    <person name="Thomas Turbeville"/>
+                </position>
+            </language>
+            <translation>
+                The condemnation of Thomas Turbeville.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Thomas Turbeuile" type="double"/>
+        <underline language="LA" method="pen" text="Rion" type="double"/>
+        <underline language="LA" method="pen" text="illi regnum Angliae proditionaliter" type="straight"/>
+        <underline language="LA" method="pen" text="duos filios suos" type="straight"/>
+        <underline language="LA" method="pen" text="eos callidè circumuenire" type="straight"/>
+        <underline language="LA" method="pen" text="Fra[n]cigenae principe[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Scoti &amp; Galli hinc inde insidiosè" type="straight"/>
+        <underline language="LA" method="pen" text="insulam bellatoribus suis destitutam inuaderent. Nec" type="straight"/>
+        <underline language="LA" method="pen" text="quomodo" type="straight"/>
+        <underline language="LA" method="pen" text="caute[m]" type="double"/>
+        <underline language="LA" method="pen" text="&amp; infirmiora Franciae didicisset" type="straight"/>
+        <underline language="LA" method="pen" text="latuit" type="double"/>
+        <underline language="LA" method="pen" text="de omni consilio &amp; ordinatione regni certificaretur" type="straight"/>
+        <underline language="LA" method="pen" text="Tali ergo" type="straight"/>
+        <underline language="LA" method="pen" text="bouis stratus" type="straight"/>
+        <underline language="LA" method="pen" text="interpolatis, improperantibus ei conuitia exprobrantur" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.078r.tif" pagination="155" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="prooemio uideo non uitque opus esse suasorijs, propter" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Suasoria[e] no[n] egent proo[e]mio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Declamations do not need a prelude.</translation> <!-- M.B. I noticed some translations retain the Latin term suasoriae, I've opted for declamation here although there is no real satisificactory English equivalent to this term.-->
+        </marginalia>
+        
+        <marginalia anchor_text="uerba rebus aptentur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>verba reb[u]s apta[n]da</marginalia_text>
+                </position>
+            </language>
+            <translation>Words are to be adapted to things.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Theophrastus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Theophrastus.</marginalia_text>
+                    <person name="Theophrastus"/>
+                </position>
+            </language>
+            <translation>Theophrastus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Ego porrò ut prooemio uideo non utique opus esse suasorijs, propter quas dixi suprà" type="straight"/>
+        <underline language="LA" method="pen" text="si modò est sanus, non quaeritet, sed quàm maximè potest ciuili &amp; humano ingressu, mereri assensum deliberantis uelit" type="straight"/>
+        <underline language="LA" method="pen" text="no[n] tumultuosius atq[ue] turbidius. Verborum" type="straight"/>
+        <underline language="LA" method="pen" text="uerba rebus aptentur, ipso" type="straight"/>
+        
+    </annotation>
+</transcription>

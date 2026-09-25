@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.010v.tif" pagination="[10[r]]" reader="John Dee" signature="[Cij[v]]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian" id="NYSLWin188:00000034:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Elementoru[m] Corpora Natura. Essentia. Spiritus.
+                   </marginalia_text>
+                </position>
+            </language>
+            <translation>Of the elements. Substances. Nature. Essence. Spirit.</translation> <!--JG: Not sure about best translation of 'spiritus'. Seems related to the German word 'Geist', which can mean spirit/ghost, but also mind/intellect--> <!--KS: I would stick with 'spirit', as it corresponds better with the rest of the marginal note.-->
+        </marginalia>
+        
+        <marginalia anchor_text="vnd das leben ist der Geist vnd das leben vnd der Geist wircken alle ding seindt aber ein ding vnd nicht zwey" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Spiritus, Vitaq[ue] res vna</marginalia_text>
+                </position>
+            </language>
+            <translation>Spirit and life are one thing.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="das kompt vom Element" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quando aliquid d[icitu]r ex Eleme[n]to oriri, quo mo[d]o Intellige]ndu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>When something is said to originate from an element, in what way must it be understood?</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vier Seel oder Geist" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quatuor A[n]i[m]a[e] Vita[e], spiritusq[ue] Eleme[n]toru[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>Four of the elements of the mind, life, and spirit.</translation> <!--JG: Not entirely sure--> <!--KS: It feels like Dee's missing a word here...-->
+        </marginalia>
+        
+        <underline id="NYSLWin188:00000034:u0001" language="DE" method="pen" text="wesen" type="double"/>
+        <underline language="DE" method="pen" text="natur" type="double"/>
+        <underline language="DE" method="pen" text="sie Geiste" type="double"/>
+        <underline language="DE" method="pen" text="ist nienen" type="straight"/>
+        <underline language="DE" method="pen" text="lebendig" type="straight"/>
+        <underline language="DE" method="pen" text="Geist ist lebendig" type="straight"/>
+        <underline language="DE" method="pen" text="leben ist der Geist" type="straight"/>
+        <underline language="DE" method="pen" text="das leben vnd der Geist wircken alle ding" type="straight"/>
+        <underline language="DE" method="pen" text="seindt aber ein ding vnd nicht" type="double"/>
+        <underline language="DE" method="pen" text="kompt vom Element" type="double"/>
+        <underline language="DE" method="pen" text="Element vnd nicht vom Corpus" type="straight"/>
+        <underline language="DE" method="pen" text="fleisch an jm" type="straight"/>
+        <underline language="DE" method="pen" text="das Corpus alle ding zuthun vermeint" type="straight"/>
+        <underline language="LA" method="pen" text="Corpus" type="straight"/>
+        <underline language="DE" method="pen" text="der Geist" type="straight"/>
+        <underline language="DE" method="pen" text="vier Seel oder" type="straight"/>
+        <underline language="DE" method="pen" text="Geist" type="straight"/>
+        <underline language="DE" method="pen" text="also" type="double"/>
+        <underline language="DE" method="pen" text="ist auch sein" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- wachst ist -->
+        
+        <physical_link>
+            <marginal_annotation idref="NYSLWin188:00000034:m0001"/>
+            <marginal_annotation idref="NYSLWin188:00000034:u0001"/>
+            
+            <relation from="NYSLWin188:00000034:m0001" to="NYSLWin188:00000034:u0001" type="directed"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

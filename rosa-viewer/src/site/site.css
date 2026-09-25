@@ -1,0 +1,150 @@
+/*
+ * Shared layout for the rosa-viewer sites: a slim branded header above a
+ * Mirador workspace that fills the rest of the viewport.
+ *
+ * Each site sets the --rosa-* variables in its own sites/<site>/site.css.
+ */
+
+:root {
+  --rosa-font-display:
+    'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, 'Times New Roman',
+    serif;
+  --rosa-font-body:
+    system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  --rosa-header-bg: #26221f;
+  --rosa-header-fg: #f3ede2;
+  --rosa-header-muted: rgba(243, 237, 226, 0.72);
+  --rosa-title-color: var(--rosa-header-fg);
+  --rosa-accent: #8a2b21;
+  --rosa-page-bg: #f4f0e8;
+  --rosa-banner-fallback: #3a332d;
+  --rosa-banner-height: 64px;
+  --rosa-header-height: 56px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: var(--rosa-page-bg);
+  font-family: var(--rosa-font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Header ------------------------------------------------------------------ */
+
+.rosa-site-header {
+  flex: none;
+  background: var(--rosa-header-bg);
+  color: var(--rosa-header-fg);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+/* Manuscript strip, filled in from the IIIF Image API by applySiteBranding(). */
+.rosa-site-banner {
+  display: none;
+  height: var(--rosa-banner-height);
+  background-color: var(--rosa-banner-fallback);
+  background-image: var(--rosa-banner-image);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: 3px solid var(--rosa-accent);
+}
+
+html.rosa-has-banner .rosa-site-banner {
+  display: block;
+}
+
+.rosa-site-bar {
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+  min-height: var(--rosa-header-height);
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.rosa-site-title {
+  font-family: var(--rosa-font-display);
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--rosa-title-color);
+  text-decoration: none;
+  line-height: var(--rosa-header-height);
+  white-space: nowrap;
+}
+
+.rosa-site-title:hover,
+.rosa-site-title:focus-visible {
+  color: var(--rosa-header-fg);
+  text-decoration: underline;
+  text-decoration-color: var(--rosa-accent);
+  text-underline-offset: 6px;
+}
+
+.rosa-site-tagline {
+  font-family: var(--rosa-font-display);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--rosa-header-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rosa-site-links {
+  margin-left: auto;
+  display: flex;
+  gap: 22px;
+}
+
+.rosa-site-links a {
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--rosa-header-muted);
+  text-decoration: none;
+}
+
+.rosa-site-links a:hover,
+.rosa-site-links a:focus-visible {
+  color: var(--rosa-header-fg);
+}
+
+/* Viewer ------------------------------------------------------------------ */
+
+#rosa-viewer {
+  flex: 1 1 auto;
+  min-height: 0;
+  position: relative;
+}
+
+@media (max-width: 720px) {
+  :root {
+    --rosa-banner-height: 40px;
+  }
+
+  .rosa-site-bar {
+    padding: 0 16px;
+    gap: 12px;
+  }
+
+  .rosa-site-title {
+    font-size: 1.05rem;
+    letter-spacing: 0.1em;
+  }
+
+  .rosa-site-tagline {
+    display: none;
+  }
+}

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.111v.tif" reader="Harvey" signature="[Nviii[v]]"/>
+                                
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Pravum Cor hominis, et inscrutabile.</marginalia_text>
+                    <X-ref book_title="Book of Jeremiah" language="LA" person="Jeremiah" text="Pravum Cor hominis, et inscrutabile."/>
+                </position>
+            </language>
+            <translation>"The heart of men is perverse and unsearcheable."</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Politica[e] Ironia[e], pragmaticè, ueteratorieq[ue],
+                    </marginalia_text>
+                    <emphasis method="pen" text="Politica[e] Ironia[e]" type="straight"/>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>dissimulata[e]; incredibile,
+                    sa[e]pe effectus operantur.</marginalia_text>
+                </position>
+            </language>
+            <translation>Political ironies, having been disguised pragmatically and cunningly, often work to great effect.</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tiberius Imp. aliud semper pra[e]tendebat: aliud inte[n]debat.</marginalia_text>
+                    <person name="Tiberius"/>
+                </position>
+            </language>
+            <translation>Emperor Tiberius always pretended one thing and intended another.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Socrates, Gra[e]coru[m] Sophistas, pla[e]ru[m]q[ue] laudabat
+                        </marginalia_text>
+                    <person name="Socrates"/>
+                    <emphasis method="pen" text="Socrates" type="straight"/>
+                    </position>
+                </language>
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ὑπερβολικῶς.
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Solinus tradit, quasdam in terra Aphrica familias hominum, voce, linguaq[ue] effascinare:
+                        qua[e] si impensiùs fortè laudauerint pulchras</marginalia_text>
+                    <person name="Solinus"/>
+                    <emphasis method="pen" text="laudabat" type="straight"/>
+                    <emphasis method="pen" text="familias hominum" type="straight"/>
+                    <emphasis method="pen" text="voce, linguaq[ue]" type="straight"/>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Arbores; Segetes la[e]tiores; infantes ameniores;</marginalia_text>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Egregios Equos;</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>pecudes pastu, atq[ue]</marginalia_text>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>cultu opimas:</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>ea[e]dem derepentè emoriunt[u]r.</marginalia_text>
+                </position>
+            </language>
+            <translation>Socrates often praised the Greek sophists hyperbolically.
+            Solinus related that in Africa certain families of men work spells by voice and tongue, who, if they would exceedingly and strongly praise beautiful trees,
+            abounding crops, more pleasant children, and exceptional horses; by feeding sheep and by cultivating abundance: the same families would die out suddenly. </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Faber, bysshop of Vien,
+                    gaue Simon Grineaus, Melanchtons Companion, fayer wordes of familiar conference, and gentle interteinement
+                    [the] next day, in most curtuous manner: intending that uery night to make him fast, and pra[e]sently
+                    dispatching Sergeants for his imprisonment,
+                    by [the] kings commandiment:</marginalia_text>
+                    <person name="Johann Faber"/>
+                    <person name="Simon Grynaeus"/>
+                    <person name="Philipp Melanchthon"/>
+                    <location name="Vienna"/>
+                    <X-ref book_title="Book of martyrs" person="John Foxe"/> <!--JG: Harvey seems to have paraphrased this from Foxe's 'Book of Martyrs' which contains a history of Simon Grinaeus.-->
+                    <emphasis method="pen" text="fayer wordes" type="straight"/>
+                    <emphasis method="pen" text="that uery night to make him fast" type="straight"/>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>if Grineus had not immediatly pra[e]ventid his suttle praectise,
+                    upon A suddain incling thereof, by an auncient owld man unknowen: who assurid him,
+                    what woold be [the] end of Fabers goodly counterfayt glozinge.</marginalia_text> 
+                    <emphasis method="pen" text="Grineus had not immediatly" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>In malis uinci, malu[m] est.</marginalia_text>
+                    <X-ref book_title="Phoenissae" language="LA" person="Seneca" text="In malis uinci, malu[m] est."/>
+                </position>
+            </language>
+            <translation>"To be defeated amidst bad things, is evil."</translation> <!--JG: There exist various variants (and hence translations) of this sentence-->
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Gabriel Haruey.</marginalia_text>
+                    <person name="Gabriel Harvey"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Preciu[m] 2 [xxd] <!--JG: Unsure, seems as if two things have been written on top of each other-->
+                    Mese Maio. 1578.</marginalia_text>
+                </position>
+            </language>
+            <translation>Price: 2 [20 pence]. May, 1578.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="Peyne and drede chastyseth" type="straight"/>
+        <underline language="EN" method="pen" text="settynge forwarde" type="straight"/>
+        <underline language="EN" method="pen" text="hope and mede maketh" type="straight"/>
+        <underline language="EN" method="pen" text="Good capitayns neuer fyght in a pight fielde" type="straight"/>
+        <underline language="EN" method="pen" text="dryuen" type="straight"/>
+        <underline language="EN" method="pen" text="sodeyne happe" type="straight"/>
+        <underline language="EN" method="pen" text="great nede" type="straight"/>
+        <underline language="EN" method="pen" text="to greue" type="straight"/>
+        <underline language="EN" method="pen" text="with hu[n]ger" type="straight"/>
+        <underline language="EN" method="pen" text="wepon" type="straight"/>
+        <underline language="EN" method="pen" text="thyne enmie knowe" type="straight"/>
+        <underline language="EN" method="pen" text="with what" type="straight"/>
+        <underline language="EN" method="pen" text="ordinaunce" type="straight"/>
+        <underline language="EN" method="pen" text="what maner wyse" type="straight"/>
+        <underline language="EN" method="pen" text="intendest to assayl him" type="straight"/>
+        
+        <symbol name="SS" place="head"/>
+        
+        <mark language="LA" method="pen" name="hash" place="head" text="Pravum Cor hominis, et inscrutabile."/>
+        <mark method="pen" name="X_sign" place="head"/>
+        <mark method="pen" name="X_sign" place="head"/>
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="Peyne and drede chastyseth"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="familias hominum"/>
+        <mark method="pen" name="page_break" place="left_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="tail"/>
+        <mark method="pen" name="horizontal_bar" place="tail"/>
+        
+        <mark language="EN" method="pen" name="X_sign" place="right_margin" text="Peyne and drede chastyseth"/>
+        
+        <mark method="pen" name="plus_sign" place="intext"/> <!--lye styl-->
+        <mark method="pen" name="dot" place="intext"/> <!--styl, in-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="settynge forwarde"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="hope"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="mede"/>
+        <mark language="EN" method="pen" name="X_sign" place="intext" text="hope and mede maketh"/>
+        <mark method="pen" name="X_sign" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Good capitayns neuer fyght in a pight fielde"/>
+        <mark method="pen" name="comma" place="intext"/> <!--happe or-->
+        <mark method="pen" name="X_sign" place="intext"/>
+        <mark method="pen" name="X_sign" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="with hu[n]ger"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="knowe"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="what"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="ordinaunce"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="what maner wyse"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="how"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="p[re]pare"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="X_sign" place="intext"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/> <!--under marginal note-->
+        
+    </annotation>
+</transcription>

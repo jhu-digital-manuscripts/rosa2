@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.038r.tif" pagination="59" reader="Harvey"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        stratagema, apud Frontinum, et Polya[e]num frequens.
+                    </marginalia_text>
+                    <person name="Frontinus"/>
+                    <person name="Polyaenus"/>
+                </position>
+            </language>
+            <translation>A tactic regularly [discussed] in Frontinus and Polyaenus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ea res maturam iam seditione[m], ac propè eru[m]pentem" type="straight"/>
+        <underline language="LA" method="pen" text="quàm perfusis uano timpore Romanis, citato" type="straight"/>
+        <underline language="LA" method="pen" text="ibi ex insidijs propè magna accepta" type="straight"/>
+        <underline language="LA" method="pen" text="uirtus militum" type="straight"/>
+        <underline language="LA" method="pen" text="negligentia consulis" type="straight"/>
+        <underline language="LA" method="pen" text="pacis aliquid" type="straight"/>
+        <underline language="LA" method="pen" text="aliàs, solicitae certamine patru[m] &amp; plebis" type="straight"/>
+        <underline language="LA" method="pen" text="Volscis respublica" type="straight"/>
+        <underline language="LA" method="pen" text="egregriè gesta" type="straight"/>
+        <underline language="LA" method="pen" text="cùm ducis" type="straight"/>
+        <underline language="LA" method="pen" text="militum opera" type="straight"/>
+        <underline language="LA" method="pen" text="ni salubri mendacio consul fugere" type="straight"/>
+        <underline language="LA" method="pen" text="altero clamitans concitasset" type="straight"/>
+        <underline language="LA" method="pen" text="impetu facto, dum se puta[n]t uincere, uicêre" type="straight"/>
+        <underline language="LA" method="pen" text="uelut tactitis inducijs utrinq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="Hernicorum cohortem in statione[m]" type="straight"/>
+        <underline language="LA" method="pen" text="cornicines tubicinesq[ue] in equos impositos canere" type="straight"/>
+        <underline language="LA" method="pen" text="solicitu[m]q[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="hoste[m] ad lucem tenere" type="straight"/>
+        <underline language="LA" method="pen" text="reliquu[m] noctis adeò tranquilla" type="straight"/>
+        <underline language="LA" method="pen" text="Volscos species armatorum" type="straight"/>
+        <underline language="LA" method="pen" text="intentos uelut ad impetum" type="straight"/>
+        <underline language="LA" method="pen" text="Romanus integer satiatusq[ue] somno, productus in aciem, fessum stando" type="straight"/>
+        <underline language="LA" method="pen" text="uigilijs Volscu[m] primo impetu perculit" type="straight"/>
+        <underline language="LA" method="pen" text="quanqua[m] cessere magis, quàm pulsi" type="straight"/>
+        <underline language="LA" method="pen" text="ad iniquu[m] locum uentum" type="straight"/>
+        <underline language="LA" method="pen" text="cunctatur consul" type="straight"/>
+        <underline language="LA" method="pen" text="uirtute militum fretus" type="straight"/>
+        <underline language="LA" method="pen" text="loco parùm fidens" type="straight"/>
+        <underline language="LA" method="pen" text="increpando simul temeritatem, simul ignauiam" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="impetu facto, dum se puta[n]t uincere, uicêre"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!-- sa -->
+        
+    </annotation>
+</transcription>

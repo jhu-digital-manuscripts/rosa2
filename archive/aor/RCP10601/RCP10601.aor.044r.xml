@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.044r.tif" pagination="87" reader="John Dee" signature="f 4"/>
+    <annotation>
+        
+        <marginalia anchor_text="Alcorano" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Alcoranis[ti]</marginalia_text>      <!-- DO: Not sure about the ending --> <!-- FSF: no idea either; it should be Alcoranus, but i can se an i and s --> <!-- NBW: Suggest this reading as it tracks with the text-->
+                    <book title="Quran"/>
+                </position>
+            </language>
+            <translation>Followers of the Quran.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Turchorum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Turchi</marginalia_text>      
+                </position>
+            </language>
+            <translation>Turks.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tatar" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tatar</marginalia_text>      
+                    <location name="Tartary"/>
+                </position>
+            </language>
+            <translation>Tatar.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota</marginalia_text>      
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Turchis ea est similitudo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Turchica et Tartar[i]ca lingua[e] affines</marginalia_text>     
+                </position>
+            </language>
+            <translation>The Turkish and Tatar languages related.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="orbe Alcoranum ad Mecham" type="straight"/>
+        <underline language="LA" method="pen" text="co[m]pletur" type="straight"/>
+        <underline language="LA" method="pen" text="seruata ad litera[m] lege regia" type="double"/>
+        <underline language="LA" method="pen" text="Medi" type="straight"/>
+        <underline language="LA" method="pen" text="Persae" type="straight"/>
+        <underline language="LA" method="pen" text="Turchae'ue" type="straight"/>
+        <underline language="LA" method="pen" text="Tatari" type="straight"/>
+        <underline language="LA" method="pen" text="Israelitae" type="straight"/>
+        <underline language="LA" method="pen" text="Tatar" type="straight"/>
+        <underline language="LA" method="pen" text="residuum" type="straight"/>
+        <underline language="LA" method="pen" text="ante 300 annos" type="straight"/>
+        <underline language="LA" method="pen" text="aperto mari septe[n]trionali" type="straight"/>
+        <underline language="LA" method="pen" text="Changio Chan" type="straight"/>
+        <underline language="LA" method="pen" text="sunt ad castigationem orbis" type="straight"/>
+        <underline language="LA" method="pen" text="educti" type="straight"/>
+        <underline language="LA" method="pen" text="Tarsenses usq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="semoti ab obstinatione Iudaica reciperent illum, quàm qui ipsum crucifixere: aut" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

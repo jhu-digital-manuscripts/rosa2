@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.183r.tif" pagination="345" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="no[n] igitur impressio, no[n] occasio, non vis, non tempus, non imperium, non secures" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        imp[re]ssio Occasio vis tempus imperium Secures <!-- FSF: there is almost a box around it -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Pressure, opportunity, force, time, power, authority.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="administra[n]darum prouinciarum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Aministratio Prouinci[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The administration of a province.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="prolicè cumulate'q[ue] facere" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        prolixe, cumulatéque fecit
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To do freely and generously.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="mintenderit" type="straight"/>
+        <underline language="LA" method="pen" text="relinquitur illud, quod vociferari non desistit, non debuisse" type="straight"/>
+        <underline language="LA" method="pen" text="eripere, extorquere, accipere" type="straight"/>
+        <underline language="LA" method="pen" text="O conditiones miseras administra[n]darum prouinciarum: in quibus dilige[n]tia plena simultatum est, negligentia vituperationum, vbi seueritas periculosa est,              liberalitas ingrata, sermo insidiosus, assentatio perniciosa, frons omnium familiaris, multorum animus iratus, iracundiae occultae, blanditiae apertae: venientes Praetores expectant, praesentibus inseruiunt, abeuntes deserunt" type="straight"/>
+        <underline language="LA" method="pen" text="arde[n]tem iracundia videre" type="straight"/>
+        <underline language="LA" method="pen" text="homo &amp; prudens &amp; co[n]stans &amp; grauis" type="straight"/>
+        <underline language="LA" method="pen" text="etiam prolixe, cumulatéque" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <numeral place="right_margin">11</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        
+    </annotation>
+</transcription>

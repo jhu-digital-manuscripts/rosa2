@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.020r.tif" pagination="20" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Animam; elementorum fixam" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Anima Eleme[n]toru[m] n[ostr]or[u]m] fixa:
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The fixed vital principle of our elements.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Anima
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Air.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="una; uigintiqua" hand="Italian" id="BLC120b4:c_120_b_4_(2)_f020r:m0001" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        .1. .24. 
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="candida" type="straight"/>
+        <underline language="LA" method="pen" text="citrina" type="straight"/>
+        <underline language="LA" method="pen" text="pars una" type="straight"/>
+        <underline id="BLC120b4:c_120_b_4_(2)_f020r:u0001" language="LA" method="pen" text="partibus uigintiqua" type="straight"/>
+        
+        <physical_link>
+            <marginal_annotation idref="BLC120b4:c_120_b_4_(2)_f020r:m0001"/>
+            <marginal_annotation idref="BLC120b4:c_120_b_4_(2)_f020r:u0001"/>
+            
+            <relation from="BLC120b4:c_120_b_4_(2)_f020r:m0001" to="BLC120b4:c_120_b_4_(2)_f020r:u0001" type="directed"/>
+        </physical_link>
+        
+    </annotation> 
+</transcription>

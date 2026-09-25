@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.148r.tif" pagination="148" reader="John Dee" signature="Tiiij"/>    
+    <annotation>
+        
+        <marginalia anchor_text="Matrimino: delle quali riferia tutto quello, che si legge delle Amazone" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>fortè Matriminó</marginalia_text> 
+                    <location name="Martinique"/>
+                </position>
+            </language>
+            <translation>The fort Martinique.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Amazone" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Amazones</marginalia_text>
+                    <location name="Amazon"/>
+                </position>
+            </language>
+            <translation>The Amazon.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="paiono dotate di piu ragione, che quelli delle altre Isole" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Wit and great observation</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="contauano i tempi per le altre stelle, dicendo, Quando il carro si leua, o la tale stella va a monte, allhora è tempo do far questo &amp; quello." hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note.</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="venire a prendersi diletto, &amp; giacersi con esse" type="straight"/>
+        <underline language="IT" method="pen" text="Matrimino" type="straight"/>
+        <underline language="IT" method="pen" text="delle Amazone" type="straight"/>
+        <underline language="IT" method="pen" text="paiono dotate di piu ragione, che quelli delle altre Isole" type="straight"/>
+        <underline language="IT" method="pen" text="queste" type="triple"/>
+        <underline language="IT" method="pen" text="contauano i tempi per le altre stelle, dicendo, Quando il carro si leua, o la tale stella va a monte, allhora è tempo do far questo, &amp;" type="straight"/>
+        <underline language="IT" method="pen" text="comeuna scala, &amp; porta" type="double"/>
+        <underline language="IT" method="pen" text="donne contente con alcuni" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

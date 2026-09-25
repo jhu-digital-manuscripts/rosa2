@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.022r.tif" pagination="22" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Nihil denique est quod in uita geri possit, si non credulitas antè praecesserit" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        fides
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Faith.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Et hae quatuor, in duas redigu[n]tur: Arithemticam &amp; Geometriam, quae purae Mathematicae dicuntur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Dua[e] spe[cie]s Mathem[aticae]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Two types of mathematics.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Quis amare liberos tanqua[m] suos poterit, qui suos esse aut ignoret, aut dubitet?" type="straight"/>
+        <underline language="LA" method="pen" text="Arithmeticam" type="straight"/>
+        <underline language="LA" method="pen" text="Geometriam" type="straight"/>
+        <underline language="LA" method="pen" text="Musicam" type="straight"/>
+        <underline language="LA" method="pen" text="Astronomiam" type="straight"/>
+        <underline language="LA" method="pen" text="Arithmeticam &amp; Geometriam" type="straight"/>
+        <underline language="LA" method="pen" text="quae purae Mathematicae" type="straight"/>
+        
+    </annotation>
+</transcription>

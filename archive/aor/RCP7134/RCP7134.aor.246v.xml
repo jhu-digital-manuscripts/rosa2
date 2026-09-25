@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.246v.tif" pagination="[239v]" reader="John Dee" signature="[OO iij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="cor enim est, in quo animi sedes" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sedes animi in corde</marginalia_text>
+                </position>
+            </language>
+            <translation>The seat of the mind [is] in the heart.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pertinacissimi; Crudelissimi" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pertinacissimi Crudelissimi.</marginalia_text>
+                </position>
+            </language>
+            <translation>Most obstinate. Most cruel.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pertinacissimi; Crudelissimi" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In □is aspectibus latitudo co[n]sidera[n]te.</marginalia_text>
+                </position>
+            </language>
+            <translation>In the quadruple aspects, with the latitude considered.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nec in ascendente uim ullam habeat" type="straight"/>
+        <underline language="LA" method="pen" text="p[er]fecta, corpus ponderosi Lunae iunctum, discrime[n] no[n] leue affert" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

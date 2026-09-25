@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.104v.tif" reader="Harvey" signature="[Ni[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Vessels of Adders. Hannibals Deuice.</marginalia_text>
+                    <person name="Hannibal"/>
+                    <emphasis method="pen" text="Vessels of Adders." type="straight"/>
+                    <emphasis method="pen" text="Hannibals Deuice." type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>{ Pompeius contra Piratas. Augustus contra Antonium. Ca[e]sar contrà Gallos, Britannos, [etc].</marginalia_text>
+                    <person name="Pompey"/>
+                    <person name="Augustus"/>
+                    <person name="Mark Antony"/>
+                    <person name="Julius Caesar"/>
+                    <emphasis method="pen" text="Pompeius" type="straight"/>
+                    <emphasis method="pen" text="Augustus" type="straight"/>
+                    <emphasis method="pen" text="Ca[e]sar" type="straight"/>
+                </position>
+            </language>
+            <translation>Pompey against pirates. Augustus against Antony. Julius Caesar against the French, English, et cetera.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Atheniensiu[m] nauis, contra Laceda[e]monios; et Perses.</marginalia_text>
+                </position>
+            </language>
+            <translation>The Athen ships against the Lacedaemians and Persians.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="deceyuing them with felowlyke apparel" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>deceyuid w[i]th fellowlyke Apparrel.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vt s[upr]a, i[nfr]a.</marginalia_text>
+                    <internal_ref text="s[upr]a">
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0032" text="[Av[r]]"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0081" text="[Dv[v]]"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0093" text="[Eiii[v]]"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0104" text="[F[ir]]"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0109" text="[Fiii[v]]"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0112" text="[Fv[r]]"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0148" text="[Hvii[r]]"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0150" text="[Hviii[r]]"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0154" text="[Iii[r]]"/>
+                    </internal_ref>
+                    <internal_ref text="i[nfr]a">
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0219" text="[Nii[v]]"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0221" text="[Niii[v]]"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0226" text="[Nvi[r]]"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>As above, below.</translation>
+        </marginalia>
+            
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Perforatio nauiu[m], per Vrinatores, alteru[m] Strategema.</marginalia_text>
+                </position>
+            </language>
+            <translation>A piercing of the ships through divers, another strategem.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="amased" type="straight"/>
+        <underline language="EN" method="pen" text="bothe in fyght" type="straight"/>
+        <underline language="EN" method="pen" text="in all their other dueties" type="straight"/>
+        <underline language="EN" method="pen" text="Prusias" type="straight"/>
+        <underline language="EN" method="pen" text="violently brake" type="straight"/>
+        <underline language="EN" method="pen" text="tumbled out the" type="straight"/>
+        <underline language="EN" method="pen" text="armure and badges, wherby" type="straight"/>
+        <underline language="EN" method="pen" text="deceyuing them" type="straight"/>
+        <underline language="EN" method="pen" text="with felowlyke apparel" type="straight"/>
+        <underline language="EN" method="pen" text="Atheniens" type="straight"/>
+        <underline language="EN" method="pen" text="vpon certayne festyuall" type="straight"/>
+        <underline language="EN" method="pen" text="dayes" type="straight"/>
+        <underline language="EN" method="pen" text="they kepte hyghe" type="straight"/>
+        <underline language="EN" method="pen" text="walles vnto" type="straight"/>
+        <underline language="EN" method="pen" text="sacrifice: hydynge priuily theyr" type="straight"/>
+        <underline language="EN" method="pen" text="theyr sacrifice" type="straight"/>
+        <underline language="EN" method="pen" text="marched towarde" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/> <!--below marginal note-->
+        <mark language="LA" method="pen" name="quotation_mark" place="left_margin" text="Perforatio nauiu[m], per Vrinatores, alteru[m] Strategema."/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="violently brake"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="tumbled out the"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="vpon certayne festyuall"/>
+        
+    </annotation>
+</transcription>

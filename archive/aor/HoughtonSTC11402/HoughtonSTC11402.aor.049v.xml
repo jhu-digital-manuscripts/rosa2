@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.049v.tif" reader="Harvey" signature="[Fii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Simulatione timoris, pedem referre.</marginalia_text>
+                    <emphasis method="pen" text="simulatione" type="straight"/>
+                    <emphasis method="pen" text="referre" type="straight"/>
+                </position>
+            </language>
+            <translation>To retreat with the pretext of fear.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tamiris quene of the Scythians" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tamiris, [the] Scithian Queene.</marginalia_text>
+                    <person name="Tomyris"/>
+                    <emphasis method="pen" text="Tamiris" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Sabura, praefectus Regis Juba[e], aduersus Curione[m] Ca[e]saris duce[m], 
+                        eode[m] est usus dolo; L. x. de bello ciuili.</marginalia_text>
+                    <person name="Saburra"/>
+                    <person name="Juba I of Numidia"/>
+                    <person name="Gaius Scribonius Curio"/>
+                    <book title="The Civil Wars"/>
+                </position>
+            </language>
+            <translation>Saburra, commander of king Juba, against Gaius Scribonius Curio, Caesar's general, experienced a similar trick. Book 10 of 'De bello civili'.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="a great dyche before" type="straight"/>
+        <underline language="EN" method="pen" text="his camelles in the" type="straight"/>
+        <underline language="EN" method="pen" text="his speare" type="straight"/>
+        <underline language="EN" method="pen" text="dartes on" type="straight"/>
+        <underline language="EN" method="pen" text="the elephantes" type="straight"/>
+        <underline language="EN" method="pen" text="guyders of the elephantes" type="straight"/>
+        <underline language="EN" method="pen" text="beastes euen into" type="straight"/>
+        <underline language="EN" method="pen" text="driuen backe agayn vpon their" type="straight"/>
+        <underline language="EN" method="pen" text="tarienge for this" type="straight"/>
+        <underline language="EN" method="pen" text="Tamiris" type="straight"/>
+        <underline language="EN" method="pen" text="for feare had fled" type="straight"/>
+        <underline language="EN" method="pen" text="out Cyrus" type="straight"/>
+        <underline language="EN" method="pen" text="straytes very" type="straight"/>
+        <underline language="EN" method="pen" text="where sodenly she tourned" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="a great dyche before"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="driuen backe agayn vpon their"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="out Cyrus"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="occasyon"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="for feare had fled"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="sodenly"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="tail" text="Sabura, praefectus Regis Juba[e], aduersus Curione[m] Ca[e]saris duce[m],              eode[m] est usus dolo; L. x. de bello ciuili."/>
+        
+    </annotation>
+</transcription>

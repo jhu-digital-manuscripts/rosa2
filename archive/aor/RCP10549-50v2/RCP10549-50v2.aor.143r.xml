@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.143r.tif" pagination="25" reader="John Dee"/>  
+    <annotation>
+        
+        <marginalia anchor_text="nuperrime; egregie magnam esse vtilitate[m]; non inscii" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>nuperrime egregie magna vtilitas no[n] inscius</marginalia_text>
+                </position>
+            </language>
+            <translation>Most recently, an exceedingly great use, not unskilled.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="PRONVNTIATIONEM" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pronunciatio. %.</marginalia_text>  
+                </position>
+            </language>
+            <translation>Pronunciation that is.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Diuiditur igitur pronu[n]tiatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pronunciatio[n]is diuisio</marginalia_text>
+                </position>
+            </language>
+            <translation>The division of pronunciation.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Figura vocis; Ea diuiditur in tres partes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>figura vocis. &amp; ei[us] diuisio</marginalia_text>
+                </position>
+            </language>
+            <translation>Vocal form, and its division.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Magnitudine[m] vocis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Magnitudo vocis</marginalia_text>
+                </position>
+            </language>
+            <translation>The volume of the voice.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Firmitudine[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>firmitudo.</marginalia_text>
+                </position>
+            </language>
+            <translation>Firmness.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Mollitudo." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mollitudo</marginalia_text>
+                </position>
+            </language>
+            <translation>Flexibility.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Firma[m] igitur quàm maxime poterimus in dice[n]do voce[m] co[n]seruare, si quàm maxime sedata &amp; depressa voce principia dicemus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quo pacto firma vox co[n]seruat[ur].</marginalia_text>
+                </position>
+            </language>
+            <translation>A firm voice is kept in this case.</translation>  <!-- DO: Not completely sure about translation NBW: a less literal translation would be "A firm voice is kept in this case"-->
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Mollitudo igitur vocis; Eam diuidimus in sermonem, contentione[m], amplificatione[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mollitudinis Diuisio</marginalia_text>
+                </position>
+            </language>
+            <translation>The division of flexibility.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="Et quoniam nuperrime dictum facile" type="straight"/>
+        <underline language="LA" method="pen" text="egregie magnam esse" type="straight"/>
+        <underline language="LA" method="pen" text="Nam co[m]modae inuentiones &amp; concinnae verboru[m] elocutiones, &amp; partium causae artificiosae dispositiones, &amp; horum omnium diligens memoria, sine pronuntiatione, non plus quàm sine his rebus pronuntiatio sola valere poterit" type="straight"/>
+        <underline language="LA" method="pen" text="non iscii" type="straight"/>
+        <underline language="LA" method="pen" text="laedu[n]tur arteriae, si antequa[m] leni voce permulsae sunt, acri clamore co[m]pleantur" type="straight"/>
+        <underline language="LA" method="pen" text="Et vno spiritu co[n]tinentur multa dicere in extrema co[n]uenit oratione. Fauces" type="straight"/>
+        <underline language="LA" method="pen" text="Interualla vocem" type="straight"/>
+        
+        <mark language="LA" method="pen" name="tripunctus_with_tail" place="head" text="nuperrime"/>
+        <mark language="LA" method="pen" name="duopunctus_with_antenna" place="head" text="egregie magna vtilitas"/>
+        <mark language="LA" method="pen" name="pin" place="head" text="no[n] inscius"/>
+        
+        <mark method="pen" name="tripunctus_with_tail" place="right_margin"/>
+        <mark method="pen" name="duopunctus_with_antenna" place="right_margin"/>
+        <mark method="pen" name="pin" place="right_margin"/>
+              
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

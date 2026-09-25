@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.133v.tif" pagination="6" reader="John Dee" signature="[a.iii.[v]]"/>   
+    
+    <annotation>
+        
+        
+        <marginalia anchor_text="dilucide narrabimus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Narratio dilucida.</marginalia_text>
+                </position>
+            </language>
+            <translation>A clear statement of the case.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Verisimilis narratio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Narratio verisimilis</marginalia_text>
+                </position>
+            </language>
+            <translation>A plausible statement of the case.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="veritas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>veritas.</marginalia_text>
+                </position>
+            </language>
+            <translation>Truth.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Adhuc quae dicta sunt, arbitror mihi co[n]stare cu[m] caeteris artis scriptoribus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In q[ua] Cicero disse[n]tit a c[a]eteris artis scriptoribus.</marginalia_text>  <!-- DO: Not sure about first contraction, or the translation NBW: Fixed-->
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero differs from the other writers on the craft in this respect.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="de rerum inuentione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Inve[n]tio rer[um].</marginalia_text>
+                </position>
+            </language>
+            <translation>The selection of things.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="perorata narratione debemus aperire quid nobis co[n]ueniat cum aduersariis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Perorata narratio[n]e qu[a]e fieri debe[n]t.</marginalia_text>
+                </position>
+            </language>
+            <translation>What should be done when the statement of the case has been spoken.</translation>  
+        </marginalia>
+        
+        
+        <marginalia anchor_text="diuiditur in duas partes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Distributionis partes.</marginalia_text>
+                </position>
+            </language>
+            <translation>The parts of the distribution.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="enumerationem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Enumeratio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Enumeration.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Expositio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Expositio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Exposition.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Causarum constitutiones alii quatuor fecerunt, noster doctor tres putauit esse" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tres Causaru[m] constitutio[n]es</marginalia_text>
+                </position>
+            </language>
+            <translation>Three types of cause.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Constitutio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Constitutio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Type.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="coniecturalis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>co[n]iecturalis.</marginalia_text>
+                </position>
+            </language>
+            <translation>Conjectural.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Legitima; Ea diuiditur in partes sex" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Legitima. &amp; eius 6 partes.</marginalia_text>
+                </position>
+            </language>
+            <translation>Legal [Cause], and its six parts.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="id quod oportuisset simpliciter &amp; singulari modo docere, illos distribuisse dupliciter bipertito" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>simpl[icite]r singulari modo / x dupl[icite]r bipertito.</marginalia_text>
+                </position>
+            </language>
+            <translation>Simply and by one method / not twofold in different ways.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="modo id quod obest, sed &amp; id quod neque obest, neque iuuat, satius est praeterire" type="straight"/>
+        <underline language="LA" method="pen" text="perturbate, nequid co[n]torte, nequid ambigue, nequid noue" type="straight"/>
+        <underline language="LA" method="pen" text="Nam quo breuior, eo dilucidior &amp; cognitu facilior narratio fiet" type="straight"/>
+        <underline language="LA" method="pen" text="ne refelli possit" type="straight"/>
+        <underline language="LA" method="pen" text="Si vera res erit, nihilominus haec omnia narrando co[n]seruanda sunt. Nsm saepe veritas, nisi haec seruata sint, fide[m] facere non potest. Sin erit ficta, eò magis co[n]seruanda eru[n]t. De" type="straight"/>
+        <underline language="LA" method="pen" text="arbitror mihi co[n]stare" type="straight"/>
+        <underline language="LA" method="pen" text="vt nihil minus industriae quàm rei vtilitas postulabit" type="straight"/>
+        <underline language="LA" method="pen" text="Eam plus quàm triu[m] partium numero esse non oportet" type="straight"/>
+        <underline language="LA" method="pen" text="suspicionem afferet auditori meditationis &amp; artificii, quae res fidem abrogat oratori" type="straight"/>
+        <underline language="LA" method="pen" text="noster doctor tres putauit esse" type="straight"/>
+        <underline language="LA" method="pen" text="simpliciter &amp; singulari modo docere, illos distribuisse" type="straight"/>
+        <underline language="LA" method="pen" text="capitis arcessit" type="straight"/>
+        
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        
+        <numeral place="left_margin">15</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">13</numeral>
+        
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        
+    </annotation>
+    
+</transcription>

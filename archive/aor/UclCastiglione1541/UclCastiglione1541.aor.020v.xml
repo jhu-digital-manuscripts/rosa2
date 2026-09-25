@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+<page filename="UclCastiglione1541.020v.tif" pagination="[VIIIv]" reader="Harvey" signature="[Bvv]"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ogn'vno
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Each one.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Giuoco VI. proposto da M. Pietro Bembo, da qual cagione douerebbe voler 
+                        lo amante che nascesse lo sdegno della Donna, che fosse seco adirata.   
+                    </marginalia_text>
+                    <person name="Pietro Bembo"/>
+                </position>
+            </language>
+            <translation>
+                Game VI, proposed by Messer Pietro Bembo: by what cause the lover should want the disdain of 
+                his lady, who has become angry with him, to arise.
+            </translation> 
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Imita Ouidio nell'epistole Heroide.
+                    </marginalia_text>      
+                    <person name="Ovid"/>
+                    <book title="Heroides"/>
+                </position>
+            </language>
+            <translation>
+                He imitates Ovid in the Heroides.
+            </translation>
+        </marginalia>
+        
+        <mark language="IT" method="pen" name="est_mark" place="left_margin" text="ogn'vno"/>
+        <mark language="IT" method="pen" name="est_mark" place="intext" text="ogniuno"/>
+        
+    </annotation>
+</transcription>

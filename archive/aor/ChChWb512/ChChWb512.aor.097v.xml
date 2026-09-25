@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.097v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Beduerus primus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Beduerus
+                    </marginalia_text>
+                    <person name="Beduerus"/>
+                </position>
+            </language>
+            <translation>Beduerus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cheudo ; Andegauensium duce[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Cheudo Dux Andegaue[n]sium Dux
+                    </marginalia_text>
+                    <person name="Cheudo"/>
+                    <location name="Andegavia"/>
+                </position>
+            </language>
+            <translation>Cheudo, lord. Duke of Andegavia.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Holdinus quoq[ue] dux Rutenorum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Holdinus dux Rutenorum
+                    </marginalia_text>
+                    <person name="Holdinus"/>
+                </position>
+            </language>
+            <translation>Holdinus, duke of the Ruteni.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ad comprouinciales abbatias" type="straight"/>
+        <underline language="LA" method="pen" text="ad Baiocas" type="straight"/>
+        <underline language="LA" method="pen" text="Beduerus" type="dotted"/>
+        <underline language="LA" method="pen" text="Beduerus primus" type="double"/>
+        <underline language="LA" method="pen" text="ab Neustriensibus" type="straight"/>
+        <underline language="LA" method="pen" text="quod in australi parte ciuitatis" type="straight"/>
+        <underline language="LA" method="pen" text="Cheudo" type="straight"/>
+        <underline language="LA" method="pen" text="ad Cadomum" type="straight"/>
+        <underline language="LA" method="pen" text="Andegauensium" type="straight"/>
+        <underline language="LA" method="pen" text="Holdinus" type="straight"/>
+        <underline language="LA" method="pen" text="in Teruana" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; ciuitatem Allebregum" type="straight"/>
+        <underline language="LA" method="pen" text="vacauit" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!--aedificauerat ab-->
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

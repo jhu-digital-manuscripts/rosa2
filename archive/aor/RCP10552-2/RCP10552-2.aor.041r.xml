@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.041r.tif" pagination="71" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="comitis Glouerniae, qui tunc erat iuuenis toto regno dilectus, &amp; sub tutela regis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gilbertus comes Glo.[uerniae] Juuenis. et adhunc sub Regis Tutela.</marginalia_text>
+                    <person name="Gilbert de Clare, 8th Earl of Gloucester"/>
+                </position>
+            </language>
+            <translation>Gilbert, Earl of Gloucester young and thus far under the protection of the king. </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="suggestum" type="straight"/>
+        <underline language="LA" method="pen" text="est, quod " type="double"/>
+        <underline language="LA" method="pen" text="si sororem comitis Glouerniae," type="straight"/>
+        <underline language="LA" method="pen" text="qui tunc erat iuuenis toto" type="double"/>
+        <underline language="LA" method="pen" text="dilectus, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="sub tutela regis" type="double"/>
+          
+    </annotation>
+</transcription>

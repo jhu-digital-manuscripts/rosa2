@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.173r.tif" pagination="166" reader="John Dee" signature="tt ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="posthumum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Posthumus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Last.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="corpus eius ab inimicis dilaceretur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Corporis dilaceratio.</marginalia_text>
+                </position>
+            </language>
+            <translation>The tearing to pieces of a body.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="corpus eius ab inimicis dilaceretur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Ergo.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Therefore.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ascendentis est cum cauda, erit fallax, &amp; uix euadet ne corpus eius ab" type="straight"/>
+        
+    </annotation>
+</transcription>

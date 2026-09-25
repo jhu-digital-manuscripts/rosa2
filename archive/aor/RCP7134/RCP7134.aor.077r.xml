@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.077r.tif" pagination="70" reader="John Dee" signature="S ij"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Obesi.</marginalia_text>
+                </position>
+            </language>
+            <translation>[They are] fat.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>R[ati]o co[n]stat ex eo quod ♃ carui p[o]ssit / humiditas vero pinguedine[m] angeat</marginalia_text> 
+                    <symbol_in_text name="Jupiter"/>
+                </position>
+            </language>
+            <translation>The account is true because Jupiter could have been missing. Actually, humidity may increase fatness.</translation> 
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Magni.</marginalia_text>
+                </position>
+            </language>
+            <translation>[They are] big.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pulchri.</marginalia_text>
+                </position>
+            </language>
+            <translation>[They are] beautiful.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ascendentis domina esse non potest" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ob qua[m] causa[m]?.</marginalia_text>
+                </position>
+            </language>
+            <translation>From which cause?</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Iupiter in Libra" type="straight"/>
+        <underline language="LA" method="pen" text="Mars &amp; Saturnus Iouem aspicientes, macilentu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="signis" type="straight"/>
+        <underline language="LA" method="pen" text="si planetae" type="straight"/>
+        <underline language="LA" method="pen" text="in summo" type="straight"/>
+        <underline language="LA" method="pen" text="ascendentis domina esse non potest" type="straight"/>
+        
+        <numeral language="LA" place="intext" text="signis">.1.</numeral>
+        <numeral language="LA" place="intext" text="summo">.2.</numeral>
+        
+        <errata amendedtext="," copytext="." language="LA"/> <!-- efficiunt -->
+        <errata amendedtext="," copytext="." language="LA"/> <!-- foeminas Sed -->
+        <errata amendedtext=":" copytext="," language="LA"/> <!-- pulchritudine post -->
+        
+    </annotation>
+</transcription>

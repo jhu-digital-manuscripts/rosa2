@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.128r.tif" pagination="128" reader="John Dee"/>
+    
+    <annotation>
+        
+       <marginalia hand="Italian" method="pen">
+           <language ident="EN">
+               <position book_orientation="0" place="right_margin">
+                   <marginalia_text>A flatting</marginalia_text>
+               </position>
+           </language>
+       </marginalia> 
+        
+        <marginalia anchor_text="Matinino" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Matininó</marginalia_text>
+                    <location name="Martinique"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Guanin" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Guanin</marginalia_text>
+                    <location name="Guanin"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="Lasciate i uostri mariti, &amp; andiamoci in altripaesi, &amp; porteremo assai gioie" type="straight"/>
+        <underline language="IT" method="pen" text="poi ritorneremo" type="straight"/>
+        <underline language="IT" method="pen" text="partì" type="double"/>
+        <underline language="IT" method="pen" text="cerca[n]do altri" type="straight"/>
+        <underline language="IT" method="pen" text="et giu[n]se a Matinino" type="straight"/>
+        <underline language="IT" method="pen" text="Guanin" type="straight"/>
+        <underline language="IT" method="pen" text="con fame" type="straight"/>
+        <underline language="IT" method="pen" text="le madri" type="double"/>
+        
+        <mark language="IT" method="pen" name="diacritic" place="intext" text="Matinino"/>
+        
+    </annotation>
+    
+</transcription>

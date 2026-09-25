@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.030r.tif" pagination="49" reader="John Dee" signature="E."/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="beati Petri Apostoli" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Andrea[e]: al[ite]r.</marginalia_text> 
+                    <person name="Andrew the Apostle"/>
+                </position>
+            </language>
+            <translation>Others say, of [St.] Andrew.</translation> <!-- NBW: This isn't a literal translation, but preserves the sense of the correction here-->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="dictum" type="straight"/>
+        <underline language="LA" method="pen" text="regnum Scotiae se non extendat" type="double"/>
+        <underline language="LA" method="pen" text="beati Apostolicas speciales" type="double"/>
+        <underline language="LA" method="pen" text="Petri Apostoli" type="straight"/>
+        
+        <errata amendedtext="iure" copytext="iuris" language="LA"/>
+        
+    </annotation>
+</transcription>

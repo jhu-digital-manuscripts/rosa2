@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note rend="IDENTIFICATION">
+          <p> Paris, Bibliothèque nationale de France, fr. 12588</p>
+        </note>
+        <note rend="CONTENTS">
+          <p><hi rend="italics">Roman de la Rose </hi>(ff. 1r-139v)</p>
+        </note>
+        <note rend="MATERIAL">
+          <p>Parchment</p>
+        </note>
+        <note rend="ORIGIN">
+          <p>France</p>
+        </note>
+        <note rend="DATE">
+          <p>1st half of the 14th century</p>
+        </note>
+        <note rend="LANGUAGE">
+          <p>French</p>
+        </note>
+        <note rend="SCRIPT">
+          <p>Gothic, written in 2 columns of 40 lines, 3 scribes?</p>
+        </note>
+        <note rend="ARTISTS">
+          <p>1 artist</p>
+        </note>
+        <note rend="DECORATION">
+          <p>20 single-column panel miniatures in pink, blue, orange and gold which have pink, blue, pink/blue frames with gold boxes at edges (ff. 1r, 1v, 2r (x3), 2v, 3r (x2), 3v, 4r, 5r, 6r, 10r, 12r, 13r, 24v, 27r, 47v, 78v, 99r). The miniatures are heavily abraded. Blue initials with red pen-flourishing, red initials with blue pen-flourishing.</p>
+        </note>
+        <note rend="DIMENSIONS">
+          <p>275 x 178 mm (this measurement is from Langlois)</p>
+        </note>
+        <note rend="FOLIATION">
+          <p>ff. iii + 139 + ii</p>
+        </note>
+        <note rend="COLLATION">
+          <p>Quires have 4, 8, or 12 leaves</p>
+        </note>
+        <note rend="BINDING">
+          <p>French, 19th century; red morroco with blind fillet border, raised spine bands, gilt ornaments on spine, title in gilt on spine, marbled endpapers.</p>
+        </note>
+        <note rend="PROVENANCE">
+          <p>Le Peletier de Rosambo, 18th century (arms of Rosambo on <locus>frontmatter.flyleaf.02v</locus>); ex-libris of the Bibliothèque de Rosny on the same flyleaf; bought by Bibliothèque Impériale (imperial library) in 1837 (stamp of Bibliothèque Impériale, ff. <locus>1r</locus> and <locus>139v</locus>).</p>
+        </note>
+        <note rend="NOTES">
+          <p>On f.<locus>139v</locus>, a hand has been drawn in brown ink and, beneath this, is a note in Latin: "Domine carissime, precor vos ut non habeatis pro malo quia retinui sex folias isti libri, ubi sunt fabule Ysopi, quia quando videbo vos, vobis satisfaciam de dictis sex foliis ad vestram voluntatem, et libenter em[em totum] (?) librum si videbam vos."</p>
+        </note>
+        <note rend="SELECT BIBLIOGRAPHY">
+          <p>Langlois, <hi rend="italics">Les manuscrits</hi>, pp. 43-44</p>
+        </note>
+        <note rend="N.B.">
+          <p>This description has been compiled using the site's images and various published sources. If you have corrections or additional information on the manuscript, please do contact us.</p>
+        </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscript</note>
+          <note type="commonName">Français 12588</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="139" unit="folios">139</measure>
+            <dimensions>
+              <height unit="mm">275 </height>
+              <width unit="mm">178</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">20</note>
+          <note type="material">parchment</note>
+          <pubPlace>France</pubPlace>
+          <date notAfter="1400" notBefore="1300">14th century</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Paris</settlement>
+            <repository>Bibliothèque nationale de France</repository>
+            <idno>fr. 12588</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="139v">1r-139v</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">139</note>
+              <note type="illustrations">20</note>
+              <note type="linesPerColumn">40</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.308r.tif" pagination="129" reader="John Dee" signature="Q.iiij."/>
+    
+    
+    <annotation>
+        
+        <marginalia anchor_text="Petronis" hand="Italian">
+            <language ident="LA">
+               <position book_orientation="0" place="right_margin">
+                   <marginalia_text>Petrus Rex hispania[e]</marginalia_text>
+                   <person name="Peter of Castile"/>
+               </position>
+            </language>
+            <translation>Peter, King of Spain.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Iohannes dux Lancastriae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Io[hann]es Dux La[n]castria[e]</marginalia_text>
+                    <person name="John of Gaunt"/>
+                </position>
+            </language>
+            <translation>John, Duke of Lancaster.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="fugit ad principe[m] Walliae, ab eo" type="straight"/>
+        <underline language="LA" method="pen" text="suffragia petiturus" type="straight"/>
+        <underline language="LA" method="pen" text="Edw. princeps" type="straight"/>
+        <underline language="LA" method="pen" text="Britanniae Armoricae" type="straight"/>
+        <underline language="LA" method="pen" text="stare contra principem" type="straight"/>
+        <underline language="LA" method="pen" text="Hugonis de Caluerlee" type="straight"/>
+        <underline language="LA" method="pen" text="eum dominus Iohannes dux Lancastriae" type="straight"/>
+        <underline language="LA" method="pen" text="eo rex Nauarriae" type="straight"/>
+        <underline language="LA" method="pen" text="Saraceni praeterea, &amp; vlteriores" type="straight"/>
+        <underline language="LA" method="pen" text="tertio die" type="straight"/>
+        <underline language="LA" method="pen" text="Tho. Vfford" type="straight"/>
+        
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- principem primogenitum -->
+        
+    </annotation>
+    
+</transcription>

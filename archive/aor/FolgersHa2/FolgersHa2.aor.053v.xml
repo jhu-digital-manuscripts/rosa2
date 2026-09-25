@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.053v.tif" pagination="426" reader="Harvey"/>	<!-- ABO 58left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia anchor_text="Archittetura" hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Architectura, s[upr]a,
+					</marginalia_text>
+					<internal_ref>
+						<target ref="FolgersHa2:Ha2.027v" text="s[upr]a"/>
+					</internal_ref>
+				</position>
+			</language>
+			<translation>
+				Architecture, above.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Habe: caue: aue.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Keep: beware: farewell.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						dextrè, et satis. Physiognomia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Skillfully, and sufficiently. Physiognomy.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Lawful, &amp; diuine Coniuration.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						( argutè. Pro, et Contra. i[nfr]a, 428. 
+					</marginalia_text>
+					<internal_ref>
+						<target ref="FolgersHa2:Ha2.054v" text="428"/>
+					</internal_ref>
+				</position>
+			</language>
+			<translation>
+				Cleverly, for and against. Below, p. 428.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Rabelais alone will putt downe all the Italian, &amp; Spanish Poets, either in words,
+						or in deeds. In iest, Rabelais: in earnest, Bartas singular.
+					</marginalia_text>
+					<person name="Francois Rabelais"/>
+					<person name="Guillaume Du Bartas"/>
+					<emphasis method="pen" text="Rabelais alone" type="straight"/>
+					<emphasis method="pen" text="put downe all the Italian" type="straight"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.053v_0001" marginalia_continues_to="Ha2.054r_0001" marginalia_to_transcription="Ha2.054r.xml">
+			<language ident="EN">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						The onlie Witch of men: &amp; the onlie charmer, inchanter, [p. 427: &amp; coniurer of the World. The onlie surpriser of men, &amp; things.]
+						<!-- Continues onto facing page, left margin, Ha2.054r. -->
+						<!-- Gutter text. -->
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="riguardare il detto palazzo" type="straight"/>
+		<underline language="IT" method="pen" text="haueua cognitione non" type="straight"/>
+		<underline language="IT" method="pen" text="cose d'Architettura" type="straight"/>
+		<underline language="IT" method="pen" text="alcuni difetti, che circa alla porta" type="straight"/>
+		<underline language="IT" method="pen" text="com'huomo arrogante, &amp; superbo ch'egli" type="straight"/>
+		<underline language="IT" method="pen" text="quella fabrica" type="straight"/>
+		<underline language="IT" method="pen" text="suo capricciaccio insolente" type="straight"/>
+		<underline language="IT" method="pen" text="di che luogo fusse" type="straight"/>
+		<underline language="IT" method="pen" text="al comando di sua" type="straight"/>
+		<underline language="IT" method="pen" text="uillanamente" type="straight"/>
+		<underline language="IT" method="pen" text="benissimo di Castroni neuero" type="straight"/>
+		<underline language="IT" method="pen" text="senza smarrirsi" type="straight"/>
+		<underline language="IT" method="pen" text="affermando" type="straight"/>
+		<underline language="IT" method="pen" text="Signor si benissimo" type="straight"/>
+		<underline language="IT" method="pen" text="prima" type="straight"/>
+		<underline language="IT" method="pen" text="ueduto uoi, ch'io ui conobbi da uantaggio" type="straight"/>
+		<underline language="IT" method="pen" text="Vn Dottore" type="straight"/>
+		<underline language="IT" method="pen" text="foderata di pelle dozzinali" type="straight"/>
+		<underline language="IT" method="pen" text="&amp; di poco pregio" type="straight"/>
+		<underline language="IT" method="pen" text="belle mostre di dossi" type="straight"/>
+		<underline language="IT" method="pen" text="per lo piu fare" type="straight"/>
+		<underline language="IT" method="pen" text="per impossibilità, o per non ispendere tanto" type="straight"/>
+		<underline language="IT" method="pen" text="quale astutia" type="straight"/>
+		<underline language="IT" method="pen" text="accorto uno scolare fastidioso" type="straight"/>
+		<underline language="IT" method="pen" text="burlare" type="straight"/>
+		<underline language="IT" method="pen" text="buon pro" type="straight"/>
+		<underline language="IT" method="pen" text="di si bella pelliccia" type="straight"/>
+		<underline language="IT" method="pen" text="ma diteci" type="straight"/>
+		<underline language="IT" method="pen" text="simile alle mostre" type="straight"/>
+		<underline language="IT" method="pen" text="piaceuolmente rispose" type="straight"/>
+		<underline language="IT" method="pen" text="il resto" type="straight"/>
+		<underline language="IT" method="pen" text="foderato di pelli" type="straight"/>
+		<underline language="IT" method="pen" text="assimigliano alla uostra" type="straight"/>
+
+		<underline language="IT" method="chalk" text="piccola delle cose d'Archittetura, prese a raccontare" type="straight"/>
+		<underline language="IT" method="chalk" text="ch'era Puglese al comando di sua Signora" type="straight"/>
+		<underline language="IT" method="chalk" text="Signor si benissimo, nè prima hebbi ueduto uoi, ch'io ui conobbi da uantaggio" type="straight"/>
+
+		<!-- Symbols -->
+		<symbol name="Sun" place="left_margin"/>
+		<symbol name="SS" place="left_margin"/>
+		<symbol name="SS" place="left_margin"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- capric -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Dotto -->
+		
+	    	<!-- Left margin -->
+	    <mark language="IT" method="pen" name="bracket" place="left_margin" text="disse Signor si benissimo, mè prima hebbi ueduto uoi, ch'io ui conobbi da uantaggio"/>
+		<mark method="pen" name="straight_quotation_mark" place="left_margin"/> <!-- con belle -->
+		<mark language="IT" method="pen" name="quotation_mark" place="left_margin" text="assimigliano alla uostra"/> 
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="palazzo"/>
+	    <mark method="pen" name="dot" place="intext"/> <!-- palazzo, & -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Archittetura"/>
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- alcuni difetti -->
+		<mark method="pen" name="dot" place="intext"/> <!-- conosceua, -->
+		<mark method="pen" name="dot" place="intext"/> <!-- inteso, -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="capricciaccio"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- biasimasse, ne -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="comando"/>
+		<mark method="pen" name="semicolon" place="intext"/> <!-- gnoria & -->
+		<mark method="pen" name="dot" place="intext"/> <!-- sue, disse -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- si benissimo -->
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- faded chalk mark -->
+		<mark method="pen" name="dot" place="intext"/> <!-- benissimo, ne -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="conobbi"/>
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- uantaggio -->
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- di poco pregio -->
+		<mark method="pen" name="dot" place="intext"/> <!-- dossi, come -->
+		<mark method="pen" name="dot" place="intext"/> <!-- uegga, della -->
+		<mark method="pen" name="dot" place="intext"/> <!-- pelliccia, & -->
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="piaceuolmente"/>
+		<mark method="pen" name="comma" place="intext"/> <!-- Mesere il -->
+		<mark method="pen" name="dot" place="intext"/> <!-- uostra, uolenda -->
+		<mark method="pen" name="quotation_mark" place="tail"/> <!-- inferire -->
+
+    </annotation>
+</transcription>

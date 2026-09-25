@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.020v.tif" pagination="24" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        vide Pontanu[m] Lib[rum]: 1: de Reb: Co[e]lest: in Tractatu de Dominis Triangulorum 
+                    </marginalia_text>
+                    <person name="Giovanni Pontano"/>
+                    <book title="De rebus caelestibus"/>
+                    <book title="De dominis triangulorum"/>
+                </position>
+            </language>
+            <translation>
+                See the first book of De rebus caelestibus by Pontano in the tract De dominis triangulorum
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="aequi lateri trianguli figura" type="straight"/>
+        <underline language="LA" method="pen" text="Trigonis siquidem diurnis &amp; masculinis, diuinae &amp; masculinae stellae, nocturnis uero &amp; foemininis nocturnae, &amp; foemininae praesidebunt, eò quod maioris" type="straight"/>
+        <underline language="LA" method="pen" text="dominorum primus est" type="straight"/>
+        <underline language="LA" method="pen" text="☉, alter ♃ in nocte uero contra utriusq[ue] tamen particeps ♄" type="straight"/>
+        <underline language="LA" method="pen" text="Trigoni ignei" type="straight"/>
+        
+        <mark colour="red" method="pen" name="double_vertical_bar" place="left_margin"/>
+        <mark colour="red" method="pen" name="bracket" place="left_margin"/>
+        <mark colour="red" method="pen" name="bracket" place="left_margin"/>
+        
+        <errata amendedtext="cognatione" copytext="cognitione" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL531k6.001r.tif" pagination="[title page]" reader="John Dee" signature="[A1]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian" other_reader="unknown">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        7GGe
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pencil" other_reader="unknown">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        531.k.6.3
+                    </marginalia_text>
+                    <emphasis method="pen" text="531.k" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pencil" other_reader="unknown">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        6. N. v
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pencil" other_reader="unknown">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Crusices P(?)k
+                    </marginalia_text>
+                    <person name="Paulus Crusius"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        u
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia date="1568" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Joannes Dee 1568.
+                    </marginalia_text>
+                    <person name="John Dee"/>
+                </position>
+            </language>
+            <translation>John Dee, 1568.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sunt perpetui Canones magnitudinis" type="straight"/>
+        <underline language="LA" method="pen" text="annos 200" type="straight"/>
+        <underline language="LA" method="pen" text="PAVLO CRVSIO" type="straight"/>
+        
+    </annotation>
+</transcription>

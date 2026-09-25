@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.217r.tif" pagination="423" reader="John Dee" signature="Oo.ij."/>
+    <annotation>
+        
+        <marginalia anchor_text="pelagus praeseruantes à piratis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pelagus a Piratis pra[e]seruandum</marginalia_text>
+                </position>
+            </language>
+            <translation>The sea must be protected from pirates.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Iohannes Prendergest miles" type="straight"/>
+        <underline language="LA" method="pen" text="VVilhelmus Long" type="straight"/>
+        <underline language="LA" method="pen" text="praeseruantes à piratis" type="straight"/>
+        <underline language="LA" method="pen" text="non obstantibus promissis pollicitationibus" type="straight"/>
+        
+    </annotation>
+</transcription>

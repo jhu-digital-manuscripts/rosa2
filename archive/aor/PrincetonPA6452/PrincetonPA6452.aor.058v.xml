@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.058v.tif" pagination="100" reader="Harvey"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Ne in populari quidem Republica, nimis oportuit esse popularem. Nedùm id in / regno tolerabile. Novus error ducis Guisij in Gallia: aliorum alibi.
+                    </marginalia_text>
+                    <person name="Henry I, duke of Guise"/> <!--it's likely that Harvey talks about this member of the De Guise family-->
+                    <location name="Gaul"/>
+                </position>
+            </language>
+            <translation>It is not appropriate to be too popular, not even in a Republic of the people. It is even less acceptable in a kingdom. The recent mistake of the 
+                Duke of Guise in France, of others elsewhere.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Sp. Melius ex equestri" type="straight"/>
+        <underline language="LA" method="pen" text="praeuides" type="straight"/>
+        <underline language="LA" method="pen" text="rem utile[m] pessimo exemplo, peiore co[n]silio est aggressus." type="straight"/>
+        <underline language="LA" method="pen" text="frumento namq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="per hospitu[m] clientu[m]q[ue] ministeria coempto" type="straight"/>
+        <underline language="LA" method="pen" text="plebe[m]q[ue] hoc munere elinita[m], quacunq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="humanus" type="straight"/>
+        <underline language="LA" method="pen" text="animus insatiabilis eo quod fortuna spo[n]det: ad altiore &amp; no[n] concessa tendere" type="straight"/>
+        <underline language="LA" method="pen" text="de regno agitare" type="straight"/>
+        <underline language="LA" method="pen" text="id unum dignum" type="straight"/>
+        <underline language="LA" method="pen" text="certamine, quod ingens exudandum esset, praemium" type="straight"/>
+        <underline language="LA" method="pen" text="tela in domum Melij co[n]ferri, eumq[ue] co[n]ciones domi habere: ac no[n]" type="straight"/>
+        <underline language="LA" method="pen" text="dubia regni co[n]silia esse: tempus agendae rei nondum stare" type="straight"/>
+        <underline language="LA" method="pen" text="partita ducibus multitudinis ministeria" type="straight"/>
+        <underline language="LA" method="pen" text="serius se penè, quàm tutu[m] fuerit" type="straight"/>
+        <underline language="LA" method="pen" text="cuius incerti uaniq[ue] autor esset, ea deferre" type="straight"/>
+        <underline language="LA" method="pen" text="plus in" type="straight"/>
+        <underline language="LA" method="pen" text="senili" type="straight"/>
+        <underline language="LA" method="pen" text="concilij modò, sed etia[m] uirtutis esse, quàm in omnibus alijs dicerent" type="straight"/>
+        <underline language="LA" method="pen" text="ne senectus sua in tam trepidis rebus damno dedecori" type="straight"/>
+        <underline language="LA" method="pen" text="dictator à co[n]sule" type="straight"/>
+        <underline language="LA" method="pen" text="Melium" type="straight"/>
+        <underline language="LA" method="pen" text="pauidus ille" type="straight"/>
+        <underline language="LA" method="pen" text="melius recipere se in cateruam" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--mu-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--quoni-->
+        
+        <mark method="pen" name="plus_sign" place="intext"/> <!-- pessimo exemplo -->
+        
+    </annotation>
+</transcription>

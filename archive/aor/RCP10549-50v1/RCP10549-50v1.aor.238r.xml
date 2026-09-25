@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.238r.tif" pagination="455" reader="John Dee" signature="fff.iiii."/>
+    <annotation>
+        
+        <marginalia anchor_text="in laude positos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        poni in laude
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To be praised.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in inuidiam aliqua[m] vocaueru[n]t" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vocare in invidia[m].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To call untrustworthy.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="inuulnerati, inuiolatíq[ue]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        invulneratus. inviolatus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Unwounded, undamaged.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="poenas aut praesenti morte, aut turpi exilio dependerunt" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        dependere po[e]nas.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To pay a penalty.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Graecos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Gra[e]ci.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The Greeks.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Themistoclem [...] Milciadis [...] Aristidis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Themistocles. Milciadis. Aristides
+                    </marginalia_text>
+                    <person name="Themistocles"/>
+                    <person name="Miltiades"/>
+                    <person name="Aristides"/>
+                </position>
+            </language>
+            <translation>
+                Themistocles, Miltiadis, Aristides.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        à maiori.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Generally.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Annibale" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Annibal.
+                    </marginalia_text>
+                    <person name="Hannibal"/>
+                </position>
+            </language>
+            <translation>
+                Hannibal.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Brutos, Camillos, Halas, Cedios, Curios, Fabricios, Maximos, Scipiones, Lentulos, AEmilios, innumerabiles alios" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Romani pr[a]eclari.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Famous Romans.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Adhortatio Cice. ad Iuve[n]tutem
+                    </marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>
+                Cicero's admonition to the youth.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="corpus virorum fortiu[m], magnorúmque hominu[m] esse mortale, animi verò motus &amp; virtutis gloria[m] sempiternam" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        A[n]i[m]a immortalis Corpus mortale
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Immortal soul, mortal body.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hercule" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Hercules.
+                    </marginalia_text>
+                    <person name="Hercules"/>
+                </position>
+            </language>
+            <translation>
+                Hercules.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="audacibus, improbis, nonnunquam etiam potentibus, dimicandum. Haec" type="straight"/>
+        <underline language="LA" method="pen" text="leues hos semper nostri homines &amp; audaces &amp; malos &amp; perniciosos ciues putaueru[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="At verò qui horum impetus &amp; conatus represserunt, qui authoritate, qui fide, qui constantia, qui magnitudine animi, consiliis audaciu[m] restiterunt:              ii graues, ii principes, ii duces, ii authores huius dignitatis atuqe imperii semper habiti sunt" type="straight"/>
+        <underline language="LA" method="pen" text="aut praesenti morte, aut turpi exilio dependerunt" type="straight"/>
+        <underline language="LA" method="pen" text="Graecos, longe à nostrorum hominum grauitate disiunctos" type="straight"/>
+        <underline language="LA" method="pen" text="nati, vnde orta mihi grauitas &amp; magnitudo" type="straight"/>
+        <underline language="LA" method="pen" text="insiste[n]tes, vt omnia humana leuiora videri debeant" type="straight"/>
+        <underline language="LA" method="pen" text="hostem literis nostris &amp; memoria videmus" type="straight"/>
+        <underline language="LA" method="pen" text="innumerabiles alios, qui hanc Remp. stabiliuerunt: quos equidem in deorum immortaliu[m] coetu ac numero repono" type="straight"/>
+        <underline language="LA" method="pen" text="consulamus bonis: praesenteis fructus negligamus: posteritati &amp; gloriae seruiamus: id esse optimu[m] putemus quod erit rectissimu[m]:              speremus quae volumus, sed quod acciderit feramus. cogitemus denique corpus virorum fortiu[m], magnorúmque" type="straight"/>
+        <underline language="LA" method="pen" text="motus &amp; virtutis gloria[m] sempiternam. neque hanc opinione[m] si in illo sanctissimo Hercule consecrata[m] videmus,              cuius corpore ambusto vitam eius &amp; virtute[m] immortalitas excaepisse" type="straight"/>
+        <underline language="LA" method="pen" text="aut laboribus aut auxerint, aut defenderint, aut seruarint, esse immortalem gloriam consecutos" type="straight"/>
+        <underline language="LA" method="pen" text="salutis, vestrae authoritas, publicae causae defensorem, propugnatorem, authorem, reum: video hunc praetextatum" type="straight"/>
+        <underline language="LA" method="pen" text="lachrymantibus me intuentem: video Milone[m] vindicem vestrae libertatis, custodem salutis meae, subsidium afflictae Reipublicae,              extinctorem domestici latrocinii, repressorem caedis quotidianae, defensorem templorum" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">12</numeral>
+        
+    </annotation>
+</transcription>

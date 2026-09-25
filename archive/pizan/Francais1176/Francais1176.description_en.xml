@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+   <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+   
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <title><hi rend="italics">Le livre de la vision</hi> by Christine de Pizan</title>
+         
+         </titleStmt>
+         
+         <publicationStmt>
+            
+            <distributor>MSEL</distributor>
+         
+         </publicationStmt>
+         
+         <notesStmt>
+            
+            <note rend="IDENTIFICATION">
+               
+               <p>Français 1176, Bibliothéque national de France, Paris. Paris, 1405-1406. </p>
+            
+            </note>
+            
+            <note rend="BASIC INFORMATION">
+               
+               <p>Parchment, 299 x 228 mm, 106 folios.</p>
+            
+            </note>
+            
+            <note rend="MATERIAL">
+               
+               <p> Ivory colored <material>parchment</material> with numerous defects like holes and stains. The <hi rend="italics">vis-à-vis</hi> is respected, except for folios <locus from="43" to="46">43-46</locus>.</p>
+                  
+            </note>
+            
+            <note rend="QUIRES">
+               <list>
+                  
+                  <head>Collation:</head>
+                  
+                  <item n="I">
+                     
+                     <locus from="1" to="8">1-8</locus>
+                     
+                  </item>
+                  
+                  <item n="II">
+                     
+                     <locus from="9" to="16">1-16</locus>
+                     
+                  </item>
+                  
+                  <item n="III">
+                     
+                     <locus from="17" to="24">17-24</locus>
+                     
+                  </item>
+                  
+                  <item n="IV">
+                     
+                     <locus from="25" to="32">25-32</locus>
+                     
+                  </item>
+                  
+                  <item n="V">
+                     
+                     <locus from="33" to="40">33-40</locus>
+                     
+                  </item>
+                  
+                  <item n="VI">
+                     
+                     <locus from="41" to="48">41-48</locus>
+                     
+                  </item>
+                  
+                  <item n="VII">
+                     
+                     <locus from="49" to="56">49-56</locus>
+                     
+                  </item>
+                  
+                  <item n="VIII">
+                     
+                     <locus from="57" to="64">57-64</locus>
+                     
+                  </item>
+                  
+                  <item n="IX">
+                     
+                     <locus from="65" to="72">65-72</locus>
+                  </item>
+                  
+                  <item n="X">
+                     
+                     <locus from="73" to="80">73-80</locus>
+                     
+                  </item>
+                  
+                  <item n="XI">
+                     
+                     <locus>81</locus>
+                     
+                  </item>                 
+               </list>
+                                 
+               <p> (II) + I + 81 + (I) + I. Modern foliation on the top right is accurate.</p>
+            
+            </note>
+            
+            <note rend="LAYOUT">
+               
+               <p>There are regular light grey ruling marks. There is also evidence of pricking with ten master pricks on every single folio. The pricks were done with different awls (slits, triangular, round). There are two columns with 31, sometimes 32, lines each.</p>
+            
+            </note>
+            
+            <note rend="SCRIPT">
+               
+               <p>The text is written quite uniformely in dark brown ink, with bright red for the rubrics. The text seems to have been written by one scribe (Hand X) in an exuberant cursive calligraphic script. All his "e" had a slight horn on top, and the letters at the beginning and end of lines had prolonged stems. Some lettes contain phylacteries or cadels as well. Punctuation marks are also used, especially the comma and period, with an overwhelming preference for the former. There are corrections by the hand of X and X' throughout the manuscript.</p>
+            
+            </note>
+            
+            <note rend="DECORATION">
+               
+               <p>The ornamental decoration of the manuscript was created by the artist whose style has been identified as <hi rend="italics">"aux brins de fantaisie"</hi>. The manuscript contains two large foliated initials over a gold leaf background (vignette). In folio <locus>1</locus>, the initial I, with red, blue and white foliates, is connected to the gold leaf foliated bar border. Some crosslets are interspersed between the foliage on the border. On folio <locus>25</locus>, there is an initial A, with red, blue and white foliates, over a gold leaf and blue background (vignette), with foliate extenders that partially frams the rubric above and the text below on the left margin.</p>
+               <p>There are many small gold leaf initials at the beginning of each text over alternating backgrounds in either blue or pink.</p>
+                <p>There is only one miniature decorating this manuscript on folio <locus>1</locus>, Christine writing at her desk, created by the Master of l'Epitre Othea.</p>
+         </note>
+            
+            <note rend="BINDING">
+               
+               <p> The manuscript is bound in red Moroccan leather with the royal coat of arms on the covers within three golden filets. The spine contains five nerves decorated with large <hi rend="italics">fleurs de lys</hi> surrounded by smaller ones. The title of the work appears as <hi rend="italics">"VISION DE CHRIS"</hi> on the spine as well. The last section appears partially covered by the shelfmark "FR 1176". The borders of the covers, thin lines, are embossed in gold.</p>
+            </note>
+            
+            <note rend="HISTORY">
+               
+               <p>This manuscript can be dated to the end of 1405 or the beginnings of 1406. This manuscript is the oldest copy of this work that has come down to us.</p>
+               <p>Provenance: The inside of the top cover contains an inscription written by the hand of one of Charles d'Orleans' librarians that reads <hi rend="italics">"La Vision de Cristine du duc de Berry"</hi>. It is possible that the volume belonged first to the Jean de Berry (1340-1416), which was then given as a gift to his nephew, Louis d'Orleans, who then gave it to Charles d'Orleans. As with the rest of the library of charles d'Orelans, this manuscript entered the Royal Library with the stamp located on ff. <locus>1</locus> and <locus>81</locus>. On folio <locus>1</locus> there are the following old shelfmarks: 944 (Rigault), 705 (Dupuy) and 7394 (Regius).</p>
+                  
+            </note>
+            
+            <note rend="TEXT">
+               
+               <p>The manuscript only contains the <hi rend="italics">Livre de la Vision</hi> by Christine de Pizan. </p>
+                             
+            </note>
+           
+            <note rend="AUTHOR">
+              
+               <p>
+*The information given here comes from direct observation and from Ouy, Gilbert, Christine Reno and Inès Villela-Petit.<hi rend="italics"> Album Christine de Pizan </hi>. Turnhout: Brepols, 2012. </p>
+<p> Description by Mónica Ann Walker Vadillo</p>
+            
+            </note>
+         
+         </notesStmt>
+         
+         <sourceDesc>
+            
+            <bibl>
+               
+               <note type="format">manuscript</note>
+               
+               <note type="commonName">Français 1176</note>
+               
+               <title> <hi rend="italics">Livre de la Vision</hi> by Christine de Pizan</title>
+
+               
+               <extent>
+                  
+                  <measure quantity="81" unit="folios">81 folios</measure>
+                  
+                  <dimensions>
+                     
+                     <height unit="mm">291</height>
+                     
+                     <width unit="mm">209</width>
+                  
+                  </dimensions>
+               
+               </extent>
+               
+               <note type="illustrations">1</note>
+                        
+               
+               
+               
+               <note type="material">parchment</note>
+               
+               <pubPlace>Paris, France</pubPlace>
+     
+               <date notAfter="1500" notBefore="1400">15th century</date>
+            
+            </bibl>
+            
+            <msDesc>
+               
+               <msIdentifier>
+                  
+                  <settlement>Paris</settlement>
+                  
+                  <repository>Bibliothèque nationale de France</repository>
+                  
+                  <idno>Français 1176</idno>
+               
+               </msIdentifier>
+            
+               <msContents>
+                  <msItem n="1">
+                     <locus from="1r" to="81v">1r-81v</locus>
+                     <title> <hi rend="italics">Livre de la Vision</hi> by Christine de Pizan</title>
+                     <note type="textid"> <hi rend="italics">Livre de la Vision</hi> by Christine de Pizan</note>
+                     <note type="folios">81</note>
+                     <note type="illustrations">1</note>
+                     <note type="linesPerColumn">31</note>
+                     <note type="leavesPerGathering">8</note>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         
+         </sourceDesc>
+      
+      </fileDesc>
+   
+   </teiHeader>
+   
+   <text>
+      
+      <body>
+         
+         <div> </div>
+      
+      </body>
+   
+   </text>
+
+</TEI>

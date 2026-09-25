@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.262r.tif" pagination="255" reader="John Dee" signature="SS iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="possibly anchor Stellae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ratio cur stell[a]e fixa[e], hic illic in coelo sparga[n]tur.</marginalia_text>
+                </position>
+            </language>
+            <translation>The reason why fixed stars are spread across in the sky.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iupiter per singulorum annorum motum facit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>♃ motus zodiacu[m] in [..] partes distingue[n]s</marginalia_text> <!--JG: Can't get word before 'partes' vt?--> <!-- FSF: it looks like an rz to me, but I can't find this abbreviation in the Cappelli -->
+                    <symbol_in_text name="Jupiter"/>
+                </position>
+            </language>
+            <translation>Separating Jupiter's movement in the Zodiac in [..] parts.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cur planeta[e] in suis motibus varias qualitates terrestrib[us] inducant</marginalia_text>
+                </position>
+            </language>
+            <translation>Why the planets induce various qualities on the land in their motions.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sationes in Solis distantia in Saturno quidem faltem 108" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Stationes PL[...] pro exemplo vide in ephemeride illa 1532. in februario saturni statione[m] a solis loca distare gradus 108 [etc].</marginalia_text> <!--JG: Unsure--> <!-- FSF: could it be an abbreviation for some form of planeta? -->
+                </position>
+            </language>
+            <translation>The stations [...], for example see in that ephemeris, February 1532, that the station of Saturn stands apart 108 degrees from the sun, et cetera.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>[fix[ae].</marginalia_text>
+                </position>
+            </language>
+            <translation>Fixed.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Alij ob rationem diuersarum opinionum in motu earum, loca incerta ipsarum" type="straight"/>
+        <underline language="LA" method="pen" text="diuisionem Iupiter per singulorum annorum motum fact, par aut[em] erat, hanc fieri à fortuna, Soli amica" type="straight"/>
+        <underline language="LA" method="pen" text="At caeterae erraticae, praeter haec habent uim diuersam, quam inferioribus his influant, uel ex motu in paruo circulo, uel in latitudinem, uel in comparatione partium, quae uberius uim ipsius Solis susceperunt" type="straight"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="At caeterae erraticae, praeter haec habent uim diuersam, quam inferioribus his influant, uel ex motu in paruo circulo, uel in latitudinem, uel in comparatione partium, quae uberius uim ipsius Solis susceperunt"/>
+        
+    </annotation>
+</transcription>

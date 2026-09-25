@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.072v.tif" pagination="[65v]" reader="John Dee" signature="[R[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Ita eligere debes significatore[m] diuitiaru[m], ex ♃ scilic[et] et secunda // 
+                    et eor[um] d[omi]nis per accidens / Cum igitur dominus secund[a]e fuerit ♂ [etc]</marginalia_text> 
+                    <symbol_in_text name="Jupiter"/>
+                    <symbol_in_text name="Mars"/>
+                </position>
+            </language>
+            <translation>Thus you ought to chose the signifier of the wealthy, from Jupiter, certainly even the second and through the accident of their lords. When
+                therefore the lord of the second was Mars, et cetera.
+            </translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="cum luminaria fixis fortunatis copulantur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>☉ ☾ cu[m] fixis fortunatis.</marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>The sun and the moon with fixed fortunes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>eas diuitias</marginalia_text>
+                </position>
+            </language>
+            <translation>Those riches.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>proveniunt</marginalia_text>
+                </position>
+            </language>
+            <translation>They come forth</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quae" type="straight"/>
+        <underline language="LA" method="pen" text="uxorum" type="straight"/>
+        <underline language="LA" method="pen" text="cum luminaria fixis fortunatis copulantur" type="straight"/>
+        <underline language="LA" method="pen" text="Est igitur prima uis mutui dominij" type="straight"/>
+        <underline language="LA" method="pen" text="caput Ioui" type="straight"/>
+        <underline language="LA" method="pen" text="aut significatori iungatur" type="straight"/>
+        <underline language="LA" method="pen" text="hae monume[n]tis operu[m] &amp; literarum" type="straight"/>
+        <underline language="LA" method="pen" text="ex diuitijs" type="straight"/>
+        <underline language="LA" method="pen" text="ex iustitia" type="straight"/>
+        <underline language="LA" method="pen" text="probitate" type="straight"/>
+        
+    </annotation>
+</transcription>

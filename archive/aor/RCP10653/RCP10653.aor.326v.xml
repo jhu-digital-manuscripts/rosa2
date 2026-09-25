@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.326v.tif" pagination="204" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Comes Marescallus VValterus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Walterus, Comes Mariscallus [etc]   
+                    </marginalia_text>
+                    <person name="Walter Marshal, 5th Earl of Pembroke"/>
+                </position>
+            </language>
+            <translation>
+                Walter Marshal, 5th Earl of Pembroke.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Anselmus frater ipsius" type="straight"/>
+        <underline language="LA" method="pen" text="Marescallia, qui ei iure" type="straight"/>
+        <underline language="LA" method="pen" text="o[mn]es filij magni Marescalli" type="straight"/>
+        <underline language="LA" method="pen" text="Comitissae matris eorum vaticinium" type="straight"/>
+        <underline language="LA" method="pen" text="liberis post se relictis, quasi vmbrae ab hoc seculo migrauerunt" type="straight"/>
+        <underline language="LA" method="pen" text="tame[n] successiuè Comites" type="double"/>
+        <underline language="LA" method="pen" text="prophetico" type="straight"/>
+        <underline language="LA" method="pen" text="tantis hostibus Angliae formidabilis, euanuit" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- VValterus Londoni -->
+        <mark method="pen" name="circumflex" place="intext"/>
+        
+        <errata amendedtext="premerentur" copytext="primerentur" language="LA"/>  
+        
+    </annotation>
+</transcription>

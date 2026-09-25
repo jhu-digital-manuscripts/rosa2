@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.217r.tif" pagination="217" reader="John Dee" signature="Ee"/>
+    <annotation>
+           
+        <marginalia anchor_text="anno MDIII" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>1503</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="al fiume di Vrira" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vrira Fl[umen]</marginalia_text>
+                    <location name="Vrira"/>
+                </position>
+            </language>
+            <translation>The river of Vrira.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cacique di Dururi" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dururi</marginalia_text>
+                </position>
+            </language>
+            <translation>[The tribal chief of the] pre-Columbian, indigenous group, the Dururi.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="al fiume di" type="straight"/>
+        <underline language="IT" method="pen" text="di Betlem" type="double"/>
+        <underline language="IT" method="pen" text="di Dururi" type="straight"/>
+        
+    </annotation>
+</transcription>

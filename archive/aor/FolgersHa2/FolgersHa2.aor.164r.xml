@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.164r.tif" pagination="151" reader="Harvey" signature="K4[r]"/>	<!-- ABO 168right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Pragmaticus, omnium dexterrimus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A pragmatist, the most skillful of all.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Ad propria; Euschemosyne,
+						et Entelechia. Ad aliena;
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Hyperbole, aut Ironia.
+						Quales Socratis Apologia[e] pro amicis;
+						aut contra inimicos.
+						Socrates semper intùs, Socrates: quicquid
+						) extra.
+					</marginalia_text>
+					<person name="Socrates"/>
+				</position>
+			</language>
+			<translation>Towards individual things: refinement and actualization. Towards foreign things: hyperbole and irony. Of the sort as Socrates' apologies for his friends or against enemies.
+				Socrates was always within, Socrates: whatever lay without.
+			</translation>
+		</marginalia>		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Eò quisq[ue] promptior, quò Deo affinior.)
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The more prompt someone is, the more he is allied to God.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Pragmaticus, absolutè prudens, et fortis: aut Ciphra.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A pragmatist, entirely prudent and strong: or Cyphers.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						risoluto.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Resolute.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						( Nihil tam scitum, quàm nihil
+						profiteri: perpetrare maxima. Vivum mundi
+						Paradoxum. Jupiter
+					</marginalia_text>
+					<person name="Jupiter"/>
+				</position>
+			</language>
+			<language ident="EL">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						ἀπὸ μηχανῆς.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Nothing is as known as nothing is declared: to accomplish the greatest things. The living paradox of the world. Jupiter from the machine.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Ineptus est Pragmaticus, qui non est omnium dexterrimus in negociando: 
+						confidentissimus in prosequendo: efficacissimus in perficiendo. Industriam
+						pla[e]riq[ue] vrgent: sed non satis aptam penetrantem;
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						absolutam.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>He who is not the most skilled of all in doing business: most confident in pursuing: most efficient in accomplishing, is an inept pragmatist.
+			Very many urge industriousness: but it is not a sufficiently apt penetration, nor complete.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Mundus, vnicus 
+						Liber S. Antonij.
+					</marginalia_text>
+					<person name="Saint Anthony of Padua "/>
+				</position>
+			</language>
+			<translation>The world: the sole book of Saint Anthony.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Diogenes, in
+						seipso omnes philosophi.
+					</marginalia_text>
+					<person name="Diogenes of Sinope"/>
+				</position>
+			</language>
+			<translation>Diogenus, all philosophers in himself.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Omnia (in manu: singula ad vnque[m].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Everything in hand: the singular things by heart.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="de' Principi" type="straight"/>
+		<underline language="IT" method="pen" text="osseruare la fede" type="straight"/>
+		<underline language="IT" method="pen" text="medesimo Re Francesco" type="straight"/>
+		<underline language="IT" method="pen" text="quando la fede douesse" type="straight"/>
+		<underline language="IT" method="pen" text="restar fra' Principi" type="straight"/>
+		<underline language="IT" method="pen" text="lor possanza è" type="straight"/>
+		<underline language="IT" method="pen" text="giuditij" type="straight"/>
+		<underline language="IT" method="pen" text="per leggi" type="straight"/>
+		<underline language="IT" method="pen" text="sauio" type="straight"/>
+		<underline language="IT" method="pen" text="Re Alfonso" type="straight"/>
+		<underline language="IT" method="pen" text="che la parola" type="straight"/>
+		<underline language="IT" method="pen" text="quanto'l giuramento" type="straight"/>
+		<underline language="IT" method="pen" text="de' priuati" type="straight"/>
+		<underline language="IT" method="pen" text="Principi" type="straight"/>
+		<underline language="IT" method="pen" text="della Fede saggiamente" type="straight"/>
+		<underline language="IT" method="pen" text="La fed vnqua" type="straight"/>
+		<underline language="IT" method="pen" text="esser corrotta" type="straight"/>
+		<underline language="IT" method="pen" text="à vn solo" type="straight"/>
+		<underline language="IT" method="pen" text="insieme à mille" type="straight"/>
+		<underline language="IT" method="pen" text="Basta vna volta" type="straight"/>
+		<underline language="IT" method="pen" text="s'habbia promesso" type="straight"/>
+		<underline language="IT" method="pen" text="I saui viuer'in" type="straight"/>
+		<underline language="IT" method="pen" text="temono le calunnie" type="straight"/>
+		<underline language="IT" method="pen" text="diceuano male di" type="straight"/>
+		<underline language="IT" method="pen" text="che non sarà prestato loro" type="straight"/>
+		<underline language="IT" method="pen" text="che mi correggi anche in mia" type="straight"/>
+		<underline language="IT" method="pen" text="Quinto Imperadore" type="straight"/>
+		
+		<symbol name="SS" place="head"/>
+		
+		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- parola -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- giura -->
+		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- calunnie -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- di -->
+		<mark method="pen" name="straight_quotation_mark" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!-- fe -->
+		
+		<mark method="pen" name="dot" place="intext"/> <!-- Principi, perche -->
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- leggi. Et -->
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- priuato. L'Ariosto -->
+		
+    </annotation>
+</transcription>

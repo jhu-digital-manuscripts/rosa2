@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.004r.tif" pagination="5" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="verbis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>verba</marginalia_text>
+                </position>
+            </language>
+            <translation>Words.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="lachrymis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lachryma[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Tears.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="spes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Spes.</marginalia_text>
+                </position>
+            </language>
+            <translation>Hope.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="simplicitas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>simplicitas</marginalia_text>
+                </position>
+            </language>
+            <translation>Openness.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Heu patior telis vulnera facta meis" type="straight"/>
+        <underline language="LA" method="pen" text="lateri conseruisse latus" type="straight"/>
+        <underline language="LA" method="pen" text="Quaecunq[ue] ex merito spes venit, aequa venit" type="straight"/>
+        <underline language="LA" method="pen" text="Gloria, simplicitas digna fauore fuit" type="straight"/>
+         
+    </annotation>
+</transcription>

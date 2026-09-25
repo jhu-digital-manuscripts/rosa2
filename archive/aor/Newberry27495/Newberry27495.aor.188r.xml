@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.188r.tif" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="Italian" other_reader="modern hand">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        s[upr]a.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                [See] above.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        haled vp to [the] sight of heauenly secrets.
+                        haled vp to [the] third heauen.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="reuerence of the Dutchesse" type="straight"/>
+        <underline language="EN" method="pen" text="lodginges without" type="straight"/>
+        <underline language="EN" method="pen" text="torche" type="straight"/>
+        <underline language="EN" method="pen" text="Generall tourned" type="straight"/>
+        <underline language="EN" method="pen" text="take vp the variance" type="straight"/>
+        <underline language="EN" method="pen" text="L. Gaspar wyll accuse" type="straight"/>
+        <underline language="EN" method="pen" text="some false reporte" type="straight"/>
+        <underline language="EN" method="pen" text="suretye" type="straight"/>
+        <underline language="EN" method="pen" text="stand to triall" type="straight"/>
+        <underline language="EN" method="pen" text="wauering starter." type="straight"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!-- triall -->
+        
+        <mark language="EN" method="pen" name="quotation_mark" place="right_margin" text="waueringe starter"/>
+        
+    </annotation>
+</transcription>

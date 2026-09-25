@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.036v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="a[n]droge[us] sc[a]eua[m] filiu[m] suu[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Sceua filius Androgei.
+                    </marginalia_text>
+                    <person name="Scaeva"/>
+                    <person name="Androgeus"/>
+                </position>
+            </language>
+            <translation>Scaeva, son of Androgeus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="a[n]droge[us] sc[a]eua[m] filiu[m]" type="straight"/>
+
+
+    </annotation>
+</transcription>

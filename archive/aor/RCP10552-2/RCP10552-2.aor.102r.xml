@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.102r.tif" pagination="193" reader="John Dee" signature="R."/>
+    <annotation>
+        
+        <marginalia anchor_text="leges terrae bonas vbiq; seruari faceret &amp; pr[a]ecipuè leges S. Edvvardi regis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Leges Edwardi boni Regis</marginalia_text>  
+                    <person name="Edward III of England"/>
+                </position>
+            </language>
+            <translation>The Laws of Edward, a good King.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="&amp; in quibus" type="double"/>
+        <underline language="LA" method="pen" text="iurauit rex" type="straight"/>
+        <underline language="LA" method="pen" text="iuramentu[m] audire potueru[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="Iuramentum regis ante coronationem" type="straight"/>
+        <underline language="LA" method="pen" text="pr[a]ecipuè leges S. Edvvardi regis &amp; confessoris qui in eade[m] requiescit ecclesia &amp; malas              leges faceret" type="straight"/>
+        
+        <mark method="pen" name="dot" place="right_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- ecclesia, &amp; -->
+        
+        <drawing book_orientation="0" method="pen" place="head" type="florilegium"/>
+        
+    </annotation>
+</transcription>

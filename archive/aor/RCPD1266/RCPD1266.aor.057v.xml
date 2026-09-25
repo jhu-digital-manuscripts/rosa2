@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.057v.tif" pagination="100" reader="John Dee" signature="[i.ij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="vniuersali historia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Vniversale[m] historia[m] promittit.</marginalia_text>
+                </position>
+            </language>
+            <translation>He promises a universal history.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="natiuitas Phaleg" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Natiuitas Phaleg.</marginalia_text>
+                    <person name="Peleg"/>
+                </position>
+            </language>
+            <translation>The birth of Peleg.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="centesimo &amp; vno" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A[nn]o 101</marginalia_text> 
+                </position>
+            </language>
+            <translation>In the year 101.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="decimus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Decimus</marginalia_text>
+                </position>
+            </language>
+            <translation>Tenth.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ad suppositas retulerunt" type="straight"/>
+        <underline language="LA" method="pen" text="bellum" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; bellum" type="straight"/>
+        <underline language="LA" method="pen" text="Roma enim Troianos habet" type="straight"/>
+        <underline language="LA" method="pen" text="Dominus dederit" type="straight"/>
+        <underline language="LA" method="pen" text="cogemus corpus" type="straight"/>
+        <underline language="LA" method="pen" text="relatis ad sua tempora singulis" type="straight"/>
+        <underline language="LA" method="pen" text="vniuersali historia constituenda" type="straight"/>
+        <underline language="LA" method="pen" text="centesimo &amp;" type="double"/>
+        <underline language="LA" method="pen" text="diluuium anno" type="straight"/>
+        <underline language="LA" method="pen" text="confusionis linguarum &amp; orbis terrarum in tres partes distributi tempus denotat" type="straight"/>
+        <underline language="LA" method="pen" text="est" type="straight"/>
+        <underline language="LA" method="pen" text="decimus" type="double"/>
+        <underline language="LA" method="pen" text="decimus erat Noe" type="straight"/>
+        <underline language="LA" method="pen" text="ex filio resciuisset" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

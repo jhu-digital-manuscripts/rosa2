@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.108r.tif" pagination="39" reader="Harvey" signature="C4[r]"/>	<!-- ABO 112right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Igneus est ollis vigor, et coelestis origo.
+						Axiophili tandem Emblema.
+					</marginalia_text>
+					<person name="Axiophilus"/>
+					<X-ref book_title="Aeneid" language="LA" person="Virgil" text="Igneus est ollis vigor et coelestis origo"/>
+				</position>
+			</language>
+			<translation>
+				"There is a fiery vigor in them and a celestial origin."
+				At last, the device of Axiophilus.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						/ Simplicitie
+						Wrangles about trifles: iudgment
+						) contemnes common
+						debates, &amp;
+						scornes a thousand quarrels.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Mulier perpaucarum Mulierum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A woman of very few women.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Singula vel potentiùs, vel dexteriùs.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Singular matters either more effectively or more skillfully.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Omnia in Xenophonte, et Ca[e]sare expedita, et quasi sua sponte fluentia. Nihil affectatum. Summa eorum laus 
+					</marginalia_text>
+					<person name="Xenophon"/>
+					<person name="Julius Caesar"/>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						in claritate, prudentia, vigore.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				In Xenophon and Caesar all things are let loose and flow as if of their own accord. Nothing affected.
+				Their highest praise lies in clarity, prudence, and vigor.
+			</translation>
+		</marginalia>
+			
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Artifex ille est peritus, qui singulas sui corporis, animiq[ue] partes, uel
+						fortiores facit, vel saltem dexteriores, quàm sunt aliorum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Skilled is that artist who makes the singular parts of his body and mind stronger, or at least more dexterous than those of other people.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="egregiamente le donne pudiche seruino fede al marito" type="straight"/>
+		<underline language="IT" method="pen" text="belleza d'esso Ciro" type="straight"/>
+		<underline language="IT" method="pen" text="non vi ho mai leuati gli occhi" type="straight"/>
+		<underline language="IT" method="pen" text="da dosso" type="straight"/>
+		<underline language="IT" method="pen" text="quanto Ciro" type="straight"/>
+		<underline language="IT" method="pen" text="altri huomini sieno belli, ò brutti" type="straight"/>
+		<underline language="IT" method="pen" text="Le liti esser perdimento" type="straight"/>
+		<underline language="IT" method="pen" text="di tempo, di" type="straight"/>
+		<underline language="IT" method="pen" text="differenza di dare &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="aperto piato" type="straight"/>
+		<underline language="IT" method="pen" text="aperta guerra" type="straight"/>
+		<underline language="IT" method="pen" text="l'altro à solo à solo" type="straight"/>
+		<underline language="IT" method="pen" text="co[n]giunti la natura" type="straight"/>
+		<underline language="IT" method="pen" text="honesto, che l'auaritia ci disgiunga" type="straight"/>
+		<underline language="IT" method="pen" text="tutte le liti sono dubbie, non manco che le guerre" type="straight"/>
+		<underline language="IT" method="pen" text="piacere cominciar à piatire" type="straight"/>
+		<underline language="IT" method="pen" text="non puo già à sua posta finire" type="straight"/>
+		<underline language="IT" method="pen" text="importa trecento scudi" type="straight"/>
+		<underline language="IT" method="pen" text="spenderemo il doppio" type="straight"/>
+		<underline language="IT" method="pen" text="notai" type="straight"/>
+		<underline language="IT" method="pen" text="procuratori" type="straight"/>
+		<underline language="IT" method="pen" text="auuocati, in giudici" type="straight"/>
+		<underline language="IT" method="pen" text="far de gli amici" type="straight"/>
+		<underline language="IT" method="pen" text="seruire, adulare" type="straight"/>
+		
+		<symbol name="JC" place="intext"/>
+		
+		<mark language="IT" method="pen" name="plus_sign" place="left_margin" text="honesto, che l'auaritia ci disgiunga"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--quel-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--dal-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--sa-->
+		<mark language="IT" method="pen" name="plus_sign" place="right_margin" text="tutte le liti sono dubbie, non manco che le guerre"/>
+		<mark method="pen" name="plus_sign" place="right_margin"/>	
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="altri huomini sieno belli, ò brutti"/> 
+
+    </annotation>
+</transcription>

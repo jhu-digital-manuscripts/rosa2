@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.064v.tif" pagination="[64[v]]" reader="John Dee" signature="Hviij[v]]"/>
+    
+    <annotation>
+        
+     <marginalia anchor_text="XVI di Decembre" hand="Italian" method="pen">
+         <language ident="LA">
+             <position book_orientation="0" place="left_margin">
+                 <marginalia_text>16 Dece[m]bris</marginalia_text>
+             </position>
+         </language>
+         <translation>16 December</translation>
+     </marginalia>   
+        
+        <marginalia anchor_text="vno Indian solo, &amp; vna picciola Canoa" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>An Indian in a Canoa taken</marginalia_text>
+                </position>
+            </language>
+        </marginalia>   
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A Policy.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>   
+        
+        <marginalia anchor_text="con XL huomini" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A great Canoa w[i]th 40 men</marginalia_text>
+                </position>
+            </language>
+        </marginalia>  
+        
+        <marginalia anchor_text="naue" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>canoa</marginalia_text>
+                </position>
+            </language>
+        </marginalia>   
+        
+        <marginalia hand="Italian" method="pen">    <!-- DO: refers to the errata -->
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>there was but one cano[e]</marginalia_text>
+                </position>
+            </language>
+        </marginalia>   
+        
+        <underline language="IT" method="pen" text="oltre al Leuante" type="straight"/>
+        <underline language="IT" method="pen" text="XVI" type="straight"/>
+        <underline language="IT" method="pen" text="la Tortuga" type="straight"/>
+        <underline language="IT" method="pen" text="&amp;" type="straight"/>
+        <underline language="IT" method="pen" text="era il" type="straight"/>
+        <underline language="IT" method="pen" text="nella naue" type="double"/>
+        <underline language="IT" method="pen" text="&amp; lo mandò in terra" type="straight"/>
+        <underline language="IT" method="pen" text="doni" type="straight"/>
+        <underline language="IT" method="pen" text="le carezze" type="triple"/>
+        <underline language="IT" method="pen" text="che di subito" type="double"/>
+        <underline language="IT" method="pen" text="granelli di" type="double"/>
+        <underline language="IT" method="pen" text="di qual parte" type="straight"/>
+        <underline language="IT" method="pen" text="hauessero quell oro" type="double"/>
+        <underline language="IT" method="pen" text="Canoa" type="straight"/>
+        <underline language="IT" method="pen" text="Isola Tortuga" type="straight"/>
+        <underline language="IT" method="pen" text="con XL" type="double"/>
+        <underline language="IT" method="pen" text="tutti à sedere in terra, in segno che non" type="straight"/>
+        <underline language="IT" method="pen" text="combattere" type="straight"/>
+        <underline language="IT" method="pen" text="naue" type="straight"/>
+        <underline language="IT" method="pen" text="di minaccie li fece tornare" type="straight"/>
+        <underline language="IT" method="pen" text="alle" type="triple"/>
+        <underline language="IT" method="pen" text="Canoe" type="double"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- DO: comma between 'ricercati, di qual' -->
+        
+        <errata amendedtext="Indiano" copytext="Indian" language="IT"/>
+        
+        <errata amendedtext="alla" copytext="alle" language="IT"/>
+        
+        <errata amendedtext="Canoa" copytext="Canoe" language="IT"/>
+        
+    </annotation>
+       
+    
+</transcription>

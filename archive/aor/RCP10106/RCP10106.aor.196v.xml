@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.196v.tif" pagination="392" reader="John Dee" signature="[B 4[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="ἐπίθετον" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ἐπίθετον.</marginalia_text>
+                </position>
+            </language>
+            <translation>Addition.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nisi aliquid eiffictur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Qua[n]do aliq[ui]d efficitur</marginalia_text>
+                </position>
+            </language>
+            <translation>When something is accomplished.</translation>
+        </marginalia>
+      
+        <marginalia anchor_text="similem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Simile</marginalia_text>
+                </position>
+            </language>
+            <translation>Similar.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="enim semper ut id, quod ist appositum, si à proprio diuiseris, per se significet, &amp; faciat antonomasiam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nota</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἀλληγορία " hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ἀλληγορία</marginalia_text>
+                </position>
+            </language>
+            <translation>Allegory.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Horatij" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Horatius</marginalia_text>
+                    <person name="Horace"/>
+                </position>
+            </language>
+            <translation>Horace</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="appositum" type="straight"/>
+        <underline language="LA" method="pen" text="sequens" type="straight"/>
+        <underline language="LA" method="pen" text="Namq[ue] illis satis est co[n]uenire uerbo, cui apponitur" type="straight"/>
+        <underline language="LA" method="pen" text="Apud oratore[m], nisi aliquid efficitur, redundat. Tum autem efficitur" type="straight"/>
+        <underline language="LA" method="pen" text="O' scelus abomina[n]dum, O' deformem libidinem" type="straight"/>
+        <underline language="LA" method="pen" text="nuda sit, &amp; uelut incompta oratio" type="straight"/>
+        <underline language="LA" method="pen" text="enim semper ut id, quod ist appositum, si à proprio diuiseris, per se significet, &amp; faciat antonomasiam" type="straight"/>
+        <underline language="LA" method="pen" text="quam inuersionem" type="straight"/>
+        <underline language="LA" method="pen" text="etiam interim" type="straight"/>
+        <underline language="LA" method="pen" text="Totus'q[ue] etiam ille Horatij locus, quo nauim pro republica, fluctuum tempestates pro bellis ciuilibus, portum pro pace" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.198r.tif" pagination="379" reader="Harvey" signature="ii4[r]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Flauius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Flauius, uersutus pragmaticus.
+                    </marginalia_text>
+                    <person name="Flavius Lucanus"/>
+                </position>
+            </language>
+            <translation>Flavius, a cunning pragmatic.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Gracchus fraudem &amp; sermoni &amp; rei abesse ratus, ac similitudine ueri captus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Flauij perfidum stratagema.
+                    </marginalia_text>
+                    <person name="Flavius Lucanus"/>
+                </position>
+            </language>
+            <translation>Flavius' treacherous ploy.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Flauius Lucanus fuit" type="straight"/>
+        <underline language="LA" method="pen" text="caput partis eius" type="straight"/>
+        <underline language="LA" method="pen" text="cum Romanis stabat" type="straight"/>
+        <underline language="LA" method="pen" text="illis creatus praetor" type="straight"/>
+        <underline language="LA" method="pen" text="mutata repentè uoluntate" type="straight"/>
+        <underline language="LA" method="pen" text="locum grati[a]e apud Poenu[m] quaerens" type="straight"/>
+        <underline language="LA" method="pen" text="neq[ue] tra[n]sire" type="straight"/>
+        <underline language="LA" method="pen" text="trahere ad defectionem Lucanos" type="straight"/>
+        <underline language="LA" method="pen" text="hospitis proditi" type="straight"/>
+        <underline language="LA" method="pen" text="capite ac sanguine foedus cum hostibus sanxisset" type="straight"/>
+        <underline language="LA" method="pen" text="clàm in colloquium" type="straight"/>
+        <underline language="LA" method="pen" text="Romanu[m] is imperatorem" type="straight"/>
+        <underline language="LA" method="pen" text="eas latebras" type="straight"/>
+        <underline language="LA" method="pen" text="ingentem numeru[m] occuleret, iubet" type="straight"/>
+        <underline language="LA" method="pen" text="dies co[m]posita gerendae rei" type="straight"/>
+        <underline language="LA" method="pen" text="Flauius ad Romanu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="se ait magna[m] inchoasse, ad" type="straight"/>
+        <underline language="LA" method="pen" text="redirent in amicitia[m] Romanoru[m]: quando" type="straight"/>
+        <underline language="LA" method="pen" text="res quoq[ue] Romana" type="straight"/>
+        <underline language="LA" method="pen" text="in dies melior atq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="Annibalis uis senesceret" type="straight"/>
+        <underline language="LA" method="pen" text="ipso Graccho" type="straight"/>
+        <underline language="LA" method="pen" text="pignus fidei" type="straight"/>
+        <underline language="LA" method="pen" text="Locum se consilijs edixisse" type="straight"/>
+        <underline language="LA" method="pen" text="conspectu amotum" type="straight"/>
+        <underline language="LA" method="pen" text="Gracchus fraudem &amp; sermoni &amp; rei abesse ratus" type="straight"/>
+        <underline language="LA" method="pen" text="similitudine ueri" type="straight"/>
+        <underline language="LA" method="pen" text="duce hospite in insidias" type="straight"/>
+        <underline language="LA" method="pen" text="pr[a]ecipitatus" type="straight"/>
+        <underline language="LA" method="pen" text="Hostes subitò exorti" type="straight"/>
+        <underline language="LA" method="pen" text="dubia proditio esset" type="straight"/>
+        <underline language="LA" method="pen" text="Gracchus ex equo desilit, idem" type="straight"/>
+        <underline language="LA" method="pen" text="unum reliquum fortuna fecerit, id honestent uirtute" type="straight"/>
+        <underline language="LA" method="pen" text="paucis à multitudine" type="straight"/>
+        <underline language="LA" method="pen" text="praesenti torpore pecorum" type="straight"/>
+        <underline language="LA" method="pen" text="toto animo à patiendo expectandoq[ue] euentu" type="straight"/>
+        
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/>
+        <!--crea-->
+        <mark method="pen" name="dash" place="right_margin"/>
+        <!--tra[n]si-->
+        <mark method="pen" name="dash" place="right_margin"/>
+        <!--Poe-->
+        <mark method="pen" name="dash" place="right_margin"/>
+        <!--nul-->
+        <mark method="pen" name="dash" place="right_margin"/>
+        <!--Grac-->
+        <mark method="pen" name="dash" place="right_margin"/>
+        <!--te-->
+        <mark language="LA" method="pen" name="plus_sign" place="right_margin" text="unum reliquum fortuna fecerit, id honestent uirtute"/>
+        <mark method="pen" name="dash" place="right_margin"/>
+        <!--cir-->
+        <mark language="LA" method="pen" name="plus_sign" place="right_margin" text="praesenti torpore pecorum"/>
+        
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--uenisset. ueteri-->
+        
+    </annotation>
+</transcription>

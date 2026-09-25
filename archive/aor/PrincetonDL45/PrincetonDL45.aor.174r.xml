@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonDL45.174r.tif" pagination="347" reader="Harvey" signature="GGij[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Variaru[m] difficultatu[m] coaceruatio.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The aggregation of various difficulties.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="De subita perplexitate ducum" type="straight"/>
+        <underline language="LA" method="pen" text="ab hostilibus" type="straight"/>
+        <underline language="LA" method="pen" text="pauciores" type="straight"/>
+        <underline language="LA" method="pen" text="scilicet interemptis" type="straight"/>
+        <underline language="LA" method="pen" text="citatissimo" type="straight"/>
+        <underline language="LA" method="pen" text="se vix hostium" type="straight"/>
+        <underline language="LA" method="pen" text="impetu ad pugnandum" type="straight"/>
+        <underline language="LA" method="pen" text="perplexitate duces recenter" type="straight"/>
+        <underline language="LA" method="pen" text="propriorum militum exorto" type="straight"/>
+        <underline language="LA" method="pen" text="subitus casus est, ita remediu[m] apud" type="straight"/>
+        <underline language="LA" method="pen" text="Remediu[m] gubernatoris bellor[um]" type="straight"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="impetu ad pugnandum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="propriorum militum exorto"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/> <!-- extends slightly into the text -->
+        
+    </annotation>
+</transcription>

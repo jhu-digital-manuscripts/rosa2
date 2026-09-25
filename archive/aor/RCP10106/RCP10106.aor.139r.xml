@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.139r.tif" pagination="277" reader="John Dee" signature="s 3"/> 
+    <annotation>
+        
+        <marginalia anchor_text="pro Rabirio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Rabirio.</marginalia_text>
+                    <book title="Pro Rabirio Posthumo"/>
+                </position>
+            </language>
+            <translation>Pro Rabirio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Vareno" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Vareno</marginalia_text>
+                    <book title="Pro Vareno"/>
+                </position>
+            </language>
+            <translation>Pro Vareno.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Paßieno" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Passienus</marginalia_text>
+                    <person name="Gaius Sallustius Crispus Passienus"/>
+                </position>
+            </language>
+            <translation>Passienus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aenobarbum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aenobarbus</marginalia_text>
+                    <person name="Gnaeus Domitius Ahenobarbus"/>
+                </position>
+            </language>
+            <translation>Ahenobarbus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Omnes autem hos affectus, etiam si quibusdam uidentur in prooemio, atq[ue] in epilogo sedem habere, in quibus sanè sunt              frequentißimi, tamen aliae quoq[ue] partes recipiunt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Affectus omnes orationis partes recipiunt</marginalia_text>
+                </position>
+            </language>
+            <translation>Emotion can be received in all parts of the speech.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="amplificatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Amplificatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Amplification.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Plaudite" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Plaudite.</marginalia_text>
+                </position>
+            </language>
+            <translation>Applause.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="affectus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Affectus</marginalia_text>
+                </position>
+            </language>
+            <translation>Emotion.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in Verrem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In verrem</marginalia_text>
+                    <book title="In Verrem"/>
+                </position>
+            </language>
+            <translation>In Verrem.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἐπιλογοὶ μερικοί" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ἐπιλογοὶ μερικοί</marginalia_text>
+                </position>
+            </language>
+            <translation>Partial epilogues.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Omnes autem hos affectus, etiam si quibusdam uidentur in prooemio, atq[ue] in epilogo sedem habere, in quibus sanè sunt              frequentißimi, tamen aliae quoq[ue] partes recipiunt, sed breuiores, ut cu[m] ex his plurima sint referuanda." type="straight"/>
+        <underline language="LA" method="pen" text="&amp; confragosis atq[ue] asperis euecti, tota pandere possumus uela" type="straight"/>
+        <underline language="LA" method="pen" text="In alij aute[m] partibus tractandus affectus erit, ut quisq[ue] nascetur" type="straight"/>
+        <underline language="LA" method="pen" text="coniunctam ex pluribus causam agimus, etiam necesse erit uti" type="straight"/>
+        <underline language="LA" method="pen" text="partitiam perorationem significant" type="straight"/>
+        <underline language="LA" method="pen" text="summationem orationis" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <drawing anchor_text="Amplificatio" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

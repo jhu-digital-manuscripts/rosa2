@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.020v.tif" reader="Harvey" signature="[Bv[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Spartacus" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Spartacus</marginalia_text>
+                    <person name="Spartacus"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="gyue him passage with his" type="straight"/>
+        <underline language="EN" method="pen" text="findinge certayne cauillations at the conditions" type="straight"/>
+        <underline language="EN" method="pen" text="moche tyme" type="straight"/>
+        <underline language="EN" method="pen" text="parte of" type="straight"/>
+        <underline language="EN" method="pen" text="Spartacus" type="straight"/>
+        <underline language="EN" method="pen" text="his prisoners, and certayne bestes" type="straight"/>
+        <underline language="EN" method="pen" text="fylled vp the dyche" type="straight"/>
+        <underline language="EN" method="pen" text="had enclosed hym" type="straight"/>
+        <underline language="EN" method="pen" text="was most daungerouse" type="straight"/>
+        <underline language="EN" method="pen" text="scalynge ropes" type="straight"/>
+        <underline language="EN" method="pen" text="wythes and twygges" type="straight"/>  
+        <underline language="EN" method="pen" text="lxxxiiii. swordes" type="straight"/>
+        <underline language="EN" method="pen" text="great cohortes of his" type="straight"/>
+        
+        <symbol name="Mars" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="findinge certayne cauillations at the conditions"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="was most daungerouse"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="findinge certayne cauillations at the conditions"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="lxxiiii. swordes"/>
+        
+    </annotation>
+</transcription>

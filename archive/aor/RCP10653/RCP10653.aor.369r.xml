@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.369r.tif" pagination="287" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Postea verò praenotato fratre VValascho, audita causa adue[n]tus sui, redire lice[n]tiatio, inquisitu[m] est districtius qualiter,              &amp; cuius authoritate permissus fuit sine asse[n]su co[m]muni Anglia[m] introire. Cunque compertum esset, eum regia fuisse litera permissum, sigillumque magnum tempore illo in regis camera retentum.              Domi Hugo Bigotus, iusticiarius, quàm citius versus Doueria[m] proparauit, Richardumque de Gray, Constabulariam Doueriae, ac Portus custodem, ita aggressus est. Cum tu Richarde ab vniuersitate terr[a]e co[n]stitutus sis,              quasi fidelissimus Portuum custos, lintrantiumque &amp; exeuntium perscrutator, sitque in tua custodia omnium nostrorum fiducia, cur talem permisisti (licet etiam regis fulciatur concessione) nobis non praemunitis intrare,              cum omnium nostrorum communi contraueneris prouisioni, nec non proprium impude[n]ter violaueris iuramentum? Te susceptum deponere iudicamus officium, &amp;              de transgressione tua in co[m]mune regni periculum co[n]dignum reportare iudicium. Quo deposito: capitur in manus dicti domini .H. iusticiarij, custodia quinq[ue] Portuum Angliae, vna cum Castello Doueriae" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Nota.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Note.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="inquisitu[m] est districtius qualiter, &amp; cuius authoritate permissus fuit sine asse[n]su co[m]muni Anglia[m] introire" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <errata amendedtext="Dominus" copytext="Domi" language="LA"/>
+        <errata amendedtext="intrantiumque" copytext="lintrantiumque" language="LA"/>
+        
+    </annotation>
+</transcription>

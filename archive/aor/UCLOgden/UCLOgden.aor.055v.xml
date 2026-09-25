@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.055v.tif" pagination="94" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Signoru[m] varietas se[m]p[er] perpende[n]da tu[m] ip[s]a dom[us] tu[m] domini dom[us] [co[n]ditu] diurna [cum] nocturna genesis [etc]. 
+                    </marginalia_text> 
+                </position>
+            </language>
+            <translation>
+                The variety of signs must always be perpetuated both its house as the house of the lord, preserved both by day and night of the horoscope.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="caligarios" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Caligarij
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Bootmakers.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tabernarios" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Tabernarij
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Inn-keepers.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Si uero in deiectis geniturae locis, à ☿ defluens ☾ in" type="straight"/>
+        <underline language="LA" method="pen" text="Si uero minuta lumine in" type="straight"/>
+        <underline language="LA" method="pen" text="diurna genitura, à ☿ defluens" type="double"/>
+        <underline language="LA" method="pen" text="feratur ad ♂" type="straight"/>
+        <underline language="LA" method="pen" text="in nocturna genitura" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.052v.tif" pagination="88" reader="John Dee" signature="[h 2[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        vt sup[ra] dixit folio 84
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="UCLOgden:107" text="folio 84"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                As said above on folio 84.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="cum tota uitae nostrae" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; si crescens" type="straight"/>
+        <underline language="LA" method="pen" text="si uero fuerit minuta" type="straight"/>
+        <underline language="LA" method="pen" text="nihil tale decernit, sed" type="straight"/>
+        <underline language="LA" method="pen" text="plena luminibus" type="straight"/>
+        <underline language="LA" method="pen" text="si uero minuta" type="straight"/>
+        <underline language="LA" method="pen" text="ipsa crescens lumine" type="straight"/>
+        <underline language="LA" method="pen" text="uero fuerit minuta" type="straight"/>
+        
+        <mark method="pen" name="circumflex" place="intext"/>
+        
+        <errata amendedtext="substa[n]tia" copytext="suba[n]tia" language="LA"/>
+        <errata amendedtext="natus" copytext="natura" language="LA"/> 
+        
+    </annotation>
+</transcription>

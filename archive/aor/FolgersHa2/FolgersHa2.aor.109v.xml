@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.109v.tif" pagination="42" reader="Harvey" signature="[C5v]"/>	<!-- ABO 114left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Meris tandem apophthegmatis, et Mimis; gnomis, et
+						prouerbijs; emblematis,
+						et epigrammatis; stratagematis, et arcanis; salibus denique
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						et facetijs,
+						Cordatior
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						iam, occupatiorq[ue] uacat Eudromus.
+						Omnium fundamenta, artes, philosophia, professiones.
+					</marginalia_text>
+					<person name="Eudromus"/>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Earumq[ue] ipsarum vel neruosissimus Laconismus:
+						vel saltem Atticismus
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						exquisitissimus. Strictus, et pressus valor.
+						Nihil vanum, verbosum, aut vulgare: pra[e]ter prouerbia, et practica,
+						non vulgariter accommodata.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Wiser and more engaged, Eudromus at last has time for genuine aphorisms and mimes;
+				sayings and proverbs; emblems and epigrams; stratagems and secrets; 
+				and lastly, with witticisms and humor. <!--JG: 'For' instead of with?-->
+				The foundations of all things, the arts, philosophy, the professions.
+				And either a most vigorous Laconism of these very things, or even a most exquisite Atticism.
+				A tight and pressed valor. Nothing vain, verbose, or common: together with proverbs and practical things
+				not prepared in a common manner.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						(Haytrollollie, Haytrollollie-lee.)
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						puncta inuentionis: spicula iudicij: elocutionis aculei.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The points of invention, the stings of judgment, the barbs of expression.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Mente, ore, manu potens. In arcto acer: in paruo magnus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Strong in mind, mouth and hand. Sharp in severe matters; great in small matters.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Merus valor, vigor, lepor.
+						Sed primus semper, et vltimus, valor.
+						Vt mundus sentiat, Te Nosse, et Posse.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Genuine valor, vigor, charm.
+				But first and foremost, valor.
+				So that the world sees that you know yourself and that you are capable.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Abiectus est, qui Se abijcit. Qui à Se non abijcitur,
+						à nullo abijcitur.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Downcast is he who casts himself down. He who is not cast down from himself
+				is cast down by nothing. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Faxit Deus, vt magis Sim igneus Deus, quàm Vulcanus: magis aqueus Deus, quàm Neptunus.
+					</marginalia_text>
+					<person name="Vulcan"/>
+					<person name="Neptune"/>
+				</position>
+			</language>
+			<translation>
+				May God make it so that I am more a fiery god than Vulcan, more a watery god than Neptune.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Nihil externum, supra animu[m] viri. Nihil etiam, quod Corpori
+						potest accidere. Animus, imperator.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Nothing on the outside is greater than the mind of man; nothing, even if something
+				happen to the body. The mind is emperor.
+			</translation>
+		</marginalia>
+		
+		<underline language="LA" method="pen" text="Li debiti, ordinariamente" type="straight"/>
+		<underline language="LA" method="pen" text="l'huomo del sonno" type="straight"/>
+		<underline language="LA" method="pen" text="Caualier Romano" type="straight"/>
+		<underline language="LA" method="pen" text="piu di cinquecento mila ducati" type="straight"/>
+		<underline language="LA" method="pen" text="Augusto comandò" type="straight"/>
+		<underline language="LA" method="pen" text="comperata la sua coltrice, dicendo" type="straight"/>
+		<underline language="LA" method="pen" text="riputarsi saui" type="straight"/>
+		<underline language="LA" method="pen" text="grandezze &amp; signorie" type="straight"/>
+		<underline language="LA" method="pen" text="Boiardo, huomo molto" type="straight"/>
+		<underline language="LA" method="pen" text="condotta del Duca di" type="straight"/>
+		<underline language="LA" method="pen" text="seruire il Re di Napoli; ilquale" type="straight"/>
+		<underline language="LA" method="pen" text="Miseri voi" type="straight"/>
+		<underline language="LA" method="pen" text="non dormite mai" type="straight"/>
+		<underline language="LA" method="pen" text="esser Signori" type="straight"/>
+		<underline language="LA" method="pen" text="tanti guai" type="straight"/>
+		<underline language="LA" method="pen" text="grandezze, &amp; honori" type="straight"/>
+		<underline language="LA" method="pen" text="di voi stessi fuori" type="straight"/>
+		<underline language="LA" method="pen" text="fareste le pazzie che fate" type="straight"/>
+		
+		<symbol name="Sun" place="right_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- in -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- fa -->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Miseri voi"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="di voi stessi fuori"/> 
+		
+    </annotation>
+</transcription>

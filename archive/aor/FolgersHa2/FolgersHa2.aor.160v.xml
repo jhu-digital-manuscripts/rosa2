@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.160v.tif" pagination="144" reader="Harvey" signature="[I8v]"/>	<!-- ABO 165left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Nihil supra adamantinam Eunapij, Tacitiq[ue] limam.
+					</marginalia_text>
+					<person name="Eunapius"/>
+					<person name="Tacitus"/>
+					<emphasis method="pen" text="limam." type="straight"/>
+				</position>
+			</language>
+			<translation>Nothing moves beyond the uncorruptible file of Eunapius and Tacitus.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Scoggins Crowe.
+					</marginalia_text>
+					<person name="John Scoggin"/>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Securus Orbis, orbe Suo stat.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The untroubled world remains in its orbit.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Virgilius exquisitè dicit Singula:
+						omnia perstringit expeditè.
+					</marginalia_text>
+					<person name="Virgil"/>
+				</position>
+			</language>
+			<translation>Virgil says singular things exquisitely: he really grasps all things promptly.</translation>
+		</marginalia>
+		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.160v_0001" marginalia_continues_from="Ha2.161r_0001" marginalia_from_transcription="Ha2.161r.xml">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						<!-- Continued from facing page, left margin, Ha2.161r --> [p. 145: Thomas acutus: verum est: subtilis Scotus: nemo scholasticoru[m] magis: argutus Occam:
+						Laudo. Da mihi apophthegmata Laertij, et Plutarchi: epigrammata Martialis, et Heiuodi sales Domenici, et Guatij.
+						Cu[m] mensa philosophica: dialogis
+						Eliota[e]: apodemicis locoru[m], reru[m]q[ue] detectionibus:
+						Aschami personarum descriptionibus in rebus Germanicis:
+						ad omnes discursus.
+						Ha[e] Aulicorum
+						argutia[e]: et hac mundi subtilitas. Pra[e]sertim cum Aristotelis Oeconomicis, politicisq[ue] technis:
+						Mithridatis epistola, et concione contra Romanos: stratagematis Gandini.]
+						Huc etiam Aularu[m] secreta in rhapsodijs aulicis: politici aphorismi Lipsij, Sansouini, 
+						Dana[e]i; Machiauelli etiam, Bodini, Hotomani.
+					</marginalia_text>
+					<person name="Lipsius"/>
+					<person name="Francesco Sansavino"/>
+					<person name="Lambert Daneau"/>
+					<person name="Machiavelli"/>
+					<person name="Jean Bodin"/>
+					<person name="Francois Hotman"/>
+					<person name="Maurice Poncet"/>
+					<book title="Politicorum sive Civilis doctrinae libri sex"/>
+					<book title="Concetti Politici"/>
+					<book title="Politicorum aphorismorum silva"/>
+					<book title="La France-Turquie"/>
+				</position>
+			</language>
+			<language ident="EN">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						the Queen Mothers Legenda aurea.
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						Poncets
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="tail">
+					<marginalia_text>
+						resolutions from Turkie.
+					</marginalia_text>
+					<emphasis method="pen" text="Turkie" type="straight"/>
+				</position>
+			</language>
+			<translation>[p. 145: It is true that Thomas Aquinas is sharp, and that Duns Scotus is subtle. No one of the scholastics more than the witty William of Ockham. I praise them. 
+				Give me the aphorism of Diogenes Laertius and Plutarch, Martial's epigrams, and Heywood's, Domenichi's and Guazzo's witticisms. With the 'Mensa Philosophica': Eliot's 'Dialogues',
+				the instructive revealing of places and things: with Ascham's descriptions of the persons in German matters: for all discourses. These are the eloquent things of courtiers and this exactness
+				of the world. Especially with Aristotle's economic and political artifices: with Mithridates' letter, and his speech against the Romans: with Marcantonio Gandino's 'Stratagemata'.] 
+				Here also the secrets of the courts in the royal rhapsodies: the political aphorisms of Lipsius, Francesco Sansavino, and Lambert Daneau. Also of Machiavelli, Jean Bodin, and Francois Hotman.
+				The Queen Mothers Golden Legend. Maurice Poncet resolutions from Turkie.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Excellent general discoursers, Arcadia: Rabelais: Apologie for herodote:
+						Manlius Common places: Agrippas vanities: Gascoignes steele glas: Greens quip.
+					</marginalia_text>
+					<person name="Francois Rabelais"/>
+					<person name="Johannes Jacobus Manlius"/>
+					<person name="Heinrich Cornelius Agrippa"/>
+					<person name="George Gascoigne"/>
+					<person name="Robert Greene"/>
+					<book title="The Countess of Pembroke's Arcadia"/>
+					<book title="Apologie pour Hérodote"/>
+					<book title="Loci communes"/>
+					<book title="De incertitudine et vanitate scientiarum"/>
+					<book title="The Steele Glas"/>
+					<book title="Quip for an Upstart Courtier"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="tosto morire che" type="straight"/>
+		<underline language="IT" method="pen" text="volendol guirare, il marito" type="straight"/>
+		<underline language="IT" method="pen" text="quest'vuouo" type="straight"/>
+		<underline language="IT" method="pen" text="voglia significare" type="straight"/>
+		<underline language="IT" method="pen" text="pensare che dishonore" type="straight"/>
+		<underline language="IT" method="pen" text="Gostanza leggieri" type="straight"/>
+		<underline language="IT" method="pen" text="l'alba" type="straight"/>
+		<underline language="IT" method="pen" text="Comare, senza pensar piu" type="straight"/>
+		<underline language="IT" method="pen" text="non bisogna" type="straight"/>
+		<underline language="IT" method="pen" text="dir niente" type="straight"/>
+		<underline language="IT" method="pen" text="due vuoua" type="straight"/>
+		<underline language="IT" method="pen" text="di quattro" type="straight"/>
+		<underline language="IT" method="pen" text="quell'huomo" type="straight"/>
+		<underline language="IT" method="pen" text="notte cento vuoua" type="straight"/>
+		<underline language="IT" method="pen" text="La crudeltà" type="straight"/>
+		<underline language="IT" method="pen" text="con ragione" type="straight"/>
+		<underline language="IT" method="pen" text="con humilità" type="straight"/>
+		<underline language="IT" method="pen" text="placarsi" type="straight"/>
+		<underline language="IT" method="pen" text="IL lupo" type="straight"/>
+		<underline language="IT" method="pen" text="vn'agnello" type="straight"/>
+		<underline language="IT" method="pen" text="intorbidi tu" type="straight"/>
+		<underline language="IT" method="pen" text="tanto lontano" type="straight"/>
+		<underline language="IT" method="pen" text="mi nuoci sempre" type="straight"/>
+		<underline language="IT" method="pen" text="siete nimici" type="straight"/>
+		<underline language="IT" method="pen" text="ne partirai le pene" type="straight"/>
+		<underline language="IT" method="pen" text="diuorollo" type="straight"/>
+		 
+		<mark language="IT" method="pen" name="X_sign" place="intext" text="notte cento vuoua"/>
+		
+    </annotation>
+</transcription>

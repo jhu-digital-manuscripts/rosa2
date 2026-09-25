@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.424r.tif" reader="Harvey" signature="AAA2[r]"/>
+    <annotation>
+
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text> 
+                        Concisa[e] quidem Historia[e], sed excellentissima[e].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Short histories, certainly, but absolutely superb.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        Perge, dum feruet animus: et reliqua arctè coha[e]rentia, strictè connecte.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Continue, while the mind is passionate, and rigorously link together what remains and is closely related.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Tertij Punici belli initium altero" type="straight"/>
+        <underline language="LA" method="pen" text="Porcium Catonem" type="straight"/>
+        <underline language="LA" method="pen" text="Scipionem Nasicam, quorum" type="straight"/>
+        <underline language="LA" method="pen" text="sapientissimum uirum" type="straight"/>
+        <underline language="LA" method="pen" text="uir optimus à senatu iudicatus" type="straight"/>
+        <underline language="LA" method="pen" text="diuersis certatum est sententijs" type="straight"/>
+        <underline language="LA" method="pen" text="Catone" type="straight"/>
+        <underline language="LA" method="pen" text="ut omnino" type="straight"/>
+        <underline language="LA" method="pen" text="deleretur" type="straight"/>
+        <underline language="LA" method="pen" text="Nasica dissuadente" type="straight"/>
+        <underline language="LA" method="pen" text="placuit nihilominus" type="straight"/>
+        <underline language="LA" method="pen" text="bellum ijs indici" type="straight"/>
+        <underline language="LA" method="pen" text="Andriscus quidam" type="straight"/>
+        <underline language="LA" method="pen" text="Persei regis se filium ferens" type="straight"/>
+        <underline language="LA" method="pen" text="Fabulam autem" type="straight"/>
+        <underline language="LA" method="pen" text="Expellice se" type="straight"/>
+        <underline language="LA" method="pen" text="falsaeq[ue] matri libellum datum signo Persei regis signatum, quem" type="straight"/>
+        <underline language="LA" method="pen" text="ad Eumenem manaret res, Perseo" type="straight"/>
+        <underline language="LA" method="pen" text="occupare Pseudophilippus uellet" type="straight"/>
+        <underline language="LA" method="pen" text="Prusias rex Bithyniae" type="straight"/>
+        <underline language="LA" method="pen" text="omnium humillimorum fautor atque uitiorum" type="straight"/>
+        <underline language="LA" method="pen" text="Nicomede filio" type="straight"/>
+        <underline language="LA" method="pen" text="adiuuante Attalo" type="straight"/>
+        <underline language="LA" method="pen" text="occisus" type="straight"/>
+        <underline language="LA" method="pen" text="legatos ad pacem" type="straight"/>
+        <underline language="LA" method="pen" text="ijs caput multis" type="straight"/>
+        <underline language="LA" method="pen" text="pedibus" type="straight"/>
+        <underline language="LA" method="pen" text="ingenio socors" type="straight"/>
+        <underline language="LA" method="pen" text="legationem nec caput, nec pedes, nec cor habere" type="straight"/>
+        <underline language="LA" method="pen" text="generis Persei regis" type="straight"/>
+        <underline language="LA" method="pen" text="inertia socordiaq[ue] similem" type="straight"/>
+        <underline language="LA" method="pen" text="Ammonius regnabat" type="straight"/>
+        <underline language="LA" method="pen" text="Masanissa Numidiae rex" type="straight"/>
+        <underline language="LA" method="pen" text="uir insignis decessit" type="straight"/>
+        <underline language="LA" method="pen" text="opera iuuenilia" type="straight"/>
+        <underline language="LA" method="pen" text="uiguit" type="straight"/>
+        <underline language="LA" method="pen" text="sextum &amp; octogesimum annum" type="straight"/>
+        <underline language="LA" method="pen" text="genuerit unum" type="straight"/>
+        
+        <symbol name="JC" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- Ro -->
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="deleretur"/>
+        <mark method="pen" name="dot" place="intext"/> <!--dissuadente,-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Nicomede filio"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- haberet, alter-->
+        <mark method="pen" name="dot" place="intext"/> <!-- esset, tertius-->
+        <mark method="pen" name="apostrophe" place="intext"/> <!-- habere --> 
+        <mark method="pen" name="comma" place="intext"/> <!-- Macedonum inertia-->
+        <mark method="pen" name="apostrophe" place="intext"/> <!-- occisi -->
+        
+    </annotation>
+</transcription>

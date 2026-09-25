@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.213v.tif" pagination="[213v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Pegnone" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pegnone</marginalia_text>
+                    <location name="Pegnone"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Huiua" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Huiua</marginalia_text>
+                    <location name="Huiua"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="gli habitatori habitar nelle cime de gli alberi" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Enhabitors of trees.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="de' Grifi" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Griffins</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="del Pegnone" type="straight"/>
+        <underline language="IT" method="pen" text="Huiua" type="straight"/>
+        <underline language="IT" method="pen" text="vedemmo gli habitatori" type="straight"/>
+        <underline language="IT" method="pen" text="de gli alberi" type="straight"/>
+        <underline language="IT" method="pen" text="come vccelli" type="straight"/>
+        <underline language="IT" method="pen" text="che case" type="straight"/>
+        <underline language="IT" method="pen" text="de' Grifi" type="double"/>
+        <underline language="IT" method="pen" text="sono in quel paese;" type="straight"/>
+        <underline language="IT" method="pen" text="de' nimici" type="double"/>
+        <underline language="IT" method="pen" text="Pegnone;" type="straight"/>
+        
+    </annotation>
+</transcription>

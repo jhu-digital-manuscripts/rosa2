@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.081r.tif" reader="Harvey" signature="**[r]"/>	<!-- ABO 85right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Dies breuis, et opus multu[m]. Apophthegma Hebra[e]u[m].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The day is short and the work is long. A Jewish aphorism.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Dia[e]ta cita, non tarda. Neoterismus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				An early regimen, not a late one. A new expression.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						A snatch, &amp; away.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Nihil Epictetus extra suum Horizontem.
+					</marginalia_text>
+					<person name="Epictetus"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				For Epictetus, nothing beyond his horizon.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						A napp, &amp; away.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Pride, &amp; a Fall, ar Twinnes. )
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Alexander in altero Hemispha[e]rio magnus: in vtroq[ue]
+						Columbus. Magni Principis egregium Exemplar. Cui vterq[ue]
+						polus patefactus.
+					</marginalia_text>
+					<person name="Columbus"/>
+				</position>
+			</language>
+			<translation>
+				Alexander is great in the other hemisphere. In both hemispheres, Columbus.
+				He is a notable example of a great prince, for whom both poles lay open.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Experto crede: in polemicis
+						Ca[e]sari: in pragmaticis Durando: in
+						aulicis Sidneio. Serij magistri, et fideles.
+					</marginalia_text>		
+					<person name="Julius Caesar"/>
+					<person name="Guillaume Durand"/>
+					<person name="Philip Sidney"/>					
+				</position>
+			</language>
+			<translation>
+				Trust the expert: Caesar in battles, Durandus in practical matters,
+				Sidney in courtly ones. Earnest and faithful masters.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Valdè etiam conducunt Flores Legum, Doctorum, Poetarum. In quibus
+						multa pra[e]gnantia, et arguta.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The flowers of law, teachers, and poets are also exceedingly useful. In them are many pregnant
+				and clever things.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Argutia[e] argutiarum ad viuum, in Seneca[e] tragoedijs: ab Axiophilo selecta[e].
+					</marginalia_text>
+					<person name="Seneca"/>
+					<person name="Axiophilus"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The cleverest things that cut to the quick are in Seneca's tragedies, singled out by Axiophilus.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Nashes swan is a goose. Harueys cuckooe is a nightingale.
+					</marginalia_text>
+					<person name="Thomas Nash"/>
+					<person name="Gabriel Harvey"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Proposte esorbitanti" type="straight"/>
+		<underline language="IT" method="pen" text="risposte strauaganti" type="straight"/>
+		<underline language="IT" method="pen" text="quali cose conuenga" type="straight"/>
+		<underline language="IT" method="chalk" text="poco, ò niente fidarsi" type="straight"/>
+		<underline language="IT" method="pen" text="niente fidarsi" type="straight"/>
+		<underline language="IT" method="pen" text="Nelle confederationi" type="straight"/>
+		<underline language="IT" method="pen" text="la qualità" type="straight"/>
+		<underline language="IT" method="pen" text="La pouertà render l'huomo sicuro" type="straight"/>
+		<underline language="IT" method="pen" text="gli assassini" type="straight"/>
+		<underline language="IT" method="pen" text="prestar fede" type="straight"/>
+		<underline language="IT" method="pen" text="i figliuoli" type="straight"/>
+		<underline language="IT" method="chalk" text="sieno nobilissimi tra" type="straight"/>
+		<underline language="IT" method="chalk" text="magnanimità" type="straight"/>
+		<underline language="IT" method="chalk" text="il perdonar l'offese" type="straight"/>
+		<underline language="IT" method="pen" text="perdonar l'offese" type="straight"/>
+		<underline language="IT" method="pen" text="bontà" type="straight"/>
+		<underline language="IT" method="pen" text="in ogni fortuna" type="straight"/>
+		<underline language="IT" method="pen" text="malignità della natura" type="straight"/>
+		<underline language="IT" method="pen" text="materia de sfogarsi" type="straight"/>
+		<underline language="IT" method="pen" text="La colunnia restar" type="straight"/>
+		<underline language="IT" method="pen" text="sopra del calunniatore" type="straight"/>
+		<underline language="IT" method="pen" text="offende i Principi" type="straight"/>
+		<underline language="IT" method="chalk" text="i Principi, non douer fidarsi nè di lusinghe, nè di promesse loro" type="straight"/>
+		<underline language="IT" method="chalk" text="Abbiettione, &amp; dappocaggine de gli huomini" type="straight"/>
+		<underline language="IT" method="pen" text="dappocaggine de gli" type="straight"/>
+		<underline language="IT" method="pen" text="virtu esser" type="straight"/>
+		<underline language="IT" method="pen" text="di rado" type="straight"/>
+		<underline language="IT" method="pen" text="prudenza, &amp; l'isperienza nel Capitano," type="straight"/>
+		<underline language="IT" method="pen" text="Dalla virtù de' capitani" type="straight"/>
+		<underline language="IT" method="pen" text="dominar l'oro in" type="straight"/>
+		<underline language="IT" method="pen" text="liberalità, &amp; la clemenza esser" type="straight"/>
+		
+		<symbol language="IT" name="SS" place="left_margin" text="Abbiettione, &amp; dappocaggine de gli huomini"/>
+		
+		<symbol name="JC" place="intext"/>
+		<symbol language="IT" name="SS" place="intext" text="Quali sieno nobilissimi tra gli huomini"/>
+		
+		<mark method="pen" name="quotation_mark" place="left_margin"/>
+		
+		<mark method="pen" name="plus_sign" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!--figliuo-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--ve-->
+		
+		<mark method="pen" name="quotation_mark" place="intext"/>
+		<mark method="pen" name="quotation_mark" place="intext"/>
+		<mark method="pen" name="plus_sign" place="intext"/>
+
+    </annotation>
+</transcription>

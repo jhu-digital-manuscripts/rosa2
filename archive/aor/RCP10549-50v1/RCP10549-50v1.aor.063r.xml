@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.063r.tif" pagination="105" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia anchor_text="praeclare te habes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Preclare te habes
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                You consider it well.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="statuae equestres inauratae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        statu[a]e inauratae
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The gilt statues.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Dilemma.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Dilemma.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ipsius quoque confessione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ip[s]ius co[n]fessio[n]e.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                His confession.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="non est probabile" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        no[n] est probabile
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                It is not likely.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sother" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Sother
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Soter.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="hoc significant, atque adeo aperte ostendunt" type="straight"/>
+        <underline language="LA" method="pen" text="vide &amp; perspice qua defensione sis vsurus" type="straight"/>
+        <underline language="LA" method="pen" text="omnino praeclare te habes: cum is ordo, atque id genus hominu[m], quod optimum atque honestissimum est,              à quo vno &amp; summa Reip. &amp; illa pouincia maxime co[n]tinetur, tibi est inimicissimum" type="straight"/>
+        <underline language="LA" method="pen" text="credamus testibus" type="straight"/>
+        <underline language="LA" method="pen" text="vtrum" type="straight"/>
+        <underline language="LA" method="pen" text="Vtar eo quod datur. certe" type="straight"/>
+        <underline language="LA" method="pen" text="ipsius quoque confessione ab inuitissimis" type="straight"/>
+        <underline language="LA" method="pen" text="non est probabile" type="straight"/>
+        <underline language="LA" method="pen" text="Latino vno verbo exprimi no[n] possit" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">19</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">13</numeral>
+        
+        <drawing anchor_text="omnino praeclare te habes: cum is ordo, atque id genus hominu[m], quod optimum atque honestissimum est,              à quo vno &amp; summa Reip. &amp; illa pouincia maxime co[n]tinetur, tibi est inimicissimum" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

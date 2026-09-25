@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.155v.tif" pagination="50" reader="John Dee" signature="[d.i.[v]]"/>  
+    <annotation>
+        
+        <marginalia anchor_text="salsamentarii; faciebat audientia[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>salsame[n]tarius facere audientiam</marginalia_text>
+                </position>
+            </language>
+            <translation>A fishmonger; to make an audience.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Per exuperationem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>1. Per exuperatione[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>1. Through hyperbole.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Per ambiguum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>2 Per ambiguum.</marginalia_text>
+                </position>
+            </language>
+            <translation>2. Through ambiguity.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Per consequentiam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>3 Per conseque[n]tia[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>3. Through logical consequence.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Per abscissionem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>4 Per abscissione[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>4. Through aposiopesis.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Per similitudinem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>5 Per similitudine[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>5. Through analogy.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Breuitas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Breuitas.</marginalia_text>
+                </position>
+            </language>
+            <translation>Conciseness.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Demonstratio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Demonstratio</marginalia_text>
+                </position>
+            </language>
+            <translation>Demonstration.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="tempus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>te[m]pus.</marginalia_text>
+                </position>
+            </language>
+            <translation>The temple.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="oratorie" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>oratorie.</marginalia_text>
+                </position>
+            </language>
+            <translation>Oratorically.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="consequamur artis rationem studio, &amp; exercitatione: quod alii cu[m] molestia tribus de causis maxime faciunt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tres caus[a]e q[u]a plurimi no[n] co[n]sequu[n]tur artis r[ati]o[n]em, studio &amp; exercitatione.</marginalia_text>  <!-- DO: Not sure if 'q[ui]a' or 'q[u]a'? -->
+                </position>
+            </language>
+            <translation>Three reasons why many people do not pursue the theory of the art with study and practice.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="salsamentarii" type="straight"/>
+        <underline language="LA" method="pen" text="cum aut res non egent longae orationis, aut tempus non sinit commorari" type="straight"/>
+        <underline language="LA" method="pen" text="contorta toga" type="straight"/>
+        <underline language="LA" method="pen" text="faciebat audientia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="vaga multitudo" type="straight"/>
+        <underline language="LA" method="pen" text="vt oratorie planè" type="straight"/>
+      
+        <numeral language="LA" place="head" text="salsame[n]tarius">6</numeral>
+        <numeral place="left_margin">6</numeral>
+        
+        <drawing anchor_text="facere audientiam" book_orientation="0" method="pen" place="head" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+    
+</transcription>

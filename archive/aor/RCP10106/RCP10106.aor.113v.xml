@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.113v.tif" pagination="226" reader="John Dee" signature="[P[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="defensor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Defensor.</marginalia_text>
+                </position>
+            </language>
+            <translation>Defender.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="In his omnis factorum, dictorum'q[ue] ratio uersatur sed dupliciter." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Diuisio alia</marginalia_text>
+                </position>
+            </language>
+            <translation>Another division.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Casus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Casus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Chance.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sumptuosus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sumptuosus</marginalia_text>
+                </position>
+            </language>
+            <translation>Extravagant.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quorum contraria in diuersum ualent. Haec &amp; in deliberando intuemur, &amp; in iudicijs ad duas res solemus referre, an uoluerit quis,              an potuerit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Defensor.</marginalia_text>
+                </position>
+            </language>
+            <translation>Defender.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uoluntatem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Voluntas.</marginalia_text>
+                </position>
+            </language>
+            <translation>Free will.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hinc illa apud Ciceronem coiectura: Insidiatus est Clodius Miloni" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro milone</marginalia_text>
+                    <book title="Pro Milone"/>
+                </position>
+            </language>
+            <translation>For Milo.</translation> <!-- FSF: keep original -->
+        </marginalia>
+        
+        <marginalia anchor_text="Facultati" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>facultas</marginalia_text>
+                </position>
+            </language>
+            <translation>Ability.</translation> <!-- FSF: maybe more ability? -->
+        </marginalia>
+        
+        <marginalia anchor_text="instumentum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Instumentu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Instrument.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="τρόπος" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>τρόπος.</marginalia_text>
+                </position>
+            </language>
+            <translation>Topic.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Quorum" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.023r.tif" pagination="45" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Vergilius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vergilius</marginalia_text>
+                    <person name="Virgil"/>
+                </position>
+            </language>
+            <translation>Virgil.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Atqui paulum superiores, etiam illud quod nos gemina dicimus, iußi, una dixerunt iusi." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Jusi</marginalia_text>
+                </position>
+            </language>
+            <translation>Ordered.</translation>
+        </marginalia>
+        
+        <mark method="pen" name="dash" place="right_margin"/>
+        
+    </annotation>
+</transcription>

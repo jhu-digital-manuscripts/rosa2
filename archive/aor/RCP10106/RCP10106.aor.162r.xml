@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.162r.tif" pagination="323" reader="John Dee" signature="x 2"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Vrbiniana" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vrbinia</marginalia_text>
+                    <person name="Urbinia"/>
+                </position>
+            </language>
+            <translation>Urbinia.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="coniecturae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Coniectura</marginalia_text>
+                </position>
+            </language>
+            <translation>Conjectures.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Accusatoris" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Accusator</marginalia_text>
+                </position>
+            </language>
+            <translation>Accuser.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Patrono" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Patronus</marginalia_text>
+                </position>
+            </language>
+            <translation>Advocate.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="contraria" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>contraria</marginalia_text>
+                </position>
+            </language>
+            <translation>The contrary.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="accusatoris" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Accusator</marginalia_text>
+                </position>
+            </language>
+            <translation>Accuser.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="instrumenta" type="straight"/>
+        <underline language="LA" method="pen" text="In his sunt personae, causae, consilia" type="straight"/>
+        <underline language="LA" method="pen" text="quàm si audacem, petula[n]tem, crudelem, temerariu[m] ostenderit. Patrono" type="straight"/>
+        <underline language="LA" method="pen" text="Neque enim uidetur in eunde[m] &amp; co[n]temptus pecuniae, &amp; cupiditas" type="straight"/>
+        
+        <mark method="pen" name="scribble" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+            
+    </annotation>
+</transcription>

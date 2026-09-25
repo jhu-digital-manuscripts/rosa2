@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.233r.tif" pagination="233" reader="John Dee" signature="Gg"/>
+    <annotation>
+        
+        <marginalia anchor_text="chiamati Porras" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Porray</marginalia_text> <!-- FSF: as pointed to in the anchor text, I'd suggest this to read Porras -->
+                    <person name="Francesco di Porray"/>
+                </position>
+            </language>
+        </marginalia> 
+        
+        <marginalia anchor_text="Capitano Francesco di Porras Sali su la poppe della naue" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Francesco di Porray</marginalia_text> <!-- FSF: as above, I think it is Porras rather than Porray-->
+                    <person name="Francesco di Porray"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="concubina" type="double"/>
+        <underline language="IT" method="pen" text="sulle naui Capi de congiurati" type="straight"/>
+        <underline language="IT" method="pen" text="sedition de' detti fratelli, l'vn de' quali era Capitan" type="straight"/>
+        <underline language="IT" method="pen" text="contator" type="straight"/>
+        <underline language="IT" method="pen" text="XLVIII" type="straight"/>
+        <underline language="IT" method="pen" text="Porras per" type="straight"/>
+        <underline language="IT" method="pen" text="Francesco di Porras" type="straight"/> <!-- FSF: I'd put Capitano Francesco -->
+        <underline language="IT" method="pen" text="gli disse, Signore, che vuol dit, che non volete andare in Castiglia" type="straight"/>
+        <underline language="IT" method="pen" text="sospettò quel, che potesse essere. la onde con simulatione" type="straight"/>
+        
+        <errata amendedtext="torgli" copytext="tor gli" language="IT"/>
+        <errata amendedtext="simulatione" copytext="simu latione" language="IT"/>
+        
+        <!-- FSF: isn't there a full stop between Capitano and Francesco? -->
+        
+    </annotation>
+</transcription>

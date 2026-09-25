@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.013r.tif" pagination="25" reader="John Dee" signature="b 5"/>
+    <annotation>
+        
+        <marginalia anchor_text="Multo uerò maior differentia est inter capitales, uerae'q[ue] formae Hebraicae characteres" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vera hebra[icae] litera[e] capita[les]</marginalia_text>  
+                </position>
+            </language>
+            <translation>True Hebrew capital letters.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="hodie sub Chaldaica aut Maronitica, seu mo[n]tis Lybani &amp; Christianorum de Zona" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>{ Maronitica Chaldaïca Mo[n]tis Lyba[ni] Christianoru[m] de Z[ona]</marginalia_text>
+                    <person name="Maronites"/>
+                    <location name="Mount Lebanon"/>
+                    <location name="Chaldea"/>
+                </position>
+            </language>
+            <translation>{ Maronite, Chaldaean, of Mount Lebanon,  </translation>    <!-- DO: I can't find the 'Christianorum de Zona' -->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="constat tribus lineis, duabus in suo circulo" type="straight"/>
+        <underline language="LA" method="pen" text="una recta ad nos prote[n]sa" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; abscondita" type="straight"/>
+        <underline language="LA" method="pen" text="sint eadem" type="straight"/>
+        <underline language="LA" method="pen" text="capitales" type="straight"/>
+        <underline language="LA" method="pen" text="uerae'q[ue] formae" type="double"/>
+        <underline language="LA" method="pen" text="minusculas &amp; Arabicam" type="straight"/>
+        <underline language="LA" method="pen" text="tachygrafia[m] ab" type="straight"/>
+        <underline language="LA" method="pen" text="Chaldaica aut Maronitica" type="straight"/>
+        <underline language="LA" method="pen" text="mo[n]tis Lybani" type="straight"/>
+        <underline language="LA" method="pen" text="Christianorum de Zona" type="straight"/>
+        <underline language="LA" method="pen" text="uetus &amp; nouum Testamentum" type="straight"/>
+        <underline language="LA" method="pen" text="praeter Alcoranum" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+            
+                                                                                       <!-- DO: Drawing in right margin -->
+        
+    </annotation>
+</transcription>

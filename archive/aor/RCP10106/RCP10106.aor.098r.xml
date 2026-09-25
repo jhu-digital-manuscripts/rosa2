@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.098r.tif" pagination="195" reader="John Dee" signature="n 2"/> 
+    <annotation>
+        
+        <marginalia anchor_text="sententia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sente[n]tia</marginalia_text>
+                </position>
+            </language>
+            <translation>Thought.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in Antonium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In antonium</marginalia_text>
+                    <person name="Gaius Antonius Hybrida"/>
+                </position>
+            </language>
+            <translation>Against Antonius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="M. Caelij in Antonium descriptio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ebrij Descriptio</marginalia_text>
+                </position>
+            </language>
+            <translation>A description of a drunk.</translation>
+        </marginalia>
+        <underline language="LA" method="pen" text="&amp; atrocia inuidiose, &amp; tristia miserabiliter dicere licebit: no[n] ut consumantur affectus, sed ut tantum uelut primis lineis              designentur, ut planè qualis futura fit imago rei, statum appareat" type="straight"/>
+        <underline language="LA" method="pen" text="totis praecordijs sterte[n]tem" type="straight"/>
+        <underline language="LA" method="pen" text="nonnulla" type="straight"/>
+        
+        <mark method="pen" name="scribble" place="right_margin"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.017v.tif" reader="Harvey" signature="[Biii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Vnico, most gratious with woomen.</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>i[nfra], l. 3.</marginalia_text> <!--JG: Seems as if Harvey changed 4 into 3-->
+                    <internal_ref>
+                        <target ref="Newberry27495:case_712_c27495_093" text="l. 3"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>διότι.</marginalia_text>
+                </position>
+            </language>
+            <translation>[See] below, book 3. Because.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="your dyuyne wit know her" type="straight"/>
+        <underline language="EN" method="pen" text="you loue her" type="straight"/>
+        <underline language="EN" method="chalk" text="rest, whych lyke byrdes of a feble sight, that cannot looke stedfastly into the circle of the sunne, cannot so wel perceyue ther perfection" type="straight"/>
+        <underline language="EN" method="pen" text="perceyue the perfection of it" type="straight"/>
+        <underline language="EN" method="pen" text="sauyng your iudgement alone" type="straight"/>
+        <underline language="EN" method="pen" text="onely to you" type="straight"/>
+        <underline language="EN" method="pen" text="that alone can brynge" type="straight"/>
+        <underline language="EN" method="pen" text="and none other" type="straight"/>
+        <underline language="EN" method="pen" text="a rime" type="straight"/>
+        <underline language="EN" method="pen" text="expoundynge" type="straight"/>
+        <underline language="EN" method="pen" text="made at the first sight" type="straight"/>
+        <underline language="EN" method="pen" text="more witty" type="straight"/>
+        <underline language="EN" method="pen" text="the shortnes" type="straight"/>
+        <underline language="EN" method="pen" text="prepared it" type="straight"/>
+        <underline language="EN" method="pen" text="the praise" type="straight"/>
+        <underline language="EN" method="pen" text="this time" type="straight"/>
+        <underline language="EN" method="pen" text="smilyng" type="straight"/>
+        <underline language="EN" method="pen" text="passion of loue" type="straight"/>
+        <underline language="EN" method="pen" text="make semblant to beleue" type="straight"/>
+        <underline language="EN" method="pen" text="I should neuer frame" type="straight"/>
+        <underline language="EN" method="pen" text="woman to loue" type="straight"/>
+        <underline language="EN" method="pen" text="proued with such instance" type="straight"/>
+        <underline language="EN" method="pen" text="of reason" type="straight"/>
+        <underline language="EN" method="pen" text="dispare to obtain it" type="straight"/>
+        <underline language="EN" method="pen" text="so much by my self and so litle" type="straight"/>
+        <underline language="EN" method="pen" text="women" type="straight"/>
+        <underline language="EN" method="pen" text="thinke none worthye to bestowe my loue" type="straight"/>
+        <underline language="EN" method="pen" text="discomfort painted in their eyes" type="straight"/>
+        <underline language="EN" method="pen" text="treblefolde" type="straight"/>
+        <underline language="EN" method="pen" text="but of teares," type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="equal_sign" place="left_margin" text="dispare to obtain it"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="dyuyne"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!--rest, so-->
+        <mark method="pen" name="dot" place="intext"/> <!--rest, which-->
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="comma" place="intext"/> <!--while being-->
+        <mark method="pen" name="dot" place="intext"/> <!--fansy, at-->
+        <mark method="pen" name="dot" place="intext"/> <!--required, it-->
+        <mark method="pen" name="dot" place="intext"/> <!--talke, the-->
+        <mark method="pen" name="dot" place="intext"/> <!--daies, I-->
+        <mark method="pen" name="dot" place="intext"/> <!--it, and-->
+        
+        <numeral language="EN" place="left_margin" text="The L. Octauian Fregosos deuise">4.</numeral>
+        
+    </annotation>
+</transcription>

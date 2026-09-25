@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.033r.tif" reader="John Dee" signature="Fiij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="si est mediu[m] [et] ad quid est mediu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        {Si est mediu[m] q[ui]d est mediu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                If it is the medium, what the medium is.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quid [et] p[ro]pter quid" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Quid Propter quid.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                What, why it is.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="de o[mn]ib[us] hijs paru[m] e[st] mathematici" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        de o[mn]ib[us] hijs paru[m] p[er]tinet ad mathe[maticum]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Of all these things it pertains very little to the mathematician.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="par[um] est dissere mathematico" hand="Italian"> <!-- FSF: I am not sure about the dissere; maybe an abbreviation of differentia or so? -->  <!-- DO: I'm not sure either. Could be 'dissere[nti]' (agreeing with 'mathematico') but I really don't know... -->
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Paru[m] ad Math[ematicum]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Very little to the mathematician.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="p[rae]supponu[n]t q[ui]d est [et] demo[n]stra[n]t q[ui]a est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Quid est, supponitur Quia est demo[n]stratur.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                What it is, is supported. That it is, it is demonstrated. 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="si est mediu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="quid est mediu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="q[ue] causa est mediu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="demo[n]strationibus ide[m] est causa [et] mediu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="q[uae]stio medij" type="straight"/>
+        <underline language="LA" method="pen" text="demo[n]strandu[m] potest accipi aliq[uo]d mediu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="questio[n]e quia q[uae]" type="straight"/>
+        <underline language="LA" method="pen" text="est ip[s]i[us] medi[j] [et] de o[mn]ib[us] hijs paru[m] e[st] mathematici" type="straight"/>
+        <underline language="LA" method="pen" text="q[ui]d est" type="straight"/>
+        <underline language="LA" method="pen" text="est differe[m] mathematico" type="straight"/>   <!-- DO: uncertainty about 'differe[m]' as above -->
+        
+    </annotation>
+</transcription>

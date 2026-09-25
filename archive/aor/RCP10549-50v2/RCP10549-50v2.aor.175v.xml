@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.175v.tif" pagination="90" reader="John Dee"/>   
+    <annotation>
+        
+       <marginalia anchor_text="Deprecatio" hand="Italian">
+           <language ident="LA">
+               <position book_orientation="0" place="left_margin">
+                   <marginalia_text>Dep[re]catio.</marginalia_text>
+               </position>
+           </language>
+           <translation>Deprecation.</translation>
+       </marginalia> 
+        
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Modus hanc partem tractandi</marginalia_text>
+                </position>
+            </language>
+            <translation>The way of treating this part.</translation>  
+        </marginalia> 
+        
+        
+        <marginalia anchor_text="Aduersarius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Co[n]tra.</marginalia_text>
+                </position>
+            </language>
+            <translation>Against.</translation>
+        </marginalia> 
+        
+        
+        <marginalia anchor_text="Locus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Locus</marginalia_text>
+                </position>
+            </language>
+            <translation>A topic.</translation>
+        </marginalia> 
+        
+        
+        <marginalia anchor_text="immisericordem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>immisericors.</marginalia_text>
+                </position>
+            </language>
+            <translation>Merciless.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="immisericordem" type="straight"/>
+        <underline language="LA" method="pen" text="odium esse acre susceptum" type="straight"/>
+        
+        <numeral place="left_margin">.1.</numeral>
+        <numeral place="left_margin">.2.</numeral>
+        <numeral place="left_margin">.3.</numeral>
+        <numeral place="left_margin">.4.</numeral>
+        <numeral place="left_margin">.5.</numeral>
+        <numeral place="left_margin">.6.</numeral>
+        <numeral place="left_margin">.7.</numeral>
+        <numeral place="left_margin">.8.</numeral>
+        <numeral place="left_margin">.9.</numeral>
+        <numeral place="left_margin">.10.</numeral>
+        <numeral place="left_margin">.1.</numeral>
+        <numeral place="left_margin">.2.</numeral>
+        <numeral place="left_margin">.3.</numeral>
+        <numeral place="left_margin">.4.</numeral>
+        <numeral place="left_margin">.5.</numeral>
+        
+    </annotation>
+</transcription>

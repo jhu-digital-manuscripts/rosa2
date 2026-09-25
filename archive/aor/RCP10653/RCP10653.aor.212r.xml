@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.212r.tif" pagination="415" reader="John Dee" signature="Mm iiij"/>
+    <annotation>
+        
+        <marginalia anchor_text="genealogia superitus ad Adam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Genealogia ad Adam.
+                    </marginalia_text>
+                    <person name="Adam"/>
+                </position>
+            </language>
+            <translation>
+                Genealogy to Adam.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Consulis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        comitis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Of the earl.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="frater Eadvvardus" type="straight"/>
+        <underline language="LA" method="pen" text="rex Eadvvardus" type="straight"/>
+        <underline language="LA" method="pen" text="Godvvini, potentissimi Consulis" type="straight"/>
+        <underline language="LA" method="pen" text="Cridiensem" type="straight"/>
+        
+    </annotation>
+</transcription>

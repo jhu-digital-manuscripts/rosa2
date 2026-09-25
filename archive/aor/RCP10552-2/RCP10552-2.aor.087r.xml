@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.087r.tif" pagination="163" reader="John Dee" signature="O.iiij."/>
+    <annotation>
+        
+        <marginalia anchor_text="Edvvardo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Bayliol</marginalia_text>
+                    <person name="Edward Balliol"/>
+                </position>
+            </language>
+            <translation>Balliol.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Scotorum manibus perfidorum" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; corona regani Scotiae in regem Angliae transfertur." type="straight"/>
+        <underline language="LA" method="pen" text="Edvvardo" type="straight"/>
+        <underline language="LA" method="pen" text="Baylyol rex Scotiae, regnum &amp; coronam eiusdem transtulit in Edvvardum regem Angliae, literis suis patentibus              &amp; autenticis indè confectis." type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+         
+    </annotation>
+</transcription>

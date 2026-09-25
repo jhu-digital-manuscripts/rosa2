@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.066v.tif" pagination="132" reader="John Dee" signature="[i 2[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="duos &amp; ipse fecit status" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Status 2 [duplex]</marginalia_text>
+                </position>
+            </language>
+            <translation>Twofold bases.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Celsus Cornelius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Celsus Cornelius</marginalia_text>
+                    <person name="Aulus Cornelius Celsus"/>
+                </position>
+            </language>
+            <translation>Cornelius Celsus.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Sacrilegus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sacrilegus</marginalia_text>
+                </position>
+            </language>
+            <translation>Sacrilegious.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="sol" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>.Sol.</marginalia_text>
+                </position>
+            </language>
+            <translation>Sun.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="ratiocinatiuus status." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Racionatiuus status.</marginalia_text>
+                </position>
+            </language>
+            <translation>Ratiocinative basis.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cicero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cicero</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+        <numeral place="left_margin">7</numeral>
+        
+    </annotation>
+</transcription>

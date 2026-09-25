@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>53</illustrations>
+    <totalPages>165</totalPages>
+    <dimensions units="mm">
+        <width>180</width>
+        <height>240</height>
+    </dimensions>
+    <dates>
+        <startDate>1300</startDate>
+        <endDate>1350</endDate>
+    </dates>
+    <texts>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="148v" start="1r">148</pages>
+            <illustrations>53</illustrations>
+            <linesPerColumn>38</linesPerColumn>
+            <leavesPerGathering>8</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="testament">
+            <language>fr</language>
+            <title>Testament</title>
+            <textId/>
+            <pages end="160v" start="149r">12</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>38</linesPerColumn>
+            <leavesPerGathering>8</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Selden Supra 57</commonName>
+            <dateLabel>14th century</dateLabel>
+            <type>manuscript</type>
+            <material>Parchment</material>
+            <origin>France</origin>
+            <currentLocation>Oxford</currentLocation>
+            <repository>Bodleian Library</repository>
+            <shelfmark>MS Selden Supra 57</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Selden Supra 57</commonName>
+            <dateLabel>14e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>parchemin</material>
+            <origin>Paris, France</origin>
+            <currentLocation>Oxford</currentLocation>
+            <repository>Bodleian Library</repository>
+            <shelfmark>MS Selden Supra 57</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

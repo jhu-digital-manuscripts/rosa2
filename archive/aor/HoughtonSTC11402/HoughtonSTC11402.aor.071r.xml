@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.071r.tif" reader="Harvey" signature="[Hviii[r]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Fine feates: &amp; still practicable vpon sauages; or other vnprouided, or ouercredulous. How easely did Charles, Duke of Burbon,
+                    surprize,</marginalia_text>
+                    <person name="Charles III, Duke of Bourbon"/>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>&amp; sack, Roome, dowting no such matter? </marginalia_text>
+                    <location name="Rome"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Epaminundas; many of his souldiours in womens apparaylle" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Epaminondas, souldiours in womans apparrel.</marginalia_text>
+                    <person name="Epaminondas"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="like market men" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>lyke markett men.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="like market men" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Captain Skink lately</marginalia_text>
+                    <person name="Maarten Schenck"/>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>plaied [the] baker / [etc] )</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>How easely Ca[e]sar Borgia, the Dukedom of Vrbia</marginalia_text>
+                    <person name="Cesare Borgia"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="Athenians" type="straight"/>
+        <underline language="EN" method="pen" text="citie vndefended" type="straight"/>
+        <underline language="EN" method="pen" text="the wyfes of his enmies" type="straight"/>
+        <underline language="EN" method="pen" text="many of his souldiours" type="straight"/>
+        <underline language="EN" method="pen" text="in womens apparaylle" type="straight"/>
+        <underline language="EN" method="pen" text="receiued at nyght" type="straight"/>
+        <underline language="EN" method="pen" text="toke the towne, and" type="straight"/>
+        <underline language="EN" method="pen" text="gone forthe of the" type="straight"/>
+        <underline language="EN" method="pen" text="to do sacrifyce vnto Minerua" type="straight"/>
+        <underline language="EN" method="pen" text="Aristippus capitayn" type="straight"/>
+        <underline language="EN" method="pen" text="like market men" type="straight"/>
+        <underline language="EN" method="pen" text="dryuynge beastes ladyn with chaffe" type="straight"/>
+        <underline language="EN" method="pen" text="toke the capuls" type="straight"/>
+        <underline language="EN" method="pen" text="corne, and sleynge the drudges" type="straight"/>
+        <underline language="EN" method="pen" text="sent his souldiours backe" type="straight"/>
+        <underline language="EN" method="pen" text="to the castell in theyr apparel" type="straight"/>
+        
+        <symbol name="SS" place="intext"/>
+        
+        <mark method="pen" name="plus_sign" place="head"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="to the castell in theyr apparel"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="sent his souldiours backe"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="in womens apparaylle"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="like market men"/>
+        
+    </annotation>
+</transcription>

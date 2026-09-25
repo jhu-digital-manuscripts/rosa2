@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.015r.tif" reader="Harvey" signature="Bi[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Courtlie deuises of pastime.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Huc [quartus] Guazzi. exquisitè festiuus. </marginalia_text>
+                    <person name="Stefano Guazzo"/>
+                    <book title="The civil conversation"/>
+                </position>
+            </language>
+            <translation>To this [add] the fourth [book] of Guazzo. Exquisitely lively.</translation> 
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="Vrbin" type="straight"/>
+        <underline language="EN" method="pen" text="receaued as honorably as was possible" type="straight"/>
+        <underline language="EN" method="pen" text="sumptuous and costlye preparation" type="curved"/>
+        <underline language="EN" method="pen" text="the Pope" type="straight"/>
+        <underline language="EN" method="pen" text="Cardinalles and other Courtyers" type="straight"/>
+        <underline language="EN" method="pen" text="thought" type="curved"/>
+        <underline language="EN" method="pen" text="themselues throughly satisfied" type="straight"/>
+        <underline language="EN" method="pen" text="some there" type="straight"/>
+        <underline language="EN" method="pen" text="prouoked wyth the sweetnesse of his companye" type="straight"/>
+        <underline language="EN" method="pen" text="contynued manye" type="straight"/>
+        <underline language="EN" method="pen" text="accustomed trade of disportinge and ordinary recreations" type="straight"/>
+        <underline language="EN" method="pen" text="helpinge hande to augment them" type="straight"/>
+        <underline language="EN" method="pen" text="especially in pastymes, which" type="straight"/>
+        <underline language="EN" method="pen" text="had vp almost euerye nyght" type="straight"/>
+        <underline language="EN" method="pen" text="the order therof" type="straight"/>
+        <underline language="EN" method="pen" text="Dutches was" type="straight"/>
+        <underline language="EN" method="pen" text="satt him downe at his" type="straight"/>
+        <underline language="EN" method="pen" text="to his lot" type="straight"/>
+        <underline language="EN" method="pen" text="in a circle" type="straight"/>
+        <underline language="EN" method="pen" text="were deuyded a man and a woman, as" type="straight"/>
+        <underline language="EN" method="pen" text="gouerned as the Dutchesse" type="straight"/>
+        <underline language="EN" method="pen" text="this charge vnto the L. Emilia" type="straight"/>
+        <underline language="EN" method="pen" text="the companye beeinge" type="straight"/>
+        <underline language="EN" method="pen" text="after muche pleasaunt talke" type="straight"/>
+        <underline language="EN" method="pen" text="beginne" type="straight"/>
+        <underline language="EN" method="pen" text="these pastimes: and" type="straight"/>
+        <underline language="EN" method="pen" text="a litte refusing" type="straight"/>
+        <underline language="EN" method="pen" text="it is your" type="straight"/>
+        <underline language="EN" method="pen" text="shall be she that must" type="straight"/>
+        <underline language="EN" method="pen" text="oure pastimes this night" type="straight"/>
+        <underline language="EN" method="pen" text="reason disobey" type="straight"/>
+        <underline language="EN" method="pen" text="propounde a pastyme" type="straight"/>
+        <underline language="EN" method="pen" text="propounde a deuyse not yet hearde of" type="straight"/>
+        <underline language="EN" method="pen" text="thuse out such a one as shall he thought" type="straight"/>
+        <underline language="EN" method="pen" text="Gaspar Pallauicin, willynge" type="straight"/>
+        <underline language="EN" method="pen" text="him to propounde his: who" type="straight"/>
+        <underline language="EN" method="pen" text="immediatlye made" type="straight"/>
+        
+        <symbol name="SS" place="head"/>
+        
+        <symbol name="Sun" place="left_margin"/>
+        
+        <symbol name="Sun" place="right_margin"/>
+        <symbol name="HT" place="right_margin"/>
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark method="pen" name="quotation_mark" place="head"/>
+        
+        <mark language="EN" method="pen" name="quotation_mark" place="left_margin" text="helpinge hande to augment them"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="quotation_mark" place="right_margin" text="accustomed trade of disportinge and ordinary recreations"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="X_sign" place="right_margin"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!--way, where-->
+        <mark method="pen" name="comma" place="intext"/> <!--Italy, whatsoeuer-->
+        <mark method="pen" name="bracket" place="intext"/> <!--statisfied and-->
+        <mark method="pen" name="dot" place="intext"/> <!--departed, contynued-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="accustomed"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="especially"/>
+        <mark method="pen" name="dot" place="intext"/> <!--was, euery-->
+        <mark method="pen" name="dot" place="intext"/> <!--together, and-->
+        <mark method="pen" name="dot" place="intext"/> <!--women, for-->
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--best, whiche-->
+        <mark method="pen" name="dot" place="intext"/> <!--departed, the-->
+        <mark method="pen" name="dot" place="intext"/> <!--place, after-->
+        <mark method="pen" name="apostrophe" place="intext"/> <!--pastimes:-->
+        <mark method="pen" name="dot" place="intext"/> <!--night, bicause-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="propounde"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--of, then-->
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="slash" place="intext"/> <!--companye And-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="propounde"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+        <mark method="pen" name="quotation_mark" place="tail"/>
+        <mark method="pen" name="bracket" place="tail"/>
+        
+    </annotation>
+</transcription>

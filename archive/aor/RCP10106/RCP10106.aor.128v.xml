@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.128v.tif" pagination="256" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="in Rullum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Contra Rullu[m].</marginalia_text>
+                    <book title="De Lege Agraria Contra Rullum"/>
+                </position>
+            </language>
+            <translation>"Contra Rullum".</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in Pisonem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In Pisonem.</marginalia_text>
+                    <book title="In Pisonem"/>
+                </position>
+            </language>
+            <translation>In Pisonem.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in Antonium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In Antoniu[m].</marginalia_text>
+                    <book title="Philippics"/>
+                </position>
+            </language>
+            <translation>"In Antonium".</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="alia respondendi patronis ratio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Alia etia[m] patrono via</marginalia_text>
+                </position>
+            </language>
+            <translation>Also the other method from an advocate.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Cluentio</marginalia_text>
+                    <book title="Pro Cluentio"/>
+                </position>
+            </language>
+            <translation>"Pro Cluentio".</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Triarius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Triarius.</marginalia_text>
+                    <person name="Triarius"/>
+                </position>
+            </language>
+            <translation>Triarius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="co[n]questio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Conquestio</marginalia_text>
+                </position>
+            </language>
+            <translation>Complaint.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aduersus Cluentiu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Clue[n]tio</marginalia_text>
+                    <book title="Pro Cluentio"/>
+                </position>
+            </language>
+            <translation>"Pro Cluentio".</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Defensionis quoq[ue] permutatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Defensio[n]is p[er]mutatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Change of defence.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Declamatores" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Declamatores.</marginalia_text>
+                </position>
+            </language>
+            <translation>Declaimers.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Accium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Accius</marginalia_text>
+                    <person name="Lucius Accius"/>
+                </position>
+            </language>
+            <translation>Lucius Accius.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="&amp; insulsitatis" type="straight"/>
+        <underline language="LA" method="pen" text="Alia respondendi patronis ratio, &amp; aliquando non eorum *ratio modò, sed uita etiam, uultus deniq[ue] incessus, habitus recte              incusari solet." type="straight"/>
+        <underline language="LA" method="pen" text="est, quibus conuitiari aliquando patrocinij fides cogit. Illa" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]questio, si callide quid tacuisse, breuiasse, obscurasse, distulisse dicuntur" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

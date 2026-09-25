@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.083v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Pictaue[n]sium ; Aquitanniam ; Vasconiam ; Neustriam ; Andegauensi[u]m" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Pictauia
+                        Aquitania
+                        Vasconia
+                        Neustria
+                        Andegauia }
+                    </marginalia_text>
+                    <location name="Pictavia"/>
+                    <location name="Aquitaine"/>
+                    <location name="Gascony"/>
+                    <location name="Neustria"/>
+                    <location name="Andegavia"/>
+                </position>
+            </language>
+            <translation>Pictavia. Aquitaine. Gascony. Neustria. Andegavia.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Guyntardum Pictaue[n]sium duce[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Guyntardus Dux Pictauiensis.
+                    </marginalia_text>
+                    <person name="Guitard"/>
+                </position>
+            </language>
+            <translation>Guitard, commander of the Pictavians.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nouem annis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        :9. Anni.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Nine years.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="puganandum Guyntardum" type="straight"/>
+        <underline language="LA" method="pen" text="Aquitanniam" type="straight"/>
+        <underline language="LA" method="pen" text="Vasconiam" type="double"/>
+        <underline language="LA" method="pen" text="nouem" type="double"/>
+        <underline language="LA" method="pen" text="est Beduero pincerna[e] suo Neustriam" type="straight"/>
+        <underline language="LA" method="pen" text="nunc Normannia dicitur" type="straight"/>
+        <underline language="LA" method="pen" text="Caioq[ue]" type="double"/>
+        <underline language="LA" method="pen" text="dapifero Andegauensiu[m]" type="straight"/>
+        
+        <mark method="pen" name="hash" place="intext"/>
+        
+        <errata amendedtext="interim" copytext="iterum" language="LA"/>
+        
+    </annotation>
+</transcription>

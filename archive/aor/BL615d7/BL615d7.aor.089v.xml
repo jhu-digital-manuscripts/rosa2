@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.089v.tif" pagination="[89v]" reader="John Dee" signature="[M[v]]"/> 
+    
+    <annotation>
+        
+        <marginalia anchor_text="la giuridittion" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Iurisdictio omnimoda</marginalia_text>
+                </position>
+            </language>
+            <translation>Jurisdiction of every kind.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="godono i nostri Ammiragli de' mari di Castiglia" type="straight"/>
+        <underline language="IT" method="pen" text="di Lione" type="straight"/>
+        <underline language="IT" method="pen" text="Oceano nella" type="double"/>
+        <underline language="IT" method="pen" text="parte delle" type="double"/>
+        <underline language="IT" method="pen" text="giuridittion ciuile, &amp; criminale" type="straight"/>
+        <underline language="IT" method="pen" text="e il mero, e'l misto Imperio" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        
+        
+    </annotation>
+    
+</transcription>

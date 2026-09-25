@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.147r.tif" pagination="33" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="augme[n]tum Nili" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Nili augmentum
+                    </marginalia_text>
+                    <location name="Nile"/>
+                </position>
+            </language>
+            <translation>
+                Enlargement of the Nile
+            </translation>
+        </marginalia>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+        
+    </annotation>
+</transcription>

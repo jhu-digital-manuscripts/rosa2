@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.270r.tif" pagination="519" reader="John Dee" signature="IzIzIz.iiii."/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Repetitio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Repetition.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="integrius? quid incorruptius?" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        quid integrius incorruptius
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                What [is] more sound, more incorrupt.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="co[n]scientiae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Conscientia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Conscience.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="animo irato ac percito" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        a[n]i[m]o irato p[er]cito
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                By an enraged and excited mind.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sanguine &amp; vulneribus suis crudelissimi inimici me[n]tem oculósque satiauit" type="straight"/>
+        <underline language="LA" method="pen" text="ad deos accessit Clodius, propius quàm tum, cum ad ipsos" type="straight"/>
+        <underline language="LA" method="pen" text="Quod si nondu[m] satis cernitis, cum res ipsa tot, tam claris argumentis, signísque luceat, pura mente" type="straight"/>
+        <underline language="LA" method="pen" text="Magna vis est co[n]scientiae Iudices, &amp; magna in vtra[m]que partem: vt neque timea[n]t qui nihil commiserint:              &amp; poena[m] semper ante oculos versari putent qui peccarint" type="straight"/>
+        <underline language="LA" method="pen" text="irato ac percito fecisset" type="straight"/>
+        <underline language="LA" method="pen" text="perculissent" type="straight"/>
+        <underline language="LA" method="pen" text="contempsit, ac pro nihilo putauit, quae neque maximo animo nocens, neque innocens, nisi fortissimus vir, negligere potuisset. scutorum, gladiorum, fraenorum, sparoru[m]" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">19</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">18</numeral>
+        
+        <drawing anchor_text="Conscientia" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+
+    </annotation>
+</transcription>

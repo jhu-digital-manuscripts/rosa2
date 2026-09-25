@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.257r.tif" pagination="250" reader="John Dee" signature="RR ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Infortunae orie[n]tales, dant morbos: occide[n]tales, defectus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>vide expositione[m] huius Loci apud Schoneru[m] libro p[r]imo et capite sexto.</marginalia_text>
+                    <book title="De iudicijs Natiuitatum libri tres"/>
+                </position>
+            </language>
+            <translation>See the exposition of the place in Johannes Schoner, book one and chapter six.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Infortunae orie[n]tales, dant morbos: occide[n]tales, defectus" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        
+    </annotation>
+</transcription>

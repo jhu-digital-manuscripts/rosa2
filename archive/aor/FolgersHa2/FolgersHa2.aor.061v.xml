@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.061v.tif" pagination="442" reader="Harvey"/>	<!-- ABO 66left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						subtilitas in dictis, factisq[ue] singularis.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Subtlety in words and in singular deeds.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						ridicolo: ma aspramente.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Ridiculous, but bitterly.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Acies humani generis acutissima. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The sharpest blade of the human race.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Subtilior ipso Doctore subtili.
+						Aut intimè singula: aut omnia nihil.
+					</marginalia_text>
+					<person name="Duns Scotus"/>
+				</position>
+			</language>
+			<translation>
+				More subtle than the Subtle Doctor himself. 
+				Either singular things intimately, or nothing at all. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Ante omnia, subtilitas in dictis, factisq[ue] super omnes. Nam et paucissimi sunt,
+						qui aut dixeru[n]t, aut scripseru[n]t, aut egeru[n]t subtilissimè: et illi ipsi acutis dictis,
+						profundis sententijs; callidis strategematibus, omniq[ue] egregiorum facinorum 
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						varietate facilè possunt superari. Nemo adhuc in vtilibus negocijs satis subtilis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Before all other things, subtlety in words, and deeds beyond all other men. Indeed there are very few,
+				who either spoke, or wrote, or did things in a most subtle manner, and those men themselves with their sharp words,
+				profound opinions, cunning strategems, and every sort of excellent deed, can be easily surpassed by means of variety.
+				Thus far, no one engaged in useful activities is subtle enough.
+			</translation>
+		</marginalia>
+		
+		
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="di pero" type="straight"/>
+		<underline language="IT" method="pen" text="Giunto il uillano" type="straight"/>
+		<underline language="IT" method="pen" text="scudi" type="straight"/>
+		<underline language="IT" method="pen" text="commendar da ogni uno, che la uedeua" type="straight"/>
+		<underline language="IT" method="pen" text="molti dell'intepretatione" type="straight"/>
+		<underline language="IT" method="pen" text="ne la sapendo" type="straight"/>
+		<underline language="IT" method="pen" text="Vinetia al Doni" type="straight"/>
+		<underline language="IT" method="pen" text="Domenico Veniero, gentil'huomo" type="straight"/>
+		<underline language="IT" method="pen" text="uolesse significare la bell'arme" type="straight"/>
+		<underline language="IT" method="pen" text="una seuerità di uolto" type="straight"/>
+		<underline language="IT" method="pen" text="di grauità" type="straight"/>
+		<underline language="IT" method="pen" text="soggetti di queste arme" type="straight"/>
+		<underline language="IT" method="pen" text="Vite, e 'l Pero" type="straight"/>
+		<underline language="IT" method="pen" text="Gran uitupero" type="straight"/>
+		<underline language="IT" method="pen" text="ch'un par" type="straight"/>
+		<underline language="IT" method="pen" text="uillan traditore" type="straight"/>
+		<underline language="IT" method="pen" text="uoglia nobilitar co'l" type="straight"/>
+		<underline language="IT" method="pen" text="molte &amp; molte maniere" type="straight"/>
+		<underline language="IT" method="pen" text="argutia" type="straight"/>
+		<underline language="IT" method="pen" text="per precetto a chi" type="straight"/>
+		<underline language="IT" method="pen" text="molto bella, &amp; riece detta con" type="straight"/>
+		<underline language="IT" method="pen" text="improuisamente nasce dalla congiettura" type="straight"/>
+		<underline language="IT" method="pen" text="un'improuisa congiettura" type="straight"/>
+		<underline language="IT" method="pen" text="l'intelletto applicato alle speculationi" type="straight"/>
+		<underline language="IT" method="pen" text="professioni di uirtù" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="uero ritratto di ogni uirtù heroica" type="straight"/>
+		<underline language="IT" method="chalk" text="all'improuiso" type="straight"/>
+		
+		<!-- Symbols -->
+		<symbol name="SS" place="left_margin"/>
+		<symbol name="SS" place="left_margin"/> <!--griettura, beneath marginal note-->
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- signi -->
+		
+	    	<!-- Left margin -->
+	    <mark method="pen" name="bracket" place="left_margin"/> <!-- di ... uillan -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark method="pen" name="vertical_bar" place="intext"/> <!-- uista. Ma -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="interpretatione"/>
+	    <mark method="pen" name="dot" place="intext"/> <!-- sapendo, montato -->
+		<mark method="pen" name="comma" place="intext"/> <!-- heroica in -->
+		<mark method="pen" name="dot" place="intext"/> <!-- caso, domando' -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="una seuerità di uolto"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark: disse -->
+		<mark method="pen" name="dot" place="intext"/> <!-- Pero, che -->
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- roba -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="argutia"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- procedere, e -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="improuisamente"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="congiettura"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="improuisa"/>
+
+    </annotation>
+</transcription>

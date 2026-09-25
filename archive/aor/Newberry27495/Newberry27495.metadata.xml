@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+  <license>
+    <url>http://creativecommons.org/licenses/by/4.0/</url>
+    <logo>https://i.creativecommons.org/l/by/4.0/88x31.png</logo>
+  </license>
+  <totalPages>388</totalPages>
+  <dates>
+    <startDate>1561</startDate>
+    <endDate>1561</endDate>
+  </dates>
+  <texts>
+    <text id="1">
+      <language>en</language>
+      <title>The covrtyer of Covnt Baldessar Castilio diuided into foure books (London, 1561)</title>
+      <textId>castiglione</textId>
+      <pages end="194v" start="1r">388</pages>
+    </text>
+  </texts>
+  <bibliographies>
+    <bibliography lang="en">
+      <title>The covrtyer of Covnt Baldessar Castilio diuided into foure books (London, 1561)</title>
+      <commonName>Baldassare Castiglione, The covrtyer (London, 1561)</commonName>
+      <dateLabel>1561</dateLabel>
+      <currentLocation>Newberry Library</currentLocation>
+      <repository>Newberry Library</repository>
+      <shelfmark>Case Y 712 .C27495</shelfmark>
+      <author>
+        <name>Castiglione, Baldessare</name>
+        <id>http://www.isni.org/isni/0000000121007795</id>
+      </author>
+      <reader>
+        <name>Gabriel Harvey</name>
+        <id>http://www.isni.org/isni/0000000073570531</id>
+      </reader>
+      <website>https://archaeologyofreading.org/bibliography/Harvey-corpus/Castiglione-English</website>
+      <detail>[394] p. 19 cm</detail>
+      <note>Ties in to UCL Castiglione</note>
+    </bibliography>
+  </bibliographies>
+</book>

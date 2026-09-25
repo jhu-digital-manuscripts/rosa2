@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.241r.tif" pagination="234" reader="John Dee" signature="NN ij"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Cardinalis</marginalia_text>
+                </position>
+            </language>
+            <translation>Cardinal.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>△ ♃ ♀. d[omi]na [et] ☉ cu[m] spica ♍ ☾ in  ♃</marginalia_text> <!--JG: Unsure about 'et'--> <!-- FSF: I don't think this is an et; possibly Capricorn or Leo? -->
+                    <symbol_in_text name="Trine"/>
+                    <symbol_in_text name="Jupiter"/>
+                    <symbol_in_text name="Venus"/>
+                    <symbol_in_text name="Sun"/>
+                    <symbol_in_text name="Virgo"/>
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Sextile"/>
+                </position>
+            </language>
+            <translation>Jupiter trine Venus. Lady [..]. The Sun with the spike of Virgo. The Moon in sextile (60 degrees) to Jupiter.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Amicus aspectus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Amicus aspectus</marginalia_text>
+                </position>
+            </language>
+            <translation>A friendly aspect.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Amicus aspectus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Hoc melius intelliges ex folio 86.r.v.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:191" text="r"/>
+                        <target ref="RCP7134:192" text="v"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>You understand this better from folio 86 recto [and] verso.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="amico aspectu" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

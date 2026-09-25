@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.535v.tif" reader="Harvey" signature="[S3v]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text> 
+                        Liuij mors.
+                    </marginalia_text>
+                    <person name="Livy"/>
+                </position>
+            </language>
+            <translation>
+                Livy's death.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        Pla[e]runq[ue] vnius anni consulatu, plus gestum seriorum negotiorum, egregiorumq[ue]
+                        facinorum, quàm tota vita maximorum Regum: exceptis admodùm paucis; Cyro, Philippo, Alexandro, Pyrrho; 
+                        Agesilao, Euagora, Eumene; Jugurtha, Mithridate: alijs perpaucis. Olim plus virtutis, minus fama[e]: hodie plus fama[e], minus 
+                        virtutis. Egregiè Romanus Poeta, ex ipsius Ca[e]saris disciplina: breue, et irreparabile tempus, Omnibus est vita[e]: 
+                        sed Famam extendere Factis, Hoc Virtutis opus.
+                    </marginalia_text>
+                    <person name="Cyrus the Great"/> <!--Could also be Cyrus the Younger-->
+                    <person name="Philip II of Macedon"/> <!--It is probably this Philippus Harvey is talking about in this marginal note, since he mentioned this king earlier in the Livy-->
+                    <person name="Alexander the Great"/>
+                    <person name="Pyrrhus of Epirus"/>
+                    <person name="Agesilaus II"/>
+                    <!--Unclear which Evagoras Harvey is talking about-->
+                    <person name="Eumenes of Cardia"/>
+                    <person name="Jugurtha"/>
+                    <person name="Mithridates VI of Pontus"/> <!--Probably Harvey is mentioning this person, since he does so elsewhere in the Livy-->
+                    <X-ref book_title="Aeneid" language="LA" person="Virgil" text="famam extendere factis, hoc virtutis opus"/>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        σός λόγος ἐργον ἐμοῖο.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                In a consulate of one year generally more serious business and excellent deeds are accomplished than in the entire life of the greatest kings, 
+                with very few exceptions: Cyrus, Philip, Alexander, Pyrrhus, Agesilaus, Evagoras, Eumenes, Jugurtha, Mithridates, and extremely few others. 
+                Once there was more virtue, less fame; today there is more fame, less virtue. Based on the discipline of Caesar himself, 
+                the Roman poet put it brilliantly: "the course of life is brief and cannot be recalled: but virtue’s task is this, to increase fame by deeds" 
+                [ trans. Kline]. Your word, my deed.            
+            </translation>
+        </marginalia>
+                
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        Scire Gra[e]ca[e], Romanaeq[ue] historia[e]; continuatam seriem, valde conducit polyhistori. 
+                        Herodotus historiam suam est orsus à fine prophetarum: Thucydides à fine Herodoti: Xenophon à fine Thucydidis. 
+                        Romanae historiae primam partem praecipue suscepit Halicarnasseus; professus eam se historiam velle producere vsq[ue] 
+                        ad initium primi belli Punici. Secundam partem antèa suscepit Polybius. Postèa Liuius tertiam potissimùm partem explicare voluit.
+                        Tacitus non procul à fine Liuij suos Annales orditur: Marcellinus à fine Taciti, id est, à principatu Nerua[e]: 
+                        vt Herodianus ab exitu M. Antonini, in quo desijt Dion. Nec est difficile, talia continua[e] successionis exempla in 
+                        alijs pla[e]risq[ue] historicis obseruare.
+                    </marginalia_text>
+                    <person name="Herodotus"/>
+                    <person name="Thucydides"/>
+                    <person name="Xenophon"/>
+                    <person name="Dionysius of Halicarnassus"/>
+                    <person name="Polybius"/>
+                    <person name="Livy"/>
+                    <person name="Tacitus"/>
+                    <person name="Marcellinus"/>
+                    <person name="Herodian"/>
+                    <person name="Mark Antony"/>
+                    <person name="Cassius Dio"/>
+                </position>
+            </language>
+            <translation>
+                It is tremendously profitable for the polyhistor to know the continuous line of Greek and Roman history. Herodotus began his history 
+                from the end of the prophets; Thucydides from the end of Herodotus; Xenophon from the end of Thucydides. Dionysius of Halicarnassus took up 
+                the first part of Roman history in particular, declaring he wanted to record history up to the beginning of the first Punic war. 
+                Before, Polybius took on the second part. Afterwards Livy wanted to give an account of the third part especially. Tacitus begins his Annals 
+                not far from the end of Livy. Marcellinus from the end of Tacitus, namely from the principate of Nerva, just as Herodian starts from the 
+                death of Marcus Antoninus, where Cassius Dio stopped. And it is not hard to notice such examples of continued succession in most of the other 
+                historians.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        Duo autem Romana[e] historia[e] doctissimi, et diligentissimi scriptores, Dionysius, et Liuius. Quod attinet ad res, et tempora, 
+                        Dionysij antefero diligentiam: verba à Liuio malo repetere, et sententias. Neq[ue] enim minima historia[e], ipsiusq[ue] iurisprudentia[e] 
+                        Romana[e] pars, visq[ue] sita est in ipsis formulis; quas vbiq[ue] Liuius diserte recitat, atq[ue] adeo religiosè: Dionysius, et 
+                        reliqui Gra[e]ci sua lingua exprimere non possent, né si vellent quidem maximè. Vnde Politicum decet, in primisq[ue] iurisconsultum, 
+                        Liuiana[e] phrasis maximè omnium esse obseruantem: vt postèa Tacitea[e]. In qua Romana[e] prudentia[e], et fortitudinis; temperantia[e] 
+                        etiam, et iustitia[e] proprius quidam vigor, visq[ue] neruosa, viuidiùs mihi videtur efflorescere, adeóq[ue] fertiliùs maturescere. 
+                        Doctor Gentilis totus est Liuianus: vt Lipsius ferè Taciteus. Ambo sapiunt: sed vterq[ue] coniunctus, varieq[ue] coagmentatus plus 
+                        valeret. Ta[e]det omnis sine varietate excellentia[e]: et philosophi est, plura bona paucioribus anteponere.
+                    </marginalia_text>
+                    <person name="Dionysius of Halicarnassus"/>
+                    <person name="Livy"/>
+                    <person name="Tacitus"/>
+                    <person name="Alberico Gentili"/>
+                    <person name="Lipsius"/>
+                </position>
+            </language>
+            <translation>
+                Yet the two most learned and assiduous writers of Roman history [are] Dionysius and Livy. In regard to the subject and the times I esteem 
+                Dionysius’ attentiveness more highly; I prefer to repeat the words and thoughts of Livy. For in these very formulas lies quite a big part of 
+                Roman history and of jurisprudence itself, which Livy recites dexterously and indeed religiously. Dionysius and the other Greeks could not 
+                have expressed them in their language, even if they had very much wanted to do so. And for this reason it is appropriate for the politician, 
+                and especially the lawyer, to be attentive most of all to Livy’s diction, just like afterwards to that of Tacitus. In this a particular 
+                vitality and powerful force of Roman prudence and courage, of restraint also and of justice seems to me to flourish in quite a lively way, 
+                and indeed to come to maturity in a very fruitful manner. Doctor Gentili is completely of Livy, just as Lipsius more or less of Tacitus.
+                Both are wise, but each of them is stronger when connected and in various ways fastened together. Without variety every form of excellence 
+                makes weary, and it is the task of the philosopher to place a greater quantity of excellence before a smaller one.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Germanicus Caesar" type="straight"/>
+        <underline language="LA" method="pen" text="Suetonius in" type="straight"/>
+        <underline language="LA" method="pen" text="Sex. Pompeius" type="straight"/>
+        <underline language="LA" method="pen" text="Claudius Tiberius Caesar" type="straight"/>
+        <underline language="LA" method="pen" text="Vitellio" type="straight"/>
+        <underline language="LA" method="pen" text="Tiberius Nero Caesar" type="straight"/>
+        <underline language="LA" method="pen" text="Germanicus Caesar" type="straight"/>
+        <underline language="LA" method="pen" text="T.Liuij historiographi mors" type="straight"/>
+        <underline language="LA" method="pen" text="Valerius Messala" type="straight"/>
+        <underline language="LA" method="pen" text="Aurelius Cotta" type="straight"/>
+        
+        <symbol name="SS" place="intext"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!--Caligula-->
+        <mark method="pen" name="dot" place="intext"/> <!--Caesar-->
+        <mark method="pen" name="dot" place="intext"/> <!--Vitellio-->
+        <mark method="pen" name="dot" place="intext"/> <!--Caesar III-->
+        <mark method="pen" name="dot" place="intext"/> <!--Caesar II-->
+        <mark method="pen" name="dot" place="intext"/> <!--Syllanus-->
+        <mark method="pen" name="dot" place="intext"/> <!--Balbus-->
+        <mark method="pen" name="dot" place="intext"/> <!--Eusebio-->
+        <mark method="pen" name="dot" place="intext"/> <!--SS symbol-->
+        <mark method="pen" name="dot" place="intext"/> <!--Messala-->
+        <mark method="pen" name="dot" place="intext"/> <!--Cotta-->
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Tiberius Nero"/> 
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Germanicus Caesar"/> 
+        
+    </annotation>
+</transcription>

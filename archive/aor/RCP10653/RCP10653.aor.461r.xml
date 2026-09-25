@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.461r.tif" reader="John Dee" signature="* ij"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Brutus Troianus 428 
+                    </marginalia_text>
+                    <person name="Brutus of Troy"/>
+                    <internal_ref>
+                        <target ref="RCP10653:894:m0001" text="428"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                Brutus of Troy, [page] 428.
+            </translation>
+        </marginalia>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.009r.tif" reader="John Dee" signature="Biij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Co[m]me[n]surabile" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Comme[n]surabile
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Commensurable.
+            </translation>
+        </marginalia>        
+        
+        <marginalia anchor_text="dyameter est co[m]mensurabilis coste" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Díametru[m] esse inco[m]me[n]surabile costa[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The diameter is incommensurable with the side.  
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nona[m] quinti geometrie" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        9a 5i
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Ninth of a fifth.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="duo nu[m]eri obtine[n]tes p[ro]portione[m] dupla[m] nequaq[uam] possunt esse             co[n]tra se inuice[m] vt nu[m]erus q[ua]dratus ad quadratu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Quadratos numeros non posse esse ad invice[m] in dupla p[ro]portio[n]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Square numbers cannot be constant in the proportion to each other.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="q[ua]dratus q[ua]drato duplus relinquit[ur]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Quadrati numeri no[n] possunt esse in dupla proportione
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Square numbers cannot be in double proportion.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Co[m]me[n]surabile" type="straight"/>
+        <underline language="LA" method="pen" text="q[ua] mutuo me[n]surari p[ossu]nt" type="straight"/>
+        <underline language="LA" method="pen" text="nona[m] quinti" type="straight"/>
+        <underline language="LA" method="pen" text="septima[m] decimi" type="straight"/>
+        <underline language="LA" method="pen" text="p[ro]pter q[ui]d" type="straight"/>
+        <underline language="LA" method="pen" text="que dupla p[ro]portio est minima in paritate [et] imparitate vt vnu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="q[uo]d duo nu[m]eri obtine[n]tes p[ro]portione[m] dupla[m] nequaq[uam] possunt esse co[n]tra se inuice[m] vt nu[m]erus q[ua]dratus ad quadratu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ponant[ur] esse minimi in p[ro]portio[n]e eru[n]t e[ni]m per vicesima[m] s[e]c[un]dam septimi co[n]tra se primi" type="straight"/>
+        <underline language="LA" method="pen" text="hoc aliq[ui]s eor[um] erit impar" type="straight"/>
+        <underline language="LA" method="pen" text="tricesim anoni" type="straight"/>
+        <underline language="LA" method="pen" text="vt g ad h" type="straight"/>
+        <underline language="LA" method="pen" text="due q[uan]titates equales g [et] h" type="straight"/>
+        <underline language="LA" method="pen" text="quare no[n] erit q[ua]dratus q[ua]drato duplus relinquit[ur] p[er] impossibile oste[n]sum dyametru[m] esse assimetru[m] coste" type="straight"/>
+        <underline language="LA" method="pen" text="paria esse equalia imparibus" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- co[mmun]is vt -->
+        <mark method="pen" name="comma" place="intext"/> <!-- cubit[us] vel -->
+        <mark method="pen" name="comma" place="intext"/> <!-- huiusmo[d]i q[ua] -->
+        <mark method="pen" name="comma" place="intext"/> <!-- falsa q[ua]re -->
+        <mark method="pen" name="comma" place="intext"/> <!-- coste dato -->
+        <mark method="pen" name="comma" place="intext"/> <!-- impari silogisando -->
+        <mark method="pen" name="comma" place="intext"/> <!-- tertiu[m] sunt -->
+        <mark method="pen" name="comma" place="intext"/> <!-- eq[ua]les maior -->     
+        <mark method="pen" name="comma" place="intext"/> <!-- primi quare -->
+        <mark method="pen" name="comma" place="intext"/> <!-- dyametri duplu[m] -->
+        <mark method="pen" name="comma" place="intext"/> <!-- primi q[uo]d -->
+        <mark method="pen" name="comma" place="intext"/> <!-- quinti due -->
+        <mark method="pen" name="bracket" place="intext"/> <!-- impossibile Q[ue] -->
+        <mark method="pen" name="equal_sign" place="right_margin"/> <!-- simetrum -->
+        
+        <errata amendedtext="," copytext="." language="LA"/> <!-- equale[m] impari -->
+        <errata amendedtext="p[ro]portione[m]" copytext="p[ro]positione[m]" language="LA"/>
+        <errata amendedtext="p[ro]portione[m]" copytext="p[ro]positione[m]" language="LA"/>
+        <errata amendedtext="a noni" copytext="anoni" language="LA"/>
+        <errata amendedtext="p[ro]portione[m]" copytext="p[ro]positione[m]" language="LA"/>  
+        
+    </annotation>
+</transcription>

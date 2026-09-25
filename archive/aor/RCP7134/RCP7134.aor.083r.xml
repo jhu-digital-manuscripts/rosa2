@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.083r.tif" pagination="76" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Liquet igitur denuo, hanc arte[m] esse omniu[m] maxima[m], cu[m] uero pauci aut uix ulli ad eam pertingere possint, alij negligunt, alij infamem supposititijs commentis reddunt" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Eade[m] est r[ati]o Ptoloma[e]i in fine sui capitis quadripartiti.</marginalia_text>
+                    <person name="Ptolemy"/>
+                    <book title="Liber quadripartiti Ptolomaei"/>
+                </position>
+            </language>
+            <translation>Ptolemy has the same reason in the end of the chapter of his 'Quadripartiti'.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Asce[n]dit ♍ ♃ fere, ita q[uod] o[mn]es illi planet[a]e
+                    ferè essent in prima domo rude clarius indiciu[m] erat de illo in gymnasiu[m] introitu. ♃ ☿ et ♂ et ☾ co[n]iunctis. ☿ 
+                    domino asce[n]de[n]t[i]s ia[m] [gr - ge[ne]r[atur]??].</marginalia_text> <!--JG: Still unsure about 'rude/vide' abt last word-->
+                    <symbol_in_text name="Virgo"/>
+                    <symbol_in_text name="Jupiter"/>
+                    <symbol_in_text name="Mercury"/>
+                    <symbol_in_text name="Mars"/>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>Jupiter hardly ascended in Virgo, so that to him all planets hardly are in the first undeveloped house. A clearer indication of him was to go into the gymnasium.
+               With Jupiter, Mercury, and Mars, and the Moon in conjunction. Venus to the lord of the ascendent already [...]. <!--JG: Very unsure-->
+            </translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="hor. 15. minu. 18 à meridie." hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>hora. 16: m[inutae] 36: [secunda]: 8</marginalia_text>
+                    <emphasis method="pen" text="hora. 16: m[inutae] 36: [secunda]: 8" type="straight"/>
+                </position>
+            </language>
+            <translation>Sixteen hours, 36 minutes, and 8 seconds.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="directiones ac reuolutiones co[n]cordare" type="straight"/>
+        <underline language="LA" method="pen" text="reuolutio haec quae" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

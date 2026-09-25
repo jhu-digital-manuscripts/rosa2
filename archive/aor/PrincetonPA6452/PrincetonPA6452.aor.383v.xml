@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.383v.tif" pagination="750" reader="Harvey" signature="[rrr3v]"/>
+    <annotation>        
+        
+        <underline language="LA" method="pen" text="templum Iunonis Laciniae tegulis marmoreis spoliauit" type="straight"/>
+        <underline language="LA" method="pen" text="aedem" type="straight"/>
+        <underline language="LA" method="pen" text="tegeret" type="straight"/>
+        <underline language="LA" method="pen" text="Eumenes Asiae rex" type="straight"/>
+        <underline language="LA" method="pen" text="Perseo Macedoniae rege" type="straight"/>
+        <underline language="LA" method="pen" text="leuibusq[ue] expeditionibus, equestribus praelijs" type="straight"/>
+        <underline language="LA" method="pen" text="Masanissam, &amp; Carthaginienses de agro fuit dies" type="straight"/>
+        <underline language="LA" method="pen" text="ex fatalibus libris" type="straight"/>
+        
+         <symbol name="JC" place="left_margin"/>
+
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- reportatae -->
+        <mark language="LA" method="pen" name="quotation_mark" place="right_margin" text="leuibusq[ue] expeditionibus, equestribus praelijs"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- equestri -->
+        
+    </annotation>
+</transcription>

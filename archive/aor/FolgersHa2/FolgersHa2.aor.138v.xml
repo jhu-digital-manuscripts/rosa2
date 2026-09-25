@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.138v.tif" pagination="100" reader="Harvey" signature="[G2v]"/>	<!-- ABO 143left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Theurgo, Tutto netto: come purissimo vino.	
+						Pragmatico, molto piu netto, che Theurgo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The theurge is totally clear, as the purest wine.
+				The pragmatic man is clearer than the theurge.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Principium efficax, dimidium Totius: Totum est in
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Principio Astronomico:
+						et pars Signiferi (
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						ascendens, instar Totius. Euge.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				An effective beginning is half of the whole;
+				the whole is found in an astronomical beginning.
+				And the part of the sky in ascendant is a likeness of the whole. Excellent!
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Puro - purissimo, come vino diuino.	
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Pure, the purest, like a divine wine.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Requiritur pra[e]sta[n]tissimaru[m] partiu[m] inductio,
+						ad constituendu[m] Totum excellentissimu[m].
+					</marginalia_text>
+					<emphasis method="pen" text="pra[e]sta[n]tissimaru[m] partiu[m]" type="straight"/>
+					<emphasis method="pen" text="Totum excellentissimu[m]" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The introduction of the most oustanding parts is required in order
+				to establish the most excellent whole.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Vir excellens non est, qui
+						non est semper excellens. Quantus quantus est.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				He who is not always excellent is not an excellent man .
+				He is as great as he is great. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Hebetes scholasticoru[m] nota[e]:
+						Eutrapeli animaduersiones acutissima[e].
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				The dull notes of the scholars; the most acute observations of Eutrapelus.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Respice punctum ascendens.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Consider the rising point.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Proximus sum egomet mihi: ait rusticus. Certè quisq[ue] egregius Sibiipsi
+						Vnus instar omnium. Pra[e]clarus quisq[ue] in seipso Microcosmus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				I am my own neighbor, says the man of the countryside.
+				Certainly, for himself each distinguished man is a specimen of the whole.
+				Each illustrious man is a microcosm in himself.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Amor di meretrice" type="straight"/>
+		<underline language="IT" method="pen" text="spogliarti" type="straight"/>
+		<underline language="IT" method="pen" text="hò lasciato il mantello" type="straight"/>
+		<underline language="IT" method="pen" text="vita crapulosa" type="straight"/>
+		<underline language="IT" method="pen" text="pigra" type="straight"/>
+		<underline language="IT" method="pen" text="parca" type="straight"/>
+		<underline language="IT" method="pen" text="industriosa" type="straight"/>
+		<underline language="IT" method="pen" text="Mosca" type="straight"/>
+		<underline language="IT" method="pen" text="Formica" type="straight"/>
+		<underline language="IT" method="pen" text="essa volare" type="straight"/>
+		<underline language="IT" method="pen" text="andar carponi" type="straight"/>
+		<underline language="IT" method="pen" text="viuere splendidamente" type="straight"/>
+		<underline language="IT" method="pen" text="senza durar fatica" type="straight"/>
+		<underline language="IT" method="pen" text="Formica" type="straight"/>
+		<underline language="IT" method="pen" text="sè non essere ignobile" type="straight"/>
+		<underline language="IT" method="pen" text="contentarsi del" type="straight"/>
+		<underline language="IT" method="pen" text="tanto piacere" type="straight"/>
+		<underline language="IT" method="pen" text="Formica il grano" type="straight"/>
+		<underline language="IT" method="pen" text="mosca il vino" type="straight"/>
+		<underline language="IT" method="pen" text="industria" type="straight"/>
+		<underline language="IT" method="pen" text="Formica esser sicura" type="straight"/>
+		<underline language="IT" method="pen" text="pascersi dì per dì" type="straight"/>
+		<underline language="IT" method="pen" text="viene l'autunno" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<symbol name="SS" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- esem -->
+		 
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- fatica. Per -->
+		
+    </annotation>
+</transcription>

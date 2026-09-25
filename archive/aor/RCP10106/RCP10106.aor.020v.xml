@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.020v.tif" pagination="40" reader="John Dee" signature="[c 4[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="originationê" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Originatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Origination.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="etymologiae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Etymologia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Etymology.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="fructuosus" type="straight"/>
+        <underline language="LA" method="pen" text="Ideo'q[ue] in definitionibus aßignatur etymologiae locus." type="straight"/>
+        
+    </annotation>
+</transcription>

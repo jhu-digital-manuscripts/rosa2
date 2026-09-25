@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonK6233.011r.tif" reader="Harvey" signature="β3r"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Notarum Elenchi.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Refutations of notes.
+            </translation>
+        </marginalia>
+            
+        <underline language="LA" method="pen" text="F.C." type="straight"/>
+        <underline language="LA" method="pen" text="fideicommissi" type="straight"/>
+        <underline language="LA" method="pen" text="fraudandorum creditorum significare" type="straight"/>
+        <underline language="LA" method="pen" text="1. l." type="straight"/>
+        <underline language="LA" method="pen" text="tam iure" type="straight"/>
+        <underline language="LA" method="pen" text="legeq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="Notas pro non notis" type="straight"/>
+        <underline language="LA" method="pen" text="ad conditionem" type="straight"/>
+        
+        <mark method="chalk" name="horizontal_bar" place="right_margin"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- accipiens easq[ue] -->
+        
+    </annotation>
+</transcription>

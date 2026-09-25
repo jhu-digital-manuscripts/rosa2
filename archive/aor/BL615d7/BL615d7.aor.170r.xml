@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.170r.tif" pagination="170" reader="John Dee" signature="Yij"/>    
+    <annotation>
+        
+        <marginalia anchor_text="protettori de gl' Indiani" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Protettori d'Indiani</marginalia_text> 
+                </position>
+            </language>
+            <translation>Protectors of the Indians</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="percioche ogniun rubbaua quel, che poteua, &amp; l'Orla[n]do loro Capo rubbaua piu di tutti" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>the Spanish wickednes</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="percioch' egli volca difender gl' Indiani, &amp; i ribellati" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Oh Traitor</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Manicauter" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Manicauter</marginalia_text> 
+                    <person name="Manicauter"/> <!-- M.B. a 'Cacique'/chieftian. -->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="percioche peso non hebbero mai" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>No waights</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="gridando, ch'erano protettori de gl'Indiani: doue le opere" type="straight"/>
+        <underline language="IT" method="pen" text="loro era di Ladroni" type="straight"/>
+        <underline language="IT" method="pen" text="percioche ogniun rubbaua quel, che poteua, &amp; l'Orla[n]do loro Capo rubbaua piu di tutti" type="straight"/>
+        <underline language="IT" method="pen" text="percioch'egli volea difender gl'Indiani, &amp; i ribellati" type="straight"/>
+        <underline language="IT" method="pen" text="dimandaua a loro" type="straight"/>
+        <underline language="IT" method="pen" text="Manicauter" type="straight"/>
+        <underline language="IT" method="pen" text="tenea vn suo figliuolo, &amp; vn nepote appresso di se" type="straight"/>
+        <underline language="IT" method="pen" text="percioche peso non hebbero mai" type="straight"/>
+        <underline language="IT" method="pen" text="cosi diuisi i Christiani" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="right_margin"/>       
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.398v.tif" pagination="248" reader="John Dee" signature="[Qq.iiii.[v]]"/>   
+    <annotation>
+        
+        <marginalia anchor_text="Priamus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Priamus
+                    </marginalia_text>
+                    <person name="Priam"/>
+                </position>
+            </language>
+            <translation>
+                Priam.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="AEneae somnium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Ænea[e] somnium
+                    </marginalia_text>
+                    <person name="Aeneas"/>
+                </position>
+            </language>
+            <translation>
+                The dream of Aeneas.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Superbi Tarquinii somniu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Tarquinij sup[er]bi so[m]niu[m].
+                    </marginalia_text>
+                    <person name="Lucius Tarquinius Superbus"/>
+                </position>
+            </language>
+            <translation>
+                The dream of Lucius Tarquinius Superbus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in somno" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Vnde somnia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Where the dream comes from.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Matrem Phalaridis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Mater Phalaridis
+                    </marginalia_text>
+                    <person name="Phalaris"/>
+                </position>
+            </language>
+            <translation>
+                Mother Phalaris.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cyro" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Cyrus.
+                    </marginalia_text>
+                    <person name="Cyrus the Younger"/>
+                </position>
+            </language>
+            <translation>
+                Cyrus the Younger.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Magos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Magi
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The Wise.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="In me arietare" type="straight"/>
+        <underline language="LA" method="pen" text="ad casum dari" type="straight"/>
+        <underline language="LA" method="pen" text="Res, quae in vita vsurpant, homines cogitant, curant, vident, Quáeque agunt vigilantes,              agitántque, ea si cui in somno accidunt, Minus mirandum est: sed in re tanta haud temere improuiso" type="straight"/>
+        <underline language="LA" method="pen" text="Proin vide ne quem tu esse hebetem deputes aeque" type="straight"/>
+        <underline language="LA" method="pen" text="verruncent" type="straight"/>
+        <underline language="LA" method="pen" text="referuescere" type="straight"/>
+        <underline language="LA" method="pen" text="se conuoluens sol elaberetur" type="straight"/>
+        <underline language="LA" method="pen" text="sapientum &amp; doctorum habebatur" type="straight"/>
+        
+        <symbol name="Unidentified" place="left_margin"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        
+        <drawing anchor_text="Ænea[e] somnium" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="Vnde Somnia" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="Magi" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+        
+    </annotation>
+</transcription>

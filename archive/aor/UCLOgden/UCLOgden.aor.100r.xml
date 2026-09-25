@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.100r.tif" pagination="183" reader="John Dee" signature="q 2"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Modus Indicandi.
+                    </marginalia_text>
+                </position>
+            </language>
+                <translation>
+                    The mode of indicating.
+                </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        numero auctus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>By the number of the growth.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in deiectis cardinibus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        deiecti cardines
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Unhinged poles.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Patris itaq[ue] locum" type="straight"/>
+        <underline colour="red" language="LA" method="pen" text="in quo signo nouissima pars" type="dotted"/>
+        <underline language="LA" method="pen" text="ceciderit, ipsum tibi signum patris locum monstrabit" type="straight"/>
+        <underline colour="red" language="LA" method="pen" text="In nocturna uero genitura, à ♄ parte usque ad ☉ computa" type="straight"/>
+        <underline language="LA" method="pen" text="in ♄" type="straight"/>
+        <underline language="LA" method="pen" text="matutino ortu, adde[n]s ad numerum" type="straight"/>
+        <underline language="LA" method="pen" text="in deiectis" type="straight"/>
+        <underline language="LA" method="pen" text="in deiectis cardinibus" type="straight"/>
+        
+        <mark colour="red" method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" colour="red" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

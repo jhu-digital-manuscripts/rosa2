@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.090v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Bosonem de vadobou[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Boso de Vado Boum Oxenforde richiden. fol. 85.
+                    </marginalia_text>
+                    <person name="Boso"/>
+                    <location name="Oxford"/>
+                    <internal_ref>
+                        <target ref="ChChWb512:WB5-12_0193_085r:u0001" text="85"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Boso of Vado Boum. Oxford. Richiden. </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Guerinu[m] carnote[n]sem" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Guarinus Carnote[n]sis Warin of Charters in the edge of Norma[n]dy
+                    </marginalia_text>
+                    <person name="Guerinus of Chartres"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="tumba helenae" type="straight"/>
+        <underline language="LA" method="pen" text="Guerinu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="carnote[n]sem" type="straight"/>
+        
+    </annotation>
+</transcription>

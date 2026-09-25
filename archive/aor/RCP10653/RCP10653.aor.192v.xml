@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.192v.tif" pagination="376" reader="John Dee" signature="[Ij ij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="de rege eligendo magna inter regni principes dissensio est exorta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Magna dissensio de Rege eligendo.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A great conflict over the choosing of the king.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="clericos, vt prius, loco eorum cum vxoribus induxerunt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Clerici maritati
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Married clerics.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Laudian" type="straight"/>
+        <underline language="LA" method="pen" text="nuncupatur, hac conditione" type="straight"/>
+        <underline language="LA" method="pen" text="venirent ad curiam" type="straight"/>
+        <underline language="LA" method="pen" text="ei rex mansiones" type="straight"/>
+        <underline language="LA" method="pen" text="vsque in tempora regis Henrici secundi in potestate regum Scotiae remanserunt" type="straight"/>
+        <underline language="LA" method="pen" text=".xxxii." type="straight"/>
+        <underline language="LA" method="pen" text="verò .xvi." type="straight"/>
+        <underline language="LA" method="pen" text="de rege eligendo magna inter regni principes dissensio est" type="straight"/>
+        <underline language="LA" method="pen" text="filium Aethelredum" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; clericos, vt prius, loco eorum cum vxoribus induxerunt" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

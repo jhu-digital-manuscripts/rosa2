@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.050r.tif" pagination="99" reader="John Dee" signature="g 2"/>
+    <annotation>
+        
+       <marginalia anchor_text="audaces Graeci" hand="Italian">
+           <language ident="LA">
+               <position book_orientation="0" place="right_margin">
+                   <marginalia_text>Gra[e]corum audacia</marginalia_text>
+                   <location name="Greece"/>
+               </position>
+           </language>
+           <translation>The boldness of the Greeks.</translation>
+       </marginalia> 
+        
+        <underline language="LA" method="pen" text="Canaan quartogenito" type="straight"/>
+        <underline language="LA" method="pen" text="Saba" type="straight"/>
+        
+    </annotation>
+</transcription>

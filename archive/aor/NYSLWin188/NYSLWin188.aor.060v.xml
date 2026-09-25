@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.060v.tif" pagination="[60[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="das Wasser das sich von der Sonnen auffhebet wider zu vns kompt sondern stirbet im Lufft" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Vapores qui a ☉ attrahuntur in nihilum ta[n]de[m] vertuntur in aëre e[tc]. 
+                    </marginalia_text>
+                    <symbol_in_text name="Sun"/>              
+                </position>
+            </language>
+            <translation>Vapours that are attracted by the sun are in the end changed into nothing in the air.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Als ein exempel was das fewr verzeret vnd hinnimpt kan niemandt weder sagen noch sprechen das der Him[m]el dasselbige nicht auch möge thun" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nota ëius argume[n]tu[m] de Ca[e]li efficacia.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Note his argument on the efficiency of the sky.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ein ding wie das feur: Auß der vrsachen wissent das nicht wider auff vns kommen noch fallen mag als wenig als das Wasser das sich von der Sonnen auffhebet wider zu vns kompt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Nota
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="das von der Sonnen" type="straight"/>
+        <underline language="DE" method="pen" text="Sternen zermalen" type="double"/>
+        <underline language="DE" method="pen" text="auffgezogen" type="double"/>
+        <underline language="DE" method="pen" text="Aber das der" type="straight"/>
+        <underline language="DE" method="pen" text="ein ding wie das feur" type="straight"/>
+        <underline language="DE" method="pen" text="wissent das nicht wider auff vns" type="straight"/>
+        <underline language="DE" method="pen" text="kommen noch fallen" type="double"/>
+        <underline language="DE" method="pen" text="mag als" type="straight"/>
+        <underline language="DE" method="pen" text="wenig als das Wasser" type="double"/>
+        <underline language="DE" method="pen" text="das sich von der Sonnen auffhebet wider zu vns kompt sondern" type="straight"/>
+        <underline language="DE" method="pen" text="stirbet im Lufft" type="double"/>
+        <underline language="DE" method="pen" text="verzeret sich gar" type="straight"/>
+        <underline language="DE" method="pen" text="das gehet hinweg" type="double"/>
+        <underline language="DE" method="pen" text="das fewr verzeret" type="straight"/>
+        <underline language="DE" method="pen" text="vnd hinnimpt" type="double"/>
+        <underline language="DE" method="pen" text="kan niemandt weder sagen noch sprechen das der Him[m]mel dasselbige nicht auch möge thun vnd" type="straight"/>
+        <underline language="DE" method="pen" text="zeit" type="straight"/>
+        
+        <symbol name="Sun" place="right_margin"/>
+        <symbol name="Moon" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

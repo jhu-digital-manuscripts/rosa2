@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.228r.tif" pagination="228" reader="John Dee" signature="Ffiiij"/>
+    <annotation>
+        
+        <marginalia anchor_text="le Testugini" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Le Testugini</marginalia_text>
+                </position>
+            </language>
+            <translation>The Tortoises</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="giardino della Reina" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Giardino della Renia</marginalia_text>
+                    <location name="Jardines de la Reina"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="correnti dalla banda di Leuante" type="straight"/>
+        <underline language="IT" method="pen" text="nome le Testugini" type="straight"/>
+        <underline language="IT" method="pen" text="giardino della Reina" type="straight"/>
+        <underline language="IT" method="pen" text="qua[n]tità molto grande d'Isolette" type="straight"/>
+        <underline language="IT" method="pen" text="Isola di Cuba" type="straight"/>
+        <underline language="IT" method="pen" text="nauve Bermuda sostenersi" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.057v.tif" pagination="[57[v]]" reader="John Dee" signature="[H[v]]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        falsum, nisi in iteanere Leste <!-- DO: I'm not sure about the penultimate word. It looks like it ends in 'ere'.  --> <!-- FSF: I am really not sure either -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                It is wrong, if not <!-- FSF: to be completed -->
+            </translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="acu recta manente, &amp; mundi" type="straight"/>
+        <underline language="LA" method="pen" text="centrum petente, ubique" type="double"/>
+        <underline language="LA" method="pen" text="uerò ab AEquatore, eadem altitudine, unde profecta" type="straight"/>
+        <underline language="LA" method="pen" text="abibit: etiam absque recessu" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/>  <!-- iter, quo -->
+        <mark method="pen" name="bracket" place="intext"/>  <!-- debeat, unquam -->
+        
+        <errata amendedtext="(" copytext="," language="LA"/>
+        <errata amendedtext=")" copytext="," language="LA"/>
+
+    </annotation>
+</transcription>

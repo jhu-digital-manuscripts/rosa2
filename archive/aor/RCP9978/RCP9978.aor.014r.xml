@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.014r.tif" reader="John Dee" signature="D ij"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text/>    <!-- DO: Could be 'materia[m]'? -->
+                </position>
+            </language>
+            <translation/>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Mose vi virgarum" type="straight"/>
+        <underline language="LA" method="pen" text="certe Diuino afflatu fiebant" type="straight"/>
+        <underline language="LA" method="pen" text="Nam corporea materia non subijcitur potentiae" type="straight"/>
+        <underline language="LA" method="pen" text="transmutationem ipsius, ad formam" type="straight"/>
+        <underline language="LA" method="pen" text="huic" type="straight"/>
+        <underline language="LA" method="pen" text="materiae" type="straight"/>
+        
+    </annotation>
+</transcription>

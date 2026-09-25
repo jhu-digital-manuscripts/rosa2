@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.007v.tif" reader="John Dee" signature="[B[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Est autem forma et figura s[e]c[un]d[u]m esse vnu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        forma figura
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Form, shape.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quod p[re]dicti termini s[e]c[un]d[u]m q[uod] in co[n]creto sunt posicionem co[n]cernu[n]t" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Termini in concreto
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Concrete boundaries.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Forma autem in eius substancialis qualitas est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Forma substa[n]cialis, hor[um] est q[ua]litas.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The substantial form is the quality of them.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="figura" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Figura.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Shape.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="forma trigoni [...] 'figura trigoni'" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        forma figura} trigoni
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Form and shape of a triangle.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="intra ad" type="straight"/>
+        <underline language="LA" method="pen" text="substantialem" type="straight"/>
+        <underline language="LA" method="pen" text="extra" type="straight"/>
+        <underline language="LA" method="pen" text="corporis ab intus est forma q[uae] substancialis dicitur" type="straight"/>
+        <underline language="LA" method="pen" text="Nam curuu[m] significat substantia[m] curuitas v[er]o qualitate[m]. nam forma[m] eius substantialem in ea" type="straight"/>
+        <underline language="LA" method="pen" text="extra. Est autem forma et figura s[e]c[un]d[u]m esse vnu[m]. differunt aute[m] in hoc. Forma namq[ue] inest             substantie s[e]c[un]d[u]m q[uod] qualis et figura s[u]b[stantia]e s[ecundu]m q[uod] quanta Nam figura terminus quantitatis et forma terminus materie" type="straight"/>
+        <underline language="LA" method="pen" text="termini s[e]c[un]d[u]m q[uod] in co[n]creto sunt posicionem co[n]cernu[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="et quod spissum est om[n]ibus motibus corporis co[m]plectitur" type="straight"/>
+        <underline language="LA" method="pen" text="positionem" type="straight"/>
+        <underline language="LA" method="pen" text="situm" type="straight"/>
+        <underline language="LA" method="pen" text="permanentia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="a priori sunt" type="straight"/>
+        <underline language="LA" method="pen" text="soliditas spissitudo lenitas asperitas densitas" type="straight"/>
+        <underline language="LA" method="pen" text="raritas" type="straight"/>
+        <underline language="LA" method="pen" text="Nam forma" type="straight"/>
+        <underline language="LA" method="pen" text="figura trigoni sunt tres linee clause" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- quantitatis et -->
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- substancialis qualitas -->
+        
+        <errata amendedtext="," copytext="." language="LA"/> <!-- forme figura -->
+        
+        <!-- FSF: possibly there is a 1 in the right margin -->
+        
+    </annotation>
+</transcription>

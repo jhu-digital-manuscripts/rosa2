@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.216r.tif" pagination="423" reader="John Dee" signature="Nn ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Comes Leofricus [...] Comitissa Godiua" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        [ Leofricus. Comes moritur Godiua vel Godwina.
+                    </marginalia_text>
+                    <person name="Leofric, Earl of Mercia"/>
+                    <person name="Lady Godiva"/>
+                </position>
+            </language>
+            <translation>
+                Leofric, Earl of Mercia dies, Lady Godiva or Godwina. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Legecestria" hand="Italian"> 
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        West Chester      
+                    </marginalia_text>
+                    <location name="Chester"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Hunc quoque dei famulum, in omni religione perfectum, Griffinus rex VVallensium, Herefordensi ciuitate cremata, vita priuauit" type="straight"/>
+        <underline language="LA" method="pen" text="Venit igitur Eadvvardus, cum filio suo Eadgaro, &amp; filiabus Margareta, &amp; Chrstiana" type="straight"/>
+        <underline language="LA" method="pen" text="Comes Leofricus" type="straight"/>
+        <underline language="LA" method="pen" text="quod ipse, &amp; vxor" type="straight"/>
+        <underline language="LA" method="pen" text="Comitissa Godiua" type="straight"/>
+        <underline language="LA" method="pen" text="in Legecestria" type="straight"/>
+        <underline language="LA" method="pen" text="autem Comitissa religiosè villam" type="straight"/>
+        
+    </annotation>
+</transcription>

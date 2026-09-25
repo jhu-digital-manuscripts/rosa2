@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.078v.tif" pagination="[71v]" reader="John Dee" signature="[S iij[v]]"/>
+    <annotation>
+        
+        <errata amendedtext="[deleted]" copytext="☾ [Moon] 11.43." language="LA"/>
+        
+        <table place="intext" type="astrological_chart">
+            <tr>
+                <th/>
+                <th label="House"/>
+                <th label="Position"/>
+            </tr>
+            <tr>
+                <td>Moon</td>
+                <td>12</td> 
+                <td>11.43.</td>
+            </tr>
+        </table>
+        
+    </annotation>
+</transcription>

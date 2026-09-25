@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.090v.tif" reader="Harvey" signature="[Liii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Progymnasmata militaria.</marginalia_text>
+                </position>
+            </language>
+            <translation>Military progymnasmata (rhetorical exercises).</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Pa[e]dia Cyri.</marginalia_text>
+                    <book title="Cyropaedia"/>
+                </position>
+            </language>
+            <translation>Cyropaedia.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Assuetudo.</marginalia_text>
+                </position>
+            </language>
+            <translation>Custom.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Scipioes Discipline.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Ca[e]saris Ambulatio, in hoc genere singularis: seminariu[m] tantarum Victoriaru[m].
+                    Familiare vocabulum,</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>tanq[uam] res facilis.</marginalia_text>
+                </position>
+            </language>
+            <translation>Caesar's stroll, singular in this kind: the seminary of such victories. A familiar term, as much as an easy matter.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Metellus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sallust. de Metello. Non priùs bellu[m] attingere, quàm Maoiru[m] disciplinâ
+                    Milites Laborare coegisset.</marginalia_text>
+                    <person name="Sallust"/>
+                    <person name="Quintus Caecilius Metellus Numidicus"/>
+                    <book title="Jugurthine War"/> <!--chapter 44-->
+                    <emphasis method="pen" text="Maoiru[m] disciplinâ" type="straight"/>
+                    <emphasis method="pen" text="Laborare" type="straight"/>
+                </position>
+            </language>
+            <translation>Sallust on Metellus. "Not to engage in active war before he had forced his men to endure toil by reviving the ancient discipline." [Pollard, 1882].</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Chose thou those that be gret" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>vide Comes Purl. L.I.obs.185.</marginalia_text>
+                    <person name="Jacopo di Porcia"/>
+                    <book title="The preceptes of warre"/>
+                </position>
+            </language>
+            <translation>See Jacopo di Porcia, book 1, observation 185.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="270" place="right_margin">
+                    <marginalia_text>Herculeus Labor, etiam heroicam fortitudinem parit.</marginalia_text>
+                </position>
+            </language>
+            <translation>A herculean effort also produces heroic strength.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vse none other flesh but rosted or sodde" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Etia[m] cruda, tolerabilia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Even raw, tolerable.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vse none other flesh but rosted or sodde" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>At Statius de Tideo Homerico: Maior in exiguo regnabat corpore Virtus: et nuper in Italia N Piccininus,
+                        Bellator erat omniu[m] acerrimus, Duxq[ue] maximè terribilis: qui tame[n] ea fuit corporis paruitate, vt sacculo impositus aliquandò
+                        euaderet, tanq[uam] sarcinula aliqua à milite abreptus.</marginalia_text>
+                    <person name="Publius Papinius Statius"/>
+                    <person name="Tydeus"/>
+                    <person name="Homer"/>
+                    <person name="Nicholas Piccininus"/>
+                    <book title="Thebaid"/>
+                    <location name="Italy"/>
+                </position>
+            </language>
+            <translation>But Statius on the Homeric Tydeus: "Greater strength reigned in a small body": and recently in Italy,
+            Nicholas Piccininus. The fighter was the most severe of all, and the general was especially frightful: 
+            who nevertheless had such a small body that, he would sometimes escape being placed in a small bag, as if being snatched away by a soldier with some small pack.
+            </translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="caused to make many iourneys" type="straight"/>
+        <underline language="EN" method="pen" text="to beare on theyr backes" type="straight"/>
+        <underline language="EN" method="pen" text="as moche vittayles as" type="straight"/>
+        <underline language="EN" method="pen" text="accustomed" type="straight"/>
+        <underline language="EN" method="pen" text="to suffer colde and sharpe showres" type="straight"/>
+        <underline language="EN" method="pen" text="to wade ouer waters" type="straight"/>
+        <underline language="EN" method="pen" text="imbrayded them of fearefulnesse" type="straight"/>
+        <underline language="EN" method="pen" text="and cowardise" type="straight"/>
+        <underline language="EN" method="pen" text="such vesselles" type="straight"/>
+        <underline language="EN" method="pen" text="pieces, whiche they" type="straight"/>
+        <underline language="EN" method="pen" text="more of delycacie, than for nede in" type="straight"/>
+        <underline language="EN" method="pen" text="C. Meuius" type="straight"/>
+        <underline language="EN" method="pen" text="To me but" type="straight"/>
+        <underline language="EN" method="pen" text="whyle" type="straight"/>
+        <underline language="EN" method="pen" text="thy left and to the co[m]mon weale" type="straight"/>
+        <underline language="EN" method="pen" text="shalt euer be lewde &amp; vnprofytable" type="straight"/>
+        <underline language="EN" method="pen" text="Metellus" type="straight"/>
+        <underline language="EN" method="pen" text="like seuerite" type="straight"/>
+        <underline language="EN" method="pen" text="the Discipline" type="straight"/>
+        <underline language="EN" method="pen" text="was decayed and neglected" type="straight"/>
+        <underline language="EN" method="pen" text="vse none other" type="straight"/>
+        <underline language="EN" method="pen" text="rosted" type="straight"/>
+        <underline language="EN" method="pen" text="sodde" type="straight"/>
+        <underline language="EN" method="pen" text="that Pirrhus" type="straight"/>
+        <underline language="EN" method="pen" text="those that be gret" type="straight"/>
+        <underline language="EN" method="pen" text="them stronge" type="straight"/>
+        
+        <symbol name="SS" place="head"/>
+        <symbol language="LA" name="SS" place="head" text="Assuetudo"/>
+        
+        <symbol language="LA" name="SS" place="left_margin" text="Ca[e]saris Ambulatio, in hoc genere singularis: seminariu[m] tantarum Victoriaru[m].             Familiare vocabulum, tanq[uam] res facilis."/>
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="imbrayded them of fearefulnesse and cowardise"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="stronge"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--make many-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="iourneys"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="as moche vittayles as"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="accustomed"/>
+        <mark method="pen" name="dot" place="intext"/> <!--showres, and-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="imbrayded"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="delycacie"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="To me but"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="lewde"/>
+        <mark language="EN" method="pen" name="apostrophe" place="intext" text="like seuerite"/>
+        <mark method="pen" name="apostrophe" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="stronge"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.182v.tif" pagination="344" reader="John Dee" signature="[yy.iiii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Veridicas adiungis causas" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        veridic[a]e causs[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A truthful reason.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ad haec" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ad h[a]ec
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To these.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ince[n]su dedicauisti" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ince[n]su dedicauisti
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                You made returns in the census.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Repetitio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Repetition.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="gloriosus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        gloriosus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Glorious.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="census es" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Census es
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                You are registered.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sed vt hoc verisimile est, haudverisimile Decianum à Flacco esse" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        sed vt hoc verisimile ita haud verisimile est
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                But as this is likely thus it is by no means likely.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ince[n]su dedicauisti" type="straight"/>
+        <underline language="LA" method="pen" text="inuidisti ingenio subscriptoris tui, quòd ornabat facile locum quem prehenderat, &amp; acute testeis interrogabat aut circunueniebat" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">18</numeral>
+        
+        
+    </annotation>
+</transcription>

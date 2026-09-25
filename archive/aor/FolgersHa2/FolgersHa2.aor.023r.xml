@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+	<page filename="FolgersHa2.023r.tif" pagination="369" reader="Harvey"/>	<!-- ABO 027right -->
+    	<annotation>
+    		
+            		<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="EN">
+            			<position book_orientation="0" place="head">
+                    				<marginalia_text>
+                    					right Canarie sack: for it rather barkes, or snarles, then speakes.
+                      			</marginalia_text>
+            			</position>
+        			</language>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="EN">
+    				<position book_orientation="0" place="right_margin">
+    					<marginalia_text>
+    						What language speakes this wine, pure Spanish, or nett French, or right Italia? 
+    						Is it braue, or fine wine?
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="EN">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						a learned Greek wine. pure Greek. s[upr]a / 53. i[nfr]a, 399.
+    					</marginalia_text>
+    					<!--JG: 'supra' refers to a page of a part of the book that is missing, hence we can't establish this link. Perhaps at a later stage when we can link to external objects (in this case a complete copy of the Domenichi)-->
+    					<internal_ref>
+    						<target ref="FolgersHa2:Ha2.040r" text="399"/>
+    					</internal_ref>
+    				</position>
+    			</language>
+    			<translation>
+    				[See] above, 55. [See] below, 399.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="right_margin">
+    					<marginalia_text>
+    						s[upr]a /
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				[See] above.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						i[nfr]a, 369. 
+    					</marginalia_text>
+    					<internal_ref>
+    						<target ref="FolgersHa2:Ha2.025r" text="369"/>
+    					</internal_ref>
+    				</position>
+    			</language>
+    			<translation>
+    				[See] below, 369.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						Profunda Patientia.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Profound patience.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						) pra[e]claru[m], sed non tempestivum.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				) Brilliant, but not timely.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						Sat prata biberunt. Dimidium plus Toto.
+    					</marginalia_text>
+    					<X-ref book_title="Bucolics" language="LA" person="Virgil" text="Sat prata biberunt"/>
+    					<X-ref book_title="Adages" language="LA" person="Erasmus" text="Dimidium plus Toto"/>
+    				</position>
+    			</language>
+    			<translation>
+    				"The meadows drank enough." "The half is more than the whole."
+    			</translation>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="90" place="left_margin">
+    					<marginalia_text>
+    						Malorum omnium pra[e]sens remedium, Ironia. Bonoru[m] omnium pra[e]sens machina,
+    						Entelechia. Mundi etiam vanitas exigit Euschemosynem.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				The present remedy of all evils is Irony. The present machine of all good things is Actualization.	
+    				And furthermore, the vanity of the world drives away decency.
+    			</translation>
+    		</marginalia>
+        
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="270" place="right_margin">
+    					<marginalia_text>
+    						Pulchrum est: sed non perti[n]et
+    						ad meum iam cursum. Noli me
+    						tangere. Omnia tempus habent.
+    					</marginalia_text>
+    					<X-ref book_title="Bible" language="LA" person="John" text="Noli me tangere"/> <!-- John 20:17-->
+    				</position>
+    			</language>
+    			<translation>
+    				It is beautiful, but it does not pertain to my present course. "Do not touch me." All things have their time.
+    			</translation>
+    		</marginalia>
+        
+	    	<!-- Underlines -->
+	        
+    		<underline language="IT" method="pen" text="pare" type="straight"/>
+    		<underline language="IT" method="pen" text="com'è buono" type="straight"/>
+    		<underline language="IT" method="pen" text="non faceua motto" type="straight"/>
+    		<underline language="IT" method="pen" text="continuava a succiare" type="straight"/>
+    		<underline language="IT" method="pen" text="miglior Greco" type="straight"/>
+    		<underline language="IT" method="pen" text="io non l'intendeua" type="straight"/>
+    		<underline language="IT" method="pen" text="non hò lettere" type="straight"/>
+    		<underline language="IT" method="pen" text="cotesti linguaggi forestieri" type="straight"/>
+    		<underline language="IT" method="pen" text="Faceto" type="straight"/>
+    		<underline language="IT" method="pen" text="Humor da Bologna, da" type="straight"/>
+    		<underline language="IT" method="pen" text="molto libero, &amp; satirico" type="straight"/>
+    		<underline language="IT" method="pen" text="pungeua" type="straight"/>
+    		<underline language="IT" method="pen" text="altrui sul uiuo" type="straight"/>
+    		<underline language="IT" method="pen" text="l'odio delle" type="straight"/>
+    		<underline language="IT" method="pen" text="udito manomettere da esso" type="straight"/>
+    		<underline language="IT" method="pen" text="dar busse, o cessate a questo" type="straight"/>
+    		<underline language="IT" method="pen" text="Humore hauendosi" type="straight"/>
+    		<underline language="IT" method="pen" text="sentito percuotere, quasi" type="straight"/>
+    		<underline language="IT" method="pen" text="douete hauer colto in iscambio" type="straight"/>
+    		<underline language="IT" method="pen" text="pieno di male" type="straight"/>
+    		<underline language="IT" method="pen" text="tu l'Humor" type="straight"/>
+    		<underline language="IT" method="pen" text="fracida, &amp; diabolica, che non" type="straight"/>
+    		<underline language="IT" method="pen" text="rispetto a persona" type="straight"/>
+    		<underline language="IT" method="pen" text="sconcie parole" type="straight"/>
+    		<underline language="IT" method="pen" text="patientia veramente degna di Catone" type="straight"/>
+    		<underline language="IT" method="pen" text="mi uolete uoi male?" type="straight"/>
+    		<underline language="IT" method="pen" text="Sapientia Socrata" type="straight"/>
+    		<underline language="IT" method="pen" text="Platone" type="straight"/>
+    		<underline language="IT" method="pen" text="fresca colera contra" type="straight"/>
+    		<underline language="IT" method="pen" text="uno inganno" type="straight"/>
+    		<underline language="IT" method="pen" text="pieno di mal talento masticaua" type="straight"/>
+    		<underline language="IT" method="pen" text="appunto d'urto in" type="straight"/>
+    		
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	    	<symbol name="SS" place="intext"/>
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark method="pen" name="horizontal_bar" place="right_margin"/> <!-- faceua -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- usa -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- ta[n] -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- n'ac -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- ri -->
+    		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- l'Hu -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- ta -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- cono -->
+    		<!--JG: bracket, next to con pa- -->
+    			
+	    	<!-- Left margin -->
+	    	<mark method="pen" name="bracket" place="left_margin"/> <!-- continuaua ... il -->
+    		<mark method="pen" name="bracket" place="left_margin"/> <!-- il beone ... tendo -->
+    		<mark method="pen" name="equal_sign" place="left_margin"/> <!-- quistaua -->
+    		<mark method="pen" name="bracket" place="left_margin"/> <!-- colui ... uoi male -->
+		    
+	    	<!-- Intext -->
+	    	<mark method="pen" name="straight_quotation_mark" place="intext"/> <!-- a succiare -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- miglior Greco -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- Firenze, &-->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="linguaggi"/>
+    		<mark method="pen" name="quotation_mark" place="intext"/> <!-- Faceto.] -->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="satirico"/>
+    		<mark method="pen" name="quotation_mark" place="intext"/> <!-- pungeua -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- sul uiuo -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- uiuo, et-->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- & diabolica -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- con pa -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- Catone -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- Catone, dunque-->
+    		<mark method="pen" name="equal_sign" place="intext"/> <!-- Socratica -->
+    		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- Chalk mark on right side of page, end of first paragraph -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- lui, &-->
+    		
+
+    </annotation>
+</transcription>

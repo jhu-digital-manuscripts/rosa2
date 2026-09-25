@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.245r.tif" pagination="41" reader="John Dee" signature="Ddd iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="historiam Britonum, de lingua Britannica, transtulit in latinum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Historia Brytanica traducta.
+                    </marginalia_text>
+                    <book title="Historia Regum Britanniae"/>
+                </position>
+            </language>
+            <translation>
+                Historia Regum Britanniae was translated.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Monae insul[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="Galfridus Arthurus factus" type="straight"/>
+        <underline language="LA" method="pen" text="historiam Britonum" type="straight"/>
+        <underline language="LA" method="pen" text="de lingua Britannica" type="straight"/>
+        
+        <errata amendedtext="Gulihelmus" copytext="Gulihtlmus" language="LA"/>
+
+    </annotation>
+</transcription>

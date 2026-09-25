@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.017r.tif" pagination="23" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="minori Brytannia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Minor Brytannia</marginalia_text>
+                    <location name="Brittany"/>
+                </position>
+            </language>
+            <translation>Brittany</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Perdiderunt nempe Gallici quindecim millia hominum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>15000 galli ca[e]si</marginalia_text>
+                </position>
+            </language>
+            <translation>Fifteen thousand French men fell.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Angliae curiam suam habeat nulli subiectam, si quise laesos senserint per homines regnisui, veniant ad curiam suam, &amp; declaratis sibi illatis iniurijs,             Rex eis celerem fieri iusticiam ordinabit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="gratiae 1294." type="straight"/>
+        <underline language="LA" method="pen" text="vicesimus primus" type="double"/>
+        <underline language="LA" method="pen" text="Tynam, vbi suscepit homagium Regis Scotorum" type="straight"/>
+        <underline language="LA" method="pen" text="quasi sibi soli maris cessisset libertas," type="straight"/>
+        <underline language="LA" method="pen" text="submersis aut caesis hominibus omnibus qui erant in nauibus" type="straight"/>
+        <underline language="LA" method="pen" text="solis illis" type="straight"/>
+        <underline language="LA" method="pen" text="quindecim" type="straight"/>
+        <underline language="LA" method="pen" text="Angliae curiam suam habeat nulli subiectam, si qui se laesos senserint per homines regni sui, veniant ad curiam suam, &amp; declaratis sibi illatis iniurijs,              Rex eis celerem fieri iusticiam ordinabit" type="straight"/>
+        <underline language="LA" method="pen" text="instanter flagitantibus dignatum est aliquid" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="intext"/> <!-- Scotorum ( Eo -->
+        <mark method="pen" name="bracket" place="intext"/> <!-- solebat. (Spreuit -->
+        
+        <errata amendedtext="sanctium" copytext="sanctum" language="LA"/> <!-- FSF: I am not sure but I would have captured that as a marginal note too -->
+        <errata amendedtext="[laudo]" copytext="laudo" language="LA"/>
+        
+    </annotation>
+</transcription>

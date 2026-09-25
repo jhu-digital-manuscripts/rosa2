@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.170r.tif" pagination="339" reader="John Dee" signature="y 2"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Reus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Reus</marginalia_text>
+                </position>
+            </language>
+            <translation>Guilty.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="non semper defensione facti, sed excusatione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>No[n] se[m]p[er] factu[m] defenditur sed aliqua[n]do excusatur.</marginalia_text> 
+                </position>
+            </language>
+            <translation> Not always is the act defended, but sometimes excused.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Verrem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In verre[m]</marginalia_text>
+                    <book title="In Verrem"/>
+                </position>
+            </language>
+            <translation>In Verrem.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Reip" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Respub[lica]</marginalia_text>
+                </position>
+            </language>
+            <translation>Republic.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="per errorem, &amp; leuius quàm obijciatur, absolutioni no[n]nunqua[m] sufficit" type="straight"/>
+        <underline language="LA" method="pen" text="legationis" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <drawing book_orientation="90" method="pen" place="left_margin" type="florilegium"/> 
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.104v.tif" pagination="[104[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Hipocrates" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Hippocrates
+                    </marginalia_text>
+                    <person name="Hippocrates"/>
+                </position>
+            </language>
+            <translation>Hippocrates.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="art geht vn[d] bleibt ein jeglich vn[d] nit in d[er]" type="straight"/>
+        <underline language="DE" method="pen" text="vber wind d[as] ist die leib gesu[n]dheit vberwint d[er] Ce[n]tru[m] kra[n]ckheit der Matrix: Den[n]" type="straight"/>
+        <underline language="DE" method="pen" text="virtus ist eine Him[m]lische kraft" type="straight"/>
+        <underline language="DE" method="pen" text="diese virtus ist Co[e]lestis Astronomia" type="straight"/>
+        
+        <mark language="DE" method="pen" name="bracket" place="left_margin" text="vberwind d[e]r ist die leib gesu[n]dheit vberwint das Ce[n]tru[m] kra[n]ckheit vn[d] die Centru[m] kra[n]ckheit vberwind die leib kra[n]ckheit der Matrix"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

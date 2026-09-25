@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.020v.tif" pagination="30" reader="John Dee" signature="[C.iij.[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Proceres scotia[e].</marginalia_text>
+                    <location name="Scotland"/>
+                </position>
+            </language>
+            <translation>Nobles of Scotland.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Scotorum citari fecerat edicto publico, vt" type="straight"/>
+        <underline language="LA" method="pen" text="sibi debeant obijci responderet" type="straight"/>
+        <underline language="LA" method="pen" text="nuntium se excusante" type="straight"/>
+        <underline language="LA" method="pen" text="Robertus de Roos" type="straight"/>
+        <underline language="LA" method="pen" text="de VVerk, non obsta[n]te fidelitate quam regi" type="straight"/>
+        <underline language="LA" method="pen" text="dicta" type="straight"/>
+        <underline language="FR" method="pen" text="Prest feu," type="straight"/>
+        <underline language="LA" method="pen" text="omnes eadem nocte à Scotis, quorum capitaneus erat praefatus transfuga, Robertus" type="straight"/>
+        <underline language="LA" method="pen" text="quod Scoti" type="straight"/>
+        <underline language="LA" method="pen" text="prima coeperunt" type="double"/>
+        <underline language="LA" method="pen" text="hostilia exercere." type="straight"/>
+        <underline language="LA" method="pen" text="septem Comites" type="double"/>
+        <underline language="LA" method="pen" text="de Bovvan" type="straight"/>
+        <underline language="LA" method="pen" text="ac Iohannes filius Iohannis Comyn de Badenau" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- quo, ad -->
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+        <errata amendedtext="Scotia[m]." copytext="Wasconiam." language="LA"/>
+        
+    </annotation>
+</transcription>

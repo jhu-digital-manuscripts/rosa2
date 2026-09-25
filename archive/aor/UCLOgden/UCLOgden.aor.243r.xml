@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.243r.tif" reader="John Dee" signature="T 5"/>
+    <annotation>
+        
+        <marginalia anchor_text="bis denis partibus actis" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>20</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+       
+        
+        <underline language="LA" method="pen" text="At cum Cassiope bis denis partibus actis" type="straight"/>
+        <underline language="LA" method="pen" text="Artifices auri faciet" type="straight"/>
+        
+        <symbol name="Aquarius" place="left_margin"/>
+        
+    </annotation>
+</transcription>

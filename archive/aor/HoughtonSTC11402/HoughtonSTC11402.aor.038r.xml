@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.038r.tif" reader="Harvey" signature="[Dvii[r]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Lucullus" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Lucullus soone proouid an</marginalia_text>
+                    <person name="Lucius Licinius Lucullus"/>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>excellent captain by his booke only, withowt other trayning.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="Lucullus in" type="straight"/>
+        <underline language="EN" method="pen" text="Mithridates" type="straight"/>
+        <underline language="EN" method="pen" text="Tigranes in" type="straight"/>
+        <underline language="EN" method="pen" text="xv. thousande men" type="straight"/>
+        <underline language="EN" method="pen" text="ennemies out of araye and" type="straight"/>
+        <underline language="EN" method="chalk" text="oute of araye" type="straight"/>
+        <underline language="EN" method="pen" text="them selfes were fayne" type="straight"/>
+        <underline language="EN" method="pen" text="their cote armure, and" type="straight"/>
+        <underline language="EN" method="pen" text="in aray early" type="straight"/>
+        <underline language="EN" method="pen" text="be beaten with the" type="straight"/>
+        <underline language="EN" method="pen" text="myste and rayne" type="straight"/>
+        <underline language="EN" method="pen" text="their courage faynted" type="straight"/>
+        <underline language="EN" method="pen" text="were soore weakened" type="straight"/>
+        <underline language="EN" method="pen" text="Cesar in" type="straight"/>
+        <underline language="EN" method="pen" text="Ariouistus kyng of" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="ennemies out of araye and"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

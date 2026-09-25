@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.329r.tif" pagination="637" reader="John Dee" signature="fff.i."/>
+    <annotation>
+        
+        <marginalia anchor_text="freti; nixi; fulti" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>freti. nixi fulti</marginalia_text>
+                </position>
+            </language>
+            <translation>Relying on; depending on; supported.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="facilius &amp; procliuius ad laudem nobilitatis peruenient" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>facilius. procliuius. p[er]uenire.</marginalia_text>
+                </position>
+            </language>
+            <translation>More easily. More readily. To arrive.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quid ego improborum facta renouem oratione, vt redintegratione illius coniurationis animos vulnerem vestros? auxilium ab alienis" type="straight"/>
+        <underline language="LA" method="pen" text="est concertandum, innocentiae virtute fretus supero" type="straight"/>
+        
+    </annotation>
+</transcription>

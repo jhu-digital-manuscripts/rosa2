@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.misc.insert.23.tif" origin="added" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian" method="pencil" other_reader="unknown modern hand">
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>p 42 SIGNED Note JD and p 43 on corrupt text</marginalia_text> 
+                    <symbol_in_text name="Florilegium"/>
+                    <person name="John Dee"/>
+                    <internal_ref>
+                        <target ref="UCLOgden:065" text="42"/>
+                        <target ref="UCLOgden:066" text="43"/>
+                    </internal_ref>
+                </position>
+            </language>
+        </marginalia>
+        
+    </annotation>
+</transcription>

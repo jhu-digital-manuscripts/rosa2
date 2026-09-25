@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.163r.tif" pagination="149" reader="Harvey" signature="K3[r]"/>	<!-- ABO 167right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Anatome Artis. Supra Eunapium.
+					</marginalia_text>
+					<person name="Eunapius"/>
+				</position>
+			</language>
+			<translation>The anatomy of art. Beyond Eunapius.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						l'Arte in persona.	
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						I in mine owne Epicycle.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The art in person. I in mine owne Epicycle.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Res è rebus ipsis: et ad vivum 
+						singula: sine vllo fumo, aut fuco.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The thing from the things themselves: and singular things for living: without any smoke or disguise.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						perfectus Orator,
+						aureum Mundi Speculum.
+						Eutrapelia. Euphilotima.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The perfect orator, the golden mirror of the world. Wittiness. Ambition.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Nunq[uam] nimis, quod nunq[uam] satis: vt ante omnia,
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Ipsa[e] Artium, philosophia[e], professionum Summa[e]
+						Mnemonica[e]. Ha[e]c principalia: ca[e]tera accesoria.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Never too much, because never enough: as before everything, the highest reminders of the arts, philosophy, and professions.
+			These are the principals: the rest are accessories.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Eutrapelus dixit, viuam Artem, et Viuam Virtutem in nullo adhuc esse
+						pra[e]dicamento. Sed vtramq[ue] esse posse Hoc agentis.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>Eutrapelus said that a lively art and a lively virtue were not yet in anything preceding. But that both can be of he who does this.</translation> 
+				<!--JG: I'm struggling a bit with 'sed...agentis'. Could also be 'but that both can be...', don't see how 'hoc agentis' fits though-->
+				<!-- CG: I'm really unsure about the grammar here. 'Agentis' would be something like a present active participle in singular genitive, e.g. 'of he who does this'. I assume 'utramq[ue]' refers back to life and virtue. -->
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Ars est sua[e] facultatis quinta essentia. Virtus, sua[e] perfectionis Entelechia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Art is the quintessence of its faculty. Virtue is the actualization of its perfection.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="nell'andare" type="straight"/>
+		<underline language="IT" method="pen" text="nel vestire" type="straight"/>
+		<underline language="IT" method="pen" text="pronta" type="straight"/>
+		<underline language="IT" method="pen" text="agile" type="straight"/>
+		<underline language="IT" method="pen" text="suegliata ad ogni cosa" type="straight"/>
+		<underline language="IT" method="pen" text="considerata, &amp; degna" type="straight"/>
+		<underline language="IT" method="pen" text="guardarla fissamente in viso" type="straight"/>
+		<underline language="IT" method="pen" text="dimorar sauio tra' pazzi" type="straight"/>
+		<underline language="IT" method="pen" text="pioggia auuenuta" type="straight"/>
+		<underline language="IT" method="pen" text="tutta la sua Città era impazzata" type="straight"/>
+		<underline language="IT" method="pen" text="genti pazze" type="straight"/>
+		<underline language="IT" method="pen" text="per pazzo teneuan" type="straight"/>
+		<underline language="IT" method="pen" text="asciuto sauio era" type="straight"/>
+		<underline language="IT" method="pen" text="sauiamente d'uscir ancor" type="straight"/>
+		<underline language="IT" method="pen" text="pazzo con tutti" type="straight"/>
+		<underline language="IT" method="pen" text="che sauio" type="straight"/>
+		<underline language="IT" method="pen" text="L'ambition dell'huomo" type="straight"/>
+		<underline language="IT" method="pen" text="non patir alcun conforte" type="straight"/>
+		<underline language="IT" method="pen" text="Alessandro Magno" type="straight"/>
+		<underline language="IT" method="pen" text="battaglie Dario" type="straight"/>
+		<underline language="IT" method="pen" text="la virtù del" type="straight"/>
+		<underline language="IT" method="pen" text="la metà del suo" type="straight"/>
+		<underline language="IT" method="pen" text="vna figliuola" type="straight"/>
+		<underline language="IT" method="pen" text="tesoro infinito" type="straight"/>
+		<underline language="IT" method="pen" text="Parmenione" type="straight"/>
+		<underline language="IT" method="pen" text="Alessandro" type="straight"/>
+		<underline language="IT" method="pen" text="io lo" type="straight"/>
+		<underline language="IT" method="pen" text="io lo farei" type="straight"/>
+		<underline language="IT" method="pen" text="fussi Parmenione" type="straight"/>
+		<underline language="IT" method="pen" text="acquisitò la terza, &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="fare i voti" type="straight"/>
+		<underline language="IT" method="pen" text="danno di loro" type="straight"/>
+		<underline language="IT" method="pen" text="doma[n]dando gratie à" type="straight"/>
+		
+		<symbol name="SS" place="left_margin"/>
+		
+		<symbol name="Sun" place="intext"/>
+		 
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Parmenione suo principal huomo, disse: se io fussi.     Alessandro, io lo farei: &amp; io lo farei (rispose Allesandro) s'io fussi Parmenione. Cosi rifiutata la conditione, presto     acquistò la terza, &amp; intera vittoria."/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- confor -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- vo -->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="pronta"/>
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="suegliata ad ogni cosa"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- cosa, ma -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="considerata"/>
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="degna"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- impazzata, & -->
+		<mark method="pen" name="dot" place="intext"/> <!-- rimaso, elesse -->
+		<mark method="pen" name="X_sign" place="intext"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- dot over 'i' in 'disse' -->
+		
+    </annotation>
+</transcription>

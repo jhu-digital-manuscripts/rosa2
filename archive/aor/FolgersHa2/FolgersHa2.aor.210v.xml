@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.210v.tif" pagination="flyleaf" reader="Harvey"/>	<!-- ABO 215right -->
+	<annotation>
+		<!-- Marginalia --> 
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						Pra[e]ter cuiusq[ue] artis, philosophia[e], professionis;
+						maximarum deniq[ue] arc[ano]rum Singulares
+						bibliothecas: eccè Eutrapeli sex propria[e]
+						dactilotheca[e]: Suo adamantino discursui,
+						styloq[ue] [a]ccommodatissima[e].
+						Dactil[o]theca apophthegmatum: D.
+						Prouerbio[r]um: D. emblematum:
+						Dactil. g[em]marum, et regularum:
+						Dactil. grammatum: et ha[e]c
+						Io[--]um Pe[cul]iaris dactilotheca.
+						Aurea[e] Eutrap[e]li Ephemerides:
+						et Specula Eu[dr]omi adamantina.
+						Huc etiam flores Poetarum; doctoru[m];
+						Legum. Certè pulcherrima, et
+						[--]ssima fl[ori]legia. Nec ulla[e]
+						[antho]logia[e] [--].
+						[--]
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Besides [the singular libraries] of whatever art, philosophy, and profession; finally the singular libraries of the arcane maxims: behold the six of Eutrapelus' own catalogues: with his 
+				adamantine discourse and most suitable style. Catalogues of aphorisms, proverbs, emblems, gems, and rules: and this private catalogue [...]. The golden diaries of Eutrapelus: and the adamantine mirror of Eudromus.
+				But [add] the flowers of the poets, doctors, and laws. Certainly the most beautiful and [...] collection of flowers.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="full_page">
+					<marginalia_text>
+						[--]thesis. Praxis aurea.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>[...]. Golden praxis.</translation>
+		</marginalia>
+		
+		<!-- MISSING TEXT: ILLEGIBLE DUE TO PAGE DAMAGE.-->
+    </annotation>
+</transcription>

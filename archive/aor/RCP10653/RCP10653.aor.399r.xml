@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.399r.tif" pagination="347" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="quatuor Ca[n]cella" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Cantredor[um]               <!-- DO: I think this is a location, known as either 'quatuor cancellarios' or 'quatuor cantredorum' but I can't identify where exactly it is. I can't find anything suggesting it's Cantref but I may be wrong? To be tagged when identified. -->
+                        <!-- : so, I found this https://www.merriam-webster.com/dictionary/cantred; this led me here https://en.wikipedia.org/wiki/Cantred_(disambiguation) and thus to Cantref. Maybe it means the people of Cantref? -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Of the people of Cantref.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Ca[n]cella" type="straight"/>
+        <underline language="LA" method="pen" text="receptis .xxxij. millibus marcarum, Leolino principi VValliae concedebat, sicque facti sunt amici rex Angliae &amp; princeps VValliae, Leolinus" type="straight"/>
+        
+    </annotation>
+</transcription>

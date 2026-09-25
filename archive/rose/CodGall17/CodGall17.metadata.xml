@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>82</illustrations>
+    <totalPages>138</totalPages>
+    <dimensions units="mm">
+        <width>203</width>
+        <height>287</height>
+    </dimensions>
+    <dates>
+        <startDate>1325</startDate>
+        <endDate>1375</endDate>
+    </dates>
+    <texts>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="157r" start="1r">138</pages>
+            <illustrations>82</illustrations>
+            <linesPerColumn>40</linesPerColumn>
+            <leavesPerGathering>8</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Cod.gall. 17</commonName>
+            <dateLabel>14th century</dateLabel>
+            <type>manuscript</type>
+            <material>Parchment</material>
+            <origin>France</origin>
+            <currentLocation>Munich</currentLocation>
+            <repository>Bayerische Staatsbibliothek</repository>
+            <shelfmark>Cod. gall. 17</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Cod.gall. 17</commonName>
+            <dateLabel>14e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>Parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Munich</currentLocation>
+            <repository>Bayerische Staatsbibliothek</repository>
+            <shelfmark>Cod.gall. 17</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

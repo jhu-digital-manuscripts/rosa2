@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.168r.tif" pagination="315" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Scipio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Scipio
+                    </marginalia_text>
+                    <person name="Scipio Africanus"/>
+                </position>
+            </language>
+            <translation>
+                Scipio Africanus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Africanus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Africanus
+                    </marginalia_text>
+                    <person name="Scipio Aemilianus"/>
+                </position>
+            </language>
+            <translation>
+                Scipio Aemilianus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="L. Paulus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Luci[us] Paulus
+                    </marginalia_text>
+                    <person name="Lucius Aemilius Paulus Macedonicus"/>
+                </position>
+            </language>
+            <translation>
+                Lucius Paulus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Marius" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Marius
+                    </marginalia_text>
+                    <person name="Gaius Marius"/>
+                </position>
+            </language>
+            <translation>
+                Gaius Marius.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pompeius" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Pompeius
+                    </marginalia_text>
+                    <person name="Pompey"/>
+                </position>
+            </language>
+            <translation>
+                Pompey.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in omniu[m] gentium sermonibus ac mentibus semper haerebit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        se[m]per in o[mniu]m me[n]tib[us] ac sermonibus herere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To adhere to the minds and words of all at all times.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="precatio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Pr[a]ecatio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Supplication.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pacem, tra[n]quillitatem, ocium, co[n]cordiámque" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        pax tranq[ui]llitas ocium concordia ]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Peace, quiet, leisure, concord.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sed in omniu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="firmissimo me muro septum esse arbitrabor" type="straight"/>
+        <underline language="LA" method="pen" text="ro. pacem, tra[n]quillitatem, ocium, co[n]cordiámque afferat" type="straight"/>
+        <underline language="LA" method="pen" text="precatio Consularibus" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">8</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">8</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">18</numeral>
+        
+    </annotation>
+</transcription>

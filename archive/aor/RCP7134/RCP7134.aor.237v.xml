@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.237v.tif" pagination="[230v]" reader="John Dee" signature="[MM ij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Huic respondet aphoris. 28.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:481" text="28"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>To this aphorism 28 replies.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ille autem locum uitae necessario respicit, ob id" type="straight"/>
+        
+    </annotation>
+</transcription>

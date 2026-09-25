@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.045v.tif" pagination="80" reader="John Dee" signature="[G.iiij.[v]]"/>    
+    <annotation>
+        
+        <marginalia anchor_text="Scotorum omnes erant pedites," hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Scoti, pedites.</marginalia_text>
+                </position>
+            </language>
+            <translation>The Scots, foot soldiers.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sibi debebant seruitium militare, cunctisq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="Scotorum omnes erant pedites," type="straight"/>
+        <underline language="LA" method="pen" text="eo" type="triple"/>
+        <underline language="LA" method="pen" text="securum Scoticarum" type="straight"/>
+        <underline language="LA" method="pen" text="Comes Glouerniae in medios bostes irruit" type="straight"/>
+        <underline language="LA" method="pen" text="Quod cernens Gilbertus comes Glouerniae, velut aper infrenduit, &amp; feritate concepta, cum suis commilitionibus in Scotos irruit, quorum" type="straight"/>
+        <underline language="LA" method="pen" text="mucrone mutilat" type="straight"/>
+        <underline language="LA" method="pen" text="truncat" type="straight"/>
+        <underline language="LA" method="pen" text="trucidat" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; gladium suum cruore Scotico multipliciter madefacit, quemcunque gladio feriebat" type="straight"/>
+        <underline language="LA" method="pen" text="illi vel membrorum aliquod amputabat" type="straight"/>
+        <underline language="LA" method="pen" text="circumuallantes Gilbertum ex omni latere, conuertuntqúe in eum pondus praelij, lateribus" type="straight"/>
+        <underline language="LA" method="pen" text="donec inter pedes sonipedum spiritum exhalaret" type="straight"/>
+        <underline language="LA" method="pen" text="dominus" type="straight"/>
+        <underline language="LA" method="pen" text="VVillielmus Marescallus" type="double"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing anchor_text="Quod cernens Gilbertus comes Glouerniae, velut aper infrenduit, &amp; feritate concepta, cum suis commilitionibus in Scotos irruit, quorum             quosdam mucrone mutilat, truncat &amp; gladium suum cruore Scotico multipliciter madefacit, quemcunque gladio feriebat" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.090r.tif" pagination="3" reader="Harvey" signature="A2r"/>	<!-- ABO 94right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Bona omnia è viuo fonte.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				All good things from a living fount.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Omnes nuga[e] hominu[m], pra[e]ter paucissimos serios uiros;
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						solidè, efficaciterq[ue] Hoc agentes.
+						Unicus mundi Technologus, et Technopragmaticus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				All the trifles of mankind are irrelevant to those very few earnest men, who
+				firmly and effectively do This Thing.
+				The only Technologus and Technopragmaticus of the world.
+					<!-- CG: Neologism: Perhaps 'student of craft/skill' and 'practical man of craft/skill'?--> <!--JG: For the moment, leave your comment in. At some point, when all the transcriptions are done, I need to make a list with technical terms/neologisms and the like in order to come up with a meaningful (and coherent) translation-->
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						risoluto, et presentissimo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Resolute and most immediate.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Radicalis scientia. {	In tuis, Entelechia.
+									In alienis, Ironia. s[upr]a, i[nfr]a.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Radical wisdom. {	In your own matters, Actualization.
+							In others' matters, Irony. [See] above, below.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Paucissimis cognita vel Methodus, vel praxis Optima.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Either a method or a great praxis is known to very few.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Unici Ironismus. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The ironism of a singular man.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Frustra cognita, qua[e] non fiunt nauiter.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Those things which are not done diligently have been learned in vain.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Patere omnes, et omnia festiuissimè:
+						et Propria persequere instantissimè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Suffer all men and all things most humorously,
+				and pursue your own matters most eagerly.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Puerilis ingenij est, vnq[uam] deficere in dictis: puerilis animi est, vnq[uam] deficere in
+						factis. Is tantùm vir est, qui nec dictis, nec factis vnq[uam] deficit.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				He who ever falters in speaking is childish in his abilities; he who ever falters in acting is childish of will.
+				He who never falters in either speaking or acting is indeed a man.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Omnia Animi, Corporis, Fortuna[e] bona; diuinitùs haurienda è Viuo fonte natura[e],
+						Artis, Exercitationis. Tandemq[ue] summa actione comparanda Summa omnia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				All good things of mind, body and fortune must be drawn from the living fount of nature, art, and exercise.
+				And in the end, all of the highest things must be united with the highest action.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Motti arditi &amp; piaceuoli de' Capitani" type="straight"/>
+		<underline language="IT" method="pen" text="Leonida" type="straight"/>
+		<underline language="IT" method="pen" text="siamo presso à loro, rispose" type="straight"/>
+		<underline language="IT" method="pen" text="nimici era sì grande" type="straight"/>
+		<underline language="IT" method="pen" text="lor dardi" type="straight"/>
+		<underline language="IT" method="pen" text="potrebbe vedere il Sole" type="straight"/>
+		<underline language="IT" method="pen" text="dilettto di combactere all'ombra" type="straight"/>
+		<underline language="IT" method="pen" text="maggior difficultà che sia nel" type="straight"/>
+		<underline language="IT" method="pen" text="il cominciarle" type="straight"/>
+		<underline language="IT" method="pen" text="il cominciarle" type="straight"/>
+		<underline language="IT" method="pen" text="principio è la metà del" type="straight"/>
+		<underline language="IT" method="pen" text="cominciato" type="straight"/>
+		<underline language="IT" method="pen" text="il mezzo" type="straight"/>
+		<underline language="IT" method="pen" text="Comincia, che" type="straight"/>
+		<underline language="IT" method="pen" text="mezo il fatto" type="straight"/>
+		<underline language="IT" method="pen" text="Ricomincia di nuouo" type="straight"/>
+		<underline language="IT" method="pen" text="l'haurai fato" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="combactere all'ombra" type="straight"/>
+		<underline language="IT" method="chalk" text="il cominciarle" type="straight"/>
+		
+		<symbol name="SS" place="head"/>
+		<symbol name="SS" place="right_margin"/>
+		<symbol name="SS" place="intext"/>
+		
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="E' mezo il fatto, &amp; se ti manca il mezo,    Ricomincia di nuouo, &amp; l'haurai fato"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--Leo-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--na-->
+		<mark method="pen" name="plus_sign" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!--tut-->
+		<mark method="pen" name="comma" place="right_margin"/> <!--modo-->
+		
+		<mark method="pen" name="vertical_bar" place="intext"/> <!--dubitare. Ad-->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="dilettto di combactere all'ombra"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="il cominciarle"/>
+		<mark method="pen" name="dot" place="intext"/> <!--cominciarle, donde-->
+		<mark method="pen" name="dot" place="intext"/> <!--fatto, &-->
+		
+		<mark method="pen" name="plus_sign" place="tail"/>
+
+    </annotation>
+</transcription>

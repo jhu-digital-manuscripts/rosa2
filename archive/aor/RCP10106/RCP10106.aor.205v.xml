@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.205v.tif" pagination="410" reader="John Dee" signature="[C 5[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Perfrica fontem, &amp; dic te digniorem, qui Praetor fieres, quàm Catonem." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Caluus.</marginalia_text>
+                    <person name="Licinius Macer Calvus"/>
+                    <book title="In Vatinium"/>
+                </position>
+            </language>
+            <translation>Licinius Macer Calvus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sunt augendus affectibus accomodatae figurae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Augendus aff[e]ctib[us] figura[e] qua[e] accomo[n]data[e] su[n]t</marginalia_text> 
+                </position>
+            </language>
+            <translation>The figures which are adapted to intensifying emotions.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="exclamationem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Exclamatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Exclamation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cornificius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cornificius</marginalia_text>
+                    <person name="Quintus Cornificius"/>
+                </position>
+            </language>
+            <translation>Cornificius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="παῤῥησία" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>παῤῥησία.</marginalia_text>
+                </position>
+            </language>
+            <translation>Parrhesia.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Ligario" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Ligario</marginalia_text>
+                    <book title="Pro Ligario"/>
+                </position>
+            </language>
+            <translation>Pro Ligario.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cicero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cicero.</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="προσωποποΐαι" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>προσωποποΐαι.</marginalia_text> <!-- for προσωποποιίαι -->
+                </position>
+            </language>
+            <translation>Prosopopoeias.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Deps in hoc genere dicendi, &amp; inferos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dij Inferi</marginalia_text>
+                </position>
+            </language>
+            <translation>Infernal gods.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="irascinos" type="straight"/>
+        <underline language="LA" method="pen" text="gaudere" type="straight"/>
+        <underline language="LA" method="pen" text="timere" type="straight"/>
+        <underline language="LA" method="pen" text="admirari" type="straight"/>
+        <underline language="LA" method="pen" text="dolere" type="straight"/>
+        <underline language="LA" method="pen" text="indignari" type="straight"/>
+        <underline language="LA" method="pen" text="optare" type="straight"/>
+        <underline language="LA" method="pen" text="Et: O' tempora, ò mores, ò miserum me, consumptis" type="straight"/>
+        <underline language="LA" method="pen" text="uera sunt, non sunt in ea forma de qua nunc loquimur" type="straight"/>
+        <underline language="LA" method="pen" text="aßimulata &amp; arte composita proculdubio schemata sunt existimanda" type="straight"/>
+        <underline language="LA" method="pen" text="Quid enim minus figuratum, quàm uera libertas" type="straight"/>
+        <underline language="LA" method="pen" text="admirabiliter utriusq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="(ut Cicero existimat) laterum, fictiones personaru[m], quae" type="straight"/>
+        <underline language="EL" method="pen" text="προσωϖοϖοιίαι" type="straight"/>
+        <underline language="LA" method="pen" text="dicuntur" type="straight"/>
+        <underline language="LA" method="pen" text="finxerimus, quae cogitasse eos non sit absurdum" type="straight"/>
+        <underline language="LA" method="pen" text="suade[n]do, obiurgando, quaere[n]do, laudando, miserando personas idoneas damus. Quin" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+
+    </annotation>
+</transcription>

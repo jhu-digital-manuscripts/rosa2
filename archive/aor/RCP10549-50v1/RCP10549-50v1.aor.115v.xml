@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.115v.tif" pagination="210" reader="John Dee" signature="[oo.i.[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        laus fonteij
+                    </marginalia_text>
+                    <person name="Marcus Fonteius"/>
+                </position>
+            </language>
+            <translation>
+                Praise to Fonteius.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="generis antiquitas" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Antiquitas generis fontij
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The long history of the house Fonteius.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Primùm [...] tum [...] deinde [...] postremo" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        primu[m] tu[m] deinde postremo ]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                First, then, afterwards, finally.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="inferte oculos in curiam" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        inferit oculos in curia[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                He cast his eyes over the court.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="barbariae resistemus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        barbari[a]e resistere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To defy the barbarians.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="cum hominem inuenire nequam neminem" type="straight"/>
+        <underline language="LA" method="pen" text="non modo nullum facinus huius protulerunt" type="straight"/>
+        <underline language="LA" method="pen" text="ita, vt co[m]missus sit" type="straight"/>
+        <underline language="LA" method="pen" text="Quare si etia[m] monendi estis à me, quod non estis Iudices, videor hoc leuiter pro mea authoritate vobis praecipere posse, vt ex eo genere homines, quoru[m] cognita virtus, industria, felicitas in re militari sit, diligenter vobis retine[n]dos existimetis" type="straight"/>
+        <underline language="LA" method="pen" text="Agè vero nunc inferte oculos in curiam, introspicite penitus in omnis Reip. partes, vtrum videtis nihil posse accidere vt tales viri desideranti sint? an, si acciderit" type="straight"/>
+        <underline language="LA" method="pen" text="vobis adiutoribus isti immani atque intolerandae barbariae resistemus" type="straight"/>
+        <underline language="LA" method="pen" text="Primùm obiicitur contra istorum impetus" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">11</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">5</numeral>
+        <numeral place="left_margin">8</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">11</numeral>
+        <numeral place="left_margin">12</numeral>
+        
+    </annotation>
+</transcription>

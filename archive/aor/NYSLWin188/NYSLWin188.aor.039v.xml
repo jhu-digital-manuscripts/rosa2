@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.039v.tif" pagination="[39[v]]" reader="John Dee" signature="[Kiij[v]]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Levant spowts wherewith many tymes shypps ar in dannger of drowning.</marginalia_text> <!-- FSF: isn't danger spelt with a double n here? -->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="praedestination" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pluuia[e] Vsus predestinatus [quis].</marginalia_text> <!--JG: unsure abt 'quis'--> <!--KS: looks like 'quis', not sure what else it could be-->
+                </position>
+            </language>
+            <translation>Why the use of rain is predestined.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Astronomia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Astronomia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Astronomy.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="die Erden zubefeuchten" type="straight"/>
+        <underline language="DE" method="pen" text="Windt" type="straight"/>
+        <underline language="DE" method="pen" text="wülcke" type="straight"/>
+        <underline language="DE" method="pen" text="vom Regen" type="straight"/>
+        <underline language="DE" method="pen" text="truckener natur" type="double"/>
+        
+    </annotation>
+</transcription>

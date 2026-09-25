@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.194v.tif" pagination="[194v]" reader="John Dee" signature="[Bbij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="MDI" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>1501</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Fernando Colon his first voyage was his farther[est]</marginalia_text> 
+                    <person name="Ferdinand Columbus"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="co[n] la nuoua" type="straight"/>
+        <underline language="IT" method="pen" text="col Perù" type="straight"/>
+        <underline language="IT" method="pen" text="del XCIII" type="straight"/>
+        <underline language="IT" method="pen" text="IIII nauigli" type="straight"/>
+        <underline language="IT" method="pen" text="di LXX" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; di L" type="straight"/>
+        <underline language="IT" method="pen" text="CXL" type="straight"/>
+        <underline language="IT" method="pen" text="io era" type="straight"/>
+        
+        <mark method="pen" name="triple_dash" place="tail" text="io era"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- porto, il -->
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        
+    </annotation>
+</transcription>

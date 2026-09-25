@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.144v.tif" reader="Harvey" signature="[Ll.ii.[v]]"/>
+    <annotation>  
+        
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        διότι.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Because.
+            </translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="none other arte" type="straight"/>
+        <underline language="EN" method="pen" text="with louinge" type="straight"/>
+        <underline language="EN" method="pen" text="with seruinge" type="straight"/>
+        <underline language="EN" method="pen" text="beeing vertuous" type="straight"/>
+        <underline language="EN" method="pen" text="of prowesse" type="straight"/>
+        <underline language="EN" method="pen" text="discreet" type="straight"/>
+        <underline language="EN" method="pen" text="sober" type="straight"/>
+        <underline language="EN" method="pen" text="with deserninge more then he, and" type="straight"/>
+        <underline language="EN" method="pen" text="heedfull and wise" type="straight"/>
+        <underline language="EN" method="chalk" text="writing and speaking to" type="straight"/>
+        <underline language="EN" method="chalk" text="woordes of Poliphus, and" type="straight"/>
+        <underline language="EN" method="chalk" text="Rhetoricke, that the" type="straight"/>
+        <underline language="EN" method="pen" text="with their owne selues" type="straight"/>
+        <underline language="EN" method="pen" text="bragg and boast to by yonde all measure" type="straight"/>
+        <underline language="EN" method="pen" text="redounde to the blame and damage" type="straight"/>
+        <underline language="EN" method="pen" text="woman that euer" type="straight"/>
+        <underline language="EN" method="pen" text="deserue neither" type="straight"/>
+        <underline language="EN" method="pen" text="beloued" type="straight"/>
+        <underline language="EN" method="pen" text="assheades, and" type="straight"/>
+        <underline language="EN" method="pen" text="yet all women loue him, and" type="straight"/>
+        <underline language="EN" method="pen" text="countenaunce nor deedes he" type="straight"/>
+        <underline language="EN" method="pen" text="some hid matter in him" type="straight"/>
+        <underline language="EN" method="pen" text="he deserueth" type="straight"/>
+        <underline language="EN" method="pen" text="loue of so manie women" type="straight"/>
+        
+        <symbol name="SS" place="head"/>
+        
+        <symbol language="EN" name="SS" place="left_margin" text="with deserninge more then he, and"/>
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark method="chalk" name="vertical_bar" place="head"/> <!-- red chalk, starts at head of page over 'other' and extends down through five further lines of text -->
+        
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="yet all women loue him, and"/>
+        
+        <mark method="pen" name="X_sign" place="right_margin"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!-- sober, in --> 
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="with deserninge more then he, and"/>  
+        <mark method="pen" name="dot" place="intext"/> <!--wise, refrayninge  -->
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- wayes. For -->
+        <mark method="pen" name="dot" place="intext"/> <!-- worlde, for --> 
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="yet all women loue him, and"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/> <!-- red chalk, starts at 'thus' and extends down through five further lines of text and into the tail -->
+        <mark method="pen" name="dot" place="intext"/> <!-- women, wherfore -->
+
+    </annotation>
+</transcription>

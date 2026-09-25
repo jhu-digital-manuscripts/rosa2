@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.018r.tif" pagination="18" reader="John Dee" signature="Cii"/>
+    <annotation>
+        
+        <marginalia anchor_text="Mango" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mangi</marginalia_text>
+                    <location name="Mango"/>
+                </position>
+            </language>
+            <translation>Of Mango.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="di Antilia, che voi chiamate di Sette città" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Antilia; di Sette Città.</marginalia_text>
+                    <location name="Antillia"/> <!--KS: Mythical island.-->
+                </position>
+            </language>
+            <translation>Antillia of the Seven Cities.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cipango" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cipango</marginalia_text>
+                    <location name="Japan"/>
+                </position>
+            </language>
+            <translation>Japan.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="Mango" type="straight"/>
+        <underline language="IT" method="pen" text="di Antilia" type="straight"/>
+        <underline language="IT" method="pen" text="di Sette" type="double"/>
+        <underline language="IT" method="pen" text="Cipango sono" type="double"/>
+        <underline language="IT" method="pen" text="due mila &amp; cinquecento miglia, cioè dugento, &amp; venticinque leghe" type="straight"/>
+        
+    </annotation>
+</transcription>

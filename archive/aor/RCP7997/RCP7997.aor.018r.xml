@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.018r.tif" reader="John Dee" signature="[Cvj]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Algebra[e] co[m]mentarij
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Commentaries on algebra.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="co[n]clusione[m] s[e]c[un]d[um] qua passio p[rae]dicat[ur] de subiecto suo. Secu[n]do dignitates ex quib[us] p[re]dit demo[n]stratio Et tercio subiectu[m] de quo demo[n]strat[ur] passio" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Conclusio. Dignitates. Subiectu[m].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Conclusion. Value. Subject. 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="esse ex p[ro]prijs [et] non ex extraneis neq[ue] co[m]munib[us] dicit" type="straight"/>
+        <underline language="LA" method="pen" text="diuersum sed bene subalternu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="intellige textu[m] in scie[n]tijs p[er] se co[n]stantibus absolutis et diuersis et no[n] mixtis siue subalt[er]natis. Nam" type="straight"/>
+        <underline language="LA" method="pen" text="tibi declaui i[n] ei[us] textu et co[m]me[n]to" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]tinuis" type="straight"/>
+        <underline language="LA" method="pen" text="nu[m]eris" type="straight"/>
+        <underline language="LA" method="pen" text="motibus" type="straight"/>
+        <underline language="LA" method="pen" text="potest demo[n]strator in scie[n]tijs subalt[er]natis p[ro]cedere de genere in ide[m] genus subalt[er]nu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="p[ri]ma et co[m]munia q[uae] respiciu[n]t diuersas scie[n]cias et illa p[ri]ncipia no[n] ingrediunt[ur] demo[n]stratione[m] s[e]c[un]d[u]m substa[n]tia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="solum s[e]c[un]d[u]m virtute[m] sicut sunt c[on]ceptio[n]es" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- ip[su]m Co[n]seque[n]ter -->
+        
+        <errata amendedtext="hijsdem" copytext="hysdem" language="LA"/>
+   
+    </annotation>
+</transcription>

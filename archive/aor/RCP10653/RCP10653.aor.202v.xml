@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.202v.tif" pagination="396" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Eadmundus iste, non ex Emma regina, sed ex quadam ignobili foemina generatus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Edmundi Ferei Lateris Mater femina ignobilis.
+                    </marginalia_text>
+                    <person name="Edmund II"/>
+                    <person name="Ælfgifu of York"/>
+                </position>
+            </language>
+            <translation>
+                The mother of Edmund Ironside was an ignoble woman.  
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="proditor Eadricus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Eadricus Proditor
+                    </marginalia_text>
+                    <person name="Eadric Streona"/>
+                </position>
+            </language>
+            <translation>
+                Eadric Streona, the traitor.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Clito Eadmundus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Clito Eadmundus Ferreu[m] latus.
+                    </marginalia_text>
+                    <person name="Edmund II"/>
+                </position>
+            </language>
+            <translation>
+                Edmund Ætheling Ironside.
+            </translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="Irenside" type="straight"/>
+        <underline language="LA" method="pen" text="patris conscientiam" type="double"/>
+        <underline language="LA" method="pen" text="illam in vxoreum accepit" type="straight"/>
+        <underline language="LA" method="pen" text="Segeferthi, &amp; Morcheri Comitum inuasit" type="straight"/>
+        <underline language="LA" method="pen" text="ignobili foemina" type="double"/>
+        <underline language="LA" method="pen" text="mentis ingenuitate &amp;" type="triple"/>
+        <underline language="LA" method="pen" text="corporis" type="straight"/>
+        <underline language="LA" method="pen" text="Dux &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="proditor Eadricus" type="triple"/>
+        <underline language="LA" method="pen" text="vt se proditorem" type="double"/>
+        <underline language="LA" method="pen" text="&amp; suo" type="straight"/>
+        <underline language="LA" method="pen" text="se dominio" type="double"/>
+        <underline language="LA" method="pen" text="mancipauit" type="triple"/>
+        <underline language="LA" method="pen" text="Mercij" type="double"/>
+        <underline language="LA" method="pen" text="regis ignauia" type="double"/>
+        <underline language="LA" method="pen" text="Dux iniquus Eadricus" type="straight"/>
+        <underline language="LA" method="pen" text="apud Krickelade" type="double"/>
+        <underline language="LA" method="pen" text="Clito Eadmundus" type="double"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- regis Eadmundus -->
+        
+        <drawing book_orientation="0" method="pen" place="intext" type="manicule"/>
+        
+        <graph book_orientation="0" method="pen" place="head" type="genealogical_tree">
+            <node id="n1" person="Aethelred II">Æthelredus R[ex]</node>
+            <node id="n2" person="Edmund II">Edmundus Ferreu[m] Latus</node>
+            <node id="n3" person="Ealdgyth">Aldgitha relicta Sigeferthi Comitis Northu[m]b[riae]</node> 
+            <link from="n1" relationship="has_child" to="n2"/>
+            <link from="n2" relationship="has_spouse" to="n3"/>
+            <link from="n3" relationship="has_spouse" to="n2"/>
+        </graph>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.188r.tif" pagination="375" reader="John Dee" signature="A 4"/> 
+    <annotation>
+        
+        <marginalia anchor_text="δείνωσις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>δείνωσις</marginalia_text>
+                </position>
+            </language>
+            <translation>Exaggeration.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="φαντασία" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>φαντασία</marginalia_text>
+                </position>
+            </language>
+            <translation>Imaginative power.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἐξεργασία " hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ἐξεργασία </marginalia_text>
+                </position>
+            </language>
+            <translation>Elaboration.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἐνέργεια" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ἐνέργεια</marginalia_text>
+                </position>
+            </language>
+            <translation>Vigour of style.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uis oratoris omnis in augendo minuendoq[ue]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vis oratoris o[mn]is in augendo minue[n]do'q[ue].</marginalia_text>
+                </position>
+            </language>
+            <translation>The whole power of the orator lies in amplification and dimunition.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro M. Caelio." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro M[arco] Ca[e]lio.</marginalia_text>
+                    <book title="Pro Caelio"/>
+                </position>
+            </language>
+            <translation>Pro Marco Caelio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in Verrem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In Verre[m].</marginalia_text>
+                    <book title="In Verrem"/>
+                </position>
+            </language>
+            <translation>In Verrem.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quicquid in suo genere satis effectum est, ualet" type="straight"/>
+        <underline language="LA" method="pen" text="Sed uis oratoris omnis in augendo minuendo'q[ue] consistit" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.267r.tif" pagination="260" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Regula.</marginalia_text>
+                </position>
+            </language>
+            <translation>Rule.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Rumores" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Rumores.</marginalia_text>
+                </position>
+            </language>
+            <translation>Rumors.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Regula de significato, et causa rei.</marginalia_text>
+                </position>
+            </language>
+            <translation>Rule about the meaning and cause of the matter.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>s[cili]c[et] significa[n]t ea</marginalia_text>
+                </position>
+            </language>
+            <translation>Of course, they signify those things.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>eade[m] est r[ati]o in alijs.</marginalia_text>
+                </position>
+            </language>
+            <translation>The reason is the same in other [matters].</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sexta, uel octaua, uel duodecima existente, timetur enim carcer, uel morbus, aut mortis suspitio" type="straight"/>
+        <underline language="LA" method="pen" text="causam autem habebis" type="straight"/>
+        <underline language="LA" method="pen" text="Sol, Iupiter, &amp; Venus" type="straight"/>
+        <underline language="LA" method="pen" text="Sol, Mars, Venus" type="straight"/>
+        <underline language="LA" method="pen" text="sed malis quassabitur morbis" type="straight"/>
+        
+        <symbol language="LA" name="Conjunction" place="right_margin" text="coniunctione"/>
+        <symbol language="LA" name="Conjunction" place="right_margin" text="iunguntur"/>
+        <symbol language="LA" name="Conjunction" place="right_margin" text="iungu[n]tur"/>
+        
+        <symbol language="LA" name="Sun" place="right_margin" text="Sol"/>
+        <symbol language="LA" name="Jupiter" place="right_margin" text="Iupiter"/>
+        <symbol language="LA" name="Venus" place="right_margin" text="Venus"/>
+        <symbol language="LA" name="Sun" place="right_margin" text="Sol"/>
+        <symbol language="LA" name="Mars" place="right_margin" text="Mars"/>
+        <symbol language="LA" name="Venus" place="right_margin" text="Venus"/>
+        <symbol language="LA" name="Sun" place="right_margin" text="Sol"/>
+        <symbol language="LA" name="Saturn" place="right_margin" text="Saturn"/>
+        <symbol language="LA" name="Jupiter" place="right_margin" text="Iupiter"/>
+        <symbol language="LA" name="Moon" place="right_margin" text="Luna"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="Signa significant corpora: &amp; planetae quae mouent ea: &amp; illorum comparatio ad suum orbem, &amp; luminaria, maxime Solem, exitum ipsarum rerum"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <!-- FSF: there is a circumglex in the third line from the top -->
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.008r.tif" reader="John Dee" signature="[B iiij]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Signatur</marginalia_text>
+                </position>
+            </language>
+            <translation>It is marked.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Viva</marginalia_text> 
+                </position>
+            </language>
+            <translation>Alive.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mortem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Mortua</marginalia_text> 
+                </position>
+            </language>
+            <translation>Dead.</translation>
+        </marginalia>
+       
+        
+       <underline language="LA" method="pen" text="vnamquamq[ue] rem, ad suum simile &amp; mouere &amp; conuertere" type="straight"/>
+        <underline language="LA" method="pen" text="natura" type="straight"/>
+        <underline language="LA" method="pen" text="arte" type="straight"/>
+        <underline language="LA" method="pen" text="casu" type="straight"/>
+        <underline language="LA" method="pen" text="pulmonem, pulmonis" type="straight"/>
+        <underline language="LA" method="pen" text="genuina dissidentia" type="straight"/>
+        <underline language="LA" method="pen" text="inesse rebus vita fruentibus" type="straight"/>
+        <underline language="LA" method="pen" text="Quae enim virtutes post mortem remanent, si multum Ideae" type="straight"/>
+        <underline language="LA" method="pen" text="inferiora subsint superioribus" type="straight"/>
+        
+        <mark method="pen" name="dot" place="right_margin"/>
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+        <errata amendedtext="pulmoni" copytext="pulmonis" language="LA"/>
+        
+    </annotation>
+</transcription>

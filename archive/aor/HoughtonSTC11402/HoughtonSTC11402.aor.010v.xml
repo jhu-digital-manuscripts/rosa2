@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.010v.tif" reader="Harvey" signature="[Aiii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Et peritè simulandum, quod nolis:
+                    Et profundè dissimulandum, quod velis.
+                    Infinitorum Strategematum fundamentum.</marginalia_text>
+                </position>
+            </language>
+            <translation>And to be pretended skillfully, what you do not want:
+                and to be concealed profoundly, what you do want.
+                The foundation of infinite strategems.
+           </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vndè Romanorum Symbolum; Minotaurus in Labyrintho.</marginalia_text>
+                    <emphasis method="pen" text="Minotaurus" type="straight"/>
+                    <emphasis method="pen" text="Labyrintho" type="straight"/>
+                </position>
+            </language>
+            <translation>When the symbol of the Romans; the Minotaur in the labyrinth.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Scarborowgh Warning.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="by a pretense of his goinge into France" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[The] uery best pollicy of J. Ca[e]sar.</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Strategema Strategematu[m]. I[nfr]a, sa[e]pissimè</marginalia_text>
+                </position>
+            </language>
+            <translation>The stratagem of the stratagems. [See] below, most often.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Inexpectata Valent.</marginalia_text>
+                </position>
+            </language>
+            <translation>Unexpected things prevail.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Counterfait pra[e]tences, are most credible, when they ar most compound, with concurrence of many
+                    semblable Actions, &amp; Circumstances</marginalia_text>
+                    <emphasis method="pen" text="pra[e]tences" type="straight"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>ad facienda[m] pleniore[m] fidem; Vt subitò Dolus pra[e]ualeat sine resistentia.</marginalia_text>
+                </position>
+            </language>
+            <translation>for creating more credibility. So that the deceit prevails without pause. </translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="that they" type="straight"/>
+        <underline language="EN" method="pen" text="warre, with moche" type="straight"/>
+        <underline language="EN" method="pen" text="more endeuour and greter enforcement" type="straight"/>
+        <underline language="EN" method="pen" text="by a pretense of his goinge into France" type="straight"/>
+        <underline language="EN" method="pen" text="so sodenly" type="straight"/>
+        <underline language="EN" method="pen" text="tyme Asdrubal and Anniball his brother" type="straight"/>
+        <underline language="EN" method="pen" text="matche and breke the strength of Asdruball, before his brother" type="straight"/>
+        <underline language="EN" method="pen" text="and his were ioyned togyther" type="straight"/>
+        <underline language="EN" method="pen" text="lyttelle confydence in" type="straight"/>
+        
+        <symbol name="SS" place="head"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="quotation_mark" place="head" text="Et peritè simulandum, quod nolis"/>
+        <mark language="LA" method="pen" name="quotation_mark" place="head" text="Et profundè dissimulandum, quod velis"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/> <!--next to deceyued-->
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="slash" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="matche and breke the strength of Asdruball, before his brother"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="sodenly"/>    
+        
+    </annotation>
+</transcription>

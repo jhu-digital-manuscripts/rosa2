@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.320r.tif" pagination="619" reader="John Dee" signature="[qqq.vi.]"/>
+    <annotation>
+        
+        <marginalia anchor_text="diuexat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>diuexare.</marginalia_text>
+                </position>
+            </language>
+            <translation>To plunder.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ecquo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>[eq - deleted] ecquo.</marginalia_text>
+                </position>
+            </language>
+            <translation>To any point?</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ecquo te" type="straight"/>
+        
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        
+        <errata amendedtext="MORTE" copytext="MORTSE" language="LA"/>
+        
+    </annotation>
+</transcription>

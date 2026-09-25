@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.095r.tif" pagination="88" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="De nona etiam, &amp; Marte, nihil erat, non enim iungebantur domino ascendentis, nec Lunae, &amp; Iupiter in quadrato Martis significauit reditum in patriam" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota colligationem domini ascende[n]tis cu[m] rebus externis.</marginalia_text>
+                </position>
+            </language>
+            <translation>Note the conjunction of the lord of the ascendant with external matters.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="auctione inutili" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; ita fuit" type="straight"/>
+        <underline language="LA" method="pen" text="nihil erat, non enim iungebantur domino ascendentis, nec Lunae, &amp; Iupiter in quadrato Martis significauit reditum in patriam" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <errata amendedtext="Mercuriu[m]" copytext="Martem" language="LA"/>
+        
+    </annotation>
+</transcription>

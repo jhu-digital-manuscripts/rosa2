@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.060v.tif" pagination="100" reader="John Dee" signature="[gg.ii.[v]]"/>
+    <annotation> 
+        
+        <marginalia anchor_text="vita[m] sese meo praesidio victuros esse" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        vivere vita[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To live life.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pecuniae coge[n]dae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Cogere pecunia[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To extort money.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nundinationémque hominu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        nu[n]dinatio ho[m]i[nu]m
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Trafficking of humans.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Pecunia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Money.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="faciu[n]t hoc homines, quos in summa nequitia non solu[m] libido &amp; voluptas, verumetia[m] ipsius nequitiae fama delectat" type="straight"/>
+        <underline language="LA" method="pen" text="Putarem me idoneu[m], qui exemplu[m] sequerer humanitateis atque officii, proponerémque spe[m] meis hospitibus ac necessariis,              quo tutiorem vita[m] sese meo praesidio victuros esse arbitrare[n]tur" type="straight"/>
+        <underline language="LA" method="pen" text="vereri non debeo, nequis hoc quod facio, non existimet summi officii ratione" type="straight"/>
+        <underline language="LA" method="pen" text="coactúmque" type="straight"/>
+        <underline language="LA" method="pen" text="quid ego dispute[m]" type="straight"/>
+        <underline language="LA" method="pen" text="quid porrò argume[n]ter, qua de re dubitare nemo possit?" type="straight"/>
+        <underline language="LA" method="pen" text="an hoc dubitabit quisqua[m] omnium, quin" type="straight"/>
+        <underline language="LA" method="pen" text="quod enim est praeterea genus pecuniae coge[n]dae, quod praeteriit, quod non ab omnibus aliis praeteritum excogitauit? ecquae" type="straight"/>
+        <underline language="LA" method="pen" text="quicu[m]que Senator voluerit fieri, qua[m]uis puer, qua[m]uis indignus, quamuis ex eo loco ex quo non liceret: si is precio apud istum fieret idoneus vt vinceret, factum esse" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">19</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">.1.</numeral>
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">18</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        <!-- FSF: there is something in the third line from the bottom, but I don't know what it is; a numeral? --> <!--JG: Can't figure this out either-->
+        
+    </annotation>
+</transcription>

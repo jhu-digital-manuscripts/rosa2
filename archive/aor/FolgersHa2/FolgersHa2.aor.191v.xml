@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.191v.tif" pagination="206" reader="Harvey" signature="[N7v]"/>	<!-- ABO 196left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Vir proposito solidus, et actione serius.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A man firm in practice and serious in action.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Quotidianu[m] apis Mellificium.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The bee of daily honey-making.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Semper, quantum potes: semper. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Always as much as you can: always.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Nulla pars animi, corporis, aut fortuna[e]
+						unq[uam] inexercitata. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>No part of the mind, body, or fortune is ever untrained.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Provida[e] Formica[e] messis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The harvest of a prophetic ant.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Vir solidi propositi absolutè tenax.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A man, completely clinging to a solid practice.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Vir est, qui dominus est sui animi; et nullius vitij, aut passionis seruus: qui
+						rationi semper obtemperat; et scientia[e], aut virtutis nunq[uam] obliuiscitur: qui in
+						saluberrimo corporis; prudentissimo animi; vtilissimo fortuna[e] cursu; in omniq[ue]
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						efficaci actione seipsum cogit maximè esse
+						acrem industriu[m], constantem.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>He, who is the master of his mind, and who is not a slave of vice or passion: who always is tempered by reason; and who is never forgetful of knowledge or virtue:
+			who is healthy of body, most prudent of mind, and in the most useful advance of fortune; and who greatly knows himself to be vigorously industrious and constant
+			in all effective action, he is a man.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Vt nemo magis vel iudicio solidus; vel proposito serius; uel executione ipsa absolutus
+						esse possit: nemo tot mundi vana impedimenta vnq[uam] contempserit magis. 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Just as no one can be either more solid in judgment, or more serious in practice, or more complete in its actual execution; 
+				[just as] no one ever despised more all the vain impediments of the world.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="la garrulità" type="straight"/>
+		<underline language="IT" method="pen" text="loquace, &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="schernire &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="con poca gratia à vsar" type="straight"/>	
+		<underline language="IT" method="pen" text="leggiadramente all'improuiso" type="straight"/>
+		<underline language="IT" method="pen" text="schernir altrui" type="straight"/>
+		<underline language="IT" method="pen" text="senza senno, &amp; stolto" type="straight"/>
+		<underline language="IT" method="pen" text="ogn'altro fallo haggia" type="straight"/>
+		<underline language="IT" method="pen" text="ignoranza" type="straight"/>
+		<underline language="IT" method="pen" text="dramma d'honor, nè" type="straight"/>
+		<underline language="IT" method="pen" text="Incorruttibili essere" type="straight"/>
+		<underline language="IT" method="pen" text="FOCIONE Ateniese" type="straight"/>
+		<underline language="IT" method="pen" text="somma di danari" type="straight"/>
+		<underline language="IT" method="pen" text="tosto danari" type="straight"/>
+		<underline language="IT" method="pen" text="sopra tutti gli altri" type="straight"/>
+		<underline language="IT" method="pen" text="lascimi adunque" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--mandan-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--daria-->
+		
+		<mark method="pen" name="vertical_bar" place="intext"/> <!--Provida[e]-->
+
+    </annotation>
+</transcription>

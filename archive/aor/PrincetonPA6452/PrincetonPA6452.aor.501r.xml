@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.501r.tif" reader="Harvey" signature="[M5r]"/>    
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text> 
+                        Pra[e]clarissima nomina Liuiana[e] historia[e]. Quoru[m] ualdè prodest ars qua[e]dam memoratiua in historijs Romanis; 
+                        passim inculcatis, accurataq[ue] animaduersione adhuc digniss[im]is. 
+                    </marginalia_text> 
+                <book title="Ab Urbe Condita"/>
+                </position>
+            </language>
+            <translation>
+                The most brilliant names of Livy’s history. Some technique for memorizing these is very useful in [practicing] Roman history, 
+                inculcated everywhere and as yet very much worth careful attention. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        Omnia dicendi genera exquisitè obseruans, nullum reperi in singulis eloquendi, variandiq[ue] formulis Liuio parem: né Ciceronem 
+                        quidem, excepta verborum, phrasiumq[ue] singulari puritate, et elegantia. Nec tamen Plinio, aut Vitruuio carere potest, aut etiam 
+                        Celso, propter plurimarum in mundo rerum, experimentorum, operumq[ue] necessariam vbiq[ue] nomenclaturam, et disertam explicationem. 
+                    </marginalia_text>
+                    <person name="Livy"/>
+                    <person name="Cicero"/>
+                    <person name="Pliny the Elder"/> <!-- unclear which Pliny is being referred to, Younger or Elder -->
+                    <person name="Vitruvius"/> 
+                    <person name="Celsus"/> 
+                </position>
+            </language>
+            <translation>
+                While I meticulously observed all types of speaking, I have found noone equal to Livy in individual formulas of expression and variation, 
+                not even Cicero, except for the remarkable purity and elegance of his words and diction. However one could not do without Pliny or Vitruvius, 
+                or even Celsus, because of their indispensable nomenclature and clear explanation of very many objects, examples, and works in the world.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ELENCHVS REGVM," type="straight"/>
+        <underline language="LA" method="pen" text="CONSVLVM," type="straight"/>
+        <underline language="LA" method="pen" text="DICTATORUM" type="straight"/>
+        <underline language="LA" method="pen" text="Decemuirum" type="straight"/>
+        <underline language="LA" method="pen" text="Tribunorum militum, qui consulari" type="straight"/> 
+        <underline language="LA" method="pen" text="Praetorum" type="straight"/>
+        <underline language="LA" method="pen" text="Censorum" type="straight"/>
+        <underline language="LA" method="pen" text="Pontificum Maximorum" type="straight"/>
+        <underline language="LA" method="pen" text="REGES" type="straight"/>
+        <underline language="LA" method="pen" text="COSS. PRIMAE DECADIS" type="straight"/>
+        <underline language="LA" method="pen" text="ROMVLVS primus Rom." type="straight"/>
+        <underline language="LA" method="pen" text="Numa Pompilius" type="straight"/>
+        <underline language="LA" method="pen" text="43." type="straight"/>
+        <underline language="LA" method="pen" text="Tullus Hostillius" type="straight"/>
+        <underline language="LA" method="pen" text="Ancus Martius" type="straight"/>
+        <underline language="LA" method="pen" text="nepos" type="straight"/>
+        <underline language="LA" method="pen" text="Tarquinius Priscus quintus" type="straight"/>
+        <underline language="LA" method="pen" text="Seruius Tullus gener Tarquinij" type="straight"/>
+        <underline language="LA" method="pen" text=".44." type="straight"/>
+        <underline language="LA" method="pen" text="Tarquinius Superb." type="straight"/>
+        <underline language="LA" method="pen" text="nepos Tarquinij" type="straight"/>
+        <underline language="LA" method="pen" text="CONSVLES" type="straight"/>
+        <underline language="LA" method="pen" text="Iunius Brutus" type="straight"/>
+        <underline language="LA" method="pen" text="Collatinus abrogatus" type="straight"/>
+        <underline language="LA" method="pen" text="P. Valerius" type="straight"/>
+        <underline language="LA" method="pen" text="Bruto suffectus" type="straight"/>
+        <underline language="LA" method="pen" text="Lucretio suffectus" type="straight"/>
+        <underline language="LA" method="pen" text="P. Valerius" type="straight"/>
+        <underline language="LA" method="pen" text="Valerius Publicola III" type="straight"/>
+        <underline language="LA" method="pen" text="Agrippa Menenius" type="straight"/>
+        <underline language="LA" method="pen" text="Claudius" type="straight"/>
+        <underline language="LA" method="pen" text="Sex. Furius" type="straight"/>
+        <underline language="LA" method="pen" text="Sp. Furius" type="straight"/>
+        <underline language="LA" method="pen" text="P. Valerius Publicola" type="straight"/>
+        <underline language="LA" method="pen" text="Quintius Cincinnatus consul" type="straight"/>
+        <underline language="LA" method="pen" text="Sextius Capitolinus" type="straight"/>
+        <underline language="LA" method="pen" text="T. Virgilius C[a]elimontanus" type="straight"/>
+        <underline language="LA" method="pen" text="C. Iulius" type="straight"/>
+        <underline language="LA" method="pen" text="Capitolinus IIII" type="straight"/>
+        <underline language="LA" method="pen" text="Capitolinus V" type="straight"/>
+        <underline language="LA" method="pen" text="Quintius Capitolinus" type="straight"/>
+        <underline language="LA" method="pen" text="C. Iulius III" type="straight"/>
+        
+        <symbol name="SS" place="intext"/>
+        <symbol language="LA" name="SS" place="intext" text="Iunius Brutus"/>
+        
+        <mark language="LA" method="pen" name="quotation_mark" place="left_margin" text="P. Valerius"/>
+        <mark language="LA" method="pen" name="quotation_mark" place="left_margin" text="P. Valerius"/>
+        <mark language="LA" method="pen" name="quotation_mark" place="left_margin" text="Valerius Publicola III"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/> <!-- P. Valerius IIII -->
+        
+        <mark language="LA" method="pen" name="plus_sign" place="head" text="REGVM,"/> 
+        <mark language="LA" method="pen" name="plus_sign" place="head" text="CONSVLVM,"/>
+        <mark language="LA" method="pen" name="plus_sign" place="head" text="DICTATORUM"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Decemuirum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Tribunorum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Praetorum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Cenforum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Pontificum Maximorum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="43."/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="nepos"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Seruius Tullus gener Tarquinij"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text=".44."/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="nepos Tarquinij"/>
+ 
+    </annotation>
+</transcription>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+  <license>
+    <url>http://creativecommons.org/licenses/by/4.0/</url>
+    <logo>https://i.creativecommons.org/l/by/4.0/88x31.png</logo>
+  </license>
+  <dates>
+      <startDate>1555</startDate>
+      <endDate>1555</endDate>
+  </dates>
+  <texts>
+    <text id="1">
+      <language>la</language>
+      <title>Historia de gentibus septentrionalibus, earumque diuersis statibus, conditionibus (Rome, 1555)</title>
+      <textId>magnus</textId>
+    </text>
+  </texts>
+  <bibliographies>
+    <bibliography lang="en">
+      <title>Historia de gentibus septentrionalibus, earumque diuersis statibus, conditionibus (Rome, 1555)</title>
+      <commonName>Olaus Magnus, Historia de gentibus (Rome, 1555)</commonName>
+      <dateLabel>1555</dateLabel>
+      <origin>Rome</origin>
+      <currentLocation>Princeton University Library</currentLocation>
+      <repository>Princeton University Library</repository>
+      <shelfmark>DL45 .O438 1555q</shelfmark>
+      <author>
+        <name>Magnus, Olaus</name>
+        <id>http://www.isni.org/isni/0000000122764659</id>
+      </author>
+      <reader>
+        <name>Gabriel Harvey</name>
+        <id>http://www.isni.org/isni/0000000073570531</id>
+      </reader>
+      <website>https://archaeologyofreading.org/bibliography/Harvey-corpus/Magnus</website>
+      <detail>[84], 815, [1] p.; 27 cm. fol.</detail>
+      <note>Already digitized</note>
+    </bibliography>
+  </bibliographies>
+</book>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.210v.tif" pagination="420" reader="John Dee" signature="[D 2[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="qui accusait, optat ne is torqueatur. Pater ei contradicit." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>contra quenda[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Against someone.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Dißimulet" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dissimulatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Dissimulation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="litigator" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Litigator.</marginalia_text>
+                </position>
+            </language>
+            <translation>Litigant.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="frequens error" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Error frequens</marginalia_text>
+                </position>
+            </language>
+            <translation>Common error.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="filium" type="straight"/>
+        <underline language="LA" method="pen" text="nominaturus" type="straight"/>
+        <underline language="LA" method="pen" text="Dißimulet ergo, ut" type="straight"/>
+        <underline language="LA" method="pen" text="continuó'ne si ille sultè cogitauit, nobis quoq[ue] stultè dicendu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Non enim, inquiunt, mori uult, sed inuidiam filio facere. Equidem" type="straight"/>
+        <underline language="LA" method="pen" text="praeuaricari, neq[ue] litem intelligo, in qua pars utraq[ue] idem uelit, neq[ue] tam stultum quenquam, qui si uiuere uelit, mortem potius malè              petat, quàm omnino non petat. Non" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="double_vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>
