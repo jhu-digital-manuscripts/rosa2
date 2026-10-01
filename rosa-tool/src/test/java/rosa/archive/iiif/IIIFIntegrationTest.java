@@ -279,16 +279,38 @@ class IIIFIntegrationTest {
                         + douce195Folio1rIllustrations.size());
 
         // Verify content of Douce195 illustration annotations on 1r
-        // Entry 1 has Characters=49, Costume="Blue sleeveless outer garment and hat"
+        // Entry 1 has Illustration title=1, Characters=49, Costume="Blue sleeveless outer garment and hat".
+        // Both are references into illustration_titles.csv and character_names.csv and must be
+        // resolved to names, not emitted as bare ids.
         boolean foundDouce195Illus = false;
         for (String body : douce195Folio1rIllustrations) {
-            if (body.contains("Characters:")) {
+            if (body.contains("Blue sleeveless outer garment and hat")) {
                 foundDouce195Illus = true;
                 assertTrue(body.contains("Illustration"), "Body should contain 'Illustration' heading");
+                assertTrue(body.contains("<p>Titles: Portrait of Author (Guillaume de Lorris)</p>"),
+                        "Illustration title reference '1' should be resolved: " + body);
+                assertTrue(body.contains("<p>Characters: Guillaume de Lorris</p>"),
+                        "Character reference '49' should be resolved: " + body);
                 break;
             }
         }
-        assertTrue(foundDouce195Illus, "Should find illustration annotation with 'Characters:' on Douce195 folio 1r");
+        assertTrue(foundDouce195Illus,
+                "Should find illustration annotation with resolved title and character on Douce195 folio 1r");
+
+        // Douce332 entry 1 references three titles and character 2, whose site name and
+        // English name differ
+        boolean foundDouce332Refs = false;
+        for (String body : douce332Folio1rIllustrations) {
+            if (body.contains("Ankle-length gown")) {
+                foundDouce332Refs = true;
+                assertTrue(body.contains("<p>Titles: L’Amans Sleeps, "),
+                        "All three title references should be resolved in order: " + body);
+                assertTrue(body.contains("<p>Characters: L'Amans (Lover, Dreamer)</p>"),
+                        "Character reference '2' should resolve to site name plus English name: " + body);
+                break;
+            }
+        }
+        assertTrue(foundDouce332Refs, "Should find Douce332 folio 1r illustration with resolved references");
 
         // Verify a later folio in Douce195 also has illustrations
         // Entry 5 in imagetag has folio "2r". In images:
@@ -308,7 +330,7 @@ class IIIFIntegrationTest {
                         + douce195Folio2rIllustrations.size());
 
         // Verify that there are illustration annotations with "Titles:" content
-        // (Douce195 imagetag entries have actual illustration title strings in the "Illustration title" column)
+        // (Douce195 imagetag entries reference illustration title ids in the "Illustration title" column)
         boolean foundTitles = false;
         for (String body : douce195Folio1rIllustrations) {
             if (body.contains("Titles:")) {
@@ -317,6 +339,42 @@ class IIIFIntegrationTest {
             }
         }
         assertTrue(foundTitles, "Douce195 folio 1r illustrations should contain 'Titles:' content");
+
+        // Illustration range labels use the resolved title, not the raw reference
+        JsonNode douce195Manifest = mapper.readTree(
+                Files.readString(outputDir.resolve("rose/Douce195/manifest.json")));
+        List<String> illusRangeLabels = new ArrayList<>();
+        collectIllustrationRangeLabels(douce195Manifest.get("structures"), illusRangeLabels);
+        assertFalse(illusRangeLabels.isEmpty(), "Douce195 should have illustration ranges");
+        assertTrue(illusRangeLabels.contains("Portrait of Author (Guillaume de Lorris)"),
+                "Illustration range label should be the resolved title: " + illusRangeLabels);
+        for (String label : illusRangeLabels) {
+            assertFalse(label.matches("\\d+"),
+                    "Illustration range label should never be a bare reference id: " + label);
+        }
+    }
+
+    /**
+     * Collects the labels of all illustration Ranges found anywhere under the given ranges.
+     */
+    private void collectIllustrationRangeLabels(JsonNode ranges, List<String> labels) {
+        if (ranges == null || !ranges.isArray()) {
+            return;
+        }
+        for (JsonNode range : ranges) {
+            if (!"Range".equals(range.path("type").asText())) {
+                continue;
+            }
+            if (range.path("id").asText().contains("/range/illustration/")) {
+                JsonNode label = range.path("label");
+                label.fieldNames().forEachRemaining(lang -> {
+                    for (JsonNode value : label.get(lang)) {
+                        labels.add(value.asText());
+                    }
+                });
+            }
+            collectIllustrationRangeLabels(range.get("items"), labels);
+        }
     }
 
     /**

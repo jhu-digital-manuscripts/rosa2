@@ -53,12 +53,28 @@ A book represents a single digitized manuscript or printed work. Each book direc
 | `{book-id}.description_en.xml` | Book metadata (title, repository, shelfmark, date, dimensions, authors) |
 | `{book-id}.images.csv` | Image list with filenames, dimensions, and roles |
 | `{book-id}.images.crop.csv` | Cropped image data for display |
+| `{book-id}.imagetag.csv` | Illustration tagging: one row per illustration, keyed to a folio |
 | `{book-id}.permission_en.html` | Usage permission and license text |
 | `{book-id}.SHA1SUM` | SHA1 checksums for integrity verification |
 | `{book-id}.transcription.xml` | TEI P5 XML transcription (hand-authored or generated from .txt files) |
 | `{book-id}.transcription.{page}.txt` | Per-page text transcription source files (custom format) |
 | `{book-id}.aor.{page}.xml` | AoR annotation transcription XML for each annotated page |
 | Image files (`.tif`, `.jpg`) | Page images (excluded by shallow-copy) |
+
+## Illustration Tagging
+
+`{book-id}.imagetag.csv` describes the illustrations of a book, one per row, with
+the columns `id`, `Folio` (or `Folio #`), `Illustration title`, `Textual elements`,
+`Initials`, `Characters`, `Costume`, `Objects`, `Landscape`, `Architecture` and
+`Other`. Columns are matched by header name, so order may vary and `Initials` may
+be absent.
+
+The `Illustration title` and `Characters` columns hold comma separated entries.
+A purely numeric entry is a reference into the collection's
+`illustration_titles.csv` or `character_names.csv`; anything else is a literal
+value. Both forms may be mixed in one cell, as in `57, Jalous' wife`. Because
+commas separate entries, a literal value cannot itself contain a comma.
+Generation fails if a numeric reference has no matching row in the lookup table.
 
 ## Transcription Types
 

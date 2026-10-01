@@ -59,6 +59,15 @@ Canvas URIs use a 0-based index as the path segment: `{base-url}/{collection-id}
 Annotation pages contain textual and descriptive annotations. The generator produces annotation pages for:
 - **AoR annotations** — marginalia (with HTML rendering, people/books/locations, multi-language), underline, mark, symbol, numeral, errata, drawing, graph, table, calculation, physical_link
 - **Illustrations** — titles, characters, textual elements, costume, objects, landscapes, architecture
+
+Numeric entries in the "Illustration title" and "Characters" columns of
+`{book-id}.imagetag.csv` are references into the collection's
+`illustration_titles.csv` and `character_names.csv` and are resolved to names;
+non-numeric entries are used literally. A reference that cannot be resolved
+aborts generation rather than leaking a bare id into the output. Characters are
+displayed as the site name with the English name in parentheses when it differs
+(for example `Haine (Hate)`). Illustration Ranges use the resolved titles as
+their label.
 - **Transcriptions** — TEI transcription text (from `{book-id}.transcription.xml`) rendered as HTML with poetry lines, rubrics, and catchphrases, split per-page at `<pb>` elements
 - **HTML annotations** — collection-level HTML annotation content
 

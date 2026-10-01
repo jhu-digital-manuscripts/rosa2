@@ -14,6 +14,12 @@ public class CharacterName {
 
     private static final String DEFAULT_LANGUAGE = "en";
 
+    /**
+     * Key used for the canonical name of the character as it appears in the
+     * "Site name" column of {@code character_names.csv}.
+     */
+    private static final String SITE_NAME_LANGUAGE = "site name";
+
     private String id;
     private Map<String, String> names;
 
@@ -59,6 +65,55 @@ public class CharacterName {
      */
     public Set<String> getAllNames() {
         return new HashSet<>(names.values());
+    }
+
+    /**
+     * Returns the canonical site name of this character, if known.
+     *
+     * @return the site name, or {@code null} if not available
+     */
+    public String getSiteName() {
+        return trimToNull(names.get(SITE_NAME_LANGUAGE));
+    }
+
+    /**
+     * Returns a human readable name for this character, suitable for display.
+     * The canonical site name is preferred, with the English name appended in
+     * parentheses when it adds information. Falls back to the English name, then
+     * to any other available name.
+     *
+     * @return a display name, or {@code null} if this character has no names
+     */
+    public String getDisplayName() {
+        String site = getSiteName();
+        String english = trimToNull(names.get(DEFAULT_LANGUAGE));
+
+        if (site != null && english != null && !site.equalsIgnoreCase(english)) {
+            return site + " (" + english + ")";
+        }
+        if (site != null) {
+            return site;
+        }
+        if (english != null) {
+            return english;
+        }
+
+        for (String name : names.values()) {
+            String trimmed = trimToNull(name);
+            if (trimmed != null) {
+                return trimmed;
+            }
+        }
+
+        return null;
+    }
+
+    private static String trimToNull(String s) {
+        if (s == null) {
+            return null;
+        }
+        String trimmed = s.trim();
+        return trimmed.isEmpty() ? null : trimmed;
     }
 
     /**

@@ -16,6 +16,7 @@ import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
 import rosa.archive.core.ArchiveStore;
+import rosa.archive.core.util.IllustrationRefs;
 import rosa.archive.model.BiblioData;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
@@ -919,10 +920,16 @@ public final class IIIFPresentationGenerator {
                 html.append("<p><b>Illustration</b></p>");
 
                 if (illus.getTitles() != null && illus.getTitles().length > 0) {
-                    html.append("<p>Titles: ").append(escapeHtml(String.join(", ", illus.getTitles()))).append("</p>");
+                    List<String> titles = IllustrationRefs.resolveTitles(collection, book, illus);
+                    if (!titles.isEmpty()) {
+                        html.append("<p>Titles: ").append(escapeHtml(String.join(", ", titles))).append("</p>");
+                    }
                 }
                 if (illus.getCharacters() != null && illus.getCharacters().length > 0) {
-                    html.append("<p>Characters: ").append(escapeHtml(String.join(", ", illus.getCharacters()))).append("</p>");
+                    List<String> characters = IllustrationRefs.resolveCharacterDisplayNames(collection, book, illus);
+                    if (!characters.isEmpty()) {
+                        html.append("<p>Characters: ").append(escapeHtml(String.join(", ", characters))).append("</p>");
+                    }
                 }
                 if (illus.getTextualElement() != null && !illus.getTextualElement().isEmpty()) {
                     html.append("<p>Textual element: ").append(escapeHtml(illus.getTextualElement())).append("</p>");
@@ -1186,9 +1193,9 @@ public final class IIIFPresentationGenerator {
             for (int i = 0; i < tagging.size(); i++) {
                 Illustration illus = tagging.getIllustrationData(i);
                 String illusLabel = illus.getId() != null ? illus.getId() : "Illustration " + (i + 1);
-                if (illus.getTitles() != null && illus.getTitles().length > 0
-                        && illus.getTitles()[0] != null && !illus.getTitles()[0].isEmpty()) {
-                    illusLabel = illus.getTitles()[0];
+                List<String> illusTitles = IllustrationRefs.resolveTitles(collection, book, illus);
+                if (!illusTitles.isEmpty()) {
+                    illusLabel = String.join(", ", illusTitles);
                 }
 
                 // Find the canvas index for this illustration's page

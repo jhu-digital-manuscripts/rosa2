@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.fasterxml.jackson.databind.node.TextNode;
 import rosa.archive.core.ArchiveStore;
+import rosa.archive.core.util.IllustrationRefs;
 import rosa.archive.model.BiblioData;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
@@ -13,12 +14,9 @@ import rosa.archive.model.BookImage;
 import rosa.archive.model.BookImageLocation;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookText;
-import rosa.archive.model.CharacterName;
-import rosa.archive.model.CharacterNames;
 import rosa.archive.model.HTMLAnnotations;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTagging;
-import rosa.archive.model.IllustrationTitles;
 import rosa.archive.model.ImageList;
 import rosa.archive.model.ObjectRef;
 import rosa.archive.model.ReferenceSheet;
@@ -960,65 +958,14 @@ public final class OpensearchIngestGenerator {
         StringBuilder textBuilder = new StringBuilder();
 
         // Resolve titles via IllustrationTitles
-        IllustrationTitles titles = collection.getIllustrationTitles();
-        if (illustration.getTitles() != null) {
-            for (String titleId : illustration.getTitles()) {
-                if (titleId == null || titleId.isBlank()) continue;
-                if (isNumeric(titleId)) {
-                    // Numeric: resolve as a title ID
-                    if (titles == null) {
-                        throw new IllegalStateException(
-                                "Cannot resolve illustration title ID '" + titleId
-                                        + "': no illustration_titles.csv loaded for collection '"
-                                        + collection.getId() + "'");
-                    }
-                    String resolvedTitle = titles.getTitleById(titleId);
-                    if (resolvedTitle == null || resolvedTitle.isBlank()) {
-                        throw new IllegalStateException(
-                                "Cannot resolve illustration title ID '" + titleId
-                                        + "' in collection '" + collection.getId()
-                                        + "', book '" + book.getId()
-                                        + "', page '" + image.getId() + "'");
-                    }
-                    textBuilder.append(resolvedTitle).append(", ");
-                } else {
-                    // Non-numeric: treat as a literal value
-                    textBuilder.append(titleId).append(", ");
-                }
-            }
+        for (String title : IllustrationRefs.resolveTitles(collection, book, illustration)) {
+            textBuilder.append(title).append(", ");
         }
 
-        // Resolve characters via CharacterNames
-        CharacterNames charNames = collection.getCharacterNames();
-        if (illustration.getCharacters() != null) {
-            for (String charId : illustration.getCharacters()) {
-                if (charId == null || charId.isBlank()) continue;
-                if (isNumeric(charId)) {
-                    // Numeric: resolve as a character ID
-                    if (charNames == null) {
-                        throw new IllegalStateException(
-                                "Cannot resolve character ID '" + charId
-                                        + "': no character_names.csv loaded for collection '"
-                                        + collection.getId() + "'");
-                    }
-                    CharacterName charName = charNames.getCharacterName(charId);
-                    if (charName == null) {
-                        throw new IllegalStateException(
-                                "Cannot resolve character ID '" + charId
-                                        + "' in collection '" + collection.getId()
-                                        + "', book '" + book.getId()
-                                        + "', page '" + image.getId() + "'");
-                    }
-                    for (String name : charName.getAllNames()) {
-                        textBuilder.append(name).append(", ");
-                        allCharNames.add(name);
-                    }
-                } else {
-                    // Non-numeric: treat as a literal value
-                    textBuilder.append(charId).append(", ");
-                    allCharNames.add(charId);
-                }
-            }
+        // Resolve characters via CharacterNames, indexing every name variant
+        for (String name : IllustrationRefs.resolveAllCharacterNames(collection, book, illustration)) {
+            textBuilder.append(name).append(", ");
+            allCharNames.add(name);
         }
 
         // Textual element, architecture, costume, object, landscape, other
@@ -1213,20 +1160,6 @@ public final class OpensearchIngestGenerator {
         if (value != null && !value.isBlank()) {
             sb.append(value).append(", ");
         }
-    }
-
-    /**
-     * Checks if a string is a numeric value (integer).
-     * Used to distinguish reference IDs from literal text values in CSV columns.
-     */
-    private static boolean isNumeric(String s) {
-        if (s == null || s.isBlank()) return false;
-        for (int i = 0; i < s.length(); i++) {
-            if (!Character.isDigit(s.charAt(i))) {
-                return false;
-            }
-        }
-        return true;
     }
 
     /**
