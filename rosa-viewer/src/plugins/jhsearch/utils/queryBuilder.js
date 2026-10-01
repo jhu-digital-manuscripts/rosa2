@@ -104,6 +104,34 @@ export function buildFacetAggregations(categories) {
 }
 
 /**
+ * Build the sort clause for a sort field, or null for relevance ordering.
+ *
+ * `page_num` only exists in the canvas mapping, and a simple or advanced search
+ * runs against manifest and canvas together. Sorting on a field a shard does not
+ * know about is an error there, not an empty value: without `unmapped_type` every
+ * manifest shard fails with `No mapping found for [page_num] in order to sort
+ * on`. Opensearch still answers 200 with whatever the canvas shards returned, so
+ * the symptom is manifests silently vanishing from the results rather than a
+ * visible failure. `unmapped_type` makes those shards treat the field as absent,
+ * which is what `missing: '_last'` then acts on to put manifests at the end.
+ *
+ * @param {string} sortField - Field to sort on, or '_score' for relevance
+ * @param {string} sortOrder - 'asc' or 'desc'
+ * @returns {Object[]|null} Opensearch sort clause, or null to leave it unset
+ */
+export function buildSortClause(sortField, sortOrder) {
+  if (sortField === '_score') {
+    return null;
+  }
+
+  if (sortField === 'page_num') {
+    return [{ [sortField]: { order: sortOrder, missing: '_last', unmapped_type: 'long' } }];
+  }
+
+  return [{ [sortField]: sortOrder }];
+}
+
+/**
  * Build a browse query (no search terms, just collection filtering and facets).
  *
  * @param {Object} options - Query options
@@ -138,7 +166,7 @@ export function buildBrowseQuery({
     },
     from: page * pageSize,
     size: pageSize,
-    sort: [{ [sortField]: sortOrder }],
+    sort: buildSortClause(sortField, sortOrder) || [{ 'label.keyword': 'asc' }],
     aggs: buildFacetAggregations(categories),
   };
 }
@@ -203,13 +231,9 @@ export function buildSimpleSearchQuery({
   };
 
   // Only add sort if not using relevance (default)
-  if (sortField !== '_score') {
-    // For page_num sort, manifests don't have this field - put them last
-    if (sortField === 'page_num') {
-      body.sort = [{ [sortField]: { order: sortOrder, missing: '_last' } }];
-    } else {
-      body.sort = [{ [sortField]: sortOrder }];
-    }
+  const sort = buildSortClause(sortField, sortOrder);
+  if (sort) {
+    body.sort = sort;
   }
 
   return body;
@@ -310,13 +334,9 @@ export function buildAdvancedSearchQuery({
     aggs: buildFacetAggregations(categories),
   };
 
-  if (sortField !== '_score') {
-    // For page_num sort, manifests don't have this field - put them last
-    if (sortField === 'page_num') {
-      body.sort = [{ [sortField]: { order: sortOrder, missing: '_last' } }];
-    } else {
-      body.sort = [{ [sortField]: sortOrder }];
-    }
+  const sort = buildSortClause(sortField, sortOrder);
+  if (sort) {
+    body.sort = sort;
   }
 
   return body;

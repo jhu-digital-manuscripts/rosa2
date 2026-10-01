@@ -11,7 +11,9 @@ Run with:  python3 -m unittest discover -s rosa-search/lambda -v
 from __future__ import annotations
 
 import json
+import os
 import sys
+import types
 import unittest
 from pathlib import Path
 
@@ -115,7 +117,7 @@ def advanced_search_query() -> dict:
         },
         "from": 0,
         "size": 30,
-        "sort": [{"page_num": {"order": "asc", "missing": "_last"}}],
+        "sort": [{"page_num": {"order": "asc", "missing": "_last", "unmapped_type": "long"}}],
         "highlight": {
             "fields": {"marginalia.*": {}, "mark.*": {}},
             "pre_tags": ["<mark>"],
@@ -158,6 +160,18 @@ class AcceptsViewerQueries(unittest.TestCase):
 
     def test_manifest_canvas_lookup(self):
         validate({"query": {"term": {"manifest_id": "aor.Ha2"}}, "sort": [{"page_num": "asc"}]})
+
+    def test_unmapped_type_sort_allowed(self):
+        # buildSortClause() in queryBuilder.js sends this for a Page Order sort.
+        # page_num exists only in the canvas mapping, and a search spans both
+        # indexes, so without unmapped_type every manifest shard fails the sort and
+        # Opensearch answers 200 with the manifests quietly missing.
+        validate(
+            {
+                "query": {"match_all": {}},
+                "sort": [{"page_num": {"order": "asc", "missing": "_last", "unmapped_type": "long"}}],
+            }
+        )
 
     def test_keyword_subfield_term(self):
         validate({"query": {"term": {"mark.keyword": "plus_sign"}}})
@@ -504,6 +518,255 @@ class Handler(unittest.TestCase):
         headers = app.handler(self.event(), None)["headers"]
         self.assertEqual(headers["Content-Type"], "application/json")
         self.assertEqual(headers["Cache-Control"], "no-store")
+
+    def test_no_retry_after_on_success(self):
+        self.assertNotIn("Retry-After", app.handler(self.event(), None)["headers"])
+
+    def test_rate_limited_carries_retry_after(self):
+        app._rate_limiter = app._RateLimiter(per_minute=60, burst=1)
+        app.handler(self.event(), None)
+        response = app.handler(self.event(), None)
+        self.assertEqual(response["statusCode"], 429)
+        self.assertEqual(response["headers"]["Retry-After"], app.RETRY_AFTER_SECONDS)
+
+
+class UpstreamStatusMapping(unittest.TestCase):
+    """How an upstream status reaches the browser.
+
+    The viewer retries 502/503/504 and gives up on everything else, so the
+    distinction between "busy" and "broken" has to survive the proxy. It used to
+    not: every status outside 400/404/429 became a 502, which told the viewer a
+    transient overload was a permanent fault.
+    """
+
+    def setUp(self):
+        self._original_forward = app.forward
+        app._rate_limiter = app._RateLimiter(0, 0)
+
+    def tearDown(self):
+        app.forward = self._original_forward
+
+    def respond_with(self, status, body=b'{"error":{"reason":"internal detail"}}'):
+        app.forward = lambda path, forwarded: (status, body)
+        return app.handler(Handler.event(), None)
+
+    def test_upstream_503_passes_through(self):
+        response = self.respond_with(503)
+        self.assertEqual(response["statusCode"], 503)
+        self.assertEqual(json.loads(response["body"])["error"], "search backend busy")
+
+    def test_upstream_503_carries_retry_after(self):
+        self.assertEqual(self.respond_with(503)["headers"]["Retry-After"], app.RETRY_AFTER_SECONDS)
+
+    def test_upstream_429_passes_through_as_busy(self):
+        response = self.respond_with(429)
+        self.assertEqual(response["statusCode"], 429)
+        self.assertEqual(json.loads(response["body"])["error"], "search backend busy")
+        self.assertEqual(response["headers"]["Retry-After"], app.RETRY_AFTER_SECONDS)
+
+    def test_upstream_500_becomes_502(self):
+        response = self.respond_with(500)
+        self.assertEqual(response["statusCode"], 502)
+        self.assertEqual(json.loads(response["body"])["error"], "search backend error")
+
+    def test_upstream_403_becomes_502(self):
+        # What stale signing credentials look like from here.
+        self.assertEqual(self.respond_with(403)["statusCode"], 502)
+
+    def test_upstream_bodies_never_reach_the_caller(self):
+        for status in (403, 429, 500, 503):
+            with self.subTest(status=status):
+                self.assertNotIn("internal detail", self.respond_with(status)["body"])
+
+
+class UpstreamRetry(unittest.TestCase):
+    """forward() retries, and what it refuses to retry.
+
+    A single-node domain answers 502/503/504, or refuses the connection outright,
+    while it rides out a load spike or a node replacement. One retry turns most of
+    those into a successful search. Timeouts are the exception: a request blocked
+    on the domain holds a Lambda concurrency slot for the whole wait, so retrying
+    one would double the worst-case hold and spread the overload rather than
+    absorb it.
+    """
+
+    def setUp(self):
+        self.attempts = []
+        self._original_post = app._post_once
+        self._original_backoff = app.UPSTREAM_BACKOFF
+        self._original_attempts = app.UPSTREAM_ATTEMPTS
+        app.UPSTREAM_BACKOFF = 0
+        app.UPSTREAM_ATTEMPTS = 2
+
+    def tearDown(self):
+        app._post_once = self._original_post
+        app.UPSTREAM_BACKOFF = self._original_backoff
+        app.UPSTREAM_ATTEMPTS = self._original_attempts
+
+    def responses(self, *outcomes):
+        """Make _post_once yield each outcome in turn; callables are raised."""
+
+        def fake_post(url, payload):
+            outcome = outcomes[min(len(self.attempts), len(outcomes) - 1)]
+            self.attempts.append((url, payload))
+            if isinstance(outcome, BaseException):
+                raise outcome
+            return outcome
+
+        app._post_once = fake_post
+
+    def forward(self):
+        return app.forward("/manifest,canvas/_search", {"query": {"match_all": {}}})
+
+    def test_success_is_not_retried(self):
+        self.responses((200, b"{}"))
+        self.assertEqual(self.forward(), (200, b"{}"))
+        self.assertEqual(len(self.attempts), 1)
+
+    def test_retries_once_on_503_then_succeeds(self):
+        self.responses((503, b"busy"), (200, b"{}"))
+        self.assertEqual(self.forward(), (200, b"{}"))
+        self.assertEqual(len(self.attempts), 2)
+
+    def test_retries_on_502_and_504(self):
+        for status in (502, 504):
+            with self.subTest(status=status):
+                self.attempts = []
+                self.responses((status, b"x"), (200, b"{}"))
+                self.assertEqual(self.forward()[0], 200)
+                self.assertEqual(len(self.attempts), 2)
+
+    def test_persistent_503_is_returned_not_masked(self):
+        self.responses((503, b"busy"))
+        status, _ = self.forward()
+        self.assertEqual(status, 503)
+        self.assertEqual(len(self.attempts), 2)
+
+    def test_client_error_is_not_retried(self):
+        self.responses((400, b"bad"))
+        self.assertEqual(self.forward()[0], 400)
+        self.assertEqual(len(self.attempts), 1)
+
+    def test_unreachable_is_retried_then_becomes_502(self):
+        self.responses(app._Unreachable("connection reset"))
+        with self.assertRaises(app.RequestRejected) as caught:
+            self.forward()
+        self.assertEqual(caught.exception.status, 502)
+        self.assertEqual(len(self.attempts), 2)
+
+    def test_unreachable_then_success(self):
+        self.responses(app._Unreachable("connection reset"), (200, b"{}"))
+        self.assertEqual(self.forward(), (200, b"{}"))
+        self.assertEqual(len(self.attempts), 2)
+
+    def test_timeout_is_not_retried(self):
+        self.responses(TimeoutError("timed out"))
+        with self.assertRaises(app.RequestRejected) as caught:
+            self.forward()
+        self.assertEqual(caught.exception.status, 504)
+        self.assertEqual(len(self.attempts), 1)
+
+    def test_attempts_can_be_disabled(self):
+        app.UPSTREAM_ATTEMPTS = 1
+        self.responses((503, b"busy"))
+        self.assertEqual(self.forward()[0], 503)
+        self.assertEqual(len(self.attempts), 1)
+
+    def test_each_attempt_is_signed_separately(self):
+        # Re-signing per attempt is what lets a retry pick up rotated credentials.
+        self.responses((503, b"busy"), (200, b"{}"))
+        self.forward()
+        self.assertEqual(len(self.attempts), 2)
+        self.assertEqual(self.attempts[0][1], self.attempts[1][1])
+
+
+class CredentialResolution(unittest.TestCase):
+    """Credentials must not be a snapshot taken at import time.
+
+    Lambda hands the execution role's credentials to the function in
+    AWS_ACCESS_KEY_ID and friends, and rotates them inside an execution
+    environment that can outlive them. botocore's EnvProvider returns a
+    non-refreshing credentials object for that source, so a snapshot goes stale,
+    every signature it makes is rejected with a 403, and the proxy reports 502 for
+    every request that sandbox serves until it is recycled.
+    """
+
+    def setUp(self):
+        self._original_cache = app._credentials_cache
+        self._original_key = os.environ.get("AWS_ACCESS_KEY_ID")
+        self.resolved = []
+
+        def fake_session():
+            credentials = object()
+            self.resolved.append(credentials)
+            return types.SimpleNamespace(get_credentials=lambda: credentials)
+
+        self._original_boto3 = app.boto3
+        app.boto3 = types.SimpleNamespace(Session=fake_session)
+        app._credentials_cache = None
+
+    def tearDown(self):
+        app.boto3 = self._original_boto3
+        app._credentials_cache = self._original_cache
+        if self._original_key is None:
+            os.environ.pop("AWS_ACCESS_KEY_ID", None)
+        else:
+            os.environ["AWS_ACCESS_KEY_ID"] = self._original_key
+
+    def test_stable_credentials_resolved_once(self):
+        os.environ["AWS_ACCESS_KEY_ID"] = "ASIAFIRST"
+        first = app._resolve_credentials()
+        self.assertIs(app._resolve_credentials(), first)
+        self.assertEqual(len(self.resolved), 1)
+
+    def test_rotation_is_picked_up(self):
+        os.environ["AWS_ACCESS_KEY_ID"] = "ASIAFIRST"
+        first = app._resolve_credentials()
+
+        os.environ["AWS_ACCESS_KEY_ID"] = "ASIASECOND"
+        second = app._resolve_credentials()
+
+        self.assertIsNot(second, first)
+        self.assertEqual(len(self.resolved), 2)
+
+    def test_missing_credentials_is_a_server_error(self):
+        os.environ["AWS_ACCESS_KEY_ID"] = "ASIAFIRST"
+        app.boto3 = types.SimpleNamespace(
+            Session=lambda: types.SimpleNamespace(get_credentials=lambda: None)
+        )
+        with self.assertRaises(app.RequestRejected) as caught:
+            app._resolve_credentials()
+        self.assertEqual(caught.exception.status, 500)
+
+
+class UpstreamDefaults(unittest.TestCase):
+    """Timeout budget. The proxy must fail before anything above it does.
+
+    Order matters: upstream timeout < Lambda timeout, and the worst-case total
+    must stay under the API Gateway integration timeout of 29 s, or a slow search
+    surfaces as a gateway error instead of the proxy's own 504.
+    """
+
+    def test_upstream_timeout_is_short(self):
+        self.assertLessEqual(app.UPSTREAM_TIMEOUT, 10)
+
+    def test_search_timeout_is_below_upstream_timeout(self):
+        # The ordering is the point. OpenSearch honouring its own timeout gives the
+        # caller a 200 with partial results and timed_out set, which the viewer
+        # shows as a warning next to the hits it did get. The proxy's socket
+        # expiring first gives the caller a 504 and nothing. So the in-query
+        # timeout has to be reached first.
+        self.assertTrue(app.SEARCH_TIMEOUT.endswith("s"), app.SEARCH_TIMEOUT)
+        search_timeout_seconds = float(app.SEARCH_TIMEOUT.removesuffix("s"))
+        self.assertLess(search_timeout_seconds, app.UPSTREAM_TIMEOUT)
+
+    def test_worst_case_hold_fits_under_api_gateway(self):
+        # A timeout is never retried, so the worst case is one timeout plus one
+        # non-timeout attempt and the backoff between them.
+        worst_case = app.UPSTREAM_TIMEOUT * app.UPSTREAM_ATTEMPTS + app.UPSTREAM_BACKOFF * (
+            app.UPSTREAM_ATTEMPTS - 1
+        )
+        self.assertLess(worst_case, 29)
 
 
 if __name__ == "__main__":

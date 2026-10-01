@@ -107,6 +107,44 @@ The `service/jhsearch.json` file is a static JSON file generated per collection.
 6. For fields with `values`, present enumerated options and query `field.keyword: "value"`.
 7. Send queries to the `opensearch` endpoint using the Opensearch query DSL.
 
+### Handling Failure and Partial Responses
+
+In a deployed environment the `opensearch` endpoint is the search proxy rather than
+the domain, and a client has to handle two cases beyond outright success.
+
+**Transient failures.** 502, 503 and 504 all mean the backend did not answer this
+time, not that the query was wrong. A 503 or 429 carries a `Retry-After` header.
+Retry once with jitter, which is what
+`src/plugins/jhsearch/services/opensearch.js` does; do not retry a 429 without
+honouring the delay, and do not retry a client-side timeout.
+
+**Partial responses.** Opensearch answers HTTP 200 when only some shards
+contributed, so a successful-looking response can be missing matches. Check both
+`_shards.failed` and `timed_out` on every response and tell the user when either
+is set. `hits.total` counts only the shards that answered, so a partial response
+is indistinguishable from a smaller result set unless these fields are read:
+
+```json
+{
+  "took": 143,
+  "timed_out": false,
+  "_shards": { "total": 2, "successful": 1, "skipped": 0, "failed": 1,
+               "failures": [{ "index": "manifest",
+                              "reason": { "type": "query_shard_exception",
+                                          "reason": "No mapping found for [page_num] in order to sort on" } }] },
+  "hits": { "total": { "value": 29 }, "hits": [] }
+}
+```
+
+That particular failure is the trap worth knowing: sorting on a field that only
+one of the two indexes maps. `page_num` exists in `canvas` but not `manifest`, so
+a combined search sorted by page number fails every `manifest` shard and quietly
+drops every book from the results. Always pair such a sort with `unmapped_type`:
+
+```json
+{ "sort": [{ "page_num": { "order": "asc", "missing": "_last", "unmapped_type": "long" } }] }
+```
+
 ## Index Structure
 
 The system uses two Opensearch indexes, each defined in the `rosa-search/opensearch/` directory:
@@ -378,6 +416,11 @@ Find a specific canvas document:
   "sort": [{ "page_num": "asc" }]
 }
 ```
+
+A bare `page_num` sort is safe here because this query goes to `/canvas/_search`,
+where the field is mapped. Against the combined `/_search` it needs
+`unmapped_type` as well, or every `manifest` shard fails the sort — see
+[Handling Failure and Partial Responses](#handling-failure-and-partial-responses).
 
 ## Relevance Scores
 

@@ -66,6 +66,11 @@ module "rosa2_search" {
   rate_limit_per_minute = var.rate_limit_per_minute
   rate_limit_burst      = var.rate_limit_burst
 
+  # Search proxy upstream behaviour
+  upstream_timeout  = var.upstream_timeout
+  upstream_attempts = var.upstream_attempts
+  upstream_backoff  = var.upstream_backoff
+
   # API Gateway
   cors_allowed_origins   = var.cors_allowed_origins
   throttle_rate_limit    = var.throttle_rate_limit

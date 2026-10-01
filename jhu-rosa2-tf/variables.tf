@@ -79,9 +79,9 @@ variable "opensearch_engine_version" {
 }
 
 variable "opensearch_instance_type" {
-  description = "Data node instance type. Only t3.small.search and t3.medium.search exist in the T3 family. The Latin stemmer dictionary is 18 MB and consumes a comparable amount of heap per index that loads it, so t3.small.search (2 GiB) is workable but has limited headroom."
+  description = "Data node instance type. Only t3.small.search and t3.medium.search exist in the T3 family. The Latin stemmer dictionary is 18 MB and consumes a comparable amount of heap per index that loads it. t3.small.search (2 GiB) proved too small: query latency swung from tens of milliseconds warm to many seconds under light concurrency, which the search proxy surfaced as 502/503/504. Both T3 types are burstable, so if CPUCreditBalance trends to zero under real traffic the answer is a non-burstable family rather than a larger t3."
   type        = string
-  default     = "t3.small.search"
+  default     = "t3.medium.search"
 }
 
 variable "opensearch_instance_count" {
@@ -242,15 +242,33 @@ variable "max_result_window" {
 }
 
 variable "search_timeout" {
-  description = "Per-shard timeout injected into every forwarded query."
+  description = "Per-shard timeout injected into every forwarded query. Keep this below upstream_timeout: when OpenSearch gives up first it answers 200 with partial results and timed_out: true, which the viewer can show as a warning alongside the hits it did get, whereas if the proxy's socket times out first the user gets a 504 and nothing."
   type        = string
-  default     = "10s"
+  default     = "6s"
 }
 
 variable "terminate_after" {
   description = "Per-shard document cap injected into every forwarded query. Set well above the corpus size so it acts only as a safety net."
   type        = number
   default     = 200000
+}
+
+variable "upstream_timeout" {
+  description = "Socket timeout in seconds for the search proxy's call to OpenSearch. Keep well below search_lambda_timeout: a request waiting on the domain holds a Lambda concurrency slot for the whole wait, so a long timeout lets one slow query starve other callers. The proxy retries once, and does not retry timeouts, so the worst case is roughly upstream_timeout + upstream_backoff + upstream_timeout only when the first attempt fails without timing out."
+  type        = number
+  default     = 8
+}
+
+variable "upstream_attempts" {
+  description = "Total attempts the search proxy makes per request, including the first. 2 means one retry, which covers a domain that is briefly unreachable or answers 502/503/504. Set to 1 to disable retrying."
+  type        = number
+  default     = 2
+}
+
+variable "upstream_backoff" {
+  description = "Seconds the search proxy waits before retrying a failed call to OpenSearch."
+  type        = number
+  default     = 0.25
 }
 
 variable "rate_limit_per_minute" {

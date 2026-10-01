@@ -19,6 +19,20 @@ The system uses two indexes, each defined in `rosa-search/opensearch/`:
 
 All annotation data that targets a canvas is accumulated into the canvas document rather than stored in a separate index. This means each canvas document contains per-type independently searchable fields for marginalia, underlines, marks, symbols, etc.
 
+### Shard count
+
+Both definitions set `"number_of_shards": 1`. The corpus is roughly 35 MB of bulk
+data across the two indexes, so a single shard per index holds all of it
+comfortably. The setting is explicit because the alternative is whatever default
+the cluster applies: AWS managed domains created without it ended up with 5
+primary shards per index, which meant a combined `/_search` fanned out to 10
+shard searches and 10 search contexts for a corpus that fits in one. On a small
+single-node domain that overhead is measurable in both latency and heap.
+
+Changing the shard count requires rebuilding the indexes, since
+`number_of_shards` is fixed at creation. Run `init-opensearch.sh`, which deletes
+and recreates both indexes before ingesting.
+
 ## Creating Indexes
 
 The definitions target Opensearch 3.x. Use the Opensearch REST API with the definition files:

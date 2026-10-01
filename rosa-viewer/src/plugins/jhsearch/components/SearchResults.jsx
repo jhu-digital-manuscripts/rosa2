@@ -7,6 +7,9 @@ import { useSelector, useDispatch } from 'react-redux';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import CircularProgress from '@mui/material/CircularProgress';
+import Alert from '@mui/material/Alert';
+import Button from '@mui/material/Button';
+import RefreshIcon from '@mui/icons-material/Refresh';
 import { addWindow } from 'mirador';
 
 import { ManifestResult } from './ManifestResult';
@@ -93,6 +96,7 @@ export function SearchResults({ onRetry }) {
   const results = useSelector(selectors.getResultItems);
   const isLoading = useSelector(selectors.isResultsLoading);
   const error = useSelector(selectors.getResultsError);
+  const partial = useSelector(selectors.getResultsPartial);
   const total = useSelector(selectors.getTotalResults);
   const viewMode = useSelector(selectors.getViewMode);
   const iiifBaseUrl = useSelector(selectors.getIiifBaseUrl);
@@ -160,6 +164,24 @@ export function SearchResults({ onRetry }) {
 
         {/* Error state */}
         {error && <SearchError error={error} onRetry={onRetry} />}
+
+        {/* Incomplete response. A successful search that is missing matches, so it
+            is a warning beside the results rather than an error instead of them. */}
+        {!error && partial && (
+          <Alert
+            severity="warning"
+            sx={{ mb: 2 }}
+            action={
+              onRetry ? (
+                <Button color="inherit" size="small" startIcon={<RefreshIcon />} onClick={onRetry}>
+                  Retry
+                </Button>
+              ) : null
+            }
+          >
+            {partial.message}
+          </Alert>
+        )}
 
         {/* Empty state */}
         {!isLoading && !error && results.length === 0 && (

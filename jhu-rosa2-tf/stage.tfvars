@@ -20,7 +20,7 @@ create_s3_vpc_endpoint = false
 # ---------- OpenSearch domain ----------
 opensearch_engine_version = "OpenSearch_3.1"
 
-opensearch_instance_type  = "t3.small.search"
+opensearch_instance_type  = "t3.medium.search"
 opensearch_instance_count = 1
 opensearch_volume_size    = 10
 opensearch_volume_type    = "gp3"
@@ -58,11 +58,24 @@ log_retention_days = 14
 max_body_bytes    = 16384
 max_page_size     = 100
 max_result_window = 10000
-search_timeout    = "10s"
 terminate_after   = 200000
+
+# Below upstream_timeout on purpose, so a slow query ends as a 200 carrying
+# partial results and timed_out: true, which the viewer shows as a warning beside
+# whatever it did find. If this were the larger of the two, the proxy's socket
+# would give up first and the user would get a 504 and nothing.
+search_timeout = "6s"
 
 rate_limit_per_minute = 120
 rate_limit_burst      = 30
+
+# ---------- Search proxy upstream behaviour ----------
+# Fail fast rather than hold a concurrency slot. The proxy retries once on an
+# unreachable domain or an upstream 502/503/504, and never retries a timeout, so
+# a single request occupies its Lambda slot for at most about 16 s.
+upstream_timeout  = 8
+upstream_attempts = 2
+upstream_backoff  = 0.25
 
 # ---------- API Gateway ----------
 cors_allowed_origins = ["https://jhu-digital-manuscripts.github.io"]

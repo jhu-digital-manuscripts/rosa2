@@ -84,6 +84,9 @@ export const initialState = {
     error: null,
     items: [],
     aggregations: {},
+    // Set when Opensearch answered 200 but not every shard contributed. See
+    // services/opensearch.js describePartialResults.
+    partial: null,
   },
 };
 
@@ -409,6 +412,7 @@ export function jhsearchReducer(state = initialState, action) {
           ...state.results,
           loading: true,
           error: null,
+          partial: null,
         },
       };
 
@@ -421,6 +425,7 @@ export function jhsearchReducer(state = initialState, action) {
           error: null,
           items: action.payload.items,
           aggregations: action.payload.aggregations,
+          partial: action.payload.partial || null,
         },
         pagination: {
           ...state.pagination,
@@ -435,6 +440,7 @@ export function jhsearchReducer(state = initialState, action) {
           ...state.results,
           loading: false,
           error: action.payload,
+          partial: null,
         },
       };
 

@@ -83,13 +83,46 @@ if BULK_BATCH_LINES % 2:
 
 ALLOWED_INDEXES = frozenset({"manifest", "canvas"})
 
-_session = boto3.Session()
-_credentials = _session.get_credentials()
-_s3 = _session.client("s3")
-
 
 class AdminError(Exception):
     """An action could not be completed."""
+
+
+# Session, signing credentials and S3 client, paired with the access key ID they
+# were built from. See _aws for why they are not simply created once at import.
+_aws_cache: tuple[str, Any, Any] | None = None
+
+
+def _aws() -> tuple[Any, Any]:
+    """Return (credentials, s3 client), rebuilt when Lambda rotates credentials.
+
+    Lambda passes its execution role credentials in AWS_ACCESS_KEY_ID and friends,
+    and botocore's EnvProvider only returns a self-refreshing credentials object
+    when AWS_CREDENTIAL_EXPIRATION is also set, which Lambda does not set. A
+    botocore Session then caches that snapshot for good. Resolving at import
+    therefore pins credentials that Lambda will rotate underneath a long-lived
+    execution environment, after which every signature is rejected with a 403.
+
+    An ingest run drives this function in a loop for as long as the corpus takes,
+    so the window is real. Keying on the live access key ID rebuilds only when the
+    credentials actually change.
+    """
+    global _aws_cache
+
+    access_key = os.environ.get("AWS_ACCESS_KEY_ID", "")
+    if _aws_cache is None or _aws_cache[0] != access_key:
+        session = boto3.Session()
+        credentials = session.get_credentials()
+        if credentials is None:
+            raise AdminError("no AWS credentials are available")
+        _aws_cache = (access_key, credentials, session.client("s3"))
+
+    return _aws_cache[1], _aws_cache[2]
+
+
+def _s3() -> Any:
+    """The S3 client, rebuilt alongside the credentials it signs with."""
+    return _aws()[1]
 
 
 def _require_index(name: Any) -> str:
@@ -113,8 +146,10 @@ def request(
     if body is not None:
         headers["Content-Type"] = content_type
 
+    credentials, _ = _aws()
+
     signed = AWSRequest(method=method, url=url, data=body, headers=headers)
-    SigV4Auth(_credentials, "es", OPENSEARCH_REGION).add_auth(signed)
+    SigV4Auth(credentials, "es", OPENSEARCH_REGION).add_auth(signed)
 
     outbound = urllib.request.Request(  # noqa: S310 - fixed https scheme
         url, data=body, headers=dict(signed.headers), method=method
@@ -173,7 +208,7 @@ def action_recreate_index(event: dict[str, Any]) -> dict[str, Any]:
     if not bucket:
         raise AdminError("no S3 bucket configured")
 
-    definition = _s3.get_object(Bucket=bucket, Key=key)["Body"].read()
+    definition = _s3().get_object(Bucket=bucket, Key=key)["Body"].read()
     try:
         json.loads(definition)
     except ValueError:
@@ -213,7 +248,7 @@ def action_bulk_ingest(event: dict[str, Any], deadline: float) -> dict[str, Any]
         raise AdminError("no S3 bucket configured")
 
     start_byte = int(event.get("start_byte", 0))
-    total_bytes = _s3.head_object(Bucket=bucket, Key=key)["ContentLength"]
+    total_bytes = _s3().head_object(Bucket=bucket, Key=key)["ContentLength"]
 
     if start_byte >= total_bytes:
         return {
@@ -225,7 +260,7 @@ def action_bulk_ingest(event: dict[str, Any], deadline: float) -> dict[str, Any]
             "failed": 0,
         }
 
-    body = _s3.get_object(Bucket=bucket, Key=key, Range=f"bytes={start_byte}-")["Body"]
+    body = _s3().get_object(Bucket=bucket, Key=key, Range=f"bytes={start_byte}-")["Body"]
 
     offset = start_byte
     indexed = 0

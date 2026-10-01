@@ -157,9 +157,12 @@ Two constraints worth knowing:
 - The uploads use SSE-S3 (`AES256`). OpenSearch cannot read objects encrypted
   with a KMS key, and the failure only surfaces later as an unreadable package.
 - `latin-stemmer-rules.txt` is 18 MB and consumes comparable heap on every index
-  that loads it. On `t3.small.search` (2 GiB, ~1 GiB heap) that fits but leaves
-  limited headroom. Watch `JVMMemoryPressure`; move to `t3.medium.search` if it
-  runs high.
+  that loads it. `t3.small.search` (2 GiB, ~1 GiB heap) technically fits but was
+  not enough in practice: query latency swung between tens of milliseconds warm
+  and many seconds under light concurrency, which reached the viewer as 502, 503
+  and 504 responses. Both environments now run `t3.medium.search` (4 GiB). Watch
+  `JVMMemoryPressure` and `CPUCreditBalance`; T3 is burstable, so if credits
+  trend to zero the next step is a non-burstable family, not a larger T3.
 
 To update a dictionary, edit the file in `rosa-search/opensearch/` and re-apply.
 The index analyzers are not declared `updateable`, so the indexes must then be
@@ -182,6 +185,26 @@ rebuilt with `init-opensearch.sh`.
   origin once the hostname is known.
 - **Auto-Tune is explicitly disabled.** T3 instance types do not support it, and
   leaving it unset lets AWS enable it and the apply fails.
+- **The search proxy fails fast and retries once.** `upstream_timeout` is 8 s,
+  well below the 30 s Lambda timeout, because a request waiting on the domain
+  holds a Lambda concurrency slot for the whole wait: with
+  `search_lambda_reserved_concurrency` as a ceiling, a long timeout is how one
+  slow query turns into throttling for every other caller. The proxy retries once
+  on an unreachable domain or an upstream 502/503/504, and never retries a
+  timeout, so a single request holds its slot for at most about 16 s. Tune with
+  `upstream_timeout`, `upstream_attempts` and `upstream_backoff`.
+- **`search_timeout` must stay below `upstream_timeout`** (6 s against 8 s). Both
+  cap a slow search, but they end it differently. OpenSearch honouring
+  `search_timeout` returns HTTP 200 with whatever the shards found and
+  `timed_out: true`, which the viewer shows as a warning beside those partial
+  results. The proxy's socket expiring first returns a 504 and nothing. Whichever
+  value is smaller decides which of those the user sees.
+- **Lambda throttling surfaces as HTTP 503,** not 429. When concurrent requests
+  exceed `search_lambda_reserved_concurrency`, API Gateway answers
+  `{"message":"Service Unavailable"}`. A 429 with `{"message":"Too Many
+  Requests"}` is the stage throttle instead. Raising the reserved concurrency
+  without first making the domain faster only moves the failure from Lambda
+  throttling to OpenSearch timeouts.
 - **`t3.small.search` and `t3.medium.search` are the only T3 sizes** available in
   OpenSearch Service. T3 also caps the domain at 10 instances and rules out
   UltraWarm and cold storage.
@@ -195,7 +218,7 @@ rebuilt with `init-opensearch.sh`.
 
 ## Cost
 
-The domain dominates: one `t3.small.search` on-demand plus a 20 GiB gp3 volume.
+The domain dominates: one `t3.medium.search` on-demand plus a 20 GiB gp3 volume.
 The HTTP API, both Lambdas, and CloudWatch Logs are usage-priced and negligible
 at this traffic level. For current figures use the
 [AWS Pricing Calculator](https://calculator.aws/).

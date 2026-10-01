@@ -26,8 +26,12 @@ opensearch_engine_version = "OpenSearch_3.1"
 # Small single-node domain. The corpus is roughly 35 MB of bulk data across two
 # indexes. The constraint is heap rather than disk: the Latin stemmer dictionary
 # is 18 MB and is loaded per index that uses it, against the ~1 GiB heap of a
-# 2 GiB instance. Move to t3.medium.search if JVMMemoryPressure runs high.
-opensearch_instance_type  = "t3.small.search"
+# 2 GiB instance. t3.small.search proved too small in practice — search latency
+# swung between 20 ms warm and 13 s under even light concurrency, which surfaced
+# to the viewer as 502/503/504 — so this is t3.medium.search (4 GiB, ~2 GiB heap).
+# Note that t3 is burstable: if CPUCreditBalance still trends to zero under real
+# traffic, the fix is to leave the T family rather than to grow within it.
+opensearch_instance_type  = "t3.medium.search"
 opensearch_instance_count = 1
 opensearch_volume_size    = 20
 opensearch_volume_type    = "gp3"
@@ -65,11 +69,24 @@ log_retention_days = 30
 max_body_bytes    = 16384
 max_page_size     = 100
 max_result_window = 10000
-search_timeout    = "10s"
 terminate_after   = 200000
+
+# Below upstream_timeout on purpose, so a slow query ends as a 200 carrying
+# partial results and timed_out: true, which the viewer shows as a warning beside
+# whatever it did find. If this were the larger of the two, the proxy's socket
+# would give up first and the user would get a 504 and nothing.
+search_timeout = "6s"
 
 rate_limit_per_minute = 120
 rate_limit_burst      = 30
+
+# ---------- Search proxy upstream behaviour ----------
+# Fail fast rather than hold a concurrency slot. The proxy retries once on an
+# unreachable domain or an upstream 502/503/504, and never retries a timeout, so
+# a single request occupies its Lambda slot for at most about 16 s.
+upstream_timeout  = 8
+upstream_attempts = 2
+upstream_backoff  = 0.25
 
 # ---------- API Gateway ----------
 # TODO: replace with the public viewer origin, e.g.

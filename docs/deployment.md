@@ -283,6 +283,11 @@ cd ../rosa-search
 ./init-opensearch.sh --env prod
 ```
 
+`init-opensearch.sh` deletes and recreates both indexes before ingesting, so it is
+also how any change to a setting that is fixed at index creation takes effect —
+`number_of_shards` and the Latin analyzer definitions among them. A change to
+`rosa-search/opensearch/{manifest,canvas}.json` is not live until this has run.
+
 The script prints the `_search` URL to pass to `generate-iiif-pres
 --opensearch-url`. That URL is the API Gateway endpoint, not the domain itself:
 

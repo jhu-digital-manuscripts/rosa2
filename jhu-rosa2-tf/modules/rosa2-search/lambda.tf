@@ -73,7 +73,17 @@ resource "aws_lambda_function" "search" {
       TERMINATE_AFTER       = tostring(var.terminate_after)
       RATE_LIMIT_PER_MINUTE = tostring(var.rate_limit_per_minute)
       RATE_LIMIT_BURST      = tostring(var.rate_limit_burst)
-      LOG_REJECTIONS        = "true"
+
+      # Set explicitly rather than left to the code default, because the value
+      # has to stay in step with search_lambda_timeout and the API Gateway
+      # integration timeout. A request blocked on the domain holds a Lambda
+      # concurrency slot for the whole wait, so this being long is how a slow
+      # query turns into throttling for everyone else.
+      UPSTREAM_TIMEOUT  = tostring(var.upstream_timeout)
+      UPSTREAM_ATTEMPTS = tostring(var.upstream_attempts)
+      UPSTREAM_BACKOFF  = tostring(var.upstream_backoff)
+
+      LOG_REJECTIONS = "true"
     }
   }
 

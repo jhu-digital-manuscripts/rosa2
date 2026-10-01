@@ -22,7 +22,11 @@ from _stubs import FAKE_S3, load_lambda  # noqa: E402
 _fake_s3 = FAKE_S3
 app = load_lambda("admin", "rosa_search_admin")
 
-app._s3 = _fake_s3
+# The Lambda resolves credentials and its S3 client together, through _aws(), so
+# that a rotation of the Lambda execution environment's credentials is picked up
+# mid-run. Overriding that one seam covers both consumers and keeps the tests from
+# touching the real credential chain.
+app._aws = lambda: (object(), _fake_s3)
 app.OPENSEARCH_ENDPOINT = "search-test.us-east-1.es.amazonaws.com"
 app.BULK_PAUSE_SECONDS = 0
 

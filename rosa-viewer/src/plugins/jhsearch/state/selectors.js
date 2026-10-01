@@ -213,6 +213,15 @@ export const getAggregations = (state) => getResults(state).aggregations || {};
 export const getResultsError = (state) => getResults(state).error;
 
 /**
+ * Get the partial-results description, or null when the last response was
+ * complete.
+ *
+ * Opensearch returns HTTP 200 for a search in which some shards failed or timed
+ * out, so this is a successful response that is nonetheless missing matches.
+ */
+export const getResultsPartial = (state) => getResults(state).partial || null;
+
+/**
  * Check if results are loading.
  */
 export const isResultsLoading = (state) => getResults(state).loading;

@@ -108,6 +108,36 @@ The validator rejects code execution, unbounded clause types, cross-index reads,
 mapping disclosure, and oversized work. See the module docstring for the full
 list and the tunable environment variables.
 
+Failure handling matters as much as validation here, because the domain is a
+single small node:
+
+- **One retry.** A request that cannot reach the domain, or that gets an upstream
+  502, 503 or 504, is tried once more after `UPSTREAM_BACKOFF` seconds. Those are
+  the failures a small domain produces while riding out a load spike or a node
+  replacement, and they usually clear in well under a second.
+- **Timeouts are not retried.** `UPSTREAM_TIMEOUT` defaults to 8 s. A request
+  blocked on the domain holds a Lambda concurrency slot for the whole wait, so
+  retrying a timeout would double the worst-case hold and spread an overload
+  rather than absorb it.
+- **`SEARCH_TIMEOUT` (6 s) is kept below `UPSTREAM_TIMEOUT` (8 s).** Both bound a
+  slow search; the smaller one decides how it ends. `SEARCH_TIMEOUT` is injected
+  into every query, and OpenSearch honours it by answering 200 with whatever the
+  shards found and `timed_out: true` — partial results the viewer can show with a
+  warning. `UPSTREAM_TIMEOUT` expiring first produces a 504 and no results at all,
+  so the in-query timeout has to be reached first.
+- **Upstream 503 and 429 pass through** as 503 and 429 with a `Retry-After`
+  header and the message `search backend busy`, so the viewer can tell "busy,
+  try again" from "broken" and retry accordingly. Everything else outside
+  400/404 becomes a 502: OpenSearch error bodies carry mappings, shard layout and
+  stack traces, and are only ever logged, never returned.
+- **Credentials are re-resolved when they rotate.** Lambda passes the execution
+  role's credentials in `AWS_ACCESS_KEY_ID` and friends and rotates them inside an
+  execution environment that can outlive them, while botocore returns a
+  non-refreshing credentials object for that source. Capturing them once at import
+  produced a sandbox that signed every request with stale keys, drew a 403, and
+  reported 502 until it was recycled — one poisoned container among several, which
+  is what intermittent 502s looked like from the outside.
+
 ### `admin`
 
 Invoked directly with `aws lambda invoke`. Reads bulk payloads from S3 rather

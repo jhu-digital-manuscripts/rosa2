@@ -21,11 +21,22 @@ Environment variables:
     MAX_BODY_BYTES        Reject request bodies larger than this. Default 16384.
     MAX_RESULT_WINDOW     Cap on from + size. Default 10000.
     MAX_PAGE_SIZE         Cap on size. Default 100.
-    SEARCH_TIMEOUT        Per-shard timeout injected into every query. Default 10s.
+    SEARCH_TIMEOUT        Per-shard timeout injected into every query. Default 6s.
+                          Deliberately below UPSTREAM_TIMEOUT so that a query the
+                          cluster cannot finish comes back as a 200 with partial
+                          results and timed_out set, rather than as this function's
+                          504 with nothing. The caller can show the former.
     TERMINATE_AFTER       Per-shard document cap injected into every query.
     RATE_LIMIT_PER_MINUTE Best-effort per-IP request budget. 0 disables.
     RATE_LIMIT_BURST      Best-effort per-IP burst allowance.
     UPSTREAM_TIMEOUT      Socket timeout in seconds when calling OpenSearch.
+                          Default 8. Kept short on purpose: a request waiting on
+                          the domain holds a Lambda concurrency slot for the whole
+                          wait, so a slow query starves other callers. Failing
+                          fast and letting the client retry is cheaper.
+    UPSTREAM_ATTEMPTS     Total attempts per request, including the first.
+                          Default 2, so one retry.
+    UPSTREAM_BACKOFF      Seconds to wait before the retry. Default 0.25.
     LOG_REJECTIONS        Log rejected queries when "true". Default true.
 """
 
@@ -55,18 +66,43 @@ def _int_env(name: str, default: int) -> int:
         return default
 
 
+def _float_env(name: str, default: float) -> float:
+    try:
+        return float(os.environ.get(name, default))
+    except (TypeError, ValueError):
+        return default
+
+
 OPENSEARCH_ENDPOINT = os.environ.get("OPENSEARCH_ENDPOINT", "").replace("https://", "").rstrip("/")
 OPENSEARCH_REGION = os.environ.get("OPENSEARCH_REGION") or os.environ.get("AWS_REGION", "us-east-1")
 
 MAX_BODY_BYTES = _int_env("MAX_BODY_BYTES", 16384)
 MAX_RESULT_WINDOW = _int_env("MAX_RESULT_WINDOW", 10000)
 MAX_PAGE_SIZE = _int_env("MAX_PAGE_SIZE", 100)
-SEARCH_TIMEOUT = os.environ.get("SEARCH_TIMEOUT", "10s")
+SEARCH_TIMEOUT = os.environ.get("SEARCH_TIMEOUT", "6s")
 TERMINATE_AFTER = _int_env("TERMINATE_AFTER", 200000)
 RATE_LIMIT_PER_MINUTE = _int_env("RATE_LIMIT_PER_MINUTE", 120)
 RATE_LIMIT_BURST = _int_env("RATE_LIMIT_BURST", 30)
-UPSTREAM_TIMEOUT = _int_env("UPSTREAM_TIMEOUT", 20)
+UPSTREAM_TIMEOUT = _int_env("UPSTREAM_TIMEOUT", 8)
+UPSTREAM_ATTEMPTS = max(_int_env("UPSTREAM_ATTEMPTS", 2), 1)
+UPSTREAM_BACKOFF = max(_float_env("UPSTREAM_BACKOFF", 0.25), 0.0)
 LOG_REJECTIONS = os.environ.get("LOG_REJECTIONS", "true").lower() == "true"
+
+# Upstream statuses worth a second attempt. All three mean "the cluster did not
+# answer this time" rather than "this query is wrong", so repeating the request is
+# both safe and likely to succeed: a single-node domain riding out a brief load
+# spike or a node replacement recovers in well under a second.
+RETRY_STATUSES = frozenset({502, 503, 504})
+
+# Upstream statuses the caller sees unchanged. Everything else becomes a 502 so
+# that OpenSearch internals cannot be used to probe the cluster. 503 is in here
+# deliberately: collapsing it into 502 told the viewer "broken" when the truth was
+# "busy, try again", which is the one case a client can usefully act on.
+PASS_THROUGH_STATUSES = frozenset({400, 404, 429, 503})
+
+# Statuses that carry Retry-After. The value is a hint, not a reservation.
+RETRY_AFTER_STATUSES = frozenset({429, 503})
+RETRY_AFTER_SECONDS = "2"
 
 # Structural limits. These bound the cost of a single query rather than trying to
 # enumerate every abusive shape. The numbers are comfortably above anything
@@ -267,7 +303,48 @@ class _RateLimiter:
 
 
 _rate_limiter = _RateLimiter(RATE_LIMIT_PER_MINUTE, RATE_LIMIT_BURST)
-_credentials = boto3.Session().get_credentials()
+
+# Resolved credentials, paired with the access key ID they were resolved from.
+# See _resolve_credentials for why this is not simply done once at import.
+_credentials_cache: tuple[str, Any] | None = None
+
+
+def _resolve_credentials() -> Any:
+    """Return credentials for signing, re-resolving when Lambda rotates them.
+
+    Resolving once at import looks right and is wrong. Lambda hands its execution
+    role credentials to the function through AWS_ACCESS_KEY_ID and friends, and
+    botocore's EnvProvider only returns a self-refreshing credentials object when
+    AWS_CREDENTIAL_EXPIRATION is also set, which Lambda does not set. So the
+    object is a plain snapshot. A botocore Session caches whatever it resolved as
+    well, so sharing one Session does not help either.
+
+    Meanwhile Lambda does rotate those variables inside an execution environment
+    that outlives the credentials. A snapshot taken at import therefore goes stale
+    in any long-lived sandbox, every signature it produces is rejected with a 403,
+    and the proxy turns that into a 502 for every request that sandbox handles
+    until it is recycled. That is the shape of the intermittent 502s this guards
+    against: not a bad query, but one poisoned container among several.
+
+    Re-resolving on every invocation would also be correct but pays to walk the
+    whole provider chain each time. Keying the cache on the live access key ID
+    pays that cost only when the credentials actually change. When credentials
+    come from somewhere other than the environment the key is a constant empty
+    string, which is fine: those providers return refreshable credentials that
+    look after themselves.
+    """
+    global _credentials_cache
+
+    access_key = os.environ.get("AWS_ACCESS_KEY_ID", "")
+    if _credentials_cache is not None and _credentials_cache[0] == access_key:
+        return _credentials_cache[1]
+
+    credentials = boto3.Session().get_credentials()
+    if credentials is None:
+        raise RequestRejected("search is not configured", status=500)
+
+    _credentials_cache = (access_key, credentials)
+    return credentials
 
 
 # ---------- Validation ----------
@@ -576,7 +653,12 @@ def validate_body(raw: bytes) -> dict[str, Any]:
         raise RequestRejected("'search_after' must be an array")
 
     # Server-side safety net. Neither value affects results for a corpus this
-    # size; they bound the damage from a pathological query.
+    # size; they bound the damage from a pathological query. The timeout is also
+    # the better of the two ways a slow search can end: OpenSearch honours it by
+    # returning 200 with whatever the shards found and timed_out set, which the
+    # viewer renders as a warning beside those partial results. It is kept below
+    # UPSTREAM_TIMEOUT so it is reached first; the alternative is this function's
+    # socket giving up and the caller getting a 504 with nothing.
     body["timeout"] = SEARCH_TIMEOUT
     body["terminate_after"] = TERMINATE_AFTER
 
@@ -586,18 +668,27 @@ def validate_body(raw: bytes) -> dict[str, Any]:
 # ---------- Upstream call ----------
 
 
-def forward(path: str, body: dict[str, Any]) -> tuple[int, bytes]:
-    """Sign and forward a validated query to OpenSearch."""
-    url = f"https://{OPENSEARCH_ENDPOINT}{path}"
-    payload = json.dumps(body, separators=(",", ":")).encode("utf-8")
+class _Unreachable(Exception):
+    """The domain could not be reached at all, so the attempt can be repeated.
 
+    Distinct from a timeout. Nothing is known to have been delivered, and the
+    failure arrives quickly, so retrying costs little.
+    """
+
+
+def _post_once(url: str, payload: bytes) -> tuple[int, bytes]:
+    """Sign and send one request. Signed per attempt, never reused.
+
+    A SigV4 signature covers a timestamp, and the credentials behind it can change
+    between attempts, so each attempt gets its own.
+    """
     signed = AWSRequest(
         method="POST",
         url=url,
         data=payload,
         headers={"Content-Type": "application/json", "Host": OPENSEARCH_ENDPOINT},
     )
-    SigV4Auth(_credentials, "es", OPENSEARCH_REGION).add_auth(signed)
+    SigV4Auth(_resolve_credentials(), "es", OPENSEARCH_REGION).add_auth(signed)
 
     request = urllib.request.Request(  # noqa: S310 - fixed https scheme
         url, data=payload, headers=dict(signed.headers), method="POST"
@@ -607,26 +698,75 @@ def forward(path: str, body: dict[str, Any]) -> tuple[int, bytes]:
         with urllib.request.urlopen(request, timeout=UPSTREAM_TIMEOUT) as response:
             return response.status, response.read()
     except urllib.error.HTTPError as error:
+        # An error status is still an answer. The caller decides what to do with it.
         return error.code, error.read()
     except urllib.error.URLError as error:
-        logger.error("OpenSearch unreachable: %s", error.reason)
-        raise RequestRejected("search backend unavailable", status=502) from None
-    except TimeoutError:
-        raise RequestRejected("search backend timed out", status=504) from None
+        # urllib wraps a connect timeout in URLError. Surface it as the timeout it
+        # is so it is not retried; see forward().
+        if isinstance(error.reason, TimeoutError):
+            raise TimeoutError(str(error.reason)) from None
+        raise _Unreachable(str(error.reason)) from None
+
+
+def forward(path: str, body: dict[str, Any]) -> tuple[int, bytes]:
+    """Sign and forward a validated query to OpenSearch, retrying once.
+
+    Retries cover the two failures that are transient on a small domain: not
+    reaching it at all, and it answering 502/503/504. Timeouts are deliberately
+    not retried. A request blocked on the domain holds a Lambda concurrency slot
+    for the whole wait, so retrying a timeout would double the worst-case hold and
+    make a slow domain starve callers faster, which is exactly what lowering
+    UPSTREAM_TIMEOUT is meant to prevent. Worst case here is one timeout, not two.
+    """
+    url = f"https://{OPENSEARCH_ENDPOINT}{path}"
+    payload = json.dumps(body, separators=(",", ":")).encode("utf-8")
+
+    for attempt in range(1, UPSTREAM_ATTEMPTS + 1):
+        last_attempt = attempt == UPSTREAM_ATTEMPTS
+
+        if attempt > 1 and UPSTREAM_BACKOFF:
+            time.sleep(UPSTREAM_BACKOFF)
+
+        try:
+            status, response = _post_once(url, payload)
+        except _Unreachable as error:
+            if last_attempt:
+                logger.error("OpenSearch unreachable after %s attempt(s): %s", attempt, error)
+                raise RequestRejected("search backend unavailable", status=502) from None
+            logger.warning("OpenSearch unreachable on attempt %s, retrying: %s", attempt, error)
+            continue
+        except TimeoutError:
+            logger.error("OpenSearch timed out after %ss", UPSTREAM_TIMEOUT)
+            raise RequestRejected("search backend timed out", status=504) from None
+
+        if status in RETRY_STATUSES and not last_attempt:
+            logger.warning("OpenSearch returned %s on attempt %s, retrying", status, attempt)
+            continue
+
+        return status, response
+
+    # Unreachable: the loop either returns or raises on its last iteration.
+    raise RequestRejected("search backend unavailable", status=502)
 
 
 # ---------- Handler ----------
 
 
-def _response(status: int, payload: dict[str, Any] | bytes) -> dict[str, Any]:
+def _response(
+    status: int, payload: dict[str, Any] | bytes, retry_after: str | None = None
+) -> dict[str, Any]:
     raw = payload if isinstance(payload, bytes) else json.dumps(payload).encode("utf-8")
+    headers = {
+        "Content-Type": "application/json",
+        "Cache-Control": "no-store",
+        "X-Content-Type-Options": "nosniff",
+    }
+    if retry_after is not None:
+        headers["Retry-After"] = retry_after
+
     return {
         "statusCode": status,
-        "headers": {
-            "Content-Type": "application/json",
-            "Cache-Control": "no-store",
-            "X-Content-Type-Options": "nosniff",
-        },
+        "headers": headers,
         "body": raw.decode("utf-8"),
     }
 
@@ -656,7 +796,7 @@ def handler(event: dict[str, Any], context: Any) -> dict[str, Any]:  # noqa: ARG
 
     if not _rate_limiter.allow(source_ip):
         logger.warning("rate limit exceeded for %s", source_ip)
-        return _response(429, {"error": "too many requests"})
+        return _response(429, {"error": "too many requests"}, retry_after=RETRY_AFTER_SECONDS)
 
     raw = event.get("body") or ""
     if event.get("isBase64Encoded"):
@@ -696,7 +836,18 @@ def handler(event: dict[str, Any], context: Any) -> dict[str, Any]:  # noqa: ARG
             upstream_path,
             payload[:2048].decode("utf-8", "replace"),
         )
-        message = "malformed search request" if 400 <= status < 500 else "search backend error"
-        return _response(status if status in (400, 404, 429) else 502, {"error": message})
+
+        if status in (429, 503):
+            # Load, not a bad request. Saying so lets the viewer retry instead of
+            # showing the user a dead end.
+            message = "search backend busy"
+        elif 400 <= status < 500:
+            message = "malformed search request"
+        else:
+            message = "search backend error"
+
+        client_status = status if status in PASS_THROUGH_STATUSES else 502
+        retry_after = RETRY_AFTER_SECONDS if client_status in RETRY_AFTER_STATUSES else None
+        return _response(client_status, {"error": message}, retry_after=retry_after)
 
     return _response(200, payload)

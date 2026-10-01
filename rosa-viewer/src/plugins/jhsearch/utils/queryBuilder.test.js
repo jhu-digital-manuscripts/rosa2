@@ -8,6 +8,7 @@ import {
   buildSimpleSearchQuery,
   buildAdvancedSearchQuery,
   buildFacetAggregations,
+  buildSortClause,
 } from '../utils/queryBuilder';
 import { mockJHSearchService } from '../../../test/mocks';
 
@@ -169,6 +170,71 @@ describe('queryBuilder', () => {
 
       // Should still produce a valid query
       expect(query.query.bool).toBeDefined();
+    });
+  });
+
+  describe('buildSortClause', () => {
+    it('should return null for relevance so the caller leaves sort unset', () => {
+      expect(buildSortClause('_score', 'desc')).toBeNull();
+    });
+
+    it('should build a plain clause for an ordinary field', () => {
+      expect(buildSortClause('label.keyword', 'asc')).toEqual([{ 'label.keyword': 'asc' }]);
+    });
+
+    it('should set unmapped_type on page_num so manifest shards do not fail', () => {
+      // page_num exists only in the canvas mapping, and simple and advanced
+      // searches span manifest and canvas. Without unmapped_type every manifest
+      // shard fails with "No mapping found for [page_num] in order to sort on",
+      // and Opensearch answers 200 with the manifest hits silently absent.
+      expect(buildSortClause('page_num', 'asc')).toEqual([
+        { page_num: { order: 'asc', missing: '_last', unmapped_type: 'long' } },
+      ]);
+    });
+  });
+
+  describe('page_num sort through the query builders', () => {
+    const pageNumSort = [{ page_num: { order: 'asc', missing: '_last', unmapped_type: 'long' } }];
+
+    it('should carry unmapped_type in a simple search', () => {
+      const query = buildSimpleSearchQuery({
+        query: 'rome',
+        defaultFields,
+        fieldDefinitions,
+        collectionId: 'aor',
+        categories,
+        sortField: 'page_num',
+        sortOrder: 'asc',
+      });
+
+      expect(query.sort).toEqual(pageNumSort);
+    });
+
+    it('should carry unmapped_type in an advanced search', () => {
+      const query = buildAdvancedSearchQuery({
+        rows: [{ field: 'marginalia', value: 'rome', operator: 'AND' }],
+        fieldDefinitions,
+        collectionId: 'aor',
+        categories,
+        sortField: 'page_num',
+        sortOrder: 'asc',
+      });
+
+      expect(query.sort).toEqual(pageNumSort);
+    });
+
+    it('should leave sort unset when sorting by relevance', () => {
+      const query = buildSimpleSearchQuery({
+        query: 'rome',
+        defaultFields,
+        fieldDefinitions,
+        collectionId: 'aor',
+        categories,
+        sortField: '_score',
+        sortOrder: 'desc',
+      });
+
+      expect(query.sort).toBeUndefined();
     });
   });
 
