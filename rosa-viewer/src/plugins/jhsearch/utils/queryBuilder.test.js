@@ -171,6 +171,21 @@ describe('queryBuilder', () => {
       // Should still produce a valid query
       expect(query.query.bool).toBeDefined();
     });
+
+    it('should skip rows for fields the collection does not have', () => {
+      const query = buildAdvancedSearchQuery({
+        rows: [
+          { field: 'label', value: 'rose', operator: 'AND' },
+          { field: 'no_such_field', value: 'x', operator: 'AND' },
+        ],
+        fieldDefinitions,
+        collectionId: 'rose',
+        categories,
+      });
+
+      expect(query.query.bool.must).toHaveLength(1);
+      expect(query.query.bool.must[0].multi_match.fields).toEqual(['label']);
+    });
   });
 
   describe('buildSortClause', () => {
@@ -212,7 +227,7 @@ describe('queryBuilder', () => {
 
     it('should carry unmapped_type in an advanced search', () => {
       const query = buildAdvancedSearchQuery({
-        rows: [{ field: 'marginalia', value: 'rome', operator: 'AND' }],
+        rows: [{ field: 'label', value: 'rome', operator: 'AND' }],
         fieldDefinitions,
         collectionId: 'aor',
         categories,

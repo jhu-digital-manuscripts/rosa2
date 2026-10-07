@@ -59,6 +59,47 @@ substituted into each site's `index.html` at build time:
 end up in plain text in the built `index.html`, so they can also be edited there
 if a site is moved after it was built.
 
+### URLs and browser history
+
+The sites keep their state in the URL fragment, so a page can be bookmarked and
+the browser's back and forward buttons work (`src/site/history/`). The URL
+describes the search view when it is shown, and otherwise the book in the
+focused window, however many windows are open. Search parameters are inside the
+fragment too, because WordPress would treat a query string such as
+`?s=relevance&m=30` as its own.
+
+| View | URL |
+|------|-----|
+| Browse a collection | `#rose` |
+| Browse by category | `#rose?f.date=15th+century&f.has_transcription=true` |
+| Simple search | `#rose/search?q=green` |
+| Advanced search | `#rose/search?q=(description:'sword'+%26+title:'x')&type=advanced` |
+| Thumbnail gallery | `#rose/Arras845/thumb` |
+| Scroll view | `#rose/Arras845/scroll` |
+| Single image | `#rose/Add12042/001v/image` |
+| Reading (two-page) view | `#rose/Arras845/015r/opening` |
+
+Browse and search URLs also take `s` (sort: `relevance`, `page`, `title`,
+`title_desc`), `o` (offset of the first result) and `m` (results per page).
+Parameters with default values are left out. A page is named by its image
+(`Add12042.001v` → `001v`), or `i<index>` for a canvas without an image of
+its own.
+
+Opening a book, a new view of it, a search, a category or another page of results
+adds a history entry. Turning pages, switching between open windows and closing
+a window update the URL in place. Going back to a book focuses the window that
+shows it, or opens one if it was closed. Going back to a search shows the search
+view and leaves the open windows alone.
+
+The paths are the ones the previous AoR and DLMM viewers used, so their
+bookmarks still work. Their search URLs, which put the parameters before the
+fragment (`?q=green&m=30&s=relevance&type=basic&service=rose#rose/search`), are
+rewritten into the new form. Their search-within-a-book URLs run the query
+across the collection. Renamed advanced search fields (`repo`, `place`, `book`)
+are mapped to their current names. WordPress handles the query string of those
+old search bookmarks before the viewer loads, so they only reach the viewer if
+WordPress serves the viewer page for them.
+
 ## Development
 
 Start the local-dev backend (`local-dev/start.sh`, see `../docs/deployment.md`),
@@ -183,6 +224,7 @@ rosa-viewer/
 │   ├── index.js              # Library entry point (createViewer)
 │   ├── config.js             # Default configuration
 │   ├── site/                 # createSiteViewer, site config resolution, shared site CSS
+│   │   └── history/          # URL fragment <-> viewer state, browser history
 │   ├── i18n/                 # Translations
 │   ├── styles/
 │   ├── test/                 # Vitest setup and shared mocks

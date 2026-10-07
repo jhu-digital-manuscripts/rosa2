@@ -66,7 +66,8 @@ function FacetCategory({ category, values, selectedValues, onToggle }) {
       <AccordionDetails sx={{ p: 0 }}>
         <List dense disablePadding>
           {sortedValues.map((value) => {
-            const isSelected = selectedValues.includes(value.key);
+            // Compare as strings: values restored from a URL may be strings
+            const isSelected = selectedValues.some((v) => String(v) === String(value.key));
             // Convert key to string for React key
             const keyStr = String(value.key);
             const displayValue = formatFacetValue(value.key, category);

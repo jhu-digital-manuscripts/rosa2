@@ -256,7 +256,7 @@ export function buildSimpleSearchQuery({
  */
 export function buildAdvancedSearchQuery({
   rows,
-  fieldDefinitions,
+  fieldDefinitions = [],
   collectionId,
   facets = {},
   page = 0,
@@ -266,8 +266,12 @@ export function buildAdvancedSearchQuery({
   sortOrder = 'desc',
 }) {
   // Build clause array from rows
+  // Skip rows for fields the collection does not have, such as ones from an old
+  // bookmarked URL; the search proxy would reject them.
+  const isKnownField = (field) =>
+    fieldDefinitions.length === 0 || fieldDefinitions.some((f) => f.name === field);
   const clauses = rows
-    .filter((row) => row.value && row.value.trim())
+    .filter((row) => row.value && row.value.trim() && row.field && isKnownField(row.field))
     .map((row) => {
       const fieldDef = fieldDefinitions.find((f) => f.name === row.field);
       const searchFields = fieldDef?.has_subfields ? [`${row.field}.*`] : [row.field];

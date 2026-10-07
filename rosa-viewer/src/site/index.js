@@ -5,6 +5,7 @@
 import { createViewer } from '../index';
 import { resolveSiteConfig, validateSiteEnv } from './config';
 import { applySiteBranding } from './branding';
+import { connectHistory } from './history';
 
 export { resolveSiteConfig, validateSiteEnv, buildBannerUrl } from './config';
 export { applySiteBranding } from './branding';
@@ -17,10 +18,12 @@ export { applySiteBranding } from './branding';
  * @param {Object} [options]
  * @param {Function} [options.viewerFactory=createViewer] - Function that receives the
  *   resolved config and returns a viewer; mainly for tests
+ * @param {boolean} [options.history=true] - Keep the URL and browser history in step
+ *   with the viewer (see history/historySync.js)
  * @returns {Object} Mirador viewer instance
  */
 export function createSiteViewer(site, env = globalThis.window?.rosaSiteEnv, options = {}) {
-  const { viewerFactory = createViewer } = options;
+  const { viewerFactory = createViewer, history = true } = options;
   const problems = validateSiteEnv(env);
   for (const problem of problems) {
     console.error(`rosa-viewer: site environment: ${problem}`);
@@ -28,7 +31,11 @@ export function createSiteViewer(site, env = globalThis.window?.rosaSiteEnv, opt
 
   const config = resolveSiteConfig(site, env);
   applySiteBranding(site, config);
-  return viewerFactory(config);
+  const viewer = viewerFactory(config);
+  if (history && typeof viewer?.store?.subscribe === 'function') {
+    connectHistory(viewer.store, { siteTitle: site.title });
+  }
+  return viewer;
 }
 
 export default createSiteViewer;

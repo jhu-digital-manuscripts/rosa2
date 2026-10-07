@@ -2,7 +2,7 @@
  * SimpleSearch component - single text input for searching across default fields.
  */
 
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import TextField from '@mui/material/TextField';
 import InputAdornment from '@mui/material/InputAdornment';
@@ -22,6 +22,11 @@ export function SimpleSearch() {
 
   // Local state for input value (debounced submit)
   const [inputValue, setInputValue] = useState(currentQuery);
+
+  // Sync the input when the query changes elsewhere (e.g. browser back/forward)
+  useEffect(() => {
+    setInputValue(currentQuery);
+  }, [currentQuery]);
 
   const handleInputChange = (event) => {
     setInputValue(event.target.value);

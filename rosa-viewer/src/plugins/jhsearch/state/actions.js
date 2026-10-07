@@ -28,6 +28,7 @@ export const LOAD_COLLECTIONS_FAILURE = `${PREFIX}/LOAD_COLLECTIONS_FAILURE`;
 export const SELECT_COLLECTION = `${PREFIX}/SELECT_COLLECTION`;
 export const SET_VIEW_MODE = `${PREFIX}/SET_VIEW_MODE`;
 export const SET_SEARCH_MODE = `${PREFIX}/SET_SEARCH_MODE`;
+export const APPLY_SEARCH_STATE = `${PREFIX}/APPLY_SEARCH_STATE`;
 
 // Facets
 export const TOGGLE_FACET = `${PREFIX}/TOGGLE_FACET`;
@@ -116,6 +117,25 @@ export const setViewMode = (mode) => ({
 export const setSearchMode = (mode) => ({
   type: SET_SEARCH_MODE,
   payload: mode, // 'simple' | 'advanced'
+});
+
+/**
+ * Replace the browse/search state in one step, e.g. when restoring it from a URL.
+ *
+ * @param {Object} searchState
+ * @param {string} searchState.collectionId
+ * @param {string} searchState.viewMode - 'browse' | 'search'
+ * @param {string} [searchState.searchMode] - 'simple' | 'advanced'; unchanged when omitted
+ * @param {string} [searchState.simpleQuery]
+ * @param {Object[]} [searchState.advancedRows]
+ * @param {Object} [searchState.facets]
+ * @param {{field: string, order: string}} searchState.sort
+ * @param {number} [searchState.page]
+ * @param {number} [searchState.pageSize]
+ */
+export const applySearchState = (searchState) => ({
+  type: APPLY_SEARCH_STATE,
+  payload: searchState,
 });
 
 // Facets

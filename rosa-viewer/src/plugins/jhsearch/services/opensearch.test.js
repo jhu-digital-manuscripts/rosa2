@@ -160,6 +160,25 @@ describe('opensearch service', () => {
       });
     });
 
+    it('should key boolean buckets by true and false', () => {
+      const parsed = parseSearchResults({
+        hits: { hits: [], total: { value: 0 } },
+        aggregations: {
+          has_transcription: {
+            buckets: [
+              { key: 0, key_as_string: 'false', doc_count: 243 },
+              { key: 1, key_as_string: 'true', doc_count: 7 },
+            ],
+          },
+        },
+      });
+
+      expect(parsed.aggregations.has_transcription).toEqual([
+        { key: false, count: 243 },
+        { key: true, count: 7 },
+      ]);
+    });
+
     it('should parse aggregations', () => {
       const parsed = parseSearchResults(mockSearchResponse);
 

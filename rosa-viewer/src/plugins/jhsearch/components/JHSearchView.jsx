@@ -3,7 +3,7 @@
  * This replaces Mirador's default WorkspaceAdd component.
  */
 
-import React, { useEffect, useCallback } from 'react';
+import React, { useEffect, useCallback, useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Box from '@mui/material/Box';
 import CircularProgress from '@mui/material/CircularProgress';
@@ -90,10 +90,15 @@ export function JHSearchView({ jhsearchConfig }) {
     initialize();
   }, [dispatch, jhsearchConfig]);
 
+  // Number of the latest search, so a slow response to an earlier search (e.g.
+  // after quickly going back and forward) does not replace newer results
+  const searchCounter = useRef(0);
+
   // Execute search when parameters change
   const executeSearch = useCallback(async () => {
     if (!isInitialized || !opensearchUrl || !selectedCollectionId) return;
 
+    const searchNumber = ++searchCounter.current;
     dispatch(searchRequest());
 
     try {
@@ -144,8 +149,10 @@ export function JHSearchView({ jhsearchConfig }) {
 
       const response = await searchFn(opensearchUrl, query);
       const results = parseSearchResults(response);
+      if (searchNumber !== searchCounter.current) return;
       dispatch(searchSuccess(results));
     } catch (error) {
+      if (searchNumber !== searchCounter.current) return;
       dispatch(searchFailure(error.message || 'Search failed'));
     }
   }, [

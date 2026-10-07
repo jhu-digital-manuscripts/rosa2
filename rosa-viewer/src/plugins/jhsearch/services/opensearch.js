@@ -262,6 +262,17 @@ function describePartialResults(response) {
 }
 
 /**
+ * The key of an aggregation bucket. Terms buckets on boolean fields are keyed 1
+ * and 0, which Opensearch will not accept back in a terms filter, so use true and
+ * false instead.
+ */
+function bucketKey(bucket) {
+  if (bucket.key_as_string === 'true') return true;
+  if (bucket.key_as_string === 'false') return false;
+  return bucket.key;
+}
+
+/**
  * Parse search results into a normalized format.
  *
  * @param {Object} response - Raw Opensearch response
@@ -290,7 +301,7 @@ export function parseSearchResults(response) {
     for (const [name, agg] of Object.entries(response.aggregations)) {
       if (agg.buckets) {
         aggregations[name] = agg.buckets.map((bucket) => ({
-          key: bucket.key,
+          key: bucketKey(bucket),
           count: bucket.doc_count,
         }));
       }

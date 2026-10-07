@@ -75,6 +75,9 @@ export const initialState = {
   pagination: {
     page: 0,
     pageSize: 20,
+    // Set once the page size is chosen by the user or restored from the URL, so
+    // the configured default no longer overrides it
+    pageSizeSelected: false,
     total: 0,
   },
 
@@ -117,13 +120,18 @@ export function jhsearchReducer(state = initialState, action) {
           loading: false,
           error: null,
         },
+        // Keep a collection and page size that were already chosen, e.g. restored
+        // from the URL before the search view was first shown, or chosen before it
+        // was hidden and shown again.
         ui: {
           ...state.ui,
-          selectedCollectionId: action.payload.collectionId,
+          selectedCollectionId: state.ui.selectedCollectionId || action.payload.collectionId,
         },
         pagination: {
           ...state.pagination,
-          pageSize: action.payload.pageSize || state.pagination.pageSize,
+          pageSize: state.pagination.pageSizeSelected
+            ? state.pagination.pageSize
+            : action.payload.pageSize || state.pagination.pageSize,
         },
       };
 
@@ -246,17 +254,47 @@ export function jhsearchReducer(state = initialState, action) {
         },
       };
 
+    case actions.APPLY_SEARCH_STATE: {
+      const p = action.payload;
+      return {
+        ...state,
+        ui: {
+          ...state.ui,
+          selectedCollectionId: p.collectionId || state.ui.selectedCollectionId,
+          viewMode: p.viewMode,
+          searchMode: p.searchMode || state.ui.searchMode,
+        },
+        facets: p.facets || {},
+        simpleSearch: {
+          query: p.simpleQuery || '',
+        },
+        advancedSearch: {
+          rows:
+            p.advancedRows && p.advancedRows.length > 0
+              ? p.advancedRows
+              : [{ field: '', value: '', operator: 'AND' }],
+        },
+        sort: p.sort || state.sort,
+        pagination: {
+          ...state.pagination,
+          page: p.page || 0,
+          ...(p.pageSize ? { pageSize: p.pageSize, pageSizeSelected: true } : {}),
+        },
+      };
+    }
+
     // Facets
     case actions.TOGGLE_FACET: {
       const { category, value } = action.payload;
       const currentValues = state.facets[category] || [];
-      const valueIndex = currentValues.indexOf(value);
+      // Values restored from a URL may be strings where bucket keys are numbers
+      const valueIndex = currentValues.findIndex((v) => String(v) === String(value));
 
       let newValues;
       if (valueIndex === -1) {
         newValues = [...currentValues, value];
       } else {
-        newValues = currentValues.filter((v) => v !== value);
+        newValues = currentValues.filter((_, i) => i !== valueIndex);
       }
 
       const newFacets = { ...state.facets };
@@ -400,6 +438,7 @@ export function jhsearchReducer(state = initialState, action) {
         pagination: {
           ...state.pagination,
           pageSize: action.payload,
+          pageSizeSelected: true,
           page: 0, // Reset to first page when page size changes
         },
       };
