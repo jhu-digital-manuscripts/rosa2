@@ -19,6 +19,8 @@ createSiteViewer({
     collectionId: 'aor',
     childCollectionIds: [],
     enableFacets: false,
+    // A book row opens the first page in single image view
+    bookClickView: 'single',
   },
   // Gabriel Harvey's marginalia across the head of a page in his copy of
   // Domenichi's Facetie (Folger H.a.2, fol. 12r), as on the old site's banner.

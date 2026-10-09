@@ -176,6 +176,7 @@ export const mockConfig = {
   thumbnailWidth: 200,
   logoBaseUrl: '/logo',
   enableFacets: true,
+  bookClickView: 'book',
   pageSize: 20,
   pageSizeOptions: [10, 20, 50, 100],
 };

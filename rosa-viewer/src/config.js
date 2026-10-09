@@ -16,6 +16,9 @@ export const defaultJHSearchConfig = {
   // Enable faceted browsing by default
   enableFacets: true,
 
+  // View opened when a book row is clicked: 'single', 'book' or 'gallery'
+  bookClickView: 'book',
+
   // Default page size for results
   pageSize: 20,
 

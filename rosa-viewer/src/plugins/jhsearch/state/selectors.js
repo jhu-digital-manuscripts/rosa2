@@ -114,6 +114,17 @@ export const getSearchMode = (state) => getUI(state).searchMode;
  */
 export const areFacetsEnabled = (state) => getConfig(state).enableFacets !== false;
 
+const BOOK_CLICK_VIEWS = ['single', 'book', 'gallery'];
+
+/**
+ * Get the Mirador view opened when a book result row is clicked.
+ * Falls back to 'book' when unset or not a known view.
+ */
+export const getBookClickView = (state) => {
+  const view = getConfig(state).bookClickView;
+  return BOOK_CLICK_VIEWS.includes(view) ? view : 'book';
+};
+
 /**
  * Get the available categories for faceting.
  */

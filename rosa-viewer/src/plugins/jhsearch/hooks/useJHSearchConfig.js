@@ -31,6 +31,7 @@ export function useJHSearchConfig() {
     thumbnailWidth: config.thumbnailWidth,
     logoBaseUrl: config.logoBaseUrl,
     enableFacets: config.enableFacets,
+    bookClickView: config.bookClickView,
     pageSize: config.pageSize,
     pageSizeOptions: config.pageSizeOptions,
 

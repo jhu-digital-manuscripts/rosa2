@@ -22,6 +22,7 @@ export const initialState = {
     thumbnailWidth: 80,
     logoBaseUrl: '/logo',
     enableFacets: true,
+    bookClickView: 'book',
     pageSize: 20,
     pageSizeOptions: [20, 30, 40, 50],
   },

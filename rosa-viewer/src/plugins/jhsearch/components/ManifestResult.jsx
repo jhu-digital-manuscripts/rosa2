@@ -7,6 +7,7 @@ import { useSelector } from 'react-redux';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardActionArea from '@mui/material/CardActionArea';
+import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
 import Avatar from '@mui/material/Avatar';
 import Chip from '@mui/material/Chip';
@@ -99,8 +100,11 @@ function HighlightedText({ html, fieldLabel }) {
 
 /**
  * ManifestResult displays a single manifest result.
+ *
+ * Clicking the row calls onClick(result). The thumbnails sit outside the row's
+ * action area so clicking one calls onThumbnailClick(result, pageNum) instead.
  */
-export function ManifestResult({ result, onClick }) {
+export function ManifestResult({ result, onClick, onThumbnailClick }) {
   const imageBaseUrl = useSelector(selectors.getImageBaseUrl);
   const thumbnailTemplate = useSelector(selectors.getThumbnailTemplate);
   const thumbnailWidth = useSelector(selectors.getThumbnailWidth);
@@ -125,8 +129,8 @@ export function ManifestResult({ result, onClick }) {
   const highlightEntries = Object.entries(highlight || {}).slice(0, 2);
 
   return (
-    <Card variant="outlined" sx={{ mb: 1 }}>
-      <CardActionArea onClick={() => onClick(result)} sx={{ p: 1.5 }}>
+    <Card variant="outlined" sx={{ mb: 1, display: 'flex' }}>
+      <CardActionArea onClick={() => onClick(result)} sx={{ p: 1.5, flex: 1, minWidth: 0 }}>
         <Box sx={{ display: 'flex', gap: 2 }}>
           {/* Logo */}
           {logoUrl && <Avatar src={logoUrl} alt="" sx={{ width: 32, height: 32, flexShrink: 0 }} />}
@@ -166,15 +170,24 @@ export function ManifestResult({ result, onClick }) {
               <HighlightedText key={field} html={fragments[0]} fieldLabel={field.split('.')[0]} />
             ))}
           </Box>
-
-          {/* Thumbnails */}
-          <Box sx={{ display: 'flex', gap: 0.5, flexShrink: 0 }}>
-            {thumbnailUrls.map((thumb, index) => (
-              <LazyThumbnail key={index} src={thumb.url} alt={`Page ${thumb.pageNum}`} />
-            ))}
-          </Box>
         </Box>
       </CardActionArea>
+
+      {/* Thumbnails, each opening its own page */}
+      {thumbnailUrls.length > 0 && (
+        <Box sx={{ display: 'flex', gap: 0.5, flexShrink: 0, p: 1.5, pl: 0 }}>
+          {thumbnailUrls.map((thumb, index) => (
+            <ButtonBase
+              key={index}
+              onClick={() => onThumbnailClick?.(result, thumb.pageNum)}
+              aria-label={`Open page ${thumb.pageNum + 1}`}
+              sx={{ alignSelf: 'flex-start', borderRadius: 1 }}
+            >
+              <LazyThumbnail src={thumb.url} alt={`Page ${thumb.pageNum}`} />
+            </ButtonBase>
+          ))}
+        </Box>
+      )}
     </Card>
   );
 }

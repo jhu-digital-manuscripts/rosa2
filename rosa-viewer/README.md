@@ -186,6 +186,10 @@ Mirador.viewer({
     
     // Optional: Enable faceted browsing (default: true)
     enableFacets: true,
+
+    // Optional: View opened by clicking a book result: 'single', 'book' or
+    // 'gallery' (default: 'book'). Thumbnails and page results open 'single'.
+    bookClickView: 'book',
     
     // Optional: Default results per page (default: 20)
     pageSize: 20,
@@ -208,6 +212,7 @@ Mirador.viewer({
 | `thumbnailWidth` | number | No | `80` | Thumbnail width in pixels |
 | `logoBaseUrl` | string | No | `'/logo'` | Base URL for collection and book logos |
 | `enableFacets` | boolean | No | `true` | Enable faceted browsing |
+| `bookClickView` | string | No | `'book'` | View opened by clicking a book result row: `'single'` or `'book'` at the start of the book, or `'gallery'`. Clicking a thumbnail in a book row, or a page result, always opens that page in single image view |
 | `pageSize` | number | No | `20` | Results per page |
 | `pageSizeOptions` | number[] | No | `[20,30,40,50]` | Available page size options |
 

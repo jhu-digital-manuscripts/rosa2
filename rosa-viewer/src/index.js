@@ -17,6 +17,8 @@ import { mergeConfig } from './config';
  * @param {number} [config.jhsearch.thumbnailWidth] - Thumbnail width in pixels
  * @param {string} [config.jhsearch.logoBaseUrl] - Base URL for collection logos
  * @param {boolean} [config.jhsearch.enableFacets] - Enable faceted browsing
+ * @param {string} [config.jhsearch.bookClickView] - View opened by clicking a book result:
+ *   'single', 'book' (default) or 'gallery'
  * @param {number} [config.jhsearch.pageSize] - Default results per page
  * @param {number[]} [config.jhsearch.pageSizeOptions] - Available page size options
  * @returns {Object} Mirador viewer instance

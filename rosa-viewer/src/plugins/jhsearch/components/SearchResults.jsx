@@ -101,40 +101,43 @@ export function SearchResults({ onRetry }) {
   const viewMode = useSelector(selectors.getViewMode);
   const iiifBaseUrl = useSelector(selectors.getIiifBaseUrl);
 
-  const handleManifestClick = (result) => {
-    const manifestUrl = buildManifestUrl(result.source.id, iiifBaseUrl);
+  const bookClickView = useSelector(selectors.getBookClickView);
 
-    // Use Mirador's addWindow action creator to properly open the manifest
-    dispatch(addWindow({ manifestId: manifestUrl }));
+  /**
+   * Open a book in a new Mirador window and hide the JHSearch view.
+   * Without a canvas Mirador starts at the first page of the book.
+   */
+  const openWindow = ({ manifestId, canvasId, view }) => {
+    dispatch(addWindow({ manifestId, view, ...(canvasId ? { canvasId } : {}) }));
 
-    // Hide the JHSearch view to show the page turner
     dispatch({
       type: 'mirador/SET_WORKSPACE_ADD_VISIBILITY',
       isWorkspaceAddVisible: false,
     });
   };
 
+  const handleManifestClick = (result) => {
+    openWindow({
+      manifestId: buildManifestUrl(result.source.id, iiifBaseUrl),
+      view: bookClickView,
+    });
+  };
+
+  const handleThumbnailClick = (result, pageNum) => {
+    const { id } = result.source;
+    openWindow({
+      manifestId: buildManifestUrl(id, iiifBaseUrl),
+      canvasId: buildCanvasUrl(id, pageNum, iiifBaseUrl),
+      view: 'single',
+    });
+  };
+
   const handleCanvasClick = (result) => {
     const { manifest_id, page_num } = result.source;
-    const manifestUrl = buildManifestUrl(manifest_id, iiifBaseUrl);
-    const canvasUrl = buildCanvasUrl(manifest_id, page_num, iiifBaseUrl);
-
-    // Debug logging
-    console.log('Canvas click:', {
-      manifest_id,
-      page_num,
-      manifestUrl,
-      canvasUrl,
-      iiifBaseUrl,
-    });
-
-    // Use Mirador's addWindow action creator to properly open the manifest at the specific canvas
-    dispatch(addWindow({ manifestId: manifestUrl, canvasId: canvasUrl }));
-
-    // Hide the JHSearch view to show the page turner
-    dispatch({
-      type: 'mirador/SET_WORKSPACE_ADD_VISIBILITY',
-      isWorkspaceAddVisible: false,
+    openWindow({
+      manifestId: buildManifestUrl(manifest_id, iiifBaseUrl),
+      canvasId: buildCanvasUrl(manifest_id, page_num, iiifBaseUrl),
+      view: 'single',
     });
   };
 
@@ -204,7 +207,12 @@ export function SearchResults({ onRetry }) {
               return isCanvas ? (
                 <CanvasResult key={result.id} result={result} onClick={handleCanvasClick} />
               ) : (
-                <ManifestResult key={result.id} result={result} onClick={handleManifestClick} />
+                <ManifestResult
+                  key={result.id}
+                  result={result}
+                  onClick={handleManifestClick}
+                  onThumbnailClick={handleThumbnailClick}
+                />
               );
             })}
           </Box>
