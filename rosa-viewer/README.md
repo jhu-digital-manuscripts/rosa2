@@ -36,7 +36,7 @@ Each site directory holds:
 - `index.html` – the page: branded header, the `#rosa-viewer` container and the
   `window.rosaSiteEnv` block with deployment-specific URLs
 - `main.js` – the site definition passed to `createSiteViewer()`: collection ids,
-  `enableFacets`, MUI theme and header banner. These are fixed for the site and
+  collection selector labels, `enableFacets`, MUI theme and header banner. These are fixed for the site and
   cannot be changed by environment variables.
 - `site.css` – colour variables layered over the shared `src/site/site.css`
 
@@ -167,6 +167,10 @@ Mirador.viewer({
     
     // Optional: Child collection IDs
     childCollectionIds: [],
+
+    // Optional: Collection selector labels by collection ID. A labelled
+    // collection is shown with the logo {logoBaseUrl}/{id}.jpg.
+    collectionLabels: { rose: 'Roman de la Rose Digital Library' },
     
     // Optional: IIIF Image API base URL
     imageBaseUrl: 'https://image.example.org/iiif',
@@ -198,10 +202,11 @@ Mirador.viewer({
 | `iiifBaseUrl` | string | Yes | - | Base URL for IIIF Presentation API |
 | `collectionId` | string | Yes | - | Top-level collection identifier |
 | `childCollectionIds` | string[] | No | `[]` | Child collection identifiers |
+| `collectionLabels` | object | No | - | Collection selector labels by collection id. A collection with a label is shown with the logo `{logoBaseUrl}/{id}.jpg`; others are shown by id with no logo |
 | `imageBaseUrl` | string | No | - | IIIF Image API base URL |
 | `thumbnailTemplate` | string | No | (see above) | URL template for thumbnails |
 | `thumbnailWidth` | number | No | `80` | Thumbnail width in pixels |
-| `logoBaseUrl` | string | No | `'/logo'` | Base URL for collection logos |
+| `logoBaseUrl` | string | No | `'/logo'` | Base URL for collection and book logos |
 | `enableFacets` | boolean | No | `true` | Enable faceted browsing |
 | `pageSize` | number | No | `20` | Results per page |
 | `pageSizeOptions` | number[] | No | `[20,30,40,50]` | Available page size options |

@@ -10,11 +10,28 @@ import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import Avatar from '@mui/material/Avatar';
+import Box from '@mui/material/Box';
 
 import * as selectors from '../state/selectors';
 import { selectCollection } from '../state/actions';
 import { buildLogoUrl } from '../utils/urlBuilder';
+
+const LOGO_SIZE = 28;
+
+/**
+ * Collection logo, scaled to fit a fixed square since the logo images differ in
+ * size and aspect ratio.
+ */
+function CollectionLogo({ src }) {
+  return (
+    <Box
+      component="img"
+      src={src}
+      alt=""
+      sx={{ width: LOGO_SIZE, height: LOGO_SIZE, objectFit: 'contain', flexShrink: 0 }}
+    />
+  );
+}
 
 /**
  * CollectionSelector allows users to choose which collection to browse.
@@ -47,18 +64,21 @@ export function CollectionSelector() {
         label="Collection"
         renderValue={(value) => {
           const selected = collections.find((c) => c.id === value);
-          return selected?.label || value;
+          return (
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+              {selected?.logo && <CollectionLogo src={buildLogoUrl(selected.logo, logoBaseUrl)} />}
+              <Box component="span" sx={{ overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                {selected?.label || value}
+              </Box>
+            </Box>
+          );
         }}
       >
         {collections.map((collection) => (
           <MenuItem key={collection.id} value={collection.id}>
             {collection.logo && (
               <ListItemIcon>
-                <Avatar
-                  src={buildLogoUrl(collection.logo, logoBaseUrl)}
-                  alt=""
-                  sx={{ width: 24, height: 24 }}
-                />
+                <CollectionLogo src={buildLogoUrl(collection.logo, logoBaseUrl)} />
               </ListItemIcon>
             )}
             <ListItemText primary={collection.label || collection.id} />

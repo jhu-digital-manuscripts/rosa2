@@ -25,6 +25,7 @@ import {
   searchFailure,
 } from '../state/actions';
 import { initializeJHSearch } from '../services/jhsearch';
+import { buildCollectionItems } from '../utils/collections';
 import { searchManifests, searchAll, parseSearchResults } from '../services/opensearch';
 import {
   buildBrowseQuery,
@@ -74,14 +75,7 @@ export function JHSearchView({ jhsearchConfig }) {
         dispatch(loadServiceSuccess(serviceConfig));
 
         // Build collection list from config
-        const collections = [
-          { id: jhsearchConfig.collectionId, label: jhsearchConfig.collectionId },
-          ...(jhsearchConfig.childCollectionIds || []).map((id) => ({
-            id,
-            label: id,
-          })),
-        ];
-        dispatch(loadCollectionsSuccess(collections));
+        dispatch(loadCollectionsSuccess(buildCollectionItems(jhsearchConfig)));
       } catch (error) {
         dispatch(loadServiceFailure(error.message || 'Failed to load search configuration'));
       }

@@ -10,6 +10,8 @@ import { mergeConfig } from './config';
  * @param {string} config.jhsearch.iiifBaseUrl - Base URL for IIIF Presentation API (required)
  * @param {string} config.jhsearch.collectionId - Top-level collection ID (required)
  * @param {string[]} [config.jhsearch.childCollectionIds] - Child collection IDs
+ * @param {Object<string, string>} [config.jhsearch.collectionLabels] - Collection selector
+ *   labels by collection ID; a labelled collection also shows the logo `{id}.jpg`
  * @param {string} [config.jhsearch.imageBaseUrl] - IIIF Image API base URL
  * @param {string} [config.jhsearch.thumbnailTemplate] - Thumbnail URL template
  * @param {number} [config.jhsearch.thumbnailWidth] - Thumbnail width in pixels

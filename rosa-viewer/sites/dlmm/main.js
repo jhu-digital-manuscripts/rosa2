@@ -18,6 +18,12 @@ createSiteViewer({
   jhsearch: {
     collectionId: 'dlmm',
     childCollectionIds: ['rose', 'pizan'],
+    // Shown in the collection selector, each with the logo public/logo/{id}.jpg
+    collectionLabels: {
+      dlmm: 'Digital Library of Medieval Manuscripts',
+      rose: 'Roman de la Rose Digital Library',
+      pizan: 'Christine de Pizan Digital Scriptorium',
+    },
   },
   // The floral bas-de-page border of the opening of the Roman de la Rose in
   // Bodleian MS. Douce 195, fol. 1r.
