@@ -10,6 +10,7 @@ import rosa.archive.core.FileSystemArchiveStore;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
+import rosa.archive.model.BookMetadata;
 import rosa.archive.model.CollectionMetadata;
 import rosa.archive.model.ImageList;
 import rosa.archive.model.Permission;
@@ -759,6 +760,63 @@ class IIIFPresentationGeneratorTest {
         // Should NOT have requiredStatement when no permission exists
         assertFalse(parsed.has("requiredStatement"),
                 "Manifest should not have requiredStatement when no permission exists");
+    }
+
+    @Test
+    void testManifestHasRightsWhenLicenseUrlSet() throws IOException {
+        BookCollection collection = createTestCollection("rose", "Roman de la Rose");
+        Book book = createTestBookWithImage("LudwigXV7", "LudwigXV7.001r.tif", 3000, 4000);
+
+        // Set license URL via BookMetadata
+        BookMetadata metadata = new BookMetadata();
+        metadata.setLicenseUrl("http://creativecommons.org/licenses/by/4.0/");
+        book.setBookMetadata(metadata);
+
+        ObjectNode manifest = generator.generateManifest(collection, book,
+                "http://example.org", "https://images.example.com", 2);
+
+        String json = writer.writeToString(manifest);
+        JsonNode parsed = mapper.readTree(json);
+
+        // Should have rights at manifest level
+        assertTrue(parsed.has("rights"), "Manifest should have rights property");
+        assertEquals("http://creativecommons.org/licenses/by/4.0/", parsed.get("rights").asText());
+
+        // License should NOT be in metadata
+        JsonNode metadataArray = parsed.get("metadata");
+        if (metadataArray != null) {
+            for (JsonNode entry : metadataArray) {
+                JsonNode labelNode = entry.get("label");
+                if (labelNode != null) {
+                    // Check all language keys for "License" label
+                    var fieldNames = labelNode.fieldNames();
+                    while (fieldNames.hasNext()) {
+                        String lang = fieldNames.next();
+                        JsonNode values = labelNode.get(lang);
+                        for (JsonNode val : values) {
+                            assertNotEquals("License", val.asText(), "License should not be in metadata");
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @Test
+    void testManifestOmitsRightsWhenNoLicenseUrl() throws IOException {
+        BookCollection collection = createTestCollection("rose", "Roman de la Rose");
+        Book book = createTestBookWithImage("LudwigXV7", "LudwigXV7.001r.tif", 3000, 4000);
+        // No license URL set
+
+        ObjectNode manifest = generator.generateManifest(collection, book,
+                "http://example.org", "https://images.example.com", 2);
+
+        String json = writer.writeToString(manifest);
+        JsonNode parsed = mapper.readTree(json);
+
+        // Should NOT have rights when no license URL exists
+        assertFalse(parsed.has("rights"),
+                "Manifest should not have rights when no license URL exists");
     }
 
     // --- Helper methods ---

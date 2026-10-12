@@ -410,6 +410,12 @@ public final class IIIFPresentationGenerator {
             node.set("requiredStatement", requiredStatement);
         }
 
+        // rights - license URL from metadata (IIIF 3.0: must be CC or RightsStatements.org URI)
+        String licenseUrl = book.getLicenseUrl();
+        if (licenseUrl != null && !licenseUrl.isEmpty()) {
+            node.put("rights", licenseUrl);
+        }
+
         // viewingDirection and behavior for multi-image books
         List<BookImage> images = book.getImages().getImages();
         if (images.size() > 1) {
@@ -1401,13 +1407,7 @@ public final class IIIFPresentationGenerator {
             }
         }
 
-        // License
-        String licenseUrl = book.getLicenseUrl();
-        if (licenseUrl != null && !licenseUrl.isEmpty()) {
-            addMetadataEntry(metadata, "License", licenseUrl, lang);
-        }
-
-        // Note: Attribution is now in requiredStatement, not metadata
+        // Note: License is now in rights property, Attribution is in requiredStatement
 
         return metadata;
     }
