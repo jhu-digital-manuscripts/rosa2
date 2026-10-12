@@ -33,6 +33,16 @@ Changing the shard count requires rebuilding the indexes, since
 `number_of_shards` is fixed at creation. Run `init-opensearch.sh`, which deletes
 and recreates both indexes before ingesting.
 
+### Replica count
+
+Both definitions also set `"number_of_replicas": 0`. Every environment (local-dev,
+stage, prod) runs a single data node, and a replica can never be placed on the
+same node as its primary. With the default of 1 replica, each index leaves one
+shard unassigned, so the cluster stays permanently yellow and health alarms
+carry no signal. If a domain is ever scaled to two or more data nodes, raise
+this setting to get redundancy. Unlike the shard count, `number_of_replicas` is
+dynamic and can be changed on a live index with `PUT /<index>/_settings`.
+
 ## Creating Indexes
 
 The definitions target Opensearch 3.x. Use the Opensearch REST API with the definition files:
@@ -157,7 +167,7 @@ Some annotation-type fields have both enumerated keyword values AND free text co
 
 Fields using this pattern: `mark`, `symbol`, `drawing`, `calculation`, `graph`, `table`.
 
-**Indexing:** The type/name value (e.g. `"plus_sign"` for a mark) is written to `field.keyword`. The referenced text is routed to the appropriate language sub-field (e.g. `mark.en`).
+**Indexing:** The type/name value (e.g. `"plus_sign"` for a mark) is written to `field.keyword` as an array of the distinct values on the page (e.g. `"drawing.keyword":["cone","pyramid"]`), so an exact match on any one of them finds the page. The referenced text is routed to the appropriate language sub-field (e.g. `mark.en`).
 
 **Searching:**
 - Search for a specific type: `mark.keyword: "plus_sign"`
@@ -277,7 +287,7 @@ Generated bulk files use the Opensearch Bulk API format — alternating action a
 
 ```json
 {"index":{"_index":"canvas","_id":"aor.Ha2.001r"}}
-{"id":"aor.Ha2.001r","manifest_id":"aor.Ha2","collection_id":["aor","top"],"label":"1r","page_num":0,"marginalia.la":"verbum","mark.keyword":"plus_sign",...}
+{"id":"aor.Ha2.001r","manifest_id":"aor.Ha2","collection_id":["aor","top"],"label":"1r","page_num":0,"marginalia.la":"verbum","mark.keyword":["plus_sign"],...}
 ```
 
 One bulk file is produced per collection, named `<collection-id>.bulk.json`.

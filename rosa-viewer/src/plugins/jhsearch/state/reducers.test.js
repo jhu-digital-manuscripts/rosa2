@@ -91,6 +91,23 @@ describe('jhsearchReducer', () => {
       expect(state.advancedSearch.rows[0].field).toBe('b');
     });
 
+    it('should handle SET_ADVANCED_ROWS', () => {
+      const rows = [
+        { field: 'drawing', value: 'pyramid', operator: 'AND' },
+        { field: 'mark', value: 'dagger', operator: 'OR' },
+      ];
+      const state = jhsearchReducer(undefined, actions.setAdvancedRows(rows));
+
+      expect(state.advancedSearch.rows).toEqual(rows);
+      expect(state.pagination.page).toBe(0);
+    });
+
+    it('should keep one empty row when SET_ADVANCED_ROWS is given none', () => {
+      const state = jhsearchReducer(undefined, actions.setAdvancedRows([]));
+
+      expect(state.advancedSearch.rows).toEqual([{ field: '', value: '', operator: 'AND' }]);
+    });
+
     it('should handle SET_ADVANCED_ROW', () => {
       const action = actions.setAdvancedRow(0, { field: 'label', value: 'test' });
       const state = jhsearchReducer(undefined, action);

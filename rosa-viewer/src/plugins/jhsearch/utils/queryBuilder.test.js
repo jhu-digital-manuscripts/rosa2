@@ -186,6 +186,77 @@ describe('queryBuilder', () => {
       expect(query.query.bool.must).toHaveLength(1);
       expect(query.query.bool.must[0].multi_match.fields).toEqual(['label']);
     });
+
+    describe('boolean operators', () => {
+      const mm = (field, value) => ({
+        multi_match: { query: value, fields: [field], type: 'best_fields' },
+      });
+      const build = (rows) =>
+        buildAdvancedSearchQuery({ rows, fieldDefinitions, collectionId: 'rose', categories }).query
+          .bool;
+      const filter = [{ terms: { collection_id: ['rose'] } }];
+
+      it('requires every row for AND', () => {
+        expect(
+          build([
+            { field: 'label', value: 'a', operator: 'AND' },
+            { field: 'origin', value: 'b', operator: 'AND' },
+          ])
+        ).toEqual({ must: [mm('label', 'a'), mm('origin', 'b')], filter });
+      });
+
+      it('matches either row for OR', () => {
+        expect(
+          build([
+            { field: 'label', value: 'a', operator: 'AND' },
+            { field: 'origin', value: 'b', operator: 'OR' },
+          ])
+        ).toEqual({
+          should: [mm('label', 'a'), mm('origin', 'b')],
+          minimum_should_match: 1,
+          filter,
+        });
+      });
+
+      it('ignores the operator on the first row', () => {
+        expect(build([{ field: 'label', value: 'a', operator: 'OR' }])).toEqual({
+          must: [mm('label', 'a')],
+          filter,
+        });
+      });
+
+      it('binds AND tighter than OR', () => {
+        // a AND b OR c AND d  ->  (a AND b) OR (c AND d)
+        expect(
+          build([
+            { field: 'label', value: 'a', operator: 'AND' },
+            { field: 'origin', value: 'b', operator: 'AND' },
+            { field: 'label', value: 'c', operator: 'OR' },
+            { field: 'origin', value: 'd', operator: 'AND' },
+          ])
+        ).toEqual({
+          should: [
+            { bool: { must: [mm('label', 'a'), mm('origin', 'b')] } },
+            { bool: { must: [mm('label', 'c'), mm('origin', 'd')] } },
+          ],
+          minimum_should_match: 1,
+          filter,
+        });
+
+        // a OR b AND c  ->  a OR (b AND c)
+        expect(
+          build([
+            { field: 'label', value: 'a', operator: 'AND' },
+            { field: 'origin', value: 'b', operator: 'OR' },
+            { field: 'label', value: 'c', operator: 'AND' },
+          ])
+        ).toEqual({
+          should: [mm('label', 'a'), { bool: { must: [mm('origin', 'b'), mm('label', 'c')] } }],
+          minimum_should_match: 1,
+          filter,
+        });
+      });
+    });
   });
 
   describe('buildSortClause', () => {

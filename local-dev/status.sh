@@ -79,9 +79,10 @@ if docker compose -f "$SCRIPT_DIR/docker-compose.yml" ps -q 2>/dev/null | grep -
                 status_ok "Cluster health: green"
                 ;;
             yellow)
-                # Expected on a single node: the index definitions do not override
-                # number_of_replicas, so the default replica stays unassigned.
-                status_ok "Cluster health: yellow (expected for a single-node cluster)"
+                # The index definitions set number_of_replicas to 0, so yellow means
+                # some index (often one created before that change, or auto-created
+                # by a bulk ingest) has a replica that cannot be assigned.
+                status_warn "Cluster health: yellow (unassigned replicas; recreate indexes with start.sh)"
                 ;;
             red)
                 status_error "Cluster health: red"

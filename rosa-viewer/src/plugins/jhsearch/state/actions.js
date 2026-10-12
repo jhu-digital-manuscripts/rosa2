@@ -37,6 +37,7 @@ export const CLEAR_FACETS = `${PREFIX}/CLEAR_FACETS`;
 // Search
 export const SET_SIMPLE_QUERY = `${PREFIX}/SET_SIMPLE_QUERY`;
 export const SET_ADVANCED_ROW = `${PREFIX}/SET_ADVANCED_ROW`;
+export const SET_ADVANCED_ROWS = `${PREFIX}/SET_ADVANCED_ROWS`;
 export const ADD_ADVANCED_ROW = `${PREFIX}/ADD_ADVANCED_ROW`;
 export const REMOVE_ADVANCED_ROW = `${PREFIX}/REMOVE_ADVANCED_ROW`;
 export const CLEAR_SEARCH = `${PREFIX}/CLEAR_SEARCH`;
@@ -157,6 +158,16 @@ export const setSimpleQuery = (query) => ({
 export const setAdvancedRow = (index, row) => ({
   type: SET_ADVANCED_ROW,
   payload: { index, row },
+});
+
+/**
+ * Replace all advanced search rows in one step, e.g. when the form is submitted.
+ *
+ * @param {Object[]} rows - Rows with field, value and operator
+ */
+export const setAdvancedRows = (rows) => ({
+  type: SET_ADVANCED_ROWS,
+  payload: rows,
 });
 
 export const addAdvancedRow = (row) => ({

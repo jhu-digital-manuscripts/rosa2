@@ -993,19 +993,22 @@ public final class OpensearchIngestGenerator {
     // ========== Utility methods ==========
 
     /**
-     * Appends a keyword value to the dot-notation keyword sub-field of a multi-field.
-     * Uses comma-separated values since Opensearch keyword fields support arrays.
+     * Adds a keyword value to the dot-notation keyword sub-field of a multi-field.
      * The dot notation {@code fieldName.keyword} maps to the keyword sub-field in the index.
+     *
+     * <p>Values are stored as an array of distinct values, in first-seen order. Each array
+     * element is indexed as its own term, so an exact match on any one value (e.g.
+     * {@code drawing.keyword: pyramid}) finds a page that has several drawings. Joining the
+     * values into one string would produce a single term that matches none of them.
      */
     private void appendKeywordSubField(ObjectNode doc, String fieldName, String value) {
         if (value == null || value.isBlank()) return;
         String key = fieldName + ".keyword";
-        if (doc.has(key)) {
-            String existing = doc.get(key).asText();
-            doc.put(key, existing + ", " + value);
-        } else {
-            doc.put(key, value);
+        ArrayNode array = doc.get(key) instanceof ArrayNode existing ? existing : doc.putArray(key);
+        for (JsonNode v : array) {
+            if (v.asText().equals(value)) return;
         }
+        array.add(value);
     }
 
     /**

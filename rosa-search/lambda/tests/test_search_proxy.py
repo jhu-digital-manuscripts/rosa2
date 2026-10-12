@@ -93,23 +93,21 @@ def advanced_search_query() -> dict:
     return {
         "query": {
             "bool": {
-                "must": [
+                "should": [
                     {
                         "multi_match": {
                             "query": "astronomia",
                             "fields": ["marginalia.*"],
                             "type": "best_fields",
                         }
-                    }
-                ],
-                "should": [
+                    },
                     {
                         "multi_match": {
                             "query": "plus_sign",
                             "fields": ["mark.*"],
                             "type": "best_fields",
                         }
-                    }
+                    },
                 ],
                 "minimum_should_match": 1,
                 "filter": [{"terms": {"collection_id": ["aor"]}}],
@@ -151,6 +149,17 @@ class AcceptsViewerQueries(unittest.TestCase):
 
     def test_advanced_search(self):
         self.assertIn("query", validate(advanced_search_query()))
+
+    def test_advanced_search_and_within_or(self):
+        # (marginalia AND drawing) OR mark, as built for rows "a AND b OR c"
+        body = advanced_search_query()
+        should = body["query"]["bool"]["should"]
+        drawing = {
+            "multi_match": {"query": "pyramid", "fields": ["drawing.*"], "type": "best_fields"}
+        }
+        should[0] = {"bool": {"must": [should[0], drawing]}}
+        body["highlight"]["fields"]["drawing.*"] = {}
+        self.assertIn("query", validate(body))
 
     def test_collection_aggregation(self):
         self.assertIn("aggs", validate(collection_aggregation_query()))

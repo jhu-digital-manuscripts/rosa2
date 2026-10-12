@@ -19,7 +19,7 @@ import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import SearchIcon from '@mui/icons-material/Search';
 
 import * as selectors from '../state/selectors';
-import { setAdvancedRow, addAdvancedRow, removeAdvancedRow, setViewMode } from '../state/actions';
+import { setAdvancedRows, setViewMode } from '../state/actions';
 
 /**
  * Single row in the advanced search form.
@@ -169,20 +169,10 @@ export function AdvancedSearch() {
   };
 
   const handleSearch = () => {
-    // Commit local state to Redux
-    localRows.forEach((row, index) => {
-      dispatch(setAdvancedRow(index, row));
-    });
-
-    // Handle removed rows - if local has fewer rows than redux
-    while (reduxRows.length > localRows.length) {
-      dispatch(removeAdvancedRow(localRows.length));
-    }
-
-    // Handle added rows - if local has more rows than redux
-    for (let i = reduxRows.length; i < localRows.length; i++) {
-      dispatch(addAdvancedRow(localRows[i]));
-    }
+    // Commit local state to Redux in one step. Syncing row by row against the
+    // rows captured at render time duplicated added rows (SET_ADVANCED_ROW past
+    // the end appends, then ADD_ADVANCED_ROW appended again).
+    dispatch(setAdvancedRows(localRows));
 
     // Check if any row has a value and set view mode
     const hasValue = localRows.some((row) => row.value && row.value.trim());

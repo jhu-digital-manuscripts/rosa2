@@ -361,6 +361,22 @@ export function jhsearchReducer(state = initialState, action) {
       };
     }
 
+    case actions.SET_ADVANCED_ROWS:
+      return {
+        ...state,
+        advancedSearch: {
+          ...state.advancedSearch,
+          rows:
+            action.payload && action.payload.length > 0
+              ? action.payload.map((row) => ({ ...row }))
+              : [{ field: '', value: '', operator: 'AND' }],
+        },
+        pagination: {
+          ...state.pagination,
+          page: 0,
+        },
+      };
+
     case actions.ADD_ADVANCED_ROW:
       return {
         ...state,

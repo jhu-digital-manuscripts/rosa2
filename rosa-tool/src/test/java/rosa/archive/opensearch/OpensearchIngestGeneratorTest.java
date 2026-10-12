@@ -335,7 +335,7 @@ class OpensearchIngestGeneratorTest {
             ap.setMarks(List.of(new Mark("mark1", "[hello]", "plus_sign", "pen", "la", Location.HEAD)));
 
             ObjectNode doc = generateCanvas();
-            assertEquals("plus_sign", doc.get("mark.keyword").asText());
+            assertEquals(List.of("plus_sign"), jsonArrayToList(doc.get("mark.keyword")));
         }
 
         @Test
@@ -411,7 +411,7 @@ class OpensearchIngestGeneratorTest {
 
             ObjectNode doc = generateCanvas();
             assertEquals("noted passage", doc.get("symbol.la").asText());
-            assertEquals("SS", doc.get("symbol.keyword").asText());
+            assertEquals(List.of("SS"), jsonArrayToList(doc.get("symbol.keyword")));
             List<String> symbols = jsonArrayToList(doc.get("symbols"));
             assertTrue(symbols.contains("SS"));
         }
@@ -459,7 +459,22 @@ class OpensearchIngestGeneratorTest {
             ap.setDrawings(List.of(drawing));
 
             ObjectNode doc = generateCanvas();
-            assertEquals("manicule", doc.get("drawing.keyword").asText());
+            assertEquals(List.of("manicule"), jsonArrayToList(doc.get("drawing.keyword")));
+        }
+
+        @Test
+        void storesEachDrawingTypeAsSeparateKeywordValue() {
+            AnnotatedPage ap = setUpAnnotatedPage("Harvey");
+            ap.setDrawings(List.of(
+                    new Drawing("draw1", null, Location.HEAD, "florilegium", null, "en"),
+                    new Drawing("draw2", null, Location.HEAD, "cone", null, "en"),
+                    new Drawing("draw3", null, Location.HEAD, "florilegium", null, "en"),
+                    new Drawing("draw4", null, Location.INTEXT, "pyramid", "pen", "la")));
+
+            ObjectNode doc = generateCanvas();
+            // One array element per distinct type, so an exact term query for any one matches
+            assertEquals(List.of("florilegium", "cone", "pyramid"),
+                    jsonArrayToList(doc.get("drawing.keyword")));
         }
     }
 
@@ -476,7 +491,7 @@ class OpensearchIngestGeneratorTest {
             ap.setCalculations(List.of(calc));
 
             ObjectNode doc = generateCanvas();
-            assertEquals("arithmetic", doc.get("calculation.keyword").asText());
+            assertEquals(List.of("arithmetic"), jsonArrayToList(doc.get("calculation.keyword")));
             List<String> methods = jsonArrayToList(doc.get("method"));
             assertTrue(methods.contains("pen"));
             String text = doc.get("calculation.en").asText();
@@ -1123,12 +1138,7 @@ class OpensearchIngestGeneratorTest {
 
             ObjectNode doc = generateCanvas();
 
-            if (doc.has("mark.keyword")) {
-                String kw = doc.get("mark.keyword").asText();
-                assertFalse(kw.contains("\n"), "keyword should not contain newlines: [" + kw + "]");
-                assertFalse(kw.contains("  "), "keyword should not contain repeated spaces: [" + kw + "]");
-                assertEquals(kw.trim(), kw, "keyword should be trimmed");
-            }
+            assertEquals(List.of("bracket type"), jsonArrayToList(doc.get("mark.keyword")));
 
             // Annotator array values should also be normalized
             List<String> annotators = jsonArrayToList(doc.get("annotator"));

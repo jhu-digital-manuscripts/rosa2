@@ -294,18 +294,19 @@ export function buildAdvancedSearchQuery({
     return buildBrowseQuery({ collectionId, facets, page, pageSize, categories });
   }
 
-  // Combine clauses: first clause is always required, subsequent use their operator
-  const must = [];
-  const should = [];
+  // Combine clauses with AND binding tighter than OR: an OR row starts a new group,
+  // the rows in a group are ANDed, and the groups are ORed. So `a AND b OR c` is
+  // `(a AND b) OR c`. The first row's operator is ignored.
+  const groups = [];
   const allSearchFields = [];
 
   clauses.forEach((item, index) => {
     allSearchFields.push(...item.searchFields);
 
-    if (index === 0 || item.operator === 'AND') {
-      must.push(item.clause);
+    if (index === 0 || item.operator === 'OR') {
+      groups.push([item.clause]);
     } else {
-      should.push(item.clause);
+      groups[groups.length - 1].push(item.clause);
     }
   });
 
@@ -314,15 +315,16 @@ export function buildAdvancedSearchQuery({
     ...buildFacetFilters(facets, categories),
   ];
 
-  const boolQuery = {
-    must,
-    filter: filters,
-  };
-
-  if (should.length > 0) {
-    boolQuery.should = should;
-    boolQuery.minimum_should_match = 1;
-  }
+  const boolQuery =
+    groups.length === 1
+      ? { must: groups[0], filter: filters }
+      : {
+          should: groups.map((group) =>
+            group.length === 1 ? group[0] : { bool: { must: group } }
+          ),
+          minimum_should_match: 1,
+          filter: filters,
+        };
 
   const body = {
     query: {

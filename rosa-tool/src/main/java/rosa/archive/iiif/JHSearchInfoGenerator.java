@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
+import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -26,6 +27,11 @@ import java.util.Map;
 public final class JHSearchInfoGenerator {
 
     private final ObjectMapper mapper;
+
+    // Order of enumerated field values: by label ignoring case, then by value for determinism
+    private static final Comparator<Map.Entry<String, String>> VALUE_ORDER =
+            Comparator.comparing((Map.Entry<String, String> e) -> e.getValue(), String.CASE_INSENSITIVE_ORDER)
+                    .thenComparing(Map.Entry::getKey);
 
     // Per-collection search fields (using opensearch field names from the canvas index)
     private static final Map<String, List<String>> SEARCH_FIELDS = Map.of(
@@ -87,8 +93,12 @@ public final class JHSearchInfoGenerator {
                 }
 
                 if (meta.values != null && !meta.values.isEmpty()) {
+                    // Emit values sorted alphabetically by label so dropdowns read in order
                     ArrayNode valuesArray = mapper.createArrayNode();
-                    for (Map.Entry<String, String> entry : meta.values.entrySet()) {
+                    List<Map.Entry<String, String>> sortedValues = meta.values.entrySet().stream()
+                            .sorted(VALUE_ORDER)
+                            .toList();
+                    for (Map.Entry<String, String> entry : sortedValues) {
                         ObjectNode valueNode = mapper.createObjectNode();
                         valueNode.put("value", entry.getKey());
                         valueNode.put("label", entry.getValue());

@@ -92,7 +92,7 @@ The `service/jhsearch.json` file is a static JSON file generated per collection.
 | `fields` | Array of searchable fields. Each has `name`, `label`, `description`, optional `has_subfields` boolean, and optional `values` (enumerated values). |
 | `fields[].name` | The Opensearch field name. |
 | `fields[].has_subfields` | Boolean indicating whether the field has language sub-fields (e.g., `.en`, `.fr`, `.la`) and/or a `.keyword` sub-field. When true, use `name.*` wildcard in multi_match queries. |
-| `fields[].values` | Array of `{value, label}` pairs for fields with enumerated keyword values (searched via `field.keyword`). |
+| `fields[].values` | Array of `{value, label}` pairs for fields with enumerated keyword values (searched via `field.keyword`), sorted alphabetically by label. |
 | `categories` | Array of facet categories. Each `name` is an Opensearch keyword field suitable for `terms` aggregations. |
 | `default-fields` | Array of field names searched when no explicit field is specified in the query. |
 | `opensearch` | The Opensearch `_search` endpoint URL that clients can query directly. |
