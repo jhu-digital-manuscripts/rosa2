@@ -12,6 +12,7 @@ import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.CollectionMetadata;
 import rosa.archive.model.ImageList;
+import rosa.archive.model.Permission;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -702,6 +703,62 @@ class IIIFPresentationGeneratorTest {
                 .get("body").get("service").get(0);
         assertEquals("https://images.example.com/rose%2FLudwigXV7%2FLudwigXV7.001r",
                 canvasService.get("id").asText());
+    }
+
+    @Test
+    void testManifestHasRequiredStatementForAttribution() throws IOException {
+        BookCollection collection = createTestCollection("rose", "Roman de la Rose");
+        Book book = createTestBookWithImage("LudwigXV7", "LudwigXV7.001r.tif", 3000, 4000);
+
+        // Add a permission/attribution
+        Permission permission = new Permission();
+        permission.setPermission("© Bodleian Library, University of Oxford");
+        book.addPermission(permission, "en");
+
+        ObjectNode manifest = generator.generateManifest(collection, book,
+                "http://example.org", "https://images.example.com", 2);
+
+        String json = writer.writeToString(manifest);
+        JsonNode parsed = mapper.readTree(json);
+
+        // Should have requiredStatement at manifest level
+        assertTrue(parsed.has("requiredStatement"), "Manifest should have requiredStatement");
+        JsonNode requiredStatement = parsed.get("requiredStatement");
+
+        // Label should be "Attribution" with language "en"
+        assertTrue(requiredStatement.has("label"), "requiredStatement should have label");
+        assertEquals("Attribution", requiredStatement.get("label").get("en").get(0).asText());
+
+        // Value should be the permission text with language "en"
+        assertTrue(requiredStatement.has("value"), "requiredStatement should have value");
+        assertEquals("© Bodleian Library, University of Oxford",
+                requiredStatement.get("value").get("en").get(0).asText());
+
+        // Attribution should NOT be in metadata
+        JsonNode metadata = parsed.get("metadata");
+        if (metadata != null) {
+            for (JsonNode entry : metadata) {
+                String label = entry.get("label").get("none").get(0).asText();
+                assertNotEquals("Attribution", label, "Attribution should not be in metadata");
+            }
+        }
+    }
+
+    @Test
+    void testManifestOmitsRequiredStatementWhenNoPermission() throws IOException {
+        BookCollection collection = createTestCollection("rose", "Roman de la Rose");
+        Book book = createTestBookWithImage("LudwigXV7", "LudwigXV7.001r.tif", 3000, 4000);
+        // No permission set
+
+        ObjectNode manifest = generator.generateManifest(collection, book,
+                "http://example.org", "https://images.example.com", 2);
+
+        String json = writer.writeToString(manifest);
+        JsonNode parsed = mapper.readTree(json);
+
+        // Should NOT have requiredStatement when no permission exists
+        assertFalse(parsed.has("requiredStatement"),
+                "Manifest should not have requiredStatement when no permission exists");
     }
 
     // --- Helper methods ---

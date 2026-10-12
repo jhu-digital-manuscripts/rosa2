@@ -38,6 +38,7 @@ The top-level `collection.json` lists all sub-collections. Each sub-collection `
 
 One manifest per book. Contains:
 - **Metadata** — title, repository, shelfmark, date, dimensions, authors, readers, license, etc.
+- **requiredStatement** — attribution text from `{book-id}.permission_{lang}.html`, displayed per IIIF 3.0 spec as a statement that must be shown when the resource is displayed
 - **Items** — array of Canvases, one per page image
 - **Structures** — Ranges grouping Canvases by image location, text segments, and illustrations
 - **Thumbnail** — reference to the first canvas image

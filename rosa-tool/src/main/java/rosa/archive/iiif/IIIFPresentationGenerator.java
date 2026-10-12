@@ -395,6 +395,21 @@ public final class IIIFPresentationGenerator {
             node.set("metadata", metadataArray);
         }
 
+        // requiredStatement for attribution/permission (prefer English)
+        Permission permission = book.getPermission("en");
+        if (permission == null) {
+            Permission[] perms = book.getPermissionsInAllLanguages();
+            if (perms != null && perms.length > 0) {
+                permission = perms[0];
+            }
+        }
+        if (permission != null && permission.getPermission() != null && !permission.getPermission().isEmpty()) {
+            ObjectNode requiredStatement = mapper.createObjectNode();
+            requiredStatement.set("label", languageMap("en", "Attribution"));
+            requiredStatement.set("value", languageMap("en", permission.getPermission()));
+            node.set("requiredStatement", requiredStatement);
+        }
+
         // viewingDirection and behavior for multi-image books
         List<BookImage> images = book.getImages().getImages();
         if (images.size() > 1) {
@@ -1392,17 +1407,7 @@ public final class IIIFPresentationGenerator {
             addMetadataEntry(metadata, "License", licenseUrl, lang);
         }
 
-        // Attribution/Permission
-        Permission permission = book.getPermission(lang);
-        if (permission == null) {
-            Permission[] perms = book.getPermissionsInAllLanguages();
-            if (perms != null && perms.length > 0) {
-                permission = perms[0];
-            }
-        }
-        if (permission != null && permission.getPermission() != null && !permission.getPermission().isEmpty()) {
-            addMetadataEntry(metadata, "Attribution", permission.getPermission(), lang);
-        }
+        // Note: Attribution is now in requiredStatement, not metadata
 
         return metadata;
     }
