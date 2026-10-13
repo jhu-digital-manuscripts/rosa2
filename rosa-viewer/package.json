@@ -17,6 +17,7 @@
     "format:check": "prettier --check \"{src,sites,scripts}/**/*.{js,jsx,mjs,json,css,html}\""
   },
   "dependencies": {
+    "dompurify": "3.4.13",
     "mirador": "^4.1.0"
   },
   "devDependencies": {

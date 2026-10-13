@@ -32,26 +32,6 @@ import rosa.archive.model.ObjectRef;
 import rosa.archive.model.Permission;
 import rosa.archive.model.Transcription;
 import rosa.archive.model.aor.AnnotatedPage;
-import rosa.archive.model.aor.AnnotationLink;
-import rosa.archive.model.aor.Calculation;
-import rosa.archive.model.aor.Drawing;
-import rosa.archive.model.aor.Errata;
-import rosa.archive.model.aor.Graph;
-import rosa.archive.model.aor.GraphNode;
-import rosa.archive.model.aor.GraphNote;
-import rosa.archive.model.aor.GraphText;
-import rosa.archive.model.aor.Marginalia;
-import rosa.archive.model.aor.MarginaliaLanguage;
-import rosa.archive.model.aor.Mark;
-import rosa.archive.model.aor.Numeral;
-import rosa.archive.model.aor.PhysicalLink;
-import rosa.archive.model.aor.Position;
-import rosa.archive.model.aor.Symbol;
-import rosa.archive.model.aor.Table;
-import rosa.archive.model.aor.TableCell;
-import rosa.archive.model.aor.TableHeader;
-import rosa.archive.model.aor.TextEl;
-import rosa.archive.model.aor.Underline;
 
 /**
  * Generates IIIF Presentation API 3.0 static JSON files from archive data.
@@ -65,6 +45,13 @@ public final class IIIFPresentationGenerator {
 
     private final IIIFJsonWriter writer;
     private final ObjectMapper mapper;
+
+    /** URL template for the annotation stylesheet, or null for none. */
+    private String annotationStylesheetUrl;
+
+    /** Cached transcription conversion for the most recent book. */
+    private String cachedTranscriptionKey;
+    private Map<String, List<TeiTranscriptionHtml.Column>> cachedTranscriptionPages = Map.of();
 
     /**
      * Creates a new generator with the given JSON writer.
@@ -613,404 +600,55 @@ public final class IIIFPresentationGenerator {
         String bookId = book.getId();
         String canvasId = buildId(baseUrl, collectionId + "/" + bookId + "/canvas/" + index);
         String annotationPageId = buildId(baseUrl, collectionId + "/" + bookId + "/canvas/" + index + "/annotations");
-
-        ArrayNode items = mapper.createArrayNode();
-        int annotationCounter = 0;
-
-        // 1. AoR annotations
+        String stylesheet = resolveAnnotationStylesheet(collection);
+        String collectionLang = AnnotationHtml.normalizeLanguage(getCollectionLanguage(collection));
         String imageId = image.getId();
+
+        List<AnnotationItem> content = new ArrayList<>();
+
+        // 1. AoR annotations, page header first then grouped by place
         AnnotatedPage annotatedPage = findAnnotatedPage(book, imageId);
         if (annotatedPage != null) {
-            // Marginalia
-            for (Marginalia marginalia : annotatedPage.getMarginalia()) {
-                for (MarginaliaLanguage margLang : marginalia.getLanguages()) {
-                    String lang = margLang.getLang() != null ? margLang.getLang() : "en";
-                    StringBuilder html = new StringBuilder();
-                    html.append("<p>");
-                    for (Position pos : margLang.getPositions()) {
-                        for (String text : pos.getTexts()) {
-                            if (!text.isEmpty()) {
-                                html.append(escapeHtml(text)).append(" ");
-                            }
-                        }
-                    }
-                    html.append("</p>");
-
-                    // People, books, locations
-                    List<String> allPeople = new ArrayList<>();
-                    List<String> allBooks = new ArrayList<>();
-                    List<String> allLocations = new ArrayList<>();
-                    for (Position pos : margLang.getPositions()) {
-                        allPeople.addAll(pos.getPeople());
-                        allBooks.addAll(pos.getBooks());
-                        allLocations.addAll(pos.getLocations());
-                    }
-                    if (!allPeople.isEmpty()) {
-                        html.append("<p>People: ");
-                        html.append(String.join(", ", allPeople));
-                        html.append("</p>");
-                    }
-                    if (!allBooks.isEmpty()) {
-                        html.append("<p>Books: ");
-                        html.append(String.join(", ", allBooks));
-                        html.append("</p>");
-                    }
-                    if (!allLocations.isEmpty()) {
-                        html.append("<p>Locations: ");
-                        html.append(String.join(", ", allLocations));
-                        html.append("</p>");
-                    }
-
-                    String body = html.toString().trim();
-                    if (!body.equals("<p></p>") && !body.equals("<p> </p>")) {
-                        ObjectNode annotation = createTextAnnotation(
-                                annotationPageId + "/annotation/" + annotationCounter++,
-                                body, "text/html", lang, canvasId);
-                        items.add(annotation);
-                    }
-                }
-            }
-
-            // Underlines
-            for (Underline underline : annotatedPage.getUnderlines()) {
-                String text = underline.getReferencedText();
-                if (text != null && !text.isEmpty()) {
-                    String lang = underline.getLanguage() != null ? underline.getLanguage() : "en";
-                    ObjectNode annotation = createTextAnnotation(
-                            annotationPageId + "/annotation/" + annotationCounter++,
-                            text, "text/plain", lang, canvasId);
-                    items.add(annotation);
-                }
-            }
-
-            // Marks
-            for (Mark mark : annotatedPage.getMarks()) {
-                String name = mark.getName() != null ? mark.getName() : "";
-                String refText = mark.getReferencedText() != null ? mark.getReferencedText() : "";
-                String body = name + (!refText.isEmpty() ? ": " + refText : "");
-                if (!body.isEmpty()) {
-                    String lang = mark.getLanguage() != null ? mark.getLanguage() : "en";
-                    ObjectNode annotation = createTextAnnotation(
-                            annotationPageId + "/annotation/" + annotationCounter++,
-                            body, "text/plain", lang, canvasId);
-                    items.add(annotation);
-                }
-            }
-
-            // Symbols
-            for (Symbol symbol : annotatedPage.getSymbols()) {
-                String name = symbol.getName() != null ? symbol.getName() : "";
-                String refText = symbol.getReferencedText() != null ? symbol.getReferencedText() : "";
-                String body = name + (!refText.isEmpty() ? ": " + refText : "");
-                if (!body.isEmpty()) {
-                    String lang = symbol.getLanguage() != null ? symbol.getLanguage() : "en";
-                    ObjectNode annotation = createTextAnnotation(
-                            annotationPageId + "/annotation/" + annotationCounter++,
-                            body, "text/plain", lang, canvasId);
-                    items.add(annotation);
-                }
-            }
-
-            // Numerals
-            for (Numeral numeral : annotatedPage.getNumerals()) {
-                String numValue = numeral.getNumeral() != null ? numeral.getNumeral() : "";
-                String refText = numeral.getReferencedText() != null ? numeral.getReferencedText() : "";
-                String body = numValue + (!refText.isEmpty() ? ": " + refText : "");
-                if (!body.isEmpty()) {
-                    String lang = numeral.getLanguage() != null ? numeral.getLanguage() : "en";
-                    ObjectNode annotation = createTextAnnotation(
-                            annotationPageId + "/annotation/" + annotationCounter++,
-                            body, "text/plain", lang, canvasId);
-                    items.add(annotation);
-                }
-            }
-
-            // Errata
-            for (Errata errata : annotatedPage.getErrata()) {
-                String copyText = errata.getReferencedText() != null ? errata.getReferencedText() : "";
-                String amended = errata.getAmendedText() != null ? errata.getAmendedText() : "";
-                String body = "";
-                if (!copyText.isEmpty() && !amended.isEmpty()) {
-                    body = copyText + " → " + amended;
-                } else if (!copyText.isEmpty()) {
-                    body = copyText;
-                } else if (!amended.isEmpty()) {
-                    body = amended;
-                }
-                if (!body.isEmpty()) {
-                    String lang = errata.getLanguage() != null ? errata.getLanguage() : "en";
-                    ObjectNode annotation = createTextAnnotation(
-                            annotationPageId + "/annotation/" + annotationCounter++,
-                            body, "text/plain", lang, canvasId);
-                    items.add(annotation);
-                }
-            }
-
-            // Drawings
-            for (Drawing drawing : annotatedPage.getDrawings()) {
-                StringBuilder html = new StringBuilder();
-                String drawType = drawing.getType() != null ? drawing.getType() : "Drawing";
-                html.append("<p><b>").append(escapeHtml(drawType)).append("</b></p>");
-
-                if (drawing.getReferencedText() != null && !drawing.getReferencedText().isEmpty()) {
-                    html.append("<p>").append(escapeHtml(drawing.getReferencedText())).append("</p>");
-                }
-                for (TextEl textEl : drawing.getTexts()) {
-                    if (textEl.text() != null && !textEl.text().isEmpty()) {
-                        html.append("<p>").append(escapeHtml(textEl.text())).append("</p>");
-                    }
-                }
-                if (!drawing.getPeople().isEmpty()) {
-                    html.append("<p>People: ").append(String.join(", ", drawing.getPeople())).append("</p>");
-                }
-                if (!drawing.getBooks().isEmpty()) {
-                    html.append("<p>Books: ").append(String.join(", ", drawing.getBooks())).append("</p>");
-                }
-                if (!drawing.getLocations().isEmpty()) {
-                    html.append("<p>Locations: ").append(String.join(", ", drawing.getLocations())).append("</p>");
-                }
-                if (!drawing.getSymbols().isEmpty()) {
-                    html.append("<p>Symbols: ").append(String.join(", ", drawing.getSymbols())).append("</p>");
-                }
-                if (drawing.getTranslation() != null && !drawing.getTranslation().isEmpty()) {
-                    html.append("<p>Translation: ").append(escapeHtml(drawing.getTranslation())).append("</p>");
-                }
-
-                String lang = drawing.getLanguage() != null ? drawing.getLanguage() : "en";
-                ObjectNode annotation = createTextAnnotation(
-                        annotationPageId + "/annotation/" + annotationCounter++,
-                        html.toString(), "text/html", lang, canvasId);
-                items.add(annotation);
-            }
-
-            // Graphs
-            for (Graph graph : annotatedPage.getGraphs()) {
-                StringBuilder html = new StringBuilder();
-                String graphType = graph.getType() != null ? graph.getType() : "Graph";
-                html.append("<p><b>").append(escapeHtml(graphType)).append("</b></p>");
-
-                // Nodes
-                for (GraphNode node : graph.getNodes()) {
-                    StringBuilder nodeHtml = new StringBuilder();
-                    if (node.text() != null && !node.text().isEmpty()) {
-                        nodeHtml.append(escapeHtml(node.text()));
-                    }
-                    if (node.person() != null && !node.person().isEmpty()) {
-                        if (!nodeHtml.isEmpty()) nodeHtml.append(" - ");
-                        nodeHtml.append(escapeHtml(node.person()));
-                    }
-                    if (node.content() != null && !node.content().isEmpty()) {
-                        if (!nodeHtml.isEmpty()) nodeHtml.append(": ");
-                        nodeHtml.append(escapeHtml(node.content()));
-                    }
-                    if (!nodeHtml.isEmpty()) {
-                        html.append("<p>").append(nodeHtml).append("</p>");
-                    }
-                }
-
-                // Graph texts
-                for (GraphText graphText : graph.getGraphTexts()) {
-                    for (GraphNote note : graphText.getNotes()) {
-                        if (note.content() != null && !note.content().isEmpty()) {
-                            html.append("<p>").append(escapeHtml(note.content())).append("</p>");
-                        }
-                    }
-                    if (!graphText.getPeople().isEmpty()) {
-                        html.append("<p>People: ").append(String.join(", ", graphText.getPeople())).append("</p>");
-                    }
-                    if (!graphText.getBooks().isEmpty()) {
-                        html.append("<p>Books: ").append(String.join(", ", graphText.getBooks())).append("</p>");
-                    }
-                    if (!graphText.getLocations().isEmpty()) {
-                        html.append("<p>Locations: ").append(String.join(", ", graphText.getLocations())).append("</p>");
-                    }
-                    if (!graphText.getTranslations().isEmpty()) {
-                        html.append("<p>Translation: ").append(String.join("; ", graphText.getTranslations())).append("</p>");
-                    }
-                }
-
-                String lang = graph.getLanguage() != null ? graph.getLanguage() : "en";
-                ObjectNode annotation = createTextAnnotation(
-                        annotationPageId + "/annotation/" + annotationCounter++,
-                        html.toString(), "text/html", lang, canvasId);
-                items.add(annotation);
-            }
-
-            // Tables
-            for (Table table : annotatedPage.getTables()) {
-                StringBuilder html = new StringBuilder();
-                String tableType = table.getType() != null ? table.getType() : "Table";
-                html.append("<p><b>").append(escapeHtml(tableType)).append("</b></p>");
-
-                // Headers
-                for (TableHeader header : table.getColHeaders()) {
-                    if (header.content() != null && !header.content().isEmpty()) {
-                        html.append("<p>").append(escapeHtml(header.content())).append("</p>");
-                    }
-                }
-
-                // Cells
-                for (TableCell cell : table.getCells()) {
-                    if (cell.content() != null && !cell.content().isEmpty()) {
-                        html.append("<p>").append(escapeHtml(cell.content())).append("</p>");
-                    }
-                }
-
-                // Text elements
-                for (TextEl textEl : table.getTexts()) {
-                    if (textEl.text() != null && !textEl.text().isEmpty()) {
-                        html.append("<p>").append(escapeHtml(textEl.text())).append("</p>");
-                    }
-                }
-
-                if (!table.getPeople().isEmpty()) {
-                    html.append("<p>People: ").append(String.join(", ", table.getPeople())).append("</p>");
-                }
-                if (!table.getBooks().isEmpty()) {
-                    html.append("<p>Books: ").append(String.join(", ", table.getBooks())).append("</p>");
-                }
-                if (!table.getLocations().isEmpty()) {
-                    html.append("<p>Locations: ").append(String.join(", ", table.getLocations())).append("</p>");
-                }
-                if (!table.getSymbols().isEmpty()) {
-                    html.append("<p>Symbols: ").append(String.join(", ", table.getSymbols())).append("</p>");
-                }
-                if (table.getTranslation() != null && !table.getTranslation().isEmpty()) {
-                    html.append("<p>Translation: ").append(escapeHtml(table.getTranslation())).append("</p>");
-                }
-
-                String lang = table.getLanguage() != null ? table.getLanguage() : "en";
-                ObjectNode annotation = createTextAnnotation(
-                        annotationPageId + "/annotation/" + annotationCounter++,
-                        html.toString(), "text/html", lang, canvasId);
-                items.add(annotation);
-            }
-
-            // Calculations
-            for (Calculation calc : annotatedPage.getCalculations()) {
-                StringBuilder body = new StringBuilder();
-                if (calc.getType() != null && !calc.getType().isEmpty()) {
-                    body.append(calc.getType());
-                }
-                if (calc.getMethod() != null && !calc.getMethod().isEmpty()) {
-                    if (!body.isEmpty()) body.append(" (");
-                    body.append(calc.getMethod());
-                    if (calc.getType() != null && !calc.getType().isEmpty()) body.append(")");
-                }
-                if (calc.getContent() != null && !calc.getContent().isEmpty()) {
-                    if (!body.isEmpty()) body.append(": ");
-                    body.append(calc.getContent());
-                }
-                for (String data : calc.getData()) {
-                    if (data != null && !data.isEmpty()) {
-                        if (!body.isEmpty()) body.append(" ");
-                        body.append(data);
-                    }
-                }
-                if (!body.isEmpty()) {
-                    ObjectNode annotation = createTextAnnotation(
-                            annotationPageId + "/annotation/" + annotationCounter++,
-                            body.toString(), "text/plain", "en", canvasId);
-                    items.add(annotation);
-                }
-            }
-
-            // Physical links
-            for (PhysicalLink link : annotatedPage.getLinks()) {
-                StringBuilder body = new StringBuilder("Links: ");
-                for (AnnotationLink al : link.getLinks()) {
-                    if (al.source() != null) body.append(al.source());
-                    body.append(" → ");
-                    if (al.target() != null) body.append(al.target());
-                    body.append("; ");
-                }
-                ObjectNode annotation = createTextAnnotation(
-                        annotationPageId + "/annotation/" + annotationCounter++,
-                        body.toString().trim(), "text/plain", "en", canvasId);
-                items.add(annotation);
-            }
+            content.addAll(AorAnnotationFormatter.format(annotatedPage));
         }
 
         // 2. Illustration tagging
         IllustrationTagging tagging = book.getIllustrationTagging();
         if (tagging != null && imageId != null) {
-            List<Integer> illusIndices = tagging.findImageIndices(book, imageId);
-            for (int illusIdx : illusIndices) {
+            for (int illusIdx : tagging.findImageIndices(book, imageId)) {
                 Illustration illus = tagging.getIllustrationData(illusIdx);
-                StringBuilder html = new StringBuilder();
-                html.append("<p><b>Illustration</b></p>");
-
-                if (illus.getTitles() != null && illus.getTitles().length > 0) {
-                    List<String> titles = IllustrationRefs.resolveTitles(collection, book, illus);
-                    if (!titles.isEmpty()) {
-                        html.append("<p>Titles: ").append(escapeHtml(String.join(", ", titles))).append("</p>");
-                    }
-                }
-                if (illus.getCharacters() != null && illus.getCharacters().length > 0) {
-                    List<String> characters = IllustrationRefs.resolveCharacterDisplayNames(collection, book, illus);
-                    if (!characters.isEmpty()) {
-                        html.append("<p>Characters: ").append(escapeHtml(String.join(", ", characters))).append("</p>");
-                    }
-                }
-                if (illus.getTextualElement() != null && !illus.getTextualElement().isEmpty()) {
-                    html.append("<p>Textual element: ").append(escapeHtml(illus.getTextualElement())).append("</p>");
-                }
-                if (illus.getCostume() != null && !illus.getCostume().isEmpty()) {
-                    html.append("<p>Costume: ").append(escapeHtml(illus.getCostume())).append("</p>");
-                }
-                if (illus.getInitials() != null && !illus.getInitials().isEmpty()) {
-                    html.append("<p>Initials: ").append(escapeHtml(illus.getInitials())).append("</p>");
-                }
-                if (illus.getObject() != null && !illus.getObject().isEmpty()) {
-                    html.append("<p>Objects: ").append(escapeHtml(illus.getObject())).append("</p>");
-                }
-                if (illus.getLandscape() != null && !illus.getLandscape().isEmpty()) {
-                    html.append("<p>Landscape: ").append(escapeHtml(illus.getLandscape())).append("</p>");
-                }
-                if (illus.getArchitecture() != null && !illus.getArchitecture().isEmpty()) {
-                    html.append("<p>Architecture: ").append(escapeHtml(illus.getArchitecture())).append("</p>");
-                }
-                if (illus.getOther() != null && !illus.getOther().isEmpty()) {
-                    html.append("<p>Other: ").append(escapeHtml(illus.getOther())).append("</p>");
-                }
-
-                String lang = getCollectionLanguage(collection);
-                ObjectNode annotation = createTextAnnotation(
-                        annotationPageId + "/annotation/" + annotationCounter++,
-                        html.toString(), "text/html", lang, canvasId);
-                items.add(annotation);
+                String html = illustrationHtml(collection, book, illus);
+                content.add(new AnnotationItem(List.of("rosa-anno", "dlmm-illustration"), html, collectionLang));
             }
         }
 
-        // 3. Transcription
-        Transcription transcription = book.getTranscription();
-        if (transcription != null && transcription.getXML() != null && !transcription.getXML().isEmpty()) {
-            String pageXml = extractPageTranscription(transcription.getXML(), imageId);
-            if (pageXml != null && !pageXml.isEmpty()) {
-                String lang = getCollectionLanguage(collection);
-                ObjectNode annotation = createTextAnnotation(
-                        annotationPageId + "/annotation/" + annotationCounter++,
-                        pageXml, "text/html", lang, canvasId);
-                items.add(annotation);
+        // 3. Transcription, one annotation per column
+        for (TeiTranscriptionHtml.Column column : TeiTranscriptionHtml.findPage(transcriptionPages(collection, book), imageId)) {
+            List<String> classes = new ArrayList<>(List.of("rosa-anno", "dlmm-transcription"));
+            if (column.name() != null) {
+                classes.add("dlmm-column-" + column.name().replaceAll("[^A-Za-z0-9_-]", "_"));
             }
+            content.add(new AnnotationItem(classes, column.html(), null));
         }
 
-        // 4. Collection-level HTML annotations
+        // 4. Collection-level HTML commentary
         HTMLAnnotations htmlAnnotations = collection.getHTMLAnnotations();
         if (htmlAnnotations != null && imageId != null) {
             String htmlContent = htmlAnnotations.getAnnotation(imageId);
-            if (htmlContent != null && !htmlContent.isEmpty()) {
-                String lang = getCollectionLanguage(collection);
-                ObjectNode annotation = createTextAnnotation(
-                        annotationPageId + "/annotation/" + annotationCounter++,
-                        htmlContent, "text/html", lang, canvasId);
-                items.add(annotation);
+            if (htmlContent != null && !htmlContent.isBlank()) {
+                content.add(new AnnotationItem(List.of("rosa-anno", "dlmm-commentary"), htmlContent.trim(), collectionLang));
             }
         }
 
-        // Only return annotation page if there are items
-        if (items.isEmpty()) {
+        if (content.isEmpty()) {
             return null;
+        }
+
+        ArrayNode items = mapper.createArrayNode();
+        int annotationCounter = 0;
+        for (AnnotationItem item : content) {
+            items.add(createTextAnnotation(annotationPageId + "/annotation/" + annotationCounter++,
+                    item, stylesheet, canvasId));
         }
 
         ObjectNode page = mapper.createObjectNode();
@@ -1021,19 +659,118 @@ public final class IIIFPresentationGenerator {
     }
 
     /**
-     * Creates a IIIF Annotation with a TextualBody.
+     * Builds the HTML for an illustration tagging entry.
      */
-    private ObjectNode createTextAnnotation(String id, String value, String format, String language, String target) {
+    private String illustrationHtml(BookCollection collection, Book book, Illustration illus) {
+        StringBuilder html = new StringBuilder("<p><b>Illustration</b></p>");
+        if (illus.getTitles() != null && illus.getTitles().length > 0) {
+            html.append(illustrationField("Titles", String.join("; ", IllustrationRefs.resolveTitles(collection, book, illus))));
+        }
+        if (illus.getCharacters() != null && illus.getCharacters().length > 0) {
+            html.append(illustrationField("Characters",
+                    String.join(", ", IllustrationRefs.resolveCharacterDisplayNames(collection, book, illus))));
+        }
+        html.append(illustrationField("Textual elements", illus.getTextualElement()));
+        html.append(illustrationField("Costume", illus.getCostume()));
+        html.append(illustrationField("Initials", illus.getInitials()));
+        html.append(illustrationField("Objects", illus.getObject()));
+        html.append(illustrationField("Landscape", illus.getLandscape()));
+        html.append(illustrationField("Architecture", illus.getArchitecture()));
+        html.append(illustrationField("Other", illus.getOther()));
+        return html.toString();
+    }
+
+    private static String illustrationField(String label, String value) {
+        if (AnnotationHtml.blank(value)) {
+            return "";
+        }
+        return "<p><b>" + label + ":</b> " + AnnotationHtml.esc(AnnotationHtml.clean(value)) + "</p>";
+    }
+
+    /**
+     * Returns the converted transcription pages for a book, caching the most recent book
+     * since annotation pages are generated book by book.
+     */
+    private Map<String, List<TeiTranscriptionHtml.Column>> transcriptionPages(BookCollection collection, Book book) {
+        Transcription transcription = book.getTranscription();
+        if (transcription == null || transcription.getXML() == null || transcription.getXML().isBlank()) {
+            return Map.of();
+        }
+        String key = collection.getId() + "/" + book.getId();
+        if (!key.equals(cachedTranscriptionKey)) {
+            Map<String, List<TeiTranscriptionHtml.Column>> pages;
+            try {
+                pages = TeiTranscriptionHtml.convert(transcription.getXML());
+            } catch (IllegalArgumentException e) {
+                System.err.println("WARNING: Cannot convert transcription for " + key + ": " + e.getMessage());
+                pages = Map.of();
+            }
+            cachedTranscriptionKey = key;
+            cachedTranscriptionPages = pages;
+        }
+        return cachedTranscriptionPages;
+    }
+
+    /**
+     * Sets the URL template of the stylesheet referenced by commenting annotations
+     * (IIIF cookbook recipe 0045). {@code {collection}} is replaced by the id of the
+     * collection's parent, or the collection itself if it has no parent. When null,
+     * annotations have no {@code stylesheet}.
+     *
+     * @param template the URL template, e.g. {@code https://example.org/styles/{collection}.css}
+     */
+    public void setAnnotationStylesheetUrl(String template) {
+        this.annotationStylesheetUrl = (template == null || template.isBlank()) ? null : template.trim();
+    }
+
+    /**
+     * Resolves the annotation stylesheet URL for a collection, or null if not configured.
+     *
+     * @param collection the collection
+     * @return the stylesheet URL, or null
+     */
+    public String resolveAnnotationStylesheet(BookCollection collection) {
+        if (annotationStylesheetUrl == null) {
+            return null;
+        }
+        String id = collection.getId();
+        String[] parents = collection.getParentCollections();
+        if (parents != null) {
+            for (String parent : parents) {
+                if (parent != null && !parent.isBlank()) {
+                    id = parent.trim();
+                    break;
+                }
+            }
+        }
+        return annotationStylesheetUrl.replace("{collection}", id);
+    }
+
+    /**
+     * Creates a commenting Annotation whose body is a SpecificResource with a styleClass
+     * wrapping an HTML TextualBody (IIIF cookbook recipes 0019 and 0045).
+     */
+    private ObjectNode createTextAnnotation(String id, AnnotationItem item, String stylesheet, String target) {
         ObjectNode annotation = mapper.createObjectNode();
         annotation.put("id", id);
         annotation.put("type", "Annotation");
         annotation.put("motivation", "commenting");
+        if (stylesheet != null) {
+            annotation.put("stylesheet", stylesheet);
+        }
+
+        ObjectNode source = mapper.createObjectNode();
+        source.put("type", "TextualBody");
+        source.put("value", item.html());
+        source.put("format", "text/html");
+        if (item.language() != null) {
+            source.put("language", item.language());
+        }
 
         ObjectNode body = mapper.createObjectNode();
-        body.put("type", "TextualBody");
-        body.put("value", value);
-        body.put("format", format);
-        body.put("language", language);
+        body.put("type", "SpecificResource");
+        body.put("styleClass", String.join(" ", item.styleClasses()));
+        body.set("source", source);
         annotation.set("body", body);
 
         annotation.put("target", target);
@@ -1052,67 +789,6 @@ public final class IIIFPresentationGenerator {
             }
         }
         return null;
-    }
-
-    /**
-     * Extracts the portion of a transcription XML that corresponds to a given image/page.
-     * Looks for content between page break markers referencing the image.
-     */
-    private String extractPageTranscription(String xml, String imageId) {
-        if (xml == null || imageId == null) return null;
-        String baseName = imageId.replace(".tif", "");
-
-        // Look for a page break referencing this image and extract content until next page break
-        String pbMarker = "pb n=\"" + baseName;
-        int startIdx = xml.indexOf(pbMarker);
-        if (startIdx < 0) {
-            // Try without the book ID prefix
-            int dotIdx = baseName.indexOf('.');
-            if (dotIdx > 0) {
-                String shortName = baseName.substring(dotIdx + 1);
-                pbMarker = "pb n=\"" + shortName;
-                startIdx = xml.indexOf(pbMarker);
-
-                // If not found, try with leading zeros stripped
-                if (startIdx < 0) {
-                    String strippedName = shortName.replaceFirst("^0+(?=\\d)", "");
-                    if (!strippedName.equals(shortName)) {
-                        pbMarker = "pb n=\"" + strippedName;
-                        startIdx = xml.indexOf(pbMarker);
-                    }
-                }
-            }
-        }
-        if (startIdx < 0) return null;
-
-        // Find end of this page break element
-        int contentStart = xml.indexOf(">", startIdx);
-        if (contentStart < 0) return null;
-        contentStart++;
-
-        // Find the next page break or end of document
-        int nextPb = xml.indexOf("<pb ", contentStart);
-        int contentEnd = nextPb > 0 ? nextPb : xml.length();
-
-        // Also look for closing tags that might be the document end
-        int closingDiv = xml.indexOf("</div>", contentStart);
-        if (closingDiv > 0 && closingDiv < contentEnd) {
-            contentEnd = closingDiv;
-        }
-
-        String pageContent = xml.substring(contentStart, contentEnd).trim();
-        return pageContent.isEmpty() ? null : pageContent;
-    }
-
-    /**
-     * Escapes HTML special characters in a string.
-     */
-    private String escapeHtml(String text) {
-        if (text == null) return "";
-        return text.replace("&", "&amp;")
-                   .replace("<", "&lt;")
-                   .replace(">", "&gt;")
-                   .replace("\"", "&quot;");
     }
 
     /**

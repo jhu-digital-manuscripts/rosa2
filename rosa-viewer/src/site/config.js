@@ -33,6 +33,32 @@ export function defaultLogoBaseUrl(baseUrl = import.meta.env.BASE_URL) {
 }
 
 /**
+ * Default annotation stylesheet base URL: the public/styles directory copied next
+ * to the built page, like defaultLogoBaseUrl.
+ * @param {string} [baseUrl] - Vite base URL, defaults to import.meta.env.BASE_URL
+ * @returns {string}
+ */
+export function defaultStylesBaseUrl(baseUrl = import.meta.env.BASE_URL) {
+  const base = baseUrl || '/';
+  return `${base.endsWith('/') ? base : `${base}/`}styles`;
+}
+
+/**
+ * URL of the annotation stylesheet for a site: {stylesBaseUrl}/{collectionId}.css.
+ * The same file is referenced by the IIIF annotations' stylesheet property.
+ * @param {Object} site - Site definition
+ * @param {Object} [env] - Site environment
+ * @param {string} [env.stylesBaseUrl] - Base URL for the annotation stylesheets
+ * @returns {string|null}
+ */
+export function annotationStylesheetUrl(site, env = {}) {
+  const collectionId = site?.jhsearch?.collectionId;
+  if (!collectionId) return null;
+  const base = stripTrailingSlash(env.stylesBaseUrl) || defaultStylesBaseUrl();
+  return `${base}/${collectionId}.css`;
+}
+
+/**
  * Validate the site environment, returning a list of problems (empty when valid).
  * @param {Object} env
  * @returns {string[]}

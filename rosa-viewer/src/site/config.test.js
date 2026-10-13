@@ -1,7 +1,9 @@
 import { describe, it, expect } from 'vitest';
 import {
+  annotationStylesheetUrl,
   buildBannerUrl,
   defaultLogoBaseUrl,
+  defaultStylesBaseUrl,
   resolveSiteConfig,
   stripTrailingSlash,
   validateSiteEnv,
@@ -29,6 +31,22 @@ describe('defaultLogoBaseUrl', () => {
     expect(defaultLogoBaseUrl('./')).toBe('./logo');
     expect(defaultLogoBaseUrl('/rosa2/aor')).toBe('/rosa2/aor/logo');
     expect(defaultLogoBaseUrl('')).toBe('/logo');
+  });
+});
+
+describe('annotation stylesheet', () => {
+  it('defaults to the styles directory next to the page', () => {
+    expect(defaultStylesBaseUrl('/')).toBe('/styles');
+    expect(defaultStylesBaseUrl('./')).toBe('./styles');
+    expect(defaultStylesBaseUrl('/rosa2/aor')).toBe('/rosa2/aor/styles');
+  });
+
+  it('is named after the site collection', () => {
+    expect(annotationStylesheetUrl(site, { stylesBaseUrl: 'https://x.org/dlmm/styles/' })).toBe(
+      'https://x.org/dlmm/styles/dlmm.css'
+    );
+    expect(annotationStylesheetUrl(site)).toMatch(/styles\/dlmm\.css$/);
+    expect(annotationStylesheetUrl({ id: 'x', jhsearch: {} })).toBeNull();
   });
 });
 

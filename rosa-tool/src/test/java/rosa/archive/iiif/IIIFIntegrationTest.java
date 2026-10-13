@@ -287,9 +287,9 @@ class IIIFIntegrationTest {
             if (body.contains("Blue sleeveless outer garment and hat")) {
                 foundDouce195Illus = true;
                 assertTrue(body.contains("Illustration"), "Body should contain 'Illustration' heading");
-                assertTrue(body.contains("<p>Titles: Portrait of Author (Guillaume de Lorris)</p>"),
+                assertTrue(body.contains("<p><b>Titles:</b> Portrait of Author (Guillaume de Lorris)</p>"),
                         "Illustration title reference '1' should be resolved: " + body);
-                assertTrue(body.contains("<p>Characters: Guillaume de Lorris</p>"),
+                assertTrue(body.contains("<p><b>Characters:</b> Guillaume de Lorris</p>"),
                         "Character reference '49' should be resolved: " + body);
                 break;
             }
@@ -303,9 +303,9 @@ class IIIFIntegrationTest {
         for (String body : douce332Folio1rIllustrations) {
             if (body.contains("Ankle-length gown")) {
                 foundDouce332Refs = true;
-                assertTrue(body.contains("<p>Titles: L’Amans Sleeps, "),
+                assertTrue(body.contains("<p><b>Titles:</b> L’Amans Sleeps; "),
                         "All three title references should be resolved in order: " + body);
-                assertTrue(body.contains("<p>Characters: L'Amans (Lover, Dreamer)</p>"),
+                assertTrue(body.contains("<p><b>Characters:</b> L'Amans (Lover, Dreamer)</p>"),
                         "Character reference '2' should resolve to site name plus English name: " + body);
                 break;
             }
@@ -476,21 +476,7 @@ class IIIFIntegrationTest {
      * Transcription annotations have text/html format and do NOT contain the illustration marker.
      */
     private List<String> findTranscriptionAnnotationBodies(JsonNode items) {
-        List<String> results = new ArrayList<>();
-        for (JsonNode item : items) {
-            JsonNode body = item.get("body");
-            if (body != null) {
-                String value = body.has("value") ? body.get("value").asText() : "";
-                String format = body.has("format") ? body.get("format").asText() : "";
-                // Transcription annotations have text/html format and do NOT contain illustration marker
-                if ("text/html".equals(format)
-                        && !value.contains("<p><b>Illustration</b></p>")
-                        && !value.isEmpty()) {
-                    results.add(value);
-                }
-            }
-        }
-        return results;
+        return bodiesWithClass(items, "dlmm-transcription");
     }
 
     /**
@@ -539,7 +525,7 @@ class IIIFIntegrationTest {
 
         // Verify marks are present (source XML has hash and plus_sign marks)
         boolean hasMark005r = canvas14Bodies.stream()
-                .anyMatch(b -> b.contains("hash") || b.contains("plus_sign"));
+                .anyMatch(b -> b.contains("Hash") || b.contains("Plus sign"));
         assertTrue(hasMark005r,
                 "Canvas/14 (005r) should have mark annotations with 'hash' or 'plus_sign'");
 
@@ -566,7 +552,7 @@ class IIIFIntegrationTest {
 
         // Verify marks are present (source XML has 8 marks)
         boolean hasMark010r = canvas24Bodies.stream()
-                .anyMatch(b -> b.contains("plus_sign"));
+                .anyMatch(b -> b.contains("Plus sign"));
         assertTrue(hasMark010r,
                 "Canvas/24 (010r) should have mark annotations");
 
@@ -583,7 +569,7 @@ class IIIFIntegrationTest {
         List<String> canvas64Bodies = getAllAnnotationBodies(canvas64Items);
         // Verify marks include various types (hash, plus_sign, circumflex, comma, dot, bracket)
         boolean hasVariedMarks030r = canvas64Bodies.stream()
-                .anyMatch(b -> b.contains("hash") || b.contains("plus_sign") || b.contains("circumflex"));
+                .anyMatch(b -> b.contains("Hash") || b.contains("Plus sign") || b.contains("Circumflex"));
         assertTrue(hasVariedMarks030r,
                 "Canvas/64 (030r) should have varied mark types (hash, plus_sign, circumflex, etc.)");
 
@@ -602,9 +588,9 @@ class IIIFIntegrationTest {
 
         // Verify symbols (2 Bisected_circle entries)
         boolean hasSymbol050r = canvas104Bodies.stream()
-                .anyMatch(b -> b.contains("Bisected_circle"));
+                .anyMatch(b -> b.contains("Bisected circle"));
         assertTrue(hasSymbol050r,
-                "Canvas/104 (050r) should have symbol annotations with 'Bisected_circle'");
+                "Canvas/104 (050r) should have symbol annotations with 'Bisected circle'");
 
         // Verify underlines present
         boolean hasUnderline050r = canvas104Bodies.stream()
@@ -614,7 +600,7 @@ class IIIFIntegrationTest {
 
         // Verify marks present
         boolean hasMark050r = canvas104Bodies.stream()
-                .anyMatch(b -> b.contains("plus_sign") || b.contains("hash") || b.contains("circumflex"));
+                .anyMatch(b -> b.contains("Plus sign") || b.contains("Hash") || b.contains("Circumflex"));
         assertTrue(hasMark050r,
                 "Canvas/104 (050r) should have mark annotations");
 
@@ -808,7 +794,7 @@ class IIIFIntegrationTest {
         // 10. AoR MARKS — PrincetonU101 canvas/14 (005r) and canvas/64 (030r)
         // ===================================================================
         assertTrue(canvas14Bodies.stream()
-                        .anyMatch(b -> b.contains("hash") || b.contains("plus_sign")),
+                        .anyMatch(b -> b.contains("Hash") || b.contains("Plus sign")),
                 "PrincetonU101 canvas/14 (005r) should have mark annotations with 'hash' or 'plus_sign'");
 
         Path pu101Canvas64 = outputDir.resolve("aor/PrincetonU101/canvas/64/annotations.json");
@@ -819,7 +805,7 @@ class IIIFIntegrationTest {
 
         List<String> canvas64Bodies = getAllAnnotationBodies(pu101Canvas64Items);
         assertTrue(canvas64Bodies.stream()
-                        .anyMatch(b -> b.contains("hash") || b.contains("plus_sign") || b.contains("circumflex")),
+                        .anyMatch(b -> b.contains("Hash") || b.contains("Plus sign") || b.contains("Circumflex")),
                 "PrincetonU101 canvas/64 (030r) should have varied mark types");
 
         // ===================================================================
@@ -832,8 +818,8 @@ class IIIFIntegrationTest {
         assertNotNull(pu101Canvas104Items);
 
         List<String> canvas104Bodies = getAllAnnotationBodies(pu101Canvas104Items);
-        assertTrue(canvas104Bodies.stream().anyMatch(b -> b.contains("Bisected_circle")),
-                "PrincetonU101 canvas/104 (050r) should have symbol annotations with 'Bisected_circle'");
+        assertTrue(canvas104Bodies.stream().anyMatch(b -> b.contains("Bisected circle")),
+                "PrincetonU101 canvas/104 (050r) should have symbol annotations with 'Bisected circle'");
 
         // ===================================================================
         // 12. AoR NUMERALS — PrincetonU101 canvas/238 (117r)
@@ -855,9 +841,42 @@ class IIIFIntegrationTest {
     private List<String> getAllAnnotationBodies(JsonNode items) {
         List<String> results = new ArrayList<>();
         for (JsonNode item : items) {
-            JsonNode body = item.get("body");
-            if (body != null && body.has("value")) {
-                results.add(body.get("value").asText());
+            String value = bodyValue(item);
+            if (!value.isEmpty()) {
+                results.add(value);
+            }
+        }
+        return results;
+    }
+
+    /**
+     * Returns the HTML of an annotation's SpecificResource body, checking the recipe 0045
+     * shape and, for generated content, the recipe 0019 HTML rules.
+     */
+    private static String bodyValue(JsonNode item) {
+        JsonNode body = item.get("body");
+        assertNotNull(body, "Annotation should have a body");
+        assertEquals("SpecificResource", body.path("type").asText(), "Body should be a SpecificResource");
+        String styleClass = body.path("styleClass").asText();
+        assertTrue(styleClass.startsWith("rosa-anno "), "Body should have a styleClass: " + styleClass);
+        JsonNode source = body.get("source");
+        assertEquals("TextualBody", source.path("type").asText());
+        assertEquals("text/html", source.path("format").asText());
+        String value = source.path("value").asText();
+        assertNull(AnnotationHtml.findViolation(value), "Body HTML should follow the IIIF HTML rules: " + value);
+        return value;
+    }
+
+    /**
+     * Returns the body HTML of annotations whose styleClass contains the given class.
+     */
+    private static List<String> bodiesWithClass(JsonNode items, String styleClass) {
+        List<String> results = new ArrayList<>();
+        for (JsonNode item : items) {
+            String value = bodyValue(item);
+            List<String> classes = List.of(item.get("body").path("styleClass").asText().split(" "));
+            if (classes.contains(styleClass) && !value.isEmpty()) {
+                results.add(value);
             }
         }
         return results;
@@ -867,29 +886,16 @@ class IIIFIntegrationTest {
      * Asserts that an annotation item does NOT contain the illustration marker.
      */
     private void assertNoIllustrationAnnotation(JsonNode item, String canvasLabel) {
-        JsonNode body = item.get("body");
-        if (body != null && body.has("value")) {
-            String value = body.get("value").asText();
-            assertFalse(value.contains("<p><b>Illustration</b></p>"),
-                    "PrincetonU101 " + canvasLabel + " should NOT have illustration tagging annotations " +
-                            "(no .imagetag.csv exists for this book)");
-        }
+        String classes = item.get("body").path("styleClass").asText();
+        assertFalse(classes.contains("dlmm-illustration"),
+                "PrincetonU101 " + canvasLabel + " should NOT have illustration tagging annotations " +
+                        "(no .imagetag.csv exists for this book)");
     }
 
     /**
-     * Finds annotation bodies that contain the illustration marker.
+     * Finds illustration annotation bodies.
      */
     private List<String> findIllustrationAnnotationBodies(JsonNode items) {
-        List<String> results = new ArrayList<>();
-        for (JsonNode item : items) {
-            JsonNode body = item.get("body");
-            if (body != null) {
-                String value = body.has("value") ? body.get("value").asText() : "";
-                if (value.contains("<p><b>Illustration</b></p>")) {
-                    results.add(value);
-                }
-            }
-        }
-        return results;
+        return bodiesWithClass(items, "dlmm-illustration");
     }
 }

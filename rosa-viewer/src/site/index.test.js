@@ -55,4 +55,14 @@ describe('createSiteViewer', () => {
     expect(factory).toHaveBeenCalled();
     error.mockRestore();
   });
+
+  it('adds the collection annotation stylesheet once', () => {
+    const factory = vi.fn(() => 'viewer');
+    const env = { iiifBaseUrl: 'http://localhost:3000/iiif', stylesBaseUrl: '/test-styles' };
+    createSiteViewer(site, env, { viewerFactory: factory });
+    createSiteViewer(site, env, { viewerFactory: factory });
+    const links = document.head.querySelectorAll('link[href="/test-styles/aor.css"]');
+    expect(links.length).toBe(1);
+    links[0].remove();
+  });
 });

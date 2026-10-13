@@ -1,9 +1,10 @@
 import Mirador from 'mirador';
 import { jhsearchPlugin } from './plugins/jhsearch';
+import { rosaAnnotationsPlugin } from './plugins/annotations';
 import { mergeConfig } from './config';
 
 /**
- * Initialize the Rosa Viewer with the JHSearch plugin.
+ * Initialize the Rosa Viewer with the JHSearch and RosaAnnotations plugins.
  *
  * @param {Object} config - Configuration object
  * @param {Object} config.jhsearch - JHSearch plugin configuration
@@ -34,7 +35,7 @@ export function createViewer(config = {}) {
     console.error('rosa-viewer: jhsearch.collectionId is required');
   }
 
-  return Mirador.viewer(mergedConfig, [...jhsearchPlugin]);
+  return Mirador.viewer(mergedConfig, [...jhsearchPlugin, ...rosaAnnotationsPlugin]);
 }
 
 // Auto-initialize if configuration is provided on window object
@@ -42,5 +43,5 @@ if (typeof window !== 'undefined' && window.rosaViewerConfig) {
   createViewer(window.rosaViewerConfig);
 }
 
-export { jhsearchPlugin };
+export { jhsearchPlugin, rosaAnnotationsPlugin };
 export default createViewer;

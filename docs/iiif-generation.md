@@ -59,7 +59,7 @@ Canvas URIs use a 0-based index as the path segment: `{base-url}/{collection-id}
 ### Annotation Pages
 
 Annotation pages contain textual and descriptive annotations. The generator produces annotation pages for:
-- **AoR annotations** — marginalia (with HTML rendering, people/books/locations, multi-language), underline, mark, symbol, numeral, errata, drawing, graph, table, calculation, physical_link
+- **AoR annotations** — a page header (pagination, signature, reader), then one annotation per marginal note, underline, mark, symbol, numeral, erratum, drawing, graph, table, calculation and physical link, ordered by place on the page: head, left margin, in text, right margin, tail, full page. Marginal notes include the translation, hand, people, books, locations, cross-references and internal references. A note written across several places is placed by its first `<position>`; the other parts are labelled, e.g. `[Right margin]`. Underlines and errata, which have no place in the transcription, are in text.
 - **Illustrations** — titles, characters, textual elements, costume, objects, landscapes, architecture
 
 Numeric entries in the "Illustration title" and "Characters" columns of
@@ -70,8 +70,67 @@ aborts generation rather than leaking a bare id into the output. Characters are
 displayed as the site name with the English name in parentheses when it differs
 (for example `Haine (Hate)`). Illustration Ranges use the resolved titles as
 their label.
-- **Transcriptions** — TEI transcription text (from `{book-id}.transcription.xml`) rendered as HTML with poetry lines, rubrics, and catchphrases, split per-page at `<pb>` elements
-- **HTML annotations** — collection-level HTML annotation content
+- **Transcriptions** — the TEI transcription (`{book-id}.transcription.xml`) split by page at `<pb n>` and by column at `<cb n>`, one annotation per column. Repeated `<pb>` elements with the same `n` continue the page.
+- **Commentary** — collection-level HTML annotations (`annos.jsonld`)
+
+### Annotation bodies
+
+Commenting annotations follow the IIIF cookbook recipes
+[HTML in Annotations (0019)](https://iiif.io/api/cookbook/recipe/0019-html-in-annotations/)
+and [CSS in an Annotation (0045)](https://iiif.io/api/cookbook/recipe/0045-css/).
+The body is a `SpecificResource` whose `styleClass` names CSS classes, wrapping an
+HTML `TextualBody`. With `--annotation-stylesheet-url` the annotation also has a
+`stylesheet`:
+
+```json
+{
+  "id": ".../canvas/9/annotations/annotation/3",
+  "type": "Annotation",
+  "motivation": "commenting",
+  "stylesheet": "https://example.org/aor/styles/aor.css",
+  "body": {
+    "type": "SpecificResource",
+    "styleClass": "rosa-anno aor-mark aor-place-intext",
+    "source": {
+      "type": "TextualBody",
+      "format": "text/html",
+      "language": "la",
+      "value": "<p><b>Mark</b> Plus sign <small>pen</small></p><p>\u201cartium usum bonarum\u201d</p>"
+    }
+  },
+  "target": ".../canvas/9"
+}
+```
+
+`language` is lowercase and left out when unknown. The HTML uses only `a`, `b`,
+`br`, `i`, `img`, `p`, `small`, `span`, `sub` and `sup`, with `href` on `a` and
+`src`/`alt` on `img`, and starts with `<` and ends with `>`
+(`AnnotationHtml.findViolation` checks this).
+
+Style classes (every annotation also has `rosa-anno`):
+
+| Collection | Classes |
+|---|---|
+| AoR | `aor-page`, or `aor-{type}` with type `marginalia`, `underline`, `mark`, `symbol`, `numeral`, `errata`, `drawing`, `graph`, `table`, `calculation` or `link`, plus `aor-place-{head\|left_margin\|intext\|right_margin\|tail\|full_page}` when the place is known |
+| DLMM | `dlmm-illustration`; `dlmm-transcription` with `dlmm-column-{n}`; `dlmm-commentary` |
+
+HTML conventions, which the stylesheets in `rosa-viewer/public/styles/` rely on:
+
+| Content | HTML |
+|---|---|
+| Heading (first paragraph) | `<p><b>Type</b> detail <small>extra</small></p>` |
+| Section heading | `<p><b>Miniature description</b></p>` |
+| Label and value | `<p><b>Costume:</b> Ankle-length gown</p>` |
+| Reader's or scribe's text | `<p>…</p>` |
+| Translation | `<p><i>…</i></p>` |
+| Metadata line | `<p><small><b>People:</b> …</small></p>` |
+| Line group (`lg`) | one `<p>`; each line `<span>…</span>` separated by `<br>` |
+| Logical line number (`l/@n`), every 5th | `<sub>` at the start of the line |
+| Lecoy line number (`milestone[@ed='lecoy']`), every 5th | `<sup>` at the end of the line |
+| Initial / rubric / expansion | `<b>M</b>` / `<b><i>…</i></b>` / `<i>…</i>` |
+| Addition / deletion | `⸌…⸍` / `⟦…⟧` |
+| Miniature (`figure`) | `<p><b>Miniature:</b> <i>head</i><br><small><b>Characters:</b> …</small></p>` |
+| Editorial note (`note`) | `<small>*&nbsp;note</small>` where the note occurs |
 
 ## Serialization
 

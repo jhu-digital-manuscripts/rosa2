@@ -86,7 +86,8 @@ jobs:
             --base-url "${{ steps.pages.outputs.base_url }}/iiif/" \
             --image-base-url "${{ inputs.image_base_url }}" \
             --image-api-version "${{ inputs.image_api_version }}" \
-            --opensearch-url "${{ inputs.opensearch_url }}"
+            --opensearch-url "${{ inputs.opensearch_url }}" \
+            --annotation-stylesheet-url "${{ steps.pages.outputs.base_url }}/{collection}/styles/{collection}.css"
 
       - name: Install rosa-viewer dependencies
         run: npm ci

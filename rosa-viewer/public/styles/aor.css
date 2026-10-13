@@ -1,0 +1,192 @@
+/*
+ * Archaeology of Reading annotation styles.
+ *
+ * Referenced by the AoR IIIF annotations (stylesheet property, IIIF cookbook
+ * recipe 0045) and loaded by the AoR site. Classes come from the annotation
+ * body styleClass: rosa-anno, aor-{type} and aor-place-{place}. Body HTML
+ * conventions (see docs/iiif-generation.md):
+ *
+ *   <p><b>Type</b> detail <small>extra</small></p>   heading (first paragraph)
+ *   <p>text</p>                                      the reader's text
+ *   <p><i>translation</i></p>
+ *   <p><small><b>People:</b> …</small></p>           metadata
+ *
+ * Palette follows sites/aor/site.css: charcoal and oxblood over parchment.
+ */
+
+.rosa-annos {
+  --rosa-anno-fg: #2a2420;
+  --rosa-anno-muted: #625850;
+  --rosa-anno-accent: #8a2b21;
+  --rosa-anno-rule: rgba(60, 40, 25, 0.14);
+  --rosa-anno-hover: rgba(138, 43, 33, 0.05);
+  --rosa-anno-selected: rgba(138, 43, 33, 0.1);
+  --rosa-anno-heading-bg: #f5f0e6;
+  --rosa-anno-font:
+    system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --rosa-anno-heading-font:
+    'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;
+}
+
+/* Place group headings: a page diagram, the place and a count */
+
+.rosa-annos .rosa-anno-group-toggle {
+  padding-block: 0.6rem;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+}
+
+.rosa-annos .rosa-place-icon {
+  color: var(--rosa-anno-accent);
+}
+
+.rosa-annos .rosa-place-icon-page {
+  stroke: #6e625a;
+}
+
+/* Every annotation body */
+
+.rosa-anno[class*='aor-'] {
+  color: #2a2420;
+}
+
+.rosa-anno[class*='aor-'] p {
+  margin: 0 0 0.35rem;
+}
+
+.rosa-anno[class*='aor-'] p:last-child {
+  margin-bottom: 0;
+}
+
+/* Heading: type in small caps, detail plain, extra muted */
+.rosa-anno[class*='aor-'] p:first-child > b:first-child {
+  color: #8a2b21;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.rosa-anno[class*='aor-'] p:first-child > small {
+  color: #625850;
+  font-size: 0.8125rem;
+}
+
+.rosa-anno[class*='aor-'] p:first-child > small::before {
+  content: '\00b7\00a0';
+}
+
+/* The reader's own words, as transcribed */
+.rosa-anno[class*='aor-'] p:not(:first-child) {
+  font-family: 'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;
+  font-size: 1.0625rem;
+  line-height: 1.45;
+}
+
+/* Part of a note written in another place: [Right margin] */
+.rosa-anno[class*='aor-'] p:not(:first-child, .rosa-meta) > small:first-child {
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+  color: #8a2b21;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+}
+
+/* Translation (the Rosa viewer marks the paragraph roles rosa-translation and
+   rosa-meta; CSS alone cannot see the text beside an element) */
+.rosa-anno[class*='aor-'] p.rosa-translation {
+  margin-top: 0.4rem;
+  padding-left: 0.6rem;
+  border-left: 2px solid #d9c9b4;
+  color: #4a413a;
+  font-size: 0.9375rem;
+}
+
+/* Metadata lines: People, Books, Cross-references … */
+.rosa-anno[class*='aor-'] p.rosa-meta {
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  margin-bottom: 0.15rem;
+}
+
+.rosa-anno[class*='aor-'] p.rosa-meta small {
+  color: #4a413a;
+  font-size: inherit;
+}
+
+.rosa-anno[class*='aor-'] p.rosa-meta b {
+  color: #625850;
+  font-weight: 600;
+}
+
+/* Marginal notes stand out from marks */
+.rosa-annos .rosa-anno-entry.aor-marginalia > .rosa-anno-select {
+  padding-block: 0.7rem;
+}
+
+/* Marks, symbols, numerals and underlines are frequent and short: keep compact */
+.rosa-annos
+  .rosa-anno-entry:is(.aor-mark, .aor-symbol, .aor-numeral, .aor-underline, .aor-errata)
+  > .rosa-anno-select {
+  padding-block: 0.3rem;
+}
+
+.rosa-anno:is(.aor-mark, .aor-symbol, .aor-numeral, .aor-underline, .aor-errata)
+  p:not(:first-child) {
+  font-size: 1rem;
+}
+
+.rosa-anno.aor-underline p:not(:first-child) {
+  text-decoration: underline;
+  text-decoration-color: #b58a6d;
+  text-underline-offset: 3px;
+}
+
+/* Page header: pagination and reader */
+
+.rosa-annos .rosa-anno-entry.aor-page {
+  border: 0;
+  background: #f5f0e6;
+}
+
+.rosa-annos .rosa-anno-entry.aor-page > .rosa-anno-select {
+  padding: 0.6rem 1rem 0.75rem;
+}
+
+.rosa-anno.aor-page p:first-child > b:first-child {
+  font-family: 'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;
+  font-size: 1.375rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #2a2420;
+}
+
+.rosa-anno.aor-page p:first-child > small::before {
+  content: '\2003';
+}
+
+.rosa-anno.aor-page p:not(:first-child) {
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+  font-size: 0.875rem;
+}
+
+/* Tables, graphs and calculations keep their line layout */
+.rosa-anno:is(.aor-table, .aor-graph, .aor-calculation) p:not(:first-child) {
+  font-variant-numeric: tabular-nums;
+}

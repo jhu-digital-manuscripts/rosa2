@@ -40,6 +40,12 @@ public final class GenerateIiifPresCommand implements Callable<Integer> {
     @Option(names = "--opensearch-url", description = "Opensearch search endpoint URL for JHSearch service")
     private String opensearchUrl;
 
+    @Option(names = "--annotation-stylesheet-url",
+            description = "URL of the stylesheet referenced by commenting annotations (IIIF cookbook recipe 0045). "
+                    + "{collection} is replaced by the top-level collection id, e.g. "
+                    + "https://example.org/aor/styles/{collection}.css")
+    private String annotationStylesheetUrl;
+
     @Override
     public Integer call() {
         if (!Files.isDirectory(archivePath)) {
@@ -56,6 +62,7 @@ public final class GenerateIiifPresCommand implements Callable<Integer> {
 
             IIIFJsonWriter writer = new IIIFJsonWriter();
             IIIFPresentationGenerator generator = new IIIFPresentationGenerator(writer);
+            generator.setAnnotationStylesheetUrl(annotationStylesheetUrl);
             generator.generate(store, outputPath, baseUrl, imageBaseUrl, imageApiVersion, opensearchUrl);
             return 0;
         } catch (IOException e) {

@@ -1,0 +1,220 @@
+/*
+ * Layout for the RosaAnnotations panel. Colours and typography are set through
+ * the custom properties below, which the per-collection stylesheets in
+ * public/styles/ (aor.css, dlmm.css) override.
+ */
+
+.rosa-annos {
+  --rosa-anno-fg: #222;
+  --rosa-anno-muted: #5c5c5c;
+  --rosa-anno-accent: #6b3a2e;
+  --rosa-anno-rule: rgba(0, 0, 0, 0.12);
+  --rosa-anno-hover: rgba(0, 0, 0, 0.04);
+  --rosa-anno-selected: rgba(0, 0, 0, 0.08);
+  --rosa-anno-heading-bg: transparent;
+  --rosa-anno-font: inherit;
+  --rosa-anno-heading-font: inherit;
+
+  color: var(--rosa-anno-fg);
+  font-family: var(--rosa-anno-font);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  padding: 0 0 1rem;
+}
+
+.rosa-annos-canvas {
+  margin: 0;
+  padding: 1rem 1rem 0.25rem;
+  color: var(--rosa-anno-muted);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Groups */
+
+.rosa-anno-group {
+  margin: 0;
+}
+
+.rosa-anno-group-heading {
+  margin: 0;
+  font: inherit;
+}
+
+.rosa-anno-group-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-top: 1px solid var(--rosa-anno-rule);
+  background: var(--rosa-anno-heading-bg);
+  color: var(--rosa-anno-accent);
+  font-family: var(--rosa-anno-heading-font);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+
+.rosa-anno-group-toggle:hover {
+  background-color: var(--rosa-anno-hover);
+}
+
+.rosa-anno-group-toggle:focus-visible,
+.rosa-anno-select:focus-visible,
+.rosa-note-marker:focus-visible {
+  outline: 2px solid var(--rosa-anno-accent);
+  outline-offset: -2px;
+}
+
+.rosa-anno-group-label {
+  flex: 1 1 auto;
+}
+
+.rosa-anno-group-count {
+  min-width: 1.5rem;
+  padding: 0 0.4rem;
+  border-radius: 999px;
+  background: var(--rosa-anno-selected);
+  color: var(--rosa-anno-muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.rosa-anno-group-chevron {
+  flex: none;
+  fill: currentColor;
+  transition: transform 150ms ease;
+}
+
+.rosa-anno-group-toggle[aria-expanded='false'] .rosa-anno-group-chevron {
+  transform: rotate(-90deg);
+}
+
+.rosa-place-icon {
+  flex: none;
+  width: 1.1rem;
+  height: 1.43rem;
+}
+
+.rosa-place-icon-page {
+  stroke: currentColor;
+  stroke-width: 1;
+}
+
+.rosa-place-icon-region {
+  fill: currentColor;
+  opacity: 0.55;
+}
+
+.rosa-place-icon-text line {
+  stroke: currentColor;
+  stroke-width: 0.6;
+  opacity: 0.6;
+}
+
+/* Entries */
+
+.rosa-anno-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rosa-anno-list[hidden] {
+  display: none;
+}
+
+.rosa-anno-entry {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--rosa-anno-rule);
+}
+
+.rosa-anno-list .rosa-anno-entry:first-child {
+  border-top-style: dotted;
+}
+
+.rosa-anno-select {
+  padding: 0.5rem 1rem 0.5rem 1.25rem;
+  cursor: pointer;
+}
+
+.rosa-anno-hovered > .rosa-anno-select,
+.rosa-anno-select:hover {
+  background-color: var(--rosa-anno-hover);
+}
+
+.rosa-anno-selected > .rosa-anno-select {
+  background-color: var(--rosa-anno-selected);
+  box-shadow: inset 3px 0 0 var(--rosa-anno-accent);
+}
+
+/* Body HTML conventions (see docs/iiif-generation.md) */
+
+.rosa-anno-body p {
+  margin: 0 0 0.35rem;
+}
+
+.rosa-anno-body p:last-child {
+  margin-bottom: 0;
+}
+
+.rosa-anno-body small {
+  color: var(--rosa-anno-muted);
+  font-size: 0.8125rem;
+}
+
+.rosa-anno-body a {
+  color: var(--rosa-anno-accent);
+}
+
+.rosa-anno-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Notes */
+
+.rosa-note-marker {
+  display: inline-block;
+  margin: 0 0.1em;
+  padding: 0 0.2em;
+  border: 0;
+  border-radius: 3px;
+  background: transparent;
+  color: var(--rosa-anno-accent);
+  font: inherit;
+  font-weight: 700;
+  line-height: 1;
+  vertical-align: super;
+  font-size: 0.85em;
+  cursor: help;
+}
+
+.rosa-note-marker:hover {
+  background: var(--rosa-anno-selected);
+}
+
+.rosa-note-tooltip {
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  max-width: 18rem;
+}
+
+.rosa-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}

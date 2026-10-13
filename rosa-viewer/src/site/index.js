@@ -3,11 +3,17 @@
  */
 
 import { createViewer } from '../index';
-import { resolveSiteConfig, validateSiteEnv } from './config';
+import { annotationStylesheetUrl, resolveSiteConfig, validateSiteEnv } from './config';
+import { addStylesheet } from '../plugins/annotations/utils/stylesheet';
 import { applySiteBranding } from './branding';
 import { connectHistory } from './history';
 
-export { resolveSiteConfig, validateSiteEnv, buildBannerUrl } from './config';
+export {
+  resolveSiteConfig,
+  validateSiteEnv,
+  buildBannerUrl,
+  annotationStylesheetUrl,
+} from './config';
 export { applySiteBranding } from './branding';
 
 /**
@@ -31,6 +37,8 @@ export function createSiteViewer(site, env = globalThis.window?.rosaSiteEnv, opt
 
   const config = resolveSiteConfig(site, env);
   applySiteBranding(site, config);
+  // Per-collection annotation styles from public/styles/
+  addStylesheet(annotationStylesheetUrl(site, env));
   const viewer = viewerFactory(config);
   if (history && typeof viewer?.store?.subscribe === 'function') {
     connectHistory(viewer.store, { siteTitle: site.title });

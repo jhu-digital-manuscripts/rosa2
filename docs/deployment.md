@@ -95,8 +95,10 @@ rosa-viewer/scripts/package-site.sh \
 ```
 
 Run it with `--help` for all options (`--archive`, `--output`, `--jar`). Unpack
-the result at the site URL so that `<site-url>/index.html` and
-`<site-url>/iiif/dlmm/collection.json` resolve. Nothing else is needed on the
+the result at the site URL so that `<site-url>/index.html`,
+`<site-url>/styles/dlmm.css` and `<site-url>/iiif/dlmm/collection.json` resolve.
+The IIIF annotations reference the stylesheet in `styles/` (IIIF cookbook recipe
+0045); it is copied from `rosa-viewer/public/styles/`. Nothing else is needed on the
 host: the pages use relative asset paths, and the only runtime dependencies are
 the IIIF Image API server and the Opensearch endpoint, whose CORS configuration
 must allow the site's origin.
@@ -123,8 +125,12 @@ cd rosa-viewer && npm install && \
 java -jar rosa-tool/target/rosa-tool.jar generate-iiif-pres \
   --archive /data/archive \
   --output /deploy/iiif \
-  --base-url https://viewer.example.org/iiif/
+  --base-url https://viewer.example.org/iiif/ \
+  --annotation-stylesheet-url 'https://viewer.example.org/{collection}/styles/{collection}.css'
 ```
+
+`{collection}` is `aor` or `dlmm`, which are also the site directories, so the URL
+names each site's copy of `public/styles/`.
 
 ### 3. Create Opensearch Indexes
 
@@ -185,7 +191,7 @@ server {
         add_header Access-Control-Allow-Methods "GET, OPTIONS";
     }
 
-    # Sites (each contains index.html, assets/ and logo/)
+    # Sites (each contains index.html, assets/, logo/ and styles/)
     location /aor/  { alias /deploy/rosa-viewer/dist/sites/aor/; }
     location /dlmm/ { alias /deploy/rosa-viewer/dist/sites/dlmm/; }
 }

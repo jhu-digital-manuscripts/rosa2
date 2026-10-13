@@ -9,6 +9,8 @@ Rosa Viewer provides:
 - Full-text search across manifest and canvas metadata
 - Advanced search with per-field queries and boolean operators
 - Integration with Mirador's page-turner viewer
+- An annotations panel that groups a page's annotations (AoR by place on the
+  page, DLMM by kind) and styles them per collection
 
 ## Prerequisites
 
@@ -58,6 +60,38 @@ substituted into each site's `index.html` at build time:
 `.env.local` (git-ignored) or per build with environment variables. The values
 end up in plain text in the built `index.html`, so they can also be edited there
 if a site is moved after it was built.
+
+### Annotations
+
+The `RosaAnnotations` plugin (`src/plugins/annotations/`) replaces the list of
+annotations Mirador shows for each canvas in the annotations side panel:
+
+- AoR annotations are grouped by where they are on the page (head, left margin,
+  in text, right margin, tail, full page) under collapsible headings with a small
+  page diagram, after a page header with pagination and reader. DLMM annotations
+  are grouped into Illustration, Transcription (one entry per column) and
+  Commentary.
+- The annotation body `styleClass` (IIIF cookbook recipe 0045, see
+  [`docs/iiif-generation.md`](../docs/iiif-generation.md#annotation-bodies)) becomes
+  the CSS classes of each entry. They are styled by `public/styles/aor.css` and
+  `public/styles/dlmm.css`, which `createSiteViewer()` links from
+  `<base>/styles/<collectionId>.css`, in the same way collection logos come from
+  `public/logo/`. rosa-tool's `--annotation-stylesheet-url` points the IIIF
+  annotations' `stylesheet` at the same files, so other viewers can use them too.
+  `src/plugins/annotations/annotations.css` has the layout shared by both.
+- Editorial notes in transcriptions become an asterisk that shows the note on
+  hover, keyboard focus or tap.
+
+**Why `dompurify` is a direct dependency.** Mirador sanitizes annotation HTML
+with its `iiif` rule set, which keeps only `a b br i img p span`. It drops
+`small`, `sub` and `sup`, which the IIIF HTML recipe allows and the Rosa
+annotations use for metadata, line numbers and notes, and Mirador's rule sets
+cannot be extended (only `iiif`, `liberal`, `mirador2` and `noHtml` exist). The
+plugin therefore sanitizes annotation bodies itself, with DOMPurify configured to
+the recipe's tag and attribute list (`src/plugins/annotations/utils/sanitize.js`).
+The version is pinned to the one Mirador depends on. Mirador's build inlines its
+own copy, so the site bundle carries DOMPurify twice (about 25 kB). If a later
+Mirador version allows configuring its sanitizer, this dependency can go.
 
 ### URLs and browser history
 
@@ -230,7 +264,8 @@ rosa-viewer/
 │   ├── build-sites.mjs       # npm run build:sites
 │   └── package-site.sh       # Viewer + IIIF files -> deployable directory / tarball
 ├── public/
-│   └── logo/                 # Collection logos, copied next to each built site
+│   ├── logo/                 # Collection logos, copied next to each built site
+│   └── styles/               # Annotation stylesheets aor.css, dlmm.css (also referenced from IIIF)
 ├── src/
 │   ├── index.js              # Library entry point (createViewer)
 │   ├── config.js             # Default configuration
@@ -240,6 +275,7 @@ rosa-viewer/
 │   ├── styles/
 │   ├── test/                 # Vitest setup and shared mocks
 │   └── plugins/
+│       ├── annotations/      # RosaAnnotations plugin: grouped, styled annotations panel
 │       └── jhsearch/         # JHSearch plugin
 │           ├── index.jsx
 │           ├── state/        # Redux state management
@@ -268,7 +304,7 @@ rosa-viewer/scripts/package-site.sh \
 ```
 
 Copy the contents of the output directory (or unpack the tarball) at the site
-URL so that `<site-url>/index.html` and `<site-url>/iiif/` resolve. The
+URL so that `<site-url>/index.html`, `<site-url>/styles/` and `<site-url>/iiif/` resolve. The
 Opensearch endpoint must allow the site's origin in its CORS configuration.
 
 The GitHub Actions workflows automate this: `Deploy Stage` publishes both sites
@@ -278,6 +314,7 @@ to a release. See [`docs/deployment.md`](../docs/deployment.md).
 ## Dependencies
 
 - [Mirador](https://github.com/ProjectMirador/mirador) - IIIF viewer
+- [DOMPurify](https://github.com/cure53/DOMPurify) - Annotation HTML sanitizing (see [Annotations](#annotations))
 - [React](https://reactjs.org/) - UI framework
 - [MUI](https://mui.com/) - Component library
 - [Vite](https://vitejs.dev/) - Build tool

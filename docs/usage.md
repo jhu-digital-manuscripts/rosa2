@@ -23,7 +23,7 @@ Use `--help` on any command for detailed usage. All commands exit with code 0 on
 Generates static IIIF Presentation API 3.0 JSON files from archive data.
 
 ```
-java -jar rosa-tool.jar generate-iiif-pres --archive <dir> --output <dir> [--base-url <url>] [--image-base-url <url>] [--image-api-version <2|3>] [--opensearch-url <url>]
+java -jar rosa-tool.jar generate-iiif-pres --archive <dir> --output <dir> [--base-url <url>] [--image-base-url <url>] [--image-api-version <2|3>] [--opensearch-url <url>] [--annotation-stylesheet-url <url>]
 ```
 
 | Option | Required | Description |
@@ -34,6 +34,7 @@ java -jar rosa-tool.jar generate-iiif-pres --archive <dir> --output <dir> [--bas
 | `--image-base-url` | No | Base URL for IIIF Image API services. Defaults to `--base-url`. |
 | `--image-api-version` | No | IIIF Image API version: `2` (default) or `3` |
 | `--opensearch-url` | No | Opensearch `_search` endpoint URL. When given, a `service/jhsearch.json` file is written per collection and referenced from collections and manifests (see [Search](search.md)). |
+| `--annotation-stylesheet-url` | No | URL of the stylesheet each commenting annotation references in its `stylesheet` property (IIIF cookbook recipe 0045). `{collection}` is replaced by the top-level collection id (`aor`, or `dlmm` for `rose` and `pizan`), e.g. `https://example.org/aor/styles/{collection}.css`. If omitted, annotations have no `stylesheet`. See [Annotation bodies](iiif-generation.md#annotation-bodies). |
 
 ### generate-opensearch-ingest
 

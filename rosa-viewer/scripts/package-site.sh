@@ -6,6 +6,7 @@
 #
 # Output layout:
 #   <output>/index.html, assets/, logo/   the viewer built for the site
+#   <output>/styles/<collection>.css      annotation stylesheets (from public/styles/)
 #   <output>/iiif/                        IIIF files for the site's collections
 #
 # Usage:
@@ -15,7 +16,8 @@
 #   --site <id>              Site to build: aor or dlmm (required)
 #   --site-url <url>         Public URL the site will be served from, e.g.
 #                            https://archaeologyofreading.org/viewer (required).
-#                            IIIF ids are generated under <site-url>/iiif/.
+#                            IIIF ids are generated under <site-url>/iiif/ and
+#                            annotations reference <site-url>/styles/<collection>.css.
 #   --opensearch-url <url>   Opensearch _search URL written to jhsearch.json (required)
 #   --image-base-url <url>   IIIF Image API base URL (default: https://image.library.jhu.edu/iiif)
 #   --image-api-version <n>  IIIF Image API version, 2 or 3 (default: 2)
@@ -45,7 +47,7 @@ OUTPUT=""
 TARBALL=""
 
 usage() {
-    sed -n '3,29p' "$0" | sed 's/^# \?//'
+    sed -n '3,31p' "$0" | sed 's/^# \?//'
     exit "${1:-0}"
 }
 
@@ -96,6 +98,7 @@ echo "  site URL:          $SITE_URL"
 echo "  IIIF base URL:     $IIIF_BASE_URL"
 echo "  image base URL:    $IMAGE_BASE_URL (API v$IMAGE_API_VERSION)"
 echo "  Opensearch URL:    $OPENSEARCH_URL"
+echo "  annotation styles: $SITE_URL/styles/{collection}.css"
 echo "  output:            $OUTPUT"
 
 rm -rf "$OUTPUT"
@@ -108,7 +111,8 @@ java -jar "$JAR" generate-iiif-pres \
     --base-url "$IIIF_BASE_URL/" \
     --image-base-url "$IMAGE_BASE_URL" \
     --image-api-version "$IMAGE_API_VERSION" \
-    --opensearch-url "$OPENSEARCH_URL"
+    --opensearch-url "$OPENSEARCH_URL" \
+    --annotation-stylesheet-url "$SITE_URL/styles/{collection}.css"
 
 echo "==> Keeping collections: ${COLLECTIONS[*]}"
 for entry in "$OUTPUT"/iiif/*; do

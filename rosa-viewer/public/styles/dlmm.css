@@ -1,0 +1,246 @@
+/*
+ * Digital Library of Medieval Manuscripts annotation styles (Roman de la Rose
+ * and Christine de Pizan).
+ *
+ * Referenced by the DLMM IIIF annotations (stylesheet property, IIIF cookbook
+ * recipe 0045) and loaded by the DLMM site. Classes come from the annotation
+ * body styleClass: rosa-anno with dlmm-illustration, dlmm-transcription
+ * (plus dlmm-column-{n}) or dlmm-commentary. Transcription HTML conventions
+ * (see docs/iiif-generation.md):
+ *
+ *   <p><b>Column a</b></p>                         column heading
+ *   <p><span>line</span><br><span>line</span></p>  a line group (couplet)
+ *   <sub>215</sub>  logical line number, every 5th, at the start of a line
+ *   <sup>220</sup>  Lecoy edition line number, every 5th, at the end of a line
+ *   <b>M</b>aintes  initial;  <b><i>rubric</i></b>;  <i>expansion</i>
+ *   <small>*&nbsp;note</small>                      editorial note
+ *
+ * Palette follows sites/dlmm/site.css: slate and rose over ivory.
+ */
+
+.rosa-annos {
+  --rosa-anno-fg: #1f2933;
+  --rosa-anno-muted: #52606d;
+  --rosa-anno-accent: #9b2c3a;
+  --rosa-anno-rule: rgba(31, 41, 51, 0.12);
+  --rosa-anno-hover: rgba(155, 44, 58, 0.04);
+  --rosa-anno-selected: rgba(155, 44, 58, 0.09);
+  --rosa-anno-heading-bg: #f3f2ef;
+  --rosa-anno-font:
+    system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --rosa-anno-heading-font:
+    'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;
+}
+
+.rosa-annos .rosa-anno-group-toggle {
+  padding-block: 0.6rem;
+  font-size: 1rem;
+}
+
+.rosa-anno[class*='dlmm-'] {
+  color: #1f2933;
+}
+
+.rosa-anno[class*='dlmm-'] p {
+  margin: 0 0 0.4rem;
+}
+
+.rosa-anno[class*='dlmm-'] p:last-child {
+  margin-bottom: 0;
+}
+
+/* Section headings: a paragraph that is only bold text. The Rosa viewer marks
+   them rosa-heading; CSS alone cannot tell them from <p><b>Label:</b> value</p>. */
+.rosa-anno[class*='dlmm-'] p.rosa-heading {
+  margin: 0.75rem 0 0.35rem;
+  color: #9b2c3a;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.rosa-anno[class*='dlmm-'] p.rosa-heading:first-child {
+  margin-top: 0;
+}
+
+/* The group heading already says Illustration */
+.rosa-annos .dlmm-illustration p.rosa-heading:first-child {
+  display: none;
+}
+
+/* Label: value rows (illustrations and commentary) */
+.rosa-anno:is(.dlmm-illustration, .dlmm-commentary) p:not(.rosa-heading) > b:first-child {
+  color: #3e4c59;
+  font-weight: 600;
+}
+
+.rosa-anno:is(.dlmm-illustration, .dlmm-commentary) p {
+  line-height: 1.5;
+}
+
+.rosa-anno.dlmm-commentary small {
+  color: #52606d;
+  font-size: 0.75rem;
+}
+
+/* Transcription ------------------------------------------------------------ */
+
+.rosa-anno.dlmm-transcription {
+  --line-gutter: 2.25rem;
+  font-family: 'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;
+  font-size: 1.0625rem;
+  line-height: 1.5;
+}
+
+.rosa-anno.dlmm-transcription p.rosa-heading {
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+}
+
+/* A rubric on its own is text, not a section heading */
+.rosa-anno.dlmm-transcription p.rosa-heading:has(> b > i) {
+  margin: 0.2rem 0 0.4rem;
+  padding-left: var(--line-gutter);
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+/* Couplets: a little space between line groups */
+.rosa-anno.dlmm-transcription p:has(> span) {
+  margin: 0 0 0.55rem;
+}
+
+/* Each verse line on its own row, with gutters for the line numbers */
+.rosa-anno.dlmm-transcription p > span {
+  display: block;
+  position: relative;
+  padding-left: var(--line-gutter);
+  padding-right: 2.75rem;
+}
+
+.rosa-anno.dlmm-transcription p > br {
+  display: none;
+}
+
+/* Logical line number: left gutter */
+.rosa-anno.dlmm-transcription p > span > sub {
+  position: absolute;
+  left: 0;
+  width: calc(var(--line-gutter) - 0.6rem);
+  bottom: auto;
+  top: 0.2em;
+  color: #52606d;
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.5rem;
+  text-align: right;
+  vertical-align: baseline;
+}
+
+/* Lecoy edition line number: right gutter, italic, in the accent colour */
+.rosa-anno.dlmm-transcription p > span > sup {
+  position: absolute;
+  right: 0;
+  top: 0.2em;
+  color: #9b2c3a;
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+  font-size: 0.75rem;
+  font-style: italic;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.5rem;
+  vertical-align: baseline;
+}
+
+.rosa-anno.dlmm-transcription p > span > sup::before {
+  content: 'L\00a0';
+  font-style: normal;
+  opacity: 0.75;
+}
+
+/* Initials and rubrics */
+.rosa-anno.dlmm-transcription span > b:first-child:not(:has(i)) {
+  color: #2c5aa0;
+  font-size: 1.35em;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.rosa-anno.dlmm-transcription b:has(> i) {
+  color: #a3322a;
+  font-weight: 500;
+}
+
+.rosa-anno.dlmm-transcription b:has(> i) > i {
+  font-style: normal;
+}
+
+/* Expanded abbreviations */
+.rosa-anno.dlmm-transcription span i {
+  color: #3e4c59;
+}
+
+/* Miniatures: <p><b>Miniature:</b> <i>…</i><br><small>Characters …</small></p> */
+.rosa-anno.dlmm-transcription p:has(> b:first-child + i) {
+  margin: 0.3rem 0 0.7rem;
+  padding: 0.45rem 0.6rem;
+  border-left: 3px solid #c9a227;
+  background: #faf6ea;
+  font-size: 0.9375rem;
+}
+
+.rosa-anno.dlmm-transcription p:has(> b:first-child + i) > b:first-child {
+  color: #7a5c00;
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.rosa-anno.dlmm-transcription p:has(> b:first-child + i) > br {
+  display: inline;
+}
+
+.rosa-anno.dlmm-transcription small {
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+  color: #52606d;
+  font-size: 0.8125rem;
+}
+
+/* Gaps and catchwords */
+.rosa-anno.dlmm-transcription p.rosa-meta {
+  margin: 0.2rem 0 0.5rem var(--line-gutter);
+}
+
+/* Note markers (the asterisk) in the transcription */
+.rosa-annos .dlmm-transcription .rosa-note-marker {
+  color: #1f7a4d;
+  font-size: 0.9em;
+}

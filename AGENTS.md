@@ -30,6 +30,7 @@ rosa2/
 │       ├── index.js, config.js
 │       ├── site/               createSiteViewer, resolveSiteConfig, shared site.css
 │       ├── plugins/jhsearch/   components/ hooks/ services/ state/ utils/
+│       ├── plugins/annotations/  RosaAnnotations panel (grouped, styled annotations)
 │       ├── i18n/, styles/
 │       └── test/               setup.js, mocks.js
 ├── rosa-search/
@@ -84,7 +85,8 @@ Common invocations against the in-repo archive:
 java -jar rosa-tool/target/rosa-tool.jar check --archive archive
 java -jar rosa-tool/target/rosa-tool.jar validate-xml --archive archive --collection aor
 java -jar rosa-tool/target/rosa-tool.jar generate-iiif-pres --archive archive --output /tmp/iiif \
-  [--base-url URL] [--image-base-url URL] [--image-api-version 2|3] [--opensearch-url URL]
+  [--base-url URL] [--image-base-url URL] [--image-api-version 2|3] [--opensearch-url URL] \
+  [--annotation-stylesheet-url 'URL/{collection}.css']
 java -jar rosa-tool/target/rosa-tool.jar generate-opensearch-ingest --archive archive --output /tmp/bulk
 ```
 
@@ -188,6 +190,10 @@ Use `stage.s3.tfbackend` / `stage.tfvars` for stage. Image server build:
   (e.g. `aor.Ha2.001r`). Canvas URIs use a 0-based index `…/canvas/{page_num}` that matches the Opensearch `page_num` field.
 - IIIF image identifiers contain slashes and are percent-encoded as a single segment (`rose%2FDouce195%2F…`).
 - IIIF JSON output is compact, deterministic, and omits nulls and empty values. Keep it that way.
+- Annotation bodies are recipe 0045 `SpecificResource`s with a `styleClass` wrapping HTML limited to the
+  recipe 0019 tags (`a b br i img p small span sub sup`). The HTML conventions and classes in
+  `docs/iiif-generation.md#annotation-bodies` are shared with `rosa-viewer/public/styles/{aor,dlmm}.css`;
+  change them together.
 - Text fields use per-language sub-fields (`.en .fr .ofr .la .it .el .es .de`); unknown languages fall back to `.en`.
   Mixed fields (`mark`, `symbol`, `drawing`, `calculation`, `graph`, `table`) also have `.keyword`.
 - The Opensearch Bulk API returns HTTP 200 even when documents fail. Check for `"errors":true`.
