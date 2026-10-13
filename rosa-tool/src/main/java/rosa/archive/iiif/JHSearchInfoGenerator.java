@@ -150,10 +150,10 @@ public final class JHSearchInfoGenerator {
                     "Words or phrases in the printed text that have been underlined.",
                     true, null);
             case "mark" -> new FieldMetadata("Mark",
-                    "Pen marks made on a page that may not have consistent abstract meaning. Search mark.keyword for specific mark types, or mark.* for referenced text.",
+                    "Pen marks made on a page that may not have consistent abstract meaning. Search for specific mark types or referenced text.",
                     true, markValues());
             case "symbol" -> new FieldMetadata("Symbol",
-                    "Simple drawings that carry some abstract and consistent meaning. Search symbol.keyword for specific symbols, or symbol.* for referenced text.",
+                    "Simple drawings that carry some abstract and consistent meaning. Search for specific symbols or referenced text.",
                     true, symbolValues());
             case "errata" -> new FieldMetadata("Errata",
                     "Corrections made by a reader to the printed text.",
@@ -162,7 +162,7 @@ public final class JHSearchInfoGenerator {
                     "Numbers written in the book.",
                     true, null);
             case "drawing" -> new FieldMetadata("Drawing",
-                    "Drawings or diagrams. Search drawing.keyword for specific drawing types, or drawing.* for text.",
+                    "Drawings or diagrams. Search for specific drawing types or referenced text.",
                     true, drawingValues());
             case "emphasis" -> new FieldMetadata("Emphasis",
                     "Words or phrases within the readers marginal notes that have been underlined or otherwise emphasized.",
