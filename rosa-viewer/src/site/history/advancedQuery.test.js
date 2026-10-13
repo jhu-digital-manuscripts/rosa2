@@ -38,11 +38,19 @@ describe('parseAdvancedQuery', () => {
     ).toEqual(['repository', 'locations', 'books']);
   });
 
+  it('parses extra text after a value', () => {
+    expect(parseAdvancedQuery("(mark:'dash'+'regnum' & mark:'' + 'l\\'homme')")).toEqual([
+      { field: 'mark', value: 'dash', text: 'regnum', operator: 'AND' },
+      { field: 'mark', value: '', text: "l'homme", operator: 'AND' },
+    ]);
+  });
+
   it('returns null for text it cannot parse', () => {
     expect(parseAdvancedQuery('green')).toBeNull();
     expect(parseAdvancedQuery("description:'sword")).toBeNull();
     expect(parseAdvancedQuery("(description:'sword'")).toBeNull();
     expect(parseAdvancedQuery("description:'a' extra")).toBeNull();
+    expect(parseAdvancedQuery("mark:'dash'+")).toBeNull();
     expect(parseAdvancedQuery('')).toBeNull();
   });
 });
@@ -69,11 +77,22 @@ describe('formatAdvancedQuery', () => {
     expect(formatAdvancedQuery([{ field: '', value: '', operator: 'AND' }])).toBe('');
   });
 
+  it('formats extra text and keeps rows that have only extra text', () => {
+    expect(
+      formatAdvancedQuery([
+        { field: 'mark', value: 'dash', text: ' regnum ', operator: 'AND' },
+        { field: 'symbol', value: '', text: 'sol', operator: 'OR' },
+        { field: 'mark', value: 'dot', text: ' ', operator: 'AND' },
+      ])
+    ).toBe("(mark:'dash'+'regnum' | symbol:''+'sol' & mark:'dot')");
+  });
+
   it('round-trips through parseAdvancedQuery', () => {
     const rows = [
       { field: 'marginalia', value: 'rome', operator: 'AND' },
       { field: 'people', value: 'Livy', operator: 'OR' },
       { field: 'mark', value: 'a\\b', operator: 'AND' },
+      { field: 'mark', value: 'dash', text: "it's", operator: 'AND' },
     ];
     expect(parseAdvancedQuery(formatAdvancedQuery(rows))).toEqual(rows);
   });

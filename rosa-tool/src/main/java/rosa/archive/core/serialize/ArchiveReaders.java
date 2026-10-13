@@ -51,6 +51,7 @@ import rosa.archive.model.aor.Drawing;
 import rosa.archive.model.aor.Errata;
 import rosa.archive.model.aor.Graph;
 import rosa.archive.model.aor.GraphNode;
+import rosa.archive.model.aor.GraphNote;
 import rosa.archive.model.aor.GraphText;
 import rosa.archive.model.aor.Location;
 import rosa.archive.model.aor.Marginalia;
@@ -1006,7 +1007,7 @@ public final class ArchiveReaders {
                             id,
                             annotation.getAttribute("text"),
                             annotation.getTextContent(),
-                            null,
+                            annotation.getAttribute("language"),
                             loc
                     );
                     page.getNumerals().add(n);
@@ -1040,6 +1041,21 @@ public final class ArchiveReaders {
                                 txtEl.getAttribute("anchor_text"),
                                 txtEl.getTextContent()
                         ));
+                    }
+                    for (Element el : getDirectChildElements("person", annotation)) {
+                        d.getPeople().add(el.getAttribute("name"));
+                    }
+                    for (Element el : getDirectChildElements("book", annotation)) {
+                        d.getBooks().add(el.getAttribute("title"));
+                    }
+                    for (Element el : getDirectChildElements("location", annotation)) {
+                        d.getLocations().add(el.getAttribute("name"));
+                    }
+                    for (Element el : getDirectChildElements("symbol_in_text", annotation)) {
+                        d.getSymbols().add(el.getAttribute("name"));
+                    }
+                    for (Element el : getDirectChildElements("translation", annotation)) {
+                        d.setTranslation(el.getTextContent());
                     }
                     page.getDrawings().add(d);
                 }
@@ -1087,6 +1103,7 @@ public final class ArchiveReaders {
         marg.setDate(annotation.getAttribute("date"));
         marg.setOtherReader(annotation.getAttribute("other_reader"));
         marg.setTopic(annotation.getAttribute("topic"));
+        marg.setMethod(annotation.getAttribute("method"));
         marg.setReferencedText(annotation.getAttribute("anchor_text"));
 
         Location loc = getLocation(annotation.getAttribute("place"));
@@ -1150,16 +1167,27 @@ public final class ArchiveReaders {
         for (Element el : getDirectChildElements("location", posEl)) {
             pos.getLocations().add(el.getAttribute("name"));
         }
+        // Symbols named in the marginal text
+        for (Element el : getDirectChildElements("symbol_in_text", posEl)) {
+            pos.getSymbols().add(el.getAttribute("name"));
+        }
+        for (Element el : getDirectChildElements("marginalia_symbol", posEl)) {
+            pos.getSymbols().add(el.getAttribute("name"));
+        }
         // XRefs
         for (Element el : getDirectChildElements("X-ref", posEl)) {
-            XRef xref = new XRef(el.getAttribute("person"), el.getAttribute("title"), el.getTextContent(), null);
+            XRef xref = new XRef(
+                    el.getAttribute("person"),
+                    el.getAttribute("book_title"),
+                    el.getAttribute("text"),
+                    el.getAttribute("language"));
             pos.getXRefs().add(xref);
         }
         // Emphasis (underline elements within position)
         for (Element el : getDirectChildElements("emphasis", posEl)) {
             Underline emphasis = new Underline(
                     null,
-                    el.getTextContent(),
+                    el.getAttribute("text"),
                     el.getAttribute("method"),
                     el.getAttribute("type"),
                     el.getAttribute("language"),
@@ -1207,7 +1235,7 @@ public final class ArchiveReaders {
             GraphNode node = new GraphNode(
                     nodeEl.getAttribute("id"),
                     nodeEl.getAttribute("person"),
-                    null,
+                    nodeEl.getAttribute("anchor_text"),
                     nodeEl.getTextContent().trim()
             );
             graph.getNodes().add(node);
@@ -1233,6 +1261,24 @@ public final class ArchiveReaders {
         for (Element locEl : getDirectChildElements("location", el)) {
             gt.addLocation(locEl.getAttribute("name"));
         }
+        for (Element symEl : getDirectChildElements("symbol_in_text", el)) {
+            gt.addSymbol(symEl.getAttribute("name"));
+        }
+        for (Element noteEl : getDirectChildElements("note", el)) {
+            gt.addNote(new GraphNote(
+                    noteEl.getAttribute("id"),
+                    noteEl.getAttribute("hand"),
+                    noteEl.getAttribute("language"),
+                    noteEl.getAttribute("internal_link"),
+                    noteEl.getAttribute("anchor_text"),
+                    noteEl.getTextContent().trim()));
+        }
+        for (Element transEl : getDirectChildElements("translation", el)) {
+            String translation = transEl.getTextContent().trim();
+            if (!translation.isEmpty()) {
+                gt.addTranslation(translation);
+            }
+        }
 
         return gt;
     }
@@ -1242,11 +1288,33 @@ public final class ArchiveReaders {
         Table table = new Table(null, loc);
         table.setType(tableEl.getAttribute("type"));
 
+        // Symbols named in the table
+        for (Element el : getDirectChildElements("symbol_in_text", tableEl)) {
+            table.getSymbols().add(el.getAttribute("name"));
+        }
+        for (Element el : getDirectChildElements("person", tableEl)) {
+            table.getPeople().add(el.getAttribute("name"));
+        }
+        for (Element el : getDirectChildElements("book", tableEl)) {
+            table.getBooks().add(el.getAttribute("title"));
+        }
+        for (Element el : getDirectChildElements("location", tableEl)) {
+            table.getLocations().add(el.getAttribute("name"));
+        }
+        // Reader's notes written with the table
+        for (Element el : getDirectChildElements("text", tableEl)) {
+            table.getTexts().add(new TextEl(
+                    el.getAttribute("hand"),
+                    el.getAttribute("language"),
+                    el.getAttribute("anchor_text"),
+                    el.getTextContent().trim()));
+        }
+
         // Headers
         for (Element hEl : getDirectChildElements("tr", tableEl)) {
             List<TableHeader> headers = new ArrayList<>();
             for (Element thEl : getDirectChildElements("th", hEl)) {
-                TableHeader th = new TableHeader("", "", "", thEl.getTextContent().trim());
+                TableHeader th = new TableHeader(thEl.getAttribute("label"), "", "", thEl.getTextContent().trim());
                 headers.add(th);
             }
             if (!headers.isEmpty()) {
@@ -1255,7 +1323,7 @@ public final class ArchiveReaders {
             // Cells
             List<TableCell> cells = new ArrayList<>();
             for (Element tdEl : getDirectChildElements("td", hEl)) {
-                TableCell cell = new TableCell(0, 0, "", "", tdEl.getTextContent().trim());
+                TableCell cell = new TableCell(0, 0, tdEl.getAttribute("anchor_text"), "", tdEl.getTextContent().trim());
                 cells.add(cell);
             }
             if (!cells.isEmpty()) {

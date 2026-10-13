@@ -217,6 +217,13 @@ describe('formatRoute', () => {
     ).toBe("rose/search?q=(description:'sword'+%7C+title:'x')&type=advanced&s=page");
   });
 
+  it('round-trips extra text on an advanced search row', () => {
+    const rows = [{ field: 'mark', value: 'dash', text: 'regnum rex', operator: 'AND' }];
+    const url = formatRoute({ ...browse, type: 'search', mode: 'advanced', rows }, ctx);
+    expect(url).toBe("rose/search?q=mark:'dash'%2B'regnum+rex'&type=advanced");
+    expect(parse(`#${url}`)).toMatchObject({ mode: 'advanced', rows });
+  });
+
   it('formats a search without a query as browsing', () => {
     expect(formatRoute({ ...browse, type: 'search', mode: 'simple', query: '' }, ctx)).toBe('rose');
   });

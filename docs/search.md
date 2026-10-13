@@ -92,7 +92,7 @@ The `service/jhsearch.json` file is a static JSON file generated per collection.
 | `fields` | Array of searchable fields. Each has `name`, `label`, `description`, optional `has_subfields` boolean, and optional `values` (enumerated values). |
 | `fields[].name` | The Opensearch field name. |
 | `fields[].has_subfields` | Boolean indicating whether the field has language sub-fields (e.g., `.en`, `.fr`, `.la`) and/or a `.keyword` sub-field. When true, use `name.*` wildcard in multi_match queries. |
-| `fields[].values` | Array of `{value, label}` pairs for fields with enumerated keyword values (searched via `field.keyword`), sorted alphabetically by label. |
+| `fields[].values` | Array of `{value, label}` pairs for fields with enumerated keyword values (matched with a `term` query on `field.keyword` when `has_subfields` is true, else on `field`), sorted alphabetically by label. |
 | `categories` | Array of facet categories. Each `name` is an Opensearch keyword field suitable for `terms` aggregations. |
 | `default-fields` | Array of field names searched when no explicit field is specified in the query. |
 | `opensearch` | The Opensearch `_search` endpoint URL that clients can query directly. |
@@ -104,7 +104,7 @@ The `service/jhsearch.json` file is a static JSON file generated per collection.
 3. Dereference the service `id` to fetch `service/jhsearch.json`.
 4. Use the `fields` and `categories` to build a search UI.
 5. For fields with `has_subfields: true`, use `fieldName.*` wildcard in multi_match queries to search all sub-fields.
-6. For fields with `values`, present enumerated options and query `field.keyword: "value"`.
+6. For fields with `values`, present enumerated options and match the chosen value exactly with a `term` query: on `field.keyword` when `has_subfields` is true (e.g. `{"term":{"mark.keyword":"dash"}}`), otherwise on the keyword field itself (e.g. `{"term":{"method":"pen"}}`).
 7. Send queries to the `opensearch` endpoint using the Opensearch query DSL.
 
 ### Handling Failure and Partial Responses
@@ -186,7 +186,7 @@ Per-type annotation fields (multi-language text objects):
 - `marginalia`, `underline`, `mark`, `symbol`, `errata`, `numeral`, `drawing`, `emphasis`, `cross_reference`, `calculation`, `graph`, `table`, `transcription`, `illustration`, `translation`, `anchor_text`
 
 Keyword array fields:
-- `people`, `books`, `locations`, `symbols`, `method`, `hand`, `annotator`, `language`, `marginalia_language`, `topic`, `char_name`
+- `people`, `books`, `locations`, `method`, `hand`, `annotator`, `language`, `marginalia_language`, `topic`, `char_name`
 
 See `docs/opensearch-indexes.md` for complete field definitions.
 
@@ -219,7 +219,7 @@ Fields like `mark`, `symbol`, `drawing`, `calculation`, `graph`, and `table` con
 
 - `mark.keyword` — the mark type name (e.g. `"plus_sign"`)
 - `mark.en` — the mark's referenced text in English
-- `symbol.keyword` — the symbol name (e.g. `"Jupiter"`)
+- `symbol.keyword` — the symbol name (e.g. `"Jupiter"`), from symbol annotations and from symbols named in the text of other annotations
 - `drawing.keyword` — the drawing type (e.g. `"manicule"`)
 
 ### Language Fallback

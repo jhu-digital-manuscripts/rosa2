@@ -19,9 +19,10 @@ import { SortOrder } from './SortOrder';
 
 import * as selectors from '../state/selectors';
 import { clearSearch, setSearchMode, setViewMode } from '../state/actions';
+import { rowHasQuery } from '../utils/queryBuilder';
 
 const MIN_WIDTH = 300;
-const DEFAULT_WIDTH = 300;
+const DEFAULT_WIDTH = 450;
 
 /**
  * JHSearchSidebar provides all search and browse controls.
@@ -55,7 +56,7 @@ export function JHSearchSidebar() {
     if (newMode === 'simple' && simpleQuery.trim()) {
       dispatch(setViewMode('search'));
     } else if (newMode === 'advanced') {
-      const hasAdvancedQuery = advancedRows.some((row) => row.value && row.value.trim());
+      const hasAdvancedQuery = advancedRows.some(rowHasQuery);
       if (hasAdvancedQuery) {
         dispatch(setViewMode('search'));
       } else {

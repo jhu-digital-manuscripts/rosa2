@@ -2,6 +2,8 @@
  * Redux selectors for JHSearch plugin.
  */
 
+import { rowHasQuery } from '../utils/queryBuilder';
+
 // ============================================================================
 // Base Selectors
 // ============================================================================
@@ -172,7 +174,7 @@ export const hasActiveSearch = (state) => {
     return getSimpleQuery(state).trim().length > 0;
   } else {
     const rows = getAdvancedRows(state);
-    return rows.some((row) => row.value && row.value.trim().length > 0);
+    return rows.some(rowHasQuery);
   }
 };
 

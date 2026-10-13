@@ -30,6 +30,17 @@ export function expandFieldsWithSubfields(fieldNames, fieldDefinitions) {
 }
 
 /**
+ * Whether an advanced search row has anything to search for: a value, or the
+ * optional extra text that enumerated fields with sub-fields accept.
+ *
+ * @param {{value?: string, text?: string}} row - Advanced search row
+ * @returns {boolean}
+ */
+export function rowHasQuery(row) {
+  return Boolean((row.value && row.value.trim()) || (row.text && row.text.trim()));
+}
+
+/**
  * Build highlight configuration for search fields.
  *
  * @param {string[]} fields - Field names to highlight
@@ -243,7 +254,7 @@ export function buildSimpleSearchQuery({
  * Build an advanced search query with multiple field-specific clauses.
  *
  * @param {Object} options - Query options
- * @param {Object[]} options.rows - Search rows with field, value, operator
+ * @param {Object[]} options.rows - Search rows with field, value, optional text, operator
  * @param {Object[]} options.fieldDefinitions - Field definitions for subfield expansion
  * @param {string} options.collectionId - Collection ID to filter by
  * @param {Object} options.facets - Selected facet values
@@ -271,19 +282,38 @@ export function buildAdvancedSearchQuery({
   const isKnownField = (field) =>
     fieldDefinitions.length === 0 || fieldDefinitions.some((f) => f.name === field);
   const clauses = rows
-    .filter((row) => row.value && row.value.trim() && row.field && isKnownField(row.field))
+    .filter((row) => row.field && rowHasQuery(row) && isKnownField(row.field))
     .map((row) => {
       const fieldDef = fieldDefinitions.find((f) => f.name === row.field);
       const searchFields = fieldDef?.has_subfields ? [`${row.field}.*`] : [row.field];
+      const match = (query) => ({
+        multi_match: {
+          query,
+          fields: searchFields,
+          type: 'best_fields',
+        },
+      });
+
+      // A value picked from a dropdown is an exact keyword: match it with a term
+      // query on the keyword sub-field, or on the field itself when it is a plain
+      // keyword field, rather than running it through every analyzed sub-field.
+      const value = row.value && row.value.trim();
+      const text = row.text && row.text.trim();
+      const hasValues = Boolean(fieldDef?.values && fieldDef.values.length > 0);
+      const valueClause = !value
+        ? null
+        : hasValues
+          ? { term: { [fieldDef.has_subfields ? `${row.field}.keyword` : row.field]: value } }
+          : match(row.value);
+
+      // A row for an enumerated field with sub-fields can carry free text as well
+      // as the chosen value. Both must match, so 'dash' plus 'regnum' finds pages
+      // with a dash mark and 'regnum' in the marks' referenced text.
+      const parts = [valueClause, text ? match(text) : null].filter(Boolean);
+      const clause = parts.length === 1 ? parts[0] : { bool: { must: parts } };
 
       return {
-        clause: {
-          multi_match: {
-            query: row.value,
-            fields: searchFields,
-            type: 'best_fields',
-          },
-        },
+        clause,
         operator: row.operator || 'AND',
         searchFields,
       };

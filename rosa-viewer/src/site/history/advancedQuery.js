@@ -5,7 +5,8 @@
  * The grammar is the one the previous AoR and DLMM viewers put in their URLs, so
  * old bookmarks keep working:
  *
- *   term      := field ":" "'" value "'"        (\ escapes ' and \ in value)
+ *   term      := field ":" quoted ("+" quoted)?
+ *   quoted    := "'" chars "'"                 (\ escapes ' and \ in chars)
  *   query     := term | "(" query (op query)* ")"
  *   op        := "&" (AND) | "|" (OR)
  *
@@ -14,6 +15,10 @@
  * with the operator joining it to the rows before it, so parsing flattens groups
  * the same way the old viewer did: the operator in front of a group applies to
  * the group's first term. Formatting writes the flat form `(a:'x' & b:'y' | c:'z')`.
+ *
+ * The optional `+ quoted` part is the extra free text a row for an enumerated
+ * field with sub-fields can carry beside its chosen value, e.g. `mark:'dash'+'regnum'`.
+ * The value may then be empty: `mark:''+'regnum'`. The old viewers never wrote it.
  */
 
 /**
@@ -32,23 +37,33 @@ function escapeValue(value) {
   return value.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
 }
 
+function hasText(value) {
+  return Boolean(value && value.trim());
+}
+
+function formatTerm(row) {
+  const term = `${row.field}:'${escapeValue((row.value || '').trim())}'`;
+  return hasText(row.text) ? `${term}+'${escapeValue(row.text.trim())}'` : term;
+}
+
 /**
  * Format advanced search rows as query text.
  *
- * Rows without a field or a value are left out, as they are when searching.
+ * Rows without a field, or with neither a value nor extra text, are left out, as
+ * they are when searching.
  *
- * @param {Array<{field: string, value: string, operator?: string}>} rows
+ * @param {Array<{field: string, value: string, text?: string, operator?: string}>} rows
  * @returns {string} Query text, or '' when there is nothing to search for
  */
 export function formatAdvancedQuery(rows = []) {
-  const terms = rows.filter((row) => row.field && row.value && row.value.trim());
+  const terms = rows.filter((row) => row.field && (hasText(row.value) || hasText(row.text)));
   if (terms.length === 0) {
     return '';
   }
 
   const text = terms
     .map((row, index) => {
-      const term = `${row.field}:'${escapeValue(row.value.trim())}'`;
+      const term = formatTerm(row);
       if (index === 0) {
         return term;
       }
@@ -126,7 +141,15 @@ function parseTerm(input) {
   if (input.next() !== ':') {
     throw new Error("Expecting ':' after a field name");
   }
-  return [{ field, value: parseValue(input) }];
+  const value = parseValue(input);
+
+  input.skipWhitespace();
+  if (input.peek() === '+') {
+    input.next();
+    const text = parseValue(input);
+    return [text ? { field, value, text } : { field, value }];
+  }
+  return [{ field, value }];
 }
 
 function parseGroup(input) {
@@ -160,7 +183,7 @@ function parseQuery(input) {
  * Renamed fields from the previous viewers are mapped to their current names.
  *
  * @param {string} text - Query text
- * @returns {Array<{field: string, value: string, operator: string}>|null} Rows, or
+ * @returns {Array<{field: string, value: string, text?: string, operator: string}>|null} Rows, or
  *   null when the text cannot be parsed
  */
 export function parseAdvancedQuery(text) {
@@ -178,6 +201,7 @@ export function parseAdvancedQuery(text) {
     return terms.map((term) => ({
       field: LEGACY_FIELD_ALIASES[term.field] || term.field,
       value: term.value,
+      ...(term.text ? { text: term.text } : {}),
       operator: term.operator || 'AND',
     }));
   } catch {

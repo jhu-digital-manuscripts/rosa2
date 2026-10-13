@@ -373,7 +373,6 @@
       "people": { "type": "keyword" },
       "books": { "type": "keyword" },
       "locations": { "type": "keyword" },
-      "symbols": { "type": "keyword" },
       "method": { "type": "keyword" },
       "hand": { "type": "keyword" },
       "annotator": { "type": "keyword" },

@@ -149,6 +149,8 @@ The `manifest` index also has a multi-field `title` with language sub-fields for
 
 If content's language code is not in the supported set, content falls back to the `.en` sub-field.
 
+Each language sub-field is an array with one element per piece of text routed to it, for example one per marginal note: `"marginalia.la":["Nota bene","Vide infra"]`. Opensearch leaves a position gap between array elements (`position_increment_gap`, 100 by default), so phrase and proximity queries do not match across two annotations, and highlight fragments stay within one.
+
 ## Keyword Sub-Field Pattern
 
 Some annotation-type fields have both enumerated keyword values AND free text content. These fields use a `keyword` sub-field alongside language sub-fields:
@@ -167,7 +169,7 @@ Some annotation-type fields have both enumerated keyword values AND free text co
 
 Fields using this pattern: `mark`, `symbol`, `drawing`, `calculation`, `graph`, `table`.
 
-**Indexing:** The type/name value (e.g. `"plus_sign"` for a mark) is written to `field.keyword` as an array of the distinct values on the page (e.g. `"drawing.keyword":["cone","pyramid"]`), so an exact match on any one of them finds the page. The referenced text is routed to the appropriate language sub-field (e.g. `mark.en`).
+**Indexing:** The type/name value (e.g. `"plus_sign"` for a mark) is written to `field.keyword` as an array of the distinct values on the page (e.g. `"drawing.keyword":["cone","pyramid"]`), so an exact match on any one of them finds the page. The referenced text is routed to the appropriate language sub-field (e.g. `mark.en`). `symbol.keyword` also gets the symbols named inside marginalia, drawings, graphs and tables (`<symbol_in_text>` and similar), so a symbol search finds pages that mention a symbol as well as pages with a symbol annotation.
 
 **Searching:**
 - Search for a specific type: `mark.keyword: "plus_sign"`
@@ -244,26 +246,26 @@ A filename for the logo image associated with this book:
 
 ### Annotation Type Fields (multi-language text objects)
 
-Each field contains accumulated text from all annotations of that type on the page:
+Each field contains the text from all annotations of that type on the page, one array element per annotation text:
 
 | Field | Has keyword sub-field | Description |
 |-------|----------------------|-------------|
 | `marginalia` | No | Marginalia referenced text, transcription, and translation |
 | `underline` | No | Underlined text in the printed book |
 | `mark` | Yes | Mark names + referenced text |
-| `symbol` | Yes | Symbol names + referenced text |
+| `symbol` | Yes | Symbol names from symbol annotations and from symbols named in other annotations' text (in `symbol.keyword`) + referenced text |
 | `errata` | No | Corrections: referenced + amended text |
 | `numeral` | No | Numeral text and values |
 | `drawing` | Yes | Drawing types + text content |
 | `emphasis` | No | Emphasized text within marginalia |
 | `cross_reference` | No | Cross-reference people, titles, text |
 | `calculation` | Yes | Calculation types, data, content |
-| `graph` | Yes | Graph types, node text, translations |
-| `table` | Yes | Table types, text, cells |
+| `graph` | Yes | Graph types, node text, notes (in the note's language), translations |
+| `table` | Yes | Table types, reader's text (in its own language), column headers, cells |
 | `transcription` | No | Transcription of manuscript text |
 | `illustration` | No | Illustration descriptions and character names |
 | `translation` | No | Translations from marginalia, drawings, tables |
-| `anchor_text` | No | Anchor text from drawings and tables |
+| `anchor_text` | No | Anchor text from marginalia, drawings, tables, and graph nodes and notes |
 
 ### Keyword Array Fields
 
@@ -272,7 +274,6 @@ Each field contains accumulated text from all annotations of that type on the pa
 | `people` | People referenced across all annotations (with alternates) |
 | `books` | Books referenced across all annotations (with alternates) |
 | `locations` | Locations/places referenced (with alternates) |
-| `symbols` | All symbol names on this canvas |
 | `method` | Methods used (pen, chalk, pencil, scoring, typewriter) |
 | `hand` | Hands identified |
 | `annotator` | Annotator(s) for this page |

@@ -261,7 +261,8 @@ public final class JHSearchInfoGenerator {
         values.put("la", "Latin");
         values.put("fr", "French");
         values.put("de", "German");
-        values.put("ofr", "Old French");
+        values.put("iw", "Hebrew");
+        values.put("cy", "Welsh");
         return values;
     }
 
@@ -316,7 +317,6 @@ public final class JHSearchInfoGenerator {
         values.put("X_sign", "X Sign");
         values.put("dagger", "Dagger");
         values.put("quinquepunctus", "Quinquepunctus");
-        values.put("arrowhead", "Arrowhead");
         values.put("Ichthys", "Ichthys");
         values.put("w_mark", "W Mark");
         values.put("guillemet", "Guillemet");
@@ -343,6 +343,7 @@ public final class JHSearchInfoGenerator {
         values.put("Salt", "Salt");
         values.put("Saturn", "Saturn");
         values.put("Florilegium", "Florilegium");
+        values.put("Locus_Fortunae", "Locus Fortunae");
         values.put("Square", "Square");
         values.put("Trine", "Trine");
         values.put("SS", "SS");

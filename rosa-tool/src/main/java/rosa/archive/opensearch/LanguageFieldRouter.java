@@ -1,5 +1,6 @@
 package rosa.archive.opensearch;
 
+import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
 import java.util.Map;
@@ -34,9 +35,15 @@ public final class LanguageFieldRouter {
     /**
      * Routes text content to the appropriate language sub-field on a document node.
      *
-     * <p>Sets {@code doc[fieldName.subField] = content} where the sub-field is determined
-     * by the language code. For example, {@code routeField(doc, "text", "fr", "bonjour")}
-     * sets {@code doc["text.fr"] = "bonjour"}.
+     * <p>Appends {@code content} to the array {@code doc[fieldName.subField]}, where the
+     * sub-field is determined by the language code. For example,
+     * {@code routeField(doc, "text", "fr", "bonjour")} produces
+     * {@code doc["text.fr"] = ["bonjour"]}.
+     *
+     * <p>Each call adds its own array element rather than being joined onto the previous
+     * text. Opensearch indexes array elements with a position gap between them
+     * ({@code position_increment_gap}, 100 by default), so phrase and proximity queries
+     * cannot match across two annotations, and highlight fragments stay within one.
      *
      * <p>If the language code is not recognized, falls back to the {@code .en} sub-field.
      * If content is null or blank, no field is set.
@@ -50,15 +57,9 @@ public final class LanguageFieldRouter {
         if (content == null || content.isBlank()) {
             return;
         }
-        String subField = resolveSubField(langCode);
-        String key = fieldName + "." + subField;
-        if (doc.has(key)) {
-            // Append to existing content with a space separator
-            String existing = doc.get(key).asText();
-            doc.put(key, existing + " " + content);
-        } else {
-            doc.put(key, content);
-        }
+        String key = fieldName + "." + resolveSubField(langCode);
+        ArrayNode values = doc.get(key) instanceof ArrayNode existing ? existing : doc.putArray(key);
+        values.add(content);
     }
 
     /**

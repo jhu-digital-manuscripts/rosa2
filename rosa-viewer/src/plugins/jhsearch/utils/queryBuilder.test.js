@@ -9,6 +9,7 @@ import {
   buildAdvancedSearchQuery,
   buildFacetAggregations,
   buildSortClause,
+  rowHasQuery,
 } from '../utils/queryBuilder';
 import { mockJHSearchService } from '../../../test/mocks';
 
@@ -185,6 +186,78 @@ describe('queryBuilder', () => {
 
       expect(query.query.bool.must).toHaveLength(1);
       expect(query.query.bool.must[0].multi_match.fields).toEqual(['label']);
+    });
+
+    describe('extra text on enumerated fields', () => {
+      const markFields = [
+        { name: 'mark', label: 'Mark', has_subfields: true, values: [{ value: 'dash' }] },
+      ];
+      const mm = (value) => ({
+        multi_match: { query: value, fields: ['mark.*'], type: 'best_fields' },
+      });
+      const build = (row) =>
+        buildAdvancedSearchQuery({
+          rows: [{ field: 'mark', operator: 'AND', ...row }],
+          fieldDefinitions: markFields,
+          collectionId: 'aor',
+        });
+
+      const dash = { term: { 'mark.keyword': 'dash' } };
+
+      it('requires both the value and the extra text', () => {
+        const body = build({ value: 'dash', text: 'regnum' });
+        expect(body.query.bool.must).toEqual([{ bool: { must: [dash, mm('regnum')] } }]);
+        expect(body.highlight.fields).toEqual({ 'mark.*': {} });
+      });
+
+      it('searches the extra text alone when no value is chosen', () => {
+        expect(build({ value: '', text: 'regnum' }).query.bool.must).toEqual([mm('regnum')]);
+      });
+
+      it('ignores blank extra text', () => {
+        expect(build({ value: 'dash', text: '  ' }).query.bool.must).toEqual([dash]);
+      });
+    });
+
+    describe('dropdown values', () => {
+      const fields = [
+        { name: 'mark', label: 'Mark', has_subfields: true, values: [{ value: 'X_sign' }] },
+        { name: 'method', label: 'Method', values: [{ value: 'pen' }] },
+        { name: 'marginalia', label: 'Marginalia', has_subfields: true },
+        { name: 'people', label: 'People' },
+      ];
+      const clauseFor = (field, value) =>
+        buildAdvancedSearchQuery({
+          rows: [{ field, value, operator: 'AND' }],
+          fieldDefinitions: fields,
+          collectionId: 'aor',
+        }).query.bool.must[0];
+
+      it('uses a term query on the keyword sub-field when the field has sub-fields', () => {
+        expect(clauseFor('mark', 'X_sign')).toEqual({ term: { 'mark.keyword': 'X_sign' } });
+      });
+
+      it('uses a term query on the field itself when it is a keyword field', () => {
+        expect(clauseFor('method', 'pen')).toEqual({ term: { method: 'pen' } });
+      });
+
+      it('still uses multi_match for fields without a dropdown', () => {
+        expect(clauseFor('marginalia', 'rex')).toEqual({
+          multi_match: { query: 'rex', fields: ['marginalia.*'], type: 'best_fields' },
+        });
+        expect(clauseFor('people', 'Livy')).toEqual({
+          multi_match: { query: 'Livy', fields: ['people'], type: 'best_fields' },
+        });
+      });
+    });
+
+    describe('rowHasQuery', () => {
+      it('counts a value or extra text, not whitespace', () => {
+        expect(rowHasQuery({ value: 'a' })).toBe(true);
+        expect(rowHasQuery({ value: '', text: 'b' })).toBe(true);
+        expect(rowHasQuery({ value: ' ', text: ' ' })).toBe(false);
+        expect(rowHasQuery({})).toBe(false);
+      });
     });
 
     describe('boolean operators', () => {

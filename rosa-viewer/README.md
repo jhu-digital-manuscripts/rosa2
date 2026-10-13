@@ -74,6 +74,7 @@ fragment too, because WordPress would treat a query string such as
 | Browse by category | `#rose?f.date=15th+century&f.has_transcription=true` |
 | Simple search | `#rose/search?q=green` |
 | Advanced search | `#rose/search?q=(description:'sword'+%26+title:'x')&type=advanced` |
+| Advanced search, value plus extra text | `#aor/search?q=mark:'dash'%2B'regnum'&type=advanced` |
 | Thumbnail gallery | `#rose/Arras845/thumb` |
 | Scroll view | `#rose/Arras845/scroll` |
 | Single image | `#rose/Add12042/001v/image` |

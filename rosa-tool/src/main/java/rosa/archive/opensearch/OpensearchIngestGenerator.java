@@ -38,6 +38,7 @@ import rosa.archive.model.aor.Position;
 import rosa.archive.model.aor.Symbol;
 import rosa.archive.model.aor.Table;
 import rosa.archive.model.aor.TableCell;
+import rosa.archive.model.aor.TableHeader;
 import rosa.archive.model.aor.TextEl;
 import rosa.archive.model.aor.Underline;
 import rosa.archive.model.aor.XRef;
@@ -386,7 +387,7 @@ public final class OpensearchIngestGenerator {
         if (metadata2 != null && metadata2.getBookTexts() != null && !metadata2.getBookTexts().isEmpty()) {
             String textLang = metadata2.getBookTexts().get(0).getLanguage();
             if (textLang != null && !textLang.isBlank()) {
-                defaultLang = textLang.toLowerCase();
+                defaultLang = textLang.strip().toLowerCase();
             }
         }
         // Override with underline language from the page if available, since underlines
@@ -394,7 +395,7 @@ public final class OpensearchIngestGenerator {
         if (ap != null && !ap.getUnderlines().isEmpty()) {
             String ulLang = ap.getUnderlines().get(0).getLanguage();
             if (ulLang != null && !ulLang.isBlank()) {
-                defaultLang = ulLang.toLowerCase();
+                defaultLang = ulLang.strip().toLowerCase();
             }
         }
 
@@ -402,7 +403,6 @@ public final class OpensearchIngestGenerator {
         Set<String> allPeople = new HashSet<>();
         Set<String> allBooks = new HashSet<>();
         Set<String> allLocations = new HashSet<>();
-        Set<String> allSymbols = new HashSet<>();
         Set<String> allMethods = new HashSet<>();
         Set<String> allHands = new HashSet<>();
         Set<String> allAnnotators = new HashSet<>();
@@ -421,30 +421,30 @@ public final class OpensearchIngestGenerator {
             for (Annotation annotation : ap.getAnnotations()) {
                 String lang = annotation.getLanguage();
                 if (lang != null && !lang.isBlank()) {
-                    allLanguages.add(lang.toLowerCase());
+                    allLanguages.add(lang.strip().toLowerCase());
                 }
 
                 switch (annotation) {
                     case Marginalia m -> indexMarginalia(doc, m, collection, defaultLang,
-                            allPeople, allBooks, allLocations, allSymbols,
+                            allPeople, allBooks, allLocations,
                             allMethods, allHands, allAnnotators, allLanguages,
                             allMargLanguages, allTopics);
                     case Underline u -> indexUnderline(doc, u, defaultLang, allMethods);
                     case Mark mk -> indexMark(doc, mk, defaultLang, allMethods);
-                    case Symbol sym -> indexSymbol(doc, sym, defaultLang, allSymbols);
+                    case Symbol sym -> indexSymbol(doc, sym, defaultLang);
                     case Drawing d -> indexDrawing(doc, d, collection, defaultLang,
-                            allPeople, allBooks, allLocations, allSymbols, allHands, allMethods);
+                            allPeople, allBooks, allLocations, allHands, allMethods);
                     case Errata e -> indexErrata(doc, e, defaultLang);
                     case Numeral n -> indexNumeral(doc, n, defaultLang);
                     case Calculation c -> indexCalculation(doc, c, allMethods);
                     case Graph g -> indexGraph(doc, g, collection, defaultLang,
-                            allPeople, allBooks, allLocations, allSymbols, allHands);
+                            allPeople, allBooks, allLocations, allHands);
                     case Table t -> indexTable(doc, t, collection, defaultLang,
-                            allPeople, allBooks, allLocations, allSymbols, allHands);
+                            allPeople, allBooks, allLocations, allHands);
                     default -> {
                         // Unknown annotation type: index referenced text into marginalia field
                         if (annotation.getReferencedText() != null && !annotation.getReferencedText().isBlank()) {
-                            String defLang = lang != null ? lang.toLowerCase() : defaultLang;
+                            String defLang = langOr(lang, defaultLang);
                             LanguageFieldRouter.routeField(doc, "marginalia", defLang,
                                     stripTranscriberMarks(annotation.getReferencedText()));
                         }
@@ -476,7 +476,6 @@ public final class OpensearchIngestGenerator {
         addSetField(doc, "people", allPeople);
         addSetField(doc, "books", allBooks);
         addSetField(doc, "locations", allLocations);
-        addSetField(doc, "symbols", allSymbols);
         addSetField(doc, "method", allMethods);
         addSetField(doc, "hand", allHands);
         addSetField(doc, "annotator", allAnnotators);
@@ -494,7 +493,7 @@ public final class OpensearchIngestGenerator {
     private void indexMarginalia(ObjectNode doc, Marginalia m, BookCollection collection,
                                   String defaultLang,
                                   Set<String> allPeople, Set<String> allBooks,
-                                  Set<String> allLocations, Set<String> allSymbols,
+                                  Set<String> allLocations,
                                   Set<String> allMethods, Set<String> allHands,
                                   Set<String> allAnnotators, Set<String> allLanguages,
                                   Set<String> allMargLanguages, Set<String> allTopics) {
@@ -507,9 +506,12 @@ public final class OpensearchIngestGenerator {
         if (m.getOtherReader() != null && !m.getOtherReader().isBlank()) {
             allAnnotators.add(m.getOtherReader());
         }
+        if (m.getMethod() != null && !m.getMethod().isBlank()) {
+            allMethods.add(m.getMethod().toLowerCase());
+        }
 
         // Referenced text (anchor_text attribute from XML) → anchor_text field
-        String baseLang = m.getLanguage() != null ? m.getLanguage().toLowerCase() : defaultLang;
+        String baseLang = langOr(m.getLanguage(), defaultLang);
         if (m.getReferencedText() != null && !m.getReferencedText().isBlank()) {
             LanguageFieldRouter.routeField(doc, "anchor_text", baseLang,
                     stripTranscriberMarks(m.getReferencedText()));
@@ -524,7 +526,7 @@ public final class OpensearchIngestGenerator {
             if (langCode == null || langCode.isBlank()) {
                 langCode = defaultLang;
             }
-            langCode = langCode.toLowerCase();
+            langCode = langCode.strip().toLowerCase();
             allLanguages.add(langCode);
             allMargLanguages.add(langCode);
 
@@ -561,14 +563,17 @@ public final class OpensearchIngestGenerator {
                             LanguageFieldRouter.routeField(doc, "cross_reference", "en", xref.title());
                         }
                         if (xref.text() != null && !xref.text().isBlank()) {
-                            String xrefLang = xref.language() != null ? xref.language().toLowerCase() : langCode;
+                            String xrefLang = langOr(xref.language(), langCode);
                             LanguageFieldRouter.routeField(doc, "cross_reference", xrefLang,
                                     stripTranscriberMarks(xref.text()));
                         }
                     }
                 }
 
-                // Collect people, books, locations, symbols
+                // Symbols named in the marginal text
+                addSymbolKeywords(doc, pos.getSymbols());
+
+                // Collect people, books, locations
                 if (pos.getPeople() != null) {
                     addRefAlternates(pos.getPeople(), peopleRef, allPeople);
                 }
@@ -577,13 +582,6 @@ public final class OpensearchIngestGenerator {
                 }
                 if (pos.getLocations() != null) {
                     addRefAlternates(pos.getLocations(), locationRef, allLocations);
-                }
-                if (pos.getSymbols() != null) {
-                    for (String sym : pos.getSymbols()) {
-                        if (sym != null && !sym.isBlank()) {
-                            allSymbols.add(sym);
-                        }
-                    }
                 }
             }
         }
@@ -599,7 +597,7 @@ public final class OpensearchIngestGenerator {
             allMethods.add(u.getMethod().toLowerCase());
         }
 
-        String lang = u.getLanguage() != null ? u.getLanguage().toLowerCase() : defaultLang;
+        String lang = langOr(u.getLanguage(), defaultLang);
         if (u.getReferencedText() != null && !u.getReferencedText().isBlank()) {
             LanguageFieldRouter.routeField(doc, "underline", lang,
                     stripTranscriberMarks(u.getReferencedText()));
@@ -617,22 +615,21 @@ public final class OpensearchIngestGenerator {
         }
 
         // Mark referenced text goes to mark.<lang> sub-field
-        String lang = mk.getLanguage() != null ? mk.getLanguage().toLowerCase() : defaultLang;
+        String lang = langOr(mk.getLanguage(), defaultLang);
         if (mk.getReferencedText() != null && !mk.getReferencedText().isBlank()) {
             LanguageFieldRouter.routeField(doc, "mark", lang,
                     stripTranscriberMarks(mk.getReferencedText()));
         }
     }
 
-    private void indexSymbol(ObjectNode doc, Symbol sym, String defaultLang, Set<String> allSymbols) {
-        // Symbol name goes to both symbol.keyword and symbols array
+    private void indexSymbol(ObjectNode doc, Symbol sym, String defaultLang) {
+        // Symbol name goes to symbol.keyword sub-field
         if (sym.getName() != null && !sym.getName().isBlank()) {
             appendKeywordSubField(doc, "symbol", sym.getName());
-            allSymbols.add(sym.getName());
         }
 
         // Symbol referenced text goes to symbol.<lang> sub-field
-        String lang = sym.getLanguage() != null ? sym.getLanguage().toLowerCase() : defaultLang;
+        String lang = langOr(sym.getLanguage(), defaultLang);
         if (sym.getReferencedText() != null && !sym.getReferencedText().isBlank()) {
             LanguageFieldRouter.routeField(doc, "symbol", lang,
                     stripTranscriberMarks(sym.getReferencedText()));
@@ -642,7 +639,7 @@ public final class OpensearchIngestGenerator {
     private void indexDrawing(ObjectNode doc, Drawing d, BookCollection collection,
                               String defaultLang,
                               Set<String> allPeople, Set<String> allBooks,
-                              Set<String> allLocations, Set<String> allSymbols,
+                              Set<String> allLocations,
                               Set<String> allHands, Set<String> allMethods) {
         // Drawing type goes to drawing.keyword sub-field
         if (d.getType() != null && !d.getType().isBlank()) {
@@ -653,7 +650,7 @@ public final class OpensearchIngestGenerator {
             allMethods.add(d.getMethod().toLowerCase());
         }
 
-        String lang = d.getLanguage() != null ? d.getLanguage().toLowerCase() : defaultLang;
+        String lang = langOr(d.getLanguage(), defaultLang);
 
         // Hand from TextEl elements
         if (d.getTexts() != null && !d.getTexts().isEmpty()) {
@@ -662,7 +659,7 @@ public final class OpensearchIngestGenerator {
                     allHands.add(textEl.hand());
                 }
                 // Text content from TextEl elements
-                String textLang = textEl.language() != null ? textEl.language().toLowerCase() : lang;
+                String textLang = langOr(textEl.language(), lang);
                 StringBuilder combined = new StringBuilder();
                 if (textEl.text() != null && !textEl.text().isBlank()) {
                     combined.append(textEl.text());
@@ -694,18 +691,12 @@ public final class OpensearchIngestGenerator {
         addRefAlternates(d.getBooks(), collection.getBooksRef(), allBooks);
         addRefAlternates(d.getLocations(), collection.getLocationsRef(), allLocations);
 
-        // Symbols from drawing
-        if (d.getSymbols() != null) {
-            for (String sym : d.getSymbols()) {
-                if (sym != null && !sym.isBlank()) {
-                    allSymbols.add(sym);
-                }
-            }
-        }
+        // Symbols named in the drawing's text
+        addSymbolKeywords(doc, d.getSymbols());
     }
 
     private void indexErrata(ObjectNode doc, Errata e, String defaultLang) {
-        String lang = e.getLanguage() != null ? e.getLanguage().toLowerCase() : defaultLang;
+        String lang = langOr(e.getLanguage(), defaultLang);
 
         StringBuilder textBuilder = new StringBuilder();
         if (e.getReferencedText() != null && !e.getReferencedText().isBlank()) {
@@ -721,7 +712,7 @@ public final class OpensearchIngestGenerator {
     }
 
     private void indexNumeral(ObjectNode doc, Numeral n, String defaultLang) {
-        String lang = n.getLanguage() != null ? n.getLanguage().toLowerCase() : defaultLang;
+        String lang = langOr(n.getLanguage(), defaultLang);
 
         StringBuilder textBuilder = new StringBuilder();
         if (n.getReferencedText() != null && !n.getReferencedText().isBlank()) {
@@ -762,21 +753,30 @@ public final class OpensearchIngestGenerator {
     private void indexGraph(ObjectNode doc, Graph g, BookCollection collection,
                             String defaultLang,
                             Set<String> allPeople, Set<String> allBooks,
-                            Set<String> allLocations, Set<String> allSymbols,
+                            Set<String> allLocations,
                             Set<String> allHands) {
         // Graph type goes to graph.keyword sub-field
         if (g.getType() != null && !g.getType().isBlank()) {
             appendKeywordSubField(doc, "graph", g.getType());
         }
 
-        String lang = g.getLanguage() != null ? g.getLanguage().toLowerCase() : defaultLang;
+        String lang = langOr(g.getLanguage(), defaultLang);
 
         // Process GraphText elements
         for (GraphText text : g.getGraphTexts()) {
-            // Hand from notes
+            // Notes: hand, note text in its own language, and anchor text
             for (GraphNote note : text.getNotes()) {
                 if (note.hand() != null && !note.hand().isBlank()) {
                     allHands.add(note.hand());
+                }
+                String noteLang = langOr(note.language(), lang);
+                if (note.content() != null && !note.content().isBlank()) {
+                    LanguageFieldRouter.routeField(doc, "graph", noteLang,
+                            stripTranscriberMarks(note.content()));
+                }
+                if (note.anchorText() != null && !note.anchorText().isBlank()) {
+                    LanguageFieldRouter.routeField(doc, "anchor_text", lang,
+                            stripTranscriberMarks(note.anchorText()));
                 }
             }
 
@@ -784,11 +784,7 @@ public final class OpensearchIngestGenerator {
             addRefAlternates(text.getPeople(), collection.getPeopleRef(), allPeople);
             addRefAlternates(text.getBooks(), collection.getBooksRef(), allBooks);
             addRefAlternates(text.getLocations(), collection.getLocationsRef(), allLocations);
-            for (String s : text.getSymbols()) {
-                if (s != null && !s.isBlank()) {
-                    allSymbols.add(s);
-                }
-            }
+            addSymbolKeywords(doc, text.getSymbols());
 
             // Translations → routed to English in graph field
             if (text.getTranslations() != null && !text.getTranslations().isEmpty()) {
@@ -803,8 +799,11 @@ public final class OpensearchIngestGenerator {
         if (g.getNodes() != null && !g.getNodes().isEmpty()) {
             StringJoiner nodeTextJoiner = new StringJoiner(" ");
             for (GraphNode node : g.getNodes()) {
+                // A node's text is its anchor text in the printed book
                 if (node.text() != null && !node.text().isBlank()) {
                     nodeTextJoiner.add(node.text());
+                    LanguageFieldRouter.routeField(doc, "anchor_text", lang,
+                            stripTranscriberMarks(node.text()));
                 }
                 if (node.content() != null && !node.content().isBlank()) {
                     nodeTextJoiner.add(node.content());
@@ -823,14 +822,14 @@ public final class OpensearchIngestGenerator {
     private void indexTable(ObjectNode doc, Table t, BookCollection collection,
                             String defaultLang,
                             Set<String> allPeople, Set<String> allBooks,
-                            Set<String> allLocations, Set<String> allSymbols,
+                            Set<String> allLocations,
                             Set<String> allHands) {
         // Table type goes to table.keyword sub-field
         if (t.getType() != null && !t.getType().isBlank()) {
             appendKeywordSubField(doc, "table", t.getType());
         }
 
-        String lang = t.getLanguage() != null ? t.getLanguage().toLowerCase() : defaultLang;
+        String lang = langOr(t.getLanguage(), defaultLang);
 
         // Hand from TextEl elements
         if (t.getTexts() != null && !t.getTexts().isEmpty()) {
@@ -840,9 +839,9 @@ public final class OpensearchIngestGenerator {
                 }
             }
 
-            // Text from TextEl elements (anchorText + text)
-            StringJoiner textJoiner = new StringJoiner(", ");
+            // Text from TextEl elements, each in its own language (anchorText + text)
             for (TextEl txt : t.getTexts()) {
+                String textLang = langOr(txt.language(), lang);
                 StringBuilder sb = new StringBuilder();
                 if (txt.anchorText() != null && !txt.anchorText().isBlank()) {
                     sb.append(txt.anchorText());
@@ -850,15 +849,23 @@ public final class OpensearchIngestGenerator {
                 }
                 if (txt.text() != null && !txt.text().isBlank()) {
                     if (!sb.isEmpty()) sb.append(" ");
-                    sb.append(txt.text());
+                    sb.append(stripTranscriberMarks(txt.text()));
                 }
                 if (!sb.isEmpty()) {
-                    textJoiner.add(sb.toString());
+                    LanguageFieldRouter.routeField(doc, "table", textLang, sb.toString());
                 }
             }
-            String textsContent = textJoiner.toString();
-            if (!textsContent.isBlank()) {
-                LanguageFieldRouter.routeField(doc, "table", lang, textsContent);
+        }
+
+        // Column headers (label + content)
+        if (t.getColHeaders() != null) {
+            StringJoiner headerJoiner = new StringJoiner(" ");
+            for (TableHeader th : t.getColHeaders()) {
+                if (th.label() != null && !th.label().isBlank()) headerJoiner.add(th.label());
+                if (th.content() != null && !th.content().isBlank()) headerJoiner.add(th.content());
+            }
+            if (headerJoiner.length() > 0) {
+                LanguageFieldRouter.routeField(doc, "table", "en", headerJoiner.toString());
             }
         }
 
@@ -898,17 +905,13 @@ public final class OpensearchIngestGenerator {
             }
         }
 
-        // People, books, locations, symbols with reference sheet alternates
+        // People, books, locations with reference sheet alternates
         addRefAlternates(t.getPeople(), collection.getPeopleRef(), allPeople);
         addRefAlternates(t.getBooks(), collection.getBooksRef(), allBooks);
         addRefAlternates(t.getLocations(), collection.getLocationsRef(), allLocations);
-        if (t.getSymbols() != null) {
-            for (String sym : t.getSymbols()) {
-                if (sym != null && !sym.isBlank()) {
-                    allSymbols.add(sym);
-                }
-            }
-        }
+
+        // Symbols named in the table's text
+        addSymbolKeywords(doc, t.getSymbols());
     }
 
     // ========== Transcription ==========
@@ -1009,6 +1012,27 @@ public final class OpensearchIngestGenerator {
             if (v.asText().equals(value)) return;
         }
         array.add(value);
+    }
+
+    /**
+     * Returns a lowercased, trimmed language code, or the fallback when the code is null or
+     * blank. XML readers return "" for a missing attribute, so a null check alone would route
+     * every annotation without a language to {@code .en} instead of the page's language.
+     */
+    static String langOr(String code, String fallback) {
+        return code == null || code.isBlank() ? fallback : code.strip().toLowerCase();
+    }
+
+    /**
+     * Adds symbols named within an annotation's text (e.g. {@code <symbol_in_text>}) to
+     * {@code symbol.keyword}, alongside the names of symbol annotations, so that an exact
+     * symbol search finds both.
+     */
+    private void addSymbolKeywords(ObjectNode doc, List<String> symbols) {
+        if (symbols == null) return;
+        for (String sym : symbols) {
+            appendKeywordSubField(doc, "symbol", sym);
+        }
     }
 
     /**

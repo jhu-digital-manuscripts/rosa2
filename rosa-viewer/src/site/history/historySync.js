@@ -174,8 +174,9 @@ export function routeTitle(route, state, siteTitle) {
     const q =
       route.mode === 'advanced'
         ? (route.rows || [])
-            .filter((r) => r.value && r.value.trim())
-            .map((r) => r.value.trim())
+            .flatMap((r) => [r.value, r.text])
+            .filter((t) => t && t.trim())
+            .map((t) => t.trim())
             .join(', ')
         : route.query;
     if (q && q.trim()) {

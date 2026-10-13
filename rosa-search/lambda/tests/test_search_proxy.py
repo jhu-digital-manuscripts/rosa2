@@ -101,13 +101,8 @@ def advanced_search_query() -> dict:
                             "type": "best_fields",
                         }
                     },
-                    {
-                        "multi_match": {
-                            "query": "plus_sign",
-                            "fields": ["mark.*"],
-                            "type": "best_fields",
-                        }
-                    },
+                    # A dropdown value: a term query on the keyword sub-field
+                    {"term": {"mark.keyword": "plus_sign"}},
                 ],
                 "minimum_should_match": 1,
                 "filter": [{"terms": {"collection_id": ["aor"]}}],
@@ -159,6 +154,21 @@ class AcceptsViewerQueries(unittest.TestCase):
         }
         should[0] = {"bool": {"must": [should[0], drawing]}}
         body["highlight"]["fields"]["drawing.*"] = {}
+        self.assertIn("query", validate(body))
+
+    def test_advanced_search_value_with_extra_text(self):
+        # A row for an enumerated field with sub-fields, with a chosen value and
+        # extra text, both required: mark 'dash' plus 'regnum'.
+        body = advanced_search_query()
+        dash = {"term": {"mark.keyword": "dash"}}
+        regnum = {"multi_match": {"query": "regnum", "fields": ["mark.*"], "type": "best_fields"}}
+        body["query"]["bool"]["should"][1] = {"bool": {"must": [dash, regnum]}}
+        self.assertIn("query", validate(body))
+
+    def test_advanced_search_keyword_field_value(self):
+        # A dropdown value on a plain keyword field: a term query on the field.
+        body = advanced_search_query()
+        body["query"]["bool"]["should"][1] = {"term": {"method": "pen"}}
         self.assertIn("query", validate(body))
 
     def test_collection_aggregation(self):

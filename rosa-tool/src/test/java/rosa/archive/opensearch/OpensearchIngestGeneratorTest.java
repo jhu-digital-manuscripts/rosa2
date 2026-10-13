@@ -38,6 +38,7 @@ import rosa.archive.model.aor.Position;
 import rosa.archive.model.aor.Symbol;
 import rosa.archive.model.aor.Table;
 import rosa.archive.model.aor.TableCell;
+import rosa.archive.model.aor.TableHeader;
 import rosa.archive.model.aor.TextEl;
 import rosa.archive.model.aor.Underline;
 import rosa.archive.model.aor.XRef;
@@ -48,6 +49,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -107,6 +109,19 @@ class OpensearchIngestGeneratorTest {
         ap.setReader(reader);
         book.setAnnotatedPages(List.of(ap));
         return ap;
+    }
+
+    /**
+     * Returns the elements of a language-routed text field joined with spaces, after
+     * checking that the field is stored as an array.
+     */
+    private static String routedText(JsonNode doc, String key) {
+        JsonNode node = doc.get(key);
+        assertNotNull(node, key + " should be set");
+        assertTrue(node.isArray(), key + " should be an array");
+        List<String> parts = new ArrayList<>();
+        node.forEach(n -> parts.add(n.asText()));
+        return String.join(" ", parts);
     }
 
     private List<String> jsonArrayToList(JsonNode arrayNode) {
@@ -344,7 +359,7 @@ class OpensearchIngestGeneratorTest {
             ap.setMarks(List.of(new Mark("mark1", "[important] text", "dash", "pen", "en", Location.HEAD)));
 
             ObjectNode doc = generateCanvas();
-            assertEquals("important text", doc.get("mark.en").asText());
+            assertEquals("important text", routedText(doc, "mark.en"));
         }
 
         @Test
@@ -367,7 +382,7 @@ class OpensearchIngestGeneratorTest {
             ap.setNumerals(List.of(new Numeral("num1", "[page] reference", "42", "en", Location.HEAD)));
 
             ObjectNode doc = generateCanvas();
-            String text = doc.get("numeral.en").asText();
+            String text = routedText(doc, "numeral.en");
             assertTrue(text.contains("page reference"));
             assertTrue(text.contains("42"));
         }
@@ -382,7 +397,7 @@ class OpensearchIngestGeneratorTest {
             ap.setUnderlines(List.of(new Underline("ul1", "[underlined] text", "pen", null, "la", Location.HEAD)));
 
             ObjectNode doc = generateCanvas();
-            assertEquals("underlined text", doc.get("underline.la").asText());
+            assertEquals("underlined text", routedText(doc, "underline.la"));
         }
     }
 
@@ -395,9 +410,33 @@ class OpensearchIngestGeneratorTest {
             ap.setErrata(List.of(new Errata("err1", "la", "[wrong] word", "correct word")));
 
             ObjectNode doc = generateCanvas();
-            String text = doc.get("errata.la").asText();
+            String text = routedText(doc, "errata.la");
             assertTrue(text.contains("wrong word"));
             assertTrue(text.contains("correct word"));
+        }
+    }
+
+    @Nested
+    @DisplayName("Language fallback")
+    class LanguageFallbackTest {
+        @Test
+        void blankLanguageAttributeFallsBackToPageLanguage() {
+            AnnotatedPage ap = setUpAnnotatedPage("Harvey");
+            // Underlines set the page language; XML readers give "" for a missing attribute
+            ap.setUnderlines(List.of(new Underline(null, "verba", "pen", "straight", "LA ", null)));
+            ap.setMarks(List.of(new Mark("m1", "signum", "dash", "pen", "", Location.HEAD)));
+
+            ObjectNode doc = generateCanvas();
+            assertEquals(List.of("signum"), jsonArrayToList(doc.get("mark.la")));
+            assertFalse(doc.has("mark.en"));
+            assertEquals(List.of("la"), jsonArrayToList(doc.get("language")));
+        }
+
+        @Test
+        void langOrTrimsLowercasesAndFallsBack() {
+            assertEquals("la", OpensearchIngestGenerator.langOr(" LA ", "en"));
+            assertEquals("it", OpensearchIngestGenerator.langOr("", "it"));
+            assertEquals("it", OpensearchIngestGenerator.langOr(null, "it"));
         }
     }
 
@@ -410,10 +449,41 @@ class OpensearchIngestGeneratorTest {
             ap.setSymbols(List.of(new Symbol("sym1", "[noted] passage", "SS", "la", Location.HEAD)));
 
             ObjectNode doc = generateCanvas();
-            assertEquals("noted passage", doc.get("symbol.la").asText());
+            assertEquals("noted passage", routedText(doc, "symbol.la"));
             assertEquals(List.of("SS"), jsonArrayToList(doc.get("symbol.keyword")));
-            List<String> symbols = jsonArrayToList(doc.get("symbols"));
-            assertTrue(symbols.contains("SS"));
+            assertFalse(doc.has("symbols"));
+        }
+
+        @Test
+        void addsSymbolsNamedInTextToSymbolKeyword() {
+            AnnotatedPage ap = setUpAnnotatedPage("Harvey");
+            ap.setSymbols(List.of(new Symbol("sym1", "passage", "Sun", "la", Location.HEAD)));
+
+            // Marginalia naming Sun (already present) and Mars
+            Marginalia marg = new Marginalia();
+            marg.setId("marg1");
+            MarginaliaLanguage ml = new MarginaliaLanguage();
+            ml.setLang("la");
+            Position pos = new Position();
+            pos.setTexts(List.of("Sol et Mars"));
+            pos.setSymbols(List.of("Sun", "Mars"));
+            ml.setPositions(List.of(pos));
+            marg.setLanguages(List.of(ml));
+            ap.setMarginalia(List.of(marg));
+
+            // Drawing and table naming Moon and Venus
+            Drawing drawing = new Drawing("draw1", null, Location.HEAD, "diagram", "pen", "la");
+            drawing.setSymbols(List.of("Moon"));
+            ap.setDrawings(List.of(drawing));
+            Table table = new Table("tab1", Location.HEAD);
+            table.setSymbols(List.of("Venus", " "));
+            ap.setTables(List.of(table));
+
+            ObjectNode doc = generateCanvas();
+            // Each name once, blank names dropped
+            List<String> keywords = jsonArrayToList(doc.get("symbol.keyword"));
+            assertEquals(4, keywords.size(), keywords.toString());
+            assertEquals(Set.of("Sun", "Mars", "Moon", "Venus"), Set.copyOf(keywords));
         }
     }
 
@@ -494,7 +564,7 @@ class OpensearchIngestGeneratorTest {
             assertEquals(List.of("arithmetic"), jsonArrayToList(doc.get("calculation.keyword")));
             List<String> methods = jsonArrayToList(doc.get("method"));
             assertTrue(methods.contains("pen"));
-            String text = doc.get("calculation.en").asText();
+            String text = routedText(doc, "calculation.en");
             assertTrue(text.contains("3 + 4"));
             assertTrue(text.contains("= 7"));
             assertTrue(text.contains("simple addition"));
@@ -517,7 +587,7 @@ class OpensearchIngestGeneratorTest {
 
             ObjectNode doc = generateCanvas();
             assertTrue(doc.has("graph.en"));
-            String text = doc.get("graph.en").asText();
+            String text = routedText(doc, "graph.en");
             assertTrue(text.contains("Greek philosopher"));
             assertTrue(text.contains("content here"));
             List<String> people = jsonArrayToList(doc.get("people"));
@@ -540,7 +610,23 @@ class OpensearchIngestGeneratorTest {
             List<String> hands = jsonArrayToList(doc.get("hand"));
             assertTrue(hands.contains("Harvey"));
             assertTrue(doc.has("graph.en"));
-            assertTrue(doc.get("graph.en").asText().contains("This is the English translation"));
+            assertTrue(routedText(doc, "graph.en").contains("This is the English translation"));
+        }
+
+        @Test
+        void indexesNoteTextInItsLanguageAndAnchorText() {
+            AnnotatedPage ap = setUpAnnotatedPage("Harvey");
+            Graph graph = new Graph("graph1", "family_tree", 0, Location.HEAD, "pen");
+            graph.addNode(new GraphNode("n1", "Adam", "Adamus", "first man"));
+            GraphText gt = new GraphText();
+            gt.addNote(new GraphNote("note1", "Harvey", "IT", null, "radix", "la radice"));
+            graph.addGraphText(gt);
+            ap.setGraphs(List.of(graph));
+
+            ObjectNode doc = generateCanvas();
+            assertEquals(List.of("la radice"), jsonArrayToList(doc.get("graph.it")));
+            List<String> anchors = jsonArrayToList(doc.get("anchor_text.en"));
+            assertTrue(anchors.containsAll(List.of("Adamus", "radix")), anchors.toString());
         }
     }
 
@@ -565,16 +651,32 @@ class OpensearchIngestGeneratorTest {
 
             assertTrue(doc.has("table.la"));
             assertTrue(doc.has("table.en"));
-            String enText = doc.get("table.en").asText();
+            String enText = routedText(doc, "table.en");
             assertTrue(enText.contains("cellData"));
             assertTrue(enText.contains("cellAnchor"));
             assertTrue(enText.contains("cellContent"));
             assertTrue(enText.contains("Summary info"));
             assertTrue(doc.has("translation.en"));
-            assertTrue(doc.get("translation.en").asText().contains("English translation of table"));
+            assertTrue(routedText(doc, "translation.en").contains("English translation of table"));
             assertTrue(doc.has("people"));
             List<String> hands = jsonArrayToList(doc.get("hand"));
             assertTrue(hands.contains("Harvey"));
+        }
+
+        @Test
+        void indexesTextsInTheirOwnLanguageAndHeaders() {
+            AnnotatedPage ap = setUpAnnotatedPage("Harvey");
+            Table table = new Table("table1", Location.HEAD);
+            table.setTexts(List.of(
+                    new TextEl("Harvey", "LA", "", "Summa annorum"),
+                    new TextEl("Harvey", "IT", "", "Somma degli anni")));
+            table.getColHeaders().add(new TableHeader("Anni", "", "", "Years"));
+            ap.setTables(List.of(table));
+
+            ObjectNode doc = generateCanvas();
+            assertEquals(List.of("Summa annorum"), jsonArrayToList(doc.get("table.la")));
+            assertEquals(List.of("Somma degli anni"), jsonArrayToList(doc.get("table.it")));
+            assertEquals(List.of("Anni Years"), jsonArrayToList(doc.get("table.en")));
         }
     }
 
@@ -592,10 +694,44 @@ class OpensearchIngestGeneratorTest {
             // anchor_text should go to anchor_text field, NOT marginalia
             assertTrue(doc.has("anchor_text.en") || doc.has("anchor_text.la") || doc.has("anchor_text.it"),
                     "anchor_text should be in anchor_text field: " + doc);
-            assertFalse(doc.has("marginalia.la") && doc.get("marginalia.la").asText().contains("some anchor text"),
+            assertFalse(doc.has("marginalia.la") && routedText(doc, "marginalia.la").contains("some anchor text"),
                     "anchor_text should NOT be in marginalia field");
-            assertFalse(doc.has("marginalia.en") && doc.get("marginalia.en").asText().contains("some anchor text"),
+            assertFalse(doc.has("marginalia.en") && routedText(doc, "marginalia.en").contains("some anchor text"),
                     "anchor_text should NOT be in marginalia.en field");
+        }
+
+        @Test
+        void indexesMarginaliaMethod() {
+            AnnotatedPage ap = setUpAnnotatedPage("Harvey");
+            Marginalia marg = new Marginalia();
+            marg.setId("marg1");
+            marg.setMethod("Typewriter");
+            ap.setMarginalia(List.of(marg));
+
+            ObjectNode doc = generateCanvas();
+            assertEquals(List.of("typewriter"), jsonArrayToList(doc.get("method")));
+        }
+
+        @Test
+        void storesEachAnnotationsTextAsItsOwnArrayElement() {
+            AnnotatedPage ap = setUpAnnotatedPage("Harvey");
+            List<Marginalia> margs = new ArrayList<>();
+            for (String text : List.of("Nota bene", "Vide infra")) {
+                Marginalia marg = new Marginalia();
+                marg.setId("marg" + margs.size());
+                MarginaliaLanguage ml = new MarginaliaLanguage();
+                ml.setLang("la");
+                Position pos = new Position();
+                pos.setTexts(List.of(text));
+                ml.setPositions(List.of(pos));
+                marg.setLanguages(List.of(ml));
+                margs.add(marg);
+            }
+            ap.setMarginalia(margs);
+
+            ObjectNode doc = generateCanvas();
+            // Separate elements, so a phrase cannot match across the two annotations
+            assertEquals(List.of("Nota bene", "Vide infra"), jsonArrayToList(doc.get("marginalia.la")));
         }
 
         @Test
@@ -615,7 +751,7 @@ class OpensearchIngestGeneratorTest {
 
             ObjectNode doc = generateCanvas();
             assertTrue(doc.has("marginalia.en"), "EN text should go to marginalia.en: " + doc);
-            assertTrue(doc.get("marginalia.en").asText().contains("A boy at helme."),
+            assertTrue(routedText(doc, "marginalia.en").contains("A boy at helme."),
                     "marginalia.en should contain the EN text");
         }
 
@@ -678,12 +814,12 @@ class OpensearchIngestGeneratorTest {
 
             // LA marginalia text should be in marginalia.la
             assertTrue(doc.has("marginalia.la"), "Should have marginalia.la: " + doc);
-            assertTrue(doc.get("marginalia.la").asText().contains("Nota."),
+            assertTrue(routedText(doc, "marginalia.la").contains("Nota."),
                     "marginalia.la should contain 'Nota.'");
 
             // EN marginalia text + translations should be in marginalia.en
             assertTrue(doc.has("marginalia.en"), "Should have marginalia.en: " + doc);
-            String enText = doc.get("marginalia.en").asText();
+            String enText = routedText(doc, "marginalia.en");
             assertTrue(enText.contains("A boy at helme."),
                     "marginalia.en should contain EN text 'A boy at helme.': " + enText);
             assertTrue(enText.contains("Note: mistaking"),
@@ -695,13 +831,13 @@ class OpensearchIngestGeneratorTest {
 
             // IT marginalia text should be in marginalia.it
             assertTrue(doc.has("marginalia.it"), "Should have marginalia.it: " + doc);
-            assertTrue(doc.get("marginalia.it").asText().contains("Il Patron della nave."),
+            assertTrue(routedText(doc, "marginalia.it").contains("Il Patron della nave."),
                     "marginalia.it should contain 'Il Patron della nave.'");
 
             // Anchor text should be in anchor_text.it (Italian, the language of the printed text)
             assertTrue(doc.has("anchor_text.it"),
                     "Anchor text should be in anchor_text.it (the book text language): " + doc);
-            String anchorIt = doc.get("anchor_text.it").asText();
+            String anchorIt = routedText(doc, "anchor_text.it");
             assertTrue(anchorIt.contains("lasciando il temone"),
                     "anchor_text.it should contain anchor text: " + anchorIt);
             assertTrue(anchorIt.contains("il patron della naue"),
@@ -755,7 +891,7 @@ class OpensearchIngestGeneratorTest {
 
             ObjectNode doc = generateCanvas();
             assertTrue(doc.has("cross_reference.en") || doc.has("cross_reference.la"));
-            String enRef = doc.has("cross_reference.en") ? doc.get("cross_reference.en").asText() : "";
+            String enRef = doc.has("cross_reference.en") ? routedText(doc, "cross_reference.en") : "";
             assertTrue(enRef.contains("Cicero") || enRef.contains("De Oratore"));
         }
 
@@ -919,7 +1055,7 @@ class OpensearchIngestGeneratorTest {
 
             ObjectNode doc = generateCanvasWithIllustration(illus);
 
-            String text = doc.get("illustration.en").asText();
+            String text = routedText(doc, "illustration.en");
             assertTrue(text.contains("L'Amans Sleeps"), "Numeric title ID should be resolved");
             assertTrue(text.contains("some literal title"), "Non-numeric title should be literal");
         }
@@ -1117,7 +1253,7 @@ class OpensearchIngestGeneratorTest {
             ObjectNode doc = generateCanvas();
 
             assertTrue(doc.has("marginalia.en"), "Should have marginalia.en: " + doc);
-            String value = doc.get("marginalia.en").asText();
+            String value = routedText(doc, "marginalia.en");
 
             assertFalse(value.contains("\n"), "Value should not contain newlines: [" + value + "]");
             assertFalse(value.contains("  "), "Value should not contain repeated spaces: [" + value + "]");

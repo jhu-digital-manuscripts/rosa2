@@ -2,7 +2,7 @@
  * AdvancedSearch component - multi-field search with boolean operators.
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -20,17 +20,45 @@ import SearchIcon from '@mui/icons-material/Search';
 
 import * as selectors from '../state/selectors';
 import { setAdvancedRows, setViewMode } from '../state/actions';
+import { rowHasQuery } from '../utils/queryBuilder';
+
+/** Whether a field offers a fixed list of values to choose from. */
+function hasEnumeratedValues(fieldDef) {
+  return Boolean(fieldDef?.values && fieldDef.values.length > 0);
+}
+
+/** Whether a field also accepts free text beside its chosen value. */
+function acceptsExtraText(fieldDef) {
+  return hasEnumeratedValues(fieldDef) && Boolean(fieldDef.has_subfields);
+}
 
 /**
  * Single row in the advanced search form.
  */
 function AdvancedSearchRow({ row, index, fields, onUpdate, onRemove, onSubmit, showOperator }) {
   const handleFieldChange = (event) => {
-    onUpdate(index, { ...row, field: event.target.value });
+    const field = event.target.value;
+    const newDef = fields.find((f) => f.name === field);
+    const { text, ...rest } = row;
+    const updated = { ...rest, field };
+
+    // Drop a value the new field's dropdown cannot show, and extra text the new
+    // field cannot take
+    if (hasEnumeratedValues(newDef) && !newDef.values.some((v) => v.value === row.value)) {
+      updated.value = '';
+    }
+    if (acceptsExtraText(newDef) && text) {
+      updated.text = text;
+    }
+    onUpdate(index, updated);
   };
 
   const handleValueChange = (event) => {
     onUpdate(index, { ...row, value: event.target.value });
+  };
+
+  const handleTextChange = (event) => {
+    onUpdate(index, { ...row, text: event.target.value });
   };
 
   const handleOperatorChange = (event) => {
@@ -45,88 +73,104 @@ function AdvancedSearchRow({ row, index, fields, onUpdate, onRemove, onSubmit, s
   };
 
   const fieldDef = fields.find((f) => f.name === row.field);
-  const hasValues = fieldDef?.values && fieldDef.values.length > 0;
+  const hasValues = hasEnumeratedValues(fieldDef);
+  const showExtraText = acceptsExtraText(fieldDef);
 
   return (
-    <Box sx={{ display: 'flex', gap: 1, mb: 1, alignItems: 'flex-start' }}>
-      {/* Operator (for rows after the first) */}
-      {showOperator && (
-        <FormControl size="small" sx={{ minWidth: 70 }}>
-          <Select
-            value={row.operator || 'AND'}
-            onChange={handleOperatorChange}
-            aria-label="Boolean operator"
-          >
-            <MenuItem value="AND">AND</MenuItem>
-            <MenuItem value="OR">OR</MenuItem>
-          </Select>
-        </FormControl>
-      )}
+    <Box sx={{ mb: 1 }}>
+      <Box sx={{ display: 'flex', gap: 1, alignItems: 'flex-start' }}>
+        {/* Operator (for rows after the first) */}
+        {showOperator && (
+          <FormControl size="small" sx={{ minWidth: 70 }}>
+            <Select
+              value={row.operator || 'AND'}
+              onChange={handleOperatorChange}
+              aria-label="Boolean operator"
+            >
+              <MenuItem value="AND">AND</MenuItem>
+              <MenuItem value="OR">OR</MenuItem>
+            </Select>
+          </FormControl>
+        )}
 
-      {/* Field selector */}
-      <FormControl size="small" sx={{ minWidth: 120, flex: 1 }}>
-        <InputLabel id={`field-label-${index}`}>Field</InputLabel>
-        <Select
-          labelId={`field-label-${index}`}
-          value={row.field || ''}
-          onChange={handleFieldChange}
-          label="Field"
-        >
-          <MenuItem value="">
-            <em>Any field</em>
-          </MenuItem>
-          {fields.map((field) => (
-            <MenuItem key={field.name} value={field.name}>
-              {field.label}
-            </MenuItem>
-          ))}
-        </Select>
-      </FormControl>
-
-      {/* Value input or dropdown */}
-      {hasValues ? (
-        <FormControl size="small" sx={{ flex: 2 }}>
-          <InputLabel id={`value-label-${index}`}>Value</InputLabel>
+        {/* Field selector */}
+        <FormControl size="small" sx={{ minWidth: 120, flex: 1 }}>
+          <InputLabel id={`field-label-${index}`}>Field</InputLabel>
           <Select
-            labelId={`value-label-${index}`}
-            value={row.value || ''}
-            onChange={handleValueChange}
-            label="Value"
+            labelId={`field-label-${index}`}
+            value={fieldDef ? row.field : ''}
+            onChange={handleFieldChange}
+            label="Field"
           >
-            <MenuItem value="">
-              <em>Select...</em>
-            </MenuItem>
-            {fieldDef.values.map((v) => (
-              <MenuItem key={v.value} value={v.value}>
-                {v.label}
+            {fields.map((field) => (
+              <MenuItem key={field.name} value={field.name}>
+                {field.label}
               </MenuItem>
             ))}
           </Select>
         </FormControl>
-      ) : (
+
+        {/* Value input or dropdown, once a field is chosen */}
+        {fieldDef &&
+          (hasValues ? (
+            <FormControl size="small" sx={{ flex: 2, minWidth: 0 }}>
+              <InputLabel id={`value-label-${index}`}>Value</InputLabel>
+              <Select
+                labelId={`value-label-${index}`}
+                value={row.value || ''}
+                onChange={handleValueChange}
+                label="Value"
+              >
+                <MenuItem value="">
+                  <em>Select...</em>
+                </MenuItem>
+                {fieldDef.values.map((v) => (
+                  <MenuItem key={v.value} value={v.value}>
+                    {v.label}
+                  </MenuItem>
+                ))}
+              </Select>
+            </FormControl>
+          ) : (
+            <TextField
+              size="small"
+              placeholder="Search term..."
+              value={row.value || ''}
+              onChange={handleValueChange}
+              onKeyDown={handleKeyDown}
+              sx={{ flex: 2, minWidth: 0 }}
+            />
+          ))}
+
+        {/* Field help */}
+        {fieldDef?.description && (
+          <Tooltip title={fieldDef.description} placement="top">
+            <IconButton size="small" aria-label="Field help">
+              <HelpOutlineIcon fontSize="small" />
+            </IconButton>
+          </Tooltip>
+        )}
+
+        {/* Remove row button */}
+        <IconButton size="small" onClick={() => onRemove(index)} aria-label="Remove search row">
+          <RemoveIcon fontSize="small" />
+        </IconButton>
+      </Box>
+
+      {/* Optional free text for enumerated fields that also have text sub-fields,
+          on its own line to leave the row above its width */}
+      {showExtraText && (
         <TextField
           size="small"
-          placeholder="Search term..."
-          value={row.value || ''}
-          onChange={handleValueChange}
+          fullWidth
+          placeholder={`Also search ${fieldDef.label.toLowerCase()} text (optional)`}
+          value={row.text || ''}
+          onChange={handleTextChange}
           onKeyDown={handleKeyDown}
-          sx={{ flex: 2 }}
+          inputProps={{ 'aria-label': `Additional ${fieldDef.label} search text` }}
+          sx={{ mt: 1 }}
         />
       )}
-
-      {/* Field help */}
-      {fieldDef?.description && (
-        <Tooltip title={fieldDef.description} placement="top">
-          <IconButton size="small" aria-label="Field help">
-            <HelpOutlineIcon fontSize="small" />
-          </IconButton>
-        </Tooltip>
-      )}
-
-      {/* Remove row button */}
-      <IconButton size="small" onClick={() => onRemove(index)} aria-label="Remove search row">
-        <RemoveIcon fontSize="small" />
-      </IconButton>
     </Box>
   );
 }
@@ -140,6 +184,15 @@ export function AdvancedSearch() {
 
   const reduxRows = useSelector(selectors.getAdvancedRows);
   const fields = useSelector(selectors.getFields);
+
+  // Offer fields in alphabetical order of their labels
+  const sortedFields = useMemo(
+    () =>
+      [...fields].sort((a, b) =>
+        (a.label || a.name).localeCompare(b.label || b.name, undefined, { sensitivity: 'base' })
+      ),
+    [fields]
+  );
 
   // Local state for form values - only synced to Redux on submit
   const [localRows, setLocalRows] = useState(reduxRows);
@@ -175,8 +228,7 @@ export function AdvancedSearch() {
     dispatch(setAdvancedRows(localRows));
 
     // Check if any row has a value and set view mode
-    const hasValue = localRows.some((row) => row.value && row.value.trim());
-    if (hasValue) {
+    if (localRows.some(rowHasQuery)) {
       dispatch(setViewMode('search'));
     } else {
       dispatch(setViewMode('browse'));
@@ -191,7 +243,7 @@ export function AdvancedSearch() {
           key={index}
           row={row}
           index={index}
-          fields={fields}
+          fields={sortedFields}
           onUpdate={handleUpdateRow}
           onRemove={handleRemoveRow}
           onSubmit={handleSearch}

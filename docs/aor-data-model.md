@@ -83,7 +83,7 @@ The XML elements map to the following Java classes in `rosa.archive.model.aor`:
 | `<annotated_page>` | `AnnotatedPage` | page, reader, pagination, annotations list |
 | `<marginalia>` | `Marginalia` | hand, method, topic, languages list |
 | `<language>` | `MarginaliaLanguage` | lang, positions list |
-| `<position>` | `Position` | place, orientation, texts, people, books, locations |
+| `<position>` | `Position` | place, orientation, texts, people, books, locations, symbols (`<symbol_in_text>`) |
 | `<underline>` | `Underline` | method, type, language, text |
 | `<mark>` | `Mark` | name, method, language, text |
 | `<symbol>` | `Symbol` | name, language, text |
@@ -91,7 +91,7 @@ The XML elements map to the following Java classes in `rosa.archive.model.aor`:
 | `<errata>` | `Errata` | copytext, amendedtext |
 | `<drawing>` | `Drawing` | texts, people, books, locations, symbols, translation |
 | `<graph>` | `Graph` | nodes (GraphNode), graph_texts (GraphText), translation |
-| `<table>` | `Table` | cells (TableCell), headers (TableHeader), people, books |
+| `<table>` | `Table` | cells (TableCell), headers (TableHeader), people, books, symbols (`<symbol_in_text>`) |
 | `<calculation>` | `Calculation` | type, method, data, content |
 | `<physical_link>` | `PhysicalLink` | annotation links |
 

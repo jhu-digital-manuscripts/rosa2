@@ -24,6 +24,7 @@ public final class Marginalia extends AbstractAnnotation implements MultiPart {
     private String transcriptBefore;
     private String transcriptAfter;
     private String color;
+    private String method;
 
     /**
      * Creates an empty marginalia annotation.
@@ -176,6 +177,24 @@ public final class Marginalia extends AbstractAnnotation implements MultiPart {
         this.color = color;
     }
 
+    /**
+     * Returns the implement used to write this marginalia (e.g. pen, pencil).
+     *
+     * @return the method, or null
+     */
+    public String getMethod() {
+        return method;
+    }
+
+    /**
+     * Sets the method.
+     *
+     * @param method the implement used to write this marginalia
+     */
+    public void setMethod(String method) {
+        this.method = method;
+    }
+
     @Override
     public String getContinuesTo() {
         return marginaliaAfter;
@@ -237,14 +256,15 @@ public final class Marginalia extends AbstractAnnotation implements MultiPart {
                 Objects.equals(marginaliaAfter, that.marginaliaAfter) &&
                 Objects.equals(transcriptBefore, that.transcriptBefore) &&
                 Objects.equals(transcriptAfter, that.transcriptAfter) &&
-                Objects.equals(color, that.color);
+                Objects.equals(color, that.color) &&
+                Objects.equals(method, that.method);
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(super.hashCode(), hand, date, otherReader, topic, translation,
                 languages, bookId, marginaliaBefore, marginaliaAfter,
-                transcriptBefore, transcriptAfter, color);
+                transcriptBefore, transcriptAfter, color, method);
     }
 
     @Override
@@ -258,6 +278,7 @@ public final class Marginalia extends AbstractAnnotation implements MultiPart {
                 ", languages=" + languages.size() +
                 ", bookId='" + bookId + '\'' +
                 ", color='" + color + '\'' +
+                ", method='" + method + '\'' +
                 '}';
     }
 }
