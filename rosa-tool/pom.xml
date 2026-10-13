@@ -97,9 +97,29 @@
                         </goals>
                         <configuration>
 			    <finalName>rosa-tool</finalName>
+                            <filters>
+                                <filter>
+                                    <!-- Module descriptors are meaningless in a fat jar on the
+                                         classpath, and each artifact's manifest is replaced by
+                                         the one ManifestResourceTransformer generates. -->
+                                    <artifact>*:*</artifact>
+                                    <excludes>
+                                        <exclude>module-info.class</exclude>
+                                        <exclude>META-INF/versions/*/module-info.class</exclude>
+                                        <exclude>META-INF/MANIFEST.MF</exclude>
+                                    </excludes>
+                                </filter>
+                            </filters>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <mainClass>rosa.archive.cli.Rosa2Cli</mainClass>
+                                </transformer>
+                                <!-- Merge dependency LICENSE/NOTICE files instead of keeping only one. -->
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+                                    <resource>META-INF/LICENSE</resource>
+                                </transformer>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ApacheNoticeResourceTransformer">
+                                    <addHeader>false</addHeader>
                                 </transformer>
                             </transformers>
                             <createDependencyReducedPom>false</createDependencyReducedPom>
