@@ -3,7 +3,13 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { executeSearch, parseSearchResults } from '../services/opensearch';
+import {
+  executeSearch,
+  clearSearchCache,
+  parseSearchResults,
+  searchManifests,
+} from '../services/opensearch';
+import { SearchCache } from '../services/searchCache';
 import { mockSearchResponse, createFetchResponse } from '../../../test/mocks';
 
 /** Build a Response-like object with a status and a readable body. */
@@ -22,6 +28,94 @@ describe('opensearch service', () => {
 
   beforeEach(() => {
     vi.resetAllMocks();
+    clearSearchCache();
+  });
+
+  describe('executeSearch caching', () => {
+    it('should answer a repeated search from the cache', async () => {
+      global.fetch = vi.fn().mockResolvedValue(createFetchResponse(mockSearchResponse));
+      const query = { query: { match_all: {} }, from: 20 };
+
+      const first = await executeSearch(opensearchUrl, query);
+      const second = await executeSearch(opensearchUrl, { query: { match_all: {} }, from: 20 });
+
+      expect(global.fetch).toHaveBeenCalledTimes(1);
+      expect(second).toEqual(first);
+    });
+
+    it('should share one request between identical concurrent searches', async () => {
+      global.fetch = vi.fn().mockResolvedValue(createFetchResponse(mockSearchResponse));
+
+      await Promise.all([executeSearch(opensearchUrl, {}), executeSearch(opensearchUrl, {})]);
+
+      expect(global.fetch).toHaveBeenCalledTimes(1);
+    });
+
+    it('should key on both the query and the endpoint', async () => {
+      global.fetch = vi.fn().mockResolvedValue(createFetchResponse(mockSearchResponse));
+
+      await executeSearch(opensearchUrl, { from: 0 });
+      await executeSearch(opensearchUrl, { from: 20 });
+      await searchManifests(opensearchUrl, { from: 0 });
+
+      expect(global.fetch).toHaveBeenCalledTimes(3);
+    });
+
+    it('should not cache a failure', async () => {
+      global.fetch = vi
+        .fn()
+        .mockResolvedValueOnce(errorResponse(400))
+        .mockResolvedValueOnce(createFetchResponse(mockSearchResponse));
+
+      await expect(executeSearch(opensearchUrl, {})).rejects.toThrow();
+      await expect(executeSearch(opensearchUrl, {})).resolves.toEqual(mockSearchResponse);
+      expect(global.fetch).toHaveBeenCalledTimes(2);
+    });
+
+    it('should not cache a partial response', async () => {
+      const partial = { ...mockSearchResponse, timed_out: true };
+      global.fetch = vi
+        .fn()
+        .mockResolvedValueOnce(createFetchResponse(partial))
+        .mockResolvedValueOnce(createFetchResponse(mockSearchResponse));
+
+      await expect(executeSearch(opensearchUrl, {})).resolves.toEqual(partial);
+      await expect(executeSearch(opensearchUrl, {})).resolves.toEqual(mockSearchResponse);
+      expect(global.fetch).toHaveBeenCalledTimes(2);
+    });
+
+    it('should fetch again once the entry expires', async () => {
+      global.fetch = vi.fn().mockResolvedValue(createFetchResponse(mockSearchResponse));
+      let now = 0;
+      const cache = new SearchCache({ ttl: 1000, now: () => now });
+
+      await executeSearch(opensearchUrl, {}, { cache });
+      now = 999;
+      await executeSearch(opensearchUrl, {}, { cache });
+      now = 1000;
+      await executeSearch(opensearchUrl, {}, { cache });
+
+      expect(global.fetch).toHaveBeenCalledTimes(2);
+    });
+
+    it('should fetch again after clearSearchCache', async () => {
+      global.fetch = vi.fn().mockResolvedValue(createFetchResponse(mockSearchResponse));
+
+      await executeSearch(opensearchUrl, {});
+      clearSearchCache();
+      await executeSearch(opensearchUrl, {});
+
+      expect(global.fetch).toHaveBeenCalledTimes(2);
+    });
+
+    it('should bypass the cache with cache: null', async () => {
+      global.fetch = vi.fn().mockResolvedValue(createFetchResponse(mockSearchResponse));
+
+      await executeSearch(opensearchUrl, {}, { cache: null });
+      await executeSearch(opensearchUrl, {}, { cache: null });
+
+      expect(global.fetch).toHaveBeenCalledTimes(2);
+    });
   });
 
   describe('executeSearch', () => {
@@ -63,6 +157,7 @@ describe('opensearch service', () => {
   describe('executeSearch retries', () => {
     beforeEach(() => {
       vi.resetAllMocks();
+      clearSearchCache();
       vi.useFakeTimers();
     });
 

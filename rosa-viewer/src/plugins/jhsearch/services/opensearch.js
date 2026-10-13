@@ -2,6 +2,8 @@
  * Opensearch client service.
  */
 
+import { SearchCache, searchCacheKey } from './searchCache';
+
 const DEFAULT_TIMEOUT = 30000;
 
 /**
@@ -106,8 +108,24 @@ async function postOnce(url, query, timeout) {
   }
 }
 
+/** Responses shared by every search in this page session. */
+const searchCache = new SearchCache();
+
+/**
+ * Empty the search response cache, e.g. after the indexes have been rebuilt.
+ */
+export function clearSearchCache() {
+  searchCache.clear();
+}
+
 /**
  * Execute a search query against Opensearch.
+ *
+ * Successful, complete responses are cached in memory (see searchCache.js), and
+ * an identical search made while one is in flight waits for that request rather
+ * than sending another. Errors and partial responses are never cached, so a
+ * retry always reaches the backend. The cached response object is shared between
+ * callers and must not be mutated.
  *
  * Retries once on a transient backend failure. The timeout applies per attempt,
  * so a retried search can take longer than `timeout` in total.
@@ -117,9 +135,48 @@ async function postOnce(url, query, timeout) {
  * @param {Object} options - Request options
  * @param {number} options.timeout - Request timeout in milliseconds, per attempt
  * @param {number} options.attempts - Attempts including the first. 1 disables retrying
+ * @param {SearchCache|null} options.cache - Cache to use; null bypasses caching
  * @returns {Promise<Object>} Search response
  */
-export async function executeSearch(opensearchUrl, query, options = {}) {
+export function executeSearch(opensearchUrl, query, options = {}) {
+  const { cache = searchCache } = options;
+
+  if (!cache) {
+    return fetchSearch(opensearchUrl, query, options);
+  }
+
+  const key = searchCacheKey(opensearchUrl, query);
+  const cached = cache.get(key);
+  if (cached) {
+    return cached;
+  }
+
+  const pending = fetchSearch(opensearchUrl, query, options).then(
+    (response) => {
+      if (describePartialResults(response)) {
+        cache.delete(key, pending);
+      }
+      return response;
+    },
+    (error) => {
+      cache.delete(key, pending);
+      throw error;
+    }
+  );
+
+  cache.set(key, pending);
+  return pending;
+}
+
+/**
+ * Send a search to Opensearch, retrying a transient failure. Uncached.
+ *
+ * @param {string} opensearchUrl - The Opensearch _search endpoint URL
+ * @param {Object} query - The query body
+ * @param {Object} options - See executeSearch
+ * @returns {Promise<Object>} Search response
+ */
+async function fetchSearch(opensearchUrl, query, options) {
   const { timeout = DEFAULT_TIMEOUT, attempts = DEFAULT_ATTEMPTS } = options;
   const totalAttempts = Math.max(attempts, 1);
 

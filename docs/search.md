@@ -118,6 +118,12 @@ Retry once with jitter, which is what
 `src/plugins/jhsearch/services/opensearch.js` does; do not retry a 429 without
 honouring the delay, and do not retry a client-side timeout.
 
+**Caching.** The indexes change only on re-ingest, so the viewer keeps complete
+responses in memory for the page session (30 minutes, at most 100 entries, see
+`services/searchCache.js`) and shares one request between identical in-flight
+searches. Errors and partial responses are not cached. After re-indexing, open
+tabs show the old results until they are reloaded or the entries expire.
+
 **Partial responses.** Opensearch answers HTTP 200 when only some shards
 contributed, so a successful-looking response can be missing matches. Check both
 `_shards.failed` and `timed_out` on every response and tell the user when either
