@@ -4,9 +4,10 @@ aws_region  = "us-east-1"
 name_prefix = "jhu-rosa2"
 
 # ---------- Networking ----------
-# Same VPC and subnet as the other JHU internal workloads in this account.
-vpc_id     = "vpc-07f503e3b0f8d5f8a"
-subnet_ids = ["subnet-00cbb11a099d54bbd"]
+# vpc_id and subnet_ids are sourced from the dspace prod remote state
+# (dspace/prod/opentofu.tfstate); see remote-state.tf. The dspace stack is the
+# origin of the network foundation, so prod runs in the dspace prod VPC and the
+# module slices the private subnets to one for this single-node domain.
 
 # Allow direct access to the domain from the internal Hopkins network for
 # troubleshooting. Set to [] to make the Lambda functions the only path in.
