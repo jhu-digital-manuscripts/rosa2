@@ -1,0 +1,132 @@
+/*
+ * Book description panel. It shares the .rosa-annos root, custom properties and
+ * group headings of the RosaAnnotations panel (annotations.css), so the
+ * per-collection stylesheets in public/styles/ style both.
+ */
+
+.rosa-desc {
+  padding-bottom: 1rem;
+}
+
+.rosa-desc-body {
+  padding: 0.35rem 1rem 0.85rem;
+}
+
+.rosa-desc-body[hidden] {
+  display: none;
+}
+
+.rosa-desc p {
+  margin: 0 0 0.6rem;
+  overflow-wrap: break-word;
+}
+
+.rosa-desc p:last-child {
+  margin-bottom: 0;
+}
+
+.rosa-desc i {
+  font-style: italic;
+}
+
+/* Collation: quire numeral and folio range in two columns */
+
+.rosa-desc-caption {
+  color: var(--rosa-anno-muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.rosa-desc p.rosa-desc-caption {
+  margin-bottom: 0.35rem;
+}
+
+.rosa-desc-collation {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 0.85rem;
+  row-gap: 0.15rem;
+  margin: 0 0 0.75rem;
+  font-size: 0.875rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.rosa-desc-collation > div {
+  display: contents;
+}
+
+.rosa-desc-collation dt {
+  min-width: 2.5rem;
+  color: var(--rosa-anno-accent);
+  font-family: var(--rosa-anno-heading-font);
+  font-weight: 600;
+  text-align: right;
+}
+
+.rosa-desc-collation dd {
+  margin: 0;
+}
+
+.rosa-desc-list {
+  margin: 0 0 0.6rem;
+  padding-left: 1.25rem;
+}
+
+.rosa-desc-list li {
+  margin-bottom: 0.2rem;
+}
+
+/* Folio references */
+
+.rosa-desc-locus {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+button.rosa-desc-locus {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 2px;
+  background: none;
+  color: var(--rosa-anno-accent);
+  font: inherit;
+  text-decoration: underline dotted;
+  text-underline-offset: 0.18em;
+  cursor: pointer;
+}
+
+button.rosa-desc-locus:hover {
+  background-color: var(--rosa-anno-hover);
+  text-decoration-style: solid;
+}
+
+button.rosa-desc-locus:focus-visible {
+  outline: 2px solid var(--rosa-anno-accent);
+  outline-offset: 1px;
+}
+
+/* Credit lines (notes without a heading) */
+
+.rosa-desc-credit {
+  padding: 0.75rem 1rem 0;
+  border-top: 1px solid var(--rosa-anno-rule);
+  color: var(--rosa-anno-muted);
+  font-size: 0.8125rem;
+  font-style: italic;
+}
+
+.rosa-desc-credit p {
+  margin-bottom: 0.25rem;
+}
+
+/* Status messages */
+
+.rosa-desc-status {
+  margin: 0;
+  padding: 1rem;
+  color: var(--rosa-anno-muted);
+}

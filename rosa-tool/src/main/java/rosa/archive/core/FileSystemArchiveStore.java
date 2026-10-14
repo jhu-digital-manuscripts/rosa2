@@ -112,6 +112,11 @@ public final class FileSystemArchiveStore implements ArchiveStore {
     }
 
     @Override
+    public Path bookFile(String collectionId, String bookId, String fileName) {
+        return archivePath.resolve(collectionId).resolve(bookId).resolve(fileName);
+    }
+
+    @Override
     public List<String> listCollections() throws IOException {
         List<String> collections = new ArrayList<>();
 

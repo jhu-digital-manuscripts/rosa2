@@ -21,6 +21,7 @@ The `generate-iiif-pres` command reads an archive and produces a file hierarchy 
     collection.json                       (sub-collection listing manifests)
     <book-id>/
       manifest.json                       (Manifest for the book)
+      description.xml                     (TEI book description, DLMM books only)
 ```
 
 When a `--base-url` is provided, all `id` values use that URL as prefix. Otherwise, relative paths are used.
@@ -40,6 +41,7 @@ One manifest per book. Contains:
 - **Metadata** — title, repository, shelfmark, date, dimensions, authors, readers, etc.
 - **requiredStatement** — attribution text from `{book-id}.permission_{lang}.html`, displayed per IIIF 3.0 spec as a statement that must be shown when the resource is displayed
 - **rights** — license URL from `{book-id}.metadata.xml` `<license><url>` element, must be a Creative Commons or RightsStatements.org URI per IIIF 3.0 spec
+- **seeAlso** — the TEI book description, see [Book descriptions](#book-descriptions)
 - **Items** — array of Canvases, one per page image
 - **Structures** — Ranges grouping Canvases by image location, text segments, and illustrations
 - **Thumbnail** — reference to the first canvas image
@@ -131,6 +133,28 @@ HTML conventions, which the stylesheets in `rosa-viewer/public/styles/` rely on:
 | Addition / deletion | `⸌…⸍` / `⟦…⟧` |
 | Miniature (`figure`) | `<p><b>Miniature:</b> <i>head</i><br><small><b>Characters:</b> …</small></p>` |
 | Editorial note (`note`) | `<small>*&nbsp;note</small>` where the note occurs |
+
+### Book descriptions
+
+When a book's English description `{book-id}.description_en.xml` has a
+`<notesStmt>` with at least one non-empty `<note>`, the file is copied unchanged
+to `{collection-id}/{book-id}/description.xml` and the manifest references it
+following the IIIF cookbook recipe
+[Linking to Structured Metadata (0053)](https://iiif.io/api/cookbook/recipe/0053-seeAlso/):
+
+```json
+"seeAlso": [{
+  "id": "https://example.org/iiif/rose/Douce332/description.xml",
+  "type": "Dataset",
+  "label": { "en": ["Book description (TEI)"] },
+  "format": "application/tei+xml",
+  "profile": "http://www.tei-c.org/ns/1.0"
+}]
+```
+
+Books without such a description have no `description.xml` and no `seeAlso`.
+The viewer's book description plugin (`rosa-viewer/src/plugins/description/`)
+looks for this entry and renders the `notesStmt` sections.
 
 ## Serialization
 

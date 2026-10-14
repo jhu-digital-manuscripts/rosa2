@@ -3,7 +3,9 @@ package rosa.archive.iiif;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
@@ -42,6 +44,16 @@ import rosa.archive.model.aor.AnnotatedPage;
 public final class IIIFPresentationGenerator {
 
     private static final String CONTEXT = "http://iiif.io/api/presentation/3/context.json";
+
+    /** File name of the published TEI book description, next to manifest.json. */
+    public static final String DESCRIPTION_FILE = "description.xml";
+
+    /** Language of the published book description. */
+    public static final String DESCRIPTION_LANGUAGE = "en";
+
+    /** seeAlso format and profile of the TEI book description. */
+    public static final String TEI_FORMAT = "application/tei+xml";
+    public static final String TEI_PROFILE = "http://www.tei-c.org/ns/1.0";
 
     private final IIIFJsonWriter writer;
     private final ObjectMapper mapper;
@@ -175,6 +187,14 @@ public final class IIIFPresentationGenerator {
                 }
 
                 writer.write(manifest, outputDir.resolve(collectionId).resolve(bookId).resolve("manifest.json"));
+
+                if (hasDisplayableDescription(book)) {
+                    Path source = store.bookFile(collectionId, bookId,
+                            book.getDescription(DESCRIPTION_LANGUAGE).getId());
+                    Path target = outputDir.resolve(collectionId).resolve(bookId).resolve(DESCRIPTION_FILE);
+                    Files.createDirectories(target.getParent());
+                    Files.copy(source, target, StandardCopyOption.REPLACE_EXISTING);
+                }
             }
 
             // Write sub-collection AFTER processing books so labels are available
@@ -401,6 +421,17 @@ public final class IIIFPresentationGenerator {
         String licenseUrl = book.getLicenseUrl();
         if (licenseUrl != null && !licenseUrl.isEmpty()) {
             node.put("rights", licenseUrl);
+        }
+
+        // seeAlso: the English TEI book description, copied to description.xml (recipe 0053)
+        if (hasDisplayableDescription(book)) {
+            ObjectNode seeAlso = mapper.createObjectNode();
+            seeAlso.put("id", buildId(baseUrl, collectionId + "/" + bookId + "/" + DESCRIPTION_FILE));
+            seeAlso.put("type", "Dataset");
+            seeAlso.set("label", languageMap("en", "Book description (TEI)"));
+            seeAlso.put("format", TEI_FORMAT);
+            seeAlso.put("profile", TEI_PROFILE);
+            node.set("seeAlso", mapper.createArrayNode().add(seeAlso));
         }
 
         // viewingDirection and behavior for multi-image books
@@ -685,6 +716,19 @@ public final class IIIFPresentationGenerator {
             return "";
         }
         return "<p><b>" + label + ":</b> " + AnnotationHtml.esc(AnnotationHtml.clean(value)) + "</p>";
+    }
+
+    /**
+     * Whether the book has an English TEI description with at least one non-empty
+     * {@code notesStmt} note, which is published as {@link #DESCRIPTION_FILE}.
+     *
+     * @param book the book
+     * @return true if the description is published
+     */
+    public static boolean hasDisplayableDescription(Book book) {
+        rosa.archive.model.BookDescription desc = book.getDescription(DESCRIPTION_LANGUAGE);
+        return desc != null && desc.getId() != null
+                && desc.getNotes().values().stream().anyMatch(t -> t != null && !t.isBlank());
     }
 
     /**

@@ -11,6 +11,7 @@ Rosa Viewer provides:
 - Integration with Mirador's page-turner viewer
 - An annotations panel that groups a page's annotations (AoR by place on the
   page, DLMM by kind) and styles them per collection
+- A book description panel for books whose manifest links a TEI description
 
 ## Prerequisites
 
@@ -92,6 +93,38 @@ the recipe's tag and attribute list (`src/plugins/annotations/utils/sanitize.js`
 The version is pinned to the one Mirador depends on. Mirador's build inlines its
 own copy, so the site bundle carries DOMPurify twice (about 25 kB). If a later
 Mirador version allows configuring its sanitizer, this dependency can go.
+
+### Book descriptions
+
+The book description plugin (`src/plugins/description/`) adds a coffee-mug tab,
+after the built-in tabs, to the sidebar of windows whose manifest has a TEI
+`seeAlso` (profile `http://www.tei-c.org/ns/1.0` or format
+`application/tei+xml`). rosa-tool writes it for DLMM books with an English
+description, see
+[`docs/iiif-generation.md`](../docs/iiif-generation.md#book-descriptions). Other
+books, including all AoR books, get no tab.
+
+- The panel fetches the TEI file and shows the `<note>`s of `<notesStmt>` as
+  collapsible sections headed by their `rend` ("BASIC INFORMATION" becomes
+  "Basic information"). Notes without `rend`, such as "Description by …", are
+  shown as credit lines. The quire collation (`list` of `item n="…"`) is a
+  two-column list.
+- `<locus>` folio references that match a canvas label are links that show that
+  canvas. A reference without r/v is taken as the recto (`9` → `9r`), and a range
+  goes to its first folio (`from`). References that match nothing, such as
+  `21 bis` or flyleaves, stay plain text.
+- The TEI is converted to React elements, never to HTML, so nothing from the
+  file is injected into the page.
+- The panel uses the RosaAnnotations classes and custom properties
+  (`.rosa-annos`, `--rosa-anno-*`), so `public/styles/dlmm.css` styles it too.
+  `src/plugins/description/description.css` has the rest.
+- Mirador shows plugin tabs whenever they are registered. To hide the tab, a
+  wrap plugin on `WindowSideBarButtons` renders the buttons with a plugin map
+  that leaves it out. The tab tooltip comes from the plugin's `config`
+  (`translations.en.openCompanionWindow_bookDescription`).
+
+The tests that parse XML use jsdom (`// @vitest-environment jsdom`), because
+happy-dom, the default test environment, parses `application/xml` as HTML.
 
 ### URLs and browser history
 
@@ -276,6 +309,7 @@ rosa-viewer/
 │   ├── test/                 # Vitest setup and shared mocks
 │   └── plugins/
 │       ├── annotations/      # RosaAnnotations plugin: grouped, styled annotations panel
+│       ├── description/      # Book description plugin: TEI notesStmt side panel
 │       └── jhsearch/         # JHSearch plugin
 │           ├── index.jsx
 │           ├── state/        # Redux state management

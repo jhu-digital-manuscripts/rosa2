@@ -20,7 +20,9 @@ Use `--help` on any command for detailed usage. All commands exit with code 0 on
 
 ### generate-iiif-pres
 
-Generates static IIIF Presentation API 3.0 JSON files from archive data.
+Generates static IIIF Presentation API 3.0 JSON files from archive data. English TEI
+book descriptions are also copied next to their manifests as `description.xml` and
+linked with `seeAlso` (see [Book descriptions](iiif-generation.md#book-descriptions)).
 
 ```
 java -jar rosa-tool.jar generate-iiif-pres --archive <dir> --output <dir> [--base-url <url>] [--image-base-url <url>] [--image-api-version <2|3>] [--opensearch-url <url>] [--annotation-stylesheet-url <url>]

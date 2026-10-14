@@ -52,6 +52,16 @@ public sealed interface ArchiveStore permits FileSystemArchiveStore {
     Book loadBook(BookCollection collection, String bookId) throws IOException;
 
     /**
+     * Resolves the path of a file in a book directory. The file need not exist.
+     *
+     * @param collectionId the collection identifier
+     * @param bookId       the book identifier
+     * @param fileName     the file name within the book directory
+     * @return the path of the file
+     */
+    Path bookFile(String collectionId, String bookId, String fileName);
+
+    /**
      * Checks the structural consistency of a book within its collection.
      *
      * @param collection the parent collection

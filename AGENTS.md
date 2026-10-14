@@ -31,6 +31,7 @@ rosa2/
 │       ├── site/               createSiteViewer, resolveSiteConfig, shared site.css
 │       ├── plugins/jhsearch/   components/ hooks/ services/ state/ utils/
 │       ├── plugins/annotations/  RosaAnnotations panel (grouped, styled annotations)
+│       ├── plugins/description/  Book description panel (TEI notesStmt from manifest seeAlso)
 │       ├── i18n/, styles/
 │       └── test/               setup.js, mocks.js
 ├── rosa-search/
