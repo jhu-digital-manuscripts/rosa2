@@ -31,6 +31,10 @@ export const defaultJHSearchConfig = {
  */
 export const defaultMiradorConfig = {
   id: 'rosa-viewer',
+  osdConfig: {
+    // Enable CORS for cross-origin image servers (e.g. stage/prod image server from localhost)
+    crossOriginPolicy: 'Anonymous',
+  },
   window: {
     allowClose: true,
     allowFullscreen: true,
