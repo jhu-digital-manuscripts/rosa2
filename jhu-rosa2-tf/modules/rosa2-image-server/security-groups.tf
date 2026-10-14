@@ -4,9 +4,10 @@
 #         managed prefix list), which includes the VPC origin's ENIs. The ALB is
 #         internal and in private subnets, so nothing else can route to it.
 #         Egress only to the task group on 8182.
-#   task  ingress 8182 only from the ALB group. Egress 443 for ECR, CloudWatch
-#         Logs and S3 (over the dspace public subnets' IGW route). The VPC uses
-#         the Amazon resolver, which security groups do not filter.
+#   task  ingress 8182 only from the ALB group. Egress 443 for ECR and
+#         CloudWatch Logs (over the IGW) and for S3 (via the dspace VPC's S3
+#         gateway endpoint on the public route table). The VPC uses the Amazon
+#         resolver, which security groups do not filter.
 
 data "aws_ec2_managed_prefix_list" "cloudfront" {
   name = "com.amazonaws.global.cloudfront.origin-facing"
