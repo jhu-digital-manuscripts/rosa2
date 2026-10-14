@@ -6,8 +6,10 @@ aws_region  = "us-east-1"
 name_prefix = "jhu-rosa2-stage"
 
 # ---------- Networking ----------
-vpc_id     = "vpc-07f503e3b0f8d5f8a"
-subnet_ids = ["subnet-00cbb11a099d54bbd"]
+# vpc_id and subnet_ids are sourced from the dspace stage remote state
+# (dspace/stage/opentofu.tfstate); see remote-state.tf. The dspace stack is the
+# origin of the network foundation, so stage runs in the dspace stage VPC and
+# the module slices the private subnets to one for this single-node domain.
 
 vpc_cidr_blocks = ["10.64.0.0/10"]
 

@@ -37,21 +37,6 @@ variable "tags" {
 
 # ---------- Networking ----------
 
-variable "vpc_id" {
-  description = "VPC the OpenSearch domain and both Lambda functions attach to."
-  type        = string
-}
-
-variable "subnet_ids" {
-  description = "Subnet IDs for the OpenSearch domain ENIs and the Lambda ENIs. The domain requires exactly one subnet per availability zone, so supply one subnet for a single-node domain."
-  type        = list(string)
-
-  validation {
-    condition     = length(var.subnet_ids) > 0
-    error_message = "at least one subnet ID is required."
-  }
-}
-
 variable "vpc_cidr_blocks" {
   description = "CIDR blocks permitted to reach the OpenSearch domain directly, in addition to the Lambda security group. Used for troubleshooting from inside the network; set to [] to allow only the Lambdas."
   type        = list(string)

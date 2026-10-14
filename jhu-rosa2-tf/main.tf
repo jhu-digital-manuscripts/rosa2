@@ -20,8 +20,8 @@ module "rosa2_search" {
   name_prefix = var.name_prefix
 
   # Networking
-  vpc_id                 = var.vpc_id
-  subnet_ids             = var.subnet_ids
+  vpc_id                 = data.terraform_remote_state.dspace.outputs.vpc_id
+  subnet_ids             = local.domain_subnet_ids
   vpc_cidr_blocks        = var.vpc_cidr_blocks
   dns_server_cidrs       = var.dns_server_cidrs
   create_s3_vpc_endpoint = var.create_s3_vpc_endpoint
