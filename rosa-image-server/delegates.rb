@@ -1,0 +1,477 @@
+##
+# Rosa delegate script for Cantaloupe 5.0.7.
+#
+# Derived from delegates.rb.sample (Cantaloupe 5.0.7). Every method is the
+# upstream pass-through stub except extra_iiif2_information_response_keys,
+# marked "ROSA:", which supports the legacy /iiif/<id> URL form:
+#
+#   1. CloudFront's legacy-request function rewrites /iiif/<id>/... to
+#      /iiif/2/<id>/... and, for info.json only, adds the request header
+#      X-Rosa-Legacy-Path: 1 (which is part of the CloudFront cache key).
+#   2. Cantaloupe always builds the info.json @id as <base_uri>/iiif/2/<id>.
+#      When the header is present, the method below overrides @id with
+#      <base_uri>/iiif/<id>, so that it matches the URL the client asked for.
+#   3. CloudFront's legacy-response function rewrites /iiif/2/ to /iiif/ in
+#      Location and Link headers, which this script cannot reach.
+#
+# Requests for /iiif/2/... and /iiif/3/... are unaffected.
+#
+# Original upstream description:
+#
+# Sample Ruby delegate script containing stubs and documentation for all
+# available delegate methods. See the user manual for more information.
+#
+# The application will create an instance of this class early in the request
+# cycle and dispose of it at the end of the request cycle. Instances don't need
+# to be thread-safe, but sharing information across instances (requests)
+# **does** need to be done thread-safely.
+#
+# This version of the script works with Cantaloupe version >= 5.
+#
+class CustomDelegate
+
+  ##
+  # Attribute for the request context, which is a hash containing information
+  # about the current request.
+  #
+  # This attribute will be set by the server before any other methods are
+  # called. Methods can access its keys like:
+  #
+  # ```
+  # identifier = context['identifier']
+  # ```
+  #
+  # The hash will contain the following keys in response to all requests:
+  #
+  # * `client_ip`        [String] Client IP address.
+  # * `cookies`          [Hash<String,String>] Hash of cookie name-value pairs.
+  # * `full_size`        [Hash<String,Integer>] Hash with `width` and `height`
+  #                      keys corresponding to the pixel dimensions of the
+  #                      source image.
+  # * `identifier`       [String] Image identifier.
+  # * `local_uri`        [String] URI seen by the application, which may be
+  #                      different from `request_uri` when operating behind a
+  #                      reverse-proxy server.
+  # * `metadata`         [Hash<String,Object>] Embedded image metadata. Object
+  #                      structure varies depending on the source image.
+  #                      See the `metadata()` method.
+  # * `page_count`       [Integer] Page count.
+  # * `page_number`      [Integer] Page number.
+  # * `request_headers`  [Hash<String,String>] Hash of header name-value pairs.
+  # * `request_uri`      [String] URI requested by the client.
+  # * `scale_constraint` [Array<Integer>] Two-element array with scale
+  #                      constraint numerator at position 0 and denominator at
+  #                      position 1.
+  #
+  # It will contain the following additional string keys in response to image
+  # requests, after the image has been accessed:
+  #
+  # * `operations`     [Array<Hash<String,Object>>] Array of operations in
+  #                    order of application. Only operations that are not
+  #                    no-ops will be included. Every hash contains a `class`
+  #                    key corresponding to the operation class name, which
+  #                    will be one of the `e.i.l.c.operation.Operation`
+  #                    implementations.
+  # * `output_format`  [String] Output format media (MIME) type.
+  # * `resulting_size` [Hash<String,Integer>] Hash with `width` and `height`
+  #                    keys corresponding to the pixel dimensions of the
+  #                    resulting image after all operations have been applied.
+  #
+  # @return [Hash] Request context.
+  #
+  attr_accessor :context
+
+  ##
+  # Deserializes the given meta-identifier string into a hash of its component
+  # parts.
+  #
+  # This method is used only when the `meta_identifier.transformer`
+  # configuration key is set to `DelegateMetaIdentifierTransformer`.
+  #
+  # The hash contains the following keys:
+  #
+  # * `identifier`       [String] Required.
+  # * `page_number`      [Integer] Optional.
+  # * `scale_constraint` [Array<Integer>] Two-element array with scale
+  #                      constraint numerator at position 0 and denominator at
+  #                      position 1. Optional.
+  #
+  # @param meta_identifier [String]
+  # @return Hash<String,Object> See above. The return value should be
+  #                             compatible with the argument to
+  #                             {serialize_meta_identifier}.
+  #
+  def deserialize_meta_identifier(meta_identifier)
+  end
+
+  ##
+  # Serializes the given meta-identifier hash.
+  #
+  # This method is used only when the `meta_identifier.transformer`
+  # configuration key is set to `DelegateMetaIdentifierTransformer`.
+  #
+  # See {deserialize_meta_identifier} for a description of the hash structure.
+  #
+  # @param components [Hash<String,Object>]
+  # @return [String] Serialized meta-identifier compatible with the argument to
+  #                  {deserialize_meta_identifier}.
+  #
+  def serialize_meta_identifier(components)
+  end
+
+  ##
+  # Returns authorization status for the current request. This method is called
+  # upon all requests to all public endpoints early in the request cycle,
+  # before the image has been accessed. This means that some context keys (like
+  # `full_size`) will not be available yet.
+  #
+  # This method should implement all possible authorization logic except that
+  # which requires any of the context keys that aren't yet available. This will
+  # ensure efficient authorization failures.
+  #
+  # Implementations should assume that the underlying resource is available,
+  # and not try to check for it.
+  #
+  # Possible return values:
+  #
+  # 1. Boolean true/false, indicating whether the request is fully authorized
+  #    or not. If false, the client will receive a 403 Forbidden response.
+  # 2. Hash with a `status_code` key.
+  #     a. If it corresponds to an integer from 200-299, the request is
+  #        authorized.
+  #     b. If it corresponds to an integer from 300-399:
+  #         i. If the hash also contains a `location` key corresponding to a
+  #            URI string, the request will be redirected to that URI using
+  #            that code.
+  #         ii. If the hash also contains `scale_numerator` and
+  #            `scale_denominator` keys, the request will be
+  #            redirected using that code to a virtual reduced-scale version of
+  #            the source image.
+  #     c. If it corresponds to 401, the hash must include a `challenge` key
+  #        corresponding to a WWW-Authenticate header value.
+  #
+  # @param options [Hash] Empty hash.
+  # @return [Boolean,Hash<String,Object>] See above.
+  #
+  def pre_authorize(options = {})
+    true
+  end
+
+  ##
+  # Returns authorization status for the current request. Will be called upon
+  # all requests to all public image (not information) endpoints.
+  #
+  # This is a counterpart of `pre_authorize()` that is invoked later in the
+  # request cycle, once more information about the underlying image has become
+  # available. It should only contain logic that depends on context keys that
+  # contain information about the source image (like `full_size`, `metadata`,
+  # etc.)
+  #
+  # Implementations should assume that the underlying resource is available,
+  # and not try to check for it.
+  #
+  # @param options [Hash] Empty hash.
+  # @return [Boolean,Hash<String,Object>] See the documentation of
+  #                                       `pre_authorize()`.
+  #
+  def authorize(options = {})
+    true
+  end
+
+  ##
+  # Adds additional keys to an Image API 2.x information response. See the
+  # [IIIF Image API 2.1](http://iiif.io/api/image/2.1/#image-information)
+  # specification and "endpoints" section of the user manual.
+  #
+  # @param options [Hash] Empty hash.
+  # @return [Hash] Hash to merge into an Image API 2.x information response.
+  #                Return an empty hash to add nothing.
+  #
+  # ROSA: overrides @id for legacy /iiif/<id>/info.json requests; see the top
+  # of this file. Also applies to the JSON body of 4xx info responses, which
+  # Cantaloupe builds with the same delegate call.
+  #
+  def extra_iiif2_information_response_keys(options = {})
+    legacy_id = legacy_iiif2_image_uri
+    legacy_id ? { '@id' => legacy_id } : {}
+  end
+
+  # ROSA: request header set by the CloudFront legacy-request function.
+  LEGACY_PATH_HEADER = 'x-rosa-legacy-path'.freeze
+
+  # ROSA: matches the public request URI of an Image API 2 info request,
+  # capturing everything before /iiif/2/ and the (still percent-encoded)
+  # identifier path component.
+  IIIF2_INFO_URI = %r{\A(?<root>.*?)/iiif/2/(?<id>[^/?#]+)/info\.json(?:[?#].*)?\z}.freeze
+
+  ##
+  # ROSA: returns the legacy-form image URI (<root>/iiif/<id>) when the current
+  # request carries the legacy marker header and is an Image API 2 info.json
+  # request, or nil otherwise.
+  #
+  # `request_uri` is Cantaloupe's public reference for the request: base_uri
+  # (or the X-Forwarded-* headers) plus the request path, with the identifier
+  # left percent-encoded, so %2F survives.
+  #
+  def legacy_iiif2_image_uri
+    headers = context['request_headers'] || {}
+    marked = headers.any? do |name, value|
+      name.to_s.downcase == LEGACY_PATH_HEADER && !value.to_s.strip.empty?
+    end
+    return nil unless marked
+
+    match = IIIF2_INFO_URI.match(context['request_uri'].to_s)
+    return nil unless match
+
+    "#{match[:root]}/iiif/#{match[:id]}"
+  end
+
+  ##
+  # Adds additional keys to an Image API 3.x information response. See the
+  # [IIIF Image API 3.0](http://iiif.io/api/image/3.0/#image-information)
+  # specification and "endpoints" section of the user manual.
+  #
+  # @param options [Hash] Empty hash.
+  # @return [Hash] Hash to merge into an Image API 3.x information response.
+  #                Return an empty hash to add nothing.
+  #
+  def extra_iiif3_information_response_keys(options = {})
+    {}
+  end
+
+  ##
+  # Tells the server which source to use for the given identifier.
+  #
+  # @param options [Hash] Empty hash.
+  # @return [String] Source name.
+  #
+  def source(options = {})
+  end
+
+  ##
+  # N.B.: this method should not try to perform authorization. `authorize()`
+  # should be used instead.
+  #
+  # @param options [Hash] Empty hash.
+  # @return [String,nil] Blob key of the image corresponding to the given
+  #                      identifier, or nil if not found.
+  #
+  def azurestoragesource_blob_key(options = {})
+  end
+
+  ##
+  # N.B.: this method should not try to perform authorization. `authorize()`
+  # should be used instead.
+  #
+  # @param options [Hash] Empty hash.
+  # @return [String,nil] Absolute pathname of the image corresponding to the
+  #                      given identifier, or nil if not found.
+  #
+  def filesystemsource_pathname(options = {})
+  end
+
+  ##
+  # Returns one of the following:
+  #
+  # 1. String URI
+  # 2. Hash with the following keys:
+  #     * `uri`               [String] (required)
+  #     * `username`          [String] For HTTP Basic authentication
+  #                           (optional).
+  #     * `secret`            [String] For HTTP Basic authentication
+  #                           (optional).
+  #     * `headers`           [Hash<String,String>] Hash of request headers
+  #                           (optional).
+  #     * `send_head_request` [Boolean] Optional; defaults to `true`. See the
+  #                           documentation of the
+  #                           `HttpSource.BasicLookupStrategy.send_head_requests`
+  #                           configuration key.
+  # 3. nil if not found.
+  #
+  # N.B.: this method should not try to perform authorization. `authorize()`
+  # should be used instead.
+  #
+  # @param options [Hash] Empty hash.
+  # @return See above.
+  #
+  def httpsource_resource_info(options = {})
+  end
+
+  ##
+  # N.B.: this method should not try to perform authorization. `authorize()`
+  # should be used instead.
+  #
+  # @param options [Hash] Empty hash.
+  # @return [String, nil] Database identifier of the image corresponding to the
+  #                       identifier in the context, or nil if not found.
+  #
+  def jdbcsource_database_identifier(options = {})
+  end
+
+  ##
+  # Returns either the last-modified timestamp of an image in ISO 8601 format,
+  # or an SQL statement that can be used to retrieve it from a `TIMESTAMP`-type
+  # column in the database. In the latter case, the "SELECT" and "FROM" clauses
+  # should be in uppercase in order to be autodetected.
+  #
+  # Implementing this method is optional, but may be necessary for certain
+  # features (like `Last-Modified` response headers) to work.
+  #
+  # @param options [Hash] Empty hash.
+  # @return [String, nil]
+  #
+  def jdbcsource_last_modified(options = {})
+  end
+
+  ##
+  # Returns either the media (MIME) type of an image, or an SQL statement that
+  # can be used to retrieve it from a `CHAR`-type column in the database. In
+  # the latter case, the "SELECT" and "FROM" clauses should be in uppercase in
+  # order to be autodetected. If nil is returned, the media type will be
+  # inferred some other way, such as by identifier extension or magic bytes.
+  #
+  # @param options [Hash] Empty hash.
+  # @return [String, nil]
+  #
+  def jdbcsource_media_type(options = {})
+  end
+
+  ##
+  # @param options [Hash] Empty hash.
+  # @return [String] SQL statement that selects the BLOB corresponding to the
+  #                  value returned by `jdbcsource_database_identifier()`.
+  #
+  def jdbcsource_lookup_sql(options = {})
+  end
+
+  ##
+  # N.B.: this method should not try to perform authorization. `authorize()`
+  # should be used instead.
+  #
+  # @param options [Hash] Empty hash.
+  # @return [Hash<String,Object>,nil] Hash containing `bucket` and `key` keys.
+  #         It may also contain an `endpoint` key, indicating that the endpoint
+  #         is different from the one set in the configuration. In that case,
+  #         it may also contain `region`, `access_key_id`, and/or
+  #         `secret_access_key` keys.
+  #
+  def s3source_object_info(options = {})
+  end
+
+  ##
+  # Tells the server what overlay, if any, to apply to an image. Called upon
+  # all image requests to any endpoint if overlays are enabled and the overlay
+  # strategy is set to `ScriptStrategy` in the application configuration.
+  #
+  # Return values:
+  #
+  # 1. For string overlays, a hash with the following keys:
+  #     * `background_color` [String] CSS-compliant RGA(A) color.
+  #     * `color`            [String] CSS-compliant RGA(A) color.
+  #     * `font`             [String] Font name. Launch with the -list-fonts
+  #                          argument to see a list of available fonts.
+  #     * `font_min_size`    [Integer] Minimum font size in points (ignored
+  #                          when `word_wrap` is true).
+  #     * `font_size`        [Integer] Font size in points.
+  #     * `font_weight`      [Float] Font weight based on 1.
+  #     * `glyph_spacing`    [Float] Glyph spacing based on 0.
+  #     * `inset`            [Integer] Pixels of inset.
+  #     * `position`         [String] Position like `top left`, `center right`,
+  #                          etc.
+  #     * `string`           [String] String to draw.
+  #     * `stroke_color`     [String] CSS-compliant RGB(A) text outline color.
+  #     * `stroke_width`     [Float] Text outline width in pixels.
+  #     * `word_wrap`        [Boolean] Whether to wrap long lines within
+  #                          `string`.
+  # 2. For image overlays, a hash with the following keys:
+  #     * `image`    [String] Image pathname or URL.
+  #     * `position` [String] See above.
+  #     * `inset`    [Integer] See above.
+  # 3. nil for no overlay.
+  #
+  # @param options [Hash] Empty hash.
+  # @return See above.
+  #
+  def overlay(options = {})
+  end
+
+  ##
+  # Tells the server what regions of an image to redact in response to a
+  # particular request. Will be called upon all image requests to any endpoint.
+  #
+  # @param options [Hash] Empty hash.
+  # @return [Array<Hash<String,Integer>>] Array of hashes, each with `x`, `y`,
+  #         `width`, and `height` keys; or an empty array if no redactions are
+  #         to be applied.
+  #
+  def redactions(options = {})
+    []
+  end
+
+  ##
+  # Returns XMP metadata to embed in the derivative image.
+  #
+  # Source image metadata is available in the `metadata` context key, and has
+  # the following structure:
+  #
+  # ```
+  # {
+  #     "exif": {
+  #         "tagSet": "Baseline TIFF",
+  #         "fields": {
+  #             "Field1Name": value,
+  #             "Field2Name": value,
+  #             "EXIFIFD": {
+  #                 "tagSet": "EXIF",
+  #                 "fields": {
+  #                     "Field1Name": value,
+  #                     "Field2Name": value
+  #                 }
+  #             }
+  #         }
+  #     },
+  #     "iptc": [
+  #         "Field1Name": value,
+  #         "Field2Name": value
+  #     ],
+  #     "xmp_string": "<rdf:RDF>...</rdf:RDF>",
+  #     "xmp_model": See https://jena.apache.org/documentation/javadoc/jena/org/apache/jena/rdf/model/Model.html,
+  #     "xmp_elements": {
+  #         "Field1Name": "value",
+  #         "Field2Name": [
+  #             "value1",
+  #             "value2"
+  #         ]
+  #     },
+  #     "native": {
+  #         # structure varies
+  #     }
+  # }
+  # ```
+  #
+  # * The `exif` key refers to embedded EXIF data. This also includes IFD0
+  #   metadata from source TIFFs, whether or not an EXIF IFD is present.
+  # * The `iptc` key refers to embedded IPTC IIM data.
+  # * The `xmp_string` key refers to raw embedded XMP data.
+  # * The `xmp_model` key contains a Jena Model object pre-loaded with the
+  #   contents of `xmp_string`.
+  # * The `xmp_elements` key contains a view of the embedded XMP data as key-
+  #   value pairs. This is convenient to use, but may not work correctly with
+  #   all XMP fields--in particular, those that cannot be expressed as
+  #   key-value pairs.
+  # * The `native` key refers to format-specific metadata.
+  #
+  # Any combination of the above keys may be present or missing depending on
+  # what is available in a particular source image.
+  #
+  # Only XMP can be embedded in derivative images. See the user manual for
+  # examples of working with the XMP model programmatically.
+  #
+  # @return [String,Model,nil] String or Jena model containing XMP data to
+  #                            embed in the derivative image, or nil to not
+  #                            embed anything.
+  #
+  def metadata(options = {})
+  end
+
+end

@@ -9,7 +9,8 @@ Rosa is a framework for creating a web application that allows users to interact
 | [rosa-tool](rosa-tool/) | Java CLI for archive management, IIIF generation, and Opensearch data export |
 | [rosa-viewer](rosa-viewer/) | Mirador 4-based IIIF viewer with JHSearch plugin |
 | [rosa-search](rosa-search/) | Opensearch index definitions, Latin analyzer resources, and search Lambdas |
-| [jhu-rosa2-tf](jhu-rosa2-tf/) | OpenTofu configuration for AWS managed Opensearch behind API Gateway |
+| [rosa-image-server](rosa-image-server/) | Cantaloupe + Kakadu IIIF Image API server (Docker image for ECS) |
+| [jhu-rosa2-tf](jhu-rosa2-tf/) | OpenTofu configuration for AWS: Opensearch behind API Gateway, and the image server behind CloudFront |
 | [local-dev](local-dev/) | Local development environment scripts |
 
 ## Quick Start
@@ -82,19 +83,32 @@ See [docs/deployment.md](docs/deployment.md) for detailed instructions.
 │  Archive (fs)   │────▶│    rosa-tool     │────▶│  IIIF JSON      │
 │  metadata, XML  │     │  (Java CLI)      │     │  (static files) │
 └─────────────────┘     └──────────────────┘     └────────┬────────┘
-                               │                          │
-                               ▼                          │
-                        ┌──────────────────┐              │
-                        │ Opensearch Bulk  │              │
-                        │ (NDJSON files)   │              │
-                        └────────┬─────────┘              │
-                                 │                        │
-                                 ▼                        ▼
+                               │                          │ manifests
+                               ▼                          ▼
                         ┌──────────────────┐     ┌─────────────────┐
-                        │   Opensearch     │◀───▶│  rosa-viewer    │
-                        │   (search API)   │     │  (Mirador + UI) │
-                        └──────────────────┘     └─────────────────┘
+                        │ Opensearch Bulk  │     │  rosa-viewer    │
+                        │ (NDJSON files)   │     │  (Mirador + UI) │
+                        └────────┬─────────┘     └──┬───────────┬──┘
+                                 │        search    │           │ tiles, thumbnails,
+                                 ▼                  │           │ info.json (IIIF Image API)
+                        ┌──────────────────┐        │           ▼
+                        │   Opensearch     │◀───────┘  ┌─────────────────────┐
+                        │   (search API)   │           │  rosa-image-server  │
+                        └──────────────────┘           │  CloudFront → ECS   │
+                                                       │  Cantaloupe+Kakadu  │
+                                                       └──────────┬──────────┘
+                                                                  │
+                                                                  ▼
+                                                       ┌─────────────────────┐
+                                                       │ S3: JPEG 2000 pages │
+                                                       │ + derivative cache  │
+                                                       └─────────────────────┘
 ```
+
+Manifests reference images by IIIF Image API service URL
+(`--image-base-url`); the viewer fetches `info.json`, tiles and thumbnails
+directly from the image server. See [rosa-image-server](rosa-image-server/README.md)
+and [jhu-rosa2-tf](jhu-rosa2-tf/README.md#image-server).
 
 ## License
 

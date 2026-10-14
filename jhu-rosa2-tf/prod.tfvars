@@ -100,3 +100,53 @@ throttle_rate_limit  = 50
 throttle_burst_limit = 100
 
 enable_api_access_logs = true
+
+# =============================================================================
+# Image server (modules/rosa2-image-server)
+# =============================================================================
+# Unset inputs take the module defaults in modules/rosa2-image-server/variables.tf.
+
+# Image built and pushed with rosa-image-server/build-and-push.sh --env prod --push.
+# Empty creates the infrastructure with the service scaled to zero.
+image_server_image_tag = ""
+
+# ---------- Networking ----------
+# Dedicated VPC; /24 split into two public (tasks) and two private (ALB) /26s.
+# Outside 10.64.0.0/10 (JHU network) and the dspace VPCs (10.10/16, 10.20/16).
+image_server_vpc_cidr = "10.48.0.0/24"
+
+# ---------- Images ----------
+image_server_source_bucket = "jhu-library-images"
+image_server_source_prefix = "iiifstore/"
+
+# Derivative cache: own bucket (<name_prefix>-image-cache-<account>), prefix "prod/".
+image_server_cache_ttl_days = 30
+
+# ---------- ECS ----------
+# 2 vCPU / 8 GiB, scaling 1-3 tasks on CPU.
+image_server_task_cpu         = 2048
+image_server_task_memory      = 8192
+image_server_min_tasks        = 1
+image_server_max_tasks        = 3
+image_server_http_max_threads = 64
+
+image_server_log_level          = "info"
+image_server_log_retention_days = 30
+
+# ---------- CloudFront ----------
+# Served on the generated *.cloudfront.net name until the cutover from the
+# current image.library.jhu.edu server. Then set, with a us-east-1 ACM
+# certificate requested outside tofu:
+#   image_server_domain_aliases      = ["image.library.jhu.edu"]
+#   image_server_acm_certificate_arn = "arn:aws:acm:us-east-1:...:certificate/..."
+# and point the DNS CNAME at the image_server_cloudfront_domain_name output.
+image_server_domain_aliases      = []
+image_server_acm_certificate_arn = ""
+
+# ---------- WAF and monitoring ----------
+image_server_enable_waf     = true
+image_server_waf_rate_limit = 20000
+
+image_server_enable_monitoring = true
+# e.g. the alerts address used by aws-dspace-ecs-tf.
+image_server_alarm_notification_email = ""

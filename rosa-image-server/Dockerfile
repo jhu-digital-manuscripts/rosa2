@@ -11,15 +11,31 @@
 #                     Java binding requires
 #   3. cantaloupe   - downloads the GitHub release ZIP and extracts the jar
 #
-# Build:
-#   docker build --platform linux/amd64 -t rosa-image-server:5.0.7 \
-#     --build-arg KAKADU_ZIP=v8_6_1-02130L.zip \
-#     --build-arg CANTALOUPE_VERSION=5.0.7 .
+# Build (preferred; see build-and-push.sh):
+#   ./build-and-push.sh --kakadu-zip /path/to/v8_6_1-02130L.zip
 #
-# The Kakadu ZIP must live inside this directory (the build context); Docker
-# cannot read paths outside it.
+# which runs the equivalent of:
+#   docker build --platform linux/amd64 -t rosa-image-server:5.0.7 \
+#     --build-context kakadu_src=/dir/containing/zip \
+#     --build-arg KAKADU_ZIP=v8_6_1-02130L.zip .
+#
+# The named build context "kakadu_src" replaces the stage of the same name
+# below, so the licensed ZIP never has to be copied into this repository.
+# Without --build-context the ZIP is read from this directory instead.
 
 ARG JAVA_IMAGE=amazoncorretto:25-al2023-jdk
+ARG KAKADU_ZIP=v8_6_1-02130L.zip
+
+###############################################################################
+# Stage 0: Kakadu source ZIP
+#
+# Default source of the ZIP: this directory. Overridden wholesale by
+# `--build-context kakadu_src=<dir>`, in which case <dir>/${KAKADU_ZIP} is used
+# and this stage is never built.
+###############################################################################
+FROM scratch AS kakadu_src
+ARG KAKADU_ZIP
+COPY ${KAKADU_ZIP} /
 
 ###############################################################################
 # Stage 1: Kakadu
@@ -34,7 +50,7 @@ ARG JAVA_IMAGE=amazoncorretto:25-al2023-jdk
 ###############################################################################
 FROM ${JAVA_IMAGE} AS kakadu
 
-ARG KAKADU_ZIP=v8_6_1-02130L.zip
+ARG KAKADU_ZIP
 ARG KAKADU_PLATFORM=Linux-x86-64-gcc
 
 RUN dnf -y install gcc-c++ make unzip findutils \
@@ -44,8 +60,8 @@ RUN dnf -y install gcc-c++ make unzip findutils \
 WORKDIR /build
 
 # A commercial Kakadu license is required to build and run this. The
-# distribution ZIP is supplied from the build context, never downloaded.
-COPY ${KAKADU_ZIP} kakadu.zip
+# distribution ZIP is supplied by the kakadu_src stage/context, never downloaded.
+COPY --from=kakadu_src /${KAKADU_ZIP} kakadu.zip
 RUN unzip -q kakadu.zip -d unpacked \
  && mv "$(find unpacked -mindepth 1 -maxdepth 1 -type d | head -1)" kakadu \
  && rm -rf unpacked kakadu.zip
@@ -148,6 +164,7 @@ COPY --from=turbojpeg /opt/libjpeg-turbo/   /opt/libjpeg-turbo/
 COPY --from=cantaloupe /cantaloupe/cantaloupe.jar /opt/cantaloupe/cantaloupe.jar
 
 COPY cantaloupe.properties /etc/cantaloupe/cantaloupe.properties
+COPY delegates.rb /etc/cantaloupe/delegates.rb
 
 # ldconfig serves the kdu_* command-line tools, which link against
 # libkdu_vVVR.so. The JVM ignores it, hence -Djava.library.path below.

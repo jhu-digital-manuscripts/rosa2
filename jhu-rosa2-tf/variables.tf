@@ -313,3 +313,218 @@ variable "enable_api_access_logs" {
   type        = bool
   default     = true
 }
+
+# =============================================================================
+# IMAGE SERVER (modules/rosa2-image-server)
+# =============================================================================
+# Each image_server_<name> is passed to the module's <name> input. Optional
+# ones default to null here, which makes the module use its own default, so
+# defaults and full descriptions live in modules/rosa2-image-server/variables.tf.
+
+variable "image_server_vpc_cidr" {
+  description = "CIDR block of the image server's VPC. Split into two public subnets (ECS tasks) and two private subnets (internal ALB). A /24 or larger; must not overlap other VPCs it may ever be peered with."
+  type        = string
+}
+
+variable "image_server_source_bucket" {
+  description = "S3 bucket holding the JPEG 2000 source images. Read-only for the image server."
+  type        = string
+}
+
+variable "image_server_source_prefix" {
+  description = "Key prefix of the source images in source_bucket, with a trailing slash. The image for identifier a/b/c is <prefix>a/b/c.jp2."
+  type        = string
+  default     = null
+}
+
+variable "image_server_cache_bucket_name" {
+  description = "Name of the derivative cache bucket this environment creates. Empty for <name_prefix>-image-cache-<account id>."
+  type        = string
+  default     = null
+}
+
+variable "image_server_cache_ttl_days" {
+  description = "How long derivatives and infos stay in the S3 cache. Drives both Cantaloupe's cache.server.derivative.ttl_seconds and the bucket's lifecycle expiry."
+  type        = number
+  default     = null
+}
+
+variable "image_server_cache_bucket_force_destroy" {
+  description = "Allow tofu destroy to delete the cache bucket while it still contains objects. Cache content is disposable, so this is safe to enable."
+  type        = bool
+  default     = null
+}
+
+variable "image_server_image_tag" {
+  description = "Tag in this environment's ECR repository to run, as printed by rosa-image-server/build-and-push.sh. Empty creates everything with the service scaled to zero, for the first apply before an image has been pushed."
+  type        = string
+  default     = null
+}
+
+variable "image_server_ecr_keep_images" {
+  description = "Number of most recent images kept in the ECR repository; older ones are expired."
+  type        = number
+  default     = null
+}
+
+variable "image_server_task_cpu" {
+  description = "Fargate task CPU units (1024 = 1 vCPU)."
+  type        = number
+  default     = null
+}
+
+variable "image_server_task_memory" {
+  description = "Fargate task memory in MiB. The JVM heap is a percentage of this (see java_opts)."
+  type        = number
+  default     = null
+}
+
+variable "image_server_min_tasks" {
+  description = "Minimum (and initial) number of running tasks."
+  type        = number
+  default     = null
+}
+
+variable "image_server_max_tasks" {
+  description = "Maximum number of tasks the CPU target-tracking policy may scale out to. Equal to min_tasks disables scaling in practice."
+  type        = number
+  default     = null
+}
+
+variable "image_server_cpu_target_percent" {
+  description = "Average service CPU utilisation the scaling policy aims for."
+  type        = number
+  default     = null
+}
+
+variable "image_server_java_opts" {
+  description = "Extra JVM options (JAVA_OPTS). Applied after the image's fixed -XX:MaxRAMPercentage=75.0, so a MaxRAMPercentage here wins. 65% leaves room for Kakadu and TurboJPEG native buffers outside the heap."
+  type        = string
+  default     = null
+}
+
+variable "image_server_http_max_threads" {
+  description = "Cantaloupe http.max_threads: concurrent requests per task. Each in-flight request may hold a decoded region in the heap."
+  type        = number
+  default     = null
+}
+
+variable "image_server_http_accept_queue_limit" {
+  description = "Cantaloupe http.accept_queue_limit: queued requests per task beyond max_threads. null for the Jetty default."
+  type        = number
+  default     = null
+}
+
+variable "image_server_log_level" {
+  description = "Cantaloupe log.application.level (error, warn, info, debug, trace)."
+  type        = string
+  default     = null
+}
+
+variable "image_server_extra_environment" {
+  description = "Additional environment variables for the Cantaloupe container, e.g. { PROCESSOR_JPG_QUALITY = \"85\" }. Any cantaloupe.properties key can be overridden this way (key uppercased, non-alphanumerics replaced by _). Entries here override the module's own values."
+  type        = map(string)
+  default     = null
+}
+
+variable "image_server_log_retention_days" {
+  description = "CloudWatch Logs retention for the container logs."
+  type        = number
+  default     = null
+}
+
+variable "image_server_container_insights" {
+  description = "Enable ECS Container Insights on the cluster (extra CloudWatch metrics, billed)."
+  type        = bool
+  default     = null
+}
+
+variable "image_server_alb_idle_timeout" {
+  description = "ALB idle timeout in seconds. Must exceed the slowest expected image response."
+  type        = number
+  default     = null
+}
+
+variable "image_server_domain_aliases" {
+  description = "Custom hostnames for the distribution, e.g. [\"image.library.jhu.edu\"]. Empty serves only on the generated *.cloudfront.net name. Requires acm_certificate_arn. The first entry becomes Cantaloupe's base_uri."
+  type        = list(string)
+  default     = null
+}
+
+variable "image_server_acm_certificate_arn" {
+  description = "ARN of an ACM certificate in us-east-1 covering every name in domain_aliases. Empty uses the default *.cloudfront.net certificate."
+  type        = string
+  default     = null
+}
+
+variable "image_server_price_class" {
+  description = "CloudFront price class. PriceClass_100 serves from North America and Europe edge locations only, which is the cheapest."
+  type        = string
+  default     = null
+}
+
+variable "image_server_cloudfront_max_ttl" {
+  description = "Longest time in seconds CloudFront keeps a response. Cantaloupe sends s-maxage=31536000 for successful responses, capped by this."
+  type        = number
+  default     = null
+}
+
+variable "image_server_origin_read_timeout" {
+  description = "Seconds CloudFront waits for the origin to respond. Full-size renderings of large pages can take several seconds."
+  type        = number
+  default     = null
+}
+
+variable "image_server_enable_waf" {
+  description = "Attach a CLOUDFRONT-scope WAF web ACL (AWS managed common rules, IP reputation list, per-IP rate limit)."
+  type        = bool
+  default     = null
+}
+
+variable "image_server_waf_rate_limit" {
+  description = "Requests per IP per 5 minutes before WAF blocks. Deep zooming in Mirador issues hundreds of tile requests a minute, so keep this generous."
+  type        = number
+  default     = null
+}
+
+variable "image_server_waf_trusted_ip_set_arn" {
+  description = "ARN of an existing CLOUDFRONT-scope WAF IP set whose addresses bypass every other rule. Empty for none."
+  type        = string
+  default     = null
+}
+
+variable "image_server_waf_enable_bot_control" {
+  description = "Add the AWS Bot Control managed rule group (COMMON level). Billed per request, which adds up with tile traffic. HTTP-library and non-browser user agents are counted, not blocked, so IIIF harvesters keep working."
+  type        = bool
+  default     = null
+}
+
+variable "image_server_waf_enable_logging" {
+  description = "Log every WAF-evaluated request to an aws-waf-logs-* S3 bucket. High volume with tile traffic."
+  type        = bool
+  default     = null
+}
+
+variable "image_server_enable_monitoring" {
+  description = "Create an SNS alarm topic, CloudWatch alarms and a dashboard."
+  type        = bool
+  default     = null
+}
+
+variable "image_server_alarm_notification_email" {
+  description = "Email address subscribed to the alarm topic. Empty for no subscription. The subscription must be confirmed from the email AWS sends."
+  type        = string
+  default     = null
+}
+
+variable "image_server_alarm_5xx_threshold" {
+  description = "Target 5xx responses per 5 minutes at the ALB that trigger an alarm."
+  type        = number
+  default     = null
+}
+
+variable "image_server_alarm_cloudfront_5xx_rate" {
+  description = "CloudFront 5xx error rate (percent of requests, 5-minute average) that triggers an alarm."
+  type        = number
+  default     = null
+}
