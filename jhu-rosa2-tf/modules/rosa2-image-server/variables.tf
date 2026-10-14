@@ -44,7 +44,7 @@ variable "vpc_id" {
 }
 
 variable "public_subnet_ids" {
-  description = "Subnet IDs for the Fargate tasks. Public subnets with an IGW default route; tasks get a public IP and reach ECR, CloudWatch Logs and S3 over the internet (no NAT gateway)."
+  description = "Subnet IDs for the Fargate tasks. Public subnets with an IGW default route; tasks get a public IP and reach ECR and CloudWatch Logs over the IGW (no NAT gateway). S3 goes via the dspace VPC's S3 gateway endpoint, which dspace associates with the public route table."
   type        = list(string)
 
   validation {

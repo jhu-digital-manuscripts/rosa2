@@ -235,7 +235,7 @@ viewer ──HTTPS──▶ CloudFront ──VPC origin──▶ internal ALB �
                    functions)                 subnets)                │
                                                                      ├─▶ S3 source JP2s (read-only)
                                                                      └─▶ S3 derivative cache (per env)
-                                                                         over the IGW (no gateway endpoint)
+                                                                         via the dspace S3 gateway endpoint
 ```
 
 | `modules/rosa2-image-server/` file | Purpose |
@@ -268,9 +268,10 @@ viewer ──HTTPS──▶ CloudFront ──VPC origin──▶ internal ALB �
   root when selecting the dspace private subnets.
 - **No NAT gateway.** Tasks run in the dspace public subnets with a public IP,
   which they need only for outbound HTTPS to ECR and CloudWatch Logs. Their
-  security group admits nothing except the ALB. S3 egress rides the dspace
-  public subnets' IGW route; rosa2 creates no S3 gateway endpoint in the dspace
-  VPC.
+  security group admits nothing except the ALB. S3 egress rides the dspace VPC's
+  S3 gateway endpoint, which dspace associates with the public route table, so
+  source and cache traffic stays on the AWS backbone rather than the IGW. rosa2
+  creates no gateway endpoint of its own — it is dspace's VPC to manage.
 - **Network is injected from dspace.** The root reads the dspace remote state
   and passes `vpc_id`, `public_subnet_ids` and `private_subnet_ids` into the
   module (computed in root locals). The AZ exclusion lives in the root
