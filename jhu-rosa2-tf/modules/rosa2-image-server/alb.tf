@@ -8,7 +8,7 @@ resource "aws_lb" "this" {
   internal           = true
   load_balancer_type = "application"
   security_groups    = [aws_security_group.alb.id]
-  subnets            = aws_subnet.private[*].id
+  subnets            = var.private_subnet_ids
 
   idle_timeout               = var.alb_idle_timeout
   drop_invalid_header_fields = true
@@ -18,7 +18,7 @@ resource "aws_lb_target_group" "this" {
   name                 = local.name
   port                 = local.container_port
   protocol             = "HTTP"
-  vpc_id               = aws_vpc.this.id
+  vpc_id               = var.vpc_id
   target_type          = "ip"
   deregistration_delay = 30
 

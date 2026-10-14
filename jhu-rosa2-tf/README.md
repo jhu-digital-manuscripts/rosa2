@@ -230,19 +230,19 @@ by the current `image.library.jhu.edu` server, over HTTPS.
 
 ```
 viewer ──HTTPS──▶ CloudFront ──VPC origin──▶ internal ALB ──▶ ECS Fargate (Cantaloupe :8182)
-                  (edge cache,               (private         (public subnets, no inbound
-                   WAF, legacy /iiif          subnets)          except from the ALB)
-                   functions)                                        │
+                  (edge cache,               (dspace          (dspace public subnets, no inbound
+                   WAF, legacy /iiif          private           except from the ALB)
+                   functions)                 subnets)                │
                                                                      ├─▶ S3 source JP2s (read-only)
                                                                      └─▶ S3 derivative cache (per env)
-                                                                         via the S3 gateway endpoint
+                                                                         over the IGW (no gateway endpoint)
 ```
 
 | `modules/rosa2-image-server/` file | Purpose |
 |---|---|
 | `variables.tf` | Inputs and their defaults (the root passes `null` for anything unset). |
-| `locals.tf` | Derived names, subnet CIDRs, and the public URL. |
-| `networking.tf` | Dedicated VPC per environment: IGW, two public and two private subnets, S3 gateway endpoint, **no NAT gateway**. |
+| `locals.tf` | Derived names and the public URL. |
+| _(networking)_ | The VPC, subnets and routing are injected from the dspace VPC via the root module (`vpc_id`, `public_subnet_ids`, `private_subnet_ids`); the module creates no VPC, subnets or routing of its own. |
 | `security-groups.tf` | ALB: port 80 only from CloudFront's origin-facing prefix list. Tasks: 8182 only from the ALB, egress 443. |
 | `alb.tf` | Internal ALB, HTTP listener, target group with a `/health` check. |
 | `ecs.tf` | Log group, cluster, task definition (Cantaloupe settings as environment variables), service, CPU target-tracking auto scaling. |
@@ -261,14 +261,22 @@ viewer ──HTTPS──▶ CloudFront ──VPC origin──▶ internal ALB �
   on the distribution's generated `https://<id>.cloudfront.net` name using
   CloudFront's default certificate. AWS issues no certificate for an ALB's
   `*.elb.amazonaws.com` name, so CloudFront is what provides HTTPS.
-- **CloudFront is the only way in.** The ALB is internal, in subnets with no
-  internet route, and CloudFront reaches it through a
+- **CloudFront is the only way in.** The ALB is internal, in the dspace private
+  subnets with no internet route, and CloudFront reaches it through a
   [VPC origin](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-vpc-origins.html).
-  VPC origins are not supported in `use1-az3`, so that zone is excluded when
-  choosing subnets.
-- **No NAT gateway.** Tasks run in public subnets with a public IP, which they
-  need only for outbound HTTPS to ECR and CloudWatch Logs. Their security group
-  admits nothing except the ALB. S3 traffic goes through the free gateway endpoint.
+  VPC origins are not supported in `use1-az3`, so that zone is excluded at the
+  root when selecting the dspace private subnets.
+- **No NAT gateway.** Tasks run in the dspace public subnets with a public IP,
+  which they need only for outbound HTTPS to ECR and CloudWatch Logs. Their
+  security group admits nothing except the ALB. S3 egress rides the dspace
+  public subnets' IGW route; rosa2 creates no S3 gateway endpoint in the dspace
+  VPC.
+- **Network is injected from dspace.** The root reads the dspace remote state
+  and passes `vpc_id`, `public_subnet_ids` and `private_subnet_ids` into the
+  module (computed in root locals). The AZ exclusion lives in the root
+  `vpc_origin_unsupported_zone_ids` (default `["use1-az3"]`), applied when
+  selecting the private subnets; the old `image_server_vpc_cidr` input is
+  removed.
 - **Caching.** IIIF URLs never change for a given image. Cantaloupe sends
   `s-maxage=31536000`, so CloudFront serves almost all repeat traffic (tiles,
   thumbnails, `info.json`) from the edge. The S3 derivative cache is the second
@@ -390,7 +398,7 @@ at this traffic level.
 For the image server, the fixed costs are the Fargate task(s) (stage one
 1 vCPU / 4 GiB task; prod 2 vCPU / 8 GiB, scaling 1–3), the internal ALB, one
 public IPv4 address per task, and the WAF web ACL in prod. There is no NAT
-gateway, and the VPC origin and S3 gateway endpoint carry no charge. Usage
+gateway, and the VPC origin carries no charge. Usage
 costs are CloudFront requests and data transfer (`PriceClass_100` keeps it to
 North American and European edges), S3 requests, and cache storage, which
 lifecycle expiry bounds. For current figures use the

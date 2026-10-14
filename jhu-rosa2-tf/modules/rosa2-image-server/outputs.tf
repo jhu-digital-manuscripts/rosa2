@@ -75,11 +75,6 @@ output "cache_prefix" {
   value       = local.cache_prefix
 }
 
-output "vpc_id" {
-  description = "ID of the image server's VPC."
-  value       = aws_vpc.this.id
-}
-
 output "alb_dns_name" {
   description = "Internal ALB hostname. Not reachable from outside the VPC."
   value       = aws_lb.this.dns_name
