@@ -5,8 +5,8 @@
 #         internal and in private subnets, so nothing else can route to it.
 #         Egress only to the task group on 8182.
 #   task  ingress 8182 only from the ALB group. Egress 443 for ECR, CloudWatch
-#         Logs and S3 (the latter via the gateway endpoint). The VPC uses the
-#         Amazon resolver, which security groups do not filter.
+#         Logs and S3 (over the dspace public subnets' IGW route). The VPC uses
+#         the Amazon resolver, which security groups do not filter.
 
 data "aws_ec2_managed_prefix_list" "cloudfront" {
   name = "com.amazonaws.global.cloudfront.origin-facing"
@@ -15,7 +15,7 @@ data "aws_ec2_managed_prefix_list" "cloudfront" {
 resource "aws_security_group" "alb" {
   name        = "${local.name}-alb-sg"
   description = "rosa2 image server internal ALB"
-  vpc_id      = aws_vpc.this.id
+  vpc_id      = var.vpc_id
 
   tags = { Name = "${local.name}-alb-sg" }
 
@@ -45,7 +45,7 @@ resource "aws_vpc_security_group_egress_rule" "alb_to_tasks" {
 resource "aws_security_group" "task" {
   name        = "${local.name}-task-sg"
   description = "rosa2 image server ECS tasks"
-  vpc_id      = aws_vpc.this.id
+  vpc_id      = var.vpc_id
 
   tags = { Name = "${local.name}-task-sg" }
 

@@ -112,9 +112,9 @@ enable_api_access_logs = true
 image_server_image_tag = ""
 
 # ---------- Networking ----------
-# Dedicated VPC; /24 split into two public (tasks) and two private (ALB) /26s.
-# Outside 10.64.0.0/10 (JHU network) and the dspace VPCs (10.10/16, 10.20/16).
-image_server_vpc_cidr = "10.48.0.0/24"
+# Runs in the dspace prod VPC, sourced from the dspace prod remote state
+# (dspace/prod/opentofu.tfstate); see remote-state.tf. Tasks use the dspace
+# public subnets and the internal ALB uses the AZ-filtered private subnets.
 
 # ---------- Images ----------
 image_server_source_bucket = "jhu-library-images"

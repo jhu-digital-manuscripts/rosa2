@@ -97,8 +97,9 @@ enable_api_access_logs = true
 image_server_image_tag = ""
 
 # ---------- Networking ----------
-# See prod.tfvars; distinct from prod's 10.48.0.0/24.
-image_server_vpc_cidr = "10.48.1.0/24"
+# Runs in the dspace stage VPC, sourced from the dspace stage remote state
+# (dspace/stage/opentofu.tfstate); see remote-state.tf. Tasks use the dspace
+# public subnets and the internal ALB uses the AZ-filtered private subnets.
 
 # ---------- Images ----------
 # Same read-only sources as prod.

@@ -91,7 +91,9 @@ module "rosa2_image_server" {
   aws_region  = var.aws_region
   name_prefix = var.name_prefix
 
-  vpc_cidr                   = var.image_server_vpc_cidr
+  vpc_id                     = data.terraform_remote_state.dspace.outputs.vpc_id
+  public_subnet_ids          = local.image_server_public_subnet_ids
+  private_subnet_ids         = local.image_server_private_subnet_ids
   source_bucket              = var.image_server_source_bucket
   source_prefix              = var.image_server_source_prefix
   cache_bucket_name          = var.image_server_cache_bucket_name

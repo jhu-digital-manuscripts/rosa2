@@ -55,6 +55,13 @@ variable "create_s3_vpc_endpoint" {
   default     = false
 }
 
+variable "vpc_origin_unsupported_zone_ids" {
+  description = "Availability zone IDs to exclude when choosing the image server's private subnets, because CloudFront VPC origins do not support them (us-east-1: use1-az3, per the CloudFront developer guide)."
+  type        = list(string)
+  default     = ["use1-az3"]
+  nullable    = false
+}
+
 # ---------- OpenSearch domain ----------
 
 variable "opensearch_engine_version" {
@@ -305,11 +312,6 @@ variable "enable_api_access_logs" {
 # Each image_server_<name> is passed to the module's <name> input. Optional
 # ones default to null here, which makes the module use its own default, so
 # defaults and full descriptions live in modules/rosa2-image-server/variables.tf.
-
-variable "image_server_vpc_cidr" {
-  description = "CIDR block of the image server's VPC. Split into two public subnets (ECS tasks) and two private subnets (internal ALB). A /24 or larger; must not overlap other VPCs it may ever be peered with."
-  type        = string
-}
 
 variable "image_server_source_bucket" {
   description = "S3 bucket holding the JPEG 2000 source images. Read-only for the image server."

@@ -38,21 +38,29 @@ variable "name_prefix" {
 
 # ---------- Networking ----------
 
-variable "vpc_cidr" {
-  description = "CIDR block of the image server's VPC. Split into two public subnets (ECS tasks) and two private subnets (internal ALB). A /24 or larger; must not overlap other VPCs it may ever be peered with."
+variable "vpc_id" {
+  description = "VPC the image server attaches to (the dspace VPC for this environment)."
   type        = string
+}
+
+variable "public_subnet_ids" {
+  description = "Subnet IDs for the Fargate tasks. Public subnets with an IGW default route; tasks get a public IP and reach ECR, CloudWatch Logs and S3 over the internet (no NAT gateway)."
+  type        = list(string)
 
   validation {
-    condition     = can(cidrhost(var.vpc_cidr, 0)) && tonumber(split("/", var.vpc_cidr)[1]) <= 24
-    error_message = "vpc_cidr must be a valid IPv4 CIDR block of /24 or larger."
+    condition     = length(var.public_subnet_ids) > 0
+    error_message = "at least one public subnet ID is required."
   }
 }
 
-variable "vpc_origin_unsupported_zone_ids" {
-  description = "Availability zone IDs to avoid because CloudFront VPC origins do not support them (us-east-1: use1-az3, per the CloudFront developer guide)."
+variable "private_subnet_ids" {
+  description = "Subnet IDs for the internal ALB and the CloudFront VPC origin ENIs. Must be in at least two distinct availability zones (ALB requirement) and must avoid AZs CloudFront VPC origins do not support."
   type        = list(string)
-  default     = ["use1-az3"]
-  nullable    = false
+
+  validation {
+    condition     = length(var.private_subnet_ids) >= 2
+    error_message = "at least two private subnet IDs (in distinct AZs) are required for the internal ALB."
+  }
 }
 
 # ---------- Source images ----------

@@ -13,12 +13,6 @@ mock_provider "aws" {
     }
   }
 
-  mock_data "aws_availability_zones" {
-    defaults = {
-      names = ["us-east-1a", "us-east-1b", "us-east-1c"]
-    }
-  }
-
   mock_data "aws_ec2_managed_prefix_list" {
     defaults = {
       id = "pl-3b927c52"
@@ -98,10 +92,12 @@ mock_provider "aws" {
 }
 
 variables {
-  environment   = "stage"
-  name_prefix   = "jhu-rosa2-stage"
-  vpc_cidr      = "10.48.1.0/24"
-  source_bucket = "jhu-library-images"
+  environment        = "stage"
+  name_prefix        = "jhu-rosa2-stage"
+  vpc_id             = "vpc-00000000000000000"
+  public_subnet_ids  = ["subnet-pub1", "subnet-pub2"]
+  private_subnet_ids = ["subnet-priv1", "subnet-priv2"]
+  source_bucket      = "jhu-library-images"
 }
 
 run "first_apply_without_image_scales_to_zero" {
@@ -161,18 +157,23 @@ run "derived_names_networking_and_cache" {
   }
 
   assert {
-    condition     = [for s in aws_subnet.public : s.cidr_block] == ["10.48.1.0/26", "10.48.1.64/26"]
-    error_message = "unexpected public subnets"
+    condition     = aws_lb.this.subnets == toset(var.private_subnet_ids)
+    error_message = "ALB must use the injected private subnets"
   }
 
   assert {
-    condition     = [for s in aws_subnet.private : s.cidr_block] == ["10.48.1.128/26", "10.48.1.192/26"]
-    error_message = "unexpected private subnets"
+    condition     = aws_ecs_service.this.network_configuration[0].subnets == toset(var.public_subnet_ids)
+    error_message = "tasks must use the injected public subnets"
   }
 
   assert {
-    condition     = toset([for s in aws_subnet.private : s.availability_zone]) == toset(["us-east-1a", "us-east-1b"])
-    error_message = "ALB subnets must be in two AZs"
+    condition     = aws_lb_target_group.this.vpc_id == var.vpc_id
+    error_message = "target group must attach to the injected VPC"
+  }
+
+  assert {
+    condition     = aws_security_group.alb.vpc_id == var.vpc_id && aws_security_group.task.vpc_id == var.vpc_id
+    error_message = "both security groups must attach to the injected VPC"
   }
 
   assert {

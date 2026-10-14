@@ -2,8 +2,9 @@
 # ROSA2 IMAGE SERVER MODULE
 # =============================================================================
 # IIIF Image API server (Cantaloupe + Kakadu, rosa-image-server/) on AWS:
-# - Dedicated VPC: public subnets for the Fargate tasks, private subnets for an
-#   internal ALB, S3 gateway endpoint, no NAT gateway
+# - Attaches to the dspace VPC: tasks in the public subnets, the internal ALB
+#   and the CloudFront VPC origin in the private subnets. No NAT gateway; the
+#   VPC, IGW, subnets and routing are injected from the dspace remote state.
 # - ECS Fargate service with CPU target-tracking auto scaling
 # - Internal ALB, reachable only through a CloudFront VPC origin
 # - CloudFront distribution: HTTPS, edge caching, legacy /iiif/<id> support via
@@ -14,33 +15,18 @@
 #
 # Traffic flow:
 #   viewer → CloudFront (cache) → VPC origin → internal ALB → ECS task :8182
-#   ECS task → S3 source bucket (read-only) and cache bucket, via the gateway endpoint
+#   ECS task → S3 source bucket (read-only) and cache bucket, over the IGW
 #
 # The AWS provider, including default_tags, is configured by the caller.
 # =============================================================================
 
 data "aws_caller_identity" "current" {}
 
-data "aws_availability_zones" "available" {
-  state = "available"
-
-  # CloudFront VPC origins are not supported in these zone IDs, and the ALB's
-  # subnets are where the VPC origin places its ENIs.
-  exclude_zone_ids = var.vpc_origin_unsupported_zone_ids
-}
-
 locals {
   account_id = data.aws_caller_identity.current.account_id
   region     = var.aws_region
 
   name = "${var.name_prefix}-image-server"
-
-  # Two AZs: the minimum an ALB accepts, and enough for prod's tasks to spread.
-  azs = slice(data.aws_availability_zones.available.names, 0, 2)
-
-  # vpc_cidr split into four equal subnets: public a/b, private a/b.
-  public_subnet_cidrs  = [for i in range(2) : cidrsubnet(var.vpc_cidr, 2, i)]
-  private_subnet_cidrs = [for i in range(2) : cidrsubnet(var.vpc_cidr, 2, i + 2)]
 
   cache_bucket_name = var.cache_bucket_name != "" ? var.cache_bucket_name : "${var.name_prefix}-image-cache-${local.account_id}"
   cache_prefix      = "${var.environment}/"
