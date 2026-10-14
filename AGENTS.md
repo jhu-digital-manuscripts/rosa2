@@ -37,8 +37,8 @@ rosa2/
 │   ├── opensearch/       Index definitions (manifest.json, canvas.json) + Latin analyzer dictionaries
 │   ├── lambda/           search_proxy/ and admin/ (plain Python, no deps), tests/
 │   └── init-opensearch.sh   Creates indexes and loads data into AWS
-├── jhu-rosa2-tf/         OpenTofu: AWS managed Opensearch, Lambdas, HTTP API (prod/stage)
-├── rosa-image-server/    Cantaloupe + Kakadu Docker image (IIIF Image API) for ECS
+├── jhu-rosa2-tf/         OpenTofu: Opensearch, Lambdas, HTTP API (rosa2-search) and image server (rosa2-image-server), prod/stage
+├── rosa-image-server/    Cantaloupe + Kakadu Docker image (IIIF Image API) for ECS; build-and-push.sh, delegates.rb, test/
 ├── local-dev/            Docker Opensearch 3 + static IIIF server scripts
 ├── docs/                 usage, archive-structure, iiif-generation, opensearch-indexes, search, aor-data-model, deployment
 └── .github/workflows/    ci.yml (PRs + main), deploy-stage.yml (GitHub Pages), release.yml (manual release)
@@ -149,9 +149,22 @@ tofu apply -var-file=prod.tfvars
 cd ../rosa-search && ./init-opensearch.sh --env prod   # --help for --skip-* / --yes options
 ```
 
-Use `stage.s3.tfbackend` / `stage.tfvars` for stage. Image server build:
-`cd rosa-image-server && docker build --platform linux/amd64 -t rosa-image-server:5.0.7 .`
-(requires a licensed Kakadu ZIP in that directory).
+Use `stage.s3.tfbackend` / `stage.tfvars` for stage. The same state also holds the
+image server (`modules/rosa2-image-server`: ECS Fargate behind CloudFront).
+
+### rosa-image-server (run from `rosa-image-server/`)
+
+```sh
+./build-and-push.sh --kakadu-zip /home/msp/work/kakadu/v8_6_1-02130L.zip      # build only
+./build-and-push.sh --kakadu-zip ... --env stage --push   # push to ECR; prints image_server_image_tag for tfvars
+test/smoke-test.sh [--image rosa-image-server:<tag>]      # local checks, no AWS
+node --test ../jhu-rosa2-tf/modules/rosa2-image-server/functions/test/   # CloudFront Function tests
+cd ../jhu-rosa2-tf/modules/rosa2-image-server && tofu init -backend=false && tofu test   # mocked-provider module tests
+```
+
+The Kakadu ZIP is passed as a named build context (`kakadu_src`) and never copied into the repo.
+Legacy `/iiif/<id>` URLs are supported by CloudFront Functions plus `delegates.rb`;
+change `functions/*.js`, `delegates.rb` and their tests together.
 
 ## Boundaries
 
@@ -165,13 +178,14 @@ Use `stage.s3.tfbackend` / `stage.tfvars` for stage. Image server build:
   the generator in `rosa-tool/.../opensearch/`, and `docs/opensearch-indexes.md` together.
 
 **Ask first**
-- Any `tofu apply`, `init-opensearch.sh`, `aws` command, or Docker push. These touch
+- Any `tofu apply`, `init-opensearch.sh`, `aws` command, Docker push, or `build-and-push.sh --push`. These touch
   shared AWS environments. `init-opensearch.sh` drops and recreates the live indexes.
 - Editing files under `archive/`, or running archive-mutating commands (`update`,
   `update-image-list`, `crop-images`, `rename-*`, `generate-tei`, `migrate-tei-metadata`,
   `decorate-image-list`, `generate-annotation-map`) against it. These rewrite archive data in place.
 - Changes to `jhu-rosa2-tf/modules/rosa2-search/iam.tf`, `security-groups.tf`, `opensearch.tf` access policy, or
-  the validation in `rosa-search/lambda/search_proxy/app.py`. These are security boundaries.
+  the validation in `rosa-search/lambda/search_proxy/app.py`, and to `jhu-rosa2-tf/modules/rosa2-image-server/`
+  `iam.tf`, `security-groups.tf`, `waf.tf` or the cache policies in `cloudfront.tf`. These are security boundaries.
 - Adding dependencies to either Lambda. They are deliberately dependency-free, and the zip is the source directory.
 - Changing versions in `pom.xml` / `package.json`. `release.yml` manages them.
 

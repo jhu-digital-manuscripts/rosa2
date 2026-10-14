@@ -145,3 +145,90 @@ output "opensearch_log_group" {
   description = "CloudWatch log group for OpenSearch application and slow logs, empty when disabled."
   value       = module.rosa2_search.opensearch_log_group
 }
+
+# ---------- Image server ----------
+
+output "image_server_public_base_url" {
+  description = "Public origin of the image server (Cantaloupe's base_uri)."
+  value       = module.rosa2_image_server.public_base_url
+}
+
+output "image_server_iiif2_base_url" {
+  description = "IIIF Image API 2 base URL, for generate-iiif-pres --image-base-url with --image-api-version 2."
+  value       = module.rosa2_image_server.iiif2_base_url
+}
+
+output "image_server_iiif3_base_url" {
+  description = "IIIF Image API 3 base URL, for generate-iiif-pres --image-base-url with --image-api-version 3."
+  value       = module.rosa2_image_server.iiif3_base_url
+}
+
+output "image_server_legacy_iiif_base_url" {
+  description = "Legacy Image API 2 base URL (/iiif/<id>) for existing sites."
+  value       = module.rosa2_image_server.legacy_iiif_base_url
+}
+
+output "image_server_cloudfront_distribution_id" {
+  description = "CloudFront distribution ID of the image server, for invalidations."
+  value       = module.rosa2_image_server.cloudfront_distribution_id
+}
+
+output "image_server_cloudfront_domain_name" {
+  description = "Generated *.cloudfront.net hostname; a custom domain's CNAME must point here."
+  value       = module.rosa2_image_server.cloudfront_domain_name
+}
+
+output "image_server_legacy_request_function_name" {
+  description = "Viewer-request CloudFront Function name, for aws cloudfront test-function."
+  value       = module.rosa2_image_server.legacy_request_function_name
+}
+
+output "image_server_legacy_response_function_name" {
+  description = "Viewer-response CloudFront Function name, for aws cloudfront test-function."
+  value       = module.rosa2_image_server.legacy_response_function_name
+}
+
+output "image_server_ecr_repository_url" {
+  description = "ECR repository that rosa-image-server/build-and-push.sh pushes to."
+  value       = module.rosa2_image_server.ecr_repository_url
+}
+
+output "image_server_image" {
+  description = "Image the ECS service runs."
+  value       = module.rosa2_image_server.image
+}
+
+output "image_server_ecs_cluster_name" {
+  description = "ECS cluster of the image server."
+  value       = module.rosa2_image_server.ecs_cluster_name
+}
+
+output "image_server_ecs_service_name" {
+  description = "ECS service of the image server."
+  value       = module.rosa2_image_server.ecs_service_name
+}
+
+output "image_server_log_group" {
+  description = "CloudWatch log group of the Cantaloupe containers."
+  value       = module.rosa2_image_server.log_group
+}
+
+output "image_server_cache_bucket" {
+  description = "S3 derivative cache bucket of the image server."
+  value       = module.rosa2_image_server.cache_bucket
+}
+
+output "image_server_cache_prefix" {
+  description = "Key prefix of this environment's derivatives in the cache bucket."
+  value       = module.rosa2_image_server.cache_prefix
+}
+
+output "image_server_waf_web_acl_arn" {
+  description = "WAF web ACL attached to the image server distribution, empty when disabled."
+  value       = module.rosa2_image_server.waf_web_acl_arn
+}
+
+output "image_server_alarm_topic_arn" {
+  description = "SNS topic for image server alarms, empty when monitoring is disabled."
+  value       = module.rosa2_image_server.alarm_topic_arn
+}

@@ -1,9 +1,14 @@
-# rosa2 search infrastructure (OpenTofu)
+# rosa2 AWS infrastructure (OpenTofu)
 
-OpenTofu configuration for the rosa2 search backend: an AWS managed OpenSearch
-domain with no public endpoint, the Latin analyzer dictionaries as custom
-packages, a request-signing proxy Lambda behind an HTTP API, and an
-administration Lambda that creates the indexes and ingests bulk data.
+OpenTofu configuration for the rosa2 backends, in two modules:
+
+- **Search** (`modules/rosa2-search`): an AWS managed OpenSearch domain with no
+  public endpoint, the Latin analyzer dictionaries as custom packages, a
+  request-signing proxy Lambda behind an HTTP API, and an administration Lambda
+  that creates the indexes and ingests bulk data.
+- **Image server** (`modules/rosa2-image-server`): the Cantaloupe + Kakadu IIIF
+  Image API server from [`rosa-image-server`](../rosa-image-server/) on ECS
+  Fargate, behind CloudFront. See [Image server](#image-server).
 
 ## Why there is a Lambda in front of OpenSearch
 
@@ -29,16 +34,16 @@ operator ──aws lambda invoke──▶ admin Lambda ──▶ OpenSearch
 ## Layout
 
 The root module holds the backend, provider and per-environment inputs, and
-calls a single child module, `modules/rosa2-search`, that declares every
-resource.
+calls two child modules, `modules/rosa2-search` and `modules/rosa2-image-server`,
+that declare every resource. Both environments' states contain both.
 
 | Root file | Purpose |
 |---|---|
 | `versions.tf` | Required OpenTofu/provider versions and the partial S3 backend. |
 | `providers.tf` | AWS provider with `default_tags`. |
 | `locals.tf` | The tag set (`Owner`, `Environment`, `System`) applied to every taggable resource through `default_tags`. Add more with the `tags` variable. |
-| `variables.tf` | All environment-parameterized inputs. |
-| `main.tf` | The `rosa2_search` module call. Also supplies the paths to the Lambda sources in `../rosa-search/lambda`. |
+| `variables.tf` | All environment-parameterized inputs. Image server inputs are prefixed `image_server_` and default to `null`, which selects the module's default. |
+| `main.tf` | The `rosa2_search` and `rosa2_image_server` module calls. Also supplies the paths to the Lambda sources in `../rosa-search/lambda`. |
 | `outputs.tf` | Values consumed by `rosa-search/init-opensearch.sh` and the viewer build, re-exported from the module. |
 | `prod.tfvars` / `stage.tfvars` | Per-environment variable values. |
 | `prod.s3.tfbackend` / `stage.s3.tfbackend` | Per-environment backend (state key) config. |
@@ -216,9 +221,177 @@ rebuilt with `init-opensearch.sh`.
 - The account ID is derived from the deploying identity
   (`aws_caller_identity`) rather than hardcoded.
 
+## Image server
+
+`modules/rosa2-image-server` runs the IIIF Image API server that the viewer's
+manifests point at (`generate-iiif-pres --image-base-url`). It serves Image API
+2 at `/iiif/2`, Image API 3 at `/iiif/3`, and the legacy `/iiif/<id>` form used
+by the current `image.library.jhu.edu` server, over HTTPS.
+
+```
+viewer ──HTTPS──▶ CloudFront ──VPC origin──▶ internal ALB ──▶ ECS Fargate (Cantaloupe :8182)
+                  (edge cache,               (private         (public subnets, no inbound
+                   WAF, legacy /iiif          subnets)          except from the ALB)
+                   functions)                                        │
+                                                                     ├─▶ S3 source JP2s (read-only)
+                                                                     └─▶ S3 derivative cache (per env)
+                                                                         via the S3 gateway endpoint
+```
+
+| `modules/rosa2-image-server/` file | Purpose |
+|---|---|
+| `variables.tf` | Inputs and their defaults (the root passes `null` for anything unset). |
+| `locals.tf` | Derived names, subnet CIDRs, and the public URL. |
+| `networking.tf` | Dedicated VPC per environment: IGW, two public and two private subnets, S3 gateway endpoint, **no NAT gateway**. |
+| `security-groups.tf` | ALB: port 80 only from CloudFront's origin-facing prefix list. Tasks: 8182 only from the ALB, egress 443. |
+| `alb.tf` | Internal ALB, HTTP listener, target group with a `/health` check. |
+| `ecs.tf` | Log group, cluster, task definition (Cantaloupe settings as environment variables), service, CPU target-tracking auto scaling. |
+| `iam.tf` | Execution role (pull this repository, write this log group) and task role (read source prefix, read/write cache prefix). |
+| `s3.tf` | Derivative cache bucket: private, SSE-S3, TLS only, lifecycle expiry on `<environment>/`. |
+| `ecr.tf` | Repository with immutable tags, scan on push, and a keep-last-N lifecycle. |
+| `cloudfront.tf` | VPC origin, cache/CORS policies, the two legacy functions, the distribution. |
+| `functions/` | The CloudFront Functions and their Node tests. |
+| `waf.tf` | Optional CLOUDFRONT-scope web ACL, adapted from aws-dspace-ecs-tf. |
+| `monitoring.tf` | Optional SNS topic, alarms and dashboard, adapted from aws-dspace-ecs-tf. |
+| `tests/` | `tofu test` suite with a mocked AWS provider. |
+
+### Design notes
+
+- **HTTPS without a custom domain.** Stage, and prod until cutover, are served
+  on the distribution's generated `https://<id>.cloudfront.net` name using
+  CloudFront's default certificate. AWS issues no certificate for an ALB's
+  `*.elb.amazonaws.com` name, so CloudFront is what provides HTTPS.
+- **CloudFront is the only way in.** The ALB is internal, in subnets with no
+  internet route, and CloudFront reaches it through a
+  [VPC origin](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-vpc-origins.html).
+  VPC origins are not supported in `use1-az3`, so that zone is excluded when
+  choosing subnets.
+- **No NAT gateway.** Tasks run in public subnets with a public IP, which they
+  need only for outbound HTTPS to ECR and CloudWatch Logs. Their security group
+  admits nothing except the ALB. S3 traffic goes through the free gateway endpoint.
+- **Caching.** IIIF URLs never change for a given image. Cantaloupe sends
+  `s-maxage=31536000`, so CloudFront serves almost all repeat traffic (tiles,
+  thumbnails, `info.json`) from the edge. The S3 derivative cache is the second
+  tier, and each environment has its own bucket with lifecycle expiry on its
+  `<environment>/` prefix. A single `image_server_cache_ttl_days` value drives
+  both that expiry and Cantaloupe's TTL. The cache policies forward no cookies,
+  query strings or headers, which also stops `?cache=false` from bypassing the
+  server-side caches.
+- **Legacy `/iiif/<id>`.** A separate cache behaviour runs two CloudFront
+  Functions. They rewrite the path to `/iiif/2`, mark `info.json` requests with
+  `X-Rosa-Legacy-Path` (which is in that behaviour's cache key) so that
+  `delegates.rb` returns `@id` under `/iiif/`, and rewrite `Location` and `Link`
+  back. `/iiif/2/*` and `/iiif/3/*` run no functions. See
+  [rosa-image-server](../rosa-image-server/README.md#legacy-iiif-urls).
+- **WAF** reuses the dspace rule set with changes for an image API. Bot Control
+  is optional because it is billed per request. HTTP-library and non-browser
+  user agents are counted rather than blocked, so IIIF harvesters work. The
+  per-IP rate limit defaults to 20000 per 5 minutes, because deep zooming in
+  Mirador issues hundreds of tile requests a minute. It is on in prod and off in
+  stage.
+- **Monitoring** reuses the dspace pattern: an SNS topic (with an optional email
+  subscription) and alarms on no healthy hosts, target 5xx, ECS CPU and memory,
+  and the CloudFront 5xx rate, plus a dashboard. The account-wide billing anomaly
+  alarms are left to dspace.
+
+### First deployment
+
+The service needs an image in ECR, and ECR is created by the same apply. With
+`image_server_image_tag = ""` the module creates everything but runs no tasks,
+so the order is:
+
+```sh
+cd jhu-rosa2-tf
+tofu init -reconfigure -backend-config=stage.s3.tfbackend
+tofu apply -var-file=stage.tfvars          # creates the stack, 0 tasks
+
+cd ../rosa-image-server
+./build-and-push.sh --kakadu-zip /home/msp/work/kakadu/v8_6_1-02130L.zip --env stage --push
+# prints: image_server_image_tag = "5.0.7-<sha>"
+
+cd ../jhu-rosa2-tf
+# set image_server_image_tag in stage.tfvars
+tofu apply -var-file=stage.tfvars          # starts the task
+tofu output image_server_iiif2_base_url
+```
+
+The first apply takes about 15–20 minutes, mostly for the VPC origin and the
+distribution to deploy. To roll out a new image later, push it, change
+`image_server_image_tag`, and apply. ECS replaces tasks without downtime
+(minimum healthy 100%), and the deployment circuit breaker rolls back a task
+that never becomes healthy.
+
+Verify after an apply:
+
+```sh
+BASE=$(tofu output -raw image_server_public_base_url)
+ID='rose%2FDouce195%2FDouce195.001r'
+curl -s "$BASE/iiif/2/$ID/info.json" | jq -r '."@id"'     # $BASE/iiif/2/$ID
+curl -s "$BASE/iiif/3/$ID/info.json" | jq -r '.id'        # $BASE/iiif/3/$ID
+curl -s "$BASE/iiif/$ID/info.json"   | jq -r '."@id"'     # $BASE/iiif/$ID (legacy)
+curl -sI "$BASE/iiif/$ID" | grep -i '^location'          # 303 to $BASE/iiif/$ID/info.json
+curl -sI "$BASE/iiif/2/$ID/full/80,/0/default.jpg" | grep -i '^x-cache'   # Hit from cloudfront on repeat
+```
+
+The functions can also be exercised in AWS without sending traffic. This also
+confirms that CloudFront hands the function the `%2F` still encoded:
+
+```sh
+FN=$(tofu output -raw image_server_legacy_request_function_name)
+cat > /tmp/cf-event.json <<'JSON'
+{"version":"1.0","context":{"eventType":"viewer-request"},"viewer":{"ip":"192.0.2.1"},
+ "request":{"method":"GET","uri":"/iiif/rose%2FDouce195%2FDouce195.001r/info.json",
+            "querystring":{},"headers":{"host":{"value":"example.cloudfront.net"}},"cookies":{}}}
+JSON
+aws cloudfront test-function --name "$FN" --stage LIVE \
+  --if-match "$(aws cloudfront describe-function --name "$FN" --stage LIVE --query ETag --output text)" \
+  --event-object fileb:///tmp/cf-event.json --query TestResult.FunctionOutput --output text
+```
+
+### Prod cutover to image.library.jhu.edu
+
+`image.library.jhu.edu` still points at the current server, so prod starts on
+its CloudFront hostname. To move the name:
+
+1. Request an ACM certificate for `image.library.jhu.edu` in **us-east-1**
+   (outside tofu) and have the JHU DNS admins add its validation CNAME.
+2. In `prod.tfvars` set
+   `image_server_domain_aliases = ["image.library.jhu.edu"]` and
+   `image_server_acm_certificate_arn = "<arn>"`, then apply. This also changes
+   Cantaloupe's `BASE_URI`, so the ECS tasks are replaced.
+3. Point `image.library.jhu.edu` (CNAME) at the `image_server_cloudfront_domain_name` output.
+4. Existing `/iiif/<id>` URLs keep working. New manifests can use
+   `image_server_iiif2_base_url` or `image_server_iiif3_base_url`.
+
+The viewer and workflow defaults (`rosa-viewer/.env`, `deploy-stage.yml`,
+`release.yml`) still name `https://image.library.jhu.edu/iiif` and are left
+alone until then.
+
+### Tests
+
+```sh
+# CloudFront Functions (Node 20+)
+node --test modules/rosa2-image-server/functions/test/
+
+# Module logic with a mocked AWS provider (no credentials needed)
+cd modules/rosa2-image-server && tofu init -backend=false && tofu test
+```
+
+`functions/test/e2e.test.mjs` also runs the functions against a live local
+server when `ROSA_IMAGE_SERVER_URL` is set; `rosa-image-server/test/smoke-test.sh --keep`
+starts one and prints the variables to use.
+
 ## Cost
 
 The domain dominates: one `t3.medium.search` on-demand plus a 20 GiB gp3 volume.
 The HTTP API, both Lambdas, and CloudWatch Logs are usage-priced and negligible
-at this traffic level. For current figures use the
+at this traffic level.
+
+For the image server, the fixed costs are the Fargate task(s) (stage one
+1 vCPU / 4 GiB task; prod 2 vCPU / 8 GiB, scaling 1–3), the internal ALB, one
+public IPv4 address per task, and the WAF web ACL in prod. There is no NAT
+gateway, and the VPC origin and S3 gateway endpoint carry no charge. Usage
+costs are CloudFront requests and data transfer (`PriceClass_100` keeps it to
+North American and European edges), S3 requests, and cache storage, which
+lifecycle expiry bounds. For current figures use the
 [AWS Pricing Calculator](https://calculator.aws/).

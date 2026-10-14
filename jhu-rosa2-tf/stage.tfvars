@@ -84,3 +84,47 @@ throttle_rate_limit  = 20
 throttle_burst_limit = 40
 
 enable_api_access_logs = true
+
+# =============================================================================
+# Image server (modules/rosa2-image-server)
+# =============================================================================
+# Unset inputs take the module defaults in modules/rosa2-image-server/variables.tf.
+
+# Image built and pushed with rosa-image-server/build-and-push.sh --env stage --push.
+# Empty creates the infrastructure with the service scaled to zero.
+image_server_image_tag = ""
+
+# ---------- Networking ----------
+# See prod.tfvars; distinct from prod's 10.48.0.0/24.
+image_server_vpc_cidr = "10.48.1.0/24"
+
+# ---------- Images ----------
+# Same read-only sources as prod.
+image_server_source_bucket = "jhu-library-images"
+image_server_source_prefix = "iiifstore/"
+
+# Derivative cache: own bucket (<name_prefix>-image-cache-<account>), prefix "stage/".
+image_server_cache_ttl_days = 14
+
+# ---------- ECS ----------
+# A single 1 vCPU / 4 GiB task.
+image_server_task_cpu         = 1024
+image_server_task_memory      = 4096
+image_server_min_tasks        = 1
+image_server_max_tasks        = 1
+image_server_http_max_threads = 32
+
+image_server_log_level          = "info"
+image_server_log_retention_days = 14
+
+# ---------- CloudFront ----------
+# Stage is served only on its generated https://<id>.cloudfront.net name.
+image_server_domain_aliases      = []
+image_server_acm_certificate_arn = ""
+
+# ---------- WAF and monitoring ----------
+# WAF off to save cost; stage has no public users.
+image_server_enable_waf = false
+
+image_server_enable_monitoring        = true
+image_server_alarm_notification_email = ""

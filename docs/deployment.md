@@ -323,6 +323,38 @@ For per-environment details, the access-control model, and the Latin analyzer
 package lifecycle, see [`jhu-rosa2-tf/README.md`](../jhu-rosa2-tf/README.md) and
 [`rosa-search/README.md`](../rosa-search/README.md).
 
+## Deploying the image server
+
+The IIIF Image API server ([`rosa-image-server`](../rosa-image-server/),
+Cantaloupe with Kakadu) runs on ECS Fargate behind CloudFront. Its
+infrastructure is the `rosa2-image-server` module in
+[`jhu-rosa2-tf`](../jhu-rosa2-tf/README.md#image-server), in the same state and
+tfvars as search. Both stage and prod are HTTPS: stage on its generated
+`*.cloudfront.net` hostname, and prod on its own until it takes over
+`image.library.jhu.edu`.
+
+```bash
+# Build the image and push it to the environment's ECR repository
+cd rosa-image-server
+./build-and-push.sh --kakadu-zip /path/to/v8_6_1-02130L.zip --env stage --push
+
+# Deploy it: set the printed image_server_image_tag in stage.tfvars, then
+cd ../jhu-rosa2-tf
+tofu apply -var-file=stage.tfvars
+tofu output image_server_iiif2_base_url     # https://<id>.cloudfront.net/iiif/2
+```
+
+The first apply for an environment comes before any image exists: run it once
+with `image_server_image_tag = ""`, which creates the ECR repository with the
+service scaled to zero, then push and apply again. See
+[First deployment](../jhu-rosa2-tf/README.md#first-deployment).
+
+The server answers on `/iiif/2/<id>` (Image API 2), `/iiif/3/<id>` (Image API
+3) and the legacy `/iiif/<id>` (Image API 2, as served by the current
+`image.library.jhu.edu`). Use one of these base URLs as `--image-base-url`
+with the matching `--image-api-version`. The viewer and workflow defaults still
+point at `https://image.library.jhu.edu/iiif` until prod is cut over.
+
 ## Local Development
 
 For local development and testing, use the local-dev environment:
