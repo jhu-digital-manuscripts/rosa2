@@ -13,12 +13,14 @@ name_prefix = "jhu-rosa2"
 # troubleshooting. Set to [] to make the Lambda functions the only path in.
 vpc_cidr_blocks = ["10.64.0.0/10"]
 
-# The VPC's DHCP options (dopt-0ae1000edc05b7ef9) point at the JHU resolvers
-# rather than the Amazon one, so the Lambdas need DNS egress to them.
+# The dspace prod VPC's DHCP options use AmazonProvidedDNS, which security
+# groups do not filter, so the Lambdas resolve the domain endpoint without
+# this. These JHU resolvers are a leftover from the previous VPC and only add
+# an unused DNS egress rule; set to [] to drop it.
 dns_server_cidrs = ["10.200.1.1/32", "10.200.2.2/32"]
 
-# jhu-countertable-tf already creates the S3 gateway endpoint in this VPC, and
-# AWS permits only one per route table.
+# dspace already owns the S3 gateway endpoint in this VPC, associated with its
+# private route tables, and AWS permits only one per route table.
 create_s3_vpc_endpoint = false
 
 # ---------- OpenSearch domain ----------
@@ -131,7 +133,7 @@ image_server_min_tasks        = 1
 image_server_max_tasks        = 3
 image_server_http_max_threads = 64
 
-image_server_log_level          = "info"
+image_server_log_level          = "warn"
 image_server_log_retention_days = 30
 
 # ---------- CloudFront ----------

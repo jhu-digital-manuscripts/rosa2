@@ -13,10 +13,14 @@ name_prefix = "jhu-rosa2-stage"
 
 vpc_cidr_blocks = ["10.64.0.0/10"]
 
-# JHU resolvers from the VPC's DHCP options; see prod.tfvars.
+# The dspace stage VPC's DHCP options use AmazonProvidedDNS, which security
+# groups do not filter, so the Lambdas resolve the domain endpoint without
+# this. These JHU resolvers are a leftover from the previous VPC and only add
+# an unused DNS egress rule; set to [] to drop it.
 dns_server_cidrs = ["10.200.1.1/32", "10.200.2.2/32"]
 
-# jhu-countertable-tf already owns the S3 gateway endpoint in this VPC.
+# dspace already owns the S3 gateway endpoint in this VPC, associated with its
+# private route tables, and AWS permits only one per route table.
 create_s3_vpc_endpoint = false
 
 # ---------- OpenSearch domain ----------
@@ -94,7 +98,7 @@ enable_api_access_logs = true
 
 # Image built and pushed with rosa-image-server/build-and-push.sh --env stage --push.
 # Empty creates the infrastructure with the service scaled to zero.
-image_server_image_tag = ""
+image_server_image_tag = "5.0.7-9a3a88de"
 
 # ---------- Networking ----------
 # Runs in the dspace stage VPC, sourced from the dspace stage remote state
