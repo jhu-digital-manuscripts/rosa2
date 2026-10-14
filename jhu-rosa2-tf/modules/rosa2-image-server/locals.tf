@@ -15,7 +15,8 @@
 #
 # Traffic flow:
 #   viewer → CloudFront (cache) → VPC origin → internal ALB → ECS task :8182
-#   ECS task → S3 source bucket (read-only) and cache bucket, over the IGW
+#   ECS task → S3 source bucket (read-only) and cache bucket, via the dspace
+#              VPC's S3 gateway endpoint (associated with the public route table)
 #
 # The AWS provider, including default_tags, is configured by the caller.
 # =============================================================================
