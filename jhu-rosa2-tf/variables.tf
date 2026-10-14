@@ -420,6 +420,12 @@ variable "image_server_log_retention_days" {
   default     = null
 }
 
+variable "image_server_enable_execute_command" {
+  description = "Enable ECS Exec into the image server container for debugging (adds SSM channel permissions to the task role)."
+  type        = bool
+  default     = null
+}
+
 variable "image_server_container_insights" {
   description = "Enable ECS Container Insights on the cluster (extra CloudWatch metrics, billed)."
   type        = bool
@@ -459,6 +465,12 @@ variable "image_server_cloudfront_max_ttl" {
 variable "image_server_origin_read_timeout" {
   description = "Seconds CloudFront waits for the origin to respond. Full-size renderings of large pages can take several seconds."
   type        = number
+  default     = null
+}
+
+variable "image_server_enable_origin_shield" {
+  description = "Route CloudFront edge misses through an Origin Shield in the deployment region."
+  type        = bool
   default     = null
 }
 

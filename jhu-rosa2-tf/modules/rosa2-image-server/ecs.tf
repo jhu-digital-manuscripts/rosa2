@@ -27,6 +27,7 @@ locals {
       S3SOURCE_BASICLOOKUPSTRATEGY_BUCKET_NAME = var.source_bucket
       S3SOURCE_BASICLOOKUPSTRATEGY_PATH_PREFIX = var.source_prefix
 
+
       # Derivative cache, this environment's bucket and prefix.
       CACHE_SERVER_DERIVATIVE_ENABLED     = "true"
       CACHE_SERVER_DERIVATIVE             = "S3Cache"
@@ -120,6 +121,9 @@ resource "aws_ecs_service" "this" {
   task_definition = aws_ecs_task_definition.this.arn
   desired_count   = local.min_tasks
   launch_type     = "FARGATE"
+
+  # ECS Exec; changing it replaces the running task on the next deployment.
+  enable_execute_command = var.enable_execute_command
 
   # Cantaloupe takes ~15 s to start; give the ALB check time before ECS acts on it.
   health_check_grace_period_seconds = 60

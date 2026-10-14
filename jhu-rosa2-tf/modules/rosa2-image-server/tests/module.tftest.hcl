@@ -306,6 +306,14 @@ run "cloudfront_behaviours" {
     condition     = aws_cloudfront_distribution.this.web_acl_id == null
     error_message = "no WAF unless enabled"
   }
+
+  assert {
+    condition = (
+      one([for o in aws_cloudfront_distribution.this.origin : o.origin_shield[0].enabled]) &&
+      one([for o in aws_cloudfront_distribution.this.origin : o.origin_shield[0].origin_shield_region]) == "us-east-1"
+    )
+    error_message = "edge misses must go through an Origin Shield in the deployment region by default"
+  }
 }
 
 run "waf_enabled" {

@@ -127,3 +127,26 @@ resource "aws_iam_role_policy" "task" {
   role   = aws_iam_role.task.id
   policy = data.aws_iam_policy_document.task.json
 }
+
+# ECS Exec: the SSM agent Fargate injects into the task opens its Session
+# Manager channels with the task role. These actions cannot be scoped to a
+# resource. Only attached while enable_execute_command is on.
+data "aws_iam_policy_document" "task_exec" {
+  statement {
+    sid = "EcsExecSessionChannels"
+    actions = [
+      "ssmmessages:CreateControlChannel",
+      "ssmmessages:CreateDataChannel",
+      "ssmmessages:OpenControlChannel",
+      "ssmmessages:OpenDataChannel",
+    ]
+    resources = ["*"]
+  }
+}
+
+resource "aws_iam_role_policy" "task_exec" {
+  count  = var.enable_execute_command ? 1 : 0
+  name   = "ecs-exec"
+  role   = aws_iam_role.task.id
+  policy = data.aws_iam_policy_document.task_exec.json
+}

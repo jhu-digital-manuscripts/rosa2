@@ -280,8 +280,11 @@ viewer ──HTTPS──▶ CloudFront ──VPC origin──▶ internal ALB �
   removed.
 - **Caching.** IIIF URLs never change for a given image. Cantaloupe sends
   `s-maxage=31536000`, so CloudFront serves almost all repeat traffic (tiles,
-  thumbnails, `info.json`) from the edge. The S3 derivative cache is the second
-  tier, and each environment has its own bucket with lifecycle expiry on its
+  thumbnails, `info.json`) from the edge. Edge misses go through an Origin
+  Shield in us-east-1 (`image_server_enable_origin_shield`, default on), so a
+  response is fetched from Cantaloupe once rather than once per edge location.
+  The S3 derivative cache is the tier behind that, and each environment has its
+  own bucket with lifecycle expiry on its
   `<environment>/` prefix. A single `image_server_cache_ttl_days` value drives
   both that expiry and Cantaloupe's TTL. The cache policies forward no cookies,
   query strings or headers, which also stops `?cache=false` from bypassing the

@@ -113,12 +113,14 @@ module "rosa2_image_server" {
   extra_environment          = var.image_server_extra_environment
   log_retention_days         = var.image_server_log_retention_days
   container_insights         = var.image_server_container_insights
+  enable_execute_command     = var.image_server_enable_execute_command
   alb_idle_timeout           = var.image_server_alb_idle_timeout
   domain_aliases             = var.image_server_domain_aliases
   acm_certificate_arn        = var.image_server_acm_certificate_arn
   price_class                = var.image_server_price_class
   cloudfront_max_ttl         = var.image_server_cloudfront_max_ttl
   origin_read_timeout        = var.image_server_origin_read_timeout
+  enable_origin_shield       = var.image_server_enable_origin_shield
   enable_waf                 = var.image_server_enable_waf
   waf_rate_limit             = var.image_server_waf_rate_limit
   waf_trusted_ip_set_arn     = var.image_server_waf_trusted_ip_set_arn

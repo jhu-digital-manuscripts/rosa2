@@ -2,7 +2,10 @@
 #
 # HTTPS front door and edge cache. Every IIIF URL is immutable for a given
 # image, so almost all traffic (tiles, thumbnails, info.json) is served from
-# the edge; Cantaloupe's S3 derivative cache is the second tier.
+# the edge. Edge misses go through an Origin Shield in the deployment region
+# (enable_origin_shield), so each response is fetched from Cantaloupe once
+# rather than once per edge location; Cantaloupe's S3 derivative cache is the
+# tier behind that.
 #
 # Cache behaviours, in precedence order:
 #
@@ -149,6 +152,11 @@ resource "aws_cloudfront_distribution" "this" {
   origin {
     origin_id   = local.origin_id
     domain_name = aws_lb.this.dns_name
+
+    origin_shield {
+      enabled              = var.enable_origin_shield
+      origin_shield_region = local.region
+    }
 
     vpc_origin_config {
       vpc_origin_id            = aws_cloudfront_vpc_origin.alb.id

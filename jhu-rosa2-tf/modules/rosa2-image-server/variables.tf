@@ -82,6 +82,8 @@ variable "source_prefix" {
   }
 }
 
+
+
 # ---------- Derivative cache ----------
 
 variable "cache_bucket_name" {
@@ -141,6 +143,7 @@ variable "task_memory" {
   default     = 4096
   nullable    = false
 }
+
 
 variable "min_tasks" {
   description = "Minimum (and initial) number of running tasks."
@@ -214,6 +217,13 @@ variable "log_retention_days" {
   nullable    = false
 }
 
+variable "enable_execute_command" {
+  description = "Enable ECS Exec (aws ecs execute-command) into the Cantaloupe container for debugging. Grants the task role the SSM Session Manager channel permissions. Leave off in prod except while investigating."
+  type        = bool
+  default     = false
+  nullable    = false
+}
+
 variable "container_insights" {
   description = "Enable ECS Container Insights on the cluster (extra CloudWatch metrics, billed)."
   type        = bool
@@ -269,6 +279,13 @@ variable "origin_read_timeout" {
   description = "Seconds CloudFront waits for the origin to respond. Full-size renderings of large pages can take several seconds."
   type        = number
   default     = 60
+  nullable    = false
+}
+
+variable "enable_origin_shield" {
+  description = "Route edge cache misses through a CloudFront Origin Shield in the deployment region, so the first request for a tile anywhere fills a shared regional cache and other edge locations get it from there instead of from Cantaloupe. Billed per request that reaches the shield."
+  type        = bool
+  default     = true
   nullable    = false
 }
 
