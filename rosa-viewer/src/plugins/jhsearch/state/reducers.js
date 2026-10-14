@@ -56,6 +56,10 @@ export const initialState = {
   // Facet selections
   facets: {},
 
+  // Label and logo of books picked in the Name filter, by manifest id. Selections
+  // themselves are in facets.id; this is only a display cache, so it is never cleared.
+  nameLabels: {},
+
   // Simple search
   simpleSearch: {
     query: '',
@@ -322,6 +326,15 @@ export function jhsearchReducer(state = initialState, action) {
         pagination: {
           ...state.pagination,
           page: 0,
+        },
+      };
+
+    case actions.SET_NAME_LABELS:
+      return {
+        ...state,
+        nameLabels: {
+          ...state.nameLabels,
+          ...action.payload,
         },
       };
 

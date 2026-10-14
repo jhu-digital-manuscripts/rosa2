@@ -182,16 +182,16 @@ export function JHSearchSidebar() {
 
           <Divider sx={{ my: 2 }} />
 
-          {/* Sort Order */}
-          <SortOrder />
-
           {/* Facets */}
           {enableFacets && (
             <>
-              <Divider sx={{ my: 2 }} />
               <CategoryFacets />
+              <Divider sx={{ my: 2 }} />
             </>
           )}
+
+          {/* Sort Order, below the filters */}
+          <SortOrder />
         </Box>
 
         {/* Clear button - fixed at bottom */}

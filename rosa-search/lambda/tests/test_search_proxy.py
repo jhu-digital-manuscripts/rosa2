@@ -133,6 +133,58 @@ def validate(query: dict) -> dict:
     return app.validate_body(json.dumps(query).encode("utf-8"))
 
 
+NAME_IDS = ["rose.Douce195", "rose.Douce332"]
+
+
+def name_filter() -> dict:
+    """buildNameFilter() from queryBuilder.js: manifests by id, canvases by manifest_id."""
+    return {
+        "bool": {
+            "should": [{"terms": {"id": NAME_IDS}}, {"terms": {"manifest_id": NAME_IDS}}],
+            "minimum_should_match": 1,
+        }
+    }
+
+
+def name_suggest_query() -> dict:
+    """buildNameSuggestQuery() from queryBuilder.js (Name filter type-ahead)."""
+    return {
+        "query": {
+            "bool": {
+                "must": [
+                    {
+                        "multi_match": {
+                            "query": "douce 1",
+                            "type": "bool_prefix",
+                            "operator": "and",
+                            "fields": [
+                                "label_suggest",
+                                "label_suggest._2gram",
+                                "label_suggest._3gram",
+                            ],
+                        }
+                    }
+                ],
+                "filter": [
+                    {"terms": {"collection_id": ["dlmm"]}},
+                    {"terms": {"material": ["parchment"]}},
+                ],
+            }
+        },
+        "size": 10,
+        "_source": ["id", "label", "logo"],
+    }
+
+
+def name_lookup_query() -> dict:
+    """buildNameLookupQuery() from queryBuilder.js (labels for ids restored from a URL)."""
+    return {
+        "query": {"bool": {"filter": [{"terms": {"id": NAME_IDS}}]}},
+        "size": len(NAME_IDS),
+        "_source": ["id", "label", "logo"],
+    }
+
+
 class AcceptsViewerQueries(unittest.TestCase):
     """Every shape rosa-viewer produces must pass."""
 
@@ -173,6 +225,28 @@ class AcceptsViewerQueries(unittest.TestCase):
 
     def test_collection_aggregation(self):
         self.assertIn("aggs", validate(collection_aggregation_query()))
+
+    def test_name_suggest(self):
+        body = validate(name_suggest_query())
+        self.assertEqual(body["query"]["bool"]["must"][0]["multi_match"]["type"], "bool_prefix")
+
+    def test_name_lookup(self):
+        self.assertEqual(validate(name_lookup_query())["size"], 2)
+
+    def test_browse_with_name_filter(self):
+        body = browse_query()
+        body["query"]["bool"]["filter"].append(name_filter())
+        self.assertIn("query", validate(body))
+
+    def test_simple_search_with_name_filter(self):
+        body = simple_search_query()
+        body["query"]["bool"]["filter"].append(name_filter())
+        self.assertIn("query", validate(body))
+
+    def test_advanced_search_with_name_filter(self):
+        body = advanced_search_query()
+        body["query"]["bool"]["filter"].append(name_filter())
+        self.assertIn("query", validate(body))
 
     def test_term_lookup_by_id(self):
         validate({"query": {"term": {"id": "aor.Ha2.003r"}}})

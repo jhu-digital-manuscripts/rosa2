@@ -61,6 +61,12 @@ describe('parseLocation', () => {
     expect(parse('#rose?f.has_transcription=true').facets).toEqual({ has_transcription: [true] });
   });
 
+  it('reads Name filter selections as manifest id strings', () => {
+    expect(parse('#rose?f.id=rose.Douce195&f.id=rose.Arras845').facets).toEqual({
+      id: ['rose.Douce195', 'rose.Arras845'],
+    });
+  });
+
   it('reads a simple search', () => {
     expect(parse('#rose/search?q=green&s=page&m=30&o=60')).toEqual({
       type: 'search',
@@ -246,6 +252,7 @@ describe('formatRoute', () => {
     const hashes = [
       'rose',
       'rose?f.date=1350&f.type=Prose+text&s=title_desc&o=40',
+      'rose?f.id=rose.Douce195&f.id=rose.Arras845',
       'pizan/search?q=green+man&f.date=1400&s=page&m=40',
       "rose/search?q=(description:'sword'+%26+title:'l%5C'amant')&type=advanced",
       'rose/Add12042/binding.frontcover/image',

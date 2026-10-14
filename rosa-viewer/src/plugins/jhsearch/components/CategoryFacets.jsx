@@ -22,6 +22,8 @@ import Badge from '@mui/material/Badge';
 import * as selectors from '../state/selectors';
 import { toggleFacet } from '../state/actions';
 import { formatFacetValue, getQuantizeInterval } from '../utils/facets';
+import { NAME_FACET } from '../utils/queryBuilder';
+import { NameFilter } from './NameFilter';
 
 /**
  * Single facet category display.
@@ -140,6 +142,10 @@ function SelectedFacets({ facets, categories, onToggle }) {
   const chips = [];
 
   for (const [categoryName, values] of Object.entries(facets)) {
+    // Name filter selections are shown as chips in the Name filter itself
+    if (categoryName === NAME_FACET) {
+      continue;
+    }
     const category = categories.find((c) => c.name === categoryName);
     const categoryLabel = category?.label || categoryName;
 
@@ -190,7 +196,7 @@ export function CategoryFacets() {
   const facets = useSelector(selectors.getFacets);
   const enableFacets = useSelector(selectors.areFacetsEnabled);
 
-  if (!enableFacets || categories.length === 0) {
+  if (!enableFacets) {
     return null;
   }
 
@@ -207,6 +213,9 @@ export function CategoryFacets() {
       <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>
         Filter By
       </Typography>
+
+      {/* Name is always first, whatever categories the collection has */}
+      <NameFilter />
 
       {categories.map((category) => (
         <FacetCategory

@@ -10,6 +10,11 @@ import {
   buildFacetAggregations,
   buildSortClause,
   rowHasQuery,
+  buildNameFilter,
+  buildNameSuggestQuery,
+  buildNameLookupQuery,
+  NAME_FACET,
+  NAME_SUGGEST_FIELDS,
 } from '../utils/queryBuilder';
 import { mockJHSearchService } from '../../../test/mocks';
 
@@ -431,6 +436,122 @@ describe('queryBuilder', () => {
       });
       expect(aggs.num_illustrations).toEqual({
         histogram: { field: 'num_illustrations', interval: 10, min_doc_count: 1 },
+      });
+    });
+  });
+
+  describe('Name filter', () => {
+    const nameFilter = (ids) => ({
+      bool: {
+        should: [{ terms: { id: ids } }, { terms: { manifest_id: ids } }],
+        minimum_should_match: 1,
+      },
+    });
+    const ids = ['rose.Douce195', 'rose.Douce332'];
+
+    it('uses the id facet key', () => {
+      expect(NAME_FACET).toBe('id');
+    });
+
+    it('matches manifests by id and canvases by manifest_id', () => {
+      expect(buildNameFilter(ids)).toEqual(nameFilter(ids));
+    });
+
+    it('returns null when nothing is selected', () => {
+      expect(buildNameFilter([])).toBeNull();
+      expect(buildNameFilter(undefined)).toBeNull();
+    });
+
+    it('is applied to browse queries', () => {
+      const query = buildBrowseQuery({
+        collectionId: 'rose',
+        facets: { id: ids, origin: ['France'] },
+        categories,
+      });
+      expect(query.query.bool.filter).toEqual([
+        { terms: { collection_id: ['rose'] } },
+        nameFilter(ids),
+        { terms: { origin: ['France'] } },
+      ]);
+    });
+
+    it('is applied to simple search queries', () => {
+      const query = buildSimpleSearchQuery({
+        query: 'rose',
+        defaultFields,
+        fieldDefinitions,
+        collectionId: 'rose',
+        facets: { id: ids },
+        categories,
+      });
+      expect(query.query.bool.filter).toContainEqual(nameFilter(ids));
+    });
+
+    it('is applied to advanced search queries', () => {
+      const query = buildAdvancedSearchQuery({
+        rows: [{ field: 'label', value: 'rose', operator: 'AND' }],
+        fieldDefinitions,
+        collectionId: 'rose',
+        facets: { id: ids },
+        categories,
+      });
+      expect(query.query.bool.filter).toContainEqual(nameFilter(ids));
+    });
+
+    it('is not aggregated as a category', () => {
+      const query = buildBrowseQuery({ collectionId: 'rose', facets: { id: ids }, categories });
+      expect(query.aggs).not.toHaveProperty('id');
+    });
+
+    describe('buildNameSuggestQuery', () => {
+      it('runs an AND bool_prefix match over the search_as_you_type fields', () => {
+        const query = buildNameSuggestQuery({ text: 'douce 1', collectionId: 'rose' });
+        expect(query.query.bool.must).toEqual([
+          {
+            multi_match: {
+              query: 'douce 1',
+              type: 'bool_prefix',
+              operator: 'and',
+              fields: NAME_SUGGEST_FIELDS,
+            },
+          },
+        ]);
+        expect(NAME_SUGGEST_FIELDS).toEqual([
+          'label_suggest',
+          'label_suggest._2gram',
+          'label_suggest._3gram',
+        ]);
+      });
+
+      it('returns at most 10 small hits by default', () => {
+        const query = buildNameSuggestQuery({ text: 'do', collectionId: 'rose' });
+        expect(query.size).toBe(10);
+        expect(query._source).toEqual(['id', 'label', 'logo']);
+        expect(query).not.toHaveProperty('aggs');
+        expect(query).not.toHaveProperty('highlight');
+      });
+
+      it('filters by collection and other facets but not by the selected names', () => {
+        const query = buildNameSuggestQuery({
+          text: 'do',
+          collectionId: 'dlmm',
+          facets: { id: ids, origin: ['France'] },
+          categories,
+        });
+        expect(query.query.bool.filter).toEqual([
+          { terms: { collection_id: ['dlmm'] } },
+          { terms: { origin: ['France'] } },
+        ]);
+      });
+    });
+
+    describe('buildNameLookupQuery', () => {
+      it('fetches label and logo for the given ids', () => {
+        expect(buildNameLookupQuery(ids)).toEqual({
+          query: { bool: { filter: [{ terms: { id: ids } }] } },
+          size: 2,
+          _source: ['id', 'label', 'logo'],
+        });
       });
     });
   });

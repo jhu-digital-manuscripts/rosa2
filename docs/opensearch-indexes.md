@@ -182,7 +182,8 @@ Fields using this pattern: `mark`, `symbol`, `drawing`, `calculation`, `graph`, 
 |-------|------|-------------|
 | `id` | keyword | Unique manifest ID (`{collection_id}.{book_id}`) |
 | `collection_id` | keyword (array) | All ancestor collection IDs |
-| `label` | text | Human-readable common name of the book |
+| `label` | text (+ `.keyword`) | Human-readable common name of the book. Copied to `label_suggest` |
+| `label_suggest` | search_as_you_type | Filled from `label` by `copy_to`, not by the generator. Backs the viewer's Name filter type-ahead (see below) |
 | `title` | text (multi-lang) | Combined title: common name + BookText titles |
 | `repository` | text | Repository holding the physical item |
 | `shelfmark` | text | Repository shelfmark |
@@ -202,6 +203,44 @@ Fields using this pattern: `mark`, `symbol`, `drawing`, `calculation`, `graph`, 
 | `has_transcription` | boolean | Whether transcription data exists |
 | `thumbnail` | object (disabled, array) | Up to 3 thumbnail objects with `iiif_image_id` and `page_num` |
 | `logo` | keyword | Logo image filename |
+
+### label_suggest
+
+A [`search_as_you_type`](https://docs.opensearch.org/latest/mappings/supported-field-types/search-as-you-type/)
+field populated from `label` with `copy_to`, so the bulk data does not contain it.
+Opensearch indexes `label_suggest`, `label_suggest._2gram`, `label_suggest._3gram`
+and `label_suggest._index_prefix`, which makes prefix matching on each word of a
+label cheap. `label` itself stays a `text` field with a `.keyword` sub-field because
+the viewer sorts by `label.keyword`, and `search_as_you_type` takes no `fields`.
+
+The viewer queries it with a `bool_prefix` `multi_match`:
+
+```json
+{
+  "size": 10,
+  "_source": ["id", "label", "logo"],
+  "query": {
+    "bool": {
+      "must": [{
+        "multi_match": {
+          "query": "douce 1",
+          "type": "bool_prefix",
+          "operator": "and",
+          "fields": ["label_suggest", "label_suggest._2gram", "label_suggest._3gram"]
+        }
+      }],
+      "filter": [{ "terms": { "collection_id": ["rose"] } }]
+    }
+  }
+}
+```
+
+`operator: and` requires every typed word to match, the last one as a prefix, so
+`douce 1` narrows to `Douce 195` instead of also matching every label with a word
+starting with `1`.
+
+Adding or changing this mapping, like any mapping change, takes effect only after
+the indexes are rebuilt (`local-dev/start.sh`, or `init-opensearch.sh` for AWS).
 
 ### collection_id
 

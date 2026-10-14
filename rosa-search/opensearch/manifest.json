@@ -40,10 +40,12 @@
       "collection_id": { "type": "keyword" },
       "label": {
         "type": "text",
+        "copy_to": "label_suggest",
         "fields": {
           "keyword": { "type": "keyword" }
         }
       },
+      "label_suggest": { "type": "search_as_you_type" },
       "title": {
         "type": "text",
         "fields": {

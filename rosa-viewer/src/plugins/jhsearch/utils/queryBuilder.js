@@ -5,6 +5,45 @@
 import { buildCategoryFilter } from './facets';
 
 /**
+ * Facet key holding the manifest ids picked in the Name filter. It is stored with the
+ * other facets so it shares their URL encoding (`f.id=rose.Douce195`) and clearing.
+ */
+export const NAME_FACET = 'id';
+
+/** Fields of the `label_suggest` search_as_you_type field that a bool_prefix query uses. */
+export const NAME_SUGGEST_FIELDS = [
+  'label_suggest',
+  'label_suggest._2gram',
+  'label_suggest._3gram',
+];
+
+/** Source fields the Name filter needs to show a book. */
+const NAME_SOURCE = ['id', 'label', 'logo'];
+
+/**
+ * Build the filter clause for books picked in the Name filter.
+ *
+ * A manifest's `id` is the book id, but a canvas's `id` is the page id and its book
+ * is in `manifest_id`. Searches run over both indexes, so either has to match; the
+ * selected ids are ORed.
+ *
+ * @param {string[]} ids - Manifest ids
+ * @returns {Object|null} Filter clause, or null when nothing is selected
+ */
+export function buildNameFilter(ids) {
+  if (!ids || ids.length === 0) {
+    return null;
+  }
+  const values = ids.map(String);
+  return {
+    bool: {
+      should: [{ terms: { id: values } }, { terms: { manifest_id: values } }],
+      minimum_should_match: 1,
+    },
+  };
+}
+
+/**
  * Expand field names that have subfields into wildcard patterns.
  * e.g., 'marginalia' with has_subfields=true becomes ['marginalia.*']
  * Fields without subfields are passed through unchanged.
@@ -69,8 +108,14 @@ export function buildFacetFilters(facets, categories = []) {
   const filters = [];
 
   for (const [name, values] of Object.entries(facets)) {
-    const category = categories.find((c) => c.name === name);
-    const filter = buildCategoryFilter(name, values, category);
+    const filter =
+      name === NAME_FACET
+        ? buildNameFilter(values)
+        : buildCategoryFilter(
+            name,
+            values,
+            categories.find((c) => c.name === name)
+          );
     if (filter) {
       filters.push(filter);
     }
@@ -400,5 +445,74 @@ export function buildCollectionAggregationQuery(collectionIds) {
         },
       },
     },
+  };
+}
+
+/**
+ * Build the type-ahead query for the Name filter, run against the manifest index.
+ *
+ * Every typed word must match, the last one as a prefix. Suggestions are limited to
+ * the selected collection and the other active facets, but not to the books already
+ * picked, so the user can add more.
+ *
+ * @param {Object} options
+ * @param {string} options.text - Text typed so far
+ * @param {string} options.collectionId - Collection ID to filter by
+ * @param {Object} [options.facets] - Selected facet values
+ * @param {Object[]} [options.categories] - Category definitions from jhsearch.json
+ * @param {number} [options.size] - Maximum number of suggestions
+ * @returns {Object} Opensearch query body
+ */
+export function buildNameSuggestQuery({
+  text,
+  collectionId,
+  facets = {},
+  categories = [],
+  size = 10,
+}) {
+  const otherFacets = { ...facets };
+  delete otherFacets[NAME_FACET];
+
+  return {
+    query: {
+      bool: {
+        must: [
+          {
+            multi_match: {
+              query: text,
+              type: 'bool_prefix',
+              operator: 'and',
+              fields: NAME_SUGGEST_FIELDS,
+            },
+          },
+        ],
+        filter: [
+          { terms: { collection_id: [collectionId] } },
+          ...buildFacetFilters(otherFacets, categories),
+        ],
+      },
+    },
+    size,
+    _source: NAME_SOURCE,
+  };
+}
+
+/**
+ * Build a query fetching the label and logo of the given manifests, used to show
+ * Name filter selections restored from a URL.
+ *
+ * @param {string[]} ids - Manifest ids
+ * @returns {Object} Opensearch query body
+ */
+export function buildNameLookupQuery(ids) {
+  const values = ids.map(String);
+  return {
+    query: {
+      bool: {
+        filter: [{ terms: { id: values } }],
+      },
+    },
+    size: values.length,
+    _source: NAME_SOURCE,
   };
 }

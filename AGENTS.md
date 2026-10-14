@@ -49,7 +49,7 @@ Data flow: `archive/` → `rosa-tool` → (IIIF JSON static files + `<collection
 → Opensearch → `rosa-viewer`, which queries `/_search`, `/manifest/_search` and `/canvas/_search`.
 
 The viewer ships as two sites built from the same code: **AoR** (`sites/aor`,
-collection `aor`, no facets) and **DLMM** (`sites/dlmm`, collection `dlmm` with
+collection `aor`, facets on but no categories, so only the Name filter) and **DLMM** (`sites/dlmm`, collection `dlmm` with
 children `rose` and `pizan`). Site identity and styling are fixed in
 `sites/<site>/main.js` and `site.css`; only deployment URLs vary, via
 `VITE_ROSA_IIIF_BASE_URL` and `VITE_ROSA_IMAGE_BASE_URL`. Environments: local-dev

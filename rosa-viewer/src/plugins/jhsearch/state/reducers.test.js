@@ -5,6 +5,7 @@
 import { describe, it, expect } from 'vitest';
 import { jhsearchReducer, initialState } from './reducers';
 import * as actions from './actions';
+import * as selectors from './selectors';
 
 describe('jhsearchReducer', () => {
   describe('config actions', () => {
@@ -282,6 +283,63 @@ describe('jhsearchReducer', () => {
       );
       state = jhsearchReducer(state, actions.toggleFacet('n', '10'));
       expect(state.facets).toEqual({});
+    });
+  });
+
+  describe('Name filter', () => {
+    it('starts with an empty label cache', () => {
+      expect(initialState.nameLabels).toEqual({});
+    });
+
+    it('merges labels into the cache', () => {
+      let state = jhsearchReducer(
+        undefined,
+        actions.setNameLabels({ 'rose.Douce195': { label: 'Douce 195', logo: 'rose.jpg' } })
+      );
+      state = jhsearchReducer(
+        state,
+        actions.setNameLabels({ 'pizan.Harley4431': { label: 'Harley 4431' } })
+      );
+      expect(state.nameLabels).toEqual({
+        'rose.Douce195': { label: 'Douce 195', logo: 'rose.jpg' },
+        'pizan.Harley4431': { label: 'Harley 4431' },
+      });
+    });
+
+    it('keeps the cache but drops the selection on clear', () => {
+      let state = jhsearchReducer(undefined, actions.toggleFacet('id', 'rose.Douce195'));
+      state = jhsearchReducer(
+        state,
+        actions.setNameLabels({ 'rose.Douce195': { label: 'Douce 195' } })
+      );
+      state = jhsearchReducer(state, actions.clearSearch());
+      expect(state.facets).toEqual({});
+      expect(state.nameLabels['rose.Douce195'].label).toBe('Douce 195');
+    });
+
+    it('selects names with known labels and falls back to the id', () => {
+      let state = jhsearchReducer(undefined, actions.toggleFacet('id', 'rose.Douce195'));
+      state = jhsearchReducer(state, actions.toggleFacet('id', 'rose.Arras845'));
+      state = jhsearchReducer(
+        state,
+        actions.setNameLabels({ 'rose.Douce195': { label: 'Douce 195', logo: 'rose.jpg' } })
+      );
+      const root = { jhsearch: state };
+
+      expect(selectors.getSelectedNameIds(root)).toEqual(['rose.Douce195', 'rose.Arras845']);
+      const names = selectors.getSelectedNames(root);
+      expect(names).toEqual([
+        { id: 'rose.Douce195', label: 'Douce 195', logo: 'rose.jpg' },
+        { id: 'rose.Arras845', label: 'rose.Arras845', logo: null },
+      ]);
+      // Memoized: the same state gives the same array.
+      expect(selectors.getSelectedNames(root)).toBe(names);
+    });
+
+    it('selects an empty list when nothing is picked', () => {
+      const root = { jhsearch: initialState };
+      expect(selectors.getSelectedNames(root)).toEqual([]);
+      expect(selectors.getSelectedNames(root)).toBe(selectors.getSelectedNames(root));
     });
   });
 });

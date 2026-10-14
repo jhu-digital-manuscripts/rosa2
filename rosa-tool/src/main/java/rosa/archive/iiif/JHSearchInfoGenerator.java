@@ -47,11 +47,12 @@ public final class JHSearchInfoGenerator {
                     "transcription")
     );
 
-    // Per-collection search categories (using actual opensearch field names for faceting)
+    // Per-collection search categories (using actual opensearch field names for faceting).
+    // aor has none: its site shows only the viewer's built-in Name filter.
     private static final Map<String, List<String>> SEARCH_CATEGORIES = Map.of(
             "rose", List.of("current_location", "date", "num_illustrations", "num_pages", "origin", "type", "has_transcription"),
             "pizan", List.of("current_location", "date", "num_illustrations", "num_pages", "origin", "type", "has_transcription"),
-            "aor", List.of("authors", "current_location", "date", "num_pages", "origin"),
+            "aor", List.of(),
             "dlmm", List.of("current_location", "date", "num_illustrations", "num_pages", "origin", "has_transcription", "type")
     );
 

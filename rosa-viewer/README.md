@@ -5,7 +5,8 @@ A Mirador 4-based IIIF viewer for browsing digitized book collections with integ
 ## Overview
 
 Rosa Viewer provides:
-- Collection browsing with faceted filtering
+- Collection browsing with faceted filtering, including a Name filter that picks
+  books by type-ahead over their labels (sites with `enableFacets`, both AoR and DLMM)
 - Full-text search across manifest and canvas metadata
 - Advanced search with per-field queries and boolean operators
 - Integration with Mirador's page-turner viewer
@@ -31,7 +32,7 @@ collection, features and styling:
 
 | Site | Directory | Collection | Facets |
 |------|-----------|------------|--------|
-| The Archaeology of Reading (AoR) | `sites/aor/` | `aor` | off |
+| The Archaeology of Reading (AoR) | `sites/aor/` | `aor` | on, Name filter only (`jhsearch.json` lists no categories) |
 | Digital Library of Medieval Manuscripts (DLMM) | `sites/dlmm/` | `dlmm` with children `rose`, `pizan` | on |
 
 Each site directory holds:
@@ -139,6 +140,7 @@ fragment too, because WordPress would treat a query string such as
 |------|-----|
 | Browse a collection | `#rose` |
 | Browse by category | `#rose?f.date=15th+century&f.has_transcription=true` |
+| Browse selected books (Name filter) | `#dlmm?f.id=rose.Douce195&f.id=pizan.Francais1243` |
 | Simple search | `#rose/search?q=green` |
 | Advanced search | `#rose/search?q=(description:'sword'+%26+title:'x')&type=advanced` |
 | Advanced search, value plus extra text | `#aor/search?q=mark:'dash'%2B'regnum'&type=advanced` |

@@ -18,7 +18,9 @@ createSiteViewer({
   jhsearch: {
     collectionId: 'aor',
     childCollectionIds: [],
-    enableFacets: false,
+    // Facets on, for the Name filter. jhsearch.json for aor lists no categories,
+    // so Name is the only filter shown.
+    enableFacets: true,
     // A book row opens the first page in single image view
     bookClickView: 'single',
   },

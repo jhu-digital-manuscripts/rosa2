@@ -34,6 +34,9 @@ export const APPLY_SEARCH_STATE = `${PREFIX}/APPLY_SEARCH_STATE`;
 export const TOGGLE_FACET = `${PREFIX}/TOGGLE_FACET`;
 export const CLEAR_FACETS = `${PREFIX}/CLEAR_FACETS`;
 
+// Name filter display cache
+export const SET_NAME_LABELS = `${PREFIX}/SET_NAME_LABELS`;
+
 // Search
 export const SET_SIMPLE_QUERY = `${PREFIX}/SET_SIMPLE_QUERY`;
 export const SET_ADVANCED_ROW = `${PREFIX}/SET_ADVANCED_ROW`;
@@ -147,6 +150,15 @@ export const toggleFacet = (category, value) => ({
 
 export const clearFacets = () => ({
   type: CLEAR_FACETS,
+});
+
+/**
+ * Remember how to show Name filter selections.
+ * @param {Object<string, {label: string, logo?: string}>} labels - By manifest id
+ */
+export const setNameLabels = (labels) => ({
+  type: SET_NAME_LABELS,
+  payload: labels,
 });
 
 // Search

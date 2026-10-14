@@ -167,6 +167,7 @@ All annotation data targeting a canvas is accumulated into the canvas document. 
 Book-level metadata for full-text search and faceted filtering. Key fields:
 - `id` — unique manifest ID (`{collection_id}.{book_id}`, e.g. `rose.Douce195`)
 - `label` — the human-readable common name of the book
+- `label_suggest` — `search_as_you_type` copy of `label` for the Name filter type-ahead
 - `title` — multi-language title field (common name + BookText titles)
 - `collection_id` — array of all ancestor collection IDs
 - `thumbnail` — up to 3 canvas IDs for representative thumbnails
@@ -399,6 +400,48 @@ Filter by annotator with aggregations on method and language:
   }
 }
 ```
+
+### Name Filter
+
+On sites with facets enabled (AoR and DLMM), the first entry under "Filter By" is
+**Name**, a type-ahead that picks books by label. It is not a `categories`
+entry in `jhsearch.json`; the viewer always shows it. Selections are manifest
+ids, stored with the other facets under the key `id`, so they appear in the URL
+as repeatable `f.id` parameters (`#dlmm?f.id=rose.Douce195&f.id=pizan.Francais1243`)
+and are cleared by Clear All. Each suggestion and chip shows the manifest's `logo`.
+
+Suggestions come from the manifest index's `label_suggest` field (see
+[Opensearch Indexes](opensearch-indexes.md#label_suggest)). The viewer sends a
+query after 2 characters, debounced by 250 ms, for at most 10 hits. It is filtered
+by the selected collection and the other active facets, but not by the books
+already picked:
+
+```json
+{
+  "query": {
+    "bool": {
+      "must": [{ "multi_match": { "query": "douce 1", "type": "bool_prefix", "operator": "and",
+                                  "fields": ["label_suggest", "label_suggest._2gram", "label_suggest._3gram"] } }],
+      "filter": [{ "terms": { "collection_id": ["dlmm"] } }, { "terms": { "origin": ["France"] } }]
+    }
+  },
+  "size": 10,
+  "_source": ["id", "label", "logo"]
+}
+```
+
+Selected books are ORed. Because a search spans both indexes and a canvas's `id`
+is its page id, the filter matches manifests by `id` and canvases by
+`manifest_id`:
+
+```json
+{ "bool": { "should": [ { "terms": { "id": ["rose.Douce195"] } },
+                        { "terms": { "manifest_id": ["rose.Douce195"] } } ],
+            "minimum_should_match": 1 } }
+```
+
+For selections restored from a URL, the viewer fetches their labels and logos in
+one `terms` query on `id` with `_source: ["id", "label", "logo"]`.
 
 ### Canvas Lookup by ID
 

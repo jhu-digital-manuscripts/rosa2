@@ -2,7 +2,7 @@
  * Redux selectors for JHSearch plugin.
  */
 
-import { rowHasQuery } from '../utils/queryBuilder';
+import { rowHasQuery, NAME_FACET } from '../utils/queryBuilder';
 
 // ============================================================================
 // Base Selectors
@@ -37,6 +37,43 @@ export const getUI = (state) => getJHSearchState(state).ui || {};
  * Get the facets state.
  */
 export const getFacets = (state) => getJHSearchState(state).facets || {};
+
+const EMPTY = Object.freeze([]);
+const EMPTY_LABELS = Object.freeze({});
+
+/**
+ * Get the Name filter display cache: {[manifestId]: {label, logo}}.
+ */
+export const getNameLabels = (state) => getJHSearchState(state).nameLabels || EMPTY_LABELS;
+
+/**
+ * Get the manifest ids selected in the Name filter.
+ */
+export const getSelectedNameIds = (state) => getFacets(state)[NAME_FACET] || EMPTY;
+
+let selectedNamesCache = { ids: null, labels: null, result: EMPTY };
+
+/**
+ * Get the Name filter selections as [{id, label, logo}], falling back to the id as
+ * the label until it is known. Memoized so useSelector sees a stable array.
+ */
+export const getSelectedNames = (state) => {
+  const ids = getSelectedNameIds(state);
+  const labels = getNameLabels(state);
+  if (ids === selectedNamesCache.ids && labels === selectedNamesCache.labels) {
+    return selectedNamesCache.result;
+  }
+  const result =
+    ids.length === 0
+      ? EMPTY
+      : ids.map((value) => {
+          const id = String(value);
+          const known = labels[id];
+          return { id, label: known?.label || id, logo: known?.logo || null };
+        });
+  selectedNamesCache = { ids, labels, result };
+  return result;
+};
 
 /**
  * Get the simple search state.
