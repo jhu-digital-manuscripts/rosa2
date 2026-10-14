@@ -190,7 +190,7 @@ Edit the file and rebuild the image for changes that apply to every environment;
 
 **Source.** `source.static = S3Source` with `BasicLookupStrategy`. Identifiers in the generated manifests carry no file extension (`aor/BL531k6/BL531k6.001r`) while the objects do, so `path_suffix = .jp2` appends it; this also lets the source infer the format from the key instead of issuing an extra ranged GET. Chunking stays enabled: with JPEG 2000 and Kakadu, Cantaloupe fetches only the byte ranges a request needs, and this bypasses the source cache entirely.
 
-**Processor.** `ManualSelectionStrategy` maps `jp2` to `KakaduNativeProcessor` explicitly, so a missing or broken Kakadu library fails the request instead of silently falling back to a slower processor. JPEG output goes through libjpeg-turbo for every processor when the library is present.
+**Processor.** `ManualSelectionStrategy` maps `jp2` to `KakaduNativeProcessor` explicitly, so a missing or broken Kakadu library fails the request instead of silently falling back to a slower processor. JPEG output goes through libjpeg-turbo for every processor when the library is present. `processor.jpg.progressive = false`: on a 1-CPU task, baseline encoding served a burst of 73 distinct tiles about 9% faster than progressive, for about 14% more bytes per tile. OpenSeadragon draws a tile only once it has fully loaded, so progressive rendering buys the viewer nothing. Output stays at `processor.jpg.quality = 80`.
 
 **Caching.** There are three tiers:
 

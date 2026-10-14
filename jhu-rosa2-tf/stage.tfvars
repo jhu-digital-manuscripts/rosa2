@@ -98,7 +98,7 @@ enable_api_access_logs = true
 
 # Image built and pushed with rosa-image-server/build-and-push.sh --env stage --push.
 # Empty creates the infrastructure with the service scaled to zero.
-image_server_image_tag = "5.0.7-9a3a88de"
+image_server_image_tag = "5.0.7-de5cbb8f-dirty"
 
 # ---------- Networking ----------
 # Runs in the dspace stage VPC, sourced from the dspace stage remote state
@@ -114,14 +114,16 @@ image_server_source_prefix = "iiifstore/"
 image_server_cache_ttl_days = 14
 
 # ---------- ECS ----------
-# A single 1 vCPU / 4 GiB task.
-image_server_task_cpu         = 1024
+# A single 2 vCPU / 4 GiB task. 2 vCPU matches prod: with 1 vCPU, cold page
+# opens (bursts of ~16 tiles) pinned the CPU at ~98% and took ~3.5 s. Memory
+# stays at 4 GiB, since the task uses 25-41% of it.
+image_server_task_cpu         = 2048
 image_server_task_memory      = 4096
 image_server_min_tasks        = 1
 image_server_max_tasks        = 1
 image_server_http_max_threads = 32
 
-image_server_log_level          = "info"
+image_server_log_level          = "warn"
 image_server_log_retention_days = 14
 
 # ---------- CloudFront ----------
