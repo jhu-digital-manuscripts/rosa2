@@ -11,6 +11,7 @@ import Typography from '@mui/material/Typography';
 import Chip from '@mui/material/Chip';
 import ImageIcon from '@mui/icons-material/Image';
 
+import { HighlightedText } from './HighlightedText';
 import * as selectors from '../state/selectors';
 import { buildThumbnailUrl, parseManifestId } from '../utils/urlBuilder';
 
@@ -71,34 +72,6 @@ function LazyThumbnail({ src, alt }) {
         <ImageIcon color="disabled" />
       ) : null}
     </Box>
-  );
-}
-
-/**
- * HighlightedText - renders HTML highlighting from Opensearch.
- */
-function HighlightedText({ html, fieldLabel }) {
-  return (
-    <Typography
-      variant="body2"
-      color="text.secondary"
-      sx={{
-        '& mark': {
-          bgcolor: 'warning.light',
-          px: 0.25,
-        },
-        overflow: 'hidden',
-        textOverflow: 'ellipsis',
-        display: '-webkit-box',
-        WebkitLineClamp: 2,
-        WebkitBoxOrient: 'vertical',
-      }}
-    >
-      <Typography component="span" variant="body2" fontWeight="medium">
-        {fieldLabel}:{' '}
-      </Typography>
-      <span dangerouslySetInnerHTML={{ __html: html }} />
-    </Typography>
   );
 }
 
@@ -166,7 +139,7 @@ export function CanvasResult({ result, onClick }) {
 
             {/* Highlighted matches */}
             {highlightEntries.map(([field, fragments]) => (
-              <HighlightedText key={field} html={fragments[0]} fieldLabel={field.split('.')[0]} />
+              <HighlightedText key={field} html={fragments[0]} field={field} lineClamp={2} />
             ))}
           </Box>
         </Box>

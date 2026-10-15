@@ -13,6 +13,7 @@ import Avatar from '@mui/material/Avatar';
 import Chip from '@mui/material/Chip';
 import BookIcon from '@mui/icons-material/Book';
 
+import { HighlightedText } from './HighlightedText';
 import * as selectors from '../state/selectors';
 import { buildThumbnailUrl, buildLogoUrl } from '../utils/urlBuilder';
 
@@ -72,29 +73,6 @@ function LazyThumbnail({ src, alt }) {
         <BookIcon color="disabled" />
       ) : null}
     </Box>
-  );
-}
-
-/**
- * HighlightedText - renders HTML highlighting from Opensearch.
- */
-function HighlightedText({ html, fieldLabel }) {
-  return (
-    <Typography
-      variant="body2"
-      color="text.secondary"
-      sx={{
-        '& mark': {
-          bgcolor: 'warning.light',
-          px: 0.25,
-        },
-      }}
-    >
-      <Typography component="span" variant="body2" fontWeight="medium">
-        {fieldLabel}:{' '}
-      </Typography>
-      <span dangerouslySetInnerHTML={{ __html: html }} />
-    </Typography>
   );
 }
 
@@ -167,7 +145,7 @@ export function ManifestResult({ result, onClick, onThumbnailClick }) {
 
             {/* Highlighted matches */}
             {highlightEntries.map(([field, fragments]) => (
-              <HighlightedText key={field} html={fragments[0]} fieldLabel={field.split('.')[0]} />
+              <HighlightedText key={field} html={fragments[0]} field={field} />
             ))}
           </Box>
         </Box>
