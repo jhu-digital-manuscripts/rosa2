@@ -201,8 +201,7 @@ server {
 
 Workflows live in `.github/workflows/`. The manual ones (`Deploy Stage`,
 `Release`) run against the branch chosen in the "Use workflow from" dropdown of
-the Run workflow dialog; the optional `branch` input builds a different branch
-than the one the workflow file was taken from.
+the Run workflow dialog.
 
 ### ci.yml (CI)
 
@@ -220,10 +219,9 @@ Inputs:
 
 | Input | Description | Default |
 |-------|-------------|---------|
-| `branch` | Branch to build | the selected workflow branch |
-| `opensearch_url` | Opensearch `_search` URL (stage API Gateway endpoint) | required |
-| `image_base_url` | IIIF Image API base URL | `https://image.library.jhu.edu/iiif` |
-| `image_api_version` | IIIF Image API version | `2` |
+| `opensearch_url` | Opensearch `_search` URL (stage API Gateway endpoint) | `https://zdnj8lukh6.execute-api.us-east-1.amazonaws.com/_search` |
+| `image_base_url` | IIIF Image API base URL | `https://d32j4c172m91zy.cloudfront.net/iiif/3` (stage image server) |
+| `image_api_version` | IIIF Image API version | `3` |
 
 The workflow builds rosa-tool, generates the IIIF files from the in-repo
 `archive/` with ids under `<pages-url>/iiif/`, builds both sites with
@@ -249,12 +247,11 @@ Inputs:
 |-------|-------------|---------|
 | `release_version` | Release version (e.g. `2.0.0`) | required |
 | `next_version` | Next development version (e.g. `2.1.0-SNAPSHOT`) | required |
-| `branch` | Branch to release | the selected workflow branch |
 | `opensearch_url` | Opensearch `_search` URL written into the sites (prod API Gateway endpoint) | required |
 | `aor_site_url` | URL the AoR site will be served from | `https://archaeologyofreading.org/viewer` |
 | `dlmm_site_url` | URL the DLMM site will be served from | `https://dlmm.library.jhu.edu/viewer` |
-| `image_base_url` | IIIF Image API base URL | `https://image.library.jhu.edu/iiif` |
-| `image_api_version` | IIIF Image API version | `2` |
+| `image_base_url` | IIIF Image API base URL | `https://image.library.jhu.edu/iiif/3` |
+| `image_api_version` | IIIF Image API version | `3` |
 
 Steps:
 
@@ -352,8 +349,10 @@ service scaled to zero, then push and apply again. See
 The server answers on `/iiif/2/<id>` (Image API 2), `/iiif/3/<id>` (Image API
 3) and the legacy `/iiif/<id>` (Image API 2, as served by the current
 `image.library.jhu.edu`). Use one of these base URLs as `--image-base-url`
-with the matching `--image-api-version`. The viewer and workflow defaults still
-point at `https://image.library.jhu.edu/iiif` until prod is cut over.
+with the matching `--image-api-version`. The `Deploy Stage` workflow defaults
+to the stage image server (`https://d32j4c172m91zy.cloudfront.net/iiif/3`) and
+`Release` to `https://image.library.jhu.edu/iiif/3`, both with Image API 3. The
+viewer default still points at `https://image.library.jhu.edu/iiif`.
 
 ## Local Development
 

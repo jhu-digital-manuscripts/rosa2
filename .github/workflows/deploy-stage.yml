@@ -16,23 +16,20 @@ name: Deploy Stage
 on:
   workflow_dispatch:
     inputs:
-      branch:
-        description: 'Branch to build. Leave empty to use the branch selected in "Use workflow from".'
-        required: false
-        type: string
       opensearch_url:
         description: 'Opensearch _search URL (the stage API Gateway endpoint)'
         required: true
+        default: 'https://zdnj8lukh6.execute-api.us-east-1.amazonaws.com/_search'
         type: string
       image_base_url:
         description: 'IIIF Image API base URL'
         required: true
-        default: 'https://image.library.jhu.edu/iiif'
+        default: 'https://d32j4c172m91zy.cloudfront.net/iiif/3'
         type: string
       image_api_version:
         description: 'IIIF Image API version'
         required: true
-        default: '2'
+        default: '3'
         type: choice
         options:
           - '2'
@@ -54,8 +51,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: ${{ inputs.branch || github.ref }}
 
       - name: Configure GitHub Pages
         id: pages
