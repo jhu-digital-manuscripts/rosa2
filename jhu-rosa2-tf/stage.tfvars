@@ -62,7 +62,7 @@ log_retention_days = 14
 
 # ---------- Search request limits ----------
 max_body_bytes    = 16384
-max_page_size     = 100
+max_page_size     = 300
 max_result_window = 10000
 terminate_after   = 200000
 

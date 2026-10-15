@@ -224,7 +224,7 @@ variable "max_body_bytes" {
 variable "max_page_size" {
   description = "Maximum permitted 'size' in a search request."
   type        = number
-  default     = 100
+  default     = 300
 }
 
 variable "max_result_window" {

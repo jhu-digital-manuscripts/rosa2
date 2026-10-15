@@ -139,6 +139,12 @@ export const getInitializationError = (state) => {
 export const getSelectedCollectionId = (state) => getUI(state).selectedCollectionId;
 
 /**
+ * Get the site's top-level collection id, whose books include those of every child
+ * collection.
+ */
+export const getRootCollectionId = (state) => getConfig(state).collectionId;
+
+/**
  * Get the current view mode ('browse' or 'search').
  */
 export const getViewMode = (state) => getUI(state).viewMode;

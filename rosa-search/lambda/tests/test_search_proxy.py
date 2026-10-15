@@ -185,8 +185,74 @@ def name_lookup_query() -> dict:
     }
 
 
+def book_facet_query() -> dict:
+    """buildBookFacetQuery() from utils/bookFacets.js (facet fields of every book)."""
+    return {
+        "query": {"bool": {"filter": [{"terms": {"collection_id": ["dlmm"]}}]}},
+        "from": 300,
+        "size": 300,
+        "sort": [{"id": "asc"}],
+        "_source": ["id", "collection_id", "current_location", "date", "has_transcription"],
+        "track_total_hits": True,
+    }
+
+
+def matched_book_aggs() -> dict:
+    """buildMatchedBookAggregations() from utils/bookFacets.js."""
+    return {
+        "matched_page_books": {"terms": {"field": "manifest_id", "size": 500}},
+        "matched_books": {
+            "filter": {"bool": {"must_not": [{"exists": {"field": "manifest_id"}}]}},
+            "aggs": {"ids": {"terms": {"field": "id", "size": 500}}},
+        },
+    }
+
+
+def allowed_books_filter(count: int, exclude: bool = False) -> dict:
+    """buildAllowedBooksFilter() from utils/bookFacets.js, with lists split at 256."""
+    ids = [f"rose.Book{i}" for i in range(count)]
+    chunks = [ids[i : i + 256] for i in range(0, len(ids), 256)]
+    clauses = [{"terms": {"id": c}} for c in chunks] + [
+        {"terms": {"manifest_id": c}} for c in chunks
+    ]
+    if exclude:
+        return {"bool": {"must_not": clauses}}
+    return {"bool": {"should": clauses, "minimum_should_match": 1}}
+
+
 class AcceptsViewerQueries(unittest.TestCase):
     """Every shape rosa-viewer produces must pass."""
+
+    def test_book_facet_load(self):
+        self.assertEqual(validate(book_facet_query())["size"], 300)
+
+    def test_simple_search_with_book_facets(self):
+        body = simple_search_query()
+        body["aggs"] = matched_book_aggs()
+        body["query"]["bool"]["filter"] = [
+            {"terms": {"collection_id": ["dlmm"]}},
+            allowed_books_filter(40),
+        ]
+        self.assertIn("aggs", validate(body))
+
+    def test_advanced_search_with_excluded_books(self):
+        body = advanced_search_query()
+        body["aggs"] = matched_book_aggs()
+        body["query"]["bool"]["filter"].append(allowed_books_filter(100, exclude=True))
+        self.assertIn("query", validate(body))
+
+    def test_search_with_no_allowed_books(self):
+        body = simple_search_query()
+        body["aggs"] = matched_book_aggs()
+        body["query"]["bool"]["filter"].append({"match_none": {}})
+        self.assertIn("query", validate(body))
+
+    def test_search_with_split_book_lists(self):
+        # Half of a 500-book collection, more than one terms clause holds.
+        body = simple_search_query()
+        body["aggs"] = matched_book_aggs()
+        body["query"]["bool"]["filter"].append(allowed_books_filter(250 + 10))
+        self.assertIn("query", validate(body))
 
     def test_browse(self):
         self.assertIn("query", validate(browse_query()))
@@ -339,6 +405,11 @@ class RejectsExpensiveQueries(unittest.TestCase):
 
     def test_size_above_cap(self):
         self.assert_rejected({"query": {"match_all": {}}, "size": 5000}, "'size' may not exceed")
+
+    def test_size_cap_is_300(self):
+        # The viewer loads every book's facet fields 300 at a time.
+        validate({"query": {"match_all": {}}, "size": 300})
+        self.assert_rejected({"query": {"match_all": {}}, "size": 301}, "'size' may not exceed")
 
     def test_deep_pagination(self):
         self.assert_rejected(

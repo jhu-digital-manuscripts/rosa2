@@ -3,6 +3,7 @@
  */
 
 import { buildCategoryFilter } from './facets';
+import { buildAllowedBooksFilter, buildMatchedBookAggregations } from './bookFacets';
 
 /**
  * Facet key holding the manifest ids picked in the Name filter. It is stored with the
@@ -100,28 +101,56 @@ export function buildHighlightFields(fields) {
  * values are bucket lower bounds standing for a range. Those become `range` clauses;
  * everything else becomes a `terms` clause. See utils/facets.js.
  *
+ * Given the facet fields of every book in the collection, the category selections
+ * instead become one clause naming the books they allow, which also keeps those
+ * books' pages. See utils/bookFacets.js.
+ *
  * @param {Object} facets - Object mapping category names to selected values
  * @param {Object[]} [categories] - Category definitions from jhsearch.json
+ * @param {Object[]|null} [books] - Facet fields of every book in the collection
  * @returns {Object[]} Array of filter clauses
  */
-export function buildFacetFilters(facets, categories = []) {
+export function buildFacetFilters(facets, categories = [], books = null) {
   const filters = [];
+  const nameFilter = buildNameFilter(facets[NAME_FACET]);
+  if (nameFilter) {
+    filters.push(nameFilter);
+  }
 
-  for (const [name, values] of Object.entries(facets)) {
-    const filter =
-      name === NAME_FACET
-        ? buildNameFilter(values)
-        : buildCategoryFilter(
-            name,
-            values,
-            categories.find((c) => c.name === name)
-          );
+  const categoryFacets = Object.entries(facets).filter(([name]) => name !== NAME_FACET);
+
+  if (books) {
+    const filter = buildAllowedBooksFilter(books, Object.fromEntries(categoryFacets), categories);
+    if (filter) {
+      filters.push(filter);
+    }
+    return filters;
+  }
+
+  for (const [name, values] of categoryFacets) {
+    const filter = buildCategoryFilter(
+      name,
+      values,
+      categories.find((c) => c.name === name)
+    );
     if (filter) {
       filters.push(filter);
     }
   }
 
   return filters;
+}
+
+/**
+ * The aggregations for a search: facet aggregations, or with the facet fields of every
+ * book loaded, the ids of the books matched so the facets can be counted locally.
+ *
+ * @param {Object[]} categories - Category definitions from jhsearch.json
+ * @param {Object[]|null} books - Facet fields of every book in the collection
+ * @returns {Object} Aggregations configuration for Opensearch
+ */
+function buildSearchAggregations(categories, books) {
+  return books ? buildMatchedBookAggregations() : buildFacetAggregations(categories);
 }
 
 /**
@@ -196,6 +225,8 @@ export function buildSortClause(sortField, sortOrder) {
  * @param {number} options.page - Page number (0-based)
  * @param {number} options.pageSize - Results per page
  * @param {Object[]} options.categories - Category definitions for aggregations
+ * @param {Object[]|null} [options.books] - Facet fields of every book in the collection, to
+ *   work facets out locally (see utils/bookFacets.js)
  * @param {string} options.sortField - Sort field ('_score' or 'label.keyword')
  * @param {string} options.sortOrder - Sort order ('asc' or 'desc')
  * @returns {Object} Opensearch query body
@@ -206,12 +237,13 @@ export function buildBrowseQuery({
   page = 0,
   pageSize = 20,
   categories = [],
+  books = null,
   sortField = 'label.keyword',
   sortOrder = 'asc',
 }) {
   const filters = [
     { terms: { collection_id: [collectionId] } },
-    ...buildFacetFilters(facets, categories),
+    ...buildFacetFilters(facets, categories, books),
   ];
 
   return {
@@ -223,7 +255,7 @@ export function buildBrowseQuery({
     from: page * pageSize,
     size: pageSize,
     sort: buildSortClause(sortField, sortOrder) || [{ 'label.keyword': 'asc' }],
-    aggs: buildFacetAggregations(categories),
+    aggs: buildSearchAggregations(categories, books),
   };
 }
 
@@ -239,6 +271,8 @@ export function buildBrowseQuery({
  * @param {number} options.page - Page number (0-based)
  * @param {number} options.pageSize - Results per page
  * @param {Object[]} options.categories - Category definitions for aggregations
+ * @param {Object[]|null} [options.books] - Facet fields of every book in the collection, to
+ *   work facets out locally (see utils/bookFacets.js)
  * @param {string} options.sortField - Sort field
  * @param {string} options.sortOrder - Sort order
  * @returns {Object} Opensearch query body
@@ -252,13 +286,14 @@ export function buildSimpleSearchQuery({
   page = 0,
   pageSize = 20,
   categories = [],
+  books = null,
   sortField = '_score',
   sortOrder = 'desc',
 }) {
   const searchFields = expandFieldsWithSubfields(defaultFields, fieldDefinitions);
   const filters = [
     { terms: { collection_id: [collectionId] } },
-    ...buildFacetFilters(facets, categories),
+    ...buildFacetFilters(facets, categories, books),
   ];
 
   const body = {
@@ -283,7 +318,7 @@ export function buildSimpleSearchQuery({
       pre_tags: ['<mark>'],
       post_tags: ['</mark>'],
     },
-    aggs: buildFacetAggregations(categories),
+    aggs: buildSearchAggregations(categories, books),
   };
 
   // Only add sort if not using relevance (default)
@@ -306,6 +341,8 @@ export function buildSimpleSearchQuery({
  * @param {number} options.page - Page number (0-based)
  * @param {number} options.pageSize - Results per page
  * @param {Object[]} options.categories - Category definitions for aggregations
+ * @param {Object[]|null} [options.books] - Facet fields of every book in the collection, to
+ *   work facets out locally (see utils/bookFacets.js)
  * @param {string} options.sortField - Sort field
  * @param {string} options.sortOrder - Sort order
  * @returns {Object} Opensearch query body
@@ -318,6 +355,7 @@ export function buildAdvancedSearchQuery({
   page = 0,
   pageSize = 20,
   categories = [],
+  books = null,
   sortField = '_score',
   sortOrder = 'desc',
 }) {
@@ -366,7 +404,7 @@ export function buildAdvancedSearchQuery({
 
   if (clauses.length === 0) {
     // No valid search terms, return browse query
-    return buildBrowseQuery({ collectionId, facets, page, pageSize, categories });
+    return buildBrowseQuery({ collectionId, facets, page, pageSize, categories, books });
   }
 
   // Combine clauses with AND binding tighter than OR: an OR row starts a new group,
@@ -387,7 +425,7 @@ export function buildAdvancedSearchQuery({
 
   const filters = [
     { terms: { collection_id: [collectionId] } },
-    ...buildFacetFilters(facets, categories),
+    ...buildFacetFilters(facets, categories, books),
   ];
 
   const boolQuery =
@@ -412,7 +450,7 @@ export function buildAdvancedSearchQuery({
       pre_tags: ['<mark>'],
       post_tags: ['</mark>'],
     },
-    aggs: buildFacetAggregations(categories),
+    aggs: buildSearchAggregations(categories, books),
   };
 
   const sort = buildSortClause(sortField, sortOrder);

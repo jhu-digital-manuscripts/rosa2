@@ -444,6 +444,59 @@ is its page id, the filter matches manifests by `id` and canvases by
 For selections restored from a URL, the viewer fetches their labels and logos in
 one `terms` query on `id` with `_source: ["id", "label", "logo"]`.
 
+### Facets in Searches
+
+Facet categories are manifest fields, but simple and advanced searches span both
+indexes, and canvas documents have none of those fields. Opensearch aggregations
+would count only the books that matched directly, so a search matching only
+transcriptions would show no facet values, and a facet filter on the field would
+drop every page.
+
+So for searches the viewer works facets out itself
+(`rosa-viewer/src/plugins/jhsearch/utils/bookFacets.js`). Browsing queries only
+the manifest index and still uses Opensearch aggregations.
+
+1. On the first search it loads the `id`, `collection_id` and category fields of
+   every book in the site's top-level collection, 300 per request (the proxy's size
+   limit), so in one request for collections of up to 300 books, and keeps them for
+   the page session. The top-level collection's books include those of every child
+   collection, so a child collection's books are picked from them by `collection_id`
+   with no further request:
+
+   ```json
+   {
+     "query": { "bool": { "filter": [{ "terms": { "collection_id": ["dlmm"] } }] } },
+     "from": 0, "size": 300, "sort": [{ "id": "asc" }],
+     "_source": ["id", "collection_id", "current_location", "date", "has_transcription"],
+     "track_total_hits": true
+   }
+   ```
+
+2. Instead of facet aggregations, the search asks for the books it matched, either
+   through a page or directly (books are the hits without a `manifest_id`):
+
+   ```json
+   "aggs": {
+     "matched_page_books": { "terms": { "field": "manifest_id", "size": 500 } },
+     "matched_books": { "filter": { "bool": { "must_not": [{ "exists": { "field": "manifest_id" } }] } },
+                        "aggs": { "ids": { "terms": { "field": "id", "size": 500 } } } }
+   }
+   ```
+
+   A facet count is the number of those books with the value, so "Transcription:
+   Yes (3)" means three books, matched directly or through their pages.
+
+3. Selected facet values are resolved to the books they allow, and the search is
+   filtered to those books and their pages the same way as the Name filter: by
+   `id` or `manifest_id`. The filter lists whichever is shorter, the allowed books
+   in a `should` or the excluded ones in a `must_not`, and nothing allowed is
+   `match_none`. Lists longer than 256 ids, the proxy's `terms` limit, are split
+   over several clauses.
+
+The 500-bucket aggregation limit means a search matching more than 500 books
+undercounts its facets. If the books cannot be loaded, searches fall back to
+Opensearch aggregations.
+
 ### Canvas Lookup by ID
 
 Find a specific canvas document:

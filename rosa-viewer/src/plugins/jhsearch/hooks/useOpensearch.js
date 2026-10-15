@@ -13,12 +13,7 @@ import {
   setPageSize,
   setSort,
 } from '../state/actions';
-import { searchManifests, searchAll, parseSearchResults } from '../services/opensearch';
-import {
-  buildBrowseQuery,
-  buildSimpleSearchQuery,
-  buildAdvancedSearchQuery,
-} from '../utils/queryBuilder';
+import { runSearch } from '../services/search';
 
 /**
  * Hook for executing searches and managing search state.
@@ -48,6 +43,8 @@ export function useOpensearch() {
   const sortOrder = useSelector(selectors.getSortOrder);
 
   const opensearchUrl = useSelector(selectors.getOpensearchUrl);
+  const enableFacets = useSelector(selectors.areFacetsEnabled);
+  const rootCollectionId = useSelector(selectors.getRootCollectionId);
   const categories = useSelector(selectors.getCategories);
   const fields = useSelector(selectors.getFields);
   const defaultFields = useSelector(selectors.getDefaultFields);
@@ -63,50 +60,24 @@ export function useOpensearch() {
     dispatch(searchRequest());
 
     try {
-      let query;
-      let searchFn = searchManifests;
-
-      if (viewMode === 'browse') {
-        query = buildBrowseQuery({
-          collectionId: selectedCollectionId,
-          facets,
-          page: currentPage,
-          pageSize,
-          categories,
-          sortField: sortField === '_score' ? 'label.keyword' : sortField,
-          sortOrder: sortField === '_score' ? 'asc' : sortOrder,
-        });
-      } else if (searchMode === 'simple') {
-        query = buildSimpleSearchQuery({
-          query: simpleQuery,
-          defaultFields,
-          fieldDefinitions: fields,
-          collectionId: selectedCollectionId,
-          facets,
-          page: currentPage,
-          pageSize,
-          categories,
-          sortField,
-          sortOrder,
-        });
-        searchFn = searchAll;
-      } else {
-        query = buildAdvancedSearchQuery({
-          rows: advancedRows,
-          fieldDefinitions: fields,
-          collectionId: selectedCollectionId,
-          facets,
-          page: currentPage,
-          pageSize,
-          categories,
-          sortField,
-          sortOrder,
-        });
-        searchFn = searchAll;
-      }
-
-      const response = await searchFn(opensearchUrl, query);
-      const parsed = parseSearchResults(response);
+      const parsed = await runSearch({
+        opensearchUrl,
+        collectionId: selectedCollectionId,
+        rootCollectionId,
+        viewMode,
+        searchMode,
+        simpleQuery,
+        advancedRows,
+        facets,
+        page: currentPage,
+        pageSize,
+        sortField,
+        sortOrder,
+        categories,
+        fields,
+        defaultFields,
+        enableFacets,
+      });
       dispatch(searchSuccess(parsed));
     } catch (err) {
       dispatch(searchFailure(err.message || 'Search failed'));
@@ -114,6 +85,8 @@ export function useOpensearch() {
   }, [
     dispatch,
     opensearchUrl,
+    enableFacets,
+    rootCollectionId,
     selectedCollectionId,
     viewMode,
     searchMode,

@@ -16,6 +16,7 @@ import {
   NAME_FACET,
   NAME_SUGGEST_FIELDS,
 } from '../utils/queryBuilder';
+import { buildMatchedBookAggregations } from './bookFacets';
 import { mockJHSearchService } from '../../../test/mocks';
 
 describe('queryBuilder', () => {
@@ -437,6 +438,66 @@ describe('queryBuilder', () => {
       expect(aggs.num_illustrations).toEqual({
         histogram: { field: 'num_illustrations', interval: 10, min_doc_count: 1 },
       });
+    });
+  });
+
+  describe('with the facet fields of every book loaded', () => {
+    const books = [
+      { id: 'rose.A', origin: 'France' },
+      { id: 'rose.B', origin: 'Italy' },
+      { id: 'rose.C', origin: 'Italy' },
+    ];
+    const allowA = {
+      bool: {
+        should: [{ terms: { id: ['rose.A'] } }, { terms: { manifest_id: ['rose.A'] } }],
+        minimum_should_match: 1,
+      },
+    };
+
+    it('filters a simple search to the allowed books and their pages', () => {
+      const query = buildSimpleSearchQuery({
+        query: 'red',
+        defaultFields,
+        fieldDefinitions,
+        collectionId: 'rose',
+        facets: { origin: ['France'] },
+        categories,
+        books,
+      });
+
+      expect(query.query.bool.filter).toEqual([{ terms: { collection_id: ['rose'] } }, allowA]);
+      expect(query.aggs).toEqual(buildMatchedBookAggregations());
+    });
+
+    it('filters an advanced search, keeping the Name filter', () => {
+      const query = buildAdvancedSearchQuery({
+        rows: [{ field: 'label', value: 'rose', operator: 'AND' }],
+        fieldDefinitions,
+        collectionId: 'rose',
+        facets: { id: ['rose.B'], origin: ['France'] },
+        categories,
+        books,
+      });
+
+      expect(query.query.bool.filter).toEqual([
+        { terms: { collection_id: ['rose'] } },
+        buildNameFilter(['rose.B']),
+        allowA,
+      ]);
+      expect(query.aggs).toEqual(buildMatchedBookAggregations());
+    });
+
+    it('carries the books into an advanced search without rows', () => {
+      const query = buildAdvancedSearchQuery({
+        rows: [],
+        fieldDefinitions,
+        collectionId: 'rose',
+        facets: {},
+        categories,
+        books,
+      });
+
+      expect(query.aggs).toEqual(buildMatchedBookAggregations());
     });
   });
 

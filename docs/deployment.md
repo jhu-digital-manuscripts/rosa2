@@ -312,7 +312,7 @@ Three differences from a directly reachable cluster are worth noting:
   dictionaries by filename, which only works for the local-dev bind mount. AWS
   addresses them as custom packages by ID, and `init-opensearch.sh` substitutes
   the IDs. The checked-in files are left alone.
-- **Queries are validated and capped.** `size` is limited to 100, `from + size` to
+- **Queries are validated and capped.** `size` is limited to 300, `from + size` to
   10000, and request bodies to 16 KB; scripts, `query_string`, `regexp`, and
   wildcard queries are rejected. See `jhu-rosa2-tf/README.md` for the full list.
 

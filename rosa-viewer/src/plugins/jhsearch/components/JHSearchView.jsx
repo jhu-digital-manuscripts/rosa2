@@ -26,12 +26,7 @@ import {
 } from '../state/actions';
 import { initializeJHSearch } from '../services/jhsearch';
 import { buildCollectionItems } from '../utils/collections';
-import { searchManifests, searchAll, parseSearchResults } from '../services/opensearch';
-import {
-  buildBrowseQuery,
-  buildSimpleSearchQuery,
-  buildAdvancedSearchQuery,
-} from '../utils/queryBuilder';
+import { runSearch } from '../services/search';
 
 /**
  * JHSearchView is the main container for the search/browse interface.
@@ -56,6 +51,8 @@ export function JHSearchView({ jhsearchConfig }) {
   const fields = useSelector(selectors.getFields);
   const defaultFields = useSelector(selectors.getDefaultFields);
   const opensearchUrl = useSelector(selectors.getOpensearchUrl);
+  const enableFacets = useSelector(selectors.areFacetsEnabled);
+  const rootCollectionId = useSelector(selectors.getRootCollectionId);
 
   // Initialize on mount
   useEffect(() => {
@@ -96,53 +93,24 @@ export function JHSearchView({ jhsearchConfig }) {
     dispatch(searchRequest());
 
     try {
-      let query;
-      let searchFn = searchManifests;
-
-      if (viewMode === 'browse') {
-        // Browse mode - just filter by collection and facets
-        query = buildBrowseQuery({
-          collectionId: selectedCollectionId,
-          facets,
-          page: currentPage,
-          pageSize,
-          categories,
-          sortField: sortField === '_score' ? 'label.keyword' : sortField,
-          sortOrder: sortField === '_score' ? 'asc' : sortOrder,
-        });
-      } else if (searchMode === 'simple') {
-        // Simple search
-        query = buildSimpleSearchQuery({
-          query: simpleQuery,
-          defaultFields,
-          fieldDefinitions: fields,
-          collectionId: selectedCollectionId,
-          facets,
-          page: currentPage,
-          pageSize,
-          categories,
-          sortField,
-          sortOrder,
-        });
-        searchFn = searchAll; // Search both indexes
-      } else {
-        // Advanced search
-        query = buildAdvancedSearchQuery({
-          rows: advancedRows,
-          fieldDefinitions: fields,
-          collectionId: selectedCollectionId,
-          facets,
-          page: currentPage,
-          pageSize,
-          categories,
-          sortField,
-          sortOrder,
-        });
-        searchFn = searchAll;
-      }
-
-      const response = await searchFn(opensearchUrl, query);
-      const results = parseSearchResults(response);
+      const results = await runSearch({
+        opensearchUrl,
+        collectionId: selectedCollectionId,
+        rootCollectionId,
+        viewMode,
+        searchMode,
+        simpleQuery,
+        advancedRows,
+        facets,
+        page: currentPage,
+        pageSize,
+        sortField,
+        sortOrder,
+        categories,
+        fields,
+        defaultFields,
+        enableFacets,
+      });
       if (searchNumber !== searchCounter.current) return;
       dispatch(searchSuccess(results));
     } catch (error) {
@@ -152,6 +120,8 @@ export function JHSearchView({ jhsearchConfig }) {
   }, [
     isInitialized,
     opensearchUrl,
+    enableFacets,
+    rootCollectionId,
     selectedCollectionId,
     viewMode,
     searchMode,

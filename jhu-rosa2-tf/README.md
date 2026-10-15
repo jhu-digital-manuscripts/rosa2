@@ -134,7 +134,7 @@ a query rosa-viewer could have produced. It rejects, among other things:
 - unbounded clause types (`query_string`, `regexp`, `wildcard`, `fuzzy`, `more_like_this`)
 - cross-index reads (`terms` lookups) and cross-document joins
 - mapping disclosure (`profile`, `explain`, and upstream error bodies)
-- oversized work: body > 16 KB, `size` > 100, `from + size` > 10000, aggregation
+- oversized work: body > 16 KB, `size` > 300, `from + size` > 10000, aggregation
   buckets > 500, and caps on JSON depth, node count, and clause count
 
 A bare `POST /_search` is rewritten to `/manifest,canvas/_search` so it cannot

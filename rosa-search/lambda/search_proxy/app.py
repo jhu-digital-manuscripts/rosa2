@@ -20,7 +20,7 @@ Environment variables:
     OPENSEARCH_REGION     Region of the domain. Defaults to AWS_REGION.
     MAX_BODY_BYTES        Reject request bodies larger than this. Default 16384.
     MAX_RESULT_WINDOW     Cap on from + size. Default 10000.
-    MAX_PAGE_SIZE         Cap on size. Default 100.
+    MAX_PAGE_SIZE         Cap on size. Default 300.
     SEARCH_TIMEOUT        Per-shard timeout injected into every query. Default 6s.
                           Deliberately below UPSTREAM_TIMEOUT so that a query the
                           cluster cannot finish comes back as a 200 with partial
@@ -78,7 +78,7 @@ OPENSEARCH_REGION = os.environ.get("OPENSEARCH_REGION") or os.environ.get("AWS_R
 
 MAX_BODY_BYTES = _int_env("MAX_BODY_BYTES", 16384)
 MAX_RESULT_WINDOW = _int_env("MAX_RESULT_WINDOW", 10000)
-MAX_PAGE_SIZE = _int_env("MAX_PAGE_SIZE", 100)
+MAX_PAGE_SIZE = _int_env("MAX_PAGE_SIZE", 300)
 SEARCH_TIMEOUT = os.environ.get("SEARCH_TIMEOUT", "6s")
 TERMINATE_AFTER = _int_env("TERMINATE_AFTER", 200000)
 RATE_LIMIT_PER_MINUTE = _int_env("RATE_LIMIT_PER_MINUTE", 120)
