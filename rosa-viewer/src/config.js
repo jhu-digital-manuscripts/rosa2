@@ -40,6 +40,8 @@ export const defaultMiradorConfig = {
     allowFullscreen: true,
     allowMaximize: true,
     defaultView: 'single',
+    // Wider default, so annotations and descriptions are readable
+    defaultSidebarPanelWidth: 470,
     panels: {
       info: true,
       annotations: true,
