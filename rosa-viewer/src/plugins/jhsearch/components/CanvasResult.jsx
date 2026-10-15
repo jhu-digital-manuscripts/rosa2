@@ -84,11 +84,10 @@ export function CanvasResult({ result, onClick }) {
   const thumbnailWidth = useSelector(selectors.getThumbnailWidth);
 
   const { source, highlight } = result;
-  const { label, manifest_id, page_num, iiif_image_id } = source;
+  const { label, manifest_id, manifest_label, iiif_image_id } = source;
 
-  // Parse manifest ID to get book info
-  const manifestInfo = parseManifestId(manifest_id);
-  const bookId = manifestInfo?.bookId || manifest_id;
+  // Book label, falling back to the book ID for indexes built without manifest_label
+  const bookLabel = manifest_label || parseManifestId(manifest_id)?.bookId || manifest_id;
 
   // Build thumbnail config object for urlBuilder functions
   const thumbnailConfig = { imageBaseUrl, thumbnailTemplate, thumbnailWidth };
@@ -108,19 +107,14 @@ export function CanvasResult({ result, onClick }) {
 
           {/* Content */}
           <Box sx={{ flex: 1, minWidth: 0 }}>
-            {/* Title row */}
-            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 0.5 }}>
+            {/* Title row: wraps rather than truncating so the page label stays visible */}
+            <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 1, mb: 1 }}>
               <Typography
                 variant="body1"
                 fontWeight="medium"
-                sx={{
-                  overflow: 'hidden',
-                  textOverflow: 'ellipsis',
-                  whiteSpace: 'nowrap',
-                  flex: 1,
-                }}
+                sx={{ flex: 1, minWidth: 0, overflowWrap: 'anywhere' }}
               >
-                {label}
+                {bookLabel}: {label}
               </Typography>
               <Chip
                 icon={<ImageIcon />}
@@ -131,11 +125,6 @@ export function CanvasResult({ result, onClick }) {
                 sx={{ flexShrink: 0 }}
               />
             </Box>
-
-            {/* Book reference */}
-            <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>
-              from {bookId} (page {page_num + 1})
-            </Typography>
 
             {/* Highlighted matches */}
             {highlightEntries.map(([field, fragments]) => (

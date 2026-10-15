@@ -189,11 +189,8 @@ public final class OpensearchIngestGenerator {
         BiblioData biblio = book.getBiblioData("en");
 
         // Label: the common name of the book
-        String label = null;
-        if (biblio != null) {
-            label = biblio.getCommonName();
-        }
-        doc.put("label", label != null ? label : book.getId());
+        String label = biblio != null ? biblio.getCommonName() : null;
+        doc.put("label", bookLabel(book));
 
         // Title: combine common name + BookText titles
         StringBuilder titleBuilder = new StringBuilder();
@@ -333,6 +330,16 @@ public final class OpensearchIngestGenerator {
         return doc;
     }
 
+    /**
+     * Returns the display label of a book: its English common name, or the book ID when
+     * there is none. Used for the manifest {@code label} and the canvas {@code manifest_label}.
+     */
+    static String bookLabel(Book book) {
+        BiblioData biblio = book.getBiblioData("en");
+        String label = biblio != null ? biblio.getCommonName() : null;
+        return label != null ? label : book.getId();
+    }
+
     // ========== Canvas ==========
 
     /**
@@ -347,6 +354,7 @@ public final class OpensearchIngestGenerator {
         String canvasId = collection.getId() + "." + stripExtension(image.getId());
         doc.put("id", canvasId);
         doc.put("manifest_id", collection.getId() + "." + book.getId());
+        doc.put("manifest_label", bookLabel(book));
 
         // Collection IDs: immediate + all ancestors
         List<String> collectionIds = getAncestorCollectionIds(collection);

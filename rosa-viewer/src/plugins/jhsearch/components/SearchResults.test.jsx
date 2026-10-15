@@ -38,6 +38,7 @@ const pageResult = {
     id: 'rose.Douce195.010r',
     label: '10r',
     manifest_id: 'rose.Douce195',
+    manifest_label: 'MS. Douce 195',
     page_num: 22,
   },
 };
@@ -107,7 +108,7 @@ describe('SearchResults clicks', () => {
 
   it('opens a clicked page row in single image view', () => {
     const store = renderResults({ bookClickView: 'gallery' });
-    fireEvent.click(screen.getByText('10r'));
+    fireEvent.click(screen.getByText('MS. Douce 195: 10r'));
 
     expect(addWindowConfigs(store)).toEqual([
       {
@@ -116,6 +117,32 @@ describe('SearchResults clicks', () => {
         view: 'single',
       },
     ]);
+  });
+});
+
+describe('SearchResults page rows', () => {
+  it('titles a page as book label: page label', () => {
+    renderResults();
+    expect(screen.getByText('MS. Douce 195: 10r')).toBeInTheDocument();
+  });
+
+  it('falls back to the book ID when the index has no book label', () => {
+    const source = { ...pageResult.source, manifest_label: undefined };
+    const state = {
+      ...mockReduxState,
+      jhsearch: {
+        ...mockReduxState.jhsearch,
+        pagination: { ...mockReduxState.jhsearch.pagination, total: 1 },
+        results: { ...mockReduxState.jhsearch.results, items: [{ ...pageResult, source }] },
+      },
+    };
+    const store = { getState: () => state, dispatch: vi.fn(), subscribe: () => () => {} };
+    render(
+      <Provider store={store}>
+        <SearchResults />
+      </Provider>
+    );
+    expect(screen.getByText('Douce195: 10r')).toBeInTheDocument();
   });
 });
 

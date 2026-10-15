@@ -145,6 +145,7 @@
     "properties": {
       "id": { "type": "keyword" },
       "manifest_id": { "type": "keyword" },
+      "manifest_label": { "type": "keyword" },
       "collection_id": { "type": "keyword" },
       "iiif_image_id": { "type": "keyword" },
       "label": {

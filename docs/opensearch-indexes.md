@@ -278,6 +278,7 @@ A filename for the logo image associated with this book:
 |-------|------|-------------|
 | `id` | keyword | Unique canvas ID (`{collection_id}.{image_id_no_ext}`) |
 | `manifest_id` | keyword | Parent manifest ID (`{collection_id}.{book_id}`) |
+| `manifest_label` | keyword | Parent book label, the same value as the manifest's `label`. The viewer shows it in page results |
 | `collection_id` | keyword (array) | All ancestor collection IDs |
 | `iiif_image_id` | keyword | IIIF Image API identifier (e.g. `rose/Douce195/cropped/Douce195.001r`) |
 | `label` | text | Page label (pagination, signature, or image name) |
@@ -327,7 +328,7 @@ Generated bulk files use the Opensearch Bulk API format — alternating action a
 
 ```json
 {"index":{"_index":"canvas","_id":"aor.Ha2.001r"}}
-{"id":"aor.Ha2.001r","manifest_id":"aor.Ha2","collection_id":["aor","top"],"label":"1r","page_num":0,"marginalia.la":"verbum","mark.keyword":["plus_sign"],...}
+{"id":"aor.Ha2.001r","manifest_id":"aor.Ha2","manifest_label":"<book label>","collection_id":["aor","top"],"label":"1r","page_num":0,"marginalia.la":"verbum","mark.keyword":["plus_sign"],...}
 ```
 
 One bulk file is produced per collection, named `<collection-id>.bulk.json`.

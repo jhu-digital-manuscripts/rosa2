@@ -23,6 +23,7 @@ import java.util.Map;
  *
  * @param id                  unique canvas ID ({collection_id}.{image_id_no_ext}, e.g. rose.Douce195.001r)
  * @param manifestId          parent manifest ID ({collection_id}.{book_id}, e.g. rose.Douce195)
+ * @param manifestLabel       parent book label (same as the manifest document's label)
  * @param collectionId        all ancestor collection IDs
  * @param iiifImageId         IIIF Image API identifier (e.g. rose/Douce195/cropped/Douce195.001r)
  * @param label               page label (pagination, signature, or image name)
@@ -58,6 +59,7 @@ import java.util.Map;
 public record CanvasDoc(
         String id,
         String manifestId,
+        String manifestLabel,
         List<String> collectionId,
         String iiifImageId,
         String label,

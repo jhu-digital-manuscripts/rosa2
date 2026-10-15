@@ -179,6 +179,7 @@ Book-level metadata for full-text search and faceted filtering. Key fields:
 Page-level data with all annotations merged in. Key structural fields:
 - `id` — unique canvas ID (`{collection_id}.{image_id_no_ext}`, e.g. `aor.Ha2.001r`)
 - `manifest_id` — parent manifest ID (`{collection_id}.{book_id}`, e.g. `aor.Ha2`)
+- `manifest_label` — parent book label (the manifest's `label`)
 - `collection_id` — array of all ancestor collection IDs
 - `label` — page label (pagination/signature/name)
 - `page_num` — 0-based page position (maps to IIIF canvas URI `/canvas/{page_num}`)
@@ -257,7 +258,7 @@ Produces one `<collection-id>.bulk.json` file per collection. Each file uses the
 
 ```json
 {"index":{"_index":"canvas","_id":"aor.Ha2.001r"}}
-{"id":"aor.Ha2.001r","manifest_id":"aor.Ha2","collection_id":["aor","top"],"label":"1r","page_num":0,"marginalia.la":"verbum","mark.keyword":"plus_sign",...}
+{"id":"aor.Ha2.001r","manifest_id":"aor.Ha2","manifest_label":"<book label>","collection_id":["aor","top"],"label":"1r","page_num":0,"marginalia.la":"verbum","mark.keyword":"plus_sign",...}
 ```
 
 ### Step 3: Create Indexes

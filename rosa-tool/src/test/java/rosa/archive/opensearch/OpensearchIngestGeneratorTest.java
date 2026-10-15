@@ -185,6 +185,20 @@ class OpensearchIngestGeneratorTest {
         }
 
         @Test
+        void includesManifestLabel() {
+            ObjectNode doc = generateCanvas();
+            assertEquals("Test Book", doc.get("manifest_label").asText());
+        }
+
+        @Test
+        void manifestLabelFallsBackToBookId() {
+            book.getBookMetadata().setBiblioDataMap(new HashMap<>());
+
+            ObjectNode doc = generateCanvas();
+            assertEquals("testbook", doc.get("manifest_label").asText());
+        }
+
+        @Test
         void collectionIdIsArray() {
             ObjectNode doc = generateCanvas();
             assertTrue(doc.get("collection_id").isArray());
@@ -240,6 +254,20 @@ class OpensearchIngestGeneratorTest {
             ObjectNode doc = generator.generateManifestDocument(collection, book);
             assertEquals(5, doc.get("num_illustrations").asInt());
             assertFalse(doc.has("number_of_illustrations"));
+        }
+
+        @Test
+        void includesManifestLabel() {
+            ObjectNode doc = generateCanvas();
+            assertEquals("Test Book", doc.get("manifest_label").asText());
+        }
+
+        @Test
+        void manifestLabelFallsBackToBookId() {
+            book.getBookMetadata().setBiblioDataMap(new HashMap<>());
+
+            ObjectNode doc = generateCanvas();
+            assertEquals("testbook", doc.get("manifest_label").asText());
         }
 
         @Test
