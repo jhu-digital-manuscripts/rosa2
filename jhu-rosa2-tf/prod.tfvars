@@ -126,11 +126,11 @@ image_server_source_prefix = "iiifstore/"
 image_server_cache_ttl_days = 30
 
 # ---------- ECS ----------
-# 2 vCPU / 8 GiB, scaling 1-3 tasks on CPU.
+# 2 vCPU / 4 GiB
 image_server_task_cpu         = 2048
-image_server_task_memory      = 8192
+image_server_task_memory      = 4096
 image_server_min_tasks        = 1
-image_server_max_tasks        = 3
+image_server_max_tasks        = 1
 image_server_http_max_threads = 64
 
 image_server_log_level          = "warn"

@@ -121,7 +121,7 @@ image_server_task_cpu         = 2048
 image_server_task_memory      = 4096
 image_server_min_tasks        = 1
 image_server_max_tasks        = 1
-image_server_http_max_threads = 32
+image_server_http_max_threads = 64
 
 image_server_log_level          = "warn"
 image_server_log_retention_days = 14
