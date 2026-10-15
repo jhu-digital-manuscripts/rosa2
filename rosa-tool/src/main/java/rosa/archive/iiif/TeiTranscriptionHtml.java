@@ -37,7 +37,8 @@ import org.xml.sax.SAXException;
  *       separated by {@code br}</li>
  *   <li>every 5th logical line number ({@code l/@n}) is shown as {@code sub} at the start
  *       of the line, and every 5th Lecoy number ({@code milestone[@ed='lecoy']}) as
- *       {@code sup} at the end</li>
+ *       {@code sup} at the end. The milestone may be inside the line (SeldenSupra57) or
+ *       immediately after it (Morgan948). Leading zeros are dropped.</li>
  *   <li>{@code hi rend="init"} is {@code b}, {@code hi rend="rubric"} is {@code b i},
  *       {@code expan} is {@code i}, {@code add} is ⸌…⸍, {@code del} is ⟦…⟧</li>
  *   <li>{@code figure} becomes a paragraph with its type, head and character names</li>
@@ -136,6 +137,29 @@ public final class TeiTranscriptionHtml {
         } catch (NumberFormatException e) {
             return false;
         }
+    }
+
+    /** Returns a line number for display, without leading zeros. */
+    static String displayNumber(String n) {
+        return n.trim().replaceFirst("^0+(?=\\d)", "");
+    }
+
+    /**
+     * Returns the {@code n} of a Lecoy milestone that immediately follows a line, skipping
+     * whitespace, or null when the next sibling is anything else.
+     */
+    static String followingLecoyNumber(Element line) {
+        for (Node c = line.getNextSibling(); c != null; c = c.getNextSibling()) {
+            if (c.getNodeType() == Node.TEXT_NODE && c.getNodeValue().isBlank()) {
+                continue;
+            }
+            if (c instanceof Element el && "milestone".equals(name(el))
+                    && "lecoy".equals(el.getAttribute("ed"))) {
+                return el.getAttribute("n");
+            }
+            return null;
+        }
+        return null;
     }
 
     static String noteLabel(String type) {
@@ -360,14 +384,17 @@ public final class TeiTranscriptionHtml {
             walk(el);
             String content = clean(line.toString());
             line = null;
+            if (blank(lecoyNumber)) {
+                lecoyNumber = followingLecoyNumber(el);
+            }
 
             StringBuilder span = new StringBuilder("<span>");
             if (showNumber(lineNumber)) {
-                span.append("<sub>").append(esc(lineNumber.trim())).append("</sub> ");
+                span.append("<sub>").append(esc(displayNumber(lineNumber))).append("</sub> ");
             }
             span.append(content);
             if (showNumber(lecoyNumber)) {
-                span.append(" <sup>").append(esc(lecoyNumber.trim())).append("</sup>");
+                span.append(" <sup>").append(esc(displayNumber(lecoyNumber))).append("</sup>");
             }
             span.append("</span>");
 

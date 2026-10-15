@@ -128,7 +128,7 @@ HTML conventions, which the stylesheets in `rosa-viewer/public/styles/` rely on:
 | Metadata line | `<p><small><b>People:</b> …</small></p>` |
 | Line group (`lg`) | one `<p>`; each line `<span>…</span>` separated by `<br>` |
 | Logical line number (`l/@n`), every 5th | `<sub>` at the start of the line |
-| Lecoy line number (`milestone[@ed='lecoy']`), every 5th | `<sup>` at the end of the line |
+| Lecoy line number (`milestone[@ed='lecoy']` inside the `l` or right after it), every 5th, leading zeros dropped | `<sup>` at the end of the line |
 | Initial / rubric / expansion | `<b>M</b>` / `<b><i>…</i></b>` / `<i>…</i>` |
 | Addition / deletion | `⸌…⸍` / `⟦…⟧` |
 | Miniature (`figure`) | `<p><b>Miniature:</b> <i>head</i><br><small><b>Characters:</b> …</small></p>` |

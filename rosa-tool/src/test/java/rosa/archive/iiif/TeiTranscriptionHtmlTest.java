@@ -67,6 +67,28 @@ class TeiTranscriptionHtmlTest {
     }
 
     @Test
+    void readsLecoyMilestonesThatFollowTheLine() {
+        // Morgan948 puts the milestone after </l>, zero-padded, alongside l/@n
+        String xml = tei("<pb n=\"1r\"/><lg type=\"couplet\">"
+                + "<l n=\"4634\">Trop sont</l>\n<milestone n=\"4585\" ed=\"lecoy\" unit=\"line\"/>\n"
+                + "<l n=\"4635\">Cueurs qui</l>\n<milestone n=\"4586\" ed=\"lecoy\" unit=\"line\"/>\n"
+                + "</lg><lg type=\"couplet\">"
+                + "<l n=\"4\">Qui ne sont</l>\n<milestone n=\"0005\" ed=\"lecoy\" unit=\"line\"/>\n"
+                + "</lg>");
+        String html = TeiTranscriptionHtml.convert(xml).get("1r").get(0).html();
+        assertEquals("<p><span>Trop sont <sup>4585</sup></span><br><span><sub>4635</sub> Cueurs qui</span></p>"
+                + "<p><span>Qui ne sont <sup>5</sup></span></p>", html);
+    }
+
+    @Test
+    void doesNotTakeAMilestoneAcrossOtherContent() {
+        String xml = tei("<pb n=\"1r\"/><lg><l>one</l><l>two</l>"
+                + "<milestone n=\"5\" ed=\"lecoy\" unit=\"line\"/></lg>");
+        String html = TeiTranscriptionHtml.convert(xml).get("1r").get(0).html();
+        assertEquals("<p><span>one</span><br><span>two <sup>5</sup></span></p>", html);
+    }
+
+    @Test
     void formatsInlineMarkupAndNotes() {
         String xml = tei("<pb n=\"2r\"/><hi rend=\"rubric\">Cy commence</hi>"
                 + "<lg><l><hi rend=\"init\">M</hi>ainte<expan>s</expan> gens<note type=\"critical\">\"p. tex\" (Lecoy)</note></l>"

@@ -93,6 +93,11 @@
   line-height: 1.5;
 }
 
+/* Logical line numbers (e.g. Morgan948) reach five digits; make room for them */
+.rosa-anno.dlmm-transcription:has(p > span > sub) {
+  --line-gutter: 3.25rem;
+}
+
 .rosa-anno.dlmm-transcription p.rosa-heading {
   font-family:
     system-ui,
