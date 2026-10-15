@@ -942,19 +942,13 @@ public final class OpensearchIngestGenerator {
             LanguageFieldRouter.routeField(doc, "transcription", "ofr", ofrText.toString().trim());
         }
 
-        // Illustration, notes, lecoy, line numbers → English
+        // Illustration, notes → English
         StringBuilder enText = new StringBuilder();
         if (!extracted.illustration().isBlank()) {
             enText.append(extracted.illustration()).append(" ");
         }
         if (!extracted.note().isBlank()) {
             enText.append(extracted.note()).append(" ");
-        }
-        if (!extracted.lecoy().isBlank()) {
-            enText.append(extracted.lecoy()).append(" ");
-        }
-        if (!extracted.line().isBlank()) {
-            enText.append(extracted.line()).append(" ");
         }
         if (!enText.isEmpty()) {
             LanguageFieldRouter.routeField(doc, "transcription", "en", enText.toString().trim());

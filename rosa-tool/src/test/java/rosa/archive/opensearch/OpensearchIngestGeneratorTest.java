@@ -989,6 +989,17 @@ class OpensearchIngestGeneratorTest {
             assertTrue(doc.has("transcription.ofr") || doc.has("transcription.en"),
                     "transcription should have some content");
         }
+
+        @Test
+        void omitsLineAndLecoyNumbers() {
+            String xmlFragment = "<div><milestone ed=\"lecoy\" unit=\"line\" n=\"7305\"/>"
+                    + "<lg><l n=\"101\">Li jolis temps de mai</l></lg></div>";
+            Map<String, String> transcriptionPages = Map.of("001r", xmlFragment);
+
+            ObjectNode doc = generator.generateCanvasDocument(collection, book, image, 0, transcriptionPages);
+            assertEquals("Li jolis temps de mai", routedText(doc, "transcription.ofr"));
+            assertFalse(doc.has("transcription.en"), "line numbers must not be indexed as English text");
+        }
     }
 
     @Nested

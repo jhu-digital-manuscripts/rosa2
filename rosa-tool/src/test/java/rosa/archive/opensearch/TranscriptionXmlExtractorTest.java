@@ -25,28 +25,21 @@ class TranscriptionXmlExtractorTest {
     }
 
     @Test
-    @DisplayName("Extracts line numbers from <l n='...'>")
-    void extractsLineNumbers() {
-        String xml = "<div type=\"ms\"><lg type=\"couplet\">" +
+    @DisplayName("Skips line numbers from <l n='...'> and Lecoy numbers from <milestone n='...'>")
+    void skipsLineAndLecoyNumbers() {
+        String xml = "<div type=\"ms\"><milestone ed=\"lecoy\" unit=\"line\" n=\"7305\"/>" +
+                "<lg type=\"couplet\">" +
                 "<l n=\"101\">Some text</l>" +
                 "<l n=\"102\">More text</l>" +
                 "</lg></div>";
 
         TranscriptionXmlExtractor.Result result = TranscriptionXmlExtractor.extract("", xml);
 
-        assertTrue(result.line().contains("101"));
-        assertTrue(result.line().contains("102"));
-    }
-
-    @Test
-    @DisplayName("Extracts Lecoy numbers from <milestone n='...'>")
-    void extractsLecoyNumbers() {
-        String xml = "<div type=\"ms\"><milestone n=\"L101\"/>" +
-                "<lg type=\"couplet\"><l n=\"1\">text</l></lg></div>";
-
-        TranscriptionXmlExtractor.Result result = TranscriptionXmlExtractor.extract("", xml);
-
-        assertTrue(result.lecoy().contains("L101"));
+        assertEquals("Some text More text", result.poetry());
+        for (String text : new String[]{result.rubric(), result.catchphrase(),
+                result.illustration(), result.note()}) {
+            assertEquals("", text);
+        }
     }
 
     @Test
@@ -102,8 +95,6 @@ class TranscriptionXmlExtractorTest {
         assertEquals("", result.rubric());
         assertEquals("", result.catchphrase());
         assertEquals("", result.illustration());
-        assertEquals("", result.lecoy());
-        assertEquals("", result.line());
         assertEquals("", result.note());
     }
 

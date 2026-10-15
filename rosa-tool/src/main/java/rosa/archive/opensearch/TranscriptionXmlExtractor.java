@@ -16,11 +16,12 @@ import java.util.logging.Logger;
 /**
  * Extracts structured text content from a TEI transcription XML fragment.
  *
- * <p>Parses poetry lines, rubrics, catchphrases, illustration notes, Lecoy line numbers,
- * line numbers, and general notes into separate strings for language-appropriate indexing.
+ * <p>Parses poetry lines, rubrics, catchphrases, illustration notes, and general notes into
+ * separate strings for language-appropriate indexing. Line numbers ({@code <l n>}) and Lecoy
+ * numbers ({@code <milestone n>}) are skipped because they only add noise to search.
  *
- * <p>Poetry, rubrics, and catchphrases are typically Old French. Illustration descriptions,
- * Lecoy numbers, line numbers, and notes are indexed as English.
+ * <p>Poetry, rubrics, and catchphrases are typically Old French. Illustration descriptions
+ * and notes are indexed as English.
  */
 final class TranscriptionXmlExtractor {
 
@@ -35,23 +36,20 @@ final class TranscriptionXmlExtractor {
      * @param rubric      rubric heading text (Old French)
      * @param catchphrase catchphrase text (Old French)
      * @param illustration illustration and character note text (English)
-     * @param lecoy       Lecoy line number references (English)
-     * @param line        line number references (English)
      * @param note        general note text (English)
      */
     record Result(String poetry, String rubric, String catchphrase,
-                  String illustration, String lecoy, String line, String note) {}
+                  String illustration, String note) {}
 
     /**
      * Parses a transcription XML fragment and extracts categorized text content.
      *
-     * @paran
      * @param xml the transcription XML fragment for a single page
      * @return the extraction result with categorized text, or empty fields on parse failure
      */
     static Result extract(String name, String xml) {
         if (xml == null || xml.isBlank()) {
-            return new Result("", "", "", "", "", "", "");
+            return new Result("", "", "", "", "");
         }
 
         try {
@@ -62,7 +60,7 @@ final class TranscriptionXmlExtractor {
             return handler.getResult();
         } catch (ParserConfigurationException | SAXException | IOException e) {
             log.log(Level.WARNING, "Failed to parse transcription XML fragment from " + name, e);
-            return new Result("", "", "", "", "", "", "");
+            return new Result("", "", "", "", "");
         }
     }
 
@@ -71,8 +69,6 @@ final class TranscriptionXmlExtractor {
      */
     private static class TranscriptionHandler extends DefaultHandler {
         private final StringBuilder poetry = new StringBuilder();
-        private final StringBuilder line = new StringBuilder();
-        private final StringBuilder lecoy = new StringBuilder();
         private final StringBuilder rubric = new StringBuilder();
         private final StringBuilder catchphrase = new StringBuilder();
         private final StringBuilder illustration = new StringBuilder();
@@ -100,20 +96,8 @@ final class TranscriptionXmlExtractor {
                     current = illustration;
                 }
                 case "l" -> {
-                    line.append(' ');
-                    String n = atts.getValue("n");
-                    if (n != null) {
-                        line.append(n);
-                    }
                     poetry.append(' ');
                     current = poetry;
-                }
-                case "milestone" -> {
-                    lecoy.append(' ');
-                    String n = atts.getValue("n");
-                    if (n != null) {
-                        lecoy.append(n);
-                    }
                 }
                 case "hi" -> {
                     String val = atts.getValue("rend");
@@ -127,7 +111,7 @@ final class TranscriptionXmlExtractor {
                     current = catchphrase;
                 }
                 // Structural elements: don't change current target
-                case "head", "lg", "expan", "add", "del", "rdg", "app", "cb", "pb", "div", "gap", "desc" -> {}
+                case "head", "lg", "milestone", "expan", "add", "del", "rdg", "app", "cb", "pb", "div", "gap", "desc" -> {}
                 default -> {}
             }
         }
@@ -153,8 +137,6 @@ final class TranscriptionXmlExtractor {
                     rubric.toString().trim(),
                     catchphrase.toString().trim(),
                     illustration.toString().trim(),
-                    lecoy.toString().trim(),
-                    line.toString().trim(),
                     note.toString().trim()
             );
         }
