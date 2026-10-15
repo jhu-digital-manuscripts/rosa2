@@ -18,8 +18,8 @@ createSiteViewer({
   jhsearch: {
     collectionId: 'dlmm',
     childCollectionIds: ['rose', 'pizan'],
-    // A book row opens the gallery of the book
-    bookClickView: 'gallery',
+    // A book row opens the single image view
+    bookClickView: 'single',
     // Shown in the collection selector, each with the logo public/logo/{id}.jpg
     collectionLabels: {
       dlmm: 'Digital Library of Medieval Manuscripts',
