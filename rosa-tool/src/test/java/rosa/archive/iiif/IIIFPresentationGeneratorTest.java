@@ -305,6 +305,37 @@ class IIIFPresentationGeneratorTest {
     }
 
     @Test
+    void testCanvasThumbnailHasSizeOfScaledImage() throws IOException {
+        BookCollection collection = createTestCollection("rose", "Roman de la Rose");
+        Book book = createTestBookWithImage("LudwigXV7", "LudwigXV7.001r.tif", 3000, 4000);
+        BookImage image = book.getImages().getImages().get(0);
+
+        ObjectNode canvas = generator.generateCanvas(collection, book, image, 0,
+                "http://example.org", "https://images.example.com", 2, false);
+        JsonNode thumbnail = mapper.readTree(writer.writeToString(canvas)).get("thumbnail").get(0);
+
+        assertEquals("https://images.example.com/rose%2FLudwigXV7%2FLudwigXV7.001r/full/80,/0/default.jpg",
+                thumbnail.get("id").asText());
+        // 4000 * 80 / 3000 = 106.67, rounded as the Image API does for an "80," request
+        assertEquals(80, thumbnail.get("width").asInt());
+        assertEquals(107, thumbnail.get("height").asInt());
+    }
+
+    @Test
+    void testCanvasThumbnailOmitsSizeWhenImageSizeUnknown() throws IOException {
+        BookCollection collection = createTestCollection("rose", "Roman de la Rose");
+        Book book = createTestBookWithImage("LudwigXV7", "LudwigXV7.001r.tif", 0, 0);
+        BookImage image = book.getImages().getImages().get(0);
+
+        ObjectNode canvas = generator.generateCanvas(collection, book, image, 0,
+                "http://example.org", "https://images.example.com", 2, false);
+        JsonNode thumbnail = mapper.readTree(writer.writeToString(canvas)).get("thumbnail").get(0);
+
+        assertFalse(thumbnail.has("width"));
+        assertFalse(thumbnail.has("height"));
+    }
+
+    @Test
     void testCanvasImageServiceFallsBackToBaseUrl() throws IOException {
         BookCollection collection = createTestCollection("rose", "Roman de la Rose");
         Book book = createTestBookWithImage("LudwigXV7", "LudwigXV7.001r.tif", 3000, 4000);
@@ -347,6 +378,8 @@ class IIIFPresentationGeneratorTest {
                 "Thumbnail should use imageBaseUrl, got: " + thumbnailId);
         assertEquals("https://images.example.com/rose%2FLudwigXV7%2FLudwigXV7.001r/full/80,/0/default.jpg",
                 thumbnailId);
+        assertEquals(80, parsed.get("thumbnail").get(0).get("width").asInt());
+        assertEquals(107, parsed.get("thumbnail").get(0).get("height").asInt());
     }
 
     // --- Tests for collection item labels (Requirement 3.4) ---
@@ -603,6 +636,13 @@ class IIIFPresentationGeneratorTest {
         // Image service ID should reference missing_image in the collection (no book in path)
         JsonNode service = parsed.get("items").get(0).get("items").get(0).get("body").get("service").get(0);
         assertEquals("https://images.example.com/rose%2Fmissing_image", service.get("id").asText());
+
+        // The placeholder's size is not the missing image's, so the thumbnail has none
+        JsonNode thumbnail = parsed.get("thumbnail").get(0);
+        assertEquals("https://images.example.com/rose%2Fmissing_image/full/80,/0/default.jpg",
+                thumbnail.get("id").asText());
+        assertFalse(thumbnail.has("width"));
+        assertFalse(thumbnail.has("height"));
     }
 
     @Test
@@ -685,6 +725,9 @@ class IIIFPresentationGeneratorTest {
         // Manifest thumbnail should also use the cropped path
         String thumbnailId = parsed.get("thumbnail").get(0).get("id").asText();
         assertTrue(thumbnailId.contains("cropped"), "Thumbnail should use cropped path");
+        // ...and the cropped image's size: 3800 * 80 / 2800 = 108.57
+        assertEquals(80, parsed.get("thumbnail").get(0).get("width").asInt());
+        assertEquals(109, parsed.get("thumbnail").get(0).get("height").asInt());
     }
 
     @Test

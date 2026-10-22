@@ -44,7 +44,7 @@ One manifest per book. Contains:
 - **seeAlso** — the TEI book description, see [Book descriptions](#book-descriptions)
 - **Items** — array of Canvases, one per page image
 - **Structures** — Ranges grouping Canvases by image location, text segments, and illustrations
-- **Thumbnail** — reference to the first canvas image
+- **Thumbnail** — reference to the first canvas image, with its size (see [Thumbnails](#thumbnails))
 - **Viewing hints** — `viewingDirection: "left-to-right"` and `behavior: ["paged"]` for multi-image books; omitted for single-image books
 
 ### Canvases
@@ -53,10 +53,22 @@ One canvas per page image. Each canvas has:
 - A **label** resolved in priority order: AoR pagination, then signature, then image filename
 - **Width and height** from the image dimensions
 - A **painting annotation** with an IIIF Image Service (`ImageService2` by default, `ImageService3` with `--image-api-version 3`)
-- A **thumbnail** reference
+- A **thumbnail** reference, with its size (see [Thumbnails](#thumbnails))
 - `viewingHint: "non-paged"` for binding or miscellaneous images
 
 Canvas URIs use a 0-based index as the path segment: `{base-url}/{collection-id}/{book-id}/canvas/{i}`. This index corresponds directly to the `page_num` field in the Opensearch canvas index, allowing clients to construct canvas URIs from search results using `manifest_id` and `page_num`.
+
+### Thumbnails
+
+Thumbnails are 80 pixel wide JPEGs from the image service
+(`{image-service-id}/full/80,/0/default.jpg`). Manifest and canvas thumbnails
+also give their `width` (80) and `height`. The height is the image height scaled
+to that width and rounded, which is what the Image API returns for an `80,`
+request. Viewers need the size to lay out thumbnails before they load. Mirador
+4.3's gallery view, for example, otherwise stretches each one to its
+`galleryView` width and height. The size is left out when it is not known:
+for images without dimensions, for the placeholder shown in place of a missing
+image, and for the manifest items in collections, which only know the image id.
 
 ### Annotation Pages
 

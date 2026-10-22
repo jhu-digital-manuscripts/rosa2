@@ -44,6 +44,8 @@ import rosa.archive.model.aor.AnnotatedPage;
 public final class IIIFPresentationGenerator {
 
     private static final String CONTEXT = "http://iiif.io/api/presentation/3/context.json";
+    /** Width of thumbnails, in pixels. */
+    private static final int THUMBNAIL_WIDTH = 80;
 
     /** File name of the published TEI book description, next to manifest.json. */
     public static final String DESCRIPTION_FILE = "description.xml";
@@ -342,13 +344,8 @@ public final class IIIFPresentationGenerator {
                 String firstImageId = bookFirstImages.get(bookId);
                 boolean cropped = bookCroppedFlags != null && Boolean.TRUE.equals(bookCroppedFlags.get(bookId));
                 String imageServiceId = buildImageServiceId(baseUrl, imageBaseUrl, collectionId, bookId, firstImageId, cropped);
-                ArrayNode thumbnailArray = mapper.createArrayNode();
-                ObjectNode thumbnail = mapper.createObjectNode();
-                thumbnail.put("id", imageServiceId + "/full/80,/0/default.jpg");
-                thumbnail.put("type", "Image");
-                thumbnail.put("format", "image/jpeg");
-                thumbnailArray.add(thumbnail);
-                item.set("thumbnail", thumbnailArray);
+                // Only the image id is known here, so the thumbnail has no size
+                item.set("thumbnail", thumbnailArray(imageServiceId, 0, 0));
             }
 
             items.add(item);
@@ -448,17 +445,15 @@ public final class IIIFPresentationGenerator {
         boolean hasCropped = croppedImageList != null && !croppedImageList.getImages().isEmpty();
         List<BookImage> paintingImages = hasCropped ? croppedImageList.getImages() : images;
 
-        // Thumbnail from first image
+        // Thumbnail from first image, sized from the image it shows (the cropped one if used)
         if (!images.isEmpty()) {
             BookImage firstImage = images.get(0);
-            ArrayNode thumbnailArray = mapper.createArrayNode();
-            ObjectNode thumbnail = mapper.createObjectNode();
+            BookImage shown = hasCropped
+                    ? paintingImages.stream().filter(i -> firstImage.getId().equals(i.getId())).findFirst().orElse(null)
+                    : firstImage;
             String imageServiceId = buildImageServiceId(baseUrl, imageBaseUrl, collectionId, bookId, firstImage.getId(), hasCropped);
-            thumbnail.put("id", imageServiceId + "/full/80,/0/default.jpg");
-            thumbnail.put("type", "Image");
-            thumbnail.put("format", "image/jpeg");
-            thumbnailArray.add(thumbnail);
-            node.set("thumbnail", thumbnailArray);
+            node.set("thumbnail", thumbnailArray(imageServiceId,
+                    shown != null ? shown.getWidth() : 0, shown != null ? shown.getHeight() : 0));
         }
 
         // Canvas items - use cropped images if available
@@ -592,14 +587,11 @@ public final class IIIFPresentationGenerator {
         items.add(paintingAnnoPage);
         canvas.set("items", items);
 
-        // Thumbnail
-        ArrayNode thumbnailArray = mapper.createArrayNode();
-        ObjectNode thumbnail = mapper.createObjectNode();
-        thumbnail.put("id", imageServiceId + "/full/80,/0/default.jpg");
-        thumbnail.put("type", "Image");
-        thumbnail.put("format", "image/jpeg");
-        thumbnailArray.add(thumbnail);
-        canvas.set("thumbnail", thumbnailArray);
+        // Thumbnail, sized from the image. A missing image shows the placeholder,
+        // whose size is not this image's.
+        canvas.set("thumbnail", image.isMissing()
+                ? thumbnailArray(imageServiceId, 0, 0)
+                : thumbnailArray(imageServiceId, image.getWidth(), image.getHeight()));
 
         // Annotation page reference (commenting annotations) - only if annotations exist
         if (hasAnnotations) {
@@ -1143,6 +1135,28 @@ public final class IIIFPresentationGenerator {
         entry.set("label", languageMap(lang, label));
         entry.set("value", languageMap(lang, value));
         metadata.add(entry);
+    }
+
+    /**
+     * Creates a thumbnail property: one THUMBNAIL_WIDTH pixel wide JPEG from the image service.
+     * When the image size is known, the thumbnail's width and height are included, so viewers
+     * can lay out thumbnails before they load. The height is the one the Image API returns for
+     * a "w," size request: the image height scaled by the same factor and rounded.
+     *
+     * @param imageServiceId the image service ID
+     * @param imageWidth     the full image width, or 0 if unknown
+     * @param imageHeight    the full image height, or 0 if unknown
+     */
+    private ArrayNode thumbnailArray(String imageServiceId, int imageWidth, int imageHeight) {
+        ObjectNode thumbnail = mapper.createObjectNode();
+        thumbnail.put("id", imageServiceId + "/full/" + THUMBNAIL_WIDTH + ",/0/default.jpg");
+        thumbnail.put("type", "Image");
+        thumbnail.put("format", "image/jpeg");
+        if (imageWidth > 0 && imageHeight > 0) {
+            thumbnail.put("width", THUMBNAIL_WIDTH);
+            thumbnail.put("height", Math.max(1, Math.round((float) imageHeight * THUMBNAIL_WIDTH / imageWidth)));
+        }
+        return mapper.createArrayNode().add(thumbnail);
     }
 
     /**
