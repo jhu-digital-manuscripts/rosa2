@@ -145,6 +145,16 @@ books, including all AoR books, get no tab.
 The tests that parse XML use jsdom (`// @vitest-environment jsdom`), because
 happy-dom, the default test environment, parses `application/xml` as HTML.
 
+### Search view and empty workspace
+
+The JHSearch view takes the place of Mirador's "add resource" view, so the user
+always has something to look at. Whenever no window is open, the
+search view is showing: `keepWorkspaceAddVisible()`
+(`src/plugins/jhsearch/workspace.jsx`, started by `createViewer()`) shows it
+again when the last window closes, instead of Mirador's "Welcome to Mirador"
+page. While no window is open, a wrap plugin on `WorkspaceAddButton` hides the
+control panel button that would close the search view.
+
 ### URLs and browser history
 
 The sites keep their state in the URL fragment, so a page can be bookmarked and

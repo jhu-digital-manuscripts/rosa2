@@ -9,6 +9,7 @@ import { MiradorMenuButton } from 'mirador';
 
 import { ConnectedJHSearchView } from './components/JHSearchView';
 import { jhsearchReducer } from './state/reducers';
+import { workspaceAddButtonPlugin } from './workspace';
 
 // Re-export components for external use
 export { JHSearchView, ConnectedJHSearchView } from './components/JHSearchView';
@@ -23,6 +24,7 @@ export { AdvancedSearch } from './components/AdvancedSearch';
 export { SortOrder } from './components/SortOrder';
 export { Pagination } from './components/Pagination';
 export { ErrorDisplay, InitializationError, SearchError } from './components/ErrorDisplay';
+export { keepWorkspaceAddVisible, isWorkspaceEmpty, WorkspaceAddButtonWrapper } from './workspace';
 
 // Re-export services
 export * from './services/opensearch';
@@ -96,6 +98,11 @@ const jhsearchReducerPlugin = {
  * Complete JHSearch plugin array for Mirador.
  * Use with: Mirador.viewer(config, [...jhsearchPlugin])
  */
-export const jhsearchPlugin = [jhsearchViewPlugin, jhsearchButtonPlugin, jhsearchReducerPlugin];
+export const jhsearchPlugin = [
+  jhsearchViewPlugin,
+  jhsearchButtonPlugin,
+  jhsearchReducerPlugin,
+  workspaceAddButtonPlugin,
+];
 
 export default jhsearchPlugin;

@@ -53,6 +53,13 @@ export const defaultMiradorConfig = {
       canvas: true,
     },
   },
+  galleryView: {
+    height: 120,
+    // Mirador 4.3 defaults to 600, which it applies as the width of every
+    // thumbnail whose size the manifest does not give (ours do not), stretching
+    // them. null sizes each thumbnail by its aspect ratio, as Mirador 4.1 did.
+    width: null,
+  },
   workspace: {
     // Open on the JHSearch browse/search view instead of an empty workspace
     isWorkspaceAddVisible: true,

@@ -1,6 +1,6 @@
 import Mirador from 'mirador';
 import { miradorImageToolsPlugin } from 'mirador-image-tools';
-import { jhsearchPlugin } from './plugins/jhsearch';
+import { jhsearchPlugin, keepWorkspaceAddVisible } from './plugins/jhsearch';
 import { rosaAnnotationsPlugin, openAnnotationsByDefault } from './plugins/annotations';
 import { rosaDescriptionPlugin } from './plugins/description';
 import { mergeConfig } from './config';
@@ -8,7 +8,8 @@ import { mergeConfig } from './config';
 /**
  * Initialize the Rosa Viewer with the JHSearch, RosaAnnotations, book description and
  * mirador-image-tools plugins. New windows of books with annotations open with the
- * sidebar showing the annotations panel.
+ * sidebar showing the annotations panel, and the JHSearch view is shown whenever
+ * no window is open.
  *
  * @param {Object} config - Configuration object
  * @param {Object} config.jhsearch - JHSearch plugin configuration
@@ -47,6 +48,8 @@ export function createViewer(config = {}) {
   ]);
   if (viewer?.store) {
     openAnnotationsByDefault(viewer.store);
+    // Show the browse/search view instead of an empty workspace
+    keepWorkspaceAddVisible(viewer.store);
   }
   return viewer;
 }

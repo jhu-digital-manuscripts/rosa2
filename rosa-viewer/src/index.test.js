@@ -3,7 +3,10 @@ import { describe, it, expect, vi } from 'vitest';
 const viewer = { store: { getState: () => ({}) } };
 vi.mock('mirador', () => ({ default: { viewer: vi.fn(() => viewer) } }));
 vi.mock('mirador-image-tools', () => ({ miradorImageToolsPlugin: [{ name: 'imageTools' }] }));
-vi.mock('./plugins/jhsearch', () => ({ jhsearchPlugin: [{ name: 'jhsearch' }] }));
+vi.mock('./plugins/jhsearch', () => ({
+  jhsearchPlugin: [{ name: 'jhsearch' }],
+  keepWorkspaceAddVisible: vi.fn(),
+}));
 vi.mock('./plugins/annotations', () => ({
   rosaAnnotationsPlugin: [{ name: 'annotations' }],
   openAnnotationsByDefault: vi.fn(),
@@ -12,6 +15,7 @@ vi.mock('./plugins/description', () => ({ rosaDescriptionPlugin: [{ name: 'descr
 
 import Mirador from 'mirador';
 import { openAnnotationsByDefault } from './plugins/annotations';
+import { keepWorkspaceAddVisible } from './plugins/jhsearch';
 import { createViewer } from './index';
 
 describe('createViewer', () => {
@@ -30,9 +34,12 @@ describe('createViewer', () => {
     expect(Mirador.viewer).toHaveBeenCalledWith(
       expect.objectContaining({
         window: expect.objectContaining({ sideBarOpen: false, imageToolsEnabled: true }),
+        // Thumbnails without a size in the manifest keep their aspect ratio
+        galleryView: { height: 120, width: null },
       }),
       expect.any(Array)
     );
     expect(openAnnotationsByDefault).toHaveBeenCalledWith(viewer.store);
+    expect(keepWorkspaceAddVisible).toHaveBeenCalledWith(viewer.store);
   });
 });
