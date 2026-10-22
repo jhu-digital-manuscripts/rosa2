@@ -18,15 +18,16 @@
   },
   "dependencies": {
     "dompurify": "3.4.13",
-    "mirador": "^4.1.0"
+    "mirador": "^4.3.0",
+    "mirador-image-tools": "^1.0.2"
   },
   "devDependencies": {
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
     "@eslint/js": "^9.0.0",
-    "@mui/icons-material": "^7.0.0",
-    "@mui/material": "^7.0.0",
-    "@mui/system": "^7.0.0",
+    "@mui/icons-material": "^9.0.0",
+    "@mui/material": "^9.0.0",
+    "@mui/system": "^9.0.0",
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^16.0.0",
     "@testing-library/user-event": "^14.4.3",
@@ -51,8 +52,8 @@
   "peerDependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
-    "@mui/material": "^7.x",
-    "@mui/system": "^7.x",
+    "@mui/material": "^9.x",
+    "@mui/system": "^9.x",
     "react": "^18.0.0 || ^19.0.0",
     "react-dom": "^18.0.0 || ^19.0.0",
     "react-i18next": "^15.0.0"

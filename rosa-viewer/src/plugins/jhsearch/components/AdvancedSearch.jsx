@@ -15,7 +15,7 @@ import InputLabel from '@mui/material/InputLabel';
 import Tooltip from '@mui/material/Tooltip';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
-import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
+import HelpOutlineIcon from '@mui/icons-material/HelpOutlineOutlined';
 import SearchIcon from '@mui/icons-material/Search';
 
 import * as selectors from '../state/selectors';
@@ -167,7 +167,9 @@ function AdvancedSearchRow({ row, index, fields, onUpdate, onRemove, onSubmit, s
           value={row.text || ''}
           onChange={handleTextChange}
           onKeyDown={handleKeyDown}
-          inputProps={{ 'aria-label': `Additional ${fieldDef.label} search text` }}
+          slotProps={{
+            htmlInput: { 'aria-label': `Additional ${fieldDef.label} search text` },
+          }}
           sx={{ mt: 1 }}
         />
       )}

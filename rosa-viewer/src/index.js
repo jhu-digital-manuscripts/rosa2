@@ -1,11 +1,14 @@
 import Mirador from 'mirador';
+import { miradorImageToolsPlugin } from 'mirador-image-tools';
 import { jhsearchPlugin } from './plugins/jhsearch';
-import { rosaAnnotationsPlugin } from './plugins/annotations';
+import { rosaAnnotationsPlugin, openAnnotationsByDefault } from './plugins/annotations';
 import { rosaDescriptionPlugin } from './plugins/description';
 import { mergeConfig } from './config';
 
 /**
- * Initialize the Rosa Viewer with the JHSearch, RosaAnnotations and book description plugins.
+ * Initialize the Rosa Viewer with the JHSearch, RosaAnnotations, book description and
+ * mirador-image-tools plugins. New windows of books with annotations open with the
+ * sidebar showing the annotations panel.
  *
  * @param {Object} config - Configuration object
  * @param {Object} config.jhsearch - JHSearch plugin configuration
@@ -36,11 +39,16 @@ export function createViewer(config = {}) {
     console.error('rosa-viewer: jhsearch.collectionId is required');
   }
 
-  return Mirador.viewer(mergedConfig, [
+  const viewer = Mirador.viewer(mergedConfig, [
     ...jhsearchPlugin,
     ...rosaAnnotationsPlugin,
     ...rosaDescriptionPlugin,
+    ...miradorImageToolsPlugin,
   ]);
+  if (viewer?.store) {
+    openAnnotationsByDefault(viewer.store);
+  }
+  return viewer;
 }
 
 // Auto-initialize if configuration is provided on window object

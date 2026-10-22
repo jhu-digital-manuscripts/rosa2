@@ -20,6 +20,7 @@ export { sanitizeIiifHtml } from './utils/sanitize';
 export { parseAnnotation } from './utils/parse';
 export { groupAnnotations, PLACES, DLMM_KINDS } from './utils/group';
 export { addStylesheet } from './utils/stylesheet';
+export { openAnnotationsByDefault, manifestHasAnnotations } from './defaultPanel';
 
 const NO_IDS = [];
 

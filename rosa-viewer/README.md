@@ -13,6 +13,8 @@ Rosa Viewer provides:
 - An annotations panel that groups a page's annotations (AoR by place on the
   page, DLMM by kind) and styles them per collection
 - A book description panel for books whose manifest links a TEI description
+- Image tools (brightness, contrast, saturation, greyscale, invert, rotate, flip)
+  from [mirador-image-tools](https://github.com/ProjectMirador/mirador-image-tools)
 
 ## Prerequisites
 
@@ -94,6 +96,22 @@ the recipe's tag and attribute list (`src/plugins/annotations/utils/sanitize.js`
 The version is pinned to the one Mirador depends on. Mirador's build inlines its
 own copy, so the site bundle carries DOMPurify twice (about 25 kB). If a later
 Mirador version allows configuring its sanitizer, this dependency can go.
+
+New windows open with the sidebar closed. Once a window's manifest has loaded,
+`openAnnotationsByDefault()` (`src/plugins/annotations/defaultPanel.js`, started by
+`createViewer()`) opens its sidebar on the annotations panel if any canvas
+references an annotation page; rosa-tool only writes `canvas.annotations` for
+pages that have annotations. Books without annotations keep the sidebar closed.
+Each window is opened at most once, so a sidebar the user closes stays closed,
+and a panel the user picks before the manifest loads is kept.
+
+### Image tools
+
+`createViewer()` registers the
+[mirador-image-tools](https://github.com/ProjectMirador/mirador-image-tools)
+plugin and `src/config.js` sets `window.imageToolsEnabled: true`, so every window
+has an image tools toggle in its top bar menu. The tools start closed; set
+`window.imageToolsOpen: true` to show them on new windows.
 
 ### Book descriptions
 
@@ -350,6 +368,7 @@ to a release. See [`docs/deployment.md`](../docs/deployment.md).
 ## Dependencies
 
 - [Mirador](https://github.com/ProjectMirador/mirador) - IIIF viewer
+- [mirador-image-tools](https://github.com/ProjectMirador/mirador-image-tools) - Image manipulation tools (see [Image tools](#image-tools))
 - [DOMPurify](https://github.com/cure53/DOMPurify) - Annotation HTML sanitizing (see [Annotations](#annotations))
 - [React](https://reactjs.org/) - UI framework
 - [MUI](https://mui.com/) - Component library

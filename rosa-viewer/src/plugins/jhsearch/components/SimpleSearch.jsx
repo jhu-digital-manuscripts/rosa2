@@ -71,26 +71,28 @@ export function SimpleSearch() {
         onChange={handleInputChange}
         onKeyDown={handleKeyDown}
         aria-label="Search"
-        InputProps={{
-          startAdornment: (
-            <InputAdornment position="start">
-              <IconButton
-                size="small"
-                onClick={handleSubmit}
-                aria-label="Submit search"
-                edge="start"
-              >
-                <SearchIcon />
-              </IconButton>
-            </InputAdornment>
-          ),
-          endAdornment: inputValue ? (
-            <InputAdornment position="end">
-              <IconButton size="small" onClick={handleClear} aria-label="Clear search" edge="end">
-                <ClearIcon />
-              </IconButton>
-            </InputAdornment>
-          ) : null,
+        slotProps={{
+          input: {
+            startAdornment: (
+              <InputAdornment position="start">
+                <IconButton
+                  size="small"
+                  onClick={handleSubmit}
+                  aria-label="Submit search"
+                  edge="start"
+                >
+                  <SearchIcon />
+                </IconButton>
+              </InputAdornment>
+            ),
+            endAdornment: inputValue ? (
+              <InputAdornment position="end">
+                <IconButton size="small" onClick={handleClear} aria-label="Clear search" edge="end">
+                  <ClearIcon />
+                </IconButton>
+              </InputAdornment>
+            ) : null,
+          },
         }}
       />
     </form>

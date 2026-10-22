@@ -60,7 +60,7 @@ function FacetCategory({ category, values, selectedValues, onToggle }) {
           invisible={selectedCount === 0}
           sx={{ width: '100%' }}
         >
-          <Typography variant="body2" fontWeight="medium">
+          <Typography variant="body2" sx={{ fontWeight: 'medium' }}>
             {category.label}
           </Typography>
         </Badge>

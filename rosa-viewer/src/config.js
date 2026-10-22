@@ -40,6 +40,11 @@ export const defaultMiradorConfig = {
     allowFullscreen: true,
     allowMaximize: true,
     defaultView: 'single',
+    // The sidebar starts closed; it is opened on the annotations panel for books
+    // that have annotations (see plugins/annotations/defaultPanel.js)
+    sideBarOpen: false,
+    // mirador-image-tools: show the image tools toggle in the window menu
+    imageToolsEnabled: true,
     // Wider default, so annotations and descriptions are readable
     defaultSidebarPanelWidth: 470,
     panels: {

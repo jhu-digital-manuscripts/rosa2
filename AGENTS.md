@@ -22,7 +22,7 @@ rosa2/
 │       ├── opensearch/   Bulk-ingest document generation
 │       └── aor/          AoR statistics
 │   └── src/test/resources/archive/   Test fixture archive (rose, aor, dlmm, pizan)
-├── rosa-viewer/          Mirador 4 + React 18 + MUI 7, Vite 5, Vitest 2
+├── rosa-viewer/          Mirador 4 + React 18 + MUI 9, Vite 5, Vitest 2
 │   ├── .env              Committed local-dev defaults for VITE_ROSA_* (override in .env.local)
 │   ├── sites/            index.html chooser; aor/ and dlmm/ each: index.html, main.js (site definition), site.css, favicon
 │   ├── scripts/          build-sites.mjs (npm run build:sites), package-site.sh (viewer + IIIF -> tarball)

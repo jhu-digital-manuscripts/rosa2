@@ -44,7 +44,7 @@ export function HighlightedText({ html, field, lineClamp }) {
         }),
       }}
     >
-      <Typography component="span" variant="body2" fontWeight="bold" color="text.primary">
+      <Typography component="span" variant="body2" color="text.primary" sx={{ fontWeight: 'bold' }}>
         {formatFieldLabel(field)}:
       </Typography>{' '}
       <span dangerouslySetInnerHTML={{ __html: html }} />
