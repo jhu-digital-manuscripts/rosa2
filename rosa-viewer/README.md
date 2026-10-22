@@ -18,7 +18,7 @@ Rosa Viewer provides:
 
 ## Prerequisites
 
-- Node.js 20+
+- Node.js 22.12+
 - npm 9+
 
 ## Installation

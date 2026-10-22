@@ -12,7 +12,7 @@ Developers building the project and system administrators deploying the tools.
 
 - Java 25 or later (JDK)
 - Maven 3.9+
-- Node.js 20+
+- Node.js 22.12+
 - npm 9+
 - Access to the archive data directory
 - Opensearch 3.x cluster (for search functionality)
@@ -207,7 +207,7 @@ the Run workflow dialog.
 
 Runs on every pull request and on pushes to master:
 - Builds and tests rosa-tool (Java 25)
-- Lints, format-checks, tests and builds rosa-viewer (Node.js 20), including
+- Lints, format-checks, tests and builds rosa-viewer (Node.js 22), including
   both site builds
 
 ### deploy-stage.yml (Deploy Stage)

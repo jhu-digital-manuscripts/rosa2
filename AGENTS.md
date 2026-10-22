@@ -58,7 +58,7 @@ from `Release`, uploaded to WordPress portals). See `docs/deployment.md`.
 
 ## Prerequisites
 
-Java 25 JDK, Maven 3.9+, Node.js 20+ (CI uses 20), npm 9+, Docker with `docker compose`.
+Java 25 JDK, Maven 3.9+, Node.js 22.12+ (CI uses 22), npm 9+, Docker with `docker compose`.
 Deploying to AWS also needs OpenTofu ≥ 1.10, AWS CLI v2 and `jq`. Lambda tests need `python3`.
 
 ## Commands
