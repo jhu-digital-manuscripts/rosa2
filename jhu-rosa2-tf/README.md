@@ -334,8 +334,8 @@ tofu init -reconfigure -backend-config=stage.s3.tfbackend
 tofu apply -var-file=stage.tfvars          # creates the stack, 0 tasks
 
 cd ../rosa-image-server
-./build-and-push.sh --kakadu-zip /home/msp/work/kakadu/v8_6_1-02130L.zip --env stage --push
-# prints: image_server_image_tag = "5.0.7-<sha>"
+./build-and-push.sh --kakadu-zip /home/msp/work/kakadu/v8_7-02130L.zip --env stage --push
+# prints: image_server_image_tag = "5.0.8-<sha>"
 
 cd ../jhu-rosa2-tf
 # set image_server_image_tag in stage.tfvars

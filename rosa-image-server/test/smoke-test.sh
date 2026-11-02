@@ -5,9 +5,13 @@
 # Generates a JPEG 2000 test image with the image's own kdu_compress, serves it
 # with FilesystemSource under an identifier containing slashes, and checks the
 # IIIF Image API 2 and 3 endpoints, the legacy-path @id rewrite done by
-# delegates.rb, caching and CORS headers, and that Kakadu does the decoding.
+# delegates.rb, caching and CORS headers, that Kakadu does the decoding, and
+# that Cantaloupe writes its application log at all. With --s3 it also serves
+# the image from, and caches derivatives into, a local S3-compatible server
+# (SeaweedFS, pulled from Docker Hub), which exercises the AWS SDK S3 client
+# and its native CRT HTTP library the way the ECS deployment does.
 #
-# Usage: test/smoke-test.sh [--image IMAGE] [--port PORT] [--benchmark] [--keep]
+# Usage: test/smoke-test.sh [--image IMAGE] [--port PORT] [--s3] [--benchmark] [--keep]
 #
 # Exits non-zero if any check fails.
 
@@ -18,6 +22,8 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 IMAGE="rosa-image-server:$(sed -n 's/^ARG CANTALOUPE_VERSION=//p' "${SCRIPT_DIR}/../Dockerfile" | head -1)-$(git -C "${SCRIPT_DIR}" rev-parse --short=8 HEAD 2>/dev/null || echo dev)"
 PORT=18182
+S3=false
+S3_IMAGE="${S3_IMAGE:-docker.io/chrislusf/seaweedfs:latest}"
 BENCHMARK=false
 KEEP=false
 CONTAINER_CLI="${CONTAINER_CLI:-docker}"
@@ -27,10 +33,12 @@ BASE_URI="https://images.example.org"
 
 usage() {
   cat <<EOF
-Usage: $(basename "$0") [--image IMAGE] [--port PORT] [--benchmark] [--keep]
+Usage: $(basename "$0") [--image IMAGE] [--port PORT] [--s3] [--benchmark] [--keep]
 
   --image IMAGE   Image to test (default: ${IMAGE})
   --port PORT     Host port to publish Cantaloupe on (default: ${PORT})
+  --s3            Also test S3Source and S3Cache against a local SeaweedFS
+                  container (${S3_IMAGE}; override with S3_IMAGE)
   --benchmark     Also compare info.json latency with the delegate on and off
   --keep          After the checks, keep the server running until Ctrl-C and
                   print the environment for the CloudFront Function e2e test
@@ -45,6 +53,7 @@ while [[ $# -gt 0 ]]; do
   case "$1" in
     --image) require_value "$@"; IMAGE="$2"; shift 2 ;;
     --port) require_value "$@"; PORT="$2"; shift 2 ;;
+    --s3) S3=true; shift ;;
     --benchmark) BENCHMARK=true; shift ;;
     --keep) KEEP=true; shift ;;
     -h | --help) usage; exit 0 ;;
@@ -57,9 +66,13 @@ command -v python3 >/dev/null || { echo "python3 not found" >&2; exit 2; }
 
 WORK_DIR="$(mktemp -d "${TMPDIR:-/tmp}/rosa-smoke.XXXXXX")"
 CONTAINERS=()
+NETWORKS=()
 cleanup() {
   for c in "${CONTAINERS[@]}"; do
     "${CONTAINER_CLI}" rm -f "${c}" >/dev/null 2>&1 || true
+  done
+  for n in "${NETWORKS[@]}"; do
+    "${CONTAINER_CLI}" network rm "${n}" >/dev/null 2>&1 || true
   done
   rm -rf "${WORK_DIR}"
 }
@@ -138,6 +151,15 @@ if [[ -s "${WORK_DIR}/images/${ID_PATH}.jp2" && -s "${WORK_DIR}/images/${CROPPED
 else
   fail "kdu_compress produced the test JP2s"; exit 1
 fi
+# kdu_expand -v prints the core version and links libkdu_vNNR.so, so this also
+# proves that the Kakadu shared libraries resolve at runtime.
+KDU_VERSION="$("${CONTAINER_CLI}" run --rm --entrypoint kdu_expand "${IMAGE}" -v 2>&1 | grep -o 'v[0-9][0-9.]*' | head -1)"
+if [[ -n "${KDU_VERSION}" ]]; then
+  pass "kdu_expand -v reports Kakadu ${KDU_VERSION}"
+else
+  fail "kdu_expand -v reports Kakadu version"
+fi
+EXPECTED_CANTALOUPE="$(sed -n 's/^ARG CANTALOUPE_VERSION=//p' "${SCRIPT_DIR}/../Dockerfile" | head -1)"
 
 # ---------- Start Cantaloupe ----------
 
@@ -308,14 +330,104 @@ fetch "${URL}/iiif/2/${ID_ENC}/full/80,/0/default.jpg" -H 'X-Rosa-Legacy-Path: 1
 check_eq "image requests unaffected by marker" "${STATUS}" "200"
 
 echo
-echo "--- Codecs ---"
+echo "--- Logging and codecs ---"
 LOGS="$("${CONTAINER_CLI}" logs "${NAME}" 2>&1)"
+# Cantaloupe 5.0.8 as released attaches no log appender at all
+# (cantaloupe-project/cantaloupe#1007); the image patches logback.xml.
+check_contains "application log is written (Starting Cantaloupe ${EXPECTED_CANTALOUPE})" "${LOGS}" "Starting Cantaloupe ${EXPECTED_CANTALOUPE}"
 check_contains "KakaduNativeProcessor decodes JP2" "${LOGS}" "KakaduNativeProcessor"
 check_contains "TurboJPEG writes JPEG output" "${LOGS}" "TurboJPEGImageWriter"
 if grep -q "UnsatisfiedLinkError" <<<"${LOGS}"; then
   fail "no native library load errors" "$(grep -m1 UnsatisfiedLinkError <<<"${LOGS}")"
 else
   pass "no native library load errors"
+fi
+
+# ---------- Optional S3Source / S3Cache test ----------
+
+if [[ "${S3}" == true ]]; then
+  echo
+  echo "--- S3Source and S3Cache against SeaweedFS ---"
+  # Cantaloupe and SeaweedFS share a network so that the S3 endpoint has a
+  # stable name; the host reaches SeaweedFS through a published port to create
+  # the buckets, upload the source image and inspect the cache bucket. No
+  # identities are configured, so SeaweedFS accepts any credentials; the SDK
+  # still needs some, and a region.
+  S3_PORT=$((PORT + 3))
+  S3_NET="rosa-smoke-net-$$"
+  S3_NAME="${NAME}-s3"
+  S3_URL="http://127.0.0.1:${S3_PORT}"
+  SRC_BUCKET="rosa-source"
+  CACHE_BUCKET="rosa-cache"
+  "${CONTAINER_CLI}" network create "${S3_NET}" >/dev/null
+  NETWORKS+=("${S3_NET}")
+  "${CONTAINER_CLI}" run -d --name "${S3_NAME}" --network "${S3_NET}" \
+    -p "127.0.0.1:${S3_PORT}:8333" "${S3_IMAGE}" \
+    server -s3 -dir=/data -ip="${S3_NAME}" -ip.bind=0.0.0.0 -master.volumeSizeLimitMB=64 >/dev/null
+  CONTAINERS+=("${S3_NAME}")
+  S3_READY=false
+  for _ in $(seq 1 60); do
+    if curl -fsS -X PUT "${S3_URL}/${SRC_BUCKET}/" >/dev/null 2>&1 \
+      && curl -fsS -X PUT "${S3_URL}/${CACHE_BUCKET}/" >/dev/null 2>&1; then
+      S3_READY=true; break
+    fi
+    sleep 1
+  done
+  if [[ "${S3_READY}" == true ]]; then
+    pass "SeaweedFS started and buckets created"
+    curl -fsS -X PUT --data-binary "@${WORK_DIR}/images/${ID_PATH}.jp2" \
+      "${S3_URL}/${SRC_BUCKET}/${ID_PATH}.jp2" >/dev/null
+    S3_SERVER_PORT=$((PORT + 4))
+    if start_server "${NAME}-s3src" "${S3_SERVER_PORT}" --network "${S3_NET}" \
+        -e LOG_APPLICATION_LEVEL=debug \
+        -e SOURCE_STATIC=S3Source \
+        -e S3SOURCE_ENDPOINT="http://${S3_NAME}:8333" \
+        -e S3SOURCE_REGION=us-east-1 \
+        -e S3SOURCE_ACCESS_KEY_ID=smoke -e S3SOURCE_SECRET_KEY=smoke \
+        -e S3SOURCE_BASICLOOKUPSTRATEGY_BUCKET_NAME="${SRC_BUCKET}" \
+        -e S3SOURCE_BASICLOOKUPSTRATEGY_PATH_PREFIX= \
+        -e CACHE_SERVER_DERIVATIVE_ENABLED=true \
+        -e S3CACHE_ENDPOINT="http://${S3_NAME}:8333" \
+        -e S3CACHE_REGION=us-east-1 \
+        -e S3CACHE_ACCESS_KEY_ID=smoke -e S3CACHE_SECRET_KEY=smoke \
+        -e S3CACHE_BUCKET_NAME="${CACHE_BUCKET}"; then
+      pass "server with S3Source and S3Cache started"
+      S3_SERVER_URL="http://127.0.0.1:${S3_SERVER_PORT}"
+      fetch "${S3_SERVER_URL}/iiif/3/${ID_ENC}/info.json"
+      check_eq "S3Source v3 info.json status" "${STATUS}" "200"
+      check_eq "S3Source width/height" "$(json 'str(d["width"]) + "x" + str(d["height"])')" "${WIDTH}x${HEIGHT}"
+      fetch "${S3_SERVER_URL}/iiif/2/${ID_ENC}/0,0,1024,1024/512,/0/default.jpg"
+      check_eq "S3Source 512px tile status" "${STATUS}" "200"
+      check_eq "S3Source tile dimensions" "$(jpeg_size)" "512x512"
+      fetch "${S3_SERVER_URL}/iiif/2/rose%2FTest%2FMissing/info.json"
+      check_eq "S3Source missing object returns 404" "${STATUS}" "404"
+      # The derivative and the info are written to the cache bucket asynchronously.
+      CACHED=""
+      for _ in $(seq 1 20); do
+        CACHED="$(curl -fsS "${S3_URL}/${CACHE_BUCKET}/?prefix=cache/" 2>/dev/null | grep -o '<Key>[^<]*</Key>' | tr '\n' ' ')"
+        [[ "${CACHED}" == *"<Key>cache/image/"* && "${CACHED}" == *"<Key>cache/info/"* ]] && break
+        sleep 1
+      done
+      check_contains "S3Cache wrote the derivative image" "${CACHED}" "<Key>cache/image/"
+      check_contains "S3Cache wrote the info" "${CACHED}" "<Key>cache/info/"
+      # Second request for the same tile is served from the derivative cache.
+      fetch "${S3_SERVER_URL}/iiif/2/${ID_ENC}/0,0,1024,1024/512,/0/default.jpg"
+      check_eq "cached tile status" "${STATUS}" "200"
+      # On a hit S3Cache.newDerivativeImageInputStream() touches the object
+      # (touchAsync); on a miss it does not.
+      S3_LOGS="$("${CONTAINER_CLI}" logs "${NAME}-s3src" 2>&1)"
+      check_contains "S3Cache hit for the repeated tile" "${S3_LOGS}" "touchAsync(): cache/image/"
+      if grep -q -E "UnsatisfiedLinkError|CrtRuntimeException|Unable to load.*crt" <<<"${S3_LOGS}"; then
+        fail "AWS CRT native library loads" "$(grep -m1 -E "UnsatisfiedLinkError|CrtRuntimeException|Unable to load.*crt" <<<"${S3_LOGS}")"
+      else
+        pass "AWS CRT native library loads"
+      fi
+    else
+      fail "server with S3Source and S3Cache started"
+    fi
+  else
+    fail "SeaweedFS started and buckets created" "$("${CONTAINER_CLI}" logs "${S3_NAME}" 2>&1 | tail -5)"
+  fi
 fi
 
 # ---------- Optional benchmark ----------

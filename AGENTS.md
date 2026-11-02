@@ -164,7 +164,7 @@ image server (`modules/rosa2-image-server`: ECS Fargate behind CloudFront).
 ### rosa-image-server (run from `rosa-image-server/`)
 
 ```sh
-./build-and-push.sh --kakadu-zip /home/msp/work/kakadu/v8_6_1-02130L.zip      # build only
+./build-and-push.sh --kakadu-zip /home/msp/work/kakadu/v8_7-02130L.zip        # build only
 ./build-and-push.sh --kakadu-zip ... --env stage --push   # push to ECR; prints image_server_image_tag for tfvars
 test/smoke-test.sh [--image rosa-image-server:<tag>]      # local checks, no AWS
 node --test '../jhu-rosa2-tf/modules/rosa2-image-server/functions/test/*.test.mjs'   # CloudFront Function tests (glob form; a bare directory fails on Node 22)

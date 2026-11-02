@@ -68,8 +68,8 @@ Environment:
   KAKADU_ZIP                 Default for --kakadu-zip.
 
 Examples:
-  $(basename "$0") --kakadu-zip /home/msp/work/kakadu/v8_6_1-02130L.zip
-  $(basename "$0") --kakadu-zip /home/msp/work/kakadu/v8_6_1-02130L.zip --env stage --push
+  $(basename "$0") --kakadu-zip /home/msp/work/kakadu/v8_7-02130L.zip
+  $(basename "$0") --kakadu-zip /home/msp/work/kakadu/v8_7-02130L.zip --env stage --push
 
 Pushing needs AWS credentials (aws sso login; export AWS_PROFILE=...). Tags are
 immutable in ECR, so pushing an existing tag fails before anything is uploaded.

@@ -1,8 +1,9 @@
 ##
-# Rosa delegate script for Cantaloupe 5.0.7.
+# Rosa delegate script for Cantaloupe 5.0.8.
 #
-# Derived from delegates.rb.sample (Cantaloupe 5.0.7). Every method is the
-# upstream pass-through stub except extra_iiif2_information_response_keys,
+# Derived from delegates.rb.sample (Cantaloupe 5.0.8, which is unchanged
+# since 5.0.7). Every method is the upstream pass-through stub except
+# extra_iiif2_information_response_keys,
 # marked "ROSA:", which supports the legacy /iiif/<id> URL form:
 #
 #   1. CloudFront's legacy-request function rewrites /iiif/<id>/... to

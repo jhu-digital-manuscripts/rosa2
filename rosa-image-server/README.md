@@ -20,27 +20,27 @@ The server listens on port **8182** and runs as the non-root `cantaloupe` system
 ## Prerequisites
 
 - Docker or Podman
-- A **commercial Kakadu license**. The Kakadu binaries bundled with Cantaloupe releases are built under a Public Service License that forbids commercial use, so this image discards them and compiles your licensed distribution instead.
+- A **commercial Kakadu license**. The Kakadu binaries bundled with Cantaloupe releases are built under a Kakadu Evaluation License that forbids commercial use, so this image discards them and compiles your licensed distribution instead.
 - The Kakadu distribution ZIP, anywhere on disk. It is passed to the build as a named build context, so it never needs to be copied into the repository. (Copying it into this directory also still works; `.gitignore` excludes `*.zip` so the licensed source is never committed.)
 
 ## Building
 
 ```sh
-./build-and-push.sh --kakadu-zip /home/msp/work/kakadu/v8_6_1-02130L.zip
+./build-and-push.sh --kakadu-zip /home/msp/work/kakadu/v8_7-02130L.zip
 ```
 
-This builds `rosa-image-server:<cantaloupe-version>-<git-sha>` (for example `rosa-image-server:5.0.7-c1caaa2d`) for `linux/amd64`. It refuses to build from uncommitted changes in this directory, so that a tag always identifies a commit; pass `--allow-dirty` while developing, and the tag then ends in `-dirty`. `--tag` only renames the image and does not lift that check. Do not deploy a `-dirty` tag: it cannot be traced back to a commit. Run `./build-and-push.sh --help` for every option. Docker and Podman both work (`CONTAINER_CLI=podman`).
+This builds `rosa-image-server:<cantaloupe-version>-<git-sha>` (for example `rosa-image-server:5.0.8-c1caaa2d`) for `linux/amd64`. It refuses to build from uncommitted changes in this directory, so that a tag always identifies a commit; pass `--allow-dirty` while developing, and the tag then ends in `-dirty`. `--tag` only renames the image and does not lift that check. Do not deploy a `-dirty` tag: it cannot be traced back to a commit. Run `./build-and-push.sh --help` for every option. Docker and Podman both work (`CONTAINER_CLI=podman`).
 
 The build compiles Kakadu and libjpeg-turbo from source and downloads the Cantaloupe release, so expect roughly 2–3 minutes on a cold cache and outbound network access to GitHub. Both downloads are verified against the SHA-256 values recorded in the Dockerfile, and the base image is pinned by digest, so a rebuild of the same commit produces the same inputs.
 
 The script runs the equivalent of:
 
 ```sh
-docker build --platform linux/amd64 -t rosa-image-server:5.0.7-<git-sha> \
+docker build --platform linux/amd64 -t rosa-image-server:5.0.8-<git-sha> \
   --build-context kakadu_src=/dir/containing/the/zip \
-  --build-arg KAKADU_ZIP=v8_6_1-02130L.zip \
+  --build-arg KAKADU_ZIP=v8_7-02130L.zip \
   --build-arg KAKADU_PLATFORM=Linux-x86-64-gcc \
-  --build-arg CANTALOUPE_VERSION=5.0.7 .
+  --build-arg CANTALOUPE_VERSION=5.0.8 .
 ```
 
 `.dockerignore` keeps ZIPs, an unpacked Kakadu tree and the tests out of the build context.
@@ -51,7 +51,7 @@ docker build --platform linux/amd64 -t rosa-image-server:5.0.7-<git-sha> \
 
 ```sh
 aws sso login --profile <profile> && export AWS_PROFILE=<profile>
-./build-and-push.sh --kakadu-zip /home/msp/work/kakadu/v8_6_1-02130L.zip --env stage --push
+./build-and-push.sh --kakadu-zip /home/msp/work/kakadu/v8_7-02130L.zip --env stage --push
 ```
 
 This pushes to the environment's ECR repository, `<account>.dkr.ecr.us-east-1.amazonaws.com/<name_prefix>-image-server`, which [jhu-rosa2-tf](../jhu-rosa2-tf/README.md#image-server) creates. Tags are immutable there, so the script checks first and fails if the tag already exists. The push does not deploy anything: it prints the `image_server_image_tag` line to put into `jhu-rosa2-tf/<env>.tfvars`, and `tofu apply` rolls the service onto it. `--dry-run` shows the commands without running them.
@@ -60,15 +60,15 @@ This pushes to the environment's ECR repository, `<account>.dkr.ecr.us-east-1.am
 
 | Argument | Default | Description |
 |----------|---------|-------------|
-| `KAKADU_ZIP` | `v8_6_1-02130L.zip` | Kakadu distribution ZIP, as a path relative to this directory. The archive's single top-level directory is detected automatically, so the version-specific name does not matter. |
+| `KAKADU_ZIP` | `v8_7-02130L.zip` | Kakadu distribution ZIP, as a path relative to this directory. The archive's single top-level directory is detected automatically, so the name does not matter, but the Kakadu *version* does: it must be the one whose JNI bindings the Cantaloupe release bundles (8.7 for 5.0.8). See [Upgrading Cantaloupe or Kakadu](#upgrading-cantaloupe-or-kakadu). |
 | `KAKADU_PLATFORM` | `Linux-x86-64-gcc` | Which Kakadu makefile to use. `build-and-push.sh` derives it from `--platform` (`linux/arm64` gives `Linux-arm-64-gcc`, for a Graviton image built on or emulating that architecture) or takes `--kakadu-platform`. The ECS task definition is `X86_64`, so an arm64 image also needs `ecs.tf` changed. |
-| `CANTALOUPE_VERSION` | `5.0.7` | Release to install, set once at the top of the Dockerfile; `build-and-push.sh` reads that line for its default tag. The build downloads `cantaloupe-<VERSION>.zip` from the `v<VERSION>` GitHub release tag, checks it against `CANTALOUPE_SHA256`, and keeps only `cantaloupe-<VERSION>.jar`. Changing the version means changing the checksum too. |
-| `CANTALOUPE_SHA256` | checksum of the 5.0.7 ZIP | SHA-256 the downloaded release ZIP must match. |
+| `CANTALOUPE_VERSION` | `5.0.8` | Release to install, set once at the top of the Dockerfile; `build-and-push.sh` reads that line for its default tag. The build downloads `cantaloupe-<VERSION>.zip` from the `v<VERSION>` GitHub release tag, checks it against `CANTALOUPE_SHA256`, and keeps only `cantaloupe-<VERSION>.jar`. Changing the version means changing the checksum too. |
+| `CANTALOUPE_SHA256` | checksum of the 5.0.8 ZIP | SHA-256 the downloaded release ZIP must match. |
 | `LIBJPEG_TURBO_VERSION` | `2.0.2` | The version the Cantaloupe manual specifies. Other 2.0.x releases may work but are untested here. **Do not use 3.x**: its TurboJPEG Java API differs from the classes vendored in the Cantaloupe jar. |
 | `LIBJPEG_TURBO_SHA256` | checksum of the 2.0.2 tag archive | SHA-256 the downloaded source tarball must match. |
 | `JAVA_IMAGE` | `amazoncorretto:25-al2023-jdk@sha256:…` | Base image for every stage, pinned to the tag's multi-arch index digest; the Dockerfile comment shows how to look up a newer digest. Must be a JDK, not a JRE: the Kakadu JNI binding compiles against `$JAVA_HOME/include/jni.h`. |
 
-The build fails fast rather than producing a subtly broken image: it asserts that `libkdu_jni.so` and `kdu_expand` were produced, that `libturbojpeg.so` exports its JNI symbols, and that the `kdu_*` tools resolve their shared libraries.
+The build fails fast rather than producing a subtly broken image: it asserts that `libkdu_jni.so` and `kdu_expand` were produced, that `libturbojpeg.so` exports its JNI symbols, that the `kdu_*` tools resolve their shared libraries, and that the jar's `logback.xml` was replaced (see stage 3 below).
 
 ### Build stages
 
@@ -77,14 +77,14 @@ The build is multi-stage so that no compiler, no source tree, and in particular 
 0. **kakadu_src** — the Kakadu ZIP, from this directory unless `--build-context kakadu_src=<dir>` overrides it.
 1. **kakadu** — unpacks the ZIP and runs `make -f Makefile-Linux-x86-64-gcc`, producing the JNI binding, the shared libraries, and the command-line tools. The makefiles compile with `-O2 -msse2` and gate the SSSE3/SSE4/AVX/AVX2 code paths behind runtime CPUID checks, so the result runs on any x86-64 host.
 2. **turbojpeg** — builds libjpeg-turbo with Java support. Distribution packages omit it, and without it Cantaloupe silently falls back to the slower Image I/O JPEG writer.
-3. **cantaloupe** — downloads the release ZIP and extracts the jar.
+3. **cantaloupe** — downloads the release ZIP, extracts the jar, and replaces the jar's `logback.xml` with the `logback.xml` in this directory. The 5.0.8 release ships `<if condition="...">` blocks in the Janino syntax that logback 1.5.37 removed; with the logback 1.6.3 bundled in 5.0.8 every condition is false, no appender is attached, and the server runs without logging anything ([cantaloupe#1007](https://github.com/cantaloupe-project/cantaloupe/issues/1007)). The replacement is the upstream fix ([PR #1008](https://github.com/cantaloupe-project/cantaloupe/pull/1008), merged for 5.0.9), identical apart from a header comment. It has to go into the jar because Cantaloupe's `LoggerUtil` reloads the classpath resource and ignores `-Dlogback.configurationFile`. The step is guarded by the version, so bumping `CANTALOUPE_VERSION` fails the build until the patch is re-evaluated or removed.
 4. **runtime** — assembles the above, plus the configuration file, the delegate script, and a non-root user.
 
 ## Testing
 
 ```sh
 test/smoke-test.sh                       # against the tag build-and-push.sh gives the current checkout
-test/smoke-test.sh --image rosa-image-server:5.0.7-c1caaa2d --benchmark
+test/smoke-test.sh --image rosa-image-server:5.0.8-c1caaa2d --s3 --benchmark
 ```
 
 No AWS access is needed. The script makes JPEG 2000 test images with the image's own `kdu_compress`, serves them with `FilesystemSource` under the identifiers `rose/Test/Test.001r` and `rose/Test/cropped/Test.001r` (the form rosa-tool uses for books with cropped images), and prints PASS/FAIL for each check:
@@ -93,7 +93,9 @@ No AWS access is needed. The script makes JPEG 2000 test images with the image's
 - `%2F`-encoded identifiers, the cropped identifier, the CORS header, `Cache-Control` with `max-age` and `s-maxage`, and `no-cache` on 404s
 - the legacy `@id` rewrite with and without the marker header (see below), and that the v3 endpoint and image requests ignore it
 - `max_pixels`, on a second server started with `MAX_PIXELS` below the test image's area: `info.json` advertises it as `maxArea`, a v2 `full/full` is refused with 403, and a v3 `full/max` is scaled down to fit
-- that `KakaduNativeProcessor` decodes and `TurboJPEGImageWriter` encodes, with no native library errors
+- that `kdu_expand -v` runs (and which Kakadu version it reports), that the application log is written at all (`Starting Cantaloupe <version>`: 5.0.8 as released logs nothing, see the build stages above), and that `KakaduNativeProcessor` decodes and `TurboJPEGImageWriter` encodes, with no native library errors
+
+`--s3` additionally starts a SeaweedFS container (`docker.io/chrislusf/seaweedfs`, override with `S3_IMAGE`) on a private network, uploads the test image to it, and runs a third server with `S3Source` and `S3Cache` pointed at it: `info.json` and a tile are served from the bucket, a missing object gives 404, the derivative and info appear in the cache bucket, the repeated tile is a cache hit, and the AWS SDK's native CRT HTTP library (new in 5.0.8, which switched to the asynchronous S3 client) loads. The default run stays on `FilesystemSource` so that it needs no second image.
 
 `--benchmark` compares `info.json` latency with the delegate script on and off. The difference is within noise, at about 2–3 ms median for each. `--keep` leaves the server running for the CloudFront Function end-to-end test in `jhu-rosa2-tf/modules/rosa2-image-server/functions/test/`.
 
@@ -112,7 +114,7 @@ docker run --rm -p 8182:8182 \
   -e S3SOURCE_BASICLOOKUPSTRATEGY_PATH_PREFIX=iiifstore/ \
   -e CACHE_SERVER_DERIVATIVE_ENABLED=false \
   -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN \
-  rosa-image-server:5.0.7-c1caaa2d
+  rosa-image-server:5.0.8-c1caaa2d
 ```
 
 Credentials come from the default AWS SDK chain: exported keys (as here) or a mounted `~/.aws` locally, and the task role in ECS.
@@ -125,7 +127,7 @@ docker run --rm -p 8182:8182 -v /path/to/jp2s:/images:ro \
   -e FILESYSTEMSOURCE_BASICLOOKUPSTRATEGY_PATH_PREFIX=/images/ \
   -e FILESYSTEMSOURCE_BASICLOOKUPSTRATEGY_PATH_SUFFIX=.jp2 \
   -e CACHE_SERVER_DERIVATIVE_ENABLED=false \
-  rosa-image-server:5.0.7-c1caaa2d
+  rosa-image-server:5.0.8-c1caaa2d
 ```
 
 Then:
@@ -188,7 +190,7 @@ Any other key can be set per environment through `image_server_extra_environment
 
 ## Configuring cantaloupe.properties
 
-`cantaloupe.properties` is a copy of the `cantaloupe.properties.sample` shipped with Cantaloupe 5.0.7, so every key the application knows about is present with its upstream comments. Values changed for this deployment are marked with a `ROSA:` comment explaining the reasoning — search for `ROSA:` to review all of them.
+`cantaloupe.properties` is a copy of the `cantaloupe.properties.sample` shipped with Cantaloupe 5.0.8, so every key the application knows about is present with its upstream comments. Values changed for this deployment are marked with a `ROSA:` comment explaining the reasoning — search for `ROSA:` to review all of them.
 
 Edit the file and rebuild the image for changes that apply to every environment; use environment variables for anything that differs between environments.
 
@@ -206,7 +208,7 @@ Edit the file and rebuild the image for changes that apply to every environment;
 
 `resolve_first = false` skips an S3 existence check on every cache hit, which is safe because source objects are static. If an object is replaced without its identifier changing, purge its derivatives from the cache bucket and create a CloudFront invalidation.
 
-The cache worker is **disabled**: the manual advises running it on only one node in a cluster, which ECS cannot express cleanly. It is also broken with `S3Cache` in 5.0.7: the purge pages with ListObjects v1 using `nextMarker`, which S3 returns only when a delimiter is set, so once the prefix holds more than 1000 objects it re-lists the first page forever (on stage, about 5 LIST requests a second and a fifth of a vCPU). The cache bucket's lifecycle rule expires the prefix instead, after the same TTL Cantaloupe is given.
+The cache worker is **disabled**: the manual advises running it on only one node in a cluster, which ECS cannot express cleanly. It is also broken with `S3Cache` in 5.0.7 and 5.0.8: the purge (`S3Utils.walkObjects`) pages with ListObjects v1 using `nextMarker`, which S3 returns only when a delimiter is set, so once the prefix holds more than 1000 objects it re-lists the first page forever (on stage, about 5 LIST requests a second and a fifth of a vCPU). The cache bucket's lifecycle rule expires the prefix instead, after the same TTL Cantaloupe is given.
 
 **Endpoints.** IIIF Image API 2 and 3 are enabled, API 1 is not. The Control Panel (`/admin`) and the administrative HTTP API are disabled; if you enable either, supply a secret from Secrets Manager and keep the paths off the public load balancer.
 
@@ -216,7 +218,7 @@ The cache worker is **disabled**: the manual advises running it on only one node
 
 **Error responses.** Cantaloupe's error bodies are plain text and include the message of the underlying exception. For a missing object that message names the S3 bucket and key, and `print_stack_trace_on_error_pages = false` only suppresses the stack trace, not the message; Cantaloupe 5 has no setting to replace the body. Identifiers with `.` or `..` path segments, which would make S3 reject the key and surface a 500 with the SDK's message, are refused at the edge by the legacy viewer-request function; the `/iiif/2` and `/iiif/3` behaviours run no function and still pass them to the origin (see the tf README).
 
-**Logging.** Console only, at `info`, for the ECS log driver to forward to CloudWatch. All file appenders are off, since task storage is ephemeral. Set `LOG_APPLICATION_LEVEL=debug` temporarily to see which processor and image writer handled each request. The access log is off to limit CloudWatch volume; enable it with `LOG_ACCESS_CONSOLEAPPENDER_ENABLED=true`.
+**Logging.** Console only, at `info`, for the ECS log driver to forward to CloudWatch. (This depends on the `logback.xml` patch described under [Build stages](#build-stages); without it 5.0.8 logs nothing.) All file appenders are off, since task storage is ephemeral. Set `LOG_APPLICATION_LEVEL=debug` temporarily to see which processor and image writer handled each request. The access log is off to limit CloudWatch volume; enable it with `LOG_ACCESS_CONSOLEAPPENDER_ENABLED=true`.
 
 ### Reverse proxy
 
@@ -237,6 +239,23 @@ Cantaloupe always builds Image API 2 URLs as `<base_uri>/iiif/2/<id>`, and the `
 | CloudFront viewer-response function (`legacy-response.js`) | Rewrites `/iiif/2/` to `/iiif/` in `Location` and `Link` (the delegate cannot reach headers) |
 
 Only `info.json` differs between the two forms, so tiles requested either way share one CloudFront cache entry. The marker header is stripped from client requests at the edge and is not forwarded at all on `/iiif/2` and `/iiif/3`, so it cannot be used to change cached responses for the new paths. Without the header, the delegate changes nothing, so local runs and `/iiif/2` behave exactly as stock Cantaloupe.
+
+## Upgrading Cantaloupe or Kakadu
+
+The two versions are coupled. The Cantaloupe jar bundles the `kdu_jni` Java classes that Kakadu's `kdu_hyperdoc` generates from one specific Kakadu release, and the `libkdu_jni.so` built in stage 1 must implement exactly those native methods. 5.0.7 bundled the 8.4 bindings, 5.0.8 bundles 8.7, and several native signatures changed in between (for example `Kdu_block_decoder.Decode` gained a `boolean` parameter and a return value, and `Kdu_global.Kdu_core_sample_alignment_checker` an argument). Because JNI resolves non-overloaded methods by name alone, a mismatch is not a clean `UnsatisfiedLinkError` but undefined behaviour at decode time. When either version moves:
+
+1. Read the release notes and diff the upstream tags; `git diff v5.0.7 v5.0.8 -- src/main/java/kdu_jni` shows whether the bindings changed, and `dist/deps/README.md` which Kakadu release built the bundled binaries.
+2. Build the Kakadu stage on its own and compare the Java sources it generates with the ones in the Cantaloupe source tree at the release tag. They should be identical:
+
+   ```sh
+   docker build --platform linux/amd64 --target kakadu -t rosa-kakadu-check \
+     --build-context kakadu_src=/dir/containing/the/zip --build-arg KAKADU_ZIP=v8_7-02130L.zip .
+   docker run --rm -v "$PWD/kdu_jni-generated:/out:z" rosa-kakadu-check sh -c 'cp /build/java/kdu_jni/*.java /out/'
+   git -C /path/to/cantaloupe-clone diff --no-index --stat src/main/java/kdu_jni "$PWD/kdu_jni-generated"
+   ```
+
+3. Update `CANTALOUPE_VERSION`, `CANTALOUPE_SHA256` (`sha256sum` of the release ZIP) and `KAKADU_ZIP` in the Dockerfile, the examples in `build-and-push.sh`, this README and `docs/deployment.md`, the headers of `cantaloupe.properties` and `delegates.rb`, and diff the new `cantaloupe.properties.sample` and `delegates.rb.sample` against ours for new or removed keys and methods.
+4. Re-evaluate the `logback.xml` patch (the build fails on a new version until you do), then build and run `test/smoke-test.sh --s3`.
 
 ## IAM
 

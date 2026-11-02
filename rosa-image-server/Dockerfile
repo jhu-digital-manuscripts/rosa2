@@ -16,12 +16,12 @@
 # The final, unnamed stage assembles them into the runtime image.
 #
 # Build (preferred; see build-and-push.sh):
-#   ./build-and-push.sh --kakadu-zip /path/to/v8_6_1-02130L.zip
+#   ./build-and-push.sh --kakadu-zip /path/to/v8_7-02130L.zip
 #
 # which runs the equivalent of:
-#   docker build --platform linux/amd64 -t rosa-image-server:5.0.7 \
+#   docker build --platform linux/amd64 -t rosa-image-server:5.0.8 \
 #     --build-context kakadu_src=/dir/containing/zip \
-#     --build-arg KAKADU_ZIP=v8_6_1-02130L.zip .
+#     --build-arg KAKADU_ZIP=v8_7-02130L.zip .
 #
 # The named build context "kakadu_src" replaces the stage of the same name
 # below, so the licensed ZIP never has to be copied into this repository.
@@ -36,15 +36,23 @@
 #     https://registry-1.docker.io/v2/library/amazoncorretto/manifests/25-al2023-jdk | grep -i docker-content-digest
 # (or `docker buildx imagetools inspect amazoncorretto:25-al2023-jdk`).
 ARG JAVA_IMAGE=amazoncorretto:25-al2023-jdk@sha256:8806f69d6997672a37569da54378d13ff2cd613f9abb151c493f5a359a0a8676
-ARG KAKADU_ZIP=v8_6_1-02130L.zip
+# The Kakadu version is tied to the Cantaloupe version: the jar bundles the
+# kdu_jni Java classes that kdu_hyperdoc generates from one particular Kakadu
+# release, and libkdu_jni.so built here must implement exactly those native
+# signatures. 5.0.8 bundles the 8.7 bindings (5.0.7 had 8.4; several native
+# method signatures changed in between). A mismatch is not a clean
+# UnsatisfiedLinkError but undefined behaviour at decode time, so check the
+# bindings whenever either version moves (README, "Upgrading Cantaloupe or
+# Kakadu").
+ARG KAKADU_ZIP=v8_7-02130L.zip
 
 # Cantaloupe release. This is the single place the version is set; the
 # runtime stage re-declares the ARG without a default so it inherits this
 # value, and build-and-push.sh reads this line for its default tag.
-ARG CANTALOUPE_VERSION=5.0.7
+ARG CANTALOUPE_VERSION=5.0.8
 # SHA-256 of cantaloupe-${CANTALOUPE_VERSION}.zip. Update together with the
 # version: `curl -fsSL -o c.zip <release url> && sha256sum c.zip`.
-ARG CANTALOUPE_SHA256=741ddee3f5284b179cd2555dc545a8afcb02534f03896cfa9235249fd66b0665
+ARG CANTALOUPE_SHA256=092df7bd53c3dc56af4610ef9c2d258e836438f7a00718b1ac3705ab29252291
 
 # libjpeg-turbo source tarball (GitHub tag archive) and its SHA-256.
 # The Cantaloupe manual specifies 2.0.2; later 2.0.x releases may work but
@@ -147,9 +155,19 @@ RUN curl -fsSL -o libjpeg-turbo.tar.gz \
 # Stage 3: Cantaloupe release jar
 #
 # Only the jar is kept. The rest of the release ZIP is discarded on purpose:
-# its deps/ directory contains Kakadu binaries built under a Kakadu Public
-# Service License that "may not be used commercially", and they would shadow
-# the licensed build from stage 1.
+# its deps/ directory contains Kakadu binaries built under a Kakadu Evaluation
+# License that forbids commercial use, and they would shadow the licensed
+# build from stage 1.
+#
+# The jar's logback.xml is then replaced (see logback.xml in this directory):
+# the 5.0.8 release ships <if condition="..."> blocks in the Janino syntax
+# that logback 1.5.37 removed, so with the bundled logback 1.6.3 no appender
+# is ever attached and the server logs nothing at all
+# (cantaloupe-project/cantaloupe#1007). Cantaloupe's LoggerUtil reloads the
+# classpath resource and ignores -Dlogback.configurationFile, hence the jar
+# is patched rather than the JVM command line. The version guard makes a
+# Cantaloupe upgrade fail here on purpose, so that the patch is re-evaluated
+# and dropped once the release contains the fix (merged for 5.0.9).
 ###############################################################################
 FROM ${JAVA_IMAGE} AS cantaloupe
 
@@ -169,6 +187,17 @@ RUN curl -fsSL -o cantaloupe.zip \
  && cp "$(find unpacked -name cantaloupe-${CANTALOUPE_VERSION}.jar -type f | head -1)" \
        /cantaloupe/cantaloupe.jar \
  && rm -rf unpacked cantaloupe.zip
+
+COPY logback.xml /build/patch/logback.xml
+RUN if [ "${CANTALOUPE_VERSION}" = "5.0.8" ]; then \
+      jar uf /cantaloupe/cantaloupe.jar -C /build/patch logback.xml \
+      && test "$(unzip -p /cantaloupe/cantaloupe.jar logback.xml | sha256sum)" \
+            = "$(sha256sum < /build/patch/logback.xml)"; \
+    else \
+      echo "The logback.xml patch targets Cantaloupe 5.0.8. Check whether ${CANTALOUPE_VERSION}" >&2; \
+      echo "still needs it (cantaloupe-project/cantaloupe#1007) and update or remove this step." >&2; \
+      exit 1; \
+    fi
 
 ###############################################################################
 # Runtime image

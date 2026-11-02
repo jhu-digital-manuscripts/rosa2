@@ -387,7 +387,7 @@ tfvars as search. Both stage and prod are HTTPS: stage on its generated
 ```bash
 # Build the image and push it to the environment's ECR repository
 cd rosa-image-server
-./build-and-push.sh --kakadu-zip /path/to/v8_6_1-02130L.zip --env stage --push
+./build-and-push.sh --kakadu-zip /path/to/v8_7-02130L.zip --env stage --push
 
 # Deploy it: set the printed image_server_image_tag in stage.tfvars, then
 cd ../jhu-rosa2-tf
