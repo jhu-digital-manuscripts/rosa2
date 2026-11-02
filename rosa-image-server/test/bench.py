@@ -69,8 +69,8 @@ def tiles_for_level(width, height, scale, shift=0, limit=None):
     return out
 
 
-def scenario_urls(name, base, identifier, width, height, round_no, unique):
-    k = round_no if unique else 0
+def scenario_urls(name, base, identifier, width, height, round_no, unique, offset=0):
+    k = round_no + offset if unique else 0
     if name == "info":
         return [f"{base}/{enc(identifier)}/info.json" + (f"?r={k}" if unique else "")]
     if name == "thumbs":
@@ -146,6 +146,8 @@ def main():
     ap.add_argument("--concurrency", type=int, default=4)
     ap.add_argument("--rounds", type=int, default=3)
     ap.add_argument("--unique", action="store_true", help="shift regions per round to defeat caches")
+    ap.add_argument("--shift-offset", type=int, default=0,
+                    help="added to the per-round shift, so a repeat of a --unique run is itself uncached")
     ap.add_argument("--warmup", action="store_true", help="fetch each info.json once before timing")
     ap.add_argument("--label", default="")
     ap.add_argument("--json", help="write per-scenario summaries to this file")
@@ -165,6 +167,7 @@ def main():
         server = r.headers.get("x-powered-by", "")
     print(f"# {args.label or base}: {len(args.ids)} ids, concurrency {args.concurrency}, "
           f"rounds {args.rounds}{', unique regions' if args.unique else ''}"
+          f"{' (offset ' + str(args.shift_offset) + ')' if args.shift_offset else ''}"
           f"{', server ' + server if server else ''}")
 
     out = {"label": args.label, "base": base, "concurrency": args.concurrency,
@@ -177,7 +180,8 @@ def main():
             for round_no in range(1, args.rounds + 1):
                 for identifier in args.ids:
                     w, h = dims[identifier]
-                    urls.extend(scenario_urls(name, base, identifier, w, h, round_no, args.unique))
+                    urls.extend(scenario_urls(name, base, identifier, w, h, round_no, args.unique,
+                                              args.shift_offset))
             t0 = time.perf_counter()
             results = list(pool.map(lambda u: fetch(client, u), urls))
             summary = summarize(results, time.perf_counter() - t0)
