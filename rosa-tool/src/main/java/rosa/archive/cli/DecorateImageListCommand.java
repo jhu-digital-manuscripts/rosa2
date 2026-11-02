@@ -1,11 +1,10 @@
 package rosa.archive.cli;
 
 import picocli.CommandLine.Command;
+import picocli.CommandLine.Mixin;
 import picocli.CommandLine.Option;
 import rosa.archive.core.ImageListDecorator;
 
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Callable;
@@ -20,12 +19,12 @@ import java.util.concurrent.Callable;
  * a corresponding transcription file are marked as auto-generated.</p>
  */
 @Command(name = "decorate-image-list",
-         mixinStandardHelpOptions = true,
+         mixinStandardHelpOptions = true, versionProvider = VersionProvider.class,
          description = "Copy page labels from AoR transcriptions to image list CSV")
 public final class DecorateImageListCommand implements Callable<Integer> {
 
-    @Option(names = "--archive", required = true, description = "Path to archive directory")
-    private Path archivePath;
+    @Mixin
+    private ArchiveOptions archive;
 
     @Option(names = "--collection", required = true, description = "Collection ID")
     private String collectionId;
@@ -40,12 +39,11 @@ public final class DecorateImageListCommand implements Callable<Integer> {
      */
     @Override
     public Integer call() {
-        if (!Files.isDirectory(archivePath)) {
-            System.err.println("Error: archive path does not exist or is not a directory: " + archivePath);
+        if (!archive.exists()) {
             return 1;
         }
 
-        var decorator = new ImageListDecorator(archivePath);
+        var decorator = new ImageListDecorator(archive.path());
         List<String> errors = new ArrayList<>();
 
         if (bookId != null) {

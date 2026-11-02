@@ -53,6 +53,8 @@ export const jhsearchTranslations = {
     resultsCount_plural: '{{count}} results',
     noResults: 'No results found',
     noResultsDescription: 'Try adjusting your search terms or filters',
+    resultsLimited:
+      'Only the first {{limit}} results can be viewed. Narrow the search to see others.',
     loading: 'Loading...',
     loadingResults: 'Searching...',
 
@@ -125,6 +127,8 @@ export const jhsearchTranslations = {
     resultsCount_plural: '{{count}} résultats',
     noResults: 'Aucun résultat trouvé',
     noResultsDescription: 'Essayez de modifier vos termes de recherche ou vos filtres',
+    resultsLimited:
+      'Seuls les {{limit}} premiers résultats peuvent être affichés. Affinez la recherche pour voir les autres.',
     loading: 'Chargement...',
     loadingResults: 'Recherche en cours...',
     page: 'Page',
@@ -189,6 +193,8 @@ export const jhsearchTranslations = {
     resultsCount_plural: '{{count}} Ergebnisse',
     noResults: 'Keine Ergebnisse gefunden',
     noResultsDescription: 'Versuchen Sie, Ihre Suchbegriffe oder Filter anzupassen',
+    resultsLimited:
+      'Nur die ersten {{limit}} Ergebnisse können angezeigt werden. Grenzen Sie die Suche ein, um weitere zu sehen.',
     loading: 'Wird geladen...',
     loadingResults: 'Suche läuft...',
     page: 'Seite',

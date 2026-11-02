@@ -11,8 +11,7 @@ pieces for rosa2 search.
 | `opensearch/canvas.json` | Index definition: one document per page, annotations merged in. |
 | `opensearch/latin-stemmer-rules.txt` | 29,760 lemmatization rules for the `stemmer_override` filter. |
 | `opensearch/latin-charmap.txt` | Character normalization: v/u, j/i, ligatures, long s. |
-| `opensearch/latin-stopwords.txt` | Stop words for the fallback analyzer configuration. |
-| `opensearch/generate_latin_stemmer_rules.py` | Regenerates the rules file from the lemma table. |
+| `opensearch/generate_latin_stemmer_rules.py` | Regenerates the rules file from the lemma table (not in the repo, see below). |
 | `opensearch/LATIN-ANALYZER.md` | How the Latin analyzers work and how to deploy them. |
 | `lambda/search_proxy/` | Validates and SigV4-signs browser queries. |
 | `lambda/admin/` | Creates indexes and ingests bulk data from inside the VPC. |
@@ -48,7 +47,14 @@ What it does:
 4. Stages the definitions and bulk files in S3.
 5. Drops and recreates `manifest` and `canvas`, prompting first.
 6. Ingests the bulk data, resuming across invocations as needed.
-7. Verifies the document counts and that the Latin analyzer lemmatizes.
+7. Verifies that each index holds exactly the number of documents in the bulk
+   files and that the Latin analyzer lemmatizes.
+
+The script exits non-zero if an index cannot be created, if the Bulk API rejects
+any document, or if the counts do not match. Both index definitions set
+`"dynamic": "strict"`, so a field the generator emits but the mapping lacks is a
+rejected document rather than a silently added `text` field. Run it with
+`--help` for the options (`--skip-*`, `--archive`, `--jar`, `--tf-dir`, `--yes`).
 
 Steps 5 through 7 go through the admin Lambda rather than talking to the domain,
 because the domain has no public endpoint. Nothing needs a bastion host or a VPN.
@@ -92,9 +98,11 @@ directly, with no signing or proxy involved.
 
 ## The Lambda functions
 
-Both are plain Python with no third-party dependencies. Signing uses `botocore`,
-which the Lambda Python runtimes already bundle, so there is no build step and no
-layer — the deployment zip is the source directory, packaged by OpenTofu.
+Both are plain Python with no third-party dependencies beyond `boto3` and
+`botocore`, which the Lambda Python runtimes already bundle (signing uses
+`botocore.auth`, the admin function reads S3 through `boto3`), so there is no
+build step and no layer — the deployment zip is the source directory, packaged by
+OpenTofu.
 
 ### `search_proxy`
 
@@ -130,6 +138,13 @@ single small node:
   try again" from "broken" and retry accordingly. Everything else outside
   400/404 becomes a 502: OpenSearch error bodies carry mappings, shard layout and
   stack traces, and are only ever logged, never returned.
+- **Partial responses are trimmed.** OpenSearch answers 200 when only some
+  shards contributed and lists the failures under `_shards.failures` with node
+  ids and shard-level exception text. The proxy logs that list and removes it,
+  keeping the `_shards` counts the viewer uses to warn about a partial result.
+- **A dropped connection is retried like a refused one.** `RemoteDisconnected`,
+  `ConnectionResetError` and `IncompleteRead` after the request was sent are
+  wrapped as unreachable, retried once, and reported as 502 if they persist.
 - **Credentials are re-resolved when they rotate.** Lambda passes the execution
   role's credentials in `AWS_ACCESS_KEY_ID` and friends and rotates them inside an
   execution environment that can outlive them, while botocore returns a
@@ -168,8 +183,17 @@ cd opensearch
 python3 generate_latin_stemmer_rules.py
 ```
 
-Reads `latin-lemma-table.jsonl` and rewrites `latin-stemmer-rules.txt`. After
-regenerating, re-apply the OpenTofu workspace to update the custom package, then
-rerun `init-opensearch.sh` to rebuild the indexes — the analyzers are not
-declared `updateable`, so existing indexes keep using the old dictionary until
-they are recreated.
+Reads `latin-lemma-table.jsonl` from the current directory and rewrites
+`latin-stemmer-rules.txt`. The lemma table is not in the repository (it is about
+50 MB); download it from <https://zenodo.org/records/21884913> first. The
+committed rules file is the generated output, so regenerating is only needed
+after a new table release.
+
+After regenerating, the custom package in AWS has to be updated and the indexes
+rebuilt: the analyzers are not declared `updateable`, so existing indexes keep
+using the old dictionary until they are recreated with `init-opensearch.sh`. The
+OpenTofu package resource reads the file from a fixed S3 key and has no content
+trigger, so a `tofu apply` after a dictionary change may not create a new package
+version; check `aws opensearch describe-packages` and update the package
+explicitly if it still shows the old version. The analyzer pipeline itself is
+described in [`opensearch/LATIN-ANALYZER.md`](opensearch/LATIN-ANALYZER.md).

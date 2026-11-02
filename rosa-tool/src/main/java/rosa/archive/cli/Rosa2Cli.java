@@ -12,7 +12,7 @@ import java.util.concurrent.Callable;
  * generating IIIF Presentation API 3.0 files, Opensearch bulk ingest files,
  * and AoR annotation statistics.</p>
  */
-@Command(name = "rosa2", version = "2.0.0-SNAPSHOT",
+@Command(name = "rosa2", versionProvider = VersionProvider.class,
          mixinStandardHelpOptions = true,
          description = "CLI tool for managing rosa digital manuscript archives",
          subcommands = {
@@ -22,7 +22,6 @@ import java.util.concurrent.Callable;
              CheckCommand.class,
              ListCommand.class,
              ValidateXmlCommand.class,
-             AorStatsCommand.class,
              UpdateChecksumCommand.class,
              UpdateImageListCommand.class,
              CropImagesCommand.class,
@@ -32,8 +31,6 @@ import java.util.concurrent.Callable;
              RenameTranscriptionsCommand.class,
              GenerateTeiCommand.class,
              CheckAorCommand.class,
-             GenerateAnnotationMapCommand.class,
-             MigrateTeiMetadataCommand.class,
              DecorateImageListCommand.class
          })
 public final class Rosa2Cli implements Callable<Integer> {

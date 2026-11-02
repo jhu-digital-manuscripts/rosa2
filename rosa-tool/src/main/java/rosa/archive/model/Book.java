@@ -23,8 +23,6 @@ public class Book implements HasId {
     private String[] content;
     private BookStructure bookStructure;
     private IllustrationTagging illustrationTagging;
-    private NarrativeTagging manualNarrativeTagging;
-    private NarrativeTagging automaticNarrativeTagging;
     private BookMetadata bookMetadata;
     private Map<String, Permission> permissions;
     private Map<String, BookDescription> descriptions;
@@ -241,67 +239,6 @@ public class Book implements HasId {
     }
 
     /**
-     * Returns the manual narrative tagging data.
-     *
-     * @return the manual narrative tagging, or {@code null}
-     */
-    public NarrativeTagging getManualNarrativeTagging() {
-        return manualNarrativeTagging;
-    }
-
-    /**
-     * Sets the manual narrative tagging data.
-     *
-     * @param manualNarrativeTagging the manual narrative tagging
-     */
-    public void setManualNarrativeTagging(NarrativeTagging manualNarrativeTagging) {
-        this.manualNarrativeTagging = manualNarrativeTagging;
-    }
-
-    /**
-     * Checks whether narrative tagging covers the specified page.
-     *
-     * @param page the page identifier
-     * @return {@code true} if narrative tagging exists for the page
-     */
-    public boolean hasNarrativeTagging(String page) {
-        if (manualNarrativeTagging != null) {
-            for (BookScene scene : manualNarrativeTagging.getScenes()) {
-                if (scene.getStartPage().compareToIgnoreCase(page) <= 0 &&
-                        scene.getEndPage().compareToIgnoreCase(page) >= 0) {
-                    return true;
-                }
-            }
-        } else if (automaticNarrativeTagging != null) {
-            for (BookScene scene : automaticNarrativeTagging.getScenes()) {
-                if (scene.getStartPage().compareToIgnoreCase(page) <= 0 &&
-                        scene.getEndPage().compareToIgnoreCase(page) >= 0) {
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
-
-    /**
-     * Returns the automatic narrative tagging data.
-     *
-     * @return the automatic narrative tagging, or {@code null}
-     */
-    public NarrativeTagging getAutomaticNarrativeTagging() {
-        return automaticNarrativeTagging;
-    }
-
-    /**
-     * Sets the automatic narrative tagging data.
-     *
-     * @param automaticNarrativeTagging the automatic narrative tagging
-     */
-    public void setAutomaticNarrativeTagging(NarrativeTagging automaticNarrativeTagging) {
-        this.automaticNarrativeTagging = automaticNarrativeTagging;
-    }
-
-    /**
      * Adds a permission statement in a particular language.
      *
      * @param permission the permission
@@ -473,8 +410,6 @@ public class Book implements HasId {
                 Arrays.equals(content, that.content) &&
                 Objects.equals(bookStructure, that.bookStructure) &&
                 Objects.equals(illustrationTagging, that.illustrationTagging) &&
-                Objects.equals(manualNarrativeTagging, that.manualNarrativeTagging) &&
-                Objects.equals(automaticNarrativeTagging, that.automaticNarrativeTagging) &&
                 Objects.equals(bookMetadata, that.bookMetadata) &&
                 Objects.equals(permissions, that.permissions) &&
                 Objects.equals(descriptions, that.descriptions) &&
@@ -485,8 +420,7 @@ public class Book implements HasId {
     @Override
     public int hashCode() {
         int result = Objects.hash(id, images, croppedImages, cropInfo, checksum,
-                bookStructure, illustrationTagging, manualNarrativeTagging,
-                automaticNarrativeTagging, bookMetadata, permissions, descriptions,
+                bookStructure, illustrationTagging, bookMetadata, permissions, descriptions,
                 transcription, annotatedPages);
         result = 31 * result + Arrays.hashCode(content);
         return result;
@@ -503,8 +437,6 @@ public class Book implements HasId {
                 ", content=" + Arrays.toString(content) +
                 ", bookStructure=" + bookStructure +
                 ", illustrationTagging=" + illustrationTagging +
-                ", manualNarrativeTagging=" + manualNarrativeTagging +
-                ", automaticNarrativeTagging=" + automaticNarrativeTagging +
                 ", bookMetadata=" + bookMetadata +
                 ", permissions=" + permissions +
                 ", descriptions=" + descriptions +

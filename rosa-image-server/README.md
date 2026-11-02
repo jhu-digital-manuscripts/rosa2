@@ -13,9 +13,9 @@ The image serves JPEG 2000 page images from an S3 bucket, decodes them with the 
 | libjpeg-turbo | `/opt/libjpeg-turbo` | Built with `-DWITH_JAVA=1` so the TurboJPEG JNI binding works |
 | Configuration | `/etc/cantaloupe/cantaloupe.properties` | Baked in; override individual keys with environment variables |
 | Delegate script | `/etc/cantaloupe/delegates.rb` | Rewrites the `info.json` `@id` for legacy `/iiif/<id>` requests; see [Legacy `/iiif` URLs](#legacy-iiif-urls) |
-| Base image | `amazoncorretto:25-al2023-jdk` | Java 25 |
+| Base image | `amazoncorretto:25-al2023-jdk`, pinned by digest | Java 25 |
 
-The server listens on port **8182** and runs as the non-root `cantaloupe` user (uid 999). A health check endpoint is available at `/health`, and the IIIF Image API 2 and 3 endpoints at `/iiif/2` and `/iiif/3`.
+The server listens on port **8182** and runs as the non-root `cantaloupe` system user. A health check endpoint is available at `/health`, and the IIIF Image API 2 and 3 endpoints at `/iiif/2` and `/iiif/3`.
 
 ## Prerequisites
 
@@ -29,18 +29,21 @@ The server listens on port **8182** and runs as the non-root `cantaloupe` user (
 ./build-and-push.sh --kakadu-zip /home/msp/work/kakadu/v8_6_1-02130L.zip
 ```
 
-This builds `rosa-image-server:<cantaloupe-version>-<git-sha>` (for example `rosa-image-server:5.0.7-c1caaa2d`) for `linux/amd64`. It refuses to build from uncommitted changes in this directory, so that a tag always identifies a commit; pass `--allow-dirty` (the tag then ends in `-dirty`) or `--tag` while developing. Run `./build-and-push.sh --help` for every option. Docker and Podman both work (`CONTAINER_CLI=podman`).
+This builds `rosa-image-server:<cantaloupe-version>-<git-sha>` (for example `rosa-image-server:5.0.7-c1caaa2d`) for `linux/amd64`. It refuses to build from uncommitted changes in this directory, so that a tag always identifies a commit; pass `--allow-dirty` while developing, and the tag then ends in `-dirty`. `--tag` only renames the image and does not lift that check. Do not deploy a `-dirty` tag: it cannot be traced back to a commit. Run `./build-and-push.sh --help` for every option. Docker and Podman both work (`CONTAINER_CLI=podman`).
 
-The build compiles Kakadu and libjpeg-turbo from source and downloads the Cantaloupe release, so expect roughly 2–3 minutes on a cold cache and outbound network access to GitHub.
+The build compiles Kakadu and libjpeg-turbo from source and downloads the Cantaloupe release, so expect roughly 2–3 minutes on a cold cache and outbound network access to GitHub. Both downloads are verified against the SHA-256 values recorded in the Dockerfile, and the base image is pinned by digest, so a rebuild of the same commit produces the same inputs.
 
 The script runs the equivalent of:
 
 ```sh
-docker build --platform linux/amd64 -t rosa-image-server:5.0.7 \
+docker build --platform linux/amd64 -t rosa-image-server:5.0.7-<git-sha> \
   --build-context kakadu_src=/dir/containing/the/zip \
   --build-arg KAKADU_ZIP=v8_6_1-02130L.zip \
+  --build-arg KAKADU_PLATFORM=Linux-x86-64-gcc \
   --build-arg CANTALOUPE_VERSION=5.0.7 .
 ```
+
+`.dockerignore` keeps ZIPs, an unpacked Kakadu tree and the tests out of the build context.
 
 `--build-context kakadu_src=<dir>` replaces the Dockerfile's `kakadu_src` stage, which otherwise reads the ZIP from this directory. The script stages the ZIP alone in a temporary directory (by hard link where possible), so nothing else beside the ZIP enters the build.
 
@@ -58,10 +61,12 @@ This pushes to the environment's ECR repository, `<account>.dkr.ecr.us-east-1.am
 | Argument | Default | Description |
 |----------|---------|-------------|
 | `KAKADU_ZIP` | `v8_6_1-02130L.zip` | Kakadu distribution ZIP, as a path relative to this directory. The archive's single top-level directory is detected automatically, so the version-specific name does not matter. |
-| `KAKADU_PLATFORM` | `Linux-x86-64-gcc` | Which Kakadu makefile to use. Change to `Linux-arm-64-gcc` for an arm64 (Graviton) image, and build on or emulate that architecture. |
-| `CANTALOUPE_VERSION` | `5.0.7` | Release to install. The build downloads `cantaloupe-<VERSION>.zip` from the `v<VERSION>` GitHub release tag and keeps only `cantaloupe-<VERSION>.jar`. |
-| `LIBJPEG_TURBO_VERSION` | `2.0.2` | The version the Cantaloupe manual specifies. Other 2.0.x releases may work. **Do not use 3.x**: its TurboJPEG Java API differs from the classes vendored in the Cantaloupe jar. |
-| `JAVA_IMAGE` | `amazoncorretto:25-al2023-jdk` | Base image for every stage. Must be a JDK, not a JRE: the Kakadu JNI binding compiles against `$JAVA_HOME/include/jni.h`. |
+| `KAKADU_PLATFORM` | `Linux-x86-64-gcc` | Which Kakadu makefile to use. `build-and-push.sh` derives it from `--platform` (`linux/arm64` gives `Linux-arm-64-gcc`, for a Graviton image built on or emulating that architecture) or takes `--kakadu-platform`. The ECS task definition is `X86_64`, so an arm64 image also needs `ecs.tf` changed. |
+| `CANTALOUPE_VERSION` | `5.0.7` | Release to install, set once at the top of the Dockerfile; `build-and-push.sh` reads that line for its default tag. The build downloads `cantaloupe-<VERSION>.zip` from the `v<VERSION>` GitHub release tag, checks it against `CANTALOUPE_SHA256`, and keeps only `cantaloupe-<VERSION>.jar`. Changing the version means changing the checksum too. |
+| `CANTALOUPE_SHA256` | checksum of the 5.0.7 ZIP | SHA-256 the downloaded release ZIP must match. |
+| `LIBJPEG_TURBO_VERSION` | `2.0.2` | The version the Cantaloupe manual specifies. Other 2.0.x releases may work but are untested here. **Do not use 3.x**: its TurboJPEG Java API differs from the classes vendored in the Cantaloupe jar. |
+| `LIBJPEG_TURBO_SHA256` | checksum of the 2.0.2 tag archive | SHA-256 the downloaded source tarball must match. |
+| `JAVA_IMAGE` | `amazoncorretto:25-al2023-jdk@sha256:…` | Base image for every stage, pinned to the tag's multi-arch index digest; the Dockerfile comment shows how to look up a newer digest. Must be a JDK, not a JRE: the Kakadu JNI binding compiles against `$JAVA_HOME/include/jni.h`. |
 
 The build fails fast rather than producing a subtly broken image: it asserts that `libkdu_jni.so` and `kdu_expand` were produced, that `libturbojpeg.so` exports its JNI symbols, and that the `kdu_*` tools resolve their shared libraries.
 
@@ -78,15 +83,16 @@ The build is multi-stage so that no compiler, no source tree, and in particular 
 ## Testing
 
 ```sh
-test/smoke-test.sh                       # against rosa-image-server:dev
+test/smoke-test.sh                       # against the tag build-and-push.sh gives the current checkout
 test/smoke-test.sh --image rosa-image-server:5.0.7-c1caaa2d --benchmark
 ```
 
-No AWS access is needed. The script makes a JPEG 2000 test image with the image's own `kdu_compress`, serves it with `FilesystemSource` under the identifier `rose/Test/Test.001r`, and prints PASS/FAIL for each check:
+No AWS access is needed. The script makes JPEG 2000 test images with the image's own `kdu_compress`, serves them with `FilesystemSource` under the identifiers `rose/Test/Test.001r` and `rose/Test/cropped/Test.001r` (the form rosa-tool uses for books with cropped images), and prints PASS/FAIL for each check:
 
-- `/health`, Image API 2 and 3 `info.json` (`@id`/`id` built from `BASE_URI`), the base-URI 303 redirect, a 512 px tile, the 80 px thumbnail the viewer's search results use, `full/max`
-- `%2F`-encoded identifiers, the CORS header, `Cache-Control` with `max-age` and `s-maxage`, and `no-cache` on 404s
+- `/health`, Image API 2 and 3 `info.json` (`@id`/`id` built from `BASE_URI`), the base-URI 303 redirect, a 512 px tile, the 80 px thumbnail the viewer's search results use, v3 `full/max` (200, full size) and v3 `full/full` (400: Image API 3 has no `full` size, which is why rosa-tool emits `max`)
+- `%2F`-encoded identifiers, the cropped identifier, the CORS header, `Cache-Control` with `max-age` and `s-maxage`, and `no-cache` on 404s
 - the legacy `@id` rewrite with and without the marker header (see below), and that the v3 endpoint and image requests ignore it
+- `max_pixels`, on a second server started with `MAX_PIXELS` below the test image's area: `info.json` advertises it as `maxArea`, a v2 `full/full` is refused with 403, and a v3 `full/max` is scaled down to fit
 - that `KakaduNativeProcessor` decodes and `TurboJPEGImageWriter` encodes, with no native library errors
 
 `--benchmark` compares `info.json` latency with the delegate script on and off. The difference is within noise, at about 2–3 ms median for each. `--keep` leaves the server running for the CloudFront Function end-to-end test in `jhu-rosa2-tf/modules/rosa2-image-server/functions/test/`.
@@ -119,7 +125,7 @@ docker run --rm -p 8182:8182 -v /path/to/jp2s:/images:ro \
   -e FILESYSTEMSOURCE_BASICLOOKUPSTRATEGY_PATH_PREFIX=/images/ \
   -e FILESYSTEMSOURCE_BASICLOOKUPSTRATEGY_PATH_SUFFIX=.jp2 \
   -e CACHE_SERVER_DERIVATIVE_ENABLED=false \
-  rosa-image-server:5.0.7
+  rosa-image-server:5.0.7-c1caaa2d
 ```
 
 Then:
@@ -139,14 +145,14 @@ Note that identifiers contain URL-encoded slashes (`%2F`). Any proxy in front of
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `JAVA_OPTS` | empty | Extra JVM arguments, appended to the fixed ones. Use this for heap or GC tuning, e.g. `-Xmx3g` or `-XX:+UseZGC`. |
+| `JAVA_OPTS` | empty | Extra JVM arguments, appended after the fixed ones, so a repeated `-XX:` flag here wins. Use this for heap or GC tuning, e.g. `-XX:MaxRAMPercentage=65.0` (what jhu-rosa2-tf passes by default, see below) or `-XX:+UseZGC`. |
 | `CANTALOUPE_CONFIG` | `/etc/cantaloupe/cantaloupe.properties` | Path passed as `-Dcantaloupe.config`. Change it if you mount a replacement configuration file. |
 | `JAVA_LIBRARY_PATH` | `/opt/kakadu/lib:/opt/libjpeg-turbo/lib64:` plus the standard JVM entries | Passed as `-Djava.library.path`, which is how `System.loadLibrary()` finds Kakadu and TurboJPEG. Because this property replaces the default rather than extending it, the standard system entries are included explicitly; preserve them if you override this. |
 | `CANTALOUPE_VERSION` | build-arg value | Informational only. |
 
-The entrypoint always applies these, which are not configurable by design:
+The entrypoint always applies these:
 
-- `-XX:MaxRAMPercentage=75.0` — the JVM otherwise picks about 25% of the container memory limit, which the Cantaloupe manual calls out as too conservative. Size the heap by setting the ECS task memory rather than by passing `-Xmx`.
+- `-XX:MaxRAMPercentage=75.0` — the JVM otherwise picks about 25% of the container memory limit, which the Cantaloupe manual calls out as too conservative. In AWS the module's `java_opts` default, `-XX:MaxRAMPercentage=65.0`, comes later on the command line and overrides it, leaving room for the Kakadu and TurboJPEG native buffers outside the heap. Size the heap by setting the ECS task memory and this percentage rather than by passing `-Xmx`.
 - `--enable-native-access=ALL-UNNAMED` — Kakadu and TurboJPEG load through `System.loadLibrary()`, which JDK 24+ reports as a restricted call and will block outright in a future release.
 - `-Djava.awt.headless=true`
 
@@ -204,9 +210,11 @@ The cache worker is **disabled**: the manual advises running it on only one node
 
 **Endpoints.** IIIF Image API 2 and 3 are enabled, API 1 is not. The Control Panel (`/admin`) and the administrative HTTP API are disabled; if you enable either, supply a secret from Secrets Manager and keep the paths off the public load balancer.
 
-**Limits.** `max_pixels = 50000000`, which accommodates full-size renderings of the archive's roughly 33 MP page images while still capping runaway requests. It does not apply to requests for full-sized unmodified images. `http.max_threads = 64` keeps concurrent decodes from exhausting the heap before the request queue pushes back. In AWS it is set per environment (`image_server_http_max_threads`: 32 for a 4 GiB stage task, 64 for an 8 GiB prod task).
+**Limits.** `max_pixels = 10000000`, which caps any single derivative below a full-size rendering of the archive's roughly 15–21 MP page images (for example 3661×5680). The limit does not apply to full-sized *unmodified* images, but a JP2 delivered as JPEG counts as modified, so an Image API 2 `full/full` of a page larger than 10 MP returns 403. Image API 3 `max` is instead scaled down to fit, and `info.json` advertises the limit as `maxArea`; this is why rosa-tool writes `full/max` into every painting body. It was lowered from 50 MP to bound peak heap per request on a 4 GiB task; `test/smoke-test.sh` exercises both behaviours. `http.max_threads` keeps concurrent decodes from exhausting the heap before the request queue pushes back; in AWS the task size and thread count are set per environment by `image_server_task_cpu`, `image_server_task_memory` and `image_server_http_max_threads` in `jhu-rosa2-tf/<env>.tfvars` (the module default is 32 threads).
 
 **Delegate script.** Enabled, for one method only; see below. Every other method is the upstream pass-through stub.
+
+**Error responses.** Cantaloupe's error bodies are plain text and include the message of the underlying exception. For a missing object that message names the S3 bucket and key, and `print_stack_trace_on_error_pages = false` only suppresses the stack trace, not the message; Cantaloupe 5 has no setting to replace the body. Identifiers with `.` or `..` path segments, which would make S3 reject the key and surface a 500 with the SDK's message, are refused at the edge by the legacy viewer-request function; the `/iiif/2` and `/iiif/3` behaviours run no function and still pass them to the origin (see the tf README).
 
 **Logging.** Console only, at `info`, for the ECS log driver to forward to CloudWatch. All file appenders are off, since task storage is ephemeral. Set `LOG_APPLICATION_LEVEL=debug` temporarily to see which processor and image writer handled each request. The access log is off to limit CloudWatch volume; enable it with `LOG_ACCESS_CONSOLEAPPENDER_ENABLED=true`.
 
@@ -224,7 +232,7 @@ Cantaloupe always builds Image API 2 URLs as `<base_uri>/iiif/2/<id>`, and the `
 
 | Piece | Does |
 |-------|------|
-| CloudFront viewer-request function (`jhu-rosa2-tf/modules/rosa2-image-server/functions/legacy-request.js`) | `/iiif/<id>` → 303 to `/iiif/<id>/info.json`; `/iiif/<id>/...` → `/iiif/2/<id>/...`; on `info.json` only, adds `X-Rosa-Legacy-Path: 1` (part of the CloudFront cache key) |
+| CloudFront viewer-request function (`jhu-rosa2-tf/modules/rosa2-image-server/functions/legacy-request.js`) | `/iiif/<id>` → 303 to `/iiif/<id>/info.json`; `/iiif/<id>/...` → `/iiif/2/<id>/...`; on `info.json` only, adds `X-Rosa-Legacy-Path: 1` (part of the CloudFront cache key); identifiers with a `.` or `..` path segment get a 400 |
 | `delegates.rb`, `extra_iiif2_information_response_keys` | When the header is present, returns `@id` = `<base_uri>/iiif/<id>`. Cantaloupe merges these keys after setting its own `@id`, so this replaces it. |
 | CloudFront viewer-response function (`legacy-response.js`) | Rewrites `/iiif/2/` to `/iiif/` in `Location` and `Link` (the delegate cannot reach headers) |
 

@@ -32,6 +32,8 @@ import rosa.archive.model.BookReferenceSheet;
 import rosa.archive.model.BookText;
 import rosa.archive.model.CharacterName;
 import rosa.archive.model.CharacterNames;
+import rosa.archive.model.CropData;
+import rosa.archive.model.CropInfo;
 import rosa.archive.model.HTMLAnnotations;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTagging;
@@ -54,6 +56,8 @@ import rosa.archive.model.aor.GraphNode;
 import rosa.archive.model.aor.GraphNote;
 import rosa.archive.model.aor.GraphText;
 import rosa.archive.model.aor.Location;
+import rosa.archive.model.aor.ReferenceTarget;
+import rosa.archive.model.aor.InternalReference;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Mark;
@@ -86,6 +90,57 @@ public final class ArchiveReaders {
      * @return the parsed image list, or null if the file doesn't exist
      * @throws IOException if reading fails
      */
+    /**
+     * Reads a book's crop file ({@code {book}.crop.txt}): one whitespace-separated row per
+     * image, {@code id left right top bottom}, where each value is the fraction of the image
+     * width or height to remove from that side.
+     *
+     * @param path   the crop file
+     * @param errors list to collect error messages
+     * @return the crop info, or null if the file doesn't exist
+     * @throws IOException if reading fails
+     */
+    public static CropInfo readCropInfo(Path path, List<String> errors) throws IOException {
+        if (!Files.exists(path)) {
+            return null;
+        }
+
+        CropInfo info = new CropInfo();
+        info.setId(path.getFileName().toString());
+
+        for (String line : Files.readAllLines(path, StandardCharsets.UTF_8)) {
+            if (line.isBlank()) {
+                continue;
+            }
+            String[] parts = line.trim().split("\\s+");
+            if (parts.length != 5) {
+                errors.add("Malformed crop line in [" + path.getFileName() + "]: " + line);
+                continue;
+            }
+            try {
+                CropData data = new CropData();
+                data.setId(parts[0]);
+                data.setLeft(cropFraction(parts[1]));
+                data.setRight(cropFraction(parts[2]));
+                data.setTop(cropFraction(parts[3]));
+                data.setBottom(cropFraction(parts[4]));
+                info.addCropData(data);
+            } catch (NumberFormatException e) {
+                errors.add("Malformed crop line in [" + path.getFileName() + "]: " + line);
+            }
+        }
+
+        return info;
+    }
+
+    private static double cropFraction(String value) {
+        double d = Double.parseDouble(value);
+        if (d < 0 || d >= 1) {
+            throw new NumberFormatException("crop fraction out of range: " + value);
+        }
+        return d;
+    }
+
     public static ImageList readImageList(Path path, List<String> errors) throws IOException {
         if (!Files.exists(path)) {
             return null;
@@ -305,7 +360,8 @@ public final class ArchiveReaders {
 
         for (String line : lines) {
             String[] row = CSV.parse(line);
-            if (row.length == 0 || row[0].equalsIgnoreCase("Standard title")) {
+            if (row.length == 0 || row[0].equalsIgnoreCase("Standard title")
+                    || row[0].equalsIgnoreCase("Standard ID")) {
                 continue;
             }
             reference.addValues(row[0], row);
@@ -405,38 +461,6 @@ public final class ArchiveReaders {
             errors.add("Failed to parse AoR XML: " + path + " - " + e.getMessage());
             return null;
         }
-    }
-
-    /**
-     * Reads an annotation location map from a CSV file.
-     *
-     * @param path the path to the id_locations.csv file
-     * @return a map of annotation IDs to locations, or empty map if file doesn't exist
-     * @throws IOException if reading fails
-     */
-    public static Map<String, rosa.archive.model.aor.AorLocation> readAnnotationLocationMap(Path path) throws IOException {
-        Map<String, rosa.archive.model.aor.AorLocation> result = new HashMap<>();
-        if (!Files.exists(path)) {
-            return result;
-        }
-
-        List<String> lines = Files.readAllLines(path, StandardCharsets.UTF_8);
-        for (String line : lines) {
-            String[] parts = line.split(",");
-            if (parts.length == 0) {
-                continue;
-            }
-            String id = parts[0];
-            rosa.archive.model.aor.AorLocation loc = new rosa.archive.model.aor.AorLocation(
-                    parts.length > 1 ? parts[1] : null,
-                    parts.length > 2 ? parts[2] : null,
-                    parts.length > 3 ? parts[3] : null,
-                    parts.length > 4 ? parts[4] : null
-            );
-            result.put(id, loc);
-        }
-
-        return result;
     }
 
     /**
@@ -1149,11 +1173,25 @@ public final class ArchiveReaders {
     private static Position buildPosition(Element posEl, String pageName) {
         Position pos = new Position();
 
-        Location loc = getLocation(posEl.getAttribute("place"));
+        Location loc = getLocation(posEl.getAttribute("place").trim());
         if (loc != null) {
             pos.setPlace(loc);
         }
         pos.setOrientation(safeParseInt(posEl.getAttribute("book_orientation"), 0));
+
+        // Internal references to other annotations: <internal_ref><target ref text prefix suffix/></internal_ref>
+        for (Element refEl : getDirectChildElements("internal_ref", posEl)) {
+            InternalReference ref = new InternalReference();
+            ref.setText(refEl.getAttribute("text"));
+            for (Element targetEl : getDirectChildElements("target", refEl)) {
+                ref.addTargets(new ReferenceTarget(
+                        targetEl.getAttribute("ref"),
+                        targetEl.getAttribute("text"),
+                        targetEl.getAttribute("prefix"),
+                        targetEl.getAttribute("suffix")));
+            }
+            pos.getInternalRefs().add(ref);
+        }
 
         // People
         for (Element el : getDirectChildElements("person", posEl)) {

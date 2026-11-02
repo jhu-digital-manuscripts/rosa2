@@ -4,13 +4,16 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
+import rosa.archive.core.serialize.ArchiveReaders;
+import rosa.archive.core.serialize.ArchiveWriters;
+import rosa.archive.model.BookImage;
+import rosa.archive.model.ImageList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -20,16 +23,14 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Decorates a book's image list CSV with page labels extracted from AoR transcription files.
+ * Copies page labels from AoR transcriptions into a book's image list, so that labels are
+ * managed in {@code {book}.images.csv} and a page needs no transcription to be labelled.
  *
- * <p>For each book, this utility reads the existing {@code <bookId>.images.csv}, marks all
- * entries as auto-generated initially, then reads each AoR transcription XML to extract
- * pagination and signature attributes from the {@code <page>} element. The pagination
- * attribute is preferred over signature when both are present. The resulting label is
- * written back into the image list CSV.</p>
- *
- * <p>The decorated image list format is:
- * {@code filename,width,height,missing,label,auto_generated} (6 columns, no header row).</p>
+ * <p>For each transcription the page's {@code pagination} (preferred) or {@code signature}
+ * becomes the label of the image named by {@code page/@filename}. Images that get no label
+ * this way and have no hand-written label keep their derived name, marked as auto-generated
+ * ({@code ##} prefix). The list is read and written in the archive format, so all other
+ * columns survive unchanged.
  */
 public final class ImageListDecorator {
 
@@ -39,18 +40,16 @@ public final class ImageListDecorator {
     private final Path archivePath;
 
     /**
-     * Creates an ImageListDecorator rooted at the given archive path.
-     *
-     * @param archivePath the root directory of the archive
+     * @param archivePath the archive root directory
      */
     public ImageListDecorator(Path archivePath) {
         this.archivePath = archivePath;
     }
 
     /**
-     * Decorates image lists for all books in a collection.
+     * Decorates the image lists of every book in a collection.
      *
-     * @param collectionId the collection identifier
+     * @param collectionId the collection
      * @param errors       list to collect error messages
      */
     public void decorateCollection(String collectionId, List<String> errors) {
@@ -59,23 +58,16 @@ public final class ImageListDecorator {
             errors.add("Collection directory not found: " + collectionId);
             return;
         }
-
-        List<String> books = listBookDirectories(collectionDir, errors);
-        for (String bookId : books) {
+        for (String bookId : listBookDirectories(collectionDir, errors)) {
             decorateBook(collectionId, bookId, errors);
         }
     }
 
     /**
-     * Decorates the image list for a single book by reading page labels from
-     * AoR transcription XML files.
+     * Decorates the image list of one book.
      *
-     * <p>The method loads the existing image list CSV, marks all images as auto-generated,
-     * then reads each transcription file to extract labels. Pagination is preferred over
-     * signature when both are present on a page element.</p>
-     *
-     * @param collectionId the collection identifier
-     * @param bookId       the book identifier
+     * @param collectionId the collection
+     * @param bookId       the book
      * @param errors       list to collect error messages
      */
     public void decorateBook(String collectionId, String bookId, List<String> errors) {
@@ -84,140 +76,97 @@ public final class ImageListDecorator {
             errors.add("Book directory not found: " + collectionId + "/" + bookId);
             return;
         }
-
         Path imagesCsv = bookDir.resolve(bookId + IMAGES_SUFFIX);
         if (!Files.isRegularFile(imagesCsv)) {
             errors.add("Image list not found: " + imagesCsv.getFileName());
             return;
         }
 
-        // Load the image list entries
-        List<ImageEntry> entries = loadImageList(imagesCsv, errors);
-        if (entries.isEmpty()) {
+        ImageList images;
+        try {
+            images = ArchiveReaders.readImageList(imagesCsv, errors);
+        } catch (IOException e) {
+            errors.add("Failed to read image list: " + e.getMessage());
+            return;
+        }
+        if (images == null || images.getImages().isEmpty()) {
             return;
         }
 
-        // Build a lookup map by filename for fast matching
-        Map<String, ImageEntry> entryByFilename = new LinkedHashMap<>();
-        for (ImageEntry entry : entries) {
-            entryByFilename.put(entry.filename, entry);
+        Map<String, BookImage> byId = new LinkedHashMap<>();
+        for (BookImage image : images) {
+            byId.put(image.getId(), image);
         }
 
-        // Mark all as auto-generated initially
-        for (ImageEntry entry : entries) {
-            entry.label = "";
-            entry.autoGenerated = true;
+        List<BookImage> labelled = new ArrayList<>();
+        for (String transcription : listAorTranscriptions(bookDir, errors)) {
+            BookImage image = applyTranscriptionLabel(bookDir, transcription, byId, errors);
+            if (image != null) {
+                labelled.add(image);
+            }
         }
 
-        // Read AoR transcription XML files and extract page labels
-        List<String> transcriptions = listAorTranscriptions(bookDir, errors);
-        for (String transcriptionFile : transcriptions) {
-            processTranscription(bookDir, transcriptionFile, entryByFilename, errors);
+        // Unlabelled images with only their derived name are marked auto-generated
+        for (BookImage image : images) {
+            if (labelled.contains(image)) {
+                continue;
+            }
+            String derived = NAME_PARSER.shortName(image.getId());
+            if (image.getName() == null || image.getName().isEmpty() || image.getName().equals(derived)) {
+                image.setName(derived);
+                image.setAutoGeneratedName(true);
+            }
         }
 
-        // Write back the decorated image list
-        writeImageList(imagesCsv, entries, errors);
+        try {
+            ArchiveWriters.writeImageList(imagesCsv, images.getImages());
+        } catch (IOException e) {
+            errors.add("Failed to write image list: " + e.getMessage());
+        }
     }
 
-    private void processTranscription(Path bookDir, String transcriptionFile,
-                                      Map<String, ImageEntry> entryByFilename, List<String> errors) {
-        Path filePath = bookDir.resolve(transcriptionFile);
-
+    /**
+     * Reads a transcription's page label and applies it to the matching image.
+     *
+     * @return the labelled image, or null when the transcription gives no label
+     */
+    private BookImage applyTranscriptionLabel(Path bookDir, String transcriptionFile,
+                                              Map<String, BookImage> byId, List<String> errors) {
         Document doc;
         try {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             factory.setNamespaceAware(false);
             factory.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", false);
             DocumentBuilder builder = factory.newDocumentBuilder();
-            try (InputStream in = Files.newInputStream(filePath)) {
+            try (InputStream in = Files.newInputStream(bookDir.resolve(transcriptionFile))) {
                 doc = builder.parse(in);
             }
         } catch (ParserConfigurationException | SAXException | IOException e) {
             errors.add("Failed to parse transcription [" + transcriptionFile + "]: " + e.getMessage());
-            return;
+            return null;
         }
 
-        // Extract page element attributes
         NodeList pageEls = doc.getElementsByTagName("page");
         if (pageEls.getLength() == 0) {
-            return;
+            return null;
         }
-
         Element pageEl = (Element) pageEls.item(0);
         String filename = pageEl.getAttribute("filename");
-        String pagination = pageEl.getAttribute("pagination");
-        String signature = pageEl.getAttribute("signature");
-
-        if (filename == null || filename.isBlank()) {
-            return;
+        String label = pageEl.getAttribute("pagination");
+        if (label == null || label.isBlank()) {
+            label = pageEl.getAttribute("signature");
+        }
+        if (filename == null || filename.isBlank() || label == null || label.isBlank()) {
+            return null;
         }
 
-        // Determine the label: prefer pagination over signature
-        String label = "";
-        if (hasContent(pagination)) {
-            label = pagination;
-        } else if (hasContent(signature)) {
-            label = signature;
+        BookImage image = byId.get(filename);
+        if (image == null) {
+            return null;
         }
-
-        // Find the matching image entry and update it
-        ImageEntry entry = entryByFilename.get(filename);
-        if (entry != null && !label.isEmpty()) {
-            entry.label = label;
-            entry.autoGenerated = false;
-        }
-    }
-
-    private List<ImageEntry> loadImageList(Path imagesCsv, List<String> errors) {
-        List<ImageEntry> entries = new ArrayList<>();
-        try {
-            List<String> lines = Files.readAllLines(imagesCsv, StandardCharsets.UTF_8);
-            for (String line : lines) {
-                if (line.isBlank()) {
-                    continue;
-                }
-                String[] parts = line.split(",", -1);
-                if (parts.length >= 4) {
-                    var entry = new ImageEntry();
-                    entry.filename = parts[0].trim();
-                    entry.width = parts[1].trim();
-                    entry.height = parts[2].trim();
-                    entry.missing = parts[3].trim();
-                    // If previously decorated, pick up existing label/auto fields
-                    if (parts.length >= 6) {
-                        entry.label = parts[4].trim();
-                        entry.autoGenerated = Boolean.parseBoolean(parts[5].trim());
-                    } else {
-                        entry.label = "";
-                        entry.autoGenerated = true;
-                    }
-                    entries.add(entry);
-                } else {
-                    errors.add("Malformed image list line: " + line);
-                }
-            }
-        } catch (IOException e) {
-            errors.add("Failed to read image list: " + e.getMessage());
-        }
-        return entries;
-    }
-
-    private void writeImageList(Path imagesCsv, List<ImageEntry> entries, List<String> errors) {
-        var sb = new StringBuilder();
-        for (ImageEntry entry : entries) {
-            sb.append(entry.filename).append(',');
-            sb.append(entry.width).append(',');
-            sb.append(entry.height).append(',');
-            sb.append(entry.missing).append(',');
-            sb.append(entry.label).append(',');
-            sb.append(entry.autoGenerated);
-            sb.append('\n');
-        }
-        try {
-            Files.writeString(imagesCsv, sb.toString(), StandardCharsets.UTF_8);
-        } catch (IOException e) {
-            errors.add("Failed to write image list: " + e.getMessage());
-        }
+        image.setName(label.trim());
+        image.setAutoGeneratedName(false);
+        return image;
     }
 
     private List<String> listAorTranscriptions(Path bookDir, List<String> errors) {
@@ -230,7 +179,7 @@ public final class ImageListDecorator {
                 }
             }
         } catch (IOException e) {
-            errors.add("Failed to list transcription files in [" + bookDir.getFileName() + "]: " + e.getMessage());
+            errors.add("Failed to list book directory: " + e.getMessage());
         }
         transcriptions.sort(String::compareTo);
         return transcriptions;
@@ -241,30 +190,14 @@ public final class ImageListDecorator {
         try (DirectoryStream<Path> stream = Files.newDirectoryStream(collectionDir, Files::isDirectory)) {
             for (Path entry : stream) {
                 String name = entry.getFileName().toString();
-                if (!name.startsWith(".")) {
+                if (!name.contains(".ignore")) {
                     books.add(name);
                 }
             }
         } catch (IOException e) {
-            errors.add("Failed to list books in collection: " + e.getMessage());
+            errors.add("Failed to list collection directory: " + e.getMessage());
         }
         books.sort(String::compareTo);
         return books;
-    }
-
-    private boolean hasContent(String str) {
-        return str != null && !str.isEmpty();
-    }
-
-    /**
-     * Mutable holder for an image list entry during decoration processing.
-     */
-    private static final class ImageEntry {
-        String filename = "";
-        String width = "0";
-        String height = "0";
-        String missing = "false";
-        String label = "";
-        boolean autoGenerated = true;
     }
 }

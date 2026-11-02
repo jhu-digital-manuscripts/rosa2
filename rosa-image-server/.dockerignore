@@ -1,0 +1,8 @@
+# Never send a Kakadu ZIP or unpacked tree with the build context; the ZIP is
+# supplied through the kakadu_src named build context (see build-and-push.sh).
+*.zip
+v8_*/
+test/
+README.md
+.gitignore
+.dockerignore

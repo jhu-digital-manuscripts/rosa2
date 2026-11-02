@@ -13,10 +13,13 @@ import {
   buildNameFilter,
   buildNameSuggestQuery,
   buildNameLookupQuery,
+  pageWindow,
+  MAX_RESULT_WINDOW,
+  MAX_PAGE_SIZE,
   NAME_FACET,
   NAME_SUGGEST_FIELDS,
 } from '../utils/queryBuilder';
-import { buildMatchedBookAggregations } from './bookFacets';
+import { buildMatchedBookAggregations, MAX_TERMS_VALUES } from './bookFacets';
 import { mockJHSearchService } from '../../../test/mocks';
 
 describe('queryBuilder', () => {
@@ -523,6 +526,17 @@ describe('queryBuilder', () => {
       expect(buildNameFilter(undefined)).toBeNull();
     });
 
+    it('splits long id lists to stay within the proxy terms limit', () => {
+      const many = Array.from({ length: MAX_TERMS_VALUES + 1 }, (_, i) => `rose.B${i}`);
+      const filter = buildNameFilter(many);
+
+      expect(filter.bool.should).toHaveLength(4);
+      expect(filter.bool.should[0].terms.id).toHaveLength(MAX_TERMS_VALUES);
+      expect(filter.bool.should[1].terms.id).toEqual([`rose.B${MAX_TERMS_VALUES}`]);
+      expect(filter.bool.should[2].terms.manifest_id).toHaveLength(MAX_TERMS_VALUES);
+      expect(filter.bool.should[3].terms.manifest_id).toEqual([`rose.B${MAX_TERMS_VALUES}`]);
+    });
+
     it('is applied to browse queries', () => {
       const query = buildBrowseQuery({
         collectionId: 'rose',
@@ -614,6 +628,52 @@ describe('queryBuilder', () => {
           _source: ['id', 'label', 'logo'],
         });
       });
+
+      it('caps size and splits the ids within the proxy limits', () => {
+        const many = Array.from({ length: MAX_PAGE_SIZE + 1 }, (_, i) => `rose.B${i}`);
+        const query = buildNameLookupQuery(many);
+
+        expect(query.size).toBe(MAX_PAGE_SIZE);
+        const clauses = query.query.bool.filter[0].bool.should;
+        expect(clauses).toHaveLength(2);
+        expect(clauses[0].terms.id).toHaveLength(MAX_TERMS_VALUES);
+        expect(clauses[1].terms.id).toHaveLength(MAX_PAGE_SIZE + 1 - MAX_TERMS_VALUES);
+        expect(query.query.bool.filter[0].bool.minimum_should_match).toBe(1);
+      });
+    });
+  });
+
+  describe('pageWindow', () => {
+    it('pages normally inside the result window', () => {
+      expect(pageWindow(0, 20)).toEqual({ from: 0, size: 20 });
+      expect(pageWindow(3, 30)).toEqual({ from: 90, size: 30 });
+    });
+
+    it('never asks past the result window', () => {
+      for (const size of [20, 30, 40, 50]) {
+        const { from } = pageWindow(100000, size);
+        expect(from + size).toBeLessThanOrEqual(MAX_RESULT_WINDOW);
+        expect(from % size).toBe(0);
+      }
+      expect(pageWindow(333, 30)).toEqual({ from: 9960, size: 30 });
+      expect(pageWindow(334, 30)).toEqual({ from: 9960, size: 30 });
+    });
+
+    it('caps the page size at the proxy limit', () => {
+      expect(pageWindow(0, 1000)).toEqual({ from: 0, size: MAX_PAGE_SIZE });
+    });
+
+    it('is used by the search queries', () => {
+      const query = buildSimpleSearchQuery({
+        query: 'rose',
+        defaultFields: ['marginalia'],
+        fieldDefinitions: mockJHSearchService.fields,
+        collectionId: 'rose',
+        facets: {},
+        page: 400,
+        pageSize: 30,
+      });
+      expect(query.from + query.size).toBeLessThanOrEqual(MAX_RESULT_WINDOW);
     });
   });
 });

@@ -209,8 +209,15 @@ export function computeBookFacetCounts(books, matchedIds, categories) {
   return aggregations;
 }
 
-/** `terms` clauses on `field` for `values`, split to stay within the proxy's limit. */
-function termsClauses(field, values) {
+/**
+ * `terms` clauses on `field` for `values`, split to stay within the proxy's limit
+ * (`MAX_TERMS_VALUES` per clause).
+ *
+ * @param {string} field - Keyword field
+ * @param {string[]} values - Values to match
+ * @returns {Object[]} One or more `terms` clauses
+ */
+export function termsClauses(field, values) {
   const clauses = [];
   for (let i = 0; i < values.length; i += MAX_TERMS_VALUES) {
     clauses.push({ terms: { [field]: values.slice(i, i + MAX_TERMS_VALUES) } });

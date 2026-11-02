@@ -1,12 +1,10 @@
 package rosa.archive.cli;
 
 import picocli.CommandLine.Command;
+import picocli.CommandLine.Mixin;
 import picocli.CommandLine.Option;
-import rosa.archive.core.FileSystemArchiveStore;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Callable;
@@ -21,12 +19,12 @@ import java.util.concurrent.Callable;
  * recomputed regardless of file modification dates.</p>
  */
 @Command(name = "update",
-         mixinStandardHelpOptions = true,
+         mixinStandardHelpOptions = true, versionProvider = VersionProvider.class,
          description = "Recompute SHA1 checksums for collections and books")
 public final class UpdateChecksumCommand implements Callable<Integer> {
 
-    @Option(names = "--archive", required = true, description = "Path to archive directory")
-    private Path archivePath;
+    @Mixin
+    private ArchiveOptions archive;
 
     @Option(names = "--collection", description = "Collection ID (if omitted, processes all collections)")
     private String collectionId;
@@ -44,8 +42,7 @@ public final class UpdateChecksumCommand implements Callable<Integer> {
      */
     @Override
     public Integer call() {
-        if (!Files.isDirectory(archivePath)) {
-            System.err.println("Error: archive path does not exist or is not a directory: " + archivePath);
+        if (!archive.exists()) {
             return 1;
         }
 
@@ -55,7 +52,7 @@ public final class UpdateChecksumCommand implements Callable<Integer> {
         }
 
         try {
-            var store = new FileSystemArchiveStore(archivePath);
+            var store = archive.openStore();
             List<String> errors = new ArrayList<>();
 
             if (bookId != null) {

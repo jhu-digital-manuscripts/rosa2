@@ -19,6 +19,8 @@ import { SearchError } from './ErrorDisplay';
 
 import * as selectors from '../state/selectors';
 import { buildManifestUrl, buildCanvasUrl } from '../utils/urlBuilder';
+import { MAX_RESULT_WINDOW } from '../utils/queryBuilder';
+import { getTranslations, t } from '../../../i18n/jhsearch';
 
 /**
  * Empty state display.
@@ -81,6 +83,11 @@ function ResultsHeader({ viewMode, total }) {
       {total > 0 && (
         <Typography variant="body2" color="text.secondary">
           {total.toLocaleString()} {total === 1 ? 'result' : 'results'}
+        </Typography>
+      )}
+      {total > MAX_RESULT_WINDOW && (
+        <Typography variant="body2" color="text.secondary">
+          {t('resultsLimited', getTranslations(), { limit: MAX_RESULT_WINDOW.toLocaleString() })}
         </Typography>
       )}
     </Box>

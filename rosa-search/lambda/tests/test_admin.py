@@ -5,7 +5,7 @@ _bulk requests, its byte accounting must let a later invocation resume exactly
 where the previous one stopped, and it must reach the end of the object without
 skipping or repeating documents.
 
-Run with:  python3 -m unittest discover -s rosa-search/lambda -v
+Run with:  cd rosa-search/lambda && python3 -m unittest discover -s tests -v
 """
 
 from __future__ import annotations
@@ -57,9 +57,11 @@ class BulkIngest(unittest.TestCase):
 
         app.request = fake_request
         _fake_s3.objects.clear()
+        self._original_batch_lines = app.BULK_BATCH_LINES
 
     def tearDown(self):
         app.request = self._original_request
+        app.BULK_BATCH_LINES = self._original_batch_lines
 
     def ingest_all(self, key, batch_lines=None, deadline=None):
         """Drive bulk_ingest to completion the way init-opensearch.sh does."""
@@ -202,6 +204,60 @@ class BulkIngest(unittest.TestCase):
 
     def test_batch_lines_forced_even(self):
         self.assertEqual(app.BULK_BATCH_LINES % 2, 0)
+
+    def test_crlf_bulk_file_ingests_and_resumes_exactly(self):
+        # A bulk file written on Windows has CRLF line ends. Byte accounting must
+        # follow the real bytes so resume offsets stay exact, and the CR must not
+        # end up inside the JSON sent to _bulk.
+        data = make_bulk(10).replace(b"\n", b"\r\n")
+        _fake_s3.put(BUCKET, "crlf.bulk.json", data)
+        app.BULK_BATCH_LINES = 4
+
+        # Stop after one batch, then resume: the offset must land right after a CRLF.
+        first = app.action_bulk_ingest(
+            {"bucket": BUCKET, "key": "crlf.bulk.json", "start_byte": 0}, 0.0
+        )
+        self.assertFalse(first["done"])
+        self.assertEqual(data[first["next_byte"] - 2 : first["next_byte"]], b"\r\n")
+        rest = app.action_bulk_ingest(
+            {"bucket": BUCKET, "key": "crlf.bulk.json", "start_byte": first["next_byte"]},
+            float("inf"),
+        )
+        self.assertTrue(rest["done"])
+        self.assertEqual(first["indexed"] + rest["indexed"], 10)
+        self.assertEqual(rest["next_byte"], len(data))
+        for _, path, body in self.requests:
+            if path == "/_bulk":
+                self.assertNotIn(b"\r", body)
+                for line in body.rstrip(b"\n").split(b"\n"):
+                    json.loads(line)
+
+    def test_missing_trailing_newline_is_counted(self):
+        data = make_bulk(3).rstrip(b"\n")
+        _fake_s3.put(BUCKET, "nonl.bulk.json", data)
+        results = self.ingest_all("nonl.bulk.json")
+        self.assertEqual(sum(r["indexed"] for r in results), 3)
+        self.assertEqual(results[-1]["next_byte"], len(data))
+
+
+class ClusterSettings(unittest.TestCase):
+    def test_reports_indices_and_analysis_settings(self):
+        original = app.request
+
+        def fake_request(method, path, body=None, content_type="application/json"):
+            if path.startswith("/_cat/indices"):
+                return 200, b'[{"index":"canvas","docs.count":"86253"}]'
+            if path.startswith("/_all/_settings"):
+                return 200, b'{"canvas":{"settings":{"index":{"analysis":{"analyzer":{"latin":{}}}}}}}'
+            raise AssertionError(path)
+
+        app.request = fake_request
+        try:
+            result = app.action_cluster_settings({})
+        finally:
+            app.request = original
+        self.assertEqual(result["indices"][0]["index"], "canvas")
+        self.assertIn("latin", result["settings"]["canvas"]["settings"]["index"]["analysis"]["analyzer"])
 
 
 class RecreateIndex(unittest.TestCase):

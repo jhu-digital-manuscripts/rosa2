@@ -43,13 +43,13 @@ const pageResult = {
   },
 };
 
-function renderResults(configOverrides = {}) {
+function renderResults(configOverrides = {}, total = 2) {
   const state = {
     ...mockReduxState,
     jhsearch: {
       ...mockReduxState.jhsearch,
       config: { ...mockReduxState.jhsearch.config, ...configOverrides },
-      pagination: { ...mockReduxState.jhsearch.pagination, total: 2 },
+      pagination: { ...mockReduxState.jhsearch.pagination, total },
       results: { ...mockReduxState.jhsearch.results, items: [bookResult, pageResult] },
     },
   };
@@ -157,5 +157,17 @@ describe('getBookClickView', () => {
   it('falls back to book for a missing or unknown view', () => {
     expect(getBookClickView(stateWith(undefined))).toBe('book');
     expect(getBookClickView(stateWith('scroll'))).toBe('book');
+  });
+});
+
+describe('SearchResults header', () => {
+  it('says when only the first results can be viewed', () => {
+    renderResults({}, 12345);
+    expect(screen.getByText(/Only the first 10,000 results/)).toBeInTheDocument();
+  });
+
+  it('says nothing about the limit for smaller result sets', () => {
+    renderResults({}, 10000);
+    expect(screen.queryByText(/Only the first/)).toBeNull();
   });
 });

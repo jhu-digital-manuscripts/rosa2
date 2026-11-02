@@ -1,3 +1,6 @@
 # The Kakadu distribution is commercially licensed source code and must not be
 # committed. Copy the vendor ZIP into this directory before building.
 *.zip
+
+# An unpacked Kakadu distribution (e.g. v8_6_1-02130L/) is licensed source too.
+v8_*/

@@ -1,12 +1,10 @@
 package rosa.archive.cli;
 
 import picocli.CommandLine.Command;
+import picocli.CommandLine.Mixin;
 import picocli.CommandLine.Option;
-import rosa.archive.core.FileSystemArchiveStore;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Callable;
@@ -21,18 +19,21 @@ import java.util.concurrent.Callable;
  * issues are printed to stdout; errors are printed to stderr.</p>
  */
 @Command(name = "generate-tei",
-         mixinStandardHelpOptions = true,
-         description = "Generate TEI XML from per-page text transcription files")
+         mixinStandardHelpOptions = true, versionProvider = VersionProvider.class,
+         description = "Generate TEI XML from per-page text transcription files (refuses to replace an existing transcription.xml without --force)")
 public final class GenerateTeiCommand implements Callable<Integer> {
 
-    @Option(names = "--archive", required = true, description = "Path to archive directory")
-    private Path archivePath;
+    @Mixin
+    private ArchiveOptions archive;
 
     @Option(names = "--collection", required = true, description = "Collection ID")
     private String collectionId;
 
     @Option(names = "--book", required = true, description = "Book ID")
     private String bookId;
+
+    @Option(names = "--force", description = "Replace an existing transcription.xml")
+    private boolean force;
 
     /**
      * Executes the TEI generation operation.
@@ -41,17 +42,16 @@ public final class GenerateTeiCommand implements Callable<Integer> {
      */
     @Override
     public Integer call() {
-        if (!Files.isDirectory(archivePath)) {
-            System.err.println("Error: archive path does not exist or is not a directory: " + archivePath);
+        if (!archive.exists()) {
             return 1;
         }
 
         try {
-            var store = new FileSystemArchiveStore(archivePath);
+            var store = archive.openStore();
             List<String> errors = new ArrayList<>();
             List<String> warnings = new ArrayList<>();
 
-            store.generateTEITranscriptions(collectionId, bookId, errors, warnings);
+            store.generateTEITranscriptions(collectionId, bookId, force, errors, warnings);
 
             warnings.forEach(w -> System.out.println("Warning: " + w));
             errors.forEach(System.err::println);

@@ -22,7 +22,7 @@ import java.util.concurrent.Callable;
  * malformed, or reference missing source files are reported as errors.</p>
  */
 @Command(name = "rename-files",
-         mixinStandardHelpOptions = true,
+         mixinStandardHelpOptions = true, versionProvider = VersionProvider.class,
          description = "Rename files in a directory according to a CSV mapping")
 public final class RenameFilesCommand implements Callable<Integer> {
 

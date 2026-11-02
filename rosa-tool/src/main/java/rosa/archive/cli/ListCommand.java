@@ -1,12 +1,10 @@
 package rosa.archive.cli;
 
 import picocli.CommandLine.Command;
+import picocli.CommandLine.Mixin;
 import picocli.CommandLine.Option;
-import rosa.archive.core.FileSystemArchiveStore;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.List;
 import java.util.concurrent.Callable;
 
@@ -18,12 +16,12 @@ import java.util.concurrent.Callable;
  * Output is one name per line to standard output.</p>
  */
 @Command(name = "list",
-         mixinStandardHelpOptions = true,
+         mixinStandardHelpOptions = true, versionProvider = VersionProvider.class,
          description = "List collections or books in the archive")
 public final class ListCommand implements Callable<Integer> {
 
-    @Option(names = "--archive", required = true, description = "Path to archive directory")
-    private Path archivePath;
+    @Mixin
+    private ArchiveOptions archive;
 
     @Option(names = "--collection", description = "Collection ID to list books for")
     private String collectionId;
@@ -35,13 +33,12 @@ public final class ListCommand implements Callable<Integer> {
      */
     @Override
     public Integer call() {
-        if (!Files.isDirectory(archivePath)) {
-            System.err.println("Error: archive path does not exist or is not a directory: " + archivePath);
+        if (!archive.exists()) {
             return 1;
         }
 
         try {
-            var store = new FileSystemArchiveStore(archivePath);
+            var store = archive.openStore();
 
             if (collectionId != null) {
                 List<String> books = store.listBooks(collectionId);

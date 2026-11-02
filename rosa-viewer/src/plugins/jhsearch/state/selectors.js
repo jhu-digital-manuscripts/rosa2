@@ -2,7 +2,7 @@
  * Redux selectors for JHSearch plugin.
  */
 
-import { rowHasQuery, NAME_FACET } from '../utils/queryBuilder';
+import { rowHasQuery, NAME_FACET, MAX_RESULT_WINDOW } from '../utils/queryBuilder';
 
 // ============================================================================
 // Base Selectors
@@ -246,12 +246,22 @@ export const getTotalResults = (state) => getPagination(state).total || 0;
 
 /**
  * Get the total number of pages.
+ *
+ * Only the first `MAX_RESULT_WINDOW` results can be paged to (Opensearch's
+ * `max_result_window`, enforced by the search proxy as `from + size`), so the count is
+ * clamped to the pages that fit inside it. A page size that does not divide the window
+ * loses the partial page at the end.
  */
 export const getTotalPages = (state) => {
   const total = getTotalResults(state);
   const pageSize = getPageSize(state);
-  return Math.ceil(total / pageSize);
+  return Math.min(Math.ceil(total / pageSize), Math.floor(MAX_RESULT_WINDOW / pageSize));
 };
+
+/**
+ * Whether the last search found more results than can be paged to.
+ */
+export const isResultWindowExceeded = (state) => getTotalResults(state) > MAX_RESULT_WINDOW;
 
 /**
  * Get the search results items.

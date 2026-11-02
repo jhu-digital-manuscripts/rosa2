@@ -43,7 +43,6 @@ class Rosa2CliTest {
         assertTrue(output.contains("check"));
         assertTrue(output.contains("list"));
         assertTrue(output.contains("validate-xml"));
-        assertTrue(output.contains("aor-stats"));
         assertTrue(output.contains("update"));
         assertTrue(output.contains("update-image-list"));
         assertTrue(output.contains("crop-images"));
@@ -53,9 +52,17 @@ class Rosa2CliTest {
         assertTrue(output.contains("rename-transcriptions"));
         assertTrue(output.contains("generate-tei"));
         assertTrue(output.contains("check-aor"));
-        assertTrue(output.contains("generate-annotation-map"));
-        assertTrue(output.contains("migrate-tei-metadata"));
         assertTrue(output.contains("decorate-image-list"));
+    }
+
+    @Test
+    void everyCommandIsDocumentedInUsage() throws java.io.IOException {
+        java.nio.file.Path usage = java.nio.file.Path.of("..", "docs", "usage.md");
+        org.junit.jupiter.api.Assumptions.assumeTrue(java.nio.file.Files.exists(usage), "docs/usage.md not present");
+        String doc = java.nio.file.Files.readString(usage);
+        for (String name : new CommandLine(new Rosa2Cli()).getSubcommands().keySet()) {
+            assertTrue(doc.contains("### " + name + "\n"), "docs/usage.md lacks a section for " + name);
+        }
     }
 
     @Test
@@ -99,7 +106,6 @@ class Rosa2CliTest {
             "check",
             "list",
             "validate-xml",
-            "aor-stats",
             "update",
             "update-image-list",
             "crop-images",
@@ -109,8 +115,6 @@ class Rosa2CliTest {
             "rename-transcriptions",
             "generate-tei",
             "check-aor",
-            "generate-annotation-map",
-            "migrate-tei-metadata",
             "decorate-image-list"
     })
     void subcommandHelpExitsWithZero(String subcommand) {
@@ -134,7 +138,6 @@ class Rosa2CliTest {
         assertTrue(subcommands.containsKey("check"));
         assertTrue(subcommands.containsKey("list"));
         assertTrue(subcommands.containsKey("validate-xml"));
-        assertTrue(subcommands.containsKey("aor-stats"));
         assertTrue(subcommands.containsKey("update"));
         assertTrue(subcommands.containsKey("update-image-list"));
         assertTrue(subcommands.containsKey("crop-images"));
@@ -144,10 +147,8 @@ class Rosa2CliTest {
         assertTrue(subcommands.containsKey("rename-transcriptions"));
         assertTrue(subcommands.containsKey("generate-tei"));
         assertTrue(subcommands.containsKey("check-aor"));
-        assertTrue(subcommands.containsKey("generate-annotation-map"));
-        assertTrue(subcommands.containsKey("migrate-tei-metadata"));
         assertTrue(subcommands.containsKey("decorate-image-list"));
-        assertEquals(19, subcommands.size());
+        assertEquals(16, subcommands.size());
     }
 
     @Test

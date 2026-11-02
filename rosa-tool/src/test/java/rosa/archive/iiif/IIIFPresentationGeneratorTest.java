@@ -49,7 +49,7 @@ class IIIFPresentationGeneratorTest {
         JsonNode parsed = mapper.readTree(json);
 
         assertEquals("http://iiif.io/api/presentation/3/context.json", parsed.get("@context").asText());
-        assertEquals("http://example.org/collection", parsed.get("id").asText());
+        assertEquals("http://example.org/collection.json", parsed.get("id").asText());
         assertEquals("Collection", parsed.get("type").asText());
 
         // Label should use "none" key with "rosa2 Archive"
@@ -63,12 +63,12 @@ class IIIFPresentationGeneratorTest {
         JsonNode items = parsed.get("items");
         assertEquals(3, items.size());
 
-        assertEquals("http://example.org/rose/collection", items.get(0).get("id").asText());
+        assertEquals("http://example.org/rose/collection.json", items.get(0).get("id").asText());
         assertEquals("Collection", items.get(0).get("type").asText());
         assertEquals("rose", items.get(0).get("label").get("none").get(0).asText());
 
-        assertEquals("http://example.org/pizan/collection", items.get(1).get("id").asText());
-        assertEquals("http://example.org/aor/collection", items.get(2).get("id").asText());
+        assertEquals("http://example.org/pizan/collection.json", items.get(1).get("id").asText());
+        assertEquals("http://example.org/aor/collection.json", items.get(2).get("id").asText());
     }
 
     @Test
@@ -79,8 +79,8 @@ class IIIFPresentationGeneratorTest {
         String json = writer.writeToString(result);
         JsonNode parsed = mapper.readTree(json);
 
-        assertEquals("collection", parsed.get("id").asText());
-        assertEquals("rose/collection", parsed.get("items").get(0).get("id").asText());
+        assertEquals("collection.json", parsed.get("id").asText());
+        assertEquals("rose/collection.json", parsed.get("items").get(0).get("id").asText());
     }
 
     @Test
@@ -92,7 +92,7 @@ class IIIFPresentationGeneratorTest {
         JsonNode parsed = mapper.readTree(json);
 
         // Empty baseUrl should behave like null (relative paths)
-        assertEquals("collection", parsed.get("id").asText());
+        assertEquals("collection.json", parsed.get("id").asText());
     }
 
     @Test
@@ -108,7 +108,7 @@ class IIIFPresentationGeneratorTest {
         JsonNode parsed = mapper.readTree(json);
 
         assertEquals("http://iiif.io/api/presentation/3/context.json", parsed.get("@context").asText());
-        assertEquals("http://example.org/rose/collection", parsed.get("id").asText());
+        assertEquals("http://example.org/rose/collection.json", parsed.get("id").asText());
         assertEquals("Collection", parsed.get("type").asText());
 
         JsonNode items = parsed.get("items");
@@ -149,7 +149,7 @@ class IIIFPresentationGeneratorTest {
         String json = writer.writeToString(result);
         JsonNode parsed = mapper.readTree(json);
 
-        assertEquals("dlmm/collection", parsed.get("id").asText());
+        assertEquals("dlmm/collection.json", parsed.get("id").asText());
         assertEquals("dlmm/MS100/manifest.json", parsed.get("items").get(0).get("id").asText());
     }
 
@@ -195,7 +195,7 @@ class IIIFPresentationGeneratorTest {
         String topJson = Files.readString(topCollection);
         JsonNode topParsed = mapper.readTree(topJson);
         assertEquals("Collection", topParsed.get("type").asText());
-        assertEquals("http://example.org/collection", topParsed.get("id").asText());
+        assertEquals("http://example.org/collection.json", topParsed.get("id").asText());
 
         // Per-collection file should exist
         Path subCollection = outputDir.resolve("testcollection").resolve("collection.json");
@@ -224,8 +224,8 @@ class IIIFPresentationGeneratorTest {
         JsonNode parsed = mapper.readTree(json);
 
         // Should not have double slashes
-        assertEquals("http://example.org/collection", parsed.get("id").asText());
-        assertEquals("http://example.org/rose/collection", parsed.get("items").get(0).get("id").asText());
+        assertEquals("http://example.org/collection.json", parsed.get("id").asText());
+        assertEquals("http://example.org/rose/collection.json", parsed.get("items").get(0).get("id").asText());
     }
 
     @Test
@@ -237,8 +237,8 @@ class IIIFPresentationGeneratorTest {
 
         // Should match expected format from the task description with sorted keys
         String expected = "{\"@context\":\"http://iiif.io/api/presentation/3/context.json\"," +
-                "\"id\":\"http://example.org/collection\"," +
-                "\"items\":[{\"id\":\"http://example.org/rose/collection\"," +
+                "\"id\":\"http://example.org/collection.json\"," +
+                "\"items\":[{\"id\":\"http://example.org/rose/collection.json\"," +
                 "\"label\":{\"none\":[\"rose\"]},\"type\":\"Collection\"}]," +
                 "\"label\":{\"none\":[\"rosa2 Archive\"]},\"type\":\"Collection\"}";
         assertEquals(expected, json);
@@ -860,6 +860,123 @@ class IIIFPresentationGeneratorTest {
         // Should NOT have rights when no license URL exists
         assertFalse(parsed.has("rights"),
                 "Manifest should not have rights when no license URL exists");
+    }
+
+    @Test
+    void testCanvasesFollowImageListWhenCropListDiffers() throws IOException {
+        // The crop list has an extra missing page and lacks the last page, as rose/Bodmer79 does.
+        // Canvas positions must still follow the image list so they match Ranges and page_num.
+        BookCollection collection = createTestCollection("rose", "Roman de la Rose");
+        BookImage a = new BookImage("Bodmer79.001r.tif", 3000, 4000, false);
+        BookImage b = new BookImage("Bodmer79.001v.tif", 3000, 4000, false);
+        BookImage c = new BookImage("Bodmer79.002r.tif", 3000, 4000, false);
+        ImageList images = new ImageList();
+        images.setImages(List.of(a, b, c));
+        ImageList cropped = new ImageList();
+        cropped.setImages(List.of(
+                new BookImage("Bodmer79.001r.tif", 2800, 3900, false),
+                new BookImage("Bodmer79.029r.tif", 0, 0, true),
+                new BookImage("Bodmer79.001v.tif", 2700, 3800, false)));
+        Book book = new Book();
+        book.setId("Bodmer79");
+        book.setImages(images);
+        book.setCroppedImages(cropped);
+
+        ObjectNode manifest = generator.generateManifest(collection, book,
+                "http://example.org", "https://images.example.com", 2);
+        JsonNode parsed = mapper.readTree(writer.writeToString(manifest));
+        JsonNode canvases = parsed.get("items");
+
+        assertEquals(3, canvases.size(), "one canvas per image list entry");
+        assertEquals("http://example.org/rose/Bodmer79/canvas/1", canvases.get(1).get("id").asText());
+        // 001v is painted from its cropped version
+        assertEquals(2700, canvases.get(1).get("width").asInt());
+        assertEquals("https://images.example.com/rose%2FBodmer79%2Fcropped%2FBodmer79.001v",
+                canvases.get(1).get("items").get(0).get("items").get(0).get("body").get("service").get(0).get("id").asText());
+        // 002r has no cropped version and is painted from the image list entry
+        assertEquals(3000, canvases.get(2).get("width").asInt());
+        assertEquals("https://images.example.com/rose%2FBodmer79%2FBodmer79.002r",
+                canvases.get(2).get("items").get(0).get("items").get(0).get("body").get("service").get(0).get("id").asText());
+        // the manifest thumbnail shows the cropped first image, sized from it
+        JsonNode thumbnail = parsed.get("thumbnail").get(0);
+        assertEquals("https://images.example.com/rose%2FBodmer79%2Fcropped%2FBodmer79.001r/full/80,/0/default.jpg",
+                thumbnail.get("id").asText());
+        assertEquals(Math.round(3900 * 80 / 2800.0), thumbnail.get("height").asInt());
+    }
+
+    @Test
+    void testManifestThumbnailUsesCroppedPathOnlyWhenFirstImageIsCropped() throws IOException {
+        BookCollection collection = createTestCollection("rose", "Roman de la Rose");
+        BookImage cover = new BookImage("X.binding.frontcover.tif", 3000, 4000, false);
+        BookImage page = new BookImage("X.001r.tif", 3000, 4000, false);
+        ImageList images = new ImageList();
+        images.setImages(List.of(cover, page));
+        ImageList cropped = new ImageList();
+        cropped.setImages(List.of(new BookImage("X.001r.tif", 2800, 3900, false)));
+        Book book = new Book();
+        book.setId("X");
+        book.setImages(images);
+        book.setCroppedImages(cropped);
+
+        ObjectNode manifest = generator.generateManifest(collection, book,
+                "http://example.org", "https://images.example.com", 2);
+        JsonNode thumbnail = mapper.readTree(writer.writeToString(manifest)).get("thumbnail").get(0);
+
+        assertEquals("https://images.example.com/rose%2FX%2FX.binding.frontcover/full/80,/0/default.jpg",
+                thumbnail.get("id").asText());
+    }
+
+    @Test
+    void testPaintingBodyUsesMaxSizeForBothImageApiVersions() throws IOException {
+        BookCollection collection = createTestCollection("rose", "Roman de la Rose");
+        Book book = createTestBookWithImage("LudwigXV7", "LudwigXV7.001r.tif", 3000, 4000);
+        BookImage image = book.getImages().getImages().get(0);
+
+        for (int version : new int[] {2, 3}) {
+            ObjectNode canvas = generator.generateCanvas(collection, book, image, 0,
+                    "http://example.org", "https://images.example.com", version, false);
+            JsonNode body = mapper.readTree(writer.writeToString(canvas))
+                    .get("items").get(0).get("items").get(0).get("body");
+            // Image API 3 has no "full" size; "max" is valid in both versions
+            assertEquals("https://images.example.com/rose%2FLudwigXV7%2FLudwigXV7.001r/full/max/0/default.jpg",
+                    body.get("id").asText(), "version " + version);
+            JsonNode service = body.get("service").get(0);
+            assertEquals(version == 3 ? "ImageService3" : "ImageService2", service.get("type").asText());
+            assertEquals(version == 3 ? "level2" : "http://iiif.io/api/image/2/level2.json",
+                    service.get("profile").asText());
+        }
+    }
+
+    @Test
+    void testAnnotationPageIdMatchesCanvasReference() throws IOException {
+        BookCollection collection = createTestCollection("rose", "Roman de la Rose");
+        Book book = createTestBookWithImage("LudwigXV7", "LudwigXV7.001r.tif", 3000, 4000);
+        BookImage image = book.getImages().getImages().get(0);
+
+        ObjectNode canvas = generator.generateCanvas(collection, book, image, 0,
+                "http://example.org", null, 2, true, false);
+        String referenced = mapper.readTree(writer.writeToString(canvas))
+                .get("annotations").get(0).get("id").asText();
+
+        assertEquals("http://example.org/rose/LudwigXV7/canvas/0/annotations.json", referenced,
+                "the reference names the file the page is written to");
+    }
+
+    @Test
+    void testRequiredStatementIsTaggedWithThePermissionLanguage() throws IOException {
+        BookCollection collection = createTestCollection("rose", "Roman de la Rose");
+        collection.getMetadata().setLanguages(new String[] {"en", "fr"});
+        Book book = createTestBookWithImage("LudwigXV7", "LudwigXV7.001r.tif", 3000, 4000);
+        Permission fr = new Permission();
+        fr.setPermission("Images sous licence");
+        book.addPermission(fr, "fr");
+
+        ObjectNode manifest = generator.generateManifest(collection, book, "http://example.org", null, 2);
+        JsonNode statement = mapper.readTree(writer.writeToString(manifest)).get("requiredStatement");
+
+        assertEquals("Attribution", statement.get("label").get("en").get(0).asText());
+        assertFalse(statement.get("value").has("en"), "a French-only permission is not tagged en");
+        assertEquals("Images sous licence", statement.get("value").get("fr").get(0).asText());
     }
 
     // --- Helper methods ---

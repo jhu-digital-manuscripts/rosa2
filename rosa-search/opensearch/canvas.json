@@ -55,13 +55,13 @@
           "type": "custom",
           "char_filter": ["strip_brackets", "latin_char_normalizer"],
           "tokenizer": "standard",
-          "filter": ["lowercase", "latin_stemmer", "asciifolding"]
+          "filter": ["lowercase", "asciifolding", "latin_stemmer", "latin_v_to_u", "latin_j_to_i"]
         },
         "old_french": {
           "type": "custom",
           "char_filter": ["strip_brackets"],
           "tokenizer": "standard",
-          "filter": ["lowercase", "old_french_stemmer", "asciifolding"]
+          "filter": ["lowercase", "french_stemmer", "asciifolding"]
         }
       },
       "filter": {
@@ -134,14 +134,21 @@
           "type": "stemmer_override",
           "rules_path": "analyzers/latin-stemmer-rules.txt"
         },
-        "old_french_stemmer": {
-          "type": "stemmer",
-          "language": "light_french"
+        "latin_v_to_u": {
+          "type": "pattern_replace",
+          "pattern": "v",
+          "replacement": "u"
+        },
+        "latin_j_to_i": {
+          "type": "pattern_replace",
+          "pattern": "j",
+          "replacement": "i"
         }
       }
     }
   },
   "mappings": {
+    "dynamic": "strict",
     "properties": {
       "id": { "type": "keyword" },
       "manifest_id": { "type": "keyword" },
@@ -380,7 +387,7 @@
       "language": { "type": "keyword" },
       "marginalia_language": { "type": "keyword" },
       "topic": { "type": "keyword" },
-      "char_name": { "type": "text", "analyzer": "standard" }
+      "char_name": { "type": "keyword" }
     }
   }
 }

@@ -40,6 +40,9 @@ class ArchiveReadersAnnotatedPageTest {
                                 <marginalia_symbol name="Mars"/>
                                 <X-ref book_title="Adages" language="LA" person="Erasmus" text="Omnium horarum homo"/>
                                 <emphasis method="pen" text="et Luna" type="straight"/>
+                                <internal_ref>
+                                    <target ref="Test:00000034" text="i[nfr]a"/>
+                                </internal_ref>
                             </position>
                         </language>
                     </marginalia>
@@ -95,6 +98,15 @@ class ArchiveReadersAnnotatedPageTest {
         assertEquals(List.of("Sun", "Moon", "Mars"), pos.getSymbols());
         assertEquals(List.of(new XRef("Erasmus", "Adages", "Omnium horarum homo", "LA")), pos.getXRefs());
         assertEquals("et Luna", pos.getEmphasis().getFirst().getReferencedText());
+    }
+
+    @Test
+    void readsInternalReferencesInPositions(@TempDir Path dir) throws IOException {
+        Position pos = read(dir).getMarginalia().getFirst()
+                .getLanguages().getFirst().getPositions().getFirst();
+        assertEquals(1, pos.getInternalRefs().size());
+        assertEquals("Test:00000034", pos.getInternalRefs().getFirst().getTargets().getFirst().targetId());
+        assertEquals("i[nfr]a", pos.getInternalRefs().getFirst().getTargets().getFirst().text());
     }
 
     @Test

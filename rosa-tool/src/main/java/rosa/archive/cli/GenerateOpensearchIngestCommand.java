@@ -1,13 +1,12 @@
 package rosa.archive.cli;
 
 import picocli.CommandLine.Command;
+import picocli.CommandLine.Mixin;
 import picocli.CommandLine.Option;
 import rosa.archive.core.ArchiveStore;
-import rosa.archive.core.FileSystemArchiveStore;
 import rosa.archive.opensearch.OpensearchIngestGenerator;
 
 import java.io.IOException;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.concurrent.Callable;
 
@@ -15,27 +14,26 @@ import java.util.concurrent.Callable;
  * Generates Opensearch bulk ingest files from archive data.
  */
 @Command(name = "generate-opensearch-ingest",
-         mixinStandardHelpOptions = true,
+         mixinStandardHelpOptions = true, versionProvider = VersionProvider.class,
          description = "Generate Opensearch bulk ingest files from archive data")
 public final class GenerateOpensearchIngestCommand implements Callable<Integer> {
 
-    @Option(names = "--archive", required = true, description = "Path to archive directory")
-    private Path archivePath;
+    @Mixin
+    private ArchiveOptions archive;
 
     @Option(names = "--output", required = true, description = "Path to output directory")
     private Path outputPath;
 
     @Override
     public Integer call() {
-        if (!Files.isDirectory(archivePath)) {
-            System.err.println("Error: archive path does not exist or is not a directory: " + archivePath);
+        if (!archive.exists()) {
             return 1;
         }
 
         try {
-            ArchiveStore store = new FileSystemArchiveStore(archivePath);
+            ArchiveStore store = archive.openStore();
             if (store.listCollections().isEmpty()) {
-                System.err.println("Error: archive contains no readable collections: " + archivePath);
+                System.err.println("Error: archive contains no readable collections: " + archive.path());
                 return 1;
             }
 

@@ -5,3 +5,9 @@ http.cors.enabled: true
 http.cors.allow-credentials: true
 http.cors.allow-methods: OPTIONS, HEAD, GET, POST, PUT, DELETE
 http.cors.allow-headers: X-Requested-With, X-Auth-Token, Content-Type, Content-Length, Authorization, Access-Control-Allow-Headers, Accept
+
+# The bundled performance-analyzer plugin logs one ERROR at startup because
+# config/opensearch-performance-analyzer/plugin-stats-metadata does not exist
+# in the Docker image. It is harmless, and the plugin is not used here, so its
+# stats collector is silenced. Takes effect on the next container start.
+logger.org.opensearch.performanceanalyzer.commons.collectors.StatsCollector: fatal

@@ -33,6 +33,11 @@ class FakeBody:
             if line or not self._data.endswith(b"\n"):
                 yield line
 
+    def iter_chunks(self, chunk_size=1024):
+        # Small chunks on purpose, so line boundaries fall inside chunks in tests.
+        for start in range(0, len(self._data), chunk_size):
+            yield self._data[start : start + chunk_size]
+
     def read(self) -> bytes:
         return self._data
 

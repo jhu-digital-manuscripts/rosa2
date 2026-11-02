@@ -248,7 +248,6 @@ public final class JHSearchInfoGenerator {
             case "num_pages" -> new CategoryMetadata("num_pages", "Number of Pages", 100);
             case "num_illustrations" -> new CategoryMetadata("num_illustrations", "Number of Illustrations", 10);
             case "has_transcription" -> new CategoryMetadata("has_transcription", "Transcription");
-            case "repository" -> new CategoryMetadata("repository", "Repository");
             default -> null;
         };
     }

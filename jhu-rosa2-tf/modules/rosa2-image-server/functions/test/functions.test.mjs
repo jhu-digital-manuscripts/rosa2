@@ -1,5 +1,6 @@
-// Unit tests for the CloudFront Functions. Run with:
-//   node --test jhu-rosa2-tf/modules/rosa2-image-server/functions/test/
+// Unit tests for the CloudFront Functions. Run from the repository root with:
+//   node --test 'jhu-rosa2-tf/modules/rosa2-image-server/functions/test/*.test.mjs'
+// or from the module directory with plain `node --test`.
 //
 // Each function is loaded into a fresh vm context, the same way CloudFront
 // evaluates a function file: top-level code plus a global `handler`.
@@ -109,6 +110,38 @@ test('/iiif/2 and /iiif/3 requests pass through untouched', () => {
 test('marker header is stripped even on /iiif/2 passthrough', () => {
   const out = legacyRequest(request(`/iiif/2/${ID}/info.json`, { 'x-rosa-legacy-path': { value: '1' } }));
   assert.equal(out.headers['x-rosa-legacy-path'], undefined);
+});
+
+test('identifiers with a "." or ".." segment are rejected at the edge', () => {
+  for (const id of [
+    '..%2F..%2Fetc%2Fpasswd',
+    '%2E%2E%2F%2E%2E%2Fetc%2Fpasswd',
+    'rose%2F..%2F..%2Fother%2Fx',
+    'rose%2F.%2FDouce195%2FDouce195.001r',
+    '..',
+    '.',
+    'rose%5C..%5Cx',
+  ]) {
+    for (const tail of ['/info.json', '/full/80,/0/default.jpg', '', '/']) {
+      const out = legacyRequest(request(`/iiif/${id}${tail}`));
+      assert.equal(out.statusCode, 400, `${id}${tail}`);
+      assert.equal(out.headers['access-control-allow-origin'].value, '*');
+      assert.equal(out.headers['cache-control'].value, 'no-store');
+      assert.equal(out.uri, undefined);
+    }
+  }
+});
+
+test('identifiers that are not valid percent-encoding are rejected', () => {
+  const out = legacyRequest(request('/iiif/rose%2FDouce195%ZZ/info.json'));
+  assert.equal(out.statusCode, 400);
+});
+
+test('dots inside a segment are allowed', () => {
+  for (const id of [ID, 'rose%2FDouce195%2FDouce195.binding.frontcover', 'aor%2FRCP10549-50v1%2FRCP10549-50v1.001r', 'x..y%2Fz']) {
+    const out = legacyRequest(request(`/iiif/${id}/info.json`));
+    assert.equal(out.uri, `/iiif/2/${id}/info.json`, id);
+  }
 });
 
 test('paths outside /iiif/<id> pass through', () => {

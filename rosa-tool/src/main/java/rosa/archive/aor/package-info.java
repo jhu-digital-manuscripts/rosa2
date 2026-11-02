@@ -1,4 +1,4 @@
 /**
- * Archaeology of Reading (AoR) annotation statistics collection and reporting.
+ * Archaeology of Reading (AoR) transcription checking (check-aor).
  */
 package rosa.archive.aor;

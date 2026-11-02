@@ -1,6 +1,7 @@
 package rosa.archive.cli;
 
 import picocli.CommandLine.Command;
+import picocli.CommandLine.Mixin;
 import picocli.CommandLine.Option;
 import rosa.archive.aor.AoRTranscriptionChecker;
 
@@ -18,12 +19,12 @@ import java.util.concurrent.Callable;
  * consistency with image names.</p>
  */
 @Command(name = "check-aor",
-         mixinStandardHelpOptions = true,
+         mixinStandardHelpOptions = true, versionProvider = VersionProvider.class,
          description = "Validate AoR transcription data against reference spreadsheets")
 public final class CheckAorCommand implements Callable<Integer> {
 
-    @Option(names = "--archive", required = true, description = "Path to archive directory")
-    private Path archivePath;
+    @Mixin
+    private ArchiveOptions archive;
 
     @Option(names = "--collection", required = true, description = "Collection ID")
     private String collectionId;
@@ -41,8 +42,7 @@ public final class CheckAorCommand implements Callable<Integer> {
      */
     @Override
     public Integer call() {
-        if (!Files.isDirectory(archivePath)) {
-            System.err.println("Error: archive path does not exist or is not a directory: " + archivePath);
+        if (!archive.exists()) {
             return 1;
         }
 
@@ -51,7 +51,7 @@ public final class CheckAorCommand implements Callable<Integer> {
             return 1;
         }
 
-        var checker = new AoRTranscriptionChecker(archivePath, spreadsheetDir);
+        var checker = new AoRTranscriptionChecker(archive.path(), spreadsheetDir);
         List<String> errors = checker.run(collectionId, bookId);
 
         errors.forEach(System.out::println);

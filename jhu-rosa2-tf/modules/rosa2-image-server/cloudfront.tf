@@ -218,6 +218,20 @@ resource "aws_cloudfront_distribution" "this" {
     response_headers_policy_id = local.behaviour_defaults.response_headers_policy_id
   }
 
+  # Cantaloupe marks its error responses no-cache, and CloudFront's own
+  # minimum for caching 5xx responses is 10 seconds, so a failing origin is
+  # retried soon without being hammered. Made explicit here so the behaviour
+  # does not depend on the CloudFront default. No custom error page: there is
+  # no static origin to serve one from, and a CloudFront Function cannot
+  # replace a response body.
+  dynamic "custom_error_response" {
+    for_each = [500, 502, 503, 504]
+    content {
+      error_code            = custom_error_response.value
+      error_caching_min_ttl = 10
+    }
+  }
+
   restrictions {
     geo_restriction {
       restriction_type = "none"

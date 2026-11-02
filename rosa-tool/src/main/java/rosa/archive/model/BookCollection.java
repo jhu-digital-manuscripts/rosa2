@@ -1,6 +1,5 @@
 package rosa.archive.model;
 
-import rosa.archive.model.aor.AorLocation;
 
 import java.util.Arrays;
 import java.util.Map;
@@ -25,7 +24,6 @@ public class BookCollection implements HasId {
     private ReferenceSheet locationsRef;
     private BookReferenceSheet booksRef;
     private CollectionMetadata metadata;
-    private Map<String, AorLocation> annotationMap;
 
     /**
      * Creates an empty BookCollection.
@@ -311,24 +309,6 @@ public class BookCollection implements HasId {
         return metadata != null ? metadata.getParents() : new String[0];
     }
 
-    /**
-     * Returns the annotation location map for this collection.
-     *
-     * @return the annotation map, or {@code null}
-     */
-    public Map<String, AorLocation> getAnnotationMap() {
-        return annotationMap;
-    }
-
-    /**
-     * Sets the annotation location map.
-     *
-     * @param annotationMap the annotation map
-     */
-    public void setAnnotationMap(Map<String, AorLocation> annotationMap) {
-        this.annotationMap = annotationMap;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -344,15 +324,14 @@ public class BookCollection implements HasId {
                 Objects.equals(peopleRef, that.peopleRef) &&
                 Objects.equals(locationsRef, that.locationsRef) &&
                 Objects.equals(booksRef, that.booksRef) &&
-                Objects.equals(metadata, that.metadata) &&
-                Objects.equals(annotationMap, that.annotationMap);
+                Objects.equals(metadata, that.metadata);
     }
 
     @Override
     public int hashCode() {
         int result = Objects.hash(id, characterNames, illustrationTitles, narrativeSections,
                 checksums, missingImage, htmlAnnotations, peopleRef, locationsRef,
-                booksRef, metadata, annotationMap);
+                booksRef, metadata);
         result = 31 * result + Arrays.hashCode(books);
         return result;
     }
@@ -372,7 +351,6 @@ public class BookCollection implements HasId {
                 ", locationsRef=" + locationsRef +
                 ", booksRef=" + booksRef +
                 ", metadata=" + metadata +
-                ", annotationMap=" + annotationMap +
                 '}';
     }
 }

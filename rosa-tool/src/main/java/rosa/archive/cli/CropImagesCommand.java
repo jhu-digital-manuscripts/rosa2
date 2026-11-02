@@ -1,12 +1,10 @@
 package rosa.archive.cli;
 
 import picocli.CommandLine.Command;
+import picocli.CommandLine.Mixin;
 import picocli.CommandLine.Option;
-import rosa.archive.core.FileSystemArchiveStore;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Callable;
@@ -22,12 +20,12 @@ import java.util.concurrent.Callable;
  * books in the specified collection are processed.</p>
  */
 @Command(name = "crop-images",
-         mixinStandardHelpOptions = true,
-         description = "Crop images based on stored crop data")
+         mixinStandardHelpOptions = true, versionProvider = VersionProvider.class,
+         description = "Crop images into cropped/ using {book}.crop.txt and write {book}.images.crop.csv")
 public final class CropImagesCommand implements Callable<Integer> {
 
-    @Option(names = "--archive", required = true, description = "Path to archive directory")
-    private Path archivePath;
+    @Mixin
+    private ArchiveOptions archive;
 
     @Option(names = "--collection", required = true, description = "Collection ID")
     private String collectionId;
@@ -35,7 +33,7 @@ public final class CropImagesCommand implements Callable<Integer> {
     @Option(names = "--book", description = "Book ID (if omitted, processes all books in collection)")
     private String bookId;
 
-    @Option(names = "--force", description = "Overwrite existing cropped images")
+    @Option(names = "--force", description = "Overwrite existing cropped images and the cropped image list")
     private boolean force;
 
     /**
@@ -45,13 +43,12 @@ public final class CropImagesCommand implements Callable<Integer> {
      */
     @Override
     public Integer call() {
-        if (!Files.isDirectory(archivePath)) {
-            System.err.println("Error: archive path does not exist or is not a directory: " + archivePath);
+        if (!archive.exists()) {
             return 1;
         }
 
         try {
-            var store = new FileSystemArchiveStore(archivePath);
+            var store = archive.openStore();
             List<String> errors = new ArrayList<>();
 
             if (bookId != null) {

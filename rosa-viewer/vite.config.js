@@ -42,9 +42,13 @@ const server = {
       target: 'http://localhost:3000',
       changeOrigin: true,
     },
-    // Opensearch endpoints - proxy to local Opensearch instance.
-    // The jhsearch.json specifies /_search, and the opensearch service
-    // may rewrite it to /manifest/_search or /canvas/_search
+    // Opensearch endpoints - proxy to the local Opensearch instance.
+    // jhsearch.json names /_search; the opensearch service may rewrite it to
+    // /manifest/_search or /canvas/_search. Like the AWS search proxy, /_search
+    // is sent to the two rosa indexes only: a bare /_search would also hit
+    // Opensearch's own plugin indexes (.plugins-ml-config, top_queries-*),
+    // where sorting on label.keyword fails and the viewer reports
+    // "1 of 4 shards failed".
     '/manifest/_search': {
       target: 'http://localhost:9200',
       changeOrigin: true,
@@ -56,6 +60,7 @@ const server = {
     '/_search': {
       target: 'http://localhost:9200',
       changeOrigin: true,
+      rewrite: (path) => path.replace(/^\/_search/, '/manifest,canvas/_search'),
     },
   },
 };

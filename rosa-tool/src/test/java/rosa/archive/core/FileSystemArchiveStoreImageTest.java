@@ -44,8 +44,8 @@ class FileSystemArchiveStoreImageTest {
         List<String> lines = Files.readAllLines(imagesCsv, StandardCharsets.UTF_8);
         assertEquals(2, lines.size());
         // Sorted alphabetically
-        assertTrue(lines.get(0).startsWith("page001.tif,100,200,false"));
-        assertTrue(lines.get(1).startsWith("page002.jpg,150,300,false"));
+        assertEquals("page001.tif,100,200", lines.get(0));
+        assertEquals("page002.jpg,150,300", lines.get(1));
     }
 
     @Test
@@ -58,20 +58,20 @@ class FileSystemArchiveStoreImageTest {
 
         // Pre-existing image list
         Path imagesCsv = bookDir.resolve("testbook.images.csv");
-        Files.writeString(imagesCsv, "existing content");
+        Files.writeString(imagesCsv, "page001.tif,1,1,hand label\n");
 
         var store = new FileSystemArchiveStore(archiveDir);
         List<String> errors = new ArrayList<>();
 
         // Without force, should not overwrite
         store.generateAndWriteImageList("testcol", "testbook", false, errors);
-        assertEquals("existing content", Files.readString(imagesCsv));
+        assertEquals("page001.tif,1,1,hand label\n", Files.readString(imagesCsv));
 
         // With force, should overwrite
         store.generateAndWriteImageList("testcol", "testbook", true, errors);
         String content = Files.readString(imagesCsv);
-        assertNotEquals("existing content", content);
-        assertTrue(content.contains("page001.tif"));
+        // Dimensions come from the file, the hand-written label is kept
+        assertEquals("page001.tif,100,200,hand label\n", content);
     }
 
     @Test
@@ -137,9 +137,9 @@ class FileSystemArchiveStoreImageTest {
         // Create a test image 200x400
         writeTestImage(bookDir.resolve("page001.tif"), 200, 400);
 
-        // Create crop file: crop to region (10, 20, 100, 200) → 90x180
+        // Crop file: fractions removed from left, right, top, bottom → region (10, 20, 100, 200), 90x180
         Files.writeString(bookDir.resolve("testbook.crop.txt"),
-                "page001.tif,10,20,100,200\n");
+                "page001.tif 0.05 0.5 0.05 0.5\n");
 
         var store = new FileSystemArchiveStore(archiveDir);
         List<String> errors = new ArrayList<>();
@@ -165,7 +165,7 @@ class FileSystemArchiveStoreImageTest {
         Files.createDirectories(croppedDir);
 
         writeTestImage(bookDir.resolve("page001.tif"), 200, 400);
-        Files.writeString(bookDir.resolve("testbook.crop.txt"), "page001.tif,10,20,100,200\n");
+        Files.writeString(bookDir.resolve("testbook.crop.txt"), "page001.tif 0.05 0.5 0.05 0.5\n");
 
         // Pre-existing cropped file (tiny 1x1 image)
         writeTestImage(croppedDir.resolve("page001.tif"), 1, 1);
@@ -206,8 +206,8 @@ class FileSystemArchiveStoreImageTest {
         Files.createDirectories(bookDir);
 
         writeTestImage(bookDir.resolve("page001.tif"), 100, 100);
-        // Crop region exceeds image bounds
-        Files.writeString(bookDir.resolve("testbook.crop.txt"), "page001.tif,0,0,200,200\n");
+        // Left and right margins together exceed the width
+        Files.writeString(bookDir.resolve("testbook.crop.txt"), "page001.tif 0.6 0.6 0 0\n");
 
         var store = new FileSystemArchiveStore(archiveDir);
         List<String> errors = new ArrayList<>();
@@ -224,7 +224,7 @@ class FileSystemArchiveStoreImageTest {
         Path bookDir = archiveDir.resolve("testcol").resolve("testbook");
         Files.createDirectories(bookDir);
 
-        Files.writeString(bookDir.resolve("testbook.crop.txt"), "missing.tif,0,0,50,50\n");
+        Files.writeString(bookDir.resolve("testbook.crop.txt"), "missing.tif 0 0 0.5 0.5\n");
 
         var store = new FileSystemArchiveStore(archiveDir);
         List<String> errors = new ArrayList<>();
@@ -257,8 +257,8 @@ class FileSystemArchiveStoreImageTest {
 
         List<String> lines = Files.readAllLines(cropCsv, StandardCharsets.UTF_8);
         assertEquals(2, lines.size());
-        assertTrue(lines.get(0).startsWith("page001.tif,90,180,false"));
-        assertTrue(lines.get(1).startsWith("page002.jpg,120,240,false"));
+        assertEquals("page001.tif,90,180", lines.get(0));
+        assertEquals("page002.jpg,120,240", lines.get(1));
     }
 
     @Test

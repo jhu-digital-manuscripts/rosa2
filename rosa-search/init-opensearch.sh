@@ -9,7 +9,7 @@
 #   4. Stages the definitions and bulk files in S3
 #   5. Drops and recreates the manifest and canvas indexes
 #   6. Ingests the bulk data
-#   7. Verifies the document counts and the Latin analyzer
+#   7. Verifies the document counts against the bulk files and the Latin analyzer
 #
 # The Opensearch domain has no public endpoint, so steps 5 through 7 run through
 # the admin Lambda in the VPC rather than against the domain directly. That is
@@ -31,12 +31,15 @@
 #   --skip-index      Do not drop and recreate the indexes
 #   --skip-ingest     Do not ingest bulk data
 #   --archive DIR     Archive directory (default: ../archive)
+#   --jar PATH        rosa-tool.jar to run (default: ../rosa-tool/target/rosa-tool.jar)
 #   --tf-dir DIR      OpenTofu workspace (default: ../jhu-rosa2-tf)
 #   --yes             Do not prompt before dropping indexes
 #   --help            Show this help message
 #
 # Recreating an index deletes every document in it. The script prompts before
-# doing so unless --yes is given.
+# doing so unless --yes is given. The script exits non-zero if any index cannot be
+# created, if any bulk document is rejected, or if an index ends up with fewer
+# documents than its bulk files contain.
 
 set -euo pipefail
 
@@ -82,7 +85,7 @@ error() {
 }
 
 usage() {
-    sed -n '3,39p' "$0" | sed 's/^# \?//'
+    sed -n '3,42p' "$0" | sed 's/^# \?//'
     exit "${1:-0}"
 }
 
@@ -131,6 +134,11 @@ while [[ $# -gt 0 ]]; do
         --tf-dir)
             [[ $# -ge 2 ]] || error "--tf-dir requires a value"
             TF_DIR="$2"
+            shift 2
+            ;;
+        --jar)
+            [[ $# -ge 2 ]] || error "--jar requires a value"
+            JAR_PATH="$2"
             shift 2
             ;;
         --yes|-y)
@@ -271,7 +279,9 @@ confirm_destructive() {
     log_warn "domain '$DOMAIN_NAME' ($ENVIRONMENT). All indexed documents will be lost."
     echo ""
     local reply
-    read -r -p "Type the environment name ('$ENVIRONMENT') to continue: " reply
+    if ! read -r -p "Type the environment name ('$ENVIRONMENT') to continue: " reply; then
+        error "No confirmation read (stdin closed). Pass --yes to run non-interactively."
+    fi
     if [[ "$reply" != "$ENVIRONMENT" ]]; then
         error "Aborted."
     fi
@@ -399,7 +409,8 @@ upload_staging_data() {
     aws s3 rm "s3://$INGEST_BUCKET/$INGEST_PREFIX/bulk/" \
         --recursive \
         --region "$AWS_REGION_OUT" \
-        --only-show-errors || true
+        --only-show-errors \
+        || error "Could not clear s3://$INGEST_BUCKET/$INGEST_PREFIX/bulk/. Check the credentials' S3 permissions."
 
     local index
     for index in "${INDEXES[@]}"; do
@@ -434,7 +445,8 @@ check_cluster() {
 Check that the Lambda is attached to the VPC and that its security group is
 permitted by the domain's security group. An error of \"[Errno 16] Device or
 resource busy\" after about 20 seconds means the endpoint could not be resolved:
-set dns_server_cidrs to the VPC's DNS servers."
+confirm the VPC has DNS resolution and DNS hostnames enabled (the Lambda uses the
+VPC's AmazonProvidedDNS resolver)."
 
     status=$(jq -r '.result.status' <<< "$result")
     log_info "  cluster status: $status"
@@ -545,47 +557,75 @@ ingest_bulk_data() {
     log_info "Indexed $total_indexed document(s), $total_failed failure(s)"
 
     if [[ "$total_failed" -gt 0 ]]; then
-        log_warn "Some documents were rejected. Check $ADMIN_LAMBDA logs for detail."
+        error "$total_failed document(s) were rejected by the Bulk API. The indexes are
+incomplete. The first error of each batch is printed above; the full list is in
+the $ADMIN_LAMBDA logs. Fix the cause (usually a field that is not in the strict
+mapping) and rerun with --skip-generate."
     fi
+}
+
+# Number of documents destined for an index across the bulk files: one action
+# line per document, of the form {"index":{"_index":"<index>",...}}.
+expected_count() {
+    local index="$1"
+    local f total=0 n
+    for f in "$BULK_DIR"/*.bulk.json; do
+        [[ -f "$f" ]] || continue
+        n=$(grep -c "^{\"index\":{\"_index\":\"$index\"" "$f" || true)
+        total=$((total + n))
+    done
+    echo "$total"
 }
 
 # Verify the result: document counts and the Latin analyzer.
 verify() {
     log_info "Verifying..."
 
-    local index result count
+    local index result count expected failed=false
     for index in "${INDEXES[@]}"; do
         invoke_admin "$(jq -nc --arg i "$index" '{action:"refresh", index:$i}')" > /dev/null \
             || log_warn "  could not refresh $index"
 
         if result=$(invoke_admin "$(jq -nc --arg i "$index" '{action:"count", index:$i}')"); then
             count=$(jq -r '.result.count' <<< "$result")
-            log_info "  $index: $count document(s)"
-            if [[ "$count" == "0" ]]; then
-                log_warn "  $index is empty"
+            expected=$(expected_count "$index")
+            if [[ "$SKIP_INGEST" == "true" ]]; then
+                log_info "  $index: $count document(s)"
+            elif [[ "$count" == "$expected" ]]; then
+                log_info "  $index: $count document(s), matching the bulk files"
+            else
+                log_error "  $index: $count document(s), but the bulk files contain $expected"
+                failed=true
             fi
         else
             log_warn "  could not count $index"
         fi
     done
+    if [[ "$failed" == "true" ]]; then
+        error "Document counts do not match the bulk files. Check the ingest output above."
+    fi
 
     # The Latin analyzer is the part most likely to be silently wrong: a missing
     # dictionary fails index creation loudly, but a stale package simply returns
-    # unlemmatised tokens. 'dividunt' should normalize v to u, match the rule for
-    # 'diuidunt', and come back as the lemma 'divido'.
+    # unlemmatised tokens. Every spelling of the same word has to reach one token:
+    # the inflected form 'dividunt' (v normalized to u, matched by the rule for
+    # 'diuidunt', lemmatized to 'divido', then folded to 'diuido'), the dictionary
+    # headword 'divido' itself, and the macron spelling 'dīvidunt'.
     log_info "  checking the Latin analyzer..."
-    local tokens
-    if result=$(invoke_admin '{"action":"analyze","index":"canvas","analyzer":"latin","text":"dividunt"}'); then
-        tokens=$(jq -r '.result.tokens | join(" ")' <<< "$result")
-        if [[ "$tokens" == "divido" ]]; then
-            log_info "    latin analyzer OK ('dividunt' -> '$tokens')"
+    local word tokens
+    for word in dividunt divido dīvidunt; do
+        if result=$(invoke_admin "$(jq -nc --arg t "$word" '{action:"analyze", index:"canvas", analyzer:"latin", text:$t}')"); then
+            tokens=$(jq -r '.result.tokens | join(" ")' <<< "$result")
+            if [[ "$tokens" == "diuido" ]]; then
+                log_info "    latin analyzer OK ('$word' -> '$tokens')"
+            else
+                log_warn "    latin analyzer returned '$tokens' for '$word', expected 'diuido'."
+                log_warn "    The stemmer dictionary or analyzer definition may be stale. Re-apply $TF_DIR and rerun."
+            fi
         else
-            log_warn "    latin analyzer returned '$tokens', expected 'divido'."
-            log_warn "    The stemmer dictionary may be stale. Re-apply $TF_DIR and rerun."
+            log_warn "    could not run the analyzer check for '$word'"
         fi
-    else
-        log_warn "    could not run the analyzer check"
-    fi
+    done
 }
 
 print_summary() {
@@ -633,7 +673,9 @@ main() {
         generate_bulk_data
     else
         log_info "Skipping bulk generation (--skip-generate)"
-        [[ -d "$BULK_DIR" ]] || error "No bulk files at $BULK_DIR. Run without --skip-generate."
+        if ! compgen -G "$BULK_DIR/*.bulk.json" > /dev/null; then
+            error "No *.bulk.json files in $BULK_DIR. Run without --skip-generate."
+        fi
     fi
 
     prepare_index_definitions

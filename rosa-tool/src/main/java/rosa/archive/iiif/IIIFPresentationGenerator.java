@@ -7,6 +7,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -47,6 +48,9 @@ public final class IIIFPresentationGenerator {
     /** Width of thumbnails, in pixels. */
     private static final int THUMBNAIL_WIDTH = 80;
 
+    /** Profile of the JHSearch service: the document describing it. */
+    public static final String JHSEARCH_PROFILE = "https://github.com/jhu-digital-manuscripts/rosa2/blob/main/docs/search.md";
+
     /** File name of the published TEI book description, next to manifest.json. */
     public static final String DESCRIPTION_FILE = "description.xml";
 
@@ -58,6 +62,9 @@ public final class IIIFPresentationGenerator {
     public static final String TEI_PROFILE = "http://www.tei-c.org/ns/1.0";
 
     private final IIIFJsonWriter writer;
+
+    /** Collections by id, set by {@link #generate} so collection items can carry labels. */
+    private Map<String, BookCollection> collectionsById = Map.of();
     private final ObjectMapper mapper;
 
     /** URL template for the annotation stylesheet, or null for none. */
@@ -126,6 +133,8 @@ public final class IIIFPresentationGenerator {
                 childCollectionIds.add(collectionId);
             }
         }
+        collectionsById = loadedCollections;
+        int skippedBooks = 0;
 
         // Generate top-level collection (excluding child collections from items)
         ObjectNode topCollection = generateTopCollection(collectionIds, baseUrl, childCollectionIds);
@@ -148,6 +157,7 @@ public final class IIIFPresentationGenerator {
                 if (images == null || images.getImages().isEmpty()) {
                     System.err.println("WARNING: Skipping book '" + bookId + "' in collection '"
                             + collectionId + "': no images");
+                    skippedBooks++;
                     continue;
                 }
 
@@ -157,18 +167,16 @@ public final class IIIFPresentationGenerator {
                 // Collect first image ID for sub-collection thumbnail
                 bookFirstImages.put(bookId, images.getImages().get(0).getId());
 
-                // Determine the painting image list: prefer cropped images if available
-                ImageList croppedImages = book.getCroppedImages();
-                boolean bookHasCropped = croppedImages != null && !croppedImages.getImages().isEmpty();
-                bookCroppedFlags.put(bookId, bookHasCropped);
-                List<BookImage> paintingImageList = bookHasCropped
-                        ? croppedImages.getImages() : images.getImages();
+                // Canvases follow the image list; cropped images only change what is painted
+                List<BookImage> imageList = images.getImages();
+                Map<String, BookImage> croppedById = croppedImagesById(book);
+                bookCroppedFlags.put(bookId, croppedById.containsKey(imageList.get(0).getId()));
 
                 // Generate annotation pages first to know if reference is needed
-                boolean[] hasAnnotationsArray = new boolean[paintingImageList.size()];
+                boolean[] hasAnnotationsArray = new boolean[imageList.size()];
 
-                for (int i = 0; i < paintingImageList.size(); i++) {
-                    BookImage image = paintingImageList.get(i);
+                for (int i = 0; i < imageList.size(); i++) {
+                    BookImage image = imageList.get(i);
                     ObjectNode annotationPage = generateAnnotationPage(collection, book, image, i, baseUrl);
                     hasAnnotationsArray[i] = (annotationPage != null);
 
@@ -213,6 +221,10 @@ public final class IIIFPresentationGenerator {
 
             writer.write(subCollection, outputDir.resolve(collectionId).resolve("collection.json"));
         }
+
+        if (skippedBooks > 0) {
+            System.err.println("WARNING: " + skippedBooks + " book(s) skipped because they have no images");
+        }
     }
 
     /**
@@ -238,7 +250,7 @@ public final class IIIFPresentationGenerator {
     public ObjectNode generateTopCollection(List<String> collectionIds, String baseUrl, Set<String> childCollectionIds) {
         ObjectNode node = mapper.createObjectNode();
         node.put("@context", CONTEXT);
-        node.put("id", buildId(baseUrl, "collection"));
+        node.put("id", buildId(baseUrl, "collection.json"));
         node.put("type", "Collection");
         node.set("label", languageMap("none", "rosa2 Archive"));
 
@@ -249,9 +261,9 @@ public final class IIIFPresentationGenerator {
                 continue;
             }
             ObjectNode item = mapper.createObjectNode();
-            item.put("id", buildId(baseUrl, collectionId + "/collection"));
+            item.put("id", buildId(baseUrl, collectionId + "/collection.json"));
             item.put("type", "Collection");
-            item.set("label", languageMap("none", collectionId));
+            item.set("label", collectionItemLabel(collectionId));
             items.add(item);
         }
         node.set("items", items);
@@ -298,7 +310,7 @@ public final class IIIFPresentationGenerator {
      * @param collection       the book collection
      * @param bookLabels       a map of bookId to label for each book in this collection
      * @param bookFirstImages  a map of bookId to first image ID, or {@code null} for no thumbnails
-     * @param bookCroppedFlags a map of bookId to whether cropped images are available, or {@code null}
+     * @param bookCroppedFlags a map of bookId to whether the book's first image has a cropped version, or {@code null}
      * @param baseUrl          the base URL prefix, or {@code null} for relative IDs
      * @param imageBaseUrl     the base URL for IIIF Image API services, or {@code null} to use baseUrl
      * @return the sub-collection as a JSON ObjectNode
@@ -311,7 +323,7 @@ public final class IIIFPresentationGenerator {
 
         ObjectNode node = mapper.createObjectNode();
         node.put("@context", CONTEXT);
-        node.put("id", buildId(baseUrl, collectionId + "/collection"));
+        node.put("id", buildId(baseUrl, collectionId + "/collection.json"));
         node.put("type", "Collection");
 
         String label = collection.getLabel() != null ? collection.getLabel() : collectionId;
@@ -324,9 +336,9 @@ public final class IIIFPresentationGenerator {
         if (children != null && children.length > 0) {
             for (String childId : children) {
                 ObjectNode item = mapper.createObjectNode();
-                item.put("id", buildId(baseUrl, childId + "/collection"));
+                item.put("id", buildId(baseUrl, childId + "/collection.json"));
                 item.put("type", "Collection");
-                item.set("label", languageMap(lang, childId));
+                item.set("label", collectionItemLabel(childId));
                 items.add(item);
             }
         }
@@ -399,24 +411,34 @@ public final class IIIFPresentationGenerator {
             node.set("metadata", metadataArray);
         }
 
-        // requiredStatement for attribution/permission (prefer English)
-        Permission permission = book.getPermission("en");
-        if (permission == null) {
-            Permission[] perms = book.getPermissionsInAllLanguages();
-            if (perms != null && perms.length > 0) {
-                permission = perms[0];
+        // requiredStatement for attribution/permission: English, else the first
+        // collection language that has one, tagged with that language
+        String permissionLang = "en";
+        Permission permission = book.getPermission(permissionLang);
+        if (permission == null && collection.getAllSupportedLanguages() != null) {
+            for (String l : collection.getAllSupportedLanguages()) {
+                permission = book.getPermission(l);
+                if (permission != null) {
+                    permissionLang = l;
+                    break;
+                }
             }
         }
         if (permission != null && permission.getPermission() != null && !permission.getPermission().isEmpty()) {
             ObjectNode requiredStatement = mapper.createObjectNode();
             requiredStatement.set("label", languageMap("en", "Attribution"));
-            requiredStatement.set("value", languageMap("en", permission.getPermission()));
+            requiredStatement.set("value", languageMap(permissionLang, permission.getPermission()));
             node.set("requiredStatement", requiredStatement);
         }
 
-        // rights - license URL from metadata (IIIF 3.0: must be CC or RightsStatements.org URI)
+        // rights - license URL from metadata. IIIF 3.0 requires a Creative Commons or
+        // RightsStatements.org URI; anything else is written as-is with a warning.
         String licenseUrl = book.getLicenseUrl();
         if (licenseUrl != null && !licenseUrl.isEmpty()) {
+            if (!licenseUrl.contains("creativecommons.org/") && !licenseUrl.contains("rightsstatements.org/")) {
+                System.err.println("WARNING: rights of '" + collectionId + "/" + bookId
+                        + "' is not a Creative Commons or RightsStatements.org URI: " + licenseUrl);
+            }
             node.put("rights", licenseUrl);
         }
 
@@ -440,28 +462,27 @@ public final class IIIFPresentationGenerator {
             node.set("behavior", behavior);
         }
 
-        // Determine if cropped images are available
-        ImageList croppedImageList = book.getCroppedImages();
-        boolean hasCropped = croppedImageList != null && !croppedImageList.getImages().isEmpty();
-        List<BookImage> paintingImages = hasCropped ? croppedImageList.getImages() : images;
+        // Cropped images, when present, replace what a canvas paints but never change the
+        // canvas sequence, which follows the image list like Ranges and Opensearch page_num
+        Map<String, BookImage> croppedById = croppedImagesById(book);
 
-        // Thumbnail from first image, sized from the image it shows (the cropped one if used)
+        // Thumbnail from the first image, sized from the image it shows (the cropped one if it exists)
         if (!images.isEmpty()) {
             BookImage firstImage = images.get(0);
-            BookImage shown = hasCropped
-                    ? paintingImages.stream().filter(i -> firstImage.getId().equals(i.getId())).findFirst().orElse(null)
-                    : firstImage;
-            String imageServiceId = buildImageServiceId(baseUrl, imageBaseUrl, collectionId, bookId, firstImage.getId(), hasCropped);
-            node.set("thumbnail", thumbnailArray(imageServiceId,
-                    shown != null ? shown.getWidth() : 0, shown != null ? shown.getHeight() : 0));
+            BookImage shown = croppedById.get(firstImage.getId());
+            BookImage sized = shown != null ? shown : firstImage;
+            String imageServiceId = buildImageServiceId(baseUrl, imageBaseUrl, collectionId, bookId,
+                    firstImage.getId(), shown != null);
+            node.set("thumbnail", thumbnailArray(imageServiceId, sized.getWidth(), sized.getHeight()));
         }
 
-        // Canvas items - use cropped images if available
+        // Canvas items, one per image in the image list
         ArrayNode canvasItems = mapper.createArrayNode();
-        for (int i = 0; i < paintingImages.size(); i++) {
-            BookImage image = paintingImages.get(i);
+        for (int i = 0; i < images.size(); i++) {
+            BookImage image = images.get(i);
             boolean hasAnnotations = hasAnnotationsArray != null && i < hasAnnotationsArray.length ? hasAnnotationsArray[i] : false;
-            ObjectNode canvas = generateCanvas(collection, book, image, i, baseUrl, imageBaseUrl, imageApiVersion, hasAnnotations, hasCropped);
+            ObjectNode canvas = generateCanvas(collection, book, image, croppedById.get(image.getId()), i,
+                    baseUrl, imageBaseUrl, imageApiVersion, hasAnnotations);
             canvasItems.add(canvas);
         }
         node.set("items", canvasItems);
@@ -512,14 +533,41 @@ public final class IIIFPresentationGenerator {
      * @param imageBaseUrl    the base URL for IIIF Image API services, or {@code null} to use baseUrl
      * @param imageApiVersion the IIIF Image API version (2 or 3)
      * @param hasAnnotations  whether this canvas has an associated annotation page
-     * @param cropped         whether to use cropped image paths
+     * @param cropped         whether to use cropped image paths for this image
      * @return the Canvas as a JSON ObjectNode
      */
     public ObjectNode generateCanvas(BookCollection collection, Book book, BookImage image,
                                      int index, String baseUrl, String imageBaseUrl, int imageApiVersion,
                                      boolean hasAnnotations, boolean cropped) {
+        return generateCanvas(collection, book, image, cropped ? image : null, index,
+                baseUrl, imageBaseUrl, imageApiVersion, hasAnnotations);
+    }
+
+    /**
+     * Generates a Canvas for a single book image. The canvas identity, label and position
+     * come from the image list entry; when a cropped version exists it is what the canvas
+     * paints, so its dimensions and the {@code cropped/} image service id are used.
+     *
+     * @param collection      the parent collection
+     * @param book            the book containing the image
+     * @param image           the image list entry
+     * @param cropped         the cropped image list entry for the same image, or {@code null}
+     * @param index           the zero-based index of the image in the image list
+     * @param baseUrl         the base URL prefix, or {@code null} for relative IDs
+     * @param imageBaseUrl    the base URL for IIIF Image API services, or {@code null} to use baseUrl
+     * @param imageApiVersion the IIIF Image API version (2 or 3)
+     * @param hasAnnotations  whether this canvas has an associated annotation page
+     * @return the Canvas as a JSON ObjectNode
+     */
+    public ObjectNode generateCanvas(BookCollection collection, Book book, BookImage image, BookImage cropped,
+                                     int index, String baseUrl, String imageBaseUrl, int imageApiVersion,
+                                     boolean hasAnnotations) {
         String collectionId = collection.getId();
         String bookId = book.getId();
+        // A cropped entry marked missing has no cropped file; the uncropped image is painted
+        boolean useCropped = cropped != null && !cropped.isMissing();
+        BookImage painted = useCropped ? cropped : image;
+        boolean missing = image.isMissing();
         String lang = getCollectionLanguage(collection);
 
         ObjectNode canvas = mapper.createObjectNode();
@@ -531,21 +579,21 @@ public final class IIIFPresentationGenerator {
         String label = resolveCanvasLabel(book, image);
         canvas.set("label", languageMap(lang, label));
 
-        // Dimensions
-        int width = image.getWidth() > 0 ? image.getWidth() : 1000;
-        int height = image.getHeight() > 0 ? image.getHeight() : 1000;
+        // Dimensions of the painted image; 1000x1000 when unknown
+        int width = painted.getWidth() > 0 ? painted.getWidth() : 1000;
+        int height = painted.getHeight() > 0 ? painted.getHeight() : 1000;
         canvas.put("width", width);
         canvas.put("height", height);
 
         // Painting annotation with Image Service
         // When the image is missing, reference the collection's missing_image placeholder
         String imageServiceId;
-        if (image.isMissing()) {
+        if (missing) {
             BookImage missingImage = collection.getMissingImage();
             String missingId = missingImage != null ? missingImage.getId() : "missing_image.tif";
             imageServiceId = buildImageServiceId(baseUrl, imageBaseUrl, collectionId, null, missingId, false);
         } else {
-            imageServiceId = buildImageServiceId(baseUrl, imageBaseUrl, collectionId, bookId, image.getId(), cropped);
+            imageServiceId = buildImageServiceId(baseUrl, imageBaseUrl, collectionId, bookId, image.getId(), useCropped);
         }
         ObjectNode paintingAnnoPage = mapper.createObjectNode();
         paintingAnnoPage.put("id", canvasId + "/page");
@@ -559,7 +607,8 @@ public final class IIIFPresentationGenerator {
 
         // Body with image service
         ObjectNode body = mapper.createObjectNode();
-        body.put("id", imageServiceId + "/full/full/0/default.jpg");
+        // "max" is the only full-size request valid in Image API 3 and is accepted by 2
+        body.put("id", imageServiceId + "/full/max/0/default.jpg");
         body.put("type", "Image");
         body.put("format", "image/jpeg");
         body.put("width", width);
@@ -589,9 +638,9 @@ public final class IIIFPresentationGenerator {
 
         // Thumbnail, sized from the image. A missing image shows the placeholder,
         // whose size is not this image's.
-        canvas.set("thumbnail", image.isMissing()
+        canvas.set("thumbnail", missing
                 ? thumbnailArray(imageServiceId, 0, 0)
-                : thumbnailArray(imageServiceId, image.getWidth(), image.getHeight()));
+                : thumbnailArray(imageServiceId, painted.getWidth(), painted.getHeight()));
 
         // Annotation page reference (commenting annotations) - only if annotations exist
         if (hasAnnotations) {
@@ -622,7 +671,7 @@ public final class IIIFPresentationGenerator {
         String collectionId = collection.getId();
         String bookId = book.getId();
         String canvasId = buildId(baseUrl, collectionId + "/" + bookId + "/canvas/" + index);
-        String annotationPageId = buildId(baseUrl, collectionId + "/" + bookId + "/canvas/" + index + "/annotations");
+        String annotationPageId = buildId(baseUrl, collectionId + "/" + bookId + "/canvas/" + index + "/annotations.json");
         String stylesheet = resolveAnnotationStylesheet(collection);
         String collectionLang = AnnotationHtml.normalizeLanguage(getCollectionLanguage(collection));
         String imageId = image.getId();
@@ -670,7 +719,7 @@ public final class IIIFPresentationGenerator {
         ArrayNode items = mapper.createArrayNode();
         int annotationCounter = 0;
         for (AnnotationItem item : content) {
-            items.add(createTextAnnotation(annotationPageId + "/annotation/" + annotationCounter++,
+            items.add(createTextAnnotation(canvasId + "/annotations/annotation/" + annotationCounter++,
                     item, stylesheet, canvasId));
         }
 
@@ -966,7 +1015,7 @@ public final class IIIFPresentationGenerator {
     // ---- Private helper methods ----
 
     /**
-     * Adds a JHSearchService1 service reference to a IIIF resource node.
+     * Adds a JHSearchService2 service reference to a IIIF resource node.
      *
      * @param node         the ObjectNode to add the service to
      * @param baseUrl      the base URL prefix, or {@code null} for relative IDs
@@ -977,7 +1026,7 @@ public final class IIIFPresentationGenerator {
         ObjectNode service = mapper.createObjectNode();
         service.put("id", buildId(baseUrl, collectionId + "/service/jhsearch.json"));
         service.put("type", "JHSearchService2");
-        service.put("profile", "https://github.com/jhu-digital-manuscripts/rosa2/doc/search.md");
+        service.put("profile", JHSEARCH_PROFILE);
         serviceArray.add(service);
         node.set("service", serviceArray);
     }
@@ -1224,6 +1273,33 @@ public final class IIIFPresentationGenerator {
             // Fallback: manual percent-encoding of slashes
             return imageId.replace("/", "%2F");
         }
+    }
+
+    /**
+     * The label of a collection referenced as a collection item: the configured label in
+     * the collection's language when the collection is known, else its id.
+     */
+    private ObjectNode collectionItemLabel(String collectionId) {
+        BookCollection collection = collectionsById.get(collectionId);
+        if (collection != null && collection.getLabel() != null && !collection.getLabel().isEmpty()) {
+            return languageMap(getCollectionLanguage(collection), collection.getLabel());
+        }
+        return languageMap("none", collectionId);
+    }
+
+    /**
+     * The book's cropped images by image id, or an empty map when it has none.
+     */
+    private static Map<String, BookImage> croppedImagesById(Book book) {
+        ImageList cropped = book.getCroppedImages();
+        if (cropped == null || cropped.getImages().isEmpty()) {
+            return Map.of();
+        }
+        Map<String, BookImage> byId = new HashMap<>();
+        for (BookImage image : cropped.getImages()) {
+            byId.putIfAbsent(image.getId(), image);
+        }
+        return byId;
     }
 
     /**

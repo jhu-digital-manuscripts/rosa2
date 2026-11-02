@@ -42,6 +42,7 @@ Environment variables:
 
 from __future__ import annotations
 
+import http.client
 import json
 import logging
 import os
@@ -434,7 +435,12 @@ def _validate_compound(name: str, body: Any, clauses: list[int]) -> None:
 
 def _validate_leaf(name: str, body: Any) -> None:
     if name in ("match_all", "match_none"):
-        if body not in ({}, None) and not isinstance(body, dict):
+        # Only the empty object, optionally with a boost. Anything else is either
+        # a typo that OpenSearch would reject with a verbose error, or a smuggled
+        # key the validator has not looked at.
+        if body is not None and (
+            not isinstance(body, dict) or any(key != "boost" for key in body)
+        ):
             raise RequestRejected(f"'{name}' must be an empty object")
         return
 
@@ -539,6 +545,10 @@ def _validate_aggs(aggs: Any, depth: int, counter: list[int]) -> None:
                     raise RequestRejected(
                         f"aggregation '{name}' requests more than {MAX_AGG_BUCKETS} buckets"
                     )
+                # shard_size multiplies the per-shard work independently of size,
+                # so a capped size would not cap the cost.
+                if "shard_size" in value:
+                    raise RequestRejected(f"aggregation '{name}' may not set 'shard_size'")
                 if key == "filter":
                     _validate_query(value, [0])
 
@@ -637,7 +647,9 @@ def validate_body(raw: bytes) -> dict[str, Any]:
     if "_source" in body:
         _validate_source(body["_source"])
 
-    if "min_score" in body and not isinstance(body["min_score"], (int, float)):
+    if "min_score" in body and (
+        isinstance(body["min_score"], bool) or not isinstance(body["min_score"], (int, float))
+    ):
         raise RequestRejected("'min_score' must be a number")
 
     track = body.get("track_total_hits")
@@ -706,6 +718,11 @@ def _post_once(url: str, payload: bytes) -> tuple[int, bytes]:
         if isinstance(error.reason, TimeoutError):
             raise TimeoutError(str(error.reason)) from None
         raise _Unreachable(str(error.reason)) from None
+    except (http.client.RemoteDisconnected, ConnectionResetError, http.client.IncompleteRead) as error:
+        # The connection was accepted and then dropped before or during the
+        # response. urllib does not wrap these, and they are as transient as a
+        # refused connection, so they get the same retry.
+        raise _Unreachable(f"{type(error).__name__}: {error}") from None
 
 
 def forward(path: str, body: dict[str, Any]) -> tuple[int, bytes]:
@@ -850,4 +867,26 @@ def handler(event: dict[str, Any], context: Any) -> dict[str, Any]:  # noqa: ARG
         retry_after = RETRY_AFTER_SECONDS if client_status in RETRY_AFTER_STATUSES else None
         return _response(client_status, {"error": message}, retry_after=retry_after)
 
-    return _response(200, payload)
+    return _response(200, _strip_shard_failures(payload))
+
+
+def _strip_shard_failures(payload: bytes) -> bytes:
+    """Drop the per-shard failure details from a successful response.
+
+    OpenSearch answers 200 when only some shards contributed, and lists the
+    failures under `_shards.failures` with node ids and the shard-level exception
+    text. The counts are what the viewer needs to warn about a partial result; the
+    details are operator information, so they are logged and removed.
+    """
+    if b'"failures"' not in payload:
+        return payload
+    try:
+        body = json.loads(payload)
+    except ValueError:
+        return payload
+    shards = body.get("_shards") if isinstance(body, dict) else None
+    if not isinstance(shards, dict) or "failures" not in shards:
+        return payload
+    logger.warning("partial response, shard failures: %s", json.dumps(shards["failures"])[:2048])
+    del shards["failures"]
+    return json.dumps(body, separators=(",", ":")).encode("utf-8")

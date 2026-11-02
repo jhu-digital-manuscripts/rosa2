@@ -5,7 +5,7 @@ rosa-viewer/src/plugins/jhsearch/utils/queryBuilder.js emits, so a regression
 here means the viewer breaks. The reject cases cover write access, code
 execution, index escape, and unbounded cost.
 
-Run with:  python3 -m unittest discover -s rosa-search/lambda -v
+Run with:  cd rosa-search/lambda && python3 -m unittest discover -s tests -v
 """
 
 from __future__ import annotations
@@ -26,20 +26,34 @@ app = load_lambda("search_proxy", "rosa_search_proxy")
 app.OPENSEARCH_ENDPOINT = "search-test.us-east-1.es.amazonaws.com"
 
 
-# Field and category definitions matching rosa-search/opensearch/*.json.
+# Field and category definitions matching rosa-search/opensearch/*.json and the
+# categories rosa-tool writes to service/jhsearch.json (JHSearchInfoGenerator.java).
+# No collection has any other category; aor has none at all.
 LANGUAGE_FIELDS = ["marginalia.*", "underline.*", "mark.*", "symbol.*", "transcription.*"]
-CATEGORIES = [
-    "authors",
-    "current_location",
-    "date",
-    "material",
-    "type",
-    "method",
-    "hand",
-    "annotator",
-    "language",
-    "topic",
-]
+KEYWORD_CATEGORIES = ["current_location", "date", "origin", "type", "has_transcription"]
+HISTOGRAM_CATEGORIES = {"num_illustrations": 10, "num_pages": 100}
+CATEGORIES = KEYWORD_CATEGORIES + list(HISTOGRAM_CATEGORIES)
+
+
+def facet_aggregations() -> dict:
+    """buildFacetAggregations() from queryBuilder.js: terms, or a histogram for a
+    category with a quantize-interval."""
+    aggs = {name: {"terms": {"field": name, "size": 100}} for name in KEYWORD_CATEGORIES}
+    for name, interval in HISTOGRAM_CATEGORIES.items():
+        aggs[name] = {"histogram": {"field": name, "interval": interval, "min_doc_count": 1}}
+    return aggs
+
+
+def quantized_filter(name: str, lower_bounds: list) -> dict:
+    """buildCategoryFilter() from utils/facets.js for a quantized category: each
+    selected bucket is a range, OR-ed together."""
+    interval = HISTOGRAM_CATEGORIES[name]
+    return {
+        "bool": {
+            "should": [{"range": {name: {"gte": b, "lt": b + interval}}} for b in lower_bounds],
+            "minimum_should_match": 1,
+        }
+    }
 
 
 def browse_query() -> dict:
@@ -49,7 +63,7 @@ def browse_query() -> dict:
         "from": 0,
         "size": 20,
         "sort": [{"label.keyword": "asc"}],
-        "aggs": {name: {"terms": {"field": name, "size": 100}} for name in CATEGORIES},
+        "aggs": facet_aggregations(),
     }
 
 
@@ -68,9 +82,10 @@ def simple_search_query() -> dict:
                     }
                 ],
                 "filter": [
-                    {"terms": {"collection_id": ["aor"]}},
-                    {"terms": {"annotator": ["John Dee"]}},
-                    {"range": {"num_pages": {"gte": 100, "lt": 200}}},
+                    {"terms": {"collection_id": ["dlmm"]}},
+                    {"terms": {"current_location": ["Oxford"]}},
+                    {"terms": {"has_transcription": [True]}},
+                    quantized_filter("num_pages", [100, 300]),
                 ],
             }
         },
@@ -81,10 +96,7 @@ def simple_search_query() -> dict:
             "pre_tags": ["<mark>"],
             "post_tags": ["</mark>"],
         },
-        "aggs": {
-            **{name: {"terms": {"field": name, "size": 100}} for name in CATEGORIES},
-            "num_pages": {"histogram": {"field": "num_pages", "interval": 100, "min_doc_count": 1}},
-        },
+        "aggs": facet_aggregations(),
     }
 
 
@@ -116,14 +128,14 @@ def advanced_search_query() -> dict:
             "pre_tags": ["<mark>"],
             "post_tags": ["</mark>"],
         },
-        "aggs": {name: {"terms": {"field": name, "size": 100}} for name in CATEGORIES},
+        "aggs": facet_aggregations(),
     }
 
 
 def collection_aggregation_query() -> dict:
-    """buildCollectionAggregationQuery() from queryBuilder.js."""
+    """A collection_id terms aggregation over a parent collection and its children."""
     return {
-        "query": {"bool": {"filter": [{"terms": {"collection_id": ["aor", "rose", "top"]}}]}},
+        "query": {"bool": {"filter": [{"terms": {"collection_id": ["dlmm", "rose", "pizan"]}}]}},
         "size": 0,
         "aggs": {"collections": {"terms": {"field": "collection_id", "size": 100}}},
     }
@@ -335,6 +347,21 @@ class AcceptsViewerQueries(unittest.TestCase):
     def test_keyword_subfield_term(self):
         validate({"query": {"term": {"mark.keyword": "plus_sign"}}})
 
+    def test_pagination_window_boundary(self):
+        # from + size == 10000 is the last page the window allows, for every page
+        # size the viewer offers (20, 30, 40, 50): 9700 + 300 is the proxy's own
+        # worst case, 9990 + 10 the viewer's smallest step.
+        for start, size in ((9700, 300), (9980, 20), (9970, 30), (9960, 40), (9950, 50)):
+            with self.subTest(start=start, size=size):
+                validate({**browse_query(), "from": start, "size": size})
+
+    def test_match_all_with_boost(self):
+        validate({"query": {"match_all": {"boost": 1.5}}})
+
+    def test_boolean_terms_values(self):
+        # has_transcription is a boolean facet; the viewer sends true/false values.
+        validate({"query": {"bool": {"filter": [{"terms": {"has_transcription": [True, False]}}]}}})
+
     def test_match_all(self):
         validate({"query": {"match_all": {}}, "size": 1})
 
@@ -410,6 +437,19 @@ class RejectsExpensiveQueries(unittest.TestCase):
         # The viewer loads every book's facet fields 300 at a time.
         validate({"query": {"match_all": {}}, "size": 300})
         self.assert_rejected({"query": {"match_all": {}}, "size": 301}, "'size' may not exceed")
+
+    def test_pagination_past_window(self):
+        # The viewer's page-size-30 last page used to send this and get a 400.
+        with self.assertRaises(app.RequestRejected) as caught:
+            validate({**browse_query(), "from": 9990, "size": 30})
+        self.assertIn("10000", caught.exception.message)
+
+    def test_agg_shard_size(self):
+        query = browse_query()
+        query["aggs"]["current_location"]["terms"]["shard_size"] = 100000
+        with self.assertRaises(app.RequestRejected) as caught:
+            validate(query)
+        self.assertIn("shard_size", caught.exception.message)
 
     def test_deep_pagination(self):
         self.assert_rejected(
@@ -573,6 +613,14 @@ class RejectsMalformedInput(unittest.TestCase):
         with self.assertRaises(app.RequestRejected):
             validate({"query": {"match_all": {}, "term": {"id": "x"}}})
 
+    def test_match_all_with_unknown_key(self):
+        with self.assertRaises(app.RequestRejected):
+            validate({"query": {"match_all": {"script": {"source": "1"}}}})
+
+    def test_boolean_min_score(self):
+        with self.assertRaises(app.RequestRejected):
+            validate({**browse_query(), "min_score": True})
+
     def test_negative_size(self):
         with self.assertRaises(app.RequestRejected):
             validate({"size": -1})
@@ -677,6 +725,44 @@ class Handler(unittest.TestCase):
         response = app.handler(self.event(), None)
         self.assertNotIn("secret", response["body"])
         self.assertEqual(json.loads(response["body"])["error"], "malformed search request")
+
+    def test_shard_failure_details_stripped(self):
+        def partial_forward(path, body):
+            return 200, json.dumps(
+                {
+                    "took": 3,
+                    "timed_out": False,
+                    "_shards": {
+                        "total": 2,
+                        "successful": 1,
+                        "skipped": 0,
+                        "failed": 1,
+                        "failures": [
+                            {
+                                "shard": 0,
+                                "index": "manifest",
+                                "node": "abc123",
+                                "reason": {"type": "query_shard_exception", "reason": "No mapping found for [page_num]"},
+                            }
+                        ],
+                    },
+                    "hits": {"total": {"value": 0}, "hits": []},
+                }
+            ).encode()
+
+        app.forward = partial_forward
+        response = app.handler(self.event(), None)
+        self.assertEqual(response["statusCode"], 200)
+        body = json.loads(response["body"])
+        self.assertEqual(body["_shards"]["failed"], 1)
+        self.assertNotIn("failures", body["_shards"])
+        self.assertNotIn("abc123", response["body"])
+        self.assertNotIn("No mapping found", response["body"])
+
+    def test_complete_response_passes_through_unchanged(self):
+        payload = b'{"took":1,"_shards":{"total":2,"successful":2,"failed":0},"hits":{"hits":[]}}'
+        app.forward = lambda path, body: (200, payload)
+        self.assertEqual(app.handler(self.event(), None)["body"], payload.decode())
 
     def test_response_headers(self):
         headers = app.handler(self.event(), None)["headers"]
@@ -822,6 +908,53 @@ class UpstreamRetry(unittest.TestCase):
         self.responses(app._Unreachable("connection reset"), (200, b"{}"))
         self.assertEqual(self.forward(), (200, b"{}"))
         self.assertEqual(len(self.attempts), 2)
+
+    def test_dropped_connection_is_retried_then_becomes_502(self):
+        # These are raised by urlopen after the connection was accepted. _post_once
+        # wraps them as unreachable, so the retry loop treats them like a refused
+        # connection: one more attempt, then 502.
+        import http.client
+        import urllib.request
+
+        app._post_once = self._original_post
+        original_open = urllib.request.urlopen
+        for error in (
+            http.client.RemoteDisconnected("Remote end closed connection"),
+            ConnectionResetError(104, "Connection reset by peer"),
+            http.client.IncompleteRead(b"partial"),
+        ):
+            with self.subTest(error=type(error).__name__):
+                calls = []
+
+                def dropped(*args, error=error, **kwargs):
+                    calls.append(args)
+                    raise error
+
+                urllib.request.urlopen = dropped
+                try:
+                    with self.assertRaises(app.RequestRejected) as caught:
+                        self.forward()
+                finally:
+                    urllib.request.urlopen = original_open
+                self.assertEqual(caught.exception.status, 502)
+                self.assertEqual(len(calls), 2)
+
+    def test_post_once_wraps_dropped_connection(self):
+        # The wrapping happens in _post_once itself, below the retry loop.
+        import http.client
+        import urllib.request
+
+        original_open = urllib.request.urlopen
+
+        def dropped(*args, **kwargs):
+            raise http.client.RemoteDisconnected("Remote end closed connection")
+
+        urllib.request.urlopen = dropped
+        try:
+            with self.assertRaises(app._Unreachable):
+                app._post_once("https://search-test.us-east-1.es.amazonaws.com/_search", b"{}")
+        finally:
+            urllib.request.urlopen = original_open
 
     def test_timeout_is_not_retried(self):
         self.responses(TimeoutError("timed out"))

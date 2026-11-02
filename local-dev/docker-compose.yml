@@ -1,7 +1,9 @@
 services:
 
   opensearch:
-    image: opensearchproject/opensearch:3
+    # Pinned to the 3.1 line the AWS domains run (OpenSearch_3.1), so local
+    # analyzer and mapping behaviour matches stage and prod.
+    image: opensearchproject/opensearch:3.1.0
     container_name: opensearch
     environment:
       - discovery.type=single-node

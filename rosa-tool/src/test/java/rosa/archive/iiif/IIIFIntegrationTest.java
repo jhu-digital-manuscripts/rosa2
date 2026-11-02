@@ -69,7 +69,7 @@ class IIIFIntegrationTest {
         JsonNode topParsed = mapper.readTree(topJson);
 
         assertEquals("Collection", topParsed.get("type").asText());
-        assertEquals("http://example.org/collection", topParsed.get("id").asText());
+        assertEquals("http://example.org/collection.json", topParsed.get("id").asText());
 
         JsonNode topItems = topParsed.get("items");
         assertNotNull(topItems, "Top-level collection should have items");
@@ -105,6 +105,18 @@ class IIIFIntegrationTest {
 
         JsonNode dlmmItems = dlmmParsed.get("items");
         assertNotNull(dlmmItems, "dlmm collection should have items");
+
+        // Child collection items carry the configured labels, not the raw ids
+        for (JsonNode item : dlmmItems) {
+            if (item.get("id").asText().endsWith("/rose/collection.json")) {
+                assertEquals("Roman de la Rose Digital Library", item.get("label").get("en").get(0).asText());
+            }
+        }
+        for (JsonNode item : topItems) {
+            if (item.get("id").asText().endsWith("/dlmm/collection.json")) {
+                assertEquals("Digital Library of Medieval Manuscripts", item.get("label").get("en").get(0).asText());
+            }
+        }
 
         // dlmm has no books (no subdirectories for books), so its items should be
         // Collection references for children: rose and pizan

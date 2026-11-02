@@ -1,4 +1,4 @@
 /**
- * Tests for AoR statistics collection.
+ * Tests for AoR transcription checking.
  */
 package rosa.archive.aor;

@@ -1,11 +1,10 @@
 package rosa.archive.cli;
 
 import picocli.CommandLine.Command;
+import picocli.CommandLine.Mixin;
 import picocli.CommandLine.Option;
-import rosa.archive.core.FileSystemArchiveStore;
 
 import java.io.IOException;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,15 +18,18 @@ import java.util.concurrent.Callable;
  * to standard output.</p>
  */
 @Command(name = "validate-xml",
-         mixinStandardHelpOptions = true,
-         description = "Validate AoR transcription XML files against schema")
+         mixinStandardHelpOptions = true, versionProvider = VersionProvider.class,
+         description = "Check that AoR transcription XML files are well-formed, and valid against a local XML Schema when --schema is given")
 public final class ValidateXmlCommand implements Callable<Integer> {
 
-    @Option(names = "--archive", required = true, description = "Path to archive directory")
-    private Path archivePath;
+    @Mixin
+    private ArchiveOptions archive;
 
     @Option(names = "--collection", required = true, description = "Collection ID to validate")
     private String collectionId;
+
+    @Option(names = "--schema", description = "Local XML Schema (.xsd) file to validate against; the files' own schemaLocation is never fetched")
+    private Path schema;
 
     /**
      * Executes the XML validation operation.
@@ -36,13 +38,12 @@ public final class ValidateXmlCommand implements Callable<Integer> {
      */
     @Override
     public Integer call() {
-        if (!Files.isDirectory(archivePath)) {
-            System.err.println("Error: archive path does not exist or is not a directory: " + archivePath);
+        if (!archive.exists()) {
             return 1;
         }
 
         try {
-            var store = new FileSystemArchiveStore(archivePath);
+            var store = archive.openStore();
             List<String> bookIds = store.listBooks(collectionId);
 
             boolean hasErrors = false;
@@ -51,7 +52,7 @@ public final class ValidateXmlCommand implements Callable<Integer> {
                 List<String> errors = new ArrayList<>();
                 List<String> warnings = new ArrayList<>();
 
-                store.validateXml(collectionId, bookId, errors, warnings);
+                store.validateXml(collectionId, bookId, schema, errors, warnings);
 
                 if (!errors.isEmpty() || !warnings.isEmpty()) {
                     System.out.println("[" + collectionId + "/" + bookId + "]");

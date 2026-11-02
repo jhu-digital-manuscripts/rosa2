@@ -1,6 +1,9 @@
 package rosa.archive.core;
 
 import rosa.archive.core.serialize.ArchiveReaders;
+import rosa.archive.model.CropInfo;
+import rosa.archive.model.CropData;
+import rosa.archive.core.serialize.ArchiveWriters;
 import rosa.archive.core.util.HashUtil;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
@@ -40,6 +43,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -64,6 +68,10 @@ public final class FileSystemArchiveStore implements ArchiveStore {
     private static final String IMAGES_CROP = ".images.crop.csv";
     private static final String METADATA = ".metadata.xml";
     private static final String SHA1SUM = ".SHA1SUM";
+    /** Collection checksum file: {@code {collection}collection.SHA1SUM}. */
+    private static final String COLLECTION_SHA1SUM = "collection.SHA1SUM";
+    private static final String CROP = ".crop.txt";
+    private static final String CROPPED_DIR = "cropped";
     private static final String TRANSCRIPTION = ".transcription.xml";
     private static final String DESCRIPTION = ".description_";
     private static final String PERMISSION = ".permission_";
@@ -71,7 +79,6 @@ public final class FileSystemArchiveStore implements ArchiveStore {
     private static final String LOCATIONS = "locations.csv";
     private static final String BOOKS = "books.csv";
     private static final String HTML_ANNOS = "annos.jsonld";
-    private static final String ID_LOCATION_MAP = "id_locations.csv";
     private static final String COLLECTION_CONFIG = "config.properties";
     private static final String MISSING_IMAGE = "missing_image.tif";
     private static final String XML_EXT = ".xml";
@@ -85,8 +92,12 @@ public final class FileSystemArchiveStore implements ArchiveStore {
     private static final String IMG_FRONT_FLYLEAF = ".frontmatter.flyleaf.";
     private static final String IMG_END_FLYLEAF = ".endmatter.flyleaf.";
 
+    /** Extensions of the metadata files a shallow copy keeps; images are everything else. */
     private static final Set<String> INCLUDE_EXTENSIONS = Set.of(
-            "xml", "txt", "html", "csv"
+            "xml", "txt", "html", "csv", "jsonld", "properties"
+    );
+    private static final Set<String> IMAGE_EXTENSIONS = Set.of(
+            "tif", "tiff", "jpg", "jpeg", "png"
     );
 
     private static final String CONFIG_LABEL = "label";
@@ -157,12 +168,16 @@ public final class FileSystemArchiveStore implements ArchiveStore {
 
     @Override
     public BookCollection loadCollection(String collectionId) throws IOException {
+        return loadCollection(collectionId, new ArrayList<>());
+    }
+
+    @Override
+    public BookCollection loadCollection(String collectionId, List<String> errors) throws IOException {
         Path collectionDir = archivePath.resolve(collectionId);
         if (!Files.isDirectory(collectionDir)) {
             throw new IOException("Collection not found in archive: " + collectionId);
         }
 
-        List<String> errors = new ArrayList<>();
         BookCollection collection = new BookCollection();
 
         collection.setId(collectionId);
@@ -185,7 +200,7 @@ public final class FileSystemArchiveStore implements ArchiveStore {
 
         // Checksum
         collection.setChecksum(
-                ArchiveReaders.readSHA1Checksum(collectionDir.resolve(collectionId + SHA1SUM), errors));
+                ArchiveReaders.readSHA1Checksum(collectionDir.resolve(collectionId + COLLECTION_SHA1SUM), errors));
 
         // AoR reference sheets
         collection.setPeopleRef(
@@ -198,10 +213,6 @@ public final class FileSystemArchiveStore implements ArchiveStore {
         // HTML annotations
         collection.setHTMLAnnotations(
                 ArchiveReaders.readHTMLAnnotations(collectionDir.resolve(HTML_ANNOS), errors));
-
-        // Annotation location map
-        collection.setAnnotationMap(
-                ArchiveReaders.readAnnotationLocationMap(collectionDir.resolve(ID_LOCATION_MAP)));
 
         // Collection config
         Path configPath = collectionDir.resolve(COLLECTION_CONFIG);
@@ -262,6 +273,11 @@ public final class FileSystemArchiveStore implements ArchiveStore {
 
     @Override
     public Book loadBook(BookCollection collection, String bookId) throws IOException {
+        return loadBook(collection, bookId, new ArrayList<>());
+    }
+
+    @Override
+    public Book loadBook(BookCollection collection, String bookId, List<String> errors) throws IOException {
         Path collectionDir = archivePath.resolve(collection.getId());
         if (!Files.isDirectory(collectionDir)) {
             throw new IOException("Collection not found in archive: " + collection.getId());
@@ -272,15 +288,16 @@ public final class FileSystemArchiveStore implements ArchiveStore {
             throw new IOException("Book not found: " + bookId);
         }
 
-        List<String> errors = new ArrayList<>();
         Book book = new Book();
         book.setId(bookId);
 
-        // Image lists
+        // Image lists and crop data
         book.setImages(
                 ArchiveReaders.readImageList(bookDir.resolve(bookId + IMAGES), errors));
         book.setCroppedImages(
                 ArchiveReaders.readImageList(bookDir.resolve(bookId + IMAGES_CROP), errors));
+        book.setCropInfo(
+                ArchiveReaders.readCropInfo(bookDir.resolve(bookId + CROP), errors));
 
         // Book metadata
         book.setBookMetadata(
@@ -340,6 +357,11 @@ public final class FileSystemArchiveStore implements ArchiveStore {
 
     @Override
     public CheckResult check(BookCollection collection, Book book, boolean checkBits) {
+        return check(collection, book, checkBits, true);
+    }
+
+    @Override
+    public CheckResult check(BookCollection collection, Book book, boolean checkBits, boolean checkImages) {
         List<String> errors = new ArrayList<>();
         List<String> warnings = new ArrayList<>();
 
@@ -349,7 +371,10 @@ public final class FileSystemArchiveStore implements ArchiveStore {
         }
 
         // Verify image list exists and images are consistent with content
-        checkImageList(book, errors, warnings);
+        checkImageList(book, checkImages, errors, warnings);
+
+        // Verify the cropped image list refers to listed images
+        checkCropList(book, warnings);
 
         // Verify metadata file exists
         checkMetadata(book, errors, warnings);
@@ -364,15 +389,40 @@ public final class FileSystemArchiveStore implements ArchiveStore {
 
     @Override
     public void validateXml(String collectionId, String bookId, List<String> errors, List<String> warnings) throws IOException {
+        validateXml(collectionId, bookId, null, errors, warnings);
+    }
+
+    @Override
+    public void validateXml(String collectionId, String bookId, Path schema, List<String> errors, List<String> warnings) throws IOException {
         Path bookDir = archivePath.resolve(collectionId).resolve(bookId);
         if (!Files.isDirectory(bookDir)) {
             throw new IOException("Book directory not found: " + collectionId + "/" + bookId);
         }
 
+        javax.xml.validation.Validator validator = null;
+        if (schema != null) {
+            try {
+                javax.xml.validation.SchemaFactory factory =
+                        javax.xml.validation.SchemaFactory.newInstance(javax.xml.XMLConstants.W3C_XML_SCHEMA_NS_URI);
+                // The schema and the documents are local files; never fetch anything
+                factory.setProperty(javax.xml.XMLConstants.ACCESS_EXTERNAL_DTD, "");
+                factory.setProperty(javax.xml.XMLConstants.ACCESS_EXTERNAL_SCHEMA, "");
+                validator = factory.newSchema(schema.toFile()).newValidator();
+            } catch (SAXException e) {
+                errors.add("Cannot read schema [" + schema + "]: " + e.getMessage());
+                return;
+            }
+        }
+
         List<String> content = listFiles(bookDir);
         for (String name : content) {
             if (PARSER.isAorTranscription(name)) {
-                validateXmlWellFormedness(bookDir.resolve(name), name, errors, warnings);
+                Path xmlFile = bookDir.resolve(name);
+                int before = errors.size();
+                validateXmlWellFormedness(xmlFile, name, errors, warnings);
+                if (validator != null && errors.size() == before) {
+                    validateXmlAgainstSchema(validator, xmlFile, name, errors, warnings);
+                }
             }
         }
     }
@@ -388,12 +438,13 @@ public final class FileSystemArchiveStore implements ArchiveStore {
         try (var walker = Files.walk(archivePath)) {
             walker.filter(Files::isRegularFile)
                   .filter(this::shouldCopyFile)
+                  .filter(source -> !isIgnoredPath(archivePath.relativize(source)))
                   .forEach(source -> {
                       Path relativePath = archivePath.relativize(source);
                       Path target = destination.resolve(relativePath);
                       try {
                           Files.createDirectories(target.getParent());
-                          Files.copy(source, target);
+                          Files.copy(source, target, StandardCopyOption.REPLACE_EXISTING);
                       } catch (IOException e) {
                           throw new UncheckedIOException(e);
                       }
@@ -410,7 +461,7 @@ public final class FileSystemArchiveStore implements ArchiveStore {
             throw new IOException("Collection not found: " + collectionId);
         }
 
-        Path checksumFile = collectionDir.resolve(collectionId + SHA1SUM);
+        Path checksumFile = collectionDir.resolve(collectionId + COLLECTION_SHA1SUM);
         Map<String, String> existingChecksums = loadExistingChecksums(checksumFile, errors);
         long checksumLastModified = checksumFileLastModified(checksumFile);
 
@@ -421,7 +472,7 @@ public final class FileSystemArchiveStore implements ArchiveStore {
             for (Path entry : stream) {
                 String name = entry.getFileName().toString();
                 // Skip the checksum file itself and hidden files
-                if (name.equals(collectionId + SHA1SUM) || name.startsWith(".")) {
+                if (name.equals(collectionId + COLLECTION_SHA1SUM) || name.startsWith(".")) {
                     continue;
                 }
                 files.add(entry);
@@ -491,24 +542,35 @@ public final class FileSystemArchiveStore implements ArchiveStore {
             return;
         }
 
-        List<Path> imageFiles = new ArrayList<>();
-        try (DirectoryStream<Path> stream = Files.newDirectoryStream(bookDir, this::isImageFile)) {
-            for (Path entry : stream) {
-                imageFiles.add(entry);
+        // Keep the labels and missing markers of an existing list
+        Map<String, BookImage> existing = new LinkedHashMap<>();
+        ImageList existingList = ArchiveReaders.readImageList(imagesCsv, errors);
+        if (existingList != null) {
+            for (BookImage image : existingList) {
+                existing.put(image.getId(), image);
             }
         }
-        imageFiles.sort((a, b) -> a.getFileName().toString().compareTo(b.getFileName().toString()));
 
-        var sb = new StringBuilder();
-        for (Path imageFile : imageFiles) {
-            String filename = imageFile.getFileName().toString();
+        List<BookImage> entries = new ArrayList<>();
+        for (Path imageFile : listImageFiles(bookDir)) {
+            String id = imageFile.getFileName().toString();
             int[] dimensions = readImageDimensions(imageFile, errors);
-            int width = dimensions[0];
-            int height = dimensions[1];
-            sb.append(filename).append(',').append(width).append(',').append(height).append(",false\n");
+            BookImage image = newImage(id, dimensions[0], dimensions[1], false);
+            BookImage previous = existing.remove(id);
+            if (previous != null) {
+                image.setName(previous.getName());
+                image.setAutoGeneratedName(previous.isAutoGeneratedName());
+            }
+            entries.add(image);
         }
+        // Listed images that are not on disk stay listed as missing
+        for (BookImage previous : existing.values()) {
+            previous.setMissing(true);
+            entries.add(previous);
+        }
+        entries.sort((a, b) -> a.getId().compareTo(b.getId()));
 
-        Files.writeString(imagesCsv, sb.toString(), StandardCharsets.UTF_8);
+        ArchiveWriters.writeImageList(imagesCsv, entries);
     }
 
     @Override
@@ -518,27 +580,22 @@ public final class FileSystemArchiveStore implements ArchiveStore {
             throw new IOException("Book not found: " + collectionId + "/" + bookId);
         }
 
-        Path cropFile = bookDir.resolve(bookId + ".crop.txt");
+        Path cropFile = bookDir.resolve(bookId + CROP);
         if (!Files.exists(cropFile)) {
             errors.add("Crop file not found: " + cropFile);
             return;
         }
+        CropInfo cropInfo = ArchiveReaders.readCropInfo(cropFile, errors);
 
-        Path croppedDir = bookDir.resolve("cropped");
+        Path croppedDir = bookDir.resolve(CROPPED_DIR);
         Files.createDirectories(croppedDir);
 
-        List<String> lines = Files.readAllLines(cropFile, StandardCharsets.UTF_8);
-        for (String line : lines) {
-            if (line.isBlank()) {
-                continue;
-            }
-            String[] parts = line.split(",");
-            if (parts.length < 5) {
-                errors.add("Malformed crop line: " + line);
-                continue;
-            }
+        List<CropData> crops = new ArrayList<>();
+        cropInfo.forEach(crops::add);
+        crops.sort((a, b) -> a.getId().compareTo(b.getId()));
 
-            String filename = parts[0].trim();
+        for (CropData crop : crops) {
+            String filename = crop.getId();
             Path croppedFile = croppedDir.resolve(filename);
 
             if (!force && Files.exists(croppedFile)) {
@@ -552,32 +609,28 @@ public final class FileSystemArchiveStore implements ArchiveStore {
             }
 
             try {
-                int left = Integer.parseInt(parts[1].trim());
-                int top = Integer.parseInt(parts[2].trim());
-                int right = Integer.parseInt(parts[3].trim());
-                int bottom = Integer.parseInt(parts[4].trim());
-
                 BufferedImage source = ImageIO.read(sourceFile.toFile());
                 if (source == null) {
                     errors.add("Failed to read image for cropping: " + filename);
                     continue;
                 }
 
-                int cropWidth = right - left;
-                int cropHeight = bottom - top;
+                // Fractions of the width and height to remove from each side
+                int width = source.getWidth();
+                int height = source.getHeight();
+                int left = (int) Math.round(crop.getLeft() * width);
+                int right = width - (int) Math.round(crop.getRight() * width);
+                int top = (int) Math.round(crop.getTop() * height);
+                int bottom = height - (int) Math.round(crop.getBottom() * height);
 
-                if (left < 0 || top < 0 || right > source.getWidth() || bottom > source.getHeight()
-                        || cropWidth <= 0 || cropHeight <= 0) {
-                    errors.add("Invalid crop region for [" + filename + "]: "
-                            + left + "," + top + "," + right + "," + bottom);
+                if (right - left <= 0 || bottom - top <= 0) {
+                    errors.add("Invalid crop region for [" + filename + "]: " + crop);
                     continue;
                 }
 
-                BufferedImage cropped = source.getSubimage(left, top, cropWidth, cropHeight);
+                BufferedImage cropped = source.getSubimage(left, top, right - left, bottom - top);
                 String ext = getImageExtension(filename);
                 ImageIO.write(cropped, ext, croppedFile.toFile());
-            } catch (NumberFormatException e) {
-                errors.add("Failed to parse crop coordinates for [" + filename + "]: " + e.getMessage());
             } catch (IOException e) {
                 errors.add("Failed to crop image [" + filename + "]: " + e.getMessage());
             }
@@ -596,30 +649,39 @@ public final class FileSystemArchiveStore implements ArchiveStore {
             return;
         }
 
-        Path croppedDir = bookDir.resolve("cropped");
+        Path croppedDir = bookDir.resolve(CROPPED_DIR);
         if (!Files.isDirectory(croppedDir)) {
             errors.add("Cropped directory not found: " + croppedDir);
             return;
         }
 
-        List<Path> imageFiles = new ArrayList<>();
-        try (DirectoryStream<Path> stream = Files.newDirectoryStream(croppedDir, this::isImageFile)) {
-            for (Path entry : stream) {
-                imageFiles.add(entry);
+        Map<String, Path> croppedFiles = new java.util.TreeMap<>();
+        for (Path imageFile : listImageFiles(croppedDir)) {
+            croppedFiles.put(imageFile.getFileName().toString(), imageFile);
+        }
+
+        // Follow the image list's order and labels; cropped files it does not list come last
+        List<BookImage> entries = new ArrayList<>();
+        ImageList images = ArchiveReaders.readImageList(bookDir.resolve(bookId + IMAGES), errors);
+        if (images != null) {
+            for (BookImage image : images) {
+                Path croppedFile = croppedFiles.remove(image.getId());
+                if (croppedFile == null) {
+                    continue;
+                }
+                int[] dimensions = readImageDimensions(croppedFile, errors);
+                BookImage entry = newImage(image.getId(), dimensions[0], dimensions[1], false);
+                entry.setName(image.getName());
+                entry.setAutoGeneratedName(image.isAutoGeneratedName());
+                entries.add(entry);
             }
         }
-        imageFiles.sort((a, b) -> a.getFileName().toString().compareTo(b.getFileName().toString()));
-
-        var sb = new StringBuilder();
-        for (Path imageFile : imageFiles) {
-            String filename = imageFile.getFileName().toString();
-            int[] dimensions = readImageDimensions(imageFile, errors);
-            int width = dimensions[0];
-            int height = dimensions[1];
-            sb.append(filename).append(',').append(width).append(',').append(height).append(",false\n");
+        for (Map.Entry<String, Path> extra : croppedFiles.entrySet()) {
+            int[] dimensions = readImageDimensions(extra.getValue(), errors);
+            entries.add(newImage(extra.getKey(), dimensions[0], dimensions[1], false));
         }
 
-        Files.writeString(cropCsv, sb.toString(), StandardCharsets.UTF_8);
+        ArchiveWriters.writeImageList(cropCsv, entries);
     }
 
     @Override
@@ -765,7 +827,7 @@ public final class FileSystemArchiveStore implements ArchiveStore {
     }
 
     @Override
-    public void generateTEITranscriptions(String collectionId, String bookId, List<String> errors,
+    public void generateTEITranscriptions(String collectionId, String bookId, boolean force, List<String> errors,
                                           List<String> warnings) throws IOException {
         Path bookDir = archivePath.resolve(collectionId).resolve(bookId);
         if (!Files.isDirectory(bookDir)) {
@@ -775,11 +837,18 @@ public final class FileSystemArchiveStore implements ArchiveStore {
         // Find per-page text transcription files: BookId.transcription.NNNr.txt
         List<Path> textFiles = listPerPageTranscriptionFiles(bookDir, bookId);
         if (textFiles.isEmpty()) {
-            return; // No per-page text transcriptions to convert
+            errors.add("No per-page transcription files (" + bookId + ".transcription.*.txt) found in "
+                    + collectionId + "/" + bookId);
+            return;
         }
 
-        // Convert all text files into a single TEI XML
+        // Convert all text files into a single TEI XML, never silently replacing a hand-authored one
         Path outputFile = bookDir.resolve(bookId + TRANSCRIPTION);
+        if (Files.exists(outputFile) && !force) {
+            errors.add("Transcription already exists and would be overwritten: " + outputFile.getFileName()
+                    + " (use --force to replace it)");
+            return;
+        }
         var converter = new TranscriptionConverter();
         converter.convert(textFiles, outputFile);
 
@@ -871,6 +940,9 @@ public final class FileSystemArchiveStore implements ArchiveStore {
 
     private boolean shouldCopyFile(Path file) {
         String name = file.getFileName().toString();
+        if (name.endsWith(SHA1SUM)) {
+            return true;
+        }
         int dotIndex = name.lastIndexOf('.');
         if (dotIndex < 0) {
             return false;
@@ -880,11 +952,48 @@ public final class FileSystemArchiveStore implements ArchiveStore {
     }
 
     /**
-     * Returns whether the given path is an image file (.tif or .jpg, case-insensitive).
+     * Whether a path relative to the archive lies in a directory the tool ignores
+     * (a name containing {@code .ignore}, or the legacy {@code biblehistoriale} collection).
+     */
+    private static boolean isIgnoredPath(Path relative) {
+        for (int i = 0; i < relative.getNameCount() - 1; i++) {
+            String dir = relative.getName(i).toString();
+            if (dir.contains(".ignore") || (i == 0 && dir.equals("biblehistoriale"))) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Returns whether the given path is an image file (tif, tiff, jpg, jpeg or png, case-insensitive).
      */
     private boolean isImageFile(Path file) {
-        String name = file.getFileName().toString().toLowerCase();
-        return Files.isRegularFile(file) && (name.endsWith(".tif") || name.endsWith(".jpg"));
+        String name = file.getFileName().toString();
+        int dotIndex = name.lastIndexOf('.');
+        return Files.isRegularFile(file) && dotIndex > 0
+                && IMAGE_EXTENSIONS.contains(name.substring(dotIndex + 1).toLowerCase());
+    }
+
+    /** A new image list entry with the location, role and default name derived from its id. */
+    private static BookImage newImage(String id, int width, int height, boolean missing) {
+        BookImage image = new BookImage(id, width, height, missing);
+        image.setLocation(PARSER.location(id));
+        image.setRole(PARSER.role(id));
+        image.setName(PARSER.shortName(id));
+        return image;
+    }
+
+    /** Image files in a directory, sorted by name. */
+    private List<Path> listImageFiles(Path dir) throws IOException {
+        List<Path> imageFiles = new ArrayList<>();
+        try (DirectoryStream<Path> stream = Files.newDirectoryStream(dir, this::isImageFile)) {
+            for (Path entry : stream) {
+                imageFiles.add(entry);
+            }
+        }
+        imageFiles.sort((a, b) -> a.getFileName().toString().compareTo(b.getFileName().toString()));
+        return imageFiles;
     }
 
     /**
@@ -972,10 +1081,18 @@ public final class FileSystemArchiveStore implements ArchiveStore {
      * Verifies that the image list exists and that each non-missing image
      * corresponds to a file reference in the book's content listing.
      */
-    private void checkImageList(Book book, List<String> errors, List<String> warnings) {
+    private void checkImageList(Book book, boolean checkFiles, List<String> errors, List<String> warnings) {
         ImageList images = book.getImages();
         if (images == null || images.getImages() == null) {
             errors.add("Image list is missing for book [" + book.getId() + "].");
+            return;
+        }
+        if (!checkFiles) {
+            for (BookImage image : images) {
+                if (image.getId() == null || image.getId().isBlank()) {
+                    errors.add("Image ID not set in book [" + book.getId() + "].");
+                }
+            }
             return;
         }
 
@@ -999,6 +1116,28 @@ public final class FileSystemArchiveStore implements ArchiveStore {
             } else if (image.isMissing() && inContent) {
                 errors.add("Image [" + image.getId() + "] marked as missing is present in archive ["
                         + book.getId() + "].");
+            }
+        }
+    }
+
+    /**
+     * Warns about cropped images that are not in the image list. Canvases follow the image
+     * list, so such entries are never shown (rose/Bodmer79 has two).
+     */
+    private void checkCropList(Book book, List<String> warnings) {
+        ImageList cropped = book.getCroppedImages();
+        ImageList images = book.getImages();
+        if (cropped == null || images == null) {
+            return;
+        }
+        Set<String> ids = new java.util.HashSet<>();
+        for (BookImage image : images) {
+            ids.add(image.getId());
+        }
+        for (BookImage image : cropped) {
+            if (!ids.contains(image.getId())) {
+                warnings.add("Cropped image [" + image.getId() + "] is not in the image list of book ["
+                        + book.getId() + "] and is never shown.");
             }
         }
     }
@@ -1044,6 +1183,13 @@ public final class FileSystemArchiveStore implements ArchiveStore {
         if (content == null) {
             errors.add("Book content listing is null for book [" + book.getId() + "].");
             return;
+        }
+
+        Set<String> onDisk = new java.util.HashSet<>(Arrays.asList(content));
+        for (String fileName : storedChecksums.checksums().keySet()) {
+            if (!onDisk.contains(fileName)) {
+                errors.add("File listed in SHA1SUM not found on disk: " + fileName);
+            }
         }
 
         for (String fileName : content) {
@@ -1117,6 +1263,40 @@ public final class FileSystemArchiveStore implements ArchiveStore {
             errors.add("XML parser configuration error for [" + fileName + "]: " + e.getMessage());
         } catch (SAXException e) {
             errors.add("[" + fileName + "] is not well-formed XML: " + e.getMessage());
+        } catch (IOException e) {
+            errors.add("Failed to read [" + fileName + "]: " + e.getMessage());
+        }
+    }
+
+    /**
+     * Validates an XML file against a compiled schema. The document's own
+     * {@code noNamespaceSchemaLocation} is ignored; only the given schema is used.
+     */
+    private void validateXmlAgainstSchema(javax.xml.validation.Validator validator, Path xmlFile, String fileName,
+                                          List<String> errors, List<String> warnings) {
+        validator.setErrorHandler(new ErrorHandler() {
+            @Override
+            public void warning(SAXParseException e) {
+                warnings.add("[Warn: " + fileName + "] (" + e.getLineNumber() + ":"
+                        + e.getColumnNumber() + "): " + e.getMessage());
+            }
+
+            @Override
+            public void error(SAXParseException e) {
+                errors.add("[Error: " + fileName + "] (" + e.getLineNumber() + ":"
+                        + e.getColumnNumber() + "): " + e.getMessage());
+            }
+
+            @Override
+            public void fatalError(SAXParseException e) {
+                errors.add("[Fatal: " + fileName + "] (" + e.getLineNumber() + ":"
+                        + e.getColumnNumber() + "): " + e.getMessage());
+            }
+        });
+        try (InputStream in = Files.newInputStream(xmlFile)) {
+            validator.validate(new javax.xml.transform.stream.StreamSource(in));
+        } catch (SAXException e) {
+            errors.add("[" + fileName + "] is not valid: " + e.getMessage());
         } catch (IOException e) {
             errors.add("Failed to read [" + fileName + "]: " + e.getMessage());
         }

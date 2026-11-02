@@ -96,7 +96,7 @@ Then create the indexes and load the data:
 
 ```sh
 cd ../rosa-search
-./init-opensearch.sh --env prod
+./init-opensearch.sh --env stage
 ```
 
 The script reads this workspace's outputs, so the working copy must still be
@@ -110,7 +110,7 @@ does not widen the others.
 
 | Layer | Control |
 |---|---|
-| Network | Domain has no public endpoint. Its security group admits only the Lambda security group (plus `vpc_cidr_blocks`, if set). The Lambda group can reach only 443 and, when `dns_server_cidrs` is set, DNS on 53 to those servers. The VPC uses JHU DNS servers, which security groups filter, so without `dns_server_cidrs` the Lambdas cannot resolve the domain endpoint (reported as `[Errno 16] Device or resource busy`). |
+| Network | Domain has no public endpoint. Its security group admits only the Lambda security group (plus `vpc_cidr_blocks`, if set). The Lambda group can reach only 443 and, when `dns_server_cidrs` is set, DNS on 53 to those servers. `dns_server_cidrs` is only needed in a VPC whose DHCP options point at external DNS servers that security groups filter (the symptom is `[Errno 16] Device or resource busy` when resolving the domain endpoint); the dspace VPC uses AmazonProvidedDNS, so both tfvars leave it empty. |
 | Domain access policy | Names the two Lambda roles. The search role is granted `es:ESHttpPost` on exactly three `_search` paths. |
 | Identity policy | The search role's own policy grants the same three paths and nothing else. |
 
@@ -133,9 +133,12 @@ a query rosa-viewer could have produced. It rejects, among other things:
 - code execution (`script`, `script_score`, `script_fields`, `runtime_mappings`)
 - unbounded clause types (`query_string`, `regexp`, `wildcard`, `fuzzy`, `more_like_this`)
 - cross-index reads (`terms` lookups) and cross-document joins
-- mapping disclosure (`profile`, `explain`, and upstream error bodies)
+- mapping disclosure (`profile`, `explain`, upstream error bodies, and the
+  `_shards.failures` details of partial 200 responses, which are stripped
+  while the `failed` count is kept)
 - oversized work: body > 16 KB, `size` > 300, `from + size` > 10000, aggregation
-  buckets > 500, and caps on JSON depth, node count, and clause count
+  `size` > 500, `shard_size`, and caps on JSON depth, node count, and clause count
+- malformed leaf queries: a non-empty `match_all`/`match_none`, a boolean `min_score`
 
 A bare `POST /_search` is rewritten to `/manifest,canvas/_search` so it cannot
 reach the security plugin's own system indexes. Every forwarded query gets a
@@ -147,7 +150,11 @@ Rejections are logged to the `search_log_group` output with the offending body.
 
 The `manifest` and `canvas` indexes use a `stemmer_override` filter and a
 `mapping` char_filter that read dictionary files from the OpenSearch config
-directory. local-dev bind-mounts those files into the container; AWS has no
+directory. The Latin analyzer chain is `latin_char_normalizer` (v→u, j→i on the
+text) → `lowercase` → `asciifolding` → `latin_stemmer` → `latin_v_to_u` →
+`latin_j_to_i`, so a query for a dictionary headword spelled with v or j
+(`divido`) meets the same `u`/`i` form the rules produce; see
+[`rosa-search/opensearch/LATIN-ANALYZER.md`](../rosa-search/opensearch/LATIN-ANALYZER.md). local-dev bind-mounts those files into the container; AWS has no
 equivalent, so each file is uploaded to S3, imported as a `TXT-DICTIONARY`
 package, and associated with the domain. The index definition then addresses it
 as `analyzers/<package-id>` instead of by filename.
@@ -170,8 +177,16 @@ Two constraints worth knowing:
   trend to zero the next step is a non-burstable family, not a larger T3.
 
 To update a dictionary, edit the file in `rosa-search/opensearch/` and re-apply.
-The index analyzers are not declared `updateable`, so the indexes must then be
-rebuilt with `init-opensearch.sh`.
+The S3 object is replaced (`source_hash`), but `packages.tf` gives the
+`aws_opensearch_package` resources no content trigger, so the package itself
+stays at its old version: update it explicitly (`aws opensearch
+update-package` plus `associate-package`, or taint the package resource) and
+check `aws opensearch list-packages-for-domain` shows the new version. The index
+analyzers are not declared `updateable`, so the indexes must then be rebuilt with
+`init-opensearch.sh`, whose final check analyzes `dividunt`, `divido` and
+`dīvidunt` to the same stem. The admin Lambda's `cluster_settings` action
+reports each index's `index.analysis` block as the domain holds it, which shows
+whether the packages were resolved at creation.
 
 ## Notes
 
@@ -184,10 +199,10 @@ rebuilt with `init-opensearch.sh`.
   route to S3, but `jhu-countertable-tf` already creates an S3 gateway endpoint
   in `vpc-07f503e3b0f8d5f8a`, and AWS permits only one per route table. Enable
   this only in a VPC where nothing else owns the endpoint.
-- **`cors_allowed_origins` defaults to `["*"]`** in both tfvars files. That is
-  not a data exposure risk, since the API is read-only over public content, but
-  it does let other sites consume the domain's capacity. Narrow it to the viewer
-  origin once the hostname is known.
+- **`cors_allowed_origins`** is the stage GitHub Pages origin in `stage.tfvars`
+  and `["*"]` in `prod.tfvars`. `*` is not a data exposure risk, since the API
+  is read-only over public content, but it does let other sites consume the
+  domain's capacity. Narrow prod to the portal origins once they are final.
 - **Auto-Tune is explicitly disabled.** T3 instance types do not support it, and
   leaving it unset lets AWS enable it and the apply fails.
 - **The search proxy fails fast and retries once.** `upstream_timeout` is 8 s,
@@ -245,12 +260,12 @@ viewer ──HTTPS──▶ CloudFront ──VPC origin──▶ internal ALB �
 | _(networking)_ | The VPC, subnets and routing are injected from the dspace VPC via the root module (`vpc_id`, `public_subnet_ids`, `private_subnet_ids`); the module creates no VPC, subnets or routing of its own. |
 | `security-groups.tf` | ALB: port 80 only from CloudFront's origin-facing prefix list. Tasks: 8182 only from the ALB, egress 443. |
 | `alb.tf` | Internal ALB, HTTP listener, target group with a `/health` check. |
-| `ecs.tf` | Log group, cluster, task definition (Cantaloupe settings as environment variables), service, CPU target-tracking auto scaling. |
+| `ecs.tf` | Log group, cluster, task definition (Cantaloupe settings as environment variables), service, CPU target-tracking auto scaling (inert while `image_server_min_tasks` equals `image_server_max_tasks`, as both tfvars set them). |
 | `iam.tf` | Execution role (pull this repository, write this log group) and task role (read source prefix, read/write cache prefix). |
 | `s3.tf` | Derivative cache bucket: private, SSE-S3, TLS only, lifecycle expiry on `<environment>/`. |
 | `ecr.tf` | Repository with immutable tags, scan on push, and a keep-last-N lifecycle. |
-| `cloudfront.tf` | VPC origin, cache/CORS policies, the two legacy functions, the distribution. |
-| `functions/` | The CloudFront Functions and their Node tests. |
+| `cloudfront.tf` | VPC origin, cache/CORS policies, the two legacy functions, the distribution (with explicit 10 s caching of 5xx responses). |
+| `functions/` | The CloudFront Functions and their Node tests. `legacy-request.js` also refuses identifiers with a `.` or `..` path segment (400), which otherwise reach S3 and come back as a 500 carrying the SDK's message; the `/iiif/2/*` and `/iiif/3/*` behaviours run no function, so the same request on those paths still produces that 500. |
 | `waf.tf` | Optional CLOUDFRONT-scope web ACL, adapted from aws-dspace-ecs-tf. |
 | `monitoring.tf` | Optional SNS topic, alarms and dashboard, adapted from aws-dspace-ecs-tf. |
 | `tests/` | `tofu test` suite with a mocked AWS provider. |
@@ -276,8 +291,7 @@ viewer ──HTTPS──▶ CloudFront ──VPC origin──▶ internal ALB �
   and passes `vpc_id`, `public_subnet_ids` and `private_subnet_ids` into the
   module (computed in root locals). The AZ exclusion lives in the root
   `vpc_origin_unsupported_zone_ids` (default `["use1-az3"]`), applied when
-  selecting the private subnets; the old `image_server_vpc_cidr` input is
-  removed.
+  selecting the private subnets.
 - **Caching.** IIIF URLs never change for a given image. Cantaloupe sends
   `s-maxage=31536000`, so CloudFront serves almost all repeat traffic (tiles,
   thumbnails, `info.json`) from the edge. Edge misses go through an Origin
@@ -296,11 +310,13 @@ viewer ──HTTPS──▶ CloudFront ──VPC origin──▶ internal ALB �
   back. `/iiif/2/*` and `/iiif/3/*` run no functions. See
   [rosa-image-server](../rosa-image-server/README.md#legacy-iiif-urls).
 - **WAF** reuses the dspace rule set with changes for an image API. Bot Control
-  is optional because it is billed per request. HTTP-library and non-browser
-  user agents are counted rather than blocked, so IIIF harvesters work. The
-  per-IP rate limit defaults to 20000 per 5 minutes, because deep zooming in
-  Mirador issues hundreds of tile requests a minute. It is on in prod and off in
-  stage.
+  (`image_server_waf_enable_bot_control`) is optional and off by default
+  because it is billed per request; when it is on, its HTTP-library and
+  non-browser user-agent signals are counted rather than blocked, so IIIF
+  harvesters work. The Common Rule Set still blocks requests that send no
+  `User-Agent` header at all. The per-IP rate limit defaults to 20000 per 5
+  minutes, because deep zooming in Mirador issues hundreds of tile requests a
+  minute. The web ACL is on in prod and off in stage.
 - **Monitoring** reuses the dspace pattern: an SNS topic (with an optional email
   subscription) and alarms on no healthy hosts, target 5xx, ECS CPU and memory,
   and the CloudFront 5xx rate, plus a dashboard. The account-wide billing anomaly
@@ -375,19 +391,22 @@ its CloudFront hostname. To move the name:
 4. Existing `/iiif/<id>` URLs keep working. New manifests can use
    `image_server_iiif2_base_url` or `image_server_iiif3_base_url`.
 
-The viewer and workflow defaults (`rosa-viewer/.env`, `deploy-stage.yml`,
-`release.yml`) still name `https://image.library.jhu.edu/iiif` and are left
-alone until then.
+Which image base URL and Image API version each environment and workflow uses
+is recorded in [docs/deployment.md](../docs/deployment.md#deploying-the-image-server).
 
 ### Tests
 
 ```sh
-# CloudFront Functions (Node 20+)
-node --test modules/rosa2-image-server/functions/test/
+# CloudFront Functions (Node 22, as in CI). `node --test <directory>/` does not
+# work on Node 22; pass the files, or run plain `node --test` in the module.
+node --test 'modules/rosa2-image-server/functions/test/*.test.mjs'
 
 # Module logic with a mocked AWS provider (no credentials needed)
 cd modules/rosa2-image-server && tofu init -backend=false && tofu test
 ```
+
+CI runs the function tests (`.github/workflows/ci.yml`, job "Test CloudFront
+Functions"); the `tofu test` suite and the image smoke test are run by hand.
 
 `functions/test/e2e.test.mjs` also runs the functions against a live local
 server when `ROSA_IMAGE_SERVER_URL` is set; `rosa-image-server/test/smoke-test.sh --keep`
@@ -399,9 +418,10 @@ The domain dominates: one `t3.medium.search` on-demand plus a 20 GiB gp3 volume.
 The HTTP API, both Lambdas, and CloudWatch Logs are usage-priced and negligible
 at this traffic level.
 
-For the image server, the fixed costs are the Fargate task(s) (stage one
-1 vCPU / 4 GiB task; prod 2 vCPU / 8 GiB, scaling 1–3), the internal ALB, one
-public IPv4 address per task, and the WAF web ACL in prod. There is no NAT
+For the image server, the fixed costs are the Fargate task(s) (one 2 vCPU /
+4 GiB task in each environment, per `image_server_task_cpu`,
+`image_server_task_memory` and `image_server_min_tasks` in the tfvars), the
+internal ALB, one public IPv4 address per task, and the WAF web ACL in prod. There is no NAT
 gateway, and the VPC origin carries no charge. Usage
 costs are CloudFront requests and data transfer (`PriceClass_100` keeps it to
 North American and European edges), S3 requests, and cache storage, which

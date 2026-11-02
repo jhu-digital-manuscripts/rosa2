@@ -179,7 +179,9 @@ fragment too, because WordPress would treat a query string such as
 
 Browse and search URLs also take `s` (sort: `relevance`, `page`, `title`,
 `title_desc`), `o` (offset of the first result) and `m` (results per page).
-Parameters with default values are left out. A page is named by its image
+Parameters with default values are left out. Only the first 10,000 results of a
+search can be paged to (Opensearch's `max_result_window`, which the search proxy
+also enforces); the results header says so when a search matches more. A page is named by its image
 (`Add12042.001v` → `001v`), or `i<index>` for a canvas without an image of
 its own.
 
@@ -311,7 +313,7 @@ Mirador.viewer({
 | `logoBaseUrl` | string | No | `'/logo'` | Base URL for collection and book logos |
 | `enableFacets` | boolean | No | `true` | Enable faceted browsing |
 | `bookClickView` | string | No | `'book'` | View opened by clicking a book result row: `'single'` or `'book'` at the start of the book, or `'gallery'`. Clicking a thumbnail in a book row, or a page result, always opens that page in single image view |
-| `pageSize` | number | No | `20` | Results per page |
+| `pageSize` | number | No | `20` | Results per page (capped at 300, the proxy's limit) |
 | `pageSizeOptions` | number[] | No | `[20,30,40,50]` | Available page size options |
 
 ## Project Structure

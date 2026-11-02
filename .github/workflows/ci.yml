@@ -58,3 +58,32 @@ jobs:
       - name: Build sites
         run: npm run build:sites
         working-directory: rosa-viewer
+
+  rosa-search:
+    name: Test rosa-search Lambdas
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+
+      - name: Run Lambda tests
+        run: python3 -m unittest discover -s tests -v
+        working-directory: rosa-search/lambda
+
+  cloudfront-functions:
+    name: Test CloudFront Functions
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+
+      - name: Run function tests
+        run: node --test 'jhu-rosa2-tf/modules/rosa2-image-server/functions/test/*.test.mjs'

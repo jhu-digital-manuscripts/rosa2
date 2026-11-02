@@ -204,7 +204,7 @@ class FileSystemArchiveStoreChecksumTest {
         assertTrue(errors.isEmpty());
 
         // Collection-level checksum file
-        Path checksumFile = collectionDir.resolve("testcol.SHA1SUM");
+        Path checksumFile = collectionDir.resolve("testcolcollection.SHA1SUM");
         assertTrue(Files.exists(checksumFile));
 
         String content = Files.readString(checksumFile);

@@ -42,6 +42,16 @@ public sealed interface ArchiveStore permits FileSystemArchiveStore {
     BookCollection loadCollection(String collectionId) throws IOException;
 
     /**
+     * Loads a collection, reporting problems in its files instead of ignoring them.
+     *
+     * @param collectionId the collection identifier
+     * @param errors       list to collect messages about unreadable or malformed files
+     * @return the loaded collection
+     * @throws IOException if the collection directory cannot be read
+     */
+    BookCollection loadCollection(String collectionId, List<String> errors) throws IOException;
+
+    /**
      * Loads a book with all its data (images, metadata, annotations, permissions).
      *
      * @param collection the parent collection (provides language info and missing image data)
@@ -50,6 +60,17 @@ public sealed interface ArchiveStore permits FileSystemArchiveStore {
      * @throws IOException if the book cannot be read
      */
     Book loadBook(BookCollection collection, String bookId) throws IOException;
+
+    /**
+     * Loads a book, reporting problems in its files instead of ignoring them.
+     *
+     * @param collection the parent collection
+     * @param bookId     the book identifier
+     * @param errors     list to collect messages about unreadable or malformed files
+     * @return the loaded book
+     * @throws IOException if the book directory cannot be read
+     */
+    Book loadBook(BookCollection collection, String bookId, List<String> errors) throws IOException;
 
     /**
      * Resolves the path of a file in a book directory. The file need not exist.
@@ -72,6 +93,17 @@ public sealed interface ArchiveStore permits FileSystemArchiveStore {
     CheckResult check(BookCollection collection, Book book, boolean checkBits);
 
     /**
+     * Checks a book, optionally skipping the image file checks (for shallow copies).
+     *
+     * @param collection  the parent collection
+     * @param book        the book
+     * @param checkBits   whether to verify SHA1 checksums
+     * @param checkImages whether to verify that listed images exist on disk
+     * @return the check result
+     */
+    CheckResult check(BookCollection collection, Book book, boolean checkBits, boolean checkImages);
+
+    /**
      * Validates AoR transcription XML files for a book against the schema.
      *
      * @param collectionId the collection identifier
@@ -81,6 +113,19 @@ public sealed interface ArchiveStore permits FileSystemArchiveStore {
      * @throws IOException if files cannot be read
      */
     void validateXml(String collectionId, String bookId, List<String> errors, List<String> warnings) throws IOException;
+
+    /**
+     * Checks that a book's AoR transcription XML files are well-formed and, when a schema
+     * is given, valid against it.
+     *
+     * @param collectionId the collection identifier
+     * @param bookId       the book identifier
+     * @param schema       a local XML Schema file, or {@code null} for well-formedness only
+     * @param errors       list to collect errors
+     * @param warnings     list to collect warnings
+     * @throws IOException if the book directory cannot be read
+     */
+    void validateXml(String collectionId, String bookId, Path schema, List<String> errors, List<String> warnings) throws IOException;
 
     /**
      * Copies metadata files (XML, TXT, HTML, CSV) from the archive to
@@ -243,6 +288,6 @@ public sealed interface ArchiveStore permits FileSystemArchiveStore {
      * @param warnings     list to collect warning messages
      * @throws IOException if the book directory cannot be read or the output file cannot be written
      */
-    void generateTEITranscriptions(String collectionId, String bookId, List<String> errors,
+    void generateTEITranscriptions(String collectionId, String bookId, boolean force, List<String> errors,
                                    List<String> warnings) throws IOException;
 }

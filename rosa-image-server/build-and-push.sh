@@ -16,8 +16,10 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 CONTAINER_CLI="${CONTAINER_CLI:-docker}"
 KAKADU_ZIP_PATH="${KAKADU_ZIP:-}"
-CANTALOUPE_VERSION="5.0.7"
+# The Dockerfile's ARG default is the single source of the Cantaloupe version.
+CANTALOUPE_VERSION="$(sed -n 's/^ARG CANTALOUPE_VERSION=//p' "${SCRIPT_DIR}/Dockerfile" | head -1)"
 PLATFORM="linux/amd64"
+KAKADU_PLATFORM=""
 TAG=""
 ENVIRONMENT=""
 PUSH=false
@@ -39,9 +41,15 @@ Options:
   --kakadu-zip PATH          Licensed Kakadu distribution ZIP (required; or set
                              KAKADU_ZIP). Read from where it is, never copied
                              into the repository.
-  --cantaloupe-version VER   Cantaloupe release to install (default: ${CANTALOUPE_VERSION}).
+  --cantaloupe-version VER   Cantaloupe release to install (default: ${CANTALOUPE_VERSION},
+                             from ARG CANTALOUPE_VERSION in the Dockerfile). Another
+                             version also needs CANTALOUPE_SHA256 changed there.
   --tag TAG                  Image tag (default: <cantaloupe-version>-<git short sha>).
-  --platform PLATFORM        Target platform (default: ${PLATFORM}).
+                             Does not bypass the uncommitted-changes check.
+  --platform PLATFORM        Target platform (default: ${PLATFORM}). linux/amd64 and
+                             linux/arm64 select the matching Kakadu makefile.
+  --kakadu-platform NAME     Kakadu makefile suffix (Makefile-NAME), when --platform
+                             is neither linux/amd64 nor linux/arm64.
   --env stage|prod           Environment whose ECR repository to push to.
                              Required with --push.
   --push                     Push the image to ECR after building.
@@ -93,6 +101,7 @@ while [[ $# -gt 0 ]]; do
     --cantaloupe-version) require_value "$@"; CANTALOUPE_VERSION="$2"; shift 2 ;;
     --tag) require_value "$@"; TAG="$2"; shift 2 ;;
     --platform) require_value "$@"; PLATFORM="$2"; shift 2 ;;
+    --kakadu-platform) require_value "$@"; KAKADU_PLATFORM="$2"; shift 2 ;;
     --env) require_value "$@"; ENVIRONMENT="$2"; shift 2 ;;
     --push) PUSH=true; shift ;;
     --no-push) PUSH=false; shift ;;
@@ -112,6 +121,14 @@ done
 [[ -f "${KAKADU_ZIP_PATH}" ]] || die "Kakadu ZIP not found: ${KAKADU_ZIP_PATH}"
 [[ "${CANTALOUPE_VERSION}" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] \
   || die "invalid Cantaloupe version: ${CANTALOUPE_VERSION}"
+
+if [[ -z "${KAKADU_PLATFORM}" ]]; then
+  case "${PLATFORM}" in
+    linux/amd64) KAKADU_PLATFORM="Linux-x86-64-gcc" ;;
+    linux/arm64 | linux/arm64/v8) KAKADU_PLATFORM="Linux-arm-64-gcc" ;;
+    *) die "no Kakadu makefile known for ${PLATFORM}; pass --kakadu-platform" ;;
+  esac
+fi
 
 if [[ -n "${ENVIRONMENT}" && "${ENVIRONMENT}" != "stage" && "${ENVIRONMENT}" != "prod" ]]; then
   die "--env must be stage or prod"
@@ -160,11 +177,12 @@ KAKADU_ZIP_NAME="$(basename "${KAKADU_ZIP_PATH}")"
 ln "${KAKADU_ZIP_PATH}" "${KAKADU_CONTEXT}/${KAKADU_ZIP_NAME}" 2>/dev/null \
   || cp "${KAKADU_ZIP_PATH}" "${KAKADU_CONTEXT}/${KAKADU_ZIP_NAME}"
 
-echo "Building ${LOCAL_IMAGE} (${PLATFORM}, Cantaloupe ${CANTALOUPE_VERSION}, Kakadu ${KAKADU_ZIP_NAME})"
+echo "Building ${LOCAL_IMAGE} (${PLATFORM}, Kakadu makefile ${KAKADU_PLATFORM}, Cantaloupe ${CANTALOUPE_VERSION}, Kakadu ${KAKADU_ZIP_NAME})"
 run "${CONTAINER_CLI}" build \
   --platform "${PLATFORM}" \
   --build-context "kakadu_src=${KAKADU_CONTEXT}" \
   --build-arg "KAKADU_ZIP=${KAKADU_ZIP_NAME}" \
+  --build-arg "KAKADU_PLATFORM=${KAKADU_PLATFORM}" \
   --build-arg "CANTALOUPE_VERSION=${CANTALOUPE_VERSION}" \
   --label "org.opencontainers.image.revision=${GIT_SHA}" \
   --tag "${LOCAL_IMAGE}" \
@@ -200,10 +218,16 @@ REGISTRY="${REPOSITORY_URL%%/*}"
 REPOSITORY_NAME="${REPOSITORY_URL#*/}"
 REMOTE_IMAGE="${REPOSITORY_URL}:${TAG}"
 
-# Tags are immutable in the repository; fail early with a clear message.
-if [[ "${DRY_RUN}" == false ]] && aws ecr describe-images --region "${REGION}" \
-  --repository-name "${REPOSITORY_NAME}" --image-ids "imageTag=${TAG}" >/dev/null 2>&1; then
-  die "${REMOTE_IMAGE} already exists; choose another --tag"
+# Tags are immutable in the repository; fail early with a clear message. Only
+# "image not found" means the tag is free; any other error (no credentials,
+# no such repository, wrong region) is reported rather than mistaken for that.
+if [[ "${DRY_RUN}" == false ]]; then
+  if DESCRIBE_ERR="$(aws ecr describe-images --region "${REGION}" \
+      --repository-name "${REPOSITORY_NAME}" --image-ids "imageTag=${TAG}" 2>&1 >/dev/null)"; then
+    die "${REMOTE_IMAGE} already exists; choose another --tag"
+  elif [[ "${DESCRIBE_ERR}" != *ImageNotFoundException* ]]; then
+    die "cannot check ${REPOSITORY_URL} for tag ${TAG}: ${DESCRIBE_ERR}"
+  fi
 fi
 
 echo "Pushing ${REMOTE_IMAGE}"
@@ -220,7 +244,11 @@ echo
 if [[ "${DRY_RUN}" == true ]]; then
   echo "Dry run: nothing was built or pushed. A real run would print:"
 fi
-echo "Pushed ${REMOTE_IMAGE}. To deploy it, set in jhu-rosa2-tf/${ENVIRONMENT:-<env>}.tfvars:"
+if [[ -n "${ENVIRONMENT}" ]]; then
+  echo "Pushed ${REMOTE_IMAGE}. To deploy it, set in jhu-rosa2-tf/${ENVIRONMENT}.tfvars:"
+else
+  echo "Pushed ${REMOTE_IMAGE}. To deploy it, set in the jhu-rosa2-tf tfvars of the environment that uses ${REPOSITORY_URL}:"
+fi
 echo
 echo "  image_server_image_tag = \"${TAG}\""
 echo

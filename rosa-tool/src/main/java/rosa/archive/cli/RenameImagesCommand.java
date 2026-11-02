@@ -1,12 +1,11 @@
 package rosa.archive.cli;
 
+import picocli.CommandLine.ArgGroup;
 import picocli.CommandLine.Command;
+import picocli.CommandLine.Mixin;
 import picocli.CommandLine.Option;
-import rosa.archive.core.FileSystemArchiveStore;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Callable;
@@ -23,12 +22,12 @@ import java.util.concurrent.Callable;
  * and exits with code 1 if it is missing.</p>
  */
 @Command(name = "rename-images",
-         mixinStandardHelpOptions = true,
+         mixinStandardHelpOptions = true, versionProvider = VersionProvider.class,
          description = "Rename image files using the file map")
 public final class RenameImagesCommand implements Callable<Integer> {
 
-    @Option(names = "--archive", required = true, description = "Path to archive directory")
-    private Path archivePath;
+    @Mixin
+    private ArchiveOptions archive;
 
     @Option(names = "--collection", required = true, description = "Collection ID")
     private String collectionId;
@@ -36,11 +35,18 @@ public final class RenameImagesCommand implements Callable<Integer> {
     @Option(names = "--book", required = true, description = "Book ID")
     private String bookId;
 
-    @Option(names = "--change-id", description = "Also change ID prefix portion of filenames")
-    private boolean changeId;
+    @ArgGroup
+    private Mode mode = new Mode();
 
-    @Option(names = "--reverse", description = "Apply renaming in reverse (new-to-old)")
-    private boolean reverse;
+    /** The two renaming modes exclude each other. */
+    static final class Mode {
+        @Option(names = "--change-id",
+                description = "Instead of applying the file map, replace the ID prefix of every image file name with the book directory name")
+        boolean changeId;
+
+        @Option(names = "--reverse", description = "Apply the file map in reverse (new-to-old)")
+        boolean reverse;
+    }
 
     /**
      * Executes the image rename operation.
@@ -49,16 +55,15 @@ public final class RenameImagesCommand implements Callable<Integer> {
      */
     @Override
     public Integer call() {
-        if (!Files.isDirectory(archivePath)) {
-            System.err.println("Error: archive path does not exist or is not a directory: " + archivePath);
+        if (!archive.exists()) {
             return 1;
         }
 
         try {
-            var store = new FileSystemArchiveStore(archivePath);
+            var store = archive.openStore();
             List<String> errors = new ArrayList<>();
 
-            store.renameImages(collectionId, bookId, changeId, reverse, errors);
+            store.renameImages(collectionId, bookId, mode.changeId, mode.reverse, errors);
 
             errors.forEach(System.err::println);
             return errors.isEmpty() ? 0 : 1;

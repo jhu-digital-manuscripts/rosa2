@@ -5,7 +5,7 @@
 //   ROSA_IMAGE_SERVER_URL=http://127.0.0.1:18182 \
 //   ROSA_PUBLIC_BASE_URL=https://images.example.org \
 //   ROSA_TEST_ID=rose%2FTest%2FTest.001r \
-//     node --test jhu-rosa2-tf/modules/rosa2-image-server/functions/test/
+//     node --test 'jhu-rosa2-tf/modules/rosa2-image-server/functions/test/*.test.mjs'
 //
 // ROSA_PUBLIC_BASE_URL must equal the server's BASE_URI; rosa-image-server/
 // test/smoke-test.sh --keep starts a suitable server and prints these values.

@@ -2,166 +2,150 @@
 
 ## Purpose
 
-This document describes the Opensearch index structure used by rosa2 for full-text and faceted search over manuscript collection data. It covers the two indexes, their field mappings, the multi-language text analysis strategy, and how to create indexes from the definition files.
+This document is the reference for the two Opensearch indexes rosa2 uses for full-text
+and faceted search: their settings, every field with its type and the data
+`generate-opensearch-ingest` routes into it, the text analysis, and the bulk file format.
+
+Creating the indexes and loading data is described in
+[deployment.md](deployment.md#creating-indexes-and-ingesting); the client-side query
+contract is in [search.md](search.md).
 
 ## Audience
 
-System administrators deploying the search infrastructure and developers working on search integration.
+Developers working on the generator, the index definitions or the search integration,
+and administrators who need to know what a rebuild changes.
 
 ## Indexes
 
 The system uses two indexes, each defined in `rosa-search/opensearch/`:
 
-| Index | Definition File | Description |
+| Index | Definition file | Description |
 |-------|----------------|-------------|
-| `manifest` | `rosa-search/opensearch/manifest.json` | One document per book — metadata, identifiers, facet fields |
-| `canvas` | `rosa-search/opensearch/canvas.json` | One document per page — page-level data with all annotations merged in |
+| `manifest` | `rosa-search/opensearch/manifest.json` | One document per book: bibliographic metadata, identifiers, facet fields |
+| `canvas` | `rosa-search/opensearch/canvas.json` | One document per page, with every annotation that targets the page merged in |
 
-All annotation data that targets a canvas is accumulated into the canvas document rather than stored in a separate index. This means each canvas document contains per-type independently searchable fields for marginalia, underlines, marks, symbols, etc.
+All annotation data that targets a canvas is accumulated into the canvas document rather
+than stored in a separate index, so each canvas document has independently searchable
+fields per annotation type (marginalia, underlines, marks, …).
+
+A change to either definition is live only after the indexes are rebuilt
+(`local-dev/start.sh`, or `rosa-search/init-opensearch.sh` for AWS), because analyzers
+and most settings are fixed at creation.
 
 ### Shard count
 
-Both definitions set `"number_of_shards": 1`. The corpus is roughly 35 MB of bulk
-data across the two indexes, so a single shard per index holds all of it
-comfortably. The setting is explicit because the alternative is whatever default
-the cluster applies: AWS managed domains created without it ended up with 5
-primary shards per index, which meant a combined `/_search` fanned out to 10
-shard searches and 10 search contexts for a corpus that fits in one. On a small
-single-node domain that overhead is measurable in both latency and heap.
-
-Changing the shard count requires rebuilding the indexes, since
-`number_of_shards` is fixed at creation. Run `init-opensearch.sh`, which deletes
-and recreates both indexes before ingesting.
+Both definitions set `"number_of_shards": 1`. The corpus is roughly 35 MB of bulk data
+across the two indexes, so a single shard per index holds all of it comfortably. The
+setting is explicit because the alternative is whatever default the cluster applies: AWS
+managed domains created without it ended up with 5 primary shards per index, which meant
+a combined `/_search` fanned out to 10 shard searches and 10 search contexts for a corpus
+that fits in one. On a small single-node domain that overhead is measurable in both
+latency and heap. Changing the shard count requires rebuilding the indexes.
 
 ### Replica count
 
-Both definitions also set `"number_of_replicas": 0`. Every environment (local-dev,
-stage, prod) runs a single data node, and a replica can never be placed on the
-same node as its primary. With the default of 1 replica, each index leaves one
-shard unassigned, so the cluster stays permanently yellow and health alarms
-carry no signal. If a domain is ever scaled to two or more data nodes, raise
-this setting to get redundancy. Unlike the shard count, `number_of_replicas` is
-dynamic and can be changed on a live index with `PUT /<index>/_settings`.
+Both definitions also set `"number_of_replicas": 0`. Every environment (local-dev, stage,
+prod) runs a single data node, and a replica can never be placed on the same node as its
+primary. With the default of 1 replica, each index leaves one shard unassigned, so the
+cluster stays permanently yellow and health alarms carry no signal. If a domain is ever
+scaled to two or more data nodes, raise this setting to get redundancy. Unlike the shard
+count, `number_of_replicas` is dynamic and can be changed on a live index with
+`PUT /<index>/_settings`.
 
-## Creating Indexes
+## Strict mapping
 
-The definitions target Opensearch 3.x. Use the Opensearch REST API with the definition files:
+Both mappings set `"dynamic": "strict"`. A document with a field the mapping does not
+know is rejected by the Bulk API as an item error instead of being indexed with a guessed
+type, which is what used to happen silently when the generator and the mapping drifted
+apart. When a field is added, change `rosa-search/opensearch/{manifest,canvas}.json`, the
+generator in `rosa-tool/src/main/java/rosa/archive/opensearch/` and this document
+together, then rebuild and ingest; `init-opensearch.sh` fails when any bulk item is
+rejected.
 
-```bash
-curl -X PUT "https://<host>:9200/manifest" \
-  -H "Content-Type: application/json" \
-  -d @rosa-search/opensearch/manifest.json
+## Document ids
 
-curl -X PUT "https://<host>:9200/canvas" \
-  -H "Content-Type: application/json" \
-  -d @rosa-search/opensearch/canvas.json
-```
+### Manifest id
 
-Both indexes reference the Latin analyzer resource files (see
-`rosa-search/opensearch/LATIN-ANALYZER.md`), so creation fails if those files are
-not installed and readable. Always check the response: a failed creation followed
-by a bulk ingest leaves you with dynamically mapped indexes where the facet fields
-are `text` instead of `keyword`, silently breaking faceting and sorting.
+`{collection_id}.{book_id}`, e.g. `rose.Douce195`, `aor.FolgersHa2`. The dot-separated
+pair is unique across collections.
 
-After creating indexes, ingest bulk files generated by the `generate-opensearch-ingest` command:
+### Canvas id
 
-```bash
-curl -X POST "https://<host>:9200/_bulk" \
-  -H "Content-Type: application/x-ndjson" \
-  --data-binary @output/aor.bulk.json
-```
+`{collection_id}.{image_id_without_extension}`, e.g. `rose.Douce195.001r` (from
+`Douce195.001r.tif`), `aor.FolgersHa2.003r`. The archive image id already carries the
+book id, so only the collection prefix is added.
 
-The Bulk API returns HTTP 200 even when individual documents fail, so check the
-response body for `"errors":true`.
+### Constructing IIIF URIs from search results
 
-## Document ID Formats
-
-### Manifest ID
-
-Format: `{collection_id}.{book_id}`
-
-The manifest document ID combines the collection and book archive IDs with a dot separator. This provides a globally unique identifier across all collections.
-
-Examples:
-- `rose.Douce195` — book Douce195 in the rose collection
-- `aor.Ha2` — book Ha2 in the aor collection
-
-### Canvas ID
-
-Format: `{collection_id}.{image_id_without_extension}`
-
-The canvas document ID combines the collection ID with the archive image ID (minus the file extension). Since the archive image ID already contains the book ID (e.g. `Douce195.001r.tif` belongs to book `Douce195`), only the collection prefix is needed.
-
-Examples:
-- `rose.Douce195.001r` — page 001r of Douce195 in the rose collection (from image `Douce195.001r.tif`)
-- `aor.Ha2.003r` — page 003r of Ha2 in the aor collection (from image `Ha2.003r.tif`)
-
-### Constructing IIIF Canvas URIs from Search Results
-
-A client receiving a canvas search result can construct the IIIF Presentation API canvas URI using the `manifest_id` and `page_num` fields:
+A canvas document's `manifest_id` and `page_num` give the IIIF Presentation canvas URI:
 
 ```
 {base_url}/{collection_id}/{book_id}/canvas/{page_num}
 ```
 
-Split `manifest_id` on the first `.` to extract `collection_id` and `book_id`. For example, given `manifest_id: "rose.Douce195"` and `page_num: 2`:
+Split `manifest_id` on the first `.` to get `collection_id` and `book_id`. For
+`manifest_id: "rose.Douce195"` and `page_num: 2` that is
+`https://iiif.example.org/rose/Douce195/canvas/2`. `page_num` is the 0-based position of
+the page in the book's image list, and the IIIF canvases are numbered the same way (see
+[iiif-generation.md](iiif-generation.md#canvases)).
 
-```
-https://iiif.example.org/rose/Douce195/canvas/2
-```
+The `iiif_image_id` field of canvas documents and of manifest `thumbnail` entries is the
+IIIF Image API identifier of the page image, unencoded (e.g.
+`rose/Douce195/cropped/Douce195.001r`). Percent-encode it as a single path segment and
+append region, size, rotation and quality to get an image URL; see
+[iiif-generation.md](iiif-generation.md#identifiers) for the identifier scheme and the
+placeholder used for missing images.
 
-### Constructing IIIF Image API URLs from Search Results
+## Text analysis
 
-A client can construct a IIIF Image API URL for a canvas thumbnail using the `iiif_image_id` field:
+Textual content is routed into language-specific sub-fields so that the right analyzer
+(stemming, stop words) is applied at index time. The sub-field is the language code of
+the text:
 
-```
-{image_base_url}/{iiif_image_id_percent_encoded}/{region}/{size}/{rotation}/{quality}.{format}
-```
+| Language | Sub-field | Canvas analyzer | Manifest `title` analyzer |
+|----------|-----------|-----------------|---------------------------|
+| English | `.en` | `english_stripped` | built-in `english` |
+| French | `.fr` | `french_stripped` | built-in `french` |
+| Old French | `.ofr` | `old_french` (French light stemmer + ASCII folding) | `old_french` |
+| Latin | `.la` | `latin` (see below) | `latin` |
+| Italian | `.it` | `italian_stripped` | built-in `italian` |
+| Greek | `.el` | `greek_stripped` | built-in `greek` |
+| Spanish | `.es` | `spanish_stripped` | built-in `spanish` |
+| German | `.de` | `german_stripped` | not mapped |
 
-The `iiif_image_id` value (e.g. `rose/Douce195/cropped/Douce195.001r`) must be percent-encoded as a single path segment (slashes become `%2F`). For example, to get an 80px-wide thumbnail:
+The `*_stripped` analyzers of the canvas index are the built-in language analyzers with a
+`strip_brackets` character filter in front, which removes the editorial `[` and `]`
+around expansions (`i[nfr]a` is analysed as `infra`); the generator removes the brackets
+from the indexed text as well. The Latin analyzer runs a character filter that maps `v`
+to `u` and `j` to `i`, then `lowercase`, `asciifolding`, a dictionary lemmatizer
+(`latin_stemmer`, a `stemmer_override` over `latin-stemmer-rules.txt`) and the same v/u,
+j/i folding again on the lemma, so that a query for a dictionary headword such as
+`divido` and an inflected form in the text such as `dividunt` meet at `diuido`. Its
+design, dictionaries and limits are described in
+[rosa-search/opensearch/LATIN-ANALYZER.md](../rosa-search/opensearch/LATIN-ANALYZER.md).
 
-```
-https://image.example.org/rose%2FDouce195%2Fcropped%2FDouce195.001r/full/80,/0/default.jpg
-```
+Text whose language is not in the table is routed to `.en`. In the data this concerns
+`iw` (Hebrew) and `cy` (Welsh); the language codes themselves are still indexed in the
+`language` and `marginalia_language` keyword fields.
 
-The same `iiif_image_id` field appears on both manifest `thumbnail` entries and canvas documents, providing a consistent way to generate image URLs.
+Every language sub-field is an array with one element per piece of text routed to it,
+for example one per marginal note: `"marginalia.la": ["Nota bene", "Vide infra"]`.
+Opensearch leaves a position gap between array elements (`position_increment_gap`, 100 by
+default), so phrase and proximity queries do not match across two annotations, and
+highlight fragments stay within one.
 
-## Multi-Language Field Structure
+### Keyword sub-field pattern
 
-Textual content is routed into language-specific sub-fields so that the correct analyzer (stemming, stop words) is applied at index time.
-
-Supported languages and their sub-field suffixes:
-
-| Language | Sub-field | Analyzer |
-|----------|-----------|----------|
-| English | `.en` | Standard English with stemming |
-| French | `.fr` | French with stemming |
-| Old French | `.ofr` | Custom: French stemming + asciifolding for spelling variation |
-| Italian | `.it` | Italian with stemming |
-| Latin | `.la` | Custom Latin stemming |
-| Greek | `.el` | Greek analyzer |
-| Spanish | `.es` | Spanish with stemming |
-| German | `.de` | German with stemming |
-
-This pattern applies to the annotation-type fields in the `canvas` index: `marginalia`, `underline`, `mark`, `symbol`, `errata`, `numeral`, `drawing`, `emphasis`, `cross_reference`, `calculation`, `graph`, `table`, `transcription`, `illustration`, `translation`, and `anchor_text`.
-
-The `manifest` index also has a multi-field `title` with language sub-fields for language-appropriate title search.
-
-If content's language code is not in the supported set, content falls back to the `.en` sub-field.
-
-Each language sub-field is an array with one element per piece of text routed to it, for example one per marginal note: `"marginalia.la":["Nota bene","Vide infra"]`. Opensearch leaves a position gap between array elements (`position_increment_gap`, 100 by default), so phrase and proximity queries do not match across two annotations, and highlight fragments stay within one.
-
-## Keyword Sub-Field Pattern
-
-Some annotation-type fields have both enumerated keyword values AND free text content. These fields use a `keyword` sub-field alongside language sub-fields:
+Annotation types that have both an enumerated name and free text use a `keyword`
+sub-field next to the language sub-fields:
 
 ```json
 "mark": {
   "type": "object",
   "properties": {
     "keyword": { "type": "keyword" },
-    "en": { "type": "text", "analyzer": "english" },
-    "fr": { "type": "text", "analyzer": "french" },
+    "en": { "type": "text", "analyzer": "english_stripped" },
+    "la": { "type": "text", "analyzer": "latin" },
     ...
   }
 }
@@ -169,49 +153,55 @@ Some annotation-type fields have both enumerated keyword values AND free text co
 
 Fields using this pattern: `mark`, `symbol`, `drawing`, `calculation`, `graph`, `table`.
 
-**Indexing:** The type/name value (e.g. `"plus_sign"` for a mark) is written to `field.keyword` as an array of the distinct values on the page (e.g. `"drawing.keyword":["cone","pyramid"]`), so an exact match on any one of them finds the page. The referenced text is routed to the appropriate language sub-field (e.g. `mark.en`). `symbol.keyword` also gets the symbols named inside marginalia, drawings, graphs and tables (`<symbol_in_text>` and similar), so a symbol search finds pages that mention a symbol as well as pages with a symbol annotation.
+**Indexing.** The type or name (e.g. `plus_sign` for a mark) is written to
+`field.keyword` as an array of the distinct values on the page
+(`"drawing.keyword": ["cone", "pyramid"]`); the text goes to the language sub-field.
+`symbol.keyword` also receives the symbols named inside marginalia, drawings, graphs and
+tables (`<symbol_in_text>`, `<marginalia_symbol>`), so a symbol search finds pages that
+mention a symbol as well as pages with a symbol annotation.
 
-**Searching:**
-- Search for a specific type: `mark.keyword: "plus_sign"`
-- Full-text search the referenced text: `mark.en: "some text"`
-- Both can be combined in a bool query
+**Searching.** `{"term": {"mark.keyword": "plus_sign"}}` finds a mark type;
+`{"multi_match": {"query": "…", "fields": ["mark.*"]}}` searches its text in every
+language (the `keyword` sub-field is included in the wildcard and matches exact values).
 
-## Manifest Index Fields
+## Manifest index
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `id` | keyword | Unique manifest ID (`{collection_id}.{book_id}`) |
-| `collection_id` | keyword (array) | All ancestor collection IDs |
-| `label` | text (+ `.keyword`) | Human-readable common name of the book. Copied to `label_suggest` |
-| `label_suggest` | search_as_you_type | Filled from `label` by `copy_to`, not by the generator. Backs the viewer's Name filter type-ahead (see below) |
-| `title` | text (multi-lang) | Combined title: common name + BookText titles |
-| `repository` | text | Repository holding the physical item |
-| `shelfmark` | text | Repository shelfmark |
-| `date` | text | Date label |
-| `origin` | text | Place of origin |
-| `num_pages` | integer | Number of pages |
-| `languages` | keyword (array) | Languages present in the book |
-| `description` | text | Textual description |
-| `authors` | keyword (array) | Authors |
-| `type` | keyword | Type (manuscript, print) |
-| `current_location` | keyword | Current physical location |
-| `websites` | keyword (array) | Associated URLs |
-| `year_start` | integer | Start year of date range |
-| `year_end` | integer | End year of date range |
-| `num_illustrations` | integer | Number of illustrations |
-| `material` | keyword | Material (parchment, paper) |
-| `has_transcription` | boolean | Whether transcription data exists |
-| `thumbnail` | object (disabled, array) | Up to 3 thumbnail objects with `iiif_image_id` and `page_num` |
-| `logo` | keyword | Logo image filename |
+One document per book, including books without images.
+
+| Field | Type | Value |
+|-------|------|-------|
+| `id` | keyword | `{collection_id}.{book_id}` |
+| `collection_id` | keyword (array) | The book's collection id followed by the ids in its `parents` (one level; `["rose", "dlmm"]`). A search filtered on `dlmm` therefore finds `rose` and `pizan` books. |
+| `label` | text, `.keyword` | The book's English common name, else the book id. Copied to `label_suggest`. The viewer sorts on `label.keyword`. |
+| `label_suggest` | search_as_you_type | Filled from `label` by `copy_to`; not in the bulk data. See below. |
+| `title` | text with `.keyword`, `.en`, `.fr`, `.ofr`, `.la`, `.el`, `.it`, `.es` | One string: the common name followed by the titles of the book's texts, or the book id. It is not routed by language: every sub-field analyses the same string with its own analyzer. There is no `.de`. |
+| `repository` | text | Holding repository, `""` if unknown |
+| `shelfmark` | text | Repository shelfmark, `""` if unknown |
+| `date` | keyword | Date label (facet), `""` if unknown |
+| `origin` | keyword | Place of origin (facet), `""` if unknown |
+| `num_pages` | integer | `<totalPages>` of `{book}.metadata.xml` (not the image count) |
+| `languages` | keyword (array) | The collection's `languages` from `config.properties`, the same for every book in it |
+| `description` | text | Full text of the English TEI description, `""` if none |
+| `authors` | keyword (array) | Authors of the bibliographic record plus the authors of the book's texts |
+| `type` | keyword | `manuscript` or `print`, `""` if unknown |
+| `current_location` | keyword | Current physical location, `""` if unknown |
+| `num_illustrations` | integer | From `{book}.metadata.xml` |
+| `material` | keyword | `parchment`, `paper`, …, `""` if unknown |
+| `has_transcription` | boolean | Whether `{book}.transcription.xml` exists |
+| `thumbnail` | object, `enabled: false` (array) | Up to 3 `{iiif_image_id, page_num}` entries, see below |
+| `logo` | keyword | Logo file name, see below |
+
+Missing string values are indexed as `""`, so a `terms` aggregation on a keyword facet can
+return an empty-string bucket for books without the value.
 
 ### label_suggest
 
 A [`search_as_you_type`](https://docs.opensearch.org/latest/mappings/supported-field-types/search-as-you-type/)
 field populated from `label` with `copy_to`, so the bulk data does not contain it.
-Opensearch indexes `label_suggest`, `label_suggest._2gram`, `label_suggest._3gram`
-and `label_suggest._index_prefix`, which makes prefix matching on each word of a
-label cheap. `label` itself stays a `text` field with a `.keyword` sub-field because
-the viewer sorts by `label.keyword`, and `search_as_you_type` takes no `fields`.
+Opensearch indexes `label_suggest`, `label_suggest._2gram`, `label_suggest._3gram` and
+`label_suggest._index_prefix`, which makes prefix matching on each word of a label cheap.
+`label` itself stays a `text` field with a `.keyword` sub-field because the viewer sorts
+by `label.keyword`, and `search_as_you_type` takes no `fields`.
 
 The viewer queries it with a `bool_prefix` `multi_match`:
 
@@ -239,23 +229,17 @@ The viewer queries it with a `bool_prefix` `multi_match`:
 `douce 1` narrows to `Douce 195` instead of also matching every label with a word
 starting with `1`.
 
-Adding or changing this mapping, like any mapping change, takes effect only after
-the indexes are rebuilt (`local-dev/start.sh`, or `init-opensearch.sh` for AWS).
-
-### collection_id
-
-An array of keyword values containing the book's immediate collection ID plus all parent collection IDs. This enables searching across a parent collection to find documents in all sub-collections.
-
 ### thumbnail
 
-A disabled object array (not searchable) containing up to 3 entries representing pages suitable for use as book thumbnails. Each entry has:
+A disabled object array (not searchable) with up to 3 pages suitable as book
+thumbnails: the first 3 pages of the image list that are not missing and not front
+matter or binding. Each entry has:
 
-- `iiif_image_id` — the IIIF Image API identifier path (e.g. `rose/Douce195/cropped/Douce195.001r`). Clients can construct a full IIIF Image API URL by appending this to the image server base URL and adding size/rotation/quality parameters.
-- `page_num` — the 0-based page position in the book, usable to construct the IIIF Presentation API canvas URI (`{base_url}/{collection_id}/{book_id}/canvas/{page_num}`).
+- `iiif_image_id`: the IIIF Image API identifier, e.g. `rose/Douce195/cropped/Douce195.001r`
+  (the `cropped/` path when the book has a cropped image list).
+- `page_num`: the page's 0-based position in the image list, usable to construct the
+  canvas URI.
 
-The logic selects the first 3 non-missing, non-front-matter, non-binding pages from the image list. If the book has cropped images available, the `iiif_image_id` uses the cropped path (e.g. `rose/Douce195/cropped/Douce195.001r`).
-
-Example:
 ```json
 "thumbnail": [
   { "iiif_image_id": "rose/Douce195/cropped/Douce195.001r", "page_num": 2 },
@@ -266,71 +250,91 @@ Example:
 
 ### logo
 
-A filename for the logo image associated with this book:
-- For most collections: `<collection_id>.jpg` (e.g. `rose.jpg`)
-- For the `aor` collection: derived from the first reader name — lowercased, spaces replaced with underscores, plus `.jpg` (e.g. `john_dee.jpg`)
+The file name of the logo shown with the book, under the viewer's `public/logo/`:
 
-## Canvas Index Fields
+- `aor`: the first reader's name lowercased with spaces replaced by underscores, plus
+  `.jpg` (`gabriel_harvey.jpg`); `aor.jpg` when the book names no reader.
+- every other collection: `{collection_id}.jpg` (`rose.jpg`).
 
-### Structural Fields
+## Canvas index
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `id` | keyword | Unique canvas ID (`{collection_id}.{image_id_no_ext}`) |
-| `manifest_id` | keyword | Parent manifest ID (`{collection_id}.{book_id}`) |
-| `manifest_label` | keyword | Parent book label, the same value as the manifest's `label`. The viewer shows it in page results |
-| `collection_id` | keyword (array) | All ancestor collection IDs |
-| `iiif_image_id` | keyword | IIIF Image API identifier (e.g. `rose/Douce195/cropped/Douce195.001r`) |
-| `label` | text | Page label (pagination, signature, or image name) |
-| `page_num` | integer | 0-based page position in the book (maps to IIIF canvas URI path) |
+One document per row of the book's image list, including missing images.
 
-### Annotation Type Fields (multi-language text objects)
+### Structural fields
 
-Each field contains the text from all annotations of that type on the page, one array element per annotation text:
+| Field | Type | Value |
+|-------|------|-------|
+| `id` | keyword | `{collection_id}.{image_id_without_extension}` |
+| `manifest_id` | keyword | `{collection_id}.{book_id}` |
+| `manifest_label` | keyword | The book's label, the same value as the manifest document's `label`; the viewer shows it in page results |
+| `collection_id` | keyword (array) | As in the manifest document |
+| `iiif_image_id` | keyword | IIIF Image API identifier, e.g. `rose/Douce195/cropped/Douce195.001r` (the `cropped/` path when the book has a cropped image list) |
+| `label` | text, `.keyword` | Page label: AoR pagination, else signature, else the image list label or derived name |
+| `page_num` | integer | 0-based position in the image list, equal to the IIIF canvas index |
 
-| Field | Has keyword sub-field | Description |
-|-------|----------------------|-------------|
-| `marginalia` | No | Marginalia referenced text, transcription, and translation |
-| `underline` | No | Underlined text in the printed book |
-| `mark` | Yes | Mark names + referenced text |
-| `symbol` | Yes | Symbol names from symbol annotations and from symbols named in other annotations' text (in `symbol.keyword`) + referenced text |
-| `errata` | No | Corrections: referenced + amended text |
-| `numeral` | No | Numeral text and values |
-| `drawing` | Yes | Drawing types + text content |
-| `emphasis` | No | Emphasized text within marginalia |
-| `cross_reference` | No | Cross-reference people, titles, text |
-| `calculation` | Yes | Calculation types, data, content |
-| `graph` | Yes | Graph types, node text, notes (in the note's language), translations |
-| `table` | Yes | Table types, reader's text (in its own language), column headers, cells |
-| `transcription` | No | Transcription of manuscript text |
-| `illustration` | No | Illustration descriptions and character names |
-| `translation` | No | Translations from marginalia, drawings, tables |
-| `anchor_text` | No | Anchor text from marginalia, drawings, tables, and graph nodes and notes |
+### Default language
 
-### Keyword Array Fields
+Text that carries no language of its own is routed by the page's default language: the
+language of the page's first underline (underlines carry the language of the printed
+text), else the language of the book's first `<text>` in `{book}.metadata.xml`, else
+`en`.
 
-| Field | Description |
-|-------|-------------|
-| `people` | People referenced across all annotations (with alternates) |
-| `books` | Books referenced across all annotations (with alternates) |
-| `locations` | Locations/places referenced (with alternates) |
-| `method` | Methods used (pen, chalk, pencil, scoring, typewriter) |
+### Annotation type fields
+
+Each is an object with the language sub-fields of [Text analysis](#text-analysis) and,
+where marked, a `keyword` sub-field. One array element per annotation text.
+
+| Field | `.keyword` | What is routed into it |
+|-------|-----------|------------------------|
+| `marginalia` | no | The transcribed text of each marginal note, in its language, and the note's translation (always `.en`). The text the note anchors to goes to `anchor_text`, not here. Annotations of an unknown type also land here. |
+| `underline` | no | Underlined text of the printed book, in the underline's language |
+| `mark` | yes | Mark names in `.keyword`; the marked text in the mark's language |
+| `symbol` | yes | Symbol names in `.keyword`, from symbol annotations and from symbols named inside marginalia, drawings, graphs and tables; the referenced text in the symbol's language |
+| `errata` | no | Corrected text: the copy text and the amended text |
+| `numeral` | no | The numeral and its referenced text |
+| `drawing` | yes | Drawing types in `.keyword`; the drawing's text elements (each in its own language, default the drawing's) and its referenced text |
+| `emphasis` | no | Text emphasized within a marginal note, in the note's language |
+| `cross_reference` | no | Cross-references in marginal notes: the person and the title always in `.en`, the quoted text in its own language (default the note's) |
+| `calculation` | yes | Calculation types in `.keyword`; data and content always in `.en` |
+| `graph` | yes | Graph types in `.keyword`; graph notes in their own language, node text and content in the page language, graph translations in `.en` |
+| `table` | yes | Table types in `.keyword`; the table's text elements in their own language; column headers, cells and aggregated info in `.en` |
+| `transcription` | no | The TEI transcription of the page: poetry, rubrics and catchphrases in `.ofr`, illustration descriptions and notes in `.en` |
+| `illustration` | no | Illustration tagging of the page (resolved titles, every character name variant, textual elements, costume, objects, landscape, architecture, other) and the text of the collection's `annos.jsonld` commentary on the page, all in `.en` |
+| `translation` | no | Translations of drawings and tables, in `.en` (marginalia translations are in `marginalia.en`, graph translations in `graph.en`) |
+| `anchor_text` | no | Text of the printed book that an annotation refers to: the anchor text of marginal notes, drawings, tables, graph nodes and graph notes |
+
+### Keyword array fields
+
+Written only when non-empty, as arrays of distinct values.
+
+| Field | Value |
+|-------|-------|
+| `people` | People referenced by annotations on the page, with the alternate names from the collection's `people.csv`; ISNI identifiers are resolved to names and never indexed themselves |
+| `books` | Books referenced, with alternates from `books.csv` |
+| `locations` | Places referenced, with alternates from `locations.csv` |
+| `method` | Methods used, lowercased (`pen`, `chalk`, `pencil`, `scoring`, `typewriter`) |
 | `hand` | Hands identified |
-| `annotator` | Annotator(s) for this page |
-| `language` | All annotation languages on this canvas |
-| `marginalia_language` | Languages used within marginalia specifically |
-| `topic` | Marginalia topics |
-| `char_name` | Character names from illustrations |
+| `annotator` | The page's reader and any `other_reader` of its marginal notes |
+| `language` | Lowercased language codes of all annotations on the page (including codes such as `iw` and `cy` whose text is analysed as English) |
+| `marginalia_language` | Language codes of the marginal notes only |
+| `topic` | Marginalia topics. Mapped, but no transcription in the current archive has a `topic`, so the field is never populated |
+| `char_name` | Character names from the page's illustrations, every name variant |
 
-## Bulk Ingest File Format
+## Bulk format
 
-Generated bulk files use the Opensearch Bulk API format — alternating action and document lines (newline-delimited JSON):
+`generate-opensearch-ingest` writes one `<collection-id>.bulk.json` per collection that
+has books (`dlmm`, which has none, gets no file). Each uses the Opensearch Bulk API
+format, alternating action and document lines (newline-delimited JSON):
 
 ```json
-{"index":{"_index":"canvas","_id":"aor.Ha2.001r"}}
-{"id":"aor.Ha2.001r","manifest_id":"aor.Ha2","manifest_label":"<book label>","collection_id":["aor","top"],"label":"1r","page_num":0,"marginalia.la":"verbum","mark.keyword":["plus_sign"],...}
+{"index":{"_index":"manifest","_id":"rose.Douce195"}}
+{"id":"rose.Douce195","collection_id":["rose","dlmm"],"label":"Douce 195","title":"Douce 195 Roman de la Rose",...}
+{"index":{"_index":"canvas","_id":"aor.FolgersHa2.001r"}}
+{"id":"aor.FolgersHa2.001r","manifest_id":"aor.FolgersHa2","manifest_label":"Lodovico Domenichi, Facetie (Venice, 1571) & ...","collection_id":["aor"],"label":"323","page_num":2,"marginalia.la":["Romae Athenarum populares humores ..."],"mark.keyword":["plus_sign"],"mark.la":["artium usum bonarum"],...}
 ```
 
-One bulk file is produced per collection, named `<collection-id>.bulk.json`.
-
-Dot notation is used for language sub-fields (e.g. `marginalia.en`, `mark.keyword`) in the flat NDJSON format. Opensearch maps these to the nested object structure defined in the index mapping.
+Language and `keyword` sub-fields are written with dot notation (`marginalia.la`,
+`mark.keyword`), always as arrays; Opensearch maps them onto the object structure of the
+index definition. The Bulk API returns HTTP 200 even when documents fail, so check the
+response for `"errors": true`; with the strict mappings an unknown field is such a
+failure.

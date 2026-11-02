@@ -13,7 +13,10 @@
 
 set -euo pipefail
 
-IMAGE="rosa-image-server:dev"
+# build-and-push.sh tags images <cantaloupe-version>-<git sha>; the default
+# here is the tag it produces for the current checkout.
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+IMAGE="rosa-image-server:$(sed -n 's/^ARG CANTALOUPE_VERSION=//p' "${SCRIPT_DIR}/../Dockerfile" | head -1)-$(git -C "${SCRIPT_DIR}" rev-parse --short=8 HEAD 2>/dev/null || echo dev)"
 PORT=18182
 BENCHMARK=false
 KEEP=false
@@ -34,10 +37,14 @@ Usage: $(basename "$0") [--image IMAGE] [--port PORT] [--benchmark] [--keep]
 EOF
 }
 
+require_value() {
+  [[ $# -ge 2 && -n "$2" ]] || { echo "$1 requires a value" >&2; exit 2; }
+}
+
 while [[ $# -gt 0 ]]; do
   case "$1" in
-    --image) IMAGE="$2"; shift 2 ;;
-    --port) PORT="$2"; shift 2 ;;
+    --image) require_value "$@"; IMAGE="$2"; shift 2 ;;
+    --port) require_value "$@"; PORT="$2"; shift 2 ;;
     --benchmark) BENCHMARK=true; shift ;;
     --keep) KEEP=true; shift ;;
     -h | --help) usage; exit 0 ;;
@@ -74,13 +81,20 @@ check_contains() {
 
 # ---------- Test image ----------
 
-# Identifier rose/Test/Test.001r -> <prefix>/rose/Test/Test.001r.jp2
+# Identifier rose/Test/Test.001r -> <prefix>/rose/Test/Test.001r.jp2, and the
+# cropped form rose/Test/cropped/Test.001r that rosa-tool emits for books with
+# an images.crop.csv -> <prefix>/rose/Test/cropped/Test.001r.jp2.
 ID_PATH="rose/Test/Test.001r"
 ID_ENC="rose%2FTest%2FTest.001r"
+CROPPED_PATH="rose/Test/cropped/Test.001r"
+CROPPED_ENC="rose%2FTest%2Fcropped%2FTest.001r"
 WIDTH=2400
 HEIGHT=3200
+CROP_WIDTH=2000
+CROP_HEIGHT=2800
+AREA=$((WIDTH * HEIGHT))
 
-mkdir -p "${WORK_DIR}/images/rose/Test"
+mkdir -p "${WORK_DIR}/images/rose/Test/cropped"
 python3 - "${WORK_DIR}/source.ppm" "${WIDTH}" "${HEIGHT}" <<'PY'
 import sys
 path, w, h = sys.argv[1], int(sys.argv[2]), int(sys.argv[3])
@@ -99,11 +113,30 @@ chmod -R a+rwX "${WORK_DIR}"
   -quiet -i /work/source.ppm -o "/work/images/${ID_PATH}.jp2" \
   Clevels=6 Corder=RPCL "Cblk={64,64}" "Cprecincts={256,256}" ORGgen_plt=yes \
   -rate 2.4 >/dev/null
+# The "cropped" image is a smaller region of the same source.
+python3 - "${WORK_DIR}/source.ppm" "${WORK_DIR}/cropped.ppm" "${CROP_WIDTH}" "${CROP_HEIGHT}" <<'PY'
+import sys
+src, dst, cw, ch = sys.argv[1], sys.argv[2], int(sys.argv[3]), int(sys.argv[4])
+data = open(src, "rb").read()
+header_end = data.index(b"255\n") + 4
+w = int(data[3:].split()[0])
+pixels = data[header_end:]
+with open(dst, "wb") as f:
+    f.write(b"P6\n%d %d\n255\n" % (cw, ch))
+    for y in range(ch):
+        f.write(pixels[y * w * 3:(y * w + cw) * 3])
+PY
+chmod -R a+rwX "${WORK_DIR}"
+"${CONTAINER_CLI}" run --rm --user 0 --entrypoint kdu_compress \
+  -v "${WORK_DIR}:/work:z" "${IMAGE}" \
+  -quiet -i /work/cropped.ppm -o "/work/images/${CROPPED_PATH}.jp2" \
+  Clevels=6 Corder=RPCL "Cblk={64,64}" "Cprecincts={256,256}" ORGgen_plt=yes \
+  -rate 2.4 >/dev/null
 chmod -R a+rX "${WORK_DIR}/images"
-if [[ -s "${WORK_DIR}/images/${ID_PATH}.jp2" ]]; then
-  pass "kdu_compress produced a test JP2"
+if [[ -s "${WORK_DIR}/images/${ID_PATH}.jp2" && -s "${WORK_DIR}/images/${CROPPED_PATH}.jp2" ]]; then
+  pass "kdu_compress produced the test JP2s"
 else
-  fail "kdu_compress produced a test JP2"; exit 1
+  fail "kdu_compress produced the test JP2s"; exit 1
 fi
 
 # ---------- Start Cantaloupe ----------
@@ -203,6 +236,51 @@ check_eq "v3 id uses base_uri and /iiif/3" "$(json 'd["id"]')" "${BASE_URI}/iiif
 
 fetch "${URL}/iiif/3/${ID_ENC}/full/max/0/default.jpg"
 check_eq "v3 full/max status" "${STATUS}" "200"
+check_eq "v3 full/max is the full image (within max_pixels)" "$(jpeg_size)" "${WIDTH}x${HEIGHT}"
+
+# Image API 3 removed the `full` size keyword; rosa-tool emits `max`.
+fetch "${URL}/iiif/3/${ID_ENC}/full/full/0/default.jpg"
+check_eq "v3 full/full is rejected (400)" "${STATUS}" "400"
+
+fetch "${URL}/iiif/2/${ID_ENC}/full/full/0/default.jpg"
+check_eq "v2 full/full status (within max_pixels)" "${STATUS}" "200"
+
+echo
+echo "--- Cropped identifier (rose/<book>/cropped/<image>) ---"
+fetch "${URL}/iiif/3/${CROPPED_ENC}/info.json"
+check_eq "cropped v3 info.json status" "${STATUS}" "200"
+check_eq "cropped v3 id" "$(json 'd["id"]')" "${BASE_URI}/iiif/3/${CROPPED_ENC}"
+check_eq "cropped width/height" "$(json 'str(d["width"]) + "x" + str(d["height"])')" "${CROP_WIDTH}x${CROP_HEIGHT}"
+fetch "${URL}/iiif/2/${CROPPED_ENC}/full/80,/0/default.jpg"
+check_eq "cropped v2 thumbnail status" "${STATUS}" "200"
+
+echo
+echo "--- max_pixels (server started with MAX_PIXELS below the test image's area) ---"
+# A limit below the test image's ${AREA} pixels. A JP2 served as JPEG counts as
+# modified, so a v2 full/full exceeding the limit is refused, while v3 `max`
+# scales down to fit and info.json advertises the limit as maxArea.
+MAXPX=$(((AREA * 2) / 3))
+MAXPX_PORT=$((PORT + 2))
+if start_server "${NAME}-maxpx" "${MAXPX_PORT}" -e MAX_PIXELS="${MAXPX}"; then
+  pass "server with MAX_PIXELS=${MAXPX} started"
+  MAXPX_URL="http://127.0.0.1:${MAXPX_PORT}"
+  fetch "${MAXPX_URL}/iiif/3/${ID_ENC}/info.json"
+  check_eq "v3 info.json maxArea equals max_pixels" "$(json 'd.get("maxArea")')" "${MAXPX}"
+  fetch "${MAXPX_URL}/iiif/2/${ID_ENC}/full/full/0/default.jpg"
+  check_eq "v2 full/full over max_pixels is refused (403)" "${STATUS}" "403"
+  fetch "${MAXPX_URL}/iiif/3/${ID_ENC}/full/max/0/default.jpg"
+  check_eq "v3 full/max over max_pixels still succeeds" "${STATUS}" "200"
+  SIZE="$(jpeg_size)"
+  if [[ -n "${SIZE}" ]] && (( ${SIZE%x*} * ${SIZE#*x} <= MAXPX )) && (( ${SIZE%x*} < WIDTH )); then
+    pass "v3 full/max is scaled down to fit max_pixels (${SIZE})"
+  else
+    fail "v3 full/max is scaled down to fit max_pixels" "got ${SIZE}"
+  fi
+  fetch "${MAXPX_URL}/iiif/2/${ID_ENC}/full/80,/0/default.jpg"
+  check_eq "thumbnails unaffected by max_pixels" "${STATUS}" "200"
+else
+  fail "server with MAX_PIXELS=${MAXPX} started"
+fi
 
 fetch "${URL}/iiif/3/${ID_ENC}/info.json" -H 'X-Rosa-Legacy-Path: 1'
 check_eq "v3 id ignores legacy marker" "$(json 'd["id"]')" "${BASE_URI}/iiif/3/${ID_ENC}"
@@ -277,7 +355,7 @@ if [[ "${KEEP}" == true ]]; then
   echo "Server left running for the CloudFront Function e2e test. In another shell:"
   echo
   echo "  ROSA_IMAGE_SERVER_URL=${URL} ROSA_PUBLIC_BASE_URL=${BASE_URI} ROSA_TEST_ID=${ID_ENC} \\"
-  echo "    node --test jhu-rosa2-tf/modules/rosa2-image-server/functions/test/"
+  echo "    node --test 'jhu-rosa2-tf/modules/rosa2-image-server/functions/test/*.test.mjs'"
   echo
   echo "Press Ctrl-C to stop it."
   while true; do sleep 3600; done

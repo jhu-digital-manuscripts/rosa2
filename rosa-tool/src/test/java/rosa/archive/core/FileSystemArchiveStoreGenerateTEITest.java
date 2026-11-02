@@ -38,7 +38,7 @@ class FileSystemArchiveStoreGenerateTEITest {
         List<String> errors = new ArrayList<>();
         List<String> warnings = new ArrayList<>();
 
-        store.generateTEITranscriptions("testcol", "TestBook", errors, warnings);
+        store.generateTEITranscriptions("testcol", "TestBook", false, errors, warnings);
 
         assertTrue(errors.isEmpty(), "Expected no errors: " + errors);
 
@@ -65,9 +65,11 @@ class FileSystemArchiveStoreGenerateTEITest {
         List<String> errors = new ArrayList<>();
         List<String> warnings = new ArrayList<>();
 
-        store.generateTEITranscriptions("aorcol", "AorBook", errors, warnings);
+        store.generateTEITranscriptions("aorcol", "AorBook", false, errors, warnings);
 
-        assertTrue(errors.isEmpty(), "Expected no errors: " + errors);
+        // Nothing to convert is reported, so the command exits non-zero instead of silently doing nothing
+        assertEquals(1, errors.size(), "Expected one error: " + errors);
+        assertTrue(errors.get(0).contains("No per-page transcription files"));
         assertTrue(warnings.isEmpty(), "Expected no warnings");
         assertFalse(Files.exists(bookDir.resolve("AorBook.transcription.xml")),
                 "No transcription.xml should be generated for AoR-only books");
@@ -88,7 +90,7 @@ class FileSystemArchiveStoreGenerateTEITest {
         List<String> errors = new ArrayList<>();
         List<String> warnings = new ArrayList<>();
 
-        store.generateTEITranscriptions("testcol", "Book2", errors, warnings);
+        store.generateTEITranscriptions("testcol", "Book2", true, errors, warnings);
 
         assertTrue(errors.isEmpty(), "Expected no errors: " + errors);
         String xml = Files.readString(bookDir.resolve("Book2.transcription.xml"));
@@ -103,7 +105,7 @@ class FileSystemArchiveStoreGenerateTEITest {
         List<String> warnings = new ArrayList<>();
 
         assertThrows(IOException.class,
-                () -> store.generateTEITranscriptions("nosuchcol", "NoBook", errors, warnings));
+                () -> store.generateTEITranscriptions("nosuchcol", "NoBook", false, errors, warnings));
     }
 
     @Test
@@ -131,7 +133,7 @@ class FileSystemArchiveStoreGenerateTEITest {
         List<String> errors = new ArrayList<>();
         List<String> warnings = new ArrayList<>();
 
-        store.generateTEITranscriptions("rose", "Douce332", errors, warnings);
+        store.generateTEITranscriptions("rose", "Douce332", true, errors, warnings);
 
         assertTrue(errors.isEmpty(), "Errors: " + errors);
         Path output = bookDir.resolve("Douce332.transcription.xml");

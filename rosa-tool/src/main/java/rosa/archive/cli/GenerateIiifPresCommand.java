@@ -1,14 +1,13 @@
 package rosa.archive.cli;
 
 import picocli.CommandLine.Command;
+import picocli.CommandLine.Mixin;
 import picocli.CommandLine.Option;
 import rosa.archive.core.ArchiveStore;
-import rosa.archive.core.FileSystemArchiveStore;
 import rosa.archive.iiif.IIIFJsonWriter;
 import rosa.archive.iiif.IIIFPresentationGenerator;
 
 import java.io.IOException;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.concurrent.Callable;
 
@@ -16,12 +15,12 @@ import java.util.concurrent.Callable;
  * Generates static IIIF Presentation API 3.0 files from archive data.
  */
 @Command(name = "generate-iiif-pres",
-         mixinStandardHelpOptions = true,
+         mixinStandardHelpOptions = true, versionProvider = VersionProvider.class,
          description = "Generate static IIIF Presentation API 3.0 files from archive data")
 public final class GenerateIiifPresCommand implements Callable<Integer> {
 
-    @Option(names = "--archive", required = true, description = "Path to archive directory")
-    private Path archivePath;
+    @Mixin
+    private ArchiveOptions archive;
 
     @Option(names = "--output", required = true, description = "Path to output directory")
     private Path outputPath;
@@ -34,7 +33,7 @@ public final class GenerateIiifPresCommand implements Callable<Integer> {
     private String imageBaseUrl;
 
     @Option(names = "--image-api-version", defaultValue = "2",
-            description = "IIIF Image API version (2 or 3)")
+            description = "IIIF Image API version: 2 or 3 (default: ${DEFAULT-VALUE})")
     private int imageApiVersion;
 
     @Option(names = "--opensearch-url", description = "Opensearch search endpoint URL for JHSearch service")
@@ -48,15 +47,18 @@ public final class GenerateIiifPresCommand implements Callable<Integer> {
 
     @Override
     public Integer call() {
-        if (!Files.isDirectory(archivePath)) {
-            System.err.println("Error: archive path does not exist or is not a directory: " + archivePath);
+        if (!archive.exists()) {
+            return 1;
+        }
+        if (imageApiVersion != 2 && imageApiVersion != 3) {
+            System.err.println("Error: --image-api-version must be 2 or 3, got " + imageApiVersion);
             return 1;
         }
 
         try {
-            ArchiveStore store = new FileSystemArchiveStore(archivePath);
+            ArchiveStore store = archive.openStore();
             if (store.listCollections().isEmpty()) {
-                System.err.println("Error: archive contains no readable collections: " + archivePath);
+                System.err.println("Error: archive contains no readable collections: " + archive.path());
                 return 1;
             }
 

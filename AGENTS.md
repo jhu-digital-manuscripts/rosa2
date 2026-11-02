@@ -16,11 +16,12 @@ rosa2/
 ├── rosa-tool/            Java 25 CLI (Maven, picocli). Builds target/rosa-tool.jar
 │   └── src/main/java/rosa/archive/
 │       ├── cli/          One *Command.java per subcommand, registered in Rosa2Cli.java
-│       ├── core/         Archive reading, checking, serialize/, util/
+│       ├── core/         FileSystemArchiveStore (read, check, maintain), ImageListDecorator, TranscriptionConverter,
+│       │                 serialize/ (ArchiveReaders, ArchiveWriters), util/
 │       ├── model/        Data model; model/aor/ = AoR annotation types (sealed Annotation interface)
 │       ├── iiif/         IIIF Presentation 3.0 generation
 │       ├── opensearch/   Bulk-ingest document generation
-│       └── aor/          AoR statistics
+│       └── aor/          AoRTranscriptionChecker (check-aor)
 │   └── src/test/resources/archive/   Test fixture archive (rose, aor, dlmm, pizan)
 ├── rosa-viewer/          Mirador 4 + React 18 + MUI 9, Vite 5, Vitest 2
 │   ├── .env              Committed local-dev defaults for VITE_ROSA_* (override in .env.local)
@@ -35,14 +36,16 @@ rosa2/
 │       ├── i18n/, styles/
 │       └── test/               setup.js, mocks.js
 ├── rosa-search/
-│   ├── opensearch/       Index definitions (manifest.json, canvas.json) + Latin analyzer dictionaries
+│   ├── opensearch/       Index definitions (manifest.json, canvas.json), Latin analyzer dictionaries
+│   │                     (latin-stemmer-rules.txt, latin-charmap.txt) and LATIN-ANALYZER.md
 │   ├── lambda/           search_proxy/ and admin/ (plain Python, no deps), tests/
-│   └── init-opensearch.sh   Creates indexes and loads data into AWS
+│   └── init-opensearch.sh   Drops/creates the AWS indexes, ingests, verifies counts (--help; --jar)
 ├── jhu-rosa2-tf/         OpenTofu: Opensearch, Lambdas, HTTP API (rosa2-search) and image server (rosa2-image-server), prod/stage
 ├── rosa-image-server/    Cantaloupe + Kakadu Docker image (IIIF Image API) for ECS; build-and-push.sh, delegates.rb, test/
-├── local-dev/            Docker Opensearch 3 + static IIIF server scripts
+├── local-dev/            Docker Opensearch 3.1 + static IIIF server scripts
 ├── docs/                 usage, archive-structure, iiif-generation, opensearch-indexes, search, aor-data-model, deployment
-└── .github/workflows/    ci.yml (PRs + main), deploy-stage.yml (GitHub Pages), release.yml (manual release)
+└── .github/workflows/    ci.yml (PRs + main: rosa-tool, rosa-viewer, Lambda tests, CloudFront function tests),
+                          deploy-stage.yml (GitHub Pages), release.yml (manual release)
 ```
 
 Data flow: `archive/` → `rosa-tool` → (IIIF JSON static files + `<collection>.bulk.json`)
@@ -76,14 +79,14 @@ java -jar target/rosa-tool.jar <command> --help
 
 Subcommands (see `docs/usage.md` for options): `generate-iiif-pres`,
 `generate-opensearch-ingest`, `shallow-copy`, `check`, `list`, `validate-xml`,
-`aor-stats`, `update`, `update-image-list`, `crop-images`, `file-map`,
+`update`, `update-image-list`, `crop-images`, `file-map`,
 `rename-images`, `rename-files`, `rename-transcriptions`, `generate-tei`,
-`check-aor`, `generate-annotation-map`, `migrate-tei-metadata`, `decorate-image-list`.
+`check-aor`, `decorate-image-list`. Every command takes `-h` and `-V`.
 
 Common invocations against the in-repo archive:
 
 ```sh
-java -jar rosa-tool/target/rosa-tool.jar check --archive archive
+java -jar rosa-tool/target/rosa-tool.jar check --archive archive --skip-images   # the in-repo copy has no images
 java -jar rosa-tool/target/rosa-tool.jar validate-xml --archive archive --collection aor
 java -jar rosa-tool/target/rosa-tool.jar generate-iiif-pres --archive archive --output /tmp/iiif \
   [--base-url URL] [--image-base-url URL] [--image-api-version 2|3] [--opensearch-url URL] \
@@ -117,14 +120,19 @@ scripts/package-site.sh --site aor --site-url URL --opensearch-url URL --tarball
 Before finishing viewer changes, run CI's checks: `npm run lint && npm run format:check && npm test && npm run build && npm run build:sites`.
 
 The dev server proxies `/iiif` to `localhost:3000` and `/_search`,
-`/manifest/_search` and `/canvas/_search` to `localhost:9200` (`vite.config.js`).
+`/manifest/_search` and `/canvas/_search` to `localhost:9200` (`vite.config.js`); like the AWS
+proxy it rewrites `/_search` to `/manifest,canvas/_search` so plugin indexes are never searched.
 
 ### rosa-search
 
 ```sh
 cd rosa-search/lambda && python3 -m unittest discover -s tests -v   # no AWS or network needed
-cd rosa-search/opensearch && python3 generate_latin_stemmer_rules.py  # regenerate latin-stemmer-rules.txt
+cd rosa-search/opensearch && python3 generate_latin_stemmer_rules.py  # regenerate latin-stemmer-rules.txt (needs the Zenodo lemma table, see LATIN-ANALYZER.md)
 ```
+
+Mapping or analyzer changes only take effect after the indexes are rebuilt (`local-dev/start.sh`
+locally, `init-opensearch.sh` on AWS). Both mappings are `dynamic: strict`: a new generator field
+needs its mapping in `manifest.json`/`canvas.json` first or the ingest rejects the documents.
 
 ### Local development environment (run from `local-dev/`)
 
@@ -147,7 +155,7 @@ the AoR or DLMM site. `start.sh` needs `rosa-tool/target/rosa-tool.jar` to exist
 tofu init -backend-config=prod.s3.tfbackend            # add -reconfigure when switching envs
 tofu plan  -var-file=prod.tfvars
 tofu apply -var-file=prod.tfvars
-cd ../rosa-search && ./init-opensearch.sh --env prod   # --help for --skip-* / --yes options
+cd ../rosa-search && ./init-opensearch.sh --env prod   # --help for --skip-*, --jar, --yes; exits non-zero on create, ingest or count failures
 ```
 
 Use `stage.s3.tfbackend` / `stage.tfvars` for stage. The same state also holds the
@@ -159,11 +167,12 @@ image server (`modules/rosa2-image-server`: ECS Fargate behind CloudFront).
 ./build-and-push.sh --kakadu-zip /home/msp/work/kakadu/v8_6_1-02130L.zip      # build only
 ./build-and-push.sh --kakadu-zip ... --env stage --push   # push to ECR; prints image_server_image_tag for tfvars
 test/smoke-test.sh [--image rosa-image-server:<tag>]      # local checks, no AWS
-node --test ../jhu-rosa2-tf/modules/rosa2-image-server/functions/test/   # CloudFront Function tests
+node --test '../jhu-rosa2-tf/modules/rosa2-image-server/functions/test/*.test.mjs'   # CloudFront Function tests (glob form; a bare directory fails on Node 22)
 cd ../jhu-rosa2-tf/modules/rosa2-image-server && tofu init -backend=false && tofu test   # mocked-provider module tests
 ```
 
-The Kakadu ZIP is passed as a named build context (`kakadu_src`) and never copied into the repo.
+The Kakadu ZIP is passed as a named build context (`kakadu_src`) and never copied into the repo;
+`.dockerignore` keeps `*.zip` and an unpacked `v8_*/` tree out of the build context too.
 Legacy `/iiif/<id>` URLs are supported by CloudFront Functions plus `delegates.rb`;
 change `functions/*.js`, `delegates.rb` and their tests together.
 
@@ -182,8 +191,8 @@ change `functions/*.js`, `delegates.rb` and their tests together.
 - Any `tofu apply`, `init-opensearch.sh`, `aws` command, Docker push, or `build-and-push.sh --push`. These touch
   shared AWS environments. `init-opensearch.sh` drops and recreates the live indexes.
 - Editing files under `archive/`, or running archive-mutating commands (`update`,
-  `update-image-list`, `crop-images`, `rename-*`, `generate-tei`, `migrate-tei-metadata`,
-  `decorate-image-list`, `generate-annotation-map`) against it. These rewrite archive data in place.
+  `update-image-list`, `crop-images`, `file-map`, `rename-*`, `generate-tei`,
+  `decorate-image-list`) against it. These rewrite archive data in place.
 - Changes to `jhu-rosa2-tf/modules/rosa2-search/iam.tf`, `security-groups.tf`, `opensearch.tf` access policy, or
   the validation in `rosa-search/lambda/search_proxy/app.py`, and to `jhu-rosa2-tf/modules/rosa2-image-server/`
   `iam.tf`, `security-groups.tf`, `waf.tf` or the cache policies in `cloudfront.tf`. These are security boundaries.
@@ -202,8 +211,14 @@ change `functions/*.js`, `delegates.rb` and their tests together.
 ## Conventions and gotchas
 
 - IDs: manifest `{collection}.{book}` (e.g. `rose.Douce195`); canvas `{collection}.{image-id-no-ext}`
-  (e.g. `aor.Ha2.001r`). Canvas URIs use a 0-based index `…/canvas/{page_num}` that matches the Opensearch `page_num` field.
+  (e.g. `aor.FolgersHa2.001r`). Canvas URIs use a 0-based index `…/canvas/{page_num}` that matches the Opensearch
+  `page_num` field. Both count positions in `{book}.images.csv`; a cropped list (`images.crop.csv`) only changes what
+  a canvas paints, never the numbering.
 - IIIF image identifiers contain slashes and are percent-encoded as a single segment (`rose%2FDouce195%2F…`).
+  Painting bodies end in `/full/max/0/default.jpg` (`max`, not `full`: Image API 3 has no `full` size).
+- Image lists are `[*]id,width,height[,label]` with no header; `*` marks a missing image and a `##` label prefix an
+  auto-generated name. Write them only through `ArchiveWriters.writeImageList`, which the reader round-trips.
+- Collection checksums are `{collection}collection.SHA1SUM`, book checksums `{book}.SHA1SUM`.
 - IIIF JSON output is compact, deterministic, and omits nulls and empty values. Keep it that way.
 - Annotation bodies are recipe 0045 `SpecificResource`s with a `styleClass` wrapping HTML limited to the
   recipe 0019 tags (`a b br i img p small span sub sup`). The HTML conventions and classes in

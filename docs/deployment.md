@@ -2,39 +2,37 @@
 
 ## Purpose
 
-This document describes how to build, package, and deploy Rosa components, including running them in production environments.
+How to build, package and deploy the Rosa components, and how each environment
+is put together. Command options are documented in [Tool Usage](usage.md); what
+the generated files contain is in [IIIF Generation](iiif-generation.md) and
+[Opensearch Indexes](opensearch-indexes.md). This page is the one place that
+holds the index creation and ingest steps and the image server base URLs.
 
 ## Audience
 
-Developers building the project and system administrators deploying the tools.
+Developers building the project and system administrators deploying it.
 
 ## Prerequisites
 
-- Java 25 or later (JDK)
-- Maven 3.9+
-- Node.js 22.12+
-- npm 9+
+- Java 25 (JDK) and Maven 3.9+
+- Node.js 22.12+ and npm 9+
+- Docker with `docker compose` (local Opensearch)
 - Access to the archive data directory
-- Opensearch 3.x cluster (for search functionality)
+- For AWS: OpenTofu 1.10+, AWS CLI v2 and `jq`
 
 ## Building
 
 ### rosa-tool
 
-Build the executable JAR from the rosa-tool directory:
-
 ```bash
 cd rosa-tool
-mvn clean package
+mvn clean package              # build + test -> target/rosa-tool.jar
+mvn clean package -DskipTests  # quick build
 ```
 
-This produces a fat JAR at `target/rosa-tool.jar` containing all runtime dependencies. The JAR includes a `Main-Class` manifest entry, so it can be executed directly.
-
-To skip tests during development builds:
-
-```bash
-mvn clean package -DskipTests
-```
+`target/rosa-tool.jar` is a shaded fat jar with a `Main-Class` entry, so
+`java -jar rosa-tool/target/rosa-tool.jar --help` lists the commands and
+`--version` prints the version from the jar manifest.
 
 ### rosa-viewer
 
@@ -51,30 +49,19 @@ VITE_ROSA_IIIF_BASE_URL=https://example.org/viewer/iiif npm run build:sites -- a
 npm run build                  # library build only: dist/rosa-viewer.{es,umd}.js
 ```
 
-## Running rosa-tool
-
-```bash
-java -jar rosa-tool/target/rosa-tool.jar <command> [options]
-```
-
-Verify the build works:
-
-```bash
-java -jar rosa-tool/target/rosa-tool.jar --help
-```
-
 ## Environments
 
-| Environment | Viewer | IIIF files | Search | How |
-|-------------|--------|------------|--------|-----|
-| local-dev | Vite dev server on :3001 (`/`, `/aor/`, `/dlmm/`) | `local-dev/site/iiif` on :3000 | Docker Opensearch on :9200 | `local-dev/start.sh` + `npm run dev` |
-| stage | GitHub Pages: `<pages-url>/aor/`, `<pages-url>/dlmm/` | `<pages-url>/iiif/` (shared) | stage API Gateway | `Deploy Stage` workflow |
-| prod | Uploaded to the AoR and DLMM WordPress portals | `<site-url>/iiif/` inside each site package | prod API Gateway | `Release` workflow → `aor-site.tar.gz`, `dlmm-site.tar.gz` |
+| Environment | Viewer | IIIF files | Search | Image server | How |
+|-------------|--------|------------|--------|--------------|-----|
+| local-dev | Vite dev server on :3001 (`/`, `/aor/`, `/dlmm/`) | `local-dev/site/iiif` on :3000 | Docker Opensearch 3.1 on :9200 | stage CloudFront (see `local-dev/config.env.example`) | `local-dev/start.sh` + `npm run dev` |
+| stage | GitHub Pages: `<pages-url>/aor/`, `<pages-url>/dlmm/` | `<pages-url>/iiif/` (shared) | stage API Gateway | stage CloudFront | `Deploy Stage` workflow |
+| prod | Uploaded to the AoR and DLMM WordPress portals | `<site-url>/iiif/` inside each site package | prod API Gateway | `image.library.jhu.edu` | `Release` workflow → `aor-site.tar.gz`, `dlmm-site.tar.gz` |
 
 The same viewer build serves every environment; only the `VITE_ROSA_*` URLs, the
-IIIF `--base-url` and the Opensearch URL written to `jhsearch.json` change.
+IIIF `--base-url`, the image server URL and the Opensearch URL written to
+`jhsearch.json` change.
 
-## Packaging a Site
+## Packaging a site
 
 `rosa-viewer/scripts/package-site.sh` builds everything one site needs for a
 static host: the viewer built for its public URL plus the IIIF Presentation
@@ -89,8 +76,8 @@ rosa-viewer/scripts/package-site.sh \
   --site dlmm \
   --site-url https://dlmm.library.jhu.edu/viewer \
   --opensearch-url https://<api-id>.execute-api.us-east-1.amazonaws.com/_search \
-  --image-base-url https://image.library.jhu.edu/iiif \
-  --image-api-version 2 \
+  --image-base-url https://image.library.jhu.edu/iiif/3 \
+  --image-api-version 3 \
   --tarball dlmm-site.tar.gz
 ```
 
@@ -103,79 +90,47 @@ host: the pages use relative asset paths, and the only runtime dependencies are
 the IIIF Image API server and the Opensearch endpoint, whose CORS configuration
 must allow the site's origin.
 
-## Typical Deployment Pipeline
+## Manual pipeline
 
 The manual equivalent of `package-site.sh`, for hosting the viewer and IIIF
-files yourself:
+files yourself against an Opensearch cluster you can reach directly.
 
-### 1. Build Components
+### 1. Build the components
 
 ```bash
-# Build rosa-tool
 cd rosa-tool && mvn clean package && cd ..
-
-# Build rosa-viewer sites for the URL they will be served from
 cd rosa-viewer && npm install && \
   VITE_ROSA_IIIF_BASE_URL=https://viewer.example.org/iiif npm run build:sites && cd ..
 ```
 
-### 2. Generate IIIF Files
+### 2. Generate the IIIF files
 
 ```bash
 java -jar rosa-tool/target/rosa-tool.jar generate-iiif-pres \
   --archive /data/archive \
   --output /deploy/iiif \
   --base-url https://viewer.example.org/iiif/ \
+  --image-base-url https://image.example.org/iiif/3 \
+  --image-api-version 3 \
+  --opensearch-url https://search.example.org:9200/_search \
   --annotation-stylesheet-url 'https://viewer.example.org/{collection}/styles/{collection}.css'
 ```
 
-`{collection}` is `aor` or `dlmm`, which are also the site directories, so the URL
-names each site's copy of `public/styles/`.
+The options are described under
+[`generate-iiif-pres`](usage.md#generate-iiif-pres). `{collection}` becomes
+`aor` or `dlmm`, which are also the site directories, so the URL names each
+site's copy of `public/styles/`. The output directory is not emptied first, so
+delete stale output yourself (`package-site.sh` does).
 
-### 3. Create Opensearch Indexes
+### 3. Create the indexes and ingest
 
-The steps below apply to an Opensearch cluster you can reach and authenticate to
-directly, such as a self-hosted one. For the AWS managed deployment, skip to
-[Deploying to AWS managed Opensearch](#deploying-to-aws-managed-opensearch) —
-that domain has no public endpoint and the index definitions need rewriting, so
-these `curl` commands do not apply to it.
+See [Creating indexes and ingesting](#creating-indexes-and-ingesting) below.
 
-Using the index definition files in `rosa-search/opensearch/`:
+### 4. Serve the static files
 
-```bash
-curl -X PUT "https://search.example.org:9200/manifest" \
-  -H "Content-Type: application/json" \
-  -d @rosa-search/opensearch/manifest.json
-
-curl -X PUT "https://search.example.org:9200/canvas" \
-  -H "Content-Type: application/json" \
-  -d @rosa-search/opensearch/canvas.json
-```
-
-Check the response of each request. Index creation fails if the Latin analyzer
-resource files are not readable by Opensearch, and the failure is easy to miss:
-the Bulk API in the next step will happily auto-create the indexes with dynamic
-mappings instead. Dynamic mappings type the facet fields as `text` rather than
-`keyword`, which breaks faceting and sorting. A successful request returns
-`{"acknowledged":true,...}` with HTTP 200.
-
-### 4. Generate and Ingest Bulk Data
-
-```bash
-java -jar rosa-tool/target/rosa-tool.jar generate-opensearch-ingest \
-  --archive /data/archive --output /deploy/bulk
-
-for f in /deploy/bulk/*.bulk.json; do
-  curl -X POST "https://search.example.org:9200/_bulk" \
-    -H "Content-Type: application/x-ndjson" --data-binary @"$f"
-done
-```
-
-### 5. Deploy Static Files
-
-Serve the IIIF files and the built sites via a static web server (nginx, Apache,
-S3, etc.). If the IIIF files live on a different origin than the sites, they
-need CORS headers.
+Serve the IIIF files and the built sites from any static web server (nginx,
+Apache, S3, ...). If the IIIF files live on a different origin than the sites,
+they need CORS headers.
 
 Example nginx configuration serving both sites and the IIIF files from one host:
 
@@ -197,6 +152,100 @@ server {
 }
 ```
 
+## Creating indexes and ingesting
+
+These steps apply to an Opensearch 3.x cluster you can reach and authenticate to
+directly, such as `local-dev` or a self-hosted one. The AWS managed domain has no
+public endpoint and needs its index definitions rewritten, so there
+[`init-opensearch.sh`](#deploying-to-aws-managed-opensearch) does all of this.
+
+### Create the indexes
+
+Create both indexes from the definitions in `rosa-search/opensearch/` before
+ingesting anything:
+
+```bash
+curl -X PUT "https://search.example.org:9200/manifest" \
+  -H "Content-Type: application/json" \
+  -d @rosa-search/opensearch/manifest.json
+
+curl -X PUT "https://search.example.org:9200/canvas" \
+  -H "Content-Type: application/json" \
+  -d @rosa-search/opensearch/canvas.json
+```
+
+Check the response of each request: a success is HTTP 200 with
+`{"acknowledged":true,...}`. Creation fails if the Latin analyzer dictionaries
+(`latin-stemmer-rules.txt`, `latin-charmap.txt`) are not installed where the
+definitions expect them (`local-dev/docker-compose.yml` bind-mounts them into the
+container's `config/analyzers/`). Never ignore a failed creation: the Bulk API in
+the next step would auto-create the indexes with dynamic mappings, which type the
+facet fields as `text` rather than `keyword` and silently break faceting and
+sorting. Both mappings are `dynamic: strict`, so a bulk file that carries a field
+the mapping lacks is rejected rather than mapped on the fly.
+
+### Generate and ingest the bulk data
+
+```bash
+java -jar rosa-tool/target/rosa-tool.jar generate-opensearch-ingest \
+  --archive /data/archive --output /deploy/bulk
+
+for f in /deploy/bulk/*.bulk.json; do
+  curl -X POST "https://search.example.org:9200/_bulk" \
+    -H "Content-Type: application/x-ndjson" --data-binary @"$f"
+done
+```
+
+One `<collection>.bulk.json` is produced per collection that has books (the
+book-less `dlmm` parent has none). The Bulk API returns HTTP 200 even when
+documents fail, so check each response body for `"errors":true` and inspect the
+`items` entries that carry an `error`.
+
+### Verify
+
+```bash
+curl https://search.example.org:9200/manifest/_count
+curl https://search.example.org:9200/canvas/_count
+```
+
+The counts must equal the number of `{"index":...}` action lines across the bulk
+files for each index. Through the search proxy `_count` is not available; use
+the equivalent search instead, which also works locally:
+
+```bash
+curl -X POST "<search-url>/manifest/_search" -H "Content-Type: application/json" \
+  -d '{"size":0,"track_total_hits":true}'
+```
+
+Mapping and analyzer changes take effect only after the indexes are dropped and
+recreated. Locally that is `local-dev/start.sh`; on AWS it is
+`init-opensearch.sh`.
+
+## Local development
+
+```bash
+cd local-dev
+cp config.env.example config.env
+# Edit config.env to set ROSA_ARCHIVE (absolute, or relative to local-dev/)
+
+./start.sh                 # generate IIIF + bulk, start Opensearch 3.1 in Docker, create indexes, ingest, serve IIIF on :3000
+./start.sh --skip-generate # reuse generated files
+./start.sh --skip-ingest   # skip index creation and ingest
+./status.sh
+./stop.sh                  # stop IIIF server and Opensearch
+./stop.sh --clean          # also delete site/ and opensearch-data/
+
+# In another terminal
+cd rosa-viewer
+npm run dev
+```
+
+`start.sh` needs `rosa-tool/target/rosa-tool.jar`, so build it first. Open
+http://localhost:3001 and choose a site, or go to http://localhost:3001/aor/ or
+http://localhost:3001/dlmm/. The dev server proxies `/iiif` to :3000 and the
+three `_search` paths to :9200 (`rosa-viewer/vite.config.js`). Run
+`./start.sh --help` for the available options.
+
 ## GitHub Actions
 
 Workflows live in `.github/workflows/`. The manual ones (`Deploy Stage`,
@@ -205,10 +254,14 @@ the Run workflow dialog.
 
 ### ci.yml (CI)
 
-Runs on every pull request and on pushes to master:
-- Builds and tests rosa-tool (Java 25)
-- Lints, format-checks, tests and builds rosa-viewer (Node.js 22), including
-  both site builds
+Runs on every pull request and on pushes to `main`, as four jobs:
+
+| Job | What it runs |
+|-----|--------------|
+| Build rosa-tool | `mvn verify` (Java 25) |
+| Build rosa-viewer | lint, format check, tests, library build and both site builds (Node.js 22) |
+| Test rosa-search Lambdas | `python3 -m unittest discover -s tests -v` in `rosa-search/lambda` (Python 3.13, no dependencies) |
+| Test CloudFront Functions | `node --test 'jhu-rosa2-tf/modules/rosa2-image-server/functions/test/*.test.mjs'` (Node.js 22) |
 
 ### deploy-stage.yml (Deploy Stage)
 
@@ -262,11 +315,13 @@ Steps:
    - `rosa-tool.jar` — Executable Java CLI
    - `rosa-viewer-{version}.tar.gz` — Viewer library build
    - `aor-site.tar.gz`, `dlmm-site.tar.gz` — Deployable sites (viewer + IIIF files).
-     Unpack at the site URL; see [Packaging a Site](#packaging-a-site).
+     Unpack at the site URL; see [Packaging a site](#packaging-a-site).
 5. Updates versions to the next development snapshot and commits
 
 To create a release: Actions → Release → Run workflow, pick the branch, fill in
-the inputs and click "Run workflow".
+the inputs and click "Run workflow". Before accepting the default
+`image_base_url`, confirm that the server at `image.library.jhu.edu` answers on
+`/iiif/3` (see [Deploying the image server](#deploying-the-image-server)).
 
 ## Deploying to AWS managed Opensearch
 
@@ -279,30 +334,28 @@ Apply the infrastructure, then load the data:
 
 ```bash
 cd jhu-rosa2-tf
-tofu init -backend-config=prod.s3.tfbackend
+tofu init -backend-config=prod.s3.tfbackend   # add -reconfigure when switching envs
 tofu apply -var-file=prod.tfvars
 
 cd ../rosa-search
-./init-opensearch.sh --env prod
+./init-opensearch.sh --env prod               # --help for --skip-*, --archive, --jar, --yes
 ```
 
-`init-opensearch.sh` deletes and recreates both indexes before ingesting, so it is
-also how any change to a setting that is fixed at index creation takes effect —
-`number_of_shards` and the Latin analyzer definitions among them. A change to
+Use `stage.s3.tfbackend` / `stage.tfvars` for stage. `init-opensearch.sh` deletes
+and recreates both indexes before ingesting, so it is also how any change to a
+setting that is fixed at index creation takes effect: mappings, `number_of_shards`
+and the Latin analyzer definitions among them. A change to
 `rosa-search/opensearch/{manifest,canvas}.json` is not live until this has run.
+The script exits non-zero if an index cannot be created, if any bulk document is
+rejected, or if an index ends up with fewer documents than its bulk files
+contain, and it checks that the Latin analyzer resolves `divido`, `dividunt` and
+`dīvidunt` to the same stem. `--skip-generate` requires existing `*.bulk.json`
+files in `build/opensearch-data/`; `--jar` points it at a rosa-tool jar other than
+`../rosa-tool/target/rosa-tool.jar`.
 
 The script prints the `_search` URL to pass to `generate-iiif-pres
---opensearch-url`. That URL is the API Gateway endpoint, not the domain itself:
-
-```bash
-java -jar rosa-tool/target/rosa-tool.jar generate-iiif-pres \
-  --archive /data/archive \
-  --output /deploy/iiif \
-  --base-url https://iiif.example.org \
-  --opensearch-url https://<api-id>.execute-api.us-east-1.amazonaws.com/_search
-```
-
-Three differences from a directly reachable cluster are worth noting:
+--opensearch-url`. That URL is the API Gateway endpoint, not the domain itself.
+Three differences from a directly reachable cluster:
 
 - **The endpoint is read-only by construction.** The signing Lambda accepts only
   `POST` to `/_search`, `/manifest/_search`, and `/canvas/_search`, and its IAM
@@ -311,12 +364,13 @@ Three differences from a directly reachable cluster are worth noting:
 - **The index definitions are rewritten at deploy time.** They reference the Latin
   dictionaries by filename, which only works for the local-dev bind mount. AWS
   addresses them as custom packages by ID, and `init-opensearch.sh` substitutes
-  the IDs. The checked-in files are left alone.
-- **Queries are validated and capped.** `size` is limited to 300, `from + size` to
-  10000, and request bodies to 16 KB; scripts, `query_string`, `regexp`, and
-  wildcard queries are rejected. See `jhu-rosa2-tf/README.md` for the full list.
+  the IDs into copies under `build/index-defs/`. The checked-in files are left
+  alone.
+- **Queries are validated and capped.** See [Search](search.md#limits) for the
+  client-facing limits and `jhu-rosa2-tf/README.md` for the full list of what the
+  proxy rejects.
 
-For per-environment details, the access-control model, and the Latin analyzer
+For per-environment details, the access-control model and the Latin analyzer
 package lifecycle, see [`jhu-rosa2-tf/README.md`](../jhu-rosa2-tf/README.md) and
 [`rosa-search/README.md`](../rosa-search/README.md).
 
@@ -344,53 +398,62 @@ tofu output image_server_iiif2_base_url     # https://<id>.cloudfront.net/iiif/2
 The first apply for an environment comes before any image exists: run it once
 with `image_server_image_tag = ""`, which creates the ECR repository with the
 service scaled to zero, then push and apply again. See
-[First deployment](../jhu-rosa2-tf/README.md#first-deployment).
+[First deployment](../jhu-rosa2-tf/README.md#first-deployment). Build options,
+checksums and the smoke test are in
+[rosa-image-server/README.md](../rosa-image-server/README.md).
+
+### Base URLs and API versions
 
 The server answers on `/iiif/2/<id>` (Image API 2), `/iiif/3/<id>` (Image API
 3) and the legacy `/iiif/<id>` (Image API 2, as served by the current
-`image.library.jhu.edu`). Use one of these base URLs as `--image-base-url`
-with the matching `--image-api-version`. The `Deploy Stage` workflow defaults
-to the stage image server (`https://d32j4c172m91zy.cloudfront.net/iiif/3`) and
-`Release` to `https://image.library.jhu.edu/iiif/3`, both with Image API 3. The
-viewer default still points at `https://image.library.jhu.edu/iiif`.
+`image.library.jhu.edu`). Use one of these as `--image-base-url` with the
+matching `--image-api-version`. rosa-tool writes every painting body as
+`{service}/full/max/0/default.jpg`, which both API versions accept (Image API 3
+has no `full` size).
 
-## Local Development
+| Where | Image base URL | API version |
+|-------|----------------|-------------|
+| `Deploy Stage` default | `https://d32j4c172m91zy.cloudfront.net/iiif/3` (stage image server) | 3 |
+| `Release` default | `https://image.library.jhu.edu/iiif/3` | 3 |
+| `package-site.sh` default | `https://image.library.jhu.edu/iiif` (legacy path) | 2 |
+| `rosa-viewer/.env` default (`VITE_ROSA_IMAGE_BASE_URL`) | `https://image.library.jhu.edu/iiif` | - |
 
-For local development and testing, use the local-dev environment:
-
-```bash
-cd local-dev
-cp config.env.example config.env
-# Edit config.env to set ROSA_ARCHIVE
-
-./start.sh
-
-# In another terminal
-cd rosa-viewer
-npm run dev
-```
-
-Open http://localhost:3001 and choose a site, or go to http://localhost:3001/aor/
-or http://localhost:3001/dlmm/. Run `./start.sh --help` for the available options.
+Until the prod cutover described in
+[`jhu-rosa2-tf/README.md`](../jhu-rosa2-tf/README.md#image-server),
+`image.library.jhu.edu` is the old image server. Confirm that it serves `/iiif/3`
+(for example `curl -I https://image.library.jhu.edu/iiif/3/<id>/info.json`)
+before running `Release` with its default `image_base_url`; otherwise pass the
+legacy base URL with `image_api_version` `2`.
 
 ## Validation
 
-After deployment, verify data integrity:
+After a deployment, check the data:
 
 ```bash
-java -jar rosa-tool.jar check --archive /data/archive
-java -jar rosa-tool.jar validate-xml --archive /data/archive --collection aor
+java -jar rosa-tool/target/rosa-tool.jar check --archive /data/archive
+java -jar rosa-tool/target/rosa-tool.jar check --archive archive --skip-images   # shallow copy without images
+java -jar rosa-tool/target/rosa-tool.jar validate-xml --archive /data/archive --collection aor
 ```
 
-Verify IIIF endpoints:
+Verify the IIIF files resolve:
 
 ```bash
-curl https://iiif.example.org/iiif/collection.json
+curl https://viewer.example.org/iiif/collection.json
+curl https://viewer.example.org/iiif/rose/collection.json
 ```
 
-Verify Opensearch:
+Verify the search endpoint through the proxy:
 
 ```bash
-curl https://search.example.org:9200/manifest/_count
-curl https://search.example.org:9200/canvas/_count
+curl -X POST "https://<api-id>.execute-api.us-east-1.amazonaws.com/manifest/_search" \
+  -H "Content-Type: application/json" -d '{"size":0,"track_total_hits":true}'
+curl -X POST "https://<api-id>.execute-api.us-east-1.amazonaws.com/canvas/_search" \
+  -H "Content-Type: application/json" -d '{"size":0,"track_total_hits":true}'
+```
+
+`hits.total.value` must match the bulk files (250 manifests and 86,253 canvases
+for the in-repo archive at the time of writing). Verify an image:
+
+```bash
+curl -I "https://<image-host>/iiif/3/rose%2FDouce195%2Fcropped%2FDouce195.001r/info.json"
 ```

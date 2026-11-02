@@ -16,7 +16,7 @@ timeout still completes.
 Invoke with a JSON payload containing an `action`:
 
     {"action": "health"}
-    {"action": "cluster_settings"}
+    {"action": "cluster_settings"}      indexes and their analysis settings
     {"action": "recreate_index", "index": "canvas", "definition_key": "..."}
     {"action": "bulk_ingest", "key": "...", "start_byte": 0}
     {"action": "refresh", "index": "canvas"}
@@ -183,12 +183,25 @@ def action_health(_: dict[str, Any]) -> dict[str, Any]:
 
 
 def action_cluster_settings(_: dict[str, Any]) -> dict[str, Any]:
-    """Report the analyzer packages the domain can see, for troubleshooting."""
+    """Report the indexes and their analysis settings, for troubleshooting.
+
+    `indices` is the `_cat/indices` listing (name, health, document count, size)
+    and `settings` the per-index `index.analysis` block as the domain holds it,
+    which shows whether the Latin analyzer packages were resolved at creation.
+    """
     status, payload = request("GET", "/_cat/indices?format=json")
-    return {
+    result: dict[str, Any] = {
         "indices_status": status,
         "indices": json.loads(payload.decode("utf-8", "replace")) if status == 200 else None,
     }
+    settings_status, settings_payload = request(
+        "GET", "/_all/_settings/index.analysis*?flat_settings=false"
+    )
+    result["settings_status"] = settings_status
+    result["settings"] = (
+        json.loads(settings_payload.decode("utf-8", "replace")) if settings_status == 200 else None
+    )
+    return result
 
 
 def action_recreate_index(event: dict[str, Any]) -> dict[str, Any]:
@@ -231,6 +244,28 @@ def action_recreate_index(event: dict[str, Any]) -> dict[str, Any]:
         "created": True,
         "definition": f"s3://{bucket}/{key}",
     }
+
+
+def _lines_with_sizes(body: Any):
+    """Yield (line, bytes_consumed) for each line of a streaming body.
+
+    Byte accounting has to follow the stream exactly so a later invocation can
+    resume at `next_byte`. Lines are split on LF only, a trailing CR is stripped
+    from the line but counted, and the final line is counted without a terminator
+    if the object has none.
+    """
+    pending = b""
+    for chunk in body.iter_chunks(chunk_size=1024 * 1024):
+        pending += chunk
+        while True:
+            nl = pending.find(b"\n")
+            if nl < 0:
+                break
+            raw = pending[: nl + 1]
+            pending = pending[nl + 1 :]
+            yield raw[:-1].rstrip(b"\r"), len(raw)
+    if pending:
+        yield pending.rstrip(b"\r"), len(pending)
 
 
 def action_bulk_ingest(event: dict[str, Any], deadline: float) -> dict[str, Any]:
@@ -299,9 +334,9 @@ def action_bulk_ingest(event: dict[str, Any], deadline: float) -> dict[str, Any]
                 ok += 1
         return ok, bad, reason
 
-    for line in body.iter_lines(chunk_size=1024 * 1024):
+    for line, consumed in _lines_with_sizes(body):
         batch.append(line)
-        batch_bytes += len(line) + 1
+        batch_bytes += consumed
 
         at_pair_boundary = len(batch) % 2 == 0
         if not at_pair_boundary:

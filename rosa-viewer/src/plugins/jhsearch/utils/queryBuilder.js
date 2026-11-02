@@ -3,7 +3,39 @@
  */
 
 import { buildCategoryFilter } from './facets';
-import { buildAllowedBooksFilter, buildMatchedBookAggregations } from './bookFacets';
+import { buildAllowedBooksFilter, buildMatchedBookAggregations, termsClauses } from './bookFacets';
+
+/**
+ * Largest `from + size` a search may ask for: Opensearch's default
+ * `max_result_window`, which the search proxy also enforces. Results past it cannot be
+ * paged to; the UI clamps its page count to stay inside it.
+ */
+export const MAX_RESULT_WINDOW = 10000;
+
+/** Largest `size` the search proxy accepts for one request. */
+export const MAX_PAGE_SIZE = 300;
+
+/**
+ * `from` and `size` for a results page, kept inside `MAX_RESULT_WINDOW` so the proxy
+ * never rejects the request. Pages past the window land on the last page that fits.
+ *
+ * @param {number} page - 0-based page number
+ * @param {number} pageSize - Results per page
+ * @returns {{from: number, size: number}}
+ */
+export function pageWindow(page, pageSize) {
+  const size = Math.min(pageSize, MAX_PAGE_SIZE);
+  const lastFrom = Math.max(0, Math.floor((MAX_RESULT_WINDOW - size) / size) * size);
+  return { from: Math.min(Math.max(0, page) * size, lastFrom), size };
+}
+
+/**
+ * One clause that matches any of `clauses`: the clause itself when there is one,
+ * otherwise a `bool` `should`.
+ */
+function anyOf(clauses) {
+  return clauses.length === 1 ? clauses[0] : { bool: { should: clauses, minimum_should_match: 1 } };
+}
 
 /**
  * Facet key holding the manifest ids picked in the Name filter. It is stored with the
@@ -38,7 +70,7 @@ export function buildNameFilter(ids) {
   const values = ids.map(String);
   return {
     bool: {
-      should: [{ terms: { id: values } }, { terms: { manifest_id: values } }],
+      should: [...termsClauses('id', values), ...termsClauses('manifest_id', values)],
       minimum_should_match: 1,
     },
   };
@@ -252,8 +284,7 @@ export function buildBrowseQuery({
         filter: filters,
       },
     },
-    from: page * pageSize,
-    size: pageSize,
+    ...pageWindow(page, pageSize),
     sort: buildSortClause(sortField, sortOrder) || [{ 'label.keyword': 'asc' }],
     aggs: buildSearchAggregations(categories, books),
   };
@@ -311,8 +342,7 @@ export function buildSimpleSearchQuery({
         filter: filters,
       },
     },
-    from: page * pageSize,
-    size: pageSize,
+    ...pageWindow(page, pageSize),
     highlight: {
       fields: buildHighlightFields(searchFields),
       pre_tags: ['<mark>'],
@@ -443,8 +473,7 @@ export function buildAdvancedSearchQuery({
     query: {
       bool: boolQuery,
     },
-    from: page * pageSize,
-    size: pageSize,
+    ...pageWindow(page, pageSize),
     highlight: {
       fields: buildHighlightFields([...new Set(allSearchFields)]),
       pre_tags: ['<mark>'],
@@ -459,31 +488,6 @@ export function buildAdvancedSearchQuery({
   }
 
   return body;
-}
-
-/**
- * Build a query to get collection aggregations.
- *
- * @param {string[]} collectionIds - Collection IDs to include
- * @returns {Object} Opensearch query body
- */
-export function buildCollectionAggregationQuery(collectionIds) {
-  return {
-    query: {
-      bool: {
-        filter: [{ terms: { collection_id: collectionIds } }],
-      },
-    },
-    size: 0,
-    aggs: {
-      collections: {
-        terms: {
-          field: 'collection_id',
-          size: 100,
-        },
-      },
-    },
-  };
 }
 
 /**
@@ -547,10 +551,10 @@ export function buildNameLookupQuery(ids) {
   return {
     query: {
       bool: {
-        filter: [{ terms: { id: values } }],
+        filter: [anyOf(termsClauses('id', values))],
       },
     },
-    size: values.length,
+    size: Math.min(values.length, MAX_PAGE_SIZE),
     _source: NAME_SOURCE,
   };
 }

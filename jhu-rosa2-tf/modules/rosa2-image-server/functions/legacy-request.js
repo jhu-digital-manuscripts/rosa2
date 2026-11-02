@@ -18,8 +18,42 @@
 // this function; they are passed through untouched here as a safeguard.
 // Identifiers are percent-encoded single path segments (rose%2FDouce195%2F...),
 // so a legacy identifier can never be exactly "2" or "3".
+//
+// Identifiers whose decoded form contains a "." or ".." path segment are
+// answered with 400 at the edge. Cantaloupe would otherwise build an S3 key
+// from them and return a 500 whose body carries the S3 exception text.
 
 var LEGACY_HEADER = 'x-rosa-legacy-path';
+
+// True when the percent-encoded identifier cannot be decoded or decodes to a
+// path containing a "." or ".." segment (with "/" or "\\" as separator).
+function isTraversal(id) {
+  var decoded;
+  try {
+    decoded = decodeURIComponent(id);
+  } catch (e) {
+    return true;
+  }
+  var segments = decoded.split(/[\/\\]/);
+  for (var i = 0; i < segments.length; i++) {
+    if (segments[i] === '.' || segments[i] === '..') {
+      return true;
+    }
+  }
+  return false;
+}
+
+function badRequest() {
+  return {
+    statusCode: 400,
+    statusDescription: 'Bad Request',
+    headers: {
+      'access-control-allow-origin': { value: '*' },
+      'cache-control': { value: 'no-store' },
+      'content-type': { value: 'text/plain' },
+    },
+  };
+}
 
 function handler(event) {
   var request = event.request;
@@ -38,6 +72,10 @@ function handler(event) {
 
   if (id === '2' || id === '3') {
     return request;
+  }
+
+  if (isTraversal(id)) {
+    return badRequest();
   }
 
   if (rest === '' || rest === '/') {
