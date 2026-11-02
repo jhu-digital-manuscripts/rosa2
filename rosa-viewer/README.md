@@ -387,6 +387,34 @@ to a release. See [`docs/deployment.md`](../docs/deployment.md).
 - [Vite](https://vitejs.dev/) - Build tool
 - [Vitest](https://vitest.dev/) - Testing framework
 
+### Dependency audit
+
+`npm audit` reports two advisories (checked 2026-11-02) that cannot be fixed by
+upgrading. Do not run `npm audit fix --force`: its proposed fix downgrades to
+Mirador 2 and ESLint 4.
+
+- **deepmerge** [GHSA-gcqx-w48m-w2h4](https://github.com/advisories/GHSA-gcqx-w48m-w2h4)
+  (low, prototype poisoning in `mergeObject()`), via `mirador`. No patched
+  release exists (the advisory covers every 4.2.0-4.3.1 release, and 4.3.1 is
+  the latest). Mirador bundles its own copy and only merges trusted input with
+  it: the site configuration from `sites/<site>/main.js`, plugin configuration
+  and reducer payloads built from our own manifests. The viewer never imports
+  configuration or workspace state from a URL, storage or user input. Revisit
+  when deepmerge publishes a fix or Mirador changes dependency.
+- **minimatch** [GHSA-g3hv-75wg-m249](https://github.com/advisories/GHSA-g3hv-75wg-m249)
+  (moderate, CPU amplification from attacker-controlled glob patterns), via
+  `eslint`, `@eslint/config-array`, `@eslint/eslintrc`, `eslint-plugin-react`
+  and `eslint-plugin-jsx-a11y`. These are dev-only, the glob patterns come from
+  `eslint.config.js` and rule options, and the installed 3.1.x line does not
+  contain the pattern pre-processing code the advisory describes (added in
+  later majors). The only patched release, 11.0.1, is a new major that drops
+  the default export that `@eslint/eslintrc`, `eslint-plugin-react` and
+  `eslint-plugin-jsx-a11y` rely on. An `overrides` entry pinning it installs
+  cleanly but makes `jsx-a11y/label-has-associated-control` throw on any file
+  with a `<label>` (verified), and the `eslint-plugin-react` rules that take
+  glob options would fail the same way. Remove this note once the ESLint
+  packages depend on a patched minimatch.
+
 ## Documentation
 
 - [Search Documentation](../docs/search.md) - JHSearch service specification
