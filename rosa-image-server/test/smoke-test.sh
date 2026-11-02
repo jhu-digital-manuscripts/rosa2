@@ -352,7 +352,9 @@ if [[ "${S3}" == true ]]; then
   # stable name; the host reaches SeaweedFS through a published port to create
   # the buckets, upload the source image and inspect the cache bucket. No
   # identities are configured, so SeaweedFS accepts any credentials; the SDK
-  # still needs some, and a region.
+  # still needs some, and a region. Note that with S3SOURCE_ENDPOINT set,
+  # Cantaloupe 5.0.8 creates a new S3 client per S3 call (README, "5.0.8 S3
+  # client caching bug"); harmless for the few requests made here.
   S3_PORT=$((PORT + 3))
   S3_NET="rosa-smoke-net-$$"
   S3_NAME="${NAME}-s3"

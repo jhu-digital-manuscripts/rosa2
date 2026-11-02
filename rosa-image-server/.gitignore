@@ -4,3 +4,6 @@
 
 # An unpacked Kakadu distribution (e.g. v8_6_1-02130L/) is licensed source too.
 v8_*/
+
+# bench.py bytecode
+__pycache__/

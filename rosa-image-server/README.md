@@ -99,6 +99,42 @@ No AWS access is needed. The script makes JPEG 2000 test images with the image's
 
 `--benchmark` compares `info.json` latency with the delegate script on and off. The difference is within noise, at about 2–3 ms median for each. `--keep` leaves the server running for the CloudFront Function end-to-end test in `jhu-rosa2-tf/modules/rosa2-image-server/functions/test/`.
 
+### Benchmarking
+
+`test/bench.py` (python3 and `httpx`) replays the request patterns rosa-viewer produces against any Image API base URL, a local container or the CloudFront URL of an environment, and prints median, p95 and throughput per scenario plus CloudFront hit/miss counts:
+
+| scenario | requests | what in the viewer |
+|----------|----------|--------------------|
+| `info` | `info.json` | every page open, every thumbnail with a service |
+| `thumbs` | `full/80,` | search results, the Mirador gallery view and thumbnail strip (the manifests give every canvas a static 80 px thumbnail without an image service, so Mirador never asks for another size) |
+| `open` | one scale-factor-8 tile and the scale-factor-4 grid | OpenSeadragon showing a whole page in a window |
+| `zoom` | a 3×2 block of full-resolution 512 px tiles | a zoomed-in viewport |
+| `fullmax` | `full/max` | the painting body URL; the viewer does not request it, but crawlers and downloads do |
+
+`--unique` shifts every region by the round number so neither CloudFront nor the derivative cache can answer, which measures decoding; without it repeated rounds measure the caches. Example, against stage with the three pages used below:
+
+```sh
+test/bench.py --base https://<id>.cloudfront.net/iiif/3 --unique --rounds 3 --concurrency 4 \
+  --ids aor/FolgersHa2/FolgersHa2.012r rose/Douce195/Douce195.001r aor/PrincetonPA6452/PrincetonPA6452.001r
+```
+
+Locally, run the image with Fargate-like limits (`--cpus=2 --memory=4g`, `HTTP_MAX_THREADS=64`, `JAVA_OPTS=-XX:MaxRAMPercentage=65.0`) over a directory of JP2s. Real pages work best: fetch `full/max` JPEGs from the stage server and encode them with the image's own `kdu_compress` (`Clevels=5 Corder=RPCL Cprecincts={256,256},{256,256},{128,128} Cblk={64,64} ORGgen_plt=yes -rate 1.0` gives 2–4 MB files like the archive's).
+
+**Results for the 5.0.8 upgrade (2026-11-02, 5.0.7 + Kakadu 8.6.1 vs 5.0.8 + Kakadu 8.7, same host, 2 CPUs, 4 concurrent requests, unique regions, medians of repeated passes):**
+
+| source | version | thumbs | open tile | zoom tile | CPU for the same work |
+|--------|---------|--------|-----------|-----------|-----------------------|
+| local files | 5.0.7 | 8 ms | 111–135 ms | 100–103 ms | 40.5–41.8 s |
+| local files | 5.0.8 | 7 ms | 121–124 ms | 102 ms | 41.5–42.1 s |
+| local S3 (SeaweedFS) | 5.0.7 | 12–15 ms | 184–186 ms | 111–113 ms | 23.6–23.8 s |
+| local S3 (SeaweedFS) | 5.0.8 | 14–17 ms | 155–181 ms | 114–145 ms | 23.5–24.0 s |
+
+Decoding and encoding are unchanged: Kakadu 8.7 is neither faster nor slower than 8.6.1 here, and the two Cantaloupe versions burn the same CPU per tile. 5.0.8's fix for the leaked `KduImageInputStreamSource` finalizers shows up as a lower steady-state heap (about 0.85 GB against 1.8 GB resident after the same file-source run). The stage task (Fargate 2 vCPU, S3 source, CloudFront in the path) served the same cold requests at 207 ms (thumbnail), 290–310 ms (tile) and 3.9 s (`full/max` at the then-unlimited `max_pixels`) before the upgrade; the difference to the local numbers is S3 round trips, the slower vCPU and the CloudFront hop, not Cantaloupe.
+
+Tuning experiments on 5.0.8 found nothing worth changing: `http.max_threads` 8 or 16 instead of 64 did not improve p95 under bursts of 16 or 32 concurrent tiles (throughput is bound by the two CPUs at about 24 `open` and 33 `zoom` tiles a second either way); `-XX:+UseParallelGC` was no better than the default G1; `processor.downscale_filter = triangle` was no faster than `bicubic`, because Kakadu does the bulk of the reduction and the filter only handles the residual scale. `S3Source.chunking.chunk_size` of 512K, 1M, 2M and 4M and chunking off all measured the same with 20 ms of emulated S3 delay; a 512 px tile reads about 5 chunks of a 2.6 MB file, so if the real S3 round trip dominates on Fargate, a larger chunk can only be judged there: set `S3SOURCE_CHUNKING_CHUNK_SIZE` (and `S3SOURCE_CHUNKING_CACHE_MAX_SIZE`) through `image_server_extra_environment` and compare with `bench.py --unique`.
+
+**5.0.8 S3 client caching bug.** `S3Source.getClientInstance` caches clients under the configured `S3Source.endpoint` string but looks them up by the object's own endpoint, which `BasicLookupStrategy` never sets. With `S3Source.endpoint` set (MinIO, SeaweedFS, any non-AWS endpoint) every S3 call therefore builds a new `S3AsyncClient`, and in 5.0.8 each one brings a native AWS CRT HTTP client that is never closed: in the benchmark this doubled tile latency, added 50% CPU and killed the 4 GB container with an OOM after about 3,000 S3 calls, where 5.0.7's cheap synchronous clients were merely garbage. With an empty endpoint (AWS, as in ECS) the key is `null` on both sides, one client is reused, and the two versions are identical, as the local-S3 row above shows when `ScriptLookupStrategy` supplies the endpoint. Keep `S3Source.endpoint` empty in AWS; for a custom endpoint use the delegate `s3source_object_info` and return the endpoint from it. `test/smoke-test.sh --s3` runs the buggy path, which is harmless for its few dozen requests.
+
 ## Running locally
 
 Against the real source images in S3, with the derivative cache off so that nothing is written:
