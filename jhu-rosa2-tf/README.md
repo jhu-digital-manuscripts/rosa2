@@ -387,8 +387,19 @@ its CloudFront hostname. To move the name:
    `image_server_domain_aliases = ["image.library.jhu.edu"]` and
    `image_server_acm_certificate_arn = "<arn>"`, then apply. This also changes
    Cantaloupe's `BASE_URI`, so the ECS tasks are replaced.
-3. Point `image.library.jhu.edu` (CNAME) at the `image_server_cloudfront_domain_name` output.
-4. Existing `/iiif/<id>` URLs keep working. New manifests can use
+3. Invalidate the distribution's cache once the new tasks are serving:
+   `aws cloudfront create-invalidation --distribution-id <id> --paths '/*'`
+   (`tofu output image_server_cloudfront_distribution_id`). The cache key is
+   the path plus `Accept-Encoding`, not the `Host` header, and `info.json`
+   responses are cached for up to a year, so without this, requests on the
+   new name are answered with `info.json` documents whose `id`/`@id` still
+   carry the `*.cloudfront.net` hostname. Tiles do not embed the hostname,
+   but a single `/*` invalidation is simpler than listing paths and is
+   within the free monthly allowance. The S3 derivative cache does not store
+   the hostname (the delegate and Cantaloupe build `id` per request), so it
+   needs no purge.
+4. Point `image.library.jhu.edu` (CNAME) at the `image_server_cloudfront_domain_name` output.
+5. Existing `/iiif/<id>` URLs keep working. New manifests can use
    `image_server_iiif2_base_url` or `image_server_iiif3_base_url`.
 
 Which image base URL and Image API version each environment and workflow uses

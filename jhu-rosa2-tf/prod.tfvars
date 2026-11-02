@@ -142,7 +142,9 @@ image_server_log_retention_days = 30
 # certificate requested outside tofu:
 #   image_server_domain_aliases      = ["image.library.jhu.edu"]
 #   image_server_acm_certificate_arn = "arn:aws:acm:us-east-1:...:certificate/..."
-# and point the DNS CNAME at the image_server_cloudfront_domain_name output.
+# then invalidate the distribution (/*: cached info.json carries the old
+# hostname in its id) and point the DNS CNAME at the
+# image_server_cloudfront_domain_name output. Steps in README.md, "Prod cutover".
 image_server_domain_aliases      = []
 image_server_acm_certificate_arn = ""
 
