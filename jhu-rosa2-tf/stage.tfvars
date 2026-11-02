@@ -98,7 +98,7 @@ enable_api_access_logs = true
 
 # Image built and pushed with rosa-image-server/build-and-push.sh --env stage --push.
 # Empty creates the infrastructure with the service scaled to zero.
-image_server_image_tag = "5.0.7-de5cbb8f-dirty"
+image_server_image_tag = "5.0.8-2d2eb4d3"
 
 # ---------- Networking ----------
 # Runs in the dspace stage VPC, sourced from the dspace stage remote state

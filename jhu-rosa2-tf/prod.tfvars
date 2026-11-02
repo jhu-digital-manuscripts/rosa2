@@ -111,7 +111,7 @@ enable_api_access_logs = true
 
 # Image built and pushed with rosa-image-server/build-and-push.sh --env prod --push.
 # Empty creates the infrastructure with the service scaled to zero.
-image_server_image_tag = ""
+image_server_image_tag = "5.0.8-2d2eb4d3"
 
 # ---------- Networking ----------
 # Runs in the dspace prod VPC, sourced from the dspace prod remote state
