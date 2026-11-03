@@ -191,6 +191,13 @@ export const getDefaultFields = (state) => getService(state).defaultFields || []
 export const getOpensearchUrl = (state) => getService(state).opensearchUrl;
 
 /**
+ * Get the id of the collection whose jhsearch.json is loaded, or null before the
+ * first load. Differs from the selected collection while a newly selected
+ * collection's service is loading.
+ */
+export const getServiceCollectionId = (state) => getService(state).collectionId || null;
+
+/**
  * Get the IIIF base URL.
  */
 export const getIiifBaseUrl = (state) => getConfig(state).iiifBaseUrl;

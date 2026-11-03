@@ -37,6 +37,39 @@ describe('jhsearchReducer', () => {
     });
   });
 
+  describe('service actions', () => {
+    const roseService = {
+      collectionId: 'rose',
+      fields: [{ name: 'description', label: 'Description' }],
+      categories: [],
+      defaultFields: ['description'],
+      opensearchUrl: 'http://localhost:9200/_search',
+    };
+
+    it('starts with no service collection', () => {
+      expect(selectors.getServiceCollectionId({ jhsearch: initialState })).toBeNull();
+    });
+
+    it('remembers which collection the loaded service belongs to', () => {
+      const state = jhsearchReducer(undefined, actions.loadServiceSuccess(roseService));
+
+      expect(state.service.loaded).toBe(true);
+      expect(selectors.getServiceCollectionId({ jhsearch: state })).toBe('rose');
+      expect(selectors.getFields({ jhsearch: state })).toEqual(roseService.fields);
+    });
+
+    it('keeps the loaded service while another collection loads', () => {
+      let state = jhsearchReducer(undefined, actions.loadServiceSuccess(roseService));
+      state = jhsearchReducer(state, actions.selectCollection('pizan'));
+      state = jhsearchReducer(state, actions.loadServiceRequest());
+
+      expect(state.service.loading).toBe(true);
+      expect(state.service.loaded).toBe(true);
+      expect(selectors.getServiceCollectionId({ jhsearch: state })).toBe('rose');
+      expect(selectors.getSelectedCollectionId({ jhsearch: state })).toBe('pizan');
+    });
+  });
+
   describe('UI actions', () => {
     it('should handle SET_VIEW_MODE', () => {
       const action = actions.setViewMode('search');

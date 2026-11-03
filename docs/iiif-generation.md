@@ -384,10 +384,12 @@ Fields and categories are fixed per collection in
 `rosa-tool/src/main/java/rosa/archive/iiif/JHSearchInfoGenerator.java`. AoR has twenty
 fields (the annotation types, `people`, `books`, `locations`, `language`,
 `marginalia_language`, `method`, `hand`, `annotator`) and no categories, so its site shows
-only the viewer's built-in Name filter. `rose`, `pizan` and `dlmm` have description,
-title, repository, people or character, place and transcription fields and the categories
-`current_location`, `date`, `num_illustrations` (interval 10), `num_pages` (interval
-100), `origin`, `type` and `has_transcription`. The `language` and
+only the viewer's built-in Name filter. `people` and `locations` are filled from AoR
+annotations only, so no other collection offers them. `rose` has description, repository,
+illustration, character and transcription fields; `pizan` description, repository, title
+and transcription; `dlmm` description, title, repository and transcription. All three have
+the categories `current_location`, `date`, `num_illustrations` (interval 10), `num_pages`
+(interval 100), `origin`, `type` and `has_transcription`. The `language` and
 `marginalia_language` values include `iw` (Hebrew) and `cy` (Welsh), which occur in the
 data as language codes although their text is analysed as English (see
 [opensearch-indexes.md](opensearch-indexes.md#text-analysis)).

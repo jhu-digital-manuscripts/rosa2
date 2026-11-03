@@ -33,17 +33,18 @@ public final class JHSearchInfoGenerator {
             Comparator.comparing((Map.Entry<String, String> e) -> e.getValue(), String.CASE_INSENSITIVE_ORDER)
                     .thenComparing(Map.Entry::getKey);
 
-    // Per-collection search fields (using opensearch field names from the canvas index)
+    // Per-collection search fields (using opensearch field names from the canvas index).
+    // people and locations are filled from AoR annotations only, so only aor offers them.
     private static final Map<String, List<String>> SEARCH_FIELDS = Map.of(
-            "rose", List.of("description", "repository", "locations", "illustration",
+            "rose", List.of("description", "repository", "illustration",
                     "char_name", "transcription"),
-            "pizan", List.of("description", "repository", "locations", "title",
+            "pizan", List.of("description", "repository", "title",
                     "transcription"),
             "aor", List.of("marginalia", "symbol", "underline", "mark",
                     "books", "people", "locations", "language", "marginalia_language",
                     "numeral", "drawing", "errata", "emphasis", "cross_reference",
                     "method", "calculation", "graph", "table", "hand", "annotator"),
-            "dlmm", List.of("description", "title", "people", "locations", "repository",
+            "dlmm", List.of("description", "title", "repository",
                     "transcription")
     );
 

@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class JHSearchInfoGeneratorTest {
@@ -46,5 +47,32 @@ class JHSearchInfoGeneratorTest {
     void dlmmKeepsItsCategories() {
         ObjectNode root = generator.generate("dlmm", "https://example.org/_search");
         assertEquals(7, root.get("categories").size());
+    }
+
+    @Test
+    void peopleAndLocationsAreOfferedByAorOnly() {
+        // Only AoR annotations fill the people and locations fields, so the other
+        // collections must not offer them: a search on them would never match
+        for (String collection : List.of("dlmm", "rose", "pizan")) {
+            List<String> names = fieldNames(collection);
+            assertFalse(names.contains("people"), collection + " offers people");
+            assertFalse(names.contains("locations"), collection + " offers locations");
+        }
+
+        List<String> aor = fieldNames("aor");
+        assertTrue(aor.contains("people"));
+        assertTrue(aor.contains("locations"));
+    }
+
+    @Test
+    void dlmmSearchesDescriptionTitleRepositoryAndTranscription() {
+        assertEquals(List.of("description", "title", "repository", "transcription"), fieldNames("dlmm"));
+    }
+
+    private List<String> fieldNames(String collection) {
+        ObjectNode root = generator.generate(collection, "https://example.org/_search");
+        List<String> names = new ArrayList<>();
+        root.get("fields").forEach(f -> names.add(f.get("name").asText()));
+        return names;
     }
 }

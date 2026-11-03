@@ -27,11 +27,13 @@ export const initialState = {
     pageSizeOptions: [20, 30, 40, 50],
   },
 
-  // JHSearch service configuration (from jhsearch.json)
+  // JHSearch service configuration (from the selected collection's jhsearch.json)
   service: {
     loaded: false,
     loading: false,
     error: null,
+    // Collection whose jhsearch.json this is; reloaded when another is selected
+    collectionId: null,
     fields: [],
     categories: [],
     defaultFields: [],

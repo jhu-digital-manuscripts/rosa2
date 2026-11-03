@@ -35,7 +35,8 @@ export function useJHSearchConfig() {
     pageSize: config.pageSize,
     pageSizeOptions: config.pageSizeOptions,
 
-    // Service config
+    // Service config, from the jhsearch.json of the collection serviceCollectionId
+    serviceCollectionId: service.collectionId || null,
     fields: service.fields,
     categories: service.categories,
     defaultFields: service.defaultFields,

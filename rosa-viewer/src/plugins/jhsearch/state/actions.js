@@ -80,6 +80,12 @@ export const loadServiceRequest = () => ({
   type: LOAD_SERVICE_REQUEST,
 });
 
+/**
+ * Store a loaded jhsearch.json.
+ *
+ * @param {Object} service - fields, categories, defaultFields and opensearchUrl, plus
+ *   the `collectionId` whose jhsearch.json it is
+ */
 export const loadServiceSuccess = (service) => ({
   type: LOAD_SERVICE_SUCCESS,
   payload: service,

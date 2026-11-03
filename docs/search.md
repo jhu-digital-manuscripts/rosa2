@@ -50,6 +50,11 @@ collection and manifest generated with `--opensearch-url`:
 4. Use `fields` and `categories` to build a search UI.
 5. Send Opensearch query DSL to the `opensearch` endpoint, as described below.
 
+Each collection has its own `jhsearch.json`, and a child collection's fields differ from
+its parent's. The viewer repeats steps 1 to 4 for the collection chosen in its collection
+selector, so the advanced search fields, their help and the facets are those of the
+selected collection.
+
 ## Querying
 
 The endpoint named in `jhsearch.json` is an Opensearch `_search` URL. In the deployed

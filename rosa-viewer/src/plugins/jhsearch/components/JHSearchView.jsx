@@ -53,41 +53,59 @@ export function JHSearchView({ jhsearchConfig }) {
   const opensearchUrl = useSelector(selectors.getOpensearchUrl);
   const enableFacets = useSelector(selectors.areFacetsEnabled);
   const rootCollectionId = useSelector(selectors.getRootCollectionId);
+  const serviceCollectionId = useSelector(selectors.getServiceCollectionId);
 
-  // Initialize on mount
+  // Store the plugin config and the collection list on mount
   useEffect(() => {
     if (!jhsearchConfig) return;
+    dispatch(loadConfigSuccess(jhsearchConfig));
+    dispatch(loadCollectionsSuccess(buildCollectionItems(jhsearchConfig)));
+  }, [dispatch, jhsearchConfig]);
 
-    const initialize = async () => {
-      // Store the config in Redux
-      dispatch(loadConfigSuccess(jhsearchConfig));
-      dispatch(loadServiceRequest());
+  // Each collection has its own jhsearch.json with its own fields and categories, so
+  // the service is loaded for the selected collection and again whenever it changes.
+  // Before the config is stored, the selection may still be empty; the site's
+  // collection is the target then.
+  const targetCollectionId = selectedCollectionId || jhsearchConfig?.collectionId;
 
+  // Number of the latest service load, so a slow response for an earlier collection
+  // does not replace the one selected since
+  const serviceCounter = useRef(0);
+
+  useEffect(() => {
+    if (!jhsearchConfig || !targetCollectionId || serviceCollectionId === targetCollectionId) {
+      return;
+    }
+
+    const loadNumber = ++serviceCounter.current;
+    dispatch(loadServiceRequest());
+
+    const load = async () => {
       try {
         const { service: serviceConfig } = await initializeJHSearch(
           jhsearchConfig.iiifBaseUrl,
-          jhsearchConfig.collectionId
+          targetCollectionId
         );
-
-        dispatch(loadServiceSuccess(serviceConfig));
-
-        // Build collection list from config
-        dispatch(loadCollectionsSuccess(buildCollectionItems(jhsearchConfig)));
+        if (loadNumber !== serviceCounter.current) return;
+        dispatch(loadServiceSuccess({ ...serviceConfig, collectionId: targetCollectionId }));
       } catch (error) {
+        if (loadNumber !== serviceCounter.current) return;
         dispatch(loadServiceFailure(error.message || 'Failed to load search configuration'));
       }
     };
 
-    initialize();
-  }, [dispatch, jhsearchConfig]);
+    load();
+  }, [dispatch, jhsearchConfig, targetCollectionId, serviceCollectionId]);
 
   // Number of the latest search, so a slow response to an earlier search (e.g.
   // after quickly going back and forward) does not replace newer results
   const searchCounter = useRef(0);
 
-  // Execute search when parameters change
+  // Execute search when parameters change. Waits for the selected collection's
+  // service, whose fields and categories the search is built from.
   const executeSearch = useCallback(async () => {
     if (!isInitialized || !opensearchUrl || !selectedCollectionId) return;
+    if (serviceCollectionId !== selectedCollectionId) return;
 
     const searchNumber = ++searchCounter.current;
     dispatch(searchRequest());
@@ -123,6 +141,7 @@ export function JHSearchView({ jhsearchConfig }) {
     enableFacets,
     rootCollectionId,
     selectedCollectionId,
+    serviceCollectionId,
     viewMode,
     searchMode,
     simpleQuery,
