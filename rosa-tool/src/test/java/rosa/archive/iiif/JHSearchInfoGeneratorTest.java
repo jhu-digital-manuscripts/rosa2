@@ -31,8 +31,23 @@ class JHSearchInfoGeneratorTest {
             sorted.sort(String.CASE_INSENSITIVE_ORDER);
             assertEquals(sorted, labels, "values of " + field.get("name").asText() + " should be sorted");
         }
-        // mark, symbol, drawing, language, marginalia_language, method
-        assertEquals(6, fieldsWithValues);
+        // mark, symbol, drawing, language, marginalia_language, method, hand
+        assertEquals(7, fieldsWithValues);
+    }
+
+    @Test
+    void handIsAnEnumeratedKeywordField() {
+        // hand has three values in the archive, so the viewer offers a dropdown and sends
+        // a term query on the keyword field, as it does for method
+        ObjectNode root = generator.generate("aor", "https://example.org/_search");
+        JsonNode hand = null;
+        for (JsonNode field : root.get("fields")) {
+            if (field.get("name").asText().equals("hand")) hand = field;
+        }
+        assertTrue(hand != null && !hand.has("has_subfields"));
+        List<String> values = new ArrayList<>();
+        hand.get("values").forEach(v -> values.add(v.get("value").asText()));
+        assertEquals(List.of("English_secretary", "Italian", "typescript"), values);
     }
 
     @Test

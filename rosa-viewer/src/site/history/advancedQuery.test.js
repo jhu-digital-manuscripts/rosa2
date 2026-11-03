@@ -9,10 +9,10 @@ describe('parseAdvancedQuery', () => {
   });
 
   it('parses a flat group with both operators', () => {
-    expect(parseAdvancedQuery("(description:'sword' & title:'rose' | char_name:'Amant')")).toEqual([
+    expect(parseAdvancedQuery("(description:'sword' & title:'rose' | character:'Amant')")).toEqual([
       { field: 'description', value: 'sword', operator: 'AND' },
       { field: 'title', value: 'rose', operator: 'AND' },
-      { field: 'char_name', value: 'Amant', operator: 'OR' },
+      { field: 'character', value: 'Amant', operator: 'OR' },
     ]);
   });
 

@@ -554,6 +554,28 @@ class OpensearchIngestGeneratorTest {
         }
 
         @Test
+        void skipsAlternatesThatAreNotNames() {
+            AnnotatedPage ap = setUpAnnotatedPage("Harvey");
+            Drawing drawing = new Drawing("draw1", null, Location.HEAD, "diagram", null, "en");
+            drawing.setPeople(List.of("Aaron"));
+            drawing.setLocations(List.of("Isabela"));
+            ap.setDrawings(List.of(drawing));
+
+            // A plain sheet hands back every column: the ISNI placeholder, an ISNI and a
+            // bracketed editorial note must still stay out of the index
+            ReferenceSheet peopleRef = new ReferenceSheet();
+            peopleRef.addValues("Aaron", "Aaron", "Aharon", "", "", "", "", "-", "0000 0001 2095 0591", "");
+            collection.setPeopleRef(peopleRef);
+            ReferenceSheet locationsRef = new ReferenceSheet();
+            locationsRef.addValues("Isabela", "Isabela", "Saometto Island", "", "[one of the Galapagos Islands]");
+            collection.setLocationsRef(locationsRef);
+
+            ObjectNode doc = generateCanvas();
+            assertEquals(Set.of("Aaron", "Aharon"), Set.copyOf(jsonArrayToList(doc.get("people"))));
+            assertEquals(Set.of("Isabela", "Saometto Island"), Set.copyOf(jsonArrayToList(doc.get("locations"))));
+        }
+
+        @Test
         void indexesDrawingTypeInKeyword() {
             AnnotatedPage ap = setUpAnnotatedPage("Harvey");
             Drawing drawing = new Drawing("draw1", null, Location.HEAD, "manicule", null, "en");
@@ -1081,7 +1103,7 @@ class OpensearchIngestGeneratorTest {
             // Need to tell the tagging which image this illustration is on
             ObjectNode doc = generateCanvasWithIllustration(illus);
 
-            List<String> charNameList = jsonArrayToList(doc.get("char_name"));
+            List<String> charNameList = jsonArrayToList(doc.get("character"));
             assertTrue(charNameList.contains("Dancers Group"),
                     "Numeric ID '27' should be resolved: " + charNameList);
         }
@@ -1099,7 +1121,7 @@ class OpensearchIngestGeneratorTest {
 
             ObjectNode doc = generateCanvasWithIllustration(illus);
 
-            List<String> charNameList = jsonArrayToList(doc.get("char_name"));
+            List<String> charNameList = jsonArrayToList(doc.get("character"));
             assertTrue(charNameList.contains("dancers"),
                     "Non-numeric 'dancers' should be treated as literal: " + charNameList);
             assertTrue(charNameList.contains("musician"),
@@ -1124,7 +1146,7 @@ class OpensearchIngestGeneratorTest {
 
             ObjectNode doc = generateCanvasWithIllustration(illus);
 
-            List<String> charNameList = jsonArrayToList(doc.get("char_name"));
+            List<String> charNameList = jsonArrayToList(doc.get("character"));
             assertTrue(charNameList.contains("Dancers Group"),
                     "Numeric ID '27' should be resolved: " + charNameList);
             assertTrue(charNameList.contains("dancers"),

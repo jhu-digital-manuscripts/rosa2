@@ -138,6 +138,16 @@ Text whose language is not in the table is routed to `.en`. In the data this con
 `iw` (Hebrew) and `cy` (Welsh); the language codes themselves are still indexed in the
 `language` and `marginalia_language` keyword fields.
 
+The canvas [name fields](#name-fields) (`people`, `books`, `locations`, `annotator`,
+`character`) and the manifest `repository` field are not routed by language. They use the
+`name` analyzer, defined identically in both indexes: a character filter that turns `_`
+into a space (so `English_secretary` is found by `secretary`), the standard tokenizer,
+`lowercase`, `asciifolding`, the English possessive stemmer (`Livy's History` is found by
+`Livy`) and French elision (`l'Arsenal` by `Arsenal`, `L'Amans` by `Amans`), with no other
+stemming and no stop words. `cicero` finds `Marcus Tullius Cicero` and `bibliotheque` finds
+`Bibliothèque nationale de France`, while `Livy` and `Livius` stay distinct tokens; both are
+indexed because the reference sheets supply the alternates.
+
 Every language sub-field is an array with one element per piece of text routed to it,
 for example one per marginal note: `"marginalia.la": ["Nota bene", "Vide infra"]`.
 Opensearch leaves a position gap between array elements (`position_increment_gap`, 100 by
@@ -185,7 +195,7 @@ One document per book, including books without images.
 | `label` | text, `.keyword` | The book's English common name, else the book id. Copied to `label_suggest`. The viewer sorts on `label.keyword`. |
 | `label_suggest` | search_as_you_type | Filled from `label` by `copy_to`; not in the bulk data. See below. |
 | `title` | text with `.keyword`, `.en`, `.fr`, `.ofr`, `.la`, `.el`, `.it`, `.es` | One string: the common name followed by the titles of the book's texts, or the book id. It is not routed by language: every sub-field analyses the same string with its own analyzer. There is no `.de`. |
-| `repository` | text | Holding repository, `""` if unknown |
+| `repository` | text, `name` analyzer | Holding repository (`Bibliothèque de l'Arsenal`), `""` if unknown; see the name analyzer under [Text analysis](#text-analysis) |
 | `shelfmark` | text | Repository shelfmark, `""` if unknown |
 | `date` | keyword | Date label (facet), `""` if unknown |
 | `origin` | keyword | Place of origin (facet), `""` if unknown |
@@ -313,22 +323,36 @@ where marked, a `keyword` sub-field. One array element per annotation text.
 | `translation` | no | Translations of drawings and tables, in `.en` (marginalia translations are in `marginalia.en`, graph translations in `graph.en`) |
 | `anchor_text` | no | Text of the printed book that an annotation refers to: the anchor text of marginal notes, drawings, tables, graph nodes and graph notes |
 
-### Keyword array fields
+### Name fields
 
-Written only when non-empty, as arrays of distinct values.
+Written only when non-empty, as arrays of distinct values. These hold proper names and
+titles, often several words long (`Marcus Tullius Cicero`, `Ab Urbe Condita Libri`) or a
+comma-separated list of variants (`Bel Accueil, Bel Acuel, Bel Acueill`), so they are `text`
+fields with the `name` analyzer (see [Text analysis](#text-analysis)) and the viewer searches
+them with `multi_match` like any other text. Each has a `.keyword` sub-field for exact
+lookups and aggregations (`{"term": {"annotator.keyword": "John Dee"}}`).
 
 | Field | Value |
 |-------|-------|
-| `people` | People referenced by annotations on the page, with the alternate names from the collection's `people.csv`; ISNI identifiers are resolved to names and never indexed themselves |
-| `books` | Books referenced, with alternates from `books.csv` |
-| `locations` | Places referenced, with alternates from `locations.csv` |
-| `method` | Methods used, lowercased (`pen`, `chalk`, `pencil`, `scoring`, `typewriter`) |
-| `hand` | Hands identified |
+| `people` | People referenced by annotations on the page, with the alternative names from the collection's `people.csv` (its alternative-name columns only: the ISNI, its `-` placeholder and the extra-info column are never indexed; ISNI identifiers in annotations are resolved to names) |
+| `books` | Books referenced, with the alternates from `books.csv` (alternate-name columns only) |
+| `locations` | Places referenced, with the alternates from `locations.csv`; bracketed editorial notes such as `[one of the Galapagos Islands]` are skipped |
 | `annotator` | The page's reader and any `other_reader` of its marginal notes |
+| `character` | Character names from the page's illustrations, every name variant |
+
+### Keyword code fields
+
+Written only when non-empty, as arrays of distinct values. These are codes from a fixed
+vocabulary, matched exactly with `term` queries; `jhsearch.json` lists their values so the
+viewer offers them as dropdowns.
+
+| Field | Value |
+|-------|-------|
+| `method` | Methods used, lowercased (`pen`, `chalk`, `pencil`, `scoring`, `typewriter`) |
+| `hand` | Hands identified (`Italian`, `English_secretary`, `typescript`) |
 | `language` | Lowercased language codes of all annotations on the page (including codes such as `iw` and `cy` whose text is analysed as English) |
 | `marginalia_language` | Language codes of the marginal notes only |
 | `topic` | Marginalia topics. Mapped, but no transcription in the current archive has a `topic`, so the field is never populated |
-| `char_name` | Character names from the page's illustrations, every name variant |
 
 ## Bulk format
 

@@ -19,6 +19,7 @@ import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTagging;
 import rosa.archive.model.ImageList;
 import rosa.archive.model.ObjectRef;
+import rosa.archive.model.PeopleReferenceSheet;
 import rosa.archive.model.ReferenceSheet;
 import rosa.archive.model.Transcription;
 import rosa.archive.model.aor.AnnotatedPage;
@@ -490,7 +491,7 @@ public final class OpensearchIngestGenerator {
         addSetField(doc, "language", allLanguages);
         addSetField(doc, "marginalia_language", allMargLanguages);
         addSetField(doc, "topic", allTopics);
-        addSetField(doc, "char_name", allCharNames);
+        addSetField(doc, "character", allCharNames);
 
         normalizeWhitespaceValues(doc);
         return doc;
@@ -1048,7 +1049,9 @@ public final class OpensearchIngestGenerator {
      * </ul>
      * 
      * <p>Values that cannot be resolved are logged as warnings and not added to the output.
-     * ISNI identifiers are never included in the output, even if they appear as alternates.
+     * ISNI identifiers are never included in the output, even if they appear as alternates,
+     * and neither are the {@code -} placeholder of an empty ISNI cell or bracketed editorial
+     * notes such as {@code [one of the Galapagos Islands]} in locations.csv.
      */
     private void addRefAlternates(List<String> values, ReferenceSheet reference, Set<String> target) {
         if (values == null || values.isEmpty()) return;
@@ -1060,8 +1063,7 @@ public final class OpensearchIngestGenerator {
             // Check if this looks like an ISNI (4 groups of 4 digits separated by spaces)
             if (looksLikeIsni(v)) {
                 if (reference != null) {
-                    // ISNI is at column index 6 in people.csv
-                    String key = reference.findKeyByColumnValue(v, 6);
+                    String key = reference.findKeyByColumnValue(v, PeopleReferenceSheet.ISNI_COLUMN);
                     if (key != null) {
                         resolvedKey = key;
                     } else {
@@ -1079,13 +1081,24 @@ public final class OpensearchIngestGenerator {
             target.add(resolvedKey);
             if (reference != null && reference.hasAlternates(resolvedKey)) {
                 for (String alt : reference.getAlternates(resolvedKey)) {
-                    // Filter out ISNI-like values from alternates - they shouldn't be indexed as names
-                    if (alt != null && !alt.isBlank() && !looksLikeIsni(alt)) {
+                    if (isName(alt)) {
                         target.add(alt);
                     }
                 }
             }
         }
+    }
+
+    /**
+     * Whether a reference sheet alternate is a name worth indexing: not blank, not an ISNI,
+     * not the {@code -} placeholder of an empty ISNI cell, and not a bracketed editorial note.
+     */
+    private static boolean isName(String alt) {
+        if (alt == null) {
+            return false;
+        }
+        String trimmed = alt.strip();
+        return !trimmed.isEmpty() && !trimmed.equals("-") && !trimmed.startsWith("[") && !looksLikeIsni(trimmed);
     }
 
     /**

@@ -72,9 +72,11 @@ public final class AoRTranscriptionChecker {
         Path refDir = spreadsheetDir != null ? spreadsheetDir : collectionDir;
 
         // Load reference data
-        ReferenceSheet peopleRef = loadReferenceSheet(refDir.resolve(PEOPLE_CSV), PEOPLE_CSV, errors);
+        ReferenceSheet peopleRef = loadReferenceSheet(refDir.resolve(PEOPLE_CSV), PEOPLE_CSV, errors,
+                ArchiveReaders::readPeopleReferenceSheet);
         BookReferenceSheet booksRef = loadBookReferenceSheet(refDir.resolve(BOOKS_CSV), BOOKS_CSV, errors);
-        ReferenceSheet locationsRef = loadReferenceSheet(refDir.resolve(LOCATIONS_CSV), LOCATIONS_CSV, errors);
+        ReferenceSheet locationsRef = loadReferenceSheet(refDir.resolve(LOCATIONS_CSV), LOCATIONS_CSV, errors,
+                ArchiveReaders::readReferenceSheet);
 
         // Collect all annotation IDs across the corpus for internal reference validation
         Map<String, List<String>> allAnnotationIds = new HashMap<>(); // id -> list of locations
@@ -289,12 +291,18 @@ public final class AoRTranscriptionChecker {
         return dotIdx > 0 ? filename.substring(0, dotIdx) : filename;
     }
 
+    /** Reads one reference sheet file. */
+    @FunctionalInterface
+    private interface SheetReader {
+        ReferenceSheet read(Path path, List<String> errors) throws IOException;
+    }
+
     /**
-     * Loads a reference sheet (People.csv or Locations.csv), reporting an error if it cannot be loaded.
+     * Loads a reference sheet (people.csv or locations.csv), reporting an error if it cannot be loaded.
      */
-    private ReferenceSheet loadReferenceSheet(Path path, String name, List<String> errors) {
+    private ReferenceSheet loadReferenceSheet(Path path, String name, List<String> errors, SheetReader reader) {
         try {
-            ReferenceSheet sheet = ArchiveReaders.readReferenceSheet(path, errors);
+            ReferenceSheet sheet = reader.read(path, errors);
             if (sheet == null) {
                 errors.add("Reference file not found: " + name + " (looked in " + path.getParent() + ")");
             }

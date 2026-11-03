@@ -11,9 +11,19 @@
         "old_french_charmap": {
           "type": "mapping",
           "mappings": ["’=>'", "\u0092=>'", "\u009C=>oe"]
+        },
+        "underscore_to_space": {
+          "type": "mapping",
+          "mappings": ["_=> "]
         }
       },
       "analyzer": {
+        "name": {
+          "type": "custom",
+          "char_filter": ["underscore_to_space"],
+          "tokenizer": "standard",
+          "filter": ["lowercase", "asciifolding", "english_possessive_stemmer", "french_elision"]
+        },
         "latin": {
           "type": "custom",
           "char_filter": ["latin_char_normalizer"],
@@ -33,6 +43,15 @@
         }
       },
       "filter": {
+        "english_possessive_stemmer": {
+          "type": "stemmer",
+          "language": "possessive_english"
+        },
+        "french_elision": {
+          "type": "elision",
+          "articles_case": true,
+          "articles": ["l", "m", "t", "qu", "n", "s", "j", "d", "c", "jusqu", "quoiqu", "lorsqu", "puisqu"]
+        },
         "latin_stemmer": {
           "type": "stemmer_override",
           "rules_path": "analyzers/latin-stemmer-rules.txt"
@@ -119,7 +138,7 @@
           "es": { "type": "text", "analyzer": "spanish" }
         }
       },
-      "repository": { "type": "text" },
+      "repository": { "type": "text", "analyzer": "name" },
       "shelfmark": { "type": "text" },
       "date": { "type": "keyword" },
       "origin": { "type": "keyword" },

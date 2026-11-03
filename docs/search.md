@@ -80,7 +80,13 @@ with the wildcard `name.*`:
 
 **Enumerated values.** A field with `values` is matched exactly with a `term` query: on
 `name.keyword` when `has_subfields` is true (`{"term": {"mark.keyword": "dash"}}`),
-otherwise on the field itself (`{"term": {"method": "pen"}}`).
+otherwise on the field itself (`{"term": {"method": "pen"}}`, `{"term": {"hand": "Italian"}}`).
+
+**Name fields.** `people`, `books`, `locations`, `annotator`, `character` and the manifest
+`repository` have no `values` and no sub-fields: they are text fields holding names and
+titles, searched with `multi_match` or `match` on the field itself (`cicero` finds
+`Marcus Tullius Cicero`, `arsenal` finds `Bibliothèque de l'Arsenal`). The canvas fields
+also have a `.keyword` sub-field for exact lookups and aggregations.
 
 **Collections.** Filter on `collection_id`, which contains the book's own collection and
 its parent: `{"terms": {"collection_id": ["dlmm"]}}` finds `rose` and `pizan` books and
@@ -292,9 +298,12 @@ or across every language sub-field:
 
 ### Pages by annotator, with method and language counts
 
+`annotator` is a text field (`Dee` matches `John Dee`); the exact value is in
+`annotator.keyword`:
+
 ```json
 {
-  "query": { "bool": { "filter": [{ "term": { "annotator": "John Dee" } }] } },
+  "query": { "bool": { "filter": [{ "term": { "annotator.keyword": "John Dee" } }] } },
   "aggs": {
     "methods": { "terms": { "field": "method" } },
     "languages": { "terms": { "field": "marginalia_language" } }
@@ -323,12 +332,13 @@ Against `/manifest/_search`:
 
 ### Pages showing a character
 
-`char_name` is a keyword field, so it takes exact values and aggregations:
+`character` holds every variant of a name as one value (`Amans, Amant`), so search it as
+text; `character.keyword` has the exact values for aggregations:
 
 ```json
 {
-  "query": { "term": { "char_name": "Amant" } },
-  "aggs": { "characters": { "terms": { "field": "char_name", "size": 50 } } }
+  "query": { "match": { "character": "Amant" } },
+  "aggs": { "characters": { "terms": { "field": "character.keyword", "size": 50 } } }
 }
 ```
 

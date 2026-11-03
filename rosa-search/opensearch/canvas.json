@@ -16,9 +16,19 @@
         "old_french_charmap": {
           "type": "mapping",
           "mappings": ["’=>'", "\u0092=>'", "\u009C=>oe"]
+        },
+        "underscore_to_space": {
+          "type": "mapping",
+          "mappings": ["_=> "]
         }
       },
       "analyzer": {
+        "name": {
+          "type": "custom",
+          "char_filter": ["underscore_to_space"],
+          "tokenizer": "standard",
+          "filter": ["lowercase", "asciifolding", "english_possessive_stemmer", "french_elision"]
+        },
         "english_stripped": {
           "type": "custom",
           "char_filter": ["strip_brackets"],
@@ -426,16 +436,16 @@
         }
       },
 
-      "people": { "type": "keyword" },
-      "books": { "type": "keyword" },
-      "locations": { "type": "keyword" },
+      "people": { "type": "text", "analyzer": "name", "fields": { "keyword": { "type": "keyword" } } },
+      "books": { "type": "text", "analyzer": "name", "fields": { "keyword": { "type": "keyword" } } },
+      "locations": { "type": "text", "analyzer": "name", "fields": { "keyword": { "type": "keyword" } } },
+      "annotator": { "type": "text", "analyzer": "name", "fields": { "keyword": { "type": "keyword" } } },
+      "character": { "type": "text", "analyzer": "name", "fields": { "keyword": { "type": "keyword" } } },
       "method": { "type": "keyword" },
       "hand": { "type": "keyword" },
-      "annotator": { "type": "keyword" },
       "language": { "type": "keyword" },
       "marginalia_language": { "type": "keyword" },
-      "topic": { "type": "keyword" },
-      "char_name": { "type": "keyword" }
+      "topic": { "type": "keyword" }
     }
   }
 }

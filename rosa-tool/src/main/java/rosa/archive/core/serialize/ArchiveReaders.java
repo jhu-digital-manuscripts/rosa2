@@ -43,6 +43,7 @@ import rosa.archive.model.NarrativeScene;
 import rosa.archive.model.NarrativeSections;
 import rosa.archive.model.ObjectRef;
 import rosa.archive.model.Permission;
+import rosa.archive.model.PeopleReferenceSheet;
 import rosa.archive.model.ReferenceSheet;
 import rosa.archive.model.SHA1Checksum;
 import rosa.archive.model.Transcription;
@@ -330,6 +331,38 @@ public final class ArchiveReaders {
         for (String line : lines) {
             String[] row = CSV.parse(line);
             if (row.length == 0) {
+                continue;
+            }
+            if (row.length == 1) {
+                reference.addValues(row[0]);
+            } else {
+                reference.addValues(row[0], row);
+            }
+        }
+
+        return reference;
+    }
+
+    /**
+     * Reads the people reference sheet (people.csv) from a CSV file. The header row
+     * ({@code sci,Alternative name (1),...}) is skipped.
+     *
+     * @param path   the path to the CSV file
+     * @param errors list to collect error messages
+     * @return the parsed reference sheet, or null if file doesn't exist
+     * @throws IOException if reading fails
+     */
+    public static PeopleReferenceSheet readPeopleReferenceSheet(Path path, List<String> errors) throws IOException {
+        if (!Files.exists(path)) {
+            return null;
+        }
+
+        PeopleReferenceSheet reference = new PeopleReferenceSheet();
+        List<String> lines = Files.readAllLines(path, StandardCharsets.UTF_8);
+
+        for (String line : lines) {
+            String[] row = CSV.parse(line);
+            if (row.length == 0 || row[0].equalsIgnoreCase("sci")) {
                 continue;
             }
             if (row.length == 1) {

@@ -37,7 +37,7 @@ public final class JHSearchInfoGenerator {
     // people and locations are filled from AoR annotations only, so only aor offers them.
     private static final Map<String, List<String>> SEARCH_FIELDS = Map.of(
             "rose", List.of("description", "repository", "illustration",
-                    "char_name", "transcription"),
+                    "character", "transcription"),
             "pizan", List.of("description", "repository", "title",
                     "transcription"),
             "aor", List.of("marginalia", "symbol", "underline", "mark",
@@ -198,7 +198,8 @@ public final class JHSearchInfoGenerator {
             case "title" -> new FieldMetadata("Title", "Search titles of items.",
                     true, null);
 
-            // Canvas index: keyword fields (no subfields)
+            // Canvas index: name fields (text with a `name` analyzer, searched directly) and
+            // keyword code fields; neither has language sub-fields
             case "people" -> new FieldMetadata("People",
                     "Search for names of people within metadata and transcriptions.",
                     false, null);
@@ -219,11 +220,11 @@ public final class JHSearchInfoGenerator {
                     false, methodValues());
             case "hand" -> new FieldMetadata("Hand",
                     "The hand in which an annotation was written.",
-                    false, null);
+                    false, handValues());
             case "annotator" -> new FieldMetadata("Annotator",
                     "Author of annotations.",
                     false, null);
-            case "char_name" -> new FieldMetadata("Character Names",
+            case "character" -> new FieldMetadata("Character",
                     "Search names of characters in the Roman de la Rose.",
                     false, null);
 
@@ -274,6 +275,15 @@ public final class JHSearchInfoGenerator {
         values.put("pencil", "Pencil");
         values.put("scoring", "Scoring");
         values.put("typewriter", "Typewriter");
+        return values;
+    }
+
+    // The hand attribute values used in the AoR transcriptions
+    private static Map<String, String> handValues() {
+        Map<String, String> values = new LinkedHashMap<>();
+        values.put("Italian", "Italian");
+        values.put("English_secretary", "English secretary");
+        values.put("typescript", "Typescript");
         return values;
     }
 

@@ -205,7 +205,7 @@ public final class FileSystemArchiveStore implements ArchiveStore {
 
         // AoR reference sheets
         collection.setPeopleRef(
-                ArchiveReaders.readReferenceSheet(collectionDir.resolve(PEOPLE), errors));
+                ArchiveReaders.readPeopleReferenceSheet(collectionDir.resolve(PEOPLE), errors));
         collection.setLocationsRef(
                 ArchiveReaders.readReferenceSheet(collectionDir.resolve(LOCATIONS), errors));
         collection.setBooksRef(
