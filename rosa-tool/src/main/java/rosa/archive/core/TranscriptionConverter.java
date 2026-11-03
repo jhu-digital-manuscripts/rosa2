@@ -244,15 +244,22 @@ public final class TranscriptionConverter {
     // ==================== Public API ====================
 
     /**
-     * Converts per-page text transcription files into a single TEI P5 XML file.
-     * Uses Latin1 (ISO-8859-1) as the input encoding.
+     * The encoding of the archive's per-page text files. They were written on Windows, and
+     * the few bytes in 0x80–0x9F are typographic apostrophes, quotes, the ellipsis, {@code œ}
+     * and {@code Ÿ}, which ISO-8859-1 would turn into control characters.
+     */
+    public static final Charset DEFAULT_INPUT_CHARSET = Charset.forName("windows-1252");
+
+    /**
+     * Converts per-page text transcription files into a single TEI P5 XML file, reading
+     * them as {@link #DEFAULT_INPUT_CHARSET}.
      *
      * @param inputFiles sorted list of per-page text transcription file paths
      * @param outputFile path for the generated TEI XML output
      * @throws IOException if reading input or writing output fails
      */
     public void convert(List<Path> inputFiles, Path outputFile) throws IOException {
-        convert(inputFiles, outputFile, Charset.forName("Latin1"));
+        convert(inputFiles, outputFile, DEFAULT_INPUT_CHARSET);
     }
 
     /**

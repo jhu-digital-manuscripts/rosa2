@@ -39,6 +39,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.UncheckedIOException;
+import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
@@ -827,8 +828,8 @@ public final class FileSystemArchiveStore implements ArchiveStore {
     }
 
     @Override
-    public void generateTEITranscriptions(String collectionId, String bookId, boolean force, List<String> errors,
-                                          List<String> warnings) throws IOException {
+    public void generateTEITranscriptions(String collectionId, String bookId, boolean force, Charset inputCharset,
+                                          List<String> errors, List<String> warnings) throws IOException {
         Path bookDir = archivePath.resolve(collectionId).resolve(bookId);
         if (!Files.isDirectory(bookDir)) {
             throw new IOException("Book not found: " + collectionId + "/" + bookId);
@@ -850,7 +851,7 @@ public final class FileSystemArchiveStore implements ArchiveStore {
             return;
         }
         var converter = new TranscriptionConverter();
-        converter.convert(textFiles, outputFile);
+        converter.convert(textFiles, outputFile, inputCharset);
 
         warnings.addAll(converter.getWarnings());
         errors.addAll(converter.getErrors());

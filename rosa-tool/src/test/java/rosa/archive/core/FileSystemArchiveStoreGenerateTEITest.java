@@ -146,4 +146,38 @@ class FileSystemArchiveStoreGenerateTEITest {
         assertTrue(xml.contains("Maintes") || xml.contains("gens"),
                 "Expected some poetry content from Douce332");
     }
+
+    @Test
+    void generateTEI_readsTextFilesAsWindows1252ByDefault(@TempDir Path tempDir) throws Exception {
+        Path bookDir = tempDir.resolve("testcol").resolve("Book");
+        Files.createDirectories(bookDir);
+        // 0x92 0x9C 0x85 are ’ œ … in Windows-1252; ISO-8859-1 would make them control characters
+        Files.write(bookDir.resolve("Book.transcription.001r.txt"),
+                "[Book]\n[1r a]\n\nQu’il œuvre […]\nSecond line\t\t2\n\n".getBytes(Charset.forName("windows-1252")));
+
+        var store = new FileSystemArchiveStore(tempDir);
+        List<String> errors = new ArrayList<>();
+        store.generateTEITranscriptions("testcol", "Book", false, errors, new ArrayList<>());
+
+        assertTrue(errors.isEmpty(), "Errors: " + errors);
+        String xml = Files.readString(bookDir.resolve("Book.transcription.xml"));
+        assertTrue(xml.contains("Qu’il œuvre […]"), xml);
+    }
+
+    @Test
+    void generateTEI_honoursTheGivenEncoding(@TempDir Path tempDir) throws Exception {
+        Path bookDir = tempDir.resolve("testcol").resolve("Book");
+        Files.createDirectories(bookDir);
+        Files.writeString(bookDir.resolve("Book.transcription.001r.txt"),
+                "[Book]\n[1r a]\n\nQu’il œuvre\nSecond line\t\t2\n\n", java.nio.charset.StandardCharsets.UTF_8);
+
+        var store = new FileSystemArchiveStore(tempDir);
+        List<String> errors = new ArrayList<>();
+        store.generateTEITranscriptions("testcol", "Book", false, java.nio.charset.StandardCharsets.UTF_8,
+                errors, new ArrayList<>());
+
+        assertTrue(errors.isEmpty(), "Errors: " + errors);
+        String xml = Files.readString(bookDir.resolve("Book.transcription.xml"));
+        assertTrue(xml.contains("Qu’il œuvre"), xml);
+    }
 }

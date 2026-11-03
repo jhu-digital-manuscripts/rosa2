@@ -31,6 +31,21 @@ class TranscriptionConverterTest {
     }
 
     @Test
+    void readsTextFilesAsWindows1252(@TempDir Path tempDir) throws IOException {
+        // Bytes 0x92, 0x9C and 0x85 are ’ œ … in Windows-1252 and control characters in ISO-8859-1
+        Path input = tempDir.resolve("Book.transcription.001r.txt");
+        Files.write(input, "[Book]\n[001r a]\nQu’il œuvre […]\n".getBytes(Charset.forName("windows-1252")));
+        Path output = tempDir.resolve("Book.transcription.xml");
+
+        var converter = new TranscriptionConverter();
+        converter.convert(List.of(input), output);
+
+        String xml = readOutput(output);
+        assertTrue(xml.contains("Qu’il œuvre […]"), xml);
+        assertFalse(xml.contains("&#146;") || xml.contains("\u0092"), xml);
+    }
+
+    @Test
     void singlePage_producesValidTEI(@TempDir Path tempDir) throws IOException {
         Path input = writeTextFile(tempDir, "Book.transcription.001r.txt",
                 "[Book]\n[1r a]\n\nLine one\nLine two\t\t2\n\n");

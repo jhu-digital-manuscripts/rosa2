@@ -103,7 +103,7 @@ AoR transcriptions, are prefixed with the book id.
 | `<book-id>.permission_<lang>.html` | An HTML fragment with the attribution statement, read for each collection language; lines are concatenated. Becomes the manifest's `requiredStatement`. |
 | `<book-id>.imagetag.csv` | Illustration tagging, see [Illustration tagging](#illustration-tagging) |
 | `<book-id>.transcription.xml` | TEI P5 transcription with `<pb n>` page breaks and `<cb n>` column breaks. Hand-authored (Douce195, Morgan948, Walters143) or generated from the per-page text files by `generate-tei`. |
-| `<book-id>.transcription.<page>.txt` | Per-page transcription sources in a custom text format: a `[<book-id>]` line, a `[<folio> <column>]` line (e.g. `[001r a]`), then lines of verse with inline tags such as `<rubric>`, `<illustration>`, `<catchphrase>`, `<initial/>`. Converted by `generate-tei`. |
+| `<book-id>.transcription.<page>.txt` | Per-page transcription sources, Windows-1252 encoded, in a custom text format: a `[<book-id>]` line, a `[<folio> <column>]` line (e.g. `[001r a]`), then lines of verse with inline tags such as `<rubric>`, `<illustration>`, `<catchphrase>`, `<initial/>`. Converted by `generate-tei`. |
 | `<book-id>.aor.<page>.xml` | One AoR annotation transcription per annotated page, see [AoR Data Model](aor-data-model.md). Any file whose name contains `.aor.` and ends in `.xml` is one. |
 | `filemap.csv` | `old,new` file-name pairs (`#` comments allowed) written by `file-map` and applied by `rename-images` and `rename-transcriptions`. 41 books keep the map from their ingest. |
 | `<book-id>.SHA1SUM` | `sha1sum` format, one line per file in the book directory, images included. Written by `update`. |

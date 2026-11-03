@@ -4,6 +4,7 @@ import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 
 import java.io.IOException;
+import java.nio.charset.Charset;
 import java.nio.file.Path;
 import java.util.List;
 
@@ -284,10 +285,25 @@ public sealed interface ArchiveStore permits FileSystemArchiveStore {
      *
      * @param collectionId the collection containing the book
      * @param bookId       the book to process
+     * @param force        replace an existing transcription XML
+     * @param inputCharset the character encoding of the per-page text files
      * @param errors       list to collect error messages
      * @param warnings     list to collect warning messages
      * @throws IOException if the book directory cannot be read or the output file cannot be written
      */
-    void generateTEITranscriptions(String collectionId, String bookId, boolean force, List<String> errors,
-                                   List<String> warnings) throws IOException;
+    void generateTEITranscriptions(String collectionId, String bookId, boolean force, Charset inputCharset,
+                                   List<String> errors, List<String> warnings) throws IOException;
+
+    /**
+     * Generates a TEI transcription reading the text files as
+     * {@link TranscriptionConverter#DEFAULT_INPUT_CHARSET} (Windows-1252, the encoding of the
+     * archive's text files).
+     *
+     * @see #generateTEITranscriptions(String, String, boolean, Charset, List, List)
+     */
+    default void generateTEITranscriptions(String collectionId, String bookId, boolean force, List<String> errors,
+                                           List<String> warnings) throws IOException {
+        generateTEITranscriptions(collectionId, bookId, force, TranscriptionConverter.DEFAULT_INPUT_CHARSET,
+                errors, warnings);
+    }
 }

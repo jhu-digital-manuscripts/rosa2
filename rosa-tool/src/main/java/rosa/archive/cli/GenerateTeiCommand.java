@@ -5,6 +5,7 @@ import picocli.CommandLine.Mixin;
 import picocli.CommandLine.Option;
 
 import java.io.IOException;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Callable;
@@ -35,6 +36,11 @@ public final class GenerateTeiCommand implements Callable<Integer> {
     @Option(names = "--force", description = "Replace an existing transcription.xml")
     private boolean force;
 
+    @Option(names = "--encoding", defaultValue = "windows-1252",
+            description = "Character encoding of the per-page text files (default: ${DEFAULT-VALUE}). "
+                    + "The archive's text files are Windows-1252; the XML is always written as UTF-8.")
+    private String encoding;
+
     /**
      * Executes the TEI generation operation.
      *
@@ -46,12 +52,20 @@ public final class GenerateTeiCommand implements Callable<Integer> {
             return 1;
         }
 
+        Charset inputCharset;
+        try {
+            inputCharset = Charset.forName(encoding);
+        } catch (IllegalArgumentException e) {
+            System.err.println("Error: unknown character encoding: " + encoding);
+            return 1;
+        }
+
         try {
             var store = archive.openStore();
             List<String> errors = new ArrayList<>();
             List<String> warnings = new ArrayList<>();
 
-            store.generateTEITranscriptions(collectionId, bookId, force, errors, warnings);
+            store.generateTEITranscriptions(collectionId, bookId, force, inputCharset, errors, warnings);
 
             warnings.forEach(w -> System.out.println("Warning: " + w));
             errors.forEach(System.err::println);

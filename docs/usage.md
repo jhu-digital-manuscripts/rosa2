@@ -279,7 +279,7 @@ transcription to be labelled.
 Builds a book's TEI transcription from per-page text files.
 
 ```
-java -jar rosa-tool.jar generate-tei --archive <dir> --collection <id> --book <id> [--force]
+java -jar rosa-tool.jar generate-tei --archive <dir> --collection <id> --book <id> [--force] [--encoding <charset>]
 ```
 
 | Option | Required | Description |
@@ -288,12 +288,15 @@ java -jar rosa-tool.jar generate-tei --archive <dir> --collection <id> --book <i
 | `--collection` | Yes | Collection ID |
 | `--book` | Yes | Book ID |
 | `--force` | No | Replace an existing `<book>.transcription.xml` |
+| `--encoding` | No | Character encoding of the per-page text files. Default `windows-1252`, which is what the archive's text files are. |
 
 Combines every `<book>.transcription.<page>.txt` into `<book>.transcription.xml`. Without
 `--force` an existing transcription is never replaced (error, exit 1); a book without text
 files is an error too. Conversion warnings are printed on stdout. In the current archive
 only `CoxMacro`, `Douce332`, `LudwigXV7` and `SeldenSupra57` have text sources, and all four
-already have the XML.
+already have the XML. The text files are read as Windows-1252 unless `--encoding` says
+otherwise (they contain `œ`, `Ÿ` and `…`, which ISO-8859-1 would turn into control
+characters); the XML is always written as UTF-8.
 
 ## Ingest helpers
 
