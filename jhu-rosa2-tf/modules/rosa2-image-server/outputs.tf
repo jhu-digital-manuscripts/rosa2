@@ -70,11 +70,6 @@ output "cache_bucket" {
   value       = aws_s3_bucket.cache.bucket
 }
 
-output "cache_prefix" {
-  description = "Key prefix of this environment's derivatives in cache_bucket."
-  value       = local.cache_prefix
-}
-
 output "alb_dns_name" {
   description = "Internal ALB hostname. Not reachable from outside the VPC."
   value       = aws_lb.this.dns_name

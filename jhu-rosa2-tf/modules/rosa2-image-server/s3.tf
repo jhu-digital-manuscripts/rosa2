@@ -1,8 +1,9 @@
 # ---------- Derivative cache bucket ----------
 #
-# Cantaloupe's S3Cache stores derivative images and image infos here, under
-# "<environment>/". Each environment owns its own bucket (and so its own
-# lifecycle configuration, of which S3 allows only one per bucket).
+# Cantaloupe's S3Cache stores derivative images and image infos here, at the
+# bucket root (no key prefix). Each environment owns its own bucket (and so its
+# own lifecycle configuration, of which S3 allows only one per bucket), and the
+# bucket holds nothing but cache.
 #
 # Cantaloupe's cache worker is disabled (cantaloupe.properties), so expiry is
 # done here, from the same TTL Cantaloupe is given.
@@ -43,11 +44,12 @@ resource "aws_s3_bucket_lifecycle_configuration" "cache" {
   bucket = aws_s3_bucket.cache.id
 
   rule {
-    id     = "expire-${var.environment}-derivatives"
+    id     = "expire-derivatives"
     status = "Enabled"
 
+    # Empty prefix: the whole bucket.
     filter {
-      prefix = local.cache_prefix
+      prefix = ""
     }
 
     expiration {

@@ -262,7 +262,7 @@ viewer ──HTTPS──▶ CloudFront ──VPC origin──▶ internal ALB �
 | `alb.tf` | Internal ALB, HTTP listener, target group with a `/health` check. |
 | `ecs.tf` | Log group, cluster, task definition (Cantaloupe settings as environment variables), service, CPU target-tracking auto scaling (inert while `image_server_min_tasks` equals `image_server_max_tasks`, as both tfvars set them). |
 | `iam.tf` | Execution role (pull this repository, write this log group) and task role (read source prefix, read/write cache prefix). |
-| `s3.tf` | Derivative cache bucket: private, SSE-S3, TLS only, lifecycle expiry on `<environment>/`. |
+| `s3.tf` | Derivative cache bucket: private, SSE-S3, TLS only, lifecycle expiry on the whole bucket. |
 | `ecr.tf` | Repository with immutable tags, scan on push, and a keep-last-N lifecycle. |
 | `cloudfront.tf` | VPC origin, cache/CORS policies, the two legacy functions, the distribution (with explicit 10 s caching of 5xx responses). |
 | `functions/` | The CloudFront Functions and their Node tests. `legacy-request.js` also refuses identifiers with a `.` or `..` path segment (400), which otherwise reach S3 and come back as a 500 carrying the SDK's message; the `/iiif/2/*` and `/iiif/3/*` behaviours run no function, so the same request on those paths still produces that 500. |
@@ -298,8 +298,7 @@ viewer ──HTTPS──▶ CloudFront ──VPC origin──▶ internal ALB �
   Shield in us-east-1 (`image_server_enable_origin_shield`, default on), so a
   response is fetched from Cantaloupe once rather than once per edge location.
   The S3 derivative cache is the tier behind that, and each environment has its
-  own bucket with lifecycle expiry on its
-  `<environment>/` prefix. A single `image_server_cache_ttl_days` value drives
+  own bucket, with no key prefix and lifecycle expiry on the whole bucket. A single `image_server_cache_ttl_days` value drives
   both that expiry and Cantaloupe's TTL. The cache policies forward no cookies,
   query strings or headers, which also stops `?cache=false` from bypassing the
   server-side caches.

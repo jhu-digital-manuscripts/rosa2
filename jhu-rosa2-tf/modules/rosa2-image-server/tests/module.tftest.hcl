@@ -147,8 +147,8 @@ run "derived_names_networking_and_cache" {
   }
 
   assert {
-    condition     = aws_s3_bucket_lifecycle_configuration.cache.rule[0].filter[0].prefix == "stage/"
-    error_message = "lifecycle rule must cover the environment prefix"
+    condition     = aws_s3_bucket_lifecycle_configuration.cache.rule[0].filter[0].prefix == ""
+    error_message = "lifecycle rule must cover the whole cache bucket"
   }
 
   assert {
@@ -205,7 +205,7 @@ run "cantaloupe_environment" {
       local.cantaloupe_environment.S3SOURCE_BASICLOOKUPSTRATEGY_BUCKET_NAME == "jhu-library-images" &&
       local.cantaloupe_environment.S3SOURCE_BASICLOOKUPSTRATEGY_PATH_PREFIX == "iiifstore/" &&
       local.cantaloupe_environment.S3CACHE_BUCKET_NAME == "jhu-rosa2-stage-image-cache-123456789012" &&
-      local.cantaloupe_environment.S3CACHE_OBJECT_KEY_PREFIX == "stage/" &&
+      local.cantaloupe_environment.S3CACHE_OBJECT_KEY_PREFIX == "/" &&
       local.cantaloupe_environment.CACHE_SERVER_DERIVATIVE_TTL_SECONDS == "1209600"
     )
     error_message = "source/cache settings not passed through correctly"

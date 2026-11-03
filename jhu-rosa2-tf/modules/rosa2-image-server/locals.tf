@@ -30,7 +30,6 @@ locals {
   name = "${var.name_prefix}-image-server"
 
   cache_bucket_name = var.cache_bucket_name != "" ? var.cache_bucket_name : "${var.name_prefix}-image-cache-${local.account_id}"
-  cache_prefix      = "${var.environment}/"
   cache_ttl_seconds = var.cache_ttl_days * 86400
 
   container_name = "cantaloupe"

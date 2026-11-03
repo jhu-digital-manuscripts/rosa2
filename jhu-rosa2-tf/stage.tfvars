@@ -110,7 +110,7 @@ image_server_image_tag = "5.0.8-2d2eb4d3"
 image_server_source_bucket = "jhu-library-images"
 image_server_source_prefix = "iiifstore/"
 
-# Derivative cache: own bucket (<name_prefix>-image-cache-<account>), prefix "stage/".
+# Derivative cache: own bucket (<name_prefix>-image-cache-<account>), no key prefix.
 image_server_cache_ttl_days = 14
 
 # ---------- ECS ----------

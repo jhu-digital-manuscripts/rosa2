@@ -28,13 +28,15 @@ locals {
       S3SOURCE_BASICLOOKUPSTRATEGY_PATH_PREFIX = var.source_prefix
 
 
-      # Derivative cache, this environment's bucket and prefix.
+      # Derivative cache, this environment's own bucket. Keys sit at the bucket
+      # root: S3Cache treats "/" (like "") as no prefix, and "/" overrides the
+      # local-run default "cache/" in cantaloupe.properties.
       CACHE_SERVER_DERIVATIVE_ENABLED     = "true"
       CACHE_SERVER_DERIVATIVE             = "S3Cache"
       CACHE_SERVER_DERIVATIVE_TTL_SECONDS = tostring(local.cache_ttl_seconds)
       S3CACHE_REGION                      = local.region
       S3CACHE_BUCKET_NAME                 = aws_s3_bucket.cache.bucket
-      S3CACHE_OBJECT_KEY_PREFIX           = local.cache_prefix
+      S3CACHE_OBJECT_KEY_PREFIX           = "/"
 
       # Public URL used in info.json ids and Link/Location headers.
       BASE_URI = local.public_base

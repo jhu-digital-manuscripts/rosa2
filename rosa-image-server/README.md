@@ -217,7 +217,7 @@ In AWS, [jhu-rosa2-tf](../jhu-rosa2-tf/README.md#image-server) sets these in the
 | Variable | Value |
 |----------|-------|
 | `SOURCE_STATIC`, `S3SOURCE_REGION`, `S3SOURCE_BASICLOOKUPSTRATEGY_BUCKET_NAME`, `S3SOURCE_BASICLOOKUPSTRATEGY_PATH_PREFIX` | `S3Source`, the region, `image_server_source_bucket`, `image_server_source_prefix` |
-| `CACHE_SERVER_DERIVATIVE_ENABLED`, `CACHE_SERVER_DERIVATIVE`, `S3CACHE_REGION`, `S3CACHE_BUCKET_NAME`, `S3CACHE_OBJECT_KEY_PREFIX` | `true`, `S3Cache`, the region, the environment's cache bucket, `<environment>/` |
+| `CACHE_SERVER_DERIVATIVE_ENABLED`, `CACHE_SERVER_DERIVATIVE`, `S3CACHE_REGION`, `S3CACHE_BUCKET_NAME`, `S3CACHE_OBJECT_KEY_PREFIX` | `true`, `S3Cache`, the region, the environment's cache bucket, `/` (no prefix) |
 | `CACHE_SERVER_DERIVATIVE_TTL_SECONDS` | `image_server_cache_ttl_days` × 86400; the same value sets the bucket's lifecycle expiry |
 | `BASE_URI` | `https://<first domain alias, or the CloudFront hostname>` |
 | `HTTP_MAX_THREADS`, `HTTP_ACCEPT_QUEUE_LIMIT`, `LOG_APPLICATION_LEVEL`, `JAVA_OPTS` | from the matching `image_server_*` variables |
@@ -239,7 +239,7 @@ Edit the file and rebuild the image for changes that apply to every environment;
 **Caching.** There are three tiers:
 
 1. Browsers and CloudFront. Successful responses carry `Cache-Control: max-age=2592000, s-maxage=31536000, public, no-transform`, so browsers keep them for 30 days and CloudFront for up to a year. Error responses are `no-cache`.
-2. Cantaloupe's derivative cache, `S3Cache`, in a per-environment bucket under `<environment>/`. ECS task storage is ephemeral and unshared, and CloudFront's edge caches fill independently, so this shared tier keeps edge misses off the decoder.
+2. Cantaloupe's derivative cache, `S3Cache`, in a per-environment bucket, at the bucket root. ECS task storage is ephemeral and unshared, and CloudFront's edge caches fill independently, so this shared tier keeps edge misses off the decoder.
 3. The heap-based info cache, as a level-1 cache in each task.
 
 `resolve_first = false` skips an S3 existence check on every cache hit, which is safe because source objects are static. If an object is replaced without its identifier changing, purge its derivatives from the cache bucket and create a CloudFront invalidation.

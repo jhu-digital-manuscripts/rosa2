@@ -5,9 +5,9 @@
 #   execution  used by the ECS agent: pull this environment's image and write to
 #              its log group. Nothing else.
 #   task       used by Cantaloupe: read the source images, read/write/delete
-#              under this environment's prefix in its own cache bucket.
+#              in this environment's own cache bucket.
 #
-# s3:ListBucket is granted (limited by prefix) so that a missing object is
+# s3:ListBucket is granted (limited by prefix on the source bucket) so that a missing object is
 # reported by S3 as 404 rather than 403, which Cantaloupe turns into a 404
 # for the client instead of a 500.
 
@@ -106,19 +106,13 @@ data "aws_iam_policy_document" "task" {
       "s3:PutObject",
       "s3:DeleteObject",
     ]
-    resources = ["${aws_s3_bucket.cache.arn}/${local.cache_prefix}*"]
+    resources = ["${aws_s3_bucket.cache.arn}/*"]
   }
 
   statement {
     sid       = "ListCache"
     actions   = ["s3:ListBucket"]
     resources = [aws_s3_bucket.cache.arn]
-
-    condition {
-      test     = "StringLike"
-      variable = "s3:prefix"
-      values   = ["${local.cache_prefix}*"]
-    }
   }
 }
 

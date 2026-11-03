@@ -218,11 +218,6 @@ output "image_server_cache_bucket" {
   value       = module.rosa2_image_server.cache_bucket
 }
 
-output "image_server_cache_prefix" {
-  description = "Key prefix of this environment's derivatives in the cache bucket."
-  value       = module.rosa2_image_server.cache_prefix
-}
-
 output "image_server_waf_web_acl_arn" {
   description = "WAF web ACL attached to the image server distribution, empty when disabled."
   value       = module.rosa2_image_server.waf_web_acl_arn
