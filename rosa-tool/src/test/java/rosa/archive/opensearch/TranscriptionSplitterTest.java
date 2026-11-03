@@ -3,6 +3,7 @@ package rosa.archive.opensearch;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
 import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -64,6 +65,17 @@ class TranscriptionSplitterTest {
         assertTrue(fragment.contains("resp=\"A &amp; B &lt;ed&gt;\""), fragment);
 
         TranscriptionXmlExtractor.Result result = TranscriptionXmlExtractor.extract("test", fragment);
-        assertTrue(result.note().contains("Note text"), result.note());
+        assertEquals(List.of("Note text"), result.notes());
+    }
+
+    @Test
+    @DisplayName("A line break inside text stays a word break when the page is closed by the next <pb>")
+    void lineBreakInsideTextIsAWordBreak() {
+        Map<String, String> pages = TranscriptionSplitter.split(tei(
+                "<pb n=\"5r\"/><l><hi rend=\"rubric\">Cy est le Rommant de la rose\nou tout l'art d'amours est enclose</hi></l>"
+                        + "<pb n=\"5v\"/><l>Next page</l>"));
+
+        TranscriptionXmlExtractor.Result result = TranscriptionXmlExtractor.extract("test", pages.get("005r"));
+        assertEquals(List.of("Cy est le Rommant de la rose ou tout l'art d'amours est enclose"), result.rubrics());
     }
 }

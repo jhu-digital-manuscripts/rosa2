@@ -7,6 +7,10 @@
         "latin_char_normalizer": {
           "type": "mapping",
           "mappings_path": "analyzers/latin-charmap.txt"
+        },
+        "old_french_charmap": {
+          "type": "mapping",
+          "mappings": ["’=>'", "\u0092=>'", "\u009C=>oe"]
         }
       },
       "analyzer": {
@@ -18,8 +22,14 @@
         },
         "old_french": {
           "type": "custom",
+          "char_filter": ["old_french_charmap"],
           "tokenizer": "standard",
-          "filter": ["lowercase", "french_stemmer", "asciifolding"]
+          "filter": [
+            "lowercase", "asciifolding", "old_french_elision",
+            "old_french_u_to_v", "old_french_j_to_i", "old_french_y_to_i", "old_french_ou_to_o",
+            "old_french_ier_to_er", "old_french_z_to_s",
+            "french_stemmer"
+          ]
         }
       },
       "filter": {
@@ -40,6 +50,45 @@
         "french_stemmer": {
           "type": "stemmer",
           "language": "light_french"
+        },
+        "old_french_elision": {
+          "type": "elision",
+          "articles_case": true,
+          "articles": [
+            "l", "m", "t", "n", "s", "j", "i", "g", "d", "c", "q", "k", "y",
+            "qu", "jusqu", "iusqu", "puisqu", "quanqu", "desqu", "lorsqu", "quoiqu",
+            "entr", "encontr", "contr"
+          ]
+        },
+        "old_french_u_to_v": {
+          "type": "pattern_replace",
+          "pattern": "(?<=^|[aeiouy])u(?=[aeiouy])",
+          "replacement": "v"
+        },
+        "old_french_j_to_i": {
+          "type": "pattern_replace",
+          "pattern": "j",
+          "replacement": "i"
+        },
+        "old_french_y_to_i": {
+          "type": "pattern_replace",
+          "pattern": "y",
+          "replacement": "i"
+        },
+        "old_french_ou_to_o": {
+          "type": "pattern_replace",
+          "pattern": "ou",
+          "replacement": "o"
+        },
+        "old_french_ier_to_er": {
+          "type": "pattern_replace",
+          "pattern": "(?<=.{2}[^rt])i(e[rz]s?|ees?)$",
+          "replacement": "$1"
+        },
+        "old_french_z_to_s": {
+          "type": "pattern_replace",
+          "pattern": "z$",
+          "replacement": "s"
         }
       }
     }

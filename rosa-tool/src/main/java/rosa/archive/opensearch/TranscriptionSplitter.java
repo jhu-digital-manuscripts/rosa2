@@ -119,7 +119,8 @@ final class TranscriptionSplitter {
                             currentFragment.append("</lg>");
                         }
                         currentFragment.append("</div>");
-                        pageMap.put(currentPage, currentFragment.toString().replaceAll("\n", ""));
+                        // Line breaks inside text (Morgan948 rubrics span lines) must stay word breaks
+                        pageMap.put(currentPage, currentFragment.toString().replace('\n', ' '));
                     }
                     // Start new fragment
                     String pageAttr = attributes.getValue("n");

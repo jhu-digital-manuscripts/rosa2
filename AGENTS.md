@@ -37,7 +37,7 @@ rosa2/
 │       └── test/               setup.js, mocks.js
 ├── rosa-search/
 │   ├── opensearch/       Index definitions (manifest.json, canvas.json), Latin analyzer dictionaries
-│   │                     (latin-stemmer-rules.txt, latin-charmap.txt) and LATIN-ANALYZER.md
+│   │                     (latin-stemmer-rules.txt, latin-charmap.txt), LATIN-ANALYZER.md, OLD-FRENCH-ANALYZER.md
 │   ├── lambda/           search_proxy/ and admin/ (plain Python, no deps), tests/
 │   └── init-opensearch.sh   Drops/creates the AWS indexes, ingests, verifies counts (--help; --jar)
 ├── jhu-rosa2-tf/         OpenTofu: Opensearch, Lambdas, HTTP API (rosa2-search) and image server (rosa2-image-server), prod/stage

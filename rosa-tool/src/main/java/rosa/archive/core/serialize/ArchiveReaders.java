@@ -405,14 +405,10 @@ public final class ArchiveReaders {
             return null;
         }
 
-        List<String> lines = Files.readAllLines(path, StandardCharsets.UTF_8);
-        var content = new StringBuilder();
-        for (String line : lines) {
-            content.append(line);
-        }
-
+        // Keep the line breaks: text runs across lines inside <hi> and <l> (Morgan948 rubrics),
+        // and joining the lines without a separator glues words together ("roseou").
         Transcription transcription = new Transcription();
-        transcription.setXML(content.toString());
+        transcription.setXML(Files.readString(path, StandardCharsets.UTF_8));
         return transcription;
     }
 

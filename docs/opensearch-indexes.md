@@ -106,7 +106,7 @@ the text:
 |----------|-----------|-----------------|---------------------------|
 | English | `.en` | `english_stripped` | built-in `english` |
 | French | `.fr` | `french_stripped` | built-in `french` |
-| Old French | `.ofr` | `old_french` (French light stemmer + ASCII folding) | `old_french` |
+| Old French | `.ofr` | `old_french` (see below) | `old_french` |
 | Latin | `.la` | `latin` (see below) | `latin` |
 | Italian | `.it` | `italian_stripped` | built-in `italian` |
 | Greek | `.el` | `greek_stripped` | built-in `greek` |
@@ -123,6 +123,16 @@ j/i folding again on the lemma, so that a query for a dictionary headword such a
 `divido` and an inflected form in the text such as `dividunt` meet at `diuido`. Its
 design, dictionaries and limits are described in
 [rosa-search/opensearch/LATIN-ANALYZER.md](../rosa-search/opensearch/LATIN-ANALYZER.md).
+
+The Old French analyzer is built for the spelling of the Roman de la Rose transcriptions
+rather than for modern French: it strips the elided pronouns and articles (`l'`, `qu'`,
+`n'`, `s'`, `d'`, `m'`, `c'`, `j'`, `t'`, `jusqu'`, …) so that `l'avision` is found by
+`avision`, folds the editorial diacritics (`eüst`, `oïr`, `aprés`), normalizes the
+medieval allographs and spelling variants to one form (`u`/`v` by position, `j` and `y`
+to `i`, `ou` to `o`, final `z` to `s`, `-ier` to `-er` after a palatal) and then applies
+the French light stemmer. It uses no stop words, so function words such as `li` and
+`ne` remain searchable in phrases. Design, evidence and limits are described in
+[rosa-search/opensearch/OLD-FRENCH-ANALYZER.md](../rosa-search/opensearch/OLD-FRENCH-ANALYZER.md).
 
 Text whose language is not in the table is routed to `.en`. In the data this concerns
 `iw` (Hebrew) and `cy` (Welsh); the language codes themselves are still indexed in the
@@ -298,7 +308,7 @@ where marked, a `keyword` sub-field. One array element per annotation text.
 | `calculation` | yes | Calculation types in `.keyword`; data and content always in `.en` |
 | `graph` | yes | Graph types in `.keyword`; graph notes in their own language, node text and content in the page language, graph translations in `.en` |
 | `table` | yes | Table types in `.keyword`; the table's text elements in their own language; column headers, cells and aggregated info in `.en` |
-| `transcription` | no | The TEI transcription of the page: poetry, rubrics and catchphrases in `.ofr`, illustration descriptions and notes in `.en` |
+| `transcription` | no | The TEI transcription of the page. The manuscript text is Old French, in `.ofr`: the verse of the page as one entry (line numbers, Lecoy numbers, gaps and scribal punctuation notes dropped; initials, expansions, additions and deletions kept inline), then one entry per rubric (`hi rend="rubric"`) and per catchword (`fw`). The transcriber's text is English, in `.en`: one entry per miniature (`figure`: its `head` and `note type="character"` names) and one per editorial note (`note` of any other type, even when it quotes an Old French reading) |
 | `illustration` | no | Illustration tagging of the page (resolved titles, every character name variant, textual elements, costume, objects, landscape, architecture, other) and the text of the collection's `annos.jsonld` commentary on the page, all in `.en` |
 | `translation` | no | Translations of drawings and tables, in `.en` (marginalia translations are in `marginalia.en`, graph translations in `graph.en`) |
 | `anchor_text` | no | Text of the printed book that an annotation refers to: the anchor text of marginal notes, drawings, tables, graph nodes and graph notes |

@@ -924,34 +924,21 @@ public final class OpensearchIngestGenerator {
 
     // ========== Transcription ==========
 
+    /**
+     * Indexes the TEI transcription of a page into {@code transcription.ofr} (the verse,
+     * rubrics and catchwords of the manuscript) and {@code transcription.en} (the
+     * transcriber's miniature descriptions and editorial notes). Each rubric, catchword,
+     * miniature and note is its own array element, so a phrase query cannot match across
+     * two of them and a highlight fragment stays within one.
+     */
     private void indexTranscription(String name, ObjectNode doc, String content) {
         TranscriptionXmlExtractor.Result extracted = TranscriptionXmlExtractor.extract(name, content);
 
-        // Poetry, rubric, catchphrase → Old French
-        StringBuilder ofrText = new StringBuilder();
-        if (!extracted.poetry().isBlank()) {
-            ofrText.append(extracted.poetry()).append(" ");
+        for (String text : extracted.oldFrench()) {
+            LanguageFieldRouter.routeField(doc, "transcription", "ofr", text);
         }
-        if (!extracted.rubric().isBlank()) {
-            ofrText.append(extracted.rubric()).append(" ");
-        }
-        if (!extracted.catchphrase().isBlank()) {
-            ofrText.append(extracted.catchphrase()).append(" ");
-        }
-        if (!ofrText.isEmpty()) {
-            LanguageFieldRouter.routeField(doc, "transcription", "ofr", ofrText.toString().trim());
-        }
-
-        // Illustration, notes → English
-        StringBuilder enText = new StringBuilder();
-        if (!extracted.illustration().isBlank()) {
-            enText.append(extracted.illustration()).append(" ");
-        }
-        if (!extracted.note().isBlank()) {
-            enText.append(extracted.note()).append(" ");
-        }
-        if (!enText.isEmpty()) {
-            LanguageFieldRouter.routeField(doc, "transcription", "en", enText.toString().trim());
+        for (String text : extracted.english()) {
+            LanguageFieldRouter.routeField(doc, "transcription", "en", text);
         }
     }
 

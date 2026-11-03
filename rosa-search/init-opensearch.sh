@@ -626,6 +626,24 @@ verify() {
             log_warn "    could not run the analyzer check for '$word'"
         fi
     done
+
+    # The Old French analyzer has no external files, so a stale definition is the
+    # only risk: an index created from an old canvas.json keeps the apostrophe in
+    # "l'avision" and leaves the u/v spelling "auision" apart.
+    log_info "  checking the Old French analyzer..."
+    for word in "l'avision" auision Avision; do
+        if result=$(invoke_admin "$(jq -nc --arg t "$word" '{action:"analyze", index:"canvas", analyzer:"old_french", text:$t}')"); then
+            tokens=$(jq -r '.result.tokens | join(" ")' <<< "$result")
+            if [[ "$tokens" == "avision" ]]; then
+                log_info "    old_french analyzer OK ('$word' -> '$tokens')"
+            else
+                log_warn "    old_french analyzer returned '$tokens' for '$word', expected 'avision'."
+                log_warn "    The index was created from an old canvas.json. Rerun without --skip-create."
+            fi
+        else
+            log_warn "    could not run the analyzer check for '$word'"
+        fi
+    done
 }
 
 print_summary() {

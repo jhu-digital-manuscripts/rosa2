@@ -44,6 +44,9 @@ import rosa.archive.model.aor.Underline;
 import rosa.archive.model.aor.XRef;
 import rosa.archive.model.aor.Location;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -999,6 +1002,57 @@ class OpensearchIngestGeneratorTest {
             ObjectNode doc = generator.generateCanvasDocument(collection, book, image, 0, transcriptionPages);
             assertEquals("Li jolis temps de mai", routedText(doc, "transcription.ofr"));
             assertFalse(doc.has("transcription.en"), "line numbers must not be indexed as English text");
+        }
+
+        @Test
+        void routesVerseAndNotesToTheirLanguages() {
+            String xmlFragment = "<div type=\"ms\">"
+                    + "<figure type=\"miniature\"><head>Lover sleeping</head><note type=\"character\">Lover</note></figure>"
+                    + "<l><hi rend=\"rubric\">Ci commence le Romanz de la Rose</hi></l>"
+                    + "<lg type=\"couplet\">"
+                    + "<l n=\"1\"><hi rend=\"init\">M</hi>aintes gens dient que en songes</l>"
+                    + "<l n=\"2\">N'a se fables<note type=\"critical\">\"flabes\" (Lecoy)</note> non et mensonges</l>"
+                    + "</lg>"
+                    + "<fw type=\"catch\">Mes l'en puet</fw>"
+                    + "</div>";
+
+            ObjectNode doc = generator.generateCanvasDocument(collection, book, image, 0, Map.of("001r", xmlFragment));
+
+            assertEquals(List.of(
+                    "Maintes gens dient que en songes N'a se fables non et mensonges",
+                    "Ci commence le Romanz de la Rose",
+                    "Mes l'en puet"), jsonArrayToList(doc.get("transcription.ofr")));
+            assertEquals(List.of("Lover sleeping Lover", "\"flabes\" (Lecoy)"),
+                    jsonArrayToList(doc.get("transcription.en")));
+        }
+
+        @Test
+        void indexesTheFixtureTranscriptionCompletely() throws IOException {
+            String xml;
+            try (InputStream in = getClass().getResourceAsStream("/archive/rose/Douce195/Douce195.transcription.xml")) {
+                assertNotNull(in, "fixture transcription");
+                xml = new String(in.readAllBytes(), StandardCharsets.UTF_8);
+            }
+            Map<String, String> transcriptionPages = TranscriptionSplitter.split(xml);
+
+            ObjectNode doc = generator.generateCanvasDocument(collection, book, image, 0, transcriptionPages);
+
+            List<String> ofr = jsonArrayToList(doc.get("transcription.ofr"));
+            List<String> en = jsonArrayToList(doc.get("transcription.en"));
+
+            // The verse of the page, with the text after initials and notes intact
+            assertTrue(ofr.get(0).startsWith("Maintes gens dient qu'en songes N'a se fables nonet mensonges "
+                    + "Mais on en peut de telz songer Qui ne sont myë mensonger"), ofr.get(0));
+            assertTrue(ofr.get(0).contains("Ainçoys descript l'advision Qu'il advint au roy Cypion"), ofr.get(0));
+            assertTrue(ofr.get(0).contains("Car li plusieurs songent de nuys"), ofr.get(0));
+            assertFalse(ofr.get(0).contains("Lecoy"), "notes must not be indexed as verse");
+            assertTrue(ofr.contains("Cy commence le Rommant de la rose"), "rubric is its own entry");
+
+            assertEquals("Miniature spanning both columns. Left: Guillaume de Lorris. Right: Lover sleeping.", en.get(0));
+            assertTrue(en.contains("\"p. tex songes songier\" (Lecoy)"), en.toString());
+            for (String s : en) {
+                assertFalse(s.contains("Maintes gens"), "verse must not be indexed as English: " + s);
+            }
         }
     }
 

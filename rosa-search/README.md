@@ -13,6 +13,7 @@ pieces for rosa2 search.
 | `opensearch/latin-charmap.txt` | Character normalization: v/u, j/i, ligatures, long s. |
 | `opensearch/generate_latin_stemmer_rules.py` | Regenerates the rules file from the lemma table (not in the repo, see below). |
 | `opensearch/LATIN-ANALYZER.md` | How the Latin analyzers work and how to deploy them. |
+| `opensearch/OLD-FRENCH-ANALYZER.md` | How the `old_french` analyzer normalizes the Roman de la Rose spelling, with the evidence behind each step. |
 | `lambda/search_proxy/` | Validates and SigV4-signs browser queries. |
 | `lambda/admin/` | Creates indexes and ingests bulk data from inside the VPC. |
 | `lambda/tests/` | Unit tests for both functions. |
