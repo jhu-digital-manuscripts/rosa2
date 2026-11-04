@@ -3,7 +3,7 @@
     <page filename="RCPD1266.127r.tif" pagination="239" reader="John Dee"/> 
     <annotation>
         
-        <marginalia anchor_text="de auro Schaba" hand="Italian" id="RCPD126.6:263:m0001">
+        <marginalia anchor_text="de auro Schaba" hand="Italian" id="RCPD1266:263:m0001">
             <language ident="LA">
                 <position book_orientation="0" place="head">
                     <marginalia_text>Quid si fuerit de auro Ophir prope Schaba in Oreente?</marginalia_text> 
@@ -63,7 +63,7 @@
         <underline language="LA" method="pen" text="Sabaeos &amp; Schabaeos" type="straight"/>
         <underline language="LA" method="pen" text="Psalmus 72" type="straight"/>
         <underline language="LA" method="pen" text="reges Schaba &amp; Saba" type="straight"/>
-        <underline id="RCPD126.6:263:u0001" language="LA" method="pen" text="de auro Arabiae" type="straight"/>
+        <underline id="RCPD1266:263:u0001" language="LA" method="pen" text="de auro Arabiae" type="straight"/>
         <underline language="LA" method="pen" text="mizzahab Scheba" type="straight"/>
         <!-- FSF: I think you jumped de auro Schaba -->
         <underline language="LA" method="pen" text="extremas mundi oras" type="straight"/>
@@ -90,9 +90,9 @@
         <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
         
         <physical_link>
-            <marginal_annotation idref="RCPD126.6:263:m0001"/>
-            <marginal_annotation idref="RCPD126.6:263:u0001"/>
-            <relation from="RCPD126.6:263:m0001" to="RCPD126.6:263:u0001" type="directed"/>
+            <marginal_annotation idref="RCPD1266:263:m0001"/>
+            <marginal_annotation idref="RCPD1266:263:u0001"/>
+            <relation from="RCPD1266:263:m0001" to="RCPD1266:263:u0001" type="directed"/>
         </physical_link>
         
     </annotation>

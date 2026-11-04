@@ -13,7 +13,7 @@
             <translation>Iturea.</translation>
         </marginalia>
         
-        <marginalia anchor_text="Hieronymum" hand="Italian" id="RCPD126.6:268:m0001">
+        <marginalia anchor_text="Hieronymum" hand="Italian" id="RCPD1266:268:m0001">
             <language ident="LA">
                 <position book_orientation="0" place="tail">
                     <marginalia_text>Hieronymus.</marginalia_text>
@@ -26,14 +26,14 @@
         <underline language="LA" method="pen" text="is Arado insulae" type="straight"/>
         <underline language="LA" method="pen" text="Emath, Ituraeam, ídque bona" type="straight"/>
         <underline language="LA" method="pen" text="spectat Ituraea" type="straight"/>
-        <underline id="RCPD126.6:268:u0001" language="LA" method="pen" text="&amp; Hieronymum" type="straight"/>
+        <underline id="RCPD1266:268:u0001" language="LA" method="pen" text="&amp; Hieronymum" type="straight"/>
         <underline language="LA" method="pen" text="proptereà" type="triple"/>
         <underline language="LA" method="pen" text="esse in terra" type="double"/>
         
         <physical_link>
-            <marginal_annotation idref="RCPD126.6:268:m0001"/>
-            <marginal_annotation idref="RCPD126.6:268:u0001"/>
-            <relation from="RCPD126.6:268:m0001" to="RCPD126.6:268:u0001" type="directed"/>
+            <marginal_annotation idref="RCPD1266:268:m0001"/>
+            <marginal_annotation idref="RCPD1266:268:u0001"/>
+            <relation from="RCPD1266:268:m0001" to="RCPD1266:268:u0001" type="directed"/>
         </physical_link>
         
     </annotation>

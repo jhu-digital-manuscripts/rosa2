@@ -106,8 +106,8 @@
         <underline language="LA" method="pen" text="ordinis historicorum autoritate coarguere possumus" type="straight"/>
         <underline language="LA" method="pen" text="montem" type="straight"/>
         <underline language="LA" method="pen" text="rex Emath" type="straight"/>
-        <underline id="RCPD126.6:270:u0001" language="LA" method="pen" text="Aua" type="straight"/>
-        <underline id="RCPD126.6:270:u0002" language="LA" method="pen" text="excedunt fines Syriae" type="straight"/>
+        <underline id="RCPD1266:270:u0001" language="LA" method="pen" text="Aua" type="straight"/>
+        <underline id="RCPD1266:270:u0002" language="LA" method="pen" text="excedunt fines Syriae" type="straight"/>
         <underline language="LA" method="pen" text="Dionysij Halicarnassaei" type="straight"/>
         <underline language="LA" method="pen" text="de Assyrio imperio" type="straight"/>
         <underline language="LA" method="pen" text="retro ad fabulosa vsque pertingens" type="straight"/>
@@ -120,9 +120,9 @@
         
         
         <physical_link>
-            <marginal_annotation idref="RCPD126.6:270:u0001"/> 
-            <marginal_annotation idref="RCPD126.6:270:u0002"/>
-            <relation from="RCPD126.6:270:u0001" to="RCPD126.6:270:u0001" type="undirected"/>
+            <marginal_annotation idref="RCPD1266:270:u0001"/> 
+            <marginal_annotation idref="RCPD1266:270:u0002"/>
+            <relation from="RCPD1266:270:u0001" to="RCPD1266:270:u0001" type="undirected"/>
         </physical_link>
         
     </annotation>

@@ -45,7 +45,7 @@
             <translation>Sabaeans. People of Taxila.</translation>
         </marginalia>
         
-        <marginalia anchor_text="videtur longius" hand="Italian" id="RCPD126.6:272:m0001">
+        <marginalia anchor_text="videtur longius" hand="Italian" id="RCPD1266:272:m0001">
             <language ident="EN">
                 <position book_orientation="0" place="tail">
                     <marginalia_text>O</marginalia_text>            <!-- DO: Not sure what this is... --> <!--JG: No clue either-->
@@ -85,7 +85,7 @@
         <underline language="LA" method="pen" text="videtur Saba Arahami" type="straight"/>
         <underline language="LA" method="pen" text="dicitur emissus ab Abrahamo ad" type="straight"/>
         <underline language="LA" method="pen" text="plagam Orie[n]tlem" type="double"/>
-        <underline id="RCPD126.6:272:u0001" language="LA" method="pen" text="videtur longius" type="double"/>
+        <underline id="RCPD1266:272:u0001" language="LA" method="pen" text="videtur longius" type="double"/>
         <underline language="LA" method="pen" text="Sabaeos Indicos" type="double"/>
         <underline language="LA" method="pen" text="India Sabaei" type="double"/>
         <underline language="LA" method="pen" text="Sabaei &amp; Taxili viri" type="straight"/>
@@ -94,9 +94,9 @@
         <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
         
         <physical_link>
-            <marginal_annotation idref="RCPD126.6:272:m0001"/>  
-            <marginal_annotation idref="RCPD126.6:272:u0001"/>
-            <relation from="RCPD126.6:272:m0001" to="RCPD126.6:272:u0001" type="directed"/>
+            <marginal_annotation idref="RCPD1266:272:m0001"/>  
+            <marginal_annotation idref="RCPD1266:272:u0001"/>
+            <relation from="RCPD1266:272:m0001" to="RCPD1266:272:u0001" type="directed"/>
         </physical_link>
           
     </annotation>

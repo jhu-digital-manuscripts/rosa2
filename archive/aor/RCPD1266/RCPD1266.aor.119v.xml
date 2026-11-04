@@ -35,7 +35,7 @@
             <translation>Gomer. The Northern parts.</translation>
         </marginalia>
         
-        <marginalia anchor_text="Gomer; latera Aquilonis" hand="Italian" id="RCPD126.6:248:m0001">
+        <marginalia anchor_text="Gomer; latera Aquilonis" hand="Italian" id="RCPD1266:248:m0001">
             <language ident="LA">
                 <position book_orientation="0" place="tail">
                     <marginalia_text>Gomer. Latera Aq[ui]lonis</marginalia_text>
@@ -55,7 +55,7 @@
         <underline language="LA" method="pen" text="Phrygiae partem maiorem occuparunt" type="straight"/>
         <underline language="LA" method="pen" text="stultè habetur" type="straight"/>
         <underline language="LA" method="pen" text="Gomer" type="straight"/>
-        <underline id="RCPD126.6:248:u0001" language="LA" method="pen" text="latera Aquilonis, &amp; totu[m] robur eius, populíq[ue]" type="straight"/>
+        <underline id="RCPD1266:248:u0001" language="LA" method="pen" text="latera Aquilonis, &amp; totu[m] robur eius, populíq[ue]" type="straight"/>
         
         <mark method="pen" name="plus_sign" place="left_margin"/>
         <mark method="pen" name="vertical_bar" place="left_margin"/>
@@ -65,10 +65,10 @@
         
         <physical_link>
             
-            <marginal_annotation idref="RCPD126.6:248:m0001"/>
-            <marginal_annotation idref="RCPD126.6:248:u0001"/>
+            <marginal_annotation idref="RCPD1266:248:m0001"/>
+            <marginal_annotation idref="RCPD1266:248:u0001"/>
             
-            <relation from="RCPD126.6:248:m0001" to="RCPD126.6:248:u0001" type="directed"/>
+            <relation from="RCPD1266:248:m0001" to="RCPD1266:248:u0001" type="directed"/>
                    
         </physical_link>
 
