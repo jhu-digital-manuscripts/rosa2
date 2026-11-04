@@ -148,13 +148,17 @@ export function SearchResults({ onRetry }) {
     });
   };
 
+  // From md up the results sit beside the sidebar and the list scrolls on its own.
+  // Below md they sit below it at their full height and the whole view scrolls.
   return (
     <Box
+      data-search-results
       sx={{
-        flex: 1,
+        flex: { xs: 'none', md: 1 },
+        minWidth: 0,
         display: 'flex',
         flexDirection: 'column',
-        overflow: 'hidden',
+        overflow: { xs: 'visible', md: 'hidden' },
       }}
     >
       {/* Header */}
@@ -164,8 +168,8 @@ export function SearchResults({ onRetry }) {
       <Box
         data-results-container
         sx={{
-          flex: 1,
-          overflow: 'auto',
+          flex: { xs: 'none', md: 1 },
+          overflow: { xs: 'visible', md: 'auto' },
           p: 2,
         }}
       >
@@ -204,9 +208,10 @@ export function SearchResults({ onRetry }) {
           />
         )}
 
-        {/* Results list */}
+        {/* Results list. A size container, so each result lays itself out by the
+            width of the list rather than of the viewport. */}
         {!error && results.length > 0 && (
-          <Box>
+          <Box sx={{ containerType: 'inline-size' }}>
             {results.map((result) => {
               // Determine if this is a manifest or canvas result
               const isCanvas = result.index === 'canvas';

@@ -17,6 +17,9 @@ import { HighlightedText } from './HighlightedText';
 import * as selectors from '../state/selectors';
 import { buildThumbnailUrl, buildLogoUrl } from '../utils/urlBuilder';
 
+/** Results list width (px) at or below which the thumbnails go below the details. */
+const STACK_BELOW = 480;
+
 /**
  * LazyThumbnail - thumbnail that only loads when visible.
  */
@@ -107,7 +110,15 @@ export function ManifestResult({ result, onClick, onThumbnailClick }) {
   const highlightEntries = Object.entries(highlight || {}).slice(0, 2);
 
   return (
-    <Card variant="outlined" sx={{ mb: 1, display: 'flex' }}>
+    // The thumbnails move below the details when the results list is narrow
+    <Card
+      variant="outlined"
+      sx={{
+        mb: 1,
+        display: 'flex',
+        [`@container (max-width: ${STACK_BELOW}px)`]: { flexDirection: 'column' },
+      }}
+    >
       <CardActionArea onClick={() => onClick(result)} sx={{ p: 1.5, flex: 1, minWidth: 0 }}>
         <Box sx={{ display: 'flex', gap: 2 }}>
           {/* Logo */}
@@ -153,7 +164,16 @@ export function ManifestResult({ result, onClick, onThumbnailClick }) {
 
       {/* Thumbnails, each opening its own page */}
       {thumbnailUrls.length > 0 && (
-        <Box sx={{ display: 'flex', gap: 0.5, flexShrink: 0, p: 1.5, pl: 0 }}>
+        <Box
+          sx={{
+            display: 'flex',
+            gap: 0.5,
+            flexShrink: 0,
+            p: 1.5,
+            pl: 0,
+            [`@container (max-width: ${STACK_BELOW}px)`]: { pl: 1.5, pt: 0 },
+          }}
+        >
           {thumbnailUrls.map((thumb, index) => (
             <ButtonBase
               key={index}

@@ -193,13 +193,20 @@ export function JHSearchView({ jhsearchConfig }) {
     return <InitializationError error={initError} onRetry={handleRetry} />;
   }
 
-  // Main view
+  // Main view. Positioned over Mirador's viewer area rather than in its flow: the
+  // area is a flex item with min-width: auto, so in-flow content would set its
+  // minimum width to that of the widest unbreakable result and stop it shrinking.
+  // Below md the sidebar sits above the results and the whole view scrolls.
   return (
     <Box
+      data-jhsearch-view
       sx={{
+        position: 'absolute',
+        inset: 0,
         display: 'flex',
-        height: '100%',
-        overflow: 'hidden',
+        flexDirection: { xs: 'column', md: 'row' },
+        overflowX: 'hidden',
+        overflowY: { xs: 'auto', md: 'hidden' },
       }}
       role="main"
       aria-label="Collection browser"

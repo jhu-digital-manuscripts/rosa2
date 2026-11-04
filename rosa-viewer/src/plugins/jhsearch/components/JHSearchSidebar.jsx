@@ -109,18 +109,20 @@ export function JHSearchSidebar() {
   const showClearButton = hasSearch || hasSelectedFacets;
   const tabValue = searchMode === 'simple' ? 0 : 1;
 
+  // From md up a resizable column beside the results. Below md the full width
+  // above them at its content height, with no resize handle.
   return (
     <Box
       ref={sidebarRef}
       component="aside"
       sx={{
-        width,
-        minWidth: MIN_WIDTH,
+        width: { xs: '100%', md: width },
+        minWidth: { xs: 0, md: MIN_WIDTH },
         flexShrink: 0,
         display: 'flex',
         flexDirection: 'column',
-        height: '100%',
-        overflow: 'hidden',
+        height: { xs: 'auto', md: '100%' },
+        overflow: { xs: 'visible', md: 'hidden' },
         position: 'relative',
       }}
       role="complementary"
@@ -132,8 +134,9 @@ export function JHSearchSidebar() {
           flex: 1,
           display: 'flex',
           flexDirection: 'column',
-          overflow: 'hidden',
-          borderRight: 1,
+          overflow: { xs: 'visible', md: 'hidden' },
+          borderRight: { xs: 0, md: 1 },
+          borderBottom: { xs: 1, md: 0 },
           borderColor: 'divider',
         }}
       >
@@ -162,7 +165,7 @@ export function JHSearchSidebar() {
         <Box
           sx={{
             flex: 1,
-            overflow: 'auto',
+            overflow: { xs: 'visible', md: 'auto' },
             p: 2,
           }}
         >
@@ -214,6 +217,7 @@ export function JHSearchSidebar() {
       <Box
         onMouseDown={handleMouseDown}
         sx={{
+          display: { xs: 'none', md: 'block' },
           position: 'absolute',
           top: 0,
           right: 0,
