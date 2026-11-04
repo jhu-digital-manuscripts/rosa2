@@ -60,4 +60,3 @@ if (typeof window !== 'undefined' && window.rosaViewerConfig) {
 }
 
 export { jhsearchPlugin, rosaAnnotationsPlugin, rosaDescriptionPlugin };
-export default createViewer;
