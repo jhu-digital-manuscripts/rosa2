@@ -37,6 +37,22 @@ class AnnotationHtmlTest {
     }
 
     @Test
+    void linksMetadataValues() {
+        String html = AnnotationHtml.meta("People", List.of("Plutarch", "Solinus", "Plutarch"),
+                v -> "https://x/aor/#aor/search?q=people:'" + v + "'&type=advanced");
+        assertEquals("<p><small><b>People:</b> "
+                + "<a href=\"https://x/aor/#aor/search?q=people:'Plutarch'&amp;type=advanced\">Plutarch</a>, "
+                + "<a href=\"https://x/aor/#aor/search?q=people:'Solinus'&amp;type=advanced\">Solinus</a>"
+                + "</small></p>", html);
+        assertNull(AnnotationHtml.findViolation(html));
+
+        // A value without a link stays plain text
+        assertEquals("<p><small><b>People:</b> <a href=\"u\">a</a>, b</small></p>",
+                AnnotationHtml.meta("People", List.of("a", "b"), v -> v.equals("a") ? "u" : null));
+        assertEquals("", AnnotationHtml.meta("People", List.of(" "), v -> "u"));
+    }
+
+    @Test
     void normalizesLanguages() {
         assertEquals("la", AnnotationHtml.normalizeLanguage("LA"));
         assertNull(AnnotationHtml.normalizeLanguage(""));

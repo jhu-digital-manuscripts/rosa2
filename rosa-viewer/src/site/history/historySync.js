@@ -27,7 +27,13 @@ import {
 } from 'mirador';
 import { applySearchState } from '../../plugins/jhsearch/state/actions';
 import { buildManifestUrl } from '../../plugins/jhsearch/utils/urlBuilder';
-import { createRouteContext, formatRoute, parseLocation, stripLegacyQuery } from './route';
+import {
+  createRouteContext,
+  formatRoute,
+  parseLocation,
+  searchStateForRoute,
+  stripLegacyQuery,
+} from './route';
 import { canvasIdForName, nameForCanvasId } from './canvasNames';
 
 const VIEWS_WITH_CANVAS = new Set(['single', 'book']);
@@ -185,26 +191,6 @@ export function routeTitle(route, state, siteTitle) {
   }
 
   return siteTitle || '';
-}
-
-function searchStateForRoute(route) {
-  const state = {
-    collectionId: route.collectionId,
-    viewMode: route.type === 'search' ? 'search' : 'browse',
-    facets: route.facets,
-    sort: route.sort,
-    page: route.page,
-    pageSize: route.pageSize,
-  };
-  if (route.type === 'search') {
-    state.searchMode = route.mode;
-    if (route.mode === 'advanced') {
-      state.advancedRows = route.rows;
-    } else {
-      state.simpleQuery = route.query;
-    }
-  }
-  return state;
 }
 
 async function defaultFetchManifest(manifestId) {

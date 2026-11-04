@@ -42,7 +42,7 @@ Generates the static IIIF Presentation API 3.0 files. What is written, and the i
 conventions, are described in [IIIF Generation](iiif-generation.md).
 
 ```
-java -jar rosa-tool.jar generate-iiif-pres --archive <dir> --output <dir> [--base-url <url>] [--image-base-url <url>] [--image-api-version <2|3>] [--opensearch-url <url>] [--annotation-stylesheet-url <url>]
+java -jar rosa-tool.jar generate-iiif-pres --archive <dir> --output <dir> [--base-url <url>] [--image-base-url <url>] [--image-api-version <2|3>] [--opensearch-url <url>] [--annotation-stylesheet-url <url>] [--viewer-url <url>] [--collection <id>]...
 ```
 
 | Option | Required | Description |
@@ -54,6 +54,8 @@ java -jar rosa-tool.jar generate-iiif-pres --archive <dir> --output <dir> [--bas
 | `--image-api-version` | No | `2` (default) or `3`. Any other value is an error. Selects `ImageService2` or `ImageService3`; see [IIIF Generation](iiif-generation.md). |
 | `--opensearch-url` | No | Opensearch `_search` endpoint URL. When given, each collection gets a `service/jhsearch.json` and collections and manifests reference it; see [Search](search.md). |
 | `--annotation-stylesheet-url` | No | URL of the stylesheet referenced by every commenting annotation. `{collection}` in it is replaced per collection; see [Annotation stylesheet](iiif-generation.md#annotation-stylesheet). If omitted, annotations have no `stylesheet`. |
+| `--viewer-url` | No | URL of the viewer site that the people, books and locations named in AoR annotations link to (their advanced search). `{collection}` in it is replaced per collection like the stylesheet URL; see [Viewer URL](iiif-generation.md#viewer-url). If omitted, the names are plain text. |
+| `--collection` | No | Generate only this collection; repeat the option for several. The top-level `collection.json` lists only the generated collections, so include a parent (`dlmm`) with the children (`rose`, `pizan`) it should list. An unknown id is an error. Default: every collection. |
 
 Books without an image list, or with an empty one, are skipped with a warning on stderr
 and a final `N book(s) skipped` line; the exit code stays 0.

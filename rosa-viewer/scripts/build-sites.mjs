@@ -10,19 +10,14 @@
  */
 
 import { build } from 'vite';
-import { existsSync, readdirSync } from 'node:fs';
 import { copyFile, mkdir } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { listSites } from '../vite.config.js';
 
 const viewerDir = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const sitesDir = resolve(viewerDir, 'sites');
 
-// Same rule as listSites() in vite.config.js: a site is a sites/<id>/index.html.
-const SITES = readdirSync(sitesDir, { withFileTypes: true })
-  .filter((entry) => entry.isDirectory() && existsSync(resolve(sitesDir, entry.name, 'index.html')))
-  .map((entry) => entry.name)
-  .sort();
+const SITES = listSites();
 
 const requested = process.argv.slice(2);
 const unknown = requested.filter((site) => !SITES.includes(site));

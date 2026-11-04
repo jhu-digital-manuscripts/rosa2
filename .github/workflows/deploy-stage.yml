@@ -1,13 +1,12 @@
 name: Deploy Stage
 
-# Builds the AoR and DLMM sites together with the IIIF Presentation files
-# generated from archive/, and publishes them to this repository's GitHub Pages
+# Packages the AoR and DLMM sites with rosa-viewer/scripts/package-site.sh, the
+# same way Release does, and publishes them to this repository's GitHub Pages
 # site for testing:
 #
 #   <pages url>/          chooser page linking to both sites
-#   <pages url>/aor/      The Archaeology of Reading
-#   <pages url>/dlmm/     Digital Library of Medieval Manuscripts
-#   <pages url>/iiif/     IIIF Presentation files shared by both sites
+#   <pages url>/aor/      The Archaeology of Reading (viewer, styles/, iiif/)
+#   <pages url>/dlmm/     Digital Library of Medieval Manuscripts (viewer, styles/, iiif/)
 #
 # Repository Settings -> Pages -> Source must be set to "GitHub Actions".
 # The Opensearch endpoint must allow the Pages origin in its CORS configuration
@@ -56,52 +55,35 @@ jobs:
         id: pages
         uses: actions/configure-pages@v6
 
-      - name: Set up Java 25
-        uses: actions/setup-java@v6
-        with:
-          distribution: 'temurin'
-          java-version: '25'
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v7
-        with:
-          node-version: '22'
-          cache: 'npm'
-          cache-dependency-path: rosa-viewer/package-lock.json
+      - uses: ./.github/actions/setup
 
       - name: Build rosa-tool
         run: mvn package -DskipTests --no-transfer-progress
         working-directory: rosa-tool
 
-      - name: Generate IIIF Presentation files
-        run: |
-          java -jar rosa-tool/target/rosa-tool.jar generate-iiif-pres \
-            --archive archive \
-            --output site/iiif \
-            --base-url "${{ steps.pages.outputs.base_url }}/iiif/" \
-            --image-base-url "${{ inputs.image_base_url }}" \
-            --image-api-version "${{ inputs.image_api_version }}" \
-            --opensearch-url "${{ inputs.opensearch_url }}" \
-            --annotation-stylesheet-url "${{ steps.pages.outputs.base_url }}/{collection}/styles/{collection}.css"
-
       - name: Install rosa-viewer dependencies
         run: npm ci
         working-directory: rosa-viewer
 
-      - name: Build rosa-viewer sites
-        run: npm run build:sites
-        working-directory: rosa-viewer
-        env:
-          VITE_ROSA_IIIF_BASE_URL: ${{ steps.pages.outputs.base_url }}/iiif
-          VITE_ROSA_IMAGE_BASE_URL: ${{ inputs.image_base_url }}
+      - name: Package the sites
+        run: |
+          for site in aor dlmm; do
+            rosa-viewer/scripts/package-site.sh \
+              --site "$site" \
+              --site-url "${{ steps.pages.outputs.base_url }}/$site" \
+              --opensearch-url "${{ inputs.opensearch_url }}" \
+              --image-base-url "${{ inputs.image_base_url }}" \
+              --image-api-version "${{ inputs.image_api_version }}" \
+              --output "site/$site"
+          done
 
       - name: Assemble Pages site
         run: |
-          cp -R rosa-viewer/dist/sites/. site/
+          cp rosa-viewer/sites/index.html site/index.html
           touch site/.nojekyll
           echo "Site contents:"
           ls -la site
-          du -sh site/iiif
+          du -sh site/*/iiif
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5

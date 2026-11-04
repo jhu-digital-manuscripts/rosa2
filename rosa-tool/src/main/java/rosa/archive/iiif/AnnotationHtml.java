@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
 import java.util.Set;
+import java.util.function.Function;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -21,7 +22,8 @@ import java.util.regex.Pattern;
  * <ul>
  *   <li>the first paragraph is a heading: {@code <p><b>Label</b> detail <small>extra</small></p>}</li>
  *   <li>translations are {@code <p><i>…</i></p>}</li>
- *   <li>metadata lines are {@code <p><small><b>Label:</b> …</small></p>}</li>
+ *   <li>metadata lines are {@code <p><small><b>Label:</b> …</small></p>}; the values may be
+ *       {@code <a href>} links, see {@link #meta(String, Collection, Function)}</li>
  * </ul>
  */
 public final class AnnotationHtml {
@@ -145,13 +147,29 @@ public final class AnnotationHtml {
      * @return the paragraph HTML, or an empty string
      */
     public static String meta(String label, Collection<String> values) {
+        return meta(label, values, null);
+    }
+
+    /**
+     * Builds a metadata line whose values are links:
+     * {@code <p><small><b>Label:</b> <a href="…">v1</a>, <a href="…">v2</a></small></p>}.
+     * A value whose link function returns null is written as plain text; a null link
+     * function gives the plain line of {@link #meta(String, Collection)}.
+     *
+     * @param label  the label, without a colon
+     * @param values the values
+     * @param href   the URL for a cleaned value (escaped here), or null for plain text
+     * @return the paragraph HTML, or an empty string
+     */
+    public static String meta(String label, Collection<String> values, Function<String, String> href) {
         List<String> vals = distinct(values);
         if (vals.isEmpty()) {
             return "";
         }
         List<String> escaped = new ArrayList<>(vals.size());
         for (String v : vals) {
-            escaped.add(esc(v));
+            String url = href == null ? null : href.apply(v);
+            escaped.add(url == null ? esc(v) : "<a href=\"" + esc(url) + "\">" + esc(v) + "</a>");
         }
         return "<p><small><b>" + esc(label) + ":</b> " + String.join(", ", escaped) + "</small></p>";
     }

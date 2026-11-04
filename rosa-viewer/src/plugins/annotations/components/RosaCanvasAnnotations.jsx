@@ -24,6 +24,7 @@ function AnnotationEntry({
   onToggle,
   onHover,
   onUnhover,
+  onFollowLink,
   as: Tag = 'li',
 }) {
   const handleKeyDown = (event) => {
@@ -57,7 +58,7 @@ function AnnotationEntry({
           onFocus={() => onHover(item)}
           onBlur={onUnhover}
         >
-          <AnnotationBody html={item.html} language={item.language} />
+          <AnnotationBody html={item.html} language={item.language} onFollowLink={onFollowLink} />
         </div>
       </Tag>
     </ScrollTo>
@@ -118,6 +119,7 @@ function AnnotationGroup({ group, open, onToggleOpen, renderEntry }) {
  * @param {Function} props.selectAnnotation - (windowId, id)
  * @param {Function} props.deselectAnnotation - (windowId, id)
  * @param {Function} props.hoverAnnotation - (windowId, ids)
+ * @param {Function} [props.onFollowLink] - (href) => true when a link in a body was followed in place
  * @param {Object} [props.containerRef]
  */
 export function RosaCanvasAnnotations({
@@ -132,6 +134,7 @@ export function RosaCanvasAnnotations({
   deselectAnnotation,
   hoverAnnotation,
   containerRef,
+  onFollowLink,
 }) {
   const { header, groups } = useMemo(() => {
     const items = annotationResources
@@ -172,6 +175,7 @@ export function RosaCanvasAnnotations({
       onToggle={onToggle}
       onHover={onHover}
       onUnhover={onUnhover}
+      onFollowLink={onFollowLink}
     />
   );
 

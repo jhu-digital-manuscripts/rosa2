@@ -116,6 +116,68 @@ class AnnotationBodyGenerationTest {
     }
 
     @Test
+    void namesLinkToTheViewerSearchWhenConfigured(@TempDir Path outputDir) throws Exception {
+        Path archivePath = Path.of(getClass().getClassLoader().getResource("archive").toURI());
+        IIIFPresentationGenerator generator = new IIIFPresentationGenerator(new IIIFJsonWriter());
+        generator.setViewerUrl("https://example.org/{collection}/");
+        generator.generate(new FileSystemArchiveStore(archivePath), outputDir, "http://example.org", null, 2);
+
+        // PrincetonU101 001v (canvas 7) names several people
+        boolean sawLink = false;
+        for (JsonNode item : items(outputDir, "aor/PrincetonU101/canvas/7")) {
+            String html = item.get("body").get("source").path("value").asText();
+            assertNull(AnnotationHtml.findViolation(html), html);
+            if (html.contains("<b>People:</b>")) {
+                assertTrue(html.contains("<a href=\"https://example.org/aor/#aor/search?q=people:'"), html);
+                sawLink = true;
+            }
+        }
+        assertTrue(sawLink, "expected a linked People line");
+
+        // Without a viewer URL the names stay plain text
+        Path plain = outputDir.resolve("plain");
+        new IIIFPresentationGenerator(new IIIFJsonWriter())
+                .generate(new FileSystemArchiveStore(archivePath), plain, "http://example.org", null, 2);
+        for (JsonNode item : items(plain, "aor/PrincetonU101/canvas/7")) {
+            assertFalse(item.get("body").get("source").path("value").asText().contains("<a "));
+        }
+    }
+
+    @Test
+    void onlyTheRequestedCollectionsAreGenerated(@TempDir Path outputDir) throws Exception {
+        Path archivePath = Path.of(getClass().getClassLoader().getResource("archive").toURI());
+        IIIFPresentationGenerator generator = new IIIFPresentationGenerator(new IIIFJsonWriter());
+        generator.setCollections(java.util.List.of("dlmm", "rose", "nope"));
+        generator.generate(new FileSystemArchiveStore(archivePath), outputDir, "http://example.org", null, 2);
+
+        assertTrue(Files.exists(outputDir.resolve("dlmm/collection.json")));
+        assertTrue(Files.exists(outputDir.resolve("rose/collection.json")));
+        assertFalse(Files.exists(outputDir.resolve("aor")));
+        assertFalse(Files.exists(outputDir.resolve("pizan")));
+
+        JsonNode top = mapper.readTree(Files.readString(outputDir.resolve("collection.json")));
+        java.util.List<String> ids = new java.util.ArrayList<>();
+        for (JsonNode item : top.get("items")) {
+            ids.add(item.get("id").asText());
+        }
+        assertEquals(java.util.List.of("http://example.org/dlmm/collection.json"), ids);
+    }
+
+    @Test
+    void viewerUrlResolvesParentCollection() {
+        IIIFPresentationGenerator generator = new IIIFPresentationGenerator(new IIIFJsonWriter());
+        rosa.archive.model.BookCollection rose = collection("rose", "dlmm");
+        rosa.archive.model.BookCollection aor = collection("aor");
+
+        assertNull(generator.resolveViewerUrl(aor));
+        generator.setViewerUrl("https://example.org/{collection}/");
+        assertEquals("https://example.org/dlmm/", generator.resolveViewerUrl(rose));
+        assertEquals("https://example.org/aor/", generator.resolveViewerUrl(aor));
+        generator.setViewerUrl(" ");
+        assertNull(generator.resolveViewerUrl(aor));
+    }
+
+    @Test
     void stylesheetResolvesParentCollection() {
         IIIFPresentationGenerator generator = new IIIFPresentationGenerator(new IIIFJsonWriter());
         rosa.archive.model.BookCollection rose = collection("rose", "dlmm");

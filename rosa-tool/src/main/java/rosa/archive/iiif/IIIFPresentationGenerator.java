@@ -7,6 +7,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
@@ -70,6 +71,12 @@ public final class IIIFPresentationGenerator {
     /** URL template for the annotation stylesheet, or null for none. */
     private String annotationStylesheetUrl;
 
+    /** URL template of the viewer site that AoR annotation names link to, or null for plain names. */
+    private String viewerUrl;
+
+    /** Collections to generate, or null for all of them. */
+    private Set<String> collections;
+
     /** Cached transcription conversion for the most recent book. */
     private String cachedTranscriptionKey;
     private Map<String, List<TeiTranscriptionHtml.Column>> cachedTranscriptionPages = Map.of();
@@ -119,7 +126,10 @@ public final class IIIFPresentationGenerator {
      * @throws IOException if an I/O error occurs during generation
      */
     public void generate(ArchiveStore store, Path outputDir, String baseUrl, String imageBaseUrl, int imageApiVersion, String opensearchUrl) throws IOException {
-        List<String> collectionIds = store.listCollections();
+        List<String> collectionIds = new ArrayList<>(store.listCollections());
+        if (collections != null) {
+            collectionIds.retainAll(collections);
+        }
 
         // Load all collections upfront to determine hierarchy
         Map<String, BookCollection> loadedCollections = new LinkedHashMap<>();
@@ -681,7 +691,9 @@ public final class IIIFPresentationGenerator {
         // 1. AoR annotations, page header first then grouped by place
         AnnotatedPage annotatedPage = findAnnotatedPage(book, imageId);
         if (annotatedPage != null) {
-            content.addAll(AorAnnotationFormatter.format(annotatedPage));
+            String siteUrl = resolveViewerUrl(collection);
+            AorSearchLinks links = siteUrl == null ? null : new AorSearchLinks(siteUrl, collectionId);
+            content.addAll(AorAnnotationFormatter.format(annotatedPage, links));
         }
 
         // 2. Illustration tagging
@@ -815,20 +827,58 @@ public final class IIIFPresentationGenerator {
      * @return the stylesheet URL, or null
      */
     public String resolveAnnotationStylesheet(BookCollection collection) {
-        if (annotationStylesheetUrl == null) {
-            return null;
-        }
-        String id = collection.getId();
+        return resolveTemplate(annotationStylesheetUrl, collection);
+    }
+
+    /**
+     * Sets the URL template of the viewer site that the people, books and locations named
+     * in AoR annotations link to (their advanced search). {@code {collection}} is replaced
+     * like in {@link #setAnnotationStylesheetUrl}. When null, the names are plain text.
+     *
+     * @param template the URL template, e.g. {@code https://example.org/{collection}/}
+     */
+    public void setViewerUrl(String template) {
+        this.viewerUrl = (template == null || template.isBlank()) ? null : template.trim();
+    }
+
+    /**
+     * Resolves the viewer URL for a collection, or null if not configured.
+     *
+     * @param collection the collection
+     * @return the viewer URL, or null
+     */
+    public String resolveViewerUrl(BookCollection collection) {
+        return resolveTemplate(viewerUrl, collection);
+    }
+
+    /**
+     * Restricts {@link #generate} to some of the archive's collections. The top-level
+     * collection then lists only those. Unknown ids are ignored.
+     *
+     * @param ids the collection ids, or null for every collection
+     */
+    public void setCollections(Collection<String> ids) {
+        this.collections = ids == null ? null : new HashSet<>(ids);
+    }
+
+    private static String resolveTemplate(String template, BookCollection collection) {
+        return template == null ? null : template.replace("{collection}", siteCollectionId(collection));
+    }
+
+    /**
+     * The id of the collection's first parent, or its own id when it has none. Parents
+     * (dlmm) are what the viewer sites are built around, so this names the site.
+     */
+    private static String siteCollectionId(BookCollection collection) {
         String[] parents = collection.getParentCollections();
         if (parents != null) {
             for (String parent : parents) {
                 if (parent != null && !parent.isBlank()) {
-                    id = parent.trim();
-                    break;
+                    return parent.trim();
                 }
             }
         }
-        return annotationStylesheetUrl.replace("{collection}", id);
+        return collection.getId();
     }
 
     /**

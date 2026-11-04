@@ -4,7 +4,9 @@
  * The HTML is first sanitized to the IIIF tag set (see utils/sanitize.js) and then
  * converted element by element, so no raw HTML is injected. Editorial notes, which
  * rosa-tool writes as <small>*&nbsp;note</small> where they occur in a transcription,
- * become an asterisk that shows the note on hover, keyboard focus or tap.
+ * become an asterisk that shows the note on hover, keyboard focus or tap. Links are
+ * opened in a new tab, unless the optional onFollowLink callback follows them in place
+ * (see utils/siteLinks.js).
  */
 
 import React, { useMemo } from 'react';
@@ -82,7 +84,7 @@ export function NoteMarker({ text }) {
   );
 }
 
-function toReact(node, key) {
+function toReact(node, key, onFollowLink) {
   if (node.nodeType === 3) return node.nodeValue;
   if (node.nodeType !== 1) return null;
 
@@ -90,7 +92,7 @@ function toReact(node, key) {
   const note = noteText(node);
   if (note) return <NoteMarker key={key} text={note} />;
 
-  const children = Array.from(node.childNodes, (child, i) => toReact(child, i));
+  const children = Array.from(node.childNodes, (child, i) => toReact(child, i, onFollowLink));
   switch (tag) {
     case 'br':
       return <br key={key} />;
@@ -101,8 +103,13 @@ function toReact(node, key) {
     case 'a': {
       const href = node.getAttribute('href');
       if (!href) return <React.Fragment key={key}>{children}</React.Fragment>;
+      // A link into this site is followed in place; any other opens in a new tab
+      const onClick = (event) => {
+        stop(event);
+        if (onFollowLink?.(href)) event.preventDefault();
+      };
       return (
-        <a key={key} href={href} target="_blank" rel="noopener noreferrer" onClick={stop}>
+        <a key={key} href={href} target="_blank" rel="noopener noreferrer" onClick={onClick}>
           {children}
         </a>
       );
@@ -129,20 +136,22 @@ function toReact(node, key) {
 /**
  * Convert annotation HTML to React nodes.
  * @param {string} html
+ * @param {Function} [onFollowLink] - (href) => true when it followed the link itself
  * @returns {React.ReactNode[]}
  */
-export function htmlToReact(html) {
+export function htmlToReact(html, onFollowLink) {
   const fragment = sanitizeIiifHtmlToFragment(html);
-  return Array.from(fragment.childNodes, (child, i) => toReact(child, i));
+  return Array.from(fragment.childNodes, (child, i) => toReact(child, i, onFollowLink));
 }
 
 /**
  * @param {Object} props
  * @param {string} props.html - Annotation body HTML
  * @param {string} [props.language] - Body language
+ * @param {Function} [props.onFollowLink] - (href) => true when it followed the link itself
  */
-export function AnnotationBody({ html, language }) {
-  const content = useMemo(() => htmlToReact(html), [html]);
+export function AnnotationBody({ html, language, onFollowLink }) {
+  const content = useMemo(() => htmlToReact(html, onFollowLink), [html, onFollowLink]);
   return (
     <div className="rosa-anno-body" lang={language || undefined}>
       {content}

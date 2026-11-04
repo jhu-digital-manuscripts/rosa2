@@ -1,0 +1,30 @@
+name: Set up build tools
+description: >-
+  Java 25 (Temurin) and Node.js 22 with the npm cache keyed on rosa-viewer's lock
+  file: the toolchain every workflow builds rosa-tool and rosa-viewer with.
+
+inputs:
+  java:
+    description: Set up Java
+    default: 'true'
+  node:
+    description: Set up Node.js
+    default: 'true'
+
+runs:
+  using: composite
+  steps:
+    - name: Set up Java 25
+      if: inputs.java == 'true'
+      uses: actions/setup-java@v6
+      with:
+        distribution: 'temurin'
+        java-version: '25'
+
+    - name: Set up Node.js 22
+      if: inputs.node == 'true'
+      uses: actions/setup-node@v7
+      with:
+        node-version: '22'
+        cache: 'npm'
+        cache-dependency-path: rosa-viewer/package-lock.json

@@ -25,8 +25,9 @@ rosa2/
 │   └── src/test/resources/archive/   Test fixture archive (rose, aor, dlmm, pizan)
 ├── rosa-viewer/          Mirador 4 + React 18 + MUI 9, Vite 5, Vitest 2
 │   ├── .env              Committed local-dev defaults for VITE_ROSA_* (override in .env.local)
-│   ├── sites/            index.html chooser; aor/ and dlmm/ each: index.html, main.js (site definition), site.css, favicon
-│   ├── scripts/          build-sites.mjs (npm run build:sites), package-site.sh (viewer + IIIF -> tarball)
+│   ├── sites/            index.html chooser; aor/ and dlmm/ each: index.html, main.js, site.config.js (site definition), site.css, favicon
+│   ├── scripts/          build-sites.mjs (npm run build:sites), site-collections.mjs (a site's collections),
+│   │                     package-site.sh (viewer + IIIF for one site -> directory / tarball; used by both workflows)
 │   └── src/
 │       ├── index.js, config.js
 │       ├── site/               createSiteViewer, resolveSiteConfig, shared site.css
@@ -44,8 +45,9 @@ rosa2/
 ├── rosa-image-server/    Cantaloupe + Kakadu Docker image (IIIF Image API) for ECS; build-and-push.sh, delegates.rb, test/
 ├── local-dev/            Docker Opensearch 3.1 + static IIIF server scripts
 ├── docs/                 usage, archive-structure, iiif-generation, opensearch-indexes, search, aor-data-model, deployment
-└── .github/workflows/    ci.yml (PRs + main: rosa-tool, rosa-viewer, Lambda tests, CloudFront function tests),
-                          deploy-stage.yml (GitHub Pages), release.yml (manual release)
+└── .github/              actions/setup (composite: Java 25 + Node 22); workflows/ ci.yml (PRs + main: rosa-tool,
+                          rosa-viewer, Lambda tests, CloudFront function tests), deploy-stage.yml (GitHub Pages),
+                          release.yml (manual release)
 ```
 
 Data flow: `archive/` → `rosa-tool` → (IIIF JSON static files + `<collection>.bulk.json`)
@@ -90,7 +92,7 @@ java -jar rosa-tool/target/rosa-tool.jar check --archive archive --skip-images  
 java -jar rosa-tool/target/rosa-tool.jar validate-xml --archive archive --collection aor
 java -jar rosa-tool/target/rosa-tool.jar generate-iiif-pres --archive archive --output /tmp/iiif \
   [--base-url URL] [--image-base-url URL] [--image-api-version 2|3] [--opensearch-url URL] \
-  [--annotation-stylesheet-url 'URL/{collection}.css']
+  [--annotation-stylesheet-url 'URL/{collection}.css'] [--viewer-url 'URL/{collection}/'] [--collection ID]...
 java -jar rosa-tool/target/rosa-tool.jar generate-opensearch-ingest --archive archive --output /tmp/bulk
 ```
 
@@ -223,7 +225,9 @@ change `functions/*.js`, `delegates.rb` and their tests together.
 - Annotation bodies are recipe 0045 `SpecificResource`s with a `styleClass` wrapping HTML limited to the
   recipe 0019 tags (`a b br i img p small span sub sup`). The HTML conventions and classes in
   `docs/iiif-generation.md#annotation-bodies` are shared with `rosa-viewer/public/styles/{aor,dlmm}.css`;
-  change them together.
+  change them together. With `--viewer-url`, AoR people/books/locations are `<a href>` links to the site's
+  advanced search URL; `AorSearchLinks` (Java) and `site/history/route.js` + `advancedQuery.js` (viewer)
+  must agree on the encoding.
 - Text fields use per-language sub-fields (`.en .fr .ofr .la .it .el .es .de`); unknown languages fall back to `.en`.
   Mixed fields (`mark`, `symbol`, `drawing`, `calculation`, `graph`, `table`) also have `.keyword`.
 - The Opensearch Bulk API returns HTTP 200 even when documents fail. Check for `"errors":true`.
@@ -232,7 +236,8 @@ change `functions/*.js`, `delegates.rb` and their tests together.
 - Java style: records, sealed interfaces and pattern matching (Java 25) are in use. Match the surrounding code.
 - Viewer formatting is Prettier (`.prettierrc`) plus ESLint flat config (`eslint.config.js`).
 - Viewer tests are colocated with the code as `src/**/*.test.{js,jsx}`; shared setup is in `src/test/`.
-- Adding a viewer site = a new `sites/<id>/` with `index.html`, `main.js`, `site.css`; the build
-  scripts discover sites by directory. Keep collection ids and `enableFacets` in `main.js`, never in env vars.
+- Adding a viewer site = a new `sites/<id>/` with `index.html`, `main.js`, `site.config.js`, `site.css`; the build
+  scripts discover sites by directory. Keep collection ids and `enableFacets` in `site.config.js` (plain data,
+  also read by `scripts/site-collections.mjs`), never in env vars.
 - `VITE_ROSA_*` values are substituted into `sites/<site>/index.html` and remain editable in the
   built page. `rosa-viewer/.env` is committed on purpose; put personal overrides in `.env.local`.

@@ -9,8 +9,12 @@
  * the per-collection stylesheets in public/styles/.
  */
 
-import { getAnnotationResourcesByMotivationForCanvas } from 'mirador';
+import React, { useCallback } from 'react';
+import { getAnnotationResourcesByMotivationForCanvas, setWorkspaceAddVisibility } from 'mirador';
+import { applySearchState } from '../jhsearch/state/actions';
+import { searchStateForRoute } from '../../site/history/route';
 import { RosaCanvasAnnotations } from './components/RosaCanvasAnnotations';
+import { siteSearchRoute } from './utils/siteLinks';
 import './annotations.css';
 
 export { RosaCanvasAnnotations } from './components/RosaCanvasAnnotations';
@@ -26,25 +30,52 @@ const NO_IDS = [];
 
 /**
  * Plugin state: the raw annotation resources for the canvas (so the styleClass is
- * available) and the hovered annotation ids of the window.
+ * available), the hovered annotation ids of the window, and the site's jhsearch
+ * config (to recognise links into the site's search).
  */
 export function mapStateToProps(state, { canvasId, windowId }) {
   return {
     annotationResources: getAnnotationResourcesByMotivationForCanvas(state, { canvasId, windowId }),
     hoveredAnnotationIds: state.windows?.[windowId]?.hoveredAnnotationIds || NO_IDS,
+    jhsearch: state.config?.jhsearch,
   };
 }
 
 /**
- * Wraps CanvasAnnotations, which already receives the canvas label, the selected
- * annotation and the select, deselect and hover actions.
+ * Actions for following a search link: show the search in the add-resource view.
  */
-function RosaCanvasAnnotationsWrapper({ TargetComponent: _target, targetProps: _props, ...props }) {
-  return <RosaCanvasAnnotations {...props} />;
+export const mapDispatchToProps = { applySearchState, setWorkspaceAddVisibility };
+
+/**
+ * Wraps CanvasAnnotations, which already receives the canvas label, the selected
+ * annotation and the select, deselect and hover actions. A link in an annotation
+ * body that is a search in this site (the people, books and places rosa-tool links
+ * for AoR) opens the add-resource view with that search instead of a new tab.
+ */
+export function RosaCanvasAnnotationsWrapper({
+  TargetComponent: _target,
+  targetProps: _props,
+  jhsearch,
+  applySearchState: applySearch,
+  setWorkspaceAddVisibility: showWorkspaceAdd,
+  ...props
+}) {
+  const onFollowLink = useCallback(
+    (href) => {
+      const route = siteSearchRoute(href, jhsearch);
+      if (!route) return false;
+      applySearch?.(searchStateForRoute(route));
+      showWorkspaceAdd?.(true);
+      return true;
+    },
+    [jhsearch, applySearch, showWorkspaceAdd]
+  );
+  return <RosaCanvasAnnotations {...props} onFollowLink={onFollowLink} />;
 }
 
 const rosaCanvasAnnotationsPlugin = {
   component: RosaCanvasAnnotationsWrapper,
+  mapDispatchToProps,
   mapStateToProps,
   mode: 'wrap',
   name: 'RosaCanvasAnnotations',

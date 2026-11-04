@@ -353,6 +353,33 @@ export function formatRoute(route, ctx) {
 }
 
 /**
+ * The jhsearch state a browse or search route restores (the payload of
+ * applySearchState).
+ *
+ * @param {Object} route - A browse or search route from parseLocation
+ * @returns {Object} {collectionId, viewMode, searchMode?, simpleQuery?, advancedRows?, facets, sort, page, pageSize}
+ */
+export function searchStateForRoute(route) {
+  const state = {
+    collectionId: route.collectionId,
+    viewMode: route.type === 'search' ? 'search' : 'browse',
+    facets: route.facets,
+    sort: route.sort,
+    page: route.page,
+    pageSize: route.pageSize,
+  };
+  if (route.type === 'search') {
+    state.searchMode = route.mode;
+    if (route.mode === 'advanced') {
+      state.advancedRows = route.rows;
+    } else {
+      state.simpleQuery = route.query;
+    }
+  }
+  return state;
+}
+
+/**
  * The query string with the previous viewers' search parameters removed, so a
  * page URL such as `/viewer/?page_id=7` keeps any parameters WordPress needs.
  *

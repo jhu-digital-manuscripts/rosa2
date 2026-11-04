@@ -74,11 +74,23 @@ public final class AorAnnotationFormatter {
      * @return the items: the page header first (if any), then annotations in place order
      */
     public static List<AnnotationItem> format(AnnotatedPage page) {
+        return format(page, null);
+    }
+
+    /**
+     * Formats all annotations on a page, linking the people, books and locations named
+     * in them to the viewer's advanced search.
+     *
+     * @param page  the annotated page
+     * @param links the search link builder, or null to write the names as plain text
+     * @return the items: the page header first (if any), then annotations in place order
+     */
+    public static List<AnnotationItem> format(AnnotatedPage page, AorSearchLinks links) {
         List<Placed> placed = new ArrayList<>();
-        for (Marginalia m : page.getMarginalia()) add(placed, marginalia(m));
-        for (Drawing d : page.getDrawings()) add(placed, drawing(d));
-        for (Graph g : page.getGraphs()) add(placed, graph(g));
-        for (Table t : page.getTables()) add(placed, table(t));
+        for (Marginalia m : page.getMarginalia()) add(placed, marginalia(m, links));
+        for (Drawing d : page.getDrawings()) add(placed, drawing(d, links));
+        for (Graph g : page.getGraphs()) add(placed, graph(g, links));
+        for (Table t : page.getTables()) add(placed, table(t, links));
         for (Calculation c : page.getCalculations()) add(placed, calculation(c));
         for (Symbol s : page.getSymbols()) add(placed, symbol(s));
         for (Numeral n : page.getNumerals()) add(placed, numeral(n));
@@ -165,7 +177,7 @@ public final class AorAnnotationFormatter {
 
     // ---- Marginalia ----
 
-    private static Placed marginalia(Marginalia m) {
+    private static Placed marginalia(Marginalia m, AorSearchLinks links) {
         Location first = null;
         for (MarginaliaLanguage ml : m.getLanguages()) {
             for (Position pos : ml.getPositions()) {
@@ -232,9 +244,9 @@ public final class AorAnnotationFormatter {
         html.append(translation(m.getTranslation()));
         html.append(meta("Anchored to", m.getReferencedText()));
         html.append(meta("Topic", m.getTopic()));
-        html.append(meta("People", people));
-        html.append(meta("Books", books));
-        html.append(meta("Locations", locations));
+        html.append(names("People", people, "people", links));
+        html.append(names("Books", books, "books", links));
+        html.append(names("Locations", locations, "locations", links));
         html.append(meta("Symbols", humanizeAll(symbols)));
         html.append(meta("Underlined", emphasis));
         html.append(meta("Cross-references", xrefs));
@@ -244,6 +256,13 @@ public final class AorAnnotationFormatter {
         html.append(meta("Continues from", m.getContinuesFrom()));
         html.append(meta("Continues to", m.getContinuesTo()));
         return placed("marginalia", first, html, firstLang);
+    }
+
+    /**
+     * A metadata line of names, each linked to the advanced search for it when links are configured.
+     */
+    private static String names(String label, List<String> values, String field, AorSearchLinks links) {
+        return meta(label, values, links == null ? null : v -> links.href(field, v));
     }
 
     private static String xref(XRef x) {
@@ -313,21 +332,21 @@ public final class AorAnnotationFormatter {
 
     // ---- Complex annotations ----
 
-    private static Placed drawing(Drawing d) {
+    private static Placed drawing(Drawing d, AorSearchLinks links) {
         StringBuilder html = new StringBuilder();
         html.append(heading("Drawing", humanize(d.getType()), join(", ", d.getMethod(), d.getColor())));
         html.append(quoted(d.getReferencedText()));
         appendTexts(html, d.getTexts());
         html.append(translation(d.getTranslation()));
-        html.append(meta("People", d.getPeople()));
-        html.append(meta("Books", d.getBooks()));
-        html.append(meta("Locations", d.getLocations()));
+        html.append(names("People", d.getPeople(), "people", links));
+        html.append(names("Books", d.getBooks(), "books", links));
+        html.append(names("Locations", d.getLocations(), "locations", links));
         html.append(meta("Symbols", humanizeAll(d.getSymbols())));
         html.append(meta("Refers to", internalRefs(d.getInternalRefs())));
         return placed("drawing", d.getLocation(), html, d.getLanguage());
     }
 
-    private static Placed graph(Graph g) {
+    private static Placed graph(Graph g, AorSearchLinks links) {
         StringBuilder html = new StringBuilder();
         html.append(heading("Graph", humanize(g.getType()), g.getMethod()));
 
@@ -354,9 +373,9 @@ public final class AorAnnotationFormatter {
             locations.addAll(gt.getLocations());
             symbols.addAll(gt.getSymbols());
         }
-        html.append(meta("People", people));
-        html.append(meta("Books", books));
-        html.append(meta("Locations", locations));
+        html.append(names("People", people, "people", links));
+        html.append(names("Books", books, "books", links));
+        html.append(names("Locations", locations, "locations", links));
         html.append(meta("Symbols", humanizeAll(symbols)));
         html.append(meta("Refers to", internalRefs(g.getInternalRefs())));
         html.append(meta("Continues from", g.getContinuesFrom()));
@@ -364,7 +383,7 @@ public final class AorAnnotationFormatter {
         return placed("graph", g.getLocation(), html, g.getLanguage());
     }
 
-    private static Placed table(Table t) {
+    private static Placed table(Table t, AorSearchLinks links) {
         StringBuilder html = new StringBuilder();
         html.append(heading("Table", humanize(t.getType()), null));
 
@@ -390,9 +409,9 @@ public final class AorAnnotationFormatter {
 
         appendTexts(html, t.getTexts());
         html.append(translation(t.getTranslation()));
-        html.append(meta("People", t.getPeople()));
-        html.append(meta("Books", t.getBooks()));
-        html.append(meta("Locations", t.getLocations()));
+        html.append(names("People", t.getPeople(), "people", links));
+        html.append(names("Books", t.getBooks(), "books", links));
+        html.append(names("Locations", t.getLocations(), "locations", links));
         html.append(meta("Symbols", humanizeAll(t.getSymbols())));
         html.append(meta("Refers to", internalRefs(t.getInternalRefs())));
         return placed("table", t.getLocation(), html, t.getLanguage());

@@ -5,6 +5,7 @@ import {
   parseLocation,
   parseParams,
   resolveSort,
+  searchStateForRoute,
   stripLegacyQuery,
 } from './route';
 
@@ -279,6 +280,32 @@ describe('helpers', () => {
     expect(resolveSort('browse', 'title_desc')).toEqual({ field: 'label.keyword', order: 'desc' });
     expect(resolveSort('browse', 'page')).toEqual(titleSort);
     expect(resolveSort('search', undefined)).toEqual(relevance);
+  });
+
+  it('turns routes into jhsearch state', () => {
+    expect(searchStateForRoute(parse("#rose/search?q=people:'x'&type=advanced&o=40"))).toEqual({
+      collectionId: 'rose',
+      viewMode: 'search',
+      searchMode: 'advanced',
+      advancedRows: [{ field: 'people', value: 'x', operator: 'AND' }],
+      facets: {},
+      sort: relevance,
+      page: 2,
+      pageSize: 20,
+    });
+    expect(searchStateForRoute(parse('#rose/search?q=green'))).toMatchObject({
+      viewMode: 'search',
+      searchMode: 'simple',
+      simpleQuery: 'green',
+    });
+    expect(searchStateForRoute(parse('#rose?f.date=1350'))).toEqual({
+      collectionId: 'rose',
+      viewMode: 'browse',
+      facets: { date: [1350] },
+      sort: titleSort,
+      page: 0,
+      pageSize: 20,
+    });
   });
 
   it('strips the old search parameters from the query string', () => {

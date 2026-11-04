@@ -103,6 +103,8 @@ OPENSEARCH_PORT="${OPENSEARCH_PORT:-9200}"
 OPENSEARCH_URL="${OPENSEARCH_URL:-http://localhost:$OPENSEARCH_PORT/_search}"
 # Annotation stylesheets in rosa-viewer/public/styles/, served by the Vite dev server
 ANNOTATION_STYLESHEET_URL="${ANNOTATION_STYLESHEET_URL:-http://localhost:3001/styles/{collection}.css}"
+# Viewer sites the names in AoR annotations link to, served by the Vite dev server
+VIEWER_URL="${VIEWER_URL:-http://localhost:3001/{collection}/}"
 
 # Directories
 SITE_DIR="$SCRIPT_DIR/site"
@@ -149,6 +151,7 @@ generate_iiif() {
         --base-url "http://localhost:$IIIF_SERVER_PORT/iiif/"
         --opensearch-url "$OPENSEARCH_URL"
         --annotation-stylesheet-url "$ANNOTATION_STYLESHEET_URL"
+        --viewer-url "$VIEWER_URL"
     )
     
     [[ -n "$IMAGE_BASE_URL" ]] && cmd+=(--image-base-url "$IMAGE_BASE_URL")

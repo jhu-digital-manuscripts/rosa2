@@ -12,11 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      - name: Set up Java 25
-        uses: actions/setup-java@v6
+      - uses: ./.github/actions/setup
         with:
-          distribution: 'temurin'
-          java-version: '25'
+          node: 'false'
 
       - name: Build and test
         run: mvn verify --no-transfer-progress
@@ -28,12 +26,9 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v7
+      - uses: ./.github/actions/setup
         with:
-          node-version: '22'
-          cache: 'npm'
-          cache-dependency-path: rosa-viewer/package-lock.json
+          java: 'false'
 
       - name: Install dependencies
         run: npm ci
@@ -80,10 +75,9 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v7
+      - uses: ./.github/actions/setup
         with:
-          node-version: '22'
+          java: 'false'
 
       - name: Run function tests
         run: node --test 'jhu-rosa2-tf/modules/rosa2-image-server/functions/test/*.test.mjs'

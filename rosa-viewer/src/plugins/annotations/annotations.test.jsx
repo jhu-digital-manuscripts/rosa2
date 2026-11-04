@@ -5,12 +5,21 @@ import { render, screen, fireEvent, within } from '@testing-library/react';
 vi.mock('mirador', () => ({
   ScrollTo: ({ children }) => children,
   getAnnotationResourcesByMotivationForCanvas: vi.fn(() => ['resources']),
+  setWorkspaceAddVisibility: vi.fn((visible) => ({
+    type: 'mirador/SET_WORKSPACE_ADD_VISIBILITY',
+    isWorkspaceAddVisible: visible,
+  })),
 }));
 
 import { RosaCanvasAnnotations } from './components/RosaCanvasAnnotations';
 import { PlaceIcon } from './components/PlaceIcon';
 import { htmlToReact } from './components/AnnotationBody';
-import { mapStateToProps, rosaAnnotationsPlugin } from './index';
+import {
+  mapDispatchToProps,
+  mapStateToProps,
+  rosaAnnotationsPlugin,
+  RosaCanvasAnnotationsWrapper,
+} from './index';
 import { addStylesheet } from './utils/stylesheet';
 
 /** A Mirador annotation resource wrapping recipe 0045 annotation JSON. */
@@ -213,6 +222,81 @@ describe('notes', () => {
     expect(link).toHaveAttribute('target', '_blank');
     expect(link).toHaveAttribute('rel', 'noopener noreferrer');
   });
+
+  it('lets onFollowLink take over a link', () => {
+    const follow = vi.fn((href) => href.startsWith('#'));
+    render(
+      <div>
+        {htmlToReact(
+          '<p><a href="#aor/search?q=people:\'Plutarch\'&amp;type=advanced">Plutarch</a>' +
+            ' <a href="https://example.org/">Licence</a></p>',
+          follow
+        )}
+      </div>
+    );
+    const followed = fireEvent.click(screen.getByRole('link', { name: 'Plutarch' }));
+    expect(follow).toHaveBeenCalledWith("#aor/search?q=people:'Plutarch'&type=advanced");
+    expect(followed).toBe(false); // default prevented: no navigation
+
+    const external = fireEvent.click(screen.getByRole('link', { name: 'Licence' }));
+    expect(follow).toHaveBeenCalledWith('https://example.org/');
+    expect(external).toBe(true);
+  });
+});
+
+describe('search links', () => {
+  const people = anno(
+    'm',
+    'rosa-anno aor-marginalia aor-place-intext',
+    '<p><b>Marginal note</b></p><p><small><b>People:</b> ' +
+      "<a href=\"#aor/search?q=people:'O%5C'Neill'&amp;type=advanced\">O'Neill</a>, " +
+      '<a href="https://example.org/plutarch">Plutarch</a></small></p>',
+    'la'
+  );
+
+  function renderWrapper() {
+    const actions = {
+      selectAnnotation: vi.fn(),
+      deselectAnnotation: vi.fn(),
+      hoverAnnotation: vi.fn(),
+      applySearchState: vi.fn(),
+      setWorkspaceAddVisibility: vi.fn(),
+    };
+    render(
+      <RosaCanvasAnnotationsWrapper
+        annotationResources={[people]}
+        windowId="w1"
+        jhsearch={{ collectionId: 'aor', childCollectionIds: [] }}
+        {...actions}
+      />
+    );
+    return actions;
+  }
+
+  it('opens the advanced search for a linked name without selecting the annotation', () => {
+    const actions = renderWrapper();
+    fireEvent.click(screen.getByRole('link', { name: "O'Neill" }));
+    expect(actions.applySearchState).toHaveBeenCalledWith({
+      collectionId: 'aor',
+      viewMode: 'search',
+      searchMode: 'advanced',
+      advancedRows: [{ field: 'people', value: "O'Neill", operator: 'AND' }],
+      facets: {},
+      sort: { field: '_score', order: 'desc' },
+      page: 0,
+      pageSize: 20,
+    });
+    expect(actions.setWorkspaceAddVisibility).toHaveBeenCalledWith(true);
+    expect(actions.selectAnnotation).not.toHaveBeenCalled();
+  });
+
+  it('leaves other links alone', () => {
+    const actions = renderWrapper();
+    fireEvent.click(screen.getByRole('link', { name: 'Plutarch' }));
+    expect(actions.applySearchState).not.toHaveBeenCalled();
+    expect(actions.setWorkspaceAddVisibility).not.toHaveBeenCalled();
+    expect(actions.selectAnnotation).not.toHaveBeenCalled();
+  });
 });
 
 describe('PlaceIcon', () => {
@@ -230,12 +314,19 @@ describe('PlaceIcon', () => {
 describe('plugin', () => {
   it('wraps CanvasAnnotations and maps raw resources and hovered ids', () => {
     expect(rosaAnnotationsPlugin[0]).toMatchObject({ target: 'CanvasAnnotations', mode: 'wrap' });
-    const state = { windows: { w1: { hoveredAnnotationIds: ['x'] } } };
+    const jhsearch = { collectionId: 'aor' };
+    const state = { windows: { w1: { hoveredAnnotationIds: ['x'] } }, config: { jhsearch } };
     expect(mapStateToProps(state, { canvasId: 'c', windowId: 'w1' })).toEqual({
       annotationResources: ['resources'],
       hoveredAnnotationIds: ['x'],
+      jhsearch,
     });
     expect(mapStateToProps({}, { canvasId: 'c', windowId: 'w2' }).hoveredAnnotationIds).toEqual([]);
+    expect(Object.keys(mapDispatchToProps)).toEqual([
+      'applySearchState',
+      'setWorkspaceAddVisibility',
+    ]);
+    expect(rosaAnnotationsPlugin[0].mapDispatchToProps).toBe(mapDispatchToProps);
   });
 });
 

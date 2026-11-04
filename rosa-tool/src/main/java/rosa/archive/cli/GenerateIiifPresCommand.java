@@ -9,6 +9,8 @@ import rosa.archive.iiif.IIIFPresentationGenerator;
 
 import java.io.IOException;
 import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.Callable;
 
 /**
@@ -45,6 +47,17 @@ public final class GenerateIiifPresCommand implements Callable<Integer> {
                     + "https://example.org/aor/styles/{collection}.css")
     private String annotationStylesheetUrl;
 
+    @Option(names = "--viewer-url",
+            description = "URL of the viewer site that the people, books and locations named in AoR "
+                    + "annotations link to (advanced search). {collection} is replaced by the top-level "
+                    + "collection id, e.g. https://example.org/{collection}/. Without it the names are plain text")
+    private String viewerUrl;
+
+    @Option(names = "--collection", paramLabel = "<id>",
+            description = "Generate only this collection; repeat for several. Include a parent (dlmm) with "
+                    + "its children (rose, pizan) to list them under it. Default: every collection")
+    private List<String> collections;
+
     @Override
     public Integer call() {
         if (!archive.exists()) {
@@ -62,9 +75,21 @@ public final class GenerateIiifPresCommand implements Callable<Integer> {
                 return 1;
             }
 
+            if (collections != null) {
+                List<String> unknown = new ArrayList<>(collections);
+                unknown.removeAll(store.listCollections());
+                if (!unknown.isEmpty()) {
+                    System.err.println("Error: unknown collection(s): " + String.join(", ", unknown)
+                            + " (available: " + String.join(", ", store.listCollections()) + ")");
+                    return 1;
+                }
+            }
+
             IIIFJsonWriter writer = new IIIFJsonWriter();
             IIIFPresentationGenerator generator = new IIIFPresentationGenerator(writer);
             generator.setAnnotationStylesheetUrl(annotationStylesheetUrl);
+            generator.setViewerUrl(viewerUrl);
+            generator.setCollections(collections);
             generator.generate(store, outputPath, baseUrl, imageBaseUrl, imageApiVersion, opensearchUrl);
             return 0;
         } catch (IOException e) {

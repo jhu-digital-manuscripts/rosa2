@@ -54,19 +54,25 @@ npm run build                  # library build only: dist/rosa-viewer.{es,umd}.j
 | Environment | Viewer | IIIF files | Search | Image server | How |
 |-------------|--------|------------|--------|--------------|-----|
 | local-dev | Vite dev server on :3001 (`/`, `/aor/`, `/dlmm/`) | `local-dev/site/iiif` on :3000 | Docker Opensearch 3.1 on :9200 | stage CloudFront (see `local-dev/config.env.example`) | `local-dev/start.sh` + `npm run dev` |
-| stage | GitHub Pages: `<pages-url>/aor/`, `<pages-url>/dlmm/` | `<pages-url>/iiif/` (shared) | stage API Gateway | stage CloudFront | `Deploy Stage` workflow |
-| prod | Uploaded to the AoR and DLMM WordPress portals | `<site-url>/iiif/` inside each site package | prod API Gateway | `image.library.jhu.edu` | `Release` workflow → `aor-site.tar.gz`, `dlmm-site.tar.gz` |
+| stage | GitHub Pages: `<pages-url>/aor/`, `<pages-url>/dlmm/` | `<pages-url>/<site>/iiif/` inside each site | stage API Gateway | stage CloudFront | `Deploy Stage` workflow (`package-site.sh` per site) |
+| prod | Uploaded to the AoR and DLMM WordPress portals | `<site-url>/iiif/` inside each site package | prod API Gateway | `image.library.jhu.edu` | `Release` workflow (`package-site.sh` per site) → `aor-site.tar.gz`, `dlmm-site.tar.gz` |
 
 The same viewer build serves every environment; only the `VITE_ROSA_*` URLs, the
-IIIF `--base-url`, the image server URL and the Opensearch URL written to
-`jhsearch.json` change.
+IIIF `--base-url`, the image server URL, the Opensearch URL written to
+`jhsearch.json` and the `--viewer-url` that the names in AoR annotations link to
+change.
 
 ## Packaging a site
 
 `rosa-viewer/scripts/package-site.sh` builds everything one site needs for a
 static host: the viewer built for its public URL plus the IIIF Presentation
-files for its collections (AoR: `aor`; DLMM: `dlmm`, `rose`, `pizan`), with
-all ids generated under `<site-url>/iiif/`.
+files for its collections, with all ids generated under `<site-url>/iiif/`, the
+annotation stylesheet at `<site-url>/styles/` and the people, books and places in
+AoR annotations linking to `<site-url>/#…` searches. The collections come from
+the site definition `rosa-viewer/sites/<site>/site.config.js` (AoR: `aor`; DLMM:
+`dlmm`, `rose`, `pizan`), read by `scripts/site-collections.mjs`, and only they
+are generated (`generate-iiif-pres --collection`). Both the `Deploy Stage` and
+the `Release` workflow package sites this way.
 
 ```bash
 cd rosa-tool && mvn package -DskipTests && cd ..
@@ -113,14 +119,16 @@ java -jar rosa-tool/target/rosa-tool.jar generate-iiif-pres \
   --image-base-url https://image.example.org/iiif/3 \
   --image-api-version 3 \
   --opensearch-url https://search.example.org:9200/_search \
-  --annotation-stylesheet-url 'https://viewer.example.org/{collection}/styles/{collection}.css'
+  --annotation-stylesheet-url 'https://viewer.example.org/{collection}/styles/{collection}.css' \
+  --viewer-url 'https://viewer.example.org/{collection}/'
 ```
 
 The options are described under
 [`generate-iiif-pres`](usage.md#generate-iiif-pres). `{collection}` becomes
-`aor` or `dlmm`, which are also the site directories, so the URL names each
-site's copy of `public/styles/`. The output directory is not emptied first, so
-delete stale output yourself (`package-site.sh` does).
+`aor` or `dlmm`, which are also the site directories, so the stylesheet URL names
+each site's copy of `public/styles/` and the viewer URL the site whose search the
+AoR annotation names open. The output directory is not emptied first, so delete
+stale output yourself (`package-site.sh` does).
 
 ### 3. Create the indexes and ingest
 
@@ -250,7 +258,8 @@ three `_search` paths to :9200 (`rosa-viewer/vite.config.js`). Run
 
 Workflows live in `.github/workflows/`. The manual ones (`Deploy Stage`,
 `Release`) run against the branch chosen in the "Use workflow from" dropdown of
-the Run workflow dialog.
+the Run workflow dialog. All of them set up Java 25 and Node.js 22 with the
+composite action `.github/actions/setup` (inputs `java` and `node` to skip one).
 
 ### ci.yml (CI)
 
@@ -276,16 +285,18 @@ Inputs:
 | `image_base_url` | IIIF Image API base URL | `https://d32j4c172m91zy.cloudfront.net/iiif/3` (stage image server) |
 | `image_api_version` | IIIF Image API version | `3` |
 
-The workflow builds rosa-tool, generates the IIIF files from the in-repo
-`archive/` with ids under `<pages-url>/iiif/`, builds both sites with
-`VITE_ROSA_IIIF_BASE_URL=<pages-url>/iiif`, and deploys:
+The workflow builds rosa-tool, runs `package-site.sh` for each site with
+`--site-url <pages-url>/<site>` against the in-repo `archive/` (see
+[Packaging a site](#packaging-a-site)), adds the chooser page and deploys:
 
 ```
-<pages-url>/            chooser page
-<pages-url>/aor/        The Archaeology of Reading
-<pages-url>/dlmm/       Digital Library of Medieval Manuscripts
-<pages-url>/iiif/       IIIF Presentation files (all collections)
+<pages-url>/            chooser page (rosa-viewer/sites/index.html)
+<pages-url>/aor/        The Archaeology of Reading: viewer, styles/, iiif/
+<pages-url>/dlmm/       Digital Library of Medieval Manuscripts: viewer, styles/, iiif/
 ```
+
+Each site carries its own IIIF files under `<pages-url>/<site>/iiif/`, exactly as
+the release tarballs do.
 
 The Pages origin (`https://<owner>.github.io`) must be in
 `cors_allowed_origins` in `jhu-rosa2-tf/stage.tfvars`.
@@ -309,7 +320,7 @@ Inputs:
 Steps:
 
 1. Sets the release version in rosa-tool (pom.xml) and rosa-viewer (package.json)
-2. Builds and tests both components
+2. Builds and tests both components (rosa-viewer: lint, format check, tests)
 3. Packages each site with `package-site.sh` for its site URL
 4. Creates a GitHub release with:
    - `rosa-tool.jar` — Executable Java CLI

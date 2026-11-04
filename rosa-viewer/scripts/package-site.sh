@@ -2,22 +2,26 @@
 #
 # package-site.sh - Build a deployable rosa-viewer site: the viewer plus the
 # static IIIF Presentation files it needs, ready to copy to any static web host
-# (for example the WordPress portal used for production).
+# (the WordPress portals in production, GitHub Pages on stage).
 #
 # Output layout:
 #   <output>/index.html, assets/, logo/   the viewer built for the site
 #   <output>/styles/<collection>.css      annotation stylesheets (from public/styles/)
 #   <output>/iiif/                        IIIF files for the site's collections
 #
+# The site's collections come from sites/<site>/site.config.js (via
+# scripts/site-collections.mjs), so only its own IIIF files are generated.
+#
 # Usage:
 #   scripts/package-site.sh --site <aor|dlmm> --site-url <url> --opensearch-url <url> [options]
 #
 # Options:
-#   --site <id>              Site to build: aor or dlmm (required)
+#   --site <id>              Site to build, a directory in sites/ (required)
 #   --site-url <url>         Public URL the site will be served from, e.g.
 #                            https://archaeologyofreading.org/viewer (required).
-#                            IIIF ids are generated under <site-url>/iiif/ and
-#                            annotations reference <site-url>/styles/<collection>.css.
+#                            IIIF ids are generated under <site-url>/iiif/, annotations
+#                            reference <site-url>/styles/<collection>.css and the names
+#                            in AoR annotations link to <site-url>/#... searches.
 #   --opensearch-url <url>   Opensearch _search URL written to jhsearch.json (required)
 #   --image-base-url <url>   IIIF Image API base URL (default: https://image.library.jhu.edu/iiif)
 #   --image-api-version <n>  IIIF Image API version, 2 or 3 (default: 2)
@@ -27,7 +31,7 @@
 #   --tarball <file>         Also write the output directory to a .tar.gz
 #   --help                   Show this help
 #
-# Prerequisites: Java 25, Node.js 20 with rosa-viewer dependencies installed
+# Prerequisites: Java 25, Node.js 22 with rosa-viewer dependencies installed
 # (npm ci), and rosa-tool built (mvn package in rosa-tool/).
 
 set -euo pipefail
@@ -47,7 +51,7 @@ OUTPUT=""
 TARBALL=""
 
 usage() {
-    sed -n '3,31p' "$0" | sed 's/^# \?//'
+    sed -n '3,36p' "$0" | sed 's/^# \?//'
     exit "${1:-0}"
 }
 
@@ -72,15 +76,7 @@ while [[ $# -gt 0 ]]; do
     esac
 done
 
-# Collections each site needs from the generated IIIF tree. Everything else is
-# pruned so a package only carries its own data.
-case "$SITE" in
-    aor) COLLECTIONS=(aor) ;;
-    dlmm) COLLECTIONS=(dlmm rose pizan) ;;
-    "") error "--site is required (aor or dlmm)" ;;
-    *) error "Unknown site '$SITE' (expected aor or dlmm)" ;;
-esac
-
+[[ -n "$SITE" ]] || error "--site is required"
 [[ -n "$SITE_URL" ]] || error "--site-url is required"
 [[ -n "$OPENSEARCH_URL" ]] || error "--opensearch-url is required"
 [[ -d "$ARCHIVE" ]] || error "Archive directory not found: $ARCHIVE"
@@ -88,17 +84,27 @@ esac
 Build it first: cd $REPO_ROOT/rosa-tool && mvn package -DskipTests"
 [[ -d "$VIEWER_DIR/node_modules" ]] || error "rosa-viewer dependencies not installed. Run: cd $VIEWER_DIR && npm ci"
 
+# The collections the site shows, from its site.config.js; also validates the site id
+COLLECTIONS_LINE="$(node "$SCRIPT_DIR/site-collections.mjs" "$SITE")" || exit 1
+read -r -a COLLECTIONS <<< "$COLLECTIONS_LINE"
+COLLECTION_ARGS=()
+for c in "${COLLECTIONS[@]}"; do
+    COLLECTION_ARGS+=(--collection "$c")
+done
+
 SITE_URL="${SITE_URL%/}"
 IMAGE_BASE_URL="${IMAGE_BASE_URL%/}"
 OUTPUT="${OUTPUT:-$VIEWER_DIR/dist/packages/$SITE}"
 IIIF_BASE_URL="$SITE_URL/iiif"
 
 echo "Packaging site '$SITE'"
+echo "  collections:       ${COLLECTIONS[*]}"
 echo "  site URL:          $SITE_URL"
 echo "  IIIF base URL:     $IIIF_BASE_URL"
 echo "  image base URL:    $IMAGE_BASE_URL (API v$IMAGE_API_VERSION)"
 echo "  Opensearch URL:    $OPENSEARCH_URL"
 echo "  annotation styles: $SITE_URL/styles/{collection}.css"
+echo "  annotation links:  $SITE_URL/#..."
 echo "  output:            $OUTPUT"
 
 rm -rf "$OUTPUT"
@@ -108,23 +114,13 @@ echo "==> Generating IIIF Presentation files"
 java -jar "$JAR" generate-iiif-pres \
     --archive "$ARCHIVE" \
     --output "$OUTPUT/iiif" \
+    "${COLLECTION_ARGS[@]}" \
     --base-url "$IIIF_BASE_URL/" \
     --image-base-url "$IMAGE_BASE_URL" \
     --image-api-version "$IMAGE_API_VERSION" \
     --opensearch-url "$OPENSEARCH_URL" \
-    --annotation-stylesheet-url "$SITE_URL/styles/{collection}.css"
-
-echo "==> Keeping collections: ${COLLECTIONS[*]}"
-for entry in "$OUTPUT"/iiif/*; do
-    name="$(basename "$entry")"
-    keep=false
-    for c in "${COLLECTIONS[@]}"; do
-        [[ "$name" == "$c" ]] && keep=true
-    done
-    if [[ "$keep" != "true" ]]; then
-        rm -rf "$entry"
-    fi
-done
+    --annotation-stylesheet-url "$SITE_URL/styles/{collection}.css" \
+    --viewer-url "$SITE_URL/"
 
 echo "==> Building the viewer"
 (

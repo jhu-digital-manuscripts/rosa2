@@ -311,7 +311,7 @@ classes; change the HTML conventions below and the stylesheets together.
 | Part of a marginal note in another place | `<p><small>[Right margin]</small> …</p>` |
 | Text element with language or hand | `<p>… <small>(Latin, Italian hand)</small></p>` |
 | Translation | `<p><i>…</i></p>` |
-| Metadata line | `<p><small><b>People:</b> a, b</small></p>`; labels used: Reader, Anchored to, Topic, People, Books, Locations, Symbols, Underlined, Cross-references, Refers to, Other reader, Date, Continues from, Continues to, Columns |
+| Metadata line | `<p><small><b>People:</b> a, b</small></p>`; labels used: Reader, Anchored to, Topic, People, Books, Locations, Symbols, Underlined, Cross-references, Refers to, Other reader, Date, Continues from, Continues to, Columns. With `--viewer-url`, each People, Books and Locations value is a link to the viewer's advanced search for it: `<a href="https://example.org/aor/#aor/search?q=people:'Plutarch'&amp;type=advanced">Plutarch</a>` (see [Viewer URL](#viewer-url)) |
 | Line list (graph nodes, table rows as `a \| b`, calculation lines, physical links `source → target (relationship)`) | one `<p>` with the lines separated by `<br>` |
 | Illustration field | `<p><b>Costume:</b> Ankle-length gown</p>`; fields in order: Titles, Characters, Textual elements, Costume, Initials, Objects, Landscape, Architecture, Other |
 | Transcription column heading | `<p><b>Column a</b></p>` (omitted when the page has a single unnamed column) |
@@ -335,6 +335,30 @@ reference the `dlmm` stylesheet and `aor` annotations the `aor` one:
 `https://example.org/{collection}/styles/{collection}.css` becomes
 `https://example.org/dlmm/styles/dlmm.css`. Without the option, annotations have no
 `stylesheet`.
+
+## Viewer URL
+
+`--viewer-url` names the viewer site that the people, books and locations in AoR
+annotation bodies link to. `{collection}` is replaced the same way as in the
+stylesheet URL (the collection's parent, or the collection itself), so
+`https://example.org/{collection}/` gives `https://example.org/aor/` for `aor`.
+Without the option the names are plain text and the output is unchanged.
+
+Each name becomes `<a href="…">name</a>` whose target is the site's own advanced
+search URL (`rosa-viewer/src/site/history/route.js`):
+
+```
+https://example.org/aor/#aor/search?q=people:'Plutarch'&type=advanced
+```
+
+The field is `people`, `books` or `locations`, the value is quoted with `'`
+(`\` and `'` in it escaped with a backslash) and the parameter is
+percent-encoded with `+` for spaces (`AorSearchLinks`). In any IIIF viewer the
+link opens the site's search for that name. The rosa viewer recognises links into
+the page it is on (same origin and path, or a bare fragment) and follows them in
+place: the add-resource view opens with advanced search on the field and value
+(`rosa-viewer/src/plugins/annotations/utils/siteLinks.js`). The encoding on both
+sides must stay in step.
 
 ## JHSearch service
 

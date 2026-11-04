@@ -129,6 +129,20 @@
   font-weight: 600;
 }
 
+/* People, books and places link to the advanced search for them */
+.rosa-anno[class*='aor-'] p.rosa-meta a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(138, 43, 33, 0.45);
+  text-underline-offset: 0.12em;
+}
+
+.rosa-anno[class*='aor-'] p.rosa-meta a:hover,
+.rosa-anno[class*='aor-'] p.rosa-meta a:focus-visible {
+  color: #8a2b21;
+  text-decoration-color: currentColor;
+}
+
 /* Marginal notes stand out from marks */
 .rosa-annos .rosa-anno-entry.aor-marginalia > .rosa-anno-select {
   padding-block: 0.7rem;

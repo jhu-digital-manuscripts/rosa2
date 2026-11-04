@@ -88,6 +88,51 @@ class AorAnnotationFormatterTest {
     }
 
     @Test
+    void namesLinkToTheAdvancedSearchWhenLinksAreConfigured() {
+        Position pos = position(Location.INTEXT, "Excidium Troia[e], secundum Plutarchum");
+        pos.getPeople().add("Plutarch");
+        pos.getPeople().add("Dionysius of Halicarnassus");
+        pos.getBooks().add("Chronicum");
+        pos.getLocations().add("Troy");
+        AnnotatedPage page = new AnnotatedPage();
+        page.getMarginalia().add(marginalia("LA", pos));
+
+        AorSearchLinks links = new AorSearchLinks("https://example.org/aor/", "aor");
+        AnnotationItem item = AorAnnotationFormatter.format(page, links).get(0);
+        assertEquals("<p><b>Marginal note</b> <small>Latin, Italian hand</small></p>"
+                + "<p>Excidium Troia[e], secundum Plutarchum</p>"
+                + "<p><small><b>People:</b> "
+                + "<a href=\"https://example.org/aor/#aor/search?q=people:'Plutarch'&amp;type=advanced\">Plutarch</a>, "
+                + "<a href=\"https://example.org/aor/#aor/search?q=people:'Dionysius+of+Halicarnassus'&amp;type=advanced\">Dionysius of Halicarnassus</a>"
+                + "</small></p>"
+                + "<p><small><b>Books:</b> "
+                + "<a href=\"https://example.org/aor/#aor/search?q=books:'Chronicum'&amp;type=advanced\">Chronicum</a></small></p>"
+                + "<p><small><b>Locations:</b> "
+                + "<a href=\"https://example.org/aor/#aor/search?q=locations:'Troy'&amp;type=advanced\">Troy</a></small></p>",
+                item.html());
+        assertNull(AnnotationHtml.findViolation(item.html()));
+
+        // Without links the names are plain text, as before
+        assertTrue(AorAnnotationFormatter.format(page).get(0).html()
+                .contains("<p><small><b>People:</b> Plutarch, Dionysius of Halicarnassus</small></p>"));
+    }
+
+    @Test
+    void linkedNamesAreEscapedAndCompliant() {
+        Position pos = position(Location.INTEXT, "x");
+        pos.getPeople().add("a < b & \"c\" 'd' \\");
+        AnnotatedPage page = new AnnotatedPage();
+        page.getMarginalia().add(marginalia("LA", pos));
+
+        AnnotationItem item = AorAnnotationFormatter.format(page,
+                new AorSearchLinks("https://example.org/aor/", "aor")).get(0);
+        assertNull(AnnotationHtml.findViolation(item.html()), item.html());
+        assertTrue(item.html().contains(
+                "<a href=\"https://example.org/aor/#aor/search?q=people:'a+%3C+b+%26+%22c%22+%5C'd%5C'+%5C%5C'&amp;type=advanced\">"
+                + "a &lt; b &amp; &quot;c&quot; 'd' \\</a>"), item.html());
+    }
+
+    @Test
     void multiPlaceMarginaliaUsesFirstPlaceAndLabelsTheRest() {
         Marginalia m = marginalia("LA",
                 position(Location.INTEXT, "Ante omnes auctores,"),
