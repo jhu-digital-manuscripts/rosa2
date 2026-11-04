@@ -68,6 +68,58 @@ describe('jhsearchReducer', () => {
       expect(selectors.getServiceCollectionId({ jhsearch: state })).toBe('rose');
       expect(selectors.getSelectedCollectionId({ jhsearch: state })).toBe('pizan');
     });
+
+    describe('advanced rows on a collection change', () => {
+      const dlmmService = {
+        collectionId: 'dlmm',
+        fields: [
+          { name: 'description', label: 'Description' },
+          { name: 'title', label: 'Title' },
+        ],
+        categories: [],
+        defaultFields: ['description'],
+        opensearchUrl: 'http://localhost:9200/_search',
+      };
+
+      const searchOnRose = (rows) => {
+        let state = jhsearchReducer(undefined, actions.loadServiceSuccess(roseService));
+        state = jhsearchReducer(state, actions.setSearchMode('advanced'));
+        state = jhsearchReducer(state, actions.setAdvancedRows(rows));
+        state = jhsearchReducer(state, actions.setViewMode('search'));
+        return jhsearchReducer(state, actions.selectCollection('dlmm'));
+      };
+
+      it('drops rows for fields the new collection lacks and falls back to browse', () => {
+        let state = searchOnRose([{ field: 'character', value: 'Amant', operator: 'AND' }]);
+        state = jhsearchReducer(state, actions.loadServiceSuccess(dlmmService));
+
+        expect(state.advancedSearch.rows).toEqual([{ field: '', value: '', operator: 'AND' }]);
+        expect(state.ui.viewMode).toBe('browse');
+        expect(state.sort).toEqual({ field: 'label.keyword', order: 'asc' });
+      });
+
+      it('keeps rows for fields the new collection has', () => {
+        let state = searchOnRose([
+          { field: 'description', value: 'rose', operator: 'AND' },
+          { field: 'character', value: 'Amant', operator: 'AND' },
+        ]);
+        state = jhsearchReducer(state, actions.loadServiceSuccess(dlmmService));
+
+        expect(state.advancedSearch.rows).toEqual([
+          { field: 'description', value: 'rose', operator: 'AND' },
+        ]);
+        expect(state.ui.viewMode).toBe('search');
+      });
+
+      it('leaves the rows alone when every field is known', () => {
+        const rows = [{ field: 'description', value: 'rose', operator: 'AND' }];
+        let state = searchOnRose(rows);
+        const before = state.advancedSearch;
+        state = jhsearchReducer(state, actions.loadServiceSuccess(dlmmService));
+
+        expect(state.advancedSearch).toBe(before);
+      });
+    });
   });
 
   describe('UI actions', () => {

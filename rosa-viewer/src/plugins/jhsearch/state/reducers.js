@@ -3,6 +3,7 @@
  */
 
 import * as actions from './actions';
+import { rowHasQuery } from '../utils/queryBuilder';
 
 // ============================================================================
 // Initial State
@@ -163,17 +164,43 @@ export function jhsearchReducer(state = initialState, action) {
         },
       };
 
-    case actions.LOAD_SERVICE_SUCCESS:
-      return {
+    case actions.LOAD_SERVICE_SUCCESS: {
+      const service = {
+        ...state.service,
+        ...action.payload,
+        loaded: true,
+        loading: false,
+        error: null,
+      };
+
+      // Each collection has its own fields, so advanced rows for a field the newly
+      // loaded collection lacks (e.g. rose's Character after switching to dlmm) are
+      // dropped. The query builder would skip them anyway, so keeping them left a
+      // row that searched for nothing and results matching the whole collection.
+      const fieldNames = new Set((service.fields || []).map((f) => f.name));
+      const rows = state.advancedSearch.rows;
+      const keptRows =
+        fieldNames.size === 0 ? rows : rows.filter((r) => !r.field || fieldNames.has(r.field));
+      if (keptRows.length === rows.length) {
+        return { ...state, service };
+      }
+
+      const next = {
         ...state,
-        service: {
-          ...state.service,
-          ...action.payload,
-          loaded: true,
-          loading: false,
-          error: null,
+        service,
+        advancedSearch: {
+          rows: keptRows.length > 0 ? keptRows : [{ field: '', value: '', operator: 'AND' }],
         },
       };
+
+      // An advanced search left with nothing to search for is a browse, as when the
+      // form is submitted empty
+      const searchLeft = keptRows.some((r) => r.field && rowHasQuery(r));
+      if (state.ui.searchMode === 'advanced' && state.ui.viewMode === 'search' && !searchLeft) {
+        return jhsearchReducer(next, actions.setViewMode('browse'));
+      }
+      return next;
+    }
 
     case actions.LOAD_SERVICE_FAILURE:
       return {
