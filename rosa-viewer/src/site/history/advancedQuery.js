@@ -19,6 +19,9 @@
  * The optional `+ quoted` part is the extra free text a row for an enumerated
  * field with sub-fields can carry beside its chosen value, e.g. `mark:'dash'+'regnum'`.
  * The value may then be empty: `mark:''+'regnum'`. The old viewers never wrote it.
+ *
+ * Double quotes are ordinary characters here; they mark a phrase for the query
+ * builder (`people:'"Julius Caesar"'`, see plugins/jhsearch/utils/searchText.js).
  */
 
 /**

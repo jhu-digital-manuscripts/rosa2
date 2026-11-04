@@ -311,7 +311,7 @@ classes; change the HTML conventions below and the stylesheets together.
 | Part of a marginal note in another place | `<p><small>[Right margin]</small> …</p>` |
 | Text element with language or hand | `<p>… <small>(Latin, Italian hand)</small></p>` |
 | Translation | `<p><i>…</i></p>` |
-| Metadata line | `<p><small><b>People:</b> a, b</small></p>`; labels used: Reader, Anchored to, Topic, People, Books, Locations, Symbols, Underlined, Cross-references, Refers to, Other reader, Date, Continues from, Continues to, Columns. With `--viewer-url`, each People, Books and Locations value is a link to the viewer's advanced search for it: `<a href="https://example.org/aor/#aor/search?q=people:'Plutarch'&amp;type=advanced">Plutarch</a>`; in Cross-references (`person, title: “quote”`) the person and title link to the `cross_reference` search; in Refers to (`text → “target”; “target”`, each target between its prefix and suffix) a target links to the page it resolves to, `<a href="https://example.org/aor/#aor/RCPD1266/037v/image">“60”</a>` (see [Viewer URL](#viewer-url)) |
+| Metadata line | `<p><small><b>People:</b> a, b</small></p>`; labels used: Reader, Anchored to, Topic, People, Books, Locations, Symbols, Underlined, Cross-references, Refers to, Other reader, Date, Continues from, Continues to, Columns. With `--viewer-url`, each People, Books and Locations value is a link to the viewer's advanced search for it as a phrase: `<a href="https://example.org/aor/#aor/search?q=people:'%22Plutarch%22'&amp;type=advanced">Plutarch</a>`; in Cross-references (`person, title: “quote”`) the person and title link to the `cross_reference` search; in Refers to (`text → “target”; “target”`, each target between its prefix and suffix) a target links to the page it resolves to, `<a href="https://example.org/aor/#aor/RCPD1266/037v/image">“60”</a>` (see [Viewer URL](#viewer-url)) |
 | Line list (graph nodes, table rows as `a \| b`, calculation lines, physical links `source → target (relationship)`) | one `<p>` with the lines separated by `<br>` |
 | Illustration field | `<p><b>Costume:</b> Ankle-length gown</p>`; fields in order: Titles, Characters, Textual elements, Costume, Initials, Objects, Landscape, Architecture, Other |
 | Transcription column heading | `<p><b>Column a</b></p>` (omitted when the page has a single unnamed column) |
@@ -348,14 +348,16 @@ Each name becomes `<a href="…">name</a>` whose target is the site's own advanc
 search URL (`rosa-viewer/src/site/history/route.js`):
 
 ```
-https://example.org/aor/#aor/search?q=people:'Plutarch'&type=advanced
+https://example.org/aor/#aor/search?q=people:'%22Julius+Caesar%22'&type=advanced
 ```
 
 The field is `people`, `books`, `locations` or, for the person and title of a
-cross-reference, `cross_reference`; the value is quoted with `'` (`\` and `'` in
-it escaped with a backslash) and the parameter is percent-encoded with `+` for
-spaces (`AorSearchLinks`). In any IIIF viewer the link opens the site's search for
-that name.
+cross-reference, `cross_reference`; the value is wrapped in double quotes (`%22`),
+which the viewer's search text reads as a phrase, so the link finds `Julius Caesar`
+rather than every Julius and every Caesar (double quotes in the value itself are
+dropped); the quoted value is then quoted with `'` (`\` and `'` in it escaped with a
+backslash) and the parameter is percent-encoded with `+` for spaces
+(`AorSearchLinks`). In any IIIF viewer the link opens the site's search for that name.
 
 The targets of internal references (`<internal_ref><target ref="…">`) link to the
 page they point to, in the site's book URL form:

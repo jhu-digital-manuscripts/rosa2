@@ -262,7 +262,7 @@ describe('search links', () => {
     'm',
     'rosa-anno aor-marginalia aor-place-intext',
     '<p><b>Marginal note</b></p><p><small><b>People:</b> ' +
-      "<a href=\"#aor/search?q=people:'O%5C'Neill'&amp;type=advanced\">O'Neill</a>, " +
+      "<a href=\"#aor/search?q=people:'%22O%5C'Neill%22'&amp;type=advanced\">O'Neill</a>, " +
       '<a href="https://example.org/plutarch">Plutarch</a></small></p>' +
       '<p><small><b>Refers to:</b> <a href="#aor/RCPD1266/037v/image">“60”</a></small></p>',
     'la'
@@ -316,7 +316,7 @@ describe('search links', () => {
       collectionId: 'aor',
       viewMode: 'search',
       searchMode: 'advanced',
-      advancedRows: [{ field: 'people', value: "O'Neill", operator: 'AND' }],
+      advancedRows: [{ field: 'people', value: '"O\'Neill"', operator: 'AND' }],
       facets: {},
       sort: { field: '_score', order: 'desc' },
       page: 0,

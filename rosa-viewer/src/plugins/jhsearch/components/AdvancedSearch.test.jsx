@@ -7,7 +7,7 @@ import { describe, it, expect } from 'vitest';
 import { render, screen, fireEvent, act } from '@testing-library/react';
 import { Provider } from 'react-redux';
 
-import { AdvancedSearch } from './AdvancedSearch';
+import { AdvancedSearch, TERM_PLACEHOLDER } from './AdvancedSearch';
 import { jhsearchReducer, initialState } from '../state/reducers';
 import { mockReduxState } from '../../../test/mocks';
 
@@ -64,7 +64,7 @@ function chooseField(index, label) {
 }
 
 function typeInRow(index, value) {
-  fireEvent.change(screen.getAllByPlaceholderText('Search term...')[index], {
+  fireEvent.change(screen.getAllByPlaceholderText(TERM_PLACEHOLDER)[index], {
     target: { value },
   });
 }
@@ -82,7 +82,7 @@ describe('AdvancedSearch', () => {
 
     const values = store.getState().jhsearch.advancedSearch.rows.map((r) => r.value);
     expect(values).toEqual(['sword', 'pyramid']);
-    expect(screen.getAllByPlaceholderText('Search term...')).toHaveLength(2);
+    expect(screen.getAllByPlaceholderText(TERM_PLACEHOLDER)).toHaveLength(2);
   });
 
   it('shows the same rows after switching tabs away and back', () => {
@@ -99,7 +99,7 @@ describe('AdvancedSearch', () => {
     unmount();
     renderWithStore(store);
 
-    const inputs = screen.getAllByPlaceholderText('Search term...');
+    const inputs = screen.getAllByPlaceholderText(TERM_PLACEHOLDER);
     expect(inputs.map((i) => i.value)).toEqual(['sword', 'pyramid']);
   });
 
@@ -122,11 +122,11 @@ describe('AdvancedSearch', () => {
   it('shows no value input until a field is chosen', () => {
     renderWithStore(createStore([emptyRow]));
 
-    expect(screen.queryByPlaceholderText('Search term...')).toBeNull();
+    expect(screen.queryByPlaceholderText(TERM_PLACEHOLDER)).toBeNull();
     expect(screen.queryByRole('combobox', { name: /value/i })).toBeNull();
 
     chooseField(0, 'Description');
-    expect(screen.getByPlaceholderText('Search term...')).toBeInTheDocument();
+    expect(screen.getByPlaceholderText(TERM_PLACEHOLDER)).toBeInTheDocument();
   });
 
   it('lists fields in alphabetical order of label', () => {

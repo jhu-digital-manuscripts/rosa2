@@ -36,6 +36,12 @@ describe('siteRoute', () => {
     ]);
   });
 
+  it('keeps the double quotes rosa-tool wraps a name in, so it searches as a phrase', () => {
+    const href = `#aor/search?q=people:'%22Julius+Caesar%22'&type=advanced`;
+    const route = siteRoute(href, jhsearch, page('https://x.org/aor/'));
+    expect(route.rows).toEqual([{ field: 'people', value: '"Julius Caesar"', operator: 'AND' }]);
+  });
+
   it('ignores links to other origins and other pages', () => {
     const here = page('https://x.org/aor/');
     expect(siteRoute(`https://other.org/aor/#${plutarch}`, jhsearch, here)).toBeNull();

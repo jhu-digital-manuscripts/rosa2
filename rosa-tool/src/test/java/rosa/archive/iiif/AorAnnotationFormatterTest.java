@@ -106,13 +106,13 @@ class AorAnnotationFormatterTest {
         assertEquals("<p><b>Marginal note</b> <small>Latin, Italian hand</small></p>"
                 + "<p>Excidium Troia[e], secundum Plutarchum</p>"
                 + "<p><small><b>People:</b> "
-                + "<a href=\"https://example.org/aor/#aor/search?q=people:'Plutarch'&amp;type=advanced\">Plutarch</a>, "
-                + "<a href=\"https://example.org/aor/#aor/search?q=people:'Dionysius+of+Halicarnassus'&amp;type=advanced\">Dionysius of Halicarnassus</a>"
+                + "<a href=\"https://example.org/aor/#aor/search?q=people:'%22Plutarch%22'&amp;type=advanced\">Plutarch</a>, "
+                + "<a href=\"https://example.org/aor/#aor/search?q=people:'%22Dionysius+of+Halicarnassus%22'&amp;type=advanced\">Dionysius of Halicarnassus</a>"
                 + "</small></p>"
                 + "<p><small><b>Books:</b> "
-                + "<a href=\"https://example.org/aor/#aor/search?q=books:'Chronicum'&amp;type=advanced\">Chronicum</a></small></p>"
+                + "<a href=\"https://example.org/aor/#aor/search?q=books:'%22Chronicum%22'&amp;type=advanced\">Chronicum</a></small></p>"
                 + "<p><small><b>Locations:</b> "
-                + "<a href=\"https://example.org/aor/#aor/search?q=locations:'Troy'&amp;type=advanced\">Troy</a></small></p>",
+                + "<a href=\"https://example.org/aor/#aor/search?q=locations:'%22Troy%22'&amp;type=advanced\">Troy</a></small></p>",
                 item.html());
         assertNull(AnnotationHtml.findViolation(item.html()));
 
@@ -132,7 +132,7 @@ class AorAnnotationFormatterTest {
                 new AorLinks(new AorSearchLinks("https://example.org/aor/", "aor"), null)).get(0);
         assertNull(AnnotationHtml.findViolation(item.html()), item.html());
         assertTrue(item.html().contains(
-                "<a href=\"https://example.org/aor/#aor/search?q=people:'a+%3C+b+%26+%22c%22+%5C'd%5C'+%5C%5C'&amp;type=advanced\">"
+                "<a href=\"https://example.org/aor/#aor/search?q=people:'%22a+%3C+b+%26+c+%5C'd%5C'+%5C%5C%22'&amp;type=advanced\">"
                 + "a &lt; b &amp; &quot;c&quot; 'd' \\</a>"), item.html());
     }
 
@@ -153,8 +153,8 @@ class AorAnnotationFormatterTest {
                 r -> r.startsWith("BL615d7:") ? Optional.of(target) : Optional.empty());
         String html = AorAnnotationFormatter.format(page, links).get(0).html();
         assertTrue(html.contains("<p><small><b>Cross-references:</b> "
-                + "<a href=\"https://example.org/aor/#aor/search?q=cross_reference:'Plutarch'&amp;type=advanced\">Plutarch</a>, "
-                + "<a href=\"https://example.org/aor/#aor/search?q=cross_reference:'Moralia'&amp;type=advanced\">Moralia</a>: "
+                + "<a href=\"https://example.org/aor/#aor/search?q=cross_reference:'%22Plutarch%22'&amp;type=advanced\">Plutarch</a>, "
+                + "<a href=\"https://example.org/aor/#aor/search?q=cross_reference:'%22Moralia%22'&amp;type=advanced\">Moralia</a>: "
                 + "\u201cDemadi, sus Minerva[e]\u201d</small></p>"), html);
         assertTrue(html.contains("<p><small><b>Refers to:</b> infra \u2192 "
                 + "[the] <a href=\"https://example.org/aor/#aor/BL615d7/035r/image\">\u201cfol[io] 35\u201d</a> leafe; "

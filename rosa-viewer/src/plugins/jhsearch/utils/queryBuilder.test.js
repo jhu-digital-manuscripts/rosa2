@@ -7,6 +7,7 @@ import {
   buildBrowseQuery,
   buildSimpleSearchQuery,
   buildAdvancedSearchQuery,
+  buildTextClause,
   buildFacetAggregations,
   buildSortClause,
   rowHasQuery,
@@ -139,6 +140,72 @@ describe('queryBuilder', () => {
 
       expect(query).toHaveProperty('highlight');
     });
+
+    it('lets any bare word match, as Opensearch does by default', () => {
+      const query = buildSimpleSearchQuery({
+        query: 'rose amant',
+        defaultFields: ['label'],
+        fieldDefinitions: [],
+        collectionId: 'rose',
+      });
+      expect(query.query.bool.must).toEqual([
+        { multi_match: { query: 'rose amant', fields: ['label'], type: 'best_fields' } },
+      ]);
+    });
+
+    it('searches a quoted phrase beside the bare words', () => {
+      const query = buildSimpleSearchQuery({
+        query: 'rose "Guillaume de Lorris"',
+        defaultFields: ['label'],
+        fieldDefinitions: [],
+        collectionId: 'rose',
+      });
+      expect(query.query.bool.must).toEqual([
+        {
+          bool: {
+            should: [
+              { multi_match: { query: 'rose', fields: ['label'], type: 'best_fields' } },
+              { multi_match: { query: 'Guillaume de Lorris', fields: ['label'], type: 'phrase' } },
+            ],
+            minimum_should_match: 1,
+          },
+        },
+      ]);
+      expect(query.highlight.fields).toEqual({ label: {} });
+    });
+  });
+
+  describe('buildTextClause', () => {
+    const fields = ['title.*'];
+    const words = (query, extra = {}) => ({
+      multi_match: { query, fields, type: 'best_fields', ...extra },
+    });
+    const phrase = (query) => ({ multi_match: { query, fields, type: 'phrase' } });
+
+    it('returns null when there is nothing to search for', () => {
+      expect(buildTextClause('', fields)).toBeNull();
+      expect(buildTextClause(' "" ', fields)).toBeNull();
+    });
+
+    it('keeps the plain multi_match shape for bare words', () => {
+      expect(buildTextClause('a b', fields)).toEqual(words('a b'));
+      expect(buildTextClause('a b', fields, { operator: 'AND' })).toEqual(
+        words('a b', { operator: 'and' })
+      );
+    });
+
+    it('returns a single phrase on its own', () => {
+      expect(buildTextClause('"a b"', fields, { operator: 'AND' })).toEqual(phrase('a b'));
+    });
+
+    it('combines units with should for OR and must for AND', () => {
+      expect(buildTextClause('c "a b"', fields)).toEqual({
+        bool: { should: [words('c'), phrase('a b')], minimum_should_match: 1 },
+      });
+      expect(buildTextClause('c "a b"', fields, { operator: 'AND' })).toEqual({
+        bool: { must: [words('c', { operator: 'and' }), phrase('a b')] },
+      });
+    });
   });
 
   describe('buildAdvancedSearchQuery', () => {
@@ -202,7 +269,7 @@ describe('queryBuilder', () => {
         { name: 'mark', label: 'Mark', has_subfields: true, values: [{ value: 'dash' }] },
       ];
       const mm = (value) => ({
-        multi_match: { query: value, fields: ['mark.*'], type: 'best_fields' },
+        multi_match: { query: value, fields: ['mark.*'], type: 'best_fields', operator: 'and' },
       });
       const build = (row) =>
         buildAdvancedSearchQuery({
@@ -252,11 +319,74 @@ describe('queryBuilder', () => {
 
       it('still uses multi_match for fields without a dropdown', () => {
         expect(clauseFor('marginalia', 'rex')).toEqual({
-          multi_match: { query: 'rex', fields: ['marginalia.*'], type: 'best_fields' },
+          multi_match: {
+            query: 'rex',
+            fields: ['marginalia.*'],
+            type: 'best_fields',
+            operator: 'and',
+          },
         });
         expect(clauseFor('people', 'Livy')).toEqual({
-          multi_match: { query: 'Livy', fields: ['people'], type: 'best_fields' },
+          multi_match: { query: 'Livy', fields: ['people'], type: 'best_fields', operator: 'and' },
         });
+      });
+    });
+
+    describe('free text', () => {
+      const fields = [
+        { name: 'marginalia', label: 'Marginalia', has_subfields: true },
+        { name: 'people', label: 'People' },
+        { name: 'mark', label: 'Mark', has_subfields: true, values: [{ value: 'dash' }] },
+      ];
+      const clauseFor = (row) =>
+        buildAdvancedSearchQuery({
+          rows: [{ operator: 'AND', ...row }],
+          fieldDefinitions: fields,
+          collectionId: 'aor',
+        }).query.bool.must[0];
+      const words = (query, f) => ({
+        multi_match: { query, fields: f, type: 'best_fields', operator: 'and' },
+      });
+      const phrase = (query, f) => ({ multi_match: { query, fields: f, type: 'phrase' } });
+
+      it('requires every bare word', () => {
+        expect(clauseFor({ field: 'marginalia', value: ' ad  fontes ' })).toEqual(
+          words('ad fontes', ['marginalia.*'])
+        );
+      });
+
+      it('searches a quoted value as a phrase', () => {
+        expect(clauseFor({ field: 'people', value: '"Julius Caesar"' })).toEqual(
+          phrase('Julius Caesar', ['people'])
+        );
+      });
+
+      it('requires the bare words and every phrase', () => {
+        expect(clauseFor({ field: 'marginalia', value: 'rex "ad fontes" "vide infra"' })).toEqual({
+          bool: {
+            must: [
+              words('rex', ['marginalia.*']),
+              phrase('ad fontes', ['marginalia.*']),
+              phrase('vide infra', ['marginalia.*']),
+            ],
+          },
+        });
+      });
+
+      it('accepts a phrase in the extra text of an enumerated field', () => {
+        expect(clauseFor({ field: 'mark', value: 'dash', text: '"regnum rex"' })).toEqual({
+          bool: { must: [{ term: { 'mark.keyword': 'dash' } }, phrase('regnum rex', ['mark.*'])] },
+        });
+      });
+
+      it('skips a row whose text is only quotes', () => {
+        const body = buildAdvancedSearchQuery({
+          rows: [{ field: 'people', value: '""', operator: 'AND' }],
+          fieldDefinitions: fields,
+          collectionId: 'aor',
+        });
+        expect(body.query.bool.must).toBeUndefined();
+        expect(body.query.bool.filter).toEqual([{ terms: { collection_id: ['aor'] } }]);
       });
     });
 
@@ -271,7 +401,7 @@ describe('queryBuilder', () => {
 
     describe('boolean operators', () => {
       const mm = (field, value) => ({
-        multi_match: { query: value, fields: [field], type: 'best_fields' },
+        multi_match: { query: value, fields: [field], type: 'best_fields', operator: 'and' },
       });
       const build = (rows) =>
         buildAdvancedSearchQuery({ rows, fieldDefinitions, collectionId: 'rose', categories }).query

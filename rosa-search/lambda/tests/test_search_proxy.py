@@ -106,11 +106,13 @@ def advanced_search_query() -> dict:
         "query": {
             "bool": {
                 "should": [
+                    # Free text in a row: every word required
                     {
                         "multi_match": {
-                            "query": "astronomia",
+                            "query": "astronomia ptolemaei",
                             "fields": ["marginalia.*"],
                             "type": "best_fields",
+                            "operator": "and",
                         }
                     },
                     # A dropdown value: a term query on the keyword sub-field
@@ -280,7 +282,12 @@ class AcceptsViewerQueries(unittest.TestCase):
         body = advanced_search_query()
         should = body["query"]["bool"]["should"]
         drawing = {
-            "multi_match": {"query": "pyramid", "fields": ["drawing.*"], "type": "best_fields"}
+            "multi_match": {
+                "query": "pyramid",
+                "fields": ["drawing.*"],
+                "type": "best_fields",
+                "operator": "and",
+            }
         }
         should[0] = {"bool": {"must": [should[0], drawing]}}
         body["highlight"]["fields"]["drawing.*"] = {}
@@ -291,8 +298,92 @@ class AcceptsViewerQueries(unittest.TestCase):
         # extra text, both required: mark 'dash' plus 'regnum'.
         body = advanced_search_query()
         dash = {"term": {"mark.keyword": "dash"}}
-        regnum = {"multi_match": {"query": "regnum", "fields": ["mark.*"], "type": "best_fields"}}
+        regnum = {
+            "multi_match": {
+                "query": "regnum",
+                "fields": ["mark.*"],
+                "type": "best_fields",
+                "operator": "and",
+            }
+        }
         body["query"]["bool"]["should"][1] = {"bool": {"must": [dash, regnum]}}
+        self.assertIn("query", validate(body))
+
+    def test_advanced_search_phrase(self):
+        # A quoted value, people:'"Julius Caesar"', as the AoR annotation links send it
+        body = advanced_search_query()
+        body["query"]["bool"]["should"][0] = {
+            "multi_match": {"query": "Julius Caesar", "fields": ["people"], "type": "phrase"}
+        }
+        body["highlight"]["fields"]["people"] = {}
+        self.assertIn("query", validate(body))
+
+    def test_advanced_search_words_and_phrases(self):
+        # rex "ad fontes" "vide infra": the bare words and every phrase required
+        body = advanced_search_query()
+        fields = ["marginalia.*"]
+        body["query"]["bool"]["should"][0] = {
+            "bool": {
+                "must": [
+                    {
+                        "multi_match": {
+                            "query": "rex",
+                            "fields": fields,
+                            "type": "best_fields",
+                            "operator": "and",
+                        }
+                    },
+                    {"multi_match": {"query": "ad fontes", "fields": fields, "type": "phrase"}},
+                    {"multi_match": {"query": "vide infra", "fields": fields, "type": "phrase"}},
+                ]
+            }
+        }
+        self.assertIn("query", validate(body))
+
+    def test_advanced_search_phrase_in_extra_text(self):
+        # mark 'dash' plus '"regnum rex"': the phrase nested inside the row's bool
+        body = advanced_search_query()
+        dash = {"term": {"mark.keyword": "dash"}}
+        words = {
+            "multi_match": {
+                "query": "lex",
+                "fields": ["mark.*"],
+                "type": "best_fields",
+                "operator": "and",
+            }
+        }
+        phrase = {"multi_match": {"query": "regnum rex", "fields": ["mark.*"], "type": "phrase"}}
+        body["query"]["bool"]["should"][1] = {
+            "bool": {"must": [dash, {"bool": {"must": [words, phrase]}}]}
+        }
+        self.assertIn("query", validate(body))
+
+    def test_simple_search_with_phrase(self):
+        # rose "Guillaume de Lorris": any bare word or the phrase may match
+        body = simple_search_query()
+        body["query"]["bool"]["must"] = [
+            {
+                "bool": {
+                    "should": [
+                        {
+                            "multi_match": {
+                                "query": "rose",
+                                "fields": LANGUAGE_FIELDS,
+                                "type": "best_fields",
+                            }
+                        },
+                        {
+                            "multi_match": {
+                                "query": "Guillaume de Lorris",
+                                "fields": LANGUAGE_FIELDS,
+                                "type": "phrase",
+                            }
+                        },
+                    ],
+                    "minimum_should_match": 1,
+                }
+            }
+        ]
         self.assertIn("query", validate(body))
 
     def test_advanced_search_keyword_field_value(self):

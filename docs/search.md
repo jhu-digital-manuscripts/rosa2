@@ -69,6 +69,23 @@ exactly three paths and answers 404 for anything else:
 
 A canvas hit is recognised by its `manifest_id`; book hits have none.
 
+**Text syntax.** Search text may hold phrases in double quotes beside bare words
+(straight or curly quotes: `rex "ad fontes"`). The viewer splits the text into units
+(`rosa-viewer/src/plugins/jhsearch/utils/searchText.js`): the bare words become one
+`multi_match` of type `best_fields` over the fields, each phrase a `multi_match` of type
+`phrase`, and several units are combined in a `bool` (`queryBuilder.js`, `buildTextClause`).
+In simple search any unit may match (`should` with `minimum_should_match: 1`; the bare
+words themselves are joined by Opensearch's default OR), so quoting only adds a phrase to
+the search. In an advanced search row every unit must match (`must`) and the bare words
+carry `operator: "and"`, so `marginalia` `ad fontes` finds pages whose marginalia hold both
+words in the same language sub-field, in one note or several, and `"ad fontes"` finds the
+words next to each other in one note (array values are indexed with a position gap, see
+[opensearch-indexes.md](opensearch-indexes.md#text-analysis)). The links on people, books
+and locations in AoR annotations are quoted for this reason: `people:'"Julius Caesar"'`
+finds that name and not every Julius and every Caesar. A phrase is matched after analysis,
+so on the sub-fields with stop words `"the king"` is `king`, and a phrase on a name field
+also matches a longer name that contains it.
+
 **Fields with sub-fields.** A field whose `jhsearch.json` entry has
 `has_subfields: true` is an object with per-language sub-fields and possibly `.keyword`
 (see [opensearch-indexes.md](opensearch-indexes.md#text-analysis)). Search all of them
@@ -85,8 +102,9 @@ otherwise on the field itself (`{"term": {"method": "pen"}}`, `{"term": {"hand":
 **Name fields.** `people`, `books`, `locations`, `annotator`, `character` and the manifest
 `repository` have no `values` and no sub-fields: they are text fields holding names and
 titles, searched with `multi_match` or `match` on the field itself (`cicero` finds
-`Marcus Tullius Cicero`, `arsenal` finds `Bibliothèque de l'Arsenal`). The canvas fields
-also have a `.keyword` sub-field for exact lookups and aggregations.
+`Marcus Tullius Cicero`, `arsenal` finds `Bibliothèque de l'Arsenal`; the phrase `"Julius
+Caesar"` finds `Julius Caesar` and `Gaius Julius Caesar` but not `Augustus Caesar`). The canvas
+fields also have a `.keyword` sub-field for exact lookups and aggregations.
 
 **Collections.** Filter on `collection_id`, which contains the book's own collection and
 its parent: `{"terms": {"collection_id": ["dlmm"]}}` finds `rose` and `pizan` books and

@@ -26,6 +26,15 @@ describe('parseAdvancedQuery', () => {
     ]);
   });
 
+  it('passes double quotes through as part of the value', () => {
+    expect(parseAdvancedQuery('people:\'"Julius Caesar"\'')).toEqual([
+      { field: 'people', value: '"Julius Caesar"', operator: 'AND' },
+    ]);
+    expect(formatAdvancedQuery([{ field: 'people', value: '"Julius Caesar"' }])).toBe(
+      'people:\'"Julius Caesar"\''
+    );
+  });
+
   it('unescapes quotes and backslashes', () => {
     expect(parseAdvancedQuery("marginalia:'l\\'homme \\\\ x'")).toEqual([
       { field: 'marginalia', value: "l'homme \\ x", operator: 'AND' },
@@ -89,8 +98,8 @@ describe('formatAdvancedQuery', () => {
 
   it('round-trips through parseAdvancedQuery', () => {
     const rows = [
-      { field: 'marginalia', value: 'rome', operator: 'AND' },
-      { field: 'people', value: 'Livy', operator: 'OR' },
+      { field: 'marginalia', value: 'rome "ad fontes"', operator: 'AND' },
+      { field: 'people', value: '"Julius Caesar"', operator: 'OR' },
       { field: 'mark', value: 'a\\b', operator: 'AND' },
       { field: 'mark', value: 'dash', text: "it's", operator: 'AND' },
     ];

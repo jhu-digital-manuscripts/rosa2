@@ -9,12 +9,15 @@ import java.nio.charset.StandardCharsets;
  * <p>The link is the viewer site's own advanced search URL, so it works as a plain link
  * in any IIIF viewer and the rosa viewer can recognise and follow it in place:
  *
- * <pre>{viewerUrl}#{collection}/search?q=people:'Plutarch'&amp;type=advanced</pre>
+ * <pre>{viewerUrl}#{collection}/search?q=people:'%22Julius+Caesar%22'&amp;type=advanced</pre>
  *
- * <p>The value escaping (backslash before {@code \} and {@code '}) and the parameter
- * encoding (encodeURIComponent with {@code +} for spaces and {@code : , /} kept readable)
- * mirror {@code rosa-viewer/src/site/history/advancedQuery.js} and {@code route.js}; the
- * two must stay in step for the viewer to parse the fragment.
+ * <p>The value is wrapped in double quotes, which the viewer's search text syntax reads as
+ * a phrase, so {@code Julius Caesar} finds that name and not every Julius and every Caesar
+ * ({@code rosa-viewer/src/plugins/jhsearch/utils/searchText.js}). Double quotes in the
+ * value itself are dropped. The value escaping (backslash before {@code \} and {@code '})
+ * and the parameter encoding (encodeURIComponent with {@code +} for spaces and {@code : , /}
+ * kept readable) mirror {@code rosa-viewer/src/site/history/advancedQuery.js} and
+ * {@code route.js}; the two must stay in step for the viewer to parse the fragment.
  *
  * @param viewerUrl    the URL of the viewer site the fragment is appended to, e.g.
  *                     {@code https://example.org/aor/}
@@ -40,18 +43,19 @@ public record AorSearchLinks(String viewerUrl, String collectionId) {
     }
 
     /**
-     * The advanced search URL for one field value, or null when the value is blank.
+     * The advanced search URL for one field value, searched as a phrase, or null when the
+     * value is blank.
      *
      * @param field the search field, e.g. {@code people}
      * @param value the value, e.g. a person's name
      * @return the URL, not HTML-escaped
      */
     public String href(String field, String value) {
-        String v = AnnotationHtml.clean(value);
+        String v = AnnotationHtml.clean(value == null ? null : value.replace('"', ' '));
         if (v.isEmpty()) {
             return null;
         }
-        String term = field + ":'" + escapeValue(v) + "'";
+        String term = field + ":'\"" + escapeValue(v) + "\"'";
         return viewerUrl + "#" + encodeURIComponent(collectionId) + "/search?q=" + encodeParam(term) + "&type=advanced";
     }
 

@@ -4,6 +4,7 @@
 
 import { buildCategoryFilter } from './facets';
 import { buildAllowedBooksFilter, buildMatchedBookAggregations, termsClauses } from './bookFacets';
+import { parseSearchText } from './searchText';
 
 /**
  * Largest `from + size` a search may ask for: Opensearch's default
@@ -110,6 +111,48 @@ export function expandFieldsWithSubfields(fieldNames, fieldDefinitions) {
  */
 export function rowHasQuery(row) {
   return Boolean((row.value && row.value.trim()) || (row.text && row.text.trim()));
+}
+
+/**
+ * Build the query clause for free text over a set of fields.
+ *
+ * The text may hold quoted phrases beside bare words (see searchText.js). Bare words
+ * become one `multi_match` over the fields, each phrase a `multi_match` of type
+ * `phrase`, so its words must be next to each other in one value. With several
+ * units, `operator` says how they combine: 'OR' (any unit matches, as Opensearch
+ * also joins the bare words by default) or 'AND' (every unit must match, and the
+ * bare words must all occur in one field).
+ *
+ * @param {string} text - Search text
+ * @param {string[]} fields - Fields to search, wildcards allowed
+ * @param {Object} [options]
+ * @param {'OR'|'AND'} [options.operator='OR'] - How bare words and phrases combine
+ * @returns {Object|null} A query clause, or null when the text has nothing to search for
+ */
+export function buildTextClause(text, fields, { operator = 'OR' } = {}) {
+  const { words, phrases } = parseSearchText(text);
+  const and = operator === 'AND';
+  const units = phrases.map((phrase) => ({
+    multi_match: { query: phrase, fields, type: 'phrase' },
+  }));
+  if (words) {
+    units.unshift({
+      multi_match: {
+        query: words,
+        fields,
+        type: 'best_fields',
+        ...(and ? { operator: 'and' } : {}),
+      },
+    });
+  }
+
+  if (units.length === 0) {
+    return null;
+  }
+  if (units.length === 1) {
+    return units[0];
+  }
+  return and ? { bool: { must: units } } : { bool: { should: units, minimum_should_match: 1 } };
 }
 
 /**
@@ -293,6 +336,9 @@ export function buildBrowseQuery({
 /**
  * Build a simple search query.
  *
+ * Any bare word may match; a quoted phrase ("Julius Caesar") matches as a phrase (see
+ * buildTextClause).
+ *
  * @param {Object} options - Query options
  * @param {string} options.query - Search query string
  * @param {string[]} options.defaultFields - Default fields to search
@@ -330,15 +376,7 @@ export function buildSimpleSearchQuery({
   const body = {
     query: {
       bool: {
-        must: [
-          {
-            multi_match: {
-              query,
-              fields: searchFields,
-              type: 'best_fields',
-            },
-          },
-        ],
+        must: [buildTextClause(query, searchFields, { operator: 'OR' })].filter(Boolean),
         filter: filters,
       },
     },
@@ -362,6 +400,9 @@ export function buildSimpleSearchQuery({
 
 /**
  * Build an advanced search query with multiple field-specific clauses.
+ *
+ * Free text in a row must match every bare word and quoted phrase in it (see
+ * buildTextClause); a value chosen from a dropdown is matched exactly.
  *
  * @param {Object} options - Query options
  * @param {Object[]} options.rows - Search rows with field, value, optional text, operator
@@ -399,13 +440,9 @@ export function buildAdvancedSearchQuery({
     .map((row) => {
       const fieldDef = fieldDefinitions.find((f) => f.name === row.field);
       const searchFields = fieldDef?.has_subfields ? [`${row.field}.*`] : [row.field];
-      const match = (query) => ({
-        multi_match: {
-          query,
-          fields: searchFields,
-          type: 'best_fields',
-        },
-      });
+      // Free text in a row is field-specific, so every word and phrase in it is
+      // required (unlike simple search, where any word may match).
+      const match = (query) => buildTextClause(query, searchFields, { operator: 'AND' });
 
       // A value picked from a dropdown is an exact keyword: match it with a term
       // query on the keyword sub-field, or on the field itself when it is a plain
@@ -417,12 +454,15 @@ export function buildAdvancedSearchQuery({
         ? null
         : hasValues
           ? { term: { [fieldDef.has_subfields ? `${row.field}.keyword` : row.field]: value } }
-          : match(row.value);
+          : match(value);
 
       // A row for an enumerated field with sub-fields can carry free text as well
       // as the chosen value. Both must match, so 'dash' plus 'regnum' finds pages
       // with a dash mark and 'regnum' in the marks' referenced text.
       const parts = [valueClause, text ? match(text) : null].filter(Boolean);
+      if (parts.length === 0) {
+        return null;
+      }
       const clause = parts.length === 1 ? parts[0] : { bool: { must: parts } };
 
       return {
@@ -430,7 +470,8 @@ export function buildAdvancedSearchQuery({
         operator: row.operator || 'AND',
         searchFields,
       };
-    });
+    })
+    .filter(Boolean);
 
   if (clauses.length === 0) {
     // No valid search terms, return browse query

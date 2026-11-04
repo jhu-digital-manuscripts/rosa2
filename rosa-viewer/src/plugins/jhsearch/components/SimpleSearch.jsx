@@ -66,7 +66,7 @@ export function SimpleSearch() {
       <TextField
         fullWidth
         size="small"
-        placeholder="Search collections..."
+        placeholder='Search collections ("quotes" for a phrase)...'
         value={inputValue}
         onChange={handleInputChange}
         onKeyDown={handleKeyDown}

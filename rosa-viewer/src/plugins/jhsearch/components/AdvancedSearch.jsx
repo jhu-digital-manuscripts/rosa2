@@ -22,6 +22,12 @@ import * as selectors from '../state/selectors';
 import { setAdvancedRows, setViewMode } from '../state/actions';
 import { rowHasQuery } from '../utils/queryBuilder';
 
+/**
+ * Placeholder of a free-text input. Every word and quoted phrase in the text must
+ * match (queryBuilder.js, buildTextClause).
+ */
+export const TERM_PLACEHOLDER = 'All words required; "quotes" for a phrase';
+
 /** Whether a field offers a fixed list of values to choose from. */
 function hasEnumeratedValues(fieldDef) {
   return Boolean(fieldDef?.values && fieldDef.values.length > 0);
@@ -134,7 +140,7 @@ function AdvancedSearchRow({ row, index, fields, onUpdate, onRemove, onSubmit, s
           ) : (
             <TextField
               size="small"
-              placeholder="Search term..."
+              placeholder={TERM_PLACEHOLDER}
               value={row.value || ''}
               onChange={handleValueChange}
               onKeyDown={handleKeyDown}
@@ -163,7 +169,7 @@ function AdvancedSearchRow({ row, index, fields, onUpdate, onRemove, onSubmit, s
         <TextField
           size="small"
           fullWidth
-          placeholder={`Also search ${fieldDef.label.toLowerCase()} text (optional)`}
+          placeholder={`Also search ${fieldDef.label.toLowerCase()} text (optional; "quotes" for a phrase)`}
           value={row.text || ''}
           onChange={handleTextChange}
           onKeyDown={handleKeyDown}

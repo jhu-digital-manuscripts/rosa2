@@ -8,7 +8,8 @@ Rosa Viewer provides:
 - Collection browsing with faceted filtering, including a Name filter that picks
   books by type-ahead over their labels (sites with `enableFacets`, both AoR and DLMM)
 - Full-text search across manifest and canvas metadata
-- Advanced search with per-field queries and boolean operators
+- Advanced search with per-field queries and boolean operators; `"quoted phrases"` in
+  simple and advanced search
 - Integration with Mirador's page-turner viewer
 - An annotations panel that groups a page's annotations (AoR by place on the
   page, DLMM by kind) and styles them per collection

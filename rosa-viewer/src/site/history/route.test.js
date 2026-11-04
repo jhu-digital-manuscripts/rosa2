@@ -231,6 +231,13 @@ describe('formatRoute', () => {
     expect(parse(`#${url}`)).toMatchObject({ mode: 'advanced', rows });
   });
 
+  it('percent-encodes the double quotes of a phrase', () => {
+    const rows = [{ field: 'people', value: '"Julius Caesar"', operator: 'AND' }];
+    const url = formatRoute({ ...browse, type: 'search', mode: 'advanced', rows }, ctx);
+    expect(url).toBe("rose/search?q=people:'%22Julius+Caesar%22'&type=advanced");
+    expect(parse(`#${url}`)).toMatchObject({ mode: 'advanced', rows });
+  });
+
   it('formats a search without a query as browsing', () => {
     expect(formatRoute({ ...browse, type: 'search', mode: 'simple', query: '' }, ctx)).toBe('rose');
   });
