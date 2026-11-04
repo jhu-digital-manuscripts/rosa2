@@ -64,7 +64,7 @@ Attributes shared by most annotation types:
 | `text` | The printed text the annotation refers to (its anchor) |
 | `method` | Writing implement: `pen`, `chalk`, `pencil`, `scoring`, `typewriter` |
 | `book_orientation` | Rotation of the book when the annotation was written: `0`, `90`, `180`, `270` |
-| `id` | Annotation id, used by internal references and physical links (`<book>:<number>`) |
+| `id` | Annotation id, used by internal references and physical links: `{book}:{page token}:{m\|u\|s…}NNNN`, where the page token is the library's original scan name (`00000027`, `615_d_7_f035r`, `84`); `aor/id_locations.csv` maps these ids to pages |
 | `colour` | Ink colour (on some marks, underlines and marginalia) |
 
 ## Annotation types
@@ -116,7 +116,13 @@ language one or more `<position>` elements, each at a `place`. A position holds 
 text (`<marginalia_text>`, possibly several), the people, books and places it names, the
 symbols it contains (`<symbol_in_text>` and `<marginalia_symbol>`), cross-references to
 other texts (`<X-ref>`), underlined words within the note (`<emphasis>`) and internal
-references to other annotations (`<internal_ref>` with one or more `<target>`). The
+references to other annotations (`<internal_ref>` with one or more `<target>`). A
+`<target>` has a `ref`, the id of the annotation or page referred to (see `id` above),
+the `text` the reader wrote (`fol[io] 35`, `60`, `i[nfr]a`) and optionally a `prefix`
+and `suffix` around it; `<internal_ref>` may carry a `text` of its own (`infra`). The
+`ref` values are inconsistent across books and sometimes wrong (`RCPD126.6:84` for
+book `RCPD1266`); rosa-tool resolves them through `id_locations.csv`
+(`AorReferenceResolver`) and `check-aor` reports the ones that do not resolve. The
 `<translation>` is a direct child of `<marginalia>`. The attributes `hand`, `method`,
 `anchor_text` (the printed text the note refers to), `other_reader` (a second reader),
 `date`, `topic`, `id`, `book_id` and the continuation attributes
@@ -142,7 +148,8 @@ references to other annotations (`<internal_ref>` with one or more `<target>`). 
 All annotation types implement the sealed interface `Annotation` through the sealed
 abstract class `AbstractAnnotation`, which holds the shared fields `id`, `text` (the
 anchor text, `getReferencedText()`), `location` (the `place`, as the `Location` enum),
-`language`, `internalRef` and `generatedId` (true when the file gave no `id`). The eleven
+`language`, `internalRef` and `generatedId` (meant to be true when the file gave no `id`;
+nothing sets it today). The eleven
 types are final, so code can switch over them exhaustively (as
 `OpensearchIngestGenerator` does). `Marginalia` and `Graph` also implement `MultiPart`
 (annotations that continue across pages).
@@ -152,7 +159,7 @@ types are final, so code can switch over them exhaustively (as
 | `<marginalia>` | `Marginalia` | `hand`, `method`, `date`, `other_reader`, `topic`, `anchor_text` (text), `place`, `id`, `translation`, `languages` | `book_id`, `colour`, `marginalia_continues_from/to`, `marginalia_from/to_transcription` (fields exist, never filled) |
 | `<language>` | `MarginaliaLanguage` | `ident` (`lang`), `positions` | |
 | `<position>` | `Position` | `place`, `book_orientation`, `marginalia_text` (texts), `person`, `book`, `location`, `symbol_in_text` and `marginalia_symbol` (symbols), `X-ref` (`XRef`), `emphasis` (as `Underline`), `internal_ref` (`InternalReference` with `ReferenceTarget`s) | `marginaliaRefs` is never filled |
-| `<underline>` | `Underline` | `text`, `method`, `type`, `language`; place is always `INTEXT` | `colour`, `id` |
+| `<underline>` | `Underline` | `text`, `method`, `type`, `language`, `id`; place is always `INTEXT` | `colour` |
 | `<mark>` | `Mark` | `text`, `name`, `method`, `language`, `place`, `id` | `colour` |
 | `<symbol>` | `Symbol` | `text`, `name`, `language`, `place`, `id` | |
 | `<numeral>` | `Numeral` | `text`, element content (`numeral`), `language`, `place`, `id` | |
@@ -174,5 +181,7 @@ The 7,603 transcriptions in the `aor` collection contain 28,325 marginalia (29,0
 `<language>` elements: 25,235 `LA`, 2,584 `EN`, then `IT`, `EL`, `FR`, `ES`, `DE`, `CY`,
 `IW`; 25,961 translations), 107,869 underlines, 38,020 marks, 7,081 numerals, 5,082
 symbols, 2,268 drawings, 1,214 errata, 108 physical links, 68 graphs (with 320 `<link>`
-elements), 53 tables and 22 calculations, plus 495 internal references. The `topic`
+elements), 53 tables and 22 calculations, plus 188 cross-references (`<X-ref>`, 173 of whose persons
+and 170 of whose titles are in the reference sheets) and 495 internal references with
+734 targets (all but one resolve to a page through `id_locations.csv`). The `topic`
 attribute does not occur.

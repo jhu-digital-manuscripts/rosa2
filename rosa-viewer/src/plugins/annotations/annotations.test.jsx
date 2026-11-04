@@ -1,6 +1,8 @@
 import React from 'react';
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen, fireEvent, within } from '@testing-library/react';
+import { Provider } from 'react-redux';
+import { openBookRoute } from '../../site/history/historySync';
 
 vi.mock('mirador', () => ({
   ScrollTo: ({ children }) => children,
@@ -9,6 +11,17 @@ vi.mock('mirador', () => ({
     type: 'mirador/SET_WORKSPACE_ADD_VISIBILITY',
     isWorkspaceAddVisible: visible,
   })),
+  addWindow: vi.fn(),
+  focusWindow: vi.fn(),
+  setCanvas: vi.fn(),
+  setWindowViewType: vi.fn(),
+  getWindowViewType: vi.fn(),
+}));
+
+// Opening a page is the history module's job (tested there); here only the hand-off matters
+vi.mock('../../site/history/historySync', async (importOriginal) => ({
+  ...(await importOriginal()),
+  openBookRoute: vi.fn(() => Promise.resolve()),
 }));
 
 import { RosaCanvasAnnotations } from './components/RosaCanvasAnnotations';
@@ -250,9 +263,16 @@ describe('search links', () => {
     'rosa-anno aor-marginalia aor-place-intext',
     '<p><b>Marginal note</b></p><p><small><b>People:</b> ' +
       "<a href=\"#aor/search?q=people:'O%5C'Neill'&amp;type=advanced\">O'Neill</a>, " +
-      '<a href="https://example.org/plutarch">Plutarch</a></small></p>',
+      '<a href="https://example.org/plutarch">Plutarch</a></small></p>' +
+      '<p><small><b>Refers to:</b> <a href="#aor/RCPD1266/037v/image">“60”</a></small></p>',
     'la'
   );
+  const jhsearch = {
+    collectionId: 'aor',
+    childCollectionIds: [],
+    iiifBaseUrl: 'https://x.org/iiif',
+  };
+  const store = { getState: () => ({}), dispatch: vi.fn(), subscribe: () => () => {} };
 
   function renderWrapper() {
     const actions = {
@@ -263,15 +283,31 @@ describe('search links', () => {
       setWorkspaceAddVisibility: vi.fn(),
     };
     render(
-      <RosaCanvasAnnotationsWrapper
-        annotationResources={[people]}
-        windowId="w1"
-        jhsearch={{ collectionId: 'aor', childCollectionIds: [] }}
-        {...actions}
-      />
+      <Provider store={store}>
+        <RosaCanvasAnnotationsWrapper
+          annotationResources={[people]}
+          windowId="w1"
+          jhsearch={jhsearch}
+          {...actions}
+        />
+      </Provider>
     );
     return actions;
   }
+
+  it('opens the referenced page in place', () => {
+    const actions = renderWrapper();
+    openBookRoute.mockClear();
+    fireEvent.click(screen.getByRole('link', { name: '“60”' }));
+    expect(openBookRoute).toHaveBeenCalledTimes(1);
+    const [calledStore, route, ctx, options] = openBookRoute.mock.calls[0];
+    expect(calledStore).toBe(store);
+    expect(route).toMatchObject({ type: 'book', bookId: 'RCPD1266', canvas: '037v' });
+    expect(ctx).toMatchObject({ collectionId: 'aor', iiifBaseUrl: 'https://x.org/iiif' });
+    expect(options.win).toBe(window);
+    expect(actions.applySearchState).not.toHaveBeenCalled();
+    expect(actions.selectAnnotation).not.toHaveBeenCalled();
+  });
 
   it('opens the advanced search for a linked name without selecting the annotation', () => {
     const actions = renderWrapper();

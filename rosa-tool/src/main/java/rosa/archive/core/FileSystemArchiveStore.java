@@ -79,6 +79,7 @@ public final class FileSystemArchiveStore implements ArchiveStore {
     private static final String PEOPLE = "people.csv";
     private static final String LOCATIONS = "locations.csv";
     private static final String BOOKS = "books.csv";
+    private static final String ID_LOCATIONS = "id_locations.csv";
     private static final String HTML_ANNOS = "annos.jsonld";
     private static final String COLLECTION_CONFIG = "config.properties";
     private static final String MISSING_IMAGE = "missing_image.tif";
@@ -210,6 +211,8 @@ public final class FileSystemArchiveStore implements ArchiveStore {
                 ArchiveReaders.readReferenceSheet(collectionDir.resolve(LOCATIONS), errors));
         collection.setBooksRef(
                 ArchiveReaders.readBookReferenceSheet(collectionDir.resolve(BOOKS), errors));
+        collection.setIdLocations(
+                ArchiveReaders.readIdLocations(collectionDir.resolve(ID_LOCATIONS), errors));
 
         // HTML annotations
         collection.setHTMLAnnotations(

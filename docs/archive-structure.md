@@ -243,4 +243,4 @@ These files occur in the archive and are kept, but no command reads them:
 | `<book-id>.bibliography.xml` | Bibliography of 14 rose books |
 | `<book-id>.nartag.csv`, `<book-id>.nartag.txt`, `<book-id>.redtag.txt` | Narrative section and rubric tagging of some rose books |
 | `<book-id>.filemap.csv` | Older, prefixed rename maps (the tool reads only `filemap.csv`) |
-| `aor/id_locations.csv` | Map of AoR annotation ids to collection, book and page |
+| `aor/id_locations.csv` | Map of the original AoR annotation and page ids to this archive, one row per id and no header: `id,collection,book,page,annotation id` (page is a folio `131r`, an image file `RCP7134.131r.tif` or an image label `front matter 5r`; the last column repeats the id for annotations). rosa-tool loads it with the collection to resolve internal references (`generate-iiif-pres --viewer-url`, `check-aor`). |

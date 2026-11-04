@@ -199,6 +199,93 @@ async function defaultFetchManifest(manifestId) {
 }
 
 /**
+ * The route context for a site's jhsearch config, plus the IIIF base URL.
+ * @param {Object} [jhsearch] - config.jhsearch
+ * @returns {Object}
+ */
+export function routeContextFor(jhsearch = {}) {
+  return { ...createRouteContext(jhsearch), iiifBaseUrl: jhsearch.iiifBaseUrl };
+}
+
+/**
+ * Show a book route: focus the window that shows the book, moving it to the page
+ * and view, or open a window at that page; then hide the search view. Used when a
+ * URL is restored and when a link to a page is followed in place.
+ *
+ * Moving a window that is already open counts as a page turn for the history (the
+ * URL is replaced, see shouldReplace). A followed link should be a place the reader
+ * can go back from, so when `win` is given and a window is reused, the current URL
+ * is pushed first and the page turn then replaces that copy.
+ *
+ * @param {Object} store - Redux store of the Mirador viewer
+ * @param {Object} route - A book route from parseLocation
+ * @param {Object} ctx - routeContextFor(config.jhsearch)
+ * @param {Object} [options]
+ * @param {Function} [options.fetchManifest] - (manifestId) => Promise<json|null>
+ * @param {Function} [options.selectViewType] - Mirador's getWindowViewType; for tests
+ * @param {Function} [options.isCurrent] - () => false to stop after the manifest fetch
+ * @param {Window} [options.win] - When given, a reused window gets a new history entry
+ */
+export async function openBookRoute(
+  store,
+  route,
+  ctx,
+  {
+    fetchManifest = defaultFetchManifest,
+    selectViewType = getWindowViewType,
+    isCurrent = () => true,
+    win = null,
+  } = {}
+) {
+  const manifestId = buildManifestUrl(`${route.collectionId}.${route.bookId}`, ctx.iiifBaseUrl);
+  let state = store.getState();
+  const windows = state.windows || {};
+  const windowIds = state.workspace?.windowIds || [];
+  const focused = state.workspace?.focusedWindowId;
+  const existingId =
+    windows[focused]?.manifestId === manifestId
+      ? focused
+      : windowIds.find((id) => windows[id]?.manifestId === manifestId);
+
+  const needCanvas = route.canvas && VIEWS_WITH_CANVAS.has(route.view || 'single');
+  let manifest = state.manifests?.[manifestId]?.json;
+  const fetched = !manifest && (needCanvas || !existingId);
+  if (fetched) {
+    // Fetched here rather than by Mirador so the page can be found before the
+    // window opens; Mirador would otherwise move it to the first page.
+    manifest = await fetchManifest(manifestId).catch(() => null);
+    if (!isCurrent()) return;
+    state = store.getState();
+  }
+
+  const canvasId =
+    needCanvas && manifest ? canvasIdForName(manifest, route.canvas, route.bookId) : null;
+
+  if (existingId && state.windows?.[existingId]) {
+    if (win) {
+      win.history.pushState(null, '', win.location.href);
+    }
+    store.dispatch(focusWindow(existingId));
+    if (route.view && selectViewType(state, { windowId: existingId }) !== route.view) {
+      store.dispatch(setWindowViewType(existingId, route.view));
+    }
+    if (canvasId && canvasId !== state.windows[existingId].canvasId) {
+      store.dispatch(setCanvas(existingId, canvasId));
+    }
+  } else {
+    store.dispatch(
+      addWindow({
+        manifestId,
+        ...(canvasId ? { canvasId } : {}),
+        ...(route.view ? { view: route.view } : {}),
+        ...(fetched && manifest ? { manifest } : {}),
+      })
+    );
+  }
+  store.dispatch(setWorkspaceAddVisibility(false));
+}
+
+/**
  * Connect a Mirador store to the browser history.
  *
  * Restores the state in the current URL straight away, then follows the store.
@@ -219,8 +306,7 @@ export function connectHistory(store, options = {}) {
     selectViewType = getWindowViewType,
   } = options;
 
-  const jhsearch = store.getState().config?.jhsearch || {};
-  const ctx = { ...createRouteContext(jhsearch), iiifBaseUrl: jhsearch.iiifBaseUrl };
+  const ctx = routeContextFor(store.getState().config?.jhsearch);
 
   let prev = null;
   let prevWindowIds = [];
@@ -272,59 +358,13 @@ export function connectHistory(store, options = {}) {
     queueMicrotask(flush);
   }
 
-  async function applyBook(route, isCurrent) {
-    const manifestId = buildManifestUrl(`${route.collectionId}.${route.bookId}`, ctx.iiifBaseUrl);
-    let state = store.getState();
-    const windows = state.windows || {};
-    const windowIds = state.workspace?.windowIds || [];
-    const focused = state.workspace?.focusedWindowId;
-    const existingId =
-      windows[focused]?.manifestId === manifestId
-        ? focused
-        : windowIds.find((id) => windows[id]?.manifestId === manifestId);
-
-    const needCanvas = route.canvas && VIEWS_WITH_CANVAS.has(route.view || 'single');
-    let manifest = state.manifests?.[manifestId]?.json;
-    const fetched = !manifest && (needCanvas || !existingId);
-    if (fetched) {
-      // Fetched here rather than by Mirador so the page can be found before the
-      // window opens; Mirador would otherwise move it to the first page.
-      manifest = await fetchManifest(manifestId).catch(() => null);
-      if (!isCurrent()) return;
-      state = store.getState();
-    }
-
-    const canvasId =
-      needCanvas && manifest ? canvasIdForName(manifest, route.canvas, route.bookId) : null;
-
-    if (existingId && state.windows?.[existingId]) {
-      store.dispatch(focusWindow(existingId));
-      if (route.view && selectViewType(state, { windowId: existingId }) !== route.view) {
-        store.dispatch(setWindowViewType(existingId, route.view));
-      }
-      if (canvasId && canvasId !== state.windows[existingId].canvasId) {
-        store.dispatch(setCanvas(existingId, canvasId));
-      }
-    } else {
-      store.dispatch(
-        addWindow({
-          manifestId,
-          ...(canvasId ? { canvasId } : {}),
-          ...(route.view ? { view: route.view } : {}),
-          ...(fetched && manifest ? { manifest } : {}),
-        })
-      );
-    }
-    store.dispatch(setWorkspaceAddVisibility(false));
-  }
-
   async function apply(route) {
     const count = ++applyCount;
     const isCurrent = () => connected && count === applyCount;
     applying = true;
     try {
       if (route.type === 'book') {
-        await applyBook(route, isCurrent);
+        await openBookRoute(store, route, ctx, { fetchManifest, selectViewType, isCurrent });
       } else {
         store.dispatch(applySearchState(searchStateForRoute(route)));
         store.dispatch(setWorkspaceAddVisibility(true));

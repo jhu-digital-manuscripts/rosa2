@@ -53,7 +53,7 @@ java -jar rosa-tool.jar generate-iiif-pres --archive <dir> --output <dir> [--bas
 | `--image-base-url` | No | Base URL of the IIIF Image API services. Defaults to `--base-url`. |
 | `--image-api-version` | No | `2` (default) or `3`. Any other value is an error. Selects `ImageService2` or `ImageService3`; see [IIIF Generation](iiif-generation.md). |
 | `--opensearch-url` | No | Opensearch `_search` endpoint URL. When given, each collection gets a `service/jhsearch.json` and collections and manifests reference it; see [Search](search.md). |
-| `--annotation-stylesheet-url` | No | URL of the stylesheet referenced by every commenting annotation. `{collection}` in it is replaced per collection; see [Annotation stylesheet](iiif-generation.md#annotation-stylesheet). If omitted, annotations have no `stylesheet`. |
+| `--annotation-stylesheet-url` | No | URL of the stylesheet referenced by every commenting annotation. `{collection}` in it is replaced per collection; see [Annotation stylesheet](iiif-generation.md#annotation-stylesheet). If omitted, annotations have no `stylesheet`. The template may contain no braces other than `{collection}`; a mangled one such as `{collection/}` is an error. |
 | `--viewer-url` | No | URL of the viewer site that the people, books and locations named in AoR annotations link to (their advanced search). `{collection}` in it is replaced per collection like the stylesheet URL; see [Viewer URL](iiif-generation.md#viewer-url). If omitted, the names are plain text. |
 | `--collection` | No | Generate only this collection; repeat the option for several. The top-level `collection.json` lists only the generated collections, so include a parent (`dlmm`) with the children (`rose`, `pizan`) it should list. An unknown id is an error. Default: every collection. |
 
@@ -168,7 +168,13 @@ exit code is 1 if any file is not well-formed or not valid.
 
 ### check-aor
 
-Checks AoR transcriptions against the collection's reference sheets.
+Checks AoR transcriptions against the collection's reference sheets: people, books,
+locations and the person and title of cross-references must be in `people.csv`,
+`books.csv` and `locations.csv`; annotation ids must be unique; and every internal
+reference target must resolve to a page through `id_locations.csv` (reported as
+`Internal reference target not resolved: '<ref>' (<reason>)`, plus a message when an
+annotation id sits on a different page than the sheet says). Without an
+`id_locations.csv`, targets are only checked against the annotation ids found.
 
 ```
 java -jar rosa-tool.jar check-aor --archive <dir> --collection <id> [--book <id>] [--spreadsheet-dir <dir>]
@@ -179,7 +185,7 @@ java -jar rosa-tool.jar check-aor --archive <dir> --collection <id> [--book <id>
 | `--archive` | Yes | Path to the archive directory |
 | `--collection` | Yes | Collection to check |
 | `--book` | No | Check only this book. Internal references are then only resolved within it. |
-| `--spreadsheet-dir` | No | Directory holding `people.csv`, `books.csv` and `locations.csv`. Defaults to the collection directory. |
+| `--spreadsheet-dir` | No | Directory holding `people.csv`, `books.csv`, `locations.csv` and `id_locations.csv`. Defaults to the collection directory. |
 
 Checks that every person, book and location referenced by an annotation is in the
 reference sheet (each missing sheet is an error), that internal references target existing

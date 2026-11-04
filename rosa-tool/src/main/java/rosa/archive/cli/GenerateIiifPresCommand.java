@@ -87,8 +87,13 @@ public final class GenerateIiifPresCommand implements Callable<Integer> {
 
             IIIFJsonWriter writer = new IIIFJsonWriter();
             IIIFPresentationGenerator generator = new IIIFPresentationGenerator(writer);
-            generator.setAnnotationStylesheetUrl(annotationStylesheetUrl);
-            generator.setViewerUrl(viewerUrl);
+            try {
+                generator.setAnnotationStylesheetUrl(annotationStylesheetUrl);
+                generator.setViewerUrl(viewerUrl);
+            } catch (IllegalArgumentException e) {
+                System.err.println("Error: " + e.getMessage());
+                return 1;
+            }
             generator.setCollections(collections);
             generator.generate(store, outputPath, baseUrl, imageBaseUrl, imageApiVersion, opensearchUrl);
             return 0;

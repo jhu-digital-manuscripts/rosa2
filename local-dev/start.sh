@@ -101,10 +101,12 @@ IMAGE_BASE_URL="${IMAGE_BASE_URL:-}"
 IIIF_SERVER_PORT="${IIIF_SERVER_PORT:-3000}"
 OPENSEARCH_PORT="${OPENSEARCH_PORT:-9200}"
 OPENSEARCH_URL="${OPENSEARCH_URL:-http://localhost:$OPENSEARCH_PORT/_search}"
-# Annotation stylesheets in rosa-viewer/public/styles/, served by the Vite dev server
-ANNOTATION_STYLESHEET_URL="${ANNOTATION_STYLESHEET_URL:-http://localhost:3001/styles/{collection}.css}"
-# Viewer sites the names in AoR annotations link to, served by the Vite dev server
-VIEWER_URL="${VIEWER_URL:-http://localhost:3001/{collection}/}"
+# Annotation stylesheets in rosa-viewer/public/styles/, and the viewer sites the names in
+# AoR annotations link to, both served by the Vite dev server. These defaults contain
+# {collection}, so they cannot be written as ${VAR:-default}: bash would end the
+# expansion at the first } and produce http://localhost:3001/{collection/}.
+[[ -n "${ANNOTATION_STYLESHEET_URL:-}" ]] || ANNOTATION_STYLESHEET_URL='http://localhost:3001/styles/{collection}.css'
+[[ -n "${VIEWER_URL:-}" ]] || VIEWER_URL='http://localhost:3001/{collection}/'
 
 # Directories
 SITE_DIR="$SCRIPT_DIR/site"

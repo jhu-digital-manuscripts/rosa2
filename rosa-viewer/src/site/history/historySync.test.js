@@ -11,7 +11,14 @@ import {
 import { mergeConfig } from '../../config';
 import { jhsearchPlugin } from '../../plugins/jhsearch';
 import { setSimpleQuery, setViewMode, toggleFacet } from '../../plugins/jhsearch/state/actions';
-import { connectHistory, parseManifestUrl, routeFromState, shouldReplace } from './historySync';
+import {
+  connectHistory,
+  openBookRoute,
+  parseManifestUrl,
+  routeContextFor,
+  routeFromState,
+  shouldReplace,
+} from './historySync';
 
 const BASE = 'https://example.org/iiif';
 
@@ -307,5 +314,70 @@ describe('helpers', () => {
       false
     );
     expect(shouldReplace(a, { type: 'browse' }, ['w1'], ['w1'])).toBe(false);
+  });
+});
+
+describe('openBookRoute', () => {
+  const ctx = () =>
+    routeContextFor({
+      iiifBaseUrl: BASE,
+      collectionId: 'dlmm',
+      childCollectionIds: ['rose', 'pizan'],
+    });
+  const book = (bookId, canvas, view = 'single') => ({
+    type: 'book',
+    collectionId: 'rose',
+    bookId,
+    canvas,
+    view,
+  });
+
+  beforeEach(() => {
+    global.fetch.mockImplementation(async (url) =>
+      MANIFESTS[url]
+        ? new Response(JSON.stringify(MANIFESTS[url]), { status: 200 })
+        : new Response('{}', { status: 404 })
+    );
+  });
+
+  it('opens a window at the named page and hides the search view', async () => {
+    const store = createStore();
+    store.dispatch(setWorkspaceAddVisibility(true));
+    await openBookRoute(store, book('Add12042', '001v'), ctx());
+    const windows = Object.values(store.getState().windows);
+    expect(windows).toHaveLength(1);
+    expect(windows[0].manifestId).toBe(ADD12042);
+    expect(windows[0].canvasId).toBe(canvasOf(ADD12042, 2));
+    expect(store.getState().workspace.isWorkspaceAddVisible).toBe(false);
+  });
+
+  it('moves the window that already shows the book', async () => {
+    const store = createStore();
+    store.dispatch(addWindow({ manifestId: ADD12042 }));
+    const [id] = store.getState().workspace.windowIds;
+    await openBookRoute(store, book('Add12042', '002r'), ctx());
+    expect(store.getState().workspace.windowIds).toEqual([id]);
+    expect(store.getState().windows[id].canvasId).toBe(canvasOf(ADD12042, 3));
+    expect(store.getState().workspace.focusedWindowId).toBe(id);
+  });
+
+  it('keeps a history entry for the page a followed link leaves', async () => {
+    const win = {
+      history: { pushState: vi.fn() },
+      location: { href: 'https://x.org/aor/#aor/Add12042/001r/image' },
+    };
+    const store = createStore();
+    // A new window: the history module pushes an entry itself, nothing to do here
+    await openBookRoute(store, book('Add12042', '001v'), ctx(), { win });
+    expect(win.history.pushState).not.toHaveBeenCalled();
+    // The same window turning the page: the current URL is pushed so Back returns to it
+    await openBookRoute(store, book('Add12042', '002r'), ctx(), { win });
+    expect(win.history.pushState).toHaveBeenCalledWith(null, '', win.location.href);
+  });
+
+  it('does nothing once superseded', async () => {
+    const store = createStore();
+    await openBookRoute(store, book('Add12042', '001v'), ctx(), { isCurrent: () => false });
+    expect(Object.keys(store.getState().windows)).toHaveLength(0);
   });
 });

@@ -10,11 +10,13 @@
  */
 
 import React, { useCallback } from 'react';
+import { useStore } from 'react-redux';
 import { getAnnotationResourcesByMotivationForCanvas, setWorkspaceAddVisibility } from 'mirador';
 import { applySearchState } from '../jhsearch/state/actions';
 import { searchStateForRoute } from '../../site/history/route';
+import { openBookRoute, routeContextFor } from '../../site/history/historySync';
 import { RosaCanvasAnnotations } from './components/RosaCanvasAnnotations';
-import { siteSearchRoute } from './utils/siteLinks';
+import { siteRoute } from './utils/siteLinks';
 import './annotations.css';
 
 export { RosaCanvasAnnotations } from './components/RosaCanvasAnnotations';
@@ -49,8 +51,10 @@ export const mapDispatchToProps = { applySearchState, setWorkspaceAddVisibility 
 /**
  * Wraps CanvasAnnotations, which already receives the canvas label, the selected
  * annotation and the select, deselect and hover actions. A link in an annotation
- * body that is a search in this site (the people, books and places rosa-tool links
- * for AoR) opens the add-resource view with that search instead of a new tab.
+ * body into this site is followed in place instead of a new tab: a search (the
+ * people, books, places and cross-references rosa-tool links for AoR) opens the
+ * add-resource view with that search; a page (the targets of internal references)
+ * is shown in the window of its book, or a new one.
  */
 export function RosaCanvasAnnotationsWrapper({
   TargetComponent: _target,
@@ -60,15 +64,22 @@ export function RosaCanvasAnnotationsWrapper({
   setWorkspaceAddVisibility: showWorkspaceAdd,
   ...props
 }) {
+  const store = useStore();
   const onFollowLink = useCallback(
     (href) => {
-      const route = siteSearchRoute(href, jhsearch);
+      const route = siteRoute(href, jhsearch);
       if (!route) return false;
-      applySearch?.(searchStateForRoute(route));
-      showWorkspaceAdd?.(true);
+      if (route.type === 'book') {
+        openBookRoute(store, route, routeContextFor(jhsearch), { win: globalThis.window }).catch(
+          (error) => console.error('rosa-viewer: could not open the referenced page', error)
+        );
+      } else {
+        applySearch?.(searchStateForRoute(route));
+        showWorkspaceAdd?.(true);
+      }
       return true;
     },
-    [jhsearch, applySearch, showWorkspaceAdd]
+    [store, jhsearch, applySearch, showWorkspaceAdd]
   );
   return <RosaCanvasAnnotations {...props} onFollowLink={onFollowLink} />;
 }

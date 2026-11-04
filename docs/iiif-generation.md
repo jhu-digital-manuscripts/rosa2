@@ -311,7 +311,7 @@ classes; change the HTML conventions below and the stylesheets together.
 | Part of a marginal note in another place | `<p><small>[Right margin]</small> …</p>` |
 | Text element with language or hand | `<p>… <small>(Latin, Italian hand)</small></p>` |
 | Translation | `<p><i>…</i></p>` |
-| Metadata line | `<p><small><b>People:</b> a, b</small></p>`; labels used: Reader, Anchored to, Topic, People, Books, Locations, Symbols, Underlined, Cross-references, Refers to, Other reader, Date, Continues from, Continues to, Columns. With `--viewer-url`, each People, Books and Locations value is a link to the viewer's advanced search for it: `<a href="https://example.org/aor/#aor/search?q=people:'Plutarch'&amp;type=advanced">Plutarch</a>` (see [Viewer URL](#viewer-url)) |
+| Metadata line | `<p><small><b>People:</b> a, b</small></p>`; labels used: Reader, Anchored to, Topic, People, Books, Locations, Symbols, Underlined, Cross-references, Refers to, Other reader, Date, Continues from, Continues to, Columns. With `--viewer-url`, each People, Books and Locations value is a link to the viewer's advanced search for it: `<a href="https://example.org/aor/#aor/search?q=people:'Plutarch'&amp;type=advanced">Plutarch</a>`; in Cross-references (`person, title: “quote”`) the person and title link to the `cross_reference` search; in Refers to (`text → “target”; “target”`, each target between its prefix and suffix) a target links to the page it resolves to, `<a href="https://example.org/aor/#aor/RCPD1266/037v/image">“60”</a>` (see [Viewer URL](#viewer-url)) |
 | Line list (graph nodes, table rows as `a \| b`, calculation lines, physical links `source → target (relationship)`) | one `<p>` with the lines separated by `<br>` |
 | Illustration field | `<p><b>Costume:</b> Ankle-length gown</p>`; fields in order: Titles, Characters, Textual elements, Costume, Initials, Objects, Landscape, Architecture, Other |
 | Transcription column heading | `<p><b>Column a</b></p>` (omitted when the page has a single unnamed column) |
@@ -351,14 +351,35 @@ search URL (`rosa-viewer/src/site/history/route.js`):
 https://example.org/aor/#aor/search?q=people:'Plutarch'&type=advanced
 ```
 
-The field is `people`, `books` or `locations`, the value is quoted with `'`
-(`\` and `'` in it escaped with a backslash) and the parameter is
-percent-encoded with `+` for spaces (`AorSearchLinks`). In any IIIF viewer the
-link opens the site's search for that name. The rosa viewer recognises links into
-the page it is on (same origin and path, or a bare fragment) and follows them in
-place: the add-resource view opens with advanced search on the field and value
-(`rosa-viewer/src/plugins/annotations/utils/siteLinks.js`). The encoding on both
-sides must stay in step.
+The field is `people`, `books`, `locations` or, for the person and title of a
+cross-reference, `cross_reference`; the value is quoted with `'` (`\` and `'` in
+it escaped with a backslash) and the parameter is percent-encoded with `+` for
+spaces (`AorSearchLinks`). In any IIIF viewer the link opens the site's search for
+that name.
+
+The targets of internal references (`<internal_ref><target ref="…">`) link to the
+page they point to, in the site's book URL form:
+
+```
+https://example.org/aor/#aor/RCPD1266/037v/image
+```
+
+The page is named as the viewer names it (the image id without extension and
+without the `{book}.` prefix, or `i{index}` for an image not named after the book).
+A target `ref` is an original AoR annotation or page id, `{book}:{page token}[:m0001]`,
+whose page token is the library's scan name (`00000027`, `615_d_7_f035r`,
+`earbm_stc_11402_0039`, `84`); `AorReferenceResolver` looks it up in the collection's
+`id_locations.csv` (see [Archive Structure](archive-structure.md)), forgiving an
+annotation suffix the sheet lacks, dots in the book id and a differently padded
+number, and otherwise falls back to a folio at the end of the token
+(`FolgersHa2:Ha2.007r`). A target that does not resolve stays plain text;
+`check-aor` reports them.
+
+The rosa viewer recognises links into the page it is on (same origin and path, or a
+bare fragment) and follows them in place: a search opens the add-resource view with
+advanced search on the field and value, a page is shown in the window of its book
+(`rosa-viewer/src/plugins/annotations/utils/siteLinks.js`). The URL forms on both
+sides must stay in step (`rosa-viewer/src/site/history/route.js`).
 
 ## JHSearch service
 

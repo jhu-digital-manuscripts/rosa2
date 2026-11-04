@@ -56,6 +56,19 @@ public record AorSearchLinks(String viewerUrl, String collectionId) {
     }
 
     /**
+     * The viewer URL of a page of a book, {@code {viewerUrl}#{collection}/{book}/{page}/image},
+     * as the viewer's book route writes it ({@code route.js}, {@code formatRoute}).
+     *
+     * @param bookId     the book
+     * @param canvasName the page name used in viewer URLs, e.g. {@code 037v} or {@code i14}
+     * @return the URL, not HTML-escaped
+     */
+    public String pageHref(String bookId, String canvasName) {
+        return viewerUrl + "#" + encodeURIComponent(collectionId) + "/" + encodeURIComponent(bookId)
+                + "/" + encodeURIComponent(canvasName) + "/image";
+    }
+
+    /**
      * Escapes a value for the advanced query grammar: {@code \} and {@code '} get a backslash.
      */
     static String escapeValue(String value) {

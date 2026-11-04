@@ -19,7 +19,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
+import rosa.archive.aor.AorReferenceResolver;
 import rosa.archive.core.ArchiveStore;
+import rosa.archive.core.serialize.ArchiveReaders;
 import rosa.archive.core.util.IllustrationRefs;
 import rosa.archive.model.BiblioData;
 import rosa.archive.model.Book;
@@ -76,6 +78,9 @@ public final class IIIFPresentationGenerator {
 
     /** Collections to generate, or null for all of them. */
     private Set<String> collections;
+
+    /** Internal reference resolvers by collection id, built by {@link #generate} when links are written. */
+    private Map<String, AorReferenceResolver> referenceResolvers = Map.of();
 
     /** Cached transcription conversion for the most recent book. */
     private String cachedTranscriptionKey;
@@ -144,6 +149,7 @@ public final class IIIFPresentationGenerator {
             }
         }
         collectionsById = loadedCollections;
+        referenceResolvers = new HashMap<>();
         int skippedBooks = 0;
 
         // Generate top-level collection (excluding child collections from items)
@@ -155,6 +161,14 @@ public final class IIIFPresentationGenerator {
             BookCollection collection = loadedCollections.get(collectionId);
             List<String> bookIds = store.listBooks(collectionId);
 
+            // Resolves AoR internal references to pages; image lists of other books are read on demand
+            AorReferenceResolver resolver = null;
+            if (resolveViewerUrl(collection) != null) {
+                resolver = new AorReferenceResolver(collection.getIdLocations(), bookIds,
+                        id -> readImageList(store, collectionId, id));
+                referenceResolvers.put(collectionId, resolver);
+            }
+
             // Process books first to collect labels and first image IDs
             Map<String, String> bookLabels = new LinkedHashMap<>();
             Map<String, String> bookFirstImages = new LinkedHashMap<>();
@@ -163,6 +177,9 @@ public final class IIIFPresentationGenerator {
             for (String bookId : bookIds) {
                 Book book = store.loadBook(collection, bookId);
                 ImageList images = book.getImages();
+                if (resolver != null) {
+                    resolver.putImages(bookId, images);
+                }
 
                 if (images == null || images.getImages().isEmpty()) {
                     System.err.println("WARNING: Skipping book '" + bookId + "' in collection '"
@@ -692,7 +709,12 @@ public final class IIIFPresentationGenerator {
         AnnotatedPage annotatedPage = findAnnotatedPage(book, imageId);
         if (annotatedPage != null) {
             String siteUrl = resolveViewerUrl(collection);
-            AorSearchLinks links = siteUrl == null ? null : new AorSearchLinks(siteUrl, collectionId);
+            AorLinks links = null;
+            if (siteUrl != null) {
+                AorReferenceResolver resolver = referenceResolvers.get(collectionId);
+                links = new AorLinks(new AorSearchLinks(siteUrl, collectionId),
+                        resolver == null ? null : resolver::resolve);
+            }
             content.addAll(AorAnnotationFormatter.format(annotatedPage, links));
         }
 
@@ -817,7 +839,7 @@ public final class IIIFPresentationGenerator {
      * @param template the URL template, e.g. {@code https://example.org/styles/{collection}.css}
      */
     public void setAnnotationStylesheetUrl(String template) {
-        this.annotationStylesheetUrl = (template == null || template.isBlank()) ? null : template.trim();
+        this.annotationStylesheetUrl = checkTemplate("annotation stylesheet URL", template);
     }
 
     /**
@@ -838,7 +860,27 @@ public final class IIIFPresentationGenerator {
      * @param template the URL template, e.g. {@code https://example.org/{collection}/}
      */
     public void setViewerUrl(String template) {
-        this.viewerUrl = (template == null || template.isBlank()) ? null : template.trim();
+        this.viewerUrl = checkTemplate("viewer URL", template);
+    }
+
+    /**
+     * Trims a URL template and rejects one whose braces are not exactly {@code {collection}},
+     * such as the {@code {collection/}} a shell produces when the template is written inside
+     * {@code ${VAR:-…}}. Returns null for a blank template.
+     *
+     * @throws IllegalArgumentException if the template has other braces
+     */
+    static String checkTemplate(String name, String template) {
+        if (template == null || template.isBlank()) {
+            return null;
+        }
+        String t = template.trim();
+        String rest = t.replace("{collection}", "");
+        if (rest.contains("{") || rest.contains("}")) {
+            throw new IllegalArgumentException("The " + name + " '" + t
+                    + "' may only use the placeholder {collection}; check how the shell expanded it");
+        }
+        return t;
     }
 
     /**
@@ -859,6 +901,15 @@ public final class IIIFPresentationGenerator {
      */
     public void setCollections(Collection<String> ids) {
         this.collections = ids == null ? null : new HashSet<>(ids);
+    }
+
+    /** Reads a book's image list without loading the book; null when it has none or cannot be read. */
+    private static ImageList readImageList(ArchiveStore store, String collectionId, String bookId) {
+        try {
+            return ArchiveReaders.readImageList(store.bookFile(collectionId, bookId, bookId + ".images.csv"), new ArrayList<>());
+        } catch (IOException e) {
+            return null;
+        }
     }
 
     private static String resolveTemplate(String template, BookCollection collection) {

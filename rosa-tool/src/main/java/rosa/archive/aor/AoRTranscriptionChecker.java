@@ -2,15 +2,21 @@ package rosa.archive.aor;
 
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.serialize.ArchiveReaders;
-import rosa.archive.model.ReferenceSheet;
 import rosa.archive.model.BookReferenceSheet;
+import rosa.archive.model.ImageList;
+import rosa.archive.model.ReferenceSheet;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Annotation;
+import rosa.archive.model.aor.Drawing;
+import rosa.archive.model.aor.Graph;
+import rosa.archive.model.aor.IdLocations;
 import rosa.archive.model.aor.InternalReference;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Position;
 import rosa.archive.model.aor.ReferenceTarget;
+import rosa.archive.model.aor.Table;
+import rosa.archive.model.aor.XRef;
 
 import java.io.IOException;
 import java.nio.file.DirectoryStream;
@@ -25,15 +31,17 @@ import java.util.Set;
 /**
  * Validates AoR transcription XML files against reference spreadsheets.
  *
- * <p>Checks that people, book, and location references in annotations match
+ * <p>Checks that people, book, location and cross-reference names in annotations match
  * entries in the respective reference CSV files. Also detects duplicate annotation
- * IDs and validates internal reference targets.</p>
+ * IDs and resolves internal reference targets to pages through {@code id_locations.csv}
+ * ({@link AorReferenceResolver}), reporting the ones that do not resolve.</p>
  */
 public final class AoRTranscriptionChecker {
 
     private static final String PEOPLE_CSV = "people.csv";
     private static final String BOOKS_CSV = "books.csv";
     private static final String LOCATIONS_CSV = "locations.csv";
+    private static final String ID_LOCATIONS_CSV = "id_locations.csv";
 
     private static final ArchiveNameParser PARSER = new ArchiveNameParser();
 
@@ -77,23 +85,28 @@ public final class AoRTranscriptionChecker {
         BookReferenceSheet booksRef = loadBookReferenceSheet(refDir.resolve(BOOKS_CSV), BOOKS_CSV, errors);
         ReferenceSheet locationsRef = loadReferenceSheet(refDir.resolve(LOCATIONS_CSV), LOCATIONS_CSV, errors,
                 ArchiveReaders::readReferenceSheet);
+        IdLocations idLocations = loadIdLocations(refDir.resolve(ID_LOCATIONS_CSV), errors);
+
+        List<String> allBooks;
+        try {
+            allBooks = listBooks(collectionDir);
+        } catch (IOException e) {
+            errors.add("Failed to list books in collection " + collectionId + ": " + e.getMessage());
+            return errors;
+        }
+
+        // Internal references may target any book of the collection, so the resolver sees them all.
+        // Without id_locations.csv the targets are only checked against the annotation ids found.
+        AorReferenceResolver resolver = idLocations == null ? null
+                : new AorReferenceResolver(idLocations, allBooks,
+                        book -> readImageList(collectionDir.resolve(book).resolve(book + ".images.csv"), errors));
 
         // Collect all annotation IDs across the corpus for internal reference validation
         Map<String, List<String>> allAnnotationIds = new HashMap<>(); // id -> list of locations
         List<BookPageData> allPages = new ArrayList<>();
 
         // Determine books to check
-        List<String> booksToCheck = new ArrayList<>();
-        if (bookId != null) {
-            booksToCheck.add(bookId);
-        } else {
-            try {
-                booksToCheck.addAll(listBooks(collectionDir));
-            } catch (IOException e) {
-                errors.add("Failed to list books in collection " + collectionId + ": " + e.getMessage());
-                return errors;
-            }
-        }
+        List<String> booksToCheck = bookId != null ? List.of(bookId) : allBooks;
 
         // First pass: load all pages and collect annotation IDs
         for (String book : booksToCheck) {
@@ -151,7 +164,7 @@ public final class AoRTranscriptionChecker {
         // Validate each page
         Set<String> knownIds = allAnnotationIds.keySet();
         for (BookPageData pageData : allPages) {
-            validatePage(pageData, peopleRef, booksRef, locationsRef, knownIds, errors);
+            validatePage(pageData, peopleRef, booksRef, locationsRef, knownIds, resolver, allAnnotationIds, errors);
         }
 
         return errors;
@@ -162,7 +175,8 @@ public final class AoRTranscriptionChecker {
      */
     private void validatePage(BookPageData pageData, ReferenceSheet peopleRef,
                               BookReferenceSheet booksRef, ReferenceSheet locationsRef,
-                              Set<String> knownIds, List<String> errors) {
+                              Set<String> knownIds, AorReferenceResolver resolver,
+                              Map<String, List<String>> annotationLocations, List<String> errors) {
         AnnotatedPage page = pageData.page();
         String context = pageData.book() + "/" + pageData.filename();
 
@@ -191,15 +205,41 @@ public final class AoRTranscriptionChecker {
                             errors.add("[" + context + "] Unknown location reference: " + location);
                         }
                     }
+                    // Check cross-references against the same sheets
+                    for (XRef xref : pos.getXRefs()) {
+                        if (peopleRef != null && notBlank(xref.person()) && !peopleRef.containsKey(xref.person())) {
+                            errors.add("[" + context + "] Unknown cross-reference person: " + xref.person());
+                        }
+                        if (booksRef != null && notBlank(xref.title()) && !booksRef.containsKey(xref.title())) {
+                            errors.add("[" + context + "] Unknown cross-reference title: " + xref.title());
+                        }
+                    }
 
                     // Check internal references
                     for (InternalReference ref : pos.getInternalRefs()) {
-                        validateInternalReference(ref, knownIds, context, errors);
+                        validateInternalReference(ref, knownIds, resolver, annotationLocations, context, errors);
                     }
                     for (InternalReference ref : pos.getMarginaliaRefs()) {
-                        validateInternalReference(ref, knownIds, context, errors);
+                        validateInternalReference(ref, knownIds, resolver, annotationLocations, context, errors);
                     }
                 }
+            }
+        }
+
+        // Internal references on the other annotation types that carry them
+        for (Drawing d : page.getDrawings()) {
+            for (InternalReference ref : d.getInternalRefs()) {
+                validateInternalReference(ref, knownIds, resolver, annotationLocations, context, errors);
+            }
+        }
+        for (Graph g : page.getGraphs()) {
+            for (InternalReference ref : g.getInternalRefs()) {
+                validateInternalReference(ref, knownIds, resolver, annotationLocations, context, errors);
+            }
+        }
+        for (Table t : page.getTables()) {
+            for (InternalReference ref : t.getInternalRefs()) {
+                validateInternalReference(ref, knownIds, resolver, annotationLocations, context, errors);
             }
         }
 
@@ -215,15 +255,66 @@ public final class AoRTranscriptionChecker {
     }
 
     /**
-     * Validates targets within an internal reference point to known annotation IDs.
+     * Validates the targets of an internal reference. With {@code id_locations.csv} every
+     * target must resolve to a page, and a target that names an annotation id found in a
+     * transcription must be on the page the sheet says; without the sheet, targets are only
+     * checked against the annotation ids found.
      */
     private void validateInternalReference(InternalReference ref, Set<String> knownIds,
+                                           AorReferenceResolver resolver,
+                                           Map<String, List<String>> annotationLocations,
                                            String context, List<String> errors) {
         for (ReferenceTarget target : ref.getTargets()) {
-            String targetId = target.targetId();
-            if (targetId != null && !targetId.isBlank() && !knownIds.contains(targetId)) {
-                errors.add("[" + context + "] Internal reference target not found: " + targetId);
+            String targetId = target.targetId() == null ? "" : target.targetId().trim();
+            if (resolver == null) {
+                if (!targetId.isEmpty() && !knownIds.contains(targetId)) {
+                    errors.add("[" + context + "] Internal reference target not found: " + targetId);
+                }
+                continue;
             }
+            AorReferenceResolver.Resolution resolution = resolver.resolution(targetId);
+            if (!resolution.resolved()) {
+                errors.add("[" + context + "] Internal reference target not resolved: '" + targetId
+                        + "' (" + resolution.reason() + ")");
+                continue;
+            }
+            List<String> found = annotationLocations.get(targetId);
+            if (found != null) {
+                AorReferenceResolver.Target page = resolution.target();
+                String expected = page.bookId() + "/" + page.bookId() + ".aor." + page.canvasName() + ".xml#";
+                if (found.stream().noneMatch(location -> location.startsWith(expected))) {
+                    errors.add("[" + context + "] Internal reference target '" + targetId + "' is at "
+                            + found + " but id_locations.csv puts it on " + page.bookId() + " " + page.canvasName());
+                }
+            }
+        }
+    }
+
+    private static boolean notBlank(String s) {
+        return s != null && !s.isBlank();
+    }
+
+    /**
+     * Loads id_locations.csv; a missing file is not an error (not every collection has one).
+     */
+    private IdLocations loadIdLocations(Path path, List<String> errors) {
+        try {
+            return ArchiveReaders.readIdLocations(path, errors);
+        } catch (IOException e) {
+            errors.add("Failed to load reference file " + ID_LOCATIONS_CSV + ": " + e.getMessage());
+            return null;
+        }
+    }
+
+    /**
+     * Reads a book's image list, or null when the book has none.
+     */
+    private static ImageList readImageList(Path path, List<String> errors) {
+        try {
+            return ArchiveReaders.readImageList(path, errors);
+        } catch (IOException e) {
+            errors.add("Failed to read image list " + path.getFileName() + ": " + e.getMessage());
+            return null;
         }
     }
 

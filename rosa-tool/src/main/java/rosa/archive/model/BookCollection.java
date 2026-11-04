@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.Map;
 import java.util.Objects;
 
+import rosa.archive.model.aor.IdLocations;
+
 /**
  * A collection of books stored in the archive. Contains collection-level
  * metadata, reference sheets for people/locations/books, and shared data
@@ -23,6 +25,7 @@ public class BookCollection implements HasId {
     private ReferenceSheet peopleRef;
     private ReferenceSheet locationsRef;
     private BookReferenceSheet booksRef;
+    private IdLocations idLocations;
     private CollectionMetadata metadata;
 
     /**
@@ -121,6 +124,24 @@ public class BookCollection implements HasId {
      */
     public void setBooksRef(BookReferenceSheet booksRef) {
         this.booksRef = booksRef;
+    }
+
+    /**
+     * Returns where the original AoR annotation and page ids live ({@code id_locations.csv}).
+     *
+     * @return the id locations, or null when the collection has none
+     */
+    public IdLocations getIdLocations() {
+        return idLocations;
+    }
+
+    /**
+     * Sets the AoR id locations.
+     *
+     * @param idLocations the id locations, or null
+     */
+    public void setIdLocations(IdLocations idLocations) {
+        this.idLocations = idLocations;
     }
 
     /**
@@ -324,6 +345,7 @@ public class BookCollection implements HasId {
                 Objects.equals(peopleRef, that.peopleRef) &&
                 Objects.equals(locationsRef, that.locationsRef) &&
                 Objects.equals(booksRef, that.booksRef) &&
+                Objects.equals(idLocations, that.idLocations) &&
                 Objects.equals(metadata, that.metadata);
     }
 
@@ -331,7 +353,7 @@ public class BookCollection implements HasId {
     public int hashCode() {
         int result = Objects.hash(id, characterNames, illustrationTitles, narrativeSections,
                 checksums, missingImage, htmlAnnotations, peopleRef, locationsRef,
-                booksRef, metadata);
+                booksRef, idLocations, metadata);
         result = 31 * result + Arrays.hashCode(books);
         return result;
     }
@@ -350,6 +372,7 @@ public class BookCollection implements HasId {
                 ", peopleRef=" + peopleRef +
                 ", locationsRef=" + locationsRef +
                 ", booksRef=" + booksRef +
+                ", idLocations=" + idLocations +
                 ", metadata=" + metadata +
                 '}';
     }

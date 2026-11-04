@@ -134,6 +134,27 @@ class AnnotationBodyGenerationTest {
         }
         assertTrue(sawLink, "expected a linked People line");
 
+        // 011v (canvas 27) refers to PrincetonU101:00000034 (page 14v in id_locations.csv) and 00000051 (23r)
+        StringBuilder refersTo = new StringBuilder();
+        for (JsonNode item : items(outputDir, "aor/PrincetonU101/canvas/27")) {
+            String html = item.get("body").get("source").path("value").asText();
+            assertNull(AnnotationHtml.findViolation(html), html);
+            if (html.contains("<b>Refers to:</b>")) refersTo.append(html);
+        }
+        assertTrue(refersTo.toString().contains("<a href=\"https://example.org/aor/#aor/PrincetonU101/014v/image\">"), refersTo.toString());
+        assertTrue(refersTo.toString().contains("<a href=\"https://example.org/aor/#aor/PrincetonU101/023r/image\">"), refersTo.toString());
+
+        // 002r (canvas 8) has a cross-reference
+        boolean sawCrossRef = false;
+        for (JsonNode item : items(outputDir, "aor/PrincetonU101/canvas/8")) {
+            String html = item.get("body").get("source").path("value").asText();
+            if (html.contains("<b>Cross-references:</b>")) {
+                assertTrue(html.contains("<a href=\"https://example.org/aor/#aor/search?q=cross_reference:'"), html);
+                sawCrossRef = true;
+            }
+        }
+        assertTrue(sawCrossRef, "expected a linked Cross-references line on 002r");
+
         // Without a viewer URL the names stay plain text
         Path plain = outputDir.resolve("plain");
         new IIIFPresentationGenerator(new IIIFJsonWriter())
@@ -175,6 +196,20 @@ class AnnotationBodyGenerationTest {
         assertEquals("https://example.org/aor/", generator.resolveViewerUrl(aor));
         generator.setViewerUrl(" ");
         assertNull(generator.resolveViewerUrl(aor));
+    }
+
+    @Test
+    void templatesMayOnlyUseTheCollectionPlaceholder() {
+        IIIFPresentationGenerator generator = new IIIFPresentationGenerator(new IIIFJsonWriter());
+        // What bash makes of ${VIEWER_URL:-http://localhost:3001/{collection}/}
+        assertThrows(IllegalArgumentException.class, () -> generator.setViewerUrl("http://localhost:3001/{collection/}"));
+        assertThrows(IllegalArgumentException.class,
+                () -> generator.setAnnotationStylesheetUrl("http://localhost:3001/styles/{collection.css}"));
+        assertThrows(IllegalArgumentException.class, () -> generator.setViewerUrl("http://x/{book}/"));
+        generator.setViewerUrl(" http://x/{collection}/ ");
+        assertEquals("http://x/aor/", generator.resolveViewerUrl(collection("aor")));
+        generator.setViewerUrl("http://x/fixed/");
+        assertEquals("http://x/fixed/", generator.resolveViewerUrl(collection("aor")));
     }
 
     @Test

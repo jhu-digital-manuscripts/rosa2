@@ -47,6 +47,15 @@ class AorSearchLinksTest {
     }
 
     @Test
+    void buildsPageUrls() {
+        assertEquals("https://example.org/aor/#aor/RCPD1266/037v/image", links.pageHref("RCPD1266", "037v"));
+        assertEquals("https://example.org/aor/#aor/RCPD1266/i14/image", links.pageHref("RCPD1266", "i14"));
+        assertEquals("https://example.org/aor/#aor/RCP10549-50v1/misc.insert.07/image",
+                links.pageHref("RCP10549-50v1", "misc.insert.07"));
+        assertEquals("https://example.org/aor/#aor/A%20B/1r/image", links.pageHref("A B", "1r"));
+    }
+
+    @Test
     void blankValuesHaveNoLink() {
         assertNull(links.href("people", null));
         assertNull(links.href("people", "  "));

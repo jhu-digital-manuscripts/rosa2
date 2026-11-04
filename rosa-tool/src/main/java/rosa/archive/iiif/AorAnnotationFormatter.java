@@ -8,6 +8,7 @@ import static rosa.archive.iiif.AnnotationHtml.humanize;
 import static rosa.archive.iiif.AnnotationHtml.join;
 import static rosa.archive.iiif.AnnotationHtml.languageName;
 import static rosa.archive.iiif.AnnotationHtml.meta;
+import static rosa.archive.iiif.AnnotationHtml.metaHtml;
 import static rosa.archive.iiif.AnnotationHtml.normalizeLanguage;
 import static rosa.archive.iiif.AnnotationHtml.para;
 import static rosa.archive.iiif.AnnotationHtml.quoted;
@@ -20,6 +21,7 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.TreeMap;
 
+import rosa.archive.aor.AorReferenceResolver;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.AnnotationLink;
 import rosa.archive.model.aor.Calculation;
@@ -78,14 +80,15 @@ public final class AorAnnotationFormatter {
     }
 
     /**
-     * Formats all annotations on a page, linking the people, books and locations named
-     * in them to the viewer's advanced search.
+     * Formats all annotations on a page, linking the people, books, locations and
+     * cross-references named in them to the viewer's advanced search and the targets of
+     * internal references to their pages.
      *
      * @param page  the annotated page
-     * @param links the search link builder, or null to write the names as plain text
+     * @param links the viewer links, or null to write everything as plain text
      * @return the items: the page header first (if any), then annotations in place order
      */
-    public static List<AnnotationItem> format(AnnotatedPage page, AorSearchLinks links) {
+    public static List<AnnotationItem> format(AnnotatedPage page, AorLinks links) {
         List<Placed> placed = new ArrayList<>();
         for (Marginalia m : page.getMarginalia()) add(placed, marginalia(m, links));
         for (Drawing d : page.getDrawings()) add(placed, drawing(d, links));
@@ -177,7 +180,7 @@ public final class AorAnnotationFormatter {
 
     // ---- Marginalia ----
 
-    private static Placed marginalia(Marginalia m, AorSearchLinks links) {
+    private static Placed marginalia(Marginalia m, AorLinks links) {
         Location first = null;
         for (MarginaliaLanguage ml : m.getLanguages()) {
             for (Position pos : ml.getPositions()) {
@@ -227,9 +230,9 @@ public final class AorAnnotationFormatter {
                 locations.addAll(pos.getLocations());
                 symbols.addAll(pos.getSymbols());
                 for (Underline u : pos.getEmphasis()) emphasis.add(u.getReferencedText());
-                for (XRef x : pos.getXRefs()) xrefs.add(xref(x));
-                for (InternalReference r : pos.getInternalRefs()) refs.add(internalRef(r));
-                for (InternalReference r : pos.getMarginaliaRefs()) refs.add(internalRef(r));
+                for (XRef x : pos.getXRefs()) xrefs.add(xref(x, links));
+                for (InternalReference r : pos.getInternalRefs()) refs.add(internalRef(r, links));
+                for (InternalReference r : pos.getMarginaliaRefs()) refs.add(internalRef(r, links));
             }
         }
         if (text.isEmpty() && blank(m.getTranslation())) {
@@ -249,8 +252,8 @@ public final class AorAnnotationFormatter {
         html.append(names("Locations", locations, "locations", links));
         html.append(meta("Symbols", humanizeAll(symbols)));
         html.append(meta("Underlined", emphasis));
-        html.append(meta("Cross-references", xrefs));
-        html.append(meta("Refers to", refs));
+        html.append(metaHtml("Cross-references", xrefs));
+        html.append(metaHtml("Refers to", refs));
         html.append(meta("Other reader", m.getOtherReader()));
         html.append(meta("Date", m.getDate()));
         html.append(meta("Continues from", m.getContinuesFrom()));
@@ -261,23 +264,69 @@ public final class AorAnnotationFormatter {
     /**
      * A metadata line of names, each linked to the advanced search for it when links are configured.
      */
-    private static String names(String label, List<String> values, String field, AorSearchLinks links) {
-        return meta(label, values, links == null ? null : v -> links.href(field, v));
+    private static String names(String label, List<String> values, String field, AorLinks links) {
+        return meta(label, values, links == null ? null : v -> links.searchHref(field, v));
     }
 
-    private static String xref(XRef x) {
-        String who = join(", ", x.person(), x.title());
-        String text = blank(x.text()) ? null : "\u201c" + clean(x.text()) + "\u201d";
-        return join(": ", who, text);
+    /**
+     * A cross-reference as HTML: {@code person, title: “text”}, the person and title
+     * linked to the cross-reference search when links are configured.
+     */
+    private static String xref(XRef x, AorLinks links) {
+        String who = joinHtml(", ", searchLink(x.person(), "cross_reference", links),
+                searchLink(x.title(), "cross_reference", links));
+        String text = blank(x.text()) ? null : "\u201c" + esc(clean(x.text())) + "\u201d";
+        return joinHtml(": ", who, text);
     }
 
-    private static String internalRef(InternalReference r) {
+    /**
+     * An internal reference as HTML: {@code text → “target”; “target”}, each target linked
+     * to its page when it resolves, with the target's prefix and suffix around it.
+     */
+    private static String internalRef(InternalReference r, AorLinks links) {
         List<String> targets = new ArrayList<>();
         for (ReferenceTarget t : r.getTargets()) {
-            targets.add(join(" ", t.bookId(), t.filename(), blank(t.text()) ? null : "\u201c" + clean(t.text()) + "\u201d"));
+            String href = links == null ? null : links.pageHref(t.targetId()).orElse(null);
+            String label = blank(t.text()) ? null : "\u201c" + esc(clean(t.text())) + "\u201d";
+            if (label == null && href != null) {
+                label = esc(links.target(t.targetId()).map(AorReferenceResolver.Target::canvasName).orElse(""));
+            }
+            if (blank(label)) {
+                continue;
+            }
+            String linked = href == null ? label : "<a href=\"" + esc(href) + "\">" + label + "</a>";
+            targets.add(joinHtml(" ", escaped(t.textPrefix()), linked, escaped(t.textSuffix())));
         }
         String to = String.join("; ", AnnotationHtml.distinct(targets));
-        return join(" \u2192 ", r.getText(), to);
+        return joinHtml(" \u2192 ", escaped(r.getText()), to);
+    }
+
+    /**
+     * A value as escaped text, linked to the advanced search for it when links are configured.
+     */
+    private static String searchLink(String value, String field, AorLinks links) {
+        String v = clean(value);
+        if (v.isEmpty()) {
+            return null;
+        }
+        String href = links == null ? null : links.searchHref(field, v);
+        return href == null ? esc(v) : "<a href=\"" + esc(href) + "\">" + esc(v) + "</a>";
+    }
+
+    /** Cleaned and escaped text, or null when blank. */
+    private static String escaped(String text) {
+        return blank(text) ? null : esc(clean(text));
+    }
+
+    /** Joins the non-blank HTML parts with a separator, without touching them. */
+    private static String joinHtml(String separator, String... parts) {
+        List<String> out = new ArrayList<>();
+        for (String p : parts) {
+            if (!blank(p)) {
+                out.add(p);
+            }
+        }
+        return String.join(separator, out);
     }
 
     // ---- Simple marks ----
@@ -332,7 +381,7 @@ public final class AorAnnotationFormatter {
 
     // ---- Complex annotations ----
 
-    private static Placed drawing(Drawing d, AorSearchLinks links) {
+    private static Placed drawing(Drawing d, AorLinks links) {
         StringBuilder html = new StringBuilder();
         html.append(heading("Drawing", humanize(d.getType()), join(", ", d.getMethod(), d.getColor())));
         html.append(quoted(d.getReferencedText()));
@@ -342,11 +391,11 @@ public final class AorAnnotationFormatter {
         html.append(names("Books", d.getBooks(), "books", links));
         html.append(names("Locations", d.getLocations(), "locations", links));
         html.append(meta("Symbols", humanizeAll(d.getSymbols())));
-        html.append(meta("Refers to", internalRefs(d.getInternalRefs())));
+        html.append(metaHtml("Refers to", internalRefs(d.getInternalRefs(), links)));
         return placed("drawing", d.getLocation(), html, d.getLanguage());
     }
 
-    private static Placed graph(Graph g, AorSearchLinks links) {
+    private static Placed graph(Graph g, AorLinks links) {
         StringBuilder html = new StringBuilder();
         html.append(heading("Graph", humanize(g.getType()), g.getMethod()));
 
@@ -377,13 +426,13 @@ public final class AorAnnotationFormatter {
         html.append(names("Books", books, "books", links));
         html.append(names("Locations", locations, "locations", links));
         html.append(meta("Symbols", humanizeAll(symbols)));
-        html.append(meta("Refers to", internalRefs(g.getInternalRefs())));
+        html.append(metaHtml("Refers to", internalRefs(g.getInternalRefs(), links)));
         html.append(meta("Continues from", g.getContinuesFrom()));
         html.append(meta("Continues to", g.getContinuesTo()));
         return placed("graph", g.getLocation(), html, g.getLanguage());
     }
 
-    private static Placed table(Table t, AorSearchLinks links) {
+    private static Placed table(Table t, AorLinks links) {
         StringBuilder html = new StringBuilder();
         html.append(heading("Table", humanize(t.getType()), null));
 
@@ -413,7 +462,7 @@ public final class AorAnnotationFormatter {
         html.append(names("Books", t.getBooks(), "books", links));
         html.append(names("Locations", t.getLocations(), "locations", links));
         html.append(meta("Symbols", humanizeAll(t.getSymbols())));
-        html.append(meta("Refers to", internalRefs(t.getInternalRefs())));
+        html.append(metaHtml("Refers to", internalRefs(t.getInternalRefs(), links)));
         return placed("table", t.getLocation(), html, t.getLanguage());
     }
 
@@ -469,10 +518,10 @@ public final class AorAnnotationFormatter {
         }
     }
 
-    private static List<String> internalRefs(List<InternalReference> refs) {
+    private static List<String> internalRefs(List<InternalReference> refs, AorLinks links) {
         List<String> out = new ArrayList<>();
         for (InternalReference r : refs) {
-            out.add(internalRef(r));
+            out.add(internalRef(r, links));
         }
         return out;
     }

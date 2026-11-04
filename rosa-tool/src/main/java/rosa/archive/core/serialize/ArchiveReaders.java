@@ -56,6 +56,7 @@ import rosa.archive.model.aor.Graph;
 import rosa.archive.model.aor.GraphNode;
 import rosa.archive.model.aor.GraphNote;
 import rosa.archive.model.aor.GraphText;
+import rosa.archive.model.aor.IdLocations;
 import rosa.archive.model.aor.Location;
 import rosa.archive.model.aor.ReferenceTarget;
 import rosa.archive.model.aor.InternalReference;
@@ -341,6 +342,38 @@ public final class ArchiveReaders {
         }
 
         return reference;
+    }
+
+    /**
+     * Reads an AoR collection's {@code id_locations.csv}: one row per original AoR id,
+     * {@code id,collection,book,page,annotation id}, no header. Rows without five columns
+     * are reported and skipped.
+     *
+     * @param path   the path to the CSV file
+     * @param errors list to collect error messages
+     * @return the parsed locations, or null if the file doesn't exist
+     * @throws IOException if reading fails
+     */
+    public static IdLocations readIdLocations(Path path, List<String> errors) throws IOException {
+        if (!Files.exists(path)) {
+            return null;
+        }
+
+        IdLocations locations = new IdLocations();
+        List<String> lines = Files.readAllLines(path, StandardCharsets.UTF_8);
+        for (int i = 0; i < lines.size(); i++) {
+            String line = lines.get(i);
+            if (line.isBlank()) {
+                continue;
+            }
+            String[] row = CSV.parse(line);
+            if (row.length != 5 || row[0].isBlank()) {
+                errors.add(path.getFileName() + " line " + (i + 1) + ": expected 5 columns (id,collection,book,page,annotation id): " + line);
+                continue;
+            }
+            locations.add(row[0].trim(), new IdLocations.IdLocation(row[1].trim(), row[2].trim(), row[3].trim(), row[4].trim()));
+        }
+        return locations;
     }
 
     /**

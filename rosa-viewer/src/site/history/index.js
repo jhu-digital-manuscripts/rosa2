@@ -1,4 +1,11 @@
-export { connectHistory, routeFromState, shouldReplace, parseManifestUrl } from './historySync';
+export {
+  connectHistory,
+  openBookRoute,
+  parseManifestUrl,
+  routeContextFor,
+  routeFromState,
+  shouldReplace,
+} from './historySync';
 export * from './route';
 export * from './advancedQuery';
 export * from './canvasNames';

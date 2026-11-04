@@ -87,12 +87,15 @@ annotations Mirador shows for each canvas in the annotations side panel:
   `src/plugins/annotations/annotations.css` has the layout shared by both.
 - Editorial notes in transcriptions become an asterisk that shows the note on
   hover, keyboard focus or tap.
-- The people, books and places named in AoR annotations are links to the advanced
-  search for them (rosa-tool writes them when given `--viewer-url`, see
+- The people, books, places and cross-references named in AoR annotations are links
+  to the advanced search for them, and the targets of internal references are links
+  to the page they point to (rosa-tool writes them when given `--viewer-url`, see
   [`docs/iiif-generation.md`](../docs/iiif-generation.md#viewer-url)). A link into
   the site the viewer is on, or a bare `#…` fragment, is followed in place
-  (`utils/siteLinks.js`): the add-resource view opens with advanced search on that
-  field and value, without selecting the annotation. Any other link opens in a new tab.
+  (`utils/siteLinks.js`): a search opens the add-resource view with advanced search
+  on that field and value; a page is shown in the window of its book, or a new one
+  (`openBookRoute` in `src/site/history/`), without selecting the annotation. Any
+  other link opens in a new tab.
 
 **Why `dompurify` is a direct dependency.** Mirador sanitizes annotation HTML
 with its `iiif` rule set, which keeps only `a b br i img p span`. It drops

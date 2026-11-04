@@ -225,9 +225,10 @@ change `functions/*.js`, `delegates.rb` and their tests together.
 - Annotation bodies are recipe 0045 `SpecificResource`s with a `styleClass` wrapping HTML limited to the
   recipe 0019 tags (`a b br i img p small span sub sup`). The HTML conventions and classes in
   `docs/iiif-generation.md#annotation-bodies` are shared with `rosa-viewer/public/styles/{aor,dlmm}.css`;
-  change them together. With `--viewer-url`, AoR people/books/locations are `<a href>` links to the site's
-  advanced search URL; `AorSearchLinks` (Java) and `site/history/route.js` + `advancedQuery.js` (viewer)
-  must agree on the encoding.
+  change them together. With `--viewer-url`, AoR people/books/locations/cross-references are `<a href>`
+  links to the site's advanced search URL and internal-reference targets link to the site's book URL
+  (`#aor/{book}/{page}/image`), resolved through `archive/aor/id_locations.csv` by `AorReferenceResolver`;
+  `AorSearchLinks` (Java) and `site/history/route.js` + `advancedQuery.js` (viewer) must agree on the encoding.
 - Text fields use per-language sub-fields (`.en .fr .ofr .la .it .el .es .de`); unknown languages fall back to `.en`.
   Mixed fields (`mark`, `symbol`, `drawing`, `calculation`, `graph`, `table`) also have `.keyword`.
 - The Opensearch Bulk API returns HTTP 200 even when documents fail. Check for `"errors":true`.

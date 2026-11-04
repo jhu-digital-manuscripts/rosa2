@@ -1,19 +1,23 @@
 package rosa.archive.iiif;
 
 import org.junit.jupiter.api.Test;
+import rosa.archive.aor.AorReferenceResolver;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Errata;
+import rosa.archive.model.aor.InternalReference;
 import rosa.archive.model.aor.Location;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Mark;
 import rosa.archive.model.aor.Numeral;
 import rosa.archive.model.aor.Position;
+import rosa.archive.model.aor.ReferenceTarget;
 import rosa.archive.model.aor.Symbol;
 import rosa.archive.model.aor.Underline;
 import rosa.archive.model.aor.XRef;
 
 import java.util.List;
+import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -97,7 +101,7 @@ class AorAnnotationFormatterTest {
         AnnotatedPage page = new AnnotatedPage();
         page.getMarginalia().add(marginalia("LA", pos));
 
-        AorSearchLinks links = new AorSearchLinks("https://example.org/aor/", "aor");
+        AorLinks links = new AorLinks(new AorSearchLinks("https://example.org/aor/", "aor"), null);
         AnnotationItem item = AorAnnotationFormatter.format(page, links).get(0);
         assertEquals("<p><b>Marginal note</b> <small>Latin, Italian hand</small></p>"
                 + "<p>Excidium Troia[e], secundum Plutarchum</p>"
@@ -125,11 +129,60 @@ class AorAnnotationFormatterTest {
         page.getMarginalia().add(marginalia("LA", pos));
 
         AnnotationItem item = AorAnnotationFormatter.format(page,
-                new AorSearchLinks("https://example.org/aor/", "aor")).get(0);
+                new AorLinks(new AorSearchLinks("https://example.org/aor/", "aor"), null)).get(0);
         assertNull(AnnotationHtml.findViolation(item.html()), item.html());
         assertTrue(item.html().contains(
                 "<a href=\"https://example.org/aor/#aor/search?q=people:'a+%3C+b+%26+%22c%22+%5C'd%5C'+%5C%5C'&amp;type=advanced\">"
                 + "a &lt; b &amp; &quot;c&quot; 'd' \\</a>"), item.html());
+    }
+
+    @Test
+    void crossReferencesAndInternalReferencesLinkWhenConfigured() {
+        Position pos = position(Location.INTEXT, "Vide fol[io] 35.");
+        pos.getXRefs().add(new XRef("Plutarch", "Moralia", "Demadi, sus Minerva[e]", "LA"));
+        InternalReference ref = new InternalReference();
+        ref.setText("infra");
+        ref.addTargets(new ReferenceTarget("BL615d7:615_d_7_f035r:m0001", "fol[io] 35", "[the] ", " leafe"),
+                new ReferenceTarget("Nope:1", "60"));
+        pos.getInternalRefs().add(ref);
+        AnnotatedPage page = new AnnotatedPage();
+        page.getMarginalia().add(marginalia("LA", pos));
+
+        AorReferenceResolver.Target target = new AorReferenceResolver.Target("BL615d7", "BL615d7.035r.tif", 40);
+        AorLinks links = new AorLinks(new AorSearchLinks("https://example.org/aor/", "aor"),
+                r -> r.startsWith("BL615d7:") ? Optional.of(target) : Optional.empty());
+        String html = AorAnnotationFormatter.format(page, links).get(0).html();
+        assertTrue(html.contains("<p><small><b>Cross-references:</b> "
+                + "<a href=\"https://example.org/aor/#aor/search?q=cross_reference:'Plutarch'&amp;type=advanced\">Plutarch</a>, "
+                + "<a href=\"https://example.org/aor/#aor/search?q=cross_reference:'Moralia'&amp;type=advanced\">Moralia</a>: "
+                + "\u201cDemadi, sus Minerva[e]\u201d</small></p>"), html);
+        assertTrue(html.contains("<p><small><b>Refers to:</b> infra \u2192 "
+                + "[the] <a href=\"https://example.org/aor/#aor/BL615d7/035r/image\">\u201cfol[io] 35\u201d</a> leafe; "
+                + "\u201c60\u201d</small></p>"), html);
+        assertNull(AnnotationHtml.findViolation(html), html);
+
+        // Without links: the same lines as plain text, the target ref itself never shown
+        String plain = AorAnnotationFormatter.format(page).get(0).html();
+        assertTrue(plain.contains("<p><small><b>Cross-references:</b> Plutarch, Moralia: \u201cDemadi, sus Minerva[e]\u201d</small></p>"), plain);
+        assertTrue(plain.contains("<p><small><b>Refers to:</b> infra \u2192 [the] \u201cfol[io] 35\u201d leafe; \u201c60\u201d</small></p>"), plain);
+        assertFalse(plain.contains("<a "));
+    }
+
+    @Test
+    void targetWithoutTextIsLabelledByItsPage() {
+        Position pos = position(Location.INTEXT, "x");
+        InternalReference ref = new InternalReference();
+        ref.addTargets(new ReferenceTarget("RCPD1266:84", ""));
+        pos.getInternalRefs().add(ref);
+        AnnotatedPage page = new AnnotatedPage();
+        page.getMarginalia().add(marginalia("LA", pos));
+
+        AorLinks links = new AorLinks(new AorSearchLinks("https://example.org/aor/", "aor"),
+                _ -> Optional.of(new AorReferenceResolver.Target("RCPD1266", "RCPD1266.037v.tif", 83)));
+        assertTrue(AorAnnotationFormatter.format(page, links).get(0).html().contains(
+                "<p><small><b>Refers to:</b> <a href=\"https://example.org/aor/#aor/RCPD1266/037v/image\">037v</a></small></p>"));
+        // Without a resolver the empty target vanishes, as before
+        assertFalse(AorAnnotationFormatter.format(page).get(0).html().contains("Refers to"));
     }
 
     @Test

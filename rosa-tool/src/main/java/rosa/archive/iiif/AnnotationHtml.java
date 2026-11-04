@@ -175,6 +175,22 @@ public final class AnnotationHtml {
     }
 
     /**
+     * Builds a metadata line whose values are already HTML (escaped text, possibly with
+     * links). Blank and duplicate values are dropped; returns an empty string if none remain.
+     *
+     * @param label      the label, without a colon (escaped here)
+     * @param htmlValues the values, as HTML
+     * @return the paragraph HTML, or an empty string
+     */
+    public static String metaHtml(String label, Collection<String> htmlValues) {
+        List<String> vals = distinct(htmlValues);
+        if (vals.isEmpty()) {
+            return "";
+        }
+        return "<p><small><b>" + esc(label) + ":</b> " + String.join(", ", vals) + "</small></p>";
+    }
+
+    /**
      * Builds a metadata line with a single value.
      */
     public static String meta(String label, String value) {
