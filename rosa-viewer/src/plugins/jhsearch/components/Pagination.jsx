@@ -64,8 +64,16 @@ export function Pagination() {
   const scrollToTop = () => {
     // Find the results container and scroll to top
     const resultsContainer = document.querySelector('[data-results-container]');
-    if (resultsContainer) {
-      resultsContainer.scrollTop = 0;
+    if (!resultsContainer) return;
+    resultsContainer.scrollTop = 0;
+
+    // In the narrow layout the whole view scrolls rather than the list, so bring
+    // the top of the results back into view if it has scrolled out above
+    const results = resultsContainer.closest('[data-search-results]');
+    const view = resultsContainer.closest('[data-jhsearch-view]');
+    if (results && view) {
+      const offset = results.getBoundingClientRect().top - view.getBoundingClientRect().top;
+      if (offset < 0) view.scrollTop += offset;
     }
   };
 
