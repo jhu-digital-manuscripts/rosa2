@@ -199,7 +199,6 @@ export function JHSearchView({ jhsearchConfig }) {
   // Below md the sidebar sits above the results and the whole view scrolls.
   return (
     <Box
-      data-jhsearch-view
       sx={{
         position: 'absolute',
         inset: 0,

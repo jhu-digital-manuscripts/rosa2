@@ -2,7 +2,7 @@
  * SearchResults component - displays browse and search results.
  */
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
@@ -110,6 +110,30 @@ export function SearchResults({ onRetry }) {
 
   const bookClickView = useSelector(selectors.getBookClickView);
 
+  const rootRef = useRef(null);
+  const listRef = useRef(null);
+
+  // Show the start of each new set of results, however it arrived: pagination,
+  // Back/Forward (site history restores the search state), or a sort or filter
+  // change. Runs when the results arrive rather than when they are requested,
+  // so the old page doesn't jump while the new one loads.
+  useEffect(() => {
+    const root = rootRef.current;
+    const list = listRef.current;
+    if (!root || !list) return;
+
+    // From md up the list scrolls on its own
+    list.scrollTop = 0;
+
+    // Below md the whole view (JHSearchView, the parent) scrolls instead. Bring
+    // the top of the results back only if it has scrolled out above, so that a
+    // search made in the sidebar doesn't scroll the sidebar away.
+    const view = root.parentElement;
+    if (!view) return;
+    const offset = root.getBoundingClientRect().top - view.getBoundingClientRect().top;
+    if (offset < 0) view.scrollTop += offset;
+  }, [results]);
+
   /**
    * Open a book in a new Mirador window and hide the JHSearch view.
    * Without a canvas Mirador starts at the first page of the book.
@@ -152,7 +176,7 @@ export function SearchResults({ onRetry }) {
   // Below md they sit below it at their full height and the whole view scrolls.
   return (
     <Box
-      data-search-results
+      ref={rootRef}
       sx={{
         flex: { xs: 'none', md: 1 },
         minWidth: 0,
@@ -166,7 +190,7 @@ export function SearchResults({ onRetry }) {
 
       {/* Content area */}
       <Box
-        data-results-container
+        ref={listRef}
         sx={{
           flex: { xs: 'none', md: 1 },
           overflow: { xs: 'visible', md: 'auto' },
