@@ -1,10 +1,11 @@
 /**
- * Tests for what clicking a search result opens.
+ * Tests for what clicking a search result opens, and the scroll position when
+ * new results arrive.
  */
 
 import React from 'react';
 import { describe, it, expect, vi } from 'vitest';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen, fireEvent, act } from '@testing-library/react';
 import { Provider } from 'react-redux';
 
 import { SearchResults } from './SearchResults';
@@ -169,5 +170,102 @@ describe('SearchResults header', () => {
   it('says nothing about the limit for smaller result sets', () => {
     renderResults({}, 10000);
     expect(screen.queryByText(/Only the first/)).toBeNull();
+  });
+});
+
+describe('SearchResults scroll position', () => {
+  /** Store whose results can be replaced, as a search or Back/Forward would. */
+  function createResultsStore(items) {
+    let state = {
+      ...mockReduxState,
+      jhsearch: {
+        ...mockReduxState.jhsearch,
+        pagination: { ...mockReduxState.jhsearch.pagination, total: 2 },
+        results: { ...mockReduxState.jhsearch.results, items },
+      },
+    };
+    const listeners = new Set();
+    return {
+      getState: () => state,
+      dispatch: vi.fn(),
+      subscribe: (listener) => {
+        listeners.add(listener);
+        return () => listeners.delete(listener);
+      },
+      updateResults(changes) {
+        const results = { ...state.jhsearch.results, ...changes };
+        state = { ...state, jhsearch: { ...state.jhsearch, results } };
+        act(() => listeners.forEach((listener) => listener()));
+      },
+    };
+  }
+
+  /**
+   * Render the results inside a stand-in for JHSearchView, the element that
+   * scrolls in the narrow layout. Returns the view, the results area and the
+   * results list (the area's second child, after the header).
+   */
+  function renderInView(store) {
+    render(
+      <Provider store={store}>
+        <div data-testid="view">
+          <SearchResults />
+        </div>
+      </Provider>
+    );
+    const view = screen.getByTestId('view');
+    const area = view.firstElementChild;
+    return { view, area, list: area.children[1] };
+  }
+
+  /** Place the view and the top of the results area, as layout would. */
+  function placeTops(view, area, { viewTop, areaTop }) {
+    vi.spyOn(view, 'getBoundingClientRect').mockReturnValue({ top: viewTop });
+    vi.spyOn(area, 'getBoundingClientRect').mockReturnValue({ top: areaTop });
+  }
+
+  it('scrolls the list to the top when new results arrive', () => {
+    const store = createResultsStore([bookResult]);
+    const { list } = renderInView(store);
+    list.scrollTop = 400;
+    expect(list.scrollTop).toBe(400);
+
+    store.updateResults({ items: [pageResult] });
+
+    expect(list.scrollTop).toBe(0);
+  });
+
+  it('keeps the scroll position while the next page loads', () => {
+    const store = createResultsStore([bookResult]);
+    const { list } = renderInView(store);
+    list.scrollTop = 400;
+
+    store.updateResults({ loading: true });
+
+    expect(list.scrollTop).toBe(400);
+  });
+
+  it('scrolls the view back to the results when their top has scrolled above it', () => {
+    const store = createResultsStore([bookResult]);
+    const { view, area } = renderInView(store);
+    view.scrollTop = 1000;
+    placeTops(view, area, { viewTop: 100, areaTop: -200 });
+
+    store.updateResults({ items: [pageResult] });
+
+    // The area's top was 300px above the view's, so the view scrolls up by 300
+    expect(view.scrollTop).toBe(700);
+  });
+
+  it('leaves the view on the sidebar when the top of the results is in view', () => {
+    const store = createResultsStore([bookResult]);
+    const { view, area } = renderInView(store);
+    view.scrollTop = 0;
+    placeTops(view, area, { viewTop: 100, areaTop: 429 });
+
+    // e.g. a sort or filter change made in the sidebar above the results
+    store.updateResults({ items: [pageResult] });
+
+    expect(view.scrollTop).toBe(0);
   });
 });
