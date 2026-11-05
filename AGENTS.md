@@ -34,7 +34,7 @@ rosa2/
 │       ├── plugins/jhsearch/   components/ hooks/ services/ state/ utils/
 │       ├── plugins/annotations/  RosaAnnotations panel (grouped, styled annotations)
 │       ├── plugins/description/  Book description panel (TEI notesStmt from manifest seeAlso)
-│       ├── i18n/, styles/
+│       ├── i18n/
 │       └── test/               setup.js, mocks.js
 ├── rosa-search/
 │   ├── opensearch/       Index definitions (manifest.json, canvas.json), Latin analyzer dictionaries
