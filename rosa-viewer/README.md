@@ -352,7 +352,6 @@ rosa-viewer/
 │   ├── site/                 # createSiteViewer, site config resolution, shared site CSS
 │   │   └── history/          # URL fragment <-> viewer state, browser history
 │   ├── i18n/                 # Translations
-│   ├── styles/
 │   ├── test/                 # Vitest setup and shared mocks
 │   └── plugins/
 │       ├── annotations/      # RosaAnnotations plugin: grouped, styled annotations panel
