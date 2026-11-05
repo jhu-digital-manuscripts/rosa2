@@ -23,6 +23,8 @@ import { rowHasQuery } from '../utils/queryBuilder';
 
 const MIN_WIDTH = 300;
 const DEFAULT_WIDTH = 450;
+/** Width (px) the results keep beside the sidebar, however far it is dragged. */
+const MIN_RESULTS_WIDTH = 300;
 
 /**
  * JHSearchSidebar provides all search and browse controls.
@@ -81,9 +83,15 @@ export function JHSearchSidebar() {
       const sidebarRect = sidebarRef.current.getBoundingClientRect();
       const newWidth = e.clientX - sidebarRect.left;
 
-      if (newWidth >= MIN_WIDTH) {
-        setWidth(newWidth);
-      }
+      // Ignore positions below the minimum, which include stray ones while the
+      // pointer is outside the window, rather than snapping to the minimum
+      if (newWidth < MIN_WIDTH) return;
+
+      // Keep room for the results. The maxWidth below also covers the window
+      // shrinking after a drag; this keeps the stored width within what is shown.
+      const viewWidth = sidebarRef.current.parentElement?.clientWidth ?? Infinity;
+      const maxWidth = Math.max(MIN_WIDTH, viewWidth - MIN_RESULTS_WIDTH);
+      setWidth(Math.min(newWidth, maxWidth));
     };
 
     const handleMouseUp = () => {
@@ -118,6 +126,7 @@ export function JHSearchSidebar() {
       sx={{
         width: { xs: '100%', md: width },
         minWidth: { xs: 0, md: MIN_WIDTH },
+        maxWidth: { xs: 'none', md: `calc(100% - ${MIN_RESULTS_WIDTH}px)` },
         flexShrink: 0,
         display: 'flex',
         flexDirection: 'column',

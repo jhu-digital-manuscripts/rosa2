@@ -28,6 +28,14 @@ import { rowHasQuery } from '../utils/queryBuilder';
  */
 export const TERM_PLACEHOLDER = 'All words required; "quotes" for a phrase';
 
+/**
+ * Form width (px) at or below which each row's value input, help and remove
+ * buttons go on a second line below the operator and field. Narrower than
+ * this, a row after the first leaves the value input under ~100px.
+ */
+const WRAP_BELOW = 400;
+const WRAPPED = `@container (max-width: ${WRAP_BELOW}px)`;
+
 /** Whether a field offers a fixed list of values to choose from. */
 function hasEnumeratedValues(fieldDef) {
   return Boolean(fieldDef?.values && fieldDef.values.length > 0);
@@ -84,7 +92,9 @@ function AdvancedSearchRow({ row, index, fields, onUpdate, onRemove, onSubmit, s
 
   return (
     <Box sx={{ mb: 1 }}>
-      <Box sx={{ display: 'flex', gap: 1, alignItems: 'flex-start' }}>
+      <Box
+        sx={{ display: 'flex', gap: 1, alignItems: 'flex-start', [WRAPPED]: { flexWrap: 'wrap' } }}
+      >
         {/* Operator (for rows after the first) */}
         {showOperator && (
           <FormControl size="small" sx={{ minWidth: 70 }}>
@@ -116,51 +126,64 @@ function AdvancedSearchRow({ row, index, fields, onUpdate, onRemove, onSubmit, s
           </Select>
         </FormControl>
 
-        {/* Value input or dropdown, once a field is chosen */}
-        {fieldDef &&
-          (hasValues ? (
-            <FormControl size="small" sx={{ flex: 2, minWidth: 0 }}>
-              <InputLabel id={`value-label-${index}`}>Value</InputLabel>
-              <Select
-                labelId={`value-label-${index}`}
+        {/* Value, help and remove. Laid out as part of the row (display: contents)
+            unless the form is narrow and a field is chosen; then they form a line
+            of their own below the operator and field, in the same order as in
+            the DOM so the tab order matches. */}
+        <Box
+          sx={{
+            display: 'contents',
+            ...(fieldDef && {
+              [WRAPPED]: { display: 'flex', gap: 1, alignItems: 'flex-start', flexBasis: '100%' },
+            }),
+          }}
+        >
+          {/* Value input or dropdown, once a field is chosen */}
+          {fieldDef &&
+            (hasValues ? (
+              <FormControl size="small" sx={{ flex: 2, minWidth: 0 }}>
+                <InputLabel id={`value-label-${index}`}>Value</InputLabel>
+                <Select
+                  labelId={`value-label-${index}`}
+                  value={row.value || ''}
+                  onChange={handleValueChange}
+                  label="Value"
+                >
+                  <MenuItem value="">
+                    <em>Select...</em>
+                  </MenuItem>
+                  {fieldDef.values.map((v) => (
+                    <MenuItem key={v.value} value={v.value}>
+                      {v.label}
+                    </MenuItem>
+                  ))}
+                </Select>
+              </FormControl>
+            ) : (
+              <TextField
+                size="small"
+                placeholder={TERM_PLACEHOLDER}
                 value={row.value || ''}
                 onChange={handleValueChange}
-                label="Value"
-              >
-                <MenuItem value="">
-                  <em>Select...</em>
-                </MenuItem>
-                {fieldDef.values.map((v) => (
-                  <MenuItem key={v.value} value={v.value}>
-                    {v.label}
-                  </MenuItem>
-                ))}
-              </Select>
-            </FormControl>
-          ) : (
-            <TextField
-              size="small"
-              placeholder={TERM_PLACEHOLDER}
-              value={row.value || ''}
-              onChange={handleValueChange}
-              onKeyDown={handleKeyDown}
-              sx={{ flex: 2, minWidth: 0 }}
-            />
-          ))}
+                onKeyDown={handleKeyDown}
+                sx={{ flex: 2, minWidth: 0 }}
+              />
+            ))}
 
-        {/* Field help */}
-        {fieldDef?.description && (
-          <Tooltip title={fieldDef.description} placement="top">
-            <IconButton size="small" aria-label="Field help">
-              <HelpOutlineIcon fontSize="small" />
-            </IconButton>
-          </Tooltip>
-        )}
+          {/* Field help */}
+          {fieldDef?.description && (
+            <Tooltip title={fieldDef.description} placement="top">
+              <IconButton size="small" aria-label="Field help">
+                <HelpOutlineIcon fontSize="small" />
+              </IconButton>
+            </Tooltip>
+          )}
 
-        {/* Remove row button */}
-        <IconButton size="small" onClick={() => onRemove(index)} aria-label="Remove search row">
-          <RemoveIcon fontSize="small" />
-        </IconButton>
+          {/* Remove row button */}
+          <IconButton size="small" onClick={() => onRemove(index)} aria-label="Remove search row">
+            <RemoveIcon fontSize="small" />
+          </IconButton>
+        </Box>
       </Box>
 
       {/* Optional free text for enumerated fields that also have text sub-fields,
@@ -243,8 +266,10 @@ export function AdvancedSearch() {
     }
   };
 
+  // A size container, so the rows lay themselves out by the width of the form
+  // (the resizable sidebar) rather than of the viewport
   return (
-    <Box>
+    <Box sx={{ containerType: 'inline-size' }}>
       {/* Search rows */}
       {localRows.map((row, index) => (
         <AdvancedSearchRow
