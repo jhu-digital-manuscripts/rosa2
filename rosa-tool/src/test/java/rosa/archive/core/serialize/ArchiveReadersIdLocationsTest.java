@@ -23,10 +23,11 @@ class ArchiveReadersIdLocationsTest {
         IdLocations locations = ArchiveReaders.readIdLocations(archive.resolve("aor/id_locations.csv"), errors);
 
         assertNotNull(locations);
-        // One row of the real sheet is an id containing commas and cannot be parsed
+        // The fixture is the real sheet cut down to the fixture book, two rows of other books and
+        // the one row whose id contains commas and cannot be parsed
         assertEquals(1, errors.size(), errors.toString());
-        assertTrue(errors.get(0).startsWith("id_locations.csv line 5880: expected 5 columns"), errors.get(0));
-        assertEquals(38119, locations.size());
+        assertTrue(errors.get(0).startsWith("id_locations.csv line 2: expected 5 columns"), errors.get(0));
+        assertEquals(761, locations.size());
 
         IdLocations.IdLocation annotation = locations.get("BL615d7:615_d_7_f035r:m0001");
         assertEquals(new IdLocations.IdLocation("aor", "BL615d7", "35r", "BL615d7:615_d_7_f035r:m0001"), annotation);

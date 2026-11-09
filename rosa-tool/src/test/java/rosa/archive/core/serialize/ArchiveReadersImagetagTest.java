@@ -70,7 +70,7 @@ class ArchiveReadersImagetagTest {
     @Test
     @DisplayName("Parses format WITHOUT Initials column (AlbiRochegude-style)")
     void parsesFormatWithoutInitialsColumn() throws IOException {
-        Path path = TEST_RESOURCES.resolve("NoInitialsCol/NoInitialsCol.imagetag.csv");
+        Path path = Path.of("src/test/resources/imagetag/NoInitialsCol.imagetag.csv");
         List<String> errors = new ArrayList<>();
 
         IllustrationTagging tagging = ArchiveReaders.readIllustrationTagging(path, errors);
