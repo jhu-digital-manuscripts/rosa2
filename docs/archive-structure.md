@@ -40,7 +40,6 @@ shallow copy (no images) of the real archive, made with `shallow-copy`.
       <book-id>.transcription.xml         TEI transcription
       <book-id>.transcription.<page>.txt  per-page transcription sources
       <book-id>.aor.<page>.xml            AoR annotation transcriptions, one per page
-      filemap.csv                         rename map used when the book was ingested
       <book-id>.SHA1SUM                   checksums of every file in the book
       <book-id>.<page>.tif                page images (not in the shallow copy)
 ```
@@ -105,7 +104,6 @@ AoR transcriptions, are prefixed with the book id.
 | `<book-id>.transcription.xml` | TEI P5 transcription with `<pb n>` page breaks and `<cb n>` column breaks. Hand-authored (Douce195, Morgan948, Walters143) or generated from the per-page text files by `generate-tei`. |
 | `<book-id>.transcription.<page>.txt` | Per-page transcription sources, Windows-1252 encoded, in a custom text format: a `[<book-id>]` line, a `[<folio> <column>]` line (e.g. `[001r a]`), then lines of verse with inline tags such as `<rubric>`, `<illustration>`, `<catchphrase>`, `<initial/>`. Converted by `generate-tei`. |
 | `<book-id>.aor.<page>.xml` | One AoR annotation transcription per annotated page, see [AoR Data Model](aor-data-model.md). Any file whose name contains `.aor.` and ends in `.xml` is one. |
-| `filemap.csv` | `old,new` file-name pairs (`#` comments allowed) written by `file-map` and applied by `rename-images` and `rename-transcriptions`. 41 books keep the map from their ingest. |
 | `<book-id>.SHA1SUM` | `sha1sum` format, one line per file in the book directory, images included. Written by `update`. |
 | Images | `.tif` files named as described under [Image names](#image-names). Only the shallow copy lacks them. |
 
@@ -172,8 +170,8 @@ image, in page order:
   painted in its place. Rows of missing images may consist of the file name only.
 - `width` and `height` are pixel dimensions; both are given or neither.
 - The optional `label` replaces the page label derived from the file name. A label
-  starting with `##` was generated automatically (by `decorate-image-list`) rather than
-  written by hand; the viewer shows it without the prefix.
+  starting with `##` was generated automatically rather than written by hand; the viewer
+  shows it without the prefix.
 
 ```
 *Douce195.binding.frontcover.tif
@@ -182,8 +180,8 @@ Douce195.001r.tif,3518,5367,[title page]
 Douce195.001v.tif,3518,5367,##1v
 ```
 
-`update-image-list`, `crop-images` and `decorate-image-list` write this format and keep
-existing labels and missing markers.
+`update-image-list` and `crop-images` write this format and keep existing labels and
+missing markers.
 
 ### Image names
 
@@ -242,5 +240,5 @@ These files occur in the archive and are kept, but no command reads them:
 | `<book-id>.bnf.filemap.csv`, `<book-id>.bnf.foliation.xml`, `<book-id>.bnf.MD5SUM` | Delivery manifests of the Bibliothèque nationale de France digitizations (pizan and 117 rose books) |
 | `<book-id>.bibliography.xml` | Bibliography of 14 rose books |
 | `<book-id>.nartag.csv`, `<book-id>.nartag.txt`, `<book-id>.redtag.txt` | Narrative section and rubric tagging of some rose books |
-| `<book-id>.filemap.csv` | Older, prefixed rename maps (the tool reads only `filemap.csv`) |
+| `filemap.csv`, `<book-id>.filemap.csv` | `old,new` file-name pairs (`#` comments allowed): the rename maps from the ingest of 41 books, and older, prefixed ones |
 | `aor/id_locations.csv` | Map of the original AoR annotation and page ids to this archive, one row per id and no header: `id,collection,book,page,annotation id` (page is a folio `131r`, an image file `RCP7134.131r.tif` or an image label `front matter 5r`; the last column repeats the id for annotations). rosa-tool loads it with the collection to resolve internal references (`generate-iiif-pres --viewer-url`, `check-aor`). |

@@ -45,13 +45,8 @@ class Rosa2CliTest {
         assertTrue(output.contains("update"));
         assertTrue(output.contains("update-image-list"));
         assertTrue(output.contains("crop-images"));
-        assertTrue(output.contains("file-map"));
-        assertTrue(output.contains("rename-images"));
-        assertTrue(output.contains("rename-files"));
-        assertTrue(output.contains("rename-transcriptions"));
         assertTrue(output.contains("generate-tei"));
         assertTrue(output.contains("check-aor"));
-        assertTrue(output.contains("decorate-image-list"));
     }
 
     @Test
@@ -107,13 +102,8 @@ class Rosa2CliTest {
             "update",
             "update-image-list",
             "crop-images",
-            "file-map",
-            "rename-images",
-            "rename-files",
-            "rename-transcriptions",
             "generate-tei",
-            "check-aor",
-            "decorate-image-list"
+            "check-aor"
     })
     void subcommandHelpExitsWithZero(String subcommand) {
         StringWriter out = new StringWriter();
@@ -138,14 +128,9 @@ class Rosa2CliTest {
         assertTrue(subcommands.containsKey("update"));
         assertTrue(subcommands.containsKey("update-image-list"));
         assertTrue(subcommands.containsKey("crop-images"));
-        assertTrue(subcommands.containsKey("file-map"));
-        assertTrue(subcommands.containsKey("rename-images"));
-        assertTrue(subcommands.containsKey("rename-files"));
-        assertTrue(subcommands.containsKey("rename-transcriptions"));
         assertTrue(subcommands.containsKey("generate-tei"));
         assertTrue(subcommands.containsKey("check-aor"));
-        assertTrue(subcommands.containsKey("decorate-image-list"));
-        assertEquals(15, subcommands.size());
+        assertEquals(10, subcommands.size());
     }
 
     @Test

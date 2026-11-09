@@ -16,7 +16,7 @@ rosa2/
 ├── rosa-tool/            Java 25 CLI (Maven, picocli). Builds target/rosa-tool.jar
 │   └── src/main/java/rosa/archive/
 │       ├── cli/          One *Command.java per subcommand, registered in Rosa2Cli.java
-│       ├── core/         FileSystemArchiveStore (read, check, maintain), ImageListDecorator, TranscriptionConverter,
+│       ├── core/         FileSystemArchiveStore (read, check, maintain), TranscriptionConverter,
 │       │                 serialize/ (ArchiveReaders, ArchiveWriters), util/
 │       ├── model/        Data model; model/aor/ = AoR annotation types (sealed Annotation interface)
 │       ├── iiif/         IIIF Presentation 3.0 generation
@@ -81,9 +81,8 @@ java -jar target/rosa-tool.jar <command> --help
 
 Subcommands (see `docs/usage.md` for options): `generate-iiif-pres`,
 `generate-opensearch-ingest`, `shallow-copy`, `check`, `list`,
-`update`, `update-image-list`, `crop-images`, `file-map`,
-`rename-images`, `rename-files`, `rename-transcriptions`, `generate-tei`,
-`check-aor`, `decorate-image-list`. Every command takes `-h` and `-V`.
+`update`, `update-image-list`, `crop-images`, `generate-tei`,
+`check-aor`. Every command takes `-h` and `-V`.
 
 Common invocations against the in-repo archive:
 
@@ -193,8 +192,7 @@ change `functions/*.js`, `delegates.rb` and their tests together.
 - Any `tofu apply`, `init-opensearch.sh`, `aws` command, Docker push, or `build-and-push.sh --push`. These touch
   shared AWS environments. `init-opensearch.sh` drops and recreates the live indexes.
 - Editing files under `archive/`, or running archive-mutating commands (`update`,
-  `update-image-list`, `crop-images`, `file-map`, `rename-*`, `generate-tei`,
-  `decorate-image-list`) against it. These rewrite archive data in place.
+  `update-image-list`, `crop-images`, `generate-tei`) against it. These rewrite archive data in place.
 - Changes to `jhu-rosa2-tf/modules/rosa2-search/iam.tf`, `security-groups.tf`, `opensearch.tf` access policy, or
   the validation in `rosa-search/lambda/search_proxy/app.py`, and to `jhu-rosa2-tf/modules/rosa2-image-server/`
   `iam.tf`, `security-groups.tf`, `waf.tf` or the cache policies in `cloudfront.tf`. These are security boundaries.

@@ -28,12 +28,7 @@ java -jar target/rosa-tool.jar <command> --help
 | `update` | Recompute SHA1 checksum files |
 | `update-image-list` | Generate a book's image list from its image files |
 | `crop-images` | Crop a book's images and write the cropped image list |
-| `decorate-image-list` | Copy page labels from AoR transcriptions into the image list |
 | `generate-tei` | Build a TEI transcription from per-page text files |
-| `file-map` | Interactively write a rename map for a newly ingested book |
-| `rename-images` | Rename image files using the rename map |
-| `rename-transcriptions` | Rename AoR transcription files using the rename map |
-| `rename-files` | Rename files in any directory from a CSV map |
 
 ## Documentation
 

@@ -194,64 +194,6 @@ public sealed interface ArchiveStore permits FileSystemArchiveStore {
     void generateAndWriteCropList(String collectionId, String bookId, boolean force, List<String> errors) throws IOException;
 
     /**
-     * Generates a file map ({@code filemap.csv}) that maps existing image filenames
-     * to new standardized filenames following archive naming conventions.
-     *
-     * <p>The generated file map allocates names sequentially: front cover and pastedown
-     * (if present), frontmatter flyleaves, body pages in recto/verso pairs, endmatter
-     * flyleaves, back pastedown and cover (if present), and misc images.
-     *
-     * @param collectionId   the collection identifier
-     * @param bookId         the book identifier
-     * @param newId          the new book ID to use in generated filenames
-     * @param hasFrontCover  whether the book has a front cover and pastedown
-     * @param hasBackCover   whether the book has a back cover and pastedown
-     * @param numFrontmatter number of frontmatter flyleaf images (each produces recto+verso)
-     * @param numEndmatter   number of endmatter flyleaf images (each produces recto+verso)
-     * @param numMisc        number of miscellaneous images at the end
-     * @param errors         list to collect error messages
-     * @throws IOException if the book directory cannot be read or the file map cannot be written
-     */
-    void generateFileMap(String collectionId, String bookId, String newId, boolean hasFrontCover,
-                         boolean hasBackCover, int numFrontmatter, int numEndmatter, int numMisc,
-                         List<String> errors) throws IOException;
-
-    /**
-     * Renames image files in a book directory according to the file map ({@code filemap.csv}).
-     *
-     * <p>When {@code reverse} is false, renames old filenames to new filenames.
-     * When {@code reverse} is true, renames new filenames back to old filenames.
-     * When {@code changeId} is true, replaces the ID prefix in image filenames with
-     * the book directory name (ignores the file map).
-     *
-     * @param collectionId the collection identifier
-     * @param bookId       the book identifier
-     * @param changeId     whether to rename by replacing the ID prefix only
-     * @param reverse      whether to apply the file map in reverse (new → old)
-     * @param errors       list to collect error messages
-     * @throws IOException if the book directory cannot be read or files cannot be renamed
-     */
-    void renameImages(String collectionId, String bookId, boolean changeId, boolean reverse,
-                      List<String> errors) throws IOException;
-
-    /**
-     * Renames AoR transcription XML files in a book directory according to the file map
-     * ({@code filemap.csv}). Also updates the internal {@code page} element's
-     * {@code filename} attribute to reference the new image filename.
-     *
-     * <p>When {@code reverse} is false, renames transcription files to match new image names.
-     * When {@code reverse} is true, renames them back to match old image names.
-     *
-     * @param collectionId the collection identifier
-     * @param bookId       the book identifier
-     * @param reverse      whether to apply the renaming in reverse (new → old)
-     * @param errors       list to collect error messages
-     * @throws IOException if the book directory cannot be read or files cannot be renamed
-     */
-    void renameTranscriptions(String collectionId, String bookId, boolean reverse,
-                              List<String> errors) throws IOException;
-
-    /**
      * Generates a TEI P5 XML transcription file ({@code BookId.transcription.xml})
      * by combining per-page text transcription files ({@code BookId.transcription.NNNr.txt}).
      *
