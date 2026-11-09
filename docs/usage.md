@@ -276,7 +276,8 @@ java -jar rosa-tool.jar generate-tei --archive <dir> --collection <id> --book <i
 
 Combines every `<book>.transcription.<page>.txt` into `<book>.transcription.xml`. Without
 `--force` an existing transcription is never replaced (error, exit 1); a book without text
-files is an error too. Conversion warnings are printed on stdout. In the current archive
+files is an error too. Conversion warnings are printed on stdout. A line in a text file that
+starts with `#` is a comment and is ignored. In the current archive
 only `CoxMacro`, `Douce332`, `LudwigXV7` and `SeldenSupra57` have text sources, and all four
 already have the XML. The text files are read as Windows-1252 unless `--encoding` says
 otherwise (they contain `œ`, `Ÿ` and `…`, which ISO-8859-1 would turn into control

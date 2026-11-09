@@ -104,6 +104,65 @@ class TranscriptionConverterTest {
     }
 
     @Test
+    void rubricWithCriticalNote_staysRubric(@TempDir Path tempDir) throws IOException {
+        Path input = writeTextFile(tempDir, "Book.transcription.001r.txt",
+                "[Book]\n[1r a]\n\n<rubric>Heading</rubric> <cn n=\"1\"/>\n<cnNote n=\"1\">A remark</cnNote>\n\n");
+        Path output = tempDir.resolve("Book.transcription.xml");
+        var converter = new TranscriptionConverter();
+        converter.convert(List.of(input), output);
+
+        String xml = readOutput(output);
+        assertTrue(xml.contains("<l><hi rend=\"rubric\">Heading</hi><note type=\"critical\">A remark</note></l>"), xml);
+        assertFalse(xml.contains("<lg"), xml);
+    }
+
+    @Test
+    void verseAfterRubricWithCriticalNote_keepsTheVerse(@TempDir Path tempDir) throws IOException {
+        // LudwigXV7 026r: a verse line that starts with a rubric letter and ends with a critical note
+        Path input = writeTextFile(tempDir, "Book.transcription.001r.txt",
+                "[Book]\n[1r a]\n\n<rubric>a.</rubric>Qui sont richement batailliez<cn n=\"11\"/>\n"
+                        + "Et sont de pierres bien tailliez,\n\n<cnNote n=\"11\">Not in Lecoy</cnNote>\n\n");
+        Path output = tempDir.resolve("Book.transcription.xml");
+        var converter = new TranscriptionConverter();
+        converter.convert(List.of(input), output);
+
+        String xml = readOutput(output);
+        assertTrue(xml.contains("<lg type=\"couplet\"><l><hi rend=\"rubric\">a.</hi>Qui sont richement batailliez"
+                + "<note type=\"critical\">Not in Lecoy</note></l><l>Et sont de pierres bien tailliez,</l></lg>"), xml);
+    }
+
+    @Test
+    void columnBreakInsideCouplet_keepsTheCoupletOpen(@TempDir Path tempDir) throws IOException {
+        // The column changes after the first line of a quartet: lines 1+2 and 3+4 still rhyme
+        Path input = writeTextFile(tempDir, "Book.transcription.001r.txt",
+                "[Book]\n[1r a]\n\nLine1\n[1r b]\nLine2\nLine3\nLine4\t\t4\n\n");
+        Path output = tempDir.resolve("Book.transcription.xml");
+        var converter = new TranscriptionConverter();
+        converter.convert(List.of(input), output);
+
+        String xml = readOutput(output).replaceAll("<milestone[^>]*/>", "");
+        assertTrue(xml.contains("<lg type=\"couplet\"><l>Line1</l><pb n=\"001r\"/><cb n=\"b\"/><l>Line2</l></lg>"
+                + "<lg type=\"couplet\"><l>Line3</l><l>Line4</l></lg>"), xml);
+    }
+
+    @Test
+    void commentLine_isIgnored(@TempDir Path tempDir) throws IOException {
+        // The remark sits in the middle of a quartet and must not disturb the couplets or the numbering
+        Path input = writeTextFile(tempDir, "Book.transcription.001r.txt",
+                "[Book]\n[1r a]\n\nLine1\n# A transcriber's remark -- unsure\nLine2\nLine3\nLine4\t\t4\n\n");
+        Path output = tempDir.resolve("Book.transcription.xml");
+        var converter = new TranscriptionConverter();
+        converter.convert(List.of(input), output);
+
+        assertTrue(converter.getErrors().isEmpty(), "Errors: " + converter.getErrors());
+        assertTrue(converter.getWarnings().isEmpty(), "Warnings: " + converter.getWarnings());
+        String xml = readOutput(output);
+        assertTrue(xml.contains("<l>Line1<milestone n=\"1\" ed=\"lecoy\" unit=\"line\"/></l>"
+                + "<l>Line2<milestone n=\"2\" ed=\"lecoy\" unit=\"line\"/></l></lg>"), xml);
+        assertFalse(xml.contains("transcriber"), xml);
+    }
+
+    @Test
     void illustration_generatesFigure(@TempDir Path tempDir) throws IOException {
         Path input = writeTextFile(tempDir, "Book.transcription.003r.txt",
                 "[Book]\n[3r a]\n\n<illustration characters=\"Lover\">Lover in garden</illustration>\n\n");

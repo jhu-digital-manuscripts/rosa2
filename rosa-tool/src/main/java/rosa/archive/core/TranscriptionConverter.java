@@ -22,7 +22,7 @@ import java.util.regex.Pattern;
  *
  * <p>Each input file uses a custom text format with {@code [folio col]} headers,
  * poetry lines, and inline markup ({@code <rubric>}, {@code <illustration>},
- * {@code <catchphrase>}, etc.). The converter combines all pages into one TEI
+ * {@code <catchphrase>}, etc.). A line starting with {@code #} is a comment and is ignored. The converter combines all pages into one TEI
  * document with {@code <pb>} and {@code <cb>} elements marking page/column boundaries.
  *
  * <p>Typical usage:
@@ -81,6 +81,7 @@ public final class TranscriptionConverter {
             this.folio = folio;
             this.col = col;
             this.fileLineNumber = fileLineNumber;
+
             this.tags = TagParser.parseTags(text, fileLineNumber, errors);
 
             // Process interpolation markers
@@ -125,8 +126,11 @@ public final class TranscriptionConverter {
             if (tags.size() > 1 && tags.stream().allMatch(t -> t.name().equals("illustration"))) {
                 type = LineType.ILLUSTRATION;
             }
-            // Rubric with critical note
-            if (tags.size() == 2 && tags.get(0).name().equals("rubric") && tags.get(1).name().equals("cn")) {
+            // Rubric with critical note. Text outside the two tags makes it a verse line that starts
+            // with a rubric, which must stay poetry or the verse is dropped.
+            if (tags.size() == 2 && tags.get(0).name().equals("rubric") && tags.get(1).name().equals("cn")
+                    && tags.get(0).start() == 0 && tags.get(1).end() == text.length()
+                    && text.substring(tags.get(0).end(), tags.get(1).start()).isBlank()) {
                 type = LineType.RUBRIC;
             }
         }
@@ -383,6 +387,10 @@ public final class TranscriptionConverter {
 
         for (; i < textLines.length; i++) {
             String s = textLines[i].trim();
+            if (s.startsWith("#")) {
+                // A comment (a transcriber's remark): not part of the text and does not end a block
+                continue;
+            }
             if (s.isEmpty()) {
                 if (block != null && !block.isEmpty()) {
                     doc.add(block);
@@ -584,8 +592,9 @@ public final class TranscriptionConverter {
         for (Line line : block) {
             // Emit pb/cb when folio or column changes
             String folio = (folioOverride != null) ? folioOverride : line.folio;
+            // A break in the middle of a couplet stays inside its lg (pb and cb are milestones),
+            // so the rhyming lines remain paired.
             if (lastFolio == null || !folio.equals(lastFolio) || !line.col.equals(lastCol)) {
-                if (inCouplet) { xml.writeEndElement(); inCouplet = false; } // close lg
                 xml.writeEmptyElement("pb");
                 xml.writeAttribute("n", folio);
                 xml.writeEmptyElement("cb");
