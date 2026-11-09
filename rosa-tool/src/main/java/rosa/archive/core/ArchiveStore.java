@@ -105,30 +105,6 @@ public sealed interface ArchiveStore permits FileSystemArchiveStore {
     CheckResult check(BookCollection collection, Book book, boolean checkBits, boolean checkImages);
 
     /**
-     * Validates AoR transcription XML files for a book against the schema.
-     *
-     * @param collectionId the collection identifier
-     * @param bookId       the book identifier
-     * @param errors       list to collect error messages
-     * @param warnings     list to collect warning messages
-     * @throws IOException if files cannot be read
-     */
-    void validateXml(String collectionId, String bookId, List<String> errors, List<String> warnings) throws IOException;
-
-    /**
-     * Checks that a book's AoR transcription XML files are well-formed and, when a schema
-     * is given, valid against it.
-     *
-     * @param collectionId the collection identifier
-     * @param bookId       the book identifier
-     * @param schema       a local XML Schema file, or {@code null} for well-formedness only
-     * @param errors       list to collect errors
-     * @param warnings     list to collect warnings
-     * @throws IOException if the book directory cannot be read
-     */
-    void validateXml(String collectionId, String bookId, Path schema, List<String> errors, List<String> warnings) throws IOException;
-
-    /**
      * Copies metadata files (XML, TXT, HTML, CSV) from the archive to
      * the destination, preserving directory structure and excluding images.
      *

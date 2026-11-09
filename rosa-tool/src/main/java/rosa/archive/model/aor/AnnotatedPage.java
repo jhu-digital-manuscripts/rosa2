@@ -125,6 +125,25 @@ public final class AnnotatedPage {
      *
      * @param page the page filename
      */
+    /**
+     * Whether this transcription is for the given image: the {@code page} filename and
+     * the image id name the same file, ignoring their extensions.
+     *
+     * @param imageId an image id such as {@code Book.001r.tif}, with or without extension
+     */
+    public boolean isForImage(String imageId) {
+        if (page == null || imageId == null) {
+            return false;
+        }
+        String name = stripExtension(page);
+        return name.equals(imageId) || name.equals(stripExtension(imageId));
+    }
+
+    private static String stripExtension(String name) {
+        int dot = name.lastIndexOf('.');
+        return dot > 0 ? name.substring(0, dot) : name;
+    }
+
     public void setPage(String page) {
         this.page = page;
     }

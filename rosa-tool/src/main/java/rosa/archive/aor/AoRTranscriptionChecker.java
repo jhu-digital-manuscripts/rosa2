@@ -1,7 +1,9 @@
 package rosa.archive.aor;
 
 import rosa.archive.core.ArchiveNameParser;
+import rosa.archive.core.CheckResult;
 import rosa.archive.core.serialize.ArchiveReaders;
+import rosa.archive.core.util.CSV;
 import rosa.archive.model.BookReferenceSheet;
 import rosa.archive.model.ImageList;
 import rosa.archive.model.ReferenceSheet;
@@ -24,17 +26,23 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.function.Function;
 
 /**
- * Validates AoR transcription XML files against reference spreadsheets.
+ * Checks the AoR transcription XML files of a collection.
  *
- * <p>Checks that people, book, location and cross-reference names in annotations match
- * entries in the respective reference CSV files. Also detects duplicate annotation
- * IDs and resolves internal reference targets to pages through {@code id_locations.csv}
- * ({@link AorReferenceResolver}), reporting the ones that do not resolve.</p>
+ * <p>Every file must be well-formed XML and, when a schema is given, valid against it
+ * ({@link AorXmlValidator}). Well-formed files are then checked against the reference
+ * spreadsheets: people, book, location and cross-reference names in annotations must match
+ * entries in the respective reference CSV files, annotation IDs must be unique, and internal
+ * reference targets must resolve to pages through {@code id_locations.csv}
+ * ({@link AorReferenceResolver}). File names must follow the {@code <book>.aor.<page>.xml}
+ * convention, agree with the page's {@code filename} attribute and name an image of the
+ * book's image list. The sheets themselves must not list a name twice.</p>
  */
 public final class AoRTranscriptionChecker {
 
@@ -47,6 +55,18 @@ public final class AoRTranscriptionChecker {
 
     private final Path archivePath;
     private final Path spreadsheetDir;
+    private final Path schema;
+
+    /**
+     * Creates a checker that only checks well-formedness of the XML.
+     *
+     * @param archivePath    the root directory of the archive
+     * @param spreadsheetDir the directory containing reference CSV files, or null
+     *                       to look in the collection directory
+     */
+    public AoRTranscriptionChecker(Path archivePath, Path spreadsheetDir) {
+        this(archivePath, spreadsheetDir, null);
+    }
 
     /**
      * Creates a new AoR transcription checker.
@@ -54,32 +74,41 @@ public final class AoRTranscriptionChecker {
      * @param archivePath    the root directory of the archive
      * @param spreadsheetDir the directory containing reference CSV files, or null
      *                       to look in the collection directory
+     * @param schema         a local XML Schema file to validate the transcriptions against,
+     *                       or null to check well-formedness only
      */
-    public AoRTranscriptionChecker(Path archivePath, Path spreadsheetDir) {
+    public AoRTranscriptionChecker(Path archivePath, Path spreadsheetDir, Path schema) {
         this.archivePath = archivePath;
         this.spreadsheetDir = spreadsheetDir;
+        this.schema = schema;
     }
 
     /**
-     * Validates AoR transcription files against reference spreadsheets.
+     * Checks the AoR transcription files of a collection.
      *
      * @param collectionId the collection to check
      * @param bookId       optional book ID (null means all books in collection)
-     * @return list of validation error messages
+     * @return the errors and warnings found; XML warnings do not fail the check
      */
-    public List<String> run(String collectionId, String bookId) {
+    public CheckResult run(String collectionId, String bookId) {
         List<String> errors = new ArrayList<>();
+        List<String> warnings = new ArrayList<>();
 
         Path collectionDir = archivePath.resolve(collectionId);
         if (!Files.isDirectory(collectionDir)) {
             errors.add("Collection not found: " + collectionId);
-            return errors;
+            return CheckResult.of(errors, warnings);
         }
+
+        AorXmlValidator xmlValidator = new AorXmlValidator(schema, errors);
 
         // Determine where to load reference CSVs from
         Path refDir = spreadsheetDir != null ? spreadsheetDir : collectionDir;
 
         // Load reference data
+        for (String sheet : List.of(PEOPLE_CSV, BOOKS_CSV, LOCATIONS_CSV)) {
+            checkDuplicateKeys(refDir.resolve(sheet), sheet, errors);
+        }
         ReferenceSheet peopleRef = loadReferenceSheet(refDir.resolve(PEOPLE_CSV), PEOPLE_CSV, errors,
                 ArchiveReaders::readPeopleReferenceSheet);
         BookReferenceSheet booksRef = loadBookReferenceSheet(refDir.resolve(BOOKS_CSV), BOOKS_CSV, errors);
@@ -92,14 +121,17 @@ public final class AoRTranscriptionChecker {
             allBooks = listBooks(collectionDir);
         } catch (IOException e) {
             errors.add("Failed to list books in collection " + collectionId + ": " + e.getMessage());
-            return errors;
+            return CheckResult.of(errors, warnings);
         }
+
+        Map<String, ImageList> imageListCache = new HashMap<>();
+        Function<String, ImageList> imageLists = book -> imageListCache.computeIfAbsent(book,
+                b -> readImageList(collectionDir.resolve(b).resolve(b + ".images.csv"), errors));
 
         // Internal references may target any book of the collection, so the resolver sees them all.
         // Without id_locations.csv the targets are only checked against the annotation ids found.
         AorReferenceResolver resolver = idLocations == null ? null
-                : new AorReferenceResolver(idLocations, allBooks,
-                        book -> readImageList(collectionDir.resolve(book).resolve(book + ".images.csv"), errors));
+                : new AorReferenceResolver(idLocations, allBooks, imageLists::apply);
 
         // Collect all annotation IDs across the corpus for internal reference validation
         Map<String, List<String>> allAnnotationIds = new HashMap<>(); // id -> list of locations
@@ -108,7 +140,7 @@ public final class AoRTranscriptionChecker {
         // Determine books to check
         List<String> booksToCheck = bookId != null ? List.of(bookId) : allBooks;
 
-        // First pass: load all pages and collect annotation IDs
+        // First pass: validate the XML, load all pages and collect annotation IDs
         for (String book : booksToCheck) {
             Path bookDir = collectionDir.resolve(book);
             if (!Files.isDirectory(bookDir)) {
@@ -124,8 +156,16 @@ public final class AoRTranscriptionChecker {
                 continue;
             }
 
+            Set<String> images = imageNames(imageLists.apply(book));
             for (String xmlFile : xmlFiles) {
                 Path xmlPath = bookDir.resolve(xmlFile);
+                checkTranscriptionHasImage(book, xmlFile, images, errors);
+
+                // A file that is not well-formed cannot be parsed; its XML errors are enough
+                if (!xmlValidator.validate(xmlPath, "[" + book + "/" + xmlFile + "]", errors, warnings)) {
+                    continue;
+                }
+
                 List<String> parseErrors = new ArrayList<>();
                 AnnotatedPage page;
                 try {
@@ -167,7 +207,7 @@ public final class AoRTranscriptionChecker {
             validatePage(pageData, peopleRef, booksRef, locationsRef, knownIds, resolver, allAnnotationIds, errors);
         }
 
-        return errors;
+        return CheckResult.of(errors, warnings);
     }
 
     /**
@@ -190,28 +230,31 @@ public final class AoRTranscriptionChecker {
                     // Check people references
                     for (String person : pos.getPeople()) {
                         if (peopleRef != null && !peopleRef.containsKey(person)) {
-                            errors.add("[" + context + "] Unknown person reference: " + person);
+                            errors.add("[" + context + "] Unknown person reference: " + person + hint(peopleRef, person));
                         }
                     }
                     // Check book references
                     for (String book : pos.getBooks()) {
                         if (booksRef != null && !booksRef.containsKey(book)) {
-                            errors.add("[" + context + "] Unknown book reference: " + book);
+                            errors.add("[" + context + "] Unknown book reference: " + book + hint(booksRef, book));
                         }
                     }
                     // Check location references
                     for (String location : pos.getLocations()) {
                         if (locationsRef != null && !locationsRef.containsKey(location)) {
-                            errors.add("[" + context + "] Unknown location reference: " + location);
+                            errors.add("[" + context + "] Unknown location reference: " + location
+                                    + hint(locationsRef, location));
                         }
                     }
                     // Check cross-references against the same sheets
                     for (XRef xref : pos.getXRefs()) {
                         if (peopleRef != null && notBlank(xref.person()) && !peopleRef.containsKey(xref.person())) {
-                            errors.add("[" + context + "] Unknown cross-reference person: " + xref.person());
+                            errors.add("[" + context + "] Unknown cross-reference person: " + xref.person()
+                                    + hint(peopleRef, xref.person()));
                         }
                         if (booksRef != null && notBlank(xref.title()) && !booksRef.containsKey(xref.title())) {
-                            errors.add("[" + context + "] Unknown cross-reference title: " + xref.title());
+                            errors.add("[" + context + "] Unknown cross-reference title: " + xref.title()
+                                    + hint(booksRef, xref.title()));
                         }
                     }
 
@@ -292,6 +335,74 @@ public final class AoRTranscriptionChecker {
 
     private static boolean notBlank(String s) {
         return s != null && !s.isBlank();
+    }
+
+    /**
+     * Names the standard entry when an unknown name is one of a sheet entry's alternates,
+     * so the editor knows which name to use instead.
+     */
+    private static String hint(ReferenceSheet sheet, String value) {
+        for (String key : sheet.getKeys()) {
+            List<String> alternates = sheet.getAlternates(key);
+            if (alternates != null && alternates.contains(value)) {
+                return " (alternate of '" + key + "'; use the standard name)";
+            }
+        }
+        return "";
+    }
+
+    /**
+     * Reports keys that a reference sheet lists more than once. The reader merges such rows,
+     * so a duplicate only shows here.
+     */
+    private static void checkDuplicateKeys(Path path, String name, List<String> errors) {
+        if (!Files.isRegularFile(path)) {
+            return;
+        }
+        Set<String> seen = new HashSet<>();
+        try {
+            for (String line : Files.readAllLines(path)) {
+                String[] row = CSV.parse(line);
+                if (row.length == 0 || row[0].isEmpty()) {
+                    continue;
+                }
+                if (!seen.add(row[0])) {
+                    errors.add("Duplicate key '" + row[0] + "' in " + name);
+                }
+            }
+        } catch (IOException e) {
+            errors.add("Failed to read reference file " + name + ": " + e.getMessage());
+        }
+    }
+
+    /** The image names of a book's image list without their extensions, or null without a list. */
+    private static Set<String> imageNames(ImageList imageList) {
+        if (imageList == null) {
+            return null;
+        }
+        Set<String> names = new HashSet<>();
+        for (var image : imageList.getImages()) {
+            if (image.getId() != null) {
+                names.add(stripExtension(image.getId()));
+            }
+        }
+        return names;
+    }
+
+    /**
+     * Reports a transcription whose name does not correspond to an image of the book's image
+     * list: the IIIF and Opensearch generators attach annotations to canvases by that name,
+     * so such a transcription is silently dropped.
+     */
+    private void checkTranscriptionHasImage(String bookId, String filename, Set<String> images, List<String> errors) {
+        String expectedImage = deriveImageNameFromTranscription(filename);
+        if (images == null || expectedImage == null) {
+            return;
+        }
+        if (!images.contains(stripExtension(expectedImage))) {
+            errors.add("[" + bookId + "/" + filename + "] No image '" + expectedImage + "' in " + bookId
+                    + ".images.csv for this transcription");
+        }
     }
 
     /**
@@ -377,7 +488,7 @@ public final class AoRTranscriptionChecker {
     /**
      * Strips the file extension from a filename.
      */
-    private String stripExtension(String filename) {
+    private static String stripExtension(String filename) {
         int dotIdx = filename.lastIndexOf('.');
         return dotIdx > 0 ? filename.substring(0, dotIdx) : filename;
     }

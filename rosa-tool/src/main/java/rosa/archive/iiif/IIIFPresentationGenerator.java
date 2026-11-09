@@ -967,14 +967,7 @@ public final class IIIFPresentationGenerator {
      * Finds the AnnotatedPage matching a given image ID.
      */
     private AnnotatedPage findAnnotatedPage(Book book, String imageId) {
-        if (imageId == null) return null;
-        String baseName = imageId.replace(".tif", "");
-        for (AnnotatedPage ap : book.getAnnotatedPages()) {
-            if (ap.getPage() != null && ap.getPage().contains(baseName)) {
-                return ap;
-            }
-        }
-        return null;
+        return book.getAnnotationPage(imageId);
     }
 
     /**
@@ -1164,7 +1157,7 @@ public final class IIIFPresentationGenerator {
         String imageId = image.getId();
         if (imageId != null) {
             for (AnnotatedPage ap : book.getAnnotatedPages()) {
-                if (ap.getPage() != null && ap.getPage().contains(imageId.replace(".tif", ""))) {
+                if (ap.isForImage(imageId)) {
                     if (ap.getPagination() != null && !ap.getPagination().isEmpty()) {
                         return ap.getPagination();
                     }

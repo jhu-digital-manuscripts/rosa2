@@ -443,7 +443,7 @@ After a deployment, check the data:
 ```bash
 java -jar rosa-tool/target/rosa-tool.jar check --archive /data/archive
 java -jar rosa-tool/target/rosa-tool.jar check --archive archive --skip-images   # shallow copy without images
-java -jar rosa-tool/target/rosa-tool.jar validate-xml --archive /data/archive --collection aor
+java -jar rosa-tool/target/rosa-tool.jar check-aor --archive /data/archive --collection aor
 ```
 
 Verify the IIIF files resolve:

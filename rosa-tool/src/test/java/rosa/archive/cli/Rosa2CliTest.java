@@ -42,7 +42,6 @@ class Rosa2CliTest {
         assertTrue(output.contains("shallow-copy"));
         assertTrue(output.contains("check"));
         assertTrue(output.contains("list"));
-        assertTrue(output.contains("validate-xml"));
         assertTrue(output.contains("update"));
         assertTrue(output.contains("update-image-list"));
         assertTrue(output.contains("crop-images"));
@@ -105,7 +104,6 @@ class Rosa2CliTest {
             "shallow-copy",
             "check",
             "list",
-            "validate-xml",
             "update",
             "update-image-list",
             "crop-images",
@@ -137,7 +135,6 @@ class Rosa2CliTest {
         assertTrue(subcommands.containsKey("shallow-copy"));
         assertTrue(subcommands.containsKey("check"));
         assertTrue(subcommands.containsKey("list"));
-        assertTrue(subcommands.containsKey("validate-xml"));
         assertTrue(subcommands.containsKey("update"));
         assertTrue(subcommands.containsKey("update-image-list"));
         assertTrue(subcommands.containsKey("crop-images"));
@@ -148,7 +145,7 @@ class Rosa2CliTest {
         assertTrue(subcommands.containsKey("generate-tei"));
         assertTrue(subcommands.containsKey("check-aor"));
         assertTrue(subcommands.containsKey("decorate-image-list"));
-        assertEquals(16, subcommands.size());
+        assertEquals(15, subcommands.size());
     }
 
     @Test

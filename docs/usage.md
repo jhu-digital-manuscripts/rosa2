@@ -25,7 +25,7 @@ Build the jar with `mvn clean package` in `rosa-tool/`; it is written to `rosa-t
   from an IDE).
 - Exit code is 0 on success and 1 on error. Unknown options or missing required options
   print `Error: ...` and the usage to stderr. Runtime failures print `Error: <message>` to
-  stderr. The checking commands (`check`, `validate-xml`, `check-aor`) print their findings
+  stderr. The checking commands (`check`, `check-aor`) print their findings
   on stdout and exit 1 when they found errors; warnings alone exit 0.
 - Commands that take `--archive` first verify that the directory exists. Collections are
   the archive's subdirectories and books the subdirectories of a collection. Directories
@@ -145,39 +145,30 @@ reports:
 Findings are printed on stdout under a `[collection]` or `[collection/book]` heading as
 `ERROR:` and `WARN:` lines. The exit code is 1 if any error was found.
 
-### validate-xml
-
-Checks that the AoR transcription files (`<book>.aor.<page>.xml`) of a collection are
-well-formed XML, and valid against a schema when one is given.
-
-```
-java -jar rosa-tool.jar validate-xml --archive <dir> --collection <id> [--schema <xsd>]
-```
-
-| Option | Required | Description |
-|--------|----------|-------------|
-| `--archive` | Yes | Path to the archive directory |
-| `--collection` | Yes | Collection to validate |
-| `--schema` | No | A local XML Schema file to validate against |
-
-Documents with a DOCTYPE are rejected, and nothing is ever fetched from the network: the
-`xsi:noNamespaceSchemaLocation` the files carry (the AoR schema published at
-livesandletters.ac.uk, which is not part of this repository) is ignored. To validate against
-it, download the XSD and pass it with `--schema`. Findings are printed like `check`'s; the
-exit code is 1 if any file is not well-formed or not valid.
-
 ### check-aor
 
-Checks AoR transcriptions against the collection's reference sheets: people, books,
-locations and the person and title of cross-references must be in `people.csv`,
-`books.csv` and `locations.csv`; annotation ids must be unique; and every internal
-reference target must resolve to a page through `id_locations.csv` (reported as
-`Internal reference target not resolved: '<ref>' (<reason>)`, plus a message when an
-annotation id sits on a different page than the sheet says). Without an
-`id_locations.csv`, targets are only checked against the annotation ids found.
+Checks the AoR transcription files (`<book>.aor.<page>.xml`) of a collection. Every file
+must be well-formed XML, and valid against a schema when one is given. Well-formed files
+are then checked against the collection's reference sheets: people, books, locations and
+the person and title of cross-references must be in `people.csv`, `books.csv` and
+`locations.csv` (each missing sheet is an error); annotation ids must be unique within the
+collection; every internal reference target must resolve to a page through
+`id_locations.csv` (reported as `Internal reference target not resolved: '<ref>' (<reason>)`,
+plus a message when an annotation id sits on a different page than the sheet says); and
+file names must follow the `<book>.aor.<page>.xml` convention, agree with the page's
+`filename` attribute and name an image of `<book>.images.csv` (the generators attach
+annotations to canvases by that name, so a transcription without an image is otherwise
+silently dropped). The sheets must not list a name twice (`Duplicate key '<name>' in
+people.csv`). Without an `id_locations.csv`, targets are only checked against the
+annotation ids found.
+
+Names are compared exactly, after trimming surrounding whitespace, to the first column of
+the sheet. When an unknown name is one of an entry's alternates the message says so
+(`Unknown book reference: Bucolics (alternate of 'Eclogues'; use the standard name)`), since
+only the standard name gets the sheet's alternates indexed for search.
 
 ```
-java -jar rosa-tool.jar check-aor --archive <dir> --collection <id> [--book <id>] [--spreadsheet-dir <dir>]
+java -jar rosa-tool.jar check-aor --archive <dir> --collection <id> [--book <id>] [--spreadsheet-dir <dir>] [--schema <xsd>]
 ```
 
 | Option | Required | Description |
@@ -186,12 +177,17 @@ java -jar rosa-tool.jar check-aor --archive <dir> --collection <id> [--book <id>
 | `--collection` | Yes | Collection to check |
 | `--book` | No | Check only this book. Internal references are then only resolved within it. |
 | `--spreadsheet-dir` | No | Directory holding `people.csv`, `books.csv`, `locations.csv` and `id_locations.csv`. Defaults to the collection directory. |
+| `--schema` | No | A local XML Schema file to validate the transcriptions against |
 
-Checks that every person, book and location referenced by an annotation is in the
-reference sheet (each missing sheet is an error), that internal references target existing
-annotation ids, that annotation ids are unique within the collection, that transcription
-file names follow the `<book>.aor.<page>.xml` convention and agree with the page's
-`filename` attribute. Errors are printed on stdout; the exit code is 1 if there are any.
+Documents with a DOCTYPE are rejected, and nothing is ever fetched from the network: the
+`xsi:noNamespaceSchemaLocation` the files carry (the AoR schema published at
+livesandletters.ac.uk, which is not part of this repository) is ignored. To validate against
+it, download the XSD and pass it with `--schema`. A file that is not well-formed is reported
+once, with the line and column of the problem, and not checked further.
+
+Findings are printed on stdout as `ERROR:` and `WARN:` lines, each starting with the
+`[book/file]` it concerns. Only the XML parser and schema validator produce warnings. The
+exit code is 1 if there is any error.
 
 ## Maintaining an archive
 

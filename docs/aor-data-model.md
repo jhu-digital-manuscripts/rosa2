@@ -15,7 +15,9 @@ Researchers analyzing AoR annotation patterns and developers working with annota
 
 AoR transcriptions record the annotations early modern readers left in printed books. Each
 annotated page has one XML file, `<book-id>.aor.<page>.xml` (for example
-`FolgersHa2.aor.001r.xml`), next to the page image in the book directory. rosa-tool parses
+`FolgersHa2.aor.001r.xml`), next to the page image in the book directory. The generators
+attach a transcription to the canvas whose image has the same name as the `<page filename>`
+attribute, ignoring the extension; attribute values are trimmed when read. rosa-tool parses
 these files (`ArchiveReaders.readAnnotatedPage`) into the `rosa.archive.model.aor` classes,
 which feed the IIIF annotation pages, the Opensearch canvas documents and
 `check-aor`.
@@ -23,7 +25,7 @@ which feed the IIIF annotation pages, the Opensearch canvas documents and
 The files declare the AoR schema with
 `xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd"`
 (a few older files name `aor_20141111.xsd`). The schema is not part of this repository and
-the tool never fetches it; `validate-xml` checks well-formedness, or validates against a
+the tool never fetches it; `check-aor` checks well-formedness, or validates against a
 downloaded copy given with `--schema`.
 
 ## XML structure

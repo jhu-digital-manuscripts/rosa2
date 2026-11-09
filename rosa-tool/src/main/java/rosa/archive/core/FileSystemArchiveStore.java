@@ -30,9 +30,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import org.xml.sax.ErrorHandler;
 import org.xml.sax.SAXException;
-import org.xml.sax.SAXParseException;
 
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -389,46 +387,6 @@ public final class FileSystemArchiveStore implements ArchiveStore {
         }
 
         return CheckResult.of(errors, warnings);
-    }
-
-    @Override
-    public void validateXml(String collectionId, String bookId, List<String> errors, List<String> warnings) throws IOException {
-        validateXml(collectionId, bookId, null, errors, warnings);
-    }
-
-    @Override
-    public void validateXml(String collectionId, String bookId, Path schema, List<String> errors, List<String> warnings) throws IOException {
-        Path bookDir = archivePath.resolve(collectionId).resolve(bookId);
-        if (!Files.isDirectory(bookDir)) {
-            throw new IOException("Book directory not found: " + collectionId + "/" + bookId);
-        }
-
-        javax.xml.validation.Validator validator = null;
-        if (schema != null) {
-            try {
-                javax.xml.validation.SchemaFactory factory =
-                        javax.xml.validation.SchemaFactory.newInstance(javax.xml.XMLConstants.W3C_XML_SCHEMA_NS_URI);
-                // The schema and the documents are local files; never fetch anything
-                factory.setProperty(javax.xml.XMLConstants.ACCESS_EXTERNAL_DTD, "");
-                factory.setProperty(javax.xml.XMLConstants.ACCESS_EXTERNAL_SCHEMA, "");
-                validator = factory.newSchema(schema.toFile()).newValidator();
-            } catch (SAXException e) {
-                errors.add("Cannot read schema [" + schema + "]: " + e.getMessage());
-                return;
-            }
-        }
-
-        List<String> content = listFiles(bookDir);
-        for (String name : content) {
-            if (PARSER.isAorTranscription(name)) {
-                Path xmlFile = bookDir.resolve(name);
-                int before = errors.size();
-                validateXmlWellFormedness(xmlFile, name, errors, warnings);
-                if (validator != null && errors.size() == before) {
-                    validateXmlAgainstSchema(validator, xmlFile, name, errors, warnings);
-                }
-            }
-        }
     }
 
     @Override
@@ -1223,86 +1181,6 @@ public final class FileSystemArchiveStore implements ArchiveStore {
             } catch (IOException e) {
                 errors.add("Failed to compute checksum for [" + fileName + "]: " + e.getMessage());
             }
-        }
-    }
-
-    // ---- XML validation helpers ----
-
-    /**
-     * Validates that an XML file is well-formed by parsing it with a namespace-aware
-     * DocumentBuilder. Reports parse errors and warnings to the provided lists.
-     */
-    private void validateXmlWellFormedness(Path xmlFile, String fileName, List<String> errors, List<String> warnings) {
-        try {
-            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-            factory.setNamespaceAware(true);
-            // Disable external entities for security
-            factory.setFeature("http://apache.org/xml/features/disallow-doctype-decl", true);
-
-            DocumentBuilder builder = factory.newDocumentBuilder();
-            builder.setErrorHandler(new ErrorHandler() {
-                @Override
-                public void warning(SAXParseException e) {
-                    warnings.add("[Warn: " + fileName + "] (" + e.getLineNumber() + ":"
-                            + e.getColumnNumber() + "): " + e.getMessage());
-                }
-
-                @Override
-                public void error(SAXParseException e) {
-                    errors.add("[Error: " + fileName + "] (" + e.getLineNumber() + ":"
-                            + e.getColumnNumber() + "): " + e.getMessage());
-                }
-
-                @Override
-                public void fatalError(SAXParseException e) {
-                    errors.add("[Fatal: " + fileName + "] (" + e.getLineNumber() + ":"
-                            + e.getColumnNumber() + "): " + e.getMessage());
-                }
-            });
-
-            try (InputStream in = Files.newInputStream(xmlFile)) {
-                builder.parse(in);
-            }
-        } catch (ParserConfigurationException e) {
-            errors.add("XML parser configuration error for [" + fileName + "]: " + e.getMessage());
-        } catch (SAXException e) {
-            errors.add("[" + fileName + "] is not well-formed XML: " + e.getMessage());
-        } catch (IOException e) {
-            errors.add("Failed to read [" + fileName + "]: " + e.getMessage());
-        }
-    }
-
-    /**
-     * Validates an XML file against a compiled schema. The document's own
-     * {@code noNamespaceSchemaLocation} is ignored; only the given schema is used.
-     */
-    private void validateXmlAgainstSchema(javax.xml.validation.Validator validator, Path xmlFile, String fileName,
-                                          List<String> errors, List<String> warnings) {
-        validator.setErrorHandler(new ErrorHandler() {
-            @Override
-            public void warning(SAXParseException e) {
-                warnings.add("[Warn: " + fileName + "] (" + e.getLineNumber() + ":"
-                        + e.getColumnNumber() + "): " + e.getMessage());
-            }
-
-            @Override
-            public void error(SAXParseException e) {
-                errors.add("[Error: " + fileName + "] (" + e.getLineNumber() + ":"
-                        + e.getColumnNumber() + "): " + e.getMessage());
-            }
-
-            @Override
-            public void fatalError(SAXParseException e) {
-                errors.add("[Fatal: " + fileName + "] (" + e.getLineNumber() + ":"
-                        + e.getColumnNumber() + "): " + e.getMessage());
-            }
-        });
-        try (InputStream in = Files.newInputStream(xmlFile)) {
-            validator.validate(new javax.xml.transform.stream.StreamSource(in));
-        } catch (SAXException e) {
-            errors.add("[" + fileName + "] is not valid: " + e.getMessage());
-        } catch (IOException e) {
-            errors.add("Failed to read [" + fileName + "]: " + e.getMessage());
         }
     }
 

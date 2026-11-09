@@ -4,23 +4,24 @@ import picocli.CommandLine.Command;
 import picocli.CommandLine.Mixin;
 import picocli.CommandLine.Option;
 import rosa.archive.aor.AoRTranscriptionChecker;
+import rosa.archive.core.CheckResult;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.List;
 import java.util.concurrent.Callable;
 
 /**
- * Validates AoR transcription data against reference spreadsheets.
+ * Checks the AoR transcription XML files of a collection.
  *
- * <p>Checks that people, book, and location references in annotations match
- * entries in the respective reference CSV files. Also detects duplicate annotation
- * IDs, validates internal reference targets, and checks transcription filename
- * consistency with image names.</p>
+ * <p>Every transcription must be well-formed XML and, with {@code --schema}, valid against
+ * the given schema. People, book and location references in annotations must match entries
+ * in the reference CSV files, annotation IDs must be unique, internal reference targets must
+ * resolve, and transcription file names must agree with the page's image name.</p>
  */
 @Command(name = "check-aor",
          mixinStandardHelpOptions = true, versionProvider = VersionProvider.class,
-         description = "Validate AoR transcription data against reference spreadsheets")
+         description = "Check AoR transcriptions: well-formed XML (valid against a local XML Schema with --schema), "
+                 + "references against the reference spreadsheets, unique annotation ids, internal reference targets")
 public final class CheckAorCommand implements Callable<Integer> {
 
     @Mixin
@@ -35,8 +36,12 @@ public final class CheckAorCommand implements Callable<Integer> {
     @Option(names = "--spreadsheet-dir", description = "Directory containing reference spreadsheets")
     private Path spreadsheetDir;
 
+    @Option(names = "--schema", description = "Local XML Schema (.xsd) file to validate the transcriptions against; "
+            + "the files' own schemaLocation is never fetched")
+    private Path schema;
+
     /**
-     * Executes the AoR transcription validation.
+     * Executes the AoR transcription checks.
      *
      * @return 0 if no errors were found, 1 if errors were detected or a fatal error occurred
      */
@@ -51,10 +56,16 @@ public final class CheckAorCommand implements Callable<Integer> {
             return 1;
         }
 
-        var checker = new AoRTranscriptionChecker(archive.path(), spreadsheetDir);
-        List<String> errors = checker.run(collectionId, bookId);
+        if (schema != null && !Files.isRegularFile(schema)) {
+            System.err.println("Error: schema file does not exist: " + schema);
+            return 1;
+        }
 
-        errors.forEach(System.out::println);
-        return errors.isEmpty() ? 0 : 1;
+        var checker = new AoRTranscriptionChecker(archive.path(), spreadsheetDir, schema);
+        CheckResult result = checker.run(collectionId, bookId);
+
+        result.errors().forEach(error -> System.out.println("ERROR: " + error));
+        result.warnings().forEach(warning -> System.out.println("WARN:  " + warning));
+        return result.errors().isEmpty() ? 0 : 1;
     }
 }

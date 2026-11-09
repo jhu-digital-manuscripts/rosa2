@@ -324,14 +324,14 @@ public class Book implements HasId {
     }
 
     /**
-     * Returns the AoR annotated page matching the given page identifier.
+     * Returns the AoR annotated page for the given image.
      *
-     * @param page the page name to search for
+     * @param page the image id, with or without extension
      * @return the annotated page, or {@code null} if not found
      */
     public AnnotatedPage getAnnotationPage(String page) {
         for (AnnotatedPage ap : annotatedPages) {
-            if (ap.getPage() != null && ap.getPage().contains(page)) {
+            if (ap.isForImage(page)) {
                 return ap;
             }
         }

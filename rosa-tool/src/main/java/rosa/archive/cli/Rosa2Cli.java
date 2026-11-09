@@ -21,7 +21,6 @@ import java.util.concurrent.Callable;
              ShallowCopyCommand.class,
              CheckCommand.class,
              ListCommand.class,
-             ValidateXmlCommand.class,
              UpdateChecksumCommand.class,
              UpdateImageListCommand.class,
              CropImagesCommand.class,

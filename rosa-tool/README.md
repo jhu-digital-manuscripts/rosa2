@@ -24,8 +24,7 @@ java -jar target/rosa-tool.jar <command> --help
 | `shallow-copy` | Copy the archive without its images |
 | `list` | List collections or books |
 | `check` | Check archive consistency, optionally checksums |
-| `validate-xml` | Check AoR transcription XML for well-formedness, optionally against a local schema |
-| `check-aor` | Check AoR transcriptions against the reference sheets |
+| `check-aor` | Check AoR transcription XML (well-formed, optionally against a local schema) and the transcriptions against the reference sheets |
 | `update` | Recompute SHA1 checksum files |
 | `update-image-list` | Generate a book's image list from its image files |
 | `crop-images` | Crop a book's images and write the cropped image list |

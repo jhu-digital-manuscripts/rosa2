@@ -21,7 +21,7 @@ rosa2/
 │       ├── model/        Data model; model/aor/ = AoR annotation types (sealed Annotation interface)
 │       ├── iiif/         IIIF Presentation 3.0 generation
 │       ├── opensearch/   Bulk-ingest document generation
-│       └── aor/          AoRTranscriptionChecker (check-aor)
+│       └── aor/          AoRTranscriptionChecker + AorXmlValidator (check-aor)
 │   └── src/test/resources/archive/   Test fixture archive (rose, aor, dlmm, pizan)
 ├── rosa-viewer/          Mirador 4 + React 18 + MUI 9, Vite 5, Vitest 2
 │   ├── .env              Committed local-dev defaults for VITE_ROSA_* (override in .env.local)
@@ -80,7 +80,7 @@ java -jar target/rosa-tool.jar <command> --help
 ```
 
 Subcommands (see `docs/usage.md` for options): `generate-iiif-pres`,
-`generate-opensearch-ingest`, `shallow-copy`, `check`, `list`, `validate-xml`,
+`generate-opensearch-ingest`, `shallow-copy`, `check`, `list`,
 `update`, `update-image-list`, `crop-images`, `file-map`,
 `rename-images`, `rename-files`, `rename-transcriptions`, `generate-tei`,
 `check-aor`, `decorate-image-list`. Every command takes `-h` and `-V`.
@@ -89,7 +89,7 @@ Common invocations against the in-repo archive:
 
 ```sh
 java -jar rosa-tool/target/rosa-tool.jar check --archive archive --skip-images   # the in-repo copy has no images
-java -jar rosa-tool/target/rosa-tool.jar validate-xml --archive archive --collection aor
+java -jar rosa-tool/target/rosa-tool.jar check-aor --archive archive --collection aor [--schema aor.xsd]
 java -jar rosa-tool/target/rosa-tool.jar generate-iiif-pres --archive archive --output /tmp/iiif \
   [--base-url URL] [--image-base-url URL] [--image-api-version 2|3] [--opensearch-url URL] \
   [--annotation-stylesheet-url 'URL/{collection}.css'] [--viewer-url 'URL/{collection}/'] [--collection ID]...

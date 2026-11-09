@@ -74,7 +74,7 @@ class AoRTranscriptionCheckerPropertyTest {
 
             // Run the checker
             var checker = new AoRTranscriptionChecker(archiveDir, null);
-            List<String> errors = checker.run("TestCol", "TestBook");
+            List<String> errors = checker.run("TestCol", "TestBook").errors();
 
             // Verify: every invalid person reference should produce an error
             for (String invalidPerson : effectiveInvalid) {
@@ -216,7 +216,7 @@ class AoRTranscriptionCheckerPropertyTest {
 
             // Run the checker
             var checker = new AoRTranscriptionChecker(archiveDir, null);
-            List<String> errors = checker.run("TestCol", "TestBook");
+            List<String> errors = checker.run("TestCol", "TestBook").errors();
 
             // Verify: at least one error mentions duplicate annotation ID
             boolean hasDuplicateError = errors.stream().anyMatch(e ->

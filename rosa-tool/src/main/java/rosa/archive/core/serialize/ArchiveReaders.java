@@ -1023,10 +1023,10 @@ public final class ArchiveReaders {
         NodeList pageEls = doc.getElementsByTagName("page");
         if (pageEls.getLength() >= 1) {
             Element pageEl = (Element) pageEls.item(0);
-            page.setPage(pageEl.getAttribute("filename"));
-            page.setPagination(pageEl.getAttribute("pagination"));
-            page.setReader(pageEl.getAttribute("reader"));
-            page.setSignature(pageEl.getAttribute("signature"));
+            page.setPage(attr(pageEl, "filename"));
+            page.setPagination(attr(pageEl, "pagination"));
+            page.setReader(attr(pageEl, "reader"));
+            page.setSignature(attr(pageEl, "signature"));
         }
 
         NodeList annotationEls = doc.getElementsByTagName("annotation");
@@ -1046,9 +1046,9 @@ public final class ArchiveReaders {
             }
 
             Element annotation = (Element) child;
-            String id = annotation.getAttribute("id");
+            String id = attr(annotation, "id");
             boolean hasId = id != null && !id.isEmpty();
-            Location loc = getLocation(annotation.getAttribute("place"));
+            Location loc = getLocation(attr(annotation, "place"));
 
             switch (annotation.getTagName()) {
                 case "marginalia" -> {
@@ -1059,10 +1059,10 @@ public final class ArchiveReaders {
                 case "underline" -> {
                     Underline u = new Underline(
                             id,
-                            annotation.getAttribute("text"),
-                            annotation.getAttribute("method"),
-                            annotation.getAttribute("type"),
-                            annotation.getAttribute("language"),
+                            attr(annotation, "text"),
+                            attr(annotation, "method"),
+                            attr(annotation, "type"),
+                            attr(annotation, "language"),
                             Location.INTEXT
                     );
                     page.getUnderlines().add(u);
@@ -1070,9 +1070,9 @@ public final class ArchiveReaders {
                 case "symbol" -> {
                     Symbol s = new Symbol(
                             id,
-                            annotation.getAttribute("text"),
-                            annotation.getAttribute("name"),
-                            annotation.getAttribute("language"),
+                            attr(annotation, "text"),
+                            attr(annotation, "name"),
+                            attr(annotation, "language"),
                             loc
                     );
                     page.getSymbols().add(s);
@@ -1080,10 +1080,10 @@ public final class ArchiveReaders {
                 case "mark" -> {
                     Mark m = new Mark(
                             id,
-                            annotation.getAttribute("text"),
-                            annotation.getAttribute("name"),
-                            annotation.getAttribute("method"),
-                            annotation.getAttribute("language"),
+                            attr(annotation, "text"),
+                            attr(annotation, "name"),
+                            attr(annotation, "method"),
+                            attr(annotation, "language"),
                             loc
                     );
                     page.getMarks().add(m);
@@ -1091,9 +1091,9 @@ public final class ArchiveReaders {
                 case "numeral" -> {
                     Numeral n = new Numeral(
                             id,
-                            annotation.getAttribute("text"),
+                            attr(annotation, "text"),
                             annotation.getTextContent(),
-                            annotation.getAttribute("language"),
+                            attr(annotation, "language"),
                             loc
                     );
                     page.getNumerals().add(n);
@@ -1101,44 +1101,44 @@ public final class ArchiveReaders {
                 case "errata" -> {
                     Errata e = new Errata(
                             id,
-                            annotation.getAttribute("language"),
-                            annotation.getAttribute("copytext"),
-                            annotation.getAttribute("amendedtext")
+                            attr(annotation, "language"),
+                            attr(annotation, "copytext"),
+                            attr(annotation, "amendedtext")
                     );
                     page.getErrata().add(e);
                 }
                 case "drawing" -> {
                     Drawing d = new Drawing(
                             id,
-                            annotation.getAttribute("anchor_text"),
+                            attr(annotation, "anchor_text"),
                             loc,
-                            annotation.getAttribute("name"),
-                            annotation.getAttribute("method"),
-                            annotation.getAttribute("language")
+                            attr(annotation, "name"),
+                            attr(annotation, "method"),
+                            attr(annotation, "language")
                     );
-                    d.setType(annotation.getAttribute("type"));
+                    d.setType(attr(annotation, "type"));
                     NodeList textNodes = annotation.getElementsByTagName("text");
                     for (int j = 0; j < textNodes.getLength(); j++) {
                         if (textNodes.item(j).getNodeType() != Node.ELEMENT_NODE) continue;
                         Element txtEl = (Element) textNodes.item(j);
                         d.getTexts().add(new TextEl(
-                                txtEl.getAttribute("hand"),
-                                txtEl.getAttribute("language"),
-                                txtEl.getAttribute("anchor_text"),
+                                attr(txtEl, "hand"),
+                                attr(txtEl, "language"),
+                                attr(txtEl, "anchor_text"),
                                 txtEl.getTextContent()
                         ));
                     }
                     for (Element el : getDirectChildElements("person", annotation)) {
-                        d.getPeople().add(el.getAttribute("name"));
+                        d.getPeople().add(attr(el, "name"));
                     }
                     for (Element el : getDirectChildElements("book", annotation)) {
-                        d.getBooks().add(el.getAttribute("title"));
+                        d.getBooks().add(attr(el, "title"));
                     }
                     for (Element el : getDirectChildElements("location", annotation)) {
-                        d.getLocations().add(el.getAttribute("name"));
+                        d.getLocations().add(attr(el, "name"));
                     }
                     for (Element el : getDirectChildElements("symbol_in_text", annotation)) {
-                        d.getSymbols().add(el.getAttribute("name"));
+                        d.getSymbols().add(attr(el, "name"));
                     }
                     for (Element el : getDirectChildElements("translation", annotation)) {
                         d.setTranslation(el.getTextContent());
@@ -1185,14 +1185,14 @@ public final class ArchiveReaders {
     private static Marginalia buildMarginalia(Element annotation, String pageName) {
         Marginalia marg = new Marginalia();
 
-        marg.setHand(annotation.getAttribute("hand"));
-        marg.setDate(annotation.getAttribute("date"));
-        marg.setOtherReader(annotation.getAttribute("other_reader"));
-        marg.setTopic(annotation.getAttribute("topic"));
-        marg.setMethod(annotation.getAttribute("method"));
-        marg.setReferencedText(annotation.getAttribute("anchor_text"));
+        marg.setHand(attr(annotation, "hand"));
+        marg.setDate(attr(annotation, "date"));
+        marg.setOtherReader(attr(annotation, "other_reader"));
+        marg.setTopic(attr(annotation, "topic"));
+        marg.setMethod(attr(annotation, "method"));
+        marg.setReferencedText(attr(annotation, "anchor_text"));
 
-        Location loc = getLocation(annotation.getAttribute("place"));
+        Location loc = getLocation(attr(annotation, "place"));
         if (loc != null) {
             marg.setLocation(loc);
         }
@@ -1214,7 +1214,7 @@ public final class ArchiveReaders {
             if (!((Element) parentNode).getTagName().equals("marginalia")) continue;
 
             MarginaliaLanguage ml = new MarginaliaLanguage();
-            ml.setLang(langEl.getAttribute("ident"));
+            ml.setLang(attr(langEl, "ident"));
 
             // Positions within this language
             NodeList posNodes = langEl.getElementsByTagName("position");
@@ -1235,62 +1235,62 @@ public final class ArchiveReaders {
     private static Position buildPosition(Element posEl, String pageName) {
         Position pos = new Position();
 
-        Location loc = getLocation(posEl.getAttribute("place").trim());
+        Location loc = getLocation(attr(posEl, "place").trim());
         if (loc != null) {
             pos.setPlace(loc);
         }
-        pos.setOrientation(safeParseInt(posEl.getAttribute("book_orientation"), 0));
+        pos.setOrientation(safeParseInt(attr(posEl, "book_orientation"), 0));
 
         // Internal references to other annotations: <internal_ref><target ref text prefix suffix/></internal_ref>
         for (Element refEl : getDirectChildElements("internal_ref", posEl)) {
             InternalReference ref = new InternalReference();
-            ref.setText(refEl.getAttribute("text"));
+            ref.setText(attr(refEl, "text"));
             for (Element targetEl : getDirectChildElements("target", refEl)) {
                 ref.addTargets(new ReferenceTarget(
-                        targetEl.getAttribute("ref"),
-                        targetEl.getAttribute("text"),
-                        targetEl.getAttribute("prefix"),
-                        targetEl.getAttribute("suffix")));
+                        attr(targetEl, "ref"),
+                        attr(targetEl, "text"),
+                        attr(targetEl, "prefix"),
+                        attr(targetEl, "suffix")));
             }
             pos.getInternalRefs().add(ref);
         }
 
         // People
         for (Element el : getDirectChildElements("person", posEl)) {
-            pos.getPeople().add(el.getAttribute("name"));
+            pos.getPeople().add(attr(el, "name"));
         }
         // Books
         for (Element el : getDirectChildElements("book", posEl)) {
-            pos.getBooks().add(el.getAttribute("title"));
+            pos.getBooks().add(attr(el, "title"));
         }
         // Locations
         for (Element el : getDirectChildElements("location", posEl)) {
-            pos.getLocations().add(el.getAttribute("name"));
+            pos.getLocations().add(attr(el, "name"));
         }
         // Symbols named in the marginal text
         for (Element el : getDirectChildElements("symbol_in_text", posEl)) {
-            pos.getSymbols().add(el.getAttribute("name"));
+            pos.getSymbols().add(attr(el, "name"));
         }
         for (Element el : getDirectChildElements("marginalia_symbol", posEl)) {
-            pos.getSymbols().add(el.getAttribute("name"));
+            pos.getSymbols().add(attr(el, "name"));
         }
         // XRefs
         for (Element el : getDirectChildElements("X-ref", posEl)) {
             XRef xref = new XRef(
-                    el.getAttribute("person"),
-                    el.getAttribute("book_title"),
-                    el.getAttribute("text"),
-                    el.getAttribute("language"));
+                    attr(el, "person"),
+                    attr(el, "book_title"),
+                    attr(el, "text"),
+                    attr(el, "language"));
             pos.getXRefs().add(xref);
         }
         // Emphasis (underline elements within position)
         for (Element el : getDirectChildElements("emphasis", posEl)) {
             Underline emphasis = new Underline(
                     null,
-                    el.getAttribute("text"),
-                    el.getAttribute("method"),
-                    el.getAttribute("type"),
-                    el.getAttribute("language"),
+                    attr(el, "text"),
+                    attr(el, "method"),
+                    attr(el, "type"),
+                    attr(el, "language"),
                     null
             );
             pos.getEmphasis().add(emphasis);
@@ -1307,13 +1307,13 @@ public final class ArchiveReaders {
     }
 
     private static Calculation buildCalculation(Element calcEl) {
-        Location loc = getLocation(calcEl.getAttribute("place"));
+        Location loc = getLocation(attr(calcEl, "place"));
         Calculation calc = new Calculation(
                 null,
-                calcEl.getAttribute("type"),
-                safeParseInt(calcEl.getAttribute("book_orientation"), 0),
+                attr(calcEl, "type"),
+                safeParseInt(attr(calcEl, "book_orientation"), 0),
                 loc,
-                calcEl.getAttribute("method"),
+                attr(calcEl, "method"),
                 null
         );
         calc.setContent(calcEl.getTextContent().trim());
@@ -1321,21 +1321,21 @@ public final class ArchiveReaders {
     }
 
     private static Graph buildGraph(Element graphEl) {
-        Location loc = getLocation(graphEl.getAttribute("place"));
+        Location loc = getLocation(attr(graphEl, "place"));
         Graph graph = new Graph(
                 null,
-                graphEl.getAttribute("type"),
-                safeParseInt(graphEl.getAttribute("book_orientation"), 0),
+                attr(graphEl, "type"),
+                safeParseInt(attr(graphEl, "book_orientation"), 0),
                 loc,
-                graphEl.getAttribute("method")
+                attr(graphEl, "method")
         );
 
         // Graph nodes
         for (Element nodeEl : getDirectChildElements("node", graphEl)) {
             GraphNode node = new GraphNode(
-                    nodeEl.getAttribute("id"),
-                    nodeEl.getAttribute("person"),
-                    nodeEl.getAttribute("anchor_text"),
+                    attr(nodeEl, "id"),
+                    attr(nodeEl, "person"),
+                    attr(nodeEl, "anchor_text"),
                     nodeEl.getTextContent().trim()
             );
             graph.getNodes().add(node);
@@ -1353,24 +1353,24 @@ public final class ArchiveReaders {
         GraphText gt = new GraphText();
 
         for (Element personEl : getDirectChildElements("person", el)) {
-            gt.addPerson(personEl.getAttribute("name"));
+            gt.addPerson(attr(personEl, "name"));
         }
         for (Element bookEl : getDirectChildElements("book", el)) {
-            gt.addBook(bookEl.getAttribute("title"));
+            gt.addBook(attr(bookEl, "title"));
         }
         for (Element locEl : getDirectChildElements("location", el)) {
-            gt.addLocation(locEl.getAttribute("name"));
+            gt.addLocation(attr(locEl, "name"));
         }
         for (Element symEl : getDirectChildElements("symbol_in_text", el)) {
-            gt.addSymbol(symEl.getAttribute("name"));
+            gt.addSymbol(attr(symEl, "name"));
         }
         for (Element noteEl : getDirectChildElements("note", el)) {
             gt.addNote(new GraphNote(
-                    noteEl.getAttribute("id"),
-                    noteEl.getAttribute("hand"),
-                    noteEl.getAttribute("language"),
-                    noteEl.getAttribute("internal_link"),
-                    noteEl.getAttribute("anchor_text"),
+                    attr(noteEl, "id"),
+                    attr(noteEl, "hand"),
+                    attr(noteEl, "language"),
+                    attr(noteEl, "internal_link"),
+                    attr(noteEl, "anchor_text"),
                     noteEl.getTextContent().trim()));
         }
         for (Element transEl : getDirectChildElements("translation", el)) {
@@ -1384,29 +1384,29 @@ public final class ArchiveReaders {
     }
 
     private static Table buildTable(Element tableEl) {
-        Location loc = getLocation(tableEl.getAttribute("place"));
+        Location loc = getLocation(attr(tableEl, "place"));
         Table table = new Table(null, loc);
-        table.setType(tableEl.getAttribute("type"));
+        table.setType(attr(tableEl, "type"));
 
         // Symbols named in the table
         for (Element el : getDirectChildElements("symbol_in_text", tableEl)) {
-            table.getSymbols().add(el.getAttribute("name"));
+            table.getSymbols().add(attr(el, "name"));
         }
         for (Element el : getDirectChildElements("person", tableEl)) {
-            table.getPeople().add(el.getAttribute("name"));
+            table.getPeople().add(attr(el, "name"));
         }
         for (Element el : getDirectChildElements("book", tableEl)) {
-            table.getBooks().add(el.getAttribute("title"));
+            table.getBooks().add(attr(el, "title"));
         }
         for (Element el : getDirectChildElements("location", tableEl)) {
-            table.getLocations().add(el.getAttribute("name"));
+            table.getLocations().add(attr(el, "name"));
         }
         // Reader's notes written with the table
         for (Element el : getDirectChildElements("text", tableEl)) {
             table.getTexts().add(new TextEl(
-                    el.getAttribute("hand"),
-                    el.getAttribute("language"),
-                    el.getAttribute("anchor_text"),
+                    attr(el, "hand"),
+                    attr(el, "language"),
+                    attr(el, "anchor_text"),
                     el.getTextContent().trim()));
         }
 
@@ -1414,7 +1414,7 @@ public final class ArchiveReaders {
         for (Element hEl : getDirectChildElements("tr", tableEl)) {
             List<TableHeader> headers = new ArrayList<>();
             for (Element thEl : getDirectChildElements("th", hEl)) {
-                TableHeader th = new TableHeader(thEl.getAttribute("label"), "", "", thEl.getTextContent().trim());
+                TableHeader th = new TableHeader(attr(thEl, "label"), "", "", thEl.getTextContent().trim());
                 headers.add(th);
             }
             if (!headers.isEmpty()) {
@@ -1423,7 +1423,7 @@ public final class ArchiveReaders {
             // Cells
             List<TableCell> cells = new ArrayList<>();
             for (Element tdEl : getDirectChildElements("td", hEl)) {
-                TableCell cell = new TableCell(0, 0, tdEl.getAttribute("anchor_text"), "", tdEl.getTextContent().trim());
+                TableCell cell = new TableCell(0, 0, attr(tdEl, "anchor_text"), "", tdEl.getTextContent().trim());
                 cells.add(cell);
             }
             if (!cells.isEmpty()) {
@@ -1444,13 +1444,22 @@ public final class ArchiveReaders {
         PhysicalLink link = new PhysicalLink();
 
         for (Element relEl : getDirectChildElements("relation", el)) {
-            String from = relEl.getAttribute("from");
-            String to = relEl.getAttribute("to");
-            String type = relEl.getAttribute("type");
+            String from = attr(relEl, "from");
+            String to = attr(relEl, "to");
+            String type = attr(relEl, "type");
             link.getLinks().add(new AnnotationLink(null, from, to, type));
         }
 
         return link;
+    }
+
+    /**
+     * Returns an element's attribute with surrounding whitespace removed, so that names are
+     * matched against the reference sheets (whose cells are trimmed) and image lists exactly.
+     * Like {@link Element#getAttribute} this is the empty string for an absent attribute.
+     */
+    private static String attr(Element el, String name) {
+        return el.getAttribute(name).trim();
     }
 
     private static List<Element> getDirectChildElements(String tagName, Element parent) {
