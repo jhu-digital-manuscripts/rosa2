@@ -95,7 +95,7 @@
                 <position book_orientation="0" place="right_margin">
                     <marginalia_text>Bernardus. Comes. Danus Siluan[ectensis] etc.</marginalia_text>  <!-- DO: Not sure in which order to transcribe these words. Bernard the Dane and Bernard, Count of Senlis are two different people. -->
                     <person name="Bernard the Dane"/>
-                    <person name="Bernard, Count of Senlis"/>
+                    <person name="Bernard of Senlis"/>
                 </position>
             </language>
             <translation>Bernard. Count. The Dane. Of Senlis. etc.</translation>
@@ -105,7 +105,7 @@
             <language ident="FR">
                 <position book_orientation="0" place="right_margin">
                     <marginalia_text>Ce Bernard fut Conte de Senliz et de Concy.</marginalia_text>
-                    <person name="Bernard, Count of Senlis"/>
+                    <person name="Bernard of Senlis"/>
                     <location name="Senlis"/>
                     <location name="Coucy"/>
                 </position>
@@ -147,7 +147,7 @@
             <language ident="LA">
                 <position book_orientation="0" place="right_margin">
                     <marginalia_text>Bernardus [ Com[es] Sil[uanectensis] Danus.</marginalia_text>
-                    <person name="Bernard, Count of Senlis"/>
+                    <person name="Bernard of Senlis"/>
                     <person name="Bernard the Dane"/>
                 </position>
             </language>
@@ -159,7 +159,7 @@
                 <position book_orientation="0" place="tail">
                     <marginalia_text>Richardus primus, Nepos Bernardi Comitis Siluanecte[nsi]s. [7?] de - quia Sprota erat filia Hereberti Comitis Siluanectensis: cuius filius forte iste Bernardus erat</marginalia_text> <!-- DO: not sure if it is a 7, or an I -->
                     <person name="Richard I of Normandy"/>
-                    <person name="Bernard Senlis"/>
+                    <person name="Bernard of Senlis"/>
                     <person name="Sprota"/>
                     <person name="Herbert I, Count of Vermandois"/>
                 </position>

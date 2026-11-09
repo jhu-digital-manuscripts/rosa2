@@ -46,7 +46,7 @@
             <language ident="LA">
                 <position book_orientation="0" place="left_margin">
                     <marginalia_text>Gulielmus Belleme[n]sis.</marginalia_text>
-                    <person name="William of Belleme, 3rd Earl of Shrewsbury"/>
+                    <person name="William of Belleme"/>
                 </position>
             </language>
             <translation>William of Belleme, 3rd Earl of Shrewsbury.</translation>
@@ -76,8 +76,8 @@
                 <position book_orientation="0" place="left_margin">
                     <marginalia_text>Fulco Robertus ] filij Will[ia]mi Beleme[n]sis</marginalia_text>
                     <person name="Fulk, Son of William of Belleme"/>
-                    <person name="Robert of Belleme"/>
-                    <person name="William of Belleme, 3rd Earl of Shrewsbury"/>
+                    <person name="Robert of Belleme, 3rd Earl of Shrewsbury"/>
+                    <person name="William of Belleme"/>
                 </position>
             </language>
             <translation>Fulk, Robert ] Sons of William of Belleme, 3rd Earl of Shrewsbury.</translation>
@@ -106,7 +106,7 @@
             <language ident="LA">
                 <position book_orientation="0" place="left_margin">
                     <marginalia_text>Will[ia]mus Beleme[n]s[is] morit[u]r.</marginalia_text>
-                    <person name="William of Belleme, 3rd Earl of Shrewsbury"/>
+                    <person name="William of Belleme"/>
                 </position>
             </language>
             <translation>William of Belleme, 3rd Earl of Shrewsbury, dies.</translation>
