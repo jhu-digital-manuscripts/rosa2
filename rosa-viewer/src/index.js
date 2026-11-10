@@ -54,9 +54,4 @@ export function createViewer(config = {}) {
   return viewer;
 }
 
-// Auto-initialize if configuration is provided on window object
-if (typeof window !== 'undefined' && window.rosaViewerConfig) {
-  createViewer(window.rosaViewerConfig);
-}
-
 export { jhsearchPlugin, rosaAnnotationsPlugin, rosaDescriptionPlugin };

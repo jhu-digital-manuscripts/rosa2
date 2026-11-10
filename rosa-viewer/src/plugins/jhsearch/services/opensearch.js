@@ -256,22 +256,6 @@ export async function searchManifests(opensearchUrl, query, options = {}) {
 }
 
 /**
- * Execute a search on the canvas index.
- *
- * @param {string} opensearchUrl - Base Opensearch URL
- * @param {Object} query - The query body
- * @param {Object} options - Request options
- * @returns {Promise<Object>} Search response
- */
-export async function searchCanvases(opensearchUrl, query, options = {}) {
-  const url = opensearchUrl.includes('/canvas')
-    ? opensearchUrl
-    : opensearchUrl.replace('/_search', '/canvas/_search');
-
-  return executeSearch(url, query, options);
-}
-
-/**
  * Execute a multi-index search (searches both manifest and canvas).
  *
  * @param {string} opensearchUrl - Base Opensearch URL

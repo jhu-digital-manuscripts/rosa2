@@ -114,23 +114,10 @@ export const isInitialized = (state) => {
 };
 
 /**
- * Check if there's any loading in progress.
- */
-export const isLoading = (state) => {
-  const config = getConfig(state);
-  const service = getService(state);
-  const collections = getCollections(state);
-  const results = getResults(state);
-  return config.loading || service.loading || collections.loading || results.loading;
-};
-
-/**
  * Get any initialization error.
  */
 export const getInitializationError = (state) => {
-  const config = getConfig(state);
-  const service = getService(state);
-  return config.error || service.error;
+  return getService(state).error;
 };
 
 /**
@@ -266,11 +253,6 @@ export const getTotalPages = (state) => {
 };
 
 /**
- * Whether the last search found more results than can be paged to.
- */
-export const isResultWindowExceeded = (state) => getTotalResults(state) > MAX_RESULT_WINDOW;
-
-/**
  * Get the search results items.
  */
 export const getResultItems = (state) => getResults(state).items || [];
@@ -308,20 +290,6 @@ export const getThumbnailTemplate = (state) =>
   getConfig(state).thumbnailTemplate || '{imageBaseUrl}/{iiifImageId}/full/{width},/0/default.jpg';
 export const getThumbnailWidth = (state) => getConfig(state).thumbnailWidth || 80;
 export const getLogoBaseUrl = (state) => getConfig(state).logoBaseUrl || '/logo';
-
-/**
- * @deprecated Use individual selectors (getImageBaseUrl, getThumbnailTemplate, etc.) instead.
- * This selector returns a new object each render which causes performance issues.
- */
-export const getThumbnailConfig = (state) => {
-  const config = getConfig(state);
-  return {
-    imageBaseUrl: config.imageBaseUrl,
-    thumbnailTemplate: config.thumbnailTemplate,
-    thumbnailWidth: config.thumbnailWidth,
-    logoBaseUrl: config.logoBaseUrl,
-  };
-};
 
 /**
  * Get collection items.

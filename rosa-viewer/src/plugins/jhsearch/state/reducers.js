@@ -13,8 +13,6 @@ export const initialState = {
   // Plugin configuration (from Mirador config)
   config: {
     loaded: false,
-    loading: false,
-    error: null,
     iiifBaseUrl: '',
     collectionId: '',
     childCollectionIds: [],
@@ -41,11 +39,8 @@ export const initialState = {
     opensearchUrl: '',
   },
 
-  // Collection hierarchy
+  // Collections offered in the selector, built from the plugin config
   collections: {
-    loaded: false,
-    loading: false,
-    error: null,
     items: [],
   },
 
@@ -140,16 +135,6 @@ function dropUnknownFieldRows(state) {
 export function jhsearchReducer(state = initialState, action) {
   switch (action.type) {
     // Configuration
-    case actions.LOAD_CONFIG_REQUEST:
-      return {
-        ...state,
-        config: {
-          ...state.config,
-          loading: true,
-          error: null,
-        },
-      };
-
     case actions.LOAD_CONFIG_SUCCESS:
       return {
         ...state,
@@ -157,8 +142,6 @@ export function jhsearchReducer(state = initialState, action) {
           ...state.config,
           ...action.payload,
           loaded: true,
-          loading: false,
-          error: null,
         },
         // Keep a collection and page size that were already chosen, e.g. restored
         // from the URL before the search view was first shown, or chosen before it
@@ -172,16 +155,6 @@ export function jhsearchReducer(state = initialState, action) {
           pageSize: state.pagination.pageSizeSelected
             ? state.pagination.pageSize
             : action.payload.pageSize || state.pagination.pageSize,
-        },
-      };
-
-    case actions.LOAD_CONFIG_FAILURE:
-      return {
-        ...state,
-        config: {
-          ...state.config,
-          loading: false,
-          error: action.payload,
         },
       };
 
@@ -219,35 +192,12 @@ export function jhsearchReducer(state = initialState, action) {
       };
 
     // Collections
-    case actions.LOAD_COLLECTIONS_REQUEST:
-      return {
-        ...state,
-        collections: {
-          ...state.collections,
-          loading: true,
-          error: null,
-        },
-      };
-
     case actions.LOAD_COLLECTIONS_SUCCESS:
       return {
         ...state,
         collections: {
           ...state.collections,
           items: action.payload,
-          loaded: true,
-          loading: false,
-          error: null,
-        },
-      };
-
-    case actions.LOAD_COLLECTIONS_FAILURE:
-      return {
-        ...state,
-        collections: {
-          ...state.collections,
-          loading: false,
-          error: action.payload,
         },
       };
 
@@ -359,16 +309,6 @@ export function jhsearchReducer(state = initialState, action) {
       };
     }
 
-    case actions.CLEAR_FACETS:
-      return {
-        ...state,
-        facets: {},
-        pagination: {
-          ...state.pagination,
-          page: 0,
-        },
-      };
-
     case actions.SET_NAME_LABELS:
       return {
         ...state,
@@ -386,33 +326,11 @@ export function jhsearchReducer(state = initialState, action) {
           ...state.simpleSearch,
           query: action.payload,
         },
-        ui: {
-          ...state.ui,
-          viewMode: action.payload ? 'search' : 'browse',
-        },
         pagination: {
           ...state.pagination,
           page: 0,
         },
       };
-
-    case actions.SET_ADVANCED_ROW: {
-      const { index, row } = action.payload;
-      const newRows = [...state.advancedSearch.rows];
-      newRows[index] = { ...newRows[index], ...row };
-
-      return {
-        ...state,
-        advancedSearch: {
-          ...state.advancedSearch,
-          rows: newRows,
-        },
-        pagination: {
-          ...state.pagination,
-          page: 0,
-        },
-      };
-    }
 
     case actions.SET_ADVANCED_ROWS:
       return {
@@ -429,35 +347,6 @@ export function jhsearchReducer(state = initialState, action) {
           page: 0,
         },
       };
-
-    case actions.ADD_ADVANCED_ROW:
-      return {
-        ...state,
-        advancedSearch: {
-          ...state.advancedSearch,
-          rows: [...state.advancedSearch.rows, action.payload],
-        },
-      };
-
-    case actions.REMOVE_ADVANCED_ROW: {
-      const newRows = state.advancedSearch.rows.filter((_, i) => i !== action.payload);
-      // Ensure at least one row remains
-      if (newRows.length === 0) {
-        newRows.push({ field: '', value: '', operator: 'AND' });
-      }
-
-      return {
-        ...state,
-        advancedSearch: {
-          ...state.advancedSearch,
-          rows: newRows,
-        },
-        pagination: {
-          ...state.pagination,
-          page: 0,
-        },
-      };
-    }
 
     case actions.CLEAR_SEARCH:
       return {

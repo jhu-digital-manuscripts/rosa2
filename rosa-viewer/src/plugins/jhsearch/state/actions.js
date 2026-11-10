@@ -10,9 +10,7 @@ const PREFIX = 'jhsearch';
 // ============================================================================
 
 // Configuration
-export const LOAD_CONFIG_REQUEST = `${PREFIX}/LOAD_CONFIG_REQUEST`;
 export const LOAD_CONFIG_SUCCESS = `${PREFIX}/LOAD_CONFIG_SUCCESS`;
-export const LOAD_CONFIG_FAILURE = `${PREFIX}/LOAD_CONFIG_FAILURE`;
 
 // Service (jhsearch.json)
 export const LOAD_SERVICE_REQUEST = `${PREFIX}/LOAD_SERVICE_REQUEST`;
@@ -20,9 +18,7 @@ export const LOAD_SERVICE_SUCCESS = `${PREFIX}/LOAD_SERVICE_SUCCESS`;
 export const LOAD_SERVICE_FAILURE = `${PREFIX}/LOAD_SERVICE_FAILURE`;
 
 // Collections
-export const LOAD_COLLECTIONS_REQUEST = `${PREFIX}/LOAD_COLLECTIONS_REQUEST`;
 export const LOAD_COLLECTIONS_SUCCESS = `${PREFIX}/LOAD_COLLECTIONS_SUCCESS`;
-export const LOAD_COLLECTIONS_FAILURE = `${PREFIX}/LOAD_COLLECTIONS_FAILURE`;
 
 // UI State
 export const SELECT_COLLECTION = `${PREFIX}/SELECT_COLLECTION`;
@@ -32,17 +28,13 @@ export const APPLY_SEARCH_STATE = `${PREFIX}/APPLY_SEARCH_STATE`;
 
 // Facets
 export const TOGGLE_FACET = `${PREFIX}/TOGGLE_FACET`;
-export const CLEAR_FACETS = `${PREFIX}/CLEAR_FACETS`;
 
 // Name filter display cache
 export const SET_NAME_LABELS = `${PREFIX}/SET_NAME_LABELS`;
 
 // Search
 export const SET_SIMPLE_QUERY = `${PREFIX}/SET_SIMPLE_QUERY`;
-export const SET_ADVANCED_ROW = `${PREFIX}/SET_ADVANCED_ROW`;
 export const SET_ADVANCED_ROWS = `${PREFIX}/SET_ADVANCED_ROWS`;
-export const ADD_ADVANCED_ROW = `${PREFIX}/ADD_ADVANCED_ROW`;
-export const REMOVE_ADVANCED_ROW = `${PREFIX}/REMOVE_ADVANCED_ROW`;
 export const CLEAR_SEARCH = `${PREFIX}/CLEAR_SEARCH`;
 
 // Sort & Pagination
@@ -60,19 +52,9 @@ export const SEARCH_FAILURE = `${PREFIX}/SEARCH_FAILURE`;
 // ============================================================================
 
 // Configuration
-export const loadConfigRequest = () => ({
-  type: LOAD_CONFIG_REQUEST,
-});
-
 export const loadConfigSuccess = (config) => ({
   type: LOAD_CONFIG_SUCCESS,
   payload: config,
-});
-
-export const loadConfigFailure = (error) => ({
-  type: LOAD_CONFIG_FAILURE,
-  payload: error,
-  error: true,
 });
 
 // Service
@@ -98,19 +80,9 @@ export const loadServiceFailure = (error) => ({
 });
 
 // Collections
-export const loadCollectionsRequest = () => ({
-  type: LOAD_COLLECTIONS_REQUEST,
-});
-
 export const loadCollectionsSuccess = (collections) => ({
   type: LOAD_COLLECTIONS_SUCCESS,
   payload: collections,
-});
-
-export const loadCollectionsFailure = (error) => ({
-  type: LOAD_COLLECTIONS_FAILURE,
-  payload: error,
-  error: true,
 });
 
 // UI State
@@ -154,10 +126,6 @@ export const toggleFacet = (category, value) => ({
   payload: { category, value },
 });
 
-export const clearFacets = () => ({
-  type: CLEAR_FACETS,
-});
-
 /**
  * Remember how to show Name filter selections.
  * @param {Object<string, {label: string, logo?: string}>} labels - By manifest id
@@ -173,11 +141,6 @@ export const setSimpleQuery = (query) => ({
   payload: query,
 });
 
-export const setAdvancedRow = (index, row) => ({
-  type: SET_ADVANCED_ROW,
-  payload: { index, row },
-});
-
 /**
  * Replace all advanced search rows in one step, e.g. when the form is submitted.
  *
@@ -186,16 +149,6 @@ export const setAdvancedRow = (index, row) => ({
 export const setAdvancedRows = (rows) => ({
   type: SET_ADVANCED_ROWS,
   payload: rows,
-});
-
-export const addAdvancedRow = (row) => ({
-  type: ADD_ADVANCED_ROW,
-  payload: row || { field: '', value: '', operator: 'AND' },
-});
-
-export const removeAdvancedRow = (index) => ({
-  type: REMOVE_ADVANCED_ROW,
-  payload: index,
 });
 
 export const clearSearch = () => ({

@@ -253,9 +253,7 @@ export function AdvancedSearch() {
   };
 
   const handleSearch = () => {
-    // Commit local state to Redux in one step. Syncing row by row against the
-    // rows captured at render time duplicated added rows (SET_ADVANCED_ROW past
-    // the end appends, then ADD_ADVANCED_ROW appended again).
+    // Commit local state to Redux in one step
     dispatch(setAdvancedRows(localRows));
 
     // Check if any row has a value and set view mode

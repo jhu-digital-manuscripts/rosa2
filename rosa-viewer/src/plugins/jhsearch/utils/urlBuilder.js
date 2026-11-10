@@ -76,21 +76,6 @@ export function buildCanvasUrl(manifestId, pageNum, iiifBaseUrl) {
 }
 
 /**
- * Build a collection URL.
- *
- * @param {string} collectionId - Collection identifier
- * @param {string} iiifBaseUrl - Base URL for IIIF Presentation API
- * @returns {string} Complete collection URL
- */
-export function buildCollectionUrl(collectionId, iiifBaseUrl) {
-  if (!collectionId || !iiifBaseUrl) {
-    return null;
-  }
-
-  return `${iiifBaseUrl}/${collectionId}/collection.json`;
-}
-
-/**
  * Build a logo URL.
  *
  * @param {string} logo - Logo filename (e.g., 'rose.jpg')
