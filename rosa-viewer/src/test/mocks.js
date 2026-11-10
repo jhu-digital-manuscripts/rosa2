@@ -30,13 +30,13 @@ export const mockCollection = {
   ],
 };
 
-// Sample JHSearch service configuration
+// Sample JHSearch service configuration (a jhsearch.json, see docs/search.md)
 export const mockJHSearchService = {
   '@context': 'http://library.jhu.edu/api/jhsearch/2/context.json',
   id: 'http://localhost:3000/iiif/rose/service/jhsearch.json',
   type: 'JHSearchService2',
-  search_url: 'http://localhost:9200/_search',
-  default_fields: ['label', 'description'],
+  opensearch: 'http://localhost:9200/_search',
+  'default-fields': ['label', 'description'],
   fields: [
     {
       name: 'label',
@@ -191,8 +191,8 @@ export const mockReduxState = {
     service: {
       fields: mockJHSearchService.fields,
       categories: mockJHSearchService.categories,
-      defaultFields: mockJHSearchService.default_fields,
-      opensearchUrl: mockJHSearchService.search_url,
+      defaultFields: mockJHSearchService['default-fields'],
+      opensearchUrl: mockJHSearchService.opensearch,
       loading: false,
       error: null,
     },

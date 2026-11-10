@@ -1,5 +1,5 @@
 /**
- * The The Archaeology of Reading site definition: what is fixed for the
+ * The Archaeology of Reading site definition: what is fixed for the
  * site, as passed to createSiteViewer() by main.js. Plain data, so the build and
  * packaging scripts can read it too (scripts/site-collections.mjs).
  */

@@ -23,7 +23,7 @@ rosa2/
 │       ├── opensearch/   Bulk-ingest document generation
 │       └── aor/          AoRTranscriptionChecker + AorXmlValidator (check-aor)
 │   └── src/test/resources/archive/   Test fixture archive (rose, aor, dlmm, pizan)
-├── rosa-viewer/          Mirador 4 + React 18 + MUI 9, Vite 5, Vitest 2
+├── rosa-viewer/          Mirador 4 + React 18 + MUI 9, Vite 8, Vitest 5
 │   ├── .env              Committed local-dev defaults for VITE_ROSA_* (override in .env.local)
 │   ├── sites/            index.html chooser; aor/ and dlmm/ each: index.html, main.js, site.config.js (site definition), site.css, favicon
 │   ├── scripts/          build-sites.mjs (npm run build:sites), site-collections.mjs (a site's collections),
@@ -34,7 +34,7 @@ rosa2/
 │       ├── plugins/jhsearch/   components/ hooks/ services/ state/ utils/
 │       ├── plugins/annotations/  RosaAnnotations panel (grouped, styled annotations)
 │       ├── plugins/description/  Book description panel (TEI notesStmt from manifest seeAlso)
-│       ├── i18n/
+│       ├── utils/              iiif.js (IIIF label text)
 │       └── test/               setup.js, mocks.js
 ├── rosa-search/
 │   ├── opensearch/       Index definitions (manifest.json, canvas.json), Latin analyzer dictionaries
@@ -106,7 +106,7 @@ npm run dev             # Vite dev server on http://localhost:3001 (/ chooser, /
 npm test                # vitest run
 npm run test:watch
 npm run test:coverage
-npm run lint            # eslint src/
+npm run lint            # eslint src/ sites/ scripts/
 npm run lint:fix
 npm run format          # prettier --write
 npm run format:check    # CI enforces this
