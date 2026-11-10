@@ -44,13 +44,7 @@ describe('jhsearch service', () => {
 
   describe('loadJHSearchConfig', () => {
     it('should fetch and parse JHSearch configuration', async () => {
-      const mockResponse = {
-        opensearch: 'http://localhost:9200/_search',
-        fields: mockJHSearchService.fields,
-        categories: mockJHSearchService.categories,
-        'default-fields': mockJHSearchService.default_fields,
-      };
-      global.fetch = vi.fn().mockResolvedValue(createFetchResponse(mockResponse));
+      global.fetch = vi.fn().mockResolvedValue(createFetchResponse(mockJHSearchService));
 
       const serviceUrl = 'http://localhost:3000/iiif/rose/service/jhsearch.json';
       const result = await loadJHSearchConfig(serviceUrl);

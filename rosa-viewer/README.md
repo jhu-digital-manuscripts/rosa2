@@ -195,7 +195,10 @@ Parameters with default values are left out. rosa-tool writes advanced search UR
 this form into AoR annotation bodies for the people, books and places they name (see
 [Annotations](#annotations)). Only the first 10,000 results of a
 search can be paged to (Opensearch's `max_result_window`, which the search proxy
-also enforces); the results header says so when a search matches more. A page is named by its image
+also enforces); the results header says so when a search matches more. Two smaller
+limits apply to the category filters: browsing lists at most 100 values per
+category, and a search counts the categories of at most 500 matched books. No
+collection reaches either today. A page is named by its image
 (`Add12042.001v` → `001v`), or `i<index>` for a canvas without an image of
 its own.
 
@@ -264,13 +267,16 @@ npm run test:coverage
 
 ## Configuration
 
-Configure the viewer through Mirador's initialization:
+The sites are configured by their `site.config.js` (see [Sites](#sites)). To set
+up a viewer directly, call `createViewer()` (`src/index.js`), which adds the
+JHSearch, annotations, book description and image tools plugins to Mirador. It
+takes a Mirador configuration with a `jhsearch` section; `src/config.js` holds
+the defaults for both:
 
 ```javascript
-import Mirador from 'mirador';
-import { jhsearchPlugin } from './plugins/jhsearch';
+import { createViewer } from './src/index';
 
-Mirador.viewer({
+createViewer({
   id: 'rosa-viewer',
   jhsearch: {
     // Required: Base URL for IIIF Presentation API
@@ -308,10 +314,13 @@ Mirador.viewer({
     // Optional: Default results per page (default: 20)
     pageSize: 20,
   }
-}, [
-  ...jhsearchPlugin,
-]);
+});
 ```
+
+Other Mirador settings can be given beside `jhsearch`. The settings objects that
+have defaults in `src/config.js` (`window`, `workspace`, `galleryView`, `osdConfig`,
+`workspaceControlPanel`) are merged key by key, so setting `window.imageToolsOpen`
+keeps the other `window` defaults.
 
 ### Configuration Options
 
@@ -351,7 +360,7 @@ rosa-viewer/
 │   ├── config.js             # Default configuration
 │   ├── site/                 # createSiteViewer, site config resolution, shared site CSS
 │   │   └── history/          # URL fragment <-> viewer state, browser history
-│   ├── i18n/                 # Translations
+│   ├── utils/                # Helpers shared by the plugins and the sites
 │   ├── test/                 # Vitest setup and shared mocks
 │   └── plugins/
 │       ├── annotations/      # RosaAnnotations plugin: grouped, styled annotations panel
@@ -361,7 +370,7 @@ rosa-viewer/
 │           ├── state/        # Redux state management
 │           ├── services/     # API clients
 │           ├── components/   # React components
-│           ├── hooks/        # Custom hooks
+│           ├── hooks/        # Name filter suggestions
 │           └── utils/        # Utilities
 ├── package.json
 ├── vite.config.js            # dev (sites/), library build, and per-site builds

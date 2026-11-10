@@ -26,7 +26,7 @@ import { mockJHSearchService } from '../../../test/mocks';
 describe('queryBuilder', () => {
   const fieldDefinitions = mockJHSearchService.fields;
   const categories = mockJHSearchService.categories;
-  const defaultFields = mockJHSearchService.default_fields;
+  const defaultFields = mockJHSearchService['default-fields'];
 
   describe('buildBrowseQuery', () => {
     it('should build a basic browse query with 0-based pagination', () => {
