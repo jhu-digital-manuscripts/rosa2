@@ -373,6 +373,12 @@ describe('openBookRoute', () => {
     // The same window turning the page: the current URL is pushed so Back returns to it
     await openBookRoute(store, book('Add12042', '002r'), ctx(), { win });
     expect(win.history.pushState).toHaveBeenCalledWith(null, '', win.location.href);
+    // A link to the page already showing changes nothing, so adds nothing
+    await openBookRoute(store, book('Add12042', '002r'), ctx(), { win });
+    expect(win.history.pushState).toHaveBeenCalledTimes(1);
+    // A new view of the book: the history module pushes an entry itself
+    await openBookRoute(store, book('Add12042', '002r', 'book'), ctx(), { win });
+    expect(win.history.pushState).toHaveBeenCalledTimes(1);
   });
 
   it('does nothing once superseded', async () => {

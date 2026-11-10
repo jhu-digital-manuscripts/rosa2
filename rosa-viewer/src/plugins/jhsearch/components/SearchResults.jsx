@@ -7,6 +7,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import CircularProgress from '@mui/material/CircularProgress';
+import LinearProgress from '@mui/material/LinearProgress';
 import Alert from '@mui/material/Alert';
 import Button from '@mui/material/Button';
 import RefreshIcon from '@mui/icons-material/Refresh';
@@ -188,9 +189,17 @@ export function SearchResults({ onRetry }) {
       {/* Header */}
       <ResultsHeader viewMode={viewMode} total={total} />
 
+      {/* A search replacing results already shown: they stay until the new ones
+          arrive, so say that something is happening. The bar keeps its height
+          while idle so the list does not shift. */}
+      <Box sx={{ height: 4 }}>
+        {isLoading && results.length > 0 && <LinearProgress aria-label="Searching" />}
+      </Box>
+
       {/* Content area */}
       <Box
         ref={listRef}
+        aria-busy={isLoading}
         sx={{
           flex: { xs: 'none', md: 1 },
           overflow: { xs: 'visible', md: 'auto' },

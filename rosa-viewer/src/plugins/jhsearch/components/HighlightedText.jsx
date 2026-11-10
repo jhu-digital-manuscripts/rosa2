@@ -20,6 +20,27 @@ export function formatFieldLabel(field) {
   return name.charAt(0).toUpperCase() + name.slice(1);
 }
 
+const MARKED = /<mark>([\s\S]*?)<\/mark>/;
+
+/**
+ * Split a highlight fragment into plain and matched text.
+ *
+ * A fragment is indexed text with the matches wrapped in the <mark> tags the query
+ * asks for (queryBuilder.js). Opensearch does not escape the text, so it is never
+ * parsed as HTML: only those tags are recognised, and everything else, including any
+ * `<` or `&` in the text, is shown as written.
+ *
+ * @param {string} fragment - Highlight fragment with <mark> tags
+ * @returns {Array<{text: string, marked: boolean}>} Non-empty parts in order
+ */
+export function splitHighlight(fragment) {
+  // split() with one capture group alternates unmatched text and captured matches
+  return String(fragment ?? '')
+    .split(MARKED)
+    .map((text, i) => ({ text, marked: i % 2 === 1 }))
+    .filter((part) => part.text !== '');
+}
+
 /**
  * @param {string} html - Highlight fragment with <mark> tags
  * @param {string} field - Highlighted field name
@@ -47,7 +68,11 @@ export function HighlightedText({ html, field, lineClamp }) {
       <Typography component="span" variant="body2" color="text.primary" sx={{ fontWeight: 'bold' }}>
         {formatFieldLabel(field)}:
       </Typography>{' '}
-      <span dangerouslySetInnerHTML={{ __html: html }} />
+      <span>
+        {splitHighlight(html).map((part, i) =>
+          part.marked ? <mark key={i}>{part.text}</mark> : part.text
+        )}
+      </span>
     </Typography>
   );
 }

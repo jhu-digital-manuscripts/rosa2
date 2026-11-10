@@ -67,6 +67,10 @@ describe('formatFacetValue', () => {
     expect(formatFacetValue(100, numPages)).toBe('100-199');
   });
 
+  it('shows both bounds of a bucket that is not whole numbers', () => {
+    expect(formatFacetValue(0.5, { 'quantize-interval': 0.5 })).toBe('0.5-1');
+  });
+
   it('does not special-case the zero bucket', () => {
     // Zero shares the first bucket with the rest of the interval.
     expect(formatFacetValue(0, { 'quantize-interval': 20 })).toBe('0-19');

@@ -139,6 +139,19 @@ describe('opensearch service', () => {
       await expect(executeSearch(opensearchUrl, query)).rejects.toThrow();
     });
 
+    it('should report a successful response that is not JSON', async () => {
+      global.fetch.mockResolvedValueOnce({
+        ok: true,
+        status: 200,
+        json: () => Promise.reject(new SyntaxError('Unexpected token <')),
+      });
+
+      await expect(executeSearch('http://localhost:9200/_search', {})).rejects.toMatchObject({
+        name: 'OpensearchError',
+        status: 200,
+      });
+    });
+
     it('should not retry a non-transient status', async () => {
       global.fetch = vi.fn().mockResolvedValue(errorResponse(400, 'bad query'));
 

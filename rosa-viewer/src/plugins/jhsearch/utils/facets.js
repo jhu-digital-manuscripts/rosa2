@@ -66,8 +66,10 @@ export function formatFacetValue(value, category) {
   if (interval !== null) {
     const range = getBucketRange(value, interval);
     if (range) {
-      // Inclusive upper bound reads more naturally than the half-open bound.
-      return `${range.gte}-${range.lt - 1}`;
+      // Inclusive upper bound reads more naturally than the half-open bound. That
+      // only works for whole numbers; other buckets show both bounds.
+      const whole = Number.isInteger(range.gte) && Number.isInteger(range.lt);
+      return `${range.gte}-${whole ? range.lt - 1 : range.lt}`;
     }
   }
 

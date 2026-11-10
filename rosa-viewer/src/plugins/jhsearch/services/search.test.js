@@ -109,6 +109,31 @@ describe('runSearch', () => {
     expect(loadBookFacets).not.toHaveBeenCalled();
   });
 
+  it('browses books when an advanced search names only unknown fields', async () => {
+    searchManifests.mockResolvedValue({ hits: { total: { value: 5 }, hits: [] } });
+    loadBookFacets.mockResolvedValue(books);
+
+    const results = await runSearch({
+      ...params,
+      advancedRows: [{ field: 'nosuchfield', value: 'x', operator: 'AND' }],
+    });
+
+    expect(searchAll).not.toHaveBeenCalled();
+    const [, query] = searchManifests.mock.calls[0];
+    expect(query.query.bool.must).toBeUndefined();
+    expect(query.sort).toEqual([{ 'label.keyword': 'asc' }]);
+    expect(results.total).toBe(5);
+  });
+
+  it('browses books when a simple search is only quotes', async () => {
+    searchManifests.mockResolvedValue({ hits: { total: { value: 5 }, hits: [] } });
+
+    await runSearch({ ...params, searchMode: 'simple', simpleQuery: '""', enableFacets: false });
+
+    expect(searchAll).not.toHaveBeenCalled();
+    expect(searchManifests).toHaveBeenCalledTimes(1);
+  });
+
   it('browses the manifest index with Opensearch aggregations', async () => {
     searchManifests.mockResolvedValue({
       hits: { total: { value: 0 }, hits: [] },

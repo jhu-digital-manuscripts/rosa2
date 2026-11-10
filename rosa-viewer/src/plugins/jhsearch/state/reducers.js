@@ -3,7 +3,7 @@
  */
 
 import * as actions from './actions';
-import { rowHasQuery } from '../utils/queryBuilder';
+import { rowHasQuery, MAX_RESULT_WINDOW } from '../utils/queryBuilder';
 
 // ============================================================================
 // Initial State
@@ -105,6 +105,38 @@ export const initialState = {
 // Reducer
 // ============================================================================
 
+/**
+ * Drop advanced search rows for fields the loaded service does not have.
+ *
+ * Each collection has its own fields, so rows can name a field the collection lacks:
+ * rose's Character after switching to dlmm, or a field from an old bookmark. The
+ * query builder skips them, so keeping them left a row that searched for nothing. An
+ * advanced search left with nothing to search for becomes a browse, as when the form
+ * is submitted empty.
+ */
+function dropUnknownFieldRows(state) {
+  const fieldNames = new Set((state.service.fields || []).map((f) => f.name));
+  const rows = state.advancedSearch.rows;
+  const keptRows =
+    fieldNames.size === 0 ? rows : rows.filter((r) => !r.field || fieldNames.has(r.field));
+  if (keptRows.length === rows.length) {
+    return state;
+  }
+
+  const next = {
+    ...state,
+    advancedSearch: {
+      rows: keptRows.length > 0 ? keptRows : [{ field: '', value: '', operator: 'AND' }],
+    },
+  };
+
+  const searchLeft = keptRows.some((r) => r.field && rowHasQuery(r));
+  if (state.ui.searchMode === 'advanced' && state.ui.viewMode === 'search' && !searchLeft) {
+    return jhsearchReducer(next, actions.setViewMode('browse'));
+  }
+  return next;
+}
+
 export function jhsearchReducer(state = initialState, action) {
   switch (action.type) {
     // Configuration
@@ -173,33 +205,7 @@ export function jhsearchReducer(state = initialState, action) {
         error: null,
       };
 
-      // Each collection has its own fields, so advanced rows for a field the newly
-      // loaded collection lacks (e.g. rose's Character after switching to dlmm) are
-      // dropped. The query builder would skip them anyway, so keeping them left a
-      // row that searched for nothing and results matching the whole collection.
-      const fieldNames = new Set((service.fields || []).map((f) => f.name));
-      const rows = state.advancedSearch.rows;
-      const keptRows =
-        fieldNames.size === 0 ? rows : rows.filter((r) => !r.field || fieldNames.has(r.field));
-      if (keptRows.length === rows.length) {
-        return { ...state, service };
-      }
-
-      const next = {
-        ...state,
-        service,
-        advancedSearch: {
-          rows: keptRows.length > 0 ? keptRows : [{ field: '', value: '', operator: 'AND' }],
-        },
-      };
-
-      // An advanced search left with nothing to search for is a browse, as when the
-      // form is submitted empty
-      const searchLeft = keptRows.some((r) => r.field && rowHasQuery(r));
-      if (state.ui.searchMode === 'advanced' && state.ui.viewMode === 'search' && !searchLeft) {
-        return jhsearchReducer(next, actions.setViewMode('browse'));
-      }
-      return next;
+      return dropUnknownFieldRows({ ...state, service });
     }
 
     case actions.LOAD_SERVICE_FAILURE:
@@ -290,7 +296,7 @@ export function jhsearchReducer(state = initialState, action) {
 
     case actions.APPLY_SEARCH_STATE: {
       const p = action.payload;
-      return {
+      const next = {
         ...state,
         ui: {
           ...state.ui,
@@ -315,6 +321,11 @@ export function jhsearchReducer(state = initialState, action) {
           ...(p.pageSize ? { pageSize: p.pageSize, pageSizeSelected: true } : {}),
         },
       };
+      // Before the collection's service has loaded its fields are unknown; the rows
+      // are checked when it arrives (LOAD_SERVICE_SUCCESS)
+      const serviceLoaded =
+        next.service.loaded && next.service.collectionId === next.ui.selectedCollectionId;
+      return serviceLoaded ? dropUnknownFieldRows(next) : next;
     }
 
     // Facets
@@ -514,7 +525,16 @@ export function jhsearchReducer(state = initialState, action) {
         },
       };
 
-    case actions.SEARCH_SUCCESS:
+    case actions.SEARCH_SUCCESS: {
+      // A page past the last one, e.g. from an offset in a URL, has no results to
+      // show although the search found some. Move to the last page; the search runs
+      // again for it.
+      const { total } = action.payload;
+      const { page, pageSize } = state.pagination;
+      const pageCount = Math.min(
+        Math.ceil(total / pageSize),
+        Math.floor(MAX_RESULT_WINDOW / pageSize)
+      );
       return {
         ...state,
         results: {
@@ -527,9 +547,11 @@ export function jhsearchReducer(state = initialState, action) {
         },
         pagination: {
           ...state.pagination,
-          total: action.payload.total,
+          total,
+          page: pageCount > 0 && page >= pageCount ? pageCount - 1 : page,
         },
       };
+    }
 
     case actions.SEARCH_FAILURE:
       return {

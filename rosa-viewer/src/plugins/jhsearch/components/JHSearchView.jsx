@@ -3,7 +3,7 @@
  * This replaces Mirador's default WorkspaceAdd component.
  */
 
-import React, { useEffect, useCallback, useRef } from 'react';
+import React, { useEffect, useCallback, useRef, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Box from '@mui/material/Box';
 import CircularProgress from '@mui/material/CircularProgress';
@@ -72,6 +72,9 @@ export function JHSearchView({ jhsearchConfig }) {
   // does not replace the one selected since
   const serviceCounter = useRef(0);
 
+  // Bumped by Retry so a failed service load is made again
+  const [serviceRetry, setServiceRetry] = useState(0);
+
   useEffect(() => {
     if (!jhsearchConfig || !targetCollectionId || serviceCollectionId === targetCollectionId) {
       return;
@@ -95,7 +98,7 @@ export function JHSearchView({ jhsearchConfig }) {
     };
 
     load();
-  }, [dispatch, jhsearchConfig, targetCollectionId, serviceCollectionId]);
+  }, [dispatch, jhsearchConfig, targetCollectionId, serviceCollectionId, serviceRetry]);
 
   // Number of the latest search, so a slow response to an earlier search (e.g.
   // after quickly going back and forward) does not replace newer results
@@ -162,9 +165,9 @@ export function JHSearchView({ jhsearchConfig }) {
     executeSearch();
   }, [executeSearch]);
 
-  // Handle retry
+  // Load the service again after a failure
   const handleRetry = () => {
-    window.location.reload();
+    setServiceRetry((n) => n + 1);
   };
 
   // Loading state
