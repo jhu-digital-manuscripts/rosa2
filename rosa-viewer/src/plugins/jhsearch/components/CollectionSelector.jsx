@@ -41,8 +41,7 @@ export function CollectionSelector() {
 
   const collections = useSelector(selectors.getCollectionItems);
   const selectedCollectionId = useSelector(selectors.getSelectedCollectionId);
-  const config = useSelector(selectors.getConfig);
-  const logoBaseUrl = config.logoBaseUrl || '/logo';
+  const logoBaseUrl = useSelector(selectors.getLogoBaseUrl);
 
   const handleChange = (event) => {
     dispatch(selectCollection(event.target.value));

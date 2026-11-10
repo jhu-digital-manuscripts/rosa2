@@ -28,6 +28,11 @@
  */
 
 import { parseAdvancedQuery, formatAdvancedQuery } from './advancedQuery';
+import { SORTS, DEFAULT_SORT, resolveSort, sortToken } from '../../plugins/jhsearch/utils/sorts';
+import { defaultJHSearchConfig } from '../../config';
+
+// The `s` parameter is a sort key of utils/sorts.js
+export { SORTS, resolveSort, sortToken };
 
 /** Mirador view type -> URL token */
 export const VIEW_TOKENS = {
@@ -40,17 +45,7 @@ export const VIEW_TOKENS = {
 const TOKEN_VIEWS = Object.fromEntries(Object.entries(VIEW_TOKENS).map(([v, t]) => [t, v]));
 
 /** Views whose URL names the current page. */
-const VIEWS_WITH_CANVAS = new Set(['single', 'book']);
-
-/** URL sort token -> sort, and the modes the sort is offered in (see SortOrder.jsx). */
-export const SORTS = {
-  relevance: { field: '_score', order: 'desc', modes: ['search'] },
-  page: { field: 'page_num', order: 'asc', modes: ['search'] },
-  title: { field: 'label.keyword', order: 'asc', modes: ['browse'] },
-  title_desc: { field: 'label.keyword', order: 'desc', modes: ['browse'] },
-};
-
-const DEFAULT_SORT = { browse: 'title', search: 'relevance' };
+export const VIEWS_WITH_CANVAS = new Set(['single', 'book']);
 
 /** Parameters the previous viewers put in the query string. */
 export const LEGACY_QUERY_PARAMS = ['q', 'o', 'm', 's', 'type', 'service'];
@@ -74,28 +69,9 @@ export function createRouteContext(jhsearch = {}) {
   return {
     collectionId: jhsearch.collectionId,
     collectionIds: [jhsearch.collectionId, ...(jhsearch.childCollectionIds || [])],
-    pageSize: jhsearch.pageSize || 20,
-    pageSizeOptions: jhsearch.pageSizeOptions || [20, 30, 40, 50],
+    pageSize: jhsearch.pageSize || defaultJHSearchConfig.pageSize,
+    pageSizeOptions: jhsearch.pageSizeOptions || defaultJHSearchConfig.pageSizeOptions,
   };
-}
-
-/**
- * The sort token for a sort field and order, or null when it has none.
- */
-export function sortToken(field, order) {
-  const entry = Object.entries(SORTS).find(([, s]) => s.field === field && s.order === order);
-  return entry ? entry[0] : null;
-}
-
-/**
- * The sort to use for a mode given a URL sort token, falling back to the mode's default.
- * @param {string} mode - 'browse' | 'search'
- * @param {string} [token]
- * @returns {{field: string, order: string}}
- */
-export function resolveSort(mode, token) {
-  const sort = SORTS[token]?.modes.includes(mode) ? SORTS[token] : SORTS[DEFAULT_SORT[mode]];
-  return { field: sort.field, order: sort.order };
 }
 
 // ----------------------------------------------------------------------------

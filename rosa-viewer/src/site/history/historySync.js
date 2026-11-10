@@ -33,10 +33,10 @@ import {
   parseLocation,
   searchStateForRoute,
   stripLegacyQuery,
+  VIEWS_WITH_CANVAS,
 } from './route';
+import { iiifLabel } from '../../utils/iiif';
 import { canvasIdForName, nameForCanvasId } from './canvasNames';
-
-const VIEWS_WITH_CANVAS = new Set(['single', 'book']);
 
 /**
  * Collection and book of a manifest URL under the IIIF base URL.
@@ -154,13 +154,6 @@ export function shouldReplace(prev, route, prevWindowIds = [], windowIds = []) {
   return false;
 }
 
-function firstLabel(label) {
-  if (!label) return null;
-  if (typeof label === 'string') return label;
-  const values = Object.values(label)[0];
-  return Array.isArray(values) ? values[0] : values || null;
-}
-
 /**
  * Document title for a route.
  */
@@ -169,10 +162,10 @@ export function routeTitle(route, state, siteTitle) {
 
   if (route.type === 'book') {
     const manifest = state.manifests?.[route.manifestId]?.json;
-    const bookLabel = firstLabel(manifest?.label) || route.bookId;
+    const bookLabel = iiifLabel(manifest?.label) || route.bookId;
     const windowState = state.windows?.[route.windowId];
     const canvas = route.canvas && manifest?.items?.find((c) => c.id === windowState?.canvasId);
-    const canvasLabel = canvas ? firstLabel(canvas.label) : null;
+    const canvasLabel = canvas ? iiifLabel(canvas.label) : '';
     return `${bookLabel}${canvasLabel ? `, ${canvasLabel}` : ''}${suffix}`;
   }
 
@@ -320,6 +313,8 @@ export function connectHistory(store, options = {}) {
 
   let prev = null;
   let prevWindowIds = [];
+  // The parts of the state the route and title are made from, as of the last flush
+  let seen = [];
   let applying = false;
   let applyCount = 0;
   let replaceNext = false;
@@ -343,8 +338,14 @@ export function connectHistory(store, options = {}) {
     if (!connected || applying) return;
 
     const state = store.getState();
+    // Most dispatches (viewport changes, hover, loading flags) touch none of the
+    // state the URL describes. After restoring a URL (prev is null) always look.
+    const parts = [state.workspace, state.windows, state.manifests, state.jhsearch];
+    if (prev && !replaceNext && parts.every((part, i) => part === seen[i])) return;
+
     const route = routeFromState(state, ctx, selectViewType);
     if (!route || route.pending) return;
+    seen = parts;
 
     const windowIds = state.workspace?.windowIds || [];
     const fragment = formatRoute(route, ctx);

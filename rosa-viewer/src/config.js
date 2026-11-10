@@ -1,6 +1,8 @@
 /**
  * Default configuration for the JHSearch plugin.
- * These values are used when not explicitly provided in Mirador config.
+ * These values are used when not explicitly provided in Mirador config. This is
+ * the one place they are written down; the plugin state, selectors and routes read
+ * them from here.
  */
 export const defaultJHSearchConfig = {
   // Default thumbnail URL template
@@ -73,18 +75,28 @@ export const defaultMiradorConfig = {
 
 /**
  * Merge user config with defaults.
+ *
+ * The settings objects that have defaults here (`window`, `workspace`, ...) are
+ * merged key by key, so setting one of their keys keeps the other defaults. Deeper
+ * objects, such as `window.panels`, are replaced as a whole.
+ *
  * @param {Object} userConfig - User-provided configuration
  * @returns {Object} Merged configuration
  */
 export function mergeConfig(userConfig = {}) {
-  const jhsearch = {
-    ...defaultJHSearchConfig,
-    ...userConfig.jhsearch,
-  };
+  const merged = { ...defaultMiradorConfig, ...userConfig };
 
-  return {
-    ...defaultMiradorConfig,
-    ...userConfig,
-    jhsearch,
-  };
+  for (const [key, defaults] of Object.entries(defaultMiradorConfig)) {
+    const value = userConfig[key];
+    if (isPlainObject(defaults) && isPlainObject(value)) {
+      merged[key] = { ...defaults, ...value };
+    }
+  }
+
+  merged.jhsearch = { ...defaultJHSearchConfig, ...userConfig.jhsearch };
+  return merged;
+}
+
+function isPlainObject(value) {
+  return value !== null && typeof value === 'object' && !Array.isArray(value);
 }

@@ -2,7 +2,7 @@
  * SortOrder component - dropdown for selecting result sort order.
  */
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Box from '@mui/material/Box';
 import FormControl from '@mui/material/FormControl';
@@ -12,36 +12,7 @@ import Typography from '@mui/material/Typography';
 
 import * as selectors from '../state/selectors';
 import { setSort } from '../state/actions';
-
-/**
- * Sort options available to the user.
- * - Browse mode: Title options only (manifests don't have page_num, relevance needs a query)
- * - Search mode: Relevance and Page Order only
- */
-const SORT_OPTIONS = [
-  { value: '_score:desc', label: 'Relevance', field: '_score', order: 'desc', modes: ['search'] },
-  {
-    value: 'label.keyword:asc',
-    label: 'Title (A-Z)',
-    field: 'label.keyword',
-    order: 'asc',
-    modes: ['browse'],
-  },
-  {
-    value: 'label.keyword:desc',
-    label: 'Title (Z-A)',
-    field: 'label.keyword',
-    order: 'desc',
-    modes: ['browse'],
-  },
-  {
-    value: 'page_num:asc',
-    label: 'Page Order',
-    field: 'page_num',
-    order: 'asc',
-    modes: ['search'],
-  },
-];
+import { sortsForMode } from '../utils/sorts';
 
 /**
  * SortOrder allows users to select how results are sorted.
@@ -56,8 +27,12 @@ export function SortOrder() {
   // Combine field and order into a single value for the select
   const currentValue = `${sortField}:${sortOrder}`;
 
-  // Filter options based on view mode
-  const availableOptions = SORT_OPTIONS.filter((option) => option.modes.includes(viewMode));
+  // The sorts of the view mode (utils/sorts.js): titles when browsing books;
+  // relevance and page order when searching
+  const availableOptions = useMemo(
+    () => sortsForMode(viewMode).map((sort) => ({ ...sort, value: `${sort.field}:${sort.order}` })),
+    [viewMode]
+  );
 
   // If current sort is not in available options, switch to default for this mode
   // This effect is a fallback; the reducer should set the default when mode changes
@@ -70,7 +45,7 @@ export function SortOrder() {
       const defaultOption = availableOptions[0];
       dispatch(setSort(defaultOption.field, defaultOption.order));
     }
-  }, [viewMode, currentValue, availableOptions, dispatch]);
+  }, [currentValue, availableOptions, dispatch]);
 
   const handleChange = (event) => {
     const [field, order] = event.target.value.split(':');

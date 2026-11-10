@@ -238,6 +238,31 @@ async function fetchSearch(opensearchUrl, query, options) {
 }
 
 /**
+ * The search endpoint of one index, given the endpoint jhsearch.json names.
+ *
+ * That endpoint ends in `/_search` and covers both indexes; the endpoint of an index
+ * puts its name in front, e.g. `/manifest/_search`. An endpoint that already names
+ * the index is used as it is.
+ *
+ * @param {string} opensearchUrl - Search endpoint ending in `/_search`
+ * @param {string} index - Index name, e.g. 'manifest'
+ * @returns {string} Search endpoint of the index
+ * @throws {OpensearchError} when the URL does not end in `/_search`: searching it
+ *   as given would silently search other indexes
+ */
+export function indexSearchUrl(opensearchUrl, index) {
+  const [, base, rest = ''] = String(opensearchUrl).match(/^([^?#]*)(.*)$/);
+  const match = base.match(/^(.*?)(\/[^/]+)?\/_search\/?$/);
+  if (!match) {
+    throw new OpensearchError(`Not an Opensearch _search URL: ${opensearchUrl}`, 0, null);
+  }
+  if (match[2] === `/${index}`) {
+    return opensearchUrl;
+  }
+  return `${base.replace(/\/_search\/?$/, `/${index}/_search`)}${rest}`;
+}
+
+/**
  * Execute a search on the manifest index.
  *
  * @param {string} opensearchUrl - Base Opensearch URL
@@ -246,13 +271,7 @@ async function fetchSearch(opensearchUrl, query, options) {
  * @returns {Promise<Object>} Search response
  */
 export async function searchManifests(opensearchUrl, query, options = {}) {
-  // Opensearch URL typically ends with /_search, but we may need to target a specific index
-  // If URL already contains /manifest, use it; otherwise construct it
-  const url = opensearchUrl.includes('/manifest')
-    ? opensearchUrl
-    : opensearchUrl.replace('/_search', '/manifest/_search');
-
-  return executeSearch(url, query, options);
+  return executeSearch(indexSearchUrl(opensearchUrl, 'manifest'), query, options);
 }
 
 /**

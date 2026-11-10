@@ -4,8 +4,7 @@
  * packaging scripts can read it too (scripts/site-collections.mjs).
  */
 
-const displayFont =
-  "'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif";
+import { displayFont } from '../../src/site/theme.js';
 
 export default {
   id: 'aor',

@@ -7,6 +7,8 @@
  * without a side is taken to be the recto: "9" -> "9r".
  */
 
+import { iiifLabel } from '../../../utils/iiif';
+
 const FOLIO = /^0*(\d+)\s*([rv])?[ab]?$/i;
 const PREFIX = /^(?:fols?\.?|ff?\.|folios?)\s*/i;
 
@@ -37,14 +39,7 @@ function firstOfRange(ref) {
  * @returns {string}
  */
 export function canvasLabel(canvas) {
-  const label = canvas?.label;
-  if (typeof label === 'string') return label;
-  if (label && typeof label === 'object') {
-    const values = label.en || label.none || Object.values(label)[0];
-    if (Array.isArray(values)) return values[0] ?? '';
-    if (typeof values === 'string') return values;
-  }
-  return '';
+  return iiifLabel(canvas?.label);
 }
 
 /**

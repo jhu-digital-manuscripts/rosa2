@@ -20,6 +20,7 @@ import SearchIcon from '@mui/icons-material/Search';
 
 import * as selectors from '../state/selectors';
 import { setAdvancedRows, setViewMode } from '../state/actions';
+import { emptyAdvancedRow } from '../state/reducers';
 import { rowHasQuery } from '../utils/queryBuilder';
 
 /**
@@ -240,14 +241,14 @@ export function AdvancedSearch() {
   };
 
   const handleAddRow = () => {
-    setLocalRows([...localRows, { field: '', value: '', operator: 'AND' }]);
+    setLocalRows([...localRows, emptyAdvancedRow()]);
   };
 
   const handleRemoveRow = (index) => {
     const newRows = localRows.filter((_, i) => i !== index);
     // Ensure at least one row remains
     if (newRows.length === 0) {
-      newRows.push({ field: '', value: '', operator: 'AND' });
+      newRows.push(emptyAdvancedRow());
     }
     setLocalRows(newRows);
   };

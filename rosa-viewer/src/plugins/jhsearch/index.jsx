@@ -5,7 +5,7 @@
 
 import React from 'react';
 import SearchIcon from '@mui/icons-material/Search';
-import { MiradorMenuButton } from 'mirador';
+import { MiradorMenuButton, setWorkspaceAddVisibility } from 'mirador';
 
 import { ConnectedJHSearchView } from './components/JHSearchView';
 import { jhsearchReducer } from './state/reducers';
@@ -17,9 +17,9 @@ export { keepWorkspaceAddVisible } from './workspace';
  * JHSearch button component for the workspace control panel.
  * Allows returning to the JHSearch view from anywhere.
  */
-function JHSearchButton({ setWorkspaceAddVisibility }) {
+function JHSearchButton({ setWorkspaceAddVisibility: showSearch }) {
   const handleClick = () => {
-    setWorkspaceAddVisibility(true);
+    showSearch(true);
   };
 
   return (
@@ -37,10 +37,7 @@ const jhsearchButtonPlugin = {
   mode: 'add',
   name: 'JHSearchButton',
   target: 'WorkspaceControlPanelButtons',
-  mapDispatchToProps: (dispatch) => ({
-    setWorkspaceAddVisibility: (visible) =>
-      dispatch({ type: 'mirador/SET_WORKSPACE_ADD_VISIBILITY', isWorkspaceAddVisible: visible }),
-  }),
+  mapDispatchToProps: { setWorkspaceAddVisibility },
 };
 
 /**

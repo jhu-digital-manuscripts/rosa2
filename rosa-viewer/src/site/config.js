@@ -21,26 +21,34 @@ export function stripTrailingSlash(url) {
 }
 
 /**
- * Default logo base URL: the public/logo directory copied next to the built page.
+ * URL of a directory under public/, which Vite copies next to the built page.
  * Vite's BASE_URL is '/' in dev and './' for site builds, so the result is
  * relative to wherever the site is hosted.
+ * @param {string} dir - Directory name, e.g. 'logo'
  * @param {string} [baseUrl] - Vite base URL, defaults to import.meta.env.BASE_URL
  * @returns {string}
  */
-export function defaultLogoBaseUrl(baseUrl = import.meta.env.BASE_URL) {
+function publicUrl(dir, baseUrl = import.meta.env.BASE_URL) {
   const base = baseUrl || '/';
-  return `${base.endsWith('/') ? base : `${base}/`}logo`;
+  return `${base.endsWith('/') ? base : `${base}/`}${dir}`;
 }
 
 /**
- * Default annotation stylesheet base URL: the public/styles directory copied next
- * to the built page, like defaultLogoBaseUrl.
+ * Default logo base URL: the public/logo directory.
  * @param {string} [baseUrl] - Vite base URL, defaults to import.meta.env.BASE_URL
  * @returns {string}
  */
-export function defaultStylesBaseUrl(baseUrl = import.meta.env.BASE_URL) {
-  const base = baseUrl || '/';
-  return `${base.endsWith('/') ? base : `${base}/`}styles`;
+export function defaultLogoBaseUrl(baseUrl) {
+  return publicUrl('logo', baseUrl);
+}
+
+/**
+ * Default annotation stylesheet base URL: the public/styles directory.
+ * @param {string} [baseUrl] - Vite base URL, defaults to import.meta.env.BASE_URL
+ * @returns {string}
+ */
+export function defaultStylesBaseUrl(baseUrl) {
+  return publicUrl('styles', baseUrl);
 }
 
 /**

@@ -14,70 +14,12 @@ import Chip from '@mui/material/Chip';
 import BookIcon from '@mui/icons-material/Book';
 
 import { HighlightedText } from './HighlightedText';
+import { Thumbnail } from './Thumbnail';
 import * as selectors from '../state/selectors';
 import { buildThumbnailUrl, buildLogoUrl } from '../utils/urlBuilder';
 
 /** Results list width (px) at or below which the thumbnails go below the details. */
 const STACK_BELOW = 480;
-
-/**
- * LazyThumbnail - thumbnail that only loads when visible.
- */
-function LazyThumbnail({ src, alt }) {
-  const [isVisible, setIsVisible] = React.useState(false);
-  const [hasError, setHasError] = React.useState(false);
-  const ref = React.useRef(null);
-
-  React.useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => observer.disconnect();
-  }, []);
-
-  return (
-    <Box
-      ref={ref}
-      sx={{
-        width: 60,
-        height: 80,
-        bgcolor: 'grey.200',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        borderRadius: 1,
-        overflow: 'hidden',
-      }}
-    >
-      {isVisible && !hasError ? (
-        <Box
-          component="img"
-          src={src}
-          alt={alt}
-          onError={() => setHasError(true)}
-          sx={{
-            maxWidth: '100%',
-            maxHeight: '100%',
-            objectFit: 'contain',
-          }}
-        />
-      ) : hasError ? (
-        <BookIcon color="disabled" />
-      ) : null}
-    </Box>
-  );
-}
 
 /**
  * ManifestResult displays a single manifest result.
@@ -183,7 +125,13 @@ export function ManifestResult({ result, onClick, onThumbnailClick }) {
               aria-label={`Open page ${thumb.pageNum + 1}`}
               sx={{ alignSelf: 'flex-start', borderRadius: 1 }}
             >
-              <LazyThumbnail src={thumb.url} alt={`Page ${thumb.pageNum + 1}`} />
+              <Thumbnail
+                src={thumb.url}
+                alt={`Page ${thumb.pageNum + 1}`}
+                width={60}
+                height={80}
+                FallbackIcon={BookIcon}
+              />
             </ButtonBase>
           ))}
         </Box>

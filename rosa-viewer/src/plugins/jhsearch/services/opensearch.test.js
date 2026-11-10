@@ -8,6 +8,7 @@ import {
   clearSearchCache,
   parseSearchResults,
   searchManifests,
+  indexSearchUrl,
 } from '../services/opensearch';
 import { SearchCache } from '../services/searchCache';
 import { mockSearchResponse, createFetchResponse } from '../../../test/mocks';
@@ -115,6 +116,35 @@ describe('opensearch service', () => {
       await executeSearch(opensearchUrl, {}, { cache: null });
 
       expect(global.fetch).toHaveBeenCalledTimes(2);
+    });
+  });
+
+  describe('indexSearchUrl', () => {
+    it('puts the index in front of _search', () => {
+      expect(indexSearchUrl('http://localhost:9200/_search', 'manifest')).toBe(
+        'http://localhost:9200/manifest/_search'
+      );
+      expect(indexSearchUrl('/_search', 'canvas')).toBe('/canvas/_search');
+    });
+
+    it('keeps an endpoint that already names the index', () => {
+      expect(indexSearchUrl('https://x.org/manifest/_search', 'manifest')).toBe(
+        'https://x.org/manifest/_search'
+      );
+    });
+
+    it('is not misled by the index name elsewhere in the URL', () => {
+      expect(indexSearchUrl('https://manifest.example.org/api/_search', 'manifest')).toBe(
+        'https://manifest.example.org/api/manifest/_search'
+      );
+    });
+
+    it('rejects a URL that is not a _search endpoint', async () => {
+      expect(() => indexSearchUrl('https://x.org/api', 'manifest')).toThrow('_search');
+      await expect(searchManifests('https://x.org/api', {})).rejects.toMatchObject({
+        name: 'OpensearchError',
+      });
+      expect(global.fetch).not.toHaveBeenCalled();
     });
   });
 

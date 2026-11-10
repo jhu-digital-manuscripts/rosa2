@@ -2,6 +2,8 @@
  * JHSearch service configuration loader.
  */
 
+import { iiifLabel } from '../../../utils/iiif';
+
 const DEFAULT_TIMEOUT = 15000;
 
 /**
@@ -104,27 +106,12 @@ export async function loadJHSearchConfig(serviceUrl) {
 export async function loadCollectionMetadata(collectionUrl) {
   const collection = await fetchJson(collectionUrl);
 
-  // Extract label (IIIF 3.0 format with language maps)
-  let label = '';
-  if (collection.label) {
-    if (typeof collection.label === 'string') {
-      label = collection.label;
-    } else if (typeof collection.label === 'object') {
-      // Language map - try 'en' first, then any available
-      const labelMap = collection.label;
-      const langKeys = Object.keys(labelMap);
-      const preferredLang = langKeys.includes('en') ? 'en' : langKeys[0];
-      const labelValue = labelMap[preferredLang];
-      label = Array.isArray(labelValue) ? labelValue[0] : labelValue;
-    }
-  }
-
   // Extract JHSearch service
   const jhsearchService = extractJHSearchService(collection);
 
   return {
     id: collection.id,
-    label,
+    label: iiifLabel(collection.label),
     service: jhsearchService,
     items: collection.items || [],
   };

@@ -14,6 +14,10 @@ import { mockReduxState } from '../../../test/mocks';
 
 vi.mock('mirador', () => ({
   addWindow: (config) => ({ type: 'mirador/ADD_WINDOW', config }),
+  setWorkspaceAddVisibility: (isWorkspaceAddVisible) => ({
+    type: 'mirador/SET_WORKSPACE_ADD_VISIBILITY',
+    isWorkspaceAddVisible,
+  }),
 }));
 
 const IIIF = 'http://localhost:3000/iiif';
