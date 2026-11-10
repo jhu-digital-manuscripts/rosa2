@@ -150,9 +150,11 @@ export function ManifestResult({ result, onClick, onThumbnailClick }) {
             </Box>
 
             {/* Metadata row */}
-            <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>
-              {num_pages} pages
-            </Typography>
+            {Number.isFinite(num_pages) && (
+              <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>
+                {num_pages} {num_pages === 1 ? 'page' : 'pages'}
+              </Typography>
+            )}
 
             {/* Highlighted matches */}
             {highlightEntries.map(([field, fragments]) => (
@@ -181,7 +183,7 @@ export function ManifestResult({ result, onClick, onThumbnailClick }) {
               aria-label={`Open page ${thumb.pageNum + 1}`}
               sx={{ alignSelf: 'flex-start', borderRadius: 1 }}
             >
-              <LazyThumbnail src={thumb.url} alt={`Page ${thumb.pageNum}`} />
+              <LazyThumbnail src={thumb.url} alt={`Page ${thumb.pageNum + 1}`} />
             </ButtonBase>
           ))}
         </Box>

@@ -279,6 +279,21 @@ describe('jhsearchReducer', () => {
       expect(state.pagination.total).toBe(1);
     });
 
+    it('should move a page past the end to the last page', () => {
+      let state = jhsearchReducer(undefined, actions.setPage(250));
+      state = jhsearchReducer(state, actions.searchSuccess({ items: [], total: 150 }));
+
+      // 150 results at 20 per page: pages 0 to 7
+      expect(state.pagination.page).toBe(7);
+    });
+
+    it('should keep the page when there are no results', () => {
+      let state = jhsearchReducer(undefined, actions.setPage(3));
+      state = jhsearchReducer(state, actions.searchSuccess({ items: [], total: 0 }));
+
+      expect(state.pagination.page).toBe(3);
+    });
+
     it('should handle SEARCH_FAILURE', () => {
       const action = actions.searchFailure('Search failed');
       const state = jhsearchReducer(undefined, action);
@@ -313,6 +328,38 @@ describe('jhsearchReducer', () => {
       expect(state.facets).toEqual({ date: [1350] });
       expect(state.sort).toEqual({ field: 'page_num', order: 'asc' });
       expect(state.pagination).toMatchObject({ page: 2, pageSize: 30 });
+    });
+
+    it('should drop restored rows for fields the loaded collection lacks', () => {
+      let state = jhsearchReducer(
+        undefined,
+        actions.loadServiceSuccess({
+          collectionId: 'rose',
+          fields: [{ name: 'description', label: 'Description' }],
+        })
+      );
+      state = jhsearchReducer(
+        state,
+        actions.applySearchState({
+          ...restored,
+          advancedRows: [{ field: 'nosuchfield', value: 'x', operator: 'AND' }],
+        })
+      );
+
+      expect(state.advancedSearch.rows).toEqual([{ field: '', value: '', operator: 'AND' }]);
+      expect(state.ui.viewMode).toBe('browse');
+      expect(state.sort).toEqual({ field: 'label.keyword', order: 'asc' });
+    });
+
+    it('should keep restored rows until the collection service has loaded', () => {
+      let state = jhsearchReducer(
+        undefined,
+        actions.loadServiceSuccess({ collectionId: 'pizan', fields: [{ name: 'title' }] })
+      );
+      state = jhsearchReducer(state, actions.applySearchState(restored));
+
+      expect(state.advancedSearch.rows).toEqual(restored.advancedRows);
+      expect(state.ui.viewMode).toBe('search');
     });
 
     it('should reset the queries and facets when restoring browsing', () => {

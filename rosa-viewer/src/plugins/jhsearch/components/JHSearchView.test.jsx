@@ -4,7 +4,7 @@
 
 import React from 'react';
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { render, act, waitFor } from '@testing-library/react';
+import { render, act, waitFor, screen, fireEvent } from '@testing-library/react';
 import { Provider } from 'react-redux';
 
 import { JHSearchView } from './JHSearchView';
@@ -109,6 +109,24 @@ describe('JHSearchView', () => {
     expect(runSearch).toHaveBeenCalledWith(
       expect.objectContaining({ collectionId: 'rose', fields: serviceFor('rose').fields })
     );
+  });
+
+  it('loads the service again on Retry after a failure, without reloading the page', async () => {
+    initializeJHSearch.mockRejectedValueOnce(new Error('jhsearch.json is unavailable'));
+    const store = createStore();
+    render(
+      <Provider store={store}>
+        <JHSearchView jhsearchConfig={config} />
+      </Provider>
+    );
+    await screen.findByText('jhsearch.json is unavailable');
+
+    fireEvent.click(screen.getByRole('button', { name: 'Retry' }));
+
+    await waitFor(() => expect(runSearch).toHaveBeenCalled());
+    expect(initializeJHSearch).toHaveBeenCalledTimes(2);
+    expect(selectors.getServiceCollectionId(store.getState())).toBe('dlmm');
+    expect(screen.getByText('results')).toBeInTheDocument();
   });
 
   it('does not reload the service when the same collection is selected again', async () => {

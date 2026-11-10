@@ -207,7 +207,16 @@ async function fetchSearch(opensearchUrl, query, options) {
     }
 
     if (response.ok) {
-      return await response.json();
+      try {
+        return await response.json();
+      } catch (error) {
+        // e.g. an HTML error page served with status 200 by something in between
+        throw new OpensearchError(
+          `Opensearch response is not JSON: ${error.message}`,
+          response.status,
+          null
+        );
+      }
     }
 
     const errorText = await response.text();

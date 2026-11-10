@@ -22,6 +22,10 @@ import {
  * loaded, searches fall back to those too, and facets then miss the books of
  * matching pages.
  *
+ * A search with nothing to search for (text of only quotes, or advanced rows that all
+ * name fields the collection lacks) is a browse: sent to both indexes, a query
+ * without a search clause would list every page of the collection beside its books.
+ *
  * @param {Object} params
  * @param {string} params.opensearchUrl - Base Opensearch URL
  * @param {string} params.collectionId - Selected collection
@@ -60,17 +64,23 @@ export async function runSearch({
   defaultFields,
   enableFacets = true,
 }) {
-  if (viewMode === 'browse') {
+  const browse = async () => {
+    // Books have no relevance or page order; those sorts fall back to the title
+    const byTitle = sortField === 'label.keyword';
     const query = buildBrowseQuery({
       collectionId,
       facets,
       page,
       pageSize,
       categories,
-      sortField: sortField === '_score' ? 'label.keyword' : sortField,
-      sortOrder: sortField === '_score' ? 'asc' : sortOrder,
+      sortField: 'label.keyword',
+      sortOrder: byTitle ? sortOrder : 'asc',
     });
     return parseSearchResults(await searchManifests(opensearchUrl, query));
+  };
+
+  if (viewMode === 'browse') {
+    return browse();
   }
 
   let books = null;
@@ -99,6 +109,9 @@ export async function runSearch({
     searchMode === 'simple'
       ? buildSimpleSearchQuery({ ...common, query: simpleQuery, defaultFields })
       : buildAdvancedSearchQuery({ ...common, rows: advancedRows });
+  if (!query) {
+    return browse();
+  }
 
   // Search both indexes
   const response = await searchAll(opensearchUrl, query);

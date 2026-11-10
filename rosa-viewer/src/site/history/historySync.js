@@ -212,10 +212,12 @@ export function routeContextFor(jhsearch = {}) {
  * and view, or open a window at that page; then hide the search view. Used when a
  * URL is restored and when a link to a page is followed in place.
  *
- * Moving a window that is already open counts as a page turn for the history (the
- * URL is replaced, see shouldReplace). A followed link should be a place the reader
- * can go back from, so when `win` is given and a window is reused, the current URL
- * is pushed first and the page turn then replaces that copy.
+ * Moving a window that is already open, or switching to one, replaces the URL (see
+ * shouldReplace). A followed link should be a place the reader can go back from, so
+ * when `win` is given and that is what will happen, the current URL is pushed first
+ * and the change then replaces that copy. Nothing is pushed when the history adds an
+ * entry itself (a new window, a new view, leaving the search view) or when the link
+ * leads to what is already showing.
  *
  * @param {Object} store - Redux store of the Mirador viewer
  * @param {Object} route - A book route from parseLocation
@@ -224,7 +226,8 @@ export function routeContextFor(jhsearch = {}) {
  * @param {Function} [options.fetchManifest] - (manifestId) => Promise<json|null>
  * @param {Function} [options.selectViewType] - Mirador's getWindowViewType; for tests
  * @param {Function} [options.isCurrent] - () => false to stop after the manifest fetch
- * @param {Window} [options.win] - When given, a reused window gets a new history entry
+ * @param {Window} [options.win] - When given, a change that would replace the URL gets
+ *   a history entry of its own
  */
 export async function openBookRoute(
   store,
@@ -262,14 +265,21 @@ export async function openBookRoute(
     needCanvas && manifest ? canvasIdForName(manifest, route.canvas, route.bookId) : null;
 
   if (existingId && state.windows?.[existingId]) {
-    if (win) {
+    const workspace = state.workspace || {};
+    const viewChanges =
+      Boolean(route.view) && selectViewType(state, { windowId: existingId }) !== route.view;
+    const canvasChanges = Boolean(canvasId) && canvasId !== state.windows[existingId].canvasId;
+    const switches = workspace.focusedWindowId !== existingId;
+    const replacesUrl =
+      !workspace.isWorkspaceAddVisible && (switches || (canvasChanges && !viewChanges));
+    if (win && replacesUrl) {
       win.history.pushState(null, '', win.location.href);
     }
     store.dispatch(focusWindow(existingId));
-    if (route.view && selectViewType(state, { windowId: existingId }) !== route.view) {
+    if (viewChanges) {
       store.dispatch(setWindowViewType(existingId, route.view));
     }
-    if (canvasId && canvasId !== state.windows[existingId].canvasId) {
+    if (canvasChanges) {
       store.dispatch(setCanvas(existingId, canvasId));
     }
   } else {

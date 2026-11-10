@@ -352,7 +352,8 @@ export function buildBrowseQuery({
  *   work facets out locally (see utils/bookFacets.js)
  * @param {string} options.sortField - Sort field
  * @param {string} options.sortOrder - Sort order
- * @returns {Object} Opensearch query body
+ * @returns {Object|null} Opensearch query body, or null when the text has nothing to
+ *   search for (it is blank or only quotes); the caller browses instead
  */
 export function buildSimpleSearchQuery({
   query,
@@ -368,6 +369,11 @@ export function buildSimpleSearchQuery({
   sortOrder = 'desc',
 }) {
   const searchFields = expandFieldsWithSubfields(defaultFields, fieldDefinitions);
+  const textClause = buildTextClause(query, searchFields, { operator: 'OR' });
+  if (!textClause) {
+    return null;
+  }
+
   const filters = [
     { terms: { collection_id: [collectionId] } },
     ...buildFacetFilters(facets, categories, books),
@@ -376,7 +382,7 @@ export function buildSimpleSearchQuery({
   const body = {
     query: {
       bool: {
-        must: [buildTextClause(query, searchFields, { operator: 'OR' })].filter(Boolean),
+        must: [textClause],
         filter: filters,
       },
     },
@@ -416,7 +422,8 @@ export function buildSimpleSearchQuery({
  *   work facets out locally (see utils/bookFacets.js)
  * @param {string} options.sortField - Sort field
  * @param {string} options.sortOrder - Sort order
- * @returns {Object} Opensearch query body
+ * @returns {Object|null} Opensearch query body, or null when no row has anything to
+ *   search for in a field the collection has; the caller browses instead
  */
 export function buildAdvancedSearchQuery({
   rows,
@@ -474,8 +481,7 @@ export function buildAdvancedSearchQuery({
     .filter(Boolean);
 
   if (clauses.length === 0) {
-    // No valid search terms, return browse query
-    return buildBrowseQuery({ collectionId, facets, page, pageSize, categories, books });
+    return null;
   }
 
   // Combine clauses with AND binding tighter than OR: an OR row starts a new group,

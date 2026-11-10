@@ -44,14 +44,18 @@ const pageResult = {
   },
 };
 
-function renderResults(configOverrides = {}, total = 2) {
+function renderResults(configOverrides = {}, total = 2, resultOverrides = {}) {
   const state = {
     ...mockReduxState,
     jhsearch: {
       ...mockReduxState.jhsearch,
       config: { ...mockReduxState.jhsearch.config, ...configOverrides },
       pagination: { ...mockReduxState.jhsearch.pagination, total },
-      results: { ...mockReduxState.jhsearch.results, items: [bookResult, pageResult] },
+      results: {
+        ...mockReduxState.jhsearch.results,
+        items: [bookResult, pageResult],
+        ...resultOverrides,
+      },
     },
   };
   const store = { getState: () => state, dispatch: vi.fn(), subscribe: () => () => {} };
@@ -69,6 +73,21 @@ function addWindowConfigs(store) {
     .filter((action) => action.type === 'mirador/ADD_WINDOW')
     .map((action) => action.config);
 }
+
+describe('SearchResults loading', () => {
+  it('shows progress over results that a running search will replace', () => {
+    renderResults({}, 2, { loading: true });
+
+    expect(screen.getByRole('progressbar', { name: 'Searching' })).toBeInTheDocument();
+    expect(screen.getByText('MS. Douce 195: 10r')).toBeInTheDocument();
+  });
+
+  it('shows no progress once the results have arrived', () => {
+    renderResults();
+
+    expect(screen.queryByRole('progressbar')).toBeNull();
+  });
+});
 
 describe('SearchResults clicks', () => {
   it.each(['single', 'book', 'gallery'])(
@@ -203,7 +222,7 @@ describe('SearchResults scroll position', () => {
   /**
    * Render the results inside a stand-in for JHSearchView, the element that
    * scrolls in the narrow layout. Returns the view, the results area and the
-   * results list (the area's second child, after the header).
+   * results list (the area's third child, after the header and the progress bar).
    */
   function renderInView(store) {
     render(
@@ -215,7 +234,7 @@ describe('SearchResults scroll position', () => {
     );
     const view = screen.getByTestId('view');
     const area = view.firstElementChild;
-    return { view, area, list: area.children[1] };
+    return { view, area, list: area.children[2] };
   }
 
   /** Place the view and the top of the results area, as layout would. */

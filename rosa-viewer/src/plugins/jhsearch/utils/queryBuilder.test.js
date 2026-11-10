@@ -379,14 +379,22 @@ describe('queryBuilder', () => {
         });
       });
 
-      it('skips a row whose text is only quotes', () => {
+      it('builds nothing for a row whose text is only quotes', () => {
         const body = buildAdvancedSearchQuery({
           rows: [{ field: 'people', value: '""', operator: 'AND' }],
           fieldDefinitions: fields,
           collectionId: 'aor',
         });
-        expect(body.query.bool.must).toBeUndefined();
-        expect(body.query.bool.filter).toEqual([{ terms: { collection_id: ['aor'] } }]);
+        expect(body).toBeNull();
+      });
+
+      it('builds nothing when every row names a field the collection lacks', () => {
+        const body = buildAdvancedSearchQuery({
+          rows: [{ field: 'nosuchfield', value: 'x', operator: 'AND' }],
+          fieldDefinitions: fields,
+          collectionId: 'aor',
+        });
+        expect(body).toBeNull();
       });
     });
 
@@ -620,7 +628,7 @@ describe('queryBuilder', () => {
       expect(query.aggs).toEqual(buildMatchedBookAggregations());
     });
 
-    it('carries the books into an advanced search without rows', () => {
+    it('builds nothing for an advanced search without rows', () => {
       const query = buildAdvancedSearchQuery({
         rows: [],
         fieldDefinitions,
@@ -630,7 +638,18 @@ describe('queryBuilder', () => {
         books,
       });
 
-      expect(query.aggs).toEqual(buildMatchedBookAggregations());
+      expect(query).toBeNull();
+    });
+
+    it('builds nothing for a simple search of only quotes', () => {
+      const query = buildSimpleSearchQuery({
+        query: ' "" ',
+        defaultFields: ['description'],
+        fieldDefinitions,
+        collectionId: 'rose',
+      });
+
+      expect(query).toBeNull();
     });
   });
 
