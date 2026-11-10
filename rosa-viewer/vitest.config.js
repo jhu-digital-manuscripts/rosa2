@@ -5,6 +5,9 @@ export default defineConfig({
   plugins: [react()],
   test: {
     environment: 'happy-dom',
+    // One DOM environment per worker instead of per test file, with the files
+    // still isolated from each other; about a third faster here.
+    pool: 'vmThreads',
     // Tests add stylesheet links but never load them; without this happy-dom
     // logs a NotSupportedError for each one.
     environmentOptions: {
