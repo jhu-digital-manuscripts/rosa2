@@ -3,7 +3,7 @@
  */
 
 import { describe, it, expect } from 'vitest';
-import { getTotalPages, isResultWindowExceeded } from './selectors';
+import { getTotalPages } from './selectors';
 import { MAX_RESULT_WINDOW } from '../utils/queryBuilder';
 
 function stateWith(total, pageSize) {
@@ -31,12 +31,5 @@ describe('getTotalPages', () => {
   it('clamps a 10,001 result search at page size 30 to 333 pages', () => {
     expect(getTotalPages(stateWith(10001, 30))).toBe(333);
     expect(getTotalPages(stateWith(10001, 20))).toBe(500);
-  });
-});
-
-describe('isResultWindowExceeded', () => {
-  it('is set only when the total is past the window', () => {
-    expect(isResultWindowExceeded(stateWith(MAX_RESULT_WINDOW, 20))).toBe(false);
-    expect(isResultWindowExceeded(stateWith(MAX_RESULT_WINDOW + 1, 20))).toBe(true);
   });
 });

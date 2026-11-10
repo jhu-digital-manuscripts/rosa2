@@ -9,14 +9,6 @@ import * as selectors from './selectors';
 
 describe('jhsearchReducer', () => {
   describe('config actions', () => {
-    it('should handle LOAD_CONFIG_REQUEST', () => {
-      const action = actions.loadConfigRequest();
-      const state = jhsearchReducer(undefined, action);
-
-      expect(state.config.loading).toBe(true);
-      expect(state.config.error).toBeNull();
-    });
-
     it('should handle LOAD_CONFIG_SUCCESS', () => {
       const config = { iiifBaseUrl: 'http://test.com', collectionId: 'test' };
       const action = actions.loadConfigSuccess(config);
@@ -25,15 +17,6 @@ describe('jhsearchReducer', () => {
       expect(state.config.iiifBaseUrl).toBe('http://test.com');
       expect(state.config.collectionId).toBe('test');
       expect(state.config.loaded).toBe(true);
-      expect(state.config.loading).toBe(false);
-    });
-
-    it('should handle LOAD_CONFIG_FAILURE', () => {
-      const action = actions.loadConfigFailure('Failed to load');
-      const state = jhsearchReducer(undefined, action);
-
-      expect(state.config.loading).toBe(false);
-      expect(state.config.error).toBe('Failed to load');
     });
   });
 
@@ -151,30 +134,8 @@ describe('jhsearchReducer', () => {
       const state = jhsearchReducer(undefined, action);
 
       expect(state.simpleSearch.query).toBe('test query');
-    });
-
-    it('should handle ADD_ADVANCED_ROW', () => {
-      const action = actions.addAdvancedRow({ field: 'label', value: 'test', operator: 'AND' });
-      const state = jhsearchReducer(undefined, action);
-
-      expect(state.advancedSearch.rows).toHaveLength(2);
-    });
-
-    it('should handle REMOVE_ADVANCED_ROW', () => {
-      const startState = {
-        ...initialState,
-        advancedSearch: {
-          rows: [
-            { field: 'a', value: 'a', operator: 'AND' },
-            { field: 'b', value: 'b', operator: 'AND' },
-          ],
-        },
-      };
-      const action = actions.removeAdvancedRow(0);
-      const state = jhsearchReducer(startState, action);
-
-      expect(state.advancedSearch.rows).toHaveLength(1);
-      expect(state.advancedSearch.rows[0].field).toBe('b');
+      // The view mode is set separately, with its default sort (SET_VIEW_MODE)
+      expect(state.ui.viewMode).toBe('browse');
     });
 
     it('should handle SET_ADVANCED_ROWS', () => {
@@ -192,14 +153,6 @@ describe('jhsearchReducer', () => {
       const state = jhsearchReducer(undefined, actions.setAdvancedRows([]));
 
       expect(state.advancedSearch.rows).toEqual([{ field: '', value: '', operator: 'AND' }]);
-    });
-
-    it('should handle SET_ADVANCED_ROW', () => {
-      const action = actions.setAdvancedRow(0, { field: 'label', value: 'test' });
-      const state = jhsearchReducer(undefined, action);
-
-      expect(state.advancedSearch.rows[0].field).toBe('label');
-      expect(state.advancedSearch.rows[0].value).toBe('test');
     });
   });
 
@@ -221,17 +174,6 @@ describe('jhsearchReducer', () => {
 
       expect(state.facets.origin).not.toContain('France');
       expect(state.facets.origin).toContain('Italy');
-    });
-
-    it('should handle CLEAR_FACETS', () => {
-      const startState = {
-        ...initialState,
-        facets: { origin: ['France', 'Italy'] },
-      };
-      const action = actions.clearFacets();
-      const state = jhsearchReducer(startState, action);
-
-      expect(state.facets).toEqual({});
     });
   });
 

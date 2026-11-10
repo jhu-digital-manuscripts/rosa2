@@ -64,7 +64,6 @@ describe('parseAnnotation', () => {
       classes: ['rosa-anno', 'aor-mark', 'aor-place-intext'],
       html: '<p>x</p>',
       language: 'la',
-      stylesheet: 'https://x.org/styles/aor.css',
     });
   });
 

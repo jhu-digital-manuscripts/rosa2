@@ -20,7 +20,7 @@ export function SimpleSearch() {
   const dispatch = useDispatch();
   const currentQuery = useSelector(selectors.getSimpleQuery);
 
-  // Local state for input value (debounced submit)
+  // Local state for the input; the query is only committed on submit
   const [inputValue, setInputValue] = useState(currentQuery);
 
   // Sync the input when the query changes elsewhere (e.g. browser back/forward)
@@ -38,13 +38,10 @@ export function SimpleSearch() {
         event.preventDefault();
       }
 
-      if (inputValue.trim()) {
-        dispatch(setViewMode('search'));
-      } else {
-        dispatch(setViewMode('browse'));
-      }
-
-      dispatch(setSimpleQuery(inputValue.trim()));
+      const query = inputValue.trim();
+      dispatch(setSimpleQuery(query));
+      // Also sets the default sort for the mode
+      dispatch(setViewMode(query ? 'search' : 'browse'));
     },
     [dispatch, inputValue]
   );
@@ -55,12 +52,6 @@ export function SimpleSearch() {
     dispatch(setViewMode('browse'));
   };
 
-  const handleKeyDown = (event) => {
-    if (event.key === 'Enter') {
-      handleSubmit(event);
-    }
-  };
-
   return (
     <form onSubmit={handleSubmit}>
       <TextField
@@ -69,7 +60,6 @@ export function SimpleSearch() {
         placeholder='Search collections ("quotes" for a phrase)...'
         value={inputValue}
         onChange={handleInputChange}
-        onKeyDown={handleKeyDown}
         aria-label="Search"
         slotProps={{
           input: {

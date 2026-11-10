@@ -21,8 +21,8 @@ function splitClasses(styleClass) {
 
 /**
  * @param {Object} raw - Annotation JSON
- * @returns {{id: string, classes: string[], html: string, language: (string|undefined),
- *   stylesheet: (string|undefined)}|null} null when the annotation has no textual content
+ * @returns {{id: string, classes: string[], html: string, language: (string|undefined)}|null}
+ *   null when the annotation has no textual content
  */
 export function parseAnnotation(raw) {
   if (!raw || typeof raw !== 'object') return null;
@@ -50,11 +50,5 @@ export function parseAnnotation(raw) {
   }
 
   if (parts.length === 0) return null;
-  const stylesheet =
-    typeof raw.stylesheet === 'string'
-      ? raw.stylesheet
-      : typeof raw.stylesheet?.id === 'string'
-        ? raw.stylesheet.id
-        : undefined;
-  return { id: raw.id, classes, html: parts.join(''), language, stylesheet };
+  return { id: raw.id, classes, html: parts.join(''), language };
 }

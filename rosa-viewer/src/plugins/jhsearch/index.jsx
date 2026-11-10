@@ -11,37 +11,7 @@ import { ConnectedJHSearchView } from './components/JHSearchView';
 import { jhsearchReducer } from './state/reducers';
 import { workspaceAddButtonPlugin } from './workspace';
 
-// Re-export components for external use
-export { JHSearchView, ConnectedJHSearchView } from './components/JHSearchView';
-export { JHSearchSidebar } from './components/JHSearchSidebar';
-export { SearchResults } from './components/SearchResults';
-export { ManifestResult } from './components/ManifestResult';
-export { CanvasResult } from './components/CanvasResult';
-export { CollectionSelector } from './components/CollectionSelector';
-export { CategoryFacets } from './components/CategoryFacets';
-export { SimpleSearch } from './components/SimpleSearch';
-export { AdvancedSearch } from './components/AdvancedSearch';
-export { SortOrder } from './components/SortOrder';
-export { Pagination } from './components/Pagination';
-export { ErrorDisplay, InitializationError, SearchError } from './components/ErrorDisplay';
-export { keepWorkspaceAddVisible, isWorkspaceEmpty, WorkspaceAddButtonWrapper } from './workspace';
-
-// Re-export services
-export * from './services/opensearch';
-export * from './services/jhsearch';
-export * from './services/thumbnail';
-
-// Re-export state
-export * from './state/actions';
-export * from './state/reducers';
-export * from './state/selectors';
-
-// Re-export utilities
-export * from './utils/queryBuilder';
-export * from './utils/urlBuilder';
-
-// Re-export hooks
-export * from './hooks';
+export { keepWorkspaceAddVisible } from './workspace';
 
 /**
  * JHSearch button component for the workspace control panel.

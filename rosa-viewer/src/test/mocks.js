@@ -186,8 +186,7 @@ export const mockReduxState = {
   jhsearch: {
     config: {
       ...mockConfig,
-      loading: false,
-      error: null,
+      loaded: true,
     },
     service: {
       fields: mockJHSearchService.fields,
@@ -202,12 +201,9 @@ export const mockReduxState = {
         {
           id: 'rose',
           label: 'Roman de la Rose Digital Library',
-          logo: '/logo/rose.png',
-          childIds: [],
+          logo: 'rose.jpg',
         },
       ],
-      loading: false,
-      error: null,
     },
     ui: {
       viewMode: 'browse',

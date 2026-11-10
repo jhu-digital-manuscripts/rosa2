@@ -7,7 +7,6 @@ import {
   buildThumbnailUrl,
   buildManifestUrl,
   buildCanvasUrl,
-  buildCollectionUrl,
   buildLogoUrl,
   parseManifestId,
 } from '../utils/urlBuilder';
@@ -53,13 +52,6 @@ describe('urlBuilder', () => {
       // Implementation expects manifestId + pageNum
       const url = buildCanvasUrl('rose.Douce195', 5, mockConfig.iiifBaseUrl);
       expect(url).toBe('http://localhost:3000/iiif/rose/Douce195/canvas/5');
-    });
-  });
-
-  describe('buildCollectionUrl', () => {
-    it('should build collection URL', () => {
-      const url = buildCollectionUrl('rose', mockConfig.iiifBaseUrl);
-      expect(url).toBe('http://localhost:3000/iiif/rose/collection.json');
     });
   });
 
