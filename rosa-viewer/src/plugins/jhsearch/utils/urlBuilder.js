@@ -27,6 +27,19 @@ export function buildThumbnailUrl(iiifImageId, config) {
 }
 
 /**
+ * The path of a book under the IIIF base URL, `{collection}/{book}`, or null (with a
+ * warning) when the manifest ID is not of the form 'collection.book'.
+ */
+function bookPath(manifestId) {
+  const parsed = parseManifestId(manifestId);
+  if (!parsed) {
+    console.warn(`Invalid manifest ID format: ${manifestId}`);
+    return null;
+  }
+  return `${parsed.collectionId}/${parsed.bookId}`;
+}
+
+/**
  * Build a IIIF manifest URL from a manifest ID.
  *
  * @param {string} manifestId - Manifest ID in format 'collection.book' (e.g., 'rose.Douce195')
@@ -38,16 +51,8 @@ export function buildManifestUrl(manifestId, iiifBaseUrl) {
     return null;
   }
 
-  const dotIndex = manifestId.indexOf('.');
-  if (dotIndex === -1) {
-    console.warn(`Invalid manifest ID format: ${manifestId}`);
-    return null;
-  }
-
-  const collectionId = manifestId.substring(0, dotIndex);
-  const bookId = manifestId.substring(dotIndex + 1);
-
-  return `${iiifBaseUrl}/${collectionId}/${bookId}/manifest.json`;
+  const book = bookPath(manifestId);
+  return book ? `${iiifBaseUrl}/${book}/manifest.json` : null;
 }
 
 /**
@@ -63,16 +68,8 @@ export function buildCanvasUrl(manifestId, pageNum, iiifBaseUrl) {
     return null;
   }
 
-  const dotIndex = manifestId.indexOf('.');
-  if (dotIndex === -1) {
-    console.warn(`Invalid manifest ID format: ${manifestId}`);
-    return null;
-  }
-
-  const collectionId = manifestId.substring(0, dotIndex);
-  const bookId = manifestId.substring(dotIndex + 1);
-
-  return `${iiifBaseUrl}/${collectionId}/${bookId}/canvas/${pageNum}`;
+  const book = bookPath(manifestId);
+  return book ? `${iiifBaseUrl}/${book}/canvas/${pageNum}` : null;
 }
 
 /**

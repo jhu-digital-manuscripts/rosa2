@@ -11,7 +11,7 @@ import LinearProgress from '@mui/material/LinearProgress';
 import Alert from '@mui/material/Alert';
 import Button from '@mui/material/Button';
 import RefreshIcon from '@mui/icons-material/Refresh';
-import { addWindow } from 'mirador';
+import { addWindow, setWorkspaceAddVisibility } from 'mirador';
 
 import { ManifestResult } from './ManifestResult';
 import { CanvasResult } from './CanvasResult';
@@ -142,10 +142,7 @@ export function SearchResults({ onRetry }) {
   const openWindow = ({ manifestId, canvasId, view }) => {
     dispatch(addWindow({ manifestId, view, ...(canvasId ? { canvasId } : {}) }));
 
-    dispatch({
-      type: 'mirador/SET_WORKSPACE_ADD_VISIBILITY',
-      isWorkspaceAddVisible: false,
-    });
+    dispatch(setWorkspaceAddVisibility(false));
   };
 
   const handleManifestClick = (result) => {

@@ -4,6 +4,11 @@
 
 import * as actions from './actions';
 import { rowHasQuery, MAX_RESULT_WINDOW } from '../utils/queryBuilder';
+import { resolveSort } from '../utils/sorts';
+import { defaultJHSearchConfig } from '../../../config';
+
+/** A blank advanced search row; the form always has at least one. */
+export const emptyAdvancedRow = () => ({ field: '', value: '', operator: 'AND' });
 
 // ============================================================================
 // Initial State
@@ -17,13 +22,7 @@ export const initialState = {
     collectionId: '',
     childCollectionIds: [],
     imageBaseUrl: '',
-    thumbnailTemplate: '{imageBaseUrl}/{iiifImageId}/full/{width},/0/default.jpg',
-    thumbnailWidth: 80,
-    logoBaseUrl: '/logo',
-    enableFacets: true,
-    bookClickView: 'book',
-    pageSize: 20,
-    pageSizeOptions: [20, 30, 40, 50],
+    ...defaultJHSearchConfig,
   },
 
   // JHSearch service configuration (from the selected collection's jhsearch.json)
@@ -65,19 +64,16 @@ export const initialState = {
 
   // Advanced search
   advancedSearch: {
-    rows: [{ field: '', value: '', operator: 'AND' }],
+    rows: [emptyAdvancedRow()],
   },
 
   // Sort order
-  sort: {
-    field: 'label.keyword',
-    order: 'asc',
-  },
+  sort: resolveSort('browse'),
 
   // Pagination
   pagination: {
     page: 0,
-    pageSize: 20,
+    pageSize: defaultJHSearchConfig.pageSize,
     // Set once the page size is chosen by the user or restored from the URL, so
     // the configured default no longer overrides it
     pageSizeSelected: false,
@@ -121,7 +117,7 @@ function dropUnknownFieldRows(state) {
   const next = {
     ...state,
     advancedSearch: {
-      rows: keptRows.length > 0 ? keptRows : [{ field: '', value: '', operator: 'AND' }],
+      rows: keptRows.length > 0 ? keptRows : [emptyAdvancedRow()],
     },
   };
 
@@ -222,13 +218,8 @@ export function jhsearchReducer(state = initialState, action) {
           ...state.ui,
           viewMode: action.payload,
         },
-        // Set default sort for the new mode:
-        // - browse: Title (A-Z)
-        // - search: Relevance
-        sort:
-          action.payload === 'browse'
-            ? { field: 'label.keyword', order: 'asc' }
-            : { field: '_score', order: 'desc' },
+        // Each mode has its own sorts; start from the new mode's default
+        sort: resolveSort(action.payload),
         pagination: {
           ...state.pagination,
           page: 0,
@@ -259,10 +250,7 @@ export function jhsearchReducer(state = initialState, action) {
           query: p.simpleQuery || '',
         },
         advancedSearch: {
-          rows:
-            p.advancedRows && p.advancedRows.length > 0
-              ? p.advancedRows
-              : [{ field: '', value: '', operator: 'AND' }],
+          rows: p.advancedRows && p.advancedRows.length > 0 ? p.advancedRows : [emptyAdvancedRow()],
         },
         sort: p.sort || state.sort,
         pagination: {
@@ -340,7 +328,7 @@ export function jhsearchReducer(state = initialState, action) {
           rows:
             action.payload && action.payload.length > 0
               ? action.payload.map((row) => ({ ...row }))
-              : [{ field: '', value: '', operator: 'AND' }],
+              : [emptyAdvancedRow()],
         },
         pagination: {
           ...state.pagination,
@@ -355,7 +343,7 @@ export function jhsearchReducer(state = initialState, action) {
           query: '',
         },
         advancedSearch: {
-          rows: [{ field: '', value: '', operator: 'AND' }],
+          rows: [emptyAdvancedRow()],
         },
         facets: {},
         ui: {

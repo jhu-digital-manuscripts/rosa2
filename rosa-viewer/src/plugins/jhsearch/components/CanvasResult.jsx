@@ -12,68 +12,9 @@ import Chip from '@mui/material/Chip';
 import ImageIcon from '@mui/icons-material/Image';
 
 import { HighlightedText } from './HighlightedText';
+import { Thumbnail } from './Thumbnail';
 import * as selectors from '../state/selectors';
 import { buildThumbnailUrl, parseManifestId } from '../utils/urlBuilder';
-
-/**
- * LazyThumbnail - thumbnail that only loads when visible.
- */
-function LazyThumbnail({ src, alt }) {
-  const [isVisible, setIsVisible] = React.useState(false);
-  const [hasError, setHasError] = React.useState(false);
-  const ref = React.useRef(null);
-
-  React.useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => observer.disconnect();
-  }, []);
-
-  return (
-    <Box
-      ref={ref}
-      sx={{
-        width: 80,
-        height: 100,
-        bgcolor: 'grey.200',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        borderRadius: 1,
-        overflow: 'hidden',
-        flexShrink: 0,
-      }}
-    >
-      {isVisible && !hasError ? (
-        <Box
-          component="img"
-          src={src}
-          alt={alt}
-          onError={() => setHasError(true)}
-          sx={{
-            maxWidth: '100%',
-            maxHeight: '100%',
-            objectFit: 'contain',
-          }}
-        />
-      ) : hasError ? (
-        <ImageIcon color="disabled" />
-      ) : null}
-    </Box>
-  );
-}
 
 /**
  * CanvasResult displays a single canvas/page result.
@@ -103,7 +44,15 @@ export function CanvasResult({ result, onClick }) {
       <CardActionArea onClick={() => onClick(result)} sx={{ p: 1.5 }}>
         <Box sx={{ display: 'flex', gap: 2 }}>
           {/* Thumbnail */}
-          {thumbnailUrl && <LazyThumbnail src={thumbnailUrl} alt={`Page ${label}`} />}
+          {thumbnailUrl && (
+            <Thumbnail
+              src={thumbnailUrl}
+              alt={`Page ${label}`}
+              width={80}
+              height={100}
+              FallbackIcon={ImageIcon}
+            />
+          )}
 
           {/* Content */}
           <Box sx={{ flex: 1, minWidth: 0 }}>

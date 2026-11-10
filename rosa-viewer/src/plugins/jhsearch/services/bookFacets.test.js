@@ -53,6 +53,32 @@ describe('loadBookFacets', () => {
     expect(searchManifests).toHaveBeenCalledTimes(1);
   });
 
+  it('loads once for collections with the same categories, whatever their order', async () => {
+    searchManifests.mockResolvedValue(page(['rose.A'], 1));
+    const both = [{ name: 'has_transcription' }, { name: 'origin' }];
+
+    await loadBookFacets(URL, 'dlmm', both);
+    await loadBookFacets(URL, 'dlmm', [...both].reverse());
+    await loadBookFacets(URL, 'dlmm', categories);
+
+    expect(searchManifests).toHaveBeenCalledTimes(1);
+  });
+
+  it('loads again with the fields of both when a new category appears', async () => {
+    searchManifests.mockResolvedValue(page(['rose.A'], 1));
+
+    await loadBookFacets(URL, 'dlmm', categories);
+    await loadBookFacets(URL, 'dlmm', [{ name: 'origin' }]);
+
+    expect(searchManifests).toHaveBeenCalledTimes(2);
+    const [, query] = searchManifests.mock.calls[1];
+    expect(query._source).toEqual(['id', 'collection_id', 'has_transcription', 'origin']);
+
+    // Either collection's categories are now covered
+    await loadBookFacets(URL, 'dlmm', categories);
+    expect(searchManifests).toHaveBeenCalledTimes(2);
+  });
+
   it('tries again after a failed load', async () => {
     searchManifests.mockRejectedValueOnce(new Error('down')).mockResolvedValueOnce(page(['a'], 1));
 

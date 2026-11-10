@@ -3,6 +3,7 @@
  */
 
 import { rowHasQuery, NAME_FACET, MAX_RESULT_WINDOW } from '../utils/queryBuilder';
+import { defaultJHSearchConfig } from '../../../config';
 
 // ============================================================================
 // Base Selectors
@@ -150,11 +151,11 @@ const BOOK_CLICK_VIEWS = ['single', 'book', 'gallery'];
 
 /**
  * Get the Mirador view opened when a book result row is clicked.
- * Falls back to 'book' when unset or not a known view.
+ * Falls back to the default when unset or not a known view.
  */
 export const getBookClickView = (state) => {
   const view = getConfig(state).bookClickView;
-  return BOOK_CLICK_VIEWS.includes(view) ? view : 'book';
+  return BOOK_CLICK_VIEWS.includes(view) ? view : defaultJHSearchConfig.bookClickView;
 };
 
 /**
@@ -231,7 +232,8 @@ export const getCurrentPage = (state) => getPagination(state).page || 0;
 /**
  * Get the current page size.
  */
-export const getPageSize = (state) => getPagination(state).pageSize || 20;
+export const getPageSize = (state) =>
+  getPagination(state).pageSize || defaultJHSearchConfig.pageSize;
 
 /**
  * Get the total number of results.
@@ -282,14 +284,15 @@ export const getResultsPartial = (state) => getResults(state).partial || null;
 export const isResultsLoading = (state) => getResults(state).loading;
 
 /**
- * Get thumbnail configuration - individual selectors to avoid re-render issues.
- * Using individual selectors prevents returning a new object reference each time.
+ * Thumbnail and logo settings, one selector each so useSelector sees stable values.
  */
 export const getImageBaseUrl = (state) => getConfig(state).imageBaseUrl || '';
 export const getThumbnailTemplate = (state) =>
-  getConfig(state).thumbnailTemplate || '{imageBaseUrl}/{iiifImageId}/full/{width},/0/default.jpg';
-export const getThumbnailWidth = (state) => getConfig(state).thumbnailWidth || 80;
-export const getLogoBaseUrl = (state) => getConfig(state).logoBaseUrl || '/logo';
+  getConfig(state).thumbnailTemplate || defaultJHSearchConfig.thumbnailTemplate;
+export const getThumbnailWidth = (state) =>
+  getConfig(state).thumbnailWidth || defaultJHSearchConfig.thumbnailWidth;
+export const getLogoBaseUrl = (state) =>
+  getConfig(state).logoBaseUrl || defaultJHSearchConfig.logoBaseUrl;
 
 /**
  * Get collection items.
@@ -309,4 +312,5 @@ export const getSortOrder = (state) => getSort(state).order || 'desc';
 /**
  * Get page size options.
  */
-export const getPageSizeOptions = (state) => getConfig(state).pageSizeOptions || [20, 30, 40, 50];
+export const getPageSizeOptions = (state) =>
+  getConfig(state).pageSizeOptions || defaultJHSearchConfig.pageSizeOptions;
