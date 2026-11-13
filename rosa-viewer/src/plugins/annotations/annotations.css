@@ -4,6 +4,34 @@
  * public/styles/ (aor.css, dlmm.css) override.
  */
 
+/*
+ * Keep the left sidebar panel inside its window on narrow screens. Mirador gives
+ * the panel a fixed inline width (window.defaultSidebarPanelWidth, 470px in
+ * src/config.js) and the flex items around it don't shrink below their content,
+ * so on phones the panel ran off the right edge of the screen and its text was cut
+ * off. These rules apply to every panel docked on the left (annotations, info,
+ * index, book description); wider windows are unaffected.
+ *
+ * - inline-size containment stops the panel's width from widening the window
+ *   contents beyond the window;
+ * - min-width: 0 lets the companion area and the panel shrink with the window;
+ * - max-width overrides the inline max-width that react-rnd sets on the panel
+ *   (hence !important). Mirador's 235px minimum panel width still applies.
+ */
+.mirador-primary-window {
+  contain: inline-size;
+}
+
+.mirador-companion-area-left,
+.mirador-companion-window-left {
+  min-width: 0;
+}
+
+.mirador-companion-window-left > .react-draggable {
+  max-width: 100% !important;
+}
+/* --------------------------------------------------------------------------- */
+
 .rosa-annos {
   --rosa-anno-fg: #222;
   --rosa-anno-muted: #5c5c5c;
