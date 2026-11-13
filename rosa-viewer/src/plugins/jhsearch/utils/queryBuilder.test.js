@@ -15,6 +15,7 @@ import {
   buildNameSuggestQuery,
   buildNameLookupQuery,
   pageWindow,
+  pageCount,
   MAX_RESULT_WINDOW,
   MAX_PAGE_SIZE,
   NAME_FACET,
@@ -101,6 +102,19 @@ describe('queryBuilder', () => {
       expect(query.query.bool.filter).not.toEqual(
         expect.arrayContaining([expect.objectContaining({ terms: { num_illustrations: [20] } })])
       );
+    });
+  });
+
+  describe('pageCount', () => {
+    it('counts the pages of the results', () => {
+      expect(pageCount(0, 20)).toBe(0);
+      expect(pageCount(1, 20)).toBe(1);
+      expect(pageCount(150, 20)).toBe(8);
+    });
+
+    it('stops at the last page inside the result window', () => {
+      expect(pageCount(MAX_RESULT_WINDOW + 1, 20)).toBe(500);
+      expect(pageCount(MAX_RESULT_WINDOW + 1, 30)).toBe(333);
     });
   });
 

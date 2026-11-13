@@ -3,7 +3,7 @@
  */
 
 import * as actions from './actions';
-import { rowHasQuery, MAX_RESULT_WINDOW } from '../utils/queryBuilder';
+import { rowHasQuery, pageCount } from '../utils/queryBuilder';
 import { resolveSort } from '../utils/sorts';
 import { defaultJHSearchConfig } from '../../../config';
 
@@ -405,13 +405,11 @@ export function jhsearchReducer(state = initialState, action) {
     case actions.SEARCH_SUCCESS: {
       // A page past the last one, e.g. from an offset in a URL, has no results to
       // show although the search found some. Move to the last page; the search runs
-      // again for it.
+      // again for it. The history replaces the URL of the page that was asked for
+      // (site/history/historySync.js, isPageCorrection).
       const { total } = action.payload;
       const { page, pageSize } = state.pagination;
-      const pageCount = Math.min(
-        Math.ceil(total / pageSize),
-        Math.floor(MAX_RESULT_WINDOW / pageSize)
-      );
+      const pages = pageCount(total, pageSize);
       return {
         ...state,
         results: {
@@ -425,7 +423,7 @@ export function jhsearchReducer(state = initialState, action) {
         pagination: {
           ...state.pagination,
           total,
-          page: pageCount > 0 && page >= pageCount ? pageCount - 1 : page,
+          page: pages > 0 && page >= pages ? pages - 1 : page,
         },
       };
     }

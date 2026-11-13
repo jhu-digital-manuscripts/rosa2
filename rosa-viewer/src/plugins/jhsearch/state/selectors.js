@@ -2,7 +2,7 @@
  * Redux selectors for JHSearch plugin.
  */
 
-import { rowHasQuery, NAME_FACET, MAX_RESULT_WINDOW } from '../utils/queryBuilder';
+import { rowHasQuery, NAME_FACET, pageCount } from '../utils/queryBuilder';
 import { defaultJHSearchConfig } from '../../../config';
 
 // ============================================================================
@@ -251,7 +251,7 @@ export const getTotalResults = (state) => getPagination(state).total || 0;
 export const getTotalPages = (state) => {
   const total = getTotalResults(state);
   const pageSize = getPageSize(state);
-  return Math.min(Math.ceil(total / pageSize), Math.floor(MAX_RESULT_WINDOW / pageSize));
+  return pageCount(total, pageSize);
 };
 
 /**

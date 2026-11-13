@@ -8,7 +8,9 @@
  * History entries are added when the user moves somewhere new: a search, a
  * different page of results, a category, a book or a different view of a book.
  * Turning pages, switching between open windows and closing a window update the
- * URL in place.
+ * URL in place. So does a page of results past the last one (e.g. from an offset in
+ * a bookmark) being moved to the last page: the URL that was asked for is not a
+ * place to go back to.
  *
  * Going back or forward (or opening a bookmark) restores the state in the URL:
  * - browse/search: the search view is shown with the collection, query,
@@ -27,6 +29,7 @@ import {
 } from 'mirador';
 import { applySearchState } from '../../plugins/jhsearch/state/actions';
 import { buildManifestUrl } from '../../plugins/jhsearch/utils/urlBuilder';
+import { pageCount } from '../../plugins/jhsearch/utils/queryBuilder';
 import {
   createRouteContext,
   formatRoute,
@@ -152,6 +155,33 @@ export function shouldReplace(prev, route, prevWindowIds = [], windowIds = []) {
     }
   }
   return false;
+}
+
+/**
+ * Whether going from one route to the next is the results page being moved back
+ * inside the results, rather than the user choosing another page.
+ *
+ * When a search answers with fewer results than the page asked for needs, the page is
+ * moved to the last one (the SEARCH_SUCCESS reducer). That shows as a change of page
+ * and nothing else, away from a page that the result count now in the store has no
+ * room for. Adding a history entry for it would trap Back: the entry before it is the
+ * page past the end, which would be moved forward again.
+ *
+ * @param {Object|null} prev - Route written last
+ * @param {Object} route - Route for the current state
+ * @param {number} total - Number of results of the current search
+ * @param {Object} ctx - Route context
+ * @returns {boolean}
+ */
+export function isPageCorrection(prev, route, total, ctx) {
+  if (!prev || prev.type === 'book' || route.type !== prev.type) return false;
+  if (!(route.page < prev.page)) return false;
+
+  const pageSize = prev.pageSize || ctx.pageSize;
+  if (!(total > 0) || prev.page < pageCount(total, pageSize)) return false;
+
+  // The same listing apart from the page
+  return formatRoute({ ...prev, page: route.page }, ctx) === formatRoute(route, ctx);
 }
 
 /**
@@ -349,7 +379,10 @@ export function connectHistory(store, options = {}) {
 
     const windowIds = state.workspace?.windowIds || [];
     const fragment = formatRoute(route, ctx);
-    const replace = replaceNext || shouldReplace(prev, route, prevWindowIds, windowIds);
+    const replace =
+      replaceNext ||
+      isPageCorrection(prev, route, state.jhsearch?.pagination?.total, ctx) ||
+      shouldReplace(prev, route, prevWindowIds, windowIds);
     const changed =
       fragment !== currentFragment() ||
       stripLegacyQuery(win.location.search) !== win.location.search;

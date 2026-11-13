@@ -204,7 +204,8 @@ its own.
 
 Opening a book, a new view of it, a search, a category or another page of results
 adds a history entry. Turning pages, switching between open windows and closing
-a window update the URL in place. Going back to a book focuses the window that
+a window update the URL in place. An offset past the end of the results is moved to
+the last page, also in place, so Back does not return to it. Going back to a book focuses the window that
 shows it, or opens one if it was closed. Going back to a search shows the search
 view and leaves the open windows alone.
 

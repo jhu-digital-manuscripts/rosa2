@@ -1,5 +1,6 @@
 export {
   connectHistory,
+  isPageCorrection,
   openBookRoute,
   parseManifestUrl,
   routeContextFor,

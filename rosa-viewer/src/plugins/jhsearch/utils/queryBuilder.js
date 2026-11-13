@@ -31,6 +31,19 @@ export function pageWindow(page, pageSize) {
 }
 
 /**
+ * The number of result pages that can be paged to: the pages of `total` results,
+ * limited to those that fit inside `MAX_RESULT_WINDOW`. A page size that does not
+ * divide the window loses the partial page at its end.
+ *
+ * @param {number} total - Number of results
+ * @param {number} pageSize - Results per page
+ * @returns {number}
+ */
+export function pageCount(total, pageSize) {
+  return Math.min(Math.ceil(total / pageSize), Math.floor(MAX_RESULT_WINDOW / pageSize));
+}
+
+/**
  * One clause that matches any of `clauses`: the clause itself when there is one,
  * otherwise a `bool` `should`.
  */
