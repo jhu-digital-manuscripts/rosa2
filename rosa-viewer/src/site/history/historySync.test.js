@@ -10,9 +10,16 @@ import {
 } from 'mirador';
 import { mergeConfig } from '../../config';
 import { jhsearchPlugin } from '../../plugins/jhsearch';
-import { setSimpleQuery, setViewMode, toggleFacet } from '../../plugins/jhsearch/state/actions';
+import {
+  searchSuccess,
+  setPage,
+  setSimpleQuery,
+  setViewMode,
+  toggleFacet,
+} from '../../plugins/jhsearch/state/actions';
 import {
   connectHistory,
+  isPageCorrection,
   openBookRoute,
   parseManifestUrl,
   routeContextFor,
@@ -207,6 +214,26 @@ describe('connectHistory', () => {
     expect(pushState).toHaveBeenCalledTimes(2);
   });
 
+  it('replaces the URL of a results page past the end, so Back is not trapped', async () => {
+    await connect('/viewer/#rose?o=5000');
+    expect(state().jhsearch.pagination.page).toBe(250);
+
+    // The search answers: 150 results at 20 per page, so the last page is 7
+    store.dispatch(searchSuccess({ items: [], total: 150, aggregations: {} }));
+    await waitForHash('#rose?o=140');
+    expect(pushState).not.toHaveBeenCalled();
+
+    // Choosing a page still adds an entry
+    store.dispatch(setPage(3));
+    await waitForHash('#rose?o=60');
+    expect(pushState).toHaveBeenCalledTimes(1);
+
+    // And so does the next page arriving, which moves nothing
+    store.dispatch(searchSuccess({ items: [], total: 150, aggregations: {} }));
+    await settle();
+    expect(pushState).toHaveBeenCalledTimes(1);
+  });
+
   it('adds an entry for opening a book and a new view, but not for turning pages', async () => {
     await connect('/viewer/#rose/search?q=green');
 
@@ -303,6 +330,33 @@ describe('helpers', () => {
     };
     const ctx = { collectionId: 'dlmm', collectionIds: ['dlmm'], iiifBaseUrl: BASE, pageSize: 20 };
     expect(routeFromState(state, ctx, () => 'single')).toBeNull();
+  });
+
+  it('tells a results page moved back inside the results from a chosen page', () => {
+    const ctx = routeContextFor({ iiifBaseUrl: BASE, collectionId: 'dlmm' });
+    const browse = (page, more = {}) => ({
+      type: 'browse',
+      collectionId: 'rose',
+      facets: {},
+      sort: { field: 'label.keyword', order: 'asc' },
+      page,
+      pageSize: 20,
+      ...more,
+    });
+
+    // 150 results: pages 0 to 7
+    expect(isPageCorrection(browse(250), browse(7), 150, ctx)).toBe(true);
+    // The user going back a page, or to any page there is room for
+    expect(isPageCorrection(browse(7), browse(6), 150, ctx)).toBe(false);
+    expect(isPageCorrection(browse(3), browse(7), 150, ctx)).toBe(false);
+    // Something else changed too, e.g. a filter that left fewer results
+    expect(isPageCorrection(browse(250), browse(0, { facets: { date: [1350] } }), 5, ctx)).toBe(
+      false
+    );
+    // No results, a book, or nothing written yet
+    expect(isPageCorrection(browse(250), browse(7), 0, ctx)).toBe(false);
+    expect(isPageCorrection({ type: 'book' }, browse(7), 150, ctx)).toBe(false);
+    expect(isPageCorrection(null, browse(7), 150, ctx)).toBe(false);
   });
 
   it('replaces the entry for a page turn and adds one for another book', () => {
