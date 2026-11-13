@@ -5,7 +5,7 @@
 
 import React from 'react';
 import SearchIcon from '@mui/icons-material/Search';
-import { MiradorMenuButton, setWorkspaceAddVisibility } from 'mirador';
+import { getWorkspace, MiradorMenuButton, setWorkspaceAddVisibility } from 'mirador';
 
 import { ConnectedJHSearchView } from './components/JHSearchView';
 import { jhsearchReducer } from './state/reducers';
@@ -14,19 +14,41 @@ import { workspaceAddButtonPlugin } from './workspace';
 export { keepWorkspaceAddVisible } from './workspace';
 
 /**
- * JHSearch button component for the workspace control panel.
- * Allows returning to the JHSearch view from anywhere.
+ * Look of the button while the JHSearch view is showing: a white icon on grey,
+ * also on hover, with the default cursor because clicking it then does nothing.
  */
-function JHSearchButton({ setWorkspaceAddVisibility: showSearch }) {
+const ACTIVE_SX = {
+  backgroundColor: 'grey.600',
+  color: 'common.white',
+  cursor: 'default',
+  '&:hover': { backgroundColor: 'grey.600' },
+};
+
+/**
+ * JHSearch button component for the workspace control panel.
+ * Allows returning to the JHSearch view from anywhere, and is highlighted while
+ * that view is showing.
+ */
+function JHSearchButton({ isWorkspaceAddVisible = false, setWorkspaceAddVisibility: showSearch }) {
   const handleClick = () => {
     showSearch(true);
   };
 
   return (
-    <MiradorMenuButton aria-label="Search collections" onClick={handleClick}>
+    <MiradorMenuButton
+      aria-label="Search collections"
+      onClick={handleClick}
+      selected={isWorkspaceAddVisible}
+      sx={isWorkspaceAddVisible ? ACTIVE_SX : {}}
+    >
       <SearchIcon />
     </MiradorMenuButton>
   );
+}
+
+/** Whether the JHSearch view (Mirador's add resource view) is showing. */
+function mapJHSearchButtonStateToProps(state) {
+  return { isWorkspaceAddVisible: Boolean(getWorkspace(state).isWorkspaceAddVisible) };
 }
 
 /**
@@ -37,6 +59,7 @@ const jhsearchButtonPlugin = {
   mode: 'add',
   name: 'JHSearchButton',
   target: 'WorkspaceControlPanelButtons',
+  mapStateToProps: mapJHSearchButtonStateToProps,
   mapDispatchToProps: { setWorkspaceAddVisibility },
 };
 
