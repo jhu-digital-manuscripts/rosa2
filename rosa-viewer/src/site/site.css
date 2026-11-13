@@ -59,10 +59,6 @@ body {
   border-bottom: 3px solid var(--rosa-accent);
 }
 
-html.rosa-has-banner .rosa-site-banner {
-  display: block;
-}
-
 .rosa-site-bar {
   display: flex;
   align-items: baseline;
@@ -121,6 +117,27 @@ html.rosa-has-banner .rosa-site-banner {
   color: var(--rosa-header-fg);
 }
 
+/* "Mobile" tweaks */
+@media (max-width: 720px) {
+  /* Hide extra links on mobile */
+  .rosa-site-links {
+    display: none;
+  }
+
+  /* Center main title on mobile */
+  .rosa-site-bar {
+    align-items: center;
+  }
+}
+
+/* Non-mobile tweaks */
+@media (min-width: 720px) {
+  /* Turn on the banner on desktop view if marked */
+  html.rosa-has-banner .rosa-site-banner {
+    display: block;
+  }
+}
+
 /* Viewer ------------------------------------------------------------------ */
 
 #rosa-viewer {
@@ -142,6 +159,8 @@ html.rosa-has-banner .rosa-site-banner {
   .rosa-site-title {
     font-size: 1.05rem;
     letter-spacing: 0.1em;
+    line-height: 1.75em;
+    text-wrap: auto;
   }
 
   .rosa-site-tagline {
