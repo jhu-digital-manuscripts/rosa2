@@ -468,3 +468,24 @@ for the in-repo archive at the time of writing). Verify an image:
 ```bash
 curl -I "https://<image-host>/iiif/3/rose%2FDouce195%2Fcropped%2FDouce195.001r/info.json"
 ```
+
+### Monitoring and Slack notifications
+
+Rosa alarms publish to application-owned SNS topics: `jhu-rosa2-stage-alarms`
+and `jhu-rosa2-alarms` (prod). The root configuration calls the
+[notifications module](../jhu-rosa2-tf/modules/rosa2-notifications/README.md),
+so one normal stage apply creates both topics, adopts the shared Amazon Q
+connector, adds their subscriptions, and deploys the application alarms/checker.
+The connector's existing routes/settings are preserved. Stage is the sole owner
+of the shared notification resources; prod reads its own topic. Apply stage
+before prod. No separate notifications backend or apply is required.
+
+Search monitoring covers HTTP API errors/latency, Lambda errors/throttling, and
+OpenSearch health, storage, heap/CPU pressure, blocked writes and snapshots.
+A public functional checker runs every five minutes and validates known results
+in both search indexes plus IIIF metadata and JPEG delivery. Missing check
+metrics also alarm. Set `monitoring_manifest_id` and
+`monitoring_image_identifier` when the known archive fixtures differ, or
+`search_enable_monitoring = false` to disable the new monitoring resources.
+See [the infrastructure monitoring guide](../jhu-rosa2-tf/README.md#alarms-slack-delivery-and-functional-checks)
+for thresholds, troubleshooting, cache limitations, offline tests, and rollout.
