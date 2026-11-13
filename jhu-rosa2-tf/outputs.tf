@@ -227,3 +227,13 @@ output "image_server_alarm_topic_arn" {
   description = "SNS topic for image server alarms, empty when monitoring is disabled."
   value       = module.rosa2_image_server.alarm_topic_arn
 }
+
+output "functional_check_lambda_name" {
+  description = "Scheduled public search and IIIF functional checker; empty if search monitoring is disabled."
+  value       = module.rosa2_monitoring.functional_check_lambda_name
+}
+
+output "alarm_sns_topic_arn" {
+  description = "Rosa-owned SNS topic subscribed to the shared Amazon Q Slack connector."
+  value       = module.rosa2_monitoring.alarm_sns_topic_arn
+}

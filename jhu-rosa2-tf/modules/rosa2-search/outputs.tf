@@ -125,3 +125,8 @@ output "opensearch_log_group" {
   description = "CloudWatch log group for OpenSearch application and slow logs, empty when disabled."
   value       = var.opensearch_enable_log_publishing ? aws_cloudwatch_log_group.opensearch[0].name : ""
 }
+
+output "search_lambda_name" {
+  description = "Search proxy function name for monitoring."
+  value       = aws_lambda_function.search.function_name
+}

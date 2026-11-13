@@ -527,3 +527,23 @@ variable "image_server_alarm_cloudfront_5xx_rate" {
   type        = number
   default     = null
 }
+
+# ---------- Search monitoring and public functional checks ----------
+variable "search_enable_monitoring" {
+  description = "Create search alarms and scheduled public search/image functional checks."
+  type        = bool
+  default     = true
+  nullable    = false
+}
+
+variable "monitoring_manifest_id" {
+  description = "Known manifest required by the search functional checks; must exist in both manifest and canvas indexes."
+  type        = string
+  default     = "rose.Douce195"
+}
+
+variable "monitoring_image_identifier" {
+  description = "Unencoded known image identifier for public IIIF metadata and JPEG functional checks."
+  type        = string
+  default     = "rose/Douce195/Douce195.001r"
+}

@@ -4,9 +4,11 @@
 # One environment (prod or stage) per state, selected at init time by the
 # *.s3.tfbackend file and at plan/apply time by the matching *.tfvars file.
 #
-# Two child modules:
+# Child modules:
 #   modules/rosa2-search        OpenSearch, search/admin Lambdas, HTTP API
 #   modules/rosa2-image-server  Cantaloupe IIIF Image API on ECS behind CloudFront
+#   modules/rosa2-monitoring    Search alarms and public functional checks
+# Monitoring includes SNS topics and the shared Amazon Q connector (stage owner).
 #
 # This root module owns the backend, the provider and its default_tags, and the
 # paths to the rosa-search sources that the search module packages and uploads.
@@ -128,6 +130,30 @@ module "rosa2_image_server" {
   waf_enable_logging         = var.image_server_waf_enable_logging
   enable_monitoring          = var.image_server_enable_monitoring
   alarm_notification_email   = var.image_server_alarm_notification_email
+  alarm_sns_topic_arns       = [module.rosa2_monitoring.alarm_sns_topic_arn]
   alarm_5xx_threshold        = var.image_server_alarm_5xx_threshold
   alarm_cloudfront_5xx_rate  = var.image_server_alarm_cloudfront_5xx_rate
+}
+
+module "rosa2_monitoring" {
+  source = "./modules/rosa2-monitoring"
+  providers = {
+    aws         = aws
+    aws.chatbot = aws.chatbot
+  }
+
+  environment          = var.environment
+  enabled              = var.search_enable_monitoring
+  name_prefix          = var.name_prefix
+  alarm_sns_topic_arns = compact([module.rosa2_image_server.alarm_topic_arn])
+  search_api_id        = module.rosa2_search.api_id
+  search_api_endpoint  = module.rosa2_search.api_endpoint
+  search_lambda_name   = module.rosa2_search.search_lambda_name
+  opensearch_domain    = module.rosa2_search.opensearch_domain_name
+  opensearch_disk_gib  = var.opensearch_volume_size
+  image_base_url       = module.rosa2_image_server.iiif3_base_url
+  image_enabled        = var.image_server_image_tag == null ? false : var.image_server_image_tag != ""
+  manifest_id          = var.monitoring_manifest_id
+  image_identifier     = var.monitoring_image_identifier
+  log_retention_days   = var.log_retention_days
 }

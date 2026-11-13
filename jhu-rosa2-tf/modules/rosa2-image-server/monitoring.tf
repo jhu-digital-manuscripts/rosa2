@@ -19,7 +19,7 @@ resource "aws_sns_topic_subscription" "email" {
 }
 
 locals {
-  alarm_actions = var.enable_monitoring ? [aws_sns_topic.alarms[0].arn] : []
+  alarm_actions = var.enable_monitoring ? distinct(concat([aws_sns_topic.alarms[0].arn], var.alarm_sns_topic_arns)) : []
 }
 
 resource "aws_cloudwatch_metric_alarm" "no_healthy_hosts" {
