@@ -13,7 +13,7 @@ variable "name_prefix" {
 }
 
 variable "alarm_sns_topic_arns" {
-  description = "Existing SNS destinations for alarms and recoveries."
+  description = "Additional SNS destinations for alarms and recoveries; the module always includes the environment's Rosa topic."
   type        = list(string)
   default     = []
   nullable    = false
@@ -87,4 +87,9 @@ variable "log_retention_days" {
   type        = number
   default     = 14
   nullable    = false
+}
+
+variable "environment" {
+  description = "Application environment for notification ownership and routing."
+  type        = string
 }

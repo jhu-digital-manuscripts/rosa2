@@ -472,7 +472,7 @@ curl -I "https://<image-host>/iiif/3/rose%2FDouce195%2Fcropped%2FDouce195.001r/i
 ### Monitoring and Slack notifications
 
 Rosa alarms publish to application-owned SNS topics: `jhu-rosa2-stage-alarms`
-and `jhu-rosa2-alarms` (prod). The root configuration calls the
+and `jhu-rosa2-alarms` (prod). The monitoring module includes the
 [notifications module](../jhu-rosa2-tf/modules/rosa2-notifications/README.md),
 so one normal stage apply creates both topics, adopts the shared Amazon Q
 connector, adds their subscriptions, and deploys the application alarms/checker.

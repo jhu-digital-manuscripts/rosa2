@@ -132,8 +132,8 @@ resource "aws_cloudwatch_metric_alarm" "functional" {
     Deployment = var.name_prefix
     Check      = each.key
   }
-  alarm_actions = var.alarm_sns_topic_arns
-  ok_actions    = var.alarm_sns_topic_arns
+  alarm_actions = local.alarm_sns_topic_arns
+  ok_actions    = local.alarm_sns_topic_arns
 }
 
 output "functional_check_lambda_name" {

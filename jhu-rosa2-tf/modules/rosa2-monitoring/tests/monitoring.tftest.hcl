@@ -1,4 +1,7 @@
 mock_provider "aws" {
+  mock_data "aws_sns_topic" {
+    defaults = { arn = "arn:aws:sns:us-east-1:123456789012:jhu-rosa2-alarms" }
+  }
   mock_data "aws_caller_identity" {
     defaults = { account_id = "123456789012" }
   }
@@ -16,8 +19,12 @@ mock_provider "aws" {
   }
 }
 mock_provider "archive" {}
+mock_provider "aws" {
+  alias = "chatbot"
+}
 
 variables {
+  environment          = "prod"
   name_prefix          = "jhu-rosa2-stage"
   alarm_sns_topic_arns = ["arn:aws:sns:us-east-1:123456789012:jhu-rosa2-stage-alarms"]
   search_api_id        = "abc123"
@@ -40,7 +47,7 @@ run "monitoring_enabled" {
   assert {
     condition = alltrue([
       for alarm in concat(values(aws_cloudwatch_metric_alarm.search), values(aws_cloudwatch_metric_alarm.functional)) :
-      alarm.alarm_actions == toset(var.alarm_sns_topic_arns) && alarm.ok_actions == toset(var.alarm_sns_topic_arns)
+      alarm.alarm_actions == toset(concat(var.alarm_sns_topic_arns, ["arn:aws:sns:us-east-1:123456789012:jhu-rosa2-alarms"])) && alarm.ok_actions == toset(concat(var.alarm_sns_topic_arns, ["arn:aws:sns:us-east-1:123456789012:jhu-rosa2-alarms"]))
     ])
     error_message = "Every search and functional alarm must notify the Rosa Slack SNS route, including recovery."
   }
@@ -79,7 +86,8 @@ run "disabled" {
       length(aws_cloudwatch_metric_alarm.functional) == 0 &&
       length(aws_lambda_function.probe) == 0 &&
       length(aws_iam_role.probe) == 0 &&
-      length(aws_cloudwatch_event_rule.probe) == 0
+      length(aws_cloudwatch_event_rule.probe) == 0 &&
+      output.alarm_sns_topic_arn == "arn:aws:sns:us-east-1:123456789012:jhu-rosa2-alarms"
     )
     error_message = "Disabling monitoring must remove alarms, checker, scheduler and its role."
   }

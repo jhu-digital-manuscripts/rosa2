@@ -35,7 +35,7 @@ operator ──aws lambda invoke──▶ admin Lambda ──▶ OpenSearch
 
 The root module holds the backend, provider and per-environment inputs, and
 calls `modules/rosa2-search`, `modules/rosa2-image-server`, and
-`modules/rosa2-monitoring`, and `modules/rosa2-notifications`. Stage owns the
+`modules/rosa2-monitoring`, which includes `modules/rosa2-notifications`. Stage owns the
 shared notification resources; prod reads its SNS topic from AWS.
 
 | Root file | Purpose |
@@ -45,7 +45,7 @@ shared notification resources; prod reads its SNS topic from AWS.
 | `locals.tf` | The tag set (`Owner`, `Environment`, `System`) applied to every taggable resource through `default_tags`. Add more with the `tags` variable. |
 | `variables.tf` | All environment-parameterized inputs. Image server inputs are prefixed `image_server_` and default to `null`, which selects the module's default. |
 | `main.tf` | The search, image-server and monitoring module calls. Also supplies the paths to the Lambda sources in `../rosa-search/lambda`. |
-| `notifications.tf` | Calls the notifications module; imports the shared connector into stage only. |
+| `imports.tf` | Imports the shared connector into stage only and preserves the former notification module state address. |
 | `outputs.tf` | Values consumed by `rosa-search/init-opensearch.sh` and the viewer build, re-exported from the module. |
 | `prod.tfvars` / `stage.tfvars` | Per-environment variable values. |
 | `prod.s3.tfbackend` / `stage.s3.tfbackend` | Per-environment backend (state key) config. |
@@ -446,7 +446,8 @@ lifecycle expiry bounds. For current figures use the
 
 Rosa has dedicated SNS topics in us-east-1: `jhu-rosa2-stage-alarms` and
 `jhu-rosa2-alarms` (prod). [`modules/rosa2-notifications`](modules/rosa2-notifications/README.md)
-is called by the normal root configuration. Stage owns both topics and adopts
+is called inside `modules/rosa2-monitoring/notifications.tf`. The root receives
+the alarm topic through the monitoring module. Stage owns both topics and adopts
 the existing Amazon Q configuration `jhu-aws-slack-connector-staging` in workspace
 `TBYPTS56V`; prod only reads its topic. This gives the shared connector one state
 owner and lets a single stage apply create notifications and the application.

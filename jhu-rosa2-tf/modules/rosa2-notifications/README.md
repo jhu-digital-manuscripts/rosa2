@@ -1,7 +1,6 @@
 # Rosa notification module
 
-The normal `jhu-rosa2-tf` root calls this module alongside search, image server,
-and monitoring. It creates `jhu-rosa2-stage-alarms` and `jhu-rosa2-alarms` (prod)
+The monitoring module calls this module from its `notifications.tf` file. It creates `jhu-rosa2-stage-alarms` and `jhu-rosa2-alarms` (prod)
 in us-east-1 and associates them with the existing Amazon Q Slack connector.
 Topic policies allow publication from this account's matching Rosa alarms.
 Amazon Q creates the HTTPS subscriptions when the topics are associated.
@@ -12,7 +11,7 @@ connector. `environment = "prod"` only looks up `jhu-rosa2-alarms`; it creates n
 SNS or connector resources. Both environments' image, search and functional
 alarms use the module's `alarm_topic_arn` output.
 
-Root `notifications.tf` has a conditional import block that adopts the existing
+Root `imports.tf` has a conditional import block that adopts the existing
 `jhu-aws-slack-connector-staging` configuration into **stage only**. The separate
 `aws.chatbot` provider accesses it through us-east-2 without inheriting stage
 tags. Its existing four SNS routes, channel, IAM role, guardrails, logging,
@@ -65,3 +64,8 @@ Tests use mocked providers and plan only. They check topic policies, preservatio
 of the shared connector settings/routes, and that prod reads its topic without
 owning any shared resources. Keeping the import in the root avoids importing a
 real resource during module tests.
+
+A root `moved` block preserves existing notification state when moving from
+`module.rosa2_notifications` to
+`module.rosa2_monitoring.module.rosa2_notifications`. No resource replacement
+is required if the prior layout has already been applied.

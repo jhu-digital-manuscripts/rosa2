@@ -187,6 +187,6 @@ resource "aws_cloudwatch_metric_alarm" "search" {
   comparison_operator                   = each.value.comparison
   treat_missing_data                    = each.value.missing
   dimensions                            = each.value.dimensions
-  alarm_actions                         = var.alarm_sns_topic_arns
-  ok_actions                            = var.alarm_sns_topic_arns
+  alarm_actions                         = local.alarm_sns_topic_arns
+  ok_actions                            = local.alarm_sns_topic_arns
 }

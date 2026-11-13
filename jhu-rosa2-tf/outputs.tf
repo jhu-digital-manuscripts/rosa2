@@ -232,3 +232,8 @@ output "functional_check_lambda_name" {
   description = "Scheduled public search and IIIF functional checker; empty if search monitoring is disabled."
   value       = module.rosa2_monitoring.functional_check_lambda_name
 }
+
+output "alarm_sns_topic_arn" {
+  description = "Rosa-owned SNS topic subscribed to the shared Amazon Q Slack connector."
+  value       = module.rosa2_monitoring.alarm_sns_topic_arn
+}
