@@ -365,3 +365,17 @@ run "invalid_source_prefix_is_rejected" {
 
   expect_failures = [var.source_prefix]
 }
+
+run "shared_slack_notifications" {
+  variables {
+    image_tag            = "t1"
+    alarm_sns_topic_arns = ["arn:aws:sns:us-east-1:123456789012:jhu-rosa2-stage-alarms"]
+  }
+  assert {
+    condition = alltrue([
+      for alarm in [aws_cloudwatch_metric_alarm.no_healthy_hosts[0], aws_cloudwatch_metric_alarm.target_5xx[0], aws_cloudwatch_metric_alarm.ecs_cpu_high[0], aws_cloudwatch_metric_alarm.ecs_memory_high[0], aws_cloudwatch_metric_alarm.cloudfront_5xx_rate[0]] :
+      contains(alarm.alarm_actions, "arn:aws:sns:us-east-1:123456789012:jhu-rosa2-stage-alarms") && alarm.alarm_actions == alarm.ok_actions
+    ])
+    error_message = "All image alarms and recoveries must also notify the Rosa topic with the Amazon Q subscription."
+  }
+}

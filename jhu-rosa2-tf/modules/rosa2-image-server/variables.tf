@@ -355,3 +355,10 @@ variable "alarm_cloudfront_5xx_rate" {
   default     = 5
   nullable    = false
 }
+
+variable "alarm_sns_topic_arns" {
+  description = "Additional existing SNS topics for ALARM and OK notifications, e.g. a topic already subscribed to Amazon Q in Slack."
+  type        = list(string)
+  default     = []
+  nullable    = false
+}
