@@ -227,3 +227,18 @@ output "image_server_alarm_topic_arn" {
   description = "SNS topic for image server alarms, empty when monitoring is disabled."
   value       = module.rosa2_image_server.alarm_topic_arn
 }
+
+output "image_server_functional_check_lambda_name" {
+  description = "Scheduled public image delivery checker, empty when image monitoring is disabled or no image is deployed."
+  value       = module.rosa2_image_server.functional_check_lambda_name
+}
+
+output "search_alarm_topic_arn" {
+  description = "SNS topic for search alarms, empty when search monitoring is disabled."
+  value       = module.rosa2_search.alarm_topic_arn
+}
+
+output "search_functional_check_lambda_name" {
+  description = "Scheduled public search checker, empty when search monitoring is disabled."
+  value       = module.rosa2_search.functional_check_lambda_name
+}

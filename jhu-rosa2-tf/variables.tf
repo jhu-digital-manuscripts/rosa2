@@ -505,7 +505,7 @@ variable "image_server_waf_enable_logging" {
 }
 
 variable "image_server_enable_monitoring" {
-  description = "Create an SNS alarm topic, CloudWatch alarms and a dashboard."
+  description = "Create an SNS alarm topic, CloudWatch alarms, a dashboard and the scheduled public image functional checker."
   type        = bool
   default     = null
 }
@@ -526,4 +526,24 @@ variable "image_server_alarm_cloudfront_5xx_rate" {
   description = "CloudFront 5xx error rate (percent of requests, 5-minute average) that triggers an alarm."
   type        = number
   default     = null
+}
+
+# ---------- Search monitoring and public functional checks ----------
+variable "search_enable_monitoring" {
+  description = "Create the search alarm topic, search alarms and the scheduled public search functional checker."
+  type        = bool
+  default     = true
+  nullable    = false
+}
+
+variable "monitoring_manifest_id" {
+  description = "Known manifest required by the search functional checks; must exist in both manifest and canvas indexes."
+  type        = string
+  default     = "rose.Douce195"
+}
+
+variable "monitoring_image_identifier" {
+  description = "Unencoded known image identifier for the image server's public IIIF metadata and JPEG functional check."
+  type        = string
+  default     = "rose/Douce195/Douce195.001r"
 }
