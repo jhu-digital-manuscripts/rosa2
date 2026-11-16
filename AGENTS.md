@@ -41,7 +41,8 @@ rosa2/
 │   │                     (latin-stemmer-rules.txt, latin-charmap.txt), LATIN-ANALYZER.md, OLD-FRENCH-ANALYZER.md
 │   ├── lambda/           search_proxy/ and admin/ (plain Python, no deps), tests/
 │   └── init-opensearch.sh   Drops/creates the AWS indexes, ingests, verifies counts (--help; --jar)
-├── jhu-rosa2-tf/         OpenTofu: Opensearch, Lambdas, HTTP API (rosa2-search) and image server (rosa2-image-server), prod/stage
+├── jhu-rosa2-tf/         OpenTofu: two modules only, rosa2-search (Opensearch, Lambdas, HTTP API) and rosa2-image-server,
+│                         each with its own alarms and functional checker (functional-check/app.py); independent prod/stage
 ├── rosa-image-server/    Cantaloupe + Kakadu Docker image (IIIF Image API) for ECS; build-and-push.sh, delegates.rb, test/
 ├── local-dev/            Docker Opensearch 3.1 + static IIIF server scripts
 ├── docs/                 usage, archive-structure, iiif-generation, opensearch-indexes, search, aor-data-model, deployment
@@ -160,7 +161,14 @@ cd ../rosa-search && ./init-opensearch.sh --env prod   # --help for --skip-*, --
 ```
 
 Use `stage.s3.tfbackend` / `stage.tfvars` for stage. The same state also holds the
-image server (`modules/rosa2-image-server`: ECS Fargate behind CloudFront).
+image server (`modules/rosa2-image-server`: ECS Fargate behind CloudFront). Stage and prod
+must stay independent: no resource, data lookup or apply ordering may link one to the other.
+The shared Amazon Q Slack connector is deliberately not managed here (see `jhu-rosa2-tf/README.md`).
+
+```sh
+python3 -m unittest discover -s functional-check -p 'test_*.py' -v                    # functional checker, no AWS
+cd modules/rosa2-search && tofu init -backend=false && tofu test                      # mocked-provider module tests
+```
 
 ### rosa-image-server (run from `rosa-image-server/`)
 

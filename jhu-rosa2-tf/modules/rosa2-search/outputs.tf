@@ -125,3 +125,15 @@ output "opensearch_log_group" {
   description = "CloudWatch log group for OpenSearch application and slow logs, empty when disabled."
   value       = var.opensearch_enable_log_publishing ? aws_cloudwatch_log_group.opensearch[0].name : ""
 }
+
+# ---------- Monitoring ----------
+
+output "alarm_topic_arn" {
+  description = "SNS topic the search alarms notify, empty when enable_monitoring is false."
+  value       = var.enable_monitoring ? aws_sns_topic.alarms[0].arn : ""
+}
+
+output "functional_check_lambda_name" {
+  description = "Scheduled public search checker, empty when enable_monitoring is false."
+  value       = var.enable_monitoring ? aws_lambda_function.probe[0].function_name : ""
+}
