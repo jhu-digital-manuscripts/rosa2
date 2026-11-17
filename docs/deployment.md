@@ -473,7 +473,7 @@ curl -I "https://<image-host>/iiif/3/rose%2FDouce195%2Fcropped%2FDouce195.001r/i
 
 Each environment owns its alarm topics: `<name_prefix>-search-alarms` and
 `<name_prefix>-image-server-alarms`, created by the search and image-server
-modules together with their alarms and functional checkers. Stage and prod share
+modules together with their alarms. Stage and prod share
 no monitoring resources and can be applied in either order.
 
 The Amazon Q Slack connector is shared with other applications and is not managed
@@ -483,11 +483,7 @@ to the connector once by hand, as described in the infrastructure guide.
 Search monitoring covers HTTP API errors/latency, Lambda errors/throttling, and
 OpenSearch health, storage, heap/CPU pressure, blocked writes and snapshots.
 Image-server monitoring covers healthy hosts, target 5xx, ECS CPU/memory and the
-CloudFront 5xx rate. Each module also runs a public functional checker every five
-minutes: search validates known results in both indexes, the image server
-validates IIIF metadata and JPEG delivery. Missing check metrics also alarm. Set
-`monitoring_manifest_id` and `monitoring_image_identifier` when the known archive
-fixtures differ, or `search_enable_monitoring = false` /
+CloudFront 5xx rate. Set `search_enable_monitoring = false` /
 `image_server_enable_monitoring = false` to remove a module's monitoring.
-See [the infrastructure monitoring guide](../jhu-rosa2-tf/README.md#alarms-slack-delivery-and-functional-checks)
-for thresholds, troubleshooting, cache limitations, offline tests, and rollout.
+See [the infrastructure monitoring guide](../jhu-rosa2-tf/README.md#alarms-and-slack-delivery)
+for thresholds, troubleshooting, offline tests, and rollout.

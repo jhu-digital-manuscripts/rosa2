@@ -8,13 +8,12 @@
 #   modules/rosa2-search        OpenSearch, search/admin Lambdas, HTTP API
 #   modules/rosa2-image-server  Cantaloupe IIIF Image API on ECS behind CloudFront
 #
-# Each module owns its own alarm topic, alarms and scheduled functional checker.
+# Each module owns its own alarm topic and alarms.
 # The modules do not reference each other, and nothing in one environment's state
 # creates or reads the other environment's resources.
 #
 # This root module owns the backend, the provider and its default_tags, and the
-# paths to the sources the modules package: the rosa-search Lambdas and the
-# functional-check probe that both modules deploy.
+# paths to the rosa-search sources that the search module packages and uploads.
 # =============================================================================
 
 module "rosa2_search" {
@@ -86,9 +85,7 @@ module "rosa2_search" {
   enable_api_access_logs = var.enable_api_access_logs
 
   # Monitoring
-  enable_monitoring            = var.search_enable_monitoring
-  functional_check_source_file = "${path.module}/functional-check/app.py"
-  functional_check_manifest_id = var.monitoring_manifest_id
+  enable_monitoring = var.search_enable_monitoring
 }
 
 
@@ -140,7 +137,4 @@ module "rosa2_image_server" {
   alarm_notification_email   = var.image_server_alarm_notification_email
   alarm_5xx_threshold        = var.image_server_alarm_5xx_threshold
   alarm_cloudfront_5xx_rate  = var.image_server_alarm_cloudfront_5xx_rate
-
-  functional_check_source_file      = "${path.module}/functional-check/app.py"
-  functional_check_image_identifier = var.monitoring_image_identifier
 }

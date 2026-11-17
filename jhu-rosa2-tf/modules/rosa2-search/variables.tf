@@ -323,20 +323,8 @@ variable "enable_api_access_logs" {
 # ---------- Monitoring ----------
 
 variable "enable_monitoring" {
-  description = "Create the search alarm topic, CloudWatch alarms and the scheduled public functional checker."
+  description = "Create the search alarm topic and CloudWatch alarms."
   type        = bool
   default     = true
-  nullable    = false
-}
-
-variable "functional_check_source_file" {
-  description = "Path to the functional-check Lambda source (jhu-rosa2-tf/functional-check/app.py)."
-  type        = string
-}
-
-variable "functional_check_manifest_id" {
-  description = "Known manifest the functional checks must find in both the manifest and canvas indexes."
-  type        = string
-  default     = "rose.Douce195"
   nullable    = false
 }
