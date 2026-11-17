@@ -35,10 +35,9 @@ operator ──aws lambda invoke──▶ admin Lambda ──▶ OpenSearch
 
 The root module holds the backend, provider and per-environment inputs, and
 calls exactly two modules, `modules/rosa2-search` and
-`modules/rosa2-image-server`. Each owns its own alarm topic, alarms and functional
-checker, and neither references the other. Stage and prod are independent: each
-has its own state, and nothing in one creates, reads or must be applied before
-the other.
+`modules/rosa2-image-server`. Each owns its own alarm topic and alarms, and
+neither references the other. Stage and prod are independent: each has its own
+state, and nothing in one creates, reads or must be applied before the other.
 
 | Root file | Purpose |
 |---|---|
@@ -46,8 +45,7 @@ the other.
 | `providers.tf` | AWS provider with `default_tags`. |
 | `locals.tf` | The tag set (`Owner`, `Environment`, `System`) applied to every taggable resource through `default_tags`. Add more with the `tags` variable. |
 | `variables.tf` | All environment-parameterized inputs. Image server inputs are prefixed `image_server_` and default to `null`, which selects the module's default. |
-| `main.tf` | The search and image-server module calls. Also supplies the paths to the Lambda sources in `../rosa-search/lambda` and to `functional-check/app.py`. |
-| `functional-check/` | Source and unit tests of the public functional checker. Not a module: each module packages and deploys its own copy. |
+| `main.tf` | The search and image-server module calls. Also supplies the paths to the Lambda sources in `../rosa-search/lambda`. |
 | `outputs.tf` | Values consumed by `rosa-search/init-opensearch.sh` and the viewer build, re-exported from the module. |
 | `prod.tfvars` / `stage.tfvars` | Per-environment variable values. |
 | `prod.s3.tfbackend` / `stage.s3.tfbackend` | Per-environment backend (state key) config. |
@@ -65,7 +63,6 @@ the other.
 | `apigateway.tf` | HTTP API, routes, CORS, stage throttling, and access logs. |
 | `vpc-endpoints.tf` | Optional S3 gateway endpoint, off by default. |
 | `monitoring.tf` | Optional SNS topic (`<name_prefix>-search-alarms`) and the API, Lambda and OpenSearch alarms. |
-| `functional-check.tf` | Optional scheduled Lambda that checks both search indexes through the public API, and its alarms. |
 | `outputs.tf` | Resource attributes re-exported by the root `outputs.tf`. |
 | `tests/` | `tofu test` suite with mocked providers, covering monitoring. |
 
@@ -274,7 +271,6 @@ viewer ──HTTPS──▶ CloudFront ──VPC origin──▶ internal ALB �
 | `functions/` | The CloudFront Functions and their Node tests. `legacy-request.js` also refuses identifiers with a `.` or `..` path segment (400), which otherwise reach S3 and come back as a 500 carrying the SDK's message; the `/iiif/2/*` and `/iiif/3/*` behaviours run no function, so the same request on those paths still produces that 500. |
 | `waf.tf` | Optional CLOUDFRONT-scope web ACL, adapted from aws-dspace-ecs-tf. |
 | `monitoring.tf` | Optional SNS topic, alarms and dashboard, adapted from aws-dspace-ecs-tf. |
-| `functional-check.tf` | Optional scheduled Lambda that checks public IIIF metadata and JPEG delivery, and its alarm. Created once an image tag is set. |
 | `tests/` | `tofu test` suite with a mocked AWS provider. |
 
 ### Design notes
@@ -325,9 +321,9 @@ viewer ──HTTPS──▶ CloudFront ──VPC origin──▶ internal ALB �
   minute. The web ACL is on in prod and off in stage.
 - **Monitoring** reuses the dspace pattern: an SNS topic (with an optional email
   subscription) and alarms on no healthy hosts, target 5xx, ECS CPU and memory,
-  and the CloudFront 5xx rate, plus a dashboard and a public functional check
-  (see [below](#alarms-slack-delivery-and-functional-checks)). The account-wide
-  billing anomaly alarms are left to dspace.
+  and the CloudFront 5xx rate, plus a dashboard (see
+  [below](#alarms-and-slack-delivery)). The account-wide billing anomaly alarms
+  are left to dspace.
 
 ### First deployment
 
@@ -446,7 +442,7 @@ North American and European edges), S3 requests, and cache storage, which
 lifecycle expiry bounds. For current figures use the
 [AWS Pricing Calculator](https://calculator.aws/).
 
-## Alarms, Slack delivery, and functional checks
+## Alarms and Slack delivery
 
 Each module owns the monitoring for its own service, switched by
 `search_enable_monitoring` and `image_server_enable_monitoring`:
@@ -455,11 +451,9 @@ Each module owns the monitoring for its own service, switched by
 |---|---|---|
 | SNS topic | `<name_prefix>-search-alarms` | `<name_prefix>-image-server-alarms` |
 | Metric alarms | `<name_prefix>-search-<suffix>` (table below) | no healthy hosts, target 5xx, ECS CPU/memory, CloudFront 5xx rate |
-| Functional checker | `<name_prefix>-search-checks` | `<name_prefix>-image-server-checks` |
-| Functional alarms | `<name_prefix>-search-functional-search-{manifest,canvas}` | `<name_prefix>-image-server-functional-image-delivery` |
 
 Every alarm sends ALARM and OK notifications to its module's topic only. An
-environment's state holds only its own topics, alarms and checkers. Nothing is
+environment's state holds only its own topics and alarms. Nothing is
 looked up from, created for, or ordered against the other environment.
 
 ### Slack delivery
@@ -514,58 +508,20 @@ non-breaching. HTTP API 5xx is important even with a Lambda Errors alarm: handle
 proxy upstream failures and gateway rejections may not increment Lambda Errors.
 No alarm automatically increases capacity or modifies an index.
 
-### Functional checks
-
-Each module deploys a dependency-free Python 3.13 Lambda from the shared source
-`functional-check/app.py`. Both run outside the VPC every five minutes and use
-the public endpoints exactly as an anonymous reader does. The environment
-variables a module sets decide which checks its copy runs:
-
-- **Search** (`<name_prefix>-search-checks`): POST to both `/manifest/_search`
-  and `/canvas/_search`, requiring the known `monitoring_manifest_id`
-  (`rose.Douce195` by default), successful shards, and `timed_out: false`.
-- **Image server** (`<name_prefix>-image-server-checks`): GET Image API 3
-  `info.json`, validating its ID/type and positive dimensions; then GET an
-  80-pixel JPEG and validate its content type and JPEG markers.
-  `monitoring_image_identifier` defaults to `rose/Douce195/Douce195.001r`.
-  This checker and its alarm are created only once an image tag is configured.
-
-Each check publishes `Success` and `Duration` to `Rosa/FunctionalChecks`, with
-`Deployment` and `Check` dimensions. Each Success alarm requires 2 failures in
-3 five-minute periods and treats missing results as failures, detecting a broken
-schedule, crashed checker, or failure to publish metrics. Some initial missing
-results are expected immediately after first deployment. The checkers are
-separate functions, so a search failure cannot prevent an image result. Read
-details in the log group `/aws/lambda/<function name>`; the names are available
-through `tofu output search_functional_check_lambda_name` and
-`tofu output image_server_functional_check_lambda_name`. A known fixture removed
-from the archive/index needs the corresponding monitoring variable updated.
-
-The image check exercises public delivery, including caches. It does not bypass
-CloudFront or the S3 derivative cache and does not prove fresh origin decoding;
-the healthy-host and target-error alarms complement it. These probes
-also do not test browser CORS, viewer code, or a full-text analyzer's semantics.
-They make two searches and two image requests every five minutes, plus custom
-CloudWatch metrics/alarms; normal Lambda, HTTP API, and CloudWatch charges apply.
-
-Set `search_enable_monitoring = false` to remove the search topic, alarms and
-checker, and `image_server_enable_monitoring = false` for the image server's.
-Each checker has only log-write permissions and `cloudwatch:PutMetricData`
-restricted to its namespace, with no S3, ECS or OpenSearch permissions. Its
-EventBridge invoke permission is scoped to its rule.
+Set `search_enable_monitoring = false` to remove the search topic and alarms,
+and `image_server_enable_monitoring = false` for the image server's.
 
 Offline validation (no AWS changes):
 
 ```sh
 tofu fmt -check -recursive
 tofu init -backend=false && tofu validate
-python3 -m unittest discover -s functional-check -p 'test_*.py' -v
 (cd modules/rosa2-search && tofu init -backend=false && tofu test)
 (cd modules/rosa2-image-server && tofu init -backend=false && tofu test)
 ```
 
 Review a stage plan with `tofu plan -var-file=stage.tfvars` using a checkout
 initialized against `stage.s3.tfbackend`. Applying needs separate authorization.
-After applying, verify the checker metrics and log entries, associate the topics
-with the Slack connector as described above, then test the notification path with
-the administrator responsible for the shared connector.
+After applying, associate the topics with the Slack connector as described above,
+then test the notification path with the administrator responsible for the shared
+connector.

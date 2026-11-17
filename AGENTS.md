@@ -42,7 +42,7 @@ rosa2/
 │   ├── lambda/           search_proxy/ and admin/ (plain Python, no deps), tests/
 │   └── init-opensearch.sh   Drops/creates the AWS indexes, ingests, verifies counts (--help; --jar)
 ├── jhu-rosa2-tf/         OpenTofu: two modules only, rosa2-search (Opensearch, Lambdas, HTTP API) and rosa2-image-server,
-│                         each with its own alarms and functional checker (functional-check/app.py); independent prod/stage
+│                         each with its own alarms; independent prod/stage
 ├── rosa-image-server/    Cantaloupe + Kakadu Docker image (IIIF Image API) for ECS; build-and-push.sh, delegates.rb, test/
 ├── local-dev/            Docker Opensearch 3.1 + static IIIF server scripts
 ├── docs/                 usage, archive-structure, iiif-generation, opensearch-indexes, search, aor-data-model, deployment
@@ -166,8 +166,7 @@ must stay independent: no resource, data lookup or apply ordering may link one t
 The shared Amazon Q Slack connector is deliberately not managed here (see `jhu-rosa2-tf/README.md`).
 
 ```sh
-python3 -m unittest discover -s functional-check -p 'test_*.py' -v                    # functional checker, no AWS
-cd modules/rosa2-search && tofu init -backend=false && tofu test                      # mocked-provider module tests
+cd modules/rosa2-search && tofu init -backend=false && tofu test   # mocked-provider module tests
 ```
 
 ### rosa-image-server (run from `rosa-image-server/`)

@@ -8,6 +8,3 @@
 *.tfplan
 crash.log
 .terraform.lock.hcl
-
-# Bytecode left by the functional-check unit tests.
-__pycache__/

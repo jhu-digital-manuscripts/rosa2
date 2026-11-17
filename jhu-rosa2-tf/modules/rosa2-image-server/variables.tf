@@ -329,7 +329,7 @@ variable "waf_enable_logging" {
 # ---------- Monitoring ----------
 
 variable "enable_monitoring" {
-  description = "Create an SNS alarm topic, CloudWatch alarms, a dashboard and the scheduled public functional checker."
+  description = "Create an SNS alarm topic, CloudWatch alarms and a dashboard."
   type        = bool
   default     = true
   nullable    = false
@@ -353,17 +353,5 @@ variable "alarm_cloudfront_5xx_rate" {
   description = "CloudFront 5xx error rate (percent of requests, 5-minute average) that triggers an alarm."
   type        = number
   default     = 5
-  nullable    = false
-}
-
-variable "functional_check_source_file" {
-  description = "Path to the functional-check Lambda source (jhu-rosa2-tf/functional-check/app.py)."
-  type        = string
-}
-
-variable "functional_check_image_identifier" {
-  description = "Unencoded identifier of a known image the functional check requests through CloudFront."
-  type        = string
-  default     = "rose/Douce195/Douce195.001r"
   nullable    = false
 }

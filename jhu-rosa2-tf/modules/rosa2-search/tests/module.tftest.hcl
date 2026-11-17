@@ -4,7 +4,7 @@
 #   tofu init -backend=false && tofu test
 #
 # They check the module's own logic (alarm dimensions and thresholds, where
-# alarms notify, the functional checker's isolation), not AWS behaviour.
+# alarms notify), not AWS behaviour.
 
 mock_provider "aws" {
   mock_data "aws_caller_identity" {
@@ -44,12 +44,6 @@ mock_provider "aws" {
     }
   }
 
-  mock_resource "aws_cloudwatch_event_rule" {
-    defaults = {
-      arn = "arn:aws:events:us-east-1:123456789012:rule/mock"
-    }
-  }
-
   mock_resource "aws_sns_topic" {
     defaults = {
       arn = "arn:aws:sns:us-east-1:123456789012:mock"
@@ -85,9 +79,8 @@ variables {
   latin_stemmer_rules_file = "../../../rosa-search/opensearch/latin-stemmer-rules.txt"
   latin_charmap_file       = "../../../rosa-search/opensearch/latin-charmap.txt"
 
-  search_lambda_source_dir     = "../../../rosa-search/lambda/search_proxy"
-  admin_lambda_source_dir      = "../../../rosa-search/lambda/admin"
-  functional_check_source_file = "../../functional-check/app.py"
+  search_lambda_source_dir = "../../../rosa-search/lambda/search_proxy"
+  admin_lambda_source_dir  = "../../../rosa-search/lambda/admin"
 }
 
 run "search_alarms" {
@@ -117,48 +110,10 @@ run "search_alarms" {
 
   assert {
     condition = alltrue([
-      for alarm in concat(values(aws_cloudwatch_metric_alarm.search), values(aws_cloudwatch_metric_alarm.functional)) :
+      for alarm in values(aws_cloudwatch_metric_alarm.search) :
       alarm.alarm_actions == toset([aws_sns_topic.alarms[0].arn]) && alarm.alarm_actions == alarm.ok_actions
     ])
     error_message = "every alarm and recovery must notify this module's own topic and nothing else"
-  }
-}
-
-run "functional_check" {
-  assert {
-    condition = (
-      aws_lambda_function.probe[0].function_name == "jhu-rosa2-stage-search-checks" &&
-      aws_lambda_function.probe[0].environment[0].variables == tomap({
-        DEPLOYMENT          = "jhu-rosa2-stage"
-        SEARCH_API_ENDPOINT = "https://abc123.execute-api.us-east-1.amazonaws.com"
-        MANIFEST_ID         = "rose.Douce195"
-      }) &&
-      aws_cloudwatch_event_rule.probe[0].schedule_expression == "rate(5 minutes)"
-    )
-    error_message = "the checker must query this module's public API on a schedule, with no image configuration"
-  }
-
-  assert {
-    condition = (
-      length(aws_cloudwatch_metric_alarm.functional) == 2 &&
-      aws_cloudwatch_metric_alarm.functional["search-canvas"].alarm_name == "jhu-rosa2-stage-search-functional-search-canvas" &&
-      alltrue([
-        for check, alarm in aws_cloudwatch_metric_alarm.functional :
-        alarm.treat_missing_data == "breaching" && alarm.datapoints_to_alarm == 2 && alarm.evaluation_periods == 3 &&
-        alarm.dimensions == tomap({ Deployment = "jhu-rosa2-stage", Check = check })
-      ])
-    )
-    error_message = "both indexes must be checked, and a failed or silent check must alarm"
-  }
-
-  assert {
-    condition = (
-      length(aws_lambda_function.probe[0].vpc_config) == 0 &&
-      aws_lambda_function.probe[0].layers == null &&
-      aws_lambda_permission.probe[0].source_arn == aws_cloudwatch_event_rule.probe[0].arn &&
-      jsondecode(aws_iam_role_policy.probe[0].policy).Statement[1].Condition.StringEquals["cloudwatch:namespace"] == "Rosa/FunctionalChecks"
-    )
-    error_message = "the checker must stay outside the VPC, publish only to its namespace, and be invocable only by its schedule"
   }
 }
 
@@ -171,12 +126,7 @@ run "monitoring_disabled" {
     condition = (
       length(aws_sns_topic.alarms) == 0 &&
       length(aws_cloudwatch_metric_alarm.search) == 0 &&
-      length(aws_cloudwatch_metric_alarm.functional) == 0 &&
-      length(aws_lambda_function.probe) == 0 &&
-      length(aws_iam_role.probe) == 0 &&
-      length(aws_cloudwatch_event_rule.probe) == 0 &&
-      output.alarm_topic_arn == "" &&
-      output.functional_check_lambda_name == ""
+      output.alarm_topic_arn == ""
     )
     error_message = "monitoring resources must be optional"
   }

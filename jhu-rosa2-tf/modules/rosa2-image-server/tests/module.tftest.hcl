@@ -89,21 +89,7 @@ mock_provider "aws" {
       arn = "arn:aws:cloudfront::123456789012:function/mock"
     }
   }
-
-  mock_resource "aws_lambda_function" {
-    defaults = {
-      arn = "arn:aws:lambda:us-east-1:123456789012:function:mock"
-    }
-  }
-
-  mock_resource "aws_cloudwatch_event_rule" {
-    defaults = {
-      arn = "arn:aws:events:us-east-1:123456789012:rule/mock"
-    }
-  }
 }
-
-mock_provider "archive" {}
 
 variables {
   environment        = "stage"
@@ -112,8 +98,6 @@ variables {
   public_subnet_ids  = ["subnet-pub1", "subnet-pub2"]
   private_subnet_ids = ["subnet-priv1", "subnet-priv2"]
   source_bucket      = "jhu-library-images"
-
-  functional_check_source_file = "../../functional-check/app.py"
 }
 
 run "first_apply_without_image_scales_to_zero" {
@@ -370,11 +354,6 @@ run "monitoring_disabled" {
     condition     = length(aws_sns_topic.alarms) == 0 && length(aws_cloudwatch_metric_alarm.target_5xx) == 0 && length(aws_cloudwatch_dashboard.this) == 0
     error_message = "monitoring resources must be optional"
   }
-
-  assert {
-    condition     = length(aws_lambda_function.probe) == 0 && length(aws_cloudwatch_event_rule.probe) == 0 && length(aws_cloudwatch_metric_alarm.functional) == 0
-    error_message = "the functional checker is part of monitoring"
-  }
 }
 
 run "invalid_source_prefix_is_rejected" {
@@ -385,57 +364,4 @@ run "invalid_source_prefix_is_rejected" {
   }
 
   expect_failures = [var.source_prefix]
-}
-
-run "functional_check_with_image" {
-  variables {
-    image_tag = "t1"
-  }
-
-  assert {
-    condition = (
-      aws_lambda_function.probe[0].function_name == "jhu-rosa2-stage-image-server-checks" &&
-      aws_lambda_function.probe[0].environment[0].variables == tomap({
-        DEPLOYMENT       = "jhu-rosa2-stage"
-        IMAGE_BASE_URL   = "https://d111111abcdef8.cloudfront.net/iiif/3"
-        IMAGE_IDENTIFIER = "rose/Douce195/Douce195.001r"
-      }) &&
-      length(aws_lambda_function.probe[0].vpc_config) == 0 &&
-      aws_cloudwatch_event_rule.probe[0].schedule_expression == "rate(5 minutes)"
-    )
-    error_message = "the checker must request the public IIIF 3 endpoint on a schedule, outside the VPC, with no search configuration"
-  }
-
-  assert {
-    condition = (
-      length(aws_cloudwatch_metric_alarm.functional) == 1 &&
-      aws_cloudwatch_metric_alarm.functional["image-delivery"].alarm_name == "jhu-rosa2-stage-image-server-functional-image-delivery" &&
-      aws_cloudwatch_metric_alarm.functional["image-delivery"].treat_missing_data == "breaching" &&
-      aws_cloudwatch_metric_alarm.functional["image-delivery"].dimensions == tomap({ Deployment = "jhu-rosa2-stage", Check = "image-delivery" })
-    )
-    error_message = "a failed or silent image check must alarm"
-  }
-
-  assert {
-    condition = alltrue([
-      for alarm in [aws_cloudwatch_metric_alarm.functional["image-delivery"], aws_cloudwatch_metric_alarm.no_healthy_hosts[0], aws_cloudwatch_metric_alarm.target_5xx[0], aws_cloudwatch_metric_alarm.ecs_cpu_high[0], aws_cloudwatch_metric_alarm.ecs_memory_high[0], aws_cloudwatch_metric_alarm.cloudfront_5xx_rate[0]] :
-      alarm.alarm_actions == toset([aws_sns_topic.alarms[0].arn]) && alarm.alarm_actions == alarm.ok_actions
-    ])
-    error_message = "every alarm and recovery must notify this module's own topic and nothing else"
-  }
-
-  assert {
-    condition = (
-      aws_lambda_permission.probe[0].source_arn == aws_cloudwatch_event_rule.probe[0].arn &&
-      jsondecode(aws_iam_role_policy.probe[0].policy).Statement[1].Condition.StringEquals["cloudwatch:namespace"] == "Rosa/FunctionalChecks"
-    )
-    error_message = "only the schedule may invoke the checker, and it may publish only to its own namespace"
-  }
-}
-
-run "functional_check_waits_for_an_image" {
-  assert {
-    condition     = length(aws_lambda_function.probe) == 0 && length(aws_iam_role.probe) == 0 && length(aws_cloudwatch_metric_alarm.functional) == 0 && output.functional_check_lambda_name == ""
-    error_message = "nothing can be checked before the first image is deployed"
-  }
 }

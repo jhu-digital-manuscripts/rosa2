@@ -132,8 +132,3 @@ output "alarm_topic_arn" {
   description = "SNS topic the search alarms notify, empty when enable_monitoring is false."
   value       = var.enable_monitoring ? aws_sns_topic.alarms[0].arn : ""
 }
-
-output "functional_check_lambda_name" {
-  description = "Scheduled public search checker, empty when enable_monitoring is false."
-  value       = var.enable_monitoring ? aws_lambda_function.probe[0].function_name : ""
-}
