@@ -263,7 +263,7 @@ viewer ──HTTPS──▶ CloudFront ──VPC origin──▶ internal ALB �
 | _(networking)_ | The VPC, subnets and routing are injected from the dspace VPC via the root module (`vpc_id`, `public_subnet_ids`, `private_subnet_ids`); the module creates no VPC, subnets or routing of its own. |
 | `security-groups.tf` | ALB: port 80 only from CloudFront's origin-facing prefix list. Tasks: 8182 only from the ALB, egress 443. |
 | `alb.tf` | Internal ALB, HTTP listener, target group with a `/health` check. |
-| `ecs.tf` | Log group, cluster, task definition (Cantaloupe settings as environment variables), service, CPU target-tracking auto scaling (inert while `image_server_min_tasks` equals `image_server_max_tasks`, as both tfvars set them). |
+| `ecs.tf` | Log group, cluster (named by `image_server_cluster_name`), task definition (Cantaloupe settings as environment variables), service, CPU target-tracking auto scaling (inert while `image_server_min_tasks` equals `image_server_max_tasks`, as both tfvars set them). |
 | `iam.tf` | Execution role (pull this repository, write this log group) and task role (read source prefix, read/write cache prefix). |
 | `s3.tf` | Derivative cache bucket: private, SSE-S3, TLS only, lifecycle expiry on the whole bucket. |
 | `ecr.tf` | Repository with immutable tags, scan on push, and a keep-last-N lifecycle. |
@@ -275,6 +275,16 @@ viewer ──HTTPS──▶ CloudFront ──VPC origin──▶ internal ALB �
 
 ### Design notes
 
+- **Names.** Image server resources are named from `name_prefix`, mostly
+  `<name_prefix>-image-server` (the cache bucket is
+  `<name_prefix>-image-cache-<account id>`), except the ECS cluster, which takes the
+  required `image_server_cluster_name`: `jhu-iiif-stage-cluster` in
+  `stage.tfvars` and `jhu-iiif-prod-cluster` in `prod.tfvars`. ECS cannot
+  rename a cluster or move a service to another one, so changing this value
+  replaces the cluster, the service, and the auto scaling target and policy.
+  The image server is down until the new task passes its health check (a few
+  minutes), and the `no-healthy-hosts` alarm may fire meanwhile. The ECS alarm
+  dimensions and the dashboard follow the new name in place.
 - **HTTPS without a custom domain.** Stage, and prod until cutover, are served
   on the distribution's generated `https://<id>.cloudfront.net` name using
   CloudFront's default certificate. AWS issues no certificate for an ALB's
