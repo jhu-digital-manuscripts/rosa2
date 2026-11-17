@@ -36,6 +36,16 @@ variable "name_prefix" {
   }
 }
 
+variable "cluster_name" {
+  description = "Name of the ECS cluster, set per environment (e.g. jhu-iiif-stage-cluster). Only the cluster uses it; every other resource is named <name_prefix>-image-server. Changing it replaces the cluster and the service, which briefly takes the image server down."
+  type        = string
+
+  validation {
+    condition     = can(regex("^[A-Za-z0-9_-]{1,255}$", var.cluster_name))
+    error_message = "cluster_name must be 1-255 characters and contain only letters, numbers, hyphens, and underscores."
+  }
+}
+
 # ---------- Networking ----------
 
 variable "vpc_id" {

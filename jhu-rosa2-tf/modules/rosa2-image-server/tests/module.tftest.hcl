@@ -94,6 +94,7 @@ mock_provider "aws" {
 variables {
   environment        = "stage"
   name_prefix        = "jhu-rosa2-stage"
+  cluster_name       = "jhu-iiif-stage-cluster"
   vpc_id             = "vpc-00000000000000000"
   public_subnet_ids  = ["subnet-pub1", "subnet-pub2"]
   private_subnet_ids = ["subnet-priv1", "subnet-priv2"]
@@ -144,6 +145,27 @@ run "derived_names_networking_and_cache" {
   assert {
     condition     = aws_s3_bucket.cache.bucket == "jhu-rosa2-stage-image-cache-123456789012"
     error_message = "unexpected cache bucket name: ${aws_s3_bucket.cache.bucket}"
+  }
+
+  # Only the cluster takes cluster_name; the service keeps <name_prefix>-image-server.
+  assert {
+    condition     = aws_ecs_cluster.this.name == "jhu-iiif-stage-cluster"
+    error_message = "unexpected cluster name: ${aws_ecs_cluster.this.name}"
+  }
+
+  assert {
+    condition     = aws_ecs_service.this.name == "jhu-rosa2-stage-image-server"
+    error_message = "unexpected service name: ${aws_ecs_service.this.name}"
+  }
+
+  assert {
+    condition     = aws_appautoscaling_target.this.resource_id == "service/jhu-iiif-stage-cluster/jhu-rosa2-stage-image-server"
+    error_message = "unexpected scalable target: ${aws_appautoscaling_target.this.resource_id}"
+  }
+
+  assert {
+    condition     = aws_cloudwatch_metric_alarm.ecs_cpu_high[0].dimensions.ClusterName == "jhu-iiif-stage-cluster"
+    error_message = "ECS alarms must use the cluster name"
   }
 
   assert {
@@ -364,4 +386,14 @@ run "invalid_source_prefix_is_rejected" {
   }
 
   expect_failures = [var.source_prefix]
+}
+
+run "invalid_cluster_name_is_rejected" {
+  command = plan
+
+  variables {
+    cluster_name = "bad name!"
+  }
+
+  expect_failures = [var.cluster_name]
 }
