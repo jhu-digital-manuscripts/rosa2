@@ -324,6 +324,11 @@ variable "image_server_source_prefix" {
   default     = null
 }
 
+variable "image_server_cluster_name" {
+  description = "Name of the image server's ECS cluster (jhu-iiif-<env>-cluster). Required. Only the cluster uses it; everything else is <name_prefix>-image-server. Changing it replaces the cluster and service, a brief outage."
+  type        = string
+}
+
 variable "image_server_cache_bucket_name" {
   description = "Name of the derivative cache bucket this environment creates. Empty for <name_prefix>-image-cache-<account id>."
   type        = string

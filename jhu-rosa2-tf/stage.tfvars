@@ -100,6 +100,9 @@ enable_api_access_logs = true
 # Empty creates the infrastructure with the service scaled to zero.
 image_server_image_tag = "5.0.8-2d2eb4d3"
 
+# ECS cluster name; every other image server resource is <name_prefix>-image-server.
+image_server_cluster_name = "jhu-iiif-stage-cluster"
+
 # ---------- Networking ----------
 # Runs in the dspace stage VPC, sourced from the dspace stage remote state
 # (dspace/stage/opentofu.tfstate); see remote-state.tf. Tasks use the dspace
