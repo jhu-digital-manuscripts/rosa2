@@ -5,7 +5,7 @@
 
 import React from 'react';
 import SearchIcon from '@mui/icons-material/Search';
-import { getWorkspace, MiradorMenuButton, setWorkspaceAddVisibility } from 'mirador';
+import { getWindowIds, getWorkspace, MiradorMenuButton, setWorkspaceAddVisibility } from 'mirador';
 
 import { ConnectedJHSearchView } from './components/JHSearchView';
 import { jhsearchReducer } from './state/reducers';
@@ -14,41 +14,68 @@ import { workspaceAddButtonPlugin } from './workspace';
 export { keepWorkspaceAddVisible } from './workspace';
 
 /**
- * Look of the button while the JHSearch view is showing: a white icon on grey,
- * also on hover, with the default cursor because clicking it then does nothing.
+ * Look of the button while the JHSearch view is showing: a white icon on grey.
+ * Clicking it then closes the view, so it darkens on hover.
  */
 const ACTIVE_SX = {
   backgroundColor: 'grey.600',
   color: 'common.white',
+  '&:hover': { backgroundColor: 'grey.700' },
+};
+
+/**
+ * The same while no window is open: closing the view would leave an empty
+ * workspace (see keepWorkspaceAddVisible), so the click does nothing and the
+ * button shows the default cursor and no hover change.
+ */
+const ACTIVE_LOCKED_SX = {
+  ...ACTIVE_SX,
   cursor: 'default',
   '&:hover': { backgroundColor: 'grey.600' },
 };
 
 /**
  * JHSearch button component for the workspace control panel.
- * Allows returning to the JHSearch view from anywhere, and is highlighted while
- * that view is showing.
+ * Toggles the JHSearch view, and is highlighted while that view is showing.
+ * With no window open the view stays showing, so the button only opens it.
  */
-function JHSearchButton({ isWorkspaceAddVisible = false, setWorkspaceAddVisibility: showSearch }) {
+function JHSearchButton({
+  hasWindows = false,
+  isWorkspaceAddVisible = false,
+  setWorkspaceAddVisibility: showSearch,
+}) {
+  const locked = isWorkspaceAddVisible && !hasWindows;
+
   const handleClick = () => {
-    showSearch(true);
+    if (locked) return;
+    showSearch(!isWorkspaceAddVisible);
   };
+
+  let sx = {};
+  if (locked) sx = ACTIVE_LOCKED_SX;
+  else if (isWorkspaceAddVisible) sx = ACTIVE_SX;
 
   return (
     <MiradorMenuButton
       aria-label="Search collections"
       onClick={handleClick}
       selected={isWorkspaceAddVisible}
-      sx={isWorkspaceAddVisible ? ACTIVE_SX : {}}
+      sx={sx}
     >
       <SearchIcon />
     </MiradorMenuButton>
   );
 }
 
-/** Whether the JHSearch view (Mirador's add resource view) is showing. */
+/**
+ * Whether the JHSearch view (Mirador's add resource view) is showing, and
+ * whether there is a window to go back to when it closes.
+ */
 function mapJHSearchButtonStateToProps(state) {
-  return { isWorkspaceAddVisible: Boolean(getWorkspace(state).isWorkspaceAddVisible) };
+  return {
+    hasWindows: getWindowIds(state).length > 0,
+    isWorkspaceAddVisible: Boolean(getWorkspace(state).isWorkspaceAddVisible),
+  };
 }
 
 /**
