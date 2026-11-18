@@ -111,7 +111,7 @@ enable_api_access_logs = true
 
 # Image built and pushed with rosa-image-server/build-and-push.sh --env prod --push.
 # Empty creates the infrastructure with the service scaled to zero.
-image_server_image_tag = "5.0.8-2d2eb4d3"
+image_server_image_tag = "5.0.8-0bfc1a90"
 
 # ECS cluster name; every other image server resource is <name_prefix>-image-server.
 image_server_cluster_name = "jhu-iiif-prod-cluster"
