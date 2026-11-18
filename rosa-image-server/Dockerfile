@@ -35,7 +35,7 @@
 #     -H 'Accept: application/vnd.oci.image.index.v1+json, application/vnd.docker.distribution.manifest.list.v2+json' \
 #     https://registry-1.docker.io/v2/library/amazoncorretto/manifests/25-al2023-jdk | grep -i docker-content-digest
 # (or `docker buildx imagetools inspect amazoncorretto:25-al2023-jdk`).
-ARG JAVA_IMAGE=amazoncorretto:25-al2023-jdk@sha256:8806f69d6997672a37569da54378d13ff2cd613f9abb151c493f5a359a0a8676
+ARG JAVA_IMAGE=amazoncorretto:25-al2023-jdk@sha256:8b82be5adeabd374f5438e90635a120868e07ea8e85be6b691eb1c994d53f1e2
 # The Kakadu version is tied to the Cantaloupe version: the jar bundles the
 # kdu_jni Java classes that kdu_hyperdoc generates from one particular Kakadu
 # release, and libkdu_jni.so built here must implement exactly those native
